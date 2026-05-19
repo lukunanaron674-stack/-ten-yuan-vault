@@ -1,0 +1,14 @@
+﻿{
+  "name": "f12-playwright-runner",
+  "version": "0.9.0",
+  "private": true,
+  "description": "F12 总控 Playwright headed smoke test runner",
+  "scripts": {
+    "test:fixture": "node scripts/run-headed.js --fixture",
+    "test:smoke": "node scripts/run-headed.js --smoke",
+    "test:debug": "node scripts/run-headed.js --debug"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0"
+  }
+}

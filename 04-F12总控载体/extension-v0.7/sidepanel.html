@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F12 总控塔 v1.0</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div id="ty-f12-controller">
+    <!-- 顶栏 -->
+    <div class="f12-header">
+      <h1>十元 F12 总控塔 <span class="version">v1.0</span></h1>
+      <span id="conn-status" class="conn-status disconnected">● 未绑定标签页</span>
+    </div>
+
+    <!-- 1. 状态区 -->
+    <div class="f12-section">
+      <div class="section-header">📌 状态</div>
+      <div id="status-detail" class="status-detail">
+        <div class="status-row"><span class="s-label">标签页</span><span id="s-tab" class="s-value">-</span></div>
+        <div class="status-row"><span class="s-label">URL</span><span id="s-url" class="s-value" title="">-</span></div>
+        <div class="status-row"><span class="s-label">运行</span><span id="s-running" class="s-value">-</span></div>
+        <div class="status-row"><span class="s-label">轮次</span><span id="s-round" class="s-value">-</span></div>
+        <div class="status-row"><span class="s-label">租约</span><span id="s-lease" class="s-value">-</span></div>
+        <div class="status-row"><span class="s-label">Schema</span><span id="s-schema" class="s-value s-dim">-</span></div>
+        <div class="status-row"><span class="s-label">BG模式</span><span id="s-bg-mode" class="s-value s-dim">-</span></div>
+        <div id="s-error" class="status-row status-error-row" style="display:none"><span class="s-label">错误</span><span class="s-value"></span></div>
+      </div>
+      <div class="tab-bind">
+        <button id="btn-bind-current" class="btn btn-primary">绑定当前标签页</button>
+        <button id="btn-inject-worker" class="btn btn-sm btn-warn">💉 手动注入工蜂</button>
+        <button id="btn-health-check" class="btn btn-sm">刷新检测</button>
+        <button id="btn-set-project" class="btn btn-sm">设置项目</button>
+        <button id="btn-debug-report" class="btn btn-sm btn-warn">🐛 Debug Report</button>
+      </div>
+      <div class="health-grid" id="health-grid">
+        <div class="health-item"><span class="health-label">输入框</span><span class="health-dot" id="hc-input">-</span></div>
+        <div class="health-item"><span class="health-label">发送按钮</span><span class="health-dot" id="hc-send">-</span></div>
+        <div class="health-item"><span class="health-label">停止按钮</span><span class="health-dot" id="hc-stop">-</span></div>
+        <div class="health-item"><span class="health-label">回复节点</span><span class="health-dot" id="hc-assistant">-</span></div>
+      </div>
+    </div>
+
+    <!-- 1.5 多页页面池 -->
+    <div class="f12-section">
+      <div class="section-header">🧭 页面池 <span class="task-count" id="page-pool-count">0 页</span></div>
+      <div id="page-pool-list" class="page-pool-list">
+        <div class="log-empty">等待页面注册...</div>
+      </div>
+      <div class="btn-row">
+        <button id="btn-refresh-pages" class="btn btn-sm">刷新页面池</button>
+        <button id="btn-bind-selected" class="btn btn-sm btn-primary">绑定选中页</button>
+        <button id="btn-role-control" class="btn btn-sm">设为主控页</button>
+        <button id="btn-role-executor" class="btn btn-sm">设为执行页</button>
+      </div>
+      <div class="btn-row">
+        <button id="btn-send-selected" class="btn btn-sm btn-action">发送到选中页</button>
+        <button id="btn-auto-selected" class="btn btn-sm btn-auto">选中页自动跑</button>
+        <button id="btn-pause-selected" class="btn btn-sm btn-pause">暂停选中页</button>
+        <button id="btn-stop-selected" class="btn btn-sm btn-stop">停止选中页</button>
+      </div>
+      <div class="btn-row">
+        <button id="btn-send-all-idle" class="btn btn-sm btn-trial">发送到所有空闲页</button>
+      </div>
+      <div id="multi-log" class="task-preview"></div>
+    </div>
+
+    <!-- 2. 任务区 -->
+    <div class="f12-section">
+      <div class="section-header">📝 任务列表 <span class="task-count" id="task-count">0 个</span></div>
+      <textarea id="task-editor" placeholder="在此粘贴任务，用 ---TASK--- 分隔每轮..." rows="4"></textarea>
+      <div class="btn-row">
+        <button id="btn-load-tasks" class="btn btn-sm">载入任务</button>
+        <button id="btn-import-tasks-file" class="btn btn-sm">导入 .md/.txt</button>
+        <button id="btn-export-tasks" class="btn btn-sm">导出任务列表</button>
+      </div>
+      <div class="btn-row">
+        <button id="btn-default-10" class="btn btn-sm">默认 10 轮</button>
+        <button id="btn-default-12" class="btn btn-sm">默认 12 轮</button>
+        <button id="btn-default-30" class="btn btn-sm">默认 30 轮</button>
+        <button id="btn-default-100" class="btn btn-sm">默认 100 轮</button>
+        <button id="btn-test-package" class="btn btn-sm btn-trial">🧪 测试包(5轮)</button>
+      </div>
+      <div class="btn-row">
+        <label class="s-label" for="custom-round-count">总轮数：</label>
+        <input id="custom-round-count" type="number" min="1" value="12" style="width:72px">
+        <button id="btn-custom-rounds" class="btn btn-sm">生成自定义轮次</button>
+      </div>
+      <div id="task-warning" class="status-line"></div>
+      <div id="task-preview" class="task-preview"></div>
+      <input type="file" id="file-tasks-input" accept=".md,.txt" style="display:none">
+    </div>
+
+    <!-- 3. 控制区 -->
+    <div class="f12-section">
+      <div class="section-header">🎮 控制</div>
+      <div class="control-row">
+        <button id="btn-send-current" class="btn btn-action">▶ 发送当前</button>
+        <button id="btn-auto-run" class="btn btn-action btn-auto">▶▶ 自动续跑</button>
+        <button id="btn-trial-2" class="btn btn-action btn-trial">◈ 试跑2轮</button>
+      </div>
+      <div class="control-row">
+        <button id="btn-pause" class="btn btn-action btn-pause">⏸ 暂停</button>
+        <button id="btn-resume" class="btn btn-action btn-resume" style="display:none">▶ 继续</button>
+        <button id="btn-stop" class="btn btn-action btn-stop">■ 停止</button>
+      </div>
+      <div class="control-row secondary">
+        <button id="btn-prev" class="btn btn-sm">◀ 上一轮</button>
+        <button id="btn-force-complete" class="btn btn-sm btn-force">↩ 强制完成</button>
+        <span id="round-indicator" class="round-indicator">R1/?</span>
+        <button id="btn-force-retry" class="btn btn-sm btn-force">↻ 强制重试</button>
+        <button id="btn-next" class="btn btn-sm">下一轮 ▶</button>
+        <button id="btn-reset" class="btn btn-sm btn-warn">↺ 重置</button>
+      </div>
+      <div id="status-line" class="status-line">就绪</div>
+    </div>
+
+    <!-- 4. CarryPacket 区 -->
+    <div class="f12-section">
+      <div class="section-header">🏮 记忆承载包 <span id="carry-count" class="task-count">0</span></div>
+      <div id="carry-status" class="carry-status"></div>
+      <div id="carry-list" class="carry-list"></div>
+      <div id="carry-preview" class="carry-preview"></div>
+      <div class="btn-row">
+        <button id="btn-generate-carry" class="btn btn-sm">生成当前 CarryPacket</button>
+        <button id="btn-copy-carry" class="btn btn-sm">复制最新</button>
+        <button id="btn-download-carry" class="btn btn-sm">下载最新 .md</button>
+      </div>
+    </div>
+
+    <!-- 5. 归档区 -->
+    <div class="f12-section">
+      <div class="section-header">📦 导出 & 回流</div>
+      <div class="btn-row">
+        <button id="btn-export-state" class="btn btn-sm">导出 state.json</button>
+        <button id="btn-import-state" class="btn btn-sm">导入 state.json</button>
+        <button id="btn-backup-reset" class="btn btn-sm btn-warn">备份并重置</button>
+      </div>
+      <div class="btn-row">
+        <button id="btn-export-logs" class="btn btn-sm">导出全部日志</button>
+        <button id="btn-export-all-carry" class="btn btn-sm">导出全部 CarryPacket</button>
+        <button id="btn-debug-download" class="btn btn-sm">下载 Debug Report</button>
+      </div>
+      <div class="btn-row">
+        <button id="btn-obsidian-uri" class="btn btn-sm">📋 Obsidian URI</button>
+        <button id="btn-obsidian-download" class="btn btn-sm">📥 Obsidian .md</button>
+        <button id="btn-github-path" class="btn btn-sm">📋 GitHub 路径</button>
+      </div>
+      <div class="btn-row">
+        <button id="btn-codex-order" class="btn btn-sm btn-primary">🤖 Codex 单件工单</button>
+        <button id="btn-codex-batch" class="btn btn-sm btn-primary">📦 Codex 批量工单</button>
+      </div>
+      <div class="btn-row">
+        <button id="btn-manifest-head" class="btn btn-sm">📋 HEAD manifest</button>
+        <button id="btn-github-handoff-dl" class="btn btn-sm">📥 handoff.md</button>
+      </div>
+      <div id="export-feedback" class="export-feedback"></div>
+      <input type="file" id="file-state-input" accept=".json" style="display:none">
+    </div>
+
+    <!-- 6. 日志区 -->
+    <div class="f12-section">
+      <div class="section-header">📋 日志</div>
+      <div id="log-area" class="log-area">
+        <div class="log-empty">等待操作...</div>
+      </div>
+      <div class="btn-row log-actions">
+        <button id="btn-copy-logs" class="btn btn-sm">📋 复制日志</button>
+        <button id="btn-clear-logs" class="btn btn-sm btn-warn">🗑 清空日志</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,18 @@
+﻿/* overlay.css — F12 Worker 状态胶囊样式 */
+/* content.js 已经内联样式，此文件作为后备 */
+#TY_F12_CAPSULE_V07 {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  z-index: 999998;
+  background: rgba(18, 18, 22, 0.92);
+  color: #e0e0e0;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.4;
+  pointer-events: none;
+  user-select: none;
+  transition: opacity 0.3s;
+}
