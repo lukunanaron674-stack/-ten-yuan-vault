@@ -1,8 +1,10 @@
 ﻿// background.js — F12 调度员 v0.9 (内联版，Edge 兼容)
 // 负责：activeTabId 管理、租约锁、消息路由、状态同步
 
-const SCHEMA_VERSION = '1.0.0';
+const SCHEMA_VERSION = '1.1.0';
 const STATE_KEY = 'TY_F12_STATE_V09';
+const LOCAL_BRIDGE_URL = 'http://127.0.0.1:17312';
+const LOCAL_BRIDGE_POLL_MS = 2000;
 
 function getDefaultState() {
   return {
@@ -80,6 +82,151 @@ function addError(state, message, detail) {
   if (state.errors.length > 50) state.errors = state.errors.slice(-50);
   addLog(state, 'ERROR', message, detail);
 }
+
+// ======== Local bridge polling ========
+let localBridgeBusy = false;
+
+function stateSummary(state) {
+  const total = state.tasks ? state.tasks.length : 0;
+  return {
+    schemaVersion: state.schemaVersion,
+    activeTabId: state.activeTabId,
+    activeTitle: state.activeTitle || '',
+    activeUrl: state.activeUrl || '',
+    index: state.index || 0,
+    total,
+    currentRound: total > 0 ? Math.min((state.index || 0) + 1, total) : 0,
+    running: !!state.running,
+    manualPause: !!state.manualPause,
+    lastStatus: state.lastStatus || '',
+    projectName: state.projectName || '',
+    frameName: state.frameName || '',
+    multiTabs: state.multiTabs || { tabs: {} },
+    updatedAt: state.updatedAt || ''
+  };
+}
+
+async function bridgeFetch(path, options = {}) {
+  const headers = { 'content-type': 'application/json', ...(options.headers || {}) };
+  const response = await fetch(LOCAL_BRIDGE_URL + path, { ...options, headers });
+  if (!response.ok) throw new Error('Bridge HTTP ' + response.status);
+  return await response.json();
+}
+
+function isArchiveAgentResult(msg) {
+  const result = msg.result || {};
+  const task = String(result.task || msg.task || '');
+  const text = String(result.text || msg.lastMessage || '');
+  const round = Number(result.round || msg.currentRound || 0);
+  const total = Number(result.total || msg.total || 0);
+  const haystack = `${task}\n${text.slice(0, 1200)}`;
+  if (!text.trim()) return false;
+  if (total > 0 && round >= total) return true;
+  return /归档|总结|收束|封存|档案|更新包|承载包|阶段总结|总表|总览|A8|R12|R18|R24/i.test(haystack);
+}
+
+async function archiveAgentResult(tabId, msg) {
+  if (!isArchiveAgentResult(msg)) return null;
+  const result = msg.result || {};
+  const body = {
+    tabId,
+    url: msg.url || '',
+    title: msg.title || '',
+    status: msg.status || '',
+    round: result.round || msg.currentRound || 0,
+    total: result.total || msg.total || 0,
+    task: result.task || '',
+    text: result.text || msg.lastMessage || ''
+  };
+  return await bridgeFetch('/archive', {
+    method: 'POST',
+    body: JSON.stringify(body)
+  });
+}
+
+async function reportBridgeResult(command, result, state) {
+  if (!command || !command.id) return;
+  await bridgeFetch('/result', {
+    method: 'POST',
+    body: JSON.stringify({
+      id: command.id,
+      ok: result && result.ok !== false,
+      result,
+      state: stateSummary(state || await loadState()),
+      completedAt: new Date().toISOString()
+    })
+  });
+}
+
+async function executeBridgeCommand(command) {
+  const type = String(command.type || command.command || '').toUpperCase();
+  const payload = command.payload || {};
+  const bridgeMsg = payload.message || {};
+
+  if (type === 'STATUS') return await handleMsg({ type: 'GET_STATE' }, {});
+  if (type === 'LOAD_TASKS') return await handleMsg({ type: 'SP_LOAD_TASKS', tasks: payload.tasks || [] }, {});
+  if (type === 'DEFAULT_TASKS') return await handleMsg({ type: 'SP_DEFAULT_TASKS', count: payload.count, project: payload.project, frame: payload.frame }, {});
+  if (type === 'SET_PROJECT') return await handleMsg({ type: 'SP_SET_PROJECT', projectName: payload.projectName || payload.project || '', frameName: payload.frameName || payload.frame || '' }, {});
+  if (type === 'MULTI_COMMAND') return await handleMsg({ type: 'SP_MULTI_COMMAND', tabId: payload.tabId, command: payload.command, task: payload.task, tasks: payload.tasks, index: payload.index }, {});
+  if (type === 'MULTI_ALL_IDLE') return await handleMsg({ type: 'SP_MULTI_ALL_IDLE', command: payload.command, task: payload.task, tasks: payload.tasks }, {});
+  if (type === 'RAW_MESSAGE') return await handleMsg(bridgeMsg, {});
+
+  const map = {
+    BIND: 'SP_SET_ACTIVE_TAB',
+    SET_ACTIVE_TAB: 'SP_SET_ACTIVE_TAB',
+    INJECT: 'SP_INJECT_WORKER',
+    INJECT_WORKER: 'SP_INJECT_WORKER',
+    SEND: 'SP_SEND_CURRENT',
+    SEND_CURRENT: 'SP_SEND_CURRENT',
+    AUTO: 'SP_AUTO_RUN',
+    AUTO_RUN: 'SP_AUTO_RUN',
+    PAUSE: 'SP_PAUSE',
+    STOP: 'SP_STOP',
+    RESUME: 'SP_RESUME',
+    TRIAL_2: 'SP_TRIAL_2',
+    NEXT: 'SP_NEXT_ROUND',
+    NEXT_ROUND: 'SP_NEXT_ROUND',
+    PREV: 'SP_PREV_ROUND',
+    PREV_ROUND: 'SP_PREV_ROUND',
+    RETRY: 'SP_FORCE_RETRY',
+    FORCE_RETRY: 'SP_FORCE_RETRY',
+    COMPLETE: 'SP_FORCE_COMPLETE',
+    FORCE_COMPLETE: 'SP_FORCE_COMPLETE',
+    RESET: 'SP_RESET_INDEX',
+    RESET_INDEX: 'SP_RESET_INDEX',
+    CLEAR_LOGS: 'SP_CLEAR_LOGS'
+  };
+
+  const mapped = map[type];
+  if (!mapped) return { ok: false, error: 'Unknown bridge command: ' + type };
+  return await handleMsg({ type: mapped }, {});
+}
+
+async function pollLocalBridge() {
+  if (localBridgeBusy) return;
+  localBridgeBusy = true;
+  try {
+    const state = await loadState();
+    await bridgeFetch('/extension/heartbeat', {
+      method: 'POST',
+      body: JSON.stringify({ source: 'ten-yuan-f12-extension', state: stateSummary(state), ts: Date.now() })
+    });
+
+    const next = await bridgeFetch('/commands/next?client=' + encodeURIComponent(chrome.runtime.id || 'edge-extension'));
+    if (!next || !next.command) return;
+
+    const result = await executeBridgeCommand(next.command);
+    const fresh = await loadState();
+    await reportBridgeResult(next.command, result, fresh);
+  } catch (e) {
+    // Bridge is optional. Stay quiet when the local service is not running.
+  } finally {
+    localBridgeBusy = false;
+  }
+}
+
+setInterval(pollLocalBridge, LOCAL_BRIDGE_POLL_MS);
+setTimeout(pollLocalBridge, 800);
 
 
 // ======== Worker connection tracking ========
@@ -335,6 +482,25 @@ async function handleMsg(msg, sender) {
         index: msg.index
       });
       upsertMultiTab(s, tabId, { status: result?.status || 'command_sent', lastMessage: msg.command, lastHeartbeat: Date.now() });
+      if (msg.command === 'ARCHIVE_LATEST' && result?.ok) {
+        try {
+          const tab = ensureMultiTabs(s).tabs[String(tabId)] || {};
+          const archived = await archiveAgentResult(tabId, {
+            status: 'idle',
+            title: tab.title || '',
+            url: tab.url || '',
+            currentRound: result.round || tab.currentRound || 0,
+            total: result.total || tab.total || 0,
+            result: {
+              ...result,
+              task: result.task || '手动归档当前页面最新 assistant 回复'
+            }
+          });
+          if (archived?.ok) addLog(s, 'SYNC', 'Manual archive #' + tabId, archived.relativePath || '');
+        } catch (error) {
+          addError(s, 'Manual archive failed #' + tabId, error.message);
+        }
+      }
       addLog(s, 'INFO', 'Multi command ' + msg.command + ' -> #' + tabId, JSON.stringify(result || {}));
       await saveState(s);
       return { ok: true, result };
@@ -549,7 +715,7 @@ async function handleMsg(msg, sender) {
       return {ok:true,lease:{locked,remaining:locked?Math.max(0,s.leaseUntil-Date.now()):0,activeTabId:locked?s.activeTabId:null}};
     }
 
-    case 'SP_VERSION_INFO': return {ok:true,schemaVersion:SCHEMA_VERSION,extensionVersion:'1.0.0',backgroundMode:'inline-multitab',storageKey:STATE_KEY};
+    case 'SP_VERSION_INFO': return {ok:true,schemaVersion:SCHEMA_VERSION,extensionVersion:'1.1.0',backgroundMode:'inline-multitab-bridge',storageKey:STATE_KEY,localBridge:LOCAL_BRIDGE_URL};
 
         case 'WORKER_READY': {
       const tabId = sender.tab ? sender.tab.id : s.activeTabId;
@@ -570,10 +736,16 @@ async function handleMsg(msg, sender) {
       return { ok: true, worker: 'connected' };
     }
 
-    case 'WORKER_REPORT': addLog(s,'INFO','Worker '+(msg.tabId||'?')+': '+msg.event,msg.detail||''); await saveState(s); return {ok:true};
+    case 'WORKER_REPORT': {
+      const fresh = await loadState();
+      addLog(fresh,'INFO','Worker '+(msg.tabId||'?')+': '+msg.event,msg.detail||'');
+      await saveState(fresh);
+      return {ok:true};
+    }
 
     case 'AGENT_REGISTER':
     case 'AGENT_HEARTBEAT': {
+      s = await loadState();
       const tabId = sender.tab ? sender.tab.id : s.activeTabId;
       const tab = upsertMultiTab(s, tabId, {
         agentTabId: msg.tabId || '',
@@ -590,6 +762,7 @@ async function handleMsg(msg, sender) {
     }
 
     case 'AGENT_RESULT': {
+      s = await loadState();
       const tabId = sender.tab ? sender.tab.id : s.activeTabId;
       upsertMultiTab(s, tabId, {
         status: msg.status || 'idle',
@@ -598,12 +771,19 @@ async function handleMsg(msg, sender) {
         lastMessage: (msg.lastMessage || msg.result?.text || '').slice(0, 500),
         lastHeartbeat: Date.now()
       });
+      try {
+        const archived = await archiveAgentResult(tabId, msg);
+        if (archived?.ok) addLog(s, 'SYNC', 'Archived agent result #' + tabId, archived.relativePath || archived.path || '');
+      } catch (error) {
+        addError(s, 'Archive failed #' + tabId, error.message);
+      }
       addLog(s, 'SYNC', 'Agent result #' + tabId, msg.result ? JSON.stringify(msg.result).slice(0, 200) : '');
       await saveState(s);
       return { ok: true };
     }
 
     case 'AGENT_ERROR': {
+      s = await loadState();
       const tabId = sender.tab ? sender.tab.id : s.activeTabId;
       upsertMultiTab(s, tabId, {
         status: 'error',
@@ -619,7 +799,7 @@ async function handleMsg(msg, sender) {
   }
 }
 
-console.log('F12 Background v1.0 multi-page worker started. Schema: '+SCHEMA_VERSION);
+console.log('F12 Background v1.1 multi-page bridge worker started. Schema: '+SCHEMA_VERSION);
 
 
 

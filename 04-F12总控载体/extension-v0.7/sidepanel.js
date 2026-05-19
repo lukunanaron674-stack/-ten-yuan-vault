@@ -111,11 +111,12 @@ function genTasks(count, project, frame) {
 function parseTasks(raw, options = {}) {
   const warnings = [];
   const text = (raw || '').trim();
+  const separatorPattern = /\s*---\s*task\s*---\s*/i;
   let tasks = [];
   let parseMode = 'single';
   if (!text) return {tasks:[], total:0, parseMode, warnings};
-  if (text.includes('---TASK---')) {
-    tasks = text.split('---TASK---').map(t=>t.trim()).filter(Boolean);
+  if (separatorPattern.test(text)) {
+    tasks = text.split(/\s*---\s*task\s*---\s*/gi).map(t=>t.trim()).filter(Boolean);
     parseMode = 'separator';
   } else {
     const byRound = splitByRoundHeading(text);
@@ -128,7 +129,7 @@ function parseTasks(raw, options = {}) {
       parseMode = 'generated';
     } else {
       tasks = [text];
-      if (detectRoundIntent(text)) warnings.push('当前只解析出 1 个任务。若要 12 轮，请使用 ---TASK--- 分隔或点击生成12轮。');
+      if (detectRoundIntent(text)) warnings.push('当前只解析出 1 个任务。若要 12 轮，请使用 ---TASK--- / ---task--- 分隔或点击生成12轮。');
     }
   }
   tasks = tasks.filter(Boolean);
@@ -378,7 +379,7 @@ async function doLoadTasks(){
   const warnEl = $('task-warning');
   const wantsMulti = detectRoundIntent(raw);
   if (warnEl) warnEl.textContent = parsed.warnings.join(' ');
-  if (tasks.length === 1 && wantsMulti) showFeedback('检测到你可能想跑多轮，但当前只解析出 1 个任务。请用 ---TASK--- 分隔或生成自定义轮次。', true);
+  if (tasks.length === 1 && wantsMulti) showFeedback('检测到你可能想跑多轮，但当前只解析出 1 个任务。请用 ---TASK--- / ---task--- 分隔或生成自定义轮次。', true);
   else showFeedback('已载入 '+tasks.length+' 个，共 '+(state.tasks?state.tasks.length:'?')+' 轮');
 }
 function renderAllSkipEditor(){
