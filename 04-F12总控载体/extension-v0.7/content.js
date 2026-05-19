@@ -26,14 +26,16 @@
   }
 
   function agentPayload(extra = {}) {
+    const total = agentTasks.length;
+    const currentRound = total > 0 ? Math.min(agentIndex + 1, total) : 0;
     return {
       source: 'ten-yuan-f12-agent',
       tabId: agentTabId,
       url: location.href,
       title: document.title,
       status: agentStatus,
-      currentRound: agentIndex + 1,
-      total: agentTasks.length,
+      currentRound,
+      total,
       lastHeartbeat: Date.now(),
       ...extra
     };
@@ -42,7 +44,7 @@
   function broadcastAgent(type, extra = {}) {
     const payload = { type, ...agentPayload(extra) };
     if (agentChannel) agentChannel.postMessage(payload);
-    chrome.runtime.sendMessage({ type: 'AGENT_' + type, ...payload }).catch(() => {});
+    chrome.runtime.sendMessage({ ...payload, type: 'AGENT_' + type }).catch(() => {});
   }
 
   function setAgentStatus(status, message) {
@@ -244,7 +246,14 @@
         setAgentStatus('idle', 'Idle');
         updateCapsule('done', 'Round complete');
         report('DONE', 'Reply done');
-        const payload = { ok: true, status: 'done', text: result.text };
+        const payload = {
+          ok: true,
+          status: 'done',
+          text: result.text,
+          task: String(task || '').slice(0, 2000),
+          round: (options.index || 0) + 1,
+          total: options.total || agentTasks.length || 0
+        };
         broadcastAgent('RESULT', { status: 'idle', lastMessage: result.text, result: payload });
         return payload;
       } else {
@@ -332,6 +341,17 @@
         return await sendAgentCurrent();
       case 'AUTO_RUN':
         return await autoAgentRun();
+      case 'ARCHIVE_LATEST': {
+        const text = getLastAssistantText();
+        return {
+          ok: !!String(text || '').trim(),
+          status: 'done',
+          text,
+          task: '手动归档当前页面最新 assistant 回复',
+          round: agentTasks.length ? Math.min(agentIndex + 1, agentTasks.length) : 0,
+          total: agentTasks.length || 0
+        };
+      }
       case 'PAUSE':
         return pauseAgent();
       case 'STOP':
@@ -354,6 +374,7 @@
     let stableCount = 0;
     let lastText = '';
     let generatingWasActive = false;
+    const stopGraceMs = 20 * 1000;
 
     while (Date.now() - start < timeoutMs) {
       if (shouldStop) return { done: false, reason: 'stopped' };
@@ -362,8 +383,10 @@
       const gen = isGenerating();
       if (gen) {
         generatingWasActive = true;
-        stableCount = 0;
-        continue;
+        if (Date.now() - start < stopGraceMs) {
+          stableCount = 0;
+          continue;
+        }
       }
 
       const currentText = getLastAssistantText();

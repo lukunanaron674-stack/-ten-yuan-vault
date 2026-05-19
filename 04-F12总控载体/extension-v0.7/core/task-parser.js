@@ -1,11 +1,12 @@
 ﻿// core/task-parser.js — 任务解析器
-// 支持 ---TASK--- 分隔、默认任务生成、五轮承载轮注入
+// 支持 ---TASK--- / ---task--- 分隔、默认任务生成、五轮承载轮注入
 
 const DEFAULT_TASK_COUNT = 10;
 
 function parseTasks(raw, options = {}) {
   const warnings = [];
   const text = (raw || '').trim();
+  const separatorPattern = /\s*---\s*task\s*---\s*/i;
   let tasks = [];
   let parseMode = 'single';
 
@@ -13,8 +14,8 @@ function parseTasks(raw, options = {}) {
     return { tasks: [], total: 0, parseMode: 'single', warnings };
   }
 
-  if (text.includes('---TASK---')) {
-    tasks = text.split('---TASK---').map(t => t.trim()).filter(Boolean);
+  if (separatorPattern.test(text)) {
+    tasks = text.split(/\s*---\s*task\s*---\s*/gi).map(t => t.trim()).filter(Boolean);
     parseMode = 'separator';
   } else {
     const roundParts = splitByRoundHeading(text);
@@ -29,7 +30,7 @@ function parseTasks(raw, options = {}) {
       tasks = [text];
       parseMode = 'single';
       if (detectRoundIntent(text)) {
-        warnings.push('当前只解析出 1 个任务。若要 12 轮，请使用 ---TASK--- 分隔或点击生成12轮。');
+        warnings.push('当前只解析出 1 个任务。若要 12 轮，请使用 ---TASK--- / ---task--- 分隔或点击生成12轮。');
       }
     }
   }

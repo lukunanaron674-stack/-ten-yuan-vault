@@ -1,10 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Ten Yuan F12 Controller v1.0",
-  "version": "1.0.0",
-  "description": "F12 总控塔 — 多页总控版本",
+  "name": "Ten Yuan F12 Controller v1.1",
+  "version": "1.1.0",
+  "description": "F12 controller with local bridge support",
   "permissions": ["storage", "tabs", "activeTab", "scripting", "sidePanel"],
-  "host_permissions": ["https://chatgpt.com/*", "https://chat.openai.com/*"],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*",
+    "http://127.0.0.1:17312/*",
+    "http://localhost:17312/*"
+  ],
   "background": {
     "service_worker": "background.js"
   },

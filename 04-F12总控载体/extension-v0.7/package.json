@@ -1,0 +1,17 @@
+{
+  "name": "ten-yuan-f12-controller",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Ten Yuan F12 Controller local bridge tools",
+  "scripts": {
+    "bridge": "node local-bridge/server.js",
+    "f12": "node local-bridge/cli.js",
+    "f12:status": "node local-bridge/cli.js status",
+    "f12:bind": "node local-bridge/cli.js bind",
+    "f12:inject": "node local-bridge/cli.js inject",
+    "f12:send": "node local-bridge/cli.js send",
+    "f12:auto": "node local-bridge/cli.js auto",
+    "f12:pause": "node local-bridge/cli.js pause",
+    "f12:stop": "node local-bridge/cli.js stop"
+  }
+}
