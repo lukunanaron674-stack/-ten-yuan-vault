@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Ten Yuan F12 Controller v1.0",
+  "version": "1.0.0",
+  "description": "F12 总控塔 — 多页总控版本",
+  "permissions": ["storage", "tabs", "activeTab", "scripting", "sidePanel"],
+  "host_permissions": ["https://chatgpt.com/*", "https://chat.openai.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*", "https://chat.openai.com/*"],
+      "js": ["content.js"],
+      "css": ["overlay.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
