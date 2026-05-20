@@ -249,19 +249,30 @@ async function pingWorker(tabId) {
 async function ensureWorker(tabId) {
   if (!tabId) return { connected: false, error: 'No tabId' };
 
+  // Trust recent cache to avoid re-ping race condition
+  const cached = workerRegistry[tabId];
+  if (cached && cached.connected && (Date.now() - cached.ts) < 30000) {
+    return { connected: true, existing: true, injected: false };
+  }
+
   const firstPing = await pingWorker(tabId);
   if (firstPing.connected) return { connected: true, existing: !!workerRegistry[tabId], injected: false };
 
-  // Try injecting content.js
+  // Try injecting content.js with retries
   try {
     await chrome.scripting.executeScript({
       target: { tabId },
       files: ['content.js']
     });
-    await new Promise(r => setTimeout(r, 500));
+    // Wait longer for content script to initialize
+    await new Promise(r => setTimeout(r, 1500));
     const secondPing = await pingWorker(tabId);
     if (secondPing.connected) return { connected: true, existing: false, injected: true };
-    return { connected: false, status: 'worker_missing', error: secondPing.error || 'Worker not responding after injection' };
+    // One more retry
+    await new Promise(r => setTimeout(r, 2000));
+    const thirdPing = await pingWorker(tabId);
+    if (thirdPing.connected) return { connected: true, existing: false, injected: true };
+    return { connected: false, status: 'worker_missing', error: thirdPing.error || 'Worker not responding after injection' };
   } catch (e) {
     return { connected: false, status: 'worker_missing', error: 'Inject failed: ' + e.message };
   }
