@@ -1,4 +1,4 @@
-﻿---
+---
 createdAt: 2026-05-20T19:59:06
 source: Codex CLI
 type: 工具归档

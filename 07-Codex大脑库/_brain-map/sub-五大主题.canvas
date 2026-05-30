@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"b1","type":"text","x":-350,"y":-200,"width":240,"height":180,"text":"# 时间 xn+z\n\n功能+存在\n加命运"},
+		{"id":"b2","type":"text","x":50,"y":-200,"width":240,"height":180,"text":"# 本体 zn+x\n\n本体+存在\n加命运"},
+		{"id":"b3","type":"text","x":-350,"y":90,"width":240,"height":180,"text":"# 空间 x+z+n\n\n存在+命运\n加功能"},
+		{"id":"b4","type":"text","x":50,"y":90,"width":240,"height":180,"text":"# 因果 zx+nx\n\n命运+存在\n加功能+存在"},
+		{"id":"b5","type":"text","x":-150,"y":360,"width":240,"height":180,"text":"# 命运 xz+nz\n\n存在+命运\n加功能+命运"},
+		{"id":"b6","type":"file","x":-150,"y":600,"width":260,"height":180,"file":"sub-sub-因果链.canvas","subpath":"sub-sub-因果链.canvas","color":"3"}
+	],
+	"edges":[
+		{"id":"eb1","fromNode":"b4","fromSide":"bottom","toNode":"b6","toSide":"top"},
+		{"id":"eb2","fromNode":"b5","fromSide":"bottom","toNode":"b6","toSide":"top"}
+	]
+}

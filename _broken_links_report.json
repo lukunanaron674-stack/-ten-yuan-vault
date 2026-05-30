@@ -1,0 +1,1730 @@
+{
+  "directory_refs": [
+    {
+      "source": "00-中枢索引/总入口_更新版.md",
+      "line": 6,
+      "target": "01-十元系统"
+    },
+    {
+      "source": "00-中枢索引/总入口_更新版.md",
+      "line": 7,
+      "target": "02-五大主题"
+    },
+    {
+      "source": "00-中枢索引/总入口_更新版.md",
+      "line": 8,
+      "target": "03-对话归档"
+    },
+    {
+      "source": "00-中枢索引/总入口_更新版.md",
+      "line": 9,
+      "target": "04-F12总控载体"
+    },
+    {
+      "source": "00-中枢索引/总入口_更新版.md",
+      "line": 10,
+      "target": "05-银矿库"
+    },
+    {
+      "source": "00-中枢索引/总入口_更新版.md",
+      "line": 48,
+      "target": "05-银矿库"
+    },
+    {
+      "source": "00-中枢索引/总入口_更新版.md",
+      "line": 54,
+      "target": "05-银矿库/00-待二审散点池"
+    }
+  ],
+  "canvas_refs": [
+    {
+      "source": "00-中枢索引/Vault可视化总览.md",
+      "line": 101,
+      "target": "Vault可视化总览.canvas"
+    }
+  ],
+  "template_placeholders": [
+    {
+      "source": "00-中枢索引/模板/模板_角色分析卡.md",
+      "line": 4,
+      "target": "{{作品名}}"
+    }
+  ],
+  "template_examples": [
+    {
+      "source": "00-中枢索引/模板/模板_五元速查表.md",
+      "line": 49,
+      "target": "作品A"
+    },
+    {
+      "source": "00-中枢索引/模板/模板_五元速查表.md",
+      "line": 49,
+      "target": "作品B"
+    },
+    {
+      "source": "00-中枢索引/模板/模板_五元速查表.md",
+      "line": 50,
+      "target": "作品C"
+    },
+    {
+      "source": "00-中枢索引/模板/模板_五元速查表.md",
+      "line": 50,
+      "target": "作品D"
+    }
+  ],
+  "ai_glossary_links": [
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 51,
+      "target": "问题定义"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 62,
+      "target": "基线模型"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 68,
+      "target": "误差分析"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 82,
+      "target": "数据模态"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 92,
+      "target": "表征学习"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 98,
+      "target": "嵌入 Embedding"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 104,
+      "target": "自监督学习"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 114,
+      "target": "泛化"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 122,
+      "target": "Transformer"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 128,
+      "target": "注意力机制 Attention"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 134,
+      "target": "Vision Transformer"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 140,
+      "target": "图神经网络 GNN"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 151,
+      "target": "训练目标 Objective"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 162,
+      "target": "消融实验"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 170,
+      "target": "多模态对齐"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 176,
+      "target": "多模态融合"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 182,
+      "target": "视觉语言模型 VLM"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 193,
+      "target": "Any-to-Any 模型"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 201,
+      "target": "预训练"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 205,
+      "target": "指令微调"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 209,
+      "target": "对齐 Alignment"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 215,
+      "target": "RAG"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 221,
+      "target": "LoRA"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 227,
+      "target": "量化 Quantization"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 233,
+      "target": "MoE"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 241,
+      "target": "Diffusion Models"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 247,
+      "target": "Flow Matching"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 253,
+      "target": "可控生成"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 268,
+      "target": "Agent"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 274,
+      "target": "工具使用"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 278,
+      "target": "多步推理"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 284,
+      "target": "强化学习"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 290,
+      "target": "奖励函数风险"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 298,
+      "target": "Human-in-the-loop"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 309,
+      "target": "AI系统评估"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Concept_Glossary.md",
+      "line": 323,
+      "target": "提示注入 Prompt Injection"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 94,
+      "target": "问题定义"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 95,
+      "target": "AI研究选题"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 96,
+      "target": "读论文方法"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 97,
+      "target": "实验设计"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 98,
+      "target": "误差分析"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 110,
+      "target": "数据模态"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 111,
+      "target": "数据采集策略"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 112,
+      "target": "表征学习"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 113,
+      "target": "训练目标"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 114,
+      "target": "泛化"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 118,
+      "target": "泛化"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 119,
+      "target": "表征学习"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 120,
+      "target": "模型架构"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 126,
+      "target": "Transformer"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 127,
+      "target": "CNN"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 128,
+      "target": "Vision Transformer"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 129,
+      "target": "图神经网络"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 130,
+      "target": "Deep Sets"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 131,
+      "target": "时序模型"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 144,
+      "target": "多模态对齐"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 145,
+      "target": "多模态融合"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 146,
+      "target": "跨模态迁移"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 147,
+      "target": "视觉语言模型"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 148,
+      "target": "Any-to-Any 模型"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 160,
+      "target": "预训练"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 161,
+      "target": "指令微调"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 162,
+      "target": "对齐"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 163,
+      "target": "LoRA"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 164,
+      "target": "量化"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 165,
+      "target": "MoE"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 178,
+      "target": "Diffusion Models"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 179,
+      "target": "Flow Matching"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 180,
+      "target": "可控生成"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 181,
+      "target": "视频生成"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 182,
+      "target": "多模态生成"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 194,
+      "target": "多步推理"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 195,
+      "target": "工具使用"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 196,
+      "target": "强化学习"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 197,
+      "target": "偏好学习"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 198,
+      "target": "奖励函数风险"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 199,
+      "target": "Agent 评估"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 217,
+      "target": "Human-in-the-loop"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 218,
+      "target": "可靠性"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 219,
+      "target": "安全"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 220,
+      "target": "交互媒介"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 221,
+      "target": "协作界面"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 231,
+      "target": "问题定义"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 232,
+      "target": "数据模态"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 233,
+      "target": "表征学习"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 234,
+      "target": "Transformer"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 235,
+      "target": "多模态对齐"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 236,
+      "target": "大模型适配"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 237,
+      "target": "Diffusion Models"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 238,
+      "target": "智能体与推理"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 239,
+      "target": "Human-in-the-loop"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 240,
+      "target": "AI系统评估"
+    },
+    {
+      "source": "09-给74用的可视化库/assets/AI_Almost_Anything_Obsidian_Map.md",
+      "line": 245,
+      "target": "双链"
+    }
+  ],
+  "agent_doc_selfrefs": [
+    {
+      "source": "AGENTS.md",
+      "line": 38,
+      "target": "wikilinks"
+    },
+    {
+      "source": "07-Codex大脑库/Hermes消解Prompt模板.md",
+      "line": 28,
+      "target": "双链"
+    },
+    {
+      "source": "07-Codex大脑库/Hermes消解Prompt模板.md",
+      "line": 34,
+      "target": "wikilink"
+    },
+    {
+      "source": "07-Codex大脑库/第二大腦MOC结构.md",
+      "line": 21,
+      "target": "wikilink"
+    },
+    {
+      "source": "07-Codex大脑库/_bridge/hermes_tasks.md",
+      "line": 28,
+      "target": "wikilink"
+    }
+  ],
+  "char_to_work_links": [
+    {
+      "source": "05-银矿库/角色库/你的名字_立花泷.md",
+      "line": 4,
+      "target": "你的名字"
+    },
+    {
+      "source": "05-银矿库/角色库/功夫熊猫_阿宝.md",
+      "line": 4,
+      "target": "功夫熊猫"
+    },
+    {
+      "source": "05-银矿库/角色库/千与千寻_荻野千寻.md",
+      "line": 4,
+      "target": "千与千寻"
+    },
+    {
+      "source": "05-银矿库/角色库/千与千寻_赈早见琥珀主.md",
+      "line": 4,
+      "target": "千与千寻"
+    },
+    {
+      "source": "05-银矿库/角色库/哈尔的移动城堡_哈尔.md",
+      "line": 4,
+      "target": "哈尔的移动城堡"
+    },
+    {
+      "source": "05-银矿库/角色库/天使爱美丽_爱美丽.md",
+      "line": 4,
+      "target": "天使爱美丽"
+    },
+    {
+      "source": "05-银矿库/角色库/天空之城_巴斯.md",
+      "line": 4,
+      "target": "天空之城"
+    },
+    {
+      "source": "05-银矿库/角色库/头脑特工队_乐乐.md",
+      "line": 4,
+      "target": "头脑特工队"
+    },
+    {
+      "source": "05-银矿库/角色库/寻梦环游记_米格尔.md",
+      "line": 4,
+      "target": "寻梦环游记"
+    },
+    {
+      "source": "05-银矿库/角色库/布达佩斯大饭店_古斯塔夫.md",
+      "line": 4,
+      "target": "布达佩斯大饭店"
+    },
+    {
+      "source": "05-银矿库/角色库/幽灵公主_珊.md",
+      "line": 4,
+      "target": "幽灵公主"
+    },
+    {
+      "source": "05-银矿库/角色库/心灵奇旅_乔伊.md",
+      "line": 4,
+      "target": "心灵奇旅"
+    },
+    {
+      "source": "05-银矿库/角色库/怪物电力公司_毛怪.md",
+      "line": 4,
+      "target": "怪物电力公司"
+    },
+    {
+      "source": "05-银矿库/角色库/指环王_弗罗多.md",
+      "line": 4,
+      "target": "指环王"
+    },
+    {
+      "source": "05-银矿库/角色库/搏击俱乐部_泰勒·德顿.md",
+      "line": 4,
+      "target": "搏击俱乐部"
+    },
+    {
+      "source": "05-银矿库/角色库/搏击俱乐部_泰勒·德顿.md",
+      "line": 32,
+      "target": "搏击俱乐部"
+    },
+    {
+      "source": "05-银矿库/角色库/放牛班的春天_马修.md",
+      "line": 4,
+      "target": "放牛班的春天"
+    },
+    {
+      "source": "05-银矿库/角色库/教父_维托·柯里昂.md",
+      "line": 4,
+      "target": "教父"
+    },
+    {
+      "source": "05-银矿库/角色库/星际穿越_库珀.md",
+      "line": 4,
+      "target": "星际穿越"
+    },
+    {
+      "source": "05-银矿库/角色库/机器人总动员_瓦力.md",
+      "line": 4,
+      "target": "机器人总动员"
+    },
+    {
+      "source": "05-银矿库/角色库/楚门的世界_楚门.md",
+      "line": 4,
+      "target": "楚门的世界"
+    },
+    {
+      "source": "05-银矿库/角色库/死亡诗社_基廷老师.md",
+      "line": 4,
+      "target": "死亡诗社"
+    },
+    {
+      "source": "05-银矿库/角色库/沉默的羔羊_汉尼拔.md",
+      "line": 4,
+      "target": "沉默的羔羊"
+    },
+    {
+      "source": "05-银矿库/角色库/泰坦尼克号_杰克.md",
+      "line": 4,
+      "target": "泰坦尼克号"
+    },
+    {
+      "source": "05-银矿库/角色库/泰坦尼克号_杰克.md",
+      "line": 32,
+      "target": "泰坦尼克号"
+    },
+    {
+      "source": "05-银矿库/角色库/海王_亚瑟.md",
+      "line": 4,
+      "target": "海王"
+    },
+    {
+      "source": "05-银矿库/角色库/玩具总动员_胡迪.md",
+      "line": 4,
+      "target": "玩具总动员"
+    },
+    {
+      "source": "05-银矿库/角色库/疯狂动物城_朱迪.md",
+      "line": 4,
+      "target": "疯狂动物城"
+    },
+    {
+      "source": "05-银矿库/角色库/盗梦空间_柯布.md",
+      "line": 4,
+      "target": "盗梦空间"
+    },
+    {
+      "source": "05-银矿库/角色库/示例_安迪角色分析.md",
+      "line": 4,
+      "target": "肖申克的救赎"
+    },
+    {
+      "source": "05-银矿库/角色库/示例_小丑角色分析.md",
+      "line": 4,
+      "target": "蝙蝠侠：黑暗骑士"
+    },
+    {
+      "source": "05-银矿库/角色库/示例_小丑角色分析.md",
+      "line": 29,
+      "target": "蝙蝠侠"
+    },
+    {
+      "source": "05-银矿库/角色库/神偷奶爸_格鲁.md",
+      "line": 4,
+      "target": "神偷奶爸"
+    },
+    {
+      "source": "05-银矿库/角色库/秒速5厘米_远野贵树.md",
+      "line": 4,
+      "target": "秒速5厘米"
+    },
+    {
+      "source": "05-银矿库/角色库/红猪_波鲁克.md",
+      "line": 4,
+      "target": "红猪"
+    },
+    {
+      "source": "05-银矿库/角色库/美丽人生_圭多.md",
+      "line": 4,
+      "target": "美丽人生"
+    },
+    {
+      "source": "05-银矿库/角色库/美食总动员_小米.md",
+      "line": 4,
+      "target": "美食总动员"
+    },
+    {
+      "source": "05-银矿库/角色库/肖申克的救赎_安迪.md",
+      "line": 4,
+      "target": "肖申克的救赎"
+    },
+    {
+      "source": "05-银矿库/角色库/花样年华_周慕云.md",
+      "line": 4,
+      "target": "花样年华"
+    },
+    {
+      "source": "05-银矿库/角色库/萤火虫之墓_清太.md",
+      "line": 4,
+      "target": "萤火虫之墓"
+    },
+    {
+      "source": "05-银矿库/角色库/萤火虫之墓_节子.md",
+      "line": 4,
+      "target": "萤火虫之墓"
+    },
+    {
+      "source": "05-银矿库/角色库/蜂蜜与四叶草_竹本祐太.md",
+      "line": 4,
+      "target": "蜂蜜与四叶草"
+    },
+    {
+      "source": "05-银矿库/角色库/蜂蜜与四叶草_花本叶久美.md",
+      "line": 4,
+      "target": "蜂蜜与四叶草"
+    },
+    {
+      "source": "05-银矿库/角色库/蝙蝠侠_布鲁斯·韦恩.md",
+      "line": 4,
+      "target": "蝙蝠侠"
+    },
+    {
+      "source": "05-银矿库/角色库/超能陆战队_大白.md",
+      "line": 4,
+      "target": "超能陆战队"
+    },
+    {
+      "source": "05-银矿库/角色库/辛德勒的名单_辛德勒.md",
+      "line": 4,
+      "target": "辛德勒的名单"
+    },
+    {
+      "source": "05-银矿库/角色库/钢铁侠_托尼·史塔克.md",
+      "line": 4,
+      "target": "钢铁侠"
+    },
+    {
+      "source": "05-银矿库/角色库/银翼杀手_瑞克·戴克.md",
+      "line": 4,
+      "target": "银翼杀手"
+    },
+    {
+      "source": "05-银矿库/角色库/阿基拉_岛铁雄.md",
+      "line": 4,
+      "target": "阿基拉"
+    },
+    {
+      "source": "05-银矿库/角色库/阿基拉_岛铁雄.md",
+      "line": 30,
+      "target": "阿基拉"
+    },
+    {
+      "source": "05-银矿库/角色库/阿基拉_金田正太郎.md",
+      "line": 4,
+      "target": "阿基拉"
+    },
+    {
+      "source": "05-银矿库/角色库/阿基拉_金田正太郎.md",
+      "line": 30,
+      "target": "阿基拉"
+    },
+    {
+      "source": "05-银矿库/角色库/霸王别姬_程蝶衣.md",
+      "line": 4,
+      "target": "霸王别姬"
+    },
+    {
+      "source": "05-银矿库/角色库/风之谷_娜乌西卡.md",
+      "line": 4,
+      "target": "风之谷"
+    },
+    {
+      "source": "05-银矿库/角色库/飞屋环游记_卡尔.md",
+      "line": 4,
+      "target": "飞屋环游记"
+    },
+    {
+      "source": "05-银矿库/角色库/飞越疯人院_麦克墨菲.md",
+      "line": 4,
+      "target": "飞越疯人院"
+    },
+    {
+      "source": "05-银矿库/角色库/驯龙高手_小嗝嗝.md",
+      "line": 4,
+      "target": "驯龙高手"
+    },
+    {
+      "source": "05-银矿库/角色库/魔女宅急便_琪琪.md",
+      "line": 4,
+      "target": "魔女宅急便"
+    },
+    {
+      "source": "05-银矿库/角色库/龙猫_草壁皋月.md",
+      "line": 4,
+      "target": "龙猫"
+    },
+    {
+      "source": "05-银矿库/角色库/龙猫_草壁皋月.md",
+      "line": 31,
+      "target": "龙猫"
+    },
+    {
+      "source": "05-银矿库/角色库_补充/剪刀手爱德华_爱德华.md",
+      "line": 4,
+      "target": "剪刀手爱德华"
+    },
+    {
+      "source": "05-银矿库/角色库_补充/忠犬八公_八公.md",
+      "line": 4,
+      "target": "忠犬八公"
+    },
+    {
+      "source": "05-银矿库/角色库_补充/黑客帝国_尼奥.md",
+      "line": 4,
+      "target": "黑客帝国"
+    }
+  ],
+  "char_relationship_links": [
+    {
+      "source": "05-银矿库/角色库/你的名字_立花泷.md",
+      "line": 31,
+      "target": "奥寺美纪"
+    },
+    {
+      "source": "05-银矿库/角色库/你的名字_立花泷.md",
+      "line": 32,
+      "target": "外婆"
+    },
+    {
+      "source": "05-银矿库/角色库/功夫熊猫_阿宝.md",
+      "line": 30,
+      "target": "师父"
+    },
+    {
+      "source": "05-银矿库/角色库/功夫熊猫_阿宝.md",
+      "line": 31,
+      "target": "盖世五侠"
+    },
+    {
+      "source": "05-银矿库/角色库/功夫熊猫_阿宝.md",
+      "line": 32,
+      "target": "太郎"
+    },
+    {
+      "source": "05-银矿库/角色库/千与千寻_荻野千寻.md",
+      "line": 30,
+      "target": "白龙"
+    },
+    {
+      "source": "05-银矿库/角色库/千与千寻_荻野千寻.md",
+      "line": 31,
+      "target": "汤婆婆"
+    },
+    {
+      "source": "05-银矿库/角色库/千与千寻_荻野千寻.md",
+      "line": 32,
+      "target": "无脸男"
+    },
+    {
+      "source": "05-银矿库/角色库/千与千寻_赈早见琥珀主.md",
+      "line": 30,
+      "target": "千寻"
+    },
+    {
+      "source": "05-银矿库/角色库/千与千寻_赈早见琥珀主.md",
+      "line": 31,
+      "target": "汤婆婆"
+    },
+    {
+      "source": "05-银矿库/角色库/千与千寻_赈早见琥珀主.md",
+      "line": 32,
+      "target": "钱婆婆"
+    },
+    {
+      "source": "05-银矿库/角色库/哈尔的移动城堡_哈尔.md",
+      "line": 30,
+      "target": "卡西法"
+    },
+    {
+      "source": "05-银矿库/角色库/哈尔的移动城堡_哈尔.md",
+      "line": 31,
+      "target": "荒野女巫"
+    },
+    {
+      "source": "05-银矿库/角色库/天使爱美丽_爱美丽.md",
+      "line": 30,
+      "target": "尼诺"
+    },
+    {
+      "source": "05-银矿库/角色库/天使爱美丽_爱美丽.md",
+      "line": 31,
+      "target": "父亲"
+    },
+    {
+      "source": "05-银矿库/角色库/天使爱美丽_爱美丽.md",
+      "line": 32,
+      "target": "邻居们"
+    },
+    {
+      "source": "05-银矿库/角色库/天空之城_巴斯.md",
+      "line": 30,
+      "target": "希达"
+    },
+    {
+      "source": "05-银矿库/角色库/天空之城_巴斯.md",
+      "line": 31,
+      "target": "穆斯卡"
+    },
+    {
+      "source": "05-银矿库/角色库/天空之城_巴斯.md",
+      "line": 32,
+      "target": "朵拉"
+    },
+    {
+      "source": "05-银矿库/角色库/头脑特工队_乐乐.md",
+      "line": 30,
+      "target": "忧忧"
+    },
+    {
+      "source": "05-银矿库/角色库/头脑特工队_乐乐.md",
+      "line": 31,
+      "target": "冰棒"
+    },
+    {
+      "source": "05-银矿库/角色库/头脑特工队_乐乐.md",
+      "line": 32,
+      "target": "莱莉"
+    },
+    {
+      "source": "05-银矿库/角色库/寻梦环游记_米格尔.md",
+      "line": 30,
+      "target": "可可"
+    },
+    {
+      "source": "05-银矿库/角色库/寻梦环游记_米格尔.md",
+      "line": 31,
+      "target": "德拉科鲁兹"
+    },
+    {
+      "source": "05-银矿库/角色库/寻梦环游记_米格尔.md",
+      "line": 32,
+      "target": "埃克托"
+    },
+    {
+      "source": "05-银矿库/角色库/布达佩斯大饭店_古斯塔夫.md",
+      "line": 30,
+      "target": "零"
+    },
+    {
+      "source": "05-银矿库/角色库/布达佩斯大饭店_古斯塔夫.md",
+      "line": 31,
+      "target": "D夫人"
+    },
+    {
+      "source": "05-银矿库/角色库/布达佩斯大饭店_古斯塔夫.md",
+      "line": 32,
+      "target": "德米特里"
+    },
+    {
+      "source": "05-银矿库/角色库/幽灵公主_珊.md",
+      "line": 31,
+      "target": "黑帽大人"
+    },
+    {
+      "source": "05-银矿库/角色库/幽灵公主_珊.md",
+      "line": 32,
+      "target": "莫娜"
+    },
+    {
+      "source": "05-银矿库/角色库/心灵奇旅_乔伊.md",
+      "line": 30,
+      "target": "22号"
+    },
+    {
+      "source": "05-银矿库/角色库/心灵奇旅_乔伊.md",
+      "line": 31,
+      "target": "多茜娅"
+    },
+    {
+      "source": "05-银矿库/角色库/心灵奇旅_乔伊.md",
+      "line": 32,
+      "target": "母亲"
+    },
+    {
+      "source": "05-银矿库/角色库/怪物电力公司_毛怪.md",
+      "line": 30,
+      "target": "阿布"
+    },
+    {
+      "source": "05-银矿库/角色库/怪物电力公司_毛怪.md",
+      "line": 31,
+      "target": "大眼怪"
+    },
+    {
+      "source": "05-银矿库/角色库/怪物电力公司_毛怪.md",
+      "line": 32,
+      "target": "苏利文"
+    },
+    {
+      "source": "05-银矿库/角色库/指环王_弗罗多.md",
+      "line": 30,
+      "target": "山姆"
+    },
+    {
+      "source": "05-银矿库/角色库/指环王_弗罗多.md",
+      "line": 31,
+      "target": "甘道夫"
+    },
+    {
+      "source": "05-银矿库/角色库/指环王_弗罗多.md",
+      "line": 32,
+      "target": "咕噜"
+    },
+    {
+      "source": "05-银矿库/角色库/搏击俱乐部_泰勒·德顿.md",
+      "line": 30,
+      "target": "叙述者"
+    },
+    {
+      "source": "05-银矿库/角色库/搏击俱乐部_泰勒·德顿.md",
+      "line": 31,
+      "target": "玛拉"
+    },
+    {
+      "source": "05-银矿库/角色库/放牛班的春天_马修.md",
+      "line": 30,
+      "target": "莫昂奇"
+    },
+    {
+      "source": "05-银矿库/角色库/放牛班的春天_马修.md",
+      "line": 31,
+      "target": "校长"
+    },
+    {
+      "source": "05-银矿库/角色库/放牛班的春天_马修.md",
+      "line": 32,
+      "target": "孩子们"
+    },
+    {
+      "source": "05-银矿库/角色库/教父_维托·柯里昂.md",
+      "line": 30,
+      "target": "迈克尔"
+    },
+    {
+      "source": "05-银矿库/角色库/教父_维托·柯里昂.md",
+      "line": 31,
+      "target": "桑尼"
+    },
+    {
+      "source": "05-银矿库/角色库/教父_维托·柯里昂.md",
+      "line": 32,
+      "target": "汤姆"
+    },
+    {
+      "source": "05-银矿库/角色库/星际穿越_库珀.md",
+      "line": 30,
+      "target": "墨菲"
+    },
+    {
+      "source": "05-银矿库/角色库/星际穿越_库珀.md",
+      "line": 31,
+      "target": "布兰德"
+    },
+    {
+      "source": "05-银矿库/角色库/星际穿越_库珀.md",
+      "line": 32,
+      "target": "艾米莉亚"
+    },
+    {
+      "source": "05-银矿库/角色库/机器人总动员_瓦力.md",
+      "line": 30,
+      "target": "伊芙"
+    },
+    {
+      "source": "05-银矿库/角色库/机器人总动员_瓦力.md",
+      "line": 31,
+      "target": "人类"
+    },
+    {
+      "source": "05-银矿库/角色库/机器人总动员_瓦力.md",
+      "line": 32,
+      "target": "船长"
+    },
+    {
+      "source": "05-银矿库/角色库/楚门的世界_楚门.md",
+      "line": 30,
+      "target": "克里斯托弗"
+    },
+    {
+      "source": "05-银矿库/角色库/楚门的世界_楚门.md",
+      "line": 31,
+      "target": "观众"
+    },
+    {
+      "source": "05-银矿库/角色库/楚门的世界_楚门.md",
+      "line": 32,
+      "target": "真实世界"
+    },
+    {
+      "source": "05-银矿库/角色库/死亡诗社_基廷老师.md",
+      "line": 30,
+      "target": "尼尔"
+    },
+    {
+      "source": "05-银矿库/角色库/死亡诗社_基廷老师.md",
+      "line": 31,
+      "target": "托德"
+    },
+    {
+      "source": "05-银矿库/角色库/死亡诗社_基廷老师.md",
+      "line": 32,
+      "target": "学校"
+    },
+    {
+      "source": "05-银矿库/角色库/沉默的羔羊_汉尼拔.md",
+      "line": 30,
+      "target": "克拉丽斯"
+    },
+    {
+      "source": "05-银矿库/角色库/沉默的羔羊_汉尼拔.md",
+      "line": 31,
+      "target": "水牛比尔"
+    },
+    {
+      "source": "05-银矿库/角色库/沉默的羔羊_汉尼拔.md",
+      "line": 32,
+      "target": "奇尔顿"
+    },
+    {
+      "source": "05-银矿库/角色库/泰坦尼克号_杰克.md",
+      "line": 30,
+      "target": "露丝"
+    },
+    {
+      "source": "05-银矿库/角色库/泰坦尼克号_杰克.md",
+      "line": 31,
+      "target": "卡尔"
+    },
+    {
+      "source": "05-银矿库/角色库/海王_亚瑟.md",
+      "line": 30,
+      "target": "湄拉"
+    },
+    {
+      "source": "05-银矿库/角色库/海王_亚瑟.md",
+      "line": 31,
+      "target": "奥姆"
+    },
+    {
+      "source": "05-银矿库/角色库/海王_亚瑟.md",
+      "line": 32,
+      "target": "亚特兰蒂斯"
+    },
+    {
+      "source": "05-银矿库/角色库/玩具总动员_胡迪.md",
+      "line": 30,
+      "target": "巴斯"
+    },
+    {
+      "source": "05-银矿库/角色库/玩具总动员_胡迪.md",
+      "line": 32,
+      "target": "牧羊女"
+    },
+    {
+      "source": "05-银矿库/角色库/疯狂动物城_朱迪.md",
+      "line": 30,
+      "target": "尼克"
+    },
+    {
+      "source": "05-银矿库/角色库/疯狂动物城_朱迪.md",
+      "line": 31,
+      "target": "狮子市长"
+    },
+    {
+      "source": "05-银矿库/角色库/疯狂动物城_朱迪.md",
+      "line": 32,
+      "target": "父母"
+    },
+    {
+      "source": "05-银矿库/角色库/盗梦空间_柯布.md",
+      "line": 30,
+      "target": "梅尔"
+    },
+    {
+      "source": "05-银矿库/角色库/盗梦空间_柯布.md",
+      "line": 31,
+      "target": "阿里阿德涅"
+    },
+    {
+      "source": "05-银矿库/角色库/盗梦空间_柯布.md",
+      "line": 32,
+      "target": "齐藤"
+    },
+    {
+      "source": "05-银矿库/角色库/示例_安迪角色分析.md",
+      "line": 29,
+      "target": "瑞德"
+    },
+    {
+      "source": "05-银矿库/角色库/示例_安迪角色分析.md",
+      "line": 30,
+      "target": "诺顿监狱长"
+    },
+    {
+      "source": "05-银矿库/角色库/示例_小丑角色分析.md",
+      "line": 30,
+      "target": "哈维·丹特"
+    },
+    {
+      "source": "05-银矿库/角色库/神偷奶爸_格鲁.md",
+      "line": 30,
+      "target": "三个女儿"
+    },
+    {
+      "source": "05-银矿库/角色库/神偷奶爸_格鲁.md",
+      "line": 31,
+      "target": "尼法里博士"
+    },
+    {
+      "source": "05-银矿库/角色库/神偷奶爸_格鲁.md",
+      "line": 32,
+      "target": "小黄人"
+    },
+    {
+      "source": "05-银矿库/角色库/秒速5厘米_远野贵树.md",
+      "line": 30,
+      "target": "筱原明里"
+    },
+    {
+      "source": "05-银矿库/角色库/秒速5厘米_远野贵树.md",
+      "line": 31,
+      "target": "澄田花苗"
+    },
+    {
+      "source": "05-银矿库/角色库/秒速5厘米_远野贵树.md",
+      "line": 32,
+      "target": "自己"
+    },
+    {
+      "source": "05-银矿库/角色库/红猪_波鲁克.md",
+      "line": 29,
+      "target": "吉娜"
+    },
+    {
+      "source": "05-银矿库/角色库/红猪_波鲁克.md",
+      "line": 30,
+      "target": "菲奥"
+    },
+    {
+      "source": "05-银矿库/角色库/红猪_波鲁克.md",
+      "line": 31,
+      "target": "卡地士"
+    },
+    {
+      "source": "05-银矿库/角色库/美丽人生_圭多.md",
+      "line": 30,
+      "target": "乔舒亚"
+    },
+    {
+      "source": "05-银矿库/角色库/美丽人生_圭多.md",
+      "line": 31,
+      "target": "多拉"
+    },
+    {
+      "source": "05-银矿库/角色库/美丽人生_圭多.md",
+      "line": 32,
+      "target": "纳粹军官"
+    },
+    {
+      "source": "05-银矿库/角色库/美食总动员_小米.md",
+      "line": 30,
+      "target": "林圭宁"
+    },
+    {
+      "source": "05-银矿库/角色库/美食总动员_小米.md",
+      "line": 31,
+      "target": "古斯托"
+    },
+    {
+      "source": "05-银矿库/角色库/美食总动员_小米.md",
+      "line": 32,
+      "target": "小米家人"
+    },
+    {
+      "source": "05-银矿库/角色库/肖申克的救赎_安迪.md",
+      "line": 30,
+      "target": "瑞德"
+    },
+    {
+      "source": "05-银矿库/角色库/肖申克的救赎_安迪.md",
+      "line": 31,
+      "target": "诺顿监狱长"
+    },
+    {
+      "source": "05-银矿库/角色库/肖申克的救赎_安迪.md",
+      "line": 32,
+      "target": "希望"
+    },
+    {
+      "source": "05-银矿库/角色库/花样年华_周慕云.md",
+      "line": 31,
+      "target": "妻子"
+    },
+    {
+      "source": "05-银矿库/角色库/花样年华_周慕云.md",
+      "line": 32,
+      "target": "吴哥窟"
+    },
+    {
+      "source": "05-银矿库/角色库/萤火虫之墓_清太.md",
+      "line": 31,
+      "target": "姨妈"
+    },
+    {
+      "source": "05-银矿库/角色库/萤火虫之墓_清太.md",
+      "line": 32,
+      "target": "母亲"
+    },
+    {
+      "source": "05-银矿库/角色库/萤火虫之墓_节子.md",
+      "line": 31,
+      "target": "母亲"
+    },
+    {
+      "source": "05-银矿库/角色库/萤火虫之墓_节子.md",
+      "line": 32,
+      "target": "萤火虫"
+    },
+    {
+      "source": "05-银矿库/角色库/蜂蜜与四叶草_竹本祐太.md",
+      "line": 29,
+      "target": "阿久"
+    },
+    {
+      "source": "05-银矿库/角色库/蜂蜜与四叶草_竹本祐太.md",
+      "line": 30,
+      "target": "真山"
+    },
+    {
+      "source": "05-银矿库/角色库/蜂蜜与四叶草_竹本祐太.md",
+      "line": 31,
+      "target": "森田"
+    },
+    {
+      "source": "05-银矿库/角色库/蜂蜜与四叶草_花本叶久美.md",
+      "line": 30,
+      "target": "森田"
+    },
+    {
+      "source": "05-银矿库/角色库/蜂蜜与四叶草_花本叶久美.md",
+      "line": 31,
+      "target": "花本老师"
+    },
+    {
+      "source": "05-银矿库/角色库/蝙蝠侠_布鲁斯·韦恩.md",
+      "line": 30,
+      "target": "阿尔弗雷德"
+    },
+    {
+      "source": "05-银矿库/角色库/蝙蝠侠_布鲁斯·韦恩.md",
+      "line": 31,
+      "target": "猫女"
+    },
+    {
+      "source": "05-银矿库/角色库/蝙蝠侠_布鲁斯·韦恩.md",
+      "line": 32,
+      "target": "小丑"
+    },
+    {
+      "source": "05-银矿库/角色库/超能陆战队_大白.md",
+      "line": 30,
+      "target": "小宏"
+    },
+    {
+      "source": "05-银矿库/角色库/超能陆战队_大白.md",
+      "line": 31,
+      "target": "弗雷德"
+    },
+    {
+      "source": "05-银矿库/角色库/超能陆战队_大白.md",
+      "line": 32,
+      "target": "汉斯曼博士"
+    },
+    {
+      "source": "05-银矿库/角色库/辛德勒的名单_辛德勒.md",
+      "line": 30,
+      "target": "伊扎克·斯泰恩"
+    },
+    {
+      "source": "05-银矿库/角色库/辛德勒的名单_辛德勒.md",
+      "line": 31,
+      "target": "阿蒙·哥特"
+    },
+    {
+      "source": "05-银矿库/角色库/辛德勒的名单_辛德勒.md",
+      "line": 32,
+      "target": "1100名犹太人"
+    },
+    {
+      "source": "05-银矿库/角色库/重庆森林_何志武.md",
+      "line": 30,
+      "target": "金发女子"
+    },
+    {
+      "source": "05-银矿库/角色库/重庆森林_何志武.md",
+      "line": 31,
+      "target": "前女友"
+    },
+    {
+      "source": "05-银矿库/角色库/重庆森林_何志武.md",
+      "line": 32,
+      "target": "城市"
+    },
+    {
+      "source": "05-银矿库/角色库/钢铁侠_托尼·史塔克.md",
+      "line": 30,
+      "target": "小辣椒"
+    },
+    {
+      "source": "05-银矿库/角色库/钢铁侠_托尼·史塔克.md",
+      "line": 31,
+      "target": "贾维斯"
+    },
+    {
+      "source": "05-银矿库/角色库/钢铁侠_托尼·史塔克.md",
+      "line": 32,
+      "target": "美国队长"
+    },
+    {
+      "source": "05-银矿库/角色库/银翼杀手_瑞克·戴克.md",
+      "line": 30,
+      "target": "瑞秋"
+    },
+    {
+      "source": "05-银矿库/角色库/银翼杀手_瑞克·戴克.md",
+      "line": 32,
+      "target": "自己"
+    },
+    {
+      "source": "05-银矿库/角色库/阿基拉_岛铁雄.md",
+      "line": 31,
+      "target": "医生"
+    },
+    {
+      "source": "05-银矿库/角色库/阿基拉_金田正太郎.md",
+      "line": 29,
+      "target": "岛铁雄"
+    },
+    {
+      "source": "05-银矿库/角色库/阿基拉_金田正太郎.md",
+      "line": 31,
+      "target": "惠"
+    },
+    {
+      "source": "05-银矿库/角色库/霸王别姬_程蝶衣.md",
+      "line": 30,
+      "target": "段小楼"
+    },
+    {
+      "source": "05-银矿库/角色库/霸王别姬_程蝶衣.md",
+      "line": 31,
+      "target": "菊仙"
+    },
+    {
+      "source": "05-银矿库/角色库/霸王别姬_程蝶衣.md",
+      "line": 32,
+      "target": "京剧"
+    },
+    {
+      "source": "05-银矿库/角色库/风之谷_娜乌西卡.md",
+      "line": 29,
+      "target": "王虫"
+    },
+    {
+      "source": "05-银矿库/角色库/风之谷_娜乌西卡.md",
+      "line": 30,
+      "target": "库夏娜"
+    },
+    {
+      "source": "05-银矿库/角色库/风之谷_娜乌西卡.md",
+      "line": 31,
+      "target": "犹巴"
+    },
+    {
+      "source": "05-银矿库/角色库/飞屋环游记_卡尔.md",
+      "line": 30,
+      "target": "艾丽"
+    },
+    {
+      "source": "05-银矿库/角色库/飞屋环游记_卡尔.md",
+      "line": 31,
+      "target": "小罗"
+    },
+    {
+      "source": "05-银矿库/角色库/飞屋环游记_卡尔.md",
+      "line": 32,
+      "target": "查尔斯"
+    },
+    {
+      "source": "05-银矿库/角色库/飞越疯人院_麦克墨菲.md",
+      "line": 30,
+      "target": "护士长拉契特"
+    },
+    {
+      "source": "05-银矿库/角色库/飞越疯人院_麦克墨菲.md",
+      "line": 31,
+      "target": "酋长"
+    },
+    {
+      "source": "05-银矿库/角色库/飞越疯人院_麦克墨菲.md",
+      "line": 32,
+      "target": "病友们"
+    },
+    {
+      "source": "05-银矿库/角色库/驯龙高手_小嗝嗝.md",
+      "line": 30,
+      "target": "无牙"
+    },
+    {
+      "source": "05-银矿库/角色库/驯龙高手_小嗝嗝.md",
+      "line": 31,
+      "target": "父亲斯托里克"
+    },
+    {
+      "source": "05-银矿库/角色库/驯龙高手_小嗝嗝.md",
+      "line": 32,
+      "target": "阿丝翠德"
+    },
+    {
+      "source": "05-银矿库/角色库/魔女宅急便_琪琪.md",
+      "line": 29,
+      "target": "吉吉"
+    },
+    {
+      "source": "05-银矿库/角色库/魔女宅急便_琪琪.md",
+      "line": 30,
+      "target": "蜻蜓"
+    },
+    {
+      "source": "05-银矿库/角色库/魔女宅急便_琪琪.md",
+      "line": 31,
+      "target": "画家"
+    },
+    {
+      "source": "05-银矿库/角色库/龙猫_草壁皋月.md",
+      "line": 30,
+      "target": "小梅"
+    },
+    {
+      "source": "05-银矿库/角色库/龙猫_草壁皋月.md",
+      "line": 32,
+      "target": "妈妈"
+    },
+    {
+      "source": "05-银矿库/角色库_补充/剪刀手爱德华_爱德华.md",
+      "line": 30,
+      "target": "金"
+    },
+    {
+      "source": "05-银矿库/角色库_补充/剪刀手爱德华_爱德华.md",
+      "line": 31,
+      "target": "佩格"
+    },
+    {
+      "source": "05-银矿库/角色库_补充/剪刀手爱德华_爱德华.md",
+      "line": 32,
+      "target": "吉姆"
+    },
+    {
+      "source": "05-银矿库/角色库_补充/忠犬八公_八公.md",
+      "line": 30,
+      "target": "上野教授"
+    },
+    {
+      "source": "05-银矿库/角色库_补充/忠犬八公_八公.md",
+      "line": 31,
+      "target": "卡特"
+    },
+    {
+      "source": "05-银矿库/角色库_补充/忠犬八公_八公.md",
+      "line": 32,
+      "target": "火车站"
+    },
+    {
+      "source": "05-银矿库/角色库_补充/黑客帝国_尼奥.md",
+      "line": 30,
+      "target": "崔妮蒂"
+    },
+    {
+      "source": "05-银矿库/角色库_补充/黑客帝国_尼奥.md",
+      "line": 31,
+      "target": "墨菲斯"
+    },
+    {
+      "source": "05-银矿库/角色库_补充/黑客帝国_尼奥.md",
+      "line": 32,
+      "target": "史密斯"
+    }
+  ],
+  "old_library_paths": [
+    {
+      "source": "00-中枢索引/旧库深层内容索引.md",
+      "line": 15,
+      "target": "06-旧库迁入/十元知识库_2026-05-13"
+    },
+    {
+      "source": "00-中枢索引/旧库深层内容索引.md",
+      "line": 35,
+      "target": "06-旧库迁入/十元知识库_2026-05-13/06_铜矿暂存/铜矿暂存总表"
+    },
+    {
+      "source": "00-中枢索引/旧库深层内容索引.md",
+      "line": 39,
+      "target": "06-旧库迁入/十元知识库_2026-05-13/12_归档包/三元理论-整理导入说明"
+    },
+    {
+      "source": "00-中枢索引/旧库深层内容索引.md",
+      "line": 43,
+      "target": "06-旧库迁入/十元知识库_2026-05-13/99_废案与反例/废案与反例总表"
+    }
+  ],
+  "truly_broken": [
+    {
+      "source": "00-中枢索引/总入口_更新版.md",
+      "line": 13,
+      "target": "十元大脑插件"
+    },
+    {
+      "source": "00-中枢索引/总入口_更新版.md",
+      "line": 14,
+      "target": "F12插件"
+    },
+    {
+      "source": "00-中枢索引/总入口_更新版.md",
+      "line": 15,
+      "target": "模板库"
+    },
+    {
+      "source": "00-中枢索引/旧库融合中枢/银矿哥总入口.md",
+      "line": 15,
+      "target": "铜矿暂存总表"
+    },
+    {
+      "source": "00-中枢索引/旧库融合中枢/银矿哥总入口.md",
+      "line": 16,
+      "target": "废案与反例总表"
+    },
+    {
+      "source": "00-中枢索引/旧库融合中枢/项目进度总览.md",
+      "line": 23,
+      "target": "三元理论-整理导入说明"
+    },
+    {
+      "source": "01-十元系统/动态母型.md",
+      "line": 13,
+      "target": "银矿哥评分标准"
+    }
+  ],
+  "total_links_found": 1213,
+  "total_files_scanned": 491,
+  "total_broken": 341
+}

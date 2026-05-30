@@ -15,7 +15,7 @@ function getDefaultState() {
     manualPause: false,
     leaseUntil: 0,
     lastStatus: 'idle',
-    tasks: [],
+    tasks: [],taskMetas: [],
     index: 0,
     total: 0,
     logs: [],
@@ -126,3 +126,4 @@ export {
   migrateState,
   migrateAndNormalize
 };
+

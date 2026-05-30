@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"multimodal","type":"text","text":"## 多模态 AI\n\n让不同信息形式互相理解。\n\n关键词：\n- 多模态对齐\n- 多模态融合\n- VLM\n- Any-to-Any\n\n直觉：字幕、画面、声音不是分开的，它们一起构成理解。","x":660,"y":-500,"width":410,"height":320,"color":"5"},
+		{"id":"foundation","type":"text","text":"## 大模型与适配\n\n把通用模型变成你的工具。\n\n关键词：\n- 预训练\n- 指令微调\n- 对齐\n- RAG\n- LoRA\n- 量化\n- MoE\n\n直觉：先判断提示词、检索、微调、本地部署哪个最合适。","x":660,"y":-80,"width":410,"height":360,"color":"6"},
+		{"id":"generation","type":"text","text":"## 生成模型\n\n按条件创造新内容。\n\n关键词：\n- Diffusion\n- Flow Matching\n- 可控生成\n- 视频生成\n\n直觉：生成不是魔法，是从数据分布中采样。","x":660,"y":380,"width":410,"height":300,"color":"2"},
+		{"id":"detail_md","type":"file","file":"09-给74用的可视化库/assets/未命名/未命名 1/AI_Almost_Anything_Obsidian_Map.md","x":1240,"y":160,"width":560,"height":460},
+		{"id":"glossary","type":"file","file":"09-给74用的可视化库/assets/未命名/未命名 1/AI_Almost_Anything_Concept_Glossary.md","x":1220,"y":-380,"width":560,"height":460},
+		{"id":"center","type":"text","text":"# How to AI (Almost) Anything\n\n这张 Canvas 是阅读地图。\n\n中心问题：怎样把一个真实任务，拆成 AI 可以处理、可以评估、可以迭代的系统？","x":-20,"y":10,"width":520,"height":220,"color":"1"},
+		{"id":"348781129590825d","x":-80,"y":-860,"width":430,"height":340,"type":"file","file":"Untitled.md"},
+		{"id":"research","type":"text","text":"## AI 研究方法\n\n把想法变成可验证问题。\n\n关键词：\n- 问题定义\n- 基线模型\n- 实验设计\n- 消融实验\n- 误差分析\n\n直觉：先确定要解决什么，再谈模型。","x":-660,"y":-655,"width":380,"height":310,"color":"2"},
+		{"id":"data","type":"text","text":"## 数据与表征\n\n让模型看见世界。\n\n关键词：\n- 数据模态\n- Embedding\n- 表征学习\n- 自监督学习\n- 泛化\n\n直觉：把文字、图像、音频变成可计算的特征。","x":-760,"y":-200,"width":380,"height":320,"color":"3"},
+		{"id":"search_map","type":"text","text":"## 搜索图\n\n遇到陌生名词：\n\n1. 先判断它属于哪一层。\n2. 搜：名词 + beginner / explained / intuition。\n3. 再搜：名词 + paper / survey。\n4. 最后问四件事：\n   - 输入是什么？\n   - 输出是什么？\n   - 优化什么？\n   - 怎么评估？","x":-1360,"y":-845,"width":430,"height":405,"color":"1"},
+		{"id":"mapping","type":"text","text":"## 名词概念映射\n\n数据模态 -> 输入形式\nEmbedding -> 向量表示\n表征学习 -> 学有用特征\nTransformer -> 处理关系\nAttention -> 选择重点\n多模态对齐 -> 图文声互相对应\nRAG -> 先查资料再回答\nLoRA -> 低成本微调\nDiffusion -> 去噪生成\nAgent -> 会用工具完成任务","x":-1480,"y":-95,"width":430,"height":430,"color":"6"},
+		{"id":"read_order","type":"text","text":"## 建议阅读顺序\n\n1. 问题定义\n2. 数据模态\n3. Embedding\n4. 表征学习\n5. Transformer\n6. 多模态对齐\n7. RAG / LoRA\n8. Diffusion\n9. Agent\n10. Human-in-the-loop\n\n先懂直觉，再看公式和论文。","x":-1300,"y":1040,"width":430,"height":390,"color":"3"},
+		{"id":"agent","type":"text","text":"## 智能体与推理\n\n从回答问题，到完成任务。\n\n关键词：\n- Agent\n- 工具使用\n- 多步推理\n- 强化学习\n- 奖励函数风险\n\n直觉：计划 -> 执行 -> 观察 -> 修正。","x":-190,"y":880,"width":430,"height":320,"color":"3"},
+		{"id":"architecture","type":"text","text":"## 模型架构\n\n决定模型怎么处理信息。\n\n关键词：\n- Transformer\n- Attention\n- ViT\n- GNN\n- 时序模型\n\n直觉：数据有什么结构，模型就要有相应的处理方式。","x":-930,"y":460,"width":460,"height":360,"color":"4"}
+	],
+	"edges":[
+		{"id":"e-center-research","fromNode":"center","fromSide":"left","toNode":"research","toSide":"right"},
+		{"id":"e-center-data","fromNode":"center","fromSide":"left","toNode":"data","toSide":"right"},
+		{"id":"e-research-data","fromNode":"research","fromSide":"bottom","toNode":"data","toSide":"top","label":"任务决定数据"},
+		{"id":"e-multimodal-foundation","fromNode":"multimodal","fromSide":"bottom","toNode":"foundation","toSide":"top","label":"规模化迁移"},
+		{"id":"e-foundation-generation","fromNode":"foundation","fromSide":"bottom","toNode":"generation","toSide":"top","label":"条件生成"},
+		{"id":"e-generation-agent","fromNode":"generation","fromSide":"bottom","toNode":"agent","toSide":"right","label":"生成行动方案"},
+		{"id":"e-agent-human","fromNode":"agent","fromSide":"top","toNode":"348781129590825d","toSide":"bottom","label":"人在回路"}
+	]
+}

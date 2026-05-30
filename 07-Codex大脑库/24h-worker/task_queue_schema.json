@@ -1,0 +1,18 @@
+﻿{
+  "$schema": "24h-worker task queue schema v1",
+  "fields": {
+    "id": { "type": "string", "desc": "唯一任务ID，格式：YYYYMMDD-序号" },
+    "type": { "type": "enum", "values": ["data_audit", "semantic_sample", "delete_candidate", "f12_task", "carry_packet", "self_review", "daily_report"], "desc": "任务类型" },
+    "target": { "type": "string", "desc": "目标路径或范围" },
+    "input_path": { "type": "string", "desc": "输入数据路径" },
+    "output_path": { "type": "string", "desc": "输出文件路径，必须指定" },
+    "risk_level": { "type": "enum", "values": ["low", "medium", "high"], "desc": "风险等级" },
+    "status": { "type": "enum", "values": ["queued", "running", "done", "failed", "pending_review"], "desc": "任务状态" },
+    "requires_confirm": { "type": "boolean", "desc": "是否需要人工确认" },
+    "done_marker": { "type": "string", "desc": "完成标记，如 TASK_DONE:xxx" },
+    "created_at": { "type": "string", "desc": "创建时间 ISO" },
+    "completed_at": { "type": "string", "desc": "完成时间 ISO" },
+    "error": { "type": "string", "desc": "失败原因" }
+  },
+  "required": ["id", "type", "output_path", "status"]
+}

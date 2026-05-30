@@ -1,0 +1,15 @@
+// Portable launcher for Maya MEL.
+// Usage:
+// 1. In Maya Script Editor, use File > Source Script... and choose this .mel.
+// 2. When the file picker opens, choose mood2_M_hand_tool.py in this same folder.
+
+string $picked[] = `fileDialog2
+    -caption "选择 mood2_M_hand_tool.py"
+    -fileMode 1
+    -fileFilter "Python Script (*.py)"`;
+
+if (size($picked) > 0) {
+    string $path = substituteAllString($picked[0], "\\", "/");
+    string $cmd = "import runpy; runpy.run_path('" + $path + "')";
+    python($cmd);
+}

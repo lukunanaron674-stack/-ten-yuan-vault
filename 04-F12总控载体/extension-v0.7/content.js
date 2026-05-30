@@ -3,7 +3,7 @@
 // 不显示完整总控面板，只显示状态胶囊
 
 (() => {
-  const WORKER_ID = 'TY_F12_WORKER_V07';
+  const WORKER_ID = 'TY_F12_WORKER_V11';
   const CAPSULE_ID = 'TY_F12_CAPSULE_V07';
   const CHANNEL_NAME = 'ten-yuan-f12-v1';
 
