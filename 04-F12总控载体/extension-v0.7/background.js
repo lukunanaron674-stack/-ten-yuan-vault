@@ -167,7 +167,7 @@ async function executeBridgeCommand(command) {
   if (type === 'LOAD_TASKS') return await handleMsg({ type: 'SP_LOAD_TASKS', tasks: payload.tasks || [] }, {});
   if (type === 'DEFAULT_TASKS') return await handleMsg({ type: 'SP_DEFAULT_TASKS', count: payload.count, project: payload.project, frame: payload.frame }, {});
   if (type === 'SET_PROJECT') return await handleMsg({ type: 'SP_SET_PROJECT', projectName: payload.projectName || payload.project || '', frameName: payload.frameName || payload.frame || '' }, {});
-  if (type === 'MULTI_COMMAND') return await handleMsg({ type: 'SP_MULTI_COMMAND', tabId: payload.tabId, command: payload.command, task: payload.task, tasks: payload.tasks, index: payload.index }, {});
+  if (type === 'MULTI_COMMAND') return await handleMsg({ type: 'SP_MULTI_COMMAND', tabId: payload.tabId, command: payload.command, task: payload.task, tasks: payload.tasks, index: payload.index, script: payload.script }, {});
   if (type === 'MULTI_ALL_IDLE') return await handleMsg({ type: 'SP_MULTI_ALL_IDLE', command: payload.command, task: payload.task, tasks: payload.tasks }, {});
   if (type === 'RAW_MESSAGE') return await handleMsg(bridgeMsg, {});
 
@@ -262,6 +262,15 @@ async function ensureWorker(tabId) {
   try {
     await chrome.scripting.executeScript({
       target: { tabId },
+      func: () => {
+        for (const key of ['TY_F12_WORKER_V07', 'TY_F12_WORKER_V11']) {
+          try { delete window[key]; } catch {}
+          try { window[key] = undefined; } catch {}
+        }
+      }
+    });
+    await chrome.scripting.executeScript({
+      target: { tabId },
       files: ['content.js']
     });
     // Wait longer for content script to initialize
@@ -304,13 +313,127 @@ function workerMissing(state, addErrorFn, detail) {
 
 async function execOnWorker(tabId, task, index, total) {
   const worker = await ensureWorker(tabId);
-  if (!worker.connected) return { ok: false, status: 'worker_missing', error: worker.error || 'worker_missing' };
-  return new Promise((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error('Worker timeout')), 3*60*1000);
-    chrome.tabs.sendMessage(tabId, {type:'EXECUTE_TASK',task,index,total})
-      .then(r => { clearTimeout(timer); resolve(r); })
-      .catch(e => { clearTimeout(timer); reject(e); });
+  if (worker.connected) {
+    try {
+      return await new Promise((resolve, reject) => {
+        const timer = setTimeout(() => reject(new Error('Worker timeout')), 3*60*1000);
+        chrome.tabs.sendMessage(tabId, {type:'EXECUTE_TASK',task,index,total})
+          .then(r => { clearTimeout(timer); resolve(r); })
+          .catch(e => { clearTimeout(timer); reject(e); });
+      });
+    } catch (error) {
+      console.warn('[F12-BG] Worker send failed, falling back to inline script:', error.message);
+    }
+  }
+  return await execTaskViaScript(tabId, task, index, total, worker.error);
+}
+
+async function execTaskViaScript(tabId, task, index, total, workerError) {
+  const [injected] = await chrome.scripting.executeScript({
+    target: { tabId },
+    args: [{ task, index, total, workerError }],
+    func: async ({ task, index, total, workerError }) => {
+      const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+      const visible = el => {
+        if (!el) return false;
+        const rect = el.getBoundingClientRect();
+        const style = getComputedStyle(el);
+        return rect.width > 0 && rect.height > 0 && style.display !== 'none' && style.visibility !== 'hidden';
+      };
+      const findInput = () => {
+        const selectors = [
+          '#prompt-textarea',
+          'div[contenteditable="true"][role="textbox"]',
+          'div[contenteditable="true"]',
+          'textarea',
+          '[role="textbox"]'
+        ];
+        for (const selector of selectors) {
+          const el = document.querySelector(selector);
+          if (visible(el)) return el;
+        }
+        return null;
+      };
+      const findSendButton = () => {
+        const selectors = [
+          '[data-testid="send-button"]',
+          '[data-testid="composer-submit-button"]',
+          'button[aria-label*="Send"]',
+          'button[aria-label*="send"]',
+          'button[aria-label*="发送"]',
+          'button[type="submit"]'
+        ];
+        for (const selector of selectors) {
+          const el = document.querySelector(selector);
+          if (visible(el) && !el.disabled) return el;
+        }
+        const input = findInput();
+        const form = input ? input.closest('form') : null;
+        const buttons = form ? [...form.querySelectorAll('button')].filter(btn => visible(btn) && !btn.disabled) : [];
+        return buttons.length ? buttons[buttons.length - 1] : null;
+      };
+      const findStopButton = () => {
+        const selectors = [
+          '[data-testid="stop-button"]',
+          'button[aria-label*="Stop"]',
+          'button[aria-label*="stop"]',
+          'button[aria-label*="停止"]'
+        ];
+        return selectors.map(selector => document.querySelector(selector)).find(visible) || null;
+      };
+      const getLastAssistantText = () => {
+        const selectors = [
+          '[data-message-author-role="assistant"]',
+          'article[data-testid*="conversation-turn"]',
+          'article[data-testid*="turn"]',
+          '.markdown'
+        ];
+        const nodes = selectors.flatMap(selector => [...document.querySelectorAll(selector)]).filter(visible);
+        const last = nodes[nodes.length - 1];
+        return last ? (last.innerText || last.textContent || '') : '';
+      };
+      const setInputText = text => {
+        const input = findInput();
+        if (!input) return false;
+        input.focus();
+        if (input.tagName === 'TEXTAREA') {
+          const setter = Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype, 'value')?.set;
+          if (setter) setter.call(input, text);
+          else input.value = text;
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          return true;
+        }
+        input.textContent = '';
+        input.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'deleteContentBackward' }));
+        document.execCommand('insertText', false, text);
+        input.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'insertText', data: text }));
+        return true;
+      };
+
+      if (!setInputText(task)) return { ok: false, status: 'worker_missing', error: workerError || 'No input box' };
+      await sleep(700);
+      const button = findSendButton();
+      if (!button) return { ok: false, status: 'send_button_missing', error: 'Send button missing' };
+      button.click();
+
+      let lastText = '';
+      let stableSince = Date.now();
+      const deadline = Date.now() + 180000;
+      while (Date.now() < deadline) {
+        await sleep(1200);
+        const text = getLastAssistantText();
+        if (text !== lastText) {
+          lastText = text;
+          stableSince = Date.now();
+        }
+        if (!findStopButton() && lastText.trim() && Date.now() - stableSince > 5000) {
+          return { ok: true, status: 'done', text: lastText, task, round: index + 1, total };
+        }
+      }
+      return { ok: false, status: 'timeout', error: 'Inline worker timeout', text: lastText, task, round: index + 1, total };
+    }
   });
+  return injected?.result || { ok: false, status: 'inline_failed', error: 'Inline script returned no result' };
 }
 
 async function getPageStatus(tabId) {
@@ -490,7 +613,8 @@ async function handleMsg(msg, sender) {
         command: msg.command,
         task: msg.task,
         tasks: msg.tasks,
-        index: msg.index
+        index: msg.index,
+          script: msg.script
       });
       upsertMultiTab(s, tabId, { status: result?.status || 'command_sent', lastMessage: msg.command, lastHeartbeat: Date.now() });
       if (msg.command === 'ARCHIVE_LATEST' && result?.ok) {

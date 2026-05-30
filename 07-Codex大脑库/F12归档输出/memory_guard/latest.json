@@ -1,0 +1,43 @@
+{
+  "ts": "2026-05-21T12:45:13.814Z",
+  "bridge_ok": true,
+  "expected": {
+    "round": 1,
+    "total": 1,
+    "running": false
+  },
+  "archives_total": 41,
+  "archives_recent": 1,
+  "archives_new_since_last": 0,
+  "completed_rounds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    10,
+    11,
+    12,
+    17
+  ],
+  "top_3_archives": [
+    {
+      "name": "2026-05-21_20-39-40_tab-819244140_R1-1_因果型分析深度补强.md",
+      "chars": 80,
+      "age_sec": 333
+    },
+    {
+      "name": "2026-05-21_20-32-22_tab-819244140_R1-5_因果型分析深度补强.md",
+      "chars": 208,
+      "age_sec": 772
+    },
+    {
+      "name": "2026-05-21_20-17-56_tab-819244140_R17-17_因果型分析深度补强.md",
+      "chars": 171,
+      "age_sec": 1637
+    }
+  ],
+  "alerts": []
+}

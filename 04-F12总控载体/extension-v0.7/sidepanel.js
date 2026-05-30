@@ -245,7 +245,12 @@ function renderTasks(){
     $('task-count').textContent=state.tasks.length+' 个';
     if (warnEl && state.tasks.length === 1) warnEl.textContent = '当前只载入 1 个任务。';
     const c=state.tasks[state.index]||'';
-    $('task-preview').innerHTML='<strong>当前 R'+((state.index||0)+1)+':</strong> <span>'+esc(c).substring(0,120)+(c.length>120?'...':'')+'</span>';
+    const meta = state.taskMetas && state.taskMetas[state.index];
+    const badge = meta && meta.type
+      ? '<span style="background:#333;color:#aaa;font-size:10px;padding:1px 6px;border-radius:8px;margin-right:4px">'+esc(meta.type)+'</span>'
+      : '';
+    const policy = meta && meta.returnPolicy === 'full' ? '⭐' : '';
+    $('task-preview').innerHTML='<strong>当前 R'+((state.index||0)+1)+':</strong> '+badge+policy+' <span>'+esc(c).substring(0,120)+(c.length>120?'...':'')+'</span>';
   }else{$('task-editor').value='';$('task-count').textContent='0 个';$('task-preview').innerHTML='';}
 }
 
@@ -390,7 +395,12 @@ function renderAllSkipEditor(){
   if(state.tasks&&state.tasks.length){
     $('task-count').textContent=state.tasks.length+' 个';
     const c=state.tasks[state.index]||'';
-    $('task-preview').innerHTML='<strong>当前 R'+((state.index||0)+1)+':</strong> <span>'+esc(c).substring(0,120)+(c.length>120?'...':'')+'</span>';
+    const meta = state.taskMetas && state.taskMetas[state.index];
+    const badge = meta && meta.type
+      ? '<span style="background:#333;color:#aaa;font-size:10px;padding:1px 6px;border-radius:8px;margin-right:4px">'+esc(meta.type)+'</span>'
+      : '';
+    const policy = meta && meta.returnPolicy === 'full' ? '⭐' : '';
+    $('task-preview').innerHTML='<strong>当前 R'+((state.index||0)+1)+':</strong> '+badge+policy+' <span>'+esc(c).substring(0,120)+(c.length>120?'...':'')+'</span>';
   }
 }
 
@@ -611,3 +621,49 @@ console.log('[F12 Sidepanel v1.0] Loaded (multi-page inline mode)');
 
 
 
+
+// ======== 筛选 ========
+let currentFilter = "all";
+function setFilter(type) {
+  currentFilter = type;
+  document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+  const target = document.querySelector(`.filter-btn[data-filter="` + type + `"]`);
+  if (target) target.classList.add("active");
+  renderTasks();
+}
+
+function filterMetas(metas) {
+  if (!metas || !metas.length) return { metas: [], indices: [] };
+  if (currentFilter === "all") return { metas, indices: metas.map((_, i) => i) };
+  if (currentFilter === "full") {
+    const filtered = []; const indices = [];
+    metas.forEach((m, i) => { if (m.returnPolicy === "full") { filtered.push(m); indices.push(i); } });
+    return { metas: filtered, indices };
+  }
+  const filtered = []; const indices = [];
+  metas.forEach((m, i) => { if (m.type === currentFilter) { filtered.push(m); indices.push(i); } });
+  return { metas: filtered, indices };
+}
+// ======== 筛选按钮 & 多框模板按钮 ========
+document.querySelectorAll(".filter-btn").forEach(btn => {
+  btn.addEventListener("click", () => setFilter(btn.dataset.filter));
+});
+document.querySelectorAll(".btn-multiframe").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const slot = btn.dataset.slot;
+    const templates = {
+      "tenYuan.rules": "type: research\nreturnPolicy: full\ntargetBrainSlot: tenYuan.rules\n\nA框：请从以下作品中识别十元语义关系，输出关系公式和最小证据。优先补缺少案例的关系类型。\n最后输出：TASK_DONE_A",
+      "dynamicChain.patterns": "type: research\nreturnPolicy: full\ntargetBrainSlot: dynamicChain.patterns\n\nB框：请分析以下作品的动态链结构，找出回收/崩坏/扭曲/断链/停滞/反噬/换芯/循环，输出母型公式。\n最后输出：TASK_DONE_B",
+      "fiveThemes.warehouse": "type: review\nreturnPolicy: full\ntargetBrainSlot: fiveThemes.warehouse\n\nC框：请审查五大主题归类是否正确，抓五维倒推十元的错误，输出归仓修正表。\n最后输出：TASK_DONE_C",
+      "visual.styleSeeds": "type: visual\nreturnPolicy: full\ntargetBrainSlot: visual.styleSeeds\n\nD框：提取可画的构图/光线/材质/姿态，输出风格词和构图母题，注意无AI味方案。\n最后输出：TASK_DONE_D",
+      "story.oneSentenceSeeds": "type: story\nreturnPolicy: full\ntargetBrainSlot: story.oneSentenceSeeds\n\nE框：将动态链母型转成一句话故事，输出角色冲突、场景触发、可扩写等级。\n最后输出：TASK_DONE_E",
+      "errors.antiExamples": "type: anti\nreturnPolicy: full\ntargetBrainSlot: errors.antiExamples\n\nF框：找出不该入库的伪矿、旧规则污染、重复弱证据，输出待删减清单和降权原因。\n最后输出：TASK_DONE_F"
+    };
+    const tpl = templates[slot];
+    if (!tpl) return;
+    const editor = document.getElementById("task-editor");
+    if (editor.value.trim()) editor.value += "\n\n---TASK---\n\n";
+    editor.value += tpl;
+    editor.focus();
+  });
+});

@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"e1","type":"text","x":-200,"y":-150,"width":240,"height":180,"text":"# 待验证条目\n\n二审待处理\n银矿散点"},
+		{"id":"e2","type":"text","x":150,"y":-150,"width":240,"height":180,"text":"# 待深拆\n\n复杂条目\n需分解"},
+		{"id":"e3","type":"text","x":-30,"y":150,"width":260,"height":180,"text":"# 待降权\n\n低质量条目\n可能移除"}
+	],
+	"edges":[
+		{"id":"ee1","fromNode":"e1","fromSide":"bottom","toNode":"e3","toSide":"left"},
+		{"id":"ee2","fromNode":"e2","fromSide":"bottom","toNode":"e3","toSide":"right"}
+	]
+}

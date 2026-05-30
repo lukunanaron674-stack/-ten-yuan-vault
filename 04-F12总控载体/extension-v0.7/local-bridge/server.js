@@ -1,4 +1,4 @@
-const http = require('http');
+﻿const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
@@ -103,7 +103,7 @@ function nowFileStamp() {
 
 function archiveMarkdown(body) {
   const createdAt = new Date().toISOString();
-  const title = sanitizeFilePart(body.title || 'F12归档');
+  const title = sanitizeFilePart(body.title || 'F12褰掓。');
   const round = Number(body.round || 0);
   const total = Number(body.total || 0);
   const tabId = sanitizeFilePart(body.tabId || 'tab');
@@ -115,7 +115,7 @@ function archiveMarkdown(body) {
   const md = [
     '---',
     `createdAt: ${createdAt}`,
-    `source: Ten Yuan F12 Controller`,
+    `source: ${body.source || 'Ten Yuan F12 Controller'}`,
     `tabId: ${body.tabId || ''}`,
     `round: ${round}`,
     `total: ${total}`,
@@ -123,15 +123,15 @@ function archiveMarkdown(body) {
     `url: ${body.url || ''}`,
     '---',
     '',
-    `# F12 归档 R${round || 0}/${total || 0} - ${body.title || '未命名'}`,
+    `# F12 Archive R${round || 0}/${total || 0} - ${body.title || "Untitled"}`,
     '',
-    '## 任务',
+    '## 浠诲姟',
     '',
-    task || '未记录任务正文',
+    task || "(no task text)",
     '',
-    '## ChatGPT 输出',
+    '## ChatGPT 杈撳嚭',
     '',
-    text || '未记录输出正文',
+    text || "(no output text)",
     ''
   ].join('\n');
   fs.writeFileSync(filePath, md, 'utf8');
@@ -147,6 +147,7 @@ function enqueue(type, payload = {}) {
   const command = {
     id: String(state.nextId++),
     type: String(type || '').toUpperCase(),
+    source: payload.source || '',
     payload,
     status: 'queued',
     createdAt: new Date().toISOString(),
@@ -230,7 +231,53 @@ const server = http.createServer(async (req, res) => {
       return send(res, 200, { ok: true, command });
     }
 
-    if (req.method === 'DELETE' && url.pathname === '/commands') {
+    
+    if (req.method === 'GET' && url.pathname === '/results/full') {
+      const full = state.results.filter(r => {
+        const cmd = state.commands.find(c => c.id === r.id);
+        return cmd && cmd.payload && cmd.payload.returnPolicy === 'full';
+      }).slice(-20);
+      return send(res, 200, { ok: true, count: full.length, results: full });
+    }
+
+    if (req.method === 'GET' && url.pathname === '/results/summary') {
+      const summary = state.results.filter(r => {
+        const cmd = state.commands.find(c => c.id === r.id);
+        return cmd && cmd.payload && cmd.payload.returnPolicy !== 'none';
+      }).slice(-30);
+      return send(res, 200, { ok: true, count: summary.length, results: summary });
+    }
+
+    if (req.method === 'GET' && url.pathname.startsWith('/results/type/')) {
+      const type = decodeURIComponent(url.pathname.split('/').pop());
+      const typed = state.results.filter(r => {
+        const cmd = state.commands.find(c => c.id === r.id);
+        return cmd && cmd.payload && cmd.payload.type === type;
+      }).slice(-20);
+      return send(res, 200, { ok: true, type, count: typed.length, results: typed });
+    }
+
+
+    if (req.method === 'POST' && url.pathname === '/script/read') {
+      const body = await readBody(req);
+      const requestedPath = String(body.path || '').trim();
+      if (!requestedPath) return send(res, 400, { ok: false, error: 'Missing path' });
+      const safeName = path.basename(requestedPath);
+      if (!safeName || safeName !== requestedPath.replace(/\\/g, '/').split('/').pop()) {
+        return send(res, 400, { ok: false, error: 'Invalid path' });
+      }
+      const fullPath = path.resolve(VAULT_ROOT, requestedPath);
+      if (!fullPath.startsWith(VAULT_ROOT)) {
+        return send(res, 403, { ok: false, error: 'Path outside vault' });
+      }
+      try {
+        const script = fs.readFileSync(fullPath, 'utf8');
+        return send(res, 200, { ok: true, script, path: requestedPath });
+      } catch (error) {
+        return send(res, 404, { ok: false, error: 'File not found: ' + error.message });
+      }
+    }
+if (req.method === 'DELETE' && url.pathname === '/commands') {
       state.commands = [];
       state.results = [];
       saveState();

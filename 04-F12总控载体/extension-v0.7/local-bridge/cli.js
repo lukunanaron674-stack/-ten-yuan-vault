@@ -5,6 +5,12 @@ const path = require('path');
 const BASE = process.env.TY_F12_BRIDGE_URL || 'http://127.0.0.1:17312';
 const args = process.argv.slice(2);
 
+function parseSourceFlag(argv) {
+  const si = argv.findIndex(a => a === '--source' || a === '-s');
+  if (si >= 0 && si + 1 < argv.length) { const source = argv[si + 1]; argv.splice(si, 2); return source; }
+  return '';
+}
+
 function usage() {
   console.log(`Ten Yuan F12 Bridge CLI
 
@@ -26,6 +32,7 @@ Usage:
   npm run f12 -- multi-pause <tabId>
   npm run f12 -- multi-stop <tabId>
   npm run f12 -- multi-archive <tabId>
+  npm run f12 -- multi-script <tabId> <script.js>
   npm run f12 -- clear
 `);
 }
@@ -89,6 +96,7 @@ async function enqueue(type, payload = {}, wait = true) {
 async function main() {
   const cmd = String(args[0] || 'help').toLowerCase();
   const noWait = args.includes('--no-wait');
+  const source = parseSourceFlag(args);
 
   if (cmd === 'help' || cmd === '-h' || cmd === '--help') {
     usage();
@@ -132,13 +140,13 @@ async function main() {
     const raw = fs.readFileSync(fullPath, 'utf8');
     const tasks = parseTasks(raw);
     if (!tasks.length) throw new Error('No tasks parsed');
-    await enqueue('LOAD_TASKS', { tasks, file: fullPath }, !noWait);
+    await enqueue('LOAD_TASKS', { tasks, file: fullPath, source }, !noWait);
     return;
   }
 
   if (cmd === 'default') {
     const count = Number(args[1] || 12);
-    await enqueue('DEFAULT_TASKS', { count, project: args[2] || '默认项目', frame: args[3] || '默认框' }, !noWait);
+    await enqueue('DEFAULT_TASKS', { count, project: args[2] || 'Project', frame: args[3] || 'Frame', source }, !noWait);
     return;
   }
 
@@ -157,9 +165,22 @@ async function main() {
     const raw = fs.readFileSync(fullPath, 'utf8');
     const tasks = parseTasks(raw);
     if (!tasks.length) throw new Error('No tasks parsed');
-    await enqueue('MULTI_COMMAND', { tabId, command: 'LOAD_TASK', tasks, index }, !noWait);
+    await enqueue('MULTI_COMMAND', { tabId, command: 'LOAD_TASK', tasks, index, source }, !noWait);
     return;
   }
+
+
+  if (cmd === 'multi-script') {
+    const tabId = Number(args[1]);
+    const file = args[2];
+    if (!tabId) throw new Error('Missing tabId');
+    if (!file) throw new Error('Missing script file path');
+    const fullPath = path.resolve(process.cwd(), file);
+    const script = fs.readFileSync(fullPath, 'utf8');
+    await enqueue('MULTI_COMMAND', { tabId, command: 'RUN_SCRIPT', script, source }, !noWait);
+    return;
+  }
+
 
   const multiMap = {
     'multi-auto': 'AUTO_RUN',
@@ -168,13 +189,13 @@ async function main() {
     'multi-send': 'SEND_CURRENT',
     'multi-archive': 'ARCHIVE_LATEST',
     'multi-next': 'NEXT_ROUND',
-    'multi-prev': 'PREV_ROUND'
+    'multi-script': 'RUN_SCRIPT'
   };
 
   if (multiMap[cmd]) {
     const tabId = Number(args[1]);
     if (!tabId) throw new Error('Missing tabId');
-    await enqueue('MULTI_COMMAND', { tabId, command: multiMap[cmd] }, !noWait);
+    await enqueue('MULTI_COMMAND', { tabId, command: multiMap[cmd], source }, !noWait);
     return;
   }
 
@@ -195,7 +216,7 @@ async function main() {
   };
 
   if (map[cmd]) {
-    await enqueue(map[cmd], {}, !noWait);
+    await enqueue(map[cmd], { source }, !noWait);
     return;
   }
 

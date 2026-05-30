@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"n1","type":"file","file":"sub-十元语义.canvas","subpath":"sub-十元语义.canvas","x":-350,"y":-250,"width":300,"height":300,"color":"5"},
+		{"id":"n2","type":"file","file":"sub-五大主题.canvas","subpath":"sub-五大主题.canvas","x":200,"y":-250,"width":300,"height":300,"color":"3"},
+		{"id":"n3","type":"file","file":"sub-F12素材.canvas","subpath":"sub-F12素材.canvas","x":-350,"y":150,"width":300,"height":280,"color":"4"},
+		{"id":"n4","type":"file","file":"sub-母型.canvas","subpath":"sub-母型.canvas","x":200,"y":150,"width":300,"height":280,"color":"1"},
+		{"id":"n5","type":"file","file":"sub-待删减.canvas","subpath":"sub-待删减.canvas","x":-50,"y":540,"width":280,"height":220,"color":"2"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"n1","fromSide":"bottom","toNode":"n3","toSide":"top"},
+		{"id":"e2","fromNode":"n2","fromSide":"bottom","toNode":"n4","toSide":"top"},
+		{"id":"e3","fromNode":"n3","fromSide":"right","toNode":"n5","toSide":"left"},
+		{"id":"e4","fromNode":"n4","fromSide":"left","toNode":"n5","toSide":"right"}
+	]
+}

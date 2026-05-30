@@ -1,0 +1,158 @@
+{
+  "nodes": [
+    {
+      "id": "visual",
+      "type": "file",
+      "file": "00-中枢索引/Vault可视化总览.md",
+      "x": -200,
+      "y": -3540,
+      "width": 1200,
+      "height": 2920,
+      "color": "5"
+    },
+    {
+      "id": "center",
+      "type": "file",
+      "file": "00-中枢索引/总入口.md",
+      "x": -20,
+      "y": -170,
+      "width": 480,
+      "height": 580,
+      "color": "5"
+    },
+    {
+      "id": "theme",
+      "type": "file",
+      "file": "00-中枢索引/旧库融合中枢/五大主题总入口.md",
+      "x": -600,
+      "y": -560,
+      "width": 400,
+      "height": 680,
+      "color": "4"
+    },
+    {
+      "id": "theory",
+      "type": "file",
+      "file": "01-十元系统/三元十元语义融合总表.md",
+      "x": -1960,
+      "y": -1150,
+      "width": 940,
+      "height": 3900,
+      "color": "4"
+    },
+    {
+      "id": "archive",
+      "type": "text",
+      "text": "只读来源\n06-旧库迁入\n12_归档包\nsilver-mine",
+      "x": -500,
+      "y": 740,
+      "width": 300,
+      "height": 180,
+      "color": "2"
+    },
+    {
+      "id": "rule",
+      "type": "text",
+      "text": "总规则\n入口只指路\n理论管判断\n案例进二审\nCodex做压缩\nF12做补采",
+      "x": -80,
+      "y": 740,
+      "width": 300,
+      "height": 180,
+      "color": "5"
+    },
+    {
+      "id": "f12",
+      "type": "file",
+      "file": "04-F12总控载体/F12总控载体蓝图.md",
+      "x": 580,
+      "y": 940,
+      "width": 300,
+      "height": 180,
+      "color": "6"
+    },
+    {
+      "id": "mine",
+      "type": "file",
+      "file": "05-银矿库/银矿库总表.md",
+      "x": 790,
+      "y": -260,
+      "width": 300,
+      "height": 180,
+      "color": "3"
+    },
+    {
+      "id": "ai-brief",
+      "type": "file",
+      "file": "07-Codex大脑库/AI可读压缩版_总览.md",
+      "x": 1180,
+      "y": 120,
+      "width": 300,
+      "height": 180,
+      "color": "1"
+    },
+    {
+      "id": "brain",
+      "type": "file",
+      "file": "07-Codex大脑库/Codex大脑总入口.md",
+      "x": 850,
+      "y": 300,
+      "width": 300,
+      "height": 180,
+      "color": "1"
+    },
+    {
+      "id": "anime",
+      "type": "file",
+      "file": "08-动画方向/AI动画化可执行路径.md",
+      "x": 1240,
+      "y": 740,
+      "width": 780,
+      "height": 1080,
+      "color": "3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-visual-center",
+      "fromNode": "visual",
+      "fromSide": "bottom",
+      "toNode": "center",
+      "toSide": "top"
+    },
+    {
+      "id": "e-center-theory",
+      "fromNode": "center",
+      "fromSide": "left",
+      "toNode": "theory",
+      "toSide": "right"
+    },
+    {
+      "id": "e-theory-mine",
+      "fromNode": "theory",
+      "fromSide": "right",
+      "toNode": "mine",
+      "toSide": "left"
+    },
+    {
+      "id": "e-theme-mine",
+      "fromNode": "theme",
+      "fromSide": "right",
+      "toNode": "mine",
+      "toSide": "left"
+    },
+    {
+      "id": "e-brain-ai",
+      "fromNode": "brain",
+      "fromSide": "right",
+      "toNode": "ai-brief",
+      "toSide": "left"
+    },
+    {
+      "id": "e-brain-f12",
+      "fromNode": "brain",
+      "fromSide": "bottom",
+      "toNode": "f12",
+      "toSide": "top"
+    }
+  ]
+}

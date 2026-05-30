@@ -95,22 +95,22 @@ tags:
 > R10 金矿 10 首，R13-R14 新增金矿 4 首。  
 > 当前阶段金矿锚点：**14 首**。
 
-| 歌曲 | 来源 / 歌手 | 分数 | 核心链条 | 金矿理由 |
-|---|---|---:|---|---|
-| The Great Gig in the Sky | Pink Floyd | 98 | xz → zn → x → n → zn | 无词死亡证明，语言失效后以人声证明主体存在 |
-| The Host of Seraphim | Dead Can Dance | 98 | xz → zn → x → n → zn | 无词灵魂显形，命运压迫下剥出灵魂本体 |
-| Ludwig, the Holy Blade | Bloodborne OST | 98 | xz → x → zn → n → zn | 无歌词曲式完成“兽化怪物中骑士本体回收” |
-| O Superman | Laurie Anderson | 97 | xn → zn → x → x并z → zn被替代 | 系统人声替代，人声被机器 / 权力接管 |
-| Answers | Final Fantasy XIV | 97 | zn → x → nx → n → zn | 文明级毁灭审判，世界毁灭后追问生命意义 |
-| 初音ミクの消失 | cosMo@暴走P feat. 初音ミク | 96 | xn → zn → x → zn崩坏 | 合成声主体过载消失 |
-| ODDS&ENDS | ryo(supercell) feat. 初音ミク | 96 | zn → x → xn → nz → zn | 工具声被创作燃烧唱成主体 |
-| A Beautiful Song | NieR:Automata OST | 96 | x并z → zn → x → zn空心 | 机器以美学外壳争取主体失败 |
-| Bitter Choco Decoration | syudou feat. 初音ミク | 96 | x并z → nx → zn → x → zn空心 | 甜美装饰 / 合格人格让主体空心 |
-| Uninstall | 石川智晶 | 96 | xn → zn → x → xz → zn消失 | 生命主体被系统卸载 |
-| Unknown Mother Goose | wowaka feat. 初音ミク | 96 | zn → x → xn → nx → zn | 未知主体通过过载歌唱回收自身 |
-| 名前のない怪物 | EGOIST | 95 | nx → zn → x → x并z破裂 → zn | 系统审查下的无名怪物主体 |
-| asphyxia | Cö shu Nie | 95 | x → zn → nx失败 → xn错位 → zn缺氧 | 人声 / 节奏 / 旋律共同制造主体缺氧 |
-| Meltdown / 炉心融解 | iroha feat. 鏡音リン | 95 | x → zn → xn → xz → zn融化 | 高温融解直接熔掉自我边界 |
+| 歌曲                       | 来源 / 歌手                   |  分数 | 核心链条                        | 金矿理由                  |
+| ------------------------ | ------------------------- | --: | --------------------------- | --------------------- |
+| The Great Gig in the Sky | Pink Floyd                |  98 | xz → zn → x → n → zn        | 无词死亡证明，语言失效后以人声证明主体存在 |
+| The Host of Seraphim     | Dead Can Dance            |  98 | xz → zn → x → n → zn        | 无词灵魂显形，命运压迫下剥出灵魂本体    |
+| Ludwig, the Holy Blade   | Bloodborne OST            |  98 | xz → x → zn → n → zn        | 无歌词曲式完成“兽化怪物中骑士本体回收”  |
+| O Superman               | Laurie Anderson           |  97 | xn → zn → x → x并z → zn被替代   | 系统人声替代，人声被机器 / 权力接管   |
+| Answers                  | Final Fantasy XIV         |  97 | zn → x → nx → n → zn        | 文明级毁灭审判，世界毁灭后追问生命意义   |
+| 初音ミクの消失                  | cosMo@暴走P feat. 初音ミク      |  96 | xn → zn → x → zn崩坏          | 合成声主体过载消失             |
+| ODDS&ENDS                | ryo(supercell) feat. 初音ミク |  96 | zn → x → xn → nz → zn       | 工具声被创作燃烧唱成主体          |
+| A Beautiful Song         | NieR:Automata OST         |  96 | x并z → zn → x → zn空心         | 机器以美学外壳争取主体失败         |
+| Bitter Choco Decoration  | syudou feat. 初音ミク         |  96 | x并z → nx → zn → x → zn空心    | 甜美装饰 / 合格人格让主体空心      |
+| Uninstall                | 石川智晶                      |  96 | xn → zn → x → xz → zn消失     | 生命主体被系统卸载             |
+| Unknown Mother Goose     | wowaka feat. 初音ミク         |  96 | zn → x → xn → nx → zn       | 未知主体通过过载歌唱回收自身        |
+| 名前のない怪物                  | EGOIST                    |  95 | nx → zn → x → x并z破裂 → zn    | 系统审查下的无名怪物主体          |
+| asphyxia                 | Cö shu Nie                |  95 | x → zn → nx失败 → xn错位 → zn缺氧 | 人声 / 节奏 / 旋律共同制造主体缺氧  |
+| Meltdown / 炉心融解          | iroha feat. 鏡音リン          |  95 | x → zn → xn → xz → zn融化     | 高温融解直接熔掉自我边界          |
 
 ---
 

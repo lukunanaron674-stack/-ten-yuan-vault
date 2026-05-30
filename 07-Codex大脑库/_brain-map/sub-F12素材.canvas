@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"c1","type":"text","text":"# 归档矿井\n\nF12采矿任务\nR1-R30训练素材","x":-200,"y":-200,"width":260,"height":200},
+		{"id":"c2","type":"text","text":"# 辅窗矿井\n\nF12辅窗采矿\nA1-A20任务","x":150,"y":-200,"width":260,"height":200},
+		{"id":"c4","type":"text","text":"# 待二审散点\n\n银矿哥二审待处理","x":150,"y":120,"width":260,"height":200},
+		{"id":"c5","type":"file","file":"sub-sub-案例库.canvas","subpath":"sub-sub-案例库.canvas","x":-50,"y":420,"width":280,"height":180,"color":"4"},
+		{"id":"c3","type":"text","text":"# 数据归档\n\nF12归档输出\n2026-05-20以来","x":-300,"y":140,"width":260,"height":200}
+	],
+	"edges":[
+		{"id":"ec1","fromNode":"c1","fromSide":"bottom","toNode":"c5","toSide":"top"},
+		{"id":"ec2","fromNode":"c2","fromSide":"bottom","toNode":"c5","toSide":"top"},
+		{"id":"ec3","fromNode":"c3","fromSide":"right","toNode":"c4","toSide":"left"}
+	]
+}
