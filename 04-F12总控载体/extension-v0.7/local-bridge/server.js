@@ -103,7 +103,7 @@ function nowFileStamp() {
 
 function archiveMarkdown(body) {
   const createdAt = new Date().toISOString();
-  const title = sanitizeFilePart(body.title || 'F12褰掓。');
+  const title = sanitizeFilePart(body.title || 'F12归档');
   const round = Number(body.round || 0);
   const total = Number(body.total || 0);
   const tabId = sanitizeFilePart(body.tabId || 'tab');
@@ -125,11 +125,11 @@ function archiveMarkdown(body) {
     '',
     `# F12 Archive R${round || 0}/${total || 0} - ${body.title || "Untitled"}`,
     '',
-    '## 浠诲姟',
+    '## 任务',
     '',
     task || "(no task text)",
     '',
-    '## ChatGPT 杈撳嚭',
+    '## 输出',
     '',
     text || "(no output text)",
     ''

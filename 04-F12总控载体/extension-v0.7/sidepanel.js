@@ -104,7 +104,7 @@ function genTasks(count, project, frame) {
     let t='继续执行【'+project+'】R'+i+'/'+count; if(frame) t+='｜'+frame;
     if(i%5===0||i===count){if(i%5===0)t+='\n\n'+carryPktInst(i);if(i===count)t+='\n\n'+finalArchInst();}
     else t+='\n\n'+carryCacheInst(i);
-    t+='\n\n最后必须输出：TASK_DONE_R'+i; tasks.push(t);
+    t+='\n\n完成时按页面控制器附加的完成标记输出。'; tasks.push(t);
   }
   return tasks;
 }
@@ -170,8 +170,117 @@ function generateDefaultTasks(opts) {
 const $ = (id) => document.getElementById(id);
 
 let state = null, health = null, workerConnected = false, workerChecked = false;
+let archiveWatchTimer = null;
+let archiveWatchLast = null;
+const ARCHIVE_WATCH_SEEN_KEY = 'tyF12.archiveWatch.seen.v1';
 
 async function bg(msg) { return await chrome.runtime.sendMessage(msg); }
+
+const LOCAL_BRIDGE_URL = 'http://127.0.0.1:17312';
+let sideBridgeBusy = false;
+
+async function sideBridgeFetch(path, options = {}) {
+  const headers = { 'content-type': 'application/json', ...(options.headers || {}) };
+  const response = await fetch(LOCAL_BRIDGE_URL + path, { ...options, headers });
+  if (!response.ok) throw new Error('Bridge HTTP ' + response.status);
+  return await response.json();
+}
+
+async function executeBridgeCommandFromSidepanel(command) {
+  const type = String(command?.type || command?.command || '').toUpperCase();
+  const payload = command?.payload || {};
+  const bridgeMsg = payload.message || {};
+
+  if (type === 'STATUS') return await bg({ type: 'GET_STATE' });
+  if (type === 'RAW_MESSAGE') return await bg(bridgeMsg);
+  if (type === 'MULTI_COMMAND') {
+    return await bg({
+      type: 'SP_MULTI_COMMAND',
+      tabId: payload.tabId,
+      command: payload.command,
+      task: payload.task,
+      tasks: payload.tasks,
+      index: payload.index,
+      script: payload.script,
+      category: payload.category,
+      project: payload.project,
+      completionMode: payload.completionMode,
+      imageWaitMs: payload.imageWaitMs,
+      channel: payload.channel
+    });
+  }
+  if (type === 'MULTI_SET_TARGET') return await bg({ type: 'SP_MULTI_SET_TARGET', tabId: payload.tabId });
+  if (type === 'MULTI_REFRESH_TABS') return await bg({ type: 'SP_MULTI_REFRESH_TABS' });
+  if (type === 'MULTI_GET_TABS') return await bg({ type: 'SP_MULTI_GET_TABS' });
+
+  const map = {
+    BIND: 'SP_SET_ACTIVE_TAB',
+    SET_ACTIVE_TAB: 'SP_SET_ACTIVE_TAB',
+    INJECT: 'SP_INJECT_WORKER',
+    INJECT_WORKER: 'SP_INJECT_WORKER',
+    SEND: 'SP_SEND_CURRENT',
+    SEND_CURRENT: 'SP_SEND_CURRENT',
+    AUTO: 'SP_AUTO_RUN',
+    AUTO_RUN: 'SP_AUTO_RUN',
+    PAUSE: 'SP_PAUSE',
+    STOP: 'SP_STOP',
+    RESUME: 'SP_RESUME',
+    TRIAL_2: 'SP_TRIAL_2',
+    NEXT: 'SP_NEXT_ROUND',
+    NEXT_ROUND: 'SP_NEXT_ROUND',
+    PREV: 'SP_PREV_ROUND',
+    PREV_ROUND: 'SP_PREV_ROUND',
+    RETRY: 'SP_FORCE_RETRY',
+    FORCE_RETRY: 'SP_FORCE_RETRY',
+    COMPLETE: 'SP_FORCE_COMPLETE',
+    FORCE_COMPLETE: 'SP_FORCE_COMPLETE',
+    RESET: 'SP_RESET_INDEX',
+    RESET_INDEX: 'SP_RESET_INDEX',
+    CLEAR_LOGS: 'SP_CLEAR_LOGS'
+  };
+
+  const mapped = map[type];
+  if (!mapped) return { ok: false, error: 'Unknown bridge command: ' + type };
+  return await bg({ type: mapped });
+}
+
+async function pollBridgeFromSidepanel() {
+  if (sideBridgeBusy) return;
+  sideBridgeBusy = true;
+  try {
+    if (state) {
+      await sideBridgeFetch('/extension/heartbeat', {
+        method: 'POST',
+        body: JSON.stringify({ source: 'ten-yuan-f12-sidepanel', state, ts: Date.now() })
+      });
+    }
+
+    const next = await sideBridgeFetch('/commands/next?client=' + encodeURIComponent('edge-sidepanel'));
+    if (!next || !next.command) return;
+
+    let result;
+    try {
+      result = await executeBridgeCommandFromSidepanel(next.command);
+    } catch (error) {
+      result = { ok: false, error: error.message || String(error) };
+    }
+    await sideBridgeFetch('/result', {
+      method: 'POST',
+      body: JSON.stringify({
+        id: next.command.id,
+        ok: result && result.ok !== false,
+        result,
+        state,
+        completedAt: new Date().toISOString()
+      })
+    });
+    await loadAndRender();
+  } catch (error) {
+    console.debug('[F12 sidepanel bridge relay]', error.message);
+  } finally {
+    sideBridgeBusy = false;
+  }
+}
 
 async function loadAndRender() {
   const resp = await bg({type:'GET_STATE'});
@@ -181,8 +290,10 @@ async function loadAndRender() {
 function renderAll() {
   if(!state)return;
   renderConnStatus(); renderStatusDetail(); renderHealthBrief();
+  renderTaskLibrary();
   renderPagePool();
   renderControls(); renderTasks(); renderCarryStatus(); renderCarryPackets(); renderLogs();
+  renderArchiveWatchStatus();
 }
 
 // Connection
@@ -201,14 +312,32 @@ async function checkWorker() {
 }
 
 // Status detail
+function getSelectedRunInfo() {
+  const selectedId = getSelectedMultiTabId();
+  const selectedTab = selectedId ? state.multiTabs?.tabs?.[String(selectedId)] : null;
+  const pageStatus = String(selectedTab?.status || state.lastStatus || '').toLowerCase();
+  const pageError = selectedTab?.lastError || state.lastError || '';
+  const isRun = state.running || /running|sending|waiting|auto/.test(pageStatus);
+  const isPause = state.manualPause || /pause|paused|confirm/.test(pageStatus);
+  const label = isRun && !isPause ? '☑ 跑' : (isPause ? '☐ 暂停' : '☐ 停');
+  const className = isRun && !isPause ? 's-running' : (isPause ? 's-paused' : 's-stopped');
+  return {
+    label: pageError ? label + ' · 有错误' : label,
+    className,
+    title: pageError || pageStatus || ''
+  };
+}
+
 function renderStatusDetail() {
   const total = state.tasks?.length || 0;
   const current = total > 0 ? Math.min((state.index || 0) + 1, total) : 0;
   $('s-tab').textContent=state.activeTabId?'#'+state.activeTabId:'未绑定';
   $('s-url').textContent=(state.activeUrl||'').substring(0,47);
   $('s-url').title=state.activeUrl||'';
-  const rs=state.running?(state.manualPause?'⏸ 暂停':'▶ 运行'):(state.stopped?'⏹ 停止':'⏸ 待命');
-  $('s-running').textContent=rs;$('s-running').className='s-value'+(state.running?' s-running':'');
+  const runInfo = getSelectedRunInfo();
+  $('s-running').textContent = runInfo.label;
+  $('s-running').title = runInfo.title;
+  $('s-running').className = 's-value ' + runInfo.className;
   $('s-round').textContent='R'+current+'/'+total;
   const la=state.leaseUntil&&state.leaseUntil>Date.now();
   $('s-lease').textContent=la?'🔒 锁定 ('+Math.ceil((state.leaseUntil-Date.now())/1000)+'s)':'🔓 空闲';
@@ -220,6 +349,10 @@ function renderStatusDetail() {
 }
 
 function renderHealthBrief(){if(health)updateDots(health);}
+function renderTaskLibrary(){
+  const select = $('task-category-select');
+  if (select && state.currentCategory && select.value !== state.currentCategory) select.value = state.currentCategory;
+}
 function updateDots(h){
   const s=(id,ok)=>{const e=$(id);if(e){e.textContent=ok?'✓':'✗';e.className='health-dot '+(ok?'ok':'fail');}};
   s('hc-input',h.input);s('hc-send',h.sendButton);s('hc-stop',h.stopButton);s('hc-assistant',h.assistantNode);
@@ -259,6 +392,13 @@ function renderControls(){
   const total = state.tasks?.length || 0;
   const current = total > 0 ? Math.min((state.index || 0) + 1, total) : 0;
   $('round-indicator').textContent='R'+current+'/'+total;
+  const runInfo = getSelectedRunInfo();
+  const runEl = $('control-run-indicator');
+  if (runEl) {
+    runEl.textContent = runInfo.label;
+    runEl.title = runInfo.title;
+    runEl.className = 'control-run-indicator ' + runInfo.className;
+  }
   const r=state.running,ad=state.tasks&&state.index>=state.tasks.length,nt=!state.activeTabId,no=!state.tasks||!state.tasks.length;
   $('btn-send-current').disabled=r||ad||nt||no;
   $('btn-auto-run').disabled=r||ad||nt||no;
@@ -355,6 +495,12 @@ async function doGithubHandoffDownload(){
 // Debug
 async function doDebugReport(){copyToClipboard(buildDebugReportMarkdown(state,health,'?','manual'));showFeedback('Report 已复制');}
 async function doDebugDownload(){downloadDebugReport(buildDebugReportMarkdown(state,health,'?','manual'));showFeedback('已下载');}
+async function doExportProgress(){
+  const r=await bg({type:'SP_EXPORT_PROGRESS_MD'});
+  if(!r.ok){showFeedback('导出失败: '+(r.error||''),true);return;}
+  downloadFile(r.markdown||'',r.filename||('ty-f12-progress-'+ts()+'.md'),'text/markdown');
+  showFeedback('进度快照已导出');
+}
 
 // Control actions
 async function doSendCurrent(){const r=await bg({type:'SP_SEND_CURRENT'});r.ok?showFeedback('已发送'):showFeedback('失败: '+(r.error||''),true);await loadAndRender();}
@@ -391,6 +537,7 @@ function renderAllSkipEditor(){
   if(!state)return;
   renderConnStatus();renderStatusDetail();renderHealthBrief();
   renderPagePool();renderControls();renderCarryStatus();renderCarryPackets();renderLogs();
+  renderArchiveWatchStatus();
   // 更新计数和预览，但不碰 textarea
   if(state.tasks&&state.tasks.length){
     $('task-count').textContent=state.tasks.length+' 个';
@@ -406,6 +553,19 @@ function renderAllSkipEditor(){
 
 function getSelectedMultiTabId() {
   return state?.multiTabs?.selectedTabId || (state?.activeTabId ? String(state.activeTabId) : null);
+}
+
+function getSelectedMultiTab() {
+  const tabId = getSelectedMultiTabId();
+  return tabId ? (state?.multiTabs?.tabs || {})[String(tabId)] : null;
+}
+
+function selectedSiteKind() {
+  const tab = getSelectedMultiTab();
+  const url = String(tab?.url || tab?.title || '');
+  if (/lazymanchat\.com/i.test(url)) return 'lazyman';
+  if (/chatgpt\.com|chat\.openai\.com/i.test(url)) return 'chatgpt';
+  return 'unknown';
 }
 
 function renderPagePool() {
@@ -428,8 +588,10 @@ function renderPagePool() {
       + '<span>#'+esc(String(tab.tabId))+'</span>'
       + '<span class="page-status '+esc(status)+'">'+esc(status)+'</span>'
       + '<span>'+esc(tab.role || 'executor')+'</span>'
+      + '<span>'+esc(tab.category || state.currentCategory || 'dynamic')+'</span>'
       + '<span>R'+esc(String(tab.currentRound || tab.round || 0))+'/'+esc(String(tab.total || 0))+'</span>'
       + '<span>'+Math.max(0, Math.round((now-(tab.lastHeartbeat||0))/1000))+'s</span>'
+      + (tab.lastError ? '<span title="'+esc(tab.lastError)+'">err</span>' : '')
       + '</div></div>';
   }).join('');
   $('page-pool-list').querySelectorAll('.page-row').forEach(row => {
@@ -450,6 +612,20 @@ async function doDefault30(){const p=state.projectName||prompt('项目:','默认
 async function doDefault100(){const p=state.projectName||prompt('项目:','默认项目')||'默认项目';const t=genTasks(100,p,'默认框');await bg({type:'SP_LOAD_TASKS',tasks:t});tasksJustLoaded=true;await bg({type:'SP_SET_PROJECT',projectName:p,frameName:'默认框'});await loadAndRender();}
 async function doCustomRounds(){const p=state.projectName||prompt('项目:','默认项目')||'默认项目';const n=Math.max(1,Number($('custom-round-count')?.value||12));const t=generateDefaultTasks({total:n,projectName:p,frameName:state.frameName||'默认框'});await bg({type:'SP_LOAD_TASKS',tasks:t});tasksJustLoaded=true;await bg({type:'SP_SET_PROJECT',projectName:p,frameName:state.frameName||'默认框'});await loadAndRender();showFeedback('已生成自定义轮次 '+n+' 个');}
 async function doTestPackage(){const p=state.projectName||'测试项目';const t=genTasks(5,p,'测试框');await bg({type:'SP_LOAD_TASKS',tasks:t});tasksJustLoaded=true;await bg({type:'SP_SET_PROJECT',projectName:p,frameName:'测试框'});await loadAndRender();showFeedback('5轮测试包已生成');}
+async function doSetCategory(){
+  const category=$('task-category-select')?.value||'dynamic';
+  const r=await bg({type:'SP_SET_CATEGORY',category});
+  r.ok?showFeedback('当前类别: '+category):showFeedback('类别设置失败: '+(r.error||''),true);
+  await loadAndRender();
+}
+async function doLoadCategoryTasks(){
+  const category=$('task-category-select')?.value||'dynamic';
+  const count=Math.max(1,Number($('custom-round-count')?.value||12));
+  const r=await bg({type:'SP_LOAD_CATEGORY_TASKS',category,count});
+  tasksJustLoaded=true;
+  r.ok?showFeedback('已载入 '+category+' 模板 '+r.count+' 轮'):showFeedback('载入失败: '+(r.error||''),true);
+  await loadAndRender();
+}
 
 // Tab / Worker
 async function doBindCurrent(){
@@ -486,8 +662,57 @@ async function doSetSelectedRole(role){
   r.ok?showFeedback('角色已设置: '+role):showFeedback('设置失败: '+(r.error||''),true);
   await loadAndRender();
 }
+async function doShowPagePanel(){
+  const tabId=getSelectedMultiTabId();
+  if(!tabId){showFeedback('没有选中页面',true);return;}
+  const r=await bg({type:'SP_MULTI_COMMAND',tabId,command:'SHOW_PANEL'});
+  r.ok?showFeedback('已打开页内控制器 #'+tabId):showFeedback('打开失败: '+(r.error||''),true);
+  await loadAndRender();
+}
+async function doShowPagePanelForChannel(channel){
+  const tabId=getSelectedMultiTabId();
+  if(!tabId){showFeedback('没有选中页面',true);return;}
+  const site=selectedSiteKind();
+  if(channel==='chatgpt'&&site!=='chatgpt'){showFeedback('选中页不是 ChatGPT，请选 chatgpt.com 页面',true);return;}
+  if(channel==='lazyman'&&site!=='lazyman'){showFeedback('选中页不是 LazyMan，请选 lazymanchat.com 页面',true);return;}
+  const r=await bg({type:'SP_MULTI_COMMAND',tabId,command:'SHOW_PANEL'});
+  const label=channel==='chatgpt'?'ChatGPT':'LazyMan';
+  r.ok?showFeedback('已打开 '+label+' 页内控制器 #'+tabId):showFeedback('打开失败: '+(r.error||''),true);
+  await loadAndRender();
+}
 async function loadSelectedAgentTasks(tabId, tasks, index=0){
-  return await bg({type:'SP_MULTI_COMMAND',tabId,command:'LOAD_TASK',tasks,index});
+  return await bg({type:'SP_MULTI_COMMAND',tabId,command:'LOAD_TASK',tasks,index,category:state.currentCategory||'dynamic',project:state.projectName||''});
+}
+async function doLoadPageController(){
+  const tabId=getSelectedMultiTabId();
+  if(!tabId){showFeedback('没有选中页面',true);return;}
+
+  const category=$('task-category-select')?.value||state.currentCategory||'dynamic';
+  await bg({type:'SP_SET_CATEGORY',category});
+  if(state) state.currentCategory=category;
+
+  const raw=$('task-editor').value;
+  const parsed=parseTasks(raw);
+  let tasks=parsed.tasks;
+  if(tasks.length){
+    await bg({type:'SP_LOAD_TASKS',tasks});
+    tasksJustLoaded=true;
+    const resp=await bg({type:'GET_STATE'});
+    if(resp.ok) state=resp.state;
+  } else {
+    tasks=state.tasks||[];
+  }
+
+  if(!tasks.length){showFeedback('没有可载入的任务，请先粘贴文本或载入类别模板',true);return;}
+  const warnEl=$('task-warning');
+  if(warnEl) warnEl.textContent=parsed.warnings.join(' ');
+
+  const r=await loadSelectedAgentTasks(tabId,tasks,0);
+  if(!r.ok){showFeedback('载入页内控制器失败: '+(r.error||''),true);await loadAndRender();return;}
+  await bg({type:'SP_MULTI_COMMAND',tabId,command:'SET_COMPLETION_MODE',completionMode:'text',imageWaitMs:120000});
+  const panel=await bg({type:'SP_MULTI_COMMAND',tabId,command:'SHOW_PANEL'});
+  panel.ok?showFeedback('已一键载入页内控制器 '+tasks.length+' 轮 #'+tabId):showFeedback('任务已载入，但打开面板失败: '+(panel.error||''),true);
+  await loadAndRender();
 }
 async function doSendSelected(){
   const tabId=getSelectedMultiTabId();
@@ -495,18 +720,27 @@ async function doSendSelected(){
   const task=(state.tasks||[])[state.index||0];
   if(!task){showFeedback('当前没有任务',true);return;}
   await loadSelectedAgentTasks(tabId,[task],0);
-  const r=await bg({type:'SP_MULTI_COMMAND',tabId,command:'SEND_CURRENT'});
+  const r=await bg({type:'SP_MULTI_COMMAND',tabId,command:'SEND_CURRENT',category:state.currentCategory||'dynamic',project:state.projectName||''});
   r.ok?showFeedback('已发送到选中页 #'+tabId):showFeedback('发送失败: '+(r.error||''),true);
   await loadAndRender();
 }
 async function doAutoSelected(){
+  return doAutoSelectedChannel('auto');
+}
+
+async function doAutoSelectedChannel(channel='auto'){
   const tabId=getSelectedMultiTabId();
   if(!tabId){showFeedback('没有选中页面',true);return;}
+  const site=selectedSiteKind();
+  if(channel==='chatgpt'&&site!=='chatgpt'){showFeedback('选中页不是 ChatGPT，请选 chatgpt.com 页面',true);return;}
+  if(channel==='lazyman'&&site!=='lazyman'){showFeedback('选中页不是 LazyMan，请选 lazymanchat.com 页面',true);return;}
   const tasks=(state.tasks||[]).slice(state.index||0);
   if(!tasks.length){showFeedback('没有可发送任务',true);return;}
   await loadSelectedAgentTasks(tabId,tasks,0);
-  const r=await bg({type:'SP_MULTI_COMMAND',tabId,command:'AUTO_RUN'});
-  r.ok?showFeedback('选中页自动跑已启动'):showFeedback('启动失败: '+(r.error||''),true);
+  await bg({type:'SP_MULTI_COMMAND',tabId,command:'SET_COMPLETION_MODE',completionMode:'text',imageWaitMs:120000});
+  const r=await bg({type:'SP_MULTI_COMMAND',tabId,command:'AUTO_RUN',category:state.currentCategory||'dynamic',project:state.projectName||'',channel});
+  const label=channel==='chatgpt'?'ChatGPT':(channel==='lazyman'?'LazyMan':'选中页');
+  r.ok?showFeedback(label+' 自动跑已启动'):showFeedback('启动失败: '+(r.error||''),true);
   await loadAndRender();
 }
 async function doPauseSelected(){
@@ -557,6 +791,135 @@ function ts(){return new Date().toISOString().replace(/[:.]/g,'-').slice(0,19);}
 function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function showFeedback(msg,isErr){$('export-feedback').textContent=msg;$('export-feedback').style.color=isErr?'#ff4444':'#4caf50';setTimeout(()=>{$('export-feedback').textContent='';},4000);}
 
+function simpleHash(text){
+  let h=2166136261;
+  const s=String(text||'');
+  for(let i=0;i<s.length;i+=1){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}
+  return (h>>>0).toString(16);
+}
+function loadArchiveWatchSeen(){
+  try{return JSON.parse(localStorage.getItem(ARCHIVE_WATCH_SEEN_KEY)||'{}')||{};}
+  catch(_){return {};}
+}
+function saveArchiveWatchSeen(seen){
+  localStorage.setItem(ARCHIVE_WATCH_SEEN_KEY,JSON.stringify(seen||{}));
+}
+function archiveWatchMarker(){
+  return ($('archive-watch-marker')?.value||'---归档').trim()||'---归档';
+}
+function archiveWatchStatus(text,isErr){
+  archiveWatchLast={text,isErr:!!isErr,ts:Date.now()};
+  renderArchiveWatchStatus();
+}
+function renderArchiveWatchStatus(){
+  const badge=$('archive-watch-badge');
+  const status=$('archive-watch-status');
+  if(badge) badge.textContent=archiveWatchTimer?'监听中':'未启动';
+  if(badge) badge.style.color=archiveWatchTimer?'#4ade80':'#aaa';
+  if(status&&archiveWatchLast){
+    const t=new Date(archiveWatchLast.ts).toLocaleTimeString();
+    status.innerHTML='<strong>['+esc(t)+']</strong> <span style="color:'+(archiveWatchLast.isErr?'#ff6666':'#b8c7ff')+'">'+esc(archiveWatchLast.text)+'</span>';
+  }
+}
+function archiveTextCandidates(page){
+  const candidates=[];
+  const add=(label,text)=>{const value=String(text||'').trim();if(value)candidates.push({label,text:value});};
+  add('lastAssistantText',page?.lastAssistantText);
+  add('text',page?.text);
+  add('bodyText',page?.bodyText);
+  [...(page?.snippets||[])].reverse().forEach(x=>add('snippet '+(x.index??''),x.text));
+  [...(page?.frames||[])].reverse().forEach(x=>add('frame '+(x.index??''),x.text));
+  return candidates;
+}
+function findTaskDoneMarker(text){
+  const lines=String(text||'').trim().split(/\r?\n/).map(x=>x.trim()).filter(Boolean);
+  for(let i=lines.length-1;i>=Math.max(0,lines.length-6);i-=1){
+    const m=/^TASK_DONE\s*:\s*R\s*(\d+)\s*\/\s*(\d+)\s*$/i.exec(lines[i]);
+    if(m)return{round:Number(m[1]),total:Number(m[2]),line:lines[i],terminal:true};
+  }
+  const all=[...String(text||'').matchAll(/TASK_DONE\s*:\s*R\s*(\d+)\s*\/\s*(\d+)/gi)];
+  if(all.length){
+    const m=all[all.length-1];
+    return{round:Number(m[1]),total:Number(m[2]),line:m[0],terminal:false};
+  }
+  return null;
+}
+function findArchiveCandidate(page,marker){
+  for(const c of archiveTextCandidates(page)){
+    if(c.text.includes(marker)){
+      const done=findTaskDoneMarker(c.text)||{round:0,total:0,line:marker,terminal:false};
+      return{...done,text:c.text,source:c.label,reason:'触发词 '+marker};
+    }
+  }
+  for(const c of archiveTextCandidates(page)){
+    const done=findTaskDoneMarker(c.text);
+    if(done&&done.total>0&&done.round===done.total){
+      return{...done,text:c.text,source:c.label,reason:'最终轮 TASK_DONE'};
+    }
+  }
+  for(const c of archiveTextCandidates(page)){
+    if(/归档|档案|总结|阶段总结|收束|封存|总表|总览|CarryPacket/i.test(c.text)){
+      const done=findTaskDoneMarker(c.text)||{round:0,total:0,line:'archive-keyword',terminal:false};
+      return{...done,text:c.text,source:c.label,reason:'归档关键词'};
+    }
+  }
+  return null;
+}
+async function doArchiveWatchOnce(){
+  const tabId=getSelectedMultiTabId();
+  if(!tabId){archiveWatchStatus('没有选中页面',true);return;}
+  const marker=archiveWatchMarker();
+  archiveWatchStatus('检查 #'+tabId+' ...');
+  let r;
+  try{r=await bg({type:'SP_MULTI_COMMAND',tabId,command:'DUMP_TEXT'});}
+  catch(error){archiveWatchStatus('DUMP_TEXT 失败: '+error.message,true);return;}
+  if(!r||r.ok===false){archiveWatchStatus('DUMP_TEXT 失败: '+(r?.error||'未知'),true);return;}
+  const page=r.result?.result||r.result||{};
+  const candidate=findArchiveCandidate(page,marker);
+  if(!candidate){archiveWatchStatus('未发现 '+marker+' 或最终 TASK_DONE');return;}
+  const title=page.title||getSelectedMultiTab()?.title||'F12归档';
+  const url=page.href||getSelectedMultiTab()?.url||'';
+  const round=candidate.round||0;
+  const total=candidate.total||0;
+  const key=String(tabId)+'|R'+round+'/'+total+'|'+simpleHash(candidate.text);
+  const seen=loadArchiveWatchSeen();
+  if(seen[key]){archiveWatchStatus('已保存过 R'+round+'/'+total+'，跳过重复');return;}
+  let archived;
+  try{
+    archived=await sideBridgeFetch('/archive',{
+      method:'POST',
+      body:JSON.stringify({
+        source:'Ten Yuan F12 Sidepanel Auto Archive',
+        tabId,
+        title,
+        url,
+        round,
+        total,
+        task:'边栏监听识别：'+candidate.reason+'；来源：'+candidate.source,
+        text:candidate.text
+      })
+    });
+  }catch(error){
+    archiveWatchStatus('保存失败: '+error.message,true);
+    return;
+  }
+  seen[key]={savedAt:new Date().toISOString(),tabId,round,total,path:archived.path,relativePath:archived.relativePath,title};
+  saveArchiveWatchSeen(seen);
+  archiveWatchStatus('已保存 R'+round+'/'+total+' → '+(archived.relativePath||archived.path));
+  showFeedback('自动归档已保存');
+}
+function doArchiveWatchStart(){
+  if(archiveWatchTimer)clearInterval(archiveWatchTimer);
+  archiveWatchTimer=setInterval(()=>doArchiveWatchOnce(),15000);
+  archiveWatchStatus('监听已启动，每 15 秒检查选中页');
+  doArchiveWatchOnce();
+}
+function doArchiveWatchStop(){
+  if(archiveWatchTimer)clearInterval(archiveWatchTimer);
+  archiveWatchTimer=null;
+  archiveWatchStatus('监听已停止');
+}
+
 // ======== Bindings ========
 $('btn-bind-current').addEventListener('click',doBindCurrent);
 $('btn-inject-worker').addEventListener('click',doInjectWorker);
@@ -564,10 +927,13 @@ $('btn-set-project').addEventListener('click',doSetProject);
 $('btn-health-check').addEventListener('click',doHealthCheck);
 $('btn-refresh-pages').addEventListener('click',doRefreshPages);
 $('btn-bind-selected').addEventListener('click',doBindSelected);
+$('btn-show-page-panel').addEventListener('click',doShowPagePanel);
 $('btn-role-control').addEventListener('click',()=>doSetSelectedRole('controller'));
 $('btn-role-executor').addEventListener('click',()=>doSetSelectedRole('executor'));
 $('btn-send-selected').addEventListener('click',doSendSelected);
 $('btn-auto-selected').addEventListener('click',doAutoSelected);
+$('btn-auto-chatgpt').addEventListener('click',()=>doShowPagePanelForChannel('chatgpt'));
+$('btn-auto-lazyman').addEventListener('click',()=>doShowPagePanelForChannel('lazyman'));
 $('btn-pause-selected').addEventListener('click',doPauseSelected);
 $('btn-stop-selected').addEventListener('click',doStopSelected);
 $('btn-send-all-idle').addEventListener('click',doSendAllIdle);
@@ -585,6 +951,9 @@ $('btn-force-retry').addEventListener('click',doForceRetry);
 $('btn-load-tasks').addEventListener('click',doLoadTasks);
 $('btn-import-tasks-file').addEventListener('click',doImportTasksFile);
 $('btn-export-tasks').addEventListener('click',doExportTasks);
+$('btn-set-category').addEventListener('click',doSetCategory);
+$('btn-load-category-tasks').addEventListener('click',doLoadCategoryTasks);
+$('btn-load-page-controller').addEventListener('click',doLoadPageController);
 $('btn-default-10').addEventListener('click',doDefault10);
 $('btn-default-12').addEventListener('click',doDefault12);
 $('btn-default-30').addEventListener('click',doDefault30);
@@ -601,6 +970,7 @@ $('btn-export-logs').addEventListener('click',doExportLogs);
 $('btn-export-all-carry').addEventListener('click',doExportAllCarry);
 $('btn-debug-report').addEventListener('click',doDebugReport);
 $('btn-debug-download').addEventListener('click',doDebugDownload);
+$('btn-export-progress').addEventListener('click',doExportProgress);
 $('btn-obsidian-uri').addEventListener('click',doObsidianUri);
 $('btn-obsidian-download').addEventListener('click',doObsidianDownload);
 $('btn-github-path').addEventListener('click',doGithubPath);
@@ -608,15 +978,20 @@ $('btn-codex-order').addEventListener('click',doCodexOrder);
 $('btn-codex-batch').addEventListener('click',doCodexBatch);
 $('btn-manifest-head').addEventListener('click',doManifestHead);
 $('btn-github-handoff-dl').addEventListener('click',doGithubHandoffDownload);
+$('btn-archive-watch-start').addEventListener('click',doArchiveWatchStart);
+$('btn-archive-watch-stop').addEventListener('click',doArchiveWatchStop);
+$('btn-archive-watch-once').addEventListener('click',doArchiveWatchOnce);
 $('btn-copy-logs').addEventListener('click',doCopyLogs);
 $('btn-clear-logs').addEventListener('click',doClearLogs);
 
 // ======== Poll ========
 setInterval(async()=>{await checkWorker();await loadAndRender();},2000);
+setInterval(pollBridgeFromSidepanel,1500);
 
 // ======== Init ========
 loadAndRender();
 setTimeout(()=>doHealthCheck(),500);
+setTimeout(pollBridgeFromSidepanel,900);
 console.log('[F12 Sidepanel v1.0] Loaded (multi-page inline mode)');
 
 

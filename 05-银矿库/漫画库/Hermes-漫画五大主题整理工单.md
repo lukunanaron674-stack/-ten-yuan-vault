@@ -10,6 +10,18 @@ target: 漫画库五大主题整理
 
 目标：让 Hermes 接收 QQBot 指令后，调度 DeepSeek 做十元重分析，再让本地 Qwen 做低成本整理，最后归档到 Obsidian 的漫画库五大主题页。
 
+首要目标：省 token。DeepSeek 只用于必要的理论判断；本地 Qwen/Ollama 用于压缩、字段化、写入草稿；Obsidian 用于复用历史结论，避免重复分析。
+
+## 0. 省 token 硬规则
+
+1. 先查 Obsidian，再决定是否调用 DeepSeek。
+2. 已有 finalized 卡片、评分、主题特点的漫画，不再送 DeepSeek。
+3. DeepSeek 每批最多 5 部，只接收漫画名、当前主题、分数、短评和标准问题。
+4. DeepSeek 不接收全名单、长上下文、历史大段笔记。
+5. Qwen3.5:4b via Ollama 负责压缩 DeepSeek 输出、生成 Markdown 卡、写待二审。
+6. Qwen 不做最终理论裁判；证据不足直接标记待二审。
+7. 每 25 条复盘一次：记录 DeepSeek 调用次数、跳过次数、Qwen 压缩次数、待二审数量。
+
 ## 1. 分工边界
 
 ### DeepSeek 十元分析
@@ -22,6 +34,14 @@ DeepSeek 只做高价值判断：
 - 给出评分、优先级、入库/待二审/废矿判断。
 - 写出该漫画在主题里的不可替代特点。
 
+DeepSeek 输入必须保持最小化：
+
+- 漫画名
+- 当前候选主题与公式
+- 已有短评
+- 既有评分
+- 标准输出字段
+
 ### 本地 Qwen 整理
 
 Qwen 只做低成本归档工作：
@@ -31,6 +51,8 @@ Qwen 只做低成本归档工作：
 - 生成标准 Markdown 卡片。
 - 写入待二审收集箱或主题页草稿。
 - 不替代 DeepSeek 做最终理论裁判。
+
+Ollama/Qwen 接入方式：脚本调用 `http://127.0.0.1:11434/api/chat`，默认模型 `qwen3.5:4b`。Ollama 不直接写 Obsidian；写入由脚本/Hermes 完成。
 
 ### Hermes / QQBot
 
@@ -72,6 +94,7 @@ Monster
 
 ## 4. Hermes 执行流程
 
+0. 若为批量任务，优先读取 `Hermes-漫画五大主题任务清单.jsonl`；若为人工查看，读取 `Hermes-漫画五大主题任务清单.md`。
 1. 解析漫画名。
 2. 检索以下位置是否已有记录：
    - `05-银矿库/漫画库/`
@@ -79,13 +102,34 @@ Monster
    - `05-银矿库/标定记录/`
    - `07-Codex大脑库/千问十元待二审收集箱.md`
 3. 若已有 finalized 记录，只返回已有归档摘要。
-4. 若缺少主题特点或评分，调用 DeepSeek。
-5. DeepSeek 返回十元分析后，调用本地 Qwen 压缩。
-6. Qwen 生成标准卡片。
-7. 写入：
+4. 若只有格式缺口，调用本地 Qwen 补格式，不调用 DeepSeek。
+5. 只有缺少理论判断、评分矛盾、主题冲突、证据不足时，才调用 DeepSeek。
+6. DeepSeek 返回十元分析后，调用本地 Qwen 压缩。
+7. Qwen 生成标准卡片。
+8. 写入：
    - 低置信度：`07-Codex大脑库/千问十元待二审收集箱.md`
    - 高置信度：对应五大主题页或 `入库卡片/漫画/漫画名.md`
-8. QQBot 返回短摘要。
+9. 更新 `Hermes-漫画归档进度台账.md`，记录是否节省了一次 DeepSeek 调用。
+10. QQBot 返回短摘要。
+
+机器清单：
+
+- `Hermes-漫画五大主题任务清单.jsonl`
+- `Hermes-漫画五大主题任务清单.csv`
+
+辅助脚本：
+
+- `hermes_next_manga_batch.ps1`：读取 JSONL，输出下一批待跑漫画；默认输出因果型前 5 条。
+- `hermes_update_manga_status.ps1`：处理完单部漫画后，回写 JSONL 状态并追加进度台账。
+
+示例：
+
+```powershell
+.\hermes_next_manga_batch.ps1
+.\hermes_next_manga_batch.ps1 zx+nx 2
+.\hermes_update_manga_status.ps1 Monster completed "written to Obsidian"
+.\hermes_update_manga_status.ps1 Monster review "low confidence, sent to inbox"
+```
 
 ## 5. DeepSeek Prompt 模板
 
@@ -176,14 +220,15 @@ DeepSeek 分析：
 
 ## 9. 当前优先目标
 
-先完成五大主题页里已有作品的特点字段统一化，再处理 `漫画库全名单-2026-06-02.md` 的 268 部原始名单。
+先完成五大主题页里已有作品的特点字段统一化，再处理 `漫画库_全名单-精修版-2026-06-02.md` 的 499 部精修名单。旧 `漫画库全名单-2026-06-02.md` 作为 raw-f12 268 部历史版本保留，不作为后续主清单。
 
 优先顺序：
 
 1. 已在五大主题索引中的 90+ 作品。
 2. 两批标定记录中已评分 90+ 的作品。
-3. 全名单中仅分析但未评分的候选。
-4. 错误文件名和无结果文件清理。
+3. 精修全名单中有钧评分的 171 部作品。
+4. 精修全名单中仅霜分析的 328 部候选。
+5. 错误文件名和无结果文件清理。
 
 ## 10. 完成判据
 
@@ -192,3 +237,14 @@ DeepSeek 分析：
 - 每部漫画能追溯到 DeepSeek 或既有标定记录。
 - 低置信度条目进入待二审，不直接 finalized。
 - 漫画库索引的数量统计与主题页一致。
+
+## 11. 阶段性停止条件
+
+用户要求先不要一次跑完全库。阶段性试跑达到以下条件即可暂停复盘：
+
+- 总进度跑完约一半：以精修全名单 499 部为口径，达到约 250 部即可暂停。
+- 五大主题中至少完整跑完一个主题：该主题下所有候选都有标准卡、状态和来源。
+- 暂停后输出流程复盘：DeepSeek 判断质量、Qwen 压缩质量、Hermes 路由稳定性、Obsidian 写入问题、错误文件/低置信度比例。
+- 暂停时不得把低置信度条目强行 finalized，统一进入待二审。
+
+进度记录文件：[[Hermes-漫画归档进度台账]]

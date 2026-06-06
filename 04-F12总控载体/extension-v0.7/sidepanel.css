@@ -55,7 +55,9 @@ body {
 .s-label { color: #888; }
 .s-value { color: #ddd; }
 .s-dim { color: #666; }
-.s-running { color: #4a9eff; }
+.s-running { color: #86efac; font-weight: 800; }
+.s-paused { color: #fdba74; font-weight: 800; }
+.s-stopped { color: #cbd5e1; font-weight: 800; }
 .s-lease-active { color: #ffaa00; }
 .status-error-row .s-value { color: #ff4444; }
 
@@ -99,6 +101,17 @@ body {
 .control-row { display: flex; gap: 5px; margin-bottom: 4px; align-items: center; flex-wrap: wrap; }
 .control-row.secondary { justify-content: center; }
 .round-indicator { font-size: 14px; font-weight: 700; color: #4a9eff; min-width: 50px; text-align: center; }
+.control-run-indicator {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 9px;
+  border: 1px solid #33384a;
+  border-radius: 6px;
+  background: #171923;
+  font-size: 12px;
+  font-weight: 800;
+}
 .status-line { font-size: 11px; color: #888; text-align: center; margin-top: 3px; }
 .status-line.running { color: #ffaa00; }
 .status-line.error { color: #ff4444; }

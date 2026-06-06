@@ -12,6 +12,10 @@
     "f12:send": "node local-bridge/cli.js send",
     "f12:auto": "node local-bridge/cli.js auto",
     "f12:pause": "node local-bridge/cli.js pause",
-    "f12:stop": "node local-bridge/cli.js stop"
+    "f12:stop": "node local-bridge/cli.js stop",
+    "f12:watch-archive": "node local-bridge/archive-watcher.js",
+    "f12:watch-once": "node local-bridge/archive-watcher.js --once",
+    "verify:v12": "node scripts/verify-v12.js",
+    "verify:controller-parser": "node scripts/verify-controller-parser.js"
   }
 }

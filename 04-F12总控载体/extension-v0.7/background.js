@@ -5,6 +5,17 @@ const SCHEMA_VERSION = '1.1.0';
 const STATE_KEY = 'TY_F12_STATE_V09';
 const LOCAL_BRIDGE_URL = 'http://127.0.0.1:17312';
 const LOCAL_BRIDGE_POLL_MS = 2000;
+const PAGE_HEARTBEAT_ONLINE_MS = 600000;
+const TASK_LIBRARY_VERSION = 'v1.2-marker-20260603';
+const DEFAULT_TASK_LIBRARY = {
+  silver: { label: '银矿', type: 'archive', targetBrainSlot: 'silver.mine', template: '进入【银矿采矿 R{{ROUND}}/{{TOTAL}}】。\n\n目标：从当前材料中找高价值案例，按起手、十元关系、动态链结果、五大主题归类评分。\n\n完成时按页面控制器附加的完成标记输出。' },
+  dynamic: { label: '动态链', type: 'research', targetBrainSlot: 'dynamicChain.patterns', template: '进入【动态链研究 R{{ROUND}}/{{TOTAL}}】。\n\n目标：分析十元关系、力流、桥接、分叉、母型和误判风险。\n\n完成时按页面控制器附加的完成标记输出。' },
+  themes: { label: '五大主题', type: 'review', targetBrainSlot: 'fiveThemes.warehouse', template: '进入【五大主题归仓 R{{ROUND}}/{{TOTAL}}】。\n\n目标：判断时间 / 本体 / 空间 / 因果 / 命运归类是否成立，并指出五维倒推十元的风险。\n\n完成时按页面控制器附加的完成标记输出。' },
+  visual: { label: '视觉', type: 'visual', targetBrainSlot: 'visual.styleSeeds', template: '进入【视觉风格采集 R{{ROUND}}/{{TOTAL}}】。\n\n目标：提取构图、光线、材质、姿态、风格词，避免 AI 味和空泛词。\n\n完成时按页面控制器附加的完成标记输出。' },
+  story: { label: '故事', type: 'story', targetBrainSlot: 'story.oneSentenceSeeds', template: '进入【故事种子扩展 R{{ROUND}}/{{TOTAL}}】。\n\n目标：将结构转成一句话故事、角色冲突、三幕式和可扩写方向。\n\n完成时按页面控制器附加的完成标记输出。' },
+  anti: { label: '反例', type: 'anti', targetBrainSlot: 'errors.antiExamples', template: '进入【反例与污染检查 R{{ROUND}}/{{TOTAL}}】。\n\n目标：找伪矿、误判、硬套、污染桥、名作光环和不应入库样本。\n\n完成时按页面控制器附加的完成标记输出。' },
+  archive: { label: '归档', type: 'archive', targetBrainSlot: 'archive.carryPackets', template: '进入【F12归档 R{{ROUND}}/{{TOTAL}}】。\n\n目标：整理本轮稳定结论、风险、下一步，并输出可写入 Obsidian 的 markdown。\n\n完成时按页面控制器附加的完成标记输出。' }
+};
 
 function getDefaultState() {
   return {
@@ -15,7 +26,7 @@ function getDefaultState() {
     lastStatus: 'idle', tasks: [], index: 0, total: 0,
     logs: [], carryPackets: [], errors: [],
     multiTabs: { selectedTabId: null, tabs: {} },
-    projectName: '', frameName: '',
+    projectName: '', frameName: '', currentCategory: 'dynamic', taskLibraryVersion: TASK_LIBRARY_VERSION, taskLibrary: DEFAULT_TASK_LIBRARY,
     createdAt: new Date().toISOString(), updatedAt: new Date().toISOString()
   };
 }
@@ -25,11 +36,19 @@ async function loadState() {
     if (result[STATE_KEY]) {
     const s = result[STATE_KEY];
     if (!s.schemaVersion) { s.schemaVersion = SCHEMA_VERSION; s.stopped = s.stopped !== false; s.manualPause = s.manualPause || false; s.total = s.total || (s.tasks? s.tasks.length : 0); s.activeTitle = s.activeTitle || ''; s.errors = s.errors || []; s.projectName = s.projectName || ''; s.frameName = s.frameName || ''; await chrome.storage.local.set({[STATE_KEY]: s}); }
+    if (s.taskLibraryVersion !== TASK_LIBRARY_VERSION) {
+      s.taskLibrary = DEFAULT_TASK_LIBRARY;
+      s.taskLibraryVersion = TASK_LIBRARY_VERSION;
+    } else {
+      s.taskLibrary = { ...DEFAULT_TASK_LIBRARY, ...(s.taskLibrary || {}) };
+    }
+    s.currentCategory = s.currentCategory || 'dynamic';
     ensureMultiTabs(s);
       if (s.schemaVersion !== SCHEMA_VERSION) {
         s.schemaVersion = SCHEMA_VERSION;
         await chrome.storage.local.set({[STATE_KEY]: s});
       }
+    await chrome.storage.local.set({[STATE_KEY]: s});
     return s;
   }
   const fresh = getDefaultState();
@@ -53,9 +72,11 @@ function upsertMultiTab(state, tabId, patch = {}) {
     tabId: key,
     role: prev.role || 'executor',
     project: prev.project || state.projectName || '',
+    category: prev.category || state.currentCategory || 'dynamic',
     round: prev.round || 0,
     status: prev.status || 'online',
     lastMessage: prev.lastMessage || '',
+    lastError: prev.lastError || '',
     lastHeartbeat: prev.lastHeartbeat || 0,
     ...patch
   };
@@ -66,7 +87,7 @@ function upsertMultiTab(state, tabId, patch = {}) {
 function activeMultiTabs(state) {
   const mt = ensureMultiTabs(state);
   const now = Date.now();
-  return Object.values(mt.tabs).filter(tab => now - (tab.lastHeartbeat || 0) < 30000);
+  return Object.values(mt.tabs).filter(tab => now - (tab.lastHeartbeat || 0) < PAGE_HEARTBEAT_ONLINE_MS);
 }
 
 function addLog(state, level, message, detail) {
@@ -83,13 +104,83 @@ function addError(state, message, detail) {
   addLog(state, 'ERROR', message, detail);
 }
 
+function buildCategoryTasks(state, categoryKey, count = 12) {
+  const library = { ...DEFAULT_TASK_LIBRARY, ...(state.taskLibrary || {}) };
+  const item = library[categoryKey] || library.dynamic;
+  const total = Math.max(1, Number(count) || 12);
+  return Array.from({ length: total }, (_, i) => {
+    const round = i + 1;
+    return String(item.template || '')
+      .replaceAll('{{ROUND}}', String(round))
+      .replaceAll('{{TOTAL}}', String(total))
+      .replaceAll('{{CATEGORY}}', item.label || categoryKey)
+      .trim();
+  });
+}
+
+function buildProgressSnapshotMarkdown(state) {
+  const mt = ensureMultiTabs(state);
+  const tabs = Object.values(mt.tabs || {});
+  const category = state.currentCategory || 'dynamic';
+  const library = { ...DEFAULT_TASK_LIBRARY, ...(state.taskLibrary || {}) };
+  const label = library[category]?.label || category;
+  const now = Date.now();
+  const rows = tabs.map(tab => {
+    const ageSec = Math.max(0, Math.round((now - (tab.lastHeartbeat || 0)) / 1000));
+    const observedStatus = ageSec * 1000 < PAGE_HEARTBEAT_ONLINE_MS ? (tab.status || '') : 'offline';
+    return [
+    tab.tabId || '',
+    tab.role || '',
+    tab.category || '',
+    tab.project || '',
+    `${tab.currentRound || 0}/${tab.total || 0}`,
+    observedStatus,
+    String(ageSec),
+    new Date(tab.lastHeartbeat || 0).toISOString(),
+    String(tab.title || '').replace(/\|/g, '/')
+  ];
+  });
+  return `# F12 进度快照
+
+生成时间：${new Date().toISOString()}
+
+## 总控
+
+| 字段 | 值 |
+|---|---|
+| schemaVersion | ${state.schemaVersion || ''} |
+| projectName | ${state.projectName || ''} |
+| frameName | ${state.frameName || ''} |
+| currentCategory | ${category} / ${label} |
+| activeTabId | ${state.activeTabId || ''} |
+| selectedTabId | ${mt.selectedTabId || ''} |
+| round | R${(state.index || 0) + 1}/${(state.tasks || []).length} |
+| lastStatus | ${state.lastStatus || ''} |
+
+## 页面池
+
+| tabId | role | category | project | round | status | ageSec | heartbeat | title |
+|---|---|---|---|---|---|---:|---|---|
+${rows.map(row => `| ${row.join(' | ')} |`).join('\n') || '| - | - | - | - | - | - | - | - | - |'}
+
+## 下一步
+
+- 刷新页面池后绑定当前页。
+- 选择任务类别并加载类别模板。
+- 页内控制器继续记录自己的进度，归档轮生成 CarryPacket。
+`;
+}
+
 // ======== Local bridge polling ========
 let localBridgeBusy = false;
 
 function stateSummary(state) {
   const total = state.tasks ? state.tasks.length : 0;
+  const manifest = chrome.runtime.getManifest ? chrome.runtime.getManifest() : {};
   return {
     schemaVersion: state.schemaVersion,
+    extensionVersion: manifest.version || '',
+    extensionName: manifest.name || '',
     activeTabId: state.activeTabId,
     activeTitle: state.activeTitle || '',
     activeUrl: state.activeUrl || '',
@@ -101,6 +192,9 @@ function stateSummary(state) {
     lastStatus: state.lastStatus || '',
     projectName: state.projectName || '',
     frameName: state.frameName || '',
+    currentCategory: state.currentCategory || 'dynamic',
+    taskLibraryVersion: state.taskLibraryVersion || TASK_LIBRARY_VERSION,
+    taskLibrary: state.taskLibrary || DEFAULT_TASK_LIBRARY,
     multiTabs: state.multiTabs || { tabs: {} },
     updatedAt: state.updatedAt || ''
   };
@@ -167,8 +261,11 @@ async function executeBridgeCommand(command) {
   if (type === 'LOAD_TASKS') return await handleMsg({ type: 'SP_LOAD_TASKS', tasks: payload.tasks || [] }, {});
   if (type === 'DEFAULT_TASKS') return await handleMsg({ type: 'SP_DEFAULT_TASKS', count: payload.count, project: payload.project, frame: payload.frame }, {});
   if (type === 'SET_PROJECT') return await handleMsg({ type: 'SP_SET_PROJECT', projectName: payload.projectName || payload.project || '', frameName: payload.frameName || payload.frame || '' }, {});
-  if (type === 'MULTI_COMMAND') return await handleMsg({ type: 'SP_MULTI_COMMAND', tabId: payload.tabId, command: payload.command, task: payload.task, tasks: payload.tasks, index: payload.index, script: payload.script }, {});
+  if (type === 'MULTI_COMMAND') return await handleMsg({ type: 'SP_MULTI_COMMAND', tabId: payload.tabId, command: payload.command, task: payload.task, tasks: payload.tasks, index: payload.index, script: payload.script, category: payload.category, project: payload.project, completionMode: payload.completionMode, imageWaitMs: payload.imageWaitMs, channel: payload.channel }, {});
   if (type === 'MULTI_ALL_IDLE') return await handleMsg({ type: 'SP_MULTI_ALL_IDLE', command: payload.command, task: payload.task, tasks: payload.tasks }, {});
+  if (type === 'MULTI_GET_TABS') return await handleMsg({ type: 'SP_MULTI_GET_TABS' }, {});
+  if (type === 'MULTI_REFRESH_TABS') return await handleMsg({ type: 'SP_MULTI_REFRESH_TABS' }, {});
+  if (type === 'MULTI_SET_TARGET') return await handleMsg({ type: 'SP_MULTI_SET_TARGET', tabId: payload.tabId }, {});
   if (type === 'RAW_MESSAGE') return await handleMsg(bridgeMsg, {});
 
   const map = {
@@ -228,6 +325,15 @@ async function pollLocalBridge() {
 setInterval(pollLocalBridge, LOCAL_BRIDGE_POLL_MS);
 setTimeout(pollLocalBridge, 800);
 
+if (chrome.alarms) {
+  chrome.alarms.create('ty-f12-bridge-poll', { periodInMinutes: 0.5 });
+  chrome.alarms.onAlarm.addListener(alarm => {
+    if (alarm && alarm.name === 'ty-f12-bridge-poll') {
+      pollLocalBridge();
+    }
+  });
+}
+
 
 // ======== Worker connection tracking ========
 let workerRegistry = {};
@@ -263,7 +369,8 @@ async function ensureWorker(tabId) {
     await chrome.scripting.executeScript({
       target: { tabId },
       func: () => {
-        for (const key of ['TY_F12_WORKER_V07', 'TY_F12_WORKER_V11']) {
+        for (const key of ['TY_F12_WORKER_V07', 'TY_F12_WORKER_V11', 'TY_F12_PAGE_KERNEL_V12']) {
+          try { window[key]?.destroy?.(); } catch {}
           try { delete window[key]; } catch {}
           try { window[key] = undefined; } catch {}
         }
@@ -340,12 +447,59 @@ async function execTaskViaScript(tabId, task, index, total, workerError) {
         const style = getComputedStyle(el);
         return rect.width > 0 && rect.height > 0 && style.display !== 'none' && style.visibility !== 'hidden';
       };
+      const textOf = el => (el?.innerText || el?.textContent || '').trim();
+      const unique = nodes => {
+        const seen = new Set();
+        return nodes.filter(node => {
+          if (!node || seen.has(node)) return false;
+          seen.add(node);
+          return true;
+        });
+      };
+      const queryVisible = selectors => unique(selectors.flatMap(selector => [...document.querySelectorAll(selector)])).filter(visible);
+      const roleNodes = role => queryVisible([
+        `[data-message-author-role="${role}"]`,
+        `article[data-message-author-role="${role}"]`,
+        `[data-author="${role}"]`,
+        `[data-role="${role}"]`,
+        `[class*="${role}-message"]`,
+        `[class*="${role}Message"]`
+      ]);
+      const userNodes = () => roleNodes('user');
+      const assistantNodes = () => unique([
+        ...roleNodes('assistant'),
+        ...queryVisible([
+          'article[data-testid*="conversation-turn"] [data-message-author-role="assistant"]',
+          'article[data-testid*="turn"] [data-message-author-role="assistant"]',
+          '.agent-turn',
+          '[class*="assistant"]',
+          '[class*="bot-message"]',
+          '[class*="ai-message"]',
+          '.markdown'
+        ])
+      ]);
+      const chatRoot = () => document.querySelector('main') || document.querySelector('[role="main"]') || document.querySelector('#__next') || document.querySelector('#root') || document.documentElement;
+      const marker = `TASK_DONE:R${index + 1}/${total}`;
+      const markerInstruction = [
+        '',
+        '[Completion marker rule]',
+        'At the very last line of your answer, output exactly one completion marker.',
+        'Join these three segments into one line:',
+        'segment 1: TASK_DONE',
+        'segment 2: :',
+        `segment 3: R${index + 1}/${total}`,
+        'Do not add spaces. Do not put it in a code block.'
+      ].join('\n');
       const findInput = () => {
         const selectors = [
           '#prompt-textarea',
+          'textarea[data-testid="prompt-textarea"]',
+          'div[data-testid="prompt-textarea"][contenteditable="true"]',
+          'div.ProseMirror[contenteditable="true"]',
           'div[contenteditable="true"][role="textbox"]',
           'div[contenteditable="true"]',
           'textarea',
+          'input[type="text"]',
           '[role="textbox"]'
         ];
         for (const selector of selectors) {
@@ -382,27 +536,24 @@ async function execTaskViaScript(tabId, task, index, total, workerError) {
         return selectors.map(selector => document.querySelector(selector)).find(visible) || null;
       };
       const getLastAssistantText = () => {
-        const selectors = [
-          '[data-message-author-role="assistant"]',
-          'article[data-testid*="conversation-turn"]',
-          'article[data-testid*="turn"]',
-          '.markdown'
-        ];
-        const nodes = selectors.flatMap(selector => [...document.querySelectorAll(selector)]).filter(visible);
+        const nodes = assistantNodes();
         const last = nodes[nodes.length - 1];
-        return last ? (last.innerText || last.textContent || '') : '';
+        return last ? textOf(last) : '';
       };
       const setInputText = text => {
         const input = findInput();
         if (!input) return false;
         input.focus();
-        if (input.tagName === 'TEXTAREA') {
-          const setter = Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype, 'value')?.set;
+        if (input.tagName === 'TEXTAREA' || input.tagName === 'INPUT') {
+          const proto = input.tagName === 'TEXTAREA' ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
+          const setter = Object.getOwnPropertyDescriptor(proto, 'value')?.set;
           if (setter) setter.call(input, text);
           else input.value = text;
           input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
           return true;
         }
+        input.innerHTML = '';
         input.textContent = '';
         input.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'deleteContentBackward' }));
         document.execCommand('insertText', false, text);
@@ -410,27 +561,49 @@ async function execTaskViaScript(tabId, task, index, total, workerError) {
         return true;
       };
 
-      if (!setInputText(task)) return { ok: false, status: 'worker_missing', error: workerError || 'No input box' };
+      const beforeAssistants = assistantNodes();
+      const baseline = {
+        userCount: userNodes().length,
+        assistantCount: beforeAssistants.length,
+        assistantSet: new WeakSet(beforeAssistants)
+      };
+      if (!setInputText(String(task || '').trim() + '\n\n' + markerInstruction)) return { ok: false, status: 'worker_missing', error: workerError || 'No input box' };
       await sleep(700);
       const button = findSendButton();
       if (!button) return { ok: false, status: 'send_button_missing', error: 'Send button missing' };
       button.click();
 
-      let lastText = '';
-      let stableSince = Date.now();
-      const deadline = Date.now() + 180000;
+      let lastMutationAt = Date.now();
+      let target = null;
+      let sawUser = baseline.userCount === 0;
+      let sawAssistant = false;
+      let sawMarkerAt = 0;
+      const observer = new MutationObserver(() => { lastMutationAt = Date.now(); });
+      observer.observe(chatRoot(), { subtree: true, childList: true, characterData: true });
+      const deadline = Date.now() + 25 * 60 * 1000;
       while (Date.now() < deadline) {
-        await sleep(1200);
-        const text = getLastAssistantText();
-        if (text !== lastText) {
-          lastText = text;
-          stableSince = Date.now();
+        await sleep(900);
+        if (!sawUser && userNodes().length > baseline.userCount) sawUser = true;
+        if (sawUser && !target) {
+          const added = assistantNodes().filter(node => !baseline.assistantSet.has(node));
+          if (added.length) {
+            target = added[added.length - 1];
+            sawAssistant = true;
+          }
         }
-        if (!findStopButton() && lastText.trim() && Date.now() - stableSince > 5000) {
-          return { ok: true, status: 'done', text: lastText, task, round: index + 1, total };
+        if (!target) continue;
+        const text = textOf(target);
+        if (!sawMarkerAt && text.includes(marker)) sawMarkerAt = Date.now();
+        const quiet = Date.now() - lastMutationAt >= 2800;
+        const markerSettled = sawMarkerAt && Date.now() - sawMarkerAt >= 2800;
+        if (sawMarkerAt && quiet && markerSettled && !findStopButton()) {
+          observer.disconnect();
+          return { ok: true, status: 'done', text, marker, task, round: index + 1, total };
         }
       }
-      return { ok: false, status: 'timeout', error: 'Inline worker timeout', text: lastText, task, round: index + 1, total };
+      observer.disconnect();
+      const reason = !sawUser ? 'no_new_user_node' : (!sawAssistant ? 'no_new_assistant_node' : 'marker_missing_or_unsettled');
+      return { ok: false, status: 'manual_pause', error: 'Inline role-lock timeout: ' + reason, text: getLastAssistantText(), task, round: index + 1, total };
     }
   });
   return injected?.result || { ok: false, status: 'inline_failed', error: 'Inline script returned no result' };
@@ -452,7 +625,7 @@ function generateTasks(count, project, frame) {
       if (i%5===0) t += '\n\n' + carryPktInst(i);
       if (i===count) t += '\n\n' + finalArchInst();
     } else { t += '\n\n' + carryCacheInst(i); }
-    t += '\n\n最后必须输出：TASK_DONE_R'+i;
+    t += '\n\n完成时按页面控制器附加的完成标记输出。';
     tasks.push(t);
   }
   return tasks;
@@ -561,7 +734,7 @@ async function handleMsg(msg, sender) {
         const t = tabs[0];
         s.activeTabId=t.id; s.activeUrl=t.url||''; s.activeTitle=t.title||''; s.stopped=false;
         ensureMultiTabs(s).selectedTabId = String(t.id);
-        upsertMultiTab(s, t.id, { url: t.url || '', title: t.title || '', status: 'bound', lastHeartbeat: Date.now() });
+        upsertMultiTab(s, t.id, { url: t.url || '', title: t.title || '', status: 'bound', category: s.currentCategory || 'dynamic', project: s.projectName || '', lastHeartbeat: Date.now() });
         addLog(s,'INFO','Active tab: '+t.id+' '+t.url);
         await saveState(s);
         try{await chrome.tabs.sendMessage(t.id,{type:'WORKER_ACTIVATE',tabId:t.id});}catch(e){}
@@ -582,6 +755,37 @@ async function handleMsg(msg, sender) {
     case 'SP_MULTI_GET_TABS': {
       const mt = ensureMultiTabs(s);
       return { ok: true, selectedTabId: mt.selectedTabId, tabs: mt.tabs, online: activeMultiTabs(s) };
+    }
+
+    case 'SP_MULTI_REFRESH_TABS': {
+      const mt = ensureMultiTabs(s);
+      const tabs = await chrome.tabs.query({});
+      const supported = tabs.filter(tab => /^https:\/\/(chatgpt\.com|chat\.openai\.com|lazymanchat\.com)\//.test(tab.url || ''));
+      for (const tab of supported) {
+        upsertMultiTab(s, tab.id, {
+          url: tab.url || '',
+          title: tab.title || '',
+          status: mt.tabs[String(tab.id)]?.status || 'found',
+          category: s.currentCategory || 'dynamic',
+          project: s.projectName || '',
+          lastHeartbeat: Date.now()
+        });
+      }
+      if (s.activeTabId && !supported.some(tab => tab.id === s.activeTabId)) {
+        s.activeTabId = null;
+        s.activeUrl = '';
+        s.activeTitle = '';
+      }
+      if (!s.activeTabId && supported.length) {
+        const active = supported.find(tab => tab.active) || supported[0];
+        s.activeTabId = active.id;
+        s.activeUrl = active.url || '';
+        s.activeTitle = active.title || '';
+        mt.selectedTabId = String(active.id);
+      }
+      addLog(s, 'INFO', 'Refreshed page pool: ' + supported.length);
+      await saveState(s);
+      return { ok: true, selectedTabId: mt.selectedTabId, tabs: mt.tabs, found: supported.map(tab => ({ tabId: String(tab.id), title: tab.title || '', url: tab.url || '', active: !!tab.active })) };
     }
 
     case 'SP_MULTI_SET_TARGET': {
@@ -606,17 +810,175 @@ async function handleMsg(msg, sender) {
     case 'SP_MULTI_COMMAND': {
       const tabId = Number(msg.tabId || ensureMultiTabs(s).selectedTabId);
       if (!tabId) return { ok: false, error: 'No target tab' };
+      if (msg.command === 'DUMP_TEXT') {
+        const worker = await ensureWorker(tabId);
+        if (worker.connected) {
+          try {
+            const result = await chrome.tabs.sendMessage(tabId, {
+              type: 'AGENT_COMMAND',
+              command: 'DEBUG_DUMP'
+            });
+            if (result && result.ok) {
+              upsertMultiTab(s, tabId, {
+                status: 'dumped',
+                lastMessage: 'DUMP_TEXT',
+                lastError: '',
+                lastHeartbeat: Date.now()
+              });
+              addLog(s, 'INFO', 'Multi agent debug dump -> #' + tabId, JSON.stringify(result || {}).slice(0, 300));
+              await saveState(s);
+              return { ok: true, result };
+            }
+          } catch (error) {
+            addLog(s, 'WARN', 'Agent debug dump failed, falling back to inline dump #' + tabId, error.message);
+          }
+        }
+        const [injected] = await chrome.scripting.executeScript({
+          target: { tabId },
+          func: () => {
+            const textOf = el => (el?.innerText || el?.textContent || '').trim();
+            const visible = el => {
+              if (!el) return false;
+              const rect = el.getBoundingClientRect();
+              if (!rect.width || !rect.height) return false;
+              const style = getComputedStyle(el);
+              return style.display !== 'none' && style.visibility !== 'hidden';
+            };
+            const selectors = [
+              'main',
+              '[role="main"]',
+              'article',
+              'section',
+              '[class*="message"]',
+              '[class*="Message"]',
+              '[class*="assistant"]',
+              '[class*="answer"]',
+              '[class*="reply"]',
+              '[class*="bubble"]',
+              '[class*="Bubble"]',
+              '[class*="prose"]',
+              '[class*="markdown"]',
+              'textarea',
+              '[contenteditable="true"]',
+              'button'
+            ];
+            const seen = new Set();
+            const nodes = selectors.flatMap(selector => [...document.querySelectorAll(selector)])
+              .filter(el => {
+                if (!el || seen.has(el) || !visible(el)) return false;
+                seen.add(el);
+                return true;
+              });
+            const snippets = nodes.map((el, index) => ({
+              index,
+              tag: el.tagName,
+              id: el.id || '',
+              role: el.getAttribute('role') || '',
+              aria: el.getAttribute('aria-label') || '',
+              className: String(el.className || '').slice(0, 180),
+              text: textOf(el).slice(0, 1500)
+            })).filter(item => item.text || item.aria || item.id || item.className).slice(-120);
+            const frames = [...document.querySelectorAll('iframe')].map((frame, index) => {
+              try {
+                return { index, src: frame.src || '', text: textOf(frame.contentDocument?.body).slice(0, 4000) };
+              } catch (error) {
+                return { index, src: frame.src || '', error: error.message };
+              }
+            });
+            return {
+              ok: true,
+              status: 'dump_text',
+              href: location.href,
+              title: document.title,
+              inputCount: document.querySelectorAll('textarea,input,[contenteditable="true"],[role="textbox"]').length,
+              buttonCount: document.querySelectorAll('button,[role="button"]').length,
+              bodyText: textOf(document.body).slice(0, 30000),
+              snippets,
+              frames
+            };
+          }
+        });
+        const result = injected?.result || { ok: false, error: 'No injected result' };
+        upsertMultiTab(s, tabId, {
+          status: result.ok ? 'dumped' : 'dump_failed',
+          lastMessage: 'DUMP_TEXT',
+          lastError: result.ok ? '' : (result.error || 'dump failed'),
+          lastHeartbeat: Date.now()
+        });
+        addLog(s, 'INFO', 'Multi dump text -> #' + tabId, JSON.stringify(result || {}).slice(0, 300));
+        await saveState(s);
+        return { ok: !!result.ok, result };
+      }
+      if (msg.command === 'RUN_SCRIPT') {
+        await chrome.scripting.executeScript({
+          target: { tabId },
+          files: ['content.js']
+        });
+        const result = { ok: true, status: 'script_executed', file: 'content.js' };
+        upsertMultiTab(s, tabId, {
+          status: 'script_executed',
+          lastMessage: 'RUN_SCRIPT',
+          lastError: '',
+          lastHeartbeat: Date.now()
+        });
+        addLog(s, 'INFO', 'Multi script file -> #' + tabId, JSON.stringify(result || {}).slice(0, 300));
+        await saveState(s);
+        return { ok: true, result };
+      }
       const worker = await ensureWorker(tabId);
       if (!worker.connected) { const r = workerMissing(s, addError, worker.error); await saveState(s); return r; }
+      const longRunning = ['SEND_CURRENT', 'AUTO_RUN'].includes(msg.command);
+      const category = msg.category || s.currentCategory || 'dynamic';
+      const project = msg.project || s.projectName || '';
+      if (longRunning) {
+        chrome.tabs.sendMessage(tabId, {
+          type: 'AGENT_COMMAND',
+          command: msg.command,
+          task: msg.task,
+          tasks: msg.tasks,
+          index: msg.index,
+          script: msg.script,
+          category,
+          project,
+          completionMode: msg.completionMode,
+          imageWaitMs: msg.imageWaitMs,
+          channel: msg.channel
+        }).then(async result => {
+          const fresh = await loadState();
+          upsertMultiTab(fresh, tabId, {
+            status: result?.status || (result?.ok ? 'idle' : 'paused'),
+            lastMessage: msg.command,
+            category,
+            project,
+            lastHeartbeat: Date.now()
+          });
+          addLog(fresh, 'INFO', 'Multi async result ' + msg.command + ' -> #' + tabId, JSON.stringify(result || {}).slice(0, 300));
+          await saveState(fresh);
+        }).catch(async error => {
+          const fresh = await loadState();
+          upsertMultiTab(fresh, tabId, { status: 'error', lastMessage: error.message, lastError: error.message, category, project, lastHeartbeat: Date.now() });
+          addError(fresh, 'Multi async command failed #' + tabId, error.message);
+          await saveState(fresh);
+        });
+        upsertMultiTab(s, tabId, { status: msg.command === 'AUTO_RUN' ? 'auto_running' : 'running', lastMessage: msg.command, category, project, lastHeartbeat: Date.now() });
+        addLog(s, 'INFO', 'Multi command dispatched ' + msg.command + ' -> #' + tabId);
+        await saveState(s);
+        return { ok: true, result: { ok: true, status: 'dispatched', command: msg.command, tabId } };
+      }
       const result = await chrome.tabs.sendMessage(tabId, {
         type: 'AGENT_COMMAND',
         command: msg.command,
         task: msg.task,
         tasks: msg.tasks,
         index: msg.index,
-          script: msg.script
+        script: msg.script,
+        category,
+        project,
+        completionMode: msg.completionMode,
+        imageWaitMs: msg.imageWaitMs,
+        channel: msg.channel
       });
-      upsertMultiTab(s, tabId, { status: result?.status || 'command_sent', lastMessage: msg.command, lastHeartbeat: Date.now() });
+      upsertMultiTab(s, tabId, { status: result?.status || 'command_sent', lastMessage: msg.command, category, project, lastHeartbeat: Date.now() });
       if (msg.command === 'ARCHIVE_LATEST' && result?.ok) {
         try {
           const tab = ensureMultiTabs(s).tabs[String(tabId)] || {};
@@ -791,6 +1153,43 @@ async function handleMsg(msg, sender) {
 
     case 'SP_SET_PROJECT': s.projectName=msg.projectName||''; s.frameName=msg.frameName||''; addLog(s,'INFO','Project: '+s.projectName); await saveState(s); return {ok:true};
 
+    case 'SP_SET_CATEGORY': {
+      const library = { ...DEFAULT_TASK_LIBRARY, ...(s.taskLibrary || {}) };
+      const category = msg.category || 'dynamic';
+      if (!library[category]) return { ok: false, error: 'Unknown category: ' + category };
+      s.taskLibrary = library;
+      s.currentCategory = category;
+      addLog(s, 'INFO', 'Category: ' + category);
+      await saveState(s);
+      return { ok: true, category, item: library[category] };
+    }
+
+    case 'SP_LOAD_CATEGORY_TASKS': {
+      const library = { ...DEFAULT_TASK_LIBRARY, ...(s.taskLibrary || {}) };
+      const category = msg.category || s.currentCategory || 'dynamic';
+      if (!library[category]) return { ok: false, error: 'Unknown category: ' + category };
+      const count = Math.max(1, Number(msg.count) || 12);
+      s.taskLibrary = library;
+      s.currentCategory = category;
+      s.tasks = buildCategoryTasks(s, category, count);
+      s.taskMetas = s.tasks.map((_, i) => ({
+        type: library[category].type || category,
+        category,
+        targetBrainSlot: library[category].targetBrainSlot || '',
+        returnPolicy: i === s.tasks.length - 1 ? 'full' : 'summary'
+      }));
+      s.total = s.tasks.length;
+      s.index = 0;
+      s.lastStatus = 'category_tasks_loaded';
+      addLog(s, 'INFO', 'Loaded category ' + category + ' tasks: ' + s.tasks.length);
+      await saveState(s);
+      return { ok: true, category, count: s.tasks.length };
+    }
+
+    case 'SP_EXPORT_PROGRESS_MD': {
+      return { ok: true, markdown: buildProgressSnapshotMarkdown(s), filename: 'ty-f12-progress-' + new Date().toISOString().replace(/[:.]/g, '-') + '.md' };
+    }
+
     case 'SP_ADD_CARRY_PACKET': {
       const start = Math.floor(s.index/5)*5+1; const end = s.index;
       const range = 'R'+String(start).padStart(3,'0')+'-'+String(end).padStart(3,'0');
@@ -887,8 +1286,11 @@ async function handleMsg(msg, sender) {
         url: msg.url || '',
         title: msg.title || '',
         status: msg.status || 'online',
+        category: msg.category || s.currentCategory || 'dynamic',
+        project: msg.project || s.projectName || '',
         currentRound: msg.currentRound || 0,
         total: msg.total || 0,
+        lastError: msg.lastError || '',
         lastHeartbeat: Date.now()
       });
       if (msg.type === 'AGENT_REGISTER') addLog(s, 'INFO', 'Agent registered #' + tabId, tab.url || '');
@@ -901,9 +1303,12 @@ async function handleMsg(msg, sender) {
       const tabId = sender.tab ? sender.tab.id : s.activeTabId;
       upsertMultiTab(s, tabId, {
         status: msg.status || 'idle',
+        category: msg.category || s.currentCategory || 'dynamic',
+        project: msg.project || s.projectName || '',
         currentRound: msg.currentRound || 0,
         total: msg.total || 0,
         lastMessage: (msg.lastMessage || msg.result?.text || '').slice(0, 500),
+        lastError: msg.lastError || '',
         lastHeartbeat: Date.now()
       });
       try {
@@ -923,6 +1328,9 @@ async function handleMsg(msg, sender) {
       upsertMultiTab(s, tabId, {
         status: 'error',
         lastMessage: msg.error || '',
+        lastError: msg.error || '',
+        category: msg.category || s.currentCategory || 'dynamic',
+        project: msg.project || s.projectName || '',
         lastHeartbeat: Date.now()
       });
       addError(s, 'Agent error #' + tabId, msg.error || '');

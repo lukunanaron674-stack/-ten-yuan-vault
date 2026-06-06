@@ -50,6 +50,12 @@ function parseTasks(raw, options = {}) {
     tasks = parts.map(p => { const m = parseTaskMeta(p); metas.push(m); return m.body; });
     parseMode = 'separator';
   } else {
+    const expandedTemplate = expandRoundTemplate(text);
+    if (expandedTemplate.length) {
+      tasks = expandedTemplate;
+      metas = tasks.map(p => ({ type: 'research', returnPolicy: 'summary', targetBrainSlot: null, id: null, title: null, body: p }));
+      parseMode = 'round-template';
+    } else {
     const roundParts = splitByRoundHeading(text);
     if (roundParts.length > 1) {
       tasks = roundParts;
@@ -68,11 +74,113 @@ function parseTasks(raw, options = {}) {
         warnings.push('当前只解析出 1 个任务。若要 12 轮，请使用 ---TASK--- / ---task--- 分隔或点击生成12轮。');
       }
     }
+    }
   }
 
   tasks = tasks.filter(Boolean);
   console.log(`Parsed tasks: ${tasks.length} via ${parseMode}`);
   return { tasks, metas, total: tasks.length, parseMode, warnings };
+}
+
+function cleanTaskText(text) {
+  return String(text || '')
+    .replace(/^\s*```(?:text|txt|md|markdown)?\s*$/gim, '')
+    .replace(/^\s*```\s*$/gim, '')
+    .trim();
+}
+
+function detectTemplateTotal(text) {
+  const patterns = [
+    /TASK_DONE\s*:\s*R\s*[\{｛][^}｝]+[}｝]\s*\/\s*(\d+)/i,
+    /R\s*[\{｛][^}｝]+[}｝]\s*\/\s*(\d+)/i,
+    /TASK_DONE\s*:\s*R\s*\d+\s*\/\s*(\d+)/i,
+    /R\s*1\s*\/\s*(\d+)/i,
+    /(\d+)\s*轮/
+  ];
+  for (const pattern of patterns) {
+    const match = String(text || '').match(pattern);
+    if (match) return Number(match[1]);
+  }
+  return 0;
+}
+
+function fillRoundPlaceholders(text, round, total) {
+  return cleanTaskText(text)
+    .replace(/R\s*[\{｛]\s*(?:轮数|round|n)\s*[}｝]\s*\/\s*\d+/gi, `R${round}/${total}`)
+    .replace(/R\s*[\{｛][^}｝]+[}｝]\s*\/\s*\d+/g, `R${round}/${total}`)
+    .replace(/TASK_DONE\s*:\s*R\s*[\{｛][^}｝]+[}｝]\s*\/\s*\d+/gi, `TASK_DONE:R${round}/${total}`);
+}
+
+function fencedBlocks(text) {
+  return [...String(text || '').matchAll(/```(?:text|txt|md|markdown)?\s*\n([\s\S]*?)\n```/gi)]
+    .map(match => ({ index: match.index, body: match[1] }));
+}
+
+function trimAfterGuideText(text) {
+  const stops = [
+    /\n\s*推荐跑法\s*[:：]?/i,
+    /\n\s*后续/i
+  ];
+  const offsets = stops
+    .map(pattern => pattern.exec(text))
+    .filter(Boolean)
+    .map(match => match.index)
+    .filter(index => index > 0);
+  if (!offsets.length) return text;
+  return text.slice(0, offsets.sort((a, b) => a - b)[0]);
+}
+
+function expandRoundTemplate(raw) {
+  const text = String(raw || '').trim();
+  const total = detectTemplateTotal(text);
+  if (!total || total < 2 || total > 300) return [];
+  const placeholder = /R\s*[\{｛][^}｝]+[}｝]\s*\/\s*\d+/i;
+  if (!placeholder.test(text)) return [];
+
+  const blocks = fencedBlocks(text);
+  const templateBlock = blocks.find(block => placeholder.test(block.body));
+  const templateText = templateBlock ? templateBlock.body : text;
+  const placeholderMatch = placeholder.exec(templateText);
+  if (!placeholderMatch) return [];
+  const templateStart = templateBlock
+    ? templateBlock.index
+    : text.lastIndexOf('\n', placeholderMatch.index) + 1;
+
+  let template = '';
+  if (templateBlock) {
+    template = cleanTaskText(templateBlock.body);
+  } else {
+    const afterTemplate = text.slice(templateStart);
+    const guideMatch = /\n\s*推荐跑法\s*[:：]?/i.exec(afterTemplate);
+    template = cleanTaskText(afterTemplate.slice(0, guideMatch && guideMatch.index > 0 ? guideMatch.index : afterTemplate.length));
+  }
+  if (!template) return [];
+
+  let firstTask = '';
+  const firstBlock = blocks.find(block =>
+    block.index < templateStart &&
+    !placeholder.test(block.body) &&
+    new RegExp(`R\\s*1\\s*\\/\\s*${total}`, 'i').test(block.body)
+  );
+
+  if (firstBlock) {
+    firstTask = cleanTaskText(firstBlock.body);
+  } else {
+    const beforeTemplate = text.slice(0, templateStart);
+    const firstMatch = new RegExp(`R\\s*1\\s*\\/\\s*${total}`, 'i').exec(beforeTemplate);
+    if (firstMatch) {
+      const firstStart = beforeTemplate.lastIndexOf('\n', firstMatch.index) + 1;
+      firstTask = cleanTaskText(trimAfterGuideText(beforeTemplate.slice(firstStart)));
+    }
+  }
+
+  const tasks = [];
+  if (firstTask) tasks.push(fillRoundPlaceholders(firstTask, 1, total));
+  else tasks.push(fillRoundPlaceholders(template, 1, total));
+  for (let round = 2; round <= total; round += 1) {
+    tasks.push(fillRoundPlaceholders(template, round, total));
+  }
+  return tasks.filter(Boolean);
 }
 
 function splitByRoundHeading(text) {
@@ -149,7 +257,7 @@ function generateDefaultTasks(input = DEFAULT_TASK_COUNT, projectName = '默认�
     } else {
       task += '\n\n' + ordinaryCarryCacheInstruction(i);
     }
-    task += `\n\n最后必须输出：TASK_DONE_R${i}`;
+    task += '\n\n完成时按页面控制器附加的完成标记输出。';
     tasks.push(task);
   }
   return tasks;
