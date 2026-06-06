@@ -51,12 +51,15 @@
       <div class="btn-row">
         <button id="btn-refresh-pages" class="btn btn-sm">刷新页面池</button>
         <button id="btn-bind-selected" class="btn btn-sm btn-primary">绑定选中页</button>
+        <button id="btn-show-page-panel" class="btn btn-sm btn-warn">打开页内控制器</button>
         <button id="btn-role-control" class="btn btn-sm">设为主控页</button>
         <button id="btn-role-executor" class="btn btn-sm">设为执行页</button>
       </div>
       <div class="btn-row">
         <button id="btn-send-selected" class="btn btn-sm btn-action">发送到选中页</button>
         <button id="btn-auto-selected" class="btn btn-sm btn-auto">选中页自动跑</button>
+        <button id="btn-auto-chatgpt" class="btn btn-sm btn-auto">打开 ChatGPT 页内控制器</button>
+        <button id="btn-auto-lazyman" class="btn btn-sm btn-trial">打开 LazyMan 页内控制器</button>
         <button id="btn-pause-selected" class="btn btn-sm btn-pause">暂停选中页</button>
         <button id="btn-stop-selected" class="btn btn-sm btn-stop">停止选中页</button>
       </div>
@@ -79,6 +82,21 @@
         <button class="btn btn-sm filter-btn" data-filter="research">⛏ 研究</button>
         <button class="btn btn-sm filter-btn" data-filter="review">🔍 审稿</button>
         <button class="btn btn-sm filter-btn" data-filter="full">⭐ 仅 full</button>
+      </div>
+      <div class="btn-row">
+        <label class="s-label" for="task-category-select">任务库：</label>
+        <select id="task-category-select" style="min-width:112px">
+          <option value="silver">银矿</option>
+          <option value="dynamic">动态链</option>
+          <option value="themes">五大主题</option>
+          <option value="visual">视觉</option>
+          <option value="story">故事</option>
+          <option value="anti">反例</option>
+          <option value="archive">归档</option>
+        </select>
+        <button id="btn-set-category" class="btn btn-sm">设为当前类别</button>
+        <button id="btn-load-category-tasks" class="btn btn-sm btn-primary">载入类别模板</button>
+        <button id="btn-load-page-controller" class="btn btn-sm btn-auto">一键载入页内控制器</button>
       </div>
       <textarea id="task-editor" placeholder="在此粘贴任务，用 ---TASK--- / ---task--- 分隔每轮..." rows="4"></textarea>
       <div class="btn-row">
@@ -118,6 +136,7 @@
         <button id="btn-send-current" class="btn btn-action">▶ 发送当前</button>
         <button id="btn-auto-run" class="btn btn-action btn-auto">▶▶ 自动续跑</button>
         <button id="btn-trial-2" class="btn btn-action btn-trial">◈ 试跑2轮</button>
+        <span id="control-run-indicator" class="control-run-indicator s-stopped">☐ 停</span>
       </div>
       <div class="control-row">
         <button id="btn-pause" class="btn btn-action btn-pause">⏸ 暂停</button>
@@ -160,6 +179,7 @@
         <button id="btn-export-logs" class="btn btn-sm">导出全部日志</button>
         <button id="btn-export-all-carry" class="btn btn-sm">导出全部 CarryPacket</button>
         <button id="btn-debug-download" class="btn btn-sm">下载 Debug Report</button>
+        <button id="btn-export-progress" class="btn btn-sm btn-primary">导出进度快照</button>
       </div>
       <div class="btn-row">
         <button id="btn-obsidian-uri" class="btn btn-sm">📋 Obsidian URI</button>
@@ -176,6 +196,19 @@
       </div>
       <div id="export-feedback" class="export-feedback"></div>
       <input type="file" id="file-state-input" accept=".json" style="display:none">
+    </div>
+
+    <!-- 5.5 自动归档监听 -->
+    <div class="f12-section">
+      <div class="section-header">🛰 自动归档监听 <span id="archive-watch-badge" class="task-count">未启动</span></div>
+      <div class="btn-row">
+        <label class="s-label" for="archive-watch-marker">触发词：</label>
+        <input id="archive-watch-marker" type="text" value="---归档" style="width:120px">
+        <button id="btn-archive-watch-start" class="btn btn-sm btn-auto">开始监听选中页</button>
+        <button id="btn-archive-watch-stop" class="btn btn-sm btn-stop">停止监听</button>
+        <button id="btn-archive-watch-once" class="btn btn-sm btn-primary">立即检查</button>
+      </div>
+      <div id="archive-watch-status" class="task-preview">看到 ---归档 或最终 TASK_DONE 轮次时自动保存。</div>
     </div>
 
     <!-- 6. 日志区 -->

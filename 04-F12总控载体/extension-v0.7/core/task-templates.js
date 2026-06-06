@@ -71,7 +71,7 @@ targetBrainSlot: ${targetBrainSlot}`;
     } else if (isFinal) {
     task += '\n\n' + FINAL_ARCHIVE_INSTRUCTION;
   }
-  task += `\n\n最后必须输出：TASK_DONE_R${round}`;
+  task += '\n\n完成时按页面控制器附加的完成标记输出。';
 
   return meta + '\n\n' + task;
 }
@@ -126,7 +126,7 @@ function generateMultiFrameTasks(assignment) {
     const meta = `type: ${config.type}
 returnPolicy: ${config.returnPolicy}
 targetBrainSlot: ${slot}`;
-    tasks.push(meta + '\n\n' + config.prompt + '\n\n---\n\n' + payload + '\n\n最后必须输出：TASK_DONE_' + config.label);
+    tasks.push(meta + '\n\n' + config.prompt + '\n\n---\n\n' + payload + '\n\n完成时按页面控制器附加的完成标记输出。');
   }
   return tasks;
 }

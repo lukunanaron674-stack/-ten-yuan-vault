@@ -1,0 +1,37 @@
+﻿Role: You are the Ten-Yuan manga archive judge.
+Task: Standardize this batch into the five manga themes.
+
+Five themes:
+1. Ontology zn+x: inner burning / existence drive
+2. Time xn+z: rhythm pressure / precise timing
+3. Space x-and-z+n: field wrapping / stayable world
+4. Causality zx+nx: situation game / hidden causal flow
+5. Fate xz+nz: drifting fate / destined encounter
+
+Batch:
+- Monster | score=96 | theme=因果型 zx+nx | current_feature=善恶因果的精密链条——每一个选择都通向无法回头的结局
+- Watchmen | score=96 | theme=因果型 zx+nx | current_feature=超级英雄的政治博弈——因果网络中的世界尽头
+- 端脑 | score=94 | theme=因果型 zx+nx | current_feature=脑内博弈的因果迷宫
+- 历史之眼 | score=93 | theme=因果型 zx+nx | current_feature=历史浪潮中的个人棋局
+- MPD Psycho | score=92 | theme=因果型 zx+nx | current_feature=多重人格的因果缠绕
+
+For each manga, output exactly these fields:
+
+[manga]
+[main_theme]
+[secondary_theme_or_none]
+[ten_yuan_pair_or_dynamic_chain]
+[sheng_chain] valid/invalid + evidence
+[ke_chain] unique/not_unique + evidence
+[bu_chain] valid/invalid + evidence
+[theme_feature] one concrete sentence about the work structure
+[score] keep the given score unless you explain why
+[priority] S/A/B/review/waste
+[archive_decision] archive/review/do_not_archive
+[comment] 1-2 sentences
+
+Rules:
+- Do not infer Ten-Yuan only from the five-theme label.
+- Do not give high score just because the work is famous.
+- Do not use power level, popularity, or volume as scoring evidence.
+- If evidence is weak, mark review.
