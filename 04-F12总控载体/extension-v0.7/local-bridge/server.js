@@ -101,6 +101,38 @@ function nowFileStamp() {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}_${pad(d.getHours())}-${pad(d.getMinutes())}-${pad(d.getSeconds())}`;
 }
 
+function safeVaultPath(targetPath) {
+  const raw = String(targetPath || '').trim();
+  if (!raw) return null;
+  const normalized = raw
+    .replace(/\\/g, '/')
+    .replace(/^\/+/, '')
+    .split('/')
+    .map(part => part.trim())
+    .filter(Boolean)
+    .join('/');
+  if (!normalized) return null;
+  const parts = normalized.split('/');
+  if (parts.some(part => part === '.' || part === '..')) throw new Error('Invalid archive target path');
+  if (parts.some(part => /[<>:"|?*\r\n\t]/.test(part))) throw new Error('Invalid archive target path');
+  const fullPath = path.resolve(VAULT_ROOT, normalized);
+  if (fullPath !== VAULT_ROOT && !fullPath.startsWith(VAULT_ROOT + path.sep)) {
+    throw new Error('Archive target path outside vault');
+  }
+  return { relativePath: normalized, fullPath };
+}
+
+function uniqueFilePath(filePath) {
+  if (!fs.existsSync(filePath)) return filePath;
+  const parsed = path.parse(filePath);
+  let index = 2;
+  while (true) {
+    const candidate = path.join(parsed.dir, `${parsed.name}-${index}${parsed.ext || '.md'}`);
+    if (!fs.existsSync(candidate)) return candidate;
+    index += 1;
+  }
+}
+
 function archiveMarkdown(body) {
   const createdAt = new Date().toISOString();
   const title = sanitizeFilePart(body.title || 'F12归档');
@@ -108,8 +140,16 @@ function archiveMarkdown(body) {
   const total = Number(body.total || 0);
   const tabId = sanitizeFilePart(body.tabId || 'tab');
   const fileName = `${nowFileStamp()}_tab-${tabId}_R${round || 0}-${total || 0}_${title}.md`;
-  fs.mkdirSync(ARCHIVE_DIR, { recursive: true });
-  const filePath = path.join(ARCHIVE_DIR, fileName);
+  const target = safeVaultPath(body.targetPath || body.archivePath || '');
+  let filePath;
+  if (target && path.extname(target.fullPath).toLowerCase() === '.md') {
+    filePath = uniqueFilePath(target.fullPath);
+  } else if (target) {
+    filePath = path.join(target.fullPath, fileName);
+  } else {
+    filePath = path.join(ARCHIVE_DIR, fileName);
+  }
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
   const task = String(body.task || '').trim();
   const text = String(body.text || '').trim();
   const md = [
@@ -121,6 +161,7 @@ function archiveMarkdown(body) {
     `total: ${total}`,
     `title: ${String(body.title || '').replace(/\r?\n/g, ' ')}`,
     `url: ${body.url || ''}`,
+    `targetPath: ${target ? target.relativePath : path.relative(VAULT_ROOT, ARCHIVE_DIR).replace(/\\/g, '/')}`,
     '---',
     '',
     `# F12 Archive R${round || 0}/${total || 0} - ${body.title || "Untitled"}`,
@@ -136,11 +177,28 @@ function archiveMarkdown(body) {
   ].join('\n');
   fs.writeFileSync(filePath, md, 'utf8');
   const relativePath = path.relative(VAULT_ROOT, filePath).replace(/\\/g, '/');
-  const record = { createdAt, path: filePath, relativePath, tabId: body.tabId || '', round, total, title: body.title || '' };
+  const record = { createdAt, path: filePath, relativePath, tabId: body.tabId || '', round, total, title: body.title || '', targetPath: body.targetPath || body.archivePath || '' };
   state.archives = state.archives || [];
   state.archives.push(record);
   saveState();
   return record;
+}
+
+function logArchiveSuccess(record, body = {}) {
+  const time = new Date().toLocaleTimeString();
+  console.log('\n========================================');
+  console.log(`[${time}] Archive saved`);
+  console.log(`Round: R${body.round || record.round || '?'}/${body.total || record.total || '?'}`);
+  console.log(`Path: ${record.relativePath || record.path || '(unknown)'}`);
+  if (record.targetPath) console.log(`Target: ${record.targetPath}`);
+  console.log('========================================\n');
+}
+
+function logArchiveFailure(error) {
+  console.log('\n========================================');
+  console.log('Archive failed');
+  console.log(`Reason: ${error.message}`);
+  console.log('========================================\n');
 }
 
 function enqueue(type, payload = {}) {
@@ -195,10 +253,16 @@ const server = http.createServer(async (req, res) => {
     }
 
     if (req.method === 'POST' && url.pathname === '/archive') {
-      const body = await readBody(req);
-      if (!String(body.text || '').trim()) return send(res, 400, { ok: false, error: 'Missing archive text' });
-      const record = archiveMarkdown(body);
-      return send(res, 200, { ok: true, ...record });
+      try {
+        const body = await readBody(req);
+        if (!String(body.text || '').trim()) return send(res, 400, { ok: false, error: 'Missing archive text' });
+        const record = archiveMarkdown(body);
+        logArchiveSuccess(record, body);
+        return send(res, 200, { ok: true, ...record });
+      } catch (error) {
+        logArchiveFailure(error);
+        return send(res, 500, { ok: false, error: error.message });
+      }
     }
 
     if (req.method === 'GET' && url.pathname === '/commands/next') {
@@ -286,6 +350,7 @@ if (req.method === 'DELETE' && url.pathname === '/commands') {
 
     return send(res, 404, { ok: false, error: 'Not found' });
   } catch (error) {
+    if (req.url && req.url.startsWith('/archive')) logArchiveFailure(error);
     return send(res, 500, { ok: false, error: error.message });
   }
 });
@@ -293,4 +358,5 @@ if (req.method === 'DELETE' && url.pathname === '/commands') {
 server.listen(PORT, HOST, () => {
   console.log(`[bridge] Ten Yuan F12 Local Bridge listening at http://${HOST}:${PORT}`);
   console.log('[bridge] Keep this window open while controlling Edge F12.');
+  console.log(`[bridge] Archive target vault: ${VAULT_ROOT}`);
 });

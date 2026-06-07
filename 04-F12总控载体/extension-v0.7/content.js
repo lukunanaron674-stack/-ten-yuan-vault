@@ -162,6 +162,31 @@
     return siteKind() === 'lazyman';
   }
 
+  function isLazyManDialogControl(el) {
+    if (!el) return false;
+    const dialog = el.closest?.('.ant-modal,[role="dialog"]');
+    if (!dialog) return false;
+    const label = `${textOf(el)} ${el.getAttribute('aria-label') || ''} ${el.getAttribute('title') || ''}`;
+    return hasAny(label, ['确定', '确 定', '取消', '取 消', 'ok', 'cancel', 'close']);
+  }
+
+  async function closeLazyManBlockingModal() {
+    if (!isLazyManSite()) return false;
+    const dialogs = queryVisible(['.ant-modal', '[role="dialog"]']);
+    const dialog = dialogs.find(el => /权限检查失败|Failed to fetch|消息发送失败|请稍后重试/i.test(textOf(el)));
+    if (!dialog) return false;
+    const button = [...dialog.querySelectorAll('button,[role="button"]')]
+      .filter(visible)
+      .find(el => /确定|确 定|OK|ok|Close|close|取消|取 消/.test(`${textOf(el)} ${el.getAttribute('aria-label') || ''}`));
+    if (button) {
+      dispatchUserClick(button);
+      await sleep(450);
+      report('LAZYMAN_MODAL_CLOSED', textOf(dialog).slice(0, 120));
+      return true;
+    }
+    return false;
+  }
+
   const CJK = {
     search: '\u641c\u7d22',
     chat: '\u804a\u5929',
@@ -409,6 +434,9 @@
     const candidates = queryVisible([
       'textarea',
       'input[type="text"]',
+      'div.ProseMirror[contenteditable="true"]',
+      '[data-slate-editor="true"]',
+      '[class*="ProseMirror"][contenteditable="true"]',
       '[contenteditable="true"]',
       '[role="textbox"]'
     ]).filter(el => {
@@ -421,6 +449,15 @@
       const br = b.getBoundingClientRect();
       return br.bottom - ar.bottom || br.right - ar.right;
     });
+
+    const composerLike = candidates.find(el => {
+      const rect = el.getBoundingClientRect();
+      const cls = String(el.className || '').toLowerCase();
+      return rect.width >= 260
+        && rect.height >= 36
+        && (cls.includes('prosemirror') || el.isContentEditable || el.getAttribute('role') === 'textbox');
+    });
+    if (composerLike) return composerLike;
 
     const explicit = candidates.find(el => {
       const label = `${el.getAttribute('placeholder') || ''} ${el.getAttribute('aria-label') || ''} ${el.getAttribute('title') || ''}`;
@@ -436,8 +473,17 @@
   }
 
   function findLazyManSendButtonV2() {
-    const hardAntdSend = [...document.querySelectorAll('button.ant-btn-primary.ant-btn-compact-first-item:not(.ant-btn-compact-last-item)')]
+    const hardAntdSend = [...document.querySelectorAll([
+      'button.ant-btn-primary.ant-btn-compact-first-item:not(.ant-btn-compact-last-item)',
+      'button.ant-btn-primary:not(.ant-btn-compact-last-item)',
+      'button[class*="ant-btn-primary"][class*="compact-first"]:not([class*="compact-last"])'
+    ].join(','))]
       .filter(el => visible(el) && notKernel(el) && !el.disabled && el.getAttribute('aria-disabled') !== 'true')
+      .filter(el => !isLazyManDialogControl(el))
+      .filter(el => {
+        const label = `${textOf(el)} ${el.getAttribute('aria-label') || ''} ${el.getAttribute('title') || ''} ${el.className || ''}`;
+        return !hasAny(label, [CJK.search, CJK.newItem, CJK.attach, CJK.upload, CJK.close, CJK.cancel, 'search', 'upload', 'attach', 'new topic']);
+      })
       .sort((a, b) => {
         const ar = a.getBoundingClientRect();
         const br = b.getBoundingClientRect();
@@ -460,11 +506,12 @@
       return besideComposer || belowComposer;
     };
     const isBadLazyManButton = el => {
+      if (isLazyManDialogControl(el)) return true;
       const label = `${textOf(el)} ${el.getAttribute('aria-label') || ''} ${el.getAttribute('title') || ''} ${el.className || ''}`;
       if (hasAny(label, [
         CJK.search, CJK.newItem, CJK.attach, CJK.upload, CJK.close, CJK.cancel,
         CJK.clear, CJK.prev, CJK.next, CJK.jump,
-        'search', 'upload', 'attach', 'clear', 'close', 'cancel', 'next', 'previous',
+        'search', 'upload', 'attach', 'clear', 'close', 'cancel', 'ok', 'next', 'previous',
         'jump', 'new topic', 'new chat', 'new conversation'
       ])) return true;
       if (/开启新话题|新话题|新建话题/.test(label)) return true;
@@ -565,6 +612,84 @@
     const text = node ? textOf(node) : '';
     if (text) return text;
     return getLastReadableBlockText();
+  }
+
+  function getLazyManMarkerMatch(marker, baseline) {
+    const wanted = String(marker || '');
+    if (!wanted || !isLazyManSite()) return { count: 0, text: '' };
+
+    let count = 0;
+    let latestText = '';
+
+    const title = String(document.title || '').trim();
+    if (title.includes(wanted) && !isPromptEchoText(title)) {
+      count += 1;
+      latestText = title;
+    }
+
+    const candidates = queryVisible([
+      'main article',
+      '[role="main"] article',
+      'article',
+      '[class*="message"]',
+      '[class*="Message"]',
+      '[class*="answer"]',
+      '[class*="reply"]',
+      '[class*="bubble"]',
+      '[class*="Bubble"]',
+      '[class*="markdown"]',
+      '[class*="prose"]'
+    ])
+      .filter(el => !el.closest('button,textarea,input,select,option,[contenteditable="true"]'))
+      .map(el => ({ el, text: textOf(el) }))
+      .filter(item => item.text.includes(wanted))
+      .filter(item => !isPromptEchoText(item.text))
+      .filter(item => !/Ten Yuan (?:Page Kernel|F12)|十元 F12 页面控制器/i.test(item.text))
+      .sort((a, b) => {
+        const pos = a.el.compareDocumentPosition(b.el);
+        return pos & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1;
+      });
+
+    count += candidates.length;
+    if (candidates.length) latestText = candidates[candidates.length - 1].text;
+
+    const baselineCount = Number(baseline?.lazyManMarkerCount || 0);
+    if (count > baselineCount) return { count, text: latestText };
+    return { count, text: '' };
+  }
+
+  function lazyManReplyBlocks() {
+    if (!isLazyManSite()) return [];
+    return queryVisible([
+      'main article',
+      '[role="main"] article',
+      'article',
+      '[class*="message"]',
+      '[class*="Message"]',
+      '[class*="answer"]',
+      '[class*="reply"]',
+      '[class*="bubble"]',
+      '[class*="Bubble"]'
+    ])
+      .filter(el => !el.closest('button,textarea,input,select,option,[contenteditable="true"]'))
+      .map(el => ({ el, text: textOf(el) }))
+      .filter(item => item.text.length >= 20)
+      .filter(item => !isPromptEchoText(item.text))
+      .filter(item => !/Ten Yuan (?:Page Kernel|F12)|十元 F12 页面控制器/i.test(item.text))
+      .filter(item => !/消息发送失败|Failed to fetch/i.test(item.text))
+      .sort((a, b) => {
+        const pos = a.el.compareDocumentPosition(b.el);
+        return pos & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1;
+      });
+  }
+
+  function getLazyManReplyMatch(baseline) {
+    const blocks = lazyManReplyBlocks();
+    const baselineCount = Number(baseline?.lazyManReplyCount || 0);
+    if (blocks.length > baselineCount) {
+      return { count: blocks.length, text: blocks[blocks.length - 1].text };
+    }
+    return { count: blocks.length, text: '' };
   }
 
   function getLastReadableBlockText() {
@@ -766,6 +891,8 @@
       userCount: userNodes().length,
       assistantCount: assistant.length,
       assistantSet: new WeakSet(assistant),
+      lazyManMarkerCount: getLazyManMarkerMatch(markerFor(index, total)).count,
+      lazyManReplyCount: lazyManReplyBlocks().length,
       ts: Date.now()
     };
   }
@@ -806,6 +933,23 @@
       inputType: 'insertText',
       data: text
     }));
+    const inserted = textOf(input);
+    if (!inserted || inserted.length < Math.min(20, String(text || '').length)) {
+      input.focus();
+      input.innerHTML = '';
+      input.textContent = String(text || '');
+      input.dispatchEvent(new InputEvent('beforeinput', {
+        bubbles: true,
+        cancelable: true,
+        inputType: 'insertText',
+        data: text
+      }));
+      input.dispatchEvent(new InputEvent('input', {
+        bubbles: true,
+        inputType: 'insertText',
+        data: text
+      }));
+    }
     return true;
   }
 
@@ -847,11 +991,26 @@
 
   async function submitPrompt(input, sendButton) {
     if (isLazyManSite()) {
+      await closeLazyManBlockingModal();
       input.focus();
       const valueBefore = input.tagName === 'TEXTAREA' || input.tagName === 'INPUT'
         ? input.value
         : textOf(input);
       const userCountBefore = userNodes().length;
+      const bodyBefore = textOf(document.body);
+
+      let currentSendButton = sendButton || findLazyManSendButtonV2();
+      const waitUntil = Date.now() + 3000;
+      while ((!currentSendButton || currentSendButton.disabled || currentSendButton.getAttribute('aria-disabled') === 'true') && Date.now() < waitUntil) {
+        await sleep(150);
+        currentSendButton = findLazyManSendButtonV2();
+      }
+
+      if (currentSendButton && !currentSendButton.disabled && currentSendButton.getAttribute('aria-disabled') !== 'true') {
+        dispatchUserClick(currentSendButton);
+        await sleep(500);
+      }
+
       const eventInit = {
         bubbles: true,
         cancelable: true,
@@ -864,13 +1023,14 @@
       input.dispatchEvent(new KeyboardEvent('keypress', eventInit));
       input.dispatchEvent(new KeyboardEvent('keyup', eventInit));
       await sleep(350);
-      if (sendButton && !sendButton.disabled && sendButton.getAttribute('aria-disabled') !== 'true') {
+      currentSendButton = findLazyManSendButtonV2() || currentSendButton;
+      if (currentSendButton && !currentSendButton.disabled && currentSendButton.getAttribute('aria-disabled') !== 'true') {
         const currentValue = input.tagName === 'TEXTAREA' || input.tagName === 'INPUT'
           ? input.value
           : textOf(input);
-        if (String(currentValue || '').trim()) dispatchUserClick(sendButton);
+        if (String(currentValue || '').trim()) dispatchUserClick(currentSendButton);
       }
-      const deadline = Date.now() + 2600;
+      const deadline = Date.now() + 5200;
       let valueAfter = input.tagName === 'TEXTAREA' || input.tagName === 'INPUT'
         ? input.value
         : textOf(input);
@@ -881,6 +1041,7 @@
         if (!String(valueAfter || '').trim()) return true;
         if (valueAfter.length < valueBefore.length * 0.2) return true;
         if (userNodes().length > userCountBefore) return true;
+        if (textOf(document.body).length > bodyBefore.length + Math.min(80, String(valueBefore || '').length * 0.1)) return true;
         await sleep(180);
       }
       return !String(valueBefore || '').trim() || !String(valueAfter || '').trim() || valueAfter.length < valueBefore.length * 0.2;
@@ -1282,6 +1443,36 @@
       if (destroyed || shouldStop) return { done: false, reason: 'stopped' };
       if (cancelToken !== myCancelToken) return { done: false, reason: 'cancelled' };
 
+      const lazyManMarker = getLazyManMarkerMatch(ctx.marker, ctx.baseline);
+      if (lazyManMarker.text) {
+        if (!sawMarkerAt) {
+          sawMarkerAt = Date.now();
+          report('LAZYMAN_MARKER_SEEN', ctx.marker);
+        }
+
+        const quiet = Date.now() - lastMutationAt >= SETTLE_MS;
+        const markerSettled = Date.now() - sawMarkerAt >= SETTLE_MS;
+        if (quiet && markerSettled) {
+          try { observer.disconnect(); } catch {}
+          observer = null;
+          lockedAssistant = null;
+          report('ROUND_DONE', `${ctx.marker} via LazyMan fallback`);
+          return { done: true, text: lazyManMarker.text, marker: ctx.marker };
+        }
+      }
+
+      const lazyManReply = getLazyManReplyMatch(ctx.baseline);
+      if (lazyManReply.text && Date.now() - start >= 8000) {
+        const quiet = Date.now() - lastMutationAt >= SETTLE_MS;
+        if (quiet) {
+          try { observer.disconnect(); } catch {}
+          observer = null;
+          lockedAssistant = null;
+          report('ROUND_DONE', `${ctx.marker} via LazyMan stable reply fallback`);
+          return { done: true, text: lazyManReply.text, marker: ctx.marker, markerMissing: true };
+        }
+      }
+
       if (!sawUser && userNodes().length > ctx.baseline.userCount) {
         sawUser = true;
         report('USER_POSTED', `userCount=${userNodes().length}`);
@@ -1350,6 +1541,7 @@
     report('TASK_START', `Start R${index + 1}/${total} mode=${mode}`);
 
     try {
+      if (isLazyManSite()) await closeLazyManBlockingModal();
       const input = findInput();
       if (!input) {
         isRunning = false;

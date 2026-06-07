@@ -258,6 +258,12 @@ function looseMarker(text) {
   return { round: Number(match[1]), total: Number(match[2]), finalLine: match[0] };
 }
 
+function archiveTargetPath(text) {
+  const match = String(text || '').match(/^\s*---\s*归档\s*[:：]\s*(.+?)\s*$/m);
+  if (!match) return '';
+  return match[1].trim().replace(/^["'“”‘’]+|["'“”‘’]+$/g, '');
+}
+
 function markerArchive(text, args) {
   const marker = String(args.archiveMarker || '').trim();
   const value = String(text || '').trim();
@@ -271,7 +277,8 @@ function markerArchive(text, args) {
     text: value,
     source: 'archive-marker',
     terminal: false,
-    archiveMarker: marker
+    archiveMarker: marker,
+    targetPath: archiveTargetPath(value)
   };
 }
 
@@ -358,6 +365,7 @@ async function inspectTab(tab, args, watchState) {
     url: page.href || tab.url || '',
     round: done.round,
     total: done.total,
+    targetPath: done.targetPath || '',
     task: `Archive watcher detected ${done.finalLine} via ${reason}.`,
     text: done.text
   });
