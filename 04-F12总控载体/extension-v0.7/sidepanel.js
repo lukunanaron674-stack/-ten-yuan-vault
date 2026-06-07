@@ -844,23 +844,29 @@ function findTaskDoneMarker(text){
   }
   return null;
 }
+function findArchiveTargetPath(text){
+  const value=String(text||'');
+  const match=value.match(/^\s*---\s*归档\s*[:：]\s*(.+?)\s*$/m);
+  if(!match)return '';
+  return match[1].trim().replace(/^["'“”‘’]+|["'“”‘’]+$/g,'');
+}
 function findArchiveCandidate(page,marker){
   for(const c of archiveTextCandidates(page)){
     if(c.text.includes(marker)){
       const done=findTaskDoneMarker(c.text)||{round:0,total:0,line:marker,terminal:false};
-      return{...done,text:c.text,source:c.label,reason:'触发词 '+marker};
+      return{...done,text:c.text,source:c.label,reason:'触发词 '+marker,targetPath:findArchiveTargetPath(c.text)};
     }
   }
   for(const c of archiveTextCandidates(page)){
     const done=findTaskDoneMarker(c.text);
     if(done&&done.total>0&&done.round===done.total){
-      return{...done,text:c.text,source:c.label,reason:'最终轮 TASK_DONE'};
+      return{...done,text:c.text,source:c.label,reason:'最终轮 TASK_DONE',targetPath:findArchiveTargetPath(c.text)};
     }
   }
   for(const c of archiveTextCandidates(page)){
     if(/归档|档案|总结|阶段总结|收束|封存|总表|总览|CarryPacket/i.test(c.text)){
       const done=findTaskDoneMarker(c.text)||{round:0,total:0,line:'archive-keyword',terminal:false};
-      return{...done,text:c.text,source:c.label,reason:'归档关键词'};
+      return{...done,text:c.text,source:c.label,reason:'归档关键词',targetPath:findArchiveTargetPath(c.text)};
     }
   }
   return null;
@@ -895,6 +901,7 @@ async function doArchiveWatchOnce(){
         url,
         round,
         total,
+        targetPath:candidate.targetPath||'',
         task:'边栏监听识别：'+candidate.reason+'；来源：'+candidate.source,
         text:candidate.text
       })
