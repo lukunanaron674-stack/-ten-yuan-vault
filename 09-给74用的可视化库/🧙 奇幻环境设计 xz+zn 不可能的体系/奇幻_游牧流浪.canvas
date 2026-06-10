@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "🎪 游牧/流浪\nxz+n 边缘+容器\n\n不在任何地方扎根\n容器是流动的\n游牧不是没有家\n是家随人走——移动本身就是定居",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_xz",
+      "type": "text",
+      "text": "xz（边缘/漂流）\n核心\n\n游牧者的xz不是被迫的\n是选择的——\n留在边缘是因为\n中心不值得停留",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "ty_n",
+      "type": "text",
+      "text": "n（容器/承载）\n核心\n\n游牧的n不是建筑\n是帐篷/马车/骆驼\n——容器可移动\n但承载的功能一样\n家就是背上的东西",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_zn",
+      "type": "text",
+      "text": "zn（意义/信念）\n基底\n\n游牧者的意义不在土地上\n在传统/歌谣/星象\n——他们不需要建筑来承载意义\n意义在他们行走的路线里",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "ty_x",
+      "type": "text",
+      "text": "x（欲望/吞噬）\n暗面\n\n沙漠会吞噬游牧者\n游牧者的生存就是和x的博弈\n——水源/食物/方向\n错了就是死",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "📚 沙丘·弗雷曼人\nxz+n+zn\n\n弗雷曼不是住在沙漠\n是和沙漠共生\n他们的n（蒸馏服/洞穴）\n和zn（沙虫/生命之水）\n是在xz中长出来的",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "📚 魔戒·罗翰\nxz+n+zx\n\n罗翰人是草原的游牧者\n他们的n是马\nzx是骑兵冲锋的姿态\n——游牧者的执行力最强",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎮 地平线·游民营地\nxz+n\n\n游牧者的营地\n是最美的奇幻空间——\n帐篷/篝火/兽皮/星河\nn在移动中保持了温度",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 游牧/流浪的视觉设计原则\n\n① 游牧者的建筑不是建筑——是「可以拆走的家」。帐篷/毡房/车帐是最美的流动性容器\n② 色彩：大自然色（土/褐/白/蓝）——游牧者不染色自然的颜色\n③ 最重要的元素：路线。游牧者的空间不是点——是线。地图上的迁徙路线就是他们的文明\n④ 光的用法：篝火是游牧者的太阳。夜晚的篝火圈就是家的边界——圈内是n，圈外是xz",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 游牧/流浪的常见误判\n\n🔴 游牧=贫穷/落后\n→ 游牧是一种生存策略——不是技术落后是选择了不同的技术路径\n\n🔴 游牧=自由\n→ 游牧者不自由——他们被自然/季节/水源的规则约束。自由是外面的看法\n\n🔴 流浪=没有家\n→ 流浪者的家不是建筑——是路线。走过的路就是他们的街道",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n游牧者不是没有家\n是家的定义不一样\n——对游牧者来说\n「回去」不是回到一个地方\n是回到一条路上\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xz",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_n",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zn",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_x",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}

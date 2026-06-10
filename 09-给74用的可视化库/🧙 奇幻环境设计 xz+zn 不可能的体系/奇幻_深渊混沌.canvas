@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "🌊 深渊/混沌\nxz+x 边缘+吞噬\n\n边缘被吞噬，意义消失\n深渊是奇幻中最纯粹的威胁\n——它不是邪恶\n是「什么都不在乎」",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_xz",
+      "type": "text",
+      "text": "xz（边缘/漂流）\n核心\n\n深渊本身就是终极边缘\n没有底/没有方向/没有边界\n掉进去就是永远坠落\n——xz被无限放大",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "ty_x",
+      "type": "text",
+      "text": "x（欲望/吞噬）\n核心\n\n深渊在吞\n光/声音/生命/希望\n——它不是「想要」吞\n是「必须」吞\n吞噬就是它存在的唯一方式",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "ty_n",
+      "type": "text",
+      "text": "n（容器）\n反转\n\n深渊也是容器\n但它在装什么？\n——它装的是被吞噬的一切\n这个容器没有底",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_xbz",
+      "type": "text",
+      "text": "x并z（伪装）\n暗面\n\n深渊有时候看起来很美\n发光的深渊/星空的深渊\n——那是最危险的\n因为你在被吞噬前\n会觉得它很美",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "📚 克苏鲁神话\nxz+x+zn\n\n深渊不只是深渊——\n它有意志\n不可名状的意志\n它的存在本身就在\n瓦解你所有的xn",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "🎬 湮灭\nxz+x\n\n闪光不是外星人\n是深渊——\n它在折射/重组/吞噬\n所有进入它的东西\n包括你的身份",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎮 黑暗之魂·深渊\nxz+n\n\n魂的深渊不是欲望\n是遗忘——\n被深渊吞噬的人\n不是死了\n是「不再被记得」",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 深渊/混沌的视觉设计原则\n\n① 深渊不是黑的——是「光到不了的颜色」。可以墨蓝/深紫/纯黑但不是黑色\n② 深渊的形态：没有边界。画面边缘应该延伸到画框外——让人感觉深渊无限大\n③ 深渊中不该有可辨认的形状。一旦有形状——深渊就有了规则(xn)，深渊就不再是深渊\n④ 凝视深渊的构图：让深渊占画面70%以上。人物在边缘——xz中的xz",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 深渊/混沌的常见误判\n\n🔴 深渊=反派总部\n→ 深渊不是老巢——是一个状态。不是你去深渊，是深渊在接近你\n\n🔴 深渊=黑暗\n→ 黑暗是xn（规则的缺失）。深渊是xz+x——边缘在吞噬\n\n🔴 深渊=邪恶\n→ 邪恶是有意志的。深渊没有意志——它不在乎善恶",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n深渊不邪恶\n——邪恶至少在乎你\n深渊只是\n不在乎\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xz",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_x",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_n",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xbz",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}

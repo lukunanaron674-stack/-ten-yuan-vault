@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "💀 亡灵/诅咒\nnx+x 暗账+欲望\n\n死亡的暗账与未完的欲望\n亡灵不是「死了还动」\n是「账没算完所以走不了」",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_nx",
+      "type": "text",
+      "text": "nx（暗账/结算）\n核心\n\n亡灵之所以是亡灵\n是因为有账没算完\n——未尽的仇/未还的情/未完成的誓言\n死亡不是终点，结算才是",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "ty_x",
+      "type": "text",
+      "text": "x（欲望/吞噬）\n核心\n\n亡灵的欲望是被打断的\n——他们还想吃/想爱/想活\n这种未完的欲望\n就是他们存在的燃料",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "ty_nz",
+      "type": "text",
+      "text": "nz（守望/等待）\n反转\n\n亡灵在等什么？\n等结算/等释怀/等被遗忘\n——nz在亡灵这里\n变成了「等不到」",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "ty_zn",
+      "type": "text",
+      "text": "zn（意义/信念）\n残留\n\n亡灵还残留着\n生前的zn\n——但他们已经不相信了\n亡灵是最悲伤的zn容器",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "🎬 第六感\nnx+nz\n\n亡灵不知道自己死了\n在等一个完成\n——最温柔的亡灵故事\nnx变成了nz",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "🎮 寂静岭\nnx+x\n\n寂静岭不是小镇\n是nx的空间化\n——每个人的罪恶都在这里\n等被结算\n三角头不是怪物是会计",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "📚 墨西哥亡灵节文化\nnz+nx\n\n亡灵节不是恐怖\n是亡灵和生者\n一起nz\n——等一年一次的见面\n账清了，只剩下等待",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 亡灵/诅咒的视觉设计原则\n\n① 亡灵不该可怕——该可悲。他们的姿态不是在攻击，是在「还没走完」的中间状态\n② 色彩：不是黑白的——是褪色的。亡灵世界的颜色像旧照片\n③ 最重要的设计技巧：亡灵的眼睛。不是空洞——是「还有东西在里面」但看不清是什么\n④ 亡灵的空间：亡灵需要一个「等待的空间」——车站/码头/走廊/门（还没开的门）",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 亡灵/诅咒的常见误判\n\n🔴 亡灵=僵尸\n→ 僵尸是身体还在动但灵魂没了。亡灵是灵魂还没走\n\n🔴 亡灵=邪恶\n→ 亡灵不邪恶——是有账没算完。算完账的亡灵就走了\n\n🔴 诅咒=惩罚\n→ 诅咒不是惩罚是「绑住」。不让走/不让结束/不让释怀",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n亡灵不是害怕离开\n是还没等到\n那个可以让他们离开的答案\n——死亡不是结束\n「被遗忘」才是\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_nx",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_x",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_nz",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zn",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}

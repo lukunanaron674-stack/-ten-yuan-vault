@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "🏛️ 乌托邦/仙境\nzn+x并z 意义+伪装\n\n看起来完美的世界\n但那是壳\n乌托邦太美了\n让你不想问代价",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_zn",
+      "type": "text",
+      "text": "zn（意义/信念）\n核心\n\n乌托邦的一切都有意义\n每座建筑每条法律\n都在说「这样是对的」\n——但谁说对？",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "ty_xbz",
+      "type": "text",
+      "text": "x并z（伪装/表面）\n核心\n\n乌托邦的本质是x并z\n表面完美里面不一定\n仙境的美本身就是最大的欺骗",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "ty_xn",
+      "type": "text",
+      "text": "xn（规则/秩序）\n基底\n\n乌托邦必须有极严格的xn\n没有规则就没有完美\n——问题是这套规则为谁设计？",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_nx",
+      "type": "text",
+      "text": "nx（暗账/结算）\n暗面\n\n每个乌托邦的背面都是nx\n——谁在维护这个完美？\n代价由谁支付？",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "📚 美丽新世界\nxn+x并z\n\n最经典的xn+x并z乌托邦\n规则让一切完美\n快乐是强制的\n痛苦是非法的\n这是完美的代价",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "🎬 哈尔的移动城堡\nx并z+zn\n\n荒野女巫的仙境\n看起来华丽\n实际上是她被诅咒后\n给自己造的壳",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎮 旷野之息\nzn+n\n\n海拉尔不是乌托邦\n但废墟在告诉你\n这里曾经是乌托邦\n逝去的完美更打动人",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 乌托邦/仙境的视觉设计原则\n\n① 色彩：饱和度偏高但不是刺眼——像滤镜过度的照片\n② 建筑：太整齐了。每棵树间距相等。自然被几何化了\n③ 人物：笑容很标准但眼睛不笑——那是x并z的裂缝\n④ 最重要的技巧：画面里藏一个不完美的东西。一朵枯花/一条裂痕——那是整个故事的门",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 乌托邦/仙境的常见误判\n\n🔴 乌托邦=理想世界\n→ 乌托邦不是你想住的地方——是让你怀疑「完美本身」的地方\n\n🔴 仙境=梦幻美丽\n→ 仙境可以很美也可以很恐怖（爱丽丝的红心皇后）\n\n🔴 乌托邦的反面=反乌托邦\n→ 乌托邦和反乌托邦是同一张纸的两面。反乌托邦只是乌托邦的伪装破了",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n乌托邦不是完美的世界\n是你不敢问代价的世界\n——仙境的门票\n是你的怀疑\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zn",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xbz",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xn",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_nx",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}

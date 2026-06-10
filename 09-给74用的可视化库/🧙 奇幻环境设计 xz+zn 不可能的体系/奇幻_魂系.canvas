@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "🖤 魂系\nxz+n 边缘+容器\n\n孤独的重压\n在诅咒中寻找出口\n魂系不是难——\n是「每一步都在对抗遗忘」",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_xz",
+      "type": "text",
+      "text": "xz（边缘/漂流）\n核心\n\n魂系的主角永远是边缘者\n不死人/褪色者/猎人\n——被时代遗忘的人\n在世界的边缘爬行",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "ty_n",
+      "type": "text",
+      "text": "n（容器/承载）\n核心\n\n魂系的世界是最大的n\n——篝火/传火祭祀场/圆桌\n这些容器承载着\n玩家在崩溃中唯一的锚点",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_zx",
+      "type": "text",
+      "text": "zx（目标/执行）\n沉默驱动\n\n魂的角色很少说话\n但他们一直在执行\n——传火/弑神/寻王\nzx在此表现为「不停脚步」",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_nz",
+      "type": "text",
+      "text": "nz（守望/等待）\n基底\n\n魂的世界在等什么？\n等一个能传火的人\n等一个能结束循环的人\n——所有角色都在nz\n包括玩家",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "🎮 黑暗之魂\nxz+n+zx\n\n传火不是目标——\n是xz中的zx\n——你不是想传火\n是只有传火这一条路\nn是篝火\nnz是防火女",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "🎮 艾尔登法环\nxz+zn\n\n交界地曾经有zn（黄金律法）\n但现在碎了\n褪色者是在zn的废墟上\n建立自己的xz",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎮 只狼\nzx+xz+nx\n\n狼不是边缘人——\n他有明确的zx（救主君）\n但他被投入了xz（无法回头的命运）\nnx是每一次死亡后的结算",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 魂系的视觉设计原则\n\n① 光在魂系中不是照亮——是「从黑暗中抢夺空间」。烛光/篝火/魔法光都只照亮需要被看见的\n② 建筑尺度：一切都比你大。魂系建筑的体量感是为了让你觉得「我不属于这里」\n③ 色彩：低饱和度/高对比。世界是褪色的——只有血/火/黄金保持高饱和\n④ 最重要的设计技巧：远景可见但不可达。看到远处的城堡但要走两个小时才能到——那是xz的视觉化",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 魂系的常见误判\n\n🔴 魂系=难\n→ 难是表现不是灵魂。魂系的灵魂是xz+n——孤独中的承载\n\n🔴 魂系=黑暗\n→ 魂系不是黑暗是褪色。世界曾经有光/有颜色/有意义——它们还在，只是褪了\n\n🔴 魂系=战斗\n→ 战斗是手段不是目的。魂系的核心是探索——在边缘中一步一步往前走",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n不死人不是在寻找火焰\n是在寻找一个值得传火的理由\n——火从来没有熄灭\n熄灭的是\n「为什么要传火」的答案\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xz",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_n",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zx",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_nz",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}
