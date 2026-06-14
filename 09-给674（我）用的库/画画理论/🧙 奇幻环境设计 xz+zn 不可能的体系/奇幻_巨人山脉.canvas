@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "⛰️ 巨人/山脉\nn+xz 容器+边缘\n\n巨大沉默的承载者\n山脉不是地形\n是世界的骨骼\n巨人不是生物\n是山脉的意志有了形状",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_n",
+      "type": "text",
+      "text": "n（容器/承载）\n核心\n\n山脉是最大的容器\n承载天气/森林/洞穴/文明\n巨人不是住在山里\n是山通过巨人承载了自己",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_xz",
+      "type": "text",
+      "text": "xz（边缘/漂流）\n核心\n\n山脉本身就是xz\n难以跨越/不适合居住\n巨人在人类社会是边缘者\n——太大了所以不属于任何地方",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "ty_nz",
+      "type": "text",
+      "text": "nz（守望/等待）\n基底\n\n巨人在等什么？\n很多故事里巨人在沉睡（nz）\n他们在等该醒的时候\n——几百年的睡眠对巨人来说\n只是一个深呼吸",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "ty_zn",
+      "type": "text",
+      "text": "zn（意义/信念）\n残余\n\n远古巨人常被视为\n「上一个时代的zn」\n——他们承载着\n已经被遗忘的信念\n巨人沉睡=意义休眠",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "📚 冰与火·巨人\nn+xz\n\n维斯特洛的巨人\n不是怪物——\n是上一个纪元的残存\n他们在xz中等待冬天的回归",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "🎬 天空之城\nn+zn\n\n拉普达是巨人\n的另一种形态——\n山一样的飞行器\n承载了远古的zn\n在空中nz",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎮 旺达与巨像\nzx+xz\n\n巨像是行走的山脉\n旺达不是猎人\n是zx在执行\n而巨像在xz中沉睡\n——杀了巨像=杀了古神",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 巨人/山脉的视觉设计原则\n\n① 比例是巨人的全部语言。巨人的大小不是尺寸——是存在感。让观众通过小人/树木/建筑感受尺度\n② 巨人不是放大的人——他们的身体应该像地形。膝盖像山丘/头发像森林/呼吸像风\n③ 山脉的形态就是巨人的姿态。躺下的巨人就是山脉/站起来的山脉就是巨人\n④ 巨人的沉默是最有力的声音。巨人不需要说话——他们的存在本身就是宣言",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 巨人/山脉的常见误判\n\n🔴 巨人=大块头\n→ 巨人的大不是物理特征——是世界观特征。一个巨人的世界和人类的世界节奏不同\n\n🔴 巨人=敌人\n→ 巨人在大多数故事里不是敌人——是背景。巨人的问题不是「善不善良」是「醒没醒」\n\n🔴 山脉=风景\n→ 山脉是角色不是背景。在奇幻中山脉有自己的意志/记忆/名字",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n巨人不是在睡觉\n是在等世界\n长到配得上他们醒来\n——山脉从未移动\n但世界已经走过来了\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_n",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xz",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_nz",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zn",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}

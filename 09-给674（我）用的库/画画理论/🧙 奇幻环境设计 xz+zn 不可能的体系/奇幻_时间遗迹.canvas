@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "⏳ 时间/古代遗迹\nxz+nz 边缘+等待\n\n被遗忘的文明在等被重新发现\n时间遗迹不是废墟\n是「过去凝固成空间」的形态",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_xz",
+      "type": "text",
+      "text": "xz（边缘/漂流）\n核心\n\n遗迹是被时间边缘化的空间\n曾经是中心\n现在是角落\n——但它还在",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "ty_nz",
+      "type": "text",
+      "text": "nz（守望/等待）\n核心\n\n时间遗迹的本质是nz\n——它在等\n等人来/等被发现/等毁灭\n等一个不属于这个时代的结局",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "ty_n",
+      "type": "text",
+      "text": "n（容器/承载）\n基底\n\n遗迹是时间的容器\n它承载了过去的记忆\n文明的气息\n——空的空间比满的空间更重",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_zn",
+      "type": "text",
+      "text": "zn（意义/信念）\n残余\n\n遗迹里残留的zn\n是最悲伤的——\n意义还在\n但相信的人已经没了",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "📚 失落的亚特兰蒂斯\nxz+nz\n\n最经典的时间遗迹\n一个文明的全部\n只剩下一个传说在等\n——等它被找到或永远沉没",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "🎬 异形·工程师遗迹\nxz+nx\n\n工程师的遗迹\n不是等被发现——\n是在结算一笔\n跨星际的旧账（nx）",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎮 旷野之息·古代神庙\nxz+zn\n\n希卡神庙不是谜题\n是古代zn的残留——\n一万年前的信念\n凝固成了机关",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 时间/古代遗迹的视觉设计原则\n\n① 时间在空间上的痕迹是最重要的——风化的边缘/裂缝中的植物/变色的大理石\n② 光不是照亮遗迹的——光是「时间穿过遗迹的路径」。从破洞射入的光最有力量\n③ 尺度：古代遗迹应该比你大很多——让人产生「我在历史中如此渺小」的感觉\n④ 最关键的技巧：让遗迹看起来不像废弃的——像正在等主人回来",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 时间/古代遗迹的常见误判\n\n🔴 遗迹=废墟\n→ 废墟是被放弃的。遗迹是在等的。两者有本质区别\n\n🔴 古代=落后\n→ 古代遗迹的技术往往比现代更先进。时间不等于进步\n\n🔴 时间遗迹=考古\n→ 奇幻遗迹不是考古现场——是活着的过去。里面的机关还在转，魔法还在运行",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n古代遗迹不是在等待被理解\n是在等待\n那个唯一能理解它的人\n——你听到了吗？\n石头在呼吸\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xz",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_nz",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_n",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zn",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}

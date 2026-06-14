@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "🌅 远古/创世\nzn+xz 意义+边缘\n\n世界诞生之初\n意义还未被定义\n一切都有可能也都没有名字\n——创世是奇幻中最危险也最纯净的时刻",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_zn",
+      "type": "text",
+      "text": "zn（意义/信念）\n核心\n\n创世本身就是zn的具象化\n世界被创造\n是因为有人（或东西）\n认为它应该存在",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "ty_xz",
+      "type": "text",
+      "text": "xz（边缘/漂流）\n核心\n\n创世之初世界还没有中心\n一切都是边缘\n混沌本身就是一个巨大的xz",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "ty_z",
+      "type": "text",
+      "text": "z（冲动/显现）\n驱动力\n\n创世的冲动是z\n不是应该创造\n是不得不创造\n——光在黑暗中炸开",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "ty_n",
+      "type": "text",
+      "text": "n（容器/承载）\n基底\n\n创世后的世界需要n来承载\n大地/海洋/天空\n这些最初的容器\n决定了所有故事的可能",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "📚 精灵宝钻\nzn+z\n\n托尔金的创世——\n埃努的大乐章\n不是造物主下达命令\n是意义的音乐显形为世界",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "🎬 2001太空漫游\nxz→zn\n\n黑石碑的出现\n是创世在科幻中的显形\n——意义从边缘闯入世界",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎮 上古卷轴\nzn+xz\n\nNirn的创世\n是一个神的尸体变成了世界\n——zn死了\n但变成了最大的n",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 远古/创世的视觉设计原则\n\n① 色彩：创世不是彩色的——是单色到彩色的渐变。黑白灰→第一个颜色出现\n② 形态：创世场景不应该像画出来的——应该像正在被画的\n③ 尺度：没有尺度。创世中没有大小参照——因为没有「人」来比较\n④ 决定性瞬间：光的诞生——不仅仅是亮了，是「亮」本身被定义了",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 远古/创世的常见误判\n\n🔴 创世=有神\n→ 创世不一定有造物主。世界可以从混沌中自己形成\n\n🔴 创世=开始\n→ 创世可能不是开始——可能是循环的结束和开始\n\n🔴 远古=落后\n→ 远古时代的魔法不是简陋的——是原始的、未分化的、更纯粹的",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n最初的光不是照亮世界\n是让「世界」这个词\n第一次有了意义\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zn",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xz",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_z",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_n",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}

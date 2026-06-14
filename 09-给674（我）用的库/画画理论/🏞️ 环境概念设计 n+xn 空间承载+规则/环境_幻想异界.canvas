@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"root","type":"text","text":"🗺️ 幻想/异界\nxz+zn 边缘+意义\n\n不可能的空间\n幻想环境不是「现实+魔法」\n是「现实被重写后的世界」","x":400,"y":30,"width":320,"height":110,"color":"1"},
+		{"id":"ty_xz","type":"text","text":"xz（边缘/漂流）\n核心\n\n幻想世界本身就是xz\n——它不在你的日常里\n你无法通过已知经验\n来理解它的规则","x":80,"y":190,"width":230,"height":150,"color":"2"},
+		{"id":"ty_zn","type":"text","text":"zn（意义/信念）\n核心\n\n幻想世界有自己的意义体系\n——重力/时间/道德可能都不同\n但它在自己的规则内\n是自洽的","x":340,"y":190,"width":230,"height":150,"color":"3"},
+		{"id":"ty_n","type":"text","text":"n（容器/承载）\n基底\n\n幻想世界是最大的n\n——它必须足够大\n才能容纳那些\n在现实中不可能发生的故事","x":600,"y":190,"width":230,"height":150,"color":"4"},
+		{"id":"ty_x","type":"text","text":"x（欲望/吞噬）\n暗面\n\n幻想世界的欲望是什么？\n——它想被你相信\n一个幻想世界如果没有人相信\n它就会消失","x":860,"y":190,"width":230,"height":150,"color":"5"},
+		{"id":"work_0","type":"text","text":"📚 纳尼亚传奇\nxz→zn\n\n衣橱是xz的入口\n纳尼亚是zn的世界\n——穿越xz进入zn\n是最经典的幻想进入方式","x":80,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_1","type":"text","text":"📚 爱丽丝梦游仙境\nxz+n\n\n兔子洞是xz\n仙境是n（容器）\n——爱丽丝在n中漂流\n因为n的规则（仙境规则）她不懂","x":400,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_2","type":"text","text":"🎮 脑叶公司\nxn+zn\n\n一个完全自洽的幻想世界\n——它有自己完整的xn（管理规则）\n和zn（收容物的意义）\n幻想不需要像现实","x":720,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"principle","type":"text","text":"🎨 幻想/异界的视觉设计原则\n\n① 幻想世界的入口比世界本身重要——衣橱/兔子洞/地铁站/镜子——入口是xz的具象化\n② 幻想世界需要至少一个「锚点」——一个和现实相似的东西（椅子/门/书）让观众能找到参照\n③ 色彩规则：幻想世界的颜色饱和度比现实高10%——让人潜意识觉得「这不是真的」\n④ 最重要的技巧：幻想世界必须有成本。魔法不能没有代价/幻想不能没有裂缝","x":150,"y":590,"width":900,"height":170,"color":"1"},
+		{"id":"trap","type":"text","text":"⚠️ 幻想/异界的常见误判\n\n🔴 幻想=做梦\n→ 幻想不是梦——梦没有规则，幻想有。幻想世界有自己的物理/道德/逻辑\n\n🔴 幻想=逃避\n→ 好的幻想不是逃避——是用xz（不可能）来重新审视zn（意义）\n\n🔴 幻想=奇幻\n→ 幻想是广义的（包含科幻/平行世界/梦境）。奇幻是幻想的一个子集","x":150,"y":810,"width":700,"height":160,"color":"2"},
+		{"id":"seal","type":"text","text":"📌 封存句\n\n幻想世界不是不存在\n是还没有被找到\n进入它的方式\n\n← [[奇幻子类型谱系.canvas]]","x":450,"y":1020,"width":350,"height":140,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","fromSide":"bottom","toNode":"ty_xz","toSide":"top"},
+		{"id":"e2","fromNode":"root","fromSide":"bottom","toNode":"ty_zn","toSide":"top"},
+		{"id":"e3","fromNode":"root","fromSide":"bottom","toNode":"ty_n","toSide":"top"},
+		{"id":"e4","fromNode":"root","fromSide":"bottom","toNode":"ty_x","toSide":"top"},
+		{"id":"e5","fromNode":"root","fromSide":"bottom","toNode":"work_0","toSide":"top"},
+		{"id":"e6","fromNode":"root","fromSide":"bottom","toNode":"work_1","toSide":"top"},
+		{"id":"e7","fromNode":"root","fromSide":"bottom","toNode":"work_2","toSide":"top"},
+		{"id":"e8","fromNode":"root","fromSide":"bottom","toNode":"principle","toSide":"top"},
+		{"id":"e9","fromNode":"principle","fromSide":"bottom","toNode":"trap","toSide":"top"},
+		{"id":"e10","fromNode":"trap","fromSide":"bottom","toNode":"seal","toSide":"top"}
+	]
+}
