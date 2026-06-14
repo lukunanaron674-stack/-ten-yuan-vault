@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"root","type":"text","text":"🛡️ 骑士/王国\nzx+xn 执行+规则\n\n封建秩序的荣耀与执行\n骑士不是穿盔甲的人\n是「把誓言刻进骨头里」的人","x":400,"y":30,"width":320,"height":110,"color":"1"},
+		{"id":"ty_zx","type":"text","text":"zx（目标/执行）\n核心\n\n骑士的每一个动作\n都是在执行誓言\n保护/征服/捍卫——\n没有犹豫\n因为誓言没有例外","x":80,"y":190,"width":230,"height":150,"color":"4"},
+		{"id":"ty_xn","type":"text","text":"xn（规则/秩序）\n核心\n\n骑士团/等级制度/纹章/继承法\n封建王国是xn的具象化\n——每个人在体系里\n都有自己的位置","x":340,"y":190,"width":230,"height":150,"color":"4"},
+		{"id":"ty_zn","type":"text","text":"zn（意义/信念）\n基底\n\n骑士精神/荣誉/信仰\n——骑士的zx背后\n必须有zn支撑\n否则就是暴力","x":600,"y":190,"width":230,"height":150,"color":"3"},
+		{"id":"ty_nx","type":"text","text":"nx（暗账/结算）\n暗面\n\n每个王座背后都有nx\n政治联姻/暗杀/继承战争\n骑士的剑\n也在为nx服务","x":860,"y":190,"width":230,"height":150,"color":"2"},
+		{"id":"work_0","type":"text","text":"📚 亚瑟王传说\nzx+zn+xxn\n\n圆桌骑士是zx的极致\n——每个骑士都有自己的目标\n但都被xn（圆桌规则）约束\n格尼薇儿的故事是nx的入场","x":80,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_1","type":"text","text":"🎬 天国王朝\nzn+zx\n\n巴利安的信仰(zn)\n+ 守护耶路撒冷的执行(zx)\n——骑士最干净的形态\n信仰没有被政治污染","x":400,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_2","type":"text","text":"🎮 火焰纹章\nzx+nx+xn\n\n每个角色都有自己的zx\n但战争的nx在结算\n国与国的xn在碰撞\n——骑士只是棋子的故事","x":720,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"principle","type":"text","text":"🎨 骑士/王国的视觉设计原则\n\n① 盔甲不只是防具——是身份/信仰/等级的视觉宣言。每个骑士的盔甲都在说话\n② 纹章学是骑士最核心的xn视觉——颜色/动物/几何都在传达家族叙事\n③ 城堡不是居住空间——是权力的视觉化。越高越远越宏伟=权力越大\n④ 骑士的身体语言：挺直的脊椎是最重要的。骑士即使被打败也不会弯腰——zx的视觉表现","x":150,"y":590,"width":900,"height":170,"color":"1"},
+		{"id":"trap","type":"text","text":"⚠️ 骑士/王国的常见误判\n\n🔴 骑士=好人\n→ 骑士是执行誓言的人。誓言的善恶取决于给它的人\n\n🔴 骑士=勇猛\n→ 骑士的核心不是勇敢——是「不撤退」。撤退比战死更需要勇气但骑士不能退\n\n🔴 王国=正义\n→ 王国是一种xn秩序。正义和秩序不是同一回事","x":150,"y":810,"width":700,"height":160,"color":"2"},
+		{"id":"seal","type":"text","text":"📌 封存句\n\n骑士不是不怕死\n是怕誓言没有被执行\n——盔甲最重的部分\n不是金属\n是「必须」\n\n← [[奇幻子类型谱系.canvas]]","x":450,"y":1020,"width":350,"height":140,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","fromSide":"bottom","toNode":"ty_zx","toSide":"top"},
+		{"id":"e2","fromNode":"root","fromSide":"bottom","toNode":"ty_xn","toSide":"top"},
+		{"id":"e3","fromNode":"root","fromSide":"bottom","toNode":"ty_zn","toSide":"top"},
+		{"id":"e4","fromNode":"root","fromSide":"bottom","toNode":"ty_nx","toSide":"top"},
+		{"id":"e5","fromNode":"root","fromSide":"bottom","toNode":"work_0","toSide":"top"},
+		{"id":"e6","fromNode":"root","fromSide":"bottom","toNode":"work_1","toSide":"top"},
+		{"id":"e7","fromNode":"root","fromSide":"bottom","toNode":"work_2","toSide":"top"},
+		{"id":"e8","fromNode":"root","fromSide":"bottom","toNode":"principle","toSide":"top"},
+		{"id":"e9","fromNode":"principle","fromSide":"bottom","toNode":"trap","toSide":"top"},
+		{"id":"e10","fromNode":"trap","fromSide":"bottom","toNode":"seal","toSide":"top"}
+	]
+}

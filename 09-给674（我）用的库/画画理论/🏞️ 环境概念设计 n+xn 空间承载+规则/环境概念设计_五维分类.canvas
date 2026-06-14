@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"🏞️ 环境概念设计 · 五维分类法\n\nn+xn 空间承载+规则\n\n环境不只是背景——是「所有故事发生的物理前提」\n五维分类从不同角度解剖同一个空间","x":400,"y":20,"width":500,"height":110,"color":"1"},
+		{"id":"dim1","type":"text","text":"① 空间母体/场景载体\n——环境是什么种类的空间","x":100,"y":180,"width":280,"height":60,"color":"3"},
+		{"id":"dim1_sub","type":"text","text":"🌿 自然环境（n+zn）\n  森林·山地峡谷·河流湖泊海岸\n  洞穴地下·沙漠荒原·雪原冰川\n  火山熔岩·湿地沼泽\n\n🏛️ 建筑环境（xn+n）\n  宗教建筑·宫殿城堡·民居宅邸\n  工业设施·军事设施·学院图书馆·地下设施\n\n🏙️ 城市/聚落（xn+nx）\n  都市·街区·村庄·港口·集市\n  边境小镇·地下城\n\n🛤️ 路径/交通空间（zx+xz）\n  道路·桥梁·车站·港口·隧道·长廊","x":50,"y":270,"width":380,"height":360,"color":"6"},
+		{"id":"dim2","type":"text","text":"② 题材/世界观风格\n——环境属于哪个世界","x":520,"y":180,"width":280,"height":60,"color":"4"},
+		{"id":"dim2_sub","type":"text","text":"🗺️ 现实环境（n+xn）\n  日常世界·当代都市·乡村\n\n🏺 历史环境（xn+zx）\n  古代·中世纪·文艺复兴·蒸汽时代\n\n🧙 奇幻环境（xz+zn）→ [[奇幻子类型谱系.canvas]]\n  高奇幻·黑暗奇幻·哥特奇幻\n  东方奇幻·童话奇幻·异界奇幻\n\n🚀 科幻环境（xn+x）\n  赛博朋克·太空歌剧·生物朋克\n\n☢️ 后末日环境（xn→x）\n  核废土·气候崩溃·资源枯竭\n\n🧠 超现实环境（nx+xz）\n  梦境·意识空间·不可能的几何\n\n👻 恐怖/怪谈环境（xz+x）\n  鬼屋·禁地·扭曲空间","x":500,"y":270,"width":380,"height":430,"color":"6"},
+		{"id":"dim3","type":"text","text":"③ 状态/时间痕迹\n——环境经历了什么","x":960,"y":180,"width":280,"height":60,"color":"2"},
+		{"id":"dim3_sub","type":"text","text":"🏘️ 废墟/遗迹（xz+n）\n  时间侵蚀后的空间\n\n🔸 运转中（xn）\n  空间正在被使用\n\n🔸 荒废（xz）\n  被遗弃但还没开始崩塌\n\n🔸 战损（nx+x）\n  暴力留下的痕迹\n\n🔸 被植物侵蚀（x+nz）\n  自然在收回空间\n\n🔸 沉没/淹没（x+n）\n  被水吞噬\n\n🔸 冰封（nz）\n  时间被暂停\n\n🔸 燃烧后（x→xz）\n  欲望烧完了\n\n🔸 崩塌中（xz→n）\n  正在变成废墟\n\n🔸 新建/未完成（zx）\n  还没开始使用的空间","x":940,"y":270,"width":340,"height":420,"color":"6"},
+		{"id":"dim4","type":"text","text":"④ 功能/场景用途\n——环境用来干什么","x":1380,"y":180,"width":280,"height":60,"color":"5"},
+		{"id":"dim4_sub","type":"text","text":"🕯️ 秘境/圣所（zn+n）\n  被意义包裹的空间\n\n🔸 祭坛/仪式空间（zn+zx）\n  执行意义的场所\n\n🔸 居住空间（n）\n  睡觉/吃饭/活着\n\n🔸 战斗场（xz+zx）\n  冲突发生的空间\n\n🔸 交易场（nx+x）\n  利益交换的地方\n\n🔸 逃亡路径（xz+zx）\n  离开的通道\n\n🔸 角色登场空间（z+x并z）\n  被看见的第一眼\n\n🔸 Boss房/地标（zx+zn）\n  叙事的终点节点\n\n🔸 隐藏空间（x并z+n）\n  需要被发现才知道存在的空间","x":1360,"y":270,"width":340,"height":420,"color":"6"},
+		{"id":"dim5","type":"text","text":"⑤ 氛围/情绪场\n——环境让人感觉到什么","x":1800,"y":180,"width":280,"height":60,"color":"3"},
+		{"id":"dim5_sub","type":"text","text":"氛围不是环境自带的\n是「空间的xn+十元组合」\n在观者心中产生的情绪\n\n🔸 神圣（zn+n）\n🔸 湿冷（xz+n）\n🔸 危险（x+xz）\n🔸 孤独（nz+xz）\n🔸 荒凉（xz+n）\n🔸 诡异（x并z+xz）\n🔸 宁静（n+nz）\n🔸 压迫（xn+x）\n🔸 命定（nz+zn）\n🔸 温柔停靠（nz+n）\n\n每个氛围=两个十元的组合\n氛围是环境设计的「最终输出」","x":1780,"y":270,"width":340,"height":380,"color":"6"},
+		{"id":"note","type":"text","text":"📌 五维不是子类型——是五个不同的切入角度\n同一个空间可以同时用5个维度来分析：\n\n例：一座被废弃的哥特教堂\n① 空间母体：建筑环境·宗教建筑\n② 题材风格：奇幻·哥特奇幻\n③ 状态：废墟·被植物侵蚀\n④ 功能：曾经的仪式空间→现在的Boss房\n⑤ 氛围：神圣+荒凉+诡异","x":400,"y":750,"width":800,"height":170,"color":"1"},
+		{"id":"seal","type":"text","text":"📌 封存句\n\n环境不是你画什么\n是你在五个维度上\n同时做选择的结果\n——每个选择\n都在定义一个世界","x":500,"y":970,"width":450,"height":130,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"title","fromSide":"bottom","toNode":"dim1","toSide":"top"},
+		{"id":"e2","fromNode":"title","fromSide":"bottom","toNode":"dim2","toSide":"top"},
+		{"id":"e3","fromNode":"title","fromSide":"bottom","toNode":"dim3","toSide":"top"},
+		{"id":"e4","fromNode":"title","fromSide":"bottom","toNode":"dim4","toSide":"top"},
+		{"id":"e5","fromNode":"title","fromSide":"bottom","toNode":"dim5","toSide":"top"},
+		{"id":"e6","fromNode":"dim1","fromSide":"bottom","toNode":"dim1_sub","toSide":"top"},
+		{"id":"e7","fromNode":"dim2","fromSide":"bottom","toNode":"dim2_sub","toSide":"top"},
+		{"id":"e8","fromNode":"dim3","fromSide":"bottom","toNode":"dim3_sub","toSide":"top"},
+		{"id":"e9","fromNode":"dim4","fromSide":"bottom","toNode":"dim4_sub","toSide":"top"},
+		{"id":"e10","fromNode":"dim5","fromSide":"bottom","toNode":"dim5_sub","toSide":"top"},
+		{"id":"e11","fromNode":"title","fromSide":"bottom","toNode":"note","toSide":"top"},
+		{"id":"e12","fromNode":"note","fromSide":"bottom","toNode":"seal","toSide":"top"}
+	]
+}

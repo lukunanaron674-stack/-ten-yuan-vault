@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"root","type":"text","text":"🌳 自然之灵\nzn+nz 意义+守望\n\n森林本身的意志\n不为人存在，不为人改变\n——在人类出现之前它们就已经在等了","x":400,"y":30,"width":320,"height":110,"color":"1"},
+		{"id":"ty_zn","type":"text","text":"zn（意义/信念）\n核心\n\n自然之灵不是动物\n是意义的化身\n每棵树都是宣言\n每阵风都是低语","x":80,"y":190,"width":230,"height":150,"color":"3"},
+		{"id":"ty_nz","type":"text","text":"nz（守望/等待）\n核心\n\n自然之灵的核心情绪是nz\n它们不是不行动\n是在等对的时间\n——等千年，只为一次呼吸","x":340,"y":190,"width":230,"height":150,"color":"6"},
+		{"id":"ty_n","type":"text","text":"n（容器/承载）\n基底\n\n森林是最大的容器\n承载所有生命也承载遗忘\n自然之灵是容器的人格化","x":600,"y":190,"width":230,"height":150,"color":"4"},
+		{"id":"ty_xz","type":"text","text":"xz（边缘/漂流）\n暗面\n\n自然之灵在人类世界\n是边缘的——\n不被理解，正在退却\n最后的森林是最后的边缘","x":860,"y":190,"width":230,"height":150,"color":"2"},
+		{"id":"work_0","type":"text","text":"🎬 幽灵公主\nn+zn+x\n\n山兽神不是神\n是自然的nz在显形\n——它在等人类\n等他们学会敬畏\n或被森林吞噬","x":80,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_1","type":"text","text":"📚 地海传说\nzn+nz\n\n格得的龙\n是自然之灵的终极形态\n——不需要人理解\n只需要被尊重","x":400,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_2","type":"text","text":"🎮 旷野之息\nn+zn\n\n海拉尔的自然之灵\n不是角色——\n是世界的zn在发声","x":720,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"principle","type":"text","text":"🎨 自然之灵的视觉设计原则\n\n① 色彩：zn的翠绿 + nz的暮色——不是亮绿，是有深度的绿\n② 形态：自然之灵不应该像动物+角——形状应该像「风停了」的瞬间\n③ 尺度：可以非常小（树叶精灵）或非常大（山脉本身的脸）\n④ 光：不用直射光——自然之灵自带柔光，不照亮世界，只让自己可见","x":150,"y":590,"width":900,"height":170,"color":"1"},
+		{"id":"trap","type":"text","text":"⚠️ 自然之灵的常见误判\n\n🔴 自然之灵=树人/动物\n→ 不是树长成了人形——是自然选择了一种能被看见的形态\n\n🔴 自然之灵=守护者\n→ 不是为了保护人类而存在的。它们存在，人类恰好得到庇护\n\n🔴 自然之灵=善良\n→ 自然之灵没有道德。森林可以滋养你，也可以吞噬你","x":150,"y":810,"width":700,"height":160,"color":"2"},
+		{"id":"seal","type":"text","text":"📌 封存句\n\n自然之灵不是森林的守护者\n是森林终于决定\n让自己被看见的那一瞬间\n\n← [[奇幻子类型谱系.canvas]]","x":450,"y":1020,"width":350,"height":140,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","fromSide":"bottom","toNode":"ty_zn","toSide":"top"},
+		{"id":"e2","fromNode":"root","fromSide":"bottom","toNode":"ty_nz","toSide":"top"},
+		{"id":"e3","fromNode":"root","fromSide":"bottom","toNode":"ty_n","toSide":"top"},
+		{"id":"e4","fromNode":"root","fromSide":"bottom","toNode":"ty_xz","toSide":"top"},
+		{"id":"e5","fromNode":"root","fromSide":"bottom","toNode":"work_0","toSide":"top"},
+		{"id":"e6","fromNode":"root","fromSide":"bottom","toNode":"work_1","toSide":"top"},
+		{"id":"e7","fromNode":"root","fromSide":"bottom","toNode":"work_2","toSide":"top"},
+		{"id":"e8","fromNode":"root","fromSide":"bottom","toNode":"principle","toSide":"top"},
+		{"id":"e9","fromNode":"principle","fromSide":"bottom","toNode":"trap","toSide":"top"},
+		{"id":"e10","fromNode":"trap","fromSide":"bottom","toNode":"seal","toSide":"top"}
+	]
+}

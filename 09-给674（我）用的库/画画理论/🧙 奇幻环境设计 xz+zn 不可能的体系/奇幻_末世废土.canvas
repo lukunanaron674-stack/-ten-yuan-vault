@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "🔥 末世废土\nxn+x 规则崩塌+欲望\n\n秩序已死，欲望为王\n废土不是「文明毁灭之后」\n是「文明的面具被撕掉之后」",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_xn",
+      "type": "text",
+      "text": "xn（规则/秩序）\n崩塌\n\n废土的美学\n不是没有规则\n是旧规则崩塌后\n新规则还没建立\n——残骸的秩序感",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_x",
+      "type": "text",
+      "text": "x（欲望/吞噬）\n核心\n\n废土上活下来的人\n靠的是欲望——\n想吃想喝想活想操\n文明面具撕掉后\n人就是欲望的动物",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "ty_zx",
+      "type": "text",
+      "text": "zx（目标/执行）\n残余\n\n废土上没有长远目标\n只有眼前的目标\n——今天的水源\n明天的安全\n微型的zx",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_xz",
+      "type": "text",
+      "text": "xz（边缘/漂流）\n基底\n\n废土本身就是巨大的xz\n没有安全区/没有归属\n每一个幸存者都在漂流\n——在文明残骸上",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "📚 疯狂麦克斯\nxn→x\n\n最纯粹的废土xn+x\n——旧世界的法律（xn1）\n崩塌后被燃料和水的规则（xn2）\n取代\nx是那个「活着就行」的欲望",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "🎮 辐射\nxn+nx\n\n避难所是xn的完美容器\n但出来的世界是nx在结算\n——战前的账谁来还？\n瓶盖经济就是nx的货币化",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎬 未来水世界\nxz+n\n\n海平面上升后的世界\n陆地n变成了船\n人类变成了xz的漂流者\n——水不是资源是边界",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 末世废土的视觉设计原则\n\n① 废土不是灰色——是褪色。色彩还在，但被时间和灰尘磨掉了饱和度\n② 文明的残骸是最重要的设计素材。广告牌/路标/交通灯——它们在说「这里曾经有人」\n③ 废土上的绿色是最震撼的颜色。一株草/一棵树——那是zn在废土上的显现\n④ 最重要的技巧：让观众在废土中看到一个精致的旧世界物品。一个完好的瓷杯/一张照片——xn的残留",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 末世废土的常见误判\n\n🔴 废土=末日之后\n→ 废土不是末日的结果——是末日之后人类重新开始的过程\n\n🔴 废土=绝望\n→ 废土上的人类是坚韧的。绝望是xn崩塌时的状态——废土上zx还在\n\n🔴 废土=科幻\n→ 废土可以是奇幻（魔法崩坏后的世界）。奇幻废土比科幻废土更有想象力",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n废土不是世界的终点\n是文明的面具被撕掉后\n——我们终于看清\n人是什么\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xn",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_x",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zx",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xz",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}

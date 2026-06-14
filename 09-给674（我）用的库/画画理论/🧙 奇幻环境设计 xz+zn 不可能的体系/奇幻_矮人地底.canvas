@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"root","type":"text","text":"🗿 矮人/地底\nxn+zx 规则+执行\n\n矿物与锻冶文明\n地下的秩序王国\n矮人不是挖矿的矮子\n是「把规则刻进石头里」的种族","x":400,"y":30,"width":320,"height":110,"color":"1"},
+		{"id":"ty_xn","type":"text","text":"xn（规则/秩序）\n核心\n\n矮人文明的一切\n都是规则的具象化\n铸造工艺/阶层等级/建筑结构\n——没有规则就没有矮人","x":80,"y":190,"width":230,"height":150,"color":"4"},
+		{"id":"ty_zx","type":"text","text":"zx（目标/执行）\n核心\n\n矮人不是在想\n是在做\n挖/铸/刻/建——\n每个动作都在执行一个目标","x":340,"y":190,"width":230,"height":150,"color":"4"},
+		{"id":"ty_n","type":"text","text":"n（容器/承载）\n基底\n\n地底本身就是容器\n矮人在山的内部生活\n被岩石包裹\n——n的形式决定了文明的形态","x":600,"y":190,"width":230,"height":150,"color":"4"},
+		{"id":"ty_xz","type":"text","text":"xz（边缘/漂流）\n暗面\n\n矮人在地表是边缘者\n他们的世界不在地面\n在脚下\n——被遗忘本身就是矮人的宿命","x":860,"y":190,"width":230,"height":150,"color":"2"},
+		{"id":"work_0","type":"text","text":"📚 霍比特人·孤山\nxn+zx\n\n埃雷博的矮人王国\n是xn的极致——\n每一块石头都有它的位置\n秩序被阿肯宝石凝固","x":80,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_1","type":"text","text":"🎮 战锤·矮人\nxn+zx+nx\n\n矮人的仇恨书\n是nx的完美体现——\n每一笔账都要结算\n千年后也要讨回来","x":400,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_2","type":"text","text":"🎮 深岩银河\nzx+xn\n\n采矿不是工作\n是xn+zx的流程——\n每个洞穴都有规则\n活着回去就是目标","x":720,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"principle","type":"text","text":"🎨 矮人/地底的视觉设计原则\n\n① 色彩：暖色系的金属感——铜/金/红铁矿。不是冷的地底，是燃烧的地底\n② 建筑语言：矮人的建筑不是挖出来的——是刻出来的。留下的岩体就是结构本身\n③ 光：火光主导。矮人的地底不需要日光——熔炉的光就是他们的太阳\n④ 材质：金属和石材的交接处是最重要的细节——矮人让石头和金属长在一起","x":150,"y":590,"width":900,"height":170,"color":"1"},
+		{"id":"trap","type":"text","text":"⚠️ 矮人/地底的常见误判\n\n🔴 矮人=矮+爱喝酒\n→ 矮不是设定重点是视角——他们和世界的比例关系决定了世界观\n\n🔴 矮人=工匠种族\n→ 工匠是表现不是灵魂。灵魂是xn（规则感）和zx（执行欲）\n\n🔴 地底=黑暗\n→ 矮人的地底不是黑暗的——是被火光照亮的。黑暗属于深渊不属于矮人","x":150,"y":810,"width":700,"height":160,"color":"2"},
+		{"id":"seal","type":"text","text":"📌 封存句\n\n矮人不是住在地下的种族\n是把「规则」刻进石头后\n自己也变成了石头的一部分\n\n← [[奇幻子类型谱系.canvas]]","x":450,"y":1020,"width":350,"height":140,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","fromSide":"bottom","toNode":"ty_xn","toSide":"top"},
+		{"id":"e2","fromNode":"root","fromSide":"bottom","toNode":"ty_zx","toSide":"top"},
+		{"id":"e3","fromNode":"root","fromSide":"bottom","toNode":"ty_n","toSide":"top"},
+		{"id":"e4","fromNode":"root","fromSide":"bottom","toNode":"ty_xz","toSide":"top"},
+		{"id":"e5","fromNode":"root","fromSide":"bottom","toNode":"work_0","toSide":"top"},
+		{"id":"e6","fromNode":"root","fromSide":"bottom","toNode":"work_1","toSide":"top"},
+		{"id":"e7","fromNode":"root","fromSide":"bottom","toNode":"work_2","toSide":"top"},
+		{"id":"e8","fromNode":"root","fromSide":"bottom","toNode":"principle","toSide":"top"},
+		{"id":"e9","fromNode":"principle","fromSide":"bottom","toNode":"trap","toSide":"top"},
+		{"id":"e10","fromNode":"trap","fromSide":"bottom","toNode":"seal","toSide":"top"}
+	]
+}

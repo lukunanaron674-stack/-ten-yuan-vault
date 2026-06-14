@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"root","type":"text","text":"🌿 自然环境\nn+zn 容器+意义\n\n森林/荒野/生态——世界的底色\n自然不是背景——是「最古老的叙事者」\n它在你出现之前就在，你走后还在","x":400,"y":30,"width":320,"height":110,"color":"1"},
+		{"id":"ty_n","type":"text","text":"n（容器/承载）\n核心\n\n自然是最大的容器\n它承载所有生命\n但不为任何生命改变\n——自然的n是沉默的、无限的","x":80,"y":190,"width":230,"height":150,"color":"4"},
+		{"id":"ty_zn","type":"text","text":"zn（意义/信念）\n核心\n\n自然不是无意义的\n每一片森林都有自己的意志\n每一座山都有自己的名字\n——自然的zn不需要被人理解","x":340,"y":190,"width":230,"height":150,"color":"3"},
+		{"id":"ty_nz","type":"text","text":"nz（守望/等待）\n辅链\n\n自然在等什么？\n等季节轮回/等人类学会/等自己毁灭\n——自然的nz是最长的等待","x":600,"y":190,"width":230,"height":150,"color":"6"},
+		{"id":"ty_xz","type":"text","text":"xz（边缘/漂流）\n暗面\n\n荒野本身就是xz\n——不适合人类居住\n没有路/没有信号/没有规则\n自然的边缘性让人恐惧","x":860,"y":190,"width":230,"height":150,"color":"2"},
+		{"id":"work_0","type":"text","text":"🎬 幽灵公主\nn+zn\n\n山兽神森林是自然的n+zn\n——森林有自己的意志\n人类只是访客\n自然的n不原谅任何人","x":80,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_1","type":"text","text":"📚 瓦尔登湖\nzn+n\n\n梭罗的湖边生活\n是人在自然中寻找zn\n——当人放下xn（社会规则）\nn的承载让zn自然浮现","x":400,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_2","type":"text","text":"🎮 旷野之息\nn+zn\n\n海拉尔的自然不是风景\n是角色——\n每片森林/每座山/每个池塘\n都有自己的故事","x":720,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"principle","type":"text","text":"🎨 自然环境的视觉设计原则\n\n① 自然不追求「美」——追求「真」。一棵树长了几百年，它的形态是被风/光/水决定的\n② 色彩：自然色不是绿色——是四季的颜色。春绿/夏深/秋黄/冬灰\n③ 光的用法：自然的光是「天光」——不是打光。从上方来的、变化的、不可控的光\n④ 最重要的技巧：在自然场景里加一个「不自然」的东西——人类痕迹。那是n和zn的裂缝","x":150,"y":590,"width":900,"height":170,"color":"1"},
+		{"id":"trap","type":"text","text":"⚠️ 自然环境的常见误判\n\n🔴 自然=绿色\n→ 自然不是绿色——绿只是自然的xn被人类视觉简化了。自然包含所有颜色\n\n🔴 自然=平静\n→ 森林里每时每刻都在发生生死。自然的平静是人的感受，不是自然的状态\n\n🔴 自然=背景\n→ 在奇幻中自然不是背景——是角色。森林有意志/河流有记忆/山脉有名字","x":150,"y":810,"width":700,"height":160,"color":"2"},
+		{"id":"seal","type":"text","text":"📌 封存句\n\n森林不需要人类\n是人类需要森林\n来记住自己\n不是一切的中心\n\n← [[奇幻子类型谱系.canvas]]","x":450,"y":1020,"width":350,"height":140,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","fromSide":"bottom","toNode":"ty_n","toSide":"top"},
+		{"id":"e2","fromNode":"root","fromSide":"bottom","toNode":"ty_zn","toSide":"top"},
+		{"id":"e3","fromNode":"root","fromSide":"bottom","toNode":"ty_nz","toSide":"top"},
+		{"id":"e4","fromNode":"root","fromSide":"bottom","toNode":"ty_xz","toSide":"top"},
+		{"id":"e5","fromNode":"root","fromSide":"bottom","toNode":"work_0","toSide":"top"},
+		{"id":"e6","fromNode":"root","fromSide":"bottom","toNode":"work_1","toSide":"top"},
+		{"id":"e7","fromNode":"root","fromSide":"bottom","toNode":"work_2","toSide":"top"},
+		{"id":"e8","fromNode":"root","fromSide":"bottom","toNode":"principle","toSide":"top"},
+		{"id":"e9","fromNode":"principle","fromSide":"bottom","toNode":"trap","toSide":"top"},
+		{"id":"e10","fromNode":"trap","fromSide":"bottom","toNode":"seal","toSide":"top"}
+	]
+}

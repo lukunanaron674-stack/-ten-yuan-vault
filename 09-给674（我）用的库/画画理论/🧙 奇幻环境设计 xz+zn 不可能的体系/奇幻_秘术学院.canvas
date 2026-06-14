@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "🔮 秘术/学院\nxn+zn 规则+意义\n\n知识即力量\n但力量有代价\n秘术学院是奇幻中最特殊的类型\n——它的核心不是空间，是知识体系",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_xn",
+      "type": "text",
+      "text": "xn（规则/秩序）\n核心\n\n魔法有体系/咒语有格式/炼金有流程\n秘术学院的xn是所有奇幻子类型中\n最严格的——因为知识本身需要规则",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_zn",
+      "type": "text",
+      "text": "zn（意义/信念）\n核心\n\n为什么学魔法？\n为了求知/为了力量/为了世界更好\n——秘术学院存在的理由就是zn",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "ty_nx",
+      "type": "text",
+      "text": "nx（暗账/结算）\n暗面\n\n知识有代价\n每一页禁书背后都有人付出代价\n秘术学院的图书馆\n本身就是一本巨大的nx账本",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "ty_xbz",
+      "type": "text",
+      "text": "x并z（伪装/表面）\n暗面\n\n学院的外墙是知识圣殿\n里面可能是政治的棋盘\n——秘术学院的x并z在于\n它看起来在教魔法\n实际上在教服从",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "📚 哈利波特\nxn+zn\n\n霍格沃茨是xn的完美体现——\n魔法有课程/考试/规则\n但它保留了zn（爱/勇气>规则）\n——最符合xn+zn平衡的案例",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "📚 地海传说·巫师学院\nxn+zn→xz\n\n勒瑰恩的学院\nxn规则压抑了真名（zn）\n——当规则大于意义时\n魔法就死了",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎮 咒术回战\nxn+x+nx\n\n咒术高专的规则xn\n+ 咒力的欲望x\n+ 束缚的暗账nx\n——秘术的黑暗面已经内置",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 秘术/学院的视觉设计原则\n\n① 建筑：学院看起来像知识——对称/宏伟/有图书馆/有塔楼。但走廊尽头要有「不能去的门」\n② 色彩：冷色为主（蓝/紫/银），但禁书区/地下室要偏暗红——那是x的颜色\n③ 道具：书不是装饰品。每本书的厚度/颜色/磨损程度都在说一个故事\n④ 光：学院的光是人工控制的——不是自然光，是烛光/魔法光/台灯光。知识不需要太阳",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 秘术/学院的常见误判\n\n🔴 秘术学院=霍格沃茨\n→ 霍格沃茨是xn+zn平衡的案例。更多秘术学院是xn主导的（规则大于一切）\n\n🔴 魔法学院=奇幻学校\n→ 学院的核心不是学校——是知识体系作为一种权力结构\n\n🔴 秘术=神秘\n→ 高级秘术看起来像魔法——但有规则可循。没规则的叫混沌",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n秘术学院教的不是魔法\n是「谁的魔法被允许」\n——图书馆最深处的书\n记录的不是知识\n是禁忌\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xn",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zn",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_nx",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xbz",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}
