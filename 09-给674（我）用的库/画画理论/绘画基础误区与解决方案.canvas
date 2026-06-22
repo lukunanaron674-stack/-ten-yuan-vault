@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"绘画基础误区与解决方案\n\n核心链：基础透视 -> 临摹精准度 -> 分析力 -> 素描光影 -> 黑白构成 -> 造型进阶","x":240,"y":-80,"width":520,"height":130,"color":"1"},
+		{"id":"source_note","type":"file","file":"绘画基础误区与解决方案.md","x":820,"y":-70,"width":360,"height":120,"color":"6"},
+		{"id":"misconception_title","type":"text","text":"一、学习误区\n不是方法不够多，而是基础支点不够稳","x":40,"y":130,"width":320,"height":80,"color":"3"},
+		{"id":"mis_1","type":"text","text":"线稿执念\n\n误以为必须先勾细线稿。\n实际很多转折应靠色块、明暗、结构关系解决。","x":20,"y":250,"width":260,"height":130,"color":"3"},
+		{"id":"mis_2","type":"text","text":"频繁换法\n\n每学一个新技法就推翻流程，导致完成度和判断标准不稳定。","x":300,"y":250,"width":260,"height":130,"color":"3"},
+		{"id":"mis_3","type":"text","text":"局部模仿\n\n只学鼻影、高光、头发透气等表层效果，缺少结构和构成逻辑。","x":580,"y":250,"width":260,"height":130,"color":"3"},
+		{"id":"chain_title","type":"text","text":"二、基础问题链\n前一层不稳，后一层会连锁出错","x":40,"y":470,"width":320,"height":80,"color":"4"},
+		{"id":"perspective","type":"text","text":"01 基础透视\n\n表现：角度还原失败、角色平面化。\n动作：盒子/圆柱/头部体块；标中轴线和透视方向。","x":20,"y":600,"width":280,"height":150,"color":"4"},
+		{"id":"copy_accuracy","type":"text","text":"02 临摹精准度\n\n表现：看起来像，叠图偏差大。\n动作：叠图检查；记录最大 3 个误差。","x":340,"y":600,"width":280,"height":150,"color":"4"},
+		{"id":"analysis","type":"text","text":"03 分析力\n\n表现：抓不住小造型和结构逻辑。\n动作：反向解析大佬作品；建立造型库。","x":660,"y":600,"width":280,"height":150,"color":"4"},
+		{"id":"sketch","type":"text","text":"04 素描光影\n\n表现：体积弱、灰度乱、交界线含糊。\n动作：黑白灰归纳；面部保持最强对比。","x":980,"y":600,"width":280,"height":150,"color":"4"},
+		{"id":"composition","type":"text","text":"05 黑白构成\n\n表现：细节很多但整体不好看。\n动作：构图阶段先设计角色/背景/地面的明度分工。","x":1300,"y":600,"width":280,"height":150,"color":"4"},
+		{"id":"hair","type":"text","text":"头发透视专题\n\n头发不是线条堆叠，而是有厚度、有前后关系的发块。\n\n关键词：发块、三维中轴线、前长后短、色块转折。","x":20,"y":860,"width":360,"height":170,"color":"5"},
+		{"id":"advanced_shape","type":"text","text":"三、进阶造型\n\n从“套路美女”走向有气质的角色。\n\n看眼睑、眉毛、嘴角的小变化；外轮廓形状优先；写实结构丰富二次元脸。","x":460,"y":860,"width":380,"height":170,"color":"5"},
+		{"id":"practice_path","type":"text","text":"四、训练顺序\n\n1 空间：盒子、圆柱、头部体块\n2 临摹：叠图、轴线、负形\n3 素描：黑白灰、交界线、体积\n4 构成：明度分组、视觉中心\n5 造型：脸部气质、外轮廓、风格","x":920,"y":860,"width":420,"height":220,"color":"6"},
+		{"id":"checklist","type":"text","text":"五、自检清单\n\n- 透视方向是否一致？\n- 叠图确认过偏差吗？\n- 头发/服饰/装备有没有厚度？\n- 明暗交界线贴合形体吗？\n- 面部是最清晰的视觉中心吗？\n- 黑白关系分工明确吗？\n- 有没有局部效果破坏整体？\n- 这次练习的唯一主目标是什么？","x":20,"y":1160,"width":520,"height":260,"color":"2"},
+		{"id":"one_sentence","type":"text","text":"一句话\n\n基础不是入门阶段才需要的东西，\n而是每一次画崩时最先要回去检查的结构。","x":650,"y":1190,"width":520,"height":150,"color":"1"}
+	],
+	"edges":[
+		{"id":"e_title_source","fromNode":"title","fromSide":"right","toNode":"source_note","toSide":"left"},
+		{"id":"e_title_mis","fromNode":"title","fromSide":"bottom","toNode":"misconception_title","toSide":"top"},
+		{"id":"e_mis_1","fromNode":"misconception_title","fromSide":"bottom","toNode":"mis_1","toSide":"top"},
+		{"id":"e_mis_2","fromNode":"misconception_title","fromSide":"bottom","toNode":"mis_2","toSide":"top"},
+		{"id":"e_mis_3","fromNode":"misconception_title","fromSide":"bottom","toNode":"mis_3","toSide":"top"},
+		{"id":"e_title_chain","fromNode":"title","fromSide":"bottom","toNode":"chain_title","toSide":"top"},
+		{"id":"e_chain_p","fromNode":"chain_title","fromSide":"bottom","toNode":"perspective","toSide":"top"},
+		{"id":"e_p_copy","fromNode":"perspective","fromSide":"right","toNode":"copy_accuracy","toSide":"left"},
+		{"id":"e_copy_analysis","fromNode":"copy_accuracy","fromSide":"right","toNode":"analysis","toSide":"left"},
+		{"id":"e_analysis_sketch","fromNode":"analysis","fromSide":"right","toNode":"sketch","toSide":"left"},
+		{"id":"e_sketch_comp","fromNode":"sketch","fromSide":"right","toNode":"composition","toSide":"left"},
+		{"id":"e_chain_hair","fromNode":"perspective","fromSide":"bottom","toNode":"hair","toSide":"top"},
+		{"id":"e_comp_advanced","fromNode":"composition","fromSide":"bottom","toNode":"advanced_shape","toSide":"top"},
+		{"id":"e_advanced_path","fromNode":"advanced_shape","fromSide":"right","toNode":"practice_path","toSide":"left"},
+		{"id":"e_path_check","fromNode":"practice_path","fromSide":"bottom","toNode":"checklist","toSide":"top"},
+		{"id":"e_check_sentence","fromNode":"checklist","fromSide":"right","toNode":"one_sentence","toSide":"left"}
+	]
+}
