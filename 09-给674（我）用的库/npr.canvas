@@ -2,12 +2,13 @@
 	"nodes":[
 		{"id":"adf57317760b36d4","type":"text","text":"ao 叠上去   /画死上去   烘培是什么","x":-125,"y":-30,"width":250,"height":60},
 		{"id":"4169d38a2b5c30e8","type":"text","text":"258信息量 138信息角色信息  布线信息1380","x":-200,"y":80,"width":250,"height":60},
-		{"id":"f9bcfe75c948822b","x":-325,"y":340,"width":250,"height":60,"type":"text","text":"贴图 如何考上去   ai呢如何贴 "},
-		{"id":"360ff79235719d06","x":-325,"y":220,"width":250,"height":60,"type":"text","text":"先高模 xy图 死阴影不会歪"},
-		{"id":"d5af3dae6d214885","x":-575,"y":110,"width":250,"height":60,"type":"text","text":"如何zbrush 褶子位置"},
-		{"id":"60c767c617c168cf","x":-600,"y":-30,"width":250,"height":60,"type":"text","text":"内描边阴影 坡面 大形状"},
-		{"id":"9323a19f544bf380","x":-740,"y":250,"width":250,"height":60,"type":"text","text":"横向线才有用  前后弯曲 左右纵向线可以去掉  有用就留着？"},
-		{"id":"a9890b133d62c430","x":-401,"y":-471,"width":400,"height":50,"type":"file","file":"未命名 8.md"}
+		{"id":"360ff79235719d06","type":"text","text":"先高模 xy图 死阴影不会歪","x":-325,"y":220,"width":250,"height":60},
+		{"id":"d5af3dae6d214885","type":"text","text":"如何zbrush 褶子位置","x":-575,"y":110,"width":250,"height":60},
+		{"id":"60c767c617c168cf","type":"text","text":"内描边阴影 坡面 大形状","x":-600,"y":-30,"width":250,"height":60},
+		{"id":"9323a19f544bf380","type":"text","text":"横向线才有用  前后弯曲 左右纵向线可以去掉  有用就留着？","x":-740,"y":250,"width":250,"height":60},
+		{"id":"a9890b133d62c430","type":"file","file":"未命名 8.md","x":-401,"y":-471,"width":400,"height":50},
+		{"id":"ca782164ee998a7b","x":-780,"y":-260,"width":250,"height":60,"color":"3","type":"text","text":"烘培？八猴"},
+		{"id":"f9bcfe75c948822b","type":"text","text":"贴图 如何考上去   ai呢如何贴   ","x":-250,"y":520,"width":250,"height":60,"color":"3"}
 	],
 	"edges":[
 		{"id":"bad8238cc9d10fc0","fromNode":"f9bcfe75c948822b","fromSide":"top","toNode":"360ff79235719d06","toSide":"bottom","label":"模仿高模画死阴影"},

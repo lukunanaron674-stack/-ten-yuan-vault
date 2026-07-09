@@ -1,0 +1,1556 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "text",
+      "text": "🗻 巨人山脉 is-a 名词素材库\n        巨人山脉 — n+xz",
+      "x": -200,
+      "y": -950,
+      "width": 480,
+      "height": 80,
+      "color": "1"
+    },
+    {
+      "id": "n2",
+      "type": "text",
+      "text": "📖 风格定义\nis-a 空间视觉风格\n巨物尺度·山峦之间\n巨人/山脉/云海/原始自然",
+      "x": -160,
+      "y": -850,
+      "width": 260,
+      "height": 110,
+      "color": "6"
+    },
+    {
+      "id": "n3",
+      "type": "text",
+      "text": "👗 服装 is-a 巨人山脉角色造型类目 ├ 🗿 巨人族 ┤ 🏔 山脉住民 ┤ ⛰ 云端圣者 ┤ ↔ 服装·建筑·场景·构件·元素",
+      "x": -2400,
+      "y": -700,
+      "width": 890,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "n4",
+      "type": "text",
+      "text": "🗿 巨人族\n5项 · 山岭巨人/泰坦",
+      "x": -2400,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n5",
+      "type": "text",
+      "text": "山石纹理披挂\nis-a 巨人外衣\n🎬 巨人行走在山脊",
+      "x": -2400,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n6",
+      "type": "text",
+      "text": "粗绳腰带\nis-a 巨人束腰\n🎬 巨人搬动巨石",
+      "x": -2400,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n7",
+      "type": "text",
+      "text": "巨兽皮围裙\nis-a 巨人猎装\n🎬 巨人狩猎山兽",
+      "x": -2400,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n8",
+      "type": "text",
+      "text": "铁链臂环\nis-a 巨人力量象征\n🎬 巨人角力/比武",
+      "x": -2400,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n9",
+      "type": "text",
+      "text": "整棵树做拐杖\nis-a 巨人手杖\n🎬 巨人走路/支撑",
+      "x": -2400,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n10",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": -2400,
+      "y": -115,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n11",
+      "type": "text",
+      "text": "🏔 山脉住民\n4项 · 人类山村",
+      "x": -2120,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n12",
+      "type": "text",
+      "text": "厚羊毛大衣\nis-a 山民保暖外套\n🎬 山民在风雪中前行",
+      "x": -2120,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n13",
+      "type": "text",
+      "text": "皮草帽子\nis-a 防寒帽\n🎬 深山猎人在雪地",
+      "x": -2120,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n14",
+      "type": "text",
+      "text": "绑腿雪靴\nis-a 雪地装备\n🎬 穿越山脉/登山",
+      "x": -2120,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n15",
+      "type": "text",
+      "text": "驼毛披肩\nis-a 防风披肩\n🎬 山民在集市交易",
+      "x": -2120,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n16",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": -2120,
+      "y": -188,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n17",
+      "type": "text",
+      "text": "⛰ 云端圣者\n4项 · 隐士/僧人",
+      "x": -1840,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n18",
+      "type": "text",
+      "text": "灰布僧袍\nis-a 山间隐士服\n🎬 隐士在云中冥想",
+      "x": -1840,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n19",
+      "type": "text",
+      "text": "麻绳草鞋\nis-a 隐士日常装备\n🎬 隐士行走山间",
+      "x": -1840,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n20",
+      "type": "text",
+      "text": "木杖葫芦\nis-a 登山者标配\n🎬 隐士攀登山路",
+      "x": -1840,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n21",
+      "type": "text",
+      "text": "粗布头巾\nis-a 山行者遮阳\n🎬 山间行走/眺望",
+      "x": -1840,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n22",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": -1840,
+      "y": -188,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n23",
+      "type": "text",
+      "text": "🏛️ 建筑 is-a 巨人山脉空间场景类目 ├ v0空间母体 ┤ v1典型空间 ┤ ↔ 服装·场景·构件·元素",
+      "x": -1510,
+      "y": -700,
+      "width": 600,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "n24",
+      "type": "text",
+      "text": "v0 空间母体层\\n6项 · 核心空间",
+      "x": -1510,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n25",
+      "type": "text",
+      "text": "巨人山脉\nis-a 巨人栖息山地\n🎬 巨人之地 / 渺小的人类 / 巨构远景",
+      "x": -1510,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n26",
+      "type": "text",
+      "text": "巨人石门\nis-a 巨人之门\n🎬 进入巨人领地 / 门之大 / 惊叹",
+      "x": -1510,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n27",
+      "type": "text",
+      "text": "沉睡王座\nis-a 巨人王座遗迹\n🎬 空王座 / 巨人已不在 / 沉默的权力",
+      "x": -1510,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n28",
+      "type": "text",
+      "text": "山体神殿\nis-a 山体内部圣殿\n🎬 巨大的空厅 / 山内圣殿 / 回声",
+      "x": -1510,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n29",
+      "type": "text",
+      "text": "云雾峡谷\nis-a 巨人级的峡谷\n🎬 云雾深渊 / 穿越大峡谷 / 风之走廊",
+      "x": -1510,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n30",
+      "type": "text",
+      "text": "断裂石桥\nis-a 碎裂巨桥\n🎬 断桥冒险 / 越过裂缝 / 巨力留下的伤痕",
+      "x": -1510,
+      "y": -115,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n31",
+      "type": "text",
+      "text": "v1 典型空间层\\n4项 · 废墟/空间",
+      "x": -1230,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n32",
+      "type": "text",
+      "text": "巨人山脉废墟\nis-a 巨人文明遗迹（上位：巨人山脉）\n🎬 巨人废屋 / 碎片之大 / 巨物残骸",
+      "x": -1230,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n33",
+      "type": "text",
+      "text": "巨人山脉圣所\nis-a 巨人神殿（上位：巨人山脉）\n🎬 巨人跪拜人形 / 谁拜谁 / 模糊的信仰",
+      "x": -1230,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n34",
+      "type": "text",
+      "text": "巨人山脉大厅\nis-a 巨人大厅（上位：巨人山脉）\n🎬 巨桌倒地 / 柱子的粗度 / 大厅的剩余",
+      "x": -1230,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n35",
+      "type": "text",
+      "text": "巨人山脉回廊\nis-a 巨人走廊（上位：巨人山脉）\n🎬 光在头上 / 人的尺度在巨人走廊中 / 走错时代",
+      "x": -1230,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n36",
+      "type": "text",
+      "text": "🌄 场景 is-a 巨人山脉镜头情境类目 ├ v2状态侵蚀 ┤ v3内部功能 ┤ v4复合场景 ┤ ↔ 服装·建筑·构件·元素",
+      "x": -900,
+      "y": -700,
+      "width": 900,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "n37",
+      "type": "text",
+      "text": "v2 状态侵蚀层\\n5项 · 自然/超自然改造",
+      "x": -900,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n38",
+      "type": "text",
+      "text": "巨人山脉废墟被花蔓侵蚀\nis-a 巨岩生花（上位：巨人山脉废墟）\n🎬 巨石下的小花 / 尺寸的相对性 / 微小的生命力",
+      "x": -900,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n39",
+      "type": "text",
+      "text": "巨人山脉废墟被荆棘缠绕\nis-a 山棘（上位：巨人山脉废墟）\n🎬 高山硬棘 / 养分充足所以长得大 / 废墟上的刺",
+      "x": -900,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n40",
+      "type": "text",
+      "text": "巨人山脉废墟被树根穿刺\nis-a 高山松根（上位：巨人山脉废墟）\n🎬 松根寻缝 / 高山生命的韧性 / 根的路径",
+      "x": -900,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n41",
+      "type": "text",
+      "text": "巨人山脉废墟被苔藓覆盖\nis-a 高山苔壳（上位：巨人山脉废墟）\n🎬 苔壳厚厚 / 石头穿绿衣 / 冰凉的软",
+      "x": -900,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n42",
+      "type": "text",
+      "text": "巨人山脉废墟被菌丝寄生\nis-a 雪白菌丝（上位：巨人山脉废墟）\n🎬 白丝缝石 / 菌丝联结巨岩 / 缝合者",
+      "x": -900,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n43",
+      "type": "text",
+      "text": "v3 内部功能空间\\n5项 · 功能区",
+      "x": -620,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n44",
+      "type": "text",
+      "text": "巨人山脉废墟被花蔓侵蚀中央空间\nis-a 巨厅开花（上位：巨人山脉废墟被花蔓侵蚀）\n🎬 巨厅中的小花丛 / 尺度对比 / 花在巨构中",
+      "x": -620,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n45",
+      "type": "text",
+      "text": "巨人山脉废墟被花蔓侵蚀祭坛空间\nis-a 巨坛生芽（上位：巨人山脉废墟被花蔓侵蚀）\n🎬 花蔓如帘坠巨坛 / 装饰过大的祭台 / 垂下的颜色",
+      "x": -620,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n46",
+      "type": "text",
+      "text": "巨人山脉废墟被花蔓侵蚀回廊空间\nis-a 巨廊花径（上位：巨人山脉废墟被花蔓侵蚀）\n🎬 裂缝中的花线 / 画在地上的虚线 / 被花标记的路",
+      "x": -620,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n47",
+      "type": "text",
+      "text": "巨人山脉废墟被花蔓侵蚀洗礼池\nis-a 巨池（上位：巨人山脉废墟被花蔓侵蚀）\n🎬 巨大的石盆水镜 / 花影落巨池 / 水的尺度对比",
+      "x": -620,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n48",
+      "type": "text",
+      "text": "巨人山脉废墟被花蔓侵蚀祈祷室\nis-a 巨人壁龛（上位：巨人山脉废墟被花蔓侵蚀）\n🎬 仰望的花 / 在高处的花 / 需要抬头才能看到的美丽",
+      "x": -620,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n49",
+      "type": "text",
+      "text": "v4 复合场景层\\n5项 · 版本变体",
+      "x": -340,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n50",
+      "type": "text",
+      "text": "巨人山脉废墟被花蔓侵蚀中央空间复合场景\nis-a 巨厅花心标准版（上位：中央空间）\n🎬 地面花眼 / 圆形花裂 / 标准大全景",
+      "x": -340,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n51",
+      "type": "text",
+      "text": "巨人山脉废墟被花蔓侵蚀中央空间镜面版\nis-a 巨厅花心倒影版（上位：中央空间）\n🎬 破碎水面 / 天空拼图在脚下 / 不规则倒影",
+      "x": -340,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n52",
+      "type": "text",
+      "text": "巨人山脉废墟被花蔓侵蚀中央空间沉水版\nis-a 巨厅花心水漫版（上位：中央空间）\n🎬 水下花根 / 花浮水面 / 雪水淹没",
+      "x": -340,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n53",
+      "type": "text",
+      "text": "巨人山脉废墟被花蔓侵蚀中央空间月光版\nis-a 巨厅花心月夜版（上位：中央空间）\n🎬 光柱中的花 / 半明半暗 / 月光锥",
+      "x": -340,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n54",
+      "type": "text",
+      "text": "巨人山脉废墟被花蔓侵蚀中央空间黑水版\nis-a 巨厅花心融雪版（上位：中央空间）\n🎬 灰水白花 / 污浊与纯洁共存",
+      "x": -340,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n55",
+      "type": "text",
+      "text": "🔩 构件 is-a 巨人山脉组成部分类目 ├ 🏛 山脉构件 ┤ 👗 配件/工具 ┤ ↔ 服装·建筑·场景·元素",
+      "x": 20,
+      "y": -700,
+      "width": 600,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "n56",
+      "type": "text",
+      "text": "🏛 山脉构件\n5项 · 结构/自然",
+      "x": 20,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n57",
+      "type": "text",
+      "text": "天然石拱桥\nis-a 山体自然形成的桥\n🎬 峡谷通路/绝景",
+      "x": 20,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n58",
+      "type": "text",
+      "text": "山壁栈道\nis-a 凿岩而成的小路\n🎬 攀登/通行/险路",
+      "x": 20,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n59",
+      "type": "text",
+      "text": "石制祭坛\nis-a 山顶祭祀台\n🎬 山神祭祀/供奉",
+      "x": 20,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n60",
+      "type": "text",
+      "text": "巨岩阶梯\nis-a 天然巨石阶梯\n🎬 向上的路径/朝圣",
+      "x": 20,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n61",
+      "type": "text",
+      "text": "云中索桥\nis-a 两峰之间的桥\n🎬 跨谷/险途/过渡",
+      "x": 20,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n62",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": 20,
+      "y": -115,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n63",
+      "type": "text",
+      "text": "👗 配件/工具\n4项 · 登山/生存",
+      "x": 300,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n64",
+      "type": "text",
+      "text": "登山绳索\nis-a 攀岩用绳\n🎬 攀爬/救援/连接",
+      "x": 300,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n65",
+      "type": "text",
+      "text": "铁制冰镐\nis-a 冰面工具\n🎬 攀冰/登山/求生",
+      "x": 300,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n66",
+      "type": "text",
+      "text": "火把\nis-a 照明工具\n🎬 山洞探险/夜间",
+      "x": 300,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n67",
+      "type": "text",
+      "text": "羊皮水袋\nis-a 高海拔水容器\n🎬 山间旅途/生存",
+      "x": 300,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n68",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": 300,
+      "y": -188,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n69",
+      "type": "text",
+      "text": "🎭 元素 is-a 巨人山脉视觉母题类目 ├ 🏔 山脉元素 ┤ 🦅 高山生物 ┤ 🌄 天象元素 ┤ ↔ 服装·建筑·场景·构件",
+      "x": 630,
+      "y": -700,
+      "width": 890,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "n70",
+      "type": "text",
+      "text": "🏔 山脉元素\n5项 · 地形/自然",
+      "x": 630,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n71",
+      "type": "text",
+      "text": "云海\nis-a 海拔高处云层\n🎬 山巅景观/巨人视野",
+      "x": 630,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n72",
+      "type": "text",
+      "text": "雪线\nis-a 积雪与裸岩分界\n🎬 高海拔界限/气候",
+      "x": 630,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n73",
+      "type": "text",
+      "text": "冰川\nis-a 移动的冰河\n🎬 寒冷/时间/移动",
+      "x": 630,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n74",
+      "type": "text",
+      "text": "岩壁\nis-a 垂直的岩石面\n🎬 攀登/阻挡/景观",
+      "x": 630,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n75",
+      "type": "text",
+      "text": "顶峰\nis-a 山脉最高点\n🎬 目标/成就/俯瞰",
+      "x": 630,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n76",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": 630,
+      "y": -115,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n77",
+      "type": "text",
+      "text": "🦅 高山生物\n4项 · 鸟/兽",
+      "x": 910,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n78",
+      "type": "text",
+      "text": "巨鹰\nis-a 大型猛禽\n🎬 高山之主/天空之王",
+      "x": 910,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n79",
+      "type": "text",
+      "text": "山羊\nis-a 山地攀爬动物\n🎬 峭壁行走/敏捷",
+      "x": 910,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n80",
+      "type": "text",
+      "text": "雪豹\nis-a 高海拔猫科\n🎬 孤独/隐秘/危险",
+      "x": 910,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n81",
+      "type": "text",
+      "text": "旱獭\nis-a 穴居高山动物\n🎬 草地生活/哨兵",
+      "x": 910,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n82",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": 910,
+      "y": -188,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n83",
+      "type": "text",
+      "text": "🌄 天象元素\n4项 · 光/云/季节",
+      "x": 1190,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n84",
+      "type": "text",
+      "text": "日照金山\nis-a 夕阳金光照山\n🎬 神圣/壮丽/短暂",
+      "x": 1190,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n85",
+      "type": "text",
+      "text": "云中彩虹\nis-a 山间虹桥\n🎬 希望/吉祥/联通",
+      "x": 1190,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n86",
+      "type": "text",
+      "text": "暴风雪\nis-a 山上强风加雪\n🎬 危险/封闭/考验",
+      "x": 1190,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n87",
+      "type": "text",
+      "text": "星空银河\nis-a 高海拔星空\n🎬 清澈/辽阔/永恒",
+      "x": 1190,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n88",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": 1190,
+      "y": -188,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n89",
+      "type": "text",
+      "text": "🔍 检索关键词弹药库\n\nEN Prompt Keywords\ngiant mountain realm\ncolossal scale architecture\nbetween sky and earth\ncloud sea at dawn\nmountain giant culture\nrough stone monoliths",
+      "x": 1570,
+      "y": -780,
+      "width": 280,
+      "height": 300,
+      "color": "6"
+    },
+    {
+      "id": "n90",
+      "type": "text",
+      "text": "CN 意象脑暴词\n巨人山脉·巨物尺度\n在云海中行走的巨人\n山峰间的石桥连接天际\n巨人的石桌上放着云\n山腰的洞窟是巨人的家\n每一步大地都在震动\n你看不到巨人的全貌",
+      "x": 1950,
+      "y": -850,
+      "width": 280,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n91",
+      "type": "text",
+      "text": "📊 十元映射简表\n类别  形        色       质        光       空\n服装 粗犷宽大 灰褐石色 兽皮粗毛  天光云影   宽大笨重\n建筑 巨石结构 灰白石色 粗糙石块   外光明亮   巨大空旷\n场景 辽阔雄伟 蓝灰白雪 岩石冰雪   云光交错   巨大尺度\n构件 笨重粗糙 岩灰白雪 粗凿岩石   环境反光   厚重巨大\n元素 山峦符号 灰白雪色 岩石冰雪   天光反射   崇高象征",
+      "x": 1570,
+      "y": -450,
+      "width": 640,
+      "height": 225,
+      "color": "6"
+    },
+    {
+      "id": "n92",
+      "type": "text",
+      "text": "📎 完整数据见 is-a.md\n含全部服装+建筑+场景+构件+元素\n以及十元映射简表和Prompt检索词",
+      "x": 1570,
+      "y": -190,
+      "width": 460,
+      "height": 100,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_root_def",
+      "fromNode": "n1",
+      "fromSide": "bottom",
+      "toNode": "n2",
+      "toSide": "top"
+    },
+    {
+      "id": "em_clothing",
+      "fromNode": "n2",
+      "fromSide": "left",
+      "toNode": "n3",
+      "toSide": "right"
+    },
+    {
+      "id": "e_cl_0_h",
+      "fromNode": "n3",
+      "fromSide": "bottom",
+      "toNode": "n4",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_0_0",
+      "fromNode": "n4",
+      "fromSide": "bottom",
+      "toNode": "n5",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_0_1",
+      "fromNode": "n5",
+      "fromSide": "bottom",
+      "toNode": "n6",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_0_2",
+      "fromNode": "n6",
+      "fromSide": "bottom",
+      "toNode": "n7",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_0_3",
+      "fromNode": "n7",
+      "fromSide": "bottom",
+      "toNode": "n8",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_0_4",
+      "fromNode": "n8",
+      "fromSide": "bottom",
+      "toNode": "n9",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_0_m",
+      "fromNode": "n9",
+      "fromSide": "bottom",
+      "toNode": "n10",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_h",
+      "fromNode": "n3",
+      "fromSide": "bottom",
+      "toNode": "n11",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_0",
+      "fromNode": "n11",
+      "fromSide": "bottom",
+      "toNode": "n12",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_1",
+      "fromNode": "n12",
+      "fromSide": "bottom",
+      "toNode": "n13",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_2",
+      "fromNode": "n13",
+      "fromSide": "bottom",
+      "toNode": "n14",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_3",
+      "fromNode": "n14",
+      "fromSide": "bottom",
+      "toNode": "n15",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_m",
+      "fromNode": "n15",
+      "fromSide": "bottom",
+      "toNode": "n16",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_2_h",
+      "fromNode": "n3",
+      "fromSide": "bottom",
+      "toNode": "n17",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_2_0",
+      "fromNode": "n17",
+      "fromSide": "bottom",
+      "toNode": "n18",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_2_1",
+      "fromNode": "n18",
+      "fromSide": "bottom",
+      "toNode": "n19",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_2_2",
+      "fromNode": "n19",
+      "fromSide": "bottom",
+      "toNode": "n20",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_2_3",
+      "fromNode": "n20",
+      "fromSide": "bottom",
+      "toNode": "n21",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_2_m",
+      "fromNode": "n21",
+      "fromSide": "bottom",
+      "toNode": "n22",
+      "toSide": "top"
+    },
+    {
+      "id": "em_arch",
+      "fromNode": "n3",
+      "fromSide": "right",
+      "toNode": "n23",
+      "toSide": "left"
+    },
+    {
+      "id": "e_ar_0_h",
+      "fromNode": "n23",
+      "fromSide": "bottom",
+      "toNode": "n24",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_0_0",
+      "fromNode": "n24",
+      "fromSide": "bottom",
+      "toNode": "n25",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_0_1",
+      "fromNode": "n25",
+      "fromSide": "bottom",
+      "toNode": "n26",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_0_2",
+      "fromNode": "n26",
+      "fromSide": "bottom",
+      "toNode": "n27",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_0_3",
+      "fromNode": "n27",
+      "fromSide": "bottom",
+      "toNode": "n28",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_0_4",
+      "fromNode": "n28",
+      "fromSide": "bottom",
+      "toNode": "n29",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_0_5",
+      "fromNode": "n29",
+      "fromSide": "bottom",
+      "toNode": "n30",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_1_h",
+      "fromNode": "n23",
+      "fromSide": "bottom",
+      "toNode": "n31",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_1_0",
+      "fromNode": "n31",
+      "fromSide": "bottom",
+      "toNode": "n32",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_1_1",
+      "fromNode": "n32",
+      "fromSide": "bottom",
+      "toNode": "n33",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_1_2",
+      "fromNode": "n33",
+      "fromSide": "bottom",
+      "toNode": "n34",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_1_3",
+      "fromNode": "n34",
+      "fromSide": "bottom",
+      "toNode": "n35",
+      "toSide": "top"
+    },
+    {
+      "id": "em_scene",
+      "fromNode": "n23",
+      "fromSide": "right",
+      "toNode": "n36",
+      "toSide": "left"
+    },
+    {
+      "id": "e_sc_0_h",
+      "fromNode": "n36",
+      "fromSide": "bottom",
+      "toNode": "n37",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_0_0",
+      "fromNode": "n37",
+      "fromSide": "bottom",
+      "toNode": "n38",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_0_1",
+      "fromNode": "n38",
+      "fromSide": "bottom",
+      "toNode": "n39",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_0_2",
+      "fromNode": "n39",
+      "fromSide": "bottom",
+      "toNode": "n40",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_0_3",
+      "fromNode": "n40",
+      "fromSide": "bottom",
+      "toNode": "n41",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_0_4",
+      "fromNode": "n41",
+      "fromSide": "bottom",
+      "toNode": "n42",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_1_h",
+      "fromNode": "n36",
+      "fromSide": "bottom",
+      "toNode": "n43",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_1_0",
+      "fromNode": "n43",
+      "fromSide": "bottom",
+      "toNode": "n44",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_1_1",
+      "fromNode": "n44",
+      "fromSide": "bottom",
+      "toNode": "n45",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_1_2",
+      "fromNode": "n45",
+      "fromSide": "bottom",
+      "toNode": "n46",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_1_3",
+      "fromNode": "n46",
+      "fromSide": "bottom",
+      "toNode": "n47",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_1_4",
+      "fromNode": "n47",
+      "fromSide": "bottom",
+      "toNode": "n48",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_2_h",
+      "fromNode": "n36",
+      "fromSide": "bottom",
+      "toNode": "n49",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_2_0",
+      "fromNode": "n49",
+      "fromSide": "bottom",
+      "toNode": "n50",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_2_1",
+      "fromNode": "n50",
+      "fromSide": "bottom",
+      "toNode": "n51",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_2_2",
+      "fromNode": "n51",
+      "fromSide": "bottom",
+      "toNode": "n52",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_2_3",
+      "fromNode": "n52",
+      "fromSide": "bottom",
+      "toNode": "n53",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_2_4",
+      "fromNode": "n53",
+      "fromSide": "bottom",
+      "toNode": "n54",
+      "toSide": "top"
+    },
+    {
+      "id": "em_comp",
+      "fromNode": "n36",
+      "fromSide": "right",
+      "toNode": "n55",
+      "toSide": "left"
+    },
+    {
+      "id": "e_cp_0_h",
+      "fromNode": "n55",
+      "fromSide": "bottom",
+      "toNode": "n56",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_0_0",
+      "fromNode": "n56",
+      "fromSide": "bottom",
+      "toNode": "n57",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_0_1",
+      "fromNode": "n57",
+      "fromSide": "bottom",
+      "toNode": "n58",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_0_2",
+      "fromNode": "n58",
+      "fromSide": "bottom",
+      "toNode": "n59",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_0_3",
+      "fromNode": "n59",
+      "fromSide": "bottom",
+      "toNode": "n60",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_0_4",
+      "fromNode": "n60",
+      "fromSide": "bottom",
+      "toNode": "n61",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_0_m",
+      "fromNode": "n61",
+      "fromSide": "bottom",
+      "toNode": "n62",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_1_h",
+      "fromNode": "n55",
+      "fromSide": "bottom",
+      "toNode": "n63",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_1_0",
+      "fromNode": "n63",
+      "fromSide": "bottom",
+      "toNode": "n64",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_1_1",
+      "fromNode": "n64",
+      "fromSide": "bottom",
+      "toNode": "n65",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_1_2",
+      "fromNode": "n65",
+      "fromSide": "bottom",
+      "toNode": "n66",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_1_3",
+      "fromNode": "n66",
+      "fromSide": "bottom",
+      "toNode": "n67",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_1_m",
+      "fromNode": "n67",
+      "fromSide": "bottom",
+      "toNode": "n68",
+      "toSide": "top"
+    },
+    {
+      "id": "em_elem",
+      "fromNode": "n55",
+      "fromSide": "right",
+      "toNode": "n69",
+      "toSide": "left"
+    },
+    {
+      "id": "e_el_0_h",
+      "fromNode": "n69",
+      "fromSide": "bottom",
+      "toNode": "n70",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_0_0",
+      "fromNode": "n70",
+      "fromSide": "bottom",
+      "toNode": "n71",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_0_1",
+      "fromNode": "n71",
+      "fromSide": "bottom",
+      "toNode": "n72",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_0_2",
+      "fromNode": "n72",
+      "fromSide": "bottom",
+      "toNode": "n73",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_0_3",
+      "fromNode": "n73",
+      "fromSide": "bottom",
+      "toNode": "n74",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_0_4",
+      "fromNode": "n74",
+      "fromSide": "bottom",
+      "toNode": "n75",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_0_m",
+      "fromNode": "n75",
+      "fromSide": "bottom",
+      "toNode": "n76",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_1_h",
+      "fromNode": "n69",
+      "fromSide": "bottom",
+      "toNode": "n77",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_1_0",
+      "fromNode": "n77",
+      "fromSide": "bottom",
+      "toNode": "n78",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_1_1",
+      "fromNode": "n78",
+      "fromSide": "bottom",
+      "toNode": "n79",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_1_2",
+      "fromNode": "n79",
+      "fromSide": "bottom",
+      "toNode": "n80",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_1_3",
+      "fromNode": "n80",
+      "fromSide": "bottom",
+      "toNode": "n81",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_1_m",
+      "fromNode": "n81",
+      "fromSide": "bottom",
+      "toNode": "n82",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_2_h",
+      "fromNode": "n69",
+      "fromSide": "bottom",
+      "toNode": "n83",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_2_0",
+      "fromNode": "n83",
+      "fromSide": "bottom",
+      "toNode": "n84",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_2_1",
+      "fromNode": "n84",
+      "fromSide": "bottom",
+      "toNode": "n85",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_2_2",
+      "fromNode": "n85",
+      "fromSide": "bottom",
+      "toNode": "n86",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_2_3",
+      "fromNode": "n86",
+      "fromSide": "bottom",
+      "toNode": "n87",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_2_m",
+      "fromNode": "n87",
+      "fromSide": "bottom",
+      "toNode": "n88",
+      "toSide": "top"
+    },
+    {
+      "id": "e_p_en_cn",
+      "fromNode": "n89",
+      "fromSide": "right",
+      "toNode": "n90",
+      "toSide": "left"
+    },
+    {
+      "id": "e_p_en_ty",
+      "fromNode": "n89",
+      "fromSide": "bottom",
+      "toNode": "n91",
+      "toSide": "top"
+    },
+    {
+      "id": "e_note",
+      "fromNode": "n91",
+      "fromSide": "bottom",
+      "toNode": "n92",
+      "toSide": "top"
+    }
+  ]
+}

@@ -1,0 +1,1573 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "text",
+      "text": "⚔ 骑士王国 is-a 名词素材库\n        骑士王国 — zx+xn",
+      "x": -200,
+      "y": -950,
+      "width": 480,
+      "height": 80,
+      "color": "1"
+    },
+    {
+      "id": "n2",
+      "type": "text",
+      "text": "📖 风格定义\nis-a 因果视觉风格\n骑士精神·战争荣誉\n骑士/城堡/剑与盾/领主",
+      "x": -160,
+      "y": -850,
+      "width": 260,
+      "height": 110,
+      "color": "6"
+    },
+    {
+      "id": "n3",
+      "type": "text",
+      "text": "👗 服装 is-a 骑士王国角色造型类目 ├ ⚔ 骑士铠甲 ┤ 👑 贵族领主 ┤ 👩 侍女日常 ┤ ↔ 服装·建筑·场景·构件·元素",
+      "x": -2400,
+      "y": -700,
+      "width": 890,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "n4",
+      "type": "text",
+      "text": "⚔ 骑士铠甲\n5项 · 板甲/锁子甲",
+      "x": -2400,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n5",
+      "type": "text",
+      "text": "全身板甲\nis-a 骑士标准战甲\n🎬 骑士列阵/冲锋",
+      "x": -2400,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n6",
+      "type": "text",
+      "text": "锁子甲内衬\nis-a 金属环编甲\n🎬 骑士日常巡逻",
+      "x": -2400,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n7",
+      "type": "text",
+      "text": "狮鹫纹头盔\nis-a 全覆面头盔\n🎬 重装骑兵冲锋",
+      "x": -2400,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n8",
+      "type": "text",
+      "text": "十字军罩袍\nis-a 宗教骑士外套\n🎬 圣战/宗教护卫",
+      "x": -2400,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n9",
+      "type": "text",
+      "text": "银护膝铁靴\nis-a 腿部防护\n🎬 徒步战斗/装备细节",
+      "x": -2400,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n10",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": -2400,
+      "y": -115,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n11",
+      "type": "text",
+      "text": "👑 贵族领主\n5项 · 皇室/治理",
+      "x": -2120,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n12",
+      "type": "text",
+      "text": "紫色天鹅绒袍\nis-a 大领主礼服\n🎬 领主在王座厅",
+      "x": -2120,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n13",
+      "type": "text",
+      "text": "金链勋章礼服\nis-a 伯爵正装\n🎬 领主出席议会",
+      "x": -2120,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n14",
+      "type": "text",
+      "text": "貂毛镶边长袍\nis-a 王室贵族袍\n🎬 国王加冕/宣战",
+      "x": -2120,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n15",
+      "type": "text",
+      "text": "丝绒软帽羽毛\nis-a 贵族日常帽\n🎬 贵族在庭院散步",
+      "x": -2120,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n16",
+      "type": "text",
+      "text": "皮质镶金腰带\nis-a 领主配件\n🎬 贵族日常/佩剑",
+      "x": -2120,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n17",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": -2120,
+      "y": -115,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n18",
+      "type": "text",
+      "text": "👩 侍女日常\n4项 · 女性/平民",
+      "x": -1840,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n19",
+      "type": "text",
+      "text": "亚麻布长裙\nis-a 侍女日常服\n🎬 侍女在城堡忙碌",
+      "x": -1840,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n20",
+      "type": "text",
+      "text": "围裙头巾\nis-a 厨房女工装\n🎬 厨房准备/膳食",
+      "x": -1840,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n21",
+      "type": "text",
+      "text": "羊毛披肩\nis-a 保暖外披\n🎬 在寒冷走廊穿过",
+      "x": -1840,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n22",
+      "type": "text",
+      "text": "布鞋皮底\nis-a 日常平底鞋\n🎬 在石板路上行走",
+      "x": -1840,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n23",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": -1840,
+      "y": -188,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n24",
+      "type": "text",
+      "text": "🏛️ 建筑 is-a 骑士王国空间场景类目 ├ v0空间母体 ┤ v1典型空间 ┤ ↔ 服装·场景·构件·元素",
+      "x": -1510,
+      "y": -700,
+      "width": 600,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "n25",
+      "type": "text",
+      "text": "v0 空间母体层\\n6项 · 核心空间",
+      "x": -1510,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n26",
+      "type": "text",
+      "text": "白石王城\nis-a 王国首都城堡\n🎬 王国全景 / 王城光景 / 国家首都",
+      "x": -1510,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n27",
+      "type": "text",
+      "text": "骑士誓约厅\nis-a 骑士册封厅\n🎬 册封仪式 / 骑士宣誓 / 立下誓言",
+      "x": -1510,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n28",
+      "type": "text",
+      "text": "王座大厅\nis-a 君主正式接见厅\n🎬 接见群臣 / 审判 / 王权之座",
+      "x": -1510,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n29",
+      "type": "text",
+      "text": "训练校场\nis-a 骑士训练场\n🎬 日常训练 / 新兵较量 / 备战状态",
+      "x": -1510,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n30",
+      "type": "text",
+      "text": "护城桥\nis-a 城堡入口桥\n🎬 入城场景 / 迎接队伍 / 屏障升起",
+      "x": -1510,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n31",
+      "type": "text",
+      "text": "边境堡垒\nis-a 前线防御工事\n🎬 前线 / 防守 / 信号",
+      "x": -1510,
+      "y": -115,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n32",
+      "type": "text",
+      "text": "v1 典型空间层\\n4项 · 废墟/空间",
+      "x": -1230,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n33",
+      "type": "text",
+      "text": "白石王城废墟\nis-a 废弃白石城（上位：白石王城）\n🎬 城堡陷落后的样子 / 火烧残壁 / 王国落幕",
+      "x": -1230,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n34",
+      "type": "text",
+      "text": "白石王城圣所\nis-a 废弃王城圣堂（上位：白石王城）\n🎬 荒废的圣堂 / 彩窗碎落 / 信仰离席",
+      "x": -1230,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n35",
+      "type": "text",
+      "text": "白石王城大厅\nis-a 废弃王城大厅（上位：白石王城）\n🎬 被洗劫的大厅 / 王座倾覆 / 败亡的景象",
+      "x": -1230,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n36",
+      "type": "text",
+      "text": "白石王城回廊\nis-a 废弃王城走廊（上位：白石王城）\n🎬 盔甲散落 / 走廊如战场 / 无人收殓",
+      "x": -1230,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n37",
+      "type": "text",
+      "text": "🌄 场景 is-a 骑士王国镜头情境类目 ├ v2状态侵蚀 ┤ v3内部功能 ┤ v4复合场景 ┤ ↔ 服装·建筑·构件·元素",
+      "x": -900,
+      "y": -700,
+      "width": 900,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "n38",
+      "type": "text",
+      "text": "v2 状态侵蚀层\\n5项 · 自然/超自然改造",
+      "x": -900,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n39",
+      "type": "text",
+      "text": "白石王城废墟被花蔓侵蚀\nis-a 白花上城（上位：白石王城废墟）\n🎬 白花白石 / 石头开花 / 温柔收复",
+      "x": -900,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n40",
+      "type": "text",
+      "text": "白石王城废墟被荆棘缠绕\nis-a 黑色荆棘缠城（上位：白石王城废墟）\n🎬 荆棘如旗 / 植物占领城堡 / 自然的城旗",
+      "x": -900,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n41",
+      "type": "text",
+      "text": "白石王城废墟被树根穿刺\nis-a 树根破墙（上位：白石王城废墟）\n🎬 根系爬墙 / 根部如蛇 / 墙被撑裂",
+      "x": -900,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n42",
+      "type": "text",
+      "text": "白石王城废墟被苔藓覆盖\nis-a 绿苔覆城（上位：白石王城废墟）\n🎬 北墙全绿 / 城堡像山 / 归回自然",
+      "x": -900,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n43",
+      "type": "text",
+      "text": "白石王城废墟被菌丝寄生\nis-a 光菌墙绘（上位：白石王城废墟）\n🎬 发光菌绘 / 夜中的蓝色纹路 / 自然的壁画",
+      "x": -900,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n44",
+      "type": "text",
+      "text": "v3 内部功能空间\\n5项 · 功能区",
+      "x": -620,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n45",
+      "type": "text",
+      "text": "白石王城废墟被花蔓侵蚀中央空间\nis-a 白花王座厅（上位：白石王城废墟被花蔓侵蚀）\n🎬 花画王座 / 白色的王座轮廓 / 空位的花框",
+      "x": -620,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n46",
+      "type": "text",
+      "text": "白石王城废墟被花蔓侵蚀祭坛空间\nis-a 白花祭台（上位：白石王城废墟被花蔓侵蚀）\n🎬 碎彩窗长出白花 / 玻璃成花盆 / 光穿过花与玻璃",
+      "x": -620,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n47",
+      "type": "text",
+      "text": "白石王城废墟被花蔓侵蚀回廊空间\nis-a 白花盔甲廊（上位：白石王城废墟被花蔓侵蚀）\n🎬 花从盔甲眼中出 / 盔甲开花 / 死亡的美丽",
+      "x": -620,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n48",
+      "type": "text",
+      "text": "白石王城废墟被花蔓侵蚀洗礼池\nis-a 白花洗剑池（上位：白石王城废墟被花蔓侵蚀）\n🎬 干池花满 / 池中无只有花 / 植物代替了水",
+      "x": -620,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n49",
+      "type": "text",
+      "text": "白石王城废墟被花蔓侵蚀祈祷室\nis-a 白花小堂（上位：白石王城废墟被花蔓侵蚀）\n🎬 花垫长椅 / 花的座位 / 空位待坐",
+      "x": -620,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n50",
+      "type": "text",
+      "text": "v4 复合场景层\\n5项 · 版本变体",
+      "x": -340,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n51",
+      "type": "text",
+      "text": "白石王城废墟被花蔓侵蚀中央空间复合场景\nis-a 白花王座标准版（上位：中央空间）\n🎬 空位花光 / 王座的继承者不在 / 标准大全景",
+      "x": -340,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n52",
+      "type": "text",
+      "text": "白石王城废墟被花蔓侵蚀中央空间镜面版\nis-a 白花王座倒影版（上位：中央空间）\n🎬 水下另一座王座厅 / 镜中的加倍繁花",
+      "x": -340,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n53",
+      "type": "text",
+      "text": "白石王城废墟被花蔓侵蚀中央空间沉水版\nis-a 白花王座水淹版（上位：中央空间）\n🎬 花从水中出 / 水花相连 / 王座泡在水中",
+      "x": -340,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n54",
+      "type": "text",
+      "text": "白石王城废墟被花蔓侵蚀中央空间月光版\nis-a 白花王座月夜版（上位：中央空间）\n🎬 花与月同色 / 月下的白色王国 / 银白交融",
+      "x": -340,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n55",
+      "type": "text",
+      "text": "白石王城废墟被花蔓侵蚀中央空间黑水版\nis-a 白花王座火焚版（上位：中央空间）\n🎬 黑土白花 / 火烧后重生 / 黑与白",
+      "x": -340,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "n56",
+      "type": "text",
+      "text": "🔩 构件 is-a 骑士王国组成部分类目 ├ 🏛 城堡构件 ┤ 👗 配件/装备 ┤ ↔ 服装·建筑·场景·元素",
+      "x": 20,
+      "y": -700,
+      "width": 600,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "n57",
+      "type": "text",
+      "text": "🏛 城堡构件\n5项 · 防御/结构",
+      "x": 20,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n58",
+      "type": "text",
+      "text": "雉堞城垛\nis-a 城墙上的防御\n🎬 城防/射击位/巡逻",
+      "x": 20,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n59",
+      "type": "text",
+      "text": "吊桥铁链\nis-a 可升降桥\n🎬 城门开关/防御",
+      "x": 20,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n60",
+      "type": "text",
+      "text": "铁闸门\nis-a 垂直落下的门\n🎬 城门/监狱入口",
+      "x": 20,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n61",
+      "type": "text",
+      "text": "石砌螺旋梯\nis-a 塔楼内部楼梯\n🎬 上下塔楼/防御",
+      "x": 20,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n62",
+      "type": "text",
+      "text": "家族旗帜\nis-a 刺绣纹章旗\n🎬 身份标志/战场识别",
+      "x": 20,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "n63",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": 20,
+      "y": -115,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n64",
+      "type": "text",
+      "text": "👗 配件/装备\n4项 · 武器/日常",
+      "x": 300,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n65",
+      "type": "text",
+      "text": "长剑\nis-a 双手直剑\n🎬 骑士装备/战斗/仪式",
+      "x": 300,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n66",
+      "type": "text",
+      "text": "盾牌纹章\nis-a 家族徽记盾\n🎬 防御/身份/骑士精神",
+      "x": 300,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n67",
+      "type": "text",
+      "text": "马刺\nis-a 骑马用刺靴\n🎬 骑士骑马/冲锋",
+      "x": 300,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n68",
+      "type": "text",
+      "text": "号角\nis-a 吹奏信号器\n🎬 战争号令/宣告",
+      "x": 300,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n69",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": 300,
+      "y": -188,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n70",
+      "type": "text",
+      "text": "🎭 元素 is-a 骑士王国视觉母题类目 ├ 🏴 骑士符号 ┤ 🏇 战场元素 ┤ 🌾 乡村生活 ┤ ↔ 服装·建筑·场景·构件",
+      "x": 630,
+      "y": -700,
+      "width": 890,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "n71",
+      "type": "text",
+      "text": "🏴 骑士符号\n5项 · 徽记/荣誉",
+      "x": 630,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n72",
+      "type": "text",
+      "text": "狮鹫纹章\nis-a 王室/骑士团徽\n🎬 家族纹章/旗帜",
+      "x": 630,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n73",
+      "type": "text",
+      "text": "王冠\nis-a 王权冠冕\n🎬 王权/加冕/权力",
+      "x": 630,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n74",
+      "type": "text",
+      "text": "剑与天平\nis-a 正义象征\n🎬 公正/骑士精神",
+      "x": 630,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n75",
+      "type": "text",
+      "text": "十字架\nis-a 宗教符号\n🎬 信仰/圣战/祈祷",
+      "x": 630,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n76",
+      "type": "text",
+      "text": "玫瑰\nis-a 英格兰王权花\n🎬 权力/爱情/战争起因",
+      "x": 630,
+      "y": -188,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "n77",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": 630,
+      "y": -115,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n78",
+      "type": "text",
+      "text": "🏇 战场元素\n4项 · 马/阵/地",
+      "x": 910,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n79",
+      "type": "text",
+      "text": "战马\nis-a 武装战马\n🎬 骑兵/冲锋/骑士伙伴",
+      "x": 910,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n80",
+      "type": "text",
+      "text": "长矛阵\nis-a 成排的长矛\n🎬 步兵方阵/武器墙",
+      "x": 910,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n81",
+      "type": "text",
+      "text": "投石机\nis-a 攻城器械\n🎬 攻城/围城/破坏",
+      "x": 910,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n82",
+      "type": "text",
+      "text": "营地篝火\nis-a 夜晚营地\n🎬 战前集合/休息",
+      "x": 910,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "n83",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": 910,
+      "y": -188,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n84",
+      "type": "text",
+      "text": "🌾 乡村生活\n4项 · 丰收/日常",
+      "x": 1190,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n85",
+      "type": "text",
+      "text": "麦田\nis-a 金黄作物\n🎬 丰收/宁静/乡村",
+      "x": 1190,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n86",
+      "type": "text",
+      "text": "风车\nis-a 风力磨坊\n🎬 乡村景观/日常",
+      "x": 1190,
+      "y": -407,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n87",
+      "type": "text",
+      "text": "市集帐篷\nis-a 布棚摊位\n🎬 平民生活/交易",
+      "x": 1190,
+      "y": -334,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n88",
+      "type": "text",
+      "text": "教堂钟声\nis-a 钟楼的声音\n🎬 祈祷/时间/信号",
+      "x": 1190,
+      "y": -261,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "n89",
+      "type": "text",
+      "text": "📎 更多\n→ 按需扩展此子分类",
+      "x": 1190,
+      "y": -188,
+      "width": 250,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "n90",
+      "type": "text",
+      "text": "🔍 检索关键词弹药库\n\nEN Prompt Keywords\nknight kingdom style\nmedieval chivalry\nstone castle siege\nknight in shining armor\nbanner and crest\njousting tournament",
+      "x": 1570,
+      "y": -780,
+      "width": 280,
+      "height": 300,
+      "color": "6"
+    },
+    {
+      "id": "n91",
+      "type": "text",
+      "text": "CN 意象脑暴词\n骑士王国·战争荣誉\n灰色石墙上的家族旗\n骑士盔甲在阳光下闪光\n战场上翻滚的马蹄烟尘\n城堡大厅的火炉与鹿头\n侍女的长裙扫过石板地\n领主的铁手套拍在桌上",
+      "x": 1950,
+      "y": -850,
+      "width": 280,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n92",
+      "type": "text",
+      "text": "📊 十元映射简表\n类别  形        色       质        光       空\n服装 重甲刚毅 银灰钢铁 金属皮革   剑光反射   挺拔直立\n建筑 坚实厚重 灰褐石色 粗石锻铁   窗口透光   防御横向\n场景 战场景色 灰蓝赤红 尘土泥泞   阳光刺目   开阔战场\n构件 厚重铁艺 铁灰银光 锻铁石刻   反光剑刃   横向垂直\n元素 徽章符号 金银铁色 钢铁皮革   晨光剑光   防线秩序",
+      "x": 1570,
+      "y": -450,
+      "width": 640,
+      "height": 225,
+      "color": "6"
+    },
+    {
+      "id": "n93",
+      "type": "text",
+      "text": "📎 完整数据见 is-a.md\n含全部服装+建筑+场景+构件+元素\n以及十元映射简表和Prompt检索词",
+      "x": 1570,
+      "y": -190,
+      "width": 460,
+      "height": 100,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_root_def",
+      "fromNode": "n1",
+      "fromSide": "bottom",
+      "toNode": "n2",
+      "toSide": "top"
+    },
+    {
+      "id": "em_clothing",
+      "fromNode": "n2",
+      "fromSide": "left",
+      "toNode": "n3",
+      "toSide": "right"
+    },
+    {
+      "id": "e_cl_0_h",
+      "fromNode": "n3",
+      "fromSide": "bottom",
+      "toNode": "n4",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_0_0",
+      "fromNode": "n4",
+      "fromSide": "bottom",
+      "toNode": "n5",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_0_1",
+      "fromNode": "n5",
+      "fromSide": "bottom",
+      "toNode": "n6",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_0_2",
+      "fromNode": "n6",
+      "fromSide": "bottom",
+      "toNode": "n7",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_0_3",
+      "fromNode": "n7",
+      "fromSide": "bottom",
+      "toNode": "n8",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_0_4",
+      "fromNode": "n8",
+      "fromSide": "bottom",
+      "toNode": "n9",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_0_m",
+      "fromNode": "n9",
+      "fromSide": "bottom",
+      "toNode": "n10",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_h",
+      "fromNode": "n3",
+      "fromSide": "bottom",
+      "toNode": "n11",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_0",
+      "fromNode": "n11",
+      "fromSide": "bottom",
+      "toNode": "n12",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_1",
+      "fromNode": "n12",
+      "fromSide": "bottom",
+      "toNode": "n13",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_2",
+      "fromNode": "n13",
+      "fromSide": "bottom",
+      "toNode": "n14",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_3",
+      "fromNode": "n14",
+      "fromSide": "bottom",
+      "toNode": "n15",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_4",
+      "fromNode": "n15",
+      "fromSide": "bottom",
+      "toNode": "n16",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_1_m",
+      "fromNode": "n16",
+      "fromSide": "bottom",
+      "toNode": "n17",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_2_h",
+      "fromNode": "n3",
+      "fromSide": "bottom",
+      "toNode": "n18",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_2_0",
+      "fromNode": "n18",
+      "fromSide": "bottom",
+      "toNode": "n19",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_2_1",
+      "fromNode": "n19",
+      "fromSide": "bottom",
+      "toNode": "n20",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_2_2",
+      "fromNode": "n20",
+      "fromSide": "bottom",
+      "toNode": "n21",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_2_3",
+      "fromNode": "n21",
+      "fromSide": "bottom",
+      "toNode": "n22",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cl_2_m",
+      "fromNode": "n22",
+      "fromSide": "bottom",
+      "toNode": "n23",
+      "toSide": "top"
+    },
+    {
+      "id": "em_arch",
+      "fromNode": "n3",
+      "fromSide": "right",
+      "toNode": "n24",
+      "toSide": "left"
+    },
+    {
+      "id": "e_ar_0_h",
+      "fromNode": "n24",
+      "fromSide": "bottom",
+      "toNode": "n25",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_0_0",
+      "fromNode": "n25",
+      "fromSide": "bottom",
+      "toNode": "n26",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_0_1",
+      "fromNode": "n26",
+      "fromSide": "bottom",
+      "toNode": "n27",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_0_2",
+      "fromNode": "n27",
+      "fromSide": "bottom",
+      "toNode": "n28",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_0_3",
+      "fromNode": "n28",
+      "fromSide": "bottom",
+      "toNode": "n29",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_0_4",
+      "fromNode": "n29",
+      "fromSide": "bottom",
+      "toNode": "n30",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_0_5",
+      "fromNode": "n30",
+      "fromSide": "bottom",
+      "toNode": "n31",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_1_h",
+      "fromNode": "n24",
+      "fromSide": "bottom",
+      "toNode": "n32",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_1_0",
+      "fromNode": "n32",
+      "fromSide": "bottom",
+      "toNode": "n33",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_1_1",
+      "fromNode": "n33",
+      "fromSide": "bottom",
+      "toNode": "n34",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_1_2",
+      "fromNode": "n34",
+      "fromSide": "bottom",
+      "toNode": "n35",
+      "toSide": "top"
+    },
+    {
+      "id": "e_ar_1_3",
+      "fromNode": "n35",
+      "fromSide": "bottom",
+      "toNode": "n36",
+      "toSide": "top"
+    },
+    {
+      "id": "em_scene",
+      "fromNode": "n24",
+      "fromSide": "right",
+      "toNode": "n37",
+      "toSide": "left"
+    },
+    {
+      "id": "e_sc_0_h",
+      "fromNode": "n37",
+      "fromSide": "bottom",
+      "toNode": "n38",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_0_0",
+      "fromNode": "n38",
+      "fromSide": "bottom",
+      "toNode": "n39",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_0_1",
+      "fromNode": "n39",
+      "fromSide": "bottom",
+      "toNode": "n40",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_0_2",
+      "fromNode": "n40",
+      "fromSide": "bottom",
+      "toNode": "n41",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_0_3",
+      "fromNode": "n41",
+      "fromSide": "bottom",
+      "toNode": "n42",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_0_4",
+      "fromNode": "n42",
+      "fromSide": "bottom",
+      "toNode": "n43",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_1_h",
+      "fromNode": "n37",
+      "fromSide": "bottom",
+      "toNode": "n44",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_1_0",
+      "fromNode": "n44",
+      "fromSide": "bottom",
+      "toNode": "n45",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_1_1",
+      "fromNode": "n45",
+      "fromSide": "bottom",
+      "toNode": "n46",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_1_2",
+      "fromNode": "n46",
+      "fromSide": "bottom",
+      "toNode": "n47",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_1_3",
+      "fromNode": "n47",
+      "fromSide": "bottom",
+      "toNode": "n48",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_1_4",
+      "fromNode": "n48",
+      "fromSide": "bottom",
+      "toNode": "n49",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_2_h",
+      "fromNode": "n37",
+      "fromSide": "bottom",
+      "toNode": "n50",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_2_0",
+      "fromNode": "n50",
+      "fromSide": "bottom",
+      "toNode": "n51",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_2_1",
+      "fromNode": "n51",
+      "fromSide": "bottom",
+      "toNode": "n52",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_2_2",
+      "fromNode": "n52",
+      "fromSide": "bottom",
+      "toNode": "n53",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_2_3",
+      "fromNode": "n53",
+      "fromSide": "bottom",
+      "toNode": "n54",
+      "toSide": "top"
+    },
+    {
+      "id": "e_sc_2_4",
+      "fromNode": "n54",
+      "fromSide": "bottom",
+      "toNode": "n55",
+      "toSide": "top"
+    },
+    {
+      "id": "em_comp",
+      "fromNode": "n37",
+      "fromSide": "right",
+      "toNode": "n56",
+      "toSide": "left"
+    },
+    {
+      "id": "e_cp_0_h",
+      "fromNode": "n56",
+      "fromSide": "bottom",
+      "toNode": "n57",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_0_0",
+      "fromNode": "n57",
+      "fromSide": "bottom",
+      "toNode": "n58",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_0_1",
+      "fromNode": "n58",
+      "fromSide": "bottom",
+      "toNode": "n59",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_0_2",
+      "fromNode": "n59",
+      "fromSide": "bottom",
+      "toNode": "n60",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_0_3",
+      "fromNode": "n60",
+      "fromSide": "bottom",
+      "toNode": "n61",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_0_4",
+      "fromNode": "n61",
+      "fromSide": "bottom",
+      "toNode": "n62",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_0_m",
+      "fromNode": "n62",
+      "fromSide": "bottom",
+      "toNode": "n63",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_1_h",
+      "fromNode": "n56",
+      "fromSide": "bottom",
+      "toNode": "n64",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_1_0",
+      "fromNode": "n64",
+      "fromSide": "bottom",
+      "toNode": "n65",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_1_1",
+      "fromNode": "n65",
+      "fromSide": "bottom",
+      "toNode": "n66",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_1_2",
+      "fromNode": "n66",
+      "fromSide": "bottom",
+      "toNode": "n67",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_1_3",
+      "fromNode": "n67",
+      "fromSide": "bottom",
+      "toNode": "n68",
+      "toSide": "top"
+    },
+    {
+      "id": "e_cp_1_m",
+      "fromNode": "n68",
+      "fromSide": "bottom",
+      "toNode": "n69",
+      "toSide": "top"
+    },
+    {
+      "id": "em_elem",
+      "fromNode": "n56",
+      "fromSide": "right",
+      "toNode": "n70",
+      "toSide": "left"
+    },
+    {
+      "id": "e_el_0_h",
+      "fromNode": "n70",
+      "fromSide": "bottom",
+      "toNode": "n71",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_0_0",
+      "fromNode": "n71",
+      "fromSide": "bottom",
+      "toNode": "n72",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_0_1",
+      "fromNode": "n72",
+      "fromSide": "bottom",
+      "toNode": "n73",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_0_2",
+      "fromNode": "n73",
+      "fromSide": "bottom",
+      "toNode": "n74",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_0_3",
+      "fromNode": "n74",
+      "fromSide": "bottom",
+      "toNode": "n75",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_0_4",
+      "fromNode": "n75",
+      "fromSide": "bottom",
+      "toNode": "n76",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_0_m",
+      "fromNode": "n76",
+      "fromSide": "bottom",
+      "toNode": "n77",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_1_h",
+      "fromNode": "n70",
+      "fromSide": "bottom",
+      "toNode": "n78",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_1_0",
+      "fromNode": "n78",
+      "fromSide": "bottom",
+      "toNode": "n79",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_1_1",
+      "fromNode": "n79",
+      "fromSide": "bottom",
+      "toNode": "n80",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_1_2",
+      "fromNode": "n80",
+      "fromSide": "bottom",
+      "toNode": "n81",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_1_3",
+      "fromNode": "n81",
+      "fromSide": "bottom",
+      "toNode": "n82",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_1_m",
+      "fromNode": "n82",
+      "fromSide": "bottom",
+      "toNode": "n83",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_2_h",
+      "fromNode": "n70",
+      "fromSide": "bottom",
+      "toNode": "n84",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_2_0",
+      "fromNode": "n84",
+      "fromSide": "bottom",
+      "toNode": "n85",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_2_1",
+      "fromNode": "n85",
+      "fromSide": "bottom",
+      "toNode": "n86",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_2_2",
+      "fromNode": "n86",
+      "fromSide": "bottom",
+      "toNode": "n87",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_2_3",
+      "fromNode": "n87",
+      "fromSide": "bottom",
+      "toNode": "n88",
+      "toSide": "top"
+    },
+    {
+      "id": "e_el_2_m",
+      "fromNode": "n88",
+      "fromSide": "bottom",
+      "toNode": "n89",
+      "toSide": "top"
+    },
+    {
+      "id": "e_p_en_cn",
+      "fromNode": "n90",
+      "fromSide": "right",
+      "toNode": "n91",
+      "toSide": "left"
+    },
+    {
+      "id": "e_p_en_ty",
+      "fromNode": "n90",
+      "fromSide": "bottom",
+      "toNode": "n92",
+      "toSide": "top"
+    },
+    {
+      "id": "e_note",
+      "fromNode": "n92",
+      "fromSide": "bottom",
+      "toNode": "n93",
+      "toSide": "top"
+    }
+  ]
+}
