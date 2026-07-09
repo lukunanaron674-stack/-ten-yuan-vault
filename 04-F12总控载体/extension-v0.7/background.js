@@ -910,11 +910,16 @@ async function handleMsg(msg, sender) {
         return { ok: !!result.ok, result };
       }
       if (msg.command === 'RUN_SCRIPT') {
-        await chrome.scripting.executeScript({
+        const script = String(msg.script || '');
+        const [injected] = await chrome.scripting.executeScript({
           target: { tabId },
-          files: ['content.js']
+          func: async (source) => {
+            const fn = new Function(`return (async () => {\n${source}\n})()`);
+            return await fn();
+          },
+          args: [script]
         });
-        const result = { ok: true, status: 'script_executed', file: 'content.js' };
+        const result = injected?.result || { ok: true, status: 'script_executed' };
         upsertMultiTab(s, tabId, {
           status: 'script_executed',
           lastMessage: 'RUN_SCRIPT',

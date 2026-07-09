@@ -819,6 +819,33 @@
       .filter(el => !el.disabled && el.getAttribute('aria-disabled') !== 'true')
       .map(inspectNode)
       .slice(-40);
+    const imageCandidates = queryVisible(['img', 'picture img', '[style*="background-image"]'])
+      .map((el, index) => {
+        const rect = el.getBoundingClientRect();
+        const style = getComputedStyle(el);
+        const parentButton = el.closest('button,[role="button"]');
+        return {
+          index,
+          tag: el.tagName,
+          id: el.id || '',
+          alt: el.getAttribute('alt') || '',
+          src: el.currentSrc || el.src || el.getAttribute('src') || '',
+          srcset: el.getAttribute('srcset') || '',
+          backgroundImage: style.backgroundImage && style.backgroundImage !== 'none' ? style.backgroundImage : '',
+          className: String(el.className || '').slice(0, 180),
+          parentButton: parentButton ? inspectNode(parentButton) : null,
+          rect: {
+            x: Math.round(rect.x),
+            y: Math.round(rect.y),
+            w: Math.round(rect.width),
+            h: Math.round(rect.height),
+            right: Math.round(rect.right),
+            bottom: Math.round(rect.bottom)
+          }
+        };
+      })
+      .filter(item => item.src || item.srcset || item.backgroundImage || item.rect.w > 80 || item.rect.h > 80)
+      .slice(-40);
 
     return {
       ok: true,
@@ -838,8 +865,59 @@
       isGenerating: isGenerating(),
       lastAssistantText: getLastAssistantText().slice(0, 12000),
       bodyText: (document.body?.innerText || document.body?.textContent || '').slice(0, 30000),
+      imageCandidates,
       snippets,
       frames
+    };
+  }
+
+  async function exportLatestImage() {
+    const candidates = queryVisible(['img', 'picture img'])
+      .map((el, index) => {
+        const rect = el.getBoundingClientRect();
+        return {
+          index,
+          el,
+          src: el.currentSrc || el.src || el.getAttribute('src') || '',
+          alt: el.getAttribute('alt') || '',
+          w: Math.round(rect.width),
+          h: Math.round(rect.height),
+          area: Math.round(rect.width * rect.height)
+        };
+      })
+      .filter(item => item.src && item.w > 120 && item.h > 120)
+      .sort((a, b) => b.area - a.area);
+
+    const picked = candidates[0];
+    if (!picked) {
+      return { ok: false, error: 'No exportable image found' };
+    }
+
+    const response = await fetch(picked.src, { credentials: 'include' });
+    if (!response.ok) {
+      return { ok: false, error: `Image fetch failed: ${response.status}`, src: picked.src, alt: picked.alt };
+    }
+
+    const blob = await response.blob();
+    const dataUrl = await new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(String(reader.result || ''));
+      reader.onerror = () => reject(new Error('FileReader failed'));
+      reader.readAsDataURL(blob);
+    });
+
+    return {
+      ok: true,
+      status: 'image_exported',
+      href: location.href,
+      title: document.title,
+      src: picked.src,
+      alt: picked.alt,
+      width: picked.w,
+      height: picked.h,
+      mime: blob.type || 'image/png',
+      size: blob.size,
+      dataUrl
     };
   }
 
@@ -1837,6 +1915,8 @@
       }
       case 'DEBUG_DUMP':
         return debugDumpPageText();
+      case 'EXPORT_LATEST_IMAGE':
+        return await exportLatestImage();
       case 'SHOW_PANEL':
         createPanel();
         addPanelLog('Panel opened');
