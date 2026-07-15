@@ -1,0 +1,34 @@
+name: Convert pirate Canvas assets to JPG
+
+on:
+  push:
+    branches:
+      - agent/pirate-jpg-raster-fix
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/pirate-jpg-raster-fix
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow
+        run: python -m pip install --disable-pip-version-check pillow
+      - name: Convert SVG wrappers to real JPG files
+        run: python scripts/fix_pirate_canvas_jpg.py
+      - name: Remove one-shot tooling and commit result
+        run: |
+          rm -f .github/workflows/fix_pirate_canvas_jpg.yml
+          rm -f scripts/fix_pirate_canvas_jpg.py
+          git config user.name "canvas-asset-bot"
+          git config user.email "canvas-asset-bot@users.noreply.github.com"
+          git add -A
+          git commit -m "fix: replace pirate Canvas SVG wrappers with real JPG assets"
+          git push origin HEAD:agent/pirate-jpg-raster-fix
