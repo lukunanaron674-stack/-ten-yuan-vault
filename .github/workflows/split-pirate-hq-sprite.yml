@@ -1,0 +1,36 @@
+name: Split HQ pirate sprite
+
+on:
+  push:
+    branches:
+      - agent/pirate-hq-direct-binary
+
+permissions:
+  contents: write
+
+jobs:
+  split:
+    if: ${{ !contains(github.event.head_commit.message, '[hq-assets]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/pirate-hq-direct-binary
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow
+        run: python -m pip install pillow
+      - name: Split native-resolution tiles
+        run: python scripts/split_pirate_hq_sprite.py
+      - name: Commit HQ JPG assets
+        run: |
+          git config user.name "canvas-asset-bot"
+          git config user.email "canvas-asset-bot@users.noreply.github.com"
+          git rm -f tmp/pirate_hq_sprite_1024.jpg
+          git rm -f scripts/split_pirate_hq_sprite.py
+          git rm -f .github/workflows/split-pirate-hq-sprite.yml
+          git add "09-给674（我）用的库/画画理论/assets/海盗航海_is-a名词素材库"
+          git commit -m "[hq-assets] replace blurry pirate JPGs with native 256px crops"
+          git push origin HEAD:agent/pirate-hq-direct-binary
