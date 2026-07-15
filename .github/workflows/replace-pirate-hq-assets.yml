@@ -1,0 +1,57 @@
+name: Replace pirate Canvas assets with HQ JPGs
+
+on:
+  push:
+    branches:
+      - agent/pirate-hq-raster-fix
+
+permissions:
+  contents: write
+
+jobs:
+  replace:
+    if: ${{ !contains(github.event.head_commit.message, '[hq-assets]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/pirate-hq-raster-fix
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow
+        run: pip install pillow
+      - name: Download HQ sprite from Drive
+        run: |
+          python - <<'PY'
+          import urllib.request
+          url='https://drive.google.com/uc?export=download&id=1NyDwG2-Xa_feg_DtxJ7NsVCZdhG1vWPQ'
+          urllib.request.urlretrieve(url, 'pirate_hq_sprite.jpg')
+          PY
+          file pirate_hq_sprite.jpg
+          test $(stat -c%s pirate_hq_sprite.jpg) -gt 300000
+      - name: Crop and replace 16 JPG assets
+        run: |
+          python - <<'PY'
+          from PIL import Image, ImageFilter
+          from pathlib import Path
+          src=Image.open('pirate_hq_sprite.jpg').convert('RGB')
+          assert src.width >= 1600 and src.height >= 1600, src.size
+          names=['n26_黑帆港.jpg','n27_雾海沉船湾.jpg','n28_海盗酒馆.jpg','n29_船长舱.jpg','n30_诅咒海峡.jpg','n33_黑帆港废墟.jpg','n34_黑帆港圣所.jpg','n35_黑帆港大厅.jpg','n36_黑帆港回廊.jpg','n39_花蔓侵蚀.jpg','n40_荆棘缠绕.jpg','n41_树根穿刺.jpg','n42_苔藓覆盖.jpg','n43_菌丝寄生.jpg','n45_中央空间.jpg','n51_复合场景标准版.jpg']
+          out=Path('09-给674（我）用的库/画画理论/assets/海盗航海_is-a名词素材库')
+          out.mkdir(parents=True,exist_ok=True)
+          tile=src.width//4
+          for i,name in enumerate(names):
+              x=(i%4)*tile; y=(i//4)*tile
+              im=src.crop((x,y,x+tile,y+tile)).resize((512,512),Image.Resampling.LANCZOS)
+              im=im.filter(ImageFilter.UnsharpMask(radius=.7,percent=80,threshold=3))
+              im.save(out/name,'JPEG',quality=92,subsampling=0,optimize=True,progressive=True)
+          PY
+      - name: Commit HQ assets
+        run: |
+          git config user.name "canvas-asset-bot"
+          git config user.email "canvas-asset-bot@users.noreply.github.com"
+          git add "09-给674（我）用的库/画画理论/assets/海盗航海_is-a名词素材库" 
+          git commit -m "[hq-assets] replace blurry pirate JPGs with 512px crops"
+          git push origin HEAD:agent/pirate-hq-raster-fix
