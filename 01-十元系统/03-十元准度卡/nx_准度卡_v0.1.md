@@ -4,7 +4,7 @@ type: accuracy-card
 symbol: nx
 version: v0.2
 status: 试点
- date: 2026-07-16
+date: 2026-07-16
 tags: [nx, 准度卡, 不主动占位, 顺着走, z克nx, 盲测]
 source: 用户口径复核 + 【nx信息量卡v2】v2.1
 ---
