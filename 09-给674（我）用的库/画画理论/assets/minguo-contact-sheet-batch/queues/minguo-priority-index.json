@@ -1,0 +1,26 @@
+{
+  "title": "民国服装与场景优先批次",
+  "totalTasks": 20,
+  "batches": [
+    {
+      "id": "minguo-priority-batch-01",
+      "count": 10,
+      "themes": [
+        "服装"
+      ],
+      "firstTask": "minguo_sheet_04",
+      "lastTask": "minguo_sheet_13"
+    },
+    {
+      "id": "minguo-priority-batch-02",
+      "count": 10,
+      "themes": [
+        "服装",
+        "场景"
+      ],
+      "firstTask": "minguo_sheet_14",
+      "lastTask": "minguo_sheet_23"
+    }
+  ],
+  "createdAt": "2026-07-13T19:00:38.564Z"
+}

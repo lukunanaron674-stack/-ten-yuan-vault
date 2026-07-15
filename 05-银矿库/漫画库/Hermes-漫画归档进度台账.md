@@ -1,7 +1,7 @@
      1|---
      2|type: progress-log
      3|status: active
-     4|updated: 2026-07-09T16:47+08:00
+     4|updated: 2026-07-10T13:02+08:00
      5|workflow: [[Hermes-漫画五大主题整理工单]]
      6|task_list: [[Hermes-漫画五大主题任务清单]]
      7|target_total: 499
@@ -264,3 +264,170 @@
 - manga: COSMOS / COSMOS银河金融保险公司 / COSMOS-因果型
 - status: alias_conflict_source_checked
 - note: COSMOS 与 COSMOS-因果型均见91.8高分路径；COSMOS银河金融保险公司仍是低分旧源，未确认同作前继续隔离。
+
+## status update - 2026-07-10 05:58:00
+
+- manga: 擅长逃跑的殿下 / 逃げ上手の若君
+- status: prescreen_done_alias_review
+- note: 同步五大主题任务清单、CSV/JSONL、总索引、时间/命运主题页；主位时间型xn+z，命运型xz+nz保留次维，日文13分旧驳回不独立计低分；不合并评分、不改90分。
+
+## status update - 2026-07-10 05:58:00
+
+- manga: 蓦然回首
+- status: prescreen_done_20260710
+- note: 时间型xn+z主，本体型zn+x次，空间辅；96分保留，轻筛置信88%，待Hermes深分析。
+
+## status update - 2026-07-10 05:58:00
+
+- manga: Gundam GQuuuuuuX
+- status: prescreen_done_20260710_need_source
+- note: 时间型xn+z主候选，因果型zx+nx次，命运辅；96分保留，轻筛置信76%，需资料补采防转因果/命运。
+
+## status update - 2026-07-10 05:58:00
+
+- manga: 花牌情缘
+- status: prescreen_done_20260710
+- note: 时间型xn+z主，本体型zn+x次，空间辅；95分保留，轻筛置信90%，待Hermes深分析。
+
+## status update - 2026-07-10 06:59:00
+
+- manga: 旱地远走高飞
+- status: prescreen_done_20260710_need_source
+- note: 时间型xn+z主候选，本体型zn+x次，空间辅；96分保留，轻筛置信64%；短名疑似源名/题名拼接，需回查作者/原题，不finalized。
+
+## status update - 2026-07-10 06:59:00
+
+- manga: 泪雨与小夜曲
+- status: prescreen_done_20260710
+- note: 时间型xn+z主，命运型xz+nz次，本体辅；93分保留，轻筛置信84%，待Hermes深分析。
+
+## status update - 2026-07-10 06:59:00
+
+- manga: Blue Box
+- status: prescreen_done_20260710_alias_review
+- note: 时间型xn+z主候选，本体型zn+x次，空间辅；92分保留，轻筛置信82%；与青之箱高度疑似同作，加入别名冲突队列，不合并评分。
+
+## status update - 2026-07-10 06:59:00
+
+- manga: 青之箱
+- status: alias_conflict_review
+- note: 疑似 Blue Box 中文名/旧批次重复；本体型证据暂作次维候选，保留92分证据，不独立finalized。
+
+## status update - 2026-07-10 06:59:00
+
+- manga: 最后的武士Standing
+- status: prescreen_done_20260710_need_source
+- note: 时间型xn+z主，因果型zx+nx次，命运辅；92分保留，轻筛置信78%；疑似 Last Samurai Standing/イクサガミ，需源名确认，不finalized。
+
+## status update - 2026-07-10 08:08:00
+
+- manga: 葬送的芙莉莲
+- status: overturn_landed_20260710
+- note: 空间型任务行改为推翻证据，命运型任务行改为归位完成；主位命运型xz+nz、空间次维，96分保留，不finalized。
+
+## status update - 2026-07-10 08:08:00
+
+- manga: 天使夜未眠
+- status: overturn_landed_20260710
+- note: 空间型任务行改为推翻证据，命运型任务行改为归位完成；主位命运型xz+nz、空间仅作夜色/都市容器次证据，96分保留。
+
+## status update - 2026-07-10 08:08:00
+
+- manga: 东京日日
+- status: overturn_landed_to_body_20260710
+- note: 总索引空间池统计从空间型移出并并入本体型推翻归位证据；本体页新增推翻归位证据，不改正式评分，待用户二审。
+
+## status update - 2026-07-10 09:22:00
+
+- manga: 排球少年
+- status: prescreen_done_20260710
+- note: 空间型x并z+n主、时间型xn+z次、本体辅；球场规则边界定义全部可能性，96分保留，待Hermes深分析。
+
+## status update - 2026-07-10 09:22:00
+
+- manga: 间隙
+- status: prescreen_done_20260710_secondary_review
+- note: 空间型x并z+n主、本体型zn+x次；临界空间型预筛完成。本体任务行降为次维证据；另有「間隙」94分旧源/别名评分差异待二审。
+
+## status update - 2026-07-10 09:22:00
+
+- manga: 拉面发现传
+- status: prescreen_done_20260710
+- note: 空间型x并z+n主、本体型zn+x辅、因果型zx+nx辅；一碗面作为便携味觉空间，92分保留，待深分析防转因果。
+
+## status update - 2026-07-10 09:22:00
+
+- manga: 神之水滴
+- status: prescreen_done_20260710
+- note: 空间型x并z+n主、本体型zn+x次、因果型zx+nx辅；葡萄酒瓶是可移动意义空间胶囊，90分保留。
+## status update - 2026-07-10 10:22:00
+
+- manga: 平生純
+- status: prescreen_done_dimension_conflict_20260710
+- note: 空间型x并z+n主候选，本体型zn+x次，命运型xz+nz辅；日常场域作为纯粹感容器更强，91分保留，待用户二审是否降本体/命运为次维。
+
+## status update - 2026-07-10 10:22:00
+
+- manga: 路漫漫
+- status: prescreen_done_dimension_conflict_20260710
+- note: 空间型x并z+n主候选，本体型zn+x次，时间型xn+z辅；旅途空间压过存在追问，91分保留，待用户二审是否从本体池降为次维。
+
+## status update - 2026-07-10 10:22:00
+
+- manga: Understanding Comics
+- status: prescreen_done_20260710
+- note: 空间型x并z+n主，因果型zx+nx次，本体型zn+x辅；漫画格/页/闭合空间构成理解场域，90分保留，待Hermes深分析。
+
+## status update - 2026-07-10 10:22:00
+
+- manga: MOAN
+- status: prescreen_done_20260710
+- note: 空间型x并z+n主，因果型zx+nx次；病理空间从承载变为吞噬，93分保留，Junji Ito's Moan 暂不合并。
+
+## status update - 2026-07-10 11:18:00
+
+- manga: Junji Ito's Moan
+- status: prescreen_done_alias_review
+- note: 空间型x并z+n主候选，因果型zx+nx次，本体辅；疑似 MOAN/伊藤润二近名旧批次，保留90分证据，不与93分MOAN合并。
+
+## status update - 2026-07-10 11:18:00
+
+- manga: シテの花
+- status: prescreen_done_20260710
+- note: 空间型x并z+n主，本体型zn+x次，时间型xn+z辅；舞台/能乐式场域先构成观看容器，91分保留。
+
+## status update - 2026-07-10 11:18:00
+
+- manga: しっぽと逆鱗
+- status: prescreen_done_20260710
+- note: 空间型x并z+n主，命运型xz+nz次，本体型zn+x辅；龙与少女的归属空间强于番/逆鳞命运线，90分保留。
+
+## status update - 2026-07-10 12:02:00
+
+- manga: チェーザレ-破壊の創造者
+- status: prescreen_done_20260710
+- note: 空间型x并z+n主，因果型zx+nx次，命运辅；文艺复兴城邦/教会/家族权力场先构成容器，88分保留，待Hermes深分析。
+
+## status update - 2026-07-10 12:02:00
+
+- manga: ありす、宇宙までも / ありす宇宙までも
+- status: prescreen_done_alias_review_20260710
+- note: 空间型x并z+n主候选，命运型xz+nz次，本体型zn+x辅；86分空间行与89分本体行疑似标点变体/旧批次评分差异，暂不合并。
+
+## status update - 2026-07-10 12:02:00
+
+- manga: 汐風と竜のすみか
+- status: prescreen_done_reference_review_20260710
+- note: 空间型x并z+n主，命运型xz+nz次，本体辅；海边居所/龙巢形成归属容器，83分属参考级，待实读确认是否只留参考。
+
+## status update - 2026-07-10 13:02:00
+
+- manga: 路边的藤井
+- status: prescreen_done_reference_review_20260710
+- note: 空间型x并z+n主，本体型zn+x次；路边/街角/日常观察点是低振动容器，78分保留，参考级待二审，不升finalized。
+
+## status update - 2026-07-10 13:02:00
+
+- manga: 十月堂旧书事 / 十月堂旧书店事 / 十月堂旧书店 / 本なら売るほど / Hon-Nara-Uru-Hodo
+- status: alias_dimension_conflict_tightened_20260710
+- note: 收紧为同作族/译名簇待二审；十月堂旧译名侧95/92/83/10与本なら侧94/88/87/77并存，且空间旧判与本体草案冲突；不合并评分，不改主ID。

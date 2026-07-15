@@ -1,0 +1,1320 @@
+{
+  "id": "minguo-repair-batch-00",
+  "title": "民国素材板不完整截图原图修复",
+  "target": "https://chatgpt.com/c/6a54b960-7854-83ea-ac0d-a4e9fded575f",
+  "status": "done",
+  "currentIndex": 27,
+  "total": 27,
+  "autoContinue": true,
+  "createdAt": "2026-07-14T12:40:30.411Z",
+  "updatedAt": "2026-07-14T12:41:36.210Z",
+  "tasks": [
+    {
+      "id": "repair_minguo_sheet_10",
+      "title": "修复旧图_10",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_10.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_10_服装_灰布八路军军装_德式钢盔_武装皮带子弹带_绑腿布条.png",
+      "imageNodeId": "img_minguo_sheet_10",
+      "sourceIds": [
+        "icm4_0",
+        "icm4_1",
+        "icm4_2",
+        "icm4_3"
+      ],
+      "status": "done",
+      "attempts": 1,
+      "error": null,
+      "items": [
+        {
+          "id": "icm4_0",
+          "title": "灰布八路军军装",
+          "isa": "八路军标准步兵服",
+          "scene": "士兵在战壕中射击",
+          "nodeText": "灰布八路军军装\nis-a 八路军标准步兵服\n🎬 士兵在战壕中射击"
+        },
+        {
+          "id": "icm4_1",
+          "title": "德式钢盔",
+          "isa": "中央军装备",
+          "scene": "敢死队在炮火中冲锋",
+          "nodeText": "德式钢盔\nis-a 中央军装备\n🎬 敢死队在炮火中冲锋"
+        },
+        {
+          "id": "icm4_2",
+          "title": "武装皮带子弹带",
+          "isa": "军人标准装备",
+          "scene": "长官佩枪巡营",
+          "nodeText": "武装皮带子弹带\nis-a 军人标准装备\n🎬 长官佩枪巡营"
+        },
+        {
+          "id": "icm4_3",
+          "title": "绑腿布条",
+          "isa": "长途行军装备",
+          "scene": "部队在泥泞中跋涉",
+          "nodeText": "绑腿布条\nis-a 长途行军装备\n🎬 部队在泥泞中跋涉"
+        }
+      ],
+      "sentAt": "2026-07-14T12:41:01.163Z",
+      "completedAt": "2026-07-14T12:41:21.197Z"
+    },
+    {
+      "id": "repair_minguo_sheet_11",
+      "title": "修复旧图_11",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_11.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_11_服装_呢料军官制服_土黄军装_游击队员短打_黑色夜行服.png",
+      "imageNodeId": "img_minguo_sheet_11",
+      "sourceIds": [
+        "icm4_4",
+        "icm4_5",
+        "icm4_6",
+        "icm4_7"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "icm4_4",
+          "title": "呢料军官制服",
+          "isa": "国军军官正装",
+          "scene": "指挥官在桌前看地图",
+          "nodeText": "呢料军官制服\nis-a 国军军官正装\n🎬 指挥官在桌前看地图"
+        },
+        {
+          "id": "icm4_5",
+          "title": "土黄军装",
+          "isa": "地方杂牌军服",
+          "scene": "民团在村口集合",
+          "nodeText": "土黄军装\nis-a 地方杂牌军服\n🎬 民团在村口集合"
+        },
+        {
+          "id": "icm4_6",
+          "title": "游击队员短打",
+          "isa": "敌后武装便装",
+          "scene": "游击队员在芦苇荡潜伏",
+          "nodeText": "游击队员短打\nis-a 敌后武装便装\n🎬 游击队员在芦苇荡潜伏"
+        },
+        {
+          "id": "icm4_7",
+          "title": "黑色夜行服",
+          "isa": "特战队夜袭装",
+          "scene": "突击队在夜色中摸哨",
+          "nodeText": "黑色夜行服\nis-a 特战队夜袭装\n🎬 突击队在夜色中摸哨"
+        }
+      ],
+      "sentAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "repair_minguo_sheet_12",
+      "title": "修复旧图_12",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_12.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_12_服装_白毛巾头巾_血染绷带_粗麻对襟衣_大裆裤布腰带.png",
+      "imageNodeId": "img_minguo_sheet_12",
+      "sourceIds": [
+        "icm4_8",
+        "icm4_9",
+        "icm5_0",
+        "icm5_1"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "icm4_8",
+          "title": "白毛巾头巾",
+          "isa": "农民抗日义军标识",
+          "scene": "民兵在山路上奔跑",
+          "nodeText": "白毛巾头巾\nis-a 农民抗日义军标识\n🎬 民兵在山路上奔跑"
+        },
+        {
+          "id": "icm4_9",
+          "title": "血染绷带",
+          "isa": "战场伤员标志",
+          "scene": "伤兵在野战医院接受救治",
+          "nodeText": "血染绷带\nis-a 战场伤员标志\n🎬 伤兵在野战医院接受救治"
+        },
+        {
+          "id": "icm5_0",
+          "title": "粗麻对襟衣",
+          "isa": "农民日常上衣",
+          "scene": "农夫在田里弯腰插秧",
+          "nodeText": "粗麻对襟衣\nis-a 农民日常上衣\n🌾 农夫在田里弯腰插秧"
+        },
+        {
+          "id": "icm5_1",
+          "title": "大裆裤布腰带",
+          "isa": "农民传统裤装",
+          "scene": "老农赶着水牛犁地",
+          "nodeText": "大裆裤布腰带\nis-a 农民传统裤装\n🌾 老农赶着水牛犁地"
+        }
+      ],
+      "sentAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "repair_minguo_sheet_13",
+      "title": "修复旧图_13",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_13.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_13_服装_蓝印花布衫_草帽蓑衣_羊肚毛巾白羊肚_肚兜红布裤.png",
+      "imageNodeId": "img_minguo_sheet_13",
+      "sourceIds": [
+        "icm5_2",
+        "icm5_3",
+        "icm5_4",
+        "icm5_5"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "icm5_2",
+          "title": "蓝印花布衫",
+          "isa": "农村妇女上衣",
+          "scene": "村妇在井边洗衣淘米",
+          "nodeText": "蓝印花布衫\nis-a 农村妇女上衣\n🌾 村妇在井边洗衣淘米"
+        },
+        {
+          "id": "icm5_3",
+          "title": "草帽蓑衣",
+          "isa": "农民防雨套装",
+          "scene": "农夫在雨中赶路回家",
+          "nodeText": "草帽蓑衣\nis-a 农民防雨套装\n🌾 农夫在雨中赶路回家"
+        },
+        {
+          "id": "icm5_4",
+          "title": "羊肚毛巾白羊肚",
+          "isa": "陕北农民标志头饰",
+          "scene": "老汉在窑洞门口抽旱烟",
+          "nodeText": "羊肚毛巾白羊肚\nis-a 陕北农民标志头饰\n🌾 老汉在窑洞门口抽旱烟"
+        },
+        {
+          "id": "icm5_5",
+          "title": "肚兜红布裤",
+          "isa": "农村孩童衣装",
+          "scene": "光脚小孩在村头追鸡",
+          "nodeText": "肚兜红布裤\nis-a 农村孩童衣装\n🌾 光脚小孩在村头追鸡"
+        }
+      ],
+      "sentAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "repair_minguo_sheet_14",
+      "title": "修复旧图_14",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_14.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_14_服装_对襟棉坎肩_黑布鞋白袜.png",
+      "imageNodeId": "img_minguo_sheet_14",
+      "sourceIds": [
+        "icm5_6",
+        "icm5_7"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "icm5_6",
+          "title": "对襟棉坎肩",
+          "isa": "农村老年冬装",
+          "scene": "老大爷在墙根晒太阳",
+          "nodeText": "对襟棉坎肩\nis-a 农村老年冬装\n🌾 老大爷在墙根晒太阳"
+        },
+        {
+          "id": "icm5_7",
+          "title": "黑布鞋白袜",
+          "isa": "农民标准鞋袜",
+          "scene": "赶集人走在乡间小路上",
+          "nodeText": "黑布鞋白袜\nis-a 农民标准鞋袜\n🌾 赶集人走在乡间小路上"
+        }
+      ],
+      "sentAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "repair_minguo_sheet_15",
+      "title": "修复旧图_15",
+      "theme": "场景",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_15.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_15_场景_百乐门舞池_公馆会客厅_大饭店顶层餐厅_赛马场跑马厅.png",
+      "imageNodeId": "img_minguo_sheet_15",
+      "sourceIds": [
+        "ism0_0",
+        "ism0_1",
+        "ism0_2",
+        "ism0_3"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "ism0_0",
+          "title": "百乐门舞池",
+          "isa": "歌舞娱乐场景",
+          "scene": "旋转舞台/灯红酒绿/接头",
+          "nodeText": "百乐门舞池\nis-a 歌舞娱乐场景\n🎬 旋转舞台/灯红酒绿/接头"
+        },
+        {
+          "id": "ism0_1",
+          "title": "公馆会客厅",
+          "isa": "官商宅邸接待室",
+          "scene": "社交/谈生意/家族聚会",
+          "nodeText": "公馆会客厅\nis-a 官商宅邸接待室\n🎬 社交/谈生意/家族聚会"
+        },
+        {
+          "id": "ism0_2",
+          "title": "大饭店顶层餐厅",
+          "isa": "西式高级餐厅",
+          "scene": "浪漫约会/政要密谈",
+          "nodeText": "大饭店顶层餐厅\nis-a 西式高级餐厅\n🎬 浪漫约会/政要密谈"
+        },
+        {
+          "id": "ism0_3",
+          "title": "赛马场跑马厅",
+          "isa": "上流娱乐竞技场",
+          "scene": "社交赌博/阔太出场",
+          "nodeText": "赛马场跑马厅\nis-a 上流娱乐竞技场\n🎬 社交赌博/阔太出场"
+        }
+      ],
+      "sentAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "repair_minguo_sheet_16",
+      "title": "修复旧图_16",
+      "theme": "场景",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_16.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_16_场景_夜总会包厢_银行金库_官邸书房_鸦片馆烟馆.png",
+      "imageNodeId": "img_minguo_sheet_16",
+      "sourceIds": [
+        "ism0_4",
+        "ism0_5",
+        "ism0_6",
+        "ism0_7"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "ism0_4",
+          "title": "夜总会包厢",
+          "isa": "歌舞厅私密空间",
+          "scene": "情欲/密谋/暗杀",
+          "nodeText": "夜总会包厢\nis-a 歌舞厅私密空间\n🎬 情欲/密谋/暗杀"
+        },
+        {
+          "id": "ism0_5",
+          "title": "银行金库",
+          "isa": "金融保险库房",
+          "scene": "劫案/秘密储藏/经济命脉",
+          "nodeText": "银行金库\nis-a 金融保险库房\n🎬 劫案/秘密储藏/经济命脉"
+        },
+        {
+          "id": "ism0_6",
+          "title": "官邸书房",
+          "isa": "政要办公私室",
+          "scene": "密谋/文件签署/深夜独思",
+          "nodeText": "官邸书房\nis-a 政要办公私室\n🎬 密谋/文件签署/深夜独思"
+        },
+        {
+          "id": "ism0_7",
+          "title": "鸦片馆烟馆",
+          "isa": "颓废社交场所",
+          "scene": "堕落/情报交易/烟雾缭绕",
+          "nodeText": "鸦片馆烟馆\nis-a 颓废社交场所\n🎬 堕落/情报交易/烟雾缭绕"
+        }
+      ],
+      "sentAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "repair_minguo_sheet_17",
+      "title": "修复旧图_17",
+      "theme": "场景",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_17.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_17_场景_弄堂清晨_老茶馆里_夜市大排档_澡堂子.png",
+      "imageNodeId": "img_minguo_sheet_17",
+      "sourceIds": [
+        "ism1_0",
+        "ism1_1",
+        "ism1_2",
+        "ism1_3"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "ism1_0",
+          "title": "弄堂清晨",
+          "isa": "石库门早晨街景",
+          "scene": "倒马桶/生煤炉/邻里聊天",
+          "nodeText": "弄堂清晨\nis-a 石库门早晨街景\n🎬 倒马桶/生煤炉/邻里聊天"
+        },
+        {
+          "id": "ism1_1",
+          "title": "老茶馆里",
+          "isa": "茶楼内部场景",
+          "scene": "评书/打探消息/民间仲裁",
+          "nodeText": "老茶馆里\nis-a 茶楼内部场景\n🎬 评书/打探消息/民间仲裁"
+        },
+        {
+          "id": "ism1_2",
+          "title": "夜市大排档",
+          "isa": "夜间街边饮食摊",
+          "scene": "底层生活/江湖人群",
+          "nodeText": "夜市大排档\nis-a 夜间街边饮食摊\n🎬 底层生活/江湖人群"
+        },
+        {
+          "id": "ism1_3",
+          "title": "澡堂子",
+          "isa": "公共洗浴场所",
+          "scene": "放松/江湖密谈/三教九流",
+          "nodeText": "澡堂子\nis-a 公共洗浴场所\n🎬 放松/江湖密谈/三教九流"
+        }
+      ],
+      "sentAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "repair_minguo_sheet_18",
+      "title": "修复旧图_18",
+      "theme": "场景",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_18.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_18_场景_理发店_菜市场_弄堂婚礼丧事_棚户区.png",
+      "imageNodeId": "img_minguo_sheet_18",
+      "sourceIds": [
+        "ism1_4",
+        "ism1_5",
+        "ism1_6",
+        "ism1_7"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "ism1_4",
+          "title": "理发店",
+          "isa": "街边理发铺",
+          "scene": "闲聊/社会新闻/日常",
+          "nodeText": "理发店\nis-a 街边理发铺\n🎬 闲聊/社会新闻/日常"
+        },
+        {
+          "id": "ism1_5",
+          "title": "菜市场",
+          "isa": "农贸集市",
+          "scene": "讨价还价/市井烟火",
+          "nodeText": "菜市场\nis-a 农贸集市\n🎬 讨价还价/市井烟火"
+        },
+        {
+          "id": "ism1_6",
+          "title": "弄堂婚礼丧事",
+          "isa": "民间红白喜事",
+          "scene": "喧闹/悲情/传统仪轨",
+          "nodeText": "弄堂婚礼丧事\nis-a 民间红白喜事\n🎬 喧闹/悲情/传统仪轨"
+        },
+        {
+          "id": "ism1_7",
+          "title": "棚户区",
+          "isa": "贫民聚居区",
+          "scene": "极度贫困/逃难人群",
+          "nodeText": "棚户区\nis-a 贫民聚居区\n🎬 极度贫困/逃难人群"
+        }
+      ],
+      "sentAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "repair_minguo_sheet_19",
+      "title": "修复旧图_19",
+      "theme": "场景",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_19.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_19_场景_大学教室礼堂_书房书斋_湖畔公园长椅_图书馆资料室.png",
+      "imageNodeId": "img_minguo_sheet_19",
+      "sourceIds": [
+        "ism2_0",
+        "ism2_1",
+        "ism2_2",
+        "ism2_3"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "ism2_0",
+          "title": "大学教室礼堂",
+          "isa": "高等教育场所",
+          "scene": "讲课/演讲/学生运动集会",
+          "nodeText": "大学教室礼堂\nis-a 高等教育场所\n🎬 讲课/演讲/学生运动集会"
+        },
+        {
+          "id": "ism2_1",
+          "title": "书房书斋",
+          "isa": "文人工作空间",
+          "scene": "写作/阅读/深夜孤灯",
+          "nodeText": "书房书斋\nis-a 文人工作空间\n🎬 写作/阅读/深夜孤灯"
+        },
+        {
+          "id": "ism2_2",
+          "title": "湖畔公园长椅",
+          "isa": "文人独处处所",
+          "scene": "沉思/写作/约会/接头",
+          "nodeText": "湖畔公园长椅\nis-a 文人独处处所\n🎬 沉思/写作/约会/接头"
+        },
+        {
+          "id": "ism2_3",
+          "title": "图书馆资料室",
+          "isa": "藏书阅览场所",
+          "scene": "研读/查资料/秘密约定",
+          "nodeText": "图书馆资料室\nis-a 藏书阅览场所\n🎬 研读/查资料/秘密约定"
+        }
+      ],
+      "sentAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "repair_minguo_sheet_20",
+      "title": "修复旧图_20",
+      "theme": "场景",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_20.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_20_场景_咖啡馆_书局书店_战壕对峙_巷战街道.png",
+      "imageNodeId": "img_minguo_sheet_20",
+      "sourceIds": [
+        "ism2_4",
+        "ism2_5",
+        "ism3_0",
+        "ism3_1"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "ism2_4",
+          "title": "咖啡馆",
+          "isa": "西式文艺社交空间",
+          "scene": "文人聚会/思想碰撞",
+          "nodeText": "咖啡馆\nis-a 西式文艺社交空间\n🎬 文人聚会/思想碰撞"
+        },
+        {
+          "id": "ism2_5",
+          "title": "书局书店",
+          "isa": "书籍售卖场所",
+          "scene": "文化交流/禁书传播/遇知音",
+          "nodeText": "书局书店\nis-a 书籍售卖场所\n🎬 文化交流/禁书传播/遇知音"
+        },
+        {
+          "id": "ism3_0",
+          "title": "战壕对峙",
+          "isa": "前沿阵地场景",
+          "scene": "机枪扫射/炮弹落下/冲锋号",
+          "nodeText": "战壕对峙\nis-a 前沿阵地场景\n🎬 机枪扫射/炮弹落下/冲锋号"
+        },
+        {
+          "id": "ism3_1",
+          "title": "巷战街道",
+          "isa": "城市废墟战斗",
+          "scene": "楼顶狙击/转角遭遇/手雷",
+          "nodeText": "巷战街道\nis-a 城市废墟战斗\n🎬 楼顶狙击/转角遭遇/手雷"
+        }
+      ],
+      "sentAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "repair_minguo_sheet_21",
+      "title": "修复旧图_21",
+      "theme": "场景",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_21.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_21_场景_日军扫荡村庄_游击队夜袭_野战医院_渡江过河.png",
+      "imageNodeId": "img_minguo_sheet_21",
+      "sourceIds": [
+        "ism3_2",
+        "ism3_3",
+        "ism3_4",
+        "ism3_5"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "ism3_2",
+          "title": "日军扫荡村庄",
+          "isa": "敌军占领搜刮",
+          "scene": "放火/屠杀/村民逃亡",
+          "nodeText": "日军扫荡村庄\nis-a 敌军占领搜刮\n🎬 放火/屠杀/村民逃亡"
+        },
+        {
+          "id": "ism3_3",
+          "title": "游击队夜袭",
+          "isa": "敌后突袭作战",
+          "scene": "摸哨/炸铁路/剪电线",
+          "nodeText": "游击队夜袭\nis-a 敌后突袭作战\n🎬 摸哨/炸铁路/剪电线"
+        },
+        {
+          "id": "ism3_4",
+          "title": "野战医院",
+          "isa": "战地医疗场所",
+          "scene": "手术/伤员/悲壮牺牲",
+          "nodeText": "野战医院\nis-a 战地医疗场所\n🎬 手术/伤员/悲壮牺牲"
+        },
+        {
+          "id": "ism3_5",
+          "title": "渡江过河",
+          "isa": "军队强行渡河",
+          "scene": "木船/枪林弹雨/沉没",
+          "nodeText": "渡江过河\nis-a 军队强行渡河\n🎬 木船/枪林弹雨/沉没"
+        }
+      ],
+      "sentAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "repair_minguo_sheet_23",
+      "title": "修复旧图_23",
+      "theme": "场景",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_23.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_23_场景_赶集庙会_水车磨坊_地主收租_送红军送别.png",
+      "imageNodeId": "img_minguo_sheet_23",
+      "sourceIds": [
+        "ism4_2",
+        "ism4_3",
+        "ism4_4",
+        "ism4_5"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "ism4_2",
+          "title": "赶集庙会",
+          "isa": "集市日场景",
+          "scene": "热闹/货物交换/走亲戚",
+          "nodeText": "赶集庙会\nis-a 集市日场景\n🎬 热闹/货物交换/走亲戚"
+        },
+        {
+          "id": "ism4_3",
+          "title": "水车磨坊",
+          "isa": "传统农业设施",
+          "scene": "劳作的节奏/世外桃源",
+          "nodeText": "水车磨坊\nis-a 传统农业设施\n🎬 劳作的节奏/世外桃源"
+        },
+        {
+          "id": "ism4_4",
+          "title": "地主收租",
+          "isa": "阶级压迫场景",
+          "scene": "盘剥/反抗/悲苦农民",
+          "nodeText": "地主收租\nis-a 阶级压迫场景\n🎬 盘剥/反抗/悲苦农民"
+        },
+        {
+          "id": "ism4_5",
+          "title": "送红军送别",
+          "isa": "军民告别场景",
+          "scene": "依依不舍/革命情谊",
+          "nodeText": "送红军送别\nis-a 军民告别场景\n🎬 依依不舍/革命情谊"
+        }
+      ],
+      "sentAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "repair_minguo_sheet_24",
+      "title": "修复旧图_24",
+      "theme": "建筑",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_24.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_24_建筑.png",
+      "imageNodeId": "img_minguo_sheet_24",
+      "sourceIds": [
+        "iam0_0",
+        "iam0_1",
+        "iam0_2",
+        "iam0_3"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "iam0_0",
+          "title": "石库门公馆",
+          "isa": "官商住宅建筑",
+          "scene": "老上海富商宅邸/深院",
+          "nodeText": "石库门公馆\nis-a 官商住宅建筑\n🎬 老上海富商宅邸/深院"
+        },
+        {
+          "id": "iam0_1",
+          "title": "军阀大帅府",
+          "isa": "军事兼住宅府邸",
+          "scene": "军阀升帐/内部权力斗争",
+          "nodeText": "军阀大帅府\nis-a 军事兼住宅府邸\n🎬 军阀升帐/内部权力斗争"
+        },
+        {
+          "id": "iam0_2",
+          "title": "百乐门舞厅",
+          "isa": "娱乐歌舞场",
+          "scene": "谍战接头/名流社交",
+          "nodeText": "百乐门舞厅\nis-a 娱乐歌舞场\n🎬 谍战接头/名流社交"
+        },
+        {
+          "id": "iam0_3",
+          "title": "大饭店",
+          "isa": "西式高层酒店",
+          "scene": "政要会谈/落地窗远眺",
+          "nodeText": "大饭店\nis-a 西式高层酒店\n🎬 政要会谈/落地窗远眺"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_25",
+      "title": "修复旧图_25",
+      "theme": "建筑",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_25.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_25_建筑.png",
+      "imageNodeId": "img_minguo_sheet_25",
+      "sourceIds": [
+        "iam0_4",
+        "iam0_5",
+        "iam0_6",
+        "iam0_7"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "iam0_4",
+          "title": "银行大楼",
+          "isa": "金融办公建筑",
+          "scene": "经济争夺/金库劫案",
+          "nodeText": "银行大楼\nis-a 金融办公建筑\n🎬 经济争夺/金库劫案"
+        },
+        {
+          "id": "iam0_5",
+          "title": "西式花园洋房",
+          "isa": "买办/海归豪宅",
+          "scene": "留洋派生活/派对",
+          "nodeText": "西式花园洋房\nis-a 买办/海归豪宅\n🎬 留洋派生活/派对"
+        },
+        {
+          "id": "iam0_6",
+          "title": "中式深宅大院",
+          "isa": "传统官宦宅第",
+          "scene": "大家族内斗/封建压迫",
+          "nodeText": "中式深宅大院\nis-a 传统官宦宅第\n🎬 大家族内斗/封建压迫"
+        },
+        {
+          "id": "iam0_7",
+          "title": "大使馆领事馆",
+          "isa": "外国驻华机构",
+          "scene": "外交斡旋/势力交锋",
+          "nodeText": "大使馆领事馆\nis-a 外国驻华机构\n🎬 外交斡旋/势力交锋"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_26",
+      "title": "修复旧图_26",
+      "theme": "建筑",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_26.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_26_建筑.png",
+      "imageNodeId": "img_minguo_sheet_26",
+      "sourceIds": [
+        "iam1_0",
+        "iam1_1",
+        "iam1_2",
+        "iam1_3"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "iam1_0",
+          "title": "石库门弄堂",
+          "isa": "上海典型住宅街巷",
+          "scene": "生活百态/追逐躲避",
+          "nodeText": "石库门弄堂\nis-a 上海典型住宅街巷\n🎬 生活百态/追逐躲避"
+        },
+        {
+          "id": "iam1_1",
+          "title": "老茶馆",
+          "isa": "民间社交场所",
+          "scene": "市井闲谈/秘密接头",
+          "nodeText": "老茶馆\nis-a 民间社交场所\n🎬 市井闲谈/秘密接头"
+        },
+        {
+          "id": "iam1_2",
+          "title": "老戏院剧场",
+          "isa": "民间演出场所",
+          "scene": "台上台下/后台暗流",
+          "nodeText": "老戏院剧场\nis-a 民间演出场所\n🎬 台上台下/后台暗流"
+        },
+        {
+          "id": "iam1_3",
+          "title": "报馆出版社",
+          "isa": "新闻出版机构",
+          "scene": "舆论战/地下印刷",
+          "nodeText": "报馆出版社\nis-a 新闻出版机构\n🎬 舆论战/地下印刷"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_27",
+      "title": "修复旧图_27",
+      "theme": "建筑",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_27.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_27_建筑.png",
+      "imageNodeId": "img_minguo_sheet_27",
+      "sourceIds": [
+        "iam1_4",
+        "iam1_5",
+        "iam1_6",
+        "iam1_7"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "iam1_4",
+          "title": "照相馆",
+          "isa": "人像摄影店铺",
+          "scene": "身份伪装/情报传递",
+          "nodeText": "照相馆\nis-a 人像摄影店铺\n🎬 身份伪装/情报传递"
+        },
+        {
+          "id": "iam1_5",
+          "title": "码头仓库区",
+          "isa": "水上货物装卸区",
+          "scene": "黑市交易/地下党运货",
+          "nodeText": "码头仓库区\nis-a 水上货物装卸区\n🎬 黑市交易/地下党运货"
+        },
+        {
+          "id": "iam1_6",
+          "title": "电车轨道街",
+          "isa": "城市公共交通街道",
+          "scene": "通勤人流/追逐跳车",
+          "nodeText": "电车轨道街\nis-a 城市公共交通街道\n🎬 通勤人流/追逐跳车"
+        },
+        {
+          "id": "iam1_7",
+          "title": "夜市排档街",
+          "isa": "夜间小吃摊聚集地",
+          "scene": "底层生活/情报交易掩护",
+          "nodeText": "夜市排档街\nis-a 夜间小吃摊聚集地\n🎬 底层生活/情报交易掩护"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_28",
+      "title": "修复旧图_28",
+      "theme": "建筑",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_28.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_28_建筑.png",
+      "imageNodeId": "img_minguo_sheet_28",
+      "sourceIds": [
+        "iam2_0",
+        "iam2_1",
+        "iam2_2",
+        "iam2_3"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "iam2_0",
+          "title": "陕北窑洞",
+          "isa": "黄土高原传统民居",
+          "scene": "红军驻地/根据地",
+          "nodeText": "陕北窑洞\nis-a 黄土高原传统民居\n🎬 红军驻地/根据地"
+        },
+        {
+          "id": "iam2_1",
+          "title": "南方瓦房",
+          "isa": "江南传统民居",
+          "scene": "水乡村落/地主宅院",
+          "nodeText": "南方瓦房\nis-a 江南传统民居\n🎬 水乡村落/地主宅院"
+        },
+        {
+          "id": "iam2_2",
+          "title": "土楼围屋",
+          "isa": "闽赣聚族堡垒民居",
+          "scene": "大家族聚居/防御村寨",
+          "nodeText": "土楼围屋\nis-a 闽赣聚族堡垒民居\n🎬 大家族聚居/防御村寨"
+        },
+        {
+          "id": "iam2_3",
+          "title": "祠堂宗庙",
+          "isa": "家族祭祀建筑",
+          "scene": "族老议事/香火传承",
+          "nodeText": "祠堂宗庙\nis-a 家族祭祀建筑\n🎬 族老议事/香火传承"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_29",
+      "title": "修复旧图_29",
+      "theme": "建筑",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_29.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_29_建筑.png",
+      "imageNodeId": "img_minguo_sheet_29",
+      "sourceIds": [
+        "iam2_4",
+        "iam2_5",
+        "iam3_0",
+        "iam3_1"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "iam2_4",
+          "title": "晒谷场",
+          "isa": "农村公共劳作空地",
+          "scene": "农忙/集会/批斗大会",
+          "nodeText": "晒谷场\nis-a 农村公共劳作空地\n🎬 农忙/集会/批斗大会"
+        },
+        {
+          "id": "iam2_5",
+          "title": "村口古树井台",
+          "isa": "农村公共聚集点",
+          "scene": "闲聊/送别/信息传播",
+          "nodeText": "村口古树井台\nis-a 农村公共聚集点\n🎬 闲聊/送别/信息传播"
+        },
+        {
+          "id": "iam3_0",
+          "title": "战壕炮兵阵地",
+          "isa": "前线防御工事",
+          "scene": "阵地战/冲锋与坚守",
+          "nodeText": "战壕炮兵阵地\nis-a 前线防御工事\n🎬 阵地战/冲锋与坚守"
+        },
+        {
+          "id": "iam3_1",
+          "title": "碉堡炮楼",
+          "isa": "日军国军防御据点",
+          "scene": "攻坚/封锁与突破",
+          "nodeText": "碉堡炮楼\nis-a 日军国军防御据点\n🎬 攻坚/封锁与突破"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_30",
+      "title": "修复旧图_30",
+      "theme": "建筑",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_30.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_30_建筑.png",
+      "imageNodeId": "img_minguo_sheet_30",
+      "sourceIds": [
+        "iam3_2",
+        "iam3_3",
+        "iam3_4",
+        "iam3_5"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "iam3_2",
+          "title": "指挥部参谋部",
+          "isa": "军事指挥所",
+          "scene": "战略部署/沙盘推演",
+          "nodeText": "指挥部参谋部\nis-a 军事指挥所\n🎬 战略部署/沙盘推演"
+        },
+        {
+          "id": "iam3_3",
+          "title": "兵营军营",
+          "isa": "部队驻扎地",
+          "scene": "训练/集结/休整",
+          "nodeText": "兵营军营\nis-a 部队驻扎地\n🎬 训练/集结/休整"
+        },
+        {
+          "id": "iam3_4",
+          "title": "城墙城门楼",
+          "isa": "古城防御建筑",
+          "scene": "攻城战/阅兵/要冲",
+          "nodeText": "城墙城门楼\nis-a 古城防御建筑\n🎬 攻城战/阅兵/要冲"
+        },
+        {
+          "id": "iam3_5",
+          "title": "日军宪兵队",
+          "isa": "敌占区镇压机构",
+          "scene": "审讯/拷打/地下党营救",
+          "nodeText": "日军宪兵队\nis-a 敌占区镇压机构\n🎬 审讯/拷打/地下党营救"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_31",
+      "title": "修复旧图_31",
+      "theme": "建筑",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_31.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_31_建筑.png",
+      "imageNodeId": "img_minguo_sheet_31",
+      "sourceIds": [
+        "iam3_6",
+        "iam3_7",
+        "iam4_0",
+        "iam4_1"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "iam3_6",
+          "title": "防空洞避难所",
+          "isa": "空袭避难设施",
+          "scene": "空袭/平民躲藏",
+          "nodeText": "防空洞避难所\nis-a 空袭避难设施\n🎬 空袭/平民躲藏"
+        },
+        {
+          "id": "iam3_7",
+          "title": "地雷阵封锁线",
+          "isa": "爆炸装置区",
+          "scene": "过雷区/排雷/引爆",
+          "nodeText": "地雷阵封锁线\nis-a 爆炸装置区\n🎬 过雷区/排雷/引爆"
+        },
+        {
+          "id": "iam4_0",
+          "title": "火车站铁轨",
+          "isa": "铁路运输枢纽",
+          "scene": "离别/抵达/追车/大撤退",
+          "nodeText": "火车站铁轨\nis-a 铁路运输枢纽\n🎬 离别/抵达/追车/大撤退"
+        },
+        {
+          "id": "iam4_1",
+          "title": "老码头渡口",
+          "isa": "水上客运枢纽",
+          "scene": "逃难/物资运输/告别",
+          "nodeText": "老码头渡口\nis-a 水上客运枢纽\n🎬 逃难/物资运输/告别"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_32",
+      "title": "修复旧图_32",
+      "theme": "建筑",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_32.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_32_建筑.png",
+      "imageNodeId": "img_minguo_sheet_32",
+      "sourceIds": [
+        "iam4_2",
+        "iam4_3",
+        "iam4_4",
+        "iam4_5"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "iam4_2",
+          "title": "黄包车停靠点",
+          "isa": "人力车聚集站",
+          "scene": "等客/抢客/穿梭街巷",
+          "nodeText": "黄包车停靠点\nis-a 人力车聚集站\n🎬 等客/抢客/穿梭街巷"
+        },
+        {
+          "id": "iam4_3",
+          "title": "大桥铁桥",
+          "isa": "跨越江河桥梁",
+          "scene": "战略争夺/炸桥/行军",
+          "nodeText": "大桥铁桥\nis-a 跨越江河桥梁\n🎬 战略争夺/炸桥/行军"
+        },
+        {
+          "id": "iam4_4",
+          "title": "公路检查站",
+          "isa": "路障关卡",
+          "scene": "搜身/盘查/蒙混过关",
+          "nodeText": "公路检查站\nis-a 路障关卡\n🎬 搜身/盘查/蒙混过关"
+        },
+        {
+          "id": "iam4_5",
+          "title": "老式轿车",
+          "isa": "交通工具/道具",
+          "scene": "人物登场/逃亡/追逐",
+          "nodeText": "老式轿车\nis-a 交通工具/道具\n🎬 人物登场/逃亡/追逐"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_33",
+      "title": "修复旧图_33",
+      "theme": "构件",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_33.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_33_构件.png",
+      "imageNodeId": "img_minguo_sheet_33",
+      "sourceIds": [
+        "icom0_0",
+        "icom0_1",
+        "icom0_2",
+        "icom0_3"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "icom0_0",
+          "title": "拱形骑楼",
+          "isa": "南方沿街过廊建筑",
+          "scene": "遮阳避雨/市井穿行",
+          "nodeText": "拱形骑楼\nis-a 南方沿街过廊建筑\n🎬 遮阳避雨/市井穿行"
+        },
+        {
+          "id": "icom0_1",
+          "title": "铁艺阳台栏杆",
+          "isa": "西式铸铁栏杆",
+          "scene": "精致/殖民风格/装饰细节",
+          "nodeText": "铁艺阳台栏杆\nis-a 西式铸铁栏杆\n🎬 精致/殖民风格/装饰细节"
+        },
+        {
+          "id": "icom0_2",
+          "title": "石库门门楣",
+          "isa": "上海石库门入口装饰",
+          "scene": "中西合璧/家族匾额",
+          "nodeText": "石库门门楣\nis-a 上海石库门入口装饰\n🎬 中西合璧/家族匾额"
+        },
+        {
+          "id": "icom0_3",
+          "title": "霓虹灯招牌",
+          "isa": "彩色灯管广告牌",
+          "scene": "夜上海繁华/歌舞厅标志",
+          "nodeText": "霓虹灯招牌\nis-a 彩色灯管广告牌\n🎬 夜上海繁华/歌舞厅标志"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_34",
+      "title": "修复旧图_34",
+      "theme": "构件",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_34.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_34_构件.png",
+      "imageNodeId": "img_minguo_sheet_34",
+      "sourceIds": [
+        "icom0_4",
+        "icom0_5",
+        "icom0_6",
+        "icom0_7"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "icom0_4",
+          "title": "青砖墙灰瓦顶",
+          "isa": "传统民居外墙屋顶",
+          "scene": "江南水乡/老城街景",
+          "nodeText": "青砖墙灰瓦顶\nis-a 传统民居外墙屋顶\n🎬 江南水乡/老城街景"
+        },
+        {
+          "id": "icom0_5",
+          "title": "老式木质百叶窗",
+          "isa": "手动遮光窗扇",
+          "scene": "窥视/光影/通风",
+          "nodeText": "老式木质百叶窗\nis-a 手动遮光窗扇\n🎬 窥视/光影/通风"
+        },
+        {
+          "id": "icom0_6",
+          "title": "朱红大门铜钉",
+          "isa": "传统官宅大门",
+          "scene": "权势/庄严/叩门",
+          "nodeText": "朱红大门铜钉\nis-a 传统官宅大门\n🎬 权势/庄严/叩门"
+        },
+        {
+          "id": "icom0_7",
+          "title": "琉璃瓦屋顶",
+          "isa": "彩色釉面瓦顶",
+          "scene": "中式庙宇/官式建筑",
+          "nodeText": "琉璃瓦屋顶\nis-a 彩色釉面瓦顶\n🎬 中式庙宇/官式建筑"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_35",
+      "title": "修复旧图_35",
+      "theme": "构件",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_35.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_35_构件.png",
+      "imageNodeId": "img_minguo_sheet_35",
+      "sourceIds": [
+        "icom0_8",
+        "icom0_9",
+        "icom1_0",
+        "icom1_1"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "icom0_8",
+          "title": "水泥电线杆",
+          "isa": "城市电力设施",
+          "scene": "新文明/现代化痕迹",
+          "nodeText": "水泥电线杆\nis-a 城市电力设施\n🎬 新文明/现代化痕迹"
+        },
+        {
+          "id": "icom0_9",
+          "title": "烟囱工厂烟筒",
+          "isa": "工业建筑排烟道",
+          "scene": "工业文明/污染/火力",
+          "nodeText": "烟囱工厂烟筒\nis-a 工业建筑排烟道\n🎬 工业文明/污染/火力"
+        },
+        {
+          "id": "icom1_0",
+          "title": "盘扣蝴蝶扣",
+          "isa": "中式服装扣件",
+          "scene": "细节质感/传统韵味",
+          "nodeText": "盘扣蝴蝶扣\nis-a 中式服装扣件\n🎬 细节质感/传统韵味"
+        },
+        {
+          "id": "icom1_1",
+          "title": "立领",
+          "isa": "旗袍长衫领型",
+          "scene": "挺拔/禁欲/端庄",
+          "nodeText": "立领\nis-a 旗袍长衫领型\n🎬 挺拔/禁欲/端庄"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_36",
+      "title": "修复旧图_36",
+      "theme": "构件",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_36.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_36_构件.png",
+      "imageNodeId": "img_minguo_sheet_36",
+      "sourceIds": [
+        "icom1_2",
+        "icom1_3",
+        "icom1_4",
+        "icom1_5"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "icom1_2",
+          "title": "开衩",
+          "isa": "旗袍下摆开口",
+          "scene": "性感/行动便利/若隐若现",
+          "nodeText": "开衩\nis-a 旗袍下摆开口\n🎬 性感/行动便利/若隐若现"
+        },
+        {
+          "id": "icom1_3",
+          "title": "金刚纂簪子",
+          "isa": "女性发饰",
+          "scene": "身份/婚否/年代感",
+          "nodeText": "金刚纂簪子\nis-a 女性发饰\n🎬 身份/婚否/年代感"
+        },
+        {
+          "id": "icom1_4",
+          "title": "怀表挂链",
+          "isa": "便携计时器",
+          "scene": "绅士/身份/时间的重量",
+          "nodeText": "怀表挂链\nis-a 便携计时器\n🎬 绅士/身份/时间的重量"
+        },
+        {
+          "id": "icom1_5",
+          "title": "毡帽礼帽",
+          "isa": "男性头饰帽",
+          "scene": "体面/遮阳/脱帽礼",
+          "nodeText": "毡帽礼帽\nis-a 男性头饰帽\n🎬 体面/遮阳/脱帽礼"
+        }
+      ]
+    },
+    {
+      "id": "repair_minguo_sheet_37",
+      "title": "修复旧图_37",
+      "theme": "构件",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\修复旧图_37.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_37_构件.png",
+      "imageNodeId": "img_minguo_sheet_37",
+      "sourceIds": [
+        "icom1_6",
+        "icom1_7",
+        "icom1_8",
+        "icom1_9"
+      ],
+      "status": "skipped",
+      "attempts": 0,
+      "sentAt": null,
+      "completedAt": null,
+      "error": null,
+      "items": [
+        {
+          "id": "icom1_6",
+          "title": "围巾披肩",
+          "isa": "颈部御寒织物",
+          "scene": "飘逸/文人气/保暖",
+          "nodeText": "围巾披肩\nis-a 颈部御寒织物\n🎬 飘逸/文人气/保暖"
+        },
+        {
+          "id": "icom1_7",
+          "title": "眼镜墨镜",
+          "isa": "视力矫正装饰镜",
+          "scene": "知识分子/隐蔽身份",
+          "nodeText": "眼镜墨镜\nis-a 视力矫正装饰镜\n🎬 知识分子/隐蔽身份"
+        },
+        {
+          "id": "icom1_8",
+          "title": "烟斗卷烟",
+          "isa": "吸烟用具",
+          "scene": "沉思/焦虑/男人味",
+          "nodeText": "烟斗卷烟\nis-a 吸烟用具\n🎬 沉思/焦虑/男人味"
+        },
+        {
+          "id": "icom1_9",
+          "title": "袖扣领带夹",
+          "isa": "西装金属配件",
+          "scene": "精致/留洋/西化细节",
+          "nodeText": "袖扣领带夹\nis-a 西装金属配件\n🎬 精致/留洋/西化细节"
+        }
+      ]
+    }
+  ]
+}

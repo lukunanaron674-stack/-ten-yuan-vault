@@ -1,0 +1,6263 @@
+{
+  "coordinate_notes": {
+    "uv_origin": "bottom-left",
+    "pixel_origin": "top-left",
+    "texture_size": [
+      2048,
+      2048
+    ],
+    "bbox_pixel": "inclusive x0,y0,x1,y1",
+    "root_to_tip_axis": "normalized direction vector from hair root to hair tip"
+  },
+  "islands": [
+    {
+      "island_id": 1,
+      "pixel_area": 20848,
+      "bbox_pixel_inclusive": [
+        1424,
+        15,
+        1583,
+        293
+      ],
+      "bbox_uv": [
+        0.6956522,
+        0.8568637,
+        0.7733268,
+        0.9926722
+      ],
+      "centroid_pixel": [
+        1502.971,
+        152.027
+      ],
+      "centroid_uv": [
+        0.7342311,
+        0.9257319
+      ],
+      "major_axis_pixel": [
+        0.0195672,
+        0.9998085
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0195672,
+        0.9998085
+      ],
+      "root_to_tip_axis_uv": [
+        0.0195672,
+        -0.9998085
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -138.213,
+        140.379
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 31,
+      "part_counts": {
+        "back": 31
+      },
+      "category_counts": {
+        "back_center": 10,
+        "back_lower": 21
+      },
+      "world_y_range": [
+        109.6154,
+        118.90902
+      ]
+    },
+    {
+      "island_id": 2,
+      "pixel_area": 28379,
+      "bbox_pixel_inclusive": [
+        950,
+        23,
+        1162,
+        367
+      ],
+      "bbox_uv": [
+        0.4640938,
+        0.8207132,
+        0.56766,
+        0.988764
+      ],
+      "centroid_pixel": [
+        1029.19,
+        227.771
+      ],
+      "centroid_uv": [
+        0.5027799,
+        0.8887293
+      ],
+      "major_axis_pixel": [
+        -0.2262718,
+        0.9740642
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.2262718,
+        0.9740642
+      ],
+      "root_to_tip_axis_uv": [
+        -0.2262718,
+        -0.9740642
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -229.511,
+        134.165
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 24,
+      "part_counts": {
+        "back": 24
+      },
+      "category_counts": {
+        "back_center": 3,
+        "back_lower": 21
+      },
+      "world_y_range": [
+        108.30938,
+        118.71479
+      ]
+    },
+    {
+      "island_id": 3,
+      "pixel_area": 61609,
+      "bbox_pixel_inclusive": [
+        1593,
+        25,
+        2016,
+        266
+      ],
+      "bbox_uv": [
+        0.778212,
+        0.8700537,
+        0.9848559,
+        0.987787
+      ],
+      "centroid_pixel": [
+        1786.523,
+        123.486
+      ],
+      "centroid_uv": [
+        0.8727518,
+        0.9396744
+      ],
+      "major_axis_pixel": [
+        0.9996451,
+        0.0266383
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.9996451,
+        -0.0266383
+      ],
+      "root_to_tip_axis_uv": [
+        -0.9996451,
+        0.0266383
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -194.826,
+        226.985
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 132,
+      "part_counts": {
+        "braid": 132
+      },
+      "category_counts": {
+        "left_braid_mid": 1,
+        "left_braid_top": 65,
+        "right_braid_mid": 1,
+        "right_braid_top": 65
+      },
+      "world_y_range": [
+        100.7718,
+        111.09744
+      ]
+    },
+    {
+      "island_id": 4,
+      "pixel_area": 29121,
+      "bbox_pixel_inclusive": [
+        1197,
+        30,
+        1424,
+        367
+      ],
+      "bbox_uv": [
+        0.5847582,
+        0.8207132,
+        0.6956522,
+        0.9853444
+      ],
+      "centroid_pixel": [
+        1339.448,
+        229.861
+      ],
+      "centroid_uv": [
+        0.6543467,
+        0.8877083
+      ],
+      "major_axis_pixel": [
+        0.2948081,
+        0.9555565
+      ],
+      "root_to_tip_axis_pixel": [
+        0.2948081,
+        0.9555565
+      ],
+      "root_to_tip_axis_uv": [
+        0.2948081,
+        -0.9555565
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -232.973,
+        130.912
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 24,
+      "part_counts": {
+        "back": 24
+      },
+      "category_counts": {
+        "back_center": 3,
+        "back_lower": 21
+      },
+      "world_y_range": [
+        108.30938,
+        118.71479
+      ]
+    },
+    {
+      "island_id": 5,
+      "pixel_area": 80578,
+      "bbox_pixel_inclusive": [
+        508,
+        31,
+        655,
+        830
+      ],
+      "bbox_uv": [
+        0.2481681,
+        0.5945286,
+        0.3199805,
+        0.9848559
+      ],
+      "centroid_pixel": [
+        590.205,
+        418.85
+      ],
+      "centroid_uv": [
+        0.2883267,
+        0.7953835
+      ],
+      "major_axis_pixel": [
+        0.0472124,
+        0.9988849
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0472124,
+        0.9988849
+      ],
+      "root_to_tip_axis_uv": [
+        0.0472124,
+        -0.9988849
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -388.135,
+        411.154
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 55,
+      "part_counts": {
+        "back": 55
+      },
+      "category_counts": {
+        "back_left": 18,
+        "back_lower": 16,
+        "back_top": 21
+      },
+      "world_y_range": [
+        108.1215,
+        135.01625
+      ]
+    },
+    {
+      "island_id": 6,
+      "pixel_area": 77254,
+      "bbox_pixel_inclusive": [
+        375,
+        38,
+        499,
+        840
+      ],
+      "bbox_uv": [
+        0.1831949,
+        0.5896434,
+        0.2437714,
+        0.9814362
+      ],
+      "centroid_pixel": [
+        442.404,
+        452.641
+      ],
+      "centroid_uv": [
+        0.2161233,
+        0.7788757
+      ],
+      "major_axis_pixel": [
+        -0.0301912,
+        0.9995441
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0301912,
+        0.9995441
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0301912,
+        -0.9995441
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -415.98,
+        386.862
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 45,
+      "part_counts": {
+        "back": 45
+      },
+      "category_counts": {
+        "back_left": 22,
+        "back_lower": 7,
+        "back_top": 16
+      },
+      "world_y_range": [
+        111.90338,
+        135.23845
+      ]
+    },
+    {
+      "island_id": 7,
+      "pixel_area": 80600,
+      "bbox_pixel_inclusive": [
+        89,
+        39,
+        226,
+        843
+      ],
+      "bbox_uv": [
+        0.0434783,
+        0.5881778,
+        0.1104055,
+        0.9809477
+      ],
+      "centroid_pixel": [
+        153.032,
+        428.985
+      ],
+      "centroid_uv": [
+        0.0747593,
+        0.7904322
+      ],
+      "major_axis_pixel": [
+        -0.0169417,
+        0.9998565
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0169417,
+        0.9998565
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0169417,
+        -0.9998565
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -390.013,
+        413.888
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 55,
+      "part_counts": {
+        "back": 55
+      },
+      "category_counts": {
+        "back_lower": 16,
+        "back_right": 18,
+        "back_top": 21
+      },
+      "world_y_range": [
+        108.1215,
+        135.01625
+      ]
+    },
+    {
+      "island_id": 8,
+      "pixel_area": 77439,
+      "bbox_pixel_inclusive": [
+        240,
+        40,
+        360,
+        843
+      ],
+      "bbox_uv": [
+        0.1172447,
+        0.5881778,
+        0.1758671,
+        0.9804592
+      ],
+      "centroid_pixel": [
+        298.336,
+        427.08
+      ],
+      "centroid_uv": [
+        0.1457431,
+        0.7913629
+      ],
+      "major_axis_pixel": [
+        -0.0062831,
+        0.9999803
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0062831,
+        -0.9999803
+      ],
+      "root_to_tip_axis_uv": [
+        0.0062831,
+        0.9999803
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -387.234,
+        415.688
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 45,
+      "part_counts": {
+        "back": 45
+      },
+      "category_counts": {
+        "back_lower": 7,
+        "back_right": 22,
+        "back_top": 16
+      },
+      "world_y_range": [
+        111.90338,
+        135.23845
+      ]
+    },
+    {
+      "island_id": 9,
+      "pixel_area": 1,
+      "bbox_pixel_inclusive": [
+        946,
+        93,
+        946,
+        93
+      ],
+      "bbox_uv": [
+        0.4621397,
+        0.9545677,
+        0.4621397,
+        0.9545677
+      ],
+      "centroid_pixel": [
+        946.0,
+        93.0
+      ],
+      "centroid_uv": [
+        0.4621397,
+        0.9545677
+      ],
+      "major_axis_pixel": [
+        1.0,
+        0.0
+      ],
+      "root_to_tip_axis_pixel": [
+        1.0,
+        0.0
+      ],
+      "root_to_tip_axis_uv": [
+        1.0,
+        -0.0
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        0.0,
+        0.0
+      ],
+      "mesh_names": [],
+      "face_count": 0,
+      "part_counts": {},
+      "category_counts": {},
+      "world_y_range": null
+    },
+    {
+      "island_id": 10,
+      "pixel_area": 40,
+      "bbox_pixel_inclusive": [
+        946,
+        93,
+        953,
+        102
+      ],
+      "bbox_uv": [
+        0.4621397,
+        0.950171,
+        0.4655594,
+        0.9545677
+      ],
+      "centroid_pixel": [
+        949.55,
+        97.55
+      ],
+      "centroid_uv": [
+        0.463874,
+        0.9523449
+      ],
+      "major_axis_pixel": [
+        0.5599117,
+        0.8285523
+      ],
+      "root_to_tip_axis_pixel": [
+        0.5599117,
+        0.8285523
+      ],
+      "root_to_tip_axis_uv": [
+        0.5599117,
+        -0.8285523
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -4.638,
+        4.23
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 32,
+      "part_counts": {
+        "back": 32
+      },
+      "category_counts": {
+        "back_left": 11,
+        "back_lower": 6,
+        "back_right": 11,
+        "back_top": 4
+      },
+      "world_y_range": [
+        112.80415,
+        130.10876
+      ]
+    },
+    {
+      "island_id": 11,
+      "pixel_area": 16,
+      "bbox_pixel_inclusive": [
+        947,
+        104,
+        951,
+        108
+      ],
+      "bbox_uv": [
+        0.4626282,
+        0.9472399,
+        0.4645823,
+        0.9491939
+      ],
+      "centroid_pixel": [
+        949.625,
+        106.0
+      ],
+      "centroid_uv": [
+        0.4639106,
+        0.9482169
+      ],
+      "major_axis_pixel": [
+        -0.6922317,
+        0.7216753
+      ],
+      "root_to_tip_axis_pixel": [
+        0.6922317,
+        -0.7216753
+      ],
+      "root_to_tip_axis_uv": [
+        0.6922317,
+        0.7216753
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -2.395,
+        2.539
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 28,
+      "part_counts": {
+        "back": 28
+      },
+      "category_counts": {
+        "back_lower": 27,
+        "back_top": 1
+      },
+      "world_y_range": [
+        108.36514,
+        130.25573
+      ]
+    },
+    {
+      "island_id": 12,
+      "pixel_area": 68520,
+      "bbox_pixel_inclusive": [
+        658,
+        119,
+        792,
+        838
+      ],
+      "bbox_uv": [
+        0.321446,
+        0.5906204,
+        0.3869077,
+        0.9418661
+      ],
+      "centroid_pixel": [
+        727.459,
+        519.409
+      ],
+      "centroid_uv": [
+        0.355378,
+        0.7462585
+      ],
+      "major_axis_pixel": [
+        -0.0246666,
+        0.9996957
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0246666,
+        0.9996957
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0246666,
+        -0.9996957
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -400.67,
+        318.999
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 35,
+      "part_counts": {
+        "back": 35
+      },
+      "category_counts": {
+        "back_left": 15,
+        "back_lower": 5,
+        "back_top": 15
+      },
+      "world_y_range": [
+        112.06688,
+        134.81896
+      ]
+    },
+    {
+      "island_id": 13,
+      "pixel_area": 68435,
+      "bbox_pixel_inclusive": [
+        806,
+        123,
+        941,
+        843
+      ],
+      "bbox_uv": [
+        0.3937469,
+        0.5881778,
+        0.4596971,
+        0.9399121
+      ],
+      "centroid_pixel": [
+        875.575,
+        442.356
+      ],
+      "centroid_uv": [
+        0.4277359,
+        0.7839002
+      ],
+      "major_axis_pixel": [
+        0.0430697,
+        0.9990721
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0430697,
+        -0.9990721
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0430697,
+        0.9990721
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -319.248,
+        401.238
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 35,
+      "part_counts": {
+        "back": 35
+      },
+      "category_counts": {
+        "back_lower": 5,
+        "back_right": 15,
+        "back_top": 15
+      },
+      "world_y_range": [
+        112.06688,
+        134.81896
+      ]
+    },
+    {
+      "island_id": 14,
+      "pixel_area": 1000,
+      "bbox_pixel_inclusive": [
+        1160,
+        145,
+        1199,
+        188
+      ],
+      "bbox_uv": [
+        0.566683,
+        0.9081583,
+        0.5857352,
+        0.9291646
+      ],
+      "centroid_pixel": [
+        1175.603,
+        162.047
+      ],
+      "centroid_uv": [
+        0.5743053,
+        0.9208368
+      ],
+      "major_axis_pixel": [
+        -0.6552319,
+        0.7554278
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.6552319,
+        0.7554278
+      ],
+      "root_to_tip_axis_uv": [
+        -0.6552319,
+        -0.7554278
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -25.187,
+        22.622
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 15,
+      "part_counts": {
+        "back": 15
+      },
+      "category_counts": {
+        "back_left": 7,
+        "back_lower": 8
+      },
+      "world_y_range": [
+        112.52638,
+        117.05434
+      ]
+    },
+    {
+      "island_id": 15,
+      "pixel_area": 1003,
+      "bbox_pixel_inclusive": [
+        1206,
+        146,
+        1246,
+        189
+      ],
+      "bbox_uv": [
+        0.5891549,
+        0.9076698,
+        0.6086957,
+        0.9286761
+      ],
+      "centroid_pixel": [
+        1230.087,
+        162.742
+      ],
+      "centroid_uv": [
+        0.6009217,
+        0.9204974
+      ],
+      "major_axis_pixel": [
+        0.6510913,
+        0.7589994
+      ],
+      "root_to_tip_axis_pixel": [
+        0.6510913,
+        0.7589994
+      ],
+      "root_to_tip_axis_uv": [
+        0.6510913,
+        -0.7589994
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -26.872,
+        22.478
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 15,
+      "part_counts": {
+        "back": 15
+      },
+      "category_counts": {
+        "back_lower": 8,
+        "back_right": 7
+      },
+      "world_y_range": [
+        112.52638,
+        117.05434
+      ]
+    },
+    {
+      "island_id": 16,
+      "pixel_area": 2472,
+      "bbox_pixel_inclusive": [
+        1167,
+        197,
+        1198,
+        322
+      ],
+      "bbox_uv": [
+        0.5701026,
+        0.8426966,
+        0.5852467,
+        0.9037616
+      ],
+      "centroid_pixel": [
+        1183.172,
+        255.558
+      ],
+      "centroid_uv": [
+        0.5780027,
+        0.8751549
+      ],
+      "major_axis_pixel": [
+        0.1079324,
+        0.9941582
+      ],
+      "root_to_tip_axis_pixel": [
+        0.1079324,
+        0.9941582
+      ],
+      "root_to_tip_axis_uv": [
+        0.1079324,
+        -0.9941582
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -59.422,
+        67.654
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 12,
+      "part_counts": {
+        "back": 12
+      },
+      "category_counts": {
+        "back_right": 2,
+        "back_top": 10
+      },
+      "world_y_range": [
+        125.12756,
+        132.88883
+      ]
+    },
+    {
+      "island_id": 17,
+      "pixel_area": 2088,
+      "bbox_pixel_inclusive": [
+        1199,
+        209,
+        1228,
+        325
+      ],
+      "bbox_uv": [
+        0.5857352,
+        0.8412311,
+        0.5999023,
+        0.8978994
+      ],
+      "centroid_pixel": [
+        1211.923,
+        263.04
+      ],
+      "centroid_uv": [
+        0.5920485,
+        0.8714996
+      ],
+      "major_axis_pixel": [
+        -0.0370518,
+        0.9993133
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0370518,
+        0.9993133
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0370518,
+        -0.9993133
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -54.228,
+        62.359
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 12,
+      "part_counts": {
+        "back": 12
+      },
+      "category_counts": {
+        "back_left": 2,
+        "back_top": 10
+      },
+      "world_y_range": [
+        125.10954,
+        132.88883
+      ]
+    },
+    {
+      "island_id": 18,
+      "pixel_area": 7605,
+      "bbox_pixel_inclusive": [
+        1607,
+        238,
+        1642,
+        540
+      ],
+      "bbox_uv": [
+        0.7850513,
+        0.7361993,
+        0.8021495,
+        0.8837323
+      ],
+      "centroid_pixel": [
+        1627.986,
+        394.978
+      ],
+      "centroid_uv": [
+        0.7953033,
+        0.8070457
+      ],
+      "major_axis_pixel": [
+        -0.0131493,
+        0.9999135
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0131493,
+        -0.9999135
+      ],
+      "root_to_tip_axis_uv": [
+        0.0131493,
+        0.9999135
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -157.135,
+        145.115
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 22,
+      "part_counts": {
+        "braid": 22
+      },
+      "category_counts": {
+        "left_braid_top": 11,
+        "right_braid_top": 11
+      },
+      "world_y_range": [
+        102.69391,
+        110.59161
+      ]
+    },
+    {
+      "island_id": 19,
+      "pixel_area": 4468,
+      "bbox_pixel_inclusive": [
+        1660,
+        240,
+        1686,
+        521
+      ],
+      "bbox_uv": [
+        0.8109428,
+        0.7454812,
+        0.8236444,
+        0.8827553
+      ],
+      "centroid_pixel": [
+        1672.828,
+        375.272
+      ],
+      "centroid_uv": [
+        0.8172094,
+        0.816672
+      ],
+      "major_axis_pixel": [
+        0.0347241,
+        0.9993969
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0347241,
+        0.9993969
+      ],
+      "root_to_tip_axis_uv": [
+        0.0347241,
+        -0.9993969
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -135.497,
+        145.924
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 46,
+      "part_counts": {
+        "braid": 46
+      },
+      "category_counts": {
+        "left_braid_top": 23,
+        "right_braid_top": 23
+      },
+      "world_y_range": [
+        109.33992,
+        111.96723
+      ]
+    },
+    {
+      "island_id": 20,
+      "pixel_area": 9005,
+      "bbox_pixel_inclusive": [
+        1813,
+        247,
+        1923,
+        433
+      ],
+      "bbox_uv": [
+        0.8856864,
+        0.7884709,
+        0.9394235,
+        0.8793356
+      ],
+      "centroid_pixel": [
+        1870.757,
+        342.273
+      ],
+      "centroid_uv": [
+        0.9139017,
+        0.8327929
+      ],
+      "major_axis_pixel": [
+        0.4268138,
+        0.9043395
+      ],
+      "root_to_tip_axis_pixel": [
+        0.4268138,
+        0.9043395
+      ],
+      "root_to_tip_axis_uv": [
+        0.4268138,
+        -0.9043395
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -92.031,
+        95.383
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 94,
+      "part_counts": {
+        "braid": 94
+      },
+      "category_counts": {
+        "left_braid_low": 12,
+        "left_braid_mid": 35,
+        "right_braid_low": 12,
+        "right_braid_mid": 35
+      },
+      "world_y_range": [
+        83.57093,
+        94.26382
+      ]
+    },
+    {
+      "island_id": 21,
+      "pixel_area": 2976,
+      "bbox_pixel_inclusive": [
+        1692,
+        255,
+        1710,
+        529
+      ],
+      "bbox_uv": [
+        0.8265755,
+        0.741573,
+        0.8353688,
+        0.8754275
+      ],
+      "centroid_pixel": [
+        1704.061,
+        396.413
+      ],
+      "centroid_uv": [
+        0.8324674,
+        0.8063446
+      ],
+      "major_axis_pixel": [
+        -0.0059259,
+        0.9999824
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0059259,
+        -0.9999824
+      ],
+      "root_to_tip_axis_uv": [
+        0.0059259,
+        0.9999824
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -141.445,
+        132.55
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 20,
+      "part_counts": {
+        "braid": 20
+      },
+      "category_counts": {
+        "left_braid_mid": 10,
+        "right_braid_mid": 10
+      },
+      "world_y_range": [
+        88.55099,
+        98.14545
+      ]
+    },
+    {
+      "island_id": 22,
+      "pixel_area": 2393,
+      "bbox_pixel_inclusive": [
+        1729,
+        255,
+        1741,
+        529
+      ],
+      "bbox_uv": [
+        0.8446507,
+        0.741573,
+        0.8505129,
+        0.8754275
+      ],
+      "centroid_pixel": [
+        1736.576,
+        396.115
+      ],
+      "centroid_uv": [
+        0.8483517,
+        0.8064898
+      ],
+      "major_axis_pixel": [
+        -0.0037799,
+        0.9999929
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0037799,
+        -0.9999929
+      ],
+      "root_to_tip_axis_uv": [
+        0.0037799,
+        0.9999929
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -141.131,
+        132.867
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 20,
+      "part_counts": {
+        "braid": 20
+      },
+      "category_counts": {
+        "left_braid_mid": 10,
+        "right_braid_mid": 10
+      },
+      "world_y_range": [
+        88.73247,
+        98.20168
+      ]
+    },
+    {
+      "island_id": 23,
+      "pixel_area": 5517,
+      "bbox_pixel_inclusive": [
+        1763,
+        269,
+        1799,
+        527
+      ],
+      "bbox_uv": [
+        0.8612604,
+        0.7425501,
+        0.8788471,
+        0.8685882
+      ],
+      "centroid_pixel": [
+        1780.354,
+        392.141
+      ],
+      "centroid_uv": [
+        0.8697382,
+        0.8084314
+      ],
+      "major_axis_pixel": [
+        -0.0094327,
+        0.9999555
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0094327,
+        -0.9999555
+      ],
+      "root_to_tip_axis_uv": [
+        0.0094327,
+        0.9999555
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -123.132,
+        134.856
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 40,
+      "part_counts": {
+        "braid": 40
+      },
+      "category_counts": {
+        "left_braid_top": 20,
+        "right_braid_top": 20
+      },
+      "world_y_range": [
+        102.19606,
+        109.29088
+      ]
+    },
+    {
+      "island_id": 24,
+      "pixel_area": 7297,
+      "bbox_pixel_inclusive": [
+        1481,
+        271,
+        1551,
+        455
+      ],
+      "bbox_uv": [
+        0.7234978,
+        0.7777235,
+        0.7576942,
+        0.8676111
+      ],
+      "centroid_pixel": [
+        1511.344,
+        383.983
+      ],
+      "centroid_uv": [
+        0.7383215,
+        0.8124169
+      ],
+      "major_axis_pixel": [
+        0.2064656,
+        0.9784539
+      ],
+      "root_to_tip_axis_pixel": [
+        0.2064656,
+        0.9784539
+      ],
+      "root_to_tip_axis_uv": [
+        0.2064656,
+        -0.9784539
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -112.477,
+        75.404
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 21,
+      "part_counts": {
+        "back": 21
+      },
+      "category_counts": {
+        "back_center": 1,
+        "back_lower": 18,
+        "back_right": 2
+      },
+      "world_y_range": [
+        110.24868,
+        115.8371
+      ]
+    },
+    {
+      "island_id": 25,
+      "pixel_area": 6787,
+      "bbox_pixel_inclusive": [
+        1930,
+        274,
+        2022,
+        430
+      ],
+      "bbox_uv": [
+        0.9428432,
+        0.7899365,
+        0.987787,
+        0.8661456
+      ],
+      "centroid_pixel": [
+        1978.538,
+        356.535
+      ],
+      "centroid_uv": [
+        0.966555,
+        0.8258257
+      ],
+      "major_axis_pixel": [
+        -0.4765132,
+        0.8791673
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.4765132,
+        0.8791673
+      ],
+      "root_to_tip_axis_uv": [
+        -0.4765132,
+        -0.8791673
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -86.124,
+        70.086
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 80,
+      "part_counts": {
+        "braid": 80
+      },
+      "category_counts": {
+        "left_braid_low": 3,
+        "left_braid_mid": 37,
+        "right_braid_low": 3,
+        "right_braid_mid": 37
+      },
+      "world_y_range": [
+        85.32397,
+        94.44402
+      ]
+    },
+    {
+      "island_id": 26,
+      "pixel_area": 6688,
+      "bbox_pixel_inclusive": [
+        1381,
+        282,
+        1455,
+        461
+      ],
+      "bbox_uv": [
+        0.6746458,
+        0.7747924,
+        0.7107963,
+        0.8622374
+      ],
+      "centroid_pixel": [
+        1418.244,
+        390.061
+      ],
+      "centroid_uv": [
+        0.6928401,
+        0.8094473
+      ],
+      "major_axis_pixel": [
+        -0.2654004,
+        0.9641383
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.2654004,
+        0.9641383
+      ],
+      "root_to_tip_axis_uv": [
+        -0.2654004,
+        -0.9641383
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -111.818,
+        75.36
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 22,
+      "part_counts": {
+        "back": 22
+      },
+      "category_counts": {
+        "back_center": 1,
+        "back_left": 2,
+        "back_lower": 19
+      },
+      "world_y_range": [
+        110.24868,
+        115.8371
+      ]
+    },
+    {
+      "island_id": 27,
+      "pixel_area": 30680,
+      "bbox_pixel_inclusive": [
+        949,
+        357,
+        1080,
+        829
+      ],
+      "bbox_uv": [
+        0.4636053,
+        0.5950171,
+        0.5276014,
+        0.8255984
+      ],
+      "centroid_pixel": [
+        998.974,
+        592.783
+      ],
+      "centroid_uv": [
+        0.4880188,
+        0.7104137
+      ],
+      "major_axis_pixel": [
+        -0.0377803,
+        0.9992861
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0377803,
+        -0.9992861
+      ],
+      "root_to_tip_axis_uv": [
+        0.0377803,
+        0.9992861
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -235.276,
+        237.143
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 19,
+      "part_counts": {
+        "back": 19
+      },
+      "category_counts": {
+        "back_right": 6,
+        "back_top": 13
+      },
+      "world_y_range": [
+        120.5505,
+        134.46129
+      ]
+    },
+    {
+      "island_id": 28,
+      "pixel_area": 30461,
+      "bbox_pixel_inclusive": [
+        1088,
+        357,
+        1223,
+        829
+      ],
+      "bbox_uv": [
+        0.5315095,
+        0.5950171,
+        0.5974597,
+        0.8255984
+      ],
+      "centroid_pixel": [
+        1169.186,
+        592.448
+      ],
+      "centroid_uv": [
+        0.5711704,
+        0.7105774
+      ],
+      "major_axis_pixel": [
+        0.0251887,
+        0.9996827
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0251887,
+        -0.9996827
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0251887,
+        0.9996827
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -235.076,
+        236.774
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 19,
+      "part_counts": {
+        "back": 19
+      },
+      "category_counts": {
+        "back_left": 6,
+        "back_top": 13
+      },
+      "world_y_range": [
+        120.5505,
+        134.46129
+      ]
+    },
+    {
+      "island_id": 29,
+      "pixel_area": 27354,
+      "bbox_pixel_inclusive": [
+        1223,
+        421,
+        1311,
+        843
+      ],
+      "bbox_uv": [
+        0.5974597,
+        0.5881778,
+        0.6404494,
+        0.7943332
+      ],
+      "centroid_pixel": [
+        1270.015,
+        630.819
+      ],
+      "centroid_uv": [
+        0.6204274,
+        0.6918324
+      ],
+      "major_axis_pixel": [
+        0.0119789,
+        0.9999283
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0119789,
+        0.9999283
+      ],
+      "root_to_tip_axis_uv": [
+        0.0119789,
+        -0.9999283
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -209.768,
+        212.429
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 28,
+      "part_counts": {
+        "back": 28
+      },
+      "category_counts": {
+        "back_center": 5,
+        "back_left": 13,
+        "back_lower": 3,
+        "back_top": 7
+      },
+      "world_y_range": [
+        112.96092,
+        129.54484
+      ]
+    },
+    {
+      "island_id": 30,
+      "pixel_area": 32392,
+      "bbox_pixel_inclusive": [
+        1318,
+        457,
+        1434,
+        847
+      ],
+      "bbox_uv": [
+        0.6438691,
+        0.5862237,
+        0.7005374,
+        0.7767465
+      ],
+      "centroid_pixel": [
+        1371.533,
+        638.543
+      ],
+      "centroid_uv": [
+        0.670021,
+        0.6880589
+      ],
+      "major_axis_pixel": [
+        0.0382597,
+        0.9992678
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0382597,
+        0.9992678
+      ],
+      "root_to_tip_axis_uv": [
+        0.0382597,
+        -0.9992678
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -183.229,
+        207.786
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 22,
+      "part_counts": {
+        "back": 22
+      },
+      "category_counts": {
+        "back_center": 7,
+        "back_lower": 2,
+        "back_right": 12,
+        "back_top": 1
+      },
+      "world_y_range": [
+        113.32111,
+        128.21247
+      ]
+    },
+    {
+      "island_id": 31,
+      "pixel_area": 22827,
+      "bbox_pixel_inclusive": [
+        1443,
+        462,
+        1552,
+        833
+      ],
+      "bbox_uv": [
+        0.704934,
+        0.593063,
+        0.7581827,
+        0.7743039
+      ],
+      "centroid_pixel": [
+        1501.573,
+        666.605
+      ],
+      "centroid_uv": [
+        0.7335481,
+        0.6743502
+      ],
+      "major_axis_pixel": [
+        -0.1891021,
+        0.9819574
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.1891021,
+        0.9819574
+      ],
+      "root_to_tip_axis_uv": [
+        -0.1891021,
+        -0.9819574
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -209.126,
+        166.905
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 42,
+      "part_counts": {
+        "back": 42
+      },
+      "category_counts": {
+        "back_center": 16,
+        "back_left": 9,
+        "back_lower": 17
+      },
+      "world_y_range": [
+        110.22029,
+        124.96252
+      ]
+    },
+    {
+      "island_id": 32,
+      "pixel_area": 19193,
+      "bbox_pixel_inclusive": [
+        1561,
+        470,
+        1662,
+        837
+      ],
+      "bbox_uv": [
+        0.7625794,
+        0.5911089,
+        0.8119199,
+        0.7703957
+      ],
+      "centroid_pixel": [
+        1609.639,
+        684.353
+      ],
+      "centroid_uv": [
+        0.7863403,
+        0.6656802
+      ],
+      "major_axis_pixel": [
+        0.1388177,
+        0.990318
+      ],
+      "root_to_tip_axis_pixel": [
+        0.1388177,
+        0.990318
+      ],
+      "root_to_tip_axis_uv": [
+        0.1388177,
+        -0.990318
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -219.029,
+        152.747
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 33,
+      "part_counts": {
+        "back": 33
+      },
+      "category_counts": {
+        "back_center": 13,
+        "back_lower": 15,
+        "back_right": 5
+      },
+      "world_y_range": [
+        110.22579,
+        124.33202
+      ]
+    },
+    {
+      "island_id": 33,
+      "pixel_area": 2997,
+      "bbox_pixel_inclusive": [
+        1876,
+        485,
+        1940,
+        588
+      ],
+      "bbox_uv": [
+        0.9164631,
+        0.7127504,
+        0.9477284,
+        0.7630679
+      ],
+      "centroid_pixel": [
+        1909.785,
+        538.752
+      ],
+      "centroid_uv": [
+        0.9329677,
+        0.7368089
+      ],
+      "major_axis_pixel": [
+        0.3899447,
+        0.9208383
+      ],
+      "root_to_tip_axis_pixel": [
+        0.3899447,
+        0.9208383
+      ],
+      "root_to_tip_axis_uv": [
+        0.3899447,
+        -0.9208383
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -49.803,
+        50.611
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 94,
+      "part_counts": {
+        "braid": 94
+      },
+      "category_counts": {
+        "left_braid_low": 42,
+        "left_braid_mid": 5,
+        "right_braid_low": 42,
+        "right_braid_mid": 5
+      },
+      "world_y_range": [
+        78.68318,
+        88.6227
+      ]
+    },
+    {
+      "island_id": 34,
+      "pixel_area": 2831,
+      "bbox_pixel_inclusive": [
+        1933,
+        489,
+        1989,
+        585
+      ],
+      "bbox_uv": [
+        0.9443087,
+        0.7142159,
+        0.9716659,
+        0.7611138
+      ],
+      "centroid_pixel": [
+        1961.807,
+        534.736
+      ],
+      "centroid_uv": [
+        0.9583818,
+        0.738771
+      ],
+      "major_axis_pixel": [
+        0.2870671,
+        0.9579105
+      ],
+      "root_to_tip_axis_pixel": [
+        0.2870671,
+        0.9579105
+      ],
+      "root_to_tip_axis_uv": [
+        0.2870671,
+        -0.9579105
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -43.181,
+        49.065
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 76,
+      "part_counts": {
+        "braid": 76
+      },
+      "category_counts": {
+        "left_braid_mid": 38,
+        "right_braid_mid": 38
+      },
+      "world_y_range": [
+        88.78756,
+        98.09708
+      ]
+    },
+    {
+      "island_id": 35,
+      "pixel_area": 80006,
+      "bbox_pixel_inclusive": [
+        23,
+        520,
+        101,
+        2038
+      ],
+      "bbox_uv": [
+        0.011236,
+        0.0043967,
+        0.0493405,
+        0.7459697
+      ],
+      "centroid_pixel": [
+        61.707,
+        1278.868
+      ],
+      "centroid_uv": [
+        0.0301451,
+        0.3752476
+      ],
+      "major_axis_pixel": [
+        -4.9e-06,
+        1.0
+      ],
+      "root_to_tip_axis_pixel": [
+        -4.9e-06,
+        1.0
+      ],
+      "root_to_tip_axis_uv": [
+        -4.9e-06,
+        -1.0
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -758.868,
+        759.132
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 80,
+      "part_counts": {
+        "side": 80
+      },
+      "category_counts": {
+        "side_left": 24,
+        "side_left_upper": 4,
+        "side_right": 24,
+        "side_right_upper": 4,
+        "side_top_bridge": 24
+      },
+      "world_y_range": [
+        115.45645,
+        134.23893
+      ]
+    },
+    {
+      "island_id": 36,
+      "pixel_area": 6098,
+      "bbox_pixel_inclusive": [
+        1675,
+        592,
+        1714,
+        831
+      ],
+      "bbox_uv": [
+        0.8182706,
+        0.5940401,
+        0.8373229,
+        0.7107963
+      ],
+      "centroid_pixel": [
+        1699.561,
+        706.682
+      ],
+      "centroid_uv": [
+        0.8302692,
+        0.654772
+      ],
+      "major_axis_pixel": [
+        0.0168837,
+        0.9998575
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0168837,
+        0.9998575
+      ],
+      "root_to_tip_axis_uv": [
+        0.0168837,
+        -0.9998575
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -114.422,
+        124.544
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 9,
+      "part_counts": {
+        "back": 9
+      },
+      "category_counts": {
+        "back_lower": 4,
+        "back_right": 5
+      },
+      "world_y_range": [
+        111.88326,
+        119.69112
+      ]
+    },
+    {
+      "island_id": 37,
+      "pixel_area": 6236,
+      "bbox_pixel_inclusive": [
+        1739,
+        599,
+        1779,
+        842
+      ],
+      "bbox_uv": [
+        0.8495359,
+        0.5886663,
+        0.8690767,
+        0.7073766
+      ],
+      "centroid_pixel": [
+        1753.498,
+        715.652
+      ],
+      "centroid_uv": [
+        0.8566185,
+        0.6503897
+      ],
+      "major_axis_pixel": [
+        -0.0172294,
+        0.9998516
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0172294,
+        0.9998516
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0172294,
+        -0.9998516
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -116.385,
+        126.579
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 9,
+      "part_counts": {
+        "back": 9
+      },
+      "category_counts": {
+        "back_left": 5,
+        "back_lower": 4
+      },
+      "world_y_range": [
+        111.88326,
+        119.69112
+      ]
+    },
+    {
+      "island_id": 38,
+      "pixel_area": 3717,
+      "bbox_pixel_inclusive": [
+        1799,
+        604,
+        1823,
+        821
+      ],
+      "bbox_uv": [
+        0.8788471,
+        0.5989253,
+        0.8905716,
+        0.704934
+      ],
+      "centroid_pixel": [
+        1810.914,
+        718.225
+      ],
+      "centroid_uv": [
+        0.8846675,
+        0.6491329
+      ],
+      "major_axis_pixel": [
+        0.008052,
+        0.9999676
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.008052,
+        -0.9999676
+      ],
+      "root_to_tip_axis_uv": [
+        -0.008052,
+        0.9999676
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -114.229,
+        102.764
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 36,
+      "part_counts": {
+        "braid": 36
+      },
+      "category_counts": {
+        "left_braid_low": 7,
+        "left_braid_mid": 11,
+        "right_braid_low": 7,
+        "right_braid_mid": 11
+      },
+      "world_y_range": [
+        84.16575,
+        94.0445
+      ]
+    },
+    {
+      "island_id": 39,
+      "pixel_area": 4430,
+      "bbox_pixel_inclusive": [
+        1831,
+        610,
+        1861,
+        821
+      ],
+      "bbox_uv": [
+        0.8944797,
+        0.5989253,
+        0.9091353,
+        0.7020029
+      ],
+      "centroid_pixel": [
+        1845.278,
+        717.444
+      ],
+      "centroid_uv": [
+        0.901455,
+        0.6495142
+      ],
+      "major_axis_pixel": [
+        0.0120461,
+        0.9999274
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0120461,
+        -0.9999274
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0120461,
+        0.9999274
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -107.524,
+        103.557
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 30,
+      "part_counts": {
+        "braid": 30
+      },
+      "category_counts": {
+        "left_braid_mid": 15,
+        "right_braid_mid": 15
+      },
+      "world_y_range": [
+        90.25656,
+        98.74519
+      ]
+    },
+    {
+      "island_id": 40,
+      "pixel_area": 6179,
+      "bbox_pixel_inclusive": [
+        1870,
+        612,
+        1918,
+        821
+      ],
+      "bbox_uv": [
+        0.913532,
+        0.5989253,
+        0.9369809,
+        0.7010259
+      ],
+      "centroid_pixel": [
+        1896.246,
+        732.351
+      ],
+      "centroid_uv": [
+        0.9263536,
+        0.6422322
+      ],
+      "major_axis_pixel": [
+        -0.051117,
+        0.9986927
+      ],
+      "root_to_tip_axis_pixel": [
+        0.051117,
+        -0.9986927
+      ],
+      "root_to_tip_axis_uv": [
+        0.051117,
+        0.9986927
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -120.385,
+        88.342
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 32,
+      "part_counts": {
+        "braid": 32
+      },
+      "category_counts": {
+        "left_braid_mid": 16,
+        "right_braid_mid": 16
+      },
+      "world_y_range": [
+        94.64562,
+        100.08996
+      ]
+    },
+    {
+      "island_id": 41,
+      "pixel_area": 5223,
+      "bbox_pixel_inclusive": [
+        1931,
+        620,
+        1966,
+        819
+      ],
+      "bbox_uv": [
+        0.9433317,
+        0.5999023,
+        0.9604299,
+        0.6971177
+      ],
+      "centroid_pixel": [
+        1947.272,
+        721.155
+      ],
+      "centroid_uv": [
+        0.9512811,
+        0.6477013
+      ],
+      "major_axis_pixel": [
+        -0.0456767,
+        0.9989563
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0456767,
+        -0.9989563
+      ],
+      "root_to_tip_axis_uv": [
+        0.0456767,
+        0.9989563
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -101.357,
+        97.709
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 30,
+      "part_counts": {
+        "braid": 30
+      },
+      "category_counts": {
+        "left_braid_low": 15,
+        "right_braid_low": 15
+      },
+      "world_y_range": [
+        78.3399,
+        83.56753
+      ]
+    },
+    {
+      "island_id": 42,
+      "pixel_area": 1530,
+      "bbox_pixel_inclusive": [
+        1991,
+        723,
+        2031,
+        818
+      ],
+      "bbox_uv": [
+        0.9726429,
+        0.6003908,
+        0.9921837,
+        0.6468002
+      ],
+      "centroid_pixel": [
+        2012.825,
+        776.042
+      ],
+      "centroid_uv": [
+        0.9833051,
+        0.6208879
+      ],
+      "major_axis_pixel": [
+        -0.2898876,
+        0.9570607
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.2898876,
+        0.9570607
+      ],
+      "root_to_tip_axis_uv": [
+        -0.2898876,
+        -0.9570607
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -53.714,
+        40.975
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 62,
+      "part_counts": {
+        "braid": 62
+      },
+      "category_counts": {
+        "left_braid_low": 17,
+        "left_braid_mid": 14,
+        "right_braid_low": 17,
+        "right_braid_mid": 14
+      },
+      "world_y_range": [
+        80.43622,
+        89.99306
+      ]
+    },
+    {
+      "island_id": 43,
+      "pixel_area": 5426,
+      "bbox_pixel_inclusive": [
+        1605,
+        850,
+        1679,
+        995
+      ],
+      "bbox_uv": [
+        0.7840743,
+        0.5139228,
+        0.8202247,
+        0.5847582
+      ],
+      "centroid_pixel": [
+        1643.821,
+        929.567
+      ],
+      "centroid_uv": [
+        0.8030391,
+        0.545888
+      ],
+      "major_axis_pixel": [
+        -0.2128447,
+        0.977086
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.2128447,
+        0.977086
+      ],
+      "root_to_tip_axis_uv": [
+        -0.2128447,
+        -0.977086
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -79.911,
+        56.446
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 78,
+      "part_counts": {
+        "braid": 78
+      },
+      "category_counts": {
+        "left_braid_mid": 22,
+        "left_braid_top": 17,
+        "right_braid_mid": 22,
+        "right_braid_top": 17
+      },
+      "world_y_range": [
+        95.05163,
+        104.58312
+      ]
+    },
+    {
+      "island_id": 44,
+      "pixel_area": 5813,
+      "bbox_pixel_inclusive": [
+        1711,
+        854,
+        1797,
+        994
+      ],
+      "bbox_uv": [
+        0.8358574,
+        0.5144113,
+        0.8778701,
+        0.5828041
+      ],
+      "centroid_pixel": [
+        1752.823,
+        918.849
+      ],
+      "centroid_uv": [
+        0.8562886,
+        0.5511242
+      ],
+      "major_axis_pixel": [
+        0.4025806,
+        0.9153845
+      ],
+      "root_to_tip_axis_pixel": [
+        0.4025806,
+        0.9153845
+      ],
+      "root_to_tip_axis_uv": [
+        0.4025806,
+        -0.9153845
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -64.121,
+        70.474
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 70,
+      "part_counts": {
+        "braid": 70
+      },
+      "category_counts": {
+        "left_braid_mid": 30,
+        "left_braid_top": 5,
+        "right_braid_mid": 30,
+        "right_braid_top": 5
+      },
+      "world_y_range": [
+        94.54253,
+        103.39842
+      ]
+    },
+    {
+      "island_id": 45,
+      "pixel_area": 87334,
+      "bbox_pixel_inclusive": [
+        108,
+        861,
+        212,
+        1987
+      ],
+      "bbox_uv": [
+        0.0527601,
+        0.0293112,
+        0.1035662,
+        0.5793845
+      ],
+      "centroid_pixel": [
+        166.493,
+        1423.931
+      ],
+      "centroid_uv": [
+        0.0813349,
+        0.3043818
+      ],
+      "major_axis_pixel": [
+        2.33e-05,
+        1.0
+      ],
+      "root_to_tip_axis_pixel": [
+        2.33e-05,
+        1.0
+      ],
+      "root_to_tip_axis_uv": [
+        2.33e-05,
+        -1.0
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -562.93,
+        563.07
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 40,
+      "part_counts": {
+        "side": 40
+      },
+      "category_counts": {
+        "side_left": 4,
+        "side_left_upper": 6,
+        "side_right": 4,
+        "side_right_upper": 6,
+        "side_top_bridge": 20
+      },
+      "world_y_range": [
+        119.98631,
+        134.82448
+      ]
+    },
+    {
+      "island_id": 46,
+      "pixel_area": 5081,
+      "bbox_pixel_inclusive": [
+        1799,
+        861,
+        1879,
+        994
+      ],
+      "bbox_uv": [
+        0.8788471,
+        0.5144113,
+        0.9179287,
+        0.5793845
+      ],
+      "centroid_pixel": [
+        1834.006,
+        924.415
+      ],
+      "centroid_uv": [
+        0.8959481,
+        0.5484048
+      ],
+      "major_axis_pixel": [
+        -0.4000167,
+        0.9165078
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.4000167,
+        0.9165078
+      ],
+      "root_to_tip_axis_uv": [
+        -0.4000167,
+        -0.9165078
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -74.919,
+        68.177
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 64,
+      "part_counts": {
+        "braid": 64
+      },
+      "category_counts": {
+        "left_braid_mid": 32,
+        "right_braid_mid": 32
+      },
+      "world_y_range": [
+        90.86415,
+        99.39394
+      ]
+    },
+    {
+      "island_id": 47,
+      "pixel_area": 19810,
+      "bbox_pixel_inclusive": [
+        433,
+        867,
+        485,
+        1534
+      ],
+      "bbox_uv": [
+        0.2115291,
+        0.2506106,
+        0.2369321,
+        0.5764533
+      ],
+      "centroid_pixel": [
+        459.964,
+        1209.755
+      ],
+      "centroid_uv": [
+        0.2247015,
+        0.4090106
+      ],
+      "major_axis_pixel": [
+        0.0193039,
+        0.9998137
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0193039,
+        0.9998137
+      ],
+      "root_to_tip_axis_uv": [
+        0.0193039,
+        -0.9998137
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -342.864,
+        324.031
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 32,
+      "part_counts": {
+        "side": 32
+      },
+      "category_counts": {
+        "side_left": 20,
+        "side_left_upper": 6,
+        "side_top_bridge": 6
+      },
+      "world_y_range": [
+        116.85569,
+        133.20335
+      ]
+    },
+    {
+      "island_id": 48,
+      "pixel_area": 17245,
+      "bbox_pixel_inclusive": [
+        262,
+        872,
+        312,
+        1434
+      ],
+      "bbox_uv": [
+        0.1279922,
+        0.2994626,
+        0.1524182,
+        0.5740107
+      ],
+      "centroid_pixel": [
+        289.947,
+        1124.843
+      ],
+      "centroid_uv": [
+        0.1416449,
+        0.4504919
+      ],
+      "major_axis_pixel": [
+        0.0142894,
+        0.9998979
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0142894,
+        0.9998979
+      ],
+      "root_to_tip_axis_uv": [
+        0.0142894,
+        -0.9998979
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -252.802,
+        309.14
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 26,
+      "part_counts": {
+        "side": 26
+      },
+      "category_counts": {
+        "side_left_upper": 8,
+        "side_right_upper": 8,
+        "side_top_bridge": 10
+      },
+      "world_y_range": [
+        124.57628,
+        133.70557
+      ]
+    },
+    {
+      "island_id": 49,
+      "pixel_area": 18126,
+      "bbox_pixel_inclusive": [
+        359,
+        875,
+        404,
+        1514
+      ],
+      "bbox_uv": [
+        0.1753786,
+        0.260381,
+        0.197362,
+        0.5725452
+      ],
+      "centroid_pixel": [
+        381.645,
+        1202.506
+      ],
+      "centroid_uv": [
+        0.1864413,
+        0.412552
+      ],
+      "major_axis_pixel": [
+        -0.0144008,
+        0.9998963
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0144008,
+        0.9998963
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0144008,
+        -0.9998963
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -327.578,
+        311.356
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 32,
+      "part_counts": {
+        "side": 32
+      },
+      "category_counts": {
+        "side_right": 20,
+        "side_right_upper": 6,
+        "side_top_bridge": 6
+      },
+      "world_y_range": [
+        116.85569,
+        133.20335
+      ]
+    },
+    {
+      "island_id": 50,
+      "pixel_area": 10898,
+      "bbox_pixel_inclusive": [
+        861,
+        875,
+        898,
+        1310
+      ],
+      "bbox_uv": [
+        0.4206155,
+        0.3600391,
+        0.4386908,
+        0.5725452
+      ],
+      "centroid_pixel": [
+        878.584,
+        1067.248
+      ],
+      "centroid_uv": [
+        0.4292058,
+        0.478628
+      ],
+      "major_axis_pixel": [
+        -0.0056212,
+        0.9999842
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0056212,
+        0.9999842
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0056212,
+        -0.9999842
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -192.265,
+        242.734
+      ],
+      "mesh_names": [
+        "polySurfaceShape68"
+      ],
+      "face_count": 14,
+      "part_counts": {
+        "braid": 14
+      },
+      "category_counts": {
+        "left_braid_end": 14
+      },
+      "world_y_range": [
+        69.56071,
+        76.06456
+      ]
+    },
+    {
+      "island_id": 51,
+      "pixel_area": 862,
+      "bbox_pixel_inclusive": [
+        2016,
+        875,
+        2023,
+        1005
+      ],
+      "bbox_uv": [
+        0.9848559,
+        0.5090376,
+        0.9882755,
+        0.5725452
+      ],
+      "centroid_pixel": [
+        2019.887,
+        944.486
+      ],
+      "centroid_uv": [
+        0.986755,
+        0.5385999
+      ],
+      "major_axis_pixel": [
+        -0.0066684,
+        0.9999778
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0066684,
+        0.9999778
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0066684,
+        -0.9999778
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -69.505,
+        60.492
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 20,
+      "part_counts": {
+        "braid": 20
+      },
+      "category_counts": {
+        "left_braid_low": 8,
+        "left_braid_mid": 2,
+        "right_braid_low": 8,
+        "right_braid_mid": 2
+      },
+      "world_y_range": [
+        79.02095,
+        87.43429
+      ]
+    },
+    {
+      "island_id": 52,
+      "pixel_area": 5071,
+      "bbox_pixel_inclusive": [
+        1869,
+        884,
+        1940,
+        997
+      ],
+      "bbox_uv": [
+        0.9130435,
+        0.5129458,
+        0.9477284,
+        0.5681485
+      ],
+      "centroid_pixel": [
+        1905.409,
+        949.157
+      ],
+      "centroid_uv": [
+        0.9308301,
+        0.536318
+      ],
+      "major_axis_pixel": [
+        -0.2964682,
+        0.9550427
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.2964682,
+        0.9550427
+      ],
+      "root_to_tip_axis_uv": [
+        -0.2964682,
+        -0.9550427
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -61.81,
+        50.756
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 68,
+      "part_counts": {
+        "braid": 68
+      },
+      "category_counts": {
+        "left_braid_low": 34,
+        "right_braid_low": 34
+      },
+      "world_y_range": [
+        76.86762,
+        83.62486
+      ]
+    },
+    {
+      "island_id": 53,
+      "pixel_area": 5526,
+      "bbox_pixel_inclusive": [
+        1944,
+        884,
+        2011,
+        996
+      ],
+      "bbox_uv": [
+        0.9496825,
+        0.5134343,
+        0.9824133,
+        0.5681485
+      ],
+      "centroid_pixel": [
+        1977.429,
+        944.946
+      ],
+      "centroid_uv": [
+        0.9660134,
+        0.5383753
+      ],
+      "major_axis_pixel": [
+        0.2123036,
+        0.9772038
+      ],
+      "root_to_tip_axis_pixel": [
+        0.2123036,
+        0.9772038
+      ],
+      "root_to_tip_axis_uv": [
+        0.2123036,
+        -0.9772038
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -63.894,
+        55.744
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 74,
+      "part_counts": {
+        "braid": 74
+      },
+      "category_counts": {
+        "left_braid_low": 37,
+        "right_braid_low": 37
+      },
+      "world_y_range": [
+        76.16955,
+        82.06173
+      ]
+    },
+    {
+      "island_id": 54,
+      "pixel_area": 5257,
+      "bbox_pixel_inclusive": [
+        1243,
+        886,
+        1295,
+        1073
+      ],
+      "bbox_uv": [
+        0.6072301,
+        0.4758183,
+        0.6326331,
+        0.5671715
+      ],
+      "centroid_pixel": [
+        1264.5,
+        956.357
+      ],
+      "centroid_uv": [
+        0.6177333,
+        0.5328008
+      ],
+      "major_axis_pixel": [
+        -0.0476759,
+        0.9988629
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0476759,
+        0.9988629
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0476759,
+        -0.9988629
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -70.014,
+        116.773
+      ],
+      "mesh_names": [
+        "polySurfaceShape68"
+      ],
+      "face_count": 10,
+      "part_counts": {
+        "braid": 10
+      },
+      "category_counts": {
+        "left_braid_end": 10
+      },
+      "world_y_range": [
+        71.50124,
+        74.15343
+      ]
+    },
+    {
+      "island_id": 55,
+      "pixel_area": 10455,
+      "bbox_pixel_inclusive": [
+        1423,
+        887,
+        1511,
+        1074
+      ],
+      "bbox_uv": [
+        0.6951637,
+        0.4753298,
+        0.7381534,
+        0.566683
+      ],
+      "centroid_pixel": [
+        1464.097,
+        955.863
+      ],
+      "centroid_uv": [
+        0.7152402,
+        0.533042
+      ],
+      "major_axis_pixel": [
+        -0.0372753,
+        0.999305
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0372753,
+        -0.999305
+      ],
+      "root_to_tip_axis_uv": [
+        0.0372753,
+        0.999305
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -67.589,
+        118.282
+      ],
+      "mesh_names": [
+        "polySurfaceShape68"
+      ],
+      "face_count": 6,
+      "part_counts": {
+        "braid": 6
+      },
+      "category_counts": {
+        "left_braid_end": 6
+      },
+      "world_y_range": [
+        70.11964,
+        75.07625
+      ]
+    },
+    {
+      "island_id": 56,
+      "pixel_area": 22379,
+      "bbox_pixel_inclusive": [
+        952,
+        889,
+        1041,
+        1307
+      ],
+      "bbox_uv": [
+        0.4650708,
+        0.3615046,
+        0.5085491,
+        0.5657059
+      ],
+      "centroid_pixel": [
+        994.381,
+        1084.824
+      ],
+      "centroid_uv": [
+        0.485775,
+        0.4700418
+      ],
+      "major_axis_pixel": [
+        -0.0025496,
+        0.9999967
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0025496,
+        0.9999967
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0025496,
+        -0.9999967
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -195.808,
+        222.191
+      ],
+      "mesh_names": [
+        "polySurfaceShape68"
+      ],
+      "face_count": 14,
+      "part_counts": {
+        "braid": 14
+      },
+      "category_counts": {
+        "left_braid_end": 14
+      },
+      "world_y_range": [
+        67.54225,
+        74.97988
+      ]
+    },
+    {
+      "island_id": 57,
+      "pixel_area": 9568,
+      "bbox_pixel_inclusive": [
+        1316,
+        891,
+        1394,
+        1074
+      ],
+      "bbox_uv": [
+        0.642892,
+        0.4753298,
+        0.6809966,
+        0.5647289
+      ],
+      "centroid_pixel": [
+        1353.106,
+        964.387
+      ],
+      "centroid_uv": [
+        0.6610191,
+        0.5288779
+      ],
+      "major_axis_pixel": [
+        -0.0950739,
+        0.9954702
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0950739,
+        -0.9954702
+      ],
+      "root_to_tip_axis_uv": [
+        0.0950739,
+        0.9954702
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -73.33,
+        110.648
+      ],
+      "mesh_names": [
+        "polySurfaceShape68"
+      ],
+      "face_count": 5,
+      "part_counts": {
+        "braid": 5
+      },
+      "category_counts": {
+        "left_braid_end": 5
+      },
+      "world_y_range": [
+        71.78677,
+        75.41157
+      ]
+    },
+    {
+      "island_id": 58,
+      "pixel_area": 54284,
+      "bbox_pixel_inclusive": [
+        688,
+        896,
+        794,
+        1567
+      ],
+      "bbox_uv": [
+        0.3361016,
+        0.2344895,
+        0.3878847,
+        0.5622863
+      ],
+      "centroid_pixel": [
+        740.536,
+        1190.49
+      ],
+      "centroid_uv": [
+        0.3617663,
+        0.4184223
+      ],
+      "major_axis_pixel": [
+        -0.0007273,
+        0.9999997
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0007273,
+        0.9999997
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0007273,
+        -0.9999997
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -294.526,
+        376.51
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 24,
+      "part_counts": {
+        "side": 24
+      },
+      "category_counts": {
+        "side_left": 6,
+        "side_left_upper": 8,
+        "side_top_bridge": 10
+      },
+      "world_y_range": [
+        121.40469,
+        134.77394
+      ]
+    },
+    {
+      "island_id": 59,
+      "pixel_area": 3945,
+      "bbox_pixel_inclusive": [
+        528,
+        907,
+        564,
+        1060
+      ],
+      "bbox_uv": [
+        0.2579384,
+        0.482169,
+        0.2755252,
+        0.5569126
+      ],
+      "centroid_pixel": [
+        549.346,
+        980.758
+      ],
+      "centroid_uv": [
+        0.2683665,
+        0.5208805
+      ],
+      "major_axis_pixel": [
+        0.0134853,
+        0.9999091
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0134853,
+        0.9999091
+      ],
+      "root_to_tip_axis_uv": [
+        0.0134853,
+        -0.9999091
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -73.553,
+        79.433
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 5,
+      "part_counts": {
+        "side": 5
+      },
+      "category_counts": {
+        "side_top_bridge": 5
+      },
+      "world_y_range": [
+        130.09968,
+        132.08112
+      ]
+    },
+    {
+      "island_id": 60,
+      "pixel_area": 2772,
+      "bbox_pixel_inclusive": [
+        603,
+        922,
+        634,
+        1054
+      ],
+      "bbox_uv": [
+        0.2945774,
+        0.4851001,
+        0.3097215,
+        0.5495848
+      ],
+      "centroid_pixel": [
+        616.232,
+        982.639
+      ],
+      "centroid_uv": [
+        0.3010413,
+        0.5199616
+      ],
+      "major_axis_pixel": [
+        -0.0053804,
+        0.9999855
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0053804,
+        0.9999855
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0053804,
+        -0.9999855
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -60.566,
+        71.415
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 5,
+      "part_counts": {
+        "side": 5
+      },
+      "category_counts": {
+        "side_top_bridge": 5
+      },
+      "world_y_range": [
+        130.09968,
+        132.08112
+      ]
+    },
+    {
+      "island_id": 61,
+      "pixel_area": 16849,
+      "bbox_pixel_inclusive": [
+        1055,
+        962,
+        1134,
+        1305
+      ],
+      "bbox_uv": [
+        0.5153884,
+        0.3624817,
+        0.5539814,
+        0.530044
+      ],
+      "centroid_pixel": [
+        1093.759,
+        1098.69
+      ],
+      "centroid_uv": [
+        0.5343231,
+        0.4632684
+      ],
+      "major_axis_pixel": [
+        -0.0071344,
+        0.9999745
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0071344,
+        0.9999745
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0071344,
+        -0.9999745
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -136.624,
+        206.325
+      ],
+      "mesh_names": [
+        "polySurfaceShape68"
+      ],
+      "face_count": 14,
+      "part_counts": {
+        "braid": 14
+      },
+      "category_counts": {
+        "left_braid_end": 14
+      },
+      "world_y_range": [
+        68.9236,
+        75.9362
+      ]
+    },
+    {
+      "island_id": 62,
+      "pixel_area": 20164,
+      "bbox_pixel_inclusive": [
+        1148,
+        986,
+        1234,
+        1325
+      ],
+      "bbox_uv": [
+        0.5608207,
+        0.3527113,
+        0.6028334,
+        0.5183195
+      ],
+      "centroid_pixel": [
+        1193.065,
+        1152.316
+      ],
+      "centroid_uv": [
+        0.5828358,
+        0.4370706
+      ],
+      "major_axis_pixel": [
+        0.00842,
+        0.9999646
+      ],
+      "root_to_tip_axis_pixel": [
+        0.00842,
+        0.9999646
+      ],
+      "root_to_tip_axis_uv": [
+        0.00842,
+        -0.9999646
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -166.168,
+        172.828
+      ],
+      "mesh_names": [
+        "polySurfaceShape68"
+      ],
+      "face_count": 21,
+      "part_counts": {
+        "braid": 21
+      },
+      "category_counts": {
+        "left_braid_end": 21
+      },
+      "world_y_range": [
+        69.32236,
+        76.53926
+      ]
+    },
+    {
+      "island_id": 63,
+      "pixel_area": 6301,
+      "bbox_pixel_inclusive": [
+        1638,
+        1011,
+        1695,
+        1307
+      ],
+      "bbox_uv": [
+        0.8001954,
+        0.3615046,
+        0.828041,
+        0.5061065
+      ],
+      "centroid_pixel": [
+        1669.363,
+        1142.821
+      ],
+      "centroid_uv": [
+        0.8155169,
+        0.4417092
+      ],
+      "major_axis_pixel": [
+        -0.071811,
+        0.9974183
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.071811,
+        0.9974183
+      ],
+      "root_to_tip_axis_uv": [
+        -0.071811,
+        -0.9974183
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -130.88,
+        166.007
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 28,
+      "part_counts": {
+        "braid": 28
+      },
+      "category_counts": {
+        "left_braid_low": 3,
+        "left_braid_mid": 11,
+        "right_braid_low": 3,
+        "right_braid_mid": 11
+      },
+      "world_y_range": [
+        83.85994,
+        92.70652
+      ]
+    },
+    {
+      "island_id": 64,
+      "pixel_area": 6827,
+      "bbox_pixel_inclusive": [
+        1779,
+        1016,
+        1816,
+        1295
+      ],
+      "bbox_uv": [
+        0.8690767,
+        0.3673669,
+        0.8871519,
+        0.5036639
+      ],
+      "centroid_pixel": [
+        1792.691,
+        1154.971
+      ],
+      "centroid_uv": [
+        0.8757652,
+        0.4357739
+      ],
+      "major_axis_pixel": [
+        0.00502,
+        0.9999874
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.00502,
+        -0.9999874
+      ],
+      "root_to_tip_axis_uv": [
+        -0.00502,
+        0.9999874
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -139.038,
+        139.959
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 22,
+      "part_counts": {
+        "braid": 22
+      },
+      "category_counts": {
+        "left_braid_low": 11,
+        "right_braid_low": 11
+      },
+      "world_y_range": [
+        78.74342,
+        84.43951
+      ]
+    },
+    {
+      "island_id": 65,
+      "pixel_area": 4299,
+      "bbox_pixel_inclusive": [
+        1722,
+        1017,
+        1740,
+        1316
+      ],
+      "bbox_uv": [
+        0.8412311,
+        0.357108,
+        0.8500244,
+        0.5031754
+      ],
+      "centroid_pixel": [
+        1729.3,
+        1174.989
+      ],
+      "centroid_uv": [
+        0.8447973,
+        0.4259948
+      ],
+      "major_axis_pixel": [
+        0.0042734,
+        0.9999909
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0042734,
+        0.9999909
+      ],
+      "root_to_tip_axis_uv": [
+        0.0042734,
+        -0.9999909
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -158.018,
+        140.979
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 20,
+      "part_counts": {
+        "braid": 20
+      },
+      "category_counts": {
+        "left_braid_low": 2,
+        "left_braid_mid": 8,
+        "right_braid_low": 2,
+        "right_braid_mid": 8
+      },
+      "world_y_range": [
+        83.91646,
+        92.85971
+      ]
+    },
+    {
+      "island_id": 66,
+      "pixel_area": 1440,
+      "bbox_pixel_inclusive": [
+        1976,
+        1025,
+        1996,
+        1144
+      ],
+      "bbox_uv": [
+        0.9653151,
+        0.4411334,
+        0.9750855,
+        0.4992672
+      ],
+      "centroid_pixel": [
+        1985.588,
+        1082.888
+      ],
+      "centroid_uv": [
+        0.9699991,
+        0.4709877
+      ],
+      "major_axis_pixel": [
+        -0.0412955,
+        0.999147
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0412955,
+        0.999147
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0412955,
+        -0.999147
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -57.856,
+        61.084
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 36,
+      "part_counts": {
+        "braid": 36
+      },
+      "category_counts": {
+        "left_braid_mid": 10,
+        "left_braid_top": 8,
+        "right_braid_mid": 10,
+        "right_braid_top": 8
+      },
+      "world_y_range": [
+        95.97787,
+        104.609
+      ]
+    },
+    {
+      "island_id": 67,
+      "pixel_area": 1862,
+      "bbox_pixel_inclusive": [
+        2016,
+        1026,
+        2038,
+        1165
+      ],
+      "bbox_uv": [
+        0.9848559,
+        0.4308745,
+        0.9956033,
+        0.4987787
+      ],
+      "centroid_pixel": [
+        2023.871,
+        1085.357
+      ],
+      "centroid_uv": [
+        0.9887011,
+        0.4697816
+      ],
+      "major_axis_pixel": [
+        -0.0600669,
+        0.9981944
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0600669,
+        -0.9981944
+      ],
+      "root_to_tip_axis_uv": [
+        0.0600669,
+        0.9981944
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -59.378,
+        79.972
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 12,
+      "part_counts": {
+        "braid": 12
+      },
+      "category_counts": {
+        "left_braid_top": 6,
+        "right_braid_top": 6
+      },
+      "world_y_range": [
+        111.44373,
+        112.1868
+      ]
+    },
+    {
+      "island_id": 68,
+      "pixel_area": 5491,
+      "bbox_pixel_inclusive": [
+        1843,
+        1049,
+        1903,
+        1278
+      ],
+      "bbox_uv": [
+        0.900342,
+        0.3756717,
+        0.9296532,
+        0.4875427
+      ],
+      "centroid_pixel": [
+        1862.748,
+        1138.57
+      ],
+      "centroid_uv": [
+        0.9099895,
+        0.4437861
+      ],
+      "major_axis_pixel": [
+        -0.0890235,
+        0.9960295
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0890235,
+        0.9960295
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0890235,
+        -0.9960295
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -89.86,
+        140.635
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 36,
+      "part_counts": {
+        "braid": 36
+      },
+      "category_counts": {
+        "left_braid_top": 18,
+        "right_braid_top": 18
+      },
+      "world_y_range": [
+        101.05131,
+        109.30535
+      ]
+    },
+    {
+      "island_id": 69,
+      "pixel_area": 2380,
+      "bbox_pixel_inclusive": [
+        1914,
+        1053,
+        1934,
+        1285
+      ],
+      "bbox_uv": [
+        0.9350269,
+        0.3722521,
+        0.9447973,
+        0.4855887
+      ],
+      "centroid_pixel": [
+        1920.4,
+        1162.055
+      ],
+      "centroid_uv": [
+        0.9381536,
+        0.4323131
+      ],
+      "major_axis_pixel": [
+        -0.0081794,
+        0.9999665
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0081794,
+        0.9999665
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0081794,
+        -0.9999665
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -109.007,
+        122.838
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 26,
+      "part_counts": {
+        "braid": 26
+      },
+      "category_counts": {
+        "left_braid_top": 13,
+        "right_braid_top": 13
+      },
+      "world_y_range": [
+        101.05036,
+        109.40346
+      ]
+    },
+    {
+      "island_id": 70,
+      "pixel_area": 11460,
+      "bbox_pixel_inclusive": [
+        1415,
+        1078,
+        1504,
+        1318
+      ],
+      "bbox_uv": [
+        0.6912555,
+        0.3561309,
+        0.7347338,
+        0.4733757
+      ],
+      "centroid_pixel": [
+        1460.989,
+        1161.851
+      ],
+      "centroid_uv": [
+        0.7137222,
+        0.432413
+      ],
+      "major_axis_pixel": [
+        0.0181223,
+        0.9998358
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0181223,
+        0.9998358
+      ],
+      "root_to_tip_axis_uv": [
+        0.0181223,
+        -0.9998358
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -83.782,
+        156.178
+      ],
+      "mesh_names": [
+        "polySurfaceShape68"
+      ],
+      "face_count": 8,
+      "part_counts": {
+        "braid": 8
+      },
+      "category_counts": {
+        "left_braid_end": 8
+      },
+      "world_y_range": [
+        67.68801,
+        69.99691
+      ]
+    },
+    {
+      "island_id": 71,
+      "pixel_area": 2529,
+      "bbox_pixel_inclusive": [
+        1357,
+        1090,
+        1377,
+        1298
+      ],
+      "bbox_uv": [
+        0.6629213,
+        0.3659013,
+        0.6726917,
+        0.4675134
+      ],
+      "centroid_pixel": [
+        1367.019,
+        1183.257
+      ],
+      "centroid_uv": [
+        0.6678158,
+        0.4219553
+      ],
+      "major_axis_pixel": [
+        -0.0132193,
+        0.9999126
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0132193,
+        -0.9999126
+      ],
+      "root_to_tip_axis_uv": [
+        0.0132193,
+        0.9999126
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -93.262,
+        114.746
+      ],
+      "mesh_names": [
+        "polySurfaceShape68"
+      ],
+      "face_count": 6,
+      "part_counts": {
+        "braid": 6
+      },
+      "category_counts": {
+        "left_braid_end": 6
+      },
+      "world_y_range": [
+        73.6451,
+        76.43465
+      ]
+    },
+    {
+      "island_id": 72,
+      "pixel_area": 6849,
+      "bbox_pixel_inclusive": [
+        1264,
+        1102,
+        1335,
+        1311
+      ],
+      "bbox_uv": [
+        0.617489,
+        0.3595506,
+        0.6521739,
+        0.4616512
+      ],
+      "centroid_pixel": [
+        1307.052,
+        1172.97
+      ],
+      "centroid_uv": [
+        0.6385205,
+        0.426981
+      ],
+      "major_axis_pixel": [
+        0.0894317,
+        0.995993
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0894317,
+        0.995993
+      ],
+      "root_to_tip_axis_uv": [
+        0.0894317,
+        -0.995993
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -68.723,
+        137.83
+      ],
+      "mesh_names": [
+        "polySurfaceShape68"
+      ],
+      "face_count": 8,
+      "part_counts": {
+        "braid": 8
+      },
+      "category_counts": {
+        "left_braid_end": 8
+      },
+      "world_y_range": [
+        68.57696,
+        71.56337
+      ]
+    },
+    {
+      "island_id": 73,
+      "pixel_area": 1187,
+      "bbox_pixel_inclusive": [
+        1963,
+        1176,
+        1988,
+        1306
+      ],
+      "bbox_uv": [
+        0.9589643,
+        0.3619932,
+        0.9711773,
+        0.4255007
+      ],
+      "centroid_pixel": [
+        1975.73,
+        1233.594
+      ],
+      "centroid_uv": [
+        0.965183,
+        0.397365
+      ],
+      "major_axis_pixel": [
+        -0.1349933,
+        0.9908465
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.1349933,
+        0.9908465
+      ],
+      "root_to_tip_axis_uv": [
+        -0.1349933,
+        -0.9908465
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -56.833,
+        73.327
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 28,
+      "part_counts": {
+        "braid": 28
+      },
+      "category_counts": {
+        "left_braid_low": 12,
+        "left_braid_mid": 2,
+        "right_braid_low": 12,
+        "right_braid_mid": 2
+      },
+      "world_y_range": [
+        78.95567,
+        87.28111
+      ]
+    },
+    {
+      "island_id": 74,
+      "pixel_area": 40,
+      "bbox_pixel_inclusive": [
+        2027,
+        1246,
+        2031,
+        1259
+      ],
+      "bbox_uv": [
+        0.9902296,
+        0.3849536,
+        0.9921837,
+        0.3913043
+      ],
+      "centroid_pixel": [
+        2029.825,
+        1252.575
+      ],
+      "centroid_uv": [
+        0.9916097,
+        0.3880923
+      ],
+      "major_axis_pixel": [
+        -0.0159698,
+        0.9998725
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0159698,
+        0.9998725
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0159698,
+        -0.9998725
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -6.593,
+        6.405
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 2,
+      "part_counts": {
+        "braid": 2
+      },
+      "category_counts": {
+        "left_braid_mid": 1,
+        "right_braid_mid": 1
+      },
+      "world_y_range": [
+        100.69812,
+        100.69812
+      ]
+    },
+    {
+      "island_id": 75,
+      "pixel_area": 38,
+      "bbox_pixel_inclusive": [
+        2035,
+        1254,
+        2045,
+        1265
+      ],
+      "bbox_uv": [
+        0.9941378,
+        0.3820225,
+        0.999023,
+        0.3873962
+      ],
+      "centroid_pixel": [
+        2040.711,
+        1258.763
+      ],
+      "centroid_uv": [
+        0.9969275,
+        0.3850693
+      ],
+      "major_axis_pixel": [
+        0.6102142,
+        0.7922365
+      ],
+      "root_to_tip_axis_pixel": [
+        0.6102142,
+        0.7922365
+      ],
+      "root_to_tip_axis_uv": [
+        0.6102142,
+        -0.7922365
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -7.258,
+        7.559
+      ],
+      "mesh_names": [
+        "pasted__pasted__polySurface26Shape"
+      ],
+      "face_count": 4,
+      "part_counts": {
+        "braid": 4
+      },
+      "category_counts": {
+        "left_braid_low": 2,
+        "right_braid_low": 2
+      },
+      "world_y_range": [
+        84.12078,
+        84.7277
+      ]
+    },
+    {
+      "island_id": 76,
+      "pixel_area": 67092,
+      "bbox_pixel_inclusive": [
+        826,
+        1337,
+        944,
+        2038
+      ],
+      "bbox_uv": [
+        0.4035173,
+        0.0043967,
+        0.4611627,
+        0.346849
+      ],
+      "centroid_pixel": [
+        888.106,
+        1647.601
+      ],
+      "centroid_uv": [
+        0.4338574,
+        0.1951143
+      ],
+      "major_axis_pixel": [
+        0.0162059,
+        0.9998687
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0162059,
+        0.9998687
+      ],
+      "root_to_tip_axis_uv": [
+        0.0162059,
+        -0.9998687
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -311.502,
+        390.281
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 24,
+      "part_counts": {
+        "side": 24
+      },
+      "category_counts": {
+        "side_right": 18,
+        "side_right_upper": 6
+      },
+      "world_y_range": [
+        111.62583,
+        130.19413
+      ]
+    },
+    {
+      "island_id": 77,
+      "pixel_area": 25324,
+      "bbox_pixel_inclusive": [
+        1669,
+        1338,
+        1894,
+        1530
+      ],
+      "bbox_uv": [
+        0.8153395,
+        0.2525647,
+        0.9252565,
+        0.3463605
+      ],
+      "centroid_pixel": [
+        1751.964,
+        1447.394
+      ],
+      "centroid_uv": [
+        0.8558691,
+        0.2929194
+      ],
+      "major_axis_pixel": [
+        0.6966201,
+        0.7174402
+      ],
+      "root_to_tip_axis_pixel": [
+        0.6966201,
+        0.7174402
+      ],
+      "root_to_tip_axis_uv": [
+        0.6966201,
+        -0.7174402
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -123.552,
+        148.883
+      ],
+      "mesh_names": [
+        "pasted__pasted__pasted__pasted__polySurface94Shape"
+      ],
+      "face_count": 82,
+      "part_counts": {
+        "braid": 82
+      },
+      "category_counts": {
+        "left_braid_end": 41,
+        "right_braid_end": 41
+      },
+      "world_y_range": [
+        75.26737,
+        78.1504
+      ]
+    },
+    {
+      "island_id": 78,
+      "pixel_area": 52707,
+      "bbox_pixel_inclusive": [
+        558,
+        1347,
+        663,
+        2019
+      ],
+      "bbox_uv": [
+        0.272594,
+        0.0136786,
+        0.3238886,
+        0.3419638
+      ],
+      "centroid_pixel": [
+        611.512,
+        1642.287
+      ],
+      "centroid_uv": [
+        0.2987359,
+        0.1977102
+      ],
+      "major_axis_pixel": [
+        0.00526,
+        0.9999862
+      ],
+      "root_to_tip_axis_pixel": [
+        0.00526,
+        0.9999862
+      ],
+      "root_to_tip_axis_uv": [
+        0.00526,
+        -0.9999862
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -295.533,
+        376.705
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 24,
+      "part_counts": {
+        "side": 24
+      },
+      "category_counts": {
+        "side_right": 6,
+        "side_right_upper": 8,
+        "side_top_bridge": 10
+      },
+      "world_y_range": [
+        121.55302,
+        134.77394
+      ]
+    },
+    {
+      "island_id": 79,
+      "pixel_area": 11581,
+      "bbox_pixel_inclusive": [
+        1286,
+        1355,
+        1389,
+        1512
+      ],
+      "bbox_uv": [
+        0.6282364,
+        0.2613581,
+        0.678554,
+        0.3380557
+      ],
+      "centroid_pixel": [
+        1338.133,
+        1435.839
+      ],
+      "centroid_uv": [
+        0.6537046,
+        0.2985642
+      ],
+      "major_axis_pixel": [
+        -0.2995215,
+        0.9540896
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.2995215,
+        0.9540896
+      ],
+      "root_to_tip_axis_uv": [
+        -0.2995215,
+        -0.9540896
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -79.395,
+        75.4
+      ],
+      "mesh_names": [
+        "pasted__pasted__pasted__pasted__polySurface94Shape"
+      ],
+      "face_count": 88,
+      "part_counts": {
+        "braid": 88
+      },
+      "category_counts": {
+        "left_braid_end": 44,
+        "right_braid_end": 44
+      },
+      "world_y_range": [
+        76.63581,
+        80.26718
+      ]
+    },
+    {
+      "island_id": 80,
+      "pixel_area": 11537,
+      "bbox_pixel_inclusive": [
+        1402,
+        1356,
+        1500,
+        1510
+      ],
+      "bbox_uv": [
+        0.6849047,
+        0.2623351,
+        0.7327797,
+        0.3375672
+      ],
+      "centroid_pixel": [
+        1452.939,
+        1434.339
+      ],
+      "centroid_uv": [
+        0.7097896,
+        0.2992971
+      ],
+      "major_axis_pixel": [
+        0.0669485,
+        0.9977564
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0669485,
+        0.9977564
+      ],
+      "root_to_tip_axis_uv": [
+        0.0669485,
+        -0.9977564
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -78.962,
+        74.893
+      ],
+      "mesh_names": [
+        "pasted__pasted__pasted__pasted__polySurface94Shape"
+      ],
+      "face_count": 90,
+      "part_counts": {
+        "braid": 90
+      },
+      "category_counts": {
+        "left_braid_end": 45,
+        "right_braid_end": 45
+      },
+      "world_y_range": [
+        74.92835,
+        77.88742
+      ]
+    },
+    {
+      "island_id": 81,
+      "pixel_area": 890,
+      "bbox_pixel_inclusive": [
+        1960,
+        1358,
+        1980,
+        1429
+      ],
+      "bbox_uv": [
+        0.9574988,
+        0.3019052,
+        0.9672692,
+        0.3365901
+      ],
+      "centroid_pixel": [
+        1969.518,
+        1393.521
+      ],
+      "centroid_uv": [
+        0.9621485,
+        0.3192373
+      ],
+      "major_axis_pixel": [
+        -0.0005734,
+        0.9999998
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0005734,
+        -0.9999998
+      ],
+      "root_to_tip_axis_uv": [
+        0.0005734,
+        0.9999998
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -35.526,
+        35.475
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 368,
+      "part_counts": {
+        "side": 368
+      },
+      "category_counts": {
+        "side_left": 137,
+        "side_left_upper": 20,
+        "side_right": 144,
+        "side_right_upper": 21,
+        "side_top_bridge": 46
+      },
+      "world_y_range": [
+        111.67404,
+        134.00566
+      ]
+    },
+    {
+      "island_id": 82,
+      "pixel_area": 107,
+      "bbox_pixel_inclusive": [
+        1903,
+        1365,
+        1929,
+        1376
+      ],
+      "bbox_uv": [
+        0.9296532,
+        0.3277968,
+        0.9423547,
+        0.3331705
+      ],
+      "centroid_pixel": [
+        1914.533,
+        1371.224
+      ],
+      "centroid_uv": [
+        0.9352871,
+        0.3301298
+      ],
+      "major_axis_pixel": [
+        0.9660339,
+        -0.2584153
+      ],
+      "root_to_tip_axis_pixel": [
+        0.9660339,
+        -0.2584153
+      ],
+      "root_to_tip_axis_uv": [
+        0.9660339,
+        0.2584153
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -11.083,
+        15.584
+      ],
+      "mesh_names": [
+        "polySurfaceShape68"
+      ],
+      "face_count": 15,
+      "part_counts": {
+        "braid": 15
+      },
+      "category_counts": {
+        "left_braid_end": 15
+      },
+      "world_y_range": [
+        69.59923,
+        76.1055
+      ]
+    },
+    {
+      "island_id": 83,
+      "pixel_area": 181,
+      "bbox_pixel_inclusive": [
+        2014,
+        1368,
+        2019,
+        1416
+      ],
+      "bbox_uv": [
+        0.9838788,
+        0.308256,
+        0.9863214,
+        0.3317049
+      ],
+      "centroid_pixel": [
+        2016.033,
+        1392.293
+      ],
+      "centroid_uv": [
+        0.9848721,
+        0.3198374
+      ],
+      "major_axis_pixel": [
+        -0.0090187,
+        0.9999593
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0090187,
+        0.9999593
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0090187,
+        -0.9999593
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -24.283,
+        23.707
+      ],
+      "mesh_names": [
+        "polySurface80Shape",
+        "polySurfaceShape67"
+      ],
+      "face_count": 24,
+      "part_counts": {
+        "side": 24
+      },
+      "category_counts": {
+        "side_left_upper": 8,
+        "side_right_spike": 12,
+        "side_top_bridge": 4
+      },
+      "world_y_range": [
+        124.52228,
+        133.40939
+      ]
+    },
+    {
+      "island_id": 84,
+      "pixel_area": 61094,
+      "bbox_pixel_inclusive": [
+        979,
+        1370,
+        1094,
+        2030
+      ],
+      "bbox_uv": [
+        0.4782609,
+        0.0083048,
+        0.5344406,
+        0.3307279
+      ],
+      "centroid_pixel": [
+        1040.207,
+        1659.967
+      ],
+      "centroid_uv": [
+        0.5081617,
+        0.1890733
+      ],
+      "major_axis_pixel": [
+        0.0204455,
+        0.999791
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0204455,
+        0.999791
+      ],
+      "root_to_tip_axis_uv": [
+        0.0204455,
+        -0.999791
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -291.096,
+        369.952
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 24,
+      "part_counts": {
+        "side": 24
+      },
+      "category_counts": {
+        "side_left": 18,
+        "side_left_upper": 6
+      },
+      "world_y_range": [
+        111.62598,
+        130.19413
+      ]
+    },
+    {
+      "island_id": 85,
+      "pixel_area": 11,
+      "bbox_pixel_inclusive": [
+        1916,
+        1384,
+        1920,
+        1386
+      ],
+      "bbox_uv": [
+        0.9360039,
+        0.3229116,
+        0.937958,
+        0.3238886
+      ],
+      "centroid_pixel": [
+        1918.182,
+        1385.364
+      ],
+      "centroid_uv": [
+        0.9370698,
+        0.3232225
+      ],
+      "major_axis_pixel": [
+        0.9903343,
+        -0.1387012
+      ],
+      "root_to_tip_axis_pixel": [
+        0.9903343,
+        -0.1387012
+      ],
+      "root_to_tip_axis_uv": [
+        0.9903343,
+        0.1387012
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -2.249,
+        1.99
+      ],
+      "mesh_names": [
+        "polySurfaceShape68"
+      ],
+      "face_count": 10,
+      "part_counts": {
+        "braid": 10
+      },
+      "category_counts": {
+        "left_braid_end": 10
+      },
+      "world_y_range": [
+        71.41957,
+        74.00202
+      ]
+    },
+    {
+      "island_id": 86,
+      "pixel_area": 8211,
+      "bbox_pixel_inclusive": [
+        1177,
+        1406,
+        1230,
+        1673
+      ],
+      "bbox_uv": [
+        0.5749878,
+        0.1827064,
+        0.6008793,
+        0.3131412
+      ],
+      "centroid_pixel": [
+        1203.612,
+        1519.588
+      ],
+      "centroid_uv": [
+        0.5879881,
+        0.2576513
+      ],
+      "major_axis_pixel": [
+        0.0053622,
+        0.9999856
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0053622,
+        0.9999856
+      ],
+      "root_to_tip_axis_uv": [
+        0.0053622,
+        -0.9999856
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -113.584,
+        153.412
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 21,
+      "part_counts": {
+        "side": 21
+      },
+      "category_counts": {
+        "side_left": 21
+      },
+      "world_y_range": [
+        113.55413,
+        118.68507
+      ]
+    },
+    {
+      "island_id": 87,
+      "pixel_area": 37,
+      "bbox_pixel_inclusive": [
+        2021,
+        1435,
+        2022,
+        1456
+      ],
+      "bbox_uv": [
+        0.9872985,
+        0.2887152,
+        0.987787,
+        0.2989741
+      ],
+      "centroid_pixel": [
+        2021.432,
+        1444.486
+      ],
+      "centroid_uv": [
+        0.9875097,
+        0.2943398
+      ],
+      "major_axis_pixel": [
+        -0.0261937,
+        0.9996569
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0261937,
+        0.9996569
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0261937,
+        -0.9996569
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -9.498,
+        11.521
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 2,
+      "part_counts": {
+        "side": 2
+      },
+      "category_counts": {
+        "side_top_bridge": 2
+      },
+      "world_y_range": [
+        132.02128,
+        133.31477
+      ]
+    },
+    {
+      "island_id": 88,
+      "pixel_area": 1890,
+      "bbox_pixel_inclusive": [
+        1520,
+        1442,
+        1554,
+        1514
+      ],
+      "bbox_uv": [
+        0.7425501,
+        0.260381,
+        0.7591597,
+        0.2955545
+      ],
+      "centroid_pixel": [
+        1536.862,
+        1482.074
+      ],
+      "centroid_uv": [
+        0.7507877,
+        0.2759775
+      ],
+      "major_axis_pixel": [
+        0.0162638,
+        0.9998677
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0162638,
+        -0.9998677
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0162638,
+        0.9998677
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -40.213,
+        32.07
+      ],
+      "mesh_names": [
+        "pasted__pasted__pasted__pasted__polySurface94Shape"
+      ],
+      "face_count": 16,
+      "part_counts": {
+        "braid": 16
+      },
+      "category_counts": {
+        "left_braid_end": 8,
+        "right_braid_end": 8
+      },
+      "world_y_range": [
+        77.33257,
+        80.1734
+      ]
+    },
+    {
+      "island_id": 89,
+      "pixel_area": 757,
+      "bbox_pixel_inclusive": [
+        1566,
+        1452,
+        1586,
+        1514
+      ],
+      "bbox_uv": [
+        0.765022,
+        0.260381,
+        0.7747924,
+        0.2906693
+      ],
+      "centroid_pixel": [
+        1575.044,
+        1489.511
+      ],
+      "centroid_uv": [
+        0.76944,
+        0.2723443
+      ],
+      "major_axis_pixel": [
+        0.0712318,
+        0.9974598
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0712318,
+        0.9974598
+      ],
+      "root_to_tip_axis_uv": [
+        0.0712318,
+        -0.9974598
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -37.562,
+        24.566
+      ],
+      "mesh_names": [
+        "pasted__pasted__pasted__pasted__polySurface94Shape"
+      ],
+      "face_count": 8,
+      "part_counts": {
+        "braid": 8
+      },
+      "category_counts": {
+        "left_braid_end": 4,
+        "right_braid_end": 4
+      },
+      "world_y_range": [
+        75.14618,
+        76.10179
+      ]
+    },
+    {
+      "island_id": 90,
+      "pixel_area": 8,
+      "bbox_pixel_inclusive": [
+        2034,
+        1453,
+        2035,
+        1456
+      ],
+      "bbox_uv": [
+        0.9936492,
+        0.2887152,
+        0.9941378,
+        0.2901808
+      ],
+      "centroid_pixel": [
+        2034.5,
+        1454.5
+      ],
+      "centroid_uv": [
+        0.9938935,
+        0.289448
+      ],
+      "major_axis_pixel": [
+        0.0,
+        1.0
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0,
+        -1.0
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0,
+        1.0
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -1.5,
+        1.5
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 4,
+      "part_counts": {
+        "side": 4
+      },
+      "category_counts": {
+        "side_left_upper": 1,
+        "side_right_upper": 1,
+        "side_top_bridge": 2
+      },
+      "world_y_range": [
+        127.0643,
+        129.33949
+      ]
+    },
+    {
+      "island_id": 91,
+      "pixel_area": 1097,
+      "bbox_pixel_inclusive": [
+        1585,
+        1454,
+        1647,
+        1514
+      ],
+      "bbox_uv": [
+        0.7743039,
+        0.260381,
+        0.8045921,
+        0.2896922
+      ],
+      "centroid_pixel": [
+        1606.651,
+        1493.386
+      ],
+      "centroid_uv": [
+        0.7848807,
+        0.2704516
+      ],
+      "major_axis_pixel": [
+        0.796024,
+        0.605265
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.796024,
+        -0.605265
+      ],
+      "root_to_tip_axis_uv": [
+        -0.796024,
+        0.605265
+      ],
+      "root_at_major_max": true,
+      "major_t_range_pixel": [
+        -41.073,
+        35.616
+      ],
+      "mesh_names": [
+        "pasted__pasted__pasted__pasted__polySurface94Shape"
+      ],
+      "face_count": 20,
+      "part_counts": {
+        "braid": 20
+      },
+      "category_counts": {
+        "left_braid_end": 10,
+        "right_braid_end": 10
+      },
+      "world_y_range": [
+        76.445,
+        77.38755
+      ]
+    },
+    {
+      "island_id": 92,
+      "pixel_area": 2236,
+      "bbox_pixel_inclusive": [
+        1951,
+        1471,
+        2005,
+        1530
+      ],
+      "bbox_uv": [
+        0.9531021,
+        0.2525647,
+        0.9794822,
+        0.2813874
+      ],
+      "centroid_pixel": [
+        1978.097,
+        1501.45
+      ],
+      "centroid_uv": [
+        0.9663395,
+        0.266512
+      ],
+      "major_axis_pixel": [
+        0.0106625,
+        0.9999432
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0106625,
+        0.9999432
+      ],
+      "root_to_tip_axis_uv": [
+        0.0106625,
+        -0.9999432
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -30.556,
+        28.643
+      ],
+      "mesh_names": [
+        "pasted__polySurface41Shape"
+      ],
+      "face_count": 24,
+      "part_counts": {
+        "back": 20,
+        "side": 4
+      },
+      "category_counts": {
+        "back_center": 2,
+        "back_left": 5,
+        "back_right": 5,
+        "back_top": 8,
+        "side_under_left": 2,
+        "side_under_right": 2
+      },
+      "world_y_range": [
+        116.93043,
+        132.8958
+      ]
+    },
+    {
+      "island_id": 93,
+      "pixel_area": 39570,
+      "bbox_pixel_inclusive": [
+        243,
+        1528,
+        356,
+        2037
+      ],
+      "bbox_uv": [
+        0.1187103,
+        0.0048852,
+        0.173913,
+        0.2535418
+      ],
+      "centroid_pixel": [
+        297.325,
+        1748.726
+      ],
+      "centroid_uv": [
+        0.145249,
+        0.1457128
+      ],
+      "major_axis_pixel": [
+        -0.0684283,
+        0.997656
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0684283,
+        0.997656
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0684283,
+        -0.997656
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -217.928,
+        288.236
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 23,
+      "part_counts": {
+        "side": 23
+      },
+      "category_counts": {
+        "side_right": 6,
+        "side_right_upper": 11,
+        "side_top_bridge": 6
+      },
+      "world_y_range": [
+        121.42563,
+        133.56425
+      ]
+    },
+    {
+      "island_id": 94,
+      "pixel_area": 22582,
+      "bbox_pixel_inclusive": [
+        1635,
+        1542,
+        1708,
+        2032
+      ],
+      "bbox_uv": [
+        0.7987298,
+        0.0073278,
+        0.8343918,
+        0.2467025
+      ],
+      "centroid_pixel": [
+        1670.525,
+        1838.402
+      ],
+      "centroid_uv": [
+        0.8160847,
+        0.1019044
+      ],
+      "major_axis_pixel": [
+        -0.0213952,
+        0.9997711
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0213952,
+        0.9997711
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0213952,
+        -0.9997711
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -296.472,
+        193.822
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 18,
+      "part_counts": {
+        "front": 18
+      },
+      "category_counts": {
+        "front_center": 2,
+        "front_left": 16
+      },
+      "world_y_range": [
+        122.48982,
+        131.35134
+      ]
+    },
+    {
+      "island_id": 95,
+      "pixel_area": 37607,
+      "bbox_pixel_inclusive": [
+        414,
+        1544,
+        523,
+        2041
+      ],
+      "bbox_uv": [
+        0.2022472,
+        0.0029311,
+        0.2554958,
+        0.2457255
+      ],
+      "centroid_pixel": [
+        469.077,
+        1758.525
+      ],
+      "centroid_uv": [
+        0.2291534,
+        0.1409259
+      ],
+      "major_axis_pixel": [
+        0.0501216,
+        0.9987431
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0501216,
+        0.9987431
+      ],
+      "root_to_tip_axis_uv": [
+        0.0501216,
+        -0.9987431
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -212.555,
+        282.618
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 23,
+      "part_counts": {
+        "side": 23
+      },
+      "category_counts": {
+        "side_left": 6,
+        "side_left_upper": 11,
+        "side_top_bridge": 6
+      },
+      "world_y_range": [
+        121.31966,
+        133.56425
+      ]
+    },
+    {
+      "island_id": 96,
+      "pixel_area": 12182,
+      "bbox_pixel_inclusive": [
+        1585,
+        1548,
+        1620,
+        2033
+      ],
+      "bbox_uv": [
+        0.7743039,
+        0.0068393,
+        0.7914021,
+        0.2437714
+      ],
+      "centroid_pixel": [
+        1606.298,
+        1830.173
+      ],
+      "centroid_uv": [
+        0.7847081,
+        0.1059241
+      ],
+      "major_axis_pixel": [
+        -0.0216438,
+        0.9997657
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0216438,
+        0.9997657
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0216438,
+        -0.9997657
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -282.404,
+        202.483
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 16,
+      "part_counts": {
+        "front": 16
+      },
+      "category_counts": {
+        "front_center": 3,
+        "front_right": 13
+      },
+      "world_y_range": [
+        122.06183,
+        131.1613
+      ]
+    },
+    {
+      "island_id": 97,
+      "pixel_area": 26043,
+      "bbox_pixel_inclusive": [
+        1717,
+        1561,
+        1791,
+        2020
+      ],
+      "bbox_uv": [
+        0.8387885,
+        0.01319,
+        0.8749389,
+        0.2374206
+      ],
+      "centroid_pixel": [
+        1753.55,
+        1811.221
+      ],
+      "centroid_uv": [
+        0.8566438,
+        0.1151829
+      ],
+      "major_axis_pixel": [
+        -0.0026868,
+        0.9999964
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0026868,
+        0.9999964
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0026868,
+        -0.9999964
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -250.224,
+        208.834
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 20,
+      "part_counts": {
+        "front": 20
+      },
+      "category_counts": {
+        "front_center": 20
+      },
+      "world_y_range": [
+        122.11756,
+        131.32498
+      ]
+    },
+    {
+      "island_id": 98,
+      "pixel_area": 18357,
+      "bbox_pixel_inclusive": [
+        1812,
+        1568,
+        1872,
+        2013
+      ],
+      "bbox_uv": [
+        0.8851979,
+        0.0166097,
+        0.914509,
+        0.234001
+      ],
+      "centroid_pixel": [
+        1842.126,
+        1840.006
+      ],
+      "centroid_uv": [
+        0.8999151,
+        0.1011209
+      ],
+      "major_axis_pixel": [
+        -0.0071181,
+        0.9999747
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0071181,
+        0.9999747
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0071181,
+        -0.9999747
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -272.026,
+        172.941
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 21,
+      "part_counts": {
+        "front": 21
+      },
+      "category_counts": {
+        "front_center": 3,
+        "front_right": 18
+      },
+      "world_y_range": [
+        122.42313,
+        131.36544
+      ]
+    },
+    {
+      "island_id": 99,
+      "pixel_area": 691,
+      "bbox_pixel_inclusive": [
+        1301,
+        1571,
+        1333,
+        1604
+      ],
+      "bbox_uv": [
+        0.6355642,
+        0.2164143,
+        0.6511969,
+        0.2325354
+      ],
+      "centroid_pixel": [
+        1315.116,
+        1589.14
+      ],
+      "centroid_uv": [
+        0.6424601,
+        0.2236735
+      ],
+      "major_axis_pixel": [
+        0.5118275,
+        0.8590882
+      ],
+      "root_to_tip_axis_pixel": [
+        0.5118275,
+        0.8590882
+      ],
+      "root_to_tip_axis_uv": [
+        0.5118275,
+        -0.8590882
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -16.649,
+        19.178
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 114,
+      "part_counts": {
+        "front": 114
+      },
+      "category_counts": {
+        "front_center": 59,
+        "front_left": 20,
+        "front_right": 35
+      },
+      "world_y_range": [
+        121.92207,
+        131.38421
+      ]
+    },
+    {
+      "island_id": 100,
+      "pixel_area": 17940,
+      "bbox_pixel_inclusive": [
+        1413,
+        1578,
+        1479,
+        2006
+      ],
+      "bbox_uv": [
+        0.6902785,
+        0.0200293,
+        0.7225208,
+        0.2291158
+      ],
+      "centroid_pixel": [
+        1444.541,
+        1819.542
+      ],
+      "centroid_uv": [
+        0.7056868,
+        0.1111176
+      ],
+      "major_axis_pixel": [
+        -0.0014205,
+        0.999999
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0014205,
+        0.999999
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0014205,
+        -0.999999
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -241.54,
+        186.455
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 21,
+      "part_counts": {
+        "front": 21
+      },
+      "category_counts": {
+        "front_center": 5,
+        "front_left": 16
+      },
+      "world_y_range": [
+        122.62192,
+        131.33312
+      ]
+    },
+    {
+      "island_id": 101,
+      "pixel_area": 16299,
+      "bbox_pixel_inclusive": [
+        1504,
+        1579,
+        1567,
+        2003
+      ],
+      "bbox_uv": [
+        0.7347338,
+        0.0214949,
+        0.7655105,
+        0.2286273
+      ],
+      "centroid_pixel": [
+        1536.728,
+        1812.246
+      ],
+      "centroid_uv": [
+        0.7507222,
+        0.1146818
+      ],
+      "major_axis_pixel": [
+        -0.0008941,
+        0.9999996
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0008941,
+        0.9999996
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0008941,
+        -0.9999996
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -233.247,
+        190.752
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 22,
+      "part_counts": {
+        "front": 22
+      },
+      "category_counts": {
+        "front_center": 6,
+        "front_right": 16
+      },
+      "world_y_range": [
+        122.66954,
+        131.35474
+      ]
+    },
+    {
+      "island_id": 102,
+      "pixel_area": 17168,
+      "bbox_pixel_inclusive": [
+        1890,
+        1594,
+        1946,
+        2025
+      ],
+      "bbox_uv": [
+        0.9233024,
+        0.0107474,
+        0.9506595,
+        0.2212995
+      ],
+      "centroid_pixel": [
+        1919.232,
+        1835.787
+      ],
+      "centroid_uv": [
+        0.9375828,
+        0.1031817
+      ],
+      "major_axis_pixel": [
+        0.0051026,
+        0.999987
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0051026,
+        0.999987
+      ],
+      "root_to_tip_axis_uv": [
+        0.0051026,
+        -0.999987
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -241.754,
+        189.271
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 16,
+      "part_counts": {
+        "front": 16
+      },
+      "category_counts": {
+        "front_center": 9,
+        "front_left": 7
+      },
+      "world_y_range": [
+        122.08687,
+        131.30725
+      ]
+    },
+    {
+      "island_id": 103,
+      "pixel_area": 15105,
+      "bbox_pixel_inclusive": [
+        1976,
+        1598,
+        2024,
+        2027
+      ],
+      "bbox_uv": [
+        0.9653151,
+        0.0097704,
+        0.988764,
+        0.2193454
+      ],
+      "centroid_pixel": [
+        2001.059,
+        1838.951
+      ],
+      "centroid_uv": [
+        0.9775567,
+        0.101636
+      ],
+      "major_axis_pixel": [
+        -0.0033337,
+        0.9999944
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0033337,
+        0.9999944
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0033337,
+        -0.9999944
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -240.956,
+        188.058
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 20,
+      "part_counts": {
+        "front": 20
+      },
+      "category_counts": {
+        "front_center": 20
+      },
+      "world_y_range": [
+        122.12796,
+        131.31355
+      ]
+    },
+    {
+      "island_id": 104,
+      "pixel_area": 1139,
+      "bbox_pixel_inclusive": [
+        1383,
+        1603,
+        1398,
+        1729
+      ],
+      "bbox_uv": [
+        0.6756229,
+        0.1553493,
+        0.6829507,
+        0.2169028
+      ],
+      "centroid_pixel": [
+        1387.987,
+        1664.572
+      ],
+      "centroid_uv": [
+        0.678059,
+        0.1868234
+      ],
+      "major_axis_pixel": [
+        -0.0085255,
+        0.9999637
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0085255,
+        0.9999637
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0085255,
+        -0.9999637
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -61.528,
+        64.468
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 3,
+      "part_counts": {
+        "front": 3
+      },
+      "category_counts": {
+        "front_right": 3
+      },
+      "world_y_range": [
+        122.72884,
+        123.54541
+      ]
+    },
+    {
+      "island_id": 105,
+      "pixel_area": 661,
+      "bbox_pixel_inclusive": [
+        1299,
+        1628,
+        1322,
+        1687
+      ],
+      "bbox_uv": [
+        0.6345872,
+        0.1758671,
+        0.6458232,
+        0.2046898
+      ],
+      "centroid_pixel": [
+        1313.64,
+        1651.707
+      ],
+      "centroid_uv": [
+        0.6417391,
+        0.1931087
+      ],
+      "major_axis_pixel": [
+        0.2815645,
+        0.9595423
+      ],
+      "root_to_tip_axis_pixel": [
+        0.2815645,
+        0.9595423
+      ],
+      "root_to_tip_axis_uv": [
+        0.2815645,
+        -0.9595423
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -26.869,
+        34.812
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 3,
+      "part_counts": {
+        "front": 3
+      },
+      "category_counts": {
+        "front_right": 3
+      },
+      "world_y_range": [
+        122.52607,
+        123.82127
+      ]
+    },
+    {
+      "island_id": 106,
+      "pixel_area": 4678,
+      "bbox_pixel_inclusive": [
+        1275,
+        1653,
+        1295,
+        1976
+      ],
+      "bbox_uv": [
+        0.6228627,
+        0.0346849,
+        0.6326331,
+        0.1924768
+      ],
+      "centroid_pixel": [
+        1287.003,
+        1830.285
+      ],
+      "centroid_uv": [
+        0.6287264,
+        0.1058698
+      ],
+      "major_axis_pixel": [
+        -0.0083553,
+        0.9999651
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0083553,
+        0.9999651
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0083553,
+        -0.9999651
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -177.345,
+        145.644
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 11,
+      "part_counts": {
+        "front": 11
+      },
+      "category_counts": {
+        "front_center": 2,
+        "front_right": 9
+      },
+      "world_y_range": [
+        122.53636,
+        131.38865
+      ]
+    },
+    {
+      "island_id": 107,
+      "pixel_area": 8394,
+      "bbox_pixel_inclusive": [
+        749,
+        1672,
+        808,
+        1953
+      ],
+      "bbox_uv": [
+        0.3659013,
+        0.0459209,
+        0.394724,
+        0.1831949
+      ],
+      "centroid_pixel": [
+        786.305,
+        1789.235
+      ],
+      "centroid_uv": [
+        0.3841255,
+        0.1259233
+      ],
+      "major_axis_pixel": [
+        0.0833611,
+        0.9965194
+      ],
+      "root_to_tip_axis_pixel": [
+        0.0833611,
+        0.9965194
+      ],
+      "root_to_tip_axis_uv": [
+        0.0833611,
+        -0.9965194
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -117.353,
+        164.003
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 23,
+      "part_counts": {
+        "side": 23
+      },
+      "category_counts": {
+        "side_left": 23
+      },
+      "world_y_range": [
+        113.39184,
+        118.55681
+      ]
+    },
+    {
+      "island_id": 108,
+      "pixel_area": 8654,
+      "bbox_pixel_inclusive": [
+        674,
+        1674,
+        729,
+        1948
+      ],
+      "bbox_uv": [
+        0.3292623,
+        0.0483635,
+        0.3561309,
+        0.1822179
+      ],
+      "centroid_pixel": [
+        696.502,
+        1795.726
+      ],
+      "centroid_uv": [
+        0.3402548,
+        0.1227525
+      ],
+      "major_axis_pixel": [
+        -0.0290338,
+        0.9995784
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0290338,
+        0.9995784
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0290338,
+        -0.9995784
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -121.689,
+        152.196
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 23,
+      "part_counts": {
+        "side": 23
+      },
+      "category_counts": {
+        "side_right": 23
+      },
+      "world_y_range": [
+        113.28787,
+        118.55681
+      ]
+    },
+    {
+      "island_id": 109,
+      "pixel_area": 8479,
+      "bbox_pixel_inclusive": [
+        1159,
+        1713,
+        1213,
+        1985
+      ],
+      "bbox_uv": [
+        0.5661944,
+        0.0302882,
+        0.5925745,
+        0.1631656
+      ],
+      "centroid_pixel": [
+        1184.341,
+        1829.832
+      ],
+      "centroid_uv": [
+        0.5785739,
+        0.1060908
+      ],
+      "major_axis_pixel": [
+        -0.0083423,
+        0.9999652
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0083423,
+        0.9999652
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0083423,
+        -0.9999652
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -116.833,
+        155.157
+      ],
+      "mesh_names": [
+        "polySurface80Shape"
+      ],
+      "face_count": 23,
+      "part_counts": {
+        "side": 23
+      },
+      "category_counts": {
+        "side_right": 23
+      },
+      "world_y_range": [
+        113.40032,
+        118.68507
+      ]
+    },
+    {
+      "island_id": 110,
+      "pixel_area": 2851,
+      "bbox_pixel_inclusive": [
+        1325,
+        1713,
+        1338,
+        1992
+      ],
+      "bbox_uv": [
+        0.6472887,
+        0.0268686,
+        0.6536395,
+        0.1631656
+      ],
+      "centroid_pixel": [
+        1332.983,
+        1854.043
+      ],
+      "centroid_uv": [
+        0.6511886,
+        0.0942634
+      ],
+      "major_axis_pixel": [
+        -0.0024313,
+        0.999997
+      ],
+      "root_to_tip_axis_pixel": [
+        -0.0024313,
+        0.999997
+      ],
+      "root_to_tip_axis_uv": [
+        -0.0024313,
+        -0.999997
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -141.055,
+        137.945
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 9,
+      "part_counts": {
+        "front": 9
+      },
+      "category_counts": {
+        "front_center": 2,
+        "front_right": 7
+      },
+      "world_y_range": [
+        122.28609,
+        131.14425
+      ]
+    },
+    {
+      "island_id": 111,
+      "pixel_area": 1847,
+      "bbox_pixel_inclusive": [
+        1378,
+        1744,
+        1388,
+        1965
+      ],
+      "bbox_uv": [
+        0.6731803,
+        0.0400586,
+        0.6780655,
+        0.1480215
+      ],
+      "centroid_pixel": [
+        1384.044,
+        1851.378
+      ],
+      "centroid_uv": [
+        0.6761328,
+        0.0955653
+      ],
+      "major_axis_pixel": [
+        -6.1e-06,
+        1.0
+      ],
+      "root_to_tip_axis_pixel": [
+        -6.1e-06,
+        1.0
+      ],
+      "root_to_tip_axis_uv": [
+        -6.1e-06,
+        -1.0
+      ],
+      "root_at_major_max": false,
+      "major_t_range_pixel": [
+        -107.378,
+        113.622
+      ],
+      "mesh_names": [
+        "polySurface89Shape"
+      ],
+      "face_count": 6,
+      "part_counts": {
+        "front": 6
+      },
+      "category_counts": {
+        "front_left": 6
+      },
+      "world_y_range": [
+        123.20012,
+        129.86406
+      ]
+    }
+  ]
+}
