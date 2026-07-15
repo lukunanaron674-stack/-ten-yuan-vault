@@ -1,8 +1,13 @@
-﻿{
-    "action":  "archive_current_chat",
-    "target":  "当前 Edge 里打开的目标 ChatGPT 聊天页",
-    "archiveTitle":  "当前Chat聊天打包_2026-07-10_00-58-51",
-    "saveDir":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\07-Codex大脑库\\Chat打包归档",
-    "createdAt":  "2026-07-10T00:58:51+08:00",
-    "note":  "影刀执行：保存当前 ChatGPT 聊天页为完整网页；可选再打印 PDF 或复制文本为 md。完成后写 outbox/chat-archive.json，或直接保存到 saveDir。"
+{
+  "action": "generate_chatgpt_contact_sheets_for_canvas",
+  "status": "RUN_NOW",
+  "dispatchId": "inventory-sync-scroll-20260714-01",
+  "sheetId": "inventory",
+  "title": "民国生成图唯一地址清单",
+  "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\生成图DOM清单.txt",
+  "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\04-F12总控载体\\yingdao-bridge\\outbox\\inventory-dummy.png",
+  "target": "https://chatgpt.com/c/6a54b960-7854-83ea-ac0d-a4e9fded575f",
+  "resultPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\04-F12总控载体\\yingdao-bridge\\outbox\\minguo-contact-sheet-result.json",
+  "createdAt": "2026-07-14T21:32:00+08:00",
+  "note": "只读取现有生成图清单，不发送提示词。"
 }

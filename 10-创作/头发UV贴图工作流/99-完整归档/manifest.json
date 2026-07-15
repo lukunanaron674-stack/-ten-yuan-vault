@@ -1,0 +1,174 @@
+{
+  "package": "头发_UV对齐数据包",
+  "created_at": "2026-07-13T22:32:03+08:00",
+  "summary": {
+    "texture_size": [
+      2048,
+      2048
+    ],
+    "uv_island_count": 111,
+    "mesh_count": 7,
+    "face_count": 3698,
+    "unassigned_face_count": 0,
+    "padding_pixels": 20,
+    "source_model_sha256": "d01b119d4b67e19040cac6995441f3d4d880247160212dbc04e7f70a0f08effb",
+    "source_image_sha256": "1beca8c24b100f3a8b55c9403ca8b2c8ac43e67eb8997b25399eb84530c74ff2"
+  },
+  "files": [
+    {
+      "path": "01_源文件/原生成二分图.png",
+      "bytes": 1384489,
+      "sha256": "1beca8c24b100f3a8b55c9403ca8b2c8ac43e67eb8997b25399eb84530c74ff2"
+    },
+    {
+      "path": "01_源文件/头发_原模型.ma",
+      "bytes": 859057,
+      "sha256": "d01b119d4b67e19040cac6995441f3d4d880247160212dbc04e7f70a0f08effb"
+    },
+    {
+      "path": "02_UV参考/UV岛精确遮罩.png",
+      "bytes": 45053,
+      "sha256": "483014c883103c750ab7837539b4fcae50a228dd18c5e45d41eb3b377c748d3e"
+    },
+    {
+      "path": "02_UV参考/UV岛编号图.png",
+      "bytes": 255662,
+      "sha256": "0dee2e2c529c4781862f12bc378ddba92f72e8fe0dd06d5c56716004c6d0a0fe"
+    },
+    {
+      "path": "02_UV参考/发根到发梢方向图.png",
+      "bytes": 138295,
+      "sha256": "451892b46a61444497661bb6018d5b61903cb651bf57bc702a135d7d4f3e5246"
+    },
+    {
+      "path": "02_UV参考/真实UV线框_2048.png",
+      "bytes": 122841,
+      "sha256": "57e11916f11a681516bcae012281df5ba980569491477b18f8d368c2f8b3bb20"
+    },
+    {
+      "path": "03_对齐贴图/灰度二分形状_UV对齐.png",
+      "bytes": 2260026,
+      "sha256": "bfd621d3a20be2fc8aee28c1f2cc3fe13b7c479abf96686ba5471325b8a1b13a"
+    },
+    {
+      "path": "03_对齐贴图/粉色头发_BaseColor.png",
+      "bytes": 939970,
+      "sha256": "bfc7c1e64731345492ec13915e29cb6963145c6aca25b80e4d9eb46fa5659eca"
+    },
+    {
+      "path": "03_对齐贴图/粉色头发_二分遮罩.png",
+      "bytes": 91137,
+      "sha256": "a04da9074e1cbf205fa58b692d2d89ebad534310b4dd44e96f7a1fcac7edb5ba"
+    },
+    {
+      "path": "03_对齐贴图/粉色头发_发丝线遮罩.png",
+      "bytes": 102816,
+      "sha256": "f6759a11090aaf2c7f4c462ec2223a1817475644e75b7b208c334e0d6e2353de"
+    },
+    {
+      "path": "03_对齐贴图/纯亮暗两色_UV对齐.png",
+      "bytes": 91070,
+      "sha256": "dc607b7946ae1f4af4b59263d1ca85c77396ba535b18a09119afa63b64e4146e"
+    },
+    {
+      "path": "04_Maya文件/头发_粉色风格_UV已对齐.ma",
+      "bytes": 873855,
+      "sha256": "17cc22626cec4a3d0acbaeb5d649c82e4a7c564c5dbd7477f49142f87bb17be5"
+    },
+    {
+      "path": "04_Maya文件/头发_纯二分_UV已对齐.ma",
+      "bytes": 873857,
+      "sha256": "4ec3ffe30b68f48df3fbfd3c69ec86045b2d26e788b6194d7b6c693c1c823550"
+    },
+    {
+      "path": "05_预览/对齐前后对比.png",
+      "bytes": 2296790,
+      "sha256": "be54eafcb0659eb0dd7a082ab73004e0b27fb7967a8372dc49afc620d3369615"
+    },
+    {
+      "path": "05_预览/粉色版_右侧.png",
+      "bytes": 348764,
+      "sha256": "fc009ee83e0eb0645e01740881e5373ff0913dd09eddbd093aed53a2f04e9828"
+    },
+    {
+      "path": "05_预览/粉色版_四视图.png",
+      "bytes": 496415,
+      "sha256": "167ef3957957ddedfc828599821e8912e4f4090908df7da652b717f75be5e484"
+    },
+    {
+      "path": "05_预览/粉色版_左侧.png",
+      "bytes": 348612,
+      "sha256": "6728c70660f4a119ec8514fcbd77e310e00811dbe27d283600baf9857bb2c3c5"
+    },
+    {
+      "path": "05_预览/粉色版_正面.png",
+      "bytes": 293922,
+      "sha256": "8acf6d501c64b0a64653c011706fd62b873c52c579fcfcce39aa62094b2a4894"
+    },
+    {
+      "path": "05_预览/粉色版_背面.png",
+      "bytes": 284824,
+      "sha256": "6fcc02ce61fd95e0a791069d4d8ff3f0120e0840e1b8977985bbbac2a291650c"
+    },
+    {
+      "path": "06_数据/UV岛_对齐与发流.json",
+      "bytes": 122922,
+      "sha256": "af0f62422894f0f39e6db115c8949998aaa073deb79a660b419980436efbe8fd"
+    },
+    {
+      "path": "06_数据/UV岛索引.csv",
+      "bytes": 18561,
+      "sha256": "7376f78f030523d5abbcad1cedb9570b7b00571889073f7a3da00f97b7db2bad"
+    },
+    {
+      "path": "06_数据/逐面UV对应.csv",
+      "bytes": 499663,
+      "sha256": "e6108dc9007c64159b3f5a88acd7a289b8e1f8e1f6e1f4fe79c701924cd44ff9"
+    },
+    {
+      "path": "06_数据/逐面UV对应.json",
+      "bytes": 3256001,
+      "sha256": "fcb77211687f2b74ae85a0ff9a1768e9ff12e03185028f824588805bb6471ec3"
+    },
+    {
+      "path": "06_数据/颜色与边缘参数.json",
+      "bytes": 563,
+      "sha256": "a5db02bb5511830130119ecc2275fe140fc2619b94a3d9ec50a858f004db9eb7"
+    },
+    {
+      "path": "07_复现工具/align_hair_tone_shape.py",
+      "bytes": 23912,
+      "sha256": "c19d4cce06ddf4d678ac024ee8ac9830cb0f98816e28f906619b23ff22fe87d5"
+    },
+    {
+      "path": "07_复现工具/build_front_hair_uv_id.py",
+      "bytes": 19747,
+      "sha256": "78768dba17b89e7b3ae034a20bc285e362d0ad041c2c03b50c84be54704b7c49"
+    },
+    {
+      "path": "07_复现工具/build_hair_partition_ids.py",
+      "bytes": 13348,
+      "sha256": "7c9fcfedbd97b68de7e030c8f8d60689d987f6d9ffd31649ee3b6155e0972ca6"
+    },
+    {
+      "path": "07_复现工具/build_pink_anime_hair_trial.py",
+      "bytes": 11824,
+      "sha256": "553b38b8918cca21ba4f2233d713e4bf6a43cf1b70666aa462cfb1088f6cef90"
+    },
+    {
+      "path": "07_复现工具/export_hair_uv_alignment_package.py",
+      "bytes": 22134,
+      "sha256": "b371cc53922b620a40a28d6a61c0fcc02f8134e892d33fb3ae2d023678c3155b"
+    },
+    {
+      "path": "07_复现工具/render_hair_uv_check_maya.py",
+      "bytes": 5635,
+      "sha256": "5693d7e3cfd775cf00d9c864066db25e32c5f9c01cdce85a35ea66464c47eaff"
+    },
+    {
+      "path": "README_使用说明.txt",
+      "bytes": 1438,
+      "sha256": "1c834b5a41a62be4321a1b0e07b0148b3f9fb7f09bfaa25303ac23154422f231"
+    }
+  ]
+}
