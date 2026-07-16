@@ -7,10 +7,11 @@ from pathlib import Path
 
 from PIL import Image
 
-SPRITE = Path("tmp/pirate_hq_sprite_1024.jpg")
+SPRITE = Path("tmp/pirate_hq_sprite_896.jpg")
 OUT = Path("09-给674（我）用的库/画画理论/assets/海盗航海_is-a名词素材库")
-EXPECTED_B64_LENGTH = 416456
-EXPECTED_JPEG_SHA256 = "cc61284c702c48c8de3c7b8de29b296331ab1ded915d568c13a74aa109b39385"
+EXPECTED_PARTS = 11
+EXPECTED_B64_LENGTH = 208840
+EXPECTED_JPEG_SHA256 = "7028ac76717d8027e54e789e0781c063924aa4fd03bcbc09df6c5a03b0233fa0"
 NAMES = [
     "n26_黑帆港.jpg",
     "n27_雾海沉船湾.jpg",
@@ -33,8 +34,8 @@ NAMES = [
 
 def rebuild_sprite() -> None:
     parts = sorted(Path("tmp").glob("pirate_hq_sprite.b64.part*"))
-    if len(parts) != 21:
-        raise ValueError(f"expected 21 base64 parts, found {len(parts)}")
+    if len(parts) != EXPECTED_PARTS:
+        raise ValueError(f"expected {EXPECTED_PARTS} base64 parts, found {len(parts)}")
     encoded = "".join(part.read_text(encoding="ascii") for part in parts)
     if len(encoded) != EXPECTED_B64_LENGTH:
         raise ValueError(f"unexpected base64 length: {len(encoded)}")
@@ -52,13 +53,13 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     with Image.open(SPRITE) as source:
         source = source.convert("RGB")
-        if source.size != (1024, 1024):
+        if source.size != (896, 896):
             raise ValueError(f"unexpected sprite size: {source.size}")
         assets: list[dict[str, object]] = []
         for index, name in enumerate(NAMES):
-            x = (index % 4) * 256
-            y = (index // 4) * 256
-            tile = source.crop((x, y, x + 256, y + 256))
+            x = (index % 4) * 224
+            y = (index // 4) * 224
+            tile = source.crop((x, y, x + 224, y + 224))
             destination = OUT / name
             tile.save(destination, "JPEG", quality=95, subsampling=0, optimize=True, progressive=True)
             payload = destination.read_bytes()
@@ -71,8 +72,8 @@ def main() -> None:
             })
 
     manifest = {
-        "source_width": 1024,
-        "source_height": 1024,
+        "source_width": 896,
+        "source_height": 896,
         "source_sha256": EXPECTED_JPEG_SHA256,
         "asset_count": len(assets),
         "assets": assets,
