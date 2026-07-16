@@ -9,7 +9,7 @@ from PIL import Image
 
 SPRITE = Path("tmp/pirate_hq_sprite_768.jpg")
 OUT = Path("09-给674（我）用的库/画画理论/assets/海盗航海_is-a名词素材库")
-EXPECTED_PARTS = 8
+EXPECTED_PARTS = 13
 EXPECTED_B64_LENGTH = 152976
 EXPECTED_JPEG_SHA256 = "0a67e36ea42ef7873e2989ee5d6106ee2ce95bbb94691b50356e6859c77d8f9a"
 NAMES = [
@@ -33,7 +33,7 @@ NAMES = [
 
 
 def rebuild_sprite() -> None:
-    parts = sorted(Path("tmp").glob("pirate_hq_sprite.b64.part*"))
+    parts = sorted(Path("tmp").glob("pirate_hq_sprite12.b64.part*"))
     if len(parts) != EXPECTED_PARTS:
         raise ValueError(f"expected {EXPECTED_PARTS} base64 parts, found {len(parts)}")
     encoded = "".join(part.read_text(encoding="ascii") for part in parts)
