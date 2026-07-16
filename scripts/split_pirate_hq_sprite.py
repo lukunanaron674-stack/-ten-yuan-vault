@@ -9,6 +9,8 @@ from PIL import Image
 
 SPRITE = Path("tmp/pirate_hq_sprite_1024.jpg")
 OUT = Path("09-给674（我）用的库/画画理论/assets/海盗航海_is-a名词素材库")
+EXPECTED_B64_LENGTH = 416456
+EXPECTED_JPEG_SHA256 = "cc61284c702c48c8de3c7b8de29b296331ab1ded915d568c13a74aa109b39385"
 NAMES = [
     "n26_黑帆港.jpg",
     "n27_雾海沉船湾.jpg",
@@ -31,12 +33,17 @@ NAMES = [
 
 def rebuild_sprite() -> None:
     parts = sorted(Path("tmp").glob("pirate_hq_sprite.b64.part*"))
-    if len(parts) != 8:
-        raise ValueError(f"expected 8 base64 parts, found {len(parts)}")
+    if len(parts) != 21:
+        raise ValueError(f"expected 21 base64 parts, found {len(parts)}")
     encoded = "".join(part.read_text(encoding="ascii") for part in parts)
+    if len(encoded) != EXPECTED_B64_LENGTH:
+        raise ValueError(f"unexpected base64 length: {len(encoded)}")
     payload = base64.b64decode(encoded, validate=True)
     if not payload.startswith(b"\xff\xd8\xff"):
         raise ValueError("rebuilt payload is not a JPEG")
+    digest = hashlib.sha256(payload).hexdigest()
+    if digest != EXPECTED_JPEG_SHA256:
+        raise ValueError(f"unexpected JPEG sha256: {digest}")
     SPRITE.write_bytes(payload)
 
 
@@ -53,28 +60,20 @@ def main() -> None:
             y = (index // 4) * 256
             tile = source.crop((x, y, x + 256, y + 256))
             destination = OUT / name
-            tile.save(
-                destination,
-                "JPEG",
-                quality=95,
-                subsampling=0,
-                optimize=True,
-                progressive=True,
-            )
+            tile.save(destination, "JPEG", quality=95, subsampling=0, optimize=True, progressive=True)
             payload = destination.read_bytes()
-            assets.append(
-                {
-                    "file": name,
-                    "width": tile.width,
-                    "height": tile.height,
-                    "bytes": len(payload),
-                    "sha256": hashlib.sha256(payload).hexdigest(),
-                }
-            )
+            assets.append({
+                "file": name,
+                "width": tile.width,
+                "height": tile.height,
+                "bytes": len(payload),
+                "sha256": hashlib.sha256(payload).hexdigest(),
+            })
 
     manifest = {
         "source_width": 1024,
         "source_height": 1024,
+        "source_sha256": EXPECTED_JPEG_SHA256,
         "asset_count": len(assets),
         "assets": assets,
     }
