@@ -7,11 +7,11 @@ from pathlib import Path
 
 from PIL import Image
 
-SPRITE = Path("tmp/pirate_hq_sprite_896.jpg")
+SPRITE = Path("tmp/pirate_hq_sprite_768.jpg")
 OUT = Path("09-给674（我）用的库/画画理论/assets/海盗航海_is-a名词素材库")
-EXPECTED_PARTS = 11
-EXPECTED_B64_LENGTH = 208840
-EXPECTED_JPEG_SHA256 = "7028ac76717d8027e54e789e0781c063924aa4fd03bcbc09df6c5a03b0233fa0"
+EXPECTED_PARTS = 8
+EXPECTED_B64_LENGTH = 152976
+EXPECTED_JPEG_SHA256 = "0a67e36ea42ef7873e2989ee5d6106ee2ce95bbb94691b50356e6859c77d8f9a"
 NAMES = [
     "n26_黑帆港.jpg",
     "n27_雾海沉船湾.jpg",
@@ -53,13 +53,13 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     with Image.open(SPRITE) as source:
         source = source.convert("RGB")
-        if source.size != (896, 896):
+        if source.size != (768, 768):
             raise ValueError(f"unexpected sprite size: {source.size}")
         assets: list[dict[str, object]] = []
         for index, name in enumerate(NAMES):
-            x = (index % 4) * 224
-            y = (index // 4) * 224
-            tile = source.crop((x, y, x + 224, y + 224))
+            x = (index % 4) * 192
+            y = (index // 4) * 192
+            tile = source.crop((x, y, x + 192, y + 192))
             destination = OUT / name
             tile.save(destination, "JPEG", quality=95, subsampling=0, optimize=True, progressive=True)
             payload = destination.read_bytes()
@@ -72,8 +72,8 @@ def main() -> None:
             })
 
     manifest = {
-        "source_width": 896,
-        "source_height": 896,
+        "source_width": 768,
+        "source_height": 768,
         "source_sha256": EXPECTED_JPEG_SHA256,
         "asset_count": len(assets),
         "assets": assets,
