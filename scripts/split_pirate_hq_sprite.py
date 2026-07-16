@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import base64
 import hashlib
 import json
 from pathlib import Path
@@ -28,7 +29,19 @@ NAMES = [
 ]
 
 
+def rebuild_sprite() -> None:
+    parts = sorted(Path("tmp").glob("pirate_hq_sprite.b64.part*"))
+    if len(parts) != 8:
+        raise ValueError(f"expected 8 base64 parts, found {len(parts)}")
+    encoded = "".join(part.read_text(encoding="ascii") for part in parts)
+    payload = base64.b64decode(encoded, validate=True)
+    if not payload.startswith(b"\xff\xd8\xff"):
+        raise ValueError("rebuilt payload is not a JPEG")
+    SPRITE.write_bytes(payload)
+
+
 def main() -> None:
+    rebuild_sprite()
     OUT.mkdir(parents=True, exist_ok=True)
     with Image.open(SPRITE) as source:
         source = source.convert("RGB")
@@ -60,7 +73,6 @@ def main() -> None:
             )
 
     manifest = {
-        "source": SPRITE.as_posix(),
         "source_width": 1024,
         "source_height": 1024,
         "asset_count": len(assets),
