@@ -29,6 +29,7 @@ RECHARGE_TAB = (481, 152)
 MONTHLY_CARD_TAB = (169, 453)
 MONTHLY_CLAIM_BUTTON = (1057, 876)
 OVERLAY_CLOSE_BUTTON = (1832, 54)
+START_GAME_BUTTON = (960, 878)
 
 
 def ensure_dirs():
@@ -107,6 +108,23 @@ def launch_game():
     run([ADB, "connect", DEVICE], timeout=15, check=False)
     manager("control", "--vmindex", VM_INDEX, "app", "launch", "--package", PACKAGE, timeout=30)
     time.sleep(35)
+    path = screenshot()
+    try:
+        with Image.open(path) as source:
+            image = source.convert("RGB")
+            start_ratio = color_ratio(
+                image,
+                (685, 835, 1235, 920),
+                lambda red, green, blue: red > 75 and red > green * 1.25 and red > blue * 1.2,
+            )
+        if start_ratio > 0.12:
+            tap(START_GAME_BUTTON)
+            time.sleep(45)
+    finally:
+        try:
+            os.remove(path)
+        except OSError:
+            pass
 
 
 def screenshot():
@@ -132,29 +150,39 @@ def color_ratio(image, box, predicate):
     return matched / total
 
 
-def has_overlay_close(image):
-    red_ratio = color_ratio(
-        image,
-        (1795, 20, 1870, 90),
-        lambda red, green, blue: red > 130 and red > green * 1.25 and red > blue * 1.15,
+def find_overlay_close(image):
+    points = []
+    for y in range(0, 250):
+        for x in range(1650, 1900):
+            red, green, blue = image.getpixel((x, y))
+            if red > 130 and red > green * 1.25 and red > blue * 1.15:
+                points.append((x, y))
+    if len(points) < 100:
+        return None
+    return (
+        round(sum(point[0] for point in points) / len(points)),
+        round(sum(point[1] for point in points) / len(points)),
     )
-    return red_ratio > 0.08
 
 
 def close_to_main(max_attempts=4):
     for _ in range(max_attempts):
+        close_point = None
         path = screenshot()
         try:
             with Image.open(path) as source:
                 image = source.convert("RGB")
-                if image.size != (1920, 1080) or not has_overlay_close(image):
+                if image.size != (1920, 1080):
+                    return
+                close_point = find_overlay_close(image)
+                if close_point is None:
                     return
         finally:
             try:
                 os.remove(path)
             except OSError:
                 pass
-        tap(OVERLAY_CLOSE_BUTTON)
+        tap(close_point)
         time.sleep(2)
 
 
@@ -299,6 +327,7 @@ def get_pool_state():
 
 
 def enter_recruit():
+    close_to_main()
     state = get_pool_state()
     if state != "unknown":
         return state
