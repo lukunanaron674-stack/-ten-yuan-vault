@@ -33,18 +33,19 @@ jobs:
           path = Path('09-给674（我）用的库/画画理论/assets/海盗航海_is-a名词素材库/HQ_MANIFEST.json')
           data = json.loads(path.read_text(encoding='utf-8'))
           assert data['asset_count'] == 16, data
-          assert all(x['width'] == 256 and x['height'] == 256 for x in data['assets']), data
-          assert all(x['bytes'] > 15000 for x in data['assets']), data
+          assert all(x['width'] == 224 and x['height'] == 224 for x in data['assets']), data
+          assert all(x['bytes'] > 12000 for x in data['assets']), data
           PY
       - name: Commit HQ JPG assets
         run: |
           git config user.name "canvas-asset-bot"
           git config user.email "canvas-asset-bot@users.noreply.github.com"
+          git rm -f tmp/pirate_hq_sprite_896.jpg || true
           git rm -f tmp/pirate_hq_sprite_1024.jpg || true
           git rm -f tmp/pirate_hq_sprite.b64.part* || true
           git rm -f tmp/pirate_parts_ready || true
           git rm -f scripts/split_pirate_hq_sprite.py
           git rm -f .github/workflows/split-pirate-hq-sprite.yml
           git add "09-给674（我）用的库/画画理论/assets/海盗航海_is-a名词素材库"
-          git commit -m "[hq-assets] replace blurry pirate JPGs with native 256px crops"
+          git commit -m "[hq-assets] replace blurry pirate JPGs with native 224px crops"
           git push origin HEAD:${{ github.event.pull_request.head.ref }}
