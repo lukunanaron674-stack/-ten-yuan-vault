@@ -1,0 +1,49 @@
+name: Build pirate HQ raster assets
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'tmp/pirate_hq_640_ready'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow
+        run: python -m pip install pillow
+      - name: Build HQ pirate JPG assets
+        run: python scripts/build_pirate_hq_640.py
+      - name: Validate output
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('09-给674（我）用的库/画画理论/assets/海盗航海_is-a名词素材库/HQ_MANIFEST.json')
+          data = json.loads(p.read_text(encoding='utf-8'))
+          assert data['source_width'] == 640 and data['source_height'] == 640, data
+          assert data['asset_count'] == 16, data
+          assert all(x['width'] == 160 and x['height'] == 160 for x in data['assets']), data
+          assert all(x['bytes'] > 6000 for x in data['assets']), data
+          PY
+      - name: Commit generated assets
+        run: |
+          git config user.name "canvas-asset-bot"
+          git config user.email "canvas-asset-bot@users.noreply.github.com"
+          git rm -rf tmp/pirate_hq_640_parts tmp/pirate_hq_640_ready tmp/pirate_hq_640.jpg || true
+          git rm -f scripts/build_pirate_hq_640.py
+          git rm -f .github/workflows/build-pirate-hq-640.yml
+          git add "09-给674（我）用的库/画画理论/assets/海盗航海_is-a名词素材库"
+          git commit -m "[hq-assets] replace blurry pirate JPGs with 160px crops"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
