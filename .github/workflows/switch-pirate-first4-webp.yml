@@ -1,0 +1,32 @@
+name: Switch pirate first four to WebP
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  switch:
+    if: ${{ github.head_ref == 'agent/pirate-hq-first-four' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/switch_pirate_first4_to_webp.py
+      - name: Verify WebP files
+        run: |
+          file "09-给674（我）用的库/画画理论/assets/海盗航海_is-a名词素材库/"{n26_黑帆港,n27_雾海沉船湾,n28_海盗酒馆,n29_船长舱}.webp
+          grep -c '\.webp' "09-给674（我）用的库/画画理论/海盗航海_is-a名词素材库.canvas"
+      - name: Commit Canvas references
+        run: |
+          git config user.name "canvas-asset-bot"
+          git config user.email "canvas-asset-bot@users.noreply.github.com"
+          git add "09-给674（我）用的库/画画理论/海盗航海_is-a名词素材库.canvas"
+          git rm scripts/switch_pirate_first4_to_webp.py .github/workflows/switch-pirate-first4-webp.yml
+          git commit -m "[pirate-hq] switch first four Canvas images to WebP"
+          git push origin HEAD:${{ github.head_ref }}
