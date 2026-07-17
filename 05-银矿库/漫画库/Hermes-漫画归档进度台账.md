@@ -1,7 +1,7 @@
-﻿---
+---
 type: progress-log
 status: active
-updated: 2026-07-17T06:59+08:00
+updated: 2026-07-17T16:06+08:00
 workflow: [[Hermes-漫画五大主题整理工单]]
 task_list: [[Hermes-漫画五大主题任务清单]]
 target_total: 499
@@ -17,7 +17,7 @@ first_theme_target: 因果型 zx+nx
 
 | 条件 | 当前值 | 目标值 | 状态 |
 |:----|---:|---:|---|
-| 精修全名单总进度 | 42 | 250 | 活跃 |
+| 精修全名单总进度 | 53 | 250 | 活跃 |
 | 因果型 zx+nx 完整主题 | 0 | 7 | 未开始 |
 | 每 25 条流程记录 | 0 | 25 | 未开始 |
 | DeepSeek 调用次数 | 0 | 越少越好 | 省 token 指标 |
@@ -26,9 +26,9 @@ first_theme_target: 因果型 zx+nx
 
 ## 当前阶段
 
-- 阶段：因果型 7 条、命运型高分4条、本体型高分12项轻筛同步完成，继续本体型A组
+- 阶段：因果型 7 条、命运型高分4条、本体型高分25项、时间型2项轻筛同步完成，继续时间型剩余/源名确认项与维度冲突收紧
 - 当前优先主题：本体型 `zn+x`
-- 当前优先批次：`藤本树短篇集`、`恶魔人`、`ODD TAXI`、`新宝岛`
+- 当前优先批次：本轮完成 `Gachiakuta / ガチアクタ`、`カグライ / カグライ〜神楽と雷人〜`、`蓝眼武士`、`BAYARD` 源名/媒介收紧；下一轮建议处理 `神乐钵 / Kagurabachi`、`極楽街 / Gokurakugai`，或回查 `蓝眼武士 / GQuuuuuuX` 旧库媒介来源
 - 暂停策略：每轮控制 3-5 部；低置信度或双池冲突只写待二审，不 finalized。
 
 ## 因果型试跑台账
@@ -86,6 +86,10 @@ first_theme_target: 因果型 zx+nx
 | 36 | 1 | 28 | Homunculus (ホムンクルス) — 本体型(zn+x)主·命运型(xz+nz)次 推定分析完成 置信82% | draft | 2026-07-09 cron(11)完成；山本英夫(Hideo Yamamoto)作、小学館Big Comic Spirits；15卷166話(2003~2011完)；MAL 83/Pop 70K；核心発見: 钻孔=存在開眼(zn可视化)、「車内永遠の16歳」=nz凝固傷口、山本英夫の作者署名zn+xzを3作跨ぎ確認；典評8.5/10推定級（旧庫91分、典評8.5→建議実読後再評定）；作者十元签名法: 殺手阿一+Voynich酒店+Homunculus 皆zn+xz|
 || 36 | 1 | 29 | Low Tide in Twilight (물가의 밤) — 因果型试跑台账→推定分析完成：因果型(zx+nx)主·命运型(xz+nz)次 置信70% | draft | 2026-07-09 cron(12)完成；BL/Omegaverse/韓国Webtoon；117話(2021.12~2026.01完)；AniList meanScore 76/pop 5846；核心発見: nx債務作为因果引擎、身体的价格化(nx×x的视觉化)、弟弟作为非债务承载点(n)；典評6.8/10（推定級、需実読後二審）
 || 37 | 1 | 30 | Phoenix (火の鳥 / Hi no Tori) — 本体型(zn+x)主·命运型(xz+nz)次 推定分析完成 置信85% | draft | 2026-07-09 cron(13)完成；手塚治虫毕生代表作，16卷134話(1966~1988)；AniList 84/85/Pop 9679；核心発見: zn↔x補對9.0作为叙事引擎(意义给欲望方向，欲望给意义燃料)、容器切换机制作为叙事结构、循环再生型动态链已提取为创作模板；典評9.0/10(推定級，与精选版97分一致)
+| 38 | 4 | 46 | 本体A组4部轻筛：藤本树短篇集、恶魔人、ODD TAXI、新宝岛 | prescreen | 2026-07-17 自动化完成；按用户新口径补十元生克补/动态链候选。藤本树短篇集→本体主·时间次·因果辅；恶魔人→本体主·命运次·因果辅；ODD TAXI→本体主候选·因果次，主次需二审；新宝岛→本体主·时间次·空间辅。不改正式评分、不finalized。 |
+| 39 | 4 | 50 | 本体A组4部轻筛：Jimmy Corrigan、怪医黑杰克、钻石王牌、The Summer Hikaru Died | prescreen | 2026-07-17 自动化完成；按用户新口径补十元生克补/动态链候选。Jimmy Corrigan→本体主·时间次·命运辅；怪医黑杰克→本体主·因果次·命运辅；钻石王牌→本体主候选·时间次·空间辅，主次需二审；The Summer Hikaru Died→本体主·命运次·空间辅。不改正式评分、不finalized。 |
+| 40 | 3 | 53 | 本体/时间收口3部：Toxy Noxy Foresty、20世纪少年、PLUTO；另入队钻石王牌 | prescreen | 2026-07-17 自动化完成；Toxy→本体主候选·空间次·命运辅，源名/实读待二审；20世纪少年→时间主·因果次·命运辅；PLUTO→时间主候选·因果次·本体辅，主次需二审；钻石王牌入维度冲突队列。不改正式评分、不finalized。 |
+| 41 | 4 | 53 | 源名/媒介收紧4项：Gachiakuta、カグライ、蓝眼武士、BAYARD | conflict-sync | 2026-07-17 自动化完成；Gachiakuta/ガチアクタ 与 カグライ/カグライ〜神楽と雷人〜 升为高置信别名+维度冲突；蓝眼武士新增媒介风险队列项；BAYARD 继续短名 source-check。不改评分、不合并作品ID、不finalized。 |
 
 ## 每 25 条复盘记录
 
@@ -492,3 +496,57 @@ first_theme_target: 因果型 zx+nx
 - status: prescreen_done_body_batch_20260717
 - note: 本体型A组4项轻筛；4部同步为预筛完成·待Hermes深分析；镖人在时间页只保留次维证据待二审；累计进度口径从38调为42，不改评分、不finalized。
 
+## status update - 2026-07-17 08:59:00
+
+- manga: Jimmy Corrigan / 怪医黑杰克 / 钻石王牌 / The Summer Hikaru Died
+- status: prescreen_done_body_batch_20260717
+- note: 本体型A组4项轻筛；四部同步为预筛完成，钻石王牌标主次需二审；累计进度口径从46调为50，不改评分、不finalized。
+
+
+## status update - 2026-07-17 09:35:00
+
+- manga: Toxy Noxy Foresty / 20世纪少年 / PLUTO / 钻石王牌
+- status: prescreen_done_and_conflict_queue_20260717
+- note: 三部待标准化已同步主题页、总索引、任务清单、CSV/JSONL；钻石王牌已加入维度冲突队列。不改评分、不finalized。
+
+## status update - 2026-07-17 13:00:00
+
+- manga: MOAN / Junji Ito's Moan
+- status: alias_source_review_20260717
+- note: 公开源名可指向 VIZ `Moan: Junji Ito Story Collection`，但精修全名单未命中 MOAN/Junji 源路径；93/90继续隔离为别名冲突待二审，不合并评分。
+
+## status update - 2026-07-17 13:00:00
+
+- manga: ありす、宇宙までも / ありす宇宙までも
+- status: high_confidence_alias_review_20260717
+- note: 精修全名单有86带顿号与89无标点两条源路径；公开正式题名为 `ありす、宇宙までも`，无标点行按旧批次别名证据处理，不合并评分。
+
+## status update - 2026-07-17 14:06:00
+
+- manga: 魔男のイチ / 魔男伊奇 / Ichi the Witch
+- status: high_confidence_alias_review_20260717
+- note: 公开题名核验支持日文/英文/中文译名为同作簇；96.15/99/92/75/70/6/3各批评分继续隔离，不合并作品ID，低分行作为旧驳回或噪声证据。
+
+## status update - 2026-07-17 14:06:00
+
+- manga: 逃げ上手の若君 / 擅长逃跑的殿下
+- status: ready_to_merge_alias_review_20260717
+- note: 少年Jump官方题名与中文通行译名高置信对应；保留时间型90主、命运型次维，日文13分仅作旧误判样本，不独立计低分。
+
+## status update - 2026-07-17 15:10:00
+
+- manga: Orb / 地。关于地球的运动。 / チ。 / Orb On the Movements of Earth
+- status: high_confidence_alias_review_20260717
+- note: 二次核验后升为高置信别名簇；主条建议仍以地。96分承接，93/92/87作旧批次证据，10分短名作旧驳回证据；不合并评分。
+
+## status update - 2026-07-17 15:10:00
+
+- manga: COSMOS / COSMOS银河金融保险公司 / COSMOS-因果型
+- status: high_confidence_alias_review_20260717
+- note: 公开设定与星际保险公司吻合，高分COSMOS/COSMOS-因果型作为主候选，12/6分保留旧驳回证据；不合并评分。
+
+## status update - 2026-07-17 15:10:00
+
+- manga: Gundam GQuuuuuuX
+- status: media_risk_review_20260717
+- note: 二次核验仍只确认官方动画入口，漫画条目未稳；保留96分原记录但不finalized为漫画正式条目，待旧库来源回查。
