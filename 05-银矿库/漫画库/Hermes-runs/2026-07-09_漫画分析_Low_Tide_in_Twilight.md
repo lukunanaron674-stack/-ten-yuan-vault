@@ -1,21 +1,26 @@
 ---
 type: manga-analysis
-status: draft
+status: historical_superseded
 source: web
 created: 2026-07-09
 title: "Low Tide in Twilight"
 title_ko: 물가의 밤
 title_romaji: Mulgaui Bam
-author: "?? (Korean BL studio, published by Seven Seas Ent.)"
+author: euja
 volumes: null
-chapters: 117 (2021.12~2026.01)
+chapters: null
 genre: BL / Omegaverse / Drama / Psychological
 external_score: AniList meanScore 76 (popularity 5846)
+relation_semantics: superseded_20260719
+metadata_corrected: 2026-07-19
 review_needed: true
 dimension_proposal: 因果型(zx+nx)主 · 命运型(xz+nz)次
 ---
 
 # Low Tide in Twilight (물가의 밤) · 十元推定分析
+
+> [!warning] 历史口径已降权
+> 本文保留作2026-07-09历史证据；作者已更正为euja，旧117话/日期未获本轮权威书目确认，现置空。文中把`nx`解释成债务、把`x`解释成欲望等写法不符合现行十元定义。人物层结论改见[[2026-07-19_主角十元行为分析_第九批3部别名复审]]，不得再据本文直接裁定主角十元或作品归仓。
 
 > **核心前提**：本分析基于 AniList 元数据 + 剧情摘要 + 体裁特征推定，非实际阅读。置信度 **70%**，需用户二审。
 >

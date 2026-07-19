@@ -1,8 +1,10 @@
 ---
 type: manga-analysis
-status: draft
+status: legacy-relation-superseded
 source: web
 created: 2026-07-09
+updated: 2026-07-18T16:09+08:00
+current_review: 2026-07-18_本体旧口径第三批4部关系复审与源范围修正.md
 manga: Homunculus (ホムンクルス)
 manga-english: Homunculus
 author: 山本英夫 (Hideo Yamamoto)
@@ -17,6 +19,9 @@ provisional: false
 ---
 
 # Homunculus · 十元分析
+
+> [!warning] 关系语义降权（2026-07-18）
+> 本卡保留作品事实与历史分析，但正文把压抑欲望直接当 `x`，并混有旧位置关系，不再作为现行生克补依据。当前关系以 [[2026-07-18_本体旧口径第三批4部关系复审与源范围修正]] 为准；91分与评分待二审状态未改。
 
 ## 0. 一句话定义
 
