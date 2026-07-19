@@ -1,7 +1,7 @@
 ---
 type: progress-log
 status: active
-updated: 2026-07-17T16:06+08:00
+updated: 2026-07-19T22:08+08:00
 workflow: [[Hermes-漫画五大主题整理工单]]
 task_list: [[Hermes-漫画五大主题任务清单]]
 target_total: 499
@@ -26,22 +26,22 @@ first_theme_target: 因果型 zx+nx
 
 ## 当前阶段
 
-- 阶段：因果型 7 条、命运型高分4条、本体型高分25项、时间型2项轻筛同步完成，继续时间型剩余/源名确认项与维度冲突收紧
-- 当前优先主题：本体型 `zn+x`
-- 当前优先批次：本轮完成 `Gachiakuta / ガチアクタ`、`カグライ / カグライ〜神楽と雷人〜`、`蓝眼武士`、`BAYARD` 源名/媒介收紧；下一轮建议处理 `神乐钵 / Kagurabachi`、`極楽街 / Gokurakugai`，或回查 `蓝眼武士 / GQuuuuuuX` 旧库媒介来源
+- 阶段：自动化核心已切换为逐部“主角十元 + 具体行为证据”；第十二批累计完成42部独立作品、52位人物对象
+- 当前优先主题：人物层十元行为分析（作品五大主题只作背景）
+- 当前优先批次：本轮完成 `棋魂 / 愚者之夜 / 全知读者视角` 3部、3位人物对象；下一轮优先 `剑豪生死斗 / 镖人 / 泪雨与小夜曲`，或回查本批指定卷次
 - 暂停策略：每轮控制 3-5 部；低置信度或双池冲突只写待二审，不 finalized。
 
 ## 因果型试跑台账
 
 | 状态 | 漫画 | 评分 | DeepSeek | Qwen | Obsidian | 问题记录 |
 |:---|---:|---:|---|---|---|---|
-| 待跑 | Monster | 96 | 未跑 | 未跑 | 未写入 |  |
-| 待跑 | Watchmen | 96 | 未跑 | 未跑 | 未写入 |  |
-| 待跑 | 端脑 | 94 | 未跑 | 未跑 | 未写入 |  |
-| 待跑 | 历史之眼 | 93 | 未跑 | 未跑 | 未写入 |  |
-| 待跑 | MPD Psycho | 92 | 未跑 | 未跑 | 未写入 |  |
-| 待跑 | Low Tide in Twilight | 92 | 未跑 | 未跑 | 未写入 |  |
-| 待跑 | 进击的巨人 | 91 | 未跑 | 未跑 | 未写入 |  |
+| 主角轻筛完成 | Monster | 96 | 旧报告完成 | 未跑 | 人物索引+第五批报告 | 待第1/2/9卷 |
+| 双人物轻筛完成 | Watchmen | 96 | 旧报告完成 | 未跑 | 人物索引+第六批报告 | Ozymandias/Rorschach已拆分；待第11—12章 |
+| 主角轻筛完成 | 端脑 | 94 | 旧报告完成 | 旧压缩完成 | 人物索引+第八批报告 | 待关卡话次复核 |
+| 主角轻筛完成 | 历史之眼 | 93 | 旧报告完成 | 旧压缩完成 | 人物索引+第八批报告 | 旧“杨”已纠错；待卷次 |
+| 双人格轻筛完成 | MPD Psycho | 92 | 旧报告完成 | 旧压缩完成 | 人物索引+第八批报告 | 共享身体分层；待第1—2卷 |
+| 双主角轻筛完成 | Low Tide in Twilight | 92 | 旧报告完成 | 旧压缩完成 | 人物索引+第九批报告 | 金懿玄/吕太洲已拆分；别名/维度待二审 |
+| 主角轻筛完成 | 进击的巨人 | 91 | 旧报告完成 | 未跑 | 人物索引+第六批报告 | 待第30—31卷 |
 
 ## 总进度记录
 
@@ -550,3 +550,93 @@ first_theme_target: 因果型 zx+nx
 - manga: Gundam GQuuuuuuX
 - status: media_risk_review_20260717
 - note: 二次核验仍只确认官方动画入口，漫画条目未稳；保留96分原记录但不finalized为漫画正式条目，待旧库来源回查。
+
+## status update - 2026-07-18 14:02:00
+
+- manga: BLUE GIANT / 灌篮高手 / Vagabond / 浪客行 / Maus
+- status: codex_relation_prescreen_done_20260718
+- note: 按 `十元生补克表 v2.0` 与 `x/xn/z` 最新口径重做本体S级4部关系轻筛；删除摘要中的 `x=欲望` 解释，灌篮高手旧 `z克xn` 降为历史证据；Vagabond/浪客行加入高置信别名队列。保留100/98/98/96/97分，不finalized、不合并作品ID。
+
+## status update - 2026-07-18 15:08:00
+
+- manga: 链锯人 / 地。关于地球的运动。 / 晚安Punpun / Goodnight Punpun / 迷宫饭
+- status: codex_relation_prescreen_done_20260718_batch2
+- note: 按新版 `x=具体归属/掌握边界` 重做本体S级第二批4部关系轻筛；链锯人改为控制/归属链，地。改为手稿/数据掌握与传承链，晚安Punpun改为厄运侵蚀与病理性占有链；迷宫饭旧“吞噬空间=本体欲望”依据失效，新增本体/空间 dimension-conflict 待二审。保留96/96/95/91/94分，不改正式主维字段、不合并作品ID。
+
+## status update - 2026-07-18 16:09:00
+
+- manga: 火鸟 / 藤本树短篇集 / Homunculus / 本なら売るほど / 十月堂译名簇
+- status: codex_relation_reanalysis_done_20260718_batch3
+- note: 继续清理旧`x=欲望/执念`口径：火鸟改为永生资源掌握链；Homunculus改为车/脸/身体/身份掌握链；藤本树短篇集新增17–21/22–26 collection-scope源范围待二审；本なら纠正官方作者为児島青，旧`n生x`作废，十月堂簇升为high-confidence-alias + dimension-conflict。保留97/93/91及十月堂/本なら全部多批评分，不拆分、不合并、不改正式主仓。
+
+## status update - 2026-07-18 17:03:00
+
+- manga: BLUE GIANT / 灌篮高手 / 链锯人 / Vagabond / 浪客行
+- status: protagonist_tenyuan_behavior_batch1_done_20260718
+- note: 自动化改版后的主角人物层第一批。宫本大主zn次zx；樱木花道前期z、后期zn上升、次zx；电次主nx次zx、nz辅助；宫本武藏前中期zx+xz、吉冈战后zn上升。每位主角已提炼5-6条“触发→行动→对象→结果”行为并建立独立主角索引；作品主题与人物十元分开。保留100/98/96/98/96评分，不改归仓，Vagabond/浪客行只计一次人物分析且不合并评分。
+
+## status update - 2026-07-18 18:06:00
+
+- manga: 迷宫饭 / Homunculus / 怪医黑杰克 / 恶魔人
+- status: protagonist_tenyuan_behavior_batch2_done_20260718
+- note: 主角人物层第二批。莱欧斯主xn次x、nz辅助；名越进主x次xz、zn辅助；间黑男主zn次x、zx执行；不动明主zn次zx、x功能。每位主角已提炼5-6条“触发→行动→对象→结果”证据，并区分跨卷书目轻筛、跨单元轻筛与待原卷验证。保留94/91/91/93评分，不改作品主仓；迷宫饭本体/空间冲突、Homunculus评分二审继续保留。
+
+## status update - 2026-07-18 20:00:00
+
+- manga: 晚安Punpun / Goodnight Punpun / ODD TAXI / 钻石王牌 / PLUTO
+- status: protagonist_tenyuan_behavior_batch3_done_20260718
+- note: 主角人物层第三批共4个独立作品对象。Punpun主z次nx，Goodnight/Oyasumi别名只计一次；小户川主n次xn，漫画第3—5卷待原卷验证；泽村荣纯主z次zx；盖吉希特第1—6卷主xn次zn，第7—8卷阿童木终局动作另计。每位提炼5—6条“触发→行动→对象→结果”证据并写入主角索引。保留95/91/92/91/93评分，不改正式归仓；别名、媒介范围与作品维度冲突继续挂二审。
+
+## status update - 2026-07-18 22:00:00
+
+- manga: Jimmy Corrigan / 20世纪少年 / The Summer Hikaru Died / 光逝去的夏天 / Blue Box / 青之箱
+- status: protagonist_tenyuan_behavior_batch4_done_20260718
+- note: 主角人物层第四批共4个独立作品、5位人物、30条“触发→行动→对象→结果”证据。成年Jimmy主nx次z；远藤贤知主zn次xn；辻中佳纪主nz次xn；“光”主x并z次z；猪股大喜主z次xn候选。The Summer Hikaru Died/光逝去的夏天与Blue Box/青之箱均按同作只计一次人物分析；保留91/92/90/95/92评分，不改正式归仓，前者90/95评分及本体/命运主维冲突新增待二审。
+
+## status update - 2026-07-19 14:42:00
+
+- manga: MONSTER / BILLY BAT / 炎拳 / 蓝色时期
+- status: protagonist_tenyuan_behavior_batch5_done_20260719
+- note: 主角人物层第五批共4个独立作品、4位人物、24条“触发→行动→对象→结果”证据。天马贤三主zn95%次n92%，旧nx+xz卡降权；Kevin Yamagata主nx93%次xn90%，群像角色不混入；Agni主nz90%次nx86%，xz记身体状态；矢口八虎主xn94%次z89%，zn上升。MONSTER保留96分及作品因果主维；BILLY BAT/蓝色时期不补评分；炎拳旧本体96来源待回查，不恢复正式主条；不改最终归仓或理论页。
+
+## status update - 2026-07-19 15:43:00
+
+- manga: WATCHMEN / 进击的巨人 / Vinland Saga / 宝石之国
+- status: protagonist_tenyuan_behavior_batch6_done_20260719
+- note: 主角人物层第六批共4个独立作品、5位人物、30条“触发→行动→对象→结果”证据。Ozymandias主xn97%次x94%，Rorschach主zn96%次xn90%，旧zx/nx人物配对降权；Eren主zn94%次zx92%，xn为计划功能、晚期x锁始祖/墙中巨人掌握；Thorfinn早zx92%迁移至后期zn95%+xn91%；Phos早z92%迁移至后期xn92%。保留WATCHMEN 96、进击91、Vinland 93证据与作品主维，不给宝石之国补评分，不改归仓或理论。
+
+## status update - 2026-07-19 16:44:00
+
+- manga: Maus / 地。关于地球的运动。 / Orb / 火鸟·凤凰篇
+- status: protagonist_tenyuan_behavior_batch7_group_done_20260719
+- note: 群像/接力第七批共3个独立作品、7位人物、35条“触发→行动→对象→结果”证据。Maus拆Art主xn94%次zn90%、Vladek主xn96%次x94%；地。拆Rafal主zn95%、Oczy早nx91%转后zn候选90%、Badeni主xn96%次zn92%；火鸟只取凤凰篇，我王早zx94%迁移后zn95%，茜丸主z94%次xn92%。保留97/96/97分，Orb/チ。评分继续隔离，不改作品主维、归仓或理论。
+
+## status update - 2026-07-19 17:44:00
+
+- manga: 端脑 / 历史之眼 / MPD Psycho
+- status: protagonist_tenyuan_behavior_batch8_causal_done_20260719
+- note: 因果高分第八批共3部独立作品、4个人物/人格对象、19条“触发→行动→对象→结果”证据。夏驰主xn91%次zx87%；欧迈尼斯主xn96%次n90%，旧“杨”人名错误已纠正；MPD共享身体分层，雨宫一彦主xn94%次zn88%，西园伸二主zx候选86%次x候选82%，小林前史不混算。保留94/93/92分及作品主维，不改最终归仓或理论；跨人格关系待第1—2卷。
+
+## status update - 2026-07-19 18:45:00
+
+- manga: Low Tide in Twilight / 水边之夜 / 水邊之夜 / 물가의 밤 / 排球少年 / Haikyu!! / 蓦然回首 / Look Back
+- status: protagonist_tenyuan_behavior_batch9_alias_review_done_20260719
+- note: 第九批共3部独立作品、5位人物、25条“触发→行动→对象→结果”证据。Low Tide拆金懿玄主nx候选88%次nz86%、吕太洲主x94%次zx86%，旧债务=nx报告降权；日向翔阳主zn95%次xn93%；蓦然回首拆藤野早z→后zn候选与京本主z94%。同步Low Tide四语别名及Look Back 96/94/85.4评分冲突，只登记不合并；保留92/96/96正式评分与作品主维，不改归仓或理论。
+
+## status update - 2026-07-19 19:47:00
+
+- manga: 花牌情缘 / Chihayafuru / ちはやふる / 拉面发现传 / ラーメン発見伝 / 神之水滴 / 神の雫 / The Drops of God
+- status: protagonist_tenyuan_behavior_batch10_highscore_done_20260719
+- note: 第十批共3部独立作品、3位人物、18条“触发→行动→对象→结果”证据。绫濑千早主z95%次xn93%，训练/预选经xn补z指向女王位置；藤本浩平主xn96%次z91%，配方/营业/比赛链使作品空间主位新增dimension-conflict但不改92分；神咲雫主n97%次xn93%，感官/诗性输入经n生xn成为使徒识别链。保留95/92/90分、作品主维与归仓，不改理论。
+
+## status update - 2026-07-19 20:48:00
+
+- manga: 葬送的芙莉莲 / 葬送のフリーレン / Frieren: Beyond Journey's End / 孤独的美食家 / 孤独のグルメ / 神之山岭 / 神々の山嶺
+- status: protagonist_tenyuan_behavior_batch11_travel_mountain_done_20260719
+- note: 第十一批共3部独立作品、4位人物、22条“触发→行动→对象→结果”证据。芙莉莲主nz95%次n92%，寿命错位只记xz时间状态；井之头五郎主n97%次zn91%，餐馆/菜品x并z与人物分层；深町诚主xn96%次n92%，羽生丈二主zn97%次zx93%，双主角不硬套作品zx+nx公式。芙莉莲96/95/旧源文件名88已入评分来源复审队列；保留作品评分、主维、归仓和官方理论不变。
+
+## status update - 2026-07-19 22:08:00
+
+- manga: 棋魂 / Hikaru no Go / 愚者之夜 / Fool Night / 全知读者视角 / Omniscient Reader's Viewpoint / ORV
+- status: protagonist_tenyuan_behavior_batch12_reader_remaining_life_done_20260719
+- note: 第十二批共3部独立作品、3位人物、18条“触发→行动→对象→结果”证据。进藤光前中期主z95%、后期zn迁移候选94%，次xn92%；托士郎主n95%次zn93%，xz只记转花身体/倒计时状态；金独子主xn97%次zn94%，x只限独家情报/奖励资源。ORV 93/73.3已入评分别名/来源范围复审队列；`千与千寻 / 少女终末旅行`因未命中漫画库正式条目从下一批建议移除，不新建库外条目；不改评分、主维、归仓或理论。

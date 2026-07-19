@@ -1,8 +1,10 @@
 ---
 type: manga-analysis
-status: draft
+status: legacy-relation-superseded
 source: web
 created: 2026-07-09
+updated: 2026-07-18T16:09+08:00
+current_review: 2026-07-18_本体旧口径第三批4部关系复审与源范围修正.md
 analysis_type: hermes-draft
 manga: 火の鳥 (Hi no Tori / Phoenix)
 author: 手塚治虫 (Osamu Tezuka)
@@ -17,6 +19,9 @@ review_needed: false
 ---
 
 # 火の鳥 (Phoenix) · 十元分析
+
+> [!warning] 关系语义降权（2026-07-18）
+> 本卡保留作品事实与历史分析，但正文使用旧 `x=欲望` 及若干旧关系解释，不再作为现行生克补依据。当前关系以 [[2026-07-18_本体旧口径第三批4部关系复审与源范围修正]] 为准；97分与本体主导航未改。
 
 ## Basic Info
 
