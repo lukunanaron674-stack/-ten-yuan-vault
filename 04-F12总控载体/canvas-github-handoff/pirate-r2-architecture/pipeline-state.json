@@ -1,28 +1,29 @@
 {
-  "schemaVersion": "1.1",
+  "schemaVersion": "1.2",
   "project": "pirate-r2-architecture",
   "planId": "canvas-hourly-is-a-image-pipeline",
   "transport": "github",
   "branch": "codex/pirate-r2-architecture-github",
-  "phase": "P2",
-  "status": "waiting_for_f12_bridge",
-  "currentBoard": "B",
+  "phase": "P3",
+  "status": "ready",
+  "currentBoard": "C",
   "completedBoards": [
-    "A"
+    "A",
+    "B"
   ],
   "retryCount": 0,
-  "lastHeartbeat": "2026-07-22T01:01:12+08:00",
+  "lastHeartbeat": "2026-07-22T02:22:29+08:00",
   "lastError": null,
-  "nextAction": "Keep Board A locked. When the external F12 local bridge is online, generate Board B once, export the original image, validate dimensions/size/SHA-256, commit and push, then advance to P3 only after GitHub remote readback.",
+  "nextAction": "Keep Boards A and B locked. Generate Board C once, export the original image, validate dimensions/size/SHA-256, commit and push, then advance to P4 only after GitHub remote readback.",
   "lastArtifact": {
-    "fileName": "pirate-r2-architecture_board_A.png",
+    "fileName": "pirate-r2-architecture_board_B.png",
     "mimeType": "image/png",
     "width": 1254,
     "height": 1254,
-    "size": 2653777,
-    "sha256": "0F4A01CC5C50E5872ACC5F304F267B736BAF5AF0ED846D5106B9D2E06A0978F6",
+    "size": 2496268,
+    "sha256": "1540B6E24591A03563BBC32BF85B19CD3802F6959D25D143EF49D8B0B9D1BF2A",
     "source": "ChatGPT page export via Ten Yuan F12 Local Bridge",
-    "verifiedCommit": "0faf8d80d4480f26e7ed2e89389de40399829e81"
+    "verifiedCommit": null
   },
   "boardSpecs": {
     "B": [
@@ -66,5 +67,5 @@
     "driveConnector": "retired_after_407",
     "stateSource": "github_pipeline_state"
   },
-  "updatedAt": "2026-07-22T01:01:12+08:00"
+  "updatedAt": "2026-07-22T02:22:29+08:00"
 }
