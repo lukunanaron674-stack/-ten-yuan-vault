@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "project": "pirate-r2-architecture",
+  "transport": "github",
+  "phase": "P2",
+  "status": "ready",
+  "currentBoard": "B",
+  "completedBoards": [
+    "A"
+  ],
+  "lastArtifact": {
+    "fileName": "pirate-r2-architecture_board_A.png",
+    "mimeType": "image/png",
+    "width": 1254,
+    "height": 1254,
+    "size": 2653777,
+    "sha256": "0F4A01CC5C50E5872ACC5F304F267B736BAF5AF0ED846D5106B9D2E06A0978F6",
+    "source": "ChatGPT page export via Ten Yuan F12 Local Bridge"
+  },
+  "handoff": {
+    "mode": "chatgpt_to_f12_to_git",
+    "driveConnector": "unavailable_407",
+    "nextAction": "Generate board B, export the latest original image, commit it, then advance to P3 only after GitHub readback."
+  },
+  "updatedAt": "2026-07-22T00:19:14+08:00"
+}
