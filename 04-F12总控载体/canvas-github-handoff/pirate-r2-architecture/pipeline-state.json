@@ -1,13 +1,19 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "project": "pirate-r2-architecture",
+  "planId": "canvas-hourly-is-a-image-pipeline",
   "transport": "github",
+  "branch": "codex/pirate-r2-architecture-github",
   "phase": "P2",
-  "status": "ready",
+  "status": "waiting_for_f12_bridge",
   "currentBoard": "B",
   "completedBoards": [
     "A"
   ],
+  "retryCount": 0,
+  "lastHeartbeat": "2026-07-22T01:01:12+08:00",
+  "lastError": null,
+  "nextAction": "Keep Board A locked. When the external F12 local bridge is online, generate Board B once, export the original image, validate dimensions/size/SHA-256, commit and push, then advance to P3 only after GitHub remote readback.",
   "lastArtifact": {
     "fileName": "pirate-r2-architecture_board_A.png",
     "mimeType": "image/png",
@@ -15,12 +21,50 @@
     "height": 1254,
     "size": 2653777,
     "sha256": "0F4A01CC5C50E5872ACC5F304F267B736BAF5AF0ED846D5106B9D2E06A0978F6",
-    "source": "ChatGPT page export via Ten Yuan F12 Local Bridge"
+    "source": "ChatGPT page export via Ten Yuan F12 Local Bridge",
+    "verifiedCommit": "0faf8d80d4480f26e7ed2e89389de40399829e81"
+  },
+  "boardSpecs": {
+    "B": [
+      {"canvasNode": "n30", "name": "诅咒海峡"},
+      {"canvasNode": "n31", "name": "宝藏岛洞穴"},
+      {"canvasNode": "n33", "name": "黑帆港废墟"},
+      {"canvasNode": "n34", "name": "黑帆港圣所"}
+    ],
+    "C": [
+      {"canvasNode": "n35", "name": "黑帆港大厅"},
+      {"canvasNode": "n36", "name": "黑帆港回廊"},
+      {"canvasNode": "n60", "name": "粗麻缆绳"},
+      {"canvasNode": "n61", "name": "铁锚"}
+    ],
+    "D": [
+      {"canvasNode": "n62", "name": "舰炮"},
+      {"canvasNode": "n65", "name": "望远镜"},
+      {"canvasNode": "n66", "name": "指南针"},
+      {"canvasNode": "n67", "name": "藏宝图"}
+    ]
+  },
+  "heartbeatEvents": [
+    "generation_started",
+    "export_completed",
+    "commit_completed",
+    "push_completed",
+    "remote_readback_completed",
+    "phase_advanced"
+  ],
+  "recoveryPolicy": {
+    "serialBoards": true,
+    "maxBoardsPerHour": 4,
+    "maxNounsPerHour": 16,
+    "neverRegenerateVerifiedBoard": true,
+    "advanceOnlyAfterGitHubReadback": true,
+    "stopOnFailure": true,
+    "requiresExternalF12BridgeForExport": true
   },
   "handoff": {
     "mode": "chatgpt_to_f12_to_git",
-    "driveConnector": "unavailable_407",
-    "nextAction": "Generate board B, export the latest original image, commit it, then advance to P3 only after GitHub readback."
+    "driveConnector": "retired_after_407",
+    "stateSource": "github_pipeline_state"
   },
-  "updatedAt": "2026-07-22T00:19:14+08:00"
+  "updatedAt": "2026-07-22T01:01:12+08:00"
 }
