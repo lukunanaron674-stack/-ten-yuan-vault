@@ -5,16 +5,16 @@
   "transport": "github",
   "branch": "codex/pirate-r2-architecture-github",
   "phase": "P3",
-  "status": "ready",
+  "status": "waiting_for_f12_bridge",
   "currentBoard": "C",
   "completedBoards": [
     "A",
     "B"
   ],
   "retryCount": 0,
-  "lastHeartbeat": "2026-07-22T02:22:29+08:00",
+  "lastHeartbeat": "2026-07-22T03:00:08+08:00",
   "lastError": null,
-  "nextAction": "Keep Boards A and B locked. Generate Board C once, export the original image, validate dimensions/size/SHA-256, commit and push, then advance to P4 only after GitHub remote readback.",
+  "nextAction": "Keep Boards A and B locked. Wait until the external F12 local bridge is confirmed online, then generate Board C once, export the original image, validate dimensions/size/SHA-256, commit and push, and advance to P4 only after GitHub remote readback.",
   "lastArtifact": {
     "fileName": "pirate-r2-architecture_board_B.png",
     "mimeType": "image/png",
@@ -23,7 +23,8 @@
     "size": 2496268,
     "sha256": "1540B6E24591A03563BBC32BF85B19CD3802F6959D25D143EF49D8B0B9D1BF2A",
     "source": "ChatGPT page export via Ten Yuan F12 Local Bridge",
-    "verifiedCommit": null
+    "verifiedCommit": null,
+    "remoteBlobSha": "814bfac25f7aa989080a14b5f51faa6f047e5d62"
   },
   "boardSpecs": {
     "B": [
@@ -67,5 +68,5 @@
     "driveConnector": "retired_after_407",
     "stateSource": "github_pipeline_state"
   },
-  "updatedAt": "2026-07-22T02:22:29+08:00"
+  "updatedAt": "2026-07-22T03:00:08+08:00"
 }
