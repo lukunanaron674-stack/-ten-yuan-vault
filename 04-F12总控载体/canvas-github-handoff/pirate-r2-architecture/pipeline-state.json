@@ -4,7 +4,7 @@
   "planId": "canvas-hourly-is-a-image-pipeline",
   "transport": "github",
   "branch": "codex/pirate-r2-architecture-github",
-  "hour": "2026-07-22T15:00:00+08:00",
+  "hour": "2026-07-22T20:00:00+08:00",
   "board": "C",
   "phase": "P3",
   "status": "waiting_for_f12_bridge",
@@ -14,7 +14,7 @@
     "B"
   ],
   "retryCount": 0,
-  "lastHeartbeat": "2026-07-22T15:59:21+08:00",
+  "lastHeartbeat": "2026-07-22T20:01:32+08:00",
   "lastError": null,
   "nextAction": "Keep Boards A and B locked. Wait until the external F12 local bridge is confirmed online, then generate Board C once, export the original image, validate dimensions/size/SHA-256, commit and push, and advance to P4 only after GitHub remote readback.",
   "lastArtifact": {
@@ -70,5 +70,5 @@
     "driveConnector": "retired_after_407",
     "stateSource": "github_pipeline_state"
   },
-  "updatedAt": "2026-07-22T15:59:21+08:00"
+  "updatedAt": "2026-07-22T20:01:32+08:00"
 }
