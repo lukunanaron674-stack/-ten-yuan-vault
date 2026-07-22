@@ -21,9 +21,12 @@ starting main SHA
 mandatory preflight file version
 十元生补克表 version
 target relation status: locked / 语义待验收 / not separately explained
+previous hourly conclusion and next relation
 ```
 
 If the mandatory preflight file and current relation table were not read, the theory task has not started and no theory conclusion may be committed.
+
+For the hourly theory automation, the mandatory preflight file is a mutable rolling progress hub, not a read-only checklist. Every hourly run must update its version, last run, relation-table version, latest relation result, evidence gap, and next relation. A run that only updates the hourly ledger but does not write back the rolling hub is incomplete.
 
 ## Theory Red Lines
 
@@ -37,6 +40,8 @@ If the mandatory preflight file and current relation table were not read, the th
 8. Separate stable identity, current state, behavior function, light, scene, time relation, relation position, manifestation, and dynamic chain.
 9. Old film cards, visual cards, and case cards are evidence sources, not default theory work.
 10. Repository hierarchy, old-draft coverage, and index cleanup belong to the independent governance task.
+11. No new evidence means update the rolling hub's evidence gap and next target briefly; do not regenerate a full duplicate audit.
+12. Every hourly theory run must close the loop: read rolling hub → audit one relation → update canon or evidence gap → write back rolling hub → update canonical ledger → verify commits.
 
 ## Safety Rules
 
