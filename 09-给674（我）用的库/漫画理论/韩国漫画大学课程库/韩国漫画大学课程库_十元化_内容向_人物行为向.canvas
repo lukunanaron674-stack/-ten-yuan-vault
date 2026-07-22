@@ -57,7 +57,7 @@
 		{"id":"e0000001","fromNode":"rootc001","fromSide":"bottom","toNode":"indexc01","toSide":"top","label":"进入课程库"},
 		{"id":"e0000002","fromNode":"indexc01","fromSide":"bottom","toNode":"tenmap01","toSide":"top","label":"共同编码"},
 		{"id":"e0000003","fromNode":"tenmap01","fromSide":"left","toNode":"contentIntro","toSide":"right","color":"3","label":"内容向"},
-		{"id":"e0000004","fromNode":"tenmap01","fromSide":"right","toNode":"behaviorIntro","toSide":"left","color":"1","label":"人物行为向"},
+		{"id":"e0000004","fromFloating":false,"fromNode":"tenmap01","fromSide":"right","toNode":"behaviorIntro","toSide":"left","color":"1","label":"人物行为向"},
 		{"id":"e0000005","fromNode":"contentIntro","fromSide":"bottom","toNode":"ct_x","toSide":"top","color":"3"},
 		{"id":"e0000006","fromNode":"contentIntro","fromSide":"bottom","toNode":"ct_z","toSide":"top","color":"3"},
 		{"id":"e0000007","fromNode":"contentIntro","fromSide":"bottom","toNode":"ct_n","toSide":"top","color":"3"},
