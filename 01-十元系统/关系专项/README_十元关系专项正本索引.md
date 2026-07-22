@@ -1,8 +1,8 @@
 ---
 type: relation-canonical-index
 status: current
-version: v1.2
-updated: 2026-07-22T21:32:52+08:00
+version: v1.3
+updated: 2026-07-22T22:29:49+08:00
 system: 十元
 is_a: 字典或总表
 parent: 07-Codex大脑库/Codex大脑总入口.md#当前语义优先级
@@ -61,6 +61,7 @@ priority: canonical-relation-routing
 - `zx补nx_总词典旧暗线口径撤回与正式机制同步补丁_20260721.md`
 - `nz克x_总词典旧失败案例撤回与正式机制同步补丁_20260721.md`
 - `x克nz_总词典与核心摘要待同步补丁_20260721.md`
+- `zn克xn_总词典旧革命击穿口径撤回与正式机制同步补丁_20260721.md`
 
 ## 4. 仍需逐条核验的活动补丁
 
@@ -69,7 +70,6 @@ priority: canonical-relation-routing
 - `zn补x_总词典旧危险深渊口径撤回与正式机制同步补丁_20260721.md`
 - `n补x并z_核心摘要与总词典旧建筑比喻撤回同步补丁_20260721.md`
 - `x并z克nz_总词典旧太太团口径撤回与正式机制同步补丁_20260721.md`
-- `zn克xn_总词典旧革命击穿口径撤回与正式机制同步补丁_20260721.md`
 
 ## 5. 审计路由
 
