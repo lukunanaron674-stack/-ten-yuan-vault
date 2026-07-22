@@ -1,7 +1,7 @@
 ---
 type: progress-log
 status: active
-updated: 2026-07-23T06:25+08:00
+updated: 2026-07-23T07:26+08:00
 workflow: [[Hermes-漫画五大主题整理工单]]
 task_list: [[Hermes-漫画五大主题任务清单]]
 target_total: 499
@@ -28,7 +28,7 @@ first_theme_target: 因果型 zx+nx
 
 - 阶段：自动化核心已切换为“先穷举具体行为，再逐条唯一归类十元”；人物索引累计75部独立作品、96位人物对象
 - 当前优先主题：人物层十元行为分析（作品五大主题只作背景）
-- 当前优先批次：本轮完成 `BILLY BAT / Jimmy Corrigan / Vinland Saga` 3部、3位人物、19条动作；下一轮处理旧第六批剩余`WATCHMEN / 进击的巨人 / 宝石之国`
+- 当前优先批次：本轮完成 `WATCHMEN / 进击的巨人 / 宝石之国` 3部、4位人物、34条动作；旧第一至第六批“行为总结/单条多标签”清理闭合，下一轮转`Maus / 地。关于地球的运动。 / 火鸟`群像拆分
 - 暂停策略：每轮控制 3-5 部；低置信度或双池冲突只写待二审，不 finalized。
 
 ## 因果型试跑台账
@@ -36,12 +36,13 @@ first_theme_target: 因果型 zx+nx
 | 状态 | 漫画 | 评分 | DeepSeek | Qwen | Obsidian | 问题记录 |
 |:---|---:|---:|---|---|---|---|
 | 主角公开行为穷举复核完成 | Monster | 96 | 旧报告完成 | 未跑 | 人物索引+第三十七批报告 | 9条唯一归类；待完全版原卷页码 |
-| 双人物轻筛完成 | Watchmen | 96 | 旧报告完成 | 未跑 | 人物索引+第六批报告 | Ozymandias/Rorschach已拆分；待第11—12章 |
+| 双人物行为穷举复核完成 | Watchmen | 96 | 旧报告完成 | 未跑 | 人物索引+第三十九批报告 | Ozymandias 8条、Rorschach 9条唯一归类；待第1—12章原页 |
 | 主角轻筛完成 | 端脑 | 94 | 旧报告完成 | 旧压缩完成 | 人物索引+第八批报告 | 待关卡话次复核 |
 | 主角轻筛完成 | 历史之眼 | 93 | 旧报告完成 | 旧压缩完成 | 人物索引+第八批报告 | 旧“杨”已纠错；待卷次 |
 | 双人格轻筛完成 | MPD Psycho | 92 | 旧报告完成 | 旧压缩完成 | 人物索引+第八批报告 | 共享身体分层；待第1—2卷 |
 | 双主角轻筛完成 | Low Tide in Twilight | 92 | 旧报告完成 | 旧压缩完成 | 人物索引+第九批报告 | 金懿玄/吕太洲已拆分；别名/维度待二审 |
-| 主角轻筛完成 | 进击的巨人 | 91 | 旧报告完成 | 未跑 | 人物索引+第六批报告 | 待第30—31卷 |
+| 主角行为穷举复核完成 | 进击的巨人 | 91 | 旧报告完成 | 未跑 | 人物索引+第三十九批报告 | Eren 7条唯一归类；待第25—26、31、34卷原页 |
+| 主角行为穷举复核完成 | 宝石之国 | — | 旧报告完成 | 未跑 | 人物索引+第三十九批报告 | Phos 10条唯一归类；待第1—12卷指定原页 |
 
 ## 总进度记录
 
@@ -794,3 +795,9 @@ first_theme_target: 因果型 zx+nx
 - manga: BILLY BAT / Billy Bat / Jimmy Corrigan / Vinland Saga / 冰海战记
 - status: protagonist_tenyuan_behavior_enumeration_batch38_old_summary_reaudit_20260723
 - note: 第三十八批把旧第四批剩余Jimmy、旧第五批剩余BILLY BAT及旧第六批Vinland Saga收紧为19条“具体行为→下一行唯一归类”。Kevin Yamagata 5条（`nx`3/`xn`2），主`nx`94%候选、次`xn`92%候选，保留旧主次方向但撤回单条多标签与第7卷未确认主动牺牲动作；成年Jimmy 5条（`nx`3/未判2），主`nx`95%候选、次未判，旧次`z`撤回，遮嘴与幻想不硬判；Thorfinn 9条（`xn`4/`zx/nx/zn/n`各1/未判1），主`xn`95%候选、次未判，旧“早`zx`→后`zn`”主位迁移及`zn生n`候选撤回。旧第四、第五批已完全历史化；旧第六批仅余WATCHMEN、进击的巨人、宝石之国。累计仍75部、96人。未改Jimmy 91分、Vinland 93分、BILLY BAT无评分状态、作品主维、归仓、作品ID、同名队列或理论。
+
+## status update - 2026-07-23 07:26:00
+
+- manga: WATCHMEN / Watchmen / 进击的巨人 / Attack on Titan / 宝石之国 / Land of the Lustrous
+- status: protagonist_tenyuan_behavior_enumeration_batch39_old_summary_reaudit_20260723
+- note: 第三十九批完成旧第六批剩余3部、4位人物、34条“具体行为→下一行唯一归类”。Ozymandias 8条（`xn`3/`zx`2/`x并z`2/`x`1），主`xn`97%候选、次未判，旧次`x`撤回，登记`xn克zx`95%候选；Rorschach 9条（`xn`5/`zn`2/`n/zx`各1），主`xn`96%候选、次`zn`95%，旧主`zn`下调，登记`zn克xn`94%候选；Eren 7条（`zx`3/`xn`2/`zn/x`各1），主`zx`97%候选、次`xn`95%，旧主`zn`撤回，不登记关系；Phos 10条（`nx`3/`xn`3/`zx`2/`nz`1/未判1），全局主`xn`94%候选、次`nx`93%，阶段早`nx`—中`xn`—晚`zx`，旧前期`z`撤回，仅留第8卷`xn克zx`92%阶段候选。旧第六批完全历史化，旧第一至第六批旧口径清理闭合；累计仍75部、96人。未改WATCHMEN 96分、进击91分、宝石之国无机器评分状态、作品主维、归仓、作品ID、同名队列或理论。
