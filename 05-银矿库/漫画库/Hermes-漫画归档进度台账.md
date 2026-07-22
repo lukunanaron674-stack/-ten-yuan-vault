@@ -1,7 +1,7 @@
 ---
 type: progress-log
 status: active
-updated: 2026-07-19T22:08+08:00
+updated: 2026-07-23T05:18+08:00
 workflow: [[Hermes-漫画五大主题整理工单]]
 task_list: [[Hermes-漫画五大主题任务清单]]
 target_total: 499
@@ -26,16 +26,16 @@ first_theme_target: 因果型 zx+nx
 
 ## 当前阶段
 
-- 阶段：自动化核心已切换为逐部“主角十元 + 具体行为证据”；第十二批累计完成42部独立作品、52位人物对象
+- 阶段：自动化核心已切换为“先穷举具体行为，再逐条唯一归类十元”；人物索引累计75部独立作品、96位人物对象
 - 当前优先主题：人物层十元行为分析（作品五大主题只作背景）
-- 当前优先批次：本轮完成 `棋魂 / 愚者之夜 / 全知读者视角` 3部、3位人物对象；下一轮优先 `剑豪生死斗 / 镖人 / 泪雨与小夜曲`，或回查本批指定卷次
+- 当前优先批次：本轮完成 `MONSTER / 炎拳 / 蓝色时期` 3部、3位人物、26条动作；下一轮优先旧第五批剩余`BILLY BAT`，群像边界不足时转`Jimmy Corrigan`
 - 暂停策略：每轮控制 3-5 部；低置信度或双池冲突只写待二审，不 finalized。
 
 ## 因果型试跑台账
 
 | 状态 | 漫画 | 评分 | DeepSeek | Qwen | Obsidian | 问题记录 |
 |:---|---:|---:|---|---|---|---|
-| 主角轻筛完成 | Monster | 96 | 旧报告完成 | 未跑 | 人物索引+第五批报告 | 待第1/2/9卷 |
+| 主角公开行为穷举复核完成 | Monster | 96 | 旧报告完成 | 未跑 | 人物索引+第三十七批报告 | 9条唯一归类；待完全版原卷页码 |
 | 双人物轻筛完成 | Watchmen | 96 | 旧报告完成 | 未跑 | 人物索引+第六批报告 | Ozymandias/Rorschach已拆分；待第11—12章 |
 | 主角轻筛完成 | 端脑 | 94 | 旧报告完成 | 旧压缩完成 | 人物索引+第八批报告 | 待关卡话次复核 |
 | 主角轻筛完成 | 历史之眼 | 93 | 旧报告完成 | 旧压缩完成 | 人物索引+第八批报告 | 旧“杨”已纠错；待卷次 |
@@ -640,3 +640,151 @@ first_theme_target: 因果型 zx+nx
 - manga: 棋魂 / Hikaru no Go / 愚者之夜 / Fool Night / 全知读者视角 / Omniscient Reader's Viewpoint / ORV
 - status: protagonist_tenyuan_behavior_batch12_reader_remaining_life_done_20260719
 - note: 第十二批共3部独立作品、3位人物、18条“触发→行动→对象→结果”证据。进藤光前中期主z95%、后期zn迁移候选94%，次xn92%；托士郎主n95%次zn93%，xz只记转花身体/倒计时状态；金独子主xn97%次zn94%，x只限独家情报/奖励资源。ORV 93/73.3已入评分别名/来源范围复审队列；`千与千寻 / 少女终末旅行`因未命中漫画库正式条目从下一批建议移除，不新建库外条目；不改评分、主维、归仓或理论。
+
+## status update - 2026-07-19 23:09:00
+
+- manga: 剑豪生死斗 / シグルイ / 镖人 / 镖人金龙版 / 泪雨与小夜曲 / 涙雨とセレナーデ
+- status: protagonist_tenyuan_behavior_batch13_sword_rain_done_20260719
+- note: 第十三批共3部独立作品、5位人物、28条“触发→行动→对象→结果”证据。剑豪生死斗拆藤木源之助主nx93%次zn91%、伊良子清玄主z95%次xn90%；镖人刀马主zn95%次zx93%，普通1—13卷人物层只计一次，金龙版96分/命运主范围转版本评分二审；泪雨与小夜曲拆片桐阳菜主nz95%次xn92%、本乡孝章主xn94%次nz92%，讲谈社第14卷完结范围已锁。保留93/93/93与金龙版96分、作品主维和归仓，不改理论。
+
+## status update - 2026-07-20 18:45:00
+
+- manga: 逃げ上手の若君 / 擅长逃跑的殿下 / 1秒24帧的人生 / １秒２４コマのぼくの人生 / 天使夜未眠 / アーシアン / EARTHIAN
+- status: protagonist_tenyuan_behavior_batch14_escape_frames_angels_done_20260720
+- note: 第十四批共3部独立作品、4位人物、23条“触发→行动→对象→结果”证据。北条时行主xz96%次xn93%，人物主元支持命运次维而非自动改作品时间主；自传主人公りんたろう主zn96%次xn94%，正式日/法文题名已入版本范围复审；天使夜未眠拆千飒主zn96%次nz94%、影艳前nx94%→后nz95%候选，日版5卷与中文版/OVA范围分开。人物索引累计48部独立作品、61位人物；保留90/13、93、96分及作品主维/归仓，不改官方理论。现行xz信息量卡第192行冲突标记仅记录未修。
+
+## status update - 2026-07-20 19:12:00
+
+- manga: The Incal / 器官拼图 / Rest in Pieces / 黎明前的回声 / The Echo Before Dawn / 夏日消失时
+- status: protagonist_tenyuan_behavior_batch15_organs_echo_incal_done_20260720
+- note: 第十五批完成3部独立作品、5位人物对象、25条“触发→行动→对象→结果”证据。John Difool主nx93%次n89%；《器官拼图》按11篇合集拆分，只计〈宇宙的幽灵〉女太空人主xz89%次nz86%与〈幻肢〉幸存者主n87%；《黎明前的回声》拆王宥杰主n96%次zn93%、颜一辰主nz92%次nx90%，正式副题/作者/双主角已锁。`夏日消失时`确认是已分析`The Summer Hikaru Died / 光逝去的夏天 / 光が死んだ夏`题名变体，只修别名不重复计数。人物索引累计51部独立作品、66位人物；不改94/93/93及90/94/95评分、主维、最终归仓或官方理论。
+
+## status update - 2026-07-21 16:13:00
+
+- manga: 呪術廻戦≡（モジュロ） / Jujutsu Kaisen Modulo / 超深宇宙より愛をこめて / 超深宇宙之恋 / 新寳島 / 新宝岛
+- status: protagonist_tenyuan_behavior_batch16_space_vow_treasure_done_20260721
+- note: 第十六批完成3部独立作品、4位人物对象、14条“触发→行动→对象→结果”证据。乙骨真剑主zx91%次n88%，忧花因公开梗概不足3条主动行为暂缓；寺馆天主nz93%次z89%，Lulu主nz92%次zx88%；Pete主xn91%次nx88%。新增超深宇宙正式日文题名与新寳島1947初版/全集重构版范围隔离；人物索引累计54部独立作品、70位人物。不改96/91/90评分、作品主维、最终归仓或官方理论。
+
+## status update - 2026-07-21 17:53:00
+
+- manga: Toxy Noxy Foresty Forest / Toxy Noxy Foresty / イクサガミ / Last Samurai Standing / 最后的武士Standing / Gachiakuta / ガチアクタ
+- status: protagonist_tenyuan_behavior_batch17_source_locked_done_20260721
+- note: 第十七批完成3部独立作品、3位人物对象、16条“触发→行动→对象→结果”证据。Toxy无名菌菇少女主zn91%次xz88%，正式题名、作者Noboru Segawa与第1卷官方试读已锁，人物名待全卷；嵯峨愁二郎主n94%次xn91%，讲谈社漫画媒介与今村翔吾/立沢克美、第1—6卷已锁；Rudo主x96%次zn92%，具体物件x与作品容器x并z分层。人物索引累计57部独立作品、73位人物；墨比斯精选仍按合集阻塞，不生成总主角。不改91/92及Gachiakuta各批评分、作品主维、最终归仓或官方理论。
+
+## status update - 2026-07-21 19:21:00
+
+- manga: 墨比斯精选 / 魔男のイチ / Ichi the Witch / 本なら売るほど / 十月堂旧书事 / COSMOS
+- status: protagonist_tenyuan_behavior_batch18_collection_catalog_done_20260721
+- note: 第十八批完成3部独立作品、4位人物对象、22条“触发→行动→对象→结果”证据。伊奇主x95%次zx90%；十月堂店主（官方未公开姓名）主n95%次xn92%；COSMOS拆水森楓主n95%次nx92%、穂村燐主xn94%次n90%。《墨比斯精选》高置信对应四川文艺2021版ISBN 9787541158728，30篇目录已拆，繁中2022十篇版隔离，仍禁止合集总主角。人物索引累计60部独立作品、77位人物；不改96/96.15/91.8及各旧低分、作品主维、最终归仓或官方理论。
+
+## status update - 2026-07-21 20:16:00
+
+- manga: みいちゃんと山田さん / ミハルの戦場 / ありす、宇宙までも / ありす宇宙までも
+- status: protagonist_tenyuan_behavior_batch19_night_sniper_space_training_done_20260721
+- note: 第十九批完成3部独立作品、5位人物对象、28条“触发→行动→对象→结果”证据。未衣主nx94%次n91%，山田主n95%次xn92%；美晴主n92%次zx候选88%；Alice主n95%次xn91%，犬星主xn95%次z90%。人物索引累计63部、82位人物；ありす簇升为高置信别名+空间/时间维度待二审，但86/89分仍隔离。保留みい100、ミハル96及ありす86/89分，不改作品正式主维、最终归仓或官方理论。
+
+## status update - 2026-07-21 21:08:00
+
+- manga: 運命の巻戻士 / CXLVII-運命の巻戻士 / 大ダーク / Dai-Dark / 妹は知っている
+- status: protagonist_tenyuan_behavior_batch20_loop_pursuit_identity_done_20260721
+- note: 第二十批完成3部独立作品、3位人物对象、16条“触发→行动→对象→结果”证据。Chrono主`xn`95%次`n`92%，登记`n生xn`92%候选；Sanko主`xz`95%次`zx`90%，登记`xz生zx`88%候选；三木貴一郎主`zn`96%次`n`91%，登记`zn生n`90%候选。官方题名锁定`運命の巻戻士`（CXLVII仅旧前缀）与`大ダーク`（Dai-Dark为库内别名）；新增三项维度二审：命运/时间、空间/因果、因果旧推定/本体候选。人物索引累计66部、85位人物；保留102/86、100、98分、正式主维与归仓，不改理论。
+
+## status update - 2026-07-21 22:17:00
+
+- manga: Dorohedoro / DOROHEDORO / 异兽魔都 / ルリドラゴン / RuriDragon / ダーウィン事変 / 达尔文事变
+- status: protagonist_tenyuan_behavior_batch21_body_anomaly_origin_done_20260721
+- note: 第二十一批完成3部独立作品、3位人物对象、16条“触发→行动→对象→结果”证据。开曼主`x`92%次`xn`90%；青木琉璃主`n`95%次`xn`91%，仅登记`n生xn`88%候选；查理主`nx`92%次`n`89%，`xn/zx`只留功能位。新增三簇追踪：Dorohedoro 100分因果源路径/空间汇总维度冲突，RuriDragon 96/源名66.25及“未入库”状态冲突，达尔文事变95/85评分来源冲突。人物索引累计69部、88位人物；不改任何正式评分、作品主维、最终归仓或官方理论。
+
+## status update - 2026-07-21 23:19:00
+
+- manga: 君と宇宙を歩くために / 为了与你在宇宙行走 / 为了与你慢步宇宙 / タコピーの原罪 / 章鱼嗶的原罪 / ダンダダン / 胆大党 / Dandadan
+- status: protagonist_tenyuan_behavior_batch22_school_adjustment_paranormal_investigation_done_20260721
+- note: 第二十二批完成3部独立作品、5位人物对象、25条“触发→行动→对象→结果”证据。君と宇宙を歩くために拆小林主`n`94%次`xn`90%、宇野主`xn`95%次`n`90%；Takopi主`nx`92%次`zn`候选88%，官方上下卷仅够3条粗粒度动作；ダンダダン拆桃主`xn`94%次`n`90%、厄卡伦主`xn`95%次`n`91%。登记4项`n生xn`候选但均保留第三因素。新增/更新三簇题名追踪：君与宇宙簇96/95/84.62及命运/本体冲突，Takopi正式题名映射，胆大党91/旧6及因果/命运存疑。人物索引累计72部、93位人物；不改正式评分、作品主维、最终归仓或官方理论。
+
+## status update - 2026-07-22 00:25:00
+
+- manga: アイドラトリィ / Idolatry / 邪神の弁当屋さん / 判处勇者刑 / 判處勇者刑 / 勇者刑に処す 懲罰勇者9004隊刑務記録
+- status: protagonist_tenyuan_behavior_batch23_behavior_first_done_20260722
+- note: 第二十三批按“先穷举具体行为、再逐条后置归类”完成3部独立作品、3位主角、16条可核验行为；不再把多条动作压缩成行为总结，一条行为只归一个十元，证据不足者保留为暂不归类。陽見循菜5条：`xn`3、`nx`1、暂不归类1，主`xn`95%、次`nx`92%；レイニー6条：`n`3、`xn`2、`nx`1，主`n`94%、次`xn`88%；ザイロ5条：`nx`3、`n`1、`zx`1，主`nx`92%、次`n`88%、`zx`战斗功能84%，仅登记`nx补zx`83%候选。人物索引累计75部、96位人物。纠正アイドラトリィ旧“仅1卷”为讲谈社4卷范围，新增判处勇者刑93/旧9分与三向维度隔离；未改任何评分、作品主维、最终归仓或官方理论。
+
+## status update - 2026-07-22 01:44:00
+
+- manga: Dorohedoro / DOROHEDORO / 异兽魔都 / ルリドラゴン / RuriDragon / ダーウィン事変 / 达尔文事变
+- status: protagonist_tenyuan_behavior_enumeration_batch24_old_summary_reaudit_20260722
+- note: 第二十四批把旧第二十一批改造成“具体行为穷举→逐条唯一十元归类”。旧16条经主体动作审核和来源簇去重后保留13条：开曼5条（`x`2/`xn`1/`n`1/`nx`1），主`x`93%、次`xn`91%；青木琉璃4条（`n`3/`xn`1），主`n`92%、次`xn`88%，撤回旧`n生xn`关系候选；查理4条均归`nx`，主`nx`94%、次位未判定，撤回旧次`n`89%。删除3条背景、抽象总述或未获官方书目支持的推断。本轮复核不新增独立作品/人物，人物索引累计仍为75部、96位人物；未改评分、作品主维、最终归仓或理论文件。
+
+## status update - 2026-07-22 02:13:00
+
+- manga: 運命の巻戻士 / CXLVII-運命の巻戻士 / 大ダーク / Dai-Dark / 妹は知っている
+- status: protagonist_tenyuan_behavior_enumeration_batch25_old_summary_reaudit_20260722
+- note: 第二十五批把旧第二十批改造成“具体行为穷举→逐条唯一十元归类”，共保留15条：Chrono 4条（`nx`3/`zx`1），主`nx`92%、次位未判定；Sanko 6条（`zx`3/`nx`2/暂不归类1），主`zx`90%、次`nx`86%；三木貴一郎5条（`n`2/`xn`1/`x`1/`nx`1），主`n`91%、次`xn`90%。撤回旧Chrono`xn/n`与`n生xn`、Sanko`xz`与`xz生zx`、貴一郎`zn`与`zn生n`；不再把组织设定、受害状态、被控制动作或否定式动机计为主角行为。本轮复核不新增独立作品/人物，人物索引累计仍为75部、96位人物；未改评分、作品主维、最终归仓或理论文件。
+
+## status update - 2026-07-22 03:15:00
+
+- manga: みいちゃんと山田さん / ミハルの戦場 / ありす、宇宙までも / ありす宇宙までも
+- status: protagonist_tenyuan_behavior_enumeration_batch26_old_summary_reaudit_20260722
+- note: 第二十六批把旧第十九批改造成“具体行为穷举→逐条唯一十元归类”，共3部、5位人物、33条：未衣7条（`nx`4/`x并z`2/暂不归类1），主`nx`90%、次`x并z`86%；山田5条（`n`2/`x并z`1/`zx`1/`nx`1），主`n`92%、次位未判；美晴5条（`nx`3/`n`2），主`nx`91%、次`n`90%；Alice 10条（`nx`7/`xn`1/`n`1/暂不归类1），主`nx`92%、次位未判；犬星6条（`xn`4/`nx`2），主`xn`94%、次`nx`88%。撤回旧多标签关系与背景推断；`ありす`新增小学馆第7卷覆盖，但作品/人物累计仍75部、96人。未改100、96、86/89分、作品主维、归仓或理论。
+
+## status update - 2026-07-22 04:16:00
+
+- manga: 魔男のイチ / Ichi the Witch / 本なら売るほど / 十月堂旧书事 / COSMOS
+- status: protagonist_tenyuan_behavior_enumeration_batch27_old_summary_reaudit_20260722
+- note: 第二十七批把旧第十八批人物部分改造成22条“具体行为→下一行唯一归类”，共3部、4位人物：伊奇6条（`x`2/`n`2/`xn`1/`nx`1），主`x`91%、次`n`88%，旧`zx`次位撤回；十月堂店主7条（`n`4/`xn`2/`x`1），主`n`94%、次`xn`90%，旧`n生xn`候选撤回；水森5条（`nx`4/`n`1），主`nx`93%；穂村4条（`xn`2/`nx`1/`n`1），主`xn`92%，两人旧`n生xn`候选撤回。范围检查确认《魔男のイチ》已到第8卷、《COSMOS》到第9卷，但新卷其他人物动作未借入。累计仍75部、96人；未改正式评分、主维、归仓、作品ID或理论。
+
+## status update - 2026-07-22 05:26:00
+
+- manga: Toxy Noxy Foresty Forest / Toxy Noxy Foresty / イクサガミ / Last Samurai Standing / 最后的武士Standing / Gachiakuta / ガチアクタ
+- status: protagonist_tenyuan_behavior_enumeration_batch28_old_summary_reaudit_20260722
+- note: 第二十八批把旧第十七批改造成17条“具体行为→下一行唯一归类”：无名菌菇少女5条（`n`2/`nx`1/`xz`1/暂不归类1），暂定主`n`90%、次位未判，撤回旧`zn`与`xz↔nz`；嵯峨愁二郎7条（`nx`4/`xz`2/`n`1），主`nx`95%、次`xz`91%，撤回旧`n/xn`与`n生xn`；Rudo 5条（`nx`3/`x`1/`xz`1），主`nx`93%、次位未判，撤回旧`x/zn`与`zn↔x`。范围更新为《イクサガミ》第1—7卷公开书目，并确认Gachiakuta英文版已到第11卷但未借入未逐卷核验动作。累计仍75部、96人；未改正式评分、主维、归仓、作品ID或理论。
+
+## status update - 2026-07-22 16:17:00
+
+- manga: 呪術廻戦≡（モジュロ） / Jujutsu Kaisen Modulo / 超深宇宙より愛をこめて / 超深宇宙之恋 / 新寳島 / 新宝岛
+- status: protagonist_tenyuan_behavior_enumeration_batch29_old_summary_reaudit_20260722
+- note: 第二十九批把旧第十六批改造成12条“具体行为→下一行唯一归类”：乙骨真剑3条（`nx`1/`n`1/`xz`1），主次未判、撤回旧主`zx`；寺馆天4条（`nz`2/`nx`1/暂不归类1），暂定主`nz`92%、次位未判，并仅登记`nz生nx`86%候选；Lulu公开资料仅2条（`nz`1/暂不归类1），主次未判、撤回旧`nz/zx`；Pete跨版共通2条（`n`1/`nx`1）主次未判，全集重构版救Pan另记`n`，撤回跨版旧`xn`及`n生xn`。删除/排除“被俘、漂流、被抓”等非主动行为。累计仍75部、96人；未改96/91/90分、作品主维、归仓、作品ID或理论。
+
+## status update - 2026-07-22 18:20:00
+
+- manga: The Incal / 器官拼图 / Rest in Pieces / 黎明前的回声 / The Echo Before Dawn
+- status: protagonist_tenyuan_behavior_enumeration_batch30_old_summary_reaudit_20260722
+- note: 第三十批把旧第十五批收紧为20条“具体行为→下一行唯一归类”，共3部、5位人物对象：John Difool 5条（`xz`3/`n`1/暂不归类1），暂定主`xz`91%、次位未判，撤回旧`nx/n/x`组合；〈宇宙的幽灵〉女太空人6条（`xz`2/`n`2/`z`1/`nx`1），暂定主`xz`92%、次`n`86%，撤回旧`nz`次位；〈幻肢〉幸存者2条（`n`1/暂不归类1），主次未判，梦象不硬判`x并z`；王宥杰4条（`n/nx/nz/zn`各1），主次未判，撤回旧`n/zn`主次；颜一辰3条（`nz`2/`nx`1），暂定主`nz`89%、次位未判。全批不登记关系候选。累计仍75部、96人；未改94/93/93分、作品主维、归仓、作品ID或理论。
+
+## status update - 2026-07-22 19:21:00
+
+- manga: 逃げ上手の若君 / 擅长逃跑的殿下 / 1秒24帧的人生 / １秒２４コマのぼくの人生 / 天使夜未眠 / アーシアン / EARTHIAN
+- status: protagonist_tenyuan_behavior_enumeration_batch31_old_summary_reaudit_20260722
+- note: 第三十一批把旧第十四批收紧为23条“具体行为→下一行唯一归类”，共3部、4位人物对象。北条时行9条（`nx`4，`xn/z/n/xz/zx`各1），暂定主`nx`95%、次未判，撤回旧`xz/xn`主次与`xn生xz`；りんたろう11条（`xn`8/`nx`2/`x并z`1），主`xn`95%、次`nx`89%，撤回旧`zn`主位与`xn补z`；千飒仅2条（`zn/nx`各1）、影艳仅1条`nx`，二人主次均未判，撤回旧`nz`与`nx→nz`迁移。第3—5卷的分离、不舍、动摇、袭击均未冒充人物动作；全批不登记关系候选。累计仍75部、96人；未改90/13、93、96分、作品主维、归仓、作品ID或理论。
+
+- manga: BLUE GIANT / 灌篮高手 / 链锯人
+- status: protagonist_tenyuan_behavior_enumeration_batch32_reaudit_20260722
+- note: 第三十二批把旧高分第一批中的3部收紧为24条“具体行为→下一行唯一归类”。宫本大10条（`zn`4/`z`4/`nx`1/未判1），主`zn`94%、次`z`92%，旧`zx`次位撤回；樱木花道7条（`zx`2、`z/xn/nx/xz`各1、未判1），主候选`zx`94%、次未判，旧后期`zn`迁移降为待原卷假设；电次公安篇7条（`nx`4/`xn`1/`zx`1/未判1），主`nx`95%、次未判，旧`nz`辅助撤回、`nx生x`不登记。旧高分第一批仅三者被局部替代，Vagabond部分仍当前；累计仍75部、96人。未改100/98/96分、作品维度、归仓、作品ID或理论。
+
+## status update - 2026-07-23 01:16:00
+
+- manga: Vagabond / 浪客行 / 迷宫饭 / 怪医黑杰克
+- status: protagonist_tenyuan_behavior_enumeration_batch33_old_summary_reaudit_20260723
+- note: 第三十三批把旧高分第一批剩余Vagabond及旧第二批中的《迷宫饭》《怪医黑杰克》收紧为19条“具体行为→下一行唯一归类”。宫本武藏6条（`zn`2/`xz`1/`zx`1/未判2），主`zn`91%候选、次未判，撤回旧“前`zx`后`zn`”阶段迁移；莱欧斯7条（`xn`2/`zx`1/`xz`1/未判3），主`xn`94%候选、次未判，团队总结果不借给个人，旧次`x`与`nz`撤回，仅登记`xn生xz`93%终局候选；间黑男6条（`n`4/`nz`1/`zn`1），主`n`96%候选、次未判，撤回旧主`zn`、次`x`与`zx`执行位。旧高分第一批已完全历史化；旧第二批当前仅余Homunculus、恶魔人待逐条复核。累计仍75部、96人；未改98/96/94/91分、作品主维、归仓、作品ID或理论。
+
+## status update - 2026-07-23 02:17:00
+
+- manga: Homunculus / ホムンクルス / 恶魔人 / Devilman / 晚安Punpun / Goodnight Punpun
+- status: protagonist_tenyuan_behavior_enumeration_batch34_old_summary_reaudit_20260723
+- note: 第三十四批把旧第二批剩余Homunculus、恶魔人及旧第三批《晚安Punpun》收紧为17条“具体行为→下一行唯一归类”。名越进8条（`xz`2/`x`2/`n`2/`zn`1/`xn`1），主`xz`96%候选、次`x`92%、`n`功能91%，旧主`x`下调，仅留`xz克zn`90%候选；不动明公开书目仅3条（`xz`1/`zx`1/未判1），主次均未判，撤回旧主`zn`次`zx`，仅留`xz生zx`94%候选；Punpun 6条（`nx`2/`z`1/`xn`1/未判2），主`nx`93%候选、次未判，撤回旧主`z`与未经动作支持的`x/xz`功能。旧第二批已完全历史化；旧第三批仅余ODD TAXI、钻石王牌、PLUTO。累计仍75部、96人；未改95/93/91分、作品主维、归仓、作品ID、别名评分或理论。
+
+## status update - 2026-07-23 03:18:00
+
+- manga: ODD TAXI / オッドタクシー / 钻石王牌 / Ace of the Diamond / PLUTO / PLUTO冥王
+- status: protagonist_tenyuan_behavior_enumeration_batch35_old_summary_reaudit_20260723
+- note: 第三十五批把旧第三批剩余3部收紧为26条“具体行为→下一行唯一归类”。小户川8条（`nx`5/`xz`1/未判2），主`nx`88%候选、次未判；五次载客同属一个书目证据簇并降权，旧主`n`次`xn`撤回。泽村荣纯10条（`nx`5/`nz/zn/z/zx`各1/未判1），主`nx`94%候选、次未判、`zx`单点功能，旧主`z`次`zx`撤回。盖吉希特8条（`xn`4/`nx/n/zn`各1/未判1），主`xn`96%候选、次未判，旧次`zn`撤回；第7—8卷阿童木边界继续隔离。三者均不登记关系候选。旧第三批已完全历史化；累计仍75部、96人。未改92/91/93分、作品维度冲突、归仓、作品ID或理论。
+
+## status update - 2026-07-23 04:18:00
+
+- manga: 20世纪少年 / The Summer Hikaru Died / 光逝去的夏天 / 夏日消失时 / Blue Box / 青之箱
+- status: protagonist_tenyuan_behavior_enumeration_batch36_old_summary_reaudit_20260723
+- note: 第三十六批把旧第四批中的3部收紧为25条“具体行为→下一行唯一归类”，共4位人物对象。远藤贤知7条（`xn`4/`xz`1/`zx`1/未判1），主`xn`96%候选、次未判，旧主`zn`撤回；辻中佳纪6条（`nz`2/`xn`2/`nx/n`各1），主`nz`95%候选、次`xn`94%；“光”5条（`xn`2/`x并z/n/xz`各1），主`xn`94%候选、次未判，旧主`x并z`次`z`撤回，并登记`xn生xz`94%候选；猪股大喜7条（`n`3/`nx`3/`zx`1），主`n`96%候选、次`nx`93%候选，旧主`z`次`xn`撤回，登记`nx补zx`95%候选。旧第四批改为部分历史化，仅Jimmy Corrigan仍当前；人物索引累计仍75部、96人。未发行《The Summer Hikaru Died》第8卷预告不入证；未改92/90/94/95/92评分、作品主维、归仓、别名作品ID或理论。
+
+## status update - 2026-07-23 05:18:00
+
+- manga: MONSTER / Monster / 炎拳 / Fire Punch / 蓝色时期 / Blue Period
+- status: protagonist_tenyuan_behavior_enumeration_batch37_old_summary_reaudit_20260723
+- note: 第三十七批把旧第五批中的3部收紧为26条“具体行为→下一行唯一归类”。天马贤三9条（`xn`3/`xz`2/`nx`2/`zn`1/`n`1），主`xn`95%候选、次未判，旧主`zn`次`n`及`zn生n`撤回；Agni 8条（`zx`3/`xn`2/`xz`2/未判1），主`zx`96%候选、次未判，旧主`nz`次`nx`撤回，仅保留`xz生zx`90%候选；矢口八虎9条（`nx`5/`zn`2/`x`1/`xn`1），主`nx`95%候选、次`zn`94%候选，旧主`xn`次`z`撤回，因现行`nx生x`机制待补不登记关系。旧第五批改为部分历史化，仅BILLY BAT仍当前；累计仍75部、96人。未改MONSTER 96分、炎拳精修名单86分/旧96来源、蓝色时期无评分状态、作品主维、归仓、作品ID、同名队列或理论。

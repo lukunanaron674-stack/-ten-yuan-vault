@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Ten Yuan F12 Controller v1.4.1",
-  "version": "1.4.1",
-  "description": "F12 controller with LazyMan auto-send bridge fixes",
+  "name": "Ten Yuan F12 Controller v1.4.2",
+  "version": "1.4.2",
+  "description": "F12 controller with local generated-image export",
   "permissions": ["storage", "tabs", "activeTab", "scripting", "sidePanel", "alarms"],
   "host_permissions": [
     "https://chatgpt.com/*",

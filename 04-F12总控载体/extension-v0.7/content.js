@@ -875,6 +875,7 @@
     const candidates = queryVisible(['img', 'picture img'])
       .map((el, index) => {
         const rect = el.getBoundingClientRect();
+        const assistantRoot = el.closest('[data-message-author-role="assistant"], article[data-testid^="conversation-turn"], article');
         return {
           index,
           el,
@@ -882,13 +883,22 @@
           alt: el.getAttribute('alt') || '',
           w: Math.round(rect.width),
           h: Math.round(rect.height),
-          area: Math.round(rect.width * rect.height)
+          naturalWidth: Number(el.naturalWidth || 0),
+          naturalHeight: Number(el.naturalHeight || 0),
+          area: Math.round(rect.width * rect.height),
+          naturalArea: Number(el.naturalWidth || 0) * Number(el.naturalHeight || 0),
+          assistantRoot: !!assistantRoot
         };
       })
-      .filter(item => item.src && item.w > 120 && item.h > 120)
-      .sort((a, b) => b.area - a.area);
+      .filter(item => item.src && !/^data:image\/svg/i.test(item.src))
+      .filter(item => item.w > 180 && item.h > 180)
+      .filter(item => item.naturalWidth >= 512 || item.naturalHeight >= 512 || item.area >= 120000);
 
-    const picked = candidates[0];
+    // ChatGPT may keep older generated images mounted. Prefer the last large
+    // image inside the newest assistant turn instead of the largest page image.
+    const assistantCandidates = candidates.filter(item => item.assistantRoot);
+    const pool = assistantCandidates.length ? assistantCandidates : candidates;
+    const picked = pool[pool.length - 1];
     if (!picked) {
       return { ok: false, error: 'No exportable image found' };
     }
@@ -915,6 +925,8 @@
       alt: picked.alt,
       width: picked.w,
       height: picked.h,
+      naturalWidth: picked.naturalWidth,
+      naturalHeight: picked.naturalHeight,
       mime: blob.type || 'image/png',
       size: blob.size,
       dataUrl
