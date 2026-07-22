@@ -1,7 +1,7 @@
 ---
 type: relation-canonical-index
 status: current
-version: v1.4
+version: v1.4.1
 updated: 2026-07-23T04:00:32+08:00
 system: 十元
 is_a: 字典或总表
@@ -27,7 +27,7 @@ priority: canonical-relation-routing
 1. `十元生补克表.md` 固定几何位与核心摘要。
 2. `canonical-current` 专项正本高于关系词典旧短句。
 3. 审计、待二审和旧案例只作 evidence。
-4. 同步补丁只有在其声明的全部目标仍未原位同步时才保持活动状态。
+4. 同步补丁声明的任一目标仍未原位同步时，补丁继续保持活动状态。
 5. 补丁声明覆盖的核心表、关系词典、强制必读入口等目标全部完成同步后，补丁必须降为 `integrated-legacy / archive-reference`。
 6. 文件正文已经降级但本索引仍列为活动时，以文件现行 frontmatter 为准，并立即修正本索引。
 
