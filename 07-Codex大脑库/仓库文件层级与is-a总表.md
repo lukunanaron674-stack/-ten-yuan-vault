@@ -1,7 +1,7 @@
 ---
 type: repository-governance-index
 status: current
-version: v2.1
+version: v2.1.1
 updated: 2026-07-22T12:01:21+08:00
 priority: governance
 is_a: 总表
@@ -26,12 +26,12 @@ archive_source:
 | `07-Codex大脑库/待用户确认问题队列.md` | 自动运行交接 | 确认队列 | 总入口 | UQ 项目 | active | highest-for-confirmation-only | 无 | 无 | 不属于理论最高正本 | 总入口→确认队列 | `eba7f120d276bcdeee4358c1723c20832dd4677a` |
 | `01-十元系统/十元生补克表.md` | 核心正本 | 十元关系几何位与现行状态总览 | 总入口第14层 | 专项正本索引、审计索引 | current v2.14.1 | canonical-direct | 无 | v2.12 旧快照及已整合关系摘要 | 无 | 总入口→核心表 | `bfde4a637d90ea58d98fd7960a258ff5f3b0a06a` |
 | `01-十元系统/十元关系词典.md` | 字典或总表 | 现行关系摘要 | 核心表与专项索引 | 关系短摘要 | current-summary v2.1 | summary-below-canonical | 核心表、专项正本 | v2.0 前旧词典 | 只含部分已锁定关系摘要，不得反向判未列关系未锁定 | 核心表→专项索引→词典 | `06d1333a22046fc5d8a71171cb043d5554a5b34e` |
-| `01-十元系统/关系专项/README_十元关系专项正本索引.md` | 字典或总表 | 专项正本路由 | 总入口第14层 | 专项正本、审计索引、补丁生命周期 | current v1.1 | canonical-relation-routing | 无 | v1.0 旧路由 | 已完成补丁与活动补丁分区 | 总入口→核心表→专项索引 | 本轮提交 |
-| `x生x并z...同步补丁` | 旧稿 | 已并入同步补丁 | x生x并z 专项正本 | 归档原件 | integrated-legacy | archive-reference | 核心表、词典、强制清单 | 旧待二审与寄生虫方向 | 无 | 专项索引→已并入补丁 | 本轮提交 |
-| `xn生xz...同步补丁` | 旧稿 | 已并入同步补丁 | xn生xz 专项正本 | 归档原件 | integrated-legacy | archive-reference | 核心表、词典、强制清单 | 旧身份漂流口径 | 无 | 专项索引→已并入补丁 | 本轮提交 |
-| `zx补nx...同步补丁` | 旧稿 | 已并入同步补丁 | zx补nx 专项正本 | 归档原件 | integrated-legacy | archive-reference | 核心表、词典、强制清单 | 旧暗线与结算口径 | 无 | 专项索引→已并入补丁 | 本轮提交 |
-| `07-Codex大脑库/仓库文件层级与is-a总表.md` | 字典或总表 | 仓库治理总表 | 总入口 | 治理运行记录 | current v2.1 | governance | 无 | v2.0 快照 | 无 | 总入口→治理总表 | 本轮提交 |
-| `07-Codex大脑库/仓库层级清理运行记录.md` | 自动运行记录 | 仓库治理运行账本 | 治理总表 | 历史治理归档 | active v2.1 | log | 无 | v2.0 快照 | 无 | 治理总表→运行账本 | 本轮提交 |
+| `01-十元系统/关系专项/README_十元关系专项正本索引.md` | 字典或总表 | 专项正本路由 | 总入口第14层 | 专项正本、审计索引、补丁生命周期 | current v1.1 | canonical-relation-routing | 无 | v1.0 旧路由 | 已完成补丁与活动补丁分区 | 总入口→核心表→专项索引 | `363bafd34700fb9c5c607d40c9d34031a79a2523` |
+| `x生x并z...同步补丁` | 旧稿 | 已并入同步补丁 | x生x并z 专项正本 | 归档原件 | integrated-legacy | archive-reference | 核心表、词典、强制清单 | 旧待二审与寄生虫方向 | 无 | 专项索引→已并入补丁 | `363bafd34700fb9c5c607d40c9d34031a79a2523` |
+| `xn生xz...同步补丁` | 旧稿 | 已并入同步补丁 | xn生xz 专项正本 | 归档原件 | integrated-legacy | archive-reference | 核心表、词典、强制清单 | 旧身份漂流口径 | 无 | 专项索引→已并入补丁 | `363bafd34700fb9c5c607d40c9d34031a79a2523` |
+| `zx补nx...同步补丁` | 旧稿 | 已并入同步补丁 | zx补nx 专项正本 | 归档原件 | integrated-legacy | archive-reference | 核心表、词典、强制清单 | 旧暗线与结算口径 | 无 | 专项索引→已并入补丁 | `363bafd34700fb9c5c607d40c9d34031a79a2523` |
+| `07-Codex大脑库/仓库文件层级与is-a总表.md` | 字典或总表 | 仓库治理总表 | 总入口 | 治理运行记录 | current v2.1.1 | governance | 无 | v2.0 快照 | 无 | 总入口→治理总表 | 本次账本修正提交 |
+| `07-Codex大脑库/仓库层级清理运行记录.md` | 自动运行记录 | 仓库治理运行账本 | 治理总表 | 历史治理归档 | active v2.1.1 | log | 无 | v2.0 快照 | 无 | 治理总表→运行账本 | 本次账本修正提交 |
 
 ## 本轮结论
 
