@@ -1,10 +1,17 @@
 ---
 title: 启明文化大学·Webtoon课程
+school_zh: 启明文化大学
 school_ko: 계명문화대학교
+program_zh: Webtoon专业
 program_ko: 웹툰전공
-source_grade: A
-verified: 2026-07-23
 school_type: 两年制专门大学
+program_length: 2年
+applicable_year: T-官网现行页面，具体学年待补
+coverage_level: L2
+source_grade: A/B
+translation_status: 中文概译，韩文课程原名待逐项补
+verified: 2026-07-23
+document_type: school_profile
 ---
 
 # 启明文化大学·Webtoon课程
@@ -122,12 +129,20 @@ school_type: 两年制专门大学
 
 启明文化大学路线可作为“制作主线”，同时从本库补：
 
-- [[../04_知识模块/角色心理与行为库]]
-- [[../04_知识模块/类型故事课程]]
-- [[../04_知识模块/世界观与资料调查]]
-- [[../04_知识模块/制作产业与版权]]
+- [[04_知识模块/角色心理与行为库]]
+- [[04_知识模块/类型故事课程]]
+- [[04_知识模块/世界观与资料调查]]
+- [[04_知识模块/制作产业与版权]]
+- [[04_知识模块/漫画史美学与批评]]
 
-## 7. 官方来源
+## 7. 证据边界
 
-- 一年级课程：https://www.kmcu.ac.kr/webtoon/?pCode=MN4000027
-- 二年级课程：https://ipsi.kmcu.ac.kr/webtoon/index.php?pCode=MN9000048
+- 当前达到`L2`：已取得课程表及部分课程说明；
+- 未取得全部逐周大纲、作业、评分标准和指定教材；
+- 中文课程名为本库概译，需继续补学校页面韩文原名。
+
+## 8. 官方来源
+
+- `S-KMCU-01`：https://www.kmcu.ac.kr/webtoon/?pCode=MN4000027
+- `S-KMCU-02`：https://ipsi.kmcu.ac.kr/webtoon/index.php?pCode=MN9000048
+- 来源状态见[[90_采集与核验/来源索引与链接健康]]。
