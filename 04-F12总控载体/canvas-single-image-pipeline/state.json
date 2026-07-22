@@ -1,0 +1,23 @@
+{
+  "planId": "canvas-single-image-pipeline",
+  "canvasPath": "09-给674（我）用的库/画画理论/海盗航海_is-a名词素材库.canvas",
+  "nodeId": "n5",
+  "conceptName": "三角船长帽",
+  "phase": "scan_complete",
+  "status": "waiting_for_f12_bridge",
+  "lastHeartbeat": "2026-07-23T02:01:28+08:00",
+  "retryCount": 0,
+  "lastError": null,
+  "nextAction": "Confirm the external F12 local bridge is online, then generate exactly one square image for n5 三角船长帽; export the original image, validate width/height/MIME/size/SHA-256, add one file node and one text-to-file edge to the Canvas, commit and push on the dedicated branch, and verify the remote commit before selecting another node.",
+  "generated": false,
+  "exported": false,
+  "committed": false,
+  "pushed": false,
+  "remoteVerified": false,
+  "imagePath": null,
+  "width": null,
+  "height": null,
+  "size": null,
+  "sha256": null,
+  "verifiedCommit": null
+}
