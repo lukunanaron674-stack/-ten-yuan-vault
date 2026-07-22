@@ -1,7 +1,7 @@
 ---
 type: progress-log
 status: active
-updated: 2026-07-23T05:18+08:00
+updated: 2026-07-23T06:25+08:00
 workflow: [[Hermes-漫画五大主题整理工单]]
 task_list: [[Hermes-漫画五大主题任务清单]]
 target_total: 499
@@ -28,7 +28,7 @@ first_theme_target: 因果型 zx+nx
 
 - 阶段：自动化核心已切换为“先穷举具体行为，再逐条唯一归类十元”；人物索引累计75部独立作品、96位人物对象
 - 当前优先主题：人物层十元行为分析（作品五大主题只作背景）
-- 当前优先批次：本轮完成 `MONSTER / 炎拳 / 蓝色时期` 3部、3位人物、26条动作；下一轮优先旧第五批剩余`BILLY BAT`，群像边界不足时转`Jimmy Corrigan`
+- 当前优先批次：本轮完成 `BILLY BAT / Jimmy Corrigan / Vinland Saga` 3部、3位人物、19条动作；下一轮处理旧第六批剩余`WATCHMEN / 进击的巨人 / 宝石之国`
 - 暂停策略：每轮控制 3-5 部；低置信度或双池冲突只写待二审，不 finalized。
 
 ## 因果型试跑台账
@@ -788,3 +788,9 @@ first_theme_target: 因果型 zx+nx
 - manga: MONSTER / Monster / 炎拳 / Fire Punch / 蓝色时期 / Blue Period
 - status: protagonist_tenyuan_behavior_enumeration_batch37_old_summary_reaudit_20260723
 - note: 第三十七批把旧第五批中的3部收紧为26条“具体行为→下一行唯一归类”。天马贤三9条（`xn`3/`xz`2/`nx`2/`zn`1/`n`1），主`xn`95%候选、次未判，旧主`zn`次`n`及`zn生n`撤回；Agni 8条（`zx`3/`xn`2/`xz`2/未判1），主`zx`96%候选、次未判，旧主`nz`次`nx`撤回，仅保留`xz生zx`90%候选；矢口八虎9条（`nx`5/`zn`2/`x`1/`xn`1），主`nx`95%候选、次`zn`94%候选，旧主`xn`次`z`撤回，因现行`nx生x`机制待补不登记关系。旧第五批改为部分历史化，仅BILLY BAT仍当前；累计仍75部、96人。未改MONSTER 96分、炎拳精修名单86分/旧96来源、蓝色时期无评分状态、作品主维、归仓、作品ID、同名队列或理论。
+
+## status update - 2026-07-23 06:25:00
+
+- manga: BILLY BAT / Billy Bat / Jimmy Corrigan / Vinland Saga / 冰海战记
+- status: protagonist_tenyuan_behavior_enumeration_batch38_old_summary_reaudit_20260723
+- note: 第三十八批把旧第四批剩余Jimmy、旧第五批剩余BILLY BAT及旧第六批Vinland Saga收紧为19条“具体行为→下一行唯一归类”。Kevin Yamagata 5条（`nx`3/`xn`2），主`nx`94%候选、次`xn`92%候选，保留旧主次方向但撤回单条多标签与第7卷未确认主动牺牲动作；成年Jimmy 5条（`nx`3/未判2），主`nx`95%候选、次未判，旧次`z`撤回，遮嘴与幻想不硬判；Thorfinn 9条（`xn`4/`zx/nx/zn/n`各1/未判1），主`xn`95%候选、次未判，旧“早`zx`→后`zn`”主位迁移及`zn生n`候选撤回。旧第四、第五批已完全历史化；旧第六批仅余WATCHMEN、进击的巨人、宝石之国。累计仍75部、96人。未改Jimmy 91分、Vinland 93分、BILLY BAT无评分状态、作品主维、归仓、作品ID、同名队列或理论。
