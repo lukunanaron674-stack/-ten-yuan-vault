@@ -1,108 +1,31 @@
 {
-  "nodes": [
-    {
-      "id": "root",
-      "type": "file",
-      "file": "09-给674（我）用的库/三库试验/README.md",
-      "x": -200,
-      "y": -900,
-      "width": 400,
-      "height": 260,
-      "color": "1"
-    },
-    {
-      "id": "fantasy_recipe",
-      "type": "file",
-      "file": "09-给674（我）用的库/三库试验/奇幻学院转生流/题材配方.md",
-      "x": -900,
-      "y": -480,
-      "width": 420,
-      "height": 300,
-      "color": "3"
-    },
-    {
-      "id": "fantasy_nouns",
-      "type": "file",
-      "file": "09-给674（我）用的库/三库试验/奇幻学院转生流/名词对象库.md",
-      "x": -900,
-      "y": 0,
-      "width": 420,
-      "height": 420,
-      "color": "3"
-    },
-    {
-      "id": "fantasy_draw",
-      "type": "file",
-      "file": "09-给674（我）用的库/三库试验/奇幻学院转生流/可画内容实例.md",
-      "x": -900,
-      "y": 600,
-      "width": 420,
-      "height": 320,
-      "color": "3"
-    },
-    {
-      "id": "portal_recipe",
-      "type": "file",
-      "file": "09-给674（我）用的库/三库试验/现代社会传送门流/题材配方.md",
-      "x": 480,
-      "y": -480,
-      "width": 420,
-      "height": 300,
-      "color": "5"
-    },
-    {
-      "id": "portal_nouns",
-      "type": "file",
-      "file": "09-给674（我）用的库/三库试验/现代社会传送门流/名词对象库.md",
-      "x": 480,
-      "y": 0,
-      "width": 420,
-      "height": 420,
-      "color": "5"
-    },
-    {
-      "id": "portal_draw",
-      "type": "file",
-      "file": "09-给674（我）用的库/三库试验/现代社会传送门流/可画内容实例.md",
-      "x": 480,
-      "y": 600,
-      "width": 420,
-      "height": 320,
-      "color": "5"
-    },
-    {
-      "id": "behavior",
-      "type": "file",
-      "file": "09-给674（我）用的库/三库试验/十元行为库_试验接口.md",
-      "x": -210,
-      "y": 80,
-      "width": 420,
-      "height": 420,
-      "color": "2"
-    },
-    {
-      "id": "analysis",
-      "type": "file",
-      "file": "09-给674（我）用的库/三库试验/漫画双通道分析模板.md",
-      "x": -210,
-      "y": 650,
-      "width": 420,
-      "height": 320,
-      "color": "6"
-    }
-  ],
-  "edges": [
-    {"id": "e1", "fromNode": "root", "fromSide": "bottom", "toNode": "fantasy_recipe", "toSide": "top", "label": "题材A"},
-    {"id": "e2", "fromNode": "root", "fromSide": "bottom", "toNode": "portal_recipe", "toSide": "top", "label": "题材B"},
-    {"id": "e3", "fromNode": "root", "fromSide": "bottom", "toNode": "behavior", "toSide": "top", "label": "2号行为库"},
-    {"id": "e4", "fromNode": "fantasy_recipe", "fromSide": "bottom", "toNode": "fantasy_nouns", "toSide": "top", "label": "选择名词模块"},
-    {"id": "e5", "fromNode": "fantasy_nouns", "fromSide": "bottom", "toNode": "fantasy_draw", "toSide": "top", "label": "名词对象"},
-    {"id": "e6", "fromNode": "portal_recipe", "fromSide": "bottom", "toNode": "portal_nouns", "toSide": "top", "label": "选择名词模块"},
-    {"id": "e7", "fromNode": "portal_nouns", "fromSide": "bottom", "toNode": "portal_draw", "toSide": "top", "label": "名词对象"},
-    {"id": "e8", "fromNode": "behavior", "fromSide": "left", "toNode": "fantasy_draw", "toSide": "right", "label": "行动接口"},
-    {"id": "e9", "fromNode": "behavior", "fromSide": "right", "toNode": "portal_draw", "toSide": "left", "label": "行动接口"},
-    {"id": "e10", "fromNode": "analysis", "fromSide": "top", "toNode": "behavior", "toSide": "bottom", "label": "行为证据"},
-    {"id": "e11", "fromNode": "analysis", "fromSide": "left", "toNode": "fantasy_nouns", "toSide": "right", "label": "名词采集"},
-    {"id": "e12", "fromNode": "analysis", "fromSide": "right", "toNode": "portal_nouns", "toSide": "left", "label": "名词采集"}
-  ]
+	"nodes":[
+		{"id":"root","type":"file","file":"09-给674（我）用的库/三库试验/README.md","x":-200,"y":-900,"width":400,"height":260,"color":"1"},
+		{"id":"fantasy_recipe","type":"file","file":"09-给674（我）用的库/三库试验/奇幻学院转生流/题材配方.md","x":-900,"y":-480,"width":420,"height":300,"color":"3"},
+		{"id":"fantasy_nouns","type":"file","file":"09-给674（我）用的库/三库试验/奇幻学院转生流/名词对象库.md","x":-900,"y":0,"width":420,"height":420,"color":"3"},
+		{"id":"fantasy_draw","type":"file","file":"09-给674（我）用的库/三库试验/奇幻学院转生流/可画内容实例.md","x":-900,"y":600,"width":420,"height":320,"color":"3"},
+		{"id":"portal_recipe","type":"file","file":"09-给674（我）用的库/三库试验/现代社会传送门流/题材配方.md","x":480,"y":-480,"width":420,"height":300,"color":"5"},
+		{"id":"portal_nouns","type":"file","file":"09-给674（我）用的库/三库试验/现代社会传送门流/名词对象库.md","x":480,"y":0,"width":420,"height":420,"color":"5"},
+		{"id":"portal_draw","type":"file","file":"09-给674（我）用的库/三库试验/现代社会传送门流/可画内容实例.md","x":480,"y":600,"width":420,"height":320,"color":"5"},
+		{"id":"behavior","type":"file","file":"09-给674（我）用的库/三库试验/十元行为库_试验接口.md","x":-210,"y":80,"width":420,"height":420,"color":"2"},
+		{"id":"analysis","type":"file","file":"09-给674（我）用的库/三库试验/漫画双通道分析模板.md","x":-210,"y":650,"width":420,"height":320,"color":"6"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","fromSide":"bottom","toNode":"fantasy_recipe","toSide":"top","label":"题材A"},
+		{"id":"e2","fromNode":"root","fromSide":"bottom","toNode":"portal_recipe","toSide":"top","label":"题材B"},
+		{"id":"e3","fromNode":"root","fromSide":"bottom","toNode":"behavior","toSide":"top","label":"2号行为库"},
+		{"id":"e4","fromNode":"fantasy_recipe","fromSide":"bottom","toNode":"fantasy_nouns","toSide":"top","label":"选择名词模块"},
+		{"id":"e5","fromNode":"fantasy_nouns","fromSide":"bottom","toNode":"fantasy_draw","toSide":"top","label":"名词对象"},
+		{"id":"e6","fromNode":"portal_recipe","fromSide":"bottom","toNode":"portal_nouns","toSide":"top","label":"选择名词模块"},
+		{"id":"e7","fromNode":"portal_nouns","fromSide":"bottom","toNode":"portal_draw","toSide":"top","label":"名词对象"},
+		{"id":"e8","fromNode":"behavior","fromSide":"left","toNode":"fantasy_draw","toSide":"right","label":"行动接口"},
+		{"id":"e9","fromNode":"behavior","fromSide":"right","toNode":"portal_draw","toSide":"left","label":"行动接口"},
+		{"id":"e10","fromNode":"analysis","fromSide":"top","toNode":"behavior","toSide":"bottom","label":"行为证据"},
+		{"id":"e11","fromNode":"analysis","fromSide":"left","toNode":"fantasy_nouns","toSide":"right","label":"名词采集"},
+		{"id":"e12","fromNode":"analysis","fromSide":"right","toNode":"portal_nouns","toSide":"left","label":"名词采集"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
