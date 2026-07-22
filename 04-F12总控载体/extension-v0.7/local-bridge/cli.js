@@ -43,6 +43,7 @@ Usage:
   npm run f12 -- multi-panel <tabId>
   npm run f12 -- multi-archive <tabId>
   npm run f12 -- multi-dump <tabId>
+  npm run f12 -- multi-image <tabId> <output.png>
   npm run f12 -- multi-script <tabId> <script.js>
   npm run f12 -- clear
 `);
@@ -486,6 +487,45 @@ async function main() {
       channel,
       source
     }, !noWait);
+    return;
+  }
+
+  if (cmd === 'multi-image') {
+    const tabId = Number(args[1]);
+    const output = args[2] ? path.resolve(process.cwd(), args[2]) : '';
+    if (!tabId) throw new Error('Missing tabId');
+    if (!output) throw new Error('Missing output image path');
+    const response = await enqueue('MULTI_COMMAND', {
+      tabId,
+      command: 'EXPORT_LATEST_IMAGE',
+      source,
+      returnPolicy: 'full'
+    }, true);
+    const command = response?.command;
+    if (!command || command.status !== 'done') {
+      throw new Error(`Image export command did not complete: ${command?.status || 'unknown'}`);
+    }
+    const exported = command.result?.result || command.result || {};
+    if (!exported.ok || !exported.dataUrl) {
+      throw new Error(exported.error || 'No image data returned');
+    }
+    const match = String(exported.dataUrl).match(/^data:([^;,]+)?(?:;charset=[^;,]+)?;base64,([\s\S]+)$/i);
+    if (!match) throw new Error('Unsupported image data URL');
+    const bytes = Buffer.from(match[2], 'base64');
+    if (bytes.length < 10 * 1024) throw new Error(`Exported image is too small: ${bytes.length} bytes`);
+    fs.mkdirSync(path.dirname(output), { recursive: true });
+    const temporary = `${output}.tmp`;
+    fs.writeFileSync(temporary, bytes);
+    fs.renameSync(temporary, output);
+    console.log(JSON.stringify({
+      ok: true,
+      output,
+      bytes: bytes.length,
+      mime: match[1] || exported.mime || 'image/png',
+      naturalWidth: exported.naturalWidth || null,
+      naturalHeight: exported.naturalHeight || null,
+      sourceUrl: exported.href || ''
+    }, null, 2));
     return;
   }
 

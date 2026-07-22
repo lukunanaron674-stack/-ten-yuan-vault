@@ -1,18 +1,12 @@
 {
-  "ok": false,
-  "slot": "1130",
+  "ok": true,
+  "slot": "1200",
   "dryRun": false,
-  "startedAt": "2026-07-19T14:48:09",
+  "startedAt": "2026-07-22T12:00:02",
   "spentBefore": 0,
   "actions": [],
-  "monthlyCard": {
-    "attempted": true,
-    "status": "clicked_unconfirmed",
-    "detectedState": "available",
-    "afterState": "unknown"
-  },
-  "initialPoolState": "unknown",
-  "status": "failed",
-  "error": "无法确认免费或半价状态，已停止",
-  "finishedAt": "2026-07-19T14:49:45"
+  "initialPoolState": "full",
+  "status": "full_price_blocked",
+  "message": "当前为 200 原价，未点击",
+  "finishedAt": "2026-07-22T12:01:44"
 }
