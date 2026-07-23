@@ -1,5 +1,6 @@
 name: Fix concept scene sections
 
+# 同仓库 PR 同步触发；脚本成功后只提交 Canvas 与修复报告。
 on:
   push:
     branches:
