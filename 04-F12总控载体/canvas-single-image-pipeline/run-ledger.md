@@ -23,6 +23,18 @@
 - 结果：completed
 - Skill：`07-Codex大脑库/skills/Canvas概念库参考图补全/SKILL.md`
 - Skill 提交：`df3a117948215dfe6c54d5224dbae3f01ebb59ba`
-- 远端读回：待本轮验证
+- 远端读回：已于后续运行确认
 - 失败原因：none
 - 下一动作：按 Skill 每次处理一个概念，连续执行直到 `no_missing_concepts`。
+
+## 2026-07-23T08:59:10+08:00｜游牧流浪_is-a名词素材库.canvas｜n12 厚棉长衫
+
+- 结果：failed
+- 参考笔记：`09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n12_厚棉长衫_reference.md`
+- 来源页：`https://commons.wikimedia.org/wiki/File:Jordanian_Bedouin_Arab_Men.jpg`
+- 参考提交：`7ba9299e87668c09ee85b47ead553e6ebd811b2e`
+- Canvas 提交：none
+- Canvas blob：`62618e8994c86988059bc60c9b10af2dab13f34c`
+- 远端读回：reference=true; canvas=false
+- 失败原因：Skill 与运行账本位于 `main`，但状态文件和目标 Canvas 只存在于 `codex/pirate-r2-architecture-github`，仓库执行分支不一致。参考笔记已提交到 Canvas 所在分支，未伪报 Canvas 已接入。
+- 下一动作：在 `codex/pirate-r2-architecture-github` 为 n12 新增 `ref_n12` file 节点和 `e_ref_n12` 连线，并远端验证；完成前不得选择下一概念。
