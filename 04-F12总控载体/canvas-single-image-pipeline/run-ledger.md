@@ -51,3 +51,16 @@
 - 远端读回：true
 - 失败原因：none
 - 下一动作：扫描当前 Canvas，选择下一个没有可验证参考文件与 text→file 连线的概念。
+
+## 2026-07-23T10:58:26+08:00｜游牧流浪_is-a名词素材库.canvas｜n18 手工织毯围裙
+
+- 结果：completed
+- 参考笔记：`09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n18_手工织毯围裙_reference.md`
+- 来源页：`https://commons.wikimedia.org/wiki/File:Казахская_женщина_ткёт.jpg`
+- 参考提交：`2c15f7236ecc055817d127df5b9ccbc9746ea6ea`
+- Canvas 提交：`9b1428aaa4c9b36a34c8b924d7bd03595cb2d45b`
+- Canvas blob：`00c833b2381861528e68d36354a0e5ee2e400428`
+- 状态提交：`96c5dc02730b7ae0fb52ca0742b79ce534cb76c6`
+- 远端读回：true
+- 失败原因：none
+- 下一动作：扫描当前 Canvas，选择下一个没有可验证参考文件与 text→file 连线的概念。
