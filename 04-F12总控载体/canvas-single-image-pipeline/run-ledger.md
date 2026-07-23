@@ -38,3 +38,16 @@
 - 远端读回：reference=true; canvas=false
 - 失败原因：Skill 与运行账本位于 `main`，但状态文件和目标 Canvas 只存在于 `codex/pirate-r2-architecture-github`，仓库执行分支不一致。参考笔记已提交到 Canvas 所在分支，未伪报 Canvas 已接入。
 - 下一动作：在 `codex/pirate-r2-architecture-github` 为 n12 新增 `ref_n12` file 节点和 `e_ref_n12` 连线，并远端验证；完成前不得选择下一概念。
+
+## 2026-07-23T10:03:00+08:00｜游牧流浪_is-a名词素材库.canvas｜n12 厚棉长衫
+
+- 结果：completed
+- 参考笔记：`09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n12_厚棉长衫_reference.md`
+- 来源页：`https://commons.wikimedia.org/wiki/File:Jordanian_Bedouin_Arab_Men.jpg`
+- 参考提交：`7ba9299e87668c09ee85b47ead553e6ebd811b2e`
+- Canvas 提交：`3408e6fa7328b9c9e6e4888a23d38d8313d32d33`
+- Canvas blob：`e081fa60c02c9557612dc1945c6b48ae18c1fe55`
+- 状态提交：`b83a7ec5ab62d818b966c5b0c084bd432bdcbe7a`
+- 远端读回：true
+- 失败原因：none
+- 下一动作：扫描当前 Canvas，选择下一个没有可验证参考文件与 text→file 连线的概念。
