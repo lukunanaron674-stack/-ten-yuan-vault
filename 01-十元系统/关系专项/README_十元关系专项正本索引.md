@@ -1,8 +1,8 @@
 ---
 type: relation-canonical-index
 status: current
-version: v1.6
-updated: 2026-07-23T22:31:44+08:00
+version: v1.7
+updated: 2026-07-23T23:31:00+08:00
 system: 十元
 is_a: 字典或总表
 parent: 07-Codex大脑库/Codex大脑总入口.md#当前语义优先级
@@ -41,6 +41,7 @@ priority: canonical-relation-routing
 | xz 补 nz | `xz补nz_风险路径与柔情归宿互补正式机制_20260719.md` | canonical-current | 核心表补位 |
 | n 生 xn | `n生xn_承载负荷提炼持续运行结构正式机制_20260719.md` | canonical-current | 核心表几何位 |
 | zn 生 n | `zn生n_意义撤回推出资格并生成持续承载正式机制_20260723.md` | canonical-current | 核心表几何位 |
+| xz 生 zx | `xz生zx_危险造成决定空位并生成临时公开权能正式机制_20260723.md` | canonical-current | 核心表几何位 |
 | x并z 克 nz | `x并z克nz_身份壳污染关系证据正式机制_20260719.md` | canonical-current | 核心表几何位 |
 | nz 克 x | `nz克x_关系余温压缩关系控制边界正式机制_20260719.md` | canonical-current | 核心表几何位 |
 | x 克 nz | `x克nz_关系掌握使停靠失去自愿性正式机制_20260720.md` | canonical-current | 核心表几何位 |
@@ -51,7 +52,7 @@ priority: canonical-relation-routing
 ## 3. 已并入同步补丁
 
 - `x并z生z_总词典待二审状态撤回与正式机制同步补丁_20260720.md`
-- `x生x并z_总词典待二审状态撤回与正式机制同步补丁_20260720.md`
+- `x生x并z_总词典旧身份漂流口径撤回与正式机制同步补丁_20260720.md`
 - `xn生xz_总词典旧身份漂流口径撤回与正式机制同步补丁_20260720.md`
 - `zx克n_总词典旧突破容器口径撤回与正式机制同步补丁_20260720.md`
 - `zx补nx_总词典旧暗线口径撤回与正式机制同步补丁_20260721.md`
@@ -69,4 +70,4 @@ priority: canonical-relation-routing
 
 ## 5. 审计路由
 
-未锁定、待二审和状态纠正关系进入关系审计索引。`zn生n_意义扩大承接边界机制二次审计_20260719.md` 已被正式专项取代，只按 evidence-only 读取。
+未锁定、待二审和状态纠正关系进入关系审计索引。`zn生n_意义扩大承接边界机制二次审计_20260719.md` 与 `xz生zx_危险迫使潜在权能公开还是仅显影二次审计_20260720.md` 已被正式专项取代，只按 evidence-only 读取。
