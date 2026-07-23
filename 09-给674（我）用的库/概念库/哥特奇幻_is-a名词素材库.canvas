@@ -372,5 +372,9 @@
 		{"id":"ex_scene_component","fromNode":"scene_master","fromSide":"right","toNode":"component_master","toSide":"left"},
 		{"id":"ex_component_motifelem","fromNode":"component_master","fromSide":"right","toNode":"motifelem_master","toSide":"left"},
 		{"id":"edge_clothing_c0_0_img","fromNode":"clothing_c0_0","fromSide":"right","toNode":"img_clothing_c0_0","toSide":"left"}
-	]
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

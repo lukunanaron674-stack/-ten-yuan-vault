@@ -843,3 +843,9 @@ first_theme_target: 因果型 zx+nx
 - manga: 君と宇宙を歩くために / 为了与你在宇宙行走 / 为了与你慢步宇宙 / タコピーの原罪 / 章鱼嗶的原罪 / ダンダダン / 胆大党 / Dandadan
 - status: protagonist_tenyuan_behavior_enumeration_batch47_old_twentysecond_reaudit_20260723
 - note: 第四十七批把旧第二十二批3部、5位人物收紧为33条“具体行为→下一行唯一归类”。小林5条（`n`2/`xn`2/`nx`1）主`n`95%次`xn`94%；宇野5条（`xn`3/`n`2）主`xn`96%次`n`94%；Takopi公开简介范围3条均归`nx`，主`nx`96%、次未判，旧`zn`候选撤回；桃9条（`xn`5/`zx`3/`nx`1）主`xn`96%次`zx`95%；厄卡伦11条（`xn`6/`zx`3/`n/nx`各1）主`xn`96%次`zx`95%，两人旧`n`次位撤回。保留小林、宇野两项`n生xn`候选，其余旧关系撤回。未改96/95/84.62、92、91/旧6评分，作品主维、归仓、作品ID或理论。
+
+## status update - 2026-07-23 16:30:29
+
+- manga: アイドラトリィ / Idolatry / 邪神の弁当屋さん / 判处勇者刑 / 判處勇者刑 / 勇者刑に処す 懲罰勇者9004隊刑務記録
+- status: protagonist_tenyuan_behavior_enumeration_batch48_old_twentythird_validation_20260723
+- note: 第四十八批将旧第二十三批3部、3位主角、16条行为转为带证据键的现行校验正本，行为及逐条归类未改：陽見循菜5条（`xn`3/`nx`1/暂不归类1）主`xn`95%次`nx`92%；レイニー6条（`n`3/`xn`2/`nx`1）主`n`94%次`xn`88%，`n生xn`仅84%候选；ザイロ5条（`nx`3/`n`1/`zx`1）主`nx`92%次`n`88%，`nx补zx`仅83%候选。第二十三批旧报告转legacy-superseded，并清理第九、第十、第二十一批旧报告残留active状态。未改96/93/93与旧9分、作品主维、归仓、作品ID或理论。
