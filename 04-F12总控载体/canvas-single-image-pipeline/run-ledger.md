@@ -90,3 +90,16 @@
 - 远端读回：true
 - 失败原因：none
 - 下一动作：扫描当前 Canvas，选择下一个没有可验证参考文件与 text→file 连线的概念。
+
+## 2026-07-23T14:01:42+08:00｜游牧流浪_is-a名词素材库.canvas｜n38 风帐营地废墟被花蔓侵蚀
+
+- 结果：failed
+- 参考笔记：`09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n38_风帐营地废墟被花蔓侵蚀_reference.md`
+- 来源页：`https://commons.wikimedia.org/wiki/File:Flowers_and_Ruins_-_Takht-e_Soleiman_-_Western_Iran_(7421821748).jpg`
+- 参考提交：`964757fc087eb5cc342f4bedfee2d8ea3249dcbc`
+- Canvas 提交：none
+- Canvas blob：`a01a1884369e442977fe939791fe654f830f6f44`
+- 状态提交：`2de99554862e1ca283e9bb32cd185cb582561302`
+- 远端读回：reference=true; canvas=false
+- 失败原因：参考笔记已提交并远端读回，但本轮未完成 Canvas 全量 JSON 的安全原位替换；为避免截断当前 92 个概念节点及既有参考连线，保留 n38 断点，不选择下一概念。
+- 下一动作：在 `codex/pirate-r2-architecture-github` 为 n38 新增 `ref_n38` file 节点和 `e_ref_n38` 连线，并远端验证；完成前不得选择下一概念。
