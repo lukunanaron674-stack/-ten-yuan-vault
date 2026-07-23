@@ -92,7 +92,8 @@
 		{"id":"n90","type":"text","text":"CN 意象脑暴词\n游牧流浪·永不停歇\n地平线=唯一的风景\n帐篷在风中鼓起\n驼铃在沙漠中回响\n篝火边的影子讲故事\n永远在移动的族群\n风沙中的彩色织物残片","x":1950,"y":-850,"width":280,"height":400,"color":"6"},
 		{"id":"n91","type":"text","text":"📊 十元映射简表\n类别  形        色       质        光       空\n服装 便捷多层 沙黄土红 羊毛皮革   自然天光   层次堆叠\n建筑 轻便临时 土黄沙色 帆布毛毡   透光帐布   低矮开放\n场景 辽阔荒野 金黄土褐 沙土草泽   无遮阳光   地平线广\n构件 简易实用 棕褐皮革 粗绳木桩   光照投影   横向低矮\n元素 旅途符号 沙黄棕红 织物木质   沙漠烈日   流动循环","x":1570,"y":-450,"width":640,"height":225,"color":"6"},
 		{"id":"n92","type":"text","text":"📎 完整数据见 is-a.md\n含全部服装+建筑+场景+构件+元素\n以及十元映射简表和Prompt检索词","x":1570,"y":-190,"width":460,"height":100,"color":"1"},
-		{"id":"ref_n5","type":"file","file":"09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n5_彩色条纹长袍_reference.md","x":-2780,"y":-500,"width":340,"height":260}
+		{"id":"ref_n5","type":"file","file":"09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n5_彩色条纹长袍_reference.md","x":-2780,"y":-500,"width":340,"height":260},
+		{"id":"ref_n12","type":"file","file":"09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n12_厚棉长衫_reference.md","x":-2500,"y":-500,"width":340,"height":260}
 	],
 	"edges":[
 		{"id":"e_root_def","fromNode":"n1","fromSide":"bottom","toNode":"n2","toSide":"top"},
@@ -185,6 +186,7 @@
 		{"id":"e_p_en_cn","fromNode":"n89","fromSide":"right","toNode":"n90","toSide":"left"},
 		{"id":"e_p_en_ty","fromNode":"n89","fromSide":"bottom","toNode":"n91","toSide":"top"},
 		{"id":"e_note","fromNode":"n91","fromSide":"bottom","toNode":"n92","toSide":"top"},
-		{"id":"e_ref_n5","fromNode":"n5","fromSide":"left","toNode":"ref_n5","toSide":"right","label":"参考图"}
+		{"id":"e_ref_n5","fromNode":"n5","fromSide":"left","toNode":"ref_n5","toSide":"right","label":"参考图"},
+		{"id":"e_ref_n12","fromNode":"n12","fromSide":"left","toNode":"ref_n12","toSide":"right","label":"参考图"}
 	]
 }
