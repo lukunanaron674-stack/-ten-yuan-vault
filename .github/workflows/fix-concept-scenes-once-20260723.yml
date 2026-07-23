@@ -2,7 +2,7 @@ name: One-shot concept scene correction
 
 on:
   schedule:
-    - cron: '45 8 23 7 *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 permissions:
