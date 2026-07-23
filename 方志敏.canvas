@@ -62,7 +62,7 @@
 		}
 	],
 	"edges":[
-		{"id":"e-t1-t2","fromNode":"theory-1","fromSide":"left","toNode":"theory-2","toSide":"right","label":"概括"},
+		{"id":"e-t1-t2","toFloating":false,"fromNode":"theory-1","fromSide":"left","toNode":"theory-2","toSide":"right","label":"概括"},
 		{"id":"e-t1-act1","fromNode":"theory-1","fromSide":"bottom","toNode":"act2-sc1","toSide":"left","label":"对照"},
 		{"id":"e-sc1-sc2","fromNode":"act2-sc1","fromSide":"right","toNode":"act2-sc2","toSide":"left","label":"凛进场"},
 		{"id":"e-sc2-sc3","fromNode":"act2-sc2","fromSide":"bottom","toNode":"act2-sc3","toSide":"top","label":"高家俊女友"},
