@@ -64,3 +64,16 @@
 - 远端读回：true
 - 失败原因：none
 - 下一动作：扫描当前 Canvas，选择下一个没有可验证参考文件与 text→file 连线的概念。
+
+## 2026-07-23T12:03:50+08:00｜游牧流浪_is-a名词素材库.canvas｜n25 风帐营地
+
+- 结果：failed
+- 参考笔记：`09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n25_风帐营地_reference.md`
+- 来源页：`https://commons.wikimedia.org/wiki/File:Mongolia_Herding_Life_6.JPG`
+- 参考提交：`20231032f011f06c27b434766d96d9d74f2f9041`
+- Canvas 提交：none
+- Canvas blob：`00c833b2381861528e68d36354a0e5ee2e400428`
+- 状态提交：`b8482abb0ab676d46af7f354f7cded1ca35d473f`
+- 远端读回：reference=true; canvas=false
+- 失败原因：参考笔记已完成并远端提交，但本轮未完成 Canvas 全量 JSON 的安全原位替换；为避免覆盖或截断现有 92 个概念节点，只保留当前断点，不跳到下一概念。
+- 下一动作：在 `codex/pirate-r2-architecture-github` 为 n25 新增 `ref_n25` file 节点和 `e_ref_n25` 连线，并远端验证；完成前不得选择下一概念。
