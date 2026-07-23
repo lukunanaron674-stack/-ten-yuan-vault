@@ -11,8 +11,8 @@ status: active-experimental
 
 - 总量：98种
 - 批次：14批 × 每批7种
-- 当前进度：21/98
-- 已完成：3/14批
+- 当前进度：28/98
+- 已完成：4/14批
 - 主 Canvas：`05-银矿库/角色库/刘海98种/98种流行女性刘海.canvas`
 - 仓库：`lukunanaron674-stack/-ten-yuan-vault`
 - 分支：`main`
@@ -90,7 +90,7 @@ status: active-experimental
 - 每种保留真实来源 link 节点与说明节点
 - 在线图片可作辅助，但必须保留原始来源链接
 - Canvas 必须可编辑，不能用单张海报替代
-- 当前 Canvas 已改为多行 JSON，后续更新时必须保留现有节点并追加下一批
+- 后续更新必须保留已完成条目与编号连续性
 
 ## 批次审计
 
@@ -137,20 +137,27 @@ status: active-experimental
 20. 卷曲帘幕刘海
 21. 外翻帘幕刘海
 
-主要来源：
+帘幕家族核心：中央短、两侧连续渐长，形成中分开口与双侧脸框。
 
-- Hair.com by L’Oréal：`Curtain Bangs Are Trending—Here’s How To Try The Vintage Cut For Yourself`
-- Hair.com：`25 On-Trend Ways To Try Short Hair With Bangs`
-- Who What Wear：`Fringes Are Eternally Chic—These 5 Styles Are About to Make a Major Comeback`
-- Allure：`Why Curtain Bangs Look Amazing on Everyone`
+### 第4批｜八字刘海系｜7/7
 
-帘幕家族核心证据：中央开口、中心短两侧渐长、向两边展开、连接脸侧。已排除瓶颈刘海、普通中分长发、中央闭合厚齐刘海。
+22. C字中分八字刘海
+23. S字中分八字刘海
+24. 六四偏分八字刘海
+25. 短颧骨八字刘海
+26. 长下巴八字刘海
+27. 空气感八字刘海
+28. 厚束复古八字刘海
+
+八字家族核心：两侧前区发束向外形成“八”字，中央极少或无中央短刘海；以 C/S 卷度、分线、长度、束量区分。与帘幕刘海的边界是：帘幕强调中央短层向两侧连续渐长，八字强调两侧独立束与卷度造型。
+
+主要来源：UpToGo、搜狐韩国发型师教程、哒鸣派、All Things Hair、Team Salon Singapore。
 
 ## 下一批
 
-### 第4批｜八字刘海｜待执行
+### 第5批｜瓶颈刘海｜待执行
 
-先处理中文语境中“八字刘海”与 curtain bangs 的重叠问题。只保留视觉结构上能独立成立的八字系变体，并明确与第3批帘幕刘海的边界；不能把同一帘幕结构换中文营销名重复计数。
+优先使用 Hair.com 对 bottleneck bangs 的定义：中央较短、向太阳穴和颧骨逐渐加宽，轮廓类似瓶颈。必须与帘幕刘海和八字刘海区分：瓶颈需要明确“中央短窄＋两侧向下扩宽”的 V／瓶颈轮廓。
 
 ## 最终完成条件
 
