@@ -1,8 +1,8 @@
 ---
 type: relation-canonical-index
 status: current
-version: v1.7
-updated: 2026-07-23T23:31:00+08:00
+version: v1.8
+updated: 2026-07-25T04:01:49+08:00
 system: 十元
 is_a: 字典或总表
 parent: 07-Codex大脑库/Codex大脑总入口.md#当前语义优先级
@@ -24,6 +24,7 @@ priority: canonical-relation-routing
 3. 审计、待二审和旧案例只作 evidence。
 4. 已有 `canonical-current` 时，同关系旧审计只能按 evidence-only 读取。
 5. 几何位置锁定不等于机制锁定。
+6. 文件自身仍保留 `current-patch / canonical-amendment`，但已被本索引列入“生命周期待修”时，不得继续按理论覆盖层读取；这属于治理状态滞后，不代表机制重新变成待同步。
 
 ## 2. 当前专项正本
 
@@ -65,8 +66,12 @@ priority: canonical-relation-routing
 
 ## 4. 目标已同步、仅待安全降级的长补丁
 
-- `xz补nz_总词典旧题材口径撤回与正式机制同步补丁_20260720.md`
-- `x并z克nz_总词典旧太太团口径撤回与正式机制同步补丁_20260721.md`
+| 文件 | 现行治理身份 | 已覆盖者 | 直接打开警告 |
+|---|---|---|---|
+| `xz补nz_总词典旧题材口径撤回与正式机制同步补丁_20260720.md` | lifecycle-only / 旧稿待降级 | 核心表、关系词典、强制必读中枢、`xz补nz` 正式专项 | 文件内 `relation-current-patch / canonical-sync-patch` 已失效，不得据此恢复覆盖权 |
+| `x并z克nz_总词典旧太太团口径撤回与正式机制同步补丁_20260721.md` | lifecycle-only / 旧稿待降级 | 核心表、关系词典、强制必读中枢、`x并z克nz` 正式专项 | 文件内 `current-patch / canonical-amendment` 已失效，不得据此恢复覆盖权 |
+
+> 两份长补丁仍含独有对象分层、案例、反例和测试材料。完成无损 frontmatter 改写前，保留原文件；但其理论覆盖资格已经由本索引撤销。任何只读取 frontmatter 的工具，都必须再读取本节后才能判定文件身份。
 
 ## 5. 审计路由
 
