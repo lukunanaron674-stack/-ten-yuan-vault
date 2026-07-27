@@ -1,12 +1,11 @@
 {
-  "ok": true,
+  "ok": false,
   "slot": "1200",
   "dryRun": false,
-  "startedAt": "2026-07-24T12:00:05",
+  "startedAt": "2026-07-26T12:00:02",
   "spentBefore": 0,
   "actions": [],
-  "initialPoolState": "full",
-  "status": "full_price_blocked",
-  "message": "当前为 200 原价，未点击",
-  "finishedAt": "2026-07-24T12:01:04"
+  "status": "failed",
+  "error": "error: closed",
+  "finishedAt": "2026-07-26T12:00:38"
 }
