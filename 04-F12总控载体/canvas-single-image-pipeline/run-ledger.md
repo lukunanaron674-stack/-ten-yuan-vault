@@ -168,3 +168,15 @@
 - 远端读回：true
 - 失败原因：none
 - 下一动作：下次运行继续一致性恢复，优先处理 n18；跳过受污染的旧场景区。
+
+## 2026-07-28T20:02:01+09:00｜游牧流浪_is-a名词素材库.canvas｜n18 手工织毯围裙
+
+- 结果：completed
+- 参考笔记：`09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n18_手工织毯围裙_reference.md`
+- 来源页：`https://commons.wikimedia.org/wiki/File:Казахская_женщина_ткёт.jpg`
+- 参考提交：`8a63de8f07725d08ca79d754ee5953fbc37bfdf6`
+- Canvas 提交：`9182febf201597710071d0ff5829cc1a09c97cf6`
+- Canvas blob：`39f47661f93b614240b6f8bd5a7d3f0acf94a151`
+- 远端读回：reference=true; canvasNode=true; canvasEdge=true; commit=true; blob=true
+- 失败原因：none
+- 下一动作：下次运行按批处理规则从 n25 开始，继续跳过受污染的旧场景区。
