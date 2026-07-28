@@ -7,6 +7,10 @@ target: z
 relation_status: locked
 status: canonical-current-card
 version: v0.1
+card_schema_version: v1.1
+memory_record_version: v1.0
+last_memory_run_id: null
+last_memory_commit: null
 updated: 2026-07-28
 relation_table_version: v2.22
 primary_hourly_write_target: true
@@ -42,6 +46,6 @@ canonical_specialty: 01-十元系统/关系专项/x并z生z_可识别壳建立�
 
 每次复核把新增正例、反例、边界和七项最弱值写在本卡；正式机制修改仍须走专项正本与95%门槛。
 
-## 卡内更新区
+## 记忆记录
 
-账本只保存slot、提交SHA和验证状态；理论正文、案例与证据变化优先写入本卡。
+账本只保存slot、提交SHA和验证状态；理论正文、案例与证据变化优先写入本卡，并记录版本号、run_id与commit SHA。
