@@ -8,9 +8,9 @@ relation_status: research-active
 status: canonical-working-card
 version: v0.1
 card_schema_version: v1.1
-memory_record_version: v1.0
-last_memory_run_id: null
-last_memory_commit: null
+memory_record_version: v1.1
+last_memory_run_id: 6a57edfc813081918542846f23358130|2026-07-28-15|xz 克 zn|99d0a9ada6343055918f5a60e83aebb57382d08c|0
+last_memory_commit: SELF
 updated: 2026-07-28
 relation_table_version: v2.22
 primary_hourly_write_target: true
@@ -45,4 +45,14 @@ canonical_specialty: null
 
 ## 记忆记录
 
-每轮把安全情境复测、正反例、七项评分、版本号、run_id与commit SHA写入本卡。
+### MR-1.1｜2026-07-28-15｜轻量复核
+
+- 新增独立证据：否。
+- 正本冲突：否；信息卡、准度卡、克位表与词典一致。
+- 候选机制A：危险造成代价更新，主体修订原则适用谓词；属于条件细化。
+- 候选机制B：创伤与身份退出造成场景回避；属于调用受阻或状态压制。
+- 候选机制C：危险揭示原则内部矛盾并撤销未来授权；现有材料未隔离新事实/反证。
+- 七项：源端点96；目标端点96；机制84；独立证据69；竞争解释78；可逆性72；复现69；最终69。
+- 结论变化：无，保持未锁定。
+- 下一证据目标：危险解除、能力恢复并跨安全场景后，仍撤销同一原则未来资格。
+- commit_ref：SELF。
