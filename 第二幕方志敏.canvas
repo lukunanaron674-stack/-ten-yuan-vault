@@ -1,51 +1,6 @@
 {
 	"nodes":[
-		{"id":"f10ba1c08427ebf1","type":"group","x":-1060,"y":-900,"width":1659,"height":1275,"color":"1","label":"第二幕"},
-		{
-			"id":"6e46831d7c904405",
-			"type":"text",
-			"text":"监狱参考",
-			"styleAttributes":{},
-			"x":-80,
-			"y":-1280,
-			"width":260,
-			"height":80
-		},
-		{"id":"00980c8b2fb465f5","type":"file","file":"dbd04dac346b4594accc0980967b31d1.jpg","x":-280,"y":-1760,"width":300,"height":400},
-		{"id":"ffeb51557c15baa3","type":"file","file":"6032e61468d861889330eca8d421af3b.jpg","x":-760,"y":-1550,"width":400,"height":300},
-		{
-			"id":"23f79fcca1aad841",
-			"type":"text",
-			"text":"生成监狱场景 风格：\n场景内容：\n镜头：\n光影：",
-			"styleAttributes":{},
-			"x":-680,
-			"y":-2040,
-			"width":300,
-			"height":120
-		},
-		{
-			"id":"817f3eae63521f73",
-			"type":"text",
-			"text":"士兵：这个份量的“大官”身上一定有钱！",
-			"styleAttributes":{},
-			"x":-1040,
-			"y":-220,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"5afa2a55f1f7718a",
-			"type":"text",
-			"text":"两个人坐在草席床上，\n",
-			"styleAttributes":{},
-			"x":-160,
-			"y":-720,
-			"width":260,
-			"height":60
-		},
-		{"id":"9f1b844290a39b04","type":"text","text":"## SCENE 2：凛递报纸（~8s）\n转\n\n**画面：**\n几位狱友聊的不亦乐乎\n紧急报告情况\n凛的身影穿过铁栏间隙，把报纸递进牢房。方志敏接过，眼神落在报纸标题上。凛没说话，退入阴影。\n凛看向脚镣铐\n\n场景 监狱正铁栏 狱友和方做里面 高站外面  铁栏关着 中远景别 能看到隔壁房间 隔壁房狱友站在外面聊的开心\n**声音：**\n报纸折叠的细响，凛的脚步声远去\n\n**文字前景：**\n---\n[报纸标题特写]\n「攘外必先安内」\n---\n\n方的手指压在标题上，紧了。","x":1280,"y":-1070,"width":420,"height":630,"color":"1"},
-		{"id":"392b788479185fe8","type":"text","text":"## SCENE 1：胡逸飞劝降\n方志敏被押进来，脸上身上全是伤，囚服破烂，血在滴。\n\n---\n\n\n","x":149,"y":-885,"width":430,"height":125,"color":"1"},
-		{"id":"1ec1e17602dce056","type":"text","text":"━━━ 第二幕 ━━━","x":-1480,"y":-1160,"width":500,"height":60,"color":"6"},
+		{"id":"f10ba1c08427ebf1","type":"group","x":-1200,"y":-900,"width":1855,"height":1220,"color":"3","label":"第二幕"},
 		{
 			"id":"c153b061d1cc1555",
 			"type":"text",
@@ -57,131 +12,116 @@
 			"height":120
 		},
 		{
-			"id":"05096caffae3e86d",
+			"id":"d2db4168cac6ef13",
 			"type":"text",
-			"text":"胡逸民：“他们让我告诉你，只要肯写一份声明，家人，性命、高官、厚禄，都可以谈。”\n",
+			"text":"插入《清贫》画面\n风格：\n场景： 火红的战场\n行为：两个国民党士兵在战场树林掠夺搜身方志敏。\n国民党士兵外貌描述：\n构图：\n共产党方志敏外貌服装描述：灰扑扑的共产党服装（具体样貌？）\n",
 			"styleAttributes":{},
-			"x":-476,
-			"y":-600,
-			"width":840,
-			"height":80
+			"x":-710,
+			"y":-280,
+			"width":400,
+			"height":240,
+			"color":"2"
+		},
+		{"id":"1ec1e17602dce056","type":"text","text":"━━━ 第二幕 ━━━劝降反被劝","x":-701,"y":-905,"width":500,"height":60,"color":"6"},
+		{"id":"7583ce51d7db4a35","type":"file","file":"Pasted image 20260729022123.png","x":-1101,"y":-845,"width":400,"height":267},
+		{"id":"a331eaeab923b6f1","type":"file","file":"Pasted image 20260729022136.png","x":-1160,"y":-482,"width":400,"height":263},
+		{"id":"dbedcd9852da42bc","type":"file","file":"Pasted image 20260728212409.png","x":-601,"y":-672,"width":400,"height":225},
+		{"id":"392b788479185fe8","type":"text","text":"## SCENE 1：胡逸飞劝降\n方志敏被押进来，脸上身上全是伤，囚服破烂，血在滴。\n\n---\n\n\n","x":149,"y":-845,"width":430,"height":125},
+		{"id":"9889602b19ad5294","type":"file","file":"方.png","x":149,"y":-690,"width":400,"height":263},
+		{
+			"id":"ae3bc8ef91ea24ab",
+			"type":"text",
+			"text":"方：“你我 真的想争夺这高官厚禄吗？”",
+			"styleAttributes":{},
+			"x":224,
+			"y":-40,
+			"width":260,
+			"height":80,
+			"color":"1"
 		},
 		{
 			"id":"520b351cdf235652",
 			"type":"text",
 			"text":"\n描写胡逸民的神情。\n“胡兄作为一开始就跟随国民党的高管，\n不也为了兄弟舍弃一切进了监狱吗“\n方志敏掰开饼：“先吃，凉了就不好吃了。 自有人间真情在，干一个。”\n\n",
 			"styleAttributes":{},
-			"x":-235,
-			"y":160,
+			"x":114,
+			"y":100,
 			"width":500,
 			"height":180
 		},
 		{
+			"id":"002c13fd9f3c4603",
+			"type":"text",
+			"text":"士兵在搜摸 方志敏的身",
+			"styleAttributes":{},
+			"x":-316,
+			"y":40,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"817f3eae63521f73",
+			"type":"text",
+			"text":"士兵：这个份量的“大官”身上一定有钱！",
+			"styleAttributes":{},
+			"x":-640,
+			"y":40,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{"id":"dea657d2a06d49a0","type":"text","text":"两个士兵贼眉鼠眼的中景别仰视镜头  眼睛睁大 贼笑","x":-610,"y":180,"width":200,"height":100,"color":"2"},
+		{
+			"id":"4509627cc6630f34",
+			"type":"text",
+			"text":"转到背后镜头，士兵搜索方志敏的身",
+			"styleAttributes":{},
+			"x":-316,
+			"y":180,
+			"width":260,
+			"height":90,
+			"color":"2"
+		},
+		{"id":"7c2a4153b5adc3fd","type":"file","file":"Pasted image 20260729022142.png","x":-1160,"y":-219,"width":400,"height":263},
+		{
 			"id":"6ff816df413d36d2",
 			"type":"text",
-			"text":"方志敏：“高官厚禄吗“\n\" 胡兄可知当晚我被捕之事？\"\n\n接清贫画面",
+			"text":"方志敏：“高官厚禄吗“\n抬头\n\" 胡兄可知当晚我被捕之事？\"\n\n接清贫画面",
 			"styleAttributes":{},
-			"x":-235,
-			"y":-343,
+			"x":-186,
+			"y":-280,
 			"width":670,
 			"height":122
 		},
 		{
-			"id":"d2db4168cac6ef13",
+			"id":"5afa2a55f1f7718a",
 			"type":"text",
-			"text":"插入《清贫》画面\n风格：\n场景： 火红的战场\n行为：两个国民党士兵在战场树林掠夺搜身方志敏。\n国民党士兵外貌描述：\n构图：\n共产党方志敏外貌服装描述：灰扑扑的共产党服装（具体样貌？）\n",
+			"text":"两个人坐在草席床上，\n",
 			"styleAttributes":{},
-			"x":-710,
-			"y":-343,
-			"width":400,
-			"height":240
-		},
-		{
-			"id":"ae3bc8ef91ea24ab",
-			"type":"text",
-			"text":"方：“你我 真的想争夺这高官厚禄吗？”",
-			"styleAttributes":{},
-			"x":-111,
-			"y":0,
-			"width":260,
-			"height":80
-		},
-		{"id":"70b68f8f26c3c57c","type":"file","file":"54de7bae-5a49-4af7-aeed-c40ec0e39e73.png","x":220,"y":-1910,"width":400,"height":225},
-		{"id":"36c4a5d80e5ff15b","type":"file","file":"d6ea8d4c-d7b9-4f47-83c7-5f7e7e19a7a3.png","x":620,"y":-1480,"width":400,"height":225},
-		{"id":"ca03c75bf1a4ac72","type":"file","file":"ccfe0f1d-026d-48f2-93c1-84af0222f93f (1).png","x":280,"y":-2160,"width":400,"height":225},
-		{
-			"id":"53a3cce21d491d71",
-			"type":"text",
-			"text":"监狱不一样 ",
-			"styleAttributes":{},
-			"x":0,
-			"y":-1940,
+			"x":-160,
+			"y":-720,
 			"width":260,
 			"height":60
 		},
-		{"id":"721fb6a80d7a5fe7","type":"text","text":"人物比例不对\n服装不对","x":820,"y":-1910,"width":200,"height":100}
+		{
+			"id":"05096caffae3e86d",
+			"type":"text",
+			"text":"胡逸民：“他们让我告诉你，只要肯写一份声明，家人，性命、高官、后路，都可以谈。”\n",
+			"styleAttributes":{},
+			"x":-410,
+			"y":-400,
+			"width":840,
+			"height":80,
+			"color":"3"
+		}
 	],
 	"edges":[
-		{
-			"id":"48acff4bee6798cf",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"6e46831d7c904405",
-			"fromSide":"top",
-			"toNode":"00980c8b2fb465f5",
-			"toSide":"bottom"
-		},
-		{
-			"id":"21ce2d7db10ce582",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"6e46831d7c904405",
-			"fromSide":"left",
-			"toNode":"ffeb51557c15baa3",
-			"toSide":"bottom"
-		},
-		{
-			"id":"65bc75d5e4d0a1b6",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"ffeb51557c15baa3",
-			"fromSide":"top",
-			"toNode":"23f79fcca1aad841",
-			"toSide":"bottom"
-		},
-		{
-			"id":"9e21ac303c1b2b53",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"d2db4168cac6ef13",
-			"fromSide":"left",
-			"toNode":"817f3eae63521f73",
-			"toSide":"right"
-		},
-		{
-			"id":"c59df96ef322b968",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"6ff816df413d36d2",
-			"fromSide":"left",
-			"toNode":"d2db4168cac6ef13",
-			"toSide":"right"
-		},
 		{
 			"id":"76656780337e0504",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"6ff816df413d36d2",
-			"fromSide":"bottom",
-			"toNode":"ae3bc8ef91ea24ab",
-			"toSide":"top"
-		},
-		{
-			"id":"54599b31f8a0feea",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"d2db4168cac6ef13",
 			"fromSide":"bottom",
 			"toNode":"ae3bc8ef91ea24ab",
 			"toSide":"top"
@@ -193,15 +133,6 @@
 			"fromNode":"ae3bc8ef91ea24ab",
 			"fromSide":"bottom",
 			"toNode":"520b351cdf235652",
-			"toSide":"top"
-		},
-		{
-			"id":"238b0dd786be7d8a",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"05096caffae3e86d",
-			"fromSide":"bottom",
-			"toNode":"6ff816df413d36d2",
 			"toSide":"top"
 		},
 		{
@@ -217,6 +148,7 @@
 			"id":"6215a1fc750dbee1",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"c153b061d1cc1555",
 			"fromSide":"bottom",
 			"toNode":"5afa2a55f1f7718a",
@@ -232,24 +164,69 @@
 			"toSide":"top"
 		},
 		{
-			"id":"d1e692751d2a9f0b",
+			"id":"e5dca0fde49a0d52",
 			"styleAttributes":{},
 			"toFloating":false,
-			"fromNode":"00980c8b2fb465f5",
+			"fromNode":"817f3eae63521f73",
+			"fromSide":"bottom",
+			"toNode":"dea657d2a06d49a0",
+			"toSide":"top"
+		},
+		{
+			"id":"b24ca38a685787e9",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"002c13fd9f3c4603",
+			"fromSide":"bottom",
+			"toNode":"4509627cc6630f34",
+			"toSide":"top"
+		},
+		{
+			"id":"c59df96ef322b968",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"6ff816df413d36d2",
+			"fromSide":"left",
+			"toNode":"d2db4168cac6ef13",
+			"toSide":"right"
+		},
+		{
+			"id":"7cd43d770c619db4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"817f3eae63521f73",
 			"fromSide":"right",
-			"toNode":"70b68f8f26c3c57c",
+			"toNode":"002c13fd9f3c4603",
 			"toSide":"left"
 		},
 		{
-			"id":"ebedfc9e5a153183",
+			"id":"f2367cc59b27a188",
 			"styleAttributes":{},
 			"toFloating":false,
-			"fromNode":"70b68f8f26c3c57c",
-			"fromSide":"top",
-			"toNode":"53a3cce21d491d71",
-			"toSide":"bottom"
+			"fromNode":"05096caffae3e86d",
+			"fromSide":"right",
+			"toNode":"6ff816df413d36d2",
+			"toSide":"right"
 		},
-		{"id":"77c9b05809a16ce0","fromNode":"70b68f8f26c3c57c","fromSide":"right","toNode":"721fb6a80d7a5fe7","toSide":"left"}
+		{
+			"id":"21d783a54da3da2c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d2db4168cac6ef13",
+			"fromSide":"right",
+			"toNode":"ae3bc8ef91ea24ab",
+			"toSide":"left"
+		},
+		{
+			"id":"235222cec80d74e4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d2db4168cac6ef13",
+			"fromSide":"bottom",
+			"toNode":"817f3eae63521f73",
+			"toSide":"top"
+		}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
