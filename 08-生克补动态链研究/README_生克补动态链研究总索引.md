@@ -1,15 +1,16 @@
 ---
 type: dynamic-chain-master-index
 status: canonical-current
-version: v3.64
+version: v3.65
 updated: 2026-07-28
-framework_version: v3.64
+framework_version: v3.65
 execution_protocol_version: v1.1
-method_amendment_version: v2.1.1-card-routing-hotfix
+method_amendment_version: v2.1.2-routing-priority-hotfix
 template_version: v1.3
 information_card_index_version: v1.1
 accuracy_card_index_version: v0.5
 relation_card_index_version: v1.0
+relation_card_index_revision: v1.0.1-confidence-output-hotfix
 ---
 
 # 生克补动态链研究总索引
