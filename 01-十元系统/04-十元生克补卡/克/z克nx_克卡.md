@@ -8,9 +8,9 @@ relation_status: research-active
 status: canonical-working-card
 version: v0.1
 card_schema_version: v1.1
-memory_record_version: v1.0
-last_memory_run_id: null
-last_memory_commit: null
+memory_record_version: v1.1
+last_memory_run_id: 6a57edfc813081918542846f23358130|2026-07-28-17|z 克 nx|a196e80597cc00e5a383fb57222735fd5eee2258|0
+last_memory_commit: SELF
 updated: 2026-07-28
 relation_table_version: v2.22
 primary_hourly_write_target: true
@@ -45,4 +45,21 @@ canonical_specialty: null
 
 ## 记忆记录
 
-每轮正反例、七项评分、核心缺口、版本号、run_id与commit SHA写入本卡。
+### MR-1.1｜2026-07-28-17｜轻量复核
+
+- 本轮类型：轻量轮。
+- 运行：`6a57edfc813081918542846f23358130|2026-07-28-17|z 克 nx|a196e80597cc00e5a383fb57222735fd5eee2258|0`。
+- 新增独立证据：否。
+- 新正本冲突：否；`z v2.2.1`、`nx v2.4`、两端准度卡、克位表与关系词典继续一致。
+- 边界复核：被重要主体认可，可以增加自信、表达许可、行动启动或对某一既有标准的坚持；这些变化不等于最终标准作者权、否决权、临时标准生成权和失败责任跨阶段回归。
+- 候选机制A：认可解除羞耻或表达抑制，主体开始表达自己的意见；这是显影和行动启动，不足以证明`nx`下降。
+- 候选机制B：主体把认可者的评价内化为新标准，随后稳定执行；方向仍可能来自认可者，属于标准来源迁移，不是自主作者权回归。
+- 候选机制C：认可使主体重新认领最终判断资格，并在认可撤回后仍能跨新情境自行生成、修订、废弃标准且承担失败；只有该机制才接近严格`z克nx`，现有材料仍未提供纯例。
+- 反例：被老师肯定后更敢按老师方法做；被伴侣鼓励后表达一次不同意见；获奖后更坚持原有流程。三者都未证明最终方向资格回归。
+- 最近邻：`z补xn`提供确认节点；教学与授权提供知识或权限；`zx`公开决定提供占位；自信上升只改变显影。
+- 拿掉测试：拿掉认可但保留能力、知识、资源和安全窗口，若主体仍能自行重设标准，则变化不由`z`解释。
+- 反向测试：认可撤回或重要认可者否定后，若主体仍独立修订标准并承担失败，支持资格已回归；若立即重新索取授权或回到他者标准，才接近`nx`恢复。
+- 七项：source_endpoint 96；target_endpoint 96；mechanism 82；independent_evidence 69；rival_exclusion 76；reversibility 72；replication 69；final 69。
+- 结论变化：无，保持未锁定。
+- 下一证据目标：寻找认可撤回、资源与能力冻结、低成本自主窗口开放后，主体仍在新情境自行生成、检验、废弃并重建标准，且失败后不索取原认可者授权的跨作品纯例。
+- commit_ref：SELF。
