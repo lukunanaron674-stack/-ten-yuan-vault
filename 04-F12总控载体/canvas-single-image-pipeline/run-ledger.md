@@ -129,3 +129,16 @@
 - 远端读回：reference=true; canvas=false
 - 失败原因：参考笔记已提交并远端读回，但本轮未完成 Canvas 全量 JSON 的安全原位替换；为避免截断现有 92 个概念节点与既有参考连线，保留 n44 断点，不选择下一概念。
 - 下一动作：在 `codex/pirate-r2-architecture-github` 为 n44 新增 `ref_n44` file 节点和 `e_ref_n44` 连线，并远端验证；完成前不得选择下一概念。
+
+## 2026-07-28T14:48:27+08:00｜游牧流浪_is-a名词素材库.canvas｜n44 风帐营地废墟被花蔓侵蚀中央空间
+
+- 结果：completed
+- 参考笔记：`09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n44_风帐营地废墟被花蔓侵蚀中央空间_reference.md`
+- 来源页：`https://commons.wikimedia.org/wiki/File:Luxtonlakecamp.JPG`
+- 参考提交：`f744b75b4b284deb404949ab231f28f5540230ee`
+- Canvas 提交：`4d3c911daf69df594a93da02f5355c67374896d3`
+- Canvas blob：`bb321f2a2c6fcb5e56ec53f5b33e8992297638c3`
+- 状态提交：`02fe11e727392bec8182ac2d0068380f63d5828c`
+- 远端读回：true
+- 失败原因：none
+- 下一动作：扫描当前 Canvas，选择下一个没有可验证参考文件与 text→file 连线的叶子概念。
