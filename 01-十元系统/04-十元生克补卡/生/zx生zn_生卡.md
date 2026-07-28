@@ -7,6 +7,10 @@ target: zn
 relation_status: research-active
 status: canonical-working-card
 version: v0.1
+card_schema_version: v1.1
+memory_record_version: v1.0
+last_memory_run_id: null
+last_memory_commit: null
 updated: 2026-07-28
 relation_table_version: v2.22
 primary_hourly_write_target: true
@@ -43,6 +47,6 @@ canonical_specialty: null
 
 每次运行原位更新：`source_endpoint / target_endpoint / mechanism / independent_evidence / rival_exclusion / reversibility / replication / final`。
 
-## 卡内更新区
+## 记忆记录
 
-本卡承载正例、反例、人物阶段、机制修订、测试结果、证据缺口与下一证据目标；账本只保存运行凭证和本卡提交SHA。
+本卡承载正例、反例、人物阶段、机制修订、测试结果、证据缺口与下一证据目标；账本只保存运行凭证、本卡版本与提交SHA。
