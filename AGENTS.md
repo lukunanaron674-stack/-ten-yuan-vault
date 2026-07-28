@@ -12,36 +12,49 @@ Before any analysis, search, writing, file edit, or commit, read in this order:
 4. `00-中枢索引/Vault可视化总览.md`.
 5. `07-Codex大脑库/Codex大脑总入口.md`.
 6. `00-中枢索引/总入口.md`.
-7. `01-十元系统/十元生补克表.md` when the task touches theory, characters, cases, dynamic chains, five themes, or relation language.
+7. When the task touches theory, characters, cases, dynamic chains, five themes, or relation language, continue in this fixed order:
+   - `01-十元系统/十元体系密度卡总览.md`;
+   - the current information cards for every involved endpoint;
+   - `01-十元系统/03-十元准度卡/README_准度卡总控_v0.5.md`;
+   - the current accuracy cards for every involved endpoint;
+   - `01-十元系统/04-十元生克补卡/README_生克补卡总控_v1.0.md`;
+   - the relevant 生 card, 克 card, or 补 card;
+   - `01-十元系统/十元生补克表.md`;
+   - `01-十元系统/关系专项/README_十元关系专项正本索引.md`.
 
 For theory tasks, record before work begins:
 
 ```text
 starting main SHA
 mandatory preflight file version
+十元信息卡总览 version
+涉及端点的信息卡与准度卡 version
+生卡 / 克卡 / 补卡 version
 十元生补克表 version
-target relation status: locked / 语义待验收 / not separately explained
+target relation status: locked / 未锁定 / 几何位保留
 previous hourly conclusion and next relation
 ```
 
-If the mandatory preflight file and current relation table were not read, the theory task has not started and no theory conclusion may be committed.
+If the mandatory preflight file, current endpoint cards, relation card, and current relation table were not read, the theory task has not started and no theory conclusion may be committed.
 
 For the hourly theory automation, the mandatory preflight file is a mutable rolling progress hub, not a read-only checklist. Every hourly run must update its version, last run, relation-table version, latest relation result, evidence gap, and next relation. A run that only updates the hourly ledger but does not write back the rolling hub is incomplete.
 
 ## Theory Red Lines
 
-1. Read the current relation table instead of relying on memory.
-2. Geometric position locked does not mean mechanism locked.
-3. Co-occurrence, sequence, contrast, or visual similarity does not prove 生 / 克 / 补.
-4. 三元 and 十元 are parallel systems. Neither is the parent or child of the other.
-5. Do not map `x / z / n` to “现象 / 本质 / 应用”. That old template is invalid.
-6. Do not revive obsolete formulas such as `x=无形欲望`, `幕后操盘=nx`, or `nx生x=压抑欲望累积`.
-7. Every relation claim must state source endpoint, target endpoint, mechanism, changed variable, stage, third factors, removal test, and reverse test.
-8. Separate stable identity, current state, behavior function, light, scene, time relation, relation position, manifestation, and dynamic chain.
-9. Old film cards, visual cards, and case cards are evidence sources, not default theory work.
-10. Repository hierarchy, old-draft coverage, and index cleanup belong to the independent governance task.
-11. No new evidence means update the rolling hub's evidence gap and next target briefly; do not regenerate a full duplicate audit.
-12. Every hourly theory run must close the loop: read rolling hub → audit one relation → update canon or evidence gap → write back rolling hub → update canonical ledger → verify commits.
+1. Read the current endpoint information cards, accuracy cards, relation cards, relation table, and canonical relation index instead of relying on memory.
+2. Information cards answer “what the endpoint is”; accuracy cards answer “why the object must be judged as that endpoint”; relation cards answer “what happens between two already-established endpoints”. They cannot replace one another.
+3. `01-十元系统/001-概念的定义.md`, `z切分焦点`, and `x现象集合` are `legacy-evidence-only`; they may explain historical files but may not generate, replace, or prove current endpoints.
+4. Geometric position locked does not mean mechanism locked.
+5. Co-occurrence, sequence, contrast, or visual similarity does not prove 生 / 克 / 补.
+6. 三元 and 十元 are parallel systems. Neither is the parent or child of the other.
+7. Do not map `x / z / n` to “现象 / 本质 / 应用”. That old template is invalid.
+8. Do not revive obsolete formulas such as `x=无形欲望`, `幕后操盘=nx`, or `nx生x=压抑欲望累积`.
+9. Every relation claim must state source endpoint, target endpoint, mechanism, changed variable, stage, third factors, removal test, and reverse test.
+10. Separate stable identity, current state, behavior function, light, scene, time relation, relation position, manifestation, and dynamic chain.
+11. Old film cards, visual cards, and case cards are evidence sources, not default theory work.
+12. Repository hierarchy, old-draft coverage, and index cleanup belong to the independent governance task.
+13. No new evidence means update the rolling hub's evidence gap and next target briefly; do not regenerate a full duplicate audit.
+14. Every hourly theory run must close the loop: read rolling hub → audit one relation → update canon or evidence gap → write back rolling hub → update canonical ledger → verify commits.
 
 ## Safety Rules
 
@@ -90,7 +103,7 @@ When organizing this vault, produce one of these:
 每张原子卡至少包含：
 
 1. **原版概括**：概念的原始知识和来源边界。
-2. **理论分析**：按当前任务需要分别使用三元、十元、五大主题或动态链；开始前必须读取强制清单与对应正本。
+2. **理论分析**：按当前任务需要分别使用三元、十元、五大主题或动态链；开始前必须读取强制清单、三层卡体系与对应正本。
 
 禁止把 `x / z / n` 固定解释为“现象 / 本质 / 应用”。
 
