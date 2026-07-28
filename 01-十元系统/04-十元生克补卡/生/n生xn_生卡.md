@@ -7,6 +7,10 @@ target: xn
 relation_status: locked
 status: canonical-current-card
 version: v0.1
+card_schema_version: v1.1
+memory_record_version: v1.0
+last_memory_run_id: null
+last_memory_commit: null
 updated: 2026-07-28
 relation_table_version: v2.22
 primary_hourly_write_target: true
@@ -41,3 +45,7 @@ canonical_specialty: 01-十元系统/关系专项/n生xn_承载负荷提炼持�
 ## 七项置信度与案例
 
 所有新增边界、失败例、七项评分与运行后果优先写入本卡；正式机制以专项正本为准。
+
+## 记忆记录
+
+每次有效运行记录本卡理论版本、记忆记录版本、run_id与commit SHA。
