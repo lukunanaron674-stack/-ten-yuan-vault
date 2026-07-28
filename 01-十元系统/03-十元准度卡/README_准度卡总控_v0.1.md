@@ -1,6 +1,6 @@
 ---
 title: 十元准度卡总控旧入口
-ctype: canonical-path-alias
+type: canonical-path-alias
 status: redirect-only
 updated: 2026-07-28
 redirects-to:
