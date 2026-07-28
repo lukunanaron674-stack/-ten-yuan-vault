@@ -7,6 +7,10 @@ target: x
 relation_status: research-active
 status: canonical-working-card
 version: v0.1
+card_schema_version: v1.1
+memory_record_version: v1.0
+last_memory_run_id: null
+last_memory_commit: null
 updated: 2026-07-28
 relation_table_version: v2.22
 primary_hourly_write_target: true
@@ -42,3 +46,7 @@ canonical_specialty: null
 ## 七项置信度与更新
 
 所有人物情境、正反例、控制测试、七项评分和下一证据目标原位写入本卡。
+
+## 记忆记录
+
+每次有效运行记录本卡理论版本、记忆记录版本、run_id与commit SHA。
