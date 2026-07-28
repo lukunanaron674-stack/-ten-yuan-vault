@@ -5,10 +5,10 @@
   "conceptName": "手工织毯围裙",
   "phase": "reference_canvas_linked",
   "status": "completed_remote_verified",
-  "lastHeartbeat": "2026-07-28T20:04:35+09:00",
+  "lastHeartbeat": "2026-07-28T20:13:20+09:00",
   "retryCount": 0,
   "lastError": null,
-  "nextAction": "下次运行按批处理规则从 n25 开始，优先恢复 main 中缺失的历史参考笔记、file 节点或连线；跳过受污染的旧场景区。",
+  "nextAction": "下次运行按批处理规则从 n25 开始；每个概念写入独立分片账本，禁止覆盖旧历史归档。",
   "generated": false,
   "exported": false,
   "committed": true,
@@ -28,6 +28,11 @@
   "referenceLicense": "CC BY-SA 4.0",
   "transport": "github_main_reference_first",
   "mode": "reference_first_no_generation",
+  "ledgerMode": "immutable_sharded_records",
+  "ledgerIndexPath": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.md",
+  "ledgerLatestPath": "04-F12总控载体/canvas-single-image-pipeline/run-ledger-latest.json",
+  "ledgerRecordsRoot": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/",
+  "ledgerArchivePath": "04-F12总控载体/canvas-single-image-pipeline/ledger-archive/run-ledger_legacy_through_2026-07-28.md",
   "completedCanvases": [
     "09-给674（我）用的库/概念库/海盗航海_is-a名词素材库.canvas"
   ]
