@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 2,
+  "mode": "immutable_sharded_records",
+  "historyArchive": "04-F12总控载体/canvas-single-image-pipeline/ledger-archive/run-ledger_legacy_through_2026-07-28.md",
+  "recordsRoot": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/",
+  "latestRecord": null,
+  "lastMigratedEntry": {
+    "time": "2026-07-28T20:02:01+09:00",
+    "canvasPath": "09-给674（我）用的库/概念库/游牧流浪_is-a名词素材库.canvas",
+    "nodeId": "n18",
+    "conceptName": "手工织毯围裙",
+    "result": "completed",
+    "verifiedCommit": "9182febf201597710071d0ff5829cc1a09c97cf6",
+    "canvasBlobSha": "39f47661f93b614240b6f8bd5a7d3f0acf94a151"
+  },
+  "nextAction": "从 n25 开始；新运行记录写入 run-ledger.d，不再覆盖历史账本。"
+}
