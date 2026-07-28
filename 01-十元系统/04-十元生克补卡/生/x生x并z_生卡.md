@@ -7,6 +7,10 @@ target: x并z
 relation_status: locked
 status: canonical-current-card
 version: v0.1
+card_schema_version: v1.1
+memory_record_version: v1.0
+last_memory_run_id: null
+last_memory_commit: null
 updated: 2026-07-28
 relation_table_version: v2.22
 primary_hourly_write_target: true
@@ -41,3 +45,7 @@ canonical_specialty: 01-十元系统/关系专项/x生x并z_掌握边界生成�
 ## 七项置信度与案例
 
 新增边界、案例、失败壳与七项评分原位写入本卡；专项正本承担正式机制。
+
+## 记忆记录
+
+每次有效运行记录本卡理论版本、记忆记录版本、run_id与commit SHA。
