@@ -1,16 +1,18 @@
 ---
-title: xz 准度卡 v0.2
+title: xz 准度卡 v0.2.1
 type: accuracy-card
 symbol: xz
-version: v0.2
+version: v0.2.1
 status: canonical-current
 updated: 2026-07-28
 source:
-  - 01-十元系统/【xz信息量卡v1】.md
+  - 01-十元系统/【xz信息量卡v2】.md
   - 01-十元系统/十元体系密度卡总览.md
+supersedes_source_link:
+  - 01-十元系统/【xz信息量卡v1】.md
 ---
 
-# xz 准度卡 v0.2
+# xz 准度卡 v0.2.1
 
 > **xz = 危险已经以可感知方式显身，并具有逼近、扩张、包围或压缩安全距离的运动势能，使可逆空间、退路或时间窗持续下降。**
 
