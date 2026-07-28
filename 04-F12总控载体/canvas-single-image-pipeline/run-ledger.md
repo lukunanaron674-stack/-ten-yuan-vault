@@ -142,3 +142,16 @@
 - 远端读回：true
 - 失败原因：none
 - 下一动作：扫描当前 Canvas，选择下一个没有可验证参考文件与 text→file 连线的叶子概念。
+
+## 2026-07-28T15:36:37+08:00｜游牧流浪_is-a名词素材库.canvas｜n5 彩色条纹长袍
+
+- 结果：completed
+- 参考笔记：`09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n5_彩色条纹长袍_reference.md`
+- 来源页：`https://commons.wikimedia.org/wiki/File:Kyrgyz_women_and_child_offering_bread_and_salt.jpg`
+- 参考提交：`c87e28f763dfad0e787778f161f314659f056a29`
+- Canvas 提交：`7f7a3daf285b2c5af905dc94143e7ea6a2d6b6e0`
+- Canvas blob：`bdffd0e70b4b078770c935b626ef9e5d7d14b3de`
+- 状态提交：`d9741c93d92710c99be92c13bb7874e54fbea9c9`
+- 远端读回：true
+- 失败原因：none
+- 下一动作：下次运行跳过受污染的旧场景区，按 y → x → node id 选择下一个没有可验证参考的服装、建筑、构件或元素叶子概念。
