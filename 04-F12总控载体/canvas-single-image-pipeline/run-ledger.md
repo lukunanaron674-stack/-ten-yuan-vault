@@ -155,3 +155,16 @@
 - 远端读回：true
 - 失败原因：none
 - 下一动作：下次运行跳过受污染的旧场景区，按 y → x → node id 选择下一个没有可验证参考的服装、建筑、构件或元素叶子概念。
+
+## 2026-07-28T16:46:30+08:00｜游牧流浪_is-a名词素材库.canvas｜n12 厚棉长衫
+
+- 结果：completed
+- 参考笔记：`09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n12_厚棉长衫_reference.md`
+- 来源页：`https://commons.wikimedia.org/wiki/File:Jordanian_Bedouin_Arab_Men.jpg`
+- 参考提交：`42e45bc5270ab001e0a8f183c9c320a1a83b45f9`
+- Canvas 提交：`9d4d0e12b76a418e87bba05ef208116da76e59e0`
+- Canvas blob：`b756d38cad216d6d9779c564cef54e79ee0731ab`
+- 状态提交：`bd383257459b27d139954da534aecd6b412a170e`
+- 远端读回：true
+- 失败原因：none
+- 下一动作：下次运行继续一致性恢复，优先处理 n18；跳过受污染的旧场景区。
