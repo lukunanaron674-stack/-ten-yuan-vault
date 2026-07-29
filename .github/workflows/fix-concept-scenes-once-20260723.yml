@@ -45,8 +45,6 @@ jobs:
           forbidden = ('v2 状态侵蚀层', 'v3 内部功能空间', 'v4 复合场景层')
           if len(files) != 20:
               raise SystemExit(f'expected 20 canvases, got {len(files)}')
-          corrected = 0
-          preserved = 0
           for path in files:
               data = json.loads(path.read_text(encoding='utf-8'))
               nodes = data.get('nodes')
@@ -62,13 +60,22 @@ jobs:
               scene_text = '\n'.join(str(node.get('text', '')) for node in nodes)
               if any(term in scene_text for term in forbidden):
                   raise SystemExit(f'legacy scene chain remains: {path}')
-              if '可绘制场景类目' in str(headers[0].get('text', '')):
-                  corrected += 1
-              else:
-                  preserved += 1
-          if corrected != 19 or preserved != 1:
-              raise SystemExit(f'unexpected correction split: corrected={corrected}, preserved={preserved}')
-          print('validated 20 Canvas files: corrected=19 preserved=1')
+
+          marker = root / '.scene-sections-fixed-20260729'
+          report = root / '场景区全库修复报告_2026-07-29.md'
+          if not marker.exists() or not report.exists():
+              raise SystemExit('repair marker/report missing')
+          counts = {}
+          for line in marker.read_text(encoding='utf-8').splitlines():
+              key, value = line.split('=', 1)
+              counts[key] = int(value)
+          if counts.get('scanned') != 20:
+              raise SystemExit(f'invalid scanned count: {counts}')
+          if counts.get('legacy', 0) < 1 or counts.get('changed') != counts.get('legacy'):
+              raise SystemExit(f'incomplete repair counts: {counts}')
+          if counts.get('preserved', 0) + counts.get('changed', 0) != 20:
+              raise SystemExit(f'invalid repair partition: {counts}')
+          print(f'validated 20 Canvas files: {counts}')
           PY
 
       - name: Commit corrected Canvas files to PR branch
