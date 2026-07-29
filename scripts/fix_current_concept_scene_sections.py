@@ -60,17 +60,27 @@ def rewrite_legacy_scene(path: Path, style: str) -> tuple[bool, list[str], list[
     for category_header in category_headers:
         x = category_header.get("x")
         y = category_header.get("y", -10**9)
-        leaves = sorted(
+        candidates = sorted(
             [
                 node
                 for node in nodes
                 if node.get("type") == "text"
                 and node.get("x") == x
                 and node.get("y", -10**9) > y
-                and not first_line(str(node.get("text", ""))).startswith("📎")
             ],
             key=lambda node: node.get("y", 0),
-        )[:5]
+        )
+        ordinary = [
+            node
+            for node in candidates
+            if not first_line(str(node.get("text", ""))).startswith("📎")
+        ]
+        more_nodes = [
+            node
+            for node in candidates
+            if first_line(str(node.get("text", ""))).startswith("📎")
+        ]
+        leaves = (ordinary + more_nodes)[:5]
         if len(leaves) != 5:
             raise RuntimeError(
                 f"{style}: scene column {first_line(str(category_header.get('text', '')))} "
