@@ -1,1556 +1,1556 @@
 {
-  "nodes": [
-    {
-      "id": "n1",
-      "type": "text",
-      "text": "☢ 末世废土 is-a 名词素材库\n        末世废土 — xn+x",
-      "x": -200,
-      "y": -950,
-      "width": 480,
-      "height": 80,
-      "color": "1"
-    },
-    {
-      "id": "n2",
-      "type": "text",
-      "text": "📖 风格定义\nis-a 时间视觉风格\n文明终结·生存挣扎\n废土/核污染/幸存者/机械化",
-      "x": -160,
-      "y": -850,
-      "width": 260,
-      "height": 110,
-      "color": "6"
-    },
-    {
-      "id": "n3",
-      "type": "text",
-      "text": "👗 服装 is-a 末世废土角色造型类目 ├ ☢ 幸存者 ┤ ⚙ 废土武装 ┤ 💀 辐射者 ┤ ↔ 服装·建筑·场景·构件·元素",
-      "x": -2400,
-      "y": -700,
-      "width": 890,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "n4",
-      "type": "text",
-      "text": "☢ 幸存者\n5项 · 流浪者/拾荒",
-      "x": -2400,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n5",
-      "type": "text",
-      "text": "修复皮夹克\nis-a 多次修补的外套\n🎬 幸存者在废墟穿行",
-      "x": -2400,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n6",
-      "type": "text",
-      "text": "防尘面罩\nis-a 过滤呼吸器\n🎬 辐射区/沙尘暴防护",
-      "x": -2400,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n7",
-      "type": "text",
-      "text": "多层布条裹腿\nis-a 简易护腿\n🎬 穿越危险废墟",
-      "x": -2400,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n8",
-      "type": "text",
-      "text": "背包行囊\nis-a 全部家当\n🎬 流浪者之旅/补给品",
-      "x": -2400,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n9",
-      "type": "text",
-      "text": "护目镜\nis-a 防风沙眼镜\n🎬 沙漠穿行/风暴之中",
-      "x": -2400,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n10",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": -2400,
-      "y": -115,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n11",
-      "type": "text",
-      "text": "⚙ 废土武装\n5项 · 战斗/防卫",
-      "x": -2120,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n12",
-      "type": "text",
-      "text": "改造动力甲\nis-a 动力装甲改装\n🎬 废土战士/重型火力",
-      "x": -2120,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n13",
-      "type": "text",
-      "text": "铁片肩甲\nis-a 拼凑的防护\n🎬 拾荒者民兵/防御",
-      "x": -2120,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n14",
-      "type": "text",
-      "text": "链甲金属网\nis-a 铁环编的护甲\n🎬 废土骑士/改装品",
-      "x": -2120,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n15",
-      "type": "text",
-      "text": "缝制枪套\nis-a 自制武器套\n🎬 废土枪手/猎人",
-      "x": -2120,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n16",
-      "type": "text",
-      "text": "铁头盔\nis-a 改装军用盔\n🎬 废土战士/幸存者",
-      "x": -2120,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n17",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": -2120,
-      "y": -115,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n18",
-      "type": "text",
-      "text": "💀 辐射者\n3项 · 变异/感染",
-      "x": -1840,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n19",
-      "type": "text",
-      "text": "破布全身裹\nis-a 遮盖变异部位\n🎬 辐射感染者/隐藏",
-      "x": -1840,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n20",
-      "type": "text",
-      "text": "铅皮衬里外套\nis-a 防辐射外套\n🎬 深入辐射区/危险区",
-      "x": -1840,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n21",
-      "type": "text",
-      "text": "呼吸器面具\nis-a 过滤毒气\n🎬 毒气区/污染区探索",
-      "x": -1840,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n22",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": -1840,
-      "y": -261,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n23",
-      "type": "text",
-      "text": "🏛️ 建筑 is-a 末世废土空间场景类目 ├ v0空间母体 ┤ v1典型空间 ┤ ↔ 服装·场景·构件·元素",
-      "x": -1510,
-      "y": -700,
-      "width": 600,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "n24",
-      "type": "text",
-      "text": "v0 空间母体层\\n6项 · 核心空间",
-      "x": -1510,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n25",
-      "type": "text",
-      "text": "铁皮避难城\nis-a 废土聚居地\n🎬 废土主城 / 聚集地 / 幸存者的家",
-      "x": -1510,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n26",
-      "type": "text",
-      "text": "沙暴交易站\nis-a 废土贸易市场\n🎬 交易 / 易货 / 三教九流",
-      "x": -1510,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n27",
-      "type": "text",
-      "text": "废弃高速路\nis-a 裂开的公路\n🎬 在路上 / 穿越 / 车队行进",
-      "x": -1510,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n28",
-      "type": "text",
-      "text": "残骸都市\nis-a 殉难的大城市\n🎬 大城废墟 / 空无一人的摩天楼 / 残壳",
-      "x": -1510,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n29",
-      "type": "text",
-      "text": "污染水厂\nis-a 废弃净水设施\n🎬 寻找水源 / 危险区域 / 旧文明的遗迹",
-      "x": -1510,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n30",
-      "type": "text",
-      "text": "废土市场\nis-a 废品交易中心\n🎬 垃圾山 / 回收 / 交易零件",
-      "x": -1510,
-      "y": -115,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n31",
-      "type": "text",
-      "text": "v1 典型空间层\\n4项 · 废墟/空间",
-      "x": -1230,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n32",
-      "type": "text",
-      "text": "铁皮避难城废墟\nis-a 废弃避难城（上位：铁皮避难城）\n🎬 避难城毁了 / 幸存者撤离 / 被搜刮过",
-      "x": -1230,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n33",
-      "type": "text",
-      "text": "铁皮避难城圣所\nis-a 废弃祈祷处（上位：铁皮避难城）\n🎬 废土信仰 / 祈祷还在继续 / 幸存者的精神寄托",
-      "x": -1230,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n34",
-      "type": "text",
-      "text": "铁皮避难城大厅\nis-a 废弃议会厅（上位：铁皮避难城）\n🎬 集会的残骸 / 秩序散了 / 废土的议会",
-      "x": -1230,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n35",
-      "type": "text",
-      "text": "铁皮避难城回廊\nis-a 废弃金属廊（上位：铁皮避难城）\n🎬 战后的通道 / 有人守过 / 交战痕迹",
-      "x": -1230,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n36",
-      "type": "text",
-      "text": "🌄 场景 is-a 末世废土镜头情境类目 ├ v2状态侵蚀 ┤ v3内部功能 ┤ v4复合场景 ┤ ↔ 服装·建筑·构件·元素",
-      "x": -900,
-      "y": -700,
-      "width": 900,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "n37",
-      "type": "text",
-      "text": "v2 状态侵蚀层\\n5项 · 自然/超自然改造",
-      "x": -900,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n38",
-      "type": "text",
-      "text": "铁皮避难城废墟被花蔓侵蚀\nis-a 锈花（上位：铁皮避难城废墟）\n🎬 铁锈成花 / 金属在败中成画",
-      "x": -900,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n39",
-      "type": "text",
-      "text": "铁皮避难城废墟被荆棘缠绕\nis-a 金属丝棘（上位：铁皮避难城废墟）\n🎬 铁皮棘 / 工业品的自残 / 边缘锋利",
-      "x": -900,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n40",
-      "type": "text",
-      "text": "铁皮避难城废墟被树根穿刺\nis-a 旱根（上位：铁皮避难城废墟）\n🎬 旱根缠铁 / 自然与工业的纠缠",
-      "x": -900,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n41",
-      "type": "text",
-      "text": "铁皮避难城废墟被苔藓覆盖\nis-a 沙苔（上位：铁皮避难城废墟）\n🎬 绿壳覆铁 / 工业表面被自然覆盖",
-      "x": -900,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n42",
-      "type": "text",
-      "text": "铁皮避难城废墟被菌丝寄生\nis-a 霉菌蔓延（上位：铁皮避难城废墟）\n🎬 霉斑扩散 / 角落的生物分解",
-      "x": -900,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n43",
-      "type": "text",
-      "text": "v3 内部功能空间\\n5项 · 功能区",
-      "x": -620,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n44",
-      "type": "text",
-      "text": "铁皮避难城废墟被花蔓侵蚀中央空间\nis-a 锈花中央（上位：铁皮避难城废墟被花蔓侵蚀）\n🎬 锈花地面 / 踩碎的声音 / 锈色覆盖",
-      "x": -620,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n45",
-      "type": "text",
-      "text": "铁皮避难城废墟被花蔓侵蚀祭坛空间\nis-a 锈花祭坛（上位：铁皮避难城废墟被花蔓侵蚀）\n🎬 焊缝生锈花 / 铁皮祭坛的花边",
-      "x": -620,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n46",
-      "type": "text",
-      "text": "铁皮避难城废墟被花蔓侵蚀回廊空间\nis-a 锈花走廊（上位：铁皮避难城废墟被花蔓侵蚀）\n🎬 铁墙生花 / 铁在自焚为橙色",
-      "x": -620,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n47",
-      "type": "text",
-      "text": "铁皮避难城废墟被花蔓侵蚀洗礼池\nis-a 锈花水桶（上位：铁皮避难城废墟）\n🎬 锈水桶 / 橙水 / 铁味",
-      "x": -620,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n48",
-      "type": "text",
-      "text": "铁皮避难城废墟被花蔓侵蚀祈祷室\nis-a 锈花小室（上位：铁皮避难城废墟被花蔓侵蚀）\n🎬 有人来过 / 脚印在锈花中 / 铁皮屋里还有人",
-      "x": -620,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n49",
-      "type": "text",
-      "text": "v4 复合场景层\\n5项 · 版本变体",
-      "x": -340,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n50",
-      "type": "text",
-      "text": "铁皮避难城废墟被花蔓侵蚀中央空间复合场景\nis-a 锈花心标准版（上位：中央空间）\n🎬 锈花毯中央最厚 / 标准大全景 / 铁锈的同心圆",
-      "x": -340,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n51",
-      "type": "text",
-      "text": "铁皮避难城废墟被花蔓侵蚀中央空间镜面版\nis-a 锈花心倒影版（上位：中央空间）\n🎬 水中锈色更深 / 橙色变棕 / 水下的锈",
-      "x": -340,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n52",
-      "type": "text",
-      "text": "铁皮避难城废墟被花蔓侵蚀中央空间沉水版\nis-a 锈花心积水版（上位：中央空间）\n🎬 锈花泡水 / 油膜浮在表 / 水下的橙色",
-      "x": -340,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n53",
-      "type": "text",
-      "text": "铁皮避难城废墟被花蔓侵蚀中央空间月光版\nis-a 锈花心月夜版（上位：中央空间）\n🎬 月下锈色消失 / 灰色花影 / 夜抹去了颜色",
-      "x": -340,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n54",
-      "type": "text",
-      "text": "铁皮避难城废墟被花蔓侵蚀中央空间黑水版\nis-a 锈花心油污版（上位：中央空间）\n🎬 油盖锈花 / 橙色消失 / 黑色统治",
-      "x": -340,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n55",
-      "type": "text",
-      "text": "🔩 构件 is-a 末世废土组成部分类目 ├ 🏛 废土构件 ┤ 👗 生存工具 ┤ ↔ 服装·建筑·场景·元素",
-      "x": 20,
-      "y": -700,
-      "width": 600,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "n56",
-      "type": "text",
-      "text": "🏛 废土构件\n5项 · 结构/装置",
-      "x": 20,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n57",
-      "type": "text",
-      "text": "铁丝网围栏\nis-a 带刺铁丝围栏\n🎬 防御工事/隔离区",
-      "x": 20,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n58",
-      "type": "text",
-      "text": "废铁皮屋顶\nis-a 拼凑的遮蔽物\n🎬 避难所/临时住所",
-      "x": 20,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n59",
-      "type": "text",
-      "text": "轮胎路障\nis-a 废旧轮胎堆\n🎬 检查站/防御点",
-      "x": 20,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n60",
-      "type": "text",
-      "text": "生锈油桶\nis-a 废弃燃料桶\n🎬 燃火/储存/爆炸物",
-      "x": 20,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n61",
-      "type": "text",
-      "text": "天线杆\nis-a 通信天线\n🎬 广播站/信号/希望",
-      "x": 20,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n62",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": 20,
-      "y": -115,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n63",
-      "type": "text",
-      "text": "👗 生存工具\n4项 · 日常/武器",
-      "x": 300,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n64",
-      "type": "text",
-      "text": "水过滤器\nis-a 净水装置\n🎬 生存关键/补给",
-      "x": 300,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n65",
-      "type": "text",
-      "text": "打火机\nis-a 点火工具\n🎬 生火/生存/小希望",
-      "x": 300,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n66",
-      "type": "text",
-      "text": "撬棍\nis-a 破门工具\n🎬 探索/开箱/武器",
-      "x": 300,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n67",
-      "type": "text",
-      "text": "短管霰弹枪\nis-a 废土常见武器\n🎬 防身/战斗/掠夺",
-      "x": 300,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n68",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": 300,
-      "y": -188,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n69",
-      "type": "text",
-      "text": "🎭 元素 is-a 末世废土视觉母题类目 ├ 💥 毁灭痕迹 ┤ 🌵 新自然 ┤ 📡 文明碎片 ┤ ↔ 服装·建筑·场景·构件",
-      "x": 630,
-      "y": -700,
-      "width": 890,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "n70",
-      "type": "text",
-      "text": "💥 毁灭痕迹\n5项 · 灾难/创伤",
-      "x": 630,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n71",
-      "type": "text",
-      "text": "核弹坑\nis-a 巨大圆形凹陷\n🎬 灾难现场/禁区",
-      "x": 630,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n72",
-      "type": "text",
-      "text": "坍塌高楼\nis-a 倒塌的建筑\n🎬 现代文明的终结",
-      "x": 630,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n73",
-      "type": "text",
-      "text": "废弃车辆\nis-a 锈蚀的汽车\n🎬 逃离/拥堵/曾经的日常",
-      "x": 630,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n74",
-      "type": "text",
-      "text": "辐射警告牌\nis-a 黄色三叶标志\n🎬 危险/禁止/死亡区",
-      "x": 630,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n75",
-      "type": "text",
-      "text": "白骨\nis-a 人类遗骸\n🎬 死亡/过去/无人收尸",
-      "x": 630,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n76",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": 630,
-      "y": -115,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n77",
-      "type": "text",
-      "text": "🌵 新自然\n4项 · 变异/顽强",
-      "x": 910,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n78",
-      "type": "text",
-      "text": "仙人掌\nis-a 沙漠植物\n🎬 顽强/生命的韧性",
-      "x": 910,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n79",
-      "type": "text",
-      "text": "变异植物\nis-a 发光或变形的植\n🎬 辐射影响/新生态",
-      "x": 910,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n80",
-      "type": "text",
-      "text": "野狗群\nis-a 废土流浪犬\n🎬 群居/野性/威胁",
-      "x": 910,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n81",
-      "type": "text",
-      "text": "秃鹫\nis-a 食腐之鸟\n🎬 死亡/观察/等待",
-      "x": 910,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n82",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": 910,
-      "y": -188,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n83",
-      "type": "text",
-      "text": "📡 文明碎片\n4项 · 记忆/痕迹",
-      "x": 1190,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n84",
-      "type": "text",
-      "text": "旧照片\nis-a 褪色的照片\n🎬 记忆/失去的世界",
-      "x": 1190,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n85",
-      "type": "text",
-      "text": "残破旗帜\nis-a 碎布旗帜\n🎬 曾经的国家/归属",
-      "x": 1190,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n86",
-      "type": "text",
-      "text": "儿童玩具\nis-a 破碎的娃娃\n🎬 失去的纯真/残酷对比",
-      "x": 1190,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n87",
-      "type": "text",
-      "text": "收音机\nis-a 通讯设备\n🎬 联系/希望/信号",
-      "x": 1190,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n88",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": 1190,
-      "y": -188,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n89",
-      "type": "text",
-      "text": "🔍 检索关键词弹药库\n\nEN Prompt Keywords\npost-apocalyptic wasteland\nnuclear desert\nsurvival gear\nscavenger culture\nruined cities\ndust storms",
-      "x": 1570,
-      "y": -780,
-      "width": 280,
-      "height": 300,
-      "color": "6"
-    },
-    {
-      "id": "n90",
-      "type": "text",
-      "text": "CN 意象脑暴词\n末世废土·文明终结\n锈蚀的汽车残骸堆成山\n沙尘暴中的人影\n沙漠下的旧城废墟\n用废铁皮拼凑的装甲车\n辐射区的蓝色夜光\n幸存者用垃圾换取水",
-      "x": 1950,
-      "y": -850,
-      "width": 280,
-      "height": 400,
-      "color": "6"
-    },
-    {
-      "id": "n91",
-      "type": "text",
-      "text": "📊 十元映射简表\n类别  形        色       质        光       空\n服装 实用粗犷 灰褐土黄 帆布皮革  烟尘散射   多层包裹\n建筑 破败实用 铁锈沙色 钢铁碎石   刺目日光   水平残骸\n场景 荒芜凄凉 灰黄赭褐 沙土金属   烟尘尘雾   开阔废墟\n构件 粗糙焊接 铁锈暗红 废金属焊   缝隙漏光   粗糙拼接\n元素 废土符号 铁锈土黄 氧化金属   高温光线   工业残余",
-      "x": 1570,
-      "y": -450,
-      "width": 640,
-      "height": 225,
-      "color": "6"
-    },
-    {
-      "id": "n92",
-      "type": "text",
-      "text": "📎 完整数据见 is-a.md\n含全部服装+建筑+场景+构件+元素\n以及十元映射简表和Prompt检索词",
-      "x": 1570,
-      "y": -190,
-      "width": 460,
-      "height": 100,
-      "color": "1"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e_root_def",
-      "fromNode": "n1",
-      "fromSide": "bottom",
-      "toNode": "n2",
-      "toSide": "top"
-    },
-    {
-      "id": "em_clothing",
-      "fromNode": "n2",
-      "fromSide": "left",
-      "toNode": "n3",
-      "toSide": "right"
-    },
-    {
-      "id": "e_cl_0_h",
-      "fromNode": "n3",
-      "fromSide": "bottom",
-      "toNode": "n4",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_0_0",
-      "fromNode": "n4",
-      "fromSide": "bottom",
-      "toNode": "n5",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_0_1",
-      "fromNode": "n5",
-      "fromSide": "bottom",
-      "toNode": "n6",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_0_2",
-      "fromNode": "n6",
-      "fromSide": "bottom",
-      "toNode": "n7",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_0_3",
-      "fromNode": "n7",
-      "fromSide": "bottom",
-      "toNode": "n8",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_0_4",
-      "fromNode": "n8",
-      "fromSide": "bottom",
-      "toNode": "n9",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_0_m",
-      "fromNode": "n9",
-      "fromSide": "bottom",
-      "toNode": "n10",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_h",
-      "fromNode": "n3",
-      "fromSide": "bottom",
-      "toNode": "n11",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_0",
-      "fromNode": "n11",
-      "fromSide": "bottom",
-      "toNode": "n12",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_1",
-      "fromNode": "n12",
-      "fromSide": "bottom",
-      "toNode": "n13",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_2",
-      "fromNode": "n13",
-      "fromSide": "bottom",
-      "toNode": "n14",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_3",
-      "fromNode": "n14",
-      "fromSide": "bottom",
-      "toNode": "n15",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_4",
-      "fromNode": "n15",
-      "fromSide": "bottom",
-      "toNode": "n16",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_m",
-      "fromNode": "n16",
-      "fromSide": "bottom",
-      "toNode": "n17",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_2_h",
-      "fromNode": "n3",
-      "fromSide": "bottom",
-      "toNode": "n18",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_2_0",
-      "fromNode": "n18",
-      "fromSide": "bottom",
-      "toNode": "n19",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_2_1",
-      "fromNode": "n19",
-      "fromSide": "bottom",
-      "toNode": "n20",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_2_2",
-      "fromNode": "n20",
-      "fromSide": "bottom",
-      "toNode": "n21",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_2_m",
-      "fromNode": "n21",
-      "fromSide": "bottom",
-      "toNode": "n22",
-      "toSide": "top"
-    },
-    {
-      "id": "em_arch",
-      "fromNode": "n3",
-      "fromSide": "right",
-      "toNode": "n23",
-      "toSide": "left"
-    },
-    {
-      "id": "e_ar_0_h",
-      "fromNode": "n23",
-      "fromSide": "bottom",
-      "toNode": "n24",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_0_0",
-      "fromNode": "n24",
-      "fromSide": "bottom",
-      "toNode": "n25",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_0_1",
-      "fromNode": "n25",
-      "fromSide": "bottom",
-      "toNode": "n26",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_0_2",
-      "fromNode": "n26",
-      "fromSide": "bottom",
-      "toNode": "n27",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_0_3",
-      "fromNode": "n27",
-      "fromSide": "bottom",
-      "toNode": "n28",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_0_4",
-      "fromNode": "n28",
-      "fromSide": "bottom",
-      "toNode": "n29",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_0_5",
-      "fromNode": "n29",
-      "fromSide": "bottom",
-      "toNode": "n30",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_1_h",
-      "fromNode": "n23",
-      "fromSide": "bottom",
-      "toNode": "n31",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_1_0",
-      "fromNode": "n31",
-      "fromSide": "bottom",
-      "toNode": "n32",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_1_1",
-      "fromNode": "n32",
-      "fromSide": "bottom",
-      "toNode": "n33",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_1_2",
-      "fromNode": "n33",
-      "fromSide": "bottom",
-      "toNode": "n34",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_1_3",
-      "fromNode": "n34",
-      "fromSide": "bottom",
-      "toNode": "n35",
-      "toSide": "top"
-    },
-    {
-      "id": "em_scene",
-      "fromNode": "n23",
-      "fromSide": "right",
-      "toNode": "n36",
-      "toSide": "left"
-    },
-    {
-      "id": "e_sc_0_h",
-      "fromNode": "n36",
-      "fromSide": "bottom",
-      "toNode": "n37",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_0_0",
-      "fromNode": "n37",
-      "fromSide": "bottom",
-      "toNode": "n38",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_0_1",
-      "fromNode": "n38",
-      "fromSide": "bottom",
-      "toNode": "n39",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_0_2",
-      "fromNode": "n39",
-      "fromSide": "bottom",
-      "toNode": "n40",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_0_3",
-      "fromNode": "n40",
-      "fromSide": "bottom",
-      "toNode": "n41",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_0_4",
-      "fromNode": "n41",
-      "fromSide": "bottom",
-      "toNode": "n42",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_1_h",
-      "fromNode": "n36",
-      "fromSide": "bottom",
-      "toNode": "n43",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_1_0",
-      "fromNode": "n43",
-      "fromSide": "bottom",
-      "toNode": "n44",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_1_1",
-      "fromNode": "n44",
-      "fromSide": "bottom",
-      "toNode": "n45",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_1_2",
-      "fromNode": "n45",
-      "fromSide": "bottom",
-      "toNode": "n46",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_1_3",
-      "fromNode": "n46",
-      "fromSide": "bottom",
-      "toNode": "n47",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_1_4",
-      "fromNode": "n47",
-      "fromSide": "bottom",
-      "toNode": "n48",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_2_h",
-      "fromNode": "n36",
-      "fromSide": "bottom",
-      "toNode": "n49",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_2_0",
-      "fromNode": "n49",
-      "fromSide": "bottom",
-      "toNode": "n50",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_2_1",
-      "fromNode": "n50",
-      "fromSide": "bottom",
-      "toNode": "n51",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_2_2",
-      "fromNode": "n51",
-      "fromSide": "bottom",
-      "toNode": "n52",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_2_3",
-      "fromNode": "n52",
-      "fromSide": "bottom",
-      "toNode": "n53",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_2_4",
-      "fromNode": "n53",
-      "fromSide": "bottom",
-      "toNode": "n54",
-      "toSide": "top"
-    },
-    {
-      "id": "em_comp",
-      "fromNode": "n36",
-      "fromSide": "right",
-      "toNode": "n55",
-      "toSide": "left"
-    },
-    {
-      "id": "e_cp_0_h",
-      "fromNode": "n55",
-      "fromSide": "bottom",
-      "toNode": "n56",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_0_0",
-      "fromNode": "n56",
-      "fromSide": "bottom",
-      "toNode": "n57",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_0_1",
-      "fromNode": "n57",
-      "fromSide": "bottom",
-      "toNode": "n58",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_0_2",
-      "fromNode": "n58",
-      "fromSide": "bottom",
-      "toNode": "n59",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_0_3",
-      "fromNode": "n59",
-      "fromSide": "bottom",
-      "toNode": "n60",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_0_4",
-      "fromNode": "n60",
-      "fromSide": "bottom",
-      "toNode": "n61",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_0_m",
-      "fromNode": "n61",
-      "fromSide": "bottom",
-      "toNode": "n62",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_h",
-      "fromNode": "n55",
-      "fromSide": "bottom",
-      "toNode": "n63",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_0",
-      "fromNode": "n63",
-      "fromSide": "bottom",
-      "toNode": "n64",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_1",
-      "fromNode": "n64",
-      "fromSide": "bottom",
-      "toNode": "n65",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_2",
-      "fromNode": "n65",
-      "fromSide": "bottom",
-      "toNode": "n66",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_3",
-      "fromNode": "n66",
-      "fromSide": "bottom",
-      "toNode": "n67",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_m",
-      "fromNode": "n67",
-      "fromSide": "bottom",
-      "toNode": "n68",
-      "toSide": "top"
-    },
-    {
-      "id": "em_elem",
-      "fromNode": "n55",
-      "fromSide": "right",
-      "toNode": "n69",
-      "toSide": "left"
-    },
-    {
-      "id": "e_el_0_h",
-      "fromNode": "n69",
-      "fromSide": "bottom",
-      "toNode": "n70",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_0_0",
-      "fromNode": "n70",
-      "fromSide": "bottom",
-      "toNode": "n71",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_0_1",
-      "fromNode": "n71",
-      "fromSide": "bottom",
-      "toNode": "n72",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_0_2",
-      "fromNode": "n72",
-      "fromSide": "bottom",
-      "toNode": "n73",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_0_3",
-      "fromNode": "n73",
-      "fromSide": "bottom",
-      "toNode": "n74",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_0_4",
-      "fromNode": "n74",
-      "fromSide": "bottom",
-      "toNode": "n75",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_0_m",
-      "fromNode": "n75",
-      "fromSide": "bottom",
-      "toNode": "n76",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_h",
-      "fromNode": "n69",
-      "fromSide": "bottom",
-      "toNode": "n77",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_0",
-      "fromNode": "n77",
-      "fromSide": "bottom",
-      "toNode": "n78",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_1",
-      "fromNode": "n78",
-      "fromSide": "bottom",
-      "toNode": "n79",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_2",
-      "fromNode": "n79",
-      "fromSide": "bottom",
-      "toNode": "n80",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_3",
-      "fromNode": "n80",
-      "fromSide": "bottom",
-      "toNode": "n81",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_m",
-      "fromNode": "n81",
-      "fromSide": "bottom",
-      "toNode": "n82",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_2_h",
-      "fromNode": "n69",
-      "fromSide": "bottom",
-      "toNode": "n83",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_2_0",
-      "fromNode": "n83",
-      "fromSide": "bottom",
-      "toNode": "n84",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_2_1",
-      "fromNode": "n84",
-      "fromSide": "bottom",
-      "toNode": "n85",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_2_2",
-      "fromNode": "n85",
-      "fromSide": "bottom",
-      "toNode": "n86",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_2_3",
-      "fromNode": "n86",
-      "fromSide": "bottom",
-      "toNode": "n87",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_2_m",
-      "fromNode": "n87",
-      "fromSide": "bottom",
-      "toNode": "n88",
-      "toSide": "top"
-    },
-    {
-      "id": "e_p_en_cn",
-      "fromNode": "n89",
-      "fromSide": "right",
-      "toNode": "n90",
-      "toSide": "left"
-    },
-    {
-      "id": "e_p_en_ty",
-      "fromNode": "n89",
-      "fromSide": "bottom",
-      "toNode": "n91",
-      "toSide": "top"
-    },
-    {
-      "id": "e_note",
-      "fromNode": "n91",
-      "fromSide": "bottom",
-      "toNode": "n92",
-      "toSide": "top"
-    }
-  ]
+	"nodes": [
+		{
+			"id": "n1",
+			"type": "text",
+			"text": "☢ 末世废土 is-a 名词素材库\n        末世废土 — xn+x",
+			"x": -200,
+			"y": -950,
+			"width": 480,
+			"height": 80,
+			"color": "1"
+		},
+		{
+			"id": "n2",
+			"type": "text",
+			"text": "📖 风格定义\nis-a 时间视觉风格\n文明终结·生存挣扎\n废土/核污染/幸存者/机械化",
+			"x": -160,
+			"y": -850,
+			"width": 260,
+			"height": 110,
+			"color": "6"
+		},
+		{
+			"id": "n3",
+			"type": "text",
+			"text": "👗 服装 is-a 末世废土角色造型类目 ├ ☢ 幸存者 ┤ ⚙ 废土武装 ┤ 💀 辐射者 ┤ ↔ 服装·建筑·场景·构件·元素",
+			"x": -2400,
+			"y": -700,
+			"width": 890,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n4",
+			"type": "text",
+			"text": "☢ 幸存者\n5项 · 流浪者/拾荒",
+			"x": -2400,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n5",
+			"type": "text",
+			"text": "修复皮夹克\nis-a 多次修补的外套\n🎬 幸存者在废墟穿行",
+			"x": -2400,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n6",
+			"type": "text",
+			"text": "防尘面罩\nis-a 过滤呼吸器\n🎬 辐射区/沙尘暴防护",
+			"x": -2400,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n7",
+			"type": "text",
+			"text": "多层布条裹腿\nis-a 简易护腿\n🎬 穿越危险废墟",
+			"x": -2400,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n8",
+			"type": "text",
+			"text": "背包行囊\nis-a 全部家当\n🎬 流浪者之旅/补给品",
+			"x": -2400,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n9",
+			"type": "text",
+			"text": "护目镜\nis-a 防风沙眼镜\n🎬 沙漠穿行/风暴之中",
+			"x": -2400,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n10",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": -2400,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n11",
+			"type": "text",
+			"text": "⚙ 废土武装\n5项 · 战斗/防卫",
+			"x": -2120,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n12",
+			"type": "text",
+			"text": "改造动力甲\nis-a 动力装甲改装\n🎬 废土战士/重型火力",
+			"x": -2120,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n13",
+			"type": "text",
+			"text": "铁片肩甲\nis-a 拼凑的防护\n🎬 拾荒者民兵/防御",
+			"x": -2120,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n14",
+			"type": "text",
+			"text": "链甲金属网\nis-a 铁环编的护甲\n🎬 废土骑士/改装品",
+			"x": -2120,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n15",
+			"type": "text",
+			"text": "缝制枪套\nis-a 自制武器套\n🎬 废土枪手/猎人",
+			"x": -2120,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n16",
+			"type": "text",
+			"text": "铁头盔\nis-a 改装军用盔\n🎬 废土战士/幸存者",
+			"x": -2120,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n17",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": -2120,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n18",
+			"type": "text",
+			"text": "💀 辐射者\n3项 · 变异/感染",
+			"x": -1840,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n19",
+			"type": "text",
+			"text": "破布全身裹\nis-a 遮盖变异部位\n🎬 辐射感染者/隐藏",
+			"x": -1840,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n20",
+			"type": "text",
+			"text": "铅皮衬里外套\nis-a 防辐射外套\n🎬 深入辐射区/危险区",
+			"x": -1840,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n21",
+			"type": "text",
+			"text": "呼吸器面具\nis-a 过滤毒气\n🎬 毒气区/污染区探索",
+			"x": -1840,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n22",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": -1840,
+			"y": -261,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n23",
+			"type": "text",
+			"text": "🏛️ 建筑 is-a 末世废土空间场景类目 ├ v0空间母体 ┤ v1典型空间 ┤ ↔ 服装·场景·构件·元素",
+			"x": -1510,
+			"y": -700,
+			"width": 600,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n24",
+			"type": "text",
+			"text": "v0 空间母体层\\n6项 · 核心空间",
+			"x": -1510,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n25",
+			"type": "text",
+			"text": "铁皮避难城\nis-a 废土聚居地\n🎬 废土主城 / 聚集地 / 幸存者的家",
+			"x": -1510,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n26",
+			"type": "text",
+			"text": "沙暴交易站\nis-a 废土贸易市场\n🎬 交易 / 易货 / 三教九流",
+			"x": -1510,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n27",
+			"type": "text",
+			"text": "废弃高速路\nis-a 裂开的公路\n🎬 在路上 / 穿越 / 车队行进",
+			"x": -1510,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n28",
+			"type": "text",
+			"text": "残骸都市\nis-a 殉难的大城市\n🎬 大城废墟 / 空无一人的摩天楼 / 残壳",
+			"x": -1510,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n29",
+			"type": "text",
+			"text": "污染水厂\nis-a 废弃净水设施\n🎬 寻找水源 / 危险区域 / 旧文明的遗迹",
+			"x": -1510,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n30",
+			"type": "text",
+			"text": "废土市场\nis-a 废品交易中心\n🎬 垃圾山 / 回收 / 交易零件",
+			"x": -1510,
+			"y": -115,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n31",
+			"type": "text",
+			"text": "v1 典型空间层\\n4项 · 废墟/空间",
+			"x": -1230,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n32",
+			"type": "text",
+			"text": "铁皮避难城废墟\nis-a 废弃避难城（上位：铁皮避难城）\n🎬 避难城毁了 / 幸存者撤离 / 被搜刮过",
+			"x": -1230,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n33",
+			"type": "text",
+			"text": "铁皮避难城圣所\nis-a 废弃祈祷处（上位：铁皮避难城）\n🎬 废土信仰 / 祈祷还在继续 / 幸存者的精神寄托",
+			"x": -1230,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n34",
+			"type": "text",
+			"text": "铁皮避难城大厅\nis-a 废弃议会厅（上位：铁皮避难城）\n🎬 集会的残骸 / 秩序散了 / 废土的议会",
+			"x": -1230,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n35",
+			"type": "text",
+			"text": "铁皮避难城回廊\nis-a 废弃金属廊（上位：铁皮避难城）\n🎬 战后的通道 / 有人守过 / 交战痕迹",
+			"x": -1230,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n36",
+			"type": "text",
+			"text": "🌄 场景 is-a 末世废土可绘制场景类目 ├ 🛠 废土生活 ┤ ☢️ 生存危机 ┤ 🚩 聚落仪式 ├ ↔ 服装·建筑·构件·元素",
+			"x": -900,
+			"y": -700,
+			"width": 900,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n37",
+			"type": "text",
+			"text": "🛠 废土生活\n5项 · 取水/交易/修理",
+			"x": -900,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n38",
+			"type": "text",
+			"text": "水站排队\nis-a 末世废土生存场景\n🎬 水站排队 / 表现水、废料、车辆、种植和守夜",
+			"x": -900,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n39",
+			"type": "text",
+			"text": "废料市集\nis-a 末世废土生存场景\n🎬 废料市集 / 表现水、废料、车辆、种植和守夜",
+			"x": -900,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n40",
+			"type": "text",
+			"text": "车队修理\nis-a 末世废土生存场景\n🎬 车队修理 / 表现水、废料、车辆、种植和守夜",
+			"x": -900,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n41",
+			"type": "text",
+			"text": "屋顶种植\nis-a 末世废土生存场景\n🎬 屋顶种植 / 表现水、废料、车辆、种植和守夜",
+			"x": -900,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n42",
+			"type": "text",
+			"text": "夜间守火\nis-a 末世废土生存场景\n🎬 夜间守火 / 表现水、废料、车辆、种植和守夜",
+			"x": -900,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n43",
+			"type": "text",
+			"text": "☢️ 生存危机\n5项 · 沙暴/掠夺/辐射",
+			"x": -620,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n44",
+			"type": "text",
+			"text": "沙暴撤离\nis-a 末世废土危机场景\n🎬 沙暴撤离 / 表现极端天气、追车、辐射和资源冲突",
+			"x": -620,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n45",
+			"type": "text",
+			"text": "掠夺者追车\nis-a 末世废土危机场景\n🎬 掠夺者追车 / 表现极端天气、追车、辐射和资源冲突",
+			"x": -620,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n46",
+			"type": "text",
+			"text": "辐射区搜救\nis-a 末世废土危机场景\n🎬 辐射区搜救 / 表现极端天气、追车、辐射和资源冲突",
+			"x": -620,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n47",
+			"type": "text",
+			"text": "变异兽围营\nis-a 末世废土危机场景\n🎬 变异兽围营 / 表现极端天气、追车、辐射和资源冲突",
+			"x": -620,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n48",
+			"type": "text",
+			"text": "水源争夺\nis-a 末世废土危机场景\n🎬 水源争夺 / 表现极端天气、追车、辐射和资源冲突",
+			"x": -620,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n49",
+			"type": "text",
+			"text": "🚩 聚落仪式\n5项 · 开井/结盟/纪念",
+			"x": -340,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n50",
+			"type": "text",
+			"text": "新井开封\nis-a 末世废土聚落仪式场景\n🎬 新井开封 / 表现水源、联盟、记忆、成年与葬礼",
+			"x": -340,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n51",
+			"type": "text",
+			"text": "车队结盟\nis-a 末世废土聚落仪式场景\n🎬 车队结盟 / 表现水源、联盟、记忆、成年与葬礼",
+			"x": -340,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n52",
+			"type": "text",
+			"text": "旧世界纪念\nis-a 末世废土聚落仪式场景\n🎬 旧世界纪念 / 表现水源、联盟、记忆、成年与葬礼",
+			"x": -340,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n53",
+			"type": "text",
+			"text": "成人远行\nis-a 末世废土聚落仪式场景\n🎬 成人远行 / 表现水源、联盟、记忆、成年与葬礼",
+			"x": -340,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n54",
+			"type": "text",
+			"text": "废土葬礼\nis-a 末世废土聚落仪式场景\n🎬 废土葬礼 / 表现水源、联盟、记忆、成年与葬礼",
+			"x": -340,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n55",
+			"type": "text",
+			"text": "🔩 构件 is-a 末世废土组成部分类目 ├ 🏛 废土构件 ┤ 👗 生存工具 ┤ ↔ 服装·建筑·场景·元素",
+			"x": 20,
+			"y": -700,
+			"width": 600,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n56",
+			"type": "text",
+			"text": "🏛 废土构件\n5项 · 结构/装置",
+			"x": 20,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n57",
+			"type": "text",
+			"text": "铁丝网围栏\nis-a 带刺铁丝围栏\n🎬 防御工事/隔离区",
+			"x": 20,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n58",
+			"type": "text",
+			"text": "废铁皮屋顶\nis-a 拼凑的遮蔽物\n🎬 避难所/临时住所",
+			"x": 20,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n59",
+			"type": "text",
+			"text": "轮胎路障\nis-a 废旧轮胎堆\n🎬 检查站/防御点",
+			"x": 20,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n60",
+			"type": "text",
+			"text": "生锈油桶\nis-a 废弃燃料桶\n🎬 燃火/储存/爆炸物",
+			"x": 20,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n61",
+			"type": "text",
+			"text": "天线杆\nis-a 通信天线\n🎬 广播站/信号/希望",
+			"x": 20,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n62",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 20,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n63",
+			"type": "text",
+			"text": "👗 生存工具\n4项 · 日常/武器",
+			"x": 300,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n64",
+			"type": "text",
+			"text": "水过滤器\nis-a 净水装置\n🎬 生存关键/补给",
+			"x": 300,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n65",
+			"type": "text",
+			"text": "打火机\nis-a 点火工具\n🎬 生火/生存/小希望",
+			"x": 300,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n66",
+			"type": "text",
+			"text": "撬棍\nis-a 破门工具\n🎬 探索/开箱/武器",
+			"x": 300,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n67",
+			"type": "text",
+			"text": "短管霰弹枪\nis-a 废土常见武器\n🎬 防身/战斗/掠夺",
+			"x": 300,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n68",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 300,
+			"y": -188,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n69",
+			"type": "text",
+			"text": "🎭 元素 is-a 末世废土视觉母题类目 ├ 💥 毁灭痕迹 ┤ 🌵 新自然 ┤ 📡 文明碎片 ┤ ↔ 服装·建筑·场景·构件",
+			"x": 630,
+			"y": -700,
+			"width": 890,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n70",
+			"type": "text",
+			"text": "💥 毁灭痕迹\n5项 · 灾难/创伤",
+			"x": 630,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n71",
+			"type": "text",
+			"text": "核弹坑\nis-a 巨大圆形凹陷\n🎬 灾难现场/禁区",
+			"x": 630,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n72",
+			"type": "text",
+			"text": "坍塌高楼\nis-a 倒塌的建筑\n🎬 现代文明的终结",
+			"x": 630,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n73",
+			"type": "text",
+			"text": "废弃车辆\nis-a 锈蚀的汽车\n🎬 逃离/拥堵/曾经的日常",
+			"x": 630,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n74",
+			"type": "text",
+			"text": "辐射警告牌\nis-a 黄色三叶标志\n🎬 危险/禁止/死亡区",
+			"x": 630,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n75",
+			"type": "text",
+			"text": "白骨\nis-a 人类遗骸\n🎬 死亡/过去/无人收尸",
+			"x": 630,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n76",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 630,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n77",
+			"type": "text",
+			"text": "🌵 新自然\n4项 · 变异/顽强",
+			"x": 910,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n78",
+			"type": "text",
+			"text": "仙人掌\nis-a 沙漠植物\n🎬 顽强/生命的韧性",
+			"x": 910,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n79",
+			"type": "text",
+			"text": "变异植物\nis-a 发光或变形的植\n🎬 辐射影响/新生态",
+			"x": 910,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n80",
+			"type": "text",
+			"text": "野狗群\nis-a 废土流浪犬\n🎬 群居/野性/威胁",
+			"x": 910,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n81",
+			"type": "text",
+			"text": "秃鹫\nis-a 食腐之鸟\n🎬 死亡/观察/等待",
+			"x": 910,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n82",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 910,
+			"y": -188,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n83",
+			"type": "text",
+			"text": "📡 文明碎片\n4项 · 记忆/痕迹",
+			"x": 1190,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n84",
+			"type": "text",
+			"text": "旧照片\nis-a 褪色的照片\n🎬 记忆/失去的世界",
+			"x": 1190,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n85",
+			"type": "text",
+			"text": "残破旗帜\nis-a 碎布旗帜\n🎬 曾经的国家/归属",
+			"x": 1190,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n86",
+			"type": "text",
+			"text": "儿童玩具\nis-a 破碎的娃娃\n🎬 失去的纯真/残酷对比",
+			"x": 1190,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n87",
+			"type": "text",
+			"text": "收音机\nis-a 通讯设备\n🎬 联系/希望/信号",
+			"x": 1190,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n88",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 1190,
+			"y": -188,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n89",
+			"type": "text",
+			"text": "🔍 检索关键词弹药库\n\nEN Prompt Keywords\npost-apocalyptic wasteland\nnuclear desert\nsurvival gear\nscavenger culture\nruined cities\ndust storms",
+			"x": 1570,
+			"y": -780,
+			"width": 280,
+			"height": 300,
+			"color": "6"
+		},
+		{
+			"id": "n90",
+			"type": "text",
+			"text": "CN 意象脑暴词\n末世废土·文明终结\n锈蚀的汽车残骸堆成山\n沙尘暴中的人影\n沙漠下的旧城废墟\n用废铁皮拼凑的装甲车\n辐射区的蓝色夜光\n幸存者用垃圾换取水",
+			"x": 1950,
+			"y": -850,
+			"width": 280,
+			"height": 400,
+			"color": "6"
+		},
+		{
+			"id": "n91",
+			"type": "text",
+			"text": "📊 十元映射简表\n类别  形        色       质        光       空\n服装 实用粗犷 灰褐土黄 帆布皮革  烟尘散射   多层包裹\n建筑 破败实用 铁锈沙色 钢铁碎石   刺目日光   水平残骸\n场景 荒芜凄凉 灰黄赭褐 沙土金属   烟尘尘雾   开阔废墟\n构件 粗糙焊接 铁锈暗红 废金属焊   缝隙漏光   粗糙拼接\n元素 废土符号 铁锈土黄 氧化金属   高温光线   工业残余",
+			"x": 1570,
+			"y": -450,
+			"width": 640,
+			"height": 225,
+			"color": "6"
+		},
+		{
+			"id": "n92",
+			"type": "text",
+			"text": "📎 完整数据见 is-a.md\n含全部服装+建筑+场景+构件+元素\n以及十元映射简表和Prompt检索词",
+			"x": 1570,
+			"y": -190,
+			"width": 460,
+			"height": 100,
+			"color": "1"
+		}
+	],
+	"edges": [
+		{
+			"id": "e_root_def",
+			"fromNode": "n1",
+			"fromSide": "bottom",
+			"toNode": "n2",
+			"toSide": "top"
+		},
+		{
+			"id": "em_clothing",
+			"fromNode": "n2",
+			"fromSide": "left",
+			"toNode": "n3",
+			"toSide": "right"
+		},
+		{
+			"id": "e_cl_0_h",
+			"fromNode": "n3",
+			"fromSide": "bottom",
+			"toNode": "n4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_0",
+			"fromNode": "n4",
+			"fromSide": "bottom",
+			"toNode": "n5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_1",
+			"fromNode": "n5",
+			"fromSide": "bottom",
+			"toNode": "n6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_2",
+			"fromNode": "n6",
+			"fromSide": "bottom",
+			"toNode": "n7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_3",
+			"fromNode": "n7",
+			"fromSide": "bottom",
+			"toNode": "n8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_4",
+			"fromNode": "n8",
+			"fromSide": "bottom",
+			"toNode": "n9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_m",
+			"fromNode": "n9",
+			"fromSide": "bottom",
+			"toNode": "n10",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_h",
+			"fromNode": "n3",
+			"fromSide": "bottom",
+			"toNode": "n11",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_0",
+			"fromNode": "n11",
+			"fromSide": "bottom",
+			"toNode": "n12",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_1",
+			"fromNode": "n12",
+			"fromSide": "bottom",
+			"toNode": "n13",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_2",
+			"fromNode": "n13",
+			"fromSide": "bottom",
+			"toNode": "n14",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_3",
+			"fromNode": "n14",
+			"fromSide": "bottom",
+			"toNode": "n15",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_4",
+			"fromNode": "n15",
+			"fromSide": "bottom",
+			"toNode": "n16",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_m",
+			"fromNode": "n16",
+			"fromSide": "bottom",
+			"toNode": "n17",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_h",
+			"fromNode": "n3",
+			"fromSide": "bottom",
+			"toNode": "n18",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_0",
+			"fromNode": "n18",
+			"fromSide": "bottom",
+			"toNode": "n19",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_1",
+			"fromNode": "n19",
+			"fromSide": "bottom",
+			"toNode": "n20",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_2",
+			"fromNode": "n20",
+			"fromSide": "bottom",
+			"toNode": "n21",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_m",
+			"fromNode": "n21",
+			"fromSide": "bottom",
+			"toNode": "n22",
+			"toSide": "top"
+		},
+		{
+			"id": "em_arch",
+			"fromNode": "n3",
+			"fromSide": "right",
+			"toNode": "n23",
+			"toSide": "left"
+		},
+		{
+			"id": "e_ar_0_h",
+			"fromNode": "n23",
+			"fromSide": "bottom",
+			"toNode": "n24",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_0",
+			"fromNode": "n24",
+			"fromSide": "bottom",
+			"toNode": "n25",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_1",
+			"fromNode": "n25",
+			"fromSide": "bottom",
+			"toNode": "n26",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_2",
+			"fromNode": "n26",
+			"fromSide": "bottom",
+			"toNode": "n27",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_3",
+			"fromNode": "n27",
+			"fromSide": "bottom",
+			"toNode": "n28",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_4",
+			"fromNode": "n28",
+			"fromSide": "bottom",
+			"toNode": "n29",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_5",
+			"fromNode": "n29",
+			"fromSide": "bottom",
+			"toNode": "n30",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_h",
+			"fromNode": "n23",
+			"fromSide": "bottom",
+			"toNode": "n31",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_0",
+			"fromNode": "n31",
+			"fromSide": "bottom",
+			"toNode": "n32",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_1",
+			"fromNode": "n32",
+			"fromSide": "bottom",
+			"toNode": "n33",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_2",
+			"fromNode": "n33",
+			"fromSide": "bottom",
+			"toNode": "n34",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_3",
+			"fromNode": "n34",
+			"fromSide": "bottom",
+			"toNode": "n35",
+			"toSide": "top"
+		},
+		{
+			"id": "em_scene",
+			"fromNode": "n23",
+			"fromSide": "right",
+			"toNode": "n36",
+			"toSide": "left"
+		},
+		{
+			"id": "e_sc_0_h",
+			"fromNode": "n36",
+			"fromSide": "bottom",
+			"toNode": "n37",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_0",
+			"fromNode": "n37",
+			"fromSide": "bottom",
+			"toNode": "n38",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_1",
+			"fromNode": "n38",
+			"fromSide": "bottom",
+			"toNode": "n39",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_2",
+			"fromNode": "n39",
+			"fromSide": "bottom",
+			"toNode": "n40",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_3",
+			"fromNode": "n40",
+			"fromSide": "bottom",
+			"toNode": "n41",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_4",
+			"fromNode": "n41",
+			"fromSide": "bottom",
+			"toNode": "n42",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_h",
+			"fromNode": "n36",
+			"fromSide": "bottom",
+			"toNode": "n43",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_0",
+			"fromNode": "n43",
+			"fromSide": "bottom",
+			"toNode": "n44",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_1",
+			"fromNode": "n44",
+			"fromSide": "bottom",
+			"toNode": "n45",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_2",
+			"fromNode": "n45",
+			"fromSide": "bottom",
+			"toNode": "n46",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_3",
+			"fromNode": "n46",
+			"fromSide": "bottom",
+			"toNode": "n47",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_4",
+			"fromNode": "n47",
+			"fromSide": "bottom",
+			"toNode": "n48",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_h",
+			"fromNode": "n36",
+			"fromSide": "bottom",
+			"toNode": "n49",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_0",
+			"fromNode": "n49",
+			"fromSide": "bottom",
+			"toNode": "n50",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_1",
+			"fromNode": "n50",
+			"fromSide": "bottom",
+			"toNode": "n51",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_2",
+			"fromNode": "n51",
+			"fromSide": "bottom",
+			"toNode": "n52",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_3",
+			"fromNode": "n52",
+			"fromSide": "bottom",
+			"toNode": "n53",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_4",
+			"fromNode": "n53",
+			"fromSide": "bottom",
+			"toNode": "n54",
+			"toSide": "top"
+		},
+		{
+			"id": "em_comp",
+			"fromNode": "n36",
+			"fromSide": "right",
+			"toNode": "n55",
+			"toSide": "left"
+		},
+		{
+			"id": "e_cp_0_h",
+			"fromNode": "n55",
+			"fromSide": "bottom",
+			"toNode": "n56",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_0",
+			"fromNode": "n56",
+			"fromSide": "bottom",
+			"toNode": "n57",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_1",
+			"fromNode": "n57",
+			"fromSide": "bottom",
+			"toNode": "n58",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_2",
+			"fromNode": "n58",
+			"fromSide": "bottom",
+			"toNode": "n59",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_3",
+			"fromNode": "n59",
+			"fromSide": "bottom",
+			"toNode": "n60",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_4",
+			"fromNode": "n60",
+			"fromSide": "bottom",
+			"toNode": "n61",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_m",
+			"fromNode": "n61",
+			"fromSide": "bottom",
+			"toNode": "n62",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_h",
+			"fromNode": "n55",
+			"fromSide": "bottom",
+			"toNode": "n63",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_0",
+			"fromNode": "n63",
+			"fromSide": "bottom",
+			"toNode": "n64",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_1",
+			"fromNode": "n64",
+			"fromSide": "bottom",
+			"toNode": "n65",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_2",
+			"fromNode": "n65",
+			"fromSide": "bottom",
+			"toNode": "n66",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_3",
+			"fromNode": "n66",
+			"fromSide": "bottom",
+			"toNode": "n67",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_m",
+			"fromNode": "n67",
+			"fromSide": "bottom",
+			"toNode": "n68",
+			"toSide": "top"
+		},
+		{
+			"id": "em_elem",
+			"fromNode": "n55",
+			"fromSide": "right",
+			"toNode": "n69",
+			"toSide": "left"
+		},
+		{
+			"id": "e_el_0_h",
+			"fromNode": "n69",
+			"fromSide": "bottom",
+			"toNode": "n70",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_0",
+			"fromNode": "n70",
+			"fromSide": "bottom",
+			"toNode": "n71",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_1",
+			"fromNode": "n71",
+			"fromSide": "bottom",
+			"toNode": "n72",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_2",
+			"fromNode": "n72",
+			"fromSide": "bottom",
+			"toNode": "n73",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_3",
+			"fromNode": "n73",
+			"fromSide": "bottom",
+			"toNode": "n74",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_4",
+			"fromNode": "n74",
+			"fromSide": "bottom",
+			"toNode": "n75",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_m",
+			"fromNode": "n75",
+			"fromSide": "bottom",
+			"toNode": "n76",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_h",
+			"fromNode": "n69",
+			"fromSide": "bottom",
+			"toNode": "n77",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_0",
+			"fromNode": "n77",
+			"fromSide": "bottom",
+			"toNode": "n78",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_1",
+			"fromNode": "n78",
+			"fromSide": "bottom",
+			"toNode": "n79",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_2",
+			"fromNode": "n79",
+			"fromSide": "bottom",
+			"toNode": "n80",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_3",
+			"fromNode": "n80",
+			"fromSide": "bottom",
+			"toNode": "n81",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_m",
+			"fromNode": "n81",
+			"fromSide": "bottom",
+			"toNode": "n82",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_h",
+			"fromNode": "n69",
+			"fromSide": "bottom",
+			"toNode": "n83",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_0",
+			"fromNode": "n83",
+			"fromSide": "bottom",
+			"toNode": "n84",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_1",
+			"fromNode": "n84",
+			"fromSide": "bottom",
+			"toNode": "n85",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_2",
+			"fromNode": "n85",
+			"fromSide": "bottom",
+			"toNode": "n86",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_3",
+			"fromNode": "n86",
+			"fromSide": "bottom",
+			"toNode": "n87",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_m",
+			"fromNode": "n87",
+			"fromSide": "bottom",
+			"toNode": "n88",
+			"toSide": "top"
+		},
+		{
+			"id": "e_p_en_cn",
+			"fromNode": "n89",
+			"fromSide": "right",
+			"toNode": "n90",
+			"toSide": "left"
+		},
+		{
+			"id": "e_p_en_ty",
+			"fromNode": "n89",
+			"fromSide": "bottom",
+			"toNode": "n91",
+			"toSide": "top"
+		},
+		{
+			"id": "e_note",
+			"fromNode": "n91",
+			"fromSide": "bottom",
+			"toNode": "n92",
+			"toSide": "top"
+		}
+	]
 }

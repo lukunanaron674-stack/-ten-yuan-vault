@@ -1,192 +1,1590 @@
 {
-	"nodes":[
-		{"id":"n1","type":"text","text":"💀 亡灵诅咒 is-a 名词素材库\n        亡灵诅咒 — nx+x","x":-200,"y":-950,"width":480,"height":80,"color":"1"},
-		{"id":"n2","type":"text","text":"📖 风格定义\nis-a 命运视觉风格\n死者不安息·亡灵王朝\n亡灵/诅咒/不死军/灵魂","x":-160,"y":-850,"width":260,"height":110,"color":"6"},
-		{"id":"n3","type":"text","text":"👗 服装 is-a 亡灵诅咒角色造型类目 ├ 💀 亡灵贵族 ┤ ⚰ 亡灵士兵 ┤ 🔮 灵魂体 ┤ ↔ 服装·建筑·场景·构件·元素","x":-2400,"y":-700,"width":890,"height":60,"color":"1"},
-		{"id":"n4","type":"text","text":"💀 亡灵贵族\n5项 · 巫妖/死灵法师","x":-2400,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n5","type":"text","text":"白骨镶边法袍\nis-a 亡灵大法师袍\n🎬 巫妖在骸骨王座前","x":-2400,"y":-480,"width":230,"height":65,"color":"5"},
-		{"id":"n6","type":"text","text":"灵魂之火冠冕\nis-a 幽绿火焰头冠\n🎬 亡灵君主/死灵之王","x":-2400,"y":-407,"width":230,"height":65,"color":"5"},
-		{"id":"n7","type":"text","text":"破碎披风\nis-a 已腐朽的披风\n🎬 亡灵从棺中站起","x":-2400,"y":-334,"width":230,"height":65,"color":"5"},
-		{"id":"n8","type":"text","text":"骨甲肩饰\nis-a 亡灵将领甲\n🎬 亡灵将军统率军队","x":-2400,"y":-261,"width":230,"height":65,"color":"5"},
-		{"id":"n9","type":"text","text":"锁魂铁链腰带\nis-a 束缚灵魂的链\n🎬 灵魂束缚者/控制者","x":-2400,"y":-188,"width":230,"height":65,"color":"5"},
-		{"id":"n10","type":"text","text":"📎 更多\n→ 按需扩展此子分类","x":-2400,"y":-115,"width":250,"height":55,"color":"6"},
-		{"id":"n11","type":"text","text":"⚰ 亡灵士兵\n5项 · 骷髅/僵尸","x":-2120,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n12","type":"text","text":"残破铠甲\nis-a 死者生前的甲\n🎬 亡灵战士列阵前进","x":-2120,"y":-480,"width":230,"height":65,"color":"2"},
-		{"id":"n13","type":"text","text":"生锈铁剑盾\nis-a 被遗忘的武器\n🎬 亡灵军团/不死人海","x":-2120,"y":-407,"width":230,"height":65,"color":"2"},
-		{"id":"n14","type":"text","text":"碎片骨盾\nis-a 骨头拼接的盾\n🎬 骷髅兵/亡灵防御","x":-2120,"y":-334,"width":230,"height":65,"color":"2"},
-		{"id":"n15","type":"text","text":"破损头盔\nis-a 遮住空洞的面\n🎬 无面士兵/整齐行列","x":-2120,"y":-261,"width":230,"height":65,"color":"2"},
-		{"id":"n16","type":"text","text":"锁链脚镣\nis-a 死亡时戴的镣\n🎬 被束缚的灵魂/奴隶","x":-2120,"y":-188,"width":230,"height":65,"color":"2"},
-		{"id":"n17","type":"text","text":"📎 更多\n→ 按需扩展此子分类","x":-2120,"y":-115,"width":250,"height":55,"color":"6"},
-		{"id":"n18","type":"text","text":"🔮 灵魂体\n4项 · 幽灵/怨灵","x":-1840,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n19","type":"text","text":"半透明残袍\nis-a 灵体的衣物\n🎬 幽灵飘过/不可触碰","x":-1840,"y":-480,"width":230,"height":65,"color":"3"},
-		{"id":"n20","type":"text","text":"发光轮廓体\nis-a 自发光灵体\n🎬 灵魂之光/残留意念","x":-1840,"y":-407,"width":230,"height":65,"color":"3"},
-		{"id":"n21","type":"text","text":"残破面纱\nis-a 遮面的布片\n🎬 幽灵新娘/无法安息","x":-1840,"y":-334,"width":230,"height":65,"color":"3"},
-		{"id":"n22","type":"text","text":"铁链缠身\nis-a 束缚灵的链\n🎬 被束缚的灵魂/怨灵","x":-1840,"y":-261,"width":230,"height":65,"color":"3"},
-		{"id":"n23","type":"text","text":"📎 更多\n→ 按需扩展此子分类","x":-1840,"y":-188,"width":250,"height":55,"color":"6"},
-		{"id":"n24","type":"text","text":"🏛️ 建筑 is-a 亡灵诅咒空间场景类目 ├ v0空间母体 ┤ v1典型空间 ┤ ↔ 服装·场景·构件·元素","x":-1510,"y":-700,"width":600,"height":60,"color":"1"},
-		{"id":"n25","type":"text","text":"v0 空间母体层\\n6项 · 核心空间","x":-1510,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n26","type":"text","text":"地下墓殿\nis-a 死者地下宫殿\n🎬 地下陵墓 / 亡灵都市 / 死者之国","x":-1510,"y":-480,"width":230,"height":65,"color":"4"},
-		{"id":"n27","type":"text","text":"黑墓回廊\nis-a 漆黑墓道\n🎬 漆黑走廊 / 墓道前行 / 壁龛中的空洞","x":-1510,"y":-407,"width":230,"height":65,"color":"4"},
-		{"id":"n28","type":"text","text":"亡灵王座\nis-a 死者的王位\n🎬 死者之王 / 被诅咒的皇权 / 亡者之地的心脏","x":-1510,"y":-334,"width":230,"height":65,"color":"4"},
-		{"id":"n29","type":"text","text":"墓园钟楼\nis-a 墓园中的塔\n🎬 墓园钟声 / 死亡的报时 / 钟与葬礼","x":-1510,"y":-261,"width":230,"height":65,"color":"4"},
-		{"id":"n30","type":"text","text":"骨墙要塞\nis-a 骨墙筑成的堡垒\n🎬 骨垒成的墙 / 防御与死亡的结合 / 白骨阵","x":-1510,"y":-188,"width":230,"height":65,"color":"4"},
-		{"id":"n31","type":"text","text":"灵魂井\nis-a 聚魂井\n🎬 灵魂之井 / 向下走近光 / 灵体聚集处","x":-1510,"y":-115,"width":230,"height":65,"color":"4"},
-		{"id":"n32","type":"text","text":"v1 典型空间层\\n4项 · 废墟/空间","x":-1230,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n33","type":"text","text":"地下墓殿废墟\nis-a 废弃地下陵墓（上位：地下墓殿）\n🎬 陵墓崩坏 / 死者被打扰 / 古代的坍塌","x":-1230,"y":-480,"width":230,"height":65,"color":"4"},
-		{"id":"n34","type":"text","text":"地下墓殿圣所\nis-a 废弃死者圣堂（上位：地下墓殿）\n🎬 死者朝拜 / 空王冠 / 谁曾统治这里","x":-1230,"y":-407,"width":230,"height":65,"color":"4"},
-		{"id":"n35","type":"text","text":"地下墓殿大厅\nis-a 废弃墓厅（上位：地下墓殿）\n🎬 空棺成列 / 棺材开着 / 死者出走","x":-1230,"y":-334,"width":230,"height":65,"color":"4"},
-		{"id":"n36","type":"text","text":"地下墓殿回廊\nis-a 废弃墓廊（上位：地下墓殿）\n🎬 空头骨位 / 像眼睛的空洞 / 油脂痕迹","x":-1230,"y":-261,"width":230,"height":65,"color":"4"},
-		{"id":"n37","type":"text","text":"🌄 场景 is-a 亡灵诅咒镜头情境类目 ├ v2状态侵蚀 ┤ v3内部功能 ┤ v4复合场景 ┤ ↔ 服装·建筑·构件·元素","x":-900,"y":-700,"width":900,"height":60,"color":"1"},
-		{"id":"n38","type":"text","text":"v2 状态侵蚀层\\n5项 · 自然/超自然改造","x":-900,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n39","type":"text","text":"地下墓殿废墟被花蔓侵蚀\nis-a 骨花（上位：地下墓殿废墟）\n🎬 白骨之花 / 半透明白 / 从骨中出","x":-900,"y":-480,"width":230,"height":65,"color":"2"},
-		{"id":"n40","type":"text","text":"地下墓殿废墟被荆棘缠绕\nis-a 亡灵棘（上位：地下墓殿废墟）\n🎬 骨棘 / 骨骼化棘 / 缠绕的骨头","x":-900,"y":-407,"width":230,"height":65,"color":"2"},
-		{"id":"n41","type":"text","text":"地下墓殿废墟被树根穿刺\nis-a 根缠骨（上位：地下墓殿废墟）\n🎬 根与骨缠绕 / 植物在消化死者","x":-900,"y":-334,"width":230,"height":65,"color":"2"},
-		{"id":"n42","type":"text","text":"地下墓殿废墟被苔藓覆盖\nis-a 骨苔（上位：地下墓殿废墟）\n🎬 骨与苔同色 / 骨长毛了 / 边界的消失","x":-900,"y":-261,"width":230,"height":65,"color":"2"},
-		{"id":"n43","type":"text","text":"地下墓殿废墟被菌丝寄生\nis-a 暗光菌（上位：地下墓殿废墟）\n🎬 紫光描绘骨架 / 菌丝画出死者的形状","x":-900,"y":-188,"width":230,"height":65,"color":"2"},
-		{"id":"n44","type":"text","text":"v3 内部功能空间\\n5项 · 功能区","x":-620,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n45","type":"text","text":"地下墓殿废墟被花蔓侵蚀中央空间\nis-a 骨花中央（上位：地下墓殿废墟被花蔓侵蚀）\n🎬 每棺有花 / 亡灵的装饰 / 白花点点棺上","x":-620,"y":-480,"width":230,"height":65,"color":"2"},
-		{"id":"n46","type":"text","text":"地下墓殿废墟被花蔓侵蚀祭坛空间\nis-a 骨花祭台（上位：地下墓殿废墟被花蔓侵蚀）\n🎬 花沿痕长 / 流痕变花道 / 祭台开花","x":-620,"y":-407,"width":230,"height":65,"color":"2"},
-		{"id":"n47","type":"text","text":"地下墓殿废墟被花蔓侵蚀回廊空间\nis-a 骨花廊（上位：地下墓殿废墟被花蔓侵蚀）\n🎬 花在放头的位置 / 骨花代替了骨头","x":-620,"y":-334,"width":230,"height":65,"color":"2"},
-		{"id":"n48","type":"text","text":"地下墓殿废墟被花蔓侵蚀洗礼池\nis-a 骨花池（上位：地下墓殿废墟被花蔓侵蚀）\n🎬 水中骨花 / 花从水底出 / 透明水中的白花","x":-620,"y":-261,"width":230,"height":65,"color":"2"},
-		{"id":"n49","type":"text","text":"地下墓殿废墟被花蔓侵蚀祈祷室\nis-a 骨花室（上位：地下墓殿废墟被花蔓侵蚀）\n🎬 王冠生花 / 花取代了冠 / 空冠上的花","x":-620,"y":-188,"width":230,"height":65,"color":"2"},
-		{"id":"n50","type":"text","text":"v4 复合场景层\\n5项 · 版本变体","x":-340,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n51","type":"text","text":"地下墓殿废墟被花蔓侵蚀中央空间复合场景\nis-a 骨花心标准版（上位：中央空间）\n🎬 白花覆棺 / 花海墓厅 / 标准大全景","x":-340,"y":-480,"width":230,"height":65,"color":"2"},
-		{"id":"n52","type":"text","text":"地下墓殿废墟被花蔓侵蚀中央空间镜面版\nis-a 骨花心倒影版（上位：中央空间）\n🎬 水上白水下蓝 / 花的双重色彩","x":-340,"y":-407,"width":230,"height":65,"color":"2"},
-		{"id":"n56","type":"text","text":"🔩 构件 is-a 亡灵诅咒组成部分类目 ├ 🏛 亡灵构件 ┤ 👗 亡灵道具 ┤ ↔ 服装·建筑·场景·元素","x":20,"y":-700,"width":600,"height":60,"color":"1"},
-		{"id":"n57","type":"text","text":"🏛 亡灵构件\n5项 · 骨/坟墓/碑","x":20,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n58","type":"text","text":"骨制王座\nis-a 用骨头做的椅\n🎬 亡灵权力/恐怖美学","x":20,"y":-480,"width":230,"height":65,"color":"6"},
-		{"id":"n59","type":"text","text":"骷髅堆\nis-a 堆成的骨山\n🎬 死亡数量/恐怖景观","x":20,"y":-407,"width":230,"height":65,"color":"6"},
-		{"id":"n60","type":"text","text":"墓碑阵列\nis-a 成排的墓碑\n🎬 公墓/亡灵之地","x":20,"y":-334,"width":230,"height":65,"color":"6"},
-		{"id":"n61","type":"text","text":"铁链吊灯\nis-a 悬挂的烛台\n🎬 亡灵城堡照明","x":20,"y":-261,"width":230,"height":65,"color":"6"},
-		{"id":"n62","type":"text","text":"烛台骨骸\nis-a 手骨持烛\n🎬 恐怖/黑暗/亡灵日常","x":20,"y":-188,"width":230,"height":65,"color":"6"},
-		{"id":"n63","type":"text","text":"📎 更多\n→ 按需扩展此子分类","x":20,"y":-115,"width":250,"height":55,"color":"6"},
-		{"id":"n64","type":"text","text":"👗 亡灵道具\n5项 · 魔法/法器","x":300,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n65","type":"text","text":"骷髅法杖\nis-a 头骨顶端的杖\n🎬 死灵法师施法","x":300,"y":-480,"width":230,"height":65,"color":"5"},
-		{"id":"n66","type":"text","text":"灵魂瓶\nis-a 储存灵魂的瓶\n🎬 收集灵魂/能源","x":300,"y":-407,"width":230,"height":65,"color":"5"},
-		{"id":"n67","type":"text","text":"招魂幡\nis-a 亡灵旗帜\n🎬 召集亡灵/领域标志","x":300,"y":-334,"width":230,"height":65,"color":"5"},
-		{"id":"n68","type":"text","text":"骨制匕首\nis-a 肋骨做成的刀\n🎬 祭祀/献祭/仪式","x":300,"y":-261,"width":230,"height":65,"color":"5"},
-		{"id":"n69","type":"text","text":"铁质棺材钉\nis-a 长尖铁钉\n🎬 封印/封闭/恐惧","x":300,"y":-188,"width":230,"height":65,"color":"5"},
-		{"id":"n70","type":"text","text":"📎 更多\n→ 按需扩展此子分类","x":300,"y":-115,"width":250,"height":55,"color":"6"},
-		{"id":"n71","type":"text","text":"🎭 元素 is-a 亡灵诅咒视觉母题类目 ├ 🕯 死亡象征 ┤ ⚰ 亡灵场所 ┤ 🌑 诅咒符号 ┤ ↔ 服装·建筑·场景·构件","x":630,"y":-700,"width":890,"height":60,"color":"1"},
-		{"id":"n72","type":"text","text":"🕯 死亡象征\n5项 · 骨/棺/火","x":630,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n73","type":"text","text":"骷髅头\nis-a 人类头骨\n🎬 死亡标志/memento mori","x":630,"y":-480,"width":230,"height":65,"color":"1"},
-		{"id":"n74","type":"text","text":"灵魂之火\nis-a 幽绿色火焰\n🎬 不死/残留/冷光","x":630,"y":-407,"width":230,"height":65,"color":"1"},
-		{"id":"n75","type":"text","text":"碎裂棺材\nis-a 破开的棺木\n🎬 死者出棺/不安息","x":630,"y":-334,"width":230,"height":65,"color":"1"},
-		{"id":"n76","type":"text","text":"白骨之手\nis-a 从地下伸出的手\n🎬 死亡蔓延/复苏","x":630,"y":-261,"width":230,"height":65,"color":"1"},
-		{"id":"n77","type":"text","text":"铁质锁链\nis-a 粗大链条\n🎬 束缚/囚禁/罪恶","x":630,"y":-188,"width":230,"height":65,"color":"1"},
-		{"id":"n78","type":"text","text":"📎 更多\n→ 按需扩展此子分类","x":630,"y":-115,"width":250,"height":55,"color":"6"},
-		{"id":"n79","type":"text","text":"⚰ 亡灵场所\n4项 · 墓地/殿堂","x":910,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n80","type":"text","text":"万人坑\nis-a 集体葬坑\n🎬 大规模死亡/战争痕迹","x":910,"y":-480,"width":230,"height":65,"color":"2"},
-		{"id":"n81","type":"text","text":"地下墓穴\nis-a 地下葬室\n🎬 死者住所/地下城","x":910,"y":-407,"width":230,"height":65,"color":"2"},
-		{"id":"n82","type":"text","text":"焚尸炉\nis-a 曾经的火化设施\n🎬 净化/毁灭/痕迹","x":910,"y":-334,"width":230,"height":65,"color":"2"},
-		{"id":"n83","type":"text","text":"绞刑架\nis-a 执行死刑的架\n🎬 死亡/惩罚/历史","x":910,"y":-261,"width":230,"height":65,"color":"2"},
-		{"id":"n84","type":"text","text":"📎 更多\n→ 按需扩展此子分类","x":910,"y":-188,"width":250,"height":55,"color":"6"},
-		{"id":"n85","type":"text","text":"🌑 诅咒符号\n4项 · 标记/法术","x":1190,"y":-550,"width":260,"height":55,"color":"6"},
-		{"id":"n86","type":"text","text":"诅咒符文\nis-a 黑魔法符号\n🎬 亡灵标记/不死咒语","x":1190,"y":-480,"width":230,"height":65,"color":"5"},
-		{"id":"n87","type":"text","text":"倒挂尸体\nis-a 悬挂的死者\n🎬 警示/恐怖/惩罚","x":1190,"y":-407,"width":230,"height":65,"color":"5"},
-		{"id":"n88","type":"text","text":"黑蜡烛\nis-a 黑蜡制成的烛\n🎬 仪式/悼念/亡灵仪","x":1190,"y":-334,"width":230,"height":65,"color":"5"},
-		{"id":"n89","type":"text","text":"血手印\nis-a 墙上的血掌印\n🎬 挣扎/残酷/线索","x":1190,"y":-261,"width":230,"height":65,"color":"5"},
-		{"id":"n90","type":"text","text":"📎 更多\n→ 按需扩展此子分类","x":1190,"y":-188,"width":250,"height":55,"color":"6"},
-		{"id":"n91","type":"text","text":"🔍 检索关键词弹药库\n\nEN Prompt Keywords\nundead curse style\nnecromantic army\nsoul bound magic\nbone architecture\ndark resurrection\nneverending death","x":1570,"y":-780,"width":280,"height":300,"color":"6"},
-		{"id":"n92","type":"text","text":"CN 意象脑暴词\n亡灵诅咒·死者不安息\n白骨堆成的王座\n永不熄灭的灵魂之火\n死者从坟墓中爬出\n被诅咒的灵魂不得安息\n铁链锁住的幽灵\n死者的军队在集结","x":1950,"y":-850,"width":280,"height":400,"color":"6"},
-		{"id":"n93","type":"text","text":"📊 十元映射简表\n类别  形        色       质        光       空\n服装 破碎残旧 灰黑惨白 骨片破碎  幽绿冷光   破败垂落\n建筑 白骨累累 灰黑惨白 骨石混合   幽暗蓝绿   墓室结构\n场景 死亡蔓延 灰白墨黑 骨灰尘土   鬼火冷光   墓场广袤\n构件 骨制风格 惨白灰黄 骨雕石刻   暗处磷光   密集重复\n元素 骷髅符号 惨白墨黑 骨质金属   幽绿磷光   循环死亡","x":1570,"y":-450,"width":640,"height":225,"color":"6"},
-		{"id":"n94","type":"text","text":"📎 完整数据见 is-a.md\n含全部服装+建筑+场景+构件+元素\n以及十元映射简表和Prompt检索词","x":1570,"y":-190,"width":460,"height":100,"color":"1"},
-		{"id":"n55","type":"text","text":"地下墓殿废墟被花蔓侵蚀中央空间黑水版\nis-a 骨花心黑液版（上位：中央空间）\n🎬 花从根开始黑 / 渐变的灰 / 死亡在染花","x":-340,"y":-20,"width":230,"height":188,"color":"2"},
-		{"id":"n54","type":"text","text":"地下墓殿废墟被花蔓侵蚀中央空间月光版\nis-a 骨花心月夜版（上位：中央空间）\n🎬 花在月中自发光 / 花作灯 / 月光激活了花","x":-340,"y":-174,"width":230,"height":174,"color":"2"},
-		{"id":"n53","type":"text","text":"地下墓殿废墟被花蔓侵蚀中央空间沉水版\nis-a 骨花心水漫版（上位：中央空间）\n🎬 花在水中如冰 / 半透明花 / 白色水母般的花","x":-340,"y":-203,"width":230,"height":160,"color":"2"}
+	"nodes": [
+		{
+			"id": "n1",
+			"type": "text",
+			"text": "💀 亡灵诅咒 is-a 名词素材库\n        亡灵诅咒 — nx+x",
+			"x": -200,
+			"y": -950,
+			"width": 480,
+			"height": 80,
+			"color": "1"
+		},
+		{
+			"id": "n2",
+			"type": "text",
+			"text": "📖 风格定义\nis-a 命运视觉风格\n死者不安息·亡灵王朝\n亡灵/诅咒/不死军/灵魂",
+			"x": -160,
+			"y": -850,
+			"width": 260,
+			"height": 110,
+			"color": "6"
+		},
+		{
+			"id": "n3",
+			"type": "text",
+			"text": "👗 服装 is-a 亡灵诅咒角色造型类目 ├ 💀 亡灵贵族 ┤ ⚰ 亡灵士兵 ┤ 🔮 灵魂体 ┤ ↔ 服装·建筑·场景·构件·元素",
+			"x": -2400,
+			"y": -700,
+			"width": 890,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n4",
+			"type": "text",
+			"text": "💀 亡灵贵族\n5项 · 巫妖/死灵法师",
+			"x": -2400,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n5",
+			"type": "text",
+			"text": "白骨镶边法袍\nis-a 亡灵大法师袍\n🎬 巫妖在骸骨王座前",
+			"x": -2400,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n6",
+			"type": "text",
+			"text": "灵魂之火冠冕\nis-a 幽绿火焰头冠\n🎬 亡灵君主/死灵之王",
+			"x": -2400,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n7",
+			"type": "text",
+			"text": "破碎披风\nis-a 已腐朽的披风\n🎬 亡灵从棺中站起",
+			"x": -2400,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n8",
+			"type": "text",
+			"text": "骨甲肩饰\nis-a 亡灵将领甲\n🎬 亡灵将军统率军队",
+			"x": -2400,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n9",
+			"type": "text",
+			"text": "锁魂铁链腰带\nis-a 束缚灵魂的链\n🎬 灵魂束缚者/控制者",
+			"x": -2400,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n10",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": -2400,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n11",
+			"type": "text",
+			"text": "⚰ 亡灵士兵\n5项 · 骷髅/僵尸",
+			"x": -2120,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n12",
+			"type": "text",
+			"text": "残破铠甲\nis-a 死者生前的甲\n🎬 亡灵战士列阵前进",
+			"x": -2120,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n13",
+			"type": "text",
+			"text": "生锈铁剑盾\nis-a 被遗忘的武器\n🎬 亡灵军团/不死人海",
+			"x": -2120,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n14",
+			"type": "text",
+			"text": "碎片骨盾\nis-a 骨头拼接的盾\n🎬 骷髅兵/亡灵防御",
+			"x": -2120,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n15",
+			"type": "text",
+			"text": "破损头盔\nis-a 遮住空洞的面\n🎬 无面士兵/整齐行列",
+			"x": -2120,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n16",
+			"type": "text",
+			"text": "锁链脚镣\nis-a 死亡时戴的镣\n🎬 被束缚的灵魂/奴隶",
+			"x": -2120,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n17",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": -2120,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n18",
+			"type": "text",
+			"text": "🔮 灵魂体\n4项 · 幽灵/怨灵",
+			"x": -1840,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n19",
+			"type": "text",
+			"text": "半透明残袍\nis-a 灵体的衣物\n🎬 幽灵飘过/不可触碰",
+			"x": -1840,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "3"
+		},
+		{
+			"id": "n20",
+			"type": "text",
+			"text": "发光轮廓体\nis-a 自发光灵体\n🎬 灵魂之光/残留意念",
+			"x": -1840,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "3"
+		},
+		{
+			"id": "n21",
+			"type": "text",
+			"text": "残破面纱\nis-a 遮面的布片\n🎬 幽灵新娘/无法安息",
+			"x": -1840,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "3"
+		},
+		{
+			"id": "n22",
+			"type": "text",
+			"text": "铁链缠身\nis-a 束缚灵的链\n🎬 被束缚的灵魂/怨灵",
+			"x": -1840,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "3"
+		},
+		{
+			"id": "n23",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": -1840,
+			"y": -188,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n24",
+			"type": "text",
+			"text": "🏛️ 建筑 is-a 亡灵诅咒空间场景类目 ├ v0空间母体 ┤ v1典型空间 ┤ ↔ 服装·场景·构件·元素",
+			"x": -1510,
+			"y": -700,
+			"width": 600,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n25",
+			"type": "text",
+			"text": "v0 空间母体层\\n6项 · 核心空间",
+			"x": -1510,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n26",
+			"type": "text",
+			"text": "地下墓殿\nis-a 死者地下宫殿\n🎬 地下陵墓 / 亡灵都市 / 死者之国",
+			"x": -1510,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n27",
+			"type": "text",
+			"text": "黑墓回廊\nis-a 漆黑墓道\n🎬 漆黑走廊 / 墓道前行 / 壁龛中的空洞",
+			"x": -1510,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n28",
+			"type": "text",
+			"text": "亡灵王座\nis-a 死者的王位\n🎬 死者之王 / 被诅咒的皇权 / 亡者之地的心脏",
+			"x": -1510,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n29",
+			"type": "text",
+			"text": "墓园钟楼\nis-a 墓园中的塔\n🎬 墓园钟声 / 死亡的报时 / 钟与葬礼",
+			"x": -1510,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n30",
+			"type": "text",
+			"text": "骨墙要塞\nis-a 骨墙筑成的堡垒\n🎬 骨垒成的墙 / 防御与死亡的结合 / 白骨阵",
+			"x": -1510,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n31",
+			"type": "text",
+			"text": "灵魂井\nis-a 聚魂井\n🎬 灵魂之井 / 向下走近光 / 灵体聚集处",
+			"x": -1510,
+			"y": -115,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n32",
+			"type": "text",
+			"text": "v1 典型空间层\\n4项 · 废墟/空间",
+			"x": -1230,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n33",
+			"type": "text",
+			"text": "地下墓殿废墟\nis-a 废弃地下陵墓（上位：地下墓殿）\n🎬 陵墓崩坏 / 死者被打扰 / 古代的坍塌",
+			"x": -1230,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n34",
+			"type": "text",
+			"text": "地下墓殿圣所\nis-a 废弃死者圣堂（上位：地下墓殿）\n🎬 死者朝拜 / 空王冠 / 谁曾统治这里",
+			"x": -1230,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n35",
+			"type": "text",
+			"text": "地下墓殿大厅\nis-a 废弃墓厅（上位：地下墓殿）\n🎬 空棺成列 / 棺材开着 / 死者出走",
+			"x": -1230,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n36",
+			"type": "text",
+			"text": "地下墓殿回廊\nis-a 废弃墓廊（上位：地下墓殿）\n🎬 空头骨位 / 像眼睛的空洞 / 油脂痕迹",
+			"x": -1230,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n37",
+			"type": "text",
+			"text": "🌄 场景 is-a 亡灵诅咒可绘制场景类目 ├ 💀 死者日常 ┤ 🕯 诅咒危机 ┤ ⚰️ 冥界仪式 ├ ↔ 服装·建筑·构件·元素",
+			"x": -900,
+			"y": -700,
+			"width": 900,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n38",
+			"type": "text",
+			"text": "💀 死者日常\n5项 · 巡街/交易/修补",
+			"x": -900,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n39",
+			"type": "text",
+			"text": "骷髅巡街\nis-a 亡灵社会日常场景\n🎬 骷髅巡街 / 表现亡者秩序、工作、交易和社交",
+			"x": -900,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n40",
+			"type": "text",
+			"text": "幽灵排队\nis-a 亡灵社会日常场景\n🎬 幽灵排队 / 表现亡者秩序、工作、交易和社交",
+			"x": -900,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n41",
+			"type": "text",
+			"text": "墓园交易\nis-a 亡灵社会日常场景\n🎬 墓园交易 / 表现亡者秩序、工作、交易和社交",
+			"x": -900,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n42",
+			"type": "text",
+			"text": "尸匠缝补\nis-a 亡灵社会日常场景\n🎬 尸匠缝补 / 表现亡者秩序、工作、交易和社交",
+			"x": -900,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n43",
+			"type": "text",
+			"text": "亡者晚宴\nis-a 亡灵社会日常场景\n🎬 亡者晚宴 / 表现亡者秩序、工作、交易和社交",
+			"x": -900,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n44",
+			"type": "text",
+			"text": "🕯 诅咒危机\n5项 · 暴动/逃逸/围城",
+			"x": -620,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n45",
+			"type": "text",
+			"text": "墓穴暴动\nis-a 亡灵诅咒危机场景\n🎬 墓穴暴动 / 表现墓穴暴动、尸潮、扩散和驱魔失败",
+			"x": -620,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n46",
+			"type": "text",
+			"text": "灵魂逃逸\nis-a 亡灵诅咒危机场景\n🎬 灵魂逃逸 / 表现墓穴暴动、尸潮、扩散和驱魔失败",
+			"x": -620,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n47",
+			"type": "text",
+			"text": "尸潮围城\nis-a 亡灵诅咒危机场景\n🎬 尸潮围城 / 表现墓穴暴动、尸潮、扩散和驱魔失败",
+			"x": -620,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n48",
+			"type": "text",
+			"text": "诅咒扩散\nis-a 亡灵诅咒危机场景\n🎬 诅咒扩散 / 表现墓穴暴动、尸潮、扩散和驱魔失败",
+			"x": -620,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n49",
+			"type": "text",
+			"text": "驱魔失败\nis-a 亡灵诅咒危机场景\n🎬 驱魔失败 / 表现墓穴暴动、尸潮、扩散和驱魔失败",
+			"x": -620,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n50",
+			"type": "text",
+			"text": "⚰️ 冥界仪式\n5项 · 招魂/称量/封印",
+			"x": -340,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n51",
+			"type": "text",
+			"text": "招魂夜\nis-a 亡灵冥界仪式场景\n🎬 招魂夜 / 表现招魂、王权、裁决、婚礼和封印",
+			"x": -340,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n52",
+			"type": "text",
+			"text": "死者加冕\nis-a 亡灵冥界仪式场景\n🎬 死者加冕 / 表现招魂、王权、裁决、婚礼和封印",
+			"x": -340,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n56",
+			"type": "text",
+			"text": "🔩 构件 is-a 亡灵诅咒组成部分类目 ├ 🏛 亡灵构件 ┤ 👗 亡灵道具 ┤ ↔ 服装·建筑·场景·元素",
+			"x": 20,
+			"y": -700,
+			"width": 600,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n57",
+			"type": "text",
+			"text": "🏛 亡灵构件\n5项 · 骨/坟墓/碑",
+			"x": 20,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n58",
+			"type": "text",
+			"text": "骨制王座\nis-a 用骨头做的椅\n🎬 亡灵权力/恐怖美学",
+			"x": 20,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n59",
+			"type": "text",
+			"text": "骷髅堆\nis-a 堆成的骨山\n🎬 死亡数量/恐怖景观",
+			"x": 20,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n60",
+			"type": "text",
+			"text": "墓碑阵列\nis-a 成排的墓碑\n🎬 公墓/亡灵之地",
+			"x": 20,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n61",
+			"type": "text",
+			"text": "铁链吊灯\nis-a 悬挂的烛台\n🎬 亡灵城堡照明",
+			"x": 20,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n62",
+			"type": "text",
+			"text": "烛台骨骸\nis-a 手骨持烛\n🎬 恐怖/黑暗/亡灵日常",
+			"x": 20,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n63",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 20,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n64",
+			"type": "text",
+			"text": "👗 亡灵道具\n5项 · 魔法/法器",
+			"x": 300,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n65",
+			"type": "text",
+			"text": "骷髅法杖\nis-a 头骨顶端的杖\n🎬 死灵法师施法",
+			"x": 300,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n66",
+			"type": "text",
+			"text": "灵魂瓶\nis-a 储存灵魂的瓶\n🎬 收集灵魂/能源",
+			"x": 300,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n67",
+			"type": "text",
+			"text": "招魂幡\nis-a 亡灵旗帜\n🎬 召集亡灵/领域标志",
+			"x": 300,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n68",
+			"type": "text",
+			"text": "骨制匕首\nis-a 肋骨做成的刀\n🎬 祭祀/献祭/仪式",
+			"x": 300,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n69",
+			"type": "text",
+			"text": "铁质棺材钉\nis-a 长尖铁钉\n🎬 封印/封闭/恐惧",
+			"x": 300,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n70",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 300,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n71",
+			"type": "text",
+			"text": "🎭 元素 is-a 亡灵诅咒视觉母题类目 ├ 🕯 死亡象征 ┤ ⚰ 亡灵场所 ┤ 🌑 诅咒符号 ┤ ↔ 服装·建筑·场景·构件",
+			"x": 630,
+			"y": -700,
+			"width": 890,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n72",
+			"type": "text",
+			"text": "🕯 死亡象征\n5项 · 骨/棺/火",
+			"x": 630,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n73",
+			"type": "text",
+			"text": "骷髅头\nis-a 人类头骨\n🎬 死亡标志/memento mori",
+			"x": 630,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "1"
+		},
+		{
+			"id": "n74",
+			"type": "text",
+			"text": "灵魂之火\nis-a 幽绿色火焰\n🎬 不死/残留/冷光",
+			"x": 630,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "1"
+		},
+		{
+			"id": "n75",
+			"type": "text",
+			"text": "碎裂棺材\nis-a 破开的棺木\n🎬 死者出棺/不安息",
+			"x": 630,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "1"
+		},
+		{
+			"id": "n76",
+			"type": "text",
+			"text": "白骨之手\nis-a 从地下伸出的手\n🎬 死亡蔓延/复苏",
+			"x": 630,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "1"
+		},
+		{
+			"id": "n77",
+			"type": "text",
+			"text": "铁质锁链\nis-a 粗大链条\n🎬 束缚/囚禁/罪恶",
+			"x": 630,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "1"
+		},
+		{
+			"id": "n78",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 630,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n79",
+			"type": "text",
+			"text": "⚰ 亡灵场所\n4项 · 墓地/殿堂",
+			"x": 910,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n80",
+			"type": "text",
+			"text": "万人坑\nis-a 集体葬坑\n🎬 大规模死亡/战争痕迹",
+			"x": 910,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n81",
+			"type": "text",
+			"text": "地下墓穴\nis-a 地下葬室\n🎬 死者住所/地下城",
+			"x": 910,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n82",
+			"type": "text",
+			"text": "焚尸炉\nis-a 曾经的火化设施\n🎬 净化/毁灭/痕迹",
+			"x": 910,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n83",
+			"type": "text",
+			"text": "绞刑架\nis-a 执行死刑的架\n🎬 死亡/惩罚/历史",
+			"x": 910,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n84",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 910,
+			"y": -188,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n85",
+			"type": "text",
+			"text": "🌑 诅咒符号\n4项 · 标记/法术",
+			"x": 1190,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n86",
+			"type": "text",
+			"text": "诅咒符文\nis-a 黑魔法符号\n🎬 亡灵标记/不死咒语",
+			"x": 1190,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n87",
+			"type": "text",
+			"text": "倒挂尸体\nis-a 悬挂的死者\n🎬 警示/恐怖/惩罚",
+			"x": 1190,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n88",
+			"type": "text",
+			"text": "黑蜡烛\nis-a 黑蜡制成的烛\n🎬 仪式/悼念/亡灵仪",
+			"x": 1190,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n89",
+			"type": "text",
+			"text": "血手印\nis-a 墙上的血掌印\n🎬 挣扎/残酷/线索",
+			"x": 1190,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n90",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 1190,
+			"y": -188,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n91",
+			"type": "text",
+			"text": "🔍 检索关键词弹药库\n\nEN Prompt Keywords\nundead curse style\nnecromantic army\nsoul bound magic\nbone architecture\ndark resurrection\nneverending death",
+			"x": 1570,
+			"y": -780,
+			"width": 280,
+			"height": 300,
+			"color": "6"
+		},
+		{
+			"id": "n92",
+			"type": "text",
+			"text": "CN 意象脑暴词\n亡灵诅咒·死者不安息\n白骨堆成的王座\n永不熄灭的灵魂之火\n死者从坟墓中爬出\n被诅咒的灵魂不得安息\n铁链锁住的幽灵\n死者的军队在集结",
+			"x": 1950,
+			"y": -850,
+			"width": 280,
+			"height": 400,
+			"color": "6"
+		},
+		{
+			"id": "n93",
+			"type": "text",
+			"text": "📊 十元映射简表\n类别  形        色       质        光       空\n服装 破碎残旧 灰黑惨白 骨片破碎  幽绿冷光   破败垂落\n建筑 白骨累累 灰黑惨白 骨石混合   幽暗蓝绿   墓室结构\n场景 死亡蔓延 灰白墨黑 骨灰尘土   鬼火冷光   墓场广袤\n构件 骨制风格 惨白灰黄 骨雕石刻   暗处磷光   密集重复\n元素 骷髅符号 惨白墨黑 骨质金属   幽绿磷光   循环死亡",
+			"x": 1570,
+			"y": -450,
+			"width": 640,
+			"height": 225,
+			"color": "6"
+		},
+		{
+			"id": "n94",
+			"type": "text",
+			"text": "📎 完整数据见 is-a.md\n含全部服装+建筑+场景+构件+元素\n以及十元映射简表和Prompt检索词",
+			"x": 1570,
+			"y": -190,
+			"width": 460,
+			"height": 100,
+			"color": "1"
+		},
+		{
+			"id": "n55",
+			"type": "text",
+			"text": "永眠封印\nis-a 亡灵冥界仪式场景\n🎬 永眠封印 / 表现招魂、王权、裁决、婚礼和封印",
+			"x": -340,
+			"y": -20,
+			"width": 230,
+			"height": 188,
+			"color": "2"
+		},
+		{
+			"id": "n54",
+			"type": "text",
+			"text": "棺木婚礼\nis-a 亡灵冥界仪式场景\n🎬 棺木婚礼 / 表现招魂、王权、裁决、婚礼和封印",
+			"x": -340,
+			"y": -174,
+			"width": 230,
+			"height": 174,
+			"color": "2"
+		},
+		{
+			"id": "n53",
+			"type": "text",
+			"text": "灵魂称量\nis-a 亡灵冥界仪式场景\n🎬 灵魂称量 / 表现招魂、王权、裁决、婚礼和封印",
+			"x": -340,
+			"y": -203,
+			"width": 230,
+			"height": 160,
+			"color": "2"
+		}
 	],
-	"edges":[
-		{"id":"e_root_def","fromNode":"n1","fromSide":"bottom","toNode":"n2","toSide":"top"},
-		{"id":"em_clothing","fromNode":"n2","fromSide":"left","toNode":"n3","toSide":"right"},
-		{"id":"e_cl_0_h","fromNode":"n3","fromSide":"bottom","toNode":"n4","toSide":"top"},
-		{"id":"e_cl_0_0","fromNode":"n4","fromSide":"bottom","toNode":"n5","toSide":"top"},
-		{"id":"e_cl_0_1","fromNode":"n5","fromSide":"bottom","toNode":"n6","toSide":"top"},
-		{"id":"e_cl_0_2","fromNode":"n6","fromSide":"bottom","toNode":"n7","toSide":"top"},
-		{"id":"e_cl_0_3","fromNode":"n7","fromSide":"bottom","toNode":"n8","toSide":"top"},
-		{"id":"e_cl_0_4","fromNode":"n8","fromSide":"bottom","toNode":"n9","toSide":"top"},
-		{"id":"e_cl_0_m","fromNode":"n9","fromSide":"bottom","toNode":"n10","toSide":"top"},
-		{"id":"e_cl_1_h","fromNode":"n3","fromSide":"bottom","toNode":"n11","toSide":"top"},
-		{"id":"e_cl_1_0","fromNode":"n11","fromSide":"bottom","toNode":"n12","toSide":"top"},
-		{"id":"e_cl_1_1","fromNode":"n12","fromSide":"bottom","toNode":"n13","toSide":"top"},
-		{"id":"e_cl_1_2","fromNode":"n13","fromSide":"bottom","toNode":"n14","toSide":"top"},
-		{"id":"e_cl_1_3","fromNode":"n14","fromSide":"bottom","toNode":"n15","toSide":"top"},
-		{"id":"e_cl_1_4","fromNode":"n15","fromSide":"bottom","toNode":"n16","toSide":"top"},
-		{"id":"e_cl_1_m","fromNode":"n16","fromSide":"bottom","toNode":"n17","toSide":"top"},
-		{"id":"e_cl_2_h","fromNode":"n3","fromSide":"bottom","toNode":"n18","toSide":"top"},
-		{"id":"e_cl_2_0","fromNode":"n18","fromSide":"bottom","toNode":"n19","toSide":"top"},
-		{"id":"e_cl_2_1","fromNode":"n19","fromSide":"bottom","toNode":"n20","toSide":"top"},
-		{"id":"e_cl_2_2","fromNode":"n20","fromSide":"bottom","toNode":"n21","toSide":"top"},
-		{"id":"e_cl_2_3","fromNode":"n21","fromSide":"bottom","toNode":"n22","toSide":"top"},
-		{"id":"e_cl_2_m","fromNode":"n22","fromSide":"bottom","toNode":"n23","toSide":"top"},
-		{"id":"em_arch","fromNode":"n3","fromSide":"right","toNode":"n24","toSide":"left"},
-		{"id":"e_ar_0_h","fromNode":"n24","fromSide":"bottom","toNode":"n25","toSide":"top"},
-		{"id":"e_ar_0_0","fromNode":"n25","fromSide":"bottom","toNode":"n26","toSide":"top"},
-		{"id":"e_ar_0_1","fromNode":"n26","fromSide":"bottom","toNode":"n27","toSide":"top"},
-		{"id":"e_ar_0_2","fromNode":"n27","fromSide":"bottom","toNode":"n28","toSide":"top"},
-		{"id":"e_ar_0_3","fromNode":"n28","fromSide":"bottom","toNode":"n29","toSide":"top"},
-		{"id":"e_ar_0_4","fromNode":"n29","fromSide":"bottom","toNode":"n30","toSide":"top"},
-		{"id":"e_ar_0_5","fromNode":"n30","fromSide":"bottom","toNode":"n31","toSide":"top"},
-		{"id":"e_ar_1_h","fromNode":"n24","fromSide":"bottom","toNode":"n32","toSide":"top"},
-		{"id":"e_ar_1_0","fromNode":"n32","fromSide":"bottom","toNode":"n33","toSide":"top"},
-		{"id":"e_ar_1_1","fromNode":"n33","fromSide":"bottom","toNode":"n34","toSide":"top"},
-		{"id":"e_ar_1_2","fromNode":"n34","fromSide":"bottom","toNode":"n35","toSide":"top"},
-		{"id":"e_ar_1_3","fromNode":"n35","fromSide":"bottom","toNode":"n36","toSide":"top"},
-		{"id":"em_scene","fromNode":"n24","fromSide":"right","toNode":"n37","toSide":"left"},
-		{"id":"e_sc_0_h","fromNode":"n37","fromSide":"bottom","toNode":"n38","toSide":"top"},
-		{"id":"e_sc_0_0","fromNode":"n38","fromSide":"bottom","toNode":"n39","toSide":"top"},
-		{"id":"e_sc_0_1","fromNode":"n39","fromSide":"bottom","toNode":"n40","toSide":"top"},
-		{"id":"e_sc_0_2","fromNode":"n40","fromSide":"bottom","toNode":"n41","toSide":"top"},
-		{"id":"e_sc_0_3","fromNode":"n41","fromSide":"bottom","toNode":"n42","toSide":"top"},
-		{"id":"e_sc_0_4","fromNode":"n42","fromSide":"bottom","toNode":"n43","toSide":"top"},
-		{"id":"e_sc_1_h","fromNode":"n37","fromSide":"bottom","toNode":"n44","toSide":"top"},
-		{"id":"e_sc_1_0","fromNode":"n44","fromSide":"bottom","toNode":"n45","toSide":"top"},
-		{"id":"e_sc_1_1","fromNode":"n45","fromSide":"bottom","toNode":"n46","toSide":"top"},
-		{"id":"e_sc_1_2","fromNode":"n46","fromSide":"bottom","toNode":"n47","toSide":"top"},
-		{"id":"e_sc_1_3","fromNode":"n47","fromSide":"bottom","toNode":"n48","toSide":"top"},
-		{"id":"e_sc_1_4","fromNode":"n48","fromSide":"bottom","toNode":"n49","toSide":"top"},
-		{"id":"e_sc_2_h","fromNode":"n37","fromSide":"bottom","toNode":"n50","toSide":"top"},
-		{"id":"e_sc_2_0","fromNode":"n50","fromSide":"bottom","toNode":"n51","toSide":"top"},
-		{"id":"e_sc_2_1","fromNode":"n51","fromSide":"bottom","toNode":"n52","toSide":"top"},
-		{"id":"e_sc_2_2","fromNode":"n52","fromSide":"bottom","toNode":"n53","toSide":"top"},
-		{"id":"e_sc_2_3","fromNode":"n53","fromSide":"bottom","toNode":"n54","toSide":"top"},
-		{"id":"e_sc_2_4","fromNode":"n54","fromSide":"bottom","toNode":"n55","toSide":"top"},
-		{"id":"em_comp","fromNode":"n37","fromSide":"right","toNode":"n56","toSide":"left"},
-		{"id":"e_cp_0_h","fromNode":"n56","fromSide":"bottom","toNode":"n57","toSide":"top"},
-		{"id":"e_cp_0_0","fromNode":"n57","fromSide":"bottom","toNode":"n58","toSide":"top"},
-		{"id":"e_cp_0_1","fromNode":"n58","fromSide":"bottom","toNode":"n59","toSide":"top"},
-		{"id":"e_cp_0_2","fromNode":"n59","fromSide":"bottom","toNode":"n60","toSide":"top"},
-		{"id":"e_cp_0_3","fromNode":"n60","fromSide":"bottom","toNode":"n61","toSide":"top"},
-		{"id":"e_cp_0_4","fromNode":"n61","fromSide":"bottom","toNode":"n62","toSide":"top"},
-		{"id":"e_cp_0_m","fromNode":"n62","fromSide":"bottom","toNode":"n63","toSide":"top"},
-		{"id":"e_cp_1_h","fromNode":"n56","fromSide":"bottom","toNode":"n64","toSide":"top"},
-		{"id":"e_cp_1_0","fromNode":"n64","fromSide":"bottom","toNode":"n65","toSide":"top"},
-		{"id":"e_cp_1_1","fromNode":"n65","fromSide":"bottom","toNode":"n66","toSide":"top"},
-		{"id":"e_cp_1_2","fromNode":"n66","fromSide":"bottom","toNode":"n67","toSide":"top"},
-		{"id":"e_cp_1_3","fromNode":"n67","fromSide":"bottom","toNode":"n68","toSide":"top"},
-		{"id":"e_cp_1_4","fromNode":"n68","fromSide":"bottom","toNode":"n69","toSide":"top"},
-		{"id":"e_cp_1_m","fromNode":"n69","fromSide":"bottom","toNode":"n70","toSide":"top"},
-		{"id":"em_elem","fromNode":"n56","fromSide":"right","toNode":"n71","toSide":"left"},
-		{"id":"e_el_0_h","fromNode":"n71","fromSide":"bottom","toNode":"n72","toSide":"top"},
-		{"id":"e_el_0_0","fromNode":"n72","fromSide":"bottom","toNode":"n73","toSide":"top"},
-		{"id":"e_el_0_1","fromNode":"n73","fromSide":"bottom","toNode":"n74","toSide":"top"},
-		{"id":"e_el_0_2","fromNode":"n74","fromSide":"bottom","toNode":"n75","toSide":"top"},
-		{"id":"e_el_0_3","fromNode":"n75","fromSide":"bottom","toNode":"n76","toSide":"top"},
-		{"id":"e_el_0_4","fromNode":"n76","fromSide":"bottom","toNode":"n77","toSide":"top"},
-		{"id":"e_el_0_m","fromNode":"n77","fromSide":"bottom","toNode":"n78","toSide":"top"},
-		{"id":"e_el_1_h","fromNode":"n71","fromSide":"bottom","toNode":"n79","toSide":"top"},
-		{"id":"e_el_1_0","fromNode":"n79","fromSide":"bottom","toNode":"n80","toSide":"top"},
-		{"id":"e_el_1_1","fromNode":"n80","fromSide":"bottom","toNode":"n81","toSide":"top"},
-		{"id":"e_el_1_2","fromNode":"n81","fromSide":"bottom","toNode":"n82","toSide":"top"},
-		{"id":"e_el_1_3","fromNode":"n82","fromSide":"bottom","toNode":"n83","toSide":"top"},
-		{"id":"e_el_1_m","fromNode":"n83","fromSide":"bottom","toNode":"n84","toSide":"top"},
-		{"id":"e_el_2_h","fromNode":"n71","fromSide":"bottom","toNode":"n85","toSide":"top"},
-		{"id":"e_el_2_0","fromNode":"n85","fromSide":"bottom","toNode":"n86","toSide":"top"},
-		{"id":"e_el_2_1","fromNode":"n86","fromSide":"bottom","toNode":"n87","toSide":"top"},
-		{"id":"e_el_2_2","fromNode":"n87","fromSide":"bottom","toNode":"n88","toSide":"top"},
-		{"id":"e_el_2_3","fromNode":"n88","fromSide":"bottom","toNode":"n89","toSide":"top"},
-		{"id":"e_el_2_m","fromNode":"n89","fromSide":"bottom","toNode":"n90","toSide":"top"},
-		{"id":"e_p_en_cn","fromNode":"n91","fromSide":"right","toNode":"n92","toSide":"left"},
-		{"id":"e_p_en_ty","fromNode":"n91","fromSide":"bottom","toNode":"n93","toSide":"top"},
-		{"id":"e_note","fromNode":"n93","fromSide":"bottom","toNode":"n94","toSide":"top"}
+	"edges": [
+		{
+			"id": "e_root_def",
+			"fromNode": "n1",
+			"fromSide": "bottom",
+			"toNode": "n2",
+			"toSide": "top"
+		},
+		{
+			"id": "em_clothing",
+			"fromNode": "n2",
+			"fromSide": "left",
+			"toNode": "n3",
+			"toSide": "right"
+		},
+		{
+			"id": "e_cl_0_h",
+			"fromNode": "n3",
+			"fromSide": "bottom",
+			"toNode": "n4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_0",
+			"fromNode": "n4",
+			"fromSide": "bottom",
+			"toNode": "n5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_1",
+			"fromNode": "n5",
+			"fromSide": "bottom",
+			"toNode": "n6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_2",
+			"fromNode": "n6",
+			"fromSide": "bottom",
+			"toNode": "n7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_3",
+			"fromNode": "n7",
+			"fromSide": "bottom",
+			"toNode": "n8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_4",
+			"fromNode": "n8",
+			"fromSide": "bottom",
+			"toNode": "n9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_m",
+			"fromNode": "n9",
+			"fromSide": "bottom",
+			"toNode": "n10",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_h",
+			"fromNode": "n3",
+			"fromSide": "bottom",
+			"toNode": "n11",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_0",
+			"fromNode": "n11",
+			"fromSide": "bottom",
+			"toNode": "n12",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_1",
+			"fromNode": "n12",
+			"fromSide": "bottom",
+			"toNode": "n13",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_2",
+			"fromNode": "n13",
+			"fromSide": "bottom",
+			"toNode": "n14",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_3",
+			"fromNode": "n14",
+			"fromSide": "bottom",
+			"toNode": "n15",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_4",
+			"fromNode": "n15",
+			"fromSide": "bottom",
+			"toNode": "n16",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_m",
+			"fromNode": "n16",
+			"fromSide": "bottom",
+			"toNode": "n17",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_h",
+			"fromNode": "n3",
+			"fromSide": "bottom",
+			"toNode": "n18",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_0",
+			"fromNode": "n18",
+			"fromSide": "bottom",
+			"toNode": "n19",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_1",
+			"fromNode": "n19",
+			"fromSide": "bottom",
+			"toNode": "n20",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_2",
+			"fromNode": "n20",
+			"fromSide": "bottom",
+			"toNode": "n21",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_3",
+			"fromNode": "n21",
+			"fromSide": "bottom",
+			"toNode": "n22",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_m",
+			"fromNode": "n22",
+			"fromSide": "bottom",
+			"toNode": "n23",
+			"toSide": "top"
+		},
+		{
+			"id": "em_arch",
+			"fromNode": "n3",
+			"fromSide": "right",
+			"toNode": "n24",
+			"toSide": "left"
+		},
+		{
+			"id": "e_ar_0_h",
+			"fromNode": "n24",
+			"fromSide": "bottom",
+			"toNode": "n25",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_0",
+			"fromNode": "n25",
+			"fromSide": "bottom",
+			"toNode": "n26",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_1",
+			"fromNode": "n26",
+			"fromSide": "bottom",
+			"toNode": "n27",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_2",
+			"fromNode": "n27",
+			"fromSide": "bottom",
+			"toNode": "n28",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_3",
+			"fromNode": "n28",
+			"fromSide": "bottom",
+			"toNode": "n29",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_4",
+			"fromNode": "n29",
+			"fromSide": "bottom",
+			"toNode": "n30",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_5",
+			"fromNode": "n30",
+			"fromSide": "bottom",
+			"toNode": "n31",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_h",
+			"fromNode": "n24",
+			"fromSide": "bottom",
+			"toNode": "n32",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_0",
+			"fromNode": "n32",
+			"fromSide": "bottom",
+			"toNode": "n33",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_1",
+			"fromNode": "n33",
+			"fromSide": "bottom",
+			"toNode": "n34",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_2",
+			"fromNode": "n34",
+			"fromSide": "bottom",
+			"toNode": "n35",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_3",
+			"fromNode": "n35",
+			"fromSide": "bottom",
+			"toNode": "n36",
+			"toSide": "top"
+		},
+		{
+			"id": "em_scene",
+			"fromNode": "n24",
+			"fromSide": "right",
+			"toNode": "n37",
+			"toSide": "left"
+		},
+		{
+			"id": "e_sc_0_h",
+			"fromNode": "n37",
+			"fromSide": "bottom",
+			"toNode": "n38",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_0",
+			"fromNode": "n38",
+			"fromSide": "bottom",
+			"toNode": "n39",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_1",
+			"fromNode": "n39",
+			"fromSide": "bottom",
+			"toNode": "n40",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_2",
+			"fromNode": "n40",
+			"fromSide": "bottom",
+			"toNode": "n41",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_3",
+			"fromNode": "n41",
+			"fromSide": "bottom",
+			"toNode": "n42",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_4",
+			"fromNode": "n42",
+			"fromSide": "bottom",
+			"toNode": "n43",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_h",
+			"fromNode": "n37",
+			"fromSide": "bottom",
+			"toNode": "n44",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_0",
+			"fromNode": "n44",
+			"fromSide": "bottom",
+			"toNode": "n45",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_1",
+			"fromNode": "n45",
+			"fromSide": "bottom",
+			"toNode": "n46",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_2",
+			"fromNode": "n46",
+			"fromSide": "bottom",
+			"toNode": "n47",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_3",
+			"fromNode": "n47",
+			"fromSide": "bottom",
+			"toNode": "n48",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_4",
+			"fromNode": "n48",
+			"fromSide": "bottom",
+			"toNode": "n49",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_h",
+			"fromNode": "n37",
+			"fromSide": "bottom",
+			"toNode": "n50",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_0",
+			"fromNode": "n50",
+			"fromSide": "bottom",
+			"toNode": "n51",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_1",
+			"fromNode": "n51",
+			"fromSide": "bottom",
+			"toNode": "n52",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_2",
+			"fromNode": "n52",
+			"fromSide": "bottom",
+			"toNode": "n53",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_3",
+			"fromNode": "n53",
+			"fromSide": "bottom",
+			"toNode": "n54",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_4",
+			"fromNode": "n54",
+			"fromSide": "bottom",
+			"toNode": "n55",
+			"toSide": "top"
+		},
+		{
+			"id": "em_comp",
+			"fromNode": "n37",
+			"fromSide": "right",
+			"toNode": "n56",
+			"toSide": "left"
+		},
+		{
+			"id": "e_cp_0_h",
+			"fromNode": "n56",
+			"fromSide": "bottom",
+			"toNode": "n57",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_0",
+			"fromNode": "n57",
+			"fromSide": "bottom",
+			"toNode": "n58",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_1",
+			"fromNode": "n58",
+			"fromSide": "bottom",
+			"toNode": "n59",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_2",
+			"fromNode": "n59",
+			"fromSide": "bottom",
+			"toNode": "n60",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_3",
+			"fromNode": "n60",
+			"fromSide": "bottom",
+			"toNode": "n61",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_4",
+			"fromNode": "n61",
+			"fromSide": "bottom",
+			"toNode": "n62",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_m",
+			"fromNode": "n62",
+			"fromSide": "bottom",
+			"toNode": "n63",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_h",
+			"fromNode": "n56",
+			"fromSide": "bottom",
+			"toNode": "n64",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_0",
+			"fromNode": "n64",
+			"fromSide": "bottom",
+			"toNode": "n65",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_1",
+			"fromNode": "n65",
+			"fromSide": "bottom",
+			"toNode": "n66",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_2",
+			"fromNode": "n66",
+			"fromSide": "bottom",
+			"toNode": "n67",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_3",
+			"fromNode": "n67",
+			"fromSide": "bottom",
+			"toNode": "n68",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_4",
+			"fromNode": "n68",
+			"fromSide": "bottom",
+			"toNode": "n69",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_m",
+			"fromNode": "n69",
+			"fromSide": "bottom",
+			"toNode": "n70",
+			"toSide": "top"
+		},
+		{
+			"id": "em_elem",
+			"fromNode": "n56",
+			"fromSide": "right",
+			"toNode": "n71",
+			"toSide": "left"
+		},
+		{
+			"id": "e_el_0_h",
+			"fromNode": "n71",
+			"fromSide": "bottom",
+			"toNode": "n72",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_0",
+			"fromNode": "n72",
+			"fromSide": "bottom",
+			"toNode": "n73",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_1",
+			"fromNode": "n73",
+			"fromSide": "bottom",
+			"toNode": "n74",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_2",
+			"fromNode": "n74",
+			"fromSide": "bottom",
+			"toNode": "n75",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_3",
+			"fromNode": "n75",
+			"fromSide": "bottom",
+			"toNode": "n76",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_4",
+			"fromNode": "n76",
+			"fromSide": "bottom",
+			"toNode": "n77",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_m",
+			"fromNode": "n77",
+			"fromSide": "bottom",
+			"toNode": "n78",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_h",
+			"fromNode": "n71",
+			"fromSide": "bottom",
+			"toNode": "n79",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_0",
+			"fromNode": "n79",
+			"fromSide": "bottom",
+			"toNode": "n80",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_1",
+			"fromNode": "n80",
+			"fromSide": "bottom",
+			"toNode": "n81",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_2",
+			"fromNode": "n81",
+			"fromSide": "bottom",
+			"toNode": "n82",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_3",
+			"fromNode": "n82",
+			"fromSide": "bottom",
+			"toNode": "n83",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_m",
+			"fromNode": "n83",
+			"fromSide": "bottom",
+			"toNode": "n84",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_h",
+			"fromNode": "n71",
+			"fromSide": "bottom",
+			"toNode": "n85",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_0",
+			"fromNode": "n85",
+			"fromSide": "bottom",
+			"toNode": "n86",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_1",
+			"fromNode": "n86",
+			"fromSide": "bottom",
+			"toNode": "n87",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_2",
+			"fromNode": "n87",
+			"fromSide": "bottom",
+			"toNode": "n88",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_3",
+			"fromNode": "n88",
+			"fromSide": "bottom",
+			"toNode": "n89",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_m",
+			"fromNode": "n89",
+			"fromSide": "bottom",
+			"toNode": "n90",
+			"toSide": "top"
+		},
+		{
+			"id": "e_p_en_cn",
+			"fromNode": "n91",
+			"fromSide": "right",
+			"toNode": "n92",
+			"toSide": "left"
+		},
+		{
+			"id": "e_p_en_ty",
+			"fromNode": "n91",
+			"fromSide": "bottom",
+			"toNode": "n93",
+			"toSide": "top"
+		},
+		{
+			"id": "e_note",
+			"fromNode": "n93",
+			"fromSide": "bottom",
+			"toNode": "n94",
+			"toSide": "top"
+		}
 	]
 }
