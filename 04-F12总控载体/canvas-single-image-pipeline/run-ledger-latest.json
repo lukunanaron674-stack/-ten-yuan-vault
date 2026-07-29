@@ -4,17 +4,17 @@
   "historyArchive": "04-F12总控载体/canvas-single-image-pipeline/ledger-archive/run-ledger_legacy_through_2026-07-28.md",
   "recordsRoot": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/",
   "latestRecord": {
-    "path": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/2026-07/20260729T173117+0800__n32__failed.md",
-    "time": "2026-07-29T17:31:17+08:00",
+    "path": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/2026-07/20260729T183107+0800__n32__completed.md",
+    "time": "2026-07-29T18:31:07+08:00",
     "canvasPath": "09-给674（我）用的库/概念库/游牧流浪_is-a名词素材库.canvas",
     "nodeId": "n32",
     "conceptName": "风帐营地废墟",
-    "result": "failed",
-    "recordCommit": "69c40c02afd7e08878fc48898637c03b31594c9c",
-    "verifiedCommit": null,
-    "canvasBlobSha": "851d50b5658e05a85ddfe7e5378daa34df8e06f7",
-    "recordBlobSha": "42281c1a85b2b8f0209c1f787d4eff288477c61e",
-    "stateCommit": "478c9d9f899382302eaa93de2437cd5666d261bc"
+    "result": "completed",
+    "recordCommit": "a8dc6c963a33bb5f4a5e2fef921c804811b15de1",
+    "verifiedCommit": "24f3ee7e1cd24d5ba289aa0764fc03d56e7f1398",
+    "canvasBlobSha": "ae721096ed20e1d57dd1067314e3857b2cdcc6ae",
+    "recordBlobSha": "045c8a36fd7589ed99b7974398e5f4498f2fd2bf",
+    "stateCommit": "4edc805f3bab850d030fd79f58abd9b2bb28f053"
   },
   "lastMigratedEntry": {
     "time": "2026-07-28T20:02:01+09:00",
@@ -25,5 +25,5 @@
     "verifiedCommit": "9182febf201597710071d0ff5829cc1a09c97cf6",
     "canvasBlobSha": "39f47661f93b614240b6f8bd5a7d3f0acf94a151"
   },
-  "nextAction": "继续停在 n32；在具备 GitHub 鉴权和网络的本地 git/gh 环境或资源直传补丁通道中，仅追加 ref_n32 与 e_ref_n32并远端读回。"
+  "nextAction": "下一轮按 y → x → node id 扫描下一合格缺参考概念；跳过旧 v2/v3/v4 场景区。"
 }
