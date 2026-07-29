@@ -28,22 +28,26 @@ def scene_header(data: dict[str, Any]) -> dict[str, Any]:
     return headers[0]
 
 
+def canvas_has_legacy_chain(path: Path) -> bool:
+    text = path.read_text(encoding="utf-8")
+    return any(term in text for term in FORBIDDEN)
+
+
 def rewrite_legacy_scene(path: Path, style: str) -> tuple[bool, list[str], list[str]]:
     data = json.loads(path.read_text(encoding="utf-8"))
     nodes = data.get("nodes", [])
     header = scene_header(data)
-    header_text = str(header.get("text", ""))
     new_names = [name for category in LIBRARY[style] for name in category["names"]]
 
-    if "可绘制场景类目" in header_text:
-        return False, new_names, new_names
+    if not any(term in "\n".join(str(node.get("text", "")) for node in nodes) for term in FORBIDDEN):
+        return False, [], new_names
 
     category_headers = sorted(
         [
             node
             for node in nodes
             if node.get("type") == "text"
-            and any(str(node.get("text", "")).startswith(prefix) for prefix in LEGACY_PREFIXES)
+            and any(first_line(str(node.get("text", ""))).startswith(prefix) for prefix in LEGACY_PREFIXES)
             and node.get("y", -10**9) > header.get("y", -10**9)
         ],
         key=lambda node: node.get("x", 0),
@@ -90,7 +94,7 @@ def rewrite_legacy_scene(path: Path, style: str) -> tuple[bool, list[str], list[
     return True, old_names, new_names
 
 
-def validate_canvas(path: Path, mapped: bool) -> None:
+def validate_canvas(path: Path) -> None:
     data = json.loads(path.read_text(encoding="utf-8"))
     nodes = data.get("nodes")
     edges = data.get("edges")
@@ -99,13 +103,11 @@ def validate_canvas(path: Path, mapped: bool) -> None:
     ids = [str(node.get("id")) for node in nodes]
     if len(ids) != len(set(ids)):
         raise RuntimeError(f"duplicate node IDs: {path}")
-    header = scene_header(data)
+    scene_header(data)
     all_text = "\n".join(str(node.get("text", "")) for node in nodes)
     remains = [term for term in FORBIDDEN if term in all_text]
     if remains:
         raise RuntimeError(f"legacy scene chain remains in {path.name}: {remains}")
-    if mapped and "可绘制场景类目" not in str(header.get("text", "")):
-        raise RuntimeError(f"mapped scene section not corrected: {path.name}")
 
 
 def main() -> None:
@@ -117,21 +119,24 @@ def main() -> None:
     if len(paths) != 20:
         raise SystemExit(f"expected 20 top-level canvases, got {len(paths)}")
 
-    current_styles = {path.name[: -len(SUFFIX)] for path in paths}
-    mapped_styles = current_styles & set(LIBRARY)
-    preserved_styles = current_styles - set(LIBRARY)
-    if len(mapped_styles) != 19 or len(preserved_styles) != 1:
-        raise SystemExit(
-            f"unexpected current mapping: mapped={sorted(mapped_styles)} "
-            f"preserved={sorted(preserved_styles)}"
-        )
+    legacy_paths = [path for path in paths if canvas_has_legacy_chain(path)]
+    preserved_paths = [path for path in paths if path not in legacy_paths]
+    missing_mappings = [
+        path.name[: -len(SUFFIX)]
+        for path in legacy_paths
+        if path.name[: -len(SUFFIX)] not in LIBRARY
+    ]
+    if missing_mappings:
+        raise SystemExit(f"legacy Canvas lacks replacement mapping: {missing_mappings}")
+    if not legacy_paths:
+        raise SystemExit("no legacy scene chain found; nothing to repair")
 
     report = [
         "# 概念库场景区全库修复报告",
         "",
         f"- 扫描 Canvas：{len(paths)}",
-        f"- 重写旧链 Canvas：{len(mapped_styles)}",
-        f"- 保留已采用独立场景结构的 Canvas：{len(preserved_styles)}",
+        f"- 发现并重写错误场景链：{len(legacy_paths)}",
+        f"- 保留已采用独立场景结构：{len(preserved_paths)}",
         "- 修复原则：删除把建筑演化链冒充场景分类的 v2/v3/v4 模板，恢复各风格可独立成画的场景类目。",
         "- 保留内容：服装、建筑、构件、元素、参考 file 节点和全部既有连线。",
         "",
@@ -140,14 +145,14 @@ def main() -> None:
     changed = 0
     for path in paths:
         style = path.name[: -len(SUFFIX)]
-        if style in LIBRARY:
+        if path in legacy_paths:
             did_change, old_names, new_names = rewrite_legacy_scene(path, style)
             changed += int(did_change)
             report.extend(
                 [
                     f"## {style}",
                     "",
-                    "- mapped: true",
+                    "- legacy: true",
                     f"- changed: {str(did_change).lower()}",
                     f"- old: {'、'.join(old_names)}",
                     f"- new: {'、'.join(new_names)}",
@@ -159,28 +164,30 @@ def main() -> None:
                 [
                     f"## {style}",
                     "",
-                    "- mapped: false",
+                    "- legacy: false",
                     "- changed: false",
-                    "- reason: 当前 Canvas 已使用独立场景分类，不属于错误的 v2/v3/v4 建筑演化占位链。",
+                    "- reason: 当前 Canvas 已使用独立场景分类，没有错误的 v2/v3/v4 建筑演化占位链。",
                     "",
                 ]
             )
 
     for path in paths:
-        style = path.name[: -len(SUFFIX)]
-        validate_canvas(path, mapped=style in LIBRARY)
+        validate_canvas(path)
+
+    if changed != len(legacy_paths):
+        raise SystemExit(f"rewrite incomplete: changed={changed} expected={len(legacy_paths)}")
 
     REPORT.write_text("\n".join(report), encoding="utf-8")
     MARKER.write_text(
         f"scanned={len(paths)}\n"
-        f"mapped={len(mapped_styles)}\n"
-        f"preserved={len(preserved_styles)}\n"
+        f"legacy={len(legacy_paths)}\n"
+        f"preserved={len(preserved_paths)}\n"
         f"changed={changed}\n",
         encoding="utf-8",
     )
     print(
-        f"validated={len(paths)} mapped={len(mapped_styles)} "
-        f"preserved={len(preserved_styles)} changed={changed}"
+        f"validated={len(paths)} legacy={len(legacy_paths)} "
+        f"preserved={len(preserved_paths)} changed={changed}"
     )
 
 
