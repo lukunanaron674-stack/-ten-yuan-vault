@@ -1,7 +1,7 @@
 name: One-shot concept scene correction
 
 on:
-  push:
+  pull_request:
     branches:
       - main
     paths:
@@ -12,17 +12,17 @@ permissions:
   contents: write
 
 concurrency:
-  group: one-shot-concept-scene-correction
+  group: one-shot-concept-scene-correction-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: false
 
 jobs:
   fix:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: Checkout correction branch
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.head_ref }}
           fetch-depth: 0
 
       - name: Set up Python
@@ -62,7 +62,9 @@ jobs:
           print('validated 20 corrected Canvas files')
           PY
 
-      - name: Commit and push corrected Canvas files
+      - name: Commit corrected Canvas files to PR branch
+        env:
+          HEAD_REF: ${{ github.head_ref }}
         run: |
           git diff --check
           git config user.name 'github-actions[bot]'
@@ -73,11 +75,4 @@ jobs:
             exit 0
           fi
           git commit -m 'fix(canvas): replace all incorrect concept scene sections'
-          for attempt in 1 2 3; do
-            git pull --rebase origin main
-            if git push origin HEAD:main; then
-              exit 0
-            fi
-            sleep 5
-          done
-          exit 1
+          git push origin HEAD:"${HEAD_REF}"
