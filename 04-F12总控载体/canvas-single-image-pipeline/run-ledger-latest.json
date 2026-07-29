@@ -4,17 +4,17 @@
   "historyArchive": "04-F12总控载体/canvas-single-image-pipeline/ledger-archive/run-ledger_legacy_through_2026-07-28.md",
   "recordsRoot": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/",
   "latestRecord": {
-    "path": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/2026-07/20260730T003111+0800__n78__completed.md",
-    "time": "2026-07-30T00:31:11+08:00",
+    "path": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/2026-07/20260730T013221+0800__n84__failed.md",
+    "time": "2026-07-30T01:32:21+08:00",
     "canvasPath": "09-给674（我）用的库/概念库/游牧流浪_is-a名词素材库.canvas",
-    "nodeId": "n78",
-    "conceptName": "骆驼",
-    "result": "completed",
-    "recordCommit": "2664f8dc7dc98b9cf75a3c916a4a1528204fd87a",
-    "verifiedCommit": "faee3420cd64bce90276cf4c14ae55ebb2ceb062",
+    "nodeId": "n84",
+    "conceptName": "几何地毯纹",
+    "result": "failed",
+    "recordCommit": "ef25b3f98c8c23244186f21d271d999ea94f528d",
+    "verifiedCommit": null,
     "canvasBlobSha": "4a16a4064384ae6a41c4a712598bccada0fd461c",
-    "recordBlobSha": "f89e6b3b76a777c27ff24db8043d6b25ca845f68",
-    "stateCommit": "82cfca3fdc0dfca72039128af3f83674eecedd49"
+    "recordBlobSha": "5a43a9b8aa1579bdefb0e17158535df13dd5a5aa",
+    "stateCommit": "18d2669409674429fab069b730698772c9a7a47c"
   },
   "lastMigratedEntry": {
     "time": "2026-07-28T20:02:01+09:00",
@@ -25,5 +25,5 @@
     "verifiedCommit": "9182febf201597710071d0ff5829cc1a09c97cf6",
     "canvasBlobSha": "39f47661f93b614240b6f8bd5a7d3f0acf94a151"
   },
-  "nextAction": "下一轮按 y → x → node id 扫描游牧流浪 Canvas 的下一个合格缺参考概念；继续跳过旧 v2/v3/v4 场景区。"
+  "nextAction": "下一轮继续停在 n84；重新读取最新 main Canvas 后，仅追加 ref_n84 与 e_ref_n84，完成远端回读。"
 }
