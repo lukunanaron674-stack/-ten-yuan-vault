@@ -1,0 +1,82 @@
+name: Add time-ruins scene references batch 01
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/add-time-ruins-scene-refs-batch01.yml'
+      - 'scripts/add_time_ruins_scene_refs_batch01.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: time-ruins-scene-refs-b01-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Add reference cards
+        run: python scripts/add_time_ruins_scene_refs_batch01.py
+
+      - name: Validate Canvas
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('09-给674（我）用的库/概念库/时间遗迹_is-a名词素材库.canvas')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          nodes = data['nodes']
+          edges = data['edges']
+          node_by_id = {str(n.get('id')): n for n in nodes}
+          required = [
+              ('n38', 'ref_time_ruins_scene_n38'),
+              ('n39', 'ref_time_ruins_scene_n39'),
+              ('n40', 'ref_time_ruins_scene_n40'),
+              ('n41', 'ref_time_ruins_scene_n41'),
+              ('n42', 'ref_time_ruins_scene_n42'),
+          ]
+          for source, ref in required:
+              if ref not in node_by_id:
+                  raise SystemExit(f'missing ref node: {ref}')
+              text = str(node_by_id[ref].get('text', ''))
+              if '![](https://commons.wikimedia.org/' not in text:
+                  raise SystemExit(f'missing image: {ref}')
+              if '**参考图结构**' not in text or '**转成场景时**' not in text:
+                  raise SystemExit(f'missing explanation: {ref}')
+              edge_id = f'e_{source}_{ref}'
+              if not any(str(e.get('id')) == edge_id for e in edges):
+                  raise SystemExit(f'missing edge: {edge_id}')
+          print('validated 5 reference cards and links')
+          PY
+
+      - name: Commit and push Canvas update
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          git diff --check
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add '09-给674（我）用的库/概念库/时间遗迹_is-a名词素材库.canvas'
+          if git diff --cached --quiet; then
+            echo 'No Canvas changes needed.'
+            exit 0
+          fi
+          git commit -m 'feat(canvas): add time-ruins scene reference cards batch 01'
+          git push origin HEAD:"${HEAD_REF}"
