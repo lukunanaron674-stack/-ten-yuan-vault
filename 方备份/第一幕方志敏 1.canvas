@@ -1,9 +1,8 @@
 {
 	"nodes":[
 		{"id":"cf3f8ebbb929d613","type":"group","x":200,"y":-420,"width":315,"height":359,"color":"3","label":"缓入"},
+		{"id":"d857a01aa092984b","type":"group","x":200,"y":-340,"width":315,"height":289,"label":"未命名组"},
 		{"id":"f733152a7975113c","type":"group","x":580,"y":-364,"width":300,"height":248,"color":"1","label":"交代被抓的原因"},
-		{"id":"61bbee7f9b33644c","type":"file","file":"Pasted image 20260723004719.png","x":-200,"y":-160,"width":400,"height":225},
-		{"id":"cc81235fbb77f66a","type":"file","file":"1321f82b-7cb0-41b7-b19c-4d1c43e054ba.png","x":-200,"y":-514,"width":400,"height":300},
 		{
 			"id":"9dd5c766b2fa5e47",
 			"type":"text",
@@ -27,32 +26,12 @@
 		{
 			"id":"8d8c454b8ab973d4",
 			"type":"text",
-			"text":"背景台词配合画面，共产党们走在美如画的背景中",
+			"text":"背景台词配合画面，",
 			"styleAttributes":{},
 			"x":221,
 			"y":-404,
 			"width":260,
 			"height":60
-		},
-		{
-			"id":"2bff106eb6eb5d3a",
-			"type":"text",
-			"text":"中国是无地不美，到处皆景",
-			"styleAttributes":{},
-			"x":229,
-			"y":-220,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"dea50e4f5859c4e6",
-			"type":"text",
-			"text":"这好像我们的母亲，她是一个天姿玉质的美人，她的身体的每一部分，都有令人爱慕之美。",
-			"styleAttributes":{},
-			"x":221,
-			"y":-160,
-			"width":260,
-			"height":97
 		},
 		{
 			"id":"82cdd6069e7cc1a0",
@@ -73,6 +52,31 @@
 			"y":-216,
 			"width":260,
 			"height":80
+		},
+		{"id":"67e124ac1b11b8fe","type":"file","file":"Pasted image 20260730003355.png","x":900,"y":-361,"width":400,"height":225},
+		{"id":"61bbee7f9b33644c","type":"file","file":"Pasted image 20260723004719.png","x":-740,"y":-200,"width":400,"height":225},
+		{"id":"bbb5f8a3f7d473da","type":"file","file":"b89817ca-ef8c-4ee9-b8b1-7ea684f78da1.png","x":-760,"y":-441,"width":400,"height":225},
+		{"id":"cc81235fbb77f66a","type":"file","file":"1321f82b-7cb0-41b7-b19c-4d1c43e054ba.png","x":-340,"y":-478,"width":340,"height":255},
+		{"id":"1da6c137780f9198","type":"file","file":"6b3f35c5-9166-4428-a4a9-a6adbbcca86e.png","x":-320,"y":-200,"width":400,"height":225},
+		{
+			"id":"2bff106eb6eb5d3a",
+			"type":"text",
+			"text":"中国是无地不美，到处皆景",
+			"styleAttributes":{},
+			"x":229,
+			"y":-236,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"dea50e4f5859c4e6",
+			"type":"text",
+			"text":"这好像我们的母亲，她是一个天姿玉质的美人，她的身体的每一部分，都有令人爱慕之美。",
+			"styleAttributes":{},
+			"x":229,
+			"y":-176,
+			"width":260,
+			"height":115
 		}
 	],
 	"edges":[
