@@ -33,9 +33,45 @@ def canvas_has_legacy_chain(path: Path) -> bool:
     return any(term in text for term in FORBIDDEN)
 
 
+def follow_text_column(
+    header: dict[str, Any],
+    node_by_id: dict[str, dict[str, Any]],
+    edges: list[dict[str, Any]],
+    count: int = 5,
+) -> list[dict[str, Any]]:
+    result: list[dict[str, Any]] = []
+    current = header
+    for _ in range(count):
+        successors = []
+        for edge in edges:
+            if str(edge.get("fromNode")) != str(current.get("id")):
+                continue
+            target = node_by_id.get(str(edge.get("toNode")))
+            if target and target.get("type") == "text":
+                successors.append(target)
+        successors = [
+            node
+            for node in successors
+            if node.get("y", -10**9) > current.get("y", -10**9)
+        ]
+        if not successors:
+            break
+        successors.sort(
+            key=lambda node: (
+                abs(float(node.get("x", 0)) - float(current.get("x", 0))),
+                float(node.get("y", 0)),
+            )
+        )
+        current = successors[0]
+        result.append(current)
+    return result
+
+
 def rewrite_legacy_scene(path: Path, style: str) -> tuple[bool, list[str], list[str]]:
     data = json.loads(path.read_text(encoding="utf-8"))
     nodes = data.get("nodes", [])
+    edges = data.get("edges", [])
+    node_by_id = {str(node.get("id")): node for node in nodes}
     header = scene_header(data)
     new_names = [name for category in LIBRARY[style] for name in category["names"]]
 
@@ -58,29 +94,7 @@ def rewrite_legacy_scene(path: Path, style: str) -> tuple[bool, list[str], list[
 
     columns: list[list[dict[str, Any]]] = []
     for category_header in category_headers:
-        x = category_header.get("x")
-        y = category_header.get("y", -10**9)
-        candidates = sorted(
-            [
-                node
-                for node in nodes
-                if node.get("type") == "text"
-                and node.get("x") == x
-                and node.get("y", -10**9) > y
-            ],
-            key=lambda node: node.get("y", 0),
-        )
-        ordinary = [
-            node
-            for node in candidates
-            if not first_line(str(node.get("text", ""))).startswith("📎")
-        ]
-        more_nodes = [
-            node
-            for node in candidates
-            if first_line(str(node.get("text", ""))).startswith("📎")
-        ]
-        leaves = (ordinary + more_nodes)[:5]
+        leaves = follow_text_column(category_header, node_by_id, edges, count=5)
         if len(leaves) != 5:
             raise RuntimeError(
                 f"{style}: scene column {first_line(str(category_header.get('text', '')))} "
