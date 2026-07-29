@@ -1,12 +1,19 @@
 name: One-shot concept scene correction
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/fix-concept-scenes-once-20260723.yml'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: one-shot-concept-scene-correction
+  cancel-in-progress: false
 
 jobs:
   fix:
@@ -48,18 +55,23 @@ jobs:
               scene_headers = [node for node in nodes if str(node.get('text', '')).startswith('🌄 场景 is-a')]
               if len(scene_headers) != 1 or '可绘制场景类目' not in scene_headers[0].get('text', ''):
                   raise SystemExit(f'scene section not corrected: {path}')
+              scene_text = '\n'.join(str(node.get('text', '')) for node in nodes)
+              forbidden = ('v2 状态侵蚀层', 'v3 内部功能空间', 'v4 复合场景层')
+              if any(term in scene_text for term in forbidden):
+                  raise SystemExit(f'legacy scene chain remains: {path}')
           print('validated 20 corrected Canvas files')
           PY
 
-      - name: Remove one-shot workflow after success
-        run: git rm .github/workflows/fix-concept-scenes-once-20260723.yml
-
-      - name: Commit and push
+      - name: Commit and push corrected Canvas files
         run: |
           git diff --check
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add '09-给674（我）用的库/概念库/' scripts/fix_all_concept_scene_sections_once.py .github/workflows/fix-concept-scenes-once-20260723.yml
+          git add '09-给674（我）用的库/概念库/'
+          if git diff --cached --quiet; then
+            echo 'No correction needed.'
+            exit 0
+          fi
           git commit -m 'fix(canvas): replace all incorrect concept scene sections'
           for attempt in 1 2 3; do
             git pull --rebase origin main
