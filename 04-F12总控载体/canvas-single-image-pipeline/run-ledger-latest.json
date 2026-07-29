@@ -4,13 +4,13 @@
   "historyArchive": "04-F12总控载体/canvas-single-image-pipeline/ledger-archive/run-ledger_legacy_through_2026-07-28.md",
   "recordsRoot": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/",
   "latestRecord": {
-    "path": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/2026-07/20260729T123042+0800__n32__failed.md",
-    "time": "2026-07-29T12:30:42+08:00",
+    "path": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/2026-07/20260729T132915+0800__n32__failed.md",
+    "time": "2026-07-29T13:29:15+08:00",
     "canvasPath": "09-给674（我）用的库/概念库/游牧流浪_is-a名词素材库.canvas",
     "nodeId": "n32",
     "conceptName": "风帐营地废墟",
     "result": "failed",
-    "recordCommit": "c5463c10edb51fc437c6f6f91fc133722ce0b66d",
+    "recordCommit": "8c1340628b4421c50654e290bc516336e479e781",
     "verifiedCommit": null,
     "canvasBlobSha": "851d50b5658e05a85ddfe7e5378daa34df8e06f7"
   },
@@ -23,5 +23,5 @@
     "verifiedCommit": "9182febf201597710071d0ff5829cc1a09c97cf6",
     "canvasBlobSha": "39f47661f93b614240b6f8bd5a7d3f0acf94a151"
   },
-  "nextAction": "停在 n32；下一轮重读最新 main，并在获得无损完整 Canvas 内容传递能力后仅追加 ref_n32 与 e_ref_n32。"
+  "nextAction": "停在 n32；参考笔记已提交并回读。下一轮重读最新 main 与 Canvas blob，仅追加 ref_n32 与 e_ref_n32，完成完整性校验、提交及远端回读。"
 }
