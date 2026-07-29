@@ -4,15 +4,17 @@
   "historyArchive": "04-F12总控载体/canvas-single-image-pipeline/ledger-archive/run-ledger_legacy_through_2026-07-28.md",
   "recordsRoot": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/",
   "latestRecord": {
-    "path": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/2026-07/20260728T203901+0900__n38__completed.md",
-    "time": "2026-07-28T20:39:01+09:00",
+    "path": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/2026-07/20260729T173117+0800__n32__failed.md",
+    "time": "2026-07-29T17:31:17+08:00",
     "canvasPath": "09-给674（我）用的库/概念库/游牧流浪_is-a名词素材库.canvas",
-    "nodeId": "n38",
-    "conceptName": "风帐营地废墟被花蔓侵蚀",
-    "result": "completed",
-    "recordCommit": "22ca47dd4ef5afd4fdb86b6fb09a454f9e3e4f8e",
-    "verifiedCommit": "1c29ae0bf350ffb989ba1254316ee42b63cff308",
-    "canvasBlobSha": "851d50b5658e05a85ddfe7e5378daa34df8e06f7"
+    "nodeId": "n32",
+    "conceptName": "风帐营地废墟",
+    "result": "failed",
+    "recordCommit": "69c40c02afd7e08878fc48898637c03b31594c9c",
+    "verifiedCommit": null,
+    "canvasBlobSha": "851d50b5658e05a85ddfe7e5378daa34df8e06f7",
+    "recordBlobSha": "42281c1a85b2b8f0209c1f787d4eff288477c61e",
+    "stateCommit": "478c9d9f899382302eaa93de2437cd5666d261bc"
   },
   "lastMigratedEntry": {
     "time": "2026-07-28T20:02:01+09:00",
@@ -23,5 +25,5 @@
     "verifiedCommit": "9182febf201597710071d0ff5829cc1a09c97cf6",
     "canvasBlobSha": "39f47661f93b614240b6f8bd5a7d3f0acf94a151"
   },
-  "nextAction": "历史恢复队列已完成 n25 与 n38；更新 state 后扫描下一个真正缺参考且未受污染的概念。"
+  "nextAction": "继续停在 n32；在具备 GitHub 鉴权和网络的本地 git/gh 环境或资源直传补丁通道中，仅追加 ref_n32 与 e_ref_n32并远端读回。"
 }
