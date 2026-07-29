@@ -1,21 +1,29 @@
 name: One-shot concept scene correction
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/fix-concept-scenes-once-20260723.yml'
+      - 'scripts/fix_current_concept_scene_sections.py'
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: one-shot-concept-scene-correction-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
+
 jobs:
   fix:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: Checkout correction branch
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.head_ref }}
           fetch-depth: 0
 
       - name: Set up Python
@@ -23,10 +31,10 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Rewrite all concept scene sections
-        run: python scripts/fix_all_concept_scene_sections_once.py
+      - name: Rewrite current concept scene sections
+        run: python scripts/fix_current_concept_scene_sections.py
 
-      - name: Validate all top-level concept Canvas files
+      - name: Independently validate all top-level concept Canvas files
         run: |
           python - <<'PY'
           import json
@@ -34,6 +42,7 @@ jobs:
 
           root = Path('09-给674（我）用的库/概念库')
           files = sorted(root.glob('*_is-a名词素材库.canvas'))
+          forbidden = ('v2 状态侵蚀层', 'v3 内部功能空间', 'v4 复合场景层')
           if len(files) != 20:
               raise SystemExit(f'expected 20 canvases, got {len(files)}')
           for path in files:
@@ -45,27 +54,41 @@ jobs:
               ids = [str(node.get('id')) for node in nodes]
               if len(ids) != len(set(ids)):
                   raise SystemExit(f'duplicate node IDs: {path}')
-              scene_headers = [node for node in nodes if str(node.get('text', '')).startswith('🌄 场景 is-a')]
-              if len(scene_headers) != 1 or '可绘制场景类目' not in scene_headers[0].get('text', ''):
-                  raise SystemExit(f'scene section not corrected: {path}')
-          print('validated 20 corrected Canvas files')
+              headers = [node for node in nodes if str(node.get('text', '')).startswith('🌄 场景 is-a')]
+              if len(headers) != 1:
+                  raise SystemExit(f'scene header count invalid: {path}')
+              scene_text = '\n'.join(str(node.get('text', '')) for node in nodes)
+              if any(term in scene_text for term in forbidden):
+                  raise SystemExit(f'legacy scene chain remains: {path}')
+
+          marker = root / '.scene-sections-fixed-20260729'
+          report = root / '场景区全库修复报告_2026-07-29.md'
+          if not marker.exists() or not report.exists():
+              raise SystemExit('repair marker/report missing')
+          counts = {}
+          for line in marker.read_text(encoding='utf-8').splitlines():
+              key, value = line.split('=', 1)
+              counts[key] = int(value)
+          if counts.get('scanned') != 20:
+              raise SystemExit(f'invalid scanned count: {counts}')
+          if counts.get('legacy', 0) < 1 or counts.get('changed') != counts.get('legacy'):
+              raise SystemExit(f'incomplete repair counts: {counts}')
+          if counts.get('preserved', 0) + counts.get('changed', 0) != 20:
+              raise SystemExit(f'invalid repair partition: {counts}')
+          print(f'validated 20 Canvas files: {counts}')
           PY
 
-      - name: Remove one-shot workflow after success
-        run: git rm .github/workflows/fix-concept-scenes-once-20260723.yml
-
-      - name: Commit and push
+      - name: Commit corrected Canvas files to PR branch
+        env:
+          HEAD_REF: ${{ github.head_ref }}
         run: |
           git diff --check
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add '09-给674（我）用的库/概念库/' scripts/fix_all_concept_scene_sections_once.py .github/workflows/fix-concept-scenes-once-20260723.yml
+          git add '09-给674（我）用的库/概念库/'
+          if git diff --cached --quiet; then
+            echo 'No correction needed.'
+            exit 0
+          fi
           git commit -m 'fix(canvas): replace all incorrect concept scene sections'
-          for attempt in 1 2 3; do
-            git pull --rebase origin main
-            if git push origin HEAD:main; then
-              exit 0
-            fi
-            sleep 5
-          done
-          exit 1
+          git push origin HEAD:"${HEAD_REF}"
