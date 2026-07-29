@@ -1,1590 +1,1590 @@
 {
-  "nodes": [
-    {
-      "id": "n1",
-      "type": "text",
-      "text": "📜 秘术学院 is-a 名词素材库\n        秘术学院 — xn+zn",
-      "x": -200,
-      "y": -950,
-      "width": 480,
-      "height": 80,
-      "color": "1"
-    },
-    {
-      "id": "n2",
-      "type": "text",
-      "text": "📖 风格定义\nis-a 因果视觉风格\n魔法学府·知识传承\n法师/学者/图书馆/实验室",
-      "x": -160,
-      "y": -850,
-      "width": 260,
-      "height": 110,
-      "color": "6"
-    },
-    {
-      "id": "n3",
-      "type": "text",
-      "text": "👗 服装 is-a 秘术学院角色造型类目 ├ 📖 学院导师 ┤ 📝 学院学生 ┤ ⚗ 炼金师 ┤ ↔ 服装·建筑·场景·构件·元素",
-      "x": -2400,
-      "y": -700,
-      "width": 890,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "n4",
-      "type": "text",
-      "text": "📖 学院导师\n5项 · 教授/院长",
-      "x": -2400,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n5",
-      "type": "text",
-      "text": "深蓝星辰长袍\nis-a 高阶法师教授袍\n🎬 教授在讲堂授课",
-      "x": -2400,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n6",
-      "type": "text",
-      "text": "紫黑金边斗篷\nis-a 院长仪式袍\n🎬 院长主持开学典礼",
-      "x": -2400,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n7",
-      "type": "text",
-      "text": "银丝眼镜魔杖\nis-a 学者工具\n🎬 教授检查学生作业",
-      "x": -2400,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n8",
-      "type": "text",
-      "text": "符文刺绣肩披\nis-a 学科阶层标志\n🎬 学科带头人/系主任",
-      "x": -2400,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n9",
-      "type": "text",
-      "text": "尖顶法师帽\nis-a 传统法师帽\n🎬 法师形象/标志性服饰",
-      "x": -2400,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n10",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": -2400,
-      "y": -115,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n11",
-      "type": "text",
-      "text": "📝 学院学生\n5项 · 学徒/研究",
-      "x": -2120,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n12",
-      "type": "text",
-      "text": "灰色亚麻学徒袍\nis-a 初级学生袍\n🎬 学徒在图书馆自习",
-      "x": -2120,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n13",
-      "type": "text",
-      "text": "蓝银边学生制服\nis-a 正式学员装\n🎬 学生在走廊交谈",
-      "x": -2120,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n14",
-      "type": "text",
-      "text": "腰挂药草袋\nis-a 炼药学徒配件\n🎬 学徒采集/准备药材",
-      "x": -2120,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n15",
-      "type": "text",
-      "text": "羽毛笔插耳后\nis-a 学生日常道具\n🎬 做笔记/考试准备",
-      "x": -2120,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n16",
-      "type": "text",
-      "text": "护目镜推额前\nis-a 炼金实验护具\n🎬 实验准备/药剂调配",
-      "x": -2120,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n17",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": -2120,
-      "y": -115,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n18",
-      "type": "text",
-      "text": "⚗ 炼金师\n4项 · 药剂/实验",
-      "x": -1840,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n19",
-      "type": "text",
-      "text": "防火皮围裙\nis-a 炼金防护服\n🎬 炼金师在操作台前",
-      "x": -1840,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n20",
-      "type": "text",
-      "text": "皮革长手套\nis-a 防腐蚀手套\n🎬 处理危险药剂",
-      "x": -1840,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n21",
-      "type": "text",
-      "text": "药水瓶腰带\nis-a 随身药剂架\n🎬 炼金师外出采集",
-      "x": -1840,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n22",
-      "type": "text",
-      "text": "防毒面具罩\nis-a 烟雾防护面罩\n🎬 实验事故/危险警告",
-      "x": -1840,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n23",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": -1840,
-      "y": -188,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n24",
-      "type": "text",
-      "text": "🏛️ 建筑 is-a 秘术学院空间场景类目 ├ v0空间母体 ┤ v1典型空间 ┤ ↔ 服装·场景·构件·元素",
-      "x": -1510,
-      "y": -700,
-      "width": 600,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "n25",
-      "type": "text",
-      "text": "v0 空间母体层\\n6项 · 核心空间",
-      "x": -1510,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n26",
-      "type": "text",
-      "text": "魔法学院\nis-a 魔法教育机构\n🎬 入学/上课之间 / 学院全景 / 魔法学习生活",
-      "x": -1510,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n27",
-      "type": "text",
-      "text": "图书塔\nis-a 魔法图书馆\n🎬 找书 / 高处取书 / 静读空间",
-      "x": -1510,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n28",
-      "type": "text",
-      "text": "禁书馆\nis-a 封印知识库\n🎬 禁忌知识 / 偷看书库 / 危险发现",
-      "x": -1510,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n29",
-      "type": "text",
-      "text": "法阵教室\nis-a 魔法教学空间\n🎬 上课场景 / 法阵教学 / 老师示范",
-      "x": -1510,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n30",
-      "type": "text",
-      "text": "星象观测台\nis-a 魔法天文台\n🎬 夜观星象 / 预言推算 / 高处对话",
-      "x": -1510,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n31",
-      "type": "text",
-      "text": "炼金实验室\nis-a 魔法化学室\n🎬 调药场景 / 爆炸实验 / 炼金术的日常",
-      "x": -1510,
-      "y": -115,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n32",
-      "type": "text",
-      "text": "v1 典型空间层\\n4项 · 废墟/空间",
-      "x": -1230,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n33",
-      "type": "text",
-      "text": "魔法学院废墟\nis-a 废弃魔法学院（上位：魔法学院）\n🎬 学院衰落 / 一课室遗骸 / 被时间侵蚀的教育",
-      "x": -1230,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n34",
-      "type": "text",
-      "text": "魔法学院圣所\nis-a 废弃魔法圣殿（上位：魔法学院）\n🎬 破旧大礼堂 / 彩窗光影 / 残破的讲台",
-      "x": -1230,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n35",
-      "type": "text",
-      "text": "魔法学院大厅\nis-a 废弃学院大厅（上位：魔法学院）\n🎬 大厅废弛 / 水晶满地 / 时间停止的房间",
-      "x": -1230,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n36",
-      "type": "text",
-      "text": "魔法学院回廊\nis-a 废弃学院走廊（上位：魔法学院）\n🎬 被破坏的画廊 / 逃难的痕迹 / 走廊尽头",
-      "x": -1230,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n37",
-      "type": "text",
-      "text": "🌄 场景 is-a 秘术学院镜头情境类目 ├ v2状态侵蚀 ┤ v3内部功能 ┤ v4复合场景 ┤ ↔ 服装·建筑·构件·元素",
-      "x": -900,
-      "y": -700,
-      "width": 900,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "n38",
-      "type": "text",
-      "text": "v2 状态侵蚀层\\n5项 · 自然/超自然改造",
-      "x": -900,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n39",
-      "type": "text",
-      "text": "魔法学院废墟被花蔓侵蚀\nis-a 墨水花蔓（上位：魔法学院废墟）\n🎬 花继承文字 / 知识长成花 / 花与纸同源",
-      "x": -900,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n40",
-      "type": "text",
-      "text": "魔法学院废墟被荆棘缠绕\nis-a 书脊荆棘（上位：魔法学院废墟）\n🎬 荆棘从书中出 / 知识长刺 / 暴力阅读",
-      "x": -900,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n41",
-      "type": "text",
-      "text": "魔法学院废墟被树根穿刺\nis-a 根穿图书馆（上位：魔法学院废墟）\n🎬 树根代替手翻书 / 被自然翻阅的图书馆",
-      "x": -900,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n42",
-      "type": "text",
-      "text": "魔法学院废墟被苔藓覆盖\nis-a 霉变书架（上位：魔法学院废墟）\n🎬 书发霉 / 被微生物消化 / 知识腐烂",
-      "x": -900,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n43",
-      "type": "text",
-      "text": "魔法学院废墟被菌丝寄生\nis-a 发光菌书（上位：魔法学院废墟）\n🎬 菌丝书写 / 微生物的图书馆 / 另一种文字",
-      "x": -900,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n44",
-      "type": "text",
-      "text": "v3 内部功能空间\\n5项 · 功能区",
-      "x": -620,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n45",
-      "type": "text",
-      "text": "魔法学院废墟被花蔓侵蚀中央空间\nis-a 花蔓教室中央（上位：魔法学院废墟被花蔓侵蚀）\n🎬 花围讲台 / 自然的学生 / 无人的课堂",
-      "x": -620,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n46",
-      "type": "text",
-      "text": "魔法学院废墟被花蔓侵蚀祭坛空间\nis-a 花蔓祭台（上位：魔法学院废墟被花蔓侵蚀）\n🎬 花与书共祭 / 知识为信仰 / 祭坛上的读物",
-      "x": -620,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n47",
-      "type": "text",
-      "text": "魔法学院废墟被花蔓侵蚀回廊空间\nis-a 花蔓廊道（上位：魔法学院废墟被花蔓侵蚀）\n🎬 花冠智者 / 胸像生花 / 知识者的自然冠冕",
-      "x": -620,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n48",
-      "type": "text",
-      "text": "魔法学院废墟被花蔓侵蚀洗礼池\nis-a 花蔓墨池（上位：魔法学院废墟被花蔓侵蚀）\n🎬 墨池花漂 / 水与墨与花的混合 / 洗笔池变花池",
-      "x": -620,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n49",
-      "type": "text",
-      "text": "魔法学院废墟被花蔓侵蚀祈祷室\nis-a 花蔓自习室（上位：魔法学院废墟被花蔓侵蚀）\n🎬 花从刻字长 / 愿望成花 / 自习室的最后一课",
-      "x": -620,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n50",
-      "type": "text",
-      "text": "v4 复合场景层\\n5项 · 版本变体",
-      "x": -340,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n51",
-      "type": "text",
-      "text": "魔法学院废墟被花蔓侵蚀中央空间复合场景\nis-a 花蔓教室标准版（上位：中央空间）\n🎬 空课室花冠 / 花接替教师 / 标准大全景",
-      "x": -340,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n52",
-      "type": "text",
-      "text": "魔法学院废墟被花蔓侵蚀中央空间镜面版\nis-a 花蔓教室倒影版（上位：中央空间）\n🎬 水下教室 / 镜中另一个学院 / 倒影更繁荣",
-      "x": -340,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n53",
-      "type": "text",
-      "text": "魔法学院废墟被花蔓侵蚀中央空间沉水版\nis-a 花蔓教室水淹版（上位：中央空间）\n🎬 泡水的知识 / 墨烟在水 / 书在水中开",
-      "x": -340,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n54",
-      "type": "text",
-      "text": "魔法学院废墟被花蔓侵蚀中央空间月光版\nis-a 花蔓教室月夜版（上位：中央空间）\n🎬 月光织网 / 光网覆盖花丛 / 夜的教室",
-      "x": -340,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n55",
-      "type": "text",
-      "text": "魔法学院废墟被花蔓侵蚀中央空间黑水版\nis-a 花蔓教室黑液版（上位：中央空间）\n🎬 黑液污染 / 花被墨水窒息 / 化学入侵",
-      "x": -340,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "2"
-    },
-    {
-      "id": "n56",
-      "type": "text",
-      "text": "🔩 构件 is-a 秘术学院组成部分类目 ├ 🏛 学院构件 ┤ 👗 配件/工具 ┤ ↔ 服装·建筑·场景·元素",
-      "x": 20,
-      "y": -700,
-      "width": 600,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "n57",
-      "type": "text",
-      "text": "🏛 学院构件\n5项 · 结构/装饰",
-      "x": 20,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n58",
-      "type": "text",
-      "text": "螺旋石楼梯\nis-a 塔楼旋转梯\n🎬 上下穿行/塔楼攀登",
-      "x": 20,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n59",
-      "type": "text",
-      "text": "彩色花窗\nis-a 学科图腾窗\n🎬 彩色光投影/知识之光",
-      "x": 20,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n60",
-      "type": "text",
-      "text": "橡木长书架\nis-a 顶天立地书架\n🎬 图书馆/知识海洋",
-      "x": 20,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n61",
-      "type": "text",
-      "text": "石灰石柱廊\nis-a 拱形列柱\n🎬 学院走廊/户外回廊",
-      "x": 20,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n62",
-      "type": "text",
-      "text": "铜制星盘\nis-a 天文观测仪\n🎬 观星/天象课/占卜",
-      "x": 20,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n63",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": 20,
-      "y": -115,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n64",
-      "type": "text",
-      "text": "👗 配件/工具\n5项 · 装备/文具",
-      "x": 300,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n65",
-      "type": "text",
-      "text": "羽毛笔\nis-a 书写工具\n🎬 写字/签名/绘制符文",
-      "x": 300,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n66",
-      "type": "text",
-      "text": "魔法水晶球\nis-a 占卜道具\n🎬 预言/窥视/沟通",
-      "x": 300,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n67",
-      "type": "text",
-      "text": "羊皮卷轴\nis-a 知识储存物\n🎬 法术卷轴/历史记录",
-      "x": 300,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n68",
-      "type": "text",
-      "text": "药剂瓶组\nis-a 玻璃药水瓶\n🎬 炼金/药水/颜色标记",
-      "x": 300,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n69",
-      "type": "text",
-      "text": "铜质望远镜\nis-a 天文观测工具\n🎬 观星台/瞭望/研究",
-      "x": 300,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n70",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": 300,
-      "y": -115,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n71",
-      "type": "text",
-      "text": "🎭 元素 is-a 秘术学院视觉母题类目 ├ 📚 知识元素 ┤ 🔥 魔法效果 ┤ 🕊 学院生活 ┤ ↔ 服装·建筑·场景·构件",
-      "x": 630,
-      "y": -700,
-      "width": 890,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "n72",
-      "type": "text",
-      "text": "📚 知识元素\n5项 · 书/符号/装置",
-      "x": 630,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n73",
-      "type": "text",
-      "text": "翻开的古籍\nis-a 展开的书\n🎬 知识/咒语/研究",
-      "x": 630,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n74",
-      "type": "text",
-      "text": "魔法阵纹\nis-a 圆形符号阵\n🎬 召唤/传送/结界",
-      "x": 630,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n75",
-      "type": "text",
-      "text": "元素符号图\nis-a 四元素标记\n🎬 能量分类/学科标识",
-      "x": 630,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n76",
-      "type": "text",
-      "text": "星图\nis-a 星座位置图\n🎬 天文/占星/预言",
-      "x": 630,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n77",
-      "type": "text",
-      "text": "试管架\nis-a 玻璃器皿架\n🎬 化学/炼金/实验",
-      "x": 630,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "4"
-    },
-    {
-      "id": "n78",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": 630,
-      "y": -115,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n79",
-      "type": "text",
-      "text": "🔥 魔法效果\n5项 · 光/能量/幻象",
-      "x": 910,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n80",
-      "type": "text",
-      "text": "蓝色火焰\nis-a 魔法冷焰\n🎬 加热/照明/超凡之物",
-      "x": 910,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n81",
-      "type": "text",
-      "text": "飘浮的蜡烛\nis-a 空中照明\n🎬 魔法照明/神圣时刻",
-      "x": 910,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n82",
-      "type": "text",
-      "text": "发光的符文\nis-a 激活的符号\n🎬 魔法启动/传送门",
-      "x": 910,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n83",
-      "type": "text",
-      "text": "彩色烟雾\nis-a 药水产生的雾\n🎬 实验效果/变色/变形",
-      "x": 910,
-      "y": -261,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n84",
-      "type": "text",
-      "text": "能量屏障\nis-a 半透明护罩\n🎬 防护/隔绝/结界",
-      "x": 910,
-      "y": -188,
-      "width": 230,
-      "height": 65,
-      "color": "5"
-    },
-    {
-      "id": "n85",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": 910,
-      "y": -115,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n86",
-      "type": "text",
-      "text": "🕊 学院生活\n3项 · 日常/象征",
-      "x": 1190,
-      "y": -550,
-      "width": 260,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n87",
-      "type": "text",
-      "text": "猫头鹰\nis-a 夜间送信鸟\n🎬 送信/智慧象征/宠物",
-      "x": 1190,
-      "y": -480,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n88",
-      "type": "text",
-      "text": "学院盾徽\nis-a 院校标志\n🎬 身份/归属/荣誉",
-      "x": 1190,
-      "y": -407,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n89",
-      "type": "text",
-      "text": "毕业证书\nis-a 学业完成证明\n🎬 毕业典礼/进阶标志",
-      "x": 1190,
-      "y": -334,
-      "width": 230,
-      "height": 65,
-      "color": "6"
-    },
-    {
-      "id": "n90",
-      "type": "text",
-      "text": "📎 更多\n→ 按需扩展此子分类",
-      "x": 1190,
-      "y": -261,
-      "width": 250,
-      "height": 55,
-      "color": "6"
-    },
-    {
-      "id": "n91",
-      "type": "text",
-      "text": "🔍 检索关键词弹药库\n\nEN Prompt Keywords\narcane academy style\nmagical university\nold library atmosphere\nwizard robes and hats\nalchemy laboratory\ncandlelit classrooms",
-      "x": 1570,
-      "y": -780,
-      "width": 280,
-      "height": 300,
-      "color": "6"
-    },
-    {
-      "id": "n92",
-      "type": "text",
-      "text": "CN 意象脑暴词\n秘术学院·知识传承\n古老石墙上的常春藤\n高窗透入的尘埃光线\n走廊尽头无尽的图书馆\n烛台照亮羊皮纸上的字\n炼金室的诡异蓝光\n教授黑袍在长廊飘过",
-      "x": 1950,
-      "y": -850,
-      "width": 280,
-      "height": 400,
-      "color": "6"
-    },
-    {
-      "id": "n93",
-      "type": "text",
-      "text": "📊 十元映射简表\n类别  形        色       质        光       空\n服装 垂坠庄重 深蓝紫黑 丝绸绒面  烛光书影   优雅严谨\n建筑 古老高耸 灰褐深蓝 石木玻璃   彩窗烛光   垂直阶梯\n场景 学术氛围 深棕墨绿 书香尘土   烛光散射   交错穹顶\n构件 古典精密 黄铜黑铁 木质金属   光源汇聚   对称装饰\n元素 符号图腾 深蓝紫金 古老纸张   魔法辉光   几何符号",
-      "x": 1570,
-      "y": -450,
-      "width": 640,
-      "height": 225,
-      "color": "6"
-    },
-    {
-      "id": "n94",
-      "type": "text",
-      "text": "📎 完整数据见 is-a.md\n含全部服装+建筑+场景+构件+元素\n以及十元映射简表和Prompt检索词",
-      "x": 1570,
-      "y": -190,
-      "width": 460,
-      "height": 100,
-      "color": "1"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e_root_def",
-      "fromNode": "n1",
-      "fromSide": "bottom",
-      "toNode": "n2",
-      "toSide": "top"
-    },
-    {
-      "id": "em_clothing",
-      "fromNode": "n2",
-      "fromSide": "left",
-      "toNode": "n3",
-      "toSide": "right"
-    },
-    {
-      "id": "e_cl_0_h",
-      "fromNode": "n3",
-      "fromSide": "bottom",
-      "toNode": "n4",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_0_0",
-      "fromNode": "n4",
-      "fromSide": "bottom",
-      "toNode": "n5",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_0_1",
-      "fromNode": "n5",
-      "fromSide": "bottom",
-      "toNode": "n6",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_0_2",
-      "fromNode": "n6",
-      "fromSide": "bottom",
-      "toNode": "n7",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_0_3",
-      "fromNode": "n7",
-      "fromSide": "bottom",
-      "toNode": "n8",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_0_4",
-      "fromNode": "n8",
-      "fromSide": "bottom",
-      "toNode": "n9",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_0_m",
-      "fromNode": "n9",
-      "fromSide": "bottom",
-      "toNode": "n10",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_h",
-      "fromNode": "n3",
-      "fromSide": "bottom",
-      "toNode": "n11",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_0",
-      "fromNode": "n11",
-      "fromSide": "bottom",
-      "toNode": "n12",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_1",
-      "fromNode": "n12",
-      "fromSide": "bottom",
-      "toNode": "n13",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_2",
-      "fromNode": "n13",
-      "fromSide": "bottom",
-      "toNode": "n14",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_3",
-      "fromNode": "n14",
-      "fromSide": "bottom",
-      "toNode": "n15",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_4",
-      "fromNode": "n15",
-      "fromSide": "bottom",
-      "toNode": "n16",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_1_m",
-      "fromNode": "n16",
-      "fromSide": "bottom",
-      "toNode": "n17",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_2_h",
-      "fromNode": "n3",
-      "fromSide": "bottom",
-      "toNode": "n18",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_2_0",
-      "fromNode": "n18",
-      "fromSide": "bottom",
-      "toNode": "n19",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_2_1",
-      "fromNode": "n19",
-      "fromSide": "bottom",
-      "toNode": "n20",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_2_2",
-      "fromNode": "n20",
-      "fromSide": "bottom",
-      "toNode": "n21",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_2_3",
-      "fromNode": "n21",
-      "fromSide": "bottom",
-      "toNode": "n22",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cl_2_m",
-      "fromNode": "n22",
-      "fromSide": "bottom",
-      "toNode": "n23",
-      "toSide": "top"
-    },
-    {
-      "id": "em_arch",
-      "fromNode": "n3",
-      "fromSide": "right",
-      "toNode": "n24",
-      "toSide": "left"
-    },
-    {
-      "id": "e_ar_0_h",
-      "fromNode": "n24",
-      "fromSide": "bottom",
-      "toNode": "n25",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_0_0",
-      "fromNode": "n25",
-      "fromSide": "bottom",
-      "toNode": "n26",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_0_1",
-      "fromNode": "n26",
-      "fromSide": "bottom",
-      "toNode": "n27",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_0_2",
-      "fromNode": "n27",
-      "fromSide": "bottom",
-      "toNode": "n28",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_0_3",
-      "fromNode": "n28",
-      "fromSide": "bottom",
-      "toNode": "n29",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_0_4",
-      "fromNode": "n29",
-      "fromSide": "bottom",
-      "toNode": "n30",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_0_5",
-      "fromNode": "n30",
-      "fromSide": "bottom",
-      "toNode": "n31",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_1_h",
-      "fromNode": "n24",
-      "fromSide": "bottom",
-      "toNode": "n32",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_1_0",
-      "fromNode": "n32",
-      "fromSide": "bottom",
-      "toNode": "n33",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_1_1",
-      "fromNode": "n33",
-      "fromSide": "bottom",
-      "toNode": "n34",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_1_2",
-      "fromNode": "n34",
-      "fromSide": "bottom",
-      "toNode": "n35",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ar_1_3",
-      "fromNode": "n35",
-      "fromSide": "bottom",
-      "toNode": "n36",
-      "toSide": "top"
-    },
-    {
-      "id": "em_scene",
-      "fromNode": "n24",
-      "fromSide": "right",
-      "toNode": "n37",
-      "toSide": "left"
-    },
-    {
-      "id": "e_sc_0_h",
-      "fromNode": "n37",
-      "fromSide": "bottom",
-      "toNode": "n38",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_0_0",
-      "fromNode": "n38",
-      "fromSide": "bottom",
-      "toNode": "n39",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_0_1",
-      "fromNode": "n39",
-      "fromSide": "bottom",
-      "toNode": "n40",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_0_2",
-      "fromNode": "n40",
-      "fromSide": "bottom",
-      "toNode": "n41",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_0_3",
-      "fromNode": "n41",
-      "fromSide": "bottom",
-      "toNode": "n42",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_0_4",
-      "fromNode": "n42",
-      "fromSide": "bottom",
-      "toNode": "n43",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_1_h",
-      "fromNode": "n37",
-      "fromSide": "bottom",
-      "toNode": "n44",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_1_0",
-      "fromNode": "n44",
-      "fromSide": "bottom",
-      "toNode": "n45",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_1_1",
-      "fromNode": "n45",
-      "fromSide": "bottom",
-      "toNode": "n46",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_1_2",
-      "fromNode": "n46",
-      "fromSide": "bottom",
-      "toNode": "n47",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_1_3",
-      "fromNode": "n47",
-      "fromSide": "bottom",
-      "toNode": "n48",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_1_4",
-      "fromNode": "n48",
-      "fromSide": "bottom",
-      "toNode": "n49",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_2_h",
-      "fromNode": "n37",
-      "fromSide": "bottom",
-      "toNode": "n50",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_2_0",
-      "fromNode": "n50",
-      "fromSide": "bottom",
-      "toNode": "n51",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_2_1",
-      "fromNode": "n51",
-      "fromSide": "bottom",
-      "toNode": "n52",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_2_2",
-      "fromNode": "n52",
-      "fromSide": "bottom",
-      "toNode": "n53",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_2_3",
-      "fromNode": "n53",
-      "fromSide": "bottom",
-      "toNode": "n54",
-      "toSide": "top"
-    },
-    {
-      "id": "e_sc_2_4",
-      "fromNode": "n54",
-      "fromSide": "bottom",
-      "toNode": "n55",
-      "toSide": "top"
-    },
-    {
-      "id": "em_comp",
-      "fromNode": "n37",
-      "fromSide": "right",
-      "toNode": "n56",
-      "toSide": "left"
-    },
-    {
-      "id": "e_cp_0_h",
-      "fromNode": "n56",
-      "fromSide": "bottom",
-      "toNode": "n57",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_0_0",
-      "fromNode": "n57",
-      "fromSide": "bottom",
-      "toNode": "n58",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_0_1",
-      "fromNode": "n58",
-      "fromSide": "bottom",
-      "toNode": "n59",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_0_2",
-      "fromNode": "n59",
-      "fromSide": "bottom",
-      "toNode": "n60",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_0_3",
-      "fromNode": "n60",
-      "fromSide": "bottom",
-      "toNode": "n61",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_0_4",
-      "fromNode": "n61",
-      "fromSide": "bottom",
-      "toNode": "n62",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_0_m",
-      "fromNode": "n62",
-      "fromSide": "bottom",
-      "toNode": "n63",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_h",
-      "fromNode": "n56",
-      "fromSide": "bottom",
-      "toNode": "n64",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_0",
-      "fromNode": "n64",
-      "fromSide": "bottom",
-      "toNode": "n65",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_1",
-      "fromNode": "n65",
-      "fromSide": "bottom",
-      "toNode": "n66",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_2",
-      "fromNode": "n66",
-      "fromSide": "bottom",
-      "toNode": "n67",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_3",
-      "fromNode": "n67",
-      "fromSide": "bottom",
-      "toNode": "n68",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_4",
-      "fromNode": "n68",
-      "fromSide": "bottom",
-      "toNode": "n69",
-      "toSide": "top"
-    },
-    {
-      "id": "e_cp_1_m",
-      "fromNode": "n69",
-      "fromSide": "bottom",
-      "toNode": "n70",
-      "toSide": "top"
-    },
-    {
-      "id": "em_elem",
-      "fromNode": "n56",
-      "fromSide": "right",
-      "toNode": "n71",
-      "toSide": "left"
-    },
-    {
-      "id": "e_el_0_h",
-      "fromNode": "n71",
-      "fromSide": "bottom",
-      "toNode": "n72",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_0_0",
-      "fromNode": "n72",
-      "fromSide": "bottom",
-      "toNode": "n73",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_0_1",
-      "fromNode": "n73",
-      "fromSide": "bottom",
-      "toNode": "n74",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_0_2",
-      "fromNode": "n74",
-      "fromSide": "bottom",
-      "toNode": "n75",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_0_3",
-      "fromNode": "n75",
-      "fromSide": "bottom",
-      "toNode": "n76",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_0_4",
-      "fromNode": "n76",
-      "fromSide": "bottom",
-      "toNode": "n77",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_0_m",
-      "fromNode": "n77",
-      "fromSide": "bottom",
-      "toNode": "n78",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_h",
-      "fromNode": "n71",
-      "fromSide": "bottom",
-      "toNode": "n79",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_0",
-      "fromNode": "n79",
-      "fromSide": "bottom",
-      "toNode": "n80",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_1",
-      "fromNode": "n80",
-      "fromSide": "bottom",
-      "toNode": "n81",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_2",
-      "fromNode": "n81",
-      "fromSide": "bottom",
-      "toNode": "n82",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_3",
-      "fromNode": "n82",
-      "fromSide": "bottom",
-      "toNode": "n83",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_4",
-      "fromNode": "n83",
-      "fromSide": "bottom",
-      "toNode": "n84",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_1_m",
-      "fromNode": "n84",
-      "fromSide": "bottom",
-      "toNode": "n85",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_2_h",
-      "fromNode": "n71",
-      "fromSide": "bottom",
-      "toNode": "n86",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_2_0",
-      "fromNode": "n86",
-      "fromSide": "bottom",
-      "toNode": "n87",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_2_1",
-      "fromNode": "n87",
-      "fromSide": "bottom",
-      "toNode": "n88",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_2_2",
-      "fromNode": "n88",
-      "fromSide": "bottom",
-      "toNode": "n89",
-      "toSide": "top"
-    },
-    {
-      "id": "e_el_2_m",
-      "fromNode": "n89",
-      "fromSide": "bottom",
-      "toNode": "n90",
-      "toSide": "top"
-    },
-    {
-      "id": "e_p_en_cn",
-      "fromNode": "n91",
-      "fromSide": "right",
-      "toNode": "n92",
-      "toSide": "left"
-    },
-    {
-      "id": "e_p_en_ty",
-      "fromNode": "n91",
-      "fromSide": "bottom",
-      "toNode": "n93",
-      "toSide": "top"
-    },
-    {
-      "id": "e_note",
-      "fromNode": "n93",
-      "fromSide": "bottom",
-      "toNode": "n94",
-      "toSide": "top"
-    }
-  ]
+	"nodes": [
+		{
+			"id": "n1",
+			"type": "text",
+			"text": "📜 秘术学院 is-a 名词素材库\n        秘术学院 — xn+zn",
+			"x": -200,
+			"y": -950,
+			"width": 480,
+			"height": 80,
+			"color": "1"
+		},
+		{
+			"id": "n2",
+			"type": "text",
+			"text": "📖 风格定义\nis-a 因果视觉风格\n魔法学府·知识传承\n法师/学者/图书馆/实验室",
+			"x": -160,
+			"y": -850,
+			"width": 260,
+			"height": 110,
+			"color": "6"
+		},
+		{
+			"id": "n3",
+			"type": "text",
+			"text": "👗 服装 is-a 秘术学院角色造型类目 ├ 📖 学院导师 ┤ 📝 学院学生 ┤ ⚗ 炼金师 ┤ ↔ 服装·建筑·场景·构件·元素",
+			"x": -2400,
+			"y": -700,
+			"width": 890,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n4",
+			"type": "text",
+			"text": "📖 学院导师\n5项 · 教授/院长",
+			"x": -2400,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n5",
+			"type": "text",
+			"text": "深蓝星辰长袍\nis-a 高阶法师教授袍\n🎬 教授在讲堂授课",
+			"x": -2400,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n6",
+			"type": "text",
+			"text": "紫黑金边斗篷\nis-a 院长仪式袍\n🎬 院长主持开学典礼",
+			"x": -2400,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n7",
+			"type": "text",
+			"text": "银丝眼镜魔杖\nis-a 学者工具\n🎬 教授检查学生作业",
+			"x": -2400,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n8",
+			"type": "text",
+			"text": "符文刺绣肩披\nis-a 学科阶层标志\n🎬 学科带头人/系主任",
+			"x": -2400,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n9",
+			"type": "text",
+			"text": "尖顶法师帽\nis-a 传统法师帽\n🎬 法师形象/标志性服饰",
+			"x": -2400,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n10",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": -2400,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n11",
+			"type": "text",
+			"text": "📝 学院学生\n5项 · 学徒/研究",
+			"x": -2120,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n12",
+			"type": "text",
+			"text": "灰色亚麻学徒袍\nis-a 初级学生袍\n🎬 学徒在图书馆自习",
+			"x": -2120,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n13",
+			"type": "text",
+			"text": "蓝银边学生制服\nis-a 正式学员装\n🎬 学生在走廊交谈",
+			"x": -2120,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n14",
+			"type": "text",
+			"text": "腰挂药草袋\nis-a 炼药学徒配件\n🎬 学徒采集/准备药材",
+			"x": -2120,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n15",
+			"type": "text",
+			"text": "羽毛笔插耳后\nis-a 学生日常道具\n🎬 做笔记/考试准备",
+			"x": -2120,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n16",
+			"type": "text",
+			"text": "护目镜推额前\nis-a 炼金实验护具\n🎬 实验准备/药剂调配",
+			"x": -2120,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n17",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": -2120,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n18",
+			"type": "text",
+			"text": "⚗ 炼金师\n4项 · 药剂/实验",
+			"x": -1840,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n19",
+			"type": "text",
+			"text": "防火皮围裙\nis-a 炼金防护服\n🎬 炼金师在操作台前",
+			"x": -1840,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n20",
+			"type": "text",
+			"text": "皮革长手套\nis-a 防腐蚀手套\n🎬 处理危险药剂",
+			"x": -1840,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n21",
+			"type": "text",
+			"text": "药水瓶腰带\nis-a 随身药剂架\n🎬 炼金师外出采集",
+			"x": -1840,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n22",
+			"type": "text",
+			"text": "防毒面具罩\nis-a 烟雾防护面罩\n🎬 实验事故/危险警告",
+			"x": -1840,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n23",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": -1840,
+			"y": -188,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n24",
+			"type": "text",
+			"text": "🏛️ 建筑 is-a 秘术学院空间场景类目 ├ v0空间母体 ┤ v1典型空间 ┤ ↔ 服装·场景·构件·元素",
+			"x": -1510,
+			"y": -700,
+			"width": 600,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n25",
+			"type": "text",
+			"text": "v0 空间母体层\\n6项 · 核心空间",
+			"x": -1510,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n26",
+			"type": "text",
+			"text": "魔法学院\nis-a 魔法教育机构\n🎬 入学/上课之间 / 学院全景 / 魔法学习生活",
+			"x": -1510,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n27",
+			"type": "text",
+			"text": "图书塔\nis-a 魔法图书馆\n🎬 找书 / 高处取书 / 静读空间",
+			"x": -1510,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n28",
+			"type": "text",
+			"text": "禁书馆\nis-a 封印知识库\n🎬 禁忌知识 / 偷看书库 / 危险发现",
+			"x": -1510,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n29",
+			"type": "text",
+			"text": "法阵教室\nis-a 魔法教学空间\n🎬 上课场景 / 法阵教学 / 老师示范",
+			"x": -1510,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n30",
+			"type": "text",
+			"text": "星象观测台\nis-a 魔法天文台\n🎬 夜观星象 / 预言推算 / 高处对话",
+			"x": -1510,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n31",
+			"type": "text",
+			"text": "炼金实验室\nis-a 魔法化学室\n🎬 调药场景 / 爆炸实验 / 炼金术的日常",
+			"x": -1510,
+			"y": -115,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n32",
+			"type": "text",
+			"text": "v1 典型空间层\\n4项 · 废墟/空间",
+			"x": -1230,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n33",
+			"type": "text",
+			"text": "魔法学院废墟\nis-a 废弃魔法学院（上位：魔法学院）\n🎬 学院衰落 / 一课室遗骸 / 被时间侵蚀的教育",
+			"x": -1230,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n34",
+			"type": "text",
+			"text": "魔法学院圣所\nis-a 废弃魔法圣殿（上位：魔法学院）\n🎬 破旧大礼堂 / 彩窗光影 / 残破的讲台",
+			"x": -1230,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n35",
+			"type": "text",
+			"text": "魔法学院大厅\nis-a 废弃学院大厅（上位：魔法学院）\n🎬 大厅废弛 / 水晶满地 / 时间停止的房间",
+			"x": -1230,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n36",
+			"type": "text",
+			"text": "魔法学院回廊\nis-a 废弃学院走廊（上位：魔法学院）\n🎬 被破坏的画廊 / 逃难的痕迹 / 走廊尽头",
+			"x": -1230,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n37",
+			"type": "text",
+			"text": "🌄 场景 is-a 秘术学院可绘制场景类目 ├ 📚 学院日常 ┤ 🧪 秘术事故 ┤ 🎓 学院仪式 ├ ↔ 服装·建筑·构件·元素",
+			"x": -900,
+			"y": -700,
+			"width": 900,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n38",
+			"type": "text",
+			"text": "📚 学院日常\n5项 · 课程/社团/研究",
+			"x": -900,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n39",
+			"type": "text",
+			"text": "魔药课爆锅\nis-a 秘术学院学习场景\n🎬 魔药课爆锅 / 表现学生、导师、课程与学院生活",
+			"x": -900,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n40",
+			"type": "text",
+			"text": "图书馆禁书检索\nis-a 秘术学院学习场景\n🎬 图书馆禁书检索 / 表现学生、导师、课程与学院生活",
+			"x": -900,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n41",
+			"type": "text",
+			"text": "使魔放风\nis-a 秘术学院学习场景\n🎬 使魔放风 / 表现学生、导师、课程与学院生活",
+			"x": -900,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n42",
+			"type": "text",
+			"text": "夜间天文课\nis-a 秘术学院学习场景\n🎬 夜间天文课 / 表现学生、导师、课程与学院生活",
+			"x": -900,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n43",
+			"type": "text",
+			"text": "学生社团决斗\nis-a 秘术学院学习场景\n🎬 学生社团决斗 / 表现学生、导师、课程与学院生活",
+			"x": -900,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n44",
+			"type": "text",
+			"text": "🧪 秘术事故\n5项 · 反噬/失控/封锁",
+			"x": -620,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n45",
+			"type": "text",
+			"text": "咒语反噬\nis-a 秘术学院事故场景\n🎬 咒语反噬 / 表现法术失败、实验失控和救场",
+			"x": -620,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n46",
+			"type": "text",
+			"text": "传送门串班\nis-a 秘术学院事故场景\n🎬 传送门串班 / 表现法术失败、实验失控和救场",
+			"x": -620,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n47",
+			"type": "text",
+			"text": "地下实验失控\nis-a 秘术学院事故场景\n🎬 地下实验失控 / 表现法术失败、实验失控和救场",
+			"x": -620,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n48",
+			"type": "text",
+			"text": "考试召来异物\nis-a 秘术学院事故场景\n🎬 考试召来异物 / 表现法术失败、实验失控和救场",
+			"x": -620,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n49",
+			"type": "text",
+			"text": "校塔时间停滞\nis-a 秘术学院事故场景\n🎬 校塔时间停滞 / 表现法术失败、实验失控和救场",
+			"x": -620,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n50",
+			"type": "text",
+			"text": "🎓 学院仪式\n5项 · 分院/授杖/传承",
+			"x": -340,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n51",
+			"type": "text",
+			"text": "新生分院\nis-a 秘术学院仪式场景\n🎬 新生分院 / 表现身份确认、学术裁决与传承",
+			"x": -340,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n52",
+			"type": "text",
+			"text": "首席授杖\nis-a 秘术学院仪式场景\n🎬 首席授杖 / 表现身份确认、学术裁决与传承",
+			"x": -340,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n53",
+			"type": "text",
+			"text": "禁术听证\nis-a 秘术学院仪式场景\n🎬 禁术听证 / 表现身份确认、学术裁决与传承",
+			"x": -340,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n54",
+			"type": "text",
+			"text": "毕业星火礼\nis-a 秘术学院仪式场景\n🎬 毕业星火礼 / 表现身份确认、学术裁决与传承",
+			"x": -340,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n55",
+			"type": "text",
+			"text": "院长封印交接\nis-a 秘术学院仪式场景\n🎬 院长封印交接 / 表现身份确认、学术裁决与传承",
+			"x": -340,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "2"
+		},
+		{
+			"id": "n56",
+			"type": "text",
+			"text": "🔩 构件 is-a 秘术学院组成部分类目 ├ 🏛 学院构件 ┤ 👗 配件/工具 ┤ ↔ 服装·建筑·场景·元素",
+			"x": 20,
+			"y": -700,
+			"width": 600,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n57",
+			"type": "text",
+			"text": "🏛 学院构件\n5项 · 结构/装饰",
+			"x": 20,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n58",
+			"type": "text",
+			"text": "螺旋石楼梯\nis-a 塔楼旋转梯\n🎬 上下穿行/塔楼攀登",
+			"x": 20,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n59",
+			"type": "text",
+			"text": "彩色花窗\nis-a 学科图腾窗\n🎬 彩色光投影/知识之光",
+			"x": 20,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n60",
+			"type": "text",
+			"text": "橡木长书架\nis-a 顶天立地书架\n🎬 图书馆/知识海洋",
+			"x": 20,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n61",
+			"type": "text",
+			"text": "石灰石柱廊\nis-a 拱形列柱\n🎬 学院走廊/户外回廊",
+			"x": 20,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n62",
+			"type": "text",
+			"text": "铜制星盘\nis-a 天文观测仪\n🎬 观星/天象课/占卜",
+			"x": 20,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n63",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 20,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n64",
+			"type": "text",
+			"text": "👗 配件/工具\n5项 · 装备/文具",
+			"x": 300,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n65",
+			"type": "text",
+			"text": "羽毛笔\nis-a 书写工具\n🎬 写字/签名/绘制符文",
+			"x": 300,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n66",
+			"type": "text",
+			"text": "魔法水晶球\nis-a 占卜道具\n🎬 预言/窥视/沟通",
+			"x": 300,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n67",
+			"type": "text",
+			"text": "羊皮卷轴\nis-a 知识储存物\n🎬 法术卷轴/历史记录",
+			"x": 300,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n68",
+			"type": "text",
+			"text": "药剂瓶组\nis-a 玻璃药水瓶\n🎬 炼金/药水/颜色标记",
+			"x": 300,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n69",
+			"type": "text",
+			"text": "铜质望远镜\nis-a 天文观测工具\n🎬 观星台/瞭望/研究",
+			"x": 300,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n70",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 300,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n71",
+			"type": "text",
+			"text": "🎭 元素 is-a 秘术学院视觉母题类目 ├ 📚 知识元素 ┤ 🔥 魔法效果 ┤ 🕊 学院生活 ┤ ↔ 服装·建筑·场景·构件",
+			"x": 630,
+			"y": -700,
+			"width": 890,
+			"height": 60,
+			"color": "1"
+		},
+		{
+			"id": "n72",
+			"type": "text",
+			"text": "📚 知识元素\n5项 · 书/符号/装置",
+			"x": 630,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n73",
+			"type": "text",
+			"text": "翻开的古籍\nis-a 展开的书\n🎬 知识/咒语/研究",
+			"x": 630,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n74",
+			"type": "text",
+			"text": "魔法阵纹\nis-a 圆形符号阵\n🎬 召唤/传送/结界",
+			"x": 630,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n75",
+			"type": "text",
+			"text": "元素符号图\nis-a 四元素标记\n🎬 能量分类/学科标识",
+			"x": 630,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n76",
+			"type": "text",
+			"text": "星图\nis-a 星座位置图\n🎬 天文/占星/预言",
+			"x": 630,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n77",
+			"type": "text",
+			"text": "试管架\nis-a 玻璃器皿架\n🎬 化学/炼金/实验",
+			"x": 630,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "4"
+		},
+		{
+			"id": "n78",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 630,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n79",
+			"type": "text",
+			"text": "🔥 魔法效果\n5项 · 光/能量/幻象",
+			"x": 910,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n80",
+			"type": "text",
+			"text": "蓝色火焰\nis-a 魔法冷焰\n🎬 加热/照明/超凡之物",
+			"x": 910,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n81",
+			"type": "text",
+			"text": "飘浮的蜡烛\nis-a 空中照明\n🎬 魔法照明/神圣时刻",
+			"x": 910,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n82",
+			"type": "text",
+			"text": "发光的符文\nis-a 激活的符号\n🎬 魔法启动/传送门",
+			"x": 910,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n83",
+			"type": "text",
+			"text": "彩色烟雾\nis-a 药水产生的雾\n🎬 实验效果/变色/变形",
+			"x": 910,
+			"y": -261,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n84",
+			"type": "text",
+			"text": "能量屏障\nis-a 半透明护罩\n🎬 防护/隔绝/结界",
+			"x": 910,
+			"y": -188,
+			"width": 230,
+			"height": 65,
+			"color": "5"
+		},
+		{
+			"id": "n85",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 910,
+			"y": -115,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n86",
+			"type": "text",
+			"text": "🕊 学院生活\n3项 · 日常/象征",
+			"x": 1190,
+			"y": -550,
+			"width": 260,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n87",
+			"type": "text",
+			"text": "猫头鹰\nis-a 夜间送信鸟\n🎬 送信/智慧象征/宠物",
+			"x": 1190,
+			"y": -480,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n88",
+			"type": "text",
+			"text": "学院盾徽\nis-a 院校标志\n🎬 身份/归属/荣誉",
+			"x": 1190,
+			"y": -407,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n89",
+			"type": "text",
+			"text": "毕业证书\nis-a 学业完成证明\n🎬 毕业典礼/进阶标志",
+			"x": 1190,
+			"y": -334,
+			"width": 230,
+			"height": 65,
+			"color": "6"
+		},
+		{
+			"id": "n90",
+			"type": "text",
+			"text": "📎 更多\n→ 按需扩展此子分类",
+			"x": 1190,
+			"y": -261,
+			"width": 250,
+			"height": 55,
+			"color": "6"
+		},
+		{
+			"id": "n91",
+			"type": "text",
+			"text": "🔍 检索关键词弹药库\n\nEN Prompt Keywords\narcane academy style\nmagical university\nold library atmosphere\nwizard robes and hats\nalchemy laboratory\ncandlelit classrooms",
+			"x": 1570,
+			"y": -780,
+			"width": 280,
+			"height": 300,
+			"color": "6"
+		},
+		{
+			"id": "n92",
+			"type": "text",
+			"text": "CN 意象脑暴词\n秘术学院·知识传承\n古老石墙上的常春藤\n高窗透入的尘埃光线\n走廊尽头无尽的图书馆\n烛台照亮羊皮纸上的字\n炼金室的诡异蓝光\n教授黑袍在长廊飘过",
+			"x": 1950,
+			"y": -850,
+			"width": 280,
+			"height": 400,
+			"color": "6"
+		},
+		{
+			"id": "n93",
+			"type": "text",
+			"text": "📊 十元映射简表\n类别  形        色       质        光       空\n服装 垂坠庄重 深蓝紫黑 丝绸绒面  烛光书影   优雅严谨\n建筑 古老高耸 灰褐深蓝 石木玻璃   彩窗烛光   垂直阶梯\n场景 学术氛围 深棕墨绿 书香尘土   烛光散射   交错穹顶\n构件 古典精密 黄铜黑铁 木质金属   光源汇聚   对称装饰\n元素 符号图腾 深蓝紫金 古老纸张   魔法辉光   几何符号",
+			"x": 1570,
+			"y": -450,
+			"width": 640,
+			"height": 225,
+			"color": "6"
+		},
+		{
+			"id": "n94",
+			"type": "text",
+			"text": "📎 完整数据见 is-a.md\n含全部服装+建筑+场景+构件+元素\n以及十元映射简表和Prompt检索词",
+			"x": 1570,
+			"y": -190,
+			"width": 460,
+			"height": 100,
+			"color": "1"
+		}
+	],
+	"edges": [
+		{
+			"id": "e_root_def",
+			"fromNode": "n1",
+			"fromSide": "bottom",
+			"toNode": "n2",
+			"toSide": "top"
+		},
+		{
+			"id": "em_clothing",
+			"fromNode": "n2",
+			"fromSide": "left",
+			"toNode": "n3",
+			"toSide": "right"
+		},
+		{
+			"id": "e_cl_0_h",
+			"fromNode": "n3",
+			"fromSide": "bottom",
+			"toNode": "n4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_0",
+			"fromNode": "n4",
+			"fromSide": "bottom",
+			"toNode": "n5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_1",
+			"fromNode": "n5",
+			"fromSide": "bottom",
+			"toNode": "n6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_2",
+			"fromNode": "n6",
+			"fromSide": "bottom",
+			"toNode": "n7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_3",
+			"fromNode": "n7",
+			"fromSide": "bottom",
+			"toNode": "n8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_4",
+			"fromNode": "n8",
+			"fromSide": "bottom",
+			"toNode": "n9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_0_m",
+			"fromNode": "n9",
+			"fromSide": "bottom",
+			"toNode": "n10",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_h",
+			"fromNode": "n3",
+			"fromSide": "bottom",
+			"toNode": "n11",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_0",
+			"fromNode": "n11",
+			"fromSide": "bottom",
+			"toNode": "n12",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_1",
+			"fromNode": "n12",
+			"fromSide": "bottom",
+			"toNode": "n13",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_2",
+			"fromNode": "n13",
+			"fromSide": "bottom",
+			"toNode": "n14",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_3",
+			"fromNode": "n14",
+			"fromSide": "bottom",
+			"toNode": "n15",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_4",
+			"fromNode": "n15",
+			"fromSide": "bottom",
+			"toNode": "n16",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_1_m",
+			"fromNode": "n16",
+			"fromSide": "bottom",
+			"toNode": "n17",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_h",
+			"fromNode": "n3",
+			"fromSide": "bottom",
+			"toNode": "n18",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_0",
+			"fromNode": "n18",
+			"fromSide": "bottom",
+			"toNode": "n19",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_1",
+			"fromNode": "n19",
+			"fromSide": "bottom",
+			"toNode": "n20",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_2",
+			"fromNode": "n20",
+			"fromSide": "bottom",
+			"toNode": "n21",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_3",
+			"fromNode": "n21",
+			"fromSide": "bottom",
+			"toNode": "n22",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cl_2_m",
+			"fromNode": "n22",
+			"fromSide": "bottom",
+			"toNode": "n23",
+			"toSide": "top"
+		},
+		{
+			"id": "em_arch",
+			"fromNode": "n3",
+			"fromSide": "right",
+			"toNode": "n24",
+			"toSide": "left"
+		},
+		{
+			"id": "e_ar_0_h",
+			"fromNode": "n24",
+			"fromSide": "bottom",
+			"toNode": "n25",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_0",
+			"fromNode": "n25",
+			"fromSide": "bottom",
+			"toNode": "n26",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_1",
+			"fromNode": "n26",
+			"fromSide": "bottom",
+			"toNode": "n27",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_2",
+			"fromNode": "n27",
+			"fromSide": "bottom",
+			"toNode": "n28",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_3",
+			"fromNode": "n28",
+			"fromSide": "bottom",
+			"toNode": "n29",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_4",
+			"fromNode": "n29",
+			"fromSide": "bottom",
+			"toNode": "n30",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_0_5",
+			"fromNode": "n30",
+			"fromSide": "bottom",
+			"toNode": "n31",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_h",
+			"fromNode": "n24",
+			"fromSide": "bottom",
+			"toNode": "n32",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_0",
+			"fromNode": "n32",
+			"fromSide": "bottom",
+			"toNode": "n33",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_1",
+			"fromNode": "n33",
+			"fromSide": "bottom",
+			"toNode": "n34",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_2",
+			"fromNode": "n34",
+			"fromSide": "bottom",
+			"toNode": "n35",
+			"toSide": "top"
+		},
+		{
+			"id": "e_ar_1_3",
+			"fromNode": "n35",
+			"fromSide": "bottom",
+			"toNode": "n36",
+			"toSide": "top"
+		},
+		{
+			"id": "em_scene",
+			"fromNode": "n24",
+			"fromSide": "right",
+			"toNode": "n37",
+			"toSide": "left"
+		},
+		{
+			"id": "e_sc_0_h",
+			"fromNode": "n37",
+			"fromSide": "bottom",
+			"toNode": "n38",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_0",
+			"fromNode": "n38",
+			"fromSide": "bottom",
+			"toNode": "n39",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_1",
+			"fromNode": "n39",
+			"fromSide": "bottom",
+			"toNode": "n40",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_2",
+			"fromNode": "n40",
+			"fromSide": "bottom",
+			"toNode": "n41",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_3",
+			"fromNode": "n41",
+			"fromSide": "bottom",
+			"toNode": "n42",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_0_4",
+			"fromNode": "n42",
+			"fromSide": "bottom",
+			"toNode": "n43",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_h",
+			"fromNode": "n37",
+			"fromSide": "bottom",
+			"toNode": "n44",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_0",
+			"fromNode": "n44",
+			"fromSide": "bottom",
+			"toNode": "n45",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_1",
+			"fromNode": "n45",
+			"fromSide": "bottom",
+			"toNode": "n46",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_2",
+			"fromNode": "n46",
+			"fromSide": "bottom",
+			"toNode": "n47",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_3",
+			"fromNode": "n47",
+			"fromSide": "bottom",
+			"toNode": "n48",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_1_4",
+			"fromNode": "n48",
+			"fromSide": "bottom",
+			"toNode": "n49",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_h",
+			"fromNode": "n37",
+			"fromSide": "bottom",
+			"toNode": "n50",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_0",
+			"fromNode": "n50",
+			"fromSide": "bottom",
+			"toNode": "n51",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_1",
+			"fromNode": "n51",
+			"fromSide": "bottom",
+			"toNode": "n52",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_2",
+			"fromNode": "n52",
+			"fromSide": "bottom",
+			"toNode": "n53",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_3",
+			"fromNode": "n53",
+			"fromSide": "bottom",
+			"toNode": "n54",
+			"toSide": "top"
+		},
+		{
+			"id": "e_sc_2_4",
+			"fromNode": "n54",
+			"fromSide": "bottom",
+			"toNode": "n55",
+			"toSide": "top"
+		},
+		{
+			"id": "em_comp",
+			"fromNode": "n37",
+			"fromSide": "right",
+			"toNode": "n56",
+			"toSide": "left"
+		},
+		{
+			"id": "e_cp_0_h",
+			"fromNode": "n56",
+			"fromSide": "bottom",
+			"toNode": "n57",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_0",
+			"fromNode": "n57",
+			"fromSide": "bottom",
+			"toNode": "n58",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_1",
+			"fromNode": "n58",
+			"fromSide": "bottom",
+			"toNode": "n59",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_2",
+			"fromNode": "n59",
+			"fromSide": "bottom",
+			"toNode": "n60",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_3",
+			"fromNode": "n60",
+			"fromSide": "bottom",
+			"toNode": "n61",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_4",
+			"fromNode": "n61",
+			"fromSide": "bottom",
+			"toNode": "n62",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_0_m",
+			"fromNode": "n62",
+			"fromSide": "bottom",
+			"toNode": "n63",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_h",
+			"fromNode": "n56",
+			"fromSide": "bottom",
+			"toNode": "n64",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_0",
+			"fromNode": "n64",
+			"fromSide": "bottom",
+			"toNode": "n65",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_1",
+			"fromNode": "n65",
+			"fromSide": "bottom",
+			"toNode": "n66",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_2",
+			"fromNode": "n66",
+			"fromSide": "bottom",
+			"toNode": "n67",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_3",
+			"fromNode": "n67",
+			"fromSide": "bottom",
+			"toNode": "n68",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_4",
+			"fromNode": "n68",
+			"fromSide": "bottom",
+			"toNode": "n69",
+			"toSide": "top"
+		},
+		{
+			"id": "e_cp_1_m",
+			"fromNode": "n69",
+			"fromSide": "bottom",
+			"toNode": "n70",
+			"toSide": "top"
+		},
+		{
+			"id": "em_elem",
+			"fromNode": "n56",
+			"fromSide": "right",
+			"toNode": "n71",
+			"toSide": "left"
+		},
+		{
+			"id": "e_el_0_h",
+			"fromNode": "n71",
+			"fromSide": "bottom",
+			"toNode": "n72",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_0",
+			"fromNode": "n72",
+			"fromSide": "bottom",
+			"toNode": "n73",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_1",
+			"fromNode": "n73",
+			"fromSide": "bottom",
+			"toNode": "n74",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_2",
+			"fromNode": "n74",
+			"fromSide": "bottom",
+			"toNode": "n75",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_3",
+			"fromNode": "n75",
+			"fromSide": "bottom",
+			"toNode": "n76",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_4",
+			"fromNode": "n76",
+			"fromSide": "bottom",
+			"toNode": "n77",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_0_m",
+			"fromNode": "n77",
+			"fromSide": "bottom",
+			"toNode": "n78",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_h",
+			"fromNode": "n71",
+			"fromSide": "bottom",
+			"toNode": "n79",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_0",
+			"fromNode": "n79",
+			"fromSide": "bottom",
+			"toNode": "n80",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_1",
+			"fromNode": "n80",
+			"fromSide": "bottom",
+			"toNode": "n81",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_2",
+			"fromNode": "n81",
+			"fromSide": "bottom",
+			"toNode": "n82",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_3",
+			"fromNode": "n82",
+			"fromSide": "bottom",
+			"toNode": "n83",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_4",
+			"fromNode": "n83",
+			"fromSide": "bottom",
+			"toNode": "n84",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_1_m",
+			"fromNode": "n84",
+			"fromSide": "bottom",
+			"toNode": "n85",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_h",
+			"fromNode": "n71",
+			"fromSide": "bottom",
+			"toNode": "n86",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_0",
+			"fromNode": "n86",
+			"fromSide": "bottom",
+			"toNode": "n87",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_1",
+			"fromNode": "n87",
+			"fromSide": "bottom",
+			"toNode": "n88",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_2",
+			"fromNode": "n88",
+			"fromSide": "bottom",
+			"toNode": "n89",
+			"toSide": "top"
+		},
+		{
+			"id": "e_el_2_m",
+			"fromNode": "n89",
+			"fromSide": "bottom",
+			"toNode": "n90",
+			"toSide": "top"
+		},
+		{
+			"id": "e_p_en_cn",
+			"fromNode": "n91",
+			"fromSide": "right",
+			"toNode": "n92",
+			"toSide": "left"
+		},
+		{
+			"id": "e_p_en_ty",
+			"fromNode": "n91",
+			"fromSide": "bottom",
+			"toNode": "n93",
+			"toSide": "top"
+		},
+		{
+			"id": "e_note",
+			"fromNode": "n93",
+			"fromSide": "bottom",
+			"toNode": "n94",
+			"toSide": "top"
+		}
+	]
 }
