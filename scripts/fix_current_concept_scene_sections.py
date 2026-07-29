@@ -49,17 +49,12 @@ def follow_text_column(
             target = node_by_id.get(str(edge.get("toNode")))
             if target and target.get("type") == "text":
                 successors.append(target)
-        successors = [
-            node
-            for node in successors
-            if node.get("y", -10**9) > current.get("y", -10**9)
-        ]
         if not successors:
             break
         successors.sort(
             key=lambda node: (
                 abs(float(node.get("x", 0)) - float(current.get("x", 0))),
-                float(node.get("y", 0)),
+                abs(float(node.get("y", 0)) - float(current.get("y", 0))),
             )
         )
         current = successors[0]
