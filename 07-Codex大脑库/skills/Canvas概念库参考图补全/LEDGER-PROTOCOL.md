@@ -18,18 +18,20 @@
 
 ```text
 04-F12总控载体/canvas-single-image-pipeline/
-├─ run-ledger.md                  # 轻量索引，不再追加完整历史
-├─ run-ledger-latest.json         # 最新记录指针，可小文件更新
-├─ run-ledger.d/YYYY-MM/          # 新记录，一次运行一个不可变文件
+├─ README.md                       # 目录说明与维护边界
+├─ state.json                      # 当前唯一断点
+├─ run-ledger.md                   # 轻量索引，不再追加完整历史
+├─ run-ledger-latest.json          # 最新有效记录指针，可小文件更新
+├─ run-ledger.d/YYYY-MM/           # 新记录，一次有效状态变化一个不可变文件
 │  └─ <timestamp>__<nodeId>__<result>.md
-└─ ledger-archive/                # 迁移前旧账本，只读归档
+└─ ledger-archive/                 # 迁移前旧账本，只读归档
    └─ run-ledger_legacy_through_2026-07-28.md
 ```
 
 ## 写入规则
 
 1. 不再向 `run-ledger.md` 追加运行详情。
-2. 每个已结束的概念处理或恢复任务，使用 `create_file` 新建一份独立记录。
+2. 每个已结束且产生**新证据或新状态**的概念处理或恢复任务，使用 `create_file` 新建一份独立记录。
 3. 推荐路径：
 
 ```text
@@ -43,6 +45,47 @@
 5. 独立记录创建并远端读回成功后，才更新 `run-ledger-latest.json`。
 6. `run-ledger-latest.json` 只保存最新记录路径、结果、Canvas、节点、commit 与 blob，不复制整段历史。
 7. 历史归档与旧记录文件均不可修改；修正使用新的更正记录，不回写旧文件。
+8. 不制造空提交，不为单纯心跳、相同错误重述或未发生仓库变化的重试创建新分片。
+
+## 重复失败去重
+
+相同故障在每小时重试时不得重复制造 `state → failed shard → latest pointer` 三连提交。
+
+定义失败指纹 `failureFingerprint`：
+
+```text
+canvasPath
++ nodeId
++ canvasBlobSha
++ referenceBlobSha（无则 none）
++ 规范化 failureClass
++ nextAction
+```
+
+当本轮结果为 `failed`，且同时满足以下条件：
+
+- 当前失败指纹与 `run-ledger-latest.json` 指向记录一致；
+- `main` 上目标 Canvas、参考笔记、状态所依赖的 blob/commit 均未变化；
+- 没有新增参考来源、没有新的写入尝试证据、没有新的并发冲突或校验结果；
+- 唯一变化只是时间、心跳或同义改写的错误描述；
+
+则本轮必须：
+
+1. 不创建新的失败分片；
+2. 不更新 `run-ledger-latest.json`；
+3. 不仅为 `lastHeartbeat` 或 `retryCount` 更新 `state.json`；
+4. 输出 `RETRY_DEFERRED_NO_REPO_CHANGE`，保留原断点，下一轮继续重试。
+
+以下任一情况出现时，才创建新的失败分片：
+
+- 首次出现该故障；
+- `failureClass` 或唯一 `nextAction` 发生实质变化；
+- Canvas、参考笔记、来源页或相关 blob/commit 发生变化；
+- 实际执行了新的写入、恢复、下载或校验步骤，并产生可核验的新证据；
+- 发生新的并发冲突或权限/网络状态变化；
+- 前一失败后已成功，之后又出现新的失败。
+
+后续成功必须创建新的 `completed` 分片，并覆盖 latest 指针；不得因历史存在同节点失败记录而跳过成功登记。
 
 ## 单条记录模板
 
@@ -53,6 +96,7 @@
 - Canvas：<path>
 - 节点：<nodeId> <概念名>
 - 结果：completed / failed / no_missing_concepts
+- 失败指纹：<failureFingerprint或none>
 - 参考笔记：<path或none>
 - 来源页：<url或none>
 - 参考提交：<sha或none>
@@ -77,4 +121,4 @@
 
 ## 批处理
 
-一轮最多 5 个概念时，每个概念各自创建一份独立记录并更新一次最新指针。某个概念失败后停止；此前已创建并远端验证的记录保留。历史恢复队列优先级高于所有新概念。
+一轮最多 5 个概念时，每个产生新证据或新状态的概念各自创建一份独立记录并更新一次最新指针。某个概念失败后停止；此前已创建并远端验证的记录保留。历史恢复队列优先级高于所有新概念。重复且无仓库变化的失败适用去重规则，不创建新记录。
