@@ -1,7 +1,7 @@
 ---
 type: repository-authority-map
 status: canonical-current
-version: v1.3
+version: v1.4
 updated: 2026-07-31
 scope: [AI读取权力, 文件职责, 覆盖关系, 每小时任务, Canvas治理]
 priority: highest-governance
@@ -128,8 +128,9 @@ scope → type → status → version → parent / supersedes → 当前索引�
 3. 删除零引用、被 v0.5 完整替代的准度卡总控 v0.1 重定向。
 4. 将含独有材料的 xz v1.3 备份从理论根层迁至 `01-十元系统/归档/`，降为 L6 历史证据。
 5. 保留仍有真实引用的旧信息卡、v0.4 总控、nx v0.3 与 xz v0.1 重定向；这些是兼容接口，不是理论正本。
+6. 关系专项四份已覆盖文件已统一降为 `legacy-evidence-only / L6`，保留全文但关闭旧理论覆盖权。
 
-物理删除数：2。历史迁移数：1。理论定义与关系机制改写数：0。
+物理删除数：2。历史迁移数：1。关系专项生命周期降权数：4。理论定义与关系机制改写数：0。
 
 ## 7. 当前每小时任务链
 
