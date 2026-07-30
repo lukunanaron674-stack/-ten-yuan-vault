@@ -4,17 +4,17 @@
   "historyArchive": "04-F12总控载体/canvas-single-image-pipeline/ledger-archive/run-ledger_legacy_through_2026-07-28.md",
   "recordsRoot": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/",
   "latestRecord": {
-    "path": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/2026-07/20260730T103042+0800__n6__failed.md",
-    "time": "2026-07-30T10:30:42+08:00",
+    "path": "04-F12总控载体/canvas-single-image-pipeline/run-ledger.d/2026-07/20260730T113146+0800__n6__completed.md",
+    "time": "2026-07-30T11:31:46+08:00",
     "canvasPath": "09-给674（我）用的库/概念库/游牧流浪_is-a名词素材库.canvas",
     "nodeId": "n6",
     "conceptName": "羊毛编织披肩",
-    "result": "failed",
-    "recordCommit": "6f895cb387aeea22b6e2483066ddaf370f0a58cc",
-    "verifiedCommit": null,
-    "canvasBlobSha": "0d6f20f7b86e8b4c4bf40ae5b22b0c634d36a43b",
-    "recordBlobSha": "e60c63ba1ebb3acdccbf44553bb17c1a3cd57403",
-    "stateCommit": "d01792c21ff6bd68e5b4baa0aa6b0ce40971cbe2"
+    "result": "completed",
+    "recordCommit": "b3fdcc4f2e2e0b1332862d0ff5dfa9ae319d11cc",
+    "verifiedCommit": "8d4e2aee5fddff576847ad1d9f160fa62755d7e0",
+    "canvasBlobSha": "dfd5b883ec4dd15014b7b2a8847645b769e5c476",
+    "recordBlobSha": "b46a6988f1022136b1ecd6e5a5ca2fba75df8c5f",
+    "stateCommit": "6676bb105f77345c9633f3b1b5ec6546855defb4"
   },
   "lastMigratedEntry": {
     "time": "2026-07-28T20:02:01+09:00",
@@ -25,5 +25,5 @@
     "verifiedCommit": "9182febf201597710071d0ff5829cc1a09c97cf6",
     "canvasBlobSha": "39f47661f93b614240b6f8bd5a7d3f0acf94a151"
   },
-  "nextAction": "继续停在 n6；取得可将 fetch_file 响应资源直接传入结构化补丁或 update_file 的通道后，仅追加 ref_n6 与 e_ref_n6，提交 main 并远端读回。"
+  "nextAction": "下一轮先核对历史 completed 项；若无恢复项，则按 y → x → node id 扫描下一合格概念。"
 }
