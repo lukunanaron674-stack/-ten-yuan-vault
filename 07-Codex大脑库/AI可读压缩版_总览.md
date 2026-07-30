@@ -1,12 +1,17 @@
 ---
 type: ai-readable-brief
-status: active
-updated: 2026-05-23
+status: superseded-summary
+updated: 2026-07-30
 scope: ten-yuan-vault
-priority: high
+priority: legacy-low
+superseded_by:
+  - 00-中枢索引/AI文件权力与任务总览.md
+  - 00-中枢索引/总入口.md
 ---
 
 # AI 可读压缩版 总览
+
+> **历史快照（L6）**：本页保留 2026-05 的压缩视图，不再进入 AI 启动链，也不得覆盖当前目录、任务或理论正本。当前导航请读 [[00-中枢索引/AI文件权力与任务总览|AI 文件权力与每小时任务总览]] 与 [[00-中枢索引/总入口|总入口]]。
 
 ## 读取目的
 
