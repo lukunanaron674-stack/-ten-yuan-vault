@@ -1,10 +1,14 @@
 ---
-type: density-card
+type: legacy-density-card-evidence
 symbol: xz
 element: 阳水
 theme: 命运型
 version: v1.3
-status: finalized
+status: legacy-evidence-only
+authority_level: L6
+moved_from: 01-十元系统/备份_xz信息量卡v1.3_2026-06-12.md
+superseded_by: 01-十元系统/【xz信息量卡v2】.md
+governance_updated: 2026-07-31
 date: 2026-06-10
 tags: [密度卡, xz, 阳水, 命运, 危险显身, 异质逼近, 临界行动]
 ---
