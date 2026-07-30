@@ -101,7 +101,10 @@
     {"id":"ref_n32","type":"file","file":"09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n32_风帐营地废墟_reference.md","x":-1610,"y":-500,"width":340,"height":260},
     {"id":"ref_n57","type":"file","file":"09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n57_帐篷支架_reference.md","x":20,"y":110,"width":340,"height":260},
     {"id":"ref_n64","type":"file","file":"09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n64_水袋_reference.md","x":400,"y":110,"width":340,"height":260},
-    {"id":"ref_n71","type":"file","file":"09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n71_沙丘_reference.md","x":630,"y":110,"width":340,"height":260}
+    {"id":"ref_n71","type":"file","file":"09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n71_沙丘_reference.md","x":630,"y":110,"width":340,"height":260},
+    {"id":"ref_n78","type":"file","file":"09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n78_骆驼_reference.md","x":910,"y":110,"width":340,"height":260},
+    {"id":"ref_n84","type":"file","file":"09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n84_几何地毯纹_reference.md","x":1190,"y":110,"width":340,"height":260},
+    {"id":"ref_n6","type":"file","file":"09-给674（我）用的库/画画理论/assets/游牧流浪_is-a名词素材库/n6_羊毛编织披肩_reference.md","x":-2780,"y":-427,"width":340,"height":260}
   ],
   "edges": [
     {"id":"e_root_def","fromNode":"n1","fromSide":"bottom","toNode":"n2","toSide":"top"},
@@ -203,7 +206,10 @@
     {"id":"e_ref_n32","fromNode":"n32","fromSide":"left","toNode":"ref_n32","toSide":"right","label":"参考图"},
     {"id":"e_ref_n57","fromNode":"n57","fromSide":"bottom","toNode":"ref_n57","toSide":"top","label":"参考图"},
     {"id":"e_ref_n64","fromNode":"n64","fromSide":"bottom","toNode":"ref_n64","toSide":"top","label":"参考图"},
-    {"id":"e_ref_n71","fromNode":"n71","fromSide":"bottom","toNode":"ref_n71","toSide":"top","label":"参考图"}
+    {"id":"e_ref_n71","fromNode":"n71","fromSide":"bottom","toNode":"ref_n71","toSide":"top","label":"参考图"},
+    {"id":"e_ref_n78","fromNode":"n78","fromSide":"bottom","toNode":"ref_n78","toSide":"top","label":"参考图"},
+    {"id":"e_ref_n84","fromNode":"n84","fromSide":"bottom","toNode":"ref_n84","toSide":"top","label":"参考图"},
+    {"id":"e_ref_n6","fromNode":"n6","fromSide":"left","toNode":"ref_n6","toSide":"right","label":"参考图"}
   ],
   "metadata": {"version":"1.0-1.0","frontmatter":{}}
 }

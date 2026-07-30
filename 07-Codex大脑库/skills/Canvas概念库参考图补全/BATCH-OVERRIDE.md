@@ -14,10 +14,12 @@
 ## 分片账本
 
 - 禁止继续向 `run-ledger.md` 追加完整历史。
-- 每个概念结束时，在 `run-ledger.d/YYYY-MM/` 创建一份不可变记录。
+- 每个产生新证据或新状态的概念结束时，在 `run-ledger.d/YYYY-MM/` 创建一份不可变记录。
 - 创建成功并远端读回后，只更新 `run-ledger-latest.json` 小指针文件。
 - 已存在且内容一致的记录视为幂等成功；同路径内容不一致时立即停止，不覆盖。
 - 旧历史只从 `ledger-archive/` 读取，不得修改。
+- 相同节点、相同 Canvas/参考 blob、相同故障类型与相同下一动作的重复失败，适用 `LEDGER-PROTOCOL.md` 的失败去重规则：不得为心跳或错误重述制造新的 state、分片和 latest 提交。
+- 重复失败且仓库无变化时，输出 `RETRY_DEFERRED_NO_REPO_CHANGE`，保留断点并等待下一轮。
 
 ## 图像来源
 
