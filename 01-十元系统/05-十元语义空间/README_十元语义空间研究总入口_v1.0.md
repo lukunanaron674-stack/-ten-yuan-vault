@@ -3,6 +3,7 @@ type: ten-yuan-semantic-space-hub
 status: canonical-current
 version: v1.0
 updated: 2026-07-30
+completion_gate: L1_COMPLETE
 scope: [L1静态拓扑, 十元位置, 直接邻接, 环距离, 五行情志标签]
 source_priority:
   - L1_十元静态语义空间正本_v1.0.md

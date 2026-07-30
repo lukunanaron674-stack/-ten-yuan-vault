@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title desc">
+<title id="title">L1 十元静态语义空间拓扑</title>
+<desc id="desc">固定十节点无向环。五个锚点位与五个间位交替排列，只表达静态位置和直接邻接，不表达生克补、时间、体量或迁移。</desc>
+<rect width="1200" height="1000" fill="#fbfaf5"/>
+<rect x="32" y="32" width="1136" height="936" rx="24" fill="#ffffff" stroke="#d9d7cf" stroke-width="2"/>
+<text x="70" y="88" font-family="sans-serif" font-size="34" font-weight="700" fill="#20252b">L1｜十元静态语义空间</text>
+<text x="70" y="124" font-family="sans-serif" font-size="18" fill="#68707a">固定位置 · 直接邻接 · 环距离｜不表示生克补、动态迁移或体量</text>
+<path d="M 600.0 145.0 L 808.7 212.8 L 937.6 390.3 L 937.6 609.7 L 808.7 787.2 L 600.0 855.0 L 391.3 787.2 L 262.4 609.7 L 262.4 390.3 L 391.3 212.8 Z" fill="none" stroke="#a9afb6" stroke-width="5" stroke-linejoin="round"/>
+<path d="M 600.0 310.0 L 780.7 441.3 L 711.7 653.7 L 488.3 653.7 L 419.3 441.3 Z" fill="#f6f7f8" stroke="#747c86" stroke-width="3"/>
+<text x="600" y="474" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="700" fill="#40566d">五行关系层</text>
+<text x="600" y="512" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#69737d">L1 仅保留占位</text>
+<text x="600" y="540" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#7d858d">不从中央图形倒推关系箭头</text>
+<circle cx="600.0" cy="145.0" r="102" fill="#eef5ee" stroke="#5d8062" stroke-width="3"/>
+<text x="600.0" y="137.0" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="700" fill="#26323d">ZX</text>
+<text x="600.0" y="181.0" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#5d8062">木 · 怒</text>
+<circle cx="808.7" cy="212.8" r="49" fill="#ffffff" stroke="#4f5963" stroke-width="3"/>
+<text x="808.7" y="219.8" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#28313a">z</text>
+<circle cx="937.6" cy="390.3" r="102" fill="#fff3e9" stroke="#b27a4f" stroke-width="3"/>
+<text x="937.6" y="382.3" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="700" fill="#26323d">ZN</text>
+<text x="937.6" y="426.3" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#b27a4f">火 · 喜</text>
+<circle cx="937.6" cy="609.7" r="49" fill="#ffffff" stroke="#4f5963" stroke-width="3"/>
+<text x="937.6" y="616.7" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#28313a">nz</text>
+<circle cx="808.7" cy="787.2" r="102" fill="#f7f1e2" stroke="#8c7950" stroke-width="3"/>
+<text x="808.7" y="779.2" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="700" fill="#26323d">n</text>
+<text x="808.7" y="823.2" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#8c7950">土 · 思</text>
+<circle cx="600.0" cy="855.0" r="49" fill="#ffffff" stroke="#4f5963" stroke-width="3"/>
+<text x="600.0" y="862.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#28313a">nx</text>
+<circle cx="391.3" cy="787.2" r="102" fill="#f2f3f6" stroke="#737985" stroke-width="3"/>
+<text x="391.3" y="779.2" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="700" fill="#26323d">xn</text>
+<text x="391.3" y="823.2" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#737985">金 · 哀</text>
+<circle cx="262.4" cy="609.7" r="49" fill="#ffffff" stroke="#4f5963" stroke-width="3"/>
+<text x="262.4" y="616.7" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#28313a">x</text>
+<circle cx="262.4" cy="390.3" r="102" fill="#edf4fa" stroke="#587b98" stroke-width="3"/>
+<text x="262.4" y="382.3" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="700" fill="#26323d">XZ</text>
+<text x="262.4" y="426.3" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#587b98">水 · 恐</text>
+<circle cx="391.3" cy="212.8" r="49" fill="#ffffff" stroke="#4f5963" stroke-width="3"/>
+<text x="391.3" y="219.8" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#28313a">x并z</text>
+<g transform="translate(72,860)">
+  <circle cx="22" cy="20" r="18" fill="#eef5ee" stroke="#5d8062" stroke-width="2"/>
+  <text x="52" y="27" font-family="sans-serif" font-size="18" fill="#343b42">大圆：锚点位</text>
+  <circle cx="240" cy="20" r="11" fill="#fff" stroke="#4f5963" stroke-width="2"/>
+  <text x="264" y="27" font-family="sans-serif" font-size="18" fill="#343b42">小圆：间位</text>
+  <line x1="440" y1="20" x2="510" y2="20" stroke="#a9afb6" stroke-width="5"/>
+  <text x="526" y="27" font-family="sans-serif" font-size="18" fill="#343b42">外环线：直接邻接</text>
+</g>
+<text x="600" y="934" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#707880">顺时针：zx → z → zn → nz → n → nx → xn → x → xz → x并z → zx</text>
+</svg>
