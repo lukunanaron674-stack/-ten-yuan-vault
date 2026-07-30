@@ -23,7 +23,7 @@
 		{"id":"fa9d5f72d7953aa7","type":"text","text":"假设设计3个对立符号去概括五行 这三个符号z x n n是土 那么他们的概念会是什么呢","x":-1280,"y":-360,"width":281,"height":120,"color":"3"}
 	],
 	"edges":[
-		{"id":"9c9510fa68bb49b6","fromNode":"fa9d5f72d7953aa7","fromSide":"right","toNode":"0e32b23740862645","toSide":"left"},
+		{"id":"9c9510fa68bb49b6","toFloating":false,"fromNode":"fa9d5f72d7953aa7","fromSide":"right","toNode":"0e32b23740862645","toSide":"left"},
 		{"id":"df57c2e77ce2a929","fromNode":"0e32b23740862645","fromSide":"bottom","toNode":"fa9d5f72d7953aa7","toSide":"right"},
 		{"id":"96e83d067406e2d6","fromNode":"3151b8dcea3d57aa","fromSide":"left","toNode":"a29eed421ad66192","toSide":"right"},
 		{"id":"5de1a5aa0232a0fc","fromNode":"3151b8dcea3d57aa","fromSide":"top","toNode":"6c8b1eb92b4ff117","toSide":"bottom"},
@@ -38,5 +38,9 @@
 		{"id":"3236e22631616320","fromNode":"f51770b4276ee541","fromSide":"bottom","toNode":"1f1d678e33ba4318","toSide":"top"},
 		{"id":"00cbe8c75ceef57d","fromNode":"b8914c11bc39a01b","fromSide":"top","toNode":"538173b7503ed057","toSide":"bottom"},
 		{"id":"d738d02c4319030c","fromNode":"538173b7503ed057","fromSide":"top","toNode":"8a2eb43fae067620","toSide":"bottom"}
-	]
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
