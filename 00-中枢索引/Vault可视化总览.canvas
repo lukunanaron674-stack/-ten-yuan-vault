@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"visual","type":"file","file":"00-中枢索引/Vault可视化总览.md","x":-200,"y":-3540,"width":1200,"height":2920,"color":"5"},
+		{"id":"visual","type":"file","file":"00-中枢索引/Vault可视化总览.md","x":-200,"y":-3540,"width":1480,"height":2920,"color":"5"},
 		{"id":"center","type":"file","file":"00-中枢索引/总入口.md","x":-20,"y":-170,"width":480,"height":580,"color":"5"},
 		{"id":"theme","type":"file","file":"00-中枢索引/旧库融合中枢/五大主题总入口.md","x":-600,"y":-560,"width":400,"height":680,"color":"4"},
 		{"id":"theory","type":"file","file":"01-十元系统/三元十元语义融合总表.md","x":-1960,"y":-1150,"width":940,"height":3900,"color":"4"},
@@ -19,5 +19,9 @@
 		{"id":"e-theme-mine","fromNode":"theme","fromSide":"right","toNode":"mine","toSide":"left"},
 		{"id":"e-brain-ai","fromNode":"brain","fromSide":"right","toNode":"ai-brief","toSide":"left"},
 		{"id":"e-brain-f12","fromNode":"brain","fromSide":"bottom","toNode":"f12","toSide":"top"}
-	]
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
