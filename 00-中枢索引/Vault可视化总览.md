@@ -1,11 +1,15 @@
 ---
 type: visual-index
-status: active
-updated: 2026-05-23
+status: historical-visual-snapshot
+updated: 2026-07-30
 scope: ten-yuan-vault
+priority: legacy-low
+superseded_by: 00-中枢索引/AI文件权力与任务总览.canvas
 ---
 
 # Vault 可视化总览
+
+> **历史快照（L6）**：本页保留 2026-05 的旧目录视图，不再是当前 AI 启动地图。当前权力等级与每小时任务只看 [[00-中枢索引/AI文件权力与任务总览|AI 文件权力与每小时任务总览]] 和 [[AI文件权力与任务总览.canvas]]。
 
 > 文件强弱约束、关键正本和每小时任务的真实读写流，统一查看 [[00-中枢索引/AI文件权力与任务总览|AI 文件权力与每小时任务总览]] 与 [[AI文件权力与任务总览.canvas]]。本页保留全库高层视图，不负责裁决理论正本。
 
