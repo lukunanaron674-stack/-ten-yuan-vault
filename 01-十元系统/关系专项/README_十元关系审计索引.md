@@ -1,7 +1,7 @@
 ---
 type: relation-audit-index
 status: current
-version: v0.7
+version: v0.8
 updated: 2026-07-31T01:20:00+08:00
 system: 十元
 is_a: 字典或总表
@@ -64,6 +64,7 @@ canonical_snapshot:
 | `xz 克 zn` | `xz克zn_危险测试意义而非自动摧毁二次审计_20260719.md` | 待二审 | 十元关系二次审计 | 初次审计 | 三次审计 | position-locked-mechanism-unresolved | audit-only | supplements 初次审计；supplemented-by 三次审计 | 三轮审计均未过95%，不得当正式机制 | `e3daf4de3bf32fe7cacc396343c5f2cd1fde0ac6` |
 | `xz 克 zn` | `xz克zn_自然危险能否改写意义无条件性三次审计_20260720.md` | 待二审 | 十元关系三次审计 | 初次、二次审计 | 无 | position-locked-mechanism-unresolved | audit-only | supplements 初次、二次审计 | 必读 v8.6 仍列为未锁定；自然危险只能证明实践压缩与意义排序，未证明稳定意义改判 | `2f8b3a78b0ad775f67732f66175d5a33df169e52` |
 | `x 克 z` | `x克z_对象门控机制审计_20260718.md` | 旧稿 | 已覆盖关系审计／证据保留 | `十元生补克表.md#x克z` | 方志敏文稿出口对象链等独有案例候选 | legacy-covered / evidence-retained | legacy-evidence-only | covered-by `x克z_掌握认可接口压制确认正式机制_20260719.md` | 文件正文仍自称“机制锁定”，不得按该状态读取；正式 z 端点以现行正本为准 | `8103be995ec6f17c916757bb5ac34aec93efd249` |
+| `xn 克 zn` | `xn克zn_结构压缩意义实践还是改写内核机制审计_20260720.md` | 孤立旧审计 | 非现行几何位候选证据 | 无；核心表 v2.22 未登记此边 | 无 | legacy-unregistered / evidence-retained | legacy-evidence-only | covered-by 核心表、审计索引与分散补记消化摘要 | 只保留“结构压缩意义实践通道”的历史候选；不得据旧补记恢复几何位或写成克制 zn 内核 | 清理提交后回读 |
 
 ## 上下位关系
 
@@ -81,6 +82,7 @@ README_十元关系审计索引
 - `nz生nx...审计`：待二审；只保留状态层候选，不得按正式机制或稳定人物生成调用。
 - `xz克zn` 三轮审计：初审→二审→三审形成连续 evidence 链，三轮都受核心表和专项正本索引路由约束，均未锁定。
 - 已被正式专项覆盖的 `nz克x`、`x并z克nz`、`x克z` 旧审计仅保留独有材料。
+- `xn克zn` 孤立旧审计：核心表 v2.22 未登记此边，已从 `pending-second-review` 降为 L6 历史候选；只保留实践通道压缩材料，不进入活动关系池。
 
 ## 禁止越级
 
