@@ -42,10 +42,10 @@
     {"id":"write-chain","type":"file","file":"08-生克补动态链研究/每次任务必读_生克补动态链滚动中枢.md","x":-1080,"y":620,"width":360,"height":160,"color":"2"},
     {"id":"write-audit","type":"file","file":"07-Codex大脑库/每次任务必读_十元关系防遗忘清单.md","x":-630,"y":620,"width":360,"height":160,"color":"6"},
     {"id":"write-ontology","type":"file","file":"07-Codex大脑库/十元广义本体层每小时审议记录.md","x":-180,"y":620,"width":360,"height":160,"color":"3"},
-    {"id":"write-validate","type":"text","text":"目标工作区\n10-十元语义空间研究/验证记录/\n验证索引＋运行账本","x":270,"y":620,"width":360,"height":160,"color":"4"},
-    {"id":"write-compile","type":"text","text":"目标工作区\n10-十元语义空间研究/数据/\n10-十元语义空间研究/编译/","x":720,"y":620,"width":360,"height":160,"color":"5"},
+    {"id":"write-validate","type":"text","text":"目标工作区\n01-十元系统/05-十元语义空间/验证记录/\n验证索引＋运行账本","x":270,"y":620,"width":360,"height":160,"color":"4"},
+    {"id":"write-compile","type":"text","text":"目标工作区\n01-十元系统/05-十元语义空间/数据/\n01-十元系统/05-十元语义空间/编译/","x":720,"y":620,"width":360,"height":160,"color":"5"},
 
-    {"id":"risk-path","type":"text","text":"PATH_SCOPE_REVIEW\n质检/编译写入 10-十元语义空间研究\n当前理论 L1 正本在 01-十元系统/05-十元语义空间\n可能是“统计工作区 / 理论正本区”分离，也可能是路径漂移；未核清前禁止自动合并","x":250,"y":900,"width":830,"height":220,"color":"3"},
+    {"id":"risk-path","type":"text","text":"PATH_CONFIRMED｜2026-07-30\n唯一现行目录：01-十元系统/05-十元语义空间/\n质检→验证记录/索引/账本\n编译→数据/编译/账本\n旧 10 路径降为历史；不得静默删除，迁移需逐文件核对","x":250,"y":900,"width":830,"height":220,"color":"3"},
     {"id":"risk-old-map","type":"text","text":"旧图风险\n2026-05 的 Vault可视化总览仍含旧目录角色\n本图负责当前权力和任务管理；旧图只作高层历史视图","x":-660,"y":900,"width":500,"height":180,"color":"3"},
     {"id":"paused-canvas","type":"text","text":"暂停任务｜:31 Canvas参考图补全\n6a5a7f22c2408191836c1f911f210807\n状态 disabled：保留节点，不计入当前运行链","x":-1080,"y":900,"width":360,"height":180,"color":"3"},
 
@@ -73,8 +73,8 @@
     {"id":"e-chain-audit","fromNode":"task-chain","fromSide":"right","toNode":"task-audit","toSide":"left","label":"问题单/证据"},
     {"id":"e-chain-validate","fromNode":"task-chain","fromSide":"right","toNode":"task-validate","toSide":"left","label":"pair_transition_record"},
     {"id":"e-validate-compile","fromNode":"task-validate","fromSide":"right","toNode":"task-compile","toSide":"left","label":"已质检记录"},
-    {"id":"e-validate-risk","fromNode":"write-validate","fromSide":"bottom","toNode":"risk-path","toSide":"top","label":"路径待核"},
-    {"id":"e-compile-risk","fromNode":"write-compile","fromSide":"bottom","toNode":"risk-path","toSide":"top","label":"路径待核"},
-    {"id":"e-risk-final","fromNode":"risk-path","fromSide":"bottom","toNode":"final-rule","toSide":"top","label":"未核清不合并"}
+    {"id":"e-validate-risk","fromNode":"write-validate","fromSide":"bottom","toNode":"risk-path","toSide":"top","label":"写入已确认路径"},
+    {"id":"e-compile-risk","fromNode":"write-compile","fromSide":"bottom","toNode":"risk-path","toSide":"top","label":"写入已确认路径"},
+    {"id":"e-risk-final","fromNode":"risk-path","fromSide":"bottom","toNode":"final-rule","toSide":"top","label":"路径已收口"}
   ]
 }
