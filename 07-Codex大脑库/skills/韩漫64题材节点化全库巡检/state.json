@@ -1,0 +1,43 @@
+{
+  "planId": "manhwa-64-topic-node-audit-v1",
+  "skillVersion": "1.0",
+  "repository": "lukunanaron674-stack/-ten-yuan-vault",
+  "branch": "main",
+  "rootPath": "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构",
+  "status": "ready",
+  "phase": "topic_audit",
+  "currentCategory": "A",
+  "currentTopic": "T-A01",
+  "scanOrder": [
+    "T-A01", "T-A02", "T-A03", "T-A04", "T-A05", "T-A06", "T-A07", "T-A08",
+    "T-B01", "T-B02", "T-B03", "T-B04", "T-B05", "T-B06", "T-B07", "T-B08",
+    "T-C01", "T-C02", "T-C03", "T-C04", "T-C05", "T-C06", "T-C07", "T-C08",
+    "T-D01", "T-D02", "T-D03", "T-D04", "T-D05", "T-D06", "T-D07", "T-D08",
+    "T-E01", "T-E02", "T-E03", "T-E04", "T-E05", "T-E06", "T-E07", "T-E08",
+    "T-F01", "T-F02", "T-F03", "T-F04", "T-F05", "T-F06", "T-F07", "T-F08",
+    "T-G01", "T-G02", "T-G03", "T-G04", "T-G05", "T-G06", "T-G07", "T-G08",
+    "T-H01", "T-H02", "T-H03", "T-H04", "T-H05", "T-H06", "T-H07", "T-H08"
+  ],
+  "completedTopics": [
+    "T-B01", "T-B02", "T-B03", "T-B04", "T-B05", "T-B06", "T-B07", "T-B08"
+  ],
+  "completedCategories": ["B"],
+  "calibrationTemplate": {
+    "markdown": "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/B_身份阶级与社会位置_节点化.md",
+    "detailCanvas": "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/R4_B_身份阶级与社会位置.canvas",
+    "overviewCanvas": "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/R4_B_身份阶级与社会位置_视觉总览.canvas"
+  },
+  "lastRunId": null,
+  "lastStartingMainSha": null,
+  "lastVerifiedCommit": "e77f8ba909085742b7fb09776ba87e897bbc3d1f",
+  "lastVerifiedPaths": [
+    "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/B_身份阶级与社会位置_节点化.md",
+    "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/R4_B_身份阶级与社会位置.canvas",
+    "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/R4_B_身份阶级与社会位置_视觉总览.canvas"
+  ],
+  "retryCount": 0,
+  "lastError": null,
+  "pendingIssues": [],
+  "nextAction": "读取A区文字正本与详细Canvas，审计并修正T-A01的12节点；创建或同步A区视觉总览Canvas。",
+  "updatedAt": "2026-08-02T03:17:00+08:00"
+}
