@@ -1,96 +1,241 @@
 {
 	"nodes":[
-		{"id":"a101000000000001","type":"group","x":980,"y":-514,"width":1180,"height":1110,"color":"4","label":"补充｜缺口与执行锚点（原内容未改）"},
-		{"id":"cf3f8ebbb929d613","type":"group","x":200,"y":-420,"width":315,"height":359,"color":"3","label":"缓入"},
-		{"id":"f733152a7975113c","type":"group","x":580,"y":-364,"width":300,"height":248,"color":"1","label":"交代被抓的原因"},
+		{"id":"a101000000000001","type":"group","collapsed":true,"x":1600,"y":80,"width":1180,"height":1110,"color":"4","label":"补充｜缺口与执行锚点（原内容未改）"},
+		{"id":"a101000000000002","type":"text","text":"## 第一幕补充原则\n只新增执行锚点，不改现有台词、图片与节点。第一幕的任务不是介绍风景，而是让“爱中国”第一次变成一次有代价的回身。","x":1630,"y":114,"width":1120,"height":120,"color":"4"},
+		{"id":"a101000000000003","type":"text","text":"### 本幕缺少的因果脊柱\n1. 美丽山河不是旅游蒙太奇：画面里始终保留行军、疲惫、掉队与远处炮火。\n2. 方志敏已经随先头部队脱离危险，却因后队失联／受困停下。\n3. 同伴劝阻时不靠长台词，直接用“队伍向左撤、方志敏逆流向右回身”完成选择。\n4. 幕尾必须落到代价：他回去后包围圈合拢，转入被捕／镣铐。","x":1630,"y":264,"width":540,"height":330,"color":"3"},
+		{"id":"a101000000000004","type":"text","text":"### 史实锚点（正式分镜前核对）\n1935年1月16日前后，方志敏命令粟裕率约800人先突围，自己留下等待刘畴西率领的后续大部队；之后在怀玉山区陷入重围，1月29日被捕。\n\n所以现有“有一群士兵迷路”更适合处理成“后队失联／受困”的动画压缩，避免看成几名普通士兵走丢。\n\n来源：人民网党史《遗墨越狱》、央视《为了“可爱的中国”，奋斗！》。","x":2200,"y":264,"width":540,"height":330,"color":"2"},
+		{"id":"a101000000000005","type":"text","text":"### 声画桥\n- 青绿、宽阔、人物很小：土地比英雄更大。\n- 方志敏回身时，旁白继续说“母亲”之美，但远处第一次压入枪声。\n- 回程越深，绿色越少、山体越挤、烟尘越重。\n- 第一声铁器声提前进入：树枝碰撞／枪栓声逐渐变成第二幕的脚镣声。\n- 《可爱的中国》旁白可作为“未来狱中写作的声音”提前出现，形成命运回声。","x":1630,"y":624,"width":540,"height":300,"color":"5"},
+		{"id":"a101000000000006","type":"text","text":"### 建议的幕尾补镜（不替换原镜头）\n撤离人群继续远去；方志敏停步，身体仍朝生路，头先转向火光；下一拍整个身体回转。镜头不跟英雄脸，而留在原地看他逆流变小。远处山口闭合，画面切黑，只留急促呼吸与镣铐落地声。\n\n这样第一幕结算的是：他不是“被命运抓住”，而是主动把自己交回人群。","x":2200,"y":624,"width":540,"height":300,"color":"1"},
+		{"id":"2bf3762a60183535","type":"file","file":"6b3f35c5-9166-4428-a4a9-a6adbbcca86e 1.png","x":-400,"y":-516,"width":400,"height":225},
 		{
 			"id":"2577ab03fdb532c6",
 			"type":"text",
 			"text":"雄巍的峨嵋，妩媚的西湖，幽雅的雁荡，与夫“秀丽甲天下”的桂林山水",
 			"styleAttributes":{},
-			"x":221,
-			"y":-328,
+			"x":76,
+			"y":-313,
 			"width":275,
 			"height":93
 		},
-		{
-			"id":"8d8c454b8ab973d4",
-			"type":"text",
-			"text":"背景台词配合画面，共产党们走在美如画的背景中",
-			"styleAttributes":{},
-			"x":221,
-			"y":-404,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"2bff106eb6eb5d3a",
-			"type":"text",
-			"text":"中国是无地不美，到处皆景",
-			"styleAttributes":{},
-			"x":229,
-			"y":-220,
-			"width":260,
-			"height":60
-		},
+		{"id":"cc81235fbb77f66a","type":"file","file":"1321f82b-7cb0-41b7-b19c-4d1c43e054ba.png","x":-400,"y":-212,"width":400,"height":300},
+		{"id":"61bbee7f9b33644c","type":"file","file":"Pasted image 20260723004719.png","x":-400,"y":-800,"width":400,"height":225},
+		{"id":"4fa985e4ebbabdec","type":"file","file":"方备份/b89817ca-ef8c-4ee9-b8b1-7ea684f78da1 1.png","x":76,"y":-800,"width":400,"height":225},
 		{
 			"id":"dea50e4f5859c4e6",
 			"type":"text",
 			"text":"这好像我们的母亲，她是一个天姿玉质的美人，她的身体的每一部分，都有令人爱慕之美。",
 			"styleAttributes":{},
-			"x":221,
-			"y":-160,
+			"x":520,
+			"y":-575,
 			"width":260,
-			"height":97
-		},
-		{
-			"id":"82cdd6069e7cc1a0",
-			"type":"text",
-			"text":"第一幕",
-			"styleAttributes":{},
-			"x":200,
-			"y":-514,
-			"width":260,
-			"height":60
-		},
-		{"id":"cc81235fbb77f66a","type":"file","file":"1321f82b-7cb0-41b7-b19c-4d1c43e054ba.png","x":-400,"y":-480,"width":400,"height":300},
-		{"id":"61bbee7f9b33644c","type":"file","file":"Pasted image 20260723004719.png","x":-400,"y":-45,"width":400,"height":225},
-		{"id":"2bf3762a60183535","type":"file","file":"6b3f35c5-9166-4428-a4a9-a6adbbcca86e 1.png","x":-304,"y":640,"width":400,"height":225},
-		{"id":"4fa985e4ebbabdec","type":"file","file":"方备份/b89817ca-ef8c-4ee9-b8b1-7ea684f78da1 1.png","x":-400,"y":330,"width":400,"height":225},
-		{
-			"id":"9dd5c766b2fa5e47",
-			"type":"text",
-			"text":"类似初期刘邦得知项羽家属被抓时 决心独自去救 被下属拦的镜头",
-			"styleAttributes":{},
-			"x":600,
-			"y":-344,
-			"width":260,
-			"height":84
+			"height":161
 		},
 		{
 			"id":"3a8ce31834deada1",
 			"type":"text",
 			"text":" 告知有一群士兵迷路在山上 方志敏立马跑过去 （塑造形象）",
 			"styleAttributes":{},
-			"x":600,
-			"y":-216,
+			"x":520,
+			"y":-260,
 			"width":260,
 			"height":80
 		},
-		{"id":"a101000000000002","type":"text","text":"## 第一幕补充原则\n只新增执行锚点，不改现有台词、图片与节点。第一幕的任务不是介绍风景，而是让“爱中国”第一次变成一次有代价的回身。","x":1010,"y":-480,"width":1120,"height":120,"color":"4"},
-		{"id":"a101000000000003","type":"text","text":"### 本幕缺少的因果脊柱\n1. 美丽山河不是旅游蒙太奇：画面里始终保留行军、疲惫、掉队与远处炮火。\n2. 方志敏已经随先头部队脱离危险，却因后队失联／受困停下。\n3. 同伴劝阻时不靠长台词，直接用“队伍向左撤、方志敏逆流向右回身”完成选择。\n4. 幕尾必须落到代价：他回去后包围圈合拢，转入被捕／镣铐。","x":1010,"y":-330,"width":540,"height":330,"color":"3"},
-		{"id":"a101000000000004","type":"text","text":"### 史实锚点（正式分镜前核对）\n1935年1月16日前后，方志敏命令粟裕率约800人先突围，自己留下等待刘畴西率领的后续大部队；之后在怀玉山区陷入重围，1月29日被捕。\n\n所以现有“有一群士兵迷路”更适合处理成“后队失联／受困”的动画压缩，避免看成几名普通士兵走丢。\n\n来源：人民网党史《遗墨越狱》、央视《为了“可爱的中国”，奋斗！》。","x":1580,"y":-330,"width":540,"height":330,"color":"2"},
-		{"id":"a101000000000005","type":"text","text":"### 声画桥\n- 青绿、宽阔、人物很小：土地比英雄更大。\n- 方志敏回身时，旁白继续说“母亲”之美，但远处第一次压入枪声。\n- 回程越深，绿色越少、山体越挤、烟尘越重。\n- 第一声铁器声提前进入：树枝碰撞／枪栓声逐渐变成第二幕的脚镣声。\n- 《可爱的中国》旁白可作为“未来狱中写作的声音”提前出现，形成命运回声。","x":1010,"y":30,"width":540,"height":300,"color":"5"},
-		{"id":"a101000000000006","type":"text","text":"### 建议的幕尾补镜（不替换原镜头）\n撤离人群继续远去；方志敏停步，身体仍朝生路，头先转向火光；下一拍整个身体回转。镜头不跟英雄脸，而留在原地看他逆流变小。远处山口闭合，画面切黑，只留急促呼吸与镣铐落地声。\n\n这样第一幕结算的是：他不是“被命运抓住”，而是主动把自己交回人群。","x":1580,"y":30,"width":540,"height":300,"color":"1"}
+		{
+			"id":"2bff106eb6eb5d3a",
+			"type":"text",
+			"text":"中国是无地不美，到处皆景",
+			"styleAttributes":{},
+			"x":76,
+			"y":-62,
+			"width":260,
+			"height":60
+		},
+		{"id":"93817fcd2154c0cd","type":"file","file":"Pasted image 20260731213613.png","x":840,"y":-568,"width":400,"height":225},
+		{"id":"a366f467cbc38b1e","type":"file","file":"Pasted image 20260731222522.png","x":840,"y":-875,"width":400,"height":300},
+		{
+			"id":"5b4015c0a89954ad",
+			"type":"text",
+			"text":"可算摆脱围剿了，  是啊",
+			"styleAttributes":{},
+			"x":1300,
+			"y":-494,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0ad3e05f76c4a712",
+			"type":"text",
+			"text":"切中景",
+			"styleAttributes":{},
+			"x":1040,
+			"y":-320,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a7a9eb4bced63137",
+			"type":"text",
+			"text":"主席！不好啦",
+			"styleAttributes":{},
+			"x":1300,
+			"y":-403,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"44bf3980aa87a38a",
+			"type":"text",
+			"text":"还有一群同志在山中迷路没出来！",
+			"styleAttributes":{},
+			"x":1300,
+			"y":-320,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fcc1d1fd0a4348e1",
+			"type":"text",
+			"text":"什么！  ",
+			"styleAttributes":{},
+			"x":1300,
+			"y":-250,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d08b82f5576feec8",
+			"type":"text",
+			"text":"方志敏听到 眉头一紧就冲了出去",
+			"styleAttributes":{},
+			"x":1300,
+			"y":-178,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6109cbb408f6c2bc",
+			"type":"text",
+			"text":"主席 你不能去啊！",
+			"styleAttributes":{},
+			"x":1300,
+			"y":-92,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"bb9a46fc872f12eb",
+			"type":"text",
+			"text":"背上抗日",
+			"styleAttributes":{},
+			"x":1300,
+			"y":-780,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"928798e63ffe3dd6",
+			"type":"text",
+			"text":"减轻长征压力 35年被捕",
+			"styleAttributes":{},
+			"x":1300,
+			"y":-680,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4ed394b3c26050d9",
+			"type":"text",
+			"text":"北上抗日先遣队",
+			"styleAttributes":{},
+			"x":1700,
+			"y":-620,
+			"width":260,
+			"height":60
+		}
 	],
 	"edges":[
 		{
-			"id":"3c09f986a8631694",
+			"id":"12bc24a15c720e92",
 			"styleAttributes":{},
 			"toFloating":false,
-			"fromNode":"cf3f8ebbb929d613",
+			"fromNode":"2577ab03fdb532c6",
+			"fromSide":"left",
+			"toNode":"2bf3762a60183535",
+			"toSide":"right"
+		},
+		{
+			"id":"3a4323a1691a057c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2bff106eb6eb5d3a",
+			"fromSide":"left",
+			"toNode":"cc81235fbb77f66a",
+			"toSide":"right"
+		},
+		{
+			"id":"28fd72cc5f258ce7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"2577ab03fdb532c6",
+			"fromSide":"left",
+			"toNode":"61bbee7f9b33644c",
+			"toSide":"right"
+		},
+		{
+			"id":"d98a87251ac2fc94",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dea50e4f5859c4e6",
+			"fromSide":"left",
+			"toNode":"4fa985e4ebbabdec",
+			"toSide":"right"
+		},
+		{
+			"id":"f899fdceba29927c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"3a8ce31834deada1",
 			"fromSide":"right",
-			"toNode":"f733152a7975113c",
+			"toNode":"93817fcd2154c0cd",
+			"toSide":"left"
+		},
+		{
+			"id":"f7081264df77802d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2577ab03fdb532c6",
+			"fromSide":"bottom",
+			"toNode":"2bff106eb6eb5d3a",
+			"toSide":"top"
+		},
+		{
+			"id":"34b9273ff1c1dd00",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2bff106eb6eb5d3a",
+			"fromSide":"right",
+			"toNode":"dea50e4f5859c4e6",
+			"toSide":"left"
+		},
+		{
+			"id":"45fd39f85d3516f0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"dea50e4f5859c4e6",
+			"fromSide":"bottom",
+			"toNode":"3a8ce31834deada1",
+			"toSide":"top"
+		},
+		{
+			"id":"c656998812c5c93f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"44bf3980aa87a38a",
+			"fromSide":"right",
+			"toNode":"0ad3e05f76c4a712",
 			"toSide":"left"
 		}
 	],
