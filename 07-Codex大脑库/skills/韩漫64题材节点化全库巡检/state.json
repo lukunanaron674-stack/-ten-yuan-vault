@@ -4,8 +4,8 @@
   "repository": "lukunanaron674-stack/-ten-yuan-vault",
   "branch": "main",
   "rootPath": "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构",
-  "status": "ready",
-  "phase": "topic_audit",
+  "status": "partial_recovery_required",
+  "phase": "PARTIAL_RECOVERY_REQUIRED",
   "currentCategory": "A",
   "currentTopic": "T-A01",
   "scanOrder": [
@@ -18,26 +18,29 @@
     "T-G01", "T-G02", "T-G03", "T-G04", "T-G05", "T-G06", "T-G07", "T-G08",
     "T-H01", "T-H02", "T-H03", "T-H04", "T-H05", "T-H06", "T-H07", "T-H08"
   ],
-  "completedTopics": [
-    "T-B01", "T-B02", "T-B03", "T-B04", "T-B05", "T-B06", "T-B07", "T-B08"
-  ],
+  "completedTopics": ["T-B01", "T-B02", "T-B03", "T-B04", "T-B05", "T-B06", "T-B07", "T-B08"],
   "completedCategories": ["B"],
   "calibrationTemplate": {
     "markdown": "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/B_身份阶级与社会位置_节点化.md",
     "detailCanvas": "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/R4_B_身份阶级与社会位置.canvas",
     "overviewCanvas": "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/R4_B_身份阶级与社会位置_视觉总览.canvas"
   },
-  "lastRunId": null,
-  "lastStartingMainSha": null,
-  "lastVerifiedCommit": "e77f8ba909085742b7fb09776ba87e897bbc3d1f",
+  "lastRunId": "2026-08-02T04:11+08:00|T-A01|d9496074700160b0f5f1d8783b5640a8b5cfe2bc",
+  "lastStartingMainSha": "d9496074700160b0f5f1d8783b5640a8b5cfe2bc",
+  "lastVerifiedCommit": "ac16b747d4106a2ab3d6214be34361f6af406ddf",
   "lastVerifiedPaths": [
-    "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/B_身份阶级与社会位置_节点化.md",
-    "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/R4_B_身份阶级与社会位置.canvas",
-    "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/R4_B_身份阶级与社会位置_视觉总览.canvas"
+    "07-Codex大脑库/skills/韩漫64题材节点化全库巡检/pending/T-A01_契约婚姻_节点化修正提案_20260802.md"
   ],
-  "retryCount": 0,
-  "lastError": null,
-  "pendingIssues": [],
-  "nextAction": "读取A区文字正本与详细Canvas，审计并修正T-A01的12节点；创建或同步A区视觉总览Canvas。",
-  "updatedAt": "2026-08-02T03:17:00+08:00"
+  "retryCount": 1,
+  "lastError": "当前连接器只能整体替换单行大型Canvas JSON；未取得可安全局部修改且保留A02-A08无关节点的完整编辑上下文，因此按门禁停止源文件写入。",
+  "pendingIssues": [
+    {
+      "topic": "T-A01",
+      "kind": "safe_canvas_patch_context_missing",
+      "proposal": "07-Codex大脑库/skills/韩漫64题材节点化全库巡检/pending/T-A01_契约婚姻_节点化修正提案_20260802.md",
+      "status": "open"
+    }
+  ],
+  "nextAction": "优先恢复T-A01：安全取得A区Markdown与详细Canvas全量编辑上下文，原位同步12节点并创建或更新A区视觉总览；远端读回三份成果后再推进T-A02。",
+  "updatedAt": "2026-08-02T04:11:00+08:00"
 }
