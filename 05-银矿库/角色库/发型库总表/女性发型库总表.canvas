@@ -19,11 +19,21 @@
 		{"id":"card_hime","type":"text","text":"## 05｜公主切\n### Hime Cut\n\n**分类层级**：剪裁结构｜断层侧片\n\n**结构定义**：长发主体保留，同时在脸侧切出一段明显更短、边缘近水平的侧片；常与齐刘海组合，形成前、中、后长度断层。\n\n**关键变量**：侧片到颧骨／下颌；单层／双层；对称／不对称；直线／柔化\n\n**下一层子型**：经典公主切、无刘海公主切、双层姬切、短公主切\n\n**判定边界**：决定性证据是脸侧独立平切短片，不是单纯长直发或普通脸周层次。\n\n**十元映射原则**：平切边界与断层容易增强 xn／zx；若侧片柔化、与长发过渡，则 n／zn 会增加。\n\n**参考来源**：公开美发／时尚资料页","x":-1700,"y":1510,"width":480,"height":900,"color":"2"},
 		{"id":"img_twintail","type":"text","text":"![](https://fashionuer.com/wp-content/uploads/2023/10/The-Classic-Double-Ponytail.jpg)\n\n[打开来源文章](https://fashionuer.com/beauty/hair/women/two-ponytail-hairstyle-ideas/)","x":-1060,"y":1510,"width":420,"height":650,"color":"1"},
 		{"id":"card_twintail","type":"text","text":"## 06｜双马尾\n### Twin Tails / Pigtails\n\n**分类层级**：扎束方式｜左右双束\n\n**结构定义**：以中线或近中线将头发分为左右两区，并在两侧形成两个独立束点。束点高低与尾部体量会显著改变年龄感和攻击性。\n\n**关键变量**：高／低；对称／偏置；直／卷；细束／厚束；全扎／半扎\n\n**下一层子型**：高双马尾、低双马尾、侧低双马尾、卷双马尾、半双马尾\n\n**判定边界**：必须存在左右两个主束点；上下叠置的双层马尾不属于双马尾。\n\n**十元映射原则**：对称与双锚点常增强 xn；高位外张增加 z，低位下垂更容易向 zn／n 转移。\n\n**参考来源**：公开美发／时尚资料页","x":-600,"y":1510,"width":480,"height":900,"color":"1"},
-		{"id":"img_wolf","type":"text","text":"![](https://highxtar.com/wp-content/uploads/2022/10/highxtar-el-wolf-cut-es-el-corte-de-pelo-de-esta-temporada-1.jpg)\n\n[打开来源文章](https://highxtar.com/en/the-wolf-cut-is-this-seasons-haircut-of-the-season/)","x":40,"y":1510,"width":420,"height":650,"color":"5"},
-		{"id":"card_wolf","type":"text","text":"## 07｜狼尾\n### Wolf Cut\n\n**分类层级**：层次剪裁｜上蓬下长\n\n**结构定义**：顶部与脸周使用较短、较碎的层次制造蓬松，后颈与下段保留更长的尾部，形成“上重动势＋下垂尾巴”的不连续轮廓。\n\n**关键变量**：短／中／长；直／卷；轻层次／强断层；有刘海／无刘海\n\n**下一层子型**：短狼尾、中长狼尾、卷狼尾、鲻鱼感狼尾、柔化狼尾\n\n**判定边界**：与普通层次发的差别在于顶部短层和后颈长尾同时成立；只有碎发不够。\n\n**十元映射原则**：碎层外张与不稳定边缘常增强 z／xz；尾部残留和上下断层可形成 zx 或 x并z 的张力。\n\n**参考来源**：公开美发／时尚资料页","x":500,"y":1510,"width":480,"height":900,"color":"5"},
 		{"id":"img_curl","type":"text","text":"![](https://flawlesshair.com/wp-content/uploads/2023/09/loose-curled-hairstyles-for-medium-hair-1024x1024.jpg)\n\n[打开来源文章](https://flawlesshair.com/curled-hairstyles-for-medium-hair/)","x":1140,"y":110,"width":420,"height":650,"color":"3"},
 		{"id":"card_curl","type":"text","text":"## 04｜卷发\n### Curly / Wavy Hair\n\n**分类层级**：纹理层\n\n**结构定义**：发丝沿长度形成重复的 S 波、C 弯或螺旋。卷发描述的是纹理和节律，可覆盖长发、短发、马尾、公主切等其他结构。\n\n**关键变量**：大波浪／小卷；规则／凌乱；发根起卷／发中起卷；内卷／外翻\n\n**下一层子型**：大波浪、羊毛卷、法式卷、水波纹、螺旋卷\n\n**判定边界**：卷发不是单一剪裁；同一个剪裁在直发与卷发状态下应视为两层信息。\n\n**十元映射原则**：规则重复卷更接近 xn／n；松散不规则卷常增加 z／xz。最终仍看体量、方向和边缘。\n\n**参考来源**：公开美发／时尚资料页","x":1600,"y":110,"width":480,"height":900,"color":"3"},
-		{"id":"card_audit","type":"text","text":"# 总表分类规则\n\n## 不把不同层级硬塞成同级\n- **刘海**：局部结构\n- **马尾／双马尾**：扎束方式\n- **短发**：长度轮廓\n- **卷发**：纹理\n- **公主切／狼尾**：剪裁结构\n\n因此角色可同时写成：\n> 两层透视刘海＋中长狼尾＋松散大卷\n\n而不是在“刘海、卷发、狼尾”里三选一。人类总爱把抽屉、柜门和整间屋子放进同一张分类表，然后怪检索不好用。\n\n## 下一批真实参考\n1. 丸子头／双丸子\n2. 编发／麻花辫\n3. 半扎发\n4. 盘发／法式盘发\n5. 长直发／齐切长发\n6. 鲻鱼头／水母头\n7. 姬发式变体\n8. 非对称／侧剃\n\n## 图片规则\n- 优先正面或侧前方，完整显示外轮廓\n- 不用帽子、手臂、夸张饰品遮挡结构\n- 保留来源文章链接\n- 不用生成图冒充行业参考\n","x":1140,"y":1510,"width":940,"height":980,"color":"4"}
+		{"id":"img_wolf","type":"text","text":"![](https://highxtar.com/wp-content/uploads/2022/10/highxtar-el-wolf-cut-es-el-corte-de-pelo-de-esta-temporada-1.jpg)\n\n[打开来源文章](https://highxtar.com/en/the-wolf-cut-is-this-seasons-haircut-of-the-season/)","x":40,"y":1510,"width":420,"height":650,"color":"5"},
+		{"id":"card_wolf","type":"text","text":"## 07｜狼尾\n### Wolf Cut\n\n**分类层级**：层次剪裁｜上蓬下长\n\n**结构定义**：顶部与脸周使用较短、较碎的层次制造蓬松，后颈与下段保留更长的尾部，形成“上重动势＋下垂尾巴”的不连续轮廓。\n\n**关键变量**：短／中／长；直／卷；轻层次／强断层；有刘海／无刘海\n\n**下一层子型**：短狼尾、中长狼尾、卷狼尾、鲻鱼感狼尾、柔化狼尾\n\n**判定边界**：与普通层次发的差别在于顶部短层和后颈长尾同时成立；只有碎发不够。\n\n**十元映射原则**：碎层外张与不稳定边缘常增强 z／xz；尾部残留和上下断层可形成 zx 或 x并z 的张力。\n\n**参考来源**：公开美发／时尚资料页","x":500,"y":1510,"width":480,"height":900,"color":"5"},
+		{"id":"card_audit","type":"text","text":"# 总表分类规则\n\n## 不把不同层级硬塞成同级\n- **刘海**：局部结构\n- **马尾／双马尾**：扎束方式\n- **短发**：长度轮廓\n- **卷发**：纹理\n- **公主切／狼尾**：剪裁结构\n\n因此角色可同时写成：\n> 两层透视刘海＋中长狼尾＋松散大卷\n\n而不是在“刘海、卷发、狼尾”里三选一。人类总爱把抽屉、柜门和整间屋子放进同一张分类表，然后怪检索不好用。\n\n## 下一批真实参考\n1. 丸子头／双丸子\n2. 编发／麻花辫\n3. 半扎发\n4. 盘发／法式盘发\n5. 长直发／齐切长发\n6. 鲻鱼头／水母头\n7. 姬发式变体\n8. 非对称／侧剃\n\n## 图片规则\n- 优先正面或侧前方，完整显示外轮廓\n- 不用帽子、手臂、夸张饰品遮挡结构\n- 保留来源文章链接\n- 不用生成图冒充行业参考\n","x":1140,"y":1510,"width":940,"height":980,"color":"4"},
+		{
+			"id":"8bea4fd636078e4e",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":-840,
+			"y":780,
+			"width":260,
+			"height":60
+		}
 	],
 	"edges":[
 		{"id":"edge_img_ponytail","fromNode":"img_ponytail","fromSide":"right","toNode":"card_ponytail","toSide":"left"},
@@ -35,7 +45,7 @@
 		{"id":"edge_img_hime","fromNode":"img_hime","fromSide":"right","toNode":"card_hime","toSide":"left"},
 		{"id":"edge_title_hime","fromNode":"title_female_hair_master","fromSide":"bottom","toNode":"img_hime","toSide":"top"},
 		{"id":"edge_img_twintail","fromNode":"img_twintail","fromSide":"right","toNode":"card_twintail","toSide":"left"},
-		{"id":"edge_title_twintail","fromNode":"title_female_hair_master","fromSide":"bottom","toNode":"img_twintail","toSide":"top"},
+		{"id":"edge_title_twintail","toFloating":false,"fromNode":"title_female_hair_master","fromSide":"bottom","toNode":"img_twintail","toSide":"top"},
 		{"id":"edge_img_wolf","fromNode":"img_wolf","fromSide":"right","toNode":"card_wolf","toSide":"left"},
 		{"id":"edge_title_wolf","fromNode":"title_female_hair_master","fromSide":"bottom","toNode":"img_wolf","toSide":"top"},
 		{"id":"edge_title_bangs","fromNode":"title_female_hair_master","fromSide":"bottom","toNode":"file_bangs98","toSide":"top"},
