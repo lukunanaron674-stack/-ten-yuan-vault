@@ -3,7 +3,7 @@
     {
       "id": "idx_title",
       "type": "text",
-      "text": "# 刘海98种｜总索引\n\n**研究建库进度：14/14批｜98/98**\n\n状态：真实参考、结构差异、十元映射和分批 Canvas 已完成。\n下一阶段：跨批二审、失效链接检查、统一角色重绘与 Skill v1.0。\n\n权威规则：[[SKILL.md]]",
+      "text": "# 刘海98种｜正式总索引 v1.0\n\n**研究建库：14/14批｜98/98**\n**Skill等级：S｜状态：stable｜失败模式：fail-closed**\n\n总规则：[[SKILL.md]]\n版本记录：[[CHANGELOG.md]]",
       "x": -650,
       "y": -760,
       "width": 1300,
@@ -11,128 +11,74 @@
       "color": "4"
     },
     {
+      "id": "idx_audit",
+      "type": "text",
+      "text": "## 十元统计与正式纠偏\n\n[[01_十元分布统计与映射纠偏.canvas]]\n[[01_十元分布统计与映射纠偏.md]]\n\n- 统计98个主十元＋98个副十元\n- 建立12项硬纠偏覆盖\n- 分布不强制平均\n- 批次Canvas原映射作为历史记录\n- 后续总表与重绘读取正式覆盖表",
+      "x": -2000,
+      "y": -120,
+      "width": 900,
+      "height": 760,
+      "color": "5"
+    },
+    {
+      "id": "idx_skill",
+      "type": "text",
+      "text": "## S级图片证据入口\n\n[[skills/S级_真实参考图片采集/SKILL.md]]\n\n正式条目最低证据：\n- 一张S图；或\n- 两张互补A图\n\n硬失败：生成图冒充证据、无来源、标题图像错配、结构不可见、重复图片凑数。\n\n等级制度：[[skills/Skill评价等级.md]]",
+      "x": -1000,
+      "y": -120,
+      "width": 900,
+      "height": 760,
+      "color": "2"
+    },
+    {
       "id": "idx_base",
       "type": "text",
-      "text": "## 第1–5批｜01–35\n\n[[98种流行女性刘海.canvas]]\n\n1. 空气与透薄｜01–07\n2. 齐线与厚刘海｜08–14\n3. 帘幕刘海｜15–21\n4. 八字刘海｜22–28\n5. 瓶颈刘海｜29–35\n\n状态：可靠历史详细基准。",
-      "x": -2200,
+      "text": "## 第1–5批｜01–35\n\n[[98种流行女性刘海.canvas]]\n\n1. 空气与透薄｜01–07\n2. 齐线与厚刘海｜08–14\n3. 帘幕刘海｜15–21\n4. 八字刘海｜22–28\n5. 瓶颈刘海｜29–35\n\n状态：历史详细基准；正式映射需叠加纠偏覆盖表。",
+      "x": 0,
       "y": -120,
       "width": 900,
       "height": 760,
       "color": "4"
     },
     {
-      "id": "idx_06",
+      "id": "idx_6_9",
       "type": "text",
-      "text": "## 第6批｜36–42\n\n[[批次06_斜扫刘海_待合并.canvas]]\n\n家族：斜扫刘海\n状态：7/7完成，已正式计入索引。\n\n文件名保留历史字样“待合并”，内容已被总索引收编。",
-      "x": -1200,
-      "y": -120,
-      "width": 900,
-      "height": 760,
-      "color": "6"
-    },
-    {
-      "id": "idx_07",
-      "type": "text",
-      "text": "## 第7批｜43–49\n\n[[批次07_中分与长刘海.canvas]]\n\n家族：中分与长刘海\n状态：7/7完成。",
-      "x": -200,
+      "text": "## 第6–9批｜36–63\n\n[[批次06_斜扫刘海_待合并.canvas]]\n[[批次07_中分与长刘海.canvas]]\n[[批次08_Baby与Micro刘海.canvas]]\n[[批次09_碎剪与羽化刘海.canvas]]\n\n6. 斜扫｜36–42\n7. 中分与长刘海｜43–49\n8. Baby与Micro｜50–56\n9. 碎剪与羽化｜57–63",
+      "x": 1000,
       "y": -120,
       "width": 900,
       "height": 760,
       "color": "3"
     },
     {
-      "id": "idx_08",
+      "id": "idx_10_14",
       "type": "text",
-      "text": "## 第8批｜50–56\n\n[[批次08_Baby与Micro刘海.canvas]]\n\n家族：Baby与Micro刘海\n状态：7/7完成。",
-      "x": 800,
+      "text": "## 第10–14批｜64–98\n\n[[批次10_法式与Birkin刘海.canvas]]\n[[批次11_宽版与几何切割刘海.canvas]]\n[[批次12_框脸与长侧束刘海.canvas]]\n[[批次13_卷曲与纹理刘海.canvas]]\n[[批次14_复古与造型型刘海.canvas]]\n\n10. 法式与Birkin｜64–70\n11. 宽版与几何切割｜71–77\n12. 框脸与长侧束｜78–84\n13. 卷曲与纹理｜85–91\n14. 复古与造型型｜92–98",
+      "x": 2000,
       "y": -120,
-      "width": 900,
-      "height": 760,
-      "color": "2"
-    },
-    {
-      "id": "idx_09",
-      "type": "text",
-      "text": "## 第9批｜57–63\n\n[[批次09_碎剪与羽化刘海.canvas]]\n\n家族：碎剪与羽化刘海\n状态：7/7完成。",
-      "x": 1800,
-      "y": -120,
-      "width": 900,
-      "height": 760,
-      "color": "5"
-    },
-    {
-      "id": "idx_10",
-      "type": "text",
-      "text": "## 第10批｜64–70\n\n[[批次10_法式与Birkin刘海.canvas]]\n\n家族：法式与Birkin刘海\n状态：7/7完成。",
-      "x": -2200,
-      "y": 780,
-      "width": 900,
-      "height": 760,
-      "color": "4"
-    },
-    {
-      "id": "idx_11",
-      "type": "text",
-      "text": "## 第11批｜71–77\n\n[[批次11_宽版与几何切割刘海.canvas]]\n\n家族：宽版与几何切割刘海\n状态：7/7完成。",
-      "x": -1200,
-      "y": 780,
       "width": 900,
       "height": 760,
       "color": "6"
     },
     {
-      "id": "idx_12",
+      "id": "idx_next",
       "type": "text",
-      "text": "## 第12批｜78–84\n\n[[批次12_框脸与长侧束刘海.canvas]]\n\n家族：框脸与长侧束刘海\n状态：7/7完成。",
-      "x": -200,
-      "y": 780,
-      "width": 900,
-      "height": 760,
-      "color": "3"
-    },
-    {
-      "id": "idx_13",
-      "type": "text",
-      "text": "## 第13批｜85–91\n\n[[批次13_卷曲与纹理刘海.canvas]]\n\n家族：卷曲与纹理刘海\n状态：7/7完成。",
-      "x": 800,
-      "y": 780,
-      "width": 900,
-      "height": 760,
+      "text": "## v1.1执行队列\n\n1. 98项图片逐张打分：S/A/B/C/D/拒绝\n2. 每项补足一张S图或两张A图\n3. 检查热链与来源页失效\n4. 体量与纯度二次复核\n5. 统一女性角色、同角度、同光线重绘\n6. 将12项纠偏正式回写新总表\n\n不得因为v1.0已稳定，就假装证据维护从此不需要劳动。系统只要有人类使用，就会自然产生熵。",
+      "x": -1000,
+      "y": 900,
+      "width": 1900,
+      "height": 700,
       "color": "1"
-    },
-    {
-      "id": "idx_14",
-      "type": "text",
-      "text": "## 第14批｜92–98\n\n[[批次14_复古与造型型刘海.canvas]]\n\n家族：复古与造型型刘海\n状态：7/7完成。\n\n收尾条目：Bardot、Bettie Page、Audrey、Bumper、Veronica Lake、Jean Shrimpton、Farrah。",
-      "x": 1800,
-      "y": 780,
-      "width": 900,
-      "height": 760,
-      "color": "5"
-    },
-    {
-      "id": "idx_status",
-      "type": "text",
-      "text": "## 完成状态与后续审计\n\n**已完成**\n- 98个编号连续条目\n- 14个家族，每批7种\n- 真实来源页面与参考图\n- 结构参数、主副十元、体量、纯度、五维\n- 视觉证据与误判项\n- 可编辑分批 Canvas\n\n**尚未完成**\n- 98项跨批人工二审去重\n- 全部图片热链有效性复查\n- 同一女性角色统一重绘\n- 最终主副十元统计与纠偏\n- Skill v1.0正式定稿",
-      "x": -1200,
-      "y": 1750,
-      "width": 2400,
-      "height": 900,
-      "color": "2"
     }
   ],
   "edges": [
-    {"id":"idx_e01","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_base","toSide":"top"},
-    {"id":"idx_e02","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_06","toSide":"top"},
-    {"id":"idx_e03","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_07","toSide":"top"},
-    {"id":"idx_e04","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_08","toSide":"top"},
-    {"id":"idx_e05","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_09","toSide":"top"},
-    {"id":"idx_e06","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_10","toSide":"top"},
-    {"id":"idx_e07","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_11","toSide":"top"},
-    {"id":"idx_e08","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_12","toSide":"top"},
-    {"id":"idx_e09","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_13","toSide":"top"},
-    {"id":"idx_e10","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_14","toSide":"top"},
-    {"id":"idx_e11","fromNode":"idx_14","fromSide":"bottom","toNode":"idx_status","toSide":"top"}
+    {"id":"ie1","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_audit","toSide":"top"},
+    {"id":"ie2","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_skill","toSide":"top"},
+    {"id":"ie3","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_base","toSide":"top"},
+    {"id":"ie4","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_6_9","toSide":"top"},
+    {"id":"ie5","fromNode":"idx_title","fromSide":"bottom","toNode":"idx_10_14","toSide":"top"},
+    {"id":"ie6","fromNode":"idx_audit","fromSide":"bottom","toNode":"idx_next","toSide":"top"},
+    {"id":"ie7","fromNode":"idx_skill","fromSide":"bottom","toNode":"idx_next","toSide":"top"}
   ],
   "metadata": {"version":"1.0-1.0","frontmatter":{}}
 }
