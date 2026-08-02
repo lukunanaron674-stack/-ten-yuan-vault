@@ -1,60 +1,197 @@
 {
-	"nodes":[
-		{"id":"hdr","type":"text","text":"# B｜身份阶级与社会位置\n## R4.1 视觉运行总览\n\n这张 Canvas 用于导航与运行判断；详细 96 节点见右侧文件。\n\n**纪律：题材名不继承十元，主辅只是候选，动态链逐阶段重判。**","x":0,"y":-700,"width":1900,"height":320,"color":"4"},
-		{"id":"detail","type":"file","file":"013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/R4_B_身份阶级与社会位置.canvas","x":2100,"y":-700,"width":900,"height":320},
-		{"id":"text","type":"file","file":"013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/B_身份阶级与社会位置_节点化.md","x":3200,"y":-700,"width":900,"height":320},
-		{"id":"warn","type":"text","text":"## 状态说明\n- `scaffold-index`\n- `completion: partial`\n- `theory_authority: non-canonical`\n\n已锁定关系只是可调用候选，仍需案例证明机制、变量、阶段和第三因素。","x":4300,"y":-700,"width":1700,"height":320,"color":"6"},
-		{"id":"s0","type":"text","text":"## 0 入口\n初始主辅候选\n结论等级","x":0,"y":0,"width":460,"height":230,"color":"4"},
-		{"id":"s1","type":"text","text":"## 1 对象\n主对象\n关联对象分开","x":500,"y":0,"width":460,"height":230,"color":"3"},
-		{"id":"s2","type":"text","text":"## 2 主体\n稳定本体\n阶段状态\n关系功能","x":1000,"y":0,"width":460,"height":230,"color":"3"},
-		{"id":"s3","type":"text","text":"## 3 关系\n权限分配\n承载与认可分账","x":1500,"y":0,"width":460,"height":230,"color":"3"},
-		{"id":"s4","type":"text","text":"## 4 触发\n行动者→对象\n目的/回应/代价","x":2000,"y":0,"width":460,"height":230,"color":"3"},
-		{"id":"s5","type":"text","text":"## 5 状态\n前态→后态\n不可逆变量","x":2500,"y":0,"width":460,"height":230,"color":"2"},
-		{"id":"s6","type":"text","text":"## 6 端点\n源/目标\n主辅/体量/顺序","x":3000,"y":0,"width":460,"height":230,"color":"2"},
-		{"id":"s7","type":"text","text":"## 7 生克补\n状态+机制\n变量+第三因素","x":3500,"y":0,"width":460,"height":230,"color":"5"},
-		{"id":"s8","type":"text","text":"## 8 动态链\n接管条件\n分支/结算/锚点","x":4000,"y":0,"width":460,"height":230,"color":"5"},
-		{"id":"s9","type":"text","text":"## 9 主题\n中心问题\n转折/高潮/结局","x":4500,"y":0,"width":460,"height":230,"color":"6"},
-		{"id":"s10","type":"text","text":"## 10 反证\n拿掉/反向\n最近邻/替代","x":5000,"y":0,"width":460,"height":230,"color":"6"},
-		{"id":"s11","type":"text","text":"## 11 输出\n卡片化输出\n缺项标 incomplete","x":5500,"y":0,"width":460,"height":230,"color":"6"},
-		{"id":"tB01","type":"text","text":"# T-B01｜财阀继承\n**候选主 x｜scaffold**\n\n主对象：表决权与实际控制\n链：资格壳争议 → x接管 → x生x并z\n反证：有钱/持股≠实际掌握\n\n→ 进入详细12节点回填","x":0,"y":650,"width":1350,"height":420,"color":"5"},
-		{"id":"tB02","type":"text","text":"# T-B02｜真假继承人\n**候选主 x并z｜scaffold**\n\n主对象：识别与准入身份壳\n链：旧壳 → 证据控制x / 确认z分账 → 新壳\n警告：真实与被采用必须分开\n\n→ 进入详细12节点回填","x":1530,"y":650,"width":1350,"height":420,"color":"5"},
-		{"id":"tB03","type":"text","text":"# T-B03｜豪门复仇\n**候选主 x｜scaffold**\n\n主对象：被夺控制边界\n链：x丧失 → xn组织 → zx可接管 → x/z分账结算\n反证：泄愤打脸≠zx\n\n→ 进入详细12节点回填","x":3060,"y":650,"width":1350,"height":420,"color":"5"},
-		{"id":"tB04","type":"text","text":"# T-B04｜娱乐圈上位\n**候选主 z｜scaffold**\n\n主对象：被具体主体确认的作品/能力\n链：x并z界面 → z确认；x门控可克z\n警告：流量、热搜≠z\n\n→ 进入详细12节点回填","x":4590,"y":650,"width":1350,"height":420,"color":"4"},
-		{"id":"tB05","type":"text","text":"# T-B05｜商战创业\n**候选主 xn｜scaffold**\n\n主对象：主动组织的持续结构\n链：零散 → xn → x/n/zx分支\n警告：n生xn不得默认；转H区复核\n\n→ 进入详细12节点回填","x":0,"y":1250,"width":1350,"height":420,"color":"4"},
-		{"id":"tB06","type":"text","text":"# T-B06｜贵族社交\n**候选主 x并z｜scaffold**\n\n主对象：礼法身份壳与社交准入\n链：礼法壳 → z确认 → x撕裂/重建\n反证：华服舞会≠x并z\n\n→ 进入详细12节点回填","x":1530,"y":1250,"width":1350,"height":420,"color":"5"},
-		{"id":"tB07","type":"text","text":"# T-B07｜宫廷继承\n**候选主 x｜scaffold**\n\n主对象：军权/任免/处置边界\n链：名位争议 → xn组织 → x/zx争夺 → 新名位壳\n反证：称帝≠实际掌握\n\n→ 进入详细12节点回填","x":3060,"y":1250,"width":1350,"height":420,"color":"5"},
-		{"id":"tB08","type":"text","text":"# T-B08｜底层改造／逆袭\n**候选主 z｜scaffold**\n\n主对象：被确认的能力/身份/选择\n链：旧评价 → x并z证据壳 → z分账\n警告：zx生zn未锁定；转D区复核\n\n→ 进入详细12节点回填","x":4590,"y":1250,"width":1350,"height":420,"color":"4"},
-		{"id":"crossH","type":"text","text":"## H区复核｜职业现实与行业\nB04 娱乐圈：职业生产、平台经营\nB05 创业：商业经营、行业流程\n\nB区只保留社会位置、准入、控制边界与认可。","x":0,"y":1950,"width":1850,"height":280,"color":"1"},
-		{"id":"crossD","type":"text","text":"## D区复核｜能力成长战斗竞争\nB08 逆袭：能力升级、胜负、排名\n\nB区只保留旧评价、可识别证据、认可分账与社会位置变化。","x":2050,"y":1950,"width":1850,"height":280,"color":"1"},
-		{"id":"lock","type":"text","text":"## 关系状态警示\n✅ 可候选：x并z生z、x生x并z、x克z、xn克zx\n⚠ 条件调用：n生xn、xn补z/z补xn\n⛔ 未锁定：zx生zn，不得写成正式结论","x":4100,"y":1950,"width":1900,"height":280,"color":"2"}
-	],
-	"edges":[
-		{"id":"es0_1","toFloating":false,"fromNode":"s0","fromSide":"right","toNode":"s1","toSide":"left"},
-		{"id":"es1_2","fromNode":"s1","fromSide":"right","toNode":"s2","toSide":"left"},
-		{"id":"es2_3","fromNode":"s2","fromSide":"right","toNode":"s3","toSide":"left"},
-		{"id":"es3_4","fromNode":"s3","fromSide":"right","toNode":"s4","toSide":"left"},
-		{"id":"es4_5","fromNode":"s4","fromSide":"right","toNode":"s5","toSide":"left"},
-		{"id":"es5_6","fromNode":"s5","fromSide":"right","toNode":"s6","toSide":"left"},
-		{"id":"es6_7","fromNode":"s6","fromSide":"right","toNode":"s7","toSide":"left"},
-		{"id":"es7_8","fromNode":"s7","fromSide":"right","toNode":"s8","toSide":"left"},
-		{"id":"es8_9","fromNode":"s8","fromSide":"right","toNode":"s9","toSide":"left"},
-		{"id":"es9_10","fromNode":"s9","fromSide":"right","toNode":"s10","toSide":"left"},
-		{"id":"es10_11","fromNode":"s10","fromSide":"right","toNode":"s11","toSide":"left"},
-		{"id":"e_s8_B01","fromFloating":false,"fromNode":"s8","fromSide":"bottom","toNode":"tB01","toSide":"top","label":"题材运行"},
-		{"id":"e_s8_B02","fromNode":"s8","fromSide":"bottom","toNode":"tB02","toSide":"top","label":"题材运行"},
-		{"id":"e_s8_B03","fromNode":"s8","fromSide":"bottom","toNode":"tB03","toSide":"top","label":"题材运行"},
-		{"id":"e_s8_B04","fromNode":"s8","fromSide":"bottom","toNode":"tB04","toSide":"top","label":"题材运行"},
-		{"id":"e_s8_B05","fromNode":"s8","fromSide":"bottom","toNode":"tB05","toSide":"top","label":"题材运行"},
-		{"id":"e_s8_B06","fromNode":"s8","fromSide":"bottom","toNode":"tB06","toSide":"top","label":"题材运行"},
-		{"id":"e_s8_B07","fromNode":"s8","fromSide":"bottom","toNode":"tB07","toSide":"top","label":"题材运行"},
-		{"id":"e_s8_B08","fromNode":"s8","fromSide":"bottom","toNode":"tB08","toSide":"top","label":"题材运行"},
-		{"id":"e_B04_H","fromNode":"tB04","fromSide":"bottom","toNode":"crossH","toSide":"top"},
-		{"id":"e_B05_H","fromNode":"tB05","fromSide":"bottom","toNode":"crossH","toSide":"top"},
-		{"id":"e_B08_D","toFloating":false,"fromNode":"tB08","fromSide":"bottom","toNode":"crossD","toSide":"top"},
-		{"id":"e_B08_lock","fromNode":"tB08","fromSide":"bottom","toNode":"lock","toSide":"top","label":"关系状态"}
-	],
-	"metadata":{
-		"version":"1.0-1.0",
-		"frontmatter":{}
-	}
+  "nodes": [
+    {
+      "id": "hdr",
+      "type": "text",
+      "text": "# B｜身份阶级与社会位置\n## 五行上位 · 阴阳十元相反轴 · 应用教学总览\n\n**五行在上，十元在下。每一行分成一阳一阴两个相反十元。**\n\n阅读顺序：对象名词 → 五行相反轴 → 阴阳端具体联想 → 对象变化 → 剧情应用",
+      "x": 0,
+      "y": -900,
+      "width": 2500,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "md",
+      "type": "file",
+      "file": "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/B_身份阶级与社会位置_节点化.md",
+      "x": 2700,
+      "y": -900,
+      "width": 900,
+      "height": 420
+    },
+    {
+      "id": "detail",
+      "type": "file",
+      "file": "013_AI用素材库/06B_韩漫题材对象行为库_十元分析版/28_64题材完全节点化重构/R4_B_身份阶级与社会位置.canvas",
+      "x": 3750,
+      "y": -900,
+      "width": 900,
+      "height": 420
+    },
+    {
+      "id": "wood",
+      "type": "text",
+      "text": "# 木｜阳 zx ↔ 阴 nx\n\n**相反轴：自己占据方向 ↔ 让出方向**\n\n阳zx：夺权、罢免、逼宫、公开改判、主动重排\n\n阴nx：傀儡、代理、代持、附庸、沿他人安排",
+      "x": 0,
+      "y": -250,
+      "width": 900,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "fire",
+      "type": "text",
+      "text": "# 火｜阳 zn ↔ 阴 x\n\n**相反轴：内部意义 ↔ 外部掌握**\n\n阳zn：身份核心、使命、原则、不可让渡\n\n阴x：股份、账户、印章、发布、任免、处置",
+      "x": 1000,
+      "y": -250,
+      "width": 900,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "earth",
+      "type": "text",
+      "text": "# 土｜阳 n ↔ 阴 x并z\n\n**相反轴：内部承载 ↔ 公共身份壳**\n\n阳n：接纳、培养、团队、照料、共同体\n\n阴x并z：职位、称号、姓氏、艺名、正式接口",
+      "x": 2000,
+      "y": -250,
+      "width": 900,
+      "height": 420,
+      "color": "3"
+    },
+    {
+      "id": "metal",
+      "type": "text",
+      "text": "# 金｜阳 xn ↔ 阴 z\n\n**相反轴：制度秩序 ↔ 个人最高焦点**\n\n阳xn：章程、流程、审计、计划、官僚链\n\n阴z：执念、自我判断、确认焦点、我最认定",
+      "x": 3000,
+      "y": -250,
+      "width": 900,
+      "height": 420,
+      "color": "5"
+    },
+    {
+      "id": "water",
+      "type": "text",
+      "text": "# 水｜阳 xz ↔ 阴 nz\n\n**相反轴：临界断裂 ↔ 回返归属**\n\n阳xz：期限、暴露、冻结、破产、政变倒计时\n\n阴nz：旧家、庇护、和解、归属、可回返位置",
+      "x": 4000,
+      "y": -250,
+      "width": 900,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "b01",
+      "type": "text",
+      "text": "# T-B01｜财阀继承\n\n名词：继承资格、股份、表决权、董事席位、控制权、法人代表\n\n主冲突：\n木｜掌权继承人 ↔ 傀儡继承人\n火｜祖业原则 ↔ 股份与印章\n土｜老臣接纳 ↔ 董事长身份壳\n金｜章程程序 ↔ 个人继承执念\n水｜股权冻结 ↔ 旧部退路",
+      "x": 0,
+      "y": 450,
+      "width": 1150,
+      "height": 500,
+      "color": "5"
+    },
+    {
+      "id": "b02",
+      "type": "text",
+      "text": "# T-B02｜真假继承人\n\n名词：血缘、法律身份、家族承认、资源准入、关系归属\n\n主冲突：\n木｜主动揭露 ↔ 被迫扮演\n火｜真正的我 ↔ 证据与遗产控制\n土｜真实养育 ↔ 正式子女身份\n金｜法院程序 ↔ 个人认定\n水｜身份崩塌 ↔ 仍可回去的家",
+      "x": 1250,
+      "y": 450,
+      "width": 1150,
+      "height": 500,
+      "color": "5"
+    },
+    {
+      "id": "b03",
+      "type": "text",
+      "text": "# T-B03｜豪门复仇\n\n名词：报复、追责、赔偿、返还、控制回收、名誉恢复\n\n主冲突：\n木｜自己主导复仇 ↔ 成为别人的刀\n火｜清白与底线 ↔ 证据和股份\n土｜支持团队 ↔ 公开受害者身份\n金｜法律计划 ↔ 私人执念\n水｜不可逆代价 ↔ 复仇后的生活",
+      "x": 2500,
+      "y": 450,
+      "width": 1150,
+      "height": 500,
+      "color": "5"
+    },
+    {
+      "id": "b04",
+      "type": "text",
+      "text": "# T-B04｜娱乐圈上位\n\n名词：作品、版权、署名、发布、渠道、流量、专业认可\n\n主冲突：\n木｜决定路线 ↔ 被资本安排\n火｜作者性 ↔ 版权与账号\n土｜合作班底 ↔ 明星人设\n金｜职业运营 ↔ 被看见执念\n水｜封杀危机 ↔ 退圈归处",
+      "x": 3750,
+      "y": 450,
+      "width": 1150,
+      "height": 500,
+      "color": "4"
+    },
+    {
+      "id": "b05",
+      "type": "text",
+      "text": "# T-B05｜商战创业\n\n名词：融资、估值、稀释、治理、运营、现金流、市场采用\n\n主冲突：\n木｜创始人主导 ↔ 投资人牵引\n火｜创业使命 ↔ 股权控制\n土｜真实团队 ↔ CEO与品牌壳\n金｜治理流程 ↔ 创始人执念\n水｜现金流断裂 ↔ 失败后的重新开始",
+      "x": 0,
+      "y": 1100,
+      "width": 1150,
+      "height": 500,
+      "color": "4"
+    },
+    {
+      "id": "b06",
+      "type": "text",
+      "text": "# T-B06｜贵族社交\n\n名词：爵位、礼法、社交准入、引荐、婚约、嫁妆、联盟\n\n主冲突：\n木｜自己决定婚姻 ↔ 替家族完成联盟\n火｜尊严与荣誉 ↔ 领地和婚约资源\n土｜亲族接纳 ↔ 贵族称号\n金｜礼法秩序 ↔ 个人认定\n水｜被逐出圈层 ↔ 娘家与庇护",
+      "x": 1250,
+      "y": 1100,
+      "width": 1150,
+      "height": 500,
+      "color": "5"
+    },
+    {
+      "id": "b07",
+      "type": "text",
+      "text": "# T-B07｜宫廷继承\n\n名词：皇位、合法性、军权、财政、诏书、印玺、官僚体系\n\n主冲突：\n木｜真正掌权 ↔ 傀儡皇帝\n火｜王统原则 ↔ 军权与印玺\n土｜旧臣支持 ↔ 皇位名号\n金｜官僚程序 ↔ 君主执念\n水｜政变临界 ↔ 流亡与封地",
+      "x": 2500,
+      "y": 1100,
+      "width": 1150,
+      "height": 500,
+      "color": "5"
+    },
+    {
+      "id": "b08",
+      "type": "text",
+      "text": "# T-B08｜底层改造／逆袭\n\n名词：低位标签、能力证据、文化资本、社会准入、象征资本\n\n主冲突：\n木｜夺回人生方向 ↔ 换一个主人\n火｜真正的我 ↔ 职位与资源入口\n土｜真实培养 ↔ 精英标签\n金｜长期训练 ↔ 急于证明\n水｜最后机会 ↔ 原关系归属",
+      "x": 3750,
+      "y": 1100,
+      "width": 1150,
+      "height": 500,
+      "color": "4"
+    },
+    {
+      "id": "rule",
+      "type": "text",
+      "text": "## 教学纪律\n\n1. 先解释对象，不直接贴十元标签。\n2. 每组阴阳必须写出为什么相反。\n3. 必须写对象怎样从阳端滑向阴端，或从阴端夺回阳端。\n4. 每题材至少区分3组相邻名词。\n5. 12节点、生克补、体量、动态链留在详细 Canvas。",
+      "x": 0,
+      "y": 1800,
+      "width": 2400,
+      "height": 380,
+      "color": "6"
+    },
+    {
+      "id": "cross",
+      "type": "text",
+      "text": "## 跨区边界\n\nB区只研究身份、阶级、社会位置、资格、准入、控制与归属。\n\n娱乐圈职业生产、创业行业流程 → H区复核\n能力升级、比赛、排名 → D区复核",
+      "x": 2600,
+      "y": 1800,
+      "width": 2300,
+      "height": 380,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {"id": "e_hdr_wood", "fromNode": "hdr", "fromSide": "bottom", "toNode": "wood", "toSide": "top"},
+    {"id": "e_hdr_fire", "fromNode": "hdr", "fromSide": "bottom", "toNode": "fire", "toSide": "top"},
+    {"id": "e_hdr_earth", "fromNode": "hdr", "fromSide": "bottom", "toNode": "earth", "toSide": "top"},
+    {"id": "e_hdr_metal", "fromNode": "hdr", "fromSide": "bottom", "toNode": "metal", "toSide": "top"},
+    {"id": "e_hdr_water", "fromNode": "hdr", "fromSide": "bottom", "toNode": "water", "toSide": "top"},
+    {"id": "wood_b01", "fromNode": "wood", "fromSide": "bottom", "toNode": "b01", "toSide": "top", "label": "五行轴"},
+    {"id": "fire_b01", "fromNode": "fire", "fromSide": "bottom", "toNode": "b01", "toSide": "top", "label": "五行轴"},
+    {"id": "earth_b01", "fromNode": "earth", "fromSide": "bottom", "toNode": "b01", "toSide": "top", "label": "五行轴"},
+    {"id": "metal_b01", "fromNode": "metal", "fromSide": "bottom", "toNode": "b01", "toSide": "top", "label": "五行轴"},
+    {"id": "water_b01", "fromNode": "water", "fromSide": "bottom", "toNode": "b01", "toSide": "top", "label": "五行轴"},
+    {"id": "hdr_md", "fromNode": "hdr", "fromSide": "right", "toNode": "md", "toSide": "left", "label": "教学正本"},
+    {"id": "hdr_detail", "fromNode": "md", "fromSide": "right", "toNode": "detail", "toSide": "left", "label": "分析验证"}
+  ],
+  "metadata": {"version": "1.0-1.0", "frontmatter": {}}
 }
