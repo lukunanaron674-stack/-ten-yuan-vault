@@ -1,17 +1,14 @@
 {
   "ok": false,
-  "slot": "1130",
+  "slot": "1200",
   "dryRun": false,
-  "startedAt": "2026-08-01T13:19:52",
+  "startedAt": "2026-08-02T12:32:38",
   "spentBefore": 0,
-  "actions": [],
-  "monthlyCard": {
-    "attempted": false,
-    "status": "uncertain_skipped",
-    "detectedState": "unknown"
-  },
-  "initialPoolState": "unknown",
+  "actions": [
+    "free"
+  ],
+  "initialPoolState": "free",
   "status": "failed",
   "error": "无法确认免费或半价状态，已停止",
-  "finishedAt": "2026-08-01T13:21:44"
+  "finishedAt": "2026-08-02T12:35:45"
 }
