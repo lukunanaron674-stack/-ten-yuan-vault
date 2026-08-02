@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "idx_title",
+      "type": "text",
+      "text": "# 刘海98种｜总索引\n\n**真实进度：07/14批｜49/98**\n\n架构：历史基准主 Canvas（01–35）＋独立批次 Canvas（36以后）。\n\n权威规则：[[SKILL.md]]",
+      "x": -500,
+      "y": -700,
+      "width": 1000,
+      "height": 380,
+      "color": "4"
+    },
+    {
+      "id": "idx_base",
+      "type": "text",
+      "text": "## 第1–5批｜01–35\n\n[[98种流行女性刘海.canvas]]\n\n- 空气与透薄 01–07\n- 齐线与厚刘海 08–14\n- 帘幕刘海 15–21\n- 八字刘海 22–28\n- 瓶颈刘海 29–35\n\n状态：已恢复到可靠历史基准。",
+      "x": -1500,
+      "y": -120,
+      "width": 800,
+      "height": 700,
+      "color": "4"
+    },
+    {
+      "id": "idx_06",
+      "type": "text",
+      "text": "## 第6批｜36–42\n\n[[批次06_斜扫刘海_待合并.canvas]]\n\n家族：斜扫刘海\n状态：7/7 已核验，已计入真实进度。\n\n文件名仍保留“待合并”历史字样，但由本总索引正式收编。",
+      "x": -600,
+      "y": -120,
+      "width": 800,
+      "height": 700,
+      "color": "6"
+    },
+    {
+      "id": "idx_07",
+      "type": "text",
+      "text": "## 第7批｜43–49\n\n[[批次07_中分与长刘海.canvas]]\n\n家族：中分与长刘海\n状态：7/7 已核验并配真实参考图。\n\n下一批：Baby 与 Micro，编号50–56。",
+      "x": 300,
+      "y": -120,
+      "width": 800,
+      "height": 700,
+      "color": "3"
+    },
+    {
+      "id": "idx_future",
+      "type": "text",
+      "text": "## 待执行｜第8–14批\n\n8. Baby 与 Micro｜50–56\n9. 碎剪与羽化｜57–63\n10. 法式与 Birkin｜64–70\n11. 宽版与几何切割｜71–77\n12. 框脸与长侧束｜78–84\n13. 卷曲与纹理｜85–91\n14. 复古与造型型｜92–98",
+      "x": 1200,
+      "y": -120,
+      "width": 800,
+      "height": 700,
+      "color": "1"
+    },
+    {
+      "id": "idx_rule",
+      "type": "text",
+      "text": "## 读取顺序\n\n1. 先读 [[SKILL.md]]\n2. 再读本总索引\n3. 读取最近一批 Canvas 与既有名称\n4. 检索真实来源并跨批去重\n5. 新批次独立保存\n6. 更新本索引与 Skill 进度\n7. 提交后回读验证\n\n禁止再用截断预览覆盖大型 Canvas。",
+      "x": -600,
+      "y": 760,
+      "width": 1700,
+      "height": 600,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "idx_e1",
+      "fromNode": "idx_title",
+      "fromSide": "bottom",
+      "toNode": "idx_base",
+      "toSide": "top"
+    },
+    {
+      "id": "idx_e2",
+      "fromNode": "idx_title",
+      "fromSide": "bottom",
+      "toNode": "idx_06",
+      "toSide": "top"
+    },
+    {
+      "id": "idx_e3",
+      "fromNode": "idx_title",
+      "fromSide": "bottom",
+      "toNode": "idx_07",
+      "toSide": "top"
+    },
+    {
+      "id": "idx_e4",
+      "fromNode": "idx_title",
+      "fromSide": "bottom",
+      "toNode": "idx_future",
+      "toSide": "top"
+    },
+    {
+      "id": "idx_e5",
+      "fromNode": "idx_07",
+      "fromSide": "bottom",
+      "toNode": "idx_rule",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}
