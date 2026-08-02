@@ -1,1 +1,36 @@
-{"nodes":[{"id":"title","type":"text","text":"# 十元相近相远总图\n\n五行＝十元五组阴阳对立统一轴。\n环序：zx→z→zn→nz→n→nx→xn→x→xz→x并z→zx\n\nd1最近，d2次近，d3–4远，d5同行阴阳对径。距离不自动等于生克补。\n\n[[01_98项五行十元分库总表.md]]","x":-500,"y":-900,"width":1000,"height":380,"color":"4"},{"id":"zx","type":"text","text":"## zx｜阳木｜6\nd1：z、x并z\nd2：zn、xz\nd5：nx","x":-250,"y":-1500,"width":500,"height":280,"color":"4"},{"id":"z","type":"text","text":"## z｜阴金｜7\nd1：zx、zn\nd2：nz、x并z\nd5：xn","x":550,"y":-1250,"width":500,"height":280,"color":"5"},{"id":"zn","type":"text","text":"## zn｜阳火｜8\nd1：z、nz\nd2：zx、n\nd5：x","x":1000,"y":-550,"width":500,"height":280,"color":"1"},{"id":"nz","type":"text","text":"## nz｜阴水｜1\nd1：zn、n\nd2：z、nx\nd5：xz","x":1000,"y":250,"width":500,"height":280,"color":"2"},{"id":"n","type":"text","text":"## n｜阳土｜21\nd1：nz、nx\nd2：zn、xn\nd5：x并z","x":550,"y":950,"width":500,"height":280,"color":"6"},{"id":"nx","type":"text","text":"## nx｜阴木｜12\nd1：n、xn\nd2：nz、x\nd5：zx","x":-250,"y":1200,"width":500,"height":280,"color":"4"},{"id":"xn","type":"text","text":"## xn｜阳金｜11\nd1：nx、x\nd2：n、xz\nd5：z","x":-1050,"y":950,"width":500,"height":280,"color":"5"},{"id":"x","type":"text","text":"## x｜阴火｜11\nd1：xn、xz\nd2：nx、x并z\nd5：zn","x":-1500,"y":250,"width":500,"height":280,"color":"1"},{"id":"xz","type":"text","text":"## xz｜阳水｜9\nd1：x、x并z\nd2：zx、xn\nd5：nz","x":-1500,"y":-550,"width":500,"height":280,"color":"2"},{"id":"xbz","type":"text","text":"## x并z｜阴土｜12\nd1：zx、xz\nd2：z、x\nd5：n","x":-1050,"y":-1250,"width":500,"height":280,"color":"6"}],"edges":[{"id":"e1","fromNode":"zx","toNode":"z","label":"d1"},{"id":"e2","fromNode":"z","toNode":"zn","label":"d1"},{"id":"e3","fromNode":"zn","toNode":"nz","label":"d1"},{"id":"e4","fromNode":"nz","toNode":"n","label":"d1"},{"id":"e5","fromNode":"n","toNode":"nx","label":"d1"},{"id":"e6","fromNode":"nx","toNode":"xn","label":"d1"},{"id":"e7","fromNode":"xn","toNode":"x","label":"d1"},{"id":"e8","fromNode":"x","toNode":"xz","label":"d1"},{"id":"e9","fromNode":"xz","toNode":"xbz","label":"d1"},{"id":"e10","fromNode":"xbz","toNode":"zx","label":"d1"},{"id":"o1","fromNode":"zx","toNode":"nx","label":"木｜d5对立统一"},{"id":"o2","fromNode":"zn","toNode":"x","label":"火｜d5对立统一"},{"id":"o3","fromNode":"n","toNode":"xbz","label":"土｜d5对立统一"},{"id":"o4","fromNode":"xn","toNode":"z","label":"金｜d5对立统一"},{"id":"o5","fromNode":"xz","toNode":"nz","label":"水｜d5对立统一"}],"metadata":{"version":"1.0-1.0","frontmatter":{}}}
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# 十元相近相远总图\n\n五行＝十元五组阴阳对立统一轴。\n环序：zx→z→zn→nz→n→nx→xn→x→xz→x并z→zx\n\nd1最近，d2次近，d3–4远，d5同行阴阳对径。距离不自动等于生克补。\n\n[[01_98项五行十元分库总表.md]]","x":-500,"y":-900,"width":1000,"height":380,"color":"4"},
+		{"id":"zx","type":"text","text":"## zx｜阳木｜6\nd1：z、x并z\nd2：zn、xz\nd5：nx","x":-250,"y":-1500,"width":500,"height":280,"color":"4"},
+		{"id":"z","type":"text","text":"## z｜阴金｜7\nd1：zx、zn\nd2：nz、x并z\nd5：xn","x":550,"y":-1250,"width":500,"height":280,"color":"5"},
+		{"id":"zn","type":"text","text":"## zn｜阳火｜8\nd1：z、nz\nd2：zx、n\nd5：x","x":1000,"y":-550,"width":500,"height":280,"color":"1"},
+		{"id":"nz","type":"text","text":"## nz｜阴水｜1\nd1：zn、n\nd2：z、nx\nd5：xz","x":1000,"y":250,"width":500,"height":280,"color":"2"},
+		{"id":"n","type":"text","text":"## n｜阳土｜21\nd1：nz、nx\nd2：zn、xn\nd5：x并z","x":550,"y":950,"width":500,"height":280,"color":"6"},
+		{"id":"nx","type":"text","text":"## nx｜阴木｜12\nd1：n、xn\nd2：nz、x\nd5：zx","x":-250,"y":1200,"width":500,"height":280,"color":"4"},
+		{"id":"xn","type":"text","text":"## xn｜阳金｜11\nd1：nx、x\nd2：n、xz\nd5：z","x":-1050,"y":950,"width":500,"height":280,"color":"5"},
+		{"id":"x","type":"text","text":"## x｜阴火｜11\nd1：xn、xz\nd2：nx、x并z\nd5：zn","x":-1500,"y":250,"width":500,"height":280,"color":"1"},
+		{"id":"xz","type":"text","text":"## xz｜阳水｜9\nd1：x、x并z\nd2：zx、xn\nd5：nz","x":-1500,"y":-550,"width":500,"height":280,"color":"2"},
+		{"id":"xbz","type":"text","text":"## x并z｜阴土｜12\nd1：zx、xz\nd2：z、x\nd5：n","x":-1050,"y":-1250,"width":500,"height":280,"color":"6"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"zx","toNode":"z","label":"d1","fromSide":"right","toSide":"left"},
+		{"id":"e2","fromNode":"z","toNode":"zn","label":"d1","fromSide":"bottom","toSide":"top"},
+		{"id":"e3","fromNode":"zn","toNode":"nz","label":"d1","fromSide":"bottom","toSide":"top"},
+		{"id":"e4","fromNode":"nz","toNode":"n","label":"d1","fromSide":"bottom","toSide":"top"},
+		{"id":"e5","fromNode":"n","toNode":"nx","label":"d1","fromSide":"left","toSide":"right"},
+		{"id":"e6","fromNode":"nx","toNode":"xn","label":"d1","fromSide":"left","toSide":"right"},
+		{"id":"e7","fromNode":"xn","toNode":"x","label":"d1","fromSide":"top","toSide":"bottom"},
+		{"id":"e8","fromNode":"x","toNode":"xz","label":"d1","fromSide":"top","toSide":"bottom"},
+		{"id":"e9","fromNode":"xz","toNode":"xbz","label":"d1","fromSide":"top","toSide":"bottom"},
+		{"id":"e10","fromNode":"xbz","toNode":"zx","label":"d1","fromSide":"right","toSide":"left"},
+		{"id":"o1","fromNode":"zx","toNode":"nx","label":"木｜d5对立统一","fromSide":"bottom","toSide":"top"},
+		{"id":"o2","fromNode":"zn","toNode":"x","label":"火｜d5对立统一","fromSide":"left","toSide":"right"},
+		{"id":"o3","fromNode":"n","toNode":"xbz","label":"土｜d5对立统一","fromSide":"top","toSide":"bottom"},
+		{"id":"o4","fromNode":"xn","toNode":"z","label":"金｜d5对立统一","fromSide":"top","toSide":"bottom"},
+		{"id":"o5","fromNode":"xz","toNode":"nz","label":"水｜d5对立统一","fromSide":"right","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

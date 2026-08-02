@@ -1,1 +1,17 @@
-{"nodes":[{"id":"title","type":"text","text":"# 木库｜zx ↔ nx｜18项\n\n**五行身份：** 阳木zx／阴木nx\n**对立统一变量：** 最终方向与作用权来源。\n\nzx生成并占据最终方向；nx不占最终方向，接入已有路线、关系或通道续接。\n\n二者d=5同行阴阳对径，共同成木轴，但不自动等于互补或转化。\n\n[[../../01_十元相近相远总图.canvas]]\n[[../../01_98项五行十元分库总表.md]]","x":-600,"y":-700,"width":1200,"height":600,"color":"4"},{"id":"yang","type":"text","text":"## 阳木 zx｜6项\n\n- 21 外翻帘幕刘海\n- 36 经典斜扫刘海\n- 49 外翻长刘海\n- 63 外翻羽尾刘海\n- 69 侧拨Birkin刘海\n- 98 Farrah Fawcett 70年代外翻羽化刘海\n\n**环距离：** d1=z、x并z；d2=zn、xz；d5=nx。","x":-1200,"y":50,"width":900,"height":700,"color":"4"},{"id":"yin","type":"text","text":"## 阴木 nx｜12项\n\n- 01 透视齐刘海\n- 04 标准空气刘海\n- 07 极薄隐形刘海\n- 18 轻羽帘幕刘海\n- 27 空气感八字刘海\n- 32 中分碎束瓶颈刘海\n- 46 过渡生长刘海\n- 52 侧裂Baby刘海\n- 58 层叠开额羽化刘海\n- 67 轻羽Birkin刘海\n- 80 透薄长侧刘海\n- 83 细须长侧刘海\n\n**环距离：** d1=n、xn；d2=nz、x；d5=zx。","x":300,"y":50,"width":900,"height":900,"color":"4"},{"id":"audit","type":"text","text":"## 分类边界\n\n- zx条目必须由可读的外拨、斜扫、单向推进承担一级变量。\n- nx条目必须由留白、裂口、退入两侧或弱化额前存在承担一级变量。\n- 轻薄不自动等于nx；外翻不自动等于zx。\n- 具体判断仍回到参考图和结构证据。","x":-450,"y":1050,"width":900,"height":500,"color":"5"}],"edges":[{"id":"axis","fromNode":"yang","toNode":"yin","label":"木轴｜d=5 对立统一"},{"id":"e1","fromNode":"title","toNode":"yang"},{"id":"e2","fromNode":"title","toNode":"yin"}],"metadata":{"version":"1.0-1.0","frontmatter":{}}}
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# 木库｜zx ↔ nx｜18项\n\n**五行身份：** 阳木zx／阴木nx\n**对立统一变量：** 最终方向与作用权来源。\n\nzx生成并占据最终方向；nx不占最终方向，接入已有路线、关系或通道续接。\n\n二者d=5同行阴阳对径，共同成木轴，但不自动等于互补或转化。\n\n[[../../01_十元相近相远总图.canvas]]\n[[../../01_98项五行十元分库总表.md]]","x":-600,"y":-700,"width":1200,"height":600,"color":"4"},
+		{"id":"yang","type":"text","text":"## 阳木 zx｜6项\n\n- 21 外翻帘幕刘海\n- 36 经典斜扫刘海\n- 49 外翻长刘海\n- 63 外翻羽尾刘海\n- 69 侧拨Birkin刘海\n- 98 Farrah Fawcett 70年代外翻羽化刘海\n\n**环距离：** d1=z、x并z；d2=zn、xz；d5=nx。","x":-1200,"y":50,"width":900,"height":700,"color":"4"},
+		{"id":"yin","type":"text","text":"## 阴木 nx｜12项\n\n- 01 透视齐刘海\n- 04 标准空气刘海\n- 07 极薄隐形刘海\n- 18 轻羽帘幕刘海\n- 27 空气感八字刘海\n- 32 中分碎束瓶颈刘海\n- 46 过渡生长刘海\n- 52 侧裂Baby刘海\n- 58 层叠开额羽化刘海\n- 67 轻羽Birkin刘海\n- 80 透薄长侧刘海\n- 83 细须长侧刘海\n\n**环距离：** d1=n、xn；d2=nz、x；d5=zx。","x":300,"y":50,"width":900,"height":900,"color":"4"},
+		{"id":"audit","type":"text","text":"## 分类边界\n\n- zx条目必须由可读的外拨、斜扫、单向推进承担一级变量。\n- nx条目必须由留白、裂口、退入两侧或弱化额前存在承担一级变量。\n- 轻薄不自动等于nx；外翻不自动等于zx。\n- 具体判断仍回到参考图和结构证据。","x":-450,"y":1050,"width":900,"height":500,"color":"5"}
+	],
+	"edges":[
+		{"id":"axis","fromNode":"yang","toNode":"yin","label":"木轴｜d=5 对立统一","fromSide":"right","toSide":"left"},
+		{"id":"e1","fromNode":"title","toNode":"yang","fromSide":"bottom","toSide":"top"},
+		{"id":"e2","fromNode":"title","toNode":"yin","fromSide":"bottom","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

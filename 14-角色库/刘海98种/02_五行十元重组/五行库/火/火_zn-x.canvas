@@ -1,1 +1,17 @@
-{"nodes":[{"id":"title","type":"text","text":"# 火库｜zn ↔ x｜19项\n\n**五行身份：** 阳火zn／阴火x\n**对立统一变量：** 对象独立成立资格与归属方式。\n\nzn保留对象自身意义、选择与独立成立；x划定归属边界，使对象进入掌握、调用、处分或排除范围。\n\n二者d=5同行阴阳对径，共同成火轴。\n\n[[../../01_十元相近相远总图.canvas]]\n[[../../01_98项五行十元分库总表.md]]","x":-600,"y":-700,"width":1200,"height":600,"color":"1"},{"id":"yang","type":"text","text":"## 阳火 zn｜8项\n\n- 20 卷曲帘幕刘海\n- 30 卷曲瓶颈刘海\n- 51 卷曲Baby刘海\n- 65 经典Birkin刘海\n- 70 卷曲Birkin刘海\n- 85 柔波刘海\n- 89 螺旋分层刘海\n- 91 蓬松卷团刘海\n\n**环距离：** d1=z、nz；d2=zx、n；d5=x。","x":-1200,"y":50,"width":900,"height":760,"color":"1"},{"id":"yin","type":"text","text":"## 阴火 x｜11项\n\n- 12 方形眉上齐刘海\n- 42 不对称斜扫刘海\n- 53 碎边Baby刘海\n- 54 尖点Baby刘海\n- 60 不对称羽化刘海\n- 71 拱形刘海\n- 72 U形刘海\n- 73 V形尖角刘海\n- 74 宽方形刘海\n- 75 锐斜不对称刘海\n- 93 Bettie Page圆弧Pinup刘海\n\n**环距离：** d1=xn、xz；d2=nx、x并z；d5=zn。","x":300,"y":50,"width":900,"height":860,"color":"1"},{"id":"audit","type":"text","text":"## 分类边界\n\n- zn条目必须由原生纹理、低干预或对象自身结构继续成立承担一级变量。\n- x条目必须由硬边界、几何轮廓或明确归属切割承担一级变量。\n- 自然感不自动等于zn；有形状也不自动等于x。","x":-450,"y":1050,"width":900,"height":480,"color":"5"}],"edges":[{"id":"axis","fromNode":"yang","toNode":"yin","label":"火轴｜d=5 对立统一"},{"id":"e1","fromNode":"title","toNode":"yang"},{"id":"e2","fromNode":"title","toNode":"yin"}],"metadata":{"version":"1.0-1.0","frontmatter":{}}}
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# 火库｜zn ↔ x｜19项\n\n**五行身份：** 阳火zn／阴火x\n**对立统一变量：** 对象独立成立资格与归属方式。\n\nzn保留对象自身意义、选择与独立成立；x划定归属边界，使对象进入掌握、调用、处分或排除范围。\n\n二者d=5同行阴阳对径，共同成火轴。\n\n[[../../01_十元相近相远总图.canvas]]\n[[../../01_98项五行十元分库总表.md]]","x":-600,"y":-700,"width":1200,"height":600,"color":"1"},
+		{"id":"yang","type":"text","text":"## 阳火 zn｜8项\n\n- 20 卷曲帘幕刘海\n- 30 卷曲瓶颈刘海\n- 51 卷曲Baby刘海\n- 65 经典Birkin刘海\n- 70 卷曲Birkin刘海\n- 85 柔波刘海\n- 89 螺旋分层刘海\n- 91 蓬松卷团刘海\n\n**环距离：** d1=z、nz；d2=zx、n；d5=x。","x":-1200,"y":50,"width":900,"height":760,"color":"1"},
+		{"id":"yin","type":"text","text":"## 阴火 x｜11项\n\n- 12 方形眉上齐刘海\n- 42 不对称斜扫刘海\n- 53 碎边Baby刘海\n- 54 尖点Baby刘海\n- 60 不对称羽化刘海\n- 71 拱形刘海\n- 72 U形刘海\n- 73 V形尖角刘海\n- 74 宽方形刘海\n- 75 锐斜不对称刘海\n- 93 Bettie Page圆弧Pinup刘海\n\n**环距离：** d1=xn、xz；d2=nx、x并z；d5=zn。","x":300,"y":50,"width":900,"height":860,"color":"1"},
+		{"id":"audit","type":"text","text":"## 分类边界\n\n- zn条目必须由原生纹理、低干预或对象自身结构继续成立承担一级变量。\n- x条目必须由硬边界、几何轮廓或明确归属切割承担一级变量。\n- 自然感不自动等于zn；有形状也不自动等于x。","x":-450,"y":1050,"width":900,"height":480,"color":"5"}
+	],
+	"edges":[
+		{"id":"axis","fromNode":"yang","toNode":"yin","label":"火轴｜d=5 对立统一","fromSide":"right","toSide":"left"},
+		{"id":"e1","fromNode":"title","toNode":"yang","fromSide":"bottom","toSide":"top"},
+		{"id":"e2","fromNode":"title","toNode":"yin","fromSide":"bottom","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
