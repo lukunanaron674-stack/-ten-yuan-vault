@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1800" viewBox="0 0 1800 1800">
+  <defs>
+    <style>
+      .panel{fill:#f7f4ee;stroke:#2b2b2b;stroke-width:4}
+      .skin{fill:#f2c7ad;stroke:#2b2b2b;stroke-width:5}
+      .neck{fill:#eeb99d;stroke:#2b2b2b;stroke-width:4}
+      .shirt{fill:#30343b;stroke:#2b2b2b;stroke-width:4}
+      .hair{fill:#17191f;stroke:#0b0c10;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .hair2{fill:none;stroke:#2f3542;stroke-width:8;stroke-linecap:round}
+      .line{fill:none;stroke:#2b2b2b;stroke-width:5;stroke-linecap:round}
+      .num{font:700 54px Arial, sans-serif;fill:#2b2b2b}
+      .label{font:700 34px Arial, sans-serif;fill:#2b2b2b}
+      .sub{font:500 24px Arial, sans-serif;fill:#57534e}
+    </style>
+  </defs>
+
+  <rect width="1800" height="1800" fill="#ded8cc"/>
+
+  <!-- Panels -->
+  <g id="grid">
+    <rect class="panel" x="30" y="30" width="560" height="560" rx="18"/>
+    <rect class="panel" x="620" y="30" width="560" height="560" rx="18"/>
+    <rect class="panel" x="1210" y="30" width="560" height="560" rx="18"/>
+    <rect class="panel" x="30" y="620" width="560" height="560" rx="18"/>
+    <rect class="panel" x="620" y="620" width="560" height="560" rx="18"/>
+    <rect class="panel" x="1210" y="620" width="560" height="560" rx="18"/>
+    <rect class="panel" x="30" y="1210" width="560" height="560" rx="18"/>
+    <rect class="panel" x="620" y="1210" width="560" height="560" rx="18"/>
+    <rect class="panel" x="1210" y="1210" width="560" height="560" rx="18"/>
+  </g>
+
+  <!-- reusable face drawn manually per panel for easy hair layering -->
+  <!-- 1 high battle ponytail -->
+  <g transform="translate(30,30)">
+    <text class="num" x="28" y="68">1</text>
+    <path class="shirt" d="M175 500 Q280 420 385 500 L425 560 H135 Z"/>
+    <path class="neck" d="M250 390 H330 V485 Q290 510 250 485 Z"/>
+    <path class="hair" d="M176 206 Q185 105 286 82 Q405 90 416 210 Q385 136 286 132 Q210 136 176 206 Z"/>
+    <path class="hair" d="M318 103 Q430 44 506 122 Q442 132 369 184 Z"/>
+    <path class="hair2" d="M364 108 Q450 62 518 126"/>
+    <path class="skin" d="M184 210 Q190 125 290 120 Q390 125 398 210 V286 Q394 374 290 414 Q186 374 184 286 Z"/>
+    <path class="hair" d="M176 214 Q215 126 290 124 Q366 128 410 214 Q350 175 290 176 Q230 176 176 214 Z"/>
+    <path class="line" d="M245 268 Q260 258 275 268 M305 268 Q320 258 335 268 M282 313 Q290 320 298 313 M260 350 Q290 366 320 350"/>
+    <text class="label" x="132" y="520">High Ponytail</text>
+    <text class="sub" x="142" y="550">battle / action</text>
+  </g>
+
+  <!-- 2 boxer braids -->
+  <g transform="translate(620,30)">
+    <text class="num" x="28" y="68">2</text>
+    <path class="shirt" d="M175 500 Q280 420 385 500 L425 560 H135 Z"/>
+    <path class="neck" d="M250 390 H330 V485 Q290 510 250 485 Z"/>
+    <path class="hair" d="M178 210 Q184 98 290 78 Q396 98 402 210 Q342 140 290 140 Q238 140 178 210 Z"/>
+    <path class="skin" d="M188 210 Q196 136 290 126 Q384 136 392 210 V286 Q388 374 290 414 Q192 374 188 286 Z"/>
+    <path class="hair2" d="M258 126 Q232 190 220 254 Q212 312 198 380 Q188 430 170 482"/>
+    <path class="hair2" d="M322 126 Q348 190 360 254 Q368 312 382 380 Q392 430 410 482"/>
+    <path class="hair2" d="M238 170 L278 212 L230 254 L270 296 L222 338"/>
+    <path class="hair2" d="M342 170 L302 212 L350 254 L310 296 L358 338"/>
+    <path class="line" d="M245 268 Q260 258 275 268 M305 268 Q320 258 335 268 M282 313 Q290 320 298 313 M260 350 Q290 366 320 350"/>
+    <text class="label" x="146" y="520">Boxer Braids</text>
+    <text class="sub" x="128" y="550">tight forward-clear paths</text>
+  </g>
+
+  <!-- 3 pixie -->
+  <g transform="translate(1210,30)">
+    <text class="num" x="28" y="68">3</text>
+    <path class="shirt" d="M175 500 Q280 420 385 500 L425 560 H135 Z"/>
+    <path class="neck" d="M250 390 H330 V485 Q290 510 250 485 Z"/>
+    <path class="hair" d="M184 202 Q186 104 284 82 Q384 90 404 188 Q360 144 292 150 Q226 148 184 202 Z"/>
+    <path class="hair" d="M210 130 L246 82 L270 138 L316 80 L324 142 L380 112 L350 174 Z"/>
+    <path class="skin" d="M190 202 Q198 138 290 126 Q382 138 390 202 V286 Q386 374 290 414 Q194 374 190 286 Z"/>
+    <path class="hair" d="M184 204 Q236 126 330 132 Q284 168 220 176 Z"/>
+    <path class="line" d="M245 268 Q260 258 275 268 M305 268 Q320 258 335 268 M282 313 Q290 320 298 313 M260 350 Q290 366 320 350"/>
+    <text class="label" x="158" y="520">Modern Pixie</text>
+    <text class="sub" x="152" y="550">open face / no drag</text>
+  </g>
+
+  <!-- 4 mohawk -->
+  <g transform="translate(30,620)">
+    <text class="num" x="28" y="68">4</text>
+    <path class="shirt" d="M175 500 Q280 420 385 500 L425 560 H135 Z"/>
+    <path class="neck" d="M250 390 H330 V485 Q290 510 250 485 Z"/>
+    <path class="hair" d="M262 178 L276 70 L302 168 L334 50 L344 188 Q304 148 262 178 Z"/>
+    <path class="skin" d="M190 210 Q198 138 290 126 Q382 138 390 210 V286 Q386 374 290 414 Q194 374 190 286 Z"/>
+    <path class="hair2" d="M202 180 Q226 138 260 128 M378 180 Q354 138 320 128"/>
+    <path class="hair" d="M194 210 Q230 150 290 152 Q350 150 386 210 Q336 182 290 184 Q244 182 194 210 Z"/>
+    <path class="line" d="M245 268 Q260 258 275 268 M305 268 Q320 258 335 268 M282 313 Q290 320 298 313 M260 350 Q290 366 320 350"/>
+    <text class="label" x="138" y="520">Faux Mohawk</text>
+    <text class="sub" x="148" y="550">vertical power flag</text>
+  </g>
+
+  <!-- 5 slicked undercut -->
+  <g transform="translate(620,620)">
+    <text class="num" x="28" y="68">5</text>
+    <path class="shirt" d="M175 500 Q280 420 385 500 L425 560 H135 Z"/>
+    <path class="neck" d="M250 390 H330 V485 Q290 510 250 485 Z"/>
+    <path class="skin" d="M190 210 Q198 138 290 126 Q382 138 390 210 V286 Q386 374 290 414 Q194 374 190 286 Z"/>
+    <path class="hair" d="M184 204 Q204 104 310 82 Q386 94 410 174 Q334 122 238 150 Z"/>
+    <path class="hair2" d="M230 145 Q300 96 392 128 M230 168 Q304 126 404 150"/>
+    <path class="hair2" d="M202 200 L202 310 M378 200 L378 310"/>
+    <path class="line" d="M245 268 Q260 258 275 268 M305 268 Q320 258 335 268 M282 313 Q290 320 298 313 M260 350 Q290 366 320 350"/>
+    <text class="label" x="112" y="520">Slick Undercut</text>
+    <text class="sub" x="132" y="550">shaved sides / exposed front</text>
+  </g>
+
+  <!-- 6 graduated bob -->
+  <g transform="translate(1210,620)">
+    <text class="num" x="28" y="68">6</text>
+    <path class="shirt" d="M175 500 Q280 420 385 500 L425 560 H135 Z"/>
+    <path class="neck" d="M250 390 H330 V485 Q290 510 250 485 Z"/>
+    <path class="hair" d="M170 210 Q180 100 290 82 Q400 100 410 210 Q418 330 356 430 Q348 350 330 260 Q292 230 250 260 Q232 350 224 430 Q162 330 170 210 Z"/>
+    <path class="skin" d="M190 210 Q198 138 290 126 Q382 138 390 210 V286 Q386 374 290 414 Q194 374 190 286 Z"/>
+    <path class="hair2" d="M204 314 Q292 364 374 290 M214 350 Q292 390 364 330"/>
+    <path class="line" d="M245 268 Q260 258 275 268 M305 268 Q320 258 335 268 M282 313 Q290 320 298 313 M260 350 Q290 366 320 350"/>
+    <text class="label" x="122" y="520">Graduated Bob</text>
+    <text class="sub" x="116" y="550">stacked forward push</text>
+  </g>
+
+  <!-- 7 high bun -->
+  <g transform="translate(30,1210)">
+    <text class="num" x="28" y="68">7</text>
+    <path class="shirt" d="M175 500 Q280 420 385 500 L425 560 H135 Z"/>
+    <path class="neck" d="M250 390 H330 V485 Q290 510 250 485 Z"/>
+    <circle class="hair" cx="290" cy="88" r="58"/>
+    <path class="hair" d="M178 214 Q184 112 290 98 Q396 112 402 214 Q350 152 290 152 Q230 152 178 214 Z"/>
+    <path class="skin" d="M190 210 Q198 138 290 126 Q382 138 390 210 V286 Q386 374 290 414 Q194 374 190 286 Z"/>
+    <path class="hair2" d="M216 178 Q290 122 364 178"/>
+    <path class="line" d="M245 268 Q260 258 275 268 M305 268 Q320 258 335 268 M282 313 Q290 320 298 313 M260 350 Q290 366 320 350"/>
+    <text class="label" x="176" y="520">High Bun</text>
+    <text class="sub" x="152" y="550">top knot / ready state</text>
+  </g>
+
+  <!-- 8 slicked back -->
+  <g transform="translate(620,1210)">
+    <text class="num" x="28" y="68">8</text>
+    <path class="shirt" d="M175 500 Q280 420 385 500 L425 560 H135 Z"/>
+    <path class="neck" d="M250 390 H330 V485 Q290 510 250 485 Z"/>
+    <path class="skin" d="M190 210 Q198 138 290 126 Q382 138 390 210 V286 Q386 374 290 414 Q194 374 190 286 Z"/>
+    <path class="hair" d="M184 208 Q190 104 290 78 Q390 104 396 208 Q350 154 290 150 Q230 154 184 208 Z"/>
+    <path class="hair2" d="M218 148 Q260 94 290 84 M254 154 Q284 98 316 86 M314 154 Q336 104 372 128"/>
+    <path class="line" d="M245 268 Q260 258 275 268 M305 268 Q320 258 335 268 M282 313 Q290 320 298 313 M260 350 Q290 366 320 350"/>
+    <text class="label" x="132" y="520">Slicked Back</text>
+    <text class="sub" x="134" y="550">public exposed authority</text>
+  </g>
+
+  <!-- 9 mixie -->
+  <g transform="translate(1210,1210)">
+    <text class="num" x="28" y="68">9</text>
+    <path class="shirt" d="M175 500 Q280 420 385 500 L425 560 H135 Z"/>
+    <path class="neck" d="M250 390 H330 V485 Q290 510 250 485 Z"/>
+    <path class="hair" d="M184 204 Q190 102 290 82 Q392 96 404 204 Q360 148 290 148 Q230 148 184 204 Z"/>
+    <path class="hair" d="M224 372 Q250 444 230 520 Q290 470 350 520 Q330 444 356 372 Z"/>
+    <path class="skin" d="M190 204 Q198 138 290 126 Q382 138 390 204 V286 Q386 374 290 414 Q194 374 190 286 Z"/>
+    <path class="hair" d="M186 210 Q232 140 318 132 L278 174 L230 180 Z"/>
+    <path class="hair2" d="M220 160 L250 120 M310 138 L352 116 M340 185 L386 168"/>
+    <path class="line" d="M245 268 Q260 258 275 268 M305 268 Q320 258 335 268 M282 313 Q290 320 298 313 M260 350 Q290 366 320 350"/>
+    <text class="label" x="206" y="520">Mixie</text>
+    <text class="sub" x="132" y="550">mullet pixie / comeback</text>
+  </g>
+</svg>
