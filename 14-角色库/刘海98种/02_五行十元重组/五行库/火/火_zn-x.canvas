@@ -6,9 +6,9 @@
 		{"id":"audit","type":"text","text":"## 分类边界\n\n- zn条目必须由原生纹理、低干预或对象自身结构继续成立承担一级变量。\n- x条目必须由硬边界、几何轮廓或明确归属切割承担一级变量。\n- 自然感不自动等于zn；有形状也不自动等于x。","x":-450,"y":1050,"width":900,"height":480,"color":"5"}
 	],
 	"edges":[
-		{"id":"axis","fromNode":"yang","toNode":"yin","label":"火轴｜d=5 对立统一","fromSide":"right","toSide":"left"},
-		{"id":"e1","fromNode":"title","toNode":"yang","fromSide":"bottom","toSide":"top"},
-		{"id":"e2","fromNode":"title","toNode":"yin","fromSide":"bottom","toSide":"top"}
+		{"id":"axis","fromFloating":false,"fromNode":"yang","fromSide":"right","toNode":"yin","toSide":"left","label":"火轴｜d=5 对立统一"},
+		{"id":"e1","fromNode":"title","fromSide":"bottom","toNode":"yang","toSide":"top"},
+		{"id":"e2","fromNode":"title","fromSide":"bottom","toNode":"yin","toSide":"top"}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
