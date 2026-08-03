@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""为刘海98种五行研究卡写入十元映射度并审计。
+"""为刘海98种五行研究卡写入十元配比度并审计。
 
 v1迁移模型：
 - 类型层：叙事狭义主题完整继承五行两端，两个十元继承度均为100。
-- 实例层：主十元映射度=旧纯度，副十元映射度=100-旧纯度，其余八项暂记0。
-- 该模型标记为 provisional_two-pole_normalized，不冒充十维终审。
+- 实例层：主十元配比度=旧纯度，副十元配比度=100-旧纯度，其余八项暂记0。
+- 该模型标记为 provisional_two_pole_normalized，不冒充十维终审。
+
+注意：配比度回答“由哪些十元构成”；单十元本征映射准度由另一脚本独立写入。
 """
 from __future__ import annotations
 
@@ -40,7 +42,10 @@ ELEMENT_CANVASES = {
 ITEM_RE = re.compile(r"^##\s*(\d{2})[｜|]", re.M)
 PURITY_RE = re.compile(r"纯度(?:[：:]\*{0,2}\s*)?(\d{1,3})%")
 MAP_RE = re.compile(r"\*\*正式十元映射：\*\*\s*主\s*`([^`]+)`／副\s*`([^`]+)`")
-DEGREE_LINE_RE = re.compile(r"^\*\*(?:实例十元映射度|映射度模型|类型十元继承映射度)：\*\*.*$", re.M)
+DEGREE_LINE_RE = re.compile(
+    r"^\*\*(?:实例十元映射度|实例十元配比度|映射度模型|配比模型|类型十元继承映射度)：\*\*.*$",
+    re.M,
+)
 
 
 def load_canvas(path: Path) -> dict:
@@ -109,16 +114,16 @@ def patch_card(text: str, purity: dict[int, int]) -> tuple[str, int, int, int]:
     secondary_degree = 100 - main_degree
 
     text = clean_degree_lines(text)
-    mapping_line = (
-        f"**实例十元映射度：** 主 `{main}` {main_degree}%／副 `{secondary}` {secondary_degree}%"
+    ratio_line = (
+        f"**实例十元配比度：** 主 `{main}` {main_degree}%／副 `{secondary}` {secondary_degree}%"
         "（主副双项总和100%）"
     )
     model_line = (
-        "**映射度模型：** `provisional_two-pole-normalized`｜"
+        "**配比模型：** `provisional-two-pole-normalized`｜"
         "来源：旧纯度迁移｜其余八项暂记0｜十维终审：pending"
     )
     anchor = map_match.group(0)
-    text = text.replace(anchor, anchor + "\n" + mapping_line + "\n" + model_line, 1)
+    text = text.replace(anchor, anchor + "\n" + ratio_line + "\n" + model_line, 1)
     return text, item, main_degree, secondary_degree
 
 
@@ -139,7 +144,7 @@ def patch_canvases(purity: dict[int, int]) -> tuple[int, int]:
                 continue
             patched, item, main_degree, secondary_degree = patch_card(text, purity)
             if main_degree + secondary_degree != 100:
-                raise RuntimeError(f"映射度总和错误：{item:02d}")
+                raise RuntimeError(f"配比度总和错误：{item:02d}")
             if item in seen:
                 raise RuntimeError(f"五行卡编号重复：{item:02d}")
             seen.add(item)
@@ -147,23 +152,23 @@ def patch_canvases(purity: dict[int, int]) -> tuple[int, int]:
         path.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
     if seen != set(range(1, 99)):
-        raise RuntimeError(f"五行卡映射度覆盖失败：{len(seen)}/98")
+        raise RuntimeError(f"五行卡配比度覆盖失败：{len(seen)}/98")
     if titles != 5:
-        raise RuntimeError(f"五行类型映射度标题失败：{titles}/5")
+        raise RuntimeError(f"五行类型继承映射度标题失败：{titles}/5")
     return len(seen), titles
 
 
 def update_audit(card_count: int, title_count: int) -> None:
     text = AUDIT.read_text(encoding="utf-8")
-    text = re.sub(r"\n## 十元映射度审计[\s\S]*$", "", text).rstrip()
+    text = re.sub(r"\n## 十元(?:映射度|配比度)审计[\s\S]*$", "", text).rstrip()
     text += f"""
 
-## 十元映射度审计
+## 十元配比度审计
 
 - 类型轴继承映射度：{title_count}/5
-- 实例卡映射度：{card_count}/98
-- 每卡主副映射度总和：100%
-- 当前模型：`provisional_two-pole-normalized`
+- 实例卡配比度：{card_count}/98
+- 每卡主副配比度总和：100%
+- 当前模型：`provisional-two-pole-normalized`
 - 迁移来源：旧研究纯度
 - 其余八个十元：暂记0
 - 十维全量终审：pending
@@ -173,7 +178,7 @@ def update_audit(card_count: int, title_count: int) -> None:
 实例层：主十元=旧纯度，副十元=100-旧纯度，总和100%。
 ```
 
-映射度、体量、纯度和证据置信度必须分字段保存，不得互相冒充。
+配比度、单十元本征映射准度、体量、纯度和证据置信度必须分字段保存。
 """
     AUDIT.write_text(text + "\n", encoding="utf-8")
 
@@ -182,7 +187,7 @@ def main() -> None:
     purity = collect_purity()
     card_count, title_count = patch_canvases(purity)
     update_audit(card_count, title_count)
-    print(f"ten-yuan mapping degree applied: cards={card_count}, element_types={title_count}")
+    print(f"ten-yuan composition ratio applied: cards={card_count}, element_types={title_count}")
 
 
 if __name__ == "__main__":
