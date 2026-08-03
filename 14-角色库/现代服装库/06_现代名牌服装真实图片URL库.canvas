@@ -1,1 +1,84 @@
-{"nodes":[{"id":"title","type":"text","text":"# 现代名牌服装真实图片 URL 库｜1000套\n\n全部指向网络真实秀场图片页。\n不使用AI图，不复制版权图片，只保存检索入口。\n\n17个2026高级成衣系列｜1000个独立Look","x":-700,"y":-650,"width":1400,"height":420,"color":"4"},{"id":"readme","type":"file","file":"14-角色库/现代服装库/06_现代名牌服装真实图片URL库/README.md","x":-950,"y":0,"width":520,"height":520},{"id":"json","type":"file","file":"14-角色库/现代服装库/06_现代名牌服装真实图片URL库/collections.json","x":-250,"y":0,"width":520,"height":520},{"id":"generator","type":"file","file":"14-角色库/现代服装库/06_现代名牌服装真实图片URL库/generate_1000_urls.py","x":450,"y":0,"width":520,"height":520},{"id":"rule","type":"text","text":"## URL规则\n\n`系列图库URL#Look编号`\n\n例：\n`.../chanel/slideshow/collection#37`\n\n脚本可生成完整1000条CSV或Markdown。","x":-600,"y":750,"width":1200,"height":420,"color":"3"}],"edges":[{"id":"e1","fromNode":"title","toNode":"readme"},{"id":"e2","fromNode":"title","toNode":"json"},{"id":"e3","fromNode":"title","toNode":"generator"},{"id":"e4","fromNode":"readme","toNode":"rule"},{"id":"e5","fromNode":"json","toNode":"rule"},{"id":"e6","fromNode":"generator","toNode":"rule"}],"metadata":{"version":"1.0","frontmatter":{}}}
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# 现代名牌服装真实图片库｜修正版入口\n\n当前状态：`evidence-pending`\n\n上一版只有来源页URL，没有真实图片直链，所以Canvas不显示衣服。\n修正版工作链：\n来源系列页 → 抓取候选 image_url → 人工核验 → 生成分系列 Canvas 图库。",
+      "x": -700,
+      "y": -650,
+      "width": 1400,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "readme",
+      "type": "file",
+      "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/README.md",
+      "x": -1100,
+      "y": 0,
+      "width": 520,
+      "height": 420
+    },
+    {
+      "id": "collections",
+      "type": "file",
+      "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/collections.json",
+      "x": -500,
+      "y": 0,
+      "width": 520,
+      "height": 420
+    },
+    {
+      "id": "records",
+      "type": "file",
+      "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/image_records.json",
+      "x": 100,
+      "y": 0,
+      "width": 520,
+      "height": 420
+    },
+    {
+      "id": "scraper",
+      "type": "file",
+      "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/scrape_vogue_image_records.py",
+      "x": 700,
+      "y": 0,
+      "width": 520,
+      "height": 420
+    },
+    {
+      "id": "builder",
+      "type": "file",
+      "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/build_fashion_image_canvases.py",
+      "x": 1300,
+      "y": 0,
+      "width": 520,
+      "height": 420
+    },
+    {
+      "id": "workflow",
+      "type": "text",
+      "text": "## 正确生成链\n\n1. 运行 `scrape_vogue_image_records.py`，为1000个Look抓取候选 `image_url`。\n2. 人工核验 `image_url` 与 `source_page_url`、Look 编号、重复与失效情况。\n3. 运行 `build_fashion_image_canvases.py`。\n4. 输出 `generated_canvases/00_真实图片总索引.canvas` 与 17 个分系列图库。\n\n**关键区别：**\n- `source_page_url` = 网页来源页\n- `image_url` = Canvas 真正显示图片所需的直链\n\n没有 `image_url`，Canvas 只会给你看链接，服装会继续处于唯心主义阶段。",
+      "x": -300,
+      "y": 650,
+      "width": 1300,
+      "height": 500,
+      "color": "3"
+    }
+  ],
+  "edges": [
+    {"id": "e1", "fromNode": "title", "toNode": "readme"},
+    {"id": "e2", "fromNode": "title", "toNode": "collections"},
+    {"id": "e3", "fromNode": "title", "toNode": "records"},
+    {"id": "e4", "fromNode": "title", "toNode": "scraper"},
+    {"id": "e5", "fromNode": "title", "toNode": "builder"},
+    {"id": "e6", "fromNode": "readme", "toNode": "workflow"},
+    {"id": "e7", "fromNode": "records", "toNode": "workflow"},
+    {"id": "e8", "fromNode": "scraper", "toNode": "workflow"},
+    {"id": "e9", "fromNode": "builder", "toNode": "workflow"}
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {}
+  }
+}
