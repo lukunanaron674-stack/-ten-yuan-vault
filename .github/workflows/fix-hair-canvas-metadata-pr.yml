@@ -1,0 +1,99 @@
+name: Fix Hair Canvas Metadata PR
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '05-银矿库/角色库/发型库总表/.fix-canvas-metadata-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  normalize-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            05-银矿库/角色库/发型库总表
+            05-银矿库/角色库/刘海98种
+          sparse-checkout-cone-mode: false
+
+      - name: Normalize Advanced JSON Canvas metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          roots = [
+              Path('05-银矿库/角色库/发型库总表'),
+              Path('05-银矿库/角色库/刘海98种'),
+          ]
+          changed = []
+          checked = 0
+          for root in roots:
+              if not root.exists():
+                  continue
+              for path in sorted(root.rglob('*.canvas')):
+                  checked += 1
+                  data = json.loads(path.read_text(encoding='utf-8'))
+                  metadata = data.get('metadata')
+                  if not isinstance(metadata, dict):
+                      metadata = {}
+                      data['metadata'] = metadata
+                  before = metadata.get('version')
+                  metadata['version'] = '1.0-1.0'
+                  if not isinstance(metadata.get('frontmatter'), dict):
+                      metadata['frontmatter'] = {}
+                  if before != '1.0-1.0':
+                      path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+                      changed.append(f'{path}: {before!r} -> 1.0-1.0')
+
+          print(f'checked={checked} changed={len(changed)}')
+          for item in changed:
+              print(item)
+          if checked == 0:
+              raise SystemExit('No canvas files found')
+          PY
+
+      - name: Validate all Canvas metadata versions
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          bad = []
+          for root in [Path('05-银矿库/角色库/发型库总表'), Path('05-银矿库/角色库/刘海98种')]:
+              if not root.exists():
+                  continue
+              for path in root.rglob('*.canvas'):
+                  data = json.loads(path.read_text(encoding='utf-8'))
+                  version = (data.get('metadata') or {}).get('version')
+                  if version != '1.0-1.0':
+                      bad.append(f'{path}: {version!r}')
+          if bad:
+              raise SystemExit('Invalid metadata versions:\n' + '\n'.join(bad))
+          print('All Canvas metadata versions are valid: 1.0-1.0')
+          PY
+
+      - name: Commit normalized Canvas files
+        shell: bash
+        run: |
+          set -euo pipefail
+          BRANCH='${{ github.event.pull_request.head.ref }}'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add '05-银矿库/角色库/发型库总表' '05-银矿库/角色库/刘海98种'
+          if git diff --cached --quiet; then
+            echo 'No metadata changes required.'
+            exit 0
+          fi
+          git commit -m '修复05发型库Canvas元数据版本为1.0-1.0'
+          git push origin HEAD:"$BRANCH"
