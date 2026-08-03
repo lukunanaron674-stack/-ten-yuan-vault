@@ -1,1 +1,21 @@
-{"nodes":[{"id":"title","type":"text","text":"# 现代名牌服装真实图片 URL 库｜1000套\n\n全部指向网络真实秀场图片页。\n不使用AI图，不复制版权图片，只保存检索入口。\n\n17个2026高级成衣系列｜1000个独立Look","x":-700,"y":-650,"width":1400,"height":420,"color":"4"},{"id":"readme","type":"file","file":"14-角色库/现代服装库/06_现代名牌服装真实图片URL库/README.md","x":-950,"y":0,"width":520,"height":520},{"id":"json","type":"file","file":"14-角色库/现代服装库/06_现代名牌服装真实图片URL库/collections.json","x":-250,"y":0,"width":520,"height":520},{"id":"generator","type":"file","file":"14-角色库/现代服装库/06_现代名牌服装真实图片URL库/generate_1000_urls.py","x":450,"y":0,"width":520,"height":520},{"id":"rule","type":"text","text":"## URL规则\n\n`系列图库URL#Look编号`\n\n例：\n`.../chanel/slideshow/collection#37`\n\n脚本可生成完整1000条CSV或Markdown。","x":-600,"y":750,"width":1200,"height":420,"color":"3"}],"edges":[{"id":"e1","fromNode":"title","toNode":"readme"},{"id":"e2","fromNode":"title","toNode":"json"},{"id":"e3","fromNode":"title","toNode":"generator"},{"id":"e4","fromNode":"readme","toNode":"rule"},{"id":"e5","fromNode":"json","toNode":"rule"},{"id":"e6","fromNode":"generator","toNode":"rule"}],"metadata":{"version":"1.0","frontmatter":{}}}
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# 现代名牌服装真实图片 URL 库｜1000套\n\n全部指向网络真实秀场图片页。\n不使用AI图，不复制版权图片，只保存检索入口。\n\n17个2026高级成衣系列｜1000个独立Look","x":-700,"y":-650,"width":1400,"height":420,"color":"4"},
+		{"id":"readme","type":"file","file":"14-角色库/现代服装库/06_现代名牌服装真实图片URL库/README.md","x":-950,"y":0,"width":520,"height":520},
+		{"id":"json","type":"file","file":"14-角色库/现代服装库/06_现代名牌服装真实图片URL库/collections.json","x":-250,"y":0,"width":520,"height":520},
+		{"id":"generator","type":"file","file":"14-角色库/现代服装库/06_现代名牌服装真实图片URL库/generate_1000_urls.py","x":450,"y":0,"width":520,"height":520},
+		{"id":"rule","type":"text","text":"## URL规则\n\n`系列图库URL#Look编号`\n\n例：\n`.../chanel/slideshow/collection#37`\n\n脚本可生成完整1000条CSV或Markdown。","x":-600,"y":750,"width":1200,"height":420,"color":"3"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"title","toNode":"readme","fromSide":"bottom","toSide":"top"},
+		{"id":"e2","fromNode":"title","toNode":"json","fromSide":"bottom","toSide":"top"},
+		{"id":"e3","fromNode":"title","toNode":"generator","fromSide":"bottom","toSide":"left"},
+		{"id":"e4","fromNode":"readme","toNode":"rule","fromSide":"bottom","toSide":"top"},
+		{"id":"e5","fromNode":"json","toNode":"rule","fromSide":"bottom","toSide":"top"},
+		{"id":"e6","fromNode":"generator","toNode":"rule","fromSide":"left","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0",
+		"frontmatter":{}
+	}
+}
