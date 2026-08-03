@@ -1,0 +1,75 @@
+name: Build Fashion Image Canvases PR
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '14-角色库/现代服装库/06_现代名牌服装真实图片URL库/.fashion-image-pr-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch 1000 real Vogue image URLs
+        working-directory: '14-角色库/现代服装库/06_现代名牌服装真实图片URL库'
+        run: |
+          set -euo pipefail
+          python scrape_vogue_image_records.py \
+            --collections collections.json \
+            --output image_records.json
+
+      - name: Build Obsidian Canvas galleries
+        working-directory: '14-角色库/现代服装库/06_现代名牌服装真实图片URL库'
+        run: |
+          set -euo pipefail
+          rm -rf generated_canvases
+          python build_fashion_image_canvases.py \
+            --input image_records.json \
+            --output-dir generated_canvases
+
+      - name: Validate output
+        working-directory: '14-角色库/现代服装库/06_现代名牌服装真实图片URL库'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('image_records.json').read_text(encoding='utf-8'))
+          assert data['total_records'] == 1000, data.get('total_records')
+          assert len(data['records']) == 1000
+          assert len({r['image_url'] for r in data['records']}) == 1000
+          canvases = list(Path('generated_canvases').glob('*.canvas'))
+          detail = [p for p in canvases if p.name != '00_真实图片总索引.canvas']
+          assert detail, '没有生成分系列Canvas'
+          assert all('![](http' in p.read_text(encoding='utf-8') for p in detail)
+          print(f'validated: 1000 image URLs, {len(canvases)} canvases')
+          PY
+
+      - name: Commit generated records to PR branch
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- \
+            '14-角色库/现代服装库/06_现代名牌服装真实图片URL库/image_records.json' \
+            '14-角色库/现代服装库/06_现代名牌服装真实图片URL库/generated_canvases'
+          if git diff --cached --quiet; then
+            echo 'No generated changes.'
+            exit 0
+          fi
+          git commit -m '生成1000套现代服装真实图片Canvas'
+          git push origin HEAD:${{ github.head_ref }}
