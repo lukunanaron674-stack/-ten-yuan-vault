@@ -3,17 +3,17 @@
     {
       "id": "title_hair_index",
       "type": "text",
-      "text": "# 女性发型库｜总索引\n\n**一级家族覆盖：15类｜本地可见配图：9项**\n\n执行规则：[[05-银矿库/角色库/发型库总表/SKILL]]\n规则学习源：[[14-角色库/刘海98种/SKILL]]\n\n本索引负责把刘海专项、基础家族总表和真实参考批次串联起来。详细条目保持独立Canvas，不再把全部节点塞回一个巨大文件。",
-      "x": -600,
-      "y": -760,
-      "width": 1200,
-      "height": 520,
+      "text": "# 女性发型库｜总索引\n\n**一级家族覆盖：15类｜本地可见配图：20项**\n\n执行规则：[[05-银矿库/角色库/发型库总表/SKILL]]\n规则学习源：[[14-角色库/刘海98种/SKILL]]\n\n05库负责运行和产出；14库只提供S级配图、证据与Canvas治理规则。详细条目保持独立Canvas。",
+      "x": -650,
+      "y": -820,
+      "width": 1300,
+      "height": 560,
       "color": "4"
     },
     {
       "id": "group_core",
       "type": "group",
-      "x": -1700,
+      "x": -2350,
       "y": 0,
       "width": 1050,
       "height": 1150,
@@ -24,7 +24,7 @@
       "id": "file_master",
       "type": "file",
       "file": "05-银矿库/角色库/发型库总表/女性发型库总表.canvas",
-      "x": -1640,
+      "x": -2290,
       "y": 120,
       "width": 450,
       "height": 650
@@ -33,7 +33,7 @@
       "id": "card_master",
       "type": "text",
       "text": "## 基础总表\n\n7个初始家族导航：\n- 刘海\n- 马尾\n- 短发\n- 卷发\n- 公主切\n- 双马尾\n- 狼尾\n\n用于理解分类层级，不承担全部子型图片。",
-      "x": -1140,
+      "x": -1790,
       "y": 120,
       "width": 430,
       "height": 650,
@@ -42,7 +42,7 @@
     {
       "id": "group_bangs",
       "type": "group",
-      "x": -500,
+      "x": -1150,
       "y": 0,
       "width": 1050,
       "height": 1150,
@@ -53,7 +53,7 @@
       "id": "file_bangs",
       "type": "file",
       "file": "05-银矿库/角色库/刘海98种/98种流行女性刘海.canvas",
-      "x": -440,
+      "x": -1090,
       "y": 120,
       "width": 450,
       "height": 650
@@ -62,7 +62,7 @@
       "id": "card_bangs",
       "type": "text",
       "text": "## 刘海98种\n\n局部前额结构专项库。\n\n按密度、长度、分缝、边缘、卷度、宽度、遮挡与连接关系拆分，并独立做十元映射。",
-      "x": 60,
+      "x": -590,
       "y": 120,
       "width": 430,
       "height": 650,
@@ -71,7 +71,7 @@
     {
       "id": "group_batch01",
       "type": "group",
-      "x": 700,
+      "x": 50,
       "y": 0,
       "width": 1050,
       "height": 1150,
@@ -82,7 +82,7 @@
       "id": "file_batch01",
       "type": "file",
       "file": "05-银矿库/角色库/发型库总表/女性发型库总表_真实网络参考子型批次01.canvas",
-      "x": 760,
+      "x": 110,
       "y": 120,
       "width": 450,
       "height": 650
@@ -90,96 +90,215 @@
     {
       "id": "card_batch01",
       "type": "text",
-      "text": "## 批次01｜18张远程图\n\n- 马尾\n- 短发\n- 卷发\n- 公主切\n- 双马尾\n- 狼尾／狼剪\n\n**状态：** `source-degraded`\n部分网站热链在Obsidian中失效，不能再当作配图完成。保留为历史候选池，等待按S级Skill换成本地文件节点或稳定证据。",
-      "x": 1260,
+      "text": "## 批次01｜18张远程图\n\n马尾、短发、卷发、公主切、双马尾、狼尾。\n\n**状态：** `source-degraded`\n部分网站热链在Obsidian中失效。保留为历史候选池，不再计入本地可见配图。",
+      "x": 610,
       "y": 120,
       "width": 430,
-      "height": 750,
+      "height": 720,
       "color": "5"
     },
     {
       "id": "group_batch02",
       "type": "group",
-      "x": -1700,
-      "y": 1350,
-      "width": 1600,
-      "height": 1180,
+      "x": 1250,
+      "y": 0,
+      "width": 1050,
+      "height": 1150,
       "color": "3",
-      "label": "远程参考批次02｜主要类型候选池"
+      "label": "远程参考批次02｜候选池"
     },
     {
       "id": "file_batch02",
       "type": "file",
       "file": "05-银矿库/角色库/发型库总表/女性发型库总表_主要类型真实参考批次02.canvas",
-      "x": -1640,
-      "y": 1470,
-      "width": 520,
-      "height": 760
+      "x": 1310,
+      "y": 120,
+      "width": 450,
+      "height": 650
     },
     {
       "id": "card_batch02",
       "type": "text",
-      "text": "## 批次02｜24张远程候选\n\n1. 丸子头／发髻\n2. 编发／辫发\n3. 半扎发\n4. 盘发／法式扭转\n5. 长直发／超长发\n6. 特殊断层剪裁\n7. 剃短／非对称\n8. 自然纹理与保护性发型\n\n**状态：** `evidence-pending`\n用作名称与结构候选池；图片需逐项核验可见度、来源与稳定性，不直接视为正式配图。",
-      "x": -1060,
-      "y": 1470,
-      "width": 900,
-      "height": 760,
+      "text": "## 批次02｜24张远程候选\n\n丸子头、编发、半扎、盘发、长直发、特殊剪裁、剃短非对称、自然纹理与保护性发型。\n\n**状态：** `evidence-pending`\n只作名称和结构候选池。",
+      "x": 1810,
+      "y": 120,
+      "width": 430,
+      "height": 720,
       "color": "3"
     },
     {
       "id": "group_batch03",
       "type": "group",
-      "x": 100,
-      "y": 1350,
-      "width": 1650,
-      "height": 1180,
+      "x": -2350,
+      "y": 1400,
+      "width": 2100,
+      "height": 1250,
       "color": "1",
-      "label": "本地配图证据批次03｜可见"
+      "label": "本地配图批次03｜9项"
     },
     {
       "id": "file_batch03",
       "type": "file",
       "file": "05-银矿库/角色库/发型库总表/女性发型库总表_本地配图证据批次03.canvas",
-      "x": 160,
-      "y": 1470,
+      "x": -2290,
+      "y": 1530,
       "width": 520,
       "height": 760
     },
     {
       "id": "card_batch03",
       "type": "text",
-      "text": "## 批次03｜9项本地可见图\n\n- 高马尾\n- 贴头双辫\n- 精灵短发\n- 莫霍克\n- Undercut\n- 渐层Bob\n- 高丸子头\n- 露额后梳\n- Mixie／短狼尾\n\n**状态：** `image-present / audit-pending`\n按14库S级Skill采用左图、来源、右结构卡格式。",
-      "x": 740,
-      "y": 1470,
-      "width": 940,
+      "text": "## 批次03｜9项本地可见图\n\n高马尾、贴头双辫、精灵短发、莫霍克、Undercut、渐层Bob、高丸子头、露额后梳、Mixie／短狼尾。\n\n**状态：** `image-present / audit-pending`\n\n技术债：当前图片节点仍引用14库已核验资产，后续应复制进05库独立目录，解除跨库依赖。",
+      "x": -1710,
+      "y": 1530,
+      "width": 1380,
       "height": 760,
       "color": "1"
     },
     {
+      "id": "group_batch04",
+      "type": "group",
+      "x": -50,
+      "y": 1400,
+      "width": 2350,
+      "height": 1250,
+      "color": "2",
+      "label": "本地开放许可批次04｜11项"
+    },
+    {
+      "id": "file_batch04",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/女性发型库总表_本地配图证据批次04.canvas",
+      "x": 10,
+      "y": 1530,
+      "width": 560,
+      "height": 760
+    },
+    {
+      "id": "manifest_batch04",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/批次04_开放许可图片清单.md",
+      "x": 630,
+      "y": 1530,
+      "width": 480,
+      "height": 760
+    },
+    {
+      "id": "card_batch04",
+      "type": "text",
+      "text": "## 批次04｜11项05库本地图片\n\n- 超长披发\n- 中长卷发\n- 经典公主切\n- 低双马尾\n- 半马尾\n- 法式扭转盘发\n- 鱼骨辫\n- Afro圆形自然卷\n- Locs锁发\n- 塞内加尔辫／保护性编发\n- 齐切Bob\n\n**状态：** `image-present / evidence-audit-pending`\n图片、作者、许可和来源页均保存在05库。水母头因证据不足暂不入库。",
+      "x": 1170,
+      "y": 1530,
+      "width": 1070,
+      "height": 900,
+      "color": "2"
+    },
+    {
       "id": "coverage_index",
       "type": "text",
-      "text": "# 覆盖范围与施工顺序\n\n## 当前15个一级家族\n刘海、马尾、短发、卷发、公主切、双马尾、狼尾、丸子头、编发、半扎、盘发、长直发、特殊断层剪裁、剃短非对称、自然纹理／保护性发型。\n\n## 已有真正可见配图\n9项，见批次03。\n\n## 下一批必须补的主要空缺\n- 长直发／齐切长发\n- 自然卷／大波浪／螺旋卷\n- 公主切\n- 双马尾\n- 半扎发\n- 低盘发／法式盘发\n- 传统单辫／双辫\n- Afro、Locs、Twists、Cornrows\n- 水母头、齐切Bob\n\n不再继续增加只有名称没有可靠图片的空家族。",
-      "x": -650,
-      "y": 2750,
-      "width": 1300,
-      "height": 900,
+      "text": "# 覆盖范围与下一步\n\n## 当前一级家族\n刘海、马尾、短发、卷发、公主切、双马尾、狼尾、丸子头、编发、半扎、盘发、长直发、特殊断层剪裁、剃短非对称、自然纹理／保护性发型。\n\n## 本地可见配图\n- 批次03：9项\n- 批次04：11项\n- 合计：20项\n\n## 下一步深挖\n1. 将批次03的9张跨库引用复制进05库；\n2. 补水母头、章鱼剪、蝴蝶剪、Cornrows、Twists、Bantu Knots；\n3. 每个一级家族扩为3—7个可见子型；\n4. 完成S/A级图片评分、体量、纯度、五维和误判审计。\n\n不再把“有名字”当成“有配图”，这种偷懒已经被抓现行了。",
+      "x": -850,
+      "y": 2900,
+      "width": 1700,
+      "height": 960,
       "color": "4"
     }
   ],
   "edges": [
-    {"id":"edge_title_master","fromNode":"title_hair_index","fromSide":"bottom","toNode":"file_master","toSide":"top"},
-    {"id":"edge_title_bangs","fromNode":"title_hair_index","fromSide":"bottom","toNode":"file_bangs","toSide":"top"},
-    {"id":"edge_title_batch01","fromNode":"title_hair_index","fromSide":"bottom","toNode":"file_batch01","toSide":"top"},
-    {"id":"edge_title_batch02","fromNode":"title_hair_index","fromSide":"bottom","toNode":"file_batch02","toSide":"top"},
-    {"id":"edge_title_batch03","fromNode":"title_hair_index","fromSide":"bottom","toNode":"file_batch03","toSide":"top"},
-    {"id":"edge_master_card","fromNode":"file_master","fromSide":"right","toNode":"card_master","toSide":"left"},
-    {"id":"edge_bangs_card","fromNode":"file_bangs","fromSide":"right","toNode":"card_bangs","toSide":"left"},
-    {"id":"edge_batch01_card","fromNode":"file_batch01","fromSide":"right","toNode":"card_batch01","toSide":"left"},
-    {"id":"edge_batch02_card","fromNode":"file_batch02","fromSide":"right","toNode":"card_batch02","toSide":"left"},
-    {"id":"edge_batch03_card","fromNode":"file_batch03","fromSide":"right","toNode":"card_batch03","toSide":"left"}
+    {
+      "id": "edge_title_master",
+      "fromNode": "title_hair_index",
+      "fromSide": "bottom",
+      "toNode": "file_master",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_title_bangs",
+      "fromNode": "title_hair_index",
+      "fromSide": "bottom",
+      "toNode": "file_bangs",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_title_batch01",
+      "fromNode": "title_hair_index",
+      "fromSide": "bottom",
+      "toNode": "file_batch01",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_title_batch02",
+      "fromNode": "title_hair_index",
+      "fromSide": "bottom",
+      "toNode": "file_batch02",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_title_batch03",
+      "fromNode": "title_hair_index",
+      "fromSide": "bottom",
+      "toNode": "file_batch03",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_title_batch04",
+      "fromNode": "title_hair_index",
+      "fromSide": "bottom",
+      "toNode": "file_batch04",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_master_card",
+      "fromNode": "file_master",
+      "fromSide": "right",
+      "toNode": "card_master",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_bangs_card",
+      "fromNode": "file_bangs",
+      "fromSide": "right",
+      "toNode": "card_bangs",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_batch01_card",
+      "fromNode": "file_batch01",
+      "fromSide": "right",
+      "toNode": "card_batch01",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_batch02_card",
+      "fromNode": "file_batch02",
+      "fromSide": "right",
+      "toNode": "card_batch02",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_batch03_card",
+      "fromNode": "file_batch03",
+      "fromSide": "right",
+      "toNode": "card_batch03",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_batch04_manifest",
+      "fromNode": "file_batch04",
+      "fromSide": "right",
+      "toNode": "manifest_batch04",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_batch04_card",
+      "fromNode": "manifest_batch04",
+      "fromSide": "right",
+      "toNode": "card_batch04",
+      "toSide": "left"
+    }
   ],
   "metadata": {
-    "version": "1.1",
+    "version": "1.2",
     "frontmatter": {}
   }
 }
