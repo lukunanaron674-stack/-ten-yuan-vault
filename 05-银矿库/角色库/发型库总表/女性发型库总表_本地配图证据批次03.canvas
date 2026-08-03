@@ -1,0 +1,297 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# 女性发型库总表｜本地配图证据批次03\n\n**执行位置：05-银矿库｜规则来源：14-角色库S级配图Skill**\n\n格式：左侧vault本地参考图｜下方原始来源｜右侧结构卡。\n\n本批先覆盖9个高识别主要类型。图片采用vault内已核验资产路径，不重新生成、不用搜索缩略图、不复制第二份版权文件。图片可见只代表 `image-present`，后续仍需逐项完成S/A级证据评分。",
+      "x": -1500,
+      "y": -1050,
+      "width": 3000,
+      "height": 300,
+      "color": "4"
+    },
+    {
+      "id": "ref-01",
+      "type": "file",
+      "file": "14-角色库/ZX/assets/refs/zx_01_battle_high_ponytail.jpg",
+      "x": -1500,
+      "y": -650,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-01",
+      "type": "text",
+      "text": "[原始来源｜Allure](https://www.allure.com/story/kate-middleton-wimbledon-high-ponytail)",
+      "x": -1500,
+      "y": -205,
+      "width": 470,
+      "height": 90,
+      "color": "6"
+    },
+    {
+      "id": "card-01",
+      "type": "text",
+      "text": "# 01｜高马尾\n### High Ponytail\n\n**层级：** 单束扎发\n**一级变量：** 束点位于冠部后上方\n**结构：** 额面打开；头发表面向锚点集中；尾部从高点向后下方甩出。\n**主要子型：** 紧束高马尾、蓬松高马尾、卷高马尾、编织高马尾。\n**排除：** 束点在后颈属于低马尾；盘成团属于高丸子。\n**十元入口：** 高位、单向后甩可形成 `zx`；规则集中增加 `xn`。\n**证据状态：** `image-present / audit-pending`",
+      "x": -970,
+      "y": -650,
+      "width": 760,
+      "height": 560,
+      "color": "5"
+    },
+    {
+      "id": "ref-02",
+      "type": "file",
+      "file": "14-角色库/ZX/assets/refs/zx_02_boxer_braids.jpg",
+      "x": -120,
+      "y": -650,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-02",
+      "type": "text",
+      "text": "[原始来源｜Allure](https://www.allure.com/gallery/box-braids-hair-inspiration)",
+      "x": -120,
+      "y": -205,
+      "width": 470,
+      "height": 90,
+      "color": "6"
+    },
+    {
+      "id": "card-02",
+      "type": "text",
+      "text": "# 02｜贴头双辫／拳击辫\n### Boxer Braids / Dutch Braids\n\n**层级：** 编发结构\n**一级变量：** 发束从前额至后脑连续交叉并贴头推进\n**结构：** 中轴分区清楚；左右两条编织轨道；运动时保持稳定。\n**主要子型：** 荷兰双辫、法式双辫、贴头多股辫、辫后马尾。\n**排除：** 只在尾部编织，不属于贴头双辫；Cornrows需按多轨贴头结构另分。\n**十元入口：** 推进方向可见为 `zx`；等距编织为 `xn`。\n**证据状态：** `image-present / audit-pending`",
+      "x": 410,
+      "y": -650,
+      "width": 760,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "ref-03",
+      "type": "file",
+      "file": "14-角色库/ZX/assets/refs/zx_03_modern_pixie.jpg",
+      "x": -1500,
+      "y": 50,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-03",
+      "type": "text",
+      "text": "[原始来源｜Allure](https://www.allure.com/story/pixie-haircut)",
+      "x": -1500,
+      "y": 495,
+      "width": 470,
+      "height": 90,
+      "color": "6"
+    },
+    {
+      "id": "card-03",
+      "type": "text",
+      "text": "# 03｜精灵短发\n### Pixie Cut\n\n**层级：** 极短长度轮廓\n**一级变量：** 耳侧与后颈显著缩短，顶部保留短层\n**结构：** 耳、颈、脸侧大面积露出；顶部可平顺或纹理化。\n**主要子型：** 经典Pixie、长Pixie、纹理Pixie、卷Pixie。\n**排除：** 齐颌Bob仍保留完整下缘重量线；Bixie长度介于两者之间。\n**十元入口：** 清除遮挡可偏 `zx/x`；自然发流可能偏 `zn`。\n**证据状态：** `image-present / audit-pending`",
+      "x": -970,
+      "y": 50,
+      "width": 760,
+      "height": 560,
+      "color": "6"
+    },
+    {
+      "id": "ref-04",
+      "type": "file",
+      "file": "14-角色库/ZX/assets/refs/zx_04_faux_mohawk.jpg",
+      "x": -120,
+      "y": 50,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-04",
+      "type": "text",
+      "text": "[原始来源｜Allure](https://www.allure.com/story/miley-cyrus-1980s-fauxhawk-hairstyle)",
+      "x": -120,
+      "y": 495,
+      "width": 470,
+      "height": 90,
+      "color": "6"
+    },
+    {
+      "id": "card-04",
+      "type": "text",
+      "text": "# 04｜莫霍克／假莫霍克\n### Mohawk / Faux Hawk\n\n**层级：** 竖向特殊造型\n**一级变量：** 中轴高体量与两侧低体量形成强差\n**结构：** 两侧剃短或压平；顶部形成连续脊线向上冲。\n**主要子型：** 剃侧Mohawk、Faux Hawk、编织Mohawk、卷曲Mohawk。\n**排除：** 普通蓬松短发没有稳定中轴脊线；单纯侧剃属于Undercut。\n**十元入口：** 公开夺场、向上推出为 `zx`；强轮廓为 `x/z`。\n**证据状态：** `image-present / audit-pending`",
+      "x": 410,
+      "y": 50,
+      "width": 760,
+      "height": 560,
+      "color": "5"
+    },
+    {
+      "id": "ref-05",
+      "type": "file",
+      "file": "14-角色库/ZX/assets/refs/zx_05_slick_undercut.jpg",
+      "x": -1500,
+      "y": 750,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-05",
+      "type": "text",
+      "text": "[原始来源｜Allure](https://www.allure.com/gallery/undercut-hairstyle-ideas)",
+      "x": -1500,
+      "y": 1195,
+      "width": 470,
+      "height": 90,
+      "color": "6"
+    },
+    {
+      "id": "card-05",
+      "type": "text",
+      "text": "# 05｜侧剃后梳／Undercut\n### Slicked Back Undercut\n\n**层级：** 剃短与长短对比剪裁\n**一级变量：** 侧区极短、顶部明显更长\n**结构：** 上长下短；剃侧边界清楚；顶部可后梳、侧梳或垂落。\n**主要子型：** 单侧剃、双侧剃、隐藏Undercut、长发Undercut。\n**排除：** 普通侧分没有剃短区；Pixie整体长度更均一。\n**十元入口：** 清除侧区并向后推出可偏 `zx`；剃线边界为 `x`。\n**证据状态：** `image-present / audit-pending`",
+      "x": -970,
+      "y": 750,
+      "width": 760,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "ref-06",
+      "type": "file",
+      "file": "14-角色库/ZX/assets/refs/zx_06_graduated_bob.jpg",
+      "x": -120,
+      "y": 750,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-06",
+      "type": "text",
+      "text": "[原始来源｜ELLE](https://www.elle.com/beauty/hair/a65352286/graduated-bob-hairstyles/)",
+      "x": -120,
+      "y": 1195,
+      "width": 470,
+      "height": 90,
+      "color": "6"
+    },
+    {
+      "id": "card-06",
+      "type": "text",
+      "text": "# 06｜渐层鲍伯／堆叠Bob\n### Graduated Bob / Stacked Bob\n\n**层级：** 短发剪裁结构\n**一级变量：** 后部堆叠短层与前部长线形成梯度\n**结构：** 后短前长；后脑重量堆叠；下缘形成向前推进斜线。\n**主要子型：** A-line Bob、Stacked Bob、短渐层Bob、长渐层Lob。\n**排除：** 钝切Bob下缘基本水平；不对称Bob是左右长度差。\n**十元入口：** 斜向推进可偏 `zx`；截点和堆叠为 `z/xn`。\n**证据状态：** `image-present / audit-pending`",
+      "x": 410,
+      "y": 750,
+      "width": 760,
+      "height": 560,
+      "color": "6"
+    },
+    {
+      "id": "ref-07",
+      "type": "file",
+      "file": "14-角色库/ZX/assets/refs/zx_07_high_top_knot.jpg",
+      "x": -1500,
+      "y": 1450,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-07",
+      "type": "text",
+      "text": "[原始来源｜Allure](https://www.allure.com/story/gabrielle-union-big-braided-bun-2023)",
+      "x": -1500,
+      "y": 1895,
+      "width": 470,
+      "height": 90,
+      "color": "6"
+    },
+    {
+      "id": "card-07",
+      "type": "text",
+      "text": "# 07｜高丸子头／顶髻\n### High Bun / Top Knot\n\n**层级：** 盘束发型\n**一级变量：** 发长被收纳为头顶单一团块\n**结构：** 额面打开；发流向顶点集中；尾部不再自由垂落。\n**主要子型：** 紧丸子、松散丸子、编织丸子、双丸子、半丸子。\n**排除：** 高马尾仍有自由尾部；低发髻固定点在后颈。\n**十元入口：** 高位收束和行动准备可偏 `zx/xn`；松散型可能偏 `nz/zn`。\n**证据状态：** `image-present / audit-pending`",
+      "x": -970,
+      "y": 1450,
+      "width": 760,
+      "height": 560,
+      "color": "5"
+    },
+    {
+      "id": "ref-08",
+      "type": "file",
+      "file": "14-角色库/ZX/assets/refs/zx_08_slicked_back.jpg",
+      "x": -120,
+      "y": 1450,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-08",
+      "type": "text",
+      "text": "[原始来源｜Vogue](https://www.vogue.com/slideshow/how-to-perfect-slicked-back-hair)",
+      "x": -120,
+      "y": 1895,
+      "width": 470,
+      "height": 90,
+      "color": "6"
+    },
+    {
+      "id": "card-08",
+      "type": "text",
+      "text": "# 08｜露额后梳发\n### Slicked Back Hair\n\n**层级：** 表面造型与方向处理\n**一级变量：** 前额发束整体向后归位\n**结构：** 发际线完整露出；正面无刘海遮挡；表面贴服或带湿感光泽。\n**主要子型：** 湿感后梳、蓬松后梳、侧分后梳、长发后梳。\n**排除：** 大背头是方向造型，不等于短发或Undercut；自然无刘海没有强后梳表面。\n**十元入口：** 正面推出为 `zx`；表面规整为 `xn/x并z`。\n**证据状态：** `image-present / audit-pending`",
+      "x": 410,
+      "y": 1450,
+      "width": 760,
+      "height": 560,
+      "color": "3"
+    },
+    {
+      "id": "ref-09",
+      "type": "file",
+      "file": "14-角色库/ZX/assets/refs/zx_09_mixie_cut.jpg",
+      "x": -1500,
+      "y": 2150,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-09",
+      "type": "text",
+      "text": "[原始来源｜Allure](https://www.allure.com/story/mixie-mullet-pixie-haircut-trend)",
+      "x": -1500,
+      "y": 2595,
+      "width": 470,
+      "height": 90,
+      "color": "6"
+    },
+    {
+      "id": "card-09",
+      "type": "text",
+      "text": "# 09｜Mixie／短狼尾混合剪\n### Mixie Cut / Mullet Pixie\n\n**层级：** 特殊断层剪裁\n**一级变量：** 精灵短发前侧结构与后颈长尾并存\n**结构：** 耳侧短；顶部碎层；后颈保留尾部；前后长度不连续。\n**主要子型：** 柔化Mixie、卷Mixie、短狼尾、鲻鱼Pixie。\n**排除：** Pixie没有后颈长尾；完整狼尾整体长度通常更长。\n**十元入口：** 后冲尾部与清场短层可偏 `zx/z`；断层边界为 `x`。\n**证据状态：** `image-present / audit-pending`",
+      "x": -970,
+      "y": 2150,
+      "width": 760,
+      "height": 560,
+      "color": "3"
+    },
+    {
+      "id": "coverage",
+      "type": "text",
+      "text": "# 批次03覆盖与下一步\n\n本批已建立9个可见本地配图卡：\n\n- 马尾\n- 贴头编发\n- 精灵短发\n- 莫霍克\n- Undercut\n- 渐层Bob\n- 丸子头\n- 后梳发\n- Mixie／短狼尾\n\n下一批应补：长直发、自然卷／大波浪、公主切、双马尾、半扎发、低盘发、传统长辫、Locs／Twists、Afro、齐切Bob、水母头。\n\n**注意：** 当前图片是vault内已有核验资产复用，未重复保存版权文件。正式家族总表后续仍按“一张S图或两张A图”补证。",
+      "x": -120,
+      "y": 2150,
+      "width": 1290,
+      "height": 650,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {"id":"e01","fromNode":"ref-01","fromSide":"right","toNode":"card-01","toSide":"left","color":"5"},
+    {"id":"e02","fromNode":"ref-02","fromSide":"right","toNode":"card-02","toSide":"left","color":"1"},
+    {"id":"e03","fromNode":"ref-03","fromSide":"right","toNode":"card-03","toSide":"left","color":"6"},
+    {"id":"e04","fromNode":"ref-04","fromSide":"right","toNode":"card-04","toSide":"left","color":"5"},
+    {"id":"e05","fromNode":"ref-05","fromSide":"right","toNode":"card-05","toSide":"left","color":"4"},
+    {"id":"e06","fromNode":"ref-06","fromSide":"right","toNode":"card-06","toSide":"left","color":"6"},
+    {"id":"e07","fromNode":"ref-07","fromSide":"right","toNode":"card-07","toSide":"left","color":"5"},
+    {"id":"e08","fromNode":"ref-08","fromSide":"right","toNode":"card-08","toSide":"left","color":"3"},
+    {"id":"e09","fromNode":"ref-09","fromSide":"right","toNode":"card-09","toSide":"left","color":"3"}
+  ],
+  "metadata": {"version":"1.0-1.0","frontmatter":{}}
+}
