@@ -1,0 +1,66 @@
+name: Fetch Hair Assets Batch 04 PR
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '05-银矿库/角色库/发型库总表/.batch04-pr-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Download open-license reference images
+        shell: bash
+        run: |
+          set -euo pipefail
+          DIR='05-银矿库/角色库/发型库总表/assets/refs/batch04'
+          mkdir -p "$DIR"
+          fetch() {
+            local name="$1"
+            local file="$2"
+            curl -L --fail --retry 4 --retry-delay 2 \
+              -A 'ten-yuan-vault hairstyle research/1.0' \
+              -o "$DIR/$file" \
+              "https://commons.wikimedia.org/wiki/Special:Redirect/file/$name?width=900"
+            test -s "$DIR/$file"
+          }
+          fetch 'Woman_with_very_long_hair.JPG' '04_01_very_long_hair.jpg'
+          fetch 'Woman_with_curly_brown_hairstyle.jpg' '04_02_curly_hair.jpg'
+          fetch 'Hime_cut.jpg' '04_03_hime_cut.jpg'
+          fetch 'Smiling_woman_with_pigtails.JPG' '04_04_pigtails.jpg'
+          fetch 'Half_Ponytail.JPG' '04_05_half_ponytail.jpg'
+          fetch 'French_Twist_Close-up_1.JPG' '04_06_french_twist.jpg'
+          fetch 'Fishtail_Braid.JPG' '04_07_fishtail_braid.jpg'
+          fetch 'Natural_redhead_black_girl_%28red_power_hairstyle%29.jpg' '04_08_afro.jpg'
+          fetch 'Rashida_S._-_Woman_with_dreadlocks.jpg' '04_09_locs.jpg'
+          fetch 'Senegalese_braids.jpg' '04_10_senegalese_braids.jpg'
+          fetch 'Woman_with_bob_haircut.jpg' '04_11_blunt_bob.jpg'
+          file "$DIR"/*
+
+      - name: Build Canvas and license manifest
+        run: python '05-银矿库/角色库/发型库总表/tools/build_batch04_canvas.py'
+
+      - name: Commit generated assets to PR branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add '05-银矿库/角色库/发型库总表/assets/refs/batch04' \
+                  '05-银矿库/角色库/发型库总表/女性发型库总表_本地配图证据批次04.canvas' \
+                  '05-银矿库/角色库/发型库总表/批次04_开放许可图片清单.md'
+          if git diff --cached --quiet; then
+            echo 'No generated changes.'
+            exit 0
+          fi
+          git commit -m '发型库：生成批次04本地开放许可配图'
+          git push origin HEAD:${{ github.head_ref }}
