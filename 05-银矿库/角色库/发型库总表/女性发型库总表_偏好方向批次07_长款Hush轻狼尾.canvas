@@ -3,7 +3,7 @@
     {
       "id": "title",
       "type": "text",
-      "text": "# 女性发型库｜偏好方向批次07\n\n## 长款 Hush Cut＋轻狼尾＋碎薄帘刘海\n\n用户明确偏好：保留黑长发与女性感，顶部轻蓬松，脸侧层次明显，发尾轻而长；不要硬水母断层，不要夸张鲻鱼尾，也不要普通无层次长直发。\n\n第01张为高度疑似原图候选，仍等待用户肉眼确认；其余3张用于锁定方向。",
+      "text": "# 女性发型库｜结构参考批次07\n\n## 长款 Hush Cut＋轻狼尾＋碎薄帘刘海\n\n**纠错：本批不代表用户个人发型偏好。** 用户只是指出批次01中的经典公主切模特图质量很高，希望沿其图源渠道继续寻找高质量中国女性发型人像。\n\n本批仅保留为 Hush 结构参考，不纳入用户偏好结论。",
       "x": -1450,
       "y": -850,
       "width": 2900,
@@ -13,7 +13,7 @@
     {
       "id": "definition",
       "type": "text",
-      "text": "# 结构判定\n\n**主类型：** 长款 Hush Cut\n**次类型：** 轻狼尾／长层Shag\n**刘海：** 碎薄帘刘海＋长脸周须\n\n**必须保留**\n- 长度到胸下或更长\n- 冠部轻体量，不做厚圆壳\n- 眼角、颧骨、下颌至少三级脸周层\n- 发尾细长、轻、连续\n\n**排除**\n- 水母头：上下硬断层过强\n- 经典狼尾：前短后长和后颈尾过强\n- 蝴蝶剪：吹风外翻和90年代大体量过强\n- 普通长直发：脸周层和冠部纹理不足",
+      "text": "# 结构判定\n\n**主类型：** 长款 Hush Cut\n**次类型：** 轻狼尾／长层Shag\n**刘海：** 碎薄帘刘海＋长脸周须\n\n**必须保留**\n- 长度到胸下或更长\n- 冠部轻体量，不做厚圆壳\n- 眼角、颧骨、下颌至少三级脸周层\n- 发尾细长、轻、连续\n\n**排除**\n- 水母头：上下硬断层过强\n- 经典狼尾：前短后长和后颈尾过强\n- 蝴蝶剪：吹风外翻和90年代大体量过强\n- 普通长直发：脸周层和冠部纹理不足\n\n**状态：** `structure-reference / not-user-preference`",
       "x": -800,
       "y": 1450,
       "width": 1600,
@@ -32,7 +32,7 @@
     {
       "id": "card-01",
       "type": "text",
-      "text": "# 01｜高度疑似原图｜顺直长层轻狼尾\n### Sleek Layered Wolf / Hush Hybrid\n\n页面描述为深色纹理层次、分层刘海、黑色服装、紫色渐变背景，与用户给出的参考图高度吻合；未冒充100%原图。\n\n[打开来源页面](https://thebeautyfoodie.com/korean-wolf-cut/)\n\n图源：TheBeautyFoodie，条目 7：Sleek Layered Wolf Cut\n\n**状态：** `possible-original / user-confirmation-pending`",
+      "text": "# 01｜顺直长层轻狼尾\n### Sleek Layered Wolf / Hush Hybrid\n\n这是此前误判阶段保存的 Hush 候选，不是批次01经典公主切原图，也不代表用户偏好。\n\n[打开来源页面](https://thebeautyfoodie.com/korean-wolf-cut/)\n\n图源：TheBeautyFoodie，条目 7：Sleek Layered Wolf Cut\n\n**状态：** `structure-reference / source-confirmed`",
       "x": -910,
       "y": -250,
       "width": 820,
@@ -51,7 +51,7 @@
     {
       "id": "card-02",
       "type": "text",
-      "text": "# 02｜柔黑韩式长层\n### Soft Black Korean-Inspired Layers\n\n保留黑长发主体，以柔和脸周层和轻薄轮廓增加流动，不做强烈鲻鱼尾。\n\n[打开来源页面](https://creativebooster.net/blogs/hairstyles/long-layered-haircuts-2026)\n\n图源：CreativeBooster，条目21\n\n**状态：** `direction-reference / source-confirmed`",
+      "text": "# 02｜柔黑韩式长层\n### Soft Black Korean-Inspired Layers\n\n保留黑长发主体，以柔和脸周层和轻薄轮廓增加流动，不做强烈鲻鱼尾。\n\n[打开来源页面](https://creativebooster.net/blogs/hairstyles/long-layered-haircuts-2026)\n\n图源：CreativeBooster，条目21\n\n**状态：** `structure-reference / source-confirmed`",
       "x": 540,
       "y": -250,
       "width": 820,
@@ -70,7 +70,7 @@
     {
       "id": "card-03",
       "type": "text",
-      "text": "# 03｜长款羽毛Hush层次\n### Long Feathered Hush Cut\n\n轻羽毛层、脸周渐进层次、薄刘海和长发主体并存，属于用户偏好方向的温柔端。\n\n[打开来源页面](https://www.mujerhoy.com/belleza/pelo/corte-hush-cut-tendencia-pelo-otono-2023-20230923114458-nt.html)\n\n图源：Mujerhoy / @jimmywaworuntu\n\n**状态：** `direction-reference / source-confirmed`",
+      "text": "# 03｜长款羽毛Hush层次\n### Long Feathered Hush Cut\n\n轻羽毛层、脸周渐进层次、薄刘海和长发主体并存，属于 Hush 结构方向的柔和端。\n\n[打开来源页面](https://www.mujerhoy.com/belleza/pelo/corte-hush-cut-tendencia-pelo-otono-2023-20230923114458-nt.html)\n\n图源：Mujerhoy / @jimmywaworuntu\n\n**状态：** `structure-reference / source-confirmed`",
       "x": -910,
       "y": 510,
       "width": 820,
@@ -89,7 +89,7 @@
     {
       "id": "card-04",
       "type": "text",
-      "text": "# 04｜韩式碎薄帘刘海Hush\n### Korean Wispy Fringe Hush Cut\n\n重点观察碎薄刘海、颧骨至下颌的脸侧短层，以及发尾轻而不断的长轴。\n\n[打开来源页面](https://www.mujerhoy.com/belleza/pelo/corte-hush-cut-tendencia-pelo-otono-2023-20230923114458-nt.html)\n\n图源：Mujerhoy / @my.o_noji\n\n**状态：** `direction-reference / source-confirmed`",
+      "text": "# 04｜韩式碎薄帘刘海Hush\n### Korean Wispy Fringe Hush Cut\n\n重点观察碎薄刘海、颧骨至下颌的脸侧短层，以及发尾轻而不断的长轴。\n\n[打开来源页面](https://www.mujerhoy.com/belleza/pelo/corte-hush-cut-tendencia-pelo-otono-2023-20230923114458-nt.html)\n\n图源：Mujerhoy / @my.o_noji\n\n**状态：** `structure-reference / source-confirmed`",
       "x": 540,
       "y": 510,
       "width": 820,
@@ -98,37 +98,10 @@
     }
   ],
   "edges": [
-    {
-      "id": "e-01",
-      "fromNode": "ref-01",
-      "fromSide": "right",
-      "toNode": "card-01",
-      "toSide": "left"
-    },
-    {
-      "id": "e-02",
-      "fromNode": "ref-02",
-      "fromSide": "right",
-      "toNode": "card-02",
-      "toSide": "left"
-    },
-    {
-      "id": "e-03",
-      "fromNode": "ref-03",
-      "fromSide": "right",
-      "toNode": "card-03",
-      "toSide": "left"
-    },
-    {
-      "id": "e-04",
-      "fromNode": "ref-04",
-      "fromSide": "right",
-      "toNode": "card-04",
-      "toSide": "left"
-    }
+    {"id": "e-01", "fromNode": "ref-01", "fromSide": "right", "toNode": "card-01", "toSide": "left"},
+    {"id": "e-02", "fromNode": "ref-02", "fromSide": "right", "toNode": "card-02", "toSide": "left"},
+    {"id": "e-03", "fromNode": "ref-03", "fromSide": "right", "toNode": "card-03", "toSide": "left"},
+    {"id": "e-04", "fromNode": "ref-04", "fromSide": "right", "toNode": "card-04", "toSide": "left"}
   ],
-  "metadata": {
-    "version": "1.0",
-    "frontmatter": {}
-  }
+  "metadata": {"version": "1.1", "frontmatter": {}}
 }
