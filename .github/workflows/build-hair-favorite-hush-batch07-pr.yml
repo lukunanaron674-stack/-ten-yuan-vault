@@ -1,0 +1,68 @@
+name: Build Hair Favorite Hush Batch 07 PR
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '05-银矿库/角色库/发型库总表/.batch07-hush-trigger'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hair-favorite-hush-batch07-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            05-银矿库/角色库/发型库总表
+          sparse-checkout-cone-mode: false
+
+      - name: Download preferred-direction references and build Canvas
+        run: python '05-银矿库/角色库/发型库总表/tools/build_favorite_hush_direction_batch07.py'
+
+      - name: Validate local assets and Canvas
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('05-银矿库/角色库/发型库总表')
+          assets = sorted((root / 'assets/refs/batch07_hush_direction').glob('*'))
+          if len(assets) != 4:
+              raise SystemExit(f'expected 4 assets, got {len(assets)}')
+          for path in assets:
+              if path.stat().st_size < 15000:
+                  raise SystemExit(f'asset too small: {path}')
+          canvas = json.loads((root / '女性发型库总表_偏好方向批次07_长款Hush轻狼尾.canvas').read_text(encoding='utf-8'))
+          file_nodes = [n for n in canvas.get('nodes', []) if n.get('type') == 'file']
+          if len(file_nodes) != 4:
+              raise SystemExit(f'expected 4 file nodes, got {len(file_nodes)}')
+          print('validated batch07 assets=4 file_nodes=4')
+          PY
+
+      - name: Commit results to PR branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          BRANCH='${{ github.event.pull_request.head.ref }}'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add '05-银矿库/角色库/发型库总表'
+          if git diff --cached --quiet; then
+            echo 'No generated changes.'
+            exit 0
+          fi
+          git commit -m '发型库：新增偏好方向批次07长款Hush轻狼尾'
+          git fetch origin "$BRANCH"
+          git rebase "origin/$BRANCH"
+          git push origin HEAD:"$BRANCH"
