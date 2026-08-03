@@ -38,7 +38,7 @@ ELEMENT_CANVASES = {
 }
 
 ITEM_RE = re.compile(r"^##\s*(\d{2})[｜|]", re.M)
-PURITY_RE = re.compile(r"纯度[：:]\*?\*?\s*(\d{1,3})%")
+PURITY_RE = re.compile(r"纯度(?:[：:]\*{0,2}\s*)?(\d{1,3})%")
 MAP_RE = re.compile(r"\*\*正式十元映射：\*\*\s*主\s*`([^`]+)`／副\s*`([^`]+)`")
 DEGREE_LINE_RE = re.compile(r"^\*\*(?:实例十元映射度|映射度模型|类型十元继承映射度)：\*\*.*$", re.M)
 
