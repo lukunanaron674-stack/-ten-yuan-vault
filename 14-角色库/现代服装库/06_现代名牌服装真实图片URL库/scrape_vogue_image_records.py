@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """从 Vogue Runway 系列页提取真实秀场图片直链。
 
-不再依赖已经失效的 graphql.vogue.com。当前 Vogue 页面会把完整图库数据
-内嵌在 ``window.__PRELOADED_STATE__`` 与页面样式中；本工具直接提取
+当前 Vogue 页面把图库数据内嵌在页面 HTML 中。本工具直接提取
 ``assets.vogue.com/photos/...``，按 Look 文件名编号去重，并优先选择
 ``master/w_2560`` 等非裁切大图。
 
@@ -68,9 +67,9 @@ def load_collections(path: Path) -> dict[str, Any]:
     if not isinstance(data.get("collections"), list) or not data["collections"]:
         raise ValueError("collections.json 缺少 collections")
     expected = int(data.get("total_looks", 0))
-    actual = sum(int(item.get("count", 0)) for item in data["collections"])
-    if expected and actual != expected:
-        raise ValueError(f"系列数量合计 {actual} 与 total_looks {expected} 不一致")
+    requested = sum(int(item.get("count", 0)) for item in data["collections"])
+    if expected and requested != expected:
+        raise ValueError(f"系列计划数量 {requested} 与 total_looks {expected} 不一致")
     return data
 
 
@@ -95,7 +94,6 @@ def fetch_html(url: str, retries: int = 3) -> str:
 
 
 def transform_score(transform: str) -> int:
-    """为同一 Look 的多个裁切/尺寸版本评分，优先完整大图。"""
     value = transform.lower()
     score = 0
     if value.startswith("master/"):
@@ -126,7 +124,6 @@ def transform_score(transform: str) -> int:
 
 
 def normalize_embedded_html(raw_html: str) -> str:
-    # 页面中同时存在普通 URL、HTML entity 与 JSON 转义 URL。
     text = html_lib.unescape(raw_html)
     text = text.replace("\\/", "/")
     text = text.replace("\\u002F", "/").replace("\\u002f", "/")
@@ -141,7 +138,6 @@ def candidate_matches_collection(filename: str, item: dict[str, Any]) -> bool:
     if "ready-to-wear" not in lower:
         return False
 
-    # 品牌 slug 是强过滤条件，可避免页面推荐位中的其他品牌图片混入。
     brand_slug = str(item.get("brand", "")).lower().replace(" ", "-")
     if brand_slug and f"-{brand_slug}-" not in f"-{lower}":
         return False
@@ -168,10 +164,7 @@ def extract_candidates(raw_html: str, item: dict[str, Any]) -> list[ImageCandida
             continue
         transform = match.group("transform")
         photo_id = match.group("photo_id")
-        url = (
-            f"https://assets.vogue.com/photos/{photo_id}/"
-            f"{transform}/{filename}"
-        )
+        url = f"https://assets.vogue.com/photos/{photo_id}/{transform}/{filename}"
         if url in seen_exact:
             continue
         seen_exact.add(url)
@@ -200,57 +193,65 @@ def choose_best_per_look(candidates: list[ImageCandidate]) -> dict[int, ImageCan
     return best
 
 
+def record_from_candidate(
+    global_id: int,
+    collection_index: int,
+    item: dict[str, Any],
+    candidate: ImageCandidate,
+    supplemental: bool,
+    source: str,
+) -> dict[str, Any]:
+    base_url = str(item["base_url"])
+    note = (
+        "Vogue 页面内嵌真实秀场主图；用于补足旧计划表与页面实际数量差异；"
+        if supplemental
+        else "Vogue 页面内嵌真实秀场主图；"
+    )
+    note += "已排除 details/beauty/backstage 与重复尺寸，待人工终核。"
+    return {
+        "id": f"{global_id:04d}",
+        "brand": item.get("brand", "Unknown"),
+        "season": item.get("season", "Unknown"),
+        "collection_index": collection_index,
+        "look": candidate.look,
+        "collection_url": base_url,
+        "source_page_url": f"{base_url}#{candidate.look}",
+        "image_url": candidate.url,
+        "image_id": candidate.photo_id,
+        "image_filename": candidate.filename,
+        "image_transform": candidate.transform,
+        "source": source,
+        "verify_status": "candidate",
+        "image_grade": "",
+        "verify_date": "",
+        "supplemental_to_total": supplemental,
+        "notes": note,
+    }
+
+
 def build_records(data: dict[str, Any]) -> dict[str, Any]:
     expected_total = int(data.get("total_looks", 1000))
-    records: list[dict[str, Any]] = []
-    seen_photo_ids: set[str] = set()
+    source = data.get("source", "Vogue Runway")
+    selected: list[tuple[int, dict[str, Any], ImageCandidate, bool]] = []
+    surplus: list[tuple[int, dict[str, Any], ImageCandidate, bool]] = []
     collection_report: list[dict[str, Any]] = []
 
     for collection_index, item in enumerate(data["collections"], start=1):
-        base_url = str(item["base_url"])
         requested_count = int(item["count"])
-        raw_html = fetch_html(base_url)
+        raw_html = fetch_html(str(item["base_url"]))
         candidates = extract_candidates(raw_html, item)
         by_look = choose_best_per_look(candidates)
         ordered = [by_look[key] for key in sorted(by_look)]
+        initial_count = min(requested_count, len(ordered))
 
-        if len(ordered) < requested_count:
-            raise RuntimeError(
-                f"{item.get('brand')}｜{item.get('season')} 只找到 "
-                f"{len(ordered)}/{requested_count} 个主秀场 Look；"
-                f"候选 URL 共 {len(candidates)}。"
-            )
-
-        accepted = 0
-        for candidate in ordered[:requested_count]:
-            if candidate.photo_id in seen_photo_ids:
-                raise RuntimeError(
-                    f"跨系列发现重复 photo_id：{candidate.photo_id}｜{candidate.url}"
-                )
-            seen_photo_ids.add(candidate.photo_id)
-            global_id = len(records) + 1
-            records.append(
-                {
-                    "id": f"{global_id:04d}",
-                    "brand": item.get("brand", "Unknown"),
-                    "season": item.get("season", "Unknown"),
-                    "collection_index": collection_index,
-                    "look": candidate.look,
-                    "collection_url": base_url,
-                    "source_page_url": f"{base_url}#{candidate.look}",
-                    "image_url": candidate.url,
-                    "image_id": candidate.photo_id,
-                    "image_filename": candidate.filename,
-                    "image_transform": candidate.transform,
-                    "source": data.get("source", "Vogue Runway"),
-                    "verify_status": "candidate",
-                    "image_grade": "",
-                    "verify_date": "",
-                    "notes": "Vogue 页面内嵌真实秀场主图；已排除 details/beauty/backstage 与重复尺寸，待人工终核。",
-                }
-            )
-            accepted += 1
-
+        selected.extend(
+            (collection_index, item, candidate, False)
+            for candidate in ordered[:initial_count]
+        )
+        surplus.extend(
+            (collection_index, item, candidate, True)
+            for candidate in ordered[initial_count:]
+        )
         collection_report.append(
             {
                 "brand": item.get("brand"),
@@ -258,8 +259,44 @@ def build_records(data: dict[str, Any]) -> dict[str, Any]:
                 "requested": requested_count,
                 "main_looks_found": len(ordered),
                 "raw_candidates": len(candidates),
-                "accepted": accepted,
+                "initial_accepted": initial_count,
+                "shortfall": max(0, requested_count - len(ordered)),
+                "surplus_available": max(0, len(ordered) - requested_count),
+                "supplemental_accepted": 0,
             }
+        )
+
+    deficit = expected_total - len(selected)
+    if deficit < 0:
+        selected = selected[:expected_total]
+        deficit = 0
+    if deficit > len(surplus):
+        raise RuntimeError(
+            f"主图初选 {len(selected)}，还缺 {deficit}；全部系列盈余只有 {len(surplus)}。"
+        )
+
+    supplemental_entries = surplus[:deficit]
+    selected.extend(supplemental_entries)
+    for collection_index, _item, _candidate, _supplemental in supplemental_entries:
+        collection_report[collection_index - 1]["supplemental_accepted"] += 1
+
+    records: list[dict[str, Any]] = []
+    seen_photo_ids: set[str] = set()
+    for collection_index, item, candidate, supplemental in selected:
+        if candidate.photo_id in seen_photo_ids:
+            raise RuntimeError(
+                f"跨系列发现重复 photo_id：{candidate.photo_id}｜{candidate.url}"
+            )
+        seen_photo_ids.add(candidate.photo_id)
+        records.append(
+            record_from_candidate(
+                global_id=len(records) + 1,
+                collection_index=collection_index,
+                item=item,
+                candidate=candidate,
+                supplemental=supplemental,
+                source=source,
+            )
         )
 
     if len(records) != expected_total:
@@ -270,17 +307,18 @@ def build_records(data: dict[str, Any]) -> dict[str, Any]:
         raise RuntimeError("最终 Vogue photo_id 存在重复")
 
     return {
-        "version": "3.0",
+        "version": "3.1",
         "status": "candidate-ready",
         "created_at": str(date.today()),
         "updated_at": str(date.today()),
-        "source": data.get("source", "Vogue Runway"),
+        "source": source,
         "description": "1000条 Vogue Runway 真实秀场主图直链，可在 Obsidian Canvas 远程显示；自动排除细节图与重复尺寸，仍需人工终核。",
         "total_expected": expected_total,
         "total_records": len(records),
         "verified_count": 0,
         "candidate_count": len(records),
         "rejected_count": 0,
+        "supplemental_count": len(supplemental_entries),
         "collection_report": collection_report,
         "records": records,
     }
@@ -299,11 +337,13 @@ def main() -> None:
         encoding="utf-8",
     )
     print(f"已写入 {result['total_records']} 条真实图片直链：{args.output}")
+    print(f"跨系列真实主图补量：{result['supplemental_count']}")
     for report in result["collection_report"]:
         print(
             f"{report['brand']}｜{report['season']}："
-            f"{report['accepted']}/{report['requested']}，"
-            f"页面主图 {report['main_looks_found']}"
+            f"初选 {report['initial_accepted']}/{report['requested']}，"
+            f"页面主图 {report['main_looks_found']}，"
+            f"补量采用 {report['supplemental_accepted']}"
         )
 
 
