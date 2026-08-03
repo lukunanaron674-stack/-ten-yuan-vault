@@ -8,7 +8,7 @@ scope: 14-角色库/刘海98种
 canonical_path: 14-角色库/刘海98种
 canonical: true
 critical_dependency: skills/S级_真实参考图片采集/SKILL.md
-ontology_dependency: ../01-十元系统/05-十元语义空间/L1_is-a狭义继承关系协议_v1.0_20260803.md
+ontology_dependency: 01-十元系统/05-十元语义空间/L1_is-a狭义继承关系协议_v1.0_20260803.md
 ---
 
 # S级 Skill｜刘海98种角色视觉词库建库 v1.2
@@ -33,7 +33,7 @@ ontology_dependency: ../01-十元系统/05-十元语义空间/L1_is-a狭义继�
 4. 目标批次Canvas与最近邻批次
 5. `02_五行十元重组/SKILL.md`
 6. `02_五行十元重组/00_五大主题与五行_广义狭义具象名词对照表.md`
-7. `../01-十元系统/05-十元语义空间/L1_is-a狭义继承关系协议_v1.0_20260803.md`
+7. `01-十元系统/05-十元语义空间/L1_is-a狭义继承关系协议_v1.0_20260803.md`
 
 ## 最高本体层级
 
