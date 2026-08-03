@@ -25,6 +25,41 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Diagnose current Vogue page structure
+        working-directory: '14-角色库/现代服装库/06_现代名牌服装真实图片URL库'
+        run: |
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          data = json.loads(Path('collections.json').read_text(encoding='utf-8'))
+          url = data['collections'][0]['base_url']
+          req = Request(url, headers={
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/151.0.0.0 Safari/537.36',
+              'Accept': 'text/html,application/xhtml+xml',
+              'Accept-Encoding': 'identity',
+          })
+          with urlopen(req, timeout=60) as response:
+              html = response.read().decode('utf-8', errors='replace')
+          print('PAGE_URL', url)
+          print('PAGE_LENGTH', len(html))
+          for token in ['CollectionSlide', 'photosTout', 'slidesV2', 'assets.vogue.com/photos', '__NEXT_DATA__', 'collection']:
+              print('TOKEN', token, 'COUNT', html.count(token), 'FIRST', html.find(token))
+          for token in ['CollectionSlide', 'photosTout', 'assets.vogue.com/photos']:
+              pos = html.find(token)
+              if pos >= 0:
+                  snippet = html[max(0, pos-400):pos+1000].replace('\n', ' ')
+                  print('SNIPPET', token, snippet[:1400])
+          urls = re.findall(r'https?:\\?/\\?/assets\\?\.vogue\\?\.com\\?/photos\\?/[^"<> ]+', html)
+          print('RAW_ASSET_URL_MATCHES', len(urls))
+          for item in urls[:10]:
+              print('ASSET_SAMPLE', item[:500])
+          scripts = re.findall(r'<script([^>]*)>(.*?)</script>', html, flags=re.I|re.S)
+          print('SCRIPT_COUNT', len(scripts))
+          for attrs, body in sorted(scripts, key=lambda x: len(x[1]), reverse=True)[:8]:
+              print('SCRIPT', attrs[:300], 'LENGTH', len(body), 'HEAD', body[:180].replace('\n',' '))
+          PY
+
       - name: Fetch 1000 real Vogue image URLs
         working-directory: '14-角色库/现代服装库/06_现代名牌服装真实图片URL库'
         run: |
