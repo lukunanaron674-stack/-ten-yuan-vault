@@ -33,8 +33,10 @@ jobs:
         run: python '14-角色库/刘海98种/tools/apply_reference_source_fixes.py'
       - name: Apply narrative is-a narrow inheritance
         run: python '14-角色库/刘海98种/tools/apply_is_a_narrow_semantics.py'
-      - name: Apply ten-yuan mapping degree
+      - name: Apply ten-yuan composition ratio
         run: python '14-角色库/刘海98种/tools/apply_ten_yuan_mapping_degree.py'
+      - name: Apply ten-yuan archetype accuracy and rankings
+        run: python '14-角色库/刘海98种/tools/apply_ten_yuan_archetype_accuracy.py'
       - name: Check image and source links
         run: python '14-角色库/刘海98种/tools/check_reference_links.py'
       - name: Reject conflict markers
@@ -50,10 +52,11 @@ jobs:
           git add '14-角色库/刘海98种/批次14_复古与造型型刘海.canvas' \
                   '14-角色库/刘海98种/02_五行十元重组/五行库' \
                   '14-角色库/刘海98种/02_五行十元重组/02_图片与结构审计报告.md' \
-                  '14-角色库/刘海98种/02_五行十元重组/04_外链可用性报告.md'
+                  '14-角色库/刘海98种/02_五行十元重组/04_外链可用性报告.md' \
+                  '14-角色库/刘海98种/02_五行十元重组/05_十元本征映射准度排行榜.md'
           if git diff --cached --quiet; then
             echo 'No generated changes.'
           else
-            git commit -m '重建刘海五行研究卡、is-a狭义、十元映射度与来源审计 [skip bangs-rebuild]'
+            git commit -m '重建刘海五行研究卡、十元配比度、本征准度排行与来源审计 [skip bangs-rebuild]'
             git push origin HEAD:${{ github.event.pull_request.head.ref || github.ref_name }}
           fi
