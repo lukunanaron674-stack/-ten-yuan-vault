@@ -1,0 +1,334 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# 五行十元｜发型特征总览 v1.0\n\n**十元＝五行内部阴阳两极｜五行＝同行十元的广义对立统一体**\n**五大主题＝五行在叙事领域的 is-a 狭义子项**\n\n本 Canvas 总结五行与十元进入**发型领域**后的可观察结构特征。\n\n[[01-十元系统/05-十元语义空间/L1_十元即阴阳五行相反轴正本_v1.6.md|十元五行正本]]　[[01-十元系统/05-十元语义空间/L1_十元配比度与本征映射准度协议_v1.1_20260803.md|双指标正本]]\n[[14-角色库/刘海98种/02_五行十元重组/05_十元本征映射准度排行榜.md|刘海98种十元准度排行]]",
+      "x": -1100,
+      "y": -1450,
+      "width": 2200,
+      "height": 500,
+      "color": "4"
+    },
+    {
+      "id": "method",
+      "type": "text",
+      "text": "## 发型判断顺序\n\n1. **方向**：发束最终往哪里走，谁占据方向。\n2. **成立**：靠自然材质自成体，还是靠外部切割与掌握成立。\n3. **边界**：向内纳入承载，还是把内部结构外化成可见界面。\n4. **秩序**：规则分布到多个节点，还是收束到一个裁定点。\n5. **回返**：结构持续收窄，还是保留恢复、重建和回接空间。\n\n**两个数字必须分开：**\n- 十元配比度：对象内部各十元占比，总和100%。\n- 本征映射准度：对象有多像某个十元本身，独立0–100并做十元内排序。",
+      "x": -900,
+      "y": -820,
+      "width": 1800,
+      "height": 520,
+      "color": "3"
+    },
+
+    {
+      "id": "wood-group",
+      "type": "group",
+      "label": "木｜zx ↔ nx｜方向与作用权来源｜叙事狭义：因果",
+      "x": -3300,
+      "y": 0,
+      "width": 1250,
+      "height": 1880,
+      "color": "4"
+    },
+    {
+      "id": "wood",
+      "type": "text",
+      "text": "# 木｜发型领域广义\n\n**核心轴：** 最终方向与作用权来源。\n\n发型判断不是只看‘有没有动感’，而是看：\n- 发束是否自己生成并占据最终方向；\n- 还是不争夺最终方向，沿已有通道续接。\n\n**共同可观察量：** 分线方向、根部起势、发束轨迹、末端指向、前后连续性。\n\n**叙事狭义：** 因果 --is-a狭义[叙事]→ 木",
+      "x": -3200,
+      "y": 100,
+      "width": 1050,
+      "height": 430,
+      "color": "4"
+    },
+    {
+      "id": "zx",
+      "type": "text",
+      "text": "## 阳木 zx｜自身生成并占据方向\n\n**发型本征特征**\n- 根部或束点主动起势；\n- 发束具有单向推出、上挑、外翻、后冲；\n- 轮廓把视线明确推向一个结果方向；\n- 动作感来自发型自身，不只是风吹或姿势。\n\n**典型结构**\n高马尾、强斜扫、外翻层次、莫霍克脊线、明显后梳。\n\n**误判边界**\n只有倾斜但没有主动起势，不足以判zx；均匀重复的方向更可能是xn。",
+      "x": -3200,
+      "y": 590,
+      "width": 500,
+      "height": 700,
+      "color": "4"
+    },
+    {
+      "id": "nx",
+      "type": "text",
+      "text": "## 阴木 nx｜不占最终方向，沿通道续接\n\n**发型本征特征**\n- 中央或主轮廓主动让位；\n- 发束顺着已有脸侧、主体长发或分线继续；\n- 过渡、延长、融入强于主动推出；\n- 方向存在，但决定权不在该束自身。\n\n**典型结构**\n过渡生长刘海、轻薄长侧须、融入脸侧的长刘海、自然退向两侧的发束。\n\n**误判边界**\n轻薄不自动等于nx；若碎束持续收窄、失去回路，可能更接近xz。",
+      "x": -2650,
+      "y": 590,
+      "width": 500,
+      "height": 700,
+      "color": "4"
+    },
+    {
+      "id": "wood-ref",
+      "type": "file",
+      "file": "14-角色库/刘海98种/02_五行十元重组/五行库/木/木_zx-nx.canvas",
+      "x": -2920,
+      "y": 1370,
+      "width": 520,
+      "height": 380
+    },
+
+    {
+      "id": "fire-group",
+      "type": "group",
+      "label": "火｜zn ↔ x｜独立成立资格与归属方式｜叙事狭义：本体",
+      "x": -1900,
+      "y": 0,
+      "width": 1250,
+      "height": 1880,
+      "color": "1"
+    },
+    {
+      "id": "fire",
+      "type": "text",
+      "text": "# 火｜发型领域广义\n\n**核心轴：** 发型凭什么成为‘它自己’。\n\n- 一端保留自身材质、卷度、体积和生长逻辑，独立成立；\n- 一端被纳入外部掌握、调用、切割和处分边界。\n\n**共同可观察量：** 自然纹理、体积自持、几何切口、剃线、硬边、造型依赖。\n\n**叙事狭义：** 本体 --is-a狭义[叙事]→ 火",
+      "x": -1800,
+      "y": 100,
+      "width": 1050,
+      "height": 430,
+      "color": "1"
+    },
+    {
+      "id": "zn",
+      "type": "text",
+      "text": "## 阳火 zn｜保留自身成立\n\n**发型本征特征**\n- 自然卷、波纹、蓬松度本身构成识别；\n- 轮廓从材质与生长状态中自发成立；\n- 不依赖硬切线也能保持完整本体；\n- 允许有机不均匀，但整体仍自洽。\n\n**典型结构**\n自然卷刘海、Afro、卷团、蓬松自然发、未经压平的纹理发。\n\n**误判边界**\n规则烫卷若主要靠重复秩序成立，xn可能高于zn。",
+      "x": -1800,
+      "y": 590,
+      "width": 500,
+      "height": 700,
+      "color": "1"
+    },
+    {
+      "id": "x",
+      "type": "text",
+      "text": "## 阴火 x｜纳入掌握、调用与处分边界\n\n**发型本征特征**\n- 外部剪裁、剃除、压平或造型规则强烈介入；\n- V形、方形、锐斜、不对称等硬边清晰；\n- 发型像被‘规定成某种形状’；\n- 轮廓可被直接调用为符号或身份标记。\n\n**典型结构**\nV形刘海、方形眉上刘海、锐斜不对称、Undercut、硬几何切口。\n\n**误判边界**\n单一裁定点更偏z；多节点规整重复更偏xn。",
+      "x": -1250,
+      "y": 590,
+      "width": 500,
+      "height": 700,
+      "color": "1"
+    },
+    {
+      "id": "fire-ref",
+      "type": "file",
+      "file": "14-角色库/刘海98种/02_五行十元重组/五行库/火/火_zn-x.canvas",
+      "x": -1520,
+      "y": 1370,
+      "width": 520,
+      "height": 380
+    },
+
+    {
+      "id": "earth-group",
+      "type": "group",
+      "label": "土｜n ↔ x并z｜跨越内外边界的方向｜叙事狭义：空间",
+      "x": -500,
+      "y": 0,
+      "width": 1250,
+      "height": 1880,
+      "color": "6"
+    },
+    {
+      "id": "earth",
+      "type": "text",
+      "text": "# 土｜发型领域广义\n\n**核心轴：** 发型跨越内外边界的方向。\n\n- 外部发束被纳入脸、头部和主体轮廓中承载；\n- 或内部结构被外化成可见的壳、幕、片与界面。\n\n**共同可观察量：** 包脸、接入、遮挡、厚片、轮廓界面、内外层关系。\n\n**叙事狭义：** 空间 --is-a狭义[叙事]→ 土",
+      "x": -400,
+      "y": 100,
+      "width": 1050,
+      "height": 430,
+      "color": "6"
+    },
+    {
+      "id": "n",
+      "type": "text",
+      "text": "## 阳土 n｜外→内纳入承载\n\n**发型本征特征**\n- 发束进入脸侧、头型或主体长发并被承接；\n- 中央与侧边形成连续过渡；\n- 框脸、包裹、停靠、融合强；\n- 外部散束被组织进一个可容纳的内部空间。\n\n**典型结构**\n帘幕刘海、八字刘海、下巴刘海、脸侧长层、半扎的上下承接。\n\n**误判边界**\n单纯垂落不等于n；必须存在明确的纳入、连接或承载关系。",
+      "x": -400,
+      "y": 590,
+      "width": 500,
+      "height": 700,
+      "color": "6"
+    },
+    {
+      "id": "xbz",
+      "type": "text",
+      "text": "## 阴土 x并z｜内→外映射外化\n\n**发型本征特征**\n- 内部结构被外化成可读的幕、壳、片、屏；\n- 厚度与表面成为主要识别界面；\n- 发型把内部秩序投射到外部轮廓；\n- 遮挡不仅是覆盖，更是形成一个外部呈现层。\n\n**典型结构**\n厚直宽屏刘海、厚长侧片、遮眼Peekaboo、卷筒壳、法式扭转外壳。\n\n**误判边界**\n硬切边若主要表现外部处分，x更高；单一厚重停点可能偏z。",
+      "x": 150,
+      "y": 590,
+      "width": 500,
+      "height": 700,
+      "color": "6"
+    },
+    {
+      "id": "earth-ref",
+      "type": "file",
+      "file": "14-角色库/刘海98种/02_五行十元重组/五行库/土/土_n-x并z.canvas",
+      "x": -120,
+      "y": 1370,
+      "width": 520,
+      "height": 380
+    },
+
+    {
+      "id": "metal-group",
+      "type": "group",
+      "label": "金｜xn ↔ z｜运行权与裁定重心｜叙事狭义：时间",
+      "x": 900,
+      "y": 0,
+      "width": 1250,
+      "height": 1880,
+      "color": "5"
+    },
+    {
+      "id": "metal",
+      "type": "text",
+      "text": "# 金｜发型领域广义\n\n**核心轴：** 规则运行权与裁定重心如何配置。\n\n- 规则分布到多个节点、分区和重复流程；\n- 或全部收束到一个最高束点、截点或中心裁定。\n\n**共同可观察量：** 对称、分区、等距重复、束点、截点、中轴、节律。\n\n**叙事狭义：** 时间 --is-a狭义[叙事]→ 金",
+      "x": 1000,
+      "y": 100,
+      "width": 1050,
+      "height": 430,
+      "color": "5"
+    },
+    {
+      "id": "xn",
+      "type": "text",
+      "text": "## 阳金 xn｜规则分布到节点与流程\n\n**发型本征特征**\n- 多个分区共同维持秩序；\n- 对称、等距、重复、连续节律清晰；\n- 每个局部节点都承担一部分运行权；\n- 整体不是靠唯一一点，而靠规则遍布全局。\n\n**典型结构**\n超直齐线、标准中分、等距编发、规则卷、对称双束、倒U几何。\n\n**误判边界**\n只有一个束点决定全局时，z更高；自然重复纹理可能同时有zn。",
+      "x": 1000,
+      "y": 590,
+      "width": 500,
+      "height": 700,
+      "color": "5"
+    },
+    {
+      "id": "z",
+      "type": "text",
+      "text": "## 阴金 z｜收束到单一最高裁定点\n\n**发型本征特征**\n- 一个束点、截点、尖点或中心轴决定整体；\n- 其他发束服从该最高节点；\n- 视觉重心高度集中；\n- 去掉该点，发型身份会明显崩解。\n\n**典型结构**\n经典Micro刘海、中央尖点、单束高髻、唯一发结、明确中轴截断。\n\n**误判边界**\n几何硬边本身不必然是z；若是外部切割处分，可能更偏x。",
+      "x": 1550,
+      "y": 590,
+      "width": 500,
+      "height": 700,
+      "color": "5"
+    },
+    {
+      "id": "metal-ref",
+      "type": "file",
+      "file": "14-角色库/刘海98种/02_五行十元重组/五行库/金/金_xn-z.canvas",
+      "x": 1280,
+      "y": 1370,
+      "width": 520,
+      "height": 380
+    },
+
+    {
+      "id": "water-group",
+      "type": "group",
+      "label": "水｜xz ↔ nz｜可逆性与回返空间｜叙事狭义：命运",
+      "x": 2300,
+      "y": 0,
+      "width": 1250,
+      "height": 1880,
+      "color": "2"
+    },
+    {
+      "id": "water",
+      "type": "text",
+      "text": "# 水｜发型领域广义\n\n**核心轴：** 可逆性与对象特异回返空间。\n\n- 发型路径、体量或连接持续收窄；\n- 或保存、恢复、重建原有结构的可能。\n\n**共同可观察量：** 渐细、消散、断连、回卷、生长、修复、重新接入。\n\n**叙事狭义：** 命运 --is-a狭义[叙事]→ 水",
+      "x": 2400,
+      "y": 100,
+      "width": 1050,
+      "height": 430,
+      "color": "2"
+    },
+    {
+      "id": "xz",
+      "type": "text",
+      "text": "## 阳水 xz｜持续收窄\n\n**发型本征特征**\n- 发束、体量或边缘逐步变细、变少、变散；\n- 原有连接被削弱，路径向少数去向收束；\n- 碎剪、羽化、乱波不是目的，关键是回返空间持续缩小；\n- 末端呈漂移、消散或不可完全复原。\n\n**典型结构**\n长乱边羽化、自然乱波、渐细碎束、散开后难回接的纹理刘海。\n\n**误判边界**\n普通轻薄可能是nx；只有存在持续收窄和回路减少时才是xz。",
+      "x": 2400,
+      "y": 590,
+      "width": 500,
+      "height": 700,
+      "color": "2"
+    },
+    {
+      "id": "nz",
+      "type": "text",
+      "text": "## 阴水 nz｜保存、恢复或重建\n\n**发型本征特征**\n- 保留生长、回卷、重新连接的路径；\n- 造型解除后仍能回到对象自身的结构；\n- 内扣、长成、回接、修复性融合明显；\n- 不只是静止，而是保存对象特异的回返空间。\n\n**典型结构**\n生长弧形长刘海、可回接的内扣长层、低张力自然发、修复性过渡层。\n\n**误判边界**\n单纯柔和不等于nz；必须看见保存或重建原结构的路径。",
+      "x": 2950,
+      "y": 590,
+      "width": 500,
+      "height": 700,
+      "color": "2"
+    },
+    {
+      "id": "water-ref",
+      "type": "file",
+      "file": "14-角色库/刘海98种/02_五行十元重组/五行库/水/水_xz-nz.canvas",
+      "x": 2680,
+      "y": 1370,
+      "width": 520,
+      "height": 380
+    },
+
+    {
+      "id": "compare",
+      "type": "text",
+      "text": "# 十元最近邻辨别\n\n- **zx vs xn：** zx看方向由自身推出；xn看规则分布与重复运行。\n- **nx vs n：** nx沿已有方向续接；n把外部发束纳入内部结构承载。\n- **zn vs nz：** zn回答‘自身如何成立’；nz回答‘是否保存恢复与回返路径’。\n- **x vs z：** x是被外部掌握与处分；z是运行权收束到唯一最高裁定点。\n- **x并z vs x：** x并z把内部结构外化为界面；x强调外部切割、调用和归属边界。\n- **xz vs nx：** xz持续收窄回返空间；nx仍沿既有通道延续。",
+      "x": -1400,
+      "y": 2080,
+      "width": 2800,
+      "height": 600,
+      "color": "3"
+    },
+    {
+      "id": "scores",
+      "type": "text",
+      "text": "# 发型卡最低数字字段\n\n```text\n十元配比度：十项合计100%，回答‘由什么构成’。\n本征映射准度：每个目标十元独立0–100，回答‘有多像该十元本身’。\n十元内排名：同领域、同尺度、同规程内排序。\n证据置信度：资料是否足以支持判断。\n体量：结构规模。\n纯度：主结构受其他十元混入程度。\n```\n\n这五个字段不得互相冒充。人类已经发明了足够多同名百分比，不必再贡献一套。",
+      "x": 1550,
+      "y": 2080,
+      "width": 1800,
+      "height": 600,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {"id":"e-title-method","fromNode":"title","fromSide":"bottom","toNode":"method","toSide":"top"},
+    {"id":"e-method-wood","fromNode":"method","fromSide":"bottom","toNode":"wood","toSide":"top"},
+    {"id":"e-method-fire","fromNode":"method","fromSide":"bottom","toNode":"fire","toSide":"top"},
+    {"id":"e-method-earth","fromNode":"method","fromSide":"bottom","toNode":"earth","toSide":"top"},
+    {"id":"e-method-metal","fromNode":"method","fromSide":"bottom","toNode":"metal","toSide":"top"},
+    {"id":"e-method-water","fromNode":"method","fromSide":"bottom","toNode":"water","toSide":"top"},
+    {"id":"e-wood-zx","fromNode":"wood","fromSide":"bottom","toNode":"zx","toSide":"top"},
+    {"id":"e-wood-nx","fromNode":"wood","fromSide":"bottom","toNode":"nx","toSide":"top"},
+    {"id":"e-fire-zn","fromNode":"fire","fromSide":"bottom","toNode":"zn","toSide":"top"},
+    {"id":"e-fire-x","fromNode":"fire","fromSide":"bottom","toNode":"x","toSide":"top"},
+    {"id":"e-earth-n","fromNode":"earth","fromSide":"bottom","toNode":"n","toSide":"top"},
+    {"id":"e-earth-xbz","fromNode":"earth","fromSide":"bottom","toNode":"xbz","toSide":"top"},
+    {"id":"e-metal-xn","fromNode":"metal","fromSide":"bottom","toNode":"xn","toSide":"top"},
+    {"id":"e-metal-z","fromNode":"metal","fromSide":"bottom","toNode":"z","toSide":"top"},
+    {"id":"e-water-xz","fromNode":"water","fromSide":"bottom","toNode":"xz","toSide":"top"},
+    {"id":"e-water-nz","fromNode":"water","fromSide":"bottom","toNode":"nz","toSide":"top"},
+    {"id":"e-zx-ref","fromNode":"zx","fromSide":"bottom","toNode":"wood-ref","toSide":"top"},
+    {"id":"e-nx-ref","fromNode":"nx","fromSide":"bottom","toNode":"wood-ref","toSide":"top"},
+    {"id":"e-zn-ref","fromNode":"zn","fromSide":"bottom","toNode":"fire-ref","toSide":"top"},
+    {"id":"e-x-ref","fromNode":"x","fromSide":"bottom","toNode":"fire-ref","toSide":"top"},
+    {"id":"e-n-ref","fromNode":"n","fromSide":"bottom","toNode":"earth-ref","toSide":"top"},
+    {"id":"e-xbz-ref","fromNode":"xbz","fromSide":"bottom","toNode":"earth-ref","toSide":"top"},
+    {"id":"e-xn-ref","fromNode":"xn","fromSide":"bottom","toNode":"metal-ref","toSide":"top"},
+    {"id":"e-z-ref","fromNode":"z","fromSide":"bottom","toNode":"metal-ref","toSide":"top"},
+    {"id":"e-xz-ref","fromNode":"xz","fromSide":"bottom","toNode":"water-ref","toSide":"top"},
+    {"id":"e-nz-ref","fromNode":"nz","fromSide":"bottom","toNode":"water-ref","toSide":"top"},
+    {"id":"e-earth-compare","fromNode":"earth-ref","fromSide":"bottom","toNode":"compare","toSide":"top"},
+    {"id":"e-metal-scores","fromNode":"metal-ref","fromSide":"bottom","toNode":"scores","toSide":"top"}
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "type": "five-elements-ten-yuan-hairstyle-feature-overview",
+      "status": "active",
+      "version": "1.0",
+      "canonical_path": "14-角色库/十元发型Canvas/00_五行十元发型特征总览.canvas"
+    }
+  }
+}
