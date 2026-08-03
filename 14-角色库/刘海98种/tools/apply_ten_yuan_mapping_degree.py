@@ -38,7 +38,7 @@ ELEMENT_CANVASES = {
 }
 
 ITEM_RE = re.compile(r"^##\s*(\d{2})[｜|]", re.M)
-PURITY_RE = re.compile(r"纯度[：:]\*?\*?\s*(\d{1,3})%")
+PURITY_RE = re.compile(r"纯度(?:[：:]\*{0,2}\s*)?(\d{1,3})%")
 MAP_RE = re.compile(r"\*\*正式十元映射：\*\*\s*主\s*`([^`]+)`／副\s*`([^`]+)`")
 DEGREE_LINE_RE = re.compile(r"^\*\*(?:实例十元映射度|映射度模型|类型十元继承映射度)：\*\*.*$", re.M)
 
@@ -163,7 +163,7 @@ def update_audit(card_count: int, title_count: int) -> None:
 - 类型轴继承映射度：{title_count}/5
 - 实例卡映射度：{card_count}/98
 - 每卡主副映射度总和：100%
-- 当前模型：`provisional_two-pole-normalized`
+- 当前模型：`provisional-two-pole-normalized`
 - 迁移来源：旧研究纯度
 - 其余八个十元：暂记0
 - 十维全量终审：pending
