@@ -1,0 +1,83 @@
+{
+  "nodes": [
+    {
+      "id": "audit_title",
+      "type": "text",
+      "text": "# 刘海98种｜十元分布统计与映射纠偏\n\n**覆盖：01–98｜主十元98项｜副十元98项**\n\n正式明细：[[01_十元分布统计与映射纠偏.md]]\n正式规则：[[SKILL.md]]",
+      "x": -600,
+      "y": -760,
+      "width": 1200,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "audit_raw",
+      "type": "text",
+      "text": "## 原主十元分布\n\n- n：24｜24.5%\n- zn：13｜13.3%\n- x并z：12｜12.2%\n- nx：11｜11.2%\n- xn：10｜10.2%\n- x：8｜8.2%\n- xz：8｜8.2%\n- z：6｜6.1%\n- zx：5｜5.1%\n- nz：1｜1.0%\n\n问题不是不平均，而是部分轻薄、柔软和几何条目用了错误的一级结构。",
+      "x": -1900,
+      "y": -120,
+      "width": 800,
+      "height": 900,
+      "color": "1"
+    },
+    {
+      "id": "audit_corrected",
+      "type": "text",
+      "text": "## 纠偏后主十元分布\n\n- n：21｜21.4%\n- nx：12｜12.2%\n- x并z：12｜12.2%\n- xn：11｜11.2%\n- x：11｜11.2%\n- xz：9｜9.2%\n- zn：8｜8.2%\n- z：7｜7.1%\n- zx：6｜6.1%\n- nz：1｜1.0%\n\n不追求十元等量。n高频来自刘海的脸侧连接本性；nz稀少是当前样本事实。",
+      "x": -980,
+      "y": -120,
+      "width": 800,
+      "height": 900,
+      "color": "3"
+    },
+    {
+      "id": "audit_corrections_a",
+      "type": "text",
+      "text": "## 硬纠偏｜01–24\n\n01 透视齐：zn/xn → **nx/xn**\n02 轻羽碎：zn/xz → **xz/zn**\n04 标准空气：zn/n → **nx/zn**\n05 Baby空气：zn/z → **z/zn**\n13 厚柔齐：xn/nz → **xn/n**\n18 轻羽帘幕：zn/n → **nx/n**\n24 六四八字：nx/n → **xn/n**",
+      "x": -60,
+      "y": -120,
+      "width": 800,
+      "height": 900,
+      "color": "5"
+    },
+    {
+      "id": "audit_corrections_b",
+      "type": "text",
+      "text": "## 硬纠偏｜41–93\n\n41 弧形贴眼斜扫：n/x并z → **x并z/zx**\n69 侧拨Birkin：nx/zx → **zx/nx**\n71 拱形：n/xn → **x/n**\n72 U形：n/zx → **x/n**\n93 Bettie Page圆弧：x并z/xn → **x/xn**\n\n批次Canvas保留历史判断；正式总表、重绘与后续分析以纠偏表为准。",
+      "x": 860,
+      "y": -120,
+      "width": 800,
+      "height": 900,
+      "color": "6"
+    },
+    {
+      "id": "audit_rules",
+      "type": "text",
+      "text": "## 映射四级证据\n\n1. 一级结构变量\n2. 家族内差异变量\n3. 跨家族排他变量\n4. 参考图直接可见\n\n主十元解释一级结构；副十元只解释二级修饰。\n\n禁用捷径：\n- 温柔＝nz\n- 自然感＝zn\n- 框脸＝n\n- 直发＝xn\n- 轻薄＝nx\n- 翘起＝zx\n- 凌乱＝xz\n- 厚重＝x并z",
+      "x": -980,
+      "y": 900,
+      "width": 1720,
+      "height": 700,
+      "color": "4"
+    },
+    {
+      "id": "audit_skills",
+      "type": "text",
+      "text": "## S级依赖\n\n[[skills/S级_真实参考图片采集/SKILL.md]]\n\n没有可信参考图，名称、去重、结构判断、十元映射和统一重绘都会一起污染。\n\nSkill等级制度：[[skills/Skill评价等级.md]]",
+      "x": 860,
+      "y": 900,
+      "width": 800,
+      "height": 700,
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {"id":"ae1","fromNode":"audit_title","fromSide":"bottom","toNode":"audit_raw","toSide":"top"},
+    {"id":"ae2","fromNode":"audit_title","fromSide":"bottom","toNode":"audit_corrected","toSide":"top"},
+    {"id":"ae3","fromNode":"audit_title","fromSide":"bottom","toNode":"audit_corrections_a","toSide":"top"},
+    {"id":"ae4","fromNode":"audit_title","fromSide":"bottom","toNode":"audit_corrections_b","toSide":"top"},
+    {"id":"ae5","fromNode":"audit_corrected","fromSide":"bottom","toNode":"audit_rules","toSide":"top"},
+    {"id":"ae6","fromNode":"audit_corrections_b","fromSide":"bottom","toNode":"audit_skills","toSide":"top"}
+  ],
+  "metadata": {"version":"1.0-1.0","frontmatter":{}}
+}
