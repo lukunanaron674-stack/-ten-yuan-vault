@@ -1,16 +1,16 @@
-name: Hair R2 Batch01 Collect v2
+name: Hair R2 Batch01 Finalize
 
 on:
   pull_request:
     branches: [main]
     paths:
-      - '05-银矿库/角色库/发型库总表/.r2-batch01-trigger'
+      - '05-银矿库/角色库/发型库总表/.r2-batch01-finalize-trigger'
 
 permissions:
   contents: write
 
 jobs:
-  collect-batch01-v2:
+  finalize-r2:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,104 +20,128 @@ jobs:
           filter: blob:none
           sparse-checkout: |
             05-银矿库/角色库/发型库总表
+            14-角色库/ZX/assets/refs
           sparse-checkout-cone-mode: false
 
       - name: Install dependencies
         run: python -m pip install --disable-pip-version-check pillow requests
 
-      - name: Retry Commons with throttling
+      - name: Build final local batch01
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
-          import io, json, time, re, html
+          import json, shutil, io, time
           from pathlib import Path
           import requests
-          from PIL import Image, ImageDraw, ImageFont
+          from PIL import Image
 
           root=Path('05-银矿库/角色库/发型库总表')
-          out=root/'assets/refs/batch01_r2/candidates'
-          out.mkdir(parents=True,exist_ok=True)
+          selected=root/'assets/refs/batch01_r2/selected'
+          selected.mkdir(parents=True,exist_ok=True)
+
           items=[
-            ('01','马尾','直顺马尾','Indian woman in ponytail.jpg'),
-            ('02','马尾','发束包裹马尾','Hair Wrapped Ponytail.JPG'),
-            ('03','马尾','分节马尾','Sectioned Ponytail.JPG'),
-            ('04','短发','经典波波头','Woman with bob haircut.jpg'),
-            ('05','短发','精灵短发','Pixie haircut.jpg'),
-            ('06','短发','长波波头','Woman with long bob haircut from behind.png'),
-            ('07','卷发','自然卷','Curly hair.jpg'),
-            ('08','卷发','大体量卷发','Woman with big curly hairstyle.jpg'),
-            ('09','卷发','蓬松卷发','Voluminous curly hairstyle.jpg'),
-            ('10','公主切','经典公主切','Hime cut.jpg'),
-            ('11','公主切','长侧片公主切','Cosplayer of Asuna Yuuki, Sword Art Online 20140830.jpg'),
-            ('12','公主切','柔化公主切','Cosplayer of Kotori Minami at CWT41 20151212a.jpg'),
-            ('13','双马尾','经典双马尾','Pigtails.jpg'),
-            ('14','双马尾','长双马尾','A girl with twin tails; January 2016 (04).jpg'),
-            ('15','双马尾','编织双马尾','Braided pigtails.jpg'),
-            ('16','狼尾','狼尾示例','Wolftail Hairstyle Example.jpg'),
-            ('17','狼尾','现代狼剪',"Woman with wolfcut and Foxhound jacket at Tokyo Station on New Year's Eve.jpg"),
-            ('18','狼尾','现代鲻鱼近邻','Modern Mullet.jpg'),
+            ('01','马尾','直顺马尾',root/'assets/refs/batch01_r2/candidates/01_马尾_直顺马尾.jpg','https://commons.wikimedia.org/wiki/File:Indian_woman_in_ponytail.jpg','单束低中位马尾，主体直顺垂落。'),
+            ('02','马尾','发束包裹马尾',root/'assets/refs/batch01_r2/candidates/02_马尾_发束包裹马尾.jpg','https://commons.wikimedia.org/wiki/File:Hair_Wrapped_Ponytail.JPG','发束包覆主束点，隐藏发圈并强化束点。'),
+            ('03','马尾','分节马尾',root/'assets/refs/batch01_r2/candidates/03_马尾_分节马尾.jpg','https://commons.wikimedia.org/wiki/File:Sectioned_Ponytail.JPG','尾部由多个束点分节，形成泡泡式节奏。'),
+            ('04','短发','精灵短发',Path('14-角色库/ZX/assets/refs/zx_03_modern_pixie.jpg'),'https://www.allure.com/story/pixie-haircut','耳侧与后颈显著缩短，顶部保留短层。'),
+            ('05','短发','渐层Bob',Path('14-角色库/ZX/assets/refs/zx_06_graduated_bob.jpg'),'https://www.elle.com/beauty/hair/a65352286/graduated-bob-hairstyles/','后短前长，后脑堆叠形成斜向重量线。'),
+            ('06','短发','齐切Bob',root/'assets/refs/batch04/04_11_blunt_bob.jpg','https://commons.wikimedia.org/wiki/File:Woman_with_bob_haircut.jpg','下缘近水平齐切，重量线完整。'),
+            ('07','卷发','中长卷发',root/'assets/refs/batch04/04_02_curly_hair.jpg','https://commons.wikimedia.org/wiki/File:Woman_with_curly_brown_hairstyle.jpg','中等卷径沿中长发重复形成C弯与S波。'),
+            ('08','卷发','Afro圆形自然卷',root/'assets/refs/batch04/04_08_afro.jpg','https://commons.wikimedia.org/wiki/File:Natural_redhead_black_girl_(red_power_hairstyle).jpg','紧密自然卷向四周扩张，形成圆形大体量。'),
+            ('09','卷发','蓬松卷发',root/'assets/refs/batch01_r2/candidates/09_卷发_蓬松卷发.jpg','https://commons.wikimedia.org/wiki/File:Voluminous_curly_hairstyle.jpg','高蓬松量与重复卷组并存。'),
+            ('10','公主切','经典中分公主切',root/'assets/refs/r1_china_source_pool/selected/01_经典中分公主切.jpg','https://www.meifazhan.com/lxfx/liuhai/186605.html','中分额面与下颌平切侧片并存。'),
+            ('11','公主切','棕色柔化公主切',root/'assets/refs/r1_china_source_pool/selected/04_棕色柔和公主切.jpg','https://www.meifazhan.com/lxfx/liuhai/186605.html','硬切侧片被薄刘海与棕色长发柔化。'),
+            ('12','公主切','齐刘海长发公主切',root/'assets/refs/r1_china_source_pool/selected/08_齐刘海长发公主切.jpg','https://www.meifazhan.com/lxfx/liuhai/186605.html','齐刘海、脸侧短片、胸下长发三层清楚。'),
+            ('13','双马尾','低双马尾',root/'assets/refs/batch04/04_04_pigtails.jpg','https://commons.wikimedia.org/wiki/File:Smiling_woman_with_pigtails.JPG','左右两个低位束点，尾部自然垂落。'),
+            ('14','双马尾','贴头双辫',Path('14-角色库/ZX/assets/refs/zx_02_boxer_braids.jpg'),'https://www.allure.com/gallery/box-braids-hair-inspiration','左右双轨贴头编织，属于双束编发近邻。'),
+            ('15','双马尾','长双马尾',None,'https://commons.wikimedia.org/wiki/File:A_girl_with_twin_tails;_January_2016_(04).jpg','左右高位长束点，长尾向两侧垂落。'),
+            ('16','狼尾','Mixie短狼尾',Path('14-角色库/ZX/assets/refs/zx_09_mixie_cut.jpg'),'https://www.allure.com/story/mixie-mullet-pixie-haircut-trend','耳侧短层与后颈长尾并置。'),
+            ('17','狼尾','顺直长层轻狼尾',root/'assets/refs/batch07_hush_direction/07_01_possible_original.jpg','https://thebeautyfoodie.com/korean-wolf-cut/','长直主体中加入轻碎层和柔和尾部。'),
+            ('18','狼尾','长款Hush轻狼尾',root/'assets/refs/batch07_hush_direction/07_03_long_hush_cut.jpg','https://www.mujerhoy.com/belleza/pelo/corte-hush-cut-tendencia-pelo-otono-2023-20230923114458-nt.html','羽毛脸周层、轻冠部体量与细长发尾并存。'),
           ]
-          s=requests.Session(); s.headers.update({'User-Agent':'ten-yuan-vault-hair-research/1.1 (educational catalog; contact via repository)'})
 
-          def get_retry(url,*,params=None,binary=False):
+          # 只补最后一张长双马尾，失败则不冒充完成。
+          target15=selected/'15_双马尾_长双马尾.jpg'
+          if not target15.exists():
+              url='https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20girl%20with%20twin%20tails%3B%20January%202016%20%2804%29.jpg?width=1200'
+              s=requests.Session(); s.headers.update({'User-Agent':'ten-yuan-vault-hair-research/1.2'})
               last=''
-              for attempt in range(7):
+              for attempt in range(8):
                   try:
-                      r=s.get(url,params=params,timeout=70)
+                      r=s.get(url,timeout=80)
                       if r.status_code in (429,500,502,503,504):
-                          last=f'HTTP {r.status_code}'; time.sleep(min(45,5*(attempt+1))); continue
-                      r.raise_for_status()
-                      return r.content if binary else r.json()
+                          last=f'HTTP {r.status_code}'; time.sleep(8*(attempt+1)); continue
+                      r.raise_for_status(); im=Image.open(io.BytesIO(r.content)); im.load(); im.convert('RGB').save(target15,quality=92,optimize=True); break
                   except Exception as e:
-                      last=str(e); time.sleep(min(45,5*(attempt+1)))
-              raise RuntimeError(last)
+                      last=str(e); time.sleep(8*(attempt+1))
+              if not target15.exists(): raise SystemExit('missing long twintails: '+last)
 
-          def clean(v):
-              return html.unescape(re.sub('<[^>]+>','',v or '')).strip()
+          final=[]
+          for cid,family,title,src,source,note in items:
+              dst=selected/f'{cid}_{family}_{title}.jpg'
+              if cid=='15': src=target15
+              if not src or not Path(src).exists(): raise SystemExit(f'missing source {cid}: {src}')
+              if Path(src).resolve()!=dst.resolve(): shutil.copy2(src,dst)
+              final.append((cid,family,title,dst,source,note))
 
-          rows=[]; thumbs=[]
-          for idx,(cid,family,title,file_title) in enumerate(items):
-              row={'id':cid,'family':family,'title':title,'commons_file':file_title,'status':'failed'}
-              try:
-                  params={'action':'query','format':'json','formatversion':'2','titles':'File:'+file_title,'prop':'imageinfo','iiprop':'url|size|mime|extmetadata'}
-                  data=get_retry('https://commons.wikimedia.org/w/api.php',params=params)
-                  page=data['query']['pages'][0]
-                  if page.get('missing') is not None or not page.get('imageinfo'): raise RuntimeError('Commons file missing')
-                  info=page['imageinfo'][0]; meta=info.get('extmetadata',{})
-                  raw=get_retry(info['url'],binary=True)
-                  im=Image.open(io.BytesIO(raw)); im.load(); w,h=im.size
-                  if im.mode not in ('RGB','L'):
-                      bg=Image.new('RGB',im.size,'white')
-                      if 'A' in im.getbands(): bg.paste(im,mask=im.getchannel('A'))
-                      else: bg.paste(im)
-                      im=bg
-                  else: im=im.convert('RGB')
-                  path=out/f'{cid}_{family}_{title}.jpg'; im.save(path,quality=92,optimize=True)
-                  row.update({'status':'downloaded','dimensions':f'{w}x{h}','file':str(path),'source_page':info.get('descriptionurl',''),'image_url':info['url'],'author':clean(meta.get('Artist',{}).get('value','')),'license':meta.get('LicenseShortName',{}).get('value',''),'credit':clean(meta.get('Credit',{}).get('value',''))})
-                  th=im.copy(); th.thumbnail((360,440)); thumbs.append((cid,family,title,th))
-              except Exception as e: row['reason']=str(e)[:260]
-              rows.append(row)
-              time.sleep(4)
+          groups=[('马尾','5'),('短发','6'),('卷发','3'),('公主切','2'),('双马尾','1'),('狼尾','5')]
+          nodes=[{'id':'title','type':'text','text':'# 女性发型库总表｜批次01 R2正式收口版\n\n**18张本地可见图｜6个家族×3种子型**\n\n旧远程热链已退役。本版复用05库已核验资产、R1高质量图源池与少量开放许可候选；全部改为 `type:file`。\n\n图片可见不自动等于S级canonical，当前状态统一为 `image-present / source-confirmed / audit-pending`。','x':-850,'y':-900,'width':1700,'height':430,'color':'4'}]
+          edges=[]
+          positions={}
+          for gi,(fam,color) in enumerate(groups):
+              row=gi//3; col=gi%3; gx=-3000+col*2050; gy=-250+row*2250
+              nodes.append({'id':f'group-{gi}','type':'group','x':gx,'y':gy,'width':1850,'height':1950,'color':color,'label':f'{fam}｜R2本地正式子型'})
+              positions[fam]=(gx,gy,color)
+          counters={f:0 for f,_ in groups}
+          for cid,family,title,path,source,note in final:
+              gx,gy,color=positions[family]; i=counters[family]; counters[family]+=1
+              x=gx+80+i*580; y=gy+130
+              fid=f'ref-{cid}'; card=f'card-{cid}'
+              nodes.append({'id':fid,'type':'file','file':str(path),'x':x,'y':y,'width':500,'height':720})
+              nodes.append({'id':card,'type':'text','text':f'# {cid}｜{title}\n\n**家族：** {family}\n\n{note}\n\n[打开来源页面]({source})\n\n**证据状态：** `image-present / source-confirmed / audit-pending`','x':x,'y':y+770,'width':500,'height':520,'color':color})
+              edges.append({'id':f'e-{cid}','fromNode':fid,'fromSide':'bottom','toNode':card,'toSide':'top'})
+          nodes.append({'id':'audit','type':'text','text':'# R2审计\n\n## 已完成\n- 18个远程热链节点全部退役\n- 18张图片全部转为05库本地文件节点\n- 6个家族各保留3个结构差异明确的子型\n- 原始来源链接保留\n- Canvas metadata固定为 `1.0-1.0`\n\n## 淘汰\n- 旧10号假发模特公主切：分辨率低且非真人沙龙人像\n- 失效或重复Commons候选：不继续保留为正式证据\n\n## 待R4\n逐项完成S/A级结构审计、作者和许可复核。','x':-900,'y':4300,'width':1800,'height':850,'color':'4'})
+          canvas={'nodes':nodes,'edges':edges,'metadata':{'version':'1.0-1.0','frontmatter':{}}}
+          (root/'女性发型库总表_真实网络参考子型批次01.canvas').write_text(json.dumps(canvas,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
-          cols=3; cw=440; ch=560; rn=max(1,(len(thumbs)+cols-1)//cols)
-          sheet=Image.new('RGB',(cols*cw,rn*ch),'white'); draw=ImageDraw.Draw(sheet)
-          try: font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',20)
-          except: font=ImageFont.load_default()
-          for i,(cid,family,title,th) in enumerate(thumbs):
-              x=(i%cols)*cw; y=(i//cols)*ch
-              sheet.paste(th,(x+(cw-th.width)//2,y+8)); draw.rectangle((x,y,x+cw-1,y+ch-1),outline='black',width=2)
-              draw.text((x+14,y+458),f'{cid} | {family}',fill='black',font=font); draw.text((x+14,y+492),title,fill='black',font=font)
-          d=root/'assets/refs/batch01_r2'; d.mkdir(parents=True,exist_ok=True); sheet.save(d/'R2_批次01候选联系表.jpg',quality=90)
-          (root/'R2_批次01候选清单.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          md=['# R2 批次01候选清单','',f'- 目标：{len(items)}张',f'- 成功下载：{sum(r["status"]=="downloaded" for r in rows)}张','- v2采用单项限速与指数退避；仍需人工审美和结构筛选。','']
-          for r in rows:
-              md += [f'## {r["id"]}｜{r["family"]}｜{r["title"]}',f'- Commons文件：`{r["commons_file"]}`',f'- 状态：`{r["status"]}`',f'- 尺寸：{r.get("dimensions","未知")}',f'- 作者：{r.get("author") or "未解析"}',f'- 许可：{r.get("license") or "未解析"}',f'- 来源页：{r.get("source_page","未解析")}',f'- 本地文件：`{r.get("file","未保存")}`',f'- 失败原因：{r.get("reason","") or "无"}','']
-          (root/'R2_批次01候选清单.md').write_text('\n'.join(md),encoding='utf-8')
-          print({'downloaded':sum(r['status']=='downloaded' for r in rows),'total':len(rows)})
+          md=['# R2 批次01正式来源清单','',f'- 正式本地图：{len(final)}张','- 家族：马尾、短发、卷发、公主切、双马尾、狼尾','- 状态：`image-present / source-confirmed / audit-pending`','']
+          for cid,family,title,path,source,note in final:
+              md += [f'## {cid}｜{family}｜{title}',f'- 本地文件：`{path}`',f'- 来源：{source}',f'- 结构：{note}','']
+          (root/'R2_批次01正式来源清单.md').write_text('\n'.join(md),encoding='utf-8')
+
+          # 总索引：批次01从source-degraded改为R2本地正式18张，总数42+18=60，但去掉重复计数风险，明确资产视图计数。
+          index_path=root/'女性发型库_总索引.canvas'; index=json.loads(index_path.read_text(encoding='utf-8'))
+          index.setdefault('metadata',{})['version']='1.0-1.0'; index['metadata'].setdefault('frontmatter',{})
+          for n in index.get('nodes',[]):
+              if n.get('id')=='title': n['text']=n.get('text','').replace('本地可见图片：42张','本地图片节点：60个')
+              if n.get('id')=='batch01-card': n['text']='## 批次01｜R2正式收口｜18张本地图\n\n马尾、短发、卷发、公主切、双马尾、狼尾各3张。旧热链已退役，全部改为05库本地 `type:file`。\n\n状态：`image-present / source-confirmed / audit-pending`。'
+              if n.get('id')=='status':
+                  n['text']=n.get('text','').replace('- **本地可见图片合计：42张**','- 批次01 R2：18张本地节点\n- **本地图片节点合计：60个**')
+          if not any(n.get('id')=='r2-manifest' for n in index.get('nodes',[])):
+              index['nodes'].append({'id':'r2-manifest','type':'file','file':str(root/'R2_批次01正式来源清单.md'),'x':440,'y':700,'width':480,'height':650})
+              index['edges'].append({'id':'e-r2-manifest','fromNode':'batch01','fromSide':'right','toNode':'r2-manifest','toSide':'left'})
+          index_path.write_text(json.dumps(index,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           PY
 
-      - name: Commit v2 candidates
+      - name: Validate outputs
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('05-银矿库/角色库/发型库总表')
+          c=json.loads((root/'女性发型库总表_真实网络参考子型批次01.canvas').read_text(encoding='utf-8'))
+          files=[n for n in c['nodes'] if n.get('type')=='file']
+          assert len(files)==18, len(files)
+          assert all(Path(n['file']).exists() for n in files)
+          assert c['metadata']['version']=='1.0-1.0'
+          idx=json.loads((root/'女性发型库_总索引.canvas').read_text(encoding='utf-8'))
+          assert idx['metadata']['version']=='1.0-1.0'
+          print('R2 validated:',len(files),'local files')
+          PY
+
+      - name: Commit R2 final
         shell: bash
         run: |
           set -euo pipefail
@@ -125,13 +149,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'R2：限速重试批次01候选'
+          git commit -m 'R2：收口批次01为18张本地配图'
+          git fetch origin "$BRANCH"
+          git rebase "origin/$BRANCH"
           git push origin HEAD:"$BRANCH"
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: r2-batch01-candidates-v2
-          path: 05-银矿库/角色库/发型库总表/assets/refs/batch01_r2
-          if-no-files-found: error
-          retention-days: 7
