@@ -1,0 +1,75 @@
+name: Build bangs five-element image canvases
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "14-角色库/刘海98种/**"
+      - ".github/workflows/build-bangs-five-element-image-canvases.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bangs-five-element-image-canvases
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Build image-rich canvases
+        run: python "14-角色库/刘海98种/tools/build_five_element_image_canvases.py"
+
+      - name: Validate generated canvases
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path("14-角色库/刘海98种/02_五行十元重组")
+          files = [
+              root / "00_五行总索引.canvas",
+              root / "00_五行配图总索引.canvas",
+              root / "五行库/木/木_zx-nx.canvas",
+              root / "五行库/火/火_zn-x.canvas",
+              root / "五行库/土/土_n-x并z.canvas",
+              root / "五行库/金/金_xn-z.canvas",
+              root / "五行库/水/水_xz-nz.canvas",
+          ]
+          count = 0
+          for path in files:
+              data = json.loads(path.read_text(encoding="utf-8"))
+              count += sum(
+                  node.get("text", "").count("![](")
+                  for node in data.get("nodes", [])
+                  if node.get("type") == "text"
+              )
+          assert count >= 103, f"expected at least 103 embedded images, got {count}"
+          audit = (root / "02_配图证据审计.md").read_text(encoding="utf-8")
+          assert "图片覆盖：**98/98**" in audit
+          print(f"validated embedded image count: {count}")
+          PY
+
+      - name: Commit generated assets
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            "14-角色库/刘海98种/SKILL.md" \
+            "14-角色库/刘海98种/02_五行十元重组"
+          git commit -m "刘海98种：按S级配图Skill生成五行配图库"
+          git push origin HEAD:main
