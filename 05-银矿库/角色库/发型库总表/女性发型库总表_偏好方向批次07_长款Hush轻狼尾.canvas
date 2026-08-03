@@ -98,10 +98,37 @@
     }
   ],
   "edges": [
-    {"id": "e-01", "fromNode": "ref-01", "fromSide": "right", "toNode": "card-01", "toSide": "left"},
-    {"id": "e-02", "fromNode": "ref-02", "fromSide": "right", "toNode": "card-02", "toSide": "left"},
-    {"id": "e-03", "fromNode": "ref-03", "fromSide": "right", "toNode": "card-03", "toSide": "left"},
-    {"id": "e-04", "fromNode": "ref-04", "fromSide": "right", "toNode": "card-04", "toSide": "left"}
+    {
+      "id": "e-01",
+      "fromNode": "ref-01",
+      "fromSide": "right",
+      "toNode": "card-01",
+      "toSide": "left"
+    },
+    {
+      "id": "e-02",
+      "fromNode": "ref-02",
+      "fromSide": "right",
+      "toNode": "card-02",
+      "toSide": "left"
+    },
+    {
+      "id": "e-03",
+      "fromNode": "ref-03",
+      "fromSide": "right",
+      "toNode": "card-03",
+      "toSide": "left"
+    },
+    {
+      "id": "e-04",
+      "fromNode": "ref-04",
+      "fromSide": "right",
+      "toNode": "card-04",
+      "toSide": "left"
+    }
   ],
-  "metadata": {"version": "1.1", "frontmatter": {}}
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
 }
