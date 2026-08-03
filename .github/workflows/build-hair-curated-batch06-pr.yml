@@ -1,0 +1,69 @@
+name: Build Hair Curated Batch 06 PR
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '05-银矿库/角色库/发型库总表/.batch06-curated-trigger'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hair-curated-batch06-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            05-银矿库/角色库/发型库总表
+          sparse-checkout-cone-mode: false
+
+      - name: Download six curated references and build Canvas
+        run: python '05-银矿库/角色库/发型库总表/tools/build_curated_priority_batch06.py'
+
+      - name: Validate local files and Canvas
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('05-银矿库/角色库/发型库总表')
+          asset_dir = root / 'assets/refs/batch06'
+          assets = sorted(asset_dir.glob('*'))
+          if len(assets) != 6:
+              raise SystemExit(f'expected 6 assets, got {len(assets)}')
+          for path in assets:
+              if path.stat().st_size < 20000:
+                  raise SystemExit(f'asset too small: {path}')
+          canvas = json.loads((root / '女性发型库总表_定向配图批次06.canvas').read_text(encoding='utf-8'))
+          file_nodes = [n for n in canvas.get('nodes', []) if n.get('type') == 'file']
+          if len(file_nodes) != 6:
+              raise SystemExit(f'expected 6 file nodes, got {len(file_nodes)}')
+          print('validated batch06 assets=6 file_nodes=6')
+          PY
+
+      - name: Commit results to PR branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          BRANCH='${{ github.event.pull_request.head.ref }}'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add '05-银矿库/角色库/发型库总表'
+          if git diff --cached --quiet; then
+            echo 'No generated changes.'
+            exit 0
+          fi
+          git commit -m '发型库：新增批次06六项定向本地配图'
+          git fetch origin "$BRANCH"
+          git rebase "origin/$BRANCH"
+          git push origin HEAD:"$BRANCH"
