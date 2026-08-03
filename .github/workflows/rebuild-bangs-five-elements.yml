@@ -6,6 +6,11 @@ on:
     paths:
       - '14-角色库/刘海98种/**'
       - '.github/workflows/rebuild-bangs-five-elements.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - '14-角色库/刘海98种/**'
+      - '.github/workflows/rebuild-bangs-five-elements.yml'
   schedule:
     - cron: '17 3 * * 1'
   workflow_dispatch:
@@ -21,6 +26,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
       - name: Rebuild canvases and structural audit
         run: python '14-角色库/刘海98种/tools/rebuild_five_element_canvases.py'
       - name: Apply confirmed source fixes
@@ -49,5 +55,5 @@ jobs:
             echo 'No generated changes.'
           else
             git commit -m '重建刘海五行研究卡、is-a狭义、十元映射度与来源审计 [skip bangs-rebuild]'
-            git push
+            git push origin HEAD:${{ github.event.pull_request.head.ref || github.ref_name }}
           fi
