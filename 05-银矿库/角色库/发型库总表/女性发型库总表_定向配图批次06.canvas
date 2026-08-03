@@ -1,0 +1,236 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# 女性发型库总表｜定向配图批次06\n\n**05库执行｜14库配图Skill规则**\n\n本批只收6个高优先级缺口，全部使用人工确认来源页与原图地址。左侧为05库本地图片，右侧为结构卡。图片仅作为内部结构研究参考，版权归原作者与媒体。",
+      "x": -1500,
+      "y": -900,
+      "width": 3000,
+      "height": 360,
+      "color": "4"
+    },
+    {
+      "id": "ref-01",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch06/06_01_jellyfish_cut.jpg",
+      "x": -1500,
+      "y": -380,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-01",
+      "type": "text",
+      "text": "[打开来源文章](https://www.allure.com/story/lady-gaga-jellyfish-bob-haircut)\n\n图源标注：Allure / Getty Images",
+      "x": -1500,
+      "y": 65,
+      "width": 470,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "card-01",
+      "type": "text",
+      "text": "# 01｜水母头\n### Jellyfish Cut\n\n**一级结构变量：** 外层短Bob壳与内层超长发形成清晰双层断差\n\n**结构：** 上层围绕脸部形成短而钝的壳体，下层从后部继续垂落；上下两层不能融合成普通长层次。\n\n**排除：** 只有脸周短层但没有独立Bob壳，不算水母头；普通公主切的决定性证据是脸侧平切片。\n\n**十元入口：** 双层外壳偏 x并z；硬断层偏 x／z；下层延续可出现 n。\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -970,
+      "y": -380,
+      "width": 820,
+      "height": 570,
+      "color": "1"
+    },
+    {
+      "id": "ref-02",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch06/06_02_butterfly_cut.jpg",
+      "x": -50,
+      "y": -380,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-02",
+      "type": "text",
+      "text": "[打开来源文章](https://www.allure.com/story/butterfly-haircut-trend)\n\n图源标注：Allure / courtesy of @modestspotcarrillo",
+      "x": -50,
+      "y": 65,
+      "width": 470,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "card-02",
+      "type": "text",
+      "text": "# 02｜蝴蝶剪\n### Butterfly Cut\n\n**一级结构变量：** 短脸周层与肩下长层形成两级外翻体量\n\n**结构：** 顶部和脸周层向外翻卷，长层保留长度与流动；整体轻盈蓬松，不形成硬壳。\n\n**排除：** 普通长层次若没有显著短层体量与外翻方向，不归蝴蝶剪；章鱼剪下端更细碎下垂。\n\n**十元入口：** 外扩动作偏 zx；层次连续偏 n；蓬松显现可出现 z。\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": 480,
+      "y": -380,
+      "width": 820,
+      "height": 570,
+      "color": "2"
+    },
+    {
+      "id": "ref-03",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch06/06_03_octopus_cut.png",
+      "x": -1500,
+      "y": 400,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-03",
+      "type": "text",
+      "text": "[打开来源文章](https://www.allure.com/story/octopus-haircut-trend)\n\n图源标注：Allure / courtesy of Shag! London",
+      "x": -1500,
+      "y": 845,
+      "width": 470,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "card-03",
+      "type": "text",
+      "text": "# 03｜章鱼剪\n### Octopus Cut\n\n**一级结构变量：** 顶部圆形高层体量与下端细长触须状发尾并置\n\n**结构：** 头部上半区近圆形，内部是极端Shag层次；底部保留多条细长、稀薄、分离的发尾。\n\n**排除：** 狼尾强调前短后长与后颈尾部；章鱼剪强调圆头体与多条下垂“触须”。\n\n**十元入口：** 上部壳体偏 x并z；下端漂移偏 xz；纵向触须延续可偏 n。\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -970,
+      "y": 400,
+      "width": 820,
+      "height": 570,
+      "color": "3"
+    },
+    {
+      "id": "ref-04",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch06/06_04_cornrows.jpg",
+      "x": -50,
+      "y": 400,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-04",
+      "type": "text",
+      "text": "[打开来源文章](https://www.allure.com/story/how-to-cornrow-your-own-hair-tips)\n\n图源标注：Allure / Getty Images",
+      "x": -50,
+      "y": 845,
+      "width": 470,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "card-04",
+      "type": "text",
+      "text": "# 04｜Cornrows贴头辫\n### Cornrows\n\n**一级结构变量：** 多条编织轨道直接贴附头皮并沿固定方向推进\n\n**结构：** 发根分区清楚；每条辫子在推进时持续接入头皮新发束；轨道可直线、曲线或几何排列。\n\n**排除：** 普通三股辫只从束点之后自由垂落；Box Braids以独立方格分区和自由辫束为主。\n\n**十元入口：** 持续接入偏 n；等距分区偏 xn；向后推进可出现 zx。\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": 480,
+      "y": 400,
+      "width": 820,
+      "height": 570,
+      "color": "4"
+    },
+    {
+      "id": "ref-05",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch06/06_05_senegalese_twists.jpg",
+      "x": -1500,
+      "y": 1180,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-05",
+      "type": "text",
+      "text": "[打开来源文章](https://www.allure.com/story/lupita-nyongo-senegalese-twists)\n\n图源标注：Allure / Getty Images",
+      "x": -1500,
+      "y": 1625,
+      "width": 470,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "card-05",
+      "type": "text",
+      "text": "# 05｜塞内加尔扭辫\n### Senegalese Twists\n\n**一级结构变量：** 大量双股发束以绳索状扭转纹理独立垂落\n\n**结构：** 每束由两股持续同向扭转；外观比Box Braids更圆、更像绳索；可扎高、盘起或披落。\n\n**排除：** 三股辫存在三束交替覆盖；Locs是长期缠结形成，不是规则双股扭转。\n\n**十元入口：** 双股规则偏 xn；独立束体偏 x；大量长束承载偏 n。\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -970,
+      "y": 1180,
+      "width": 820,
+      "height": 570,
+      "color": "5"
+    },
+    {
+      "id": "ref-06",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch06/06_06_bantu_knots.jpg",
+      "x": -50,
+      "y": 1180,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-06",
+      "type": "text",
+      "text": "[打开来源文章](https://www.allure.com/story/gabrielle-union-jumbo-bantu-knots)\n\n图源标注：Allure / Getty Images",
+      "x": -50,
+      "y": 1625,
+      "width": 470,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "card-06",
+      "type": "text",
+      "text": "# 06｜Bantu Knots班图结\n### Bantu Knots\n\n**一级结构变量：** 头皮被分成多个独立区块，每区发束扭转后盘成凸起结体\n\n**结构：** 分区边界可见；每个结拥有独立中心；结体均匀分布于头顶、侧面和后部。\n\n**排除：** 双丸子只有两个主结点；普通小发髻没有全头多区重复结构。\n\n**十元入口：** 重复分区偏 xn；独立结体边界偏 x；多点承载偏 n。\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": 480,
+      "y": 1180,
+      "width": 820,
+      "height": 570,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-01",
+      "fromNode": "ref-01",
+      "fromSide": "right",
+      "toNode": "card-01",
+      "toSide": "left"
+    },
+    {
+      "id": "e-02",
+      "fromNode": "ref-02",
+      "fromSide": "right",
+      "toNode": "card-02",
+      "toSide": "left"
+    },
+    {
+      "id": "e-03",
+      "fromNode": "ref-03",
+      "fromSide": "right",
+      "toNode": "card-03",
+      "toSide": "left"
+    },
+    {
+      "id": "e-04",
+      "fromNode": "ref-04",
+      "fromSide": "right",
+      "toNode": "card-04",
+      "toSide": "left"
+    },
+    {
+      "id": "e-05",
+      "fromNode": "ref-05",
+      "fromSide": "right",
+      "toNode": "card-05",
+      "toSide": "left"
+    },
+    {
+      "id": "e-06",
+      "fromNode": "ref-06",
+      "fromSide": "right",
+      "toNode": "card-06",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {}
+  }
+}
