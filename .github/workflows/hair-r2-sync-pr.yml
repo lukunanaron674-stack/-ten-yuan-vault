@@ -1,0 +1,30 @@
+name: Hair R2 Sync With Main
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '05-银矿库/角色库/发型库总表/.r2-sync-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          filter: blob:none
+      - name: Merge latest main and preserve R2 outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          BRANCH='${{ github.event.pull_request.head.ref }}'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main "$BRANCH"
+          git merge origin/main --no-edit -X ours
+          git push origin HEAD:"$BRANCH"
