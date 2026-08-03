@@ -1,0 +1,258 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# 现代名牌服装真实图片库｜Canvas 总索引\n\n打开下方分系列 Canvas 文件查看真实图片卡。",
+      "x": 0,
+      "y": -240,
+      "width": 1500,
+      "height": 180,
+      "color": "4"
+    },
+    {
+      "id": "file-1",
+      "type": "file",
+      "file": "01_Chanel_Spring_2026_Ready-to-Wear.canvas",
+      "x": 0,
+      "y": 0,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-2",
+      "type": "file",
+      "file": "02_Prada_Spring_2026_Ready-to-Wear.canvas",
+      "x": 520,
+      "y": 0,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-3",
+      "type": "file",
+      "file": "03_Prada_Fall_2026_Ready-to-Wear.canvas",
+      "x": 1040,
+      "y": 0,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-4",
+      "type": "file",
+      "file": "04_Miu_Miu_Spring_2026_Ready-to-Wear.canvas",
+      "x": 0,
+      "y": 320,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-5",
+      "type": "file",
+      "file": "05_Loewe_Spring_2026_Ready-to-Wear.canvas",
+      "x": 520,
+      "y": 320,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-6",
+      "type": "file",
+      "file": "06_Loewe_Fall_2026_Ready-to-Wear.canvas",
+      "x": 1040,
+      "y": 320,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-7",
+      "type": "file",
+      "file": "07_Saint_Laurent_Spring_2026_Ready-to-Wear.canvas",
+      "x": 0,
+      "y": 640,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-8",
+      "type": "file",
+      "file": "08_Saint_Laurent_Fall_2026_Ready-to-Wear.canvas",
+      "x": 520,
+      "y": 640,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-9",
+      "type": "file",
+      "file": "09_Balenciaga_Spring_2026_Ready-to-Wear.canvas",
+      "x": 1040,
+      "y": 640,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-10",
+      "type": "file",
+      "file": "10_Versace_Spring_2026_Ready-to-Wear.canvas",
+      "x": 0,
+      "y": 960,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-11",
+      "type": "file",
+      "file": "11_Gucci_Spring_2026_Ready-to-Wear.canvas",
+      "x": 520,
+      "y": 960,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-12",
+      "type": "file",
+      "file": "12_Victoria_Beckham_Spring_2026_Ready-to-Wear.canvas",
+      "x": 1040,
+      "y": 960,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-13",
+      "type": "file",
+      "file": "13_Emilio_Pucci_Spring_2026_Ready-to-Wear.canvas",
+      "x": 0,
+      "y": 1280,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-14",
+      "type": "file",
+      "file": "14_Giorgio_Armani_Spring_2026_Ready-to-Wear.canvas",
+      "x": 520,
+      "y": 1280,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-15",
+      "type": "file",
+      "file": "15_Tom_Ford_Spring_2026_Ready-to-Wear.canvas",
+      "x": 1040,
+      "y": 1280,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-16",
+      "type": "file",
+      "file": "16_Bottega_Veneta_Fall_2026_Ready-to-Wear.canvas",
+      "x": 0,
+      "y": 1600,
+      "width": 460,
+      "height": 240
+    },
+    {
+      "id": "file-17",
+      "type": "file",
+      "file": "17_Fendi_Spring_2026_Ready-to-Wear.canvas",
+      "x": 520,
+      "y": 1600,
+      "width": 460,
+      "height": 240
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "fromNode": "title",
+      "toNode": "file-1"
+    },
+    {
+      "id": "edge-2",
+      "fromNode": "title",
+      "toNode": "file-2"
+    },
+    {
+      "id": "edge-3",
+      "fromNode": "title",
+      "toNode": "file-3"
+    },
+    {
+      "id": "edge-4",
+      "fromNode": "title",
+      "toNode": "file-4"
+    },
+    {
+      "id": "edge-5",
+      "fromNode": "title",
+      "toNode": "file-5"
+    },
+    {
+      "id": "edge-6",
+      "fromNode": "title",
+      "toNode": "file-6"
+    },
+    {
+      "id": "edge-7",
+      "fromNode": "title",
+      "toNode": "file-7"
+    },
+    {
+      "id": "edge-8",
+      "fromNode": "title",
+      "toNode": "file-8"
+    },
+    {
+      "id": "edge-9",
+      "fromNode": "title",
+      "toNode": "file-9"
+    },
+    {
+      "id": "edge-10",
+      "fromNode": "title",
+      "toNode": "file-10"
+    },
+    {
+      "id": "edge-11",
+      "fromNode": "title",
+      "toNode": "file-11"
+    },
+    {
+      "id": "edge-12",
+      "fromNode": "title",
+      "toNode": "file-12"
+    },
+    {
+      "id": "edge-13",
+      "fromNode": "title",
+      "toNode": "file-13"
+    },
+    {
+      "id": "edge-14",
+      "fromNode": "title",
+      "toNode": "file-14"
+    },
+    {
+      "id": "edge-15",
+      "fromNode": "title",
+      "toNode": "file-15"
+    },
+    {
+      "id": "edge-16",
+      "fromNode": "title",
+      "toNode": "file-16"
+    },
+    {
+      "id": "edge-17",
+      "fromNode": "title",
+      "toNode": "file-17"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {}
+  }
+}

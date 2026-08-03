@@ -3,82 +3,97 @@
     {
       "id": "title",
       "type": "text",
-      "text": "# 现代名牌服装真实图片库｜修正版入口\n\n当前状态：`evidence-pending`\n\n上一版只有来源页URL，没有真实图片直链，所以Canvas不显示衣服。\n修正版工作链：\n来源系列页 → 抓取候选 image_url → 人工核验 → 生成分系列 Canvas 图库。",
+      "text": "# 现代名牌服装真实图片库｜1000套\n\n**状态：** `candidate-ready`\n\n已生成1000条唯一 Vogue Runway 真实秀场主图直链，以及17个分系列图片Canvas。\n\n图片在Canvas文本卡中通过 `![](image_url)` 远程显示；每张卡同时保留原始来源页。",
       "x": -700,
-      "y": -650,
+      "y": -700,
       "width": 1400,
       "height": 420,
       "color": "4"
     },
     {
-      "id": "readme",
+      "id": "gallery",
       "type": "file",
-      "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/README.md",
-      "x": -1100,
-      "y": 0,
-      "width": 520,
-      "height": 420
+      "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/generated_canvases/00_真实图片总索引.canvas",
+      "x": -520,
+      "y": -80,
+      "width": 1040,
+      "height": 620
     },
     {
-      "id": "collections",
-      "type": "file",
-      "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/collections.json",
-      "x": -500,
-      "y": 0,
-      "width": 520,
-      "height": 420
+      "id": "gallery-note",
+      "type": "text",
+      "text": "# 从这里打开图库\n\n上方文件节点是1000套真实服装图片的总入口。\n\n进入后可按 Chanel、Prada、Miu Miu、Loewe、Saint Laurent、Balenciaga、Versace、Gucci、Armani、Tom Ford、Bottega Veneta、Fendi 等系列分别查看。",
+      "x": -520,
+      "y": 620,
+      "width": 1040,
+      "height": 360,
+      "color": "3"
     },
     {
       "id": "records",
       "type": "file",
       "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/image_records.json",
-      "x": 100,
-      "y": 0,
+      "x": -1250,
+      "y": 80,
       "width": 520,
       "height": 420
+    },
+    {
+      "id": "readme",
+      "type": "file",
+      "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/README.md",
+      "x": 730,
+      "y": 80,
+      "width": 520,
+      "height": 420
+    },
+    {
+      "id": "tools-group",
+      "type": "group",
+      "label": "抓取与重建工具",
+      "x": -1250,
+      "y": 1120,
+      "width": 2500,
+      "height": 620,
+      "color": "6"
+    },
+    {
+      "id": "collections",
+      "type": "file",
+      "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/collections.json",
+      "x": -1120,
+      "y": 1240,
+      "width": 500,
+      "height": 360
     },
     {
       "id": "scraper",
       "type": "file",
       "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/scrape_vogue_image_records.py",
-      "x": 700,
-      "y": 0,
-      "width": 520,
-      "height": 420
+      "x": -250,
+      "y": 1240,
+      "width": 500,
+      "height": 360
     },
     {
       "id": "builder",
       "type": "file",
       "file": "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/build_fashion_image_canvases.py",
-      "x": 1300,
-      "y": 0,
-      "width": 520,
-      "height": 420
-    },
-    {
-      "id": "workflow",
-      "type": "text",
-      "text": "## 正确生成链\n\n1. 运行 `scrape_vogue_image_records.py`，为1000个Look抓取候选 `image_url`。\n2. 人工核验 `image_url` 与 `source_page_url`、Look 编号、重复与失效情况。\n3. 运行 `build_fashion_image_canvases.py`。\n4. 输出 `generated_canvases/00_真实图片总索引.canvas` 与 17 个分系列图库。\n\n**关键区别：**\n- `source_page_url` = 网页来源页\n- `image_url` = Canvas 真正显示图片所需的直链\n\n没有 `image_url`，Canvas 只会给你看链接，服装会继续处于唯心主义阶段。",
-      "x": -300,
-      "y": 650,
-      "width": 1300,
-      "height": 500,
-      "color": "3"
+      "x": 620,
+      "y": 1240,
+      "width": 500,
+      "height": 360
     }
   ],
   "edges": [
-    {"id": "e1", "fromNode": "title", "toNode": "readme"},
-    {"id": "e2", "fromNode": "title", "toNode": "collections"},
+    {"id": "e1", "fromNode": "title", "toNode": "gallery"},
+    {"id": "e2", "fromNode": "gallery", "toNode": "gallery-note"},
     {"id": "e3", "fromNode": "title", "toNode": "records"},
-    {"id": "e4", "fromNode": "title", "toNode": "scraper"},
-    {"id": "e5", "fromNode": "title", "toNode": "builder"},
-    {"id": "e6", "fromNode": "readme", "toNode": "workflow"},
-    {"id": "e7", "fromNode": "records", "toNode": "workflow"},
-    {"id": "e8", "fromNode": "scraper", "toNode": "workflow"},
-    {"id": "e9", "fromNode": "builder", "toNode": "workflow"}
+    {"id": "e4", "fromNode": "title", "toNode": "readme"},
+    {"id": "e5", "fromNode": "gallery-note", "toNode": "tools-group"}
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "2.0",
     "frontmatter": {}
   }
 }
