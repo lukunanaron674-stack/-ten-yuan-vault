@@ -1,0 +1,60 @@
+name: Build All Major Hairstyles PR
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '05-银矿库/角色库/发型库总表/.batch05-run-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  build-all:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Build all remaining major hairstyle families
+        run: python '05-银矿库/角色库/发型库总表/tools/build_all_major_hairstyles.py'
+
+      - name: Validate generated canvases and assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('05-银矿库/角色库/发型库总表')
+          canvases = sorted((root / '批次05_主要类型一次跑完').glob('*.canvas'))
+          if len(canvases) != 6:
+              raise SystemExit(f'expected 6 family canvases, got {len(canvases)}')
+          for path in canvases:
+              data = json.loads(path.read_text(encoding='utf-8'))
+              if not data.get('nodes'):
+                  raise SystemExit(f'empty canvas: {path}')
+          assets = list((root / 'assets/refs/batch05').glob('*'))
+          if not assets:
+              raise SystemExit('no local image assets generated')
+          index = json.loads((root / '女性发型库_总索引.canvas').read_text(encoding='utf-8'))
+          if not any(n.get('id') == 'batch05-summary' for n in index.get('nodes', [])):
+              raise SystemExit('batch05 index node missing')
+          print(f'validated canvases={len(canvases)} assets={len(assets)}')
+          PY
+
+      - name: Commit all generated results to PR branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add '05-银矿库/角色库/发型库总表'
+          if git diff --cached --quiet; then
+            echo 'No generated changes.'
+            exit 0
+          fi
+          git commit -m '发型库：一次跑完主要类型与本地候选配图'
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
