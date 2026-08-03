@@ -1,0 +1,70 @@
+name: Build modern fashion image canvases
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/build_real_image_canvases.py"
+      - "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/collections.json"
+      - ".github/workflows/build-modern-fashion-image-canvases.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: modern-fashion-image-canvases
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check requests
+
+      - name: Extract real image URLs and build canvases
+        working-directory: "14-角色库/现代服装库/06_现代名牌服装真实图片URL库"
+        run: python build_real_image_canvases.py
+
+      - name: Validate generated library
+        working-directory: "14-角色库/现代服装库/06_现代名牌服装真实图片URL库"
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('image_records.json').read_text(encoding='utf-8'))
+          assert data['total_looks'] == 1000, data['total_looks']
+          assert len(data['records']) == 1000
+          assert len({r['image_url'] for r in data['records']}) == 1000
+          canvases = list(Path('canvas').glob('*.canvas'))
+          assert len(canvases) == 17, len(canvases)
+          assert Path('00_真实图片总索引.canvas').exists()
+          print('validated: 1000 unique image URLs, 17 canvases')
+          PY
+
+      - name: Commit generated image library
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/image_records.json" \
+                     "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/00_真实图片总索引.canvas" \
+                     "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/source_audit.md" \
+                     "14-角色库/现代服装库/06_现代名牌服装真实图片URL库/canvas"
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+          else
+            git commit -m "生成1000套现代服装真实图片Canvas"
+            git push
+          fi
