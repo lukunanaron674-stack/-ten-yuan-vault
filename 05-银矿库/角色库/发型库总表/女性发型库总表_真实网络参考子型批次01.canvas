@@ -1,53 +1,558 @@
 {
-	"nodes":[
-		{"id":"group_ponytail_batch01","type":"group","x":-2850,"y":0,"width":1750,"height":1650,"color":"5","label":"马尾｜真实参考子型"},
-		{"id":"group_short_batch01","type":"group","x":-900,"y":0,"width":1750,"height":1650,"color":"6","label":"短发｜真实参考子型"},
-		{"id":"group_curl_batch01","type":"group","x":1050,"y":0,"width":1750,"height":1650,"color":"3","label":"卷发｜真实参考子型"},
-		{"id":"group_hime_batch01","type":"group","x":-2850,"y":1900,"width":1750,"height":1650,"color":"2","label":"公主切｜真实参考子型"},
-		{"id":"group_twintail_batch01","type":"group","x":-900,"y":1900,"width":1750,"height":1650,"color":"1","label":"双马尾｜真实参考子型"},
-		{"id":"group_wolf_batch01","type":"group","x":1050,"y":1900,"width":1750,"height":1650,"color":"5","label":"狼尾／狼剪｜真实参考子型"},
-		{"id":"title_real_subtypes_batch01","type":"text","text":"# 女性发型库总表｜真实网络参考子型批次 01（兼容修复版）\n\n**范围：马尾／短发／卷发／公主切／双马尾／狼尾**\n\n原批次使用美发媒体热链，Obsidian 中被防盗链拦截。本版改用 Wikimedia Commons 稳定图片重定向，并保留每张文件页与许可信息。\n\n共 18 张真实网络资料图，不使用生成图冒充参考。","x":-550,"y":-850,"width":1100,"height":460,"color":"4"},
-		{"id":"img_ponytail_1_batch01","type":"text","text":"### 直顺马尾\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Indian%20woman%20in%20ponytail.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Indian%20woman%20in%20ponytail.jpg)","x":-2790,"y":120,"width":500,"height":820,"color":"5"},
-		{"id":"img_ponytail_2_batch01","type":"text","text":"### 发束包裹马尾\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Hair%20Wrapped%20Ponytail.JPG?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Hair%20Wrapped%20Ponytail.JPG)","x":-2230,"y":120,"width":500,"height":820,"color":"5"},
-		{"id":"img_ponytail_3_batch01","type":"text","text":"### 分节马尾\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Sectioned%20Ponytail.JPG?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Sectioned%20Ponytail.JPG)","x":-1670,"y":120,"width":500,"height":820,"color":"5"},
-		{"id":"summary_ponytail_batch01","type":"text","text":"## 马尾结构核验\n\n单束锚点：高度、是否包裹发圈、尾部是否分节。\n\n三张图只作结构对照，角色判断不得依赖模特表情、服装或背景。","x":-2790,"y":1010,"width":1610,"height":500,"color":"5"},
-		{"id":"img_short_1_batch01","type":"text","text":"### 经典波波头\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Woman%20with%20bob%20haircut.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Woman%20with%20bob%20haircut.jpg)","x":-840,"y":120,"width":500,"height":820,"color":"6"},
-		{"id":"img_short_2_batch01","type":"text","text":"### 精灵短发\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Pixie%20haircut.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Pixie%20haircut.jpg)","x":-280,"y":120,"width":500,"height":820,"color":"6"},
-		{"id":"summary_short_batch01","type":"text","text":"## 短发结构核验\n\n长度轮廓：耳上、齐颌、齐颈，以及重量线和层次。\n\n三张图只作结构对照，角色判断不得依赖模特表情、服装或背景。","x":-840,"y":1010,"width":1610,"height":500,"color":"6"},
-		{"id":"img_short_3_batch01","type":"text","text":"### 长波波头\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Woman%20with%20long%20bob%20haircut%20from%20behind.png?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Woman%20with%20long%20bob%20haircut%20from%20behind.png)","x":280,"y":120,"width":500,"height":820,"color":"6"},
-		{"id":"img_curl_1_batch01","type":"text","text":"### 自然卷\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Curly%20hair.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Curly%20hair.jpg)","x":1110,"y":120,"width":500,"height":820,"color":"3"},
-		{"id":"img_curl_2_batch01","type":"text","text":"### 大体量卷发\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Woman%20with%20big%20curly%20hairstyle.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Woman%20with%20big%20curly%20hairstyle.jpg)","x":1670,"y":120,"width":500,"height":820,"color":"3"},
-		{"id":"img_curl_3_batch01","type":"text","text":"### 蓬松卷发\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Voluminous%20curly%20hairstyle.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Voluminous%20curly%20hairstyle.jpg)","x":2230,"y":120,"width":500,"height":820,"color":"3"},
-		{"id":"summary_curl_batch01","type":"text","text":"## 卷发结构核验\n\n纹理层：卷径、起卷位置、规则度与总体蓬松量。\n\n三张图只作结构对照，角色判断不得依赖模特表情、服装或背景。","x":1110,"y":1010,"width":1610,"height":500,"color":"3"},
-		{"id":"img_hime_1_batch01","type":"text","text":"### 经典公主切\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Hime%20cut.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Hime%20cut.jpg)","x":-2790,"y":2020,"width":500,"height":820,"color":"2"},
-		{"id":"img_hime_2_batch01","type":"text","text":"### 长侧片公主切\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Cosplayer%20of%20Asuna%20Yuuki%2C%20Sword%20Art%20Online%2020140830.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Cosplayer%20of%20Asuna%20Yuuki%2C%20Sword%20Art%20Online%2020140830.jpg)","x":-2230,"y":2020,"width":500,"height":820,"color":"2"},
-		{"id":"img_hime_3_batch01","type":"text","text":"### 柔化公主切\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Cosplayer%20of%20Kotori%20Minami%20at%20CWT41%2020151212a.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Cosplayer%20of%20Kotori%20Minami%20at%20CWT41%2020151212a.jpg)","x":-1670,"y":2020,"width":500,"height":820,"color":"2"},
-		{"id":"summary_hime_batch01","type":"text","text":"## 公主切结构核验\n\n剪裁结构：脸侧独立短片与长发主体之间的断层。\n\n三张图只作结构对照，角色判断不得依赖模特表情、服装或背景。","x":-2790,"y":2910,"width":1610,"height":500,"color":"2"},
-		{"id":"img_twintail_2_batch01","type":"text","text":"### 长双马尾\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20girl%20with%20twin%20tails%3B%20January%202016%20%2804%29.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:A%20girl%20with%20twin%20tails%3B%20January%202016%20%2804%29.jpg)","x":-280,"y":2020,"width":500,"height":820,"color":"1"},
-		{"id":"img_twintail_3_batch01","type":"text","text":"### 编织双马尾\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Braided%20pigtails.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Braided%20pigtails.jpg)","x":280,"y":2020,"width":500,"height":820,"color":"1"},
-		{"id":"summary_twintail_batch01","type":"text","text":"## 双马尾结构核验\n\n扎束方式：左右两个主束点，尾部可直、卷或编织。\n\n三张图只作结构对照，角色判断不得依赖模特表情、服装或背景。","x":-840,"y":2910,"width":1610,"height":500,"color":"1"},
-		{"id":"img_wolf_1_batch01","type":"text","text":"### 狼尾示例\n\n","x":1110,"y":2020,"width":500,"height":820,"color":"5"},
-		{"id":"audit_batch01","type":"text","text":"# 批次 01 修复审计\n\n- [x] 18 张均来自 Wikimedia Commons 文件页\n- [x] 使用稳定图片重定向，降低防盗链失效\n- [x] 每张保留来源与许可链接\n- [x] 六个家族各 3 张\n- [x] 不使用生成图\n\n若 Obsidian 仍关闭全部远程图片，应再执行‘下载 Commons 图片到仓库 assets，并改为本地 file 节点’。","x":-550,"y":3800,"width":1100,"height":650,"color":"4"},
-		{"id":"img_wolf_2_batch01","type":"text","text":"### 现代狼剪\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Woman%20with%20wolfcut%20and%20Foxhound%20jacket%20at%20Tokyo%20Station%20on%20New%20Year%27s%20Eve.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Woman%20with%20wolfcut%20and%20Foxhound%20jacket%20at%20Tokyo%20Station%20on%20New%20Year%27s%20Eve.jpg)","x":1670,"y":2020,"width":500,"height":820,"color":"5"},
-		{"id":"summary_wolf_batch01","type":"text","text":"## 狼尾／狼剪结构核验\n\n层次剪裁：顶部短层、脸周碎层与后颈长尾同时成立。\n\n三张图只作结构对照，角色判断不得依赖模特表情、服装或背景。","x":1110,"y":2910,"width":1610,"height":500,"color":"5"},
-		{"id":"img_wolf_3_batch01","type":"text","text":"### 现代鲻鱼近邻\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Modern%20Mullet.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Modern%20Mullet.jpg)","x":2230,"y":2020,"width":500,"height":820,"color":"5"},
-		{"id":"790c1e6b51ececc2","type":"file","file":"Untitled 1.md","x":-840,"y":2020,"width":500,"height":820},
-		{"id":"9771ca863841f4b5","type":"file","file":"Pasted image 20260803184310.jpg","x":-790,"y":2164,"width":400,"height":266},
-		{"id":"66b197c22aa3cf77","type":"file","file":"Pasted image 20260803184330.jpg","x":-166,"y":2097,"width":273,"height":400},
-		{"id":"048cac891b8a7464","type":"file","file":"Pasted image 20260803184346.jpg","x":330,"y":2140,"width":400,"height":392},
-		{"id":"da213ab21eaba15e","type":"file","file":"Pasted image 20260803184358.jpg","x":1160,"y":2100,"width":348,"height":400}
-	],
-	"edges":[
-		{"id":"edge_title_ponytail_batch01","fromNode":"title_real_subtypes_batch01","fromSide":"bottom","toNode":"summary_ponytail_batch01","toSide":"top"},
-		{"id":"edge_title_short_batch01","fromNode":"title_real_subtypes_batch01","fromSide":"bottom","toNode":"summary_short_batch01","toSide":"top"},
-		{"id":"edge_title_curl_batch01","fromNode":"title_real_subtypes_batch01","fromSide":"bottom","toNode":"summary_curl_batch01","toSide":"top"},
-		{"id":"edge_title_hime_batch01","fromNode":"title_real_subtypes_batch01","fromSide":"bottom","toNode":"summary_hime_batch01","toSide":"top"},
-		{"id":"edge_title_twintail_batch01","fromNode":"title_real_subtypes_batch01","fromSide":"bottom","toNode":"summary_twintail_batch01","toSide":"top"},
-		{"id":"edge_title_wolf_batch01","fromNode":"title_real_subtypes_batch01","fromSide":"bottom","toNode":"summary_wolf_batch01","toSide":"top"},
-		{"id":"edge_title_audit_batch01","toFloating":false,"fromNode":"title_real_subtypes_batch01","fromSide":"bottom","toNode":"audit_batch01","toSide":"top"}
-	],
-	"metadata":{
-		"version":"1.0-1.0",
-		"frontmatter":{}
-	}
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# 女性发型库总表｜批次01 R2正式收口版\n\n**18张本地可见图｜6个家族×3种子型**\n\n旧远程热链已退役。本版复用05库已核验资产、R1高质量图源池与少量开放许可候选；全部改为 `type:file`。\n\n图片可见不自动等于S级canonical，当前状态统一为 `image-present / source-confirmed / audit-pending`。",
+      "x": -850,
+      "y": -900,
+      "width": 1700,
+      "height": 430,
+      "color": "4"
+    },
+    {
+      "id": "group-0",
+      "type": "group",
+      "x": -3000,
+      "y": -250,
+      "width": 1850,
+      "height": 1950,
+      "color": "5",
+      "label": "马尾｜R2本地正式子型"
+    },
+    {
+      "id": "group-1",
+      "type": "group",
+      "x": -950,
+      "y": -250,
+      "width": 1850,
+      "height": 1950,
+      "color": "6",
+      "label": "短发｜R2本地正式子型"
+    },
+    {
+      "id": "group-2",
+      "type": "group",
+      "x": 1100,
+      "y": -250,
+      "width": 1850,
+      "height": 1950,
+      "color": "3",
+      "label": "卷发｜R2本地正式子型"
+    },
+    {
+      "id": "group-3",
+      "type": "group",
+      "x": -3000,
+      "y": 2000,
+      "width": 1850,
+      "height": 1950,
+      "color": "2",
+      "label": "公主切｜R2本地正式子型"
+    },
+    {
+      "id": "group-4",
+      "type": "group",
+      "x": -950,
+      "y": 2000,
+      "width": 1850,
+      "height": 1950,
+      "color": "1",
+      "label": "双马尾｜R2本地正式子型"
+    },
+    {
+      "id": "group-5",
+      "type": "group",
+      "x": 1100,
+      "y": 2000,
+      "width": 1850,
+      "height": 1950,
+      "color": "5",
+      "label": "狼尾｜R2本地正式子型"
+    },
+    {
+      "id": "ref-01",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/01_马尾_直顺马尾.jpg",
+      "x": -2920,
+      "y": -120,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-01",
+      "type": "text",
+      "text": "# 01｜直顺马尾\n\n**家族：** 马尾\n\n单束低中位马尾，主体直顺垂落。\n\n[打开来源页面](https://commons.wikimedia.org/wiki/File:Indian_woman_in_ponytail.jpg)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -2920,
+      "y": 650,
+      "width": 500,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "ref-02",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/02_马尾_发束包裹马尾.jpg",
+      "x": -2340,
+      "y": -120,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-02",
+      "type": "text",
+      "text": "# 02｜发束包裹马尾\n\n**家族：** 马尾\n\n发束包覆主束点，隐藏发圈并强化束点。\n\n[打开来源页面](https://commons.wikimedia.org/wiki/File:Hair_Wrapped_Ponytail.JPG)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -2340,
+      "y": 650,
+      "width": 500,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "ref-03",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/03_马尾_分节马尾.jpg",
+      "x": -1760,
+      "y": -120,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-03",
+      "type": "text",
+      "text": "# 03｜分节马尾\n\n**家族：** 马尾\n\n尾部由多个束点分节，形成泡泡式节奏。\n\n[打开来源页面](https://commons.wikimedia.org/wiki/File:Sectioned_Ponytail.JPG)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -1760,
+      "y": 650,
+      "width": 500,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "ref-04",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/04_短发_精灵短发.jpg",
+      "x": -870,
+      "y": -120,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-04",
+      "type": "text",
+      "text": "# 04｜精灵短发\n\n**家族：** 短发\n\n耳侧与后颈显著缩短，顶部保留短层。\n\n[打开来源页面](https://www.allure.com/story/pixie-haircut)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -870,
+      "y": 650,
+      "width": 500,
+      "height": 520,
+      "color": "6"
+    },
+    {
+      "id": "ref-05",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/05_短发_渐层Bob.jpg",
+      "x": -290,
+      "y": -120,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-05",
+      "type": "text",
+      "text": "# 05｜渐层Bob\n\n**家族：** 短发\n\n后短前长，后脑堆叠形成斜向重量线。\n\n[打开来源页面](https://www.elle.com/beauty/hair/a65352286/graduated-bob-hairstyles/)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -290,
+      "y": 650,
+      "width": 500,
+      "height": 520,
+      "color": "6"
+    },
+    {
+      "id": "ref-06",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/06_短发_齐切Bob.jpg",
+      "x": 290,
+      "y": -120,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-06",
+      "type": "text",
+      "text": "# 06｜齐切Bob\n\n**家族：** 短发\n\n下缘近水平齐切，重量线完整。\n\n[打开来源页面](https://commons.wikimedia.org/wiki/File:Woman_with_bob_haircut.jpg)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": 290,
+      "y": 650,
+      "width": 500,
+      "height": 520,
+      "color": "6"
+    },
+    {
+      "id": "ref-07",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/07_卷发_中长卷发.jpg",
+      "x": 1180,
+      "y": -120,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-07",
+      "type": "text",
+      "text": "# 07｜中长卷发\n\n**家族：** 卷发\n\n中等卷径沿中长发重复形成C弯与S波。\n\n[打开来源页面](https://commons.wikimedia.org/wiki/File:Woman_with_curly_brown_hairstyle.jpg)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": 1180,
+      "y": 650,
+      "width": 500,
+      "height": 520,
+      "color": "3"
+    },
+    {
+      "id": "ref-08",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/08_卷发_Afro圆形自然卷.jpg",
+      "x": 1760,
+      "y": -120,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-08",
+      "type": "text",
+      "text": "# 08｜Afro圆形自然卷\n\n**家族：** 卷发\n\n紧密自然卷向四周扩张，形成圆形大体量。\n\n[打开来源页面](https://commons.wikimedia.org/wiki/File:Natural_redhead_black_girl_(red_power_hairstyle).jpg)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": 1760,
+      "y": 650,
+      "width": 500,
+      "height": 520,
+      "color": "3"
+    },
+    {
+      "id": "ref-09",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/09_卷发_蓬松卷发.jpg",
+      "x": 2340,
+      "y": -120,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-09",
+      "type": "text",
+      "text": "# 09｜蓬松卷发\n\n**家族：** 卷发\n\n高蓬松量与重复卷组并存。\n\n[打开来源页面](https://commons.wikimedia.org/wiki/File:Voluminous_curly_hairstyle.jpg)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": 2340,
+      "y": 650,
+      "width": 500,
+      "height": 520,
+      "color": "3"
+    },
+    {
+      "id": "ref-10",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/10_公主切_经典中分公主切.jpg",
+      "x": -2920,
+      "y": 2130,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-10",
+      "type": "text",
+      "text": "# 10｜经典中分公主切\n\n**家族：** 公主切\n\n中分额面与下颌平切侧片并存。\n\n[打开来源页面](https://www.meifazhan.com/lxfx/liuhai/186605.html)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -2920,
+      "y": 2900,
+      "width": 500,
+      "height": 520,
+      "color": "2"
+    },
+    {
+      "id": "ref-11",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/11_公主切_棕色柔化公主切.jpg",
+      "x": -2340,
+      "y": 2130,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-11",
+      "type": "text",
+      "text": "# 11｜棕色柔化公主切\n\n**家族：** 公主切\n\n硬切侧片被薄刘海与棕色长发柔化。\n\n[打开来源页面](https://www.meifazhan.com/lxfx/liuhai/186605.html)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -2340,
+      "y": 2900,
+      "width": 500,
+      "height": 520,
+      "color": "2"
+    },
+    {
+      "id": "ref-12",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/12_公主切_齐刘海长发公主切.jpg",
+      "x": -1760,
+      "y": 2130,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-12",
+      "type": "text",
+      "text": "# 12｜齐刘海长发公主切\n\n**家族：** 公主切\n\n齐刘海、脸侧短片、胸下长发三层清楚。\n\n[打开来源页面](https://www.meifazhan.com/lxfx/liuhai/186605.html)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -1760,
+      "y": 2900,
+      "width": 500,
+      "height": 520,
+      "color": "2"
+    },
+    {
+      "id": "ref-13",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/13_双马尾_低双马尾.jpg",
+      "x": -870,
+      "y": 2130,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-13",
+      "type": "text",
+      "text": "# 13｜低双马尾\n\n**家族：** 双马尾\n\n左右两个低位束点，尾部自然垂落。\n\n[打开来源页面](https://commons.wikimedia.org/wiki/File:Smiling_woman_with_pigtails.JPG)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -870,
+      "y": 2900,
+      "width": 500,
+      "height": 520,
+      "color": "1"
+    },
+    {
+      "id": "ref-14",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/14_双马尾_贴头双辫.jpg",
+      "x": -290,
+      "y": 2130,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-14",
+      "type": "text",
+      "text": "# 14｜贴头双辫\n\n**家族：** 双马尾\n\n左右双轨贴头编织，作为双束编发子型。\n\n[打开来源页面](https://www.allure.com/gallery/box-braids-hair-inspiration)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": -290,
+      "y": 2900,
+      "width": 500,
+      "height": 520,
+      "color": "1"
+    },
+    {
+      "id": "ref-15",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/15_双马尾_长双马尾.jpg",
+      "x": 290,
+      "y": 2130,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-15",
+      "type": "text",
+      "text": "# 15｜长双马尾\n\n**家族：** 双马尾\n\n左右高位长束点，长尾向两侧垂落。\n\n[打开来源页面](https://commons.wikimedia.org/wiki/File:A_girl_with_twin_tails;_January_2016_(04).jpg)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": 290,
+      "y": 2900,
+      "width": 500,
+      "height": 520,
+      "color": "1"
+    },
+    {
+      "id": "ref-16",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/16_狼尾_Mixie短狼尾.jpg",
+      "x": 1180,
+      "y": 2130,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-16",
+      "type": "text",
+      "text": "# 16｜Mixie短狼尾\n\n**家族：** 狼尾\n\n耳侧短层与后颈长尾并置。\n\n[打开来源页面](https://www.allure.com/story/mixie-mullet-pixie-haircut-trend)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": 1180,
+      "y": 2900,
+      "width": 500,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "ref-17",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/17_狼尾_顺直长层轻狼尾.jpg",
+      "x": 1760,
+      "y": 2130,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-17",
+      "type": "text",
+      "text": "# 17｜顺直长层轻狼尾\n\n**家族：** 狼尾\n\n长直主体中加入轻碎层和柔和尾部。\n\n[打开来源页面](https://thebeautyfoodie.com/korean-wolf-cut/)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": 1760,
+      "y": 2900,
+      "width": 500,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "ref-18",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch01_r2/selected/18_狼尾_长款Hush轻狼尾.jpg",
+      "x": 2340,
+      "y": 2130,
+      "width": 500,
+      "height": 720
+    },
+    {
+      "id": "card-18",
+      "type": "text",
+      "text": "# 18｜长款Hush轻狼尾\n\n**家族：** 狼尾\n\n羽毛脸周层、轻冠部体量与细长发尾并存。\n\n[打开来源页面](https://www.mujerhoy.com/belleza/pelo/corte-hush-cut-tendencia-pelo-otono-2023-20230923114458-nt.html)\n\n**证据状态：** `image-present / source-confirmed / audit-pending`",
+      "x": 2340,
+      "y": 2900,
+      "width": 500,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "audit",
+      "type": "text",
+      "text": "# R2审计\n\n- 18个远程热链节点全部退役\n- 18张图片全部转为05库本地文件节点\n- 6个家族各3个结构差异明确的子型\n- 来源链接保留\n- metadata固定为 `1.0-1.0`\n\n旧10号低分辨率假发模特图已淘汰。后续R4再做S/A级结构与许可审计。",
+      "x": -900,
+      "y": 4300,
+      "width": 1800,
+      "height": 700,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-01",
+      "fromNode": "ref-01",
+      "fromSide": "bottom",
+      "toNode": "card-01",
+      "toSide": "top"
+    },
+    {
+      "id": "e-02",
+      "fromNode": "ref-02",
+      "fromSide": "bottom",
+      "toNode": "card-02",
+      "toSide": "top"
+    },
+    {
+      "id": "e-03",
+      "fromNode": "ref-03",
+      "fromSide": "bottom",
+      "toNode": "card-03",
+      "toSide": "top"
+    },
+    {
+      "id": "e-04",
+      "fromNode": "ref-04",
+      "fromSide": "bottom",
+      "toNode": "card-04",
+      "toSide": "top"
+    },
+    {
+      "id": "e-05",
+      "fromNode": "ref-05",
+      "fromSide": "bottom",
+      "toNode": "card-05",
+      "toSide": "top"
+    },
+    {
+      "id": "e-06",
+      "fromNode": "ref-06",
+      "fromSide": "bottom",
+      "toNode": "card-06",
+      "toSide": "top"
+    },
+    {
+      "id": "e-07",
+      "fromNode": "ref-07",
+      "fromSide": "bottom",
+      "toNode": "card-07",
+      "toSide": "top"
+    },
+    {
+      "id": "e-08",
+      "fromNode": "ref-08",
+      "fromSide": "bottom",
+      "toNode": "card-08",
+      "toSide": "top"
+    },
+    {
+      "id": "e-09",
+      "fromNode": "ref-09",
+      "fromSide": "bottom",
+      "toNode": "card-09",
+      "toSide": "top"
+    },
+    {
+      "id": "e-10",
+      "fromNode": "ref-10",
+      "fromSide": "bottom",
+      "toNode": "card-10",
+      "toSide": "top"
+    },
+    {
+      "id": "e-11",
+      "fromNode": "ref-11",
+      "fromSide": "bottom",
+      "toNode": "card-11",
+      "toSide": "top"
+    },
+    {
+      "id": "e-12",
+      "fromNode": "ref-12",
+      "fromSide": "bottom",
+      "toNode": "card-12",
+      "toSide": "top"
+    },
+    {
+      "id": "e-13",
+      "fromNode": "ref-13",
+      "fromSide": "bottom",
+      "toNode": "card-13",
+      "toSide": "top"
+    },
+    {
+      "id": "e-14",
+      "fromNode": "ref-14",
+      "fromSide": "bottom",
+      "toNode": "card-14",
+      "toSide": "top"
+    },
+    {
+      "id": "e-15",
+      "fromNode": "ref-15",
+      "fromSide": "bottom",
+      "toNode": "card-15",
+      "toSide": "top"
+    },
+    {
+      "id": "e-16",
+      "fromNode": "ref-16",
+      "fromSide": "bottom",
+      "toNode": "card-16",
+      "toSide": "top"
+    },
+    {
+      "id": "e-17",
+      "fromNode": "ref-17",
+      "fromSide": "bottom",
+      "toNode": "card-17",
+      "toSide": "top"
+    },
+    {
+      "id": "e-18",
+      "fromNode": "ref-18",
+      "fromSide": "bottom",
+      "toNode": "card-18",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
 }
