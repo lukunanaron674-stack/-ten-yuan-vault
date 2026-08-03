@@ -1,0 +1,174 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# 批次05｜马尾与双束扎发\n\n**05库一次跑完批次｜14库S级Skill为规则源**\n\n自动检索只负责建立开放许可候选图，不把候选冒充S级证据。每项保留来源、作者、许可、自动匹配分和结构排除条件。",
+      "x": -1500,
+      "y": -980,
+      "width": 3000,
+      "height": 360,
+      "color": "5"
+    },
+    {
+      "id": "ref-A01",
+      "type": "text",
+      "text": "## 图片证据待补\n\n自动检索没有找到达到最低门槛的开放许可候选图。\n\n按 fail-closed 保留空缺，不拿相似图冒充。",
+      "x": -1500,
+      "y": -500,
+      "width": 470,
+      "height": 430,
+      "color": "1"
+    },
+    {
+      "id": "card-A01",
+      "type": "text",
+      "text": "# A01｜低马尾\n### Low Ponytail\n\n**层级：** 单束扎发\n**一级结构变量：** 主束点位于后颈或枕骨下方\n**结构：** 头发表面向低位锚点集中，尾部贴近颈背向下垂落。\n**排除：** 束点位于冠部属于高马尾；尾部盘成团属于低发髻。\n**十元入口：** 低位停靠偏 nz／n；规则集中可出现 xn。\n**自动候选：** 未找到达到自动门槛的开放许可图片\n**证据状态：** `evidence-pending / no-safe-image`",
+      "x": -970,
+      "y": -500,
+      "width": 820,
+      "height": 615,
+      "color": "5"
+    },
+    {
+      "id": "ref-A02",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch05/a02_side_ponytail.jpg",
+      "x": -50,
+      "y": -500,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-A02",
+      "type": "text",
+      "text": "[来源与许可页面](https://commons.wikimedia.org/wiki/File:Messy_side_fishtails_in_low_ponytail.jpg)\n\n文件：File:Messy side fishtails in low ponytail.jpg\n作者：Maegan Tintari\n许可：CC BY 2.0｜自动匹配分：28",
+      "x": -50,
+      "y": -55,
+      "width": 470,
+      "height": 170,
+      "color": "6"
+    },
+    {
+      "id": "card-A02",
+      "type": "text",
+      "text": "# A02｜侧马尾\n### Side Ponytail\n\n**层级：** 单束偏轴扎发\n**一级结构变量：** 主束点偏离后脑中轴并落在单侧\n**结构：** 发束跨过中轴集中到左或右侧，尾部越肩形成横向方向。\n**排除：** 仅侧分披发没有束点；双侧各一束属于双马尾。\n**十元入口：** 单向偏移可偏 zx；柔性垂落可出现 nz。\n**自动候选：** File:Messy side fishtails in low ponytail.jpg\n**证据状态：** `candidate-image / evidence-audit-pending`",
+      "x": 480,
+      "y": -500,
+      "width": 820,
+      "height": 615,
+      "color": "5"
+    },
+    {
+      "id": "ref-A03",
+      "type": "file",
+      "file": "05-银矿库/角色库/发型库总表/assets/refs/batch05/a03_bubble_ponytail.jpg",
+      "x": -1500,
+      "y": 220,
+      "width": 470,
+      "height": 430
+    },
+    {
+      "id": "src-A03",
+      "type": "text",
+      "text": "[来源与许可页面](https://commons.wikimedia.org/wiki/File:CiCi_Bellis_(22774045383).jpg)\n\n文件：File:CiCi Bellis (22774045383).jpg\n作者：Christian Mesiano\n许可：CC BY-SA 2.0｜自动匹配分：10",
+      "x": -1500,
+      "y": 665,
+      "width": 470,
+      "height": 170,
+      "color": "6"
+    },
+    {
+      "id": "card-A03",
+      "type": "text",
+      "text": "# A03｜泡泡马尾\n### Bubble Ponytail\n\n**层级：** 分段扎发\n**一级结构变量：** 一条马尾被多个等距束点切分成连续鼓包\n**结构：** 主束点之后继续重复收束，形成多个体量段和稳定节拍。\n**排除：** 普通马尾只有一个主束点；泡泡辫并非传统交叉编织。\n**十元入口：** 重复节拍偏 xn；连续推进可出现 zx。\n**自动候选：** File:CiCi Bellis (22774045383).jpg\n**证据状态：** `candidate-image / evidence-audit-pending`",
+      "x": -970,
+      "y": 220,
+      "width": 820,
+      "height": 615,
+      "color": "5"
+    },
+    {
+      "id": "ref-A04",
+      "type": "text",
+      "text": "## 图片证据待补\n\n自动检索没有找到达到最低门槛的开放许可候选图。\n\n按 fail-closed 保留空缺，不拿相似图冒充。",
+      "x": -50,
+      "y": 220,
+      "width": 470,
+      "height": 430,
+      "color": "1"
+    },
+    {
+      "id": "card-A04",
+      "type": "text",
+      "text": "# A04｜编织马尾\n### Braided Ponytail\n\n**层级：** 扎发＋编发混合\n**一级结构变量：** 主束点之后的尾部继续进入编织结构\n**结构：** 头皮区先集中成单束，尾部再出现三股或多股交叉纹理。\n**排除：** 从头皮起编且无主束点属于法式辫或荷兰辫。\n**十元入口：** 束点偏 z／xn；尾部连接偏 n。\n**自动候选：** 未找到达到自动门槛的开放许可图片\n**证据状态：** `evidence-pending / no-safe-image`",
+      "x": 480,
+      "y": 220,
+      "width": 820,
+      "height": 615,
+      "color": "5"
+    },
+    {
+      "id": "ref-A05",
+      "type": "text",
+      "text": "## 图片证据待补\n\n自动检索没有找到达到最低门槛的开放许可候选图。\n\n按 fail-closed 保留空缺，不拿相似图冒充。",
+      "x": -1500,
+      "y": 940,
+      "width": 470,
+      "height": 430,
+      "color": "1"
+    },
+    {
+      "id": "card-A05",
+      "type": "text",
+      "text": "# A05｜高双马尾\n### High Pigtails\n\n**层级：** 双束扎发\n**一级结构变量：** 左右两个束点同时位于耳上或冠部侧后方\n**结构：** 中轴分区明确，两条尾部从高位向外或向下甩出。\n**排除：** 束点在耳下属于低双马尾；盘成团属于双丸子。\n**十元入口：** 对称重复偏 xn；高位外甩可出现 zx。\n**自动候选：** 未找到达到自动门槛的开放许可图片\n**证据状态：** `evidence-pending / no-safe-image`",
+      "x": -970,
+      "y": 940,
+      "width": 820,
+      "height": 615,
+      "color": "5"
+    },
+    {
+      "id": "ref-A06",
+      "type": "text",
+      "text": "## 图片证据待补\n\n自动检索没有找到达到最低门槛的开放许可候选图。\n\n按 fail-closed 保留空缺，不拿相似图冒充。",
+      "x": -50,
+      "y": 940,
+      "width": 470,
+      "height": 430,
+      "color": "1"
+    },
+    {
+      "id": "card-A06",
+      "type": "text",
+      "text": "# A06｜泡泡双马尾\n### Bubble Pigtails\n\n**层级：** 双束＋分段扎发\n**一级结构变量：** 左右两条尾部各被多个束点分段\n**结构：** 两个主束点之外，每条尾部继续形成等距鼓包。\n**排除：** 普通双马尾没有尾部二次束点；单条泡泡马尾只有一侧主体。\n**十元入口：** 双轴重复与分段均偏 xn；外扩可出现 zx。\n**自动候选：** 未找到达到自动门槛的开放许可图片\n**证据状态：** `evidence-pending / no-safe-image`",
+      "x": 480,
+      "y": 940,
+      "width": 820,
+      "height": 615,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-A02",
+      "fromNode": "ref-A02",
+      "fromSide": "right",
+      "toNode": "card-A02",
+      "toSide": "left",
+      "color": "5"
+    },
+    {
+      "id": "e-A03",
+      "fromNode": "ref-A03",
+      "fromSide": "right",
+      "toNode": "card-A03",
+      "toSide": "left",
+      "color": "5"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {}
+  }
+}
