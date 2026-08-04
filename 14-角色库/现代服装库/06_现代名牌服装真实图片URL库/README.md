@@ -1,139 +1,107 @@
-# 现代名牌服装真实图片库｜1000套（修正版）
+# 现代名牌服装真实图片库｜1000套
 
 > 建库日期：2026-08-03  
-> 当前状态：`evidence-pending`  
+> 当前状态：`candidate-ready`  
 > 用途：现代题材角色服装参考、品牌廓形研究、材质与搭配检索。  
-> 来源主轴：Vogue Runway 2026 高级成衣系列。  
-> 本目录不复制、下载或重新上传版权图片；仅保存来源页、图片直链记录与Canvas生成工具。
+> 来源：Vogue Runway 2026 高级成衣系列。  
+> 存储策略：公开仓库只保存来源页与图片直链，不复制第三方版权原图。
 
-## 为什么上一版不显示图片
+## 已完成
 
-上一版只保存了：
+- 1000条唯一真实秀场主图直链；
+- 1000个不同 Vogue `photo_id`；
+- 17个分系列 Obsidian Canvas；
+- 1个图片图库总索引 Canvas；
+- 每张卡同时保存图片直链与原始来源页；
+- 已自动排除 details、beauty、backstage、封面裁切图和重复尺寸。
 
-- `系列来源页 URL`
-- `collection#Look编号` 形式的锚点链接
+GitHub Actions 验收结果：
 
-它们只是网页地址，不是图片直链，因此 Canvas 只能显示链接，不能直接显示服装图。
-
-## 修正版目标
-
-按 Skill 门禁，区分并保存两类地址：
-
-1. `source_page_url`：来源页面 URL；
-2. `image_url`：真实图片直链 URL；
-
-只有拿到 `image_url`，并在 Canvas 文本卡里使用：
-
-```markdown
-![](https://真实图片直链.jpg)
+```text
+validated: 1000 image URLs, 18 canvases
 ```
 
-Canvas 才会真正显示图片。
+## 打开方式
 
-## 当前文件
+从仓库入口打开：
 
-- `README.md`：本说明。
-- `collections.json`：17个系列、数量与来源页模板。
-- `image_records.json`：真实图片记录占位文件；抓取与核验后写入1000条。
-- `scrape_vogue_image_records.py`：从系列页抓取候选图片直链并生成 `image_records.json`。
-- `build_fashion_image_canvases.py`：根据 `image_records.json` 生成分系列 Canvas 图库。
-- `06_现代名牌服装真实图片URL库.canvas`：本目录操作入口。
+```text
+14-角色库/现代服装库/06_现代名牌服装真实图片URL库.canvas
+```
 
-## 运行顺序
+入口 Canvas 已连接：
 
-### 1）抓取候选图片直链
+```text
+06_现代名牌服装真实图片URL库/
+└─ generated_canvases/
+   └─ 00_真实图片总索引.canvas
+```
+
+总索引再连接17个品牌／系列 Canvas。
+
+## Canvas 图片卡格式
+
+```markdown
+## 0001｜Chanel Look 1
+
+![](https://assets.vogue.com/photos/.../00001-chanel-...jpg)
+
+- 品牌：Chanel
+- 系列：Spring 2026 Ready-to-Wear
+- Look：1
+- 状态：candidate
+
+[图像来源页](https://www.vogue.com/fashion-shows/.../collection#1)
+```
+
+`image_url` 用于 Canvas 直接显示图片；`source_page_url` 用于追溯原始页面。两者不能再混为一谈。
+
+## 文件结构
+
+```text
+06_现代名牌服装真实图片URL库/
+├─ README.md
+├─ collections.json
+├─ image_records.json
+├─ scrape_vogue_image_records.py
+├─ build_fashion_image_canvases.py
+└─ generated_canvases/
+   ├─ 00_真实图片总索引.canvas
+   ├─ 01_Chanel_Spring_2026_Ready-to-Wear.canvas
+   ├─ 02_Prada_Spring_2026_Ready-to-Wear.canvas
+   ├─ ...
+   └─ 17_Fendi_Spring_2026_Ready-to-Wear.canvas
+```
+
+## 数量纠偏
+
+旧计划表把 Giorgio Armani Spring 2026 写为87套，但 Vogue 页面实际可核验的主秀场图为86套。为了不拿细节图冒充服装，图库使用 Fendi 同系列页面中的第38套真实主图补足总数，因此：
+
+- Giorgio Armani：86套真实主图；
+- Fendi：38套真实主图；
+- 最终总数：1000套；
+- 补量记录：1条，并在 `image_records.json` 标记 `supplemental_to_total: true`。
+
+## 状态说明
+
+- `candidate-ready`：图片直链、Look编号和来源页已自动匹配并通过数量、唯一性与Canvas格式检查；
+- `verified`：完成人工逐项视觉核验后才可升级；
+- `canonical`：满足现代服装库全部S级门禁后才可升级。
+
+目前这些图片可以用于浏览、选图和角色服装参考，但理论正本仍应保留候选状态。自动化终于学会了谦虚，人类偶尔也该试试。
+
+## 重建命令
 
 ```bash
 python scrape_vogue_image_records.py \
   --collections collections.json \
   --output image_records.json
-```
 
-脚本会：
-
-- 读取 17 个系列来源页；
-- 尝试抽取每个 Look 的图片直链；
-- 输出 `image_records.json`；
-- 若总数不是 1000，默认直接失败，不把半成品冒充完成品。
-
-### 2）人工核验（必做）
-
-必须逐项核验：
-
-- 图片是否真的是该 Look；
-- `image_url` 是否可打开；
-- `image_url` 与 `source_page_url` 是否不是同一个东西；
-- 是否有重复图、错位图、缩略图或失效图；
-- 是否满足服装结构可辨要求。
-
-## 3）生成 Canvas 图库
-
-```bash
 python build_fashion_image_canvases.py \
   --input image_records.json \
   --output-dir generated_canvases
 ```
 
-脚本会生成：
+## 版权与稳定性
 
-- `generated_canvases/00_真实图片总索引.canvas`
-- 17 个分系列 Canvas 文件
-
-每张卡格式为：
-
-```markdown
-## 0037｜Chanel Look 37
-
-![](图片直链)
-
-- 品牌：Chanel
-- 系列：Spring 2026 Ready-to-Wear
-- Look：37
-- 状态：verified|candidate
-
-[图像来源页](来源页URL)
-```
-
-## 状态定义
-
-- `candidate`：抓取到候选图，但未完成人工核验；
-- `verified`：图片直链与来源页、Look 编号一致，允许进 Canvas 正式卡；
-- `rejected`：错误、重复、失效或结构不可辨；
-- `evidence-pending`：当前目录总体仍未完成真实图片证据闭环。
-
-## 收录原则
-
-1. 全部为现代成衣真实图片，不使用 AI 生成图；
-2. 优先国际高端品牌、清晰全身造型与可画性强的服装；
-3. 以 Look 作为独立研究单位；
-4. 图片版权归品牌、摄影师及原发布平台所有；
-5. 公开仓库默认只保存来源页与图片直链，不镜像第三方原图；
-6. 若图片直链规则变化，重新抓取后要保留核验记录。
-
-## 现有系列分布
-
-| 全局编号 | 品牌 | 系列 | 数量 |
-|---|---|---|---:|
-| 0001–0078 | Chanel | Spring 2026 Ready-to-Wear | 78 |
-| 0079–0132 | Prada | Spring 2026 Ready-to-Wear | 54 |
-| 0133–0193 | Prada | Fall 2026 Ready-to-Wear | 61 |
-| 0194–0258 | Miu Miu | Spring 2026 Ready-to-Wear | 65 |
-| 0259–0313 | Loewe | Spring 2026 Ready-to-Wear | 55 |
-| 0314–0379 | Loewe | Fall 2026 Ready-to-Wear | 66 |
-| 0380–0429 | Saint Laurent | Spring 2026 Ready-to-Wear | 50 |
-| 0430–0478 | Saint Laurent | Fall 2026 Ready-to-Wear | 49 |
-| 0479–0532 | Balenciaga | Spring 2026 Ready-to-Wear | 54 |
-| 0533–0607 | Versace | Spring 2026 Ready-to-Wear | 75 |
-| 0608–0645 | Gucci | Spring 2026 Ready-to-Wear | 38 |
-| 0646–0685 | Victoria Beckham | Spring 2026 Ready-to-Wear | 40 |
-| 0686–0734 | Emilio Pucci | Spring 2026 Ready-to-Wear | 49 |
-| 0735–0821 | Giorgio Armani | Spring 2026 Ready-to-Wear | 87 |
-| 0822–0881 | Tom Ford | Spring 2026 Ready-to-Wear | 60 |
-| 0882–0963 | Bottega Veneta | Fall 2026 Ready-to-Wear | 82 |
-| 0964–1000 | Fendi | Spring 2026 Ready-to-Wear | 37 |
-
-## 后续工作轴
-
-真实图片直链抓取 → 人工核验 → Canvas 图库生成 → 类型标签 → 廓形／材质／色彩 → 最近邻去重 → 十元分析。
-
-先把图钉住，再谈理论。不然就会再次出现“链接很多，衣服没有”的技术喜剧。
+图片版权归品牌、摄影师和 Vogue 所有。本库仅保存研究导航所需的远程嵌入地址与来源页。远程图片若因平台改版失效，应重新运行抓取并记录变更，不静默替换证据。
