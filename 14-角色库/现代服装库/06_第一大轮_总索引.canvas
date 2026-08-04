@@ -10,7 +10,7 @@
 	"edges":[
 		{"id":"e-1","fromNode":"title","fromSide":"bottom","toNode":"group-1","toSide":"top"},
 		{"id":"e-2","fromNode":"title","fromSide":"bottom","toNode":"group-2","toSide":"top"},
-		{"id":"e-3","fromNode":"title","fromSide":"bottom","toNode":"group-3","toSide":"top"},
+		{"id":"e-3","toFloating":false,"fromNode":"title","fromSide":"bottom","toNode":"group-3","toSide":"top"},
 		{"id":"e-4","fromNode":"title","fromSide":"bottom","toNode":"group-4","toSide":"top"},
 		{"id":"e-5","fromNode":"title","fromSide":"bottom","toNode":"group-5","toSide":"top"}
 	],
