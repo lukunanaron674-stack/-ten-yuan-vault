@@ -35,5 +35,9 @@
 		{"id":"e_advanced_path","fromNode":"advanced_shape","fromSide":"right","toNode":"practice_path","toSide":"left"},
 		{"id":"e_path_check","fromNode":"practice_path","fromSide":"bottom","toNode":"checklist","toSide":"top"},
 		{"id":"e_check_sentence","fromNode":"checklist","fromSide":"right","toNode":"one_sentence","toSide":"left"}
-	]
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

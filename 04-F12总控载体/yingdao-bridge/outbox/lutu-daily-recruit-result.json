@@ -2,11 +2,13 @@
   "ok": false,
   "slot": "1200",
   "dryRun": false,
-  "startedAt": "2026-08-03T12:00:02",
+  "startedAt": "2026-08-04T14:50:35",
   "spentBefore": 0,
-  "actions": [],
-  "initialPoolState": "unknown",
+  "actions": [
+    "free"
+  ],
+  "initialPoolState": "free",
   "status": "failed",
   "error": "无法确认免费或半价状态，已停止",
-  "finishedAt": "2026-08-03T12:00:59"
+  "finishedAt": "2026-08-04T14:53:20"
 }

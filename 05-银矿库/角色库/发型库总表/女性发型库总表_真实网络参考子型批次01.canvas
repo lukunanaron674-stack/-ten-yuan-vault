@@ -26,16 +26,16 @@
 		{"id":"img_twintail_2_batch01","type":"text","text":"### 长双马尾\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20girl%20with%20twin%20tails%3B%20January%202016%20%2804%29.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:A%20girl%20with%20twin%20tails%3B%20January%202016%20%2804%29.jpg)","x":-280,"y":2020,"width":500,"height":820,"color":"1"},
 		{"id":"img_twintail_3_batch01","type":"text","text":"### 编织双马尾\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Braided%20pigtails.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Braided%20pigtails.jpg)","x":280,"y":2020,"width":500,"height":820,"color":"1"},
 		{"id":"summary_twintail_batch01","type":"text","text":"## 双马尾结构核验\n\n扎束方式：左右两个主束点，尾部可直、卷或编织。\n\n三张图只作结构对照，角色判断不得依赖模特表情、服装或背景。","x":-840,"y":2910,"width":1610,"height":500,"color":"1"},
-		{"id":"img_wolf_1_batch01","type":"text","text":"### 狼尾示例\n\n","x":1110,"y":2020,"width":500,"height":820,"color":"5"},
 		{"id":"audit_batch01","type":"text","text":"# 批次 01 修复审计\n\n- [x] 18 张均来自 Wikimedia Commons 文件页\n- [x] 使用稳定图片重定向，降低防盗链失效\n- [x] 每张保留来源与许可链接\n- [x] 六个家族各 3 张\n- [x] 不使用生成图\n\n若 Obsidian 仍关闭全部远程图片，应再执行‘下载 Commons 图片到仓库 assets，并改为本地 file 节点’。","x":-550,"y":3800,"width":1100,"height":650,"color":"4"},
-		{"id":"img_wolf_2_batch01","type":"text","text":"### 现代狼剪\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Woman%20with%20wolfcut%20and%20Foxhound%20jacket%20at%20Tokyo%20Station%20on%20New%20Year%27s%20Eve.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Woman%20with%20wolfcut%20and%20Foxhound%20jacket%20at%20Tokyo%20Station%20on%20New%20Year%27s%20Eve.jpg)","x":1670,"y":2020,"width":500,"height":820,"color":"5"},
-		{"id":"summary_wolf_batch01","type":"text","text":"## 狼尾／狼剪结构核验\n\n层次剪裁：顶部短层、脸周碎层与后颈长尾同时成立。\n\n三张图只作结构对照，角色判断不得依赖模特表情、服装或背景。","x":1110,"y":2910,"width":1610,"height":500,"color":"5"},
-		{"id":"img_wolf_3_batch01","type":"text","text":"### 现代鲻鱼近邻\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Modern%20Mullet.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Modern%20Mullet.jpg)","x":2230,"y":2020,"width":500,"height":820,"color":"5"},
 		{"id":"790c1e6b51ececc2","type":"file","file":"Untitled 1.md","x":-840,"y":2020,"width":500,"height":820},
 		{"id":"9771ca863841f4b5","type":"file","file":"Pasted image 20260803184310.jpg","x":-790,"y":2164,"width":400,"height":266},
 		{"id":"66b197c22aa3cf77","type":"file","file":"Pasted image 20260803184330.jpg","x":-166,"y":2097,"width":273,"height":400},
 		{"id":"048cac891b8a7464","type":"file","file":"Pasted image 20260803184346.jpg","x":330,"y":2140,"width":400,"height":392},
-		{"id":"da213ab21eaba15e","type":"file","file":"Pasted image 20260803184358.jpg","x":1160,"y":2100,"width":348,"height":400}
+		{"id":"img_wolf_1_batch01","type":"text","text":"### 狼尾示例\n\n","x":1110,"y":2020,"width":500,"height":820,"color":"5"},
+		{"id":"img_wolf_2_batch01","type":"text","text":"### 现代狼剪\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Woman%20with%20wolfcut%20and%20Foxhound%20jacket%20at%20Tokyo%20Station%20on%20New%20Year%27s%20Eve.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Woman%20with%20wolfcut%20and%20Foxhound%20jacket%20at%20Tokyo%20Station%20on%20New%20Year%27s%20Eve.jpg)","x":1670,"y":2020,"width":500,"height":820,"color":"5"},
+		{"id":"summary_wolf_batch01","type":"text","text":"## 狼尾／狼剪结构核验\n\n层次剪裁：顶部短层、脸周碎层与后颈长尾同时成立。\n\n三张图只作结构对照，角色判断不得依赖模特表情、服装或背景。","x":1110,"y":2910,"width":1610,"height":500,"color":"5"},
+		{"id":"img_wolf_3_batch01","type":"text","text":"### 现代鲻鱼近邻\n\n![](https://commons.wikimedia.org/wiki/Special:Redirect/file/Modern%20Mullet.jpg?width=900)\n\n[打开 Wikimedia 来源与许可](https://commons.wikimedia.org/wiki/File:Modern%20Mullet.jpg)","x":2230,"y":2020,"width":500,"height":820,"color":"5"},
+		{"id":"da213ab21eaba15e","type":"file","file":"Pasted image 20260803184358.jpg","x":1160,"y":2100,"width":348,"height":399}
 	],
 	"edges":[
 		{"id":"edge_title_ponytail_batch01","fromNode":"title_real_subtypes_batch01","fromSide":"bottom","toNode":"summary_ponytail_batch01","toSide":"top"},
