@@ -1,0 +1,67 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# 现代服装库｜第二大轮总索引｜50/98\n\n**主题：裤装、外层与制式**\n\n- 5组 × 5项＝25项\n- 图片URL25/25｜来源页25/25｜重复图0\n- 十元配比度25/25｜本征准度25/25\n- 五行归属与五行准度25/25\n- 当前证据：B级中文市场／职业服装图，状态 provisional\n- 不建立十元对比度\n\n[[14-角色库/现代服装库/05_现代服装98项_4大轮执行计划.md|4大轮计划]]\n[[14-角色库/现代服装库/07_第二大轮_来源与评分清单.md|来源与评分]]",
+      "x": -700,
+      "y": -900,
+      "width": 1400,
+      "height": 700,
+      "color": "4"
+    },
+    {
+      "id": "group-1",
+      "type": "file",
+      "file": "14-角色库/现代服装库/07_第二大轮_第1组_26-30.canvas",
+      "x": -1300,
+      "y": 0,
+      "width": 580,
+      "height": 650
+    },
+    {
+      "id": "group-2",
+      "type": "file",
+      "file": "14-角色库/现代服装库/07_第二大轮_第2组_31-35.canvas",
+      "x": -650,
+      "y": 0,
+      "width": 580,
+      "height": 650
+    },
+    {
+      "id": "group-3",
+      "type": "file",
+      "file": "14-角色库/现代服装库/07_第二大轮_第3组_36-40.canvas",
+      "x": 0,
+      "y": 0,
+      "width": 580,
+      "height": 650
+    },
+    {
+      "id": "group-4",
+      "type": "file",
+      "file": "14-角色库/现代服装库/07_第二大轮_第4组_41-45.canvas",
+      "x": 650,
+      "y": 0,
+      "width": 580,
+      "height": 650
+    },
+    {
+      "id": "group-5",
+      "type": "file",
+      "file": "14-角色库/现代服装库/07_第二大轮_第5组_46-50.canvas",
+      "x": 1300,
+      "y": 0,
+      "width": 580,
+      "height": 650
+    }
+  ],
+  "edges": [
+    {"id":"e1","fromNode":"title","toNode":"group-1"},
+    {"id":"e2","fromNode":"title","toNode":"group-2"},
+    {"id":"e3","fromNode":"title","toNode":"group-3"},
+    {"id":"e4","fromNode":"title","toNode":"group-4"},
+    {"id":"e5","fromNode":"title","toNode":"group-5"}
+  ],
+  "metadata": {"version":"1.0-1.0","frontmatter":{}}
+}
