@@ -1,1 +1,13 @@
-{"nodes":[{"id":"title","type":"text","text":"# 已废弃｜旧平铺图76–80\n\n这份文件已经撤销，不再显示旧商品平铺图。\n\n请打开：\n\n[[14-角色库/现代服装库/08_第四大轮_内衣明亮模特版_76-81.canvas|内衣明亮模特版 76–81]]\n\n正式入口只保留成年女性明亮模特实穿版。","x":-500,"y":-400,"width":1000,"height":520,"color":"1"},{"id":"new","type":"file","file":"14-角色库/现代服装库/08_第四大轮_内衣明亮模特版_76-81.canvas","x":-350,"y":250,"width":700,"height":650}],"edges":[{"id":"e1","fromNode":"title","toNode":"new"}],"metadata":{"version":"1.0-1.0","frontmatter":{}}}
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# 已废弃｜旧平铺图76–80\n\n这份文件已经撤销，不再显示旧商品平铺图。\n\n请打开：\n\n[[14-角色库/现代服装库/08_第四大轮_内衣明亮模特版_76-81.canvas|内衣明亮模特版 76–81]]\n\n正式入口只保留成年女性明亮模特实穿版。","x":-500,"y":-400,"width":1000,"height":520,"color":"1"},
+		{"id":"new","type":"file","file":"14-角色库/现代服装库/08_第四大轮_内衣明亮模特版_76-81.canvas","x":-350,"y":250,"width":700,"height":650}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"title","toNode":"new","fromSide":"bottom","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -9,12 +9,12 @@
 		{"id":"item-81","type":"text","text":"![](https://neiwai.life/cdn/shop/products/N212WU2102_3.jpg?v=1672350093&width=1946)\n\n## 81｜Essential棉质低腰内裤\n**Essential Low-Waist Brief**\n\n- 展示：NEIWAI官方成年女性模特实穿\n- 结构：低腰、棉质主体、三角包覆、弹力腰边、中等臀部覆盖\n- 配比：x 4%／z 14%／n 25%／zn 18%／nz 14%／xn 9%／nx 8%／zx 2%／xz 3%／x并z 3%\n- 本征准度：n 90/100\n- 五行：土｜准度87/100\n\n[来源页](https://neiwai.life/products/essential-low-waist-brief)｜[模特图](https://neiwai.life/cdn/shop/products/N212WU2102_3.jpg?v=1672350093&width=1946)","x":1700,"y":0,"width":620,"height":1100}
 	],
 	"edges":[
-		{"id":"e76","fromNode":"title","toNode":"item-76","fromSide":"bottom","toSide":"right"},
-		{"id":"e77","fromNode":"title","toNode":"item-77","fromSide":"bottom","toSide":"right"},
-		{"id":"e78","fromNode":"title","toNode":"item-78","fromSide":"bottom","toSide":"top"},
-		{"id":"e79","fromNode":"title","toNode":"item-79","fromSide":"bottom","toSide":"left"},
-		{"id":"e80","fromNode":"title","toNode":"item-80","fromSide":"bottom","toSide":"left"},
-		{"id":"e81","fromNode":"title","toNode":"item-81","fromSide":"bottom","toSide":"left"}
+		{"id":"e76","fromNode":"title","fromSide":"bottom","toNode":"item-76","toSide":"right"},
+		{"id":"e77","fromNode":"title","fromSide":"bottom","toNode":"item-77","toSide":"right"},
+		{"id":"e78","fromNode":"title","fromSide":"bottom","toNode":"item-78","toSide":"top"},
+		{"id":"e79","fromNode":"title","fromSide":"bottom","toNode":"item-79","toSide":"left"},
+		{"id":"e80","fromFloating":false,"fromNode":"title","fromSide":"bottom","toNode":"item-80","toSide":"left"},
+		{"id":"e81","fromNode":"title","fromSide":"bottom","toNode":"item-81","toSide":"left"}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
