@@ -1,48 +1,433 @@
 {
-	"nodes":[
-		{"id":"f3grp_rev","type":"group","x":0,"y":0,"width":7600,"height":4400,"color":"2","label":"第三幕｜最终修订分镜＋93秒时间表（1:27—3:00）"},
-		{"id":"f3title_rev","type":"text","text":"# 第三幕最终修订｜讲三民主义 → 凌凤梧递报 → 管理转硬 → 文稿越狱 → 母亲高潮 → 见蒋 → 处决\n\n**总长：93秒｜1:27—3:00。** 本幕是牢房当下继续推进，不是回忆。没有游街、押送、转移监狱，也没有纸页／文字留下结尾。","x":80,"y":70,"width":7200,"height":260,"color":"2"},
-		{"id":"f3lock_rev","type":"text","text":"## 已确认执行锁定\n\n- 开头：方志敏給狱友讲三民主义；**不放风**。\n- 高家骏只把牢门打开，站在門外值守並聽講。\n- 讲解要大众化，只用一两句背景音点明：民族、民权、民生最终是让中国人活得像个中国人；外敌当前仍只顾“安内”，违背救国本意。\n- **凌凤梧**因同乡关系亲自递报纸。\n- 脚镣镜头采用A：凌凤梧递报后看見方的重镣，表现公开同情。\n- 高层生气后，直接表现撤换凌凤梧、强硬派进入。\n- 强硬派随后命下人盯紧高家骏。\n- 新增关键铰链：方志敏把文稿交给胡逸民。\n- 胡逸民再传给程全昭，逐渐转成黑红四手传递。\n- 蒋介石位於最后现实戏；之后秘密处决。\n- 強硬派姓名、传递具体通路、四手对应关系暫不擅自寫死，留待下一轮确认。","x":80,"y":360,"width":1650,"height":1100,"color":"5"},
-		{"id":"f3s1r","type":"text","text":"### 镜1｜1:27—1:39｜牢房讲三民主义／高家骏门外听\n**中远景固定长镜｜12秒**\n\n方志敏与狱友在牢内围坐。高家骏打开牢门后仍站在門外值守，沒有放風。方的讲解作为背景音，只落一两句大众化表达；高家骏先以职责姿态站着，随后眼神与头部缓慢轉向方。","x":1800,"y":360,"width":1050,"height":600,"color":"3"},
-		{"id":"f3s2r","type":"text","text":"### 镜2｜1:39—1:44｜凌凤梧递报纸\n**中景｜5秒**\n\n凌凤梧來到牢門前，因同鄉關係帶來報紙，低声提示“有些大事”。方志敏接過；高家骏仍留在門外。","x":3000,"y":360,"width":1050,"height":600,"color":"3"},
-		{"id":"f3s5r","type":"text","text":"### 镜5｜1:51—1:59｜高层发现文章、发火\n**办公室中景｜8秒**\n\n一批文章被摊到桌面，高层確認後拍桌、下令嚴查。這裡不進一步解释文章批次，避免在未確認處擅自補史。","x":1800,"y":1050,"width":1050,"height":600,"color":"1"},
-		{"id":"f3s6r","type":"text","text":"### 镜6｜1:59—2:06｜撤换凌凤梧／强硬派进入\n**對照中景｜7秒**\n\n不拍复杂人事会议：凌凤梧被通知離開，強硬派從相反方向走入監獄，钥匙与脚步声變重。用人物進退完成管理路線更换。","x":3000,"y":1050,"width":1050,"height":600,"color":"1"},
-		{"id":"f3img5","type":"file","file":"方备份/Pasted image 20260730215242.png","x":1840,"y":3340,"width":699,"height":460},
-		{"id":"f3img6","type":"file","file":"03_蒋介石_三视图.png","x":2600,"y":3400,"width":400,"height":267},
-		{"id":"f3img7","type":"file","file":"Pasted image 20260731004347.png","x":3040,"y":3320,"width":232,"height":400},
-		{"id":"f3s3r","type":"text","text":"### 镜3｜1:44—1:48｜标题\n**报纸近景｜4秒**\n\n標題清楚出现：**「攘外必先安内」**。方的手指压住纸面；前面大众化三民主义讲解與標題形成直接矛盾。","x":4200,"y":360,"width":1050,"height":600,"color":"1"},
-		{"id":"f3s4r","type":"text","text":"### 镜4｜1:48—1:51｜凌凤梧看到脚镣\n**視線下移近景｜3秒**\n\n凌凤梧遞完報紙，視線落到方志敏沉重、沾血的腳镣；神情收緊。此鏡重點是凌鳳梧的公開同情，不承担回憶觸發。","x":5400,"y":360,"width":1050,"height":600,"color":"1"},
-		{"id":"f3s7r","type":"text","text":"### 镜7｜2:06—2:12｜强硬派命人盯紧高家骏\n**中近景｜6秒**\n\n强硬派壓低聲音命令下屬：“盯紧高家骏。”高家骏在遠處或門框後出現，被納入監視。这里先建立压力，具體幕後行动下一輪再细化。","x":4200,"y":1050,"width":1050,"height":600,"color":"1"},
-		{"id":"f3s8r","type":"text","text":"### 镜8｜2:12—2:20｜方志敏把文稿交給胡逸民\n**双人中景｜8秒**\n\n牢房搜查聲逼近。方志敏看向胡逸民，從衣內／草席夾層取出折好的文稿，低聲交付。胡先看方，再接過；這是一切傳遞動作的來源與因果铰链。","x":5400,"y":1050,"width":1050,"height":600,"color":"3"},
-		{"id":"f3s9r","type":"text","text":"### 镜9｜2:20—2:34｜胡逸民傳給程全昭／慢轉黑紅四手\n**现实中近景→抽象顶視圖｜14秒**\n\n先完成胡逸民向程全昭的傳遞，再讓牢房細節、人物身份與冷灰色逐漸退去，轉成四隻手圍繞同一紙卷的黑紅象徵畫面。暫不寫死四手對應誰。","x":1800,"y":1740,"width":1050,"height":600,"color":"2"},
-		{"id":"f3s10r","type":"text","text":"### 镜10｜2:34—2:50｜母亲／恶魔高潮\n**黑紅抽象｜16秒**\n\n四手色塊變形為“中國／國土”的母親意象。日本惡魔象徵侵略者；抽刀、舉刀、落刀，以平塗／水墨抽象完成，不寫實肢解。","x":3000,"y":1740,"width":1050,"height":600,"color":"2"},
-		{"id":"f3s11r","type":"text","text":"### 镜11｜2:50—2:56｜最后见蒋介石\n**双人中景｜6秒**\n\n優待室。蒋介石提出寫聲明的條件；方志敏腰背挺直，不爭辯，端茶、停頓、閉眼拒絕。作為母親高潮后的最後現實立場。","x":4200,"y":1740,"width":1050,"height":600,"color":"3"},
-		{"id":"f3s12r","type":"text","text":"### 镜12｜2:56—3:00｜秘密处决\n**夜色／黑場｜4秒**\n\n由茶蓋輕響切夜間腳步，再落到黑場與秘密處決事實。到此結束，不加《可爱的中国》紙頁、不加勝利音樂或英雄定格。","x":5400,"y":1740,"width":1050,"height":600,"color":"2"},
-		{"id":"f3time_r","type":"text","text":"## 第三幕时间表｜93秒\n\n| 时间 | 内容 |\n|---|---|\n| 1:27—1:39 | 讲三民主义；高家骏開門旁听 |\n| 1:39—1:44 | 凌凤梧遞報紙 |\n| 1:44—1:48 | 标题 |\n| 1:48—1:51 | 凌凤梧看脚镣 |\n| 1:51—1:59 | 高层发现文章、發火 |\n| 1:59—2:06 | 凌凤梧被換；強硬派进入 |\n| 2:06—2:12 | 命人盯紧高家骏 |\n| 2:12—2:20 | 方把文稿交給胡 |\n| 2:20—2:34 | 胡傳程；慢轉黑紅四手 |\n| 2:34—2:50 | 母亲／恶魔高潮 |\n| 2:50—2:56 | 最后见蒋 |\n| 2:56—3:00 | 秘密处决 |\n\n**合計：12＋5＋4＋3＋8＋7＋6＋8＋14＋16＋6＋4＝93秒。**","x":1800,"y":2500,"width":1050,"height":600,"color":"1"},
-		{"id":"f3pending_r","type":"text","text":"## 下一轮继续确认（本次未擅改）\n\n1. 强硬派是否实名；若实名，身份与服装如何区分。\n2. 凌凤梧离开与“盯紧高家骏”两段之间是否还需要一拍具体事件。\n3. 胡逸民如何跨過牢門，把文稿真正送到程全昭手中。\n4. 黑紅四手是純象徵，還是要對應明确人物。\n5. 高層發現的文章與方交給胡的文稿是否需要在畫面上区分。\n\n这些问题留在Canvas內作为下一輪工作清单，不先拿想象填空。","x":4300,"y":2500,"width":1050,"height":600,"color":"1"},
-		{"id":"f3img1","type":"file","file":"Pasted image 20260730021633 2.png","x":80,"y":3400,"width":400,"height":300},
-		{"id":"f3img2","type":"file","file":"22d78b77-f49b-43a5-965c-6b185afbbe9f.png","x":520,"y":3400,"width":400,"height":225},
-		{"id":"f3img3","type":"file","file":"方备份/b7c8e6eb-8af1-4587-99e9-9613636b86d9.png","x":960,"y":3400,"width":400,"height":225},
-		{"id":"f3img4","type":"file","file":"方备份/b728fb2a-6344-47cf-957c-4eef28ac2ed1.png","x":1400,"y":3400,"width":400,"height":225}
+	"nodes": [
+		{
+			"id": "f3grp_rev",
+			"type": "group",
+			"x": 0,
+			"y": 0,
+			"width": 7600,
+			"height": 4400,
+			"color": "2",
+			"label": "第三幕｜最终修订分镜＋93秒时间表（1:27—3:00）"
+		},
+		{
+			"id": "f3title_rev",
+			"type": "text",
+			"text": "# 第三幕最终修订｜讲三民主义 → 凌凤梧递报 → 管理转硬 → 文稿越狱 → 母亲高潮 → 见蒋 → 处决\n\n**总长：93秒｜1:27—3:00。** 本幕是牢房当下继续推进，不是回忆。没有游街、押送、转移监狱，也没有纸页／文字留下结尾。",
+			"x": 80,
+			"y": 70,
+			"width": 7200,
+			"height": 260,
+			"color": "2"
+		},
+		{
+			"id": "f3lock_rev",
+			"type": "text",
+			"text": "## 已确认执行锁定\n\n- 开头：方志敏給狱友讲三民主义；**不放风**。\n- 高家骏只把牢门打开，站在門外值守並聽講。\n- 讲解要大众化，只用一两句背景音点明：民族、民权、民生最终是让中国人活得像个中国人；外敌当前仍只顾“安内”，违背救国本意。\n- **凌凤梧**因同乡关系亲自递报纸。\n- 脚镣镜头采用A：凌凤梧递报后看見方的重镣，表现公开同情。\n- 高层生气后，直接表现撤换凌凤梧、强硬派进入。\n- 强硬派随后命下人盯紧高家骏。\n- 新增关键铰链：方志敏把文稿交给胡逸民。\n- 胡逸民再传给程全昭，逐渐转成黑红四手传递。\n- 蒋介石位於最后现实戏；之后秘密处决。\n- 強硬派姓名、传递具体通路、四手对应关系暫不擅自寫死，留待下一轮确认。",
+			"x": 80,
+			"y": 360,
+			"width": 1650,
+			"height": 1100,
+			"color": "5"
+		},
+		{
+			"id": "f3s1r",
+			"type": "text",
+			"text": "### 镜1｜1:27—1:39｜牢房讲三民主义／高家骏门外听\n**中远景固定长镜｜12秒**\n\n方志敏与狱友在牢内围坐。高家骏打开牢门后仍站在門外值守，沒有放風。方的讲解作为背景音，只落一两句大众化表达；高家骏先以职责姿态站着，随后眼神与头部缓慢轉向方。",
+			"x": 1800,
+			"y": 360,
+			"width": 1050,
+			"height": 600,
+			"color": "3"
+		},
+		{
+			"id": "f3s2r",
+			"type": "text",
+			"text": "### 镜2｜1:39—1:44｜凌凤梧递报纸\n**中景｜5秒**\n\n凌凤梧來到牢門前，因同鄉關係帶來報紙，低声提示“有些大事”。方志敏接過；高家骏仍留在門外。",
+			"x": 3000,
+			"y": 360,
+			"width": 1050,
+			"height": 600,
+			"color": "3"
+		},
+		{
+			"id": "f3s5r",
+			"type": "text",
+			"text": "### 镜5｜1:51—1:59｜高层发现文章、发火\n**办公室中景｜8秒**\n\n一批文章被摊到桌面，高层確認後拍桌、下令嚴查。這裡不進一步解释文章批次，避免在未確認處擅自補史。",
+			"x": 1800,
+			"y": 1050,
+			"width": 1050,
+			"height": 600,
+			"color": "1"
+		},
+		{
+			"id": "f3s6r",
+			"type": "text",
+			"text": "### 镜6｜1:59—2:06｜撤换凌凤梧／强硬派进入\n**對照中景｜7秒**\n\n不拍复杂人事会议：凌凤梧被通知離開，強硬派從相反方向走入監獄，钥匙与脚步声變重。用人物進退完成管理路線更换。",
+			"x": 3000,
+			"y": 1050,
+			"width": 1050,
+			"height": 600,
+			"color": "1"
+		},
+		{
+			"id": "f3img5",
+			"type": "file",
+			"file": "方备份/Pasted image 20260730215242.png",
+			"x": 1840,
+			"y": 3340,
+			"width": 699,
+			"height": 460
+		},
+		{
+			"id": "f3img6",
+			"type": "file",
+			"file": "03_蒋介石_三视图.png",
+			"x": 2600,
+			"y": 3400,
+			"width": 400,
+			"height": 267
+		},
+		{
+			"id": "f3img7",
+			"type": "file",
+			"file": "Pasted image 20260731004347.png",
+			"x": 3040,
+			"y": 3320,
+			"width": 232,
+			"height": 400
+		},
+		{
+			"id": "f3s3r",
+			"type": "text",
+			"text": "### 镜3｜1:44—1:48｜标题\n**报纸近景｜4秒**\n\n標題清楚出现：**「攘外必先安内」**。方的手指压住纸面；前面大众化三民主义讲解與標題形成直接矛盾。",
+			"x": 4200,
+			"y": 360,
+			"width": 1050,
+			"height": 600,
+			"color": "1"
+		},
+		{
+			"id": "f3s4r",
+			"type": "text",
+			"text": "### 镜4｜1:48—1:51｜凌凤梧看到脚镣\n**視線下移近景｜3秒**\n\n凌凤梧遞完報紙，視線落到方志敏沉重、沾血的腳镣；神情收緊。此鏡重點是凌鳳梧的公開同情，不承担回憶觸發。",
+			"x": 5400,
+			"y": 360,
+			"width": 1050,
+			"height": 600,
+			"color": "1"
+		},
+		{
+			"id": "f3s7r",
+			"type": "text",
+			"text": "### 镜7｜2:06—2:12｜强硬派命人盯紧高家骏\n**中近景｜6秒**\n\n强硬派壓低聲音命令下屬：“盯紧高家骏。”高家骏在遠處或門框後出現，被納入監視。这里先建立压力，具體幕後行动下一輪再细化。",
+			"x": 4200,
+			"y": 1050,
+			"width": 1050,
+			"height": 600,
+			"color": "1"
+		},
+		{
+			"id": "f3s8r",
+			"type": "text",
+			"text": "### 镜8｜2:12—2:20｜方志敏把文稿交給胡逸民\n**双人中景｜8秒**\n\n牢房搜查聲逼近。方志敏看向胡逸民，從衣內／草席夾層取出折好的文稿，低聲交付。胡先看方，再接過；這是一切傳遞動作的來源與因果铰链。",
+			"x": 5400,
+			"y": 1050,
+			"width": 1050,
+			"height": 600,
+			"color": "3"
+		},
+		{
+			"id": "f3s9r",
+			"type": "text",
+			"text": "### 镜9｜2:20—2:34｜胡逸民傳給程全昭／慢轉黑紅四手\n**现实中近景→抽象顶視圖｜14秒**\n\n先完成胡逸民向程全昭的傳遞，再讓牢房細節、人物身份與冷灰色逐漸退去，轉成四隻手圍繞同一紙卷的黑紅象徵畫面。暫不寫死四手對應誰。",
+			"x": 1800,
+			"y": 1740,
+			"width": 1050,
+			"height": 600,
+			"color": "2"
+		},
+		{
+			"id": "f3s10r",
+			"type": "text",
+			"text": "### 镜10｜2:34—2:50｜母亲／恶魔高潮\n**黑紅抽象｜16秒**\n\n四手色塊變形為“中國／國土”的母親意象。日本惡魔象徵侵略者；抽刀、舉刀、落刀，以平塗／水墨抽象完成，不寫實肢解。",
+			"x": 3000,
+			"y": 1740,
+			"width": 1050,
+			"height": 600,
+			"color": "2"
+		},
+		{
+			"id": "f3s11r",
+			"type": "text",
+			"text": "### 镜11｜2:50—2:56｜最后见蒋介石\n**双人中景｜6秒**\n\n優待室。蒋介石提出寫聲明的條件；方志敏腰背挺直，不爭辯，端茶、停頓、閉眼拒絕。作為母親高潮后的最後現實立場。",
+			"x": 4200,
+			"y": 1740,
+			"width": 1050,
+			"height": 600,
+			"color": "3"
+		},
+		{
+			"id": "f3s12r",
+			"type": "text",
+			"text": "### 镜12｜2:56—3:00｜秘密处决\n**夜色／黑場｜4秒**\n\n由茶蓋輕響切夜間腳步，再落到黑場與秘密處決事實。到此結束，不加《可爱的中国》紙頁、不加勝利音樂或英雄定格。",
+			"x": 5400,
+			"y": 1740,
+			"width": 1050,
+			"height": 600,
+			"color": "2"
+		},
+		{
+			"id": "f3time_r",
+			"type": "text",
+			"text": "## 第三幕时间表｜93秒\n\n| 时间 | 内容 |\n|---|---|\n| 1:27—1:39 | 讲三民主义；高家骏開門旁听 |\n| 1:39—1:44 | 凌凤梧遞報紙 |\n| 1:44—1:48 | 标题 |\n| 1:48—1:51 | 凌凤梧看脚镣 |\n| 1:51—1:59 | 高层发现文章、發火 |\n| 1:59—2:06 | 凌凤梧被換；強硬派进入 |\n| 2:06—2:12 | 命人盯紧高家骏 |\n| 2:12—2:20 | 方把文稿交給胡 |\n| 2:20—2:34 | 胡傳程；慢轉黑紅四手 |\n| 2:34—2:50 | 母亲／恶魔高潮 |\n| 2:50—2:56 | 最后见蒋 |\n| 2:56—3:00 | 秘密处决 |\n\n**合計：12＋5＋4＋3＋8＋7＋6＋8＋14＋16＋6＋4＝93秒。**",
+			"x": 1800,
+			"y": 2500,
+			"width": 1050,
+			"height": 600,
+			"color": "1"
+		},
+		{
+			"id": "f3pending_r",
+			"type": "text",
+			"text": "## 下一轮继续确认（本次未擅改）\n\n1. 强硬派是否实名；若实名，身份与服装如何区分。\n2. 凌凤梧离开与“盯紧高家骏”两段之间是否还需要一拍具体事件。\n3. 胡逸民如何跨過牢門，把文稿真正送到程全昭手中。\n4. 黑紅四手是純象徵，還是要對應明确人物。\n5. 高層發現的文章與方交給胡的文稿是否需要在畫面上区分。\n\n这些问题留在Canvas內作为下一輪工作清单，不先拿想象填空。",
+			"x": 4300,
+			"y": 2500,
+			"width": 1050,
+			"height": 600,
+			"color": "1"
+		},
+		{
+			"id": "f3img1",
+			"type": "file",
+			"file": "Pasted image 20260730021633 2.png",
+			"x": 80,
+			"y": 3400,
+			"width": 400,
+			"height": 300
+		},
+		{
+			"id": "f3img2",
+			"type": "file",
+			"file": "22d78b77-f49b-43a5-965c-6b185afbbe9f.png",
+			"x": 520,
+			"y": 3400,
+			"width": 400,
+			"height": 225
+		},
+		{
+			"id": "f3img3",
+			"type": "file",
+			"file": "方备份/b7c8e6eb-8af1-4587-99e9-9613636b86d9.png",
+			"x": 960,
+			"y": 3400,
+			"width": 400,
+			"height": 225
+		},
+		{
+			"id": "f3img4",
+			"type": "file",
+			"file": "方备份/b728fb2a-6344-47cf-957c-4eef28ac2ed1.png",
+			"x": 1400,
+			"y": 3400,
+			"width": 400,
+			"height": 225
+		},
+		{
+			"id": "taskcard_link_act3_01",
+			"type": "file",
+			"file": "第三幕_01_狱中传播.md",
+			"x": 6550,
+			"y": 360,
+			"width": 520,
+			"height": 360
+		},
+		{
+			"id": "taskcard_link_act3_02",
+			"type": "file",
+			"file": "第三幕_02_告密与传递.md",
+			"x": 6550,
+			"y": 780,
+			"width": 520,
+			"height": 360
+		},
+		{
+			"id": "taskcard_link_act3_03",
+			"type": "file",
+			"file": "第三幕_03_意义越狱抽象.md",
+			"x": 6550,
+			"y": 1200,
+			"width": 520,
+			"height": 360
+		},
+		{
+			"id": "taskcard_link_act3_04",
+			"type": "file",
+			"file": "第三幕_04_终局.md",
+			"x": 6550,
+			"y": 1620,
+			"width": 520,
+			"height": 360
+		}
 	],
-	"edges":[
-		{"id":"f3e0","fromFloating":false,"toFloating":false,"fromNode":"f3title_rev","fromSide":"right","toNode":"f3s1r","toSide":"left","color":"4","label":"开始"},
-		{"id":"f3e1","fromFloating":false,"toFloating":false,"fromNode":"f3s1r","fromSide":"right","toNode":"f3s2r","toSide":"left","color":"4","label":"凌凤梧到来"},
-		{"id":"f3e2","fromFloating":false,"toFloating":false,"fromNode":"f3s2r","fromSide":"right","toNode":"f3s3r","toSide":"left","color":"4","label":"报纸标题"},
-		{"id":"f3e3","fromFloating":false,"toFloating":false,"fromNode":"f3s3r","fromSide":"right","toNode":"f3s4r","toSide":"left","color":"4","label":"凌凤梧看见脚镣"},
-		{"id":"f3e4","fromFloating":false,"toFloating":false,"fromNode":"f3s4r","fromSide":"right","toNode":"f3s5r","toSide":"left","color":"4","label":"压迫扩展到高层"},
-		{"id":"f3e5","fromFloating":false,"toFloating":false,"fromNode":"f3s5r","fromSide":"right","toNode":"f3s6r","toSide":"left","color":"4","label":"撤换管理者"},
-		{"id":"f3e6","fromFloating":false,"toFloating":false,"fromNode":"f3s6r","fromSide":"right","toNode":"f3s7r","toSide":"left","color":"4","label":"强硬派盯人"},
-		{"id":"f3e7","fromFloating":false,"toFloating":false,"fromNode":"f3s7r","fromSide":"right","toNode":"f3s8r","toSide":"left","color":"4","label":"压力逼出交稿"},
-		{"id":"f3e8","fromFloating":false,"toFloating":false,"fromNode":"f3s8r","fromSide":"right","toNode":"f3s9r","toSide":"left","color":"2","label":"文稿开始越狱"},
-		{"id":"f3e9","fromFloating":false,"toFloating":false,"fromNode":"f3s9r","fromSide":"right","toNode":"f3s10r","toSide":"left","color":"2","label":"四手变母亲意象"},
-		{"id":"f3e10","fromFloating":false,"toFloating":false,"fromNode":"f3s10r","fromSide":"right","toNode":"f3s11r","toSide":"left","color":"2","label":"高潮后回现实"},
-		{"id":"f3e11","fromFloating":false,"toFloating":false,"fromNode":"f3s11r","fromSide":"right","toNode":"f3s12r","toSide":"left","color":"2","label":"见蒋后直接处决"},
-		{"id":"f3etime","fromFloating":false,"toFloating":false,"fromNode":"f3title_rev","fromSide":"right","toNode":"f3time_r","toSide":"left","color":"6","label":"逐秒校验"},
-		{"id":"f3epending","fromFloating":false,"toFloating":false,"fromNode":"f3time_r","fromSide":"right","toNode":"f3pending_r","toSide":"left","color":"5","label":"继续解决不明确项"}
+	"edges": [
+		{
+			"id": "f3e0",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3title_rev",
+			"fromSide": "right",
+			"toNode": "f3s1r",
+			"toSide": "left",
+			"color": "4",
+			"label": "开始"
+		},
+		{
+			"id": "f3e1",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3s1r",
+			"fromSide": "right",
+			"toNode": "f3s2r",
+			"toSide": "left",
+			"color": "4",
+			"label": "凌凤梧到来"
+		},
+		{
+			"id": "f3e2",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3s2r",
+			"fromSide": "right",
+			"toNode": "f3s3r",
+			"toSide": "left",
+			"color": "4",
+			"label": "报纸标题"
+		},
+		{
+			"id": "f3e3",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3s3r",
+			"fromSide": "right",
+			"toNode": "f3s4r",
+			"toSide": "left",
+			"color": "4",
+			"label": "凌凤梧看见脚镣"
+		},
+		{
+			"id": "f3e4",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3s4r",
+			"fromSide": "right",
+			"toNode": "f3s5r",
+			"toSide": "left",
+			"color": "4",
+			"label": "压迫扩展到高层"
+		},
+		{
+			"id": "f3e5",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3s5r",
+			"fromSide": "right",
+			"toNode": "f3s6r",
+			"toSide": "left",
+			"color": "4",
+			"label": "撤换管理者"
+		},
+		{
+			"id": "f3e6",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3s6r",
+			"fromSide": "right",
+			"toNode": "f3s7r",
+			"toSide": "left",
+			"color": "4",
+			"label": "强硬派盯人"
+		},
+		{
+			"id": "f3e7",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3s7r",
+			"fromSide": "right",
+			"toNode": "f3s8r",
+			"toSide": "left",
+			"color": "4",
+			"label": "压力逼出交稿"
+		},
+		{
+			"id": "f3e8",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3s8r",
+			"fromSide": "right",
+			"toNode": "f3s9r",
+			"toSide": "left",
+			"color": "2",
+			"label": "文稿开始越狱"
+		},
+		{
+			"id": "f3e9",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3s9r",
+			"fromSide": "right",
+			"toNode": "f3s10r",
+			"toSide": "left",
+			"color": "2",
+			"label": "四手变母亲意象"
+		},
+		{
+			"id": "f3e10",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3s10r",
+			"fromSide": "right",
+			"toNode": "f3s11r",
+			"toSide": "left",
+			"color": "2",
+			"label": "高潮后回现实"
+		},
+		{
+			"id": "f3e11",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3s11r",
+			"fromSide": "right",
+			"toNode": "f3s12r",
+			"toSide": "left",
+			"color": "2",
+			"label": "见蒋后直接处决"
+		},
+		{
+			"id": "f3etime",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3title_rev",
+			"fromSide": "right",
+			"toNode": "f3time_r",
+			"toSide": "left",
+			"color": "6",
+			"label": "逐秒校验"
+		},
+		{
+			"id": "f3epending",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "f3time_r",
+			"fromSide": "right",
+			"toNode": "f3pending_r",
+			"toSide": "left",
+			"color": "5",
+			"label": "继续解决不明确项"
+		}
 	],
-	"metadata":{
-		"version":"1.0-1.0",
-		"frontmatter":{}
+	"metadata": {
+		"version": "1.0-1.0",
+		"frontmatter": {}
 	}
 }
