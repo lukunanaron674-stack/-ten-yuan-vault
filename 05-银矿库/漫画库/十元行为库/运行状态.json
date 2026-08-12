@@ -2,19 +2,19 @@
   "schema_version": "1.1",
   "phase": "single_behavior",
   "run_status": "READY",
-  "run_id": "MANGA-BEHAVIOR-20260812-1608-KAIJI-XZ-RECHECK",
-  "source_main": "32d0cb48a107ec9d4f40036e4de305377774bf79",
+  "run_id": "MANGA-BEHAVIOR-20260812-1719-FRIEREN-NX-RECHECK",
+  "source_main": "e186e27ac8d57245921d3ab49a83330d5513d027",
   "classification_base": "数据/单行为记录.jsonl",
   "classification_overlay": "数据/单行为归类修正清单_v1.1.jsonl",
   "overlay_rule": "read base record then replace listed fields by record_id; overlay has current classification authority",
-  "target_symbol": "xz",
-  "selection_rule": "effective locked coverage is zero for nx/xz/x并z. The previous two rounds were nx (Punpun then Odokawa), so the no-three-consecutive rule excludes nx this round and selects xz before x并z. Kodansha official Kaiji listings lock debt collection, boarding Espoir, entering Limited Rock-Paper-Scissors, a four-hour limit and survival stakes, but do not lock a local card/star/cash trigger producing system-wide chain reaction. Under current xz v2.1 / accuracy v0.3, gambling, countdown, life stakes and high pressure alone are insufficient; the new fact is stored unclassified.",
-  "last_character": "伊藤开司 / 伊藤開司 / Kaiji Ito",
-  "last_work": "赌博默示录开司 / 賭博黙示録カイジ",
-  "last_stage": "希望号限定猜拳：遭债务追讨后登上赌博船，在4小时时限下进入以能否生还为结果的限定猜拳；讲谈社官方书目公开范围，不冒充逐页穷举",
+  "target_symbol": "nx",
+  "selection_rule": "effective locked coverage remains zero for nx/xz/x并z. The previous run was xz, so nx is eligible again and wins the zero-coverage tie by the fixed order. Shogakukan manga volume 2 and Weekly Shonen Sunday official character material lock Fern as Frieren's apprentice/travel companion and Heiter as Fern's foster parent, but current public manga material does not independently lock Heiter's request as a persistent final-direction source, nor a low-cost autonomy window where Frieren repeatedly yields final direction. Master-apprentice care and traveling together therefore remain unclassified rather than being inferred as nx.",
+  "last_character": "芙莉莲 / フリーレン / Frieren",
+  "last_work": "葬送的芙莉莲 / 葬送のフリーレン / Frieren: Beyond Journey's End",
+  "last_stage": "费伦成为芙莉莲弟子并与其共同旅行的早期阶段；小学馆漫画第2卷与少年Sunday官方角色页公开范围，不把旧预审中的海塔临终托付细节冒充本轮漫画官方逐页证据",
   "last_record_count": 1,
   "corrected_record_count": 0,
-  "last_run_evidence_note": "Kodansha official listings explicitly confirm that Kaiji takes over Furahata's debt, is collected by Endo, boards the gambling ship Espoir, enters Limited Rock-Paper-Scissors, faces a four-hour time limit and a life/survival stake. The official public descriptions do not establish that a specific local card, star or cash operation acts as a trigger that releases already accumulated danger across the whole system. Current xz therefore fails the trigger-sensitivity plus local-to-global chain gate and remains unclassified rather than being inferred from high-pressure gambling.",
+  "last_run_evidence_note": "Shogakukan manga volume 2 explicitly describes Fern as Frieren's apprentice and their journey together toward the former Demon King's castle; Weekly Shonen Sunday official character material confirms Fern was raised by Heiter and travels with Frieren. These sources lock a real master-apprentice/travel relation, but do not independently establish that Heiter's earlier request continues to own Frieren's final direction, nor do they provide a low-cost autonomy comparison after removing entrusted-care duty, ability gap and travel convenience. Current nx v2.4 / accuracy v0.5 therefore does not pass; the fact is stored unclassified.",
   "counts": {
     "zx": {"works": 2, "evidence_locked": 3, "candidate": 1},
     "z": {"works": 3, "evidence_locked": 3, "candidate": 5},
@@ -28,8 +28,8 @@
     "x并z": {"works": 0, "evidence_locked": 0, "candidate": 0}
   },
   "next_target_symbol": "nx",
-  "next_candidate": "葬送的芙莉莲｜芙莉莲｜海塔请求照料费伦后至两人共同旅行早期阶段；重核外部请求是否真正占最终方向，并拿掉受托关系、照料义务与能力差，寻找安全自主窗口中的方向让位，不把照料或同行本身直接判nx",
+  "next_candidate": "葬送的芙莉莲｜芙莉莲｜艾泽提出魂眠之地／魔王城方向后接受并北上阶段；优先核漫画卷册是否能锁定‘外部先给目的地→芙莉莲实际沿该路线推进’，并排除一次建议、旧同伴关系、信息差与旅途目标便利，仍不得因一次采纳直接升locked",
   "pending_issue_count": 0,
   "lease": null,
-  "updated": "2026-08-12T16:08:46+08:00"
+  "updated": "2026-08-12T17:19:45+08:00"
 }
