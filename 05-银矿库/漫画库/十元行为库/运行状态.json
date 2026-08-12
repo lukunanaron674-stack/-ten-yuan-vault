@@ -2,19 +2,19 @@
   "schema_version": "1.1",
   "phase": "single_behavior",
   "run_status": "READY",
-  "run_id": "MANGA-BEHAVIOR-20260812-1719-FRIEREN-NX-RECHECK",
-  "source_main": "e186e27ac8d57245921d3ab49a83330d5513d027",
+  "run_id": "MANGA-BEHAVIOR-20260812-1810-FRIEREN-AUREOLE-NX-RECHECK",
+  "source_main": "112af3427d5c86b304bc580ada8d345778cc803d",
   "classification_base": "数据/单行为记录.jsonl",
   "classification_overlay": "数据/单行为归类修正清单_v1.1.jsonl",
   "overlay_rule": "read base record then replace listed fields by record_id; overlay has current classification authority",
   "target_symbol": "nx",
-  "selection_rule": "effective locked coverage remains zero for nx/xz/x并z. The previous run was xz, so nx is eligible again and wins the zero-coverage tie by the fixed order. Shogakukan manga volume 2 and Weekly Shonen Sunday official character material lock Fern as Frieren's apprentice/travel companion and Heiter as Fern's foster parent, but current public manga material does not independently lock Heiter's request as a persistent final-direction source, nor a low-cost autonomy window where Frieren repeatedly yields final direction. Master-apprentice care and traveling together therefore remain unclassified rather than being inferred as nx.",
+  "selection_rule": "effective locked coverage is zero for nx/xz/x并z. Previous run was the first nx after an xz interruption, so this second consecutive nx remained eligible and won the fixed zero-coverage tie. Shogakukan manga volumes 2, 5 and 7 lock Aureole/Demon King's castle as the adopted and sustained travel destination; official anime episodes 4-5 only corroborate the same-source action chain. Final classification is unclassified because the official action chain says Frieren and Fern decide to head there: the manuscript supplies destination information, but current evidence does not show an external actor occupying final direction authority.",
   "last_character": "芙莉莲 / フリーレン / Frieren",
   "last_work": "葬送的芙莉莲 / 葬送のフリーレン / Frieren: Beyond Journey's End",
-  "last_stage": "费伦成为芙莉莲弟子并与其共同旅行的早期阶段；小学馆漫画第2卷与少年Sunday官方角色页公开范围，不把旧预审中的海塔临终托付细节冒充本轮漫画官方逐页证据",
+  "last_stage": "艾泽请求寻找芙兰梅手记→手记给出魂眠之地Aureole/现魔王城信息→芙莉莲与费伦决定前往并跨卷持续北上；漫画第2/5/7卷为主证，动画官方第4-5话只作同源动作链交叉确认",
   "last_record_count": 1,
   "corrected_record_count": 0,
-  "last_run_evidence_note": "Shogakukan manga volume 2 explicitly describes Fern as Frieren's apprentice and their journey together toward the former Demon King's castle; Weekly Shonen Sunday official character material confirms Fern was raised by Heiter and travels with Frieren. These sources lock a real master-apprentice/travel relation, but do not independently establish that Heiter's earlier request continues to own Frieren's final direction, nor do they provide a low-cost autonomy comparison after removing entrusted-care duty, ability gap and travel convenience. Current nx v2.4 / accuracy v0.5 therefore does not pass; the fact is stored unclassified.",
+  "last_run_evidence_note": "The destination fact and continued travel are high-confidence, but external information is not equivalent to external final-direction authority. Official episode wording explicitly attributes the decision to head for Aureole to Frieren and Fern. After removing old-party relation, Himmel motive, manuscript information advantage and route convenience, no stable nx behavior remains. Record stored as unclassified 99.",
   "counts": {
     "zx": {"works": 2, "evidence_locked": 3, "candidate": 1},
     "z": {"works": 3, "evidence_locked": 3, "candidate": 5},
@@ -27,9 +27,9 @@
     "xz": {"works": 0, "evidence_locked": 0, "candidate": 0},
     "x并z": {"works": 0, "evidence_locked": 0, "candidate": 0}
   },
-  "next_target_symbol": "nx",
-  "next_candidate": "葬送的芙莉莲｜芙莉莲｜艾泽提出魂眠之地／魔王城方向后接受并北上阶段；优先核漫画卷册是否能锁定‘外部先给目的地→芙莉莲实际沿该路线推进’，并排除一次建议、旧同伴关系、信息差与旅途目标便利，仍不得因一次采纳直接升locked",
+  "next_target_symbol": "xz",
+  "next_candidate": "赌博默示录开司｜伊藤开司｜限定猜拳终盘星数／手牌／现金联动的局部触发阶段；本轮后nx已连续两轮，下一轮不得第三次nx。优先取原卷页码或出版社可核资料，必须锁定整体危险已蓄积→局部变量变化→系统级连锁，不继承此前只有高压/倒计时的unclassified事实",
   "pending_issue_count": 0,
   "lease": null,
-  "updated": "2026-08-12T17:19:45+08:00"
+  "updated": "2026-08-12T18:10:00+08:00"
 }
