@@ -1,35 +1,74 @@
 {
-  "schema_version": "1.1",
-  "phase": "single_behavior",
-  "run_status": "READY",
-  "run_id": "MANGA-BEHAVIOR-20260812-1908-KAIJI-CH16-XZ-RECHECK",
-  "source_main": "c8d8f74ef05d6adef1b825d28e996a932e31ea70",
-  "classification_base": "数据/单行为记录.jsonl",
-  "classification_overlay": "数据/单行为归类修正清单_v1.1.jsonl",
-  "overlay_rule": "read base record then replace listed fields by record_id; overlay has current classification authority",
-  "target_symbol": "xz",
-  "selection_rule": "effective locked coverage is zero for nx/xz/x并z. The preceding two runs targeted nx, so this run must not target nx and xz wins the remaining fixed-order tie. Yanmaga Web official chapter-16 preview independently locks a distinct Kaiji action inside limited rock-paper-scissors: while holding only scissors cards and being in a clearly disadvantageous local state, Kaiji declares he will win twice in succession. This is a real new action fact but remains unclassified because the official preview does not prove that the declaration or one card event triggers a previously accumulated whole-system cascade; local tactical disadvantage is not the xz firecracker structure.",
-  "last_character": "伊藤开司 / 伊藤開司 / Kaiji Ito",
-  "last_work": "赌博默示录开司 / 賭博黙示録カイジ / Kaiji",
-  "last_stage": "限定猜拳第16话『盲点』：只持剪刀牌的明显劣势局面中，开司宣告两连胜；ヤンマガWeb官方预览为主证，讲谈社卷册仅作限定猜拳4小时规则场域交叉确认",
-  "last_record_count": 1,
-  "corrected_record_count": 0,
-  "last_run_evidence_note": "Official Yanmaga chapter-16 preview locks cards-in-hand disadvantage plus Kaiji's explicit two-win declaration as a distinct action fact. It does not lock an already accumulated whole-system danger, a highly sensitive trigger, and a system-level cascade caused by this local act. Record stored as unclassified 99; xz library remains empty.",
-  "counts": {
-    "zx": {"works": 2, "evidence_locked": 3, "candidate": 1},
-    "z": {"works": 3, "evidence_locked": 3, "candidate": 5},
-    "zn": {"works": 1, "evidence_locked": 1, "candidate": 0},
-    "nz": {"works": 1, "evidence_locked": 1, "candidate": 0},
-    "n": {"works": 2, "evidence_locked": 5, "candidate": 1},
-    "nx": {"works": 5, "evidence_locked": 0, "candidate": 9},
-    "xn": {"works": 3, "evidence_locked": 4, "candidate": 2},
-    "x": {"works": 1, "evidence_locked": 1, "candidate": 0},
-    "xz": {"works": 0, "evidence_locked": 0, "candidate": 0},
-    "x并z": {"works": 0, "evidence_locked": 0, "candidate": 0}
-  },
-  "next_target_symbol": "nx",
-  "next_candidate": "Jimmy Corrigan｜成年Jimmy｜母亲来电与父亲邀约的连续外部方向窗口复核；优先补原书页码或出版社/可靠书评可核动作，必须排除亲属关系、社交困难与一次邀约，寻找至少两个低成本自主改线窗口中仍不占最终方向的行为",
-  "pending_issue_count": 0,
-  "lease": null,
-  "updated": "2026-08-12T19:08:00+08:00"
+    "schema_version":  "1.1",
+    "phase":  "single_behavior",
+    "run_status":  "READY",
+    "run_id":  "MANGA-BEHAVIOR-20260813-0700-N-Z-MINING",
+    "source_main":  "b42bfe9b1dc848fd2ee6e3b9cfc20c564f9a0cb3",
+    "classification_base":  "数据/单行为记录.jsonl",
+    "classification_overlay":  "数据/单行为归类修正清单_v1.1.jsonl",
+    "overlay_rule":  "read base record then replace listed fields by record_id; overlay has current classification authority",
+    "target_symbol":  "x",
+    "selection_rule":  "x阴水采矿（掌握对象/资源类）：Veidt商业系统、藤本开店2条；同时补阳火zn：五郎选店1条",
+    "last_character":  "望月廉斗 / 黒田康弘 / 夢路朗",
+    "last_work":  "しねしね生徒会長 / ロストステラの滞在者たち / パラレルリープ・シンドローム",
+    "last_stage":  "n采矿：望月廉斗4条（95/96/94/94）、黒田康弘2条（89/88）候选；z采矿：望月说出讨厌94、夢路求婚96候选",
+    "last_record_count":  8,
+    "corrected_record_count":  8,
+    "counts":  {
+                   "zx":  {
+                              "works":  4,
+                              "evidence_locked":  3,
+                              "candidate":  3
+                          },
+                   "z":  {
+                             "works":  5,
+                             "evidence_locked":  3,
+                             "candidate":  7
+                         },
+                   "zn":  {
+                              "works":  2,
+                              "evidence_locked":  1,
+                              "candidate":  2
+                          },
+                   "nz":  {
+                              "works":  2,
+                              "evidence_locked":  1,
+                              "candidate":  3
+                          },
+                   "n":  {
+                             "works":  5,
+                             "evidence_locked":  1,
+                             "candidate":  10
+                         },
+                   "nx":  {
+                              "works":  5,
+                              "evidence_locked":  3,
+                              "candidate":  6
+                          },
+                   "xn":  {
+                              "works":  5,
+                              "evidence_locked":  7,
+                              "candidate":  3
+                          },
+                   "x":  {
+                             "works":  3,
+                             "evidence_locked":  1,
+                             "candidate":  2
+                         },
+                   "xz":  {
+                              "works":  3,
+                              "evidence_locked":  3,
+                              "candidate":  3
+                          },
+                   "x并z":  {
+                               "works":  5,
+                               "evidence_locked":  0,
+                               "candidate":  7
+                           }
+               },
+    "next_target_symbol":  "x并z",
+    "next_candidate":  "x并z阴木7候选0 locked（Ozymandias95x2、藤本90、未衣87、山田92、阳菜96、りんたろう88）；首条locked需呈现界面类出版社公开强证据或原书页码；n已10候选（望月4/黒田2/千早/雫/五郎×2）可补locked；z已7候选；nz已3候选、x已2候选、zn已2候选可继续补",
+    "pending_issue_count":  0,
+    "lease":  null,
+    "updated":  "2026-08-13T07:00+08:00"
 }

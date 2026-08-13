@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"f1grp_rev","type":"group","x":0,"y":0,"width":6400,"height":2800,"color":"4","label":"第一幕｜最终修订分镜＋45秒时间表"},
+		{"id":"f1title_rev","type":"text","text":"# 第一幕最终修订｜《可爱的中国》→ 后队受困 → 逆流回身\n\n**总长：45秒。** 正式口径统一为“后队受困／未能突围”，不再使用“迷路”“走丢”“立马跑过去”。方志敏先判断，再逆着撤离方向回身。","x":80,"y":70,"width":6100,"height":220,"color":"4"},
+		{"id":"f1lock_rev","type":"text","text":"## 执行锁定\n\n- 前26秒为山河与“母亲”意义，不拍成旅游宣传。\n- 0:26后硬切战场。\n- 来使报告：**“后面的同志还困在山里，没有突出来！”**\n- 方志敏不是冲动奔跑：先停、回头、判断，再逆流。\n- 所有人向左撤，只有方志敏最终向右。\n- 幕尾铁器声桥接第二幕，但第二幕画面直接切到两人已在牢房聊天。","x":80,"y":330,"width":1500,"height":620,"color":"5"},
+		{"id":"f1img1","type":"file","file":"Pasted image 20260723004719.png","x":80,"y":1700,"width":400,"height":225},
+		{"id":"f1img2","type":"file","file":"方/方备份/b89817ca-ef8c-4ee9-b8b1-7ea684f78da1 1.png","x":520,"y":1700,"width":400,"height":225},
+		{"id":"f1img3","type":"file","file":"6b3f35c5-9166-4428-a4a9-a6adbbcca86e 1.png","x":960,"y":1700,"width":400,"height":225},
+		{"id":"f1s1","type":"text","text":"### 镜1｜0:00—0:16｜四景第一次铺陈\n**大远景／超远景｜16秒**\n\n峨眉、西湖、雁荡、桂林四景依次出现，每景约4秒。旁白只负责命名与观看，环境音高于音乐。","x":1650,"y":330,"width":1050,"height":560,"color":"5"},
+		{"id":"f1s4","type":"text","text":"### 镜4｜0:34—0:41｜报告／决定回身\n**中景｜7秒**\n\n来使：“后面的同志还困在山里，没有突出来！”方志敏停住，先看撤离队伍，再望向右侧危险方向，完成判断后回身。","x":1650,"y":1030,"width":1050,"height":560,"color":"3"},
+		{"id":"f1img6","type":"file","file":"Pasted image 20260731222522.png","x":2490,"y":1700,"width":400,"height":300},
+		{"id":"f1img5","type":"file","file":"Pasted image 20260731213613.png","x":2050,"y":1700,"width":400,"height":225},
+		{"id":"f1img4","type":"file","file":"1321f82b-7cb0-41b7-b19c-4d1c43e054ba.png","x":1400,"y":1700,"width":400,"height":300},
+		{"id":"f1s2","type":"text","text":"### 镜2｜0:16—0:26｜同一山河进入“母亲”意义\n**远景／缓慢重构｜10秒**\n\n仍用同一组四景，但改变裁切、运动和观看重心，不是简单重播。旁白：“这好像我们的母亲……”","x":2850,"y":330,"width":1050,"height":560,"color":"5"},
+		{"id":"f1s5","type":"text","text":"### 镜5｜0:41—0:45｜逆流走远／声桥\n**中远景／远景｜4秒**\n\n撤离人群继续向左；方志敏逆向向右，身影逐渐变小。镜头不追脸。树枝、枪栓与铁器声渐变为下一幕的牢房底噪。","x":2850,"y":1030,"width":1050,"height":560,"color":"3"},
+		{"id":"f1img7","type":"file","file":"Pasted image 20260802175835.png","x":2930,"y":1700,"width":400,"height":225},
+		{"id":"f1s3","type":"text","text":"### 镜3｜0:26—0:34｜战场群像／来使进入\n**全远景→中远景｜8秒**\n\n队伍刚摆脱围捕，战士疲惫、负伤、继续向左撤。侧面的来使从右侧进入，气氛由宽阔骤然收紧。","x":4050,"y":330,"width":1050,"height":560,"color":"3"},
+		{"id":"f1time","type":"text","text":"## 第一幕时间表\n\n| 时间 | 内容 |\n|---|---|\n| 0:00—0:16 | 四景第一次铺陈 |\n| 0:16—0:26 | “母亲”意义重构 |\n| 0:26—0:34 | 战场群像＋来使 |\n| 0:34—0:41 | 后队受困＋决定回身 |\n| 0:41—0:45 | 逆流走远＋铁器声桥 |\n\n**总长：16＋10＋8＋7＋4＝45秒。**","x":4050,"y":1030,"width":1050,"height":560,"color":"5"}
+	],
+	"edges":[
+		{"id":"f1e0","fromFloating":false,"toFloating":false,"fromNode":"f1title_rev","fromSide":"right","toNode":"f1s1","toSide":"left","color":"4","label":"开始"},
+		{"id":"f1e1","fromFloating":false,"toFloating":false,"fromNode":"f1s1","fromSide":"right","toNode":"f1s2","toSide":"left","color":"4","label":"由景入母亲"},
+		{"id":"f1e2","fromFloating":false,"toFloating":false,"fromNode":"f1s2","fromSide":"right","toNode":"f1s3","toSide":"left","color":"4","label":"硬切战场"},
+		{"id":"f1e3","fromFloating":false,"toFloating":false,"fromNode":"f1s3","fromSide":"right","toNode":"f1s4","toSide":"left","color":"4","label":"报告受困"},
+		{"id":"f1e4","fromFloating":false,"toFloating":false,"fromNode":"f1s4","fromSide":"right","toNode":"f1s5","toSide":"left","color":"4","label":"逆流回身"},
+		{"id":"f1e5","fromFloating":false,"toFloating":false,"fromNode":"f1title_rev","fromSide":"right","toNode":"f1time","toSide":"left","color":"6","label":"时间校验"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

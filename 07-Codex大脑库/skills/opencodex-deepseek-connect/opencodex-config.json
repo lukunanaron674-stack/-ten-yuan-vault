@@ -1,0 +1,121 @@
+{
+  "port": 10100,
+  "managementUsageMaxReadBytes": 67108864,
+  "appOwnedMemoryBudgetMb": 256,
+  "providers": {
+    "openai": {
+      "adapter": "openai-responses",
+      "baseUrl": "https://chatgpt.com/backend-api/codex",
+      "codexAccountMode": "pool",
+      "authMode": "forward"
+    },
+    "deepseek": {
+      "adapter": "openai-chat",
+      "baseUrl": "https://api.deepseek.com",
+      "responsesPath": "/responses",
+      "statelessResponses": true,
+      "requiresAdjacentResponsesToolResults": true,
+      "supportsServiceTier": false,
+      "preserveResponsesReasoningContent": true,
+      "allowPrivateNetwork": true,
+      "responsesItemIdRepair": {
+        "repairMissingTerminalIds": true,
+        "repairInvalidIds": true
+      },
+      "modelAdapters": {
+        "deepseek-v4-pro": "openai-chat",
+        "deepseek-v4-flash": "openai-chat"
+      },
+      "authMode": "key",
+      "apiKey": "${DEEPSEEK_API_KEY}",
+      "defaultModel": "deepseek-v4-pro",
+      "models": [
+        "deepseek-chat",
+        "deepseek-reasoner",
+        "deepseek-v4-pro",
+        "deepseek-v4-flash"
+      ],
+      "modelContextWindows": {
+        "deepseek-v4-flash": 1048576,
+        "deepseek-v4-pro": 1048576
+      },
+      "modelReasoningEfforts": {
+        "deepseek-v4-pro": [
+          "high",
+          "max"
+        ],
+        "deepseek-v4-flash": [
+          "low",
+          "high",
+          "max"
+        ]
+      },
+      "modelReasoningEffortMap": {
+        "deepseek-v4-pro": {
+          "low": "high",
+          "medium": "high",
+          "high": "high",
+          "xhigh": "max",
+          "max": "max"
+        },
+        "deepseek-v4-flash": {
+          "low": "low",
+          "medium": "high",
+          "high": "high",
+          "xhigh": "high",
+          "max": "max"
+        }
+      },
+      "noVisionModels": [
+        "deepseek-chat",
+        "deepseek-reasoner",
+        "deepseek-v4-pro",
+        "deepseek-v4-flash"
+      ],
+      "preserveReasoningContentModels": [
+        "deepseek-v4-pro",
+        "deepseek-v4-flash"
+      ],
+      "apiKeyPool": [
+        {
+          "id": "e90c0d5c",
+          "key": "${DEEPSEEK_API_KEY}"
+        }
+      ]
+    }
+  },
+  "defaultProvider": "deepseek",
+  "openaiProviderTierVersion": 2,
+  "providerContextCaps": {
+    "deepseek": 350000
+  },
+  "multiAgentGuidanceEnabled": true,
+  "injectionModel": "gpt-5.6-sol",
+  "syncCodexSubagentDefaults": true,
+  "codexShimAutoRestore": true,
+  "subagentModels": [
+    "gpt-5.5",
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+    "gpt-5.6-luna",
+    "deepseek/deepseek-v4-flash"
+  ],
+  "websockets": false,
+  "codexAutoStart": false,
+  "shadowCallIntercept": {
+    "enabled": false,
+    "model": "deepseek/deepseek-v4-flash"
+  },
+  "proxy": "http://127.0.0.1:7890",
+  "visionSidecar": {
+    "model": "gpt-5.6-luna",
+    "backend": "openai",
+    "reasoning": "low"
+  },
+  "webSearchSidecar": {
+    "model": "gpt-5.5",
+    "backend": "openai"
+  },
+  "multiAgentMode": "v1",
+  "activeCodexAccountId": "__main__"
+}
