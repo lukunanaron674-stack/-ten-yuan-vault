@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"🎬 画面探索｜卡3-4","x":-150,"y":-700,"width":300,"height":50,"color":"6"},
+		{"id":"hub","type":"text","text":"🎬 画面描述词 ×10｜卡3-4 顾祝同拍板\n\n一句话：6s 两段短镜，怎么用「交接与逆行」把权力更换说清楚，不煽情？\n\n📄 [[方/08_探索/第三幕/卡3-4_顾祝同拍板_探索.md|探索卡]]","x":-220,"y":-460,"width":440,"height":150,"color":"5"},
+		{"id":"p3","type":"text","text":"第3名｜8.5分｜配比 nx5 n5 z4 xz3｜更静：交钥匙没有仪式感，像办手续；凌走得平静，强硬派脚步略快。","x":379,"y":494,"width":360,"height":130,"color":"3"},
+		{"id":"p4","type":"text","text":"第4名｜8.5分｜配比 z5 x4 nx4 n3｜权力感更足：顾祝同合文件时纸页轻响；强硬派制服更挺。","x":238,"y":658,"width":360,"height":130,"color":"3"},
+		{"id":"p5","type":"text","text":"第5名｜8.0分｜配比 zx5 nx4 n4 z3｜给目光交流更多戏：凌停半拍、方点头，都极轻。","x":48,"y":785,"width":360,"height":130,"color":"3"},
+		{"id":"p6","type":"text","text":"第6名｜8.0分｜配比 n5 z5 nx3 xz3｜更疏离：走廊更长、回声更重，两次目光隔着铁栏。","x":-180,"y":860,"width":360,"height":130,"color":"3"},
+		{"id":"p7","type":"text","text":"第7名｜7.5分｜配比 z6 nx5 n3 xz2｜更冷：钥匙碰撞声略尖，强硬派目不斜视。","x":-431,"y":872,"width":360,"height":130,"color":"1"},
+		{"id":"p8","type":"text","text":"第8名｜7.5分｜配比 zx4 nx5 n4 z3｜更平：两段各 3s，像公文流程，无情绪起伏。","x":-687,"y":814,"width":360,"height":130,"color":"1"},
+		{"id":"p9","type":"text","text":"第9名｜7.0分｜配比 x4 z5 nx4 n3｜微妙的权力暗示：强硬派接钥匙时先看一眼顾的办公室方向。","x":-930,"y":685,"width":360,"height":130,"color":"1"},
+		{"id":"p10","type":"text","text":"第10名｜6.5分｜配比 xz4 z4 nx4 n3 n2｜更漂：走廊光线忽明忽暗，交钥匙略拖沓。","x":-1137,"y":487,"width":360,"height":130,"color":"1"},
+		{"id":"p1","type":"text","text":"第1名｜9.5分｜配比 z6 zx5 nx4 n2｜两段式短镜：冷色办公室顾祝同合文件抬眼（动作只到合上或抬眼）；切监狱走廊，凌凤梧沉默交出一串钥匙给强硬派，自己向外走、强硬派逆向进入；经方志敏牢门停半拍、一次目光交流，方轻微点头。克制、不握手不敬礼。","x":598,"y":40,"width":382,"height":180,"color":"4"},
+		{"id":"p2","type":"text","text":"第2名｜9.0分｜配比 zx6 z5 nx3 nz2｜交接更清楚：钥匙特写半秒（从凌的手到强硬派的手）；走廊一进一出形成交叉。","x":559,"y":260,"width":360,"height":130,"color":"4"},
+		{"id":"gen80board34","type":"file","file":"方/08_探索/第三幕/生成图/卡3-4_画面探索_80分以上六方案.png","x":1020,"y":40,"width":720,"height":405}
+	],
+	"edges":[
+		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
+		{"id":"e-hub-p1","fromNode":"hub","fromSide":"bottom","toNode":"p1","toSide":"top"},
+		{"id":"e-hub-p2","fromNode":"hub","fromSide":"bottom","toNode":"p2","toSide":"top"},
+		{"id":"e-hub-p3","fromNode":"hub","fromSide":"bottom","toNode":"p3","toSide":"top"},
+		{"id":"e-hub-p4","fromNode":"hub","fromSide":"bottom","toNode":"p4","toSide":"top"},
+		{"id":"e-hub-p5","fromNode":"hub","fromSide":"bottom","toNode":"p5","toSide":"top"},
+		{"id":"e-hub-p6","fromNode":"hub","fromSide":"bottom","toNode":"p6","toSide":"top"},
+		{"id":"e-hub-p7","toFloating":false,"fromNode":"hub","fromSide":"bottom","toNode":"p7","toSide":"top"},
+		{"id":"e-hub-p8","fromNode":"hub","fromSide":"bottom","toNode":"p8","toSide":"top"},
+		{"id":"e-hub-p9","fromNode":"hub","fromSide":"bottom","toNode":"p9","toSide":"top"},
+		{"id":"e-hub-p10","fromNode":"hub","fromSide":"bottom","toNode":"p10","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
