@@ -1,22 +1,22 @@
 {
 	"nodes":[
 		{"id":"title","type":"text","text":"🔍 一句话·十元探索｜第二部分 告密与传递（总方向）","x":-220,"y":-640,"width":440,"height":50,"color":"6"},
-		{"id":"hub","type":"text","text":"② 告密与传递｜卡3-3/3-4/3-5\n\n一句话探索：第二部分「告密与传递」总方向：怎么用一套冷静的「权力流程」（暴露→拍板→换人→交付）把文稿一步步逼上秘密传递之路——压迫全程在场但不咆哮、交接全程无声但不冷血，最后落在一只压住文稿的手上？\n\n📄 [[方/01_任务卡/第三幕_02_告密与传递_索引|段索引卡]]","x":-270,"y":-420,"width":540,"height":190,"color":"5"},
+		{"id":"hub","type":"text","text":"② 告密与传递｜卡3-3/3-4/3-5\n\n一句话探索：第二部分「告密与传递」总方向：怎么用一条「看见→告状→调走→搜房→开砖→窗口」的传递链把文稿一步步逼出牢房——胖士兵叫嚣告状、坏胖高层拍板调走凌凤梧，搜房扑空后层层威胁，压迫全程在场但不咆哮、交接全程无声但不冷血，最后落在一只压住文稿的手上？\n\n📄 [[方/01_任务卡/第三幕_02_告密与传递_索引|段索引卡]]","x":-270,"y":-420,"width":540,"height":190,"color":"5"},
 		{"id":"ratio-h","type":"text","text":"🔍 十元配比（总方向）","x":-700,"y":-60,"width":340,"height":50,"color":"6"},
 		{"id":"rA","type":"text","text":"方案A｜z6 xn5 zx5 nx4 nz2\n\n权力压迫+执行，暗线托付，一丝柔光","x":-392,"y":732,"width":360,"height":120,"color":"3"},
 		{"id":"rB","type":"text","text":"方案B｜z7 xn6 zx4 nx3\n\n压迫最重，冷硬","x":-780,"y":499,"width":360,"height":120,"color":"3"},
 		{"id":"rC","type":"text","text":"方案C｜zx5 z5 xn4 nx5 nz3\n\n执行+暗线并重，柔光多一点","x":-985,"y":96,"width":360,"height":120,"color":"3"},
 		{"id":"rD","type":"text","text":"方案D｜xn6 nx5 nz3 z3 xz2\n\n压迫+暗线+漂流，情绪最暗","x":-946,"y":-354,"width":360,"height":120,"color":"3"},
 		{"id":"card-h","type":"text","text":"🎯 三卡各自方向","x":420,"y":-60,"width":340,"height":50,"color":"6"},
-		{"id":"c33","type":"text","text":"卡3-3｜暴露｜压迫感不靠咆哮\n\n配比 z6 xn5 nx4 n2\n\n📄 [[方/08_探索/第三幕/卡3-3_文章暴露_探索.md|探索卡]]","x":448,"y":-597,"width":360,"height":140,"color":"4"},
-		{"id":"c34","type":"text","text":"卡3-4｜拍板换人｜交接与逆行说清权力\n\n配比 z6 zx5 nx4 n2\n\n📄 [[方/08_探索/第三幕/卡3-4_顾祝同拍板_探索.md|探索卡]]","x":640,"y":-70,"width":360,"height":140,"color":"4"},
-		{"id":"c35","type":"text","text":"卡3-5｜交付｜无对白托付\n\n配比 nx6 zx4 n3 xz2\n\n📄 [[方/08_探索/第三幕/卡3-5_方交文稿_探索.md|探索卡]]","x":448,"y":457,"width":360,"height":140,"color":"4"},
+		{"id":"c33","type":"text","text":"卡3-3｜告发与调走｜看见＋叫嚣告状＋拍板调走\n\n配比 zx6 z5 xn4 n2\n\n📄 [[方/08_探索/第三幕/卡3-3_文章暴露_探索.md|探索卡]]","x":448,"y":-597,"width":360,"height":140,"color":"4"},
+		{"id":"c34","type":"text","text":"卡3-4｜相见与搜房｜凌方告别＋搜房扑空\n\n配比 zx5 xn5 nx4 n2\n\n📄 [[方/08_探索/第三幕/卡3-4_顾祝同拍板_探索.md|探索卡]]","x":640,"y":-70,"width":360,"height":140,"color":"4"},
+		{"id":"c35","type":"text","text":"卡3-5｜开砖传递与威胁｜开砖给胡＋窗口给程\n\n配比 nx6 zx4 n3 xz2\n\n📄 [[方/08_探索/第三幕/卡3-5_方交文稿_探索.md|探索卡]]","x":448,"y":457,"width":360,"height":140,"color":"4"},
 		{"id":"rec","type":"text","text":"🏆 推荐方案A：z6 xn5 zx5 nx4 nz2（压迫+执行+暗线托付+柔光收尾）","x":-270,"y":720,"width":540,"height":90,"color":"4"}
 	],
 	"edges":[
 		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
 		{"id":"e-hub-ratioh","fromFloating":false,"fromNode":"hub","fromSide":"bottom","toNode":"ratio-h","toSide":"top"},
-		{"id":"e-ratioh-rA","fromNode":"ratio-h","fromSide":"bottom","toNode":"rA","toSide":"top"},
+		{"id":"e-ratioh-rA","fromFloating":false,"fromNode":"ratio-h","fromSide":"bottom","toNode":"rA","toSide":"top"},
 		{"id":"e-ratioh-rB","fromNode":"ratio-h","fromSide":"bottom","toNode":"rB","toSide":"top"},
 		{"id":"e-ratioh-rC","fromNode":"ratio-h","fromSide":"bottom","toNode":"rC","toSide":"top"},
 		{"id":"e-ratioh-rD","fromNode":"ratio-h","fromSide":"top","toNode":"rD","toSide":"bottom"},
