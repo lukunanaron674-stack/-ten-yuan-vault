@@ -1,76 +1,18 @@
 {
-  "nodes": [
-    {
-      "id": "d1",
-      "type": "text",
-      "text": "# 回收\n\n崩坏后重组\n母型回归",
-      "x": -250,
-      "y": -200,
-      "width": 240,
-      "height": 180
-    },
-    {
-      "id": "d4",
-      "type": "text",
-      "text": "# 桥接\n\n母型连通\n跨域连接",
-      "x": 100,
-      "y": 100,
-      "width": 240,
-      "height": 180
-    },
-    {
-      "id": "d5",
-      "type": "text",
-      "text": "# 污染桥\n\n母型间异常\n连接不当转化",
-      "x": -80,
-      "y": 360,
-      "width": 260,
-      "height": 180
-    },
-    {
-      "id": "d6",
-      "type": "file",
-      "file": "sub-sub-母型链.canvas",
-      "subpath": "sub-sub-母型链.canvas",
-      "x": -80,
-      "y": 600,
-      "width": 260,
-      "height": 180,
-      "color": "1"
-    },
-    {
-      "id": "d3",
-      "type": "text",
-      "text": "# 扭曲\n\n形态异化\n母型变种",
-      "x": -400,
-      "y": 140,
-      "width": 240,
-      "height": 180
-    },
-    {
-      "id": "d2",
-      "type": "text",
-      "text": "# 崩坏\n\n结构失效\n母型解体",
-      "x": 220,
-      "y": -200,
-      "width": 240,
-      "height": 180
-    }
-  ],
-  "edges": [
-    {
-      "id": "ed1",
-      "fromNode": "d1",
-      "fromSide": "bottom",
-      "toNode": "d5",
-      "toSide": "top"
-    },
-    {
-      "id": "ed2",
-      "fromNode": "d2",
-      "fromSide": "bottom",
-      "toNode": "d5",
-      "toSide": "top"
-    }
-  ]
+	"nodes":[
+		{"id":"d1","type":"text","text":"# 回收\n\n崩坏后重组\n母型回归","x":-250,"y":-200,"width":240,"height":180},
+		{"id":"d4","type":"text","text":"# 桥接\n\n母型连通\n跨域连接","x":100,"y":100,"width":240,"height":180},
+		{"id":"d5","type":"text","text":"# 污染桥\n\n母型间异常\n连接不当转化","x":-80,"y":360,"width":260,"height":180},
+		{"id":"d6","type":"file","file":"sub-sub-母型链.canvas","subpath":"sub-sub-母型链.canvas","x":-80,"y":600,"width":260,"height":180,"color":"1"},
+		{"id":"d3","type":"text","text":"# 扭曲\n\n形态异化\n母型变种","x":-400,"y":140,"width":240,"height":180},
+		{"id":"d2","type":"text","text":"# 崩坏\n\n结构失效\n母型解体","x":220,"y":-200,"width":240,"height":180}
+	],
+	"edges":[
+		{"id":"ed1","fromNode":"d1","fromSide":"bottom","toNode":"d5","toSide":"top"},
+		{"id":"ed2","fromNode":"d2","fromSide":"bottom","toNode":"d5","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

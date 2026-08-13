@@ -1,67 +1,17 @@
 {
-  "nodes": [
-    {
-      "id": "a1",
-      "type": "text",
-      "x": -300,
-      "y": -200,
-      "width": 220,
-      "height": 180,
-      "text": "# zn\n\n本体-命运\n核心关系"
-    },
-    {
-      "id": "a2",
-      "type": "text",
-      "x": 100,
-      "y": -200,
-      "width": 220,
-      "height": 180,
-      "text": "# x\n\n纯存在\n无方向"
-    },
-    {
-      "id": "a3",
-      "type": "text",
-      "x": -300,
-      "y": 100,
-      "width": 220,
-      "height": 180,
-      "text": "# n\n\n纯功能\n有方向"
-    },
-    {
-      "id": "a4",
-      "type": "text",
-      "x": 100,
-      "y": 100,
-      "width": 220,
-      "height": 180,
-      "text": "# xn / nx\n\n存在+功能\n双向关系"
-    },
-    {
-      "id": "a5",
-      "type": "file",
-      "x": -100,
-      "y": 380,
-      "width": 240,
-      "height": 180,
-      "file": "sub-sub-生克表.canvas",
-      "subpath": "sub-sub-生克表.canvas",
-      "color": "5"
-    }
-  ],
-  "edges": [
-    {
-      "id": "ea1",
-      "fromNode": "a1",
-      "fromSide": "bottom",
-      "toNode": "a5",
-      "toSide": "top"
-    },
-    {
-      "id": "ea2",
-      "fromNode": "a2",
-      "fromSide": "bottom",
-      "toNode": "a5",
-      "toSide": "top"
-    }
-  ]
+	"nodes":[
+		{"id":"a1","type":"text","x":-300,"y":-200,"width":220,"height":180,"text":"# zn\n\n本体-命运\n核心关系"},
+		{"id":"a2","type":"text","x":100,"y":-200,"width":220,"height":180,"text":"# x\n\n纯存在\n无方向"},
+		{"id":"a3","type":"text","x":-300,"y":100,"width":220,"height":180,"text":"# n\n\n纯功能\n有方向"},
+		{"id":"a4","type":"text","x":100,"y":100,"width":220,"height":180,"text":"# xn / nx\n\n存在+功能\n双向关系"},
+		{"id":"a5","type":"file","x":-100,"y":380,"width":240,"height":180,"file":"sub-sub-生克表.canvas","subpath":"sub-sub-生克表.canvas","color":"5"}
+	],
+	"edges":[
+		{"id":"ea1","fromNode":"a1","fromSide":"bottom","toNode":"a5","toSide":"top"},
+		{"id":"ea2","fromNode":"a2","fromSide":"bottom","toNode":"a5","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

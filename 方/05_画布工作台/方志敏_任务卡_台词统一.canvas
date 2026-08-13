@@ -1,0 +1,301 @@
+{
+	"nodes": [
+		{
+			"id": "grp",
+			"type": "group",
+			"x": 0,
+			"y": 0,
+			"width": 9400,
+			"height": 2900,
+			"color": "2",
+			"label": "第二幕+第三幕Part1｜AI视频任务卡·台词统一（12卡）"
+		},
+		{
+			"id": "title",
+			"type": "text",
+			"text": "# AI视频任务卡·台词统一版\n\n**范围：第二幕 8 卡 + 第三幕 Part1 4 卡 = 12 卡。**\n每卡 = 一条 AI 视频（MiniMax H3，24fps）。台词以本画布为准，生成提示词与之一致。\n人物名统一：胡逸民／方志敏／凌凤梧／高家骏。",
+			"x": 80,
+			"y": 60,
+			"width": 9000,
+			"height": 200,
+			"color": "4"
+		},
+		{
+			"id": "rules",
+			"type": "text",
+			"text": "## 统一口径\n\n- 人物名：**胡逸民**（囚犯，干净囚服，左手递饼）、**方志敏**、**凌凤梧**、**高家骏**。\n- 画风：二维老上影平涂线稿，冷灰蓝牢房。\n- 嘴型只配合台词；方志敏在 2-1A/B 全程不张嘴。\n- 分辨率：2-1A 已按 1280×736(720级)；其余 1024×576，待统一。\n- 每条跑完休息 20 分钟防过热。",
+			"x": 80,
+			"y": 340,
+			"width": 1200,
+			"height": 900,
+			"color": "5"
+		},
+		{
+			"id": "c21a",
+			"type": "text",
+			"text": "### 卡2-1A｜劝降开场\n**双人中景｜124帧≈5.2s**\n首帧✅用户牢房图\n胡逸民：「他们说，只要写份声明——」\n方志敏闭口倾听\n🔴 720p已出片(1280×736)，2x锐化中",
+			"x": 1480,
+			"y": 340,
+			"width": 1080,
+			"height": 620,
+			"color": "3"
+		},
+		{
+			"id": "c21b",
+			"type": "text",
+			"text": "### 卡2-1B｜胡逸民过肩\n**左侧过肩中近景｜124帧≈5.2s**\n首帧❌T2V\n胡逸民：「家人性命、高官后路，都可谈。」\n🟢 576p已出片",
+			"x": 2610,
+			"y": 340,
+			"width": 1080,
+			"height": 620,
+			"color": "3"
+		},
+		{
+			"id": "c21c",
+			"type": "text",
+			"text": "### 卡2-1C｜方志敏近景\n**左前方中近景｜124帧≈5.2s**\n首帧❌T2V\n方志敏：「高官厚禄吗……」\n🟢 576p已出片",
+			"x": 3740,
+			"y": 340,
+			"width": 1080,
+			"height": 620,
+			"color": "3"
+		},
+		{
+			"id": "c22",
+			"type": "text",
+			"text": "### 卡2-2｜贪婪大脸\n**士兵大脸挤近｜72帧=3s**\n首帧✅夜色荒野图\n胖士兵：「这个份量的大官，身上一定有钱！」\n🟡 上次中断，待重跑",
+			"x": 4870,
+			"y": 340,
+			"width": 1080,
+			"height": 620,
+			"color": "3"
+		},
+		{
+			"id": "c23",
+			"type": "text",
+			"text": "### 卡2-3｜搜身落空\n**中近景｜48帧=2s**\n首帧✅夜色荒野图\n胖士兵：「怎么什么也没有！」\n⚪ 待跑",
+			"x": 6000,
+			"y": 340,
+			"width": 1080,
+			"height": 620,
+			"color": "3"
+		},
+		{
+			"id": "c24a",
+			"type": "text",
+			"text": "### 卡2-4A｜反问\n**双人中景｜124帧≈5.2s**\n首帧✅牢房图\n方志敏：「你我真的想争夺这高官厚禄吗？」\n⚪ 待跑",
+			"x": 7130,
+			"y": 340,
+			"width": 1080,
+			"height": 620,
+			"color": "3"
+		},
+		{
+			"id": "c24b",
+			"type": "text",
+			"text": "### 卡2-4B｜掰饼\n**中近景｜141帧≈5.9s**\n首帧🔗接上卡尾帧\n方志敏：「先吃，凉了就不好吃了。」\n⚪ 待跑",
+			"x": 8260,
+			"y": 340,
+			"width": 1080,
+			"height": 620,
+			"color": "3"
+		},
+		{
+			"id": "c24c",
+			"type": "text",
+			"text": "### 卡2-4C｜递回半块饼\n**中近景｜124帧≈5.2s**\n首帧🔗接上卡尾帧\n方志敏：「干一个。」\n⚪ 待跑",
+			"x": 9390,
+			"y": 340,
+			"width": 1080,
+			"height": 620,
+			"color": "3"
+		},
+		{
+			"id": "c31a",
+			"type": "text",
+			"text": "### 卡3-1A｜狱中围坐\n**中远景固定｜141帧≈5.9s**\n首帧✅牢房图\n低声交谈底声，不生成具体台词\n⚪ 待跑",
+			"x": 1480,
+			"y": 1180,
+			"width": 1080,
+			"height": 620,
+			"color": "1"
+		},
+		{
+			"id": "c31b",
+			"type": "text",
+			"text": "### 卡3-1B｜高家骏门外听\n**中远景｜141帧≈5.9s**\n首帧🔗接上卡尾帧\n方志敏：「最终，是让中国人活得像个中国人。」\n⚪ 待跑",
+			"x": 2610,
+			"y": 1180,
+			"width": 1080,
+			"height": 620,
+			"color": "1"
+		},
+		{
+			"id": "c32a",
+			"type": "text",
+			"text": "### 卡3-2A｜凌凤梧递报纸\n**牢门中景｜107帧≈4.5s**\n首帧❌缺图(需补)\n凌凤梧：「有些大事。」\n⚪ 待跑",
+			"x": 3740,
+			"y": 1180,
+			"width": 1080,
+			"height": 620,
+			"color": "1"
+		},
+		{
+			"id": "c32b",
+			"type": "text",
+			"text": "### 卡3-2B｜脚镣近景\n**下移近景｜107帧≈4.5s**\n首帧🔗接上卡尾帧\n无对白\n⚪ 待跑",
+			"x": 4870,
+			"y": 1180,
+			"width": 1080,
+			"height": 620,
+			"color": "1"
+		},
+		{
+			"id": "dialogue",
+			"type": "text",
+			"text": "## 统一台词表（生成唯一口径）\n| 卡 | 人物 | 台词 |\n|---|---|---|\n| 2-1A | 胡逸民 | 他们说，只要写份声明—— |\n| 2-1B | 胡逸民 | 家人性命、高官后路，都可谈。 |\n| 2-1C | 方志敏 | 高官厚禄吗…… |\n| 2-2 | 胖士兵 | 这个份量的大官，身上一定有钱！ |\n| 2-3 | 胖士兵 | 怎么什么也没有！ |\n| 2-4A | 方志敏 | 你我真的想争夺这高官厚禄吗？ |\n| 2-4B | 方志敏 | 先吃，凉了就不好吃了。 |\n| 2-4C | 方志敏 | 干一个。 |\n| 3-1A | — | 无对白（底声） |\n| 3-1B | 方志敏 | 最终，是让中国人活得像个中国人。 |\n| 3-2A | 凌凤梧 | 有些大事。 |\n| 3-2B | — | 无对白 |",
+			"x": 6040,
+			"y": 340,
+			"width": 1500,
+			"height": 1500,
+			"color": "6"
+		},
+		{
+			"id": "pending",
+			"type": "text",
+			"text": "## 待确认清单\n1. 2-2／2-3 顺序：荒野被捕→搜身 是否在牢房劝降**之前**？\n2. 3-2A 缺首帧：补图 or 生成。\n3. 其余卡是否也升 720p（每条约30分钟）。\n4. 原第二幕剧本的：高家俊女友探监、镣铐被换、严查传递——《可爱的中国》是否补卡？",
+			"x": 6040,
+			"y": 1900,
+			"width": 1500,
+			"height": 800,
+			"color": "1"
+		}
+	],
+	"edges": [
+		{
+			"id": "e0",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "c21a",
+			"fromSide": "right",
+			"toNode": "c21b",
+			"toSide": "left",
+			"color": "2",
+			"label": "劝降①"
+		},
+		{
+			"id": "e1",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "c21b",
+			"fromSide": "right",
+			"toNode": "c21c",
+			"toSide": "left",
+			"color": "2",
+			"label": "方接话"
+		},
+		{
+			"id": "e2",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "c21c",
+			"fromSide": "right",
+			"toNode": "c22",
+			"toSide": "left",
+			"color": "2",
+			"label": "硬切《清贫》"
+		},
+		{
+			"id": "e3",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "c22",
+			"fromSide": "right",
+			"toNode": "c23",
+			"toSide": "left",
+			"color": "2",
+			"label": "按住搜身"
+		},
+		{
+			"id": "e4",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "c23",
+			"fromSide": "right",
+			"toNode": "c24a",
+			"toSide": "left",
+			"color": "2",
+			"label": "滴水切回"
+		},
+		{
+			"id": "e5",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "c24a",
+			"fromSide": "right",
+			"toNode": "c24b",
+			"toSide": "left",
+			"color": "2",
+			"label": "掰饼"
+		},
+		{
+			"id": "e6",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "c24b",
+			"fromSide": "right",
+			"toNode": "c24c",
+			"toSide": "left",
+			"color": "2",
+			"label": "递回·干一个"
+		},
+		{
+			"id": "e7",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "c24c",
+			"fromSide": "right",
+			"toNode": "c31a",
+			"toSide": "left",
+			"color": "2",
+			"label": "文稿伏笔→第三幕"
+		},
+		{
+			"id": "e8",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "c31a",
+			"fromSide": "right",
+			"toNode": "c31b",
+			"toSide": "left",
+			"color": "2",
+			"label": "高家骏转头"
+		},
+		{
+			"id": "e9",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "c31b",
+			"fromSide": "right",
+			"toNode": "c32a",
+			"toSide": "left",
+			"color": "2",
+			"label": "凌凤梧到来"
+		},
+		{
+			"id": "e10",
+			"fromFloating": false,
+			"toFloating": false,
+			"fromNode": "c32a",
+			"fromSide": "right",
+			"toNode": "c32b",
+			"toSide": "left",
+			"color": "2",
+			"label": "视线落脚镣"
+		}
+	],
+	"metadata": {
+		"version": "1.0-1.0",
+		"frontmatter": {}
+	}
+}
