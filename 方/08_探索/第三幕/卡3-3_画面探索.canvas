@@ -1,190 +1,35 @@
 {
-  "nodes": [
-    {
-      "id": "title",
-      "type": "text",
-      "text": "🎬 画面探索｜卡3-3",
-      "x": -150,
-      "y": -700,
-      "width": 300,
-      "height": 50,
-      "color": "6"
-    },
-    {
-      "id": "hub",
-      "type": "text",
-      "text": "🎬 画面描述词 ×10｜卡3-3 文章暴露\n\n一句话：8s 汇报戏，怎么让「文章暴露」的压迫感出来，又不拍成咆哮拍桌？\n\n📄 [[方/08_探索/第三幕/卡3-3_文章暴露_探索.md|探索卡]]",
-      "x": -220,
-      "y": -460,
-      "width": 440,
-      "height": 150,
-      "color": "5"
-    },
-    {
-      "id": "p1",
-      "type": "text",
-      "text": "第1名｜9.5分｜配比 z6 xn5 nx4 n2｜民国军政办公室中景，冷灰褐；秦学平站桌边冷硬汇报，动作克制；高层坐桌后翻看被查获的文章，动作只到合上文件或抬眼；气氛从「例行」变「骤紧」，不咆哮不拍桌。",
-      "x": 496,
-      "y": 116,
-      "width": 360,
-      "height": 130,
-      "color": "4"
-    },
-    {
-      "id": "p2",
-      "type": "text",
-      "text": "第2名｜9.0分｜配比 zx5 z5 xn4 nx3｜双人中景略近：秦学平汇报时纸页摊开特写半秒，高层抬眼即停；桌面上文件堆得像「证据」。",
-      "x": 465,
-      "y": 307,
-      "width": 360,
-      "height": 130,
-      "color": "4"
-    },
-    {
-      "id": "p3",
-      "type": "text",
-      "text": "第3名｜8.5分｜配比 xn6 z5 x3 n3｜压迫更重：办公室更暗、窗户更小，高层手指停在文件某一行上。",
-      "x": 379,
-      "y": 494,
-      "width": 360,
-      "height": 130,
-      "color": "3"
-    },
-    {
-      "id": "p4",
-      "type": "text",
-      "text": "第4名｜8.5分｜配比 nx5 n4 z5 x3｜更静更冷：秦学平几乎平铺直叙，高层不抬头只合文件；紧张来自「没反应」。",
-      "x": 238,
-      "y": 658,
-      "width": 360,
-      "height": 130,
-      "color": "3"
-    },
-    {
-      "id": "p5",
-      "type": "text",
-      "text": "第5名｜8.0分｜配比 z6 x4 nx4 n2｜权力感更足：高层的坐姿与手放桌面的方式；秦学平站姿更直。",
-      "x": 48,
-      "y": 785,
-      "width": 360,
-      "height": 130,
-      "color": "3"
-    },
-    {
-      "id": "p6",
-      "type": "text",
-      "text": "第6名｜8.0分｜配比 zx5 xn5 nx3 z3｜动作更小：秦学平只递文件、指一处；高层扫一眼即合上。",
-      "x": -180,
-      "y": 860,
-      "width": 360,
-      "height": 130,
-      "color": "3"
-    },
-    {
-      "id": "p7",
-      "type": "text",
-      "text": "第7名｜7.5分｜配比 xn5 x5 n3 z4｜加一点冷幽默：高层合文件前停半秒看窗外，像在算代价。",
-      "x": -431,
-      "y": 872,
-      "width": 360,
-      "height": 130,
-      "color": "1"
-    },
-    {
-      "id": "p8",
-      "type": "text",
-      "text": "第8名｜7.5分｜配比 n5 z5 nx4 x3｜更疏离：两人隔桌很远，镜头固定，只有纸页翻动声。",
-      "x": -687,
-      "y": 814,
-      "width": 360,
-      "height": 130,
-      "color": "1"
-    },
-    {
-      "id": "p9",
-      "type": "text",
-      "text": "第9名｜7.0分｜配比 x4 z5 xn4 nx3｜微妙的欲望暗示：高层手指敲桌面一次，随即停住。",
-      "x": -930,
-      "y": 685,
-      "width": 360,
-      "height": 130,
-      "color": "1"
-    },
-    {
-      "id": "p10",
-      "type": "text",
-      "text": "第10名｜6.5分｜配比 xz4 z4 xn4 nx3 n2｜更漂：镜头微微晃动，秦学平汇报带一点急促，稍过。",
-      "x": -1137,
-      "y": 487,
-      "width": 360,
-      "height": 130,
-      "color": "1"
-    },
-    {
-      "id": "gen80board33",
-      "type": "file",
-      "file": "方/08_探索/第三幕/生成图/卡3-3_画面探索_80分以上六方案.png",
-      "x": 900,
-      "y": 116,
-      "width": 720,
-      "height": 405
-    }
-  ],
-  "edges": [
-    {
-      "id": "e-title-hub",
-      "fromNode": "title",
-      "toNode": "hub"
-    },
-    {
-      "id": "e-hub-p1",
-      "fromNode": "hub",
-      "toNode": "p1"
-    },
-    {
-      "id": "e-hub-p2",
-      "fromNode": "hub",
-      "toNode": "p2"
-    },
-    {
-      "id": "e-hub-p3",
-      "fromNode": "hub",
-      "toNode": "p3"
-    },
-    {
-      "id": "e-hub-p4",
-      "fromNode": "hub",
-      "toNode": "p4"
-    },
-    {
-      "id": "e-hub-p5",
-      "fromNode": "hub",
-      "toNode": "p5"
-    },
-    {
-      "id": "e-hub-p6",
-      "fromNode": "hub",
-      "toNode": "p6"
-    },
-    {
-      "id": "e-hub-p7",
-      "fromNode": "hub",
-      "toNode": "p7"
-    },
-    {
-      "id": "e-hub-p8",
-      "fromNode": "hub",
-      "toNode": "p8"
-    },
-    {
-      "id": "e-hub-p9",
-      "fromNode": "hub",
-      "toNode": "p9"
-    },
-    {
-      "id": "e-hub-p10",
-      "fromNode": "hub",
-      "toNode": "p10"
-    }
-  ]
+	"nodes":[
+		{"id":"title","type":"text","text":"🎬 画面探索｜卡3-3","x":-150,"y":-700,"width":300,"height":50,"color":"6"},
+		{"id":"hub","type":"text","text":"🎬 画面描述词 ×10｜卡3-3 文章暴露\n\n一句话：8s 汇报戏，怎么让「文章暴露」的压迫感出来，又不拍成咆哮拍桌？\n\n📄 [[方/08_探索/第三幕/卡3-3_文章暴露_探索.md|探索卡]]","x":-220,"y":-460,"width":440,"height":150,"color":"5"},
+		{"id":"p1","type":"text","text":"第1名｜9.5分｜配比 z6 xn5 nx4 n2｜民国军政办公室中景，冷灰褐；秦学平站桌边冷硬汇报，动作克制；高层坐桌后翻看被查获的文章，动作只到合上文件或抬眼；气氛从「例行」变「骤紧」，不咆哮不拍桌。","x":496,"y":116,"width":360,"height":144,"color":"4"},
+		{"id":"p2","type":"text","text":"第2名｜9.0分｜配比 zx5 z5 xn4 nx3｜双人中景略近：秦学平汇报时纸页摊开特写半秒，高层抬眼即停；桌面上文件堆得像「证据」。","x":465,"y":307,"width":360,"height":130,"color":"4"},
+		{"id":"p3","type":"text","text":"第3名｜8.5分｜配比 xn6 z5 x3 n3｜压迫更重：办公室更暗、窗户更小，高层手指停在文件某一行上。","x":379,"y":494,"width":360,"height":130,"color":"3"},
+		{"id":"p4","type":"text","text":"第4名｜8.5分｜配比 nx5 n4 z5 x3｜更静更冷：秦学平几乎平铺直叙，高层不抬头只合文件；紧张来自「没反应」。","x":238,"y":658,"width":360,"height":130,"color":"3"},
+		{"id":"p5","type":"text","text":"第5名｜8.0分｜配比 z6 x4 nx4 n2｜权力感更足：高层的坐姿与手放桌面的方式；秦学平站姿更直。","x":48,"y":785,"width":360,"height":130,"color":"3"},
+		{"id":"p6","type":"text","text":"第6名｜8.0分｜配比 zx5 xn5 nx3 z3｜动作更小：秦学平只递文件、指一处；高层扫一眼即合上。","x":-180,"y":860,"width":360,"height":130,"color":"3"},
+		{"id":"p7","type":"text","text":"第7名｜7.5分｜配比 xn5 x5 n3 z4｜加一点冷幽默：高层合文件前停半秒看窗外，像在算代价。","x":-431,"y":872,"width":360,"height":130,"color":"1"},
+		{"id":"p8","type":"text","text":"第8名｜7.5分｜配比 n5 z5 nx4 x3｜更疏离：两人隔桌很远，镜头固定，只有纸页翻动声。","x":-687,"y":814,"width":360,"height":130,"color":"1"},
+		{"id":"p9","type":"text","text":"第9名｜7.0分｜配比 x4 z5 xn4 nx3｜微妙的欲望暗示：高层手指敲桌面一次，随即停住。","x":-930,"y":685,"width":360,"height":130,"color":"1"},
+		{"id":"p10","type":"text","text":"第10名｜6.5分｜配比 xz4 z4 xn4 nx3 n2｜更漂：镜头微微晃动，秦学平汇报带一点急促，稍过。","x":-1137,"y":487,"width":360,"height":130,"color":"1"},
+		{"id":"gen80board33","type":"file","file":"方/08_探索/第三幕/生成图/卡3-3_画面探索_80分以上六方案.png","x":900,"y":116,"width":720,"height":405},
+		{"id":"genlowboard33","type":"file","file":"方/08_探索/第三幕/生成图/卡3-3_画面探索_80分以下四方案.png","x":1660,"y":116,"width":720,"height":405}
+	],
+	"edges":[
+		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
+		{"id":"e-hub-p1","fromNode":"hub","fromSide":"bottom","toNode":"p1","toSide":"top"},
+		{"id":"e-hub-p2","fromNode":"hub","fromSide":"bottom","toNode":"p2","toSide":"top"},
+		{"id":"e-hub-p3","toFloating":false,"fromNode":"hub","fromSide":"bottom","toNode":"p3","toSide":"top"},
+		{"id":"e-hub-p4","fromNode":"hub","fromSide":"bottom","toNode":"p4","toSide":"top"},
+		{"id":"e-hub-p5","fromNode":"hub","fromSide":"bottom","toNode":"p5","toSide":"top"},
+		{"id":"e-hub-p6","fromNode":"hub","fromSide":"bottom","toNode":"p6","toSide":"top"},
+		{"id":"e-hub-p7","fromNode":"hub","fromSide":"bottom","toNode":"p7","toSide":"top"},
+		{"id":"e-hub-p8","fromNode":"hub","fromSide":"bottom","toNode":"p8","toSide":"top"},
+		{"id":"e-hub-p9","fromNode":"hub","fromSide":"bottom","toNode":"p9","toSide":"top"},
+		{"id":"e-hub-p10","fromNode":"hub","fromSide":"bottom","toNode":"p10","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

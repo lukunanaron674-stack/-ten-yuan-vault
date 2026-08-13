@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"🎬 画面探索｜zn 方向｜狱中伙伴意义线（跨卡3-4/3-5）","x":-150,"y":-700,"width":460,"height":50,"color":"6"},
+		{"id":"hub","type":"text","text":"🔍 一句话探索：狱中伙伴的 zn（不可让渡的意义、托付、最终指导资格）怎么在「一次目光→交出文稿→压住文稿」里显影，无对白、不煽情？\n\n📄 [[方/08_探索/第三幕/第二部分_zn方向_狱中伙伴意义_探索.md|探索卡]]","x":-220,"y":-460,"width":440,"height":170,"color":"5"},
+		{"id":"p1","type":"text","text":"第1名｜9.5分｜配比 zn7 nx4 n3 xz2｜冷光落纸，纸像唯一发光的物；胡先看方再看纸，双手接过压进衣内；镜头停在压稿的手。","x":496,"y":116,"width":360,"height":144,"color":"4"},
+		{"id":"p2","type":"text","text":"第2名｜9.0分｜配比 zn6 zx4 nx3 x2｜托付更实：递稿手停半拍，另一只手轻轻覆上（不握手），目光交汇一次，巡查人影掠过。","x":465,"y":307,"width":360,"height":130,"color":"4"},
+		{"id":"p3","type":"text","text":"第3名｜8.5分｜配比 zn5 nx5 nz3 xz2｜意义显影：纸稿为唯一高亮，方眼神平静坚定，胡低头接稿像接住一个不能说的承诺。","x":379,"y":494,"width":360,"height":130,"color":"3"},
+		{"id":"p4","type":"text","text":"第4名｜8.5分｜配比 zn6 n4 nx3 xz2｜更静更定：动作极慢，纸从衣内到衣内的轨迹完整，脚步声由远及近又及远。","x":238,"y":658,"width":360,"height":130,"color":"3"},
+		{"id":"p5","type":"text","text":"第5名｜8.0分｜配比 zn5 zx5 nx3 x2｜接力托付：凌凤梧过牢门停半拍、一次目光、方点头；随后方把文稿递给胡逸民。","x":48,"y":785,"width":360,"height":130,"color":"3"},
+		{"id":"p6","type":"text","text":"第6名｜8.0分｜配比 zn6 nx4 nz2 xz2｜更内敛：只拍手与纸，按纸、覆手、收进衣内，最后一帧停在压稿的手。","x":-180,"y":860,"width":360,"height":130,"color":"3"},
+		{"id":"p7","type":"text","text":"第7名｜7.5分｜配比 zn7 n3 nx3 xz2｜更暗：牢房光线更冷，轮廓更分明，纸稿更显眼。","x":-431,"y":872,"width":360,"height":130,"color":"1"},
+		{"id":"p8","type":"text","text":"第8名｜7.5分｜配比 zn5 n4 nx4 xz2｜更疏离：镜头稍远，隔着草席床杂物，纸的传递路径清晰。","x":-687,"y":814,"width":360,"height":130,"color":"1"},
+		{"id":"p9","type":"text","text":"第9名｜7.0分｜配比 zn4 zx5 nx4 nz2｜微妙紧张：捏纸边略紧，接过时手微颤一下再稳住。","x":-930,"y":685,"width":360,"height":130,"color":"1"},
+		{"id":"p10","type":"text","text":"第10名｜6.5分｜配比 xz4 zn4 nx4 n3 xz2｜更漂：呼吸感镜头，交接略拖，意义感被稀释。","x":-1137,"y":487,"width":360,"height":130,"color":"1"},
+		{"id":"genboardzn","type":"file","file":"方/08_探索/第三幕/生成图/第二部分_zn方向_狱中伙伴_80分以上六方案.png","x":900,"y":116,"width":720,"height":405}
+	],
+	"edges":[
+		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
+		{"id":"e-hub-p1","fromNode":"hub","fromSide":"bottom","toNode":"p1","toSide":"top"},
+		{"id":"e-hub-p2","fromNode":"hub","fromSide":"bottom","toNode":"p2","toSide":"top"},
+		{"id":"e-hub-p3","fromNode":"hub","fromSide":"bottom","toNode":"p3","toSide":"top"},
+		{"id":"e-hub-p4","fromNode":"hub","fromSide":"bottom","toNode":"p4","toSide":"top"},
+		{"id":"e-hub-p5","fromNode":"hub","fromSide":"bottom","toNode":"p5","toSide":"top"},
+		{"id":"e-hub-p6","fromNode":"hub","fromSide":"bottom","toNode":"p6","toSide":"top"},
+		{"id":"e-hub-p7","fromNode":"hub","fromSide":"bottom","toNode":"p7","toSide":"top"},
+		{"id":"e-hub-p8","fromNode":"hub","fromSide":"bottom","toNode":"p8","toSide":"top"},
+		{"id":"e-hub-p9","fromNode":"hub","fromSide":"bottom","toNode":"p9","toSide":"top"},
+		{"id":"e-hub-p10","fromNode":"hub","fromSide":"bottom","toNode":"p10","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
