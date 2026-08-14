@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"title","type":"text","text":"🎬 画面探索｜zn 方向｜故土承载意义线（跨卡3-6/3-7）","x":-150,"y":-700,"width":480,"height":50,"color":"6"},
+		{"id":"title","type":"text","text":"🎬 画面探索｜zn 方向｜故土承载意义线（跨卡3-6/3-7）｜v1.1","x":-150,"y":-700,"width":480,"height":50,"color":"6"},
 		{"id":"hub","type":"text","text":"🔍 一句话探索：被 zx 击穿的承载（母亲／故土＝不可让渡的意义）怎么在纯黑纯红里不灭：她始终站立、护胸如抱孩子、三句呼救钉在刀上，痛而不煽情？\n\n📄 [[方/08_探索/第三幕/第三部分_zn方向_故土承载意义_探索.md|探索卡]]","x":-220,"y":-460,"width":440,"height":170,"color":"5"},
 		{"id":"p1","type":"text","text":"第1名｜9.5分｜配比 zn7 xn4 n3 xz2｜护胸如抱孩子，踉跄仍立；末帧纯红只剩护胸黑轮廓，承载被击穿意义不灭。","x":496,"y":116,"width":360,"height":144,"color":"4"},
 		{"id":"p2","type":"text","text":"第2名｜9.0分｜配比 zn6 nz3 x5 xn3｜承载更实：护胸像抱孩子，血弧后仍立半秒才倾，痛感来自不灭。","x":465,"y":307,"width":360,"height":130,"color":"4"},
@@ -12,7 +12,7 @@
 		{"id":"p8","type":"text","text":"第8名｜7.5分｜配比 zn6 xn5 n2 xz2｜压迫更大：黑影盖母亲，护胸在黑影里仍可辨。","x":-687,"y":814,"width":360,"height":130,"color":"1"},
 		{"id":"p9","type":"text","text":"第9名｜7.0分｜配比 zn4 zx5 xn4 nz2｜微妙张力：刀尖逼近时手微紧一下随即稳住。","x":-930,"y":685,"width":360,"height":130,"color":"1"},
 		{"id":"p10","type":"text","text":"第10名｜6.5分｜配比 xz4 zn4 xn4 n3 xz2｜更漂：呼吸感镜头，轮廓略晃，意义感被稀释。","x":-1137,"y":487,"width":360,"height":130,"color":"1"},
-		{"id":"genboardzn3","type":"file","file":"方/08_探索/第三幕/生成图/第三部分_zn方向_故土承载意义_图生图六方案.png","x":900,"y":116,"width":720,"height":405}
+		{"id":"genboardzn3","type":"file","file":"方/07_素材图/第三幕/卡3-7_母亲三视图.png","x":900,"y":116,"width":720,"height":405}
 	],
 	"edges":[
 		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
@@ -28,7 +28,7 @@
 		{"id":"e-hub-p10","fromNode":"hub","fromSide":"bottom","toNode":"p10","toSide":"top"}
 	],
 	"metadata":{
-		"version":"1.0-1.0",
+		"version":"1.1-2026-08-14",
 		"frontmatter":{}
 	}
 }

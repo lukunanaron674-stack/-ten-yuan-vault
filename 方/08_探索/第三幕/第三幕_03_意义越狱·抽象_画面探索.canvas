@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"🎬 画面探索×10｜第三部分 意义越狱·抽象（总方向）｜v1.0","x":-240,"y":-900,"width":500,"height":50,"color":"6"},
+		{"id":"hub","type":"text","text":"第三部分总方向｜画面×10\n\n现实断裂→四手围纸→红潮击穿→中国母亲／胖瘦日本鬼举刀\n\n📄 [[方/08_探索/第三幕/第三幕_03_意义越狱·抽象_总方向探索.md|完整描述词×10与评分]]","x":-260,"y":-650,"width":520,"height":170,"color":"5"},
+		{"id":"p1","type":"text","text":"第1名｜9.7｜zx6 n5 xn4 xz3\n\n白纸承载→红潮击穿→6/5/4头身母亲与胖瘦鬼，因果最完整。","x":500,"y":-560,"width":380,"height":130,"color":"4"},
+		{"id":"p2","type":"text","text":"第2名｜9.3｜zx7 x5 n4 xn3\n\n四受压点爆红，手的对角线延续成双刀影，显权最强。","x":760,"y":-210,"width":380,"height":130,"color":"3"},
+		{"id":"p3","type":"text","text":"第3名｜9.1｜zx5 n6 nz4 xn3\n\n纸上护胸折痕化为母亲护胸，纯红中保留意义黑影。","x":710,"y":190,"width":380,"height":130,"color":"3"},
+		{"id":"p4","type":"text","text":"第4名｜8.9｜zx6 n5 nx4 xz4\n\n红潮绕纸变地面，母亲从潮线站起，胖瘦鬼两侧进入。","x":470,"y":540,"width":380,"height":130,"color":"3"},
+		{"id":"p5","type":"text","text":"第5名｜8.7｜zx6 xn5 n4 x3\n\n三幅固定构图分别钉住“恶魔／你敢割／救救母亲”。","x":80,"y":760,"width":380,"height":130,"color":"3"},
+		{"id":"p6","type":"text","text":"第6名｜8.5｜n6 zx5 nz4 xz2\n\n母亲中央最高，胖鬼次高宽厚，瘦鬼最矮精瘦。","x":-360,"y":760,"width":380,"height":130,"color":"3"},
+		{"id":"p7","type":"text","text":"第7名｜8.2｜zx7 xn4 x4 n3\n\n胖鬼负责压，瘦鬼负责割，一压一割的权力分工。","x":-740,"y":540,"width":380,"height":130,"color":"3"},
+		{"id":"p8","type":"text","text":"第8名｜7.9｜zx5 n5 xn4 nz3\n\n伤害只用黑红几何裂口与血弧，人物不做嘴型。","x":-940,"y":170,"width":380,"height":130,"color":"3"},
+		{"id":"p9","type":"text","text":"第9名｜7.5｜xz5 zx5 n4 xn3\n\n纸轻漂后骤停，母亲长发衣摆同向倾斜，坠入感强。","x":-880,"y":-240,"width":380,"height":130,"color":"2"},
+		{"id":"p10","type":"text","text":"第10名｜6.9｜x7 zx6 xn4 n2\n\n胖块、瘦线、母亲长竖形三种几何，辨识风险最高。","x":-750,"y":-820,"width":380,"height":130,"color":"1"},
+		{"id":"ref1","type":"file","file":"方/07_素材图/第三幕/卡3-7_三人动态_六格景别.png","x":1180,"y":300,"width":720,"height":405},
+		{"id":"ref2","type":"file","file":"方/07_素材图/第三幕/卡3-7_母亲三视图.png","x":-1700,"y":300,"width":720,"height":405}
+	],
+	"edges":[
+		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
+		{"id":"e-hub-p1","fromNode":"hub","fromSide":"right","toNode":"p1","toSide":"left"},
+		{"id":"e-hub-p2","fromNode":"hub","fromSide":"right","toNode":"p2","toSide":"left"},
+		{"id":"e-hub-p3","fromNode":"hub","fromSide":"right","toNode":"p3","toSide":"left"},
+		{"id":"e-hub-p4","fromNode":"hub","fromSide":"bottom","toNode":"p4","toSide":"top"},
+		{"id":"e-hub-p5","fromNode":"hub","fromSide":"bottom","toNode":"p5","toSide":"top"},
+		{"id":"e-hub-p6","fromNode":"hub","fromSide":"bottom","toNode":"p6","toSide":"top"},
+		{"id":"e-hub-p7","fromNode":"hub","fromSide":"left","toNode":"p7","toSide":"right"},
+		{"id":"e-hub-p8","fromNode":"hub","fromSide":"left","toNode":"p8","toSide":"right"},
+		{"id":"e-hub-p9","fromNode":"hub","fromSide":"left","toNode":"p9","toSide":"right"},
+		{"id":"e-hub-p10","fromNode":"hub","fromSide":"top","toNode":"p10","toSide":"bottom"},
+		{"id":"e-p3-ref1","fromNode":"p3","fromSide":"right","toNode":"ref1","toSide":"left"},
+		{"id":"e-p8-ref2","fromNode":"p8","fromSide":"left","toNode":"ref2","toSide":"right"}
+	],
+	"metadata":{"version":"1.0-2026-08-14","frontmatter":{}}
+}

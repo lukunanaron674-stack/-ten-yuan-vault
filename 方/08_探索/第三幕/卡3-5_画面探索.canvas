@@ -1,35 +1,227 @@
 {
-	"nodes":[
-		{"id":"title","type":"text","text":"🎬 画面探索｜卡3-5","x":-150,"y":-700,"width":300,"height":50,"color":"6"},
-		{"id":"hub","type":"text","text":"🎬 画面描述词 ×10｜卡3-5 方交文稿\n\n一句话：10s 无对白交接，怎么让「托付」在搜查逼近里成立，不握手不煽情？\n\n📄 [[方/08_探索/第三幕/卡3-5_方交文稿_探索.md|探索卡]]","x":-220,"y":-460,"width":440,"height":150,"color":"5"},
-		{"id":"p1","type":"text","text":"第1名｜9.5分｜配比 nx6 zx4 n3 xz2｜冷灰蓝牢房双人中近景，铁栏外远处有人巡查；方先向门外看一眼，再从衣内/草席夹层取出折好的文稿，看纸、看胡，缓慢递出；胡先看方，双手接过，迅速折好藏进衣内；镜头最后停在胡压住文稿的手。无对白，不握手不拥抱。","x":496,"y":116,"width":360,"height":130,"color":"4"},
-		{"id":"p2","type":"text","text":"第2名｜9.0分｜配比 zx5 nx5 n3 nz2｜节奏更紧：搜查声渐近，方取稿动作更短促；胡接稿后压手动作更明显。","x":465,"y":307,"width":360,"height":130,"color":"4"},
-		{"id":"p3","type":"text","text":"第3名｜8.5分｜配比 n4 nx4 zx4 xz3｜更稳：两人动作都很慢很定，像办一件早想好的事；铁栏外巡查只闪过一次。","x":379,"y":494,"width":360,"height":130,"color":"3"},
-		{"id":"p4","type":"text","text":"第4名｜8.5分｜配比 xn5 nx5 x3 nz2｜压迫更重：门外脚步声更近，方递稿时手略停一次；胡接得快。","x":238,"y":658,"width":360,"height":130,"color":"3"},
-		{"id":"p5","type":"text","text":"第5名｜8.0分｜配比 nx5 nz3 zx3 x2｜给「托付」多一点温度：方看胡的眼神多停半秒，胡点头幅度极小。","x":48,"y":785,"width":360,"height":130,"color":"3"},
-		{"id":"p6","type":"text","text":"第6名｜8.0分｜配比 zx4 nx5 n4 xz2｜更克制：取稿、递出、接过、藏好四拍干净，镜头固定。","x":-180,"y":860,"width":360,"height":130,"color":"3"},
-		{"id":"p7","type":"text","text":"第7名｜7.5分｜配比 nx6 n3 zx3 x3｜更暗：牢房光线更冷，两人轮廓更分明，纸稿更显眼。","x":-431,"y":872,"width":360,"height":130,"color":"1"},
-		{"id":"p8","type":"text","text":"第8名｜7.5分｜配比 n5 nx4 xz3 zx3｜更疏离：镜头稍远，两人之间隔着草席床的杂物。","x":-687,"y":814,"width":360,"height":130,"color":"1"},
-		{"id":"p9","type":"text","text":"第9名｜7.0分｜配比 x4 nx5 n3 zx3｜微妙的紧张：方递稿时手指捏纸边略紧，胡接过时手微颤一下。","x":-930,"y":685,"width":360,"height":130,"color":"1"},
-		{"id":"p10","type":"text","text":"第10名｜6.5分｜配比 xz4 nx4 n3 zx3 x2｜更漂：镜头有轻微呼吸感，交接略拖，压迫感被稀释。","x":-1137,"y":487,"width":360,"height":130,"color":"1"},
-		{"id":"gen80board35","type":"file","file":"方/08_探索/第三幕/生成图/卡3-5_画面探索_80分以上六方案.png","x":900,"y":116,"width":720,"height":405},
-		{"id":"genlowboard35","type":"file","file":"方/08_探索/第三幕/生成图/卡3-5_画面探索_80分以下四方案.png","x":1660,"y":116,"width":720,"height":405}
-	],
-	"edges":[
-		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
-		{"id":"e-hub-p1","fromNode":"hub","fromSide":"bottom","toNode":"p1","toSide":"top"},
-		{"id":"e-hub-p2","fromNode":"hub","fromSide":"bottom","toNode":"p2","toSide":"top"},
-		{"id":"e-hub-p3","fromNode":"hub","fromSide":"bottom","toNode":"p3","toSide":"top"},
-		{"id":"e-hub-p4","fromNode":"hub","fromSide":"bottom","toNode":"p4","toSide":"top"},
-		{"id":"e-hub-p5","fromNode":"hub","fromSide":"bottom","toNode":"p5","toSide":"top"},
-		{"id":"e-hub-p6","fromNode":"hub","fromSide":"bottom","toNode":"p6","toSide":"top"},
-		{"id":"e-hub-p7","fromNode":"hub","fromSide":"bottom","toNode":"p7","toSide":"top"},
-		{"id":"e-hub-p8","fromNode":"hub","fromSide":"bottom","toNode":"p8","toSide":"top"},
-		{"id":"e-hub-p9","fromNode":"hub","fromSide":"bottom","toNode":"p9","toSide":"top"},
-		{"id":"e-hub-p10","fromNode":"hub","fromSide":"bottom","toNode":"p10","toSide":"top"}
-	],
-	"metadata":{
-		"version":"1.0-1.0",
-		"frontmatter":{}
-	}
+    "nodes":  [
+                  {
+                      "id":  "title",
+                      "type":  "text",
+                      "text":  "🎬 画面探索｜卡3-5｜v1.1",
+                      "x":  -150,
+                      "y":  -700,
+                      "width":  300,
+                      "height":  50,
+                      "color":  "6"
+                  },
+                  {
+                      "id":  "hub",
+                      "type":  "text",
+                      "text":  "🎬 画面描述词 ×10｜卡3-5 开砖传递与威胁\n\n一句话：方给胡→胖凶瘦→胡给程→瘦凶手下。\n\n📄 [[方/08_探索/第三幕/卡3-5_方交文稿_探索.md|完整×10与评分]]",
+                      "x":  -220,
+                      "y":  -460,
+                      "width":  440,
+                      "height":  150,
+                      "color":  "5"
+                  },
+                  {
+                      "id":  "p1",
+                      "type":  "text",
+                      "text":  "第1名｜9.7｜nx6 zx5 xn4 n3｜四段硬切；交接手位清楚；威胁不殴打。",
+                      "x":  496,
+                      "y":  116,
+                      "width":  360,
+                      "height":  130,
+                      "color":  "4"
+                  },
+                  {
+                      "id":  "p2",
+                      "type":  "text",
+                      "text":  "第2名｜9.3｜zx6 xn5 nx4 x3｜压迫向下、文稿向外，运动方向相反。",
+                      "x":  465,
+                      "y":  307,
+                      "width":  360,
+                      "height":  130,
+                      "color":  "4"
+                  },
+                  {
+                      "id":  "p3",
+                      "type":  "text",
+                      "text":  "第3名｜9.0｜nx6 nz4 n4 xn3｜方看胡、胡压胸；窗口只拍四手。",
+                      "x":  379,
+                      "y":  494,
+                      "width":  360,
+                      "height":  130,
+                      "color":  "3"
+                  },
+                  {
+                      "id":  "p4",
+                      "type":  "text",
+                      "text":  "第4名｜8.8｜xn5 nx5 zx4 xz3｜脚步逼近开砖，离开时窗口交稿。",
+                      "x":  238,
+                      "y":  658,
+                      "width":  360,
+                      "height":  130,
+                      "color":  "3"
+                  },
+                  {
+                      "id":  "p5",
+                      "type":  "text",
+                      "text":  "第5名｜8.5｜zx5 nx5 xn4 z3｜瘦兵复制胖兵姿态训手下。",
+                      "x":  48,
+                      "y":  785,
+                      "width":  360,
+                      "height":  130,
+                      "color":  "3"
+                  },
+                  {
+                      "id":  "p6",
+                      "type":  "text",
+                      "text":  "第6名｜8.3｜nx7 n3 xn3 xz2｜移砖手、接稿手、抓领手、窗口手、指令手。",
+                      "x":  -180,
+                      "y":  860,
+                      "width":  360,
+                      "height":  130,
+                      "color":  "3"
+                  },
+                  {
+                      "id":  "p7",
+                      "type":  "text",
+                      "text":  "第7名｜8.0｜n5 nx5 nz4 xn2｜方胡慢、胡程快，迁怒各半秒。",
+                      "x":  -431,
+                      "y":  872,
+                      "width":  360,
+                      "height":  130,
+                      "color":  "1"
+                  },
+                  {
+                      "id":  "p8",
+                      "type":  "text",
+                      "text":  "第8名｜7.7｜zx6 xn5 x4 nx3｜胖压瘦、瘦学胖，喜感较强。",
+                      "x":  -687,
+                      "y":  814,
+                      "width":  360,
+                      "height":  130,
+                      "color":  "1"
+                  },
+                  {
+                      "id":  "p9",
+                      "type":  "text",
+                      "text":  "第9名｜7.3｜xz4 nx5 xn4 n3｜窗外夜风吹纸角，迁怒只作画外声。",
+                      "x":  -930,
+                      "y":  685,
+                      "width":  360,
+                      "height":  130,
+                      "color":  "1"
+                  },
+                  {
+                      "id":  "p10",
+                      "type":  "text",
+                      "text":  "第10名｜6.9｜x5 zx5 xn4 nx3｜快速推近甩切，糊脸风险高。",
+                      "x":  -1137,
+                      "y":  487,
+                      "width":  360,
+                      "height":  130,
+                      "color":  "1"
+                  },
+                  {
+                      "id":  "gen80board35",
+                      "type":  "file",
+                      "file":  "方/07_素材图/第二幕/牢房双人图.png",
+                      "x":  900,
+                      "y":  116,
+                      "width":  720,
+                      "height":  405
+                  },
+                  {
+                      "id":  "genlowboard35",
+                      "type":  "file",
+                      "file":  "方/07_素材图/第三幕/卡3-4_搜房.png",
+                      "x":  1660,
+                      "y":  116,
+                      "width":  720,
+                      "height":  405
+                  }
+              ],
+    "edges":  [
+                  {
+                      "id":  "e-title-hub",
+                      "fromNode":  "title",
+                      "fromSide":  "bottom",
+                      "toNode":  "hub",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-p1",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "p1",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-p2",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "p2",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-p3",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "p3",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-p4",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "p4",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-p5",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "p5",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-p6",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "p6",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-p7",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "p7",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-p8",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "p8",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-p9",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "p9",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-p10",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "p10",
+                      "toSide":  "top"
+                  }
+              ],
+    "metadata":  {
+                     "version":  "1.1-2026-08-14",
+                     "frontmatter":  {
+
+                                     }
+                 }
 }

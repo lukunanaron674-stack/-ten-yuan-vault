@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"🔍 一句话·十元探索｜卡3-7","x":-170,"y":-560,"width":340,"height":50,"color":"6"},
+		{"id":"hub","type":"text","text":"卡3-7｜四手→母亲／国土→日本恶魔举刀\n\n一句话探索：14s 纯黑纯红抽象段，怎么让「母亲被两个小恶魔肢解」明确可见、暴烈，又不掉进写实血腥？\n\n📄 [[方/08_探索/第三幕/卡3-7_母亲恶魔_探索.md|探索卡]]","x":-230,"y":-330,"width":460,"height":150,"color":"5"},
+		{"id":"ratio_A","type":"text","text":"方案A｜xn7 x6 nz3 zx2\n\n压迫+毁灭为主，母亲柔情打底","x":640,"y":80,"width":360,"height":120,"color":"3"},
+		{"id":"ratio_B","type":"text","text":"方案B｜x8 xn6 nz2 zx1\n\n毁灭最重，最抽象","x":280,"y":400,"width":360,"height":120,"color":"3"},
+		{"id":"ratio_C","type":"text","text":"方案C｜xn5 zx5 x4 nz2\n\n压迫+执行，恶魔动作利落","x":-476,"y":574,"width":360,"height":120,"color":"3"},
+		{"id":"ratio_D","type":"text","text":"方案D｜xz5 xn5 x4 nz3\n\n漂流+压迫+柔情，母亲「被拖入」","x":-814,"y":236,"width":360,"height":120,"color":"3"},
+		{"id":"rec","type":"text","text":"🏆 推荐 #1（xn7 x6 nz3 zx2）","x":-180,"y":660,"width":360,"height":80,"color":"4"}
+	],
+	"edges":[
+		{"id":"e-title-hub","fromNode":"title","toNode":"hub","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-ratio_A","fromNode":"hub","toNode":"ratio_A","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-ratio_B","fromNode":"hub","toNode":"ratio_B","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-ratio_C","fromNode":"hub","toNode":"ratio_C","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-ratio_D","fromNode":"hub","toNode":"ratio_D","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-rec","fromNode":"hub","toNode":"rec","fromSide":"bottom","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

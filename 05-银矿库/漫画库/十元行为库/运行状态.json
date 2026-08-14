@@ -1,74 +1,74 @@
 {
-    "schema_version":  "1.1",
-    "phase":  "single_behavior",
-    "run_status":  "READY",
-    "run_id":  "MANGA-BEHAVIOR-20260813-0700-N-Z-MINING",
-    "source_main":  "b42bfe9b1dc848fd2ee6e3b9cfc20c564f9a0cb3",
-    "classification_base":  "数据/单行为记录.jsonl",
-    "classification_overlay":  "数据/单行为归类修正清单_v1.1.jsonl",
-    "overlay_rule":  "read base record then replace listed fields by record_id; overlay has current classification authority",
-    "target_symbol":  "x",
-    "selection_rule":  "x阴水采矿（掌握对象/资源类）：Veidt商业系统、藤本开店2条；同时补阳火zn：五郎选店1条",
-    "last_character":  "望月廉斗 / 黒田康弘 / 夢路朗",
-    "last_work":  "しねしね生徒会長 / ロストステラの滞在者たち / パラレルリープ・シンドローム",
-    "last_stage":  "n采矿：望月廉斗4条（95/96/94/94）、黒田康弘2条（89/88）候选；z采矿：望月说出讨厌94、夢路求婚96候选",
-    "last_record_count":  8,
-    "corrected_record_count":  8,
-    "counts":  {
-                   "zx":  {
-                              "works":  4,
-                              "evidence_locked":  3,
-                              "candidate":  3
-                          },
-                   "z":  {
-                             "works":  5,
-                             "evidence_locked":  3,
-                             "candidate":  7
-                         },
-                   "zn":  {
-                              "works":  2,
-                              "evidence_locked":  1,
-                              "candidate":  2
-                          },
-                   "nz":  {
-                              "works":  2,
-                              "evidence_locked":  1,
-                              "candidate":  3
-                          },
-                   "n":  {
-                             "works":  5,
-                             "evidence_locked":  1,
-                             "candidate":  10
-                         },
-                   "nx":  {
-                              "works":  5,
-                              "evidence_locked":  3,
-                              "candidate":  6
-                          },
-                   "xn":  {
-                              "works":  5,
-                              "evidence_locked":  7,
-                              "candidate":  3
-                          },
-                   "x":  {
-                             "works":  3,
-                             "evidence_locked":  1,
-                             "candidate":  2
-                         },
-                   "xz":  {
-                              "works":  3,
-                              "evidence_locked":  3,
-                              "candidate":  3
-                          },
-                   "x并z":  {
-                               "works":  5,
-                               "evidence_locked":  0,
-                               "candidate":  7
-                           }
-               },
-    "next_target_symbol":  "x并z",
-    "next_candidate":  "x并z阴木7候选0 locked（Ozymandias95x2、藤本90、未衣87、山田92、阳菜96、りんたろう88）；首条locked需呈现界面类出版社公开强证据或原书页码；n已10候选（望月4/黒田2/千早/雫/五郎×2）可补locked；z已7候选；nz已3候选、x已2候选、zn已2候选可继续补",
-    "pending_issue_count":  0,
-    "lease":  null,
-    "updated":  "2026-08-13T07:00+08:00"
+ "schema_version": "1.1",
+ "phase": "single_behavior",
+ "run_status": "READY",
+ "run_id": "MANGA-BEHAVIOR-20260814-1410-BR-MAUS-XBINGZ-MINING",
+ "source_main": "0010adf8244feabb34dfab5e37686c055c9b8fa9",
+ "classification_base": "数据/单行为记录.jsonl",
+ "classification_overlay": "数据/单行为归类修正清单_v1.1.jsonl",
+ "overlay_rule": "read base record then replace listed fields by record_id; overlay has current classification authority",
+ "target_symbol": "zx(+zn+n+x并z)",
+ "selection_rule": "采矿：刀马（镖人）zx4+zn3+n1；MAUS Art两条zn成功门复核保留；阳菜KATAGIRI-001 candidate→evidence-locked（x并z首条locked）。依据第四十六/五十七批穷举报告与讲谈社官方页现场核验落库；刀马3条zn按8-02修正案逐条复核保留（他者保留+主动行为+未吸收，区别于第六十二批五人）。",
+ "last_character": "刀马（镖人）/ Art Spiegelman（Maus，zn复核）/ 片桐阳菜（泪雨与小夜曲，x并z locked）",
+ "last_work": "镖人 / Maus / 泪雨与小夜曲",
+ "last_stage": "zx采矿4条（94/97/97/96）；zn采矿3条（96/95/96，8-02逐条复核保留）；n采矿1条（93）；MAUS Art两条zn成功门第2—4条复核保留；阳菜KATAGIRI-001 candidate→evidence-locked 96（库内首条x并z阴木locked，讲谈社官方页替身壳强证据）",
+ "last_record_count": 8,
+ "corrected_record_count": 9,
+ "counts": {
+  "zx": {
+   "works": 13,
+   "evidence_locked": 3,
+   "candidate": 22
+  },
+  "z": {
+   "works": 17,
+   "evidence_locked": 3,
+   "candidate": 37
+  },
+  "zn": {
+   "works": 4,
+   "evidence_locked": 1,
+   "candidate": 7
+  },
+  "nz": {
+   "works": 4,
+   "evidence_locked": 1,
+   "candidate": 5
+  },
+  "n": {
+   "works": 12,
+   "evidence_locked": 1,
+   "candidate": 26
+  },
+  "nx": {
+   "works": 16,
+   "evidence_locked": 3,
+   "candidate": 28
+  },
+  "xn": {
+   "works": 17,
+   "evidence_locked": 7,
+   "candidate": 37
+  },
+  "x": {
+   "works": 6,
+   "evidence_locked": 1,
+   "candidate": 9
+  },
+  "xz": {
+   "works": 4,
+   "evidence_locked": 3,
+   "candidate": 4
+  },
+  "x并z": {
+   "works": 6,
+   "evidence_locked": 1,
+   "candidate": 7
+  }
+ },
+ "next_target_symbol": "x并z（补第二/第三locked）或z/xn/nx/zx各元补locked",
+ "next_candidate": "x并z已补首条locked（阳菜KATAGIRI-001=96，讲谈社官方页强证据），可继续补第二/第三locked（Vladek冒充非犹太人97候选）；z已37候选3locked、n已26候选1locked、xn已37候选7locked、nx已28候选3locked、x已9候选1locked、zx已22候选3locked、xz已4候选3locked、zn已7候选1locked、nz已5候选1locked可继续补候选或各元第二/第三locked；MAUS Art两条zn复核已闭环；芙莉莲FR预审转正遗留项保留。",
+ "pending_issue_count": 0,
+ "lease": null,
+ "updated": "2026-08-14T14:10+08:00"
 }
