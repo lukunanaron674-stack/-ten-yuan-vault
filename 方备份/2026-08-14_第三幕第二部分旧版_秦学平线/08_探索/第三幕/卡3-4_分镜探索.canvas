@@ -1,181 +1,33 @@
 {
-  "nodes": [
-    {
-      "id": "title",
-      "type": "text",
-      "text": "⏱ 分镜探索｜卡3-4",
-      "x": -150,
-      "y": -700,
-      "width": 300,
-      "height": 50,
-      "color": "6"
-    },
-    {
-      "id": "hub",
-      "type": "text",
-      "text": "⏱ 分镜描述 ×10｜卡3-4 顾祝同拍板\n\n一句话：6s 两段短镜，怎么用「交接与逆行」把权力更换说清楚，不煽情？\n\n📄 [[方/08_探索/第三幕/卡3-4_顾祝同拍板_探索.md|探索卡]]",
-      "x": -220,
-      "y": -460,
-      "width": 440,
-      "height": 150,
-      "color": "5"
-    },
-    {
-      "id": "t1",
-      "type": "text",
-      "text": "第1名｜9.0分｜配比 z6 zx5 nx4 n2｜0-2s 顾祝同合文件抬眼；2-4s 切走廊，凌交钥匙、强硬派逆向进入；4-6s 凌经方牢门停半拍、一次目光，方轻微点头。",
-      "x": 496,
-      "y": 116,
-      "width": 360,
-      "height": 130,
-      "color": "4"
-    },
-    {
-      "id": "t2",
-      "type": "text",
-      "text": "第2名｜8.5分｜配比 zx6 z5 nx3 nz2｜0-2s 合文件；2-3.5s 钥匙特写交接；3.5-6s 一进一出交叉+目光。",
-      "x": 465,
-      "y": 307,
-      "width": 360,
-      "height": 130,
-      "color": "3"
-    },
-    {
-      "id": "t3",
-      "type": "text",
-      "text": "第3名｜8.0分｜配比 nx5 n5 z4 xz3｜0-2s 合文件；2-4s 平静交钥匙；4-6s 目光交流。",
-      "x": 379,
-      "y": 494,
-      "width": 360,
-      "height": 130,
-      "color": "3"
-    },
-    {
-      "id": "t4",
-      "type": "text",
-      "text": "第4名｜8.0分｜配比 z5 x4 nx4 n3｜0-2s 拍板（纸页轻响）；2-4s 交钥匙；4-6s 目光。",
-      "x": 238,
-      "y": 658,
-      "width": 360,
-      "height": 130,
-      "color": "3"
-    },
-    {
-      "id": "t5",
-      "type": "text",
-      "text": "第5名｜7.5分｜配比 zx5 nx4 n4 z3｜0-2s 合文件；2-4s 交钥匙；4-6s 凌停半拍+方点头。",
-      "x": 48,
-      "y": 785,
-      "width": 360,
-      "height": 130,
-      "color": "1"
-    },
-    {
-      "id": "t6",
-      "type": "text",
-      "text": "第6名｜7.5分｜配比 n5 z5 nx3 xz3｜0-2s 合文件；2-4.5s 长走廊回声；4.5-6s 隔着铁栏的目光。",
-      "x": -180,
-      "y": 860,
-      "width": 360,
-      "height": 130,
-      "color": "1"
-    },
-    {
-      "id": "t7",
-      "type": "text",
-      "text": "第7名｜7.0分｜配比 z6 nx5 n3 xz2｜0-2s 合文件；2-4s 钥匙尖响；4-6s 强硬派目不斜视。",
-      "x": -431,
-      "y": 872,
-      "width": 360,
-      "height": 130,
-      "color": "1"
-    },
-    {
-      "id": "t8",
-      "type": "text",
-      "text": "第8名｜7.0分｜配比 zx4 nx5 n4 z3｜0-3s 公文流程式交接；3-6s 无情绪目光。",
-      "x": -687,
-      "y": 814,
-      "width": 360,
-      "height": 130,
-      "color": "1"
-    },
-    {
-      "id": "t9",
-      "type": "text",
-      "text": "第9名｜6.5分｜配比 x4 z5 nx4 n3｜0-2s 合文件；2-4s 接钥匙前看办公室方向；4-6s 目光。",
-      "x": -930,
-      "y": 685,
-      "width": 360,
-      "height": 130,
-      "color": "1"
-    },
-    {
-      "id": "t10",
-      "type": "text",
-      "text": "第10名｜6.0分｜配比 xz4 z4 nx4 n3 n2｜0-2s 合文件；2-4.5s 交钥匙略拖沓；4.5-6s 落黑前目光。",
-      "x": -1137,
-      "y": 487,
-      "width": 360,
-      "height": 130,
-      "color": "1"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e-title-hub",
-      "fromNode": "title",
-      "toNode": "hub"
-    },
-    {
-      "id": "e-hub-t1",
-      "fromNode": "hub",
-      "toNode": "t1"
-    },
-    {
-      "id": "e-hub-t2",
-      "fromNode": "hub",
-      "toNode": "t2"
-    },
-    {
-      "id": "e-hub-t3",
-      "fromNode": "hub",
-      "toNode": "t3"
-    },
-    {
-      "id": "e-hub-t4",
-      "fromNode": "hub",
-      "toNode": "t4"
-    },
-    {
-      "id": "e-hub-t5",
-      "fromNode": "hub",
-      "toNode": "t5"
-    },
-    {
-      "id": "e-hub-t6",
-      "fromNode": "hub",
-      "toNode": "t6"
-    },
-    {
-      "id": "e-hub-t7",
-      "fromNode": "hub",
-      "toNode": "t7"
-    },
-    {
-      "id": "e-hub-t8",
-      "fromNode": "hub",
-      "toNode": "t8"
-    },
-    {
-      "id": "e-hub-t9",
-      "fromNode": "hub",
-      "toNode": "t9"
-    },
-    {
-      "id": "e-hub-t10",
-      "fromNode": "hub",
-      "toNode": "t10"
-    }
-  ]
+	"nodes":[
+		{"id":"title","type":"text","text":"⏱ 分镜探索｜卡3-4","x":-150,"y":-700,"width":300,"height":50,"color":"6"},
+		{"id":"hub","type":"text","text":"⏱ 分镜描述 ×10｜卡3-4 顾祝同拍板\n\n一句话：6s 两段短镜，怎么用「交接与逆行」把权力更换说清楚，不煽情？\n\n📄 [[方/08_探索/第三幕/卡3-4_顾祝同拍板_探索.md|探索卡]]","x":-220,"y":-460,"width":440,"height":150,"color":"5"},
+		{"id":"t1","type":"text","text":"第1名｜9.0分｜配比 z6 zx5 nx4 n2｜0-2s 顾祝同合文件抬眼；2-4s 切走廊，凌交钥匙、强硬派逆向进入；4-6s 凌经方牢门停半拍、一次目光，方轻微点头。","x":496,"y":116,"width":360,"height":130,"color":"4"},
+		{"id":"t2","type":"text","text":"第2名｜8.5分｜配比 zx6 z5 nx3 nz2｜0-2s 合文件；2-3.5s 钥匙特写交接；3.5-6s 一进一出交叉+目光。","x":465,"y":307,"width":360,"height":130,"color":"3"},
+		{"id":"t3","type":"text","text":"第3名｜8.0分｜配比 nx5 n5 z4 xz3｜0-2s 合文件；2-4s 平静交钥匙；4-6s 目光交流。","x":379,"y":494,"width":360,"height":130,"color":"3"},
+		{"id":"t4","type":"text","text":"第4名｜8.0分｜配比 z5 x4 nx4 n3｜0-2s 拍板（纸页轻响）；2-4s 交钥匙；4-6s 目光。","x":238,"y":658,"width":360,"height":130,"color":"3"},
+		{"id":"t5","type":"text","text":"第5名｜7.5分｜配比 zx5 nx4 n4 z3｜0-2s 合文件；2-4s 交钥匙；4-6s 凌停半拍+方点头。","x":48,"y":785,"width":360,"height":130,"color":"1"},
+		{"id":"t6","type":"text","text":"第6名｜7.5分｜配比 n5 z5 nx3 xz3｜0-2s 合文件；2-4.5s 长走廊回声；4.5-6s 隔着铁栏的目光。","x":-180,"y":860,"width":360,"height":130,"color":"1"},
+		{"id":"t7","type":"text","text":"第7名｜7.0分｜配比 z6 nx5 n3 xz2｜0-2s 合文件；2-4s 钥匙尖响；4-6s 强硬派目不斜视。","x":-431,"y":872,"width":360,"height":130,"color":"1"},
+		{"id":"t8","type":"text","text":"第8名｜7.0分｜配比 zx4 nx5 n4 z3｜0-3s 公文流程式交接；3-6s 无情绪目光。","x":-687,"y":814,"width":360,"height":130,"color":"1"},
+		{"id":"t9","type":"text","text":"第9名｜6.5分｜配比 x4 z5 nx4 n3｜0-2s 合文件；2-4s 接钥匙前看办公室方向；4-6s 目光。","x":-930,"y":685,"width":360,"height":130,"color":"1"},
+		{"id":"t10","type":"text","text":"第10名｜6.0分｜配比 xz4 z4 nx4 n3 n2｜0-2s 合文件；2-4.5s 交钥匙略拖沓；4.5-6s 落黑前目光。","x":-1137,"y":487,"width":360,"height":130,"color":"1"}
+	],
+	"edges":[
+		{"id":"e-title-hub","fromNode":"title","toNode":"hub","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-t1","fromNode":"hub","toNode":"t1","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-t2","fromNode":"hub","toNode":"t2","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-t3","fromNode":"hub","toNode":"t3","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-t4","fromNode":"hub","toNode":"t4","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-t5","fromNode":"hub","toNode":"t5","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-t6","fromNode":"hub","toNode":"t6","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-t7","fromNode":"hub","toNode":"t7","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-t8","fromNode":"hub","toNode":"t8","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-t9","fromNode":"hub","toNode":"t9","fromSide":"bottom","toSide":"top"},
+		{"id":"e-hub-t10","fromNode":"hub","toNode":"t10","fromSide":"bottom","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
