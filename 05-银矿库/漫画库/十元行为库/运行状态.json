@@ -2,33 +2,33 @@
  "schema_version": "1.1",
  "phase": "single_behavior",
  "run_status": "READY",
- "run_id": "MANGA-BEHAVIOR-20260814-1410-BR-MAUS-XBINGZ-MINING",
+ "run_id": "MANGA-BEHAVIOR-20260814-1810-KU-TAKOPI-DANDADAN-MINING",
  "source_main": "0010adf8244feabb34dfab5e37686c055c9b8fa9",
  "classification_base": "数据/单行为记录.jsonl",
  "classification_overlay": "数据/单行为归类修正清单_v1.1.jsonl",
  "overlay_rule": "read base record then replace listed fields by record_id; overlay has current classification authority",
- "target_symbol": "zx(+zn+n+x并z)",
- "selection_rule": "采矿：刀马（镖人）zx4+zn3+n1；MAUS Art两条zn成功门复核保留；阳菜KATAGIRI-001 candidate→evidence-locked（x并z首条locked）。依据第四十六/五十七批穷举报告与讲谈社官方页现场核验落库；刀马3条zn按8-02修正案逐条复核保留（他者保留+主动行为+未吸收，区别于第六十二批五人）。",
- "last_character": "刀马（镖人）/ Art Spiegelman（Maus，zn复核）/ 片桐阳菜（泪雨与小夜曲，x并z locked）",
- "last_work": "镖人 / Maus / 泪雨与小夜曲",
- "last_stage": "zx采矿4条（94/97/97/96）；zn采矿3条（96/95/96，8-02逐条复核保留）；n采矿1条（93）；MAUS Art两条zn成功门第2—4条复核保留；阳菜KATAGIRI-001 candidate→evidence-locked 96（库内首条x并z阴木locked，讲谈社官方页替身壳强证据）",
- "last_record_count": 8,
- "corrected_record_count": 9,
+ "target_symbol": "xn(+n+nx+zx)",
+ "selection_rule": "采矿：小林（君と宇宙）n2+xn2+nx1；宇野（君と宇宙）xn3+n2；Takopi（タコピーの原罪）nx3；綾瀬桃（ダンダダン）xn5+zx3+nx1；厄卡伦（ダンダダン）xn6+zx3+n1+nx1。依据第四十七批穷举报告落库；无覆盖层变更，无locked变更。",
+ "last_character": "小林 / 宇野（君と宇宙を歩くために）/ タコピー（タコピーの原罪）/ 綾瀬桃 / 高倉健（ダンダダン）",
+ "last_work": "君と宇宙を歩くために / タコピーの原罪 / ダンダダン",
+ "last_stage": "xn采矿16条（小林92/94，宇野96/94/96，桃95/94/96/94/96，厄卡伦95/94/94/96/95/96）；n采矿5条（小林93/95，宇野94/91，厄卡伦90）；nx采矿6条（小林89，Takopi 96/95/94，桃91，厄卡伦92）；zx采矿6条（桃93/94/95，厄卡伦94/95/95）",
+ "last_record_count": 33,
+ "corrected_record_count": 10,
  "counts": {
   "zx": {
-   "works": 13,
+   "works": 16,
    "evidence_locked": 3,
-   "candidate": 22
+   "candidate": 30
   },
   "z": {
-   "works": 17,
+   "works": 18,
    "evidence_locked": 3,
-   "candidate": 37
+   "candidate": 39
   },
   "zn": {
-   "works": 4,
+   "works": 5,
    "evidence_locked": 1,
-   "candidate": 7
+   "candidate": 8
   },
   "nz": {
    "works": 4,
@@ -36,19 +36,19 @@
    "candidate": 5
   },
   "n": {
-   "works": 12,
+   "works": 16,
    "evidence_locked": 1,
-   "candidate": 26
+   "candidate": 35
   },
   "nx": {
-   "works": 16,
+   "works": 19,
    "evidence_locked": 3,
-   "candidate": 28
+   "candidate": 37
   },
   "xn": {
-   "works": 17,
+   "works": 21,
    "evidence_locked": 7,
-   "candidate": 37
+   "candidate": 61
   },
   "x": {
    "works": 6,
@@ -56,9 +56,9 @@
    "candidate": 9
   },
   "xz": {
-   "works": 4,
+   "works": 5,
    "evidence_locked": 3,
-   "candidate": 4
+   "candidate": 5
   },
   "x并z": {
    "works": 6,
@@ -67,8 +67,8 @@
   }
  },
  "next_target_symbol": "x并z（补第二/第三locked）或z/xn/nx/zx各元补locked",
- "next_candidate": "x并z已补首条locked（阳菜KATAGIRI-001=96，讲谈社官方页强证据），可继续补第二/第三locked（Vladek冒充非犹太人97候选）；z已37候选3locked、n已26候选1locked、xn已37候选7locked、nx已28候选3locked、x已9候选1locked、zx已22候选3locked、xz已4候选3locked、zn已7候选1locked、nz已5候选1locked可继续补候选或各元第二/第三locked；MAUS Art两条zn复核已闭环；芙莉莲FR预审转正遗留项保留。",
+ "next_candidate": "x并z已补首条locked（阳菜KATAGIRI-001=96），可继续补第二/第三locked（Vladek冒充非犹太人97候选）；z已39候选3locked、n已35候选1locked、xn已61候选7locked、nx已37候选3locked、x已9候选1locked、zx已30候选3locked、xz已5候选3locked、zn已8候选1locked、nz已5候选1locked可继续补候选或各元第二/第三locked；无新原页证据时下轮避开小林、宇野、Takopi、綾瀬桃、厄卡伦。",
  "pending_issue_count": 0,
  "lease": null,
- "updated": "2026-08-14T14:10+08:00"
+ "updated": "2026-08-14T18:10+08:00"
 }
