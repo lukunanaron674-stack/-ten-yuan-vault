@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"🎬 画面探索｜zx 方向｜恶魔公开权能击穿线（跨卡3-6/3-7）","x":-150,"y":-700,"width":480,"height":50,"color":"6"},
+		{"id":"hub","type":"text","text":"🔍 一句话探索：zx克n（公开权能击穿承载）怎么在纯黑纯红里完成：恶魔公开举刀、压顶、割开母亲／故土，暴烈但抽象、不写实血腥？\n\n📄 [[方/08_探索/第三幕/第三部分_zx方向_恶魔公开权能_探索.md|探索卡]]","x":-220,"y":-460,"width":440,"height":170,"color":"5"},
+		{"id":"p1","type":"text","text":"第1名｜9.5分｜配比 zx7 xn4 n3 xz2｜公开举刀压顶，黑影交叉拉成长刀；断臂血弧、刀刺上拖、灌屏纯红。","x":496,"y":116,"width":360,"height":144,"color":"4"},
+		{"id":"p2","type":"text","text":"第2名｜9.0分｜配比 zx6 x5 n4 xz2｜击穿更狠：一刀只砍一次、血弧大色块横扫；母亲被拖仍站立到末帧。","x":465,"y":307,"width":360,"height":130,"color":"4"},
+		{"id":"p3","type":"text","text":"第3名｜8.5分｜配比 zx6 xn5 n3 nz2｜显权+规则：举刀定格半秒（台词钉刀），护胸仍立，红潮临界收尾。","x":379,"y":494,"width":360,"height":130,"color":"3"},
+		{"id":"p4","type":"text","text":"第4名｜8.5分｜配比 zx5 xn5 n4 xz3｜更冷：刀先横举再下压，衣摆飘、红像潮水涌来。","x":238,"y":658,"width":360,"height":130,"color":"3"},
+		{"id":"p5","type":"text","text":"第5名｜8.0分｜配比 zx6 n4 nx3 xz2｜执行感给恶魔：两刀干净利落，母亲始终站立，末帧纯红两黑点。","x":48,"y":785,"width":360,"height":130,"color":"3"},
+		{"id":"p6","type":"text","text":"第6名｜8.0分｜配比 zx5 x5 n3 xz3｜压迫最大：恶魔贴近、黑影盖母亲，红满屏，断肢剪影交代。","x":-180,"y":860,"width":360,"height":130,"color":"3"},
+		{"id":"p7","type":"text","text":"第7名｜7.5分｜配比 zx7 x4 n3 xz2｜更抽象：母亲=黑色长剪影不画脸，zx 压顶靠几何完成。","x":-431,"y":872,"width":360,"height":130,"color":"1"},
+		{"id":"p8","type":"text","text":"第8名｜7.5分｜配比 zx6 xn4 nz2 xz3｜坠入感：身体后仰、红从下往上漫，末帧只剩护胸轮廓。","x":-687,"y":814,"width":360,"height":130,"color":"1"},
+		{"id":"p9","type":"text","text":"第9名｜7.0分｜配比 zx5 xn6 n2 xz2｜更流程：踩衣、拖拽、挥刀三拍分明，像公文执行。","x":-930,"y":685,"width":360,"height":130,"color":"1"},
+		{"id":"p10","type":"text","text":"第10名｜6.5分｜配比 xz4 zx5 xn3 x4 nz2｜更漂：呼吸感镜头，举刀略拖，击穿感被稀释。","x":-1137,"y":487,"width":360,"height":130,"color":"1"},
+		{"id":"genboardzx3","type":"file","file":"方/08_探索/第三幕/生成图/第三部分_zx方向_恶魔公开权能_图生图六方案.png","x":900,"y":116,"width":720,"height":405}
+	],
+	"edges":[
+		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
+		{"id":"e-hub-p1","fromNode":"hub","fromSide":"bottom","toNode":"p1","toSide":"top"},
+		{"id":"e-hub-p2","fromNode":"hub","fromSide":"bottom","toNode":"p2","toSide":"top"},
+		{"id":"e-hub-p3","fromNode":"hub","fromSide":"bottom","toNode":"p3","toSide":"top"},
+		{"id":"e-hub-p4","fromNode":"hub","fromSide":"bottom","toNode":"p4","toSide":"top"},
+		{"id":"e-hub-p5","fromNode":"hub","fromSide":"bottom","toNode":"p5","toSide":"top"},
+		{"id":"e-hub-p6","fromNode":"hub","fromSide":"bottom","toNode":"p6","toSide":"top"},
+		{"id":"e-hub-p7","fromNode":"hub","fromSide":"bottom","toNode":"p7","toSide":"top"},
+		{"id":"e-hub-p8","fromNode":"hub","fromSide":"bottom","toNode":"p8","toSide":"top"},
+		{"id":"e-hub-p9","fromNode":"hub","fromSide":"bottom","toNode":"p9","toSide":"top"},
+		{"id":"e-hub-p10","fromNode":"hub","fromSide":"bottom","toNode":"p10","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"title","type":"text","text":"🎬 画面探索｜zx 方向｜恶魔公开权能击穿线（跨卡3-6/3-7）","x":-150,"y":-700,"width":480,"height":50,"color":"6"},
+		{"id":"title","type":"text","text":"🎬 画面探索｜zx 方向｜恶魔公开权能击穿线（跨卡3-6/3-7）｜v1.1","x":-150,"y":-700,"width":480,"height":50,"color":"6"},
 		{"id":"hub","type":"text","text":"🔍 一句话探索：zx克n（公开权能击穿承载）怎么在纯黑纯红里完成：恶魔公开举刀、压顶、割开母亲／故土，暴烈但抽象、不写实血腥？\n\n📄 [[方/08_探索/第三幕/第三部分_zx方向_恶魔公开权能_探索.md|探索卡]]","x":-220,"y":-460,"width":440,"height":170,"color":"5"},
 		{"id":"p1","type":"text","text":"第1名｜9.5分｜配比 zx7 xn4 n3 xz2｜公开举刀压顶，黑影交叉拉成长刀；断臂血弧、刀刺上拖、灌屏纯红。","x":496,"y":116,"width":360,"height":144,"color":"4"},
 		{"id":"p2","type":"text","text":"第2名｜9.0分｜配比 zx6 x5 n4 xz2｜击穿更狠：一刀只砍一次、血弧大色块横扫；母亲被拖仍站立到末帧。","x":465,"y":307,"width":360,"height":130,"color":"4"},
@@ -12,7 +12,7 @@
 		{"id":"p8","type":"text","text":"第8名｜7.5分｜配比 zx6 xn4 nz2 xz3｜坠入感：身体后仰、红从下往上漫，末帧只剩护胸轮廓。","x":-687,"y":814,"width":360,"height":130,"color":"1"},
 		{"id":"p9","type":"text","text":"第9名｜7.0分｜配比 zx5 xn6 n2 xz2｜更流程：踩衣、拖拽、挥刀三拍分明，像公文执行。","x":-930,"y":685,"width":360,"height":130,"color":"1"},
 		{"id":"p10","type":"text","text":"第10名｜6.5分｜配比 xz4 zx5 xn3 x4 nz2｜更漂：呼吸感镜头，举刀略拖，击穿感被稀释。","x":-1137,"y":487,"width":360,"height":130,"color":"1"},
-		{"id":"genboardzx3","type":"file","file":"方/08_探索/第三幕/生成图/第三部分_zx方向_恶魔公开权能_图生图六方案.png","x":900,"y":116,"width":720,"height":405}
+		{"id":"genboardzx3","type":"file","file":"方/07_素材图/第三幕/卡3-7_三人动态_六格景别.png","x":900,"y":116,"width":720,"height":405}
 	],
 	"edges":[
 		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
@@ -28,7 +28,7 @@
 		{"id":"e-hub-p10","fromNode":"hub","fromSide":"bottom","toNode":"p10","toSide":"top"}
 	],
 	"metadata":{
-		"version":"1.0-1.0",
+		"version":"1.1-2026-08-14",
 		"frontmatter":{}
 	}
 }

@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"🎬 画面探索｜zn 方向｜故土承载意义线（跨卡3-6/3-7）","x":-150,"y":-700,"width":480,"height":50,"color":"6"},
+		{"id":"hub","type":"text","text":"🔍 一句话探索：被 zx 击穿的承载（母亲／故土＝不可让渡的意义）怎么在纯黑纯红里不灭：她始终站立、护胸如抱孩子、三句呼救钉在刀上，痛而不煽情？\n\n📄 [[方/08_探索/第三幕/第三部分_zn方向_故土承载意义_探索.md|探索卡]]","x":-220,"y":-460,"width":440,"height":170,"color":"5"},
+		{"id":"p1","type":"text","text":"第1名｜9.5分｜配比 zn7 xn4 n3 xz2｜护胸如抱孩子，踉跄仍立；末帧纯红只剩护胸黑轮廓，承载被击穿意义不灭。","x":496,"y":116,"width":360,"height":144,"color":"4"},
+		{"id":"p2","type":"text","text":"第2名｜9.0分｜配比 zn6 nz3 x5 xn3｜承载更实：护胸像抱孩子，血弧后仍立半秒才倾，痛感来自不灭。","x":465,"y":307,"width":360,"height":130,"color":"4"},
+		{"id":"p3","type":"text","text":"第3名｜8.5分｜配比 zn6 nx4 n3 xz3｜更冷：身形微晃但护胸不动，红从下漫，轮廓最后消失。","x":379,"y":494,"width":360,"height":130,"color":"3"},
+		{"id":"p4","type":"text","text":"第4名｜8.5分｜配比 zn5 zn5 n4 xz3｜更静：刀起、刀落、红漫三拍，站立即意义。","x":238,"y":658,"width":360,"height":130,"color":"3"},
+		{"id":"p5","type":"text","text":"第5名｜8.0分｜配比 zn6 x4 nx3 xz3｜剪影化：黑色长剪影不画脸，护胸轮廓唯一稳定物。","x":48,"y":785,"width":360,"height":130,"color":"3"},
+		{"id":"p6","type":"text","text":"第6名｜8.0分｜配比 zn7 n3 xn4 xz2｜意义最纯：只拍护胸轮廓与红，刀落画外，呼救声起轮廓仍立。","x":-180,"y":860,"width":360,"height":130,"color":"3"},
+		{"id":"p7","type":"text","text":"第7名｜7.5分｜配比 zn5 x5 nx4 nz2｜坠入感：衣摆飘、身体微倾不倒地，红像潮水涌退。","x":-431,"y":872,"width":360,"height":130,"color":"1"},
+		{"id":"p8","type":"text","text":"第8名｜7.5分｜配比 zn6 xn5 n2 xz2｜压迫更大：黑影盖母亲，护胸在黑影里仍可辨。","x":-687,"y":814,"width":360,"height":130,"color":"1"},
+		{"id":"p9","type":"text","text":"第9名｜7.0分｜配比 zn4 zx5 xn4 nz2｜微妙张力：刀尖逼近时手微紧一下随即稳住。","x":-930,"y":685,"width":360,"height":130,"color":"1"},
+		{"id":"p10","type":"text","text":"第10名｜6.5分｜配比 xz4 zn4 xn4 n3 xz2｜更漂：呼吸感镜头，轮廓略晃，意义感被稀释。","x":-1137,"y":487,"width":360,"height":130,"color":"1"},
+		{"id":"genboardzn3","type":"file","file":"方/08_探索/第三幕/生成图/第三部分_zn方向_故土承载意义_图生图六方案.png","x":900,"y":116,"width":720,"height":405}
+	],
+	"edges":[
+		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
+		{"id":"e-hub-p1","fromNode":"hub","fromSide":"bottom","toNode":"p1","toSide":"top"},
+		{"id":"e-hub-p2","fromNode":"hub","fromSide":"bottom","toNode":"p2","toSide":"top"},
+		{"id":"e-hub-p3","fromNode":"hub","fromSide":"bottom","toNode":"p3","toSide":"top"},
+		{"id":"e-hub-p4","fromNode":"hub","fromSide":"bottom","toNode":"p4","toSide":"top"},
+		{"id":"e-hub-p5","fromNode":"hub","fromSide":"bottom","toNode":"p5","toSide":"top"},
+		{"id":"e-hub-p6","fromNode":"hub","fromSide":"bottom","toNode":"p6","toSide":"top"},
+		{"id":"e-hub-p7","fromNode":"hub","fromSide":"bottom","toNode":"p7","toSide":"top"},
+		{"id":"e-hub-p8","fromNode":"hub","fromSide":"bottom","toNode":"p8","toSide":"top"},
+		{"id":"e-hub-p9","fromNode":"hub","fromSide":"bottom","toNode":"p9","toSide":"top"},
+		{"id":"e-hub-p10","fromNode":"hub","fromSide":"bottom","toNode":"p10","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

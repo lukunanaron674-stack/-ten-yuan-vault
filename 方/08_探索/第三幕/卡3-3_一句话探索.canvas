@@ -1,23 +1,125 @@
 {
-	"nodes":[
-		{"id":"title","type":"text","text":"🔍 一句话·十元探索｜卡3-3","x":-170,"y":-560,"width":340,"height":50,"color":"6"},
-		{"id":"hub","type":"text","text":"卡3-3｜文章暴露／秦学平告发\n\n一句话探索：8s 汇报戏，怎么让「文章暴露」的压迫感出来，又不拍成咆哮拍桌？\n\n📄 [[方/08_探索/第三幕/卡3-3_文章暴露_探索.md|探索卡]]","x":-230,"y":-330,"width":460,"height":150,"color":"5"},
-		{"id":"ratio_C","type":"text","text":"方案C｜xn6 z5 x3 n3\n\n压迫为主","x":-476,"y":574,"width":360,"height":120,"color":"3"},
-		{"id":"ratio_D","type":"text","text":"方案D｜nx5 n4 z5 x3\n\n暗线+安顿+权力","x":-814,"y":236,"width":360,"height":120,"color":"3"},
-		{"id":"rec","type":"text","text":"🏆 推荐 #z6 xn5 nx4 n2","x":-180,"y":660,"width":360,"height":80,"color":"4"},
-		{"id":"ratio_A","type":"text","text":"方案A｜z6 xn5 nx4 n2\n\n权力显现+规则压迫+暗线","x":640,"y":80,"width":360,"height":120,"color":"3"},
-		{"id":"ratio_B","type":"text","text":"方案B｜zx5 z5 xn4 nx3\n\n执行+权力+压迫","x":280,"y":400,"width":360,"height":120,"color":"3"}
-	],
-	"edges":[
-		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
-		{"id":"e-hub-ratio_A","fromNode":"hub","fromSide":"bottom","toNode":"ratio_A","toSide":"top"},
-		{"id":"e-hub-ratio_B","fromNode":"hub","fromSide":"bottom","toNode":"ratio_B","toSide":"top"},
-		{"id":"e-hub-ratio_C","fromFloating":false,"fromNode":"hub","fromSide":"bottom","toNode":"ratio_C","toSide":"top"},
-		{"id":"e-hub-ratio_D","fromNode":"hub","fromSide":"bottom","toNode":"ratio_D","toSide":"top"},
-		{"id":"e-hub-rec","fromNode":"hub","fromSide":"bottom","toNode":"rec","toSide":"top"}
-	],
-	"metadata":{
-		"version":"1.0-1.0",
-		"frontmatter":{}
-	}
+    "nodes":  [
+                  {
+                      "id":  "title",
+                      "type":  "text",
+                      "text":  "🔍 一句话·十元探索｜卡3-3｜v1.1",
+                      "x":  -170,
+                      "y":  -560,
+                      "width":  340,
+                      "height":  50,
+                      "color":  "6"
+                  },
+                  {
+                      "id":  "hub",
+                      "type":  "text",
+                      "text":  "卡3-3｜告发与调走\n\n一句话探索：8s 怎样把「窥见写稿→告状→高层调走凌凤梧并限令搜稿」说清楚，坏胖傻气但不闹剧？\n\n📄 [[方/08_探索/第三幕/卡3-3_文章暴露_探索.md|探索卡]]",
+                      "x":  -230,
+                      "y":  -330,
+                      "width":  460,
+                      "height":  150,
+                      "color":  "5"
+                  },
+                  {
+                      "id":  "ratio_C",
+                      "type":  "text",
+                      "text":  "方案C｜zx7 xn4 x4 n2\n\n高层压顶，胖士兵又贪又怕",
+                      "x":  -476,
+                      "y":  574,
+                      "width":  360,
+                      "height":  120,
+                      "color":  "3"
+                  },
+                  {
+                      "id":  "ratio_D",
+                      "type":  "text",
+                      "text":  "方案D｜zx5 z5 xn5 nz2\n\n监视、告发、调走三层并行",
+                      "x":  -814,
+                      "y":  236,
+                      "width":  360,
+                      "height":  120,
+                      "color":  "3"
+                  },
+                  {
+                      "id":  "rec",
+                      "type":  "text",
+                      "text":  "🏆 推荐｜zx6 z5 xn4 n2",
+                      "x":  -180,
+                      "y":  660,
+                      "width":  360,
+                      "height":  80,
+                      "color":  "4"
+                  },
+                  {
+                      "id":  "ratio_A",
+                      "type":  "text",
+                      "text":  "方案A｜zx6 z5 xn4 n2\n\n权力拍板清楚，喜感只在反派外形",
+                      "x":  640,
+                      "y":  80,
+                      "width":  360,
+                      "height":  120,
+                      "color":  "3"
+                  },
+                  {
+                      "id":  "ratio_B",
+                      "type":  "text",
+                      "text":  "方案B｜z6 zx5 nx4 xn3\n\n告密欲望更强，命令链更紧",
+                      "x":  280,
+                      "y":  400,
+                      "width":  360,
+                      "height":  120,
+                      "color":  "3"
+                  }
+              ],
+    "edges":  [
+                  {
+                      "id":  "e-title-hub",
+                      "fromNode":  "title",
+                      "fromSide":  "bottom",
+                      "toNode":  "hub",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-ratio_A",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "ratio_A",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-ratio_B",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "ratio_B",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-ratio_C",
+                      "fromFloating":  false,
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "ratio_C",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-ratio_D",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "ratio_D",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "e-hub-rec",
+                      "fromNode":  "hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "rec",
+                      "toSide":  "top"
+                  }
+              ],
+    "metadata":  {
+                     "version":  "1.1-2026-08-14",
+                     "frontmatter":  {
+
+                                     }
+                 }
 }

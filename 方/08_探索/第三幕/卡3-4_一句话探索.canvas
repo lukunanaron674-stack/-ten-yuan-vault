@@ -1,106 +1,106 @@
 {
-  "nodes": [
-    {
-      "id": "title",
-      "type": "text",
-      "text": "🔍 一句话·十元探索｜卡3-4",
-      "x": -170,
-      "y": -560,
-      "width": 340,
-      "height": 50,
-      "color": "6"
-    },
-    {
-      "id": "hub",
-      "type": "text",
-      "text": "卡3-4｜顾祝同拍板／凌凤梧被换\n\n一句话探索：6s 两段短镜，怎么用「交接与逆行」把权力更换说清楚，不煽情？\n\n📄 [[方/08_探索/第三幕/卡3-4_顾祝同拍板_探索.md|探索卡]]",
-      "x": -230,
-      "y": -330,
-      "width": 460,
-      "height": 150,
-      "color": "5"
-    },
-    {
-      "id": "ratio_A",
-      "type": "text",
-      "text": "方案A｜z6 zx5 nx4 n2\n\n权力拍板+执行+暗线",
-      "x": 393,
-      "y": 342,
-      "width": 360,
-      "height": 120,
-      "color": "3"
-    },
-    {
-      "id": "ratio_B",
-      "type": "text",
-      "text": "方案B｜zx6 z5 nx3 nz2\n\n执行+权力+一丝暖",
-      "x": 1,
-      "y": 616,
-      "width": 360,
-      "height": 120,
-      "color": "3"
-    },
-    {
-      "id": "ratio_C",
-      "type": "text",
-      "text": "方案C｜nx5 n5 z4 xz3\n\n暗线+安顿+漂流",
-      "x": -476,
-      "y": 574,
-      "width": 360,
-      "height": 120,
-      "color": "3"
-    },
-    {
-      "id": "ratio_D",
-      "type": "text",
-      "text": "方案D｜z5 x4 nx4 n3\n\n权力+欲望+安顿",
-      "x": -814,
-      "y": 236,
-      "width": 360,
-      "height": 120,
-      "color": "3"
-    },
-    {
-      "id": "rec",
-      "type": "text",
-      "text": "🏆 推荐 #z6 zx5 nx4 n2",
-      "x": -180,
-      "y": 660,
-      "width": 360,
-      "height": 80,
-      "color": "4"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e-title-hub",
-      "fromNode": "title",
-      "toNode": "hub"
-    },
-    {
-      "id": "e-hub-ratio_A",
-      "fromNode": "hub",
-      "toNode": "ratio_A"
-    },
-    {
-      "id": "e-hub-ratio_B",
-      "fromNode": "hub",
-      "toNode": "ratio_B"
-    },
-    {
-      "id": "e-hub-ratio_C",
-      "fromNode": "hub",
-      "toNode": "ratio_C"
-    },
-    {
-      "id": "e-hub-ratio_D",
-      "fromNode": "hub",
-      "toNode": "ratio_D"
-    },
-    {
-      "id": "e-hub-rec",
-      "fromNode": "hub",
-      "toNode": "rec"
-    }
-  ]
+    "nodes":  [
+                  {
+                      "id":  "title",
+                      "type":  "text",
+                      "text":  "🔍 一句话·十元探索｜卡3-4｜v1.1",
+                      "x":  -170,
+                      "y":  -560,
+                      "width":  340,
+                      "height":  50,
+                      "color":  "6"
+                  },
+                  {
+                      "id":  "hub",
+                      "type":  "text",
+                      "text":  "卡3-4｜相见与搜房\n\n一句话探索：8s 怎样让「凌方告别→搜房扑空」既交代关系断裂，又为墙砖暗格留伏笔？\n\n📄 [[方/08_探索/第三幕/卡3-4_顾祝同拍板_探索.md|探索卡]]",
+                      "x":  -230,
+                      "y":  -330,
+                      "width":  460,
+                      "height":  150,
+                      "color":  "5"
+                  },
+                  {
+                      "id":  "ratio_A",
+                      "type":  "text",
+                      "text":  "方案A｜zx5 xn5 nz3 n2\n\n告别克制，搜查压迫，暗格伏笔清楚",
+                      "x":  393,
+                      "y":  342,
+                      "width":  360,
+                      "height":  120,
+                      "color":  "3"
+                  },
+                  {
+                      "id":  "ratio_B",
+                      "type":  "text",
+                      "text":  "方案B｜xn6 zx4 nx4 nz2\n\n搜房更紧，关系留白较少",
+                      "x":  1,
+                      "y":  616,
+                      "width":  360,
+                      "height":  120,
+                      "color":  "3"
+                  },
+                  {
+                      "id":  "ratio_C",
+                      "type":  "text",
+                      "text":  "方案C｜nz5 n4 xn4 zx3\n\n凌方情义更重，硬切破坏",
+                      "x":  -476,
+                      "y":  574,
+                      "width":  360,
+                      "height":  120,
+                      "color":  "3"
+                  },
+                  {
+                      "id":  "ratio_D",
+                      "type":  "text",
+                      "text":  "方案D｜zx5 xn5 x4 nx3\n\n胖瘦层级与扑空威胁突出",
+                      "x":  -814,
+                      "y":  236,
+                      "width":  360,
+                      "height":  120,
+                      "color":  "3"
+                  },
+                  {
+                      "id":  "rec",
+                      "type":  "text",
+                      "text":  "🏆 推荐｜zx5 xn5 nz3 n2",
+                      "x":  -180,
+                      "y":  660,
+                      "width":  360,
+                      "height":  80,
+                      "color":  "4"
+                  }
+              ],
+    "edges":  [
+                  {
+                      "id":  "e-title-hub",
+                      "fromNode":  "title",
+                      "toNode":  "hub"
+                  },
+                  {
+                      "id":  "e-hub-ratio_A",
+                      "fromNode":  "hub",
+                      "toNode":  "ratio_A"
+                  },
+                  {
+                      "id":  "e-hub-ratio_B",
+                      "fromNode":  "hub",
+                      "toNode":  "ratio_B"
+                  },
+                  {
+                      "id":  "e-hub-ratio_C",
+                      "fromNode":  "hub",
+                      "toNode":  "ratio_C"
+                  },
+                  {
+                      "id":  "e-hub-ratio_D",
+                      "fromNode":  "hub",
+                      "toNode":  "ratio_D"
+                  },
+                  {
+                      "id":  "e-hub-rec",
+                      "fromNode":  "hub",
+                      "toNode":  "rec"
+                  }
+              ]
 }
