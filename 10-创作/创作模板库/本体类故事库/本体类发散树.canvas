@@ -1,0 +1,346 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 440,
+      "height": 180,
+      "text": "# 本体类故事库\n\n19条本体 zn+x 故事的导航根",
+      "color": "1"
+    },
+    {
+      "id": "theory",
+      "type": "text",
+      "x": -600,
+      "y": 280,
+      "width": 360,
+      "height": 140,
+      "text": "## 理论入口\n\n[[02-五大主题/本体zn+x|本体 zn+x 正本]]",
+      "color": "5"
+    },
+    {
+      "id": "rules",
+      "type": "text",
+      "x": -120,
+      "y": 280,
+      "width": 360,
+      "height": 140,
+      "text": "## 创作规则\n\n[[01_本体类创作规则]]",
+      "color": "4"
+    },
+    {
+      "id": "pool",
+      "type": "text",
+      "x": 360,
+      "y": 280,
+      "width": 360,
+      "height": 140,
+      "text": "## 19故事池\n\n[[02_本体类故事总表]]",
+      "color": "2"
+    },
+    {
+      "id": "story-01",
+      "type": "text",
+      "x": 360,
+      "y": 500,
+      "width": 350,
+      "height": 190,
+      "text": "## 01｜没有影子的人｜93\n\n[[故事卡/01_没有影子的人]]\n\n🖼 [[解释图/01_没有影子的人.png]]（占位）",
+      "color": "3"
+    },
+    {
+      "id": "story-02",
+      "type": "text",
+      "x": 750,
+      "y": 500,
+      "width": 350,
+      "height": 190,
+      "text": "## 02｜自画像忘我｜91\n\n[[故事卡/02_自画像忘我]]\n\n🖼 [[解释图/02_自画像忘我.png]]（占位）",
+      "color": "3"
+    },
+    {
+      "id": "story-03",
+      "type": "text",
+      "x": 1140,
+      "y": 500,
+      "width": 350,
+      "height": 190,
+      "text": "## 03｜听不见自己名字的人｜84\n\n[[故事卡/03_听不见自己名字的人]]\n\n🖼 [[解释图/03_听不见自己名字的人.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-04",
+      "type": "text",
+      "x": 360,
+      "y": 750,
+      "width": 350,
+      "height": 190,
+      "text": "## 04｜谎言诞生的神明｜95\n\n[[故事卡/04_谎言诞生的神明]]\n\n🖼 [[解释图/04_谎言诞生的神明.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-05",
+      "type": "text",
+      "x": 750,
+      "y": 750,
+      "width": 350,
+      "height": 190,
+      "text": "## 05｜偷回核心愿望｜89\n\n[[故事卡/05_偷回核心愿望]]\n\n🖼 [[解释图/05_偷回核心愿望.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-06",
+      "type": "text",
+      "x": 1140,
+      "y": 750,
+      "width": 350,
+      "height": 190,
+      "text": "## 06｜模仿死者的演员｜88\n\n[[故事卡/06_模仿死者的演员]]\n\n🖼 [[解释图/06_模仿死者的演员.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-07",
+      "type": "text",
+      "x": 360,
+      "y": 1000,
+      "width": 350,
+      "height": 190,
+      "text": "## 07｜镜子照不见的人｜86\n\n[[故事卡/07_镜子照不见的人]]\n\n🖼 [[解释图/07_镜子照不见的人.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-08",
+      "type": "text",
+      "x": 750,
+      "y": 1000,
+      "width": 350,
+      "height": 190,
+      "text": "## 08｜记忆刻进骨头｜94\n\n[[故事卡/08_记忆刻进骨头]]\n\n🖼 [[解释图/08_记忆刻进骨头.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-09",
+      "type": "text",
+      "x": 1140,
+      "y": 1000,
+      "width": 350,
+      "height": 190,
+      "text": "## 09｜无灵魂孩子收集愿望｜92\n\n[[故事卡/09_无灵魂孩子收集愿望]]\n\n🖼 [[解释图/09_无灵魂孩子收集愿望.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-10",
+      "type": "text",
+      "x": 360,
+      "y": 1250,
+      "width": 350,
+      "height": 190,
+      "text": "## 10｜梦里草稿的自己｜90\n\n[[故事卡/10_梦里草稿的自己]]\n\n🖼 [[解释图/10_梦里草稿的自己.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-11",
+      "type": "text",
+      "x": 750,
+      "y": 1250,
+      "width": 350,
+      "height": 190,
+      "text": "## 11｜国王面具｜96\n\n[[故事卡/11_国王面具]]\n\n🖼 [[解释图/11_国王面具.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-12",
+      "type": "text",
+      "x": 1140,
+      "y": 1250,
+      "width": 350,
+      "height": 190,
+      "text": "## 12｜七年自我与钟楼｜95\n\n[[故事卡/12_七年自我与钟楼]]\n\n🖼 [[解释图/12_七年自我与钟楼.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-13",
+      "type": "text",
+      "x": 360,
+      "y": 1500,
+      "width": 350,
+      "height": 190,
+      "text": "## 13｜井中的我｜94\n\n[[故事卡/13_井中的我]]\n\n🖼 [[解释图/13_井中的我.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-14",
+      "type": "text",
+      "x": 750,
+      "y": 1500,
+      "width": 350,
+      "height": 190,
+      "text": "## 14｜没有信仰的圣女｜94\n\n[[故事卡/14_没有信仰的圣女]]\n\n🖼 [[解释图/14_没有信仰的圣女.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-15",
+      "type": "text",
+      "x": 1140,
+      "y": 1500,
+      "width": 350,
+      "height": 190,
+      "text": "## 15｜替身演员被鼓掌｜93\n\n[[故事卡/15_替身演员被鼓掌]]\n\n🖼 [[解释图/15_替身演员被鼓掌.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-16",
+      "type": "text",
+      "x": 360,
+      "y": 1750,
+      "width": 350,
+      "height": 190,
+      "text": "## 16｜雾海吞名｜92\n\n[[故事卡/16_雾海吞名]]\n\n🖼 [[解释图/16_雾海吞名.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-17",
+      "type": "text",
+      "x": 750,
+      "y": 1750,
+      "width": 350,
+      "height": 190,
+      "text": "## 17｜没有心的人与旧玩偶｜92\n\n[[故事卡/17_没有心的人与旧玩偶]]\n\n🖼 [[解释图/17_没有心的人与旧玩偶.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-18",
+      "type": "text",
+      "x": 1140,
+      "y": 1750,
+      "width": 350,
+      "height": 190,
+      "text": "## 18｜错过钟点的男孩｜91\n\n[[故事卡/18_错过钟点的男孩]]\n\n🖼 [[解释图/18_错过钟点的男孩.png]]（占位）",
+      "color": "6"
+    },
+    {
+      "id": "story-19",
+      "type": "text",
+      "x": 360,
+      "y": 2000,
+      "width": 350,
+      "height": 190,
+      "text": "## 19｜违抗命运的少年｜90\n\n[[故事卡/19_违抗命运的少年]]\n\n🖼 [[解释图/19_违抗命运的少年.png]]（占位）",
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-root-theory",
+      "fromNode": "root",
+      "toNode": "theory"
+    },
+    {
+      "id": "e-root-rules",
+      "fromNode": "root",
+      "toNode": "rules"
+    },
+    {
+      "id": "e-root-pool",
+      "fromNode": "root",
+      "toNode": "pool"
+    },
+    {
+      "id": "e-pool-01",
+      "fromNode": "pool",
+      "toNode": "story-01"
+    },
+    {
+      "id": "e-pool-02",
+      "fromNode": "pool",
+      "toNode": "story-02"
+    },
+    {
+      "id": "e-pool-03",
+      "fromNode": "pool",
+      "toNode": "story-03"
+    },
+    {
+      "id": "e-pool-04",
+      "fromNode": "pool",
+      "toNode": "story-04"
+    },
+    {
+      "id": "e-pool-05",
+      "fromNode": "pool",
+      "toNode": "story-05"
+    },
+    {
+      "id": "e-pool-06",
+      "fromNode": "pool",
+      "toNode": "story-06"
+    },
+    {
+      "id": "e-pool-07",
+      "fromNode": "pool",
+      "toNode": "story-07"
+    },
+    {
+      "id": "e-pool-08",
+      "fromNode": "pool",
+      "toNode": "story-08"
+    },
+    {
+      "id": "e-pool-09",
+      "fromNode": "pool",
+      "toNode": "story-09"
+    },
+    {
+      "id": "e-pool-10",
+      "fromNode": "pool",
+      "toNode": "story-10"
+    },
+    {
+      "id": "e-pool-11",
+      "fromNode": "pool",
+      "toNode": "story-11"
+    },
+    {
+      "id": "e-pool-12",
+      "fromNode": "pool",
+      "toNode": "story-12"
+    },
+    {
+      "id": "e-pool-13",
+      "fromNode": "pool",
+      "toNode": "story-13"
+    },
+    {
+      "id": "e-pool-14",
+      "fromNode": "pool",
+      "toNode": "story-14"
+    },
+    {
+      "id": "e-pool-15",
+      "fromNode": "pool",
+      "toNode": "story-15"
+    },
+    {
+      "id": "e-pool-16",
+      "fromNode": "pool",
+      "toNode": "story-16"
+    },
+    {
+      "id": "e-pool-17",
+      "fromNode": "pool",
+      "toNode": "story-17"
+    },
+    {
+      "id": "e-pool-18",
+      "fromNode": "pool",
+      "toNode": "story-18"
+    },
+    {
+      "id": "e-pool-19",
+      "fromNode": "pool",
+      "toNode": "story-19"
+    }
+  ]
+}
