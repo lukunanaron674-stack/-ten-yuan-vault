@@ -1,228 +1,35 @@
 {
-    "nodes":  [
-                  {
-                      "id":  "title",
-                      "type":  "text",
-                      "text":  "🎬 画面探索｜卡3-3｜v1.1",
-                      "x":  -150,
-                      "y":  -700,
-                      "width":  300,
-                      "height":  50,
-                      "color":  "6"
-                  },
-                  {
-                      "id":  "hub",
-                      "type":  "text",
-                      "text":  "🎬 画面描述词 ×10｜卡3-3 告发与调走\n\n一句话：窥见写稿→办公室告状→坏胖高层拍桌限令。\n\n📄 [[方/08_探索/第三幕/卡3-3_文章暴露_探索.md|完整×10与评分]]",
-                      "x":  -220,
-                      "y":  -460,
-                      "width":  440,
-                      "height":  150,
-                      "color":  "5"
-                  },
-                  {
-                      "id":  "p1",
-                      "type":  "text",
-                      "text":  "第1名｜9.6｜zx6 z5 xn4 n2｜栏缝窥写→办公室告状→高层拍桌限令；坏胖傻气不闹剧。",
-                      "x":  496,
-                      "y":  116,
-                      "width":  360,
-                      "height":  144,
-                      "color":  "4"
-                  },
-                  {
-                      "id":  "p2",
-                      "type":  "text",
-                      "text":  "第2名｜9.2｜z6 zx5 nx4 xn3｜框中框窥视＋站告坐令，贪婪与权力层级最清楚。",
-                      "x":  465,
-                      "y":  307,
-                      "width":  360,
-                      "height":  130,
-                      "color":  "4"
-                  },
-                  {
-                      "id":  "p3",
-                      "type":  "text",
-                      "text":  "第3名｜8.9｜zx7 xn4 x4 n2｜低机位压高层，胖士兵由贪转怕。",
-                      "x":  379,
-                      "y":  494,
-                      "width":  360,
-                      "height":  130,
-                      "color":  "3"
-                  },
-                  {
-                      "id":  "p4",
-                      "type":  "text",
-                      "text":  "第4名｜8.7｜zx5 z5 xn5 nz2｜眼睛与写字手特写，听到关键信息才拍桌。",
-                      "x":  238,
-                      "y":  658,
-                      "width":  360,
-                      "height":  130,
-                      "color":  "3"
-                  },
-                  {
-                      "id":  "p5",
-                      "type":  "text",
-                      "text":  "第5名｜8.5｜z6 xn5 nx3 x3｜胖跑入期待邀功，反被高层威胁。",
-                      "x":  48,
-                      "y":  785,
-                      "width":  360,
-                      "height":  130,
-                      "color":  "3"
-                  },
-                  {
-                      "id":  "p6",
-                      "type":  "text",
-                      "text":  "第6名｜8.2｜zx6 z4 xn4 n3｜门框夹窄告密者，高层占画面三分之二。",
-                      "x":  -180,
-                      "y":  860,
-                      "width":  360,
-                      "height":  130,
-                      "color":  "3"
-                  },
-                  {
-                      "id":  "p7",
-                      "type":  "text",
-                      "text":  "第7名｜8.0｜xn6 zx4 z4 n2｜栏影压脸，高层合文件代替拍桌。",
-                      "x":  -431,
-                      "y":  872,
-                      "width":  360,
-                      "height":  130,
-                      "color":  "1"
-                  },
-                  {
-                      "id":  "p8",
-                      "type":  "text",
-                      "text":  "第8名｜7.7｜z5 zx5 x4 nx3｜制服略紧、反应慢半拍，傻气克制。",
-                      "x":  -687,
-                      "y":  814,
-                      "width":  360,
-                      "height":  130,
-                      "color":  "1"
-                  },
-                  {
-                      "id":  "p9",
-                      "type":  "text",
-                      "text":  "第9名｜7.3｜nx5 z5 xn4 xz2｜贴门低声告密，高层突然打断。",
-                      "x":  -930,
-                      "y":  685,
-                      "width":  360,
-                      "height":  130,
-                      "color":  "1"
-                  },
-                  {
-                      "id":  "p10",
-                      "type":  "text",
-                      "text":  "第10名｜6.8｜x5 z5 zx4 xn3｜快速推近与夸张表情，变脸风险高。",
-                      "x":  -1137,
-                      "y":  487,
-                      "width":  360,
-                      "height":  130,
-                      "color":  "1"
-                  },
-                  {
-                      "id":  "gen80board33",
-                      "type":  "file",
-                      "file":  "方/07_素材图/第三幕/卡3-3_告发办公室.png",
-                      "x":  900,
-                      "y":  116,
-                      "width":  720,
-                      "height":  405
-                  },
-                  {
-                      "id":  "genlowboard33",
-                      "type":  "file",
-                      "file":  "方/07_素材图/第三幕/卡3-3_双士兵脸.png",
-                      "x":  1660,
-                      "y":  116,
-                      "width":  720,
-                      "height":  405
-                  }
-              ],
-    "edges":  [
-                  {
-                      "id":  "e-title-hub",
-                      "fromNode":  "title",
-                      "fromSide":  "bottom",
-                      "toNode":  "hub",
-                      "toSide":  "top"
-                  },
-                  {
-                      "id":  "e-hub-p1",
-                      "fromNode":  "hub",
-                      "fromSide":  "bottom",
-                      "toNode":  "p1",
-                      "toSide":  "top"
-                  },
-                  {
-                      "id":  "e-hub-p2",
-                      "fromNode":  "hub",
-                      "fromSide":  "bottom",
-                      "toNode":  "p2",
-                      "toSide":  "top"
-                  },
-                  {
-                      "id":  "e-hub-p3",
-                      "toFloating":  false,
-                      "fromNode":  "hub",
-                      "fromSide":  "bottom",
-                      "toNode":  "p3",
-                      "toSide":  "top"
-                  },
-                  {
-                      "id":  "e-hub-p4",
-                      "fromNode":  "hub",
-                      "fromSide":  "bottom",
-                      "toNode":  "p4",
-                      "toSide":  "top"
-                  },
-                  {
-                      "id":  "e-hub-p5",
-                      "fromNode":  "hub",
-                      "fromSide":  "bottom",
-                      "toNode":  "p5",
-                      "toSide":  "top"
-                  },
-                  {
-                      "id":  "e-hub-p6",
-                      "fromNode":  "hub",
-                      "fromSide":  "bottom",
-                      "toNode":  "p6",
-                      "toSide":  "top"
-                  },
-                  {
-                      "id":  "e-hub-p7",
-                      "fromNode":  "hub",
-                      "fromSide":  "bottom",
-                      "toNode":  "p7",
-                      "toSide":  "top"
-                  },
-                  {
-                      "id":  "e-hub-p8",
-                      "fromNode":  "hub",
-                      "fromSide":  "bottom",
-                      "toNode":  "p8",
-                      "toSide":  "top"
-                  },
-                  {
-                      "id":  "e-hub-p9",
-                      "fromNode":  "hub",
-                      "fromSide":  "bottom",
-                      "toNode":  "p9",
-                      "toSide":  "top"
-                  },
-                  {
-                      "id":  "e-hub-p10",
-                      "fromNode":  "hub",
-                      "fromSide":  "bottom",
-                      "toNode":  "p10",
-                      "toSide":  "top"
-                  }
-              ],
-    "metadata":  {
-                     "version":  "1.1-2026-08-14",
-                     "frontmatter":  {
-
-                                     }
-                 }
+	"nodes":[
+		{"id":"title","type":"text","text":"🎬 画面探索｜卡3-3｜v1.1","x":-150,"y":-700,"width":300,"height":50,"color":"6"},
+		{"id":"hub","type":"text","text":"🎬 画面描述词 ×10｜卡3-3 告发与调走\n\n一句话：窥见写稿→办公室告状→坏胖高层拍桌限令。\n\n📄 [[方/08_探索/第三幕/卡3-3_文章暴露_探索.md|完整×10与评分]]","x":-220,"y":-460,"width":440,"height":150,"color":"5"},
+		{"id":"p1","type":"text","text":"第1名｜9.6｜zx6 z5 xn4 n2｜栏缝窥写→办公室告状→高层拍桌限令；坏胖傻气不闹剧。","x":496,"y":116,"width":360,"height":144,"color":"4"},
+		{"id":"p2","type":"text","text":"第2名｜9.2｜z6 zx5 nx4 xn3｜框中框窥视＋站告坐令，贪婪与权力层级最清楚。","x":465,"y":307,"width":360,"height":130,"color":"4"},
+		{"id":"p3","type":"text","text":"第3名｜8.9｜zx7 xn4 x4 n2｜低机位压高层，胖士兵由贪转怕。","x":379,"y":494,"width":360,"height":130,"color":"3"},
+		{"id":"p4","type":"text","text":"第4名｜8.7｜zx5 z5 xn5 nz2｜眼睛与写字手特写，听到关键信息才拍桌。","x":238,"y":658,"width":360,"height":130,"color":"3"},
+		{"id":"p5","type":"text","text":"第5名｜8.5｜z6 xn5 nx3 x3｜胖跑入期待邀功，反被高层威胁。","x":48,"y":785,"width":360,"height":130,"color":"3"},
+		{"id":"p6","type":"text","text":"第6名｜8.2｜zx6 z4 xn4 n3｜门框夹窄告密者，高层占画面三分之二。","x":-180,"y":860,"width":360,"height":130,"color":"3"},
+		{"id":"p7","type":"text","text":"第7名｜8.0｜xn6 zx4 z4 n2｜栏影压脸，高层合文件代替拍桌。","x":-431,"y":872,"width":360,"height":130,"color":"1"},
+		{"id":"p8","type":"text","text":"第8名｜7.7｜z5 zx5 x4 nx3｜制服略紧、反应慢半拍，傻气克制。","x":-687,"y":814,"width":360,"height":130,"color":"1"},
+		{"id":"p9","type":"text","text":"第9名｜7.3｜nx5 z5 xn4 xz2｜贴门低声告密，高层突然打断。","x":-930,"y":685,"width":360,"height":130,"color":"1"},
+		{"id":"p10","type":"text","text":"第10名｜6.8｜x5 z5 zx4 xn3｜快速推近与夸张表情，变脸风险高。","x":-1137,"y":487,"width":360,"height":130,"color":"1"},
+		{"id":"gen80board33","type":"file","file":"方/07_素材图/第三幕/卡3-3_告发办公室.png","x":900,"y":116,"width":555,"height":405},
+		{"id":"genlowboard33","type":"file","file":"方/07_素材图/第三幕/卡3-3_双士兵脸.png","x":1660,"y":116,"width":720,"height":405}
+	],
+	"edges":[
+		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
+		{"id":"e-hub-p1","fromNode":"hub","fromSide":"bottom","toNode":"p1","toSide":"top"},
+		{"id":"e-hub-p2","fromNode":"hub","fromSide":"bottom","toNode":"p2","toSide":"top"},
+		{"id":"e-hub-p3","toFloating":false,"fromNode":"hub","fromSide":"bottom","toNode":"p3","toSide":"top"},
+		{"id":"e-hub-p4","fromNode":"hub","fromSide":"bottom","toNode":"p4","toSide":"top"},
+		{"id":"e-hub-p5","fromNode":"hub","fromSide":"bottom","toNode":"p5","toSide":"top"},
+		{"id":"e-hub-p6","fromNode":"hub","fromSide":"bottom","toNode":"p6","toSide":"top"},
+		{"id":"e-hub-p7","fromNode":"hub","fromSide":"bottom","toNode":"p7","toSide":"top"},
+		{"id":"e-hub-p8","fromNode":"hub","fromSide":"bottom","toNode":"p8","toSide":"top"},
+		{"id":"e-hub-p9","fromNode":"hub","fromSide":"bottom","toNode":"p9","toSide":"top"},
+		{"id":"e-hub-p10","fromNode":"hub","fromSide":"bottom","toNode":"p10","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.1-2026-08-14",
+		"frontmatter":{}
+	}
 }
