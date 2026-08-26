@@ -18,13 +18,21 @@ updated: 2026-08-27
 
 ### A1｜zn vs x 最近邻分离
 
-状态：`1 positive work + 1 negative-guard work`
+状态：`2 positive works + 1 negative-guard work`
 
-正向：
+正向 1：
 - 《三国演义》关羽·挂印封金，99/98。
 - 已锁：旧盟/旧义在现实收益冲突中保留最终指导资格；一批曹赐资源/侯印被主动让渡，证明“掌握什么”与“为什么守”必须拆层。
 - 不计纯 zn：赤兔马等局部 x 仍存在。
 - 不计 strict complement：本轮未做双向缺口闭锁。
+
+正向 2：
+- 《水浒传》晁盖·梁山初立后规定劫掠不得伤害客商性命，并在江州劫法场再次制止李逵滥杀百姓，99/98。
+- `x`：山寨人马、劫掠行动、战利品分配与行动边界已进入晁盖现实指挥/处分范围。
+- `zn`：即使拥有现实武力与处分权，也不能因取财、脱险或操作便利任意伤害不抵抗客商/无关百姓。
+- 已锁：**有权做什么是 x；为什么即使有权也不做某些事，是 zn。**
+- 与关羽形成不同机制：关羽是 zn 促使让渡部分 x；晁盖是 zn 主动限制已成立 x 的使用方式。
+- 不计 strict complement：本轮只锁最近邻分离与 co-occurrence，不做双向缺口闭锁。
 
 反向护栏：
 - 《西游记》孙悟空·弼马温因嫌官小弃职，99/98。
@@ -32,7 +40,7 @@ updated: 2026-08-27
 - 但当前弃职高度依赖官阶低、被轻视等外部等级信息，缺少独立通过 zn 冲突排序与未来指导资格门的内部原则。
 - 已锁：**放弃/退出已掌握 x ≠ 自动 zn。**
 
-下一门：同 criterion_version 的第二、第三独立正向作品；positive 与 negative guard 继续分开统计。
+下一门：同 criterion_version 的第三独立正向作品，优先《红楼梦》或《西游记》，且避免重复“弃资源”或“限制暴力权限”机制；positive 与 negative guard 继续分开统计。
 
 ### A2｜纯 x 首轮控制
 
@@ -71,7 +79,7 @@ updated: 2026-08-27
 
 ## B｜尚未达到 pending-review 的候选槽
 
-1. `zn vs x` 第二作品正向控制。
+1. `zn vs x` 第三作品正向控制。
 2. 纯 zn 第二控制（首轮已有 1）。
 3. 纯 x 第二控制（首轮已有 1）。
 4. 伪 zn：口号/称号/阵营/一次牺牲但无未来指导资格。
@@ -135,6 +143,12 @@ updated: 2026-08-27
 
 必须继续检查对象是否真的进入主体占有、调用、处分或排除边界；关系强度与责任原则不能替代 `x`。
 
+第六类边界护栏（由晁盖第二正向控制提示）：
+
+> **zn 限制 x 的使用方式，不等于 x 不成立。**
+
+主体可以真实拥有处分/调用权，同时用内部原则给自己划定“即使有权也不做”的边界。不能把自我限权误写成“其实没有 x”。
+
 ## D｜跨作品晋级门
 
 只有同时满足以下条件才增加 cross-work：
@@ -152,15 +166,15 @@ updated: 2026-08-27
 ## E｜当前统计
 
 ```yaml
-zn_vs_x_positive_controls: 1
-zn_vs_x_positive_works: 1
+zn_vs_x_positive_controls: 2
+zn_vs_x_positive_works: 2
 zn_vs_x_negative_guards: 1
 zn_vs_x_negative_guard_works: 1
 pure_zn_controls: 1
 pure_zn_works: 1
 pure_x_controls: 1
 pure_x_works: 1
-zn_x_cooccurrence_controls: 0
+zn_x_cooccurrence_controls: 1
 strict_zn_x_complement_controls: 0
 pressure_display_positive_controls: 0
 pressure_display_negative_guards: 0
@@ -168,11 +182,15 @@ lifecycle_controls: 0
 pending_review_count: 0
 ```
 
+说明：晁盖案例同时提供 `zn+x` 当前共现证据，但本轮未做 strict complement 双向缺口闭锁，因此只把 `zn_x_cooccurrence_controls` 增加到 1，不增加 strict complement。
+
 ## F｜下一小时最值得整理
 
-第一优先：《水浒传》之外优先《红楼梦》或《西游记》的第二份高纯 `zn vs x` 正向控制：
+第一优先：《红楼梦》或《西游记》的第三份高纯 `zn vs x` 正向控制：
 
-> 主体已真实掌握一项资源/位置/关系 `x`，它与内部不可轻易让渡原则 `zn` 冲突时，主体主动限制或放弃该 `x`，而 `zn` 仍保持未来指导资格。
+> 主体已真实掌握一项资源/位置/关系 `x`，它与内部不可轻易让渡原则 `zn` 冲突时，主体主动限制、让渡或重新划定 `x` 的使用边界，而 `zn` 仍保持未来指导资格。
+
+优先寻找不同机制，例如“创作原则限制已有名利/资源”“关系承诺限制已有处分权”“自我定义限制已有身份/位置”，避免复制关羽弃资源或晁盖限制暴力权限。
 
 第二优先：第二份不同机制 pure-zn，优先承诺、创作原则、关系原则、身份自证等非“侠义救人”母题。
 
