@@ -1,0 +1,108 @@
+---
+type: ten-yuan-fire-axis-review-registry
+authority_level: L4
+knowledge_status: evidence-locked
+status: working-registry
+axis: fire
+pair: zn-x
+governance: L1-L6文件权力与知识成熟度双轴协议_v2.0_20260827
+may_override_canonical: false
+updated: 2026-08-27
+---
+
+# zn ↔ x 火轴待审议清单
+
+> 本文件只做 L4 状态索引，不是正本。`pending-review` 达门后停止自动升格，等待授权审议。
+
+## A｜已锁研究资产
+
+### A1｜zn vs x 最近邻分离
+
+状态：`evidence-locked × 1 work`
+
+- 《三国演义》关羽·挂印封金，99/98。
+- 已锁：旧盟/旧义在现实收益冲突中保留最终指导资格；一批曹赐资源/侯印被主动让渡，证明“掌握什么”与“为什么守”必须拆层。
+- 不计纯 zn：赤兔马等局部 x 仍存在。
+- 不计 strict complement：本轮未做双向缺口闭锁。
+
+下一门：同 criterion_version 第二、第三独立作品；positive 与 negative guard 分开统计。
+
+## B｜尚未达到 pending-review 的候选槽
+
+1. `zn vs x` 第二作品控制。
+2. 纯 zn 正例。
+3. 纯 x 正例。
+4. 伪 zn：口号/称号/阵营/一次牺牲但无未来指导资格。
+5. 伪 x：名义持有/代理授权/临时接触但无实际处分边界。
+6. `zn+x` 共现与 strict complement。
+7. 名义本体 vs 现实本体。
+8. 被承认 vs 真正成立。
+9. 局部本体 vs 整体本体。
+10. 压力显影与解压复位。
+11. 被替代/改写后的端点保留。
+12. 生命周期：原则暂停/退出、资源取得/失去/让渡。
+
+## C｜火轴反例优先协议
+
+当前最重要的第一类 negative guard：
+
+> **放弃/失去 x ≠ 自动 zn。**
+
+优先找：
+
+```text
+主体失去或放弃资源/职位/关系
++
+原因是被迫、策略、资源无价值、换取更大利益或外部命令
++
+没有一项内部不可轻易让渡原则拥有冲突排序与未来指导资格
+→ zn 不成立
+```
+
+第二类 negative guard：
+
+> **外部封号/认可/身份变化 ≠ zn 被改写。**
+
+第三类 negative guard：
+
+> **持有对象 ≠ x 稳定成立。**
+
+必须继续查实际使用、调配、处分、否决、排除以及撤权后是否仍成立。
+
+## D｜跨作品晋级门
+
+只有同时满足以下条件才增加 cross-work：
+
+- 使用同一 `criterion_version`；
+- 事实与分类均达到任务锁定门；
+- 对象层一致；
+- 最近邻已排除；
+- 拿掉与反向测试通过；
+- 第三因素没有替代端点；
+- 不是同作品不同桥段冒充独立作品。
+
+达到仓库规定门槛后新建 `pending-review`，但仍 `may_override_canonical: false`。
+
+## E｜当前统计
+
+```yaml
+zn_vs_x_positive_controls: 1
+zn_vs_x_positive_works: 1
+zn_vs_x_negative_guards: 0
+pure_zn_controls: 0
+pure_x_controls: 0
+zn_x_cooccurrence_controls: 0
+strict_zn_x_complement_controls: 0
+pressure_display_positive_controls: 0
+pressure_display_negative_guards: 0
+lifecycle_controls: 0
+pending_review_count: 0
+```
+
+## F｜下一小时最值得整理
+
+优先《西游记》《水浒传》《红楼梦》中寻找第二份高纯 `zn vs x`：
+
+> 主体已真实掌握一项资源/位置/关系 `x`，它与内部不可轻易让渡原则 `zn` 冲突时，主体主动限制或放弃该 `x`，而 `zn` 仍保持未来指导资格。
+
+同时优先找一份反向护栏，防止“放弃资源 = zn”偷渡。
