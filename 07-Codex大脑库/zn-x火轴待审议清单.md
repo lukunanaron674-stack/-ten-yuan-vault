@@ -167,7 +167,9 @@ x 成立
 
 ### A7｜名义位置 / 外部承认 vs 现实 x
 
-状态：`3 controls / 3 independent works / pending-review`
+状态：`3 positive controls / 3 independent works + 1 negative guard / 1 work / pending-review`
+
+正向控制：
 
 1. 《西游记》孙悟空·齐天大圣空衔 → 权管蟠桃园，99/98。
    - 阶段 A：齐天大圣名位、府署、礼遇与外部承认均真实存在，但被测“天庭公共职事 / 现实管理对象”层仍是“有官无禄 / 不与管事”，因此该层 `x = off`。
@@ -185,11 +187,19 @@ x 成立
    - 阶段 B：刘备“乃许权领徐州事”后，用孙乾、糜竺、陈登，调小沛军马入城并出榜安民，现实治理节点开始围绕其位置运行，徐州治理 `x = on`。
    - 分水岭不是牌印是否递到面前，而是主体真实接受后，同类治理决定是否开始直接现实生效。
 
+反向护栏：
+
+1. 《水浒传》杨志·生辰纲名义提调 → 黄泥冈停歇决定被谢都管现实覆盖，99/98。
+   - 梁中书真实把押送任务交给杨志，并接受其运输方案；杨志也确有催行、约束等部分现场管理动作。
+   - 但在“黄泥冈是否停歇”这个同一对象层，杨志明确坚持不能停，谢都管要求停，众军最终停下；杨志的决定不能稳定直接生效。
+   - 后续买酒节点中，谢都管再次介入，杨志最终让步。
+   - 已锁：**名义授权 + 部分局部管理 ≠ 整个对象层稳定现实 `x`；原节点若仍能在结果生效前现实覆盖，必须按对象层降级。**
+
 已建立：
 
 `07-Codex大脑库/待审议问题_zn-x名义位置外部承认与现实掌握x分层边界_20260827.md`
 
-状态：`L4 / pending-review / may_override_canonical: false / 3 controls / 3 works`。
+状态：`L4 / pending-review / may_override_canonical: false / 3 positive works + 1 negative-guard work`。
 
 纪律：
 
@@ -199,8 +209,9 @@ x 成立
 - 同一人物同一体系内，称号/身份长期不变而现实权限从 off→on，是高价值最小差异控制。
 - **局部 `x` 成立 ≠ 整个任务层 / 组织层全部 `x` 成立。** 权限内化与现实掌握必须按对象层逐项验。
 - **别人想把权给你 ≠ 权已经归你。** 外部交付意向与主体真实接管必须分开。
+- **名义授权即使伴随部分真实管理动作，也不能自动推出整个对象层稳定 `x`；真正硬门是同类决定在现实冲突中能否直接生效，以及原节点是否仍保留事前覆盖 / 否决。**
 
-只增加本研究槽 `3 controls / 3 works` 和一个 L4 `pending-review`，不增加 `zn vs x`、pure-x、co-occurrence、strict、pressure-display 或 lifecycle 既有统计。
+只增加本研究槽的 negative guard 统计，不增加 `zn vs x`、pure-x、co-occurrence、strict、pressure-display 或 lifecycle 既有统计。
 
 ## B｜尚未达到 pending-review 的候选槽
 
@@ -211,7 +222,7 @@ x 成立
 5. 两端表面同在、但第三因素可替代其中一端的伪共现。
 6. 伪 `zn`：口号/称号/阵营/一次牺牲但无未来指导资格。
 7. 伪 `x`：名义持有/代理授权/临时接触但无实际处分边界。
-8. 名义位置 / 外部承认 vs 现实 `x` 的反向护栏：优先找“已经形式接受/持有凭证，但原外部节点仍保留逐次撤回、覆盖或最终否决，所以 `x` 仍不能稳定成立”的高纯控制。
+8. 名义位置 / 外部承认 vs 现实 `x` 的第二份反向护栏：优先另一部独立作品的“已经形式接受/持有凭证，甚至有部分管理动作，但原外部节点仍保留逐次撤回、覆盖或最终否决，所以稳定 `x` 不能整体锁定”。
 9. 被承认 vs 真正成立。
 10. 局部本体 vs 整体本体。
 11. 压力显影与解压复位。
@@ -239,6 +250,7 @@ x 成立
 17. **`zn+x` 共现必须先让两端分别独立过 current canonical；任何一端只靠“看起来像”都不计共现。**
 18. **`x` 真 + 强烈坚持/受辱反应 ≠ `zn+x`；`zn` 真 + 爵位/职位/称号/印信 ≠ `zn+x`。** 两种伪共现都已出现高纯护栏。
 19. **外部交付 / 推举 / 授权意向 ≠ 现实 `x`。** 仍要检查主体是否真实接受、同类决定是否能直接生效、现实节点是否围绕该掌握位置响应。
+20. **名义授权 + 部分真实管理动作 ≠ 稳定全局 `x`。** 同一对象层若仍存在原节点的现实事前覆盖 / 最终否决，必须按对象层降级，不能由“总体负责人”名义向全部子权限倒灌。
 
 ## D｜跨作品晋级门
 
@@ -274,6 +286,8 @@ strict_zn_x_complement_negative_guards: 4
 strict_zn_x_complement_negative_guard_works: 3
 nominal_identity_vs_real_x_controls: 3
 nominal_identity_vs_real_x_works: 3
+nominal_identity_vs_real_x_negative_guards: 1
+nominal_identity_vs_real_x_negative_guard_works: 1
 pressure_display_positive_controls: 0
 pressure_display_negative_guards: 0
 lifecycle_controls: 1
@@ -281,7 +295,7 @@ lifecycle_works: 1
 pending_review_count: 4
 ```
 
-说明：`zn+x` 当前是 **3 positive / 2 negative guards / 2 works**，两类伪共现护栏已经分别覆盖“x 真但 zn 不过门”和“zn 真但所谓 x 只是名位/外部认可”。strict 当前是 **0 positive / 4 negative guards / 3 works**；严颜增加的是同作品不同 `x` 类型的真实生命周期旁证，不增加 strict cross-work。lifecycle 当前为 **1 control / 1 work**。名义位置 / 外部承认 vs 现实 `x` 当前为 **3 controls / 3 independent works / pending-review**，新增刘备徐州作为第三作品控制。
+说明：`zn+x` 当前是 **3 positive / 2 negative guards / 2 works**，两类伪共现护栏已经分别覆盖“x 真但 zn 不过门”和“zn 真但所谓 x 只是名位/外部认可”。strict 当前是 **0 positive / 4 negative guards / 3 works**；严颜增加的是同作品不同 `x` 类型的真实生命周期旁证，不增加 strict cross-work。lifecycle 当前为 **1 control / 1 work**。名义位置 / 外部承认 vs 现实 `x` 当前为 **3 positive controls / 3 independent works + 1 negative guard / 1 work / pending-review**，杨志是首份“名义授权已给、部分管理动作存在，但同一决定仍被原节点现实覆盖”的反向护栏。
 
 ## F｜下一小时最值得整理
 
@@ -293,7 +307,7 @@ pending_review_count: 4
 
 第四优先：找一个两端表面同在、但第三因素可以替代其中一端的伪共现。
 
-第五优先：给“名义位置 / 外部承认 ≠ 现实 `x`”新 pending-review 找第一份反向护栏，优先“主体看似已经接受/持有凭证，但原外部节点仍保留现实撤回、覆盖或最终否决”的案例；不再堆第四个普通正例。
+第五优先：寻找第二部独立作品的“名义授权 + 原节点现实覆盖”反向护栏，验证杨志不是押运结构特例。
 
 第六优先：找第二部独立作品的“已成立 `x` 受外部命令/现实否决/惩罚压力限制，但 `zn` 不成立”高纯反例。
 
