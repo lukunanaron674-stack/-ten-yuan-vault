@@ -101,11 +101,12 @@ updated: 2026-08-28
 
 ### A8｜被承认 vs 真正成立
 
-状态：`2 positive controls / 2 independent works + 1 negative guard / 1 work / evidence-locked`。
+状态：`3 positive controls / 3 independent works + 1 negative guard / 1 work / pending-review`。
 
 正向：
 - 《水浒传》宋江，99/98：正式招安/赦免以前，相关 `zn` 已独立成立；后续官方承认只是追上。
 - 《红楼梦》鸳鸯，99/98：贾母公开支持以前，拒绝强纳的 `zn` 已在利益与威胁冲突中独立过门；贾母保护后来追上并改善现实结果。
+- 《三国演义》关羽，99/98：曹操公开称许“不忘故主”“财贿不动其心、爵禄不移其志”以前，旧盟/旧义 `zn` 已在土山条件与辞曹反奖励选择中独立成立；曹操后续承认只是追上。
 
 反向：
 - 《三国演义》吕布，99/98：认董卓义父、封赏、组织位置与公开关系承认很强，但不能替代 `zn` 的无奖励门、冲突排序与未来调用资格。
@@ -114,7 +115,7 @@ updated: 2026-08-28
 
 > **外部承认 / 保护可以追上一个已经成立的 `zn`，但既不是 `zn` 的必要条件，也不是充分条件。**
 
-本槽 2 positive works，尚未到 3 作品门，不建立 pending-review。
+待审议：`待审议问题_zn-x外部承认与内部zn真实成立时序分层边界_20260828.md`。
 
 ### A9｜pressure display
 
@@ -151,8 +152,8 @@ nominal_identity_vs_real_x_works: 3
 nominal_identity_vs_real_x_negative_guards: 1
 nominal_identity_vs_real_x_negative_guard_works: 1
 
-recognition_vs_establishment_controls: 2
-recognition_vs_establishment_works: 2
+recognition_vs_establishment_controls: 3
+recognition_vs_establishment_works: 3
 recognition_vs_establishment_negative_guards: 1
 recognition_vs_establishment_negative_guard_works: 1
 
@@ -161,7 +162,7 @@ lifecycle_works: 3
 pressure_display_positive_controls: 0
 pressure_display_negative_guards: 0
 
-pending_review_count: 6
+pending_review_count: 7
 ```
 
 ## C｜当前反误判纪律
@@ -186,6 +187,7 @@ pending_review_count: 6
 18. 强外部承认 ≠ `zn`。
 19. 被承认 / 赦免 / 受诏 ≠ 自动形成现实 `x`。
 20. 高责任执行 / 承担代价 ≠ `zn`；先拿掉外部委任、功名/身份收益、恩遇、问责与惩罚压力，再查未来指导资格。
+21. 外部承认可以追上既有 `zn`，但不能把承认时点回填成 `zn` 生成时点。
 
 ## D｜当前 pending-review 索引
 
@@ -195,17 +197,17 @@ pending_review_count: 6
 4. `待审议问题_zn-x名义位置外部承认与现实掌握x分层边界_20260827.md`
 5. `待审议问题_zn-x纯zn独立成立与责任对象不等于现实x边界_20260827.md`
 6. `待审议问题_zn-x生命周期中x窗口变化与zn未来调用资格分离边界_20260827.md`
+7. `待审议问题_zn-x外部承认与内部zn真实成立时序分层边界_20260828.md`
 
 ## E｜下一轮高价值缺口
 
 1. 第一份真正通过 `x→zn` 不可替代现实落点门的 strict 正例。
 2. lifecycle 第一份高纯反向护栏。
 3. pure-`zn` 第一份“隐藏稳定 x”反例：表面像责任原则，实际被测对象的退出/归属/处分已稳定掌握，不能继续计 pure-`zn`。
-4. **被承认 vs 真正成立第三独立正向作品**：优先《西游记》，避免重复宋江/鸳鸯的保护/合法化皮肤；若达到 3 works 再建立 pending-review。
-5. 被承认 vs 真正成立第二独立反向作品：不要复制吕布“关系命名 + 封赏”同型皮肤。
-6. 第二部“`zn` 真 + 假 `x`”伪共现。
-7. 第三因素可替代一端的伪共现。
-8. 第二部“名义授权 + 原节点现实覆盖”反向护栏。
-9. 第二部“已成立 `x` 受外部命令/否决限制，但 `zn` 不成立”护栏。
-10. 第二种 pure-`x`。
-11. pressure display 首份高纯控制。
+4. 被承认 vs 真正成立第二独立反向作品：不要复制吕布“关系命名 + 封赏”同型皮肤。
+5. 第二部“`zn` 真 + 假 `x`”伪共现。
+6. 第三因素可替代一端的伪共现。
+7. 第二部“名义授权 + 原节点现实覆盖”反向护栏。
+8. 第二部“已成立 `x` 受外部命令/否决限制，但 `zn` 不成立”护栏。
+9. 第二种 pure-`x`。
+10. pressure display 首份高纯控制。
