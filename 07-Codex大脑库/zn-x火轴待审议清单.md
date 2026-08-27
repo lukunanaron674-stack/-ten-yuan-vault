@@ -83,12 +83,34 @@ updated: 2026-08-27
 
 下一门：第二份不同作品 pure-zn，优先非“侠义救人”机制。
 
+### A4｜zn + x 当前共现
+
+状态：`3 controls / 3 works / pending-review`
+
+1. 《三国演义》关羽·挂印封金关键冲突窗口，99/98。
+   - 旧义 `zn` 已进入当前冲突排序时，金银、赤兔马等局部 `x` 仍真实存在。
+   - 不是“先 x 全部消失，后 zn 才出现”；而是 `zn` 在已掌握对象仍存在时决定哪些 `x` 应让渡。
+
+2. 《水浒传》晁盖·梁山劫掠处分，99/98。
+   - `zn` 与山寨武力/战利品处分 `x` 同时成立，原则限制 `x` 的使用方式。
+
+3. 《西游记》唐僧·三打白骨精 / 草寇事件，99/97。
+   - `zn` 与师徒关系处分 `x` 同时成立，原则规定惩戒、保留与终止条件。
+
+已建立：
+
+`07-Codex大脑库/待审议问题_zn-x当前共现与严格补不可等同边界_20260827.md`
+
+纪律：**co-occurrence ≠ strict complement。** 三部作品只证明同一当前窗口里两端可以分别独立成立；strict `zn↔x` 仍必须另做双向缺口、第三因素和对象层测试。
+
+下一门：不再堆第四个普通共现正例；优先找伪共现反例，并开始分别对关羽 / 晁盖 / 唐僧做 strict 双向缺口压力测试。
+
 ## B｜尚未达到 pending-review 的候选槽
 
 1. 纯 `zn` 第二控制。
 2. 纯 `x` 第二控制。
-3. `zn+x` 共现第三独立作品；当前晁盖、唐僧 2 controls / 2 works。
-4. strict `zn↔x` complement：当前 0，禁止从 co-occurrence 自动升级。
+3. strict `zn↔x` complement：当前 0，禁止从 co-occurrence 自动升级。
+4. 伪 `zn+x` 共现：表面两端同框但实际仅一端独立过门。
 5. 伪 `zn`：口号/称号/阵营/一次牺牲但无未来指导资格。
 6. 伪 `x`：名义持有/代理授权/临时接触但无实际处分边界。
 7. 名义本体 vs 现实本体。
@@ -126,6 +148,8 @@ updated: 2026-08-27
 
 第七类：**`zn` 限制 `x` 的使用方式，不等于 `x` 不成立。** 最短：有权不用 ≠ 没有权。
 
+第八类：**`zn+x` 当前共现 ≠ strict `zn↔x`。** 两端同段独立成立后，仍需另过双向缺口与第三因素门。
+
 ## D｜跨作品晋级门
 
 只有同时满足以下条件才增加 cross-work：
@@ -151,25 +175,25 @@ pure_zn_controls: 1
 pure_zn_works: 1
 pure_x_controls: 1
 pure_x_works: 1
-zn_x_cooccurrence_controls: 2
-zn_x_cooccurrence_works: 2
+zn_x_cooccurrence_controls: 3
+zn_x_cooccurrence_works: 3
 strict_zn_x_complement_controls: 0
 pressure_display_positive_controls: 0
 pressure_display_negative_guards: 0
 lifecycle_controls: 0
-pending_review_count: 1
+pending_review_count: 2
 ```
 
-说明：positive 与 negative guard 严格分账；晁盖、唐僧提供 `zn+x` 共现但均未完成 strict 双向缺口闭锁。孙悟空、贾政分别代表“退出 `x` 不自动 `zn`”与“外部约束限制 `x` 不自动 `zn`”两类不同反例。
+说明：positive 与 negative guard 严格分账；`zn vs x` 分层与 `zn+x` 当前共现目前各自达到 3 works pending-review，但两者都不得自动升级为 strict complement。strict 仍为 0。
 
 ## F｜下一小时最值得整理
 
-第一优先：找第二部独立作品的“已成立 `x` 受外部命令/现实否决/惩罚压力限制，但 `zn` 不成立”高纯反例。
+第一优先：对关羽 / 晁盖 / 唐僧中选择一条做 strict `zn↔x` 双向缺口压力测试，优先寻找反例而不是为了 strict 数量硬锁。
 
-第二优先：补第三份不同作品 `zn+x` co-occurrence；达到三作品后再建立独立共现 pending-review，随后才开始 strict complement 双向拿掉。
+第二优先：找第一份“表面 zn+x、实际仅一端独立过门”的伪共现反例。
 
-第三优先：第二份不同机制 pure-zn，优先承诺、创作原则、关系原则、身份自证等非侠义母题。
+第三优先：找第二部独立作品的“已成立 `x` 受外部命令/现实否决/惩罚压力限制，但 `zn` 不成立”高纯反例。
 
-第四优先：第二份不同机制 pure-x，优先稳定地盘、权限或关系掌握。
+第四优先：第二份不同机制 pure-zn，优先承诺、创作原则、关系原则、身份自证等非侠义母题。
 
-第五优先：第二独立作品“放弃 `x` ≠ `zn`”反向护栏。
+第五优先：第二份不同机制 pure-x，优先稳定地盘、权限或关系掌握。
