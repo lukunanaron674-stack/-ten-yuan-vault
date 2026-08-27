@@ -39,11 +39,15 @@ updated: 2026-08-28
 
 ### A3｜pure zn
 
-状态：`3 controls / 3 works / pending-review`。
+状态：`3 positive controls / 3 works + 1 negative guard / 1 work / pending-review`。
 
+正向：
 - 《水浒传》鲁智深：他者救护 / 关系责任原则，99/97。
 - 《红楼梦》鸳鸯：主体自我决定 / 拒绝强制定义原则，99/96。
 - 《三国演义》刘备携民渡江：领导 / 公共责任原则，99/96。
+
+反向护栏：
+- 《水浒传》杨志押送生辰纲，99/98：高责任、强执行与高代价主要受外部委任、功名/恩遇与失职压力解释；拿掉这些外因后缺同一责任原则跨情境未来调用证据，因此不得把“很负责”直接锁成 pure `zn`。
 
 待审议：`待审议问题_zn-x纯zn独立成立与责任对象不等于现实x边界_20260827.md`。
 
@@ -128,6 +132,8 @@ zn_vs_x_negative_guard_works: 2
 
 pure_zn_controls: 3
 pure_zn_works: 3
+pure_zn_negative_guards: 1
+pure_zn_negative_guard_works: 1
 pure_x_controls: 1
 pure_x_works: 1
 
@@ -179,6 +185,7 @@ pending_review_count: 6
 17. 被承认的时间 ≠ `zn` 真正成立的时间。
 18. 强外部承认 ≠ `zn`。
 19. 被承认 / 赦免 / 受诏 ≠ 自动形成现实 `x`。
+20. 高责任执行 / 承担代价 ≠ `zn`；先拿掉外部委任、功名/身份收益、恩遇、问责与惩罚压力，再查未来指导资格。
 
 ## D｜当前 pending-review 索引
 
@@ -193,7 +200,7 @@ pending_review_count: 6
 
 1. 第一份真正通过 `x→zn` 不可替代现实落点门的 strict 正例。
 2. lifecycle 第一份高纯反向护栏。
-3. pure-`zn` 第一份高纯伪正例。
+3. pure-`zn` 第一份“隐藏稳定 x”反例：表面像责任原则，实际被测对象的退出/归属/处分已稳定掌握，不能继续计 pure-`zn`。
 4. **被承认 vs 真正成立第三独立正向作品**：优先《西游记》，避免重复宋江/鸳鸯的保护/合法化皮肤；若达到 3 works 再建立 pending-review。
 5. 被承认 vs 真正成立第二独立反向作品：不要复制吕布“关系命名 + 封赏”同型皮肤。
 6. 第二部“`zn` 真 + 假 `x`”伪共现。
