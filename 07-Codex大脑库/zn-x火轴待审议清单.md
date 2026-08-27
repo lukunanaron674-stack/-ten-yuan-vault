@@ -103,24 +103,32 @@ updated: 2026-08-27
 
 纪律：**co-occurrence ≠ strict complement。** 三部作品只证明同一当前窗口里两端可以分别独立成立；strict `zn↔x` 仍必须另做双向缺口、第三因素和对象层测试。
 
-strict 压力测试当前已产生两份独立作品反向护栏：
+strict 压力测试当前已产生三份独立作品反向护栏：
 
 1. 《三国演义》关羽·挂印封金，99/97：`zn→x` 缺口成立，但拿掉本轮曹赐资源 `x` 后，旧义仍可通过“归刘、护送二夫人、离曹寻找刘备”等现实对象/行动稳定落地，因此 `x→zn` 不成立；当前更适合 `zn→x` 单向补，不计 strict 正例。
 2. 《水浒传》晁盖·梁山劫掠处分，99/98：`zn→x` 缺口成立；拿掉梁山人马/劫掠处分 `x` 后，“不任意伤害无关者”仍有明确现实对象，并可继续约束主体自身行为，因此 `x→zn` 不成立；同样只计 `zn→x` 单向补，不计 strict 正例。
+3. 《西游记》唐僧·三打白骨精 / 草寇事件，99/97：`zn→x` 缺口成立；拿掉对孙悟空的师徒处分/约束 `x` 后，“不轻伤人命”仍可约束唐僧自身判断、其他关系与其他现实生命对象，因此 `x→zn` 不成立；同样只计 `zn→x` 单向补，不计 strict 正例。
+
+已另建 strict 专项待审议：
+
+`07-Codex大脑库/待审议问题_zn-x严格补中x是否为zn不可替代现实落点边界_20260827.md`
+
+状态：`L4 / pending-review / may_override_canonical: false / strict 0 positive + 3 negative guards / 3 works`。
 
 新增纪律：
 
 - **一个 `x` 对 `zn` 有帮助，不等于它在 strict 意义下补 `zn`。必须证明拿掉该 `x` 后，`zn` 重新出现“没有现实对象 / 没有可保护范围 / 没有我方边界”的可命名缺口。**
 - **`x` 扩大 / 便利 / 强化 `zn` 的执行范围，不等于 `x` 是 `zn` 不可替代的现实落点。**
 - **原则保护、对待或评价谁，不等于谁必须先进入主体的 `x` 掌握边界。**
+- **关系处分 `x` 能直接实施原则，也不等于该 `x` 是原则唯一现实落点。**
 
-下一门：不再重复关羽/晁盖；第一优先对唐僧做第三份 strict 双向缺口压力测试。若形成第三独立作品同型负控制，再单独建立 strict 边界 pending-review；同时继续寻找伪共现反例。
+下一门：不再堆第四个普通共现或第四个同型 strict 负控制；第一优先寻找真正通过 `x→zn` 不可替代现实落点门的 strict 正例候选，同时寻找伪共现反例。
 
 ## B｜尚未达到 pending-review 的候选槽
 
 1. 纯 `zn` 第二控制。
 2. 纯 `x` 第二控制。
-3. strict `zn↔x` complement：当前 **0 positive + 2 negative guards / 2 works**，禁止从 co-occurrence 自动升级。
+3. strict `zn↔x` positive：当前 **0**；strict 边界已单独达到 `3 negative guards / 3 works / pending-review`，禁止从 co-occurrence 自动升级。
 4. 伪 `zn+x` 共现：表面两端同框但实际仅一端独立过门。
 5. 伪 `zn`：口号/称号/阵营/一次牺牲但无未来指导资格。
 6. 伪 `x`：名义持有/代理授权/临时接触但无实际处分边界。
@@ -165,6 +173,8 @@ strict 压力测试当前已产生两份独立作品反向护栏：
 
 第十类：**原则保护 / 对待 / 评价的对象 ≠ 该对象必须进入 `x`。** `zn` 的现实指向对象与 `x` 的掌握对象必须分层；不能把“我要保护谁”偷换成“谁归我掌握”。
 
+第十一类：**现实执行接口 ≠ 不可替代现实落点。** 一个 `x` 能直接实施 `zn`，仍须检验拿掉该接口后原则是否可由主体自身行为、其他关系或其他对象继续稳定承载。
+
 ## D｜跨作品晋级门
 
 只有同时满足以下条件才增加 cross-work：
@@ -193,21 +203,21 @@ pure_x_works: 1
 zn_x_cooccurrence_controls: 3
 zn_x_cooccurrence_works: 3
 strict_zn_x_complement_controls: 0
-strict_zn_x_complement_negative_guards: 2
-strict_zn_x_complement_negative_guard_works: 2
+strict_zn_x_complement_negative_guards: 3
+strict_zn_x_complement_negative_guard_works: 3
 pressure_display_positive_controls: 0
 pressure_display_negative_guards: 0
 lifecycle_controls: 0
-pending_review_count: 2
+pending_review_count: 3
 ```
 
-说明：positive 与 negative guard 严格分账；`zn vs x` 分层与 `zn+x` 当前共现目前各自达到 3 works pending-review，但两者都不得自动升级为 strict complement。strict 当前是 **0 positive / 2 negative guards / 2 works**。
+说明：positive 与 negative guard 严格分账；`zn vs x` 分层、`zn+x` 当前共现、strict `x→zn` 不可替代现实落点门目前分别达到 pending-review。strict 当前为 **0 positive / 3 negative guards / 3 works**。
 
 ## F｜下一小时最值得整理
 
-第一优先：对《西游记》唐僧做第三份 strict `zn↔x` 双向缺口压力测试，优先尝试打成反例；重点检查拿掉师徒处分/约束 `x` 后，“不可轻率伤害人命”的 `zn` 是否真的失去 current canonical 要求的现实落点 / 可保护对象范围，还是仍可约束唐僧自己的行为并指向所有人命。
+第一优先：寻找第一份真正通过 `x→zn` 不可替代现实落点门的 strict 正例候选。要求拿掉被测 `x` 后，`zn` 虽仍成立，但确实重新出现“没有现实对象 / 没有可保护对象范围 / 没有明确我方边界”，且主体自身行为、其他关系或其他对象不能稳定替代。
 
-第二优先：找第一份“表面 zn+x、实际仅一端独立过门”的伪共现反例。
+第二优先：找第一份“表面 `zn+x`、实际仅一端独立过门”的伪共现反例。
 
 第三优先：找第二部独立作品的“已成立 `x` 受外部命令/现实否决/惩罚压力限制，但 `zn` 不成立”高纯反例。
 
