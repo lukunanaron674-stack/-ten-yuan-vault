@@ -103,13 +103,19 @@ updated: 2026-08-27
 
 纪律：**co-occurrence ≠ strict complement。** 三部作品只证明同一当前窗口里两端可以分别独立成立；strict `zn↔x` 仍必须另做双向缺口、第三因素和对象层测试。
 
-下一门：不再堆第四个普通共现正例；优先找伪共现反例，并开始分别对关羽 / 晁盖 / 唐僧做 strict 双向缺口压力测试。
+strict 首轮压力测试已经产生第一份反向护栏：
+
+- 《三国演义》关羽·挂印封金，99/97：`zn→x` 缺口成立，但拿掉本轮曹赐资源 `x` 后，旧义仍可通过“归刘、护送二夫人、离曹寻找刘备”等现实对象/行动稳定落地，因此 `x→zn` 不成立；当前更适合 `zn→x` 单向补，不计 strict 正例。
+
+新增纪律：**一个 `x` 对 `zn` 有帮助，不等于它在 strict 意义下补 `zn`。必须证明拿掉该 `x` 后，`zn` 重新出现“没有现实对象 / 没有可保护范围 / 没有我方边界”的可命名缺口。**
+
+下一门：不再堆第四个普通共现正例；优先继续对晁盖、唐僧做 strict 双向缺口压力测试，并寻找伪共现反例。
 
 ## B｜尚未达到 pending-review 的候选槽
 
 1. 纯 `zn` 第二控制。
 2. 纯 `x` 第二控制。
-3. strict `zn↔x` complement：当前 0，禁止从 co-occurrence 自动升级。
+3. strict `zn↔x` complement：当前 **0 positive + 1 negative guard**，禁止从 co-occurrence 自动升级。
 4. 伪 `zn+x` 共现：表面两端同框但实际仅一端独立过门。
 5. 伪 `zn`：口号/称号/阵营/一次牺牲但无未来指导资格。
 6. 伪 `x`：名义持有/代理授权/临时接触但无实际处分边界。
@@ -150,6 +156,8 @@ updated: 2026-08-27
 
 第八类：**`zn+x` 当前共现 ≠ strict `zn↔x`。** 两端同段独立成立后，仍需另过双向缺口与第三因素门。
 
+第九类：**`x` 对 `zn` 有现实帮助 ≠ strict `x→zn`。** 必须拿掉被测 `x` 后观察 `zn` 是否失去现实落点、可保护对象范围或明确我方边界；若仍有其他既有对象/关系/行动稳定承载该原则，则不能锁 strict。
+
 ## D｜跨作品晋级门
 
 只有同时满足以下条件才增加 cross-work：
@@ -178,17 +186,19 @@ pure_x_works: 1
 zn_x_cooccurrence_controls: 3
 zn_x_cooccurrence_works: 3
 strict_zn_x_complement_controls: 0
+strict_zn_x_complement_negative_guards: 1
+strict_zn_x_complement_negative_guard_works: 1
 pressure_display_positive_controls: 0
 pressure_display_negative_guards: 0
 lifecycle_controls: 0
 pending_review_count: 2
 ```
 
-说明：positive 与 negative guard 严格分账；`zn vs x` 分层与 `zn+x` 当前共现目前各自达到 3 works pending-review，但两者都不得自动升级为 strict complement。strict 仍为 0。
+说明：positive 与 negative guard 严格分账；`zn vs x` 分层与 `zn+x` 当前共现目前各自达到 3 works pending-review，但两者都不得自动升级为 strict complement。strict 当前仍是 **0 positive / 1 negative guard**。
 
 ## F｜下一小时最值得整理
 
-第一优先：对关羽 / 晁盖 / 唐僧中选择一条做 strict `zn↔x` 双向缺口压力测试，优先寻找反例而不是为了 strict 数量硬锁。
+第一优先：对《水浒传》晁盖做第二份 strict `zn↔x` 双向缺口压力测试，优先寻找反例而不是为了 strict 数量硬锁；重点检查拿掉现实山寨处分 `x` 后，“不滥伤无关者”这一 `zn` 是否真的失去 current canonical 所要求的现实落点 / 可保护对象范围。
 
 第二优先：找第一份“表面 zn+x、实际仅一端独立过门”的伪共现反例。
 
