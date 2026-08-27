@@ -145,23 +145,30 @@ x 成立
 - 原则后续允许关系改变，不等于原则消失；应先检查它是否只是在重新规定“什么条件下可以改变”。
 - lifecycle 与 strict negative guard 分开计数；同一案例可以承担两种研究用途，但不能重复增加独立作品数。
 
-### A7｜名义身份 / 高称号 vs 现实 x 首轮控制
+### A7｜名义身份 / 高称号 vs 现实 x
 
-状态：`1 control / 1 work / evidence-locked`
+状态：`2 controls / 2 independent works / evidence-locked`
 
-- 《西游记》孙悟空·齐天大圣空衔 → 权管蟠桃园，99/98。
-- 阶段 A：齐天大圣名位、府署、礼遇与外部承认均真实存在，但被测“天庭公共职事 / 现实管理对象”层仍是“有官无禄 / 不与管事”，因此该层 `x = off`。
-- 阶段 B：玉帝明确授予“权管蟠桃园”职事后，孙悟空进入园务，土地与各类力士围绕其管理位置响应，被测园务管理 `x = on`。
-- `zn` 不由称号自动推出；追求高位、外部认可与品级比较不能替代内部不可轻易让渡原则的独立证据。
+1. 《西游记》孙悟空·齐天大圣空衔 → 权管蟠桃园，99/98。
+   - 阶段 A：齐天大圣名位、府署、礼遇与外部承认均真实存在，但被测“天庭公共职事 / 现实管理对象”层仍是“有官无禄 / 不与管事”，因此该层 `x = off`。
+   - 阶段 B：玉帝明确授予“权管蟠桃园”职事后，孙悟空进入园务，土地与各类力士围绕其管理位置响应，被测园务管理 `x = on`。
+   - `zn` 不由称号自动推出；追求高位、外部认可与品级比较不能替代内部不可轻易让渡原则的独立证据。
+
+2. 《红楼梦》王熙凤·原有贾府身份 / 当家声望 → 协理宁国府后局部处分 `x` 才成立，99/98。
+   - 阶段 A：原有家族身份、管理经验、办事声望存在，但这些不能自动推出“宁府丧事期间的日常人员处分权已经归她”。
+   - 阶段 B：贾珍请托、王夫人放行、宁国府对牌交付后，凤姐进入协理位置；第14回迟到媳妇的处罚由凤姐直接决定并现实生效，之后才回覆，锁定该局部对象层 `x = on`。
+   - 重要事项仍有上位回问边界，因此只锁宁府局部日常处分 `x`，不向“整个宁府所有权限”倒灌。
+   - `zn` 不由能干、揽事或管理声望自动推出。
 
 纪律：
 
 - **名义身份 / 高称号 / 外部承认 ≠ 现实 `x`。**
 - **现实 `x` 必须看到被测对象真正进入主体调用、管理、处分或排除边界。**
 - **名义位置不是现实 `x` 的必要条件，也不是充分条件。**
-- 同一人物同一体系内，称号长期不变而现实权限从 off→on，是高价值最小差异控制。
+- 同一人物同一体系内，称号/身份长期不变而现实权限从 off→on，是高价值最小差异控制。
+- **局部 `x` 成立 ≠ 整个任务层 / 组织层全部 `x` 成立。** 权限内化与现实掌握必须按对象层逐项验。
 
-只增加本研究槽 `1 control / 1 work`，不增加 `zn vs x`、pure-x、co-occurrence、strict、pressure-display 或 lifecycle 既有统计。
+只增加本研究槽 `2 controls / 2 works`，不增加 `zn vs x`、pure-x、co-occurrence、strict、pressure-display 或 lifecycle 既有统计。
 
 ## B｜尚未达到 pending-review 的候选槽
 
@@ -171,7 +178,7 @@ x 成立
 4. 伪 `zn+x` 共现：表面两端同框但实际仅一端独立过门。
 5. 伪 `zn`：口号/称号/阵营/一次牺牲但无未来指导资格。
 6. 伪 `x`：名义持有/代理授权/临时接触但无实际处分边界。
-7. 名义身份 / 高称号 vs 现实 `x` 第二控制：优先《三国演义》《水浒传》《红楼梦》的同人相邻最小差异。
+7. 名义身份 / 高称号 vs 现实 `x` 第三控制：优先《三国演义》或《水浒传》的同人相邻最小差异；第三独立作品 ≥95% 后才建立 pending-review。
 8. 被承认 vs 真正成立。
 9. 局部本体 vs 整体本体。
 10. 压力显影与解压复位。
@@ -194,7 +201,8 @@ x 成立
 12. **真实失去 `x` 后 `zn` 仍持续，是比纯反事实拿掉更强的生命周期证据。**
 13. **关系后来改变 ≠ 原 `zn` 必然消失。** 应检验原则是否只是重新界定可接受改变的条件。
 14. **名义身份 / 高称号 / 外部承认 ≠ 现实 `x`。** 必须另证被测对象层的实际调用、管理、处分或排除边界。
-15. **称号长期存在而现实权限 off→on，说明名义位置与现实掌握必须分层。**
+15. **称号 / 身份长期存在而现实权限 off→on，说明名义位置与现实掌握必须分层。**
+16. **局部现实 `x` 成立 ≠ 整个组织 / 任务对象层全部 `x` 成立。** 不得由一次局部独立处分向全局倒灌。
 
 ## D｜跨作品晋级门
 
@@ -226,8 +234,8 @@ zn_x_cooccurrence_works: 3
 strict_zn_x_complement_controls: 0
 strict_zn_x_complement_negative_guards: 4
 strict_zn_x_complement_negative_guard_works: 3
-nominal_identity_vs_real_x_controls: 1
-nominal_identity_vs_real_x_works: 1
+nominal_identity_vs_real_x_controls: 2
+nominal_identity_vs_real_x_works: 2
 pressure_display_positive_controls: 0
 pressure_display_negative_guards: 0
 lifecycle_controls: 1
@@ -235,7 +243,7 @@ lifecycle_works: 1
 pending_review_count: 3
 ```
 
-说明：strict 当前是 **0 positive / 4 negative guards / 3 works**；严颜增加的是同作品不同 `x` 类型的真实生命周期旁证，不增加 strict cross-work。lifecycle 当前为 **1 control / 1 work**。名义身份/高称号 vs 现实 `x` 当前为 **1 control / 1 work**，尚未达到 pending-review。
+说明：strict 当前是 **0 positive / 4 negative guards / 3 works**；严颜增加的是同作品不同 `x` 类型的真实生命周期旁证，不增加 strict cross-work。lifecycle 当前为 **1 control / 1 work**。名义身份/高称号 vs 现实 `x` 当前为 **2 controls / 2 independent works**，尚未达到 pending-review。
 
 ## F｜下一小时最值得整理
 
@@ -245,7 +253,7 @@ pending_review_count: 3
 
 第三优先：找第一份“表面 `zn+x`、实际仅一端独立过门”的伪共现反例。
 
-第四优先：找第二份“名义身份 / 高称号 / 外部承认 ≠ 现实 `x`”跨作品最小控制。
+第四优先：找第三份“名义身份 / 高称号 / 外部承认 ≠ 现实 `x`”跨作品最小控制，优先《三国演义》或《水浒传》；第三作品 ≥95% 后才建立独立 pending-review。
 
 第五优先：找第二部独立作品的“已成立 `x` 受外部命令/现实否决/惩罚压力限制，但 `zn` 不成立”高纯反例。
 
