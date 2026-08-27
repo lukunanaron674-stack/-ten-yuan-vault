@@ -171,7 +171,7 @@ updated: 2026-08-27
 
 ### A6｜生命周期控制
 
-状态：`2 controls / 2 independent works / evidence-locked`
+状态：`3 controls / 3 independent works / pending-review`
 
 1. 《三国演义》严颜·巴郡守城 → 城失被擒 → 拒绝威逼屈降 → 条件改变后自愿归附，99/97。
    - 生命周期链：`x 成立 → x 真实失去 → zn 仍持续 → 关系条件改变 → zn 继续规定新的可接受边界`。
@@ -184,13 +184,27 @@ updated: 2026-08-27
    - 机制：**当前关系 `x` 窗口 off→on，不足以删除 `zn` 的未来调用资格。**
    - 本案只增加 lifecycle 统计，不重复增加 `zn vs x`、co-occurrence 或 strict 既有统计。
 
+3. 《水浒传》宋江·郓城押司现实职事 `x` → 杀惜后旧 `x` 失去 → 后期梁山新 `x` 形成，99/98。
+   - 旧 `x`：郓城县押司值日、公文处理与县衙事务的现实职事权限；杀阎婆惜后逃亡/刺配，该旧 `x` 真实断开。
+   - `zn`：即使被逼出原秩序，也不愿把永久草寇化当作最终政治/法理归属；旧 `x` 已失时仍拒绝被梁山强行截取入伙，坚持不杀防送公人、不擅开枷、先赴江州接受处分。
+   - 后期完全不同的梁山军事/组织 `x` 形成后，同一 `zn` 继续限制新权力的用途与最终方向，持续追求归顺。
+   - 机制：**old `x` lost → different new `x` later formed，而同一 `zn` 跨载体持续并重新定向新 `x`。**
+   - 本案只增加 lifecycle 统计，不重复增加 pure-zn、co-occurrence 或 strict 既有统计。
+
+已建立：
+
+`07-Codex大脑库/待审议问题_zn-x生命周期中x窗口变化与zn未来调用资格分离边界_20260827.md`
+
+状态：`L4 / pending-review / may_override_canonical: false / 3 positive works`。
+
 纪律：
 
 - **`x` 失去 ≠ `zn` 自动失去。**
 - **`x` 当前窗口关闭 ≠ `zn` 的未来调用资格被删除。**
+- **旧 `x` 失去、后来不同新 `x` 形成 ≠ `zn` 必须被替换。** `x lifecycle` 与 `zn lifecycle` 必须分别记录。
 - 原则后续允许关系改变，不等于原则消失；应先检查它是否只是在重新规定“什么条件下可以改变”。
 - lifecycle 与 strict negative guard 分开计数；同一案例可以承担两种研究用途，但不能重复增加独立作品数。
-- 严颜与唐僧机制不同：前者测试“真实失去 `x` 后 `zn` 仍直接持续”，后者测试“关系 `x` 窗口关闭并恢复后，同一 `zn` 仍可跨阶段再次调用”。
+- 严颜、唐僧、宋江三案机制不同：分别覆盖“真实失去 `x` 后 `zn` 同窗口持续”“关系 `x` off→on 而 `zn` 保留未来调用资格”“旧 `x` 丢失/新 `x` 替换而同一 `zn` 跨载体持续”。
 
 ### A7｜名义位置 / 外部承认 vs 现实 x
 
@@ -253,7 +267,7 @@ updated: 2026-08-27
 9. 局部本体 vs 整体本体。
 10. 压力显影与解压复位。
 11. 被替代/改写后的端点保留。
-12. lifecycle 第三控制：优先找与现有两案不同的机制，例如 `zn` 暂停/退出但 `x` 继续，或压力解除后旧 `zn` 是否真正复位；不再复制“x off 但 zn 未来资格保留”。
+12. lifecycle 反向护栏：优先找 `x` 稳定 on、但此前已独立成立的 `zn` 后续真实退出/被替换；或者 `x` 关闭后同类压力再次出现，旧 `zn` 明确不再回来。停止继续堆第四个普通正向 lifecycle。
 13. pure-`zn` 反例护栏：人物看似承担责任或坚持原则，但实际由命令、惩罚、舆论、身份收益或即时策略驱动；拿掉这些外因后，原则不再保有未来指导资格。
 
 ## C｜火轴反例优先协议
@@ -281,6 +295,7 @@ updated: 2026-08-27
 21. **内部原则拒绝一段关系 ≠ 该关系已进入主体稳定现实 `x` 掌握边界。** 原则成立与社会关系结果是否可直接处分必须分开。
 22. **承担领导 / 公共责任 ≠ 被负责群体进入 `x`。** “我不能抛下他们”可以是 `zn`，但群体是否进入现实掌握边界仍需独立验证。
 23. **当前 `x` 窗口关闭 ≠ `zn` 未来调用资格被删除。** 生命周期必须区分“当前高显影/当前可执行接口”与“跨阶段未来可再次调用资格”。
+24. **old `x` lost + different new `x` formed ≠ `zn` must be replaced。** `x lifecycle` 与 `zn lifecycle` 必须分别记录；新载体形成不能自动解释成新原则生成。
 
 ## D｜跨作品晋级门
 
@@ -320,20 +335,20 @@ nominal_identity_vs_real_x_negative_guards: 1
 nominal_identity_vs_real_x_negative_guard_works: 1
 pressure_display_positive_controls: 0
 pressure_display_negative_guards: 0
-lifecycle_controls: 2
-lifecycle_works: 2
-pending_review_count: 5
+lifecycle_controls: 3
+lifecycle_works: 3
+pending_review_count: 6
 ```
 
-说明：pure `zn` 现在为 **3 controls / 3 independent works / pending-review**，覆盖“他者救护/关系责任原则”“主体自我决定边界/拒绝强制定义原则”“领导/公共责任原则”；达到门槛后不再继续堆普通正例，下一步转向伪 pure-`zn` 反例。`zn+x` 当前是 **3 positive / 2 negative guards / 2 works**，两类伪共现护栏已经分别覆盖“x 真但 zn 不过门”和“zn 真但所谓 x 只是名位/外部认可”。strict 当前是 **0 positive / 4 negative guards / 3 works**；严颜增加的是同作品不同 `x` 类型的真实生命周期旁证，不增加 strict cross-work。lifecycle 当前为 **2 controls / 2 independent works**，分别覆盖“`x` 真实失去后 `zn` 仍直接持续”与“`x` 当前窗口关闭并恢复后 `zn` 未来调用资格重现”。名义位置 / 外部承认 vs 现实 `x` 当前为 **3 positive controls / 3 independent works + 1 negative guard / 1 work / pending-review**，杨志是首份“名义授权已给、部分管理动作存在，但同一决定仍被原节点现实覆盖”的反向护栏。
+说明：pure `zn` 现在为 **3 controls / 3 independent works / pending-review**，覆盖“他者救护/关系责任原则”“主体自我决定边界/拒绝强制定义原则”“领导/公共责任原则”；达到门槛后不再继续堆普通正例，下一步转向伪 pure-`zn` 反例。`zn+x` 当前是 **3 positive / 2 negative guards / 2 works**，两类伪共现护栏已经分别覆盖“x 真但 zn 不过门”和“zn 真但所谓 x 只是名位/外部认可”。strict 当前是 **0 positive / 4 negative guards / 3 works**；严颜增加的是同作品不同 `x` 类型的真实生命周期旁证，不增加 strict cross-work。lifecycle 当前为 **3 controls / 3 independent works / pending-review**，分别覆盖“`x` 真实失去后 `zn` 同窗口继续”“关系 `x` 关闭/恢复而 `zn` 保留未来调用资格”“旧 `x` 丢失、不同新 `x` 形成而同一 `zn` 跨载体持续”。名义位置 / 外部承认 vs 现实 `x` 当前为 **3 positive controls / 3 independent works + 1 negative guard / 1 work / pending-review**，杨志是首份“名义授权已给、部分管理动作存在，但同一决定仍被原节点现实覆盖”的反向护栏。
 
 ## F｜下一小时最值得整理
 
 第一优先：寻找第一份真正通过 `x→zn` 不可替代现实落点门的 strict 正例候选。
 
-第二优先：给 lifecycle 找第三个不同机制控制，优先 `zn` 暂停/退出但 `x` 继续，或压力解除后旧 `zn` 是否真正复位；不要再复制“x off 但 zn 未来调用资格保留”。
+第二优先：给 lifecycle 新 pending-review 找第一份高纯反向护栏：优先 `x` 稳定存在但原 `zn` 真实退出/被替换；其次是 `x` 关闭后同类压力再次出现而旧 `zn` 明确不再回来。停止继续堆普通 lifecycle 正例。
 
-第三优先：给 pure-`zn` 新 pending-review 找第一份高纯反例：人物看似承担责任或坚持原则，但实际主要由命令、惩罚、舆论、身份收益或即时策略驱动；拿掉外因后原则不再保有未来指导资格。
+第三优先：给 pure-`zn` pending-review 找第一份高纯反例：人物看似承担责任或坚持原则，但实际主要由命令、惩罚、舆论、身份收益或即时策略驱动；拿掉外因后原则不再保有未来指导资格。
 
 第四优先：寻找第二部独立作品的“`zn` 真 + 假 `x`”伪共现，优先名义持有、代理授权、一次接触或可随时撤销权限；不要再复制关羽爵位同作品材料。
 
