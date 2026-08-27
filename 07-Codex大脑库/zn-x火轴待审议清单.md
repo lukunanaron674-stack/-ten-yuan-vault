@@ -256,7 +256,9 @@ updated: 2026-08-28
 
 ### A8｜被承认 vs 真正成立
 
-状态：`1 control / 1 work / evidence-locked`
+状态：`1 positive control / 1 work + 1 negative guard / 1 work / evidence-locked`
+
+正向控制：
 
 1. 《水浒传》宋江·第36回拒绝被强截入伙 → 第71回公开主张早招安 → 第82回朝廷正式受招安，99/98。
    - `zn`：即使现实上被逐出原秩序、暂居梁山并掌握强大现实权力，也不把永久草寇化视为最终政治 / 法理归属，持续保留并追求未来合法回返、归顺与报国资格。
@@ -264,14 +266,22 @@ updated: 2026-08-28
    - 第82回御笔丹诏与正式招安属于**外部承认后来追上已经成立的 `zn`**，不能倒写成 `zn` 第一次生成的时间点。
    - 第82回“被承认 / 受招安”也不自动锁新的官方 `x`；是否形成官方军政 `x`，仍需另看后续真实职事、调用、处分与现实节点响应。
 
+反向护栏：
+
+1. 《三国演义》吕布·第3回认董卓义父并受封赏 → 第9回关系冲突后杀董卓，99/98。
+   - 双方关系命名、义父承认、赤兔马/金珠/官位封赏、组织位置全部强烈存在，外部承认并不弱。
+   - 但候选“父子关系应成为不可轻易让渡的内部最终原则”缺少无奖励/认可时仍独立成立的证据；遇到新的情感、羞辱、生命威胁与权力冲突后，这层关系也没有表现出稳定未来指导资格。
+   - 已锁：**强外部承认、封赏、公开关系名分 ≠ 内部 `zn` 自动成立。**
+
 纪律：
 
 - **被承认的时间 ≠ `zn` 真正成立的时间。**
-- **外部承认对 `zn` 既非必要条件，也非充分条件。** 承认可以追上一个已经成立的内部原则，也可以只改变现实身份/兑现条件。
+- **外部承认对 `zn` 既非必要条件，也非充分条件。** 宋江证明“承认可以晚于 `zn`”；吕布证明“承认很强也不能替代 `zn` 的独立六道门”。
 - **只有承认以后才表态，不足以倒推此前已有 `zn`。** 必须回查承认之前的无奖励/高代价冲突窗口。
+- **关系命名 + 双方承认 + 奖励/封赏 + 组织位置，也不能自动生成 `zn`。** 仍要检查内部不可让渡性、冲突排序和未来调用资格。
 - **外部承认 / 赦免 / 受诏 ≠ 自动形成现实 `x`。** `x` 仍要独立验具体职事、稳定调用与处分边界。
 
-本槽当前只有 1 个独立作品，不建立 pending-review，不增加 lifecycle、pure-zn、co-occurrence 或 strict 既有统计。
+本槽当前为 1 positive work + 1 negative-guard work，不建立 pending-review，不增加 lifecycle、pure-zn、co-occurrence 或 strict 既有统计。
 
 ## B｜尚未达到 pending-review 的候选槽
 
@@ -287,7 +297,8 @@ updated: 2026-08-28
 10. 被替代/改写后的端点保留。
 11. lifecycle 反向护栏：优先找 `x` 稳定 on、但此前已独立成立的 `zn` 后续真实退出/被替换；或者 `x` 关闭后同类压力再次出现，旧 `zn` 明确不再回来。停止继续堆第四个普通正向 lifecycle。
 12. pure-`zn` 反例护栏：人物看似承担责任或坚持原则，但实际由命令、惩罚、舆论、身份收益或即时策略驱动；拿掉这些外因后，原则不再保有未来指导资格。
-13. 被承认 vs 真正成立的第二独立作品控制：优先《三国演义》《西游记》或《红楼梦》，要求同一原则在正式认可 / 赦免 / 身份确认到来以前就已独立通过 `zn` 门，后续承认只是追上而不是生成。
+13. 被承认 vs 真正成立的第二独立正向作品：优先《西游记》或《红楼梦》，要求同一原则在正式认可 / 赦免 / 身份确认到来以前就已独立通过 `zn` 门，后续承认只是追上而不是生成。
+14. 被承认 vs 真正成立的第二独立反向作品：要求外部关系/身份承认很强，但候选 `zn` 仍因无奖励门、冲突排序或未来调用资格不过而失败；不要复制吕布“义父+封赏”同型皮肤。
 
 ## C｜火轴反例优先协议
 
@@ -316,7 +327,8 @@ updated: 2026-08-28
 23. **当前 `x` 窗口关闭 ≠ `zn` 未来调用资格被删除。** 生命周期必须区分“当前高显影/当前可执行接口”与“跨阶段未来可再次调用资格”。
 24. **old `x` lost + different new `x` formed ≠ `zn` must be replaced。** `x lifecycle` 与 `zn lifecycle` 必须分别记录；新载体形成不能自动解释成新原则生成。
 25. **被承认的时间 ≠ `zn` 真正成立的时间。** 外部承认可以追上一个已经成立的原则，但既不是该原则的必要条件，也不是充分条件。
-26. **被承认 / 赦免 / 受诏 ≠ 自动形成现实 `x`。** 现实掌握仍需具体职事、稳定调用、处分和节点响应独立过门。
+26. **强外部承认 ≠ `zn`。** 关系命名、双方公开承认、封赏、身份与组织位置即使全部存在，也不能替代无奖励门、冲突排序与未来调用资格。
+27. **被承认 / 赦免 / 受诏 ≠ 自动形成现实 `x`。** 现实掌握仍需具体职事、稳定调用、处分和节点响应独立过门。
 
 ## D｜跨作品晋级门
 
@@ -356,6 +368,8 @@ nominal_identity_vs_real_x_negative_guards: 1
 nominal_identity_vs_real_x_negative_guard_works: 1
 recognition_vs_establishment_controls: 1
 recognition_vs_establishment_works: 1
+recognition_vs_establishment_negative_guards: 1
+recognition_vs_establishment_negative_guard_works: 1
 pressure_display_positive_controls: 0
 pressure_display_negative_guards: 0
 lifecycle_controls: 3
@@ -363,7 +377,7 @@ lifecycle_works: 3
 pending_review_count: 6
 ```
 
-说明：pure `zn` 现在为 **3 controls / 3 independent works / pending-review**，覆盖“他者救护/关系责任原则”“主体自我决定边界/拒绝强制定义原则”“领导/公共责任原则”；达到门槛后不再继续堆普通正例，下一步转向伪 pure-`zn` 反例。`zn+x` 当前是 **3 positive / 2 negative guards / 2 works**，两类伪共现护栏已经分别覆盖“x 真但 zn 不过门”和“zn 真但所谓 x 只是名位/外部认可”。strict 当前是 **0 positive / 4 negative guards / 3 works**；严颜增加的是同作品不同 `x` 类型的真实生命周期旁证，不增加 strict cross-work。lifecycle 当前为 **3 controls / 3 independent works / pending-review**，分别覆盖“`x` 真实失去后 `zn` 同窗口继续”“关系 `x` 关闭/恢复而 `zn` 保留未来调用资格”“旧 `x` 丢失、不同新 `x` 形成而同一 `zn` 跨载体持续”。名义位置 / 外部承认 vs 现实 `x` 当前为 **3 positive controls / 3 independent works + 1 negative guard / 1 work / pending-review**，杨志是首份“名义授权已给、部分管理动作存在，但同一决定仍被原节点现实覆盖”的反向护栏。被承认 vs 真正成立当前为 **1 control / 1 work / evidence-locked**，宋江证明官方承认可以追上已经成立的 `zn`，但不能倒写为其成立起点；本槽不重复增加 lifecycle、pure-zn、co-occurrence 或 strict 统计。
+说明：pure `zn` 现在为 **3 controls / 3 independent works / pending-review**，覆盖“他者救护/关系责任原则”“主体自我决定边界/拒绝强制定义原则”“领导/公共责任原则”；达到门槛后不再继续堆普通正例，下一步转向伪 pure-`zn` 反例。`zn+x` 当前是 **3 positive / 2 negative guards / 2 works**，两类伪共现护栏已经分别覆盖“x 真但 zn 不过门”和“zn 真但所谓 x 只是名位/外部认可”。strict 当前是 **0 positive / 4 negative guards / 3 works**；严颜增加的是同作品不同 `x` 类型的真实生命周期旁证，不增加 strict cross-work。lifecycle 当前为 **3 controls / 3 independent works / pending-review**，分别覆盖“`x` 真实失去后 `zn` 同窗口继续”“关系 `x` 关闭/恢复而 `zn` 保留未来调用资格”“旧 `x` 丢失、不同新 `x` 形成而同一 `zn` 跨载体持续”。名义位置 / 外部承认 vs 现实 `x` 当前为 **3 positive controls / 3 independent works + 1 negative guard / 1 work / pending-review**，杨志是首份“名义授权已给、部分管理动作存在，但同一决定仍被原节点现实覆盖”的反向护栏。被承认 vs 真正成立当前为 **1 positive control / 1 work + 1 negative guard / 1 work / evidence-locked**：宋江证明官方承认可以追上已经成立的 `zn`，吕布证明关系名分、封赏和强外部承认也不能替代 `zn` 独立过门；本槽不重复增加 lifecycle、pure-zn、co-occurrence 或 strict 统计。
 
 ## F｜下一小时最值得整理
 
@@ -373,7 +387,7 @@ pending_review_count: 6
 
 第三优先：给 pure-`zn` pending-review 找第一份高纯反例：人物看似承担责任或坚持原则，但实际主要由命令、惩罚、舆论、身份收益或即时策略驱动；拿掉外因后原则不再保有未来指导资格。
 
-第四优先：寻找第二部独立作品的“被承认 vs 真正成立”控制，要求同一 `zn` 在正式认可 / 赦免 / 身份确认到来以前已独立过门，后续承认只是追上而非生成。
+第四优先：寻找第二部独立作品的“被承认 vs 真正成立”正向控制，要求同一 `zn` 在正式认可 / 赦免 / 身份确认到来以前已独立过门，后续承认只是追上而非生成；或找第二部不同机制的强承认负控制，优先能进一步压“承认不是充分条件”的材料。
 
 第五优先：寻找第二部独立作品的“`zn` 真 + 假 `x`”伪共现，优先名义持有、代理授权、一次接触或可随时撤销权限；不要再复制关羽爵位同作品材料。
 
