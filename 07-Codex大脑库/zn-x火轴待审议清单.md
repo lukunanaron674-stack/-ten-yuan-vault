@@ -7,7 +7,7 @@ axis: fire
 pair: zn-x
 governance: L1-L6文件权力与知识成熟度双轴协议_v2.0_20260827
 may_override_canonical: false
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # zn ↔ x 火轴待审议清单
@@ -51,26 +51,37 @@ updated: 2026-08-28
 待审议：`待审议问题_zn-x当前共现与严格补不可等同边界_20260827.md`。
 
 ### A5｜strict zn↔x
-状态：`1 positive / 1 work + 4 negative guards / 3 works + 2 precondition guards / pending-review`。
+当前状态：`1 verified positive / 1 work + 2 deferred former positives + 4 negative guards / 3 works + 2 precondition guards / pending-review`。
 
-首份正向：
-- 《三国演义》诸葛亮·卤城换班，99/95。
+#### 当前 verified 正向
+- 《三国演义》诸葛亮·卤城换班，99/95 `evidence-locked`。
 - `zn`：已发布军令信用反过来约束掌令者本人。
 - `x`：对直属换班军的现实留营/放行处分边界。
-- `zn→x=true`：补军令使用、变更和例外的内部边界。
-- `x→zn=true`：被测原则本身索引“我的直属军队—我的军令—我的留放处分对象”；拿掉该 `x` 后出现不可由第三方等价替代的现实对象结构缺口。
+- `zn→x=true`；`x→zn=true` 当前仍锁。
 
-负控制：
+#### 被对抗审计降级的 former positives
+- 《红楼梦》探春理家：原 99/95 → 当前 99/93 `deferred-under-attack`。
+  - `x` 局部公账处分仍保留；
+  - `zn` 独立性受旧例、受托制度、治理效率等第三因素干扰；
+  - 原 `x→zn` 论证存在把被测 `x` 事后写入 `zn` 定义的循环成立风险。
+- 《水浒传》晁盖共同财物处分：原 99/95 → 当前 99/93 `deferred-under-attack`。
+  - 共同财物处分可能属于“众头领/组织共同治理”，不足高纯归因于晁盖个人 `x`；
+  - “不得私占”候选 `zn` 仍可能被组织合法性、共同体生存与分配制度替代。
+
+> 两份原 99/95 记录保留为历史证据，但当前 L4 研究判断由 2026-08-29 对抗审计取代；不得继续计入 verified strict positive。
+
+#### 既有 negative guards
 - 关羽：曹赐资源只是旧义执行/筛选对象，不是不可替代落点。
-- 晁盖：山寨处分权扩大原则执行范围，但原则离开它仍有现实对象。
+- 晁盖“不伤无关者”原则：山寨处分权扩大原则执行范围，但原则离开它仍有现实对象。
 - 唐僧：师徒处分权是执行接口，不是原则唯一现实落点。
 - 严颜：巴郡军政 `x` 真实失去后 `zn` 仍持续；同作品旁证。
 
-strict 前置护栏：
+#### strict 前置护栏
 - 刘备：跨阶段 pure-x / pure-zn 不得拼成共现或 strict。
 - 鸳鸯：同窗同对象且结果符合 `zn` 仍不够；第三方现实否决不能记作主体 `x`。
 
 待审议：`待审议问题_zn-x严格补中x是否为zn不可替代现实落点边界_20260827.md`。
+当前同步债：该专项正文仍显示“3 verified literary positives”，必须以最新两份 adversarial audit + 本实时清单为当前 L4 状态；等待安全整文件同步，不允许旧统计倒灌。
 
 ### A6｜lifecycle
 状态：`3 positive / 3 works + 2 negative guards / 2 works / pending-review`。
@@ -93,19 +104,10 @@ strict 前置护栏：
 
 ### A9｜pressure display
 状态：`3 positive / 3 works + 2 negative guards / 2 works + 1 historical positive contrast / pending-review`。
-
-正向：
-- 关羽 99/97：信息/路径条件封住立即归刘窗口，旧义未来指导资格保留，去向明确后按原边界复位。
-- 唐僧 99/97：许可/安全条件迫使策略性表面应承，出城后西行原则按原边界复位。
-- 宋江 99/97：政治/身份位置封住直接合法回返窗口，梁山高位仍主张招安，受招安后同一方向现实化。
-
-反向：
-- 徐庶 99/98：压力后才形成/收紧“不为曹设谋”原则，禁止 temporal backfill。
-- 迈克尔·柯里昂 99/97：后来“合法化”语言与旧原则主题相似，但真实排序已由家族犯罪权力接管；相似口号 ≠ old `zn` 复位。
-
-历史对照：Nelson Mandela 99/97，不计文学作品门槛。
-
-待审议：`待审议问题_zn-x压力显影中原则未来调用资格与现实表达窗口分离边界_20260828.md`。
+- 正向：关羽、唐僧、宋江。
+- 反向：徐庶 temporal-backfill guard；迈克尔·柯里昂 false-restoration guard。
+- 历史对照：Nelson Mandela 99/97，不计文学作品门槛。
+- 待审议：`待审议问题_zn-x压力显影中原则未来调用资格与现实表达窗口分离边界_20260828.md`。
 
 ## B｜当前统计
 
@@ -129,10 +131,13 @@ zn_x_cooccurrence_negative_guard_works: 4
 
 strict_zn_x_complement_controls: 1
 strict_zn_x_complement_positive_works: 1
+strict_zn_x_deferred_former_positive_controls: 2
+strict_zn_x_deferred_former_positive_works: 2
 strict_zn_x_complement_negative_guards: 4
 strict_zn_x_complement_negative_guard_works: 3
 strict_zn_x_precondition_guards: 2
 strict_zn_x_precondition_guard_works: 2
+strict_zn_x_historical_positive_contrasts: 1
 
 nominal_identity_vs_real_x_controls: 3
 nominal_identity_vs_real_x_works: 3
@@ -170,28 +175,29 @@ pending_review_count: 9
 6. `zn` 限制 `x` 使用方式，不等于 `x` 不成立。
 7. `zn+x` 共现前，两端必须分别独立过 current canonical。
 8. 两个高纯端点跨阶段、跨对象层不能拼成当前共现。
-9. 最终结果与 `zn` 同向，不等于主体拥有使结果生效的 `x`。
-10. 第三方现实否决必须归第三方。
-11. co-occurrence ≠ strict complement。
-12. 现实执行接口 ≠ `zn` 不可替代现实落点。
-13. 首份 strict 正向只说明“对象构成型 x”可能通过反向门，不得据此降低后续门槛。
-14. 名义身份/高称号/外部承认 ≠ 现实 `x`。
-15. 名义授权 + 部分管理 ≠ 稳定全局 `x`。
-16. local `x` ≠ global `x`。
-17. future revocability ≠ prior current `x` never existed。
-18. 当前 `x` 关闭 ≠ `zn` 未来调用资格删除。
-19. `x` 持续 on ≠ `zn` 永久持续。
-20. different new `x` formed ≠ old `zn` 必然跨载体持续。
-21. 历史曾成立 `zn` ≠ 永久人物本体。
-22. 被承认时间 ≠ `zn` 成立时间；承认既非必要也非充分。
-23. 高责任/高代价 ≠ `zn`；先拿掉外部驱动。
-24. `x` 可以独立成立，不要求同步存在 `zn`。
-25. 真实第三因素足以解释同一结果时，不能重复拿结果证明 `x`。
-26. expression window blocked ≠ `zn` erased。
-27. pressure-display 解压后必须按 same principle + same boundary + same conflict-order criterion 复位。
-28. 压力后的稳定原则 ≠ 压力前已存在同一原则；禁止 temporal backfill。
-29. 相似口号/主题词 ≠ old `zn` 复位；真实排序若已换芯，优先 lifecycle replacement。
-30. 关系连续、人物连续、词汇连续都不能替代原则内容同一性。
+9. 最终结果与 `zn` 同向，不等于主体拥有使结果生效的 `x`；第三方现实否决必须归第三方。
+10. co-occurrence ≠ strict complement。
+11. 现实执行接口 ≠ `zn` 不可替代现实落点。
+12. strict `x→zn` 禁止循环定义：先在不引用被测 `x` 的条件下独立命名 `zn`，再拿掉 `x`。
+13. 领导位置 + 组织采取公共分配 ≠ 领导者个人 `x` / `zn` 自动成立；共享治理与组织规范必须冻结。
+14. 跨情境都像“治理更好” ≠ 同一窄 `zn`；必须证明完成最终排序的是同一原则。
+15. 名义身份/高称号/外部承认 ≠ 现实 `x`。
+16. 名义授权 + 部分管理 ≠ 稳定全局 `x`。
+17. local `x` ≠ global `x`。
+18. future revocability ≠ prior current `x` never existed。
+19. 当前 `x` 关闭 ≠ `zn` 未来调用资格删除。
+20. `x` 持续 on ≠ `zn` 永久持续。
+21. different new `x` formed ≠ old `zn` 必然跨载体持续。
+22. 历史曾成立 `zn` ≠ 永久人物本体。
+23. 被承认时间 ≠ `zn` 成立时间；承认既非必要也非充分。
+24. 高责任/高代价 ≠ `zn`；先拿掉外部驱动。
+25. `x` 可以独立成立，不要求同步存在 `zn`。
+26. 真实第三因素足以解释同一结果时，不能重复拿结果证明 `x`。
+27. expression window blocked ≠ `zn` erased。
+28. pressure-display 解压后必须按 same principle + same boundary + same conflict-order criterion 复位。
+29. 压力后的稳定原则 ≠ 压力前已存在同一原则；禁止 temporal backfill。
+30. 相似口号/主题词 ≠ old `zn` 复位；真实排序若已换芯，优先 lifecycle replacement。
+31. **99/95 evidence-locked 也不是永久正例；对抗审计若把独立性最低项降到 <95，必须从 verified 统计撤回并保留为 deferred former positive。**
 
 ## D｜当前 pending-review 索引
 
@@ -207,11 +213,11 @@ pending_review_count: 9
 
 ## E｜下一批高价值缺口
 
-1. **P0：strict 第二独立正向作品**。换作品、换 `x` 类型，保持诸葛亮首例同样的同窗、同对象、独立端点、第三方冻结与双向不可替代缺口。
-2. **P0b：反向攻击诸葛亮首份 strict 正例**。优先寻找更宽原则、等价现实对象或第三因素是否能替代当前 `x`，能打掉比继续赞美它更值钱。
-3. pressure-display 普通正向停止堆积；只找第三种反向机制或第二部 false-restoration 护栏。
-4. lifecycle 第三种反向机制 / 伪 lifecycle。
-5. pure-`zn` 第二独立伪正例护栏。
-6. recognition 第二独立反向作品，换掉吕布“关系命名 + 封赏”。
-7. pure-`x` 第一份高纯反向护栏。
-8. 名义/现实 `x` 只接受新的 scope/override/revocation 机制。
+1. **P0：优先对抗审计诸葛亮 99/95 首正例**。检查军令信用是否可由统军制度/外部军纪替代；士兵自愿留营是否改变结果因果；更宽原则是否仍能脱离被测 `x` 落地。
+2. **P0b：探春、晁盖进入 second-review，而不是恢复普通正例计数。** 若要恢复 ≥95，必须分别消除制度/组织第三因素与循环定义/主体归因问题。
+3. strict 暂停继续找第四个普通正例；先完成现有 95 分边界的攻击与二审。
+4. pressure-display 只找新反例机制，不再堆普通正向。
+5. lifecycle 第三种反向机制 / 伪 lifecycle。
+6. pure-`zn` 第二独立伪正例。
+7. recognition 第二独立反向作品。
+8. pure-`x` 第一份高纯反向护栏。
