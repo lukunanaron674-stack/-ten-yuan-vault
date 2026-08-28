@@ -33,9 +33,15 @@ updated: 2026-08-28
 
 ### A2｜pure x
 
-状态：`1 control / 1 work`。
+状态：`3 positive controls / 3 works / pending-review`。
 
 - 《红楼梦》刘姥姥获赠银钱，99/98：完成交付、可直接使用/处分，当前银钱对象层 `x` 成立；家庭用途不足锁 `zn`。
+- 《西游记》孙悟空权管蟠桃园，99/98：园务明确交付、土地与力士节点响应，公共职事/管理 `x` 独立成立；高称号与地位刺激不足锁 `zn`。
+- 《三国演义》刘备权领徐州，99/97：真实接管后可用人、调兵、发布安民命令，地区军政治理 `x` 独立成立；当前治理窗口不足独立锁 `zn`。
+
+三案机制分别覆盖：私人物品/资源、公共职事/管理权限、地区军政治理/现实行政权限。
+
+待审议：`待审议问题_zn-x纯x独立成立与现实掌握不需要zn共同过门边界_20260828.md`。
 
 ### A3｜pure zn
 
@@ -138,8 +144,8 @@ pure_zn_controls: 3
 pure_zn_works: 3
 pure_zn_negative_guards: 1
 pure_zn_negative_guard_works: 1
-pure_x_controls: 1
-pure_x_works: 1
+pure_x_controls: 3
+pure_x_works: 3
 
 zn_x_cooccurrence_controls: 3
 zn_x_cooccurrence_works: 3
@@ -168,7 +174,7 @@ lifecycle_negative_guard_works: 2
 pressure_display_positive_controls: 0
 pressure_display_negative_guards: 0
 
-pending_review_count: 7
+pending_review_count: 8
 ```
 
 ## C｜当前反误判纪律
@@ -197,6 +203,8 @@ pending_review_count: 7
 22. `x` 持续 on ≠ 已成立 `zn` 永久持续；后续同类冲突里旧原则可真实退出 / 崩解。
 23. 不同新 `x` 稳定形成 ≠ 旧 `zn` 必然跨载体持续；必须检查新排序是否已经接管。
 24. 历史上曾成立的 `zn` ≠ 永久人物本体；lifecycle 必须允许真实替换、退出与不复位。
+25. `x` 可以独立成立；现实资源、职事或治理权限进入稳定掌握边界，不要求同步存在 `zn`。
+26. 资源用途、工作职责、治理责任与“对象很重要” ≠ 自动 `zn`；仍须独立过无奖励、冲突排序与未来调用门。
 
 ## D｜当前 pending-review 索引
 
@@ -207,6 +215,7 @@ pending_review_count: 7
 5. `待审议问题_zn-x纯zn独立成立与责任对象不等于现实x边界_20260827.md`
 6. `待审议问题_zn-x生命周期中x窗口变化与zn未来调用资格分离边界_20260827.md`
 7. `待审议问题_zn-x外部承认与内部zn真实成立时序分层边界_20260828.md`
+8. `待审议问题_zn-x纯x独立成立与现实掌握不需要zn共同过门边界_20260828.md`
 
 ## E｜下一批高价值缺口
 
@@ -217,6 +226,4 @@ pending_review_count: 7
 5. 第二部“`zn` 真 + 假 `x`”伪共现。
 6. 第三因素可替代一端的伪共现。
 7. 第二部“名义授权 + 原节点现实覆盖”反向护栏。
-8. 第二部“已成立 `x` 受外部命令/否决限制，但 `zn` 不成立”护栏。
-9. 第二种 pure-`x`。
-10. pressure display 首份高纯控制。
+8. pure-`x` 第一份反向护栏：表面有占有/管理/代理，但稳定现实 `x` 不过门，优先流程权 `xn`、可撤代理或一次临时持有。
