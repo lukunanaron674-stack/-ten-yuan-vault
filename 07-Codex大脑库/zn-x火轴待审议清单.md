@@ -44,7 +44,7 @@ updated: 2026-08-29
 ### A5｜strict zn↔x
 current criterion：`current-layer-specific-anchor-gap-v2_20260829`。
 
-旧强门 `x-as-nonreplaceable-real-anchor-v1_20260827` 已因《辛德勒的名单》《V字仇杀队》canonical calibration 被标记为 `superseded as current L4 gate`。legacy v1 统计不得与 v2 混计。
+旧强门 `x-as-nonreplaceable-real-anchor-v1_20260827` 已 `superseded as current L4 gate`。legacy v1 统计不得与 v2 混计；截至本轮，旧4条 strict negative 已全部完成 v2 复审清账。
 
 当前分账：
 
@@ -53,10 +53,10 @@ v2_verified_positive_controls: 1
 v2_verified_positive_works: 1
 v2_deferred_former_positive_controls: 2
 v2_deferred_former_positive_works: 2
-v2_negative_guards: 3
+v2_negative_guards: 4
 v2_negative_guard_works: 3
-legacy_v1_negative_guards_pending_v2_revalidation: 1
-legacy_v1_negative_guard_works: 1
+legacy_v1_negative_guards_pending_v2_revalidation: 0
+legacy_v1_negative_guard_works: 0
 strict_precondition_guards: 4
 strict_precondition_guard_works: 3
 canonical_calibration_controls: 2
@@ -64,35 +64,36 @@ historical_positive_contrasts: 1
 ```
 
 #### current verified positive
-- 诸葛亮卤城换班 99/95 `evidence-locked`。修正 anchor 门后恢复；`zn→x=true`、`x→zn=true` under v2。继续接受对抗审计。
+- 诸葛亮卤城换班 99/95 `evidence-locked`。`zn→x=true`、`x→zn=true` under v2，继续接受对抗审计。
 
 #### deferred former positives
-- 探春理家：99/94 `deferred`。`x` 局部公账仍真；v2 下 `x→zn` 可支持，但 `zn` 独立性与跨情境原则同一性仍不足95。
-- 晁盖共同财物：99/93 `deferred`。个人庄财 `x` 真，但共同公库 `x` 的个人主体归因不足95；高纯“仗义疏财”不得倒灌成“共同所得不得寨主私占”。
+- 探春理家：99/94 `deferred`，当前最小分歧为 `criterion_identity_across_contexts`。
+- 晁盖共同财物：99/93 `deferred`，共同公库 `x` 的个人主体归因仍不足95。
 
-#### current v2 negative guards｜3 controls / 3 works
-1. 唐僧 99/98：师徒处分 `x` 是执行接口；拿掉后“不轻伤人命”的生命对象、主体自身判断与当前杀生边界仍在，`x→zn=false`。
-2. 关羽 99/98：曹赐金银、赤兔马等是被旧义筛选/让渡/重新定向的资源；同窗已有刘备关系、二夫人护送、离曹归刘行动等现实 anchor，`x→zn=false`。
-3. 严颜 99/98：巴郡军政 `x` 在剧情中真实 lost 后，拒绝威逼屈降的 `zn` 仍由主体自身身体/生命/跪降选择直接承载，`x→zn=false`。
+#### current v2 negative guards｜4 controls / 3 works
+1. 唐僧 99/98：师徒处分 `x` 是执行接口，生命对象与主体自身判断仍在。
+2. 关羽 99/98：曹赐资源是被原则筛选/让渡/重新定向的资源；同窗已有刘备关系、护送二夫人、离曹归刘行动等现实 anchor。
+3. 严颜 99/98：巴郡军政 `x` 真实 lost 后，主体自身身体/生命/跪降选择仍直接承载 `zn`。
+4. 晁盖“不伤无关者” 99/98：山寨武力/处分 `x` 扩大组织执行范围，但客商/百姓和主体自身伤/不伤选择已经构成 current anchor。
 
-新增纪律：
-- `execution interface ≠ object-constituting current anchor`。
-- `resource under principle selection ≠ current anchor`。
-- `real x loss ≠ automatic x→zn gap`。
+独立作品计数纠错：唐僧=`西游记`；关羽+严颜同属=`三国演义`；晁盖=`水浒传`，故正确为 `4 controls / 3 works`，不是4个作品。
+
+当前纪律：
+- `execution interface ≠ object-constituting current anchor`；
+- `resource under principle selection ≠ current anchor`；
+- `execution/amplification interface ≠ current anchor`；
+- `real x loss ≠ automatic x→zn gap`；
 - future alternative 不自动否决 strict，但 same-window existing anchor 会真正削弱 `x→zn`。
-
-#### legacy v1 negative guard｜剩余1条待 v2 重审
-- 晁盖“不伤无关者”与山寨处分：旧判断认为山寨处分 `x` 更像扩大原则执行范围；尚未用 v2 正式重审，不计 current v2 negative。
 
 #### strict precondition guards｜4 controls / 3 works
 1. 刘备：跨阶段 pure-x/pure-zn 不能拼 strict。
 2. 鸳鸯：第三方 veto 不能记作主体 `x`。
-3. 宋江陈桥驿 99/98：军纪 `x` 真实，但自限可由朝廷法度、招安位置、追责与连累风险解释，`zn` 不独立。
-4. 王熙凤协理宁国府 99/98：局部处分 `x` 真实，但“第一例不能宽”可由受托职责、治理绩效、制度威慑与后续可执行性解释，`zn` 不独立。
+3. 宋江陈桥驿 99/98：军纪 `x` 真实，但 `zn` 可被法度、招安位置、追责与连累风险解释。
+4. 王熙凤协理宁国府 99/98：局部处分 `x` 真实，但候选 `zn` 可由受托职责、治理绩效、制度威慑解释。
 
-新纪律：`self-restraint-looking use of x ≠ independent zn`。
+纪律：`self-restraint-looking use of x ≠ independent zn`。
 
-待审议：`待审议问题_zn-x严格补中x是否为zn不可替代现实落点边界_20260827.md`。该专项已同步到 v2，并已吸收唐僧、关羽、严颜三条 v2 复审负控制。
+待审议：`待审议问题_zn-x严格补中x是否为zn不可替代现实落点边界_20260827.md`。
 
 ### A6｜lifecycle
 `3 positive / 3 works + 2 negative guards / 2 works / pending-review`
@@ -127,56 +128,48 @@ zn_vs_x_positive_controls: 3
 zn_vs_x_positive_works: 3
 zn_vs_x_negative_guards: 2
 zn_vs_x_negative_guard_works: 2
-
 pure_zn_controls: 3
 pure_zn_works: 3
 pure_zn_negative_guards: 1
 pure_zn_negative_guard_works: 1
 pure_x_controls: 3
 pure_x_works: 3
-
 zn_x_cooccurrence_controls: 3
 zn_x_cooccurrence_works: 3
 zn_x_cooccurrence_negative_guards: 6
 zn_x_cooccurrence_negative_guard_works: 4
-
 strict_current_criterion: current-layer-specific-anchor-gap-v2_20260829
 strict_v2_verified_positive_controls: 1
 strict_v2_verified_positive_works: 1
 strict_v2_deferred_former_positive_controls: 2
 strict_v2_deferred_former_positive_works: 2
-strict_v2_negative_guards: 3
+strict_v2_negative_guards: 4
 strict_v2_negative_guard_works: 3
-strict_legacy_v1_negative_guards_pending_revalidation: 1
-strict_legacy_v1_negative_guard_works: 1
+strict_legacy_v1_negative_guards_pending_revalidation: 0
+strict_legacy_v1_negative_guard_works: 0
 strict_precondition_guards: 4
 strict_precondition_guard_works: 3
 strict_canonical_calibration_controls: 2
 strict_historical_positive_contrasts: 1
-
 nominal_identity_vs_real_x_controls: 3
 nominal_identity_vs_real_x_works: 3
 nominal_identity_vs_real_x_negative_guards: 2
 nominal_identity_vs_real_x_negative_guard_works: 2
 nominal_identity_vs_real_x_revocable_but_real_controls: 1
 nominal_identity_vs_real_x_revocable_but_real_works: 1
-
 recognition_vs_establishment_controls: 3
 recognition_vs_establishment_works: 3
 recognition_vs_establishment_negative_guards: 1
 recognition_vs_establishment_negative_guard_works: 1
-
 lifecycle_controls: 3
 lifecycle_works: 3
 lifecycle_negative_guards: 2
 lifecycle_negative_guard_works: 2
-
 pressure_display_positive_controls: 3
 pressure_display_positive_works: 3
 pressure_display_negative_guards: 2
 pressure_display_negative_guard_works: 2
 pressure_display_historical_positive_contrasts: 1
-
 pending_review_count: 9
 ```
 
@@ -193,21 +186,22 @@ pending_review_count: 9
 9. 最终结果与 `zn` 同向 ≠ 主体拥有使结果生效的 `x`；第三方 veto 必须归第三方。
 10. co-occurrence ≠ strict complement。
 11. strict 同 criterion_version 才能累计跨作品；legacy v1 与 v2 必须分账。
-12. current reality anchor ≠ absolute metaphysical uniqueness；未来/别处可能有其他载体不自动否决 current `x→zn`。
+12. current reality anchor ≠ absolute metaphysical uniqueness。
 13. strict `x→zn` 禁止循环定义：先用不引用被测 `x` 的语言独立命名 `zn`。
 14. 共享治理的 `x` 不能为了 strict 被私有化给单一领导者。
 15. 高纯 P1 `zn` 不能跨原则倒灌给相邻 P2。
-16. `self-restraint-looking use of x ≠ independent zn`；外部法度、角色职责、绩效、惩罚、连坐、身份收益和即时策略必须冻结。
+16. `self-restraint-looking use of x ≠ independent zn`。
 17. local `x` ≠ global `x`；future revocability ≠ prior current x never existed。
 18. 当前 `x` 关闭 ≠ `zn` 未来调用资格删除；`x` 持续 on ≠ `zn` 永久持续。
 19. different new `x` formed ≠ old `zn` 必然继续；历史曾成立 `zn` ≠ 永久人物本体。
 20. 被承认时间 ≠ `zn` 成立时间；承认既非必要也非充分。
 21. 高责任/高代价 ≠ `zn`；先拿掉外部驱动。
 22. 真实第三因素足以解释同一结果时，不能重复拿结果证明 `x`。
-23. pressure-display 解压后必须 same principle + same boundary + same conflict-order criterion；禁止 temporal backfill 与相似口号假复位。
+23. pressure-display 解压后必须 same principle + same boundary + same conflict-order criterion。
 24. evidence-locked 可被对抗审计撤回；事实99不等于分类永久95。
-25. current execution interface、被原则筛选的资源、已失去的旧治理对象，都不自动等于 strict `x→zn` 所需的 current reality anchor。
-26. `real x loss ≠ automatic x→zn gap`；若同窗内主体自身行为、身体/生命选择或其他现实对象仍直接承载原则，反向门仍失败。
+25. control 数与 independent work 数必须分开；同一作品的多个角色/控制不重复增加 works。
+26. current execution interface、amplification interface、被原则筛选的资源、已失去的旧治理对象，都不自动等于 strict `x→zn` 所需的 current reality anchor。
+27. `real x loss ≠ automatic x→zn gap`。
 
 ## D｜pending-review 索引｜9条
 
@@ -223,10 +217,10 @@ pending_review_count: 9
 
 ## E｜下一批高价值缺口
 
-1. **P0：用 v2 重审最后1份 legacy strict negative guard：晁盖“不伤无关者”与山寨处分。** 完成 legacy v1 negative → current v2 negative 的清账或纠错。
-2. **P1：继续攻击诸葛亮 v2 99/95**，验证统军制度/长期信誉、士兵自愿留营、原则宽化和等价 current anchor 是否足以打掉首正例。
-3. **P2：探春二审只解决原则同一性；晁盖 former-positive 二审只解决主体 x 归因与原则对象对应。**
-4. 完成现有治理后再找第二独立作品、不同 `x` 类型的 v2 strict 正向。
+1. **P0：继续攻击诸葛亮 v2 99/95。** 重点冻结统军制度/长期信誉、士兵自愿留营、原则宽化与等价 same-window anchor。
+2. **P1：探春二审只解决 `criterion_identity_across_contexts` 与 `zn` 独立性。**
+3. **P2：晁盖 former-positive 二审只解决共同公库的 subject-specific `x` 归因与原则对象对应。** 不与“不伤无关者”strict negative 混槽。
+4. **P3：寻找第二独立作品、不同 `x` 类型的 v2 strict positive。**
 5. pressure-display 只找新反例机制，不再堆普通正向。
 6. lifecycle 第三种反向机制 / 伪 lifecycle。
 7. pure-zn 第二独立伪正例。
