@@ -49,9 +49,9 @@ v2_verified_positive_controls: 0
 v2_verified_positive_works: 0
 v2_deferred_former_positive_controls: 4
 v2_deferred_former_positive_works: 4
-v2_deferred_new_candidates: 1
-v2_deferred_new_candidate_works: 1
-v2_negative_guards: 5
+v2_deferred_new_candidates: 0
+v2_deferred_new_candidate_works: 0
+v2_negative_guards: 6
 v2_negative_guard_works: 3
 legacy_v1_negative_guards_pending_v2_revalidation: 0
 strict_precondition_guards: 12
@@ -61,82 +61,65 @@ historical_positive_contrasts: 1
 ```
 
 #### verified positive｜0
-- 当前无 ≥95 的文学 strict v2 verified positive。
+当前无 ≥95 的文学 strict v2 verified positive。
 
 #### deferred former positives｜4 / 4 works
 - **诸葛亮卤城换班 99/94**：第三次攻击后从原99/95降级。`zn=true`、`x=true`、`zn→x=true`，但既有轮换军令、军士稳定期待与发布者承诺责任关系本身已可能构成 same-window anchor；留放处分 `x` 更像履约/违约 execution interface，`x→zn` 未证明到95。
 - 探春理家 99/94：卡 `criterion_identity_across_contexts`。
 - 晁盖共同财物 99/93：共同公库 `x` 的个人主体归因不足95。
-- **《卢旺达饭店》Paul 99/94**：二审后维持 deferred。除了第三方产权/UN/军警/政治保护的 endpoint-attribution confound 外，即使把被测 `x` 缩回酒店内部 operations，具体难民、现实求助/保护关系与 Paul 自身“留/走、继续保护/抛下”的选择已经是 same-window people anchor；operations `x` 主要提供组织、执行、规模化，不足证明对象构成型 anchor。
+- **《卢旺达饭店》Paul 99/94**：二审后维持 deferred。第三方产权/UN/军警/政治保护仍构成 endpoint-attribution confound；即使把被测 `x` 缩回酒店内部 operations，具体难民、现实求助/保护关系与 Paul 自身“留/走、继续保护/抛下”的选择已经是 same-window people anchor；operations `x` 主要提供组织、执行、规模化，不足证明对象构成型 anchor。
 
-#### new deferred strict candidate
-- 关羽华容道 99/94：`zn→x` 强；恩义关系、曹操本人及其他主体行为可能已构成 same-window anchors，`x→zn` 未锁。
+#### deferred new candidate｜0
+- 关羽华容道旧99/94 candidate 已二审解决为 **99/98 strict-v2 negative guard**，不再计 deferred。
 
-#### current v2 negative guards｜5 controls / 3 works
+#### current v2 negative guards｜6 controls / 3 works
 1. 唐僧：execution interface。
-2. 关羽：resource under principle selection + same-window existing anchors。
+2. 关羽挂印封金：resource under principle selection + same-window existing anchors。
 3. 严颜：real `x` loss 后身体/生命/跪降选择仍承载 `zn`。
 4. 晁盖“不伤无关者”：execution/amplification interface。
 5. 诸葛亮白帝托孤后摄政 99/98：巨大军政 `x` 与忠贞辅主 `zn` 都成立，但刘禅、汉统/蜀汉秩序、托孤关系和主体“辅/不自立”选择已是 same-window anchors，故 `x→zn=false`。
+6. **关羽华容道 99/98**：报曹恩 `zn` 与当前关隘拦截—放行 `x` 都成立，且 `zn→x=true`；但曹操本人、既有恩义关系及关羽自身关系行动已经构成 same-window anchors，因此决定性擒放权仍只是 `high-leverage execution / settlement interface`，`x→zn=false`。
 
-作品去重：西游 + 三国 + 水浒 = 5 controls / 3 works。
+作品去重：西游 + 三国 + 水浒 = 6 controls / 3 works。
 
 #### strict precondition guards｜12 controls / 5 works
 1. 刘备：跨阶段 pure-x/pure-zn 不能拼 strict。
 2. 鸳鸯：第三方 veto 不能记主体 `x`。
-3. 宋江陈桥驿 99/98：军纪 `x` 真，候选 `zn` 可被法度/招安/追责/连累解释。
-4. 王熙凤协理宁国府 99/98：局部处分 `x` 真，候选 `zn` 可被受托职责/治理绩效/制度威慑解释。
-5. 柴进庄园庇护 99/97：不同现实载体不能事后捆绑为 composite `x`。
-6. 曹操割发代首 99/98：公开自罚可由服众、军令可信度、治理威慑与角色绩效解释。
-7. 张飞义释严颜 99/98：候选 `zn` 在对象不屈表现后才强触发，缺压力前未来调用证据。
-8. 关羽义释黄忠 99/98：瞬时可杀机会不等于稳定现实 `x`。
-9. 宋江擒高俅 99/98：稳定留押/释放 `x` 真，但释放可由招安通道、政治交换和合法化收益解释。
-10. 诸葛亮七擒孟获 99/98：反复释放可由“攻心、服其心、避免复叛”的同一长期战略充分解释；`recurrence ≠ criterion independence`。
-11. 《十二怒汉》8号陪审员 99/98：表决/否决 `x` 真，但候选原则与法定陪审职责语义同构；高成本履责不足独立证明 `zn`。机制：`role-rule isomorphism confound`。
-12. **孙悟空勾生死簿 99/98**：确实一次强制取得并成功改写生死登记，但权限只存在于暴力胁迫的短窗口，之后没有稳定持有、重复调用、管理或排除他人的证据。机制：`one-off coercive override ≠ stable x disposition boundary`。
+3. 宋江陈桥驿：法度/招安/追责/连累可解释候选 `zn`。
+4. 王熙凤协理宁国府：受托职责/治理绩效/制度威慑可解释候选 `zn`。
+5. 柴进庄园庇护：禁止 posthoc composite-x bundling。
+6. 曹操割发代首：公开自罚可由服众、军令可信度、治理威慑与角色绩效解释。
+7. 张飞义释严颜：候选 `zn` 在对象不屈表现后才强触发，缺压力前未来调用证据。
+8. 关羽义释黄忠：瞬时可杀机会不等于稳定现实 `x`。
+9. 宋江擒高俅：稳定留押/释放 `x` 真，但释放可由招安通道、政治交换和合法化收益解释。
+10. 诸葛亮七擒孟获：`recurrence ≠ criterion independence`。
+11. 《十二怒汉》8号陪审员：`role-rule isomorphism confound`。
+12. 孙悟空勾生死簿 99/98：一次强制取得并成功改写生死登记，不等于稳定持有、重复调用、管理或排除边界。`one-off coercive override ≠ stable x`。
 
 作品去重：三国 + 红楼 + 水浒 + 十二怒汉 + 西游 = 12 controls / 5 works。
 
 当前新增纪律：
-- `repeated action under one instrumental policy ≠ independent zn across contexts`；
-- `recurrence ≠ criterion independence`；
-- `role-rule isomorphism confound`；
-- `very strong delegated x ≠ object-constituting current anchor`；
-- `operations x ≠ full protected-space anchor attribution`；
-- `operations x can scale and organize a protection principle without constituting its object anchor`；
 - `standing commitment / formed expectation` 可本身构成 same-window reality anchor；
 - `履约能力 ≠ 承诺对象本身`；
 - `one-off coercive override ≠ stable x`；
-- 第三方保护、产权、外部否决节点若直接进入同一现实结果，不能洗入主体 `x`；
-- 不能拿掉主体 `x` 时顺手把第三方节点一起拿掉，再把巨大缺口当 strict 证据。
+- **决定性执行权 ≠ 对象构成型 anchor**；
+- **这个 x 直接决定最终结果 ≠ 这个 x 自动构成 zn 的 current reality anchor**；
+- 第三方产权、保护、否决或政治节点若直接进入同一结果，必须独立记账；
+- 被保护者本人可直接构成 same-window 原则对象；operations `x` 不能因组织这些人而自动取得对象构成地位。
 
 待审议：`待审议问题_zn-x严格补中x是否为zn不可替代现实落点边界_20260827.md`。
 
 ### A6｜lifecycle
 `3 positive / 3 works + 2 negative guards / 2 works / pending-review`
-- 正向：严颜、唐僧、宋江。
-- 反向：沙威 99/97；迈克尔·柯里昂 99/97。
-- 待审议：`待审议问题_zn-x生命周期中x窗口变化与zn未来调用资格分离边界_20260827.md`。
 
 ### A7｜名义位置 / 外部承认 vs 现实 x
 `3 positive / 3 works + 2 negative guards / 2 works + 1 revocable-but-real boundary / 1 work / pending-review`
-- 正向：孙悟空、王熙凤、刘备。
-- 护栏：杨志同层覆盖；探春 local `x` 不倒灌 global `x`。
-- 边界：天蓬元帅 future revocability ≠ prior current x never existed。
-- 待审议：`待审议问题_zn-x名义位置外部承认与现实掌握x分层边界_20260827.md`。
 
 ### A8｜被承认 vs 真正成立
 `3 positive / 3 works + 1 negative guard / 1 work / pending-review`
-- 正向：宋江、鸳鸯、关羽。
-- 反向：吕布 99/98。
-- 待审议：`待审议问题_zn-x外部承认与内部zn真实成立时序分层边界_20260828.md`。
 
 ### A9｜pressure display
 `3 positive / 3 works + 2 negative guards / 2 works + 1 historical positive contrast / pending-review`
-- 正向：关羽、唐僧、宋江。
-- 反向：徐庶 temporal-backfill；迈克尔 false-restoration。
-- 历史对照：Nelson Mandela。
-- 待审议：`待审议问题_zn-x压力显影中原则未来调用资格与现实表达窗口分离边界_20260828.md`。
 
 ## B｜当前统计
 
@@ -160,9 +143,9 @@ strict_v2_verified_positive_controls: 0
 strict_v2_verified_positive_works: 0
 strict_v2_deferred_former_positive_controls: 4
 strict_v2_deferred_former_positive_works: 4
-strict_v2_deferred_new_candidates: 1
-strict_v2_deferred_new_candidate_works: 1
-strict_v2_negative_guards: 5
+strict_v2_deferred_new_candidates: 0
+strict_v2_deferred_new_candidate_works: 0
+strict_v2_negative_guards: 6
 strict_v2_negative_guard_works: 3
 strict_legacy_v1_negative_guards_pending_revalidation: 0
 strict_precondition_guards: 12
@@ -230,9 +213,10 @@ pending_review_count: 9
 35. role-rule isomorphism 存在时必须补 evidence independence。
 36. 巨大 delegated `x` 只会放大风险/诱惑，不自动成为 `zn` anchor。
 37. operations/management `x` 与完整稳定保护效果不是同一因果边界；第三方保护节点必须独立记账。
-38. 被保护者本人可直接构成 same-window 原则对象；operations `x` 不能因组织这些人而自动取得对象构成地位。
+38. 被保护者本人可直接构成 same-window 原则对象；operations `x` 不能因组织这些人而自动获得对象构成地位。
 39. standing commitment / formed expectation 可直接构成 `zn` 的现实 anchor；主体对对象的留放/履约权限可能只是执行接口。
 40. 一次越权/暴力强制改写即使真实生效，也不自动构成 stable `x`。
+41. **决定性执行权不等于对象构成型 anchor；直接决定最终结果也不是 `x→zn` 的充分证据。**
 
 ## D｜pending-review 索引｜9条
 
@@ -248,9 +232,7 @@ pending_review_count: 9
 
 ## E｜下一批高价值缺口
 
-1. **P0：strict v2 重新回到 0 verified positive。** 不降门槛凑正例；优先寻找/复验能排除 standing-commitment、people-anchor、第三方节点、execution-interface 与 posthoc narrowing 的第一正例。
-2. **P1：关羽华容道99/94二审。** 只解擒放 `x` 是对象构成型 anchor、execution opportunity，还是恩义关系/曹操本人已经直接承载对象。
-3. **P2：诸葛亮卤城99/94。** 只解既有军令 + 军士期待 + 发布者责任是否已充分承载同一原则现实对象；不再重复士气收益。
-4. **P3：Paul 99/94 暂缓重复。** 二审已经确认 same-window people anchor；除非有新对象构成证据，不继续烧同一问题。
-5. **P4：探春/晁盖二审。** 分别解原则同一性与共同公库 subject-specific `x`。
-6. 成熟槽只补新型反例；一次越权、角色规则同构、战略重复、第三方保护 attribution 等已锁机制不机械复制。
+1. **P0：strict v2 当前 0 verified positive。** 不降门槛凑正例，优先重新采矿天然“对象构成型 `x`”，要求该 `x` 自然形成 `zn` 当前缺失的对象范围/我方边界，并排除 same-window people/relationship/standing-commitment anchors。
+2. **P1：已有 deferred 只在新证据出现时复审。** 诸葛亮卤城、探春、晁盖、Paul 均已有明确分歧，不重复旧攻击。
+3. **P2：优先非关系型、非单纯执行接口的自然单一 `x`。** 专属托管对象、明确单一资产池、稳定领地/空间边界、独立处分对象等优先；避免“俘虏擒/放”只提供结果机会，却被人物本人或既有关系提前构成 `zn` anchor。
+4. 成熟槽只补新型反例；一次越权、角色规则同构、战略重复、第三方保护 attribution 等已锁机制不机械复制。
