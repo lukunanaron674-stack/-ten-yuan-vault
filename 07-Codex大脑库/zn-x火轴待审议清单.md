@@ -41,7 +41,7 @@ v2_deferred_new_candidate_works: 0
 v2_negative_guards: 6
 v2_negative_guard_works: 3
 legacy_v1_negative_guards_pending_v2_revalidation: 0
-strict_precondition_guards: 14
+strict_precondition_guards: 15
 strict_precondition_guard_works: 5
 canonical_calibration_controls: 3
 historical_positive_contrasts: 1
@@ -59,16 +59,17 @@ historical_positive_contrasts: 1
 #### current v2 negative guards｜6 / 3 works
 唐僧；关羽挂印封金；严颜；晁盖“不伤无关者”；诸葛亮白帝托孤后摄政；关羽华容道。作品去重：西游 + 三国 + 水浒。
 
-#### strict precondition guards｜14 / 5 works
-既有12条继续有效；新增：
+#### strict precondition guards｜15 / 5 works
+新增三条：
 
-13. **金池长老借袈裟 99/98**：`temporary custody / viewing x=true`，但完整处分/长期归属 `x=false`。锁 `authorized temporary custody ≠ full disposition / ownership x`；禁止 `x-scope laundering`。
-14. **孙悟空金兜山画圈 99/98**：建立并宣称保护边界，不等于现实 protected-range `x` 已被验证。缺少“对象仍在边界内 + 风险真实测试 + 边界实际阻断/改变结果”观测。锁 `declared protective range ≠ observed protected-range x`。
+13. **金池长老借袈裟 99/98**：`temporary custody / viewing x=true`，完整处分/长期归属 `x=false`；锁 `authorized temporary custody ≠ full disposition / ownership x` 与 `x-scope laundering` 护栏。
+14. **孙悟空金兜山画圈 99/98**：建立并宣称保护边界，不等于 protected-range `x` 已现实成立；缺对象留圈内时真实风险测试和阻断结果。
+15. **柴进丹书铁券 99/98**：名义保护资格存在，真实风险也进入，但高唐州仍成功拘捕、用刑、抄家、占房；因此 stable protected-range `x=false`。锁 `nominal legal/dynastic protection credential ≠ stable protected-range x`。
 
-两条都来自《西游记》，所以 control 由12增至14，independent works 仍为5。
+三条都来自已经计入作品集合的《西游记》或《水浒传》，所以 controls 12→15，independent works 仍为5。
 
 #### canonical calibration｜3
-《辛德勒的名单》《V字仇杀队》既有两次 gate calibration 继续有效；新增《辛德勒的名单》people-anchor competition 回测：
+《辛德勒的名单》《V字仇杀队》既有两次 gate calibration；新增《辛德勒的名单》people-anchor competition 回测：
 
 ```text
 people/object anchor ≠ protected-range / organized-boundary anchor
@@ -117,7 +118,7 @@ strict_v2_deferred_new_candidate_works: 0
 strict_v2_negative_guards: 6
 strict_v2_negative_guard_works: 3
 strict_legacy_v1_negative_guards_pending_revalidation: 0
-strict_precondition_guards: 14
+strict_precondition_guards: 15
 strict_precondition_guard_works: 5
 strict_canonical_calibration_controls: 3
 strict_historical_positive_contrasts: 1
@@ -152,27 +153,24 @@ pending_review_count: 9
 5. subject-specific/shared-governance `x` 不跨对象私有化；多个不同 `x` 禁止 posthoc bundling。
 6. local `x` ≠ global `x`；future revocability ≠ prior current x never existed。
 7. transient opportunity / one-off effective override ≠ stable disposition `x`。
-8. temporary custody/use/agency `x` ≠ ownership/full disposition `x`。
-9. 物在我手 ≠ 对象完整归我处分；权限类型必须精确。
-10. execution/amplification/settlement interface ≠ object-constituting anchor。
-11. decisive outcome control ≠ 自动 `x→zn`。
-12. standing commitment / formed expectation 可本身构成 same-window anchor；履约能力 ≠ 承诺对象。
-13. endpoint attribution：第三方产权、保护、否决或政治节点不得倒灌进主体 `x`。
-14. people/object anchor 与 protected-range/organized-boundary anchor 分层。
-15. 被保护者本人存在不自动否决 protected-range `x→zn`；范围型 `x` 仍需证明真实形成稳定“我方”边界。
-16. declared protected range / 能力声明 / 设定威望 ≠ evidence-locked protected-range `x`。
-17. protection-range 至少需要 boundary-on + object-inside + risk-test + observed exclusion/change，或同机制独立复验。
-18. 高责任/高代价、自罚、自限、战略释放、角色规则同构都不能替 `zn` 独立过门。
-19. pressure-display 解压必须 same principle + same boundary + same conflict-order criterion。
-20. evidence-locked 可被 adversarial audit 撤回。
+8. temporary custody/use/agency `x` ≠ ownership/full disposition `x`；物在我手 ≠ 对象完整归我处分。
+9. execution/amplification/settlement interface ≠ object-constituting anchor；decisive outcome control ≠ 自动 `x→zn`。
+10. standing commitment / formed expectation 可本身构成 same-window anchor；履约能力 ≠ 承诺对象。
+11. endpoint attribution：第三方产权、保护、否决或政治节点不得倒灌进主体 `x`。
+12. people/object anchor 与 protected-range/organized-boundary anchor 分层；people presence alone 不自动否决范围型 `x→zn`。
+13. declared protected range / 能力声明 / 设定威望 ≠ evidence-locked protected-range `x`。
+14. protection-range 正向优先要求 boundary-on + object-inside + risk-test + observed exclusion/change，或同机制独立复验。
+15. 名义法律/血统保护资格 ≠ stable protected-range `x`；真实 risk-test 失败时必须判现实保护边界未成立。
+16. 高责任/高代价、自罚、自限、战略释放、角色规则同构都不能替 `zn` 独立过门。
+17. pressure-display 解压必须 same principle + same boundary + same conflict-order criterion。
+18. evidence-locked 可被 adversarial audit 撤回。
 
 ## D｜当前高价值缺口
 
-1. **P0：第一份 strict v2 verified positive**。继续寻找天然、单一、stable、subject-specific 的对象构成型 `x`，不降门槛凑例。
-2. **P1：protected-range / organized-boundary 正向**。必须有实际 effect-under-boundary 观测，并排除第三方等价范围。
+1. **P0：第一份 strict v2 verified positive**。继续寻找天然、单一、stable、subject-specific 的对象构成型 `x`。
+2. **P1：protected-range / organized-boundary 正向风险测试**。需要对象在边界内、外部风险真实进入、subject-specific `x` 稳定阻断/改道同一结果，并排除第三方等价范围。
 3. **P2：x scope 最小差异**。优先同人同物：A 仅保管/借用/代理，B 真正获得最终归属/排除原节点/自由处分。
-4. 诸葛亮卤城、探春、晁盖、Paul 只在出现新证据时复审，不重复旧攻击。
-5. 其他已 pending-review 槽停止堆普通正例，只找新型反例/边界。
+4. deferred 只在新证据出现时复审；成熟槽只找新型反例/边界。
 
 ## E｜pending-review 索引｜9条
 
