@@ -7,7 +7,7 @@ axis: fire
 pair: zn-x
 governance: L1-L6文件权力与知识成熟度双轴协议_v2.0_20260827
 may_override_canonical: false
-updated: 2026-08-30
+updated: 2026-08-31
 ---
 
 # zn ↔ x 火轴待审议清单
@@ -69,8 +69,8 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 6
 x_scope_boundary_guard_works: 4
-x_scope_dynamic_transition_controls: 1
-x_scope_dynamic_transition_works: 1
+x_scope_dynamic_transition_controls: 5
+x_scope_dynamic_transition_works: 4
 knowledge_status: pending-review
 pending_review: true
 ```
@@ -89,8 +89,14 @@ pending_review: true
 - 袁绍十八路诸侯会盟｜三国演义：collective conferral does not determine execution structure。
 - 孙权赤壁前战降公议｜三国演义：broad consultation ≠ joint/shared final decision。
 
-#### 动态迁移控制｜1 control / 1 work
-- **宋江｜水浒传｜99/97**：晁盖生前已有 delegated/campaign execution `x=true`，但无法否决晁盖亲征；晁盖死后、众头领共同授予权居主位后，宋江可直接重分六寨并调拨全寨军马，形成更宽 mountain-wide current operational `x=true`。锁定：**`x` 可发生 scope expansion，不只是 off/on。**
+#### 动态迁移控制｜5 controls / 4 works
+- **宋江｜水浒传｜99/97｜expansion**：晁盖生前已有 delegated/campaign execution `x=true`，但无法否决晁盖亲征；晁盖死后、众头领共同授予权居主位后，形成更宽 mountain-wide current operational `x=true`。
+- **宋江｜水浒传｜99/97｜contraction**：招安前最高对外任务方向可由梁山内部形成；招安后保留内部调兵/战役执行 `x`，但战争启动与任务对象上移为朝廷诏令输入。
+- **王熙凤｜红楼梦｜99/98｜contraction**：病前较直接日常掌家 `x`；病中日常裁处转交李纨/探春，大事由王夫人主张，凤姐保留筹划与经平儿转递的间接接口。
+- **唐僧｜西游记｜99/98｜expansion**：名义师徒关系/劝说接口，经紧箍咒现实可重复生效后，新增可重复直接 discipline `x`。
+- **刘备｜三国演义｜99/97｜expansion**：救徐州阶段已有自军/外援/小沛驻屯窄 `x`；陶谦死亡、原 global-override 节点退出且刘备最终接受后，扩张为徐州州域 current-governance `x`。
+
+动态迁移已达 `5 controls / 4 independent works`，停止继续堆普通 expansion/contraction 正例。后续只收真正 decision-structure 迁移、新反例机制、判据冲突与状态修正。
 
 方法分账：
 
@@ -102,6 +108,9 @@ source decision structure
 
 x lifecycle
 ≠ only on/off
+
+scope expansion/contraction
+≠ x off/on
 ```
 
 ## B｜当前统计
@@ -136,8 +145,8 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 6
 x_scope_boundary_guard_works: 4
-x_scope_dynamic_transition_controls: 1
-x_scope_dynamic_transition_works: 1
+x_scope_dynamic_transition_controls: 5
+x_scope_dynamic_transition_works: 4
 x_scope_knowledge_status: pending-review
 nominal_identity_vs_real_x_controls: 3
 nominal_identity_vs_real_x_works: 3
@@ -173,18 +182,20 @@ pending_review_count: 10
 8. broad consultation / proposal / persuasion ≠ shared/joint final decision；必须另查同层 veto 与 final decision node。
 9. collective conferral 不预设后续逐项 joint，也不自动产生 full-scope unilateral `x`。
 10. **`x` 可以发生 scope expansion/contraction；迁移前窄 `x` 不得写成 `x=false`，迁移后宽 `x` 也不得倒填到迁移前。**
-11. transient opportunity / one-off override ≠ stable disposition `x`。
-12. endpoint attribution：第三方产权、保护、否决或政治节点不得倒灌主体 `x`。
-13. declared/nominal protected range ≠ observed stable protected-range `x`。
-14. territorial/internal-governance `x` ≠ externally exclusionary protected-range `x`。
-15. evidence-locked 可被 adversarial audit 撤回。
+11. **动态迁移已跨 4 作品，停止普通 expansion/contraction 正例采样；后续只收 decision-structure 真迁移、反例、判据冲突和状态修正。**
+12. transient opportunity / one-off override ≠ stable disposition `x`。
+13. endpoint attribution：第三方产权、保护、否决或政治节点不得倒灌主体 `x`。
+14. declared/nominal protected range ≠ observed stable protected-range `x`。
+15. territorial/internal-governance `x` ≠ externally exclusionary protected-range `x`。
+16. evidence-locked 可被 adversarial audit 撤回。
 
 ## D｜当前高价值缺口
 
 1. **P0：第一份 strict v2 verified positive**，不降门槛凑例。
 2. **P1：protected-range 正向 risk-test**。
-3. **P2：x-scope 已 pending-review，停止普通采样**。优先：真正的 consultation→joint final decision 正例；shared/joint↔unilateral execution 最小迁移；same-layer veto vs future revocation；**scope contraction** 与本轮 expansion 构成反向动态控制；表面结构不同但实际同权的反例。
-4. deferred 只在新证据出现时复审。
+3. **P2/P4：x-scope dynamic 已 5 controls / 4 works，停止普通采样。** 优先真正 `unilateral ↔ joint/shared` decision-structure 迁移、same-layer veto 新增/退出、表面 scope 变化但实际权限未变的反例。
+4. **P3：真正 joint/shared final decision 的最小差异案例**，要求共同批准或同层节点可在生效前 veto。
+5. deferred 只在新证据出现时复审。
 
 ## E｜pending-review 索引｜10条
 
