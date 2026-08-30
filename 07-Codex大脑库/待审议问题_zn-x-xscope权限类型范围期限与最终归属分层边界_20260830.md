@@ -11,8 +11,8 @@ criterion_version:
   x_scope_gate: current-x-scope-distinction-v1_20260830
 positive_controls: 4
 positive_cross_work_count: 3
-boundary_guards: 3
-boundary_guard_works: 3
+boundary_guards: 5
+boundary_guard_works: 4
 works: [西游记, 三国演义, 红楼梦, 水浒传]
 may_override_canonical: false
 created: 2026-08-30
@@ -29,13 +29,17 @@ updated: 2026-08-30
 
 > **`x` 必须至少写清：被测对象、权限类型、权限范围、期限/返还义务、原节点是否保留覆盖/撤回权、最终裁定层。某一窄 scope 的现实 `x=true`，不能自动倒灌为邻近更宽 scope 的 `x=true`。**
 
-当前另有 3 条、3 部独立作品的高置信反向边界护栏共同支持：
+当前另有 5 条、4 部独立作品的高置信反向边界护栏共同支持：
 
-> **更宽 scope / 永久最终归属未成立，也不能反向把已经直接生效的窄 current `x` 抹成 `x=false`。未来可撤回或上位保留更高范围覆盖权，与当前局部 `x=true` 可以同时成立。共享治理已经成立，也不能倒灌为领导者个人单方最终处分。**
+> **更宽 scope / 永久最终归属未成立，也不能反向把已经直接生效的窄 current `x` 抹成 `x=false`。未来可撤回或上位保留更高范围覆盖权，与当前局部 `x=true` 可以同时成立。共享治理已经成立，也不能倒灌为领导者个人单方最终处分。共同授权的来源结构，也不能预设授权完成后的 current execution structure。**
 
 并进一步要求把两种上位权分开：
 
 > **future whole-block revocation ≠ same-layer pre-effect veto。** 前者是权限生命周期/稳定性变量；后者才直接威胁当前同层 `x` 是否能稳定成立。
+
+并新增决策结构门：
+
+> **source decision structure ≠ current execution structure。** 共同推举/共同授权既不意味着之后每一步仍必须共同决策，也不意味着授权完成后自动变成领导者对整个联合体的单方全域处分；必须另看现实节点响应、绕开、拒绝、扣留与同层 veto。
 
 本文件只到 L4 `pending-review`，不得覆盖 current canonical。
 
@@ -131,7 +135,54 @@ current same-layer x was never real
 
 这条把 `x scope` 再增加一维：归属主体与决策结构也必须分账。
 
-## 8｜跨作品共同变量
+## 8｜反向边界护栏 D：《水浒传》宋江由众头领共同推举权居主位｜99/98
+
+晁盖死后，众头领共同推举宋江“权居主位”；永久最终寨主归属仍保留晁盖遗言边界。但在被测山寨日常组织、驻扎与号令层，宋江获权后能够直接重整山寨与传令执行，当前文本没有“每一道日常决定都必须重新由众头领共同表决”的逐项 pre-effect joint veto。
+
+```text
+source_decision_structure = collective conferral
+current_execution_structure = substantially unilateral on tested operational layer
+ultimate_title = not finally locked
+```
+
+锁定：
+
+> **collective conferral / joint appointment ≠ joint execution on every current decision。**
+
+更短：
+
+> **“我们一起把权交给你” ≠ “你以后每个决定都只能和我们一起做”。**
+
+## 9｜反向边界护栏 E：《三国演义》袁绍十八路诸侯会盟｜99/98
+
+各镇诸侯共同推袁绍为盟主，袁绍能够发布联盟级分工：袁术总督粮草、孙坚为先锋、其余各据险要。但现实执行链又出现：鲍信担心孙坚抢功，暗派鲍忠绕开既定先锋安排自行出兵；袁术作为关键粮草节点还能自行扣粮，直接破坏孙坚前线部署。
+
+```text
+source_decision_structure = collective conferral
+nominal_role = alliance leader
+current_execution_structure = fragmented/shared with independent nodes
+unilateral_effect_on_whole_alliance = false
+```
+
+锁定：
+
+> **collective conferral does not determine execution structure。**
+
+并与宋江形成反向最小差异：
+
+```text
+共同授权
+≠
+以后每一步都必须共同决策
+
+共同授权
+也 ≠
+以后自动形成领导者对整个联合体的全域单方处分
+```
+
+真正要看的是：成员与关键资源节点在同一对象层能否绕开、拒绝、扣留、改变同一结果，以及领导者能否现实纠正并恢复原部署。
+
+## 10｜跨作品共同变量
 
 四个正向控制共同支持：
 
@@ -143,7 +194,7 @@ current same-layer x was never real
 必须重新取证
 ```
 
-三条反向边界共同补充：
+五条反向边界共同补充：
 
 ```text
 更宽 scope / 永久最终归属没有成立
@@ -161,6 +212,10 @@ current same-layer x was never real
 shared / joint governance
 ≠
 unilateral personal disposition
+
+source decision structure
+≠
+current execution structure
 ```
 
 因此研究层 current `x` 至少记录：
@@ -179,29 +234,43 @@ current_same_layer_effect: 当前同层决定能否直接生效
 same_layer_pre_effect_veto: 生效前是否仍需上位逐次放行/可被压回
 ultimate_title: 最终归属是否成立
 represented_authority: 凭证所代表权能是否另证
-decision_structure: unilateral / joint / shared / vetoed
+decision_structure: unilateral / joint / shared / vetoed / fragmented
+source_decision_structure: unilateral / collective / joint
+current_execution_structure: unilateral / joint / shared / vetoed / fragmented
 co_decision_nodes: 共同决定节点
 unilateral_effect: 主体单方决定能否直接改变结果
 joint_veto: 是否存在同层共同否决
+independent_execution_nodes: 是否存在可绕开/扣留/拒绝的同层节点
 ```
 
 以上仅为 L4 方法字段建议，不自动修改 L2 数据结构。
 
-## 9｜拿掉与反向测试统一协议
+## 11｜拿掉与反向测试统一协议
 
-### 9.1 窄 scope 拿掉
+### 11.1 窄 scope 拿掉
 拿掉较窄 scope 后，若相关当前行为不再可能直接生效，说明窄 scope 的 `x` 有现实作用。
 
-### 9.2 宽 scope 反向门
+### 11.2 宽 scope 反向门
 升级到更宽 `x` 必须另证：原节点是否退出、是否无需逐次许可、上位是否还能同层覆盖、是否跨出期限/返还条件、代表权能是否真的被现实节点响应、局部决定能否扩展到最终裁定。
 
-### 9.3 可撤回边界
+### 11.3 可撤回边界
 未来可撤回不是 current `x` 的反证。优先检查：当前同层是否需要逐次申请、结果生效前是否可被上位说“不”、主体决定是否可直接进入执行。
 
-### 9.4 共同治理边界
+### 11.4 共同治理边界
 要把 shared/joint `x` 升级为某主体 unilateral `x`，必须另证：其他同层节点不能共同否决，且主体单方决定足以改变同一对象结果。
 
-### 9.5 禁止双向倒灌
+### 11.5 授权结构与执行结构边界
+共同推举/共同授权后，不得预设 current execution structure。必须另查：
+
+```text
+主体当前命令是否无需逐项重新共决即可生效？
+其他同层成员能否绕开？
+关键资源节点能否扣留/拒绝？
+是否存在 same-layer pre-effect veto 或 parallel override？
+主体能否现实纠正违令并恢复原部署？
+```
+
+### 11.6 禁止双向倒灌
 
 ```text
 能试用 → 所有权
@@ -209,12 +278,14 @@ joint_veto: 是否存在同层共同否决
 拿着印信 → 代表权力
 局部管理 → 全局最终权
 共享治理 → 领导者个人单方最终处分
+共同授权 → 后续必须逐项共同执行
+共同授权 → 后续自动变成领导者全域单方执行
 
 永久/全局 x 不成立 → current local x 也不成立
 未来可撤销 → 当前从未有 x
 ```
 
-## 10｜最近邻与对象层纪律
+## 12｜最近邻与对象层纪律
 
 - `x vs z`：名位/认可/凭证象征不替现实权限。
 - `x vs nx`：授权来源不否定授权生效后的 current x，但来源节点可能限定 scope。
@@ -223,8 +294,9 @@ joint_veto: 是否存在同层共同否决
 - 同一人物在别的对象层拥有宽 `x`，不能给当前对象补票。
 - future whole-block revocation 与 same-layer pre-effect veto 分账。
 - shared governance 与 unilateral disposition 分账。
+- source decision structure 与 current execution structure 分账。
 
-## 11｜成熟度
+## 13｜成熟度
 
 ```yaml
 authority_level: L4
@@ -232,8 +304,8 @@ knowledge_status: pending-review
 criterion_version: current-x-scope-distinction-v1_20260830
 positive_controls: 4
 positive_cross_work_count: 3
-boundary_guards: 3
-boundary_guard_works: 3
+boundary_guards: 5
+boundary_guard_works: 4
 positive_works:
   - 西游记
   - 三国演义
@@ -242,21 +314,22 @@ boundary_guard_works_list:
   - 红楼梦
   - 西游记
   - 水浒传
+  - 三国演义
 may_override_canonical: false
 ```
 
 达到 pending-review 后，停止继续堆普通正向和同型普通护栏。
 
-## 12｜下一步高信息增益
+## 14｜下一步高信息增益
 
-1. same-layer pre-effect veto vs future whole-block revocation 的同人物/同对象最小差异；
-2. shared/joint governance vs unilateral disposition 的反例攻击与最小差异；
+1. 同人物、同对象的 `shared/joint execution → unilateral execution` 或反向迁移最小差异；
+2. same-layer pre-effect veto vs future whole-block revocation 的同人物/同对象最小差异；
 3. scope 变化与 lifecycle 分账；
-4. 表面 scope 不同、实际属于同一现实权限的反例；
+4. 表面 decision structure 不同、实际仍属于同一现实权限的反例；
 5. 等授权审议，不自动向 L2 升格。
 
-## 13｜不修改 canonical
+## 15｜不修改 canonical
 
 本文件不修改 L1、`x/zn` 信息卡与准度卡、`zn补x_补卡` 或 strict v2 gate。
 
-TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_3GUARDS_3WORKS_20260830
+TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_5GUARDS_4WORKS_20260830
