@@ -60,7 +60,7 @@ historical_positive_contrasts: 1
 唐僧；关羽挂印封金；严颜；晁盖“不伤无关者”；诸葛亮白帝托孤后摄政；关羽华容道。作品去重：西游 + 三国 + 水浒。
 
 #### strict precondition guards｜16 / 5 works
-当前关键 scope/protection 护栏：金池借袈裟锁 temporary custody ≠ full disposition；金兜山画圈锁 declared range ≠ observed protected-range；柴进丹书铁券锁 nominal protection credential ≠ stable protected-range；孙悟空花果山锁 territorial/internal-governance ≠ externally exclusionary protected-range。
+关键 scope/protection 护栏：temporary custody ≠ full disposition；declared range ≠ observed protected-range；nominal protection credential ≠ stable protected-range；territorial/internal-governance ≠ externally exclusionary protected-range。
 
 #### canonical calibration｜3
 《辛德勒的名单》《V字仇杀队》两次 gate calibration + 《辛德勒的名单》people-anchor competition 回测。只校准 L4 gate，不计普通 strict 正/负 cross-work。
@@ -83,8 +83,8 @@ criterion：`current-x-scope-distinction-v1_20260830`。
 ```yaml
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 3
-x_scope_boundary_guard_works: 3
+x_scope_boundary_guards: 6
+x_scope_boundary_guard_works: 4
 knowledge_status: pending-review
 pending_review: true
 ```
@@ -95,12 +95,24 @@ pending_review: true
 3. **孙策质传国玉玺｜三国演义｜99/98**：object possession/transfer 与 represented authority/sovereignty 分层；**能处分象征物 ≠ 能处分其代表权能**。
 4. **探春受托理家→全园抄检｜红楼梦｜99/97**：local current management 与 global/final override 分层；**局部真实 x ≠ 全局最终 x**。
 
-#### 反向边界护栏｜3 controls / 3 works
+#### 反向边界护栏｜6 controls / 4 works
 1. **王熙凤协理宁国府｜红楼梦｜99/98**：current local disciplinary `x=true` 与 future revocability/higher-scope override 可以同时成立。
-2. **天蓬元帅掌八万水军→被贬｜西游记｜99/98**：future whole-block revocation 是 lifecycle end，不能追溯性否定任内已经现实成立的 current `x`；**future revocability ≠ current non-possession**。
-3. **晁盖梁山共同财物治理｜水浒传｜99/98**：组织 shared-governance `x=true`，不等于寨主个人 unilateral final disposition `x=true`；**“我们能处分” ≠ “我能单方处分”**。
+2. **天蓬元帅掌八万水军→被贬｜西游记｜99/98**：future whole-block revocation 是 lifecycle end；**future revocability ≠ current non-possession**。
+3. **晁盖梁山共同财物治理｜水浒传｜99/98**：shared-governance `x=true` 不等于寨主个人 unilateral final disposition；**“我们能处分” ≠ “我能单方处分”**。
+4. **宋江由众头领共同推举权居主位｜水浒传｜99/98**：collective conferral ≠ joint execution on every current decision。
+5. **袁绍十八路诸侯会盟｜三国演义｜99/98**：collective conferral does not determine execution structure；关键成员与资源节点可绕开/扣留，whole-alliance unilateral effect 不成立。
+6. **孙权赤壁前战降公议｜三国演义｜99/98**：broad consultation ≠ joint/shared final decision；多人参与讨论不等于多人共同拥有最终处分权。
 
-达到 3 positive works 且反向护栏也达到 3 independent works，继续保持 `pending-review`；停止堆普通同型正例/护栏，转向最小差异与反例攻击。
+达到 pending-review 后继续停止普通同型采样。当前新增方法分账：
+
+```text
+source decision structure
+≠ consultation structure
+≠ final decision structure
+≠ current execution structure
+```
+
+研究层下一步只做真正最小差异：共同咨询→共同最终裁决、共同授权→执行结构迁移、same-layer veto vs future revocation、以及表面结构不同但实际同权的反例攻击。
 
 ## B｜当前统计
 
@@ -136,8 +148,8 @@ strict_historical_positive_contrasts: 1
 x_scope_current_criterion: current-x-scope-distinction-v1_20260830
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 3
-x_scope_boundary_guard_works: 3
+x_scope_boundary_guards: 6
+x_scope_boundary_guard_works: 4
 x_scope_knowledge_status: pending-review
 nominal_identity_vs_real_x_controls: 3
 nominal_identity_vs_real_x_works: 3
@@ -172,26 +184,28 @@ pending_review_count: 10
 7. transient opportunity / one-off effective override ≠ stable disposition `x`。
 8. temporary custody/use/agency `x` ≠ ownership/full disposition `x`；物在我手 ≠ 对象完整归我处分。
 9. `x` 不是单一布尔值：permission type / scope / term / revocability / return obligation / ultimate title 分账。
-10. **future whole-block revocation ≠ same-layer pre-effect veto**；前者是 lifecycle，后者才直接威胁 current `x`。
-11. **shared governance x ≠ unilateral disposition x**；组织能处分 ≠ 领导者个人能单方处分。
-12. current-control 可以真实，同时 ultimate-title/permanent ownership 仍受限。
-13. execution/amplification/settlement interface ≠ object-constituting anchor；decisive outcome control ≠ 自动 `x→zn`。
-14. standing commitment / formed expectation 可本身构成 same-window anchor；履约能力 ≠ 承诺对象。
-15. endpoint attribution：第三方产权、保护、否决或政治节点不得倒灌进主体 `x`。
-16. people/object anchor 与 protected-range/organized-boundary anchor 分层；people presence alone 不自动否决范围型 `x→zn`。
-17. declared protected range / 能力声明 / 设定威望 ≠ evidence-locked protected-range `x`。
-18. territorial/internal-governance `x` ≠ externally exclusionary protected-range `x`；内部能管 ≠ 外部一定进不来。
-19. protection-range 正向优先要求 boundary-on + object-inside + risk-test + observed exclusion/change，并排除第三方等价保护。
-20. 名义法律/血统保护资格 ≠ stable protected-range `x`；risk-test 失败时必须判现实保护边界未成立。
-21. 高责任/高代价、自罚、自限、战略释放、角色规则同构都不能替 `zn` 独立过门。
-22. pressure-display 解压必须 same principle + same boundary + same conflict-order criterion。
-23. evidence-locked 可被 adversarial audit 撤回。
+10. **future whole-block revocation ≠ same-layer pre-effect veto**。
+11. **shared governance x ≠ unilateral disposition x**。
+12. **source decision structure ≠ consultation structure ≠ final decision structure ≠ current execution structure**。
+13. collective conferral 不预设后续每一步 joint，也不预设领导者对整个联合体自动获得 unilateral full-scope `x`。
+14. broad consultation / proposal / persuasion ≠ shared/joint final decision；必须另查同层 veto 与 final decision node。
+15. execution/amplification/settlement interface ≠ object-constituting anchor；decisive outcome control ≠ 自动 `x→zn`。
+16. standing commitment / formed expectation 可本身构成 same-window anchor；履约能力 ≠ 承诺对象。
+17. endpoint attribution：第三方产权、保护、否决或政治节点不得倒灌进主体 `x`。
+18. people/object anchor 与 protected-range/organized-boundary anchor 分层；people presence alone 不自动否决范围型 `x→zn`。
+19. declared protected range / 能力声明 / 设定威望 ≠ evidence-locked protected-range `x`。
+20. territorial/internal-governance `x` ≠ externally exclusionary protected-range `x`。
+21. protection-range 正向要求 boundary-on + object-inside + risk-test + observed exclusion/change，并排除第三方等价保护。
+22. 名义法律/血统保护资格 ≠ stable protected-range `x`；risk-test 失败时必须判现实保护边界未成立。
+23. 高责任/高代价、自罚、自限、战略释放、角色规则同构都不能替 `zn` 独立过门。
+24. pressure-display 解压必须 same principle + same boundary + same conflict-order criterion。
+25. evidence-locked 可被 adversarial audit 撤回。
 
 ## D｜当前高价值缺口
 
 1. **P0：第一份 strict v2 verified positive**。不降门槛凑例；优先天然、单一、stable、subject-specific 的对象构成型 `x`。
-2. **P1：protected-range / organized-boundary 正向 risk-test**。需要对象在边界内、外部风险真实进入、subject-specific `x` 稳定阻断/改道同一结果，并排除第三方等价保护。
-3. **P2：x-scope 已 pending-review，停止普通采样**。下一步只做 same-layer pre-effect veto vs future revocation、shared/joint vs unilateral、scope lifecycle、以及“表面 scope 不同但实际同权”的反例攻击。
+2. **P1：protected-range / organized-boundary 正向 risk-test**。对象在边界内、风险真实进入、subject-specific `x` 稳定阻断/改道同一结果，并排除第三方等价保护。
+3. **P2：x-scope 已 pending-review，停止普通采样**。下一步只做：真正的 consultation→joint final decision 正例、shared/joint↔unilateral execution 最小迁移、same-layer pre-effect veto vs future revocation、scope lifecycle、以及“表面结构不同但实际同权”的反例攻击。
 4. deferred 只在新证据出现时复审；其他成熟槽只找新型反例/边界。
 
 ## E｜pending-review 索引｜10条
