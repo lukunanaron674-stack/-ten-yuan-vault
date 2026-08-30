@@ -13,7 +13,7 @@ positive_controls: 4
 positive_cross_work_count: 3
 boundary_guards: 6
 boundary_guard_works: 4
-dynamic_transition_controls: 1
+dynamic_transition_controls: 2
 dynamic_transition_works: 1
 works: [西游记, 三国演义, 红楼梦, 水浒传]
 may_override_canonical: false
@@ -35,15 +35,17 @@ updated: 2026-08-30
 
 > **更宽 scope / 永久最终归属未成立，也不能反向把已经直接生效的窄 current `x` 抹成 `x=false`。未来可撤回或上位保留更高范围覆盖权，与当前局部 `x=true` 可以同时成立。共享治理已经成立，也不能倒灌为领导者个人单方最终处分。共同授权的来源结构、广泛咨询结构，也不能预设授权或咨询后的 current execution / final-decision structure。**
 
-另有 1 条高置信动态迁移控制支持：
+另有 2 条同人物、同组织的高置信动态迁移控制支持：
 
-> **`x` 的生命周期不只有 off→on / on→off；同一人物可从较窄真实 `x` 扩展为更宽 current `x`，必须记录迁移前 scope、迁移后 scope、触发节点、原 override node 与仍保留的 ultimate-title 限制。**
+> **`x` 的生命周期不只有 off→on / on→off。它可以发生 scope expansion，也可以发生 scope contraction；迁移后某些较低层 current `x` 可继续保留，而较高层任务启动、对象选择或最终裁定 scope 已上移/外置。**
 
 核心结构门：
 
 > **future whole-block revocation ≠ same-layer pre-effect veto。**
 
 > **source decision structure ≠ consultation structure ≠ final decision structure ≠ current execution structure。**
+
+> **scope contraction ≠ x overall off。**
 
 本文件只到 L4 `pending-review`，不得覆盖 current canonical。
 
@@ -90,9 +92,9 @@ current_execution_structure = unilateral-final-decision-with-delegated-military-
 
 本条来自《三国演义》既有 guard works 集合，因此只推进 control：`5→6`，independent works 保持 `4`。
 
-## 3｜动态迁移控制｜1 control / 1 work
+## 3｜动态迁移控制｜2 controls / 1 work
 
-### 宋江：晁盖生前受限战役执行 x → 晁盖死后更宽全寨 operational x｜水浒传｜99/97
+### A｜宋江：晁盖生前受限战役执行 x → 晁盖死后更宽全寨 operational x｜水浒传｜99/97
 
 同一人物、同一组织中：
 
@@ -112,17 +114,50 @@ ultimate title = conditional / not-final
 
 > **已有窄 `x` 可以在组织节点变化后扩展为更宽 `x`，不是只能记录 `x off→on`。**
 
-本条不增加普通 positive 或 boundary guard 计数，单列 `dynamic_transition_control`。
+### B｜宋江：招安前较宽最高对外任务方向 → 招安后保留内部调兵 x 但战争启动/任务对象改由朝廷诏令输入｜水浒传｜99/97
+
+同一人物、同一支梁山武装中：
+
+```text
+阶段 A｜招安前
+梁山内部形成对外军事对象
++ 宋江可组织调兵执行
+
+↓ 招安 + 正式纳入朝廷军政任务链
+
+阶段 B｜招安后
+internal troop command / battle execution x = retained true
+但
+highest-level campaign initiation / target selection
+= court-assigned
+```
+
+第69回东平、东昌行动对象由梁山内部形成；第82回招安后朝廷已经现实进入军队组织处置链；第83回征辽的战争启动、任务对象与宋江先锋身份由皇帝诏令输入。锁定：
+
+> **scope contraction 不等于 `x` 整体退出。较高层任务方向 scope 可以上移/外置，同时较低层 current operational `x` 继续成立。**
+
+两条动态控制构成同人物、同组织的双向变化：
+
+```text
+expansion：较窄战役执行 → 更宽全寨 operational control
+contraction：较宽内部任务方向 + 执行 → 保留执行，但最高任务方向上移朝廷
+```
+
+本组不增加普通 positive 或 boundary guard 计数，单列 `dynamic_transition_control`。
 
 建议动态字段：
 
 ```yaml
 scope_transition:
+  direction: expansion / contraction
   from: 原权限范围
   to: 新权限范围
 transition_trigger: 权限结构变化的真实节点
 pre_transition_override_node: 迁移前覆盖节点
 post_transition_same_layer_pre_effect_veto: 迁移后是否仍存在同层逐项否决
+retained_layers: 迁移后仍保留的权限层
+lost_or_externalized_layers: 迁移后上移、外置或失去的权限层
+post_transition_task_source: 迁移后最高任务来源
 ultimate_title_after_transition: 最终归属是否仍有限制
 ```
 
@@ -144,6 +179,9 @@ source decision structure
 
 x lifecycle
 ≠ only on/off
+
+scope contraction
+≠ x overall off
 ```
 
 研究层 current `x` 至少记录：
@@ -171,7 +209,11 @@ unilateral_effect: 主体单方决定能否直接改变结果
 joint_veto: 是否存在同层共同否决
 independent_execution_nodes: 是否存在可绕开/扣留/拒绝的同层节点
 scope_transition: from → to
+transition_direction: expansion / contraction
 transition_trigger: 真实权限迁移节点
+retained_layers: 迁移后仍保留的权限层
+lost_or_externalized_layers: 迁移后上移、外置或失去的权限层
+post_transition_task_source: 迁移后最高任务来源
 ```
 
 以上仅为 L4 方法字段建议，不自动修改 L2 数据结构。
@@ -183,7 +225,8 @@ transition_trigger: 真实权限迁移节点
 3. **可撤回边界**：future revocation 不是 current `x` 反证；重点查 same-layer pre-effect veto。
 4. **共同治理边界**：shared/joint → unilateral 必须证明其他同层节点不能共同否决，且主体单方决定能改变同一对象结果。
 5. **授权/咨询/裁决/执行分账**：共同授权或广泛咨询不得预设最终裁决和执行结构。
-6. **scope transition**：不能把迁移前窄 `x` 写成 `x=false`，也不能把迁移后宽 `x` 倒填到迁移前。
+6. **scope expansion**：不能把迁移前窄 `x` 写成 `x=false`，也不能把迁移后宽 `x` 倒填到迁移前。
+7. **scope contraction**：迁移后高层 scope 上移/外置时，必须继续逐层检查低层 current `x` 是否保留；禁止把部分收窄写成整体 `x=off`。
 
 禁止倒灌：
 
@@ -197,6 +240,7 @@ transition_trigger: 真实权限迁移节点
 共同授权 → 后续自动变成领导者全域单方执行
 广泛咨询 → shared/joint final decision
 迁移后宽 x → 迁移前已经拥有同样宽 x
+高层 scope 收窄 → 所有低层 x 都自动消失
 ```
 
 ## 6｜成熟度
@@ -209,7 +253,7 @@ positive_controls: 4
 positive_cross_work_count: 3
 boundary_guards: 6
 boundary_guard_works: 4
-dynamic_transition_controls: 1
+dynamic_transition_controls: 2
 dynamic_transition_works: 1
 positive_works: [西游记, 三国演义, 红楼梦]
 boundary_guard_works_list: [红楼梦, 西游记, 水浒传, 三国演义]
@@ -221,10 +265,10 @@ may_override_canonical: false
 
 ## 7｜下一步高信息增益
 
-1. `shared/joint execution → unilateral execution` 或反向迁移的同人物/同对象最小差异；
-2. `consultation structure → joint/shared final decision` 的真正正向最小差异；
-3. same-layer pre-effect veto vs future whole-block revocation；
-4. **scope contraction**：已有宽 `x` 是否在真实节点后缩成窄 `x`，与本轮 expansion 构成反向动态控制；
+1. **跨作品复验动态 scope**：优先找第二部作品的 contraction 或 expansion，避免宋江单一人物包办动态机制；
+2. `shared/joint execution → unilateral execution` 或反向迁移的同人物/同对象最小差异；
+3. `consultation structure → joint/shared final decision` 的真正正向最小差异；
+4. same-layer pre-effect veto vs future whole-block revocation；
 5. 表面 decision structure 不同、实际仍属于同一现实权限的反例；
 6. 等授权审议，不自动向 L2 升格。
 
@@ -232,4 +276,4 @@ may_override_canonical: false
 
 本文件不修改 L1、`x/zn` 信息卡与准度卡、`zn补x_补卡` 或 strict v2 gate。
 
-TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_6GUARDS_4WORKS_1DYNAMIC_1WORK_20260830
+TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_6GUARDS_4WORKS_2DYNAMIC_1WORK_20260830
