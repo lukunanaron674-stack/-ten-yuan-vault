@@ -13,6 +13,8 @@ positive_controls: 4
 positive_cross_work_count: 3
 boundary_guards: 6
 boundary_guard_works: 4
+dynamic_transition_controls: 1
+dynamic_transition_works: 1
 works: [西游记, 三国演义, 红楼梦, 水浒传]
 may_override_canonical: false
 created: 2026-08-30
@@ -33,211 +35,118 @@ updated: 2026-08-30
 
 > **更宽 scope / 永久最终归属未成立，也不能反向把已经直接生效的窄 current `x` 抹成 `x=false`。未来可撤回或上位保留更高范围覆盖权，与当前局部 `x=true` 可以同时成立。共享治理已经成立，也不能倒灌为领导者个人单方最终处分。共同授权的来源结构、广泛咨询结构，也不能预设授权或咨询后的 current execution / final-decision structure。**
 
-并进一步要求把两种上位权分开：
+另有 1 条高置信动态迁移控制支持：
 
-> **future whole-block revocation ≠ same-layer pre-effect veto。** 前者是权限生命周期/稳定性变量；后者才直接威胁当前同层 `x` 是否能稳定成立。
+> **`x` 的生命周期不只有 off→on / on→off；同一人物可从较窄真实 `x` 扩展为更宽 current `x`，必须记录迁移前 scope、迁移后 scope、触发节点、原 override node 与仍保留的 ultimate-title 限制。**
 
-决策结构门：
+核心结构门：
 
-> **source decision structure ≠ consultation structure ≠ final decision structure ≠ current execution structure。** 共同推举/共同授权既不意味着之后每一步仍必须共同决策，也不意味着授权完成后自动变成领导者对整个联合体的单方全域处分；多人参与讨论、提案和劝说，也不等于多人共同拥有最终处分权。必须另看同层 veto、最终裁决、现实执行与独立节点是否可绕开/拒绝/扣留。
+> **future whole-block revocation ≠ same-layer pre-effect veto。**
+
+> **source decision structure ≠ consultation structure ≠ final decision structure ≠ current execution structure。**
 
 本文件只到 L4 `pending-review`，不得覆盖 current canonical。
 
-## 1｜控制 A：《西游记》孙悟空龙宫试兵器→金箍棒｜99/98
+## 1｜正向控制｜4 controls / 3 works
 
-```text
-刀 / 叉 / 戟：trial-use / temporary handling x=true
-金箍棒：获赠 + 带离原节点 + 长期随身 + 反复排他调用
-→ stable possession/use/disposition x=true
-```
+### A｜《西游记》孙悟空龙宫试兵器→金箍棒｜99/98
+`trial-use / temporary handling x=true` 不等于 `stable possession/use/disposition x=true`；**能用 ≠ 归我**。
 
-支持：**能接触 / 能临时使用 ≠ 长期归我处分。**
+### B｜《三国演义》刘备借荆州｜99/98
+current territorial governance/control 与 ultimate-title/permanent ownership 分层；**当前能管 ≠ 永久归我；未来有返还义务 ≠ 当前从未有真实 x。**
 
-## 2｜控制 B：《三国演义》刘备借荆州｜99/98
+### C｜《三国演义》孙策质传国玉玺｜99/98
+object possession/transfer 与 represented authority/sovereignty 分层；**能处分象征物 ≠ 能处分其代表权能。**
 
-```text
-驻军 / 守城 / 治理 / 部分交割
-→ current territorial governance/control x=true
-返还义务 + 东吴索还 + 最终归属争议
-→ ultimate title / permanent ownership 不得由 current control 倒推
-```
+### D｜《红楼梦》探春受托理家→全园抄检｜99/97
+local current management 与 global/final override 分层；**局部真实 x ≠ 全局最终 x。**
 
-支持：**当前能管 ≠ 永久归我；未来有返还义务 ≠ 当前从未有真实 x。**
+## 2｜反向边界护栏｜6 controls / 4 works
 
-## 3｜控制 C：《三国演义》孙策质传国玉玺｜99/98
+### A｜王熙凤协理宁国府｜红楼梦｜99/98
+future revocability / higher-scope override 与 current local disciplinary `x=true` 可以同时成立。
 
-```text
-玉玺具体物件可持有 / 质押 / 交付
-→ object possession/transfer x=true
-玉玺代表的皇帝权能 / 正统裁定
-→ 不能仅凭持物锁定
-```
+### B｜天蓬元帅掌八万水军→被贬｜西游记｜99/98
+future whole-block revocation 是 lifecycle end；**future revocability ≠ current non-possession。**
 
-支持：**我能处分权力的象征物 ≠ 我已经处分象征物代表的权力。**
+### C｜晁盖梁山共同财物治理｜水浒传｜99/98
+shared-governance `x=true` 不等于寨主个人 unilateral final disposition；**“我们能处分” ≠ “我能单方处分”。**
 
-## 4｜控制 D：《红楼梦》探春受托理家→全园抄检｜99/97
+### D｜宋江由众头领共同推举权居主位｜水浒传｜99/98
+collective conferral ≠ joint execution on every current decision；共同授予来源不预设后续逐项共决。
 
-```text
-第55-56回：局部家务 / 公账裁处可直接生效
-→ local current management x=true
-第74回：王夫人仍可越级发动全园抄检
-→ global/final override x=false / not locked
-```
+### E｜袁绍十八路诸侯会盟｜三国演义｜99/98
+collective conferral does not determine execution structure；关键成员和资源节点可绕开/扣留，因此 whole-alliance unilateral effect 不成立。
 
-支持：**局部真实 x ≠ 全局最终 x。**
-
-## 5｜反向边界护栏 A：《红楼梦》王熙凤协理宁国府｜99/98
-
-协理授权来自上位节点，永久最终归属并未转移；但迟到媳妇处分可以由凤姐直接决定并立即执行。
-
-```text
-current local disciplinary x = true
-+
-higher-scope override / future revocability = true
-```
-
-支持：**revocability ≠ current non-possession。**
-
-## 6｜反向边界护栏 B：《西游记》天蓬元帅掌管八万水军→被贬｜99/98
-
-任内“掌管天河八万水兵大众”给出真实 current 军务掌管；后来玉帝可以整段撤回该权限，只说明 lifecycle 能结束，不能追溯性否定结束前的 current `x`。
-
-```text
-future whole-block revocation = true
-≠
-current same-layer x was never real
-```
-
-因此：**future revocability ≠ current non-possession。**
-
-## 7｜反向边界护栏 C：《水浒传》晁盖接掌梁山后共同财物治理｜99/98
-
-对象层必须分开：
-
-```text
-对象 A｜晁盖自家庄财
-→ 晁盖个人 x = true
-
-对象 B｜梁山共同所得 / 公库财物
-→ 梁山头领集团 / 山寨治理结构 shared-governance x = true
-→ 晁盖个人最终单方 disposition x = 不足以成立
-```
-
-拿掉“晁盖个人拥有共享公库最终单方处分权”这一假设，只保留众头领共同治理 + 掌库执行，仍足以解释共同财物入库与分配。
-
-锁定：
-
-> **shared governance x ≠ unilateral disposition x。**
-
-更短：
-
-> **“我们能处分” ≠ “我能单方处分”。**
-
-## 8｜反向边界护栏 D：《水浒传》宋江由众头领共同推举权居主位｜99/98
-
-晁盖死后，众头领共同推举宋江“权居主位”；永久最终寨主归属仍保留晁盖遗言边界。但在被测山寨日常组织、驻扎与号令层，宋江获权后能够直接重整山寨与传令执行，当前文本没有“每一道日常决定都必须重新由众头领共同表决”的逐项 pre-effect joint veto。
-
-```text
-source_decision_structure = collective conferral
-current_execution_structure = substantially unilateral on tested operational layer
-ultimate_title = not finally locked
-```
-
-锁定：
-
-> **collective conferral / joint appointment ≠ joint execution on every current decision。**
-
-更短：
-
-> **“我们一起把权交给你” ≠ “你以后每个决定都只能和我们一起做”。**
-
-## 9｜反向边界护栏 E：《三国演义》袁绍十八路诸侯会盟｜99/98
-
-各镇诸侯共同推袁绍为盟主，袁绍能够发布联盟级分工；但鲍信可绕开先锋安排自行出兵，袁术作为粮草节点还能自行扣粮并改变孙坚前线结果。
-
-```text
-source_decision_structure = collective conferral
-nominal_role = alliance leader
-current_execution_structure = fragmented/shared with independent nodes
-unilateral_effect_on_whole_alliance = false
-```
-
-锁定：
-
-> **collective conferral does not determine execution structure。**
-
-共同授权既不必然导向逐项共同执行，也不必然导向领导者全域单方处分。
-
-## 10｜反向边界护栏 F：《三国演义》孙权赤壁前战降公议｜99/98
-
-张昭等主降，鲁肃、诸葛亮、周瑜等提供冲突意见，咨询结构明显是多节点；但最终战/降裁决由孙权作出，并直接触发周瑜受命和军队进入执行链。当前没有观察到“所有参与咨询者共同拥有同层最终否决权”。
+### F｜孙权赤壁前战降公议｜三国演义｜99/98
+broad consultation ≠ joint/shared final decision；多人参与讨论不等于多人共同拥有最终处分权。
 
 ```text
 consultation_structure = multi-node / broad
 final_decision_node = 孙权
-current_strategic_decision_x = true
 joint_final_veto_by_all_advisers = false / not observed
 current_execution_structure = unilateral-final-decision-with-delegated-military-execution
 ```
 
-锁定：
+本条来自《三国演义》既有 guard works 集合，因此只推进 control：`5→6`，independent works 保持 `4`。
 
-> **consultation structure ≠ decision structure。**
+## 3｜动态迁移控制｜1 control / 1 work
 
-更短：
+### 宋江：晁盖生前受限战役执行 x → 晁盖死后更宽全寨 operational x｜水浒传｜99/97
 
-> **“很多人都参与讨论” ≠ “很多人共同拥有最终处分权”。**
-
-必须分别记录：谁能发言/提案/劝说、谁能同层否决、谁拥有最终裁决、谁负责执行。
-
-本条来自《三国演义》既有 guard works 集合，因此：
+同一人物、同一组织中：
 
 ```text
-boundary_guards: 5 → 6
-boundary_guard_works: 4 → 4
+阶段 A｜晁盖生前
+delegated/campaign execution x = true
+mountain-wide final launch / leader override x = false / not locked
+
+↓ 晁盖死亡 + 众头领共同授予权居主位
+
+阶段 B
+current mountain-wide operational x = true
+ultimate title = conditional / not-final
 ```
 
-## 11｜跨作品共同变量
+阶段 A 宋江可以带兵、传将令，但不能否决晁盖亲征曾头市；阶段 B 则可直接重分六寨、安排头领驻扎并调拨全寨军马。锁定：
 
-四个正向控制共同支持：
+> **已有窄 `x` 可以在组织节点变化后扩展为更宽 `x`，不是只能记录 `x off→on`。**
 
-```text
-一个较窄的现实权限已经成立
-↓
-不能自动向更宽权限类型 / 时间 / 范围 / 代表权能传播
-↓
-必须重新取证
+本条不增加普通 positive 或 boundary guard 计数，单列 `dynamic_transition_control`。
+
+建议动态字段：
+
+```yaml
+scope_transition:
+  from: 原权限范围
+  to: 新权限范围
+transition_trigger: 权限结构变化的真实节点
+pre_transition_override_node: 迁移前覆盖节点
+post_transition_same_layer_pre_effect_veto: 迁移后是否仍存在同层逐项否决
+ultimate_title_after_transition: 最终归属是否仍有限制
 ```
 
-六条反向边界共同补充：
+## 4｜跨作品共同变量
 
 ```text
-更宽 scope / 永久最终归属没有成立
+窄 current x 成立
 ≠
-已经直接生效的窄 current x 不成立
-```
+宽 x 自动成立
 
-以及：
-
-```text
-上位未来整段撤回
+宽/永久 x 未成立
 ≠
-上位当前逐次 pre-effect veto
-
-shared / joint governance
-≠
-unilateral personal disposition
+窄 current x 不成立
 
 source decision structure
-≠
-consultation structure
-≠
-final decision structure
-≠
-current execution structure
+≠ consultation structure
+≠ final decision structure
+≠ current execution structure
+
+x lifecycle
+≠ only on/off
 ```
 
-因此研究层 current `x` 至少记录：
+研究层 current `x` 至少记录：
 
 ```yaml
 object: 被测对象
@@ -253,7 +162,6 @@ current_same_layer_effect: 当前同层决定能否直接生效
 same_layer_pre_effect_veto: 生效前是否仍需上位逐次放行/可被压回
 ultimate_title: 最终归属是否成立
 represented_authority: 凭证所代表权能是否另证
-decision_structure: unilateral / joint / shared / vetoed / fragmented
 source_decision_structure: unilateral / collective / joint
 consultation_structure: single-node / multi-node / broad
 final_decision_structure: unilateral / joint / shared / vetoed
@@ -262,65 +170,36 @@ co_decision_nodes: 共同决定节点
 unilateral_effect: 主体单方决定能否直接改变结果
 joint_veto: 是否存在同层共同否决
 independent_execution_nodes: 是否存在可绕开/扣留/拒绝的同层节点
+scope_transition: from → to
+transition_trigger: 真实权限迁移节点
 ```
 
 以上仅为 L4 方法字段建议，不自动修改 L2 数据结构。
 
-## 12｜拿掉与反向测试统一协议
+## 5｜统一测试协议
 
-### 12.1 窄 scope 拿掉
-拿掉较窄 scope 后，若相关当前行为不再可能直接生效，说明窄 scope 的 `x` 有现实作用。
+1. **窄 scope 拿掉**：拿掉后相关当前行为不再可能直接生效，说明该窄 scope 有现实作用。
+2. **宽 scope 反向门**：升级更宽 `x` 时另证原节点是否退出、上位是否仍可同层覆盖、期限/返还条件是否跨越、局部决定是否扩展到最终裁定。
+3. **可撤回边界**：future revocation 不是 current `x` 反证；重点查 same-layer pre-effect veto。
+4. **共同治理边界**：shared/joint → unilateral 必须证明其他同层节点不能共同否决，且主体单方决定能改变同一对象结果。
+5. **授权/咨询/裁决/执行分账**：共同授权或广泛咨询不得预设最终裁决和执行结构。
+6. **scope transition**：不能把迁移前窄 `x` 写成 `x=false`，也不能把迁移后宽 `x` 倒填到迁移前。
 
-### 12.2 宽 scope 反向门
-升级到更宽 `x` 必须另证：原节点是否退出、是否无需逐次许可、上位是否还能同层覆盖、是否跨出期限/返还条件、代表权能是否真的被现实节点响应、局部决定能否扩展到最终裁定。
-
-### 12.3 可撤回边界
-未来可撤回不是 current `x` 的反证。优先检查：当前同层是否需要逐次申请、结果生效前是否可被上位说“不”、主体决定是否可直接进入执行。
-
-### 12.4 共同治理边界
-要把 shared/joint `x` 升级为某主体 unilateral `x`，必须另证：其他同层节点不能共同否决，且主体单方决定足以改变同一对象结果。
-
-### 12.5 授权 / 咨询 / 最终裁决 / 执行结构边界
-不得由共同授权或广泛咨询预设后续结构。必须另查：
-
-```text
-主体当前命令是否无需逐项重新共决即可生效？
-参与咨询者是否具有同层 pre-effect veto？
-谁能作最终裁决？
-其他同层成员能否绕开？
-关键资源节点能否扣留/拒绝？
-是否存在 parallel override？
-主体能否现实纠正违令并恢复原部署？
-```
-
-### 12.6 禁止双向倒灌
+禁止倒灌：
 
 ```text
 能试用 → 所有权
 当前治理 → 永久产权
 拿着印信 → 代表权力
 局部管理 → 全局最终权
-共享治理 → 领导者个人单方最终处分
+共享治理 → 个人单方最终处分
 共同授权 → 后续必须逐项共同执行
 共同授权 → 后续自动变成领导者全域单方执行
 广泛咨询 → shared/joint final decision
-
-永久/全局 x 不成立 → current local x 也不成立
-未来可撤销 → 当前从未有 x
+迁移后宽 x → 迁移前已经拥有同样宽 x
 ```
 
-## 13｜最近邻与对象层纪律
-
-- `x vs z`：名位/认可/凭证象征不替现实权限。
-- `x vs nx`：授权来源或咨询输入不否定授权/裁决生效后的 current x，但来源节点可能限定 scope。
-- `x vs xn`：会运行流程不等于对象完整归属。
-- `x vs zx`：一次扩张或夺取行为不能替代后续稳定 scope 审计。
-- 同一人物在别的对象层拥有宽 `x`，不能给当前对象补票。
-- future whole-block revocation 与 same-layer pre-effect veto 分账。
-- shared governance 与 unilateral disposition 分账。
-- source decision structure / consultation structure / final decision structure / current execution structure 分账。
-
-## 14｜成熟度
+## 6｜成熟度
 
 ```yaml
 authority_level: L4
@@ -330,31 +209,27 @@ positive_controls: 4
 positive_cross_work_count: 3
 boundary_guards: 6
 boundary_guard_works: 4
-positive_works:
-  - 西游记
-  - 三国演义
-  - 红楼梦
-boundary_guard_works_list:
-  - 红楼梦
-  - 西游记
-  - 水浒传
-  - 三国演义
+dynamic_transition_controls: 1
+dynamic_transition_works: 1
+positive_works: [西游记, 三国演义, 红楼梦]
+boundary_guard_works_list: [红楼梦, 西游记, 水浒传, 三国演义]
+dynamic_transition_works_list: [水浒传]
 may_override_canonical: false
 ```
 
 达到 pending-review 后，停止继续堆普通正向和同型普通护栏。
 
-## 15｜下一步高信息增益
+## 7｜下一步高信息增益
 
-1. 同人物、同对象的 `shared/joint execution → unilateral execution` 或反向迁移最小差异；
-2. `consultation structure` 与 `joint final-decision structure` 的正向最小差异：真正需要共同批准/同层否决才能生效的案例；
-3. same-layer pre-effect veto vs future whole-block revocation 的同人物/同对象最小差异；
-4. scope 变化与 lifecycle 分账；
+1. `shared/joint execution → unilateral execution` 或反向迁移的同人物/同对象最小差异；
+2. `consultation structure → joint/shared final decision` 的真正正向最小差异；
+3. same-layer pre-effect veto vs future whole-block revocation；
+4. **scope contraction**：已有宽 `x` 是否在真实节点后缩成窄 `x`，与本轮 expansion 构成反向动态控制；
 5. 表面 decision structure 不同、实际仍属于同一现实权限的反例；
 6. 等授权审议，不自动向 L2 升格。
 
-## 16｜不修改 canonical
+## 8｜不修改 canonical
 
 本文件不修改 L1、`x/zn` 信息卡与准度卡、`zn补x_补卡` 或 strict v2 gate。
 
-TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_6GUARDS_4WORKS_20260830
+TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_6GUARDS_4WORKS_1DYNAMIC_1WORK_20260830
