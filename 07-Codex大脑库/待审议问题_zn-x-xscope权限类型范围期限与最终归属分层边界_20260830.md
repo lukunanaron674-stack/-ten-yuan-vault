@@ -13,12 +13,12 @@ positive_controls: 4
 positive_cross_work_count: 3
 boundary_guards: 6
 boundary_guard_works: 4
-dynamic_transition_controls: 2
-dynamic_transition_works: 1
+dynamic_transition_controls: 5
+dynamic_transition_works: 4
 works: [西游记, 三国演义, 红楼梦, 水浒传]
 may_override_canonical: false
 created: 2026-08-30
-updated: 2026-08-30
+updated: 2026-08-31
 ---
 
 # 待审议｜zn-x x scope：权限类型、范围、期限与最终归属必须分层
@@ -35,9 +35,9 @@ updated: 2026-08-30
 
 > **更宽 scope / 永久最终归属未成立，也不能反向把已经直接生效的窄 current `x` 抹成 `x=false`。未来可撤回或上位保留更高范围覆盖权，与当前局部 `x=true` 可以同时成立。共享治理已经成立，也不能倒灌为领导者个人单方最终处分。共同授权的来源结构、广泛咨询结构，也不能预设授权或咨询后的 current execution / final-decision structure。**
 
-另有 2 条同人物、同组织的高置信动态迁移控制支持：
+另有 5 条、4 部独立作品的高置信动态迁移控制支持：
 
-> **`x` 的生命周期不只有 off→on / on→off。它可以发生 scope expansion，也可以发生 scope contraction；迁移后某些较低层 current `x` 可继续保留，而较高层任务启动、对象选择或最终裁定 scope 已上移/外置。**
+> **`x` 的生命周期不只有 off→on / on→off。它可以发生 scope expansion，也可以发生 scope contraction；迁移后某些较低层 current `x` 可继续保留，而较高层任务启动、对象选择或最终裁定 scope 已上移/外置。动态迁移已经跨《水浒传》《红楼梦》《西游记》《三国演义》复验，停止继续堆普通 expansion/contraction 正例。**
 
 核心结构门：
 
@@ -92,11 +92,9 @@ current_execution_structure = unilateral-final-decision-with-delegated-military-
 
 本条来自《三国演义》既有 guard works 集合，因此只推进 control：`5→6`，independent works 保持 `4`。
 
-## 3｜动态迁移控制｜2 controls / 1 work
+## 3｜动态迁移控制｜5 controls / 4 works
 
 ### A｜宋江：晁盖生前受限战役执行 x → 晁盖死后更宽全寨 operational x｜水浒传｜99/97
-
-同一人物、同一组织中：
 
 ```text
 阶段 A｜晁盖生前
@@ -110,13 +108,9 @@ current mountain-wide operational x = true
 ultimate title = conditional / not-final
 ```
 
-阶段 A 宋江可以带兵、传将令，但不能否决晁盖亲征曾头市；阶段 B 则可直接重分六寨、安排头领驻扎并调拨全寨军马。锁定：
-
-> **已有窄 `x` 可以在组织节点变化后扩展为更宽 `x`，不是只能记录 `x off→on`。**
+锁定：**已有窄 `x` 可以在组织节点变化后扩展为更宽 `x`，不是只能记录 `x off→on`。**
 
 ### B｜宋江：招安前较宽最高对外任务方向 → 招安后保留内部调兵 x 但战争启动/任务对象改由朝廷诏令输入｜水浒传｜99/97
-
-同一人物、同一支梁山武装中：
 
 ```text
 阶段 A｜招安前
@@ -127,23 +121,72 @@ ultimate title = conditional / not-final
 
 阶段 B｜招安后
 internal troop command / battle execution x = retained true
-但
-highest-level campaign initiation / target selection
-= court-assigned
+但 highest-level campaign initiation / target selection = court-assigned
 ```
 
-第69回东平、东昌行动对象由梁山内部形成；第82回招安后朝廷已经现实进入军队组织处置链；第83回征辽的战争启动、任务对象与宋江先锋身份由皇帝诏令输入。锁定：
+锁定：**scope contraction 不等于 `x` 整体退出。较高层任务方向 scope 可以上移/外置，同时较低层 current operational `x` 继续成立。**
 
-> **scope contraction 不等于 `x` 整体退出。较高层任务方向 scope 可以上移/外置，同时较低层 current operational `x` 继续成立。**
-
-两条动态控制构成同人物、同组织的双向变化：
+### C｜王熙凤：病前直接掌家 → 病中直接日常裁处转交李纨/探春，保留间接筹划接口｜红楼梦｜99/98
 
 ```text
-expansion：较窄战役执行 → 更宽全寨 operational control
-contraction：较宽内部任务方向 + 执行 → 保留执行，但最高任务方向上移朝廷
+阶段 A
+较宽直接日常掌家 operational x
+
+↓ 小月/病情导致不能直接理事
+
+阶段 B
+大事最终节点 = 王夫人
+琐碎日常裁处 = 李纨 + 探春
+王熙凤 = 保留筹划 + 经平儿转递的间接接口
 ```
 
-本组不增加普通 positive 或 boundary guard 计数，单列 `dynamic_transition_control`。
+锁定：**direct control → indirect planning/relay 可以构成 scope contraction；scope contraction ≠ x overall off。**
+
+### D｜唐僧：名义师徒关系/劝说 → 紧箍咒形成可重复直接 discipline x｜西游记｜99/98
+
+```text
+阶段 A
+nominal master relation + persuasion/rebuke
+repeatable direct enforcement x = false / not-yet-formed
+
+↓ 观音授紧箍咒 + 悟空戴箍 + 念咒现实可重复生效
+
+阶段 B
+repeatable direct discipline x = true
+```
+
+锁定：**同一关系对象层可从名义/劝说接口扩张到可重复直接现实约束；权限来源于观音，不等于唐僧 current 没有 x。**
+
+### E｜刘备：救徐州外援/驻小沛 → 陶谦死后领徐州形成州域 current-governance x｜三国演义｜99/97
+
+```text
+阶段 A
+own-force military x = true
+local Xiaopei/garrison x = true
+Xuzhou-wide governance x = not locked
+
+↓ 陶谦死亡 + 原 global-override 节点退出 + 刘备最终接受
+
+阶段 B
+Xuzhou-wide current governance / military-organization x = true
+```
+
+锁定：**已有窄 `x` 可在原 global-override 节点退出、授权被主体实际接受后扩成更宽 current `x`；offer/conferral attempt ≠ accepted current x。**
+
+### 动态迁移分账
+
+```yaml
+dynamic_transition_controls: 5
+dynamic_transition_works: 4
+dynamic_transition_works_list: [水浒传, 红楼梦, 西游记, 三国演义]
+transition_directions:
+  expansion: 3
+  contraction: 2
+```
+
+宋江两条属于同一作品，只增加 control，不重复增加 independent work。
+
+本组不增加普通 positive 或 boundary guard 计数，单列 `dynamic_transition_control`。达到跨 3 作品门槛后，停止继续堆普通 expansion/contraction 正例。
 
 建议动态字段：
 
@@ -227,6 +270,7 @@ post_transition_task_source: 迁移后最高任务来源
 5. **授权/咨询/裁决/执行分账**：共同授权或广泛咨询不得预设最终裁决和执行结构。
 6. **scope expansion**：不能把迁移前窄 `x` 写成 `x=false`，也不能把迁移后宽 `x` 倒填到迁移前。
 7. **scope contraction**：迁移后高层 scope 上移/外置时，必须继续逐层检查低层 current `x` 是否保留；禁止把部分收窄写成整体 `x=off`。
+8. **动态迁移停止普通正例采样**：同判据已达 `5 controls / 4 works`；后续只收真正 decision-structure 迁移、新反例机制、判据冲突与状态修正。
 
 禁止倒灌：
 
@@ -241,6 +285,7 @@ post_transition_task_source: 迁移后最高任务来源
 广泛咨询 → shared/joint final decision
 迁移后宽 x → 迁移前已经拥有同样宽 x
 高层 scope 收窄 → 所有低层 x 都自动消失
+拟授权/邀请/递牌印 → accepted current x
 ```
 
 ## 6｜成熟度
@@ -253,27 +298,27 @@ positive_controls: 4
 positive_cross_work_count: 3
 boundary_guards: 6
 boundary_guard_works: 4
-dynamic_transition_controls: 2
-dynamic_transition_works: 1
+dynamic_transition_controls: 5
+dynamic_transition_works: 4
 positive_works: [西游记, 三国演义, 红楼梦]
 boundary_guard_works_list: [红楼梦, 西游记, 水浒传, 三国演义]
-dynamic_transition_works_list: [水浒传]
+dynamic_transition_works_list: [水浒传, 红楼梦, 西游记, 三国演义]
 may_override_canonical: false
 ```
 
-达到 pending-review 后，停止继续堆普通正向和同型普通护栏。
+达到 pending-review 后，停止继续堆普通正向和同型普通护栏；动态迁移也已跨 4 作品，停止继续堆普通 expansion/contraction 正例。
 
 ## 7｜下一步高信息增益
 
-1. **跨作品复验动态 scope**：优先找第二部作品的 contraction 或 expansion，避免宋江单一人物包办动态机制；
-2. `shared/joint execution → unilateral execution` 或反向迁移的同人物/同对象最小差异；
-3. `consultation structure → joint/shared final decision` 的真正正向最小差异；
-4. same-layer pre-effect veto vs future whole-block revocation；
-5. 表面 decision structure 不同、实际仍属于同一现实权限的反例；
+1. **真正 decision-structure 迁移**：同人物、同对象层，`unilateral → 新增 same-layer veto → joint/shared`，或反方向 `shared/vetoed → veto 节点退出 → unilateral`。
+2. `consultation structure → joint/shared final decision` 的真正正向最小差异。
+3. same-layer pre-effect veto vs future whole-block revocation 的最小差异。
+4. 表面 scope 变化、实际仍属于同一现实权限的反例。
+5. 动态迁移只在出现新机制/反例/判据冲突时继续；不再以普通 expansion/contraction 数量为目标。
 6. 等授权审议，不自动向 L2 升格。
 
 ## 8｜不修改 canonical
 
 本文件不修改 L1、`x/zn` 信息卡与准度卡、`zn补x_补卡` 或 strict v2 gate。
 
-TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_6GUARDS_4WORKS_2DYNAMIC_1WORK_20260830
+TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_6GUARDS_4WORKS_5DYNAMIC_4WORKS_20260831
