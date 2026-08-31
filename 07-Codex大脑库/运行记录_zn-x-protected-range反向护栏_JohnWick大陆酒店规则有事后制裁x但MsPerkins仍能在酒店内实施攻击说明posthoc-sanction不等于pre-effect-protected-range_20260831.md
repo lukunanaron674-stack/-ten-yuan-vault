@@ -114,7 +114,7 @@ term: current management window
 revocability: subject to higher Continental / High Table governance; not used to negate current local x
 return_obligation: N/A
 same_layer_pre_effect_veto: not observed for the Perkins sanction
- global_override: High Table / broader institutional hierarchy exists, but not needed to explain local sanction execution
+global_override: High Table / broader institutional hierarchy exists, but not needed to explain local sanction execution
 ultimate_title: not tested
 decision_structure: unilateral-on-tested-local-sanction
 consultation_structure: not required for tested sanction
