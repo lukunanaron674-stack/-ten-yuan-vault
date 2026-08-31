@@ -69,8 +69,8 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 8
 x_scope_boundary_guard_works: 5
-x_scope_dynamic_transition_controls: 6
-x_scope_dynamic_transition_works: 5
+x_scope_dynamic_transition_controls: 7
+x_scope_dynamic_transition_works: 6
 x_scope_decision_structure_calibration_controls: 1
 knowledge_status: pending-review
 pending_review: true
@@ -95,15 +95,16 @@ pending_review: true
 #### decision-structure 判据校准｜1 control｜不计 ordinary works
 - 多数阈值型董事会制度校准｜99/99：individual same-layer veto 是 genuine joint 的充分证据之一但不是必要条件；只要 final result 必须跨越预先存在的 mandatory multi-node approval threshold，且任何单一节点都不能独立让同一 final decision 生效，即可判 joint-threshold。absence of individual veto ≠ unilateral。
 
-#### 动态迁移控制｜6 controls / 5 works
+#### 动态迁移控制｜7 controls / 6 works
 - **宋江｜水浒传｜99/97｜expansion**：晁盖生前已有 delegated/campaign execution `x=true`，但无法否决晁盖亲征；晁盖死后、众头领共同授予权居主位后，形成更宽 mountain-wide current operational `x=true`。
 - **宋江｜水浒传｜99/97｜contraction**：招安前最高对外任务方向可由梁山内部形成；招安后保留内部调兵/战役执行 `x`，但战争启动与任务对象上移为朝廷诏令输入。
 - **王熙凤｜红楼梦｜99/98｜contraction**：病前较直接日常掌家 `x`；病中日常裁处转交李纨/探春，大事由王夫人主张，凤姐保留筹划与经平儿转递的间接接口。
 - **唐僧｜西游记｜99/98｜expansion**：名义师徒关系/劝说接口，经紧箍咒现实可重复生效后，新增可重复直接 discipline `x`。
 - **刘备｜三国演义｜99/97｜expansion**：救徐州阶段已有自军/外援/小沛驻屯窄 `x`；陶谦死亡、原 global-override 节点退出且刘备最终接受后，扩张为徐州州域 current-governance `x`。
 - **Palpatine｜Star Wars: Episode II - Attack of the Clones｜99/98｜joint-threshold→unilateral-on-delegated-scope**：Senate 原 mandatory multi-node approval threshold 限制 Republic-wide army creation/activation；Senate 授予 emergency powers 后，Palpatine 在被测 delegated military scope 内可直接创建/启用 Grand Army，不需为该 first tested act 再逐项跨越同一 Senate threshold；新增 dynamic-transition independent work，不外推 permanent sovereignty。
+- **Albus Dumbledore｜Harry Potter and the Order of the Phoenix｜99/97｜contraction-via-external-global-override**：第25号教育令前，Dumbledore 可在被测校内规则/处分争议上覆盖 Umbridge；法令把 punishment supreme authority 交给 High Inquisitor 后，原 school-internal final-override scope 被外部 superior override 插入而收窄。其他校内权限不因此自动归零，也不自动变成 joint/shared；新增 dynamic-transition independent work。
 
-动态迁移已达 `6 controls / 5 independent works`。普通 expansion/contraction 正例继续停止；Palpatine 保留，因为它不是普通 scope 扩大换皮，而是首批真正 decision-structure 迁移控制。
+动态迁移已达 `7 controls / 6 independent works`。普通 expansion/contraction 正例继续停止；Palpatine 与 Dumbledore 保留，因为二者分别锁出 `joint-threshold→unilateral delegated execution` 与 `external superior override inserted→scope contraction` 两种新机制，而不是普通扩大/缩小换皮。
 
 方法分账：
 
@@ -124,6 +125,14 @@ individual veto
 mandatory multi-node approval threshold
 且单一主体无法独立使结果生效
 → 可支持 genuine joint final decision
+
+collective source of power
+≠ joint execution after valid delegation
+
+external superior override inserted
+→ 可收窄已有 current x
+≠ x overall off
+≠ 自动 joint/shared
 
 x lifecycle
 ≠ only on/off
@@ -164,8 +173,8 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 8
 x_scope_boundary_guard_works: 5
-x_scope_dynamic_transition_controls: 6
-x_scope_dynamic_transition_works: 5
+x_scope_dynamic_transition_controls: 7
+x_scope_dynamic_transition_works: 6
 x_scope_decision_structure_calibration_controls: 1
 x_scope_knowledge_status: pending-review
 nominal_identity_vs_real_x_controls: 3
@@ -203,12 +212,13 @@ pending_review_count: 10
 9. **individual same-layer veto 是 joint 的充分证据之一但不是必要条件；多数/固定 k-of-n 等 mandatory threshold 也可构成 joint。absence of individual veto ≠ unilateral。**
 10. collective conferral 不预设后续逐项 joint，也不自动产生 full-scope unilateral `x`；授权生效后是否转为 unilateral execution 必须按被测 delegated scope 单独取证。
 11. **`x` 可以发生 scope expansion/contraction 与 decision-structure transition；迁移前窄 `x` 不得写成 `x=false`，迁移后宽 `x` 也不得倒填到迁移前。**
-12. 普通 dynamic expansion/contraction 已跨作品成熟，停止堆量；后续只收 genuine decision-structure transition、新反例、判据冲突和状态修正。
-13. transient opportunity / one-off override ≠ stable disposition `x`。
-14. endpoint attribution：第三方产权、保护、否决或政治节点不得倒灌主体 `x`。
-15. declared/nominal protected range ≠ observed stable protected-range `x`。
-16. territorial/internal-governance `x` ≠ externally exclusionary protected-range `x`。
-17. evidence-locked 可被 adversarial audit 撤回。
+12. **external superior override insertion 可以收窄已成立的 current `x`；不得把局部 final-override 被外置写成主体全部 `x=off`，也不得因为新增一个上位节点就自动写成 joint/shared。**
+13. 普通 dynamic expansion/contraction 已跨作品成熟，停止堆量；后续只收 genuine decision-structure transition、新反例、判据冲突和状态修正。
+14. transient opportunity / one-off override ≠ stable disposition `x`。
+15. endpoint attribution：第三方产权、保护、否决或政治节点不得倒灌主体 `x`。
+16. declared/nominal protected range ≠ observed stable protected-range `x`。
+17. territorial/internal-governance `x` ≠ externally exclusionary protected-range `x`。
+18. evidence-locked 可被 adversarial audit 撤回。
 
 ## D｜当前高价值缺口
 
@@ -216,7 +226,8 @@ pending_review_count: 10
 2. **P1：protected-range 正向 risk-test**。
 3. **P2/P4：普通 x-scope expansion/contraction 已停止采样。** 下一步优先 `unilateral → mandatory multi-node threshold/joint` 的反向 decision-structure 迁移，与 Palpatine `joint-threshold → unilateral-on-delegated-scope` 做最小对照。
 4. **P3：joint 静态正例已足以校准。** 不再堆“多人投票”普通案例；优先表面 joint 实际仍可被单节点绕过，或 threshold 名义存在但现实未生效的高纯护栏。
-5. deferred 只在新证据出现时复审。
+5. **P4b：external override insertion 已有首份高纯控制。** 下一步优先找 override 节点退出后原 scope 恢复，或名义新增上位节点但现实并未改变 final effect 的反向控制。
+6. deferred 只在新证据出现时复审。
 
 ## E｜pending-review 索引｜10条
 
