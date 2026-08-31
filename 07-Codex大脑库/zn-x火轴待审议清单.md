@@ -67,8 +67,8 @@ criterion：`current-x-scope-distinction-v1_20260830`。
 ```yaml
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 8
-x_scope_boundary_guard_works: 5
+x_scope_boundary_guards: 9
+x_scope_boundary_guard_works: 6
 x_scope_dynamic_transition_controls: 7
 x_scope_dynamic_transition_works: 6
 x_scope_decision_structure_calibration_controls: 1
@@ -82,7 +82,7 @@ pending_review: true
 - 孙策质传国玉玺｜三国演义｜99/98：object possession/transfer ≠ represented sovereignty。
 - 探春受托理家→全园抄检｜红楼梦｜99/97：local management ≠ global/final override。
 
-#### 反向边界护栏｜8 controls / 5 works
+#### 反向边界护栏｜9 controls / 6 works
 - 王熙凤协理宁国府｜红楼梦：future revocability ≠ current non-possession。
 - 天蓬元帅任内掌军→被贬｜西游记：future whole-block revocation ≠ prior current x never existed。
 - 晁盖梁山共同财物｜水浒传：shared governance ≠ unilateral disposition。
@@ -91,6 +91,7 @@ pending_review: true
 - 孙权赤壁前战降公议｜三国演义：broad consultation ≠ joint/shared final decision。
 - 《十二怒汉》陪审团一致裁决｜电影｜99/98：11:1 仍不能形成 verdict；mandatory unanimity / same-layer pre-effect veto 构成 genuine joint final decision 的高纯对照，并新增 independent work。
 - 《红楼梦》第55回李纨/探春/宝钗临时协理｜红楼梦｜99/98：co-management / “合同裁处” / 三人协理标签不足证明 mandatory co-approval 或 joint final decision；本条增加 control，不重复增加 work。
+- 《小鬼当家》Kevin 前门防御｜电影｜99/98：front-entry local protected boundary 经真实 risk-test 可成立，但不得倒灌 whole-house stable protected-range；新增 x-scope boundary independent work。
 
 #### decision-structure 判据校准｜1 control｜不计 ordinary works
 - 多数阈值型董事会制度校准｜99/99：individual same-layer veto 是 genuine joint 的充分证据之一但不是必要条件；只要 final result 必须跨越预先存在的 mandatory multi-node approval threshold，且任何单一节点都不能独立让同一 final decision 生效，即可判 joint-threshold。absence of individual veto ≠ unilateral。
@@ -141,6 +142,47 @@ scope expansion/contraction
 ≠ x off/on
 ```
 
+### A11｜protected-range risk-test｜current v1
+current criterion：`protected-range-risk-test-v1_20260831`。
+
+同 criterion_version 才累计。当前显式带 `protected-range-risk-test-v1_20260831` 的高纯 verified positive 为：
+
+```yaml
+protected_range_v1_verified_positive_controls: 1
+protected_range_v1_verified_positive_works: 1
+protected_range_v1_verified_negative_guards: 0
+protected_range_v1_verified_negative_guard_works: 0
+protected_range_legacy_compatible_local_positive_controls: 1
+protected_range_legacy_compatible_negative_guards: 1
+knowledge_status: evidence-locked
+pending_review: false
+```
+
+#### current-v1 verified positive｜1 control / 1 work
+- **《战栗空间》Meg Altman｜99/98**：Meg/Sarah 持续留在 panic-room enclosure 内；入侵者真实、多轮尝试突破；常规入口持续失败并被迫改走 ventilation/propane；Meg 主动离开/打开边界窗口后才出现进入。锁 `stable local protected-range x=true`，但不倒灌 whole-house。该记录不锁 zn，也不增加 strict。
+
+#### legacy-compatible bridge｜暂不与 v1 跨作品累计
+- **《小鬼当家》Kevin｜99/98｜local-positive**：前门 entry-point 经真实 risk-test 成功迫使 Harry 改道，但 whole-house 仍被其他路径突破。机制与 v1 一致，但该记录元数据未显式声明 `protected-range-risk-test-v1_20260831`，因此在 criterion_version 统一前只作兼容桥，不并入 v1 verified cross-work count。
+- **《指环王：护戒使者》Gandalf｜99/98｜negative guard**：桥上一次性 chokepoint denial 成功改变风险并帮助对象撤离，但对象不是持续留在受保护范围内，且被测 x 是 momentary route-blocking interface，不构成 stable protected-range。该记录的 criterion_version 仍为 `strict-v2-current`，因此只作 P1 反向护栏，不与 v1 verified count 混算。
+
+已有更早前置控制继续保留但不混算：孙悟空金兜山画圈 = 无真实 object-inside risk-test；柴进丹书铁券 = 名义保护资格经 risk-test 失败；花果山 = 内部治理 x 真实但外部 protected-range 失败。
+
+当前 P1 最小结构已形成：
+
+```text
+无充分 risk-test
+→ 不锁 stable protected-range
+
+risk-test 成功但只是一次性 chokepoint / 对象越界撤离
+→ 不锁 stable protected-range
+
+local entry-point risk-test 成功
+→ 只锁实际 local scope，不倒灌 whole-space
+
+object 持续留界内 + 多轮真实撞击 + subject-specific boundary 持续阻断/迫使改道
+→ 可锁 stable local protected-range x
+```
+
 ## B｜当前统计
 
 ```yaml
@@ -171,12 +213,19 @@ strict_canonical_calibration_controls: 3
 x_scope_current_criterion: current-x-scope-distinction-v1_20260830
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 8
-x_scope_boundary_guard_works: 5
+x_scope_boundary_guards: 9
+x_scope_boundary_guard_works: 6
 x_scope_dynamic_transition_controls: 7
 x_scope_dynamic_transition_works: 6
 x_scope_decision_structure_calibration_controls: 1
 x_scope_knowledge_status: pending-review
+protected_range_current_criterion: protected-range-risk-test-v1_20260831
+protected_range_v1_verified_positive_controls: 1
+protected_range_v1_verified_positive_works: 1
+protected_range_v1_verified_negative_guards: 0
+protected_range_v1_verified_negative_guard_works: 0
+protected_range_legacy_compatible_local_positive_controls: 1
+protected_range_legacy_compatible_negative_guards: 1
 nominal_identity_vs_real_x_controls: 3
 nominal_identity_vs_real_x_works: 3
 nominal_identity_vs_real_x_negative_guards: 2
@@ -218,12 +267,15 @@ pending_review_count: 10
 15. endpoint attribution：第三方产权、保护、否决或政治节点不得倒灌主体 `x`。
 16. declared/nominal protected range ≠ observed stable protected-range `x`。
 17. territorial/internal-governance `x` ≠ externally exclusionary protected-range `x`。
-18. evidence-locked 可被 adversarial audit 撤回。
+18. **protected outcome ≠ protected-range x；一次性 chokepoint denial 即使真实救出对象，也不能自动升级为 stable range。**
+19. **local risk-tested protected boundary 可成立，同时 global protected-range 仍失败/未锁；risk rerouting 只能按实际 scope 计。**
+20. **protected-range 同样执行 criterion_version 分账；机制兼容但元数据判据版本不同的旧记录，不得直接并入 current-v1 跨作品计数。**
+21. evidence-locked 可被 adversarial audit 撤回。
 
 ## D｜当前高价值缺口
 
 1. **P0：第一份 strict v2 verified positive**，不降门槛凑例。
-2. **P1：protected-range 正向 risk-test**。
+2. **P1：protected-range 已出现第一份 current-v1 verified positive。** 下一步优先第二种、非“钢门房间换皮”的同判据正向机制；同时优先把 Home Alone / Gandalf 做 criterion-version revalidation，避免机制看似成熟但统计口径仍混杂。
 3. **P2/P4：普通 x-scope expansion/contraction 已停止采样。** 下一步优先 `unilateral → mandatory multi-node threshold/joint` 的反向 decision-structure 迁移，与 Palpatine `joint-threshold → unilateral-on-delegated-scope` 做最小对照。
 4. **P3：joint 静态正例已足以校准。** 不再堆“多人投票”普通案例；优先表面 joint 实际仍可被单节点绕过，或 threshold 名义存在但现实未生效的高纯护栏。
 5. **P4b：external override insertion 已有首份高纯控制。** 下一步优先找 override 节点退出后原 scope 恢复，或名义新增上位节点但现实并未改变 final effect 的反向控制。
