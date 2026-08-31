@@ -15,7 +15,7 @@ protected_range_positive_control: false
 protected_range_negative_guard: true
 protected_range_negative_guard_increment: true
 protected_range_negative_guard_work_increment: true
-x_scope_boundary_guard_increment: true
+x_scope_boundary_guard_increment: false
 strict_verified_positive_increment: false
 zn_increment: false
 may_override_canonical: false
@@ -253,12 +253,14 @@ criterion_version: protected-range-risk-test-v1_20260831
 protected_range_positive_increment: false
 protected_range_negative_guard_increment: true
 protected_range_negative_guard_work_increment: true
-x_scope_boundary_guard_increment: true
+x_scope_boundary_guard_increment: false
 strict_increment: false
 zn_increment: false
 ```
 
 本条是 `protected-range-risk-test-v1_20260831` 下首份显式 current-v1 negative guard；《John Wick》为该槽新增独立作品。
+
+本条同时对 `x-scope` 有方法启发：sanction permission 与 exclusion permission 必须分层，但由于本文件 criterion_version 仅锁 `protected-range-risk-test-v1_20260831`，**不计入 `current-x-scope-distinction-v1_20260830` 的 ordinary boundary-guard 统计**。
 
 ## 11｜来源
 
