@@ -11,8 +11,8 @@ criterion_version:
   x_scope_gate: current-x-scope-distinction-v1_20260830
 positive_controls: 4
 positive_cross_work_count: 3
-boundary_guards: 10
-boundary_guard_works: 7
+boundary_guards: 13
+boundary_guard_works: 10
 dynamic_transition_controls: 8
 dynamic_transition_works: 6
 decision_structure_calibration_controls: 1
@@ -31,9 +31,9 @@ updated: 2026-08-31
 
 > **`x` 必须至少写清：被测对象、权限类型、权限范围、期限/返还义务、原节点是否保留覆盖/撤回权、最终裁定层。某一窄 scope 的现实 `x=true`，不能自动倒灌为邻近更宽 scope 的 `x=true`。**
 
-当前另有 10 条、7 部独立作品的高置信反向边界护栏共同支持：
+当前另有 13 条、10 部独立作品的高置信反向边界护栏共同支持：
 
-> **更宽 scope / 永久最终归属未成立，也不能反向把已经直接生效的窄 current `x` 抹成 `x=false`。未来可撤回或上位保留更高范围覆盖权，与当前局部 `x=true` 可以同时成立。共享治理已经成立，也不能倒灌为领导者个人单方最终处分。共同授权、广泛咨询、高层指挥身份都不能预设特殊对象层的 final-decision / execution structure。**
+> **更宽 scope / 永久最终归属未成立，也不能反向把已经直接生效的窄 current `x` 抹成 `x=false`。formal/source authority、单次现实 compliance、接口持有或广域指挥都不能跨层自动升级成 stable current control / verified target disposition。**
 
 另有 8 条、6 部独立作品的高置信动态迁移控制支持：
 
@@ -49,7 +49,11 @@ updated: 2026-08-31
 
 > **hierarchical superiority ≠ permission-type universality。**
 
-> **scope contraction ≠ x overall off。**
+> **formal/source authority ≠ current realized x。**
+
+> **one-shot successful invocation ≠ stable current x。**
+
+> **control-interface possession ≠ verified target disposition。**
 
 本文件只到 L4 `pending-review`，不得覆盖 current canonical。
 
@@ -67,7 +71,7 @@ object possession/transfer 与 represented authority/sovereignty 分层；**能�
 ### D｜《红楼梦》探春受托理家→全园抄检｜99/97
 local current management 与 global/final override 分层；**局部真实 x ≠ 全局最终 x。**
 
-## 2｜反向边界护栏｜10 controls / 7 works
+## 2｜反向边界护栏｜13 controls / 10 works
 
 ### A｜王熙凤协理宁国府｜红楼梦｜99/98
 future revocability / higher-scope override 与 current local disciplinary `x=true` 可以同时成立。
@@ -97,25 +101,49 @@ co-management / “合同裁处” / 三人协理标签不足证明 mandatory co
 front-entry local protected boundary 经真实 risk-test 可成立，但 whole-house 仍可从其他入口突破；**local protected boundary ≠ whole-space protected-range。**
 
 ### J｜《Crimson Tide》Captain Ramsey｜99/98
-Ramsey 对 USS Alabama 的广域 operational command `x=true`，但 nuclear-release 特殊对象层要求 Captain + XO mandatory concurrence。Hunter 拒绝 concurrence 时，舰长身份不能单方让同一 release final effect 生效。
+广域 operational command `x=true`，但 nuclear-release 特殊对象层要求 Captain + XO mandatory concurrence；**hierarchical superiority ≠ permission-type universality。**
 
-锁定：
+### K｜Eddard Stark｜Game of Thrones / A Game of Thrones｜99/98
+Robert 的 signed regency / Protector 授权真实存在，但 throne-room current action 调用时 City Watch 不响应并反向执行。
+
+锁：
 
 ```text
-broad senior-command x
-≠ special-object unilateral final-disposition x
+formal/source authority
+≠ current realized x
 
-hierarchical superiority
-≠ permission-type universality
-
-mandatory concurrence
-≠ consultation
-
-joint final decision
-可嵌套在更广泛的 unilateral-command hierarchy 内
+文件/授权来源成立
+≠ 被测 permission 在 current object layer 已现实生效
 ```
 
-《Crimson Tide》此前不在 x-scope guard works 集合，因此 control +1、independent work +1。
+这里否定的是被测 Red Keep / City Watch enforcement act，不把 Ned 其他历史 scope 一并写成 `x=false`。
+
+### L｜Earth King Kuei｜Avatar: The Last Airbender｜99/98
+Kuei 下令拘捕 Long Feng，Dai Li 当场执行；但同一 current window 作品明确给出 Dai Li 仍忠于 Long Feng，并继续准备反向行动。
+
+锁：
+
+```text
+one-shot successful command execution
+≠ stable current command x over execution node
+```
+
+单次调用真实生效只证明该 local act；若 competing anchor 仍持续掌握同一 execution node，不得倒灌 stable organizational x。
+
+### M｜《The Dark Knight》渡轮遥控器｜99/98
+渡轮端主体真实持有 remote、可物理按下，但 remote→另一艘船的 causal mapping 从未现实 effect-test；Joker 同窗仍保留独立 two-button detonator 与 global kill-both override。
+
+锁：
+
+```text
+physical control-interface possession
++ source claim that interface controls target
+≠ verified target-disposition x
+```
+
+即使后续验证 local actuator 有效，也仍需与 Joker 的 global override 分账。
+
+后三条均使用 `current-x-scope-distinction-v1_20260830`，且三部作品此前均不在 current x-scope boundary-work 集合，因此由 `10 controls / 7 works` 推进到 `13 controls / 10 works`。
 
 ## 3｜decision-structure 判据校准｜1 control｜不计 ordinary works
 
@@ -158,42 +186,13 @@ joint-unanimous
 陶谦死亡、原 global-override 节点退出且刘备最终接受后，更宽 current-governance `x` 成立；offer/conferral attempt ≠ accepted current x。
 
 ### F｜Palpatine：joint-threshold → unilateral-on-delegated-scope｜Star Wars II｜99/98
-Senate 原 mandatory multi-node threshold 限制 Republic-wide army creation/activation；emergency powers 生效后，Palpatine 在被测 delegated military scope 的 first tested act 可直接创建/启用 Grand Army，不需逐项再跨同一 Senate threshold。
+Senate 原 mandatory multi-node threshold；emergency powers 生效后，Palpatine 在被测 delegated military scope 的 first tested act 可直接创建/启用 Grand Army，不需逐项再跨同一 Senate threshold。
 
 ### G｜Albus Dumbledore：external superior override insertion → scope contraction｜Harry Potter｜99/97
 第25号教育令把 punishment supreme authority 上移给 High Inquisitor，Dumbledore 原 school-internal final-override scope 收窄；其他校内 `x` 不自动归零，也不自动变成 joint/shared。
 
 ### H｜Grimmauld Place Fidelius：单一 disclosure gate → 多 parallel independent gates｜Harry Potter｜99/98
-Dumbledore 生前，Harry 已经知道并可进入 12 Grimmauld Place，但不能继续披露：
-
-```text
-knowledge/access-use x = true
-reveal/disclose x = false
-```
-
-Dumbledore 死后，既有知情者成为 Secret Keepers，Harry 新增 reveal/withhold permission：
-
-```text
-knowledge/access-use x = retained true
-reveal/disclose x = newly true
-```
-
-原单一 disclosure gate 分散成多个 parallel independent gates。任一 Secret Keeper 可以独立披露，无需其他 Keeper 共同批准。
-
-因此：
-
-```text
-知道 / 能进入秘密范围
-≠ 拥有 disclosure x
-
-shared permission
-≠ joint-threshold
-
-multiple co-holders
-≠ mandatory co-approval
-```
-
-本条只增加 dynamic control；Harry Potter 已在 dynamic independent-work 集合，不重复增加 work。
+Dumbledore 生前 Harry 已知并可进入 12 Grimmauld Place，但无 reveal/disclose `x`；Dumbledore 死后既有知情者成为 Secret Keepers，Harry 新增 reveal/withhold permission。多个 co-holder 中任一都可独立披露，所以 `shared permission ≠ joint-threshold`。
 
 ### 动态迁移分账
 
@@ -234,6 +233,9 @@ current_execution_structure: unilateral / joint / shared / parallel-independent 
 co_decision_nodes: 共同决定节点
 unilateral_effect: 主体单方决定能否直接改变结果
 independent_execution_nodes: 是否存在可独立生效/绕开/扣留/拒绝节点
+competing_anchor: 同窗是否存在持续有效的竞争掌握节点
+realized_effect_test: 被测 permission 是否已在 current object layer 现实调用
+causal_mapping_verified: 接口到目标结果的映射是否已被现实或独立技术证据验证
 scope_transition: from -> to
 permission_type_transition: from -> to
 transition_direction: expansion / contraction / redistribution
@@ -254,9 +256,12 @@ post_transition_task_source: 迁移后最高任务来源
 5. **授权/咨询/裁决/执行分账**：共同授权或广泛咨询不得预设最终裁决和执行结构。
 6. **shared permission 分账**：多个 co-holder 若任一可独立生效，不得写成 joint-threshold。
 7. **hierarchy 分账**：广域 senior-command 不得跨 permission type 倒灌特殊对象层 unilateral final-disposition。
-8. **scope / permission expansion**：不能把迁移前窄 `x` 写成 `x=false`，也不能把迁移后宽 `x` 倒填到迁移前。
-9. **scope contraction**：迁移后高层 scope 上移/外置时，继续逐层检查低层 current `x` 是否保留；禁止把部分收窄写成整体 `x=off`。
-10. **动态迁移停止普通正例采样**：当前 `8 controls / 6 works`；后续只收 genuine decision/permission-structure transition、新反例、判据冲突与状态修正。
+8. **source-authority / current-effect 分账**：正式授权、签署文件、合法来源只证明 source layer；必须继续观察被测 current permission 调用时现实节点是否响应。
+9. **one-shot / stable 分账**：一次成功 compliance 只锁该次 local act；同窗 competing anchor 仍持续控制相同 execution node 时，不得升级 stable command x。
+10. **interface / disposition 分账**：持有可操作接口只锁 contact/use opportunity；目标处分权需另证 causal mapping，且 local mapping 与 global override 分账。
+11. **scope / permission expansion**：不能把迁移前窄 `x` 写成 `x=false`，也不能把迁移后宽 `x` 倒填到迁移前。
+12. **scope contraction**：迁移后高层 scope 上移/外置时，继续逐层检查低层 current `x` 是否保留；禁止把部分收窄写成整体 `x=off`。
+13. **动态迁移停止普通正例采样**：当前 `8 controls / 6 works`；后续只收 genuine decision/permission-structure transition、新反例、判据冲突与状态修正。
 
 禁止倒灌：
 
@@ -271,6 +276,9 @@ post_transition_task_source: 迁移后最高任务来源
 广泛咨询 → shared/joint final decision
 多人持有同类权限 → mandatory joint approval
 最高层级/广域 command → 特殊对象层 unilateral final-disposition
+正式授权/签署文件 → current realized control
+一次命令执行成功 → stable organizational command x
+拿到控制接口 + 敌对方声称映射 → verified target-disposition x
 迁移后宽 x → 迁移前已经拥有同样宽 x
 高层 scope 收窄 → 所有低层 x 都自动消失
 知道/能进入秘密 → 自动拥有 disclosure x
@@ -285,8 +293,8 @@ knowledge_status: pending-review
 criterion_version: current-x-scope-distinction-v1_20260830
 positive_controls: 4
 positive_cross_work_count: 3
-boundary_guards: 10
-boundary_guard_works: 7
+boundary_guards: 13
+boundary_guard_works: 10
 dynamic_transition_controls: 8
 dynamic_transition_works: 6
 decision_structure_calibration_controls: 1
@@ -298,15 +306,16 @@ may_override_canonical: false
 
 ## 8｜下一步高信息增益
 
-1. **真正 decision-structure 迁移**：同人物、同对象层，`unilateral -> mandatory threshold/joint`，或 `joint-threshold -> 明确撤销共同 gate -> unilateral`。
-2. **permission-type 动态镜像**：已有 `knowledge/access retained + disclosure newly true`；优先找同对象层 disclosure/transfer/disposition permission 明确收缩或被重新集中。
-3. **external override 镜像**：override 节点退出后原 scope 是否真实恢复；或名义新增上位节点但现实 final effect 未变化的反向控制。
-4. **hierarchy 特殊对象层**：优先找表面最高指挥但在特殊对象层仍需 mandatory concurrence 的不同机制，不再堆普通“两把钥匙”换皮。
-5. deferred 仅在新证据出现时复审。
-6. 等授权审议，不自动向 L2 升格。
+1. **source→invocation→stable control 镜像动态**：同一 execution node 在 competing anchor 移除/忠诚迁移/override 禁用前后，从 one-shot/unstable compliance 变成多次稳定调用。
+2. **interface mapping 首次现实化**：同人物、同对象、同一接口，从 `mapping unverified` 到首次 effect-test 明确成功，观察 potential-use interface 是否升级为 realized target-disposition；仍须分账 global override。
+3. **真正 decision-structure 迁移**：同人物、同对象层，`unilateral -> mandatory threshold/joint`，或 `joint-threshold -> 明确撤销共同 gate -> unilateral`。
+4. **permission-type 动态镜像**：优先找 disclosure/transfer/disposition permission 明确收缩或重新集中。
+5. **external override 镜像**：override 节点退出后原 scope 是否真实恢复；或名义新增上位节点但现实 final effect 未变化。
+6. deferred 仅在新证据出现时复审。
+7. 等授权审议，不自动向 L2 升格。
 
 ## 9｜不修改 canonical
 
 本文件不修改 L1、`x/zn` 信息卡与准度卡、`zn补x_补卡` 或 strict v2 gate。
 
-TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_10GUARDS_7WORKS_8DYNAMIC_6WORKS_1CALIBRATION_20260831
+TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_13GUARDS_10WORKS_8DYNAMIC_6WORKS_1CALIBRATION_20260831
