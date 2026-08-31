@@ -67,8 +67,8 @@ criterion：`current-x-scope-distinction-v1_20260830`。
 ```yaml
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 10
-x_scope_boundary_guard_works: 7
+x_scope_boundary_guards: 13
+x_scope_boundary_guard_works: 10
 x_scope_dynamic_transition_controls: 8
 x_scope_dynamic_transition_works: 6
 x_scope_decision_structure_calibration_controls: 1
@@ -82,17 +82,22 @@ pending_review: true
 - 孙策质传国玉玺｜三国演义｜99/98：object possession/transfer ≠ represented sovereignty。
 - 探春受托理家→全园抄检｜红楼梦｜99/97：local management ≠ global/final override。
 
-#### 反向边界护栏｜10 controls / 7 works
+#### 反向边界护栏｜13 controls / 10 works
 - 王熙凤协理宁国府｜红楼梦：future revocability ≠ current non-possession。
 - 天蓬元帅任内掌军→被贬｜西游记：future whole-block revocation ≠ prior current x never existed。
 - 晁盖梁山共同财物｜水浒传：shared governance ≠ unilateral disposition。
 - 宋江共同推举权居主位｜水浒传：collective conferral ≠ joint execution on every current decision。
 - 袁绍十八路诸侯会盟｜三国演义：collective conferral does not determine execution structure。
 - 孙权赤壁前战降公议｜三国演义：broad consultation ≠ joint/shared final decision。
-- 《十二怒汉》陪审团一致裁决｜电影｜99/98：11:1 仍不能形成 verdict；mandatory unanimity / same-layer pre-effect veto 构成 genuine joint final decision 的高纯对照，并新增 independent work。
-- 《红楼梦》第55回李纨/探春/宝钗临时协理｜红楼梦｜99/98：co-management / “合同裁处” / 三人协理标签不足证明 mandatory co-approval 或 joint final decision；本条增加 control，不重复增加 work。
-- 《小鬼当家》Kevin 前门防御｜电影｜99/98：front-entry local protected boundary 经真实 risk-test 可成立，但不得倒灌 whole-house stable protected-range；新增 x-scope boundary independent work。
-- 《Crimson Tide》Captain Ramsey｜电影｜99/98：广域 senior-command `x=true` 不得跨 permission type 倒灌为核武 release 的 unilateral final-disposition `x=true`；Captain + XO mandatory concurrence 构成特殊对象层 joint-unanimous gate，并新增 independent work。
+- 《十二怒汉》陪审团一致裁决｜电影｜99/98：11:1 仍不能形成 verdict；mandatory unanimity / same-layer pre-effect veto 构成 genuine joint final decision 的高纯对照。
+- 《红楼梦》第55回李纨/探春/宝钗临时协理｜红楼梦｜99/98：co-management / “合同裁处” / 三人协理标签不足证明 mandatory co-approval 或 joint final decision；只增加 control，不重复增加 work。
+- 《小鬼当家》Kevin 前门防御｜电影｜99/98：front-entry local protected boundary 经真实 risk-test 可成立，但不得倒灌 whole-house stable protected-range。
+- 《Crimson Tide》Captain Ramsey｜电影｜99/98：广域 senior-command `x=true` 不得跨 permission type 倒灌核武 release 的 unilateral final-disposition；Captain + XO mandatory concurrence 构成特殊对象层 genuine joint gate。
+- **Eddard Stark｜Game of Thrones / A Game of Thrones｜99/98**：Robert 临终正式摄政授权存在，但 throne-room current effect 调用时 City Watch 拒绝并反向执行；`formal/source authority ≠ current realized x`。只否定被测 permission/object/window，不倒灌 Ned 其他 scope。
+- **Earth King Kuei｜Avatar: The Last Airbender｜99/98**：下令拘捕 Long Feng 的一次现实 compliance 成功，但同一 current window Dai Li 仍明确忠于 Long Feng 并继续准备反向行动；`one-shot successful command execution ≠ stable current command x over execution node`。
+- **《The Dark Knight》渡轮遥控器｜99/98**：主体真实持有并可按 remote，但按钮→目标的 causal mapping 从未现实验证，Joker 同窗仍保留独立双按钮 global override；`control-interface possession + source claim ≠ verified target-disposition x`。
+
+后三条均为此前未进入 current x-scope boundary-work 集合的新作品，并使用同一 criterion_version，因此由 `10/7` 累计到 `13 controls / 10 independent works`。
 
 #### decision-structure 判据校准｜1 control｜不计 ordinary works
 - 多数阈值型董事会制度校准｜99/99：individual same-layer veto 是 genuine joint 的充分证据之一但不是必要条件；只要 final result 必须跨越预先存在的 mandatory multi-node approval threshold，且任何单一节点都不能独立让同一 final decision 生效，即可判 joint-threshold。absence of individual veto ≠ unilateral。
@@ -103,11 +108,11 @@ pending_review: true
 - **王熙凤｜红楼梦｜99/98｜contraction**：病前较直接日常掌家 `x`；病中日常裁处转交李纨/探春，大事由王夫人主张，凤姐保留筹划与经平儿转递的间接接口。
 - **唐僧｜西游记｜99/98｜expansion**：名义师徒关系/劝说接口，经紧箍咒现实可重复生效后，新增可重复直接 discipline `x`。
 - **刘备｜三国演义｜99/97｜expansion**：救徐州阶段已有自军/外援/小沛驻屯窄 `x`；陶谦死亡、原 global-override 节点退出且刘备最终接受后，扩张为徐州州域 current-governance `x`。
-- **Palpatine｜Star Wars: Episode II - Attack of the Clones｜99/98｜joint-threshold→unilateral-on-delegated-scope**：Senate 原 mandatory multi-node approval threshold 限制 Republic-wide army creation/activation；Senate 授予 emergency powers 后，Palpatine 在被测 delegated military scope 内可直接创建/启用 Grand Army，不需为该 first tested act 再逐项跨越同一 Senate threshold；新增 dynamic-transition independent work，不外推 permanent sovereignty。
-- **Albus Dumbledore｜Harry Potter and the Order of the Phoenix｜99/97｜contraction-via-external-global-override**：第25号教育令前，Dumbledore 可在被测校内规则/处分争议上覆盖 Umbridge；法令把 punishment supreme authority 交给 High Inquisitor 后，原 school-internal final-override scope 被外部 superior override 插入而收窄。其他校内权限不因此自动归零，也不自动变成 joint/shared；新增 dynamic-transition independent work。
-- **Harry Potter / Albus Dumbledore｜Harry Potter｜99/98｜permission-type expansion + gate distribution**：Dumbledore 生前 Harry 已知并可进入 Grimmauld Place，但无 reveal/disclose `x`；Dumbledore 死后既有知情者成为 Secret Keepers，Harry 新增 reveal/withhold permission，原单一披露门分散为多个 parallel independent gates。多个同类权限持有者可各自独立生效，因此 shared permission ≠ joint-threshold；该作品已在 dynamic works 中，只增加 control，不重复增加 work。
+- **Palpatine｜Star Wars: Episode II - Attack of the Clones｜99/98｜joint-threshold→unilateral-on-delegated-scope**：Senate 原 mandatory multi-node approval threshold；emergency powers 生效后，Palpatine 在被测 delegated military scope 的 first tested act 可直接创建/启用 Grand Army，不需逐项再跨同一 Senate threshold。
+- **Albus Dumbledore｜Harry Potter and the Order of the Phoenix｜99/97｜contraction-via-external-global-override**：第25号教育令把 punishment supreme authority 交给 High Inquisitor 后，原 school-internal final-override scope 被外部 superior override 插入而收窄；其他校内权限不自动归零。
+- **Harry Potter / Albus Dumbledore｜Harry Potter｜99/98｜permission-type expansion + gate distribution**：Dumbledore 生前 Harry 已知并可进入 Grimmauld Place，但无 reveal/disclose `x`；Dumbledore 死后既有知情者成为 Secret Keepers，Harry 新增 reveal/withhold permission，原单一披露门分散为多个 parallel independent gates；shared permission ≠ joint-threshold。
 
-动态迁移已达 `8 controls / 6 independent works`。普通 expansion/contraction 正例继续停止；新增只保留 genuine decision-structure / permission-type transition、新反例、判据冲突与状态修正。
+动态迁移维持 `8 controls / 6 independent works`。普通 expansion/contraction 正例继续停止；新增只保留 genuine decision-structure / permission-type transition、新反例、判据冲突与状态修正。
 
 方法分账：
 
@@ -142,6 +147,16 @@ broad senior-command x
 
 hierarchical superiority
 ≠ permission-type universality
+
+formal/source authority
+≠ current realized x
+
+one-shot successful invocation/effect
+≠ stable command/disposition x over the execution node
+
+control-interface possession
++ claimed causal mapping
+≠ verified target-disposition x
 
 collective source of power
 ≠ joint execution after valid delegation
@@ -181,7 +196,7 @@ pending_review: true
 - **《John Wick》Winston / Continental｜99/98**：Continental 规则与 Winston 的 membership sanction / punishment `x` 真实，但 Ms. Perkins 仍能在酒店内部实施攻击，处罚发生在违规之后。锁 `post-effect punishment x ≠ pre-effect protected-range x`。
 
 #### 旧前置与兼容控制｜不混算 current-v1
-- 《小鬼当家》Kevin：local entry-point risk-test 成功，但不得倒灌 whole-house；其旧记录未以 current-v1 元数据累计。
+- 《小鬼当家》Kevin：local entry-point risk-test 成功，但不得倒灌 whole-house；旧记录未以 current-v1 元数据累计。
 - 《指环王：护戒使者》Gandalf：一次性 chokepoint denial ≠ stable range；旧 criterion_version 不与 current-v1 混算。
 - 孙悟空金兜山画圈：无充分 object-inside risk-test。
 - 柴进丹书铁券：名义保护资格经 risk-test 失败。
@@ -231,8 +246,8 @@ strict_canonical_calibration_controls: 3
 x_scope_current_criterion: current-x-scope-distinction-v1_20260830
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 10
-x_scope_boundary_guard_works: 7
+x_scope_boundary_guards: 13
+x_scope_boundary_guard_works: 10
 x_scope_dynamic_transition_controls: 8
 x_scope_dynamic_transition_works: 6
 x_scope_decision_structure_calibration_controls: 1
@@ -278,28 +293,32 @@ pending_review_count: 11
 9. **individual same-layer veto 是 joint 的充分证据之一但不是必要条件；多数/固定 k-of-n 等 mandatory threshold 也可构成 joint。absence of individual veto ≠ unilateral。**
 10. **shared permission ≠ joint-threshold；多个同层权限持有者若任一节点都可独立生效，应记 parallel/shared-independent execution，而不是 mandatory co-approval。**
 11. **广域 command `x=true` 不得跨 permission type 倒灌特殊对象层 unilateral final-disposition；hierarchical superiority ≠ permission-type universality。**
-12. collective conferral 不预设后续逐项 joint，也不自动产生 full-scope unilateral `x`；授权生效后是否转为 unilateral execution 必须按被测 delegated scope 单独取证。
-13. **`x` 可以发生 scope / permission-type expansion-contraction 与 decision-structure transition；迁移前窄 `x` 不得写成 `x=false`，迁移后宽 `x` 也不得倒填到迁移前。**
-14. **external superior override insertion 可以收窄已成立的 current `x`；不得把局部 final-override 被外置写成主体全部 `x=off`，也不得因为新增一个上位节点就自动写成 joint/shared。**
-15. 普通 dynamic expansion/contraction 已跨作品成熟，停止堆量；后续只收 genuine decision-structure / permission-type transition、新反例、判据冲突和状态修正。
-16. transient opportunity / one-off override ≠ stable disposition `x`。
-17. endpoint attribution：第三方产权、保护、否决或政治节点不得倒灌主体 `x`。
-18. declared/nominal protected range ≠ observed stable protected-range `x`。
-19. territorial/internal-governance `x` ≠ externally exclusionary protected-range `x`。
-20. **protected outcome ≠ protected-range x；一次性 chokepoint denial 即使真实救出对象，也不能自动升级为 stable range。**
-21. **local risk-tested protected boundary 可成立，同时 global protected-range 仍失败/未锁；risk rerouting 只能按实际 scope 计。**
-22. **post-effect sanction/punishment x ≠ pre-effect protected-range x。**
-23. **protected-range 同样执行 criterion_version 分账；机制兼容但元数据判据版本不同的旧记录，不得直接并入 current-v1 跨作品计数。**
-24. evidence-locked 可被 adversarial audit 撤回。
+12. **formal/source authority ≠ current realized `x`；必须看同对象层权限实际调用后，执行/保管/处分/否决节点是否响应。**
+13. **one-shot successful command/invocation ≠ stable current command/disposition `x`；同窗存在持续有效 competing anchor 时，一次 compliance 只能锁局部 realized effect。**
+14. **control-interface possession ≠ verified target-disposition `x`；source claim + 可按接口不足，必须另证 causal mapping，并与 global override 分账。**
+15. collective conferral 不预设后续逐项 joint，也不自动产生 full-scope unilateral `x`；授权生效后是否转为 unilateral execution 必须按被测 delegated scope 单独取证。
+16. **`x` 可以发生 scope / permission-type expansion-contraction 与 decision-structure transition；迁移前窄 `x` 不得写成 `x=false`，迁移后宽 `x` 也不得倒填到迁移前。**
+17. **external superior override insertion 可以收窄已成立的 current `x`；不得把局部 final-override 被外置写成主体全部 `x=off`，也不得因为新增一个上位节点就自动写成 joint/shared。**
+18. 普通 dynamic expansion/contraction 已跨作品成熟，停止堆量；后续只收 genuine decision-structure / permission-type transition、新反例、判据冲突和状态修正。
+19. transient opportunity / one-off override ≠ stable disposition `x`。
+20. endpoint attribution：第三方产权、保护、否决或政治节点不得倒灌主体 `x`。
+21. declared/nominal protected range ≠ observed stable protected-range `x`。
+22. territorial/internal-governance `x` ≠ externally exclusionary protected-range `x`。
+23. **protected outcome ≠ protected-range x；一次性 chokepoint denial 即使真实救出对象，也不能自动升级为 stable range。**
+24. **local risk-tested protected boundary 可成立，同时 global protected-range 仍失败/未锁；risk rerouting 只能按实际 scope 计。**
+25. **post-effect sanction/punishment x ≠ pre-effect protected-range x。**
+26. **protected-range 同样执行 criterion_version 分账；机制兼容但元数据判据版本不同的旧记录，不得直接并入 current-v1 跨作品计数。**
+27. evidence-locked 可被 adversarial audit 撤回。
 
 ## D｜当前高价值缺口
 
 1. **P0：第一份 strict v2 verified positive**，不降门槛凑例。
 2. **P1：protected-range 已达 `pending-review`。** 停止继续堆普通物理/环境/信息 access-gate 正例；后续只收新反例机制、scope 动态迁移、subject-specific gate 与第三方底层执行的判据冲突，以及能与独立 `zn` 同窗同对象层过门的 strict-v2 候选。
-3. **P2/P4：普通 x-scope expansion/contraction 已停止采样。** 优先 `unilateral → mandatory multi-node threshold/joint` 或反向撤销共同 gate 的 decision-structure 动态迁移；其次 permission-type expansion/contraction 与 parallel/shared-independent execution 的新边界。
-4. **P3：joint 静态正例已足以校准。** 不再堆“多人投票”普通案例；优先表面 joint 实际仍可被单节点绕过，或 broad command / hierarchy 在特殊对象层被 mandatory concurrence 截断的高纯护栏。
-5. **P4b：external override insertion 已有首份高纯控制。** 下一步优先找 override 节点退出后原 scope 恢复，或名义新增上位节点但现实并未改变 final effect 的反向控制。
-6. deferred 只在新证据出现时复审。
+3. **P2/P4：普通 x-scope expansion/contraction 已停止采样。** 优先真正的 `unilateral → mandatory multi-node threshold/joint` 或反向撤销共同 gate；其次 permission-type expansion/contraction 与 parallel/shared-independent execution 的新边界。
+4. **P3：joint 静态正例已足以校准。** 不再堆“多人投票”普通案例；优先表面 joint 实际可被单节点绕过，或 broad command / hierarchy 在特殊对象层被 mandatory concurrence 截断的高纯护栏。
+5. **P4b：source → invocation → stable control → disposition 分层已出现三种不同失败点。** 下一步优先找同人物/同 execution node 的镜像动态：competing anchor 退出后从 one-shot/unstable compliance 变成可重复 stable x；或 interface mapping 经首次 effect-test 后从 potential-use interface 变成 realized target-disposition。
+6. **P4c：external override insertion 已有首份高纯控制。** 下一步优先找 override 节点退出后原 scope 恢复，或名义新增上位节点但现实并未改变 final effect 的反向控制。
+7. deferred 只在新证据出现时复审。
 
 ## E｜pending-review 索引｜11条
 
