@@ -13,8 +13,8 @@ positive_controls: 4
 positive_cross_work_count: 3
 boundary_guards: 16
 boundary_guard_works: 13
-dynamic_transition_controls: 13
-dynamic_transition_works: 11
+dynamic_transition_controls: 14
+dynamic_transition_works: 12
 decision_structure_calibration_controls: 1
 may_override_canonical: false
 created: 2026-08-30
@@ -35,9 +35,9 @@ updated: 2026-09-01
 
 > **更宽 scope / 永久最终归属未成立，也不能反向把已经直接生效的窄 current `x` 抹成 `x=false`。formal/source authority、单次现实 compliance、接口持有、作品原生 ownership 标签、稳定 possession/use 或成功启动过程，都不能跨 permission type 自动升级成 stable current control / full disposition / verified target disposition。**
 
-另有 13 条、11 部独立作品的高置信动态迁移控制支持：
+另有 14 条、12 部独立作品的高置信动态迁移控制支持：
 
-> **`x` 的生命周期不只有 off→on / on→off。它可以发生 scope expansion / contraction、permission-type expansion、single gate → parallel independent gates、joint-threshold → delegated unilateral execution、external override insertion、内生竞争执行节点插入、time-lock revocability contraction、可分割资产 quantitative scope contraction、mandatory credential concentration，以及通过现实 capture 形成 `x off→on`、通过 voluntary release 形成 `x on→off`。迁移后部分低层 current `x` 可以继续保留。**
+> **`x` 的生命周期不只有 off→on / on→off。它可以发生 scope expansion / contraction、permission-type expansion、single gate → parallel independent gates、joint-threshold → delegated unilateral execution、external override insertion、内生竞争执行节点插入、time-lock revocability contraction、可分割资产 quantitative scope contraction、mandatory credential concentration、现实 capture、voluntary release，以及 external adversarial dispossession 后的 current possession/use ON→OFF→recovery ON。迁移后不同 permission layer 可以不同步变化。**
 
 核心结构门继续保持：
 
@@ -52,7 +52,8 @@ updated: 2026-09-01
 - permission existence ≠ permission persistence across time；
 - task-source / direction-source delta ≠ x-boundary delta automatically；
 - nominal conferral / title / authorization ≠ realized current x automatically；
-- voluntary release permission ≠ released object remains inside current x boundary。
+- voluntary release permission ≠ released object remains inside current x boundary；
+- current physical possession/use ≠ ultimate title / residual claim。
 
 本文件只到 L4 `pending-review`，不得覆盖 current canonical。
 
@@ -82,7 +83,7 @@ local current management 与 global/final override 分层；**局部真实 x ≠
 
 因此：`absence of individual veto ≠ unilateral`；`joint-unanimous ≠ joint-threshold ≠ unilateral`。
 
-## 4｜动态迁移控制｜13 controls / 11 works
+## 4｜动态迁移控制｜14 controls / 12 works
 
 ### 4.1 当前有效既有控制｜11 controls / 10 works
 
@@ -98,9 +99,9 @@ local current management 与 global/final override 分层；**局部真实 x ≠
 - Eduardo Saverin｜The Social Network｜99/98：quantitative scope contraction；equity `34.4% → 0.03%`，不是 binary off。
 - Marko Ramius｜The Hunt for Red October｜99/98：mandatory two-key joint threshold → credentials concentrated in one actor → unilateral authorization-interface；downstream launch 未 reality-test，不倒灌 final disposition。
 
-**宋江招安后 contraction 已 superseded，不计 current dynamic。** adversarial audit 只确认 task-source / direction-source 从梁山内部变成朝廷诏令输入，没有 ≥95 证据证明同对象层 permission 被撤回、对象子集移出、mandatory veto 插入、credential 被收走或 final-decision gate 转移。因此旧 `12/10` 中该条必须撤出；《水浒传》仍由宋江 expansion 留在 independent-work 集合。
+**宋江招安后 contraction 已 superseded，不计 current dynamic。** adversarial audit 只确认 task-source / direction-source 从梁山内部变成朝廷诏令输入，没有 ≥95 证据证明同对象层 permission 被撤回、对象子集移出、mandatory veto 插入、credential 被收走或 final-decision gate 转移。《水浒传》仍由宋江 expansion 留在 independent-work 集合。
 
-### 4.2 本批新增 Pokémon｜2 controls / +1 work
+### 4.2 本批新增｜3 controls / +2 works
 
 #### M｜Ash / Charmander capture｜Pokémon｜99/98
 capture 前 Ash 对同一 Charmander 没有 current `x`；Poké Ball capture effect-test 成功后，Charmander 进入其可现实调用的 manage/use/release decision structure。锁：**non-ownership capture as realized x expansion，`x off → stable unilateral local x`。** 作品内部 owner/title 是否成立不参与十元 `x` 当前判定。
@@ -108,14 +109,17 @@ capture 前 Ash 对同一 Charmander 没有 current `x`；Poké Ball capture eff
 #### N｜Ash / Butterfree voluntary release｜Pokémon｜99/98
 release 前 Ash 对同一 Butterfree 有稳定 possession/use/manage/release `x`；主动执行 release 后，对象退出其 current possession/use/manage 边界。锁：**voluntary relinquishment，`x on → x off`。** release permission 是真实 disposition/relinquishment permission，但不能倒灌成“释放后对象仍归 current x”。
 
-两条均使用 `current-x-scope-distinction-v1_20260830`。Charmander 是 Pokémon 首次进入 dynamic work 集合，故 `+1 control / +1 work`；Butterfree 属同作品/系列同批，故 `+1 control / +0 work`。
+#### O｜John Wick / Mustang external dispossession｜John Wick｜99/98
+偷车前 John 对同一 Mustang 的 current physical possession/use/custody `x=true`；外部对手现实夺走对象并取得物理占有后，这些 current permissions 变 false；第二部开场 physical recovery 后重新变 true。锁：**external adversarial dispossession / reacquisition：ON→OFF→ON**。但 theft 不自动证明 ultimate title / ownership claim / recovery claim 同步消失。
+
+统计：Pokémon 首条 capture `+1 control/+1 work`；同系列 Butterfree `+1/+0`；John Wick `+1/+1`。
 
 ```text
 11 controls / 10 works
-→ 13 controls / 11 independent works
+→ 14 controls / 12 independent works
 ```
 
-普通 expansion/contraction 正例继续停止；新增只保留 genuine decision-structure / permission-type / revocability / quantitative-scope / credential-distribution transition、新反例、判据冲突与状态修正。
+普通 expansion/contraction 正例继续停止；新增只保留 genuine permission/node/scope transition、新反例、判据冲突与状态修正。
 
 ## 5｜研究层 current x 最小字段
 
@@ -152,7 +156,7 @@ realized_effect_test: 被测 permission 是否已在 current object layer 现实
 causal_mapping_verified: 接口到目标结果的映射是否已被现实或独立技术证据验证
 scope_transition: from -> to
 permission_type_transition: from -> to
-transition_direction: expansion / contraction / redistribution / relinquishment
+transition_direction: expansion / contraction / redistribution / relinquishment / dispossession / reacquisition
 transition_trigger: 真实权限迁移节点
 retained_layers: 迁移后仍保留的权限层
 lost_or_externalized_layers: 迁移后上移、外置或失去的权限层
@@ -177,13 +181,14 @@ lost_or_externalized_layers: 迁移后上移、外置或失去的权限层
 13. 作品原生 owner/title/status 词不得直接替代十元 x 判定；先逐项验证 current permission bundle。
 14. scope / permission expansion：不能把迁移前窄 `x` 写成 `x=false`，也不能把迁移后宽 `x` 倒填到迁移前。
 15. scope contraction：迁移后高层 scope 上移/外置时，继续逐层检查低层 current `x` 是否保留。
-16. 对象内部新增 autonomous/competing execution node 时，必须把 retained use 与 lost exclusivity/final control 分开，不得写成 overall-off。
-17. revocability 必须记录 term 与 deadline；同一 revoke permission 可在 actor/title/object 不变时因 time-lock 从 true→false。
-18. 对可分割资产必须记录 quantitative scope；ownership/equity 不得只写 true/false，比例变化也可构成同 permission family 的真实收窄。
+16. 对象内部新增 autonomous/competing execution node 时，把 retained use 与 lost exclusivity/final control 分开，不得写 overall-off。
+17. revocability 必须记录 term 与 deadline。
+18. 可分割资产必须记录 quantitative scope。
 19. credential gate 迁移必须区分“持有全部授权凭证”与“downstream effect 已现实完成”。
-20. capture/acquisition transition 必须由 same-object realized effect-test 证明，不能靠 owner/title 标签；release/relinquishment 必须把“拥有释放权限”与“释放后 current x 是否仍在”分开。
-21. task-source / direction-source 变化不自动构成 x-scope transition。
-22. 当前 dynamic `13 controls / 11 works`，停止普通扩张/收缩堆量。
+20. capture/acquisition 必须由 same-object realized effect-test 证明，不能靠 owner/title 标签；release/relinquishment 要把释放权限与释放后 current x 分开。
+21. external dispossession 要按 permission type 分账：current physical possession/use/custody 可 OFF，同时 title/claim 未必 OFF；只有现实 recovery/reacquisition 才重新打开被测 current layer。
+22. task-source / direction-source 变化不自动构成 x-scope transition。
+23. 当前 dynamic `14 controls / 12 works`，停止普通扩张/收缩堆量。
 
 禁止倒灌：
 
@@ -207,7 +212,7 @@ lost_or_externalized_layers: 迁移后上移、外置或失去的权限层
 迁移后宽 x → 迁移前已经拥有同样宽 x
 高层 scope 收窄 → 所有低层 x 都自动消失
 知道/能进入秘密 → 自动拥有 disclosure x
-AI/对象获得独立执行 → 主体所有 use/command x 自动归零
+对象获得独立执行 → 主体所有 use/command x 自动归零
 permission 当前存在 → 跨越期限后仍永久存在
 ownership=true → 忽略可分割份额变化
 持有全部 mandatory credentials → downstream effect 已现实完成
@@ -215,6 +220,8 @@ ownership=true → 忽略可分割份额变化
 任务来源/组织独立性变化 → permission boundary 自动变化
 非 owner → 不可能有稳定 current x
 曾拥有 release 权 → release 后对象仍在 current x
+被偷/被夺走 current possession → ultimate title/claim 自动归零
+仍有 title/claim → current physical custody/use 仍自动为 true
 ```
 
 ## 7｜成熟度
@@ -227,8 +234,8 @@ positive_controls: 4
 positive_cross_work_count: 3
 boundary_guards: 16
 boundary_guard_works: 13
-dynamic_transition_controls: 13
-dynamic_transition_works: 11
+dynamic_transition_controls: 14
+dynamic_transition_works: 12
 decision_structure_calibration_controls: 1
 positive_works: [西游记, 三国演义, 红楼梦]
 may_override_canonical: false
@@ -238,17 +245,16 @@ may_override_canonical: false
 
 ## 8｜下一步高信息增益
 
-1. **temporary custody/use 三段动态**：优先找 `x off → temporary custody/use x → x off` 的借用/托管/返还最小差异，测试“最终处分/永久归属为0 ≠ 一切 current use/custody x 都为0”。
-2. **credential-distribution 反向镜像**：单一 actor 集中全部 mandatory credentials 后重新引入独立 co-holder / 2-of-2 gate。
-3. **内生 competing-node 镜像**：竞争执行节点被移除/重新抑制后，exclusive control 是否恢复为稳定 unilateral。
-4. **time-lock 镜像**：同一 permission 从 `false` 经真实 unlock / cooling-off / credential node 首次变成 `true`。
-5. **quantitative scope 镜像**：份额从窄→宽并跨真实 threshold 后，veto/disposition permission 是否离散切换。
-6. **source→invocation→stable-control 镜像动态**：competing anchor 移除/忠诚迁移/override 禁用前后，从 one-shot/unstable compliance 变成多次稳定调用。
-7. deferred 仅在新证据出现时复审。
-8. 等授权审议，不自动向 L2 升格。
+1. **temporary custody/use 三段动态**：找 `x off → temporary custody/use x → x off` 的借用/托管/返还最小差异，对照主动 release 与强制 dispossession。
+2. **external dispossession 最小差异**：区分主动 relinquishment、被动 theft/dispossession、临时 loan/return，以及 residual title/claim 与 current custody/use 的不同步变化。
+3. **credential-distribution 反向镜像**：单一 actor 集中全部 mandatory credentials 后重新引入独立 co-holder / 2-of-2 gate。
+4. **内生 competing-node 镜像**：竞争执行节点移除后，exclusive control 是否恢复稳定 unilateral。
+5. **time-lock / quantitative scope 镜像**：真实 unlock 或份额跨 threshold 后 permission 离散改变。
+6. deferred 仅在新证据出现时复审。
+7. 等授权审议，不自动向 L2 升格。
 
 ## 9｜不修改 canonical
 
 本文件不修改 L1、`x/zn` 信息卡与准度卡、`zn补x_补卡` 或 strict v2 gate。
 
-TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_16GUARDS_13WORKS_13DYNAMIC_11WORKS_1CALIBRATION_20260901
+TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_16GUARDS_13WORKS_14DYNAMIC_12WORKS_1CALIBRATION_20260901
