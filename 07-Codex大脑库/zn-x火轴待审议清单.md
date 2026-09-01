@@ -73,8 +73,8 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 16
 x_scope_boundary_guard_works: 13
-x_scope_dynamic_transition_controls: 13
-x_scope_dynamic_transition_works: 11
+x_scope_dynamic_transition_controls: 14
+x_scope_dynamic_transition_works: 12
 x_scope_decision_structure_calibration_controls: 1
 knowledge_status: pending-review
 pending_review: true
@@ -94,7 +94,7 @@ pending_review: true
 #### decision-structure 判据校准｜1 control｜不计 ordinary works
 多数阈值型结构校准继续有效：individual same-layer veto 是 genuine joint 的充分证据之一但不是必要条件；mandatory multi-node approval threshold 且任何单一节点不能独立让同一 final decision 生效，也可判 `joint-threshold`。
 
-#### 动态迁移控制｜13 controls / 11 works
+#### 动态迁移控制｜14 controls / 12 works
 当前有效的既有7条：宋江 expansion、王熙凤 contraction、唐僧 expansion、刘备 expansion、Palpatine joint-threshold→unilateral-on-delegated-scope、Dumbledore external-superior-override insertion→scope contraction、Grimmauld Fidelius permission-type expansion + single gate→parallel independent disclosure gates。
 
 另有四条同 criterion 新机制继续有效：
@@ -104,19 +104,20 @@ pending_review: true
 - **Eduardo Saverin / The Social Network｜99/98**：同一 Facebook equity object、同一 ownership/equity permission family 经 selective capitalization 从 `34.4% → 0.03%`；锁 **quantitative scope contraction**，可分割资产的 `x` 不能只写 true/false。
 - **Marko Ramius / The Hunt for Red October｜99/98**：同一 ballistic-missile arming authorization gate，政治委员独立持第二把 key 时为 mandatory 2-of-2 joint threshold；节点退出并由 Ramius 集中第二 credential 后，被测 authorization-interface 变为 single-actor possession。锁 **co-decision-node removal by mandatory-credential consolidation**；但 downstream arming/launch 未 reality-test，不倒灌 final launch disposition。
 
-本批新增两条 Pokémon 同 criterion 动态控制：
+本批新增三条 current-v1 动态控制：
 
-- **Ash / Charmander capture｜Pokémon｜99/98**：capture 前对同一 Charmander 无 current `x`；Poké Ball capture effect-test 成功后，Charmander 进入 Ash 可现实调用的 manage/use/release decision structure。锁 **non-ownership capture as realized x expansion：`x off → stable unilateral local x`**。是否具备作品原生 ownership/title 不参与十元 `x` 判定。
-- **Ash / Butterfree voluntary release｜Pokémon｜99/98**：release 前存在稳定 possession/use/manage/release `x`；主体主动执行 release 后，同一 Butterfree 不再处于 Ash 当前 possession/use/manage 边界。锁 **voluntary relinquishment：`x on → x off`**。release permission 本身成立，与执行 release 后对象退出 current x 边界必须分账。
+- **Ash / Charmander capture｜Pokémon｜99/98**：capture 前对同一 Charmander 无 current `x`；Poké Ball capture effect-test 成功后，Charmander 进入 Ash 可现实调用的 manage/use/release decision structure。锁 **non-ownership capture as realized x expansion：`x off → stable unilateral local x`**。作品原生 ownership/title 不参与 current 十元 `x` 判定。
+- **Ash / Butterfree voluntary release｜Pokémon｜99/98**：release 前存在稳定 possession/use/manage/release `x`；主体主动执行 release 后，同一 Butterfree 不再处于 Ash 当前 possession/use/manage 边界。锁 **voluntary relinquishment：`x on → x off`**。release permission 本身成立，与执行 release 后对象退出 current x 边界分账。
+- **John Wick / 1969 Mustang｜John Wick｜99/98**：偷车前 current possession/use/custody `x=true`；外部对手现实夺走同一对象后，这些 current physical permissions 变为 false；后续 physical recovery 又恢复。锁 **external adversarial dispossession：current possession/use ON→OFF→ON**，同时明确 residual title/claim 不因 physical dispossession 自动归零。这不是 capability delta，而是对象现实退出/重新进入主体 current possession boundary。
 
-两条都使用 `current-x-scope-distinction-v1_20260830`。Charmander capture 是 Pokémon 首次进入 dynamic work 集合，故 `+1 control / +1 work`；Butterfree 与同一 Pokémon 作品/系列同批，故 `+1 control / +0 work`：
+统计分账：Pokémon capture 首次引入 Pokémon dynamic work，`+1/+1`；Butterfree 同系列同批 `+1/+0`；John Wick 此前未进入 dynamic-work 集合，`+1/+1`。因此：
 
 ```text
 11 controls / 10 works
-→ 13 controls / 11 independent works
+→ 14 controls / 12 independent works
 ```
 
-本批 adversarial audit 撤回 **宋江招安后 contraction** 继续保持 superseded：旧证据只证明 `task-source / direction-source` 从梁山内部转为朝廷诏令输入，没有 ≥95 证据证明同一对象层某项已确认 permission 被撤回、对象子集移出、mandatory veto 插入、credential 被收走或 final-decision gate 转移。《水浒传》仍由宋江 expansion 留在 work 集合。
+**宋江招安后 contraction 继续保持 superseded，不计 current dynamic。** 旧证据只证明 `task-source / direction-source` 上移，没有 ≥95 证据证明同对象层 permission 被撤回、对象子集移出、mandatory veto 插入、credential 被收走或 final-decision gate 转移。《水浒传》仍由宋江 expansion 留在 work 集合。
 
 同时两条旧 dynamic 经污染压力测试保留，但不新增 ordinary control：
 - **刘备领徐州 expansion 保留**：被推举/受牌印不是最终证据；后续实际持有治理 credential，并以 current holder 身份现实发起同一治理对象的再转移，说明 accepted conferral 已进入 realized current x。
@@ -149,6 +150,9 @@ source-native ownership/title status
 
 release permission is real x
 ≠ released object remains inside current x boundary
+
+current physical possession/use
+≠ ultimate title / residual claim
 ```
 
 ### A11｜protected-range risk-test｜current v1
@@ -205,8 +209,8 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 16
 x_scope_boundary_guard_works: 13
-x_scope_dynamic_transition_controls: 13
-x_scope_dynamic_transition_works: 11
+x_scope_dynamic_transition_controls: 14
+x_scope_dynamic_transition_works: 12
 x_scope_decision_structure_calibration_controls: 1
 x_scope_knowledge_status: pending-review
 protected_range_current_criterion: protected-range-risk-test-v1_20260831
@@ -281,16 +285,17 @@ pending_review_count: 11
 40. 反向审计允许旧 dynamic 被撤回，也允许经 reality-effect 压力测试后保留；保留/撤回都不得重复增加 ordinary control。
 41. source-native ownership/title 不决定十元 `x`；非 owner 在 current window 也可因现实 capture/manage/use/release effect-test 获得稳定窄 `x`。
 42. voluntary release 是真实 disposition/relinquishment permission 的一次调用；调用成功后对象可以从 current `x` 边界退出，不能因为“主体曾拥有 release 权”就把 released object 继续判在手中。
+43. external adversarial dispossession 可关闭 current physical possession/use/custody `x`，但不能自动把 ultimate title / residual claim 同步判 false；physical recovery 可重新打开被测 current layer。
 
 ## D｜当前高价值缺口
 
 1. **P0：第一份 strict v2 verified positive**，仍为0，不降门槛凑例；除 competing reality anchors 外，必须同时冻结 x 端 competing purpose/ranking anchors。
 2. **P1：protected-range 已 pending-review。** 停止普通正例，只收新反例、动态迁移、第三方 gate 冲突与 strict-v2 候选。
-3. **P2：credential-distribution 反向镜像。** 单人集中全部 mandatory credentials 后重新引入独立 co-holder / 2-of-2 gate，观察 unilateral authorization-interface 是否真实回到 joint-threshold。
-4. **P3：内生 competing-node 镜像。** 竞争执行节点被移除/重新抑制后，exclusive/final control 是否从 contested 恢复为稳定 unilateral。
-5. **P4：time-lock 镜像。** 同一 permission 从 false 经真实 unlock/cooling-off/credential node 首次变成 revoke/veto true。
-6. **P5：quantitative scope 镜像。** 同一 divisible asset pool 由窄→宽；更高价值是份额跨真实 threshold 后 veto/disposition permission 离散切换。
-7. **P6：temporary custody/use 三段动态。** 优先找 `x off → temporary custody/use x → x off` 的借用/托管/返还最小差异，测试“处分/归属归零 ≠ 一切使用/保管权限归零”；同时继续审计 task-source / nominal-title 污染。
+3. **P2：temporary custody/use 三段动态。** 优先找 `x off → temporary custody/use x → x off` 的借用/托管/返还最小差异，测试“处分/归属归零 ≠ 一切使用/保管权限归零”。
+4. **P3：credential-distribution 反向镜像。** 单人集中全部 mandatory credentials 后重新引入独立 co-holder / 2-of-2 gate。
+5. **P4：内生 competing-node 镜像。** 竞争执行节点被移除/重新抑制后，exclusive/final control 是否从 contested 恢复为稳定 unilateral。
+6. **P5：time-lock / quantitative scope 镜像。** 同一 permission 从 false 经真实 unlock 变 true，或份额跨真实 threshold 后 veto/disposition permission 离散切换。
+7. **P6：external dispossession 最小差异。** 对照主动 voluntary release、临时借出/返还与外部强制夺占，继续检查 title/claim 与 current custody/use 的不同步变化。
 8. deferred 只在新证据出现时复审。
 
 ## E｜pending-review 索引｜11条
