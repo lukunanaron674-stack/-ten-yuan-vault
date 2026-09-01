@@ -1,302 +1,305 @@
 ---
-type: ten-yuan-fire-axis-evidence-record
+type: ten-yuan-fire-axis-audit-correction
 authority_level: L4
-knowledge_status: evidence-locked
+knowledge_status: superseded
+status: classification-corrected
 axis: fire
 pair: zn-x
 work: The Martian (2015)
 character: Mark Watney
 stage: Pathfinder恢复通信→十六进制相机交互→rover软件hack→自由文本通信
 criterion_version: current-x-scope-distinction-v1_20260830
-sample_type: x-scope-dynamic-transition
-mechanism: channel-capacity-resolution-expansion
+former_sample_type: x-scope-dynamic-transition
+current_sample_type: capability-vs-x-scope-negative-correction
+former_mechanism: channel-capacity-resolution-expansion
+current_mechanism: technical-capability-expansion-without-proven-x-boundary-expansion
 fact_confidence: 99
-classification_confidence: 98
-x_scope_dynamic_transition_increment: true
-x_scope_dynamic_transition_work_increment: true
+classification_confidence: 99
+x_scope_dynamic_transition_increment: false
+x_scope_dynamic_transition_work_increment: false
 strict_v2_verified_positive_increment: false
 strict_v2_deferred_increment: false
 protected_range_increment: false
-created: 2026-09-01
+supersedes_self_classification_from_commit: d4eb3d9c2b48253ae516bf0bad89a52af3221c81
+corrected: 2026-09-01
 ---
 
-# zn↔x 火轴边界压力测试｜The Martian｜Mark Watney｜通信 channel-capacity 扩张
+# 审计纠偏｜The Martian｜Mark Watney｜通信容量升级不等于 x-scope 扩张
 
-## 1. 本轮结论
+## 0｜纠偏结论
 
-本轮不产生 strict-v2 正例。新增一个 current x-scope 动态控制：
-
-> **同一 actor、同一通信对象、同一 communication-use permission family，可以在 permission_type 仍然成立且 title/actor/object 不变时，仅因现实接口能力升级而发生 `channel-capacity / resolution expansion`。**
-
-不能只写：
+上一版把：
 
 ```text
-can communicate = x=true
+Pathfinder 相机/十六进制低容量通信
+→ rover 软件改造
+→ 自由文本通信
 ```
 
-还必须继续记录：
+锁成 `channel-capacity / expressive-resolution expansion of current x`。
+
+该分类过宽，现按仓库 current canonical 撤回。
+
+事实链仍成立，但它首先证明的是：
+
+> **同一个已经可用的通信接口，技术能力、带宽、表达分辨率可以扩大。**
+
+这不足以独立证明十元 `x` 的归属、权限边界、可调用对象集合或处分范围扩大。
+
+因此：
+
+```yaml
+fact_chain: retained
+former_x_scope_dynamic_transition: superseded
+current_x_scope_dynamic_transition_increment: false
+```
+
+## 1｜为什么必须纠偏
+
+`x` 信息卡的 current 核心是：
 
 ```text
-能传什么
-一次能传多少
-表达空间有多大
-是否只能离散选择
-是否可自由生成消息
+对象被切定
+→ 进入“我 / 我方”的归属范围
+→ 主体取得占有、使用、调配或控制权
 ```
 
-即：**permission existence ≠ permission expressive scope / channel capacity。**
+即 `x = 归我掌握`。
 
-## 2. 事实链
+L1 火轴也把 `x` 定义为：
 
-被测窗口固定为 Watney 恢复 Mars Pathfinder 后的通信升级过程。
+> 对象被纳入掌握、调用与处分边界。
 
-1. Pathfinder 恢复后，Watney 与 NASA 已经重新取得现实通信接口；最初返回通道主要依赖 Pathfinder 相机转向。
-2. 为提高表达能力，Watney 把十六进制符号布置在相机周围，让 NASA 通过相机指向符号组合更复杂消息。
-3. NASA 随后向 Watney 发送修改 rover 软件的指令，使 rover 能与 Pathfinder 的广播频率连接。
-4. 修改完成后，Watney 与 NASA 可以直接进行长文本式双向消息，不再需要逐字符依赖相机指向十六进制标记。
+因此，研究 `x-scope` 时真正需要变化的是至少一种：
 
-影片转录直接给出 Watney 从 hexadecimal camera interaction 过渡到“hack the Rover so that it can talk to Pathfinder”，随后屏幕上开始出现完整文本消息。
+- 哪些对象进入/退出主体可掌握范围；
+- 哪一种 permission 从无到有、从有到无；
+- permission 的对象子集、期限、处分层、否决层、执行层发生变化；
+- mandatory veto / override / co-decision / credential distribution 等现实权限结构变化。
 
-技术背景方面，Mars Pathfinder 工程资料说明 Pathfinder 存在可用于低层命令/软件访问的串行接口；对电影的技术核查也认为用 Pathfinder 接入 rover、建立更长文本通信在概念上具有可行性。
+而本案两个阶段都已经允许 Watney 与 NASA 现实通信。升级改变的是消息编码效率、长度和表达分辨率，没有证据表明：
 
-## 3. x 权限结构
+- 新增了原本不归其调用的对象子集；
+- 新增了新的处分/否决/管理权限；
+- 原本需要第三方批准的消息现在改成不需要；
+- 原本被其他节点现实控制的通信对象转入 Watney 自己的归属边界。
+
+所以不能仅凭“更强、更快、更能传”就把 `x` 扩张。
+
+## 2｜最小差异
+
+### A｜真实 x-scope expansion
+
+```text
+阶段A：主体只能调用对象子集 S1
+→ 真实授权/控制节点变化
+阶段B：主体可调用 S1 + S2
+```
+
+或：
+
+```text
+阶段A：use=true, dispose=false
+→ 权限迁移节点
+阶段B：use=true, dispose=true
+```
+
+这里发生的是掌握/权限边界扩张。
+
+### B｜The Martian 本案
+
+```text
+阶段A：communication-use = true
+阶段B：communication-use = true
+
+变化：
+hex / camera coding
+→ free-form text
+```
+
+这只直接证明同一 permission 的技术表达能力升级。
+
+除非另有证据证明 `free-form text` 对应一个此前不可调用、后来真实纳入 Watney 控制边界的新对象/权限集合，否则：
+
+```text
+technical capability delta
+≠ x-scope delta
+```
+
+## 3｜x 权限结构重新记录
 
 ```yaml
 actor: Mark Watney
-object: Mars↔Earth communication channel mediated by Pathfinder / rover
+object: Pathfinder-mediated Mars↔Earth communication interface
 
 permission_type:
-  stage_A_confirmed:
-    - contact/use communication interface
-    - receive NASA-directed camera signals
-    - send observable written responses
-  stage_B_confirmed:
-    - use same communication relationship
-    - send free-form text
-    - receive free-form text
+  stage_A:
+    contact: true
+    use: true
+    send_message: true
+    receive_message: true
+  stage_B:
+    contact: true
+    use: true
+    send_message: true
+    receive_message: true
 
 scope:
-  stage_A:
-    mode: camera-pointing + physical cards / hexadecimal encoding
-    expressive_scope: discrete / low-capacity / character-sequence constrained
-    message_generation: indirect
-  stage_B:
-    mode: rover-linked text communication
-    expressive_scope: substantially broader free-form text
-    message_generation: direct text interface
+  x-relevant-object-scope:
+    stage_A: communication interface
+    stage_B: same communication interface
 
 term:
-  stage_A: Pathfinder contact restored before rover patch
-  stage_B: rover software modification active
+  stage_A: Pathfinder restored before rover patch
+  stage_B: rover patch active
 
-revocability:
-  not_tested_as_main_variable: true
+revocability: not tested
+return_obligation: none
+same-layer_pre-effect_veto: no change demonstrated
+global_override: physical link/system constraints remain
+ultimate_title: irrelevant
 
-return_obligation:
-  none
-
-same-layer_pre-effect_veto:
-  stage_A: no independent human veto over each valid camera exchange
-  stage_B: no independent human veto over each valid text exchange demonstrated
-
-global_override:
-  physical communications hardware / link availability remains a system constraint
-
-ultimate_title:
-  irrelevant; no ownership inference used
-
-decision_structure:
-  not the tested variable
-
-consultation_structure:
-  NASA engineers provide instructions for the upgrade
-
-final_decision_structure:
-  not the tested variable
-
+decision_structure: unchanged / not tested
+consultation_structure: NASA engineers provide technical instructions
+final_decision_structure: unchanged / not tested
 execution_structure:
-  stage_A: Watney physical signs + Pathfinder camera + NASA operators
-  stage_B: Watney rover software modification + Pathfinder link + NASA text system
+  stage_A: camera + physical hexadecimal encoding
+  stage_B: rover-linked text interface
+co-decision_nodes: no x-relevant change demonstrated
 
-co-decision_nodes:
-  none relevant to whether the tested communication capacity itself exists
+technical_capability:
+  stage_A: low-capacity / indirect coding
+  stage_B: higher-capacity / direct free-form text
 
-scope_transition:
-  low-capacity discrete coded interaction
-  -> substantially higher-capacity free-form text interaction
-
-transition_trigger:
-  rover software/interface modification connecting rover communication to Pathfinder
+x_scope_transition: not proven
 ```
 
-## 4. 关键压力
+## 4｜关键压力
 
-本轮最重要的不是“从没有通信到有通信”。
+把所有“能力”语言拿掉，只问：
 
-在 stage_A，communication `x` 已经现实成立：Watney 与 NASA 可以互相传递信息，而且 hexadecimal 方案可以传递比 yes/no 更复杂的内容。
+> Watney 前后到底多掌握了什么此前不归他调用/使用/处分的对象或权限？
 
-真正变化的是：
+当前事实不能给出 ≥95 的新边界。
 
-```text
-same communication permission family
-+
-same actor
-+
-same Pathfinder-mediated object layer
+反过来，把 `x` 结构固定不变，仅让同一接口变得更高效、更高带宽，全部剧情事实仍能成立。
 
-low-capacity discrete encoding
-→ interface/software upgrade
-→ free-form text channel
-```
+因此拿掉“x-scope expansion”假设，事实链没有解释缺口。
 
-因此应把 `scope` 中的 channel capacity / expressive resolution 当作 current-x 的现实属性，而不是看到“都能通信”就把两个阶段压成同一个 `x=true`。
+## 5｜第三因素冻结
 
-## 5. 最近邻排除
+冻结：
 
-### 不等于 Eduardo / The Social Network
+- Watney 的工程能力与聪明程度；
+- rover / Pathfinder 的技术性能；
+- NASA 工程师的技术方案；
+- 生存压力；
+- 最终是否获救；
+- 宇航员身份。
 
-Eduardo 案锁的是：
+这些因素可以解释为什么通信能力提升，但不能自动生成新的 `x` 归属/处分边界。
 
-```text
-divisible asset share
-34.4% -> 0.03%
-```
+## 6｜最近邻边界
 
-即同一 ownership/equity permission family 的**对象份额比例**变化。
+本纠偏不推翻以下 current dynamic controls：
 
-本轮不是资产份额，也没有 ownership 百分比；变化的是同一 use/call permission 可承载的**信息表达容量与交互分辨率**。
+- Eduardo：34.4%→0.03% 是同一可分割资产的现实 ownership/equity scope 改变；
+- Ripley：revoke permission 在 deadline 前后真实从 true→false；
+- Ramius：mandatory credentials 从独立节点分散变成单人集中，decision structure 改变；
+- Jurassic Park / Arnold：specific direct-reversal path 失效而 recovery interface 保留，permission path 结构改变。
 
-### 不等于 Alien / Ripley
+这些都直接改变“主体能对什么对象做什么”的现实边界。
 
-Alien 案锁的是同一 revoke permission 随时间阈值从 true→false，即 permission persistence / revocability contraction。
+The Martian 这里只改变同一已成立 use permission 的技术表现，所以不能与它们累计。
 
-本轮 permission 没有关闭，反而持续存在；只发生容量层扩张。
+## 7｜zn / strict-v2
 
-### 不等于 Jurassic Park / Arnold
-
-Arnold 案锁的是特定 direct-reversal command path 因 hidden command / audit trail lockout 失效，同时 whole-system recovery interface 保留。
-
-本轮没有 permission path 被封锁；是既有 channel 的表达能力被升级。
-
-## 6. 拿掉测试
-
-拿掉 rover software/interface upgrade：
-
-- Pathfinder 仍可通信；
-- camera/hexadecimal 低容量交互仍可继续；
-- 但自由文本式 direct messaging 不会凭空出现。
-
-因此升级节点解释的是**scope expansion**，而不是 communication permission 的首次诞生。
-
-## 7. 反向测试
-
-若 rover hack 后 Watney 仍只能通过相机逐符号编码、不能直接收发自由文本，则只能判“接口形式变化”，不能判 channel-capacity expansion。
-
-影片实际给出更复杂、直接的完整文本交流，因此 effect-test 通过。
-
-## 8. 第三因素冻结
-
-冻结以下因素：
-
-- Watney 的宇航员/植物学家/工程师身份标签；
-- NASA 的机构权威；
-- “全世界支持他”的外部认可；
-- 生存主题、孤独情绪、最终救援结果；
-- Pathfinder 的历史所有权；
-- Watney 是否聪明、幽默或善于解决问题。
-
-只保留可观察的通信接口结构变化，结论仍成立。
-
-## 9. zn / strict-v2
-
-本轮不锁 `zn`。
-
-Watney 的“活下去 / work the problem”足以描述当前目标与行为功能，但在本窗口没有必要把它升级为 ≥95 的不可让渡 internal principle；更不能因为通信升级帮助生存，就把技术接口倒推成 strict `zn↔x`。
+本轮不锁 `zn`，也不进入 strict-v2。
 
 ```yaml
 zn_current: not-locked
-same_object_layer_for_strict: not-entered
 strict_test_allowed: false
 strict_v2_verified_positive_increment: false
 strict_v2_deferred_increment: false
 ```
 
-strict-v2 verified positive 保持 0。
+strict-v2 verified positive 继续保持 0。
 
-## 10. 成熟度与统计
+## 8｜成熟度与统计纠偏
 
-本轮启动时 current registry：
+事实：99。
+分类纠偏：99。
 
-```text
-x_scope_dynamic_transition_controls: 12
-x_scope_dynamic_transition_works: 10
-```
+本文件当前知识状态改为 `superseded`，指的是上一版 **x-scope dynamic-transition 分类** 被撤回；剧情事实本身不撤回。
 
-之后 latest main 已新增 Jurassic Park / Ray Arnold 的同 criterion 动态控制，但尚未同步 registry，因此本轮写前 evidence-layer 为：
+统计必须回退上一版的错误增量：
 
 ```text
-13 controls / 11 works
+x_scope_dynamic_transition:
+上一版误计：+1 control / +1 work
+本轮纠偏：撤回该增量
 ```
 
-《The Martian》此前进入的是 protected-range criterion，不在 `current-x-scope-distinction-v1_20260830` 的 dynamic-transition work 集合中；不同 criterion_version 不混算。因此本轮可计：
+因此 latest evidence-layer 不应写成 `14 controls / 12 works`。
+
+以 current registry 的 `12 / 10` 加上其后仍有效的 Jurassic Park / Ray Arnold：
 
 ```text
-x_scope_dynamic_transition_controls: +1
-x_scope_dynamic_transition_works: +1
-
-evidence-layer:
-13 / 11
-→ 14 controls / 12 works
+12 / 10
++ Jurassic Park 1 / 1
+= 13 controls / 11 independent works
 ```
 
-其余：
+The Martian 本案：
 
 ```yaml
-strict_v2_verified_positive: +0
-strict_v2_deferred: +0
-strict_precondition: +0
-x_scope_boundary_guard: +0
-protected_range: +0
+x_scope_dynamic_transition_control_delta: 0
+x_scope_dynamic_transition_work_delta: 0
+capability_vs_x_scope_correction: +1
 ```
 
-## 11. 新增方法护栏
+该 correction 不并入普通文学 control/work 统计。
 
-锁定：
+## 9｜新护栏
 
-> **communication/use `x=true` 不足以描述现实 scope。对信息接口还要记录可表达集合、带宽/容量、交互分辨率与直接性。**
+正式锁出研究层反误判：
 
-最小表达：
+> **能力、效率、带宽、分辨率、吞吐、威力、速度或性能变化，不能仅因“更能做某事”就自动记为 `x-scope` 变化。只有当这些变化同时对应现实的对象归属、permission、可调用对象集合、处分/否决/管理边界或 decision/execution node 变化时，才允许进入 `x-scope`。**
+
+最短式：
 
 ```text
-permission exists
-≠ permission capacity fixed
-
-same communication x
-can expand without actor/title/object change
+capability / performance delta
+≠
+x boundary delta
 ```
 
-建议把 `capacity_or_resolution` 作为 x-scope 的可选扩展字段；它不替代既有固定字段，只在对象本身具有连续容量、带宽、额度、吞吐或表达分辨率时启用。
+这与用户固定禁令一致：不得从“能力”直接倒推 `zn/x`。
 
-## 12. 证据来源
+## 10｜下一轮高信息增益方向
 
-- The Martian (2015) transcript：hexadecimal camera interaction → rover hack → direct text exchange
-  https://transcripts.simpleremix.com/script.php/the-martian-2015-FLyO
-- Space.com 对电影 Pathfinder 通信方案的技术核查：hex / camera 与 Pathfinder-rover text-link 方案
-  https://www.space.com/30737-the-martian-nasa-mars-pathfinder-lander.html
-- NASA Mars Pathfinder / rover engineering background（用于接口技术背景，不替代影片剧情事实）
-  https://science.nasa.gov/resource/rover-camera-mosaic-of-lander-wedge/
+P0 继续最高优先。
 
-## 13. 下一轮优先
-
-P0 仍高于本分支：继续寻找 `zn≥95 + natural-object x≥95 + same current window/layer` 且两侧 competing anchor 都可冻结的 strict-v2 候选。
-
-若 P0 无 ≥95 材料，下一条 x-scope 最值得找本轮的压力镜像：
+若继续跑 x-scope，优先寻找：
 
 ```text
-same actor + same object + same permission family
-high-capacity interface
-→ real bandwidth/quota/resolution restriction
-→ low-capacity interface remains usable
+同 actor + 同 object
+技术能力保持近似不变
+但现实 authorization / veto / callable-object-set / disposition boundary 发生迁移
 ```
 
-即：**permission 不关闭，但 capacity/resolution 被真实压窄**。这比再找一次“接口完全断掉”更有信息增益。
+这样的最小差异能进一步把：
+
+```text
+能力变化
+```
+
+与：
+
+```text
+掌握边界变化
+```
+
+彻底拆开。
+
+TASK_DONE:ZNX_XSCOPE_CAPABILITY_NOT_BOUNDARY_CORRECTION_THE_MARTIAN_20260901
