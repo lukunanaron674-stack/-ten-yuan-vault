@@ -8,132 +8,212 @@ pair: zn-x
 updated: 2026-09-02
 criterion_version:
   l1_axis: L1_十元即阴阳五行相反轴正本_v1.6
+  strict_gate: current-layer-specific-anchor-gap-v2_20260829
   x_scope_gate: current-x-scope-distinction-v1_20260830
+  protected_range_gate: protected-range-risk-test-v1_20260831
 may_override_canonical: false
 fact_confidence: 99
 classification_confidence: 99
 ---
 
-# 状态同步｜吸收 Queeg dynamic 与 The Purge decision-structure calibration
+# 状态同步｜zn ↔ x 当前 evidence ledger｜Queeg、The Purge、Book of Eli、protected-range、Elder Wand
 
 ## 0｜启动对齐
 
-本轮以 `main@6d43e20ac5e7bf546e46a529baad15c0f9e24237` 为写前 HEAD。已重读 `AGENTS.md`、文件权力总览、总入口、L1 十元—五行正本 v1.6、zn/x 信息卡、zn/x 准度卡、`zn补x`、火轴待审议清单、火轴研究总纲、strict-v2 专项、x-scope 相关 current 文件与最近 commits。current canonical 高于本文件；木轴 `zx↔nx` 只迁移验证方法，不迁移理论结论。
+本轮以最新 main 为准，重读 L0/L1 门禁、L1 十元—五行正本 v1.6、zn/x 信息卡与准度路由、`zn补x`、火轴待审议清单、火轴研究总纲、strict-v2 专项、x-scope 专项、protected-range 专项、最近运行记录与 commits。current canonical 高于本文件；木轴 `zx↔nx` 只迁移验证方法，不迁移理论结论。
 
-本轮未发现达到 ≥95 且能新增机制的 strict-v2 正例，不为破零降低门槛；也不重复堆普通 x-scope 正例。
+本轮没有达到 ≥95 且能新增机制的 strict-v2 verified positive，不为破零降低门槛；已 pending-review 的 ordinary positive 槽继续停止堆量。
 
-## 1｜发现的真实状态债
-
-当前 `zn-x火轴待审议清单.md` 与 `zn-x火轴研究总纲_20260827.md` 仍显示：
+## 1｜current effective evidence-layer
 
 ```yaml
-x_scope_dynamic_transition_controls: 14
-x_scope_dynamic_transition_works: 12
-x_scope_decision_structure_calibration_controls: 1
-```
+strict_current_criterion: current-layer-specific-anchor-gap-v2_20260829
+strict_v2_verified_positive_controls: 0
+strict_v2_verified_positive_works: 0
+strict_v2_deferred_former_positive_controls: 4
+strict_v2_deferred_former_positive_works: 4
+strict_v2_negative_guards: 7
+strict_v2_negative_guard_works: 4
+strict_precondition_guards: 18
+strict_precondition_guard_works: 7
+strict_canonical_calibration_controls: 3
 
-但 main 上已经存在两份后续 evidence-locked 结果：
-
-1. `运行记录_zn-x-xscope紧急解除指挥_TheCaineMutiny_Queeg..._20260901.md`：在原 `14/12` 基础上新增新的 authority-specific realized-command contraction，且《The Caine Mutiny》此前不在 dynamic work 集合，因此有效 dynamic layer 为 `15 controls / 13 independent works`。
-2. `运行记录_zn-x-xscope决策执行结构校准_ThePurge_James与Charlie..._20260902.md`：在既有 joint-threshold calibration 之外新增 `shared / parallel-independent execution ≠ joint final decision` 校准，因此 decision-structure calibration 从 `1 → 2 controls`。该项按 current schema 不自行发明独立 work count。
-
-## 2｜current effective evidence-layer
-
-```yaml
 x_scope_current_criterion: current-x-scope-distinction-v1_20260830
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 16
-x_scope_boundary_guard_works: 13
+x_scope_boundary_guards: 17
+x_scope_boundary_guard_works: 14
 x_scope_dynamic_transition_controls: 15
 x_scope_dynamic_transition_works: 13
 x_scope_decision_structure_calibration_controls: 2
 x_scope_knowledge_status: pending-review
+
+protected_range_current_criterion: protected-range-risk-test-v1_20260831
+protected_range_v1_verified_positive_controls: 4
+protected_range_v1_verified_positive_works: 4
+protected_range_v1_verified_negative_guards: 3
+protected_range_v1_verified_negative_guard_works: 3
+protected_range_knowledge_status: pending-review
+
+pending_review_count: 11
 ```
 
-本轮只是 L4 状态同步，不修改 L1/L2 canonical，也不把 pending-review 自动升格。
+## 2｜本轮真正新增：Elder Wand object-internal execution-node guard
 
-## 3｜本轮压力结论
+`7b42c3d9469d932e273b7fb11c50e642b820eb60` 已 evidence-lock Voldemort / Elder Wand 新机制。
 
-### P0 strict-v2
+同一 current window、同一对象上：
 
-没有新的 ≥95 verified positive。维持：
+```text
+physical possession/custody x = true
+ordinary use/invoke x = true
 
-```yaml
-strict_v2_verified_positive_controls: 0
-strict_v2_verified_positive_works: 0
+但
+
+target-specific lethal-harm effect against Harry = false
 ```
 
-不二审没有新证据的旧 deferred，不重复旧攻击。
+失败不是普通 capability 不足，也不是 interface causal mapping 尚未验证；最终 reality-test 已明确显示对象内部的 allegiance / true-master 机制会拒绝或反向改变该目标结果。
 
-### P3/P4 decision / execution structure
+因此新增 boundary guard：
 
-The Purge 已锁定：
+> 对象在手、能调用、普通效果可现实生效，只能锁对应 possession/use/invoke `x`；若对象内部存在 autonomous allegiance / endogenous competing execution node，则局部 use `x` 不得倒灌为 global 或 target-specific disposition/effect `x`。
+
+反向同样成立：target-specific disposition 失败，不得抹除已经现实成立的窄 possession/use/invoke `x`。
+
+该机制不同于：
+- The Dark Knight：interface possession + claimed causal mapping 尚未充分验证；
+- Frodo / One Ring：possession/use 不自动推出 destruction-disposition；
+- Otto Octavius：内生竞争节点在时间上插入造成 dynamic transition。
+
+Elder Wand 的新增价值是：**既存 object-internal execution node 也可以作为静态 x-scope 归因护栏，使同对象不同 permission/effect layer 在同窗不同步。**
+
+按同 criterion 分账：
+
+```text
+x-scope boundary
+16 controls / 13 works
+→ 17 controls / 14 independent boundary-guard works
+```
+
+《Harry Potter》虽已进入 dynamic work 集合，但此前未作为 ordinary boundary-guard work 计入该子槽；各子槽独立分账。
+
+## 3｜仍有效的近期归并
+
+### 3.1 Queeg｜realized command-node transfer
+
+```text
+actor 仍与对象共处
++ nominal title 未必即时消失
++ replacement execution node 现实接管
++ old actor 无法再让 same-layer orders final
+→ current command x contracts
+```
+
+因此 dynamic 有效层维持 `15 controls / 13 works`。
+
+### 3.2 The Purge｜shared execution ≠ joint final decision
 
 ```text
 多个主体都能触发同一系统
 ≠ joint final decision
 
-若任一授权主体都可独立让同层结果生效
+任一授权主体可独立让同层结果生效
 → shared / parallel-independent execution
 
-只有 mandatory multi-node threshold
-且单一节点不能独立使同一 final result 生效
+mandatory multi-node threshold
++ 单一节点不能独立让同一 final result 生效
 → joint-threshold
 ```
 
-Queeg 已锁定另一侧：
+因此 decision-structure calibration 有效层为 `2 controls`。
+
+### 3.3 Book of Eli｜carrier uniqueness ≠ reality-anchor uniqueness
+
+唯一 physical carrier 不等于唯一 current reality anchor；同窗存在可调用的功能等价 content anchor 时，不得把 carrier-x 与 content-zn 事后 composite bundling 成 same-object-layer strict。
+
+因此 strict-precondition 有效层为 `18 controls / 7 works`，strict verified positive 仍 `0 / 0`。
+
+### 3.4 protected-range｜mobile boundary + risk-channel split
+
+有效层维持：
 
 ```text
-actor 仍与对象共处
-+ nominal title 未必即时消失
-但 replacement node 的决定已经替代旧 actor 并进入同层 execution chain
-→ authority-specific current x 可以真实 contraction
+positive 4 / 4 works
+negative 3 / 3 works
 ```
 
-二者合并后的高信息边界是：
+锁定：
+- protected-range 可以是移动边界，不要求固定地理坐标；
+- 同一边界对一个 risk-channel 成功，不等于 all-hazard protection；
+- 必须按 risk-channel / ingress-path 分层记录。
+
+## 4｜合并后的高信息规则
 
 ```text
-execution-node topology 必须按现实生效结构记录，
-不能由参与人数、职位名称、物理在场或名义授权倒推。
+carrier uniqueness
+≠ current reality-anchor uniqueness
+
+physical presence / nominal title
+≠ current command x
+
+node-holder replacement
+≠ node-role removal
+
+shared / parallel-independent execution
+≠ joint-threshold final decision
+
+physical possession + usable interface
+≠ global target-disposition
+when object-internal execution node can refuse / redirect effect
+
+protected-range success on one risk channel
+≠ all-hazard protected-range
 ```
 
-## 4｜统计变化
+统一判断原则：
 
-本轮不新增文学案例 control；只吸收已在 main 上 evidence-lock、但尚未进入旧 registry/overview 快照的结果。
+> `x` 必须按 object × permission/effect layer × current execution topology 分账；不能由参与人数、职位名称、物理在场、作品原生 ownership/master 标签、接口持有或单一风险通道成功倒推更宽权限。
+
+## 5｜当前状态漂移 / 同步债
+
+截至本文件写入前，主中枢仍存在 L4 状态债：
+
+1. `zn-x火轴待审议清单.md` 仍登记 strict-precondition `17/6`、x-scope boundary `16/13`、dynamic `14/12`、decision calibration `1`、protected-range `3/3 + 1/1`。
+2. strict-v2 专项仍需吸收 Book of Eli 后的 `18/7`。
+3. x-scope 专项仍需吸收 Queeg `15/13`、The Purge calibration `2`、Elder Wand boundary `17/14`。
+4. 火轴研究总纲与 protected-range 专项需按本 ledger 检查并只做状态同步；不得重复增加 control。
+
+这些是 L4 registry/overview 漂移，不改变 L1/L2 canonical，也不授权修正已知 canonical 元数据债。
+
+## 6｜本轮统计变化
 
 ```yaml
 strict_positive_increment: 0
 strict_negative_increment: 0
 strict_deferred_increment: 0
-strict_precondition_increment: 0
+strict_precondition_state_sync: 17/6 -> 18/7
+
 x_scope_positive_increment: 0
-x_scope_boundary_increment: 0
-x_scope_dynamic_new_case_increment: 0
+x_scope_boundary_new_case_increment: +1_control/+1_work
+x_scope_boundary_state: 16/13 -> 17/14
 x_scope_dynamic_state_sync: 14/12 -> 15/13
-x_scope_decision_structure_new_case_increment: 0
 x_scope_decision_structure_state_sync: 1 -> 2
+
+protected_range_state_sync:
+  positive: 3/3 -> 4/4
+  negative: 1/1 -> 3/3
 ```
 
-## 5｜下一轮最高信息增益
+## 7｜下一轮最高信息增益
 
-P0 继续优先天然对象构成型 strict-v2 候选，并先冻结 carrier/content 错层、functional-equivalent anchor、competing purpose/ranking anchor 与第三方 reality anchor。
+P0 继续优先 strict-v2 第一份 verified positive，先冻结 carrier/content 错层、functional-equivalent anchor、competing purpose/ranking anchor、第三方 veto/产权/制度 competing anchor，不二审没有新证据的 deferred。
 
-若仍无 ≥95 P0，优先寻找同人物、同对象、同 permission family 的真实 execution-topology 动态迁移：
+若 P0 仍无 ≥95：
 
-```text
-shared / parallel-independent
-→ credential/access withdrawal
-→ 只剩单一 actor 可独立生效
-→ unilateral
-```
+1. 优先找 Elder Wand 的动态镜像：same actor + same object + underlying possession/use 不变，但真实 allegiance/internal-controller 迁移后 target-specific disposition/effect 从 false → true。
+2. 找真正 `shared/parallel-independent ↔ unilateral` 的 execution-node topology 动态迁移，不接受只增咨询者、只换 holder 或一次越权。
+3. 找 Queeg 的反向镜像：replacement command node 退出后，原 actor 通过 same-layer reality-test 恢复 command x。
+4. protected-range 只收新机制，优先 same actor / same boundary / same risk-channel 下 exclusion node 被撤回、破坏或耗尽造成 ON → OFF。
 
-或反向：
-
-```text
-unilateral
-→ 新 independent execution node 经 reality-test 成功
-→ shared / parallel-independent
-```
-
-要求真实权限节点迁移，不接受仅增加咨询者、仅更换名义 holder、仅改变 task-source 或仅出现一次越权。
+达到 pending-review 的槽继续停止普通正例堆料。
