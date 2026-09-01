@@ -1,227 +1,169 @@
 ---
 type: ten-yuan-fire-axis-research-record
 authority_level: L4
-knowledge_status: evidence-locked
-status: evidence-locked
+knowledge_status: superseded
+status: classification-corrected
 axis: fire
 pair: zn-x
 work: 水浒传
 character: 宋江
 stage: 第69回东平东昌自主出兵 → 第82回受招安 → 第83回奉诏征辽
-sample_type: x-scope-dynamic-contraction-control
+original_sample_type: x-scope-dynamic-contraction-control
+current_sample_type: task-source-vs-x-scope-negative-correction
 criterion_version:
   l1_axis: L1_十元即阴阳五行相反轴正本_v1.6
   x_scope_gate: current-x-scope-distinction-v1_20260830
 fact_confidence: 99
-classification_confidence: 97
+classification_confidence: 99
 zn_increment: false
 strict_increment: false
 x_scope_positive_increment: false
 x_scope_boundary_guard_increment: false
-x_scope_dynamic_transition_increment: true
-transition_direction: contraction
+x_scope_dynamic_transition_increment: false
+x_scope_dynamic_transition_work_increment: false
+supersedes_original_classification: true
 may_override_canonical: false
 created: 2026-08-30
+corrected: 2026-09-01
 ---
 
-# 运行记录｜zn-x x-scope 动态收窄｜宋江：招安前最高对外任务方向可由山寨内部形成 → 招安后保留内部调兵 x，但战争启动与任务对象改由朝廷诏令输入
+# 分类纠偏｜宋江招安前后：任务来源上移不能单独证明 x-scope 收窄
 
-## 0｜本轮问题
+## 1｜原事实保留
 
-只测同一人物、同一支梁山武装在招安前后，现实 `x` 的层级范围是否发生收窄；不研究“宋江是否失去全部兵权”，也不把招安身份变化直接当作 `x` 变化证据。
+原记录的剧情事实继续保留：
 
-核心问题：
+- 招安前，第69回东平、东昌行动由梁山内部提出并组织执行；宋江能调拨人马、亲自领军。
+- 第82回招安后，朝廷开始进入梁山军队的上位处置链。
+- 第83回征辽由皇帝正式下诏，战争对象与国家级任务启动来自朝廷；宋江仍以先锋统领原梁山军将作战。
 
-```text
-招安前：
-梁山内部可以自行决定对外军事行动对象，并由宋江组织执行
+事实置信仍为 99。纠偏只撤回旧 `x-scope contraction` 分类。
 
-招安后：
-宋江仍可统领原梁山军将、布置内部战役执行
-但最高层“是否发动国家战争 / 打谁”改由朝廷诏令输入
-```
+## 2｜为什么旧分类越界
 
-如果成立，则说明 `x` 动态迁移不仅有 expansion，也可以发生 contraction；且“低层 operational x 保留”与“高层 strategic-task x 收窄”可以同时成立。
+current `x` 的核心是：对象、资源、地盘、权限或关系真实进入“归我 / 我方掌握”边界，并体现占有、使用、调配、控制、处分、否决或排除。
 
-## 1｜剧情事实
-
-### 阶段 A｜招安前：梁山内部形成最高对外任务方向
-
-第69回攻东平、东昌前，宋江提出山寨钱粮不足，东平、东昌两府有钱粮，遂提出自己与卢俊义分别取阄，各打一府；随后由宋江传令调拨人马，亲自领军攻东平。
-
-这一窗口里，对外军事对象并不是来自朝廷或其他上位组织的任务输入，而是在梁山内部形成，并由宋江、卢俊义及众头领进入现实执行。
-
-因此可锁：
+旧记录真正观察到的是：
 
 ```text
-pre_amnesty_external_campaign_target_source = Liangshan-internal
-pre_amnesty_mountain_wide_operational_x = true
-pre_amnesty_high_level_campaign-initiation-scope = substantially internal
+招安前：最高外部任务方向由梁山内部形成
+↓
+招安后：国家级战争任务与对象由朝廷诏令输入
 ```
 
-本条不要求“宋江个人一人独裁决定全部战略”；重点只在于：最高任务方向尚未由梁山外部上位节点逐项输入。
+这首先证明的是 `task-source / direction-source / superior-input structure` 改变。
 
-### 阶段 B｜第82回：招安改变上位归属结构
+它没有单独证明：
 
-受招安后，朝廷已经尝试直接处分梁山军队的组织方式，传旨要求分开军马、各归原所；众头领对此不满，宋江出面制止并请求重新奏闻。这说明招安后原梁山内部结构并未立即完全消失，但更高层上位节点已经真实进入“军队应如何处置”的决定链。
+- 宋江个人此前拥有一个稳定、subject-specific 的“国家级战争启动处分权”；
+- 宋江此前能对同一国家战争对象拥有独立 veto / approve / target-selection permission；
+- 招安后某个已确认属于宋江的 permission 从 `true→false`；
+- 同一对象子集从宋江可调用/处分范围内被撤出；
+- mandatory veto / co-decision / credential 结构在宋江本人权限层发生明确迁移。
 
-此处只作为 transition 证据，不直接判宋江 current operational `x` 消失。
+因此：
 
-### 阶段 C｜第83回：最高战争启动与对象由朝廷诏令输入
+> **外部任务来源进入，不能自动等于主体原有 `x` 被收窄。**
 
-辽国入侵后，宿元景向皇帝建议启用宋江全伙，皇帝正式下诏，任宋江为破辽都先锋、卢俊义为副先锋，要求其率所属军将人马出征辽国。
+## 3｜对象层问题
 
-这里的关键变化是：
+旧记录把两层混在一起：
 
 ```text
-“是否发动这场国家战争”
-“战争对象是谁”
-“宋江以什么上位任务身份出征”
+A. 梁山作为相对独立组织是否自行形成最高对外方向
+B. 宋江本人对军队、战役、目标对象拥有何种 current x permission
 ```
 
-不再由梁山内部自行形成，而由皇帝诏令输入。
+A 发生变化，不足自动推出 B 的具体 permission contraction。
 
-但宋江并没有因此失去对原梁山军将的内部 operational `x`；他仍作为先锋统领所属军将进入现实作战与内部调度。
+尤其“梁山没有上级任务输入”是组织独立状态；它并不自动等于“宋江个人拥有国家战争启动权”。
 
-所以阶段 C 更准确是：
+## 4｜拿掉测试
+
+拿掉 `x-scope contraction` 假设，只保留：
 
 ```text
-internal troop command / battle execution x = retained true
-highest-level campaign initiation / target-selection scope = externally constrained / transferred upward
+政治/组织上位结构改变
+→ 朝廷开始给梁山输入最高任务
+→ 宋江保留内部调兵与战役执行
 ```
 
-## 2｜核心 x-scope 迁移
+原剧情事实仍可完整解释。
+
+因此 `x-scope contraction` 不是必要解释。
+
+## 5｜反向门
+
+只有后续材料能证明同一人物、同一对象层存在：
 
 ```text
-阶段 A｜招安前
-同一支梁山武装：
-内部可形成对外战争对象
-+ 宋江可组织调兵执行
+pre:
+宋江本人拥有稳定 campaign-initiation / target-selection / veto permission
 
-↓ 招安 + 正式纳入朝廷军政任务链
-
-阶段 B/C｜招安后
-宋江仍有内部调兵、战役执行 x
-但最高战争启动 / 任务对象
-改由朝廷诏令输入
+post:
+该 permission 被撤销、转移、增加 mandatory superior veto，或同一对象子集被真实移出其掌握范围
 ```
 
-锁定：
+才允许重新进入 `x-scope dynamic contraction`。
 
-> **`x` 可以发生 scope contraction：较宽的“最高任务方向 + 内部执行”结构，可收窄为“保留内部 operational x，但高层 campaign-initiation / target-selection x 不再归主体或原组织内部决定”。**
-
-更短：
-
-> **下层 `x` 保留 ≠ 上层 `x` 也保留。**
-
-## 3｜拿掉测试
-
-拿掉“招安后宋江完全失去兵权”这个假设，第83回宋江仍以破辽都先锋统领所属军将出征，内部 operational `x` 仍可解释，所以不能把阶段 C 写成 `x=off`。
-
-拿掉“招安后最高战争任务仍完全由梁山内部决定”这个假设，皇帝正式诏令宋江出征辽国这一事实链仍完整；因此较宽 strategic-task scope 已经发生收窄。
-
-拿掉招安与朝廷正式诏令，只保留宋江原有梁山声望和内部军令能力，不足解释为何“征辽”这一国家级任务对象会成为其当前必须接入的最高战争方向。
-
-## 4｜反向测试
-
-若招安后仍出现：
+单纯：
 
 ```text
-宋江可以不经朝廷授权
-自行决定是否发动国家战争
-自行选择对外征讨对象
-朝廷无法在该层预先设定或撤销任务
+任务由谁下达
+谁是上级
+战略方向由谁输入
 ```
 
-则不能判 high-level scope contraction。
+默认先与 direction/source/organization layer 分账，不计 x-scope。
 
-当前第83回恰好相反：战争对象与启动来自皇帝诏令。
+## 6｜与 current capability 纠偏的区别
 
-反之，如果招安后连军内调兵、战役部署都必须逐项由朝廷节点事前批准，那么 contraction 会更深，甚至可能进一步损伤内部 operational `x`；本轮没有把它扩大到这一层。
+The Martian / Jurassic Park 纠偏锁的是：
 
-## 5｜第三因素冻结
+```text
+capability delta ≠ x-boundary delta
+```
 
-- 冻结宋江“忠君”“招安理想”等人物价值判断，本轮只看权限结构变化。
-- 冻结朝廷对梁山的道德评价，只看谁能输入最高任务方向。
-- 冻结征辽成败，只看诏令是否真实进入同一支军队的当前行动链。
-- 宿元景只是建议节点，真正把任务变成现实上位输入的是皇帝诏令；不能把咨询与最终决定混同。
+本条新增的是另一种污染源：
 
-## 6｜最近邻排除
+```text
+task-source / direction-source delta ≠ x-boundary delta automatically
+```
 
-- `nx`：招安后最高任务方向由外部诏令输入，确有外部任务通道邻近；但本轮不迁移木轴语义，只用它提醒“任务来源变化”不能抹掉已经保留的火轴内部 operational `x`。
-- `xn`：军队怎么布阵、怎么执行属于运行流程，不回答谁拥有最高任务对象的决定层。
-- `z`：皇帝作为更高裁定节点是外部结构，不用于倒推宋江内部本体。
-- `zn`：本轮不新增，不从忠义、招安愿望或服从行为倒推内部原则。
+前者冻结“能不能做”；本条冻结“方向从哪里来”。
 
-## 7｜对象层纪律
+## 7｜仍成立的 x
 
-本轮始终使用同一现实主体与同一核心组织对象：宋江及原梁山军将。
+招安后宋江仍能统领原梁山军将、组织战役执行，因此至少不能写成 `x overall off`。
 
-分层记录：
+本轮不重新给其内部 operational x 扩大或缩小，只撤回“最高任务来源上移 = x-scope contraction”这一旧归因。
+
+## 8｜zn / strict-v2
+
+本轮不锁 `zn`，不启动 strict：
 
 ```yaml
-pre_amnesty:
-  high_level_campaign_initiation_scope: Liangshan-internal
-  internal_operational_x: true
-
-post_amnesty:
-  high_level_campaign_initiation_scope: court-assigned
-  campaign_target_selection_scope: court-assigned
-  internal_operational_x: retained-true
-  ultimate_independent_strategic_x: narrowed
+zn_current: not-locked
+strict_test_allowed: false
+strict_verified_positive_increment: false
+strict_deferred_increment: false
 ```
 
-不锁：
+## 9｜统计修正
 
-- 宋江招安后完全无军权；
-- 朝廷逐项控制每个战役动作；
-- 梁山所有成员完全失去共同决策能力；
-- 宋江人物整体本体发生换芯。
-
-## 8｜方法增量
-
-与既有宋江 expansion control 构成反方向：
+该旧记录原计入 current dynamic transition controls；《水浒传》仍有宋江 expansion control，因此撤销本条后：
 
 ```text
-旧控制：
-晁盖生前较窄 campaign execution x
-→ 晁盖死后更宽 mountain-wide operational x
-= scope expansion
-
-本轮：
-招安前较宽 high-level task-direction + internal operational x
-→ 招安后保留 internal operational x
-   但 high-level campaign initiation / target selection 上移至朝廷
-= scope contraction
+x_scope_dynamic_transition_controls: 12 → 11
+x_scope_dynamic_transition_works: 10 → 10
 ```
 
-因此新增纪律：
+即 `control -1 / work +0`。
 
-> **scope contraction 不等于 `x` 整体退出。权限可以在高层被收窄，同时较低层 current operational `x` 继续真实存在。**
+本文件本身不计 ordinary boundary guard，不修改 L1/L2 canonical。
 
-建议动态字段补充：
+## 10｜新增长期纪律
 
-```yaml
-scope_transition:
-  direction: expansion / contraction
-  retained_layers: 迁移后仍保留的权限层
-  lost_or_externalized_layers: 迁移后上移、外置或失去的权限层
-transition_trigger: 真实制度/组织节点
-post_transition_task_source: 迁移后最高任务来源
-```
+> **组织或任务方向的 source-node 上移，不自动等于主体 `x-scope` 收窄。必须另外证明一个已经属于主体的 permission / object subset / veto / disposition / credential / decision node 在同对象层真实发生迁移。**
 
-## 9｜成熟度
-
-```yaml
-fact_confidence: 99
-classification_confidence: 97
-knowledge_status: evidence-locked
-x_scope_dynamic_transition_increment: true
-transition_direction: contraction
-x_scope_positive_increment: false
-x_scope_boundary_guard_increment: false
-strict_increment: false
-zn_increment: false
-```
-
-本记录只作为 L4 dynamic x-scope 控制，不修改 L1、zn/x 信息卡、准度卡或任何 L2 canonical。
+> **“谁给我任务”与“哪些对象和权限归我掌握”必须分账。**
