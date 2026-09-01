@@ -51,7 +51,7 @@ historical_positive_contrasts: 1
 
 既有 **Antigone 99/98** strict-precondition guard 继续有效：独立 `zn=true`，但一次局部 burial effect 不等于 stable burial-state x；`zn=true` 不给 `x` 降门槛。strict-precondition 维持 `17/6`。
 
-本批新增 **Matt King /《The Descendants》99/98 strict-v2 negative guard**：same window / same object layer 下 `zn=true`、sole-trustee disposition `x=true`，且 `x→zn=true`；但拿掉被测 preservation zn 后，fiduciary duty、beneficiary interests/preferences、trust dissolution 与 financial/admin standards 仍为 x 提供清楚的用途、放弃与排序标准，因此 `zn→x=false`。锁：**true zn + true x + natural single asset pool ≠ strict；x 端 competing purpose/ranking anchor 同样必须冻结。** 该作品为 strict-negative 新 independent work，故 `6/3 → 7/4`。
+既有 **Matt King /《The Descendants》99/98 strict-v2 negative guard** 继续有效：same window / same object layer 下 `zn=true`、sole-trustee disposition `x=true`，且 `x→zn=true`；但拿掉被测 preservation zn 后，fiduciary duty、beneficiary interests/preferences、trust dissolution 与 financial/admin standards 仍为 x 提供清楚的用途、放弃与排序标准，因此 `zn→x=false`。锁：**true zn + true x + natural single asset pool ≠ strict；x 端 competing purpose/ranking anchor 同样必须冻结。** strict-negative 维持 `7/4`。
 
 ### A6｜lifecycle
 `3 positive / 3 works + 2 negative guards / 2 works / pending-review`
@@ -73,7 +73,7 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 16
 x_scope_boundary_guard_works: 13
-x_scope_dynamic_transition_controls: 12
+x_scope_dynamic_transition_controls: 11
 x_scope_dynamic_transition_works: 10
 x_scope_decision_structure_calibration_controls: 1
 knowledge_status: pending-review
@@ -94,19 +94,23 @@ pending_review: true
 #### decision-structure 判据校准｜1 control｜不计 ordinary works
 多数阈值型结构校准继续有效：individual same-layer veto 是 genuine joint 的充分证据之一但不是必要条件；mandatory multi-node approval threshold 且任何单一节点不能独立让同一 final decision 生效，也可判 `joint-threshold`。
 
-#### 动态迁移控制｜12 controls / 10 works
-既有8条继续有效：宋江 expansion、宋江 contraction、王熙凤 contraction、唐僧 expansion、刘备 expansion、Palpatine joint-threshold→unilateral-on-delegated-scope、Dumbledore external-superior-override insertion→scope contraction、Grimmauld Fidelius permission-type expansion + single gate→parallel independent disclosure gates。
+#### 动态迁移控制｜11 controls / 10 works
+当前有效的既有7条：宋江 expansion、王熙凤 contraction、唐僧 expansion、刘备 expansion、Palpatine joint-threshold→unilateral-on-delegated-scope、Dumbledore external-superior-override insertion→scope contraction、Grimmauld Fidelius permission-type expansion + single gate→parallel independent disclosure gates。
 
-本批新增四条同 criterion 新作品：
+另有四条同 criterion 新机制继续有效：
 
 - **Otto Octavius / Spider-Man 2｜99/98**：inhibitor chip 损坏后，Otto 保留 substantial use/local command，但机械臂新增 independent execution 与 reverse influence；`broad unilateral/exclusive control → contested/bidirectional structure`。锁 **endogenous competing-execution-node insertion**；不是 `x overall off`。
 - **Ellen Ripley / Alien (1979)｜99/99**：同一 self-destruct process 上 `revoke=true → five-minute deadline → revoke=false`，actor/title/object 不变；锁 **time-lock revocability contraction**，`permission existence ≠ permission persistence across time`。
 - **Eduardo Saverin / The Social Network｜99/98**：同一 Facebook equity object、同一 ownership/equity permission family 经 selective capitalization 从 `34.4% → 0.03%`；锁 **quantitative scope contraction**，可分割资产的 `x` 不能只写 true/false。
 - **Marko Ramius / The Hunt for Red October｜99/98**：同一 ballistic-missile arming authorization gate，政治委员独立持第二把 key 时为 mandatory 2-of-2 joint threshold；节点退出并由 Ramius 集中第二 credential 后，被测 authorization-interface 变为 single-actor possession。锁 **co-decision-node removal by mandatory-credential consolidation**；但 downstream arming/launch 未 reality-test，不倒灌 final launch disposition。
 
-四部作品此前未进入 current dynamic-work 集合，因此：`8 controls / 6 works → 12 controls / 10 independent works`。
+本批 adversarial audit 撤回 **宋江招安后 contraction**：旧证据只证明 `task-source / direction-source` 从梁山内部转为朝廷诏令输入，没有 ≥95 证据证明同一对象层某项已确认 permission 被撤回、对象子集移出、mandatory veto 插入、credential 被收走或 final-decision gate 转移。因此 `12 controls / 10 works → 11 controls / 10 works`；《水浒传》仍由宋江 expansion 留在 work 集合，work 不减。
 
-方法分账新增：
+同时两条旧 dynamic 经污染压力测试保留，但不新增 ordinary control：
+- **刘备领徐州 expansion 保留**：被推举/受牌印不是最终证据；后续实际持有治理 credential，并以 current holder 身份现实发起同一治理对象的再转移，说明 accepted conferral 已进入 realized current x。
+- **Dumbledore contraction 保留**：教育令前已有现实 override effect-test；教育令后同一 punishment/final-authority family 被 High Inquisitor 明确重分配，因此不是只换名义 source/title。
+
+方法分账继续：
 
 ```text
 retained use/command
@@ -121,6 +125,12 @@ divisible-asset ownership x
 all mandatory credentials co-located
 can change authorization decision structure
 ≠ downstream effect already verified
+
+task-source / direction-source delta
+≠ x-boundary delta automatically
+
+nominal conferral / title / authorization
+≠ realized current x automatically
 ```
 
 ### A11｜protected-range risk-test｜current v1
@@ -177,7 +187,7 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 16
 x_scope_boundary_guard_works: 13
-x_scope_dynamic_transition_controls: 12
+x_scope_dynamic_transition_controls: 11
 x_scope_dynamic_transition_works: 10
 x_scope_decision_structure_calibration_controls: 1
 x_scope_knowledge_status: pending-review
@@ -247,6 +257,10 @@ pending_review_count: 11
 34. protected-range 同样执行 criterion_version 分账。
 35. `zn=true` 不给 `x` 降门槛；一次由 zn 驱动的现实 effect ≠ stable x。
 36. evidence-locked 可被 adversarial audit 撤回。
+37. technical capability / performance / discoverability / bandwidth delta ≠ x-boundary delta automatically；能力变化必须与 permission/node/scope 变化分账。
+38. task-source / direction-source / organization-independence delta ≠ x-boundary delta automatically；必须另证 permission true↔false、对象子集迁移、mandatory veto、credential 或 final-decision gate 变化。
+39. nominal conferral / title / authorization ≠ realized current x automatically；accepted conferral 需要同对象层 reality effect 才能锁 current x。
+40. 反向审计允许旧 dynamic 被撤回，也允许经 reality-effect 压力测试后保留；保留/撤回都不得重复增加 ordinary control。
 
 ## D｜当前高价值缺口
 
@@ -256,7 +270,7 @@ pending_review_count: 11
 4. **P3：内生 competing-node 镜像。** 竞争执行节点被移除/重新抑制后，exclusive/final control 是否从 contested 恢复为稳定 unilateral。
 5. **P4：time-lock 镜像。** 同一 permission 从 false 经真实 unlock/cooling-off/credential node 首次变成 revoke/veto true。
 6. **P5：quantitative scope 镜像。** 同一 divisible asset pool 由窄→宽；更高价值是份额跨真实 threshold 后 veto/disposition permission 离散切换。
-7. **P6：permission/source dynamic。** `possession/use→disposition`、`start→termination`、competing anchor 退出后 one-shot→stable repeated x。
+7. **P6：permission/source dynamic。** `possession/use→disposition`、`start→termination`、competing anchor 退出后 one-shot→stable repeated x；继续优先审计 task-source / nominal-title 污染，不再把方向来源变化当权限迁移。
 8. deferred 只在新证据出现时复审。
 
 ## E｜pending-review 索引｜11条
