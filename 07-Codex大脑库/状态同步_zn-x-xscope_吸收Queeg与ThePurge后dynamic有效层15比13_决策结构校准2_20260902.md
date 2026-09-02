@@ -16,13 +16,13 @@ fact_confidence: 99
 classification_confidence: 99
 ---
 
-# 状态同步｜zn ↔ x 当前 evidence ledger｜Queeg、The Purge、Book of Eli、protected-range、Elder Wand
+# 状态同步｜zn ↔ x 当前 evidence ledger｜吸收 WALL-E、Truman、WarGames、Gandalf、Pacific Rim
 
 ## 0｜启动对齐
 
-本轮以最新 main 为准，重读 L0/L1 门禁、L1 十元—五行正本 v1.6、zn/x 信息卡与准度路由、`zn补x`、火轴待审议清单、火轴研究总纲、strict-v2 专项、x-scope 专项、protected-range 专项、最近运行记录与 commits。current canonical 高于本文件；木轴 `zx↔nx` 只迁移验证方法，不迁移理论结论。
+本轮以最新 `main@5d3ea1e854c6cb0f04b3cf1ff97810c146618541` 为写前真值，重读 L0/L1 门禁、L1 十元—五行正本 v1.6、zn/x 信息卡与准度路由、`zn补x`、火轴待审议清单、火轴研究总纲、strict-v2 专项、x-scope 专项、protected-range 专项、最近运行记录与 commits。current canonical 高于本文件；木轴 `zx↔nx` 只迁移验证方法，不迁移理论结论。
 
-本轮没有达到 ≥95 且能新增机制的 strict-v2 verified positive，不为破零降低门槛；已 pending-review 的 ordinary positive 槽继续停止堆量。
+本轮没有出现 ≥95 的 strict-v2 verified positive；已 pending-review 的普通正例槽继续停止堆量。本轮只吸收新机制、判据校准、前置护栏与状态漂移。
 
 ## 1｜current effective evidence-layer
 
@@ -34,18 +34,18 @@ strict_v2_deferred_former_positive_controls: 4
 strict_v2_deferred_former_positive_works: 4
 strict_v2_negative_guards: 7
 strict_v2_negative_guard_works: 4
-strict_precondition_guards: 18
-strict_precondition_guard_works: 7
+strict_precondition_guards: 19
+strict_precondition_guard_works: 8
 strict_canonical_calibration_controls: 3
 
 x_scope_current_criterion: current-x-scope-distinction-v1_20260830
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 17
-x_scope_boundary_guard_works: 14
-x_scope_dynamic_transition_controls: 15
-x_scope_dynamic_transition_works: 13
-x_scope_decision_structure_calibration_controls: 2
+x_scope_boundary_guards: 18
+x_scope_boundary_guard_works: 15
+x_scope_dynamic_transition_controls: 17
+x_scope_dynamic_transition_works: 15
+x_scope_decision_structure_calibration_controls: 3
 x_scope_knowledge_status: pending-review
 
 protected_range_current_criterion: protected-range-risk-test-v1_20260831
@@ -58,162 +58,173 @@ protected_range_knowledge_status: pending-review
 pending_review_count: 11
 ```
 
-## 2｜本轮真正新增：Elder Wand object-internal execution-node guard
+## 2｜本批新资产归并
 
-`7b42c3d9469d932e273b7fb11c50e642b820eb60` 已 evidence-lock Voldemort / Elder Wand 新机制。
+### 2.1 WALL-E｜endogenous override removal → tested execution restoration
 
-同一 current window、同一对象上：
+Captain 对 Axiom 返航决定在 AUTO/A113 同层 override 下无法现实生效；切至 MANUAL 后，AUTO 竞争执行节点被移除，植物进入 Holo-Detector 后返航现实执行。
+
+锁：
 
 ```text
-physical possession/custody x = true
-ordinary use/invoke x = true
-
-但
-
-target-specific lethal-harm effect against Harry = false
+contested / override-dominated current x
+→ endogenous competing override node removed
+→ tested unilateral execution restoration
 ```
 
-失败不是普通 capability 不足，也不是 interface causal mapping 尚未验证；最终 reality-test 已明确显示对象内部的 allegiance / true-master 机制会拒绝或反向改变该目标结果。
+这是 Otto Octavius `endogenous competing node insertion` 的方向镜像，不是名义 captain 身份变化，也不是单纯能力增强。
 
-因此新增 boundary guard：
+计入 dynamic：`15/13 → 16/14`。
 
-> 对象在手、能调用、普通效果可现实生效，只能锁对应 possession/use/invoke `x`；若对象内部存在 autonomous allegiance / endogenous competing execution node，则局部 use `x` 不得倒灌为 global 或 target-specific disposition/effect `x`。
+### 2.2 The Truman Show｜environment-management x ≠ person-disposition/veto x
 
-反向同样成立：target-specific disposition 失败，不得抹除已经现实成立的窄 possession/use/invoke `x`。
+Christof 对 Seahaven/studio environment 的天气、演员、交通、搜索和基础设施有广泛现实管理 `x`，甚至能制造致命风暴；但 Truman 最终仍能自行穿过 EXIT 离开，没有 reality-tested 的 person-level final-exit veto。
 
-该机制不同于：
-- The Dark Knight：interface possession + claimed causal mapping 尚未充分验证；
-- Frodo / One Ring：possession/use 不自动推出 destruction-disposition；
-- Otto Octavius：内生竞争节点在时间上插入造成 dynamic transition。
-
-Elder Wand 的新增价值是：**既存 object-internal execution node 也可以作为静态 x-scope 归因护栏，使同对象不同 permission/effect layer 在同窗不同步。**
-
-按同 criterion 分账：
+锁：
 
 ```text
-x-scope boundary
-16 controls / 13 works
-→ 17 controls / 14 independent boundary-guard works
+environment-management x
+≠ person-disposition / final-exit veto x
 ```
 
-《Harry Potter》虽已进入 dynamic work 集合，但此前未作为 ordinary boundary-guard work 计入该子槽；各子槽独立分账。
+同一场景内对象 A 的宽管理范围不得倒灌到对象 B 的人身最终处分层。
 
-## 3｜仍有效的近期归并
+计入 ordinary boundary guard：`17/14 → 18/15`。
 
-### 3.1 Queeg｜realized command-node transfer
+### 2.3 WarGames｜joint execution threshold ≠ joint final decision
+
+两名 missile officers 必须同步转动各自 launch key，任一拒绝都会阻断发射；但 strategic launch order 在上游已形成并认证，两人没有共同生成该 final decision。
+
+锁：
 
 ```text
-actor 仍与对象共处
-+ nominal title 未必即时消失
-+ replacement execution node 现实接管
-+ old actor 无法再让 same-layer orders final
-→ current command x contracts
+mandatory 2-of-2 execution threshold
+≠ joint final decision automatically
 ```
 
-因此 dynamic 有效层维持 `15 controls / 13 works`。
-
-### 3.2 The Purge｜shared execution ≠ joint final decision
+以后必须把：
 
 ```text
-多个主体都能触发同一系统
+source decision
+final decision
+execution threshold
+```
+
+三层分账。WarGames 只新增 decision/execution 判据校准，不计 ordinary positive/guard。
+
+decision-structure calibration：`2 → 3 controls`。
+
+### 2.4 Gandalf / One Ring｜acquisition opportunity + transient contact ≠ current x
+
+Gandalf 曾短暂接触/拿取至尊魔戒完成辨识，且 Frodo 明确愿意把戒指交给他；但 Gandalf 因独立反支配原则主动拒绝接受，stable possession/custody/use/disposition 从未形成。
+
+锁：
+
+```text
+acquisition opportunity
++ offered transfer
++ transient contact
+≠ realized current x
+```
+
+同时说明强 `zn=true` 不能把“可取得但主动拒绝取得”补写成 `x=true`。
+
+该机制与 Antigone 的“一次局部 effect ≠ stable x”不同，新增信息是 **未接受的可取得机会不属于 current permission bundle**。
+
+strict-precondition：`18/7 → 19/8`；strict verified positive 仍 `0/0`。
+
+### 2.5 Pacific Rim｜joint → emergency unilateral → joint execution topology
+
+同一 Raleigh、同一 Gipsy Danger、同一 movement/combat-control permission family：
+
+```text
+Raleigh + Yancy joint execution
+→ Yancy 被现实移除
+→ Raleigh solo movement/combat reality-effect 成立
+→ later Raleigh + Mako joint execution restored
+```
+
+锁：
+
+```text
+joint execution
+→ unilateral emergency execution
+→ joint execution restoration
+```
+
+这里变的是 current execution topology，不是 actor 能力强弱，也不是对象归属。与 Ramius 的 credential concentration 不同：Pacific Rim 直接测试同一对象的实际 movement/combat execution effect。
+
+计入 dynamic：`16/14 → 17/15`。
+
+## 3｜本轮合并后的高信息规则
+
+```text
+acquisition opportunity / offered transfer / transient contact
+≠ current realized x
+
+environment-management x
+≠ person-disposition / final-exit veto x
+
+mandatory joint execution threshold
 ≠ joint final decision
 
-任一授权主体可独立让同层结果生效
-→ shared / parallel-independent execution
+competing execution node insertion
+and competing execution node removal
+must be treated as opposite dynamic mechanisms
 
-mandatory multi-node threshold
-+ 单一节点不能独立让同一 final result 生效
-→ joint-threshold
+joint execution topology
+can migrate to unilateral execution and later restore to joint
+without changing actor identity or object identity
 ```
 
-因此 decision-structure calibration 有效层为 `2 controls`。
+统一方法继续收束为：
 
-### 3.3 Book of Eli｜carrier uniqueness ≠ reality-anchor uniqueness
+> `x` 按 `object × permission/effect layer × current execution topology × time window` 分账；source authority、参与人数、接口持有、可取得机会、环境控制、执行阈值、名义身份都不能跨层倒灌。
 
-唯一 physical carrier 不等于唯一 current reality anchor；同窗存在可调用的功能等价 content anchor 时，不得把 carrier-x 与 content-zn 事后 composite bundling 成 same-object-layer strict。
+## 4｜去重与不计项
 
-因此 strict-precondition 有效层为 `18 controls / 7 works`，strict verified positive 仍 `0 / 0`。
+- WALL-E 不重复计 Otto 的“内生竞争节点”静态/插入机制；新增的是 **override removal → reality-tested restoration** 的反向动态。
+- WarGames 不计 ordinary joint positive；其信息增益仅是 **joint execution ≠ joint final decision**。
+- Gandalf 不计 x-scope ordinary guard，避免与既有 transient opportunity / local effect 护栏重复；只计 strict-precondition，因为新增信息是 **强 zn + 可取得机会仍不能绕过 x 独立过门**。
+- Pacific Rim 不与 Ramius credential concentration 合并：前者有 actual execution topology reality-test，后者只锁 authorization-interface。
+- protected-range 本批无新 current-v1 机制，维持 `4/4 positive + 3/3 negative`。
 
-### 3.4 protected-range｜mobile boundary + risk-channel split
+## 5｜当前主中枢同步债
 
-有效层维持：
+当前 `zn-x火轴待审议清单.md`、strict-v2 专项、x-scope 专项、火轴研究总纲仍落后于本 evidence-layer。写前主中枢仍分别登记约：
 
 ```text
-positive 4 / 4 works
-negative 3 / 3 works
+strict-precondition 17/6
+x-scope boundary   16/13
+x-scope dynamic    14/12
+decision calibration 1
+protected-range    3/3 + 1/1
 ```
 
-锁定：
-- protected-range 可以是移动边界，不要求固定地理坐标；
-- 同一边界对一个 risk-channel 成功，不等于 all-hazard protection；
-- 必须按 risk-channel / ingress-path 分层记录。
-
-## 4｜合并后的高信息规则
+而 current evidence-layer 已为：
 
 ```text
-carrier uniqueness
-≠ current reality-anchor uniqueness
-
-physical presence / nominal title
-≠ current command x
-
-node-holder replacement
-≠ node-role removal
-
-shared / parallel-independent execution
-≠ joint-threshold final decision
-
-physical possession + usable interface
-≠ global target-disposition
-when object-internal execution node can refuse / redirect effect
-
-protected-range success on one risk channel
-≠ all-hazard protected-range
+strict-precondition 19/8
+x-scope boundary   18/15
+x-scope dynamic    17/15
+decision calibration 3
+protected-range    4/4 + 3/3
 ```
 
-统一判断原则：
+这些是 L4 registry/overview 状态漂移，不改变 L1/L2 canonical。下一次安全全文同步窗口应一次性更新待审议清单、strict 专项、x-scope 专项与研究总纲；不得把本文件的状态同步再次当作新 control 重复累计。
 
-> `x` 必须按 object × permission/effect layer × current execution topology 分账；不能由参与人数、职位名称、物理在场、作品原生 ownership/master 标签、接口持有或单一风险通道成功倒推更宽权限。
+已知 canonical 元数据债继续只登记：L1 v1.6 明确 `x=阴火`，历史 `x信息量卡v2` frontmatter 的旧元素标记仍需授权修正；L4 不越权。
 
-## 5｜当前状态漂移 / 同步债
+## 6｜下一批最高信息增益
 
-截至本文件写入前，主中枢仍存在 L4 状态债：
-
-1. `zn-x火轴待审议清单.md` 仍登记 strict-precondition `17/6`、x-scope boundary `16/13`、dynamic `14/12`、decision calibration `1`、protected-range `3/3 + 1/1`。
-2. strict-v2 专项仍需吸收 Book of Eli 后的 `18/7`。
-3. x-scope 专项仍需吸收 Queeg `15/13`、The Purge calibration `2`、Elder Wand boundary `17/14`。
-4. 火轴研究总纲与 protected-range 专项需按本 ledger 检查并只做状态同步；不得重复增加 control。
-
-这些是 L4 registry/overview 漂移，不改变 L1/L2 canonical，也不授权修正已知 canonical 元数据债。
-
-## 6｜本轮统计变化
-
-```yaml
-strict_positive_increment: 0
-strict_negative_increment: 0
-strict_deferred_increment: 0
-strict_precondition_state_sync: 17/6 -> 18/7
-
-x_scope_positive_increment: 0
-x_scope_boundary_new_case_increment: +1_control/+1_work
-x_scope_boundary_state: 16/13 -> 17/14
-x_scope_dynamic_state_sync: 14/12 -> 15/13
-x_scope_decision_structure_state_sync: 1 -> 2
-
-protected_range_state_sync:
-  positive: 3/3 -> 4/4
-  negative: 1/1 -> 3/3
-```
-
-## 7｜下一轮最高信息增益
-
-P0 继续优先 strict-v2 第一份 verified positive，先冻结 carrier/content 错层、functional-equivalent anchor、competing purpose/ranking anchor、第三方 veto/产权/制度 competing anchor，不二审没有新证据的 deferred。
+P0：strict-v2 第一份 verified positive 仍未出现，不降门槛。优先寻找天然单一对象层、stable subject-specific x、独立 zn、同窗双向缺口都能过门，并先冻结 functional-equivalent anchor、competing purpose/ranking anchor 与第三方 veto/产权/制度节点。
 
 若 P0 仍无 ≥95：
 
-1. 优先找 Elder Wand 的动态镜像：same actor + same object + underlying possession/use 不变，但真实 allegiance/internal-controller 迁移后 target-specific disposition/effect 从 false → true。
-2. 找真正 `shared/parallel-independent ↔ unilateral` 的 execution-node topology 动态迁移，不接受只增咨询者、只换 holder 或一次越权。
-3. 找 Queeg 的反向镜像：replacement command node 退出后，原 actor 通过 same-layer reality-test 恢复 command x。
-4. protected-range 只收新机制，优先 same actor / same boundary / same risk-channel 下 exclusion node 被撤回、破坏或耗尽造成 ON → OFF。
+1. 找 Pacific Rim 的反向最小差异：同一对象同一 permission family，joint topology 中任一单 actor 都不能 reality-effect；随后 mandatory co-execution node 被制度/技术删除，才首次形成稳定 unilateral execution。
+2. 找 WALL-E 的失败镜像：competing override node 被名义关闭，但 same-layer reality-effect 仍无法恢复，区分“节点看似退出”与“现实恢复”。
+3. 找 Truman 的最小差异：environment-control 之外，主体另有独立 person-level pre-effect veto，验证何时 environment-management 与 person-disposition 可同时成立但仍需分账。
+4. protected-range 只收同边界、同 risk-channel 的 ON→OFF 或 OFF→ON 动态，不再堆普通安全屋。
+5. deferred 只在出现新证据时二审，不重复旧攻击。
 
-达到 pending-review 的槽继续停止普通正例堆料。
+达到 pending-review 的普通正例槽继续停止堆料。
