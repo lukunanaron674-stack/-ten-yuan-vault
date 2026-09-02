@@ -16,13 +16,15 @@ fact_confidence: 99
 classification_confidence: 99
 ---
 
-# 状态同步｜zn ↔ x 当前 evidence ledger｜吸收 WALL-E、Truman、WarGames、Gandalf、Pacific Rim
+# 状态同步｜zn ↔ x 当前 evidence ledger｜吸收凭证补全、撤权传播、凭证冗余与现实接口否决
 
 ## 0｜启动对齐
 
-本轮以最新 `main@5d3ea1e854c6cb0f04b3cf1ff97810c146618541` 为写前真值，重读 L0/L1 门禁、L1 十元—五行正本 v1.6、zn/x 信息卡与准度路由、`zn补x`、火轴待审议清单、火轴研究总纲、strict-v2 专项、x-scope 专项、protected-range 专项、最近运行记录与 commits。current canonical 高于本文件；木轴 `zx↔nx` 只迁移验证方法，不迁移理论结论。
+本轮以最新 `main@02c05dfecac5d4096ff6efc5c3509c9a4ac1eaf1` 为写前真值，重读 L0/L1 门禁、L1 十元—五行正本 v1.6、zn/x current 信息卡与准度路由、`zn补x`、火轴待审议清单、火轴研究总纲、strict-v2 专项、x-scope 专项、protected-range 专项、最近运行记录与 commits。current canonical 高于本文件；木轴 `zx↔nx` 只迁移验证方法，不迁移理论结论。
 
-本轮没有出现 ≥95 的 strict-v2 verified positive；已 pending-review 的普通正例槽继续停止堆量。本轮只吸收新机制、判据校准、前置护栏与状态漂移。
+L1 current 继续明确：火＝阳火 `zn` ↔ 阴火 `x`，主题领域＝本体；L1 不直接定义单条 strict 补关系、案例动态迁移或置信度。历史 `x信息量卡v2` frontmatter 的 `element: 阴水` 仍是已知 canonical 元数据债，本轮只登记，不越权改 L2。
+
+本轮没有出现 ≥95 的 strict-v2 verified positive；已 pending-review 的普通正例槽继续停止堆量。本轮只吸收最近约4小时新增的 credential / access / reality-interface 高信息边界，并把此前已 evidence-locked 但本 ledger 尚未吸收的 Samwise、Crimson Tide 与 protected-range dynamic 状态一并归账，不重复计 control。
 
 ## 1｜current effective evidence-layer
 
@@ -41,10 +43,10 @@ strict_canonical_calibration_controls: 3
 x_scope_current_criterion: current-x-scope-distinction-v1_20260830
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 18
-x_scope_boundary_guard_works: 15
-x_scope_dynamic_transition_controls: 17
-x_scope_dynamic_transition_works: 15
+x_scope_boundary_guards: 21
+x_scope_boundary_guard_works: 18
+x_scope_dynamic_transition_controls: 20
+x_scope_dynamic_transition_works: 18
 x_scope_decision_structure_calibration_controls: 3
 x_scope_knowledge_status: pending-review
 
@@ -53,145 +55,172 @@ protected_range_v1_verified_positive_controls: 4
 protected_range_v1_verified_positive_works: 4
 protected_range_v1_verified_negative_guards: 3
 protected_range_v1_verified_negative_guard_works: 3
+protected_range_v1_dynamic_controls: 1
+protected_range_v1_dynamic_works: 1
 protected_range_knowledge_status: pending-review
 
 pending_review_count: 11
 ```
 
-## 2｜本批新资产归并
+## 2｜此前已锁但本 ledger 尚未吸收的状态
 
-### 2.1 WALL-E｜endogenous override removal → tested execution restoration
+### 2.1 Samwise / One Ring｜temporary custody/use → return
 
-Captain 对 Axiom 返航决定在 AUTO/A113 同层 override 下无法现实生效；切至 MANUAL 后，AUTO 竞争执行节点被移除，植物进入 Holo-Detector 后返航现实执行。
+同一对象层形成：
+
+```text
+OFF
+→ temporary realized custody/use x ON
+→ voluntary return
+→ OFF
+```
+
+锁：future return obligation / non-owner status 不抹掉期间已经 reality-tested 的 current x；历史真实持有也不能倒灌成返还后的 current x 继续为 true。
+
+计入 dynamic：`17/15 → 18/16`。
+
+### 2.2 Crimson Tide / Ramsey｜third-party-mediated command reacquisition
+
+Ramsey 的 operational command 经解除并替换后从 ON→OFF；忠诚军官帮助夺回控制室后，只有在 Ramsey 本人重新成为 current reality-effective command node 时才恢复 ON。
 
 锁：
 
 ```text
-contested / override-dominated current x
-→ endogenous competing override node removed
-→ tested unilateral execution restoration
+third-party causal help in reacquisition
+≠ current x attribution to the helper
+≠ automatic restoration to former holder
 ```
 
-这是 Otto Octavius `endogenous competing node insertion` 的方向镜像，不是名义 captain 身份变化，也不是单纯能力增强。
+迁移完成后仍须看谁成为同层现实有效节点。
 
-计入 dynamic：`15/13 → 16/14`。
+计入 dynamic：`18/16 → 19/17`。
 
-### 2.2 The Truman Show｜environment-management x ≠ person-disposition/veto x
+### 2.3 The Martian｜protected-range ON→OFF→ON
 
-Christof 对 Seahaven/studio environment 的天气、演员、交通、搜索和基础设施有广泛现实管理 `x`，甚至能制造致命风暴；但 Truman 最终仍能自行穿过 EXIT 离开，没有 reality-tested 的 person-level final-exit veto。
+同一 Hab、同一主体、同一 Mars 环境风险通道，Watney 的 Hab use/management/repair x 保留，但 pressure boundary 经 sealed→breach→repaired，使 protected-range predicate 发生 ON→OFF→ON。
+
+锁：underlying management/use x retained ≠ protected-range predicate 必然持续成立。
+
+protected-range dynamic：`0/0 → 1/1`；positive `4/4`、negative `3/3` 不重复累计。
+
+## 3｜最近约4小时新增资产归并
+
+### 3.1 Mission: Impossible – Ghost Protocol｜credential completion → tested permission expansion
+
+Hendricks 已持 launch-control device，但缺 active launch codes 时只能锁 partial interface/contact x，不能锁 launch invocation；取得真实 codes 后，同一 launch chain 现实让潜艇发射导弹。
 
 锁：
 
 ```text
-environment-management x
-≠ person-disposition / final-exit veto x
+partial interface possession
++ missing mandatory credential
+≠ target permission x
+
+credential completion
++ same-layer reality-test success
+→ permission expansion can be counted
 ```
 
-同一场景内对象 A 的宽管理范围不得倒灌到对象 B 的人身最终处分层。
+同一记录明确不把 launch 成功倒灌成 abort/terminate permission。
 
-计入 ordinary boundary guard：`17/14 → 18/15`。
+计入 dynamic：`19/17 → 20/18`。
 
-### 2.3 WarGames｜joint execution threshold ≠ joint final decision
+### 3.2 Minority Report｜upstream adverse status / nominal revocation ≠ propagated access-x contraction
 
-两名 missile officers 必须同步转动各自 launch key，任一拒绝都会阻断发射；但 strategic launch order 在上游已形成并认证，两人没有共同生成该 final decision。
+Anderton 已成为 PreCrime 追捕对象，正常职务/组织状态已失去可靠性；但其旧视网膜 credential 仍被 Precog Temple scanner 现实接受并成功进入。
 
 锁：
 
 ```text
-mandatory 2-of-2 execution threshold
-≠ joint final decision automatically
+upstream adverse status / source authorization loss
+≠ downstream current access permission already OFF
 ```
 
-以后必须把：
+只有撤权真实传播到被测 credential / interface，并使同层 access effect 失败，才能把该 access-x 判为 contraction。
 
-```text
-source decision
-final decision
-execution threshold
-```
+计入 ordinary boundary：`18/15 → 19/16`。
 
-三层分账。WarGames 只新增 decision/execution 判据校准，不计 ordinary positive/guard。
+### 3.3 Captain America: The Winter Soldier｜partial credential revocation ≠ whole permission layer OFF
 
-decision-structure calibration：`2 → 3 controls`。
-
-### 2.4 Gandalf / One Ring｜acquisition opportunity + transient contact ≠ current x
-
-Gandalf 曾短暂接触/拿取至尊魔戒完成辨识，且 Frodo 明确愿意把戒指交给他；但 Gandalf 因独立反支配原则主动拒绝接受，stable possession/custody/use/disposition 从未形成。
+Fury 的 password 和主 retinal credential 已被 HYDRA/Pierce 清除，但独立第二 retinal credential 仍满足同一 Alpha-level 双节点门槛，系统现实返回 `Alpha Level confirmed / Encryption code accepted / Safeguards removed`。
 
 锁：
 
 ```text
-acquisition opportunity
-+ offered transfer
-+ transient contact
-≠ realized current x
+one credential revoked
+≠ permission layer OFF
+when independent redundant credential still satisfies the same mandatory gate
 ```
 
-同时说明强 `zn=true` 不能把“可取得但主动拒绝取得”补写成 `x=true`。
+因此 credential set 必须按：被撤节点、保留节点、门槛结构、现实 effect 分账；不能从 partial revocation 自动推出 whole-x contraction。
 
-该机制与 Antigone 的“一次局部 effect ≠ stable x”不同，新增信息是 **未接受的可取得机会不属于 current permission bundle**。
+计入 ordinary boundary：`19/16 → 20/17`。
 
-strict-precondition：`18/7 → 19/8`；strict verified positive 仍 `0/0`。
+### 3.4 Jurassic Park / Ray Arnold｜operational position / console contact ≠ current security x
 
-### 2.5 Pacific Rim｜joint → emergency unilateral → joint execution topology
-
-同一 Raleigh、同一 Gipsy Danger、同一 movement/combat-control permission family：
-
-```text
-Raleigh + Yancy joint execution
-→ Yancy 被现实移除
-→ Raleigh solo movement/combat reality-effect 成立
-→ later Raleigh + Mako joint execution restored
-```
+Arnold 坐在主控台、承担恢复责任、能提交 access command，但同一 main-security interface 连续返回 `PERMISSION DENIED`，Nedry 的 white-rabbit lockout 作为现实同层阻断节点仍在生效。
 
 锁：
 
 ```text
-joint execution
-→ unilateral emergency execution
-→ joint execution restoration
+operational position
++ responsibility
++ console contact/use
++ submit command
+≠ current main-security permission x
 ```
 
-这里变的是 current execution topology，不是 actor 能力强弱，也不是对象归属。与 Ramius 的 credential concentration 不同：Pacific Rim 直接测试同一对象的实际 movement/combat execution effect。
+这里不能以“他是系统工程师/应该有权限”覆盖现实接口否决；current permission 必须以同层 effect-test 为准。
 
-计入 dynamic：`16/14 → 17/15`。
+计入 ordinary boundary：`20/17 → 21/18`。
 
-## 3｜本轮合并后的高信息规则
+## 4｜本轮合并后的高信息规则
+
+最近四条围绕同一个核心问题形成了一个更完整的 credential / permission 四联控制：
 
 ```text
-acquisition opportunity / offered transfer / transient contact
-≠ current realized x
+A. credential incomplete + target effect blocked
+   → partial interface x ≠ target permission x
 
-environment-management x
-≠ person-disposition / final-exit veto x
+B. upstream/source status revoked but downstream credential still works
+   → source revocation ≠ propagated permission contraction
 
-mandatory joint execution threshold
-≠ joint final decision
+C. one credential revoked but redundant credential still satisfies gate
+   → partial credential revocation ≠ whole permission-layer OFF
 
-competing execution node insertion
-and competing execution node removal
-must be treated as opposite dynamic mechanisms
-
-joint execution topology
-can migrate to unilateral execution and later restore to joint
-without changing actor identity or object identity
+D. actor is at console / responsible for system but interface denies effect
+   → operational position ≠ current permission x
 ```
 
-统一方法继续收束为：
+统一判断顺序：
 
-> `x` 按 `object × permission/effect layer × current execution topology × time window` 分账；source authority、参与人数、接口持有、可取得机会、环境控制、执行阈值、名义身份都不能跨层倒灌。
+```text
+source/status
+→ credential set
+→ mandatory threshold
+→ current interface acceptance/denial
+→ realized same-layer effect
+→ permission-layer attribution
+```
 
-## 4｜去重与不计项
+禁止反向偷步：不能只凭 title、责任、上游撤权、单一 credential 丢失、设备在手或操作机会直接判整个 `x` ON/OFF。
 
-- WALL-E 不重复计 Otto 的“内生竞争节点”静态/插入机制；新增的是 **override removal → reality-tested restoration** 的反向动态。
-- WarGames 不计 ordinary joint positive；其信息增益仅是 **joint execution ≠ joint final decision**。
-- Gandalf 不计 x-scope ordinary guard，避免与既有 transient opportunity / local effect 护栏重复；只计 strict-precondition，因为新增信息是 **强 zn + 可取得机会仍不能绕过 x 独立过门**。
-- Pacific Rim 不与 Ramius credential concentration 合并：前者有 actual execution topology reality-test，后者只锁 authorization-interface。
-- protected-range 本批无新 current-v1 机制，维持 `4/4 positive + 3/3 negative`。
+继续保持总公式：
 
-## 5｜当前主中枢同步债
+> `x` 按 `actor × object × permission/effect layer × credential topology × current execution topology × current window` 分账。
 
-当前 `zn-x火轴待审议清单.md`、strict-v2 专项、x-scope 专项、火轴研究总纲仍落后于本 evidence-layer。写前主中枢仍分别登记约：
+## 5｜去重与不计项
+
+- Ghost Protocol 不重复 Ramius：Ramius 锁 mandatory credentials 从多节点集中到一人导致 authorization-interface topology 改变；Ghost Protocol 锁同一 actor 的 **credential bundle 从不完整到完整，并有 downstream launch reality-test**。
+- Minority Report 不计 dynamic：上游身份/追捕状态变化并未传播到被测门禁 credential，因此 access permission 在被测窗口没有现实 contraction。
+- Winter Soldier 不计 dynamic：虽然部分 credential 确实被撤，但同一 permission gate 仍由独立冗余 credential 成功满足；permission layer 没有 OFF。
+- Jurassic Park 不重复此前 capability-vs-permission cross-work-control：本条不是“技术能力变弱”，而是 **同一现实接口明确拒绝被测 permission**，因此可作为 ordinary x-scope boundary guard。
+- strict-v2 本批四条均不锁 `zn`，verified positive 保持 `0/0`；strict-precondition 仍 `19/8`。
+- protected-range 本批无新机制，维持 `4/4 positive + 3/3 negative + 1/1 dynamic`。
+
+## 6｜当前主中枢同步债
+
+截至本轮写前，`zn-x火轴待审议清单.md`、strict-v2 专项、x-scope 专项、火轴研究总纲仍落后于 current evidence-layer。旧主中枢仍大体停在：
 
 ```text
 strict-precondition 17/6
@@ -201,30 +230,30 @@ decision calibration 1
 protected-range    3/3 + 1/1
 ```
 
-而 current evidence-layer 已为：
+而 current evidence-layer 现在应为：
 
 ```text
 strict-precondition 19/8
-x-scope boundary   18/15
-x-scope dynamic    17/15
+x-scope boundary   21/18
+x-scope dynamic    20/18
 decision calibration 3
-protected-range    4/4 + 3/3
+protected-range    4/4 + 3/3 + dynamic 1/1
 ```
 
-这些是 L4 registry/overview 状态漂移，不改变 L1/L2 canonical。下一次安全全文同步窗口应一次性更新待审议清单、strict 专项、x-scope 专项与研究总纲；不得把本文件的状态同步再次当作新 control 重复累计。
+这些是 L4 registry/overview 状态漂移，不改变 L1/L2 canonical。下一次安全全文同步窗口应优先一次性维护待审议清单、strict 专项、x-scope 专项与研究总纲；不得把本状态同步文件再次当成新 control 重复累计。
 
-已知 canonical 元数据债继续只登记：L1 v1.6 明确 `x=阴火`，历史 `x信息量卡v2` frontmatter 的旧元素标记仍需授权修正；L4 不越权。
+已知 canonical 元数据债继续只登记：L1 v1.6 明确 `x=阴火`，历史 `x信息量卡v2` frontmatter 仍写 `element: 阴水`；L4 不越权。
 
-## 6｜下一批最高信息增益
+## 7｜下一批最高信息增益
 
-P0：strict-v2 第一份 verified positive 仍未出现，不降门槛。优先寻找天然单一对象层、stable subject-specific x、独立 zn、同窗双向缺口都能过门，并先冻结 functional-equivalent anchor、competing purpose/ranking anchor 与第三方 veto/产权/制度节点。
+P0：strict-v2 第一份 verified positive 仍未出现，不降门槛。优先寻找天然单一对象层、stable subject-specific x、独立 zn、same current window 双向缺口都能过门，并先冻结 functional-equivalent anchor、competing purpose/ranking anchor、第三方 veto/产权/制度节点。
 
 若 P0 仍无 ≥95：
 
-1. 找 Pacific Rim 的反向最小差异：同一对象同一 permission family，joint topology 中任一单 actor 都不能 reality-effect；随后 mandatory co-execution node 被制度/技术删除，才首次形成稳定 unilateral execution。
-2. 找 WALL-E 的失败镜像：competing override node 被名义关闭，但 same-layer reality-effect 仍无法恢复，区分“节点看似退出”与“现实恢复”。
-3. 找 Truman 的最小差异：environment-control 之外，主体另有独立 person-level pre-effect veto，验证何时 environment-management 与 person-disposition 可同时成立但仍需分账。
-4. protected-range 只收同边界、同 risk-channel 的 ON→OFF 或 OFF→ON 动态，不再堆普通安全屋。
-5. deferred 只在出现新证据时二审，不重复旧攻击。
+1. credential propagation 最小差异：同一 actor / object / interface，先 credential reality-test 成功；随后 upstream revocation 真正传播到同一 credential，下一次相同 interface test 明确失败，形成 clean ON→OFF。
+2. redundant credential removal：先打掉 credential A 但 B 仍成功；随后 B 也被撤，且同层 permission 首次 reality-test 失败，形成“partial revocation 不关层 / threshold-complete revocation 才关层”的最小三联。
+3. Ghost Protocol 反向镜像：同一 launch/use permission 已成功，mandatory credential 被撤或过期后同层 effect 明确失败，形成 credential-completion expansion 的 clean contraction mirror。
+4. operational-position mirror：主体 title/责任/控制室位置不变，但 interface 从 denied→accepted 且同层 effect 成功，验证 permission restoration 不需要名义身份变化。
+5. protected-range 继续只收同边界、同 risk-channel 的 ON↔OFF 动态，不再堆普通安全屋；deferred 只在出现新证据时二审。
 
 达到 pending-review 的普通正例槽继续停止堆料。
