@@ -49,8 +49,6 @@ historical_positive_contrasts: 1
 
 当前仍无 ≥95 的 strict-v2 verified positive。deferred former positives 维持4/4，不因旧判据或旧正例自动恢复。
 
-最近 strict-precondition 新增仍以《12 Angry Men》Juror 8 为 current：原则真实指导 vote-x 的使用，不等于该原则构成 vote-x 的 current purpose。jury institution / unanimity threshold 已为 vote 提供 independent purpose / decision role，因此 `zn governs how x is used ≠ zn constitutes why x has current purpose`。按 current ledger 纠偏后维持 `20/9`。
-
 ### A6｜lifecycle
 `3 positive / 3 works + 2 negative guards / 2 works / pending-review`
 
@@ -71,8 +69,8 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 23
 x_scope_boundary_guard_works: 20
-x_scope_dynamic_transition_controls: 24
-x_scope_dynamic_transition_works: 21
+x_scope_dynamic_transition_controls: 25
+x_scope_dynamic_transition_works: 22
 x_scope_decision_structure_calibration_controls: 6
 knowledge_status: pending-review
 pending_review: true
@@ -81,44 +79,28 @@ pending_review: true
 ordinary positive 已成熟，停止堆量。
 
 #### 本批新增 boundary｜The Terminal
-Frank Dixon / CBP 对 Viktor 的 US-entry transition 拥有真实、可生效的拒绝 gate，但同一窗口 Dixon 明确没有 federal detention 权，也不能凭 entry-denial 自动选择任意后续 person-state。锁：
-
-```text
-transition-blocking x
-≠ resultant-state disposition x
-
-edge veto
-≠ downstream node/state disposition
-```
-
-成功阻断 `A→B` 只证明该 transition 的 pre-effect veto；若 post-veto state 仍受独立法律、外交状态或第三方节点限定，就不能倒灌成 whole-person/global disposition。统计：`22/19 → 23/20`。
+Frank Dixon / CBP 对 Viktor 的 US-entry transition 拥有真实拒绝 gate，但同一窗口没有 federal detention 权，也不能凭 entry-denial 自动选择任意后续 person-state。锁：`transition-blocking x ≠ resultant-state disposition x`；统计 `22/19 → 23/20`。
 
 #### 本批新增 dynamic mirror｜Evangelion Episode 19
-Episode 18 已锁 Shinji 在 Entry Plug 中仍被 Dummy System 接管，execution x `ON→OFF`。Episode 19 先 reality-test Rei 与 Dummy substitute paths 均被 Unit-01 拒绝；随后 Shinji 返回，Unit-01 再次现实响应其驾驶并出击，故 same actor / same object layer 的 pilot execution x `OFF→ON`。锁：
-
-```text
-substitute OFF
-≠ original actor automatically ON
-
-只有 original actor 返回
-+ same-object reality-test 再次响应
-→ execution x 才可恢复
-```
-
-同作品同人物，只增加 control、不增加 independent work：`23/21 → 24/21`。
+Episode 18 已锁 Shinji execution x `ON→OFF`；Episode 19 中 Rei 与 Dummy substitute paths 均被 Unit-01 拒绝，Shinji 返回后 same-object reality-test 再次响应其驾驶，故 execution x `OFF→ON`。同作品只加 control：`23/21 → 24/21`。
 
 #### 本批新增 decision calibration｜The Martian
-Hermes 五名 crew 对 Rich Purnell Maneuver 需 unanimous final acceptance，但现实执行由 Martinez 负责 course plot/execute，Johanssen 单独解除 remote override。锁：
+Hermes 五人 unanimous final acceptance，但 Martinez 与 Johanssen 分别承担不同 execution subinterfaces。锁：`joint/shared final decision ≠ joint/shared execution`；decision calibration `5 → 6`。
+
+#### 并发补吸收 dynamic｜Harry Potter and the Deathly Hallows
+Harry 的技术施法能力在17岁前后都存在，但 underage-sorcery / Trace 的明确 term gate 在17岁时失效，随后 Harry 立即现实校外施法。锁：
 
 ```text
-joint/shared final decision
-≠ joint/shared execution
+technical capability retained
+≠ permission scope unchanged
 
-多人分工执行
-≠ 自动推出 joint final decision
+explicit term/age gate expires
++ same actor/object/use-permission family
++ after-stage same-layer reality-test succeeds
+→ current permission scope expansion
 ```
 
-final-decision topology 与 execution topology 必须正交建模。统计：decision calibration `5 → 6 controls`；schema 暂不新造 works 字段。
+这不是 King Lear 的 quantitative cap 反向镜像，而是 **term-triggered spatial/legal scope expansion**。Harry Potter 此前未进入 current dynamic-work 集合，故 `24/21 → 25/22`。
 
 #### 继续有效的核心反误判纪律
 
@@ -132,6 +114,7 @@ interface possession ≠ target-disposition x
 invoke/start ≠ stop/terminate/revoke
 ownership/title ≠ permission bundle
 technical capability delta ≠ x-boundary delta
+technical capability retained ≠ permission scope unchanged
 source/task direction delta ≠ x-boundary delta
 current permission type unchanged ≠ scope/cap unchanged
 physical interface occupancy ≠ execution-node attribution
@@ -154,8 +137,6 @@ protected_range_v1_dynamic_works: 1
 knowledge_status: pending-review
 pending_review: true
 ```
-
-普通正向停止堆量；只收新反例、同 risk-channel 动态、第三方 gate 冲突与 strict-v2 候选。
 
 ## B｜current evidence ledger
 
@@ -189,8 +170,8 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 23
 x_scope_boundary_guard_works: 20
-x_scope_dynamic_transition_controls: 24
-x_scope_dynamic_transition_works: 21
+x_scope_dynamic_transition_controls: 25
+x_scope_dynamic_transition_works: 22
 x_scope_decision_structure_calibration_controls: 6
 x_scope_knowledge_status: pending-review
 protected_range_current_criterion: protected-range-risk-test-v1_20260831
@@ -238,14 +219,15 @@ pending_review_count: 11
 11. edge/transition control 与 resultant-state disposition 分账；成功 veto 一个 transition 不推出后续状态任意处分。
 12. final-decision topology 与 execution topology 正交；joint-final 不推出 joint execution，role-divided execution 也不反推 joint-final。
 13. execution restoration 必须在原主体重新进入 same-object current routing 后通过 reality-test；替代节点退出本身不够。
+14. term/age/status trigger 只有在明确 permission gate 变化并经 transition 后 reality-test 时才可计 scope expansion；名义“成年/毕业/解禁”本身不够。
 
 ## D｜当前高价值缺口
 
-1. **P0：strict-v2 第一份 verified positive**，仍为 `0/0`。优先天然单一 object layer、stable subject-specific x、无 functional-equivalent current anchor、无 independent institutional/task purpose anchor 的候选。
-2. **P1：path exhaustion dynamic**：多个 independent paths → alternatives 逐一关闭 → surviving path count=0 → target-effect reality-test OFF，测试 local veto 何时升级为 global effect OFF。
-3. **P2：permission-cap expansion mirror**：对照 King Lear，same actor/object/permission family，low cap 经同层 gate 解除后实际允许更高数量。
-4. **P3：joint/shared execution ↔ unilateral execution 真动态**：same actor/object/permission family，两阶段都要求现实 effect-test，不能凭组织图或共同批准倒推执行拓扑。
-5. **P4：transition veto + downstream disposition 正向镜像**：same actor/person，先证明 transition veto，再独立 reality-test 后续 state-disposition interface，检验何时 edge control 可扩张到 state disposition。
+1. **P0：strict-v2 第一份 verified positive**，仍为 `0/0`。
+2. **P1：path exhaustion dynamic**：多个 independent paths → alternatives 逐一关闭 → surviving path count=0 → target-effect reality-test OFF。
+3. **P2：quantitative permission-cap expansion mirror**：King Lear 的真正数量型反向镜像仍缺，不得拿 Harry 的 term-triggered spatial/legal expansion 冒充完成。
+4. **P3：joint/shared execution ↔ unilateral execution 真动态**：两阶段都要求 same-object reality-test。
+5. **P4：transition veto + downstream disposition 正向镜像**：先证明 edge veto，再独立现实测试 resultant-state disposition。
 6. **P5：protected-range** 只收同边界、同 risk-channel 动态与新失败镜像。
 7. deferred 只在新证据出现时二审。
 
@@ -265,12 +247,6 @@ pending_review_count: 11
 
 ## F｜同步债 / 权限边界
 
-实时清单已同步到 current evidence ledger。仍需安全全文同步：
-
-- strict-v2 专项；
-- x-scope 专项；
-- `zn-x火轴研究总纲_20260827.md`。
-
-这些是 L4 状态同步债，不改变 L1/L2 canonical。
+实时清单与 working ledger 目标均为 current evidence truth。仍需安全全文同步：strict-v2 专项、x-scope 专项、`zn-x火轴研究总纲_20260827.md`。这些是 L4 状态同步债，不改变 L1/L2 canonical。
 
 不得修改 L1、zn/x 信息卡、准度卡或 canonical 关系卡。已知 `x信息量卡v2` frontmatter 元数据债只登记，不由本清单修正。
