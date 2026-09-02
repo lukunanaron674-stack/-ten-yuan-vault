@@ -46,11 +46,11 @@ strict_canonical_calibration_controls: 3
 x_scope_current_criterion: current-x-scope-distinction-v1_20260830
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 22
-x_scope_boundary_guard_works: 19
-x_scope_dynamic_transition_controls: 23
+x_scope_boundary_guards: 23
+x_scope_boundary_guard_works: 20
+x_scope_dynamic_transition_controls: 24
 x_scope_dynamic_transition_works: 21
-x_scope_decision_structure_calibration_controls: 5
+x_scope_decision_structure_calibration_controls: 6
 x_scope_knowledge_status: pending-review
 
 protected_range_current_criterion: protected-range-risk-test-v1_20260831
@@ -65,134 +65,78 @@ protected_range_knowledge_status: pending-review
 pending_review_count: 11
 ```
 
-### 1.1 strict-precondition 统计纠偏
+## 2｜本轮新增三条 evidence 归并
 
-上一份 current ledger 已经是 `19 controls / 8 works`。随后《12 Angry Men》运行记录虽然自报写前基数 `18/7`，但这是陈旧基数；该作品此前未进入 strict-precondition work 集合，且机制与既有 carrier-equivalence / one-shot-effect / competing-purpose guards 不重复，因此本轮按 current ledger 正确累计为：
+### 2.1 The Terminal / Frank Dixon｜transition-blocking ≠ resultant-state disposition
 
-```text
-19 / 8
-→ 20 strict-precondition controls / 9 independent works
-```
+状态：`evidence-locked boundary guard`。
 
-禁止把运行记录中的旧基数反向覆盖 current evidence ledger。
-
-## 2｜最近约4小时新增资产归并
-
-### 2.1 Thirteen Days / JFK｜consultation ≠ joint final decision
-
-状态：`evidence-locked`；criterion：`current-x-scope-distinction-v1_20260830`。
-
-同一 White House crisis-response policy-selection layer 上，ExComm / Joint Chiefs 广泛参与、强烈反对，仍不等于共同最终裁决；现实上 Kennedy 可以拒绝 air-strike/invasion 主张并选择、实施 quarantine，未观察到 consulted advisers 对同一 final-policy effect 拥有 mandatory pre-effect blocking power。
+Dixon/CBP 对 Viktor 的 US-entry transition 拥有现实有效的拒绝 gate，但同一窗口 Dixon 明确没有 federal detention 权，也不能仅凭拒绝入境就选择 Viktor 后续任意状态。法律、外交与 travel-state competing nodes 让 Viktor 落入 stranded intermediate state。
 
 锁：
 
 ```text
-number of participants
-≠ number of final-decision nodes
+permission to block transition A→B
+≠ permission to choose arbitrary resultant state C/D/E
 
-consultation / recommendation / dissent
-≠ mandatory same-layer veto
+edge veto
+≠ node/state disposition
 ```
 
-与 Star Trek III 正向 heterogeneous joint-final threshold 形成最小正负镜像。
+它不同于 Casino Royale 的 alternative-path 绕行：The Terminal 中 entry veto 完全生效，新增边界发生在 veto 成功之后，问的是 post-veto state 是否归 veto-holder 处分。
 
-统计：decision-structure calibration `4 → 5 controls`。当前 schema 未正式设 works 聚合字段，只保留 independent-work provenance，不擅自扩 schema。
+统计：boundary `22/19 → 23 controls / 20 works`。
 
-### 2.2 Casino Royale / Vesper｜source-specific veto ≠ target-effect global veto
+### 2.2 Evangelion Episode 19 / Shinji｜execution-routing restoration mirror
 
-状态：`evidence-locked`。
+状态：`evidence-locked dynamic restoration mirror`。
 
-Vesper 对 British Treasury additional re-buy funds 有现实 veto；但 Felix Leiter 可以用 CIA 资金建立独立替代 path，Bond 随后现实 re-enter tournament。
+Episode 18 已锁：Shinji 仍在 Entry Plug，但 Dummy System 接管，pilot execution x `ON→OFF`。Episode 19 先 reality-test Rei substitute 与 Dummy Plug 均被 Unit-01 拒绝；随后 Shinji 返回，Unit-01 再次现实响应其操纵并出击。
 
 锁：
 
 ```text
-local/source-specific veto
-≠ target-effect global veto
+substitute/current alternative node becomes unavailable
+≠ original actor automatically restored
 
-只有节点成为所有可生效路径共同必经的 mandatory pre-effect node
-才可上升为 target-effect global veto
+prior execution x OFF
+→ original actor returns
+→ same object again reality-tests response to original actor
+→ execution x OFF→ON
 ```
 
-与 Nick Fury redundant credential 同属 path topology 大类，但主体、对象与机制不同：前者是不同资源来源形成替代 causal path，后者是同一 actor 内 redundant credential path。
+同作品同人物，所以只增加 dynamic control，不增加 independent work：`23/21 → 24/21`。
 
-统计：boundary `21/18 → 22 controls / 19 works`。
+### 2.3 The Martian / Hermes crew｜joint final decision ≠ joint execution
 
-### 2.3 12 Angry Men / Juror 8｜zn governs use ≠ zn constitutes x purpose
+状态：`evidence-locked decision-structure calibration`。
 
-状态：`evidence-locked strict-precondition guard`。
-
-Juror 8 的 reasonable-doubt 原则可高置信独立命名，个人 vote/veto `x` 也现实成立；但拿掉该原则后，jury institution / unanimity rule 仍为 vote-x 提供清楚的对象、用途、threshold function 与可替代排序标准。
+Rich Purnell Maneuver 的 final acceptance 明确要求 Hermes 五人 unanimous；但执行阶段由 Martinez 负责 course plot/execute，Johanssen 单独解除 NASA remote override。共同批准与执行分工并不重合。
 
 锁：
 
 ```text
-zn strongly governs how x is used
-≠
-zn is the necessary source of why x has current purpose / ranking function
+joint/shared final decision
+≠ joint/shared execution
+
+role-divided execution
+≠ automatic joint-final inference
 ```
 
-因此 `zn→x` strict direction 失败于 independent institutional-purpose anchor；不计 strict negative，只计前置护栏。
+final-decision topology 与 execution topology 必须正交建模。统计：decision calibration `5 → 6 controls`；current schema 仍不擅自增加 works 聚合字段。
 
-统计：按 current ledger 纠偏后 `19/8 → 20/9`。strict verified positive 仍 `0/0`。
+## 3｜本轮不计 / 去重
 
-### 2.4 Neon Genesis Evangelion / Shinji｜physical interface occupancy ≠ execution-x retained
+- The Terminal 不进入 dynamic：被测窗口内是 permission-type/scope 边界，不是同 permission 的 from→to 迁移。
+- Evangelion 19 不增加 independent work：Episode 18/19 属同一作品同一主体同对象 execution family。
+- The Martian 不进入 ordinary positive/boundary/dynamic：它只校准 final-decision topology 与 execution topology 的独立性。
+- strict-v2 本轮 `+0`：三条都没有新锁 independent `zn`，也没有恢复 deferred 候选的新证据。
+- protected-range 本轮 `+0`：没有新增 risk-test 机制。
+- pending-review 槽数不变，继续 11。
 
-状态：`evidence-locked dynamic`。
+## 4｜current 强化规则
 
-同一 Unit-01、同一 Episode-18 combat window，Shinji 仍物理位于 Entry Plug，但 synchronization 被切断，control routing 转到 Dummy System；Unit-01 随后由自动替代节点现实攻击，Shinji 无法让同层动作停止或重新服从自己。
-
-锁：
-
-```text
-physical interface occupancy retained
-≠ synchronization retained
-≠ current execution-node attribution retained
-
-human execution node
-→ routing cut + automated substitute takeover
-→ actor execution x ON → OFF
-```
-
-区别于 human-holder replacement、credential invalidation、external superior override 与 endogenous competing-node insertion。
-
-统计：dynamic `21/19 → 22 controls / 20 works`。
-
-### 2.5 King Lear / Lear｜permission type retained ≠ quantitative cap retained
-
-状态：`evidence-locked dynamic`。
-
-同一 post-abdication hosted-retinue permission family，在 daughters' residences 的现实 admissible cap 经 host-side same-layer gate 从 `100 → 50 → 25 → 0`；Lear 的历史 reservation、身份或旧上限不能覆盖 current host gate。
-
-锁：
-
-```text
-permission family still exists by name
-≠ quantitative scope unchanged
-
-same permission family
-+ same actor/object layer
-+ counterparty mandatory pre-effect gate
-+ reality-tested numerical cap reduction
-→ permission-cap contraction
-```
-
-它不同于 Eduardo 的 divisible equity dilution：Eduardo 改变的是资产份额本体；Lear 改变的是同一 permission 的 maximum admissible quantity ceiling。
-
-统计：dynamic `22/20 → 23 controls / 21 works`。
-
-## 3｜本轮去重 / 不计项
-
-- Evangelion 的强 `zn` 候选不重复增加 strict-precondition：其失败仍命中既有 independent task/purpose anchor。
-- King Lear 的 dignity / status 候选不进入 strict：retinue 仍有 security/service/display 等 independent purposes。
-- Thirteen Days 不进入 ordinary x-scope positive/boundary/dynamic，只做 decision topology calibration。
-- Casino Royale 不把 Vesper 的真实 Treasury veto 倒灌成对 tournament re-entry 的 global veto。
-- 《12 Angry Men》虽然自身也是 unanimous joint threshold，本轮不重复增加 decision calibration；新增信息在 strict `zn→x` purpose-source 分离。
-- 已 pending-review 的普通正例槽继续停止堆量。
-
-## 4｜当前强化后的统一规则
-
-### 4.1 x-scope 基本分账
+### 4.1 x-scope
 
 ```text
 x = actor
@@ -201,39 +145,35 @@ x = actor
 × scope / quantitative cap
 × term / revocability
 × credential / path topology
-× consultation / final-decision structure
+× consultation / final-decision topology
 × execution topology
 × current window
 ```
 
-禁止：
+新增强制分账：
 
 ```text
-title / role / physical presence
-→ x=true automatically
-
-local veto
-→ global veto automatically
-
-permission type unchanged
-→ scope/cap unchanged
-
-object continues acting
-→ former operator still owns execution x
-
-many participants / strong dissent
-→ joint final decision
+transition-blocking x ≠ resultant-state disposition x
+joint-final decision ≠ joint execution
+substitute node OFF ≠ original actor automatically ON
 ```
 
-### 4.2 strict-v2
+### 4.2 restoration 判据
 
-继续要求：same current window、same object layer、zn/x 各自独立过 current canonical；zn 先用不引用被测 x 的语言命名；x 必须自然、主体特异、不可 posthoc composite；冻结第三方 veto/产权/制度 competing anchors 与 x 端 independent purpose/ranking anchors。
+execution-x 恢复必须满足：
 
-新增强化：
+```text
+same actor
++ same object layer
++ prior x OFF
++ substitute/current competing node 已退出或现实不可用
++ original actor 返回 current routing
++ same-object reality-test 再次响应 original actor
+```
 
-> `zn governs how x is used` 仍不足以通过 `zn→x`；必须证明拿掉被测 zn 后，x 的 current purpose / guard / abandon / ranking 真出现相关缺口，而不是仍由 institution/task/title/instrument 提供清楚用途。
+只看到替代节点失败，不足以把 original actor 自动判回 ON。
 
-### 4.3 decision structure
+### 4.3 decision/execution 正交
 
 ```text
 consultation_structure
@@ -241,22 +181,34 @@ consultation_structure
 ≠ execution_structure
 ```
 
-joint-final 的关键不是人数或角色同质性，而是同一 final layer 上是否存在不可绕过的 mandatory pre-effect blocking topology。
+joint-final 的关键是 mandatory pre-effect blocking topology；execution 的关键是现实 effect 由哪些节点实际完成。两层可重合，也可分离。
 
-### 4.4 path / veto topology
+### 4.4 edge control / state control
+
+对状态机式对象必须区分：
 
 ```text
-source-specific veto
-≠ global target-effect veto
+edge A→B 可 veto
+≠ actor owns/controls state S after veto
 ```
 
-若存在 independent alternative path 可使同一 target effect 成功，则单一路径 veto 只能归该 source/object layer。
+若要升级为 resultant-state disposition，必须对后续 `S→C/D/E` 另做 subject-specific reality-test，不能由一个成功 veto 倒灌。
 
-### 4.5 quantitative scope
+## 5｜strict-v2
 
-`x` 不只允许 true/false。可分割资产、对象子集、permission ceiling、数量上限都必须显式记录 scope；同名 permission 可在 current window 内发生连续 cap contraction / expansion。
+current 继续：
 
-## 5｜protected-range
+```yaml
+verified_positive: 0/0
+deferred: 4/4
+negative: 7/4
+precondition: 20/9
+canonical_calibration: 3
+```
+
+P0 仍未破零。继续使用 current-window + same-object-layer + relevant current reality-anchor gap；不恢复废止的 absolute-unique-anchor。
+
+## 6｜protected-range
 
 本批无新机制，保持：
 
@@ -267,38 +219,36 @@ dynamic: 1 control / 1 work
 status: pending-review
 ```
 
-普通正向停止堆量；只收新反例、同 risk-channel 动态、第三方 gate 冲突与 strict-v2 候选。
+## 7｜同步债
 
-## 6｜当前同步债
-
-本文件已吸收最新5条 evidence。下列 L4 中枢/专项仍需安全全文同步，不得从旧统计反向覆盖本 ledger：
-
-```text
-zn-x火轴待审议清单.md
-strict-v2 专项
-x-scope 专项
-zn-x火轴研究总纲_20260827.md
-```
-
-目标统一为：
+本 working ledger 与实时待审议清单已经统一到：
 
 ```text
 strict-precondition 20/9
-x-scope boundary   22/19
-x-scope dynamic    23/21
-decision calibration 5
+x-scope boundary   23/20
+x-scope dynamic    24/21
+decision calibration 6
 protected-range    4/4 positive + 3/3 negative + dynamic 1/1
 strict verified positive 0/0
 pending_review_count 11
 ```
 
-这是 L4 registry/overview 状态同步债，不改变 L1/L2 canonical。
+仍需安全全文同步：
 
-## 7｜下一批最高信息增益
+```text
+strict-v2 专项
+x-scope 专项
+zn-x火轴研究总纲_20260827.md
+```
 
-1. **P0 strict-v2 first verified positive**：继续不降门；优先找天然单一 object layer、无 institutional/task independent purpose anchor、无 functional-equivalent current reality anchor 的 subject-specific x。
-2. **permission-cap expansion mirror**：同 actor/object/permission family，low cap 经 same-layer gate 解除后 reality-test 为 higher cap，补 King Lear 的严格反向。
-3. **automated substitute removal mirror**：execution x 已 OFF → substitute node 真退出 → actor synchronization/routing 恢复 → same object reality-test 再响应 actor。
-4. **path exhaustion dynamic**：多个 independent paths → alternative paths 逐一关闭 → surviving path count 归零 → 同 target-effect reality-test OFF，检验 local veto 如何在 path exhaustion 后升级为 global effect OFF。
-5. **consultation-only 最近邻**：same organization / same pair 附近对象层，一层 broad consultation + unilateral final，另一层 mandatory joint-final，继续证明 topology 是 object-layer-specific。
-6. deferred 只在新证据出现时二审；不重复旧攻击。
+这是 L4 状态同步债，不改变 L1/L2 canonical。
+
+## 8｜下一批最高信息增益
+
+1. **P0 strict-v2 first verified positive**：继续不降门；优先天然单一 object layer、stable subject-specific x、无 functional-equivalent current anchor、无 independent institutional/task purpose anchor 的候选。
+2. **path exhaustion dynamic**：多个 independent paths → alternatives 逐一关闭 → surviving path count=0 → target-effect reality-test OFF，测试 local veto 何时升级为 global effect OFF。
+3. **permission-cap expansion mirror**：对照 King Lear，same actor/object/permission family，low cap 经 same-layer gate 解除后 reality-test 为 higher cap。
+4. **joint/shared execution ↔ unilateral execution 真动态**：same actor/object/permission family，两阶段都要求 reality-test，不能凭 final-decision topology 倒推 execution topology。
+5. **transition veto + downstream disposition 正向镜像**：same actor/person，先证明 transition veto，再独立 reality-test 后续 state-disposition interface。
+6. protected-range 只收同边界、同 risk-channel 动态与新失败镜像。
+7. deferred 只在新证据出现时二审。
