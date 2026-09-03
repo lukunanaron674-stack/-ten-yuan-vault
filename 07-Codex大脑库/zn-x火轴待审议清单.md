@@ -138,13 +138,24 @@ criterion：`protected-range-risk-test-v1_20260831`。
 ```yaml
 protected_range_v1_verified_positive_controls: 4
 protected_range_v1_verified_positive_works: 4
-protected_range_v1_verified_negative_guards: 3
-protected_range_v1_verified_negative_guard_works: 3
+protected_range_v1_verified_negative_guards: 4
+protected_range_v1_verified_negative_guard_works: 4
 protected_range_v1_dynamic_controls: 1
 protected_range_v1_dynamic_works: 1
 knowledge_status: pending-review
 pending_review: true
 ```
+
+#### 已归并 negative guard｜Home Alone
+Kevin 的住宅陷阱多次现实造成伤害、延迟与改道，但 Harry/Marv 仍突破住宅边界并持续追击，最终人身风险还由 Marley / police 第三方节点完成解围。锁：
+
+```text
+partial-defense-effect
++ repeated delay / injury / rerouting
+≠ stable protected-range
+```
+
+本条按 current v1 从 negative `3/3 → 4/4`；不重复增加 positive/dynamic，也不锁 `zn`。
 
 ## B｜current evidence ledger
 
@@ -185,8 +196,8 @@ x_scope_knowledge_status: pending-review
 protected_range_current_criterion: protected-range-risk-test-v1_20260831
 protected_range_v1_verified_positive_controls: 4
 protected_range_v1_verified_positive_works: 4
-protected_range_v1_verified_negative_guards: 3
-protected_range_v1_verified_negative_guard_works: 3
+protected_range_v1_verified_negative_guards: 4
+protected_range_v1_verified_negative_guard_works: 4
 protected_range_v1_dynamic_controls: 1
 protected_range_v1_dynamic_works: 1
 protected_range_knowledge_status: pending-review
@@ -230,6 +241,7 @@ pending_review_count: 11
 14. term/age/status trigger 只有在明确 permission gate 变化并经 transition 后 reality-test 时才可计 scope expansion；名义“成年/毕业/解禁”本身不够。
 15. downstream resultant-state disposition 必须单独 reality-test；edge veto 的存在与 detention/custody/disposition interface 的新增、撤销分别记。
 16. quantitative permission-cap 动态必须固定 actor/object/permission family，只把可现实纳入对象数的 cardinality ceiling 作为迁移变量。
+17. protected-range 中局部防御节点反复成功只证明 partial-defense-effect；若风险最终突破同一保护边界，不能升级为 stable protected-range。
 
 ## D｜当前高价值缺口
 
@@ -238,7 +250,7 @@ pending_review_count: 11
 3. **P2：quantitative cap 同作品可逆动态**：已有 King Lear contraction 与 XCOM 2 expansion 跨作品镜像；继续优先找 same actor + same permission family 的 cap `high→low→high` 或 `low→high→low` reality-test，验证 cap 变化可逆而非作品设定差异。
 4. **P3：edge-veto / downstream disposition 的撤回或分叉失败镜像**：已有 The Terminal 负边界与 Papers, Please 正向扩张；继续找 detention/disposition interface 后续被撤回但 edge veto 保留，或新增 disposition 只对对象子集成立的动态。
 5. **P4：execution topology 新机制**：Pacific Rim 已填 joint↔unilateral 基础槽；后续只收不同 trigger/mandatory-node 机制，不重复采样死亡/物理移除换皮。
-6. **P5：protected-range** 只收同边界、同 risk-channel 动态与新失败镜像。
+6. **P5：protected-range** 只收同边界、同 risk-channel 动态与新失败镜像；Home Alone 的 partial-defense failure 已进入 negative 4/4，不再重复同攻击。
 7. deferred 只在新证据出现时二审。
 
 ## E｜pending-review 索引｜11条
@@ -257,6 +269,6 @@ pending_review_count: 11
 
 ## F｜同步债 / 权限边界
 
-实时清单已吸收本批 Papers, Please / XCOM 2，并纠偏 Pacific Rim 缺口状态。working ledger、strict-v2 专项、x-scope 专项与 `zn-x火轴研究总纲_20260827.md` 仍需按 current evidence truth 安全文同步；这些是 L4 状态同步债，不改变 L1/L2 canonical。
+实时清单已吸收 Papers, Please / XCOM 2、Pacific Rim 缺口纠偏与 Home Alone protected-range negative 4/4。working ledger、strict-v2 专项、x-scope 专项与 `zn-x火轴研究总纲_20260827.md` 仍需按 current evidence truth 安全文同步；这些是 L4 状态同步债，不改变 L1/L2 canonical。
 
 不得修改 L1、zn/x 信息卡、准度卡或 canonical 关系卡。已知 `x信息量卡v2` frontmatter 元数据债只登记，不由本清单修正。
