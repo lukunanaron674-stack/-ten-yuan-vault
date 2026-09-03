@@ -67,8 +67,8 @@ criterion：`current-x-scope-distinction-v1_20260830`。
 ```yaml
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 23
-x_scope_boundary_guard_works: 20
+x_scope_boundary_guards: 24
+x_scope_boundary_guard_works: 21
 x_scope_dynamic_transition_controls: 27
 x_scope_dynamic_transition_works: 24
 x_scope_decision_structure_calibration_controls: 6
@@ -105,6 +105,16 @@ same actor
 
 这是 King Lear `100→50→25→0` quantitative contraction 的真正跨作品反向镜像，不得与 Harry Potter 的 term-triggered spatial/legal expansion 混算。dynamic `26/23 → 27/24`。
 
+#### 已归并 boundary guard｜Dr. Strangelove
+Kong 面对 normal / backup / emergency / manual 等已枚举接口连续失败后，仍通过 direct repair / bypass 受损线路让 bomb doors 现实打开。锁：
+
+```text
+enumerated-interface exhaustion
+≠ path-set exhaustion
+```
+
+只有在 direct repair、bypass、delegated route、parallel authority、emergency interface、alternate execution node 等 competing paths 也被审计冻结后，才允许把 `known path count = 0` 升级为 `surviving relevant path count = 0`。本条只计 boundary `23/20 → 24/21`，不计 dynamic。
+
 #### 已填缺口纠偏｜Pacific Rim
 现存 evidence-locked 资产已完整锁定 Raleigh / Gipsy Danger 的 `joint execution → unilateral emergency execution → joint restoration`，并在两阶段都有 same-object reality-test。该槽已经计入既有 dynamic ledger；本轮只修 D 区状态，不重复加 control / work。
 
@@ -130,6 +140,7 @@ joint-final decision ≠ joint execution
 substitute node loss ≠ original actor automatic restoration
 edge-veto retained ≠ downstream disposition already present
 quantitative cap expansion ≠ new permission type
+enumerated-interface exhaustion ≠ path-set exhaustion
 ```
 
 ### A11｜protected-range risk-test｜current v1
@@ -187,8 +198,8 @@ strict_canonical_calibration_controls: 3
 x_scope_current_criterion: current-x-scope-distinction-v1_20260830
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 23
-x_scope_boundary_guard_works: 20
+x_scope_boundary_guards: 24
+x_scope_boundary_guard_works: 21
 x_scope_dynamic_transition_controls: 27
 x_scope_dynamic_transition_works: 24
 x_scope_decision_structure_calibration_controls: 6
@@ -242,11 +253,12 @@ pending_review_count: 11
 15. downstream resultant-state disposition 必须单独 reality-test；edge veto 的存在与 detention/custody/disposition interface 的新增、撤销分别记。
 16. quantitative permission-cap 动态必须固定 actor/object/permission family，只把可现实纳入对象数的 cardinality ceiling 作为迁移变量。
 17. protected-range 中局部防御节点反复成功只证明 partial-defense-effect；若风险最终突破同一保护边界，不能升级为 stable protected-range。
+18. path exhaustion 必须先做 path-set completeness audit；已枚举 interface 全失败不等于 relevant path set 清零，direct repair / bypass / delegated / parallel / emergency / alternate execution routes 均需冻结。
 
 ## D｜当前高价值缺口
 
 1. **P0：strict-v2 第一份 verified positive**，仍为 `0/0`。
-2. **P1：path exhaustion dynamic**：多个 independent paths → alternatives 逐一关闭 → surviving path count=0 → target-effect reality-test OFF。
+2. **P1：path exhaustion dynamic**：多个 independent paths 预先自然识别 → alternatives 逐一关闭 → direct repair / bypass / delegated / parallel / emergency / alternate execution paths 完整审计 → surviving relevant path count=0 → target-effect reality-test OFF。
 3. **P2：quantitative cap 同作品可逆动态**：已有 King Lear contraction 与 XCOM 2 expansion 跨作品镜像；继续优先找 same actor + same permission family 的 cap `high→low→high` 或 `low→high→low` reality-test，验证 cap 变化可逆而非作品设定差异。
 4. **P3：edge-veto / downstream disposition 的撤回或分叉失败镜像**：已有 The Terminal 负边界与 Papers, Please 正向扩张；继续找 detention/disposition interface 后续被撤回但 edge veto 保留，或新增 disposition 只对对象子集成立的动态。
 5. **P4：execution topology 新机制**：Pacific Rim 已填 joint↔unilateral 基础槽；后续只收不同 trigger/mandatory-node 机制，不重复采样死亡/物理移除换皮。
@@ -269,6 +281,6 @@ pending_review_count: 11
 
 ## F｜同步债 / 权限边界
 
-实时清单已吸收 Papers, Please / XCOM 2、Pacific Rim 缺口纠偏与 Home Alone protected-range negative 4/4。working ledger、strict-v2 专项、x-scope 专项与 `zn-x火轴研究总纲_20260827.md` 仍需按 current evidence truth 安全文同步；这些是 L4 状态同步债，不改变 L1/L2 canonical。
+实时清单已吸收 Papers, Please / XCOM 2、Pacific Rim 缺口纠偏、Home Alone protected-range negative 4/4 与 Dr. Strangelove path-set completeness boundary 24/21。working ledger 与实时清单已对齐；strict-v2 专项、x-scope 专项与 `zn-x火轴研究总纲_20260827.md` 仍需按 current evidence truth 安全文同步；这些是 L4 状态同步债，不改变 L1/L2 canonical。
 
 不得修改 L1、zn/x 信息卡、准度卡或 canonical 关系卡。已知 `x信息量卡v2` frontmatter 元数据债只登记，不由本清单修正。
