@@ -8,15 +8,15 @@ pair: zn-x
 criterion_version: protected-range-risk-test-v1_20260831
 positive_controls: 4
 positive_cross_work_count: 4
-negative_guards: 3
-negative_guard_works: 3
+negative_guards: 4
+negative_guard_works: 4
 dynamic_transition_controls: 1
 dynamic_transition_works: 1
 canonical_calibration_controls: 0
 may_override_canonical: false
 may_update_L2: false
 created: 2026-08-31
-updated: 2026-09-02
+updated: 2026-09-03
 ---
 
 # 待审议问题｜zn-x protected-range 稳定保护范围经真实 risk-test 成立边界
@@ -30,8 +30,8 @@ current 分账：
 ```yaml
 positive_controls: 4
 positive_cross_work_count: 4
-negative_guards: 3
-negative_guard_works: 3
+negative_guards: 4
+negative_guard_works: 4
 dynamic_transition_controls: 1
 dynamic_transition_works: 1
 knowledge_status: pending-review
@@ -76,7 +76,7 @@ Potter family 留在 Fidelius 隐藏地点；Secret Keeper 不披露时地点不
 ### 2.4 《疯狂的麦克斯：狂暴之路》｜mobile controlled boundary
 Furiosa 驾驶 War Rig，五位妻子持续处于移动载体保护范围；Joe 追击真实撞向该范围；Furiosa 的 driving/route-control 在风险命中前持续改变双方空间关系并迫使主要追兵改道/失去接近条件。锁：`stable mobile protected-range x=true_on_tested_escape_window`。
 
-## 3｜负向护栏｜3 controls / 3 works
+## 3｜负向护栏｜4 controls / 4 works
 
 ### 3.1 《John Wick》｜posthoc sanction ≠ pre-effect exclusion
 Continental 规则与 Winston 的处罚 `x` 真实，但 Ms. Perkins 仍能在酒店内部实际攻击 John，处罚发生在违规之后。锁：`post-effect punishment x ≠ pre-effect protected-range x`。
@@ -86,6 +86,25 @@ Ray 对 minivan 的 current driving/use 真实，但 crowd 现实突破车辆边
 
 ### 3.3 《Panic Room》｜one risk-channel protected ≠ all-hazard protection
 panic room 对常规 human door/wall entry 的 pre-effect exclusion 真实成功，但攻击者通过 ventilation/propane channel 让风险进入内部。锁：**同一边界必须按 risk-channel / ingress-path 分账；一个入口成功不允许倒灌 all-hazard protection。**
+
+### 3.4 《Home Alone》｜partial-defense-effect ≠ stable protected-range
+Kevin 对住宅入口与内部路径布置的多组陷阱真实造成 Harry/Marv 受伤、延迟、退却与改道，因此局部防御效果不能被抹掉；但二人仍现实突破住宅边界、进入内部并持续追击，随后还在邻宅抓住 Kevin。最终解除人身风险的关键节点由 Marley 从后方击倒二人、警方随后逮捕完成，并非 Kevin 的住宅边界 `x` 单独稳定排除风险。
+
+锁：
+
+```text
+partial-defense-effect
++ repeated delay / injury / rerouting
+≠ stable protected-range
+
+局部防御反复成功
+≠ 风险被稳定排除在保护边界之外
+
+第三方最终解围
+≠ 主体 protected-range x 的成功证明
+```
+
+本条与《War of the Worlds》不同：后者是移动载体边界直接被突破；本条显示即使防御节点多次现实奏效，只要攻击风险最终仍突破并持续进入 protected object/range，就不能把“有效防御”升级成“stable protected-range”。
 
 ## 4｜动态迁移｜1 control / 1 work
 
@@ -150,6 +169,7 @@ x_scope_dynamic_transition_increment: false
 
 - vs Panic Room：Panic Room 锁同一 boundary 上 `risk channel A PASS / risk channel B FAIL`；The Martian 固定同一 risk channel，看 boundary integrity 导致 `ON→OFF→ON`。
 - vs War of the Worlds：Ray 证明 vehicle-use `x=true` 但保护从未通过真实 mobile risk-test；Watney 则是保护先成立、再真实失效、再恢复。
+- vs Home Alone：Kevin 的局部防御节点多次有效，但从未形成对入侵风险的 stable boundary PASS；Watney 则有同一 risk-channel 已验证的 ON、OFF 与恢复后的 ON。
 - vs ordinary x-scope dynamic：Watney 的 Hab use/management/repair 权限没有在 breach 时被撤销，因此不计 `x_scope_dynamic_transition`。
 
 ## 5｜不得倒灌的邻近概念
@@ -168,7 +188,8 @@ x_scope_dynamic_transition_increment: false
 - 主体宣称“这里安全”；
 - 仅仅拥有/驾驶交通工具；
 - 某个 risk-channel 成功后倒灌为 all-hazard protection；
-- underlying use/management x 仍在，因此假定 protected-range 永远 ON。
+- underlying use/management x 仍在，因此假定 protected-range 永远 ON；
+- 多个陷阱/防御节点反复造成伤害或改道，因此假定 stable protected-range 已成立。
 
 ## 6｜与 strict-v2 的关系
 
@@ -180,7 +201,7 @@ protected-range `x` 过门不等于 strict-v2 过门。仍必须独立验证 `zn
 strict_v2_verified_positive_increment: 0
 ```
 
-Watney 本轮不锁 `zn`；Furiosa 案虽两端都较强，但 War Rig 仍有独立运输/驾驶/任务用途，可作为 x 端 competing purpose/ranking anchor，因此也不破 strict 零。
+Home Alone 本轮不锁 `zn`；Watney 本轮不锁 `zn`；Furiosa 案虽两端都较强，但 War Rig 仍有独立运输/驾驶/任务用途，可作为 x 端 competing purpose/ranking anchor，因此也不破 strict 零。
 
 ## 7｜后续只收高信息增益
 
@@ -190,7 +211,8 @@ Watney 本轮不锁 `zn`；Furiosa 案虽两端都较强，但 War Rig 仍有独
 2. underlying use/management x 不变，但 exclusion/blocking node 被撤回、耗尽或替代后的 protected-range 动态；
 3. mobile boundary 的控制权转移/失效；
 4. subject-specific access gate 与第三方底层执行节点如何分账；
-5. strict-v2 只在 protected-range `x` 与独立 `zn` 同窗同层都过门且 competing anchors 冻结后重新冲 verified positive。
+5. 与 Home Alone 最近邻的“partial defense 多次生效但风险最终完全被主体自身边界稳定阻断”的成功镜像，用来分清 effect density 与 stable exclusion；
+6. strict-v2 只在 protected-range `x` 与独立 `zn` 同窗同层都过门且 competing anchors 冻结后重新冲 verified positive。
 
 ## 8｜current 统计
 
@@ -198,8 +220,8 @@ Watney 本轮不锁 `zn`；Furiosa 案虽两端都较强，但 War Rig 仍有独
 criterion_version: protected-range-risk-test-v1_20260831
 positive_controls: 4
 positive_cross_work_count: 4
-negative_guards: 3
-negative_guard_works: 3
+negative_guards: 4
+negative_guard_works: 4
 dynamic_transition_controls: 1
 dynamic_transition_works: 1
 knowledge_status: pending-review
