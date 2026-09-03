@@ -46,8 +46,8 @@ strict_canonical_calibration_controls: 3
 x_scope_current_criterion: current-x-scope-distinction-v1_20260830
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 23
-x_scope_boundary_guard_works: 20
+x_scope_boundary_guards: 24
+x_scope_boundary_guard_works: 21
 x_scope_dynamic_transition_controls: 27
 x_scope_dynamic_transition_works: 24
 x_scope_decision_structure_calibration_controls: 6
@@ -124,12 +124,26 @@ partial-defense-effect
 
 本条不计 ordinary x-scope，不计 protected-range positive/dynamic，也不锁 `zn`。
 
+### 2.5 Dr. Strangelove / Major Kong｜已枚举接口全灭 ≠ path-set exhaustion
+
+最终轰炸窗口中，normal、backup、emergency power、manual override、explosive bolts 等已枚举 bomb-door interfaces 连续失败，但 Kong 随后通过直接进入 bomb bay 修补/旁路受损线路，最终让 bomb doors 现实打开。
+
+```text
+enumerated interfaces exhausted
+≠ all currently relevant paths exhausted
+```
+
+因此在宣告 `surviving path count = 0` 前，必须显式审计 bypass / direct repair / delegated route / parallel authority / emergency interface 等剩余路径。该案不是 P1 path-exhaustion dynamic 正例，因为 target effect 最终仍 ON；它只锁 path-set completeness 的前置边界护栏。
+
+统计：x-scope boundary `23/20 → 24/21`；dynamic `+0`；strict `+0`；protected-range `+0`。
+
 ## 3｜本轮不计 / 去重
 
 - Papers, Please 只计新的 permission-type dynamic，不计 ordinary positive。
 - XCOM 2 只计 quantitative-cap dynamic，不计 new permission type。
 - Pacific Rim 不重复增加 control/work。
 - Home Alone 只计 protected-range negative guard `+1/+1`；不把陷阱效果密度倒灌为 stable protected-range。
+- Dr. Strangelove 只计 x-scope boundary guard `+1/+1`；不冒充 path-exhaustion dynamic，也不锁 `zn`。
 - strict-v2 本轮 `+0`；pending-review 仍11。
 
 ## 4｜current 强化规则
@@ -155,6 +169,7 @@ joint-final decision ≠ joint execution
 substitute node OFF ≠ original actor automatically ON
 partial-defense-effect ≠ stable protected-range
 third-party final rescue ≠ subject-specific protected-range success
+enumerated-interface exhaustion ≠ path-set exhaustion
 ```
 
 ### 4.1 protected-range failure
@@ -162,6 +177,9 @@ stable protected-range 不是“防御有用”的同义词。局部节点可以
 
 ### 4.2 quantitative scope
 同一 permission family 的 cardinality ceiling 是独立 scope 变量；`4→5→6` 与 `100→50→25→0` 都是 x-scope dynamic，不应误写成 permission type 变化。
+
+### 4.3 path-set completeness
+path-exhaustion 必须证明的是 current relevant path set 真正清零，而不是“UI 上能想到的几个按钮都失效”。已知接口失败、常规路径失效、主备系统同时失效，都只能作为路径关闭证据；只有 bypass、direct repair、delegated route、parallel authority、emergency interface 等 competing paths 被审计后，才允许把 known-path count=0 升级为 surviving relevant path count=0。
 
 ## 5｜strict-v2
 
@@ -173,7 +191,7 @@ precondition: 20/9
 canonical_calibration: 3
 ```
 
-P0 继续未破零；不恢复废止的 absolute-unique-anchor。Home Alone 不锁 `zn`，也不触发 strict 重算。
+P0 继续未破零；不恢复废止的 absolute-unique-anchor。Home Alone 与 Dr. Strangelove 均不锁 `zn`，也不触发 strict 重算。
 
 ## 6｜protected-range
 
@@ -188,11 +206,11 @@ Home Alone 新增的是 partial-defense failure guard，不是普通正例。
 
 ## 7｜同步债
 
-本 working ledger 与实时待审议清单、protected-range 专项现统一为：
+本 working ledger 已吸收 Dr. Strangelove，并与 current evidence truth 对齐为：
 
 ```text
 strict-precondition 20/9
-x-scope boundary   23/20
+x-scope boundary   24/21
 x-scope dynamic    27/24
 decision calibration 6
 protected-range    4/4 positive + 4/4 negative + dynamic 1/1
@@ -203,6 +221,7 @@ pending_review_count 11
 仍需安全全文同步：
 
 ```text
+zn-x火轴待审议清单.md
 strict-v2 专项
 x-scope 专项
 zn-x火轴研究总纲_20260827.md
@@ -213,7 +232,7 @@ zn-x火轴研究总纲_20260827.md
 ## 8｜下一批最高信息增益
 
 1. **P0 strict-v2 first verified positive**：继续不降门。
-2. **path exhaustion dynamic**：alternative paths 逐一关闭，surviving path count=0 后 target-effect reality-test OFF。
+2. **path exhaustion dynamic**：先证明 path-set completeness，再要求多个 independent paths 逐一关闭，surviving relevant path count=0 后 target-effect reality-test OFF。
 3. **quantitative cap same-work reversible dynamic**：same actor / same permission family 下 `high→low→high` 或 `low→high→low`。
 4. **edge-veto / downstream disposition 撤回或对象子集分叉**：Papers, Please 正向扩张之后找反向或 scope split。
 5. **execution topology 新 trigger**：Pacific Rim 基础槽已填，只收不同 mandatory-node/trigger 机制。
