@@ -48,16 +48,16 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 23
 x_scope_boundary_guard_works: 20
-x_scope_dynamic_transition_controls: 25
-x_scope_dynamic_transition_works: 22
+x_scope_dynamic_transition_controls: 27
+x_scope_dynamic_transition_works: 24
 x_scope_decision_structure_calibration_controls: 6
 x_scope_knowledge_status: pending-review
 
 protected_range_current_criterion: protected-range-risk-test-v1_20260831
 protected_range_v1_verified_positive_controls: 4
 protected_range_v1_verified_positive_works: 4
-protected_range_v1_verified_negative_guards: 3
-protected_range_v1_verified_negative_guard_works: 3
+protected_range_v1_verified_negative_guards: 4
+protected_range_v1_verified_negative_guard_works: 4
 protected_range_v1_dynamic_controls: 1
 protected_range_v1_dynamic_works: 1
 protected_range_knowledge_status: pending-review
@@ -65,81 +65,72 @@ protected_range_knowledge_status: pending-review
 pending_review_count: 11
 ```
 
-## 2｜本轮新增四条 evidence 归并
+## 2｜近期未归并 evidence 统一吸收
 
-### 2.1 The Terminal / Frank Dixon｜transition-blocking ≠ resultant-state disposition
+### 2.1 Papers, Please / Inspector｜edge-veto → downstream detention disposition
 
-Dixon/CBP 对 Viktor 的 US-entry transition 拥有现实有效的拒绝 gate，但同一窗口没有 federal detention 权，也不能仅凭拒绝入境就选择 Viktor 后续任意状态。锁：
-
-```text
-permission to block transition A→B
-≠ permission to choose arbitrary resultant state C/D/E
-
-edge veto
-≠ node/state disposition
-```
-
-统计：boundary `22/19 → 23/20`。
-
-### 2.2 Evangelion Episode 19 / Shinji｜execution-routing restoration mirror
-
-Episode 18 已锁 Shinji pilot execution x `ON→OFF`。Episode 19 中 Rei 与 Dummy substitute paths 均被 Unit-01 拒绝；随后 Shinji 返回，Unit-01 再次现实响应其操纵并出击。
+Inspector 前期已经拥有 approve/deny entrant 的 admission transition control，但没有 general detention disposition。Day 5 起，规则与界面新增 `detain`，并由 guards 现实完成 custody transfer。
 
 ```text
-substitute OFF
-≠ original actor automatically ON
+transition-blocking x
+≠ resultant-state disposition x
 
-prior execution x OFF
-→ original actor returns
-→ same-object reality-test 再次响应
-→ execution x OFF→ON
+edge-veto only
+→ rule/interface trigger
+→ edge-veto + conditional downstream detention disposition
 ```
 
-同作品同人物，只增加 control：`23/21 → 24/21`。
+统计：dynamic `25/22 → 26/23`。
 
-### 2.3 The Martian / Hermes crew｜joint final decision ≠ joint execution
+### 2.2 XCOM 2 / Commander｜quantitative permission-cap expansion
 
-Rich Purnell Maneuver 的 final acceptance 要求 Hermes 五人 unanimous，但现实执行由 Martinez 负责 course plot/execute，Johanssen 单独解除 remote override。
+同一 actor、同一 mission-deployment roster、同一 select/deploy permission family 下，Squad Size I / II 把现实最大部署人数 `4 → 5 → 6`。
 
 ```text
-joint/shared final decision
-≠ joint/shared execution
-
-role-divided execution
-≠ automatic joint-final inference
+permission type unchanged
+≠ quantitative scope unchanged
 ```
 
-统计：decision calibration `5 → 6`。
+统计：dynamic `26/23 → 27/24`。本条与 King Lear `100→50→25→0` 构成跨作品 quantitative expansion/contraction 镜像。
 
-### 2.4 Harry Potter and the Deathly Hallows / Harry｜term-triggered permission scope expansion
+### 2.3 Pacific Rim｜已填 execution-topology 基础槽纠偏
 
-Harry 的技术施法能力在17岁前后都存在；变化的是 underage-sorcery / Trace 这一明确 term gate。17岁时 Trace 自动失效，随后 Harry 立即在校外现实施法完成 same-layer reality-test。
+Raleigh / Gipsy Danger 已有 evidence-locked 的：
 
 ```text
-technical capability retained
-≠ permission scope unchanged
-
-same actor/object/use-permission family
-+ explicit term/age gate expires
-+ after-stage reality-test succeeds
-→ current permission scope expansion
+joint execution
+→ unilateral emergency execution
+→ joint execution restoration
 ```
 
-本条不是 King Lear `100→50→25→0` 的 quantitative cap 反向镜像，而是 **term-triggered spatial/legal scope expansion**。Harry Potter 此前未进入 current dynamic-work 集合，因此：
+且存在 same actor / same object / same permission family / actual execution reality-test。该槽已计入既有 dynamic ledger；这里只修缺口状态，不重复加 control/work。
+
+### 2.4 Home Alone / Kevin｜partial-defense-effect ≠ stable protected-range
+
+Kevin 的住宅陷阱反复现实造成 Harry/Marv 受伤、延迟与改道，但二人仍突破住宅边界、持续进入并追击，最终还在邻宅抓住 Kevin；解除最终人身风险的关键节点由 Marley 与警方第三方完成。
 
 ```text
-24 / 21
-→ 25 dynamic controls / 22 independent works
+partial-defense-effect
++ repeated delay / injury / rerouting
+≠ stable protected-range
 ```
+
+因此 protected-range negative 在同一 `protected-range-risk-test-v1_20260831` 下：
+
+```text
+3 controls / 3 works
+→ 4 controls / 4 works
+```
+
+本条不计 ordinary x-scope，不计 protected-range positive/dynamic，也不锁 `zn`。
 
 ## 3｜本轮不计 / 去重
 
-- The Terminal 不计 dynamic，只计新 boundary。
-- Evangelion 19 与 Episode 18 同作品同主体同对象，只 `+1 control/+0 work`。
-- The Martian 只计 decision calibration，不计 ordinary positive/boundary/dynamic。
-- Harry 不计 capability delta；变化的是 permission scope，不是技术能力。
-- Harry 不冒充 quantitative permission-cap expansion；真正 low-cap→high-cap 数量型镜像仍缺。
-- strict-v2 本轮 `+0`；protected-range 本轮 `+0`；pending-review 仍11。
+- Papers, Please 只计新的 permission-type dynamic，不计 ordinary positive。
+- XCOM 2 只计 quantitative-cap dynamic，不计 new permission type。
+- Pacific Rim 不重复增加 control/work。
+- Home Alone 只计 protected-range negative guard `+1/+1`；不把陷阱效果密度倒灌为 stable protected-range。
+- strict-v2 本轮 `+0`；pending-review 仍11。
 
 ## 4｜current 强化规则
 
@@ -155,26 +146,22 @@ x = actor
 × current window
 ```
 
-新增固定分账：
+继续固定：
 
 ```text
 transition-blocking x ≠ resultant-state disposition x
+permission type retained ≠ quantitative cap retained
 joint-final decision ≠ joint execution
 substitute node OFF ≠ original actor automatically ON
-technical capability retained ≠ permission scope unchanged
+partial-defense-effect ≠ stable protected-range
+third-party final rescue ≠ subject-specific protected-range success
 ```
 
-### 4.1 restoration
-execution-x 恢复必须看到 original actor 重新进入 same-object routing 后 reality-test 成功；替代节点退出本身不够。
+### 4.1 protected-range failure
+stable protected-range 不是“防御有用”的同义词。局部节点可以反复伤害、延迟、迫使改道，但只要同一 risk 仍现实突破被测 boundary，并且最终排除依赖第三方主要完成，就不能计 stable protected-range success。
 
-### 4.2 decision/execution 正交
-`consultation_structure ≠ final_decision_structure ≠ execution_structure`。共同批准与共同执行不能互相倒推。
-
-### 4.3 edge control / state disposition
-成功 veto 一个 transition，只锁该 edge；若要升级 resultant-state disposition，必须对后续 state transitions 另做 subject-specific reality-test。
-
-### 4.4 term-triggered scope migration
-年龄、期限、毕业、解禁、合同到期等名义节点本身不自动产生 x 变化。只有明确 permission gate 实际改变，并在 transition 后完成 same-layer reality-test，才可记 dynamic expansion/contraction。
+### 4.2 quantitative scope
+同一 permission family 的 cardinality ceiling 是独立 scope 变量；`4→5→6` 与 `100→50→25→0` 都是 x-scope dynamic，不应误写成 permission type 变化。
 
 ## 5｜strict-v2
 
@@ -186,29 +173,29 @@ precondition: 20/9
 canonical_calibration: 3
 ```
 
-P0 继续未破零；不恢复废止的 absolute-unique-anchor。
+P0 继续未破零；不恢复废止的 absolute-unique-anchor。Home Alone 不锁 `zn`，也不触发 strict 重算。
 
 ## 6｜protected-range
 
 ```yaml
 positive: 4/4
-negative: 3/3
+negative: 4/4
 dynamic: 1/1
 status: pending-review
 ```
 
-本批无新机制。
+Home Alone 新增的是 partial-defense failure guard，不是普通正例。
 
 ## 7｜同步债
 
-本 working ledger 与实时待审议清单现统一为：
+本 working ledger 与实时待审议清单、protected-range 专项现统一为：
 
 ```text
 strict-precondition 20/9
 x-scope boundary   23/20
-x-scope dynamic    25/22
+x-scope dynamic    27/24
 decision calibration 6
-protected-range    4/4 positive + 3/3 negative + dynamic 1/1
+protected-range    4/4 positive + 4/4 negative + dynamic 1/1
 strict verified positive 0/0
 pending_review_count 11
 ```
@@ -226,9 +213,9 @@ zn-x火轴研究总纲_20260827.md
 ## 8｜下一批最高信息增益
 
 1. **P0 strict-v2 first verified positive**：继续不降门。
-2. **quantitative permission-cap expansion mirror**：真正补 King Lear 的数量型反向，不得用 Harry 的 term-triggered spatial/legal expansion冒充。
-3. **path exhaustion dynamic**：alternative paths 逐一关闭，surviving path count=0 后 target-effect reality-test OFF。
-4. **joint/shared execution ↔ unilateral execution 真动态**：same actor/object/permission family，两阶段都 reality-test。
-5. **transition veto + downstream disposition 正向镜像**：先证 edge veto，再独立证 resultant-state disposition。
-6. protected-range 只收同边界、同 risk-channel 动态与新失败镜像。
+2. **path exhaustion dynamic**：alternative paths 逐一关闭，surviving path count=0 后 target-effect reality-test OFF。
+3. **quantitative cap same-work reversible dynamic**：same actor / same permission family 下 `high→low→high` 或 `low→high→low`。
+4. **edge-veto / downstream disposition 撤回或对象子集分叉**：Papers, Please 正向扩张之后找反向或 scope split。
+5. **execution topology 新 trigger**：Pacific Rim 基础槽已填，只收不同 mandatory-node/trigger 机制。
+6. **protected-range failure mirror**：与 Home Alone 最近邻，找 partial defense 多次成功后主体自身边界最终仍稳定排除同一 risk 的成功镜像，区分 effect density 与 stable exclusion。
 7. deferred 只在新证据出现时二审。
