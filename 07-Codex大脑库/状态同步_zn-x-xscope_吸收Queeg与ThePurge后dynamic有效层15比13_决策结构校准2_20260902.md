@@ -47,7 +47,7 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 24
 x_scope_boundary_guard_works: 21
-x_scope_dynamic_transition_controls: 28
+x_scope_dynamic_transition_controls: 29
 x_scope_dynamic_transition_works: 25
 x_scope_decision_structure_calibration_controls: 6
 x_scope_knowledge_status: pending-review
@@ -66,52 +66,53 @@ pending_review_count: 11
 
 ## 2｜本批吸收与去重
 
-### 2.1 Miracle (2004) / Viktor Tikhonov｜reversible quantitative cap
+### 2.1 Miracle (2004)｜reversible quantitative cap
 
-源 evidence 已在 `ba82862f84e7f0059c054f566e6d2c85298f6732` 锁定，同一 actor / object layer / deploy-select permission family 在同一比赛窗口发生：
+已锁 same actor / same object layer / same permission family 的 `5→4→5`，只计一次：`27/24 → 28/25`。temporary cap contraction ≠ permission family 消失；cap restoration ≠ new permission type。
 
-```text
-5 skaters
-→ penalty gate ON
-→ 4 skaters
-→ penalty interval ends
-→ 5 skaters
-```
+### 2.2 Papers, Please｜mandatory procedural execution gate
 
-锁定：
+source evidence commit `0175fa89a8531663b4e5193800eaccdd5e171207` 已锁：
 
 ```text
-quantitative cap 可在 permission family 不变时现实 high→low→high
+same actor
++ same object layer
++ same denial permission
++ same unilateral final-decision holder
 
-temporary cap contraction ≠ permission family 消失
-cap restoration ≠ new permission type acquisition
+direct unilateral execution
+→ Day-18 rule trigger
+→ mandatory inspection/interrogation unlock node inserted
+→ procedurally gated unilateral execution
 ```
 
-该 evidence 只计一次：`x-scope dynamic 27/24 → 28/25`。实时待审议清单已在 `61e639a439a11681871d0b5ef2331d1a3841716e` 吸收，本文件只同步 current truth，不重复增加 control/work。
+该作品此前已作为 independent work 进入 x-scope ledger，因此本机制只增 control、不增 work：
 
-### 2.2 继续有效的近期高价值机制
+```text
+x-scope dynamic 28/25 → 29/25
+```
 
-- Papers, Please：`transition-blocking x ≠ resultant-state disposition x`；edge-veto 与 downstream detention disposition 分账。
+锁：
+
+```text
+permission retained ≠ direct execution path retained
+mandatory procedural unlock ≠ joint final decision
+same final-decision holder ≠ same execution topology
+```
+
+状态纠偏文件 `状态同步_zn-x-xscope_PapersPlease强制程序门控已锁但实时待审议仍停28比25故effective应为29比25_20260904.md` 本身不重复计数。
+
+### 2.3 继续有效的近期高价值机制
+
+- Papers, Please earlier：`transition-blocking x ≠ resultant-state disposition x`；edge-veto 与 downstream detention disposition 分账。
 - XCOM 2：permission family 不变时 quantitative cap 可 `4→5→6`。
-- Dr. Strangelove：`enumerated-interface exhaustion ≠ path-set exhaustion`；宣告 `surviving relevant path count=0` 前必须审计 direct repair / bypass / delegated / parallel / emergency / alternate execution paths。
-- Pacific Rim：joint execution → unilateral emergency execution → joint restoration 基础槽已填，停止重复采同 topology。
-- Home Alone：`partial-defense-effect ≠ stable protected-range`；局部防御反复成功也不能替代 stable exclusion。
+- Dr. Strangelove：`enumerated-interface exhaustion ≠ path-set exhaustion`；宣告 path count=0 前审计 direct repair / bypass / delegated / parallel / emergency / alternate execution paths。
+- Pacific Rim：joint execution → unilateral emergency execution → joint restoration 基础槽已填。
+- Home Alone：`partial-defense-effect ≠ stable protected-range`。
 
 ## 3｜strict-v2 当前状态
 
-verified positive 仍为 `0/0`，不降门。
-
-固定：
-
-- same current window；
-- same object layer；
-- `zn` 与 `x` 分别独立过 current canonical；
-- `zn` 先用不引用被测 `x` 的语言独立命名；
-- 禁止 posthoc composite-x bundling；
-- 冻结第三方 veto / 产权 / 保护 / 制度 competing anchors；
-- `zn→x` 与 `x→zn` 分账；
-- `x→zn` 只要求 current-layer relevant reality-anchor gap，不恢复 absolute-unique-anchor；
-- execution/amplification、瞬时机会、一次越权、决定性结果、职责、角色规则、战略收益、公开自罚、名义权力不得自动计 strict。
+verified positive 仍为 `0/0`，不降门。same current window、same object layer、zn/x 独立过 canonical、zn 非循环命名、subject-specific x attribution、third-factor freeze、`zn→x` / `x→zn` 分账继续有效；`x→zn` 只要求 current-layer relevant reality-anchor gap，不恢复 absolute-unique-anchor。
 
 ## 4｜x-scope current 纪律
 
@@ -119,7 +120,7 @@ verified positive 仍为 `0/0`，不降门。
 
 `actor / object / permission_type / scope / quantitative_cap / term / revocability / return_obligation / same-layer_pre-effect_veto / global_override / ultimate_title / source_decision / consultation / final_decision / execution / co-decision_nodes / current window`。
 
-继续锁定：
+继续锁：
 
 ```text
 use ≠ ownership
@@ -132,38 +133,35 @@ source authorization ≠ execution
 edge-veto ≠ downstream disposition
 permission type unchanged ≠ quantitative scope unchanged
 enumerated interfaces exhausted ≠ relevant path set exhausted
+permission retained ≠ direct execution path retained
+same final-decision holder ≠ same execution topology
 ```
 
 ## 5｜protected-range current 纪律
 
-current `4 positive / 4 works + 4 negative / 4 works + 1 dynamic / 1 work`，已 pending-review。
+current `4 positive / 4 works + 4 negative / 4 works + 1 dynamic / 1 work`，已 pending-review。继续区分 no-test / failed-test / successful-test；正向必须 boundary-on + object-inside + real risk enters + subject-specific current x 在结果前稳定 block/deny/redirect + 非第三方主要完成。partial-defense-effect 不等于 stable protected-range。
 
-正向至少要求：
+## 6｜本轮分账
 
 ```text
-boundary-on
-+ object-inside
-+ real risk enters
-+ subject-specific current x 在结果发生前稳定 block / deny / redirect
-+ 非第三方主要完成
+new mechanism: 0
+new control: 0
+new work: 0
+state synchronization: realtime registry + working ledger
 ```
 
-继续区分 no-test / failed-test / successful-test；partial-defense-effect 不等于 stable protected-range。
+Papers, Please mandatory procedural gate 的 `+1 control/+0 work` 已由 source evidence commit 完成，本轮不再加第二次。
 
-## 6｜本轮不计
-
-- Miracle 不重复计第二个 dynamic control/work。
-- strict `+0`；protected-range `+0`；x-scope boundary `+0`；decision calibration `+0`。
-- 水轴新提交不迁移理论结论到火轴。
+strict `+0`；protected-range `+0`；x-scope boundary `+0`；decision calibration `+0`。
 
 ## 7｜同步状态
 
 ```yaml
-realtime_review_registry: synced_to_28_25
-working_ledger: synced_to_28_25
+realtime_review_registry: synced_to_29_25
+working_ledger: synced_to_29_25
 protected_range_specialist: synced_to_4_4_positive__4_4_negative__1_1_dynamic
 strict_specialist: stale_at_precondition_17_6__current_20_9
-x_scope_specialist: stale_at_boundary_16_13__dynamic_14_12__decision_1__current_24_21__28_25__6
+x_scope_specialist: stale_at_boundary_16_13__dynamic_14_12__decision_1__current_24_21__29_25__6
 research_overview: stale_at_strict_precondition_17_6_and_old_x_scope_counts
 ```
 
@@ -174,5 +172,5 @@ research_overview: stale_at_strict_precondition_17_6_and_old_x_scope_counts
 1. P0：strict-v2 第一份真正 verified positive，继续 `0/0` 且不降门。
 2. P1：path-set completeness 后真正的 `n>1→1→0→target-effect OFF`。
 3. P3：edge-veto retained，同时 downstream detention/disposition `ON→OFF` 或 eligible subset 真实缩窄。
-4. execution topology 只收不同 trigger / mandatory-node 机制。
+4. mandatory procedural unlock 基础槽已填；execution topology 后续只收不同 trigger/topology，不再采“多一道程序门”换皮。
 5. 下一次归并优先安全同步 strict 专项、x-scope 专项和火轴研究总纲，不再新建状态说明文件。
