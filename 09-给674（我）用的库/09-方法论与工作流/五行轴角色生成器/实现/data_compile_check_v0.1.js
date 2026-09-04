@@ -102,6 +102,24 @@ function validateMappingRegistry(mappingRegistry, mappingData, options = {}) {
   return { mapping_version: projection.mapping_version, registered_ids: projection.mapping_ids.length };
 }
 
+function validateProjectionCoverage(registry, mappingData) {
+  const projection = registry.runtime_projection || {};
+  const blocked = Array.isArray(projection.data_blocked_symbols) ? projection.data_blocked_symbols : [];
+  const pendingDeclared = Array.isArray(projection.pending_review_symbols) ? projection.pending_review_symbols : [];
+  const bySymbol = new Map(CANONICAL.map(s => [s, []]));
+  for (const m of mappingData.mappings) if (bySymbol.has(m.symbol)) bySymbol.get(m.symbol).push(m);
+  const usableSymbols = CANONICAL.filter(s => bySymbol.get(s).some(m => m.status === 'candidate' || m.status === 'evidence-supported'));
+  const pendingOnlySymbols = CANONICAL.filter(s => bySymbol.get(s).length > 0 && bySymbol.get(s).every(m => m.status === 'pending-review'));
+  const noMappingSymbols = CANONICAL.filter(s => bySymbol.get(s).length === 0);
+  const staleBlocked = blocked.filter(s => usableSymbols.includes(s));
+  if (staleBlocked.length) fail('DATA_PROJECTION_STALE_BLOCKED_SYMBOL', '已有可用映射的 symbol 仍被标记 data_blocked', { symbols: staleBlocked });
+  const missingBlocked = noMappingSymbols.filter(s => !blocked.includes(s));
+  if (missingBlocked.length) fail('DATA_PROJECTION_MISSING_BLOCKED_SYMBOL', '无映射 symbol 未登记 data_blocked', { symbols: missingBlocked });
+  const pendingMismatch = pendingOnlySymbols.filter(s => !pendingDeclared.includes(s)).concat(pendingDeclared.filter(s => !pendingOnlySymbols.includes(s)));
+  if (pendingMismatch.length) fail('DATA_PROJECTION_PENDING_MISMATCH', 'pending_review_symbols 与实际映射状态不一致', { symbols: [...new Set(pendingMismatch)], actual_pending_only: pendingOnlySymbols });
+  return { usable_symbols: usableSymbols, pending_only_symbols: pendingOnlySymbols, data_blocked_symbols: noMappingSymbols };
+}
+
 function validateRuntimeInput(runtimeInput, registry) {
   if (!runtimeInput || typeof runtimeInput !== 'object') fail('DATA_RUNTIME_INPUT_INVALID', 'runtime input 必须是对象');
   const symbols = runtimeInput.canonical_symbols || (runtimeInput.symbol ? [runtimeInput.symbol] : []);
@@ -117,8 +135,9 @@ function validateBundle({ triggerRegistry, mappingRegistry, mappingData, runtime
   const registry = validateTriggerRegistry(triggerRegistry, { expectedParserVersion, expectedMappingVersion });
   const mappings = validateMappingData(mappingData);
   const projection = validateMappingRegistry(mappingRegistry, mappingData, { expectedMappingVersion });
+  const coverage = validateProjectionCoverage(triggerRegistry, mappingData);
   const runtime = runtimeInput ? validateRuntimeInput(runtimeInput, triggerRegistry) : null;
-  return { status: 'PASS', registry, mappings, projection, runtime };
+  return { status: 'PASS', registry, mappings, projection, coverage, runtime };
 }
 
-module.exports = { CANONICAL, REQUIRED_MAPPING_FIELDS, DataCompileError, structureKey, validateTriggerRegistry, validateMappingData, validateMappingRegistry, validateRuntimeInput, validateBundle };
+module.exports = { CANONICAL, REQUIRED_MAPPING_FIELDS, DataCompileError, structureKey, validateTriggerRegistry, validateMappingData, validateMappingRegistry, validateProjectionCoverage, validateRuntimeInput, validateBundle };
