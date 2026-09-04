@@ -1,0 +1,37 @@
+{
+  "schema_version": "v0.1",
+  "parser_version": "trigger-parser-v0.1",
+  "canonical_symbols": ["x并z", "zx", "zn", "nz", "nx", "xn", "xz", "x", "z", "n"],
+  "aliases": {
+    "x并z": ["x并z", "X并Z"],
+    "zx": ["zx", "ZX"],
+    "z": ["z", "Z"],
+    "zn": ["zn", "ZN"],
+    "nz": ["nz", "NZ"],
+    "n": ["n", "N"],
+    "nx": ["nx", "NX"],
+    "xn": ["xn", "XN"],
+    "x": ["x", "X"],
+    "xz": ["xz", "XZ"]
+  },
+  "connectors": ["+", "＋"],
+  "subject_joiners": ["的"],
+  "default_genre_context": "default",
+  "default_seed": "74",
+  "known_modules": ["世界观", "服装", "发型", "身体/脸", "道具", "身份/行为", "关系", "一生", "构图", "具象名词"],
+  "runtime_projection": {
+    "mapping_version": "世界观_机器映射_v0.1",
+    "implemented_modules": ["世界观"],
+    "data_blocked_symbols": ["nz", "n", "nx", "xn", "x", "xz", "x并z"],
+    "pending_review_symbols": ["z"]
+  },
+  "rules": {
+    "longest_match": true,
+    "x并z_is_atomic": true,
+    "multi_requires_explicit_plus": true,
+    "surface_words_never_define_symbol": true,
+    "unknown_token_policy": "ERROR_UNKNOWN_TOKEN",
+    "empty_subject_policy": "ERROR_EMPTY_SUBJECT",
+    "ambiguous_policy": "ERROR_AMBIGUOUS_TOKEN"
+  }
+}
