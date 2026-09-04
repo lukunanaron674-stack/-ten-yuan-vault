@@ -3,9 +3,9 @@ type: five-axis-character-generator-application-layer
 status: candidate
 knowledge_status: candidate
 authority_level: L5
-version: v0.5
+version: v0.6
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-05
 scope: [五行轴角色生成器, 应用映射, 世界观, 服装, 发型, 人生, 具象名词, 题材翻译]
 may_override_canonical: false
 canonical_read:
@@ -80,7 +80,7 @@ canonical_read:
 | z | v0.1-pending | - | - | - | - | - | - | - | - | - | - | - |
 | zn | v0.1 | - | - | - | - | - | - | - | - | - | - | - |
 | nz | v0.1 | - | - | - | - | - | - | - | - | - | - | - |
-| n | - | - | - | - | - | - | - | - | - | - | - | - |
+| n | v0.1 | - | - | - | - | - | - | - | - | - | - | - |
 | nx | - | - | - | - | - | - | - | - | - | - | - | - |
 | xn | - | - | - | - | - | - | - | - | - | - | - | - |
 | x | - | - | - | - | - | - | - | - | - | - | - | - |
@@ -102,6 +102,7 @@ canonical_read:
 - `z × 世界观` → `映射/z_世界观_v0.1.md`，当前为 `pending-review`
 - `zn × 世界观` → `映射/zn_世界观_v0.1.md`
 - `nz × 世界观` → `映射/nz_世界观_v0.1.md`
+- `n × 世界观` → `映射/n_世界观_v0.1.md`
 
 ### z 口径同步债
 
@@ -135,6 +136,19 @@ z 信息卡/准度卡：z = 明确认可主体对明确对象完成看见、回�
 
 `nz` 不以温暖、家、等待、怀旧、婚姻、同住成立；这些只可作为具象载体。若离开被惩罚或强制召回，优先检查 `x/xn`；若未来选择与退路持续收窄，优先检查同轴 `xz`。
 
+### n 世界观应用原则
+
+```text
+真实外→内准入
+可持续内部位置
+跨阶段现实负荷处理
+外部压力下仍保持一定承载连续性
+不得强制扣留
+重复进入后仍能真正接住
+```
+
+`n` 不以家庭、医院、避难所、房屋、温暖、母亲或善良成立；这些只可作为具象载体。若只有外部可识别入口而内部没有真实位置与负荷处理，优先检查同轴 `x并z`；若成员不能自由退出，优先检查 `x/xn/zx` 控制结构。
+
 ## 7｜执行层状态 v0.2
 
 已实现 `generator_core_v0.2.js`：single / multi / graph、deterministic seed、selective reroll、module lock、pending/rejected gate、structure dedupe、pseudo-vector guard。
@@ -154,17 +168,20 @@ symbol + module + changed_variable + relation_shape + module_grammar
 - zx 世界观：5 条；
 - z 世界观：5 条，全部 `pending-review`；
 - zn 世界观：5 条；
-- nz 世界观：5 条，全部 `candidate`。
+- nz 世界观：5 条，全部 `candidate`；
+- n 世界观：5 条，全部 `candidate`。
 
-共 20 条运行时映射，其中 z 默认不进入生产池。机器 JSON 只是 Markdown 应用映射投影，不拥有更高理论权限。
+共 25 条运行时映射，其中 z 默认不进入生产池。机器 JSON 只是 Markdown 应用映射投影，不拥有更高理论权限。
+
+世界观横向覆盖现已达到 5 个十元位置，满足进入 R2 60+ 运行时压力测试的覆盖前提；压力测试属于执行层独立工作，不在本轮映射研发中冒充已完成。
 
 ## 8｜下一轮
 
-理论映射轮转按覆盖最少进入：`n × 世界观`。
+理论映射轮转按覆盖最少进入：`nx × 世界观`。
 
 执行层并行优先级：
 
-1. 新增 `genre_translation` 的真正题材翻译规则，避免只换 genre 标签；
-2. 世界观横向覆盖达到至少 5 个十元后，做 R2 运行时 60+ 样本压力测试；
+1. 继续补真实 `genre_translation`，避免只换 genre 标签；
+2. 以当前 5 个世界观十元位置启动 R2 60+ 运行时压力测试；
 3. 服装模块开始产生可靠映射后，再测试跨模块 lock / reroll；
 4. 一生模块未建立前，`life_order_error_rate` 继续标记 `NOT_IMPLEMENTED`。
