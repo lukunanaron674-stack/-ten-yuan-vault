@@ -32,8 +32,8 @@ updated: 2026-09-04
 current criterion：`current-layer-specific-anchor-gap-v2_20260829`。
 
 ```yaml
-v2_verified_positive_controls: 0
-v2_verified_positive_works: 0
+v2_verified_positive_controls: 1
+v2_verified_positive_works: 1
 v2_deferred_former_positive_controls: 4
 v2_deferred_former_positive_works: 4
 v2_deferred_new_candidates: 0
@@ -47,7 +47,14 @@ canonical_calibration_controls: 3
 historical_positive_contrasts: 1
 ```
 
-当前仍无 ≥95 的 strict-v2 verified positive。deferred former positives 维持4/4，不因旧判据或旧正例自动恢复。
+#### 首个 verified positive｜Defiance / Tuvia Bielski
+source evidence：`f28af93dea9ad02365cd29ff1fca1a276f590e0b`。
+
+同一 current window、同一 object layer 内，Tuvia 的“尽可能救更多犹太人、不因战斗效率或本组短期安全主动拒绝弱者”原则 `zn` 独立成立；其对 Bielski family camp / refugee community 的 current membership admission + internal governance boundary 构成 subject-specific stable `x`。组内“少收人更安全”的真实 competing proposal 冻结了 strategic-gain 替代解释；拿掉 `zn`，开放准入失去关键内部排序理由；拿掉该 current x，同一批求庇护者失去“被现实纳入我方持续保护成员集合”的 relevant current reality anchor。故 strict-v2 在 current criterion 下首次通过。
+
+本案只计 strict `+1 control / +1 independent work`；不顺带增加 x-scope 或 protected-range。
+
+当前 strict-v2 已破零，deferred former positives 维持4/4，不因首个正向出现而自动恢复。
 
 ### A6｜lifecycle
 `3 positive / 3 works + 2 negative guards / 2 works / pending-review`
@@ -217,8 +224,8 @@ zn_x_cooccurrence_works: 3
 zn_x_cooccurrence_negative_guards: 6
 zn_x_cooccurrence_negative_guard_works: 4
 strict_current_criterion: current-layer-specific-anchor-gap-v2_20260829
-strict_v2_verified_positive_controls: 0
-strict_v2_verified_positive_works: 0
+strict_v2_verified_positive_controls: 1
+strict_v2_verified_positive_works: 1
 strict_v2_deferred_former_positive_controls: 4
 strict_v2_deferred_former_positive_works: 4
 strict_v2_negative_guards: 7
@@ -286,10 +293,11 @@ pending_review_count: 11
 17. protected-range 中局部防御节点反复成功只证明 partial-defense-effect；若风险最终突破同一保护边界，不能升级为 stable protected-range。
 18. path exhaustion 必须先做 path-set completeness audit；已枚举 interface 全失败不等于 relevant path set 清零，direct repair / bypass / delegated / parallel / emergency / alternate execution routes 均需冻结。
 19. execution topology 必须与 final-decision topology 分账；同一 final decision holder 保持不变时，mandatory procedural unlock node 的插入仍可构成独立 dynamic transition。
+20. strict-v2 已有首个 verified positive 后，后续正向优先寻找不同题材、不同对象机制的 adversarial replication；不得继续把“破零”作为采样目标。
 
 ## D｜当前高价值缺口
 
-1. **P0：strict-v2 第一份 verified positive**，仍为 `0/0`。
+1. **P0：strict-v2 adversarial replication**：current 已为 `1 control / 1 work`；下一份必须尽量避开 Defiance 的“救援/庇护营地”同母型，验证双向 gap 能否在不同对象机制跨作品复现。
 2. **P1：path exhaustion dynamic**：多个 independent paths 预先自然识别 → alternatives 逐一关闭 → direct repair / bypass / delegated / parallel / emergency / alternate execution paths 完整审计 → surviving relevant path count=0 → target-effect reality-test OFF。
 3. **P2：quantitative cap 可逆动态已填**：Miracle (2004) 已提供 same actor + same object layer + same permission family 的 `5→4→5` reality-test；停止继续采同机制普通案例。若未来出现不同 trigger/topology 的 `low→high→low`，仅在能形成新最小差异时再收。
 4. **P3：edge-veto / downstream disposition 的撤回或分叉失败镜像**：已有 The Terminal 负边界与 Papers, Please 正向扩张；继续找 detention/disposition interface 后续被撤回但 edge veto 保留，或新增 disposition 的 eligible subset 真实缩窄。
@@ -313,6 +321,6 @@ pending_review_count: 11
 
 ## F｜同步债 / 权限边界
 
-实时清单现已吸收 Papers, Please Day18 mandatory procedural execution gate，并将 x-scope dynamic current truth 对齐为 `29 controls / 25 independent works`。working ledger 需同步到同一 `29/25`；strict-v2 专项、x-scope 专项与 `zn-x火轴研究总纲_20260827.md` 仍需按 current evidence truth 安全文同步；这些是 L4 状态同步债，不改变 L1/L2 canonical。
+实时清单已吸收 Defiance strict-v2 首个 verified positive，并保持 x-scope current truth `29 controls / 25 independent works`、protected-range `4/4 positive + 4/4 negative + 1/1 dynamic`。strict-v2 专项、x-scope 专项与 `zn-x火轴研究总纲_20260827.md` 仍需按 current evidence truth 安全文同步；这些是 L4 状态同步债，不改变 L1/L2 canonical。
 
 不得修改 L1、zn/x 信息卡、准度卡或 canonical 关系卡。已知 `x信息量卡v2` frontmatter 元数据债只登记，不由本清单修正。
