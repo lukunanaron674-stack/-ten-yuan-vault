@@ -1,0 +1,30 @@
+{
+  "planId": "five-axis-character-generator-chat-compiler",
+  "version": "0.1",
+  "status": "protocol_established",
+  "phase": "chat_skill_v0.1",
+  "repository": "lukunanaron674-stack/-ten-yuan-vault",
+  "branch": "main",
+  "skillPath": "07-Codex大脑库/skills/五行轴角色生成聊天编译器/SKILL.md",
+  "applicationRoot": "09-给674（我）用的库/09-方法论与工作流/五行轴角色生成器",
+  "intentRegistry": "09-给674（我）用的库/09-方法论与工作流/五行轴角色生成器/数据/chat_intent_registry_v0.1.json",
+  "triggerRegistry": "09-给674（我）用的库/09-方法论与工作流/五行轴角色生成器/数据/trigger_registry_v0.1.json",
+  "currentCapabilities": [
+    "chat protocol defined",
+    "session state schema defined",
+    "lock/reroll intents defined",
+    "single/multi/graph conversation rules defined",
+    "surface-word no-back-inference gate defined",
+    "fail-closed error contract defined"
+  ],
+  "notImplemented": [
+    "chat_intent_parser executable code",
+    "session_state runtime adapter",
+    "chat regression suite 50+",
+    "direct chat-to-generator executable integration"
+  ],
+  "nextAction": "implement chat_intent_parser_v0.1 and test the 10 minimum acceptance samples",
+  "lastError": null,
+  "remoteVerified": false,
+  "verifiedCommit": null
+}
