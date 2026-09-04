@@ -7,7 +7,7 @@ axis: fire
 pair: zn-x
 governance: L1-L6文件权力与知识成熟度双轴协议_v2.0_20260827
 may_override_canonical: false
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # zn ↔ x 火轴待审议清单
@@ -69,8 +69,8 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 24
 x_scope_boundary_guard_works: 21
-x_scope_dynamic_transition_controls: 27
-x_scope_dynamic_transition_works: 24
+x_scope_dynamic_transition_controls: 28
+x_scope_dynamic_transition_works: 25
 x_scope_decision_structure_calibration_controls: 6
 knowledge_status: pending-review
 pending_review: true
@@ -104,6 +104,19 @@ same actor
 ```
 
 这是 King Lear `100→50→25→0` quantitative contraction 的真正跨作品反向镜像，不得与 Harry Potter 的 term-triggered spatial/legal expansion 混算。dynamic `26/23 → 27/24`。
+
+#### 已归并 reversible quantitative-cap｜Miracle (2004)
+Viktor Tikhonov 对同一 Soviet active-skater deployment subset、同一 deploy/select permission family，在常态五人部署下经 slashing penalty 进入临时规则 gate，现实上限 `5 → 4`；penalty / power-play interval 终止后，同一权限 family 恢复 `4 → 5`。锁：
+
+```text
+same actor
++ same object layer
++ same permission family
++ quantitative cap 5 → 4 → 5
+→ reversible quantitative permission-cap contraction/restoration
+```
+
+因此 current dynamic 从 `27/24 → 28/25`。本槽已填；后续不再采同机制普通案例。temporary cap contraction 不等于 permission family 消失，cap restoration 也不等于新增 permission type。
 
 #### 已归并 boundary guard｜Dr. Strangelove
 Kong 面对 normal / backup / emergency / manual 等已枚举接口连续失败后，仍通过 direct repair / bypass 受损线路让 bomb doors 现实打开。锁：
@@ -200,8 +213,8 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 24
 x_scope_boundary_guard_works: 21
-x_scope_dynamic_transition_controls: 27
-x_scope_dynamic_transition_works: 24
+x_scope_dynamic_transition_controls: 28
+x_scope_dynamic_transition_works: 25
 x_scope_decision_structure_calibration_controls: 6
 x_scope_knowledge_status: pending-review
 protected_range_current_criterion: protected-range-risk-test-v1_20260831
@@ -259,8 +272,8 @@ pending_review_count: 11
 
 1. **P0：strict-v2 第一份 verified positive**，仍为 `0/0`。
 2. **P1：path exhaustion dynamic**：多个 independent paths 预先自然识别 → alternatives 逐一关闭 → direct repair / bypass / delegated / parallel / emergency / alternate execution paths 完整审计 → surviving relevant path count=0 → target-effect reality-test OFF。
-3. **P2：quantitative cap 同作品可逆动态**：已有 King Lear contraction 与 XCOM 2 expansion 跨作品镜像；继续优先找 same actor + same permission family 的 cap `high→low→high` 或 `low→high→low` reality-test，验证 cap 变化可逆而非作品设定差异。
-4. **P3：edge-veto / downstream disposition 的撤回或分叉失败镜像**：已有 The Terminal 负边界与 Papers, Please 正向扩张；继续找 detention/disposition interface 后续被撤回但 edge veto 保留，或新增 disposition 只对对象子集成立的动态。
+3. **P2：quantitative cap 可逆动态已填**：Miracle (2004) 已提供 same actor + same object layer + same permission family 的 `5→4→5` reality-test；停止继续采同机制普通案例。若未来出现不同 trigger/topology 的 `low→high→low`，仅在能形成新最小差异时再收。
+4. **P3：edge-veto / downstream disposition 的撤回或分叉失败镜像**：已有 The Terminal 负边界与 Papers, Please 正向扩张；继续找 detention/disposition interface 后续被撤回但 edge veto 保留，或新增 disposition 的 eligible subset 真实缩窄。
 5. **P4：execution topology 新机制**：Pacific Rim 已填 joint↔unilateral 基础槽；后续只收不同 trigger/mandatory-node 机制，不重复采样死亡/物理移除换皮。
 6. **P5：protected-range** 只收同边界、同 risk-channel 动态与新失败镜像；Home Alone 的 partial-defense failure 已进入 negative 4/4，不再重复同攻击。
 7. deferred 只在新证据出现时二审。
@@ -281,6 +294,6 @@ pending_review_count: 11
 
 ## F｜同步债 / 权限边界
 
-实时清单已吸收 Papers, Please / XCOM 2、Pacific Rim 缺口纠偏、Home Alone protected-range negative 4/4 与 Dr. Strangelove path-set completeness boundary 24/21。working ledger 与实时清单已对齐；strict-v2 专项、x-scope 专项与 `zn-x火轴研究总纲_20260827.md` 仍需按 current evidence truth 安全文同步；这些是 L4 状态同步债，不改变 L1/L2 canonical。
+实时清单已吸收 Papers, Please / XCOM 2 / Miracle、Pacific Rim 缺口纠偏、Home Alone protected-range negative 4/4 与 Dr. Strangelove path-set completeness boundary 24/21。working ledger 现已对齐 Miracle evidence truth；strict-v2 专项、x-scope 专项与 `zn-x火轴研究总纲_20260827.md` 仍需按 current evidence truth 安全文同步；这些是 L4 状态同步债，不改变 L1/L2 canonical。
 
 不得修改 L1、zn/x 信息卡、准度卡或 canonical 关系卡。已知 `x信息量卡v2` frontmatter 元数据债只登记，不由本清单修正。
