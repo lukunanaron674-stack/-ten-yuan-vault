@@ -15,6 +15,7 @@ counter_increment: false
 work_increment: false
 may_override_canonical: false
 created: 2026-09-04
+updated: 2026-09-04
 ---
 
 # 状态同步｜strict-v2 Defiance 首个 verified-positive 已锁，但 realtime registry 仍停 0/0
@@ -115,3 +116,16 @@ P0 已从“首个 verified positive 破零”转为：
 3. deferred former positives 只在出现真实新证据时二审。
 
 realtime registry、strict-v2 专项与研究总纲若仍显示 `0/0`，属于 L4 状态同步债；后续同步时应更新为 effective `1/1`，但不得借同步改变 L1/L2 canonical。
+
+## 6｜最新 main 复核：漂移仍未被 realtime registry 吸收
+
+截至 `main@505a5daf9f8050e2594c11240788492d89c58609` 再次远端读取：
+
+- `zn-x火轴待审议清单.md` A5 仍写 `v2_verified_positive_controls: 0`、`v2_verified_positive_works: 0`；
+- B evidence ledger 仍写 strict-v2 `0/0`；
+- D/P0 仍错误写成“第一份 verified positive，仍为 0/0”；
+- Defiance 源 evidence 与本状态纠偏文件均仍存在，且 criterion_version 未发生变化。
+
+因此 current effective truth 继续保持 `1 control / 1 independent work`，这里是**持续状态漂移复核**，不是第二次计数，也不是新 strict 正例。
+
+后续研究调度必须按 effective truth 选择目标：优先寻找不同题材、不同对象机制的第二份 strict-v2 对抗性复现；若无 ≥95 候选，再转真正的 path-set exhaustion。不得再以“strict-v2 尚未破零”为由重复搜索第一正例。
