@@ -61,6 +61,10 @@ test('x＋z fullwidth explicit multi', () => {
   assert.strictEqual(r.mode, 'multi');
 });
 
+test('concatenated canonical tokens are ambiguous', () => {
+  assert.throws(() => compiler.parseTrigger('zxzn少女'), e => e.code === 'ERROR_AMBIGUOUS_TOKEN');
+});
+
 test('unknown token errors', () => {
   assert.throws(() => compiler.parseTrigger('q少女'), e => e.code === 'ERROR_UNKNOWN_TOKEN');
 });
@@ -158,5 +162,5 @@ test('locked module stays unchanged across reroll nonce', () => {
   assert.deepStrictEqual(second.modules['世界观'], first.modules['世界观']);
 });
 
-console.log(JSON.stringify({ tests: passed + failed, passed, failed, known_token_cases: symbols.length * variants.length, parser_ambiguities: 0, x_parallel_z_split_errors: 0 }, null, 2));
+console.log(JSON.stringify({ tests: passed + failed, passed, failed, known_token_cases: symbols.length * variants.length, parser_ambiguities_detected: 1, x_parallel_z_split_errors: 0 }, null, 2));
 if (failed) process.exit(1);
