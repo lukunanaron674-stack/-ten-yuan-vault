@@ -23,16 +23,10 @@
   }
 
   function normalizeRaw(raw) {
-    return String(raw ?? '')
-      .normalize('NFKC')
-      .trim()
-      .replace(/\s+/g, ' ')
-      .replace(/[＋]/g, '+');
+    return String(raw ?? '').normalize('NFKC').trim().replace(/\s+/g, ' ').replace(/[＋]/g, '+');
   }
-
-  function stripSpaces(text) {
-    return text.replace(/\s+/g, '');
-  }
+  function stripSpaces(text) { return text.replace(/\s+/g, ''); }
+  function startsCanonical(text) { return CANONICAL.some(token => text.toLowerCase().startsWith(token.toLowerCase())); }
 
   function parseLeadingSymbols(normalized) {
     let s = stripSpaces(normalized);
@@ -42,10 +36,7 @@
     while (s.length) {
       let match = null;
       for (const token of CANONICAL) {
-        if (s.toLowerCase().startsWith(token.toLowerCase())) {
-          match = token;
-          break;
-        }
+        if (s.toLowerCase().startsWith(token.toLowerCase())) { match = token; break; }
       }
       if (!match) break;
       symbols.push(match);
@@ -56,6 +47,7 @@
         if (!s.length) throw new TriggerError('ERROR_EMPTY_SUBJECT', '连接符后缺少第二个十元或主体');
         continue;
       }
+      if (startsCanonical(s)) throw new TriggerError('ERROR_AMBIGUOUS_TOKEN', '多个十元必须使用 + 或 ＋ 明确连接', { remainder: s });
       break;
     }
 
@@ -63,22 +55,13 @@
       const head = (s.match(/^[A-Za-z并]+/) || [''])[0];
       throw new TriggerError('ERROR_UNKNOWN_TOKEN', `未知十元触发词: ${head || normalized}`, { token: head || normalized });
     }
-
-    if (explicitMulti) {
-      if (symbols.length < 2) {
-        const next = (s.match(/^[A-Za-z并]+/) || [''])[0];
-        throw new TriggerError('ERROR_UNKNOWN_TOKEN', `多符号连接后不是合法十元: ${next || s}`, { token: next || s });
-      }
+    if (explicitMulti && symbols.length < 2) {
+      const next = (s.match(/^[A-Za-z并]+/) || [''])[0];
+      throw new TriggerError('ERROR_UNKNOWN_TOKEN', `多符号连接后不是合法十元: ${next || s}`, { token: next || s });
     }
-
-    if (!explicitMulti && symbols.length > 1) {
-      throw new TriggerError('ERROR_AMBIGUOUS_TOKEN', '多个十元必须使用 + 或 ＋ 明确连接');
-    }
-
     if (s.startsWith('的')) s = s.slice(1);
     const subject = s.trim();
     if (!subject) throw new TriggerError('ERROR_EMPTY_SUBJECT', '触发词后缺少主体');
-
     return { symbols, subject, explicitMulti };
   }
 
@@ -86,11 +69,8 @@
     const normalized = normalizeRaw(raw);
     if (!normalized) throw new TriggerError('ERROR_UNKNOWN_TOKEN', '空触发输入');
     const parsed = parseLeadingSymbols(normalized);
-    for (const symbol of parsed.symbols) {
-      if (!CANONICAL_SET.has(symbol)) throw new TriggerError('ERROR_UNKNOWN_TOKEN', `非法十元: ${symbol}`);
-    }
+    for (const symbol of parsed.symbols) if (!CANONICAL_SET.has(symbol)) throw new TriggerError('ERROR_UNKNOWN_TOKEN', `非法十元: ${symbol}`);
     const mode = options.mode === 'graph' ? 'graph' : (parsed.symbols.length === 1 ? 'single' : 'multi');
-    const mappingVersion = options.mapping_version || '世界观_机器映射_v0.1';
     return {
       raw_trigger: raw,
       subject: parsed.subject,
@@ -101,20 +81,18 @@
       locked_modules: Array.isArray(options.locked_modules) ? [...options.locked_modules] : [],
       reroll_modules: Array.isArray(options.reroll_modules) ? [...options.reroll_modules] : [],
       parser_version: PARSER_VERSION,
-      mapping_version: mappingVersion
+      mapping_version: options.mapping_version || '世界观_机器映射_v0.1'
     };
   }
 
   function compileRequest(raw, options = {}) {
     const resolved = parseTrigger(raw, options);
-    if (resolved.mode === 'multi' && !options.roles) {
-      return {
-        status: 'BLOCKED',
-        error_code: 'BLOCKED_MULTI_RESPONSIBILITY_REQUIRED',
-        resolved_request: resolved,
-        reason: 'multi 需要显式 primary/secondary responsibility 与 relation_source，禁止自动百分比混合或私自补职责'
-      };
-    }
+    if (resolved.mode === 'multi' && !options.roles) return {
+      status: 'BLOCKED',
+      error_code: 'BLOCKED_MULTI_RESPONSIBILITY_REQUIRED',
+      resolved_request: resolved,
+      reason: 'multi 需要显式 primary/secondary responsibility 与 relation_source，禁止自动百分比混合或私自补职责'
+    };
     return { status: 'READY', resolved_request: resolved };
   }
 
@@ -138,9 +116,8 @@
 
   function runEndToEnd(raw, mappings, options = {}) {
     let compiled;
-    try {
-      compiled = compileRequest(raw, options);
-    } catch (err) {
+    try { compiled = compileRequest(raw, options); }
+    catch (err) {
       if (err instanceof TriggerError) return { status: 'INVALID', error_code: err.code, message: err.message, detail: err.detail };
       throw err;
     }
@@ -150,14 +127,10 @@
     const requestedModules = options.modules || ALL_MODULES;
     const implemented = requestedModules.filter(m => IMPLEMENTED_MODULES.includes(m));
     const notImplemented = requestedModules.filter(m => !IMPLEMENTED_MODULES.includes(m));
-
-    if (!implemented.length) {
-      return { status: 'DATA_BLOCKED', error_code: 'DATA_BLOCKED_NO_IMPLEMENTED_MODULE', resolved_request: resolved, modules: Object.fromEntries(notImplemented.map(m => [m, 'NOT_IMPLEMENTED'])) };
-    }
+    if (!implemented.length) return { status: 'DATA_BLOCKED', error_code: 'DATA_BLOCKED_NO_IMPLEMENTED_MODULE', resolved_request: resolved, modules: Object.fromEntries(notImplemented.map(m => [m, 'NOT_IMPLEMENTED'])) };
 
     try {
-      const runtimeConfig = buildRuntimeConfig(resolved, mappings, { ...options, modules: implemented });
-      const output = core.generate(runtimeConfig);
+      const output = core.generate(buildRuntimeConfig(resolved, mappings, { ...options, modules: implemented }));
       const modules = { ...output.modules };
       for (const m of notImplemented) modules[m] = 'NOT_IMPLEMENTED';
       return {
@@ -170,23 +143,10 @@
       };
     } catch (err) {
       const msg = String(err && err.message || err);
-      if (/No mapping/.test(msg)) {
-        return { status: 'DATA_BLOCKED', error_code: 'DATA_BLOCKED_MAPPING_MISSING', resolved_request: resolved, message: msg, modules: Object.fromEntries(notImplemented.map(m => [m, 'NOT_IMPLEMENTED'])) };
-      }
+      if (/No mapping/.test(msg)) return { status: 'DATA_BLOCKED', error_code: 'DATA_BLOCKED_MAPPING_MISSING', resolved_request: resolved, message: msg, modules: Object.fromEntries(notImplemented.map(m => [m, 'NOT_IMPLEMENTED'])) };
       return { status: 'INVALID', error_code: 'ERROR_RUNTIME_COMPOSER', resolved_request: resolved, message: msg };
     }
   }
 
-  return {
-    PARSER_VERSION,
-    CANONICAL,
-    IMPLEMENTED_MODULES,
-    ALL_MODULES,
-    TriggerError,
-    normalizeRaw,
-    parseTrigger,
-    compileRequest,
-    buildRuntimeConfig,
-    runEndToEnd
-  };
+  return { PARSER_VERSION, CANONICAL, IMPLEMENTED_MODULES, ALL_MODULES, TriggerError, normalizeRaw, parseTrigger, compileRequest, buildRuntimeConfig, runEndToEnd };
 });
