@@ -5,7 +5,7 @@ knowledge_status: evidence-locked
 status: working-ledger
 axis: fire
 pair: zn-x
-updated: 2026-09-03
+updated: 2026-09-04
 criterion_version:
   l1_axis: L1_十元即阴阳五行相反轴正本_v1.6
   strict_gate: current-layer-specific-anchor-gap-v2_20260829
@@ -16,20 +16,19 @@ fact_confidence: 99
 classification_confidence: 99
 ---
 
-# 状态同步｜zn ↔ x 当前 evidence ledger｜2026-09-03 批量消化
+# 状态同步｜zn ↔ x 当前 evidence ledger｜2026-09-04 批量归并
 
 > L4 working ledger，不覆盖 L1/L2 canonical。仓库 current canonical 高于本文件；木轴 `zx↔nx` 只迁移验证方法，不迁移理论结论。
 
-## 0｜current canonical / 门禁对齐
+## 0｜current canonical / 门禁
 
-- L0/L1 文件权力门禁继续要求：流程权力与知识权力分离，L4/L5 不得覆盖 L2。
 - L1 current：火＝阳火 `zn` ↔ 阴火 `x`；主题领域＝本体。
 - strict current gate：`current-layer-specific-anchor-gap-v2_20260829`。
 - x-scope current gate：`current-x-scope-distinction-v1_20260830`。
 - protected-range current gate：`protected-range-risk-test-v1_20260831`。
-- 历史 `x信息量卡v2` frontmatter 的 `element: 阴水` 仍是已知 canonical 元数据债，只登记，不由 L4 越权修正。
+- 历史 `x信息量卡v2` frontmatter 的 `element: 阴水` 继续只登记为 canonical 元数据债，不由 L4 修改。
 
-## 1｜current effective evidence-layer
+## 1｜current evidence truth
 
 ```yaml
 strict_current_criterion: current-layer-specific-anchor-gap-v2_20260829
@@ -48,8 +47,8 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 24
 x_scope_boundary_guard_works: 21
-x_scope_dynamic_transition_controls: 27
-x_scope_dynamic_transition_works: 24
+x_scope_dynamic_transition_controls: 28
+x_scope_dynamic_transition_works: 25
 x_scope_decision_structure_calibration_controls: 6
 x_scope_knowledge_status: pending-review
 
@@ -65,176 +64,115 @@ protected_range_knowledge_status: pending-review
 pending_review_count: 11
 ```
 
-## 2｜近期未归并 evidence 统一吸收
+## 2｜本批吸收与去重
 
-### 2.1 Papers, Please / Inspector｜edge-veto → downstream detention disposition
+### 2.1 Miracle (2004) / Viktor Tikhonov｜reversible quantitative cap
 
-Inspector 前期已经拥有 approve/deny entrant 的 admission transition control，但没有 general detention disposition。Day 5 起，规则与界面新增 `detain`，并由 guards 现实完成 custody transfer。
-
-```text
-transition-blocking x
-≠ resultant-state disposition x
-
-edge-veto only
-→ rule/interface trigger
-→ edge-veto + conditional downstream detention disposition
-```
-
-统计：dynamic `25/22 → 26/23`。
-
-### 2.2 XCOM 2 / Commander｜quantitative permission-cap expansion
-
-同一 actor、同一 mission-deployment roster、同一 select/deploy permission family 下，Squad Size I / II 把现实最大部署人数 `4 → 5 → 6`。
+源 evidence 已在 `ba82862f84e7f0059c054f566e6d2c85298f6732` 锁定，同一 actor / object layer / deploy-select permission family 在同一比赛窗口发生：
 
 ```text
-permission type unchanged
-≠ quantitative scope unchanged
+5 skaters
+→ penalty gate ON
+→ 4 skaters
+→ penalty interval ends
+→ 5 skaters
 ```
 
-统计：dynamic `26/23 → 27/24`。本条与 King Lear `100→50→25→0` 构成跨作品 quantitative expansion/contraction 镜像。
-
-### 2.3 Pacific Rim｜已填 execution-topology 基础槽纠偏
-
-Raleigh / Gipsy Danger 已有 evidence-locked 的：
+锁定：
 
 ```text
-joint execution
-→ unilateral emergency execution
-→ joint execution restoration
+quantitative cap 可在 permission family 不变时现实 high→low→high
+
+temporary cap contraction ≠ permission family 消失
+cap restoration ≠ new permission type acquisition
 ```
 
-且存在 same actor / same object / same permission family / actual execution reality-test。该槽已计入既有 dynamic ledger；这里只修缺口状态，不重复加 control/work。
+该 evidence 只计一次：`x-scope dynamic 27/24 → 28/25`。实时待审议清单已在 `61e639a439a11681871d0b5ef2331d1a3841716e` 吸收，本文件只同步 current truth，不重复增加 control/work。
 
-### 2.4 Home Alone / Kevin｜partial-defense-effect ≠ stable protected-range
+### 2.2 继续有效的近期高价值机制
 
-Kevin 的住宅陷阱反复现实造成 Harry/Marv 受伤、延迟与改道，但二人仍突破住宅边界、持续进入并追击，最终还在邻宅抓住 Kevin；解除最终人身风险的关键节点由 Marley 与警方第三方完成。
+- Papers, Please：`transition-blocking x ≠ resultant-state disposition x`；edge-veto 与 downstream detention disposition 分账。
+- XCOM 2：permission family 不变时 quantitative cap 可 `4→5→6`。
+- Dr. Strangelove：`enumerated-interface exhaustion ≠ path-set exhaustion`；宣告 `surviving relevant path count=0` 前必须审计 direct repair / bypass / delegated / parallel / emergency / alternate execution paths。
+- Pacific Rim：joint execution → unilateral emergency execution → joint restoration 基础槽已填，停止重复采同 topology。
+- Home Alone：`partial-defense-effect ≠ stable protected-range`；局部防御反复成功也不能替代 stable exclusion。
+
+## 3｜strict-v2 当前状态
+
+verified positive 仍为 `0/0`，不降门。
+
+固定：
+
+- same current window；
+- same object layer；
+- `zn` 与 `x` 分别独立过 current canonical；
+- `zn` 先用不引用被测 `x` 的语言独立命名；
+- 禁止 posthoc composite-x bundling；
+- 冻结第三方 veto / 产权 / 保护 / 制度 competing anchors；
+- `zn→x` 与 `x→zn` 分账；
+- `x→zn` 只要求 current-layer relevant reality-anchor gap，不恢复 absolute-unique-anchor；
+- execution/amplification、瞬时机会、一次越权、决定性结果、职责、角色规则、战略收益、公开自罚、名义权力不得自动计 strict。
+
+## 4｜x-scope current 纪律
+
+至少拆：
+
+`actor / object / permission_type / scope / quantitative_cap / term / revocability / return_obligation / same-layer_pre-effect_veto / global_override / ultimate_title / source_decision / consultation / final_decision / execution / co-decision_nodes / current window`。
+
+继续锁定：
 
 ```text
-partial-defense-effect
-+ repeated delay / injury / rerouting
-≠ stable protected-range
+use ≠ ownership
+current governance ≠ ultimate title
+local ≠ global
+revocable ≠ current x false
+shared ≠ unilateral
+consultation ≠ final decision
+source authorization ≠ execution
+edge-veto ≠ downstream disposition
+permission type unchanged ≠ quantitative scope unchanged
+enumerated interfaces exhausted ≠ relevant path set exhausted
 ```
 
-因此 protected-range negative 在同一 `protected-range-risk-test-v1_20260831` 下：
+## 5｜protected-range current 纪律
+
+current `4 positive / 4 works + 4 negative / 4 works + 1 dynamic / 1 work`，已 pending-review。
+
+正向至少要求：
 
 ```text
-3 controls / 3 works
-→ 4 controls / 4 works
+boundary-on
++ object-inside
++ real risk enters
++ subject-specific current x 在结果发生前稳定 block / deny / redirect
++ 非第三方主要完成
 ```
 
-本条不计 ordinary x-scope，不计 protected-range positive/dynamic，也不锁 `zn`。
+继续区分 no-test / failed-test / successful-test；partial-defense-effect 不等于 stable protected-range。
 
-### 2.5 Dr. Strangelove / Major Kong｜已枚举接口全灭 ≠ path-set exhaustion
+## 6｜本轮不计
 
-最终轰炸窗口中，normal、backup、emergency power、manual override、explosive bolts 等已枚举 bomb-door interfaces 连续失败，但 Kong 随后通过直接进入 bomb bay 修补/旁路受损线路，最终让 bomb doors 现实打开。
+- Miracle 不重复计第二个 dynamic control/work。
+- strict `+0`；protected-range `+0`；x-scope boundary `+0`；decision calibration `+0`。
+- 水轴新提交不迁移理论结论到火轴。
 
-```text
-enumerated interfaces exhausted
-≠ all currently relevant paths exhausted
-```
-
-因此在宣告 `surviving path count = 0` 前，必须显式审计 bypass / direct repair / delegated route / parallel authority / emergency interface 等剩余路径。该案不是 P1 path-exhaustion dynamic 正例，因为 target effect 最终仍 ON；它只锁 path-set completeness 的前置边界护栏。
-
-统计：x-scope boundary `23/20 → 24/21`；dynamic `+0`；strict `+0`；protected-range `+0`。
-
-## 3｜本轮不计 / 去重
-
-- Papers, Please 只计新的 permission-type dynamic，不计 ordinary positive。
-- XCOM 2 只计 quantitative-cap dynamic，不计 new permission type。
-- Pacific Rim 不重复增加 control/work。
-- Home Alone 只计 protected-range negative guard `+1/+1`；不把陷阱效果密度倒灌为 stable protected-range。
-- Dr. Strangelove 只计 x-scope boundary guard `+1/+1`；不冒充 path-exhaustion dynamic，也不锁 `zn`。
-- strict-v2 本轮 `+0`；pending-review 仍11。
-
-## 4｜current 强化规则
-
-```text
-x = actor
-× object
-× permission/effect layer
-× scope / quantitative cap
-× term / revocability
-× credential / path topology
-× consultation / final-decision topology
-× execution topology
-× current window
-```
-
-继续固定：
-
-```text
-transition-blocking x ≠ resultant-state disposition x
-permission type retained ≠ quantitative cap retained
-joint-final decision ≠ joint execution
-substitute node OFF ≠ original actor automatically ON
-partial-defense-effect ≠ stable protected-range
-third-party final rescue ≠ subject-specific protected-range success
-enumerated-interface exhaustion ≠ path-set exhaustion
-```
-
-### 4.1 protected-range failure
-stable protected-range 不是“防御有用”的同义词。局部节点可以反复伤害、延迟、迫使改道，但只要同一 risk 仍现实突破被测 boundary，并且最终排除依赖第三方主要完成，就不能计 stable protected-range success。
-
-### 4.2 quantitative scope
-同一 permission family 的 cardinality ceiling 是独立 scope 变量；`4→5→6` 与 `100→50→25→0` 都是 x-scope dynamic，不应误写成 permission type 变化。
-
-### 4.3 path-set completeness
-path-exhaustion 必须证明的是 current relevant path set 真正清零，而不是“UI 上能想到的几个按钮都失效”。已知接口失败、常规路径失效、主备系统同时失效，都只能作为路径关闭证据；只有 bypass、direct repair、delegated route、parallel authority、emergency interface 等 competing paths 被审计后，才允许把 known-path count=0 升级为 surviving relevant path count=0。
-
-## 5｜strict-v2
+## 7｜同步状态
 
 ```yaml
-verified_positive: 0/0
-deferred: 4/4
-negative: 7/4
-precondition: 20/9
-canonical_calibration: 3
+realtime_review_registry: synced_to_28_25
+working_ledger: synced_to_28_25
+protected_range_specialist: synced_to_4_4_positive__4_4_negative__1_1_dynamic
+strict_specialist: stale_at_precondition_17_6__current_20_9
+x_scope_specialist: stale_at_boundary_16_13__dynamic_14_12__decision_1__current_24_21__28_25__6
+research_overview: stale_at_strict_precondition_17_6_and_old_x_scope_counts
 ```
 
-P0 继续未破零；不恢复废止的 absolute-unique-anchor。Home Alone 与 Dr. Strangelove 均不锁 `zn`，也不触发 strict 重算。
+这些都是 L4 状态债，不改变 L1/L2 canonical。
 
-## 6｜protected-range
+## 8｜下一批最高价值
 
-```yaml
-positive: 4/4
-negative: 4/4
-dynamic: 1/1
-status: pending-review
-```
-
-Home Alone 新增的是 partial-defense failure guard，不是普通正例。
-
-## 7｜同步债
-
-本 working ledger 已吸收 Dr. Strangelove，并与 current evidence truth 对齐为：
-
-```text
-strict-precondition 20/9
-x-scope boundary   24/21
-x-scope dynamic    27/24
-decision calibration 6
-protected-range    4/4 positive + 4/4 negative + dynamic 1/1
-strict verified positive 0/0
-pending_review_count 11
-```
-
-仍需安全全文同步：
-
-```text
-zn-x火轴待审议清单.md
-strict-v2 专项
-x-scope 专项
-zn-x火轴研究总纲_20260827.md
-```
-
-这是 L4 状态同步债，不改变 L1/L2 canonical。
-
-## 8｜下一批最高信息增益
-
-1. **P0 strict-v2 first verified positive**：继续不降门。
-2. **path exhaustion dynamic**：先证明 path-set completeness，再要求多个 independent paths 逐一关闭，surviving relevant path count=0 后 target-effect reality-test OFF。
-3. **quantitative cap same-work reversible dynamic**：same actor / same permission family 下 `high→low→high` 或 `low→high→low`。
-4. **edge-veto / downstream disposition 撤回或对象子集分叉**：Papers, Please 正向扩张之后找反向或 scope split。
-5. **execution topology 新 trigger**：Pacific Rim 基础槽已填，只收不同 mandatory-node/trigger 机制。
-6. **protected-range failure mirror**：与 Home Alone 最近邻，找 partial defense 多次成功后主体自身边界最终仍稳定排除同一 risk 的成功镜像，区分 effect density 与 stable exclusion。
-7. deferred 只在新证据出现时二审。
+1. P0：strict-v2 第一份真正 verified positive，继续 `0/0` 且不降门。
+2. P1：path-set completeness 后真正的 `n>1→1→0→target-effect OFF`。
+3. P3：edge-veto retained，同时 downstream detention/disposition `ON→OFF` 或 eligible subset 真实缩窄。
+4. execution topology 只收不同 trigger / mandatory-node 机制。
+5. 下一次归并优先安全同步 strict 专项、x-scope 专项和火轴研究总纲，不再新建状态说明文件。
