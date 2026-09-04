@@ -5,12 +5,14 @@
   "source_files": [
     "映射/zx_世界观_v0.1.md",
     "映射/z_世界观_v0.1.md",
-    "映射/zn_世界观_v0.1.md"
+    "映射/zn_世界观_v0.1.md",
+    "映射/nz_世界观_v0.1.md"
   ],
   "notes": [
     "这是应用映射的机器可读投影，不是十元定义。",
     "structure_id 只由 symbol/module/changed_variable/relation_shape/module_grammar 计算，题材与具象名词不得进入结构身份。",
-    "z 当前为 pending-review，运行时默认排除，除非显式 allowPending=true。"
+    "z 当前为 pending-review，运行时默认排除，除非显式 allowPending=true。",
+    "nz 世界观 v0.1 为 candidate；温暖、家庭、等待、怀旧等表面标签不得反向定义 nz。"
   ],
   "mappings": [
     {
@@ -205,6 +207,71 @@
       "module_grammar": "允许原则修订，但要求主体保留可说明的修订边界与后续调用连续性",
       "concrete_candidate": ["原则修订记录", "私人誓约版本簿", "自我解释档案"],
       "genre_context": ["魔法契约", "学院", "星际航行", "末世共同体"],
+      "genre_translation": {},
+      "status": "candidate"
+    },
+    {
+      "id": "NZ-W-001",
+      "symbol": "nz",
+      "module": "世界观",
+      "sub_semantic": "自由退出后的可信回返",
+      "changed_variable": "成员离开共同体后是否仍保有面向原对象组合的真实重新进入资格",
+      "relation_shape": "已建立共同关系→成员自愿离开→原关系位置不被强制占有→返回时可由双方恢复共同参与",
+      "module_grammar": "建立允许成员自由退出且不会因退出自动抹除原对象特异回返接口的共同体规则",
+      "concrete_candidate": ["可退会又可回返的旅团", "允许离港后回归的船队", "成员可暂离并重新加入的魔法工坊"],
+      "genre_context": ["中古奇幻", "公路冒险", "科幻舰队", "校园社团"],
+      "genre_translation": {},
+      "status": "candidate"
+    },
+    {
+      "id": "NZ-W-002",
+      "symbol": "nz",
+      "module": "世界观",
+      "sub_semantic": "冲突后的修复资格",
+      "changed_variable": "明确冲突或关系受损后双方是否仍有恢复可信接近与共同处理的路径",
+      "relation_shape": "原关系→冲突或断裂→双方保留退出权→可验证修复动作→共同接近重新成立",
+      "module_grammar": "让世界中的重要关系具有可被冲突损坏、但可通过双方实际修复重新开放的接近接口",
+      "concrete_candidate": ["双向和解门", "需要双方重新开启的契约桥", "破裂后可共同修复的关系印记"],
+      "genre_context": ["都市幻想", "宫廷", "魔法契约", "家族剧"],
+      "genre_translation": {},
+      "status": "candidate"
+    },
+    {
+      "id": "NZ-W-003",
+      "symbol": "nz",
+      "module": "世界观",
+      "sub_semantic": "长期分离中的回返坐标保存",
+      "changed_variable": "时间与距离经过后原关系是否仍保留面向同一对象的可调用返回位置",
+      "relation_shape": "共同时间建立→长期分离→关系证据连续保存→任一方主动回返→原对象组合重新接续",
+      "module_grammar": "让长期旅行、迁徙或时代断层不会自动把对象特异关系降成不可调用回忆，而是保留可验证的回返坐标",
+      "concrete_candidate": ["跨星年回航坐标", "只对原同伴开放的归队信标", "时代迁徙中的双向归返门"],
+      "genre_context": ["太空歌剧", "长生奇幻", "末世迁徙", "时间旅行"],
+      "genre_translation": {},
+      "status": "candidate"
+    },
+    {
+      "id": "NZ-W-004",
+      "symbol": "nz",
+      "module": "世界观",
+      "sub_semantic": "对象特异性与不可任意替代",
+      "changed_variable": "原关系的回返资格是否绑定真实共同经历而非角色槽位或身份名称",
+      "relation_shape": "特定双方形成共同历史→关系暂时中断→替代者进入同一职位或外形→原关系接口不自动转移→原对象回来时才可恢复",
+      "module_grammar": "让关系回返权绑定共同经历与相互回应，不允许职位、外形或资产继承自动复制原关系",
+      "concrete_candidate": ["共同经历钥匙", "双方记忆才能开启的旧路", "不能转让的伙伴回返权限"],
+      "genre_context": ["身份替换悬疑", "克隆科幻", "宫廷继承", "灵魂交换"],
+      "genre_translation": {},
+      "status": "candidate"
+    },
+    {
+      "id": "NZ-W-005",
+      "symbol": "nz",
+      "module": "世界观",
+      "sub_semantic": "双方可调用的重新接近路径",
+      "changed_variable": "关系暂停后重新接近是单方想象还是双方都可实际调用的路径",
+      "relation_shape": "双方共同建立路径→任一方离开→路径保持但不强制召回→双方可分别发起返回→接近被共同恢复",
+      "module_grammar": "设计不会自动把人拉回、但双方都能主动重新开启的关系路径；路径必须可被拒绝",
+      "concrete_candidate": ["双向归返桥", "两端都能开启的旧门", "不强制召回的伙伴信道"],
+      "genre_context": ["童话", "都市奇幻", "恋爱科幻", "冒险"],
       "genre_translation": {},
       "status": "candidate"
     }
