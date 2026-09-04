@@ -1,0 +1,63 @@
+{
+  "schema_version": "v0.1",
+  "purpose": "chat-natural-language-to-generator-control",
+  "canonical_source": "数据/trigger_registry_v0.1.json",
+  "rules": {
+    "chat_must_not_define_symbol_from_surface_words": true,
+    "reuse_active_symbols_only_when_session_state_exists": true,
+    "multi_requires_explicit_responsibility_source": true,
+    "graph_forbids_vector_weights": true,
+    "not_implemented_must_remain_explicit": true,
+    "fail_closed": true
+  },
+  "intents": {
+    "generate_new": ["来个", "生成", "做一个", "给我一个", "新建", "重新生成一个"],
+    "continue_current": ["继续这个", "沿用这个", "按这个继续", "上一版继续", "保持这个"],
+    "lock_modules": ["锁", "锁定", "别动", "保持不变", "这个不动"],
+    "reroll_modules": ["重抽", "只换", "换掉", "再抽", "只改", "重新抽"],
+    "set_graph_mode": ["无向量", "无向量尺标", "图模式", "关系图模式", "graph模式"],
+    "set_single_mode": ["单符号", "纯单轴", "只用这个十元"],
+    "set_multi_mode": ["多符号", "双符号", "组合模式", "multi模式"],
+    "inspect_reasoning": ["为什么", "解释结构", "给我中间链", "看映射链", "为什么这样生成"],
+    "reject_concrete": ["这个名词不要", "这个载体不要", "换个具象", "这个具体东西不要"]
+  },
+  "module_aliases": {
+    "世界观": ["世界观", "世界", "设定"],
+    "服装": ["服装", "衣服", "穿搭", "衣着"],
+    "发型": ["发型", "头发", "刘海"],
+    "身体/脸": ["身体", "脸", "面部", "长相", "外貌"],
+    "道具": ["道具", "物件", "随身物", "装备"],
+    "身份/行为": ["身份", "职业", "工作", "行为", "动作"],
+    "关系": ["关系", "恋爱", "朋友", "家庭关系", "社会关系"],
+    "一生": ["一生", "人生", "生命周期", "成长", "结局"],
+    "构图": ["构图", "空间", "画面", "镜头布局"],
+    "具象名词": ["具象名词", "名词", "具体物", "载体"]
+  },
+  "context_words": {
+    "genre_examples": ["现代幻想", "校园", "中古奇幻", "东方奇幻", "科幻", "废土", "偶像", "魔法少女"],
+    "surface_only_examples": ["可爱", "红色", "骑士", "贫穷", "高贵", "偶像", "忧郁", "阳光"]
+  },
+  "session_state_schema": {
+    "active_raw_trigger": null,
+    "active_subject": null,
+    "canonical_symbols": [],
+    "mode": null,
+    "genre_context": "default",
+    "seed": "74",
+    "nonce": 0,
+    "locked_modules": [],
+    "last_output": null,
+    "roles": null,
+    "parser_version": null,
+    "mapping_version": null
+  },
+  "error_codes": [
+    "CHAT_NEEDS_CANONICAL_SYMBOL",
+    "CHAT_NO_ACTIVE_SESSION",
+    "CHAT_UNKNOWN_MODULE",
+    "CHAT_MULTI_RESPONSIBILITY_REQUIRED",
+    "CHAT_DATA_BLOCKED",
+    "CHAT_NOT_IMPLEMENTED",
+    "CHAT_AMBIGUOUS_COMMAND"
+  ]
+}
