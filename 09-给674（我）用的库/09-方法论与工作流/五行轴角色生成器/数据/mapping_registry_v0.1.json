@@ -1,0 +1,18 @@
+{
+  "schema_version": "v0.1",
+  "authority_level": "L5-runtime-registry",
+  "may_override_canonical": false,
+  "projections": [
+    {
+      "mapping_version": "世界观_机器映射_v0.1",
+      "module": "世界观",
+      "source": "世界观_机器映射_v0.1.json",
+      "mapping_ids": [
+        "ZX-W-001", "ZX-W-002", "ZX-W-003", "ZX-W-004", "ZX-W-005",
+        "Z-W-001", "Z-W-002", "Z-W-003", "Z-W-004", "Z-W-005",
+        "ZN-W-001", "ZN-W-002", "ZN-W-003", "ZN-W-004", "ZN-W-005",
+        "NZ-W-001", "NZ-W-002", "NZ-W-003", "NZ-W-004", "NZ-W-005"
+      ]
+    }
+  ]
+}
