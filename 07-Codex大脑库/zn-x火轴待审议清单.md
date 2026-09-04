@@ -69,7 +69,7 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 24
 x_scope_boundary_guard_works: 21
-x_scope_dynamic_transition_controls: 28
+x_scope_dynamic_transition_controls: 29
 x_scope_dynamic_transition_works: 25
 x_scope_decision_structure_calibration_controls: 6
 knowledge_status: pending-review
@@ -78,7 +78,7 @@ pending_review: true
 
 ordinary positive 已成熟，停止堆量。
 
-#### 已归并 dynamic｜Papers, Please
+#### 已归并 dynamic｜Papers, Please｜downstream disposition expansion
 Inspector 前期已经能现实 approve/deny entrant 的 admission transition，但没有 general detention disposition。Day 5 起，对满足条件的 entrant 新增 `detain` 最终调用接口，并由 guards 现实完成 custody transfer。锁：
 
 ```text
@@ -90,7 +90,7 @@ edge-veto only
 → edge-veto + conditional downstream detention disposition
 ```
 
-同一主体、同一 entrant-processing 对象层、同 criterion 下形成新的 permission-type expansion，故 dynamic `25/22 → 26/23`。
+同一主体、同一 entrant-processing 对象层、同 criterion 下形成新的 permission-type expansion，故早期 dynamic `25/22 → 26/23`。
 
 #### 已归并 dynamic mirror｜XCOM 2
 Commander 对同一 mission-deployment roster 的 permission family 不变，Guerrilla Tactics School 的 Squad Size I / II 把现实最大部署人数 `4 → 5 → 6`。锁：
@@ -118,6 +118,21 @@ same actor
 
 因此 current dynamic 从 `27/24 → 28/25`。本槽已填；后续不再采同机制普通案例。temporary cap contraction 不等于 permission family 消失，cap restoration 也不等于新增 permission type。
 
+#### 已归并 execution-topology dynamic｜Papers, Please｜mandatory procedural unlock
+同一 Inspector、同一 entrant admission transition、同一 deny permission 与同一 unilateral final-decision holder 下，Day 18 规则触发后，合规拒绝不再能直接由 deny stamp 一步执行，而必须先经 inspection/interrogation 解锁 reason stamp，再完成 deny+reason。锁：
+
+```text
+direct unilateral execution
+→ mandatory inspection/interrogation unlock node inserted
+→ procedurally gated unilateral execution
+
+permission retained ≠ direct execution path retained
+mandatory procedural unlock ≠ joint final decision
+same final-decision holder ≠ same execution topology
+```
+
+该机制来自已 evidence-locked source commit `0175fa89a8531663b4e5193800eaccdd5e171207`。`Papers, Please` 已作为 independent work 进入 earlier x-scope ledger，因此只新增 topology control，不重复增加 work：current dynamic `28/25 → 29/25`。
+
 #### 已归并 boundary guard｜Dr. Strangelove
 Kong 面对 normal / backup / emergency / manual 等已枚举接口连续失败后，仍通过 direct repair / bypass 受损线路让 bomb doors 现实打开。锁：
 
@@ -129,7 +144,7 @@ enumerated-interface exhaustion
 只有在 direct repair、bypass、delegated route、parallel authority、emergency interface、alternate execution node 等 competing paths 也被审计冻结后，才允许把 `known path count = 0` 升级为 `surviving relevant path count = 0`。本条只计 boundary `23/20 → 24/21`，不计 dynamic。
 
 #### 已填缺口纠偏｜Pacific Rim
-现存 evidence-locked 资产已完整锁定 Raleigh / Gipsy Danger 的 `joint execution → unilateral emergency execution → joint restoration`，并在两阶段都有 same-object reality-test。该槽已经计入既有 dynamic ledger；本轮只修 D 区状态，不重复加 control / work。
+现存 evidence-locked 资产已完整锁定 Raleigh / Gipsy Danger 的 `joint execution → unilateral emergency execution → joint restoration`，并在两阶段都有 same-object reality-test。该槽已经计入既有 dynamic ledger；只保留为基础 topology control，不重复加 control / work。
 
 #### 继续有效的核心反误判纪律
 
@@ -154,6 +169,9 @@ substitute node loss ≠ original actor automatic restoration
 edge-veto retained ≠ downstream disposition already present
 quantitative cap expansion ≠ new permission type
 enumerated-interface exhaustion ≠ path-set exhaustion
+permission retained ≠ direct execution path retained
+mandatory procedural unlock ≠ joint final decision
+same final-decision holder ≠ same execution topology
 ```
 
 ### A11｜protected-range risk-test｜current v1
@@ -213,7 +231,7 @@ x_scope_positive_controls: 4
 x_scope_positive_works: 3
 x_scope_boundary_guards: 24
 x_scope_boundary_guard_works: 21
-x_scope_dynamic_transition_controls: 28
+x_scope_dynamic_transition_controls: 29
 x_scope_dynamic_transition_works: 25
 x_scope_decision_structure_calibration_controls: 6
 x_scope_knowledge_status: pending-review
@@ -267,6 +285,7 @@ pending_review_count: 11
 16. quantitative permission-cap 动态必须固定 actor/object/permission family，只把可现实纳入对象数的 cardinality ceiling 作为迁移变量。
 17. protected-range 中局部防御节点反复成功只证明 partial-defense-effect；若风险最终突破同一保护边界，不能升级为 stable protected-range。
 18. path exhaustion 必须先做 path-set completeness audit；已枚举 interface 全失败不等于 relevant path set 清零，direct repair / bypass / delegated / parallel / emergency / alternate execution routes 均需冻结。
+19. execution topology 必须与 final-decision topology 分账；同一 final decision holder 保持不变时，mandatory procedural unlock node 的插入仍可构成独立 dynamic transition。
 
 ## D｜当前高价值缺口
 
@@ -274,7 +293,7 @@ pending_review_count: 11
 2. **P1：path exhaustion dynamic**：多个 independent paths 预先自然识别 → alternatives 逐一关闭 → direct repair / bypass / delegated / parallel / emergency / alternate execution paths 完整审计 → surviving relevant path count=0 → target-effect reality-test OFF。
 3. **P2：quantitative cap 可逆动态已填**：Miracle (2004) 已提供 same actor + same object layer + same permission family 的 `5→4→5` reality-test；停止继续采同机制普通案例。若未来出现不同 trigger/topology 的 `low→high→low`，仅在能形成新最小差异时再收。
 4. **P3：edge-veto / downstream disposition 的撤回或分叉失败镜像**：已有 The Terminal 负边界与 Papers, Please 正向扩张；继续找 detention/disposition interface 后续被撤回但 edge veto 保留，或新增 disposition 的 eligible subset 真实缩窄。
-5. **P4：execution topology 新机制**：Pacific Rim 已填 joint↔unilateral 基础槽；后续只收不同 trigger/mandatory-node 机制，不重复采样死亡/物理移除换皮。
+5. **P4：mandatory procedural unlock 已填**：Papers, Please Day 18 已锁 `direct unilateral execution → procedurally gated unilateral execution`，且 final-decision holder 不变。停止采“只是多一道程序门”的同机制普通案例；后续 execution-topology 只收不同 trigger/topology，例如 execution node 分裂、并联、强制共享、撤销或恢复。
 6. **P5：protected-range** 只收同边界、同 risk-channel 动态与新失败镜像；Home Alone 的 partial-defense failure 已进入 negative 4/4，不再重复同攻击。
 7. deferred 只在新证据出现时二审。
 
@@ -294,6 +313,6 @@ pending_review_count: 11
 
 ## F｜同步债 / 权限边界
 
-实时清单已吸收 Papers, Please / XCOM 2 / Miracle、Pacific Rim 缺口纠偏、Home Alone protected-range negative 4/4 与 Dr. Strangelove path-set completeness boundary 24/21。working ledger 现已对齐 Miracle evidence truth；strict-v2 专项、x-scope 专项与 `zn-x火轴研究总纲_20260827.md` 仍需按 current evidence truth 安全文同步；这些是 L4 状态同步债，不改变 L1/L2 canonical。
+实时清单现已吸收 Papers, Please Day18 mandatory procedural execution gate，并将 x-scope dynamic current truth 对齐为 `29 controls / 25 independent works`。working ledger 需同步到同一 `29/25`；strict-v2 专项、x-scope 专项与 `zn-x火轴研究总纲_20260827.md` 仍需按 current evidence truth 安全文同步；这些是 L4 状态同步债，不改变 L1/L2 canonical。
 
 不得修改 L1、zn/x 信息卡、准度卡或 canonical 关系卡。已知 `x信息量卡v2` frontmatter 元数据债只登记，不由本清单修正。
