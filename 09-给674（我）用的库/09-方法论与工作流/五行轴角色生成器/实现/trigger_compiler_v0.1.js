@@ -71,7 +71,7 @@
       const next = (s.match(/^[A-Za-z并]+/) || [''])[0];
       throw new TriggerError('ERROR_UNKNOWN_TOKEN', `多符号连接后不是合法十元: ${next || s}`, { token: next || s });
     }
-    if (s.startsWith('的')) s = s.slice(1);
+    s = s.replace(/^的+/, '');
     const subject = s.trim();
     if (!subject) throw new TriggerError('ERROR_EMPTY_SUBJECT', '触发词后缺少主体');
     return { symbols, subject, explicitMulti };
