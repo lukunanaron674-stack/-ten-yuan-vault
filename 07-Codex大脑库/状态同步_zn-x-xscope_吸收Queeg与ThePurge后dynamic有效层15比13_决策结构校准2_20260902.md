@@ -5,7 +5,7 @@ knowledge_status: evidence-locked
 status: working-ledger
 axis: fire
 pair: zn-x
-updated: 2026-09-05
+updated: 2026-09-06
 criterion_version:
   l1_axis: L1_十元即阴阳五行相反轴正本_v1.6
   strict_gate: current-layer-specific-anchor-gap-v2_20260829
@@ -54,8 +54,8 @@ protected_range_v1_verified_positive_controls: 4
 protected_range_v1_verified_positive_works: 4
 protected_range_v1_verified_negative_guards: 5
 protected_range_v1_verified_negative_guard_works: 5
-protected_range_v1_dynamic_controls: 1
-protected_range_v1_dynamic_works: 1
+protected_range_v1_dynamic_controls: 2
+protected_range_v1_dynamic_works: 2
 protected_range_knowledge_status: pending-review
 
 pending_review_count: 11
@@ -109,7 +109,12 @@ source `2f07be9a238fb0969221e5db33c66dcb9de40957`；realtime sync `a705c197785eb
 
 故 path exhaustion 除 actor index 外，还必须锁 object layer / actuator layer / target-effect layer。该证据也是 historical control，只计 x-scope boundary：`25/21 → 26/21`；不新增 independent work，不计 dynamic/strict/protected-range。
 
-### 2.7 x-scope current truth
+### 2.7 protected-range topology dynamic｜World War Z
+source `6480461b6ac71fbf4fa188ca4d8f2697e9f0f96d`；专项同步 `91488a197d21259f1ddd50ba440e734879a620ec`。
+
+该 evidence 已锁一条与 The Martian 不同的 dynamic：同一 broad zombie-ingress risk family 下，Jerusalem 对 ground-approach topology 的 verified PASS 不得外推到后来形成的 vertical body-pile bypass topology；underlying boundary/governance `x` retained 也不保证 protection predicate invariant。故 effective protected-range dynamic：`1/1 → 2/2`。本轮只做状态同步，`+0 control / +0 independent work`。
+
+### 2.8 x-scope current truth
 
 current：`4/3 positive + 26/21 boundary + 29/25 dynamic + 6 decision calibration`。
 
@@ -146,23 +151,25 @@ path exhaustion 只有在 direct repair、bypass、delegated route、parallel au
 ```text
 positive 4/4
 negative 5/5
-dynamic 1/1
+dynamic 2/2
 ```
 
-固定分 no-test / failed-test / successful-test。`partial-defense-effect ≠ stable protected-range`；`boundary-state ON ≠ successful risk-test`。普通正向与同机制失败镜像均停止堆量。
+固定分 no-test / failed-test / successful-test，并把 `risk family` 与 `ingress topology` 分账。`partial-defense-effect ≠ stable protected-range`；`boundary-state ON ≠ successful risk-test`；`topology-A PASS ≠ topology-B PASS`。普通正向与同机制失败镜像均停止堆量。
 
-## 6｜仍未同步的 L4 文件
+## 6｜同步状态
 
-- strict 专项仍需核对是否已吸收 Paul `deferred→negative` 与 Thomas More `21/10`；
-- x-scope 专项 frontmatter/正文仍明显落后 current `26/21 + 29/25 + 6`，且尚未吸收 Macondo/United 232 两道 path-set 前置护栏；
-- protected-range 专项需核对是否已吸收 The Purge negative `5/5`；
-- `zn-x火轴研究总纲_20260827.md` 仍明显停在旧 strict/x-scope/protected-range 统计。
+- realtime registry：已同步到 protected-range dynamic `2/2`；
+- strict 专项：current `1/1 + 3/3 + 8/5 + 21/10`；
+- x-scope 专项：current `4/3 + 26/21 + 29/25 + 6`；
+- protected-range 专项：current `4/4 + 5/5 + 2/2`；
+- working ledger：本文件已同步；
+- 研究总纲：仍需把 protected-range dynamic `1/1 → 2/2`。
 
-这些是状态同步债，不改变 L1/L2 canonical。
+这些是 L4 状态同步，不改变 L1/L2 canonical。
 
 ## 7｜下一批最高价值
 
-1. 优先全文同步 x-scope 专项与研究总纲到 `26/21 + 29/25 + 6`，并写入 actor-index + object/actuator-layer path-set 门；再核 strict / protected-range 专项是否仍有旧统计。
+1. 优先把研究总纲 protected-range dynamic 同步到 `2/2`，完成状态层闭环。
 2. strict 研究只收第二份跨机制 positive 或 deferred 三案出现真实新证据。
 3. x-scope 只收真正 path-set exhaustion：同一 actor、同一 object/actuator layer、同一 current window 下先完成 relevant-path completeness audit，再验证 surviving path `n>1 → 1 → 0` 且 target-effect reality-test OFF。
-4. protected-range 只收不同 risk-channel/topology 或同边界动态，不再采 `boundary-state ON 但被突破` 换皮案例。
+4. protected-range 只收 same actor / same boundary / same risk topology 下的 repair-failed reality-test 镜像，或其他真正新拓扑动态，不再采 World War Z 换皮。
