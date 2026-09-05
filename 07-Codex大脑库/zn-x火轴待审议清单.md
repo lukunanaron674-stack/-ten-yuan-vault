@@ -7,7 +7,7 @@ axis: fire
 pair: zn-x
 governance: L1-L6文件权力与知识成熟度双轴协议_v2.0_20260827
 may_override_canonical: false
-updated: 2026-09-05
+updated: 2026-09-06
 ---
 
 # zn ↔ x 火轴待审议清单
@@ -97,8 +97,8 @@ protected_range_v1_verified_positive_controls: 4
 protected_range_v1_verified_positive_works: 4
 protected_range_v1_verified_negative_guards: 5
 protected_range_v1_verified_negative_guard_works: 5
-protected_range_v1_dynamic_controls: 1
-protected_range_v1_dynamic_works: 1
+protected_range_v1_dynamic_controls: 2
+protected_range_v1_dynamic_works: 2
 knowledge_status: pending-review
 pending_review: true
 ```
@@ -117,6 +117,11 @@ boundary-state ON / armed / re-enabled
 ```
 
 本案与 Home Alone 不同：新增最小差异是“授权主体重新部署边界状态成功”仍不能替代真实 risk-test。计 protected-range negative `4/4 → 5/5`，不计 positive/dynamic/x-scope/strict。
+
+#### World War Z｜risk-topology shift dynamic
+source evidence：`6480461b6ac71fbf4fa188ca4d8f2697e9f0f96d`；专项同步：`91488a197d21259f1ddd50ba440e734879a620ec`。
+
+锁：同一 broad risk family 下，过去对 topology A 的 verified PASS 不自动外推到 topology B；underlying boundary/governance `x` retained 也不保证 protected-range invariant。与 The Martian 的 same-topology `ON→OFF→ON` 分开计，故 dynamic effective：`1/1 → 2/2`。
 
 ## B｜current evidence ledger
 
@@ -159,8 +164,8 @@ protected_range_v1_verified_positive_controls: 4
 protected_range_v1_verified_positive_works: 4
 protected_range_v1_verified_negative_guards: 5
 protected_range_v1_verified_negative_guard_works: 5
-protected_range_v1_dynamic_controls: 1
-protected_range_v1_dynamic_works: 1
+protected_range_v1_dynamic_controls: 2
+protected_range_v1_dynamic_works: 2
 protected_range_knowledge_status: pending-review
 nominal_identity_vs_real_x_controls: 3
 nominal_identity_vs_real_x_works: 3
@@ -192,8 +197,8 @@ pending_review_count: 11
 4. subject-specific attribution；第三方产权、保护、veto、制度节点不得倒灌主体 x。
 5. local/global、nominal/real、current/ultimate、use/ownership、consultation/final-decision/execution 分账。
 6. permission 迁移记录 `from→to + trigger + same-layer reality-test`。
-7. protected-range 按 boundary/object/risk-channel/ingress-path 分账；no-test / failed-test / successful-test 分开。
-8. `partial-defense-effect ≠ stable protected-range`；`boundary-state ON ≠ successful risk-test`。
+7. protected-range 按 boundary/object/risk-channel/ingress-path/ingress-topology 分账；no-test / failed-test / successful-test 分开。
+8. `partial-defense-effect ≠ stable protected-range`；`boundary-state ON ≠ successful risk-test`；`topology-A PASS ≠ topology-B PASS`。
 9. path exhaustion 先做完整 relevant path-set audit，不能用已枚举接口失败替代；system-level target-effect path set 与 actor-indexed x execution path set 分账；同 actor 仍须继续分 object layer / actuator layer / target-effect layer，跨层 workaround 不能在未定对象层时随意算成原 x surviving path。
 10. evidence-locked 可被 adversarial audit 在同 criterion 下撤回/换槽；换槽不重复加 control/work。
 11. strict-v2 已有首个 positive 后，下一正向只收跨题材、跨对象机制 adversarial replication。
@@ -202,7 +207,7 @@ pending_review_count: 11
 
 1. P0：strict-v2 第二份跨机制 verified positive；Paul 已退出 deferred 自动复采池，current deferred 仅 3/3。
 2. P1：真正 path-set exhaustion：同一 actor / object layer / actuator-or-effect family / current window 下，先完成 actor-indexed relevant path-set completeness audit，再验证 surviving path `n>1 → 1 → 0` 与该被测层 target-effect reality-test OFF；system-level alternate nodes 与跨 object/actuator-layer substitutes 单独冻结。
-3. P2：protected-range 仅收不同 risk-channel / topology 的新失败镜像或同边界动态；The Purge 的 `boundary-state ON ≠ stable protected-range` 已填，不再采同机制换皮。
+3. P2：protected-range 仅收 same actor / same boundary / same risk topology 下的 repair-failed reality-test 镜像，或其他真正新拓扑动态；World War Z 已填 topology-shift `ON→OFF`，不再采同机制换皮。
 4. P3：edge-veto 保留而 downstream disposition 撤回/eligible subset 缩窄。
 5. P4：execution topology 只收不同 trigger/topology；mandatory procedural unlock 基础槽已填。
 
@@ -222,8 +227,8 @@ pending_review_count: 11
 
 ## F｜同步债 / 权限边界
 
-realtime registry 本文件已对齐到：strict `1/1 verified + 3/3 deferred + 8/5 negative + 21/10 precondition`；x-scope `4/3 + 26/21 + 29/25 + 6`；protected-range `4/4 positive + 5/5 negative + 1/1 dynamic`。
+realtime registry 本文件已对齐到：strict `1/1 verified + 3/3 deferred + 8/5 negative + 21/10 precondition`；x-scope `4/3 + 26/21 + 29/25 + 6`；protected-range `4/4 positive + 5/5 negative + 2/2 dynamic`。
 
-仍需安全同步：strict 专项、x-scope 专项、protected-range 专项、working ledger、`zn-x火轴研究总纲_20260827.md`。这些是 L4 状态同步债，不改变 L1/L2 canonical。
+strict、x-scope、protected-range 三专项均已对齐 current evidence truth；working ledger 与研究总纲需同步 protected-range dynamic `1/1 → 2/2`。这些是 L4 状态同步债，不改变 L1/L2 canonical。
 
 canonical 元数据债继续仅登记：L1 v1.6 明确 `x=阴火`，历史 x 信息卡 frontmatter 残留映射不得由 L4 越权修复。
