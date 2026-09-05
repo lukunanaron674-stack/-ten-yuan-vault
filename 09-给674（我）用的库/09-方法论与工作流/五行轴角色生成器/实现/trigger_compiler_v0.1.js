@@ -12,6 +12,7 @@
   const CANONICAL_SET = new Set(CANONICAL);
   const IMPLEMENTED_MODULES = ['世界观'];
   const ALL_MODULES = ['世界观','服装','发型','身体/脸','道具','身份/行为','关系','一生','构图','具象名词'];
+  const MODULE_ORDER = new Map(ALL_MODULES.map((module, index) => [module, index]));
 
   class TriggerError extends Error {
     constructor(code, message, detail = {}) {
@@ -27,6 +28,17 @@
   }
   function stripSpaces(text) { return text.replace(/\s+/g, ''); }
   function startsCanonical(text) { return CANONICAL.some(token => text.toLowerCase().startsWith(token.toLowerCase())); }
+  function normalizeModuleList(modules) {
+    if (!Array.isArray(modules)) return [];
+    const unique = [...new Set(modules.map(value => String(value ?? '').normalize('NFKC').trim()).filter(Boolean))];
+    unique.sort((a, b) => {
+      const ai = MODULE_ORDER.has(a) ? MODULE_ORDER.get(a) : Number.MAX_SAFE_INTEGER;
+      const bi = MODULE_ORDER.has(b) ? MODULE_ORDER.get(b) : Number.MAX_SAFE_INTEGER;
+      if (ai !== bi) return ai - bi;
+      return a.localeCompare(b, 'zh-Hans-CN');
+    });
+    return unique;
+  }
 
   function parseLeadingSymbols(normalized) {
     let s = stripSpaces(normalized);
@@ -78,8 +90,8 @@
       mode,
       genre_context: options.genre_context || 'default',
       seed: String(options.seed ?? '74'),
-      locked_modules: Array.isArray(options.locked_modules) ? [...options.locked_modules] : [],
-      reroll_modules: Array.isArray(options.reroll_modules) ? [...options.reroll_modules] : [],
+      locked_modules: normalizeModuleList(options.locked_modules),
+      reroll_modules: normalizeModuleList(options.reroll_modules),
       parser_version: PARSER_VERSION,
       mapping_version: options.mapping_version || '世界观_机器映射_v0.1'
     };
@@ -148,5 +160,5 @@
     }
   }
 
-  return { PARSER_VERSION, CANONICAL, IMPLEMENTED_MODULES, ALL_MODULES, TriggerError, normalizeRaw, parseTrigger, compileRequest, buildRuntimeConfig, runEndToEnd };
+  return { PARSER_VERSION, CANONICAL, IMPLEMENTED_MODULES, ALL_MODULES, TriggerError, normalizeRaw, normalizeModuleList, parseTrigger, compileRequest, buildRuntimeConfig, runEndToEnd };
 });
