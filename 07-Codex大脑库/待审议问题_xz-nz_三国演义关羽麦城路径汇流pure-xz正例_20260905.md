@@ -13,7 +13,7 @@ source_priority: four-great-classics-primary-pool
 work: 三国演义
 character: 关羽
 chapter: 第七十七回
-research_slot: pure-xz-positive-control
+research_slot: pure-xz-positive-control + cross-layer-cooccurrence-nonstrict-guard
 canonical_refs:
   - 01-十元系统/05-十元语义空间/L1_十元即阴阳五行相反轴正本_v1.6.md
   - 01-十元系统/【xz信息量卡v2】.md
@@ -23,6 +23,7 @@ canonical_refs:
   - 01-十元系统/04-十元生克补卡/补/xz补nz_补卡.md
 sources:
   - https://zh.wikisource.org/zh-hans/三國演義/第077回
+  - https://zh.wikisource.org/zh-hans/三國演義/第028回
 ---
 
 # xz ↔ nz 水轴待审议问题｜《三国演义》关羽麦城路径汇流 pure xz 正例
@@ -307,3 +308,155 @@ increment:
 > **“敌人设伏成功”本身不够；必须证明被测主体的 relevant path set 在 current window 中真的由多变少，并且换路仍被导回同一未来区间。**
 
 > **想回到某个人/某阵营 ≠ 同窗 nz；关系回返与战役撤离路径必须按 object_layer 分账。**
+
+---
+
+## 12｜第二轮复验：`xz + nz` 同窗共现但跨层 non-strict guard
+
+### 12.1 研究问题
+
+> 在同一人物、同一 current window 中，如果 `xz` 与 `nz` 都能分别独立成立，但两者落在不同 object layer，能否仅凭“同时出现”就判 strict `xz↔nz`？
+
+本轮答案：**不能。** 本轮不改写第 10 节的第一轮历史判定；第一轮当时只测试 xz。这里是在同一 criterion_version 下重新打开 `nz` 独立门，并把它作为 co-occurrence / strict guard 单独计账。
+
+### 12.2 剧情事实补充
+
+第七十七回 current window 内：
+
+- 赵累提出“弃此孤城，奔入西川，再整兵来，以图恢复”，关羽明确回答“吾亦欲如此”；
+- 被擒后孙权劝降，关羽明确以“吾与刘皇叔桃园结义”拒绝转入孙权关系与阵营；
+- 因此，当战役层的逃生路径持续收窄时，关羽当前仍把刘备/西川作为对象特异的现实回归位置，而不是任意安全地或任意新主。
+
+第二十八回提供此前关系层的 reality calibration：
+
+- 关羽与刘备失散后，关羽拒绝回曹营，并明确“遍天下寻”刘备；
+- 孙乾实际找到刘备，刘备随后脱离袁绍；
+- 最终刘备、关羽、张飞等在古城重新聚合，原共同关系恢复运行。
+
+这证明“离开/失散后回到刘备关系”并非纯口号、名义身份或单方幻想，而是本作品里已经发生过的真实对象特异 reentry。
+
+### 12.3 `nz` 独立判断
+
+被测对象：**刘备↔关羽长期共同关系中的退出、分离与重新进入资格。**
+
+1. **对象特异：通过。** 关羽不是在找“任何可接受的主公/盟友”；第 28 回与第 77 回都把刘备设为不可任意替代的回归对象。
+2. **真实共同关系：通过。** 双方有长期共同作战、共同阵营与相互回应历史。
+3. **自由性：通过。** 关羽在曹操高待遇与现实安全条件下仍主动离开，并拒绝以现实利益替换刘备关系；不是因扣留资源被迫返回。
+4. **回返性：通过。** 第 28 回已经发生“失散→寻找→重新聚合”的现实回返；第 77 回 current window 又明确以“奔入西川”为当前回归方向。
+5. **修复/继续共同运行：通过。** 古城重聚后原共同关系恢复运行，并持续到后续阶段。
+
+因此本轮可把：
+
+```text
+current_nz = true_as_stable_relationship_return-position
+```
+
+置信度不来自“忠义”主题，而来自已经发生过的现实分离—回返—重聚，以及第 77 回对同一对象特异回归位置的当前调用。
+
+### 12.4 same current window / object-layer split
+
+两端在第 77 回同一时间窗并存，但 changed_variable 不同：
+
+```text
+xz object_layer
+= 麦城→西川这一战役撤离的现实 path-set / option-set
+changed_variable
+= 逃脱与继续行动的可行路径数量持续下降
+
+nz object_layer
+= 刘备↔关羽对象特异关系的 reentry eligibility / trusted return-position
+changed_variable
+= 即使长期分离，原关系仍保留“可以回到刘备这里”的现实资格与对象特异性
+```
+
+所以：
+
+```text
+same_actor = true
+same_current_window = true
+xz_independently_true = true
+nz_independently_true = true
+same_object_layer = false
+strict_xz_nz = false
+```
+
+这正好服从 L1 的硬定义：五行两端只有在**同一对象层、同一核心变量**上做相反操作，才构成轴内对立。跨层共现不能偷渡成 strict。
+
+### 12.5 nearest-neighbor
+
+- **忠义 / 身份 / 阵营**：只能解释为什么刘备是重要对象，不能单独证明 nz；真正 nz 证据来自第 28 回已经实现的失散后现实重聚。
+- **`z`**：古城重聚、麦城决石都是节点，但节点不等于关系回返能力或路径持续收窄。
+- **`nx`**：沿某条既有路线去西川是行动接口，不等于刘备↔关羽关系本身可回返。
+- **`x`**：孙权当前拥有擒获/处置关羽的现实控制候选，但这种局部控制不生成刘关关系 nz，也不解释整段 xz path convergence。
+
+### 12.6 removal test
+
+**拿掉 `nz`：**
+
+把第 77 回的目标改成“逃往任何中立安全地”，删除刘备对象特异关系与历史重聚证据；麦城的守城/等援/撤离路径仍然会持续收窄并汇流，`xz` 仍成立。
+
+**拿掉 `xz`：**
+
+反向打开麦城多条稳定撤离路线、援军真实到达，使战役 path-set 不再收窄；刘备↔关羽此前已经发生过的分离后回返、以及对象特异 return-position 并不会因此消失，`nz` 仍成立。
+
+因此两端各自有独立现实锚点，彼此不是不可替代原因。
+
+### 12.7 reverse test
+
+- 若刘备明确拒绝关羽重新进入原共同关系、古城历史重聚不存在或只能恢复名义职位，则 `nz` 应下降，但这不自动打开麦城逃生 path-set。
+- 若吴军封锁失败、援军到达、关羽拥有多条稳定出口，则 `xz` 应下降，但这不自动破坏刘备↔关羽的 reentry eligibility。
+- 只有未来能找到同一 object layer 上“路径收窄”与“对象特异回返空间保存/恢复”互相构成必要变化，才值得进入 strict 候选。
+
+### 12.8 third-factor freeze
+
+冻结：
+
+- 忠义主题；
+- 桃园结义的象征意义；
+- 关羽英雄身份；
+- 刘备政治身份；
+- 孙权劝降的戏剧效果；
+- 关羽最终死亡。
+
+仍剩两套独立结构：
+
+```text
+战役层：现实替代路径持续减少并汇流 → xz
+关系层：已验证的对象特异分离后重聚资格仍被当前调用 → nz
+```
+
+第三因素无法把二者压成同一 changed_variable。
+
+### 12.9 判定与统计
+
+```yaml
+sample_type: xz+nz-cooccurrence-nonstrict-guard
+subtype: same-actor_same-window_cross-object-layer
+criterion_version: water-axis-boundary-v1-current-canonical_20260904
+source_priority: four-great-classics-primary-pool
+work: 三国演义
+character: 关羽
+stage: 第七十七回_麦城突围窗口
+current_xz: true
+current_nz: true_as_stable_relationship_return-position
+same_actor: true
+same_current_window: true
+same_object_layer: false
+strict_xz_nz: false
+maturity: evidence-locked
+confidence_fact: 99
+confidence_classification: 97
+increment:
+  cooccurrence_nonstrict_guards: 1
+  independent_works: 0
+```
+
+同作品不重复增加 work；《三国演义》已在本 criterion_version 作为 pure-xz positive work 计入。本轮只新增一个新的 **co-occurrence non-strict control**。
+
+### 12.10 本轮锁定边界
+
+> **`xz=true + nz=true + same actor + same current window` 仍不足以推出 strict `xz↔nz`。**
+
+> **若 `xz` 改变的是战役路径集合，而 `nz` 保存的是对象特异关系的重入资格，两端即使同时强成立，也只是 cross-layer co-occurrence。**
+
+> **strict 水轴必须继续要求 same object layer / same core variable；不能因为“我越来越回不去”这句自然语言同时像 xz 与 nz，就把物理撤离路径和关系回返资格捆成一个变量。**
