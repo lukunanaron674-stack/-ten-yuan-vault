@@ -31,6 +31,13 @@ function fixture() {
   return {dir,trigger,mapping,registry};
 }
 
+function validCompilerContract() {
+  return {
+    CANONICAL:['x并z','zx','zn','nz','nx','xn','xz','x','z','n'],
+    PARSER_VERSION:'trigger-parser-v0.1'
+  };
+}
+
 test('loads the three real-named registry/mapping files', () => {
   const f = fixture();
   const b = preflight.loadRepoBundle({dataDir:f.dir});
@@ -39,28 +46,51 @@ test('loads the three real-named registry/mapping files', () => {
 
 test('valid fixture passes repo preflight', () => {
   const f = fixture();
-  const out = preflight.runRepoPreflight({dataDir:f.dir});
+  const out = preflight.runRepoPreflight({dataDir:f.dir, compilerContract:validCompilerContract()});
   assert.equal(out.status,'PASS');
   assert.equal(out.summary.registry.canonical_count,10);
+  assert.equal(out.summary.compiler.canonical_count,10);
+  assert.equal(out.summary.compiler.parser_version,'trigger-parser-v0.1');
 });
 
 test('missing file fails closed', () => {
   const f = fixture();
   fs.unlinkSync(path.join(f.dir,'mapping_registry_v0.1.json'));
-  assert.throws(() => preflight.runRepoPreflight({dataDir:f.dir}), e => e.code === 'PREFLIGHT_FILE_READ_ERROR');
+  assert.throws(() => preflight.runRepoPreflight({dataDir:f.dir, compilerContract:validCompilerContract()}), e => e.code === 'PREFLIGHT_FILE_READ_ERROR');
 });
 
 test('malformed JSON fails closed', () => {
   const f = fixture();
   fs.writeFileSync(path.join(f.dir,'trigger_registry_v0.1.json'), '{bad json');
-  assert.throws(() => preflight.runRepoPreflight({dataDir:f.dir}), e => e.code === 'PREFLIGHT_JSON_PARSE_ERROR');
+  assert.throws(() => preflight.runRepoPreflight({dataDir:f.dir, compilerContract:validCompilerContract()}), e => e.code === 'PREFLIGHT_JSON_PARSE_ERROR');
 });
 
 test('stale blocked symbol is rejected by real bundle path', () => {
   const f = fixture();
   f.trigger.runtime_projection.data_blocked_symbols.push('zx');
   fs.writeFileSync(path.join(f.dir,'trigger_registry_v0.1.json'), JSON.stringify(f.trigger));
-  assert.throws(() => preflight.runRepoPreflight({dataDir:f.dir}), e => e.code === 'DATA_PROJECTION_STALE_BLOCKED_SYMBOL');
+  assert.throws(() => preflight.runRepoPreflight({dataDir:f.dir, compilerContract:validCompilerContract()}), e => e.code === 'DATA_PROJECTION_STALE_BLOCKED_SYMBOL');
+});
+
+test('compiler canonical token drift fails closed', () => {
+  const f = fixture();
+  const compiler = validCompilerContract();
+  compiler.CANONICAL = compiler.CANONICAL.filter(token => token !== 'x并z');
+  assert.throws(() => preflight.runRepoPreflight({dataDir:f.dir, compilerContract:compiler}), e => e.code === 'PREFLIGHT_COMPILER_CANONICAL_MISMATCH' && e.detail.missing.includes('x并z'));
+});
+
+test('compiler duplicate canonical token fails closed', () => {
+  const f = fixture();
+  const compiler = validCompilerContract();
+  compiler.CANONICAL.push('zx');
+  assert.throws(() => preflight.runRepoPreflight({dataDir:f.dir, compilerContract:compiler}), e => e.code === 'PREFLIGHT_COMPILER_CANONICAL_DUPLICATE' && e.detail.tokens.includes('zx'));
+});
+
+test('compiler parser version drift fails closed', () => {
+  const f = fixture();
+  const compiler = validCompilerContract();
+  compiler.PARSER_VERSION = 'trigger-parser-v9.9';
+  assert.throws(() => preflight.runRepoPreflight({dataDir:f.dir, compilerContract:compiler}), e => e.code === 'PREFLIGHT_COMPILER_PARSER_VERSION_MISMATCH');
 });
 
 console.log(JSON.stringify({tests:passed+failed,passed,failed},null,2));
