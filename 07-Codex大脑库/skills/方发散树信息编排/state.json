@@ -1,0 +1,14 @@
+{
+  "version": "0.1",
+  "status": "protocol_established",
+  "layout_version": "fang-tree-layout-v0.1",
+  "active_application": "方/08_探索",
+  "canvas_rebuild_enabled": false,
+  "rules": {
+    "max_primary_visual_centers": 3,
+    "collapsed_recoverable": true,
+    "structure_id_mutable": false,
+    "next_expand_requires_reason": true
+  },
+  "next_stage": "real_sample_regression"
+}
