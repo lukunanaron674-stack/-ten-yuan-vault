@@ -43,7 +43,7 @@ strict_canonical_calibration_controls: 3
 
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 24
+x_scope_boundary_guards: 26
 x_scope_boundary_guard_works: 21
 x_scope_dynamic_transition_controls: 29
 x_scope_dynamic_transition_works: 25
@@ -95,14 +95,30 @@ boundary-state ON / armed / re-enabled
 
 该机制区别于 Home Alone 的 partial-defense-effect：这里边界状态部署本身成功，但 risk-test 仍失败。计 protected-range negative：`4/4 → 5/5`；不计 positive/dynamic/x-scope/strict。
 
-### 2.5 x-scope current truth｜本批无新计数
+### 2.5 x-scope path-set 主体归因护栏｜Deepwater Horizon / Macondo
+source `f34f226e7a31e80bd4d59de1187cf63d906eac90`。
 
-维持：`4/3 positive + 24/21 boundary + 29/25 dynamic + 6 decision calibration`。
+锁：`system-level target-effect path set ≠ actor-indexed x execution path set`。人工 EDS、自动 deadman/autoshear、后续外部 ROV 虽都指向封井效果，但不能因为 target effect 相同就倒灌成同一主体的 `x` 路径集合。真正 path-set exhaustion 必须先按 actor 建索引，再审 direct repair、bypass、delegated route、parallel authority、emergency interface、alternate execution node。
+
+该证据是 historical control，只计 x-scope boundary：`24/21 → 25/21`；不新增 independent work，不计 dynamic/strict/protected-range。
+
+### 2.6 x-scope path-set 对象层/执行层护栏｜United Airlines Flight 232
+source `2f07be9a238fb0969221e5db33c66dcb9de40957`；realtime sync `a705c197785eb98d1e21e425497280750585865f`。
+
+锁：`same actor + same higher-level target effect ≠ same x execution-object path set`。Flight 232 三套液压系统全部丧失后，正常液压飞控面执行链已归零；但同一机组仍可通过发动机差动推力有限影响飞机整体航迹。若被测 `x` 锁在“正常液压飞控面操纵”，差动推力属于跨 actuator/object layer substitute，不是原 `x` surviving path；若对象提升为“飞机整体航迹控制”，差动推力必须进入 relevant path-set。
+
+故 path exhaustion 除 actor index 外，还必须锁 object layer / actuator layer / target-effect layer。该证据也是 historical control，只计 x-scope boundary：`25/21 → 26/21`；不新增 independent work，不计 dynamic/strict/protected-range。
+
+### 2.7 x-scope current truth
+
+current：`4/3 positive + 26/21 boundary + 29/25 dynamic + 6 decision calibration`。
 
 继续锁：
 - transition-blocking x ≠ resultant-state disposition x；
 - quantitative cap expansion/contraction 与 permission family 分账；
 - enumerated-interface exhaustion ≠ complete relevant path-set exhaustion；
+- system-level target-effect path set ≠ actor-indexed x execution path set；
+- same actor + same higher-level target effect ≠ same execution-object / actuator-layer path set；
 - permission retained ≠ direct execution path retained；
 - final-decision topology ≠ execution topology；
 - edge-veto retained ≠ downstream disposition already present。
@@ -123,7 +139,7 @@ current-window + same-object-layer + relevant current reality anchor 继续有�
 
 最少拆：permission_type、scope、quantitative_cap、term、revocability、return_obligation、same-layer veto/global override、ultimate title、consultation/final decision/execution/co-decision topology。
 
-path exhaustion 只有在 direct repair、bypass、delegated route、parallel authority、emergency interface、alternate execution node 等 relevant paths 一并冻结后，才允许写 surviving relevant path count=0。
+path exhaustion 只有在 direct repair、bypass、delegated route、parallel authority、emergency interface、alternate execution node 等 relevant paths 一并冻结后，才允许写 surviving relevant path count=0。现在再加两道前置门：先按 actor 建索引，再锁 object / actuator / target-effect layer；跨主体或跨 actuator/object layer 的替代路径必须分账，不能为了得到 `0` 而随意排除，也不能为了得到 `>0` 而随意倒灌。
 
 ## 5｜protected-range current
 
@@ -137,16 +153,16 @@ dynamic 1/1
 
 ## 6｜仍未同步的 L4 文件
 
-- strict 专项仍需吸收 Paul `deferred→negative` 与 Thomas More `21/10`；
-- x-scope 专项仍明显落后 current `24/21 + 29/25 + 6`；
-- protected-range 专项需吸收 The Purge negative `5/5`；
+- strict 专项仍需核对是否已吸收 Paul `deferred→negative` 与 Thomas More `21/10`；
+- x-scope 专项 frontmatter/正文仍明显落后 current `26/21 + 29/25 + 6`，且尚未吸收 Macondo/United 232 两道 path-set 前置护栏；
+- protected-range 专项需核对是否已吸收 The Purge negative `5/5`；
 - `zn-x火轴研究总纲_20260827.md` 仍明显停在旧 strict/x-scope/protected-range 统计。
 
 这些是状态同步债，不改变 L1/L2 canonical。
 
 ## 7｜下一批最高价值
 
-1. 先安全全文同步 strict / x-scope / protected-range 专项与研究总纲，不再新增状态说明文件。
+1. 优先全文同步 x-scope 专项与研究总纲到 `26/21 + 29/25 + 6`，并写入 actor-index + object/actuator-layer path-set 门；再核 strict / protected-range 专项是否仍有旧统计。
 2. strict 研究只收第二份跨机制 positive 或 deferred 三案出现真实新证据。
-3. x-scope 只收真正 path-set exhaustion、edge-veto 与 downstream disposition 撤回/缩窄、不同 execution-topology。
+3. x-scope 只收真正 path-set exhaustion：同一 actor、同一 object/actuator layer、同一 current window 下先完成 relevant-path completeness audit，再验证 surviving path `n>1 → 1 → 0` 且 target-effect reality-test OFF。
 4. protected-range 只收不同 risk-channel/topology 或同边界动态，不再采 `boundary-state ON 但被突破` 换皮案例。
