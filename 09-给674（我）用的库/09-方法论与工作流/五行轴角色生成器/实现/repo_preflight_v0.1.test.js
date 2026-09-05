@@ -19,7 +19,7 @@ function fixture() {
     schema_version:'v0.1', parser_version:'trigger-parser-v0.1',
     canonical_symbols:['x并z','zx','zn','nz','nx','xn','xz','x','z','n'],
     aliases:{'x并z':['x并z'],'zx':['zx'],'zn':['zn'],'nz':['nz'],'nx':['nx'],'xn':['xn'],'xz':['xz'],'x':['x'],'z':['z'],'n':['n']},
-    runtime_projection:{mapping_version:'世界观_机器映射_v0.1',implemented_modules:['世界观'],data_blocked_symbols:['zn','nz','nx','xn','xz','x','z','n'],pending_review_symbols:[]}
+    runtime_projection:{mapping_version:'世界观_机器映射_v0.1',implemented_modules:['世界观'],data_blocked_symbols:['x并z','zn','nz','nx','xn','xz','x','z','n'],pending_review_symbols:[]}
   };
   const mapping = {schema_version:'v0.1',mappings:[{
     id:'ZX-W-001',symbol:'zx',module:'世界观',sub_semantic:'s',changed_variable:'v',relation_shape:'r',module_grammar:'g',concrete_candidate:['c'],genre_context:['default'],genre_translation:{},status:'candidate'
