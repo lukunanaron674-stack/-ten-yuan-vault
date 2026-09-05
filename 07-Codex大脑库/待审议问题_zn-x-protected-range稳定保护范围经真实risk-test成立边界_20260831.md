@@ -10,13 +10,13 @@ positive_controls: 4
 positive_cross_work_count: 4
 negative_guards: 5
 negative_guard_works: 5
-dynamic_transition_controls: 1
-dynamic_transition_works: 1
+dynamic_transition_controls: 2
+dynamic_transition_works: 2
 canonical_calibration_controls: 0
 may_override_canonical: false
 may_update_L2: false
 created: 2026-08-31
-updated: 2026-09-05
+updated: 2026-09-06
 ---
 
 # 待审议问题｜zn-x protected-range 稳定保护范围经真实 risk-test 成立边界
@@ -32,8 +32,8 @@ positive_controls: 4
 positive_cross_work_count: 4
 negative_guards: 5
 negative_guard_works: 5
-dynamic_transition_controls: 1
-dynamic_transition_works: 1
+dynamic_transition_controls: 2
+dynamic_transition_works: 2
 knowledge_status: pending-review
 ```
 
@@ -61,6 +61,8 @@ boundary-on
 - 其他后续经同判据复验的稳定 access-control boundary。
 
 核心：**protected-range 不等于“墙”，也不要求边界固定在地理坐标。主体 current `x` 必须形成稳定、可识别、经真实风险测试的 pre-effect access/exclusion boundary。**
+
+另外，dynamic 判定必须把 `risk family` 与 `ingress topology` 分开记录：过去在 topology A 下 verified PASS，不得自动外推到 topology B。
 
 ## 2｜四个正向控制｜4 controls / 4 works
 
@@ -124,11 +126,11 @@ re-enabled
 
 本条与《Home Alone》不同：Home Alone 锁“多次局部防御效果仍不足以推出 stable exclusion”；The Purge 则锁“边界状态真实重新部署为 ON，也仍不足以推出 protection predicate 已通过”。stable protected-range 必须继续由同 risk-channel 的真实阻断结果单独验证。
 
-## 4｜动态迁移｜1 control / 1 work
+## 4｜动态迁移｜2 controls / 2 works
 
 ### 4.1 《The Martian》Mark Watney / Hab｜same-risk-channel ON→OFF→ON
 
-本条不是普通第5个 protected-range positive，而是当前专项此前缺失的动态控制。
+本条不是普通第5个 protected-range positive，而是动态控制。
 
 固定：
 
@@ -183,13 +185,63 @@ protected_range_negative_increment: false
 x_scope_dynamic_transition_increment: false
 ```
 
-### 与既有控制的最小差异
+### 4.2 《World War Z》Jerusalem fortified safe zone｜risk-topology shift ON→OFF
 
-- vs Panic Room：Panic Room 锁同一 boundary 上 `risk channel A PASS / risk channel B FAIL`；The Martian 固定同一 risk channel，看 boundary integrity 导致 `ON→OFF→ON`。
-- vs War of the Worlds：Ray 证明 vehicle-use `x=true` 但保护从未通过真实 mobile risk-test；Watney 则是保护先成立、再真实失效、再恢复。
-- vs Home Alone：Kevin 的局部防御节点多次有效，但从未形成对入侵风险的 stable boundary PASS；Watney 则有同一 risk-channel 已验证的 ON、OFF 与恢复后的 ON。
-- vs The Purge：James 的 security boundary 虽被重新启用，但并未在 systematic assault risk-channel 上先通过 stable risk-test，因此不能把 `re-enabled` 误记成 protected-range `ON` 的恢复阶段。
-- vs ordinary x-scope dynamic：Watney 的 Hab use/management/repair 权限没有在 breach 时被撤销，因此不计 `x_scope_dynamic_transition`。
+本条吸收已 evidence-locked 的 `6480461b6ac71fbf4fa188ca4d8f2697e9f0f96d`，不新增第二次 control/work。
+
+固定：
+
+```text
+actor: Israeli / Jerusalem security-defense apparatus
+managed object: fortified Jerusalem perimeter + controlled gates
+protected range: fortified Jerusalem interior
+protected objects: 已进入城区的未感染人口
+broad risk family: zombie physical ingress
+underlying perimeter/governance x: retained across stages
+```
+
+阶段：
+
+```text
+A｜fortified perimeter deployed
++ protected population inside
++ ordinary ground-approach zombie ingress repeatedly excluded
+→ protected-range ON
+
+Trigger｜大量感染者被声音吸引并聚集
+→ body-pile / vertical aggregation
+→ 新的 vertical bypass ingress topology 出现
+
+B｜same institutional boundary/governance x retained
++ wall remains deployed
++ broad risk family remains zombie physical ingress
++ new topology carries risk across the perimeter
+→ protected-range OFF
+```
+
+锁：
+
+> **stable protected-range 必须同时绑定 current window 与 ingress topology；过去对 topology A 的 verified PASS，不能自动外推到 topology B。**
+
+以及：
+
+> **underlying boundary/governance `x` retained ≠ protected-range invariant。**
+
+与《The Martian》的最小差异：
+
+- The Martian：固定 same risk channel / topology，看 boundary integrity 破裂与修复造成 `ON→OFF→ON`；
+- World War Z：underlying boundary 仍部署、governance `x` 未撤回，但风险通过新形成的 vertical bypass topology 使保护从 `ON→OFF`。
+
+与《Panic Room》的最小差异：Panic Room 锁不同 ingress-path 必须分账；World War Z 进一步锁同一 broad risk family 内部的 topology shift 也足以改变 protected-range 状态。
+
+分账：
+
+```yaml
+protected_range_dynamic_transition_increment: true
+protected_range_positive_increment: false
+protected_range_negative_increment: false
+x_scope_dynamic_transition_increment: false
+```
 
 ## 5｜不得倒灌的邻近概念
 
@@ -209,7 +261,8 @@ x_scope_dynamic_transition_increment: false
 - 某个 risk-channel 成功后倒灌为 all-hazard protection；
 - underlying use/management x 仍在，因此假定 protected-range 永远 ON；
 - 多个陷阱/防御节点反复造成伤害或改道，因此假定 stable protected-range 已成立；
-- security boundary 状态位显示 ON / armed / re-enabled，因此假定 stable protected-range 已成立。
+- security boundary 状态位显示 ON / armed / re-enabled，因此假定 stable protected-range 已成立；
+- 同一 broad risk family 过去通过过测试，因此假定任何新 ingress topology 都继续 PASS。
 
 ## 6｜与 strict-v2 的关系
 
@@ -221,13 +274,13 @@ protected-range `x` 过门不等于 strict-v2 过门。仍必须独立验证 `zn
 strict_v2_verified_positive_increment: 0
 ```
 
-Home Alone 与 The Purge 本轮不锁 `zn`；Watney 本轮不锁 `zn`；Furiosa 案虽两端都较强，但 War Rig 仍有独立运输/驾驶/任务用途，可作为 x 端 competing purpose/ranking anchor，因此也不破 strict current verified-positive ledger。
+Home Alone、The Purge、World War Z 本轮不锁 `zn`；Watney 本轮不锁 `zn`；Furiosa 案虽两端都较强，但 War Rig 仍有独立运输/驾驶/任务用途，可作为 x 端 competing purpose/ranking anchor，因此也不破 strict current verified-positive ledger。
 
 ## 7｜后续只收高信息增益
 
 达到 pending-review 后继续停止普通正例采样。优先：
 
-1. same actor / same boundary / same risk channel 下，已有 verified protected-range ON 后发生 nominal/technical repair，但修复后的真实 risk-test 仍 FAIL 的动态失败镜像；
+1. same actor / same boundary / same risk topology 下，已有 verified protected-range ON 后发生 nominal/technical repair，但修复后的真实 risk-test 仍 FAIL 的动态失败镜像；
 2. underlying use/management x 不变，但 exclusion/blocking node 被撤回、耗尽或替代后的 protected-range 动态；
 3. mobile boundary 的控制权转移/失效；
 4. subject-specific access gate 与第三方底层执行节点如何分账；
@@ -242,8 +295,8 @@ positive_controls: 4
 positive_cross_work_count: 4
 negative_guards: 5
 negative_guard_works: 5
-dynamic_transition_controls: 1
-dynamic_transition_works: 1
+dynamic_transition_controls: 2
+dynamic_transition_works: 2
 knowledge_status: pending-review
 may_override_canonical: false
 ```
