@@ -68,7 +68,7 @@ criterion：`current-x-scope-distinction-v1_20260830`
 ```yaml
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 24
+x_scope_boundary_guards: 25
 x_scope_boundary_guard_works: 21
 x_scope_dynamic_transition_controls: 29
 x_scope_dynamic_transition_works: 25
@@ -78,6 +78,11 @@ pending_review: true
 ```
 
 current 核心纪律继续有效：permission_type、scope、quantitative_cap、term、revocability、return_obligation、same-layer veto/global override、ultimate title、consultation/final decision/execution/co-decision topology 必须分账；`enumerated-interface exhaustion ≠ path-set exhaustion`；`permission retained ≠ direct execution path retained`；`edge-veto retained ≠ downstream disposition already present`。
+
+#### path-set 主体归因护栏｜Deepwater Horizon / Macondo
+source evidence：`f34f226e7a31e80bd4d59de1187cf63d906eac90`。
+
+锁：`system-level target-effect path set ≠ actor-indexed x execution path set`。人工 EDS、自动 deadman/autoshear 与后续外部 ROV 虽都指向封井效果，但不能因 target effect 相同而倒灌成同一主体的 x。真正 path-set exhaustion 必须先按 actor 建索引，再审 direct repair、bypass、delegated route、parallel authority、emergency interface、alternate execution node。该证据为 historical control，只计 x-scope boundary guard：`24/21 → 25/21`，不增加 independent work，不计 dynamic/strict/protected-range。
 
 ### A11｜protected-range risk-test｜current v1
 criterion：`protected-range-risk-test-v1_20260831`
@@ -138,7 +143,7 @@ strict_canonical_calibration_controls: 3
 x_scope_current_criterion: current-x-scope-distinction-v1_20260830
 x_scope_positive_controls: 4
 x_scope_positive_works: 3
-x_scope_boundary_guards: 24
+x_scope_boundary_guards: 25
 x_scope_boundary_guard_works: 21
 x_scope_dynamic_transition_controls: 29
 x_scope_dynamic_transition_works: 25
@@ -184,14 +189,14 @@ pending_review_count: 11
 6. permission 迁移记录 `from→to + trigger + same-layer reality-test`。
 7. protected-range 按 boundary/object/risk-channel/ingress-path 分账；no-test / failed-test / successful-test 分开。
 8. `partial-defense-effect ≠ stable protected-range`；`boundary-state ON ≠ successful risk-test`。
-9. path exhaustion 先做完整 relevant path-set audit，不能用已枚举接口失败替代。
+9. path exhaustion 先做完整 relevant path-set audit，不能用已枚举接口失败替代；同时 system-level target-effect path set 与 actor-indexed x execution path set 分账。
 10. evidence-locked 可被 adversarial audit 在同 criterion 下撤回/换槽；换槽不重复加 control/work。
 11. strict-v2 已有首个 positive 后，下一正向只收跨题材、跨对象机制 adversarial replication。
 
 ## D｜当前高价值缺口
 
 1. P0：strict-v2 第二份跨机制 verified positive；Paul 已退出 deferred 自动复采池，current deferred 仅 3/3。
-2. P1：真正 path-set exhaustion：完整 relevant path set `n>1 → 1 → 0` 后 target-effect reality-test OFF。
+2. P1：真正 path-set exhaustion：同一 actor / object / current window 下，先完成 actor-indexed relevant path-set completeness audit，再验证 surviving path `n>1 → 1 → 0` 与 target-effect reality-test OFF；system-level alternate nodes 单独冻结。
 3. P2：protected-range 仅收不同 risk-channel / topology 的新失败镜像或同边界动态；The Purge 的 `boundary-state ON ≠ stable protected-range` 已填，不再采同机制换皮。
 4. P3：edge-veto 保留而 downstream disposition 撤回/eligible subset 缩窄。
 5. P4：execution topology 只收不同 trigger/topology；mandatory procedural unlock 基础槽已填。
@@ -212,7 +217,7 @@ pending_review_count: 11
 
 ## F｜同步债 / 权限边界
 
-realtime registry 本文件已对齐到：strict `1/1 verified + 3/3 deferred + 8/5 negative + 21/10 precondition`；x-scope `4/3 + 24/21 + 29/25 + 6`；protected-range `4/4 positive + 5/5 negative + 1/1 dynamic`。
+realtime registry 本文件已对齐到：strict `1/1 verified + 3/3 deferred + 8/5 negative + 21/10 precondition`；x-scope `4/3 + 25/21 + 29/25 + 6`；protected-range `4/4 positive + 5/5 negative + 1/1 dynamic`。
 
 仍需安全同步：strict 专项、x-scope 专项、protected-range 专项、working ledger、`zn-x火轴研究总纲_20260827.md`。这些是 L4 状态同步债，不改变 L1/L2 canonical。
 
