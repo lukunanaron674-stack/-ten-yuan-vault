@@ -7,7 +7,7 @@ axis: fire
 pair: zn-x
 governance: L1-L6文件权力与知识成熟度双轴协议_v2.0_20260827
 may_override_canonical: false
-updated: 2026-09-04
+updated: 2026-09-05
 ---
 
 # zn ↔ x 火轴待审议清单
@@ -16,60 +16,54 @@ updated: 2026-09-04
 
 ## A｜当前研究槽
 
-### A1｜zn vs x 最近邻分离
-`3 positive works + 2 negative guards / pending-review`
-
-### A2｜pure x
-`3 positive controls / 3 works / pending-review`
-
-### A3｜pure zn
-`3 positive controls / 3 works + 1 negative guard / 1 work / pending-review`
-
-### A4｜zn+x 当前共现
-`3 positive controls / 3 works + 6 negative guards / 4 guard works / pending-review`
+- A1 zn vs x 最近邻：`3 positive works + 2 negative guards / pending-review`
+- A2 pure x：`3 positive controls / 3 works / pending-review`
+- A3 pure zn：`3 positive controls / 3 works + 1 negative guard / 1 work / pending-review`
+- A4 zn+x 当前共现：`3 positive controls / 3 works + 6 negative guards / 4 guard works / pending-review`
+- A6 lifecycle：`3 positive / 3 works + 2 negative guards / 2 works / pending-review`
+- A7 名义位置/外部承认 vs 现实 x：`3 positive / 3 works + 2 negative guards / 2 works + 1 revocable-but-real boundary / 1 work / pending-review`
+- A8 被承认 vs 真正成立：`3 positive / 3 works + 1 negative guard / 1 work / pending-review`
+- A9 pressure display：`3 positive / 3 works + 2 negative guards / 2 works + 1 historical positive contrast / pending-review`
 
 ### A5｜strict zn↔x｜current v2
-current criterion：`current-layer-specific-anchor-gap-v2_20260829`。
+criterion：`current-layer-specific-anchor-gap-v2_20260829`
 
 ```yaml
 v2_verified_positive_controls: 1
 v2_verified_positive_works: 1
-v2_deferred_former_positive_controls: 4
-v2_deferred_former_positive_works: 4
+v2_deferred_former_positive_controls: 3
+v2_deferred_former_positive_works: 3
 v2_deferred_new_candidates: 0
 v2_deferred_new_candidate_works: 0
-v2_negative_guards: 7
-v2_negative_guard_works: 4
+v2_negative_guards: 8
+v2_negative_guard_works: 5
 legacy_v1_negative_guards_pending_v2_revalidation: 0
-strict_precondition_guards: 20
-strict_precondition_guard_works: 9
+strict_precondition_guards: 21
+strict_precondition_guard_works: 10
 canonical_calibration_controls: 3
 historical_positive_contrasts: 1
 ```
 
-#### 首个 verified positive｜Defiance / Tuvia Bielski
-source evidence：`f28af93dea9ad02365cd29ff1fca1a276f590e0b`。
+#### current verified positive｜Defiance / Tuvia Bielski
+source evidence：`f28af93dea9ad02365cd29ff1fca1a276f590e0b`。same current window、same object layer、zn/x 独立过门、subject-specific current admission/governance boundary、第三因素冻结与双向 gap 均通过。只计 strict `+1 control / +1 work`。
 
-同一 current window、同一 object layer 内，Tuvia 的“尽可能救更多犹太人、不因战斗效率或本组短期安全主动拒绝弱者”原则 `zn` 独立成立；其对 Bielski family camp / refugee community 的 current membership admission + internal governance boundary 构成 subject-specific stable `x`。组内“少收人更安全”的真实 competing proposal 冻结了 strategic-gain 替代解释；拿掉 `zn`，开放准入失去关键内部排序理由；拿掉该 current x，同一批求庇护者失去“被现实纳入我方持续保护成员集合”的 relevant current reality anchor。故 strict-v2 在 current criterion 下首次通过。
+#### deferred→negative 状态迁移｜Hotel Rwanda / Paul Rusesabagina
+source evidence：`cb6cd5f5203be0e57cec2fdb9e1f4bcb217d4f3b`；状态纠偏：`ff9f260195747afdef400d24dc95d8d3841259a8`。
 
-本案只计 strict `+1 control / +1 independent work`；不顺带增加 x-scope 或 protected-range。
+Paul 的救人排序 `zn` 保留，但 subject-specific `x` 只能稳定归因到酒店内部运营、安置、物资使用与局部进入协调；Sabena 产权、住客并行外联、警方/军方/外交/联合国等现实保护锚点不能倒灌成 Paul 的 x。故同一 criterion 下从 `deferred former positive` 移到 `negative guard`，不是新增 control/work：
 
-当前 strict-v2 已破零，deferred former positives 维持4/4，不因首个正向出现而自动恢复。
+```text
+deferred 4/4 → 3/3
+negative 7/4 → 8/5
+```
 
-### A6｜lifecycle
-`3 positive / 3 works + 2 negative guards / 2 works / pending-review`
+#### strict-precondition 新护栏｜A Man for All Seasons / Thomas More
+source evidence：`b1192cc5e8e2b73f3b8e74f0beb47cb150dbdf61`。
 
-### A7｜名义位置 / 外部承认 vs 现实 x
-`3 positive / 3 works + 2 negative guards / 2 works + 1 revocable-but-real boundary / 1 work / pending-review`
-
-### A8｜被承认 vs 真正成立
-`3 positive / 3 works + 1 negative guard / 1 work / pending-review`
-
-### A9｜pressure display
-`3 positive / 3 works + 2 negative guards / 2 works + 1 historical positive contrast / pending-review`
+锁：`subject-exclusive authorship / ordinary self-agency ≠ x`。本人只能决定自己的签名、宣誓、沉默或拒绝，首先是行动作者资格，不自动构成“归我掌握”的对象/资源/权限边界。计 precondition：`20/9 → 21/10`，不计 strict negative、x-scope ordinary guard 或 protected-range。
 
 ### A10｜x scope 权限范围最小差异｜current v1
-criterion：`current-x-scope-distinction-v1_20260830`。
+criterion：`current-x-scope-distinction-v1_20260830`
 
 ```yaml
 x_scope_positive_controls: 4
@@ -83,128 +77,36 @@ knowledge_status: pending-review
 pending_review: true
 ```
 
-ordinary positive 已成熟，停止堆量。
-
-#### 已归并 dynamic｜Papers, Please｜downstream disposition expansion
-Inspector 前期已经能现实 approve/deny entrant 的 admission transition，但没有 general detention disposition。Day 5 起，对满足条件的 entrant 新增 `detain` 最终调用接口，并由 guards 现实完成 custody transfer。锁：
-
-```text
-transition-blocking x
-≠ resultant-state disposition x
-
-edge-veto only
-→ rule/interface trigger
-→ edge-veto + conditional downstream detention disposition
-```
-
-同一主体、同一 entrant-processing 对象层、同 criterion 下形成新的 permission-type expansion，故早期 dynamic `25/22 → 26/23`。
-
-#### 已归并 dynamic mirror｜XCOM 2
-Commander 对同一 mission-deployment roster 的 permission family 不变，Guerrilla Tactics School 的 Squad Size I / II 把现实最大部署人数 `4 → 5 → 6`。锁：
-
-```text
-same actor
-+ same object layer
-+ same permission type
-+ quantitative cap 4 → 5 → 6
-→ quantitative permission-cap expansion
-```
-
-这是 King Lear `100→50→25→0` quantitative contraction 的真正跨作品反向镜像，不得与 Harry Potter 的 term-triggered spatial/legal expansion 混算。dynamic `26/23 → 27/24`。
-
-#### 已归并 reversible quantitative-cap｜Miracle (2004)
-Viktor Tikhonov 对同一 Soviet active-skater deployment subset、同一 deploy/select permission family，在常态五人部署下经 slashing penalty 进入临时规则 gate，现实上限 `5 → 4`；penalty / power-play interval 终止后，同一权限 family 恢复 `4 → 5`。锁：
-
-```text
-same actor
-+ same object layer
-+ same permission family
-+ quantitative cap 5 → 4 → 5
-→ reversible quantitative permission-cap contraction/restoration
-```
-
-因此 current dynamic 从 `27/24 → 28/25`。本槽已填；后续不再采同机制普通案例。temporary cap contraction 不等于 permission family 消失，cap restoration 也不等于新增 permission type。
-
-#### 已归并 execution-topology dynamic｜Papers, Please｜mandatory procedural unlock
-同一 Inspector、同一 entrant admission transition、同一 deny permission 与同一 unilateral final-decision holder 下，Day 18 规则触发后，合规拒绝不再能直接由 deny stamp 一步执行，而必须先经 inspection/interrogation 解锁 reason stamp，再完成 deny+reason。锁：
-
-```text
-direct unilateral execution
-→ mandatory inspection/interrogation unlock node inserted
-→ procedurally gated unilateral execution
-
-permission retained ≠ direct execution path retained
-mandatory procedural unlock ≠ joint final decision
-same final-decision holder ≠ same execution topology
-```
-
-该机制来自已 evidence-locked source commit `0175fa89a8531663b4e5193800eaccdd5e171207`。`Papers, Please` 已作为 independent work 进入 earlier x-scope ledger，因此只新增 topology control，不重复增加 work：current dynamic `28/25 → 29/25`。
-
-#### 已归并 boundary guard｜Dr. Strangelove
-Kong 面对 normal / backup / emergency / manual 等已枚举接口连续失败后，仍通过 direct repair / bypass 受损线路让 bomb doors 现实打开。锁：
-
-```text
-enumerated-interface exhaustion
-≠ path-set exhaustion
-```
-
-只有在 direct repair、bypass、delegated route、parallel authority、emergency interface、alternate execution node 等 competing paths 也被审计冻结后，才允许把 `known path count = 0` 升级为 `surviving relevant path count = 0`。本条只计 boundary `23/20 → 24/21`，不计 dynamic。
-
-#### 已填缺口纠偏｜Pacific Rim
-现存 evidence-locked 资产已完整锁定 Raleigh / Gipsy Danger 的 `joint execution → unilateral emergency execution → joint restoration`，并在两阶段都有 same-object reality-test。该槽已经计入既有 dynamic ledger；只保留为基础 topology control，不重复加 control / work。
-
-#### 继续有效的核心反误判纪律
-
-```text
-local x ≠ global x
-source decision ≠ consultation ≠ final decision ≠ execution
-shared permission ≠ joint-threshold
-formal/source authority ≠ realized current x
-one-shot effect ≠ stable disposition x
-interface possession ≠ target-disposition x
-invoke/start ≠ stop/terminate/revoke
-ownership/title ≠ permission bundle
-technical capability delta ≠ x-boundary delta
-technical capability retained ≠ permission scope unchanged
-source/task direction delta ≠ x-boundary delta
-current permission type unchanged ≠ scope/cap unchanged
-physical interface occupancy ≠ execution-node attribution
-local/source-specific veto ≠ global target-effect veto
-transition-blocking x ≠ resultant-state disposition x
-joint-final decision ≠ joint execution
-substitute node loss ≠ original actor automatic restoration
-edge-veto retained ≠ downstream disposition already present
-quantitative cap expansion ≠ new permission type
-enumerated-interface exhaustion ≠ path-set exhaustion
-permission retained ≠ direct execution path retained
-mandatory procedural unlock ≠ joint final decision
-same final-decision holder ≠ same execution topology
-```
+current 核心纪律继续有效：permission_type、scope、quantitative_cap、term、revocability、return_obligation、same-layer veto/global override、ultimate title、consultation/final decision/execution/co-decision topology 必须分账；`enumerated-interface exhaustion ≠ path-set exhaustion`；`permission retained ≠ direct execution path retained`；`edge-veto retained ≠ downstream disposition already present`。
 
 ### A11｜protected-range risk-test｜current v1
-criterion：`protected-range-risk-test-v1_20260831`。
+criterion：`protected-range-risk-test-v1_20260831`
 
 ```yaml
 protected_range_v1_verified_positive_controls: 4
 protected_range_v1_verified_positive_works: 4
-protected_range_v1_verified_negative_guards: 4
-protected_range_v1_verified_negative_guard_works: 4
+protected_range_v1_verified_negative_guards: 5
+protected_range_v1_verified_negative_guard_works: 5
 protected_range_v1_dynamic_controls: 1
 protected_range_v1_dynamic_works: 1
 knowledge_status: pending-review
 pending_review: true
 ```
 
-#### 已归并 negative guard｜Home Alone
-Kevin 的住宅陷阱多次现实造成伤害、延迟与改道，但 Harry/Marv 仍突破住宅边界并持续追击，最终人身风险还由 Marley / police 第三方节点完成解围。锁：
+#### Home Alone｜partial-defense failure
+锁：`partial-defense-effect + repeated delay/injury/rerouting ≠ stable protected-range`。
+
+#### The Purge｜boundary-state ON false-positive guard
+source evidence：`8c3d15594e1b3c7a359963deca2912e09130be9b`。
+
+James 真实重新启用住宅 security boundary，状态位/控制接口/边界部署均为 ON，但其本人已明确系统无法承受 systematic assault，随后真实强攻突破住宅边界。锁：
 
 ```text
-partial-defense-effect
-+ repeated delay / injury / rerouting
-≠ stable protected-range
+boundary-state ON / armed / re-enabled
+≠ stable protected-range ON
 ```
 
-本条按 current v1 从 negative `3/3 → 4/4`；不重复增加 positive/dynamic，也不锁 `zn`。
+本案与 Home Alone 不同：新增最小差异是“授权主体重新部署边界状态成功”仍不能替代真实 risk-test。计 protected-range negative `4/4 → 5/5`，不计 positive/dynamic/x-scope/strict。
 
 ## B｜current evidence ledger
 
@@ -226,12 +128,12 @@ zn_x_cooccurrence_negative_guard_works: 4
 strict_current_criterion: current-layer-specific-anchor-gap-v2_20260829
 strict_v2_verified_positive_controls: 1
 strict_v2_verified_positive_works: 1
-strict_v2_deferred_former_positive_controls: 4
-strict_v2_deferred_former_positive_works: 4
-strict_v2_negative_guards: 7
-strict_v2_negative_guard_works: 4
-strict_precondition_guards: 20
-strict_precondition_guard_works: 9
+strict_v2_deferred_former_positive_controls: 3
+strict_v2_deferred_former_positive_works: 3
+strict_v2_negative_guards: 8
+strict_v2_negative_guard_works: 5
+strict_precondition_guards: 21
+strict_precondition_guard_works: 10
 strict_canonical_calibration_controls: 3
 x_scope_current_criterion: current-x-scope-distinction-v1_20260830
 x_scope_positive_controls: 4
@@ -245,8 +147,8 @@ x_scope_knowledge_status: pending-review
 protected_range_current_criterion: protected-range-risk-test-v1_20260831
 protected_range_v1_verified_positive_controls: 4
 protected_range_v1_verified_positive_works: 4
-protected_range_v1_verified_negative_guards: 4
-protected_range_v1_verified_negative_guard_works: 4
+protected_range_v1_verified_negative_guards: 5
+protected_range_v1_verified_negative_guard_works: 5
 protected_range_v1_dynamic_controls: 1
 protected_range_v1_dynamic_works: 1
 protected_range_knowledge_status: pending-review
@@ -272,38 +174,27 @@ pressure_display_historical_positive_contrasts: 1
 pending_review_count: 11
 ```
 
-## C｜当前方法纪律
+## C｜current 方法纪律
 
 1. 同 criterion_version 才累计；control 与 independent works 分账。
 2. `zn+x` 共现前两端分别过门；co-occurrence ≠ strict。
-3. strict `zn→x` 必须冻结 x 端 institution/task/title/instrument 等 independent purpose/ranking anchors。
-4. strict `x→zn` 只要求当前对象层 relevant reality-anchor gap，不回到废止的“全宇宙绝对唯一载体”。
-5. subject-specific attribution；第三方产权、保护、veto、制度节点不得倒灌主体 x。
-6. local/global、nominal/real、current/ultimate、use/ownership、consultation/final-decision/execution 全部分账。
-7. permission 迁移至少记录 `from→to + trigger + same-layer reality-test`；名义变化不够。
-8. x 至少拆 `actor/object/permission_type/scope/term/revocability/return_obligation/same-layer_pre-effect_veto/global_override/ultimate_title/decision_structure/consultation_structure/final_decision_structure/execution_structure/co-decision_nodes`。
-9. protected-range 按 boundary/object/risk-channel/ingress-path 分账；一次保护成功不得倒灌 all-hazard protection。
-10. evidence-locked 可被 adversarial audit 撤回；旧基数与 current ledger 冲突时，以 current criterion + current作品集合重算。
-11. edge/transition control 与 resultant-state disposition 分账；成功 veto 一个 transition 不推出后续状态任意处分。
-12. final-decision topology 与 execution topology 正交；joint-final 不推出 joint execution，role-divided execution 也不反推 joint-final。
-13. execution restoration 必须在原主体重新进入 same-object current routing 后通过 reality-test；替代节点退出本身不够。
-14. term/age/status trigger 只有在明确 permission gate 变化并经 transition 后 reality-test 时才可计 scope expansion；名义“成年/毕业/解禁”本身不够。
-15. downstream resultant-state disposition 必须单独 reality-test；edge veto 的存在与 detention/custody/disposition interface 的新增、撤销分别记。
-16. quantitative permission-cap 动态必须固定 actor/object/permission family，只把可现实纳入对象数的 cardinality ceiling 作为迁移变量。
-17. protected-range 中局部防御节点反复成功只证明 partial-defense-effect；若风险最终突破同一保护边界，不能升级为 stable protected-range。
-18. path exhaustion 必须先做 path-set completeness audit；已枚举 interface 全失败不等于 relevant path set 清零，direct repair / bypass / delegated / parallel / emergency / alternate execution routes 均需冻结。
-19. execution topology 必须与 final-decision topology 分账；同一 final decision holder 保持不变时，mandatory procedural unlock node 的插入仍可构成独立 dynamic transition。
-20. strict-v2 已有首个 verified positive 后，后续正向优先寻找不同题材、不同对象机制的 adversarial replication；不得继续把“破零”作为采样目标。
+3. strict `zn→x` 冻结 x 端 independent purpose/ranking anchors；`x→zn` 只要求 relevant current reality-anchor gap，不恢复 absolute-unique-anchor。
+4. subject-specific attribution；第三方产权、保护、veto、制度节点不得倒灌主体 x。
+5. local/global、nominal/real、current/ultimate、use/ownership、consultation/final-decision/execution 分账。
+6. permission 迁移记录 `from→to + trigger + same-layer reality-test`。
+7. protected-range 按 boundary/object/risk-channel/ingress-path 分账；no-test / failed-test / successful-test 分开。
+8. `partial-defense-effect ≠ stable protected-range`；`boundary-state ON ≠ successful risk-test`。
+9. path exhaustion 先做完整 relevant path-set audit，不能用已枚举接口失败替代。
+10. evidence-locked 可被 adversarial audit 在同 criterion 下撤回/换槽；换槽不重复加 control/work。
+11. strict-v2 已有首个 positive 后，下一正向只收跨题材、跨对象机制 adversarial replication。
 
 ## D｜当前高价值缺口
 
-1. **P0：strict-v2 adversarial replication**：current 已为 `1 control / 1 work`；下一份必须尽量避开 Defiance 的“救援/庇护营地”同母型，验证双向 gap 能否在不同对象机制跨作品复现。
-2. **P1：path exhaustion dynamic**：多个 independent paths 预先自然识别 → alternatives 逐一关闭 → direct repair / bypass / delegated / parallel / emergency / alternate execution paths 完整审计 → surviving relevant path count=0 → target-effect reality-test OFF。
-3. **P2：quantitative cap 可逆动态已填**：Miracle (2004) 已提供 same actor + same object layer + same permission family 的 `5→4→5` reality-test；停止继续采同机制普通案例。若未来出现不同 trigger/topology 的 `low→high→low`，仅在能形成新最小差异时再收。
-4. **P3：edge-veto / downstream disposition 的撤回或分叉失败镜像**：已有 The Terminal 负边界与 Papers, Please 正向扩张；继续找 detention/disposition interface 后续被撤回但 edge veto 保留，或新增 disposition 的 eligible subset 真实缩窄。
-5. **P4：mandatory procedural unlock 已填**：Papers, Please Day 18 已锁 `direct unilateral execution → procedurally gated unilateral execution`，且 final-decision holder 不变。停止采“只是多一道程序门”的同机制普通案例；后续 execution-topology 只收不同 trigger/topology，例如 execution node 分裂、并联、强制共享、撤销或恢复。
-6. **P5：protected-range** 只收同边界、同 risk-channel 动态与新失败镜像；Home Alone 的 partial-defense failure 已进入 negative 4/4，不再重复同攻击。
-7. deferred 只在新证据出现时二审。
+1. P0：strict-v2 第二份跨机制 verified positive；Paul 已退出 deferred 自动复采池，current deferred 仅 3/3。
+2. P1：真正 path-set exhaustion：完整 relevant path set `n>1 → 1 → 0` 后 target-effect reality-test OFF。
+3. P2：protected-range 仅收不同 risk-channel / topology 的新失败镜像或同边界动态；The Purge 的 `boundary-state ON ≠ stable protected-range` 已填，不再采同机制换皮。
+4. P3：edge-veto 保留而 downstream disposition 撤回/eligible subset 缩窄。
+5. P4：execution topology 只收不同 trigger/topology；mandatory procedural unlock 基础槽已填。
 
 ## E｜pending-review 索引｜11条
 
@@ -321,6 +212,8 @@ pending_review_count: 11
 
 ## F｜同步债 / 权限边界
 
-实时清单已吸收 Defiance strict-v2 首个 verified positive，并保持 x-scope current truth `29 controls / 25 independent works`、protected-range `4/4 positive + 4/4 negative + 1/1 dynamic`。strict-v2 专项、x-scope 专项与 `zn-x火轴研究总纲_20260827.md` 仍需按 current evidence truth 安全文同步；这些是 L4 状态同步债，不改变 L1/L2 canonical。
+realtime registry 本文件已对齐到：strict `1/1 verified + 3/3 deferred + 8/5 negative + 21/10 precondition`；x-scope `4/3 + 24/21 + 29/25 + 6`；protected-range `4/4 positive + 5/5 negative + 1/1 dynamic`。
 
-不得修改 L1、zn/x 信息卡、准度卡或 canonical 关系卡。已知 `x信息量卡v2` frontmatter 元数据债只登记，不由本清单修正。
+仍需安全同步：strict 专项、x-scope 专项、protected-range 专项、working ledger、`zn-x火轴研究总纲_20260827.md`。这些是 L4 状态同步债，不改变 L1/L2 canonical。
+
+canonical 元数据债继续仅登记：L1 v1.6 明确 `x=阴火`，历史 x 信息卡 frontmatter 残留映射不得由 L4 越权修复。
