@@ -48,6 +48,8 @@ x_scope_boundary_guard_works: 21
 x_scope_dynamic_transition_controls: 29
 x_scope_dynamic_transition_works: 25
 x_scope_decision_structure_calibration_controls: 6
+x_scope_path_set_exhaustion_verified_controls: 1
+x_scope_path_set_exhaustion_verified_works: 1
 x_scope_knowledge_status: pending-review
 
 protected_range_v1_verified_positive_controls: 4
@@ -123,7 +125,7 @@ source `6480461b6ac71fbf4fa188ca4d8f2697e9f0f96d`；专项同步 `91488a197d2125
 
 ### 2.9 x-scope current truth
 
-current：`4/3 positive + 26/21 boundary + 29/25 dynamic + 6 decision calibration`。
+current ordinary slots：`4/3 positive + 26/21 boundary + 29/25 dynamic + 6 decision calibration`。
 
 继续锁：
 - transition-blocking x ≠ resultant-state disposition x；
@@ -134,6 +136,19 @@ current：`4/3 positive + 26/21 boundary + 29/25 dynamic + 6 decision calibratio
 - permission retained ≠ direct execution path retained；
 - final-decision topology ≠ execution topology；
 - edge-veto retained ≠ downstream disposition already present。
+
+### 2.10 Apollo 13｜首份 verified complete path-set exhaustion
+source `6c7927c61e7e7825276944a5e730f7ac8ae9f110`；状态纠偏 `e93a3fc3ed3e9da15892113eb3c8518df9ff9fd1`。
+
+被测 actor 为 Apollo 13 onboard flight crew / CSM operating node；对象层锁在 Service Module fuel-cell electrical generation feeding CSM buses；三套同族 fuel cells 构成 complete relevant path-set。事故后真实出现 `3 → 1 → 0`，并且同一窄层 target effect OFF。CM batteries 与 LM Aquarius 仍能维持更高层供电，但属于跨 actuator/object layer substitute，因此不能倒灌为原 fuel-cell generation surviving path。
+
+本案只建立独立子槽：
+
+```text
+path-set exhaustion verified = 1 control / 1 independent work
+```
+
+不重复并入 ordinary x-scope positive/boundary/dynamic，也不计 strict/protected-range；本 ledger 吸收已有 evidence truth，故本文件 `+0 control / +0 independent work`。
 
 ## 3｜strict-v2 current
 
@@ -151,7 +166,9 @@ current-window + same-object-layer + relevant current reality anchor 继续有�
 
 最少拆：permission_type、scope、quantitative_cap、term、revocability、return_obligation、same-layer veto/global override、ultimate title、consultation/final decision/execution/co-decision topology。
 
-path exhaustion 只有在 direct repair、bypass、delegated route、parallel authority、emergency interface、alternate execution node 等 relevant paths 一并冻结后，才允许写 surviving relevant path count=0。现在再加两道前置门：先按 actor 建索引，再锁 object / actuator / target-effect layer；跨主体或跨 actuator/object layer 的替代路径必须分账，不能为了得到 `0` 而随意排除，也不能为了得到 `>0` 而随意倒灌。
+path exhaustion 只有在 direct repair、bypass、delegated route、parallel authority、emergency interface、alternate execution node 等 relevant paths 一并冻结后，才允许写 surviving relevant path count=0。先按 actor 建索引，再锁 object / actuator / target-effect layer；跨主体或跨 actuator/object layer 的替代路径必须分账，不能为了得到 `0` 而随意排除，也不能为了得到 `>0` 而随意倒灌。
+
+Apollo 13 已完成 current 第一份 positive：same actor + same object/actuator/effect family + complete relevant path-set audit + `3→1→0` + same tested-layer effect OFF。首份正例缺口因此退役；下一最近邻转向 false-exhaustion adversarial guard。
 
 ## 5｜protected-range current
 
@@ -165,17 +182,17 @@ dynamic 2/2
 
 ## 6｜同步状态
 
-- realtime registry：current `strict 2/2 + 3/3 + 8/5 + 21/10`；
-- strict 专项：应同步到 `2/2 + 3/3 + 8/5 + 21/10`；
-- x-scope 专项：current `4/3 + 26/21 + 29/25 + 6`；
+- realtime registry：current strict `2/2 + 3/3 + 8/5 + 21/10`；x-scope ordinary `4/3 + 26/21 + 29/25 + 6`；path-set exhaustion verified `1/1`；protected-range `4/4 + 5/5 + 2/2`；
+- strict 专项：current `2/2 + 3/3 + 8/5 + 21/10`；
+- x-scope 专项：ordinary 统计 current，但 Apollo 13 `1/1` 子槽仍需同步；
 - protected-range 专项：current `4/4 + 5/5 + 2/2`；
-- working ledger：本文件已同步到 strict `2/2`；
-- 研究总纲：应同步 strict `1/1 → 2/2` 并退役“第二份 positive”旧 P0。
+- working ledger：本文件已同步 Apollo 13 `1/1`；
+- 研究总纲：ordinary 统计 current，但 Apollo 13 `1/1` 子槽与 P1 退役仍需同步。
 
 这些是 L4 状态同步，不改变 L1/L2 canonical。
 
 ## 7｜下一批最高价值
 
-1. 真正 path-set exhaustion：同一 actor、同一 object/actuator layer、同一 current window 下先完成 relevant-path completeness audit，再验证 surviving path `n>1 → 1 → 0` 且 target-effect reality-test OFF。
+1. **false-exhaustion adversarial guard**：表面 surviving relevant path 已归零，但 completeness audit 发现此前漏枚举的 same actor + same object/actuator/effect-family surviving route，使真实 path count `>0` 和/或 tested-layer effect 仍 ON。优先检查 direct repair、bypass、delegated route、parallel authority、emergency interface、alternate execution node。
 2. protected-range 只收 same actor / same boundary / same risk topology 下的 repair-failed reality-test 镜像，或其他真正新拓扑动态，不再采 World War Z 换皮。
 3. strict-v2 仅在出现新的对象机制、criterion 冲突、deferred 新证据或能推翻既有 guard 的高信息增益资产时继续；不主动寻找普通第三份正例。
