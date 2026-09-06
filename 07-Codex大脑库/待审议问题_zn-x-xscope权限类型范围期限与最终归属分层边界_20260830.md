@@ -16,9 +16,11 @@ boundary_guard_works: 21
 dynamic_transition_controls: 29
 dynamic_transition_works: 25
 decision_structure_calibration_controls: 6
+path_set_exhaustion_verified_controls: 1
+path_set_exhaustion_verified_works: 1
 may_override_canonical: false
 created: 2026-08-30
-updated: 2026-09-05
+updated: 2026-09-06
 ---
 
 # 待审议｜zn-x x scope：权限类型、范围、期限与最终归属必须分层
@@ -38,6 +40,8 @@ current evidence 已扩展到 26 条 / 21 部独立作品的高置信边界护�
 另有 29 条、25 部独立作品的高置信动态迁移控制支持：
 
 > **`x` 的生命周期不只有 off→on / on→off。它可以发生 scope expansion / contraction、permission-type expansion/contraction、quantitative-cap expansion/contraction、single gate ↔ parallel independent gates、joint-threshold ↔ delegated/unilateral execution、external override insertion、内生竞争执行节点插入/退出、time-lock revocability contraction/unlock、credential concentration/redistribution、现实 capture、voluntary release、external dispossession/reacquisition、mandatory procedural unlock，以及 eligible-subset disposition 的开启/缩窄。迁移后不同 permission layer、decision topology 与 execution topology 可以不同步变化。**
+
+首份 complete path-set exhaustion positive 已由 Apollo 13 锁定：同 actor、同 object/actuator/effect family、完整 relevant path-set audit、`3→1→0`，且同一被测层 target effect OFF。该子槽独立记 `1 control / 1 work`，不倒灌 ordinary positive/boundary/dynamic。
 
 核心结构门继续保持：
 
@@ -93,6 +97,15 @@ source evidence：`2f07be9a238fb0969221e5db33c66dcb9de40957`。
 锁：`same actor + same higher-level target effect ≠ same x execution-object path set`。三套液压系统全部丧失后，正常液压飞控面执行链已归零；同一机组仍可通过发动机差动推力有限影响整体航迹。若被测 `x` 锁在正常液压飞控面操纵，差动推力属于跨 actuator/object layer substitute，不是原 `x` surviving path；若对象提升为整体航迹控制，差动推力必须进入 relevant path-set。
 
 因此 path exhaustion 除 actor index 外，还必须锁 object layer / actuator layer / target-effect layer。
+
+### 2.3｜Apollo 13｜首份 verified complete path-set exhaustion
+source evidence：`6c7927c61e7e7825276944a5e730f7ac8ae9f110`；状态纠偏：`e93a3fc3ed3e9da15892113eb3c8518df9ff9fd1`。
+
+actor 锁 `Apollo 13 onboard flight crew / CSM operating node`；object 锁 `Service Module fuel-cell electrical generation feeding CSM buses`；actuator/effect family 锁三套同族 fuel cells。完整 relevant path-set 为 `{fuel cell 1, fuel cell 2, fuel cell 3}`，事故后真实观察到 `3 → 1 → 0`，并且该窄层 target effect 最终 OFF。
+
+CM batteries 与 Lunar Module Aquarius 仍可维持更高层“机组/飞船仍有电”，但属于不同 actuator/object layer；它们不能倒灌为 Service Module fuel-cell generation surviving path。反之，若一开始把 target effect 定义成“整艘 Apollo 13 的所有可用电力来源”，则 batteries/LM 必须进入 path-set，本案便不能写 `0`。
+
+本案因此建立独立子槽：`path_set_exhaustion_verified = 1 control / 1 independent work`。不重复计入 ordinary positive、boundary guard、dynamic、strict 或 protected-range。
 
 ## 3｜decision-structure 判据校准｜6 controls｜不计 ordinary works
 
@@ -206,7 +219,8 @@ lost_or_externalized_layers: 迁移后上移/外置/失去权限层
 28. 同 actor 仍必须锁 object / actuator / target-effect layer；跨层 workaround 与原 x 分账。
 29. 只有同一 actor、同一 object/actuator layer、同一 current window 的 complete relevant path-set 已审计后，才允许写 `surviving_relevant_path_count=0`。
 30. 真正 path-set exhaustion 还必须通过该被测层 target-effect reality-test OFF；只枚举接口失败不够。
-31. current dynamic `29 controls / 25 works` 已 pending-review，停止普通扩张/收缩与同型 execution-topology 堆量。
+31. Apollo 13 已提供首份 verified positive；后续不再自动采第二个同型 `n>1→1→0`，优先寻找 false-exhaustion adversarial nearest-neighbor。
+32. current dynamic `29 controls / 25 works` 已 pending-review，停止普通扩张/收缩与同型 execution-topology 堆量。
 
 禁止倒灌：
 
@@ -254,18 +268,20 @@ boundary_guard_works: 21
 dynamic_transition_controls: 29
 dynamic_transition_works: 25
 decision_structure_calibration_controls: 6
+path_set_exhaustion_verified_controls: 1
+path_set_exhaustion_verified_works: 1
 positive_works: [西游记, 三国演义, 红楼梦]
 may_override_canonical: false
 ```
 
-达到 pending-review 后，停止继续堆普通正向、同型普通护栏、普通 expansion/contraction 与同型 execution-topology；后续只收新边界机制、真实动态结构迁移、判据冲突、状态修正。
+达到 pending-review 后，停止继续堆普通正向、同型普通护栏、普通 expansion/contraction、同型 execution-topology 与第二个普通 path-exhaustion positive；后续只收新边界机制、真实动态结构迁移、判据冲突、状态修正。
 
 ## 8｜下一步高信息增益
 
-1. **P1 path-set exhaustion**：只收同一 actor、同一 object/actuator layer、同一 current window 下的完整路径耗尽；先做 completeness audit，再验证 surviving relevant paths `n>1 → 1 → 0` 与该层 target-effect OFF。
+1. **P1-next false-exhaustion adversarial guard**：优先寻找表面 surviving paths 已从多条降到 0，但 completeness audit 后发现一个漏枚举的 `same actor + same object/actuator/effect family` surviving route，使真实 path count `>0` 和/或该层 target effect 仍 ON。重点攻击 direct repair、bypass、delegated route、parallel authority、emergency interface、alternate execution node。
 2. **edge-veto / downstream disposition 分离与撤回**：优先 edge-veto 保留而 downstream disposition 撤回，或 eligible subset 真实缩窄。
 3. **新型 execution topology**：只收 trigger/topology 与 Pacific Rim、procedural unlock 等既有机制不同者。
-4. **strict-v2**：本专项不替代 strict gate；第二份 strict positive 或 deferred 新证据回到 strict 专项处理。
+4. **strict-v2**：本专项不替代 strict gate；普通第三份 strict positive 已非 active gap，只有新对象机制、criterion 冲突或 deferred 新证据回到 strict 专项处理。
 5. deferred 仅在新证据出现时复审。
 6. 等授权审议，不自动向 L2 升格。
 
@@ -273,4 +289,4 @@ may_override_canonical: false
 
 本文件不修改 L1、`x/zn` 信息卡与准度卡、`zn补x_补卡` 或 strict v2 gate。
 
-TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_26GUARDS_21WORKS_29DYNAMIC_25WORKS_6CALIBRATION_20260905
+TASK_DONE:ZNX_XSCOPE_PENDING_REVIEW_4POS_3WORKS_26GUARDS_21WORKS_29DYNAMIC_25WORKS_6CALIBRATION_PATH_EXHAUSTION_1OF1_20260906
