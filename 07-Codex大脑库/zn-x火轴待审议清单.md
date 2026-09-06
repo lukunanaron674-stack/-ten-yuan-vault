@@ -78,6 +78,8 @@ x_scope_boundary_guard_works: 21
 x_scope_dynamic_transition_controls: 29
 x_scope_dynamic_transition_works: 25
 x_scope_decision_structure_calibration_controls: 6
+x_scope_path_set_exhaustion_verified_controls: 1
+x_scope_path_set_exhaustion_verified_works: 1
 knowledge_status: pending-review
 pending_review: true
 ```
@@ -93,6 +95,11 @@ source evidence：`f34f226e7a31e80bd4d59de1187cf63d906eac90`。
 source evidence：`2f07be9a238fb0969221e5db33c66dcb9de40957`。
 
 锁：`same actor + same higher-level target effect ≠ same x execution-object path set`。Flight 232 三套液压系统全部丧失后，正常液压飞控面执行链已归零；但同一机组仍可通过发动机差动推力有限影响飞机整体航迹。若被测 x 锁在“正常液压飞控面操纵”，差动推力是跨 actuator/object layer substitute，不是原 x surviving path；若被测对象提升为“飞机整体航迹控制”，差动推力就必须计入 relevant path-set。故 path exhaustion 除 actor index 外，还必须锁 object layer / actuator layer / target-effect layer。该证据为 historical control，只计 x-scope boundary guard：`25/21 → 26/21`，不增加 independent work，不计 dynamic/strict/protected-range。
+
+#### path-set exhaustion verified positive｜Apollo 13 / Service Module fuel cells
+source evidence：`6c7927c61e7e7825276944a5e730f7ac8ae9f110`；状态纠偏：`e93a3fc3ed3e9da15892113eb3c8518df9ff9fd1`。
+
+锁定 actor 为 Apollo 13 onboard flight crew / CSM operating node，对象层为 Service Module fuel-cell electrical generation feeding CSM buses；三套同族 fuel cells 构成被测 relevant path-set。事故后真实出现 `3 → 1 → 0`，并且同一窄层 target effect 最终 OFF。CM batteries 与 LM Aquarius 仍可维持更高层供电，但属于跨 actuator/object layer substitute，不能倒灌为原 fuel-cell generation surviving path。该案为 current 第一份 verified complete path-set exhaustion，只计独立子槽 `+1 control / +1 independent work`，不重复并入 ordinary positive/boundary/dynamic，也不计 strict/protected-range。
 
 ### A11｜protected-range risk-test｜current v1
 criterion：`protected-range-risk-test-v1_20260831`
@@ -163,6 +170,8 @@ x_scope_boundary_guard_works: 21
 x_scope_dynamic_transition_controls: 29
 x_scope_dynamic_transition_works: 25
 x_scope_decision_structure_calibration_controls: 6
+x_scope_path_set_exhaustion_verified_controls: 1
+x_scope_path_set_exhaustion_verified_works: 1
 x_scope_knowledge_status: pending-review
 protected_range_current_criterion: protected-range-risk-test-v1_20260831
 protected_range_v1_verified_positive_controls: 4
@@ -205,16 +214,18 @@ pending_review_count: 11
 7. protected-range 按 boundary/object/risk-channel/ingress-path/ingress-topology 分账；no-test / failed-test / successful-test 分开。
 8. `partial-defense-effect ≠ stable protected-range`；`boundary-state ON ≠ successful risk-test`；`topology-A PASS ≠ topology-B PASS`。
 9. path exhaustion 先做完整 relevant path-set audit，不能用已枚举接口失败替代；system-level target-effect path set 与 actor-indexed x execution path set 分账；同 actor 仍须继续分 object layer / actuator layer / target-effect layer，跨层 workaround 不能在未定对象层时随意算成原 x surviving path。
-10. evidence-locked 可被 adversarial audit 在同 criterion 下撤回/换槽；换槽不重复加 control/work。
-11. strict-v2 已有两份跨机制 verified positive（Defiance + Schindler）后，普通第三份正向不再是 active gap；仅在出现新的对象机制、criterion 冲突或能推翻现有 guard 的高信息增益证据时进入。
+10. Apollo 13 已锁首份 verified complete path-set exhaustion：窄层同族 relevant paths `3→1→0` 且该层 target effect OFF；更高层 substitute 继续存在不反驳窄层 exhaustion。
+11. evidence-locked 可被 adversarial audit 在同 criterion 下撤回/换槽；换槽不重复加 control/work。
+12. strict-v2 已有两份跨机制 verified positive（Defiance + Schindler）后，普通第三份正向不再是 active gap；仅在出现新的对象机制、criterion 冲突或能推翻现有 guard 的高信息增益证据时进入。
 
 ## D｜当前高价值缺口
 
 1. P0（已完成/退役）：strict-v2 第二份跨机制 verified positive 已由 Schindler's List / Oskar Schindler / Brünnlitz 填入；不再自动采第三个普通 strict 正例。
-2. P1：真正 path-set exhaustion：同一 actor / object layer / actuator-or-effect family / current window 下，先完成 actor-indexed relevant path-set completeness audit，再验证 surviving path `n>1 → 1 → 0` 与该被测层 target-effect reality-test OFF；system-level alternate nodes 与跨 object/actuator-layer substitutes 单独冻结。
-3. P2：protected-range 仅收 same actor / same boundary / same risk topology 下的 repair-failed reality-test 镜像，或其他真正新拓扑动态；World War Z 已填 topology-shift `ON→OFF`，不再采同机制换皮。
-4. P3：edge-veto 保留而 downstream disposition 撤回/eligible subset 缩窄。
-5. P4：execution topology 只收不同 trigger/topology；mandatory procedural unlock 基础槽已填。
+2. P1（已完成/退役）：首份真正 path-set exhaustion 已由 Apollo 13 / Service Module fuel cells 填入，verified `1 control / 1 independent work`；不再自动采第二个普通 `n>1→1→0` 正例。
+3. P1-next：false-exhaustion adversarial guard。优先找表面 surviving path 已归零，但 complete audit 后发现此前漏枚举的 `same actor + same object/actuator/effect family` surviving route，使真实 path count `>0` 和/或 tested-layer effect 仍 ON。重点攻击 direct repair、bypass、delegated route、parallel authority、emergency interface、alternate execution node 等漏项。
+4. P2：protected-range 仅收 same actor / same boundary / same risk topology 下的 repair-failed reality-test 镜像，或其他真正新拓扑动态；World War Z 已填 topology-shift `ON→OFF`，不再采同机制换皮。
+5. P3：edge-veto 保留而 downstream disposition 撤回/eligible subset 缩窄。
+6. P4：execution topology 只收不同 trigger/topology；mandatory procedural unlock 基础槽已填。
 
 ## E｜pending-review 索引｜11条
 
@@ -232,6 +243,6 @@ pending_review_count: 11
 
 ## F｜同步债 / 权限边界
 
-realtime registry 本文件已对齐到：strict `2/2 verified + 3/3 deferred + 8/5 negative + 21/10 precondition`；x-scope `4/3 + 26/21 + 29/25 + 6`；protected-range `4/4 positive + 5/5 negative + 2/2 dynamic`。
+realtime registry 本文件已对齐到：strict `2/2 verified + 3/3 deferred + 8/5 negative + 21/10 precondition`；x-scope ordinary `4/3 + 26/21 + 29/25 + 6`；x-scope path-set exhaustion verified `1/1`；protected-range `4/4 positive + 5/5 negative + 2/2 dynamic`。
 
 strict、x-scope、protected-range 三专项、working ledger 与研究总纲应保持同一 current evidence truth；本轮只做 L4 状态同步，不改变 L1/L2 canonical。canonical 元数据债继续仅登记：L1 v1.6 明确 `x=阴火`，历史 x 信息卡 frontmatter 残留映射不得由 L4 越权修复。
