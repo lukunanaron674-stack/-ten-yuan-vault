@@ -1,0 +1,66 @@
+name: Fix concept scene sections
+
+# 同仓库 PR 同步触发；脚本成功后只提交 Canvas 与修复报告。
+on:
+  push:
+    branches:
+      - codex/concept-scenes-global-fix
+    paths:
+      - scripts/fix_concept_scene_sections.py
+      - .github/workflows/fix-concept-scene-sections.yml
+
+permissions:
+  contents: write
+
+jobs:
+  rewrite:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout correction branch
+        uses: actions/checkout@v4
+        with:
+          ref: codex/concept-scenes-global-fix
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rewrite scene sections
+        run: python scripts/fix_concept_scene_sections.py
+
+      - name: Validate JSON Canvas files
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('09-给674（我）用的库/概念库')
+          files = sorted(root.glob('*_is-a名词素材库.canvas'))
+          if len(files) != 20:
+              raise SystemExit(f'expected 20 top-level concept canvases, got {len(files)}')
+          for path in files:
+              data = json.loads(path.read_text(encoding='utf-8'))
+              if not isinstance(data.get('nodes'), list) or not isinstance(data.get('edges'), list):
+                  raise SystemExit(f'invalid canvas structure: {path}')
+              ids = [str(node.get('id')) for node in data['nodes']]
+              if len(ids) != len(set(ids)):
+                  raise SystemExit(f'duplicate node id: {path}')
+          print(f'validated {len(files)} Canvas files')
+          PY
+
+      - name: Check whitespace errors
+        run: git diff --check
+
+      - name: Commit corrected Canvas files
+        run: |
+          if git diff --quiet; then
+            echo 'No scene changes required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add '09-给674（我）用的库/概念库/'
+          git commit -m 'fix(canvas): rewrite all concept scene sections'
+          git push origin HEAD:codex/concept-scenes-global-fix
