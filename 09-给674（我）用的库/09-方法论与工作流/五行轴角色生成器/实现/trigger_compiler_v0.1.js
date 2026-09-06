@@ -26,6 +26,10 @@
   function normalizeRaw(raw) {
     return String(raw ?? '').normalize('NFKC').trim().replace(/\s+/g, ' ').replace(/[＋]/g, '+');
   }
+  function normalizeScalar(value, fallback) {
+    const normalized = String(value ?? '').normalize('NFKC').trim();
+    return normalized || fallback;
+  }
   function stripSpaces(text) { return text.replace(/\s+/g, ''); }
   function startsCanonical(text) { return CANONICAL.some(token => text.toLowerCase().startsWith(token.toLowerCase())); }
   function normalizeModuleList(modules) {
@@ -86,18 +90,19 @@
     if (!normalized) throw new TriggerError('ERROR_UNKNOWN_TOKEN', '空触发输入');
     const parsed = parseLeadingSymbols(normalized);
     for (const symbol of parsed.symbols) if (!CANONICAL_SET.has(symbol)) throw new TriggerError('ERROR_UNKNOWN_TOKEN', `非法十元: ${symbol}`);
-    const mode = options.mode === 'graph' ? 'graph' : (parsed.symbols.length === 1 ? 'single' : 'multi');
+    const requestedMode = normalizeScalar(options.mode, '');
+    const mode = requestedMode.toLowerCase() === 'graph' ? 'graph' : (parsed.symbols.length === 1 ? 'single' : 'multi');
     return {
       raw_trigger: raw,
       subject: parsed.subject,
       canonical_symbols: parsed.symbols,
       mode,
-      genre_context: options.genre_context || 'default',
-      seed: String(options.seed ?? '74'),
+      genre_context: normalizeScalar(options.genre_context, 'default'),
+      seed: normalizeScalar(options.seed, '74'),
       locked_modules: normalizeModuleList(options.locked_modules),
       reroll_modules: normalizeModuleList(options.reroll_modules),
       parser_version: PARSER_VERSION,
-      mapping_version: options.mapping_version || '世界观_机器映射_v0.1'
+      mapping_version: normalizeScalar(options.mapping_version, '世界观_机器映射_v0.1')
     };
   }
 
@@ -164,5 +169,5 @@
     }
   }
 
-  return { PARSER_VERSION, CANONICAL, IMPLEMENTED_MODULES, ALL_MODULES, TriggerError, normalizeRaw, normalizeModuleList, parseTrigger, compileRequest, buildRuntimeConfig, runEndToEnd };
+  return { PARSER_VERSION, CANONICAL, IMPLEMENTED_MODULES, ALL_MODULES, TriggerError, normalizeRaw, normalizeScalar, normalizeModuleList, parseTrigger, compileRequest, buildRuntimeConfig, runEndToEnd };
 });
