@@ -29,8 +29,8 @@ updated: 2026-09-06
 criterion：`current-layer-specific-anchor-gap-v2_20260829`
 
 ```yaml
-v2_verified_positive_controls: 1
-v2_verified_positive_works: 1
+v2_verified_positive_controls: 2
+v2_verified_positive_works: 2
 v2_deferred_former_positive_controls: 3
 v2_deferred_former_positive_works: 3
 v2_deferred_new_candidates: 0
@@ -44,8 +44,13 @@ canonical_calibration_controls: 3
 historical_positive_contrasts: 1
 ```
 
-#### current verified positive｜Defiance / Tuvia Bielski
+#### current verified positive 1｜Defiance / Tuvia Bielski
 source evidence：`f28af93dea9ad02365cd29ff1fca1a276f590e0b`。same current window、same object layer、zn/x 独立过门、subject-specific current admission/governance boundary、第三因素冻结与双向 gap 均通过。只计 strict `+1 control / +1 work`。
+
+#### current verified positive 2｜Schindler's List / Oskar Schindler / Brünnlitz
+source evidence：`971124cb0733276f0e147d82708f18172f3f7e03`；状态纠偏：`400f50d6c988b70b21decd868113be9db8883ad4`。
+
+锁窄 current window 为 1944 秋 Brünnlitz 迁厂/人员转入后至 1945 年 5 月解放前；对象层锁定 Schindler 对 Brünnlitz factory organization 的 current management / employment-use / resource-allocation / operational-protection boundary。`zn=true`、`x=true`、same current window、same object layer、`zn→x` 与 `x→zn` 均通过；外部 German/SS approval、transfer/camp sovereign nodes、Stern/Pemper/Emilie 等协作节点继续冻结，不倒灌 subject-specific x。该案不是 Defiance 的 admission/governance 换皮，而是 pre-existing industrial/employment organization 被 zn 在窄窗中重新定向的 cross-mechanism replication。计 strict `+1 control / +1 independent work`；不增加 x-scope / protected-range / canonical calibration。
 
 #### deferred→negative 状态迁移｜Hotel Rwanda / Paul Rusesabagina
 source evidence：`cb6cd5f5203be0e57cec2fdb9e1f4bcb217d4f3b`；状态纠偏：`ff9f260195747afdef400d24dc95d8d3841259a8`。
@@ -141,8 +146,8 @@ zn_x_cooccurrence_works: 3
 zn_x_cooccurrence_negative_guards: 6
 zn_x_cooccurrence_negative_guard_works: 4
 strict_current_criterion: current-layer-specific-anchor-gap-v2_20260829
-strict_v2_verified_positive_controls: 1
-strict_v2_verified_positive_works: 1
+strict_v2_verified_positive_controls: 2
+strict_v2_verified_positive_works: 2
 strict_v2_deferred_former_positive_controls: 3
 strict_v2_deferred_former_positive_works: 3
 strict_v2_negative_guards: 8
@@ -201,11 +206,11 @@ pending_review_count: 11
 8. `partial-defense-effect ≠ stable protected-range`；`boundary-state ON ≠ successful risk-test`；`topology-A PASS ≠ topology-B PASS`。
 9. path exhaustion 先做完整 relevant path-set audit，不能用已枚举接口失败替代；system-level target-effect path set 与 actor-indexed x execution path set 分账；同 actor 仍须继续分 object layer / actuator layer / target-effect layer，跨层 workaround 不能在未定对象层时随意算成原 x surviving path。
 10. evidence-locked 可被 adversarial audit 在同 criterion 下撤回/换槽；换槽不重复加 control/work。
-11. strict-v2 已有首个 positive 后，下一正向只收跨题材、跨对象机制 adversarial replication。
+11. strict-v2 已有两份跨机制 verified positive（Defiance + Schindler）后，普通第三份正向不再是 active gap；仅在出现新的对象机制、criterion 冲突或能推翻现有 guard 的高信息增益证据时进入。
 
 ## D｜当前高价值缺口
 
-1. P0：strict-v2 第二份跨机制 verified positive；Paul 已退出 deferred 自动复采池，current deferred 仅 3/3。
+1. P0（已完成/退役）：strict-v2 第二份跨机制 verified positive 已由 Schindler's List / Oskar Schindler / Brünnlitz 填入；不再自动采第三个普通 strict 正例。
 2. P1：真正 path-set exhaustion：同一 actor / object layer / actuator-or-effect family / current window 下，先完成 actor-indexed relevant path-set completeness audit，再验证 surviving path `n>1 → 1 → 0` 与该被测层 target-effect reality-test OFF；system-level alternate nodes 与跨 object/actuator-layer substitutes 单独冻结。
 3. P2：protected-range 仅收 same actor / same boundary / same risk topology 下的 repair-failed reality-test 镜像，或其他真正新拓扑动态；World War Z 已填 topology-shift `ON→OFF`，不再采同机制换皮。
 4. P3：edge-veto 保留而 downstream disposition 撤回/eligible subset 缩窄。
@@ -227,8 +232,6 @@ pending_review_count: 11
 
 ## F｜同步债 / 权限边界
 
-realtime registry 本文件已对齐到：strict `1/1 verified + 3/3 deferred + 8/5 negative + 21/10 precondition`；x-scope `4/3 + 26/21 + 29/25 + 6`；protected-range `4/4 positive + 5/5 negative + 2/2 dynamic`。
+realtime registry 本文件已对齐到：strict `2/2 verified + 3/3 deferred + 8/5 negative + 21/10 precondition`；x-scope `4/3 + 26/21 + 29/25 + 6`；protected-range `4/4 positive + 5/5 negative + 2/2 dynamic`。
 
-strict、x-scope、protected-range 三专项均已对齐 current evidence truth；working ledger 与研究总纲需同步 protected-range dynamic `1/1 → 2/2`。这些是 L4 状态同步债，不改变 L1/L2 canonical。
-
-canonical 元数据债继续仅登记：L1 v1.6 明确 `x=阴火`，历史 x 信息卡 frontmatter 残留映射不得由 L4 越权修复。
+strict、x-scope、protected-range 三专项、working ledger 与研究总纲应保持同一 current evidence truth；本轮只做 L4 状态同步，不改变 L1/L2 canonical。canonical 元数据债继续仅登记：L1 v1.6 明确 `x=阴火`，历史 x 信息卡 frontmatter 残留映射不得由 L4 越权修复。
