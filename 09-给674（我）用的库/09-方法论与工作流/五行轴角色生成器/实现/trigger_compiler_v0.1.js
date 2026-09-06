@@ -57,6 +57,10 @@
         explicitMulti = true;
         s = s.slice(1);
         if (!s.length) throw new TriggerError('ERROR_EMPTY_SUBJECT', '连接符后缺少第二个十元或主体');
+        if (!startsCanonical(s)) {
+          const next = (s.match(/^[A-Za-z并]+/) || [''])[0];
+          throw new TriggerError('ERROR_UNKNOWN_TOKEN', `连接符后不是合法十元: ${next || s}`, { token: next || s, after_connector: true });
+        }
         continue;
       }
       if (startsCanonical(s)) throw new TriggerError('ERROR_AMBIGUOUS_TOKEN', '多个十元必须使用 + 或 ＋ 明确连接', { remainder: s });
