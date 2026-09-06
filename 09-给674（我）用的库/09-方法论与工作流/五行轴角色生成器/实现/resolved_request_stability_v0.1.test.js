@@ -54,6 +54,41 @@ test('input arrays are not mutated', () => {
   assert.deepStrictEqual(reroll, rerollBefore);
 });
 
+test('seed normalizes NFKC and trim while raw_trigger remains exact', () => {
+  const raw = '  zn少女  ';
+  const r = compiler.parseTrigger(raw, { seed: '　８８０１　' });
+  assert.strictEqual(r.raw_trigger, raw);
+  assert.strictEqual(r.seed, '8801');
+});
+
+test('genre_context normalizes NFKC and trim', () => {
+  const a = compiler.parseTrigger('zn少女', { genre_context: '　ＳＦ　' });
+  const b = compiler.parseTrigger('zn少女', { genre_context: 'SF' });
+  assert.strictEqual(a.genre_context, 'SF');
+  assert.deepStrictEqual(a, b);
+});
+
+test('mapping_version normalizes NFKC and trim', () => {
+  const a = compiler.parseTrigger('zn少女', { mapping_version: '　世界观＿机器映射＿ｖ０．１　' });
+  const b = compiler.parseTrigger('zn少女', { mapping_version: '世界观_机器映射_v0.1' });
+  assert.strictEqual(a.mapping_version, '世界观_机器映射_v0.1');
+  assert.deepStrictEqual(a, b);
+});
+
+test('graph mode normalizes NFKC case and trim', () => {
+  const a = compiler.parseTrigger('zn少女', { mode: '　ＧＲＡＰＨ　' });
+  const b = compiler.parseTrigger('zn少女', { mode: 'graph' });
+  assert.strictEqual(a.mode, 'graph');
+  assert.deepStrictEqual(a, b);
+});
+
+test('blank scalar provenance falls back deterministically', () => {
+  const r = compiler.parseTrigger('zn少女', { seed: '　', genre_context: ' ', mapping_version: '' });
+  assert.strictEqual(r.seed, '74');
+  assert.strictEqual(r.genre_context, 'default');
+  assert.strictEqual(r.mapping_version, '世界观_机器映射_v0.1');
+});
+
 console.log(JSON.stringify({
   suite: 'resolved_request_stability_v0.1',
   tests: passed + failed,
