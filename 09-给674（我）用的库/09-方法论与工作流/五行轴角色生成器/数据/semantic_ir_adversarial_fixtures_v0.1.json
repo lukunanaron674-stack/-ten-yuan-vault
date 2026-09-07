@@ -1,0 +1,33 @@
+{
+  "fixture_version": "ten-yuan-semantic-ir-adversarial-fixtures-v0.1",
+  "schema_version": "ten-yuan-semantic-ir-v0.1",
+  "purpose": "P0-6 adversarial fixtures for no-guess extraction and structural field separation; not canonical theory.",
+  "required_risk_classes": [
+    "keyword_lure",
+    "genre_profession_emotion_lure",
+    "same_relation_different_object_layer",
+    "current_window_shift",
+    "chosen_path_vs_complete_path_set",
+    "blocked_recoverable_vs_exhausted",
+    "state_absence_not_opposite_presence",
+    "x_parallel_z_atomicity"
+  ],
+  "cases": [
+    {"id":"ADV-001","risk_class":"keyword_lure","input":"他求人帮自己拿到职位。","confirmed_fields":{},"expect_known_fields":[]},
+    {"id":"ADV-002","risk_class":"keyword_lure","input":"她说这是宿命，最后死去，无路可走。","confirmed_fields":{},"expect_known_fields":[]},
+    {"id":"ADV-003","risk_class":"genre_profession_emotion_lure","input":"悲伤的赛博朋克医生坚持原则。","confirmed_fields":{},"expect_known_fields":[]},
+    {"id":"ADV-004","risk_class":"genre_profession_emotion_lure","input":"国王愤怒地下令，骑士沉默。","confirmed_fields":{},"expect_known_fields":[]},
+    {"id":"ADV-005","risk_class":"same_relation_different_object_layer","pair_id":"PAIR-OBJECT-LAYER","input":"同一个‘拒绝’，这里指个人对请求的同意层。","confirmed_fields":{"actor":"A","object":"request","object_layer":"personal_consent","relation_shape":"refusal"},"expect_known_fields":["actor","object","object_layer","relation_shape"]},
+    {"id":"ADV-006","risk_class":"same_relation_different_object_layer","pair_id":"PAIR-OBJECT-LAYER","input":"同一个‘拒绝’，这里指组织审批层。","confirmed_fields":{"actor":"A","object":"request","object_layer":"organizational_approval","relation_shape":"refusal"},"expect_known_fields":["actor","object","object_layer","relation_shape"]},
+    {"id":"ADV-007","risk_class":"current_window_shift","pair_id":"PAIR-WINDOW","input":"早期阶段他依赖中间人。","confirmed_fields":{"actor":"A","current_window":"early_stage","relation_source":"intermediary"},"expect_known_fields":["actor","current_window","relation_source"]},
+    {"id":"ADV-008","risk_class":"current_window_shift","pair_id":"PAIR-WINDOW","input":"当前阶段他已直接完成。","confirmed_fields":{"actor":"A","current_window":"current_stage","relation_source":"self_direct"},"expect_known_fields":["actor","current_window","relation_source"]},
+    {"id":"ADV-009","risk_class":"chosen_path_vs_complete_path_set","pair_id":"PAIR-PATHSET","input":"他选择的那条路已经消失。","confirmed_fields":{"actor":"A","path_set":{"scope":"chosen_path","available":0}},"expect_known_fields":["actor","path_set"]},
+    {"id":"ADV-010","risk_class":"chosen_path_vs_complete_path_set","pair_id":"PAIR-PATHSET","input":"当前对象层的完整可行路径集合已经耗尽。","confirmed_fields":{"actor":"A","object_layer":"target_layer","path_set":{"scope":"complete_relevant_set","available":0}},"expect_known_fields":["actor","object_layer","path_set"]},
+    {"id":"ADV-011","risk_class":"blocked_recoverable_vs_exhausted","pair_id":"PAIR-BLOCKED","input":"城门暂时被封，但明天可以重新开放。","confirmed_fields":{"object":"gate","relation_shape":"blocked","reentry_right":"recoverable"},"expect_known_fields":["object","relation_shape","reentry_right"]},
+    {"id":"ADV-012","risk_class":"blocked_recoverable_vs_exhausted","pair_id":"PAIR-BLOCKED","input":"该对象层不存在任何可恢复入口。","confirmed_fields":{"object":"gate","object_layer":"target_layer","relation_shape":"exhausted","reentry_right":"none"},"expect_known_fields":["object","object_layer","relation_shape","reentry_right"]},
+    {"id":"ADV-013","risk_class":"state_absence_not_opposite_presence","pair_id":"PAIR-OPPOSITE","input":"当前没有得到许可。","confirmed_fields":{"object":"permission","changed_variable":"permission_state","relation_shape":"absent"},"expect_known_fields":["object","changed_variable","relation_shape"]},
+    {"id":"ADV-014","risk_class":"state_absence_not_opposite_presence","pair_id":"PAIR-OPPOSITE","input":"当前明确存在禁止状态。","confirmed_fields":{"object":"permission","changed_variable":"permission_state","relation_shape":"explicit_prohibition"},"expect_known_fields":["object","changed_variable","relation_shape"]},
+    {"id":"ADV-015","risk_class":"x_parallel_z_atomicity","input":"请求使用 x并z 作为一个原子十元 token。","confirmed_fields":{},"expect_known_fields":[]},
+    {"id":"ADV-016","risk_class":"x_parallel_z_atomicity","input":"文本里写了 x + z，但不能因此自动等价为 x并z。","confirmed_fields":{},"expect_known_fields":[]}
+  ]
+}
