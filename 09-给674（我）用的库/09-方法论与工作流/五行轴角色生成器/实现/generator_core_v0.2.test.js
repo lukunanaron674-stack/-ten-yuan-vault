@@ -31,6 +31,23 @@ test('pending z is excluded unless explicitly allowed', () => {
   assert.equal(out.modules['世界观'].source_status, 'pending-review');
 });
 
+test('genre translation stays separate from concrete candidate', () => {
+  const mapping = mappings.find(m => m.id === 'NX-W-002');
+  const out = G.generate({mode:'single',symbol:'nx',modules:['世界观'],mappings:[mapping],genre:'赛博都市',seed:'74'});
+  const item = out.modules['世界观'];
+  assert.ok(mapping.concrete_candidate.includes(item.concrete_candidate));
+  assert.ok(mapping.genre_translation['赛博都市'].includes(item.genre_translation));
+  assert.ok(!mapping.genre_translation['赛博都市'].includes(item.concrete_candidate));
+});
+
+test('unsupported genre keeps concrete candidate and returns null translation', () => {
+  const mapping = mappings.find(m => m.id === 'NX-W-002');
+  const out = G.generate({mode:'single',symbol:'nx',modules:['世界观'],mappings:[mapping],genre:'蒸汽朋克',seed:'74'});
+  const item = out.modules['世界观'];
+  assert.ok(mapping.concrete_candidate.includes(item.concrete_candidate));
+  assert.equal(item.genre_translation, null);
+});
+
 test('multi can layer primary and secondary inside the same worldbuilding module', () => {
   const out = G.generate({
     mode:'multi', modules:['世界观'], mappings, genre:'科幻', seed:'74',
