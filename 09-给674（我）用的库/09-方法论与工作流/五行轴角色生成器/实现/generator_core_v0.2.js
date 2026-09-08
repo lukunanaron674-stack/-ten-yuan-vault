@@ -85,12 +85,15 @@
     return list[Math.floor(rng() * list.length)];
   }
 
-  function chooseConcrete(mapping, genre, rng) {
-    const translations = mapping.genre_translation || {};
-    const genreCandidates = asArray(translations[genre]);
-    if (genreCandidates.length) return pick(genreCandidates, rng);
+  function chooseConcrete(mapping, rng) {
     const candidates = asArray(mapping.concrete_candidate);
     return candidates.length ? pick(candidates, rng) : null;
+  }
+
+  function chooseGenreTranslation(mapping, genre, rng) {
+    const translations = mapping.genre_translation || {};
+    const genreCandidates = asArray(translations[genre]);
+    return genreCandidates.length ? pick(genreCandidates, rng) : null;
   }
 
   function materialize(mapping, genre, rng) {
@@ -102,8 +105,8 @@
       relation_shape: mapping.relation_shape,
       module_grammar: mapping.module_grammar,
       structure_id: structureId(mapping),
-      concrete_candidate: chooseConcrete(mapping, genre, rng),
-      genre_translation: genre,
+      concrete_candidate: chooseConcrete(mapping, rng),
+      genre_translation: chooseGenreTranslation(mapping, genre, rng),
       source_status: mapping.status,
       mapping_id: mapping.id || null
     };
@@ -244,6 +247,6 @@
     composeGraph,
     reroll,
     assertNoPseudoVector,
-    _internals: { normalizeText, fnv1a32, rngFrom, validateModuleRole }
+    _internals: { normalizeText, fnv1a32, rngFrom, validateModuleRole, chooseConcrete, chooseGenreTranslation }
   };
 });
