@@ -75,4 +75,34 @@ test('locked module remains unchanged when exclusion changes on reroll', () => {
   assert.deepEqual(first.modules['世界观'], second.modules['世界观']);
 });
 
+test('locked module bypasses exhausted recent pool in sidecar entrypoint', () => {
+  for (const mode of ['single', 'graph']) {
+    const cfg = {mode,symbol:'nx',modules:['世界观'],mappings,genre:'中古奇幻',seed:`R10-lock-${mode}`};
+    const first = G.generate(cfg);
+    const second = E.generateWithRecentExclusion({
+      ...cfg,
+      previous:first,
+      locks:{'世界观':true},
+      exclude_structure_ids:nxIds()
+    });
+    assert.deepEqual(first.modules['世界观'], second.modules['世界观']);
+  }
+
+  const multiCfg = {
+    mode:'multi', modules:['世界观'], mappings, genre:'太空歌剧', seed:'R10-lock-multi',
+    roles:{modules:{'世界观':{
+      primary:{symbol:'nx',responsibility:'沿既有外部方向接口推进'},
+      secondary:[{symbol:'zx',responsibility:'跨轴压力参照',relation_source:'显式 secondary'}]
+    }}}
+  };
+  const firstMulti = G.generate(multiCfg);
+  const secondMulti = E.generateWithRecentExclusion({
+    ...multiCfg,
+    previous:firstMulti,
+    locks:{'世界观':true},
+    exclude_structure_ids:nxIds()
+  });
+  assert.deepEqual(firstMulti.modules['世界观'], secondMulti.modules['世界观']);
+});
+
 if (!process.exitCode) console.log('ALL_TESTS_PASS');
