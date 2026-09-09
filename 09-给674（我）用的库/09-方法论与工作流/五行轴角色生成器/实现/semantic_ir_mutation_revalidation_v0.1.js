@@ -2,7 +2,8 @@
 
 const { validateSemanticIRShape } = require('./semantic_ir_schema_v0.1.js');
 const { reinterpretCandidateIR, REINTERPRETATION_STATUS } = require('./semantic_ir_reinterpretation_v0.1.js');
-const { decideCandidateSymbol, DECISION_STATUS } = require('./semantic_ir_decision_v0.1.js');
+const { DECISION_STATUS } = require('./semantic_ir_decision_v0.1.js');
+const { decideCandidateSymbolValueSensitive } = require('./semantic_ir_value_predicate_v0.1.js');
 const { reviewNearestNeighbors, NEAREST_NEIGHBOR_STATUS } = require('./semantic_ir_nearest_neighbor_v0.1.js');
 
 const MUTATION_REVALIDATION_VERSION = 'ten-yuan-semantic-ir-mutation-revalidation-v0.1';
@@ -83,7 +84,7 @@ function revalidateMutationCandidate(candidateIR, generatedInput, options = {}) 
   }
 
   const ir = reinterpretation.reinterpreted_ir;
-  const decision = decideCandidateSymbol(ir, {
+  const decision = decideCandidateSymbolValueSensitive(ir, {
     candidate_gates: options.candidate_gates ?? [],
     data_blocked: options.decision_data_blocked === true,
     block_reason: options.decision_block_reason
@@ -148,7 +149,7 @@ function revalidateMutationCandidate(candidateIR, generatedInput, options = {}) 
     reinterpretation,
     decision,
     nearest_neighbor: nearestNeighbor,
-    reason: 'REINTERPRETED_DECISION_AND_NEAREST_NEIGHBOR_REVALIDATED'
+    reason: 'REINTERPRETED_VALUE_SENSITIVE_DECISION_AND_NEAREST_NEIGHBOR_REVALIDATED'
   });
 }
 
