@@ -38,9 +38,20 @@ function filterMappings(config, excluded) {
   return (config.mappings || []).filter(mapping => !blocked.has(G.structureId(mapping)));
 }
 
+function isLockedModule(config, module) {
+  return Boolean(
+    config.locks &&
+    config.locks[module] &&
+    config.previous &&
+    config.previous.modules &&
+    config.previous.modules[module]
+  );
+}
+
 function assertNoExhaustedPair(config, filtered, excluded) {
   if (!excluded.length) return;
   for (const [symbol, module] of requestedPairs(config)) {
+    if (isLockedModule(config, module)) continue;
     const before = (config.mappings || []).filter(m => m.symbol === symbol && m.module === module && usable(m, config));
     if (!before.length) continue;
     const after = filtered.filter(m => m.symbol === symbol && m.module === module && usable(m, config));
@@ -74,5 +85,6 @@ module.exports = {
   generateWithRecentExclusion,
   normalizeExcluded,
   filterMappings,
-  requestedPairs
+  requestedPairs,
+  isLockedModule
 };
