@@ -16,6 +16,12 @@ const gates = [{ symbol:'nz', required_fields:['object_layer','reentry_right'] }
 const reviews = [{ neighbor_symbol:'nx', outcome:'EXCLUDED', checked_fields:['object_layer','reentry_right'], reason:'object layer and reentry distinguish candidate' }];
 function opts(extra={}) { return { frozen_fields:frozen, mutated_fields:['object_layer'], confirmed_fields:confirmed, candidate_gates:gates, nearest_neighbor_reviews:reviews, ...extra }; }
 
+const layerSensitiveGates = [
+  { symbol:'nx', required_fields:['actor','object_layer','changed_variable'], field_equals:{ object_layer:'personal' } },
+  { symbol:'xn', required_fields:['actor','object_layer','changed_variable'], field_equals:{ object_layer:'organization' } }
+];
+const layerSensitiveReviews = [{ neighbor_symbol:'nx', outcome:'EXCLUDED', checked_fields:['object_layer','changed_variable'], reason:'mutated object_layer selects organization-level structure' }];
+
 test('version stable', () => assert.strictEqual(MUTATION_REVALIDATION_VERSION, 'ten-yuan-semantic-ir-mutation-revalidation-v0.1'));
 test('full revalidation passes only after reinterpretation decision and NN exclusion', () => { const r=revalidateMutationCandidate(candidate(),'生成后的结构候选',opts()); assert.strictEqual(r.status,'PASS'); assert.strictEqual(r.stage,'complete'); assert.strictEqual(r.symbol,'nz'); assert.strictEqual(r.reinterpretation.status,'PASS'); assert.strictEqual(r.decision.status,'symbol'); assert.strictEqual(r.nearest_neighbor.status,'EXCLUDED'); });
 test('old symbol inheritance is hard rejected', () => assert.throws(()=>revalidateMutationCandidate(candidate(),'候选',opts({previous_symbol:'nx'})), e=>e.code==='ERROR_IR_REVALIDATE_SYMBOL_INHERITANCE_FORBIDDEN'));
@@ -31,4 +37,9 @@ test('decision DATA_BLOCKED propagates', () => { const r=revalidateMutationCandi
 test('x并z remains a single canonical decision token', () => { const r=revalidateMutationCandidate(candidate(),'候选',opts({candidate_gates:[{symbol:'x并z',required_fields:['object_layer']}],nearest_neighbor_reviews:[{neighbor_symbol:'x',outcome:'EXCLUDED',checked_fields:['object_layer']}]})); assert.strictEqual(r.status,'PASS'); assert.strictEqual(r.symbol,'x并z'); });
 test('explicit fake multi x+z is rejected by decision', () => assert.throws(()=>revalidateMutationCandidate(candidate(),'候选',opts({candidate_gates:[{symbol:'x+z',required_fields:['object_layer']}]})), e=>e.code==='ERROR_IR_DECISION_SYMBOL_UNKNOWN'));
 
-console.log(JSON.stringify({ suite:'semantic_ir_mutation_revalidation_v0.1', static_tests:14, actual_runtime_passed:passed, actual_runtime_failed:14-passed }));
+test('mutation revalidation uses object_layer value to activate a different candidate', () => { const r=revalidateMutationCandidate(candidate('organization'),'生成后的组织审批结构',opts({candidate_gates:layerSensitiveGates,nearest_neighbor_reviews:layerSensitiveReviews})); assert.strictEqual(r.status,'PASS'); assert.strictEqual(r.symbol,'xn'); assert.strictEqual(r.decision.decision_version,'ten-yuan-semantic-ir-value-predicate-v0.1'); });
+test('presence-identical candidates stay ambiguous when no value predicate is supplied', () => { const samePresence=[{symbol:'nx',required_fields:['actor','object_layer','changed_variable']},{symbol:'xn',required_fields:['actor','object_layer','changed_variable']}]; const r=revalidateMutationCandidate(candidate(),'候选',opts({candidate_gates:samePresence})); assert.strictEqual(r.status,'AMBIGUOUS'); assert.deepStrictEqual(r.decision.candidates,['nx','xn']); });
+test('unknown value-predicate field cannot be silently guessed at decision stage', () => { const confirmedWithoutWindow={...confirmed,current_window:null}; const frozenWithoutWindow=frozen.filter(field=>field!=='current_window'); const r=revalidateMutationCandidate(candidate(),'赛博医生在当前窗口审批',{...opts(),frozen_fields:frozenWithoutWindow,confirmed_fields:confirmedWithoutWindow,candidate_gates:[{symbol:'xn',required_fields:['actor','object_layer'],field_equals:{current_window:'current'}}]}); assert.strictEqual(r.status,'NEEDS_MORE_STRUCTURE'); assert.strictEqual(r.stage,'decision'); assert.ok(r.decision.missing_fields.includes('current_window')); });
+test('surface wording cannot override confirmed mutated object_layer value', () => { const r=revalidateMutationCandidate(candidate('organization'),'个人同意层，悲伤医生，赛博都市',{...opts(),candidate_gates:layerSensitiveGates,nearest_neighbor_reviews:layerSensitiveReviews}); assert.strictEqual(r.status,'PASS'); assert.strictEqual(r.symbol,'xn'); });
+
+console.log(JSON.stringify({ suite:'semantic_ir_mutation_revalidation_v0.1', static_tests:18, actual_runtime_passed:passed, actual_runtime_failed:18-passed }));
