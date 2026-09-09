@@ -201,11 +201,12 @@
           { id: 'changed_variable', value: item.changed_variable },
           { id: 'relation_shape', value: item.relation_shape },
           { id: 'module_grammar', value: item.module_grammar },
-          { id: 'concrete_candidate', value: item.concrete_candidate }
+          { id: 'concrete_candidate', value: item.concrete_candidate },
+          { id: 'genre_translation', value: item.genre_translation }
         ],
         edges: [
           ['symbol', 'sub_semantic'], ['sub_semantic', 'changed_variable'], ['changed_variable', 'relation_shape'],
-          ['relation_shape', 'module_grammar'], ['module_grammar', 'concrete_candidate']
+          ['relation_shape', 'module_grammar'], ['module_grammar', 'concrete_candidate'], ['concrete_candidate', 'genre_translation']
         ]
       };
     }
