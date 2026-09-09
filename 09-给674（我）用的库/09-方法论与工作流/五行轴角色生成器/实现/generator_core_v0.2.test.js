@@ -80,11 +80,21 @@ test('multi rejects percentage soup', () => {
   }), /forbids pseudo-vector weights/);
 });
 
-test('graph emits node-edge path and no pseudo vector', () => {
+test('graph emits complete semantic-to-genre node-edge path and no pseudo vector', () => {
   const out = G.generate({mode:'graph',symbol:'zn',modules:['世界观'],mappings,genre:'科幻',seed:'74'});
   assert.equal(out.mode, 'graph');
-  assert.ok(out.graphs['世界观'].nodes.length >= 6);
+  const graph = out.graphs['世界观'];
+  assert.ok(graph.nodes.some(n => n.id === 'genre_translation'));
+  assert.ok(graph.edges.some(([from, to]) => from === 'concrete_candidate' && to === 'genre_translation'));
   assert.equal(G.assertNoPseudoVector(out), true);
+});
+
+test('graph preserves null genre translation explicitly when mapping has no translation', () => {
+  const mapping = mappings.find(m => m.id === 'ZN-W-001');
+  const out = G.generate({mode:'graph',symbol:'zn',modules:['世界观'],mappings:[mapping],genre:'科幻',seed:'74'});
+  const node = out.graphs['世界观'].nodes.find(n => n.id === 'genre_translation');
+  assert.ok(node);
+  assert.equal(node.value, null);
 });
 
 test('module lock preserves full multi module on reroll', () => {
