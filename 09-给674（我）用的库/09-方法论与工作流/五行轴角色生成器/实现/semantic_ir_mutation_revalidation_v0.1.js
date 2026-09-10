@@ -19,6 +19,10 @@ const GATE_SOURCE_STATUS = Object.freeze({
   REGISTRY_VERIFIED: 'REGISTRY_VERIFIED',
   UNVERIFIED_GATE_SOURCE: 'UNVERIFIED_GATE_SOURCE'
 });
+const EXECUTION_MODE = Object.freeze({
+  COMPATIBILITY: 'compatibility',
+  PRODUCTION: 'production'
+});
 
 class SemanticIRMutationRevalidationError extends Error {
   constructor(code, message, detail = {}) {
@@ -45,6 +49,21 @@ function assertOptions(options) {
     throw new SemanticIRMutationRevalidationError(
       'ERROR_IR_REVALIDATE_GATE_SOURCE_CONFLICT',
       'gate_registry 与裸 candidate_gates 不得同时提供，避免来源歧义'
+    );
+  }
+  const executionMode = options.execution_mode ?? EXECUTION_MODE.COMPATIBILITY;
+  if (!Object.values(EXECUTION_MODE).includes(executionMode)) {
+    throw new SemanticIRMutationRevalidationError(
+      'ERROR_IR_REVALIDATE_EXECUTION_MODE_UNKNOWN',
+      'execution_mode 未注册',
+      { execution_mode: executionMode }
+    );
+  }
+  if (executionMode === EXECUTION_MODE.PRODUCTION && !Object.prototype.hasOwnProperty.call(options, 'gate_registry')) {
+    throw new SemanticIRMutationRevalidationError(
+      'ERROR_IR_REVALIDATE_VERIFIED_GATE_REGISTRY_REQUIRED',
+      'production revalidation 必须使用经过 registry provenance/status 校验的 gate_registry，裸 candidate_gates 仅保留兼容路径',
+      { execution_mode: executionMode }
     );
   }
 }
@@ -210,6 +229,7 @@ module.exports = {
   MUTATION_REVALIDATION_VERSION,
   MUTATION_REVALIDATION_STATUS,
   GATE_SOURCE_STATUS,
+  EXECUTION_MODE,
   SemanticIRMutationRevalidationError,
   revalidateMutationCandidate
 };
