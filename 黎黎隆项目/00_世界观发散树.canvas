@@ -1,111 +1,58 @@
 {
   "nodes": [
     {"id":"root","type":"text","text":"黎黎隆项目｜世界观发散树\n\n奇幻 × 生体机能 × 身体文明\n\n核心：奇幻是自然，机能是文明\n文明母题：生命怎样改变自己的身体，才能继续进入更远的地方？","x":0,"y":0,"width":440,"height":240},
-
     {"id":"nature","type":"text","text":"自然奇幻层\n\n世界先有龙、异种、巨躯人、奇幻生物与龙脉生态。\n人类从来不是唯一的身体尺度。","x":-1050,"y":-700,"width":390,"height":220},
     {"id":"dragon","type":"text","text":"龙与龙脉生态\n\n龙不只是Boss，而是长期改变地貌、气候、矿物、生物与魔力环境的生态力量。\n龙骸、神经、鳞、腺体后来成为文明技术材料。","x":-1550,"y":-980,"width":390,"height":240},
     {"id":"species","type":"text","text":"异种社会\n\n天然半龙人 / 龙裔\n巨躯人\n小型族群\n普通人类\n其他异种\n\n异种是常态，人工实验体才稀有。","x":-1550,"y":-620,"width":360,"height":270},
     {"id":"creatures","type":"text","text":"奇幻生物谱系\n\n普通异兽\n龙化生物\n奇美拉：生态错误 / 不稳定混合\n遗迹构造体：古代生体机械守卫","x":-1550,"y":-280,"width":370,"height":230},
     {"id":"frontier","type":"text","text":"未知边境\n\n地图、通讯、模型可能失效。\n龙脉变化、异常天气、生物迁徙、遗迹苏醒，让世界永远无法完全测绘。","x":-1030,"y":-300,"width":400,"height":230},
-
     {"id":"history","type":"text","text":"文明历史主轴\n\n自然奇幻世界\n→ 城邦与冒险者文明\n→ 龙质工业化\n→ 异体医学\n→ 身体增强\n→ 人工生命","x":-520,"y":-920,"width":390,"height":270},
     {"id":"era1","type":"text","text":"① 龙与异种的自然时代\n\n各物种按身体结构形成聚落与文化。\n不同体型、尾、角、翼从一开始就是正常社会事实。","x":-480,"y":-1320,"width":370,"height":220},
     {"id":"era2","type":"text","text":"② 城邦与冒险者时代\n\n商队护卫、猎人、测绘、救援逐渐形成公会。\n酒馆成为找队、交换地图、发布委托、买卖情报的工作空间。","x":-40,"y":-1320,"width":390,"height":240},
     {"id":"era3","type":"text","text":"③ 龙骸工业革命\n\n从龙骨武器、魔力灯发展到龙质传动、生物导线、魔力蓄能与器官材料。\n奇幻资源第一次被系统工程化。","x":420,"y":-1320,"width":390,"height":240},
     {"id":"era4","type":"text","text":"④ 异体医学时代\n\n义肢 → 人工器官 → 神经接口 → 外置器官。\n身体改造最初来自医疗，不是时尚。","x":880,"y":-1320,"width":380,"height":220},
     {"id":"era5","type":"text","text":"⑤ 探索体时代｜现在\n\n文明开始直接设计适应未知环境的人工生命。\n黎黎隆、塔汀属于这一时代的极端成果。","x":1320,"y":-1320,"width":390,"height":220},
-
     {"id":"tech","type":"text","text":"技术树\n\n魔法观察\n→ 龙类解剖\n→ 魔力器官研究\n→ 人工器官\n→ 生体机械\n→ 神经接口\n→ 外显器官\n→ 人工探索体","x":-520,"y":560,"width":400,"height":330},
     {"id":"bodytech","type":"text","text":"器官外显 / 生体机能\n\n外脑、外置肺、增强脊柱、人工眼、义肢、神经束、模块化器官。\n原则：能力必须从身体上“长出来给人看”。","x":-1020,"y":850,"width":400,"height":260},
     {"id":"functional","type":"text","text":"机能服装\n\n挂点、快拆、拉带、管线、药剂槽、接口、魔力模块。\n不是潮流服，而是针对种族、职业和环境问题的装备。","x":-520,"y":1010,"width":400,"height":250},
     {"id":"exbrain","type":"text","text":"外脑与路径演算师\n\n高信息职业可扩展脑组织并外置散热、记忆与战术接口。\n代表“已知世界的最优路线”。","x":-40,"y":900,"width":400,"height":240},
     {"id":"explorertech","type":"text","text":"人工拟龙探索体\n\n小型人形操作核心 + 巨型尾部探索器官。\n保留人的判断、双手与社会能力，同时获得非人机动与感知。","x":420,"y":820,"width":420,"height":270},
-
     {"id":"city","type":"text","text":"城市结构｜历史分层，而非风格拼贴\n\n旧奇幻文明被几百年的机能技术一层一层覆盖。","x":980,"y":-500,"width":440,"height":210},
     {"id":"oldcity","type":"text","text":"老城区\n\n石、木、壁炉、市场、旧公会、冒险者酒馆。\n酒馆在现代仍是任务、组队、路线情报与社交中心。","x":1480,"y":-760,"width":390,"height":230},
     {"id":"industry","type":"text","text":"工业城区\n\n黑铁、黄铜、龙质材料、工坊、轨道、吊机、管线。\n加工龙骸与生体机械模块。","x":1480,"y":-470,"width":390,"height":220},
     {"id":"medical","type":"text","text":"医疗机能区\n\n医院、义肢店、器官维护、改造诊所、生体工坊。\n医疗与增强之间存在伦理灰区。","x":1480,"y":-180,"width":390,"height":220},
     {"id":"academy","type":"text","text":"学术新区\n\n研究院、测绘局、龙脉实验室。\n建筑像“老大学 + 医院 + 生体工厂”，而不是玻璃赛博园区。","x":1480,"y":110,"width":410,"height":240},
     {"id":"materials","type":"text","text":"统一材料语言\n\n基础：石 / 木 / 黑铁 / 黄铜 / 布 / 皮革\n高级：白色骨质 / 半透明角质 / 深色金属 / 神经管 / 魔力液体","x":980,"y":20,"width":430,"height":240},
-
+    {"id":"city_gate","type":"text","text":"边境门站｜城市与未知的接口\n\n城门不只是防御：测龙脉污染、登记异兽材料、检查外置器官、给不同体型队伍换装。\n冒险者从这里真正进入边境。","x":1980,"y":-1060,"width":420,"height":250},
+    {"id":"city_scale","type":"text","text":"多尺度街道｜异种共居留下的城市尺度\n\n主路容纳巨躯人、驮兽与大尾种；窄巷保留旧人类尺度。\n门、台阶、吧台、扶手和公共交通存在高低两套甚至三套尺度。","x":2440,"y":-1060,"width":440,"height":270},
+    {"id":"city_service","type":"text","text":"身体服务街｜机能不是商场，是日常维护\n\n修角、磨鳞、尾部关节润滑、义肢校准、外脑冷却液、翼膜缝补与巨躯装备定制集中成街。\n身体差异直接制造城市职业。","x":2920,"y":-1060,"width":450,"height":280},
+    {"id":"city_retrofit","type":"text","text":"旧建筑寄生新机能｜城市的核心视觉\n\n百年石木楼不拆：外墙后来加龙脉管、骨质支架、神经线、吊运轨和器官维护接口。\n新技术像藤蔓一样寄生在旧奇幻建筑上。","x":3400,"y":-1060,"width":450,"height":280},
+    {"id":"city_night","type":"text","text":"夜间街景｜拒绝霓虹赛博朋克\n\n照明来自魔力灯、发光腺体、炉火与半透明龙质导管；夜里仍能看见石墙、布棚、湿木、异兽与维护中的外置器官。\n城市亮，但不是电子广告城。","x":3880,"y":-1060,"width":450,"height":290},
     {"id":"culture","type":"text","text":"文化与冲突\n\n身体可以改变以后，技术直接变成价值观冲突。","x":980,"y":520,"width":390,"height":190},
     {"id":"factions","type":"text","text":"身体观念四派\n\n保守派：祖先身体不可随意更改\n机能派：身体就是工具\n外显派：能力应该公开显现\n自然主义者：反对人工增强与人工生命","x":1450,"y":480,"width":420,"height":280},
     {"id":"rights","type":"text","text":"社会问题\n\n天然半龙人与人工拟龙的关系\n昂贵器官 vs 粗糙义肢\n巨躯人的城市尺度问题\n实验体：人，还是研究院资产？","x":1450,"y":810,"width":420,"height":260},
-
     {"id":"chars","type":"text","text":"角色与十元\n\n让不同角色成为世界观不同答案，而不是换皮NPC。","x":2140,"y":-500,"width":410,"height":200},
     {"id":"lili","type":"text","text":"黎黎隆｜zx8 + xn3\n\n人工拟龙探索体。\n核心价值：当模型、地图和既有路线失效时，仍能行动并创造路径。\n巨尾是探索器官，不只是武器。","x":2620,"y":-820,"width":420,"height":270},
     {"id":"tatin","type":"text","text":"塔汀｜nz8 + nx6 + x3\n\n与黎黎隆同批实验体。\n同源但不是同一种答案，关系承接、照护与让渡倾向更强。","x":2620,"y":-500,"width":420,"height":240},
     {"id":"uncle","type":"text","text":"大叔\n\n前探索计划外勤教官 / 机械工程师 / 救援人员方向。\n懂实验体身体、尾部维护与事故历史。\n代表“制造者一代留下的责任”。","x":2620,"y":-190,"width":420,"height":250},
     {"id":"commander","type":"text","text":"xn型路径演算师｜外脑指挥者\n\n用地图、天气、龙脉、生物与队员状态演算路线。\n多数时候比黎黎隆更正确；故事发生在其模型无法覆盖的1%。","x":2620,"y":130,"width":430,"height":270},
-
     {"id":"tail","type":"text","text":"黎黎隆系巨尾结构\n\n外置脊柱 + 第三条腿 + 配重器 + 感知/工具平台\n静止：尾部接地承重\n行动：制动 / 锚定 / 转向\n运动必须表现惯性链：根部 → 中段 → 尾端","x":2140,"y":520,"width":440,"height":300},
-
     {"id":"story","type":"text","text":"故事验证区\n\n世界观不是百科全书，必须拿剧情验证。","x":2140,"y":940,"width":390,"height":190},
     {"id":"tavern","type":"text","text":"酒馆篇\n\n古老酒馆 + 现代冒险职业。\n主题：黎黎隆的自我价值不等于战斗力。\n用于验证城市日常与异种共居。","x":2620,"y":820,"width":410,"height":230},
     {"id":"chimera","type":"text","text":"奇美拉成长篇\n\n验证尾部身体逻辑、训练体系、大叔与人工探索体历史。\n奇美拉可对应不稳定龙脉 / 生态错误。","x":2620,"y":1100,"width":410,"height":230},
     {"id":"rain","type":"text","text":"雨中的故事\n\n路径演算系统处理已知世界；黎黎隆处理未知偏移。\n用于验证“模型最优”与“现场创造路径”的互补冲突。","x":2620,"y":1380,"width":430,"height":240},
-
     {"id":"visual","type":"text","text":"视觉宪法\n\n1. 奇幻是自然，机能是文明\n2. 身体越非人，装备越有理由\n3. 能力必须外显，功能必须看得见\n4. 技术从奇幻资源内部发展，不直接复制现实赛博朋克\n5. 城市必须看得见历史层","x":980,"y":1220,"width":480,"height":340}
   ],
   "edges": [
-    {"id":"e_root_nature","fromNode":"root","toNode":"nature"},
-    {"id":"e_root_history","fromNode":"root","toNode":"history"},
-    {"id":"e_root_tech","fromNode":"root","toNode":"tech"},
-    {"id":"e_root_city","fromNode":"root","toNode":"city"},
-    {"id":"e_root_culture","fromNode":"root","toNode":"culture"},
-    {"id":"e_root_chars","fromNode":"root","toNode":"chars"},
-    {"id":"e_root_tail","fromNode":"root","toNode":"tail"},
-    {"id":"e_root_story","fromNode":"root","toNode":"story"},
-    {"id":"e_root_visual","fromNode":"root","toNode":"visual"},
-
-    {"id":"e_nat_1","fromNode":"nature","toNode":"dragon"},
-    {"id":"e_nat_2","fromNode":"nature","toNode":"species"},
-    {"id":"e_nat_3","fromNode":"nature","toNode":"creatures"},
-    {"id":"e_nat_4","fromNode":"nature","toNode":"frontier"},
-
-    {"id":"e_hist_1","fromNode":"history","toNode":"era1"},
-    {"id":"e_hist_2","fromNode":"history","toNode":"era2"},
-    {"id":"e_hist_3","fromNode":"history","toNode":"era3"},
-    {"id":"e_hist_4","fromNode":"history","toNode":"era4"},
-    {"id":"e_hist_5","fromNode":"history","toNode":"era5"},
-    {"id":"e_era1_2","fromNode":"era1","toNode":"era2","label":"社会协作"},
-    {"id":"e_era2_3","fromNode":"era2","toNode":"era3","label":"资源工程化"},
-    {"id":"e_era3_4","fromNode":"era3","toNode":"era4","label":"技术进入身体"},
-    {"id":"e_era4_5","fromNode":"era4","toNode":"era5","label":"从修复到设计生命"},
-
-    {"id":"e_tech_1","fromNode":"tech","toNode":"bodytech"},
-    {"id":"e_tech_2","fromNode":"tech","toNode":"functional"},
-    {"id":"e_tech_3","fromNode":"tech","toNode":"exbrain"},
-    {"id":"e_tech_4","fromNode":"tech","toNode":"explorertech"},
-
-    {"id":"e_city_1","fromNode":"city","toNode":"oldcity"},
-    {"id":"e_city_2","fromNode":"city","toNode":"industry"},
-    {"id":"e_city_3","fromNode":"city","toNode":"medical"},
-    {"id":"e_city_4","fromNode":"city","toNode":"academy"},
-    {"id":"e_city_5","fromNode":"city","toNode":"materials"},
-
-    {"id":"e_culture_1","fromNode":"culture","toNode":"factions"},
-    {"id":"e_culture_2","fromNode":"culture","toNode":"rights"},
-
-    {"id":"e_chars_1","fromNode":"chars","toNode":"lili"},
-    {"id":"e_chars_2","fromNode":"chars","toNode":"tatin"},
-    {"id":"e_chars_3","fromNode":"chars","toNode":"uncle"},
-    {"id":"e_chars_4","fromNode":"chars","toNode":"commander"},
-
-    {"id":"e_story_1","fromNode":"story","toNode":"tavern"},
-    {"id":"e_story_2","fromNode":"story","toNode":"chimera"},
-    {"id":"e_story_3","fromNode":"story","toNode":"rain"},
-
-    {"id":"e_frontier_explorer","fromNode":"frontier","toNode":"explorertech","label":"未知迫使新身体出现"},
-    {"id":"e_dragon_tech","fromNode":"dragon","toNode":"tech","label":"龙系资源成为技术根"},
-    {"id":"e_explorer_lili","fromNode":"explorertech","toNode":"lili"},
-    {"id":"e_explorer_tatin","fromNode":"explorertech","toNode":"tatin"},
-    {"id":"e_tail_lili","fromNode":"tail","toNode":"lili"},
-    {"id":"e_commander_rain","fromNode":"commander","toNode":"rain"},
-    {"id":"e_lili_rain","fromNode":"lili","toNode":"rain"},
-    {"id":"e_uncle_chimera","fromNode":"uncle","toNode":"chimera"},
-    {"id":"e_lili_chimera","fromNode":"lili","toNode":"chimera"},
-    {"id":"e_city_tavern","fromNode":"oldcity","toNode":"tavern"},
-    {"id":"e_era5_rights","fromNode":"era5","toNode":"rights","label":"成功带来伦理问题"}
+    {"id":"e_root_nature","fromNode":"root","toNode":"nature"},{"id":"e_root_history","fromNode":"root","toNode":"history"},{"id":"e_root_tech","fromNode":"root","toNode":"tech"},{"id":"e_root_city","fromNode":"root","toNode":"city"},{"id":"e_root_culture","fromNode":"root","toNode":"culture"},{"id":"e_root_chars","fromNode":"root","toNode":"chars"},{"id":"e_root_tail","fromNode":"root","toNode":"tail"},{"id":"e_root_story","fromNode":"root","toNode":"story"},{"id":"e_root_visual","fromNode":"root","toNode":"visual"},
+    {"id":"e_nat_1","fromNode":"nature","toNode":"dragon"},{"id":"e_nat_2","fromNode":"nature","toNode":"species"},{"id":"e_nat_3","fromNode":"nature","toNode":"creatures"},{"id":"e_nat_4","fromNode":"nature","toNode":"frontier"},
+    {"id":"e_hist_1","fromNode":"history","toNode":"era1"},{"id":"e_hist_2","fromNode":"history","toNode":"era2"},{"id":"e_hist_3","fromNode":"history","toNode":"era3"},{"id":"e_hist_4","fromNode":"history","toNode":"era4"},{"id":"e_hist_5","fromNode":"history","toNode":"era5"},{"id":"e_era1_2","fromNode":"era1","toNode":"era2","label":"社会协作"},{"id":"e_era2_3","fromNode":"era2","toNode":"era3","label":"资源工程化"},{"id":"e_era3_4","fromNode":"era3","toNode":"era4","label":"技术进入身体"},{"id":"e_era4_5","fromNode":"era4","toNode":"era5","label":"从修复到设计生命"},
+    {"id":"e_tech_1","fromNode":"tech","toNode":"bodytech"},{"id":"e_tech_2","fromNode":"tech","toNode":"functional"},{"id":"e_tech_3","fromNode":"tech","toNode":"exbrain"},{"id":"e_tech_4","fromNode":"tech","toNode":"explorertech"},
+    {"id":"e_city_1","fromNode":"city","toNode":"oldcity"},{"id":"e_city_2","fromNode":"city","toNode":"industry"},{"id":"e_city_3","fromNode":"city","toNode":"medical"},{"id":"e_city_4","fromNode":"city","toNode":"academy"},{"id":"e_city_5","fromNode":"city","toNode":"materials"},
+    {"id":"e_city_gate","fromNode":"city","toNode":"city_gate","label":"城市与边境相接"},{"id":"e_gate_scale","fromNode":"city_gate","toNode":"city_scale","label":"异种流动迫使尺度共存"},{"id":"e_scale_service","fromNode":"city_scale","toNode":"city_service","label":"身体差异产生服务职业"},{"id":"e_service_retrofit","fromNode":"city_service","toNode":"city_retrofit","label":"功能持续附着旧城"},{"id":"e_retrofit_night","fromNode":"city_retrofit","toNode":"city_night","label":"形成独有夜间视觉"},{"id":"e_old_retrofit","fromNode":"oldcity","toNode":"city_retrofit","label":"旧建筑继续使用"},
+    {"id":"e_culture_1","fromNode":"culture","toNode":"factions"},{"id":"e_culture_2","fromNode":"culture","toNode":"rights"},
+    {"id":"e_chars_1","fromNode":"chars","toNode":"lili"},{"id":"e_chars_2","fromNode":"chars","toNode":"tatin"},{"id":"e_chars_3","fromNode":"chars","toNode":"uncle"},{"id":"e_chars_4","fromNode":"chars","toNode":"commander"},
+    {"id":"e_story_1","fromNode":"story","toNode":"tavern"},{"id":"e_story_2","fromNode":"story","toNode":"chimera"},{"id":"e_story_3","fromNode":"story","toNode":"rain"},
+    {"id":"e_frontier_explorer","fromNode":"frontier","toNode":"explorertech","label":"未知迫使新身体出现"},{"id":"e_dragon_tech","fromNode":"dragon","toNode":"tech","label":"龙系资源成为技术根"},{"id":"e_explorer_lili","fromNode":"explorertech","toNode":"lili"},{"id":"e_explorer_tatin","fromNode":"explorertech","toNode":"tatin"},{"id":"e_tail_lili","fromNode":"tail","toNode":"lili"},{"id":"e_commander_rain","fromNode":"commander","toNode":"rain"},{"id":"e_lili_rain","fromNode":"lili","toNode":"rain"},{"id":"e_uncle_chimera","fromNode":"uncle","toNode":"chimera"},{"id":"e_lili_chimera","fromNode":"lili","toNode":"chimera"},{"id":"e_city_tavern","fromNode":"oldcity","toNode":"tavern"},{"id":"e_era5_rights","fromNode":"era5","toNode":"rights","label":"成功带来伦理问题"}
   ]
 }
