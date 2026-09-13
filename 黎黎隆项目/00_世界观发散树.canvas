@@ -56,6 +56,14 @@
 
     {"id":"city","type":"text","text":"城市方向｜模块化异体生活城\n\n城市不是统一建筑风格，而是许多小型功能空间拼接：浅色墙体、暗色骨架、半透明腔体、外露管线、布帘、模块柜、奇怪门洞与不同尺度入口。\n\n整体轻、杂、有人住，不做默认哥特巨城。","x":-40,"y":1400,"width":520,"height":360},
 
+    {"id":"street_joint","type":"text","text":"异体街口｜城市先处理身体流线\n\n同一个街口同时容纳巨躯人、大尾种、普通体型与小型族群。\n主路不靠统一车道，而靠净空高度、承重带、低位通道、尾部转身半径和可临时收折的街边结构共同分流。\n\n街道因此看起来不像现代公路，更像被多种身体长期磨出来的共享通路。","x":540,"y":1400,"width":520,"height":380},
+
+    {"id":"street_threshold","type":"text","text":"门槛带｜街道不是一张平面\n\n异体街口的冲突不会只靠标识解决，于是建筑入口前形成一层“门槛带”：缓坡、矮阶、尾槽、扶架、低位窗口、可掀开的软帘和临时承重板叠在一起。\n\n门槛带负责把不同身体从街道流线慢慢转换成室内姿态。","x":1100,"y":1400,"width":520,"height":380},
+
+    {"id":"street_service_strip","type":"text","text":"身体服务缝｜流线放慢以后，维护自然聚集\n\n门槛带让人停、转身、收尾、拆挂件，于是最小型的身体服务会贴着入口生长：角套调整、尾关节润滑、绑带更换、外置器官防雨罩、快拆件清洁。\n\n它们不是完整诊所，而是街边几分钟就能解决的小维护。","x":1660,"y":1400,"width":530,"height":390},
+
+    {"id":"street_rest_docks","type":"text","text":"停靠与休息｜等待也要适应身体\n\n维护与换装会产生等待，于是街边家具不是统一长椅：有巨躯人的承背架、大尾种的尾托、小型族群的高位踏台、外脑使用者的冷却靠点。\n\n这些“停靠位”把身体文明从工作设施带进最普通的街头休息。","x":2230,"y":1400,"width":530,"height":390},
+
     {"id":"space_rule","type":"text","text":"场景设计规则｜先问身体，再问装修\n\n每个场景至少回答一个身体问题：\n尾巴放哪？角会不会撞？外脑怎么散热？巨躯人怎么进门？小型族群怎么看柜台？外置器官怎么避水？\n\n场景功能决定造型，装饰随后。","x":-40,"y":1820,"width":500,"height":350},
 
     {"id":"tavern_new","type":"text","text":"酒馆 / 集会所｜新版方向\n\n不是暖金木梁西幻大厅。\n更像异种共用的小型补给与社交空间：浅灰墙面、深色结构、可移动座椅、尾部槽、挂带、身体适配桌面、青蓝 / 紫红小型功能灯。\n\n保留生活气，不做豪华概念酒店。","x":-600,"y":2280,"width":520,"height":360},
@@ -123,6 +131,12 @@
     {"id":"e_era4_chars","fromNode":"era4","toNode":"characters_anchor","label":"探索体成为时代极端产物"},
 
     {"id":"e_spaces_city","fromNode":"spaces","toNode":"city"},
+    {"id":"e_city_street_joint","fromNode":"city","toNode":"street_joint","label":"多种身体共享城市，首先改变的是通行流线"},
+    {"id":"e_species_street_joint","fromNode":"species","toNode":"street_joint","label":"身体差异直接进入街道尺度"},
+    {"id":"e_street_joint_threshold","fromNode":"street_joint","toNode":"street_threshold","label":"不同流线在入口前需要被转换成室内姿态"},
+    {"id":"e_threshold_service","fromNode":"street_threshold","toNode":"street_service_strip","label":"停顿与换姿态产生高频小维护需求"},
+    {"id":"e_service_rest","fromNode":"street_service_strip","toNode":"street_rest_docks","label":"维护与换装产生等待，等待反过来塑造街边家具"},
+    {"id":"e_rest_space_rule","fromNode":"street_rest_docks","toNode":"space_rule","label":"街边日常验证“先问身体，再问装修”"},
     {"id":"e_city_rule","fromNode":"city","toNode":"space_rule"},
     {"id":"e_rule_tavern","fromNode":"space_rule","toNode":"tavern_new"},
     {"id":"e_rule_clinic","fromNode":"space_rule","toNode":"clinic_new"},
