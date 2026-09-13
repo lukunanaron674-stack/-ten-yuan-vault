@@ -1,105 +1,149 @@
 {
   "nodes": [
-    {"id":"root","type":"text","text":"黎黎隆项目｜世界观发散树\n\n奇幻 × 生体机能 × 身体文明\n\n核心：奇幻是自然，机能是文明\n文明母题：生命怎样改变自己的身体，才能继续进入更远的地方？","x":0,"y":0,"width":440,"height":240},
-    {"id":"nature","type":"text","text":"自然奇幻层\n\n世界先有龙、异种、巨躯人、奇幻生物与龙脉生态。\n人类从来不是唯一的身体尺度。","x":-1050,"y":-700,"width":390,"height":220},
-    {"id":"dragon","type":"text","text":"龙与龙脉生态\n\n龙不只是Boss，而是长期改变地貌、气候、矿物、生物与魔力环境的生态力量。\n龙骸、神经、鳞、腺体后来成为文明技术材料。","x":-1550,"y":-980,"width":390,"height":240},
-    {"id":"species","type":"text","text":"异种社会\n\n天然半龙人 / 龙裔\n巨躯人\n小型族群\n普通人类\n其他异种\n\n异种是常态，人工实验体才稀有。","x":-1550,"y":-620,"width":360,"height":270},
-    {"id":"creatures","type":"text","text":"奇幻生物谱系\n\n普通异兽\n龙化生物\n奇美拉：生态错误 / 不稳定混合\n遗迹构造体：古代生体机械守卫","x":-1550,"y":-280,"width":370,"height":230},
-    {"id":"frontier","type":"text","text":"未知边境\n\n地图、通讯、模型可能失效。\n龙脉变化、异常天气、生物迁徙、遗迹苏醒，让世界永远无法完全测绘。","x":-1030,"y":-300,"width":400,"height":230},
-    {"id":"history","type":"text","text":"文明历史主轴\n\n自然奇幻世界\n→ 城邦与冒险者文明\n→ 龙质工业化\n→ 异体医学\n→ 身体增强\n→ 人工生命","x":-520,"y":-920,"width":390,"height":270},
-    {"id":"era1","type":"text","text":"① 龙与异种的自然时代\n\n各物种按身体结构形成聚落与文化。\n不同体型、尾、角、翼从一开始就是正常社会事实。","x":-480,"y":-1320,"width":370,"height":220},
-    {"id":"era2","type":"text","text":"② 城邦与冒险者时代\n\n商队护卫、猎人、测绘、救援逐渐形成公会。\n酒馆成为找队、交换地图、发布委托、买卖情报的工作空间。","x":-40,"y":-1320,"width":390,"height":240},
-    {"id":"era3","type":"text","text":"③ 龙骸工业革命\n\n从龙骨武器、魔力灯发展到龙质传动、生物导线、魔力蓄能与器官材料。\n奇幻资源第一次被系统工程化。","x":420,"y":-1320,"width":390,"height":240},
-    {"id":"era4","type":"text","text":"④ 异体医学时代\n\n义肢 → 人工器官 → 神经接口 → 外置器官。\n身体改造最初来自医疗，不是时尚。","x":880,"y":-1320,"width":380,"height":220},
-    {"id":"era5","type":"text","text":"⑤ 探索体时代｜现在\n\n文明开始直接设计适应未知环境的人工生命。\n黎黎隆、塔汀属于这一时代的极端成果。","x":1320,"y":-1320,"width":390,"height":220},
-    {"id":"hist_scale_charter","type":"text","text":"多尺度城约｜第一次把身体差异写进城市规则\n\n早期城邦曾按普通人体型修桥、门洞和避难道。一次边境灾害中，巨躯人与大尾种因无法通过旧尺度通道造成严重伤亡。\n事故后城邦联合制定最低承重、尾部净空与多高度公共设施标准。","x":-40,"y":-1780,"width":470,"height":310},
-    {"id":"hist_dragonburn","type":"text","text":"龙质灼伤潮｜工业事故逼出异体医学\n\n龙质材料大规模进入工坊后，工人出现神经灼伤、鳞化、魔力器官失衡等传统医术无法处理的伤病。\n工坊医院开始把龙类解剖、义肢与器官修复合并，异体医学由此制度化。","x":470,"y":-1780,"width":480,"height":320},
-    {"id":"hist_body_right","type":"text","text":"身体自主条例｜从救命技术到改造权\n\n人工器官与神经接口成熟后，雇主、军队和研究机构开始要求特定职业接受强化。\n围绕“谁有权决定一个人的身体结构”爆发争议，最终形成知情同意、可撤除接口与职业改造边界。","x":990,"y":-1780,"width":480,"height":320},
-    {"id":"hist_lost_expedition","type":"text","text":"失联远征年｜已知路线体系第一次公开失败\n\n一次大型测绘远征遭遇龙脉整体偏移，地图、通讯与路径演算同时失效，多支精锐队伍在同一区域失联。\n事故证明“更好的地图”无法解决所有未知，研究院由此启动任务型身体研究。","x":1510,"y":-1780,"width":480,"height":320},
-    {"id":"hist_experiment_rights","type":"text","text":"探索体身份争议｜人工生命进入法律与日常\n\n首批探索体完成任务后，研究院仍按设备与项目资产管理其身体、维修权和行动许可。\n当探索体开始形成独立关系、偏好与拒绝命令的能力，社会第一次必须回答：被设计出来的生命是否拥有自己的身体？","x":2030,"y":-1780,"width":500,"height":340},
-    {"id":"tech","type":"text","text":"技术树\n\n魔法观察\n→ 龙类解剖\n→ 魔力器官研究\n→ 人工器官\n→ 生体机械\n→ 神经接口\n→ 外显器官\n→ 人工探索体","x":-520,"y":560,"width":400,"height":330},
-    {"id":"bodytech","type":"text","text":"器官外显 / 生体机能\n\n外脑、外置肺、增强脊柱、人工眼、义肢、神经束、模块化器官。\n原则：能力必须从身体上“长出来给人看”。","x":-1020,"y":850,"width":400,"height":260},
-    {"id":"functional","type":"text","text":"机能服装\n\n挂点、快拆、拉带、管线、药剂槽、接口、魔力模块。\n不是潮流服，而是针对种族、职业和环境问题的装备。","x":-520,"y":1010,"width":400,"height":250},
-    {"id":"exbrain","type":"text","text":"外脑与路径演算师\n\n高信息职业可扩展脑组织并外置散热、记忆与战术接口。\n代表“已知世界的最优路线”。","x":-40,"y":900,"width":400,"height":240},
-    {"id":"explorertech","type":"text","text":"人工拟龙探索体\n\n小型人形操作核心 + 巨型尾部探索器官。\n保留人的判断、双手与社会能力，同时获得非人机动与感知。","x":420,"y":820,"width":420,"height":270},
-    {"id":"city","type":"text","text":"城市结构｜历史分层，而非风格拼贴\n\n旧奇幻文明被几百年的机能技术一层一层覆盖。","x":980,"y":-500,"width":440,"height":210},
-    {"id":"oldcity","type":"text","text":"老城区\n\n石、木、壁炉、市场、旧公会、冒险者酒馆。\n酒馆在现代仍是任务、组队、路线情报与社交中心。","x":1480,"y":-760,"width":390,"height":230},
-    {"id":"industry","type":"text","text":"工业城区\n\n黑铁、黄铜、龙质材料、工坊、轨道、吊机、管线。\n加工龙骸与生体机械模块。","x":1480,"y":-470,"width":390,"height":220},
-    {"id":"medical","type":"text","text":"医疗机能区\n\n医院、义肢店、器官维护、改造诊所、生体工坊。\n医疗与增强之间存在伦理灰区。","x":1480,"y":-180,"width":390,"height":220},
-    {"id":"academy","type":"text","text":"学术新区\n\n研究院、测绘局、龙脉实验室。\n建筑像“老大学 + 医院 + 生体工厂”，而不是玻璃赛博园区。","x":1480,"y":110,"width":410,"height":240},
-    {"id":"materials","type":"text","text":"统一材料语言\n\n基础：石 / 木 / 黑铁 / 黄铜 / 布 / 皮革\n高级：白色骨质 / 半透明角质 / 深色金属 / 神经管 / 魔力液体","x":980,"y":20,"width":430,"height":240},
-    {"id":"city_gate","type":"text","text":"边境门站｜城市与未知的接口\n\n城门不只是防御：测龙脉污染、登记异兽材料、检查外置器官、给不同体型队伍换装。\n冒险者从这里真正进入边境。","x":1980,"y":-1060,"width":420,"height":250},
-    {"id":"city_scale","type":"text","text":"多尺度街道｜异种共居留下的城市尺度\n\n主路容纳巨躯人、驮兽与大尾种；窄巷保留旧人类尺度。\n门、台阶、吧台、扶手和公共交通存在高低两套甚至三套尺度。","x":2440,"y":-1060,"width":440,"height":270},
-    {"id":"city_service","type":"text","text":"身体服务街｜多种身体把维护需求聚成城市空间\n\n修角、磨鳞、尾部关节润滑、义肢校准、外脑冷却、翼膜缝补与巨躯装备定制集中成街。\n它是跨种身体维护职业的聚集地，不再承担技术演化的单线因果。","x":2920,"y":-1060,"width":450,"height":290},
-    {"id":"city_retrofit","type":"text","text":"旧建筑寄生新机能｜城市的核心视觉\n\n百年石木楼不拆：外墙后来加龙脉管、骨质支架、神经线、吊运轨和器官维护接口。\n新技术像藤蔓一样寄生在旧奇幻建筑上。","x":3400,"y":-1060,"width":450,"height":280},
-    {"id":"city_night","type":"text","text":"夜间街景｜拒绝霓虹赛博朋克\n\n照明来自魔力灯、发光腺体、炉火与半透明龙质导管；夜里仍能看见石墙、布棚、湿木、异兽与维护中的外置器官。\n城市亮，但不是电子广告城。","x":3880,"y":-1060,"width":450,"height":290},
-    {"id":"species_housing","type":"text","text":"异种住宅｜房子先适应身体\n\n半龙人住宅留角部净空、尾道与温湿调节壁；巨躯住宅采用高门、低层厚梁和地面承重床。\n住宅差异来自身体，而不是民族装饰。","x":2440,"y":-1460,"width":450,"height":280},
-    {"id":"species_food","type":"text","text":"异种饮食与酒馆｜同桌不等于同规格\n\n酒馆共用大厅，但有不同高度吧台、巨杯与小杯、耐热餐具、尾部停放槽。\n菜单按代谢与器官需求分支，异种共居因此真正进入日常。","x":2920,"y":-1460,"width":450,"height":280},
-    {"id":"species_transit","type":"text","text":"异种交通｜身体决定交通规则\n\n巨躯人与大尾种走宽主路和高承重车厢；小型族群可走旧城窄巷与低位通道。\n公共交通不是统一座椅，而是可换承托架与尾部固定点。","x":3400,"y":-1460,"width":450,"height":280},
-    {"id":"species_bath","type":"text","text":"公共浴场与维护场｜清洁也是身体基础设施\n\n半龙人需要鳞沟冲洗与角部护理；巨躯人使用深池和吊扶架；外置器官者有隔水接口与维护台。\n浴场兼具社交、护理和身体文化功能。","x":3880,"y":-1460,"width":450,"height":290},
-    {"id":"species_clinic","type":"text","text":"跨种医疗站｜医学被迫承认多种身体标准\n\n同一伤势在龙裔、巨躯人、人工探索体上处理完全不同。\n城市因此形成按器官结构分科的医师、维护师与生体技师体系。","x":4360,"y":-1460,"width":450,"height":280},
-    {"id":"bio_maintainer","type":"text","text":"身体维护师｜跨种身体催生独立维护职业\n\n不是所有身体问题都需要医生：鳞片裂口、角根压力、义肢偏磨、外置器官接口老化都需要日常维护。\n维护师是医疗、机械与生活服务之间的基础职业。","x":4360,"y":-1880,"width":460,"height":300},
-    {"id":"load_tail_tech","type":"text","text":"承力与尾部机师｜身体结构决定机械专业\n\n巨躯人的膝髋承力架、大尾种的尾根关节、探索体的配重与锚定系统需要专门技师。\n他们处理的不是普通机械，而是会疼、会疲劳、会代偿的机械身体。","x":4860,"y":-1880,"width":470,"height":300},
-    {"id":"neuro_interface_medic","type":"text","text":"神经接口医师｜机械开始真正接入感觉与意志\n\n当义肢和外置器官需要直接响应神经，维修就不能只换零件。\n接口医师负责神经束、魔力导路、感觉回授与排异反应。","x":5370,"y":-1880,"width":470,"height":290},
-    {"id":"exbrain_support","type":"text","text":"外脑维护师｜高信息职业把大脑变成公开基础设施\n\n路径演算师等职业长期扩展脑组织后，需要冷却、营养液、记忆模块校准与神经噪声清理。\n大脑外显因此不是猎奇装饰，而是一整套职业生态。","x":5880,"y":-1880,"width":480,"height":310},
-    {"id":"organ_designer","type":"text","text":"器官设计师｜从修复身体跨到设计身体\n\n跨种维护、承力结构与神经接口长期积累身体负荷和适配数据。\n研究院据此反向设计专用器官：不是把人改成机器，而是为任务重新组织生命结构。\n这一步直接通向人工探索体。","x":6400,"y":-1880,"width":490,"height":330},
-    {"id":"guild_license","type":"text","text":"冒险执照分级｜资格不只看战斗力\n\n失联远征后，公会不再允许任何队伍凭勇气直接进高危边境。\n执照按环境等级、身体适配、救援能力与撤退记录分级；某些区域甚至要求特定器官或种族身体才能进入。","x":2540,"y":-2260,"width":500,"height":320},
-    {"id":"team_liability","type":"text","text":"队伍责任契约｜谁把谁带回来\n\n高危执照必须绑定队伍责任：谁负责导航、医疗、维护、撤退与失联后的搜救费用。\n个人再强也不能替代队伍结构，公会因此管理的是“可活着返回的组合”而不是英雄名单。","x":3080,"y":-2260,"width":510,"height":330},
-    {"id":"institute_zone_authority","type":"text","text":"研究院危险区授权｜知识权与行动权分开\n\n研究院掌握龙脉、异常生态和探索体实验数据，因此负责划定危险区等级与特殊任务条件；但它不能单独决定谁出发。\n公会认证队伍，研究院认证任务与区域，形成双重授权。","x":3630,"y":-2260,"width":520,"height":340},
-    {"id":"gate_clearance","type":"text","text":"边境门站放行｜制度在城门口变成现实\n\n门站同时检查公会执照、队伍责任契约、研究院区域授权、身体维护状态与污染防护。\n任何一项失败都可能被拒绝出境，因此门站天然成为冒险者、研究员与探索体发生冲突的场景。","x":4190,"y":-2260,"width":520,"height":340},
-    {"id":"exploration_ownership","type":"text","text":"探索成果归属｜只讨论任务产出，不等于身体归属\n\n地图、样本、龙质材料与任务记录可以按委托合同分配；争议集中在探索体独有的感知记录、新路线判断与身体记忆。\n它与“探索体是不是人”分开：这里问的是任务产出能否被机构全部占有。","x":4750,"y":-2260,"width":530,"height":360},
-    {"id":"culture","type":"text","text":"文化与冲突\n\n身体可以改变以后，技术直接变成价值观冲突。","x":980,"y":520,"width":390,"height":190},
-    {"id":"factions","type":"text","text":"身体观念四派\n\n保守派：祖先身体不可随意更改\n机能派：身体就是工具\n外显派：能力应该公开显现\n自然主义者：反对人工增强与人工生命","x":1450,"y":480,"width":420,"height":280},
-    {"id":"rights","type":"text","text":"权利议题总表｜只做索引，不重复机制\n\n身体自主：谁能决定改造与撤除\n生命身份：探索体是不是独立主体\n任务产出：探索经验与路线判断归谁\n城市公平：不同身体是否被基础设施排除\n\n具体机制分别落在历史、制度与剧情节点。","x":1450,"y":810,"width":430,"height":300},
-    {"id":"chars","type":"text","text":"角色与十元\n\n让不同角色成为世界观不同答案，而不是换皮NPC。","x":2140,"y":-500,"width":410,"height":200},
-    {"id":"lili","type":"text","text":"黎黎隆｜zx8 + xn3\n\n人工拟龙探索体。\n核心价值：当模型、地图和既有路线失效时，仍能行动并创造路径。\n巨尾是探索器官，不只是武器。","x":2620,"y":-820,"width":420,"height":270},
-    {"id":"tatin","type":"text","text":"塔汀｜nz8 + nx6 + x3\n\n与黎黎隆同批实验体。\n同源但不是同一种答案，关系承接、照护与让渡倾向更强。","x":2620,"y":-500,"width":420,"height":240},
-    {"id":"uncle","type":"text","text":"大叔\n\n前探索计划外勤教官 / 机械工程师 / 救援人员方向。\n懂实验体身体、尾部维护与事故历史。\n代表“制造者一代留下的责任”。","x":2620,"y":-190,"width":420,"height":250},
-    {"id":"commander","type":"text","text":"xn型路径演算师｜外脑指挥者\n\n用地图、天气、龙脉、生物与队员状态演算路线。\n多数时候比黎黎隆更正确；故事发生在其模型无法覆盖的1%。","x":2620,"y":130,"width":430,"height":270},
-    {"id":"tail","type":"text","text":"黎黎隆系巨尾结构\n\n外置脊柱 + 第三条腿 + 配重器 + 感知/工具平台\n静止：尾部接地承重\n行动：制动 / 锚定 / 转向\n运动必须表现惯性链：根部 → 中段 → 尾端","x":2140,"y":520,"width":440,"height":300},
-    {"id":"story","type":"text","text":"故事验证区｜修枝后优先级\n\n已完成三条有效验证链：\n✓ 异种酒馆：共居日常 + 巨尾非战斗价值\n✓ 第一份探索合同：经验归属 + 四方立场\n✓ 流雨远征：zx 未知开路 → xn 吸收为已知\n\n下一批只保留4个高价值入口：\n1. 旧建筑寄生新机能｜把核心视觉变成可反复使用的场景机制\n2. 塔汀独立选择｜验证 nz8 + nx6 + x3 不只是黎黎隆陪衬\n3. 复制巨尾 ≠ 复制 zx｜检验身体工业化与主体能力的边界\n4. 奇美拉成长篇｜验证生态错误、训练与身体代价\n\n完成链不再继续横向扩张，除非进入剧情/场景生产。","x":2140,"y":940,"width":500,"height":500},
-    {"id":"tavern","type":"text","text":"酒馆篇｜已完成世界观验证\n\n古老酒馆 + 现代冒险职业。\n已验证：异种共居礼仪、身体适配委托、巨尾非战斗价值、旧建筑寄生新机能风险。\n后续只在进入分镜、场景设计或角色剧情时继续，不再单独长设定枝。","x":2700,"y":820,"width":450,"height":300},
-    {"id":"chimera","type":"text","text":"奇美拉成长篇\n\n验证尾部身体逻辑、训练体系、大叔与人工探索体历史。\n奇美拉可对应不稳定龙脉 / 生态错误。","x":2700,"y":1180,"width":410,"height":230},
-    {"id":"npc_gate_examiner","type":"text","text":"门站审查官｜不是反派，而是制度的人脸\n\n熟悉多种身体、维护状态与边境事故。她认可黎黎隆的能力，却必须按现行条例检查公会责任、研究院授权和探索体行动许可。\n冲突来自规则落后于生命，而不是坏人故意刁难。","x":5320,"y":-2260,"width":520,"height":340},
-    {"id":"plot_gate_denial","type":"text","text":"黎黎隆被拒绝出境｜身体合格，身份不合格\n\n她的巨尾、污染防护和现场适配全部通过，却无法以“自己”作为行动主体签署高危出境许可。\n研究院仍是其法定项目责任方，于是最适合未知的人反而被挡在未知之外。","x":5880,"y":-2260,"width":530,"height":350},
-    {"id":"plot_liability_offer","type":"text","text":"公会侧临时责任担保｜解决责任，不解决主体资格\n\n大叔愿以救援履历和个人资产承担队伍责任，补齐公会侧“谁把她带回来”的要求。\n但责任担保只解决撤退与事故成本，不能替代研究院对探索体行动权的授权。","x":6450,"y":-2260,"width":520,"height":340},
-    {"id":"npc_project_officer","type":"text","text":"研究院项目授权官｜给许可，也要任务产出\n\n他可以放行黎黎隆，但条件是把任务中的地图、样本、尾部感知记录与新路线判断纳入项目成果。\n他承认黎黎隆是生命，却认为研究院承担设计、维护和事故成本，因此应拥有任务产出的优先权。","x":7010,"y":-2260,"width":550,"height":370},
-    {"id":"plot_first_contract","type":"text","text":"第一份探索合同的选择｜身体属于自己，经验是否也属于自己？\n\n黎黎隆获得合法出境机会，但合同要求把从身体产生的感知记录与新路线判断纳入研究院项目成果。\n冲突不再重复“身体是不是她的”，而是进一步追问：独立生命用自己的身体创造出的经验，机构可以买走多少？","x":7600,"y":-2260,"width":570,"height":400},
-    {"id":"contract_lili_stance","type":"text","text":"黎黎隆的答案｜可以共享结果，不能预先拥有我的判断\n\nzx8 让她把价值放在模型失效后的现场开路；xn3 又让她并不反对地图、记录和复盘。\n她愿意交出环境事实与最终路线，却拒绝把“当时为什么偏离模型、身体怎样判断下一步”自动视为研究院资产。","x":8240,"y":-2520,"width":560,"height":380},
-    {"id":"contract_tatin_stance","type":"text","text":"塔汀的答案｜共享可以发生，但必须发生在关系与同意之中\n\nnz8 + nx6 + x3 使她更愿意把自己的记录用于保护同伴，也更在意谁正在承接这些记录、是否尊重原主体。\n她反对一次签字换来永久提取权：每次高风险用途都应重新说明、重新同意。","x":8240,"y":-2070,"width":560,"height":390},
-    {"id":"contract_uncle_stance","type":"text","text":"大叔的答案｜承担成本可以换来补偿，不能换来对人的所有权\n\n他承认研究院确实支付设计、维护、救援与事故代价，因此项目成果不可能全部私人化。\n但他坚持把“成本回收”与“占有探索体经验”分开：机构可以收取任务授权与成果许可，却不能无限继承一个人的身体经验。","x":8240,"y":-1610,"width":570,"height":400},
-    {"id":"contract_commander_stance","type":"text","text":"路径演算师的答案｜公共模型需要数据，但模型必须知道哪些东西不能被压平\n\n作为 xn 型专家，他最支持环境记录、危险点和可复现路线进入公共数据库，因为下一队人的命依赖这些信息。\n但他也承认黎黎隆的 zx 判断常发生在不可复现的偏移里：原始事实可标准化，现场判断必须保留来源、置信度与作者。","x":8240,"y":-1140,"width":590,"height":420},
-    {"id":"plot_contract_revision","type":"text","text":"双层探索契约｜共享公共安全事实，不征用人格判断\n\n四方争执后形成折中：环境数据、污染点、可复现路线进入公共安全层；身体记忆、感知权重、临场偏离判断属于主体，只能按任务授权使用。\n研究院获得有限许可与成本回收，探索体保留撤回、署名与二次用途决定权。\n制度第一次承认：探索经验既能服务文明，也仍然属于一个具体生命。","x":8920,"y":-1870,"width":620,"height":450},
-    {"id":"exp_first_departure","type":"text","text":"第一次按双层契约远征｜规则第一次离开纸面\n\n黎黎隆与路径演算师进入流雨边境：公共层记录天气、龙脉、地形与可复现路线；主体层只记录黎黎隆愿意授权的感知结论，不强制上传完整身体记忆。\n双方第一次在任务前明确：模型负责已知最优，黎黎隆保留未知偏移时的现场判断权。","x":9620,"y":-2520,"width":600,"height":410},
-    {"id":"exp_model_diverge","type":"text","text":"雨带路线分裂｜模型仍然正确，世界却已经变了\n\n路径演算师依据昨日龙脉、地形与迁徙数据给出低风险路线；实时公共数据也没有明显异常。\n但持续暴雨让地下龙脉改道，危险首先出现在尚未被仪器定义的尺度上：xn 没有算错，只是输入世界已经过期。","x":10280,"y":-2520,"width":620,"height":420},
-    {"id":"exp_body_warning","type":"text","text":"不可译的身体预警｜她知道不能走，却暂时说不出为什么\n\n黎黎隆尾根承重、尾端触地回响与鳞下魔力感受同时出现细小失配。她无法在几秒内把这些感觉翻译成研究院认可的指标，只能给出明确判断：前路会塌，必须偏离。\n这是 zx8 的价值边界：不是神秘直觉，而是身体先整合了尚未标准化的变化。","x":10960,"y":-2520,"width":630,"height":440},
-    {"id":"exp_trust_call","type":"text","text":"路径演算师临时授信｜相信不可验证判断，但把责任写清\n\n演算师没有让模型投降，也没有要求黎黎隆先证明自己。他依据双层契约启用“主体判断临时优先”：队伍改走未建模路线，同时保留原模型、时间点、黎黎隆署名判断与撤退条件。\n信任因此不是崇拜，而是一种可追责的制度动作。","x":11660,"y":-2520,"width":640,"height":440},
-    {"id":"exp_after_action_clause","type":"text","text":"不可复现经验条款｜事后记录结果，不强迫复制感觉\n\n队伍避开塌陷后，研究院确认公共模型缺少“雨水—尾部触地回响—龙脉空洞化”的新变量。黎黎隆可自愿提供部分感知样本帮助建立新指标，但无需交出完整身体记忆。\n文明得到一个新变量，她仍保留经验主体性；zx 的一次开路，最终成为 xn 下一次可以学习的已知。","x":12380,"y":-2520,"width":650,"height":460},
-    {"id":"visual","type":"text","text":"视觉宪法\n\n1. 奇幻是自然，机能是文明\n2. 身体越非人，装备越有理由\n3. 能力必须外显，功能必须看得见\n4. 技术从奇幻资源内部发展，不直接复制现实赛博朋克\n5. 城市必须看得见历史层","x":980,"y":1220,"width":480,"height":340},
-    {"id":"tavern_etiquette","type":"text","text":"异种酒馆礼仪｜身体先决定彼此怎样相处\n\n进门先收翼、尾端入槽、角部避开低梁；发热腺体与怕热种分区落座。\n这些不是繁文缛节，而是长期共居后形成的低成本安全规则。","x":3220,"y":820,"width":470,"height":300},
-    {"id":"tavern_body_board","type":"text","text":"身体适配委托牌｜任务先写环境，再写需要什么身体\n\n委托不会只标战士、法师，而会注明低温、狭缝、毒雾、重载、垂直攀附、龙脉感知等条件。\n身体差异因此直接进入职业市场。","x":3730,"y":820,"width":480,"height":310},
-    {"id":"npc_tavern_keeper","type":"text","text":"半龙人酒馆老板｜把身体差异当日常，不当奇观\n\n老城区长大的半龙人，熟悉不同种族的饮食、承重和队伍习惯。\n他看人先问“你能解决什么环境问题”，不先问战斗等级，是酒馆职业文化的人脸。","x":4250,"y":820,"width":490,"height":320},
-    {"id":"plot_tail_misread","type":"text","text":"巨尾误判委托｜别人先把黎黎隆当重型战斗单位\n\n新来的委托人看到巨尾，只愿给她破门、压制、清怪类任务；黎黎隆真正的路径感知、锚定和现场判断反而被忽略。\n冲突来自社会对“可见身体功能”的粗暴分类。","x":4780,"y":820,"width":500,"height":340},
-    {"id":"plot_tavern_anchor","type":"text","text":"旧酒馆承重事故｜巨尾第一次以非战斗方式证明价值\n\n寄生在老木梁上的龙质热管突发失衡，巨躯客人与大尾种同时堵住撤离通道。\n黎黎隆用尾部感知楼体受力、锚住下沉梁并现场开出撤离路径；她没有击败任何敌人，却让所有人活着离开。","x":5320,"y":820,"width":520,"height":370}
+    {"id":"root","type":"text","text":"黎黎隆项目｜世界观总纲 v2\n\n冷白异体奇幻 × 生体机能 × 身体文明\n\n核心：奇幻是自然，机能是文明\n文明母题：生命怎样改变自己的身体，才能继续进入更远的地方？\n\n视觉母方向：灰白浅底 + 青蓝 / 紫红信号色 + 怪奇可爱 + 轻量设定稿感","x":0,"y":0,"width":520,"height":330},
+
+    {"id":"canon_lock","type":"text","text":"锁定设定｜不可改\n\n黎黎隆 = zx8 + xn3\n塔汀 = nz8 + nx6 + x3\n两者为同批实验体。\n\n本轮只重构世界总纲与视觉，不扩写新人物。","x":-40,"y":520,"width":460,"height":250},
+
+    {"id":"world_formula","type":"text","text":"世界一句话\n\n这不是“中古世界突然长出未来科技”。\n\n这是一个天然存在多种身体与奇幻生命的世界，文明长期围绕身体维护、器官、接口、装备与探索发展，于是自然长出了近未来般的机能外观。","x":620,"y":-240,"width":500,"height":300},
+
+    {"id":"old_direction_cut","type":"text","text":"旧方向清理｜不再作为默认世界观\n\n× 暖金 / 琥珀 / 木棕作为世界主色\n× 大面积西幻酒馆、哥特巨城、史诗建筑作为默认场景\n× 黑铁黄铜蒸汽朋克式工业感\n× 龙骸是所有技术唯一源头\n× 霓虹电子赛博朋克\n× AAA写实电影概念图完成度\n× 合同、条例、行政制度成为世界主干\n\n这些元素不是永远禁止，但不再控制世界的第一印象。","x":620,"y":120,"width":520,"height":430},
+
+    {"id":"visual","type":"text","text":"视觉总纲｜先锁气质，再长设定\n\n目标：像一整套动画前期概念设定，而不是一部写实西幻电影。\n\n关键词：轻、怪、冷、净、图形化、异种、手绘、生体接口、功能外显。","x":-1040,"y":-260,"width":480,"height":280},
+
+    {"id":"palette","type":"text","text":"世界主配色｜配色本身就是世界识别\n\n大底：纸白 / 灰白 / 浅灰蓝 / 冷灰\n结构暗部：炭黑 / 深青灰 / 暗紫灰\n功能点色：青蓝 / 湖蓝 / 薄荷青\n异常点色：紫红 / 洋红 / 暗玫红\n危险点色：少量纯红\n\n禁：大面积金黄、橙棕、暖琥珀统治画面。","x":-1600,"y":-760,"width":470,"height":360},
+
+    {"id":"color_logic","type":"text","text":"色彩使用规则\n\n70%左右保持浅、灰、冷、留白。\n青蓝与紫红只做高识别信号，不把整张图染满。\n\n青蓝偏向：运行、接口、生命维持、可读状态。\n紫红偏向：异常、实验、高负荷、个体差异。\n红只用于真正需要抢眼的危险 / 情绪瞬间。\n\n这套语义先作为视觉规则，不绑死成世界物理定律。","x":-1600,"y":-320,"width":480,"height":390},
+
+    {"id":"render_style","type":"text","text":"画面完成度｜设定稿感优先\n\n手绘线条可见，允许轻微脏线与不完全对称。\n平涂 / 薄涂，少量明暗，不追求厚重体积塑造。\n局部可以像草图、模型板、服装试色、场景设计页。\n\n优先“设计信息清楚”，而不是“材质逼真到像电影截图”。","x":-1080,"y":-760,"width":470,"height":340},
+
+    {"id":"shape_grammar","type":"text","text":"形状语言｜怪，但要能读懂\n\n人体与器官：长短比例可夸张、头部结构可异形、外脑 / 壳 / 管线 / 面罩可以公开。\n机械：模块、环、盒、软管、关节、挂带、插槽。\n生体：膜、囊、神经束、软组织、半透明液体腔。\n\n不要把所有东西做成统一硬表面机甲。","x":-1080,"y":-330,"width":470,"height":360},
+
+    {"id":"materials","type":"text","text":"材料语言｜浅壳 + 暗结构 + 生体点色\n\n主材料：哑光灰白壳体、浅色布、旧塑质感 / 骨质感表面、深灰结构件。\n柔性材料：黑灰织带、橡胶、皮膜、软管。\n生体材料：半透明青蓝液体、紫红组织、神经丝、可见脑组织。\n金属存在，但不以黄铜、锈铁和蒸汽朋克为主角。","x":-1080,"y":120,"width":480,"height":360},
+
+    {"id":"lighting","type":"text","text":"光线规则｜冷底上的少量活色\n\n日常：白天散射光、灰冷室内光、柔和阴影。\n功能光：青蓝小面积发光。\n异常 / 实验：紫红小面积发光。\n\n暖光可以出现，但只能是局部生活温度，不再把整个世界刷成橙色。","x":-1600,"y":160,"width":470,"height":320},
+
+    {"id":"anti_visual","type":"text","text":"反向视觉限制\n\n不要：\n• 写实欧美西幻NPC模板\n• 金棕色酒馆大全套\n• 巨型哥特城堡默认化\n• 满屏复杂机械细节\n• 霓虹广告牌 / 黑客UI / 电子城市\n• 所有人都黑色战术服\n• 高饱和商业二次元糖果色\n• 过度精致导致失去手绘概念感","x":-1600,"y":560,"width":470,"height":380},
+
+    {"id":"nature","type":"text","text":"自然层｜奇幻本来就存在\n\n世界天然存在半龙人、巨躯人、小型族群、异形生物、奇美拉式生命与其他非标准身体。\n\n“长角、长尾、外露结构、巨大体型”不是未来改造才出现，而是自然本身就允许身体差异。","x":700,"y":700,"width":490,"height":310},
+
+    {"id":"species","type":"text","text":"异种社会｜不要把异种当奇观\n\n不同身体是社会日常。\n真正值得设计的不是“这个种族穿什么民族服”，而是：\n它怎样坐、走、工作、休息、维修、吃饭、进入狭窄空间？\n\n身体结构直接塑造生活方式。","x":1240,"y":700,"width":470,"height":320},
+
+    {"id":"fantasy_ecology","type":"text","text":"奇幻生态｜不再让“龙”包办一切\n\n龙系只是重要谱系之一。\n世界还存在异兽、菌体、寄生生命、矿物生命、软体生物、遗迹生物等不同来源。\n\n文明可以借用多种自然结构，不必所有器官、能源、材料都解释成龙骸工业。","x":1780,"y":700,"width":500,"height":330},
+
+    {"id":"body_civ","type":"text","text":"身体文明｜世界真正的科技主轴\n\n文明没有优先追求“更大的机器”，而是持续解决：\n不同身体怎么活得更好？\n身体怎么延伸能力？\n器官怎么替换、外置、维护、重组？\n人怎样进入原本不适合自己的环境？","x":700,"y":1120,"width":500,"height":350},
+
+    {"id":"tech","type":"text","text":"技术逻辑｜生体工艺 + 机能模块\n\n自然器官研究\n→ 身体维护与修复\n→ 人工器官 / 外置器官\n→ 神经与感觉接口\n→ 模块化机能装备\n→ 为任务重新组织身体\n\n技术看起来近未来，但底层不是数字化赛博网络。","x":1240,"y":1120,"width":500,"height":350},
+
+    {"id":"near_future","type":"text","text":"为什么有近未来感？\n\n不是因为时代到了“未来”，而是因为身体技术高度专业化：\n精确裁片、快拆、接口、模块、承力带、状态灯、透明腔体、标准挂点都经过长期优化。\n\n近未来感 = 功能工业化后的视觉结果。","x":1780,"y":1120,"width":500,"height":340},
+
+    {"id":"clothing","type":"text","text":"服装总纲｜传统性放在形，未来感放在功能\n\n服装优先解决：固定、承力、散热、接口、收纳、保护与快速拆卸。\n\n视觉上可以短、怪、轻、不对称；不要默认重甲、长风衣、全身黑战术服。\n青蓝 / 紫红通过小模块、内衬、接口和状态点进入服装。","x":2320,"y":1120,"width":510,"height":370},
+
+    {"id":"organs","type":"text","text":"器官外显｜不是猎奇装饰\n\n外脑、外肺、增强脊柱、人工眼、神经束、感知囊、尾部器官都必须回答：\n它解决了什么问题？\n怎样维护？\n怎样影响人的姿态和生活？\n\n能力必须从身体上“长出来给人看”。","x":1240,"y":1540,"width":500,"height":350},
+
+    {"id":"interfaces","type":"text","text":"接口语言｜世界的“现代感”来源之一\n\n扣具、插槽、软管、透明窗、刻度、机械环、绑带、低分辨显示、小型状态灯。\n\n它们是工具，不是满屏UI。\n世界可以有少量屏幕，但默认仍然是实体结构、手工维护和可见连接。","x":1780,"y":1540,"width":500,"height":350},
+
+    {"id":"history","type":"text","text":"历史主轴｜从身体工艺自然长到探索体\n\n① 异体自然时代\n→ ② 身体工艺时代\n→ ③ 机能标准化时代\n→ ④ 外显器官与探索体时代（现在）\n\n历史只解释世界为什么变成现在，不抢视觉与生活本身的戏。","x":700,"y":1980,"width":500,"height":340},
+
+    {"id":"era1","type":"text","text":"① 异体自然时代\n\n不同身体、异种与奇幻生态天然共存。\n各地最早的生活工具，本来就围绕角、翼、尾、体型与不同代谢制作。","x":1240,"y":1980,"width":460,"height":260},
+
+    {"id":"era2","type":"text","text":"② 身体工艺时代\n\n医疗、裁缝、护具、器官护理、猎人工具逐渐互相融合。\n“修身体”和“做装备”不再是两套职业。\n文明开始把自然身体当成可以理解与协作的结构。","x":1740,"y":1980,"width":480,"height":300},
+
+    {"id":"era3","type":"text","text":"③ 机能标准化时代\n\n跨地区探索和异种共居催生通用接口、快拆标准、维护规范与模块尺寸。\n世界因此出现明显近未来设计感，但制造仍保留工坊、手作和个体差异。","x":2260,"y":1980,"width":500,"height":300},
+
+    {"id":"era4","type":"text","text":"④ 外显器官与探索体时代｜现在\n\n文明开始主动设计能进入未知环境的新身体。\n外脑、巨尾、感知器官与实验体并不是突然出现的科幻跳跃，而是前几代身体工艺的自然极端。","x":2800,"y":1980,"width":500,"height":310},
+
+    {"id":"spaces","type":"text","text":"空间总纲｜小场景优先于史诗城市\n\n这个世界最有识别度的不是远景巨城，而是一个具体空间怎样为怪身体服务。\n\n优先：房间、工作台、舱、门站、摊位、诊疗位、维护间、交通节点、酒馆角落。","x":-40,"y":980,"width":510,"height":340},
+
+    {"id":"city","type":"text","text":"城市方向｜模块化异体生活城\n\n城市不是统一建筑风格，而是许多小型功能空间拼接：浅色墙体、暗色骨架、半透明腔体、外露管线、布帘、模块柜、奇怪门洞与不同尺度入口。\n\n整体轻、杂、有人住，不做默认哥特巨城。","x":-40,"y":1400,"width":520,"height":360},
+
+    {"id":"space_rule","type":"text","text":"场景设计规则｜先问身体，再问装修\n\n每个场景至少回答一个身体问题：\n尾巴放哪？角会不会撞？外脑怎么散热？巨躯人怎么进门？小型族群怎么看柜台？外置器官怎么避水？\n\n场景功能决定造型，装饰随后。","x":-40,"y":1820,"width":500,"height":350},
+
+    {"id":"tavern_new","type":"text","text":"酒馆 / 集会所｜新版方向\n\n不是暖金木梁西幻大厅。\n更像异种共用的小型补给与社交空间：浅灰墙面、深色结构、可移动座椅、尾部槽、挂带、身体适配桌面、青蓝 / 紫红小型功能灯。\n\n保留生活气，不做豪华概念酒店。","x":-600,"y":2280,"width":520,"height":360},
+
+    {"id":"clinic_new","type":"text","text":"身体维护所｜最能代表世界的场景之一\n\n介于诊所、裁缝间、机械工坊和美容护理之间。\n墙上挂的是角套、神经接口、尾部关节、软管、面罩、器官壳。\n\n画面应像“奇怪身体的日常保养”，而不是恐怖实验室。","x":-40,"y":2280,"width":520,"height":350},
+
+    {"id":"workshop_new","type":"text","text":"生体机能工坊\n\n浅色工作台 + 深色夹具 + 半透明生体件 + 布带与小模块。\n工匠会同时处理布、骨质壳、软组织、机械环和神经导线。\n\n重点是混合工艺，而不是巨型工业机器。","x":520,"y":2280,"width":510,"height":340},
+
+    {"id":"transit_new","type":"text","text":"交通 / 门站｜身体筛选空间\n\n平台、舱门、座位与挂点按身体结构变化。\n视觉上可以有近未来模块感，但材质保持浅、哑光、手作和实体机械。\n\n这里是文明标准化最容易被看见的地方。","x":1080,"y":2280,"width":500,"height":330},
+
+    {"id":"frontier","type":"text","text":"未知边境｜世界必须始终留有解释不了的地方\n\n地图、经验与模型都有边界。\n未知可以来自生态变化、异常地貌、生命组合、感知失真与环境规则变化。\n\n边境视觉比城市更空、更冷、更少人工结构，让身体能力成为画面中心。","x":-1040,"y":1120,"width":500,"height":360},
+
+    {"id":"institutions","type":"text","text":"机构方向｜工坊 / 诊所 / 学院的混合体\n\n研究机构不要像现代科技公司，也不要像巨大哥特大学。\n更像由长期身体工艺积累起来的工作空间：样本架、绘图、实体模型、维护床、玻璃腔、手写标记、小型仪器。\n\n制度存在，但不再主导世界第一印象。","x":-1040,"y":1580,"width":520,"height":390},
+
+    {"id":"culture","type":"text","text":"文化方向｜功能优先，但保留个人怪味\n\n身体不同不是身份羞耻，也不是人人追求改造。\n有人保持天然结构，有人外置器官，有人只做职业适配。\n\n这个世界的美感来自“每个人解决身体问题的方法都不一样”，而不是统一制服。","x":-1040,"y":2040,"width":510,"height":350},
+
+    {"id":"scene_priority","type":"text","text":"以后世界观出图优先级\n\n1. 单一小场景的4宫格概念页\n2. 身体维护 / 外脑 / 尾部 / 异种日常空间\n3. 服装与器官接口的近景结构\n4. 冷白青紫配色的街角、舱、门、工作台\n5. 最后才是城市大全景\n\n先把世界的“局部语法”画稳定，再拼成城市。","x":-1040,"y":2500,"width":520,"height":390},
+
+    {"id":"visual_test","type":"text","text":"视觉验收标准｜一眼判断有没有跑偏\n\n看一张图时依次问：\n① 去掉文字还能认出冷白青紫体系吗？\n② 有没有一个明确的身体 / 功能问题？\n③ 生体结构是不是有用途？\n④ 是否保留手绘、轻量、怪奇感？\n⑤ 如果换成普通中世纪人类，这个场景是否还能完全成立？\n\n如果⑤=是，说明世界特征还不够。","x":-1040,"y":2960,"width":530,"height":440},
+
+    {"id":"characters_anchor","type":"text","text":"角色锚点｜只保留，不在本轮扩张\n\n角色必须服从新世界视觉：浅底、冷灰结构、青蓝 / 紫红点色、功能外显、怪奇而清晰。\n不要为了角色好看把世界拉回商业二次元或写实西幻。","x":700,"y":2620,"width":500,"height":310},
+
+    {"id":"lili","type":"text","text":"黎黎隆｜zx8 + xn3\n\n锁定。\n人工探索体；巨尾仍是核心探索器官。\n新视觉要求：巨尾结构更图形化、更轻、更像明确功能模块，不做厚重军武机甲。","x":1240,"y":2620,"width":470,"height":300},
+
+    {"id":"tatin","type":"text","text":"塔汀｜nz8 + nx6 + x3\n\n锁定。\n与黎黎隆同批实验体。\n新视觉要求：与黎黎隆共享同一配色语言和生体机能逻辑，但轮廓、器官关系和功能倾向必须不同。","x":1760,"y":2620,"width":470,"height":300},
+
+    {"id":"tail","type":"text","text":"巨尾规则｜保留机制，重做视觉重量\n\n功能：第三支点 / 配重 / 制动 / 锚定 / 感知 / 工具平台。\n视觉：分节可嵌合、外壳可浅色、内结构深灰，青蓝 / 紫红只作小型功能点。\n\n避免厚重炮塔感、纯军武感、每节同样粗细。","x":1240,"y":2990,"width":500,"height":340}
   ],
   "edges": [
-    {"id":"e_root_nature","fromNode":"root","toNode":"nature"},{"id":"e_root_history","fromNode":"root","toNode":"history"},{"id":"e_root_tech","fromNode":"root","toNode":"tech"},{"id":"e_root_city","fromNode":"root","toNode":"city"},{"id":"e_root_culture","fromNode":"root","toNode":"culture"},{"id":"e_root_chars","fromNode":"root","toNode":"chars"},{"id":"e_root_tail","fromNode":"root","toNode":"tail"},{"id":"e_root_story","fromNode":"root","toNode":"story"},{"id":"e_root_visual","fromNode":"root","toNode":"visual"},
-    {"id":"e_nat_1","fromNode":"nature","toNode":"dragon"},{"id":"e_nat_2","fromNode":"nature","toNode":"species"},{"id":"e_nat_3","fromNode":"nature","toNode":"creatures"},{"id":"e_nat_4","fromNode":"nature","toNode":"frontier"},
-    {"id":"e_hist_1","fromNode":"history","toNode":"era1"},{"id":"e_hist_2","fromNode":"history","toNode":"era2"},{"id":"e_hist_3","fromNode":"history","toNode":"era3"},{"id":"e_hist_4","fromNode":"history","toNode":"era4"},{"id":"e_hist_5","fromNode":"history","toNode":"era5"},{"id":"e_era1_2","fromNode":"era1","toNode":"era2","label":"社会协作"},{"id":"e_era2_3","fromNode":"era2","toNode":"era3","label":"资源工程化"},{"id":"e_era3_4","fromNode":"era3","toNode":"era4","label":"技术进入身体"},{"id":"e_era4_5","fromNode":"era4","toNode":"era5","label":"从修复到设计生命"},
-    {"id":"e_era2_scalecharter","fromNode":"era2","toNode":"hist_scale_charter","label":"异种共居第一次暴露统一尺度的致命问题"},{"id":"e_scalecharter_cityscale","fromNode":"hist_scale_charter","toNode":"city_scale","label":"城约把多尺度设施从习惯变成公共标准"},{"id":"e_era3_dragonburn","fromNode":"era3","toNode":"hist_dragonburn","label":"龙质工业化制造传统医学无法处理的新型伤病"},{"id":"e_dragonburn_era4","fromNode":"hist_dragonburn","toNode":"era4","label":"事故医疗制度化，推动异体医学成为独立体系"},{"id":"e_era4_bodyright","fromNode":"era4","toNode":"hist_body_right","label":"修复技术转向强化后产生身体决定权争议"},{"id":"e_bodyright_rights","fromNode":"hist_body_right","toNode":"rights","label":"身体自主进入权利议题索引"},{"id":"e_frontier_lostexp","fromNode":"frontier","toNode":"hist_lost_expedition","label":"未知环境使既有路线系统发生系统性失败"},{"id":"e_lostexp_era5","fromNode":"hist_lost_expedition","toNode":"era5","label":"失联事件直接催生探索体计划"},{"id":"e_lostexp_explorer","fromNode":"hist_lost_expedition","toNode":"explorertech","label":"研究目标从更好装备转向任务型身体"},{"id":"e_era5_experimentrights","fromNode":"era5","toNode":"hist_experiment_rights","label":"探索体成功后出现法律身份冲突"},{"id":"e_experimentrights_rights","fromNode":"hist_experiment_rights","toNode":"rights","label":"生命身份进入权利议题索引"},{"id":"e_experimentrights_lili","fromNode":"hist_experiment_rights","toNode":"lili","label":"黎黎隆的个人选择天然落入这一历史争议"},{"id":"e_experimentrights_tatin","fromNode":"hist_experiment_rights","toNode":"tatin","label":"同批实验体可给出与黎黎隆不同的回应"},
-    {"id":"e_lostexp_guildlicense","fromNode":"hist_lost_expedition","toNode":"guild_license","label":"系统性失联迫使公会把进入未知变成分级资格"},{"id":"e_guildlicense_team","fromNode":"guild_license","toNode":"team_liability","label":"高危资格必须证明队伍具有救援与撤退责任结构"},{"id":"e_lostexp_instituteauth","fromNode":"hist_lost_expedition","toNode":"institute_zone_authority","label":"未知区信息失效后，研究院承担危险区持续评估"},{"id":"e_team_gateclear","fromNode":"team_liability","toNode":"gate_clearance","label":"公会侧资格在门站执行"},{"id":"e_institute_gateclear","fromNode":"institute_zone_authority","toNode":"gate_clearance","label":"研究院侧区域授权在门站执行"},{"id":"e_citygate_gateclear","fromNode":"city_gate","toNode":"gate_clearance","label":"边境门站成为双重授权的现实检查点"},{"id":"e_experimentrights_ownership","fromNode":"hist_experiment_rights","toNode":"exploration_ownership","label":"独立主体出现后，任务产出归属需要被重新谈判"},{"id":"e_ownership_lili","fromNode":"exploration_ownership","toNode":"lili","label":"黎黎隆创造的新路径是否属于她自己成为剧情冲突"},{"id":"e_ownership_rights","fromNode":"exploration_ownership","toNode":"rights","label":"任务产出归属进入权利议题索引"},{"id":"e_academy_instituteauth","fromNode":"academy","toNode":"institute_zone_authority","label":"学术新区提供危险区测绘与任务评估机构基础"},
-    {"id":"e_tech_1","fromNode":"tech","toNode":"bodytech"},{"id":"e_tech_2","fromNode":"tech","toNode":"functional"},{"id":"e_tech_3","fromNode":"tech","toNode":"exbrain"},{"id":"e_tech_4","fromNode":"tech","toNode":"explorertech"},
-    {"id":"e_city_1","fromNode":"city","toNode":"oldcity"},{"id":"e_city_2","fromNode":"city","toNode":"industry"},{"id":"e_city_3","fromNode":"city","toNode":"medical"},{"id":"e_city_4","fromNode":"city","toNode":"academy"},{"id":"e_city_5","fromNode":"city","toNode":"materials"},
-    {"id":"e_city_gate","fromNode":"city","toNode":"city_gate","label":"城市与边境相接"},{"id":"e_gate_scale","fromNode":"city_gate","toNode":"city_scale","label":"异种与冒险队持续流动，迫使尺度共存"},{"id":"e_scale_service","fromNode":"city_scale","toNode":"city_service","label":"多种身体制造高频维护需求"},{"id":"e_old_retrofit","fromNode":"oldcity","toNode":"city_retrofit","label":"旧建筑继续使用，新功能只能叠加"},{"id":"e_service_retrofit","fromNode":"city_service","toNode":"city_retrofit","label":"维护接口与吊运需求附着到旧建筑"},{"id":"e_retrofit_night","fromNode":"city_retrofit","toNode":"city_night","label":"历史层与生体照明共同形成夜景"},
-    {"id":"e_species_housing","fromNode":"city_scale","toNode":"species_housing","label":"不同身体尺度改变居住结构"},{"id":"e_species_food","fromNode":"city_scale","toNode":"species_food","label":"不同体型与代谢改变公共饮食空间"},{"id":"e_species_transit","fromNode":"city_scale","toNode":"species_transit","label":"不同体重、尾部与步幅改变交通系统"},{"id":"e_species_bath","fromNode":"city_scale","toNode":"species_bath","label":"不同皮肤、鳞甲与外置器官改变公共护理"},{"id":"e_species_clinic","fromNode":"city_scale","toNode":"species_clinic","label":"多种身体标准迫使医学分科"},{"id":"e_species_social","fromNode":"species","toNode":"city_scale","label":"异种长期共居转化为城市尺度问题"},{"id":"e_food_tavern","fromNode":"species_food","toNode":"tavern","label":"酒馆篇直接验证"},{"id":"e_clinic_medical","fromNode":"species_clinic","toNode":"medical","label":"跨种医学聚集成医疗机能区"},
-    {"id":"e_service_maintainer","fromNode":"city_service","toNode":"bio_maintainer","label":"高频日常维护形成独立职业"},{"id":"e_clinic_maintainer","fromNode":"species_clinic","toNode":"bio_maintainer","label":"医学分科划清治疗与日常维护边界"},{"id":"e_maintainer_loadtail","fromNode":"bio_maintainer","toNode":"load_tail_tech","label":"承力与尾部需求形成机械专科"},{"id":"e_maintainer_neuro","fromNode":"bio_maintainer","toNode":"neuro_interface_medic","label":"外置器官需要神经接入，形成接口专科"},{"id":"e_neuro_exbrain","fromNode":"neuro_interface_medic","toNode":"exbrain_support","label":"神经接口能力扩展到外脑长期维持"},{"id":"e_loadtail_designer","fromNode":"load_tail_tech","toNode":"organ_designer","label":"承力与代偿数据进入器官设计"},{"id":"e_neuro_designer","fromNode":"neuro_interface_medic","toNode":"organ_designer","label":"感觉回授与排异数据进入器官设计"},{"id":"e_exbrain_designer","fromNode":"exbrain_support","toNode":"organ_designer","label":"高信息器官维护提供长期稳定性数据"},{"id":"e_designer_explorer","fromNode":"organ_designer","toNode":"explorertech","label":"多专业数据汇流后才走向任务型生命设计"},{"id":"e_exbrain_support_role","fromNode":"exbrain_support","toNode":"exbrain","label":"职业生态支撑外脑路径演算师"},{"id":"e_loadtail_tail","fromNode":"load_tail_tech","toNode":"tail","label":"为巨尾探索体提供维护技术"},
-    {"id":"e_culture_1","fromNode":"culture","toNode":"factions"},{"id":"e_culture_2","fromNode":"culture","toNode":"rights"},
-    {"id":"e_chars_1","fromNode":"chars","toNode":"lili"},{"id":"e_chars_2","fromNode":"chars","toNode":"tatin"},{"id":"e_chars_3","fromNode":"chars","toNode":"uncle"},{"id":"e_chars_4","fromNode":"chars","toNode":"commander"},
-    {"id":"e_story_1","fromNode":"story","toNode":"tavern"},{"id":"e_story_2","fromNode":"story","toNode":"chimera"},{"id":"e_story_denial","fromNode":"story","toNode":"plot_gate_denial","label":"已完成制度验证链"},{"id":"e_story_retrofit","fromNode":"story","toNode":"city_retrofit","label":"下一轮高价值场景入口"},{"id":"e_story_tatin","fromNode":"story","toNode":"tatin","label":"下一轮高价值角色入口"},{"id":"e_story_tailcopy","fromNode":"story","toNode":"tail","label":"下一轮检验复制身体与复制能力的边界"},
-    {"id":"e_frontier_explorer","fromNode":"frontier","toNode":"explorertech","label":"未知迫使新身体出现"},{"id":"e_dragon_tech","fromNode":"dragon","toNode":"tech","label":"龙系资源成为技术根"},{"id":"e_explorer_lili","fromNode":"explorertech","toNode":"lili"},{"id":"e_explorer_tatin","fromNode":"explorertech","toNode":"tatin"},{"id":"e_tail_lili","fromNode":"tail","toNode":"lili"},{"id":"e_uncle_chimera","fromNode":"uncle","toNode":"chimera"},{"id":"e_lili_chimera","fromNode":"lili","toNode":"chimera"},{"id":"e_city_tavern","fromNode":"oldcity","toNode":"tavern"},
-    {"id":"e_gate_examiner","fromNode":"gate_clearance","toNode":"npc_gate_examiner","label":"门站制度需要具体执行者"},{"id":"e_examiner_denial","fromNode":"npc_gate_examiner","toNode":"plot_gate_denial","label":"审查发现身体合格但行动主体资格缺失"},{"id":"e_lili_denial","fromNode":"lili","toNode":"plot_gate_denial","label":"黎黎隆第一次被制度直接限制"},{"id":"e_rights_denial","fromNode":"hist_experiment_rights","toNode":"plot_gate_denial","label":"探索体身份争议在出境许可上具体显现"},{"id":"e_denial_liability","fromNode":"plot_gate_denial","toNode":"plot_liability_offer","label":"先尝试补齐公会责任侧缺口"},{"id":"e_uncle_liability","fromNode":"uncle","toNode":"plot_liability_offer","label":"制造者一代愿意承担现实责任"},{"id":"e_liability_officer","fromNode":"plot_liability_offer","toNode":"npc_project_officer","label":"公会责任解决后，研究院授权成为最后门槛"},{"id":"e_institute_officer","fromNode":"institute_zone_authority","toNode":"npc_project_officer","label":"授权官执行研究院的区域与项目权"},{"id":"e_ownership_officer","fromNode":"exploration_ownership","toNode":"npc_project_officer","label":"授权条件与任务产出归属绑定"},{"id":"e_officer_contract","fromNode":"npc_project_officer","toNode":"plot_first_contract","label":"许可被写进第一份探索合同"},{"id":"e_lili_contract","fromNode":"lili","toNode":"plot_first_contract","label":"黎黎隆面对自己创造的经验如何被制度分配"},{"id":"e_contract_story","fromNode":"story","toNode":"plot_first_contract","label":"已完成合同验证链"},
-    {"id":"e_contract_lili_stance","fromNode":"plot_first_contract","toNode":"contract_lili_stance","label":"黎黎隆区分公共事实与自己的临场判断"},{"id":"e_contract_tatin_stance","fromNode":"plot_first_contract","toNode":"contract_tatin_stance","label":"塔汀把共享建立在关系与持续同意上"},{"id":"e_contract_uncle_stance","fromNode":"plot_first_contract","toNode":"contract_uncle_stance","label":"大叔区分机构成本与对生命经验的占有"},{"id":"e_contract_commander_stance","fromNode":"plot_first_contract","toNode":"contract_commander_stance","label":"路径演算师要求公共数据同时保留判断来源"},{"id":"e_lili_revision","fromNode":"contract_lili_stance","toNode":"plot_contract_revision","label":"保留主体判断权"},{"id":"e_tatin_revision","fromNode":"contract_tatin_stance","toNode":"plot_contract_revision","label":"加入持续同意与二次用途限制"},{"id":"e_uncle_revision","fromNode":"contract_uncle_stance","toNode":"plot_contract_revision","label":"把成本回收改写为有限成果许可"},{"id":"e_commander_revision","fromNode":"contract_commander_stance","toNode":"plot_contract_revision","label":"把可复现事实纳入公共安全层"},{"id":"e_revision_ownership","fromNode":"plot_contract_revision","toNode":"exploration_ownership","label":"形成任务产出的新分层规则"},
-    {"id":"e_revision_departure","fromNode":"plot_contract_revision","toNode":"exp_first_departure","label":"新规则必须进入真实远征接受压力测试"},{"id":"e_commander_departure","fromNode":"commander","toNode":"exp_first_departure","label":"xn 型路径演算师把已知最优带入真实远征"},{"id":"e_lili_departure","fromNode":"lili","toNode":"exp_first_departure","label":"zx8 在未知偏移中承担现场开路角色"},{"id":"e_departure_diverge","fromNode":"exp_first_departure","toNode":"exp_model_diverge","label":"实时环境变化让昨日最优输入失效"},{"id":"e_diverge_warning","fromNode":"exp_model_diverge","toNode":"exp_body_warning","label":"仪器尚未定义的变化先被身体整合"},{"id":"e_lili_warning","fromNode":"lili","toNode":"exp_body_warning","label":"zx8 在不可标准化偏移中先做行动判断"},{"id":"e_warning_trust","fromNode":"exp_body_warning","toNode":"exp_trust_call","label":"不可验证判断迫使队伍决定是否授信"},{"id":"e_commander_trust","fromNode":"commander","toNode":"exp_trust_call","label":"xn 专家主动界定模型的适用边界"},{"id":"e_trust_after","fromNode":"exp_trust_call","toNode":"exp_after_action_clause","label":"活着回来后才有资格把未知变成新变量"},{"id":"e_after_revision","fromNode":"exp_after_action_clause","toNode":"plot_contract_revision","label":"实战反向补强双层契约，而不是征用完整身体记忆"},{"id":"e_after_exbrain","fromNode":"exp_after_action_clause","toNode":"exbrain","label":"新变量进入下一轮公共路径演算"},
-    {"id":"e_tavern_etiquette","fromNode":"tavern","toNode":"tavern_etiquette","label":"异种共居先沉淀为可执行的身体礼仪"},{"id":"e_etiquette_board","fromNode":"tavern_etiquette","toNode":"tavern_body_board","label":"对身体差异的日常理解进入委托筛选机制"},{"id":"e_board_keeper","fromNode":"tavern_body_board","toNode":"npc_tavern_keeper","label":"老板长期解释身体条件，形成酒馆职业文化"},{"id":"e_keeper_misread","fromNode":"npc_tavern_keeper","toNode":"plot_tail_misread","label":"老板识别真实能力，但外来委托人仍按外形粗暴分类"},{"id":"e_lili_misread","fromNode":"lili","toNode":"plot_tail_misread","label":"巨尾让黎黎隆被优先当成重型战斗单位"},{"id":"e_misread_anchor","fromNode":"plot_tail_misread","toNode":"plot_tavern_anchor","label":"突发事故迫使巨尾真实功能在日常场景中显现"},{"id":"e_retrofit_anchor","fromNode":"city_retrofit","toNode":"plot_tavern_anchor","label":"旧建筑叠加龙质设施带来真实维护风险"},{"id":"e_tail_anchor","fromNode":"tail","toNode":"plot_tavern_anchor","label":"尾部的承重、锚定与感知功能解决事故"},{"id":"e_story_tavern_anchor","fromNode":"story","toNode":"plot_tavern_anchor","label":"已完成共居日常与角色价值验证"}
+    {"id":"e_root_formula","fromNode":"root","toNode":"world_formula"},
+    {"id":"e_root_visual","fromNode":"root","toNode":"visual"},
+    {"id":"e_root_cut","fromNode":"root","toNode":"old_direction_cut"},
+    {"id":"e_root_canon","fromNode":"root","toNode":"canon_lock"},
+    {"id":"e_root_nature","fromNode":"root","toNode":"nature"},
+    {"id":"e_root_body","fromNode":"root","toNode":"body_civ"},
+    {"id":"e_root_history","fromNode":"root","toNode":"history"},
+    {"id":"e_root_spaces","fromNode":"root","toNode":"spaces"},
+    {"id":"e_root_frontier","fromNode":"root","toNode":"frontier"},
+    {"id":"e_root_chars","fromNode":"root","toNode":"characters_anchor"},
+
+    {"id":"e_visual_palette","fromNode":"visual","toNode":"palette"},
+    {"id":"e_visual_style","fromNode":"visual","toNode":"render_style"},
+    {"id":"e_visual_shape","fromNode":"visual","toNode":"shape_grammar"},
+    {"id":"e_visual_material","fromNode":"visual","toNode":"materials"},
+    {"id":"e_visual_light","fromNode":"visual","toNode":"lighting"},
+    {"id":"e_visual_anti","fromNode":"visual","toNode":"anti_visual"},
+    {"id":"e_palette_logic","fromNode":"palette","toNode":"color_logic"},
+
+    {"id":"e_nature_species","fromNode":"nature","toNode":"species"},
+    {"id":"e_nature_ecology","fromNode":"nature","toNode":"fantasy_ecology"},
+    {"id":"e_species_body","fromNode":"species","toNode":"body_civ","label":"不同身体把文明问题推向维护与适配"},
+    {"id":"e_ecology_tech","fromNode":"fantasy_ecology","toNode":"tech","label":"多种自然结构提供不同工艺来源"},
+
+    {"id":"e_body_tech","fromNode":"body_civ","toNode":"tech"},
+    {"id":"e_tech_organs","fromNode":"tech","toNode":"organs"},
+    {"id":"e_tech_interfaces","fromNode":"tech","toNode":"interfaces"},
+    {"id":"e_tech_future","fromNode":"tech","toNode":"near_future"},
+    {"id":"e_future_clothing","fromNode":"near_future","toNode":"clothing"},
+    {"id":"e_interfaces_clothing","fromNode":"interfaces","toNode":"clothing"},
+
+    {"id":"e_history_1","fromNode":"history","toNode":"era1"},
+    {"id":"e_era1_2","fromNode":"era1","toNode":"era2","label":"从适应身体到理解身体"},
+    {"id":"e_era2_3","fromNode":"era2","toNode":"era3","label":"跨种协作需要接口标准"},
+    {"id":"e_era3_4","fromNode":"era3","toNode":"era4","label":"标准化工艺走向主动设计身体"},
+    {"id":"e_era4_chars","fromNode":"era4","toNode":"characters_anchor","label":"探索体成为时代极端产物"},
+
+    {"id":"e_spaces_city","fromNode":"spaces","toNode":"city"},
+    {"id":"e_city_rule","fromNode":"city","toNode":"space_rule"},
+    {"id":"e_rule_tavern","fromNode":"space_rule","toNode":"tavern_new"},
+    {"id":"e_rule_clinic","fromNode":"space_rule","toNode":"clinic_new"},
+    {"id":"e_rule_workshop","fromNode":"space_rule","toNode":"workshop_new"},
+    {"id":"e_rule_transit","fromNode":"space_rule","toNode":"transit_new"},
+    {"id":"e_nearfuture_city","fromNode":"near_future","toNode":"city","label":"功能标准化塑造空间的近未来感"},
+    {"id":"e_organs_clinic","fromNode":"organs","toNode":"clinic_new"},
+    {"id":"e_interfaces_workshop","fromNode":"interfaces","toNode":"workshop_new"},
+
+    {"id":"e_frontier_institutions","fromNode":"frontier","toNode":"institutions","label":"未知需要观察、维护与适配机构"},
+    {"id":"e_body_culture","fromNode":"body_civ","toNode":"culture"},
+    {"id":"e_spaces_priority","fromNode":"spaces","toNode":"scene_priority"},
+    {"id":"e_priority_test","fromNode":"scene_priority","toNode":"visual_test"},
+
+    {"id":"e_canon_lili","fromNode":"canon_lock","toNode":"lili"},
+    {"id":"e_canon_tatin","fromNode":"canon_lock","toNode":"tatin"},
+    {"id":"e_char_lili","fromNode":"characters_anchor","toNode":"lili"},
+    {"id":"e_char_tatin","fromNode":"characters_anchor","toNode":"tatin"},
+    {"id":"e_lili_tail","fromNode":"lili","toNode":"tail"},
+    {"id":"e_visual_chars","fromNode":"visual","toNode":"characters_anchor","label":"角色必须服从世界视觉总纲"},
+    {"id":"e_palette_city","fromNode":"palette","toNode":"city","label":"场景默认使用冷白青紫体系"},
+    {"id":"e_style_priority","fromNode":"render_style","toNode":"scene_priority","label":"出图优先保持设定稿感"}
   ]
 }
