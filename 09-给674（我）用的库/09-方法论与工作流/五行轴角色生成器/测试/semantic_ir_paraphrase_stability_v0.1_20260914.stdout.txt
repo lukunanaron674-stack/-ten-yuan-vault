@@ -1,0 +1,25 @@
+{
+  "suite": "semantic_ir_paraphrase_stability_v0.1",
+  "fixture_version": "semantic-ir-paraphrase-stability-fixture-v0.1",
+  "samples": 24,
+  "invariant_groups": 6,
+  "minimal_pairs": 3,
+  "metrics": {
+    "ir_field_guess_rate": 0,
+    "expected_value_mismatch_rate": 0,
+    "paraphrase_field_drift_rate": 0,
+    "minimal_pair_overmutation_rate": 0,
+    "minimal_pair_underreaction_rate": 0,
+    "unknown_preservation_rate": 1,
+    "unknown_silent_swallow": 0
+  },
+  "adversarial_guards": {
+    "paraphrase_drift_detected": true,
+    "minimal_pair_overmutation_detected": true,
+    "extra_field_guess_detected": true,
+    "unknown_guess_detected": true
+  },
+  "provider_runtime": "FIXTURE_CONTRACT_ONLY",
+  "real_provider_status": "PROVIDER_RUNTIME_NOT_AVAILABLE",
+  "result": "PASS_EVALUATOR_CONTRACT"
+}
