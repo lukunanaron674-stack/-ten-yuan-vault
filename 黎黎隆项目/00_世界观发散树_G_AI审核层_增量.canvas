@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "g_audit_root",
+      "type": "text",
+      "text": "十元应用｜G AI审核层\n\n目标：不审核‘像不像十元’，只审核目标 IR 是否在现实证据中成立。\n\n输入：H3 / 生图 / 分镜 / 剧情候选 + expected_ir\n输出：PASS_STRUCTURAL_TENYUAN 或明确失败码。",
+      "x": 0,
+      "y": 0,
+      "width": 520,
+      "height": 300
+    },
+    {
+      "id": "g_candidate_a",
+      "type": "text",
+      "text": "候选A｜十元审美打分器\n\nzx感 / nz感 / nx感打分。\n\n拒绝：删掉十元后仍可用霸气、温柔、被动、冷暖等标签原样评分。\nTENYUAN_DECORATIVE_ONLY",
+      "x": -760,
+      "y": 420,
+      "width": 460,
+      "height": 270
+    },
+    {
+      "id": "g_candidate_b",
+      "type": "text",
+      "text": "候选B｜对象清单审核器\n\n检查巨尾、锚点、塔汀、返身器官、门站等是否出现。\n\n拒绝：对象齐全仍可能权利来源、路径和连续性全错。\nTENYUAN_DECORATIVE_ONLY",
+      "x": -220,
+      "y": 420,
+      "width": 460,
+      "height": 270
+    },
+    {
+      "id": "g_candidate_c",
+      "type": "text",
+      "text": "保留｜结构反事实审核器 v0.1\n\nExpected IR → Observed IR → Counterfactual Gate\n\n必须过四门：\n1. 可观察证据\n2. 结构因果\n3. 删十元测试\n4. 反转敏感性\n\n硬门失败不能靠审美总分补回。",
+      "x": 360,
+      "y": 420,
+      "width": 520,
+      "height": 330
+    },
+    {
+      "id": "g_fail_codes",
+      "type": "text",
+      "text": "项目级失败码\n\nTENYUAN_DECORATIVE_ONLY\nFAIL_IR_EVIDENCE_MISSING\nFAIL_CAUSAL_RESPONSE_MISSING\nFAIL_RIGHTS_COLLAPSE\nFAIL_OBJECT_IDENTITY_BROKEN\nFAIL_TEMPORAL_CONTINUITY\nFAIL_REVERSE_INSENSITIVE\nFAIL_STYLE_ONLY",
+      "x": 980,
+      "y": 420,
+      "width": 470,
+      "height": 360
+    },
+    {
+      "id": "g_af_regression",
+      "type": "text",
+      "text": "A-F 回归门\n\nA 夺路尾：最小锚序→路线现实重排\nB 回路锁：P1决定权与回返接口拒绝权分离\nC 归巢拟态：截获公共接口归因，不是拟态外观\nD 返身断点：公共可调用 ≠ 对象特异返身\nE 返身权转交：decision_right / reentry_right 真拆分\nF 双权位分叉：R_tatin连续 + P1环境响应",
+      "x": 360,
+      "y": 870,
+      "width": 620,
+      "height": 410
+    },
+    {
+      "id": "g_loop",
+      "type": "text",
+      "text": "第二圈工作法\n\n生成 → G审核 → 定位失败码 → 只修结构缺口 → 重跑\n\n下一轮回到 A，但先拿现有夺路尾角色设计/提示词做第一批真实回归，不再线性扩写。",
+      "x": 1080,
+      "y": 900,
+      "width": 500,
+      "height": 300
+    }
+  ],
+  "edges": [
+    {"id":"e_g_a","fromNode":"g_audit_root","toNode":"g_candidate_a"},
+    {"id":"e_g_b","fromNode":"g_audit_root","toNode":"g_candidate_b"},
+    {"id":"e_g_c","fromNode":"g_audit_root","toNode":"g_candidate_c"},
+    {"id":"e_g_fail","fromNode":"g_candidate_c","toNode":"g_fail_codes"},
+    {"id":"e_g_reg","fromNode":"g_candidate_c","toNode":"g_af_regression"},
+    {"id":"e_g_loop","fromNode":"g_af_regression","toNode":"g_loop"}
+  ]
+}
