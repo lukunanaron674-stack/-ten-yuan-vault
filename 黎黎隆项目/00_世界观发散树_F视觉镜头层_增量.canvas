@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {"id":"src_plot","type":"text","text":"既有结构｜返身权转交事件 v0.1\n黎黎隆保留前进 decision_right；R_tatin 由塔汀维护，reentry_right 已与本人分离。","x":0,"y":0,"width":520,"height":240},
+    {"id":"src_route","type":"text","text":"既有结构｜夺路尾 v0.1\n黎黎隆必须让环境与后方行动围绕自己选定的新方向重新组织。","x":580,"y":0,"width":500,"height":230},
+    {"id":"src_return","type":"text","text":"既有结构｜回路锁 v0.1\n塔汀不决定 P1，只维护对象特异回返接口，并在无交接切断处产生有效拒绝。","x":1140,"y":0,"width":520,"height":250},
+    {"id":"visual_dual_rights","type":"text","text":"十元应用｜双权位分叉镜头 v0.1\n\n① 同体：B0 仍在黎黎隆身上，单一行动中心。\n② 交接：B0 以可追踪实体动作进入塔汀侧，成为 R_tatin。\n③ 分叉：塔汀 + R_tatin 固定在原路 / 回返侧；黎黎隆反向越过未知边界。\n④ 现实化：黎黎隆尾部连续落锚，挂点、桥带、人流或地形通过条件随其方向重排，证明 P1 仍由他生成并占据。\n⑤ 双中心：大全景同时保留“塔汀 + R_tatin 的回返中心”与“黎黎隆 + 巨尾 + P1 的前进中心”。\n\n禁止用冷暖色、对视、远近关系或象征信物替代这两个实体空间系统。","x":420,"y":380,"width":900,"height":620},
+    {"id":"visual_fail_gate","type":"text","text":"视觉硬门｜删十元测试\n\nFAIL 若：\n• R_tatin 跟着黎黎隆一起移动；\n• 前方环境主要围绕塔汀动作重排；\n• 黎黎隆只是走远，P1 没有任何环境响应；\n• 换成项链 / 照片仍可表达同样结构；\n• 只靠色温、表情、字幕说明前进与回来。\n\nPASS：两个空间中心拥有不同功能与独立失效条件，且不用十元文字仍可从动作读出。","x":1380,"y":430,"width":620,"height":520}
+  ],
+  "edges": [
+    {"id":"e_plot_visual","fromNode":"src_plot","toNode":"visual_dual_rights","label":"把 decision_right / reentry_right 的分离压成可见空间事实"},
+    {"id":"e_route_visual","fromNode":"src_route","toNode":"visual_dual_rights","label":"前进侧必须通过环境重排证明 zx，而非只拍人物往前走"},
+    {"id":"e_return_visual","fromNode":"src_return","toNode":"visual_dual_rights","label":"回返侧必须通过实体 R_tatin 持续存在，不能退化成情绪"},
+    {"id":"e_visual_gate","fromNode":"visual_dual_rights","toNode":"visual_fail_gate","label":"直接作为分镜/H3的镜头验收硬门"}
+  ]
+}
