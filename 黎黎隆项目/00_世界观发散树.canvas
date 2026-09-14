@@ -49,7 +49,8 @@
     {"id":"characters_anchor","type":"text","text":"角色锚点｜只保留，不在本轮扩张\n\n角色必须服从新世界视觉：浅底、冷灰结构、青蓝 / 紫红点色、功能外显、怪奇而清晰。\n不要为了角色好看把世界拉回商业二次元或写实西幻。","x":700,"y":2620,"width":500,"height":310},
     {"id":"lili","type":"text","text":"黎黎隆｜zx8 + xn3\n\n锁定。\n人工探索体；巨尾仍是核心探索器官。\n新视觉要求：巨尾结构更图形化、更轻、更像明确功能模块，不做厚重军武机甲。","x":1240,"y":2620,"width":470,"height":300},
     {"id":"tatin","type":"text","text":"塔汀｜nz8 + nx6 + x3\n\n锁定。\n与黎黎隆同批实验体。\n新视觉要求：与黎黎隆共享同一配色语言和生体机能逻辑，但轮廓、器官关系和功能倾向必须不同。","x":1760,"y":2620,"width":470,"height":300},
-    {"id":"tail","type":"text","text":"巨尾规则｜保留机制，重做视觉重量\n\n功能：第三支点 / 配重 / 制动 / 锚定 / 感知 / 工具平台。\n视觉：分节可嵌合、外壳可浅色、内结构深灰，青蓝 / 紫红只作小型功能点。\n\n避免厚重炮塔感、纯军武感、每节同样粗细。","x":1240,"y":2990,"width":500,"height":340}
+    {"id":"tail","type":"text","text":"巨尾规则｜保留机制，重做视觉重量\n\n功能：第三支点 / 配重 / 制动 / 锚定 / 感知 / 工具平台。\n视觉：分节可嵌合、外壳可浅色、内结构深灰，青蓝 / 紫红只作小型功能点。\n\n避免厚重炮塔感、纯军武感、每节同样粗细。","x":1240,"y":2990,"width":500,"height":340},
+    {"id":"lili_route_authority","type":"text","text":"十元应用｜夺路尾 v0.1\n\n黎黎隆的巨尾不是普通多功能工具，而是“把自己的方向压成现实路线”的探索器官。\n\n进入未知区时，他只先留下少量必要的承力 / 感知锚点（xn3：最小锚序），随后用尾部前段改变局部通过条件，使后方挂点、人流与跨越动作围绕他选中的方向重新组织（zx8）。\n\n已布锚点会真实限制临时转向：若突然改路，必须重排、回收或舍弃前置锚点，不能用一次爆发无代价取消结构。这里形成 xn 克 zx 的内部张力。\n\n结果：尾部结构必须分化为“前段夺路 / 后段留锚”，人物习惯锁定为：先留最少结构，再强行把路变成自己的路。","x":1780,"y":2990,"width":650,"height":520}
   ],
   "edges": [
     {"id":"e_root_formula","fromNode":"root","toNode":"world_formula"},
@@ -115,6 +116,8 @@
     {"id":"e_char_lili","fromNode":"characters_anchor","toNode":"lili"},
     {"id":"e_char_tatin","fromNode":"characters_anchor","toNode":"tatin"},
     {"id":"e_lili_tail","fromNode":"lili","toNode":"tail"},
+    {"id":"e_tail_route_authority","fromNode":"tail","toNode":"lili_route_authority","label":"十元不是标签：改变巨尾分工、动作顺序与改路成本"},
+    {"id":"e_frontier_route_authority","fromNode":"frontier","toNode":"lili_route_authority","label":"未知区把个人方向选择转成实际可走路径"},
     {"id":"e_visual_chars","fromNode":"visual","toNode":"characters_anchor","label":"角色必须服从世界视觉总纲"},
     {"id":"e_palette_city","fromNode":"palette","toNode":"city","label":"场景默认使用冷白青紫体系"},
     {"id":"e_style_priority","fromNode":"render_style","toNode":"scene_priority","label":"出图优先保持设定稿感"}
