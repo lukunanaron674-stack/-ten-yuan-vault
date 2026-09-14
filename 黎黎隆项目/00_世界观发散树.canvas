@@ -51,7 +51,8 @@
     {"id":"tatin","type":"text","text":"塔汀｜nz8 + nx6 + x3\n\n锁定。\n与黎黎隆同批实验体。\n新视觉要求：与黎黎隆共享同一配色语言和生体机能逻辑，但轮廓、器官关系和功能倾向必须不同。","x":1760,"y":2620,"width":470,"height":300},
     {"id":"tail","type":"text","text":"巨尾规则｜保留机制，重做视觉重量\n\n功能：第三支点 / 配重 / 制动 / 锚定 / 感知 / 工具平台。\n视觉：分节可嵌合、外壳可浅色、内结构深灰，青蓝 / 紫红只作小型功能点。\n\n避免厚重炮塔感、纯军武感、每节同样粗细。","x":1240,"y":2990,"width":500,"height":340},
     {"id":"lili_route_authority","type":"text","text":"十元应用｜夺路尾 v0.1\n\n黎黎隆的巨尾不是普通多功能工具，而是“把自己的方向压成现实路线”的探索器官。\n\n进入未知区时，他只先留下少量必要的承力 / 感知锚点（xn3：最小锚序），随后用尾部前段改变局部通过条件，使后方挂点、人流与跨越动作围绕他选中的方向重新组织（zx8）。\n\n已布锚点会真实限制临时转向：若突然改路，必须重排、回收或舍弃前置锚点，不能用一次爆发无代价取消结构。这里形成 xn 克 zx 的内部张力。\n\n结果：尾部结构必须分化为“前段夺路 / 后段留锚”，人物习惯锁定为：先留最少结构，再强行把路变成自己的路。","x":1780,"y":2990,"width":650,"height":520},
-    {"id":"lili_tatin_return_lock","type":"text","text":"十元应用｜黎黎隆 × 塔汀：回路锁 v0.1\n\n黎黎隆负责把不存在的前路压成现实；塔汀不争夺前进方向，而是接住被放弃旧路中的可逆条件，维护这支队伍对象特异的回返接口。\n\n当黎黎隆继续夺路会提前永久切断回返接口时，塔汀的 nx6 在接口节点产生有效拒绝：她能让“直接切断”失败，迫使他先改接、转移或明确放弃回返权，但她不能替他决定下一条前进路线。nz8 负责保存 / 恢复回返窗口；x3 只让她直接掌握少量已交接的锚具与接口，不能无限扣住全队。\n\n关系张力：黎黎隆夺路越成功，累计不可逆损失越大；塔汀没有黎黎隆则只能保存回返可能，不能生成新的前进方向。冲突核心不是性格，而是“继续往前是否值得烧掉某条还能回去的权利”。","x":2480,"y":2990,"width":720,"height":560}
+    {"id":"lili_tatin_return_lock","type":"text","text":"十元应用｜黎黎隆 × 塔汀：回路锁 v0.1\n\n黎黎隆负责把不存在的前路压成现实；塔汀不争夺前进方向，而是接住被放弃旧路中的可逆条件，维护这支队伍对象特异的回返接口。\n\n当黎黎隆继续夺路会提前永久切断回返接口时，塔汀的 nx6 在接口节点产生有效拒绝：她能让“直接切断”失败，迫使他先改接、转移或明确放弃回返权，但她不能替他决定下一条前进路线。nz8 负责保存 / 恢复回返窗口；x3 只让她直接掌握少量已交接的锚具与接口，不能无限扣住全队。\n\n关系张力：黎黎隆夺路越成功，累计不可逆损失越大；塔汀没有黎黎隆则只能保存回返可能，不能生成新的前进方向。冲突核心不是性格，而是“继续往前是否值得烧掉某条还能回去的权利”。","x":2480,"y":2990,"width":720,"height":560},
+    {"id":"chimera_return_mimic","type":"text","text":"十元应用｜归巢拟态奇美拉 v0.1\n\n它不优先追杀人，而是追踪探索队留下的路线 / 身体锚点，在其表面生长稳定生体套壳，复制扣位、压力纹、气味膜、温度腔与状态光等“可被第三方识别和调用”的接口特征。\n\n原始回返锚 R0 可能仍存在，但拟态壳 Rm 会让队员、外置器官或返程工具持续把错误对象当成合法后路。真正攻击发生在队伍主动返程时：正确执行熟悉的回返动作，却被错误接口带入捕食区。\n\n阶段：采样 → 套壳 → 截返。失败条件不是单纯掉血，而是队伍无法再证明当前调用的锚仍属于原对象特异回返关系。\n\n项目假设借用 x并z 的稳定公共调用壳与 nz 的对象特异回返几何，但不反向修改 canonical。视觉必须从机制长出：贴附膜、重复扣位、仿压力纹、半透明采样囊，而非随机拼动物头。","x":3260,"y":2990,"width":780,"height":640}
   ],
   "edges": [
     {"id":"e_root_formula","fromNode":"root","toNode":"world_formula"},
@@ -122,6 +123,10 @@
     {"id":"e_lili_route_return_lock","fromNode":"lili_route_authority","toNode":"lili_tatin_return_lock","label":"新路被现实化的同时产生旧路回返权的消耗"},
     {"id":"e_tatin_return_lock","fromNode":"tatin","toNode":"lili_tatin_return_lock","label":"nz8 保回返，nx6 只在切断接口处产生有效拒绝"},
     {"id":"e_frontier_return_lock","fromNode":"frontier","toNode":"lili_tatin_return_lock","label":"未知环境让回返窗口具有真实失效条件"},
+    {"id":"e_ecology_chimera_mimic","fromNode":"fantasy_ecology","toNode":"chimera_return_mimic","label":"自然奇美拉利用文明留下的身体接口，不是数字黑客"},
+    {"id":"e_route_chimera_mimic","fromNode":"lili_route_authority","toNode":"chimera_return_mimic","label":"夺路尾留下越多可重复锚点，越给拟态采样提供入口"},
+    {"id":"e_return_chimera_mimic","fromNode":"lili_tatin_return_lock","toNode":"chimera_return_mimic","label":"拟态壳不毁后路，而是污染后路被识别和调用的入口"},
+    {"id":"e_frontier_chimera_mimic","fromNode":"frontier","toNode":"chimera_return_mimic","label":"边境生态把成熟探索接口反转成捕食弱点"},
     {"id":"e_visual_chars","fromNode":"visual","toNode":"characters_anchor","label":"角色必须服从世界视觉总纲"},
     {"id":"e_palette_city","fromNode":"palette","toNode":"city","label":"场景默认使用冷白青紫体系"},
     {"id":"e_style_priority","fromNode":"render_style","toNode":"scene_priority","label":"出图优先保持设定稿感"}
