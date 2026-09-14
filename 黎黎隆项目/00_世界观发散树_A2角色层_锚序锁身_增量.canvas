@@ -1,0 +1,27 @@
+{
+  "nodes": [
+    {"id":"a2_problem","type":"text","text":"A2｜角色第二圈\n\n真实缺口：夺路尾的行为逻辑成立，但身体仍可能被画成普通多功能机械尾。\n目标：让 zx8 + xn3 直接进入身体自由度。","x":0,"y":0,"width":500,"height":260},
+    {"id":"a2_existing","type":"text","text":"既有结构｜夺路尾 v0.1\n\n先留最小锚序，再把个人方向压成别人真实能走的新路；已布锚点限制临时转向。","x":-560,"y":340,"width":460,"height":240},
+    {"id":"a2_g_gate","type":"text","text":"G 审核反查\n\n只画前段开路 + 后段锚定仍可能是普通工程尾。\n必须看见 changed_variable：身体自由度下降 ↔ 外部路线约束上升。","x":560,"y":340,"width":500,"height":260},
+    {"id":"a2_reject_a","type":"text","text":"候选A｜多模块换头尾\n抓钩 / 钻头 / 探针 / 切割器。\n\n拒绝：普通模块化探索装备。\nTENYUAN_DECORATIVE_ONLY","x":-900,"y":700,"width":420,"height":250},
+    {"id":"a2_reject_b","type":"text","text":"候选B｜路线记忆尾\n记录地形并回放历史路线。\n\n拒绝：轨迹记录 / 安全绳 / SLAM 最近邻；锚点不限制即时改向。","x":-430,"y":700,"width":440,"height":260},
+    {"id":"a2_keep","type":"text","text":"保留｜锚序锁身 v0.2\n\n每一枚真正成为公共路线节点的锚，都要求对应尾部关节从自由运动切换为承力锁定。\n\n内部自由度 ↓\n外部路线稳定 / 约束 ↑\n\n拔锚后关节恢复自由，同时旧路线失去对应稳定性。","x":80,"y":690,"width":560,"height":340},
+    {"id":"a2_body_rule","type":"text","text":"身体硬规则\n\n1. 自由关节组 / 可锁承力组必须可读。\n2. 锚点必须有可见力学链回到锁止关节。\n3. 最小锚序通常 1–3 个关键节点。\n4. 锚全落地但尾部仍完全自由 = FAIL。","x":700,"y":700,"width":500,"height":300},
+    {"id":"a2_action","type":"text","text":"动作链\n\n试探：尾巴松、弯、自由度高\n→ 落锚：局部关节锁止\n→ 路线成立：桥带 / 挂索 / 人流开始依赖\n→ 想换路：必须拔锚 / 断旧承力 / 舍弃一段旧路\n→ 解锁：身体自由恢复，但旧路稳定下降","x":80,"y":1100,"width":570,"height":360},
+    {"id":"a2_meaning","type":"text","text":"给《黎黎隆》新增的东西\n\n黎黎隆每把未知空间变成别人能走的现实路线，就必须把自己的一部分关节暂时锁进那条路里。\n\n世界母题因此进入身体：为了进入更远的地方，他会把自己的一部分暂时变成道路。","x":700,"y":1080,"width":540,"height":320},
+    {"id":"a2_audit","type":"text","text":"G 层回归门\n\nPASS 必须同时看到：\nanchor load-bearing\n+ corresponding joint locks\n+ downstream route/people depend on it\n\n反转样本：anchors stable + no DOF loss\n=> FAIL_REVERSE_INSENSITIVE / FAIL_CAUSAL_RESPONSE_MISSING","x":-560,"y":1100,"width":520,"height":350},
+    {"id":"a2_next","type":"text","text":"下一轮｜B 关系第二圈\n\n测试塔汀面对“被锁进路线的黎黎隆身体”时，回路锁能否产生新的权利冲突；若只是帮忙拔锚则淘汰。","x":80,"y":1530,"width":560,"height":240}
+  ],
+  "edges": [
+    {"id":"e1","fromNode":"a2_problem","fromSide":"bottom","toNode":"a2_existing","toSide":"top"},
+    {"id":"e2","fromNode":"a2_problem","fromSide":"bottom","toNode":"a2_g_gate","toSide":"top"},
+    {"id":"e3","fromNode":"a2_existing","fromSide":"bottom","toNode":"a2_reject_a","toSide":"top"},
+    {"id":"e4","fromNode":"a2_existing","fromSide":"bottom","toNode":"a2_reject_b","toSide":"top"},
+    {"id":"e5","fromNode":"a2_g_gate","fromSide":"bottom","toNode":"a2_keep","toSide":"top"},
+    {"id":"e6","fromNode":"a2_keep","fromSide":"right","toNode":"a2_body_rule","toSide":"left"},
+    {"id":"e7","fromNode":"a2_keep","fromSide":"bottom","toNode":"a2_action","toSide":"top"},
+    {"id":"e8","fromNode":"a2_keep","fromSide":"bottom","toNode":"a2_audit","toSide":"top"},
+    {"id":"e9","fromNode":"a2_action","fromSide":"right","toNode":"a2_meaning","toSide":"left"},
+    {"id":"e10","fromNode":"a2_action","fromSide":"bottom","toNode":"a2_next","toSide":"top"}
+  ]
+}
