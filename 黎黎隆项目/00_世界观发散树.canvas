@@ -53,7 +53,9 @@
     {"id":"tail","type":"text","text":"巨尾规则｜保留机制，重做视觉重量\n\n功能：第三支点 / 配重 / 制动 / 锚定 / 感知 / 工具平台。\n视觉：分节可嵌合、外壳可浅色、内结构深灰，青蓝 / 紫红只作小型功能点。\n\n避免厚重炮塔感、纯军武感、每节同样粗细。","x":1240,"y":2990,"width":500,"height":340},
     {"id":"lili_route_authority","type":"text","text":"十元应用｜夺路尾 v0.1\n\n黎黎隆的巨尾不是普通多功能工具，而是“把自己的方向压成现实路线”的探索器官。\n\n进入未知区时，他只先留下少量必要的承力 / 感知锚点（xn3：最小锚序），随后用尾部前段改变局部通过条件，使后方挂点、人流与跨越动作围绕他选中的方向重新组织（zx8）。\n\n已布锚点会真实限制临时转向：若突然改路，必须重排、回收或舍弃前置锚点，不能用一次爆发无代价取消结构。这里形成 xn 克 zx 的内部张力。\n\n结果：尾部结构必须分化为“前段夺路 / 后段留锚”，人物习惯锁定为：先留最少结构，再强行把路变成自己的路。","x":1780,"y":2990,"width":650,"height":520},
     {"id":"lili_tatin_return_lock","type":"text","text":"十元应用｜黎黎隆 × 塔汀：回路锁 v0.1\n\n黎黎隆负责把不存在的前路压成现实；塔汀不争夺前进方向，而是接住被放弃旧路中的可逆条件，维护这支队伍对象特异的回返接口。\n\n当黎黎隆继续夺路会提前永久切断回返接口时，塔汀的 nx6 在接口节点产生有效拒绝：她能让“直接切断”失败，迫使他先改接、转移或明确放弃回返权，但她不能替他决定下一条前进路线。nz8 负责保存 / 恢复回返窗口；x3 只让她直接掌握少量已交接的锚具与接口，不能无限扣住全队。\n\n关系张力：黎黎隆夺路越成功，累计不可逆损失越大；塔汀没有黎黎隆则只能保存回返可能，不能生成新的前进方向。冲突核心不是性格，而是“继续往前是否值得烧掉某条还能回去的权利”。","x":2480,"y":2990,"width":720,"height":560},
-    {"id":"chimera_return_mimic","type":"text","text":"十元应用｜归巢拟态奇美拉 v0.1\n\n它不优先追杀人，而是追踪探索队留下的路线 / 身体锚点，在其表面生长稳定生体套壳，复制扣位、压力纹、气味膜、温度腔与状态光等“可被第三方识别和调用”的接口特征。\n\n原始回返锚 R0 可能仍存在，但拟态壳 Rm 会让队员、外置器官或返程工具持续把错误对象当成合法后路。真正攻击发生在队伍主动返程时：正确执行熟悉的回返动作，却被错误接口带入捕食区。\n\n阶段：采样 → 套壳 → 截返。失败条件不是单纯掉血，而是队伍无法再证明当前调用的锚仍属于原对象特异回返关系。\n\n项目假设借用 x并z 的稳定公共调用壳与 nz 的对象特异回返几何，但不反向修改 canonical。视觉必须从机制长出：贴附膜、重复扣位、仿压力纹、半透明采样囊，而非随机拼动物头。","x":3260,"y":2990,"width":780,"height":640}
+    {"id":"chimera_return_mimic","type":"text","text":"十元应用｜归巢拟态奇美拉 v0.1\n\n它不优先追杀人，而是追踪探索队留下的路线 / 身体锚点，在其表面生长稳定生体套壳，复制扣位、压力纹、气味膜、温度腔与状态光等“可被第三方识别和调用”的接口特征。\n\n原始回返锚 R0 可能仍存在，但拟态壳 Rm 会让队员、外置器官或返程工具持续把错误对象当成合法后路。真正攻击发生在队伍主动返程时：正确执行熟悉的回返动作，却被错误接口带入捕食区。\n\n阶段：采样 → 套壳 → 截返。失败条件不是单纯掉血，而是队伍无法再证明当前调用的锚仍属于原对象特异回返关系。\n\n项目假设借用 x并z 的稳定公共调用壳与 nz 的对象特异回返几何，但不反向修改 canonical。视觉必须从机制长出：贴附膜、重复扣位、仿压力纹、半透明采样囊，而非随机拼动物头。","x":3260,"y":2990,"width":780,"height":640},
+    {"id":"plot_reentry_transfer","type":"text","text":"十元应用｜返身权转交事件 v0.1\n\n边境要求黎黎隆把当前返身断点 B0 改写成任务器官 B1 才能继续进入 P1。塔汀只能阻止“无交接直接切断”，不能替黎黎隆决定前路。\n\n黎黎隆因此先把 B0 中仍可维持的对象特异返身部分实体交接给塔汀，形成 R_tatin，再完成 B0→B1。事件后：前进 decision_right 仍在黎黎隆；reentry_right 外置在塔汀维护的 R_tatin。公共接口仍可识别和维护黎黎隆，却不能替他单方面恢复原身体关系。\n\n核心：他决定往哪走，却不再独自决定自己还能不能回来。","x":4100,"y":2990,"width":760,"height":520},
+    {"id":"visual_dual_rights","type":"text","text":"十元应用｜双权位分叉镜头 v0.1\n\n不用十元文字也必须能读懂：\n① B0 在黎黎隆身上时只有一个行动中心；\n② B0 以可追踪实体动作进入塔汀侧成为 R_tatin；\n③ 塔汀 + R_tatin 固定在原路 / 回返侧，黎黎隆反向越过边界；\n④ 黎黎隆尾部连续落锚，挂点、桥带、人流或地形通过条件随其方向重排，证明 P1 仍由他生成并占据；\n⑤ 大全景同时保留“回返中心”和“前进中心”，两者不能互换。\n\n视觉硬门：若只剩冷暖色、人物远近、对视、象征信物或字幕，则十元视觉失败。","x":4920,"y":2990,"width":780,"height":590}
   ],
   "edges": [
     {"id":"e_root_formula","fromNode":"root","toNode":"world_formula"},
@@ -134,6 +136,13 @@
     {"id":"e_route_chimera_mimic","fromNode":"lili_route_authority","toNode":"chimera_return_mimic","label":"夺路尾留下越多可重复锚点，越给拟态采样提供入口"},
     {"id":"e_return_chimera_mimic","fromNode":"lili_tatin_return_lock","toNode":"chimera_return_mimic","label":"拟态壳不毁后路，而是污染后路被识别和调用的入口"},
     {"id":"e_frontier_chimera_mimic","fromNode":"frontier","toNode":"chimera_return_mimic","label":"边境生态把成熟探索接口反转成捕食弱点"},
+    {"id":"e_route_plot","fromNode":"lili_route_authority","toNode":"plot_reentry_transfer","label":"继续现实化 P1 必须占用原返身结构"},
+    {"id":"e_lock_plot","fromNode":"lili_tatin_return_lock","toNode":"plot_reentry_transfer","label":"nx 只阻止无交接切断，nz 接管返身接口"},
+    {"id":"e_breakpoint_plot","fromNode":"return_breakpoint_civ","toNode":"plot_reentry_transfer","label":"公共可调用性不能替代对象特异返身"},
+    {"id":"e_plot_visual_dual","fromNode":"plot_reentry_transfer","toNode":"visual_dual_rights","label":"把前进权与返身权的分离压成可见空间事实"},
+    {"id":"e_route_visual_dual","fromNode":"lili_route_authority","toNode":"visual_dual_rights","label":"P1 必须由环境真实重排证明，而非只拍人物远行"},
+    {"id":"e_return_visual_dual","fromNode":"lili_tatin_return_lock","toNode":"visual_dual_rights","label":"R_tatin 必须在塔汀侧持续成为实体回返中心"},
+    {"id":"e_visual_dual_test","fromNode":"visual_dual_rights","toNode":"visual_test","label":"新增十元视觉硬门：双中心必须不用标签也能从动作读出"},
     {"id":"e_visual_chars","fromNode":"visual","toNode":"characters_anchor","label":"角色必须服从世界视觉总纲"},
     {"id":"e_palette_city","fromNode":"palette","toNode":"city","label":"场景默认使用冷白青紫体系"},
     {"id":"e_style_priority","fromNode":"render_style","toNode":"scene_priority","label":"出图优先保持设定稿感"}
