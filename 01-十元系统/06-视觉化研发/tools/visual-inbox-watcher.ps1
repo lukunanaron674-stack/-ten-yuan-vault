@@ -1,6 +1,6 @@
 # Visual Inbox Watcher for Ten-Yuan visual R&D
 # Watches ~/Downloads/十元视觉化 and imports images into the repository.
-# No third-party PowerShell modules required.
+# Windows PowerShell 5.1 compatible; no third-party modules required.
 
 param(
     [string]$Inbox = (Join-Path $HOME 'Downloads\十元视觉化'),
@@ -39,9 +39,18 @@ function Resolve-RepoRoot {
     if ($RepoRoot) { return (Resolve-Path -LiteralPath $RepoRoot).Path }
     $out = & git -C $ToolDir rev-parse --show-toplevel 2>$null
     if ($LASTEXITCODE -ne 0 -or -not $out) {
-        throw '无法自动定位 Git 仓库。请用 -RepoRoot 指定本地 -ten-yuan-vault 路径。'
+        throw '无法自动定位 Git 仓库。请确认已安装 Git，或用 -RepoRoot 指定本地 -ten-yuan-vault 路径。'
     }
     return ($out | Select-Object -First 1).Trim()
+}
+
+function Get-RelativePath([string]$BasePath, [string]$TargetPath) {
+    $baseFull = [System.IO.Path]::GetFullPath($BasePath).TrimEnd('\') + '\'
+    $targetFull = [System.IO.Path]::GetFullPath($TargetPath)
+    $baseUri = New-Object System.Uri($baseFull)
+    $targetUri = New-Object System.Uri($targetFull)
+    $relUri = $baseUri.MakeRelativeUri($targetUri)
+    return ([System.Uri]::UnescapeDataString($relUri.ToString()) -replace '/', '\')
 }
 
 function Read-Context {
@@ -56,7 +65,7 @@ function Read-Context {
 }
 
 function Wait-FileStable([string]$Path) {
-    for ($i = 0; $i -lt 6; $i++) {
+    for ($i = 0; $i -lt 8; $i++) {
         if (-not (Test-Path -LiteralPath $Path)) { return $false }
         $a = Get-Item -LiteralPath $Path
         Start-Sleep -Milliseconds 650
@@ -73,19 +82,6 @@ function Sanitize-Token([string]$Text, [string]$Fallback) {
     $x = ($Text -replace '\s+', '-') -replace '[^0-9A-Za-z_\-一-龥并]', ''
     if ([string]::IsNullOrWhiteSpace($x)) { return $Fallback }
     return $x.ToUpperInvariant()
-}
-
-function Get-NextSequence([string]$DestinationDir, [string]$Prefix) {
-    $max = 0
-    if (Test-Path -LiteralPath $DestinationDir) {
-        Get-ChildItem -LiteralPath $DestinationDir -File -ErrorAction SilentlyContinue | ForEach-Object {
-            if ($_.BaseName -match ('^' + [regex]::Escape($Prefix) + '-(?<n>\d{3})$')) {
-                $n = [int]$Matches['n']
-                if ($n -gt $max) { $max = $n }
-            }
-        }
-    }
-    return ($max + 1)
 }
 
 function Get-Role($Context, [int]$Sequence) {
@@ -111,7 +107,7 @@ function Get-Destination([string]$Root, $Context) {
 function Invoke-GitCommitPush([string]$Root, [string[]]$Paths, [string]$SampleId) {
     $relative = @()
     foreach ($p in $Paths) {
-        $relative += [System.IO.Path]::GetRelativePath($Root, $p).Replace('\\', '/')
+        $relative += (Get-RelativePath $Root $p)
     }
 
     & git -C $Root add -- @relative
@@ -150,16 +146,14 @@ function Import-Image([string]$Path, [string]$Root) {
     New-Item -ItemType Directory -Path $destDir -Force | Out-Null
 
     $item = Get-Item -LiteralPath $Path
+    $sourceName = $item.Name
     $ext = $item.Extension.ToLowerInvariant()
 
-    # If filename is already a valid VIS-* id, preserve it.
+    # A manually named VIS-* file keeps its sample id. Ordinary browser download names are auto-numbered.
     if ($item.BaseName -match '^VIS-[0-9A-Z_\-一-龥并]+$') {
         $sampleId = $item.BaseName.ToUpperInvariant()
     } else {
         $basePrefix = "VIS-$module-$target-$round"
-        $probeSeq = Get-NextSequence $destDir "$basePrefix-(POS|NEAR|NEG|SAMPLE)" # fallback below handles actual prefix scan
-
-        # Determine next number across all roles in this destination.
         $max = 0
         Get-ChildItem -LiteralPath $destDir -File -ErrorAction SilentlyContinue | ForEach-Object {
             if ($_.BaseName -match ('^' + [regex]::Escape($basePrefix) + '-[0-9A-Z_\-一-龥并]+-(?<n>\d{3})$')) {
@@ -183,6 +177,7 @@ function Import-Image([string]$Path, [string]$Root) {
     $yamlPath = Join-Path $destDir ($sampleId + '.yaml')
     if (-not (Test-Path -LiteralPath $yamlPath)) {
         $roleFromId = if ($sampleId -match '-(POS|NEAR|NEG|SAMPLE)-\d{3}$') { $Matches[1] } else { 'UNKNOWN' }
+        $safeSourceName = $sourceName.Replace('"', '''')
         $yaml = @"
 sample_id: $sampleId
 module: $module
@@ -190,7 +185,7 @@ target: $target
 round: $round
 role: $roleFromId
 source: chatgpt_web_download
-source_filename: "$($item.Name.Replace('"',''''))"
+source_filename: "$safeSourceName"
 imported_at: "$(Get-Date -Format 'yyyy-MM-ddTHH:mm:ssK')"
 status: IMPORTED_UNAUDITED
 prompt: null
@@ -234,7 +229,7 @@ PENDING
         Set-Content -LiteralPath $auditPath -Value $audit -Encoding UTF8
     }
 
-    Write-Log "IMPORTED $($item.Name) -> $sampleId$ext"
+    Write-Log "IMPORTED $sourceName -> $sampleId$ext"
     Invoke-GitCommitPush $Root @($destImage, $yamlPath, $auditPath) $sampleId
 }
 
