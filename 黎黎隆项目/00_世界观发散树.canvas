@@ -57,7 +57,8 @@
     {"id":"chimera_return_mimic","type":"text","text":"十元应用｜归巢拟态奇美拉 v0.1\n\n它不优先追杀人，而是追踪探索队留下的路线 / 身体锚点，在其表面生长稳定生体套壳，复制扣位、压力纹、气味膜、温度腔与状态光等“可被第三方识别和调用”的接口特征。\n\n原始回返锚 R0 可能仍存在，但拟态壳 Rm 会让队员、外置器官或返程工具持续把错误对象当成合法后路。真正攻击发生在队伍主动返程时：正确执行熟悉的回返动作，却被错误接口带入捕食区。\n\n阶段：采样 → 套壳 → 截返。失败条件不是单纯掉血，而是队伍无法再证明当前调用的锚仍属于原对象特异回返关系。\n\n项目假设借用 x并z 的稳定公共调用壳与 nz 的对象特异回返几何，但不反向修改 canonical。视觉必须从机制长出：贴附膜、重复扣位、仿压力纹、半透明采样囊，而非随机拼动物头。","x":3260,"y":2990,"width":780,"height":640},
     {"id":"plot_reentry_transfer","type":"text","text":"十元应用｜返身权转交事件 v0.1\n\n边境要求黎黎隆把当前返身断点 B0 改写成任务器官 B1 才能继续进入 P1。塔汀只能阻止“无交接直接切断”，不能替黎黎隆决定前路。\n\n黎黎隆因此先把 B0 中仍可维持的对象特异返身部分实体交接给塔汀，形成 R_tatin，再完成 B0→B1。事件后：前进 decision_right 仍在黎黎隆；reentry_right 外置在塔汀维护的 R_tatin。公共接口仍可识别和维护黎黎隆，却不能替他单方面恢复原身体关系。\n\n核心：他决定往哪走，却不再独自决定自己还能不能回来。","x":4100,"y":2990,"width":760,"height":520},
     {"id":"visual_dual_rights","type":"text","text":"十元应用｜双权位分叉镜头 v0.1\n\n不用十元文字也必须能读懂：\n① B0 在黎黎隆身上时只有一个行动中心；\n② B0 以可追踪实体动作进入塔汀侧成为 R_tatin；\n③ 塔汀 + R_tatin 固定在原路 / 回返侧，黎黎隆反向越过边界；\n④ 黎黎隆尾部连续落锚，挂点、桥带、人流或地形通过条件随其方向重排，证明 P1 仍由他生成并占据；\n⑤ 大全景同时保留“回返中心”和“前进中心”，两者不能互换。\n\n视觉硬门：若只剩冷暖色、人物远近、对视、象征信物或字幕，则十元视觉失败。","x":4920,"y":2990,"width":780,"height":590},
-    {"id":"ai_structural_auditor","type":"text","text":"十元应用｜结构反事实审核器 v0.1\n\nAI 不审核“像不像十元”，而审核 expected_ir 中哪个现实变量被谁改变。\n\n四硬门：①可观察证据；②结构因果；③删十元硬门；④反转敏感。\n\n一票否决：TENYUAN_DECORATIVE_ONLY / FAIL_IR_EVIDENCE_MISSING / FAIL_CAUSAL_RESPONSE_MISSING / FAIL_RIGHTS_COLLAPSE / FAIL_OBJECT_IDENTITY_BROKEN / FAIL_TEMPORAL_CONTINUITY / FAIL_REVERSE_INSENSITIVE / FAIL_STYLE_ONLY。\n\n漂亮、角色正确、道具齐全也不能覆盖结构错。","x":5760,"y":2990,"width":780,"height":560}
+    {"id":"ai_structural_auditor","type":"text","text":"十元应用｜结构反事实审核器 v0.1\n\nAI 不审核“像不像十元”，而审核 expected_ir 中哪个现实变量被谁改变。\n\n四硬门：①可观察证据；②结构因果；③删十元硬门；④反转敏感。\n\n一票否决：TENYUAN_DECORATIVE_ONLY / FAIL_IR_EVIDENCE_MISSING / FAIL_CAUSAL_RESPONSE_MISSING / FAIL_RIGHTS_COLLAPSE / FAIL_OBJECT_IDENTITY_BROKEN / FAIL_TEMPORAL_CONTINUITY / FAIL_REVERSE_INSENSITIVE / FAIL_STYLE_ONLY。\n\n漂亮、角色正确、道具齐全也不能覆盖结构错。","x":5760,"y":2990,"width":780,"height":560},
+    {"id":"borrowed_motion_creature","type":"text","text":"十元应用｜借势附行兽 v0.1\n\n一种薄膜状软体敌对生物，自身只有短距收缩，不占最终运动方向。人物或机械先形成挥刀、奔跑、甩尾、拉索等连续动作后，它的环状受力须先整体偏向既有力链，再以钩膜接入一个接触点，沿目标自己制造的连续动作从末端逐节向身体近端推进。\n\n硬规则：静止目标前不得主动高速扑击；必须先有外部力链、再定向、后推进；动作越连续猛烈，附行越稳定；真正停断、切碎动作或把受力转给独立机械后必须失势/脱落。\n\n破解不是打弱点，而是管理动作连续性：短促分段运动或制造独立高张力诱饵链将其导离。若无外部力链仍能持续自主追击，则 FAIL。","x":6600,"y":2990,"width":820,"height":600}
   ],
   "edges": [
     {"id":"e_root_formula","fromNode":"root","toNode":"world_formula"},
@@ -152,6 +153,9 @@
     {"id":"e_visual_test_auditor","fromNode":"visual_test","toNode":"ai_structural_auditor","label":"把视觉验收升级为可执行的结构反事实硬门"},
     {"id":"e_dual_auditor","fromNode":"visual_dual_rights","toNode":"ai_structural_auditor","label":"双权位镜头必须经对象连续性、因果与反转样本审核"},
     {"id":"e_route_auditor","fromNode":"lili_route_authority","toNode":"ai_structural_auditor","label":"锚序成立但身体自由度不下降时必须 FAIL"},
+    {"id":"e_ecology_borrowed_motion","fromNode":"fantasy_ecology","toNode":"borrowed_motion_creature","label":"软体生态不靠随机拼接：攻击能力由既有动作链决定"},
+    {"id":"e_frontier_borrowed_motion","fromNode":"frontier","toNode":"borrowed_motion_creature","label":"边境连续运动成为可被生态利用的真实资源"},
+    {"id":"e_borrowed_motion_auditor","fromNode":"borrowed_motion_creature","toNode":"ai_structural_auditor","label":"无外部力链仍能持续自主追击时必须 FAIL"},
     {"id":"e_visual_chars","fromNode":"visual","toNode":"characters_anchor","label":"角色必须服从世界视觉总纲"},
     {"id":"e_palette_city","fromNode":"palette","toNode":"city","label":"场景默认使用冷白青紫体系"},
     {"id":"e_style_priority","fromNode":"render_style","toNode":"scene_priority","label":"出图优先保持设定稿感"}
