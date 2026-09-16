@@ -1,0 +1,82 @@
+phase: VISUAL_CONSOLIDATION_R0
+status: ACTIVE
+updated: 2026-09-16
+policy:
+  new_deep_research: FAILURE_DRIVEN_ONLY
+  image_generation: VALIDATION_ONLY
+  low_image_budget: true
+  visual_inbox: true
+
+read_first:
+  - 01-十元系统/06-视觉化研发/00-总收束/README_视觉化总收束R0_20260916.md
+  - 01-十元系统/06-视觉化研发/00-总收束/TEMPLATE_十元视觉标准卡_v0.1.md
+  - 01-十元系统/06-视觉化研发/低图耗视觉化研发协议_v1.0_20260916.md
+
+queue:
+  - id: R0.1
+    target: X
+    action: consolidate_frozen_reference_card
+    image_budget: 0
+    exit: reference_card_complete
+  - id: R0.2
+    target: XZ
+    action: merge_existing_research_and_build_nearest_neighbor_contrast
+    image_budget: 0-3
+    exit: candidate_freeze_review
+  - id: R0.3
+    target: ZN
+    action: merge_existing_research_and_prepare_cross_object_matrix
+    image_budget: 0-6
+    exit: cross_object_review
+  - id: R0.4
+    target: NX
+    action: consolidate_then_run_strict_triplet
+    image_budget: 3
+    exit: nearest_neighbor_boundary_written
+  - id: R0.5
+    target: ZX
+    action: remove_personality_and_power_shortcuts
+    image_budget: 0-3
+    exit: structural_card_complete
+  - id: R0.6
+    target: XN
+    action: visualize_distributed_rules_nodes_and_process
+    image_budget: 0-3
+    exit: structural_card_complete
+  - id: R0.7
+    target: NZ
+    action: consolidate_preservation_recovery_reentry_visual_grammar
+    image_budget: 0-3
+    exit: structural_card_complete
+  - id: R0.8
+    target: N
+    action: consolidate_container_intake_support_visual_grammar
+    image_budget: 0-3
+    exit: structural_card_complete
+  - id: R0.9
+    target: Z
+    action: consolidate_adjudication_centralization_visual_grammar
+    image_budget: 0-3
+    exit: structural_card_complete
+  - id: R0.10
+    target: X并Z
+    action: consolidate_inside_to_outside_projection_visual_grammar
+    image_budget: 0-3
+    exit: structural_card_complete
+  - id: R0.11
+    target: ALL
+    action: build_nearest_neighbor_matrix
+    image_budget: 0
+    exit: matrix_complete
+  - id: R0.12
+    target: ALL
+    action: freeze_review
+    image_budget: failure_only
+    exit: v1_candidate_set
+
+freeze_gate:
+  core_variables_stable: true
+  nearest_neighbor_separable: true
+  shortcut_removed: true
+  cross_object_or_cross_topic_passed: true
+  audit_repeatable: true
