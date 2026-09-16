@@ -1,0 +1,97 @@
+{
+  "planId": "lililong-scene-refill-v1.3",
+  "inputCanvas": "黎黎隆_v1.1_ZEROLOGIN/黎黎隆_场景风格视觉化发散树_v1.2_LOCAL.canvas",
+  "outputCanvas": "黎黎隆_v1.1_ZEROLOGIN/黎黎隆_场景风格视觉化发散树_v1.3_FULL_LOCAL.canvas",
+  "assetRoot": "黎黎隆_v1.1_ZEROLOGIN/assets/references/imagewell",
+  "rules": {
+    "doNotTouchSuccessful27": true,
+    "externalLinkNodesAllowed": 0,
+    "openLoginPages": false,
+    "defaultSources": ["openverse", "wikimedia"],
+    "fallbackPreset": "all-free",
+    "candidateLimitPerQuery": 4,
+    "selectedPerNode": 1,
+    "preserveNodeGeometry": true,
+    "paletteRule": "P00 five-color lock; source image palette is not inherited"
+  },
+  "tasks": [
+    {
+      "nodeId": "ref_style_A05",
+      "name": "A05 赛璐璐世界",
+      "borrow": "硬边色块、少渐变、赛璐璐式环境块面",
+      "queries": ["cel animation background", "flat color animation background", "cel shaded environment"]
+    },
+    {
+      "nodeId": "refR4_right_R06",
+      "name": "R06 Scene Planner",
+      "borrow": "前景中景背景分层、环境焦点组织",
+      "queries": ["foreground middleground background landscape", "environment composition depth", "landscape depth layers"]
+    },
+    {
+      "nodeId": "refR4_right_R07",
+      "name": "R07 构图×光线",
+      "borrow": "主光方向、亮暗分区、空间可读性",
+      "queries": ["interior directional lighting", "dramatic room lighting", "light shadow interior composition"]
+    },
+    {
+      "nodeId": "refR4_right_R08",
+      "name": "R08 结构化视觉工作流",
+      "borrow": "分层、模块、流程关系的视觉结构",
+      "queries": ["visual workflow diagram", "design process diagram", "modular system diagram"]
+    },
+    {
+      "nodeId": "refR4_right_R09",
+      "name": "R09 LoRA Style Reference",
+      "borrow": "内容控制与风格控制分支的独立关系",
+      "queries": ["style reference workflow", "image generation workflow diagram", "style transfer workflow"]
+    },
+    {
+      "nodeId": "refR5_seed_I02",
+      "name": "I02 旧枢纽冒险者工会",
+      "borrow": "旧交通枢纽、多层公共空间、聚集与流动",
+      "queries": ["old train station interior", "industrial transit hall", "multi level station interior"]
+    },
+    {
+      "nodeId": "refR5_seed_I04",
+      "name": "I04 骨骼空港",
+      "borrow": "巨型骨架作为承重结构和空间基础设施",
+      "queries": ["whale skeleton", "rib cage skeleton", "skeleton museum"]
+    },
+    {
+      "nodeId": "refR5_seed_I05",
+      "name": "I05 机械植物街区",
+      "borrow": "建筑围绕活体树生长、后置结构顺应有机形态",
+      "queries": ["tree architecture", "building around tree", "architecture integrated with tree"]
+    },
+    {
+      "nodeId": "refR5_seed_I07",
+      "name": "I07 巨根雨林导航",
+      "borrow": "巨根承担道路桥梁、沿根附着路径与设施",
+      "queries": ["giant tree roots path", "tree root bridge", "forest root walkway"]
+    },
+    {
+      "nodeId": "refR5_seed_I08",
+      "name": "I08 奇美拉断层巢穴",
+      "borrow": "巢穴生态需求塑造空间、断裂腔体被生命占据",
+      "queries": ["animal nest cave", "nest inside ruin", "creature den cave"]
+    },
+    {
+      "nodeId": "refR5_seed_I09",
+      "name": "I09 维修铺科研室",
+      "borrow": "杂乱工作台、线缆、屏幕、工具与生活物并置",
+      "queries": ["electronics repair workshop", "messy engineering workbench", "technical workshop interior"]
+    },
+    {
+      "nodeId": "refR5_seed_I10",
+      "name": "I10 垂直城市运输层",
+      "borrow": "多层交通、垂直路径、不同高度路线汇合",
+      "queries": ["vertical city transport", "multi level transit", "elevated transport architecture"]
+    },
+    {
+      "nodeId": "refR5_seed_I12",
+      "name": "I12 脊椎夜市",
+      "borrow": "脊椎/骨架形成连续摊位与街道基础结构",
+      "queries": ["spine skeleton", "vertebrae skeleton", "market under structure"]
+    }
+  ]
+}
