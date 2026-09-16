@@ -1,16 +1,16 @@
 system: ten_yuan_visualization
-version: 0.8.0
-codename: Consolidation Candidate
+version: 0.8.1
+codename: Style Grammar + Dynamic Operations Integration
 released_at: 2026-09-16
 status: active-validation
-phase: STYLE_GRAMMAR_CAUSAL_VALIDATION
+phase: STYLE_GRAMMAR_AND_DYNAMIC_VISUAL_VALIDATION
 authority_level: L3
 may_override_ten_yuan_canonical: false
 
 version_semantics:
   major: 1.x means ten visual standard cards, nearest-neighbor matrix, relation visual grammar and audit loop are production-frozen
   minor: new subsystem or major consolidation milestone
-  patch: corrections, guards, automation and non-breaking refinements
+  patch: corrections, guards, automation, subsystem integration and non-breaking refinements
 
 upstream:
   five_axis: 1.0
@@ -87,6 +87,23 @@ subsystems:
   consolidation:
     version: R0
     status: style-grammar-causal-validation
+  dynamic_visualization:
+    version: 1.0
+    status: definition-ready-regression-pending
+    visual_operations: 10
+    generator_prompt: v1
+    auditor_prompt: v1
+    audit_schema: v1
+    freeze_gate: v1
+    theory_input_gate: v1
+    blind_test_generator: 100-sample-v1
+    source: 02_给我用的知识凝结库/01_动态链条/视觉化
+
+architecture:
+  static_visual_grammar: describes_visible_state_structure
+  dynamic_visual_operations: describes_A_to_B_structural_transition
+  relation_layer: applies_operations_to_sheng_ke_bu_and_dynamic_chains
+  audit_layer: blind_structural_evidence_validation
 
 release_gate_for_1_0_0:
   ten_visual_cards_frozen: 10
@@ -102,5 +119,7 @@ next:
   - deletion tests
   - cross-position validation for passing candidates
   - targeted cross-style external validation
+  - run dynamic visual blind regression through freeze gate
   - nearest-neighbor matrix
+  - v0.9.0 consolidation review
   - v1.0.0 freeze review
