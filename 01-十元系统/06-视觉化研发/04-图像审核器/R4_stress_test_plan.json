@@ -1,0 +1,54 @@
+{
+  "pairwise_tests": [
+    ["X", "N"],
+    ["X", "XPZ"],
+    ["Z", "XZ"],
+    ["Z", "ZN"],
+    ["N", "NZ"],
+    ["N", "XN"],
+    ["ZN", "ZX"],
+    ["NZ", "NX"],
+    ["NX", "exclusion"],
+    ["NX", "courtesy"],
+    ["ZX", "XZ"],
+    ["XPZ", "disguise"]
+  ],
+  "shortcut_ablation": [
+    "color",
+    "expression",
+    "weapon",
+    "text_ui",
+    "profession_costume",
+    "genre_topic",
+    "mask_mirror_screen"
+  ],
+  "counterfactual_tests": {
+    "X": "把 assimilation 改成 support_only；若仍判X则失败",
+    "Z": "把 convergence 改成 distributed；若仍判Z则失败",
+    "N": "移除 support；若仍判N则失败",
+    "ZN": "移除 receiver response/propagation；若仍判ZN则失败",
+    "NZ": "取消 reserved slot 或让其被他人永久占用；若仍判NZ则失败",
+    "XN": "把 repeatable rule 改成 one-off arrangement；若仍判XN则失败",
+    "NX": "把 repeated/cumulative yield 改成 single temporary courtesy，或立即恢复权益；若仍判NX则失败",
+    "ZX": "把 actor-initiates 改为 actor-reacts；若仍判ZX则失败",
+    "XZ": "把 near-threshold 改为 normal-state，或把 trigger 改成 large；若仍判XZ则失败",
+    "XPZ": "让 audience 无法读取 presentation layer，或移除 audience response；若仍判XPZ则失败"
+  },
+  "sequence_perturbation": [
+    "shuffle_frames",
+    "drop_initial_frame",
+    "drop_result_frame",
+    "middle_frame_only"
+  ],
+  "regression_domains": [
+    "social",
+    "architecture",
+    "industrial",
+    "crowd",
+    "product",
+    "animation",
+    "manga",
+    "game",
+    "photography"
+  ]
+}
