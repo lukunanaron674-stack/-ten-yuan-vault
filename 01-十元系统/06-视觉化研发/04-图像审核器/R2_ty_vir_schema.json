@@ -1,0 +1,70 @@
+{
+  "version": "TY-VIR-1.1",
+  "entities": {
+    "actors": [],
+    "objects": [],
+    "groups": [],
+    "regions": [],
+    "audiences": []
+  },
+  "boundary": {
+    "expansion": "unknown",
+    "penetration": "unknown",
+    "containment": "unknown",
+    "inside_outside_transition": "unknown"
+  },
+  "position": {
+    "centrality": "unknown",
+    "edge_distance": "unknown",
+    "reserved_slot": "unknown",
+    "available_slot": "unknown"
+  },
+  "relation": {
+    "source": null,
+    "target": null,
+    "type": null,
+    "inward": false,
+    "outward": false,
+    "convergence": "unknown",
+    "divergence": "unknown",
+    "propagation": "unknown",
+    "support": "unknown",
+    "dependency": "unknown",
+    "replacement": "unknown"
+  },
+  "temporal": {
+    "state_before": "unknown",
+    "initiator": "unknown",
+    "trigger": "unknown",
+    "trigger_magnitude": "unknown",
+    "response": "unknown",
+    "response_magnitude": "unknown",
+    "response_scope": "unknown",
+    "threshold_margin": "unknown",
+    "threshold_crossed": "unknown",
+    "continuity_before": "unknown",
+    "continuity_after": "unknown",
+    "reversibility": "unknown",
+    "restoration": "unknown",
+    "repetition_count": "unknown"
+  },
+  "entitlement": {
+    "before": "unknown",
+    "after": "unknown",
+    "participation_before": "unknown",
+    "participation_after": "unknown",
+    "self_share_trajectory": "unknown",
+    "other_access_trajectory": "unknown",
+    "resource_transfer": "unknown",
+    "forced_or_voluntary": "unknown"
+  },
+  "presentation": {
+    "internal_content": "unknown",
+    "presentation_layer": "unknown",
+    "presentation_selected": "unknown",
+    "audience_reads_layer": "unknown",
+    "audience_response": "unknown",
+    "presentation_variation": "unknown",
+    "content_constant": "unknown"
+  }
+}
