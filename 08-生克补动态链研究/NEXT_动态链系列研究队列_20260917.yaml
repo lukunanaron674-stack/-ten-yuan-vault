@@ -1,0 +1,125 @@
+version: v1.0
+updated: 2026-09-17
+status: active
+scope: dynamic_chain_series
+may_override_canonical: false
+
+must_read:
+  - 08-生克补动态链研究/每次任务必读_生克补动态链滚动中枢.md
+  - 08-生克补动态链研究/README_生克补动态链研究总索引.md
+  - 08-生克补动态链研究/DAILY_20260916-17_动态链系列研究知识包.md
+  - 08-生克补动态链研究/动态链质量评估器_v1.0_20260917.md
+  - 01-十元系统/06-视觉化研发/RELEASE_视觉化体系_v0.8.1_20260916.md
+  - 01-十元系统/06-视觉化研发/03-十元生克补/audit_schema_v0.1.yaml
+  - 02_给我用的知识凝结库/01_动态链条/视觉化/README.md
+
+frozen_or_read_only:
+  ten_yuan_canonical: true
+  five_axis_v1: true
+  old_film_audit_hub_v3_94: true
+  evaluator_r1_r4: true
+  dynamic_visual_operation_definitions_v1: true
+
+queue:
+  - id: DC-R5
+    priority: P1
+    title: Dynamic Chain Evaluator 跨题材盲测
+    status: queued
+    goal: 验证 Evaluator v1.0 能否区分真因果链与表面合理链
+    sources:
+      - 高评分电影
+      - 高评分电视剧
+      - 中外文化经典
+      - 人工伪因果链
+    required_outputs:
+      - blind_annotations
+      - evaluator_scores
+      - failure_families
+      - confusion_summary
+      - reopen_decision
+    do_not:
+      - 因作品经典自动高分
+      - 只收成功案例
+      - 通过时间连续推断因果
+
+  - id: STYLE-ZX-NX-ENDPOINTS
+    priority: P2
+    title: ZX / NX 六张静态端点验证
+    status: queued
+    dependency_for: dynamic_visual_endpoint_readability
+    samples:
+      ZX: [POS, NEAR, DELETE]
+      NX: [POS, NEAR, DELETE]
+    total_images: 6
+    execution_chat: 十元风格研究
+    audit_chat: 图像审核器 R1.5
+
+  - id: REL-T1-PRIORITY8
+    priority: P3
+    title: 生克补首批 8 条 T1 三样本
+    status: queued
+    relation_ids:
+      - SHENG-07
+      - SHENG-05
+      - SHENG-09
+      - KE-01
+      - KE-03
+      - KE-08
+      - KE-09
+      - BU-05
+    variants: [POS, COEXIST_NEG, SHORTCUT_NEG]
+    total_images: 24
+    gate:
+      POS: PASS
+      COEXIST_NEG: PASS
+      SHORTCUT_NEG: PASS
+
+  - id: DYNVIS-PILOT
+    priority: P4
+    title: Dynamic Visual 10母型预检
+    status: queued
+    operations:
+      - REWIRE
+      - REDISTRIBUTE
+      - CONVERGE
+      - GROW
+      - ENCLOSE
+      - INVADE
+      - DETACH
+      - RECIRCULATE
+      - REPLACE
+      - TWIST
+    goal: 在100样本正式盲测前发现生成器格式错误、母型坍缩和明显混淆
+    next_if_pass: DYNVIS-100-BLIND
+
+  - id: DYNVIS-100-BLIND
+    priority: P5
+    title: Dynamic Visual 100样本固定盲测
+    status: blocked_by_pilot
+    task_count: 100
+    gate_file: 02_给我用的知识凝结库/01_动态链条/视觉化/dynamic_visual_freeze_gate_v1.md
+
+  - id: DC-R6-LILILONG
+    priority: P6
+    title: 黎黎隆 8分钟母链筛选
+    status: blocked_by_r5
+    goal: 用 Evaluator + 横纵矩阵筛出 2–3 条母链
+    layers:
+      - 世界链
+      - 人物链
+      - 事件链
+    required_checks:
+      - shared_changed_variable_or_residue
+      - edge_productivity
+      - primary_secondary_migration
+      - closure
+      - project_visualizability
+
+research_reopen_gate:
+  allowed_only_if:
+    - 最近邻长期不可分
+    - 跨题材系统性失败
+    - 出现新稳定 failure_family
+    - 真实项目出现现有规则无法解释的结构
+    - Evaluator R5 系统性误判
+  otherwise: NO_NEW_DEEP_RESEARCH
