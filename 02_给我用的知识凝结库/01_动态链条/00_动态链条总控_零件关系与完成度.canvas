@@ -1,0 +1,206 @@
+{
+  "nodes": [
+    {
+      "id": "center",
+      "type": "text",
+      "text": "# 动态链条｜总控 Canvas v1.0\n\n**中心问题：前一阶段如何制造后一阶段？**\n\n动态链 = 十元节点 + 生/克/补/none 关系边 + 阶段变化 + 主次/强度迁移 + residue + next_affordance\n\n## 主循环\n十元 canonical\n→ 节点状态\n→ 生/克/补关系编排\n→ 横向阶段关系\n→ 纵向状态迁移\n→ Dynamic Chain Evaluator\n→ 视觉转译\n→ 图像审核 / 项目压力测试\n→ failure 回灌\n\n**总状态：核心理论可用；工程验证仍在推进。**\n**原则：合法链 ≠ 优秀链。**\n\n[[08-生克补动态链研究/README_生克补动态链研究总索引.md|研发总索引]]\n[[08-生克补动态链研究/VERSION_动态链系列研发.yaml|机器版本状态]]\n[[08-生克补动态链研究/DAILY_20260916-17_动态链系列研究知识包.md|9/16→17知识包]]",
+      "x": -450,
+      "y": -260,
+      "width": 900,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "canonical",
+      "type": "text",
+      "text": "# P0｜十元 canonical\n**重要性：核心前置**\n**完成度：100%｜只读**\n\n负责：\n- X/Z/N/ZN/NZ/XN/NX/ZX/XZ/X并Z 的语义\n- 节点是什么，不负责决定边一定是“生/克/补”\n- 动态链不得反向篡改 canonical\n\n必须区分：\n**十元 = 节点结构**\n**生克补 = 节点之间的作用边**\n\n[[01-十元系统/动态母型.md|动态母型]]\n[[01-十元系统/关系五对校验包_v0.1.md|关系五对校验包]]",
+      "x": -1580,
+      "y": -880,
+      "width": 620,
+      "height": 410,
+      "color": "1"
+    },
+    {
+      "id": "relation_comp",
+      "type": "text",
+      "text": "# P0｜十元生克补关系编排\n## Relation Composition Grammar v1.1\n**重要性：核心零件**\n**完成度：100%｜可调用｜本研究框可归档**\n\n输入：\n十元节点 + 候选关系 + 强度 + 阶段 + 条件\n\n输出：\n可读关系骨架 + 审美筛选 + failure诊断\n\n冻结成果：\n- 关系跨越度 1–10\n- 关系桥\n- 生/克/补严格定义\n- stage / condition / strength\n- G01–G12 骨架\n- M1压缩 / M2转化 / M3系统 / M4回环\n- 潜压 / 显压\n- 关系压缩率\n- 15类 Failure Family\n- A→A' 残差\n- 多脊柱 → 上层主关系场\n\n**作用：给动态链提供“关系怎么排”的语法。**",
+      "x": 860,
+      "y": -880,
+      "width": 690,
+      "height": 470,
+      "color": "3"
+    },
+    {
+      "id": "chain_core",
+      "type": "text",
+      "text": "# P0｜状态变化边 / 动态链核心\n**重要性：核心执行层**\n**完成度：≈90%｜理论可用，继续实战回归**\n\n优秀边最低记录：\n- trigger\n- mechanism\n- changed_variable\n- Δ\n- residue\n- next_affordance\n- relation_type: 生 / 克 / 补 / none\n- reversibility\n\n核心句：\n**好链不是事件连续，而是前一阶段制造后一阶段。**\n\n状态边：\nA_state + trigger + mechanism\n→ changed_variable Δ\n→ B_state + residue + next_affordance\n\n同框、攻击、成长、帮助，都不能自动算生克补。",
+      "x": -1660,
+      "y": -150,
+      "width": 650,
+      "height": 460,
+      "color": "3"
+    },
+    {
+      "id": "hv",
+      "type": "text",
+      "text": "# P0｜横向 × 纵向矩阵\n**重要性：核心读法**\n**完成度：100%｜已冻结为通用读法**\n\n### 横向：同阶段\n主/次十元｜强度｜生克补边｜依赖｜约束｜主导权\n\n### 纵向：阶段迁移\ntrigger｜Δ｜主次升降｜new/removed\nrelation_changed｜path opened/blocked\nresidue｜reversibility｜next_affordance\n\n禁止把动态图简写成：\nNZ → X并Z → Z → XN\n\n应该写成：\nT1状态 → 机制/变量变化 → T2状态 → 残余/下一条件",
+      "x": -360,
+      "y": 660,
+      "width": 720,
+      "height": 430,
+      "color": "2"
+    },
+    {
+      "id": "evaluator",
+      "type": "text",
+      "text": "# P0｜Dynamic Chain Evaluator v1.0\n**重要性：核心审核层**\n**完成度：≈80%｜R1–R4冻结，R5跨题材盲测待完成**\n\n100分旧工程结构：\n- 节点质量 20\n- 边质量 40\n- 整链质量 40\n\n检查重点：\n节点纯度 / same_object_layer / same_core_variable\n机制边 / Δ / residue / next_affordance\n因果连续 / 边生产力 / 不可替代性\n张力递进 / 主导权迁移 / 收束\n\n⚠ Relation Composition v1.1 已发现：\n**不能用单一审美总榜评所有关系结构。**\n后续 Evaluator R5 应吸收 M1–M4 分型思想。\n\n[[08-生克补动态链研究/动态链质量评估器_v1.0_20260917.md|质量评估器]]",
+      "x": 1060,
+      "y": -90,
+      "width": 690,
+      "height": 520,
+      "color": "2"
+    },
+    {
+      "id": "classic",
+      "type": "text",
+      "text": "# P1｜经典作品 / 文化作品验证\n**重要性：高｜反证层**\n**完成度：关系编排 V8/V9 已完成；动态链长期验证继续**\n\n已经得到的修正：\n- 单主脊柱不是硬规则 → 主关系场\n- 重复不等于冗余 → 信息/压力可累积\n- 闭环不扣分 → 无代价复位才扣分\n- 回声必须是关系同构，不是“主题差不多”\n- 静态/潜压结构不能被显性冲突评分器误杀\n\n用途：\n**不是继续造理论，而是发现系统性反例时回灌。**",
+      "x": -1760,
+      "y": -1500,
+      "width": 650,
+      "height": 410,
+      "color": "5"
+    },
+    {
+      "id": "five_axis",
+      "type": "text",
+      "text": "# P2｜五轴 v1.0\n**重要性：辅助映射层**\n**完成度：100%｜FROZEN_REGRESSION_ONLY**\n\n作用：\n- 帮助抽象结构 → 大素材库映射 / 具象化\n- 可辅助动态链找具体表现\n- 不负责替代十元生克补\n- 不与十元关系编排合并\n\n关系：\n五轴 → 提供具象候选\n十元 → 判节点结构\n生克补 → 判作用边\n动态链 → 判时间中的状态迁移",
+      "x": -1710,
+      "y": 760,
+      "width": 610,
+      "height": 390,
+      "color": "6"
+    },
+    {
+      "id": "style",
+      "type": "text",
+      "text": "# P2｜静态 Style Grammar\n**重要性：视觉前置依赖**\n**完成度：核心十元已有可用规则；继续回归**\n\n动态视觉必须先知道：\n**起点是什么结构，终点是什么结构。**\n\n最短静态结构：\nX 独立自足\nZ 方向迁移\nN 双向互为条件\nZN 关系规则改写\nNZ 终端嵌合\nXN 规则槽位化\nNX 缺席组织位\nZX 非对称组织锚点\nXZ 临界耦合\nX并Z 上位包络双读\n\n起/终点不可区分 → 动态链视觉化无法可靠审核。",
+      "x": -1050,
+      "y": 1220,
+      "width": 650,
+      "height": 450,
+      "color": "6"
+    },
+    {
+      "id": "relation_visual",
+      "type": "text",
+      "text": "# P1｜Relation Visualization v0.1\n**重要性：高｜单边视觉证明**\n**完成度：≈60%｜LOCAL_REGRESSION_READY**\n\n25条十元关系 × T1：\nPOS / COEXIST_NEG / SHORTCUT_NEG\n计划基础量：75张\n\n目标：\n证明画面表现的是真正“生/克/补”，而不是：\n- 同框\n- 大压小\n- 黑红危险\n- 发芽=生\n- 拼图=补\n\n当前优先难边：\nnx→x｜xn→xz｜x并z→z\nxz→zn｜xn→zx｜z→nx｜nx→x并z｜xn↔z",
+      "x": -300,
+      "y": -1420,
+      "width": 700,
+      "height": 480,
+      "color": "5"
+    },
+    {
+      "id": "visual_ops",
+      "type": "text",
+      "text": "# P1｜Dynamic Visual Operations v1\n**重要性：高｜动态视觉转译器**\n**完成度：≈65%｜定义/Prompt/Schema就绪，100样本盲测待跑**\n\n10个操作：\nREWIRE / REDISTRIBUTE / CONVERGE / GROW / ENCLOSE\nINVADE / DETACH / RECIRCULATE / REPLACE / TWIST\n\n边界：\nVisual Operation ≠ 新十元\nVisual Operation ≠ 生克补本体\n它只负责：**结构变化如何变得可见**\n\n单帧动态证据优先：\n旧结构残迹 + 正在发生的转换 + 新结构征兆\n\n[[02_给我用的知识凝结库/01_动态链条/视觉化/README.md|Dynamic Visual Operations v1]]",
+      "x": 650,
+      "y": -1450,
+      "width": 720,
+      "height": 500,
+      "color": "5"
+    },
+    {
+      "id": "auditor",
+      "type": "text",
+      "text": "# P2｜图像审核器 R1.5\n**重要性：视觉闭环审核**\n**完成度：≈70%｜ACTIVE_VALIDATION**\n\n审核：\n- 指定十元是否真的出现\n- 生克补是否靠结构证据成立\n- Visual Operation 是否可见\n- 是否题材/颜色/表情投机\n- 起点/变化/终点证据是否完整\n\n输出：\nPASS / FAIL / AMBIGUOUS\n+ failure family\n\n失败结果回灌：\nStyle Grammar / Relation Visualization / Dynamic Visual Ops",
+      "x": 1700,
+      "y": -920,
+      "width": 620,
+      "height": 430,
+      "color": "6"
+    },
+    {
+      "id": "dsl",
+      "type": "text",
+      "text": "# P2｜Visual / Dynamic DSL v0.1\n**重要性：机器执行接口**\n**完成度：≈50%｜USABLE_SKELETON**\n\n目标：让 GPT / Qwen / Codex / 本地模型读同一种中间表示。\n\n动态边推荐字段：\nsource / target\nprimary / secondary\noperation\nstrength\nstage\ncondition\ntrigger / mechanism\nchanged_variable / delta\nresidue\nnext_affordance\nreversibility\n\n作用：\n减少每个模型重新读长定义造成的漂移。",
+      "x": 1760,
+      "y": 50,
+      "width": 600,
+      "height": 430,
+      "color": "6"
+    },
+    {
+      "id": "world",
+      "type": "text",
+      "text": "# P1｜世界观关系构图\n**重要性：高｜消费动态链零件**\n**完成度：≈85%｜生成流程可用，项目实战继续校准**\n\n流程：\n概念\n→ 1–10关系跨越发散\n→ 关系桥\n→ 十元化\n→ 生/克/补候选\n→ 关系骨架\n→ 动态链\n→ 审美/质量筛选\n→ 世界观具体化\n\n关键：\n不是“词很多”就有世界观。\n**真正产生味道的是十元关系如何被编排、分阶段并留下残差。**\n\n当前直接消费者：《黎黎隆》世界观关系母图。",
+      "x": 1170,
+      "y": 750,
+      "width": 700,
+      "height": 470,
+      "color": "2"
+    },
+    {
+      "id": "lililong",
+      "type": "text",
+      "text": "# P1｜《黎黎隆》实战压力测试\n**重要性：高｜当前真实项目验证**\n**完成度：≈25%｜下一里程碑：R6 2→3母链筛选**\n\n当前主要结构候选：\nNZ奇幻底层\n→ X并Z异常/拆解\n→ Z可操作化/量化\n→ XN制度化\n并横向克制 ZX / NZ 公共生活\n→ Z追查 / 残余 NZ\n→ NZ'（非原样复位）\n\n下一步不是再造规则：\n**用 Evaluator + Relation Composition v1.1 筛 2–3 条母链。**",
+      "x": 720,
+      "y": 1320,
+      "width": 700,
+      "height": 430,
+      "color": "3"
+    },
+    {
+      "id": "archive",
+      "type": "text",
+      "text": "# P3｜归档 / 继续研究触发器\n**重要性：治理层**\n**完成度：规则明确**\n\n以下模块可作为“零件”调用，不再独立无限研究：\n✅ 十元生克补关系编排 v1.1\n✅ 横纵矩阵\n✅ 五轴 v1.0（只读回归）\n\n只有出现这些情况才重开深研：\n- nearest-neighbor 系统失败\n- 跨领域系统失败\n- 新稳定 failure family\n- 真实项目出现无法解释结构\n- Evaluator R5 系统性误判\n\n原则：\n**实战反例 → 回灌；没有反例 → 不升级版本号。**",
+      "x": -220,
+      "y": 1550,
+      "width": 650,
+      "height": 440,
+      "color": "1"
+    },
+    {
+      "id": "legend",
+      "type": "text",
+      "text": "# 完成度图例 / 阅读顺序\n\n**位置 = 重要性**\n越靠中心 → 越是动态链核心零件\n越靠外圈 → 越是验证 / 视觉化 / 项目消费者\n\n🟢 100%：冻结或可直接调用\n🟡 60–90%：主体可用，仍需回归/盲测\n🟠 30–59%：骨架可用，工程尚未闭环\n⏳ <30%：下一阶段实战任务\n\n⚠ 百分比是“工程完成度”，不是理论真理概率。",
+      "x": -1020,
+      "y": -1480,
+      "width": 620,
+      "height": 370,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {"id":"e1","fromNode":"canonical","fromSide":"right","toNode":"center","toSide":"left","label":"定义节点"},
+    {"id":"e2","fromNode":"relation_comp","fromSide":"left","toNode":"center","toSide":"right","label":"编排生/克/补"},
+    {"id":"e3","fromNode":"chain_core","fromSide":"right","toNode":"center","toSide":"left","label":"状态变化边"},
+    {"id":"e4","fromNode":"hv","fromSide":"top","toNode":"center","toSide":"bottom","label":"阶段读法"},
+    {"id":"e5","fromNode":"center","fromSide":"right","toNode":"evaluator","toSide":"left","label":"质量审核"},
+    {"id":"e6","fromNode":"canonical","fromSide":"right","toNode":"relation_comp","toSide":"left","label":"节点语义 → 关系语法"},
+    {"id":"e7","fromNode":"relation_comp","fromSide":"left","toNode":"chain_core","toSide":"right","label":"关系骨架 → 动态链"},
+    {"id":"e8","fromNode":"classic","fromSide":"right","toNode":"relation_comp","toSide":"left","label":"反例修正 v1.1"},
+    {"id":"e9","fromNode":"center","fromSide":"top","toNode":"relation_visual","toSide":"bottom","label":"单边视觉证明"},
+    {"id":"e10","fromNode":"center","fromSide":"top","toNode":"visual_ops","toSide":"bottom","label":"状态变化可视化"},
+    {"id":"e11","fromNode":"style","fromSide":"right","toNode":"visual_ops","toSide":"left","label":"起点/终点前置"},
+    {"id":"e12","fromNode":"relation_visual","fromSide":"right","toNode":"visual_ops","toSide":"left","label":"单边证据 → 动态操作"},
+    {"id":"e13","fromNode":"visual_ops","fromSide":"right","toNode":"auditor","toSide":"left","label":"生成结果审核"},
+    {"id":"e14","fromNode":"dsl","fromSide":"left","toNode":"visual_ops","toSide":"right","label":"机器接口"},
+    {"id":"e15","fromNode":"five_axis","fromSide":"right","toNode":"world","toSide":"left","label":"具象映射辅助（不合并）"},
+    {"id":"e16","fromNode":"center","fromSide":"right","toNode":"world","toSide":"left","label":"关系结构输出"},
+    {"id":"e17","fromNode":"evaluator","fromSide":"bottom","toNode":"lililong","toSide":"top","label":"筛选母链"},
+    {"id":"e18","fromNode":"world","fromSide":"bottom","toNode":"lililong","toSide":"top","label":"世界观候选骨架"},
+    {"id":"e19","fromNode":"lililong","fromSide":"left","toNode":"archive","toSide":"right","label":"实战反例才回灌"},
+    {"id":"e20","fromNode":"auditor","fromSide":"bottom","toNode":"archive","toSide":"right","label":"failure 回灌"},
+    {"id":"e21","fromNode":"archive","fromSide":"top","toNode":"center","toSide":"bottom","label":"仅触发条件满足才重开研究"}
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "type": "dynamic-chain-control-map",
+      "version": "v1.0",
+      "updated": "2026-09-17",
+      "status": "current"
+    }
+  }
+}
