@@ -1,0 +1,95 @@
+system: ten_yuan_dynamic_chain_research
+version: 2026.09.17-r1
+updated: 2026-09-17
+status: active_validation
+may_override_ten_yuan_canonical: false
+
+canonical:
+  ten_yuan: read_only
+  five_axis:
+    version: 1.0
+    status: FROZEN_REGRESSION_ONLY
+  film_dynamic_chain_audit:
+    framework_version: 3.94
+    master_index_version: 3.93
+    execution_protocol: 1.4
+    status: canonical_current
+
+research_layers:
+  dynamic_chain_evaluator:
+    version: 1.0
+    status: R1_R4_FROZEN_R5_PENDING
+    scoring:
+      node: 20
+      edge: 40
+      whole_chain: 40
+
+  relation_visualization:
+    version: 0.1
+    status: LOCAL_REGRESSION_READY
+    relation_types: [sheng, ke, bu]
+    relation_count: 25
+    stages: [T1, T2, T3]
+    variants: [POS, COEXIST_NEG, SHORTCUT_NEG]
+    t1_planned_samples: 75
+
+  dynamic_visual_operations:
+    version: 1.0
+    status: DEFINITION_READY_REGRESSION_PENDING
+    operations: 10
+    fixed_blindset_tasks: 100
+
+  visual_system:
+    version: 0.8.1
+    status: ACTIVE_VALIDATION
+
+  image_auditor:
+    version: R1.5
+    status: ACTIVE_VALIDATION
+
+  visual_dsl:
+    version: 0.1
+    status: USABLE_SKELETON
+
+  research_queue:
+    version: 1.0
+    file: 08-生克补动态链研究/NEXT_动态链系列研究队列_20260917.yaml
+
+current_core_model:
+  horizontal_stage_analysis:
+    - primary_secondary
+    - intensity
+    - relation_edges
+    - dependency
+    - dominance
+  vertical_transition_analysis:
+    - trigger
+    - mechanism
+    - changed_variable
+    - delta
+    - residue
+    - next_affordance
+    - primary_secondary_shift
+    - path_opened_blocked
+    - reversibility
+
+edge_minimum_evidence:
+  - mechanism
+  - changed_variable_delta
+  - residue
+  - next_affordance
+
+next_milestones:
+  - DC-R5 evaluator cross-domain blind validation
+  - ZX_NX endpoint six-image validation
+  - relation T1 priority eight triplets
+  - Dynamic Visual ten-operation pilot
+  - Dynamic Visual fixed 100 blind regression
+  - DC-R6 LiLilong 2_to_3 mother-chain selection
+
+no_new_deep_research_unless:
+  - nearest_neighbor_systematic_failure
+  - cross_domain_systematic_failure
+  - new_stable_failure_family
+  - real_project_unexplained_structure
+  - evaluator_R5_systematic_misclassification
