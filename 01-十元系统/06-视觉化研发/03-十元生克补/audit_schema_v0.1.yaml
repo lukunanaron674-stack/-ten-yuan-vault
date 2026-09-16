@@ -1,0 +1,82 @@
+version: v0.1
+updated: 2026-09-16
+module: ten_yuan_relation_visualization
+
+required:
+  sample_id: string
+  relation_id: string
+  relation_type: sheng|ke|bu
+  source: string
+  target: string
+  stage: T1|T2|T3
+  variant: POS|COEXIST_NEG|SHORTCUT_NEG
+
+scores:
+  source_signature: {min: 0, max: 2}
+  target_signature: {min: 0, max: 2}
+  causal_trace: {min: 0, max: 3}
+  operator_specificity: {min: 0, max: 3}
+  shortcut_independence: {min: 0, max: 3}
+
+visual_variables:
+  boundary: changed|stable|unclear
+  path: changed|stable|unclear
+  occupancy: changed|stable|unclear
+  connectivity: changed|stable|unclear
+  integrity: changed|stable|unclear
+  operability: changed|stable|unclear
+
+relation_questions:
+  sheng:
+    - "没有 source，target 是否仍会以同样方式成立？"
+    - "是否能追踪 source 的运行如何制造 target 的成立条件？"
+  ke:
+    - "target 原本如何运行？"
+    - "source 具体改变了 target 的哪个运行条件？"
+  bu:
+    - "source 进入前 target 明确缺什么？"
+    - "source 是否补足缺口而没有替代 target？"
+
+anti_cheat:
+  color_dependency: boolean
+  topic_dependency: boolean
+  scale_dependency: boolean
+  expression_dependency: boolean
+  fx_dependency: boolean
+  text_dependency: boolean
+  symmetry_dependency: boolean
+
+failure_family:
+  allowed:
+    - FP-COEXIST
+    - FP-TOPIC
+    - FP-COLOR
+    - FP-SCALE
+    - FP-EMOTION
+    - FP-FX
+    - FP-SYMMETRY
+    - FP-GROWTH
+    - FP-VIOLENCE
+    - FN-RELATION
+    - FN-SOURCE
+    - FN-TARGET
+    - NONE
+
+verdict_rule:
+  POS_PASS:
+    source_signature: ">=1"
+    target_signature: ">=1"
+    causal_trace: ">=2"
+    operator_specificity: ">=2"
+    shortcut_independence: ">=2"
+  NEG_PASS:
+    relation_must_be_rejected: true
+  final: PASS|FAIL|AMBIGUOUS
+
+output:
+  verdict: PASS|FAIL|AMBIGUOUS
+  evidence: string
+  failure_family: string
+  nearest_confusion: string|null
+  revision_target: [string]
+  next_action: string
