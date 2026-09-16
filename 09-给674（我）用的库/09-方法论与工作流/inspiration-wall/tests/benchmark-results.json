@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "test_type": "text-level structural unit test",
+  "note": "This verifies the Inspiration Wall workflow structure. It is not a substitute for later image-auditor validation on generated/collected images.",
+  "summary": {
+    "positive_cases_total": 30,
+    "positive_cases_passed": 30,
+    "negative_probes_total": 3,
+    "negative_probes_correctly_rejected": 3,
+    "eventization_probes_total": 6,
+    "eventization_J7_passed": 6,
+    "cross_domain_structural_preservation": "30/30 in curated structural unit tests",
+    "duplicate_rate": "0% in curated unit-test set",
+    "parent_traceability": "30/30"
+  }
+}
