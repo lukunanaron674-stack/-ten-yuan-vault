@@ -2,32 +2,47 @@
 type: current-visual-rd-phase
 status: active
 updated: 2026-09-16
-version: v0.8.0
-release: RELEASE_视觉化体系_v0.8.0_20260916.md
-phase: STYLE_GRAMMAR_CAUSAL_VALIDATION
+version: v0.8.1
+release: RELEASE_视觉化体系_v0.8.1_20260916.md
+phase: STYLE_GRAMMAR_AND_DYNAMIC_VISUAL_VALIDATION
 ---
 
-# 当前视觉化研发阶段｜v0.8.0
+# 当前视觉化研发阶段｜v0.8.1
 
-当前版本：**视觉化体系 v0.8.0 — Consolidation Candidate**。
+当前版本：**视觉化体系 v0.8.1 — Style Grammar + Dynamic Operations Integration**。
 
-当前阶段已经从“视觉化总收束 R0”推进到：
+当前视觉化正式进入双轨验证：
 
-> **十元角色设计 Style Grammar｜视觉因果验证阶段**
+```text
+A｜静态十元 Style Grammar 因果验证
+B｜Dynamic Visual Operations v1 盲测回归
+```
+
+两者职责不同：
+
+```text
+Style Grammar
+= 某一时刻，结构“是什么样”
+
+Dynamic Visual Operation
+= 结构怎样从 A 变到 B
+```
+
+不得用动态过程反向替代十元静态定义，也不得用静态标签替代动态链的真实变化。
 
 ## 默认策略
 
 ```text
-停止无边界找图
-→ 保留定向反例 / 混淆样本搜索
-→ 跑最小 A/B 单变量实验
-→ 删除测试
-→ 跨部位
-→ 跨风格外部复核
+停止无边界找图 / Deep Research
+→ 保留定向反例与混淆样本搜索
+→ 静态语法跑最小 A/B 单变量实验
+→ 动态运算跑盲测 + Freeze Gate
+→ 删除测试 / 最近邻 / 去捷径
+→ 跨部位 / 跨风格 / 跨对象
 → 通过者冻结
 ```
 
-当前资源比例建议：
+当前资源比例继续建议：
 
 ```text
 20% 定向找图复核
@@ -36,19 +51,18 @@ phase: STYLE_GRAMMAR_CAUSAL_VALIDATION
 
 核心原则：
 
-> 找图 = 外部普适性验证；生图 = 关键因果验证。
-
-没有新视觉证据，不因文字逻辑完整自动进入下一轮或冻结。
+> 找图 = 外部普适性验证；生图 = 关键因果验证；盲审 = 冻结依据。
 
 ## 当前版本成果入口
 
 1. `VERSION_视觉化体系.yaml`
-2. `RELEASE_视觉化体系_v0.8.0_20260916.md`
+2. `RELEASE_视觉化体系_v0.8.1_20260916.md`
 3. `CHANGELOG_视觉化体系.md`
 4. `00-总收束/README_视觉化总收束R0_20260916.md`
 5. `十元角色设计StyleGrammar_研究总整理_20260916.md`
+6. `02_给我用的知识凝结库/01_动态链条/视觉化/README.md`
 
-## 当前冻结状态
+## 当前静态冻结状态
 
 ```text
 X       → FROZEN
@@ -64,7 +78,7 @@ X并Z    → FREEZE_CANDIDATE_A_B_REQUIRED
 ```
 
 说明：
-- X、Z 核心定义已冻结，除明确反证外不再追加理论轮次。
+- X、Z 核心 Style Grammar 已冻结，除明确反证外不再追加理论轮次。
 - 未经过真实控变量图像因果验证的对象不得正式冻结。
 - NZ / NX / ZX 已因深研与反证发生候选改写。
 
@@ -83,7 +97,7 @@ XZ      临界耦合
 X并Z    上位包络双读
 ```
 
-## 当前执行顺序
+## 静态验证执行顺序
 
 按“最容易被模型视觉捷径污染”排序：
 
@@ -98,7 +112,45 @@ ZX
 → XN
 ```
 
-但若继续按原聊天推进顺序，则当前 N 仍停留在 A/B 关键因果验证口，不应因文字研究完成自动跳到 ZN。
+## Dynamic Visual v1 当前状态
+
+路径：
+
+`02_给我用的知识凝结库/01_动态链条/视觉化/`
+
+当前工程层：
+
+```text
+10 Visual Operations        DEFINITION_READY
+Generator Prompt v1         READY
+Blind Auditor Prompt v1     READY
+Audit Schema v1             READY
+Freeze Gate v1              READY
+Theory / Source Gate v1     READY
+100-sample generator v1     READY
+bulk blind regression       PENDING
+```
+
+动态视觉下一步不是继续扩母型，而是：
+
+```text
+固定 Visual Operation
+→ 生成正样本 / 最近邻 / 负样本
+→ Blind Auditor
+→ Freeze Gate
+→ failure family
+→ 仅失败项定点重开
+```
+
+Freeze Gate 当前核心阈值：
+
+```text
+定位准确率 ≥ 0.90
+独立证据率 ≥ 0.80
+最近邻拒绝率 ≥ 0.80
+捷径依赖 ≤ 0.10
+AMBIGUOUS 目标 ≤ 0.20
+```
 
 ## 当前 N 状态
 
@@ -125,11 +177,20 @@ B：双向接口 A ⇄ B
 - 寻找反例或假阳性；
 - 解决 ZX vs 视觉中心、NX vs 普通负空间、NZ vs 普通包围、X并Z vs common region 等具体混淆；
 - A/B 通过后做跨风格 / 跨题材外部复核；
-- 出现新的稳定 failure family。
+- Dynamic Visual 盲测出现新的稳定 failure family。
 
 否则不继续扩大参考图数量。
 
-## v1.0.0 升级门槛
+## v0.9.0 下一门槛
+
+```text
+十元 Style Grammar 大部分完成关键 A/B 因果验证
++ 最近邻矩阵成型
++ Dynamic Visual v1 完成首轮系统盲测
++ 图像审核器开始统一读取静态语法与动态操作
+```
+
+## v1.0.0 总冻结门槛
 
 ```text
 十元视觉标准卡 10/10 冻结
