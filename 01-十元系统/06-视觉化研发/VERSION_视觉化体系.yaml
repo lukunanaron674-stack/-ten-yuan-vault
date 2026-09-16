@@ -1,0 +1,74 @@
+system: ten_yuan_visualization
+version: 0.8.0
+codename: Consolidation Candidate
+released_at: 2026-09-16
+status: active-consolidation
+phase: VISUAL_CONSOLIDATION_R0
+authority_level: L3
+may_override_ten_yuan_canonical: false
+
+version_semantics:
+  major: 1.x means ten visual standard cards, nearest-neighbor matrix, relation visual grammar and audit loop are production-frozen
+  minor: new subsystem or major consolidation milestone
+  patch: corrections, guards, automation and non-breaking refinements
+
+upstream:
+  five_axis: 1.0
+  five_axis_status: FROZEN_REGRESSION_ONLY
+
+maturity:
+  theory_research: 0.90
+  visual_rule_extraction: 0.80
+  rule_consolidation: 0.65
+  real_image_regression: 0.55
+  automation_pipeline: 0.85
+
+frozen:
+  - X_style_grammar
+  - five_axis_v1_structure
+  - low_image_budget_protocol_v1
+
+candidate_frozen:
+  - XZ_visual_grammar
+  - ZN_visual_grammar
+
+active_consolidation:
+  - Z
+  - N
+  - NZ
+  - XN
+  - NX
+  - ZX
+  - XPZ
+
+subsystems:
+  image_auditor:
+    version: R1.5
+    status: active-validation
+  visual_dsl:
+    version: 0.1
+    status: usable-skeleton
+  visual_inbox:
+    version: 1.0
+    status: implemented
+  consolidation:
+    version: R0
+    status: active
+
+release_gate_for_1_0_0:
+  ten_visual_cards_frozen: 10
+  nearest_neighbor_matrix_complete: true
+  shortcut_free_regression_passed: true
+  cross_object_or_cross_topic_regression_passed: true
+  image_auditor_repeatable: true
+  relation_visual_grammar_minimum_set_complete: true
+  dynamic_chain_visual_regression_complete: true
+
+next:
+  - R0.1 X frozen reference card
+  - R0.2 XZ candidate freeze
+  - R0.3 ZN cross-object freeze
+  - R0.4 NX strict triad
+  - remaining ten-yuan consolidation
+  - nearest-neighbor matrix
+  - v1.0.0 freeze review
