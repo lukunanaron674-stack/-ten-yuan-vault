@@ -1,0 +1,78 @@
+id: IW-0001
+parent_id: null
+
+seed:
+  type: image|character|scene|object|architecture|world|story|composition
+  raw: ""
+  source: ""
+
+observable:
+  objects: []
+  actions_or_states: []
+  spatial_relations: []
+  constraints: []
+  unusual_point: ""
+
+surface:
+  color: []
+  style: []
+  genre: []
+  symbols: []
+  identity_labels: []
+
+structure:
+  core_sentence: ""
+  transferable_structure: ""
+  tension: ""
+  changed_variable: ""
+
+five_axis:
+  axis: ""
+  operation: ""
+  mode: direct|transfer|inversion
+  evidence: []
+  confidence: 0
+
+ten_yuan:
+  primary: ""
+  secondary: ""
+  actor: ""
+  object: ""
+  current_state: ""
+  changed_variable: ""
+  relation_shape: ""
+  direction: ""
+  path_set: []
+  decision_right: ""
+  reentry_right: ""
+  condition: ""
+  stage: ""
+  consequence: ""
+  end_state: ""
+
+anti_cheat:
+  remove_color: pass
+  remove_genre: pass
+  remove_identity: pass
+  remove_symbol: pass
+  structure_still_exists: pass
+
+score:
+  structural_clarity: 0
+  surface_independence: 0
+  cross_domain_transfer: 0
+  concreteness: 0
+  novelty: 0
+  total: 0
+
+judge:
+  J1: pass
+  J2: pass
+  J3: pass
+  J4: pass
+  J5: pass
+  J6: pass
+  J7: pass
+  J8: pass
+  verdict: candidate|accepted|rejected
+  reason: ""
