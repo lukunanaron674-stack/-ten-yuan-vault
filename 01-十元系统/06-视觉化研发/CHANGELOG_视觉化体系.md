@@ -1,17 +1,19 @@
 # 视觉化体系 CHANGELOG
 
-## v0.8.1 — 2026-09-16 — Style Grammar + Dynamic Visual Operations
+## v0.8.1 — 2026-09-16 — Style Grammar + Relation + Dynamic Visual Operations
 
 ### Added
 - 新增 `十元角色设计StyleGrammar_研究总整理_20260916.md`，统一收束十元角色设计底层造型语法研究。
 - 建立十元 Style Grammar 的统一 R0–R8 研发轮次：资料拆解 → 候选语法 → 反例攻击 → 去捷径 → 极简压力 → A/B 因果 → 跨部位 → 跨风格 → 冻结。
 - 建立 8 个未冻结十元的最终 A/B 最小实验队列与删除测试。
 - 增补图像审核器结构字段：互为条件、关系状态切换、终端接口、共同规则、缺席组织位、非对称组织锚点、临界余量、上位包络双读等。
+- 新增十元生 / 克 / 补关系视觉化 v0.1：`audit_schema_v0.1.yaml`、本地续跑交接、T1/T2/T3 阶段协议。
+- 生克补每条关系固定 `POS / COEXIST_NEG / SHORTCUT_NEG` 三样本；25 条关系规划 75 张 T1 基础样本。
 - 接入 Dynamic Visual Operations v1：10 个视觉运算母型，用于描述结构从 A 到 B 的变化。
 - 新增 Dynamic Visual Generator Prompt v1、Blind Auditor Prompt v1 与 machine-readable Audit Schema v1。
 - 新增 Dynamic Visual Freeze Gate v1 与 Theory / Source Input Gate v1。
 - 新增 100-sample blind-test generator v1，用于后续动态视觉批量盲测回归。
-- 明确静态 Style Grammar 与 Dynamic Visual Operations 为两个不同层级：前者描述状态结构，后者描述结构变化。
+- 正式区分三层：静态 Style Grammar、Relation Visualization、Dynamic Visual Operations。
 
 ### Changed
 - Z 正式从 consolidation 提升为 `FROZEN`，核心为“建立方向 → 转向 → 跨不同结构层级继承”。
@@ -23,10 +25,10 @@
 - ZX 从“单源触发重排”修正为“非对称组织锚点 / 约束传播”，避免把普通视觉中心误当 ZX。
 - XZ 收束为“低余量、低容错、多接口临界耦合”。
 - X并Z 收束为“上位包络建立第二层整体读取，同时内部单元保持自治”。
+- 生克补从“同框/冲突/成长/拼图”等表面类比升级为 source→target 的结构因果审核。
 - 默认策略从“找图优先”进一步切换为“20% 定向找图复核 + 80% 控变量验证 / 审核”。
-- 找图的职责降级为反例、混淆边界和跨风格普适性验证；生图只承担关键因果验证。
 - 动态链视觉化从自然语言阶段说明升级为 `起点 → Visual Operation → 变化 → 端点 → Blind Audit → Freeze Gate`。
-- 整体版本从 v0.8.0 升至 v0.8.1；Dynamic Visual 子系统自身记为 v1.0 definition-ready / regression-pending。
+- 整体版本从 v0.8.0 升至 v0.8.1。
 
 ### Current freeze state
 
@@ -49,7 +51,18 @@ X并Z    FREEZE_CANDIDATE_A_B_REQUIRED
 ZX → NX → NZ → ZN → N → X并Z → XZ → XN
 ```
 
-该顺序按“模型最容易被视觉捷径污染”排序，不代表理论价值排名。
+### Relation Visual v0.1 state
+
+```text
+relation types              SHENG / KE / BU
+relations                   25
+stages                      T1 / T2 / T3
+variants                    POS / COEXIST_NEG / SHORTCUT_NEG
+audit schema                v0.1
+local run handoff           v0.1
+T1 base samples planned     75
+status                      LOCAL_REGRESSION_READY
+```
 
 ### Dynamic Visual v1 state
 
@@ -102,14 +115,6 @@ bulk blind regression       PENDING
 - 生 / 克 / 补最小视觉对照集。
 - 动态链关键阶段回归。
 - 图像审核器稳定重复判定。
-
-### Next
-- R0.1 X 冻结样板。
-- R0.2 XZ 候选冻结。
-- R0.3 ZN 跨对象候选冻结。
-- R0.4 NX 严格三样本。
-- 剩余十元逐项收束。
-- v1.0.0 总冻结审查。
 
 ---
 
