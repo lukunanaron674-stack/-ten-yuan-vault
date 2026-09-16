@@ -1,12 +1,17 @@
 # 视觉化体系 CHANGELOG
 
-## Unreleased — 2026-09-16 — Style Grammar Causal Validation
+## v0.8.1 — 2026-09-16 — Style Grammar + Dynamic Visual Operations
 
 ### Added
 - 新增 `十元角色设计StyleGrammar_研究总整理_20260916.md`，统一收束十元角色设计底层造型语法研究。
 - 建立十元 Style Grammar 的统一 R0–R8 研发轮次：资料拆解 → 候选语法 → 反例攻击 → 去捷径 → 极简压力 → A/B 因果 → 跨部位 → 跨风格 → 冻结。
 - 建立 8 个未冻结十元的最终 A/B 最小实验队列与删除测试。
 - 增补图像审核器结构字段：互为条件、关系状态切换、终端接口、共同规则、缺席组织位、非对称组织锚点、临界余量、上位包络双读等。
+- 接入 Dynamic Visual Operations v1：10 个视觉运算母型，用于描述结构从 A 到 B 的变化。
+- 新增 Dynamic Visual Generator Prompt v1、Blind Auditor Prompt v1 与 machine-readable Audit Schema v1。
+- 新增 Dynamic Visual Freeze Gate v1 与 Theory / Source Input Gate v1。
+- 新增 100-sample blind-test generator v1，用于后续动态视觉批量盲测回归。
+- 明确静态 Style Grammar 与 Dynamic Visual Operations 为两个不同层级：前者描述状态结构，后者描述结构变化。
 
 ### Changed
 - Z 正式从 consolidation 提升为 `FROZEN`，核心为“建立方向 → 转向 → 跨不同结构层级继承”。
@@ -20,6 +25,8 @@
 - X并Z 收束为“上位包络建立第二层整体读取，同时内部单元保持自治”。
 - 默认策略从“找图优先”进一步切换为“20% 定向找图复核 + 80% 控变量验证 / 审核”。
 - 找图的职责降级为反例、混淆边界和跨风格普适性验证；生图只承担关键因果验证。
+- 动态链视觉化从自然语言阶段说明升级为 `起点 → Visual Operation → 变化 → 端点 → Blind Audit → Freeze Gate`。
+- 整体版本从 v0.8.0 升至 v0.8.1；Dynamic Visual 子系统自身记为 v1.0 definition-ready / regression-pending。
 
 ### Current freeze state
 
@@ -43,6 +50,19 @@ ZX → NX → NZ → ZN → N → X并Z → XZ → XN
 ```
 
 该顺序按“模型最容易被视觉捷径污染”排序，不代表理论价值排名。
+
+### Dynamic Visual v1 state
+
+```text
+10 Visual Operations        DEFINITION_READY
+Generator Prompt v1         READY
+Blind Auditor Prompt v1     READY
+Audit Schema v1             READY
+Freeze Gate v1              READY
+Theory / Source Gate v1     READY
+100-sample generator v1     READY
+bulk blind regression       PENDING
+```
 
 ---
 
@@ -98,7 +118,7 @@ ZX → NX → NZ → ZN → N → X并Z → XZ → XN
 ```text
 major：生产冻结结构发生大版本升级
 minor：新增重要子系统 / 达到重大收束里程碑
-patch：兼容性修正、guard、自动化、非破坏性优化
+patch：兼容性修正、guard、自动化、子系统整合、非破坏性优化
 ```
 
 ### v1.0.0 仅在以下全部完成后发布
