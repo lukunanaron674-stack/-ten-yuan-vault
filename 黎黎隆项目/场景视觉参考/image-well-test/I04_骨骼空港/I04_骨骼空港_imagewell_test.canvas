@@ -3,23 +3,132 @@
     {
       "id": "root",
       "type": "text",
-      "text": "# image-well 试跑｜I04 骨骼空港\n\n查询：whale skeleton ribs architecture\n来源：Openverse + Wikimedia\n\n目的：验证无登录图片搜索 → 本地下载 → Canvas type:file 预览。",
+      "text": "# image-well 试跑｜I04 骨骼空港\n\n三组查询：whale skeleton / rib cage skeleton / skeleton museum\n来源：Openverse + Wikimedia\n\n验证：无登录搜索 → 本地下载 → Canvas type:file。",
       "x": 0,
       "y": 0,
       "width": 760,
-      "height": 280,
+      "height": 300,
       "color": "5"
+    },
+    {
+      "id": "img_1",
+      "type": "file",
+      "file": "黎黎隆项目/场景视觉参考/image-well-test/I04_骨骼空港/q1/openverse_Albany_Whale_World_Whale_skeleton_exhibi_0621e157.jpg",
+      "x": -650,
+      "y": 380,
+      "width": 600,
+      "height": 430,
+      "color": "6"
+    },
+    {
+      "id": "img_2",
+      "type": "file",
+      "file": "黎黎隆项目/场景视觉参考/image-well-test/I04_骨骼空港/q1/openverse_Whale_Skeleton_95a3c0e5.jpg",
+      "x": 30,
+      "y": 380,
+      "width": 600,
+      "height": 430,
+      "color": "6"
+    },
+    {
+      "id": "img_3",
+      "type": "file",
+      "file": "黎黎隆项目/场景视觉参考/image-well-test/I04_骨骼空港/q1/openverse_Whale_skeleton_554ca8bb.jpg",
+      "x": 710,
+      "y": 380,
+      "width": 600,
+      "height": 430,
+      "color": "6"
+    },
+    {
+      "id": "img_4",
+      "type": "file",
+      "file": "黎黎隆项目/场景视觉参考/image-well-test/I04_骨骼空港/q1/wikimedia_Natural_History_Museum_London_Central_Ha_4bd4884f.jpg",
+      "x": -650,
+      "y": 900,
+      "width": 600,
+      "height": 430,
+      "color": "6"
+    },
+    {
+      "id": "img_5",
+      "type": "file",
+      "file": "黎黎隆项目/场景视觉参考/image-well-test/I04_骨骼空港/q1/wikimedia_Skeleton_of_Sperm_Whale_Physeter_macroce_e61d03ad.jpg",
+      "x": 30,
+      "y": 900,
+      "width": 600,
+      "height": 430,
+      "color": "6"
+    },
+    {
+      "id": "img_6",
+      "type": "file",
+      "file": "黎黎隆项目/场景视觉参考/image-well-test/I04_骨骼空港/q1/wikimedia_Whale_skeleton_5jpg_2e2f11e4.jpg",
+      "x": 710,
+      "y": 900,
+      "width": 600,
+      "height": 430,
+      "color": "6"
     },
     {
       "id": "note",
       "type": "text",
-      "text": "## 试跑结果\n\n本地图片数：0\n\n所有参考节点均为 `type:file`。\nCanvas 不含 Pinterest / Behance 网页预览，不需要登录。",
+      "text": "## 试跑成功\n\nCanvas 引用本地图：6 张\n\n`type:link`：0\nPinterest 登录：0\n\n这只是检验采集管线，图片是否适合“骨骼空港”还要再做视觉筛选。",
       "x": 0,
-      "y": 1500,
+      "y": 1450,
       "width": 760,
-      "height": 260,
+      "height": 300,
       "color": "2"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "img_1",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "无登录本地参考"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "toNode": "img_2",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "无登录本地参考"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "toNode": "img_3",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "无登录本地参考"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "toNode": "img_4",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "无登录本地参考"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "toNode": "img_5",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "无登录本地参考"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "toNode": "img_6",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "无登录本地参考"
+    }
+  ]
 }
