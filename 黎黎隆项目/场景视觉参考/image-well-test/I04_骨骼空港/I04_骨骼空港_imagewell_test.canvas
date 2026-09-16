@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "# image-well 试跑｜I04 骨骼空港\n\n查询：whale skeleton ribs architecture\n来源：Openverse + Wikimedia\n\n目的：验证无登录图片搜索 → 本地下载 → Canvas type:file 预览。",
+      "x": 0,
+      "y": 0,
+      "width": 760,
+      "height": 280,
+      "color": "5"
+    },
+    {
+      "id": "note",
+      "type": "text",
+      "text": "## 试跑结果\n\n本地图片数：0\n\n所有参考节点均为 `type:file`。\nCanvas 不含 Pinterest / Behance 网页预览，不需要登录。",
+      "x": 0,
+      "y": 1500,
+      "width": 760,
+      "height": 260,
+      "color": "2"
+    }
+  ],
+  "edges": []
+}
