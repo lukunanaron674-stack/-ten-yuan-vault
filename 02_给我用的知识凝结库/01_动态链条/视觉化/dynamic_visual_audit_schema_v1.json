@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dynamic Visual Audit Record v1",
+  "type": "object",
+  "required": ["sample_id", "prediction", "evidence", "shortcut_flags", "confidence"],
+  "properties": {
+    "sample_id": {"type": "string"},
+    "prediction": {
+      "enum": ["REWIRE", "REDISTRIBUTE", "CONVERGE", "GROW", "ENCLOSE", "INVADE", "DETACH", "RECIRCULATE", "REPLACE", "TWIST", "AMBIGUOUS"]
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "connectivity_change": {"type": "boolean"},
+        "flow_reassignment": {"type": "boolean"},
+        "freedom_reduction": {"type": "boolean"},
+        "new_structure_generated": {"type": "boolean"},
+        "boundary_closure": {"type": "boolean"},
+        "boundary_crossing": {"type": "boolean"},
+        "attachment_loss": {"type": "boolean"},
+        "path_closure": {"type": "boolean"},
+        "occupant_replacement": {"type": "boolean"},
+        "continuous_geometric_distortion": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    },
+    "shortcut_flags": {
+      "type": "array",
+      "items": {"enum": ["COLOR", "FACE", "PROP", "GENRE", "TEXT", "ARROW", "SPLIT_SCREEN", "CENTRAL_OBJECT", "CROWD_DENSITY"]},
+      "uniqueItems": true
+    },
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "secondary_prediction": {
+      "enum": ["REWIRE", "REDISTRIBUTE", "CONVERGE", "GROW", "ENCLOSE", "INVADE", "DETACH", "RECIRCULATE", "REPLACE", "TWIST", "NONE"]
+    },
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}
