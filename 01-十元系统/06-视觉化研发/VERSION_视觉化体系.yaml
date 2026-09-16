@@ -1,9 +1,9 @@
 system: ten_yuan_visualization
 version: 0.8.1
-codename: Style Grammar + Dynamic Operations Integration
+codename: Style Grammar + Relation + Dynamic Operations Integration
 released_at: 2026-09-16
 status: active-validation
-phase: STYLE_GRAMMAR_AND_DYNAMIC_VISUAL_VALIDATION
+phase: STYLE_RELATION_DYNAMIC_VISUAL_VALIDATION
 authority_level: L3
 may_override_ten_yuan_canonical: false
 
@@ -87,6 +87,17 @@ subsystems:
   consolidation:
     version: R0
     status: style-grammar-causal-validation
+  relation_visualization:
+    version: 0.1
+    status: local-regression-ready
+    relation_types: [sheng, ke, bu]
+    relation_count: 25
+    stages: [T1, T2, T3]
+    variants: [POS, COEXIST_NEG, SHORTCUT_NEG]
+    audit_schema: v0.1
+    local_run_handoff: v0.1
+    t1_base_samples_planned: 75
+    source: 01-十元系统/06-视觉化研发/03-十元生克补
   dynamic_visualization:
     version: 1.0
     status: definition-ready-regression-pending
@@ -101,8 +112,8 @@ subsystems:
 
 architecture:
   static_visual_grammar: describes_visible_state_structure
+  relation_visualization: tests_whether_source_actually_changes_target_under_sheng_ke_bu
   dynamic_visual_operations: describes_A_to_B_structural_transition
-  relation_layer: applies_operations_to_sheng_ke_bu_and_dynamic_chains
   audit_layer: blind_structural_evidence_validation
 
 release_gate_for_1_0_0:
@@ -116,6 +127,7 @@ release_gate_for_1_0_0:
 
 next:
   - run minimal A/B causal validation for unfrozen Style Grammars
+  - run priority T1 relation triplets and reject coexistence/shortcut false positives
   - deletion tests
   - cross-position validation for passing candidates
   - targeted cross-style external validation
