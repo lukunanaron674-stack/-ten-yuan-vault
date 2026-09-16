@@ -1,0 +1,61 @@
+{
+  "X": {
+    "required_any": [["boundary.expansion", true], ["boundary.inside_outside_transition", true]],
+    "notes": "外物进入主体边界并被纳入/同化；单纯包裹/承载不够。"
+  },
+  "Z": {
+    "required": [["relation.convergence", true]],
+    "notes": "多个独立关系/路径收束到一个小而明确的焦点。"
+  },
+  "N": {
+    "required": [["relation.support", true]],
+    "reject_if": [["boundary.expansion", true]],
+    "notes": "承载/稳定其他对象，被承载对象保持独立。"
+  },
+  "ZN": {
+    "required": [["relation.outward", true], ["relation.propagation", true]],
+    "notes": "源向多个接收者外扩并诱发响应。"
+  },
+  "NZ": {
+    "required": [["position.reserved_slot", true]],
+    "notes": "为特定对象保留可返回/停靠位置；最好由离开→保留→返回序列确认。"
+  },
+  "XN": {
+    "required_any": [["relation.type", "repeatable_rule"], ["relation.type", "standardized_path"]],
+    "notes": "对象/行动被纳入可重复、标准化、可纠偏流程。"
+  },
+  "NX": {
+    "required": [
+      ["entitlement.before", true],
+      ["entitlement.resource_transfer", true],
+      ["entitlement.self_share_trajectory", "decreasing"],
+      ["entitlement.other_access_trajectory", "maintained_or_increasing"],
+      ["temporal.continuity_after", true]
+    ],
+    "notes": "主体份额递减使他人/关系继续；单次礼让、被排挤、普通帮助不够。"
+  },
+  "ZX": {
+    "required": [["temporal.initiator", "actor"], ["temporal.response", true]],
+    "notes": "主体先动，环境/他者随后响应。"
+  },
+  "XZ": {
+    "required": [
+      ["temporal.threshold_margin", "low"],
+      ["temporal.trigger_magnitude", "low"],
+      ["temporal.threshold_crossed", true],
+      ["temporal.response_magnitude", "high"],
+      ["temporal.response_scope", "systemic"]
+    ],
+    "notes": "近临界+小触发+阈值跨越+系统级高增益变化。"
+  },
+  "XPZ": {
+    "required": [
+      ["presentation.internal_content", true],
+      ["presentation.presentation_layer", true],
+      ["presentation.presentation_selected", true],
+      ["presentation.audience_reads_layer", true],
+      ["presentation.audience_response", true]
+    ],
+    "notes": "内部内容→选择呈现→受众读取→受众响应。"
+  }
+}
