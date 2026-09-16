@@ -1,8 +1,8 @@
 ---
 type: dynamic-chain-master-index
 status: canonical-current
-version: v3.92
-updated: 2026-07-31
+version: v3.93
+updated: 2026-09-17
 framework_version: v3.94
 execution_protocol_version: v1.4
 method_amendment_version: v2.1.2-routing-priority-hotfix
@@ -10,6 +10,34 @@ template_version: v1.3
 ---
 
 # 生克补动态链研究总索引
+
+## 2026-09-17 研发补充入口
+
+> 以下为 2026-09-16→17 新增的研发层，不覆盖本索引既有影片审计正本与十元 canonical。
+
+- `DAILY_20260916-17_动态链系列研究知识包.md`：今日所有动态链相关新成果总整理。
+- `动态链质量评估器_v1.0_20260917.md`：节点20 / 边40 / 整链40 的质量评价器；R1–R4冻结，R5待盲测。
+- `NEXT_动态链系列研究队列_20260917.yaml`：R5经典作品盲测、ZX/NX端点验证、生克补T1、Dynamic Visual盲测、黎黎隆R6的机器可读续跑队列。
+- `01-十元系统/06-视觉化研发/03-十元生克补/`：Relation Visualization v0.1。
+- `02_给我用的知识凝结库/01_动态链条/视觉化/`：Dynamic Visual Operations v1。
+
+新增统一原则：
+
+```text
+合法链 ≠ 优秀链
+
+优秀动态边必须至少能说明：
+mechanism + changed_variable Δ + residue + next_affordance
+```
+
+新增统一读法：
+
+```text
+横向：同阶段主 / 次 / 体量 / 生克补 / 依赖 / 主导权
+纵向：trigger / Δ / 主次迁移 / residue / path / reversibility / next_affordance
+```
+
+---
 
 ## 当前有效案例
 新增：`影片案例/楚门的世界_1998_帆船撞上摄影棚墙世界边界暴露与行动重组审计.md`
@@ -62,8 +90,21 @@ transition_relation：none
 ## 审计交接
 本轮`audit_issue: none`。没有修改问题状态，也没有写理论卡。
 
-## 下一验证
+## 旧影片审计下一验证
 ```text
 楚门沿墙找到楼梯并登上，出口路径显现与离场步骤推进。
 重点分账zx方向持续、xn现场步骤组织与现成设施条件；不得把楼梯或门写成十元端点。
+```
+
+## 新研发下一验证
+
+按 `NEXT_动态链系列研究队列_20260917.yaml` 执行。当前研发优先级：
+
+```text
+R5 Evaluator跨题材盲测
+→ ZX/NX 静态端点六图
+→ 生克补首批8条T1
+→ Dynamic Visual 10母型预检
+→ 100样本盲测
+→ 黎黎隆R6母链筛选
 ```
