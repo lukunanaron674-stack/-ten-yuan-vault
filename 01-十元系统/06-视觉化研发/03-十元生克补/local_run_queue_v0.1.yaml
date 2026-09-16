@@ -1,0 +1,117 @@
+version: v0.1
+updated: 2026-09-16
+module: ten_yuan_relation_visualization
+canonical_relation_source: ../../十元生补克表.md
+workbench: README_十元生克补视觉化_v0.1_20260916.md
+mode: local_low_cost_first
+may_override_canonical: false
+
+default_stage: T1
+stage_gate:
+  T1: pure_structure
+  T2: neutral_object
+  T3: project_carrier
+  rule: T1_PASS_required_before_T2; T2_PASS_required_before_T3
+
+render_policy:
+  one_image_per_sample: true
+  no_grid_collage: true
+  no_text_in_image: true
+  no_arrows_in_image: true
+  keep_style_neutral: true
+  default_aspect_ratio: "16:9"
+
+triplet_per_relation:
+  - POS
+  - COEXIST_NEG
+  - SHORTCUT_NEG
+
+controlled_variables:
+  - source_ten_yuan
+  - target_ten_yuan
+  - relation_type
+  - carrier_type
+
+forbidden_shortcuts:
+  - color_coding
+  - weapon
+  - facial_expression
+  - readable_text
+  - ui_label
+  - magic_fx
+  - gore
+  - simple_big_vs_small
+  - symbolic_birth_for_sheng
+  - puzzle_piece_for_bu
+
+visual_variables:
+  - boundary
+  - path
+  - occupancy
+  - connectivity
+  - integrity
+  - operability
+
+relations:
+  sheng:
+    - {id: SHENG-01, source: xz, target: zx}
+    - {id: SHENG-02, source: zx, target: zn}
+    - {id: SHENG-03, source: zn, target: n}
+    - {id: SHENG-04, source: n, target: xn}
+    - {id: SHENG-05, source: xn, target: xz}
+    - {id: SHENG-06, source: nz, target: nx}
+    - {id: SHENG-07, source: nx, target: x}
+    - {id: SHENG-08, source: x, target: x并z}
+    - {id: SHENG-09, source: x并z, target: z}
+    - {id: SHENG-10, source: z, target: nz}
+
+  ke:
+    - {id: KE-01, source: xz, target: zn}
+    - {id: KE-02, source: zn, target: xn}
+    - {id: KE-03, source: xn, target: zx}
+    - {id: KE-04, source: zx, target: n}
+    - {id: KE-05, source: n, target: xz}
+    - {id: KE-06, source: nz, target: x}
+    - {id: KE-07, source: x, target: z}
+    - {id: KE-08, source: z, target: nx}
+    - {id: KE-09, source: nx, target: x并z}
+    - {id: KE-10, source: x并z, target: nz}
+
+  bu:
+    - {id: BU-01, source: xz, target: nz, bidirectional: true}
+    - {id: BU-02, source: zx, target: nx, bidirectional: true}
+    - {id: BU-03, source: zn, target: x, bidirectional: true}
+    - {id: BU-04, source: n, target: x并z, bidirectional: true}
+    - {id: BU-05, source: xn, target: z, bidirectional: true}
+
+sample_id_template: "VIS-REL-{REL_ID}-{STAGE}-{VARIANT}"
+
+T1_prompt_contract:
+  POS: |
+    Create one neutral abstract structural image that expresses SOURCE RELATION TARGET through visible changes in boundary, path, occupancy, connectivity, integrity, or operability. Both endpoints must be structurally readable and the relation must actually occur. No text, arrows, color coding, character emotion, weapons, magic effects, birth/growth clichés, puzzle-piece clichés, or simple big-vs-small dominance.
+  COEXIST_NEG: |
+    Create one control image containing SOURCE and TARGET as separate readable structures but with no causal, suppressive, or complementary interaction between them. Match overall visual complexity and composition density to the positive sample. No text or symbolic shortcuts.
+  SHORTCUT_NEG: |
+    Create one deceptive control image that looks superficially like the requested relation using atmosphere or generic visual cliché, while deliberately omitting the required structural relation. Keep it non-graphic and neutral. This image exists to test whether the auditor incorrectly relies on shortcuts.
+
+execution_order:
+  priority_batch_1:
+    - SHENG-07   # nx -> x
+    - SHENG-05   # xn -> xz
+    - SHENG-09   # x并z -> z
+    - KE-01      # xz -> zn
+    - KE-03      # xn -> zx
+    - KE-08      # z -> nx
+    - KE-09      # nx -> x并z
+    - BU-05      # xn <-> z
+  then: all_remaining_relations
+
+stop_conditions:
+  pass:
+    - source_signature_readable
+    - target_signature_readable
+    - relation_readable_without_shortcuts
+    - coexist_negative_rejected
+    - shortcut_negative_rejected
+  fail_action: stay_at_current_stage_and_log_failure
+  ambiguous_action: generate_up_to_3_additional_variants_same_stage
