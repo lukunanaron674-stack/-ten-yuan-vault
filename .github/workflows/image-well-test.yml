@@ -1,0 +1,90 @@
+name: image-well-test
+
+on:
+  push:
+    paths:
+      - '.github/workflows/image-well-test.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        run: python -m pip install --upgrade uv
+
+      - name: Fetch image-well upstream
+        run: |
+          git clone --depth 1 https://github.com/tdimino/claude-code-minoan.git /tmp/minoan
+
+      - name: Search and download refs
+        run: |
+          OUT='黎黎隆项目/场景视觉参考/image-well-test/I04_骨骼空港'
+          mkdir -p "$OUT"
+          uv run /tmp/minoan/skills/design-media/image-well/scripts/well.py search "whale skeleton ribs architecture" \
+            --sources openverse wikimedia \
+            --limit 3 \
+            --format download \
+            --output "$OUT"
+          find "$OUT" -maxdepth 2 -type f -print
+
+      - name: Build local-preview Canvas
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('黎黎隆项目/场景视觉参考/image-well-test/I04_骨骼空港')
+          imgs = [p for p in root.rglob('*') if p.is_file() and p.suffix.lower() in {'.jpg','.jpeg','.png','.webp','.gif'}]
+          imgs = imgs[:6]
+
+          nodes = [
+              {
+                  'id':'root','type':'text','text':'# image-well 试跑｜I04 骨骼空港\n\n查询：whale skeleton ribs architecture\n来源：Openverse + Wikimedia\n\n目的：验证无登录图片搜索 → 本地下载 → Canvas type:file 预览。',
+                  'x':0,'y':0,'width':760,'height':280,'color':'5'
+              }
+          ]
+          edges=[]
+          for i,p in enumerate(imgs):
+              x = -650 + (i%3)*680
+              y = 380 + (i//3)*520
+              rel = p.as_posix()
+              nid=f'img_{i+1}'
+              nodes.append({'id':nid,'type':'file','file':rel,'x':x,'y':y,'width':600,'height':430,'color':'6'})
+              edges.append({'id':f'e{i+1}','fromNode':'root','toNode':nid,'fromSide':'bottom','toSide':'top','label':'无登录参考'})
+
+          nodes.append({
+              'id':'note','type':'text',
+              'text':f'## 试跑结果\n\n本地图片数：{len(imgs)}\n\n所有参考节点均为 `type:file`。\nCanvas 不含 Pinterest / Behance 网页预览，不需要登录。',
+              'x':0,'y':1500,'width':760,'height':260,'color':'2'
+          })
+          data={'nodes':nodes,'edges':edges}
+          out = root/'I04_骨骼空港_imagewell_test.canvas'
+          out.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
+          print('canvas:', out)
+          print('images:', len(imgs))
+          PY
+
+      - name: Commit test result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '黎黎隆项目/场景视觉参考/image-well-test/I04_骨骼空港'
+          if git diff --cached --quiet; then
+            echo 'No files produced'
+            exit 1
+          fi
+          git commit -m '[skip ci] image-well I04 骨骼空港 test'
+          git push
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: image-well-I04-test
+          path: '黎黎隆项目/场景视觉参考/image-well-test/I04_骨骼空港'
