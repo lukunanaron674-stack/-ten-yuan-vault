@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "matrix": {
+    "domains": ["character", "room", "architecture", "city", "machine", "plant_group"],
+    "operation_probes": {
+      "boundary_expansion": "A unit extends beyond its original boundary while keeping ancestry traceable.",
+      "focus_shift": "Many peripheral relations become reorganized around one newly salient point.",
+      "containment_support": "A structure becomes the carrier/buffer that allows other units to remain viable.",
+      "rule_separation": "A new threshold/rule splits one continuous system into differentiated access or classes.",
+      "rerouted_path": "Direct access becomes blocked or avoided; secondary paths reorganize the system."
+    },
+    "required_checks": [
+      "surface_independence",
+      "cross_domain_preservation",
+      "concreteness",
+      "non_duplicate",
+      "parent_traceable"
+    ],
+    "expected_case_count": 30
+  },
+  "negative_probes": [
+    "blue/river => water shortcut must reject",
+    "red/flame => fire shortcut must reject",
+    "noun swap without relation change must reject"
+  ],
+  "ten_yuan_eventization_probes": [
+    "ZX x city",
+    "ZX x machine",
+    "NX x character",
+    "NX x room",
+    "XZ x architecture",
+    "XZ x plant_group"
+  ]
+}
