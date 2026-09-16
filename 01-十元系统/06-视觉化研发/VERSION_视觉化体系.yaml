@@ -2,8 +2,8 @@ system: ten_yuan_visualization
 version: 0.8.0
 codename: Consolidation Candidate
 released_at: 2026-09-16
-status: active-consolidation
-phase: VISUAL_CONSOLIDATION_R0
+status: active-validation
+phase: STYLE_GRAMMAR_CAUSAL_VALIDATION
 authority_level: L3
 may_override_ten_yuan_canonical: false
 
@@ -17,29 +17,62 @@ upstream:
   five_axis_status: FROZEN_REGRESSION_ONLY
 
 maturity:
-  theory_research: 0.90
-  visual_rule_extraction: 0.80
-  rule_consolidation: 0.65
-  real_image_regression: 0.55
+  theory_research: 0.95
+  visual_rule_extraction: 0.90
+  rule_consolidation: 0.82
+  real_image_regression: 0.58
   automation_pipeline: 0.85
 
 frozen:
   - X_style_grammar
+  - Z_style_grammar
   - five_axis_v1_structure
   - low_image_budget_protocol_v1
 
-candidate_frozen:
+strong_freeze_candidates:
+  - XN_visual_grammar
   - XZ_visual_grammar
-  - ZN_visual_grammar
 
-active_consolidation:
-  - Z
-  - N
-  - NZ
-  - XN
-  - NX
+freeze_candidates:
+  - N_visual_grammar
+  - ZN_visual_grammar
+  - XPZ_visual_grammar
+
+revised_priority_validation:
+  - NZ_visual_grammar
+  - NX_visual_grammar
+  - ZX_visual_grammar
+
+style_grammar_current:
+  X: independent_self_sufficient_units
+  Z: direction_migration_with_cross_structure_inheritance
+  N: bidirectional_mutual_conditioning
+  ZN: relation_rule_rewrite_alpha_beta_beta
+  NZ: terminal_fit_with_clearance
+  XN: heterogeneous_units_shared_slot_rule
+  NX: absent_organizing_slot
+  ZX: asymmetric_organizing_anchor
+  XZ: low_clearance_critical_coupling
+  XPZ: outer_envelope_dual_reading
+
+validation_strategy:
+  image_search_ratio: 0.20
+  controlled_validation_ratio: 0.80
+  image_search_roles:
+    - counterexample
+    - confusion_boundary
+    - cross_style_external_validation
+  image_generation_role: causal_A_B_validation
+
+validation_priority:
   - ZX
+  - NX
+  - NZ
+  - ZN
+  - N
   - XPZ
+  - XZ
+  - XN
 
 subsystems:
   image_auditor:
@@ -53,7 +86,7 @@ subsystems:
     status: implemented
   consolidation:
     version: R0
-    status: active
+    status: style-grammar-causal-validation
 
 release_gate_for_1_0_0:
   ten_visual_cards_frozen: 10
@@ -65,10 +98,9 @@ release_gate_for_1_0_0:
   dynamic_chain_visual_regression_complete: true
 
 next:
-  - R0.1 X frozen reference card
-  - R0.2 XZ candidate freeze
-  - R0.3 ZN cross-object freeze
-  - R0.4 NX strict triad
-  - remaining ten-yuan consolidation
+  - run minimal A/B causal validation for unfrozen Style Grammars
+  - deletion tests
+  - cross-position validation for passing candidates
+  - targeted cross-style external validation
   - nearest-neighbor matrix
   - v1.0.0 freeze review
