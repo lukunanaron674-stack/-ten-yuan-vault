@@ -1,0 +1,12 @@
+[
+  {"fixture":"fixture_X","expected":"X","predicted":"X","score":1.0,"pass":true},
+  {"fixture":"fixture_Z","expected":"Z","predicted":"Z","score":1.0,"pass":true},
+  {"fixture":"fixture_N","expected":"N","predicted":"N","score":1.0,"pass":true},
+  {"fixture":"fixture_ZN","expected":"ZN","predicted":"ZN","score":1.0,"pass":true},
+  {"fixture":"fixture_NZ","expected":"NZ","predicted":"NZ","score":1.0,"pass":true},
+  {"fixture":"fixture_XN","expected":"XN","predicted":"XN","score":1.0,"pass":true},
+  {"fixture":"fixture_NX","expected":"NX","predicted":"NX","score":1.0,"pass":true},
+  {"fixture":"fixture_ZX","expected":"ZX","predicted":"ZX","score":1.0,"pass":true},
+  {"fixture":"fixture_XZ","expected":"XZ","predicted":"XZ","score":1.0,"pass":true},
+  {"fixture":"fixture_XPZ","expected":"XPZ","predicted":"XPZ","score":1.0,"pass":true}
+]
