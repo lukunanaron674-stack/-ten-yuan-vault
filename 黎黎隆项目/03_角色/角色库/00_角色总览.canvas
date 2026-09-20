@@ -1,0 +1,95 @@
+{
+  "nodes": [
+    {
+      "id": "head",
+      "type": "text",
+      "text": "《黎黎隆》角色库｜总览\n独立角色卡 × 原稿索引 × 十元动态 × 制作进度\n工作名不等于定稿；未上传的图片不建立假文件节点。",
+      "x": 0,
+      "y": 0,
+      "width": 560,
+      "height": 190
+    },
+    {
+      "id": "card",
+      "type": "file",
+      "file": "黎黎隆项目/03_角色/角色库/角色卡/CH-001_澈.md",
+      "x": 0,
+      "y": 270,
+      "width": 500,
+      "height": 370
+    },
+    {
+      "id": "core",
+      "type": "text",
+      "text": "澈｜城市的守护者\n城市建立之前的纯粹能量生命\n力量的极端 × 独立的意志\n原稿：青白发、灰紫脸、颈肩同质能量贯穿全身\n无衣服、无装甲；三视图未定稿",
+      "x": 590,
+      "y": 240,
+      "width": 440,
+      "height": 350
+    },
+    {
+      "id": "chain",
+      "type": "text",
+      "text": "十元候选\n生命 NZ → Z → X\n守护 ZX → X → N\n具体生克补与量值待剧情验证",
+      "x": 590,
+      "y": 680,
+      "width": 440,
+      "height": 160
+    },
+    {
+      "id": "visual",
+      "type": "text",
+      "text": "待归档：作者头部原稿（聊天附件，尚未入仓库）\n待验证：同画风三视图／城市尺度能量体\n绝不将早期 AI 探索图作为定稿。",
+      "x": 0,
+      "y": 690,
+      "width": 500,
+      "height": 190
+    },
+    {
+      "id": "index",
+      "type": "file",
+      "file": "黎黎隆项目/03_角色/角色库/00_角色总索引.md",
+      "x": -570,
+      "y": 160,
+      "width": 420,
+      "height": 200
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "head",
+      "fromSide": "bottom",
+      "toNode": "card",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "card",
+      "fromSide": "right",
+      "toNode": "core",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "core",
+      "fromSide": "bottom",
+      "toNode": "chain",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "card",
+      "fromSide": "bottom",
+      "toNode": "visual",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "index",
+      "fromSide": "right",
+      "toNode": "head",
+      "toSide": "left"
+    }
+  ]
+}
