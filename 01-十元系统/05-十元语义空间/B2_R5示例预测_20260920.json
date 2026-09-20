@@ -1,0 +1,106 @@
+{
+  "case_id": "R5-B2-DEMO-001",
+  "carrier": "互助站志愿者与公告板",
+  "target": "互助站毯子交接流程",
+  "mediators": [
+    "铅笔",
+    "公告板",
+    "毯子余量"
+  ],
+  "variables": [
+    "handover_log",
+    "handover_rule"
+  ],
+  "variable_binding": {
+    "relation_variable": "流程及跨轮次记录",
+    "scene_variable": "handover_rule",
+    "mechanism_evidence": "记录每班毯子余量后规定下一班先核对记录，再继续发放"
+  },
+  "actions": [
+    {
+      "id": "a1",
+      "actor": "staff",
+      "verb": "把现有毯子数量写在公告板上",
+      "object": "毯子余量",
+      "tool": "纸笔与公告板",
+      "preconditions": [
+        {
+          "entity": "station",
+          "variable": "handover_log",
+          "value": "absent"
+        }
+      ],
+      "effects": [
+        {
+          "entity": "station",
+          "variable": "handover_log",
+          "before": "absent",
+          "after": "posted"
+        }
+      ],
+      "observable_fact_ids": [
+        "log_posted"
+      ]
+    },
+    {
+      "id": "a2",
+      "actor": "staff",
+      "verb": "规定换班前后各核对一次公告板余量",
+      "object": "交接流程",
+      "tool": "公告板",
+      "preconditions": [
+        {
+          "entity": "station",
+          "variable": "handover_log",
+          "value": "posted"
+        },
+        {
+          "entity": "station",
+          "variable": "handover_rule",
+          "value": "absent"
+        }
+      ],
+      "effects": [
+        {
+          "entity": "station",
+          "variable": "handover_rule",
+          "before": "absent",
+          "after": "stable"
+        }
+      ],
+      "observable_fact_ids": [
+        "rule_posted"
+      ]
+    }
+  ],
+  "causal_chain": [
+    {
+      "from": "a1",
+      "to": "a2"
+    }
+  ],
+  "state_change": {
+    "entity": "station",
+    "variable": "handover_rule",
+    "before": "absent",
+    "after": "stable"
+  },
+  "visual_frame": {
+    "moment_id": "a2",
+    "viewpoint_actor": "staff",
+    "actor_positions": [
+      "志愿者站在公告板左侧，用铅笔指向交接栏"
+    ],
+    "visible_action": "志愿者指向已填写的毯子余量和换班核对规则",
+    "visible_objects": [
+      "公告板",
+      "铅笔",
+      "毯子余量记录"
+    ],
+    "spatial_relation": "志愿者靠近公告板，毯子码放在板下方",
+    "visible_fact_ids": [
+      "log_posted",
+      "rule_posted"
+    ]
+  }
+}
