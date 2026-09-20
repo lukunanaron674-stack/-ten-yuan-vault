@@ -36,14 +36,18 @@ Codex 24小时工作是仓库巡航员，负责每天定时巡逻你的 Obsidian
 ├─ daily_cycle.md         每天循环流程
 ├─ safety_policy.md       安全边界详细规则
 ├─ metrics.md             量化指标
-├─ task_queue_schema.json  任务队列字段定义
+├─ task_queue_schema.json 任务队列字段定义
 ├─ daily_worker_plan.md   6 个工位详细排班
+├─ hermes_24h_daily_role_experiment.md
+│                         Hermes × Codex 24小时角色实验督促协议
 ├─ prompts/               各工位的 prompt 模板
 │  ├─ data_audit_prompt.md
 │  ├─ semantic_candidate_prompt.md
 │  ├─ delete_candidate_prompt.md
 │  ├─ f12_next_task_prompt.md
-│  └─ self_review_prompt.md
+│  ├─ self_review_prompt.md
+│  └─ ll_role_protagonist_tenyu_mv_experiment.md
+│                         黎黎隆角色主角 / 十元魅力 MV实验
 └─ reports/               每日输出
    ├─ data_audit_YYYY-MM-DD.md
    ├─ delete_candidates_YYYY-MM-DD.md
@@ -51,6 +55,16 @@ Codex 24小时工作是仓库巡航员，负责每天定时巡逻你的 Obsidian
    └─ self_review_YYYY-MM-DD.md
 ```
 
+## 黎黎隆角色主角实验
+
+每个角色卡都是主角。每轮只选一位角色，完成单人、角色×场景、角色×他者三类实验，并产出 8 条可直接复制的 H3 镜头词；所有角色图、场景图和十元关系必须以仓库可核验文件为依据。文字设计、实际 H3 生成和盲审必须分开记录。
+
+Codex 执行文案：
+`prompts/ll_role_protagonist_tenyu_mv_experiment.md`
+
+Hermes 每日督促协议：
+`hermes_24h_daily_role_experiment.md`
+
 ## 版本
 
-v0.1 — 日巡航最小版本：扫库 + 抽样 + 降权 + 生任务 + 日报
+v0.2 — 加入《黎黎隆》十元角色魅力 MV 实验与 Hermes × Codex 24小时督促协议
