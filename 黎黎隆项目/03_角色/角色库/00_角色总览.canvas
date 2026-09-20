@@ -71,6 +71,33 @@
       "y": 240,
       "width": 530,
       "height": 370
+    },
+    {
+      "id": "card-escape-apprentice",
+      "type": "file",
+      "file": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
+      "x": 1200,
+      "y": 900,
+      "width": 500,
+      "height": 360
+    },
+    {
+      "id": "core-escape-apprentice",
+      "type": "text",
+      "text": "CH-003｜逃票魔法学徒（姓名未定）\n06 现在：古灵精怪，借城市魔法规则未覆盖的路径使用设施。\n08 过去：老师与魔法塔在时空事故中消失；留下有生命的紫色帽子。\n原稿冻结：大圆脸、黑色短发、淡紫脸颊、紫色不对称帽檐、浅色帽带、羽毛状顶部。\n只画了上半身：黑色部分不得认作斗篷，不擅自补 Q 版腿。\n原始图片仍未核验 GitHub 入库，不建立假图片节点。",
+      "x": 1780,
+      "y": 900,
+      "width": 510,
+      "height": 360
+    },
+    {
+      "id": "chain-escape-apprentice",
+      "type": "text",
+      "text": "动态与待办（均为候选）\n现在：Z · ZX · 小XN\n过去：NZ · ZN · X并Z\n与黎黎隆：逃票进入收费魔法设施，帽子对她的机械龙尾产生反应。\n待确认姓名、帽子机制、原稿图片归档与全身造型。",
+      "x": 1780,
+      "y": 1330,
+      "width": 510,
+      "height": 230
     }
   ],
   "edges": [
@@ -121,6 +148,27 @@
       "fromNode": "head",
       "fromSide": "right",
       "toNode": "card-luoweien",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-escape-index",
+      "fromNode": "head",
+      "fromSide": "right",
+      "toNode": "card-escape-apprentice",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-escape-core",
+      "fromNode": "card-escape-apprentice",
+      "fromSide": "right",
+      "toNode": "core-escape-apprentice",
+      "toSide": "left"
+    },
+    {
+      "id": "edge-escape-chain",
+      "fromNode": "core-escape-apprentice",
+      "fromSide": "bottom",
+      "toNode": "chain-escape-apprentice",
       "toSide": "top"
     }
   ]
