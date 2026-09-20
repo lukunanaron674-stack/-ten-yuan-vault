@@ -10,18 +10,18 @@ function validateCase(c,book,mode){
   for(const k of ["case_id","relation_id","scene","goal"])if(!isString(c[k]))errors.push("CASE_REQUIRED:"+k);
   if(!Array.isArray(c.actors)||!c.actors.length)errors.push("CASE_ACTORS_MISSING");
   const actors=new Set();
-  for(const a of c.actors||[]){if(!isString(a.id)||!isString(a.name))errors.push("CASE_ACTOR_INVALID");else if(actors.has(a.id))errors.push("CASE_DUP_ACTOR:"+a.id);else actors.add(a.id)}
+  for(const a of (Array.isArray(c.actors)?c.actors:[])){if(!isString(a.id)||!isString(a.name))errors.push("CASE_ACTOR_INVALID");else if(actors.has(a.id))errors.push("CASE_DUP_ACTOR:"+a.id);else actors.add(a.id)}
   if(!c.focus||!actors.has(c.focus.source_actor)||!actors.has(c.focus.target_actor))errors.push("CASE_FOCUS_INVALID");
   if(!Array.isArray(c.world_rules)||!c.world_rules.length||!c.world_rules.every(isString))errors.push("CASE_WORLD_RULES_INVALID");
   if(!Array.isArray(c.initial_state)||!c.initial_state.length)errors.push("CASE_INITIAL_STATE_MISSING");
   const stateKeys=new Set();
-  for(const s of c.initial_state||[]){
+  for(const s of (Array.isArray(c.initial_state)?c.initial_state:[])){
     if(!s||!isString(s.entity)||!isString(s.variable)||!isString(s.value))errors.push("CASE_STATE_INVALID");
     else {const k=s.entity+"/"+s.variable;if(stateKeys.has(k))errors.push("CASE_DUP_STATE:"+k);stateKeys.add(k)}
   }
   if(!Array.isArray(c.known_facts))errors.push("CASE_KNOWN_FACTS_MISSING");
   const facts=new Set();
-  for(const f of c.known_facts||[]){
+  for(const f of (Array.isArray(c.known_facts)?c.known_facts:[])){
     if(!f||!isString(f.id)||!isString(f.text)||!Array.isArray(f.visible_to)||!f.visible_to.every(v=>actors.has(v)))errors.push("CASE_FACT_INVALID");
     else if(facts.has(f.id))errors.push("CASE_DUP_FACT:"+f.id);else facts.add(f.id);
   }
@@ -47,25 +47,25 @@ function validatePrediction(c,p,book,mode){
   if(!Array.isArray(p.mediators)||!p.mediators.length||!p.mediators.every(isString))errors.push("PRED_MEDIATORS_INVALID");
   if(!Array.isArray(p.variables)||!p.variables.length||!p.variables.every(isString))errors.push("PRED_VARIABLES_INVALID");
   if(!Array.isArray(p.actions)||p.actions.length<2)errors.push("PRED_NEEDS_TWO_ACTIONS");
-  const actors=new Set((c.actors||[]).map(a=>a.id));
-  const states=new Map((c.initial_state||[]).map(s=>[s.entity+"/"+s.variable,s.value]));
+  const actors=new Set((Array.isArray(c.actors)?c.actors:[]).map(a=>a.id));
+  const states=new Map((Array.isArray(c.initial_state)?c.initial_state:[]).filter(s=>s&&typeof s==="object").map(s=>[s.entity+"/"+s.variable,s.value]));
   const actions=new Map(), observable=new Map();
-  for(const a of p.actions||[]){
+  for(const a of (Array.isArray(p.actions)?p.actions:[])){
     if(!a||!isString(a.id)||!actors.has(a.actor)||!isString(a.verb)||!isString(a.object)||!isString(a.tool))errors.push("PRED_ACTION_INVALID");
     else if(actions.has(a.id))errors.push("PRED_DUP_ACTION:"+a.id);else actions.set(a.id,a);
     if(a&&/^(突破|激活|承载|控制|推进|改变|促进|解决|影响)$/.test(String(a.verb).trim()))errors.push("PRED_ABSTRACT_ONLY_VERB:"+a.id);
     if(!Array.isArray(a?.preconditions)||!a.preconditions.length||!Array.isArray(a?.effects)||!a.effects.length)errors.push("PRED_ACTION_CONDITIONS_EFFECTS:"+String(a?.id));
-    for(const item of a?.preconditions||[])if(!item||!isString(item.entity)||!isString(item.variable)||!isString(item.value))errors.push("PRED_PRECONDITION_INVALID:"+a.id);
-    for(const e of a?.effects||[]){
+    for(const item of (Array.isArray(a?.preconditions)?a.preconditions:[]))if(!item||!isString(item.entity)||!isString(item.variable)||!isString(item.value))errors.push("PRED_PRECONDITION_INVALID:"+a.id);
+    for(const e of (Array.isArray(a?.effects)?a.effects:[])){
       if(!e||!isString(e.entity)||!isString(e.variable)||!isString(e.before)||!isString(e.after)||e.before===e.after)errors.push("PRED_EFFECT_INVALID:"+String(a?.id));
     }
     if(!Array.isArray(a?.observable_fact_ids)||!a.observable_fact_ids.every(isString))errors.push("PRED_OBSERVABLE_FACTS_INVALID:"+String(a?.id));
-    for(const f of a?.observable_fact_ids||[]){if(observable.has(f))errors.push("PRED_DUP_OBSERVABLE:"+f);else observable.set(f,a?.id)}
+    for(const f of (Array.isArray(a?.observable_fact_ids)?a.observable_fact_ids:[])){if(observable.has(f))errors.push("PRED_DUP_OBSERVABLE:"+f);else observable.set(f,a?.id)}
   }
   const ids=[...actions.keys()],indegree=new Map(ids.map(id=>[id,0])),children=new Map(ids.map(id=>[id,[]])),parents=new Map(ids.map(id=>[id,[]]));
   if(!Array.isArray(p.causal_chain)||p.causal_chain.length<Math.max(1,ids.length-1))errors.push("PRED_CAUSAL_CHAIN_TOO_SHORT");
   const seen=new Set();
-  for(const e of p.causal_chain||[]){
+  for(const e of (Array.isArray(p.causal_chain)?p.causal_chain:[])){
     if(!e||!actions.has(e.from)||!actions.has(e.to)||e.from===e.to)errors.push("PRED_EDGE_INVALID");
     else if(seen.has(e.from+">"+e.to))errors.push("PRED_DUP_EDGE:"+e.from+">"+e.to);
     else {seen.add(e.from+">"+e.to);indegree.set(e.to,indegree.get(e.to)+1);children.get(e.from).push(e.to);parents.get(e.to).push(e.from)}
@@ -100,7 +100,7 @@ function validatePrediction(c,p,book,mode){
   const frame=p.visual_frame;
   if(!frame||!actions.has(frame.moment_id)||!actors.has(frame.viewpoint_actor)||!Array.isArray(frame.actor_positions)||!frame.actor_positions.length||!frame.actor_positions.every(isString)||!isString(frame.visible_action)||!Array.isArray(frame.visible_objects)||!frame.visible_objects.length||!frame.visible_objects.every(isString)||!isString(frame.spatial_relation)||!Array.isArray(frame.visible_fact_ids))errors.push("PRED_FRAME_INVALID");
   else{
-    const permitted=ancestors(frame.moment_id),factMap=new Map((c.known_facts||[]).map(f=>[f.id,f]));
+    const permitted=ancestors(frame.moment_id),factMap=new Map((Array.isArray(c.known_facts)?c.known_facts:[]).filter(f=>f&&typeof f==="object").map(f=>[f.id,f]));
     for(const fid of frame.visible_fact_ids){
       const existing=factMap.get(fid),producer=observable.get(fid);
       if(!existing&&!producer)errors.push("FRAME_UNSUPPORTED_FACT:"+fid);
