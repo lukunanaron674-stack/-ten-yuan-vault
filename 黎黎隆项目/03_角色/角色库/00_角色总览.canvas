@@ -53,6 +53,24 @@
       "y": 160,
       "width": 420,
       "height": 200
+    },
+    {
+      "id": "card-luoweien",
+      "type": "file",
+      "file": "黎黎隆项目/03_角色/角色库/角色卡/CH-002_洛维恩.md",
+      "x": 1200,
+      "y": 265,
+      "width": 490,
+      "height": 355
+    },
+    {
+      "id": "anchor-luoweien",
+      "type": "text",
+      "text": "洛维恩（工作名）｜小领主\n\n作者原稿优先：灰紫肤色、卷须小胡子、低马尾、双片骨白金属肩领、紫红珠串、暗红衣装；约7.5头身。\n\n贵族在任，非落魄；家系姓氏/王室关系未定。\n湖岸台地领为喜欢的方向，但全景建筑风格尚未冻结。\nAI 服装探索是候选，不覆盖作者原稿。\n\n原始图片未核验已入 GitHub，因此不建立假图片文件节点。",
+      "x": 1760,
+      "y": 240,
+      "width": 530,
+      "height": 370
     }
   ],
   "edges": [
@@ -90,6 +108,20 @@
       "fromSide": "right",
       "toNode": "head",
       "toSide": "left"
+    },
+    {
+      "id": "edge-luoweien",
+      "fromNode": "card-luoweien",
+      "fromSide": "right",
+      "toNode": "anchor-luoweien",
+      "toSide": "left"
+    },
+    {
+      "id": "edge-luoweien-index",
+      "fromNode": "head",
+      "fromSide": "right",
+      "toNode": "card-luoweien",
+      "toSide": "top"
     }
   ]
 }
