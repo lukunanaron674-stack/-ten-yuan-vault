@@ -1,0 +1,17 @@
+import assert from "node:assert/strict";
+import {readFileSync} from "node:fs";
+import {validateCase,validatePrediction,compilePrompt} from "../tools/r5_compiler_core_v0_1.mjs";
+const root=new URL("../",import.meta.url);
+const book=JSON.parse(readFileSync(new URL("01-十元系统/05-十元语义空间/B1_R5关系输入审计_20260920.json",root),"utf8"));
+const c=JSON.parse(readFileSync(new URL("01-十元系统/05-十元语义空间/B2_R5示例输入_20260920.json",root),"utf8"));
+const p=JSON.parse(readFileSync(new URL("01-十元系统/05-十元语义空间/B2_R5示例预测_20260920.json",root),"utf8"));
+assert.equal(validateCase(c,book,"strict").ok,true);
+assert.equal(validatePrediction(c,p,book,"strict").ok,true);
+assert.equal(compilePrompt(c,book,"strict").ok,true);
+assert.equal(validateCase({...c,relation_id:"克_xn_z"},book,"strict").ok,false);
+assert.equal(validateCase({...c,relation_id:"克_x_z"},book,"strict").ok,false);
+assert.equal(validateCase({...c,relation_id:"克_x_z"},book,"research").ok,true);
+assert.equal(validatePrediction(c,{...p,visual_frame:{...p.visual_frame,moment_id:"a1",visible_fact_ids:["rule_posted"]}},book,"strict").ok,false);
+assert.equal(validatePrediction(c,{...p,causal_chain:[...p.causal_chain,{from:"a2",to:"a1"}]},book,"strict").ok,false);
+assert.equal(validatePrediction(c,{...p,state_change:{...p.state_change,after:"imaginary"}},book,"strict").ok,false);
+console.log("R5 B2 tests passed: 9/9 (structural only; no semantic/blind-score claim)");
