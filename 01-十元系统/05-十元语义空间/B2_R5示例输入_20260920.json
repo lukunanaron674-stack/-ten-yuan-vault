@@ -1,0 +1,49 @@
+{
+  "case_id": "R5-B2-DEMO-001",
+  "relation_id": "生_n_xn",
+  "scene": "山村互助站连续三天接待避雨者，志愿者每班结束后都忘记把未发放的毯子数量交给下一班。",
+  "goal": "让互助站在换班后继续准确分配毯子。",
+  "actors": [
+    {
+      "id": "staff",
+      "name": "志愿者"
+    }
+  ],
+  "focus": {
+    "source_actor": "staff",
+    "target_actor": "staff"
+  },
+  "world_rules": [
+    "互助站只有纸笔和一块公告板。",
+    "每班结束必须由下一班继续发放毯子。"
+  ],
+  "initial_state": [
+    {
+      "entity": "station",
+      "variable": "handover_log",
+      "value": "absent"
+    },
+    {
+      "entity": "station",
+      "variable": "handover_rule",
+      "value": "absent"
+    }
+  ],
+  "known_facts": [
+    {
+      "id": "no_log",
+      "text": "站内交接板尚无记录",
+      "visible_to": [
+        "staff"
+      ]
+    }
+  ],
+  "endpoint_evidence": {
+    "source": [
+      "志愿者连续接待并为避雨者承担毯子分配"
+    ],
+    "target": [
+      "主体有权主动制定站内交接流程"
+    ]
+  }
+}
