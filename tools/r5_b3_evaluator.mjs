@@ -36,14 +36,16 @@ try{
    if(!a||!b||!c)fail("Usage: node tools/r5_b3_evaluator.mjs seal INPUT.json INDEPENDENT_GOLD.json PRIVATE_VAULT");
    const inputRaw=readFileSync(resolve(a),"utf8"),goldRaw=readFileSync(resolve(b),"utf8");
    const input=JSON.parse(inputRaw),gold=JSON.parse(goldRaw);checkGold(input,gold);
+   if(!/^R5-PILOT-\d{3}$|^R5-C-\d{4}$/.test(input.case_id))fail("CASE_ID_NOT_PILOT_OR_FORMAL");
    const record={schema:"R5-B3-GOLD-SEAL-v0.1",case_id:input.case_id,author_id:gold.author_id,
-     sealed_at:new Date().toISOString(),input_sha256:sha(inputRaw),gold_sha256:sha(goldRaw),
+     sealed_at:new Date().toISOString(),input_sha256:sha(JSON.stringify(input,null,2)+"\n"),gold_sha256:sha(JSON.stringify(gold,null,2)+"\n"),
      gold:gold,access_control:"MUST_BE_ENFORCED_BY_INDEPENDENT_OS_OR_SERVICE"};
    saveExclusive(resolve(c,input.case_id,"gold.sealed.json"),record);
    process.stdout.write(JSON.stringify({case_id:input.case_id,sealed_at:record.sealed_at,input_sha256:record.input_sha256,gold_sha256:record.gold_sha256,warning:"Store vault outside predictor reach; hash alone is not access control."})+"\n");
  }else if(cmd==="score"){
    if(!a||!b||!c||!d||!e)fail("Usage: node tools/r5_b3_evaluator.mjs score CASE_ID PRIVATE_VAULT EXCHANGE_DIR RATER1.json RATER2.json");
    const caseId=a;
+   if(!/^R5-PILOT-\d{3}$|^R5-C-\d{4}$/.test(caseId))fail("CASE_ID_INVALID");
    const gold=readJSON(resolve(b,caseId,"gold.sealed.json"));
    const lock=readJSON(resolve(c,caseId,"prediction.lock.json"));
    if(gold.case_id!==caseId||lock.case_id!==caseId)fail("CASE_ID_MISMATCH");
