@@ -1,0 +1,230 @@
+{
+  "version": "R5-B3-PILOT-v0.1",
+  "created": "2026-09-20",
+  "status": "20 planning slots only; no externally authored INPUT or SEALED GOLD exists",
+  "independence_rule": "Independent author creates original input + answer before any model prediction; answers never commit to this repo or enter predictor-readable folders",
+  "relation_basis": "B1_R5关系输入审计_20260920.json",
+  "target": "Pilot 20; not eligible for formal 100 after rule calibration",
+  "slots": [
+    {
+      "case_id": "R5-PILOT-001",
+      "assigned_relation_id": "生_n_xn",
+      "assigned_domain": "原创角色关系",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-002",
+      "assigned_relation_id": "生_xn_xz",
+      "assigned_domain": "原创物流调度",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-003",
+      "assigned_relation_id": "生_xz_zx",
+      "assigned_domain": "原创生态场景",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-004",
+      "assigned_relation_id": "生_x_x并z",
+      "assigned_domain": "原创城市设施",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-005",
+      "assigned_relation_id": "克_zx_n",
+      "assigned_domain": "原创医疗救援",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-006",
+      "assigned_relation_id": "克_x并z_nz",
+      "assigned_domain": "原创组织运营",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-007",
+      "assigned_relation_id": "克_n_xz",
+      "assigned_domain": "原创艺术生产",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-008",
+      "assigned_relation_id": "克_nz_x",
+      "assigned_domain": "原创奇幻规则",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-009",
+      "assigned_relation_id": "克_xn_zx",
+      "assigned_domain": "原创机械维修",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-010",
+      "assigned_relation_id": "补_zx_nx",
+      "assigned_domain": "原创学校秩序",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-011",
+      "assigned_relation_id": "补_nx_zx",
+      "assigned_domain": "原创森林生态",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-012",
+      "assigned_relation_id": "补_n_x并z",
+      "assigned_domain": "原创家庭协作",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-013",
+      "assigned_relation_id": "补_x并z_n",
+      "assigned_domain": "原创水上交通",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-014",
+      "assigned_relation_id": "补_xz_nz",
+      "assigned_domain": "原创法律流程",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-015",
+      "assigned_relation_id": "补_nz_xz",
+      "assigned_domain": "原创文化遗产",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-016",
+      "assigned_relation_id": "生_n_xn",
+      "assigned_domain": "原创农事管理",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-017",
+      "assigned_relation_id": "生_xn_xz",
+      "assigned_domain": "原创舞台表演",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-018",
+      "assigned_relation_id": "生_xz_zx",
+      "assigned_domain": "原创科研实验",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-019",
+      "assigned_relation_id": "生_x_x并z",
+      "assigned_domain": "原创民用服务",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    },
+    {
+      "case_id": "R5-PILOT-020",
+      "assigned_relation_id": "克_zx_n",
+      "assigned_domain": "原创信息系统",
+      "status": "AWAITING_INDEPENDENT_AUTHOR",
+      "input_authored": false,
+      "gold_sealed": false,
+      "prediction_locked": false,
+      "independently_scored": false,
+      "counts_toward_formal_100": false
+    }
+  ]
+}
