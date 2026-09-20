@@ -30,7 +30,7 @@ try{
  const record={schema:"R5-B3-PRED-LOCK-v0.1",case_id:input.case_id,
    predictor_id:predictorId,locked_at:new Date().toISOString(),
    relation_id:input.relation_id,
-   input_sha256:sha(inputRaw),prediction_sha256:sha(predRaw),
+   input_sha256:sha(JSON.stringify(input,null,2)+"\n"),prediction_sha256:sha(JSON.stringify(pred,null,2)+"\n"),
    structural_check_only:true,semantic_or_blind_score:false,
    input:input,prediction:pred};
  // One atomic create of the lock artifact, no mutable copy of prediction in exchange.
