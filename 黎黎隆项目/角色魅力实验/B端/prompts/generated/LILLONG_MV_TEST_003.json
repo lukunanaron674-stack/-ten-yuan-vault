@@ -1,0 +1,63 @@
+{
+  "task_id": "LILLONG_MV_TEST_003",
+  "source": "B_CHAT",
+  "status": "b_generated_pending_c_render",
+  "dynamic_chain": "ZX→XN→NX→Z→NZ",
+  "dynamic_chain_reading": {
+    "ZX": "黎黎隆主动冲刺争胜",
+    "XN": "重复路径与机械结构压制她的直线行动",
+    "NX": "她被迫把整体障碍拆成局部节奏，越急越复杂",
+    "Z": "她故意制造假路径，再用尾巴反向变招",
+    "NZ": "湖面、森林与角色重新形成新的空间关系"
+  },
+  "shot_sequence": [
+    {
+      "shot": "01",
+      "scale": "低机位近景",
+      "action": "机械龙爪落地，长机械龙尾从身后甩入，黎黎隆抢先冲刺",
+      "chain": "ZX"
+    },
+    {
+      "shot": "02",
+      "scale": "中远景横移",
+      "action": "森林框架和机械路径重复出现，她每次冲刺都被导回同一位置",
+      "chain": "XN克ZX"
+    },
+    {
+      "shot": "03",
+      "scale": "顶视与尾巴特写交替",
+      "action": "她被迫拆解障碍节奏，尾巴关节在狭窄构图中连续调整；她因急于获胜让路径更混乱",
+      "chain": "NX"
+    },
+    {
+      "shot": "04",
+      "scale": "快速反向环绕",
+      "action": "她故意朝错误方向冲出，用尾巴反向甩动和湖面反光制造假路径，突然从侧后方跃出",
+      "chain": "Z克NX"
+    },
+    {
+      "shot": "05",
+      "scale": "拉远全景",
+      "action": "她落在冷湖面边缘，暖天空倒影、森林空隙和尾巴引导线重新组织画面",
+      "chain": "NZ"
+    }
+  ],
+  "character_charm": [
+    "好胜：一开始不观察就抢先冲刺",
+    "缺陷后果：越想立刻赢，越把路径弄复杂",
+    "机灵：不是硬破坏，而是故意制造错误方向",
+    "行动力：变招仍然通过身体和机械尾巴完成",
+    "记忆点：长机械龙尾既是受限部位，也是最后的反制工具"
+  ],
+  "must_keep_check": [
+    "黎黎隆身份与原有脸型、比例不变",
+    "长机械龙尾全程清楚并参与动态链",
+    "机械龙爪脚与两片头盔卡扣可见",
+    "暖天空、冷湖面、森林层次保留",
+    "ZX→XN→NX→Z→NZ能够被动作看懂"
+  ],
+  "negative_prompt": "no ordinary fantasy dragon, no character redesign, no extra wings, no extra weapons, no new costume, no subtitles, no logo, no readable or random text, no tail disappearance, no muddy silhouette, no abstract effect replacing the action",
+  "h3_prompt": "Anime cinematic MV animation, clean readable 2D shapes, keep the established Lillong character identity, original face and proportions, two-piece helmet clips, mechanical dragon-claw feet, and a long segmented mechanical dragon tail with visible upper, middle, and lower rhythm. Warm sky above a cold blue lake in a layered forest. Show the dynamic chain visually: she rushes forward to win, repeated mechanical paths and forest structures predict and push her back, she is forced to break the obstacle into local rhythms, then uses a deliberately wrong direction, a reverse tail swing, and the lake reflection to create a false path and escape from the side. End with her landing at the cold lake edge as the warm sky, forest opening, and tail line reorganize the space. Low-angle close-up, repeated lateral tracking, top-down decomposition, sudden reverse orbit, final pullback. Character charm comes from wanting to win too quickly, making the situation more complicated, then solving it with an unexpected clever move. No text, no logo, no subtitles, no ordinary dragon redesign, no extra wings or weapons.",
+  "comparison_note": "与 LILLONG_MV_TEST_002 共用黎黎隆和暖天空冷湖面森林，本轮只增加NX被迫拆解阶段，观察角色魅力是否更有过程和后果。",
+  "do_not_claim_h3_rendered": true
+}
