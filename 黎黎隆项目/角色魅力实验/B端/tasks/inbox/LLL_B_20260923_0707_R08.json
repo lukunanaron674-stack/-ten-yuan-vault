@@ -1,0 +1,56 @@
+{
+  "task_id": "LLL_B_20260923_0707_R08",
+  "schema": "video_tenyuan_prompt_schema_v1.0",
+  "project": "黎黎隆项目/角色魅力实验",
+  "character_id": "LLL-MAIN-001",
+  "character_name": "黎黎隆",
+  "character_status": "experimental_reference_not_final_freeze",
+  "character_ref": {
+    "card_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL-MAIN-001.json",
+    "image_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+    "status": "available_for_b_direct_read",
+    "visual_lock": ["红色长发", "长机械龙尾上中下节奏", "机械龙爪脚", "既有机械模块与基础造型", "不把本轮变体回写为最终设定"]
+  },
+  "selected_scene_refs": [{
+    "scene_id": "SCENE-12",
+    "source_path": "黎黎隆项目/04_场景/五色视觉系统/R4_色彩脚本/assets/R4-02_机械空港_承_技术接口.png",
+    "github_blob_sha": "cc932fa2e6ed07affd05fc15adbde0a2d23cfae1",
+    "status": "available_by_github_path",
+    "role": "environment_reference_only"
+  }],
+  "subject_definitions": {
+    "subject_1": "黎黎隆本人；ZX主、Z中、XN小。以角色参考卡锁定身份、红发、机械爪足和分节长机械龙尾。",
+    "subject_2": "SCENE-12中真实存在的技术接口、平台边缘与可见通行空间；不新增设备。",
+    "picture_1": "角色参考，只负责人物身份、剪影、脸、尾巴、机械模块和动作连续性。",
+    "picture_2": "机械空港技术接口场景，只负责环境、构图、空间关系与色彩层级。"
+  },
+  "retention_analysis": {
+    "character_must_keep": ["同一人物", "红色长发", "机械龙爪脚", "长机械龙尾完整连接且分节连续", "好胜而机灵的表演"],
+    "scene_must_keep": ["SCENE-12实际空间结构", "技术接口位置", "既有平台和通路", "原场景色彩关系"],
+    "weak_reference": ["小幅机位调整", "角色在既有平台上的站位"],
+    "forbidden": ["新增服装", "新增武器", "新增翅膀", "凭空生成门/栏杆/接口", "复制角色", "把实验动作冻结成新设定"]
+  },
+  "changed_variable": "固定技术接口要求正面停留操作，黎黎隆通过尾巴和爪足的临场动作把自身与接口的关系从被迫停住改成短暂接触后立即脱离并继续前进。",
+  "dynamic_chain": {
+    "primary": "ZX",
+    "secondary": "Z",
+    "constraint": "XN",
+    "chain": "ZX抢先推进 → XN技术接口迫使停留 → Z用尾巴/爪足临场短接改道 → NZ形成短暂协作后重新获得行动自由",
+    "start_state": "黎黎隆高速接近场景中真实存在的技术接口。",
+    "restriction": "接口要求角色减速、停留并进入固定操作位置，直接压住她的抢先节奏。",
+    "turn": "她先显出不耐烦，再用一只机械爪脚稳定身体，长尾沿既有空间反摆，在不新增工具的情况下完成短促接触并借势转身。",
+    "new_state": "接口被完成必要接触，黎黎隆不再被固定位置束缚，人物与设施从阻挡关系变成一次短暂协作。"
+  },
+  "shot_grammar": {
+    "format": "2x15s",
+    "A": ["0-4s 中远景侧向跟拍：黎黎隆沿既有通路快速逼近接口，尾巴保持完整可读。", "4-9s 中景轻推：她发现必须停在接口前，爪足急停，身体前冲而尾巴滞后形成节奏差。", "9-15s 中近景：她扫一眼接口和周围真实空间，露出不服输的小表情，尾巴开始向反方向预摆。"],
+    "B": ["0-5s 中近景侧视：一只爪足稳定，身体只做必要短接动作，不新增道具。", "5-10s 中远景横移：长尾反摆带动身体绕开固定站位，动作连续且所有尾节保持连接。", "10-15s 远景收束：她脱离接口继续沿既有通路前进，回头给设施一个得意的小表情，画面同时保留接口与新位置。"]
+  },
+  "h3_prompt": "See prompts/generated/LLL_B_20260923_0707_R08_H3.md",
+  "asset_status": {
+    "character_ref_status": "github_direct_read",
+    "scene_ref_status": "github_direct_read",
+    "asset_note": "image submission and H3 binding handled by cloud work",
+    "render_status": "not_rendered_by_b_end"
+  }
+}
