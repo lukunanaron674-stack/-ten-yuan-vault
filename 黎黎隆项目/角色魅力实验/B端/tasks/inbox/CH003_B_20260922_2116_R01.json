@@ -1,0 +1,73 @@
+{
+  "task_id": "CH003_B_20260922_2116_R01",
+  "status": "b_generated_pending_cloud_render",
+  "character": {
+    "id": "LLL-CHAR-003",
+    "name": "逃票魔法学徒",
+    "source": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
+    "canon": "STAGING",
+    "exclude_lililong": true,
+    "visual_lock": [
+      "只使用已确认的头部和上半身信息",
+      "大圆脸、黑色短发、淡紫脸颊",
+      "紫色不对称大帽檐、浅色斜向帽带、细长羽毛状顶部结构",
+      "不得把黑色身体区域解释成斗篷",
+      "不得擅自补全下半身、法师袍或机械结构"
+    ],
+    "performance_core": "外表安静，实际机灵古怪；观察固定流程、试探、记住失败，再临时变招；活体帽子具有自主意志。"
+  },
+  "dynamic_chain": {
+    "status": "experimental_not_canon",
+    "full_chain": "XN固定流程 → Z发现未覆盖路径 → ZX主动试探 → NZ与活体帽形成共同选择",
+    "split_mode": "2x15s",
+    "note": "CH-003主次十元尚未校准，本链只作为可视行为实验，不写入角色冻结设定，不虚构强度分数。"
+  },
+  "scene": {
+    "type": "城市收费魔法设施内部/入口",
+    "constraints": [
+      "以中近景和局部空间为主，避免暴露未冻结下半身",
+      "固定通行路径必须清楚可读",
+      "保留一条非标准侧向空间供Z变招",
+      "禁止字幕、logo、随机文字"
+    ]
+  },
+  "videos": [
+    {
+      "id": "A",
+      "duration_seconds": 15,
+      "purpose": "建立固定流程并让Z变招可见",
+      "chain_segment": "XN → Z → ZX",
+      "beats": [
+        "0-5s：中近景。孩子安静观察其他人依次触碰发光节点、等待闸门按固定周期开合；帽子贴近头部，羽毛轻摆。",
+        "5-10s：孩子发现闸门闭合前侧边短暂出现无人使用的空间缝隙；视线先看正门，再快速瞥向侧边，帽檐也朝同方向偏转。",
+        "10-15s：孩子故意伸手假装走标准流程，引导装置开始关闭，随后突然撤手并从画面侧边切入缝隙；镜头快速横移跟住上半身和帽子，停在即将越过限制的位置。"
+      ],
+      "h3_prompt": "2D animated fantasy city, medium and close shots only. A quiet-looking child with a large round face, short black hair, pale purple cheek marks and a large asymmetric purple living hat watches people use a paid magical gate through a strict repeated sequence. The child studies the rhythm without speaking. The gate opens and closes in a predictable cycle. The child notices a brief unused side gap, glances from the official route to the gap, and the living hat tilts in the same direction. The child deliberately reaches toward the official activation point as a feint, makes the mechanism begin closing, then suddenly withdraws the hand and slips sideways toward the uncovered gap. Fast lateral camera follow at the end. Keep the known head and upper-body design only; do not invent legs, robes, weapons or new machinery on the character. No text, subtitles, logos or random symbols. Focus on observable clever improvisation rather than describing intelligence. End before the outcome is confirmed."
+    },
+    {
+      "id": "B",
+      "duration_seconds": 15,
+      "purpose": "让主动试探受到伙伴自主意志修正并形成新关系",
+      "chain_segment": "ZX → NZ",
+      "beats": [
+        "0-5s：承接A。孩子以为路线成功，准备继续钻入更深处；活体帽突然向后拽住他的头部动作，第一次明确阻止。",
+        "5-10s：孩子停下，没有硬闯；帽檐连续指向另一侧异常闪动的设施接缝，羽毛像指针一样转向。孩子顺着帽子的提示观察。",
+        "10-15s：孩子与帽子短暂对视/停顿后改变路线，两者同时朝新的侧向入口移动；镜头从紧张近景稍微拉开，以共同朝向结束，不揭示异常真相。"
+      ],
+      "h3_prompt": "Continuation of the same 2D animated fantasy city scene, medium and close shots only. The child believes the side route worked and starts moving deeper into the restricted magical facility. Suddenly the living purple hat pulls backward and clearly stops the child. The child freezes instead of forcing forward. The hat brim repeatedly points toward a different seam in the magical structure where a faint abnormal light flickers, and its long feather-like top turns like a pointer. The child follows the hat's direction, studies the new opening, then quietly changes course. End with the child and living hat moving toward the same new side route together, their shared direction clearly visible. Do not reveal the mystery or add new powers. Preserve the known head and upper-body design only; do not invent lower-body costume, robes, weapons or character machinery. No text, subtitles, logos or random symbols."
+    }
+  ],
+  "output_contract": {
+    "write_to": "黎黎隆项目/角色魅力实验/B端/prompts/generated/",
+    "cloud_feedback_fields": [
+      "video_A_chain_readability_score",
+      "video_B_chain_readability_score",
+      "character_consistency_score",
+      "living_hat_performance_readability_score",
+      "fifteen_second_information_density_score",
+      "failure_family",
+      "notes"
+    ],
+    "pass_condition": "两条15秒分别能独立看懂一次关系变化，且合并后能读出XN→Z→ZX→NZ；不得依赖未冻结全身设计。"
+  }
+}
