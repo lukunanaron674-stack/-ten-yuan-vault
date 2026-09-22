@@ -1,0 +1,102 @@
+{
+  "task_id": "LILLONG_H3_B_20260922_003",
+  "project": "黎黎隆项目/角色魅力实验",
+  "stage": "B",
+  "mode": "github_direct_character_and_scene_read",
+  "purpose": "用黎黎隆H3角色素材配合13张GitHub场景池，直接生成一组角色魅力视频描述词，交给云端Work绑定图片并跑H3。",
+  "character_id": "LLL-MAIN-001",
+  "character_source": "GitHub",
+  "character_ref": {
+    "asset_id": "LLL-MAIN-001",
+    "source_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+    "original_attachment": "3add550a-ec66-454d-97fb-8181112ac881.png",
+    "sha256": "5df6a463e5ee9fe7c4fc641c86cda9ebc1647867e78afd0d5430de7de02f0143",
+    "role": "H3 character reference"
+  },
+  "scene_source": "GitHub_13_scene_pool",
+  "scene_count_available": 13,
+  "selected_scene_refs": [
+    {
+      "scene_id": "SCENE-12",
+      "scene_path": "黎黎隆项目/04_场景/五色视觉系统/R4_色彩脚本/assets/R4-02_机械空港_承_技术接口.png",
+      "role": "primary_environment_reference"
+    },
+    {
+      "scene_id": "SCENE-13",
+      "scene_path": "黎黎隆项目/04_场景/五色视觉系统/R4_色彩脚本/assets/R4-04_机械空港_合_稳定结果.png",
+      "role": "secondary_environment_reference"
+    }
+  ],
+  "asset_status": {
+    "character_ref_status": "github_direct_read",
+    "scene_ref_status": "github_direct_read",
+    "asset_note": "B端直接读取GitHub；图片提交、实际H3输入绑定与渲染由云端Work处理；B端不因绑定状态阻断上传。"
+  },
+  "subject_definitions": {
+    "subject_1": "Lililong, a red-haired mechanical dragon-tailed girl with modular white, black and red armor, cyan mechanical joints, dragon-claw feet, and a long articulated mechanical dragon tail.",
+    "subject_2": "The mechanical-port interface and the changing facility light in the supplied scene references.",
+    "picture_1": "The supplied LLL H3 character card is the identity reference. Keep the same face, hair, armor modules, tail rhythm, proportions, and silhouette."
+  },
+  "retention_analysis": {
+    "character": "Keep the red hair, sharp playful competitive expression, white-black-red armor, cyan functional joints, mechanical dragon tail with clear upper-middle-lower rhythm, modular body construction, and dragon-claw feet.",
+    "scene": "Keep the mechanical-port spatial layout, hard interface geometry, deep technical color masses, and clear foreground/midground/background separation from the selected scene references.",
+    "weak_reference": "Lighting and local effects may change to express the dynamic chain, but must not redesign the character or replace the mechanical tail."
+  },
+  "changed_variable": "The facility tries to force Lililong's unpredictable ZX movement into a fixed interface path; Lililong changes the path itself, turning a constrained mechanical connection into a self-chosen route.",
+  "dynamic_chain": {
+    "full_chain": "ZX主 → XN克ZX → Z变招 → X克Z → NZ新路径",
+    "start_state": "Lililong enters the mechanical port with a strong, playful, self-directed attack route; the facility presents a fixed interface corridor.",
+    "restriction_or_change": "The interface grid and synchronized light lock her tail route and compress her movement into a predetermined path.",
+    "turn": "Instead of overpowering the lock, Lililong twists her articulated tail through an unexpected upper route, uses a sudden feint, and redirects the interface connection.",
+    "new_state": "The facility stabilizes around her chosen route; Lililong remains the active subject and the environment now supports a new living path."
+  },
+  "shot_grammar": {
+    "duration": "15s",
+    "shots": [
+      {
+        "time": "0-3s",
+        "shot_size": "wide to medium-wide",
+        "camera": "low three-quarter angle",
+        "movement": "slow forward push",
+        "action": "Lililong enters the technical interface space; her long tail draws a clear S-curve against the machinery."
+      },
+      {
+        "time": "3-6s",
+        "shot_size": "medium",
+        "camera": "side tracking",
+        "movement": "lateral track with a brief lock-in",
+        "action": "interface lights synchronize and rigid guide lines clamp the intended tail route."
+      },
+      {
+        "time": "6-10s",
+        "shot_size": "close-up to medium",
+        "camera": "three-quarter close-up then whip-pan",
+        "movement": "snap pan following the tail",
+        "action": "her grin changes into a competitive spark; she fakes toward the locked route, then flips the tail upward through an unexpected gap."
+      },
+      {
+        "time": "10-13s",
+        "shot_size": "dynamic wide",
+        "camera": "high three-quarter orbit",
+        "movement": "orbit around body and tail",
+        "action": "the tail reroutes the interface light; the machinery bends its active path around her choice."
+      },
+      {
+        "time": "13-15s",
+        "shot_size": "hero medium-wide",
+        "camera": "front three-quarter",
+        "movement": "settling pull-back",
+        "action": "Lililong lands in a stable crouched hero pose, tail framing her, with the new route glowing behind her."
+      }
+    ]
+  },
+  "h3_prompt": "Use the supplied Lililong H3 character reference image as the primary identity reference and the supplied mechanical-port scene images as environment references. Preserve Lililong exactly: the same red hair, sharp playful competitive expression, white-black-red modular mechanical armor, cyan functional joints, dragon-claw feet, and long articulated mechanical dragon tail with the same upper-middle-lower rhythm and silhouette. Do not redesign her, do not shorten or replace the tail, do not add a new costume, and do not turn the scene into a character sheet. Create a 15-second vertical 9:16 animated action sequence in a clean stylized 2D animation look with strong readable silhouettes. Lililong enters a mechanical port through a low three-quarter camera angle. The facility tries to lock her tail and movement into a rigid predetermined interface route. Show the guide lights synchronizing and compressing her path. She smiles with competitive mischief, deliberately feints toward the locked route, then suddenly twists her articulated tail upward through an unexpected gap and redirects the interface connection. Follow the tail with a sharp whip-pan, then orbit around her as the machinery reorganizes its glowing route around her choice. End on a stable three-quarter hero pose with the long tail framing her and the new path glowing behind her. The action must clearly show fixed path, restriction, unexpected reroute, and new stable path. Keep the selected mechanical-port environment structure, deep technical color masses, and clear spatial layers. No extra characters, no text, no logo, no morphing, no inconsistent face, no broken tail segments, no random armor changes.",
+  "cloud_feedback_schema": {
+    "character_consistency_score": "1-10",
+    "scene_consistency_score": "1-10",
+    "dynamic_chain_readability_score": "1-10",
+    "shot_grammar_readability_score": "1-10",
+    "failure_family": [],
+    "notes": ""
+  }
+}
