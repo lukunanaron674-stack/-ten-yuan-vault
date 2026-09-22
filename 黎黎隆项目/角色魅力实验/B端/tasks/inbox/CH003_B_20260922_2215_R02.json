@@ -1,0 +1,70 @@
+{
+  "task_id": "CH003_B_20260922_2215_R02",
+  "project": "黎黎隆项目/角色魅力实验",
+  "stage": "B",
+  "status": "inbox",
+  "character": {
+    "id": "LLL-CHAR-003",
+    "name": "逃票魔法学徒",
+    "canon": "STAGING",
+    "exclude_lililong": true,
+    "source": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
+    "visual_lock": ["大圆脸与偏小五官", "黑色短发与略不对称刘海", "淡紫脸颊圆斑", "紫色不对称大帽檐", "浅色斜向帽带", "细长羽毛状顶部结构", "只使用中近景与已知上半身，不补全未冻结下半身"],
+    "performance_lock": ["外表安静", "实际机灵古怪", "观察固定流程后临时变招", "活体帽可自主提醒、保护或阻拦"]
+  },
+  "scene": {
+    "type": "城市收费魔法设施外缘",
+    "asset_policy": "仅作为城市魔法设施功能场景；不把未冻结湖岸台地候选误写为正式地点",
+    "visual_elements": ["收费入口", "周期性开合的魔法门", "侧向维护缝隙", "旧符文管线", "狭窄检修平台"]
+  },
+  "dynamic_chain": {
+    "canon": "experimental_not_canon",
+    "full": "XN→Z→ZX→NZ",
+    "main": "Z",
+    "secondary": ["ZX", "XN", "NZ"],
+    "direction": "固定流程压住行动→观察漏洞临时改道→主动试探进入→帽子介入形成共同选择",
+    "endpoint": "孩子与活体帽共同选择一条新路径",
+    "note": "角色卡明确主次、强度、生克补尚未校准；本任务只验证镜头转译，不回写角色定论。"
+  },
+  "split_mode": "2x15s",
+  "clips": [
+    {
+      "id": "A",
+      "duration_s": 15,
+      "purpose": "建立XN→Z→ZX：规则限制、发现漏洞、主动试探",
+      "beats": [
+        "0-5s 中近景：孩子安静观察其他人依次支付并穿过周期性魔法门；帽檐轻微转向，孩子视线追踪门的开合节奏。",
+        "5-10s 孩子假装跟随标准队列靠近，门关闭前突然停步；他注意到侧面符文管线每次重置时会短暂露出维护缝隙。",
+        "10-15s 他先向正门迈一步骗过机构的方向判断，立刻侧身钻向维护缝隙；活体帽被惯性拉歪，羽毛猛地竖起。"
+      ],
+      "h3_prompt": "2D animated fantasy MV, character-focused medium and close shots only. A quiet-looking young magic apprentice with a large round face, small facial features, short black hair, pale-purple cheek marks, and a large asymmetrical purple living hat observes a paid city magic gate. 0-5 seconds: other citizens follow the fixed payment route while the child silently studies the gate's repeating opening rhythm; the hat brim subtly tracks the mechanism. 5-10 seconds: he pretends to join the normal route, then stops at the last moment when a side rune conduit resets and briefly exposes a narrow maintenance gap. 10-15 seconds: he feints one step toward the official gate, then instantly changes direction and slips toward the side gap; the living hat tilts from the sudden movement and its feather snaps upright. Emphasize visible observation, mischievous improvisation and sudden initiative, not generic hacking. Keep the lower body out of frame because the full costume is not finalized. Clean readable 2D animation, clear silhouette, no redesign, no traditional wizard robe, no mechanical soldier elements."
+    },
+    {
+      "id": "B",
+      "duration_s": 15,
+      "purpose": "建立ZX→NZ：主动深入被帽子阻止，关系重新决定路径",
+      "beats": [
+        "0-5s 延续中近景：孩子进入狭窄检修平台后露出得意神情，准备继续向异常符文深处移动。",
+        "5-10s 活体帽突然用帽檐压住他的额头并向后拽，第一次明确阻止；孩子身体前倾却停住，随后顺着羽毛指向看去。",
+        "10-15s 另一侧旧管线出现微弱异常脉冲；孩子不再硬闯，轻轻扶正帽子，两者同时转向新的侧路，停在共同选择形成的一刻。"
+      ],
+      "h3_prompt": "Continuation, same character and same city magic facility, medium and close shots only. 0-5 seconds: after reaching a narrow maintenance platform, the apprentice shows a small proud expression and leans toward a deeper abnormal rune passage. 5-10 seconds: the living purple hat suddenly presses its brim against his forehead and pulls him backward, clearly refusing his choice; he resists for a moment, then notices the long feather pointing elsewhere. 10-15 seconds: a faint irregular pulse appears inside an old side conduit. The child stops forcing the original route, gently straightens the hat, and both turn toward the new side path together. End on the shared decision, not on solving the mystery. Emphasize the hat as an autonomous companion and the relationship shift. Preserve the known head and upper-body design, do not invent the unfinished lower-body costume. Clean readable 2D animation, restrained camera motion, no combat spectacle."
+    }
+  ],
+  "cloud_feedback_schema": {
+    "character_consistency": "1-10",
+    "clip_A_chain_readability": "1-10",
+    "clip_B_chain_readability": "1-10",
+    "Z_improvisation_readability": "1-10",
+    "hat_autonomy_readability": "1-10",
+    "information_density_15s": "1-10",
+    "failure_family": [],
+    "notes": ""
+  },
+  "result_record": {
+    "generated": true,
+    "ready_for_cloud_consumer": true,
+    "validation_target": "一卡两段15s是否比单15s更清楚呈现完整动态链",
+    "expected_observation": "A负责规则→变招→主动；B负责主动→阻拦→共同选择，避免单条15s过载。"
+  }
+}
