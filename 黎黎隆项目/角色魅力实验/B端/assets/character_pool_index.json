@@ -1,9 +1,11 @@
 {
-  "schema_version": "lililong-b-character-pool/v1",
+  "schema_version": "lililong-b-character-pool/v1.1",
   "project": "黎黎隆项目/角色魅力实验",
   "source_branch": "main",
-  "count": 10,
-  "selection_note": "LLL_H3_character_card_001 为黎黎隆H3角色卡；R3-01至R3-09为角色与三类场景组合的可用角色参考图。",
+  "image_count": 10,
+  "character_count": 4,
+  "selection_policy": "B端生成描述词时必须先读取本索引；从status=available的角色候选中选择角色，并把asset_paths写入任务，供云端Work绑定图片。",
+  "selection_note": "LLL_H3_character_card_001为黎黎隆H3角色卡；R3-01至R3-09为角色与三类场景组合的可用角色参考图。9张R3图不是独立白底角色卡，但可以用于角色一致性与场景关系参考。",
   "characters": [
     {
       "character_id": "LLL-MAIN-001",
@@ -15,7 +17,17 @@
       "status": "available"
     },
     {
-      "character_id": "LLL-CHAR-002",
+      "character_id": "LLL-R3-001",
+      "name": "黎黎",
+      "asset_paths": [
+        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-01_黎黎_森林湖泊_预跑.png",
+        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-02_黎黎_机械空港_预跑.png",
+        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-03_黎黎_异种村庄_预跑.png"
+      ],
+      "status": "available"
+    },
+    {
+      "character_id": "LLL-R3-002",
       "name": "大叔",
       "asset_paths": [
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-04_大叔_森林湖泊_预跑.png",
@@ -25,22 +37,12 @@
       "status": "available"
     },
     {
-      "character_id": "LLL-CHAR-003",
+      "character_id": "LLL-R3-003",
       "name": "奇美拉",
       "asset_paths": [
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-07_奇美拉_森林湖泊_预跑.png",
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-08_奇美拉_机械空港_预跑.png",
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-09_奇美拉_异种村庄_预跑.png"
-      ],
-      "status": "available"
-    },
-    {
-      "character_id": "LLL-CHAR-001",
-      "name": "黎黎",
-      "asset_paths": [
-        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-01_黎黎_森林湖泊_预跑.png",
-        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-02_黎黎_机械空港_预跑.png",
-        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-03_黎黎_异种村庄_预跑.png"
       ],
       "status": "available"
     }
