@@ -1,0 +1,117 @@
+{
+  "task_id": "LILLONG_MV_TEST_004",
+  "round": 3,
+  "task_type": "parallel_chain_video_prompt",
+  "project": "黎黎隆",
+  "source": "B_CHAT",
+  "status": "inbox",
+  "comparison_to": [
+    "LILLONG_MV_TEST_002",
+    "LILLONG_MV_TEST_003"
+  ],
+  "experiment_form": "parallel_tracks_converge",
+  "character": {
+    "name": "黎黎隆",
+    "ten_yuan_internal": {
+      "primary": "ZX",
+      "secondary": "Z",
+      "support": "XN"
+    },
+    "personality": [
+      "好胜",
+      "机灵",
+      "行动力强"
+    ],
+    "must_keep": [
+      "少女身体与白龙形态",
+      "长机械龙尾及上中下节奏",
+      "机械龙爪脚",
+      "两片头盔卡扣",
+      "原有脸型、比例、身份",
+      "干净线面与清楚剪影"
+    ],
+    "forbidden": [
+      "普通幻想龙",
+      "新增翅膀",
+      "新增武器",
+      "新增服装结构",
+      "字幕",
+      "logo",
+      "随机文字"
+    ]
+  },
+  "scene": {
+    "name": "暖天空冷湖面森林",
+    "ten_yuan_internal": {
+      "primary": "NZ",
+      "support": "ZN"
+    },
+    "must_keep": [
+      "暖色天空",
+      "冷色湖面",
+      "森林空间层次",
+      "主体与尾巴轮廓清楚"
+    ]
+  },
+  "dynamic_chain_internal": {
+    "form": "ZX线：ZX→XN→NX；Z线：Z→NZ；两线最终合流",
+    "track_a": [
+      "主动抢先冲向湖心标记",
+      "机械化路径反复把她推回原位",
+      "她被迫沿局部窄路分段推进"
+    ],
+    "track_b": [
+      "尾巴与湖面反光形成另一条不规则运动线",
+      "意外偏移改变角色与环境的关系",
+      "环境为最终跳跃打开第二出口"
+    ],
+    "convergence": "身体路径与尾巴/环境路径在湖岸缺口同时合流，完成一次清楚的侧向跃迁"
+  },
+  "stages": [
+    {
+      "stage": 1,
+      "internal_relation": "ZX",
+      "concrete_action": "黎黎隆看见湖心标记，抢先冲出森林，机械龙爪连续踏过浅水石面",
+      "camera": "低机位近景切入，身体冲向前景，长机械龙尾拖出第二条运动线"
+    },
+    {
+      "stage": 2,
+      "internal_relation": "XN克ZX",
+      "concrete_action": "林间机械框架和湖岸路径不断重复，把她的冲刺折返回同一个起点",
+      "camera": "快速横移配合重复构图，每次回到起点时节拍更紧"
+    },
+    {
+      "stage": 3,
+      "internal_relation": "NX与Z并行",
+      "concrete_action": "她被迫把身体路线拆成短段；与此同时尾巴擦过湖面，反光形成一条偏离主路线的弧线",
+      "camera": "顶视身体路线，切到尾巴和湖面反光，双轨同时推进"
+    },
+    {
+      "stage": 4,
+      "internal_relation": "Z线变化",
+      "concrete_action": "黎黎隆顺着那条意外弧线故意偏移，借尾巴回弹改变落点，不再从正面突破",
+      "camera": "镜头一条轨道跟身体，另一条轨道跟尾巴，最后反向环绕合并"
+    },
+    {
+      "stage": 5,
+      "internal_relation": "NZ合流",
+      "concrete_action": "身体与尾巴从两个方向同时越过湖岸缺口，她落在冷湖面边缘，暖天空倒影重新稳定下来",
+      "camera": "拉远全景，双轨运动合成一个清晰的引导线，停在她得意又闯出新麻烦的表情"
+    }
+  ],
+  "output_contract": {
+    "write_to": "黎黎隆项目/角色魅力实验/B端/prompts/generated/",
+    "required_fields": [
+      "task_id",
+      "internal_chain_reading",
+      "parallel_tracks",
+      "shot_sequence",
+      "character_charm",
+      "must_keep_check",
+      "negative_prompt",
+      "h3_prompt"
+    ],
+    "production_rule": "十元术语只保留在内部字段；h3_prompt和最终镜头描述只写具体人物、场景、动作、变化、结果",
+    "do_not_claim_h3_rendered": true
+  }
+}
