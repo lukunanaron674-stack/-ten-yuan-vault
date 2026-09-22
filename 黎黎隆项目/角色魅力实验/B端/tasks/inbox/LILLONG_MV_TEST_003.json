@@ -1,0 +1,112 @@
+{
+  "task_id": "LILLONG_MV_TEST_003",
+  "round": 2,
+  "task_type": "dynamic_chain_video_prompt",
+  "project": "黎黎隆",
+  "source": "B_CHAT",
+  "status": "inbox",
+  "comparison_to": "LILLONG_MV_TEST_002",
+  "controlled_variable": "保持角色与场景核心不变，测试动态链新增NX阶段后的角色魅力变化",
+  "character": {
+    "name": "黎黎隆",
+    "ten_yuan": {
+      "primary": "ZX",
+      "secondary": "Z",
+      "support": "XN"
+    },
+    "personality": [
+      "好胜",
+      "机灵",
+      "行动力强"
+    ],
+    "visual_identity": [
+      "少女身体与白龙形态",
+      "长机械龙尾及上中下节奏",
+      "机械龙爪脚",
+      "两片头盔卡扣",
+      "原有脸型、比例、身份",
+      "干净线面与清楚剪影"
+    ],
+    "must_keep": [
+      "尾巴全程可识别，并参与受限、拆解、变招三个动作",
+      "角色不能被普通幻想龙替代",
+      "不新增翅膀、武器、服装或身体结构"
+    ],
+    "forbidden": [
+      "普通幻想龙",
+      "重设计角色身份",
+      "字幕",
+      "logo",
+      "随机不可读文字"
+    ]
+  },
+  "scene": {
+    "name": "暖天空冷湖面森林",
+    "ten_yuan": {
+      "primary": "NZ",
+      "support": "ZN"
+    },
+    "must_keep": [
+      "暖色天空",
+      "冷色湖面",
+      "森林空间层次",
+      "角色和尾巴轮廓清楚"
+    ]
+  },
+  "dynamic_chain": {
+    "core": "ZX→XN→NX→Z→NZ",
+    "relation_logic": "XN克ZX，黎黎隆被迫进入NX；Z克NX，靠意外路径打破被迫拆解状态；最后NZ重新组织角色与环境关系",
+    "stages": [
+      {
+        "stage": 1,
+        "relation": "ZX",
+        "state": "主动争胜",
+        "action": "黎黎隆为了抢先到达湖心标记，沿森林中的直线通道高速冲刺",
+        "camera": "低机位近景，先给机械龙爪，再让长机械龙尾切入画面"
+      },
+      {
+        "stage": 2,
+        "relation": "XN克ZX",
+        "state": "结构压制",
+        "action": "重复的林间框架、机械路径和湖岸障碍不断预测她的直线动作，使她连续撞回原位",
+        "camera": "镜头轨道重复，画面比例逐渐变窄，动作形成压迫节拍"
+      },
+      {
+        "stage": 3,
+        "relation": "NX",
+        "state": "被迫拆解",
+        "action": "她被迫停止正面争胜，把障碍拆成一组组局部节奏；她越想马上赢，越把路径和环境弄得更复杂",
+        "camera": "顶视与近景交替，尾巴关节被分段构图，但不能离开主体"
+      },
+      {
+        "stage": 4,
+        "relation": "Z克NX",
+        "state": "机灵变招",
+        "action": "她突然故意制造一个错误方向，用尾巴分节的反向甩动和湖面反光制造假路径，从侧后方跳出限制",
+        "camera": "镜头突然反向环绕，原本重复的轨道被打断，动作清楚而非特效堆叠"
+      },
+      {
+        "stage": 5,
+        "relation": "NZ",
+        "state": "关系重新建立",
+        "action": "她落到湖岸浅水处，暖天空、冷湖面和森林空隙被重新组织；她赢得了目标，却留下更复杂的环境后果",
+        "camera": "快速拉远，角色居中但尾巴仍形成引导线，收在湖面反光"
+      }
+    ]
+  },
+  "camera_language": "MV节奏；低机位近景→重复轨道压迫→顶视拆解→突然反向环绕→湖面反光拉远",
+  "charm_variable": "太想赢导致局面复杂；被迫拆解后，用出其不意的错误方向完成反制",
+  "output_contract": {
+    "write_to": "黎黎隆项目/角色魅力实验/B端/prompts/generated/",
+    "required_fields": [
+      "task_id",
+      "dynamic_chain_reading",
+      "shot_sequence",
+      "character_charm",
+      "must_keep_check",
+      "negative_prompt",
+      "h3_prompt"
+    ],
+    "do_not_claim_h3_rendered": true
+  }
+}
