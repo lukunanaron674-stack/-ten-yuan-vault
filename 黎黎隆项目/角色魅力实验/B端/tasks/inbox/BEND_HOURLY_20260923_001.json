@@ -1,0 +1,154 @@
+{
+  "task_id": "BEND_HOURLY_20260923_001",
+  "project": "黎黎隆项目/角色魅力实验",
+  "stage": "B",
+  "mode": "github_direct_scene_read",
+  "status": "inbox",
+  "generated_at": "2026-09-23T00:00:00Z",
+  "selection_policy": {
+    "character_rule": "优先非黎黎隆角色",
+    "scene_pool": "GITHUB_13_SCENE_POOL_V1",
+    "scene_count_available": 13
+  },
+  "character": {
+    "id": "LLL-CHAR-003",
+    "name": "逃票魔法学徒",
+    "source": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
+    "character_source": "GitHub",
+    "visual_lock": [
+      "大圆脸与偏小五官",
+      "黑色短发与略不对称刘海",
+      "淡紫脸颊圆斑",
+      "紫色不对称大帽檐",
+      "浅色斜向帽带",
+      "细长羽毛状顶部结构",
+      "只使用已确认的头部和上半身，不补全未冻结下半身"
+    ],
+    "performance_lock": [
+      "外表安静，实际机灵古怪",
+      "观察固定流程后临时变招",
+      "活体帽可自主提醒、保护或阻拦"
+    ]
+  },
+  "character_id": "LLL-CHAR-003",
+  "character_source": "GitHub",
+  "scene_source": "GitHub_13_scene_pool",
+  "scene_count_available": 13,
+  "selected_scene_refs": [
+    {
+      "scene_id": "SCENE-05",
+      "scene_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
+      "role": "primary_environment_reference",
+      "scene_source": "GitHub",
+      "scene_status": "github_direct_read"
+    }
+  ],
+  "asset_status": {
+    "character_ref_status": "github_direct_read",
+    "scene_ref_status": "github_direct_read",
+    "asset_note": "角色卡与场景索引由B端直接读取GitHub；实际图片提交、H3输入绑定和渲染由云端Work负责。"
+  },
+  "subject_definitions": {
+    "subject_1": "The quiet-looking magic apprentice, preserving the confirmed head and upper-body design only.",
+    "subject_2": "The living asymmetric purple hat, treated as an autonomous companion with readable brim and feather gestures.",
+    "picture_1": "The selected GitHub scene reference SCENE-05, used only for the mechanical-airport environment, repeated access route, industrial spacing and monochrome atmosphere.",
+    "scene_boundary": "The scene reference does not redesign the character."
+  },
+  "retention_analysis": {
+    "character": {
+      "fully_preserved": [
+        "large round face and small facial features",
+        "short black hair with slightly asymmetric bangs",
+        "pale-purple cheek marks",
+        "large asymmetric purple living hat",
+        "quiet exterior and mischievous improvisation"
+      ],
+      "prohibited_changes": [
+        "no new robe",
+        "no weapon",
+        "no mechanical body parts",
+        "no invented lower-body costume"
+      ]
+    },
+    "scene": {
+      "fully_preserved": [
+        "mechanical-airport setting",
+        "clear industrial access route",
+        "monochrome visual hierarchy",
+        "readable separation between character and background"
+      ],
+      "weak_reference": [
+        "exact gate design",
+        "unconfirmed small environmental details"
+      ]
+    },
+    "weak_reference": "Use the scene image for environment, space, atmosphere and composition only; do not copy unconfirmed props into the character."
+  },
+  "changed_variable": "The repeating mechanical access route changes the apprentice's planned forward path; the living hat changes the final route from a solitary escape into a shared choice.",
+  "dynamic_chain": {
+    "full_chain": "XN → Z → ZX → NZ",
+    "main": "Z",
+    "secondary": [
+      "XN",
+      "ZX",
+      "NZ"
+    ],
+    "start_state": "A fixed mechanical access sequence forces the apprentice to watch and wait.",
+    "restriction_or_change": "The repeating gate closes the obvious route and compresses the available space.",
+    "turn": "He uses a false reach toward the official route, then slips sideways when the living hat points to a brief maintenance gap.",
+    "new_state": "The apprentice stops forcing his own route and moves with the living hat toward a jointly selected side path.",
+    "observable_translation": "fixed route → gap noticed → feint and lateral change → shared direction"
+  },
+  "shot_grammar": {
+    "duration": "15s",
+    "shots": [
+      {
+        "time": "0-3s",
+        "scale": "medium close-up",
+        "camera": "slightly low three-quarter angle",
+        "movement": "slow push-in",
+        "action": "The apprentice silently watches the repeating mechanical access cycle; the hat brim follows the opening rhythm."
+      },
+      {
+        "time": "3-6s",
+        "scale": "close-up",
+        "camera": "cut between eyes, brim and gate seam",
+        "movement": "small lateral pan",
+        "action": "A brief side gap appears during reset; the apprentice notices it and the hat turns toward it."
+      },
+      {
+        "time": "6-10s",
+        "scale": "medium shot",
+        "camera": "side profile",
+        "movement": "short tracking move",
+        "action": "He feints a reach toward the official route, then withdraws before the gate closes."
+      },
+      {
+        "time": "10-13s",
+        "scale": "medium close-up",
+        "camera": "lateral follow",
+        "movement": "quick sideways follow",
+        "action": "He changes direction toward the maintenance gap; the hat pulls his head slightly back to prevent reckless entry."
+      },
+      {
+        "time": "13-15s",
+        "scale": "medium shot",
+        "camera": "rear three-quarter",
+        "movement": "brief settle and hold",
+        "action": "He and the living hat turn together toward a safer side route; end on shared direction, not a solved mystery."
+      }
+    ],
+    "rhythm": "quiet observation → compressed repetition → sudden lateral improvisation → restrained shared resolution"
+  },
+  "h3_prompt": "Clean readable 2D animated fantasy MV, 15 seconds, using the supplied character reference and the supplied mechanical-airport scene reference. Preserve the quiet-looking young magic apprentice: large round face, small facial features, short black hair with slightly asymmetric bangs, pale-purple cheek marks, and a large asymmetric purple living hat with a light diagonal band and a thin feather-like top. Use only the confirmed head and upper-body design; do not invent the unfinished lower body, robe, weapon, wings or mechanical parts. The scene is a monochrome mechanical airport with a clear repeating access route and strong industrial spacing. 0-3 seconds: medium close-up, the apprentice silently watches a mechanical gate repeat its opening cycle while the living hat brim follows the rhythm. 3-6 seconds: close-up of the eyes, hat brim and a gate seam; a brief side maintenance gap appears during reset and both notice it. 6-10 seconds: side-profile medium shot; the apprentice pretends to reach toward the official route, making the gate begin to close, then withdraws the hand. 10-13 seconds: quick lateral camera follow as he changes direction toward the side gap, while the living hat pulls him slightly back to stop reckless entry. 13-15 seconds: the apprentice and living hat turn together toward a safer side route and hold on their shared direction. Make the change visible through gaze, brim movement, hand feint and lateral body direction. No subtitles, no logo, no random text, no ordinary wizard robe, no combat spectacle, no character redesign.",
+  "cloud_feedback_schema": {
+    "character_consistency_score": "1-10",
+    "scene_consistency_score": "1-10",
+    "dynamic_chain_readability_score": "1-10",
+    "changed_variable_readability_score": "1-10",
+    "shot_grammar_readability_score": "1-10",
+    "failure_family": [],
+    "notes": ""
+  },
+  "do_not_claim_h3_rendered": true
+}
