@@ -1,0 +1,43 @@
+{
+  "task_id": "LILLONG_B_20260922_1914_R02",
+  "round": 3,
+  "task_type": "dynamic_chain_video_prompt",
+  "project": "黎黎隆",
+  "source": "B_CHAT",
+  "status": "inbox",
+  "controlled_variable": "保持角色冻结身份与暖天空冷湖面森林不变，测试交替拉扯型动态链如何提升角色魅力与镜头节奏",
+  "character": {
+    "name": "黎黎隆",
+    "ten_yuan": {"primary":"ZX","secondary":"Z","support":"XN"},
+    "personality": ["好胜","机灵","行动力强","太想赢会让局面更复杂"],
+    "visual_identity": ["长机械龙尾，上中下节奏清楚","机械龙爪脚","两片头盔卡扣","原有脸型比例身份","干净线面与清楚剪影"],
+    "forbidden": ["普通幻想龙","重设计角色身份","新增翅膀武器服装身体结构","字幕logo随机文字"]
+  },
+  "scene": {
+    "name":"暖天空冷湖面森林",
+    "ten_yuan":{"primary":"NZ","support":"ZN"},
+    "must_keep":["暖天空","冷湖面","森林层次","角色与长尾剪影清楚"]
+  },
+  "dynamic_chain": {
+    "core":"XN克ZX → NZ生ZX → XN再克ZX → Z克制固定路径 → NZ收束",
+    "shape":"交替拉扯型",
+    "stages":[
+      {"stage":1,"relation":"XN克ZX","state":"抢先受阻","action":"黎黎隆看见湖对岸移动标记后立刻沿最短路径猛冲，林间重复机械门依次闭合，逼她急停；长尾因惯性扫过门框但不破坏角色结构。","camera":"低机位跟拍冲刺，机械龙爪和尾巴先后切过前景；门框闭合时突然定住半拍。"},
+      {"stage":2,"relation":"NZ生ZX","state":"环境给出机会","action":"湖面风压吹开垂落枝叶，短暂露出一条贴水弧线；她几乎不思考就踩浅水借力，尾巴压低成为平衡杆，重新获得主动。","camera":"从压缩长焦切成贴水广角，跟随尾巴弧线横移，让暖天空倒影和冷湖面形成速度参照。"},
+      {"stage":3,"relation":"XN再克ZX","state":"好胜导致二次陷阱","action":"她为了更快直接切向终点，却触发第二组规则门；门不追她，而是按固定节拍封死她预测中的落点，使她的直觉连续落空。","camera":"连续三次相似构图重复同一落点，每次门提前半拍关闭，形成MV式节奏压制。"},
+      {"stage":4,"relation":"Z破固定路径","state":"古灵精怪改道","action":"她故意朝错误方向做一个夸张假冲刺，临门前用长机械尾巴勾住低枝，身体反向摆荡，从自己刚才绝不会选择的后上方穿过空隙；落地前还回头看一眼被她骗过的机械门。","camera":"先顺运动方向甩镜，假动作成立后突然反向环绕；摆荡最高点给短暂中近景，突出得意表情与两片头盔卡扣。"},
+      {"stage":5,"relation":"NZ收束","state":"赢了但留下关系后果","action":"她先一步踩到湖心浅滩标记，尾巴扬起形成胜利剪影；刚才被勾动的枝叶和水波却把原本平静的路径彻底改变，她发现后先愣半拍，再露出‘这也行’的笑。","camera":"中景停半拍后快速拉远，水波把角色动作扩散到整个场景，最后保持角色与长尾仍可辨识。"}
+    ]
+  },
+  "camera_language":"MV交替拉扯：低机位冲刺→定拍受阻→贴水横移释放→重复构图二次压制→反向环绕变招→快速拉远收束",
+  "character_charm":"不是靠台词声明机灵，而是让她两次因好胜撞上规则，再用故意走错方向的假动作骗过固定系统；Z表现为古灵精怪的行为，不解释成分析或接口能力。",
+  "h3_prompt":"Anime 2D cinematic MV shot sequence. Keep the exact provided character identity and scene identity. Lililong is a competitive, clever mechanical dragon girl with a long articulated mechanical dragon tail, mechanical dragon-claw feet and two helmet clasps. Warm sky, cool lake surface, layered forest. She instantly sprints toward a moving marker across the lake, low-angle tracking on clawed feet and long tail. Repeating mechanical gates close in strict rhythm and force a sudden stop. Wind parts hanging branches and reveals a brief curved path over shallow water; she immediately takes it, tail lowered as a balancing lever, camera skimming the cool lake reflection. Trying too hard to win, she cuts straight toward the finish and triggers a second rhythmic gate trap; repeat the same landing composition three times, each gate closing half a beat earlier. Then she performs an exaggerated fake sprint in the wrong direction, hooks a low branch with her long articulated tail at the last instant, swings backward and upward through an unexpected gap, camera reversing into a fast orbit. At the apex show her mischievous confident expression and helmet clasps clearly. She lands first on the shallow-lake marker, tail raised in a victorious silhouette. The disturbed branch and expanding ripples alter the whole route behind her; she freezes for half a beat, then gives a small amused smile. Pull rapidly outward while keeping her silhouette and tail readable. Clean shapes, clear action, strong MV rhythm, character charm through behavior, no text, no logo, no new wings, weapons, clothing or anatomy, no generic fantasy dragon redesign.",
+  "output_contract": {
+    "write_to":"黎黎隆项目/角色魅力实验/B端/prompts/generated/",
+    "required_fields":["task_id","dynamic_chain_reading","shot_sequence","character_charm","must_keep_check","negative_prompt","h3_prompt"],
+    "cloud_feedback_fields":["character_consistency_score","dynamic_chain_readability_score","tail_action_readability_score","camera_rhythm_score","failure_family","notes"],
+    "do_not_claim_h3_rendered":true
+  },
+  "source_rule":"黎黎隆项目/角色魅力实验/B端/rules/tenyuan_video_chain_rule.md",
+  "next_step":"云端B端读取本文件，以h3_prompt执行视频测试；将四项评分、failure_family与notes写回结果记录，用于下一轮动态链变体。"
+}
