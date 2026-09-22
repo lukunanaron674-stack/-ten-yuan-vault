@@ -1,0 +1,105 @@
+{
+  "task_id": "LILLONG_B_20260923_0206_R03",
+  "project": "黎黎隆项目/角色魅力实验",
+  "stage": "B",
+  "status": "inbox",
+  "task_type": "dynamic_chain_video_prompt_2x15s",
+  "character": {
+    "id": "LILLONG",
+    "name": "黎黎隆",
+    "ten_yuan": {"primary":"ZX","secondary":"Z","support":"XN"},
+    "personality": ["好胜","机灵","行动力强","常因太想赢使局面更复杂"],
+    "visual_reference_status": "provided_in_chat_pending_cloud_work_archive_or_binding",
+    "visual_lock_experiment_only": ["红发","长机械龙尾，上中下节奏清楚","机械龙爪足","既有两片头盔卡扣","既有基础脸型与身份比例","红灰白机械结构","少量青蓝功能信号"],
+    "freeze_note": "尚未冻结细节只限本轮实验使用；任何生成变体不得回写为最终角色设定。",
+    "forbidden": ["普通幻想龙重设计","新增翅膀","新增武器","新增服装或身体结构","把Z解释成停下来分析系统","字幕logo随机文字"]
+  },
+  "selected_scene_refs": [
+    {
+      "scene_id":"SCENE-06",
+      "role":"primary_environment_reference",
+      "source_path":"黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-06_机械空港_双色主导.png",
+      "github_blob_sha":"7f600f79069d4f5a839dd44f2160182b0066cb3e",
+      "status":"available_by_github_path"
+    },
+    {
+      "scene_id":"SCENE-13",
+      "role":"secondary_resolution_reference",
+      "source_path":"黎黎隆项目/04_场景/五色视觉系统/R4_色彩脚本/assets/R4-04_机械空港_合_稳定结果.png",
+      "github_blob_sha":"c1ad3a5feb333383d8275159e8db04793e71a6c2",
+      "status":"available_by_github_path"
+    }
+  ],
+  "subject_definitions": {
+    "subject_1":"黎黎隆。红发、长机械龙尾、机械龙爪足、两片既有头盔卡扣；ZX主、Z中、小XN。动作先于解释，好胜驱动主动抢位，Z以古灵精怪的临时变招出现。",
+    "picture_1":"SCENE-06机械空港双色主导，仅作为环境、空间、构图与技术设施参考，不覆盖角色设计。",
+    "picture_2":"SCENE-13机械空港稳定结果，仅用于第二段结尾的空间稳定与关系收束参考。"
+  },
+  "retention_analysis": {
+    "must_keep_character":["红发","长机械龙尾始终可读并参与动作","机械龙爪足","两片头盔卡扣","基础身份比例与脸型","红灰白主体结构","青蓝仅作功能信号"],
+    "must_keep_scene":["机械空港技术空间","双色主导","清楚通道与设施边界","角色剪影优先于背景信息"],
+    "weak_reference":["小型道具位置","非关键机械细节","远景设施数量"],
+    "must_not_change":["不把尾巴缩成普通尾巴","不增加翅膀武器","不把机械爪足改成人脚","不把实验变体登记成冻结设定"]
+  },
+  "changed_variable":"机械空港按固定节拍封锁的直线路径，被黎黎隆用假冲刺和长尾借力改成一条她自己制造的可通过路径。",
+  "dynamic_chain": {
+    "shape":"交替拉扯→关系收束",
+    "full_chain":"ZX主动抢位 → XN固定节拍克ZX → Z古灵精怪假动作改道 → ZX重新取得主动 → NZ式环境关系收束",
+    "visible_stages":[
+      "黎黎隆看到即将关闭的登机通道，立刻抢先冲刺。",
+      "机械门按固定节拍连续关闭，准确封死她预判的落点；她因为太想赢连续被逼改步。",
+      "她突然朝错误方向做夸张假冲刺，临门前用长机械尾勾住侧梁，身体反向甩过门上方空隙。",
+      "机械爪足落到门后维护轨，尾巴回收稳定身体，她重新领先。",
+      "她没有破坏系统，而是让自己的路线与空港结构形成新的可用关系；结尾空间恢复稳定。"
+    ]
+  },
+  "shot_grammar": {
+    "format":"one_card_two_segments_15s_each",
+    "segment_A": {
+      "duration":"15s",
+      "purpose":"ZX主动→XN压制；让观众先看见好胜和受限。",
+      "shots":[
+        "0-4s 广角中远景，机械空港通道横向展开；黎黎隆从画面侧方突然切入，低机位跟机械爪足与长尾加速。",
+        "4-8s 中景跟拍，第一道机械门按固定节拍闭合，她急停后立刻二次抢位；尾巴惯性划出清楚弧线。",
+        "8-12s 重复构图三次，每次下一道门提前半拍封死她的落点，形成XN节拍压制。",
+        "12-15s 中近景短停，她露出不服输又突然想到坏点子的表情，视线故意转向错误方向；尾巴尖先做反向预备。"
+      ]
+    },
+    "segment_B": {
+      "duration":"15s",
+      "purpose":"Z变招→ZX重获主动→关系收束。",
+      "shots":[
+        "0-4s 她朝错误方向夸张冲刺，镜头被骗着顺势甩过去；最后一瞬尾巴勾住侧梁。",
+        "4-8s 镜头突然反向环绕，她借长尾摆荡从机械门上方空隙穿过；机械爪足、尾巴、红发形成三层运动弧线。",
+        "8-11s 低机位近中景，机械爪足落上维护轨，尾巴回收稳住身体；她回头对仍按固定节拍开合的门露出得意笑。",
+        "11-15s 切SCENE-13式稳定空间，镜头快速拉远；她沿新路径离开，门继续原有节拍，但她已经不再被它定义路线。"
+      ]
+    }
+  },
+  "h3_prompt": {
+    "segment_A":"2D hand-drawn cinematic character MV, 15 seconds. Preserve Lililong's provided identity: vivid red hair, long articulated mechanical dragon tail with clear large-middle-small rhythm, mechanical dragon-claw feet, two existing helmet clasps, established face and body proportion, red grey white mechanical structure with small cyan functional accents. Use the selected mechanical-airport scene only for environment and composition. A clear airport passage stretches horizontally. Lililong sees a closing route and instantly sprints to beat it, low-angle tracking on her mechanical claw feet and long tail. Repeating mechanical gates close in a strict fixed rhythm. She brakes hard, immediately attacks the next opening, then the next. Repeat a similar landing composition three times, each gate closing half a beat earlier and denying the place she predicted. Her competitive impulse makes the situation more complicated. End in a medium close shot: she stops for only a beat, gives a stubborn mischievous look toward the deliberately wrong direction, while the tip of her long tail quietly prepares to move the opposite way. Clean silhouette, readable tail throughout, no dialogue text, no logo, no wings, no new weapons, no costume redesign, no generic fantasy dragon transformation.",
+    "segment_B":"2D hand-drawn cinematic character MV, 15 seconds, continuing the same Lililong and the same mechanical-airport identity. She suddenly performs an exaggerated sprint in the wrong direction and the camera follows the fake move. At the last instant her long articulated mechanical dragon tail hooks a side beam; reverse the camera direction into a fast orbit as her whole body swings backward and upward through the gap above the closing gate. Keep the mechanical claw feet, tail articulation, red hair and two helmet clasps clearly readable. At the apex show a mischievous confident expression, then she lands on a narrow maintenance rail with her mechanical claw feet and retracts the tail to stabilize. She looks back at the gates still opening and closing in their original fixed rhythm and gives a small victorious grin. Transition into the stable-resolution mechanical-airport composition and pull rapidly outward as she leaves along the new path she created. The system is unchanged but it no longer defines her route. Character charm comes from competitive initiative and playful improvisation, not from explaining or analyzing the system. No text, no logo, no new anatomy, wings, weapons or costume parts."
+  },
+  "asset_status": {
+    "character_ref_status":"pending_cloud_work_binding_from_user_provided_reference",
+    "scene_ref_status":"github_direct_read",
+    "asset_note":"Both selected scene files have real GitHub paths and blob SHAs. Lililong's current visual reference was provided in chat; B-end does not claim it has uploaded that image. Cloud Work must archive/read and bind the actual character image to H3. This does not block B-end text task generation."
+  },
+  "results": {
+    "status":"awaiting_cloud_render",
+    "character_consistency_score":null,
+    "scene_consistency_score":null,
+    "dynamic_chain_readability_score":null,
+    "shot_grammar_readability_score":null,
+    "tail_action_readability_score":null,
+    "z_mischief_readability_score":null,
+    "failure_family":[],
+    "notes":""
+  },
+  "source_files":[
+    "黎黎隆项目/角色魅力实验/B端/rules/video_tenyuan_prompt_schema_v1.0.md",
+    "黎黎隆项目/角色魅力实验/B端/assets/scene_pool_13_index.json",
+    "黎黎隆项目/角色魅力实验/B端/tasks/inbox/LILLONG_B_20260922_1914_R02.json"
+  ],
+  "do_not_claim_h3_rendered":true
+}
