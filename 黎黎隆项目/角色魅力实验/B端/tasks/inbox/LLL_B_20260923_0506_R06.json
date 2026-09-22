@@ -1,0 +1,57 @@
+{
+  "task_id": "LLL_B_20260923_0506_R06",
+  "schema": "video_tenyuan_prompt_schema_v1.0",
+  "project": "黎黎隆项目/角色魅力实验",
+  "character_id": "LLL-MAIN-001",
+  "character_name": "黎黎隆",
+  "character_status": "experimental_reference_not_final_freeze",
+  "character_card_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL-MAIN-001.json",
+  "character_ref_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+  "character_ref_status": "available_for_b_direct_read",
+  "selected_scene_refs": [{
+    "scene_id": "SCENE-08",
+    "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png",
+    "github_blob_sha": "3f0a6664e66899a228a8513bfc70688c0a866908",
+    "status": "available_by_github_path",
+    "role": "primary_environment_reference"
+  }],
+  "subject_definitions": {
+    "subject_1": "黎黎隆：同一名红发少女，既有脸型、基础比例、机械身体模块、机械龙爪脚和长机械龙尾；角色卡与H3角色图共同定义身份，不生成复制体。",
+    "picture_1": "LLL_H3_character_card_001.jpg，负责身份、脸、剪影、长尾、机械模块与动作姿态参考；未冻结细节不得由本轮变体反向写成最终设定。",
+    "picture_2": "SCENE-08异种村庄双色主导，只定义村庄环境、路径、构图和氛围，不覆盖角色外形。"
+  },
+  "retention_analysis": {
+    "must_keep": ["红色长发", "既有脸型和基础比例", "既有头盔卡扣", "机械龙爪脚", "长机械龙尾的上中下节奏与关节连续性", "红白黑机械模块与少量青蓝功能信号"],
+    "performance_keep": ["ZX主：好胜、反应快、主动抢机会", "Z中：古灵精怪、机灵、跳脱、出其不意、灵活变通", "XN小：遇到既有路径/秩序时会被限制，但不因此变成死板追查型角色"],
+    "scene_keep": ["SCENE-08实际村庄布局", "双色主导", "现有道路、台阶、桥或可见通路按图片实际存在使用"],
+    "forbid": ["新增服装体系", "新增武器或翅膀", "新增身体结构", "复制角色", "把环境结构长到角色身上", "把实验变体回写最终角色设定", "字幕、logo、随机文字"]
+  },
+  "changed_variable": "黎黎隆为了抢先穿过异种村庄选择最直接的可见路线，却被村庄现有空间关系迫使减速；她随后利用长尾和机械爪足把‘被迫停下’改成‘借现有高低差连续换线’，最终建立一条更快但非预设的通过路线。",
+  "dynamic_chain": {
+    "full_chain": "ZX抢先直穿 → XN既有村庄路径/高低差克制直冲 → Z临场借尾巴与爪足连续改线 → NZ与村庄现有空间形成临时可用路线",
+    "start_state": "她看到目标方向，立刻选择最短的可见路线并试图抢先通过。",
+    "restriction": "村庄已有的窄路、高低差或转折让直冲失去优势；只使用Picture 2实际可见结构，不凭空增加障碍。",
+    "turn": "她先做一个像要硬冲的假动作，随后突然压低重心，用机械爪足抓地、长尾反摆，把前冲惯性转成侧向和纵向连续换线。",
+    "new_state": "她不再服从原本单一路径，而是利用村庄现有空间连续通过，落到新的可见通路并保持速度。"
+  },
+  "shot_grammar": {
+    "format": "2x15s",
+    "video_A": ["0-4s 中远景前侧跟：黎黎隆看到目标后抢先启动，完整长尾进入画面", "4-8s 中景侧跟：沿Picture 2现有最直接路线加速，爪足与尾巴形成清楚推进节奏", "8-12s 中远景略高机位：现有路径高低差/转折进入同一画面，直冲路线明显变差", "12-15s 中近景：她短促制动却露出机灵表情，视线扫向另一段真实可见通路，尾巴开始预摆"],
+    "video_B": ["0-4s 中近景低机位：她故意向原路线做一次假冲，随即机械爪足抓地横切", "4-9s 中远景横向跟拍：长尾分节反摆，帮助身体借Picture 2实际存在的高低差/转折连续换线", "9-12s 近景到中景：一次干净落脚后不完全停下，尾巴二次摆动把剩余惯性送向下一段现有通路", "12-15s 远景收束：她在新路线继续前进，回头露出一点得意；原路线与新路线关系可读，不新增设施"]
+  },
+  "asset_status": {
+    "character_ref_status": "github_direct_read",
+    "scene_ref_status": "github_direct_read",
+    "asset_note": "character card and H3 reference image are present in GitHub; scene path and blob sha verified from the 13-scene pool; actual H3 image binding and render remain cloud Work responsibilities"
+  },
+  "results": {
+    "render_status": "not_rendered_by_b_end",
+    "character_consistency_score": null,
+    "scene_consistency_score": null,
+    "tail_continuity_score": null,
+    "dynamic_chain_readability_score": null,
+    "shot_grammar_readability_score": null,
+    "failure_family": [],
+    "notes": "await cloud Work"
+  }
+}
