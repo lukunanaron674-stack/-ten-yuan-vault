@@ -1,0 +1,45 @@
+{
+  "task_id": "CH003_B_20260923_0611_R07",
+  "schema": "video_tenyuan_prompt_schema_v1.0",
+  "project": "黎黎隆项目/角色魅力实验",
+  "character_id": "LLL-CHAR-003",
+  "character_name": "逃票魔法学徒",
+  "character_card_path": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
+  "character_status": "STAGING_visual_upper_body_only",
+  "selected_scene_refs": [{
+    "scene_id": "SCENE-11",
+    "source_path": "黎黎隆项目/04_场景/五色视觉系统/R4_色彩脚本/assets/R4-01_机械空港_起_安静生命.png",
+    "github_blob_sha": "c87915a6d7232e6a485a8904d32b3f8001941283",
+    "status": "available_by_github_path",
+    "role": "primary_environment_reference_only"
+  }],
+  "subject_definitions": {
+    "subject_1": "CH-003, the quiet but mischievous magical apprentice. Preserve the author-approved large round face, small facial features, short black hair with asymmetric fringe, pale-purple cheek circles, purple asymmetric wide-brim living hat, pale diagonal hat band, and single thin feather-like top structure. The supplied design currently establishes only the upper body; do not invent a canonical lower-body design.",
+    "subject_2": "The living hat is an active companion expressed through brim and feather motion. Its exact magic mechanism remains unresolved and must not be canonized by this experiment.",
+    "picture_2": "SCENE-11 is the primary environment reference. Preserve its mechanical-airport layout, quiet-life atmosphere and visible existing routes; it must not redesign the character."
+  },
+  "retention_analysis": {
+    "must_keep": ["round face and small features", "short black hair and asymmetric fringe", "pale-purple cheek circles", "purple asymmetric living-hat silhouette", "pale diagonal hat band", "single thin feather-like top structure", "quiet exterior with clever observational behavior"],
+    "weak_reference": ["small environmental blocking adjustments needed for camera continuity", "hat brim and feather performance within already allowed exploration"],
+    "forbidden": ["canonical lower-body design", "standard chibi wizard robe", "mechanical soldier conversion", "new weapon", "new hat mechanism presented as final canon", "new architecture absent from the scene reference"]
+  },
+  "changed_variable": "The apprentice changes an apparently single fixed approach through the quiet mechanical-airport space into a usable indirect route by noticing an existing spatial gap, while the living hat changes from passive companion to active caution signal.",
+  "dynamic_chain": {
+    "chain": "XN固定可见路径 → Z观察既有空间缝隙 → ZX试探改道 → NZ孩子与活体帽形成共同前进关系",
+    "start_state": "The visible airport route suggests one standard approach.",
+    "restriction": "Following that approach would expose the child to an existing spatial or operational constraint visible in the reference.",
+    "turn": "The child notices an already-present alternate gap or edge and tests it; the hat first warns, then coordinates through brim/feather motion.",
+    "new_state": "The route becomes usable without inventing a new facility, and the child-hat relationship shifts from wearer/accessory to two-way navigation partnership."
+  },
+  "shot_grammar": {
+    "clip_A_15s": ["0-5s wide establishing shot, slow lateral drift, preserve the actual SCENE-11 layout and quiet atmosphere", "5-10s medium upper-body framing, child studies the standard route while the hat feather reacts before the child moves", "10-15s close-to-medium reveal that keeps the visible route and an existing alternate gap/edge in the same spatial logic; child recognizes the possibility"],
+    "clip_B_15s": ["0-5s medium tracking, child begins the test toward the existing alternate route; keep lower body occluded or outside frame rather than inventing it", "5-10s close reaction: hat brim/feather pulls or signals caution, child pauses and changes timing instead of forcing forward", "10-15s wider upper-body/environment composition: child and hat proceed in coordinated rhythm along the existing usable route; end on a new partnership state, not a victory pose"]
+  },
+  "asset_status": {
+    "character_ref_status": "chat_reference_known_but_github_asset_not_verified_from_character_card",
+    "scene_ref_status": "github_direct_read",
+    "asset_note": "Cloud Work must bind the real CH-003 image if available. Do not block B-end text generation. Image submission and H3 rendering are handled by cloud Work.",
+    "render_status": "not_rendered_by_b_end"
+  },
+  "h3_prompt_file": "黎黎隆项目/角色魅力实验/B端/prompts/generated/CH003_B_20260923_0611_R07_H3.md"
+}
