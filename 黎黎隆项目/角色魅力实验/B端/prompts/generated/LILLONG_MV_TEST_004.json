@@ -1,0 +1,61 @@
+{
+  "task_id": "LILLONG_MV_TEST_004",
+  "source": "B_CHAT",
+  "status": "b_generated_pending_c_render",
+  "internal_chain": "ZX线：ZX→XN→NX；Z线：Z→NZ；最终合流",
+  "parallel_tracks": {
+    "track_a": "黎黎隆的身体路线：抢先冲刺→被重复路径折返→被迫分段推进",
+    "track_b": "长机械龙尾与湖面反光路线：不规则偏移→打开第二出口→与身体路线合流",
+    "convergence": "身体与尾巴从不同方向越过湖岸缺口，形成一次清楚的侧向跃迁"
+  },
+  "shot_sequence": [
+    {
+      "shot": "01",
+      "scale": "低机位近景",
+      "action": "黎黎隆看见湖心标记，机械龙爪连续踏过浅水石面，抢先冲出森林；长机械龙尾拖出第二条运动线",
+      "track": "身体路线启动，尾巴路线同时出现"
+    },
+    {
+      "shot": "02",
+      "scale": "中远景快速横移",
+      "action": "林间机械框架和湖岸路径反复出现，把她的冲刺折返回同一个起点；每次回到起点，节拍更紧",
+      "track": "身体路线受压"
+    },
+    {
+      "shot": "03",
+      "scale": "顶视与尾巴特写交替",
+      "action": "她被迫把前进拆成短段；尾巴擦过冷湖面，反光形成一条偏离主路线的弧线",
+      "track": "两条路线并行"
+    },
+    {
+      "shot": "04",
+      "scale": "双轨跟拍后反向环绕",
+      "action": "黎黎隆顺着意外弧线故意偏移，借尾巴回弹改变落点，从侧面越过限制",
+      "track": "身体与尾巴路线开始合流"
+    },
+    {
+      "shot": "05",
+      "scale": "拉远全景",
+      "action": "身体与尾巴从两个方向同时越过湖岸缺口，她落在冷湖面边缘；暖天空倒影重新稳定，森林空隙被重新组织",
+      "track": "最终合流"
+    }
+  ],
+  "character_charm": [
+    "好胜：看到目标就抢先冲，不愿等待",
+    "受挫：重复路径让她连续回到原点",
+    "机灵：注意到尾巴和湖面反光形成的第二条路线",
+    "行动力：不是停下来思考，而是在运动中改变落点",
+    "角色后果：她成功越过限制，却把湖岸路径和环境弄得更复杂"
+  ],
+  "must_keep_check": [
+    "黎黎隆身份、脸型、比例和服装主体不变",
+    "长机械龙尾始终清楚，且承担第二条运动线",
+    "机械龙爪脚和两片头盔卡扣可识别",
+    "暖天空、冷湖面、森林层次保留",
+    "双轨最终形成一个可读的侧向跃迁",
+    "最终生产描述不出现十元术语"
+  ],
+  "negative_prompt": "no ordinary fantasy dragon, no character redesign, no extra wings, no extra weapons, no new costume structure, no subtitles, no logo, no random text, no disappearing tail, no muddy silhouette, no separate unrelated action tracks",
+  "h3_prompt": "Anime cinematic MV animation, clean readable 2D shapes. Keep the established Lillong character identity, original face and proportions, two-piece helmet clips, mechanical dragon-claw feet, and long segmented mechanical dragon tail with clear upper, middle, and lower rhythm. Warm sky above a cold blue lake in a layered forest. Lillong sees a marker in the lake and rushes forward across shallow stepping stones, eager to win. Repeating mechanical frames and shoreline paths keep returning her to the same starting point, making the movement increasingly compressed. She breaks her route into short advances while her long segmented tail skims the cold lake and creates a second irregular arc in the reflection. She notices that arc while moving, deliberately shifts sideways, and uses the tail's rebound to change her landing point instead of attacking the obstacle head-on. Follow the body on one camera track and the tail and reflection on another; let the two tracks merge in a sudden reverse orbit as she leaps across a shoreline gap from a new angle. End with her landing at the lake edge as the warm sky reflection stabilizes and the forest opening is reorganized around her. Her expression is proud and energetic, with the small consequence that she has made the route more complicated. No text, no logo, no subtitles, no ordinary dragon redesign, no extra wings or weapons.",
+  "do_not_claim_h3_rendered": true
+}
