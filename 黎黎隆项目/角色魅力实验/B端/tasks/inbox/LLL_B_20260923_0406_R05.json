@@ -1,0 +1,55 @@
+{
+  "task_id": "LLL_B_20260923_0406_R05",
+  "schema": "video_tenyuan_prompt_schema_v1.0",
+  "project": "黎黎隆项目/角色魅力实验",
+  "character_id": "LLL-CHAR-001",
+  "character_name": "黎黎隆",
+  "character_status": "experimental_reference_not_final_freeze",
+  "character_ref_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_character_ref_20260923.png",
+  "selected_scene_refs": [{
+    "scene_id": "SCENE-02",
+    "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-02_森林湖泊_双色主导.png",
+    "github_blob_sha": "249b3a0f00aa894772d1049e800f4813723184df",
+    "status": "available_by_github_path",
+    "role": "primary_environment_reference"
+  }],
+  "subject_definitions": {
+    "subject_1": "黎黎隆：红发少女，既有脸型和基础比例，两片头盔卡扣，机械龙爪脚，长分节机械龙尾；同一角色，不生成复制体。",
+    "picture_1": "角色参考，仅用于保持黎黎隆身份；尚未冻结的细节只用于本轮实验，不回写正式设定。",
+    "picture_2": "SCENE-02森林湖泊双色主导，仅定义暖天空、冷湖面、路径、构图和环境氛围，不覆盖角色设计。"
+  },
+  "retention_analysis": {
+    "must_keep": ["红发", "原有脸型与基础比例", "两片头盔卡扣", "机械龙爪脚", "长机械龙尾的上中下节奏与关节连续性"],
+    "performance_keep": ["好胜", "机灵", "行动力强", "太想赢会把局面弄复杂", "Z以古灵精怪和灵活变招表现"],
+    "scene_keep": ["暖天空", "冷湖面", "双色主导", "森林湖泊现有空间层级"],
+    "forbid": ["新增服装体系", "新增武器", "新增翅膀", "新增身体结构", "把变体写回最终角色设定", "复制角色", "画面文字或logo"]
+  },
+  "changed_variable": "黎黎隆为了抢先通过湖边路径主动选择更快但更难控制的路线，使‘稳定直行’变成‘高速失衡风险’，随后用尾巴和爪足把失衡重新转化为可控的贴水改道。",
+  "dynamic_chain": {
+    "full_chain": "ZX好胜主动抢线 → XN既有窄路径与落点限制她的直冲 → Z临场用尾巴反摆和爪足改变身体路线 → NZ与湖岸/水面形成新的可用运动关系",
+    "start_state": "她看到前方路线并想抢先通过。",
+    "restriction": "现有岸边路径和落点空间不足以支持她持续直冲，速度越高越容易冲出安全路线。",
+    "turn": "她不减成普通慢跑，而是突然压低身体，机械爪足短促制动，长尾从反方向甩出形成配重，让身体沿水边横向切线。",
+    "new_state": "她把原本危险的贴水边缘变成自己的新路线，稳定落到岸边可见落点。"
+  },
+  "shot_grammar": {
+    "format": "2x15s",
+    "video_A": ["0-4s 中远景低机位侧跟：角色抢线冲刺，完整长尾进入画面", "4-9s 中景前侧跟：速度上升，岸边可用路径逐渐变窄，尾巴惯性放大", "9-12s 近景：机械爪足急刹，身体产生可读失衡", "12-15s 中近景：她不是慌张，而是露出想赢的短促表情，视线扫向贴水侧线，尾巴开始反摆"],
+    "video_B": ["0-4s 中近景侧视：承接反摆，爪足压地，身体横向切出", "4-9s 中远景贴水横移：尾巴分节连续传递反向摆动，角色沿现有湖岸边缘改道", "9-12s 低机位中景：机械爪足落到现有可见岸边落点，尾巴二次摆动消除剩余惯性", "12-15s 远景收束：角色稳定下来回望原路线，轻微得意，不新增任何设施"]
+  },
+  "asset_status": {
+    "character_ref_status": "pending_cloud_work_binding_or_remote_presence_check",
+    "scene_ref_status": "github_direct_read",
+    "asset_note": "scene path and blob sha verified from GitHub scene pool; character image binding and H3 render are cloud Work responsibilities"
+  },
+  "results": {
+    "render_status": "not_rendered_by_b_end",
+    "character_consistency_score": null,
+    "scene_consistency_score": null,
+    "tail_continuity_score": null,
+    "dynamic_chain_readability_score": null,
+    "shot_grammar_readability_score": null,
+    "failure_family": [],
+    "notes": "await cloud Work"
+  }
+}
