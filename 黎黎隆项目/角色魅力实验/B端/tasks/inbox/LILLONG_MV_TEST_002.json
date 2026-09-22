@@ -1,0 +1,89 @@
+{
+  "task_id": "LILLONG_MV_TEST_002",
+  "task_type": "dynamic_chain_video_prompt",
+  "project": "黎黎隆",
+  "source": "B_CHAT",
+  "status": "inbox",
+  "character": {
+    "name": "黎黎隆",
+    "ten_yuan": {
+      "primary": "ZX",
+      "secondary": "Z",
+      "support": "XN"
+    },
+    "personality": [
+      "好胜",
+      "机灵",
+      "行动力强"
+    ],
+    "must_keep": [
+      "长机械龙尾及上中下节奏",
+      "机械龙爪脚",
+      "两片头盔卡扣",
+      "原有脸型、比例、身份",
+      "干净线面与清楚剪影"
+    ],
+    "forbidden": [
+      "普通幻想龙",
+      "重设计角色身份",
+      "新增翅膀或武器",
+      "字幕、logo、不可读文字"
+    ]
+  },
+  "scene": {
+    "name": "暖天空冷湖面森林",
+    "ten_yuan": {
+      "primary": "NZ",
+      "support": "ZN"
+    },
+    "must_keep": [
+      "暖色天空",
+      "冷色湖面",
+      "森林空间层次",
+      "角色与尾巴可读"
+    ]
+  },
+  "dynamic_chain": {
+    "core": "ZX→XN→Z→NZ",
+    "stages": [
+      {
+        "stage": 1,
+        "relation": "ZX",
+        "action": "黎黎隆为了赢，主动冲向湖边森林中的目标并抢先发起挑战",
+        "camera": "低机位近景切入，尾巴和机械龙爪先进入画面"
+      },
+      {
+        "stage": 2,
+        "relation": "XN克ZX",
+        "action": "重复的路径结构、狭窄地形和机械化障碍预测并限制她的直线冲刺",
+        "camera": "镜头轨道重复、构图变窄，突出她被路径锁住"
+      },
+      {
+        "stage": 3,
+        "relation": "Z变招",
+        "action": "她不再硬撞，利用尾巴的分节转向和一个意外时间差，从障碍的侧面改道",
+        "camera": "环绕镜头突然反向，尾巴画出转向轨迹"
+      },
+      {
+        "stage": 4,
+        "relation": "NZ收束",
+        "action": "她借湖面反光和森林空隙重新获得空间主动权，得意但仍带一点闯祸后的复杂感",
+        "camera": "拉远到暖天空与冷湖面，角色落在画面中心，环境关系被重新组织"
+      }
+    ]
+  },
+  "camera_language": "MV节奏；低机位近景、快速横移、重复轨道压迫、突然反向环绕、湖面反光拉远",
+  "output_contract": {
+    "write_to": "黎黎隆项目/角色魅力实验/B端/prompts/generated/",
+    "required_fields": [
+      "task_id",
+      "dynamic_chain_reading",
+      "shot_sequence",
+      "character_charm",
+      "must_keep_check",
+      "negative_prompt",
+      "h3_prompt"
+    ],
+    "do_not_claim_h3_rendered": true
+  }
+}
