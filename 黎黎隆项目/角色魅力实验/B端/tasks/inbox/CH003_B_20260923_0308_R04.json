@@ -1,0 +1,54 @@
+{
+  "task_id": "CH003_B_20260923_0308_R04",
+  "schema": "video_tenyuan_prompt_schema_v1.0",
+  "project": "黎黎隆项目/角色魅力实验",
+  "character_id": "LLL-CHAR-003",
+  "character_name": "逃票魔法学徒",
+  "character_card_path": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
+  "selected_scene_refs": [{
+    "scene_id": "SCENE-03",
+    "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-03_森林湖泊_三色层级.png",
+    "github_blob_sha": "a877b428bd9cf86dded78f4a00c36671afeaa35e",
+    "status": "available_by_github_path",
+    "role": "primary_environment_reference"
+  }],
+  "subject_definitions": {
+    "subject_1": "逃票魔法学徒。只使用角色卡已确认的上半身视觉：大圆脸、小五官、黑色短发、不对称刘海、淡紫脸颊圆斑、紫色不对称大帽檐、浅色斜向帽带、细长羽毛状顶部结构。下半身尚未冻结，不擅自补成法师袍、斗篷或机械兵。",
+    "subject_2": "活体魔法帽是同一角色的伙伴型表演主体，可通过帽檐和顶部羽毛动作表达提醒、拉扯、阻止，但不把探索方案升级成定稿能力。",
+    "picture_1": "角色参考待云端Work绑定；若GitHub无真实角色图片，则以角色卡视觉锁定为文字约束，不伪造已存在图片。",
+    "picture_2": "SCENE-03森林湖泊三色层级，仅作为环境、空间和构图参考。"
+  },
+  "retention_analysis": {
+    "must_keep": ["大圆脸和小五官", "黑色短发与不对称刘海", "淡紫脸颊圆斑", "紫色不对称大帽檐", "浅色斜向帽带", "细长羽毛状顶部结构", "安静外表下的机灵感"],
+    "scene_keep": ["三色前中后景层级", "森林湖泊空间", "清楚的绕行路线"],
+    "weak_reference": ["未冻结下半身不作为魅力动作重点", "帽子动作可表演但不固化能力机制"],
+    "forbidden": ["标准Q版重设计", "传统法师袍", "机械兵", "新增武器", "新增确定下半身结构"]
+  },
+  "changed_variable": "原本被标准路线阻断的前进路径，被孩子通过观察地形并借活体帽提醒改成一条可继续前进的侧向路线。",
+  "dynamic_chain": {
+    "full_chain": "XN固定路径 → Z发现未覆盖路线 → ZX主动试探 → NZ与帽子/环境形成共同前进关系",
+    "start_state": "孩子面对一条看似只有单一路径的森林湖岸通行方式。",
+    "restriction": "前方既有地形令标准直行路线中断；不新增闸机、魔法门或城市设施。",
+    "turn": "孩子先停下观察，帽檐与羽毛朝侧面轻拉提示；他露出小小得意表情，主动试探场景中真实存在的侧向落脚点。",
+    "new_state": "孩子与活体帽不再是单向指挥关系，而是共同确认新路线，继续向湖岸深处前进。"
+  },
+  "shot_grammar": {
+    "format": "2x15s",
+    "A": ["0-4s 中远景平视，沿湖岸缓慢横移，建立单一路径与角色", "4-8s 中景停顿，标准路线被真实地形截断，角色先看前方再看侧面", "8-12s 中近景，帽檐和羽毛先向侧面偏，孩子被轻轻拽回", "12-15s 近景，孩子从困惑转为机灵的小表情，视线锁定侧向落点"],
+    "B": ["0-4s 中景侧视，孩子主动向原路线做一次假动作", "4-8s 中近景，帽子反向拉住，孩子顺势改变身体方向", "8-12s 中远景横移，沿Picture 2真实可见的侧向空间绕行，不发明设施", "12-15s 稳定中景，孩子和帽子同时朝新方向定住，形成共同选择的收束"]
+  },
+  "asset_status": {
+    "character_ref_status": "character_card_verified_image_binding_pending_cloud_work",
+    "scene_ref_status": "github_direct_read",
+    "asset_note": "SCENE-03 path and blob SHA verified. Character image asset is not asserted as present; cloud Work must bind a real character reference if available. B-end text generation is not blocked."
+  },
+  "results": {
+    "render_status": "not_rendered_by_b_end",
+    "character_consistency_score": null,
+    "scene_consistency_score": null,
+    "living_hat_readability_score": null,
+    "dynamic_chain_readability_score": null,
+    "shot_grammar_readability_score": null,
+    "notes": "Await cloud Work H3 render and feedback."
+  }
+}
