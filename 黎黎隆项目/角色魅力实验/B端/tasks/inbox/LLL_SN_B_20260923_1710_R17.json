@@ -1,0 +1,137 @@
+{
+  "schema_version": "lililong-b-single-narrative/v1.0",
+  "task_id": "LLL_SN_B_20260923_1710_R17",
+  "round": "R17",
+  "task_version": "v1.0",
+  "parent_task_id": "MOUSE_B_20260923_1606_R16",
+  "video_mode": "single_character_narrative",
+  "status": "queued_for_workbuddy_validation",
+  "source_evidence": {
+    "confirmed": [
+      {
+        "source": "黎黎隆项目/角色魅力实验/B端/rules/B端H3时间分镜与风格稳定规则_v1.0.md",
+        "commit": "c9de1341cc5a0305626753fbf3caa6ae6fb3bcda",
+        "used_for": "0–2/2–4/4–6/6–8时间分镜、固定镜头和小动作"
+      },
+      {
+        "source": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL-MAIN-001.json",
+        "used_for": "身份锁、十元轴与造型锁"
+      },
+      {
+        "source": "黎黎隆项目/角色魅力实验/B端/assets/scene_pool_13_index.json",
+        "used_for": "SCENE-02真实路径、blob SHA与湖面反光语义"
+      }
+    ],
+    "candidate": [],
+    "inference": [
+      "把SCENE-02索引中的环境反光压缩成一次小光斑位移，仅作为本轮可观察刺激，不回写世界观或场景正史。"
+    ],
+    "no_new_evidence": [
+      "十元找图研究：当前GitHub检索未发现本轮新增可消费材料。",
+      "十元校准与黎黎隆应用：当前GitHub检索未发现本轮新增可消费材料。",
+      "黎黎隆素材与Codex协作：当前GitHub检索未发现本轮新增可消费材料。"
+    ]
+  },
+  "character_id": "LLL-MAIN-001",
+  "character_name": "黎黎隆",
+  "scene_asset_id": "SCENE-02",
+  "reference_view": {
+    "type": "both",
+    "character_image": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+    "character_image_sha256": "5df6a463e5ee9fe7c4fc641c86cda9ebc1647867e78afd0d5430de7de02f0143",
+    "role": "同一张角色卡锁定脸型、比例、红发、机械爪足、长机械龙尾与现有模块",
+    "scene_image": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-02_森林湖泊_双色主导.png",
+    "scene_blob_sha": "249b3a0f00aa894772d1049e800f4813723184df",
+    "scene_role": "只锁定森林湖泊空间、暖天空、冷湖面与已有反光"
+  },
+  "internal_tenyuan": {
+    "confirmed_base": "ZX主 / Z中 / XN小",
+    "action_selection": "用极小的环境刺激压住大动作；只让注意方向发生变化，再以轻微转头收束。",
+    "note": "仅供B端选动作，不写入H3描述词。"
+  },
+  "time_beats": [
+    {
+      "time": "0–2秒",
+      "role": "起始状态",
+      "visible_change": "黎黎隆站在湖岸，身体静止，视线朝前。"
+    },
+    {
+      "time": "2–4秒",
+      "role": "唯一外部刺激",
+      "visible_change": "湖面已有的细小光斑向一侧移动一次；人物不动。"
+    },
+    {
+      "time": "4–6秒",
+      "role": "身体反应",
+      "visible_change": "眼睛先转向光斑；身体和双脚保持原位。"
+    },
+    {
+      "time": "6–8秒",
+      "role": "角色回应与结果",
+      "visible_change": "轻微转头跟随光斑，随后停住。"
+    }
+  ],
+  "single_changed_variable": "注意方向：从正前方转到湖面移动光斑；角色位置、姿态、服装、场景和光线结构不变。",
+  "shot_grammar": {
+    "framing": "固定中景",
+    "camera": "固定机位；不推镜、不摇镜、不变焦、不转场",
+    "lighting": "沿用场景参考图固定光线与颜色；只允许湖面既有光斑小幅位移",
+    "continuity": "四段为同一连续镜头；始终只出现一个黎黎隆"
+  },
+  "h3_prompt": "Picture 1 只锁定同一个黎黎隆的身份与外形，Picture 2 只锁定森林湖泊环境。全片只有一个黎黎隆，不出现第二个人物、分身、完整倒影或分屏。\n\n0–2秒：固定中景，黎黎隆站在湖岸，身体静止，视线朝前。  \n2–4秒：湖面已有的细小光斑向一侧移动一次，人物仍不移动。  \n4–6秒：黎黎隆的眼睛先转向光斑，身体和双脚保持原位。  \n6–8秒：她轻微转头跟随光斑，随后停住，画面保持稳定。\n\n固定机位、固定中景、固定光线；不推镜、不摇镜、不转场、不换色。",
+  "must_keep": [
+    "同一张脸和同一角色身份",
+    "红色长发",
+    "既有头盔卡扣",
+    "机械龙爪脚",
+    "长机械龙尾的连接与上中下节奏",
+    "红白黑机械模块与少量青蓝功能信号",
+    "一个主角、一个场景、一个连续镜头"
+  ],
+  "must_avoid": [
+    "第二个人物或第二个表演主体",
+    "同一角色分身、克隆、分屏、画中画、完整镜像或水中完整人物倒影",
+    "额外肢体、武器、翅膀或未确认结构",
+    "重新设计脸、服装、比例或机械结构",
+    "推镜、摇镜、转场、天气变化、突然换色",
+    "MV卡点、角色轮播、字幕、logo和水印"
+  ],
+  "audio_design": {
+    "ambient_soundscape": "轻风、很轻的湖水声、角色机械关节的一次细小摩擦声。",
+    "emotional_sound_cue": "光斑移动时出现一个克制的短音，随后回到安静；无歌词、无强拍、非MV。",
+    "prompt_boundary": "音频为Work侧补充执行字段，不混入纯视觉H3描述词。"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "run_A": {
+      "seed": "explicit_if_supported_else_auto",
+      "status": "queued"
+    },
+    "run_B": {
+      "seed": "explicit_if_supported_else_auto",
+      "status": "queued"
+    },
+    "same_prompt_required": true,
+    "compare_axes": [
+      "identity_continuity",
+      "single_character_integrity",
+      "eye_then_head_causality",
+      "camera_stability",
+      "atmosphere_fit"
+    ]
+  },
+  "validation_target": [
+    "Picture 1确为LLL-MAIN-001角色卡，Picture 2确为SCENE-02场景图",
+    "0–8秒始终只有一个黎黎隆实体",
+    "先光斑、再视线、再轻微转头，因果顺序清楚",
+    "脸型、比例、红发、龙尾、爪足和模块连续",
+    "固定中景、固定光线、无转场和无人物复制",
+    "A/B两次使用完全相同描述词并分别记录实际seed或执行序号"
+  ],
+  "execution_gate": {
+    "b_end_claim": "text_task_only",
+    "picture_binding": "WorkBuddy/WorkBody responsibility",
+    "identity_validation": "pending_image_validation",
+    "render_status": "not_rendered_by_b_end"
+  }
+}
