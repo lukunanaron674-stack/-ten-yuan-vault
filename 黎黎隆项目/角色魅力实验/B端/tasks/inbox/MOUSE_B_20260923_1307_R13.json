@@ -1,0 +1,101 @@
+{
+  "schema_version": "lililong-b-task/v1.2",
+  "task_id": "MOUSE_B_20260923_1307_R13",
+  "project": "黎黎隆项目/角色魅力实验",
+  "stage": "B",
+  "mode": "four_reference_driven_dynamics",
+  "status": "queued_for_workbuddy_validation",
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "character_name": "鼠耳异变少女",
+  "rotation": {
+    "previous_character": "ADV-001",
+    "previous_scene": "SCENE-05",
+    "character_changed": true,
+    "scene_changed": true
+  },
+  "reference_views": {
+    "view_type": "both",
+    "dynamic_primary": {
+      "type": "half_body_dynamic",
+      "file_name": "MOUSE-EAR-MUTANT-001_H3半身动态四宫格_v2.0.png",
+      "library_file_id": "libfile_36caaef442b08191b0acddf57f8d85e2",
+      "github_image_upload": false,
+      "role": "脸型、发型、表情、鼠耳反应和上半身动作主参考"
+    },
+    "identity_secondary": {
+      "type": "full_body_identity",
+      "file_name": "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+      "github_image_upload": false,
+      "role": "身体比例、宽袍剪影、深色边块、斜挎带和侧包位置校验"
+    },
+    "asset_index": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_H3_DYNAMIC_ASSET.json",
+    "binding_rule": "WorkBuddy必须同时绑定v2半身动态卡和原全身身份卡；任一缺失均不得渲染。"
+  },
+  "scene_ref": {
+    "scene_id": "SCENE-08",
+    "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png",
+    "github_blob_sha": "3f0a6664e66899a228a8513bfc70688c0a866908",
+    "status": "available_by_github_path",
+    "role": "environment_reference_only"
+  },
+  "character_definition": "使用两张角色参考图中的同一鼠耳异变少女；半身v2决定动态表现，全身原图只校验身份与比例。",
+  "retention_analysis": {
+    "must_keep": ["白色短发", "半透明浅紫鼠耳异变结构", "同一脸型", "白色宽大短袍", "小体型", "深色边块", "斜挎带", "侧包"],
+    "do_not_copy_from_che": ["角色造型", "颜色", "性格", "构图"],
+    "forbidden": ["误识别为澈", "改成兔耳角色", "改成普通少女", "新增尾巴角翅膀盔甲武器", "动态结果反向改写角色设定"]
+  },
+  "changed_variable": "仅改变警觉程度、鼠耳朝向、头部角度、视线和一只手的高度；身份、服装和身体比例不变。",
+  "ten_yuan": {
+    "initial": "N8 / NZ7 / Z5 / XZ4 / ZN4",
+    "chain": "N → NZ → Z",
+    "observable_mapping": "安静收束 → 确认环境安全 → 鼠耳先行并产生一个小主动动作"
+  },
+  "four_dynamics": [
+    {
+      "id": "D1",
+      "name": "平静到警觉",
+      "start_frame": "半身正面，平静，肩手收束。",
+      "change": "听见轻响，表情和肩线轻微警觉。",
+      "end_frame": "保持原地，视线转向声源。",
+      "shot_grammar": "固定半身近景；不推镜；动作集中在眼睛、肩线和鼠耳。"
+    },
+    {
+      "id": "D2",
+      "name": "鼠耳先动到头部转向",
+      "start_frame": "半身45度，头部不动，鼠耳自然。",
+      "change": "一侧鼠耳先转，间隔一拍后头部跟随。",
+      "end_frame": "头和鼠耳指向同一侧。",
+      "shot_grammar": "固定半身45度；突出先耳后头的时间差。"
+    },
+    {
+      "id": "D3",
+      "name": "低头到抬眼",
+      "start_frame": "半身正面，低头，眼神下落。",
+      "change": "只先抬眼，再小幅抬下巴。",
+      "end_frame": "保持身体收束，目光主动看向前方。",
+      "shot_grammar": "脸部近景；禁止换脸；不改变发型遮挡。"
+    },
+    {
+      "id": "D4",
+      "name": "迟疑到小幅抬手",
+      "start_frame": "半身45度，一只手贴近身体。",
+      "change": "短暂停顿后手抬到胸口高度，鼠耳同步前倾。",
+      "end_frame": "手停住，不继续挥动或施法。",
+      "shot_grammar": "半身45度固定镜头；手只走一条短弧线；宽袍袖口保持连续。"
+    }
+  ],
+  "asset_status": {
+    "half_body_dynamic_binding": "pending_image_validation",
+    "full_body_identity_binding": "pending_image_validation",
+    "scene_ref_status": "github_direct_read",
+    "render_status": "not_allowed_until_both_character_refs_pass",
+    "cloud_feedback_required": [
+      "dynamic_reference_bound",
+      "identity_reference_bound",
+      "same_character_across_four_dynamics",
+      "face_hair_mouse_ear_continuity",
+      "robe_strap_satchel_continuity",
+      "identity_validation_passed_or_failed"
+    ]
+  }
+}
