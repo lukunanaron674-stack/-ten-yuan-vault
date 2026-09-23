@@ -1,0 +1,121 @@
+{
+  "schema_version": "lililong-b-task/v1.2",
+  "task_id": "MOUSE_B_20260923_1606_R16",
+  "project": "黎黎隆项目/角色魅力实验",
+  "stage": "B",
+  "mode": "four_reference_driven_dynamics",
+  "status": "queued_for_workbuddy_validation",
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "character_name": "鼠耳异变少女",
+  "rotation": {
+    "previous_character": "ADV-001",
+    "previous_scene": "SCENE-13",
+    "character_changed": true,
+    "scene_changed": true
+  },
+  "reference_views": {
+    "view_type": "both",
+    "dynamic_primary": {
+      "type": "half_body_dynamic",
+      "file_name": "MOUSE-EAR-MUTANT-001_H3半身动态四宫格_v2.0.png",
+      "library_file_id": "libfile_36caaef442b08191b0acddf57f8d85e2",
+      "github_image_upload": false,
+      "role": "脸型、发型、表情、鼠耳反应和上半身动作主参考"
+    },
+    "identity_secondary": {
+      "type": "full_body_identity",
+      "file_name": "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+      "github_image_upload": false,
+      "role": "身体比例、宽袍剪影、深色边块、斜挎带和侧包位置校验"
+    },
+    "asset_index": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_H3_DYNAMIC_ASSET.json",
+    "binding_rule": "WorkBuddy必须同时绑定v2半身动态卡和原全身身份卡；任一缺失均不得渲染。"
+  },
+  "scene_ref": {
+    "scene_id": "SCENE-02",
+    "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-02_森林湖泊_双色主导.png",
+    "github_blob_sha": "249b3a0f00aa894772d1049e800f4813723184df",
+    "status": "available_by_github_path",
+    "role": "environment_reference_only"
+  },
+  "character_definition": "使用两张角色参考图中的同一鼠耳异变少女；半身v2决定动态表现，全身原图只校验身份与比例。",
+  "retention_analysis": {
+    "must_keep": [
+      "白色短发",
+      "半透明浅紫鼠耳异变结构",
+      "同一脸型",
+      "白色宽大短袍",
+      "小体型",
+      "深色边块",
+      "斜挎带",
+      "侧包"
+    ],
+    "do_not_copy_from_che": [
+      "角色造型",
+      "颜色",
+      "性格",
+      "构图"
+    ],
+    "forbidden": [
+      "误识别为澈",
+      "改成兔耳角色",
+      "改成普通少女",
+      "新增尾巴角翅膀盔甲武器",
+      "动态结果反向改写角色设定"
+    ]
+  },
+  "changed_variable": "仅改变呼吸、耳朵扫听顺序、视线落点、手触斜挎带和一次小幅侧移；身份与服装不变。",
+  "ten_yuan": {
+    "initial": "N8 / NZ7 / Z5 / XZ4 / ZN4",
+    "chain": "N → NZ → Z",
+    "observable_mapping": "安静站定 → 通过耳朵、视线和触觉确认环境关系 → 做一次小幅主动侧移"
+  },
+  "four_dynamics": [
+    {
+      "id": "D1",
+      "name": "呼吸到衣发落稳",
+      "start_frame": "半身正面，身体安静。",
+      "change": "轻呼吸，发梢和宽袍袖口随微风动一下。",
+      "end_frame": "发梢与袖口落稳，身体仍在原位。",
+      "shot_grammar": "固定半身近景；只保留轻微呼吸和衣发摆动。"
+    },
+    {
+      "id": "D2",
+      "name": "双耳分向扫听到同向锁定",
+      "start_frame": "半身45度，双耳自然。",
+      "change": "两侧鼠耳先后转向不同方向，停一拍后同时朝湖岸一侧。",
+      "end_frame": "头部不大转，双耳锁定同一侧。",
+      "shot_grammar": "固定半身45度；突出先后顺序；不推镜。"
+    },
+    {
+      "id": "D3",
+      "name": "看反光到确认落点",
+      "start_frame": "脸部近景，视线平视。",
+      "change": "眼睛先落向湖面反光，再移到近处岸边。",
+      "end_frame": "目光停在安全落点，下巴只小幅跟随。",
+      "shot_grammar": "固定脸部近景；不得换脸；不改变发型遮挡。"
+    },
+    {
+      "id": "D4",
+      "name": "触带确认到小幅侧移",
+      "start_frame": "半身45度，一只手靠近斜挎带。",
+      "change": "手指短暂压住斜挎带，松开后上身向已确认的一侧小幅移动。",
+      "end_frame": "侧包位置不变，身体停稳，鼠耳仍朝移动方向。",
+      "shot_grammar": "半身45度固定镜头；动作短而连续；全身参考只校验侧包和比例。"
+    }
+  ],
+  "asset_status": {
+    "half_body_dynamic_binding": "pending_image_validation",
+    "full_body_identity_binding": "pending_image_validation",
+    "scene_ref_status": "github_direct_read",
+    "render_status": "not_allowed_until_both_character_refs_pass",
+    "cloud_feedback_required": [
+      "dynamic_reference_bound",
+      "identity_reference_bound",
+      "same_character_across_four_dynamics",
+      "face_hair_mouse_ear_continuity",
+      "robe_strap_satchel_continuity",
+      "identity_validation_passed_or_failed"
+    ]
+  }
+}
