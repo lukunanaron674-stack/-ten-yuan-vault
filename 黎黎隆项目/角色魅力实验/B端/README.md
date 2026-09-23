@@ -33,3 +33,9 @@
 ## Work 端的安全闸门
 
 Work 在本地确认真实角色原图已绑定且角色身份匹配后才渲染。缺图/身份错配时 Work 在自己的队列里保留 `pending_image_validation`；**不阻断 B端继续提交下一小时的文本任务**。B端不声称图已上传、已完成身份验证、已出片或已评分，除非有可核实的实际记录。
+
+## 版本号与轮次差异（2026-09-23 起生效）
+
+执行规则：`rules/B端_版本号与轮次差异记录_v1.0.md`（`B-RULE-v1.0`）。每轮先核对 GitHub 现有最高 R 编号，再决定新的 task_id；每份任务写 `version_tracking`（task_version、父任务、规则/澈 MV 基准版本、changed_fields 的前后对照、held_constant、confounders、尚未取得的 Work 视频验证状态）。同一说明摘要写进 H3 MD，验证纸带上版本与父任务。
+
+每轮追加 `results/version_history/<task_id>_DIFF.md`，并尽量同步 `results/version_history/INDEX.md`。**没有真实成片只对比文本变动和预期表现，不能称新版本画风已胜过澈 MV**。Work 只需按验证 MD 自行绑原图、核身份及渲染，不必为了 B端版本记录回传验证。
