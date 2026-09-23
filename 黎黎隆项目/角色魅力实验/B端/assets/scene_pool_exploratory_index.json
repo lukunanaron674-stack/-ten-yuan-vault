@@ -28,7 +28,10 @@
       "character_override": false,
       "candidate_status": "exploratory_not_frozen",
       "can_be_primary": true,
-      "can_be_secondary": true
+      "can_be_secondary": true,
+      "cloud_4090d_path": "D:/H3/comfyui_input/lililong/CH003_rooftop_refset_20260923/CH-003_屋脊上的停顿_候选01.png",
+      "cloud_4090d_sha256": "9335b07dda012644a9e668eb046ce9a51d9b61a24c02ca906783e618f9466d31",
+      "cloud_status": "staged_sha256_verified"
     },
     {
       "scene_id": "SCENE-CH003-ROOFTOP-02",
@@ -60,7 +63,10 @@
       "character_override": false,
       "candidate_status": "exploratory_not_frozen",
       "can_be_primary": true,
-      "can_be_secondary": true
+      "can_be_secondary": true,
+      "cloud_4090d_path": "D:/H3/comfyui_input/lililong/CH003_rooftop_refset_20260923/CH-003_折层屋顶区_隐藏捷径中景_候选01.png",
+      "cloud_4090d_sha256": "b4a5af4f95c6a664a3d26ab6f4d1a9b7b06ec3411e1b2ffa120e25fba3a26368",
+      "cloud_status": "staged_sha256_verified"
     },
     {
       "scene_id": "SCENE-CH003-ROOFTOP-04",
@@ -76,7 +82,11 @@
       "character_override": false,
       "candidate_status": "exploratory_not_frozen",
       "can_be_primary": true,
-      "can_be_secondary": true
+      "can_be_secondary": true,
+      "cloud_4090d_path": "D:/H3/comfyui_input/lililong/CH003_rooftop_refset_20260923_recovered/CH-003_折层屋顶区_帽羽与维修口近景_候选01.png",
+      "cloud_4090d_sha256": "60b46a97ba3c1a66496fae0f3194bfed36d704d6be16a92bca69e96a9e5c007a",
+      "cloud_status": "staged_sha256_verified"
     }
-  ]
+  ],
+  "cloud_stage_note": "三张用户指定参考已在 RTX 4090D D:/H3/comfyui_input 下做 SHA-256 核验；这只表示素材可调用，不表示 H3 已启动或任务已入队。"
 }
