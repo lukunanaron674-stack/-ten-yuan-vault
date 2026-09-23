@@ -1,11 +1,11 @@
 {
-  "schema_version": "lililong-b-character-pool/v1.2",
+  "schema_version": "lililong-b-character-pool/v1.3",
   "project": "黎黎隆项目/角色魅力实验",
   "source_branch": "main",
   "image_count": 11,
   "character_count": 5,
-  "selection_policy": "B端生成描述词时必须先读取本索引；从status=available的角色候选中选择角色，并把asset_paths写入任务，供云端Work绑定图片。",
-  "selection_note": "LLL_H3_character_card_001为黎黎隆H3角色卡；R3-01至R3-09为角色与三类场景组合的可用角色参考图。9张R3图不是独立白底角色卡，但可以用于角色一致性与场景关系参考。",
+  "selection_policy": "仅选择status=available且asset_role=h3_character_reference、并已由作者指定用于H3的角色图。R3场景组合预跑图只能用于场景视觉实验，不能作为B端H3角色参考或自动入选条件。缺少已授权H3角色图时只记录待入池，不从场景实验图冒认。",
+  "selection_note": "本索引区分正式H3角色素材与R3场景组合预跑图。原R3-01至R3-09属于场景/角色组合实验图，不等同独立H3角色卡，不能自动作为人物身份依据。角色正式身份、冻结项须依据作者确认的角色素材。",
   "characters": [
     {
       "character_id": "LLL-MAIN-001",
@@ -14,7 +14,9 @@
       "asset_paths": [
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg"
       ],
-      "status": "available"
+      "status": "available",
+      "asset_role": "h3_character_reference",
+      "b_end_h3_eligible": true
     },
     {
       "character_id": "LLL-R3-001",
@@ -24,7 +26,10 @@
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-02_黎黎_机械空港_预跑.png",
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-03_黎黎_异种村庄_预跑.png"
       ],
-      "status": "available"
+      "status": "scene_experiment_only",
+      "asset_role": "scene_character_composite_experiment",
+      "b_end_h3_eligible": false,
+      "note": "R3场景组合实验图，不是H3角色素材；不得作为B端主体图片自动轮换。保留路径仅为历史实验索引。"
     },
     {
       "character_id": "LLL-R3-002",
@@ -34,7 +39,10 @@
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-05_大叔_机械空港_预跑.png",
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-06_大叔_异种村庄_预跑.png"
       ],
-      "status": "available"
+      "status": "scene_experiment_only",
+      "asset_role": "scene_character_composite_experiment",
+      "b_end_h3_eligible": false,
+      "note": "R3场景组合实验图，不是H3角色素材；不得作为B端主体图片自动轮换。保留路径仅为历史实验索引。"
     },
     {
       "character_id": "LLL-R3-003",
@@ -44,7 +52,10 @@
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-08_奇美拉_机械空港_预跑.png",
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-09_奇美拉_异种村庄_预跑.png"
       ],
-      "status": "available"
+      "status": "scene_experiment_only",
+      "asset_role": "scene_character_composite_experiment",
+      "b_end_h3_eligible": false,
+      "note": "R3场景组合实验图，不是H3角色素材；不得作为B端主体图片自动轮换。保留路径仅为历史实验索引。"
     },
     {
       "character_id": "LLL-CHAR-003",
@@ -56,7 +67,11 @@
       "role_card_path": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
       "status": "available",
       "h3_role": "character_design_authority",
-      "note": "本图为角色设定整合卡；H3只保留已确认头部、帽子、上半身结构，不补全未冻结下半身。"
+      "note": "本图为角色设定整合卡；H3只保留已确认头部、帽子、上半身结构，不补全未冻结下半身。",
+      "asset_role": "h3_character_reference",
+      "b_end_h3_eligible": true
     }
-  ]
+  ],
+  "h3_eligible_character_count": 2,
+  "scene_experiment_character_count": 3
 }
