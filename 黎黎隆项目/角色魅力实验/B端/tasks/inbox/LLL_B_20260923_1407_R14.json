@@ -1,0 +1,89 @@
+{
+  "schema_version": "lililong-b-task/v1.2",
+  "task_id": "LLL_B_20260923_1407_R14",
+  "project": "黎黎隆项目/角色魅力实验",
+  "stage": "B",
+  "mode": "four_reference_driven_dynamics",
+  "status": "queued_for_workbuddy_validation",
+  "character_id": "LLL-MAIN-001",
+  "character_name": "黎黎隆",
+  "rotation": {
+    "previous_character": "MOUSE-EAR-MUTANT-001",
+    "previous_scene": "SCENE-08",
+    "character_changed": true,
+    "scene_changed": true
+  },
+  "reference_views": {
+    "view_type": "both",
+    "character_card": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+    "character_card_sha256": "5df6a463e5ee9fe7c4fc641c86cda9ebc1647867e78afd0d5430de7de02f0143",
+    "identity_card": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL-MAIN-001.json",
+    "dynamic_primary": "角色卡中的脸部与动作姿态区域",
+    "identity_secondary": "角色卡中的全身、长机械龙尾、装甲模块和机械龙爪脚",
+    "binding_rule": "WorkBuddy必须绑定这张GitHub角色卡并通过黎黎隆身份连续性验证后才允许渲染。"
+  },
+  "scene_ref": {
+    "scene_id": "SCENE-03",
+    "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-03_森林湖泊_三色层级.png",
+    "github_blob_sha": "a877b428bd9cf86dded78f4a00c36671afeaa35e",
+    "status": "available_by_github_path",
+    "role": "environment_reference_only"
+  },
+  "character_definition": "使用角色卡中的同一黎黎隆；动作区主导表情和姿态，全身区校验身体模块、机械龙爪脚与长机械龙尾。",
+  "retention_analysis": {
+    "must_keep": ["同一脸型与红色长发", "长机械龙尾的上中下节奏", "机械龙爪脚", "既有机械身体模块", "两片头盔卡扣", "好胜、机灵、行动力强的表演核心"],
+    "forbidden": ["新增翅膀或武器", "改变尾巴连接方式", "重设角色身份", "把Z写成追查、接口化或解释系统", "用动态结果反向冻结新设定"]
+  },
+  "changed_variable": "只改变推进意图、急停重心、观察方向、尾巴配重和侧切路线；角色身份与装甲结构不变。",
+  "ten_yuan": {
+    "base": "ZX主 / Z中 / XN小",
+    "chain": "ZX → XN克ZX → Z改道 → ZX恢复",
+    "observable_mapping": "抢先推进 → 被现有路径迫停 → 机灵假动作与尾巴配重 → 侧切重新取得主动"
+  },
+  "four_dynamics": [
+    {
+      "id": "D1",
+      "name": "好胜前倾",
+      "start_frame": "半身45度，身体中立。",
+      "change": "眉眼先锁定前方，肩线与上身迅速前倾。",
+      "end_frame": "保持即将冲出的蓄势，不实际起跑。",
+      "shot_grammar": "固定半身45度近景；突出眼神到肩线的先后。"
+    },
+    {
+      "id": "D2",
+      "name": "冲出到急停",
+      "start_frame": "全身侧面，沿场景现有直线路径起步。",
+      "change": "前方路径收窄，机械龙爪脚抓地急停，身体先停、长尾后摆。",
+      "end_frame": "停在限制前，原路线仍清楚可见。",
+      "shot_grammar": "中远景短侧跟后固定；完整保留脚、身体与尾巴。"
+    },
+    {
+      "id": "D3",
+      "name": "观察到假动作",
+      "start_frame": "半身近景，停住后看向直路。",
+      "change": "眼神扫向侧路，嘴角轻挑，身体先向原路做半个假启动。",
+      "end_frame": "重心实际留在侧切方向。",
+      "shot_grammar": "固定半身近景；只用眼神、表情与肩部重心证明Z。"
+    },
+    {
+      "id": "D4",
+      "name": "尾巴反摆到侧切",
+      "start_frame": "全身45度，重心压低。",
+      "change": "机械龙爪脚定点转髋，长尾反向摆动配重，身体侧切进入场景真实侧路。",
+      "end_frame": "侧路落稳，回头露出小幅得意表情。",
+      "shot_grammar": "中远景横移；不绕角色；必须看到原路线与新路线。"
+    }
+  ],
+  "asset_status": {
+    "character_ref_status": "github_direct_read_awaiting_workbuddy_validation",
+    "scene_ref_status": "github_direct_read",
+    "render_status": "not_allowed_until_identity_gate_passes",
+    "cloud_feedback_required": [
+      "character_reference_bound",
+      "same_character_across_four_dynamics",
+      "face_hair_helmet_continuity",
+      "tail_claw_armor_connection_continuity",
+      "identity_validation_passed_or_failed"
+    ]
+  }
+}
