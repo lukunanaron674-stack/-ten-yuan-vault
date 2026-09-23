@@ -1,0 +1,415 @@
+{
+  "schema_version": "video_tenyuan_prompt_schema_v1.2",
+  "task_id": "LLL_B_20260923_2306_R23",
+  "task_version": "v1.0",
+  "round": "R23",
+  "parent_task_id": "MOUSE_B_20260923_2207_R22",
+  "created_at": "2026-09-23T23:06:48+08:00",
+  "status": "queued_for_workbuddy_validation",
+  "video_mode": "single_character_narrative",
+  "render_spec": {
+    "target_aspect_ratio": "9:16",
+    "target_resolution": null,
+    "actual_resolution": null,
+    "planned_clip_count": 2,
+    "planned_duration_seconds_each": 15
+  },
+  "cast": {
+    "character_id": "LLL-MAIN-001",
+    "display_name": "黎黎隆",
+    "on_screen_character_count_max": 1,
+    "other_characters_allowed": false,
+    "duplicate_instance_allowed": false
+  },
+  "source_assets": {
+    "character": {
+      "picture": "Picture 1",
+      "path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+      "github_image_sha256": "5df6a463e5ee9fe7c4fc641c86cda9ebc1647867e78afd0d5430de7de02f0143",
+      "reference_view": "both",
+      "identity_status": "github_direct_read_but_work_must_validate_for_run"
+    },
+    "scene": {
+      "picture": "Picture 2",
+      "scene_asset_id": "SCENE-04",
+      "path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-04_森林湖泊_五色组合.png",
+      "github_blob_sha": "efefd97514fc31d569134c821aada9cb3fdcb206",
+      "role": "environment_reference_only"
+    }
+  },
+  "subject_definitions": {
+    "single_subject": "LLL-MAIN-001 only; exactly one on-screen instance",
+    "identity_lock": [
+      "red long hair",
+      "red-white-black mechanical armor",
+      "cyan functional accents",
+      "mechanical claw feet",
+      "one long segmented mechanical dragon tail",
+      "existing face, body modules and proportions"
+    ],
+    "scene_boundary": "SCENE-04 supplies the forest-lake environment, color hierarchy and light only; it cannot redesign the character."
+  },
+  "retention_analysis": {
+    "must_keep": [
+      "face and identity",
+      "body proportions and silhouette",
+      "red hair",
+      "armor module layout",
+      "mechanical claw feet",
+      "single long segmented tail",
+      "clean linework and soft light"
+    ],
+    "may_change": [
+      "eye direction",
+      "small head turn",
+      "small shoulder feint",
+      "tail-tip direction",
+      "one small diagonal step",
+      "final facing direction"
+    ],
+    "evidence_limit": "Scene index confirms a forest-lake five-color composition and high information density; no unverified door, bridge, rope, NPC or invented prop is used."
+  },
+  "changed_variable": {
+    "name": "route_choice_after_feint",
+    "before": "body and gaze imply a small leftward choice while both feet remain planted",
+    "after": "tail leads a rightward correction and one small diagonal step establishes the chosen direction",
+    "held_constant": [
+      "character identity",
+      "single instance",
+      "scene asset",
+      "fixed camera",
+      "medium-wide framing",
+      "lighting",
+      "weather",
+      "two 15-second clips"
+    ]
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "chain": "ZX → XN克ZX → Z补 → Z生ZX",
+    "stages": [
+      {
+        "stage": "start",
+        "primary": "ZX",
+        "secondary": "Z",
+        "direction": "character→visible route",
+        "relation": "维持",
+        "volume_before": {
+          "ZX": 8,
+          "Z": 5,
+          "XN": 3
+        },
+        "volume_after": {
+          "ZX": 8,
+          "Z": 5,
+          "XN": 3
+        },
+        "visible_evidence": "ready forward posture, focused eyes, feet planted"
+      },
+      {
+        "stage": "constraint",
+        "primary": "XN",
+        "secondary": "ZX",
+        "direction": "multi-band environment→character route choice",
+        "relation": "XN克ZX",
+        "volume_before": {
+          "ZX": 8,
+          "XN": 3
+        },
+        "volume_after": {
+          "ZX": 5,
+          "XN": 6
+        },
+        "visible_evidence": "reflected color shifts left; eyes and head follow but feet do not move"
+      },
+      {
+        "stage": "improvisation",
+        "primary": "Z",
+        "secondary": "XN",
+        "direction": "character adapts within the restriction",
+        "relation": "Z补XN",
+        "volume_before": {
+          "Z": 4,
+          "XN": 6
+        },
+        "volume_after": {
+          "Z": 7,
+          "XN": 5
+        },
+        "visible_evidence": "small shoulder feint left while keeping both feet planted"
+      },
+      {
+        "stage": "result",
+        "primary": "ZX",
+        "secondary": "Z",
+        "direction": "improvised choice→new active route",
+        "relation": "Z生ZX（实验假设）",
+        "volume_before": {
+          "ZX": 5,
+          "Z": 7
+        },
+        "volume_after": {
+          "ZX": 8,
+          "Z": 6
+        },
+        "visible_evidence": "tail tip turns right first, one diagonal step follows, stable stop"
+      }
+    ],
+    "prompt_policy": "Ten-Yuan labels stay in task metadata and must not appear in final H3 prompts."
+  },
+  "skills_pipeline": {
+    "version": "H3动画四技能执行链_v1.0",
+    "steps": [
+      {
+        "id": "02_I2V_motion",
+        "output": "still posture → one reflected-color stimulus → eyes/head follow → shoulder feint → tail-led correction → one small step → stable stop",
+        "view_limit": "both; character card locks identity and permits only modest readable movement"
+      },
+      {
+        "id": "03_four_component_scene",
+        "output": "single subject, SCENE-04 environment, fixed medium-wide shot, clean lines and soft stable light"
+      },
+      {
+        "id": "04_clarity_conflict_audio",
+        "output": "one external stimulus and one route-choice variable; no contradictory camera or sound instruction",
+        "conflicts_resolved": [
+          "removed invented scene props",
+          "kept feet planted during feint",
+          "separated left feint from right commitment across clips"
+        ]
+      },
+      {
+        "id": "05_negative_sampling",
+        "output": "relevant anti-duplication constraints plus identical-prompt A/B runs for each clip"
+      }
+    ]
+  },
+  "clips": [
+    {
+      "clip_id": "A_15s",
+      "narrative_role": "stimulus_and_feint",
+      "start_frame": "one character standing still in SCENE-04 with both claw feet planted",
+      "time_beats": [
+        {
+          "time": "0–4s",
+          "action": "hold the opening posture; only natural breathing and tail weight settle"
+        },
+        {
+          "time": "4–8s",
+          "action": "one narrow reflected-color patch on the lake shifts once toward frame-left"
+        },
+        {
+          "time": "8–12s",
+          "action": "eyes move first, then the head turns slightly left"
+        },
+        {
+          "time": "12–15s",
+          "action": "shoulders make one small leftward feint; feet remain planted; stop"
+        }
+      ],
+      "single_changed_variable": "attention and upper-body intention shift from forward to left",
+      "h3_prompt": "Use Picture 1 only as the identity reference for the single character LLL-MAIN-001 and Picture 2 only as the forest-lake environment reference. In a fixed 9:16 medium-wide shot, exactly one red-haired mechanical dragon girl stands still near the existing lake space, keeping her red-white-black mechanical armor, cyan functional accents, mechanical claw feet and one long segmented mechanical dragon tail unchanged. A narrow patch of reflected color on the lake shifts once toward frame-left. Her eyes move first, then her head turns slightly left, and her shoulders make a small believable feint toward that direction while both claw feet remain planted. She stops in the feint with a restrained competitive half-smile. Keep the camera, framing, lighting and weather unchanged; preserve clean linework, soft light and the original character design.",
+      "audio_design": {
+        "ambient_soundscape": "soft lake water, light forest air, faint armor and tail-joint settling",
+        "emotional_sound_cue": "one restrained bright metallic tone as the reflected color shifts, followed by a short suspended non-lyrical texture",
+        "audio_role": "supports the visible stimulus and feint; not music-video editing",
+        "onset_event": "the lake reflection shifts at 4–8s",
+        "fallback_if_no_audio_track": "treat as post-production sound design only"
+      }
+    },
+    {
+      "clip_id": "B_15s",
+      "narrative_role": "choice_and_stop",
+      "start_frame": "selected ending frame of clip A; the same one character holds the leftward feint",
+      "time_beats": [
+        {
+          "time": "0–4s",
+          "action": "hold the feint without moving the feet"
+        },
+        {
+          "time": "4–8s",
+          "action": "the tip of the single long tail turns once toward frame-right"
+        },
+        {
+          "time": "8–12s",
+          "action": "torso follows slightly and one claw foot completes one small diagonal step right"
+        },
+        {
+          "time": "12–15s",
+          "action": "tail counter-swings once; weight settles; character stops facing the chosen direction"
+        }
+      ],
+      "single_changed_variable": "implied left route becomes one committed rightward step",
+      "h3_prompt": "Continue from the selected ending frame of clip A with the same single LLL-MAIN-001 character and the same forest-lake environment. In the same fixed 9:16 medium-wide shot, she holds the leftward feint for a brief moment. The tip of her single long segmented mechanical dragon tail turns toward frame-right before her torso follows. She rotates only slightly to the right, completes one small diagonal step with a mechanical claw foot, then lets the tail counter-sway once and settles into a stable stop facing the newly chosen direction. Keep exactly one character, preserve her face, red hair, body proportions, red-white-black armor, cyan accents, claw feet and tail structure; do not change the camera, lighting, weather or scene layout.",
+      "audio_design": {
+        "ambient_soundscape": "soft water and forest air continue; one quiet claw-foot contact and a small tail-joint movement",
+        "emotional_sound_cue": "a brief low plucked accent at the tail turn, resolving into a restrained warm tone at the stable stop; no lyrics and no beat-led cutting",
+        "audio_role": "supports the choice and final stabilization; not music-video editing",
+        "onset_event": "tail tip turns at 4–8s and the tone resolves when the foot settles",
+        "fallback_if_no_audio_track": "treat as post-production sound design only"
+      }
+    }
+  ],
+  "shot_grammar": {
+    "camera": "fixed",
+    "framing": "9:16 medium-wide, full silhouette and tail readable",
+    "movement": "none",
+    "lighting": "fixed soft light inherited from scene reference",
+    "weather": "unchanged",
+    "transition": "B continues only from Work-selected A ending frame",
+    "narrative_responsibility": "make the left feint and rightward chosen step readable without a second actor"
+  },
+  "audio_design": {
+    "mode": "per_clip",
+    "audio_track_capability": "unverified",
+    "policy": "sound supports event readability and emotion; never MV editing"
+  },
+  "sampling_plan": {
+    "per_prompt_run_count": 2,
+    "total_planned_runs": 4,
+    "total_completed_runs": 0,
+    "prompt_identical_within_clip": true,
+    "same_character_scene_and_parameters": true,
+    "clips": [
+      {
+        "clip_id": "A_15s",
+        "runs": [
+          {
+            "run_id": "run_A",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation"
+          },
+          {
+            "run_id": "run_B",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation"
+          }
+        ]
+      },
+      {
+        "clip_id": "B_15s",
+        "dependency": "Work selects one actual A ending frame before B execution",
+        "runs": [
+          {
+            "run_id": "run_A",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation"
+          },
+          {
+            "run_id": "run_B",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation"
+          }
+        ]
+      }
+    ],
+    "seed_policy": "Record a real integer only if the actual Work interface supports and returns it; otherwise keep seed=null and record separate real task IDs.",
+    "compare_axes": [
+      "identity stability",
+      "single-instance compliance",
+      "feint readability",
+      "tail-before-body timing",
+      "final step stability",
+      "camera stability",
+      "atmosphere fit"
+    ],
+    "selection_status": "not_evaluated_by_b_end"
+  },
+  "negative_constraints": [
+    "no second person or creature performer",
+    "no duplicate, clone, mirrored full character or complete reflection",
+    "no split screen, four-panel or character-sheet output",
+    "no extra head, arms, legs, claw feet or tails",
+    "no face, hair, armor, color or silhouette redesign",
+    "no invented weapon, vehicle, door, bridge or story prop",
+    "no camera movement, cut, transition, weather change or sudden recoloring",
+    "no text, subtitle, logo or watermark"
+  ],
+  "validation_target": {
+    "identity": "Work validates Picture 1 as LLL-MAIN-001 before execution",
+    "scene": "Work binds Picture 2 as SCENE-04 without transferring scene characters into the cast",
+    "instance": "exactly one LLL-MAIN-001 across both clips",
+    "continuity": "B starts from the actual selected A ending frame",
+    "rendering": "Work decides whether to render; B-end makes no render or audio completion claim"
+  },
+  "version_tracking": {
+    "rule_version": "B-RULE-v1.2",
+    "prompt_schema_version": "video_tenyuan_prompt_schema_v1.2",
+    "skills_pipeline_version": "H3动画四技能执行链_v1.0",
+    "audio_design_version": "v1.0",
+    "sampling_version": "double_draw_v1.0",
+    "before": {
+      "task_id": "MOUSE_B_20260923_2207_R22",
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "scene_asset_id": "SCENE-08",
+      "changed_variable": "ear and hand response while feet stay still"
+    },
+    "after": {
+      "task_id": "LLL_B_20260923_2306_R23",
+      "character_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-04",
+      "changed_variable": "leftward feint becomes one rightward chosen step"
+    },
+    "changed_fields": [
+      "character",
+      "scene",
+      "internal dynamic chain",
+      "visible stimulus",
+      "motion chain",
+      "audio cues"
+    ],
+    "held_fields": [
+      "single-character mode",
+      "fixed camera",
+      "9:16 target",
+      "two 15s clips",
+      "two identical-prompt draws per clip",
+      "no MV"
+    ],
+    "confounders": [
+      "character changed",
+      "scene family and color complexity changed",
+      "action amplitude changed"
+    ],
+    "result_claim": "text_task_only; no causal visual-quality conclusion until Work outputs exist"
+  },
+  "upstream_evidence": [
+    {
+      "source": "B1_素材索引_20260923_2206.md",
+      "commit": "0c56acd7f9e75374b98dbf51703dfe51278dbde7",
+      "use": "confirmed indexed sources and text-task eligibility"
+    },
+    {
+      "source": "B2_20260923_2215_MOUSE-EAR-MUTANT-001_SCENE-08.md",
+      "commit": "9051efcdf3cd793cb6670efd7dbfdfcd289f3a1d",
+      "use": "cross-character event-judgment-choice-stop structure only; mouse-specific actions not copied"
+    },
+    {
+      "source": "B3 mouse-ear SCENE-08 handoff",
+      "commits": [
+        "5cf8cd60094e6a6f2dcda6fed1431538e630cbfb",
+        "10df5e8a492ca36f0c93c42d9378d692ae7b2b8b"
+      ],
+      "use": "identical-prompt double draws and Picture mapping"
+    },
+    {
+      "source": "B4 R22 pipeline audit",
+      "commit": "e47d7af67b0c7dd28777414e4ac917929e0be472",
+      "use": "B waits for an actual selected A ending frame; unresolved outputs remain pending"
+    },
+    {
+      "source": "V35 user preference",
+      "status": "not_consumed_no_repository_source",
+      "use": "no original prompt or verified run record found; not treated as evidence"
+    }
+  ],
+  "asset_status": {
+    "image_validation": "queued_for_workbuddy_validation",
+    "render_status": "not_rendered_by_b_end",
+    "audio_status": "not_generated_by_b_end"
+  }
+}
