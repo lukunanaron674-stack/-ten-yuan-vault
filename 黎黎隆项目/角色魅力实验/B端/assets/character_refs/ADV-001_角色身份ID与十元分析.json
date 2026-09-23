@@ -1,0 +1,147 @@
+{
+  "character_id": "ADV-001",
+  "display_name": "冒险者",
+  "project": "角色魅力实验_B端",
+  "asset_type": "H3_character_sheet",
+  "source_file": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
+  "image": {
+    "width": 864,
+    "height": 1536,
+    "aspect_ratio": "9:16",
+    "sha256": "dd81d92d9f565831c8e924aa2ff36b3fd3cf85b526376971b51ec4f1dd43d1c4"
+  },
+  "identity_validation": {
+    "status": "ready_for_workbuddy_validation",
+    "asset_structure_check": "passed",
+    "sheet_sections": [
+      "full_body_front",
+      "full_body_three_quarter",
+      "face_expression_variants",
+      "equipment_and_costume_detail_references"
+    ],
+    "identity_lock": [
+      "large broad male body with heavy grounded stance",
+      "dark beard and short dark hair",
+      "tired, experienced and restrained facial language",
+      "dark teal-black layered cloak with purple and red cloth panels",
+      "red scarf and multiple crossing straps",
+      "white metal shoulder and chest bracket",
+      "backpack or rolled equipment carried on the back",
+      "cyan-lit hanging lantern",
+      "heavy gloves and heavy boots with cyan accents"
+    ],
+    "must_keep": [
+      "body mass and grounded weight",
+      "beard, tired eyes and broad face",
+      "layered cloak silhouette and torn cloth edges",
+      "red scarf, red straps and metal buckles",
+      "backpack, rolled bedroll and equipment load",
+      "cyan lantern as a readable prop and light source",
+      "large gloves and heavy boots"
+    ],
+    "do_not_change": [
+      "do not merge with Lililong",
+      "do not merge with Che",
+      "do not turn him into a young slim swordsman",
+      "do not remove the backpack, straps or lantern",
+      "do not replace the cloak with clean modern armor",
+      "do not add horns, tail, wings or unrelated weapons",
+      "do not erase the tired and experienced facial quality"
+    ],
+    "verification_items": [
+      "front, three-quarter and close-up views remain the same adventurer",
+      "body mass and shoulder width remain stable",
+      "cloak layers, straps and buckles remain connected",
+      "lantern remains attached to the belt and keeps cyan light",
+      "equipment load remains readable during walking and turning"
+    ],
+    "h3_verification_status": "pending_workbuddy_render"
+  },
+  "ten_yuan_analysis": {
+    "analysis_status": "image_based_initial_reading",
+    "is_frozen": false,
+    "primary": {
+      "symbol": "XN",
+      "strength": 8,
+      "reason": "The character reads as someone formed by accumulated routes, old equipment, repeated travel and practical experience rather than by a single clean identity."
+    },
+    "secondary": {
+      "symbol": "X",
+      "strength": 8,
+      "reason": "Straps, buckles, shoulder hardware, backpack, lantern, gloves and boots create a clear modular equipment system with strong boundaries."
+    },
+    "middle": {
+      "symbol": "N",
+      "strength": 7,
+      "reason": "The broad body, heavy stance, tired eyes and layered worn cloth make physical existence, weight and endurance highly visible."
+    },
+    "latent": [
+      {
+        "symbol": "NX",
+        "strength": 6,
+        "reason": "The equipment is useful but also a burden; the character appears to carry responsibility and accumulated cost on his body."
+      },
+      {
+        "symbol": "NZ",
+        "strength": 5,
+        "reason": "The cyan lantern can become warmth, guidance and protection for another person in darkness."
+      },
+      {
+        "symbol": "X并Z",
+        "strength": 5,
+        "reason": "A living body is fused with a practical field system of tools, clothing and light, though the actual anomaly or environment is not yet shown."
+      },
+      {
+        "symbol": "ZN",
+        "strength": 4,
+        "reason": "The gear is not decorative; it belongs to daily survival, carrying, repair and movement through a difficult world."
+      }
+    ],
+    "low_visibility": [
+      {
+        "symbol": "ZX",
+        "strength": 4,
+        "reason": "There is readiness and toughness, but no active confrontation is visible in the sheet."
+      },
+      {
+        "symbol": "Z",
+        "strength": 3,
+        "reason": "Improvisation is plausible for an adventurer, but the current image emphasizes weight and experience rather than playful unpredictability."
+      },
+      {
+        "symbol": "XZ",
+        "strength": 3,
+        "reason": "The cyan lantern and unusual equipment may support an abnormal or reactive layer, but the image alone does not establish it."
+      },
+      {
+        "symbol": "NZ",
+        "strength": 5,
+        "reason": "Protection and guidance are visible through the lantern, but must be tested through interaction rather than assumed as a fixed personality."
+      }
+    ],
+    "candidate_dynamic_chains": [
+      {
+        "id": "ADV-001-DL-01",
+        "chain": "XN → X → NX → NZ",
+        "meaning": "Accumulated travel becomes a practical equipment system; the system becomes a burden; the lantern turns that burden into protection or guidance for another person."
+      },
+      {
+        "id": "ADV-001-DL-02",
+        "chain": "X → Z → X并Z",
+        "meaning": "A rigid tool arrangement meets an unexpected obstacle; the adventurer improvises with the equipment and makes body, tool and environment work as one system."
+      },
+      {
+        "id": "ADV-001-DL-03",
+        "chain": "N → NX → NZ",
+        "meaning": "Physical exhaustion and accumulated weight force a pause; responsibility is not discarded, but becomes a reason to keep the light and protect the group."
+      }
+    ],
+    "recommended_first_experiment": "XN → X → NX → NZ",
+    "recommended_experiment_reason": "This chain uses the strongest visible evidence: long-term travel, equipment structure, bodily burden and the lantern's possible protective function."
+  },
+  "handoff": {
+    "workbuddy_input": "original JPEG + this JSON + companion Markdown validation sheet",
+    "github_image_upload": false,
+    "b_end_use": "Use character_id and the recommended candidate chain only after WorkBuddy confirms visual identity and equipment continuity."
+  }
+}
