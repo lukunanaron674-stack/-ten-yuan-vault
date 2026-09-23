@@ -1,0 +1,44 @@
+{
+  "schema_version": "lililong-b-result-placeholder/v1.0",
+  "task_id": "LLL_SN_B_20260923_1710_R17",
+  "task_version": "v1.0",
+  "status": "awaiting_work_execution",
+  "render_claim_from_b_end": "not_rendered_by_b_end",
+  "run_A": {
+    "seed": null,
+    "status": "queued_for_workbuddy_validation",
+    "artifact": null,
+    "validation": null
+  },
+  "run_B": {
+    "seed": null,
+    "status": "queued_for_workbuddy_validation",
+    "artifact": null,
+    "validation": null
+  },
+  "preferred_run": null,
+  "comparison_notes": null,
+  "required_comparison": [
+    "identity_continuity",
+    "single_character_integrity",
+    "eye_then_head_causality",
+    "camera_stability",
+    "atmosphere_fit"
+  ],
+  "version_difference": {
+    "parent_task_id": "MOUSE_B_20260923_1606_R16",
+    "changed": [
+      "角色由鼠耳异变少女改为黎黎隆",
+      "四个独立动态改为一条0–8秒连续时间分镜",
+      "多变量动作改为单一注意方向变化",
+      "新增同prompt双采样和独立音频执行字段"
+    ],
+    "controlled": [
+      "场景仍为SCENE-02",
+      "reference_view仍为both",
+      "身份连续优先",
+      "禁止重复人物与分身",
+      "B端不宣称渲染完成"
+    ]
+  }
+}
