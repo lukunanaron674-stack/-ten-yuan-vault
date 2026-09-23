@@ -1,0 +1,339 @@
+{
+  "task_id": "MOUSE_B_20260924_0411_R28",
+  "task_version": "v1.0",
+  "parent_task_id": "ADV_B_20260924_0306_R27",
+  "round": "R28",
+  "schema_version": "video_tenyuan_prompt_schema_v1.3",
+  "status": "pending_image_validation",
+  "video_mode": "single_character_continuous_narrative",
+  "duration_seconds_per_segment": 15,
+  "aspect_ratio": "9:16",
+  "cast": {
+    "count": 1,
+    "character_id": "MOUSE-EAR-MUTANT-001",
+    "character_name": "鼠耳异变少女",
+    "single_physical_instance": true,
+    "additional_characters": false
+  },
+  "picture_mapping": {
+    "picture_1": {
+      "role": "only_character_identity_reference",
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "primary_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+      "dynamic_view_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_H3半身动态四宫格_v2.0.png",
+      "source_status": "pending_image_validation",
+      "instruction": "两张参考均只描述同一个角色；四宫格是同一身份的动作/表情视图，不得解释成四个人。"
+    },
+    "picture_2": {
+      "role": "environment_identity_reference",
+      "scene_id": "SCENE-09",
+      "path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-12_异种村庄_五色组合.png",
+      "source_blob_sha": "709a66e1b0a939a6e8443a278f3c12857eb342f8",
+      "instruction": "只锁定异种村庄的既有元素、空间连续性和五色色卡逻辑；不锁死景别、机位、画幅或唯一构图。"
+    }
+  },
+  "subject_definitions": {
+    "identity": "白色短发遮眼刘海与小翘发；半透明浅紫鼠耳异变结构；小体型；宽大浅色短袍；深色领口、袖口与下摆边块；斜挎带与侧包；谨慎克制的神态。",
+    "instance_rule": "全片仅一个鼠耳异变少女实体；禁止复制、分身、镜像完整人物、第二人物或可见第二生物。",
+    "action_limit": "半身动态视图只支持耳、眼、头、肩等低幅动作；全身身份图仅支持一次小幅侧移，不做奔跑、跳跃或大幅转身。"
+  },
+  "retention_analysis": {
+    "must_keep": [
+      "角色面部、白发轮廓、浅紫半透明鼠耳结构、小体型与服装配件",
+      "SCENE-09异种村庄身份、既有环境元素、空间连续性及五色色卡逻辑",
+      "单角色、单实例、连续空间轴线、非MV叙事",
+      "A段结尾作为B段连续动作起点"
+    ],
+    "may_vary": [
+      "景别、微俯机位、角色在画面中的位置与留白",
+      "既有明暗边界的轻微移动、薄雾与漫射光强弱",
+      "B段一次很小的同向跟拍"
+    ],
+    "must_not_infer": [
+      "未核实的新建筑、门、道具、机械装置或完整全新反向空间",
+      "第二人物、可见小生物或与角色互动的新增主体",
+      "澈的青白能量人形、与原图冲突的颜色或材质"
+    ]
+  },
+  "changed_variable": {
+    "name": "safe_boundary_relation",
+    "before": "角色停在既有较安静的明暗边界旁，以静止和单耳警觉保持距离。",
+    "after": "明暗边界轻移后，角色完成一次小幅侧移，主动选择相邻较稳定的位置并停稳。",
+    "controlled_constants": [
+      "唯一角色身份",
+      "SCENE-09场景身份与色卡逻辑",
+      "9:16",
+      "15秒×2",
+      "单实例",
+      "非MV",
+      "低幅动作"
+    ]
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "chain": "N → XZ克N → NZ补N → NZ生Z",
+    "start": "N8 + NZ7：静止、谨慎，依赖既有安静边界保持安全感。",
+    "change": "XZ6克N5：既有环境光带轻移，压缩原先的安静区域；耳先于眼和头读取变化。",
+    "result": "NZ补N至7并生Z至7：她以一次小幅侧移重新建立与环境的距离，服装和侧包落稳，回看一次后停止。",
+    "stages": [
+      {
+        "stage": 1,
+        "primary": "N",
+        "secondary": "NZ",
+        "relation": "并置",
+        "before_volume": "N8/NZ7",
+        "after_volume": "N8/NZ7",
+        "visible_evidence": "角色静止，双耳处于不完全对称的警觉姿态。"
+      },
+      {
+        "stage": 2,
+        "primary": "XZ",
+        "secondary": "N",
+        "relation": "克",
+        "before_volume": "XZ3/N8",
+        "after_volume": "XZ6/N5",
+        "visible_evidence": "既有明暗边界缓慢横移，近侧耳先转，眼睛随后跟随。"
+      },
+      {
+        "stage": 3,
+        "primary": "NZ",
+        "secondary": "N",
+        "relation": "补",
+        "before_volume": "NZ6/N5",
+        "after_volume": "NZ7/N7",
+        "visible_evidence": "另一只耳对齐，头和肩小幅同向，身体仍未移动。"
+      },
+      {
+        "stage": 4,
+        "primary": "NZ",
+        "secondary": "Z",
+        "relation": "生",
+        "before_volume": "NZ7/Z3",
+        "after_volume": "NZ8/Z7",
+        "visible_evidence": "一次小幅侧移完成，袍摆、斜挎带和侧包自然落稳，角色停住并短暂回看。"
+      }
+    ]
+  },
+  "style": {
+    "style_identity_lock": [
+      "服从Picture 1可核实的角色线条、材质、原色卡与半透明浅紫耳部结构",
+      "服从Picture 2异种村庄既有五色色卡逻辑、环境材质与空间身份",
+      "不复制澈的青白能量人形，不强行套用与源图冲突的冷色或发光材质"
+    ],
+    "visual_expression_variable": [
+      "借鉴V35文字中清楚形体、粗细变化线条、轻薄晕染、柔和漫射光和留白的表达方式，但仅在兼容源图时使用",
+      "A段以微俯中远景和较多留白呈现被压缩的安全边界",
+      "B段保持同一轴线，在一次小幅侧移时做极轻横向跟随，提高动作可读性"
+    ],
+    "v35_attribution": "V35原始1194字符文本仅为文字参考；已知其workflow可能使用旧词旧图，本任务不把任何成片效果或画风提升归因于该文本。"
+  },
+  "segments": [
+    {
+      "id": "A",
+      "duration_seconds": 15,
+      "start_to_change_to_result": "静止观察 → 既有明暗边界轻移 → 近侧耳先转、视线和头部跟随、肩部收紧后停住",
+      "scene_reference": {
+        "identity_lock": "SCENE-09异种村庄、既有环境元素与五色色卡逻辑",
+        "allowed_variation": "既有明暗边界与薄雾的轻微变化",
+        "needs_environment_inference": true
+      },
+      "shot": {
+        "shot_size": "medium wide shot",
+        "camera_angle": "slightly elevated three-quarter angle",
+        "foreground": "仅使用Picture 2中可确认的既有前景形状，不新增物件",
+        "midground": "唯一角色位于画面一侧，保留可读的全身轮廓与较大留白",
+        "background": "延续Picture 2村庄层次和五色色卡逻辑",
+        "character_position": "画面右侧三分区；若原图空间不支持则Work镜像为左侧但保持后续方向一致",
+        "negative_space": "角色面对的开阔侧保留更多留白",
+        "camera_movement": "locked camera",
+        "spatial_continuity": "建立明暗边界移动方向，B段沿同一屏幕方向衔接",
+        "needs_environment_inference": true
+      },
+      "action_plan": [
+        "0–4秒：唯一角色静止，呼吸轻微，双耳保持不对称警觉。",
+        "4–8秒：Picture 2既有明暗边界缓慢横移，不新增光源或道具。",
+        "8–12秒：近侧鼠耳先转，眼睛随后移向变化方向，头部只转小角度。",
+        "12–15秒：肩部轻收，另一只耳开始对齐，身体和双脚仍不移动并停住。"
+      ],
+      "ambient_soundscape": "村庄远处的低风、轻微木石环境摩擦与稀薄空气底噪；明暗变化点加入一次很轻的风压变化。仅作音效设计。",
+      "emotional_sound_cue": "无歌词、无强拍的低音悬停；近侧耳转动时出现一次短而克制的柔和泛音，随后收住。仅辅助警觉转折，不做MV。",
+      "audio_trigger_points": [
+        "4秒明暗边界开始移动",
+        "8秒近侧耳先转",
+        "12秒肩部轻收"
+      ],
+      "audio_role": "support environmental event and readable emotional shift; no beat-synced cutting and no MV logic",
+      "prompt": "2D hand-drawn cinematic character sequence, 15 seconds, vertical 9:16. STYLE IDENTITY LOCK: preserve the exact line quality, materials, original colors and design language visible in Picture 1 for the only character, and preserve the verified five-color palette logic and environmental material language of Picture 2. Do not impose colors or glowing materials that conflict with either source. VISUAL EXPRESSION: clear readable shapes, restrained variable-weight linework, light wash-like shading, soft diffuse illumination and generous negative space only where compatible with the references. CHARACTER — Picture 1: one and only one mouse-ear mutant girl, preserving her short white hair with eye-covering fringe and small curl, translucent pale-violet mouse-ear structures, small slender proportions, oversized pale robe, dark collar, cuffs and hem blocks, diagonal strap and side satchel. The multiple views describe the same single identity, never multiple people. ENVIRONMENT — Picture 2: retain the identity, existing elements, spatial continuity and five-color palette logic of the heterogeneous village. Picture 2 does not lock the framing. Do not invent a new building, door, machine, prop or unseen reverse view. CAMERA AND COMPOSITION: a slightly elevated three-quarter medium-wide shot, the sole character placed on one side with ample open space in the direction she watches; use only foreground forms supported by Picture 2, keep its village layers in the background, and hold the camera still. ACTION: at first she stands quietly with subtle breathing and asymmetrical alert ears. An existing boundary between darker and brighter areas of the environment slowly shifts across the ground without creating a new light source. Her nearer ear turns first, then her eyes follow, then her head turns only a little. Her shoulder tightens and the other ear begins to align; her feet and body remain still, and she stops in a cautious listening pose. Keep the action continuous and readable, not rhythmic editing. Only one physical character instance appears. NEGATIVE: no second person, no visible creature, no duplicate or clone, no complete humanlike reflection or shadow double, no split screen, no character-sheet layout, no four-person interpretation of reference views, no identity redesign, no cyan-white energy humanoid, no new wings, weapons, clothes or anatomy, no location replacement, no unsupported object, no glossy 3D, no hard digital edges, no text, subtitle, logo or watermark."
+    },
+    {
+      "id": "B",
+      "duration_seconds": 15,
+      "continuity_source": "Work需从A段run_A/run_B中先选定一个真实尾帧，B段两次抽样均绑定同一选定尾帧；未选定前不得声称连续性已验证。",
+      "start_to_change_to_result": "承接A段停姿 → 双耳确认相邻空间 → 一次小幅侧移 → 袍摆与侧包落稳并回看一次",
+      "scene_reference": {
+        "identity_lock": "与A段相同的SCENE-09及五色色卡逻辑",
+        "allowed_variation": "同轴更近景别与一次极轻横向跟随",
+        "needs_environment_inference": true
+      },
+      "shot": {
+        "shot_size": "medium shot widening enough to retain the small lateral step",
+        "camera_angle": "same slightly elevated three-quarter axis as segment A",
+        "foreground": "沿用A段被确认的既有前景，不新增遮挡物",
+        "midground": "唯一角色从A段位置向相邻较稳定区域移动半步",
+        "background": "保持A段村庄层次、色卡和明暗方向",
+        "character_position": "从A段画面侧三分区向相邻区域移动，不穿越画面中心轴",
+        "negative_space": "移动方向保留可读空间，身后留白稍减",
+        "camera_movement": "very slow short lateral follow; cancel and lock camera if Work finds spatial instability",
+        "spatial_continuity": "沿A段建立的同一地面、轴线、明暗方向和屏幕方向继续",
+        "needs_environment_inference": true
+      },
+      "action_plan": [
+        "0–4秒：承接A段选定尾帧，另一只耳完成对齐，头部保持小角度转向。",
+        "4–8秒：视线先确认相邻较稳定区域，上身轻微向该方向倾斜。",
+        "8–12秒：完成一次小幅侧移，只有一个短步，不奔跑、不转身。",
+        "12–15秒：袍摆、斜挎带和侧包落稳；角色短暂回看原位置一次，随后停住。"
+      ],
+      "ambient_soundscape": "延续A段村庄低风与轻微木石底噪；小步落地时加入一次柔和脚步、袍摆和侧包摩擦声。仅作音效设计。",
+      "emotional_sound_cue": "无歌词、无强拍的低音悬停在确认方向后略微松开；落稳时出现一个短促温和的低频收束，不驱动剪辑。",
+      "audio_trigger_points": [
+        "4秒视线确认相邻区域",
+        "8秒开始小幅侧移",
+        "12秒脚步落稳与衣料回落"
+      ],
+      "audio_role": "support the voluntary repositioning and emotional release; no beat-synced cutting and no MV logic",
+      "prompt": "2D hand-drawn cinematic character sequence, 15 seconds, vertical 9:16, continuing directly from the selected final frame of Segment A. STYLE IDENTITY LOCK: preserve the exact line quality, materials, original colors and design language visible in Picture 1 for the only character, and preserve the verified five-color palette logic and environmental material language of Picture 2. Do not impose colors or glowing materials that conflict with either source. VISUAL EXPRESSION: clear readable shapes, restrained variable-weight linework, light wash-like shading, soft diffuse illumination and controlled negative space only where compatible with the references. CHARACTER — Picture 1: the same one and only mouse-ear mutant girl from Segment A, preserving her short white hair with eye-covering fringe and small curl, translucent pale-violet mouse-ear structures, small slender proportions, oversized pale robe, dark collar, cuffs and hem blocks, diagonal strap and side satchel. The multiple views describe one identity, never several people. ENVIRONMENT — Picture 2: remain in the same heterogeneous village space, with the same existing elements, ground relationship, spatial axis and five-color palette logic established in Segment A. Picture 2 does not lock the framing. Do not invent new architecture, props, machines or an unseen reverse view. CAMERA AND COMPOSITION: maintain the same slightly elevated three-quarter axis, use a medium shot wide enough to show one small lateral step, keep the movement direction readable, and make only a very slow short lateral follow; if the environment cannot remain coherent, keep the camera locked. ACTION: begin in the exact cautious stopping pose selected from Segment A. Her other ear finishes aligning and her eyes check the adjacent calmer area before her body moves. Her upper body leans slightly in that direction, then she takes one small lateral step, no running and no turn. Her robe hem, diagonal strap and side satchel settle naturally. She looks back once toward her former position and comes to a complete stop. Keep one continuous restrained action, not rhythmic editing. Only one physical character instance appears. NEGATIVE: no second person, no visible creature, no duplicate or clone, no complete humanlike reflection or shadow double, no split screen, no character-sheet layout, no four-person interpretation of reference views, no identity redesign, no cyan-white energy humanoid, no new wings, weapons, clothes or anatomy, no location replacement, no unsupported object, no glossy 3D, no hard digital edges, no text, subtitle, logo or watermark."
+    }
+  ],
+  "shot_grammar": {
+    "continuity": "A建立同一村庄空间中的明暗方向与屏幕方向；B绑定A的真实选定尾帧并保持同轴。",
+    "edit_rule": "两段内部均为连续镜头；不做节拍切镜、不做MV。",
+    "fallback": "若Picture 2无法稳定支持文字设计的侧向空间，保留场景身份与色卡，取消横向跟拍并使用固定机位。"
+  },
+  "audio_design": {
+    "generation_status": "design_only_until_work_confirms_audio_capability",
+    "rule": "若H3节点不支持音轨，ambient_soundscape与emotional_sound_cue作为后期音效清单；不得声称已生成音轨。"
+  },
+  "sampling_plan": {
+    "total_planned_runs": 4,
+    "actual_completed_runs": 0,
+    "segments": {
+      "A": {
+        "prompt_identity": "exact_same_segment_A_prompt",
+        "run_A": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        },
+        "run_B": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        }
+      },
+      "B": {
+        "prompt_identity": "exact_same_segment_B_prompt_and_same_selected_A_end_frame",
+        "run_A": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        },
+        "run_B": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        }
+      }
+    },
+    "compare_axes": [
+      "identity_stability",
+      "single_instance_integrity",
+      "ear_eye_head_action_readability",
+      "scene_continuity",
+      "camera_stability",
+      "palette_fidelity",
+      "no_unsupported_environment_objects"
+    ]
+  },
+  "negative_constraints": [
+    "no duplicate character or clone",
+    "no second person or visible creature",
+    "no split screen or character-sheet output",
+    "no four-person interpretation of multi-view reference",
+    "no complete humanoid reflection or shadow double",
+    "no identity redesign or new anatomy",
+    "no cyan-white Che energy humanoid",
+    "no unsupported environment objects or unseen reverse view",
+    "no MV editing, lyrics, strong beat synchronization, text, subtitle, logo or watermark"
+  ],
+  "work_gate": {
+    "picture_1_status": "pending_image_validation",
+    "picture_2_status": "GitHub path and blob recorded; visual composition still requires Work check",
+    "required_checks": [
+      "verify Picture 1 maps only to MOUSE-EAR-MUTANT-001",
+      "verify multiple views are one identity",
+      "verify exactly one physical character instance",
+      "verify SCENE-09 path and Picture 2 mapping",
+      "verify proposed darker/brighter boundary exists or use fallback",
+      "select one real A ending before both B runs",
+      "record real task IDs separately",
+      "record integer seeds only if interface actually exposes them"
+    ],
+    "render_decision": "Work decides after validation; B-side text submission does not imply render approval."
+  },
+  "version_tracking": {
+    "rule_version": "B-RULE-v1.2",
+    "prompt_schema": "video_tenyuan_prompt_schema_v1.3",
+    "skill_chain_version": "H3动画四技能执行链_v1.0",
+    "previous_task": "ADV_B_20260924_0306_R27",
+    "before": "R27 used ADV-001 in SCENE-13 with load stabilization and an axial push.",
+    "after": "R28 rotates to MOUSE-EAR-MUTANT-001 in SCENE-09; a verified-environment-only disturbance triggers ear-first attention and one voluntary lateral reposition.",
+    "same": [
+      "two 15-second segments",
+      "single character/single instance",
+      "non-MV",
+      "per-segment same-prompt A/B sampling",
+      "audio design only until capability is verified",
+      "v1.3 style lock/visual variable split"
+    ],
+    "confounders": [
+      "character changed",
+      "scene changed",
+      "action chain changed",
+      "shot size and camera motion changed",
+      "images remain pending Work validation"
+    ],
+    "upstream_consumed": [
+      {
+        "source": "B1 asset audit",
+        "commit": "781f88ce8344553fde355404ef480c92124c18c6",
+        "use": "confirmed no pool change and mouse reference images remain pending"
+      },
+      {
+        "source": "B2 mouse×SCENE-09",
+        "commit": "5973f8a75fba99e7add2d67c8382fca787d5fe55",
+        "use": "adapted only safety-boundary disturbance and voluntary repositioning; rejected its visible small creature"
+      },
+      {
+        "source": "B3 mouse×SCENE-09",
+        "commit": "186bc5d4f936325c0e5e1f6e12dc3f3d64f27f94",
+        "use": "adapted ear-before-body and camera flexibility; rejected visible creature and multi-actor staging"
+      },
+      {
+        "source": "B3 C handoff",
+        "commit": "8fea5bd1fe2afe3571f7c6c7a63188d3bb90767e",
+        "use": "used environment identity lock and Work fallback concept"
+      },
+      {
+        "source": "V35 1194-character prompt",
+        "commit": null,
+        "use": "textual style phrasing reference only; no output-quality attribution"
+      }
+    ],
+    "rejected_upstream": [
+      "visible small creature",
+      "second acting subject",
+      "unsupported gate/shelter/prop claims",
+      "role-specific ADV material from commit 4a5a6f3b5430a63e13c7ae9bf6655f4eac7ee7a8"
+    ]
+  }
+}
