@@ -1,0 +1,440 @@
+{
+  "schema_version": "video_tenyuan_prompt_schema_v1.2",
+  "task_id": "MOUSE_B_20260924_0107_R25",
+  "task_version": "v1.0",
+  "round": "R25",
+  "parent_task_id": "ADV_B_20260924_0010_R24",
+  "created_at": "2026-09-24T01:07:29+08:00",
+  "status": "queued_for_workbuddy_validation",
+  "video_mode": "single_character_narrative",
+  "render_spec": {
+    "target_aspect_ratio": "9:16",
+    "target_resolution": null,
+    "actual_resolution": null,
+    "planned_clip_count": 2,
+    "planned_duration_seconds_each": 15
+  },
+  "cast": {
+    "character_id": "MOUSE-EAR-MUTANT-001",
+    "display_name": "鼠耳异变少女",
+    "on_screen_character_count_max": 1,
+    "other_characters_allowed": false,
+    "duplicate_instance_allowed": false
+  },
+  "source_assets": {
+    "character_full_body": {
+      "picture": "Picture 1",
+      "source_file": "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+      "github_image_upload": false,
+      "reference_view": "full_body_identity",
+      "role": "identity, body proportion, robe silhouette, strap and satchel placement"
+    },
+    "character_dynamic": {
+      "picture": "Picture 1B",
+      "source_file": "MOUSE-EAR-MUTANT-001_H3半身动态四宫格_v2.0.png",
+      "library_file_id": "libfile_36caaef442b08191b0acddf57f8d85e2",
+      "github_image_upload": false,
+      "reference_view": "half_body_dynamic",
+      "role": "face, expression, mouse-ear response and upper-body motion"
+    },
+    "scene": {
+      "picture": "Picture 2",
+      "scene_asset_id": "SCENE-11",
+      "path": "黎黎隆项目/04_场景/五色视觉系统/R4_色彩脚本/assets/R4-01_机械空港_起_安静生命.png",
+      "github_blob_sha": "c87915a6d7232e6a485a8904d32b3f8001941283",
+      "role": "environment_reference_only"
+    }
+  },
+  "reference_view": "both",
+  "subject_definitions": {
+    "single_subject": "MOUSE-EAR-MUTANT-001 only; Picture 1 and Picture 1B are views of the same one character",
+    "identity_lock": [
+      "white short hair with eye-covering fringe and one small upward curl",
+      "large translucent pale-violet mouse-ear mutation structures",
+      "small slender body",
+      "oversized pale short robe",
+      "dark collar, cuffs and hem blocks",
+      "diagonal strap and side satchel",
+      "quiet cautious expression language"
+    ],
+    "scene_lock": "Picture 2 locks the quiet mechanical-airfield location, dormant technical structures, color relationships and atmosphere; text may choose an elevated three-quarter medium close-up without replacing the location.",
+    "style_anchor": "V35 confirmed original text: restrained 2D hand-drawn, variable-weight ink lines, watercolor-thin shading, soft white inner glow, cool muted shadows, quiet diffuse light, clean shapes, limited palette and generous negative space."
+  },
+  "retention_analysis": {
+    "must_keep": [
+      "face and hair",
+      "mouse-ear mutation shape and translucency",
+      "small body scale",
+      "wide pale robe",
+      "dark edge blocks",
+      "crossbody strap",
+      "side satchel",
+      "single-character identity"
+    ],
+    "may_change": [
+      "one ear direction",
+      "second ear direction",
+      "eye direction",
+      "small head turn",
+      "few-centimeter upper-body lean"
+    ],
+    "view_roles": {
+      "half_body_dynamic": "primary for face, ear timing and upper-body motion",
+      "full_body_identity": "secondary identity check only"
+    },
+    "evidence_limit": "SCENE-11 confirms a quiet mechanical-airfield opening state; only a small distant cyan light change is introduced, without inventing a machine, door, NPC or new prop."
+  },
+  "changed_variable": {
+    "name": "directional_commitment",
+    "before": "only the nearer mouse-ear structure tests the distant direction while the rest of the body stays neutral",
+    "after": "both ears, gaze, head and upper body share one cautious direction",
+    "held_constant": [
+      "character identity",
+      "single instance",
+      "SCENE-11",
+      "fixed elevated three-quarter medium close-up",
+      "lighting",
+      "weather",
+      "hands and feet",
+      "two 15-second clips"
+    ]
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "chain": "N → NZ → Z",
+    "stages": [
+      {
+        "stage": "start",
+        "primary": "N",
+        "secondary": "NZ",
+        "direction": "character→self boundary",
+        "relation": "N维持",
+        "volume_before": {
+          "N": 8,
+          "NZ": 4,
+          "Z": 2
+        },
+        "volume_after": {
+          "N": 8,
+          "NZ": 4,
+          "Z": 2
+        },
+        "visible_evidence": "small body remains still; hands and robe quiet"
+      },
+      {
+        "stage": "contact",
+        "primary": "NZ",
+        "secondary": "N",
+        "direction": "character↔distant light direction",
+        "relation": "NZ补N",
+        "volume_before": {
+          "N": 8,
+          "NZ": 4,
+          "Z": 2
+        },
+        "volume_after": {
+          "N": 7,
+          "NZ": 7,
+          "Z": 3
+        },
+        "visible_evidence": "one ear pivots first, eyes lift, feet and hands do not move"
+      },
+      {
+        "stage": "choice",
+        "primary": "Z",
+        "secondary": "NZ",
+        "direction": "established direction→small voluntary alignment",
+        "relation": "NZ生Z",
+        "volume_before": {
+          "N": 7,
+          "NZ": 7,
+          "Z": 3
+        },
+        "volume_after": {
+          "N": 6,
+          "NZ": 6,
+          "Z": 7
+        },
+        "visible_evidence": "second ear aligns, head turns a few degrees, upper body leans forward slightly"
+      },
+      {
+        "stage": "result",
+        "primary": "NZ",
+        "secondary": "Z",
+        "direction": "character→environment direction",
+        "relation": "Z完成一次小改道，NZ保留",
+        "volume_before": {
+          "N": 6,
+          "NZ": 6,
+          "Z": 7
+        },
+        "volume_after": {
+          "N": 6,
+          "NZ": 7,
+          "Z": 5
+        },
+        "visible_evidence": "whole upper body now shares the chosen direction and stops"
+      }
+    ],
+    "prompt_policy": "Ten-Yuan labels remain internal and do not appear in final H3 prompts."
+  },
+  "skills_pipeline": {
+    "version": "H3动画四技能执行链_v1.0",
+    "steps": [
+      {
+        "id": "02_I2V_motion",
+        "output": "stillness → one cyan glow → near ear pivots → eyes lift → second ear aligns → small head turn → slight upper-body lean → stop",
+        "view_limit": "both; half-body dynamic is primary, full-body view only checks identity"
+      },
+      {
+        "id": "03_four_component_scene",
+        "output": "single subject, SCENE-11 location lock, fixed elevated three-quarter medium close-up, V35-derived clear hand-drawn style"
+      },
+      {
+        "id": "04_clarity_conflict_audio",
+        "output": "one light stimulus and one directional-commitment variable",
+        "conflicts_resolved": [
+          "removed step and hand raise used in earlier mouse rounds",
+          "kept background identifiable despite medium close-up",
+          "kept light change small and non-character"
+        ]
+      },
+      {
+        "id": "05_negative_sampling",
+        "output": "anti-duplication and anti-quadrant constraints; identical-prompt double draws; Work preflight checks current prompt and LoadImage bindings"
+      }
+    ]
+  },
+  "clips": [
+    {
+      "clip_id": "A_15s",
+      "narrative_role": "stimulus_and_single_ear_probe",
+      "start_frame": "one small mouse-ear mutant girl remains still in SCENE-11",
+      "time_beats": [
+        {
+          "time": "0–4s",
+          "action": "hold complete stillness with quiet breathing only"
+        },
+        {
+          "time": "4–8s",
+          "action": "one small cyan point in the distant existing environment glows once"
+        },
+        {
+          "time": "8–12s",
+          "action": "the nearer mouse-ear structure pivots toward it while the other ear and body stay still"
+        },
+        {
+          "time": "12–15s",
+          "action": "eyes lift toward the glow and stop"
+        }
+      ],
+      "single_changed_variable": "one ear and gaze acquire a direction while body remains neutral",
+      "h3_prompt": "2D hand-drawn cinematic character sequence, 15 seconds. STYLE: restrained 2D hand-drawn animation with visible variable-weight ink lines, watercolor-thin shading, soft white inner glow on highlights, cool muted shadows, quiet diffuse light, clean readable shapes, a limited palette and generous negative space; no hard-edge digital rendering and no glossy 3D look. CHARACTER (Picture 1 and Picture 1B): preserve the exact identity of one small white-haired mouse-ear mutant girl, including her eye-covering fringe, small upward hair curl, large translucent pale-violet mouse-ear mutation structures, small body scale, oversized pale short robe, dark collar and edge blocks, diagonal strap and side satchel. Picture 1B is a dynamic view of the same one character, never a second person. ENVIRONMENT (Picture 2): keep the quiet mechanical-airfield location identity, dormant technical structures, established color relationships and calm atmosphere from Picture 2; it defines the place, not one mandatory camera angle. CAMERA AND ACTION: fixed slightly elevated three-quarter medium close-up, leaving generous quiet space around her while enough background remains to identify the same location. She begins completely still. One small cyan point within the existing distant technical environment glows once. The nearer mouse-ear structure pivots toward it first while the other ear and body remain still. Her eyes lift toward the glow and she stops, cautious and attentive. Keep the same framing, light, weather and exactly one character.",
+      "audio_design": {
+        "ambient_soundscape": "quiet mechanical-airfield room tone, faint ventilation, very soft cloth stillness",
+        "emotional_sound_cue": "one small glassy cyan chime when the distant point glows, followed by a thin suspended non-lyrical tone as the ear turns",
+        "audio_role": "supports detection and attention timing; not music-video editing",
+        "onset_event": "cyan point glows at 4–8s",
+        "fallback_if_no_audio_track": "post-production sound design only"
+      }
+    },
+    {
+      "clip_id": "B_15s",
+      "narrative_role": "whole_upper_body_alignment",
+      "start_frame": "selected A ending frame with near ear and eyes already directed toward the same point",
+      "time_beats": [
+        {
+          "time": "0–4s",
+          "action": "hold the lifted gaze without moving hands or feet"
+        },
+        {
+          "time": "4–8s",
+          "action": "the second ear slowly aligns with the first"
+        },
+        {
+          "time": "8–12s",
+          "action": "head turns only a few degrees toward the same direction"
+        },
+        {
+          "time": "12–15s",
+          "action": "upper body leans forward a few centimeters and stops"
+        }
+      ],
+      "single_changed_variable": "partial sensory direction becomes a whole upper-body choice",
+      "h3_prompt": "2D hand-drawn cinematic character sequence, 15 seconds. Continue from the Work-selected ending frame of clip A with the same single mouse-ear mutant girl in the same quiet mechanical airfield. Preserve the restrained hand-drawn visual style, variable-weight ink lines, watercolor-thin shading, soft white highlight glow, cool muted shadows, quiet diffuse light, clean shapes, limited palette and generous negative space. Use the identical fixed slightly elevated three-quarter medium close-up. She holds her lifted gaze. The second translucent pale-violet mouse-ear structure slowly aligns with the first toward the same distant cyan point. Her head then turns only a few degrees in that direction. Last, her upper body leans forward a few centimeters and stops while her hands, robe, crossbody strap and side satchel remain quiet and unchanged. The final pose is still cautious, but her whole upper body now shares the direction first chosen by one ear. Exactly one character; no camera movement, cut, weather change, costume change or location replacement.",
+      "audio_design": {
+        "ambient_soundscape": "same quiet ventilation and distant mechanical room tone; one faint robe and strap tension sound during the final lean",
+        "emotional_sound_cue": "the suspended tone gains one soft warm overtone when the second ear aligns, then settles without a beat",
+        "audio_role": "supports cautious commitment and final stillness; not music-video editing",
+        "onset_event": "second ear alignment at 4–8s",
+        "fallback_if_no_audio_track": "post-production sound design only"
+      }
+    }
+  ],
+  "shot_grammar": {
+    "camera": "fixed",
+    "shot_scale": "slightly elevated three-quarter medium close-up",
+    "composition": "small single figure with generous negative space; enough SCENE-11 structure remains readable behind her",
+    "movement": "none",
+    "lighting": "quiet diffuse light with cool muted shadows and soft white highlight glow",
+    "weather": "unchanged",
+    "environment_policy": "Picture 2 locks location identity, not a mandatory camera angle",
+    "transition": "B begins only from Work-selected A ending frame"
+  },
+  "audio_design": {
+    "mode": "per_clip",
+    "audio_track_capability": "unverified",
+    "policy": "sound supports event and emotion; never MV editing"
+  },
+  "sampling_plan": {
+    "per_prompt_run_count": 2,
+    "total_planned_runs": 4,
+    "total_completed_runs": 0,
+    "prompt_identical_within_clip": true,
+    "same_character_scene_and_parameters": true,
+    "clips": [
+      {
+        "clip_id": "A_15s",
+        "runs": [
+          {
+            "run_id": "run_A",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation"
+          },
+          {
+            "run_id": "run_B",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation"
+          }
+        ]
+      },
+      {
+        "clip_id": "B_15s",
+        "dependency": "Work selects one actual A ending frame before B execution",
+        "runs": [
+          {
+            "run_id": "run_A",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation"
+          },
+          {
+            "run_id": "run_B",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation"
+          }
+        ]
+      }
+    ],
+    "seed_policy": "Only record a real integer when the actual Work interface supports and returns it; otherwise keep seed=null and record distinct actual task IDs.",
+    "compare_axes": [
+      "identity stability",
+      "single-instance compliance",
+      "mouse-ear mutation continuity",
+      "one-ear-before-two-ear timing",
+      "head and body motion restraint",
+      "scene identity",
+      "V35 style clarity",
+      "camera stability"
+    ],
+    "selection_status": "not_evaluated_by_b_end"
+  },
+  "negative_constraints": [
+    "no second person, creature performer or visible signal source",
+    "no duplicate, clone, mirrored full character or complete reflection",
+    "no split screen, four-panel or character-sheet output",
+    "Picture 1 and Picture 1B must not become two characters",
+    "no rabbit ears, wings, tail, horns, armor or weapons",
+    "no adult muscular redesign",
+    "no robe, strap or satchel redesign",
+    "no invented machine, door or story prop",
+    "no hand raise or step in this round",
+    "no camera movement, cut, weather change, location replacement or sudden recoloring",
+    "no glossy 3D render, hard digital edges, text, subtitle, logo or watermark"
+  ],
+  "validation_target": {
+    "identity": "Work binds both mouse-ear original references and verifies they are the same character",
+    "scene": "Work binds SCENE-11 as environment only",
+    "instance": "exactly one mouse-ear mutant girl across both clips",
+    "continuity": "B starts from the actual selected A ending frame",
+    "preflight": "verify final workflow prompt and every LoadImage binding match R25 rather than a prior template",
+    "rendering": "Work decides whether to render; B-end makes no render or audio completion claim"
+  },
+  "version_tracking": {
+    "rule_version": "B-RULE-v1.2",
+    "prompt_schema_version": "video_tenyuan_prompt_schema_v1.2",
+    "skills_pipeline_version": "H3动画四技能执行链_v1.0",
+    "audio_design_version": "v1.0",
+    "sampling_version": "double_draw_v1.0",
+    "before": {
+      "task_id": "ADV_B_20260924_0010_R24",
+      "character_id": "ADV-001",
+      "scene_asset_id": "SCENE-10",
+      "changed_variable": "possible load removal becomes retained burden and forward lantern guidance"
+    },
+    "after": {
+      "task_id": "MOUSE_B_20260924_0107_R25",
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "scene_asset_id": "SCENE-11",
+      "changed_variable": "one-ear probe becomes whole upper-body directional alignment"
+    },
+    "changed_fields": [
+      "character",
+      "scene",
+      "reference view",
+      "shot scale",
+      "stimulus",
+      "action chain",
+      "audio cues"
+    ],
+    "held_fields": [
+      "V35 style anchor",
+      "Picture 2 environment lock without fixed-angle lock",
+      "single-character mode",
+      "fixed camera",
+      "9:16 target",
+      "two 15s clips",
+      "two identical-prompt draws per clip",
+      "no MV"
+    ],
+    "confounders": [
+      "character changed",
+      "scene changed",
+      "view type changed",
+      "shot scale changed",
+      "action family changed"
+    ],
+    "result_claim": "text_task_only; no visual-quality conclusion until Work outputs exist"
+  },
+  "upstream_evidence": [
+    {
+      "source": "B3_20260923_2325_ADV-001_SCENE-10.md",
+      "commit": "5272b29ffacf58d3b55234bfcf67c72862d4c349",
+      "use": "cross-cutting style/environment separation and explicit preflight; ADV-specific invented gate actions not reused"
+    },
+    {
+      "source": "B3_20260923_2325_ADV-001_SCENE-10_C_HANDOFF.json",
+      "commit": "01fb035df4ec2bf2ace50c54802374c25c7a732b",
+      "use": "preflight must verify current prompt and current LoadImage nodes rather than template remnants"
+    },
+    {
+      "source": "V35 original prompt",
+      "user_provided_source_path": "D:\\H3\\h3_workflow\\hermes_qq_prompts\\20260923_222921_18208.md",
+      "status": "confirmed_user_provided_text",
+      "use": "style anchor and Picture 2 scene-lock principle"
+    },
+    {
+      "source": "MOUSE-EAR-MUTANT-001_H3_DYNAMIC_ASSET.json",
+      "blob": "9485c652913f0bd38e0225b8f7ad0cbb377d96b4",
+      "use": "half-body dynamic is primary for face, expression and ear timing"
+    }
+  ],
+  "asset_status": {
+    "image_validation": "pending_image_validation",
+    "render_status": "not_rendered_by_b_end",
+    "audio_status": "not_generated_by_b_end"
+  }
+}
