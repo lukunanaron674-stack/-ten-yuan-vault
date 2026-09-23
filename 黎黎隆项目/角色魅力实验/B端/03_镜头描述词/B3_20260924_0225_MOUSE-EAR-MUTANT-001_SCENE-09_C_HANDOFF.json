@@ -1,0 +1,33 @@
+{
+  "schema_version": "lililong-b3-c-handoff/v1.0",
+  "task_id": "B3_20260924_0225_MOUSE-EAR-MUTANT-001_SCENE-09",
+  "source_b1": "黎黎隆项目/角色魅力实验/B端/logs/B1_素材索引_20260923_2206.md",
+  "source_b2": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260924_0115_MOUSE-EAR-MUTANT-001_SCENE-09.md",
+  "source_b2_ref": "1dc712a05cfd1140be8b1147b09dee0ac23bfbbb",
+  "assets": {
+    "character_id": "MOUSE-EAR-MUTANT-001",
+    "character_status": "pending_image_validation",
+    "required_character_refs": ["full_body_identity", "9x16_half_body_dynamic_card"],
+    "scene_id": "SCENE-09",
+    "scene_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-12_异种村庄_五色组合.png",
+    "scene_blob": "709a66e1b0a939a6e8443a278f3c12857eb342f8"
+  },
+  "render_gate": "BLOCKED_UNTIL_WORK_BINDS_VERIFIED_CHARACTER_IMAGE",
+  "status": "text_ready_image_binding_pending",
+  "format": {"aspect_ratio": "9:16", "duration_seconds": 15, "style": "2D hand-drawn cinematic"},
+  "prompt_variants": [
+    {"id": "A_choice_moment", "runs": [{"id": "run_A", "seed": null}, {"id": "run_B", "seed": null}]},
+    {"id": "B_spatial_relation", "runs": [{"id": "run_A", "seed": null}, {"id": "run_B", "seed": null}]}
+  ],
+  "audio_fields_required": ["ambient_soundscape", "emotional_sound_cue", "audio_role"],
+  "preflight": [
+    "bind verified character full-body identity image",
+    "bind verified 9:16 half-body dynamic card",
+    "bind SCENE-09 reference",
+    "verify final H3 prompt contains no Ten-Yuan terminology",
+    "inspect all ComfyUI LoadImage nodes for stale template images",
+    "record actual seeds only after execution"
+  ],
+  "b4_tests": ["active_vs_forced_yield", "ears_first_vs_body_first", "restrained_distance_vs_immediate_affection"],
+  "rendered": false
+}
