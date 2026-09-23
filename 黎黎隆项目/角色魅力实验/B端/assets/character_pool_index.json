@@ -1,11 +1,9 @@
 {
-  "schema_version": "lililong-b-character-pool/v1.3",
+  "schema_version": "lililong-b-character-pool/v1.4",
   "project": "黎黎隆项目/角色魅力实验",
   "source_branch": "main",
-  "image_count": 1,
-  "character_count": 1,
-  "selection_policy": "B端唯一可用角色为LLL-MAIN-001（黎黎隆本人），唯一角色图为LLL_H3_character_card_001.jpg。其他R3预跑组合图属于场景试验资料，不可作为角色图；旧任务中的其他人物不可重新入池。",
-  "selection_note": "按用户2026-09-23确认：角色池只保留黎黎隆本人一张H3角色参考图。场景请从独立scene_pool_13_index.json读取。",
+  "character_count": 3,
+  "selection_policy": "B端可为登记角色生成结构化文本任务；图像渲染必须逐角色通过 WorkBuddy/WorkBody 原图绑定与身份验证闸门。github_image_upload=false 的角色不得因已有文字登记而被视为已绑定图片。",
   "characters": [
     {
       "character_id": "LLL-MAIN-001",
@@ -14,11 +12,50 @@
       "asset_paths": [
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg"
       ],
-      "status": "available",
-      "asset_role": "h3_character_reference",
-      "b_end_h3_eligible": true
+      "source_image": "LLL_H3_character_card_001.jpg",
+      "github_image_upload": true,
+      "text_task_eligible": true,
+      "identity_validation_status": "github_direct_read",
+      "h3_render_eligible": true
+    },
+    {
+      "character_id": "ADV-001",
+      "name": "冒险者",
+      "tenyuan": "XN主8 / X次8 / N中7 / NX潜在6 / NZ潜在5 / X并Z潜在5",
+      "identity_refs": [
+        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/ADV-001_冒险者角色身份验证与十元分析_v1.0.md",
+        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/ADV-001_角色身份ID与十元分析.json"
+      ],
+      "source_image": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
+      "github_image_upload": false,
+      "text_task_eligible": true,
+      "identity_validation_status": "pending_image_validation",
+      "h3_render_eligible": false,
+      "recommended_chain": "XN → X → NX → NZ"
+    },
+    {
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "name": "鼠耳异变少女",
+      "tenyuan": "N主8 / NZ次7 / Z潜在5 / XZ潜在4 / ZN辅助4",
+      "identity_refs": [
+        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_角色身份验证与十元分析_v1.1.md",
+        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_角色身份ID与十元分析.json"
+      ],
+      "source_image": "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+      "source_aspect_ratio": "9:16",
+      "github_image_upload": false,
+      "text_task_eligible": true,
+      "identity_validation_status": "pending_image_validation",
+      "h3_render_eligible": false,
+      "recommended_chain": "N → NZ → Z",
+      "must_not_merge_with": ["CHE-001", "LLL-MAIN-001", "ADV-001", "rabbit-ear character", "ordinary girl"]
     }
   ],
-  "h3_eligible_character_count": 2,
-  "scene_experiment_character_count": 3
+  "gate": {
+    "text_generation": "allowed_for_text_task_eligible",
+    "image_binding": "WorkBuddy/WorkBody must bind the exact original source image",
+    "rendering": "allowed only after identity_validation_status=passed and h3_render_eligible=true",
+    "failure_state": ["queued_for_workbuddy_validation", "pending_image_validation"]
+  },
+  "scene_pool": "GITHUB_13_SCENE_POOL_V1"
 }
