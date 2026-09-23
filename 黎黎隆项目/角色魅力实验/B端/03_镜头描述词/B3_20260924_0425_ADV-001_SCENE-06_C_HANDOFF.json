@@ -1,0 +1,47 @@
+{
+  "b3_id": "B3_20260924_0425_ADV-001_SCENE-06",
+  "status": "text_ready_image_binding_pending",
+  "source_b1": {
+    "path": "logs/B1_素材索引_20260924_0405.md",
+    "blob_sha": "0b4295fce3e63abea718debca7c570eac0051f78",
+    "character_pool": "v1.5 @ 59810586...",
+    "scene_pool": "v1 @ 26384b61..."
+  },
+  "source_b2": {
+    "path": "02_十元动态链研究/B2_20260924_0315_ADV-001_SCENE-06.md",
+    "blob_sha": "d5d29ba38e0c3f4a76d632161c921501a5faa67f"
+  },
+  "character": {
+    "id": "ADV-001",
+    "declared_source": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
+    "image_status": "pending_image_validation",
+    "h3_render_eligible": false
+  },
+  "scene": {
+    "id": "SCENE-06",
+    "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-06_机械空港_双色主导.png",
+    "blob_sha": "7f600f79069d4f5a839dd44f2160182b0066cb3e",
+    "needs_environment_inference": true
+  },
+  "format": {"aspect_ratio":"9:16","duration_seconds":15,"mode":"single_character_continuous_event"},
+  "dynamic_chain_analysis": ["XN8","NX8克XN5","X8补N7","Z3→6补X8","X并Z5→8","N7→8","XN8终点"],
+  "model_prompt_contains_ten_yuan_terms": false,
+  "prompts": [
+    {"id":"A_choice_moment","runs":[{"run":"run_A","seed":null},{"run":"run_B","seed":null}]},
+    {"id":"B_physical_cost","runs":[{"run":"run_A","seed":null},{"run":"run_B","seed":null}]}
+  ],
+  "audio": {
+    "ambient_soundscape": true,
+    "emotional_sound_cue": true,
+    "audio_role": "support action readability and emotion, not pure MV editing"
+  },
+  "pre_submit_checks": [
+    "validate ADV-001 original image bytes/hash/identity",
+    "visually verify which SCENE-06 control structure actually exists",
+    "verify final ComfyUI H3 prompt equals selected B3 prompt",
+    "verify every LoadImage node points to current ADV-001 and SCENE-06 references",
+    "reject workflow if old template prompt or old images remain",
+    "record actual task_id prompt_id seed workflow hash image hashes and output mp4 for each run"
+  ],
+  "render_claimed": false
+}
