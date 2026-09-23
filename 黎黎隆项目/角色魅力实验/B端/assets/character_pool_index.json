@@ -1,9 +1,9 @@
 {
-  "schema_version": "lililong-b-character-pool/v1.1",
+  "schema_version": "lililong-b-character-pool/v1.2",
   "project": "黎黎隆项目/角色魅力实验",
   "source_branch": "main",
-  "image_count": 10,
-  "character_count": 4,
+  "image_count": 11,
+  "character_count": 5,
   "selection_policy": "B端生成描述词时必须先读取本索引；从status=available的角色候选中选择角色，并把asset_paths写入任务，供云端Work绑定图片。",
   "selection_note": "LLL_H3_character_card_001为黎黎隆H3角色卡；R3-01至R3-09为角色与三类场景组合的可用角色参考图。9张R3图不是独立白底角色卡，但可以用于角色一致性与场景关系参考。",
   "characters": [
@@ -45,6 +45,18 @@
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/R3-09_奇美拉_异种村庄_预跑.png"
       ],
       "status": "available"
+    },
+    {
+      "character_id": "LLL-CHAR-003",
+      "name": "逃票魔法学徒",
+      "tenyuan": "N主 / Z次 / 隐藏XZ",
+      "asset_paths": [
+        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/CH-003_逃票魔法学徒_H3_character_sheet_001.png"
+      ],
+      "role_card_path": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
+      "status": "available",
+      "h3_role": "character_design_authority",
+      "note": "本图为角色设定整合卡；H3只保留已确认头部、帽子、上半身结构，不补全未冻结下半身。"
     }
   ]
 }
