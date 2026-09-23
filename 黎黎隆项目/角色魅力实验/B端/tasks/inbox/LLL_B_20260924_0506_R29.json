@@ -1,0 +1,411 @@
+{
+  "task_id": "LLL_B_20260924_0506_R29",
+  "task_version": "v1.0",
+  "parent_task_id": "MOUSE_B_20260924_0411_R28",
+  "round": "R29",
+  "schema_version": "video_tenyuan_prompt_schema_v1.3",
+  "status": "pending_image_validation",
+  "video_mode": "single_character_continuous_narrative",
+  "aspect_ratio": "9:16",
+  "duration_seconds_per_segment": 15,
+  "cast": {
+    "count": 1,
+    "character_id": "LLL-MAIN-001",
+    "character_name": "黎黎隆",
+    "single_physical_instance": true,
+    "additional_characters": false
+  },
+  "picture_mapping": {
+    "picture_1": {
+      "role": "only_character_identity_reference",
+      "path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+      "sha256": "5df6a463e5ee9fe7c4fc641c86cda9ebc1647867e78afd0d5430de7de02f0143",
+      "reference_view": "both",
+      "source_status": "github_direct_read_but_current_production_status_requires_work_revalidation",
+      "instruction": "角色卡中全部视图均为同一个黎黎隆，不得生成多人或多个实体。"
+    },
+    "picture_2": {
+      "role": "environment_identity_reference",
+      "scene_id": "SCENE-07",
+      "path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-08_机械空港_五色组合.png",
+      "github_blob_sha": "c1a345f6f9d85dc7f6ea3e18bb77767ad44a11f4",
+      "source_status": "available_by_github_path_pending_visual_composition_check",
+      "instruction": "只锁机械空港身份、既有元素、空间连续性与五色色卡逻辑，不锁死景别、机位、画幅或唯一构图。"
+    }
+  },
+  "subject_definitions": {
+    "identity": "黎黎隆本人；红色长发、既有脸型与好胜尖锐表情、红白黑机械装甲、青蓝功能信号、机械龙爪脚、模块化身体和一条具有上中下节奏的长机械龙尾。",
+    "personality_expression": "好胜、机灵、行动力强；本轮通过先假装向前、再侧向落脚的可见行为表达，不用文字解释性格。",
+    "instance_rule": "全片只允许一个黎黎隆物理实体；角色卡多视图不得被解释为多人。",
+    "action_limit": "角色当前生产状态需Work复核，因此限制为小幅头肩转动、单脚抬起与一次侧向落脚、尾部配重；不跑跳、不大幅旋转。"
+  },
+  "retention_analysis": {
+    "must_keep": [
+      "黎黎隆脸、红发、基础比例与装甲模块",
+      "两只机械龙爪脚与一条长机械龙尾",
+      "Picture 1原色卡和材质",
+      "SCENE-07机械空港身份、既有元素、空间连续性和五色色卡逻辑",
+      "单角色单实例、非MV、A到B动作连续"
+    ],
+    "may_vary": [
+      "低机位三分之二中全景构图",
+      "角色左右留白",
+      "既有彩色照明区域的一次强度变化",
+      "B段一次极短慢推",
+      "眼头肩、单脚与尾部的小幅动作"
+    ],
+    "must_not_infer": [
+      "未核实的门、机器、车辆、武器、道具或全新反向空间",
+      "第二人物或可见生物",
+      "第二条尾巴、额外肢体或新装甲",
+      "澈的青白能量身体或与原图冲突的颜色材质"
+    ]
+  },
+  "changed_variable": {
+    "name": "declared_direction_vs_actual_placement",
+    "before": "角色用视线、肩部与抬脚明确表示准备向前。",
+    "after": "抬起的同一只爪足没有向前，而是只向侧面落下一次；尾尖先暴露真实方向，角色在新重心上停稳。",
+    "controlled_constants": [
+      "LLL-MAIN-001身份",
+      "SCENE-07",
+      "9:16",
+      "A/B各15秒",
+      "单实例",
+      "低幅动作",
+      "非MV"
+    ]
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "chain": "ZX8 → XN6克ZX5 → Z7补ZX6 → Z生ZX8",
+    "start": "ZX8、Z5：角色急于抢先，身体呈前向准备。",
+    "change": "XN6克ZX5：既有彩色照明区域改变强度，前向意图短暂停住；Z7通过假动作重新分配方向。",
+    "result": "Z6生ZX8：尾尖先指向真实方向，单脚侧向落地，行动权重新建立但位移很小。",
+    "stages": [
+      {
+        "stage": 1,
+        "primary": "ZX",
+        "secondary": "Z",
+        "direction": "角色→前方",
+        "relation": "并置",
+        "before_volume": "ZX8/Z5",
+        "after_volume": "ZX8/Z5",
+        "visible_evidence": "准备姿态，视线向前，两脚着地。"
+      },
+      {
+        "stage": 2,
+        "primary": "XN",
+        "secondary": "ZX",
+        "direction": "既有环境照明→角色动作",
+        "relation": "克",
+        "before_volume": "XN3/ZX8",
+        "after_volume": "XN6/ZX5",
+        "visible_evidence": "照明强度变化一次，眼头肩跟随，一只爪足抬起后停住。"
+      },
+      {
+        "stage": 3,
+        "primary": "Z",
+        "secondary": "ZX",
+        "direction": "尾尖→侧向真实路线",
+        "relation": "补",
+        "before_volume": "Z5/ZX5",
+        "after_volume": "Z7/ZX6",
+        "visible_evidence": "尾尖先向侧面轻弹，抬起的脚改变落点。"
+      },
+      {
+        "stage": 4,
+        "primary": "Z",
+        "secondary": "ZX",
+        "direction": "侧向落脚→新重心",
+        "relation": "生",
+        "before_volume": "Z7/ZX6",
+        "after_volume": "Z6/ZX8",
+        "visible_evidence": "单脚侧向落下一次，躯干和尾部配平，角色带克制笑意停稳。"
+      }
+    ]
+  },
+  "style": {
+    "style_identity_lock": [
+      "优先忠实Picture 1的角色线面、材质、原色卡和机械结构",
+      "优先忠实Picture 2的五色技术环境、既有材质和色卡逻辑",
+      "不把V35的冷色或内发光强加给黎黎隆，不复制澈"
+    ],
+    "visual_expression_variable": [
+      "在兼容源图时借鉴V35文字中的清楚形体、粗细变化线条、轻薄晕染、柔和漫射光与留白",
+      "A段固定低机位中全景，让前向假动作清楚",
+      "B段保持同轴，仅在侧向落脚后做极短慢推以读出表情"
+    ],
+    "v35_attribution": "V35 1194字符文本仅作适配性文字参考；其workflow可能使用旧词旧图，不把任何成片优劣归因于该文本。"
+  },
+  "segments": [
+    {
+      "id": "A",
+      "duration_seconds": 15,
+      "start_to_change_to_result": "准备向前 → 既有彩色照明强度变化 → 眼头肩跟随并抬脚 → 停在假动作姿态",
+      "scene_reference": {
+        "picture_ref": "Picture 2",
+        "scene_id": "SCENE-07",
+        "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-08_机械空港_五色组合.png",
+        "identity_elements": [
+          "机械空港身份",
+          "五色色卡逻辑",
+          "既有空间层次"
+        ],
+        "locked": [
+          "location identity",
+          "existing elements",
+          "spatial consistency",
+          "palette logic"
+        ],
+        "variable": [
+          "shot_size",
+          "camera_angle",
+          "composition",
+          "negative_space",
+          "existing illumination intensity"
+        ],
+        "needs_environment_inference": true
+      },
+      "style": {
+        "style_identity_lock": "服从两张参考的线面、材质和原色卡。",
+        "visual_expression_variable": "固定低机位三分之二中全景，信息丰富环境中保持单人剪影清楚。"
+      },
+      "shot": {
+        "shot_size": "medium_full",
+        "camera_angle": "low_three_quarter",
+        "composition": "完整身体、两只爪足和单条长尾可读；角色略偏中线一侧，抬脚方向留出简单空间。",
+        "foreground": "只用Picture 2可确认的既有前景形状",
+        "midground": "唯一黎黎隆完整剪影",
+        "background": "保留足以确认SCENE-07的既有层次与五色关系",
+        "character_position": "off_center_third",
+        "negative_space": "抬脚方向保留克制留白",
+        "action_start": "双脚着地、准备向前",
+        "observable_change": "既有照明强度改变一次；眼、头、肩跟随；一脚抬起后悬停",
+        "action_end": "尾部收紧配重，形成明确假动作并停住",
+        "camera_move": "locked",
+        "spatial_continuity": "建立角色前方与真实侧向的屏幕方向，B段保持同轴",
+        "needs_environment_inference": true
+      },
+      "action_plan": [
+        "0–4秒：单个黎黎隆保持准备姿态，呼吸与红发末端轻微。",
+        "4–7秒：Picture 2中既有彩色照明区域只改变一次强度，不新增光源或物件。",
+        "7–11秒：眼睛先跟随，头和肩随后小幅朝前方承诺方向转动。",
+        "11–15秒：一只机械爪足抬起但不落地，单条长尾收紧配重，出现轻微会意笑容并停住。"
+      ],
+      "ambient_soundscape": "机械空港持续低频通风、远处结构轻响与轻微装甲关节声；照明强度变化时加入一次短促电流嗡声。仅作音效设计。",
+      "emotional_sound_cue": "无歌词、无强拍的克制悬音；抬脚悬停时加入一次很轻的上扬泛音，随后保持未解决状态。",
+      "audio_trigger_points": [
+        "4秒既有照明强度变化",
+        "7秒视线启动",
+        "11秒爪足抬起"
+      ],
+      "audio_role": "support the false-start event and readable hesitation; no beat-synced cutting or MV logic",
+      "prompt": "2D hand-drawn cinematic character sequence, 15 seconds, vertical 9:16. STYLE IDENTITY LOCK: preserve the exact drawing language, materials, original colors and design details of Picture 1 for the only character, and preserve the verified five-color palette logic and technical-environment identity of Picture 2. Do not impose colors or glowing materials that conflict with either source. VISUAL EXPRESSION: keep the character silhouette exceptionally clear against the information-rich environment; use restrained variable-weight linework, light wash-like shading, soft diffuse illumination and controlled negative space only where compatible with the references. CHARACTER — Picture 1: one and only one LLL-MAIN-001, preserving the established face and competitive expression range, long red hair, red-white-black mechanical armor, cyan functional accents, mechanical claw feet, existing body-module proportions, and exactly one long segmented mechanical dragon tail. Every reference view represents the same single character. ENVIRONMENT — Picture 2: remain in the same five-color mechanical-airfield environment, retaining only its existing elements, spatial continuity and palette relationships. Picture 2 defines the place, not a mandatory framing. Do not invent a door, machine, vehicle, weapon, prop or unseen reverse view. CAMERA AND COMPOSITION: fixed low three-quarter medium-full shot; keep the entire body, both claw feet and the single tail readable; place the character slightly off center and preserve a simple open area in front of the lifted foot, while keeping the verified scene layers behind her. ACTION: she begins in a ready stance, eager to move. An existing colored illumination region in the environment changes intensity once. Her eyes follow it, then her head and shoulders commit slightly toward it. She lifts one claw foot as if she will step forward, but holds it just above the ground. Her tail tightens behind her as counterweight and a small knowing smile appears. She stops in this deliberate false-start pose. Keep one continuous restrained action and exactly one physical character instance. NEGATIVE: no second person, no creature performer, no duplicate or clone, no complete humanoid reflection or shadow double, no split screen, no character-sheet or four-panel output, no extra head, limb, claw foot or tail, no identity or armor redesign, no cyan-white energy humanoid, no unsupported environment object or unseen reverse view, no location replacement, no glossy 3D, no hard digital edges, no rhythmic MV cutting, no text, subtitle, logo or watermark."
+    },
+    {
+      "id": "B",
+      "duration_seconds": 15,
+      "continuity_source": "Work从A段run_A/run_B中选定一个真实尾帧；B段两抽绑定同一尾帧和同一完整prompt。",
+      "start_to_change_to_result": "承接抬脚假动作 → 尾尖先暴露侧向 → 同一爪足侧向落下一次 → 配平、回看并停稳",
+      "scene_reference": {
+        "picture_ref": "Picture 2",
+        "scene_id": "SCENE-07",
+        "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-08_机械空港_五色组合.png",
+        "identity_elements": [
+          "与A段相同的机械空港身份与五色色卡"
+        ],
+        "locked": [
+          "same location",
+          "same ground relation",
+          "same spatial axis",
+          "same palette logic"
+        ],
+        "variable": [
+          "slightly closer framing",
+          "very short slow push after landing"
+        ],
+        "needs_environment_inference": true
+      },
+      "style": {
+        "style_identity_lock": "与A段相同，服从角色和场景参考。",
+        "visual_expression_variable": "保持低机位同轴中全景；落脚后极短慢推，若空间失稳则固定。"
+      },
+      "shot": {
+        "shot_size": "medium_full",
+        "camera_angle": "same_low_three_quarter_axis",
+        "composition": "保留抬脚、侧向落点、单条尾巴与最终表情；不跨轴。",
+        "foreground": "沿用A段已确认的既有前景",
+        "midground": "唯一黎黎隆完成一次侧向落脚",
+        "background": "保持A段场景层次、照明方向与五色关系",
+        "character_position": "moves only one small lateral placement within same shot",
+        "negative_space": "真实侧向落点前保留可读空间",
+        "action_start": "A段选定尾帧的抬脚假动作",
+        "observable_change": "尾尖先侧向轻弹，同一爪足改变落点并落地一次",
+        "action_end": "躯干和尾部配平，回看未走方向，半笑停稳",
+        "camera_move": "very_short_slow_push_after_foot_lands; locked_fallback",
+        "spatial_continuity": "同一地面、轴线、屏幕方向与场景色卡",
+        "needs_environment_inference": true
+      },
+      "action_plan": [
+        "0–4秒：保持A段选定尾帧，抬起的爪足仍悬空，身体看似准备向前。",
+        "4–7秒：单条长尾的尾尖先向侧面轻弹，揭示真实方向。",
+        "7–11秒：抬起的同一只爪足只向侧面落下一次，不向前、不连续迈步。",
+        "11–15秒：躯干轻跟随，尾部展开配平；她回看未走的方向一次，露出克制得意的半笑并完全停住。"
+      ],
+      "ambient_soundscape": "延续A段机械空港底噪；尾尖动作加入细小关节声，侧向落脚加入一次干燥爪足触地声，装甲随后轻响一次。",
+      "emotional_sound_cue": "悬音在尾尖转向时轻微偏转，落脚时以一个温和短促低音解决；无歌词、无强拍，不驱动剪辑。",
+      "audio_trigger_points": [
+        "4秒尾尖侧向轻弹",
+        "7秒同一爪足改变落点",
+        "11秒落地配平"
+      ],
+      "audio_role": "support the reveal of the true direction and final confidence; no beat-synced cutting or MV logic",
+      "prompt": "2D hand-drawn cinematic character sequence, 15 seconds, vertical 9:16, continuing directly from the Work-selected final frame of Segment A. STYLE IDENTITY LOCK: preserve the exact drawing language, materials, original colors and design details of Picture 1 for the only character, and preserve the verified five-color palette logic and technical-environment identity of Picture 2. Do not impose colors or glowing materials that conflict with either source. VISUAL EXPRESSION: maintain clear readable shapes and the same spatial axis; allow only a very slow short push that improves the final expression without losing the mechanical claw feet or the single tail. CHARACTER — Picture 1: the same one and only LLL-MAIN-001 from Segment A, preserving the established face, long red hair, red-white-black mechanical armor, cyan functional accents, mechanical claw feet, body-module proportions and exactly one long segmented mechanical dragon tail. Every reference view represents this same single identity. ENVIRONMENT — Picture 2: remain in the same five-color mechanical-airfield environment with the same existing elements, ground relationship, spatial direction and palette logic established in Segment A. Do not invent architecture, machinery, props or a reverse view. CAMERA AND COMPOSITION: keep the same low three-quarter axis in a medium-full shot; make only a very slow short push after the foot changes direction, and lock the camera if the environment cannot remain coherent. ACTION: begin in the exact false-start pose selected from Segment A, with one claw foot hovering and the body apparently committed forward. Before the environmental illumination changes again, the tip of her single tail flicks toward the opposite side. Her lifted claw foot lands once in that same sideways direction, making one small lateral placement rather than a forward step. Her torso follows only enough to settle over the foot; her tail opens back out to balance. She looks toward the route she did not take, holds a restrained triumphant half-smile, and becomes completely still. Keep the motion continuous, compact and behavior-driven, with exactly one physical character instance. NEGATIVE: no second person, no creature performer, no duplicate or clone, no complete humanoid reflection or shadow double, no split screen, no character-sheet or four-panel output, no extra head, limb, claw foot or tail, no identity or armor redesign, no cyan-white energy humanoid, no unsupported environment object or unseen reverse view, no location replacement, no glossy 3D, no hard digital edges, no rhythmic MV cutting, no text, subtitle, logo or watermark."
+    }
+  ],
+  "shot_grammar": {
+    "continuity": "A建立前向假动作与侧向真实路线；B绑定真实A尾帧并维持同轴、同地面、同照明方向。",
+    "edit_rule": "两段内部均为单一连续镜头，不做节拍切镜或MV。",
+    "fallback": "若SCENE-07不支持所写照明区域、侧向空间或慢推，保留场景身份与五色色卡，改为既有整体光强轻变并固定机位。"
+  },
+  "audio_design": {
+    "mode": "per_segment",
+    "generation_status": "design_only_until_work_confirms_audio_capability",
+    "rule": "H3节点不支持音轨时全部作为后期音效清单；不得声称已有音轨。"
+  },
+  "sampling_plan": {
+    "total_planned_runs": 4,
+    "actual_completed_runs": 0,
+    "prompt_identical_within_segment": true,
+    "segments": {
+      "A": {
+        "run_A": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        },
+        "run_B": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        }
+      },
+      "B": {
+        "dependency": "same Work-selected actual A end frame",
+        "run_A": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        },
+        "run_B": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        }
+      }
+    },
+    "compare_axes": [
+      "identity stability",
+      "single-instance integrity",
+      "one-tail integrity",
+      "false-start readability",
+      "side-placement readability",
+      "scene continuity",
+      "camera stability",
+      "palette fidelity",
+      "no unsupported objects"
+    ]
+  },
+  "negative_constraints": [
+    "no second person or creature performer",
+    "no duplicate, clone, split screen or multi-view output",
+    "no complete humanoid reflection or shadow double",
+    "no extra head, limb, claw foot or tail",
+    "no face, hair, armor, palette, material or silhouette redesign",
+    "no cyan-white Che energy humanoid",
+    "no unsupported door, machine, vehicle, weapon, prop or reverse view",
+    "no location replacement or MV editing",
+    "no text, subtitle, logo or watermark"
+  ],
+  "work_gate": {
+    "picture_1_status": "github_direct_read_but_current_production_status_requires_work_revalidation",
+    "picture_2_status": "GitHub path/blob recorded; visual composition still requires Work check",
+    "required_checks": [
+      "verify Picture 1 is current LLL-MAIN-001 reference despite unfinished-production constraint",
+      "verify all card views map to one physical instance",
+      "verify exactly one long tail and two claw feet",
+      "verify SCENE-07 path/blob and Picture 2 mapping",
+      "verify existing illumination region and lateral space or apply fallback",
+      "select one real A ending before both B runs",
+      "verify final workflow prompt and every LoadImage belong to R29",
+      "record separate real task IDs",
+      "record integer seeds only if actual interface exposes them"
+    ],
+    "render_decision": "Work decides after validation; this B-side text task is not render approval."
+  },
+  "version_tracking": {
+    "rule_version": "B-RULE-v1.2",
+    "prompt_schema": "video_tenyuan_prompt_schema_v1.3",
+    "skill_chain_version": "H3动画四技能执行链_v1.0",
+    "previous_task": "MOUSE_B_20260924_0411_R28",
+    "before": "R28 used the mouse-ear mutant in SCENE-09; environmental boundary movement led to cautious lateral repositioning.",
+    "after": "R29 rotates to LLL-MAIN-001 in SCENE-07; an apparent forward commitment becomes one cunning lateral foot placement, with the tail revealing the true direction first.",
+    "same": [
+      "two 15-second segments",
+      "one character and one physical instance",
+      "non-MV",
+      "same-prompt run_A/run_B per segment",
+      "audio design only until capability is confirmed",
+      "v1.3 identity-style lock and visual-expression separation",
+      "B depends on a real selected A ending"
+    ],
+    "confounders": [
+      "character changed",
+      "scene changed",
+      "action family changed",
+      "shot height and camera behavior changed",
+      "LLL production status still requires Work revalidation"
+    ],
+    "upstream_consumed": [
+      {
+        "source": "B1 material audit 05:05",
+        "commit": "eac7f51df0a06bf06fb1953a792de64c2411514b",
+        "use": "confirmed pools unchanged and LLL remains unfinished/text-only pending revalidation"
+      },
+      {
+        "source": "LLL-MAIN-001 identity card",
+        "blob": "9b2e4e1e135da5d9b0ad7a6bc4f13ccf01d7fb63",
+        "use": "identity, visual locks and ZX/Z/XN baseline"
+      },
+      {
+        "source": "SCENE-07 index",
+        "blob": "26384b61a8ef8314cf8b5cee81934beed846c021",
+        "use": "five-color mechanical-airfield identity; high information must not obscure silhouette"
+      },
+      {
+        "source": "V35 1194-character text",
+        "commit": null,
+        "use": "adaptable style wording only; no output-quality attribution"
+      }
+    ],
+    "not_consumed_role_specific": [
+      {
+        "commit": "55a400567bc45dd33608e257cafc602394572acc",
+        "reason": "mouse-ear/SCENE-11 specific"
+      },
+      {
+        "commit": "c30ad4afaa73012bcdd29f4e51f49eaf308574a8",
+        "reason": "ADV-001/SCENE-06 specific"
+      },
+      {
+        "commit": "74045f8d1335568b265a32bd4999059b03d898b0",
+        "reason": "ADV-001/SCENE-06 C handoff"
+      },
+      {
+        "commit": "ddcbb408b7117034610e6cf82d0368fd6a3478c7",
+        "reason": "mouse-ear/SCENE-11 audit"
+      }
+    ],
+    "result_claim": "text_task_only; no render, identity-validation, audio or quality conclusion"
+  }
+}
