@@ -1,0 +1,99 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "project": "黎黎隆",
+  "video_mode": "single_character_narrative",
+  "duration_seconds": 15,
+  "character_id": "LLL-MAIN-001",
+  "scene_asset_id": "SCENE-REPLACE-ME",
+  "reference_view": "character_ref_plus_scene_ref",
+  "subject_definition": {
+    "one_protagonist_only": true,
+    "same_character_once": true,
+    "second_human_figure": false
+  },
+  "retention_analysis": {
+    "identity_lock": "",
+    "silhouette_lock": "",
+    "recognition_parts": "",
+    "outfit_structure": ""
+  },
+  "changed_variable": "",
+  "dynamic_chain": {
+    "initial_state": "",
+    "external_stimulus": "",
+    "body_reaction": "",
+    "character_response": "",
+    "stopped_result": ""
+  },
+  "time_beats": [
+    {"time": "0-2s", "beat": ""},
+    {"time": "2-4s", "beat": ""},
+    {"time": "4-6s", "beat": ""},
+    {"time": "6-8s", "beat": ""},
+    {"time": "8-10s", "beat": ""},
+    {"time": "10-12s", "beat": ""},
+    {"time": "12-15s", "beat": ""}
+  ],
+  "shot_grammar": {
+    "shot": "fixed shot",
+    "camera": "locked camera",
+    "lighting": "fixed soft light",
+    "movement": "none unless explicitly justified"
+  },
+  "audio_design": {
+    "ambient_soundscape": "soft environmental sound that supports space and action readability",
+    "emotional_sound_cue": "restrained low cue, no lyrics, no strong beat",
+    "audio_role": "support the scene mood and action readability, not music-video editing"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "duration_seconds": 15,
+    "run_A": {
+      "seed": "auto_or_explicit",
+      "execution_record": "pending"
+    },
+    "run_B": {
+      "seed": "auto_or_explicit",
+      "execution_record": "pending"
+    },
+    "compare_axes": [
+      "character_consistency",
+      "action_readability",
+      "camera_stability",
+      "atmosphere_fit",
+      "no_duplicate_character"
+    ]
+  },
+  "h3_prompt": "",
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign"
+  ],
+  "must_keep": [
+    "character identity",
+    "body proportions",
+    "recognition parts",
+    "outfit structure",
+    "scene identity"
+  ],
+  "must_avoid": [
+    "MV editing",
+    "multiple protagonists",
+    "character redesign",
+    "unmotivated camera movement",
+    "abrupt color change"
+  ],
+  "validation_target": {
+    "character_consistency": "pending_work_output",
+    "action_readability": "pending_work_output",
+    "camera_stability": "pending_work_output",
+    "atmosphere_fit": "pending_work_output",
+    "no_duplicate_character": "pending_work_output"
+  }
+}
