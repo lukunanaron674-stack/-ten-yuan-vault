@@ -1,0 +1,47 @@
+{
+  "task_id": "LLL_B_20260923_1008_R10",
+  "character_id": "LLL-MAIN-001",
+  "character_name": "黎黎隆",
+  "character_ref": {
+    "source_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+    "status": "github_direct_read",
+    "note": "唯一允许的B端角色参考；未冻结细节仅限实验，不回写最终设定"
+  },
+  "selected_scene_refs": [{
+    "scene_id": "SCENE-10",
+    "source_path": "黎黎隆项目/04_场景/五色视觉系统/R2_主导色/assets/R2-01_机械空港_深墨青主导.png",
+    "github_blob_sha": "c21d2465577eb2c00b0c66dee749d9e49723ce67",
+    "status": "available_by_github_path",
+    "role": "environment_reference_only"
+  }],
+  "subject_definitions": {
+    "primary_subject": "黎黎隆本人：红发、长分节机械龙尾、机械爪足、既有头盔卡扣与基础机械模块；ZX主、Z中、XN小",
+    "environment_subject": "SCENE-10 深墨青机械空港，仅提供空间、路径、技术重量感与色彩环境，不覆盖角色设计",
+    "supporting_subjects": "无新增人物；只允许场景图中已存在的设施结构作为路径限制"
+  },
+  "retention_analysis": {
+    "must_keep_character": ["红色长发", "长机械龙尾的上中下节奏与连续连接", "机械龙爪脚", "既有头盔卡扣", "红白黑机械装甲与少量青蓝功能信号", "好胜、机灵、行动力强的表演核心"],
+    "must_keep_scene": ["深墨青主导的机械空港重量感", "参考图真实可见的路径与设施", "角色剪影必须从环境中清楚分离"],
+    "weak_reference": ["未冻结装甲小细节只作实验参考，不扩展成新设定"],
+    "forbidden_changes": ["新增翅膀", "新增武器", "新增服装系统", "改变尾巴连接方式", "新增人物", "把场景机械结构长到角色身体上"]
+  },
+  "changed_variable": "机械空港的固定通行路径把黎黎隆从正面抢线推进压到短暂停顿；她用爪足急停与长尾反摆改变自身运动方向，从被路径规定转成主动选择侧向可见路线。",
+  "dynamic_chain": {
+    "ten_yuan": "ZX → XN克ZX → Z改道 → ZX恢复主动 → NZ短暂稳定",
+    "start": "ZX：黎黎隆抢先沿最直接的可见路线高速推进",
+    "constraint": "XN：固定通行结构压缩她的直线路径，迫使她减速",
+    "turn": "Z：她不硬撞设施，以机械爪足急停、观察一拍、长尾反摆完成突然侧切",
+    "new_state": "ZX/NZ：她重新取得行动主动，并与现有侧向路线形成短暂稳定的运动关系",
+    "observable_proof": "镜头始终保留原直线路径与新侧向路径的空间关系，让观众看见限制、停顿、判断、改道和重新加速"
+  },
+  "shot_grammar": {
+    "clip_A_15s": ["0-5s 中远景低机位侧跟：黎黎隆沿现有直线路径快速推进，完整尾巴进入画面并有连续惯性", "5-10s 中景轻推：真实设施/路径限制进入前景，她机械爪足抓地急停，身体先停、尾巴后续摆回", "10-15s 中近景到中景：她快速扫视侧向可见路线，露出机灵又不服输的表情，重心与尾巴预先朝侧向蓄势"],
+    "clip_B_15s": ["0-5s 中景连续动作：承接A段，她先向原路线做一次假启动，随即爪足定点转髋", "5-10s 中远景横移跟拍：长尾反向甩动提供清晰配重，她沿场景中真实存在的侧向路线完成改道，不发明门、栏杆或锚点", "10-15s 广角收束：她重新加速越过限制区域，在安全可见落点稳住，尾巴完成最后一次回摆，回头露出小幅得意表情；同时看得到被放弃的原路线"]
+  },
+  "asset_status": {
+    "character_ref_status": "github_direct_read",
+    "scene_ref_status": "github_direct_read",
+    "asset_note": "image submission and H3 binding handled by cloud work; B端未执行H3渲染",
+    "render_status": "not_rendered_by_b_end"
+  }
+}
