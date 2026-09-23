@@ -15,7 +15,7 @@ GitHub角色池 + GitHub 13张场景池
 
 ## B端每小时任务
 
-1. 先读取 `assets/character_pool_index.json`，从 `status=available` 的角色候选中选择角色，并把选中角色的 `character_id` 与 `asset_paths` 写入任务。
+1. 先读取 `assets/character_pool_index.json`，仅从 `status=available` 且 `asset_role=h3_character_reference`、`b_end_h3_eligible=true` 的角色中选择主体，并把选中角色的 `character_id` 与 `asset_paths` 写入任务。
 2. 从 `assets/scene_pool_13_index.json` 的13张正式场景池中选择1张主场景，必要时选择辅助场景。
 3. 读取角色冻结项、场景约束和十元动态链。
 4. 生成 `subject_definitions`、`retention_analysis`、`changed_variable`、`dynamic_chain`、`shot_grammar` 与 `h3_prompt`。
@@ -30,7 +30,7 @@ GitHub角色池 + GitHub 13张场景池
 
 `assets/character_pool_index.json`
 
-当前可用素材为10张图片，登记4个角色候选：黎黎隆、黎黎、大叔、奇美拉。R3角色图是角色与场景背景组合参考图，生成描述词时可用于角色外形保持、角色与环境关系和动作构图；不得把背景误当成角色结构。
+**H3角色素材与场景实验图必须分开。** 当前索引中的黎黎隆H3角色卡、逃票魔法学徒H3角色设定图是B端候选；R3-01至R3-09（黎黎、大叔、奇美拉与三类场景的组合预跑图）仅为场景/角色组合实验记录，不是经作者批准的H3角色卡，禁止自动进入B端轮换或作为角色身份/冻结造型依据。CH-002日常袖型截图也仅是造型候选，并非H3生产素材。其他角色只有取得作者指定的H3原始参考图并核实路径后才能入池。
 
 ## 13张场景池
 
