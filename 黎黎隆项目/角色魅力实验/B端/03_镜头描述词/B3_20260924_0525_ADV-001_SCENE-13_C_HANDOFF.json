@@ -1,0 +1,56 @@
+{
+  "handoff_id": "B3_20260924_0525_ADV-001_SCENE-13_C",
+  "status": "text_ready_image_binding_pending",
+  "upstream": {
+    "b1": "logs/B1_素材索引_20260924_0405.md",
+    "character_pool": "v1.5@59810586b7b8ada9c9a263975a4769b3c4f8ca7a",
+    "scene_pool": "v1@26384b61a8ef8314cf8b5cee81934beed846c021",
+    "b2": "02_十元动态链研究/B2_20260924_0515_ADV-001_SCENE-13.md",
+    "b2_commit": "fdb86d85d711ab89f3f9b319692b1351772f9050"
+  },
+  "character": {
+    "id": "ADV-001",
+    "declared_source": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
+    "picture_slot": "Picture 1",
+    "identity_validation_status": "pending_image_validation",
+    "h3_render_eligible": false,
+    "requirement": "Work/C must locate the real source image and verify bytes/hash/identity before render. Do not substitute unfinished LLL-MAIN-001."
+  },
+  "scene": {
+    "id": "SCENE-13",
+    "path": "黎黎隆项目/04_场景/五色视觉系统/R4_色彩脚本/assets/R4-04_机械空港_合_稳定结果.png",
+    "picture_slot": "Picture 2",
+    "availability": "available_by_github_path",
+    "needs_environment_inference": true,
+    "requirement": "Inspect the actual image and select an existing placement surface for the lantern. Do not invent unsupported architecture."
+  },
+  "internal_dynamic_chain": "XN8 -> NX7克XN5 -> Z6补X7 -> X并Z7 -> NZ8",
+  "story": "最后一盏灯不带走",
+  "format": {"aspect_ratio": "9:16", "duration_seconds": 15, "single_character": true, "mv_only": false},
+  "prompt_source": "03_镜头描述词/B3_20260924_0525_ADV-001_SCENE-13.md",
+  "runs": [
+    {"prompt": "A_choice_evidence", "run": "run_A", "seed": null, "task_id": null, "status": "pending"},
+    {"prompt": "A_choice_evidence", "run": "run_B", "seed": null, "task_id": null, "status": "pending"},
+    {"prompt": "B_cost_spatial_separation", "run": "run_A", "seed": null, "task_id": null, "status": "pending"},
+    {"prompt": "B_cost_spatial_separation", "run": "run_B", "seed": null, "task_id": null, "status": "pending"}
+  ],
+  "audio": {
+    "required_fields": ["ambient_soundscape", "emotional_sound_cue", "audio_role"],
+    "rule": "audio supports action readability and emotion, not pure MV editing"
+  },
+  "preflight": [
+    "verify real ADV-001 Picture 1",
+    "visually inspect SCENE-13 Picture 2 and choose an existing lantern placement surface",
+    "verify final H3 prompt contains no Ten-Yuan terminology",
+    "verify all LoadImage nodes point to current ADV-001 and SCENE-13 inputs",
+    "verify no stale master prompt or stale character/scene image remains",
+    "run identical input twice per prompt and record only actual returned seeds/task_ids"
+  ],
+  "forbidden": [
+    "unfinished LLL-MAIN-001 as production character",
+    "second character or duplicate ADV",
+    "second/new lantern",
+    "invented console/railing/door/tower/sign unsupported by Picture 2",
+    "fabricated seed/task_id/render result"
+  ]
+}
