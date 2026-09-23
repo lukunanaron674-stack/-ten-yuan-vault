@@ -1,18 +1,17 @@
 {
-  "schema_version": "lililong-b-character-pool/v1.4",
+  "schema_version": "lililong-b-character-pool/v1.5",
   "project": "黎黎隆项目/角色魅力实验",
   "source_branch": "main",
   "character_count": 3,
-  "selection_policy": "B端可为登记角色生成结构化文本任务；图像渲染必须逐角色通过 WorkBuddy/WorkBody 原图绑定与身份验证闸门。github_image_upload=false 的角色不得因已有文字登记而被视为已绑定图片。",
+  "selection_policy": "B端可为登记角色生成结构化文本任务；动态图优先使用half_body_dynamic，full_body_identity只负责身份、比例、服装剪影与装备空间校验。图像渲染必须通过WorkBuddy/WorkBody原图绑定与身份验证。",
   "characters": [
     {
       "character_id": "LLL-MAIN-001",
       "name": "黎黎隆",
       "tenyuan": "ZX主 / Z中 / XN小",
-      "asset_paths": [
-        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg"
-      ],
+      "asset_paths": ["黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg"],
       "source_image": "LLL_H3_character_card_001.jpg",
+      "reference_view_type": "both",
       "github_image_upload": true,
       "text_task_eligible": true,
       "identity_validation_status": "github_direct_read",
@@ -27,6 +26,7 @@
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/ADV-001_角色身份ID与十元分析.json"
       ],
       "source_image": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
+      "reference_view_type": "full_body_identity",
       "github_image_upload": false,
       "text_task_eligible": true,
       "identity_validation_status": "pending_image_validation",
@@ -41,7 +41,13 @@
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_角色身份验证与十元分析_v1.1.md",
         "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_角色身份ID与十元分析.json"
       ],
-      "source_image": "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+      "dynamic_asset_index": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_H3_DYNAMIC_ASSET.json",
+      "full_body_identity_source": "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+      "half_body_dynamic_source": "MOUSE-EAR-MUTANT-001_H3半身动态四宫格_v2.0.png",
+      "half_body_dynamic_library_file_id": "libfile_36caaef442b08191b0acddf57f8d85e2",
+      "reference_view_type": "both",
+      "primary_dynamic_view": "half_body_dynamic",
+      "secondary_identity_view": "full_body_identity",
       "source_aspect_ratio": "9:16",
       "github_image_upload": false,
       "text_task_eligible": true,
@@ -51,9 +57,14 @@
       "must_not_merge_with": ["CHE-001", "LLL-MAIN-001", "ADV-001", "rabbit-ear character", "ordinary girl"]
     }
   ],
+  "view_rules": {
+    "half_body_dynamic": "锁脸型、发型、表情、识别件和上半身动态；优先用于H3动态。",
+    "full_body_identity": "锁身体比例、服装剪影、装备位置和空间关系；只有此视图时仅做低动作测试。",
+    "both": "半身卡主导动态，全身卡只校验身份；二者不得互相重设角色。"
+  },
   "gate": {
     "text_generation": "allowed_for_text_task_eligible",
-    "image_binding": "WorkBuddy/WorkBody must bind the exact original source image",
+    "image_binding": "WorkBuddy/WorkBody must bind every referenced original asset",
     "rendering": "allowed only after identity_validation_status=passed and h3_render_eligible=true",
     "failure_state": ["queued_for_workbuddy_validation", "pending_image_validation"]
   },
