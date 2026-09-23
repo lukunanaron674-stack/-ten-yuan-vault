@@ -1,0 +1,27 @@
+{
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "display_name": "鼠耳异变少女",
+  "provisional_alias": "鼠耳异变少女",
+  "project": "角色魅力实验_B端",
+  "asset_type": "H3_character_sheet",
+  "source_file": "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+  "image": {"width": 864, "height": 1536, "aspect_ratio": "9:16"},
+  "identity_validation": {
+    "status": "ready_for_workbuddy_validation",
+    "asset_structure_check": "passed",
+    "quadrant_count": 4,
+    "identity_lock": ["white short hair with eye-covering fringe and a small upward curl", "large translucent pale-violet mouse-ear mutation structures", "small slender body with oversized pale robe", "dark collar, sleeve cuffs, hem blocks, diagonal strap and side satchel", "quiet, cautious and easily startled expression language"],
+    "do_not_change": ["do not merge with Che, Lililong or Adventurer", "do not turn the mouse-ear mutation into rabbit ears, wings or accessories", "do not add tail, horns, armor or weapons", "do not replace the robe with a fitted battle costume", "do not enlarge the body into an adult muscular character"],
+    "h3_verification_status": "pending_workbuddy_render"
+  },
+  "ten_yuan_analysis": {
+    "analysis_status": "image_based_initial_reading",
+    "is_frozen": false,
+    "primary": {"symbol": "N", "strength": 8, "reason": "Small scale, closed hands, restrained posture and low aggression create a quiet existence."},
+    "secondary": {"symbol": "NZ", "strength": 7, "reason": "Soft mutation structure, pale robe and sensitive silhouette create a protection and relationship direction."},
+    "latent": [{"symbol": "Z", "strength": 5}, {"symbol": "XZ", "strength": 4}, {"symbol": "ZN", "strength": 4}],
+    "recommended_first_experiment": "N → NZ → Z",
+    "candidate_dynamic_chains": ["N → NZ → Z", "N → X → NX → NZ", "NZ → Z → XZ"]
+  },
+  "handoff": {"workbuddy_input": "original JPEG + this JSON + companion Markdown validation sheet", "github_image_upload": false, "b_end_use": "Use character_id and ten-yuan candidates only after WorkBuddy confirms visual identity."}
+}
