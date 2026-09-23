@@ -1,0 +1,313 @@
+{
+  "schema_version": "video_tenyuan_prompt_schema_v1.2",
+  "task_id": "MOUSE_B_20260923_1911_R19",
+  "round": "R19",
+  "task_version": "v1.0",
+  "parent_task_id": "ADV_B_20260923_1805_R18",
+  "status": "queued_for_workbuddy_validation",
+  "video_mode": "single_character_narrative",
+  "cast": {
+    "character_id": "MOUSE-EAR-MUTANT-001",
+    "character_name": "鼠耳异变少女",
+    "on_screen_character_count_max": 1,
+    "other_characters_allowed": false,
+    "duplicate_instance_allowed": false
+  },
+  "subject_definitions": {
+    "character": "唯一出镜主体为MOUSE-EAR-MUTANT-001；动态半身卡与全身身份卡均属于同一个鼠耳异变少女，不按四宫格生成多人。",
+    "environment": "SCENE-01单色森林湖泊只提供湖岸、可见路径、空间、柔和光线与单色层级，不覆盖角色设计。",
+    "picture_1": "MOUSE-EAR-MUTANT-001_H3半身动态四宫格_v2.0.png；half_body_dynamic；Library ID libfile_36caaef442b08191b0acddf57f8d85e2；github_image_upload=false。",
+    "picture_2": "030F6E3B89E0998CBF695064BC27C2A8.jpeg；full_body_identity；github_image_upload=false。",
+    "picture_3": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-01_森林湖泊_单色.png；GitHub blob SHA fcbbd771567ad65327d18248466f24b0f4339638。"
+  },
+  "reference_view": {
+    "type": "both",
+    "dynamic_primary": {
+      "file": "MOUSE-EAR-MUTANT-001_H3半身动态四宫格_v2.0.png",
+      "library_file_id": "libfile_36caaef442b08191b0acddf57f8d85e2",
+      "role": "锁脸型、白发、鼠耳反应、视线与上半身动态",
+      "github_image_upload": false
+    },
+    "identity_secondary": {
+      "file": "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+      "role": "只校验小体型、宽袍、深色边块、斜挎带、侧包和一步空间关系",
+      "github_image_upload": false
+    },
+    "scene_asset_id": "SCENE-01",
+    "scene_source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-01_森林湖泊_单色.png",
+    "scene_blob_sha": "fcbbd771567ad65327d18248466f24b0f4339638",
+    "binding_rule": "Work必须绑定同一角色的两张参考与一张场景；任一角色图缺失时不得把其他角色图顶替。"
+  },
+  "retention_analysis": {
+    "must_keep": [
+      "白色短发",
+      "同一脸型",
+      "半透明浅紫鼠耳异变结构",
+      "白色宽大短袍",
+      "小体型",
+      "深色边块",
+      "斜挎带",
+      "侧包"
+    ],
+    "motion_priority": [
+      "先鼠耳、后视线与头部",
+      "手只短暂压带",
+      "只迈一个很小的半步",
+      "袍摆和侧包只做一次余摆"
+    ],
+    "must_not_redefine": [
+      "不误识别为澈",
+      "不改成兔耳角色或普通少女",
+      "不把鼠耳结构当装饰或翅膀",
+      "不新增尾巴、角、盔甲、武器",
+      "不因成片风格重设角色"
+    ]
+  },
+  "changed_variable": "角色从安静站定，经鼠耳与视线确认湖面方向，再沿现有路径迈出一个小半步；身份、服装、场景和光线不变。",
+  "dynamic_chain": {
+    "internal_only": true,
+    "base": "N8 / NZ7 / Z5 / XZ4 / ZN4",
+    "chain": "N → NZ → Z",
+    "observable_mapping": "安静存在→通过涟漪、鼠耳与视线确认环境关系→做出一次小幅主动迈步",
+    "evidence_status": "使用已登记首轮推荐链；只验证动作转译，不回写最终性格。"
+  },
+  "skills_pipeline": {
+    "version": "H3动画四技能执行链_v1.0",
+    "steps": [
+      "02_I2V_motion",
+      "03_four_component_scene",
+      "04_clarity_conflict_audio",
+      "05_negative_sampling"
+    ],
+    "skill_02": {
+      "motion_plan": "静止→湖面小涟漪→单耳先转→眼睛与头部跟随；继而单手压带→小半步→衣包落稳。",
+      "motion_visibility_check": "全部变化可见且来自角色现有身体、服装和场景湖面/路径；无新增人物道具。",
+      "view_limit_applied": "半身动态卡主导耳、眼、头与手；全身卡只校验比例、侧包和小半步。"
+    },
+    "skill_03": {
+      "composition_plan": "同一SCENE-01、同一固定全身三分之四中远景；A段建立方向确认，B段完成小幅位移。",
+      "cross_clip_continuity": "B段从Work实际选中的A段尾帧续接；当前selected_A_run=null。"
+    },
+    "skill_04": {
+      "one_sentence_readability": "鼠耳异变少女先用耳朵和视线确认湖面涟漪的方向，再压住斜挎带沿现有路径迈出一个小半步。",
+      "contradiction_report": {
+        "found": [
+          "半身动态卡适合上半身反应，但B段需要全身位移。"
+        ],
+        "resolved": [
+          "把位移限制为一个小半步，并只用全身身份卡校验比例和侧包位置。"
+        ],
+        "remaining": []
+      }
+    },
+    "skill_05": {
+      "negative_scope": "防止四宫格多人、兔耳误识别、身份服装漂移、额外肢体和场景新增元素。",
+      "double_draw_plan": "每段同一prompt、同三张参考及同参数独立抽两次；seed实跑前为null。"
+    }
+  },
+  "clips": [
+    {
+      "clip_id": "A_15s",
+      "duration_seconds": 15,
+      "start_state": "湖岸路径旁安静站定。",
+      "changed_variable": "注意方向由正前方转到湖面涟漪侧。",
+      "end_state": "鼠耳、眼睛和头部指向同一侧并停住。",
+      "time_beats": [
+        {
+          "time": "0–4秒",
+          "event": "身体、双手和头部静止。"
+        },
+        {
+          "time": "4–8秒",
+          "event": "湖面一侧出现一圈小涟漪。"
+        },
+        {
+          "time": "8–12秒",
+          "event": "靠近该侧的鼠耳先转动。"
+        },
+        {
+          "time": "12–15秒",
+          "event": "眼睛和头部小幅跟随并停住。"
+        }
+      ],
+      "shot_grammar": "固定全身三分之四中远景；固定柔和光线；无推摇、无转场。",
+      "h3_prompt": "Picture 1 的半身动态四宫格和 Picture 2 的全身身份四宫格都只代表同一个鼠耳异变少女，Picture 3 只提供单色森林湖泊环境。全片仅出现一个角色。固定全身三分之四中远景，固定柔和光线，不推镜、不摇镜、不转场。0–4秒，她站在湖岸可见路径旁，身体、双手和头部保持安静。4–8秒，湖面一侧只出现一圈很小的涟漪。8–12秒，靠近涟漪方向的半透明浅紫鼠耳先轻微转动，头部仍不动。12–15秒，她的眼睛和头部再小幅转向同一侧，随后停住。保持同一脸型、白色短发、半透明浅紫鼠耳异变结构、白色宽大短袍、小体型、深色边块、斜挎带和侧包；不得变成澈、兔耳角色或普通少女，不出现第二个人、分身、分屏、额外肢体、尾巴、角、翅膀或武器。",
+      "prompt_hash": null,
+      "audio_design": {
+        "ambient_soundscape": "轻风、很轻的湖水声；小涟漪出现时一次短促水纹声；宽袍只有极轻布料底声。",
+        "emotional_sound_cue": "鼠耳开始转动时一个很轻的高频玻璃质短音，头部停住后消失；无歌词、无强拍。",
+        "onset_event": "湖面涟漪出现并触发鼠耳转向。",
+        "audio_output_status": "post_sound_design_if_h3_node_has_no_audio"
+      }
+    },
+    {
+      "clip_id": "B_15s",
+      "duration_seconds": 15,
+      "continuity_dependency": "从Work选中的A段尾帧续接；selected_A_run=null。",
+      "start_state": "视线、头部与鼠耳朝已确认方向。",
+      "changed_variable": "身体位置沿现有路径向该方向移动一个小半步。",
+      "end_state": "小半步完成，袍摆和侧包落稳。",
+      "time_beats": [
+        {
+          "time": "0–4秒",
+          "event": "保持A段尾姿。"
+        },
+        {
+          "time": "4–8秒",
+          "event": "一只手轻压斜挎带。"
+        },
+        {
+          "time": "8–12秒",
+          "event": "沿现有路径迈出一个小半步。"
+        },
+        {
+          "time": "12–15秒",
+          "event": "停稳；袍摆和侧包一次余摆后落定。"
+        }
+      ],
+      "shot_grammar": "沿用A段机位、方向、景别和光线；无转场。",
+      "h3_prompt": "使用与上一段选中结果相同的鼠耳异变少女、同一单色森林湖泊位置和同一固定全身三分之四中远景；全片仅出现一个角色。0–4秒，她保持上一段结束姿势，视线和鼠耳仍朝涟漪方向。4–8秒，她只用靠近身体的一只手轻轻压住胸前斜挎带，侧包位置不变。8–12秒，她沿场景现有可见路径向已确认方向迈出一个很小的半步，另一只脚不追上。12–15秒，她停稳，宽袍下摆和侧包只摆动一次后落定，双耳仍朝前。固定机位、固定光线，不推镜、不摇镜、不转场；保持同一脸型、白色短发、半透明浅紫鼠耳异变结构、宽袍比例、深色边块、斜挎带和侧包连接；不得变成澈、兔耳角色或普通少女，不出现第二个人、分身、分屏、额外肢体或新增物件。",
+      "prompt_hash": null,
+      "audio_design": {
+        "ambient_soundscape": "延续轻风和湖水声；手压斜挎带时轻布料摩擦；半步落地一次很轻脚步声；侧包落稳时一次软碰声。",
+        "emotional_sound_cue": "脚步落地时一个克制、温和的低频短音，停稳后迅速衰减；无歌词、无节拍剪辑。",
+        "onset_event": "小半步落地。",
+        "audio_output_status": "post_sound_design_if_h3_node_has_no_audio"
+      }
+    }
+  ],
+  "shot_grammar": {
+    "camera": "两段固定全身三分之四中远景；零主运镜。",
+    "lighting": "沿用SCENE-01单色层级和柔和光线；不换天气、不突然换色。",
+    "continuity": "同一位置区域、方向、角色、宽袍、斜挎带和侧包连接；B段依赖Work实际选定A段。",
+    "narrative_responsibility": "A段让环境确认可见，B段把确认转成一个很小的主动行动。"
+  },
+  "audio_design": {
+    "audio_role": "supports event and emotional change; not music-video editing",
+    "h3_audio_capability": "unverified_by_b_end",
+    "fallback": "若H3节点不支持音轨，作为后期音效清单；不得声称已有音轨。"
+  },
+  "sampling_plan": {
+    "per_prompt_run_count": 2,
+    "clips": [
+      {
+        "clip_id": "A_15s",
+        "prompt_hash": null,
+        "runs": [
+          {
+            "run_id": "run_A",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation",
+            "render_result": null
+          },
+          {
+            "run_id": "run_B",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation",
+            "render_result": null
+          }
+        ]
+      },
+      {
+        "clip_id": "B_15s",
+        "prompt_hash": null,
+        "depends_on_selected_A_run": true,
+        "selected_A_run": null,
+        "runs": [
+          {
+            "run_id": "run_A",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation",
+            "render_result": null
+          },
+          {
+            "run_id": "run_B",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation",
+            "render_result": null
+          }
+        ]
+      }
+    ],
+    "prompt_identical_within_clip": true,
+    "same_character_scene_and_parameters": true,
+    "seed_policy": "Work仅在实际接口支持且生成后记录真实整数seed；否则seed=null并分别写真实work_task_id。",
+    "selection_status": "not_evaluated_by_b_end",
+    "planned_generation_count": 4,
+    "completed_generation_count": 0
+  },
+  "negative_constraints": [
+    "no second human figure",
+    "no duplicate, clone or mirrored full character",
+    "no split-screen, quadrant or character-sheet output",
+    "do not turn four panels into four people",
+    "no Che identity",
+    "no rabbit ears or ordinary girl",
+    "no opaque fabric animal ears, wings or ear accessories",
+    "no tail, horns, armor or weapons",
+    "no extra limbs or face drift",
+    "no missing diagonal strap or side satchel",
+    "no large stride, running or jumping",
+    "no invented props or creatures",
+    "no scene replacement or sudden color/weather change",
+    "no camera orbit or fast zoom",
+    "no text, logo or watermark"
+  ],
+  "version_tracking": {
+    "rule_version": "B-RULE-v1.2",
+    "schema_version": "video_tenyuan_prompt_schema_v1.2",
+    "skills_pipeline_version": "H3动画四技能执行链_v1.0",
+    "audio_design_version": "v1.0",
+    "sampling_version": "double_draw_v1.0",
+    "parent_task_id": "ADV_B_20260923_1805_R18",
+    "before": {
+      "character_id": "ADV-001",
+      "scene_id": "SCENE-10",
+      "reference_view": "full_body_identity",
+      "motion": "压带→转腰灯",
+      "structure": "two 15-second clips under v1.2"
+    },
+    "after": {
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "scene_id": "SCENE-01",
+      "reference_view": "both",
+      "motion": "鼠耳确认→压带→小半步",
+      "structure": "two 15-second clips under v1.2"
+    },
+    "changed_fields": [
+      "character",
+      "scene",
+      "reference_view",
+      "identity risks",
+      "dynamic_chain",
+      "motion scale",
+      "audio triggers"
+    ],
+    "controlled_fields": [
+      "v1.2 rules",
+      "two 15-second clips",
+      "four-skill order",
+      "one on-screen character",
+      "no duplicate instance",
+      "per-clip double draw",
+      "seed null before execution",
+      "no MV"
+    ],
+    "confounders": [
+      "角色、场景、参考图数量和动作链同时变化，未来结果不能作单变量因果结论。",
+      "两张角色参考均未登记GitHub上传，Work必须先绑定同一角色原图。",
+      "B段连续性依赖Work实际选择A段run，B端尚无选择结果。"
+    ]
+  },
+  "asset_status": {
+    "dynamic_reference_validation": "pending_image_validation",
+    "full_body_identity_validation": "pending_image_validation",
+    "scene_reference_status": "github_direct_read",
+    "render_status": "not_rendered_by_b_end",
+    "audio_track_status": "not_generated_or_unverified"
+  }
+}
