@@ -1,0 +1,49 @@
+{
+  "task_id": "MOUSE-EAR-MUTANT-001_WORKBODY_SYNC_20260923_001",
+  "project": "黎黎隆项目/角色魅力实验",
+  "stage": "B_TO_C",
+  "mode": "character_library_sync_and_workbuddy_identity_gate",
+  "status": "queued_for_workbuddy_sync",
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "character_name": "鼠耳异变少女",
+  "source_asset": {
+    "filename": "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "aspect_ratio": "9:16",
+    "github_image_upload": false,
+    "workbuddy_required_action": "Bind the original JPEG in WorkBody/WorkBuddy; do not substitute a generated image."
+  },
+  "github_text_refs": [
+    "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_角色身份ID与十元分析.json",
+    "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_角色身份验证与十元分析_v1.1.md"
+  ],
+  "identity_gate": {
+    "must_keep": [
+      "white short hair with eye-covering fringe and a small upward curl",
+      "large translucent pale-violet mouse-ear mutation structures",
+      "small slender body",
+      "oversized pale robe with dark trim blocks",
+      "diagonal strap and side satchel"
+    ],
+    "must_not_merge_with": [
+      "LLL-MAIN-001",
+      "CHE-001",
+      "ADV-001"
+    ],
+    "verification_status": "pending_workbuddy_render"
+  },
+  "ten_yuan_initial_reading": {
+    "primary": "N",
+    "secondary": "NZ",
+    "latent": ["Z", "XZ"],
+    "support": "ZN",
+    "recommended_chain": "N → NZ → Z"
+  },
+  "sync_acceptance": [
+    "WorkBuddy has registered character_id MOUSE-EAR-MUTANT-001",
+    "original JPEG is bound to this character_id",
+    "four-panel identity check passes",
+    "mouse-ear mutation, face, robe and body proportion remain continuous",
+    "cloud returns structured validation result before any H3 render"
+  ],
+  "failure_rule": "If original JPEG cannot be bound or identity check fails, keep status pending_image_validation and do not claim render completion."
+}
