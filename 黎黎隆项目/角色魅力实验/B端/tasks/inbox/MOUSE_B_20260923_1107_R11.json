@@ -1,0 +1,112 @@
+{
+  "schema_version": "lililong-b-task/v1.1",
+  "task_id": "MOUSE_B_20260923_1107_R11",
+  "project": "黎黎隆项目/角色魅力实验",
+  "stage": "B",
+  "mode": "character_charm_text_generation",
+  "status": "queued_for_workbuddy_validation",
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "character_name": "鼠耳异变少女",
+  "rotation": {
+    "previous_character": "LLL-MAIN-001",
+    "previous_scene": "SCENE-10",
+    "character_changed": true,
+    "scene_changed": true
+  },
+  "character_ref": {
+    "source_file": "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "aspect_ratio": "9:16",
+    "github_image_upload": false,
+    "identity_markdown": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_角色身份验证与十元分析_v1.1.md",
+    "identity_json": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_角色身份ID与十元分析.json",
+    "status": "pending_image_validation",
+    "required_action": "WorkBuddy/WorkBody绑定原始JPEG并先完成四宫格身份验证；不得用生成图替代原图。"
+  },
+  "selected_scene_refs": [
+    {
+      "scene_id": "SCENE-01",
+      "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-01_森林湖泊_单色.png",
+      "github_blob_sha": "fcbbd771567ad65327d18248466f24b0f4339638",
+      "status": "available_by_github_path",
+      "role": "environment_reference_only",
+      "selection_reason": "与上一轮深墨青机械空港形成角色与场景双变化；单色层级便于观察小体型角色、半透明鼠耳与一次微小主动动作。"
+    }
+  ],
+  "subject_definitions": {
+    "primary_subject": "鼠耳异变少女：白色短发、遮眼刘海与头顶小卷；头部两侧大型半透明浅紫鼠耳异变结构；白色宽大短袍、小体型、深色边块、斜挎带与侧包。",
+    "environment_subject": "SCENE-01森林湖泊单色环境，仅提供安静空间、湖岸路径、远近层级和声音来源，不覆盖角色造型。",
+    "supporting_subjects": "不新增人物、动物或怪物；环境触发只允许来自场景已有的水面、草叶、风与岸边小物。"
+  },
+  "identity_gate": {
+    "must_keep": [
+      "白色短发、遮眼刘海和头顶小卷",
+      "半透明浅紫色鼠耳异变结构及其与头部的连接",
+      "白色宽大短袍",
+      "小体型和纤细四肢",
+      "深色立领、袖口、下摆与短裤块面",
+      "深色斜挎带和侧包"
+    ],
+    "must_not_identify_as": [
+      "澈",
+      "黎黎隆",
+      "冒险者",
+      "兔耳角色",
+      "普通少女"
+    ],
+    "forbidden_changes": [
+      "将鼠耳变成普通兔耳、翅膀或装饰耳饰",
+      "新增尾巴、角、盔甲或武器",
+      "把短袍改成贴身战斗服",
+      "把小体型改成年肌肉体型",
+      "改变斜挎带与侧包的存在关系"
+    ],
+    "verification_status": "pending_image_validation"
+  },
+  "ten_yuan_analysis": {
+    "status": "image_based_initial_reading_not_frozen",
+    "primary": {"symbol": "N", "strength": 8, "visible_basis": "小体量、收束站姿、闭合双手与低攻击性形成安静存在。"},
+    "secondary": {"symbol": "NZ", "strength": 7, "visible_basis": "柔软异变结构、宽袍与被包裹轮廓适合表现与安全空间建立关系。"},
+    "latent": [
+      {"symbol": "Z", "strength": 5, "visible_basis": "鼠耳可先于身体反应，随后触发细小变向。"},
+      {"symbol": "XZ", "strength": 4, "visible_basis": "外部平静与内部敏感可通过瞬间惊觉显露。"}
+    ],
+    "support": {"symbol": "ZN", "strength": 4, "visible_basis": "短袍、背带和侧包构成日常行动系统。"}
+  },
+  "retention_analysis": {
+    "preserve": "身份轮廓、服装大块面、鼠耳透明材质与低能量姿态。",
+    "allow_change": "视线方向、鼠耳朝向、手指松开程度、重心与一步以内的位移。",
+    "do_not_freeze_from_experiment": "本轮声音来源、湖岸关系和动作结果均为实验变量，不回写正式性格或能力设定。"
+  },
+  "changed_variable": "一个来自湖岸侧后方的极轻水声，使角色从封闭静止转为先与环境建立安全关系，再做一次谨慎的小步主动接近。",
+  "dynamic_chain": {
+    "chain": "N → NZ → Z",
+    "start": "N：角色低头静立，身体与双手收束，维持安静存在。",
+    "relation": "NZ：风、水面微波与岸边安全落点逐步构成可接近的关系；她先确认环境不会伤害自己。",
+    "turn": "Z：半透明鼠耳先转向声源，身体迟一拍抬头，再侧向迈出一步。",
+    "observable_proof": "必须清楚看见先耳后身、先确认后移动；动作小但时序明确。"
+  },
+  "shot_grammar": {
+    "clip_A_15s": [
+      "0-5s 中远景固定：利用单色湖岸留白建立小体型角色，双手在身前收束，鼠耳与短袍轮廓清楚。",
+      "5-10s 中景缓慢推近：侧后方出现一次很轻的水声与细波，角色身体仍不动，只有一侧半透明鼠耳先转向。",
+      "10-15s 中近景：另一侧鼠耳轻微跟随，眼睛与下巴迟一拍抬起；侧包和斜挎带保持连续，不移动脚。"
+    ],
+    "clip_B_15s": [
+      "0-5s 45度中景承接：她先看湖面再看脚边安全落点，手指从紧握变为稍松，仍保持谨慎。",
+      "5-10s 低机位中远景轻跟：她向声源侧前方迈出唯一一步，宽袍与侧包产生克制的滞后摆动，鼠耳保持先导方向。",
+      "10-15s 中景静止收束：脚落稳后不再前进，身体重新收束但视线保持主动；湖面细波与她形成安静的新关系。"
+    ]
+  },
+  "asset_status": {
+    "character_ref_status": "pending_image_validation",
+    "scene_ref_status": "github_direct_read",
+    "render_status": "not_allowed_until_identity_gate_passes",
+    "cloud_feedback_required": [
+      "original_image_bound",
+      "same_character_across_full_body_45deg_and_closeup",
+      "mouse_ear_mutation_continuity",
+      "hair_face_robe_strap_satchel_continuity",
+      "identity_validation_passed_or_failed"
+    ]
+  }
+}
