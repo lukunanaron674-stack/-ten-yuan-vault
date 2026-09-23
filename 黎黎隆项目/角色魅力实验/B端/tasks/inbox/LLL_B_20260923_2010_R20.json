@@ -1,0 +1,307 @@
+{
+  "schema_version": "video_tenyuan_prompt_schema_v1.2",
+  "task_id": "LLL_B_20260923_2010_R20",
+  "round": "R20",
+  "task_version": "v1.0",
+  "parent_task_id": "MOUSE_B_20260923_1911_R19",
+  "status": "queued_for_workbuddy_validation",
+  "video_mode": "single_character_narrative",
+  "cast": {
+    "character_id": "LLL-MAIN-001",
+    "character_name": "黎黎隆",
+    "on_screen_character_count_max": 1,
+    "other_characters_allowed": false,
+    "duplicate_instance_allowed": false
+  },
+  "subject_definitions": {
+    "character": "唯一出镜主体为 LLL-MAIN-001 黎黎隆；角色卡中的全身、半身和动作视图均属于同一人，不按多格视图生成多人。",
+    "environment": "SCENE-06 机械空港双色主导只提供空间、地面方向、技术设施关系和双色光线，不覆盖角色设计。",
+    "picture_1": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg；reference_view=both；GitHub可直接读取；锁身份、脸型、比例、机械爪足、长机械龙尾与现有模块。",
+    "picture_2": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-06_机械空港_双色主导.png；GitHub blob SHA 7f600f79069d4f5a839dd44f2160182b0066cb3e；只作环境参考。"
+  },
+  "reference_view": {
+    "type": "both",
+    "character_reference": {
+      "file": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+      "github_image_sha256": "5df6a463e5ee9fe7c4fc641c86cda9ebc1647867e78afd0d5430de7de02f0143",
+      "role": "同一卡中的半身/动作视图锁脸、表情和上身反应；全身视图锁比例、爪足、龙尾和一步空间关系。",
+      "github_image_upload": true
+    },
+    "scene_asset_id": "SCENE-06",
+    "scene_source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-06_机械空港_双色主导.png",
+    "scene_blob_sha": "7f600f79069d4f5a839dd44f2160182b0066cb3e",
+    "binding_rule": "Work绑定Picture 1角色卡与Picture 2场景图；多视图只表示同一角色，不得生成多个人物。"
+  },
+  "retention_analysis": {
+    "must_keep": [
+      "同一脸型与红色长发",
+      "红白黑机械装甲与青蓝功能信号",
+      "机械龙爪脚",
+      "分节长机械龙尾的连接与上中下节奏",
+      "现有头部卡扣与机械模块",
+      "同一角色比例和剪影"
+    ],
+    "motion_priority": [
+      "先视线变化",
+      "前侧爪足急停",
+      "龙尾一次反向小摆恢复平衡",
+      "B段只做一个侧向小步并停稳"
+    ],
+    "must_not_redefine": [
+      "不新增翅膀、武器、服装或机械结构",
+      "不把场景设施接入身体",
+      "不改变角色配色和比例",
+      "不因动作实验冻结新的正式能力"
+    ]
+  },
+  "changed_variable": "黎黎隆原本准备沿前方路线行动，受到一次地面光带变化后停步，再以龙尾平衡和一个侧向小步改变落点；身份、场景、机位和光线结构不变。",
+  "dynamic_chain": {
+    "internal_only": true,
+    "base": "ZX主 / Z中 / XN小",
+    "chain": "ZX → XN克ZX → Z → ZX",
+    "observable_mapping": "主动准备前进→现有路线的光带边界迫使停步→用龙尾和爪足做一次机灵改向→在新落点恢复主动稳定",
+    "evidence_status": "沿用已登记十元判断，只用于动作选择，不把本轮动作回写为正式角色设定。"
+  },
+  "skills_pipeline": {
+    "version": "H3动画四技能执行链_v1.0",
+    "steps": [
+      "02_I2V_motion",
+      "03_four_component_scene",
+      "04_clarity_conflict_audio",
+      "05_negative_sampling"
+    ],
+    "skill_02": {
+      "motion_plan": "站定准备→光带短亮→视线转移与爪足停步→龙尾反摆；续段龙尾先动→侧向小步→重心落稳。",
+      "motion_visibility_check": "全部变化来自角色现有眼睛、机械爪足、龙尾及场景的双色光带/地面方向；无新增人物或道具。",
+      "view_limit_applied": "both视图允许脸部反应与一个全身小步；不做跳跃、翻滚或高速跑动。"
+    },
+    "skill_03": {
+      "composition_plan": "同一SCENE-06、同一固定全身三分之四中远景；A段建立路线受限与平衡反应，B段完成一次侧向改落点。",
+      "cross_clip_continuity": "B段只从Work实际选中的A段尾帧续接；当前selected_A_run=null。"
+    },
+    "skill_04": {
+      "one_sentence_readability": "黎黎隆看到地面光带短亮后停住前侧爪足，用龙尾平衡并侧移一步到新的稳定落点。",
+      "contradiction_report": {
+        "found": [
+          "角色卡包含多个动作视图，存在被误解为多个黎黎隆的风险。",
+          "ZX动作倾向容易被写成大幅冲刺，与固定镜头和身份稳定冲突。"
+        ],
+        "resolved": [
+          "明确所有视图属于同一人并限制单实例。",
+          "将动作缩为急停、尾摆和一个侧向小步。"
+        ],
+        "remaining": []
+      }
+    },
+    "skill_05": {
+      "negative_scope": "防止角色卡多视图生成多人、分身、额外机械肢体、角色改色、场景替换和无根据的新装置。",
+      "double_draw_plan": "每段同一prompt、同两张参考及同参数独立抽两次；seed实跑前为null。"
+    }
+  },
+  "clips": [
+    {
+      "clip_id": "A_15s",
+      "duration_seconds": 15,
+      "start_state": "黎黎隆站在机械空港双色地面区域，准备前进。",
+      "changed_variable": "行动方向从准备直行变为在地面光带边界前停住。",
+      "end_state": "前侧爪足停止，龙尾反向小摆后重心稳定。",
+      "time_beats": [
+        {
+          "time": "0–4秒",
+          "event": "角色静止站定，保持准备姿势。"
+        },
+        {
+          "time": "4–8秒",
+          "event": "地面青蓝一侧现有光带只短促亮一次。"
+        },
+        {
+          "time": "8–12秒",
+          "event": "视线先转向光带，前侧机械爪足在明暗边界前停住。"
+        },
+        {
+          "time": "12–15秒",
+          "event": "长机械龙尾向相反侧小幅摆动一次，身体恢复稳定。"
+        }
+      ],
+      "shot_grammar": "固定全身三分之四中远景；固定双色光线；无推摇、无转场。",
+      "h3_prompt": "Picture 1 只代表同一个黎黎隆，Picture 2 只提供机械空港双色环境；全片只出现黎黎隆这一个角色实体。固定全身三分之四中远景，固定机位、固定双色光线，不推镜、不摇镜、不转场。0–4秒，黎黎隆站在场景参考图已有地面区域，红色长发、机械龙爪脚和分节长机械龙尾保持安静。4–8秒，地面青蓝一侧的现有光带只短促亮一次，作为唯一外部刺激。8–12秒，她先把视线移向光带，准备迈出的前侧机械爪足随即在明暗边界前停住，身体不前冲。12–15秒，长机械龙尾向身体相反侧小幅摆动一次，重心恢复稳定并停住。保持同一脸型、红发、红白黑机械装甲、青蓝功能信号、机械龙爪脚、长机械龙尾及现有模块；不得出现第二个人、分身、镜像完整人物、四宫格多人、额外肢体、翅膀、武器或新增场景装置。",
+      "prompt_hash": null,
+      "audio_design": {
+        "ambient_soundscape": "低而稳定的空港机械嗡鸣；光带短亮时一次轻微电流提示声；爪足停住时一次克制金属触地声；龙尾关节极轻机械声。",
+        "emotional_sound_cue": "爪足停住时一个短促低频收紧音，龙尾恢复平衡后迅速衰减；无歌词、无强拍、无MV卡点。",
+        "onset_event": "地面青蓝光带短促亮一次。",
+        "audio_output_status": "post_sound_design_if_h3_node_has_no_audio"
+      }
+    },
+    {
+      "clip_id": "B_15s",
+      "duration_seconds": 15,
+      "continuity_dependency": "从Work选中的A段尾帧续接；selected_A_run=null。",
+      "start_state": "前侧爪足停在明暗边界前，龙尾已帮助重心稳定。",
+      "changed_variable": "落点由原直行方向变为侧向可见地面上的一个新位置。",
+      "end_state": "侧向小步完成，龙尾回稳，视线重新朝前。",
+      "time_beats": [
+        {
+          "time": "0–4秒",
+          "event": "保持A段尾姿与视线方向。"
+        },
+        {
+          "time": "4–8秒",
+          "event": "龙尾末段先向侧方轻摆，躯干只轻微跟随。"
+        },
+        {
+          "time": "8–12秒",
+          "event": "一只前侧机械爪足向现有侧向地面迈出一个小步。"
+        },
+        {
+          "time": "12–15秒",
+          "event": "重心移到新落点，龙尾回摆并停住。"
+        }
+      ],
+      "shot_grammar": "沿用A段机位、方向、景别和光线；无转场。",
+      "h3_prompt": "续接上一段由 Work 实际选中的黎黎隆尾帧，仍在同一机械空港双色地面区域；全片只出现同一个黎黎隆。沿用固定全身三分之四中远景、相同机位、相同光线和相同人物比例，不推镜、不摇镜、不转场。0–4秒，她保持上一段停住的姿势，视线仍落在青蓝光带与地面明暗边界。4–8秒，长机械龙尾的末段先朝侧方轻摆，为改向留出空间，躯干只轻微跟随。8–12秒，她只用一只前侧机械龙爪脚向场景参考图已有的侧向可见地面迈出一个小步，另一只脚留在原位，不奔跑、不跳跃。12–15秒，她把重心移到新落点，龙尾回摆至稳定位置后停住，视线重新看向前方。保持同一脸型、红发、红白黑机械装甲、青蓝功能信号、机械龙爪脚、分节长机械龙尾和全部既有连接；不得出现第二个人、分身、镜像完整人物、分屏、额外肢体、服装改色、新道具或场景替换。",
+      "prompt_hash": null,
+      "audio_design": {
+        "ambient_soundscape": "延续低空港机械嗡鸣；龙尾先动时轻微关节滑动声；机械爪足侧步落地一次清楚但不重的金属触地声。",
+        "emotional_sound_cue": "侧步落地时一个轻快而克制的短音，稳定停住后自然消失；无歌词、无节拍剪辑。",
+        "onset_event": "前侧机械爪足完成侧向落地。",
+        "audio_output_status": "post_sound_design_if_h3_node_has_no_audio"
+      }
+    }
+  ],
+  "shot_grammar": {
+    "camera": "两段固定全身三分之四中远景；零主运镜。",
+    "lighting": "沿用SCENE-06双色层级；除一次光带短亮外不换天气、不突然换色。",
+    "continuity": "同一场景区域、同一角色实体、同一比例、同一尾巴连接；B段依赖Work实际选定A段。",
+    "narrative_responsibility": "A段呈现外部限制和身体反应，B段用一个小步完成主动改道。"
+  },
+  "audio_design": {
+    "audio_role": "supports event and emotional change; not music-video editing",
+    "h3_audio_capability": "unverified_by_b_end",
+    "fallback": "若H3节点不支持音轨，作为后期音效清单；不得声称已有音轨。"
+  },
+  "sampling_plan": {
+    "per_prompt_run_count": 2,
+    "clips": [
+      {
+        "clip_id": "A_15s",
+        "prompt_hash": null,
+        "runs": [
+          {
+            "run_id": "run_A",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation",
+            "render_result": null
+          },
+          {
+            "run_id": "run_B",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation",
+            "render_result": null
+          }
+        ]
+      },
+      {
+        "clip_id": "B_15s",
+        "prompt_hash": null,
+        "depends_on_selected_A_run": true,
+        "selected_A_run": null,
+        "runs": [
+          {
+            "run_id": "run_A",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation",
+            "render_result": null
+          },
+          {
+            "run_id": "run_B",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation",
+            "render_result": null
+          }
+        ]
+      }
+    ],
+    "prompt_identical_within_clip": true,
+    "same_character_scene_and_parameters": true,
+    "seed_policy": "Work仅在实际接口支持且生成后记录真实整数seed；否则seed=null并分别写真实work_task_id。",
+    "selection_status": "not_evaluated_by_b_end",
+    "planned_generation_count": 4,
+    "completed_generation_count": 0
+  },
+  "negative_constraints": [
+    "no second human figure",
+    "no duplicate, clone or mirrored full character",
+    "no split-screen, quadrant or character-sheet output",
+    "do not turn multiple reference views into multiple people",
+    "no extra limbs, duplicate tail or broken tail connection",
+    "no face, hair, armor or color drift",
+    "no wings, weapons or new mechanical modules",
+    "no large stride, running, jumping or acrobatics",
+    "no invented doors, interfaces, vehicles, creatures or props",
+    "no scene replacement or sudden weather/color change",
+    "no camera orbit, zoom or transition",
+    "no text, logo or watermark"
+  ],
+  "version_tracking": {
+    "rule_version": "B-RULE-v1.2",
+    "schema_version": "video_tenyuan_prompt_schema_v1.2",
+    "skills_pipeline_version": "H3动画四技能执行链_v1.0",
+    "audio_design_version": "v1.0",
+    "sampling_version": "double_draw_v1.0",
+    "parent_task_id": "MOUSE_B_20260923_1911_R19",
+    "before": {
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "scene_id": "SCENE-01",
+      "reference_view": "both",
+      "motion": "鼠耳确认→压带→小半步",
+      "structure": "two 15-second clips under v1.2"
+    },
+    "after": {
+      "character_id": "LLL-MAIN-001",
+      "scene_id": "SCENE-06",
+      "reference_view": "both",
+      "motion": "视线转移与爪足停步→龙尾平衡→侧向小步",
+      "structure": "two 15-second clips under v1.2"
+    },
+    "changed_fields": [
+      "character",
+      "scene",
+      "identity locks",
+      "dynamic_chain",
+      "motion mechanics",
+      "audio triggers"
+    ],
+    "controlled_fields": [
+      "v1.2 rules",
+      "two 15-second clips",
+      "four-skill order",
+      "one on-screen character",
+      "no duplicate instance",
+      "per-clip double draw",
+      "seed null before execution",
+      "no MV"
+    ],
+    "confounders": [
+      "角色、场景、动作机制和音效触发同时变化，未来结果不能作单变量因果结论。",
+      "B段连续性依赖Work实际选择A段run，B端尚无选择结果。",
+      "主分支最新新增的是CH-003探索场景的4090D路径映射，不属于13图池且不用于本轮；未把候选素材混入确认场景。"
+    ]
+  },
+  "upstream_evidence": {
+    "newest_commit_checked": "35883b55641b27877143382a7665e6406abdc7d8",
+    "classification": "candidate_external_to_13_scene_pool",
+    "consumed_in_prompt": false,
+    "reason": "更新仅涉及CH-003探索屋顶场景，当前任务硬约束要求从GITHUB_13_SCENE_POOL_V1选择场景。"
+  },
+  "asset_status": {
+    "character_reference_status": "github_direct_read_pending_work_identity_check",
+    "scene_reference_status": "github_direct_read",
+    "render_status": "not_rendered_by_b_end",
+    "audio_track_status": "not_generated_or_unverified"
+  }
+}
