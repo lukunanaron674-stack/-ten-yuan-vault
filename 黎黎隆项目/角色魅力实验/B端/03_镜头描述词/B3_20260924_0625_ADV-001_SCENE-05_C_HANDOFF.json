@@ -1,0 +1,76 @@
+{
+  "handoff_id": "B3_20260924_0625_ADV-001_SCENE-05_C_HANDOFF",
+  "status": "text_ready_image_binding_pending",
+  "format": "9:16",
+  "duration_seconds_each": 15,
+  "upstream": {
+    "b1": {
+      "path": "黎黎隆项目/角色魅力实验/B端/logs/B1_素材索引_20260924_0505.md",
+      "blob_sha": "79eba05dbe281e6d3436a3afb405662504c53c20",
+      "character_pool": "v1.5@59810586b7b8ada9c9a263975a4769b3c4f8ca7a",
+      "scene_pool": "v1@26384b61a8ef8314cf8b5cee81934beed846c021"
+    },
+    "b2": {
+      "path": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260924_0615_ADV-001_SCENE-05.md",
+      "blob_sha": "ef5c0e13884c061d53dea98a0959f4c6226297e8"
+    },
+    "b3_prompt_doc": "黎黎隆项目/角色魅力实验/B端/03_镜头描述词/B3_20260924_0625_ADV-001_SCENE-05.md"
+  },
+  "picture_1": {
+    "character_id": "ADV-001",
+    "validation_status": "pending_image_validation",
+    "h3_render_eligible": false,
+    "instruction": "Bind and visually verify the real ADV-001 source image before any render. Do not substitute LLL-MAIN-001 or any previous template character."
+  },
+  "picture_2": {
+    "scene_id": "SCENE-05",
+    "path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
+    "declared_blob_sha": "eb34acce753735d96565bc0108d502dfdc775088",
+    "needs_environment_inference": true,
+    "instruction": "Visually verify that the real image supports a restricted passage/door cycle and the requested framing. If not, reduce camera movement or revise the action instead of inventing architecture."
+  },
+  "event": "The fully loaded adventurer has a chance to squeeze through the first closing cycle, deliberately steps back, gathers only existing loose straps/gear closer to his body, then passes intact on the next opening cycle.",
+  "dynamic_chain_analysis_only": {
+    "baseline": "XN8/X8/N7/NX6/NZ5/X并Z5",
+    "chain": ["环境XN8 克 角色Z3→1", "角色X8 补 N7→8", "角色Z1→6 补 X8", "XN8与X8终点稳定互补"],
+    "must_not_enter_h3_prompt": true
+  },
+  "prompt_variants": [
+    {
+      "id": "A_choice_readability",
+      "focus": "first-cycle temptation, visible stop and one-step retreat, then compacting existing load",
+      "sampling": [
+        {"run": "run_A", "seed": null, "task_id": null, "status": "pending_image_validation"},
+        {"run": "run_B", "seed": null, "task_id": null, "status": "pending_image_validation"}
+      ],
+      "audio": {
+        "ambient_soundscape": "quiet mechanical-airport room tone, restrained ventilation, existing doorway mechanism, heavy footsteps, cloth and strap friction, backpack weight shifting",
+        "emotional_sound_cue": "sparse low sustained tone, near-silence on the backward step, subtle release on the second opening, no strong beat",
+        "audio_role": "Audio supports physical action, timing, weight and the decision; it does not drive pure music-video editing."
+      }
+    },
+    {
+      "id": "B_weight_continuity",
+      "focus": "heavy silhouette and load pressure remain continuous before and after the controlled retreat",
+      "sampling": [
+        {"run": "run_A", "seed": null, "task_id": null, "status": "pending_image_validation"},
+        {"run": "run_B", "seed": null, "task_id": null, "status": "pending_image_validation"}
+      ],
+      "audio": {
+        "ambient_soundscape": "low mechanical ambience, restrained ventilation, passage movement, measured heavy footfalls, cloth drag, strap tension and backpack settling",
+        "emotional_sound_cue": "minimal suspended low texture, near-silence during stop-and-retreat, restrained resolution after the second passage cycle",
+        "audio_role": "Audio reinforces weight, pauses, mechanical timing and emotional restraint; it supports the event rather than functioning as a pure MV beat/edit track."
+      }
+    }
+  ],
+  "preflight": [
+    "verify ADV-001 real Picture 1 bytes and identity",
+    "verify SCENE-05 real Picture 2 and supported passage geometry",
+    "ensure single character instance",
+    "ensure 9:16 preserves full load and passage relationship",
+    "inspect final H3 prompt for zero Ten-Yuan terms",
+    "inspect every LoadImage node and reject stale template images",
+    "record real seed/task_id/output only after actual run"
+  ],
+  "render_permission": "blocked_until_image_validation"
+}
