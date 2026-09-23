@@ -1,0 +1,23 @@
+{
+  "schema_version": "lililong-b3-c-handoff/v1.0",
+  "b3_task": "B3_20260923_2225_MOUSE-EAR-MUTANT-001_SCENE-08",
+  "source_b1": "logs/B1_素材索引_20260923_2206.md",
+  "source_b2": "02_十元动态链研究/B2_20260923_2215_MOUSE-EAR-MUTANT-001_SCENE-08.md",
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "scene_id": "SCENE-08",
+  "video_mode": "single_character_narrative",
+  "aspect_ratio": "9:16",
+  "picture_bindings": [
+    {"picture": 1, "file": "MOUSE-EAR-MUTANT-001_H3半身动态四宫格_v2.0.png", "role": "half_body_dynamic", "github_image_upload": false, "status": "pending_work_binding"},
+    {"picture": 2, "file": "030F6E3B89E0998CBF695064BC27C2A8.jpeg", "role": "full_body_identity", "github_image_upload": false, "status": "pending_work_binding"},
+    {"picture": 3, "file": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png", "role": "environment_reference_only", "github_blob_sha": "3f0a6664e66899a228a8513bfc70688c0a866908", "status": "available_by_github_path"}
+  ],
+  "clips": [
+    {"clip_id": "A_15s", "prompt_source": "B3_20260923_2225_MOUSE-EAR-MUTANT-001_SCENE-08.md#A_15s", "runs": [{"run_id": "run_A", "seed": null, "status": "queued_for_workbuddy_validation", "actual_task_id": null}, {"run_id": "run_B", "seed": null, "status": "queued_for_workbuddy_validation", "actual_task_id": null}]},
+    {"clip_id": "B_15s", "prompt_source": "B3_20260923_2225_MOUSE-EAR-MUTANT-001_SCENE-08.md#B_15s", "continuity_dependency": "selected_A_run", "selected_A_run": null, "runs": [{"run_id": "run_A", "seed": null, "status": "blocked_until_A_selection", "actual_task_id": null}, {"run_id": "run_B", "seed": null, "status": "blocked_until_A_selection", "actual_task_id": null}]}
+  ],
+  "audio_fields": ["ambient_soundscape", "emotional_sound_cue", "audio_role", "onset_event"],
+  "seed_policy": "Record explicit seeds only if the actual Work/H3 interface supports them; otherwise keep seed null and distinguish independent runs by real task IDs.",
+  "gates": {"identity_validation": "pending_image_validation", "render_allowed": false, "reason": "both character originals must be bound and identity-validated by Work before render"},
+  "b_end_render_claim": "none"
+}
