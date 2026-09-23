@@ -1,0 +1,423 @@
+{
+  "schema_version": "video_tenyuan_prompt_schema_v1.2",
+  "task_id": "ADV_B_20260924_0010_R24",
+  "task_version": "v1.0",
+  "round": "R24",
+  "parent_task_id": "LLL_B_20260923_2306_R23",
+  "created_at": "2026-09-24T00:10:32+08:00",
+  "status": "queued_for_workbuddy_validation",
+  "video_mode": "single_character_narrative",
+  "render_spec": {
+    "target_aspect_ratio": "9:16",
+    "target_resolution": null,
+    "actual_resolution": null,
+    "planned_clip_count": 2,
+    "planned_duration_seconds_each": 15
+  },
+  "cast": {
+    "character_id": "ADV-001",
+    "display_name": "冒险者",
+    "on_screen_character_count_max": 1,
+    "other_characters_allowed": false,
+    "duplicate_instance_allowed": false
+  },
+  "source_assets": {
+    "character": {
+      "picture": "Picture 1",
+      "source_file": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
+      "sha256": "dd81d92d9f565831c8e924aa2ff36b3fd3cf85b526376971b51ec4f1dd43d1c4",
+      "github_image_upload": false,
+      "reference_view": "full_body_identity",
+      "identity_status": "pending_image_validation"
+    },
+    "scene": {
+      "picture": "Picture 2",
+      "scene_asset_id": "SCENE-10",
+      "path": "黎黎隆项目/04_场景/五色视觉系统/R2_主导色/assets/R2-01_机械空港_深墨青主导.png",
+      "github_blob_sha": "c21d2465577eb2c00b0c66dee749d9e49723ce67",
+      "role": "environment_reference_only"
+    }
+  },
+  "subject_definitions": {
+    "single_subject": "ADV-001 only; exactly one on-screen physical instance",
+    "identity_lock": [
+      "broad adult male body and grounded weight",
+      "dark beard, short dark hair, tired broad face",
+      "dark teal-black layered cloak",
+      "red scarf and crossing straps",
+      "white metal shoulder/chest bracket",
+      "backpack and rolled equipment",
+      "one cyan-lit hanging lantern",
+      "heavy gloves and boots"
+    ],
+    "scene_lock": "Picture 2 locks the deep ink-green mechanical airfield identity, technical environment, color relationships and atmosphere; text may choose a low-angle medium-full framing without replacing the location.",
+    "style_anchor": "V35 user-provided original prompt: restrained 2D hand-drawn, variable-weight ink lines, watercolor-thin shading, soft white inner glow, cool muted shadows, quiet diffuse light, clean shapes, limited palette and generous negative space."
+  },
+  "retention_analysis": {
+    "must_keep": [
+      "face and age",
+      "broad body mass",
+      "cloak silhouette",
+      "red scarf",
+      "strap and buckle layout",
+      "metal bracket",
+      "backpack and rolled equipment",
+      "cyan lantern attachment and light",
+      "heavy boots"
+    ],
+    "may_change": [
+      "eye direction",
+      "lantern sway",
+      "one hand reaching then tightening buckle",
+      "lantern height and direction",
+      "one small bracing step"
+    ],
+    "view_limit": "full_body_identity only; restrict to low-amplitude, silhouette-readable actions and do not invent dynamic close-up evidence.",
+    "evidence_limit": "SCENE-10 index confirms a deep ink-green mechanical environment and technical weight; no unverified gate, narrow corridor, trapped person or specific facility mechanism is used."
+  },
+  "changed_variable": {
+    "name": "burden_response",
+    "before": "hand reaches the release buckle as if to remove the load",
+    "after": "buckle is tightened, the same lantern is redirected forward and the burden remains visible",
+    "held_constant": [
+      "single character",
+      "ADV-001 identity",
+      "SCENE-10",
+      "fixed low-angle medium-full shot",
+      "lighting",
+      "weather",
+      "two 15-second clips"
+    ]
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "chain": "XN → X → NX → NZ",
+    "stages": [
+      {
+        "stage": "start",
+        "primary": "XN",
+        "secondary": "N",
+        "direction": "accumulated travel→present body",
+        "relation": "XN维持",
+        "volume_before": {
+          "XN": 8,
+          "X": 7,
+          "NX": 5,
+          "NZ": 4
+        },
+        "volume_after": {
+          "XN": 8,
+          "X": 7,
+          "NX": 5,
+          "NZ": 4
+        },
+        "visible_evidence": "heavy stance, old layered equipment, lantern hanging low"
+      },
+      {
+        "stage": "structure",
+        "primary": "X",
+        "secondary": "XN",
+        "direction": "travel accumulation→equipment system",
+        "relation": "XN生X",
+        "volume_before": {
+          "XN": 8,
+          "X": 7
+        },
+        "volume_after": {
+          "XN": 8,
+          "X": 8
+        },
+        "visible_evidence": "straps, buckle, bracket and backpack remain connected and readable"
+      },
+      {
+        "stage": "cost",
+        "primary": "NX",
+        "secondary": "X",
+        "direction": "equipment system→body burden",
+        "relation": "X使NX显形（实验建模）",
+        "volume_before": {
+          "X": 8,
+          "NX": 5
+        },
+        "volume_after": {
+          "X": 8,
+          "NX": 7
+        },
+        "visible_evidence": "floor vibration makes the load and lantern sway; hand reaches release buckle"
+      },
+      {
+        "stage": "result",
+        "primary": "NZ",
+        "secondary": "NX",
+        "direction": "retained burden→environmental guidance",
+        "relation": "NX转补NZ",
+        "volume_before": {
+          "NX": 7,
+          "NZ": 4
+        },
+        "volume_after": {
+          "NX": 6,
+          "NZ": 7
+        },
+        "visible_evidence": "buckle tightened, lantern raised forward, one bracing step, shoulders still loaded"
+      }
+    ],
+    "prompt_policy": "Ten-Yuan labels remain internal and do not appear in final H3 prompts."
+  },
+  "skills_pipeline": {
+    "version": "H3动画四技能执行链_v1.0",
+    "steps": [
+      {
+        "id": "02_I2V_motion",
+        "output": "heavy stillness → one floor vibration → lantern sway → eyes turn → hand reaches buckle → buckle tightens → lantern raises → one bracing step → stop",
+        "view_limit": "full_body_identity; low action only"
+      },
+      {
+        "id": "03_four_component_scene",
+        "output": "single adventurer + SCENE-10 + low-amplitude action + V35-derived clear 2D hand-drawn style; fixed low-angle medium-full framing"
+      },
+      {
+        "id": "04_clarity_conflict_audio",
+        "output": "one stimulus and one burden-response variable; scene lock separated from camera wording",
+        "conflicts_resolved": [
+          "removed B2 unverified automatic gate",
+          "removed implied second person",
+          "kept location identity while allowing text-designed shot scale"
+        ]
+      },
+      {
+        "id": "05_negative_sampling",
+        "output": "relevant negative constraints and identical-prompt double draws; B blocked until selected A ending frame"
+      }
+    ]
+  },
+  "clips": [
+    {
+      "clip_id": "A_15s",
+      "narrative_role": "stimulus_and_choice_setup",
+      "start_frame": "one adult adventurer stands still with full equipment and lantern hanging low",
+      "time_beats": [
+        {
+          "time": "0–4s",
+          "action": "hold the heavy stance; straps and equipment settle"
+        },
+        {
+          "time": "4–8s",
+          "action": "one faint floor vibration passes and the attached lantern sways once"
+        },
+        {
+          "time": "8–12s",
+          "action": "eyes turn toward the vibration direction"
+        },
+        {
+          "time": "12–15s",
+          "action": "one hand reaches the backpack release buckle and stops without opening it"
+        }
+      ],
+      "single_changed_variable": "intention shifts from carrying the load to considering release",
+      "h3_prompt": "2D hand-drawn cinematic character sequence, 15 seconds. STYLE: restrained 2D hand-drawn animation with visible variable-weight ink lines, watercolor-thin shading, soft white inner glow on highlights, cool muted shadows, quiet diffuse light, clean readable shapes, a limited palette and generous negative space; no hard-edge digital rendering and no glossy 3D look. CHARACTER (Picture 1): keep the exact identity of the single broad adult adventurer shown in Picture 1, including his dark beard, tired broad face, heavy body mass, layered dark teal-black cloak, red scarf, crossing straps, white metal shoulder bracket, backpack, rolled equipment, heavy gloves, heavy boots and one cyan-lit hanging lantern. ENVIRONMENT (Picture 2): keep the deep ink-green mechanical airfield identity, technical structures, established color relationships and atmosphere from Picture 2; Picture 2 defines the location, not a fixed camera angle. CAMERA AND ACTION: fixed low-angle medium-full shot with the whole weighted silhouette readable and generous negative space. He stands still under the load. One faint vibration passes through the existing floor and his hanging lantern sways once. His eyes turn toward the vibration, then one hand slowly reaches the backpack release buckle and stops without opening it. End on the unresolved choice. Exactly one character; fixed camera, framing, lighting and weather.",
+      "audio_design": {
+        "ambient_soundscape": "low mechanical airfield hum, one faint floor vibration, soft strap creak and a single lantern-chain sway",
+        "emotional_sound_cue": "one restrained low metallic pulse at the vibration, followed by a short unresolved non-lyrical tone as the hand stops at the buckle",
+        "audio_role": "supports the stimulus and unresolved choice; not music-video editing",
+        "onset_event": "floor vibration at 4–8s",
+        "fallback_if_no_audio_track": "post-production sound design only"
+      }
+    },
+    {
+      "clip_id": "B_15s",
+      "narrative_role": "choice_and_guidance_result",
+      "start_frame": "selected A ending frame with the same hand resting on the release buckle",
+      "time_beats": [
+        {
+          "time": "0–4s",
+          "action": "hold the hand on the buckle and keep the load visible"
+        },
+        {
+          "time": "4–8s",
+          "action": "close and tighten the buckle instead of releasing it"
+        },
+        {
+          "time": "8–12s",
+          "action": "raise the same cyan lantern a short distance forward"
+        },
+        {
+          "time": "12–15s",
+          "action": "complete one small bracing step and stop while shoulders remain loaded"
+        }
+      ],
+      "single_changed_variable": "possible load removal becomes retained burden used to mark a direction",
+      "h3_prompt": "2D hand-drawn cinematic character sequence, 15 seconds. Continue from the Work-selected ending frame of clip A with the same single adventurer and the same deep ink-green mechanical airfield. Preserve the restrained hand-drawn style, variable-weight ink lines, watercolor-thin shading, soft white highlights, cool muted shadows, quiet diffuse light, clean shapes, limited palette and generous negative space. Use the same fixed low-angle medium-full framing. His hand holds the backpack release buckle for a brief moment, then closes and tightens it instead of removing the load. He raises the same cyan-lit lantern a short distance forward, allowing its light to mark the open direction within the existing environment, then completes one small bracing step and stops. The backpack and equipment remain heavy and visible; his shoulders still carry the cost. Keep his exact face, beard, body mass, cloak, scarf, straps, metal bracket, backpack, rolled equipment, gloves, boots and lantern. Exactly one character; no camera move, cut, weather change or environment replacement.",
+      "audio_design": {
+        "ambient_soundscape": "continuous low mechanical hum, one buckle click, cloth and strap tension, quiet boot contact",
+        "emotional_sound_cue": "a muted warm tone begins when the buckle closes and resolves softly when the lantern settles forward; no lyrics and no beat-led cutting",
+        "audio_role": "supports the decision and visible cost; not music-video editing",
+        "onset_event": "buckle closes at 4–8s",
+        "fallback_if_no_audio_track": "post-production sound design only"
+      }
+    }
+  ],
+  "shot_grammar": {
+    "camera": "fixed",
+    "shot_scale": "low-angle medium-full shot",
+    "composition": "whole weighted silhouette readable with generous negative space; lantern light remains a small functional accent",
+    "movement": "none",
+    "lighting": "quiet diffuse light with cool muted shadows and soft white highlight glow",
+    "weather": "unchanged",
+    "environment_policy": "Picture 2 locks location identity but not a single mandatory camera angle",
+    "transition": "B starts only from Work-selected A ending frame"
+  },
+  "audio_design": {
+    "mode": "per_clip",
+    "audio_track_capability": "unverified",
+    "policy": "sound supports action and emotion; never MV editing"
+  },
+  "sampling_plan": {
+    "per_prompt_run_count": 2,
+    "total_planned_runs": 4,
+    "total_completed_runs": 0,
+    "prompt_identical_within_clip": true,
+    "same_character_scene_and_parameters": true,
+    "clips": [
+      {
+        "clip_id": "A_15s",
+        "runs": [
+          {
+            "run_id": "run_A",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation"
+          },
+          {
+            "run_id": "run_B",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation"
+          }
+        ]
+      },
+      {
+        "clip_id": "B_15s",
+        "dependency": "Work selects one actual A ending frame before B execution",
+        "runs": [
+          {
+            "run_id": "run_A",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation"
+          },
+          {
+            "run_id": "run_B",
+            "seed": null,
+            "work_task_id": null,
+            "status": "queued_for_workbuddy_validation"
+          }
+        ]
+      }
+    ],
+    "seed_policy": "Record a real integer only if the actual Work interface supports and returns it; otherwise keep seed=null and record separate real task IDs.",
+    "compare_axes": [
+      "identity stability",
+      "single-instance compliance",
+      "low-action readability",
+      "buckle-choice readability",
+      "lantern continuity",
+      "burden remains visible",
+      "style clarity",
+      "camera stability"
+    ],
+    "selection_status": "not_evaluated_by_b_end"
+  },
+  "negative_constraints": [
+    "no second person or implied visible recipient",
+    "no duplicate, clone, mirrored full character or complete reflection",
+    "no split screen, quadrant or character-sheet output",
+    "no extra limbs, horns, tail, wings or unrelated weapon",
+    "no removal of backpack, straps or lantern",
+    "no young slim redesign",
+    "no invented automatic gate, narrow corridor or facility mechanism",
+    "no camera move, cut, location replacement, weather change or sudden recoloring",
+    "no glossy 3D render, hard digital edges, text, subtitle, logo or watermark"
+  ],
+  "validation_target": {
+    "identity": "Work binds and validates the original ADV-001 JPEG before execution",
+    "scene": "Work binds SCENE-10 as environment only",
+    "instance": "exactly one ADV-001 across both clips",
+    "continuity": "B starts from the actual selected A ending frame",
+    "style": "compare V35-derived visual clarity without copying mouse-ear character identity",
+    "rendering": "Work decides whether to render; B-end makes no render or audio completion claim"
+  },
+  "version_tracking": {
+    "rule_version": "B-RULE-v1.2",
+    "prompt_schema_version": "video_tenyuan_prompt_schema_v1.2",
+    "skills_pipeline_version": "H3动画四技能执行链_v1.0",
+    "audio_design_version": "v1.0",
+    "sampling_version": "double_draw_v1.0",
+    "before": {
+      "task_id": "LLL_B_20260923_2306_R23",
+      "character_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-04",
+      "changed_variable": "left feint becomes right step"
+    },
+    "after": {
+      "task_id": "ADV_B_20260924_0010_R24",
+      "character_id": "ADV-001",
+      "scene_asset_id": "SCENE-10",
+      "changed_variable": "possible load removal becomes retained burden and forward lantern guidance"
+    },
+    "changed_fields": [
+      "character",
+      "scene",
+      "reference view",
+      "style wording",
+      "shot scale",
+      "visible stimulus",
+      "motion chain",
+      "audio cues"
+    ],
+    "held_fields": [
+      "single-character mode",
+      "fixed camera",
+      "9:16 target",
+      "two 15s clips",
+      "two identical-prompt draws per clip",
+      "no MV"
+    ],
+    "confounders": [
+      "character changed",
+      "scene family changed",
+      "view type changed",
+      "V35 style language introduced",
+      "shot scale changed"
+    ],
+    "result_claim": "text_task_only; no visual-quality conclusion until Work outputs exist"
+  },
+  "upstream_evidence": [
+    {
+      "source": "B2_20260923_2315_ADV-001_SCENE-10.md",
+      "commit": "8b45afa1d359372d15e95c81637f935db5ac27a4",
+      "use": "consumed ADV chain and burden-reassignment variable; rejected unverified gate and second-person event details"
+    },
+    {
+      "source": "V35 original prompt",
+      "user_provided_source_path": "D:\\H3\\h3_workflow\\hermes_qq_prompts\\20260923_222921_18208.md",
+      "status": "confirmed_user_provided_text",
+      "use": "style anchor and Picture 2 environment-lock principle only; mouse-ear identity was not copied"
+    },
+    {
+      "source": "user correction after V35",
+      "status": "confirmed_user_instruction",
+      "use": "Picture 2 locks scene identity while text may design shot scale, camera angle, composition and atmosphere"
+    },
+    {
+      "source": "B1_素材索引_20260923_2206.md",
+      "commit": "0c56acd7f9e75374b98dbf51703dfe51278dbde7",
+      "use": "ADV text-task eligibility and SCENE-10 formal-pool status"
+    }
+  ],
+  "asset_status": {
+    "image_validation": "pending_image_validation",
+    "render_status": "not_rendered_by_b_end",
+    "audio_status": "not_generated_by_b_end"
+  }
+}
