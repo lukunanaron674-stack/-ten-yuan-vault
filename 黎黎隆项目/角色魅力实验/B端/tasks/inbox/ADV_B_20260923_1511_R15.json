@@ -1,0 +1,91 @@
+{
+  "schema_version": "lililong-b-task/v1.2",
+  "task_id": "ADV_B_20260923_1511_R15",
+  "project": "黎黎隆项目/角色魅力实验",
+  "stage": "B",
+  "mode": "four_low_motion_identity_tests",
+  "status": "queued_for_workbuddy_validation",
+  "character_id": "ADV-001",
+  "character_name": "冒险者",
+  "rotation": {
+    "previous_character": "LLL-MAIN-001",
+    "previous_scene": "SCENE-03",
+    "character_changed": true,
+    "scene_changed": true
+  },
+  "reference_views": {
+    "view_type": "full_body_identity",
+    "source_file": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
+    "source_sha256": "dd81d92d9f565831c8e924aa2ff36b3fd3cf85b526376971b51ec4f1dd43d1c4",
+    "github_image_upload": false,
+    "identity_json": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/ADV-001_角色身份ID与十元分析.json",
+    "identity_markdown": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/ADV-001_冒险者角色身份验证与十元分析_v1.0.md",
+    "usage_limit": "只用于身份验证、身体比例、装备位置和低动作测试；没有half_body_dynamic，不作为最佳动态表现素材。"
+  },
+  "scene_ref": {
+    "scene_id": "SCENE-13",
+    "source_path": "黎黎隆项目/04_场景/五色视觉系统/R4_色彩脚本/assets/R4-04_机械空港_合_稳定结果.png",
+    "github_blob_sha": "c1ad3a5feb333383d8275159e8db04793e71a6c2",
+    "status": "available_by_github_path",
+    "role": "environment_reference_only"
+  },
+  "character_definition": "使用全身身份四宫格中的同一冒险者，仅验证低动作中的体量、披风层次、背带、背包、卷筒和腰间灯具连续性。",
+  "retention_analysis": {
+    "must_keep": ["成年宽厚体量", "短黑发和浓胡须", "疲惫眼神", "多层破损披风", "红围巾和交叉背带", "白色肩胸支架", "背包与卷筒", "腰间青蓝灯具", "厚重手套和靴子"],
+    "forbidden": ["改成纤细少年", "删除或简化负重", "改变灯具挂载位置", "新增武器、角、尾巴或翅膀", "用低动作测试重设角色性格"]
+  },
+  "changed_variable": "只改变呼吸起伏、肩部负重、手扶背带、灯具稳定和灯光方向；不做大幅转身、跑跳或复杂表情。",
+  "ten_yuan": {
+    "base": "XN8 / X8 / N7 / NX6 / NZ5",
+    "chain": "XN → X → NX → NZ",
+    "observable_mapping": "旧负重自然下沉 → 手动确认装备系统 → 身体短暂承受代价 → 灯光转向后方形成照路关系"
+  },
+  "four_dynamics": [
+    {
+      "id": "D1",
+      "name": "站定后的负重下沉",
+      "start_frame": "全身正面，刚刚站定。",
+      "change": "呼气，肩背和背包缓慢下沉，披风略迟一拍落稳。",
+      "end_frame": "双脚不动，重量稳定在身体上。",
+      "shot_grammar": "固定全身镜头；动作幅度小；完整保留装备轮廓。"
+    },
+    {
+      "id": "D2",
+      "name": "扶住胸前背带",
+      "start_frame": "全身45度，一只手自然下垂。",
+      "change": "手抬到胸前，压住轻微滑动的交叉背带。",
+      "end_frame": "扣具仍闭合，背包位置未改变。",
+      "shot_grammar": "固定全身45度；只允许手臂和背带小幅运动。"
+    },
+    {
+      "id": "D3",
+      "name": "灯具摇晃到稳定",
+      "start_frame": "全身侧面，腰间灯具轻晃。",
+      "change": "身体停稳，一只手扶住灯具挂点。",
+      "end_frame": "青蓝灯具恢复垂直并保持原位置。",
+      "shot_grammar": "中远景固定；重点看灯具、链条、腰带的连接连续性。"
+    },
+    {
+      "id": "D4",
+      "name": "前照到回照",
+      "start_frame": "全身45度，灯光照向前方。",
+      "change": "只转上身和手腕，把灯光缓慢移向画外后方通路。",
+      "end_frame": "停一拍为后方照路，双脚仍在原位。",
+      "shot_grammar": "固定全身45度；不做完整转身；灯光只改变方向。"
+    }
+  ],
+  "asset_status": {
+    "character_ref_status": "pending_image_validation",
+    "dynamic_reference_status": "missing_half_body_dynamic",
+    "scene_ref_status": "github_direct_read",
+    "render_status": "not_allowed_until_identity_gate_passes",
+    "cloud_feedback_required": [
+      "original_image_bound",
+      "same_character_across_four_low_motion_tests",
+      "body_mass_age_face_continuity",
+      "equipment_connection_continuity",
+      "lantern_mount_and_light_continuity",
+      "identity_validation_passed_or_failed"
+    ]
+  }
+}
