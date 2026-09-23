@@ -1,0 +1,43 @@
+{
+  "task_id": "CH003_B_20260923_0909_R10",
+  "character_id": "LLL-CHAR-003",
+  "character_name": "逃票魔法学徒",
+  "character_role_card": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
+  "character_asset_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/CH-003_逃票魔法学徒_H3_character_sheet_001.png",
+  "character_asset_status": "github_direct_read_authorized_h3_reference",
+  "selected_scene_refs": [{
+    "scene_id": "SCENE-06",
+    "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-06_机械空港_双色主导.png",
+    "github_blob_sha": "7f600f79069d4f5a839dd44f2160182b0066cb3e",
+    "status": "available_by_github_path",
+    "role": "environment_reference_only"
+  }],
+  "authority_boundary": "只保留作者原稿已确认的头部、帽子、上半身边界；不补全未冻结下半身，不把帽子探索能力写成定稿能力。R3场景组合预跑图不参与角色身份参考。",
+  "subject_definitions": {
+    "subject_1": "同一名逃票魔法学徒：大圆脸、小五官、黑色短发与不对称刘海、淡紫脸颊圆斑、紫色不对称大帽檐、浅色斜向帽带、细长羽毛状顶部结构；身体仅按角色参考中已确认的上半身处理。",
+    "subject_2": "同一顶活体帽，只允许帽檐、顶部羽毛做简洁的生命感动作，不新增机械结构或未确认能力。",
+    "scene": "Picture 2 的机械空港双色技术环境，仅锁定真实可见的通道、设施边缘、色彩与空间层级，不覆盖人物设计。"
+  },
+  "retention_analysis": {
+    "must_keep": ["大圆脸与小五官比例", "黑色短发和略不对称刘海", "淡紫脸颊圆斑", "紫色不对称大帽檐", "浅色斜向帽带", "细长羽毛状顶部结构", "安静但机灵的表演反差"],
+    "weak_reference": ["帽檐开合幅度", "羽毛摆动节奏", "城市设施具体互动方式"],
+    "forbidden": ["擅自补全腿部与下摆", "标准Q版法师袍", "新增武器", "新增机械肢体", "把帽子候选能力定稿化", "从R3实验图借用人物结构"]
+  },
+  "changed_variable": "空港的固定通行节奏原本要求孩子沿单一可见路径等待；孩子通过观察设施循环找到短暂开放的侧向空隙，使行动路径从被动等待变为一次可控的临时改道。",
+  "dynamic_chain": {
+    "status": "working_hypothesis_not_canon",
+    "chain": "XN → Z → ZX → NZ",
+    "visible_translation": "固定通行节奏限制路径 → 观察循环中的空隙 → 主动试探并迅速改道 → 孩子与活体帽形成短暂协同导航关系",
+    "note": "十元只用于结构编译，不直接写入H3 prompt；不回写角色正式十元。"
+  },
+  "shot_grammar": {
+    "clip_A_15s": "0-4s 中远景平视缓慢横移，建立双色机械空港与唯一明显通道，孩子停在路径边缘观察；4-8s 中景轻推，设施按固定节奏开合或移动，帽檐轻收、羽毛朝侧方偏转；8-12s 中近景，孩子视线从主通道移到侧向短暂空隙，身体微前倾准备行动；12-15s 侧向跟拍，空隙出现时孩子快速横移进入，不展示未冻结下半身细节。",
+    "clip_B_15s": "0-4s 中近景延续，孩子进入侧向位置后短暂停住，帽檐向后轻拉像在提醒；4-8s 过肩或侧面中景，主通道设施再次闭合，证明刚才窗口很短；8-12s 中景轻跟，孩子根据羽毛方向调整一次路线，不新增魔法特效；12-15s 中远景稳定收束，人物与帽子沿现有空间继续前进，主通道在背景恢复固定循环。"
+  },
+  "asset_status": {
+    "character_ref_status": "github_direct_read",
+    "scene_ref_status": "github_direct_read",
+    "render_status": "not_rendered_by_b_end",
+    "asset_note": "image submission and H3 binding handled by cloud work"
+  }
+}
