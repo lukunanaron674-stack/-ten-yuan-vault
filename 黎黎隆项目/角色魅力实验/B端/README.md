@@ -19,16 +19,18 @@
 
 ## 每小时输出
 
-读取 `rules/video_tenyuan_prompt_schema_v1.0.md` 和 `assets/character_refs/B端_Work验证交接与澈MV风格基准_v1.0.md`，按选中的角色/场景生成：
+读取 `rules/video_tenyuan_prompt_schema_v1.1.md` 和 `assets/character_refs/B端_Work验证交接与单角色叙事规范_v1.1.md`，按选中的角色/场景生成：
 - `tasks/inbox/<task_id>.json`：真实参考路径与状态、`subject_definitions`、`retention_analysis`、`changed_variable`、动态链、镜头语法和交接状态。
 - `prompts/generated/<task_id>_H3.md`：可见动作、镜头、起始→变化→结束、参考图 Picture 映射；十元术语只放结构字段。
 - `tasks/inbox/<task_id>_WORK_VALIDATION.md`：发给 Work 的身份/原图/视图/Picture/场景/动作连续性核验纸；Work 无需回复 ChatGPT，直接按纸执行。
 
 三份文件成功提交 GitHub `main` 后本轮 B端完成；提交失败如实记失败，不写虚构 commit。
 
-## 风格基准：澈 LLL-CHARM
+## 当前生产方向：单角色叙事（不再制作 MV）
 
-用户确认此前澈的 MV 包括画风表现最合意，参照其清楚的 `Subject/Picture` 角色与场景分工、完整角色保留、干净手绘线面、克制柔光、细微动作与停顿、镜头和音乐服务可观察关系变化的**方法**；不能把澈的青白能量体、发型、颜色、性格、原案场景套给其他角色。每轮2段各15秒，动作和景别由该轮变量决定，不为凑八个镜头而快切。
+每一条任务只选一个角色 ID 为唯一出镜人物；不同小时可以更换主角，但**同一条视频只出现所选这一名角色的一个实体**。禁止加入其他演员、同屏分身/克隆/双视角/画中画、镜面或水面多出第二个完整人物；角色参考图的正面、45°、全身、半身和四宫格都是同一人的不同视图，不可生成多人。可以切镜、转身、出画再入画，但不得同一时刻复制人物，跨镜头必须保持身份和动作连续。
+
+视频改为十元动态链驱动的单人连续事件短片：起点→阻碍→角色行动→关系改变→结果。场景、物件负责外部关系，不引入第二个人物。**不再使用澈 MV 风格基准，不做音乐卡点蒙太奇或角色轮播**；声音如有仅服务事件氛围。细节以 v1.1 视频编译规范和 v1.1 Work 交接规范为准，旧 v1.0 文件保留仅供历史追溯。
 
 ## Work 端的安全闸门
 
@@ -36,6 +38,6 @@ Work 在本地确认真实角色原图已绑定且角色身份匹配后才渲染
 
 ## 版本号与轮次差异（2026-09-23 起生效）
 
-执行规则：`rules/B端_版本号与轮次差异记录_v1.0.md`（`B-RULE-v1.0`）。每轮先核对 GitHub 现有最高 R 编号，再决定新的 task_id；每份任务写 `version_tracking`（task_version、父任务、规则/澈 MV 基准版本、changed_fields 的前后对照、held_constant、confounders、尚未取得的 Work 视频验证状态）。同一说明摘要写进 H3 MD，验证纸带上版本与父任务。
+新轮次统一读取 `rules/B端_版本号与轮次差异记录_v1.1.md`（`B-RULE-v1.1`），与上一轮对比并增加视频模式、出镜角色数量、同屏人物复制和跨镜头连续性字段。每轮先查 GitHub 同系列实际最新轮次再递增，写 `version_tracking`、父任务及文本差异；不把禁止复制的文字约束冒充已经通过 H3 视频实测。
 
-每轮追加 `results/version_history/<task_id>_DIFF.md`，并尽量同步 `results/version_history/INDEX.md`。**没有真实成片只对比文本变动和预期表现，不能称新版本画风已胜过澈 MV**。Work 只需按验证 MD 自行绑原图、核身份及渲染，不必为了 B端版本记录回传验证。
+继续按 v1.0 规则输出 `results/version_history/<task_id>_DIFF.md` 并顺序更新 `results/version_history/INDEX.md`。澈 MV 案例和旧规则只保留历史索引，不再用于新轮次的强制画风对照。Work 自行验证原图、单人实例与渲染，不需反馈给 B端才能继续每小时任务。
