@@ -1,0 +1,45 @@
+{
+  "schema_version": "lililong-b3-c-handoff/v1.0",
+  "b3_task": "B3_20260923_2325_ADV-001_SCENE-10",
+  "source_b1": {
+    "path": "logs/B1_素材索引_20260923_2206.md",
+    "commit": "0c56acd7f9e75374b98dbf51703dfe51278dbde7",
+    "latest_independent_b1_verified": true
+  },
+  "source_b2": {
+    "path": "02_十元动态链研究/B2_20260923_2315_ADV-001_SCENE-10.md",
+    "id": "B2_20260923_2315_ADV-001_SCENE-10"
+  },
+  "character": {
+    "id": "ADV-001",
+    "declared_ref": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
+    "sha256": "dd81d92d9f565831c8e924aa2ff36b3fd3cf85b526376971b51ec4f1dd43d1c4",
+    "image_validation": "pending",
+    "render_eligible": false
+  },
+  "scene": {
+    "id": "SCENE-10",
+    "path": "黎黎隆项目/04_场景/五色视觉系统/R2_主导色/assets/R2-01_机械空港_深墨青主导.png",
+    "blob_sha": "c21d2465577eb2c00b0c66dee749d9e49723ce67"
+  },
+  "output": {
+    "aspect_ratio": "9:16",
+    "duration_seconds": 15,
+    "prompt_variants": ["A", "B"],
+    "samples_per_variant": 2,
+    "seed_A": null,
+    "seed_B": null
+  },
+  "audio": {
+    "ambient_soundscape": "low mechanical ventilation, distant airport machinery, restrained metal resonance, cloth and pack creaks, buckle clicks, gate motor strain, subtle footsteps",
+    "emotional_sound_cue": "very sparse low sustained tone with a small restrained lift only after commitment; no lyrics and no dominant beat",
+    "audio_role": "support action readability and emotion only; not pure MV editing"
+  },
+  "render_gate": "pending_image_validation",
+  "preflight_requirements": [
+    "bind and verify the real ADV-001 character image before rendering",
+    "verify final ComfyUI H3 prompt equals the current B3 prompt rather than a template default",
+    "verify every LoadImage node points to the current task references rather than old Hermes/template images",
+    "record real seeds only after execution returns or explicitly sets them"
+  ]
+}
