@@ -1,0 +1,81 @@
+{
+  "task_id": "ADV-001_B_HOURLY_ENV_20260923_001",
+  "project": "黎黎隆项目/角色魅力实验",
+  "stage": "B",
+  "mode": "hourly_character_pool_registration",
+  "status": "queued_for_workbuddy_validation",
+  "character_id": "ADV-001",
+  "character_name": "冒险者",
+  "character_source": "local_workbuddy_upload",
+  "character_asset": {
+    "source_file": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
+    "sha256": "dd81d92d9f565831c8e924aa2ff36b3fd3cf85b526376971b51ec4f1dd43d1c4",
+    "role": "H3 character reference",
+    "github_image_upload": false,
+    "workbuddy_action": "upload the original JPEG and use ADV-001 identity sheet for visual validation"
+  },
+  "hourly_environment": {
+    "character_pool_status": "added",
+    "scene_pool": "GITHUB_13_SCENE_POOL_V1",
+    "scene_count_available": 13,
+    "recommended_scene_families": [
+      "森林湖泊",
+      "机械空港"
+    ],
+    "selection_rule": "Each hourly run may select one primary scene and one secondary scene from the 13-scene pool after WorkBuddy confirms the character reference."
+  },
+  "identity_gate": {
+    "asset_structure_check": "passed",
+    "h3_verification_status": "pending_workbuddy_render",
+    "must_keep": [
+      "broad heavy adult male body",
+      "dark beard and tired experienced face",
+      "dark teal-black layered cloak with purple and red panels",
+      "red scarf and crossing straps",
+      "backpack, rolled equipment and cyan-lit lantern",
+      "heavy gloves and boots"
+    ],
+    "do_not_merge_with": [
+      "LLL-MAIN-001",
+      "CHE-001",
+      "NEW-CHAR-001"
+    ]
+  },
+  "ten_yuan": {
+    "analysis_status": "image_based_initial_reading",
+    "primary": "XN",
+    "secondary": "X",
+    "middle": "N",
+    "latent": [
+      "NX",
+      "NZ",
+      "X并Z"
+    ],
+    "recommended_dynamic_chain": "XN → X → NX → NZ",
+    "chain_translation": "accumulated travel → equipment system → equipment burden → lantern becomes guidance and protection"
+  },
+  "b_hourly_output": {
+    "required_fields": [
+      "subject_definitions",
+      "retention_analysis",
+      "changed_variable",
+      "dynamic_chain",
+      "shot_grammar",
+      "h3_prompt",
+      "cloud_feedback_schema"
+    ],
+    "first_experiment": "A 10–15 second scene showing the adventurer carrying heavy equipment through darkness, stopping to adjust the burden, then raising the cyan lantern to protect or guide another person.",
+    "prompt_rule": "Use ten-yuan symbols internally; final H3 prompt must describe only visible character, scene, action, change and result."
+  },
+  "handoff": {
+    "b_end": "Use ADV-001 as an independent selectable character in the hourly environment.",
+    "cloud_work": "Bind the original JPEG manually or from the local task package, validate identity first, then render the selected hourly task.",
+    "feedback_required": [
+      "character_consistency_score",
+      "equipment_continuity_score",
+      "dynamic_chain_readability_score",
+      "scene_consistency_score",
+      "failure_family"
+    ]
+  }
+}
