@@ -1,0 +1,58 @@
+{
+  "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
+  "task_id": "MOUSE_B_20260924_1807_R42",
+  "parent_task_id": "MOUSE_B_20260924_1705_R41",
+  "status": "awaiting_work_execution",
+  "planned_runs": 2,
+  "actual_completed_runs": 0,
+  "input_binding": {
+    "character_id": "MOUSE-EAR-MUTANT-001",
+    "character_path_or_attachment_id": null,
+    "character_sha256": null,
+    "character_dimensions": null,
+    "same_character_verification": "pending_image_validation",
+    "scene_asset_id": "SCENE-08",
+    "scene_registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png",
+    "scene_blob": "3f0a6664e66899a228a8513bfc70688c0a866908",
+    "scene_visual_geometry_check": "pending"
+  },
+  "final_prompt_hash": null,
+  "workflow_id": null,
+  "runs": {
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "output_id": null,
+      "output_path_or_url": null,
+      "output_sha256": null,
+      "resolution": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "output_id": null,
+      "output_path_or_url": null,
+      "output_sha256": null,
+      "resolution": null,
+      "status": "planned"
+    }
+  },
+  "compare_axes": [
+    "character_consistency",
+    "ear_first_timing",
+    "gaze_head_follow_readability",
+    "existing_side_bag_action_readability",
+    "camera_stability",
+    "scene_palette_continuity",
+    "no_duplicate_character"
+  ],
+  "cloud_feedback_path": "黎黎隆项目/角色魅力实验/B端/results/cloud_feedback/MOUSE_B_20260924_1807_R42_CLOUD_FEEDBACK.json",
+  "errors": [],
+  "audio_support": "unknown_until_work_execution",
+  "render_claim": null,
+  "audio_track_claim": null,
+  "note": "Planned result record only. Do not mark completed until Work writes real input, workflow and output evidence."
+}
