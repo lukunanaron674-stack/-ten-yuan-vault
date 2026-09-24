@@ -2,7 +2,7 @@
   "schema_version": "B-H3-RESULT-1.3",
   "task_id": "ADV_B_20260925_0210_R50",
   "parent_task_id": "MOUSE_B_20260925_0110_R49",
-  "status": "blocked_pending_input_validation",
+  "status": "work_rendering",
   "planned_runs": 2,
   "actual_completed_runs": 0,
   "card_id": null,
@@ -127,5 +127,13 @@
     "responses": []
   },
   "render_claim": null,
-  "audio_claim": null
+  "audio_claim": null,
+  "claimed_by": "relay-gh@DESKTOP-FKEUGLS",
+  "claimed_at": "2026-09-25 06:26:21",
+  "claimed_run_key": "ADV_B_20260925_0210_R50",
+  "work_writeback": {
+    "updated_at": "2026-09-25 06:26:21",
+    "by": "relay-gh",
+    "host": "DESKTOP-FKEUGLS"
+  }
 }
