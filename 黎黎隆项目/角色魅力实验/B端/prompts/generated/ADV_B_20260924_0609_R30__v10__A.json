@@ -8,15 +8,15 @@
   "samples": [
     {
       "run": "run_A",
-      "task_id": "ADV_B_20260924_0609_R30__v10__A_run_A_0924195734",
-      "seed": 121459402,
-      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__A_run_A_00003_.mp4"
+      "task_id": "ADV_B_20260924_0609_R30__v10__A_run_A_0924232816",
+      "seed": 1840715676,
+      "mp4": null
     },
     {
       "run": "run_B",
-      "task_id": "ADV_B_20260924_0609_R30__v10__A_run_B_0924195734",
-      "seed": 798270833,
-      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__A_run_B_00003_.mp4"
+      "task_id": "ADV_B_20260924_0609_R30__v10__A_run_B_0924232816",
+      "seed": 1448434990,
+      "mp4": null
     }
   ],
   "dynamic_chain_reading": "",
@@ -36,15 +36,12 @@
   },
   "h3_prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds.\n\nSTYLE IDENTITY LOCK: preserve the exact drawing language, materials, surface wear and original colors shared by Picture 1 and Picture 2. The adventurer keeps his dark teal-black layered worn cloak, purple cloth, red scarf and crossing straps, pale metal shoulder structure, heavy backpack and rolled load, gloves, boots, and the single cyan-lit waist lantern. Do not impose cyan-white luminous skin, a glossy 3D finish, or colors that conflict with the references.\n\nVISUAL EXPRESSION VARIABLE: use restrained readable motion, clear variable-weight linework, soft diffuse light and generous negative space only where compatible with the references. Keep the action practical and quiet, with no rhythmic montage.\n\nCHARACTER (Picture 1): show exactly one established heavy adult adventurer with a broad grounded body, short dark hair, thick beard, tired experienced face and the complete equipment layout described above. Picture 1 is a multi-view identity reference for one physical person, never multiple people.\n\nENVIRONMENT (Picture 2): preserve the identity, actual existing structures, spatial continuity and palette logic of the same quiet mechanical-airfield location. Picture 2 defines the place but not one mandatory framing. Do not invent a door, console, railing, tower, sign, vehicle or other unsupported object.\n\nCAMERA AND COMPOSITION: begin in a medium-wide three-quarter shot with the adventurer in the lower-middle of the vertical frame and open space in his direction of travel. Keep foreground, middle ground and background on one stable axis. Use a restrained slow push-in only after he stops; do not cross the axis.\n\nACTION: the adventurer has finished settling his heavy load. The single cyan lantern is visibly attached to his waist. He takes one deliberate step toward the open route and could continue leaving. A dim change in the already existing environmental light behind him catches his attention. He stops, holds a brief still pause, then looks back without turning his whole body. His gaze moves once toward the route ahead and once toward the darker space behind. He decides, turns only enough to face the lantern, reaches to its clasp and removes that same single lantern from his waist. End with the lantern held securely in one hand, his backpack still on his body, and his feet settled on the same side of the axis, ready to place the light in the next segment.\n\nAUDIO DESIGN: low mechanical-airfield hum, distant ventilation, one measured bootstep, leather and strap creaks, and one restrained metal clasp sound when the lantern is removed. A very sparse suspended low tone enters only during the stop-and-look-back pause and remains unresolved at the cut. Audio supports the choice and action readability; it is not an MV rhythm track.\n\nNEGATIVE: no additional character, no second adventurer, no clone, duplicate, split screen, complete humanoid reflection or shadow double, no character-sheet or four-panel output, no second lantern, no new prop, architecture, weapon or equipment, no removal of the backpack, no identity, body-mass, costume, material or palette redesign, no cyan-white energy humanoid, no unsupported reverse view, no unrelated location change, no music-video cutting, no text, subtitle, logo or watermark, no glossy 3D render, no hard digital edges.",
   "local_render": {
-    "status": "done",
-    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__A_run_A_00003_.mp4",
-    "mp4s": [
-      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__A_run_A_00003_.mp4",
-      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__A_run_B_00003_.mp4"
-    ],
-    "elapsed_sec": 1430,
-    "rc": 0,
-    "tail": "[h3_qq_gen]   状态: running  (2026-09-24 20:09:20)\n[h3_qq_gen]   状态: done  (2026-09-24 20:15:22)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__A_run_A_00003_.mp4\n[h3_qq_gen] 轮询 ADV_B_20260924_0609_R30__v10__A_run_B_0924195734（最多 25 分钟）...\n[h3_qq_gen]   状态: pending  (2026-09-24 19:57:34)\n[h3_qq_gen]   状态: running  (2026-09-24 20:15:23)\n[h3_qq_gen]   状态: done  (2026-09-24 20:21:23)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__A_run_B_00003_.mp4",
+    "status": "timeout",
+    "mp4": null,
+    "mp4s": [],
+    "elapsed_sec": 3022,
+    "rc": 1,
+    "tail": "[h3_qq_gen] ADV_B_20260924_0609_R30__v10__A_run_A_0924232816 未成功出片：TIMEOUT []\nTIMEOUT|ADV_B_20260924_0609_R30__v10__A_run_A_0924232816\n[h3_qq_gen] 轮询 ADV_B_20260924_0609_R30__v10__A_run_B_0924232816（最多 25 分钟）...\n[h3_qq_gen]   状态: pending  (2026-09-24 23:28:16)\n[h3_qq_gen] ADV_B_20260924_0609_R30__v10__A_run_B_0924232816 未成功出片：TIMEOUT []\nTIMEOUT|ADV_B_20260924_0609_R30__v10__A_run_B_0924232816\n\n[错误] 2 条抽样未成功：['ADV_B_20260924_0609_R30__v10__A_run_A_0924232816', 'ADV_B_20260924_0609_R30__v10__A_run_B_0924232816']",
     "by": "b_new_format",
     "host": "DESKTOP-FKEUGLS"
   }
