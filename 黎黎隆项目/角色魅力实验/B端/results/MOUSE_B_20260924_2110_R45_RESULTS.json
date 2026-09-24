@@ -1,0 +1,314 @@
+{
+  "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
+  "task_id": "MOUSE_B_20260924_2110_R45",
+  "parent_task_id": "MOUSE_B_20260924_2010_R44",
+  "status": "awaiting_work_execution",
+  "planned_runs": 2,
+  "actual_completed_runs": 0,
+  "output_spec": {
+    "orientation": "landscape",
+    "target_aspect_ratio": "16:9",
+    "width_gt_height": true,
+    "exact_resolution": null,
+    "actual_width": null,
+    "actual_height": null,
+    "actual_ratio": null,
+    "deviation_from_16_9": null
+  },
+  "input_binding": {
+    "character_id": "MOUSE-EAR-MUTANT-001",
+    "character_path_or_attachment_id": "D:/H3/pool/character_refs/030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "character_rel_path": "../pool/character_refs/030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "character_github_evidence_path": "黎黎隆项目/角色魅力实验/B端/results/inputs/MOUSE_B_20260923_1107_R11/0_character_030F6E3B89E0998CBF695064BC27C2A8.jpg",
+    "character_sha256": "417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef",
+    "character_dimensions": [
+      941,
+      1672
+    ],
+    "character_byte_validation": "validated_with_warnings",
+    "same_character_verification": "pending_visual_identity_confirmation",
+    "scene_asset_id": "SCENE-08",
+    "scene_registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png",
+    "scene_blob": "3f0a6664e66899a228a8513bfc70688c0a866908",
+    "scene_actual_bound_path": null,
+    "scene_sha256": null,
+    "scene_dimensions": null,
+    "scene_visual_geometry_check": "pending"
+  },
+  "final_prompt_hash": null,
+  "workflow_id": null,
+  "runs": {
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "output_id": null,
+      "video_output_path_or_hash": null,
+      "keyframes": {
+        "start": {
+          "sampling_target_seconds": 1,
+          "expected_stage": "start",
+          "timestamp_seconds": null,
+          "path_or_url": null,
+          "sha256": null,
+          "resolution": null,
+          "aspect_ratio_actual": null,
+          "aspect_ratio_deviation_from_16_9": null,
+          "observation": {
+            "stage_visible": null,
+            "character_action": null,
+            "environment_change": null,
+            "spatial_relationship": null,
+            "action_consequence": null,
+            "identity_and_camera_continuity": null,
+            "visible_evidence": null,
+            "unobservable_steps": [],
+            "alternative_explanation": null,
+            "visual_observation_status": "PENDING"
+          }
+        },
+        "middle": {
+          "sampling_target_seconds": 5,
+          "expected_stage": "local_change",
+          "timestamp_seconds": null,
+          "path_or_url": null,
+          "sha256": null,
+          "resolution": null,
+          "aspect_ratio_actual": null,
+          "aspect_ratio_deviation_from_16_9": null,
+          "observation": {
+            "stage_visible": null,
+            "character_action": null,
+            "environment_change": null,
+            "spatial_relationship": null,
+            "action_consequence": null,
+            "identity_and_camera_continuity": null,
+            "visible_evidence": null,
+            "unobservable_steps": [],
+            "alternative_explanation": null,
+            "visual_observation_status": "PENDING"
+          }
+        },
+        "end": {
+          "sampling_target_seconds": 10.5,
+          "expected_stage": "result",
+          "timestamp_seconds": null,
+          "path_or_url": null,
+          "sha256": null,
+          "resolution": null,
+          "aspect_ratio_actual": null,
+          "aspect_ratio_deviation_from_16_9": null,
+          "observation": {
+            "stage_visible": null,
+            "character_action": null,
+            "environment_change": null,
+            "spatial_relationship": null,
+            "action_consequence": null,
+            "identity_and_camera_continuity": null,
+            "visible_evidence": null,
+            "unobservable_steps": [],
+            "alternative_explanation": null,
+            "visual_observation_status": "PENDING"
+          }
+        }
+      },
+      "stage_sampling_status": {
+        "start": "PENDING",
+        "stimulus": "UNOBSERVABLE_AUDIO_EVENT",
+        "local_change": "PENDING",
+        "attention_response": "PENDING_OR_SAMPLING_MISS",
+        "result": "PENDING"
+      },
+      "chain_hypothesis_evaluation": "NOT_REVIEWED",
+      "full_video_upload_required": false,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "output_id": null,
+      "video_output_path_or_hash": null,
+      "keyframes": {
+        "start": {
+          "sampling_target_seconds": 1,
+          "expected_stage": "start",
+          "timestamp_seconds": null,
+          "path_or_url": null,
+          "sha256": null,
+          "resolution": null,
+          "aspect_ratio_actual": null,
+          "aspect_ratio_deviation_from_16_9": null,
+          "observation": {
+            "stage_visible": null,
+            "character_action": null,
+            "environment_change": null,
+            "spatial_relationship": null,
+            "action_consequence": null,
+            "identity_and_camera_continuity": null,
+            "visible_evidence": null,
+            "unobservable_steps": [],
+            "alternative_explanation": null,
+            "visual_observation_status": "PENDING"
+          }
+        },
+        "middle": {
+          "sampling_target_seconds": 5,
+          "expected_stage": "local_change",
+          "timestamp_seconds": null,
+          "path_or_url": null,
+          "sha256": null,
+          "resolution": null,
+          "aspect_ratio_actual": null,
+          "aspect_ratio_deviation_from_16_9": null,
+          "observation": {
+            "stage_visible": null,
+            "character_action": null,
+            "environment_change": null,
+            "spatial_relationship": null,
+            "action_consequence": null,
+            "identity_and_camera_continuity": null,
+            "visible_evidence": null,
+            "unobservable_steps": [],
+            "alternative_explanation": null,
+            "visual_observation_status": "PENDING"
+          }
+        },
+        "end": {
+          "sampling_target_seconds": 10.5,
+          "expected_stage": "result",
+          "timestamp_seconds": null,
+          "path_or_url": null,
+          "sha256": null,
+          "resolution": null,
+          "aspect_ratio_actual": null,
+          "aspect_ratio_deviation_from_16_9": null,
+          "observation": {
+            "stage_visible": null,
+            "character_action": null,
+            "environment_change": null,
+            "spatial_relationship": null,
+            "action_consequence": null,
+            "identity_and_camera_continuity": null,
+            "visible_evidence": null,
+            "unobservable_steps": [],
+            "alternative_explanation": null,
+            "visual_observation_status": "PENDING"
+          }
+        }
+      },
+      "stage_sampling_status": {
+        "start": "PENDING",
+        "stimulus": "UNOBSERVABLE_AUDIO_EVENT",
+        "local_change": "PENDING",
+        "attention_response": "PENDING_OR_SAMPLING_MISS",
+        "result": "PENDING"
+      },
+      "chain_hypothesis_evaluation": "NOT_REVIEWED",
+      "full_video_upload_required": false,
+      "status": "planned"
+    }
+  },
+  "compare_axes": [
+    "landscape_aspect_compliance",
+    "ear_topology_consistency",
+    "absence_of_wing_like_appendages",
+    "stage_visibility",
+    "character_consistency",
+    "camera_stability",
+    "no_duplicate_character"
+  ],
+  "chain_feedback_contract": {
+    "preregistered": true,
+    "hypothesis": {
+      "internal_only": true,
+      "chain": "N8 → NZ7 → Z5",
+      "primary_secondary": {
+        "primary": "N",
+        "primary_start_volume": 8,
+        "secondary": "NZ",
+        "secondary_start_volume": 7,
+        "resultant": "Z",
+        "resultant_volume": 5
+      },
+      "direction_and_relation": "NZ supports a small Z redirection while N remains dominant; the environment cue points from off-screen space toward the character's attention",
+      "start_change_result": "安静收束站定 → 单一场外轻响建立方向关系 → 鼠耳先转、眼头跟随、按稳侧包后停住",
+      "visible_translation": "still posture → one off-screen cue → ear-first local response → gaze/head alignment → compact hand posture → held result",
+      "preregistered_stages": [
+        {
+          "stage": "start",
+          "window": "0-2s",
+          "analysis": "N8 dominant closure",
+          "predicted_visible_cue": "feet planted, shoulders gathered, hands close to body, fixed single-character silhouette",
+          "disconfirming_cue": "step, open expansive pose, duplicate body or changed framing"
+        },
+        {
+          "stage": "stimulus",
+          "window": "2-4s",
+          "analysis": "external directional cue activates NZ sensitivity",
+          "predicted_visible_cue": "no visible source enters; posture remains contained",
+          "disconfirming_cue": "visible speaker, creature, second figure, prop or scene event appears",
+          "keyframe_limit": "the sound itself may be unobservable"
+        },
+        {
+          "stage": "local_change",
+          "window": "4-6s",
+          "analysis": "NZ7 supports Z5 redirection",
+          "predicted_visible_cue": "one short skull-attached ear changes orientation slightly while torso and feet remain still",
+          "disconfirming_cue": "body turns first, both ears become wings, back appendage appears or no local change is visible"
+        },
+        {
+          "stage": "attention_response",
+          "window": "6-8s",
+          "analysis": "small Z5 direction becomes legible",
+          "predicted_visible_cue": "eyes and head align a few degrees after the ear response",
+          "disconfirming_cue": "large head snap, whole-body turn, step or unrelated gesture",
+          "keyframe_limit": "ordering against the ear turn may be unobservable in only three frames"
+        },
+        {
+          "stage": "result",
+          "window": "8-11s",
+          "analysis": "N remains dominant after redirection",
+          "predicted_visible_cue": "one hand presses the existing side bag and the final posture holds at the original location",
+          "disconfirming_cue": "bag changes design, hand action is absent, position changes or posture expands"
+        }
+      ],
+      "competing_hypotheses": [
+        "the apparent redirection could be generic startle animation rather than the preregistered chain",
+        "a missing cue may be a keyframe sampling miss rather than a failed motion",
+        "model drift or reference interpretation may explain ear/back changes independently of the action hypothesis"
+      ],
+      "prompt_exclusion": "ten-yuan labels and 生克补 terminology do not enter h3_prompt"
+    },
+    "raw_observation_separate": true,
+    "allowed_evaluations": [
+      "SUPPORTED_BY_KEYFRAMES",
+      "CONTRADICTED_BY_KEYFRAMES",
+      "INDETERMINATE",
+      "NOT_REVIEWED"
+    ],
+    "sampling_miss_rule": "missing a decisive action at the sampled frame is SAMPLING_MISS, not automatic chain failure"
+  },
+  "review_evidence_contract": {
+    "required_per_run": [
+      "start_frame",
+      "middle_frame",
+      "end_frame"
+    ],
+    "required_fields_per_frame": [
+      "timestamp_seconds",
+      "path_or_url",
+      "sha256",
+      "resolution",
+      "aspect_ratio_actual",
+      "observation"
+    ],
+    "full_video_upload_required": false
+  },
+  "cloud_feedback_path": "黎黎隆项目/角色魅力实验/B端/results/cloud_feedback/MOUSE_B_20260924_2110_R45_CLOUD_FEEDBACK.json",
+  "errors": [],
+  "audio_support": "unknown_until_work_execution",
+  "render_claim": null,
+  "audio_track_claim": null,
+  "note": "Planned R45 record only. Older R36/R11 evidence is source material and is not copied into R45 run fields."
+}
