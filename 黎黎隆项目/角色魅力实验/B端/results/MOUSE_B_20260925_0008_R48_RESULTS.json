@@ -1,0 +1,156 @@
+{
+  "schema_version": "B-H3-RESULT-1.3",
+  "task_id": "MOUSE_B_20260925_0008_R48",
+  "parent_task_id": "MOUSE_B_20260924_2310_R47",
+  "status": "blocked_pending_input_validation",
+  "planned_runs": 2,
+  "actual_completed_runs": 0,
+  "card_id": null,
+  "input_gate": {
+    "character_path_candidate": "D:/H3/pool/character_refs/030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "character_sha256": "417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef",
+    "character_dimensions": [
+      941,
+      1672
+    ],
+    "same_character_visual_verified": null,
+    "h3_four_grid_layout_verified": null,
+    "scene_registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png",
+    "scene_blob": "3f0a6664e66899a228a8513bfc70688c0a866908",
+    "scene_actual_bound_path": null,
+    "scene_sha256": null,
+    "scene_dimensions": null,
+    "scene_geometry_check": null
+  },
+  "workflow": {
+    "workflow_id": null,
+    "fps_num": null,
+    "fps_den": null,
+    "total_frames": null,
+    "duration_seconds_actual": null,
+    "frame_timeline_compile_status": "PENDING"
+  },
+  "audio_design": {
+    "ambient_soundscape": "very light village air, faint distant structural creak, soft cloth movement, and one small nonverbal off-screen dry tap or air resonance after baseline",
+    "emotional_sound_cue": "a restrained thin suspended tone begins after the ear turn, remains quiet through the pause, and fades after the bag is secured; no lyrics or strong beat",
+    "audio_role": "support spatial direction, action readability and cautious emotion only; do not drive cuts; not MV editing",
+    "actual_audio_track_status": "UNKNOWN_PENDING_WORK"
+  },
+  "prompt_hash": null,
+  "nodes": [
+    {
+      "node_id": "n0_baseline",
+      "planned_window_seconds": [
+        0,
+        1.5
+      ],
+      "transition_frame": null,
+      "peak_frame": null,
+      "technical_verdict": "NOT_REVIEWED",
+      "feeling_relevance": "PENDING"
+    },
+    {
+      "node_id": "n1_stimulus",
+      "planned_window_seconds": [
+        1.5,
+        3
+      ],
+      "transition_frame": null,
+      "peak_frame": null,
+      "technical_verdict": "NOT_REVIEWED",
+      "feeling_relevance": "PENDING"
+    },
+    {
+      "node_id": "n2_ear_response",
+      "planned_window_seconds": [
+        3,
+        4.5
+      ],
+      "transition_frame": null,
+      "peak_frame": null,
+      "technical_verdict": "NOT_REVIEWED",
+      "feeling_relevance": "PENDING"
+    },
+    {
+      "node_id": "n3_gaze_head",
+      "planned_window_seconds": [
+        4.5,
+        6.3
+      ],
+      "transition_frame": null,
+      "peak_frame": null,
+      "technical_verdict": "NOT_REVIEWED",
+      "feeling_relevance": "PENDING"
+    },
+    {
+      "node_id": "n4_deliberate_pause",
+      "planned_window_seconds": [
+        6.3,
+        7.2
+      ],
+      "transition_frame": null,
+      "peak_frame": null,
+      "technical_verdict": "NOT_REVIEWED",
+      "feeling_relevance": "PENDING"
+    },
+    {
+      "node_id": "n5_secure_bag",
+      "planned_window_seconds": [
+        7.2,
+        9.2
+      ],
+      "transition_frame": null,
+      "peak_frame": null,
+      "technical_verdict": "NOT_REVIEWED",
+      "feeling_relevance": "PENDING"
+    },
+    {
+      "node_id": "n6_settle",
+      "planned_window_seconds": [
+        9.2,
+        11
+      ],
+      "transition_frame": null,
+      "peak_frame": null,
+      "technical_verdict": "NOT_REVIEWED",
+      "feeling_relevance": "PENDING"
+    }
+  ],
+  "runs": {
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "output_id": null,
+      "first_frame": null,
+      "node_frames": [],
+      "audio_track": "UNKNOWN",
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "output_id": null,
+      "first_frame": null,
+      "node_frames": [],
+      "audio_track": "UNKNOWN",
+      "status": "planned"
+    }
+  },
+  "temporal_validation": {
+    "pause_before_hand_onset": "NOT_REVIEWED",
+    "generation_freeze_excluded": "NOT_REVIEWED",
+    "verdict": "PENDING"
+  },
+  "blind_viewer_feedback": {
+    "status": "pending",
+    "responses": []
+  },
+  "interpretation": {
+    "status": "pending",
+    "note": "No feeling or ten-yuan conclusion before real outputs and blind responses."
+  },
+  "render_claim": null,
+  "audio_claim": null
+}
