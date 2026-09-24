@@ -1,0 +1,119 @@
+{
+  "schema_version": "B-H3-CLOUD-FEEDBACK-1.3",
+  "task_id": "MOUSE_B_20260925_0110_R49",
+  "parent_task_id": "MOUSE_B_20260925_0008_R48",
+  "status": "pending",
+  "card_id": null,
+  "input_gate": {
+    "character_path_candidate": "D:/H3/pool/character_refs/030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "character_sha256": "417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef",
+    "character_dimensions": [
+      941,
+      1672
+    ],
+    "same_character_visual_verified": null,
+    "h3_four_grid_layout_verified": null,
+    "scene_registered_id": "SCENE-02",
+    "scene_blob": "249b3a0f00aa894772d1049e800f4813723184df",
+    "scene_actual_bound_path": null,
+    "scene_sha256": null,
+    "scene_dimensions": null,
+    "scene_geometry_check": null
+  },
+  "workflow": {
+    "workflow_id": null,
+    "fps_num": null,
+    "fps_den": null,
+    "total_frames": null,
+    "duration_seconds_actual": null,
+    "frame_timeline_compile_status": "PENDING"
+  },
+  "evidence_contract": {
+    "node_sampling": [
+      "pre",
+      "onset",
+      "peak",
+      "post"
+    ],
+    "dense_intervals": [
+      "n3_no_feedback -> n5_end_response"
+    ],
+    "required_frame_fields": [
+      "run",
+      "node_id",
+      "requested_frame",
+      "actual_frame",
+      "timestamp",
+      "path_or_url",
+      "sha256",
+      "width",
+      "height",
+      "raw_observation"
+    ],
+    "allowed_verdicts": [
+      "SUPPORTED",
+      "CONTRADICTED",
+      "AMBIGUOUS",
+      "NEEDS_TEMPORAL_REVIEW"
+    ],
+    "sampling_miss_rule": "missing one event in one sampled frame is SAMPLING_MISS, not proof of absence"
+  },
+  "expected_impression": {
+    "first": "她看起来谨慎、对环境敏感。",
+    "shift": "她主动横移半步让出空间，但水面恢复后没有得到任何回应。",
+    "final": "她不追加确认，恢复原节奏，可能被读成体贴但不索取回报、能主动结束响应。",
+    "trigger": "扰动消失后保留明确选择窗口，而她不回头、不靠近、不进行第二次确认。",
+    "alternatives": [
+      "她只是没有注意到扰动已经消失",
+      "继续走只是动画时长不足",
+      "耳朵放松不够清楚"
+    ],
+    "status": "EXPECTED_ONLY_PENDING_BLIND_REVIEW"
+  },
+  "blind_viewer_feedback": {
+    "status": "pending",
+    "prompt_to_reviewer": [
+      "初看这个人，你觉得她是怎样的人？",
+      "哪个具体动作或时刻改变了你的看法？",
+      "结尾你怎样看她？",
+      "还有什么相反或替代解释？"
+    ],
+    "do_not_reveal": [
+      "target feeling",
+      "ten-yuan labels",
+      "author interpretation"
+    ],
+    "responses": []
+  },
+  "run_A": {
+    "seed": null,
+    "execution_record": "pending_first_execution",
+    "work_task_id": null,
+    "output_id": null,
+    "first_frame": null,
+    "node_frames": [],
+    "audio_track": "UNKNOWN",
+    "status": "planned"
+  },
+  "run_B": {
+    "seed": null,
+    "execution_record": "pending_second_execution",
+    "work_task_id": null,
+    "output_id": null,
+    "first_frame": null,
+    "node_frames": [],
+    "audio_track": "UNKNOWN",
+    "status": "planned"
+  },
+  "review_layers": {
+    "INPUT_BINDING": "PENDING",
+    "RENDER_EXECUTION": "PENDING",
+    "KEYFRAME_VISUAL": "NOT_REVIEWED",
+    "ACTION_SEQUENCE": "NOT_REVIEWED",
+    "AUDIO_TRACK": "UNKNOWN",
+    "VIEWER_FEELING": "PENDING",
+    "TEN_YUAN_INTERPRETATION": "NOT_REVIEWED"
+  },
+  "created_at": "2026-09-25T01:10:24+08:00",
+  "completed_at": null
+}
