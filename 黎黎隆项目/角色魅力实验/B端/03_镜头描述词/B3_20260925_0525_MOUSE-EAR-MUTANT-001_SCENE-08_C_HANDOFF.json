@@ -1,0 +1,77 @@
+{
+  "schema": "lililong-b3-c-handoff/v1",
+  "task_id": "B3_20260925_0525_MOUSE-EAR-MUTANT-001_SCENE-08",
+  "status": "text_ready_image_binding_pending",
+  "source_b1": {
+    "path": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_AUDIT_20260925_0003_R48.md",
+    "blob": "f9b934b8e7ddcb02e74974becc5327762c460489"
+  },
+  "source_b2": {
+    "path": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260925_0515_MOUSE-EAR-MUTANT-001_SCENE-08.md",
+    "commit": "27a9c1769c2b444fe393bccbab06e6add918367d",
+    "upstream": "MOUSE_B_20260924_2310_R47 v1.0"
+  },
+  "assets": {
+    "character": "MOUSE-EAR-MUTANT-001",
+    "character_sha256": "417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef",
+    "character_dimensions": "941x1672",
+    "same_character_visual_verified": null,
+    "h3_four_grid_layout_verified": null,
+    "scene": "SCENE-08",
+    "scene_git_blob": "3f0a6664e66899a228a8513bfc70688c0a866908",
+    "scene_actual_binding": null,
+    "scene_geometry_check": null,
+    "excluded_unfinished": [
+      "LLL-MAIN-001"
+    ]
+  },
+  "output": {
+    "aspect_ratio": "9:16",
+    "duration_seconds": "10-11",
+    "style": "2D hand-drawn",
+    "note": "B2 embedded spec said 16:9; B3 current contract overrides to 9:16"
+  },
+  "dynamic_chain_analysis": {
+    "chain": "N8 -> NZ8克N7 -> Z5补NZ8 -> XN8克Z3 -> N8补XN8",
+    "event": "second identical harmless stimulus is heard and briefly confirmed, but does not reopen full-body pursuit",
+    "decisive_evidence": "ear and eyes confirm; head/shoulders/pelvis/feet keep route and pace"
+  },
+  "runs": [
+    {
+      "sample": "A/run_A",
+      "seed": null,
+      "task_id": null,
+      "output_id": null,
+      "status": "blocked_pending_picture_validation"
+    },
+    {
+      "sample": "A/run_B",
+      "seed": null,
+      "task_id": null,
+      "output_id": null,
+      "status": "blocked_pending_picture_validation"
+    },
+    {
+      "sample": "B/run_A",
+      "seed": null,
+      "task_id": null,
+      "output_id": null,
+      "status": "blocked_pending_picture_validation"
+    },
+    {
+      "sample": "B/run_B",
+      "seed": null,
+      "task_id": null,
+      "output_id": null,
+      "status": "blocked_pending_picture_validation"
+    }
+  ],
+  "audio_policy": "audio supports action and emotion only; not pure MV editing",
+  "c_gate": [
+    "validate Picture 1 identity and H3 four-grid",
+    "bind and visually inspect SCENE-08 geometry",
+    "verify 9:16 10-11s final prompt and all LoadImage nodes",
+    "execute four samples only after gates pass",
+    "record only real seeds/task/output IDs and first-middle-last frames"
+  ]
+}
