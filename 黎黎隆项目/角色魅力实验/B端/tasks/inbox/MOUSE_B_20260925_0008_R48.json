@@ -1,0 +1,398 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "research_rule_version": "B端_角色感受实验总规_v1.0",
+  "frame_rule_version": "帧级变化节点规则_v1.3",
+  "task_id": "MOUSE_B_20260925_0008_R48",
+  "task_version": "v1.0",
+  "parent_task_id": "MOUSE_B_20260924_2310_R47",
+  "created_at": "2026-09-25T00:08:21+08:00",
+  "status": "text_ready_render_blocked_pending_input_validation",
+  "project": "黎黎隆项目/角色魅力实验/B端",
+  "video_mode": "single_character_narrative",
+  "duration_seconds_range": [
+    10,
+    11
+  ],
+  "planned_duration_seconds": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "scene_asset_id": "SCENE-08",
+  "reference_view": {
+    "type": "both",
+    "primary_dynamic_view": "half_body_dynamic",
+    "secondary_identity_view": "full_body_identity",
+    "picture_mapping": {
+      "picture_1": "D:/H3/pool/character_refs/030F6E3B89E0998CBF695064BC27C2A8.jpeg; sha256 417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef; 941x1672; same-character and H3 four-grid validation pending",
+      "picture_2": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png; blob 3f0a6664e66899a228a8513bfc70688c0a866908; actual Work binding and geometry pending"
+    },
+    "binding_status": "pending_image_validation"
+  },
+  "source_classification": {
+    "confirmed": [
+      {
+        "source": "B1 R48 material audit",
+        "commit": "ecddf3c799ebe4c375522f46f785545a48ea71f8",
+        "fact": "R47 remains 0/2; character identity/four-grid and SCENE-08 actual binding/geometry remain unverified"
+      },
+      {
+        "source": "B4 R47 audit",
+        "commit": "998bf81d16919941ea6c89adea1bd46f193795f5",
+        "fact": "R47 text conditionally passes; next B3 must persist three machine-readable audio fields and densely review pause-to-hand onset"
+      },
+      {
+        "source": "R47 task/prompt",
+        "commit": "8884ed6ea49b8936680f2cce26301beaed909166",
+        "fact": "the visual prompt and feeling-first pause experiment are frozen for this recompilation"
+      }
+    ],
+    "candidate": [
+      "the visible pause may shift the reading from fragile/startled to deliberate self-protection",
+      "N/NZ/Z remains an internal candidate explanation"
+    ],
+    "excluded": [
+      "claiming the feeling shift occurred",
+      "claiming images, render, audio or blind review completed",
+      "copying old seeds, outputs or frames"
+    ]
+  },
+  "viewer_impression_hypothesis": {
+    "first": "初看她，我可能觉得她退缩、警惕，甚至有点脆弱。",
+    "shift": "耳朵先定位、眼头跟随后，她先停一下，再主动按稳已有侧包。",
+    "final": "片段结束时，我可能仍觉得她谨慎，但也觉得她敏锐、有判断，并能安静地保护自己。",
+    "trigger": "眼头对齐后、手部起动前可见且不是生成卡顿的短暂停顿。",
+    "alternatives": [
+      "受惊后的僵住",
+      "无意义按包循环",
+      "生成抖动掩盖动作先后"
+    ],
+    "status": "EXPECTED_ONLY_PENDING_BLIND_REVIEW"
+  },
+  "subject_definition": {
+    "single_subject": "exactly one physical MOUSE-EAR-MUTANT-001 instance",
+    "identity_lock": [
+      "white short hair and top curl",
+      "two short oval translucent pale-purple ears attached directly to skull sides",
+      "small body and slender limbs",
+      "pale tunic with dark trim",
+      "cross-body strap and existing side bag",
+      "oversized dark shoes"
+    ],
+    "single_instance_rule": "all views are one person"
+  },
+  "retention_analysis": {
+    "must_retain": [
+      "R47 H3 prompt verbatim",
+      "character and scene IDs",
+      "ear topology lock",
+      "seven-node action order",
+      "locked camera and light",
+      "16:9 output",
+      "same-input dual sampling"
+    ],
+    "not_yet_verified": [
+      "same-character identity",
+      "H3 four-grid layout",
+      "SCENE-08 actual binding and geometry",
+      "workflow fps and total frames",
+      "viewer feeling"
+    ]
+  },
+  "changed_variable": {
+    "type": "schema_only_recompilation",
+    "from_parent": "no visual or audio-content change; add explicit audio_design.ambient_soundscape, emotional_sound_cue and audio_role machine fields, plus a falsifiable pause-to-hand temporal review rule",
+    "h3_prompt_changed": false
+  },
+  "ten_yuan_explanation": {
+    "internal_only": true,
+    "primary": {
+      "code": "N",
+      "volume": 8
+    },
+    "secondary": {
+      "code": "NZ",
+      "volume": 7
+    },
+    "result_candidate": {
+      "code": "Z",
+      "volume": 5
+    },
+    "hypothesis": "NZ补Z形成定向反应；N克制冲动式Z并将动作收束为护包与原地稳定。待真实节点帧与盲审验证。",
+    "chain_start_change_end": "警惕收束 → 定向感知 → 决定停顿 → 主动护包 → 原地稳定",
+    "status": "CANDIDATE_NOT_VALIDATED"
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "nodes": [
+      {
+        "node_id": "n0_baseline",
+        "target_window_seconds": [
+          0,
+          1.5
+        ],
+        "observable_event": "feet planted; shoulders gathered; hand away from bag",
+        "relation": {
+          "relation_class": "共存",
+          "relation_direction": "N + NZ",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED",
+          "primary": "N",
+          "secondary": "Z"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/topology duplication, action-order reversal or framing drift"
+      },
+      {
+        "node_id": "n1_stimulus",
+        "target_window_seconds": [
+          1.5,
+          3
+        ],
+        "observable_event": "off-screen cue; no visible source; posture contained",
+        "relation": {
+          "relation_class": "非生克补",
+          "relation_direction": "environment cue -> character",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED",
+          "primary": "N",
+          "secondary": "Z"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/topology duplication, action-order reversal or framing drift"
+      },
+      {
+        "node_id": "n2_ear_response",
+        "target_window_seconds": [
+          3,
+          4.5
+        ],
+        "observable_event": "near ear pivots; torso and feet remain still",
+        "relation": {
+          "relation_class": "补",
+          "relation_direction": "NZ -> Z",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED",
+          "primary": "N",
+          "secondary": "NZ"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/topology duplication, action-order reversal or framing drift"
+      },
+      {
+        "node_id": "n3_gaze_head",
+        "target_window_seconds": [
+          4.5,
+          6.3
+        ],
+        "observable_event": "eyes align; head turns only a few degrees",
+        "relation": {
+          "relation_class": "共存",
+          "relation_direction": "Z with N",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED",
+          "primary": "N",
+          "secondary": "Z"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/topology duplication, action-order reversal or framing drift"
+      },
+      {
+        "node_id": "n4_deliberate_pause",
+        "target_window_seconds": [
+          6.3,
+          7.2
+        ],
+        "observable_event": "free hand stays still before hand onset; no recoil or step",
+        "relation": {
+          "relation_class": "克",
+          "relation_direction": "N constrains impulsive Z",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED",
+          "primary": "N",
+          "secondary": "Z"
+        },
+        "camera_change": "none",
+        "counterexample": "hand starts before a readable pause, recoil/step occurs, or apparent pause is generation freeze"
+      },
+      {
+        "node_id": "n5_secure_bag",
+        "target_window_seconds": [
+          7.2,
+          9.2
+        ],
+        "observable_event": "one hand presses existing bag; strap topology unchanged",
+        "relation": {
+          "relation_class": "补",
+          "relation_direction": "N -> Z containment",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED",
+          "primary": "N",
+          "secondary": "Z"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/topology duplication, action-order reversal or framing drift"
+      },
+      {
+        "node_id": "n6_settle",
+        "target_window_seconds": [
+          9.2,
+          11
+        ],
+        "observable_event": "all motion stops at original position",
+        "relation": {
+          "relation_class": "共存",
+          "relation_direction": "N with redirected Z",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED",
+          "primary": "N",
+          "secondary": "Z"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/topology duplication, action-order reversal or framing drift"
+      }
+    ],
+    "validation_question": "Is the pause visible before hand onset and does blind language distinguish deliberate self-protection from startle?"
+  },
+  "time_beats": {
+    "mode": "node_driven_v1.3",
+    "legacy_fixed_two_second_bins": "superseded",
+    "relative_windows": [
+      {
+        "node_id": "n0_baseline",
+        "target_window_seconds": [
+          0,
+          1.5
+        ],
+        "observable_event": "feet planted; shoulders gathered; hand away from bag"
+      },
+      {
+        "node_id": "n1_stimulus",
+        "target_window_seconds": [
+          1.5,
+          3
+        ],
+        "observable_event": "off-screen cue; no visible source; posture contained"
+      },
+      {
+        "node_id": "n2_ear_response",
+        "target_window_seconds": [
+          3,
+          4.5
+        ],
+        "observable_event": "near ear pivots; torso and feet remain still"
+      },
+      {
+        "node_id": "n3_gaze_head",
+        "target_window_seconds": [
+          4.5,
+          6.3
+        ],
+        "observable_event": "eyes align; head turns only a few degrees"
+      },
+      {
+        "node_id": "n4_deliberate_pause",
+        "target_window_seconds": [
+          6.3,
+          7.2
+        ],
+        "observable_event": "free hand stays still before hand onset; no recoil or step"
+      },
+      {
+        "node_id": "n5_secure_bag",
+        "target_window_seconds": [
+          7.2,
+          9.2
+        ],
+        "observable_event": "one hand presses existing bag; strap topology unchanged"
+      },
+      {
+        "node_id": "n6_settle",
+        "target_window_seconds": [
+          9.2,
+          11
+        ],
+        "observable_event": "all motion stops at original position"
+      }
+    ],
+    "frame_timeline": {
+      "status": "PENDING_ACTUAL_WORKFLOW",
+      "rule": "compile each run from its actual rational fps and total_frames; contiguous integer ranges; dense samples around n4->n5"
+    }
+  },
+  "shot_grammar": {
+    "shot": "locked eye-level three-quarter knee-up medium",
+    "aspect_ratio": "16:9 landscape",
+    "camera_movement": "none",
+    "cut": "none",
+    "light_change": "none",
+    "node_camera_reason": "keep pause and hand onset comparable without introducing another visual variable"
+  },
+  "h3_prompt": "Subject: Landscape 16:9, one continuous 11-second single-character narrative. Show exactly one physical instance of the established mouse-ear mutant girl from the bound character references. Preserve her small body, slender limbs, white short hair with eye-covering fringe and top curl, two short oval translucent pale-purple mutated mouse ears attached directly to the sides of the skull, quiet cautious face, loose pale short tunic with dark trim, dark cross-body strap, existing side bag, pale socks and oversized dark shoes. Both ears remain inside the head-and-shoulder silhouette and never extend behind the shoulders or along the back. All reference views describe the same one person.\n\nMovement: She begins with both feet planted and her posture compact. One faint nonverbal dry tap or air resonance occurs off screen from one side; its source is never shown. The nearer skull-attached ear pivots a few degrees toward it, followed by a smaller settling motion from the other ear, while her torso and feet remain still. Her eyes align with the ear direction and her head follows only a few degrees. She then holds a short visible pause with her hand still beside her body, as if deciding rather than recoiling. Only after that pause, one hand gently presses the already existing side bag against her hip without changing the strap layout. She finishes motionless in the original position, attention redirected and posture compact. No step, no whole-body turn and no sudden startle.\n\nScene: Picture 2 defines SCENE-08, the same two-color strange-village environment, its existing spatial continuity, negative space and original palette logic. Use only village forms, ground, depth layers and color relationships visibly supported by the bound scene image. Do not invent a door, bridge, rope, stall, animal, creature, person, machine, sign or story prop. The off-screen sound remains nonvisual and does not create a second subject.\n\nCamera: One locked eye-level three-quarter knee-up medium shot in a 16:9 landscape frame. Keep both ears, face, torso, cross-body strap, free hand and side bag readable together. Leave stable horizontal negative space toward the sound direction and keep headroom unchanged. Fixed framing and focal length; no push, pull, pan, tilt, tracking, cut, transition or split screen. The uncut view must make the ear response, gaze and head alignment, deliberate pause, hand action and final stillness directly comparable.\n\nLighting: Preserve the bound character materials and the scene reference's original two-color palette logic. Use one fixed soft diffuse light throughout. Keep the pale-purple ear translucency restrained and consistent. No flashing, relighting, weather change, sudden saturation shift or color redesign.\n\nAtmosphere: At first she may look withdrawn or fragile; the visible pause before securing the bag should allow a reading of quiet deliberation and self-possession without changing her cautious identity. Express this only through timing, posture and visible action. Use clear two-dimensional hand-drawn shapes, clean variable-width ink contours, light watercolor softness, low-saturation shadows and sufficient negative space only where compatible with the bound references. Do not copy another character's cyan-white energy body, materials or identity.\n\nAudio: Ambient soundscape: very light village air, faint distant structural creak and soft cloth movement, with one small nonverbal dry tap or air resonance after the stable baseline. Emotional sound cue: a restrained thin suspended tone begins after the ear turn, stays quiet through the deliberate pause and fades after the bag is secured, with no lyrics and no strong beat. Audio supports spatial direction, action readability and cautious emotion; it does not drive cuts and is not music-video editing.\n\nNegative: exactly one character and one physical body, no duplicate character, no second human figure, no split screen, no clone or mirror-double, no mirror duplicate, no reflection person, no crowd, no NPC, no visible sound source, no rabbit ears, no tail, no horns, no wings, no back-mounted wing-like silhouette, no shoulder blades or feathered appendages, no armor, no weapon, no invented prop, no extra limbs, no deformed hands, no altered strap layout, no missing side bag, no camera movement, no cut, no transition, no weather change, no abrupt color shift, no text overlay, no watermark, no abrupt redesign.",
+  "audio_design": {
+    "ambient_soundscape": "very light village air, faint distant structural creak, soft cloth movement, and one small nonverbal off-screen dry tap or air resonance after baseline",
+    "emotional_sound_cue": "a restrained thin suspended tone begins after the ear turn, remains quiet through the pause, and fades after the bag is secured; no lyrics or strong beat",
+    "audio_role": "support spatial direction, action readability and cautious emotion only; do not drive cuts; not MV editing",
+    "actual_audio_track_status": "UNKNOWN_PENDING_WORK"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "same_prompt_and_inputs": true,
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "compare_axes": [
+      "single-character identity",
+      "ear topology",
+      "ear-before-eye/head order",
+      "pause-before-hand onset",
+      "bag and strap continuity",
+      "locked framing",
+      "viewer first/shift/final language"
+    ],
+    "actual_completed_runs": 0
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no visible sound source",
+    "no wings or back appendages",
+    "no camera movement",
+    "no weather or color change"
+  ],
+  "must_keep": [
+    "exactly one character",
+    "one SCENE-08 environment",
+    "R47 prompt verbatim",
+    "11 seconds",
+    "16:9 landscape",
+    "locked shot and light",
+    "same prompt and inputs for run_A/run_B"
+  ],
+  "must_avoid": [
+    "claiming input validation passed",
+    "claiming render/audio/blind review completed",
+    "using old frames as this task evidence",
+    "inventing scene geometry or props",
+    "revealing target feeling to blind reviewers"
+  ],
+  "validation_target": {
+    "input_gate": [
+      "same_character_visual_verified true/false",
+      "h3_four_grid_layout_verified true/false",
+      "SCENE-08 bound path/SHA/dimensions/geometry"
+    ],
+    "temporal_gate": "n4 pause must be visible before n5 hand onset and not be a generation freeze; otherwise NEEDS_TEMPORAL_REVIEW",
+    "result_gate": "2/2 real runs plus per-node evidence and blind feedback before interpretation"
+  },
+  "card_registration": {
+    "card_id": null,
+    "status": "awaiting_authoritative_CARD_INDEX_and_real_first_frame"
+  }
+}
