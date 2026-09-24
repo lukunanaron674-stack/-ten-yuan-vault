@@ -1,0 +1,361 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "research_rule_version": "B端_角色感受实验总规_v1.0",
+  "task_id": "MOUSE_B_20260925_0607_R54",
+  "task_version": "v1.0",
+  "parent_task_id": "ADV_B_20260925_0508_R53",
+  "upstream_story_task": "B2_20260925_0515_MOUSE-EAR-MUTANT-001_SCENE-08",
+  "created_at": "2026-09-25T06:07:29+08:00",
+  "status": "text_ready_dispatch_contract_ready_render_blocked_pending_input_validation",
+  "project": "黎黎隆项目/角色魅力实验/B端",
+  "video_mode": "single_character_narrative",
+  "duration_seconds_range": [
+    10,
+    11
+  ],
+  "planned_duration_seconds": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "scene_asset_id": "SCENE-08",
+  "reference_view": {
+    "type": "both",
+    "picture_1": {
+      "registered_path": "D:/H3/pool/character_refs/030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+      "sha256_candidate": "417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef",
+      "dimensions_candidate": "941x1672",
+      "same_character_verified": null,
+      "h3_four_grid_verified": null
+    },
+    "picture_2": {
+      "registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png",
+      "git_blob": "3f0a6664e66899a228a8513bfc70688c0a866908",
+      "actual_binding": null,
+      "geometry_verified": null
+    },
+    "mapping": {
+      "picture_1": "MOUSE-EAR-MUTANT-001 only",
+      "picture_2": "SCENE-08 only"
+    },
+    "binding_status": "pending_image_validation"
+  },
+  "source_classification": {
+    "confirmed": [
+      {
+        "source": "B1 R54 asset audit",
+        "commit": "0d62bf081223f9e387f4592b433581de7dad08e4",
+        "fact": "mouse candidate SHA/dimensions and SCENE-08 registered blob exist; same-character, H3 layout, actual scene binding and geometry remain null"
+      },
+      {
+        "source": "B2 current dynamic-chain round",
+        "commit": "27a9c1769c2b444fe393bccbab06e6add918367d",
+        "fact": "story candidate is a repeated harmless cue that receives ear/eye confirmation without reopening a whole-body response"
+      },
+      {
+        "source": "B3 current shot handoff",
+        "commits": [
+          "cc82d71c6cb1774fbbdf14ca2e248739cc22f1b2",
+          "cab0560edb8fbac991ff2ba2adbf528526464174"
+        ],
+        "fact": "text and C handoff exist; all four proposed samples remain blocked with null seeds/tasks/outputs"
+      },
+      {
+        "source": "legacy R28 execution record",
+        "commit": "0c4f417d1caab7b535bf571a867b259e793c35bf",
+        "fact": "old R28 A run_A/run_B have real seeds, task IDs and local MP4 paths; videos were not reviewed"
+      },
+      {
+        "source": "relay cleanup",
+        "commits": [
+          "9f1f1cf9bfbbca10c3a8cecc71b1e7867b6fd50a",
+          "ed02dec4844a1009e4922127bc1f1727ac8440c7"
+        ],
+        "fact": "pre-R40 ADV cards were explicitly cancelled and must not be requeued"
+      }
+    ],
+    "candidate": [
+      "a repeated unchanged cue may be acknowledged by ear and eyes without recruiting shoulders, pelvis or feet",
+      "reduced response depth may read as selective attention rather than numbness"
+    ],
+    "inference": [
+      "a fixed full-body view may make the non-response of the body more falsifiable than B3 camera changes",
+      "the internal relation chain remains experimental"
+    ],
+    "corrected_upstream": [
+      "B3 specified 9:16 and camera changes; current confirmed production rule uses 16:9 landscape and a fixed shot",
+      "B3 proposed two prompts and four samples; B-H3-TASK-1.2 requires one prompt executed exactly twice"
+    ],
+    "excluded": [
+      "LLL-MAIN-001 because current B1 still marks it unfinished",
+      "using legacy R28 seeds/task IDs/MP4s as R54 results",
+      "requeueing cancelled pre-R40 ADV cards",
+      "claiming current images, render, audio or feeling are validated"
+    ]
+  },
+  "viewer_impression_hypothesis": {
+    "first": "她面向原路线，已经从上一次提醒中恢复。",
+    "shift": "同类声音再次出现，她明确听见，但反应只到耳朵、眼睛和极小头动。",
+    "final": "她可能被读成敏锐、有选择地分配注意力，而不是害怕、麻木或没听见。",
+    "alternatives": [
+      "观众可能误读为没听见",
+      "微小头动可能被生成抖动吞掉",
+      "肩部回正可能不够清楚"
+    ],
+    "status": "EXPECTED_ONLY_PENDING_BLIND_REVIEW"
+  },
+  "subject_definition": {
+    "single_subject": "exactly one physical MOUSE-EAR-MUTANT-001 instance",
+    "identity_lock": [
+      "white short hair and top curl",
+      "two short skull-attached translucent pale-purple mouse ears",
+      "small slender body",
+      "pale tunic with dark trim",
+      "cross-body strap and existing side bag",
+      "oversized dark shoes"
+    ],
+    "single_instance_rule": "all Picture 1 views describe one person"
+  },
+  "retention_analysis": {
+    "must_retain": [
+      "mouse identity and two-ear topology",
+      "SCENE-08 identity",
+      "one off-screen stimulus only inside the clip",
+      "ear then eyes then tiny head response",
+      "forward body alignment",
+      "11-second six-beat structure",
+      "16:9 fixed full-body shot",
+      "fixed soft light",
+      "single prompt dual sampling"
+    ],
+    "not_yet_verified": [
+      "same-character identity",
+      "H3 four-grid layout",
+      "SCENE-08 actual binding and geometry",
+      "ear/eye readability at full-body scale",
+      "audio track",
+      "viewer feeling"
+    ]
+  },
+  "changed_variable": {
+    "type": "response_depth_to_repeated_unchanged_stimulus",
+    "description": "within the story, the only decision variable is whether the repeated unchanged cue recruits the whole body; direction, intensity, scene, route orientation, camera and light stay fixed; this task selects ear/eye confirmation with no whole-body reopening"
+  },
+  "ten_yuan_explanation": {
+    "internal_only": true,
+    "primary": {
+      "code": "N",
+      "volume": 8
+    },
+    "secondary": {
+      "code": "NZ",
+      "volume": 7
+    },
+    "variables": [
+      {
+        "code": "Z",
+        "volume": 5
+      },
+      {
+        "code": "XN",
+        "volume": 8
+      }
+    ],
+    "chain": "N8 -> NZ8克N7 -> Z5补NZ8 -> XN8克Z3 -> N8补XN8",
+    "status": "EXPERIMENTAL_HYPOTHESIS_NOT_VALIDATED"
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "nodes": [
+      {
+        "node_id": "n0_recovered_baseline",
+        "time": "0-2s",
+        "observable_event": "forward posture restored; feet planted",
+        "relation_class": "共存",
+        "relation_direction": "N + XN",
+        "camera_change": "none"
+      },
+      {
+        "node_id": "n1_repeated_cue",
+        "time": "2-4s",
+        "observable_event": "one mild off-screen repetition with no source",
+        "relation_class": "克",
+        "relation_direction": "NZ -> N",
+        "camera_change": "none"
+      },
+      {
+        "node_id": "n2_ear_confirmation",
+        "time": "4-6s",
+        "observable_event": "near ear pivots; body stays forward",
+        "relation_class": "补",
+        "relation_direction": "Z -> NZ",
+        "camera_change": "none"
+      },
+      {
+        "node_id": "n3_eye_tiny_head_check",
+        "time": "6-8s",
+        "observable_event": "eyes side-check; head starts then stops",
+        "relation_class": "克",
+        "relation_direction": "XN -> Z",
+        "camera_change": "none"
+      },
+      {
+        "node_id": "n4_forward_settle",
+        "time": "8-10s",
+        "observable_event": "shoulders settle once to original alignment",
+        "relation_class": "补",
+        "relation_direction": "N -> XN",
+        "camera_change": "none"
+      },
+      {
+        "node_id": "n5_closed_response",
+        "time": "10-11s",
+        "observable_event": "all response motion stops; feet stay planted",
+        "relation_class": "共存",
+        "relation_direction": "N + XN",
+        "camera_change": "none"
+      }
+    ],
+    "validation_question": "Can viewers see that she heard the repeated cue while the response depth stops before shoulders, pelvis and feet are recruited?"
+  },
+  "time_beats": [
+    {
+      "time": "0-2s",
+      "beat": "stable recovered starting state; forward route posture"
+    },
+    {
+      "time": "2-4s",
+      "beat": "one repeated mild off-screen stimulus, same direction and intensity"
+    },
+    {
+      "time": "4-6s",
+      "beat": "near ear confirms while body remains still"
+    },
+    {
+      "time": "6-8s",
+      "beat": "eyes side-check; tiny head response stops early"
+    },
+    {
+      "time": "8-10s",
+      "beat": "one small shoulder settle back to forward alignment"
+    },
+    {
+      "time": "10-11s",
+      "beat": "response motion stops; forward-oriented result"
+    }
+  ],
+  "shot_grammar": {
+    "shot": "locked eye-level full-body medium-wide three-quarter view",
+    "aspect_ratio": "16:9 landscape",
+    "camera_movement": "none",
+    "cut": "none",
+    "lighting": "fixed soft diffuse",
+    "composition": "ears, eyes, shoulders, pelvis, feet, side bag and supported SCENE-08 layers readable together"
+  },
+  "h3_prompt": "Subject: Landscape 16:9, one continuous 11-second single-character narrative. Show exactly one physical instance of MOUSE-EAR-MUTANT-001 from Picture 1. Preserve her short white hair with eye-covering fringe and small top curl, exactly two short translucent pale-purple mouse ears attached directly to the sides of the skull, small slender body, pale oversized tunic with dark trim, cross-body strap, existing side bag and oversized dark shoes. Every reference view represents the same single character. Keep her identity, proportions, ear topology, clothing, carried items, materials and reference colors unchanged.\n\nMovement: From 0 to 2 seconds she stands in a stable forward-facing route posture with both feet planted; an earlier harmless cue has already ended before this clip and her attention is forward. From 2 to 4 seconds one soft off-screen sound repeats once from the same side and at the same mild intensity, with no visible source and no new information. From 4 to 6 seconds only the nearer mouse ear pivots toward the sound while her torso, shoulders, pelvis, hands and feet remain still. From 6 to 8 seconds her eyes make one brief sideways check and her head begins only a tiny turn, then stops before completing a second full response. From 8 to 10 seconds her shoulders make one small settling movement back into the original forward alignment; her hands remain quiet and she does not step toward the sound. From 10 to 11 seconds the ear, eyes, head and shoulders stop moving, both feet remain planted, and the result is a clear forward-oriented refusal to reopen the completed response.\n\nScene: Picture 2 defines SCENE-08, the established heterogeneous-village environment, its existing elements, usable space, spatial continuity and original two-color dominant relationship. The sound source remains outside the frame. Do not invent a person, creature, building, door, machine, prop, route, reflection figure or unseen reverse view.\n\nCamera: One locked eye-level full-body medium-wide three-quarter view in a 16:9 landscape frame. Keep both mouse ears, eyes, head, shoulders, pelvis, both feet, existing side bag and supported scene layers readable together. Fixed framing, focal length, axis and horizon; no push, pull, pan, tilt, tracking, reframing, close-up, cut, transition or split screen.\n\nLighting: Preserve Picture 1 materials and Picture 2 palette logic under one fixed soft diffuse light. Maintain clear two-dimensional shapes and readable separation without imposing a new palette. No new glow, flashing, relighting, weather change, sudden saturation shift or color redesign.\n\nAtmosphere: She clearly hears the repeated request for attention but does not let unchanged information take control of her whole body again. The intended impression is selective attention rather than fear, numbness or failure to hear. Use restrained hand-drawn motion, clean line-and-shape separation, quiet pacing and a clear ear-to-eye-to-head sequence.\n\nAudio: Ambient soundscape: low village room tone, faint air and subtle cloth presence, with exactly one mild off-screen sound during 2 to 4 seconds; no visible source. Emotional sound cue: one very sparse non-melodic tonal lift during the ear-and-eye confirmation, returning immediately as her shoulders settle; no lyrics and no strong beat. Audio supports spatial direction, action readability and restrained emotion only; it does not drive cuts and is not music-video editing.\n\nNegative: exactly one character and one physical body, no duplicate character, no second human figure, no split screen, no clone or mirror-double, no reflection person, no crowd, no NPC, no visible sound source, no invented creature, no extra limbs, no extra ears, no wings or back-mounted appendages, no text overlay, no watermark, no abrupt redesign, no route change, no approach toward the sound, no full body turn, no full second head turn, no fear recoil, no repeated adjustment, no camera movement, no cut, no transition, no weather change, no abrupt color shift, no lyrics, no strong beat, no MV editing, no glossy 3D rendering.",
+  "audio_design": {
+    "ambient_soundscape": "low village room tone, faint air and cloth presence, exactly one mild off-screen sound during 2-4s, no visible source",
+    "emotional_sound_cue": "one sparse non-melodic tonal lift during ear-eye confirmation and immediate return during shoulder settle; no lyrics or strong beat",
+    "audio_role": "support direction, action readability and restrained emotion only; do not drive cuts; not MV editing",
+    "actual_audio_track_status": "UNKNOWN_PENDING_WORK"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "same_prompt_and_inputs": true,
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "compare_axes": [
+      "mouse identity",
+      "two-ear skull topology",
+      "single-character count",
+      "stimulus audibility",
+      "ear-before-eye timing",
+      "tiny incomplete head turn",
+      "shoulder/pelvis/feet non-recruitment",
+      "fixed-camera stability",
+      "viewer selective-attention language"
+    ],
+    "actual_completed_runs": 0
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no visible sound source",
+    "no wings or back-mounted appendages",
+    "no full body turn",
+    "no route change",
+    "no camera movement or cut",
+    "no weather or color change",
+    "no MV editing"
+  ],
+  "must_keep": [
+    "MOUSE-EAR-MUTANT-001 identity",
+    "exactly two skull-attached ears",
+    "existing strap and side bag",
+    "SCENE-08 identity",
+    "11 seconds",
+    "16:9 landscape",
+    "six fixed time beats",
+    "fixed camera/light",
+    "same prompt and inputs for run_A/run_B"
+  ],
+  "must_avoid": [
+    "9:16 output",
+    "two-prompt/four-sample B3 plan",
+    "using old R28 outputs as R54",
+    "requeueing cancelled ADV cards",
+    "invented source or scene geometry",
+    "large turn or approach",
+    "camera movement",
+    "unverified render/audio/feeling claims"
+  ],
+  "validation_target": {
+    "input_gate": [
+      "Picture 1 bound path/SHA/dimensions",
+      "same-character true/false",
+      "H3 layout true/false",
+      "Picture 2 bound path/SHA/dimensions",
+      "SCENE-08 geometry true/false",
+      "full-body ear/eye readability true/false"
+    ],
+    "action_gate": "one cue only; ear precedes eyes; head response stays tiny; shoulders settle once; pelvis and feet never turn toward cue; response stops at 10-11s",
+    "result_gate": "2/2 real R54 runs plus relay acceptance, node frames, audio evidence and blind feedback"
+  },
+  "input_validation": {
+    "picture_1_registered_path": "D:/H3/pool/character_refs/030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "picture_1_sha256_candidate": "417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef",
+    "picture_1_dimensions_candidate": "941x1672",
+    "same_character_visual_verified": null,
+    "h3_four_grid_layout_verified": null,
+    "picture_2_registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png",
+    "picture_2_git_blob": "3f0a6664e66899a228a8513bfc70688c0a866908",
+    "picture_2_actual_bound_path": null,
+    "picture_2_sha256": null,
+    "picture_2_dimensions": null,
+    "scene_geometry_check": null
+  },
+  "dispatch_contract": {
+    "schema_version": "video_tenyuan_prompt_schema_v1.2",
+    "relay_task_id": "MOUSE_B_20260925_0607_R54__v10_RELAY",
+    "clip_id": "A",
+    "source_asset_paths": {
+      "character": "D:/H3/pool/character_refs/030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+      "scene": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png"
+    },
+    "compatibility_status": "STRUCTURE_READY_INPUT_VISUAL_VALIDATION_PENDING"
+  }
+}
