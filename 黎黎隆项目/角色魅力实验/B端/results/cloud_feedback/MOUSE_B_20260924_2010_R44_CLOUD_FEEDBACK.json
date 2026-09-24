@@ -1,0 +1,105 @@
+{
+  "schema_version": "B-H3-CLOUD-FEEDBACK-1.1",
+  "task_id": "MOUSE_B_20260924_2010_R44",
+  "parent_task_id": "MOUSE_B_20260924_1910_R43",
+  "status": "pending",
+  "input_bindings": {
+    "picture_1": {
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "candidate_path": "D:/H3/pool/character_refs/030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+      "candidate_sha256": "417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef",
+      "candidate_dimensions": [
+        941,
+        1672
+      ],
+      "github_evidence_path": "黎黎隆项目/角色魅力实验/B端/results/inputs/MOUSE_B_20260923_1107_R11/0_character_030F6E3B89E0998CBF695064BC27C2A8.jpg",
+      "byte_validation": "validated_with_warnings",
+      "same_character_verified": null,
+      "actual_bound_path": null
+    },
+    "picture_2": {
+      "scene_asset_id": "SCENE-08",
+      "registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png",
+      "github_blob": "3f0a6664e66899a228a8513bfc70688c0a866908",
+      "actual_bound_path": null,
+      "sha256": null,
+      "dimensions": null,
+      "geometry_check": null
+    }
+  },
+  "final_prompt_hash": null,
+  "workflow_id": null,
+  "review_evidence_contract": {
+    "required_per_run": [
+      "start",
+      "middle",
+      "end"
+    ],
+    "required_fields": [
+      "timestamp_seconds",
+      "path_or_url",
+      "sha256",
+      "resolution"
+    ],
+    "full_video_upload_required": false
+  },
+  "run_A": {
+    "seed": null,
+    "execution_record": "pending_first_execution",
+    "work_task_id": null,
+    "keyframes": {
+      "start": {
+        "timestamp_seconds": null,
+        "path_or_url": null,
+        "sha256": null,
+        "resolution": null
+      },
+      "middle": {
+        "timestamp_seconds": null,
+        "path_or_url": null,
+        "sha256": null,
+        "resolution": null
+      },
+      "end": {
+        "timestamp_seconds": null,
+        "path_or_url": null,
+        "sha256": null,
+        "resolution": null
+      }
+    },
+    "full_video_upload_required": false,
+    "status": "planned"
+  },
+  "run_B": {
+    "seed": null,
+    "execution_record": "pending_second_execution",
+    "work_task_id": null,
+    "keyframes": {
+      "start": {
+        "timestamp_seconds": null,
+        "path_or_url": null,
+        "sha256": null,
+        "resolution": null
+      },
+      "middle": {
+        "timestamp_seconds": null,
+        "path_or_url": null,
+        "sha256": null,
+        "resolution": null
+      },
+      "end": {
+        "timestamp_seconds": null,
+        "path_or_url": null,
+        "sha256": null,
+        "resolution": null
+      }
+    },
+    "full_video_upload_required": false,
+    "status": "planned"
+  },
+  "errors": [],
+  "audio_support": "unknown",
+  "created_at": "2026-09-24T20:10:37+08:00",
+  "completed_at": null,
+  "note": "Pending R44 contract. The old R11 run is source evidence only and must not be copied into these run slots."
+}
