@@ -1,7 +1,7 @@
 {
   "schema_version": "B-H3-RESULT-1.2",
   "task_id": "ADV_B_20260925_0406_R52",
-  "status": "pending_work_execution",
+  "status": "work_rendering",
   "actual_completed_runs": 0,
   "current_task_runs": {
     "run_A": {
@@ -81,5 +81,13 @@
   "evidence_limit": "These legacy records prove execution records and paths only. No frames/audio audit was provided, and none of their seeds, IDs or outputs belong to R52.",
   "input_validation_status": "pending_image_validation",
   "render_validation_status": "not_started",
-  "blind_review_status": "pending"
+  "blind_review_status": "pending",
+  "claimed_by": "relay-gh@DESKTOP-FKEUGLS",
+  "claimed_at": "2026-09-25 07:11:58",
+  "claimed_run_key": "ADV_B_20260925_0406_R52",
+  "work_writeback": {
+    "updated_at": "2026-09-25 07:11:58",
+    "by": "relay-gh",
+    "host": "DESKTOP-FKEUGLS"
+  }
 }
