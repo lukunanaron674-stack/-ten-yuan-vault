@@ -1,7 +1,7 @@
 {
   "schema_version": "B-H3-RESULT-1.2",
   "task_id": "ADV_B_20260925_0508_R53",
-  "status": "pending_work_execution",
+  "status": "work_rendering",
   "actual_completed_runs": 0,
   "planned_run_count": 2,
   "render_claim": false,
@@ -50,5 +50,13 @@
       "commit": "c9f894399ad7ce73fe0be7ed8f410305fad11b8b"
     }
   ],
-  "h3_validation_status": "NOT_VALIDATED_PENDING_BINDINGS_AND_REAL_OUTPUTS"
+  "h3_validation_status": "NOT_VALIDATED_PENDING_BINDINGS_AND_REAL_OUTPUTS",
+  "claimed_by": "relay-gh@DESKTOP-FKEUGLS",
+  "claimed_at": "2026-09-25 07:42:20",
+  "claimed_run_key": "ADV_B_20260925_0508_R53",
+  "work_writeback": {
+    "updated_at": "2026-09-25 07:42:20",
+    "by": "relay-gh",
+    "host": "DESKTOP-FKEUGLS"
+  }
 }
