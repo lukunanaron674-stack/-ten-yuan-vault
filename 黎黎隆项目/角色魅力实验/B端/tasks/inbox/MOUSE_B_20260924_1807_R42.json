@@ -1,0 +1,322 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "task_id": "MOUSE_B_20260924_1807_R42",
+  "task_version": "v1.0",
+  "parent_task_id": "MOUSE_B_20260924_1705_R41",
+  "created_at": "2026-09-24T18:07:43+08:00",
+  "status": "queued_for_work_execution",
+  "project": "黎黎隆项目/角色魅力实验/B端",
+  "video_mode": "single_character_narrative",
+  "duration_seconds_range": [
+    10,
+    11
+  ],
+  "planned_duration_seconds": 11,
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "scene_asset_id": "SCENE-08",
+  "reference_view": {
+    "type": "both",
+    "primary_dynamic_view": "half_body_dynamic",
+    "secondary_identity_view": "full_body_identity",
+    "picture_mapping": {
+      "picture_1": "Work binds MOUSE-EAR-MUTANT-001 half-body dynamic and full-body identity references as the same single character; pending_image_validation",
+      "picture_2": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png",
+      "picture_2_github_blob_sha": "3f0a6664e66899a228a8513bfc70688c0a866908"
+    },
+    "binding_status": "pending_image_validation"
+  },
+  "source_classification": {
+    "confirmed": [
+      {
+        "source": "B-H3 task template v1.2",
+        "blob": "7ae05c07e14008c722433d8008cc6a4aa064cc2f",
+        "fact": "one 10-11 second prompt and two executions"
+      },
+      {
+        "source": "B-H3 time/audio rule v1.2",
+        "blob": "c830cdc044f4b570128b36b648965653341a7b9d",
+        "fact": "six fixed beats, fixed camera and non-MV audio"
+      },
+      {
+        "source": "character pool v1.5",
+        "blob": "59810586b7b8ada9c9a263975a4769b3c4f8ca7a",
+        "fact": "MOUSE-EAR-MUTANT-001 remains text-task eligible but pending image validation"
+      },
+      {
+        "source": "mouse-ear identity v1.1",
+        "blob": "f38ba601045c6ae3b763983aaeee6a11987b9204",
+        "fact": "identity locks remain unchanged"
+      },
+      {
+        "source": "scene pool v1",
+        "blob": "26384b61a8ef8314cf8b5cee81934beed846c021",
+        "fact": "SCENE-08 remains the registered two-color strange-village environment"
+      },
+      {
+        "source": "B1 R41 asset audit",
+        "commit": "4d104744b73accd1006e75842eb7cebf764f2f98",
+        "blob": "69413bac38357f9adae16629a04cdd2bea79729e",
+        "fact": "Picture 1 remains unbound, SCENE-08 geometry remains ambiguous and actual executions remain 0/2"
+      },
+      {
+        "source": "B4 R41 quality audit",
+        "commit": "0f05c2a17f78148fe6347e91d37005ff6888815d",
+        "blob": "a8afd0ca9afa45c85a01f3033755a0d6b5d6b89d",
+        "fact": "freeze R41 chain and prompt; require real cloud feedback fields before any completed claim"
+      },
+      {
+        "source": "R41 frozen visual prompt",
+        "commit": "d7294fdce580938af4220b15ac0bd188f1254100",
+        "fact": "R42 h3_prompt is preserved exactly for controlled operational repeat"
+      }
+    ],
+    "candidate_hypotheses": [
+      {
+        "source": "R41 design hypothesis",
+        "task_id": "MOUSE_B_20260924_1705_R41",
+        "use": "ear-first response sequence remains a pending hypothesis until real video output exists"
+      }
+    ],
+    "excluded_due_to_current_rules": [
+      "any new story, action, camera, lighting, weather, color or scene-object change",
+      "any inference that B1/B4 text review equals image or video validation",
+      "any fabricated input path, SHA-256, workflow ID, seed, task ID, output ID, URL or resolution",
+      "older two-clip 15-second and four-run structures"
+    ]
+  },
+  "subject_definition": {
+    "single_subject": "exactly one MOUSE-EAR-MUTANT-001 physical instance",
+    "identity_lock": [
+      "white short hair with eye-covering fringe and top curl",
+      "large translucent pale-purple mutated mouse-ear structures",
+      "small body and slender limbs",
+      "loose pale short tunic with dark blocks",
+      "dark cross-body strap and existing side bag",
+      "pale socks and oversized dark shoes",
+      "quiet cautious expression language"
+    ],
+    "environment_lock": "SCENE-08 identity, existing spatial continuity and two-color palette logic only",
+    "single_instance_rule": "four-grid or multiple reference views describe one character and must not become multiple figures"
+  },
+  "retention_analysis": {
+    "must_retain": [
+      "ear attachment, shape and restrained translucency",
+      "face, hair silhouette and small proportions",
+      "tunic, strap and side-bag continuity",
+      "SCENE-08 original palette and supported geometry",
+      "one-character single-instance continuity",
+      "fixed shot, light and focal length"
+    ],
+    "risk_controls": [
+      "keep feet planted",
+      "limit ear rotation to a few degrees",
+      "limit head turn to a few degrees",
+      "one hand only presses an existing bag",
+      "never reveal the sound source"
+    ],
+    "pending": [
+      "character original binding and same-person verification",
+      "SCENE-08 visual geometry check",
+      "H3 render and audio capability"
+    ]
+  },
+  "changed_variable": {
+    "single_variable": "execution feedback contract only",
+    "before": "R41 has a frozen visual prompt and planned result record but no dedicated cloud feedback instance",
+    "after": "R42 preserves the R41 visual prompt exactly and adds a pending cloud feedback record requiring real binding, workflow and run evidence",
+    "visual_prompt_change": "none",
+    "controlled_constants": [
+      "character",
+      "scene",
+      "reference views",
+      "11-second six-beat movement",
+      "camera",
+      "shot size",
+      "lighting",
+      "atmosphere",
+      "audio design",
+      "negative constraints",
+      "full h3_prompt"
+    ]
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "chain": "N8 → NZ7 → Z5",
+    "relation": "NZ supports a small Z redirection while N remains dominant",
+    "start_change_result": "安静收束站定 → 单一场外轻响建立方向关系 → 鼠耳先转、眼头跟随、按稳侧包后停住",
+    "visible_translation": "still posture → one off-screen cue → ear-first local response → gaze/head alignment → compact hand posture → held result",
+    "prompt_exclusion": "ten-yuan labels and 生克补 terminology do not enter h3_prompt"
+  },
+  "time_beats": [
+    {
+      "time": "0-2s",
+      "beat": "Starting state: she stands quietly, shoulders gathered, both feet planted and hands near her body."
+    },
+    {
+      "time": "2-4s",
+      "beat": "Only external stimulus: one faint nonverbal dry tap or air resonance occurs off screen from one side."
+    },
+    {
+      "time": "4-6s",
+      "beat": "Local reaction: nearer mutated ear pivots a few degrees; the other ear settles slightly; torso and feet remain still."
+    },
+    {
+      "time": "6-8s",
+      "beat": "Eyes follow and the head turns only a few degrees toward the sound."
+    },
+    {
+      "time": "8-10s",
+      "beat": "One hand presses the already existing side bag against her hip without changing the strap layout."
+    },
+    {
+      "time": "10-11s",
+      "beat": "All motion stops, preserving her position and cautious distance while attention remains redirected."
+    }
+  ],
+  "shot_grammar": {
+    "aspect_ratio": "9:16",
+    "shot_size": "three-quarter knee-up medium shot",
+    "camera_height": "eye-level",
+    "camera_angle": "three-quarter view",
+    "foreground": "only existing supported foreground spacing; no invented prop",
+    "midground": "one mouse-ear mutant girl, single instance",
+    "background": "SCENE-08 supported village layers and two-color negative space",
+    "subject_position": "center-lower area with clear space above and beside both ears",
+    "camera_movement": "locked_off",
+    "lens_and_framing": "fixed",
+    "lighting": "fixed soft diffuse light using reference palette logic",
+    "transition": "none",
+    "needs_environment_inference": true
+  },
+  "h3_prompt": "Subject: Vertical 9:16, one continuous 11-second single-character narrative. Show exactly one physical instance of the established mouse-ear mutant girl from the bound character references. Preserve her small body, slender limbs, white short hair with eye-covering fringe and top curl, large translucent pale-purple mutated mouse-ear structures attached at both sides of the head, quiet cautious face, loose pale short tunic, dark collar, cuffs, hem and shorts, dark cross-body strap, existing side bag, pale socks and oversized dark shoes. Picture 1 and the secondary identity view represent the same single person, never multiple people.\n\nMovement: From 0 to 2 seconds she stands quietly with both feet planted, shoulders slightly gathered and both hands near her body. From 2 to 4 seconds one faint nonverbal dry tap or air resonance occurs off screen from one side; the source is never shown. From 4 to 6 seconds only the nearer translucent ear pivots a few degrees toward the sound, followed by a smaller settling movement from the other ear; her torso and feet remain still. From 6 to 8 seconds her eyes follow the ear direction and her head turns only a few degrees, without stepping. From 8 to 10 seconds one hand gently presses the already existing side bag against her hip, tightening her compact posture without changing the strap layout. From 10 to 11 seconds all movement stops; her attention remains oriented toward the sound while her original position and cautious distance are preserved.\n\nScene: Picture 2 defines SCENE-08, the same two-color strange-village environment, its existing spatial continuity, negative space and original palette logic. Use only village forms, ground, depth layers and color relationships visibly supported by the bound scene image. Do not invent a door, bridge, rope, stall, animal, creature, person, machine, sign or story prop. The off-screen sound remains nonvisual and does not create a second subject.\n\nCamera: One locked eye-level three-quarter knee-up medium shot for the entire sequence. Keep both mutated ears, face, torso, cross-body strap and side bag readable in one stable composition, with enough empty space above and beside the ear movement. Fixed framing, fixed focal length, no push-in, no pull-back, no pan, no tilt, no tracking, no cut, no transition and no split-screen composition.\n\nLighting: Preserve the bound character materials and the scene reference's original two-color palette logic. Use one fixed soft diffuse light throughout. Keep the pale-purple ear translucency restrained and consistent; no flashing, relighting, weather change, sudden saturation shift or color redesign.\n\nAtmosphere: Quiet, cautious and attentive rather than frightened or theatrical. Use clear two-dimensional hand-drawn shapes, clean variable-width ink contours, light watercolor softness, low-saturation shadows and sufficient negative space only where compatible with the bound character and scene references. Do not copy another character's cyan-white energy body, materials or identity.\n\nAudio: Ambient soundscape: very light village air, faint distant structural creak and soft cloth movement, with one small nonverbal dry tap or air resonance at 2 to 4 seconds. Emotional sound cue: one restrained thin suspended tone enters after the ear turns and fades into the final stillness, with no lyrics and no strong beat. Audio supports spatial direction, ear-first action readability and cautious emotion; it does not drive cuts and is not music-video editing.\n\nNegative: exactly one character and one physical body, no duplicate character, no second human figure, no split screen, no clone or mirror-double, no mirror duplicate, no reflection person, no crowd, no NPC, no visible sound source, no rabbit ears, no tail, no horns, no wings, no armor, no weapon, no invented prop, no extra limbs, no deformed hands, no altered strap layout, no missing side bag, no camera movement, no cut, no transition, no weather change, no abrupt color shift, no text overlay, no watermark, no abrupt redesign.",
+  "audio_design": {
+    "ambient_soundscape": "very light village air, faint distant structural creak, soft cloth movement, and one small nonverbal dry tap or air resonance at 2-4 seconds",
+    "emotional_sound_cue": "one restrained thin suspended tone after the ear turn, fading into the final stillness; no lyrics and no strong beat",
+    "audio_role": "support spatial direction, ear-first action readability and cautious emotion; not MV editing and not a cut-driving beat",
+    "audio_output_status": "design_only_until_work_confirms_audio_support"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "duration_seconds_range": [
+      10,
+      11
+    ],
+    "identical_prompt_and_inputs_required": true,
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "seed_policy": "record real seed_A/seed_B only if Work returns or supports them; otherwise retain first_execution/second_execution labels",
+    "compare_axes": [
+      "character_consistency",
+      "ear_first_timing",
+      "gaze_head_follow_readability",
+      "existing_side_bag_action_readability",
+      "camera_stability",
+      "scene_palette_continuity",
+      "no_duplicate_character"
+    ]
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no mirror duplicate or reflection person",
+    "no rabbit-ear conversion",
+    "no visible sound source",
+    "no invented village prop",
+    "no camera movement or transition",
+    "no sudden lighting, weather or color change"
+  ],
+  "must_keep": [
+    "one character and one scene",
+    "same face, hair, mutated mouse ears and small body",
+    "same tunic, strap and side bag",
+    "fixed framing, focal length and light",
+    "one off-screen stimulus only",
+    "ear before eyes/head",
+    "two identical-prompt executions"
+  ],
+  "must_avoid": [
+    "second figure, clone, crowd or split screen",
+    "turning the ears into rabbit ears, wings or ornaments",
+    "a step, run, jump or fight",
+    "inventing the sound source or village object",
+    "moving camera, cut, transition or relighting",
+    "claiming unexecuted seeds, render or audio"
+  ],
+  "validation_target": {
+    "primary": "obtain two real executions of the frozen R41 prompt without altering prompt or inputs",
+    "pass_conditions": [
+      "Picture 1 binding includes a real path or attachment ID, SHA-256, dimensions and same-character verification",
+      "Picture 2 binding records the actual SCENE-08 path/blob and visual geometry check",
+      "final workflow prompt matches this h3_prompt",
+      "run_A and run_B use identical prompt, images and parameters except actual randomness or seed",
+      "both runs return real work_task_id and output evidence",
+      "visual sequence remains ear first, then eyes, then slight head turn, bag press, complete stop",
+      "exactly one character, fixed camera and fixed lighting"
+    ],
+    "fail_conditions": [
+      "input binding cannot be completed",
+      "workflow prompt or LoadImage inputs differ from this task",
+      "either run is not actually executed",
+      "duplicate character, identity drift, body-first response, invented prop or camera/light change appears",
+      "pending values are presented as completed evidence"
+    ],
+    "cloud_feedback_path": "黎黎隆项目/角色魅力实验/B端/results/cloud_feedback/MOUSE_B_20260924_1807_R42_CLOUD_FEEDBACK.json",
+    "status": "pending_work_execution_and_image_validation"
+  },
+  "version_tracking": {
+    "rule_version": "B-H3-TASK-1.2",
+    "previous_task": "MOUSE_B_20260924_1705_R41",
+    "comparison_mode": "frozen-prompt operational repeat",
+    "before": "R41 established the 11-second ear-first response prompt but had no real Work execution or dedicated feedback instance.",
+    "after": "R42 keeps the R41 h3_prompt byte-for-byte identical and adds an explicit pending cloud feedback contract.",
+    "same_as_parent": [
+      "character",
+      "scene",
+      "reference_view",
+      "subject definition",
+      "retention analysis",
+      "dynamic chain",
+      "six time beats",
+      "shot grammar",
+      "h3_prompt",
+      "audio design",
+      "negative constraints",
+      "must_keep",
+      "must_avoid"
+    ],
+    "confounders": [
+      "character images remain unbound",
+      "SCENE-08 geometry remains visually unchecked",
+      "no Work output exists yet",
+      "the only changed variable is evidence capture, not visual content"
+    ]
+  },
+  "result_claim": {
+    "planned_runs": 2,
+    "actual_completed_runs": 0,
+    "seed_A": null,
+    "seed_B": null,
+    "work_task_id_A": null,
+    "work_task_id_B": null,
+    "render_claim": null,
+    "audio_track_claim": null,
+    "h3_validation_claim": null,
+    "cloud_feedback_status": "pending"
+  }
+}
