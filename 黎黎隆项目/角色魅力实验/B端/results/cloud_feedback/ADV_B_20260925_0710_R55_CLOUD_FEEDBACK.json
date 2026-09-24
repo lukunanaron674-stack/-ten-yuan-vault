@@ -1,0 +1,38 @@
+{
+  "schema_version": "B-H3-CLOUD-FEEDBACK-1.2",
+  "task_id": "ADV_B_20260925_0710_R55",
+  "status": "pending",
+  "required_runs": [
+    "run_A",
+    "run_B"
+  ],
+  "required_per_run": {
+    "real_seed_or_execution_order": true,
+    "work_task_id": true,
+    "output_sha256": true,
+    "input_asset_hashes": true,
+    "keyframes": [
+      "head",
+      "mid",
+      "tail"
+    ],
+    "visible_human_count_each_frame": true,
+    "audio_track_status": true
+  },
+  "hard_fail_if": [
+    "any frame contains a second human figure",
+    "any reflection or screen contains a person-like figure",
+    "run_A and run_B use different prompt or inputs",
+    "camera/framing changes",
+    "seed or task ID is copied from R50"
+  ],
+  "review_labels": [
+    "PASS_SINGLE_CHARACTER",
+    "FAIL_EXTRA_HUMAN",
+    "FAIL_REFLECTION_PERSON",
+    "FAIL_IDENTITY",
+    "FAIL_SCENE_DRIFT",
+    "INDETERMINATE"
+  ],
+  "notes": "R50 six-frame evidence is historical failure evidence only."
+}
