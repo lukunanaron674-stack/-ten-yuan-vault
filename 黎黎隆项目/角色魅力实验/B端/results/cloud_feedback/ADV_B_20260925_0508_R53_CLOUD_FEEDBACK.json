@@ -1,0 +1,43 @@
+{
+  "schema_version": "B-H3-CLOUD-FEEDBACK-1.2",
+  "task_id": "ADV_B_20260925_0508_R53",
+  "status": "pending",
+  "relay_received": null,
+  "workflow": null,
+  "fps": null,
+  "total_frames": null,
+  "input_bindings": {
+    "character_path": null,
+    "character_sha256": null,
+    "scene_path": null,
+    "scene_sha256": null
+  },
+  "runs": {
+    "run_A": {
+      "seed": null,
+      "task_id": null,
+      "status": null,
+      "output": null,
+      "node_frames": null,
+      "audio_review": null
+    },
+    "run_B": {
+      "seed": null,
+      "task_id": null,
+      "status": null,
+      "output": null,
+      "node_frames": null,
+      "audio_review": null
+    }
+  },
+  "blind_review": {
+    "status": "pending",
+    "questions": [
+      "角色首先给人的具体感受是什么？",
+      "眼先头后的次序是否可见？",
+      "按带是老练自我管理还是紧张纠错？",
+      "五色背景是否削弱了剪影和手部可读性？"
+    ]
+  },
+  "prohibition": "Do not import legacy seeds, task IDs or outputs as R53 evidence."
+}
