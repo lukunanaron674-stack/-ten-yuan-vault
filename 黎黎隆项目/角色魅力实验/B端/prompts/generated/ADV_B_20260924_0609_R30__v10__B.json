@@ -1,0 +1,51 @@
+{
+  "task_id": "ADV_B_20260924_0609_R30__v10__B",
+  "parent_task_id": "ADV_B_20260924_0609_R30",
+  "schema_version": null,
+  "clip_id": "B",
+  "prompt_chars": 3642,
+  "dual_sample": true,
+  "samples": [
+    {
+      "run": "run_A",
+      "task_id": "ADV_B_20260924_0609_R30__v10__B_run_A_0924202127",
+      "seed": 611463454,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__B_run_A_00003_.mp4"
+    },
+    {
+      "run": "run_B",
+      "task_id": "ADV_B_20260924_0609_R30__v10__B_run_B_0924202127",
+      "seed": 1465977840,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__B_run_B_00003_.mp4"
+    }
+  ],
+  "dynamic_chain_reading": "",
+  "shot_sequence": [],
+  "must_keep_check": [],
+  "negative_prompt": "no text, no subtitle, no logo, no random unreadable text",
+  "refs_source": "task",
+  "refs_used": [
+    "ADV-001_冒险者_H3_sheet_001.jpg",
+    "R4-04_机械空港_合_稳定结果.png"
+  ],
+  "frames": 240,
+  "audio_design": {
+    "ambient_soundscape": "quiet airfield machinery, soft wind, equipment strain, lantern contact and receding footsteps",
+    "emotional_sound_cue": "Segment A suspended tone opens slightly after hand release and resolves quietly without percussion",
+    "audio_role": "support release, cost and departure, never MV rhythm"
+  },
+  "h3_prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds, continuing directly from the selected real ending frame of Segment A.\n\nSTYLE IDENTITY LOCK: preserve the exact drawing language, materials, surface wear and original colors shared by Picture 1 and Picture 2. Keep the adventurer's broad grounded proportions, dark teal-black layered worn cloak, purple cloth, red scarf and crossing straps, pale metal shoulder structure, heavy backpack and rolled load, gloves, boots, and the same single cyan-lit lantern now held in his hand. Do not impose cyan-white luminous skin, a glossy 3D finish, or colors that conflict with the references.\n\nVISUAL EXPRESSION VARIABLE: use restrained readable 2D motion, clear line-weight variation, soft atmospheric depth and negative space only where compatible with the references. Let spatial separation carry the emotion; avoid theatrical posing and rhythmic montage.\n\nCHARACTER (Picture 1): show exactly one established heavy adult adventurer with short dark hair, thick beard and a tired experienced face. Picture 1 is a multi-view identity reference for one physical person. Maintain the complete backpack and load throughout.\n\nENVIRONMENT (Picture 2): preserve the same quiet mechanical-airfield location, its actual existing structures, spatial continuity and palette logic. Picture 2 does not lock the shot size. Use only a real existing floor, ground edge or other placement surface that Work verifies in Picture 2; if no raised support is visible, use the existing floor. Do not invent a support structure.\n\nCAMERA AND COMPOSITION: start from the same screen direction, lighting direction and character position as the selected Segment A ending. Use a close three-quarter waist-and-hand view for the placement, then gently widen on the same axis to a long full-body shot. Keep the lantern readable in the lower or middle foreground while the adventurer recedes deeper into the vertical frame. If Picture 2 cannot support the widening, keep the camera fixed and preserve the same spatial relationship.\n\nACTION: holding the same single lantern removed in Segment A, the adventurer steps only far enough to reach the verified existing surface. He lowers the lantern, adjusts its orientation once and removes his hand completely. The cyan light remains steady. He looks at the route it now marks, then turns away. He walks onward alone with the heavy backpack still on his body. His cloak, straps and bedroll settle under the load as he becomes smaller in frame or exits, while the lantern remains behind in the same environment. End in complete stillness with a clear physical separation between the departing adventurer and the one light he chose not to take.\n\nAUDIO DESIGN: quiet airfield machinery, soft wind through the existing space, leather and cloth strain, a small lantern-set-down contact, the glove leaving its handle, then measured footsteps receding. The suspended low tone from Segment A opens slightly only after his hand releases the lantern and resolves quietly without percussion. Audio supports release, cost and departure; it is not an MV rhythm track.\n\nNEGATIVE: no additional character, no second adventurer, no clone, duplicate, split screen, complete humanoid reflection or shadow double, no character-sheet or four-panel output, no second lantern, no new prop, architecture, weapon or equipment, no identity, body-mass, costume, material or palette redesign, no cyan-white energy humanoid, no unsupported reverse angle, no unrelated location change, no music-video cutting, no text, subtitle, logo or watermark, no glossy 3D render, no hard digital edges.",
+  "local_render": {
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__B_run_A_00003_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__B_run_A_00003_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__B_run_B_00003_.mp4"
+    ],
+    "elapsed_sec": 783,
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-24 20:21:27)\n[h3_qq_gen]   状态: running  (2026-09-24 20:22:24)\n[h3_qq_gen]   状态: done  (2026-09-24 20:28:25)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__B_run_A_00003_.mp4\n[h3_qq_gen] 轮询 ADV_B_20260924_0609_R30__v10__B_run_B_0924202127（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-24 20:28:25)\n[h3_qq_gen]   状态: done  (2026-09-24 20:34:26)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0609_R30__v10__B_run_B_00003_.mp4",
+    "by": "b_new_format",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
