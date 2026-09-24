@@ -1,0 +1,38 @@
+{
+  "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
+  "task_id": "LILLONG_MV_TEST_003",
+  "status": "awaiting_work_execution",
+  "actual_completed_runs": 0,
+  "created_by": "gh_writeback(auto-template, B端 未建占位)",
+  "input_validation": {
+    "validated_at": "2026-09-24 19:55:39",
+    "validated_by": "relay-gh",
+    "run_key": "LILLONG_MV_TEST_003",
+    "status": "validated_with_warnings",
+    "problems": [
+      "no_refs"
+    ],
+    "refs": [],
+    "uploaded_to": [],
+    "checks_done": [
+      "文件存在且非空",
+      "像素尺寸 >= 512（低于此值不足以锁身份/构图）",
+      "参考图互不重复（sha256 去重）",
+      "角色图在 slot0（Picture 1 = 身份锁）",
+      "git blob sha1 与 B端 声明 source_blob 对齐"
+    ]
+  },
+  "work_gate": {
+    "picture_1_status": "validated_with_warnings(no_refs)",
+    "picture_1_evidence": null,
+    "picture_2_status": "not_supplied",
+    "picture_2_evidence": null,
+    "visually_verified_by_work": false,
+    "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
+  },
+  "work_writeback": {
+    "updated_at": "2026-09-24 19:55:39",
+    "by": "relay-gh",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
