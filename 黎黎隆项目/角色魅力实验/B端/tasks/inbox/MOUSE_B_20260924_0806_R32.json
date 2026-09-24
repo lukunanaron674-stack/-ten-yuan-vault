@@ -1,0 +1,350 @@
+{
+  "task_id": "MOUSE_B_20260924_0806_R32",
+  "task_version": "v1.0",
+  "created_at": "2026-09-24T08:06:00+08:00",
+  "status": "text_ready_image_binding_pending",
+  "video_mode": "single_character_continuous_narrative_non_mv",
+  "cast": {
+    "count": 1,
+    "character_id": "MOUSE-EAR-MUTANT-001",
+    "display_name": "鼠耳异变少女",
+    "physical_instances": 1,
+    "other_people_allowed": false,
+    "optical_reflection_rule": "one dependent water reflection of the same character is allowed; it is not a second physical instance and may never act independently"
+  },
+  "references": {
+    "picture_1": {
+      "role": "character_identity_only",
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "declared_source_files": [
+        "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+        "MOUSE-EAR-MUTANT-001_H3半身动态四宫格_v2.0.png"
+      ],
+      "github_image_upload": false,
+      "identity_validation_status": "pending_image_validation",
+      "view": "full_body_identity_plus_dynamic_identity_views",
+      "note": "Work must locate and validate the real files, then bind one approved Picture 1 identity input; a four-panel identity sheet describes one person, never four people"
+    },
+    "picture_2": {
+      "role": "scene_identity_only",
+      "scene_id": "SCENE-02",
+      "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-02_森林湖泊_双色主导.png",
+      "source_blob": "249b3a0f00aa894772d1049e800f4813723184df",
+      "availability": "available_by_github_path",
+      "visual_geometry_validation": "pending_work_visual_check",
+      "needs_environment_inference": true
+    }
+  },
+  "subject_definitions": {
+    "character": "one small slender mouse-eared mutant girl with short white hair, eye-covering fringe, a small upward curl, large translucent pale-violet mouse-ear structures, oversized pale robe, dark collar/cuff/hem blocks, diagonal strap and side satchel",
+    "environment": "SCENE-02 forest lake with its verified lake and layered forest identity plus warm-sky/cool-water two-color relationship",
+    "reflection": "a single optically dependent water reflection of the same physical girl, causally tied to her movement and deformed only by the water surface",
+    "single_instance_rule": "Picture 1 identity views compile to exactly one physical character; the reflection is never a second body or actor"
+  },
+  "retention_analysis": {
+    "retain": [
+      "white short hair, eye-covering fringe and upward curl",
+      "large translucent pale-violet mouse-ear mutation structures",
+      "small body, oversized pale robe, dark edge blocks, diagonal strap and side satchel",
+      "quiet cautious behavior",
+      "SCENE-02 lake, layered forest and warm-sky/cool-water color logic",
+      "same shoreline axis and one dependent reflection across A/B"
+    ],
+    "change": [
+      "alarm at a ripple-distorted reflection becomes a controlled reversible test",
+      "body path changes by one small outward step and one return step",
+      "camera framing may tighten from medium-wide to medium-full without crossing the axis"
+    ],
+    "discard": [
+      "R31 constrained-passage mechanism and heavy-load behavior",
+      "autonomous reflection or second water figure",
+      "unverified bridge, dock, stones, roots or buildings",
+      "V35-specific colors or Che energy-body traits"
+    ]
+  },
+  "changed_variable": {
+    "primary": "cautious_observation_to_reversible_testing",
+    "definition": "she does not become generally brave; she converts one ambiguous reflection event into two small reversible checks while preserving distance",
+    "controls": [
+      "one physical character",
+      "one dependent reflection",
+      "one scene",
+      "same shoreline axis",
+      "no approach into water"
+    ]
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "primary": "N",
+    "secondary": [
+      "NZ",
+      "Z"
+    ],
+    "disturbance": "XZ",
+    "chain": "N8 → XZ4→6克N8→6 → Z5→7补N6→7 → Z7克XZ6→4 → N7与NZ7稳定",
+    "relations": [
+      {
+        "direction": "water-surface disturbance → cautious continuity",
+        "relation": "克",
+        "observable_evidence": "the reflected outline shifts under one ripple; she stops and half-steps back"
+      },
+      {
+        "direction": "reversible choice → observation",
+        "relation": "补",
+        "observable_evidence": "ears turn first, then eyes follow while the body holds still"
+      },
+      {
+        "direction": "controlled test → ambiguity",
+        "relation": "克",
+        "observable_evidence": "one outward step and one return step confirm causal alignment"
+      }
+    ],
+    "start_change_result": "slow safe-distance shore walk with aligned reflection → one ripple deforms the reflected outline and triggers stop/half-step back → two small reversible lateral tests restore causal certainty and she resumes the same route"
+  },
+  "style": {
+    "style_identity_lock": "Pictures 1 and 2 control verified identity, drawing language, materials, proportions and original palette; reference fidelity overrides generic style wording.",
+    "visual_expression_variable": "restrained readable 2D motion, compatible line-weight variation, reference-consistent thin shading, diffuse light, muted shadows, negative space and same-axis composition",
+    "v35_reference_status": "text_wording_reference_only; known workflow/input mismatch prevents output-quality attribution"
+  },
+  "segments": [
+    {
+      "segment_id": "A",
+      "duration_seconds": 15,
+      "title": "倒影错位后的停步",
+      "scene_reference": {
+        "picture_ref": "Picture 2",
+        "scene_id": "SCENE-02",
+        "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-02_森林湖泊_双色主导.png",
+        "identity_elements": [
+          "lake",
+          "layered forest",
+          "warm sky and cool water color relationship"
+        ],
+        "locked": [
+          "location identity",
+          "supported existing elements",
+          "spatial continuity",
+          "palette logic"
+        ],
+        "variable": [
+          "medium-wide three-quarter side framing",
+          "negative space over water",
+          "barely perceptible push if supported"
+        ],
+        "needs_environment_inference": true
+      },
+      "style": {
+        "style_identity_lock": "preserve verified mouse-girl and SCENE-02 identity, materials, proportions and original palette",
+        "visual_expression_variable": "medium-wide observational composition with readable character/reflection causality and a held decision beat"
+      },
+      "shot": {
+        "shot_size": "medium_wide",
+        "camera_angle": "three_quarter_side_same_axis",
+        "foreground": "narrow verified shore edge only",
+        "middle_ground": "single girl, relevant lake surface and dependent reflection",
+        "background": "layered forest and established sky-water relationship",
+        "character_position": "shore-side third with negative space extending over water",
+        "negative_space": "quiet lake area ahead of her attention",
+        "action_start": "slow walk parallel to shore at a safe distance",
+        "observable_change": "one natural ripple deforms reflected outline → stop → short half-step back → near ear turns first → eyes follow",
+        "action_end": "body still, attention on fading ripple, decision to remain without approaching",
+        "camera_move": "fixed; barely perceptible push after disturbance only if geometry supports it",
+        "spatial_continuity": "establishes shoreline direction, water side, camera side and exact final pose for B"
+      },
+      "ambient_soundscape": "quiet lake air, faint leaves, soft water movement, robe and strap friction, careful steps and one close ripple",
+      "emotional_sound_cue": "thin non-melodic low breath tone tightens at the reflected offset, falls near silence on the half-step back and remains suspended",
+      "audio_role": "clarify event, attention order and caution; not MV rhythm",
+      "prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds.\n\nSTYLE IDENTITY LOCK: preserve the verified drawing language, proportions, materials and original colors of Picture 1 and Picture 2. Keep the exact mouse-eared mutant girl's short white hair with eye-covering fringe and small upward curl, large translucent pale-violet mouse-ear structures, small slender body, oversized pale robe, dark collar, cuffs and hem blocks, diagonal strap and side satchel. Preserve the warm-sky and cool-lake palette relationship of the forest-lake scene. Reference fidelity overrides generic style wording.\n\nVISUAL EXPRESSION VARIABLE: use restrained readable 2D motion, compatible variable-weight ink lines, thin watercolor-like shading only where consistent with the references, soft diffuse light, muted shadows and generous negative space over the water. Keep the action continuous and observational, never a rhythmic montage.\n\nCHARACTER (Picture 1): show exactly one physical instance of the established mouse-eared mutant girl. If Picture 1 is a multi-view identity sheet, all views describe this one character and must not become multiple people. Preserve her quiet, cautious behavior and every verified clothing and accessory feature.\n\nENVIRONMENT (Picture 2): preserve the identity, existing lake, layered forest, spatial continuity and established warm-sky/cool-water color logic of SCENE-02. Picture 2 defines the place, not one mandatory framing. Do not invent a bridge, dock, stepping stones, exposed roots, buildings or props. The visible water reflection must be only the optical reflection of the same girl, physically dependent on her position and deformed only by the water surface.\n\nCAMERA AND COMPOSITION: use a medium-wide three-quarter side view on the lakeshore. Keep the single girl and her dependent water reflection readable in the same frame, with a narrow foreground shore edge, the girl and water in the middle ground, layered trees behind, and quiet negative space across the lake. Hold a stable camera; allow only a barely perceptible push after the water disturbance if the verified scene geometry supports it.\n\nACTION: the girl walks slowly along the shore at a safe distance from the water. Her dependent reflection follows directly beneath and beside her according to the water surface. One small natural ripple crosses the reflected outline and briefly displaces its shape without giving it independent motion. She notices the mismatch, stops, and takes one short half-step back from the water. Her near mouse-ear structure turns toward the ripple first while her torso, hands and feet become still; her eyes follow a moment later. End on a clear held pose: she has chosen not to leave, but has not approached the water.\n\nAUDIO DESIGN: quiet lake air, faint leaves, soft water movement, light robe and strap friction, small careful footfalls and one close ripple at the visible distortion. A thin non-melodic low breath tone tightens at the reflection offset, falls almost silent on the half-step back, and remains suspended at the cut. Audio clarifies the event and caution; it does not set an MV beat.\n\nNEGATIVE: no second physical character, no duplicate girl, clone, twin, separate water person, autonomous reflection, emerging reflection, independent shadow double, split screen or four-person character sheet; no rabbit ears, ordinary human ears replacing the mutation, tail, horns, wings, armor, weapon, fitted battle costume or adult muscular proportions; no complete reflection moving on its own or remaining delayed after the ripple passes; no invented bridge, dock, stones, roots, buildings or props; no dramatic splash, fall, run, panic, dance, lip-sync, speed ramp, montage or music-video cutting; no cyan-white energy humanoid, glossy 3D render, hard synthetic digital edges, text, subtitle, logo or watermark."
+    },
+    {
+      "segment_id": "B",
+      "duration_seconds": 15,
+      "title": "两次可逆侧步确认",
+      "dependency": "same Work-selected actual Segment A ending frame",
+      "scene_reference": {
+        "picture_ref": "Picture 2",
+        "scene_id": "SCENE-02",
+        "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-02_森林湖泊_双色主导.png",
+        "identity_elements": [
+          "same lake",
+          "same layered forest",
+          "same warm-sky/cool-water relationship"
+        ],
+        "locked": [
+          "same location",
+          "same shoreline axis",
+          "same camera side",
+          "same lighting direction"
+        ],
+        "variable": [
+          "medium-full continuation framing",
+          "restrained lateral drift if supported"
+        ],
+        "needs_environment_inference": true
+      },
+      "style": {
+        "style_identity_lock": "preserve the same mouse-girl identity, clothing state and SCENE-02 material/palette logic",
+        "visual_expression_variable": "same-axis medium-full framing with fixed-camera fallback and two readable test pauses"
+      },
+      "shot": {
+        "shot_size": "medium_full",
+        "camera_angle": "same_axis_three_quarter_side",
+        "foreground": "same verified shore edge",
+        "middle_ground": "feet, body, relevant water patch and dependent reflection",
+        "background": "continuous layered forest",
+        "character_position": "inherits the selected A ending, then shifts one small step away and returns",
+        "negative_space": "retained over the water, not filled with new objects",
+        "action_start": "inherits A: still after half-step back, ears and eyes on fading ripple",
+        "observable_change": "one small step away from water → confirm reflection settles → one equal return step → confirm alignment → resume two measured forward steps",
+        "action_end": "same safe shoreline route, reflection causally aligned, shoulders slightly eased",
+        "camera_move": "restrained same-axis lateral drift if supported; otherwise fixed",
+        "spatial_continuity": "must use one real selected A ending without axis flip, reverse view or invented shore space"
+      },
+      "ambient_soundscape": "continuous lake air, faint leaves, soft water, two measured robe-softened side steps, strap movement and fading ripple",
+      "emotional_sound_cue": "two soft non-melodic tonal pulses triggered by the outward and return tests; the second settles into a quiet low release",
+      "audio_role": "support experiment timing and emotional easing; not song structure or MV rhythm",
+      "prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds, continuing directly from the selected real ending frame of Segment A.\n\nSTYLE IDENTITY LOCK: preserve the same verified Picture 1 identity, drawing language, proportions, materials and original colors, and preserve the same Picture 2 forest-lake identity and warm-sky/cool-water palette logic. Keep the girl's short white hair, eye-covering fringe, small upward curl, translucent pale-violet mouse-ear structures, small slender body, oversized pale robe, dark edge blocks, diagonal strap and side satchel exactly consistent with Segment A.\n\nVISUAL EXPRESSION VARIABLE: use restrained readable 2D motion, compatible variable-weight linework, thin watercolor-like shading only where reference-consistent, soft diffuse light, muted shadows and controlled negative space. Let two small reversible tests and their pauses carry the character performance; avoid theatrical posing or rhythmic montage.\n\nCHARACTER (Picture 1): show exactly the same one physical mouse-eared mutant girl from Segment A. Preserve the chosen real A ending pose, clothing state, satchel position and cautious expression. A multi-view reference still represents one identity only.\n\nENVIRONMENT (Picture 2): remain in the same verified SCENE-02 lakeshore space, with the same lake, layered forest, screen direction, lighting direction and established palette relationship. The water image is only the optically dependent reflection of this one girl; it must respond to her body and the water surface and must never behave as a separate entity. Do not add unverified shore objects or a reverse space.\n\nCAMERA AND COMPOSITION: inherit the exact camera side, axis, shoreline relation and character position from the selected real Segment A ending. Use a medium-full three-quarter side view that keeps her feet, the relevant water area and the dependent reflection readable together. A restrained lateral drift may follow her only if Picture 2 supports continuous shore space; otherwise keep the camera fixed. Never cross the axis.\n\nACTION: after the held ending of Segment A, the girl keeps her upper body quiet and makes one small lateral step away from the water. The dependent reflection shifts with her and settles as the last ripple fades. She pauses long enough to confirm the match. Her ears ease slightly. She then deliberately makes one equally small return step to her original walking line, watching the reflection align again. Hold one calm beat. Without approaching the water, she resumes her original slow direction along the shore for two measured steps. End with the reflection still causally aligned, her shoulders less tense, and her attention curious rather than alarmed.\n\nAUDIO DESIGN: continue the same quiet lake air, faint leaves and soft water ambience from Segment A, adding two measured robe-softened side steps, subtle strap movement and the fading ripple. Use two very soft non-melodic tonal pulses triggered by the first lateral test and the return step; the second settles into a low quiet release as she resumes walking. Audio supports observation and emotional easing, never song structure or MV rhythm.\n\nNEGATIVE: no second physical character, no duplicate girl, clone, twin, separate water person, autonomous reflection, emerging reflection, independent shadow double, split screen or four-person character sheet; no rabbit ears, ordinary human ears replacing the mutation, tail, horns, wings, armor, weapon, fitted battle costume or adult muscular proportions; no complete reflection moving before her, acting independently or staying delayed after the water settles; no invented bridge, dock, stones, roots, buildings, props or unseen reverse angle; no approach into the water, jump, run, dance, triumph pose, panic, lip-sync, speed ramp, montage or music-video cutting; no cyan-white energy humanoid, glossy 3D render, hard synthetic digital edges, text, subtitle, logo or watermark."
+    }
+  ],
+  "shot_grammar": {
+    "continuity": "A ends on a held choice to stay; B starts from the same actual selected A frame and performs one outward and one return test before resuming the original route.",
+    "edit_rule": "each segment is one continuous readable event; no beat cuts, montage or MV structure",
+    "reflection_rule": "the water image is a dependent optical effect of the one character; ripple deformation may alter its outline but never create autonomous action",
+    "fallback": "if shoreline continuity or lateral room is unsupported, keep the camera fixed and reduce step amplitude; if same-frame character/reflection causality cannot be verified, Work must not render"
+  },
+  "audio_design": {
+    "mode": "per_segment",
+    "generation_status": "design_only_until_work_confirms_audio_capability",
+    "rule": "if H3 cannot generate sound, all audio fields are post-production design only"
+  },
+  "sampling_plan": {
+    "total_planned_runs": 4,
+    "actual_completed_runs": 0,
+    "prompt_identical_within_segment": true,
+    "segments": {
+      "A": {
+        "run_A": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        },
+        "run_B": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        }
+      },
+      "B": {
+        "dependency": "same Work-selected actual A ending frame",
+        "run_A": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        },
+        "run_B": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        }
+      }
+    },
+    "compare_axes": [
+      "identity stability",
+      "single-instance integrity",
+      "dependent-reflection causality",
+      "ear-before-eye attention order",
+      "reversible-step readability",
+      "A-to-B continuity",
+      "scene and palette fidelity",
+      "camera stability",
+      "no unsupported objects"
+    ]
+  },
+  "negative_constraints": [
+    "no second physical person",
+    "no duplicate, clone, twin, split screen or four-person output",
+    "no autonomous, emerging or independently moving reflection",
+    "no rabbit ears, ordinary replacement ears, tail, horns, wings, armor or weapons",
+    "no invented bridge, dock, stones, roots, buildings, props or reverse space",
+    "no approach into water, run, dance, panic, speed ramp or triumph pose",
+    "no identity, material or palette redesign",
+    "no cyan-white Che energy humanoid",
+    "no location replacement or MV editing",
+    "no text, subtitle, logo or watermark",
+    "no fabricated seed, task ID, render, audio track or validation result"
+  ],
+  "work_gate": {
+    "picture_1_status": "pending_image_validation",
+    "picture_2_status": "GitHub path/blob recorded; shoreline framing and same-frame reflection geometry not visually verified by B-side",
+    "required_checks": [
+      "locate and byte-verify both declared mouse-girl identity files",
+      "select and bind one approved Picture 1 identity input while treating all views as one person",
+      "verify hair, ear structures, robe, dark blocks, strap, satchel and small proportions",
+      "bind and visually inspect SCENE-02",
+      "confirm a readable lakeshore and water-reflection relation exist without adding props",
+      "confirm the reflection remains optically dependent and never reads as a second actor",
+      "select one actual A ending for both B runs",
+      "verify final prompt and every LoadImage belong to R32",
+      "run identical inputs twice per segment",
+      "record only actual returned integer seeds and task IDs"
+    ],
+    "render_decision": "blocked until character and environment/reflection validation; text task is not render approval"
+  },
+  "version_tracking": {
+    "rule_version": "B-RULE-v1.2",
+    "prompt_schema": "video_tenyuan_prompt_schema_v1.3",
+    "skill_chain_version": "H3动画四技能执行链_v1.0",
+    "previous_task": "ADV_B_20260924_0710_R31",
+    "before": "R31 used ADV-001 in SCENE-05 for a controlled retreat and next-cycle complete-load passage.",
+    "after": "R32 uses MOUSE-EAR-MUTANT-001 in SCENE-02: a ripple-distorted dependent reflection triggers a stop, then two small reversible side-step tests restore certainty.",
+    "same": [
+      "two 15-second segments",
+      "one physical character",
+      "non-MV",
+      "same-prompt run_A/run_B per segment",
+      "audio design only until capability is confirmed",
+      "v1.3 identity-style lock and visual-expression separation",
+      "B depends on one real selected A ending"
+    ],
+    "confounders": [
+      "character changed",
+      "scene changed",
+      "action and camera family changed",
+      "dependent water reflection adds a generation-risk factor",
+      "mouse-girl images remain pending validation",
+      "SCENE-02 shoreline/reflection geometry remains visually unverified by B-side"
+    ],
+    "upstream_consumed": [
+      {
+        "source": "B1_素材索引_20260924_0806",
+        "commit": "6fdb45758a26f7fa5184838b124c89e8ab276e75",
+        "use": "confirmed latest R31, both mouse-girl files still unavailable on GitHub, and SCENE-02 path-level availability"
+      },
+      {
+        "source": "B2_20260924_0715_MOUSE-EAR-MUTANT-001_SCENE-02",
+        "commit": "85305c1b4803fde789480c1d01ec37d5739de715",
+        "blob": "e2fe7938e07b49ea9930c18ef8a643b617ea31fe",
+        "use": "reflection-choice chain, reversible test behavior and v1.3 shot suggestions"
+      },
+      {
+        "source": "B4_20260924_0735_MOUSE-EAR-MUTANT-001_SCENE-02",
+        "commit": "01dc8ce08027630b226b5914b9affbad9af12462",
+        "blob": "39604b61d943ad8913c0cd9508cbefc66e91cc71",
+        "use": "single-instance/reflection causality, audio, double-sampling and workflow preflight corrections"
+      },
+      {
+        "source": "V35 1194-character text",
+        "commit": null,
+        "use": "adaptable wording only; no output-quality attribution"
+      }
+    ],
+    "upstream_missing": [
+      {
+        "source": "formal B3 for 20260924 0725 mouse-girl × SCENE-02",
+        "status": "not_found_at_task_compile_time",
+        "handling": "B-side compiled the approved B2 chain under B4 corrections and did not claim B3 completion"
+      }
+    ],
+    "result_claim": "text_task_only; no render, image validation, seed, task ID, audio track or visual-quality conclusion"
+  }
+}
