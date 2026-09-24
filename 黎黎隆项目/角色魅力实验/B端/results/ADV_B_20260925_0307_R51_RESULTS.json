@@ -1,7 +1,7 @@
 {
   "schema_version": "B-H3-RESULT-1.2",
   "task_id": "ADV_B_20260925_0307_R51",
-  "status": "pending_work_execution",
+  "status": "work_rendering",
   "actual_completed_runs": 0,
   "current_task_runs": {
     "run_A": {
@@ -79,5 +79,13 @@
   "input_validation_status": "pending_image_validation",
   "render_validation_status": "not_started",
   "blind_review_status": "pending",
-  "rule": "Do not copy prior seeds, task IDs or paths into current_task_runs."
+  "rule": "Do not copy prior seeds, task IDs or paths into current_task_runs.",
+  "claimed_by": "relay-gh@DESKTOP-FKEUGLS",
+  "claimed_at": "2026-09-25 06:56:21",
+  "claimed_run_key": "ADV_B_20260925_0307_R51",
+  "work_writeback": {
+    "updated_at": "2026-09-25 06:56:21",
+    "by": "relay-gh",
+    "host": "DESKTOP-FKEUGLS"
+  }
 }
