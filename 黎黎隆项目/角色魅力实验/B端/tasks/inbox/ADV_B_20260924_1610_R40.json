@@ -1,0 +1,281 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "task_id": "ADV_B_20260924_1610_R40",
+  "task_version": "v1.0",
+  "parent_task_id": "MOUSE_B_20260924_1505_R39",
+  "created_at": "2026-09-24T16:10:29+08:00",
+  "status": "text_ready_image_binding_pending",
+  "project": "黎黎隆",
+  "video_mode": "single_character_narrative",
+  "duration_seconds_range": [
+    10,
+    11
+  ],
+  "planned_duration_seconds": 11,
+  "character_id": "ADV-001",
+  "scene_asset_id": "SCENE-05",
+  "reference_view": {
+    "type": "full_body_identity",
+    "source": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
+    "declared_sha256": "dd81d92d9f565831c8e924aa2ff36b3fd3cf85b526376971b51ec4f1dd43d1c4",
+    "picture_1_binding": null,
+    "identity_validation_status": "pending_image_validation",
+    "picture_2_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
+    "picture_2_blob": "eb34acce753735d96565bc0108d502dfdc775088",
+    "scene_reference_status": "available_by_github_path",
+    "visual_geometry_validation": "pending_work_visual_check",
+    "needs_environment_inference": true
+  },
+  "source_classification": {
+    "confirmed": [
+      {
+        "source": "B-H3 task template v1.2",
+        "blob": "7ae05c07e14008c722433d8008cc6a4aa064cc2f",
+        "fact": "one 10-11 second prompt and two executions"
+      },
+      {
+        "source": "B-H3 time/audio rule v1.2",
+        "blob": "c830cdc044f4b570128b36b648965653341a7b9d",
+        "fact": "six fixed beats, fixed camera by default and non-MV audio"
+      },
+      {
+        "source": "character pool v1.5",
+        "blob": "59810586b7b8ada9c9a263975a4769b3c4f8ca7a",
+        "fact": "ADV-001 is text-task eligible but pending image validation"
+      },
+      {
+        "source": "ADV identity JSON",
+        "blob": "4ce739c74069348a6c0855ca96c501acc890fe17",
+        "fact": "registered body mass, equipment connections, lantern and low-action identity limits"
+      },
+      {
+        "source": "scene pool v1",
+        "blob": "26384b61a8ef8314cf8b5cee81934beed846c021",
+        "fact": "SCENE-05 path/blob and registered monochrome mechanical-airport, mechanical-door and constrained-path semantics"
+      },
+      {
+        "source": "B1 R39 audit",
+        "commit": "07bc1aa6de83ead4e66f157d6d7081743291bce5",
+        "fact": "latest round still has no Work execution evidence; unbound images must remain pending"
+      }
+    ],
+    "candidate_hypotheses": [
+      {
+        "source": "B2 ADV-001 × SCENE-05",
+        "commit": "f1e6b0030cab8f25e2083db2cfce6ea7b0683076",
+        "use": "retained the candidate relation that a closing passage can trigger a restrained stop and a small existing-strap correction"
+      },
+      {
+        "source": "B3 ADV-001 × SCENE-05",
+        "commit": "05e7e8996675348d17d5f9f532d1df40ef7adef2",
+        "use": "retained only the visible stop and existing-strap action; render and charm claims remain unverified"
+      },
+      {
+        "source": "latest available B4 audit",
+        "commit": "2e2993755e91cebd3e6afa28d261b91141fdf588",
+        "use": "retained evidence discipline: separate text design from image binding, execution and output-quality claims"
+      }
+    ],
+    "excluded_due_to_current_rules": [
+      "older 15-second duration and two-prompt/four-run structure",
+      "multiple shot sizes, push-ins and lateral camera moves from the older B3 proposal",
+      "second opening cycle and passage-through result, which exceed the single small-variable 11-second task",
+      "unverified buttons, controls, warning lights, signs and exact door geometry"
+    ]
+  },
+  "subject_definition": {
+    "one_protagonist_only": true,
+    "same_character_once": true,
+    "second_human_figure": false,
+    "description": "One heavy adult adventurer, physically present once, keeping his complete registered load; no helper, opponent, reflection person or background human."
+  },
+  "retention_analysis": {
+    "identity_lock": "large broad male body, short dark hair, dark beard, tired experienced face and grounded weight",
+    "silhouette_lock": "layered cloak, complete backpack and rolled bedroll remain connected and readable",
+    "recognition_parts": "red scarf, crossing straps and buckles, pale metal shoulder/chest bracket, one cyan-lit waist lantern, heavy gloves and boots",
+    "outfit_structure": "all straps, cloak layers, backpack, bedroll and lantern remain connected; nothing is removed, duplicated or newly added",
+    "style_lock": "reference-first clean two-dimensional shapes, restrained line-and-plane treatment, original monochrome environment and fixed soft light"
+  },
+  "changed_variable": {
+    "name": "forward_pressure",
+    "before": "leading shoulder and load begin a small forward shift toward the passage",
+    "after": "forward shift stops before entry and becomes one existing-strap correction",
+    "scope": "only shoulder/backpack micro-shift and one hand action; feet, camera, lighting and passage cycle remain fixed"
+  },
+  "dynamic_chain": {
+    "analysis_only": true,
+    "primary": "XN8",
+    "secondary": "X8",
+    "supporting": "N7",
+    "activated": [
+      "Z3->5",
+      "NX6"
+    ],
+    "relations": [
+      {
+        "phase": "initial_state",
+        "relation": "XN与X稳定",
+        "status": "registered_character_and_scene_baseline",
+        "visible_translation": "complete load waits before the fixed passage"
+      },
+      {
+        "phase": "external_stimulus",
+        "relation": "环境XN克角色Z",
+        "status": "candidate_hypothesis",
+        "visible_translation": "existing passage begins closing"
+      },
+      {
+        "phase": "local_reaction",
+        "relation": "NX压低N",
+        "status": "candidate_hypothesis",
+        "visible_translation": "shoulder and backpack start forward, then stop under load"
+      },
+      {
+        "phase": "response",
+        "relation": "X补N、Z补X",
+        "status": "candidate_hypothesis",
+        "visible_translation": "gaze assesses opening; one hand gathers one existing strap closer"
+      },
+      {
+        "phase": "result",
+        "relation": "XN与X重新稳定",
+        "status": "candidate_hypothesis",
+        "visible_translation": "complete load stays compact on the safe side"
+      }
+    ],
+    "start_change_result": "complete load waits → closing cycle creates forward pressure → character stops and secures one existing strap → complete load remains intact on the safe side",
+    "result_status": "hypothesis_pending_work_output"
+  },
+  "time_beats": [
+    {
+      "time": "0-2s",
+      "beat": "Starting state: fully loaded adventurer stands one measured step before the supported passage; both boots planted."
+    },
+    {
+      "time": "2-4s",
+      "beat": "Only external stimulus: the existing passage begins one closing motion with one restrained mechanical sound."
+    },
+    {
+      "time": "4-6s",
+      "beat": "Local reaction: leading shoulder and attached backpack shift slightly forward, then stop; feet stay planted."
+    },
+    {
+      "time": "6-8s",
+      "beat": "Eyes inspect the remaining opening; head turns only slightly and he decides not to force through."
+    },
+    {
+      "time": "8-10s",
+      "beat": "One gloved hand draws one existing loose strap closer to the torso; no layout change."
+    },
+    {
+      "time": "10-11s",
+      "beat": "All motion stops with the complete load compact on the safe side."
+    }
+  ],
+  "shot_grammar": {
+    "shot": "fixed eye-level medium-wide three-quarter side view",
+    "camera": "locked camera and fixed focal length",
+    "lighting": "fixed soft diffuse reference lighting",
+    "movement": "none",
+    "composition": "keep full body, both boots, backpack width, passage boundary and safe standing area readable in one frame",
+    "spatial_continuity": "one SCENE-05 space and one axis; exact passage geometry must be checked against Picture 2 before render"
+  },
+  "h3_prompt": "Subject: Vertical 9:16, one continuous 11-second single-character narrative. Show exactly one physical instance of the established heavy adult adventurer from Picture 1. Preserve his large broad body, grounded weight, short dark hair, dark beard, tired experienced face, dark teal-black layered cloak, purple and red cloth panels, red scarf, crossing straps and buckles, pale metal shoulder and chest bracket, complete backpack and rolled bedroll, one cyan-lit hanging waist lantern, heavy gloves and heavy boots. Keep every connected item, body proportion, material and reference color unchanged.\n\nMovement: From 0 to 2 seconds the fully loaded adventurer stands one measured step before the visually supported mechanical passage, weight centered and both boots planted. From 2 to 4 seconds the existing passage mechanism begins one closing motion and produces one restrained mechanical sound; no new control or indicator appears. From 4 to 6 seconds only his leading shoulder and attached backpack shift slightly forward, then stop before entering the narrowing space; his feet remain planted. From 6 to 8 seconds his eyes inspect the remaining opening and his head turns only slightly, making the decision not to force the load through. From 8 to 10 seconds one gloved hand draws one already existing loose strap closer to his torso without changing the strap layout or removing equipment. From 10 to 11 seconds all motion stops with the complete load held compactly on the safe side of the passage.\n\nScene: Picture 2 defines SCENE-05, the same monochrome mechanical-airport environment, its existing technical atmosphere, mechanical passage, constrained route, spatial continuity and original palette. Use only architecture, passage geometry, ground and negative space actually supported by the bound scene image. Do not invent a button, display, sign, rail, platform, new doorway, extra machine, warning light or alternate route.\n\nCamera: One locked eye-level medium-wide three-quarter side view for the entire sequence. Keep the adventurer's full body, both boots, backpack width, existing passage boundary and one safe standing area readable in one composition. Fixed framing, fixed focal length, no push-in, no pull-back, no pan, no tilt, no tracking, no cut, no transition and no split-screen composition.\n\nLighting: Preserve the bound reference lighting and monochrome palette logic. Keep one fixed soft diffuse light for the entire shot. The existing cyan lantern remains a small identity light only. No new glow, no weather change, no sudden color shift and no recoloring.\n\nAtmosphere: Clear readable two-dimensional shapes, clean reference-consistent line-and-plane language, restrained hand-drawn motion, quiet technical depth and visible body weight. Character charm comes from stopping before forcing the complete load into a closing passage, then making one small practical correction without becoming suddenly agile or discarding responsibility.\n\nAudio: Ambient soundscape is low mechanical-airport room tone, restrained ventilation, one existing passage-closing sound, slight backpack weight shift, one strap-tension sound and quiet cloth friction. Emotional sound cue is one sparse non-lyrical low sustained tone that thins at the stop and fades after the strap is secured, with no strong beat. Audio only supports space, weight, decision timing and emotion; it does not drive editing and does not create a music-video structure. If the H3 node does not support audio, treat this as post-production sound design only.\n\nNegative: no duplicate character, no second human figure, no split screen, no clone or mirror-double, no extra limbs, no text overlay, no watermark, no abrupt redesign, no additional person or creature, no young slim redesign, no removed backpack, no dropped bedroll, no discarded equipment, no duplicate lantern, no new strap, no new buckle, no new weapon, no horns, no tail, no wings, no clean modern armor, no invented button, display, sign, rail, platform, doorway, machine, warning light or alternate route, no forward step through the passage, no backward step, no run, no jump, no squeeze-through, no acrobatics, no camera movement, no cut, no transition, no weather change, no abrupt color change, no lyrics, no strong beat, no beat-synced edit, no montage, no MV editing, no glossy 3D rendering.",
+  "audio_design": {
+    "ambient_soundscape": "low mechanical-airport room tone, restrained ventilation, one existing passage-closing sound, slight backpack weight shift, one strap-tension sound and quiet cloth friction",
+    "emotional_sound_cue": "one sparse non-lyrical low sustained tone that thins at the stop and fades after the strap is secured; no strong beat",
+    "audio_role": "support spatial constraint, weight, decision timing and restrained emotion only; no MV editing; if H3 has no audio support, retain as post-production sound design"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "duration_seconds_range": [
+      10,
+      11
+    ],
+    "identical_prompt_and_inputs_required": true,
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "seed_policy": "record real seed_A/seed_B only if Work returns or supports them; otherwise retain first_execution/second_execution labels",
+    "compare_axes": [
+      "character_consistency",
+      "stop_before_entry_readability",
+      "existing_strap_action_readability",
+      "camera_stability",
+      "mechanical_atmosphere_fit",
+      "no_duplicate_character",
+      "equipment_continuity"
+    ]
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no additional person or creature",
+    "no removed backpack",
+    "no discarded equipment",
+    "no new strap or buckle",
+    "no invented environmental control",
+    "no camera movement",
+    "no weather or color change",
+    "no MV editing"
+  ],
+  "must_keep": [
+    "ADV-001 identity",
+    "broad body mass and grounded weight",
+    "beard and tired eyes",
+    "complete backpack and bedroll",
+    "connected straps and buckles",
+    "one cyan-lit waist lantern",
+    "SCENE-05 identity and monochrome logic",
+    "fixed camera and fixed soft light"
+  ],
+  "must_avoid": [
+    "second protagonist",
+    "identity-sheet sections interpreted as multiple people",
+    "young slim redesign",
+    "unloading or duplicating gear",
+    "invented buttons, signs or warning lights",
+    "passing through or stepping away",
+    "camera movement or cut",
+    "lyrics, strong beat or MV structure"
+  ],
+  "validation_target": {
+    "character_consistency": "pending_work_output",
+    "action_readability": "pending_work_output",
+    "camera_stability": "pending_work_output",
+    "atmosphere_fit": "pending_work_output",
+    "no_duplicate_character": "pending_work_output",
+    "identity_binding": "pending_image_validation",
+    "scene_geometry": "pending_work_visual_check",
+    "passage_support": "pending_work_visual_check"
+  },
+  "version_tracking": {
+    "rule_version": "B-H3-TASK-1.2",
+    "previous_task": "MOUSE_B_20260924_1505_R39",
+    "before": "R39 tested mouse-ear attention redirection in SCENE-02 using one fixed 11-second prompt.",
+    "after": "R40 tests one restrained stop-and-secure response by ADV-001 in SCENE-05 using the same 11-second single-prompt/two-run format.",
+    "confounders": [
+      "character, scene and event change from R39",
+      "ADV image remains unbound",
+      "SCENE-05 exact passage geometry remains unverified",
+      "latest B4 review predates R39 and is used only for evidence discipline",
+      "no Work output exists for comparison"
+    ]
+  },
+  "result_claim": "text_task_only; sampling planned but not rendered; no image-validation, seed, task ID, audio-track or quality claim"
+}
