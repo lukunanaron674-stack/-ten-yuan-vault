@@ -1,0 +1,352 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "research_rule_version": "B端_角色感受实验总规_v1.0",
+  "task_id": "ADV_B_20260925_0210_R50",
+  "task_version": "v1.0",
+  "parent_task_id": "MOUSE_B_20260925_0110_R49",
+  "created_at": "2026-09-25T02:10:27+08:00",
+  "status": "text_ready_render_blocked_pending_input_validation",
+  "project": "黎黎隆项目/角色魅力实验/B端",
+  "video_mode": "single_character_narrative",
+  "duration_seconds_range": [
+    10,
+    11
+  ],
+  "planned_duration_seconds": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "character_id": "ADV-001",
+  "scene_asset_id": "SCENE-05",
+  "reference_view": {
+    "type": "full_body_identity",
+    "picture_1": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg; declared sha256 dd81d92d9f565831c8e924aa2ff36b3fd3cf85b526376971b51ec4f1dd43d1c4; actual binding and H3 layout pending",
+    "picture_2": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png; blob eb34acce753735d96565bc0108d502dfdc775088; actual binding and geometry pending",
+    "binding_status": "pending_image_validation",
+    "needs_environment_inference": true
+  },
+  "source_classification": {
+    "confirmed": [
+      {
+        "source": "latest ADV B2",
+        "commit": "bfbb45c27414bfbb99354c8972b296696456616f",
+        "fact": "registered experiment tests a single small lateral shift after an already valid stable position"
+      },
+      {
+        "source": "ADV identity and SCENE-05 task record",
+        "commit": "a2eaa55e86d995edc121ba07573786c8334414b3",
+        "fact": "registered ADV identity markers, scene path/blob and pending visual gates"
+      },
+      {
+        "source": "R31 Work retry timeout",
+        "commit": "a7bb9abd0f45dd0fdb21704270f488fab6c2bd28",
+        "fact": "two real task IDs and seeds were recorded for an old R31 retry, but both timed out and returned no MP4"
+      }
+    ],
+    "candidate": [
+      "one voluntary half-boot lateral shift may read as experienced consideration without loss of competence",
+      "the internal dynamic-chain interpretation remains experimental"
+    ],
+    "excluded": [
+      "treating R31 timeout seeds/task IDs as R50 results",
+      "claiming an actual moving mechanism or open side before image validation",
+      "9:16 output",
+      "camera motion",
+      "render/audio/feeling success claims"
+    ]
+  },
+  "viewer_impression_hypothesis": {
+    "first": "他已经正确完成动作，看起来稳重而专业。",
+    "shift": "发现侧向余量偏紧后，他没有后退或重做，只主动横移极小距离。",
+    "final": "他可能被读成既可靠又体谅环境，能在不放弃成果的前提下留出余量。",
+    "trigger": "完整站稳之后才出现的一次横向半脚宽微调，以及调整后立即停止。",
+    "alternatives": [
+      "观众可能认为他一开始就站错了",
+      "侧移可能被读成被迫躲避",
+      "装备晃动可能掩盖动作边界"
+    ],
+    "status": "EXPECTED_ONLY_PENDING_BLIND_REVIEW"
+  },
+  "subject_definition": {
+    "single_subject": "exactly one physical ADV-001 instance",
+    "identity_lock": [
+      "broad heavy adult body",
+      "short dark hair and thick beard",
+      "layered worn equipment",
+      "complete backpack and rolled gear",
+      "red scarf and pale metal structure",
+      "one cyan waist lantern",
+      "heavy gloves and boots"
+    ],
+    "single_instance_rule": "all references describe one person"
+  },
+  "retention_analysis": {
+    "must_retain": [
+      "complete load",
+      "grounded weight",
+      "SCENE-05 identity",
+      "fixed 16:9 full-body shot",
+      "fixed light",
+      "one lateral adjustment",
+      "same-prompt dual sampling"
+    ],
+    "not_yet_verified": [
+      "ADV actual Picture 1 binding and H3 layout",
+      "SCENE-05 geometry",
+      "open lateral ground",
+      "ordinary cycle element",
+      "viewer feeling"
+    ]
+  },
+  "changed_variable": {
+    "type": "single_spatial_adjustment",
+    "description": "after a clearly valid settled position, add exactly one half-boot-width lateral shift to increase margin; no backward step and no repeated correction"
+  },
+  "ten_yuan_explanation": {
+    "internal_only": true,
+    "primary": {
+      "code": "XN",
+      "volume": 8
+    },
+    "secondary": [
+      {
+        "code": "X",
+        "volume": 8
+      },
+      {
+        "code": "N",
+        "volume": 7
+      }
+    ],
+    "variables": [
+      "NZ3",
+      "Z4",
+      "NX5"
+    ],
+    "chain": "XN8+X8 -> NX5克XN7 -> Z6补NX5 -> NZ7克X6 -> N9克NZ5 -> N9补XN9+X7",
+    "start_change_end": "正确站稳 → 识别余量偏紧 → 横向微调 → 立即截止 → 新位置稳定",
+    "status": "EXPERIMENTAL_HYPOTHESIS_NOT_VALIDATED"
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "nodes": [
+      {
+        "node_id": "n0_stable_valid_position",
+        "time": "0-2s",
+        "observable_event": "already valid and fully settled",
+        "relation": {
+          "relation_class": "共存",
+          "relation_direction": "XN + X",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/equipment drift, unsupported scene event, action reversal or framing drift"
+      },
+      {
+        "node_id": "n1_ordinary_cycle_cue",
+        "time": "2-4s",
+        "observable_event": "one non-alarm environmental cycle cue; no forced move",
+        "relation": {
+          "relation_class": "克",
+          "relation_direction": "NX -> XN",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/equipment drift, unsupported scene event, action reversal or framing drift"
+      },
+      {
+        "node_id": "n2_local_clearance_response",
+        "time": "4-6s",
+        "observable_event": "nearest shoulder and attached gear respond locally; feet planted",
+        "relation": {
+          "relation_class": "补",
+          "relation_direction": "Z -> NX",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/equipment drift, unsupported scene event, action reversal or framing drift"
+      },
+      {
+        "node_id": "n3_clearance_check",
+        "time": "6-8s",
+        "observable_event": "eyes and slight head turn assess lateral margin",
+        "relation": {
+          "relation_class": "共存",
+          "relation_direction": "Z + NX",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/equipment drift, unsupported scene event, action reversal or framing drift"
+      },
+      {
+        "node_id": "n4_single_lateral_shift",
+        "time": "8-10s",
+        "observable_event": "one half-boot-width lateral shift; no backward loss",
+        "relation": {
+          "relation_class": "克",
+          "relation_direction": "NZ -> X",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "backward movement, more than one adjustment, or no proof of prior stable validity"
+      },
+      {
+        "node_id": "n5_resettle",
+        "time": "10-11s",
+        "observable_event": "immediate stop and one equipment settle",
+        "relation": {
+          "relation_class": "补",
+          "relation_direction": "N -> XN",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/equipment drift, unsupported scene event, action reversal or framing drift"
+      }
+    ],
+    "validation_question": "Is he clearly valid and settled before one voluntary lateral adjustment, and does he stop immediately afterward?"
+  },
+  "time_beats": [
+    {
+      "time": "0-2s",
+      "node_id": "n0_stable_valid_position",
+      "beat": "already valid and fully settled"
+    },
+    {
+      "time": "2-4s",
+      "node_id": "n1_ordinary_cycle_cue",
+      "beat": "one non-alarm environmental cycle cue; no forced move"
+    },
+    {
+      "time": "4-6s",
+      "node_id": "n2_local_clearance_response",
+      "beat": "nearest shoulder and attached gear respond locally; feet planted"
+    },
+    {
+      "time": "6-8s",
+      "node_id": "n3_clearance_check",
+      "beat": "eyes and slight head turn assess lateral margin"
+    },
+    {
+      "time": "8-10s",
+      "node_id": "n4_single_lateral_shift",
+      "beat": "one half-boot-width lateral shift; no backward loss"
+    },
+    {
+      "time": "10-11s",
+      "node_id": "n5_resettle",
+      "beat": "immediate stop and one equipment settle"
+    }
+  ],
+  "shot_grammar": {
+    "shot": "locked eye-level full-body medium-wide three-quarter view",
+    "aspect_ratio": "16:9 landscape",
+    "camera_movement": "none",
+    "cut": "none",
+    "lighting": "fixed soft diffuse",
+    "composition": "full load, both boots, verified side clearance and stable ground stay readable in one frame"
+  },
+  "h3_prompt": "Subject: Landscape 16:9, one continuous 11-second single-character narrative. Show exactly one physical instance of the established heavy adult adventurer from Picture 1. Preserve his broad heavy body, grounded weight, short dark hair, thick dark beard, tired experienced face, layered worn dark clothing, red scarf, crossing straps and buckles, pale metal shoulder and chest structure, complete backpack and rolled equipment, one cyan-lit waist lantern, heavy gloves and boots. Keep every connected item, body proportion, material and reference color unchanged.\n\nMovement: From 0 to 2 seconds he is already standing in a valid stable position, both boots planted, his complete load and all hanging equipment fully settled. From 2 to 4 seconds one ordinary nonverbal mechanical cycle cue occurs from the side supported by Picture 2; there is no danger, alarm or forced movement, and no new mechanism appears. From 4 to 6 seconds only the nearest shoulder and attached equipment make one restrained local response while his feet remain planted, showing that the available side clearance is adequate but tight. From 6 to 8 seconds his eyes and head turn only slightly to check the lateral space beside his load. From 8 to 10 seconds, without stepping backward or surrendering any forward progress, he deliberately shifts sideways by roughly half the width of one boot into verified open ground. From 10 to 11 seconds he stops immediately; the backpack and hanging equipment settle once, and he remains calm and stable without further correction.\n\nScene: Picture 2 defines SCENE-05, the same monochrome mechanical-airport environment, its existing technical atmosphere, visible structures, spatial continuity, safe standing area, negative space and original palette logic. Use a nearby environmental cycle only if an existing moving boundary or equivalent element is visibly supported by the bound scene image. Use the lateral open ground only after Work verifies it. Do not invent a door, control panel, display, sign, rail, platform, warning light, extra machine or alternate route.\n\nCamera: One locked eye-level full-body medium-wide three-quarter view in a 16:9 landscape frame. Keep both boots, backpack width, hanging equipment, the verified side clearance and stable ground readable together. Fixed framing, focal length and horizon; no push, pull, pan, tilt, tracking, reframing, cut, transition or split screen. The uncut view must prove that he was already correctly settled before the single lateral adjustment.\n\nLighting: Preserve the bound character materials and Picture 2's monochrome palette logic. Use one fixed soft diffuse light throughout. Keep the cyan lantern as one small identity light only. No new glow, flashing, relighting, weather change, sudden saturation shift or color redesign.\n\nAtmosphere: He should first read as competent and correctly positioned; the tiny voluntary side shift may then read as experienced consideration rather than indecision or retreat. His appeal comes from giving the surrounding space a little more margin without abandoning his completed progress. Express this through weight, timing and one precise lateral transfer. Use clear two-dimensional hand-drawn shapes, restrained variable-width linework, soft diffuse depth and low-saturation shadows only where compatible with the bound references.\n\nAudio: Ambient soundscape: low mechanical-airport room tone, restrained ventilation, one ordinary non-alarm cycle cue, slight equipment creak, one lateral boot contact and a single backpack-settling sound. Emotional sound cue: one sparse low sustained tone remains quiet during the clearance check and resolves softly when the new stance settles, with no lyrics and no strong beat. Audio supports spatial margin, weight transfer and restrained emotion only; it does not drive cuts and is not music-video editing.\n\nNegative: exactly one character and one physical body, no duplicate character, no second human figure, no split screen, no clone or mirror-double, no reflection person, no crowd, no NPC, no extra limbs, no text overlay, no watermark, no abrupt redesign, no young slim redesign, no removed backpack, no dropped equipment, no duplicate lantern, no new strap, no new buckle, no new weapon, no backward step, no forward passage, no repeated shuffling, no panic, no run, no jump, no acrobatics, no invented mechanism or structure, no camera movement, no cut, no transition, no weather change, no abrupt color shift, no lyrics, no strong beat, no MV editing, no glossy 3D rendering.",
+  "audio_design": {
+    "ambient_soundscape": "low mechanical-airport room tone, restrained ventilation, one ordinary non-alarm cycle cue, slight equipment creak, one lateral boot contact and one backpack-settling sound",
+    "emotional_sound_cue": "one sparse low sustained tone remains quiet during the clearance check and resolves softly when the new stance settles; no lyrics or strong beat",
+    "audio_role": "support spatial margin, weight transfer and restrained emotion only; do not drive cuts; not MV editing",
+    "actual_audio_track_status": "UNKNOWN_PENDING_WORK"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "same_prompt_and_inputs": true,
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "compare_axes": [
+      "ADV identity",
+      "complete equipment",
+      "prior stable validity",
+      "single lateral shift",
+      "no backward loss",
+      "immediate stop",
+      "camera stability",
+      "viewer language"
+    ],
+    "actual_completed_runs": 0
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no removed equipment",
+    "no backward step",
+    "no repeated shuffling",
+    "no invented machinery",
+    "no camera movement",
+    "no weather or color change",
+    "no MV editing"
+  ],
+  "must_keep": [
+    "ADV-001 identity",
+    "complete backpack and gear",
+    "one cyan lantern",
+    "SCENE-05 identity",
+    "11 seconds",
+    "16:9 landscape",
+    "six fixed time beats",
+    "fixed camera/light",
+    "same prompt for run_A/run_B"
+  ],
+  "must_avoid": [
+    "using old R31 seeds or task IDs",
+    "claiming timeout as output",
+    "inventing environmental geometry",
+    "backward retreat",
+    "multiple corrections",
+    "unloading gear",
+    "9:16 output",
+    "camera movement",
+    "unverified render/audio/feeling claims"
+  ],
+  "validation_target": {
+    "input_gate": [
+      "Picture 1 actual binding/SHA/dimensions",
+      "same-character true/false",
+      "H3 layout true/false",
+      "SCENE-05 actual binding/SHA/dimensions",
+      "lateral open ground true/false",
+      "ordinary cycle element true/false"
+    ],
+    "action_gate": "full settled validity precedes exactly one lateral half-boot adjustment followed by immediate stable stop",
+    "result_gate": "2/2 real R50 runs plus frame evidence and blind feedback"
+  },
+  "input_validation": {
+    "character_source": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
+    "character_declared_sha256": "dd81d92d9f565831c8e924aa2ff36b3fd3cf85b526376971b51ec4f1dd43d1c4",
+    "picture_1_actual_bound_path": null,
+    "picture_1_actual_sha256": null,
+    "picture_1_dimensions": null,
+    "same_character_visual_verified": null,
+    "h3_four_grid_layout_verified": null,
+    "scene_registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
+    "scene_blob": "eb34acce753735d96565bc0108d502dfdc775088",
+    "scene_actual_bound_path": null,
+    "scene_sha256": null,
+    "scene_dimensions": null,
+    "scene_geometry_check": null,
+    "lateral_open_ground_verified": null,
+    "ordinary_cycle_element_verified": null
+  },
+  "card_registration": {
+    "card_id": null,
+    "status": "awaiting_authoritative_CARD_INDEX_and_real_first_frame"
+  }
+}
