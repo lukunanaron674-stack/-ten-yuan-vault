@@ -1,0 +1,54 @@
+{
+  "schema_version": "B-H3-RESULT-1.2",
+  "task_id": "ADV_B_20260925_0508_R53",
+  "status": "pending_work_execution",
+  "actual_completed_runs": 0,
+  "planned_run_count": 2,
+  "render_claim": false,
+  "input_binding": {
+    "character": null,
+    "scene": null,
+    "verified": false
+  },
+  "runs": {
+    "run_A": {
+      "seed": null,
+      "work_task_id": null,
+      "status": "planned",
+      "output": null
+    },
+    "run_B": {
+      "seed": null,
+      "work_task_id": null,
+      "status": "planned",
+      "output": null
+    }
+  },
+  "comparison": {
+    "status": "not_started",
+    "axes": [
+      "ADV identity",
+      "complete equipment",
+      "SCENE-04 silhouette separation",
+      "external cue readability",
+      "eyes-before-head order",
+      "single strap press",
+      "clean stop",
+      "camera stability",
+      "viewer language"
+    ]
+  },
+  "historical_evidence_not_current_result": [
+    {
+      "task": "ADV_B_20260924_1408_R38__v10__B",
+      "status": "done_2_of_2",
+      "commit": "c8b99bb941a3bef11084d4625eb0ff82506e638e"
+    },
+    {
+      "task": "LLL_B_20260924_0506_R29__v10__A",
+      "status": "partial_1_of_2",
+      "commit": "c9f894399ad7ce73fe0be7ed8f410305fad11b8b"
+    }
+  ],
+  "h3_validation_status": "NOT_VALIDATED_PENDING_BINDINGS_AND_REAL_OUTPUTS"
+}
