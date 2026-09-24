@@ -1,0 +1,321 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "research_rule_version": "B端_角色感受实验总规_v1.0",
+  "task_id": "ADV_B_20260925_0307_R51",
+  "task_version": "v1.0",
+  "parent_task_id": "ADV_B_20260925_0210_R50",
+  "created_at": "2026-09-25T03:07:55+08:00",
+  "status": "text_ready_render_blocked_pending_input_validation",
+  "project": "黎黎隆项目/角色魅力实验/B端",
+  "video_mode": "single_character_narrative",
+  "duration_seconds_range": [
+    10,
+    11
+  ],
+  "planned_duration_seconds": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "character_id": "ADV-001",
+  "scene_asset_id": "SCENE-03",
+  "reference_view": {
+    "type": "full_body_identity",
+    "picture_1": "ADV-001_冒险者_H3_sheet_001.jpg; used by completed legacy R34 workflow; authoritative provenance, same-character status and H3 layout still pending",
+    "picture_2": "R1-03_森林湖泊_三色层级.png; used by completed legacy R34 workflow; actual binding, SHA, dimensions and geometry still pending",
+    "mapping": {
+      "picture_1": "ADV-001 only",
+      "picture_2": "SCENE-03 only"
+    },
+    "binding_status": "pending_image_validation",
+    "needs_environment_inference": true
+  },
+  "source_classification": {
+    "confirmed": [
+      {
+        "source": "legacy R34 Work record",
+        "commit": "b6f31eff310e746a611c7ab67c6031ae95d3c448",
+        "fact": "two real seeds, task IDs and local MP4 paths are recorded for the old R34 A workflow; local_render status is done"
+      },
+      {
+        "source": "legacy R31 Work record",
+        "commit": "a4ccd41af62086eca25470ff8944c8403f5e1037",
+        "fact": "two real seeds and task IDs are recorded for the old R31 B workflow, but both runs failed and returned no MP4"
+      },
+      {
+        "source": "R34 registered refs",
+        "path": "黎黎隆项目/角色魅力实验/B端/prompts/generated/ADV_B_20260924_1009_R34__v10__A.json",
+        "fact": "registered filenames are ADV-001_冒险者_H3_sheet_001.jpg and R1-03_森林湖泊_三色层级.png"
+      }
+    ],
+    "candidate": [
+      "one economical press on an existing strap after a small environmental cue may read as alert, experienced self-management",
+      "the internal dynamic-chain interpretation remains experimental"
+    ],
+    "excluded": [
+      "treating old R34 seeds, task IDs or MP4 paths as R51 results",
+      "claiming old R34 visual quality, identity fidelity or audio quality without frame review",
+      "claiming R31 failure as a render result",
+      "inventing visible foliage, water, geometry or weather before Picture 2 validation",
+      "9:16 output, camera movement, render success or viewer-feeling success claims"
+    ]
+  },
+  "viewer_impression_hypothesis": {
+    "first": "他站得稳，负重完整，没有正在纠错。",
+    "shift": "一次轻微环境变化先引发局部衣料反应，再引发眼头确认和一次既有背带轻按。",
+    "final": "他可能被读成警觉但不慌张、能用极小动作管理自身负重的老练角色。",
+    "alternatives": [
+      "背带轻按可能被读成紧张",
+      "风动可能不清楚",
+      "衣料摆动可能掩盖眼头先后"
+    ],
+    "status": "EXPECTED_ONLY_PENDING_BLIND_REVIEW"
+  },
+  "subject_definition": {
+    "single_subject": "exactly one physical ADV-001 instance",
+    "identity_lock": [
+      "broad heavy adult body",
+      "short dark hair and thick beard",
+      "tired experienced face",
+      "layered worn equipment",
+      "complete backpack and rolled gear",
+      "red scarf and pale metal structure",
+      "one cyan waist lantern",
+      "heavy gloves and boots"
+    ],
+    "single_instance_rule": "all Picture 1 views describe one person"
+  },
+  "retention_analysis": {
+    "must_retain": [
+      "complete load",
+      "grounded weight",
+      "SCENE-03 identity and three-layer palette logic",
+      "fixed 16:9 full-body shot",
+      "fixed light",
+      "one existing-strap press",
+      "same-prompt dual sampling"
+    ],
+    "not_yet_verified": [
+      "Picture 1 authoritative provenance and visual identity",
+      "H3 layout",
+      "SCENE-03 actual binding and geometry",
+      "visible foliage or water support",
+      "strap readability",
+      "viewer feeling"
+    ]
+  },
+  "changed_variable": {
+    "type": "single_equipment_contact",
+    "description": "after the environmental cue and eye-head check, add exactly one small press on one already-existing chest strap; no buckle change, step or repeated adjustment"
+  },
+  "ten_yuan_explanation": {
+    "internal_only": true,
+    "primary": {
+      "code": "N",
+      "volume": 8
+    },
+    "secondary": [
+      {
+        "code": "NZ",
+        "volume": 7
+      },
+      {
+        "code": "Z",
+        "volume": 5
+      }
+    ],
+    "variables": [
+      "XN4",
+      "NX3"
+    ],
+    "chain": "N8 -> NZ7克N6 -> Z5补NZ7 -> XN4克Z4 -> N8补XN7",
+    "start_change_end": "稳定负重 → 外界轻扰 → 局部衣料响应 → 眼头确认 → 单次触带 → 稳定截止",
+    "status": "EXPERIMENTAL_HYPOTHESIS_NOT_VALIDATED"
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "nodes": [
+      {
+        "node_id": "n0_stable",
+        "time": "0-2s",
+        "observable_event": "feet and full load already settled",
+        "relation_class": "共存",
+        "relation_direction": "N + XN",
+        "camera_change": "none"
+      },
+      {
+        "node_id": "n1_air_cue",
+        "time": "2-4s",
+        "observable_event": "one brief supported natural air cue",
+        "relation_class": "克",
+        "relation_direction": "NZ -> N",
+        "camera_change": "none"
+      },
+      {
+        "node_id": "n2_local_cloth_response",
+        "time": "4-6s",
+        "observable_event": "existing scarf edge and nearest cloth respond once",
+        "relation_class": "补",
+        "relation_direction": "Z -> NZ",
+        "camera_change": "none"
+      },
+      {
+        "node_id": "n3_eye_head_check",
+        "time": "6-8s",
+        "observable_event": "eyes first, then a few degrees of head turn",
+        "relation_class": "克",
+        "relation_direction": "XN -> Z",
+        "camera_change": "none"
+      },
+      {
+        "node_id": "n4_single_strap_press",
+        "time": "8-10s",
+        "observable_event": "one gloved hand presses one existing chest strap once",
+        "relation_class": "补",
+        "relation_direction": "N -> XN",
+        "camera_change": "none"
+      },
+      {
+        "node_id": "n5_hold",
+        "time": "10-11s",
+        "observable_event": "hand and cloth stop; full load stays stable",
+        "relation_class": "共存",
+        "relation_direction": "N + XN",
+        "camera_change": "none"
+      }
+    ],
+    "validation_question": "Does the cue remain external and small, with a readable eye-before-head check and exactly one strap press followed by a clean stop?"
+  },
+  "time_beats": [
+    {
+      "time": "0-2s",
+      "beat": "stable starting state; complete load settled"
+    },
+    {
+      "time": "2-4s",
+      "beat": "one brief supported natural air stimulus"
+    },
+    {
+      "time": "4-6s",
+      "beat": "local response in existing scarf edge and nearest cloth only"
+    },
+    {
+      "time": "6-8s",
+      "beat": "eyes first, then a slight head response"
+    },
+    {
+      "time": "8-10s",
+      "beat": "one small press on one existing chest strap"
+    },
+    {
+      "time": "10-11s",
+      "beat": "hand and cloth stop; stable result"
+    }
+  ],
+  "shot_grammar": {
+    "shot": "locked eye-level full-body medium-wide three-quarter view",
+    "aspect_ratio": "16:9 landscape",
+    "camera_movement": "none",
+    "cut": "none",
+    "lighting": "fixed soft diffuse",
+    "composition": "both boots, complete load, touched strap and supported scene layers readable in one frame"
+  },
+  "h3_prompt": "Subject: Landscape 16:9, one continuous 11-second single-character narrative. Show exactly one physical instance of the established heavy adult adventurer from Picture 1. Preserve his broad heavy body, grounded weight, short dark hair, thick dark beard, tired experienced face, layered worn dark clothing, red scarf, crossing straps and buckles, pale metal shoulder and chest structure, complete backpack and rolled equipment, one cyan-lit waist lantern, heavy gloves and boots. Keep every connected item, body proportion, material, surface wear and reference color unchanged.\n\nMovement: From 0 to 2 seconds he stands still with both boots planted and the complete load already settled. From 2 to 4 seconds one brief natural air movement crosses only the existing foliage or water surface visibly supported by Picture 2; it creates no new object and no danger. From 4 to 6 seconds only the existing loose edge of his scarf and the nearest attached cloth layer respond once, while his torso, boots and load remain grounded. From 6 to 8 seconds his eyes move first and his head turns only a few degrees toward the affected side, then stops. From 8 to 10 seconds one gloved hand makes a single small press on one already-existing chest strap; no buckle changes, no tightening cycle, no step and no repeated correction. From 10 to 11 seconds the hand and cloth stop, the load remains complete, and he holds a calm stable result.\n\nScene: Picture 2 defines SCENE-03, the same forest-lake environment, its existing elements, spatial continuity and original three-color foreground-middle-background hierarchy. Use the brief air movement only if the bound scene image visibly supports existing foliage or water. Do not invent a path, narrowing, obstacle, bridge, rock, root, building, sign, rail, creature, vehicle or new weather event.\n\nCamera: One locked eye-level full-body medium-wide three-quarter view in a 16:9 landscape frame. Keep both boots, the full backpack silhouette, the existing strap touched by his hand and the supported scene layers readable together. Fixed framing, focal length and horizon; no push, pull, pan, tilt, tracking, reframing, cut, transition or split screen.\n\nLighting: Preserve Picture 1 materials and Picture 2 palette logic under one fixed soft diffuse light. Keep the cyan lantern as one small identity light only. No new glow, flashing, relighting, weather change, sudden saturation shift or color redesign.\n\nAtmosphere: He should read as alert without alarm and experienced without theatricality. The appeal comes from noticing a small environmental change, checking it, and making one economical contact with equipment that was already correctly worn. Use clear two-dimensional hand-drawn shapes, restrained variable-width linework, soft diffuse depth and low-saturation shadows only where compatible with the bound references.\n\nAudio: Ambient soundscape: quiet forest-lake air, distant water only if supported by Picture 2, one brief soft leaf-or-surface rustle, one cloth response, a faint existing-strap creak and low equipment weight. Emotional sound cue: one sparse non-melodic low tone rises slightly during the eye-and-head check and settles when the hand stops, with no lyrics and no strong beat. Audio supports spatial awareness, action readability and restrained emotion only; it does not drive cuts and is not music-video editing.\n\nNegative: exactly one character and one physical body, no duplicate character, no second human figure, no split screen, no clone or mirror-double, no reflection person, no crowd, no NPC, no extra limbs, no text overlay, no watermark, no abrupt redesign, no young slim redesign, no removed backpack, no dropped equipment, no duplicate lantern, no new strap, no new buckle, no new weapon, no step, no repeated adjustment, no panic, no run, no jump, no acrobatics, no invented object or scene geometry, no camera movement, no cut, no transition, no weather change, no abrupt color shift, no lyrics, no strong beat, no MV editing, no glossy 3D rendering.",
+  "audio_design": {
+    "ambient_soundscape": "quiet forest-lake air; distant water only if supported; one brief soft leaf-or-surface rustle, one cloth response, faint existing-strap creak and low equipment weight",
+    "emotional_sound_cue": "one sparse non-melodic low tone rises slightly during the eye-head check and settles when the hand stops; no lyrics or strong beat",
+    "audio_role": "support spatial awareness, action readability and restrained emotion only; do not drive cuts; not MV editing",
+    "actual_audio_track_status": "UNKNOWN_PENDING_WORK"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "same_prompt_and_inputs": true,
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "compare_axes": [
+      "ADV identity",
+      "complete equipment",
+      "external cue readability",
+      "eyes-before-head order",
+      "single strap press",
+      "clean stop",
+      "camera stability",
+      "viewer language"
+    ],
+    "actual_completed_runs": 0
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no removed equipment",
+    "no new strap or buckle",
+    "no step",
+    "no repeated adjustment",
+    "no invented geometry",
+    "no camera movement",
+    "no weather or color change",
+    "no MV editing"
+  ],
+  "must_keep": [
+    "ADV-001 identity",
+    "complete backpack and gear",
+    "one cyan lantern",
+    "SCENE-03 identity",
+    "11 seconds",
+    "16:9 landscape",
+    "six fixed time beats",
+    "fixed camera/light",
+    "same prompt for run_A/run_B"
+  ],
+  "must_avoid": [
+    "using old R34 or R31 seeds/task IDs as R51",
+    "claiming old MP4 paths as R51 output",
+    "inventing scene elements",
+    "multiple corrections",
+    "unloading gear",
+    "9:16 output",
+    "camera movement",
+    "unverified render/audio/feeling claims"
+  ],
+  "validation_target": {
+    "input_gate": [
+      "Picture 1 bound path/SHA/dimensions",
+      "same-character true/false",
+      "H3 layout true/false",
+      "Picture 2 bound path/SHA/dimensions",
+      "scene geometry true/false",
+      "visible foliage or water support true/false",
+      "existing chest strap readable true/false"
+    ],
+    "action_gate": "external cue precedes local cloth response; eyes precede slight head turn; exactly one existing-strap press; then full stop",
+    "result_gate": "2/2 real R51 runs plus node evidence, audio evidence and blind feedback"
+  },
+  "input_validation": {
+    "picture_1_registered_filename": "ADV-001_冒险者_H3_sheet_001.jpg",
+    "picture_1_actual_bound_path": null,
+    "picture_1_sha256": null,
+    "picture_1_dimensions": null,
+    "same_character_visual_verified": null,
+    "h3_four_grid_layout_verified": null,
+    "picture_2_registered_filename": "R1-03_森林湖泊_三色层级.png",
+    "picture_2_actual_bound_path": null,
+    "picture_2_sha256": null,
+    "picture_2_dimensions": null,
+    "scene_geometry_check": null,
+    "foliage_or_water_support_verified": null,
+    "existing_chest_strap_readable": null
+  }
+}
