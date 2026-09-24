@@ -1,8 +1,8 @@
 {
   "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
   "task_id": "MOUSE_B_20260924_1110_R35",
-  "status": "awaiting_work_execution",
-  "actual_completed_runs": 0,
+  "status": "work_render_completed",
+  "actual_completed_runs": 2,
   "created_by": "gh_writeback(auto-template, B端 未建占位)",
   "input_validation": {
     "validated_at": "2026-09-24 20:28:38",
@@ -139,8 +139,121 @@
     "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
   },
   "work_writeback": {
-    "updated_at": "2026-09-24 20:28:38",
+    "updated_at": "2026-09-24 20:28:57",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
+  },
+  "sampling_plan": {
+    "segments": {
+      "A": {
+        "run_A": {
+          "seed": 1013531230,
+          "work_task_id": "MOUSE_B_20260924_1110_R35__v10__A_run_A_0924162945",
+          "status": "completed",
+          "relay_status": "done",
+          "execution_record": "work_h3_real_run",
+          "rendered_at": null,
+          "elapsed_sec": 900,
+          "output_id": "MOUSE_B_20260924_1110_R35__v10__A_run_A_00001_.mp4",
+          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_1110_R35__v10__A_run_A_00001_.mp4",
+          "output_bytes": 1081270,
+          "output_sha256": "32dfe423891859c8d9400d1fba9e26d5f3852a7481d920db7adeae84bfa7ae05"
+        },
+        "run_B": {
+          "seed": 2060091466,
+          "work_task_id": "MOUSE_B_20260924_1110_R35__v10__A_run_B_0924162945",
+          "status": "completed",
+          "relay_status": "done",
+          "execution_record": "work_h3_real_run",
+          "rendered_at": null,
+          "elapsed_sec": 900,
+          "output_id": "MOUSE_B_20260924_1110_R35__v10__A_run_B_00001_.mp4",
+          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_1110_R35__v10__A_run_B_00001_.mp4",
+          "output_bytes": 1216647,
+          "output_sha256": "131b7fa6b16b673ed69dc425805cdd40fdf7cbbb48fd366bdfa8b7df91571220"
+        },
+        "status": "completed"
+      }
+    }
+  },
+  "render_claim": {
+    "claimed": true,
+    "by": "relay-gh@DESKTOP-FKEUGLS",
+    "at": "2026-09-24 20:28:40",
+    "run_key": "MOUSE_B_20260924_1110_R35__v10__A",
+    "segment": "A",
+    "prompt_sha256": null,
+    "prompt_chars": 3810,
+    "prompt_source": null,
+    "width": 1280,
+    "height": 736,
+    "length_frames": 240,
+    "fps": 24,
+    "duration_sec": 10.0,
+    "steps": 8,
+    "model": {
+      "unet": "Minimax_H3/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "clip": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "attention": "sage"
+    },
+    "refs_used": [
+      "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+      "R1-01_森林湖泊_单色.png"
+    ],
+    "outputs": [
+      {
+        "seed": 1013531230,
+        "work_task_id": "MOUSE_B_20260924_1110_R35__v10__A_run_A_0924162945",
+        "status": "completed",
+        "relay_status": "done",
+        "execution_record": "work_h3_real_run",
+        "rendered_at": null,
+        "elapsed_sec": 900,
+        "output_id": "MOUSE_B_20260924_1110_R35__v10__A_run_A_00001_.mp4",
+        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_1110_R35__v10__A_run_A_00001_.mp4",
+        "output_bytes": 1081270,
+        "output_sha256": "32dfe423891859c8d9400d1fba9e26d5f3852a7481d920db7adeae84bfa7ae05"
+      },
+      {
+        "seed": 2060091466,
+        "work_task_id": "MOUSE_B_20260924_1110_R35__v10__A_run_B_0924162945",
+        "status": "completed",
+        "relay_status": "done",
+        "execution_record": "work_h3_real_run",
+        "rendered_at": null,
+        "elapsed_sec": 900,
+        "output_id": "MOUSE_B_20260924_1110_R35__v10__A_run_B_00001_.mp4",
+        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_1110_R35__v10__A_run_B_00001_.mp4",
+        "output_bytes": 1216647,
+        "output_sha256": "131b7fa6b16b673ed69dc425805cdd40fdf7cbbb48fd366bdfa8b7df91571220"
+      }
+    ],
+    "outputs_local_abs": [
+      "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_1110_R35__v10__A_run_A_00001_.mp4",
+      "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_1110_R35__v10__A_run_B_00001_.mp4"
+    ],
+    "outputs_uploaded_to_github": [],
+    "output_evidence_policy": {
+      "video_uploaded": false,
+      "evidence_mode": "key",
+      "evidence_frames_per_run": 3,
+      "evidence_path": "黎黎隆项目/角色魅力实验/B端/results/frames/MOUSE_B_20260924_1110_R35/",
+      "video_local_path": "D:/H3/outputs/comfyui/",
+      "note": "只传首/中/尾 3 帧作可核实证据，按 output_sha256 与原片一一对应；要原片时按 sha256 向 Work 端索取"
+    }
+  },
+  "validation_target": {
+    "character_consistency": "work_output_available_pending_human_review",
+    "action_readability": "work_output_available_pending_human_review",
+    "camera_stability": "work_output_available_pending_human_review",
+    "atmosphere_fit": "work_output_available_pending_human_review",
+    "no_duplicate_character": "work_output_available_pending_human_review",
+    "identity_binding": "validated_by_relay_gh",
+    "scene_geometry": "work_output_available_pending_human_review"
+  },
+  "audio_track_claim": {
+    "claimed": false,
+    "note": "H3 节点是否出音轨需人工确认；未核实前不宣称有音轨（B端规则：若 Work 的 H3 节点不产音频则改为后期音效需求）",
+    "design_received": true
   }
 }
