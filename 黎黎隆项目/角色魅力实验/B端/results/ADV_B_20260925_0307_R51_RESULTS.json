@@ -1,0 +1,83 @@
+{
+  "schema_version": "B-H3-RESULT-1.2",
+  "task_id": "ADV_B_20260925_0307_R51",
+  "status": "pending_work_execution",
+  "actual_completed_runs": 0,
+  "current_task_runs": {
+    "run_A": {
+      "seed": null,
+      "work_task_id": null,
+      "status": "pending",
+      "output_path": null,
+      "output_sha256": null,
+      "fps": null,
+      "total_frames": null,
+      "audio_status": null
+    },
+    "run_B": {
+      "seed": null,
+      "work_task_id": null,
+      "status": "pending",
+      "output_path": null,
+      "output_sha256": null,
+      "fps": null,
+      "total_frames": null,
+      "audio_status": null
+    }
+  },
+  "prior_evidence_not_current_result": [
+    {
+      "source_task_id": "ADV_B_20260924_1009_R34__v10__A",
+      "commit": "b6f31eff310e746a611c7ab67c6031ae95d3c448",
+      "status": "done",
+      "runs": [
+        {
+          "run": "run_A",
+          "seed": 2036377531,
+          "task_id": "ADV_B_20260924_1009_R34__v10__A_run_A_0925021947",
+          "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__A_run_A_00004_.mp4"
+        },
+        {
+          "run": "run_B",
+          "seed": 742982253,
+          "task_id": "ADV_B_20260924_1009_R34__v10__A_run_B_0925021948",
+          "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__A_run_B_00004_.mp4"
+        }
+      ],
+      "limitations": [
+        "15-second 9:16 legacy prompt",
+        "camera was not fully fixed",
+        "no frames or visual/audio audit in GitHub evidence",
+        "cannot establish R51 identity or quality"
+      ]
+    },
+    {
+      "source_task_id": "ADV_B_20260924_0710_R31__v10__B",
+      "commit": "a4ccd41af62086eca25470ff8944c8403f5e1037",
+      "status": "failed",
+      "runs": [
+        {
+          "run": "run_A",
+          "seed": 2141982862,
+          "task_id": "ADV_B_20260924_0710_R31__v10__B_run_A_0925015852",
+          "mp4": null
+        },
+        {
+          "run": "run_B",
+          "seed": 2064901062,
+          "task_id": "ADV_B_20260924_0710_R31__v10__B_run_B_0925015852",
+          "mp4": null
+        }
+      ],
+      "limitations": [
+        "old task",
+        "no MP4",
+        "not an R51 result"
+      ]
+    }
+  ],
+  "input_validation_status": "pending_image_validation",
+  "render_validation_status": "not_started",
+  "blind_review_status": "pending",
+  "rule": "Do not copy prior seeds, task IDs or paths into current_task_runs."
+}
