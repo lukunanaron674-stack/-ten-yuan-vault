@@ -141,7 +141,7 @@
     "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
   },
   "work_writeback": {
-    "updated_at": "2026-09-24 19:44:34",
+    "updated_at": "2026-09-24 19:45:26",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
   },
@@ -288,8 +288,8 @@
     "design_received": true
   },
   "visual_evidence": {
-    "frames_uploaded_at": "2026-09-24 19:43:23",
-    "run_key": "ADV_B_20260924_0710_R31__v10__A",
+    "frames_uploaded_at": "2026-09-24 19:45:26",
+    "run_key": "ADV_B_20260924_0710_R31__v10__B",
     "policy": {
       "mode": "key",
       "sheet_frames": 6,
@@ -300,30 +300,30 @@
     "files": [
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260924_0710_R31/run_A_key_head.jpg",
-        "kb": 112.9
+        "kb": 132.6
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260924_0710_R31/run_A_key_mid.jpg",
-        "kb": 112.5
+        "kb": 113.5
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260924_0710_R31/run_A_key_tail.jpg",
-        "kb": 115.8
+        "kb": 127.9
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260924_0710_R31/run_B_key_head.jpg",
-        "kb": 98.0
+        "kb": 106.9
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260924_0710_R31/run_B_key_mid.jpg",
-        "kb": 113.3
+        "kb": 115.8
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260924_0710_R31/run_B_key_tail.jpg",
-        "kb": 106.7
+        "kb": 115.7
       }
     ],
-    "total_kb": 659.3,
+    "total_kb": 712.4,
     "note": "画面证据 = 每次抽样首/中/尾 3 帧（默认），与 render_claim.outputs[].output_sha256 对应的成片一一对应；成片本体 2-4MB 未入 git，留在 D:/H3/outputs/comfyui/，需要原片按 sha256 索取"
   }
 }
