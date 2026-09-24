@@ -8,15 +8,15 @@
   "samples": [
     {
       "run": "run_A",
-      "task_id": "ADV_B_20260924_1009_R34__v10__B_run_A_0924211344",
-      "seed": 809770760,
-      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_A_00003_.mp4"
+      "task_id": "ADV_B_20260924_1009_R34__v10__B_run_A_0925024934",
+      "seed": 475727173,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_A_00004_.mp4"
     },
     {
       "run": "run_B",
-      "task_id": "ADV_B_20260924_1009_R34__v10__B_run_B_0924211344",
-      "seed": 721044533,
-      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_B_00003_.mp4"
+      "task_id": "ADV_B_20260924_1009_R34__v10__B_run_B_0925024934",
+      "seed": 525673905,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_B_00004_.mp4"
     }
   ],
   "dynamic_chain_reading": "",
@@ -37,14 +37,14 @@
   "h3_prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds, continuing directly from the selected real ending frame of Segment A.\n\nSTYLE IDENTITY LOCK: preserve the exact same Picture 1 adventurer, equipment connections, body mass, worn materials and original colors, and preserve the same Picture 2 forest-lake identity and three-color spatial hierarchy. The backpack, rolled load, cloak, scarf, straps, metal structure, gloves, boots and single waist lantern remain complete and unchanged.\n\nVISUAL EXPRESSION VARIABLE: use restrained readable low-amplitude movement, compatible line weight, reference-consistent shading, soft diffuse light and clear foreground-middle-background separation. Character charm comes from practical rerouting with the full burden, not from removing the burden or becoming suddenly agile.\n\nCHARACTER (Picture 1): show the same one physical adult adventurer from Segment A. Preserve the chosen real A ending pose and every existing equipment connection. Do not simplify, discard, duplicate or redesign the load.\n\nENVIRONMENT (Picture 2): remain in the same verified SCENE-03 space, with the same direct narrowing, open side band, screen direction, lighting direction and three-color palette logic, but only where these relations are visually supported by Picture 2. Do not create new terrain or reveal an invented reverse area.\n\nCAMERA AND COMPOSITION: inherit the same camera side and established spatial axis from Segment A. Use a medium-wide view that keeps his complete load and the verified open side band visible. Allow one restrained lateral follow through the existing open area if supported; otherwise keep the camera fixed. Preserve foreground, middle-ground and background continuity.\n\nACTION: from the held Segment A ending, the adventurer takes one complete step backward to recover turning space. He rotates his torso and full backpack together by a small controlled angle, keeping the rolled load and lantern attached. He then takes two slow diagonal steps through the existing open side band, following a shallow curved route around the supported narrowing. The equipment sways with believable weight but clears without contact. Once beyond the restricted line, he returns his shoulders toward the original travel direction and continues one measured step. End with the complete adventurer and all gear intact, having changed the route rather than forced the load through.\n\nAUDIO DESIGN: continue the same forest-lake ambience and distant water, adding one heavy backward step, restrained cloth and strap friction, backpack weight shifting, two diagonal footfalls and a final settling step. The near-silence inherited from Segment A opens into a quiet low non-melodic release when the load clears the narrowing. Audio reinforces effort, geometry and calm judgment; it is not a song cue or MV beat track.\n\nNEGATIVE: no second character, duplicate adventurer, clone, split screen, four-person identity sheet, reflection person or shadow double; no removed backpack, dropped bedroll, discarded gear, new buckle, tool, weapon or duplicate lantern; no invented gate, wall, bridge, rocks, roots, sign, rail, building, path or reverse terrain; no collision, squeeze-through, teleportation, leap, run, acrobatics, sudden nimble movement, triumph pose, speed ramp, montage or music-video cutting; no young slim redesign, horns, tail, wings, clean modern armor or cyan-white energy body; no axis flip, unrelated location, text, subtitle, logo, watermark, glossy 3D render or hard synthetic digital edges.",
   "local_render": {
     "status": "done",
-    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_A_00003_.mp4",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_A_00004_.mp4",
     "mp4s": [
-      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_A_00003_.mp4",
-      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_B_00003_.mp4"
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_A_00004_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_B_00004_.mp4"
     ],
-    "elapsed_sec": 784,
+    "elapsed_sec": 1260,
     "rc": 0,
-    "tail": "[h3_qq_gen]   状态: pending  (2026-09-24 21:13:44)\n[h3_qq_gen]   状态: running  (2026-09-24 21:14:39)\n[h3_qq_gen]   状态: done  (2026-09-24 21:20:40)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_A_00003_.mp4\n[h3_qq_gen] 轮询 ADV_B_20260924_1009_R34__v10__B_run_B_0924211344（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-24 21:20:40)\n[h3_qq_gen]   状态: done  (2026-09-24 21:26:42)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_B_00003_.mp4",
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 02:49:34)\n[h3_qq_gen]   状态: running  (2026-09-25 02:56:26)\n[h3_qq_gen]   状态: done  (2026-09-25 03:03:27)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_A_00004_.mp4\n[h3_qq_gen] 轮询 ADV_B_20260924_1009_R34__v10__B_run_B_0925024934（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 03:03:27)\n[h3_qq_gen]   状态: done  (2026-09-25 03:10:28)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__B_run_B_00004_.mp4",
     "by": "b_new_format",
     "host": "DESKTOP-FKEUGLS"
   }
