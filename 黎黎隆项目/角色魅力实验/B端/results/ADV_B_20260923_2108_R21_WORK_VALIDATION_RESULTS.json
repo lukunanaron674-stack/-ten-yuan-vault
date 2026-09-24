@@ -1,11 +1,11 @@
 {
   "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
   "task_id": "ADV_B_20260923_2108_R21_WORK_VALIDATION",
-  "status": "awaiting_work_execution",
-  "actual_completed_runs": 0,
+  "status": "work_render_completed",
+  "actual_completed_runs": 1,
   "created_by": "gh_writeback(auto-template, B端 未建占位)",
   "input_validation": {
-    "validated_at": "2026-09-24 19:42:28",
+    "validated_at": "2026-09-24 19:38:48",
     "validated_by": "relay-gh",
     "run_key": "ADV_B_20260923_2108_R21_WORK_VALIDATION",
     "status": "validated_with_warnings",
@@ -81,21 +81,34 @@
     "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
   },
   "work_writeback": {
-    "updated_at": "2026-09-24 19:42:28",
+    "updated_at": "2026-09-24 19:42:31",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
   },
   "sampling_plan": {
     "segments": {
       "A": {
-        "status": "completed"
+        "status": "completed",
+        "single": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "completed",
+          "relay_status": "done",
+          "execution_record": "work_h3_real_run",
+          "rendered_at": "2026-09-23 21:33:45",
+          "elapsed_sec": 381,
+          "output_id": "ADV_B_20260923_2108_R21_WORK_VALIDATION_00001_.mp4",
+          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260923_2108_R21_WORK_VALIDATION_00001_.mp4",
+          "output_bytes": 1892251,
+          "output_sha256": "4958c27bade957652dea23a6a1edffdadae8ac63e743dac4b6b4ef34180da2c9"
+        }
       }
     }
   },
   "render_claim": {
-    "claimed": false,
+    "claimed": true,
     "by": "relay-gh@DESKTOP-FKEUGLS",
-    "at": "2026-09-24 19:38:50",
+    "at": "2026-09-24 19:42:30",
     "run_key": "ADV_B_20260923_2108_R21_WORK_VALIDATION",
     "segment": "A",
     "prompt_sha256": null,
@@ -115,8 +128,24 @@
     "refs_used": [
       "R1-03_森林湖泊_三色层级.png"
     ],
-    "outputs": [],
-    "outputs_local_abs": [],
+    "outputs": [
+      {
+        "seed": null,
+        "work_task_id": null,
+        "status": "completed",
+        "relay_status": "done",
+        "execution_record": "work_h3_real_run",
+        "rendered_at": "2026-09-23 21:33:45",
+        "elapsed_sec": 381,
+        "output_id": "ADV_B_20260923_2108_R21_WORK_VALIDATION_00001_.mp4",
+        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260923_2108_R21_WORK_VALIDATION_00001_.mp4",
+        "output_bytes": 1892251,
+        "output_sha256": "4958c27bade957652dea23a6a1edffdadae8ac63e743dac4b6b4ef34180da2c9"
+      }
+    ],
+    "outputs_local_abs": [
+      "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260923_2108_R21_WORK_VALIDATION_00001_.mp4"
+    ],
     "outputs_uploaded_to_github": [],
     "output_evidence_policy": {
       "video_uploaded": false,
