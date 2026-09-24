@@ -1,0 +1,94 @@
+{
+  "schema_version": "B-CARD-REVIEW-v1.0",
+  "updated_on": "2026-09-24",
+  "source": "GitHub main; only image paths verified in repository; frame pixel quality not audited",
+  "cards": [
+    {
+      "card_id": null,
+      "display_id": "待注册 · CH 卡",
+      "title": "黎黎隆 · ZX 单一十元动态实验",
+      "type": "single_tenyuan",
+      "tenyuan": "ZX",
+      "character_id": "LLL-MAIN-001",
+      "scene_id": null,
+      "round_id": "R001（待注册）",
+      "status": "awaiting_card_registration",
+      "cover": {
+        "status": "pending_render",
+        "path": null
+      },
+      "frames": {
+        "run_A": {
+          "head": null,
+          "mid": null,
+          "tail": null
+        },
+        "run_B": {
+          "head": null,
+          "mid": null,
+          "tail": null
+        }
+      },
+      "source_task": "tasks/inbox/B_CARD_SYSTEM_NEXT_ROUND_20260924.md",
+      "notes": "新卡号必须先经 CARD_INDEX.json 查重并由编号器分配；未渲染不显示假首帧。"
+    },
+    {
+      "card_id": null,
+      "display_id": "历史任务 · R35",
+      "title": "鼠耳异变少女 · 定向反应",
+      "type": "legacy",
+      "tenyuan": "N（历史多元）",
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "scene_id": "SCENE-01",
+      "round_id": "R35",
+      "status": "frames_available_not_visually_reviewed",
+      "cover": {
+        "status": "verified_file_exists",
+        "path": "results/frames/MOUSE_B_20260924_1110_R35/run_A_key_head.jpg"
+      },
+      "frames": {
+        "run_A": {
+          "head": "results/frames/MOUSE_B_20260924_1110_R35/run_A_key_head.jpg",
+          "mid": "results/frames/MOUSE_B_20260924_1110_R35/run_A_key_mid.jpg",
+          "tail": "results/frames/MOUSE_B_20260924_1110_R35/run_A_key_tail.jpg"
+        },
+        "run_B": {
+          "head": "results/frames/MOUSE_B_20260924_1110_R35/run_B_key_head.jpg",
+          "mid": "results/frames/MOUSE_B_20260924_1110_R35/run_B_key_mid.jpg",
+          "tail": "results/frames/MOUSE_B_20260924_1110_R35/run_B_key_tail.jpg"
+        }
+      },
+      "source_task": "tasks/inbox/MOUSE_B_20260924_1110_R35.json",
+      "notes": "真实抽帧文件已在仓库定位；不等于本轮完成像素级质量审核，也不代表已注册 CH 永久卡号。"
+    },
+    {
+      "card_id": null,
+      "display_id": "历史任务 · R37",
+      "title": "冒险者 · 负重惯性",
+      "type": "legacy",
+      "tenyuan": "XN（历史多元）",
+      "character_id": "ADV-001",
+      "scene_id": "SCENE-04",
+      "round_id": "R37",
+      "status": "frames_available_not_visually_reviewed",
+      "cover": {
+        "status": "verified_file_exists",
+        "path": "results/frames/ADV_B_20260924_1308_R37/run_A_key_head.jpg"
+      },
+      "frames": {
+        "run_A": {
+          "head": "results/frames/ADV_B_20260924_1308_R37/run_A_key_head.jpg",
+          "mid": "results/frames/ADV_B_20260924_1308_R37/run_A_key_mid.jpg",
+          "tail": "results/frames/ADV_B_20260924_1308_R37/run_A_key_tail.jpg"
+        },
+        "run_B": {
+          "head": "results/frames/ADV_B_20260924_1308_R37/run_B_key_head.jpg",
+          "mid": "results/frames/ADV_B_20260924_1308_R37/run_B_key_mid.jpg",
+          "tail": "results/frames/ADV_B_20260924_1308_R37/run_B_key_tail.jpg"
+        }
+      },
+      "source_task": "tasks/inbox/ADV_B_20260924_1308_R37.json",
+      "notes": "真实抽帧文件已在仓库定位；不等于本轮完成像素级质量审核，也不代表已注册 CH 永久卡号。"
+    }
+  ]
+}
