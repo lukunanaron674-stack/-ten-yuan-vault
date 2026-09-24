@@ -1,0 +1,51 @@
+{
+  "task_id": "ADV_B_20260924_1009_R34__v10__A",
+  "parent_task_id": "ADV_B_20260924_1009_R34",
+  "schema_version": null,
+  "clip_id": "A",
+  "prompt_chars": 3813,
+  "dual_sample": true,
+  "samples": [
+    {
+      "run": "run_A",
+      "task_id": "ADV_B_20260924_1009_R34__v10__A_run_A_0924210057",
+      "seed": 961846739,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__A_run_A_00003_.mp4"
+    },
+    {
+      "run": "run_B",
+      "task_id": "ADV_B_20260924_1009_R34__v10__A_run_B_0924210057",
+      "seed": 965000443,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__A_run_B_00003_.mp4"
+    }
+  ],
+  "dynamic_chain_reading": "",
+  "shot_sequence": [],
+  "must_keep_check": [],
+  "negative_prompt": "no text, no subtitle, no logo, no random unreadable text",
+  "refs_source": "task",
+  "refs_used": [
+    "ADV-001_冒险者_H3_sheet_001.jpg",
+    "R1-03_森林湖泊_三色层级.png"
+  ],
+  "frames": 240,
+  "audio_design": {
+    "ambient_soundscape": "quiet forest-lake air, distant water, restrained leaves, two heavy steps, cloth layers, strap tension and one boot settling back",
+    "emotional_sound_cue": "sparse non-melodic low tone narrows during the test, cuts near silent at the stop and stays unresolved as gaze shifts",
+    "audio_role": "support weight, spatial judgment and restraint; not MV rhythm"
+  },
+  "h3_prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds.\n\nSTYLE IDENTITY LOCK: preserve the verified drawing language, proportions, materials, surface wear and original colors of Picture 1 and Picture 2. Keep the adventurer's broad heavy adult body, short dark hair, thick beard, tired experienced face, dark teal-black layered worn cloak, purple cloth panels, red scarf and crossing straps, pale metal shoulder and chest structure, complete backpack and rolled load, heavy gloves and boots, and one cyan-lit waist lantern. Preserve the three-color foreground-middle-background hierarchy of the forest-lake scene. Reference fidelity overrides generic style wording.\n\nVISUAL EXPRESSION VARIABLE: use restrained readable 2D motion, compatible variable-weight linework, thin shading only where consistent with the references, soft diffuse light and clear separation of the three spatial layers. Let body weight, equipment width and a deliberate stop express the decision; avoid dramatic posing or montage.\n\nCHARACTER (Picture 1): show exactly one physical instance of the established adult adventurer. Picture 1 identity views all describe this one person. Keep the complete equipment system attached and connected. Because the reference is a full-body identity sheet, use only low-amplitude actions and stable body proportions.\n\nENVIRONMENT (Picture 2): preserve the identity, existing elements, spatial continuity and original three-color hierarchy of SCENE-03. Use an existing visually supported narrowing between the foreground and middle-ground travel space only if Picture 2 actually provides it. Do not invent a gate, wall, bridge, rocks, roots, signs, rails, buildings or new path.\n\nCAMERA AND COMPOSITION: begin with a slightly elevated medium-wide three-quarter view. Keep the adventurer's complete loaded silhouette, the visually supported direct route and an existing open side band readable within the foreground, middle ground and background. Preserve one screen direction. Hold the camera nearly fixed, allowing only a very slow approach push before he stops if the scene geometry supports it.\n\nACTION: the adventurer advances two slow heavy steps along the direct existing route. Before the complete backpack and rolled load enter the supported narrowing, he tests the available width by turning one shoulder a few degrees and placing one boot half a step forward. The full load remains attached. He recognizes that forcing the direct line would catch or compress the equipment, stops before contact and returns the testing boot to a stable stance. His eyes move toward the existing open side band while his torso stays grounded. End with both feet planted, one gloved hand resting lightly on an existing strap, and the complete load unchanged.\n\nAUDIO DESIGN: quiet forest-lake air, distant water, restrained leaves, two heavy steps, cloth layers, strap tension, backpack weight and one boot settling back. A sparse non-melodic low tone narrows during the width test, cuts to near silence at the stop and remains unresolved as his gaze shifts. Audio supports weight, spatial judgment and restraint; it does not create MV rhythm.\n\nNEGATIVE: no second character, duplicate adventurer, clone, split screen, four-person identity sheet, reflection person or shadow double; no removed backpack, dropped bedroll, discarded gear, new buckle, new tool, new weapon or duplicate lantern; no invented gate, wall, bridge, rocks, roots, sign, rail, building or path; no collision, scraping, squeeze-through, leap, run, acrobatics, panic, speed ramp, montage or music-video cutting; no young slim swordsman redesign, horns, tail, wings, clean modern armor or cyan-white energy body; no axis flip, reverse space, text, subtitle, logo, watermark, glossy 3D render or hard synthetic digital edges.",
+  "local_render": {
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__A_run_A_00003_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__A_run_A_00003_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__A_run_B_00003_.mp4"
+    ],
+    "elapsed_sec": 763,
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-24 21:00:57)\n[h3_qq_gen]   状态: running  (2026-09-24 21:01:36)\n[h3_qq_gen]   状态: done  (2026-09-24 21:07:37)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__A_run_A_00003_.mp4\n[h3_qq_gen] 轮询 ADV_B_20260924_1009_R34__v10__A_run_B_0924210057（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-24 21:07:37)\n[h3_qq_gen]   状态: done  (2026-09-24 21:13:38)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1009_R34__v10__A_run_B_00003_.mp4",
+    "by": "b_new_format",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
