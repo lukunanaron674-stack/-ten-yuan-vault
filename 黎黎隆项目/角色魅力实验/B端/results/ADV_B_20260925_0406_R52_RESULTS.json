@@ -1,8 +1,8 @@
 {
   "schema_version": "B-H3-RESULT-1.2",
   "task_id": "ADV_B_20260925_0406_R52",
-  "status": "work_rendering",
-  "actual_completed_runs": 0,
+  "status": "work_render_completed",
+  "actual_completed_runs": 2,
   "current_task_runs": {
     "run_A": {
       "seed": null,
@@ -86,76 +86,120 @@
   "claimed_at": "2026-09-25 07:11:58",
   "claimed_run_key": "ADV_B_20260925_0406_R52",
   "work_writeback": {
-    "updated_at": "2026-09-25 07:26:24",
+    "updated_at": "2026-09-25 07:26:26",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
   },
-  "input_validation": {
-    "validated_at": "2026-09-25 07:26:24",
-    "validated_by": "relay-gh",
+  "sampling_plan": {
+    "segments": {
+      "A": {
+        "run_A": {
+          "seed": 1398267229,
+          "work_task_id": "ADV_B_20260925_0406_R52_run_A_0925071200",
+          "status": "completed",
+          "relay_status": "done",
+          "execution_record": "work_h3_real_run",
+          "rendered_at": "2026-09-25 07:26:20",
+          "elapsed_sec": 860,
+          "output_id": "ADV_B_20260925_0406_R52_run_A_00001_.mp4",
+          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0406_R52_run_A_00001_.mp4",
+          "output_bytes": 1119467,
+          "output_sha256": "23a6c2c4265de9c0b84bc662e553026b9c5ec609c1cde5c674a056cdc599b9f9"
+        },
+        "run_B": {
+          "seed": 1764809833,
+          "work_task_id": "ADV_B_20260925_0406_R52_run_B_0925071200",
+          "status": "completed",
+          "relay_status": "done",
+          "execution_record": "work_h3_real_run",
+          "rendered_at": "2026-09-25 07:26:20",
+          "elapsed_sec": 860,
+          "output_id": "ADV_B_20260925_0406_R52_run_B_00001_.mp4",
+          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0406_R52_run_B_00001_.mp4",
+          "output_bytes": 1180472,
+          "output_sha256": "3ce00ee11e499d3b0a693c2a02157cf8f6ef3b2f0dfa10026bdd499d1690591c"
+        },
+        "status": "completed"
+      }
+    }
+  },
+  "render_claim": {
+    "claimed": true,
+    "by": "relay-gh@DESKTOP-FKEUGLS",
+    "at": "2026-09-25 07:26:26",
     "run_key": "ADV_B_20260925_0406_R52",
-    "status": "validated_with_warnings",
-    "problems": [
-      "no_declared_blob_matched:无一张能与 B端 声明的 blob 对上（角色图 B端 常标 github_image_upload=false，属常见情形；场景图对不上才可疑）—— 已记录 sha256 供人工核对"
+    "segment": "A",
+    "prompt_sha256": "59eab6fcc9015dd16114bf15f93e9e80369dff7eac80887fa82bc3394a58c04e",
+    "prompt_chars": 4024,
+    "prompt_source": "task.h3_prompt",
+    "width": 1280,
+    "height": 736,
+    "length_frames": 240,
+    "fps": 24,
+    "duration_sec": 10.0,
+    "steps": 8,
+    "model": {
+      "unet": "Minimax_H3/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "clip": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "attention": "sage"
+    },
+    "refs_used": [
+      "ADV-001_冒险者_H3_sheet_001.jpg"
     ],
-    "refs": [
+    "outputs": [
       {
-        "file": "ADV-001_冒险者_H3_sheet_001.jpg",
-        "path": "D:\\H3\\pool\\character_refs\\ADV-001_冒险者_H3_sheet_001.jpg",
-        "rel_path": "../pool/character_refs/ADV-001_冒险者_H3_sheet_001.jpg",
-        "exists": true,
-        "bytes": 190622,
-        "kb": 186.2,
-        "sha256": "4284a72886e485ffc18fa0672207599bd244e886cd600ca5531d18f133c8e10c",
-        "md5": "e4a1f7313c700d48d7a973e0938230fa",
-        "git_blob_sha1": "22ed23759700ef0ca0367b7a24074567fbe5f0fb",
-        "width": 941,
-        "height": 1672,
-        "aspect": "941:1672",
-        "megapixels": 1.57,
-        "dimensions_ok": true,
-        "slot": 0,
-        "picture_ref": "Picture 1",
-        "role": "character",
-        "blob_status": "not_on_github(sha256 recorded for manual match)",
-        "declared_blob_match": false
+        "seed": 1398267229,
+        "work_task_id": "ADV_B_20260925_0406_R52_run_A_0925071200",
+        "status": "completed",
+        "relay_status": "done",
+        "execution_record": "work_h3_real_run",
+        "rendered_at": "2026-09-25 07:26:20",
+        "elapsed_sec": 860,
+        "output_id": "ADV_B_20260925_0406_R52_run_A_00001_.mp4",
+        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0406_R52_run_A_00001_.mp4",
+        "output_bytes": 1119467,
+        "output_sha256": "23a6c2c4265de9c0b84bc662e553026b9c5ec609c1cde5c674a056cdc599b9f9"
+      },
+      {
+        "seed": 1764809833,
+        "work_task_id": "ADV_B_20260925_0406_R52_run_B_0925071200",
+        "status": "completed",
+        "relay_status": "done",
+        "execution_record": "work_h3_real_run",
+        "rendered_at": "2026-09-25 07:26:20",
+        "elapsed_sec": 860,
+        "output_id": "ADV_B_20260925_0406_R52_run_B_00001_.mp4",
+        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0406_R52_run_B_00001_.mp4",
+        "output_bytes": 1180472,
+        "output_sha256": "3ce00ee11e499d3b0a693c2a02157cf8f6ef3b2f0dfa10026bdd499d1690591c"
       }
     ],
-    "uploaded_to": [],
-    "checks_done": [
-      "文件存在且非空",
-      "像素尺寸 >= 512（低于此值不足以锁身份/构图）",
-      "参考图互不重复（sha256 去重）",
-      "角色图在 slot0（Picture 1 = 身份锁）",
-      "git blob sha1 与 B端 声明 source_blob 对齐"
-    ]
+    "outputs_local_abs": [
+      "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0406_R52_run_A_00001_.mp4",
+      "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0406_R52_run_B_00001_.mp4"
+    ],
+    "outputs_uploaded_to_github": [],
+    "output_evidence_policy": {
+      "video_uploaded": false,
+      "evidence_mode": "key",
+      "evidence_frames_per_run": 3,
+      "evidence_path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0406_R52/",
+      "video_local_path": "D:/H3/outputs/comfyui/",
+      "note": "只传首/中/尾 3 帧作可核实证据，按 output_sha256 与原片一一对应；要原片时按 sha256 向 Work 端索取"
+    }
   },
-  "work_gate": {
-    "picture_1_status": "validated_with_warnings(no_declared_blob_matched:无一张能与 B端 声明的 blob 对上（角色图 B端 常标 github_image_upload=false，属常见情形；场景图对不上才可疑）—— 已记录 sha256 供人工核对)",
-    "picture_1_evidence": {
-      "file": "ADV-001_冒险者_H3_sheet_001.jpg",
-      "path": "D:\\H3\\pool\\character_refs\\ADV-001_冒险者_H3_sheet_001.jpg",
-      "rel_path": "../pool/character_refs/ADV-001_冒险者_H3_sheet_001.jpg",
-      "exists": true,
-      "bytes": 190622,
-      "kb": 186.2,
-      "sha256": "4284a72886e485ffc18fa0672207599bd244e886cd600ca5531d18f133c8e10c",
-      "md5": "e4a1f7313c700d48d7a973e0938230fa",
-      "git_blob_sha1": "22ed23759700ef0ca0367b7a24074567fbe5f0fb",
-      "width": 941,
-      "height": 1672,
-      "aspect": "941:1672",
-      "megapixels": 1.57,
-      "dimensions_ok": true,
-      "slot": 0,
-      "picture_ref": "Picture 1",
-      "role": "character",
-      "blob_status": "not_on_github(sha256 recorded for manual match)",
-      "declared_blob_match": false
-    },
-    "picture_2_status": "not_supplied",
-    "picture_2_evidence": null,
-    "visually_verified_by_work": false,
-    "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
+  "validation_target": {
+    "character_consistency": "work_output_available_pending_human_review",
+    "action_readability": "work_output_available_pending_human_review",
+    "camera_stability": "work_output_available_pending_human_review",
+    "atmosphere_fit": "work_output_available_pending_human_review",
+    "no_duplicate_character": "work_output_available_pending_human_review",
+    "identity_binding": "validated_by_relay_gh",
+    "scene_geometry": "work_output_available_pending_human_review"
+  },
+  "audio_track_claim": {
+    "claimed": false,
+    "note": "H3 节点是否出音轨需人工确认；未核实前不宣称有音轨（B端规则：若 Work 的 H3 节点不产音频则改为后期音效需求）",
+    "design_received": true
   }
 }
