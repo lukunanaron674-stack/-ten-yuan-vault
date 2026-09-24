@@ -1,0 +1,51 @@
+{
+  "schema": "lililong-b3-c-handoff/v1.3",
+  "task_id": "B3_20260924_0825_MOUSE-EAR-MUTANT-001_SCENE-02",
+  "repository": "lukunanaron674-stack/-ten-yuan-vault",
+  "branch": "main",
+  "sources": {
+    "b1": {
+      "path": "黎黎隆项目/角色魅力实验/B端/logs/B1_素材索引_20260924_0605.md",
+      "blob": "fc5adc48d021ac46a665986f9264a4badce7982f"
+    },
+    "b2": {
+      "path": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260924_0715_MOUSE-EAR-MUTANT-001_SCENE-02.md",
+      "blob": "e2fe7938e07b49ea9930c18ef8a643b617ea31fe"
+    },
+    "b3_prompt": "黎黎隆项目/角色魅力实验/B端/03_镜头描述词/B3_20260924_0825_MOUSE-EAR-MUTANT-001_SCENE-02.md"
+  },
+  "character": {
+    "id": "MOUSE-EAR-MUTANT-001",
+    "picture_1_binding": null,
+    "identity_validation_status": "pending_image_validation",
+    "h3_render_eligible": false,
+    "do_not_treat_as_finished": true
+  },
+  "scene": {
+    "id": "SCENE-02",
+    "picture_2_binding": null,
+    "registered_blob": "249b3a0f00aa894772d1049e800f4813723184df",
+    "verified_semantics": ["forest lake", "warm sky and cool lake contrast", "body route and environmental reflection contrast"],
+    "needs_environment_inference": true
+  },
+  "format": {"aspect_ratio":"9:16","duration_seconds_per_prompt":15,"single_character":true,"pure_mv":false},
+  "prompt_variants": ["B3-0825-A","B3-0825-B"],
+  "audio_required_fields": ["ambient_soundscape","emotional_sound_cue","audio_role"],
+  "sampling": [
+    {"prompt_id":"B3-0825-A","run":"run_A","seed":null,"task_id":null,"output_id":null},
+    {"prompt_id":"B3-0825-A","run":"run_B","seed":null,"task_id":null,"output_id":null},
+    {"prompt_id":"B3-0825-B","run":"run_A","seed":null,"task_id":null,"output_id":null},
+    {"prompt_id":"B3-0825-B","run":"run_B","seed":null,"task_id":null,"output_id":null}
+  ],
+  "execution_gate": {
+    "status": "text_ready_image_binding_pending",
+    "required_before_render": [
+      "bind and visually validate the real MOUSE-EAR-MUTANT-001 Picture 1 reference",
+      "bind SCENE-02 Picture 2 and verify lake reflection / shoreline / requested camera feasibility",
+      "keep ripple and temporary reflection offset marked as an event inference, not a B1 verified fact",
+      "verify final H3 workflow prompt and every LoadImage node before submission"
+    ]
+  },
+  "seed_policy": "record only real execution values; never invent seeds",
+  "result_policy": "do not claim H3 output or quality result before actual execution evidence"
+}
