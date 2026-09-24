@@ -1,0 +1,81 @@
+{
+  "schema": "lililong-b3-c-handoff/v1",
+  "task_id": "B3_20260925_0725_MOUSE-EAR-MUTANT-001_SCENE-08",
+  "status": "text_ready_image_binding_pending",
+  "source_b1_latest_repository_state": {
+    "path": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_AUDIT_20260925_0605_R54.md",
+    "blob": "23bb87b6057ed9a73b18e929a730e2d8f66955f0",
+    "note": "newer repository asset state; B2 itself cites R48"
+  },
+  "source_b2": {
+    "path": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260925_0715_MOUSE-EAR-MUTANT-001_SCENE-08.md",
+    "commit": "12691064ead0ae9c149180cd155a61929fba847d",
+    "blob": "e1096293c01b042849714cd8315620dede76cbaa"
+  },
+  "format": {
+    "aspect_ratio": "9:16",
+    "duration_seconds": "10-11",
+    "style": "2D hand-drawn",
+    "override_note": "current B3 contract overrides B2 embedded 16:9"
+  },
+  "assets": {
+    "character": "MOUSE-EAR-MUTANT-001",
+    "character_sha256": "417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef",
+    "character_dimensions": "941x1672",
+    "same_character_visual_verified": null,
+    "h3_four_grid_layout_verified": null,
+    "scene": "SCENE-08",
+    "scene_git_blob": "3f0a6664e66899a228a8513bfc70688c0a866908",
+    "scene_actual_bound_path": null,
+    "scene_geometry_check": null,
+    "exclude_unfinished": [
+      "LLL-MAIN-001"
+    ]
+  },
+  "dynamic_chain_analysis": {
+    "chain": "N8+X7 -> NZ8克N6 -> Z6补NZ8 -> Z6克X5 -> XN8克Z3 -> N8补X8 -> N9+NZ7",
+    "core_event": "genuine outward bag action starts, condition ends before contact, action pauses and reverses, bag restabilizes, route resumes without restarting"
+  },
+  "runs": [
+    {
+      "prompt": "A",
+      "run": "run_A",
+      "seed": null,
+      "task_id": null,
+      "output_id": null,
+      "status": "blocked_pending_picture_validation"
+    },
+    {
+      "prompt": "A",
+      "run": "run_B",
+      "seed": null,
+      "task_id": null,
+      "output_id": null,
+      "status": "blocked_pending_picture_validation"
+    },
+    {
+      "prompt": "B",
+      "run": "run_A",
+      "seed": null,
+      "task_id": null,
+      "output_id": null,
+      "status": "blocked_pending_picture_validation"
+    },
+    {
+      "prompt": "B",
+      "run": "run_B",
+      "seed": null,
+      "task_id": null,
+      "output_id": null,
+      "status": "blocked_pending_picture_validation"
+    }
+  ],
+  "c_gate": [
+    "validate Picture 1 binding/hash/dimensions/same-character/H3 four-grid",
+    "bind and visually validate SCENE-08 geometry",
+    "verify 9:16 10-11s final prompt and all LoadImage nodes",
+    "execute four runs only after gates pass",
+    "record real seed/task/output and key-frame evidence"
+  ],
+  "seeds_policy": "null until execution returns real values"
+}
