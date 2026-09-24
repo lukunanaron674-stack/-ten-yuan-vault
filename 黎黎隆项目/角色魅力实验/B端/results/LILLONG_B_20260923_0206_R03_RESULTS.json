@@ -154,7 +154,7 @@
     "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
   },
   "work_writeback": {
-    "updated_at": "2026-09-24 19:55:18",
+    "updated_at": "2026-09-24 19:55:34",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
   },
@@ -244,5 +244,32 @@
     "claimed": false,
     "note": "H3 节点是否出音轨需人工确认；未核实前不宣称有音轨（B端规则：若 Work 的 H3 节点不产音频则改为后期音效需求）",
     "design_received": false
+  },
+  "visual_evidence": {
+    "frames_uploaded_at": "2026-09-24 19:55:34",
+    "run_key": "LILLONG_B_20260923_0206_R03",
+    "policy": {
+      "mode": "key",
+      "sheet_frames": 6,
+      "sheet_grid": "3x2",
+      "max_kb": 300,
+      "jpg_quality": 90
+    },
+    "files": [
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/LILLONG_B_20260923_0206_R03/single_key_head.jpg",
+        "kb": 172.3
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/LILLONG_B_20260923_0206_R03/single_key_mid.jpg",
+        "kb": 96.0
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/LILLONG_B_20260923_0206_R03/single_key_tail.jpg",
+        "kb": 164.8
+      }
+    ],
+    "total_kb": 433.2,
+    "note": "画面证据 = 每次抽样首/中/尾 3 帧（默认），与 render_claim.outputs[].output_sha256 对应的成片一一对应；成片本体 2-4MB 未入 git，留在 D:/H3/outputs/comfyui/，需要原片按 sha256 索取"
   }
 }
