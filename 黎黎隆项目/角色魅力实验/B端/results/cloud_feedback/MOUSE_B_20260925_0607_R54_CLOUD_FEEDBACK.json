@@ -1,0 +1,43 @@
+{
+  "schema_version": "B-H3-CLOUD-FEEDBACK-1.2",
+  "task_id": "MOUSE_B_20260925_0607_R54",
+  "status": "pending",
+  "relay_received": null,
+  "workflow": null,
+  "fps": null,
+  "total_frames": null,
+  "input_bindings": {
+    "character_path": null,
+    "character_sha256": null,
+    "scene_path": null,
+    "scene_sha256": null
+  },
+  "runs": {
+    "run_A": {
+      "seed": null,
+      "task_id": null,
+      "status": null,
+      "output": null,
+      "node_frames": null,
+      "audio_review": null
+    },
+    "run_B": {
+      "seed": null,
+      "task_id": null,
+      "status": null,
+      "output": null,
+      "node_frames": null,
+      "audio_review": null
+    }
+  },
+  "blind_review": {
+    "status": "pending",
+    "questions": [
+      "她是否明确听见了这次声音？",
+      "反应是否只到耳、眼和极小头动？",
+      "身体没有转向声源是否清楚？",
+      "她更像有选择地分配注意力，还是没听见/麻木/害怕？"
+    ]
+  },
+  "prohibition": "Do not import legacy seeds, task IDs or outputs as R54 evidence."
+}
