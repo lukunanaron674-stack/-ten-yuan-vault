@@ -129,7 +129,7 @@
     "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
   },
   "work_writeback": {
-    "updated_at": "2026-09-24 20:07:19",
+    "updated_at": "2026-09-24 20:08:23",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
   },
@@ -276,8 +276,8 @@
     "design_received": true
   },
   "visual_evidence": {
-    "frames_uploaded_at": "2026-09-24 20:06:13",
-    "run_key": "LLL_B_20260924_0506_R29__v10__A",
+    "frames_uploaded_at": "2026-09-24 20:08:23",
+    "run_key": "LLL_B_20260924_0506_R29__v10__B",
     "policy": {
       "mode": "key",
       "sheet_frames": 6,
@@ -288,30 +288,30 @@
     "files": [
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/LLL_B_20260924_0506_R29/run_A_key_head.jpg",
-        "kb": 156.2
+        "kb": 200.2
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/LLL_B_20260924_0506_R29/run_A_key_mid.jpg",
-        "kb": 147.8
+        "kb": 195.7
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/LLL_B_20260924_0506_R29/run_A_key_tail.jpg",
-        "kb": 129.9
+        "kb": 206.2
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/LLL_B_20260924_0506_R29/run_B_key_head.jpg",
-        "kb": 136.0
+        "kb": 136.7
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/LLL_B_20260924_0506_R29/run_B_key_mid.jpg",
-        "kb": 154.7
+        "kb": 142.3
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/LLL_B_20260924_0506_R29/run_B_key_tail.jpg",
-        "kb": 155.2
+        "kb": 150.6
       }
     ],
-    "total_kb": 879.7,
+    "total_kb": 1031.7,
     "note": "画面证据 = 每次抽样首/中/尾 3 帧（默认），与 render_claim.outputs[].output_sha256 对应的成片一一对应；成片本体 2-4MB 未入 git，留在 D:/H3/outputs/comfyui/，需要原片按 sha256 索取"
   }
 }
