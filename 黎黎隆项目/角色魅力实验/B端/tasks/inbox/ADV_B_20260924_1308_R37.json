@@ -1,0 +1,397 @@
+{
+  "task_id": "ADV_B_20260924_1308_R37",
+  "task_version": "v1.0",
+  "created_at": "2026-09-24T13:08:00+08:00",
+  "status": "text_ready_image_binding_pending",
+  "video_mode": "single_character_continuous_narrative_non_mv",
+  "cast": {
+    "count": 1,
+    "character_id": "ADV-001",
+    "display_name": "冒险者",
+    "physical_instances": 1,
+    "other_people_allowed": false
+  },
+  "references": {
+    "picture_1": {
+      "role": "character_identity_only",
+      "character_id": "ADV-001",
+      "declared_source_file": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
+      "declared_sha256": "dd81d92d9f565831c8e924aa2ff36b3fd3cf85b526376971b51ec4f1dd43d1c4",
+      "github_image_upload": false,
+      "identity_validation_status": "pending_image_validation",
+      "view": "full_body_identity",
+      "identity_card_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/ADV-001_角色身份ID与十元分析.json",
+      "identity_card_blob": "4ce739c74069348a6c0855ca96c501acc890fe17",
+      "note": "Work must locate and validate the real JPEG; identity-sheet regions compile to one person"
+    },
+    "picture_2": {
+      "role": "scene_identity_only",
+      "scene_id": "SCENE-04",
+      "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-04_森林湖泊_五色组合.png",
+      "source_blob": "efefd97514fc31d569134c821aada9cb3fdcb206",
+      "availability": "available_by_github_path",
+      "semantic_description": "五色完整组合；信息量较高，适合动态链收束或多轨合流。",
+      "visual_geometry_validation": "pending_work_visual_check",
+      "needs_environment_inference": true
+    }
+  },
+  "subject_definitions": {
+    "character": "one broad heavy adult adventurer with short dark hair, thick beard, tired experienced face, layered worn dark teal-black cloak, purple cloth, red scarf and straps, pale metal shoulder/chest structure, complete backpack and rolled load, gloves, boots and one cyan-lit waist lantern",
+    "environment": "SCENE-04 forest lake with registered five-color combination and information-rich layered composition",
+    "single_instance_rule": "Picture 1 identity views compile to exactly one physical adventurer"
+  },
+  "retention_analysis": {
+    "retain": [
+      "ADV body mass, experienced face and complete connected equipment",
+      "low-amplitude full-body motion",
+      "one waist lantern and one complete load",
+      "one physical character",
+      "same fixed axis across A/B",
+      "B begins from one selected real A ending"
+    ],
+    "change": [
+      "character changes from R36 mouse-girl to ADV-001",
+      "scene changes from SCENE-01 monochrome to SCENE-04 five-color combination",
+      "event changes from directional listening to delayed equipment inertia",
+      "camera returns to fixed full-body medium-wide observation"
+    ],
+    "discard": [
+      "R36 ear-first listening event",
+      "R34 route-width and detour event",
+      "unverified terrain objects",
+      "V35-specific colors or Che traits"
+    ]
+  },
+  "changed_variable": {
+    "primary": "next_step_waits_for_load_inertia_to_center",
+    "definition": "the same complete load produces a delayed swing after one step; the adventurer waits for the backpack and lantern to return toward center before taking one measured next step",
+    "controls": [
+      "one adventurer",
+      "one complete attached load",
+      "one official scene",
+      "fixed medium-wide camera",
+      "exactly one step per segment",
+      "no invented obstacle",
+      "B uses one real A ending"
+    ]
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "primary": "XN",
+    "secondary": [
+      "X",
+      "N"
+    ],
+    "activated": [
+      "NX",
+      "Z",
+      "X并Z"
+    ],
+    "chain": "XN8与X8稳定 → 惯性NX6克X8→6 → N7承载摆动 → Z3补X6→7 → X7生X并Z5→7",
+    "relations": [
+      {
+        "direction": "delayed equipment inertia → fixed carrying order",
+        "relation": "克",
+        "observable_evidence": "body stops while attached backpack and lantern continue one small swing"
+      },
+      {
+        "direction": "small timing adjustment → equipment order",
+        "relation": "补",
+        "observable_evidence": "he waits, lowers weight and presses the existing strap only after observing the return"
+      },
+      {
+        "direction": "re-centered equipment → body-equipment integration",
+        "relation": "生",
+        "observable_evidence": "the next measured step produces a smaller delayed swing"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "start",
+        "primary": "XN8",
+        "secondary": "X8",
+        "direction": "stable_to_disturbed",
+        "before": "complete load moves with one step",
+        "after": "body stops while load continues",
+        "observable_evidence": "one foot plants; pack and lantern lag"
+      },
+      {
+        "stage": "change",
+        "primary": "N7",
+        "secondary": "NX6",
+        "direction": "承载/克",
+        "before": "load off center",
+        "after": "character waits and stabilizes",
+        "observable_evidence": "both feet still; hand presses existing strap"
+      },
+      {
+        "stage": "result",
+        "primary": "X7",
+        "secondary": "X并Z7",
+        "direction": "补/生",
+        "before": "swing nearly centered",
+        "after": "one measured step with smaller lag",
+        "observable_evidence": "lantern nearly vertical before step; compact final settle"
+      }
+    ],
+    "start_change_result": "one heavy step stops the body while the complete load continues to swing → he waits and stabilizes instead of forcing another step → after the load returns near center, one measured step reduces delayed sway",
+    "hypothesis_status": "pending_execution"
+  },
+  "style": {
+    "style_identity_lock": "Picture 1 and Picture 2 control identity, worn materials, proportions and original five-color relationships; source fidelity overrides generic wording.",
+    "visual_expression_variable": "fixed full-body medium-wide silhouette, restrained inertia motion, clear value separation and soft diffuse light only where reference-compatible",
+    "v35_reference_status": "text_wording_reference_only; known workflow/input mismatch prevents output-quality attribution"
+  },
+  "segments": [
+    {
+      "segment_id": "A",
+      "duration_seconds": 15,
+      "title": "一步后等待负重回中",
+      "scene_reference": {
+        "picture_ref": "Picture 2",
+        "scene_id": "SCENE-04",
+        "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-04_森林湖泊_五色组合.png",
+        "identity_elements": [
+          "forest lake",
+          "five-color complete combination",
+          "information-rich layered composition"
+        ],
+        "locked": [
+          "location identity",
+          "supported elements",
+          "spatial continuity",
+          "palette logic"
+        ],
+        "variable": [
+          "fixed eye-level medium-wide side three-quarter framing",
+          "value separation around the full load silhouette"
+        ],
+        "needs_environment_inference": true
+      },
+      "style": {
+        "style_identity_lock": "preserve ADV equipment, worn materials and SCENE-04 original five-color relationships",
+        "visual_expression_variable": "fixed readable silhouette with small delayed equipment swing"
+      },
+      "shot": {
+        "shot_size": "medium_wide_full_body",
+        "camera_angle": "eye_level_side_three_quarter_same_axis",
+        "foreground": "visually supported open ground only",
+        "middle_ground": "complete adventurer, one planted step and delayed load swing",
+        "background": "SCENE-04 layered forest-lake color fields",
+        "character_position": "side third with travel-direction negative space",
+        "negative_space": "keeps backpack and lantern arc readable",
+        "action_start": "one slow heavy step",
+        "observable_change": "boot plants → torso stops → pack/bedroll/cloak/lantern lag once → hand reaches existing strap → weight lowers",
+        "action_end": "both feet planted; load making final return toward center",
+        "camera_move": "fixed; no movement or cut",
+        "spatial_continuity": "establishes axis, foothold, load-swing direction and exact B starting pose"
+      },
+      "ambient_soundscape": "quiet forest-lake air, distant water, one heavy footfall, layered cloth drag, strap tension, backpack creak, one small lantern-chain arc and fading settle",
+      "emotional_sound_cue": "sparse non-lyrical low pulse begins at footfall, suspends during the swing and stops before full resolution",
+      "audio_role": "make weight and delayed inertia readable; not MV rhythm",
+      "prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds.\n\nSTYLE IDENTITY LOCK: preserve the verified identity, proportions, worn materials and original colors of Picture 1 and Picture 2. Keep the adventurer's broad heavy adult body, short dark hair, thick beard, tired experienced face, dark teal-black layered worn cloak, purple cloth panels, red scarf and crossing straps, pale metal shoulder and chest structure, complete backpack and rolled load, heavy gloves and boots, and one cyan-lit waist lantern. Preserve the registered five-color forest-lake relationships of SCENE-04 without replacing them with a generic low-saturation palette. Reference fidelity overrides generic style wording.\n\nVISUAL EXPRESSION VARIABLE: use restrained readable 2D motion, compatible variable-weight linework, reference-consistent thin shading, soft diffuse light and a clear silhouette against the information-rich five-color environment. Character charm comes from waiting for the equipment's inertia instead of forcing the next step. Do not redesign materials or add color effects absent from the references.\n\nCHARACTER (Picture 1): show exactly one physical instance of the established adult adventurer. Picture 1 sections all describe this one person. Preserve the complete connected backpack, bedroll, straps, cloak, metal structure and single waist lantern. Because the reference is a full-body identity sheet, use only one heavy step, a controlled stop and small hand/weight adjustments.\n\nENVIRONMENT (Picture 2): preserve SCENE-04 as the same forest-lake location with its existing elements, spatial continuity and five-color palette logic. Picture 2 defines the place and color relationships, not one mandatory crop. Use only visually supported open ground, water, trees, mist and layered color fields. Do not invent a bridge, dock, wall, gate, rocks, roots, building, sign, rail or additional path.\n\nCAMERA AND COMPOSITION: fixed eye-level medium-wide side three-quarter view. Keep the adventurer's full body, backpack silhouette, hanging lantern and visually supported ground readable. Place him on one side of the frame with enough negative space in the travel direction. Separate the character from the five-color background by composition and value only, not by recoloring him. No push, pan, tilt, cut or axis change.\n\nACTION: the adventurer takes exactly one slow heavy step along the supported ground and plants the forward boot. His torso stops, but the attached backpack, rolled load, cloak edge and single waist lantern continue one small delayed swing from the step's inertia. He does not take another step. He watches the load cross its center line, lowers his center of gravity slightly and brings one gloved hand onto an existing strap without changing the strap layout. The lantern completes one restrained arc and begins to return. End with both feet planted, the body still, the equipment making its last small return toward center.\n\nAUDIO DESIGN: quiet forest-lake air, distant water, one heavy footfall, layered cloth drag, strap tension, backpack creak, one small lantern-chain arc and a fading equipment-settle sound. Use a sparse non-lyrical low pulse that begins at the footfall, remains suspended while the load swings and stops before full resolution. Audio makes weight and delayed inertia readable; it is not a song, beat track or MV cue.\n\nNEGATIVE: no second character, duplicate adventurer, clone, split screen, four-person identity-sheet output, reflection person or shadow double; no removed backpack, dropped bedroll, discarded gear, new buckle, tool, weapon or duplicate lantern; no invented terrain, obstacle, bridge, dock, wall, gate, rocks, roots, building, sign, rail or path; no second step, run, jump, spin, stumble, fall, acrobatics, exaggerated sway, speed ramp, montage or music-video cutting; no young slim redesign, horns, tail, wings, clean modern armor or cyan-white energy humanoid; no camera movement, axis flip, text, subtitle, logo, watermark, glossy 3D render or hard synthetic digital edges."
+    },
+    {
+      "segment_id": "B",
+      "duration_seconds": 15,
+      "title": "惯性回中后再走一步",
+      "dependency": "same Work-selected actual Segment A ending frame",
+      "scene_reference": {
+        "picture_ref": "Picture 2",
+        "scene_id": "SCENE-04",
+        "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-04_森林湖泊_五色组合.png",
+        "identity_elements": [
+          "same forest lake",
+          "same five-color relationships",
+          "same supported ground"
+        ],
+        "locked": [
+          "same location",
+          "same camera side",
+          "same screen direction",
+          "same lighting and palette logic"
+        ],
+        "variable": [
+          "timing of one measured step after visible load centering"
+        ],
+        "needs_environment_inference": true
+      },
+      "style": {
+        "style_identity_lock": "preserve same ADV, complete equipment state and SCENE-04 identity",
+        "visual_expression_variable": "same fixed frame; timing difference shown through reduced delayed swing"
+      },
+      "shot": {
+        "shot_size": "medium_wide_full_body",
+        "camera_angle": "same_fixed_eye_level_side_three_quarter",
+        "foreground": "same supported ground",
+        "middle_ground": "same adventurer waiting, stabilizing and taking one measured step",
+        "background": "continuous SCENE-04 color layers",
+        "character_position": "inherits A and stays fully inside frame",
+        "negative_space": "next supported foothold remains readable",
+        "action_start": "inherits A planted pose and returning load",
+        "observable_change": "wait for center → short strap press → hips under load → quiet exhale → one measured step → smaller lag → compact settle",
+        "action_end": "both feet planted; complete load centered; gaze forward",
+        "camera_move": "fixed; no movement or cut",
+        "spatial_continuity": "must inherit one actual A ending without axis flip or invented reverse terrain"
+      },
+      "ambient_soundscape": "continuous forest-lake ambience, fading pack/lantern movement, short strap press, quiet exhale, one measured footfall and compact gear settle",
+      "emotional_sound_cue": "suspended low non-lyrical pulse resolves when lantern nears vertical and the new foot plants",
+      "audio_role": "support timing, weight and restraint; not MV rhythm",
+      "prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds, continuing directly from the Work-selected real ending frame of Segment A.\n\nSTYLE IDENTITY LOCK: preserve the exact same Picture 1 adventurer, complete equipment connections, body mass, worn materials and original colors, and preserve the same Picture 2 SCENE-04 identity, existing elements, five-color palette logic and lighting direction. The backpack, rolled load, cloak, scarf, straps, metal structure, gloves, boots and single waist lantern remain complete and unchanged.\n\nVISUAL EXPRESSION VARIABLE: continue restrained low-amplitude 2D motion and the same fixed medium-wide side three-quarter composition. Make the difference between moving too early and waiting for the load to return visible through timing, not through dramatic posing, new effects or editing.\n\nCHARACTER (Picture 1): show the same one physical adult adventurer from Segment A. Inherit the selected real A ending with both feet planted, one hand on the existing strap and the attached equipment finishing its return toward center. Do not simplify, discard, duplicate or redesign the load.\n\nENVIRONMENT (Picture 2): remain in the same verified SCENE-04 forest-lake space with the same supported ground, screen direction, layered color relationships and original palette logic. Do not reveal invented reverse terrain or introduce new environmental objects.\n\nCAMERA AND COMPOSITION: keep the same fixed eye-level medium-wide side three-quarter view and the same spatial axis. The entire adventurer, backpack silhouette, lantern and supported next foothold remain inside frame. Preserve foreground, middle-ground and background continuity. No camera movement or cut.\n\nACTION: from the held Segment A ending, the adventurer waits until the backpack, bedroll and waist lantern pass through the center and their visible swing becomes small. His gloved hand gives the existing strap one short stabilizing press; he shifts his hips under the load and exhales. Only after the lantern chain hangs nearly vertical does he release part of the strap pressure and take exactly one measured forward step. The body and equipment move together with less delayed swing than in Segment A. The robe edge, backpack and lantern settle once. End with both feet planted, the complete load centered over him and his gaze already on the next supported direction.\n\nAUDIO DESIGN: continue the same forest-lake ambience, fading backpack and lantern movement, one short strap press, a quiet exhale, one measured footfall and a compact cloth-and-gear settle. The suspended low non-lyrical pulse resolves only when the lantern chain approaches vertical and the new foot plants. Audio supports timing and weight; it is not a song cue, beat-synced edit or MV structure.\n\nNEGATIVE: no second character, duplicate adventurer, clone, split screen, four-person identity-sheet output, reflection person or shadow double; no removed backpack, dropped bedroll, discarded gear, new buckle, tool, weapon or duplicate lantern; no invented terrain, obstacle, bridge, dock, wall, gate, rocks, roots, building, sign, rail, path or reverse space; no movement before the visible load nearly centers, no extra step, run, jump, spin, stumble, fall, acrobatics, exaggerated sway, triumph pose, speed ramp, montage or music-video cutting; no young slim redesign, horns, tail, wings, clean modern armor or cyan-white energy humanoid; no camera movement, axis flip, text, subtitle, logo, watermark, glossy 3D render or hard synthetic digital edges."
+    }
+  ],
+  "shot_grammar": {
+    "continuity": "A ends with the body planted and attached load returning toward center; B inherits that real frame, waits for near-centering and completes one measured step.",
+    "edit_rule": "one fixed continuous shot per segment; no cuts, camera movement, montage or MV timing",
+    "fallback": "if Picture 2 cannot support full body, load silhouette and one safe foothold in one frame, Work must not render; do not invent terrain"
+  },
+  "audio_design": {
+    "mode": "per_segment",
+    "generation_status": "design_only_until_work_confirms_audio_capability",
+    "rule": "if H3 cannot generate sound, all audio fields are post-production design only"
+  },
+  "sampling_plan": {
+    "total_planned_runs": 4,
+    "actual_completed_runs": 0,
+    "prompt_identical_within_segment": true,
+    "segments": {
+      "A": {
+        "run_A": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        },
+        "run_B": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        }
+      },
+      "B": {
+        "dependency": "same Work-selected actual A ending frame",
+        "run_A": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        },
+        "run_B": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        }
+      }
+    },
+    "seed_policy": "record a real integer only if Work returns/supports it after execution; otherwise null",
+    "task_id_policy": "record each real Work task ID separately after execution; never fabricate"
+  },
+  "negative_constraints": [
+    "no second character, duplicate, clone, split screen or four-person output",
+    "no reflection person or shadow double",
+    "no removed backpack, dropped bedroll, discarded gear, new buckle, tool, weapon or duplicate lantern",
+    "no invented terrain, obstacle, bridge, dock, wall, gate, rocks, roots, building, sign, rail or path",
+    "no more than one step per segment",
+    "no run, jump, spin, stumble, fall, acrobatics or exaggerated sway",
+    "no camera movement, cut, axis flip, speed ramp, montage or MV editing",
+    "no young slim redesign, horns, tail, wings, clean armor or cyan-white Che energy body",
+    "no identity, material or palette redesign",
+    "no text, subtitle, logo or watermark",
+    "no fabricated seed, task ID, render, audio track or validation result"
+  ],
+  "work_gate": {
+    "picture_1_status": "pending_image_validation",
+    "picture_2_status": "GitHub path/blob recorded; full-body foothold and five-color silhouette separation not visually verified by B-side",
+    "required_checks": [
+      "locate and byte-verify the declared ADV JPEG and SHA-256",
+      "bind one approved Picture 1 identity input; all sheet sections remain one person",
+      "verify body mass, beard, face, cloak, straps, complete load and single lantern",
+      "bind and inspect SCENE-04 exact path/blob",
+      "confirm one fixed 9:16 medium-wide frame supports full body, backpack silhouette, lantern arc and one safe foothold",
+      "confirm color separation uses the real five-color scene without recoloring the character",
+      "confirm A and B each contain exactly one step",
+      "select one actual A ending for both B runs",
+      "verify final prompt and every LoadImage node belong to R37",
+      "run identical inputs twice per segment",
+      "record only actual seeds/task IDs"
+    ],
+    "render_decision": "blocked until ADV identity and SCENE-04 geometry/color-separation validation; text task is not render approval"
+  },
+  "version_tracking": {
+    "rule_version": "B-RULE-v1.2",
+    "prompt_schema": "video_tenyuan_prompt_schema_v1.3",
+    "skill_chain_version": "H3动画四技能执行链_v1.0",
+    "audio_design_version": "v1.0",
+    "sampling_version": "double_draw_v1.0",
+    "previous_task": "MOUSE_B_20260924_1208_R36",
+    "parent_task_id": "MOUSE_B_20260924_1208_R36",
+    "before": "R36 used the mouse-girl in SCENE-01 and changed camera distance to reveal ear-eye attention before one step.",
+    "after": "R37 switches to ADV-001 and SCENE-04 to test whether waiting for attached load inertia to return toward center improves the next step.",
+    "same": [
+      "two continuous 15-second segments",
+      "one physical character",
+      "one official scene",
+      "non-MV",
+      "same-prompt run_A/run_B per segment",
+      "audio design only until capability confirmed",
+      "v1.3 style separation",
+      "B depends on one real A ending"
+    ],
+    "confounders": [
+      "character, scene and event all change from R36",
+      "ADV JPEG remains pending Work validation",
+      "SCENE-04 exact ground and silhouette separation remain unverified",
+      "no actual H3 output exists for R36 comparison"
+    ],
+    "upstream_consumed": [
+      {
+        "source": "B1_素材索引_20260924_1308",
+        "commit": "c37f71e3a28ab8b15a3bb5b535da1f8b84ed057b",
+        "use": "confirmed R36 as latest baseline and no Work result; preserved unfinished LLL gate"
+      },
+      {
+        "source": "ADV identity card v1.0",
+        "blob": "4ce739c74069348a6c0855ca96c501acc890fe17",
+        "use": "locked body, equipment and low-action limits"
+      },
+      {
+        "source": "scene_pool_13_index",
+        "scene_id": "SCENE-04",
+        "blob": "efefd97514fc31d569134c821aada9cb3fdcb206",
+        "use": "official five-color forest-lake path and semantic only"
+      },
+      {
+        "source": "V35 1194-character text",
+        "commit": null,
+        "use": "adaptable wording only; no output-quality attribution"
+      }
+    ],
+    "upstream_missing": [
+      {
+        "source": "post-R36 Work render/validation",
+        "status": "not_found_at_compile_time",
+        "handling": "no result, seed, task ID, picture pass or quality claim invented"
+      }
+    ],
+    "result_claim": "text_task_only; no render, image validation, seed, task ID, audio track or visual-quality conclusion"
+  },
+  "contradiction_report": {
+    "status": "resolved_before_handoff",
+    "checks": [
+      {
+        "issue": "equipment swing could become exaggerated slapstick",
+        "resolution": "one small delayed arc only; both feet remain planted after each single step"
+      },
+      {
+        "issue": "SCENE-04 high information may obscure gear motion",
+        "resolution": "use composition and value separation, never recolor the character or scene"
+      },
+      {
+        "issue": "full-body reference may split into multiple people",
+        "resolution": "all identity-sheet sections compile into one physical adventurer"
+      },
+      {
+        "issue": "audio pulse could become MV rhythm",
+        "resolution": "one suspended non-melodic cue follows inertia and landing without beat cuts"
+      }
+    ]
+  }
+}
