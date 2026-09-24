@@ -1,0 +1,72 @@
+{
+  "schema_version": "lililong-b3-c-handoff/v1.1",
+  "task_id": "B3_20260925_0025_MOUSE-EAR-MUTANT-001_SCENE-02",
+  "status": "text_ready_image_binding_pending",
+  "source_b1_latest_repository_state": {
+    "path": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_AUDIT_20260925_0003_R48.md",
+    "commit": "ecddf3c799ebe4c375522f46f785545a48ea71f8",
+    "note": "newer repository asset audit; B2 itself does not cite this B1"
+  },
+  "source_b2": {
+    "path": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260925_0015_MOUSE-EAR-MUTANT-001_SCENE-02.md",
+    "commit": "eed30ace1d63ea88b75cfafbc9e86f4843767050",
+    "b2_upstream_b1": "logs/B1_素材索引_20260924_0905.md"
+  },
+  "assets": {
+    "character_id": "MOUSE-EAR-MUTANT-001",
+    "picture_1_validation": "pending_image_validation",
+    "scene_id": "SCENE-02",
+    "picture_2_blob": "249b3a0f00aa894772d1049e800f4813723184df",
+    "picture_2_geometry": "pending_work_visual_check",
+    "lililong_main_finished": false
+  },
+  "output": {
+    "aspect_ratio": "9:16",
+    "duration_seconds": "10-11",
+    "prompt_variants": [
+      "A",
+      "B"
+    ],
+    "audio_role": "support action and emotion; not pure MV editing"
+  },
+  "runs": [
+    {
+      "prompt": "A",
+      "run": "run_A",
+      "seed": null,
+      "task_id": null,
+      "output_id": null,
+      "status": "blocked_pending_picture_validation"
+    },
+    {
+      "prompt": "A",
+      "run": "run_B",
+      "seed": null,
+      "task_id": null,
+      "output_id": null,
+      "status": "blocked_pending_picture_validation"
+    },
+    {
+      "prompt": "B",
+      "run": "run_A",
+      "seed": null,
+      "task_id": null,
+      "output_id": null,
+      "status": "blocked_pending_picture_validation"
+    },
+    {
+      "prompt": "B",
+      "run": "run_B",
+      "seed": null,
+      "task_id": null,
+      "output_id": null,
+      "status": "blocked_pending_picture_validation"
+    }
+  ],
+  "preflight": [
+    "bind and validate Picture 1 path/SHA/dimensions/same-character/H3-four-grid",
+    "bind SCENE-02 and visually validate water/shore/negative-space geometry",
+    "verify final H3 prompt and every LoadImage node",
+    "record seeds/task/output only from actual execution"
+  ]
+}
