@@ -1,0 +1,82 @@
+{
+  "schema_version": "B-H3-CLOUD-FEEDBACK-1.2",
+  "task_id": "ADV_B_20260925_0307_R51",
+  "status": "pending",
+  "input_binding": {
+    "picture_1_path": null,
+    "picture_1_sha256": null,
+    "picture_1_dimensions": null,
+    "same_character": null,
+    "h3_layout": null,
+    "picture_2_path": null,
+    "picture_2_sha256": null,
+    "picture_2_dimensions": null,
+    "scene_geometry": null,
+    "foliage_or_water_support": null,
+    "existing_chest_strap_readable": null
+  },
+  "execution": {
+    "workflow": null,
+    "run_A": {
+      "seed": null,
+      "task_id": null,
+      "status": null,
+      "output": null
+    },
+    "run_B": {
+      "seed": null,
+      "task_id": null,
+      "status": null,
+      "output": null
+    }
+  },
+  "node_evidence": {
+    "n0_stable": {
+      "pre": null,
+      "peak": null,
+      "post": null
+    },
+    "n1_air_cue": {
+      "pre": null,
+      "onset": null,
+      "peak": null,
+      "post": null
+    },
+    "n2_local_cloth_response": {
+      "pre": null,
+      "onset": null,
+      "peak": null,
+      "post": null
+    },
+    "n3_eye_head_check": {
+      "pre": null,
+      "onset": null,
+      "peak": null,
+      "post": null
+    },
+    "n4_single_strap_press": {
+      "pre": null,
+      "onset": null,
+      "peak": null,
+      "post": null
+    },
+    "n5_hold": {
+      "pre": null,
+      "peak": null,
+      "post": null
+    }
+  },
+  "audio_feedback": {
+    "ambient_soundscape": null,
+    "emotional_sound_cue": null,
+    "audio_role_compliance": null
+  },
+  "blind_review": {
+    "first_impression": null,
+    "alert_not_alarm": null,
+    "experienced_not_nervous": null,
+    "single_action_readable": null,
+    "notes": null
+  },
+  "conclusion": "NOT_REVIEWED"
+}
