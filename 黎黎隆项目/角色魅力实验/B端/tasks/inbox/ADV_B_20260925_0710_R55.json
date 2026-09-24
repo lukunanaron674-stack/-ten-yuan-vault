@@ -1,0 +1,281 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "research_rule_version": "B端_角色感受实验总规_v1.0",
+  "task_id": "ADV_B_20260925_0710_R55",
+  "task_version": "v1.0",
+  "parent_task_id": "ADV_B_20260925_0210_R50",
+  "created_at": "2026-09-25T07:10:31+08:00",
+  "status": "text_ready_render_blocked_pending_input_validation",
+  "project": "黎黎隆项目/角色魅力实验/B端",
+  "video_mode": "single_character_narrative",
+  "duration_seconds_range": [
+    10,
+    11
+  ],
+  "planned_duration_seconds": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "character_id": "ADV-001",
+  "scene_asset_id": "SCENE-05",
+  "reference_view": {
+    "type": "full_body_identity",
+    "picture_1": "D:/H3/pool/character_refs/ADV-001_冒险者_H3_sheet_001.jpg; sha256 4284a72886e485ffc18fa0672207599bd244e886cd600ca5531d18f133c8e10c; 941x1672; visually verified same-character=false",
+    "picture_2": "黎黎隆项目/角色魅力实验/B端/../../04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png; registered blob eb34acce753735d96565bc0108d502dfdc775088; bind and verify before rendering",
+    "binding_status": "character_file_verified_with_identity_warning; scene_binding_pending"
+  },
+  "source_classification": {
+    "confirmed": [
+      {
+        "source": "R50 primary real render",
+        "commit": "fca8e267b5a77b84e377ee9fed1dd219cf6055cf",
+        "fact": "two real 1280x736, 24fps, 240-frame renders completed with seeds and task IDs"
+      },
+      {
+        "source": "R50 six GitHub keyframes",
+        "commit": "c485dd9e42d6d4ef552cc6e81e57ddedd6ec7970",
+        "fact": "both runs contain extra background human figures; run_B contains a visible group and reflection-like repeats"
+      },
+      {
+        "source": "R50 integrity repair",
+        "commit": "6f1cb70ecf307e14012d9a2ffdb315a336e08a8c",
+        "fact": "merged proven 2/2 completion with later frame evidence after stale writeback clobber"
+      },
+      {
+        "source": "R50 Work input validation",
+        "commit": "6390918872b7d742754532a73833d22dc1524105",
+        "fact": "primary run bound only the character file; scene reference was not supplied and formal same-character verification remained false"
+      }
+    ],
+    "candidate": [
+      "zero background human occupancy may restore single-character readability without changing the foreground action",
+      "the half-boot lateral shift may still read as experienced consideration when competing figures are removed"
+    ],
+    "excluded": [
+      "claiming six stills prove full motion timing or audio",
+      "claiming the R50 primary run validated SCENE-05 binding",
+      "copying R50 seeds/task IDs into R55",
+      "treating background figures as acceptable scenery",
+      "changing the character, action chain, camera or lighting in this round"
+    ]
+  },
+  "subject_definition": {
+    "single_subject": "exactly one physical ADV-001 instance; visible human-shaped figure count must remain one in every frame",
+    "identity_lock": [
+      "broad heavy adult body",
+      "short dark hair and thick beard",
+      "red scarf",
+      "pale metal shoulder/chest structure",
+      "complete backpack and rolled gear",
+      "one cyan waist lantern",
+      "heavy gloves and boots"
+    ],
+    "background_occupancy_lock": "zero other people, silhouettes, reflections or person-like shapes"
+  },
+  "retention_analysis": {
+    "must_retain": [
+      "R50 foreground character identity and complete load",
+      "R50 six-beat action chain",
+      "SCENE-05 monochrome identity",
+      "11-second 16:9 fixed full-body shot",
+      "fixed soft light",
+      "same-prompt dual sampling"
+    ],
+    "confirmed_failure_to_remove": [
+      "additional background humans in both R50 samples",
+      "group and reflection-like repeated figures in R50 run_B"
+    ],
+    "not_yet_verified": [
+      "formal same-character match to declared original",
+      "SCENE-05 actual bound file in R55",
+      "full motion timing",
+      "audio",
+      "viewer feeling"
+    ]
+  },
+  "changed_variable": {
+    "type": "background_human_occupancy",
+    "from": "R50 keyframes contain extra human silhouettes/crowd",
+    "to": "R55 visible human-shaped figure count fixed at exactly one; zero background or reflected people",
+    "single_variable": true
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "chain": "XN8+X8 -> NX5克XN7 -> Z6补NX5 -> NZ7克X6 -> N9克NZ5 -> N9补XN9+X7",
+    "status": "EXPERIMENTAL_HYPOTHESIS_NOT_VALIDATED",
+    "nodes": [
+      {
+        "time": "0-2s",
+        "node_id": "n0_stable",
+        "beat": "already valid and fully settled; visible human count equals one",
+        "relation_class": "共存",
+        "camera_change": "none",
+        "occupancy_gate": "visible_human_count=1"
+      },
+      {
+        "time": "2-4s",
+        "node_id": "n1_offframe_cycle",
+        "beat": "one off-frame non-alarm mechanical cue; no visible source or operator",
+        "relation_class": "克",
+        "camera_change": "none",
+        "occupancy_gate": "visible_human_count=1"
+      },
+      {
+        "time": "4-6s",
+        "node_id": "n2_local_response",
+        "beat": "nearest shoulder and attached gear respond locally; feet stay planted",
+        "relation_class": "补",
+        "camera_change": "none",
+        "occupancy_gate": "visible_human_count=1"
+      },
+      {
+        "time": "6-8s",
+        "node_id": "n3_clearance_check",
+        "beat": "eyes then slight head turn check lateral space",
+        "relation_class": "共存",
+        "camera_change": "none",
+        "occupancy_gate": "visible_human_count=1"
+      },
+      {
+        "time": "8-10s",
+        "node_id": "n4_lateral_shift",
+        "beat": "one half-boot-width lateral shift; no backward loss",
+        "relation_class": "克",
+        "camera_change": "none",
+        "occupancy_gate": "visible_human_count=1"
+      },
+      {
+        "time": "10-11s",
+        "node_id": "n5_resettle",
+        "beat": "immediate stop and one equipment settle; visible human count remains one",
+        "relation_class": "补",
+        "camera_change": "none",
+        "occupancy_gate": "visible_human_count=1"
+      }
+    ]
+  },
+  "time_beats": [
+    {
+      "time": "0-2s",
+      "node_id": "n0_stable",
+      "beat": "already valid and fully settled; visible human count equals one"
+    },
+    {
+      "time": "2-4s",
+      "node_id": "n1_offframe_cycle",
+      "beat": "one off-frame non-alarm mechanical cue; no visible source or operator"
+    },
+    {
+      "time": "4-6s",
+      "node_id": "n2_local_response",
+      "beat": "nearest shoulder and attached gear respond locally; feet stay planted"
+    },
+    {
+      "time": "6-8s",
+      "node_id": "n3_clearance_check",
+      "beat": "eyes then slight head turn check lateral space"
+    },
+    {
+      "time": "8-10s",
+      "node_id": "n4_lateral_shift",
+      "beat": "one half-boot-width lateral shift; no backward loss"
+    },
+    {
+      "time": "10-11s",
+      "node_id": "n5_resettle",
+      "beat": "immediate stop and one equipment settle; visible human count remains one"
+    }
+  ],
+  "shot_grammar": {
+    "shot": "locked eye-level full-body medium-wide three-quarter view",
+    "aspect_ratio": "16:9 landscape",
+    "camera_movement": "none",
+    "cut": "none",
+    "lighting": "fixed soft diffuse",
+    "composition": "foreground ADV plus empty operational background; both boots and full load readable"
+  },
+  "h3_prompt": "Subject: Landscape 16:9, one continuous 11-second single-character narrative. Show exactly one physical instance of the established heavy adult adventurer from Picture 1 and no other human-shaped figure anywhere in the frame. Preserve his broad heavy body, grounded weight, short dark hair, thick dark beard, tired experienced face, layered worn dark clothing, red scarf, crossing straps and buckles, pale metal shoulder and chest structure, complete backpack and rolled equipment, one cyan-lit waist lantern, heavy gloves and boots. Keep every connected item, body proportion, material and reference color unchanged.\n\nMovement: From 0 to 2 seconds he is already standing in a valid stable position, both boots planted, his complete load and all hanging equipment settled. From 2 to 4 seconds one ordinary nonverbal mechanical cycle cue occurs off frame from the verified open side; there is no alarm, visible operator or new mechanism. From 4 to 6 seconds only the nearest shoulder and attached equipment make one restrained local response while his feet remain planted. From 6 to 8 seconds his eyes and head turn only slightly to check the lateral space beside his load. From 8 to 10 seconds, without stepping backward, he deliberately shifts sideways by roughly half the width of one boot into verified open ground. From 10 to 11 seconds he stops immediately; the backpack and hanging equipment settle once, and he remains calm and stable without further correction.\n\nScene: Picture 2 defines SCENE-05, the same monochrome mechanical-airport environment, its existing structures, spatial continuity, safe standing area, negative space and original palette logic. Use one empty operational bay from the bound scene. The entire visible background, glass, screens, doorways, walkways and reflective surfaces must contain zero people, zero human silhouettes, zero staff, zero passengers and zero person-like reflections. Environmental activity is conveyed only by restrained sound and an existing off-frame cycle cue. Do not invent a door, control panel, display, sign, rail, platform, warning light, extra machine or alternate route.\n\nCamera: One locked eye-level full-body medium-wide three-quarter view in a 16:9 landscape frame. Keep both boots, backpack width, hanging equipment, verified side clearance and stable ground readable together. Fixed framing, focal length and horizon; no push, pull, pan, tilt, tracking, reframing, cut, transition or split screen. The foreground adventurer is the only human-shaped subject from first frame to last frame.\n\nLighting: Preserve the bound character materials and Picture 2's monochrome palette logic. Use one fixed soft diffuse light throughout. Keep the cyan lantern as one small identity light only. No new glow, flashing, relighting, weather change, sudden saturation shift or color redesign.\n\nAtmosphere: He first reads as competent and correctly positioned; the tiny voluntary side shift reads as experienced consideration rather than indecision or retreat. The empty airport bay keeps attention on his weight, timing and one precise lateral transfer. Use clear two-dimensional hand-drawn shapes, restrained variable-width linework, soft diffuse depth and low-saturation shadows only where compatible with the bound references.\n\nAudio: Ambient soundscape: low empty mechanical-airport room tone, restrained ventilation, one ordinary non-alarm off-frame cycle cue, slight equipment creak, one lateral boot contact and a single backpack-settling sound. Emotional sound cue: one sparse low sustained tone remains quiet during the clearance check and resolves softly when the new stance settles, with no lyrics and no strong beat. Audio supports spatial margin, weight transfer and restrained emotion only; it does not imply unseen people, drive cuts or become music-video editing.\n\nNegative: exactly one character and one physical body, no duplicate character, no second human figure, no split screen, no clone or mirror-double, no reflection person, no crowd, no NPC, no background human silhouette, no repeated human shape, no extra limbs, no text overlay, no watermark, no abrupt redesign, no young slim redesign, no removed backpack, no dropped equipment, no duplicate lantern, no new strap, no new buckle, no new weapon, no backward step, no repeated shuffling, no panic, no run, no jump, no acrobatics, no visible operator, no invented mechanism or structure, no camera movement, no cut, no transition, no weather change, no abrupt color shift, no lyrics, no strong beat, no MV editing, no glossy 3D rendering.",
+  "audio_design": {
+    "ambient_soundscape": "low empty mechanical-airport room tone, restrained ventilation, one ordinary non-alarm off-frame cycle cue, slight equipment creak, one lateral boot contact and one backpack-settling sound",
+    "emotional_sound_cue": "one sparse low sustained tone stays quiet during the check and resolves softly on settle; no lyrics or strong beat",
+    "audio_role": "support empty spatial margin, weight transfer and restrained emotion only; imply no unseen people; no cut-driving or MV editing",
+    "actual_audio_track_status": "UNKNOWN_PENDING_WORK"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "same_prompt_and_inputs": true,
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "compare_axes": [
+      "visible human count per frame",
+      "background/reflection occupancy",
+      "ADV identity and equipment",
+      "scene consistency across runs",
+      "single lateral shift",
+      "camera stability",
+      "audio presence"
+    ],
+    "actual_completed_runs": 0
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no reflection person",
+    "no crowd",
+    "no NPC",
+    "no background human silhouette",
+    "no repeated human shape",
+    "no camera movement",
+    "no cut",
+    "no weather change",
+    "no abrupt color shift",
+    "no lyrics",
+    "no strong beat",
+    "no MV editing"
+  ],
+  "must_keep": [
+    "ADV-001 identity",
+    "complete backpack and gear",
+    "one cyan lantern",
+    "SCENE-05 identity",
+    "11 seconds",
+    "16:9 landscape",
+    "six fixed time beats",
+    "fixed camera and light",
+    "same prompt and inputs for run_A/run_B"
+  ],
+  "must_avoid": [
+    "any background person, silhouette, reflection-person or crowd",
+    "copying R50 execution identifiers",
+    "claiming still-frame review proves motion or audio",
+    "9:16 output",
+    "camera movement",
+    "character redesign",
+    "unverified success claims"
+  ],
+  "validation_target": {
+    "input_gate": [
+      "Picture 1 path/SHA/dimensions",
+      "Picture 2 path/SHA/dimensions",
+      "same-character true/false",
+      "SCENE-05 true/false"
+    ],
+    "hard_frame_gate": "every reviewed frame contains exactly one human-shaped figure and no person-like reflection",
+    "action_gate": "prior stable position precedes one half-boot lateral shift and immediate stop",
+    "result_gate": "2/2 real R55 runs with seeds/task IDs/output hashes plus keyframes; no historical substitution"
+  }
+}
