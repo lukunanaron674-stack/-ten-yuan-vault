@@ -1,0 +1,51 @@
+{
+  "task_id": "ADV_B_20260924_0710_R31__v10__A",
+  "parent_task_id": "ADV_B_20260924_0710_R31",
+  "schema_version": null,
+  "clip_id": "A",
+  "prompt_chars": 3505,
+  "dual_sample": true,
+  "samples": [
+    {
+      "run": "run_A",
+      "task_id": "ADV_B_20260924_0710_R31__v10__A_run_A_0924203456",
+      "seed": 972362923,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0710_R31__v10__A_run_A_00003_.mp4"
+    },
+    {
+      "run": "run_B",
+      "task_id": "ADV_B_20260924_0710_R31__v10__A_run_B_0924203456",
+      "seed": 1209306845,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0710_R31__v10__A_run_B_00003_.mp4"
+    }
+  ],
+  "dynamic_chain_reading": "",
+  "shot_sequence": [],
+  "must_keep_check": [],
+  "negative_prompt": "no text, no subtitle, no logo, no random unreadable text",
+  "refs_source": "task",
+  "refs_used": [
+    "ADV-001_冒险者_H3_sheet_001.jpg",
+    "R1-05_机械空港_单色.png"
+  ],
+  "frames": 240,
+  "audio_design": {
+    "ambient_soundscape": "quiet mechanical-airfield room tone, ventilation, verified passage movement, heavy steps, cloth and strap friction, backpack settling",
+    "emotional_sound_cue": "sparse low sustained tone narrows during the attempt, drops near silence on retreat and remains unresolved",
+    "audio_role": "support physical timing, weight and restraint; not MV rhythm"
+  },
+  "h3_prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds.\n\nSTYLE IDENTITY LOCK: preserve the exact verified drawing language, materials, wear, body proportions and original palette of Picture 1 and Picture 2. Keep the adventurer's broad heavy silhouette, short dark hair, thick beard, tired experienced face, layered worn dark clothing, red scarf and straps, pale metal shoulder structure, complete backpack and rolled equipment, gloves, boots and cyan waist lantern. Reference fidelity overrides generic style wording.\n\nVISUAL EXPRESSION VARIABLE: use restrained readable 2D motion, clear silhouette separation, compatible variable-weight linework, soft diffuse light and controlled negative space. The pacing is practical and continuous, never a rhythmic montage.\n\nCHARACTER (Picture 1): show exactly one established heavy adult adventurer. Picture 1 may contain identity views, but the output contains one physical person only. Preserve every existing part of his load; do not remove, simplify, duplicate or redesign equipment.\n\nENVIRONMENT (Picture 2): preserve the identity, actual existing structures, spatial continuity and monochrome palette logic of SCENE-05. Use a restricted passage and moving boundary only if that structure is visibly present in the verified Picture 2. Do not invent a door, control panel, sign, rail, platform or mechanism. If the passage structure is not supported, Work must not render this prompt.\n\nCAMERA AND COMPOSITION: begin in a medium-wide slight side view that shows the complete loaded body and the supported restricted passage together. Keep the safe side and passage direction readable on one screen axis. Use a very slow push only while he approaches, then hold the camera steady for the decision.\n\nACTION: the fully loaded adventurer approaches at a measured pace. The verified existing passage begins its ordinary closing cycle while he is close enough to try forcing the load through. He leans forward and turns one shoulder toward the narrowing opening, making the temptation to squeeze through visible. He stops before entering. Hold a clear still beat. He deliberately takes one complete step backward to the safe side and lets the heavy backpack settle. Without removing anything, he gathers only the loose straps and hanging parts already present on his equipment, drawing them closer to his torso and pack. End with both feet stable, the full load intact, his hands just finishing the strap adjustment, and the passage still closed or completing its cycle.\n\nAUDIO DESIGN: quiet mechanical-airfield room tone, restrained ventilation, the verified passage mechanism, one heavy forward step, one deliberate backward step, cloth friction, strap tension and backpack settling. A sparse low sustained tone narrows during the attempted entry, drops almost to silence on the backward step, and remains unresolved at the cut. Audio clarifies weight, timing and restraint; it does not drive MV editing.\n\nNEGATIVE: no second character, no duplicate adventurer, no clone, split screen, humanoid reflection or shadow double, no character-sheet or four-panel output, no removed backpack, discarded gear, new buckle, new tool, new weapon or duplicate lantern, no acrobatic leap, panic, sudden agile personality change or speed ramp, no invented door or mechanism unsupported by Picture 2, no reverse view, no location replacement, no text, subtitle, logo or watermark, no glossy 3D render, no hard synthetic digital edges, no music-video cutting.",
+  "local_render": {
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0710_R31__v10__A_run_A_00003_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0710_R31__v10__A_run_A_00003_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0710_R31__v10__A_run_B_00003_.mp4"
+    ],
+    "elapsed_sec": 766,
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-24 20:34:56)\n[h3_qq_gen]   状态: running  (2026-09-24 20:35:27)\n[h3_qq_gen]   状态: done  (2026-09-24 20:41:28)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0710_R31__v10__A_run_A_00003_.mp4\n[h3_qq_gen] 轮询 ADV_B_20260924_0710_R31__v10__A_run_B_0924203456（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-24 20:41:28)\n[h3_qq_gen]   状态: done  (2026-09-24 20:47:33)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0710_R31__v10__A_run_B_00003_.mp4",
+    "by": "b_new_format",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
