@@ -1,0 +1,49 @@
+{
+  "schema_version": "B-H3-CLOUD-FEEDBACK-1.0",
+  "task_id": "MOUSE_B_20260924_1807_R42",
+  "parent_task_id": "MOUSE_B_20260924_1705_R41",
+  "status": "pending",
+  "input_bindings": {
+    "picture_1": {
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "path_or_attachment_id": null,
+      "sha256": null,
+      "dimensions": null,
+      "same_character_verified": null
+    },
+    "picture_2": {
+      "scene_asset_id": "SCENE-08",
+      "registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png",
+      "github_blob": "3f0a6664e66899a228a8513bfc70688c0a866908",
+      "actual_bound_path": null,
+      "sha256": null,
+      "dimensions": null,
+      "geometry_check": null
+    }
+  },
+  "final_prompt_hash": null,
+  "workflow_id": null,
+  "run_A": {
+    "seed": null,
+    "work_task_id": null,
+    "output_id": null,
+    "output_path_or_url": null,
+    "output_sha256": null,
+    "resolution": null,
+    "status": "pending"
+  },
+  "run_B": {
+    "seed": null,
+    "work_task_id": null,
+    "output_id": null,
+    "output_path_or_url": null,
+    "output_sha256": null,
+    "resolution": null,
+    "status": "pending"
+  },
+  "errors": [],
+  "audio_support": "unknown",
+  "created_at": "2026-09-24T18:07:43+08:00",
+  "completed_at": null,
+  "note": "Pending contract only. Work/4090 must replace nulls with real evidence or set status=failed with an actual error."
+}
