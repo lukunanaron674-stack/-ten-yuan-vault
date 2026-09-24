@@ -1,0 +1,51 @@
+{
+  "task_id": "LLL_B_20260924_0506_R29__v10__A",
+  "parent_task_id": "LLL_B_20260924_0506_R29",
+  "schema_version": null,
+  "clip_id": "A",
+  "prompt_chars": 2593,
+  "dual_sample": true,
+  "samples": [
+    {
+      "run": "run_A",
+      "task_id": "LLL_B_20260924_0506_R29__v10__A_run_A_0924222017",
+      "seed": 1331193873,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__A_run_A_00004_.mp4"
+    },
+    {
+      "run": "run_B",
+      "task_id": "LLL_B_20260924_0506_R29__v10__A_run_B_0924222017",
+      "seed": 1118976470,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__A_run_B_00004_.mp4"
+    }
+  ],
+  "dynamic_chain_reading": "",
+  "shot_sequence": [],
+  "must_keep_check": [],
+  "negative_prompt": "no text, no subtitle, no logo, no random unreadable text",
+  "refs_source": "task",
+  "refs_used": [
+    "LLL-MAIN-001_黎黎隆_H3_character_card_001.jpg",
+    "R1-08_机械空港_五色组合.png"
+  ],
+  "frames": 240,
+  "audio_design": {
+    "ambient_soundscape": "机械空港持续低频通风、远处结构轻响与轻微装甲关节声；照明强度变化时加入一次短促电流嗡声。仅作音效设计。",
+    "emotional_sound_cue": "无歌词、无强拍的克制悬音；抬脚悬停时加入一次很轻的上扬泛音，随后保持未解决状态。",
+    "audio_role": "support the false-start event and readable hesitation; no beat-synced cutting or MV logic"
+  },
+  "h3_prompt": "2D hand-drawn cinematic character sequence, 15 seconds, vertical 9:16. STYLE IDENTITY LOCK: preserve the exact drawing language, materials, original colors and design details of Picture 1 for the only character, and preserve the verified five-color palette logic and technical-environment identity of Picture 2. Do not impose colors or glowing materials that conflict with either source. VISUAL EXPRESSION: keep the character silhouette exceptionally clear against the information-rich environment; use restrained variable-weight linework, light wash-like shading, soft diffuse illumination and controlled negative space only where compatible with the references. CHARACTER — Picture 1: one and only one LLL-MAIN-001, preserving the established face and competitive expression range, long red hair, red-white-black mechanical armor, cyan functional accents, mechanical claw feet, existing body-module proportions, and exactly one long segmented mechanical dragon tail. Every reference view represents the same single character. ENVIRONMENT — Picture 2: remain in the same five-color mechanical-airfield environment, retaining only its existing elements, spatial continuity and palette relationships. Picture 2 defines the place, not a mandatory framing. Do not invent a door, machine, vehicle, weapon, prop or unseen reverse view. CAMERA AND COMPOSITION: fixed low three-quarter medium-full shot; keep the entire body, both claw feet and the single tail readable; place the character slightly off center and preserve a simple open area in front of the lifted foot, while keeping the verified scene layers behind her. ACTION: she begins in a ready stance, eager to move. An existing colored illumination region in the environment changes intensity once. Her eyes follow it, then her head and shoulders commit slightly toward it. She lifts one claw foot as if she will step forward, but holds it just above the ground. Her tail tightens behind her as counterweight and a small knowing smile appears. She stops in this deliberate false-start pose. Keep one continuous restrained action and exactly one physical character instance. NEGATIVE: no second person, no creature performer, no duplicate or clone, no complete humanoid reflection or shadow double, no split screen, no character-sheet or four-panel output, no extra head, limb, claw foot or tail, no identity or armor redesign, no cyan-white energy humanoid, no unsupported environment object or unseen reverse view, no location replacement, no glossy 3D, no hard digital edges, no rhythmic MV cutting, no text, subtitle, logo or watermark.",
+  "local_render": {
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__A_run_A_00004_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__A_run_A_00004_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__A_run_B_00004_.mp4"
+    ],
+    "elapsed_sec": 827,
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-24 22:20:17)\n[h3_qq_gen]   状态: running  (2026-09-24 22:21:01)\n[h3_qq_gen]   状态: done  (2026-09-24 22:27:01)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__A_run_A_00004_.mp4\n[h3_qq_gen] 轮询 LLL_B_20260924_0506_R29__v10__A_run_B_0924222017（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-24 22:27:02)\n[h3_qq_gen]   状态: done  (2026-09-24 22:34:02)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__A_run_B_00004_.mp4",
+    "by": "b_new_format",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
