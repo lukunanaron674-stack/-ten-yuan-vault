@@ -1,0 +1,123 @@
+{
+  "schema_version": "B-H3-CLOUD-FEEDBACK-1.3",
+  "task_id": "MOUSE_B_20260924_2310_R47",
+  "parent_task_id": "MOUSE_B_20260924_2211_R46",
+  "status": "pending",
+  "card_id": null,
+  "input_gate": {
+    "character_path_candidate": "D:/H3/pool/character_refs/030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "character_sha256": "417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef",
+    "character_dimensions": [
+      941,
+      1672
+    ],
+    "same_character_visual_verified": null,
+    "h3_four_grid_layout_verified": null,
+    "scene_registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-10_异种村庄_双色主导.png",
+    "scene_blob": "3f0a6664e66899a228a8513bfc70688c0a866908",
+    "scene_actual_bound_path": null,
+    "scene_sha256": null,
+    "scene_dimensions": null,
+    "scene_geometry_check": null
+  },
+  "workflow": {
+    "workflow_id": null,
+    "fps_num": null,
+    "fps_den": null,
+    "total_frames": null,
+    "duration_seconds_actual": null,
+    "frame_timeline_compile_status": "PENDING"
+  },
+  "evidence_contract": {
+    "first_frame_for_card": "only the real first frame from this task/run after execution",
+    "node_sampling": [
+      "pre",
+      "onset",
+      "peak",
+      "post"
+    ],
+    "dense_intervals": [
+      "n4_deliberate_pause -> n5_secure_bag"
+    ],
+    "required_frame_fields": [
+      "run",
+      "node_id",
+      "requested_frame",
+      "actual_frame",
+      "timestamp",
+      "path_or_url",
+      "sha256",
+      "width",
+      "height",
+      "raw_observation"
+    ],
+    "allowed_verdicts": [
+      "SUPPORTED",
+      "CONTRADICTED",
+      "AMBIGUOUS",
+      "NEEDS_TEMPORAL_REVIEW"
+    ],
+    "sampling_miss_rule": "a missing event at one sampled frame is SAMPLING_MISS, not automatic hypothesis failure"
+  },
+  "expected_impression": {
+    "first": "初看她，我可能觉得她退缩、警惕，甚至有点脆弱。",
+    "shift": "耳朵先定位、眼头跟随之后，她没有立刻缩身或逃开，而是先停一下再主动按稳自己的包。",
+    "final": "片段结束时，我可能仍觉得她谨慎，但也觉得她敏锐、有判断，并能安静地保护自己。",
+    "trigger": "眼头对齐之后、手还没动之前那一个清楚可见的短暂停顿，以及随后有目的的按包动作。",
+    "alternative": [
+      "观众可能只读成受惊后的僵住",
+      "观众可能认为按包只是无意义循环动作",
+      "耳朵先动可能被身份漂移或生成抖动掩盖"
+    ],
+    "disconfirming_cue": [
+      "没有看见停顿",
+      "手立即乱动或多出肢体",
+      "角色退步或整身猛转",
+      "观众感受没有变化或更觉得慌张"
+    ],
+    "status": "EXPECTED_ONLY_PENDING_BLIND_REVIEW"
+  },
+  "blind_viewer_feedback": {
+    "status": "pending",
+    "prompt_to_reviewer": [
+      "初看这个人，你觉得她是怎样的人？",
+      "哪个具体动作或时刻改变了你的看法？",
+      "结尾你怎样看她？",
+      "还有什么相反或替代解释？"
+    ],
+    "do_not_reveal": [
+      "target feeling",
+      "ten-yuan labels",
+      "author interpretation"
+    ],
+    "responses": []
+  },
+  "run_A": {
+    "seed": null,
+    "execution_record": "pending_first_execution",
+    "work_task_id": null,
+    "output_id": null,
+    "first_frame": null,
+    "node_frames": [],
+    "status": "planned"
+  },
+  "run_B": {
+    "seed": null,
+    "execution_record": "pending_second_execution",
+    "work_task_id": null,
+    "output_id": null,
+    "first_frame": null,
+    "node_frames": [],
+    "status": "planned"
+  },
+  "review_layers": {
+    "INPUT_BINDING": "PENDING",
+    "RENDER_EXECUTION": "PENDING",
+    "KEYFRAME_VISUAL": "NOT_REVIEWED",
+    "ACTION_SEQUENCE": "NOT_REVIEWED",
+    "VIEWER_FEELING": "PENDING",
+    "TEN_YUAN_INTERPRETATION": "NOT_REVIEWED"
+  },
+  "created_at": "2026-09-24T23:10:39+08:00",
+  "completed_at": null
+}
