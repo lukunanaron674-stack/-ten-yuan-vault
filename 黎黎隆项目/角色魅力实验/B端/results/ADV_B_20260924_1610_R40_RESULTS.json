@@ -1,0 +1,51 @@
+{
+  "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
+  "task_id": "ADV_B_20260924_1610_R40",
+  "status": "awaiting_work_execution",
+  "planned_runs": 2,
+  "actual_completed_runs": 0,
+  "input_binding": {
+    "character_id": "ADV-001",
+    "character_status": "pending_image_validation",
+    "scene_asset_id": "SCENE-05",
+    "scene_status": "available_by_github_path_pending_visual_check"
+  },
+  "runs": {
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "output_id": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "output_id": null,
+      "status": "planned"
+    }
+  },
+  "compare_axes": [
+    "character_consistency",
+    "stop_before_entry_readability",
+    "existing_strap_action_readability",
+    "camera_stability",
+    "mechanical_atmosphere_fit",
+    "no_duplicate_character",
+    "equipment_continuity"
+  ],
+  "validation_target": {
+    "character_consistency": "pending_work_output",
+    "action_readability": "pending_work_output",
+    "camera_stability": "pending_work_output",
+    "atmosphere_fit": "pending_work_output",
+    "no_duplicate_character": "pending_work_output",
+    "identity_binding": "pending_image_validation",
+    "scene_geometry": "pending_work_visual_check",
+    "passage_support": "pending_work_visual_check"
+  },
+  "render_claim": null,
+  "audio_track_claim": null,
+  "note": "Planned result record only. Work must bind and validate real inputs, then replace fields with real execution evidence; B-end text creation is not rendering."
+}
