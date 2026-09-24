@@ -2,7 +2,7 @@
   "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
   "task_id": "MOUSE_B_20260924_0411_R28",
   "status": "work_render_completed",
-  "actual_completed_runs": 4,
+  "actual_completed_runs": 2,
   "created_by": "gh_writeback(auto-template, B端 未建占位)",
   "input_validation": {
     "validated_at": "2026-09-24 20:18:56",
@@ -129,7 +129,7 @@
     "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
   },
   "work_writeback": {
-    "updated_at": "2026-09-24 20:20:04",
+    "updated_at": "2026-09-24 20:20:52",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
   },
@@ -163,46 +163,17 @@
           "output_sha256": "26ab1fa073ed72961748903589028cccea00153b888887a8db00771320264292"
         },
         "status": "completed"
-      },
-      "B": {
-        "run_A": {
-          "seed": 1590243541,
-          "work_task_id": "MOUSE_B_20260924_0411_R28__v10__B_run_A_0924152129",
-          "status": "completed",
-          "relay_status": "done",
-          "execution_record": "work_h3_real_run",
-          "rendered_at": null,
-          "elapsed_sec": 783,
-          "output_id": "MOUSE_B_20260924_0411_R28__v10__B_run_A_00001_.mp4",
-          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_0411_R28__v10__B_run_A_00001_.mp4",
-          "output_bytes": 1663912,
-          "output_sha256": "266819ae54d865bf193450728cba074236221860f6a4b56c98bf2cc64461b527"
-        },
-        "run_B": {
-          "seed": 1166722704,
-          "work_task_id": "MOUSE_B_20260924_0411_R28__v10__B_run_B_0924152129",
-          "status": "completed",
-          "relay_status": "done",
-          "execution_record": "work_h3_real_run",
-          "rendered_at": null,
-          "elapsed_sec": 783,
-          "output_id": "MOUSE_B_20260924_0411_R28__v10__B_run_B_00001_.mp4",
-          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_0411_R28__v10__B_run_B_00001_.mp4",
-          "output_bytes": 2700009,
-          "output_sha256": "1d41179352db1b59bcf979274b5daf4591b8657249cedc8d9219dc992c0800ed"
-        },
-        "status": "completed"
       }
     }
   },
   "render_claim": {
     "claimed": true,
     "by": "relay-gh@DESKTOP-FKEUGLS",
-    "at": "2026-09-24 20:20:03",
-    "run_key": "MOUSE_B_20260924_0411_R28__v10__B",
-    "segment": "B",
+    "at": "2026-09-24 20:18:59",
+    "run_key": "MOUSE_B_20260924_0411_R28__v10__A",
+    "segment": "A",
     "prompt_sha256": null,
-    "prompt_chars": 2614,
+    "prompt_chars": 2502,
     "prompt_source": null,
     "width": 1280,
     "height": 736,
@@ -221,35 +192,35 @@
     ],
     "outputs": [
       {
-        "seed": 1590243541,
-        "work_task_id": "MOUSE_B_20260924_0411_R28__v10__B_run_A_0924152129",
+        "seed": 1458124896,
+        "work_task_id": "MOUSE_B_20260924_0411_R28__v10__A_run_A_0924150723",
         "status": "completed",
         "relay_status": "done",
         "execution_record": "work_h3_real_run",
         "rendered_at": null,
-        "elapsed_sec": 783,
-        "output_id": "MOUSE_B_20260924_0411_R28__v10__B_run_A_00001_.mp4",
-        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_0411_R28__v10__B_run_A_00001_.mp4",
-        "output_bytes": 1663912,
-        "output_sha256": "266819ae54d865bf193450728cba074236221860f6a4b56c98bf2cc64461b527"
+        "elapsed_sec": 845,
+        "output_id": "MOUSE_B_20260924_0411_R28__v10__A_run_A_00001_.mp4",
+        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_0411_R28__v10__A_run_A_00001_.mp4",
+        "output_bytes": 883043,
+        "output_sha256": "ffcb9dc741b85001b8a58140bf4937128a8d3aff66c5cd163786608b6efcc04b"
       },
       {
-        "seed": 1166722704,
-        "work_task_id": "MOUSE_B_20260924_0411_R28__v10__B_run_B_0924152129",
+        "seed": 1103509714,
+        "work_task_id": "MOUSE_B_20260924_0411_R28__v10__A_run_B_0924150723",
         "status": "completed",
         "relay_status": "done",
         "execution_record": "work_h3_real_run",
         "rendered_at": null,
-        "elapsed_sec": 783,
-        "output_id": "MOUSE_B_20260924_0411_R28__v10__B_run_B_00001_.mp4",
-        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_0411_R28__v10__B_run_B_00001_.mp4",
-        "output_bytes": 2700009,
-        "output_sha256": "1d41179352db1b59bcf979274b5daf4591b8657249cedc8d9219dc992c0800ed"
+        "elapsed_sec": 845,
+        "output_id": "MOUSE_B_20260924_0411_R28__v10__A_run_B_00001_.mp4",
+        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_0411_R28__v10__A_run_B_00001_.mp4",
+        "output_bytes": 796529,
+        "output_sha256": "26ab1fa073ed72961748903589028cccea00153b888887a8db00771320264292"
       }
     ],
     "outputs_local_abs": [
-      "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_0411_R28__v10__B_run_A_00001_.mp4",
-      "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_0411_R28__v10__B_run_B_00001_.mp4"
+      "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_0411_R28__v10__A_run_A_00001_.mp4",
+      "D:/H3/outputs/comfyui/video/lililong/character_charm/MOUSE_B_20260924_0411_R28__v10__A_run_B_00001_.mp4"
     ],
     "outputs_uploaded_to_github": [],
     "output_evidence_policy": {
@@ -276,8 +247,8 @@
     "design_received": true
   },
   "visual_evidence": {
-    "frames_uploaded_at": "2026-09-24 20:19:33",
-    "run_key": "MOUSE_B_20260924_0411_R28__v10__A",
+    "frames_uploaded_at": "2026-09-24 20:20:52",
+    "run_key": "MOUSE_B_20260924_0411_R28__v10__B",
     "policy": {
       "mode": "key",
       "sheet_frames": 6,
@@ -288,30 +259,30 @@
     "files": [
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/MOUSE_B_20260924_0411_R28/run_A_key_head.jpg",
-        "kb": 119.7
+        "kb": 107.1
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/MOUSE_B_20260924_0411_R28/run_A_key_mid.jpg",
-        "kb": 132.7
+        "kb": 105.0
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/MOUSE_B_20260924_0411_R28/run_A_key_tail.jpg",
-        "kb": 133.0
+        "kb": 102.2
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/MOUSE_B_20260924_0411_R28/run_B_key_head.jpg",
-        "kb": 83.7
+        "kb": 127.1
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/MOUSE_B_20260924_0411_R28/run_B_key_mid.jpg",
-        "kb": 98.1
+        "kb": 127.8
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/MOUSE_B_20260924_0411_R28/run_B_key_tail.jpg",
-        "kb": 98.5
+        "kb": 135.3
       }
     ],
-    "total_kb": 665.6,
+    "total_kb": 704.6,
     "note": "画面证据 = 每次抽样首/中/尾 3 帧（默认），与 render_claim.outputs[].output_sha256 对应的成片一一对应；成片本体 2-4MB 未入 git，留在 D:/H3/outputs/comfyui/，需要原片按 sha256 索取"
   }
 }
