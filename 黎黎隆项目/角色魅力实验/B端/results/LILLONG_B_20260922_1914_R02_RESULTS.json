@@ -1,8 +1,8 @@
 {
   "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
   "task_id": "LILLONG_B_20260922_1914_R02",
-  "status": "awaiting_work_execution",
-  "actual_completed_runs": 0,
+  "status": "work_render_completed",
+  "actual_completed_runs": 1,
   "created_by": "gh_writeback(auto-template, B端 未建占位)",
   "input_validation": {
     "validated_at": "2026-09-24 19:54:38",
@@ -31,8 +31,91 @@
     "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
   },
   "work_writeback": {
-    "updated_at": "2026-09-24 19:54:38",
+    "updated_at": "2026-09-24 19:54:40",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
+  },
+  "sampling_plan": {
+    "segments": {
+      "A": {
+        "single": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "completed",
+          "relay_status": "done",
+          "execution_record": "work_h3_real_run",
+          "rendered_at": "2026-09-22 20:27:16",
+          "elapsed_sec": 422,
+          "output_id": "LILLONG_B_20260922_1914_R02_00001_.mp4",
+          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/LILLONG_B_20260922_1914_R02_00001_.mp4",
+          "output_bytes": 8211124,
+          "output_sha256": "babe68b48325874ee8d45a075b20b11df7373805d83d809775971e1385ada475"
+        },
+        "status": "completed"
+      }
+    }
+  },
+  "render_claim": {
+    "claimed": true,
+    "by": "relay-gh@DESKTOP-FKEUGLS",
+    "at": "2026-09-24 19:54:40",
+    "run_key": "LILLONG_B_20260922_1914_R02",
+    "segment": "A",
+    "prompt_sha256": null,
+    "prompt_chars": null,
+    "prompt_source": "task.h3_prompt",
+    "width": 1280,
+    "height": 736,
+    "length_frames": null,
+    "fps": 24,
+    "duration_sec": null,
+    "steps": 8,
+    "model": {
+      "unet": "Minimax_H3/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "clip": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "attention": "sage"
+    },
+    "refs_used": null,
+    "outputs": [
+      {
+        "seed": null,
+        "work_task_id": null,
+        "status": "completed",
+        "relay_status": "done",
+        "execution_record": "work_h3_real_run",
+        "rendered_at": "2026-09-22 20:27:16",
+        "elapsed_sec": 422,
+        "output_id": "LILLONG_B_20260922_1914_R02_00001_.mp4",
+        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/LILLONG_B_20260922_1914_R02_00001_.mp4",
+        "output_bytes": 8211124,
+        "output_sha256": "babe68b48325874ee8d45a075b20b11df7373805d83d809775971e1385ada475"
+      }
+    ],
+    "outputs_local_abs": [
+      "D:/H3/outputs/comfyui/video/lililong/character_charm/LILLONG_B_20260922_1914_R02_00001_.mp4"
+    ],
+    "outputs_uploaded_to_github": [],
+    "output_evidence_policy": {
+      "video_uploaded": false,
+      "evidence_mode": "key",
+      "evidence_frames_per_run": 3,
+      "evidence_path": "黎黎隆项目/角色魅力实验/B端/results/frames/LILLONG_B_20260922_1914_R02/",
+      "video_local_path": "D:/H3/outputs/comfyui/",
+      "note": "只传首/中/尾 3 帧作可核实证据，按 output_sha256 与原片一一对应；要原片时按 sha256 向 Work 端索取"
+    }
+  },
+  "validation_target": {
+    "character_consistency": "work_output_available_pending_human_review",
+    "action_readability": "work_output_available_pending_human_review",
+    "camera_stability": "work_output_available_pending_human_review",
+    "atmosphere_fit": "work_output_available_pending_human_review",
+    "no_duplicate_character": "work_output_available_pending_human_review",
+    "identity_binding": "validated_by_relay_gh",
+    "scene_geometry": "work_output_available_pending_human_review"
+  },
+  "audio_track_claim": {
+    "claimed": false,
+    "note": "H3 节点是否出音轨需人工确认；未核实前不宣称有音轨（B端规则：若 Work 的 H3 节点不产音频则改为后期音效需求）",
+    "design_received": false
   }
 }
