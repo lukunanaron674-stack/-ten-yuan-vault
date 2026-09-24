@@ -2,7 +2,7 @@
   "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
   "task_id": "LLL_B_20260924_0506_R29",
   "status": "work_render_completed",
-  "actual_completed_runs": 2,
+  "actual_completed_runs": 4,
   "created_by": "gh_writeback(auto-template, B端 未建占位)",
   "input_validation": {
     "validated_at": "2026-09-24 20:06:55",
@@ -129,7 +129,7 @@
     "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
   },
   "work_writeback": {
-    "updated_at": "2026-09-24 20:06:55",
+    "updated_at": "2026-09-24 20:07:19",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
   },
@@ -163,17 +163,46 @@
           "output_sha256": "96bdc25c20174cb43b8efa8a22793ed715acf84d20542406f5b7bd8541de087b"
         },
         "status": "completed"
+      },
+      "B": {
+        "run_A": {
+          "seed": 991396393,
+          "work_task_id": "LLL_B_20260924_0506_R29__v10__B_run_A_0924145419",
+          "status": "completed",
+          "relay_status": "done",
+          "execution_record": "work_h3_real_run",
+          "rendered_at": null,
+          "elapsed_sec": 782,
+          "output_id": "LLL_B_20260924_0506_R29__v10__B_run_A_00002_.mp4",
+          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/LLL_B_20260924_0506_R29__v10__B_run_A_00002_.mp4",
+          "output_bytes": 3835137,
+          "output_sha256": "92cb5e087841a830af115cd4328b671d8d140425ce8d48dae5e060997b9259d8"
+        },
+        "run_B": {
+          "seed": 357118649,
+          "work_task_id": "LLL_B_20260924_0506_R29__v10__B_run_B_0924145419",
+          "status": "completed",
+          "relay_status": "done",
+          "execution_record": "work_h3_real_run",
+          "rendered_at": null,
+          "elapsed_sec": 782,
+          "output_id": "LLL_B_20260924_0506_R29__v10__B_run_B_00002_.mp4",
+          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/LLL_B_20260924_0506_R29__v10__B_run_B_00002_.mp4",
+          "output_bytes": 2478162,
+          "output_sha256": "c804b9fc91a9ff2835840fa131b0ca40ca4f464d90e6f12c9135fe047737f353"
+        },
+        "status": "completed"
       }
     }
   },
   "render_claim": {
     "claimed": true,
     "by": "relay-gh@DESKTOP-FKEUGLS",
-    "at": "2026-09-24 20:05:01",
-    "run_key": "LLL_B_20260924_0506_R29__v10__A",
-    "segment": "A",
+    "at": "2026-09-24 20:06:57",
+    "run_key": "LLL_B_20260924_0506_R29__v10__B",
+    "segment": "B",
     "prompt_sha256": null,
-    "prompt_chars": 2593,
+    "prompt_chars": 2642,
     "prompt_source": null,
     "width": 1280,
     "height": 736,
@@ -192,35 +221,35 @@
     ],
     "outputs": [
       {
-        "seed": 742613013,
-        "work_task_id": "LLL_B_20260924_0506_R29__v10__A_run_A_0924144140",
+        "seed": 991396393,
+        "work_task_id": "LLL_B_20260924_0506_R29__v10__B_run_A_0924145419",
         "status": "completed",
         "relay_status": "done",
         "execution_record": "work_h3_real_run",
         "rendered_at": null,
-        "elapsed_sec": 759,
-        "output_id": "LLL_B_20260924_0506_R29__v10__A_run_A_00002_.mp4",
-        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/LLL_B_20260924_0506_R29__v10__A_run_A_00002_.mp4",
-        "output_bytes": 1884155,
-        "output_sha256": "41d6fdfd9217046db146730d6361c25b275a15f58090652fff94e8dd06b323c9"
+        "elapsed_sec": 782,
+        "output_id": "LLL_B_20260924_0506_R29__v10__B_run_A_00002_.mp4",
+        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/LLL_B_20260924_0506_R29__v10__B_run_A_00002_.mp4",
+        "output_bytes": 3835137,
+        "output_sha256": "92cb5e087841a830af115cd4328b671d8d140425ce8d48dae5e060997b9259d8"
       },
       {
-        "seed": 712459420,
-        "work_task_id": "LLL_B_20260924_0506_R29__v10__A_run_B_0924144140",
+        "seed": 357118649,
+        "work_task_id": "LLL_B_20260924_0506_R29__v10__B_run_B_0924145419",
         "status": "completed",
         "relay_status": "done",
         "execution_record": "work_h3_real_run",
         "rendered_at": null,
-        "elapsed_sec": 759,
-        "output_id": "LLL_B_20260924_0506_R29__v10__A_run_B_00002_.mp4",
-        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/LLL_B_20260924_0506_R29__v10__A_run_B_00002_.mp4",
-        "output_bytes": 2003822,
-        "output_sha256": "96bdc25c20174cb43b8efa8a22793ed715acf84d20542406f5b7bd8541de087b"
+        "elapsed_sec": 782,
+        "output_id": "LLL_B_20260924_0506_R29__v10__B_run_B_00002_.mp4",
+        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/LLL_B_20260924_0506_R29__v10__B_run_B_00002_.mp4",
+        "output_bytes": 2478162,
+        "output_sha256": "c804b9fc91a9ff2835840fa131b0ca40ca4f464d90e6f12c9135fe047737f353"
       }
     ],
     "outputs_local_abs": [
-      "D:/H3/outputs/comfyui/video/lililong/character_charm/LLL_B_20260924_0506_R29__v10__A_run_A_00002_.mp4",
-      "D:/H3/outputs/comfyui/video/lililong/character_charm/LLL_B_20260924_0506_R29__v10__A_run_B_00002_.mp4"
+      "D:/H3/outputs/comfyui/video/lililong/character_charm/LLL_B_20260924_0506_R29__v10__B_run_A_00002_.mp4",
+      "D:/H3/outputs/comfyui/video/lililong/character_charm/LLL_B_20260924_0506_R29__v10__B_run_B_00002_.mp4"
     ],
     "outputs_uploaded_to_github": [],
     "output_evidence_policy": {
