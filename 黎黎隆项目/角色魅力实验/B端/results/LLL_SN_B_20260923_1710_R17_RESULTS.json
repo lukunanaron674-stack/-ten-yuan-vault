@@ -1,0 +1,88 @@
+{
+  "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
+  "task_id": "LLL_SN_B_20260923_1710_R17",
+  "status": "awaiting_work_execution",
+  "actual_completed_runs": 0,
+  "created_by": "gh_writeback(auto-template, B端 未建占位)",
+  "input_validation": {
+    "validated_at": "2026-09-24 20:09:15",
+    "validated_by": "relay-gh",
+    "run_key": "LLL_SN_B_20260923_1710_R17",
+    "status": "validated_with_warnings",
+    "problems": [
+      "no_declared_blob_matched:无一张能与 B端 声明的 blob 对上（角色图 B端 常标 github_image_upload=false，属常见情形；场景图对不上才可疑）—— 已记录 sha256 供人工核对"
+    ],
+    "refs": [
+      {
+        "file": "LLL-MAIN-001_黎黎隆_H3_character_card_001.jpg",
+        "path": "D:\\H3\\pool\\character_refs\\LLL-MAIN-001_黎黎隆_H3_character_card_001.jpg",
+        "rel_path": "../pool/character_refs/LLL-MAIN-001_黎黎隆_H3_character_card_001.jpg",
+        "exists": true,
+        "bytes": 444265,
+        "kb": 433.9,
+        "sha256": "5df6a463e5ee9fe7c4fc641c86cda9ebc1647867e78afd0d5430de7de02f0143",
+        "md5": "184c93a90edb1f41a1f955e5ae7a5866",
+        "git_blob_sha1": "703db937d91ebb995db2a0eb230fd87652903cd2",
+        "width": 1690,
+        "height": 931,
+        "aspect": "1690:931",
+        "megapixels": 1.57,
+        "dimensions_ok": true,
+        "slot": 0,
+        "picture_ref": "Picture 1",
+        "role": "character",
+        "blob_status": "not_on_github(sha256 recorded for manual match)",
+        "declared_blob_match": false,
+        "uploaded_to": "黎黎隆项目/角色魅力实验/B端/results/inputs/LLL_SN_B_20260923_1710_R17/0_character_LLL-MAIN-001_黎黎隆_H3_character_card_001.jpg",
+        "uploaded_kb": 264.9,
+        "original_kb": 433.9
+      }
+    ],
+    "uploaded_to": [
+      "黎黎隆项目/角色魅力实验/B端/results/inputs/LLL_SN_B_20260923_1710_R17/0_character_LLL-MAIN-001_黎黎隆_H3_character_card_001.jpg"
+    ],
+    "checks_done": [
+      "文件存在且非空",
+      "像素尺寸 >= 512（低于此值不足以锁身份/构图）",
+      "参考图互不重复（sha256 去重）",
+      "角色图在 slot0（Picture 1 = 身份锁）",
+      "git blob sha1 与 B端 声明 source_blob 对齐"
+    ]
+  },
+  "work_gate": {
+    "picture_1_status": "validated_with_warnings(no_declared_blob_matched:无一张能与 B端 声明的 blob 对上（角色图 B端 常标 github_image_upload=false，属常见情形；场景图对不上才可疑）—— 已记录 sha256 供人工核对)",
+    "picture_1_evidence": {
+      "file": "LLL-MAIN-001_黎黎隆_H3_character_card_001.jpg",
+      "path": "D:\\H3\\pool\\character_refs\\LLL-MAIN-001_黎黎隆_H3_character_card_001.jpg",
+      "rel_path": "../pool/character_refs/LLL-MAIN-001_黎黎隆_H3_character_card_001.jpg",
+      "exists": true,
+      "bytes": 444265,
+      "kb": 433.9,
+      "sha256": "5df6a463e5ee9fe7c4fc641c86cda9ebc1647867e78afd0d5430de7de02f0143",
+      "md5": "184c93a90edb1f41a1f955e5ae7a5866",
+      "git_blob_sha1": "703db937d91ebb995db2a0eb230fd87652903cd2",
+      "width": 1690,
+      "height": 931,
+      "aspect": "1690:931",
+      "megapixels": 1.57,
+      "dimensions_ok": true,
+      "slot": 0,
+      "picture_ref": "Picture 1",
+      "role": "character",
+      "blob_status": "not_on_github(sha256 recorded for manual match)",
+      "declared_blob_match": false,
+      "uploaded_to": "黎黎隆项目/角色魅力实验/B端/results/inputs/LLL_SN_B_20260923_1710_R17/0_character_LLL-MAIN-001_黎黎隆_H3_character_card_001.jpg",
+      "uploaded_kb": 264.9,
+      "original_kb": 433.9
+    },
+    "picture_2_status": "not_supplied",
+    "picture_2_evidence": null,
+    "visually_verified_by_work": false,
+    "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
+  },
+  "work_writeback": {
+    "updated_at": "2026-09-24 20:09:15",
+    "by": "relay-gh",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
