@@ -1,0 +1,392 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "research_rule_version": "B端_角色感受实验总规_v1.0",
+  "frame_rule_version": "帧级变化节点规则_v1.3",
+  "task_id": "MOUSE_B_20260925_0110_R49",
+  "task_version": "v1.0",
+  "parent_task_id": "MOUSE_B_20260925_0008_R48",
+  "created_at": "2026-09-25T01:10:24+08:00",
+  "status": "text_ready_render_blocked_pending_input_validation",
+  "project": "黎黎隆项目/角色魅力实验/B端",
+  "video_mode": "single_character_narrative",
+  "duration_seconds_range": [
+    10,
+    11
+  ],
+  "planned_duration_seconds": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "scene_asset_id": "SCENE-02",
+  "reference_view": {
+    "type": "both",
+    "primary_dynamic_view": "half_body_dynamic",
+    "secondary_identity_view": "full_body_identity",
+    "picture_mapping": {
+      "picture_1": "D:/H3/pool/character_refs/030F6E3B89E0998CBF695064BC27C2A8.jpeg; sha256 417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef; 941x1672; same-character and H3 four-grid pending",
+      "picture_2": "SCENE-02 blob 249b3a0f00aa894772d1049e800f4813723184df; actual Work binding and shoreline geometry pending"
+    },
+    "binding_status": "pending_image_validation"
+  },
+  "source_classification": {
+    "confirmed": [
+      {
+        "source": "B2 dynamic-chain experiment",
+        "commit": "eed30ace1d63ea88b75cfafbc9e86f4843767050",
+        "fact": "registered text experiment uses MOUSE-EAR-MUTANT-001 × SCENE-02 and tests concession without feedback followed by response termination"
+      },
+      {
+        "source": "B3 compilation",
+        "commit": "3c12910dcacc1da5b10afd4081a3aa98de08b9e0",
+        "fact": "SCENE-02 blob 249b3a0f00aa894772d1049e800f4813723184df; Picture 1 and scene geometry remain pending"
+      },
+      {
+        "source": "B4 R48 audit",
+        "commit": "1ee7fa643d5161901693c2b3f2e63e6e9e22ae06",
+        "fact": "R48 text passes but actual render remains blocked; current output must remain 16:9 and audio fields explicit"
+      }
+    ],
+    "candidate": [
+      "a single considerate half-step followed by no second check may read as self-controlled consideration without demand for recognition",
+      "the internal relation chain remains an experimental explanation"
+    ],
+    "rejected_or_excluded": [
+      "B3's 9:16 output",
+      "B3 camera follow and pullback",
+      "four planned runs across two prompt variants",
+      "claiming water or shoreline geometry beyond the actual bound image",
+      "claiming render, audio or feeling validation completed"
+    ]
+  },
+  "viewer_impression_hypothesis": {
+    "first": "她看起来谨慎、对环境敏感。",
+    "shift": "她主动横移半步让出空间，但水面恢复后没有得到任何回应。",
+    "final": "她不追加确认，恢复原节奏，可能被读成体贴但不索取回报、能主动结束响应。",
+    "trigger": "扰动消失后保留明确选择窗口，而她不回头、不靠近、不进行第二次确认。",
+    "alternatives": [
+      "她只是没有注意到扰动已经消失",
+      "继续走只是动画时长不足",
+      "耳朵放松不够清楚"
+    ],
+    "status": "EXPECTED_ONLY_PENDING_BLIND_REVIEW"
+  },
+  "subject_definition": {
+    "single_subject": "exactly one physical MOUSE-EAR-MUTANT-001 instance",
+    "identity_lock": [
+      "white short hair and top curl",
+      "two short oval pale-purple ears attached directly to skull sides",
+      "small body and slender limbs",
+      "pale tunic with dark trim",
+      "cross-body strap and existing side bag",
+      "oversized dark shoes"
+    ],
+    "single_instance_rule": "all reference views describe one person"
+  },
+  "retention_analysis": {
+    "must_retain": [
+      "registered MOUSE identity",
+      "SCENE-02 identity and original color logic",
+      "single physical character",
+      "16:9 landscape",
+      "locked camera and light",
+      "one water event",
+      "one half-step",
+      "same prompt dual sampling"
+    ],
+    "not_yet_verified": [
+      "same-character identity",
+      "H3 four-grid",
+      "SCENE-02 actual binding and shoreline/water geometry",
+      "workflow fps and frames",
+      "viewer feeling"
+    ]
+  },
+  "changed_variable": {
+    "type": "single_behavioral_choice",
+    "description": "after the one half-step and the disturbance fading, the character receives a readable opportunity for a second check but deliberately does not use it; all camera/light/weather controls stay fixed",
+    "comparison_note": "new upstream experiment rather than a visual-quality conclusion"
+  },
+  "ten_yuan_explanation": {
+    "internal_only": true,
+    "primary": {
+      "code": "N",
+      "volume": 8
+    },
+    "secondary": {
+      "code": "NZ",
+      "volume": 7
+    },
+    "variables": [
+      "Z5",
+      "XZ4",
+      "X并Z5"
+    ],
+    "chain": "N8 -> X并Z5克N6 -> NZ9克X并Z3 -> XZ4补Z6 -> N9克Z3 -> N9+NZ7",
+    "start_change_end": "稳定路线 → 主动让位 → 环境无反馈恢复 → 放弃追加确认 → 恢复原行动",
+    "status": "EXPERIMENTAL_HYPOTHESIS_NOT_VALIDATED"
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "nodes": [
+      {
+        "node_id": "n0_baseline",
+        "target_window_seconds": [
+          0,
+          1.8
+        ],
+        "observable_event": "steady walking rhythm on the established route",
+        "relation": {
+          "relation_class": "共存",
+          "relation_direction": "N + NZ",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/topology drift, duplicate figure, unsupported scene object, action reversal or framing drift"
+      },
+      {
+        "node_id": "n1_water_disturbance",
+        "target_window_seconds": [
+          1.8,
+          3.2
+        ],
+        "observable_event": "one small surface disturbance reaches the area beside the intended path",
+        "relation": {
+          "relation_class": "克",
+          "relation_direction": "X并Z -> N",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/topology drift, duplicate figure, unsupported scene object, action reversal or framing drift"
+      },
+      {
+        "node_id": "n2_half_step_yield",
+        "target_window_seconds": [
+          3.2,
+          5
+        ],
+        "observable_event": "near ear reacts first; one calm half-step leaves extra space",
+        "relation": {
+          "relation_class": "克",
+          "relation_direction": "NZ -> X并Z",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/topology drift, duplicate figure, unsupported scene object, action reversal or framing drift"
+      },
+      {
+        "node_id": "n3_no_feedback",
+        "target_window_seconds": [
+          5,
+          6.5
+        ],
+        "observable_event": "disturbance fades; nothing appears or answers",
+        "relation": {
+          "relation_class": "补",
+          "relation_direction": "XZ -> Z",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/topology drift, duplicate figure, unsupported scene object, action reversal or framing drift"
+      },
+      {
+        "node_id": "n4_choice_window",
+        "target_window_seconds": [
+          6.5,
+          7.4
+        ],
+        "observable_event": "a readable opportunity exists to turn back or investigate",
+        "relation": {
+          "relation_class": "共存",
+          "relation_direction": "XZ + Z",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "no readable opportunity exists for a second check"
+      },
+      {
+        "node_id": "n5_end_response",
+        "target_window_seconds": [
+          7.4,
+          9
+        ],
+        "observable_event": "ears relax; no turn, approach or second check",
+        "relation": {
+          "relation_class": "克",
+          "relation_direction": "N -> Z",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "head/body turns back, water is approached, or a second check occurs"
+      },
+      {
+        "node_id": "n6_resume",
+        "target_window_seconds": [
+          9,
+          11
+        ],
+        "observable_event": "opening walking rhythm returns in the same direction",
+        "relation": {
+          "relation_class": "共存",
+          "relation_direction": "N + NZ",
+          "hypothesis_status": "CANDIDATE_NOT_VALIDATED"
+        },
+        "camera_change": "none",
+        "counterexample": "identity/topology drift, duplicate figure, unsupported scene object, action reversal or framing drift"
+      }
+    ],
+    "validation_question": "After a readable unanswered choice window, does she visibly end the response rather than merely run out of time?"
+  },
+  "time_beats": {
+    "mode": "node_driven_v1.3",
+    "relative_windows": [
+      {
+        "node_id": "n0_baseline",
+        "target_window_seconds": [
+          0,
+          1.8
+        ],
+        "observable_event": "steady walking rhythm on the established route"
+      },
+      {
+        "node_id": "n1_water_disturbance",
+        "target_window_seconds": [
+          1.8,
+          3.2
+        ],
+        "observable_event": "one small surface disturbance reaches the area beside the intended path"
+      },
+      {
+        "node_id": "n2_half_step_yield",
+        "target_window_seconds": [
+          3.2,
+          5
+        ],
+        "observable_event": "near ear reacts first; one calm half-step leaves extra space"
+      },
+      {
+        "node_id": "n3_no_feedback",
+        "target_window_seconds": [
+          5,
+          6.5
+        ],
+        "observable_event": "disturbance fades; nothing appears or answers"
+      },
+      {
+        "node_id": "n4_choice_window",
+        "target_window_seconds": [
+          6.5,
+          7.4
+        ],
+        "observable_event": "a readable opportunity exists to turn back or investigate"
+      },
+      {
+        "node_id": "n5_end_response",
+        "target_window_seconds": [
+          7.4,
+          9
+        ],
+        "observable_event": "ears relax; no turn, approach or second check"
+      },
+      {
+        "node_id": "n6_resume",
+        "target_window_seconds": [
+          9,
+          11
+        ],
+        "observable_event": "opening walking rhythm returns in the same direction"
+      }
+    ],
+    "frame_timeline": {
+      "status": "PENDING_ACTUAL_WORKFLOW",
+      "rule": "compile per run from actual rational fps and total_frames; dense evidence around n3->n5"
+    }
+  },
+  "shot_grammar": {
+    "shot": "locked eye-level three-quarter full-body medium-wide",
+    "aspect_ratio": "16:9 landscape",
+    "camera_movement": "none",
+    "cut": "none",
+    "light_change": "none",
+    "composition": "girl, walking line and relevant visible water remain in one spatially continuous frame"
+  },
+  "h3_prompt": "Subject: Landscape 16:9, one continuous 11-second single-character narrative. Show exactly one physical instance of the established mouse-ear mutant girl from Picture 1. Preserve the same identity, face, white short hair with eye-covering fringe and top curl, two short oval translucent pale-purple mouse ears attached directly to the sides of the skull, small body, slender limbs, pale tunic with dark trim, dark cross-body strap, existing side bag, pale socks and oversized dark shoes. Keep both ears inside the head-and-shoulder silhouette with no extension behind the shoulders or along the back. All reference views describe the same one person.\n\nMovement: She begins already walking at one calm steady rhythm along the existing lakeshore route. One small harmless water disturbance briefly reaches the area beside her intended path. Her nearer skull-attached ear pivots first while her eyes stay forward for a fraction of a second. Without fear or haste, she shifts only half a step sideways to leave a little extra space, then keeps her feet settled. The water disturbance fades completely by itself. Nothing appears, answers, rewards her or explains the event. Hold a short clear choice window in which she could turn back or investigate again. Her ears stay attentive briefly, then relax. She does not turn around, approach the water or make a second check. She restores the exact opening walking rhythm and continues in the same overall direction, leaving the finished event behind.\n\nScene: Picture 2 defines SCENE-02, the established forest-lakeshore environment, its visible water, forest atmosphere, spatial continuity, negative space and original color relationship. Use only shoreline, water, vegetation, ground and depth layers visibly supported by the bound scene image. Do not invent a bridge, dock, building, rock, boat, animal, creature, person, sign, machine or story prop. The disturbance is only a small surface-water event and never becomes a figure or entity.\n\nCamera: One locked eye-level three-quarter full-body medium-wide shot in a 16:9 landscape frame. Keep the girl, her walking line and the relevant visible water area readable in the same composition from start to finish. Leave stable horizontal negative space toward the water. Fixed framing, focal length and horizon; no push, pull, pan, tilt, tracking, reframing, cut, transition or split screen. The uncut view must make the initial rhythm, single half-step, unanswered choice window and restored rhythm directly comparable.\n\nLighting: Preserve the bound character materials and Picture 2's original palette logic. Use one fixed soft diffuse light throughout. Keep the pale-purple ear translucency restrained and consistent. No flashing, relighting, weather change, sudden saturation shift or color redesign.\n\nAtmosphere: The visible event should allow a reading of quiet consideration without demanding recognition, certainty or a reward. Her appeal comes from making one small adjustment and then confidently ending her response when nothing follows. Express this only through timing, spacing and visible action. Use clear two-dimensional hand-drawn shapes, clean variable-width ink contours, light watercolor softness, low-saturation shadows and sufficient negative space only where compatible with the bound references. Do not copy another character's cyan-white energy body, materials or identity.\n\nAudio: Ambient soundscape: soft lakeshore wind, faint leaf movement, restrained footsteps, light cloth movement and one subtle water-ripple event in natural open-air ambience. Emotional sound cue: one very sparse soft sustained tone enters only during the short choice window and fades when the original walking rhythm returns, with no lyrics and no strong beat. Audio supports spatial direction, action readability and restrained emotion only; it does not drive cuts and is not music-video editing.\n\nNegative: exactly one character and one physical body, no duplicate character, no second human figure, no split screen, no clone or mirror-double, no mirror duplicate, no reflection person, no crowd, no NPC, no creature from the water, no visible sound source, no rabbit ears, no tail, no horns, no wings, no back-mounted wing-like silhouette, no extra limbs, no deformed hands, no invented structure or prop, no second check, no turn back, no camera movement, no cut, no transition, no weather change, no abrupt color shift, no text overlay, no watermark, no abrupt redesign.",
+  "audio_design": {
+    "ambient_soundscape": "soft lakeshore wind, faint leaf movement, restrained footsteps, light cloth movement, and one subtle water-ripple event in natural open-air ambience",
+    "emotional_sound_cue": "one very sparse soft sustained tone enters only during the short choice window and fades when the original walking rhythm returns; no lyrics or strong beat",
+    "audio_role": "support spatial direction, action readability and restrained emotion only; do not drive cuts; not MV editing",
+    "actual_audio_track_status": "UNKNOWN_PENDING_WORK"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "same_prompt_and_inputs": true,
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "compare_axes": [
+      "single identity",
+      "ear-first response",
+      "single half-step",
+      "readable choice window",
+      "no second check",
+      "restored opening rhythm",
+      "fixed framing",
+      "viewer language"
+    ],
+    "actual_completed_runs": 0
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no creature from water",
+    "no invented structure",
+    "no camera movement",
+    "no weather or color change"
+  ],
+  "must_keep": [
+    "one character",
+    "one SCENE-02 environment",
+    "11 seconds",
+    "16:9 landscape",
+    "locked shot/light",
+    "one disturbance and one half-step",
+    "same prompt and inputs for run_A/run_B"
+  ],
+  "must_avoid": [
+    "B3 9:16 output",
+    "tracking or pullback",
+    "second prompt variant",
+    "second check or turn back",
+    "inventing scene geometry",
+    "claiming validation/render/audio/blind review completed",
+    "reusing old seeds or frames"
+  ],
+  "validation_target": {
+    "input_gate": [
+      "Picture 1 binding/SHA/dimensions",
+      "same-character true/false",
+      "H3 four-grid true/false",
+      "SCENE-02 binding/SHA/dimensions",
+      "water/shoreline/negative-space geometry true/false"
+    ],
+    "action_gate": "disturbance fades, a second-check opportunity remains, and the character visibly declines it before restoring the opening rhythm",
+    "result_gate": "2/2 real runs with node evidence and blind feedback before interpretation"
+  },
+  "card_registration": {
+    "card_id": null,
+    "status": "awaiting_authoritative_CARD_INDEX_and_real_first_frame"
+  }
+}
