@@ -1,74 +1,10 @@
 {
   "schema_version": "B-H3-RESULT-1.2",
   "task_id": "ADV_B_20260925_0508_R53",
-  "status": "work_render_completed",
-  "actual_completed_runs": 2,
+  "status": "work_rendering",
+  "actual_completed_runs": 0,
   "planned_run_count": 2,
-  "render_claim": {
-    "claimed": true,
-    "by": "relay-gh@DESKTOP-FKEUGLS",
-    "at": "2026-09-25 07:57:29",
-    "run_key": "ADV_B_20260925_0508_R53",
-    "segment": "A",
-    "prompt_sha256": "3248bcfd3750cb0e1a9277b2b98c0614d1442a2e4cddf0777b78c628a228b922",
-    "prompt_chars": 3990,
-    "prompt_source": "task.h3_prompt",
-    "width": 1280,
-    "height": 736,
-    "length_frames": 240,
-    "fps": 24,
-    "duration_sec": 10.0,
-    "steps": 8,
-    "model": {
-      "unet": "Minimax_H3/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
-      "clip": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
-      "attention": "sage"
-    },
-    "refs_used": [
-      "ADV-001_冒险者_H3_sheet_001.jpg"
-    ],
-    "outputs": [
-      {
-        "seed": 825120441,
-        "work_task_id": "ADV_B_20260925_0508_R53_run_A_0925074222",
-        "status": "completed",
-        "relay_status": "done",
-        "execution_record": "work_h3_real_run",
-        "rendered_at": "2026-09-25 07:57:22",
-        "elapsed_sec": 900,
-        "output_id": "ADV_B_20260925_0508_R53_run_A_00001_.mp4",
-        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0508_R53_run_A_00001_.mp4",
-        "output_bytes": 1141775,
-        "output_sha256": "61d7591e97bb39b248a8c19086caf799655f9b5e2059c813ea737fcbe1383f4e"
-      },
-      {
-        "seed": 201978442,
-        "work_task_id": "ADV_B_20260925_0508_R53_run_B_0925074222",
-        "status": "completed",
-        "relay_status": "done",
-        "execution_record": "work_h3_real_run",
-        "rendered_at": "2026-09-25 07:57:22",
-        "elapsed_sec": 900,
-        "output_id": "ADV_B_20260925_0508_R53_run_B_00001_.mp4",
-        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0508_R53_run_B_00001_.mp4",
-        "output_bytes": 1302947,
-        "output_sha256": "026579a96eb5eada506791eb6d3f8a5afc10257f8a36fa1ad1c3a829ccd420db"
-      }
-    ],
-    "outputs_local_abs": [
-      "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0508_R53_run_A_00001_.mp4",
-      "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0508_R53_run_B_00001_.mp4"
-    ],
-    "outputs_uploaded_to_github": [],
-    "output_evidence_policy": {
-      "video_uploaded": false,
-      "evidence_mode": "key",
-      "evidence_frames_per_run": 3,
-      "evidence_path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0508_R53/",
-      "video_local_path": "D:/H3/outputs/comfyui/",
-      "note": "只传首/中/尾 3 帧作可核实证据，按 output_sha256 与原片一一对应；要原片时按 sha256 向 Work 端索取"
-    }
-  },
+  "render_claim": false,
   "input_binding": {
     "character": null,
     "scene": null,
@@ -119,55 +55,47 @@
   "claimed_at": "2026-09-25 07:42:20",
   "claimed_run_key": "ADV_B_20260925_0508_R53",
   "work_writeback": {
-    "updated_at": "2026-09-25 07:57:29",
+    "updated_at": "2026-09-25 07:57:53",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
   },
-  "sampling_plan": {
-    "segments": {
-      "A": {
-        "run_A": {
-          "seed": 825120441,
-          "work_task_id": "ADV_B_20260925_0508_R53_run_A_0925074222",
-          "status": "completed",
-          "relay_status": "done",
-          "execution_record": "work_h3_real_run",
-          "rendered_at": "2026-09-25 07:57:22",
-          "elapsed_sec": 900,
-          "output_id": "ADV_B_20260925_0508_R53_run_A_00001_.mp4",
-          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0508_R53_run_A_00001_.mp4",
-          "output_bytes": 1141775,
-          "output_sha256": "61d7591e97bb39b248a8c19086caf799655f9b5e2059c813ea737fcbe1383f4e"
-        },
-        "run_B": {
-          "seed": 201978442,
-          "work_task_id": "ADV_B_20260925_0508_R53_run_B_0925074222",
-          "status": "completed",
-          "relay_status": "done",
-          "execution_record": "work_h3_real_run",
-          "rendered_at": "2026-09-25 07:57:22",
-          "elapsed_sec": 900,
-          "output_id": "ADV_B_20260925_0508_R53_run_B_00001_.mp4",
-          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0508_R53_run_B_00001_.mp4",
-          "output_bytes": 1302947,
-          "output_sha256": "026579a96eb5eada506791eb6d3f8a5afc10257f8a36fa1ad1c3a829ccd420db"
-        },
-        "status": "completed"
+  "visual_evidence": {
+    "frames_uploaded_at": "2026-09-25 07:57:53",
+    "run_key": "ADV_B_20260925_0508_R53",
+    "policy": {
+      "mode": "key",
+      "sheet_frames": 6,
+      "sheet_grid": "3x2",
+      "max_kb": 300,
+      "jpg_quality": 90
+    },
+    "files": [
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0508_R53/run_A_key_head.jpg",
+        "kb": 168.0
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0508_R53/run_A_key_mid.jpg",
+        "kb": 171.9
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0508_R53/run_A_key_tail.jpg",
+        "kb": 172.4
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0508_R53/run_B_key_head.jpg",
+        "kb": 171.6
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0508_R53/run_B_key_mid.jpg",
+        "kb": 174.8
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0508_R53/run_B_key_tail.jpg",
+        "kb": 175.4
       }
-    }
-  },
-  "validation_target": {
-    "character_consistency": "work_output_available_pending_human_review",
-    "action_readability": "work_output_available_pending_human_review",
-    "camera_stability": "work_output_available_pending_human_review",
-    "atmosphere_fit": "work_output_available_pending_human_review",
-    "no_duplicate_character": "work_output_available_pending_human_review",
-    "identity_binding": "validated_by_relay_gh",
-    "scene_geometry": "work_output_available_pending_human_review"
-  },
-  "audio_track_claim": {
-    "claimed": false,
-    "note": "H3 节点是否出音轨需人工确认；未核实前不宣称有音轨（B端规则：若 Work 的 H3 节点不产音频则改为后期音效需求）",
-    "design_received": true
+    ],
+    "total_kb": 1034.2,
+    "note": "画面证据 = 每次抽样首/中/尾 3 帧（默认），与 render_claim.outputs[].output_sha256 对应的成片一一对应；成片本体 2-4MB 未入 git，留在 D:/H3/outputs/comfyui/，需要原片按 sha256 索取"
   }
 }
