@@ -1,0 +1,52 @@
+{
+  "schema_version": "B-H3-RESULT-1.2",
+  "task_id": "MOUSE_B_20260925_0607_R54",
+  "status": "pending_work_execution",
+  "actual_completed_runs": 0,
+  "planned_run_count": 2,
+  "render_claim": false,
+  "input_binding": {
+    "character": null,
+    "scene": null,
+    "verified": false
+  },
+  "runs": {
+    "run_A": {
+      "seed": null,
+      "work_task_id": null,
+      "status": "planned",
+      "output": null
+    },
+    "run_B": {
+      "seed": null,
+      "work_task_id": null,
+      "status": "planned",
+      "output": null
+    }
+  },
+  "comparison": {
+    "status": "not_started",
+    "axes": [
+      "mouse identity",
+      "two-ear skull topology",
+      "single-character count",
+      "stimulus audibility",
+      "ear-before-eye timing",
+      "tiny incomplete head turn",
+      "shoulder/pelvis/feet non-recruitment",
+      "fixed-camera stability",
+      "viewer selective-attention language"
+    ]
+  },
+  "historical_evidence_not_current_result": [
+    {
+      "task": "MOUSE_B_20260924_0411_R28__v10__A",
+      "status": "done_2_of_2_unreviewed",
+      "commit": "0c4f417d1caab7b535bf571a867b259e793c35bf"
+    }
+  ],
+  "cancelled_inputs_not_requeued": [
+    "pre-R40 ADV cards"
+  ],
+  "h3_validation_status": "NOT_VALIDATED_PENDING_BINDINGS_AND_REAL_OUTPUTS"
+}
