@@ -1,0 +1,89 @@
+{
+  "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
+  "task_id": "CH003_B_20260922_2215_R02",
+  "status": "awaiting_work_execution",
+  "actual_completed_runs": 0,
+  "created_by": "gh_writeback(auto-template, B端 未建占位)",
+  "input_validation": {
+    "validated_at": "2026-09-24 19:52:20",
+    "validated_by": "relay-gh",
+    "run_key": "CH003_B_20260922_2215_R02",
+    "status": "validated_with_warnings",
+    "problems": [
+      "too_small:LLL-CHAR-003_逃票魔法学徒_H3_charref_crop001.png 292x408",
+      "no_declared_blob_matched:无一张能与 B端 声明的 blob 对上（角色图 B端 常标 github_image_upload=false，属常见情形；场景图对不上才可疑）—— 已记录 sha256 供人工核对"
+    ],
+    "refs": [
+      {
+        "file": "LLL-CHAR-003_逃票魔法学徒_H3_charref_crop001.png",
+        "path": "D:\\H3\\pool\\character_refs\\LLL-CHAR-003_逃票魔法学徒_H3_charref_crop001.png",
+        "rel_path": "../pool/character_refs/LLL-CHAR-003_逃票魔法学徒_H3_charref_crop001.png",
+        "exists": true,
+        "bytes": 134973,
+        "kb": 131.8,
+        "sha256": "0c25cb0e300ba6efdbd7167dd539be13c533106b68b5859b7ac8ad5bd5bb6d00",
+        "md5": "a1eee16dbc4a56ab297744489c225bc3",
+        "git_blob_sha1": "58674a17690d9d21d4747caa67103ad3afc4149e",
+        "width": 292,
+        "height": 408,
+        "aspect": "292:408",
+        "megapixels": 0.12,
+        "dimensions_ok": false,
+        "slot": 0,
+        "picture_ref": "Picture 1",
+        "role": "character",
+        "blob_status": "not_on_github(sha256 recorded for manual match)",
+        "declared_blob_match": false,
+        "uploaded_to": "黎黎隆项目/角色魅力实验/B端/results/inputs/CH003_B_20260922_2215_R02/0_character_LLL-CHAR-003_逃票魔法学徒_H3_charref_crop001.jpg",
+        "uploaded_kb": 33.5,
+        "original_kb": 131.8
+      }
+    ],
+    "uploaded_to": [
+      "黎黎隆项目/角色魅力实验/B端/results/inputs/CH003_B_20260922_2215_R02/0_character_LLL-CHAR-003_逃票魔法学徒_H3_charref_crop001.jpg"
+    ],
+    "checks_done": [
+      "文件存在且非空",
+      "像素尺寸 >= 512（低于此值不足以锁身份/构图）",
+      "参考图互不重复（sha256 去重）",
+      "角色图在 slot0（Picture 1 = 身份锁）",
+      "git blob sha1 与 B端 声明 source_blob 对齐"
+    ]
+  },
+  "work_gate": {
+    "picture_1_status": "validated_with_warnings(too_small:LLL-CHAR-003_逃票魔法学徒_H3_charref_crop001.png 292x408;no_declared_blob_matched:无一张能与 B端 声明的 blob 对上（角色图 B端 常标 github_image_upload=false，属常见情形；场景图对不上才可疑）—— 已记录 sha256 供人工核对)",
+    "picture_1_evidence": {
+      "file": "LLL-CHAR-003_逃票魔法学徒_H3_charref_crop001.png",
+      "path": "D:\\H3\\pool\\character_refs\\LLL-CHAR-003_逃票魔法学徒_H3_charref_crop001.png",
+      "rel_path": "../pool/character_refs/LLL-CHAR-003_逃票魔法学徒_H3_charref_crop001.png",
+      "exists": true,
+      "bytes": 134973,
+      "kb": 131.8,
+      "sha256": "0c25cb0e300ba6efdbd7167dd539be13c533106b68b5859b7ac8ad5bd5bb6d00",
+      "md5": "a1eee16dbc4a56ab297744489c225bc3",
+      "git_blob_sha1": "58674a17690d9d21d4747caa67103ad3afc4149e",
+      "width": 292,
+      "height": 408,
+      "aspect": "292:408",
+      "megapixels": 0.12,
+      "dimensions_ok": false,
+      "slot": 0,
+      "picture_ref": "Picture 1",
+      "role": "character",
+      "blob_status": "not_on_github(sha256 recorded for manual match)",
+      "declared_blob_match": false,
+      "uploaded_to": "黎黎隆项目/角色魅力实验/B端/results/inputs/CH003_B_20260922_2215_R02/0_character_LLL-CHAR-003_逃票魔法学徒_H3_charref_crop001.jpg",
+      "uploaded_kb": 33.5,
+      "original_kb": 131.8
+    },
+    "picture_2_status": "not_supplied",
+    "picture_2_evidence": null,
+    "visually_verified_by_work": false,
+    "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
+  },
+  "work_writeback": {
+    "updated_at": "2026-09-24 19:52:20",
+    "by": "relay-gh",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
