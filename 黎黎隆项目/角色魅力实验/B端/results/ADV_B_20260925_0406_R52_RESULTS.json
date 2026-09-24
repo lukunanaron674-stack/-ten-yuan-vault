@@ -1,0 +1,85 @@
+{
+  "schema_version": "B-H3-RESULT-1.2",
+  "task_id": "ADV_B_20260925_0406_R52",
+  "status": "pending_work_execution",
+  "actual_completed_runs": 0,
+  "current_task_runs": {
+    "run_A": {
+      "seed": null,
+      "work_task_id": null,
+      "status": "pending",
+      "output_path": null,
+      "output_sha256": null,
+      "fps": null,
+      "total_frames": null,
+      "audio_status": null
+    },
+    "run_B": {
+      "seed": null,
+      "work_task_id": null,
+      "status": "pending",
+      "output_path": null,
+      "output_sha256": null,
+      "fps": null,
+      "total_frames": null,
+      "audio_status": null
+    }
+  },
+  "dispatch": {
+    "relay_task_id": "ADV_B_20260925_0406_R52__v10_RELAY",
+    "schema_version": "video_tenyuan_prompt_schema_v1.2",
+    "status": "ready_not_yet_accepted",
+    "work_receipt": null
+  },
+  "prior_evidence_not_current_result": [
+    {
+      "source_task_id": "ADV_B_20260924_1308_R37__v10__A",
+      "commit": "54a467dc1c3fd0b42e8d5b0fda5ca29017e8bfa0",
+      "status": "done",
+      "run_count": 2,
+      "seeds": [
+        265481990,
+        1474078158
+      ],
+      "task_ids": [
+        "ADV_B_20260924_1308_R37__v10__A_run_A_0925031038",
+        "ADV_B_20260924_1308_R37__v10__A_run_B_0925031038"
+      ],
+      "mp4_count": 2
+    },
+    {
+      "source_task_id": "ADV_B_20260924_1308_R37__v10__B",
+      "commit": "52ef6a783e32a3abc0081d250da4d7c41cb86e92",
+      "status": "done",
+      "run_count": 2,
+      "seeds": [
+        1484123411,
+        1779229529
+      ],
+      "task_ids": [
+        "ADV_B_20260924_1308_R37__v10__B_run_A_0925032542",
+        "ADV_B_20260924_1308_R37__v10__B_run_B_0925032542"
+      ],
+      "mp4_count": 2
+    },
+    {
+      "source_task_id": "ADV_B_20260924_1408_R38__v10__A",
+      "commit": "81ebba8103d019bd18b235bea54453bc0e499a7f",
+      "status": "done",
+      "run_count": 2,
+      "seeds": [
+        1894770528,
+        1160120729
+      ],
+      "task_ids": [
+        "ADV_B_20260924_1408_R38__v10__A_run_A_0925034109",
+        "ADV_B_20260924_1408_R38__v10__A_run_B_0925034109"
+      ],
+      "mp4_count": 2
+    }
+  ],
+  "evidence_limit": "These legacy records prove execution records and paths only. No frames/audio audit was provided, and none of their seeds, IDs or outputs belong to R52.",
+  "input_validation_status": "pending_image_validation",
+  "render_validation_status": "not_started",
+  "blind_review_status": "pending"
+}
