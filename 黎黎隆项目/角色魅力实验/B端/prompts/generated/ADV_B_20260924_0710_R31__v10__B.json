@@ -8,14 +8,14 @@
   "samples": [
     {
       "run": "run_A",
-      "task_id": "ADV_B_20260924_0710_R31__v10__B_run_A_0925015852",
-      "seed": 2141982862,
-      "mp4": null
+      "task_id": "ADV_B_20260924_0710_R31__v10__B_run_A_0925052552",
+      "seed": 208442774,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0710_R31__v10__B_run_A_00004_.mp4"
     },
     {
       "run": "run_B",
-      "task_id": "ADV_B_20260924_0710_R31__v10__B_run_B_0925015852",
-      "seed": 2064901062,
+      "task_id": "ADV_B_20260924_0710_R31__v10__B_run_B_0925052552",
+      "seed": 699438518,
       "mp4": null
     }
   ],
@@ -36,12 +36,14 @@
   },
   "h3_prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds, continuing directly from the selected real ending frame of Segment A.\n\nSTYLE IDENTITY LOCK: preserve the exact verified drawing language, materials, wear, body proportions and original palette of Picture 1 and Picture 2. Keep the same single adventurer, his broad heavy silhouette, short dark hair, thick beard, tired experienced face, layered worn clothing, red scarf and straps, pale metal shoulder structure, complete backpack and rolled equipment, gloves, boots and cyan waist lantern. The load remains complete.\n\nVISUAL EXPRESSION VARIABLE: use restrained readable 2D motion, coherent line weight, compatible diffuse light and simple foreground-middle-background separation. Let the unchanged weight and controlled timing carry the character performance; avoid theatrical posing and montage.\n\nCHARACTER (Picture 1): show exactly one physical adventurer. Preserve the tightened state of the same existing straps from the chosen Segment A ending. Do not remove, replace, duplicate or redesign any equipment.\n\nENVIRONMENT (Picture 2): remain in the same verified SCENE-05 space, with the same supported restricted passage, screen direction, monochrome palette logic and ordinary mechanism cycle. The passage may move only if Work confirmed it is visible in Picture 2. Do not invent controls, architecture or additional space.\n\nCAMERA AND COMPOSITION: start from the same camera side, character position, lighting direction and safe-side axis as the selected Segment A ending. Use a medium-full view showing his complete load and the opening together. When the verified passage opens again, allow one restrained lateral follow only if Picture 2 supports it; otherwise keep the camera fixed. Never cross the axis.\n\nACTION: the same passage completes its ordinary cycle and opens again. The adventurer waits until the usable opening is fully readable. He leads with one shoulder, keeps the already tightened load close to his body and enters at a slow controlled pace. His steps remain heavy; the backpack and rolled equipment shift with weight but stay attached. He passes without scraping, discarding or changing the load. After his last foot clears the passage, he straightens only slightly and continues forward without celebration. End with the complete adventurer and all equipment safely beyond the restriction while the mechanism resumes its ordinary cycle behind him.\n\nAUDIO DESIGN: continuous low airfield ambience, restrained ventilation and passage movement, measured heavy footfalls, cloth drag, strap tension and backpack weight shifting. The near-silence inherited from Segment A holds until the second opening is clear, then resolves with a quiet low tonal release after his final foot clears. Audio reinforces timing, weight and self-control; it is not an MV beat track.\n\nNEGATIVE: no second character, no duplicate adventurer, no clone, split screen, humanoid reflection or shadow double, no character-sheet or four-panel output, no removed backpack, abandoned gear, new tool, weapon, buckle or duplicate lantern, no acrobatics, teleportation, sudden nimble movement, speed ramp or triumph pose, no invented door, control, sign, rail or architecture unsupported by Picture 2, no reverse view, no unrelated location, no text, subtitle, logo or watermark, no glossy 3D render, no hard synthetic digital edges, no music-video cutting.",
   "local_render": {
-    "status": "failed",
-    "mp4": null,
-    "mp4s": [],
-    "elapsed_sec": 1240,
+    "status": "timeout",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0710_R31__v10__B_run_A_00004_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0710_R31__v10__B_run_A_00004_.mp4"
+    ],
+    "elapsed_sec": 2780,
     "rc": 1,
-    "tail": "[h3_qq_gen] 轮询 ADV_B_20260924_0710_R31__v10__B_run_B_0925015852（最多 25 分钟）...\n[h3_qq_gen]   状态: pending  (2026-09-25 01:58:52)\n[h3_qq_gen]   状态: running  (2026-09-25 02:17:16)\n[h3_qq_gen]   状态: failed  (2026-09-25 02:19:20)\n[h3_qq_gen] ADV_B_20260924_0710_R31__v10__B_run_B_0925015852 未成功出片：FAILED [[\"execution_start\", {\"prompt_id\": \"534797a8-0c91-45ca-875b-8b546717fef8\", \"timestamp\": 1790273836235}], [\"execution_cached\", {\"nodes\": [\"119\", \"120\", \"126\", \"128\", \"136\", \"127\", \"123\", \"124\", \"990\", \"991\"], \"prompt_id\": \"534797a8-0c91-45ca-875b-8b546717fef8\", \"timestamp\": 1790273836260}], [\"execution_interrupted\", {\"prompt_id\": \"534797a8-0c91-45ca-875b-8b546717fef8\", \"node_id\": \"125\", \"node_type\": \"SamplerCustomAdvanced\", \"executed\": [\"129\"], \"timestamp\": 1790273954277}]]\nFAILED|ADV_B_20260924_0710_R31__v10__B_run_B_0925015852\n\n[错误] 2 条抽样未成功：['ADV_B_20260924_0710_R31__v10__B_run_A_0925015852', 'ADV_B_20260924_0710_R31__v10__B_run_B_0925015852']",
+    "tail": "DONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_0710_R31__v10__B_run_A_00004_.mp4\n[h3_qq_gen] 轮询 ADV_B_20260924_0710_R31__v10__B_run_B_0925052552（最多 25 分钟）...\n[h3_qq_gen]   状态: pending  (2026-09-25 05:25:52)\n[h3_qq_gen]   状态: None  ()\n[h3_qq_gen] ADV_B_20260924_0710_R31__v10__B_run_B_0925052552 未成功出片：TIMEOUT []\nTIMEOUT|ADV_B_20260924_0710_R31__v10__B_run_B_0925052552\n\n[错误] 1 条抽样未成功：['ADV_B_20260924_0710_R31__v10__B_run_B_0925052552']",
     "by": "b_new_format",
     "host": "DESKTOP-FKEUGLS"
   }
