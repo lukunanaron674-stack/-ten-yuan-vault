@@ -1,0 +1,274 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "task_id": "MOUSE_B_20260924_1505_R39",
+  "task_version": "v1.0",
+  "parent_task_id": "ADV_B_20260924_1408_R38",
+  "created_at": "2026-09-24T15:05:36+08:00",
+  "status": "text_ready_image_binding_pending",
+  "project": "黎黎隆",
+  "video_mode": "single_character_narrative",
+  "duration_seconds_range": [
+    10,
+    11
+  ],
+  "planned_duration_seconds": 11,
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "scene_asset_id": "SCENE-02",
+  "reference_view": {
+    "type": "both",
+    "primary": "half_body_dynamic",
+    "primary_source": "MOUSE-EAR-MUTANT-001_H3半身动态四宫格_v2.0.png",
+    "secondary": "full_body_identity",
+    "secondary_source": "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "picture_1_binding": null,
+    "picture_2_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-02_森林湖泊_双色主导.png",
+    "picture_2_blob": "249b3a0f00aa894772d1049e800f4813723184df",
+    "identity_validation_status": "pending_image_validation",
+    "scene_reference_status": "available_by_github_path",
+    "visual_geometry_validation": "pending_work_visual_check",
+    "needs_environment_inference": true
+  },
+  "source_classification": {
+    "confirmed": [
+      {
+        "source": "B-H3 task template v1.2",
+        "blob": "7ae05c07e14008c722433d8008cc6a4aa064cc2f",
+        "fact": "10-11 seconds, one prompt, two executions"
+      },
+      {
+        "source": "B-H3 time/audio rule v1.2",
+        "blob": "c830cdc044f4b570128b36b648965653341a7b9d",
+        "fact": "fixed six-beat timeline, fixed camera by default, audio is non-MV"
+      },
+      {
+        "source": "character pool v1.5",
+        "blob": "59810586b7b8ada9c9a263975a4769b3c4f8ca7a",
+        "fact": "mouse character is text_task_eligible but pending image validation"
+      },
+      {
+        "source": "mouse identity JSON",
+        "blob": "7a2d2e39fc053373069bcf7b51fd7c86f272952d",
+        "fact": "identity locks, reference view types and action limits"
+      },
+      {
+        "source": "scene pool v1",
+        "blob": "26384b61a8ef8314cf8b5cee81934beed846c021",
+        "fact": "SCENE-02 path, blob and warm-sky/cool-lake semantic"
+      },
+      {
+        "source": "B1 R38 audit",
+        "commit": "2f310f7e72a4df59f1ef7c54c096079f2f377cbc",
+        "fact": "mouse images remain unbound; 13 scene paths remain indexed"
+      }
+    ],
+    "candidate_hypotheses": [
+      {
+        "source": "B2 mouse × SCENE-02",
+        "commit": "85305c1b4803fde789480c1d01ec37d5739de715",
+        "use": "retained only the hypothesis that a small uncertain lakeside stimulus can lead to an ear-first cautious response"
+      },
+      {
+        "source": "B3 mouse × SCENE-02",
+        "commit": "737f7527bc24cdaac5ffbf725e13abe5de09110e",
+        "use": "retained ear-first then body-response ordering as a pending test, not a confirmed performance result"
+      }
+    ],
+    "excluded_due_to_current_rules": [
+      "visible reflection or reflection-offset event, because the current task forbids clone or mirror-double",
+      "multiple shot sizes, tracking, push-in and lateral camera moves from the older B3 prompt, because the current task defaults to one fixed camera",
+      "two sequential test steps, because the current task allows only one small changed variable",
+      "R38 two-segment four-run structure, replaced by the explicit B-H3-TASK-1.2 one-prompt two-run rule"
+    ]
+  },
+  "subject_definition": {
+    "one_protagonist_only": true,
+    "same_character_once": true,
+    "second_human_figure": false,
+    "description": "One small mouse-ear mutant girl, physically present once, using her registered identity and outfit structure; no visible reflection character."
+  },
+  "retention_analysis": {
+    "identity_lock": "white short hair with eye-covering fringe and small upward curl; large translucent pale-violet mouse-ear mutation structures; quiet cautious expression language",
+    "silhouette_lock": "small slender body inside an oversized pale robe; large ear structures remain the main recognition silhouette",
+    "recognition_parts": "mouse-ear mutation structures, short white hair, diagonal strap and side satchel",
+    "outfit_structure": "oversized pale robe with dark collar, cuffs and hem blocks; diagonal strap remains connected to the existing side satchel",
+    "style_lock": "reference-first two-dimensional drawing language, clean readable shapes and fixed soft light; no generic recoloring"
+  },
+  "changed_variable": {
+    "name": "attention_direction",
+    "before": "attention remains on the forward shoreline direction",
+    "after": "attention turns once toward the lakeside sound",
+    "scope": "only the near mouse ear, then eyes/head, then one small strap press; feet and camera stay fixed"
+  },
+  "dynamic_chain": {
+    "analysis_only": true,
+    "primary": "N8",
+    "secondary": "NZ7",
+    "activated": [
+      "XZ4->5",
+      "Z5->6"
+    ],
+    "relations": [
+      {
+        "phase": "initial_state",
+        "relation": "N稳定",
+        "status": "registered_character_baseline",
+        "visible_translation": "quiet fixed stance"
+      },
+      {
+        "phase": "external_stimulus",
+        "relation": "XZ轻克N",
+        "status": "candidate_hypothesis",
+        "visible_translation": "one localized ripple sound interrupts forward attention"
+      },
+      {
+        "phase": "local_reaction",
+        "relation": "NZ承接刺激",
+        "status": "candidate_hypothesis",
+        "visible_translation": "near mouse ear turns first while body remains still"
+      },
+      {
+        "phase": "response",
+        "relation": "Z补N",
+        "status": "candidate_hypothesis",
+        "visible_translation": "eyes and head follow; one hand steadies the existing strap"
+      },
+      {
+        "phase": "result",
+        "relation": "N与Z收束",
+        "status": "candidate_hypothesis",
+        "visible_translation": "all motion stops in a cautious stable pose"
+      }
+    ],
+    "start_change_result": "quiet forward attention → one lakeside sound redirects sensory attention → ear, gaze and strap settle into one stable response",
+    "result_status": "hypothesis_pending_work_output"
+  },
+  "time_beats": [
+    {
+      "time": "0-2s",
+      "beat": "Starting state: she stands quietly facing along the shore; hands relaxed near the existing strap and satchel."
+    },
+    {
+      "time": "2-4s",
+      "beat": "Only external stimulus: one soft localized ripple sound comes from the lake; no visible source is added."
+    },
+    {
+      "time": "4-6s",
+      "beat": "Local reaction: only the mouse ear nearer the lake turns; torso, feet and hands remain still."
+    },
+    {
+      "time": "6-8s",
+      "beat": "Eyes follow, then the head turns slightly toward the same sound."
+    },
+    {
+      "time": "8-10s",
+      "beat": "One hand makes one small controlled press on the existing diagonal strap."
+    },
+    {
+      "time": "10-11s",
+      "beat": "All motion stops; turned ear, gaze and secured strap form the result."
+    }
+  ],
+  "shot_grammar": {
+    "shot": "fixed eye-level medium shot, three-quarter side view",
+    "camera": "locked camera and fixed focal length",
+    "lighting": "fixed soft diffuse reference lighting",
+    "movement": "none",
+    "composition": "keep mouse-ear structures, eyes, head, upper body, diagonal strap and side satchel readable; use Picture 2 only for same scene identity and supported composition",
+    "spatial_continuity": "one SCENE-02 space, one screen direction, no new angle or reverse space"
+  },
+  "h3_prompt": "Subject: Vertical 9:16, one continuous 11-second single-character narrative. Show exactly one physical instance of the mouse-ear mutant girl from Picture 1. Preserve her short white hair with eye-covering fringe and small upward curl, large translucent pale-violet mouse-ear mutation structures, small slender body, oversized pale robe, dark collar, sleeve cuffs and hem blocks, diagonal strap and side satchel. Keep the identity, body proportions, recognition parts, outfit connections, original materials and reference colors unchanged.\n\nMovement: From 0 to 2 seconds she stands quietly on visually supported lakeside ground, facing along the shore, with both hands relaxed near the existing strap and satchel. From 2 to 4 seconds one soft localized water ripple sound comes from the lake; no visible creature or person causes it. From 4 to 6 seconds only the mouse ear nearer the lake turns toward the sound while her torso, feet and hands remain still. From 6 to 8 seconds her eyes follow, then her head turns only slightly in the same direction. From 8 to 10 seconds one hand makes a small controlled press on the existing diagonal strap; no step and no new gesture follows. From 10 to 11 seconds every motion stops, leaving the turned ear, gaze and lightly secured strap as one clear result.\n\nScene: Picture 2 defines the same SCENE-02 forest-lake identity, existing elements, spatial continuity, warm-sky and cool-lake color relationship, and original drawing language. Use only ground, water, trees, atmospheric depth and negative space actually supported by the bound scene image. Do not show a character reflection and do not invent a bridge, dock, building, rock, root, sign, rail, animal, object or second path.\n\nCamera: One locked eye-level medium shot in a fixed three-quarter side view for the entire sequence. Keep the mouse-ear structures, eyes, head, upper body, diagonal strap and side satchel readable in the same composition. Fixed framing, fixed focal length, no push-in, no pull-back, no pan, no tilt, no tracking, no cut, no transition and no split-screen composition.\n\nLighting: Preserve the bound reference lighting and palette. Use fixed soft diffuse light for the entire shot. No weather change, no sudden color shift, no new glow and no recoloring of the character or environment.\n\nAtmosphere: Clear readable two-dimensional shapes, clean reference-consistent line-and-plane language, restrained hand-drawn motion and quiet lakeside depth. Character charm comes from the sensitive ear reacting before the eyes and head, followed by one small self-steadying hand action. Keep the mood cautious, calm and observant rather than dramatic.\n\nAudio: Ambient soundscape is soft lakeside air, faint leaves, low water presence, one localized gentle ripple, minimal robe and strap rustle, and quiet natural spatial reverb. Emotional sound cue is one restrained suspended non-lyrical tone that becomes slightly clearer during the ear turn and fades when the pose settles, with no strong beat. Audio only supports space, action readability and emotion; it does not drive editing and does not create a music-video structure. If the H3 node does not support audio, treat this as post-production sound design only.\n\nNegative: no duplicate character, no second human figure, no split screen, no clone or mirror-double, no character reflection, no extra limbs, no text overlay, no watermark, no abrupt redesign, no additional person or creature, no rabbit ears, no wings, no tail, no horns, no armor, no weapon, no fitted battle costume, no adult muscular redesign, no new prop, no invented environmental structure, no camera movement, no cut, no transition, no weather change, no abrupt color change, no lyrics, no strong beat, no beat-synced edit, no montage, no MV editing, no glossy 3D rendering.",
+  "audio_design": {
+    "ambient_soundscape": "soft lakeside air, faint leaves, low water presence, one localized gentle ripple, minimal robe and strap rustle, quiet natural spatial reverb",
+    "emotional_sound_cue": "one restrained suspended non-lyrical tone, slightly clearer during the ear turn and fading when the pose settles; no strong beat",
+    "audio_role": "support spatial orientation, the ear-first action order and cautious emotion only; no music-video editing; if H3 has no audio support, retain as post-production sound design"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "duration_seconds_range": [
+      10,
+      11
+    ],
+    "identical_prompt_and_inputs_required": true,
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "seed_policy": "record real seed_A/seed_B only if Work returns or supports them; otherwise retain first_execution/second_execution labels",
+    "compare_axes": [
+      "character_consistency",
+      "ear_first_action_readability",
+      "camera_stability",
+      "atmosphere_fit",
+      "no_duplicate_character",
+      "outfit_and_satchel_continuity"
+    ]
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no character reflection",
+    "no additional person or creature",
+    "no camera movement",
+    "no weather change",
+    "no abrupt color change",
+    "no MV editing"
+  ],
+  "must_keep": [
+    "character identity",
+    "small body proportions",
+    "mouse-ear mutation structures",
+    "short white hair",
+    "oversized pale robe",
+    "diagonal strap and side satchel connection",
+    "SCENE-02 forest-lake identity",
+    "warm-sky and cool-lake relationship",
+    "fixed camera and fixed soft light"
+  ],
+  "must_avoid": [
+    "visible reflection character",
+    "second protagonist",
+    "four-quadrant output interpreted as four people",
+    "rabbit-ear redesign",
+    "tail, horns, wings, armor or weapon",
+    "new prop or invented environmental structure",
+    "step or large body movement",
+    "camera movement or cut",
+    "lyrics, strong beat or MV structure"
+  ],
+  "validation_target": {
+    "character_consistency": "pending_work_output",
+    "action_readability": "pending_work_output",
+    "camera_stability": "pending_work_output",
+    "atmosphere_fit": "pending_work_output",
+    "no_duplicate_character": "pending_work_output",
+    "identity_binding": "pending_image_validation",
+    "scene_geometry": "pending_work_visual_check"
+  },
+  "version_tracking": {
+    "rule_version": "B-H3-TASK-1.2",
+    "previous_task": "ADV_B_20260924_1408_R38",
+    "before": "R38 used two continuous 15-second segments and four planned runs.",
+    "after": "R39 uses one 11-second fixed-shot prompt with two planned executions under the updated task schema.",
+    "confounders": [
+      "character and scene change from R38",
+      "mouse images remain unbound",
+      "SCENE-02 exact fixed-shot feasibility and ripple event remain unverified",
+      "no Work output exists for comparison"
+    ]
+  },
+  "result_claim": "text_task_only; sampling planned but not rendered; no image-validation, seed, task ID, audio-track or quality claim"
+}
