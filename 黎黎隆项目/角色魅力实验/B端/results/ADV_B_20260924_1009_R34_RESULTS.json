@@ -2,7 +2,7 @@
   "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
   "task_id": "ADV_B_20260924_1009_R34",
   "status": "work_render_completed",
-  "actual_completed_runs": 2,
+  "actual_completed_runs": 4,
   "created_by": "gh_writeback(auto-template, B端 未建占位)",
   "input_validation": {
     "validated_at": "2026-09-24 19:48:49",
@@ -141,7 +141,7 @@
     "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
   },
   "work_writeback": {
-    "updated_at": "2026-09-24 19:48:49",
+    "updated_at": "2026-09-24 19:49:17",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
   },
@@ -175,17 +175,46 @@
           "output_sha256": "4b5083abc6da5e39086a225959a9be35bc9f2664008a30f6d6e0fd5c1389a200"
         },
         "status": "completed"
+      },
+      "B": {
+        "run_A": {
+          "seed": 1023265839,
+          "work_task_id": "ADV_B_20260924_1009_R34__v10__B_run_A_0924183713",
+          "status": "completed",
+          "relay_status": "done",
+          "execution_record": "work_h3_real_run",
+          "rendered_at": null,
+          "elapsed_sec": 765,
+          "output_id": "ADV_B_20260924_1009_R34__v10__B_run_A_00002_.mp4",
+          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260924_1009_R34__v10__B_run_A_00002_.mp4",
+          "output_bytes": 2636934,
+          "output_sha256": "ee5dc3fe990a22d1995867a7278b4584530712672c599ef86770f7daeb937bd9"
+        },
+        "run_B": {
+          "seed": 1054846236,
+          "work_task_id": "ADV_B_20260924_1009_R34__v10__B_run_B_0924183713",
+          "status": "completed",
+          "relay_status": "done",
+          "execution_record": "work_h3_real_run",
+          "rendered_at": null,
+          "elapsed_sec": 765,
+          "output_id": "ADV_B_20260924_1009_R34__v10__B_run_B_00002_.mp4",
+          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260924_1009_R34__v10__B_run_B_00002_.mp4",
+          "output_bytes": 4515862,
+          "output_sha256": "6ad2b976629fd643e2300d74c7a2804cdb8420347e71b3c4b0d7eeb8d5654e32"
+        },
+        "status": "completed"
       }
     }
   },
   "render_claim": {
     "claimed": true,
     "by": "relay-gh@DESKTOP-FKEUGLS",
-    "at": "2026-09-24 19:46:44",
-    "run_key": "ADV_B_20260924_1009_R34__v10__A",
-    "segment": "A",
+    "at": "2026-09-24 19:48:55",
+    "run_key": "ADV_B_20260924_1009_R34__v10__B",
+    "segment": "B",
     "prompt_sha256": null,
-    "prompt_chars": 3813,
+    "prompt_chars": 3557,
     "prompt_source": null,
     "width": 1280,
     "height": 736,
@@ -204,35 +233,35 @@
     ],
     "outputs": [
       {
-        "seed": 1032511579,
-        "work_task_id": "ADV_B_20260924_1009_R34__v10__A_run_A_0924182412",
+        "seed": 1023265839,
+        "work_task_id": "ADV_B_20260924_1009_R34__v10__B_run_A_0924183713",
         "status": "completed",
         "relay_status": "done",
         "execution_record": "work_h3_real_run",
         "rendered_at": null,
-        "elapsed_sec": 781,
-        "output_id": "ADV_B_20260924_1009_R34__v10__A_run_A_00002_.mp4",
-        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260924_1009_R34__v10__A_run_A_00002_.mp4",
-        "output_bytes": 2151798,
-        "output_sha256": "0ab89dbab0dd054ed7003368c4a9c973e602450cdc75197aa08d9572ad86d64b"
+        "elapsed_sec": 765,
+        "output_id": "ADV_B_20260924_1009_R34__v10__B_run_A_00002_.mp4",
+        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260924_1009_R34__v10__B_run_A_00002_.mp4",
+        "output_bytes": 2636934,
+        "output_sha256": "ee5dc3fe990a22d1995867a7278b4584530712672c599ef86770f7daeb937bd9"
       },
       {
-        "seed": 2086974877,
-        "work_task_id": "ADV_B_20260924_1009_R34__v10__A_run_B_0924182412",
+        "seed": 1054846236,
+        "work_task_id": "ADV_B_20260924_1009_R34__v10__B_run_B_0924183713",
         "status": "completed",
         "relay_status": "done",
         "execution_record": "work_h3_real_run",
         "rendered_at": null,
-        "elapsed_sec": 781,
-        "output_id": "ADV_B_20260924_1009_R34__v10__A_run_B_00002_.mp4",
-        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260924_1009_R34__v10__A_run_B_00002_.mp4",
-        "output_bytes": 3351346,
-        "output_sha256": "4b5083abc6da5e39086a225959a9be35bc9f2664008a30f6d6e0fd5c1389a200"
+        "elapsed_sec": 765,
+        "output_id": "ADV_B_20260924_1009_R34__v10__B_run_B_00002_.mp4",
+        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260924_1009_R34__v10__B_run_B_00002_.mp4",
+        "output_bytes": 4515862,
+        "output_sha256": "6ad2b976629fd643e2300d74c7a2804cdb8420347e71b3c4b0d7eeb8d5654e32"
       }
     ],
     "outputs_local_abs": [
-      "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260924_1009_R34__v10__A_run_A_00002_.mp4",
-      "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260924_1009_R34__v10__A_run_B_00002_.mp4"
+      "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260924_1009_R34__v10__B_run_A_00002_.mp4",
+      "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260924_1009_R34__v10__B_run_B_00002_.mp4"
     ],
     "outputs_uploaded_to_github": [],
     "output_evidence_policy": {
