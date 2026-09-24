@@ -1,0 +1,405 @@
+{
+  "task_id": "MOUSE_B_20260924_1110_R35",
+  "task_version": "v1.0",
+  "created_at": "2026-09-24T11:10:00+08:00",
+  "status": "text_ready_image_binding_pending",
+  "video_mode": "single_character_continuous_narrative_non_mv",
+  "cast": {
+    "count": 1,
+    "character_id": "MOUSE-EAR-MUTANT-001",
+    "display_name": "鼠耳异变少女",
+    "physical_instances": 1,
+    "other_people_allowed": false
+  },
+  "references": {
+    "picture_1": {
+      "role": "character_identity_only",
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "reference_bundle": [
+        {
+          "view": "half_body_dynamic",
+          "source_file": "MOUSE-EAR-MUTANT-001_H3半身动态四宫格_v2.0.png",
+          "library_file_id": "libfile_36caaef442b08191b0acddf57f8d85e2",
+          "github_image_upload": false
+        },
+        {
+          "view": "full_body_identity",
+          "source_file": "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+          "github_image_upload": false
+        }
+      ],
+      "identity_validation_status": "pending_image_validation",
+      "identity_card_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_角色身份ID与十元分析.json",
+      "identity_card_blob": "7a2d2e39fc053373069bcf7b51fd7c86f272952d",
+      "dynamic_asset_index": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/MOUSE-EAR-MUTANT-001_H3_DYNAMIC_ASSET.json",
+      "note": "both source sheets define one physical character; Work must bind and validate real files before rendering"
+    },
+    "picture_2": {
+      "role": "scene_identity_only",
+      "scene_id": "SCENE-01",
+      "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-01_森林湖泊_单色.png",
+      "source_blob": "fcbbd771567ad65327d18248466f24b0f4339638",
+      "availability": "available_by_github_path",
+      "semantic_description": "单色层级；适合建立安静、清晰的角色剪影与单一路径。",
+      "visual_geometry_validation": "pending_work_visual_check",
+      "needs_environment_inference": true
+    }
+  },
+  "subject_definitions": {
+    "character": "one small slender mouse-ear mutant girl with white short hair, translucent pale-violet mouse-ear mutation structures, oversized pale short robe, dark edge blocks, diagonal strap and one side satchel",
+    "environment": "SCENE-01 forest lake with registered monochrome hierarchy, quiet silhouette clarity and a single supported travel direction",
+    "single_instance_rule": "all Picture 1 panels and both identity assets compile to exactly one physical girl"
+  },
+  "retention_analysis": {
+    "retain": [
+      "mouse-girl face, hair, ear mutation, small proportions, robe, strap and one satchel",
+      "one physical instance",
+      "low-amplitude motion",
+      "SCENE-01 identity and original monochrome palette logic",
+      "fixed camera and same axis across A/B",
+      "B begins from one real selected A ending"
+    ],
+    "change": [
+      "character and scene change from R34",
+      "event changes from load/route judgment to natural-sound localization",
+      "camera changes from conditional spatial follow to fully fixed observation"
+    ],
+    "discard": [
+      "R34 adventurer and full-load detour",
+      "R32/R33 reflection test",
+      "visible new sound source",
+      "V35-specific colors/materials",
+      "Che cyan-white energy form"
+    ]
+  },
+  "changed_variable": {
+    "primary": "directional_natural_sound_becomes_one_step_choice",
+    "definition": "left leaf rustle and right water-lap are resolved through ear-first attention, eye/head confirmation and exactly one safe small step",
+    "controls": [
+      "one character",
+      "one scene",
+      "fixed eye-level medium-wide camera",
+      "no visible new sound source",
+      "same prompt within each double draw",
+      "B uses one selected real A ending"
+    ]
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "primary": "N",
+    "secondary": [
+      "NZ"
+    ],
+    "activated": [
+      "Z",
+      "XZ"
+    ],
+    "chain": "N8稳定 → 环境Z4轻触N8→7 → NZ7补N7→8 → Z5生XZ4→5 → N8重新稳定",
+    "relations": [
+      {
+        "direction": "natural directional sound → quiet presence",
+        "relation": "触发/轻克",
+        "observable_evidence": "left ear and right ear turn separately while feet remain planted"
+      },
+      {
+        "direction": "protected attention → quiet presence",
+        "relation": "补",
+        "observable_evidence": "eyes and head confirm direction without panic"
+      },
+      {
+        "direction": "small active choice → internal sensitivity made visible",
+        "relation": "生",
+        "observable_evidence": "one small supported step follows the ear-eye-shoulder chain"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "start",
+        "primary": "N8",
+        "secondary": "NZ7",
+        "direction": "stable",
+        "before": "quiet planted stance",
+        "after": "left ear isolates leaf rustle",
+        "observable_evidence": "one ear turns; body still"
+      },
+      {
+        "stage": "change",
+        "primary": "NZ7",
+        "secondary": "Z5",
+        "direction": "补/生",
+        "before": "two directions unresolved",
+        "after": "eyes and head confirm quieter direction",
+        "observable_evidence": "ear sequence precedes eye and head movement"
+      },
+      {
+        "stage": "result",
+        "primary": "N8",
+        "secondary": "Z5",
+        "direction": "return_to_stability",
+        "before": "attention divided",
+        "after": "one measured step and calm landing",
+        "observable_evidence": "one footfall, satchel settles, both feet plant"
+      }
+    ],
+    "start_change_result": "quiet planted listening → left/right natural sounds are separated by ear-first and eye-head confirmation → one small safe step along supported ground restores calm direction",
+    "hypothesis_status": "pending_execution"
+  },
+  "style": {
+    "style_identity_lock": "Picture 1 and Picture 2 control verified identity, materials, proportions and original palette; source fidelity overrides generic wording.",
+    "visual_expression_variable": "restrained compatible 2D motion, fixed medium-wide composition, quiet negative space, ear-first micro-motion and soft diffuse light only where reference-compatible",
+    "v35_reference_status": "text_wording_reference_only; no output-quality attribution due known workflow/input mismatch"
+  },
+  "segments": [
+    {
+      "segment_id": "A",
+      "duration_seconds": 15,
+      "title": "左右自然声的耳先定位",
+      "scene_reference": {
+        "picture_ref": "Picture 2",
+        "scene_id": "SCENE-01",
+        "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-01_森林湖泊_单色.png",
+        "identity_elements": [
+          "forest lake",
+          "monochrome hierarchy",
+          "quiet silhouette clarity",
+          "single-path semantic"
+        ],
+        "locked": [
+          "location identity",
+          "existing elements",
+          "spatial continuity",
+          "palette logic"
+        ],
+        "variable": [
+          "fixed eye-level medium-wide crop",
+          "bilateral negative space for sound direction"
+        ],
+        "needs_environment_inference": true
+      },
+      "style": {
+        "style_identity_lock": "preserve mouse-girl and SCENE-01 identity, materials and original colors",
+        "visual_expression_variable": "fixed quiet frame with sequential ear-eye-head micro-motion"
+      },
+      "shot": {
+        "shot_size": "medium_wide",
+        "camera_angle": "eye_level_three_quarter_same_axis",
+        "foreground": "existing supported open ground only",
+        "middle_ground": "one full-body girl with both feet visible",
+        "background": "forest-lake layers and mist only if present",
+        "character_position": "slightly off center with negative space on both sides",
+        "negative_space": "left and right sound directions remain readable",
+        "action_start": "quiet planted stance",
+        "observable_change": "left leaf rustle → left ear turns → pause → right water-lap → right ear turns → eyes and head follow",
+        "action_end": "feet and body unchanged; head stops between directions",
+        "camera_move": "fixed; no movement or cut",
+        "spatial_continuity": "establishes pose, ear angles, screen directions and axis for B"
+      },
+      "ambient_soundscape": "quiet forest-lake air, one brief screen-left leaf rustle, a short near-silent gap, then soft screen-right water-lap and faint cloth settling",
+      "emotional_sound_cue": "very soft non-lyrical breath-like tone begins after the second ear turns and fades when the head stops",
+      "audio_role": "make directional attention legible without implying a second actor or MV rhythm",
+      "prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds.\n\nSTYLE IDENTITY LOCK: preserve the exact identity, drawing language, proportions, materials and original colors of the approved Picture 1 mouse-ear mutant girl references. Keep her white short hair with eye-covering fringe and small upward curl, large translucent pale-violet mouse-ear mutation structures, small slender body, oversized pale short robe, dark collar, cuffs and hem blocks, diagonal strap, one side satchel, pale socks and oversized dark shoes. Preserve the verified identity, existing elements, spatial continuity and monochrome palette logic of Picture 2. Reference fidelity overrides generic style wording.\n\nVISUAL EXPRESSION VARIABLE: use restrained readable 2D motion, compatible variable-weight linework, reference-consistent thin shading, soft diffuse light and generous quiet negative space only where compatible with the source images. The visual experiment is directional listening: the ear structures react first, then the eyes, while the body remains still. Do not impose colors or materials absent from the references.\n\nCHARACTER (Picture 1): show exactly one physical instance of the established mouse-ear mutant girl. The half-body dynamic sheet and full-body identity sheet describe the same one person, never four people. Keep both feet planted and use only small head, eye and ear movements.\n\nENVIRONMENT (Picture 2): preserve SCENE-01 as the same forest-lake location with its registered monochrome hierarchy and single-path clarity. Picture 2 controls location identity and palette logic, not one mandatory crop. Use only visible, supported ground, water, tree layers, mist and open space. Do not invent a visible animal, person, machine, building, bridge, dock, sign, lamp or sound-producing object.\n\nCAMERA AND COMPOSITION: one fixed eye-level medium-wide three-quarter view. Keep the whole character and both feet readable in the middle ground, with supported open ground in the foreground and forest-lake depth behind her. Place her slightly off center, leaving quiet negative space on both sides for the directional sound change. No push, pan, tilt, cut or axis change.\n\nACTION: begin with the girl standing quietly on the existing supported ground beside the forest lake, hands close to her robe and both feet still. A light natural breeze first moves the nearby leaves on screen-left; her screen-left mouse-ear structure turns a small angle toward that sound while the other ear remains neutral. The leaf sound fades and a soft water-lap becomes clearer on screen-right. Her screen-right ear then turns toward the water. Only after both ear reactions are readable do her eyes move from left to right; her head follows by a few degrees and stops between the two directions. End with her body and feet unchanged, listening rather than fleeing.\n\nAUDIO DESIGN: quiet forest-lake air, one brief screen-left leaf rustle, a short near-silent gap, then soft screen-right water-lap and faint cloth settling. Use one very soft non-lyrical breath-like tone that begins after the second ear turns and fades when her head stops. Audio establishes direction and cautious attention; it is not a song, beat track or MV cue.\n\nNEGATIVE: no second character, duplicate girl, clone, split screen, four-person character-sheet output, reflection person, shadow double or autonomous silhouette; no rabbit ears, ordinary replacement ears, tail, horns, wings, armor, weapon, new bag or changed robe; no visible animal or invented sound source; no walking, running, jumping, dancing, panic, exaggerated recoil or lip-sync; no camera movement, reframing, cut, axis flip or montage; no location replacement, glossy 3D render, hard synthetic digital edges, cyan-white energy humanoid, text, subtitle, logo or watermark."
+    },
+    {
+      "segment_id": "B",
+      "duration_seconds": 15,
+      "title": "确认方向后的一步选择",
+      "dependency": "same Work-selected actual Segment A ending frame",
+      "scene_reference": {
+        "picture_ref": "Picture 2",
+        "scene_id": "SCENE-01",
+        "source_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-01_森林湖泊_单色.png",
+        "identity_elements": [
+          "same forest lake",
+          "same monochrome hierarchy",
+          "same supported ground direction"
+        ],
+        "locked": [
+          "same location",
+          "same camera side",
+          "same screen direction",
+          "same lighting and palette logic"
+        ],
+        "variable": [
+          "exactly one small step along verified supported ground"
+        ],
+        "needs_environment_inference": true
+      },
+      "style": {
+        "style_identity_lock": "preserve same mouse-girl, clothing state and SCENE-01 identity",
+        "visual_expression_variable": "same fixed frame; ear-eye-shoulder-step chain only"
+      },
+      "shot": {
+        "shot_size": "medium_wide",
+        "camera_angle": "same_fixed_eye_level_three_quarter",
+        "foreground": "same supported ground",
+        "middle_ground": "one girl taking one small route-parallel step",
+        "background": "continuous forest-lake layers",
+        "character_position": "inherits A and remains inside established frame",
+        "negative_space": "quieter right-hand direction stays open",
+        "action_start": "inherits A pose and ear/head state",
+        "observable_change": "ears settle right → eyes confirm → head/shoulders align → satchel pressed closer → exactly one small step → robe and satchel settle",
+        "action_end": "both feet planted, ears relaxed but attentive",
+        "camera_move": "fixed; no movement or cut",
+        "spatial_continuity": "must inherit one actual A ending without axis flip or invented reverse terrain"
+      },
+      "ambient_soundscape": "continuous forest-lake air and right water-lap, one soft cloth press, one small footfall, then robe-and-strap settling",
+      "emotional_sound_cue": "breath-like non-lyrical tone opens slightly at weight shift and resolves on the planted landing",
+      "audio_role": "support decision and landing, not a beat-synced edit or MV cue",
+      "prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds, continuing directly from the Work-selected real ending frame of Segment A.\n\nSTYLE IDENTITY LOCK: preserve the exact same Picture 1 mouse-ear mutant girl, including face, white short hair, translucent pale-violet mouse-ear mutation structures, small slender proportions, oversized pale short robe, dark edge blocks, diagonal strap, single side satchel, socks and oversized dark shoes. Preserve the same Picture 2 forest-lake identity, existing elements, monochrome hierarchy, lighting direction and original palette logic. Reference fidelity overrides generic style wording.\n\nVISUAL EXPRESSION VARIABLE: continue restrained readable 2D motion, compatible variable-weight linework, reference-consistent thin shading, soft diffuse light and quiet negative space. The decision becomes visible through a small sequence from ears to eyes to shoulders to one step. Do not add colors or materials that conflict with either reference.\n\nCHARACTER (Picture 1): show the same one physical girl from Segment A. Inherit the selected real A ending pose, ear angles, head direction, clothing state and satchel position. Her four reference views remain one identity.\n\nENVIRONMENT (Picture 2): remain in the same SCENE-01 space and use only an existing visually supported direction along the ground. Maintain the same forest-lake layers and monochrome palette logic. If Picture 2 does not support a safe visible step direction, Work must not render this segment rather than inventing new terrain.\n\nCAMERA AND COMPOSITION: keep the same fixed eye-level medium-wide three-quarter frame and the same spatial axis from Segment A. Preserve foreground open ground, the character in the middle ground and forest-lake depth behind her. The chosen step must stay inside the established frame. No camera movement or cut.\n\nACTION: from the held Segment A ending, the screen-left leaf rustle subsides while the screen-right water-lap remains soft and regular. Her two mouse-ear structures settle toward the quieter right-hand direction. Her eyes confirm that direction, then her head and shoulders align by a small amount. She shifts her weight without lifting both feet, slides the existing side satchel slightly closer with one forearm, and takes exactly one small step along the visually supported ground, parallel to the safe existing route rather than toward the water. The robe hem and satchel make one restrained follow-through and settle. End with both feet planted again, ears relaxed but attentive, and the same single character continuing calmly.\n\nAUDIO DESIGN: continue the same forest-lake air and screen-right water-lap, add one soft cloth press at the satchel, one small footfall and a brief robe-and-strap settling sound. The breath-like non-lyrical tone opens slightly at the weight shift and resolves when both feet plant. Audio supports the decision and landing; it is not a song cue, beat-synced edit or MV structure.\n\nNEGATIVE: no second character, duplicate girl, clone, split screen, four-person character-sheet output, reflection person, shadow double or autonomous silhouette; no rabbit ears, ordinary replacement ears, tail, horns, wings, armor, weapon, new bag or changed robe; no visible animal, person or invented sound source; no step toward or into water, extra steps, run, jump, dance, panic, exaggerated recoil or lip-sync; no camera movement, reframe, cut, axis flip, reverse terrain or montage; no invented bridge, dock, stones, roots, building, sign, lamp or path; no location replacement, glossy 3D render, hard synthetic digital edges, cyan-white energy humanoid, text, subtitle, logo or watermark."
+    }
+  ],
+  "shot_grammar": {
+    "continuity": "A identifies two natural sound directions while the body stays planted; B inherits one real A ending and converts the quieter direction into exactly one supported step.",
+    "edit_rule": "one fixed continuous shot per segment; no cuts, montage, push, pan, tilt or MV timing",
+    "fallback": "if Picture 2 cannot support the full body plus a safe one-step direction in one frame, Work must not render B; do not invent terrain"
+  },
+  "audio_design": {
+    "mode": "per_segment",
+    "generation_status": "design_only_until_work_confirms_audio_capability",
+    "rule": "if H3 cannot generate sound, ambient and emotional cues become post-production sound design only"
+  },
+  "sampling_plan": {
+    "total_planned_runs": 4,
+    "actual_completed_runs": 0,
+    "prompt_identical_within_segment": true,
+    "segments": {
+      "A": {
+        "run_A": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        },
+        "run_B": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        }
+      },
+      "B": {
+        "dependency": "same Work-selected actual A ending frame",
+        "run_A": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        },
+        "run_B": {
+          "seed": null,
+          "work_task_id": null,
+          "status": "planned"
+        }
+      }
+    },
+    "seed_policy": "record a real integer only if the Work interface returns/supports it after execution; otherwise null",
+    "task_id_policy": "record each real Work task ID separately after execution; never fabricate"
+  },
+  "contradiction_report": {
+    "status": "resolved_before_handoff",
+    "checks": [
+      {
+        "issue": "directional sound could imply unseen actor",
+        "resolution": "use only leaves, breeze and water; forbid voices, animals and visible new sources"
+      },
+      {
+        "issue": "half-body four-panel reference could become four people",
+        "resolution": "explicitly compile all panels and both assets into one physical identity"
+      },
+      {
+        "issue": "scene geometry is not visually verified by B-side",
+        "resolution": "mark inference pending and block B if one safe visible step is unsupported"
+      },
+      {
+        "issue": "audio could become MV timing",
+        "resolution": "sound triggers observable actions but no beat cuts, song or montage"
+      }
+    ]
+  },
+  "negative_constraints": [
+    "no second character, duplicate, clone, split screen or four-person output",
+    "no reflection person, shadow double or autonomous silhouette",
+    "no rabbit ears, ordinary replacement ears, tail, horns, wings, armor or weapons",
+    "no visible animal, person, voice or invented sound-source object",
+    "no changed robe, extra bag, prop or body structure",
+    "no more than one step in B and no step toward water",
+    "no camera movement, reframe, cut, axis flip or montage",
+    "no invented bridge, dock, stones, roots, buildings, signs, lamps or paths",
+    "no identity, material or palette redesign",
+    "no cyan-white Che energy humanoid",
+    "no MV editing, lip-sync or beat-synced motion",
+    "no text, subtitle, logo or watermark",
+    "no fabricated seed, task ID, render, audio track or validation result"
+  ],
+  "work_gate": {
+    "picture_1_status": "pending_image_validation",
+    "picture_2_status": "GitHub path/blob recorded; exact full-body framing and one-step ground direction not visually verified by B-side",
+    "required_checks": [
+      "locate and byte-verify both declared mouse-girl files",
+      "bind approved Picture 1 identity inputs; all panels remain one person",
+      "verify face, hair, ear mutation structures, robe, strap, satchel and proportions",
+      "bind and inspect SCENE-01 from the exact GitHub path/blob",
+      "confirm one fixed 9:16 medium-wide frame can include full body, both feet and a safe one-step direction",
+      "confirm no visible or audible cue reads as another character",
+      "select one actual A ending for both B runs",
+      "verify final prompt and every LoadImage node belong to R35",
+      "run identical inputs twice per segment",
+      "record only actual returned seeds/task IDs"
+    ],
+    "render_decision": "blocked until character and environment geometry validation; text task is not render approval"
+  },
+  "version_tracking": {
+    "rule_version": "B-RULE-v1.2",
+    "prompt_schema": "video_tenyuan_prompt_schema_v1.3",
+    "skill_chain_version": "H3动画四技能执行链_v1.0",
+    "audio_design_version": "v1.0",
+    "sampling_version": "double_draw_v1.0",
+    "previous_task": "ADV_B_20260924_1009_R34",
+    "parent_task_id": "ADV_B_20260924_1009_R34",
+    "before": "R34 used ADV-001 and SCENE-03 to test whether a complete load changes route around an inferred restriction.",
+    "after": "R35 uses the mouse-ear mutant girl and SCENE-01 to test whether bilateral natural sounds produce an ear-first attention chain and exactly one safe step in a fixed frame.",
+    "same": [
+      "two continuous 15-second segments",
+      "one physical character",
+      "one official scene image",
+      "non-MV",
+      "same-prompt run_A/run_B per segment",
+      "audio design only until capability confirmed",
+      "v1.3 style identity/expression separation",
+      "B depends on one real A ending"
+    ],
+    "confounders": [
+      "character and scene both change from R34",
+      "mouse-girl source files remain pending Work validation",
+      "SCENE-01 exact full-body/step geometry remains unverified",
+      "no actual H3 output exists for R34 comparison"
+    ],
+    "upstream_consumed": [
+      {
+        "source": "B1_素材索引_20260924_1102",
+        "commit": "eb6dd0bb13402158da63a8ab430f9fd3a1c572b7",
+        "use": "confirmed latest R34 baseline and preserved unresolved image/geometry gates"
+      },
+      {
+        "source": "character_pool_index v1.5",
+        "blob": "59810586b7b8ada9c9a263975a4769b3c4f8ca7a",
+        "use": "selected a text-eligible registered character and both-view action limits"
+      },
+      {
+        "source": "scene_pool_13_index v1",
+        "blob": "unknown_at_compile_time",
+        "use": "selected official SCENE-01 path, blob and monochrome single-path semantic"
+      },
+      {
+        "source": "V35 1194-character text",
+        "commit": null,
+        "use": "adaptable wording only; no output-quality attribution"
+      }
+    ],
+    "upstream_missing": [
+      {
+        "source": "post-R34 Work render/validation",
+        "status": "not_found_at_compile_time",
+        "handling": "no result, seed, task ID, picture pass or quality claim invented"
+      }
+    ],
+    "result_claim": "text_task_only; no render, image validation, seed, task ID, audio track or visual-quality conclusion"
+  }
+}
