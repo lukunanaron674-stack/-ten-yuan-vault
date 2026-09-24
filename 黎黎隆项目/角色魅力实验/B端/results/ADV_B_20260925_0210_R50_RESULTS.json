@@ -2,33 +2,38 @@
   "schema_version": "B-H3-RESULT-1.3",
   "task_id": "ADV_B_20260925_0210_R50",
   "parent_task_id": "MOUSE_B_20260925_0110_R49",
-  "status": "work_rendering",
+  "status": "done_rendered_pending_visual_audio_review",
   "planned_runs": 2,
-  "actual_completed_runs": 0,
+  "actual_completed_runs": 2,
   "card_id": null,
   "input_gate": {
     "character_source": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
     "character_declared_sha256": "dd81d92d9f565831c8e924aa2ff36b3fd3cf85b526376971b51ec4f1dd43d1c4",
-    "picture_1_actual_bound_path": null,
-    "picture_1_actual_sha256": null,
-    "picture_1_dimensions": null,
-    "same_character_visual_verified": null,
+    "picture_1_actual_bound_path": "D:\\H3\\pool\\character_refs\\ADV-001_冒险者_H3_sheet_001.jpg",
+    "picture_1_actual_sha256": "4284a72886e485ffc18fa0672207599bd244e886cd600ca5531d18f133c8e10c",
+    "picture_1_dimensions": {
+      "width": 941,
+      "height": 1672
+    },
+    "same_character_visual_verified": false,
     "h3_four_grid_layout_verified": null,
     "scene_registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
     "scene_blob": "eb34acce753735d96565bc0108d502dfdc775088",
     "scene_actual_bound_path": null,
     "scene_sha256": null,
     "scene_dimensions": null,
-    "scene_geometry_check": null,
+    "scene_geometry_check": "NOT_VERIFIED_IN_PRIMARY_R50_EXECUTION",
     "lateral_open_ground_verified": null,
     "ordinary_cycle_element_verified": null
   },
   "workflow": {
-    "workflow_id": null,
-    "fps_num": null,
-    "fps_den": null,
-    "total_frames": null,
-    "duration_seconds_actual": null
+    "workflow_id": "H3_Work_ComfyUI_8step",
+    "fps_num": 24,
+    "fps_den": 1,
+    "total_frames": 240,
+    "duration_seconds_actual": 10,
+    "output_dimensions": "1280x736",
+    "steps": 8
   },
   "audio_design": {
     "ambient_soundscape": "low mechanical-airport room tone, restrained ventilation, one ordinary non-alarm cycle cue, slight equipment creak, one lateral boot contact and one backpack-settling sound",
@@ -36,7 +41,7 @@
     "audio_role": "support spatial margin, weight transfer and restrained emotion only; do not drive cuts; not MV editing",
     "actual_audio_track_status": "UNKNOWN_PENDING_WORK"
   },
-  "prompt_hash": null,
+  "prompt_hash": "48757348488a47e1889a32beff1cd04d45ef9b1ab4bd26d9b2c5ef3b38289231",
   "nodes": [
     {
       "node_id": "n0_stable_valid_position",
@@ -83,24 +88,24 @@
   ],
   "runs": {
     "run_A": {
-      "seed": null,
-      "execution_record": "pending_first_execution",
-      "work_task_id": null,
-      "output_id": null,
-      "first_frame": null,
-      "node_frames": [],
+      "seed": 1886174529,
+      "execution_record": "first execution",
+      "work_task_id": "ADV_B_20260925_0210_R50_run_A_0925062623",
+      "output_id": "ADV_B_20260925_0210_R50_run_A_00001_.mp4",
+      "output_sha256": "b1e6bf3bfadebedddb541e8eb8756d402516e2563f00f0b299c079437f632111",
+      "output_bytes": 1115381,
       "audio_track": "UNKNOWN",
-      "status": "planned"
+      "status": "done"
     },
     "run_B": {
-      "seed": null,
-      "execution_record": "pending_second_execution",
-      "work_task_id": null,
-      "output_id": null,
-      "first_frame": null,
-      "node_frames": [],
+      "seed": 1846278328,
+      "execution_record": "second execution",
+      "work_task_id": "ADV_B_20260925_0210_R50_run_B_0925062623",
+      "output_id": "ADV_B_20260925_0210_R50_run_B_00001_.mp4",
+      "output_sha256": "23113e5f9b8c650280e698c695038363b9b3e5b5455eb39b06929c8eba9cd19c",
+      "output_bytes": 943665,
       "audio_track": "UNKNOWN",
-      "status": "planned"
+      "status": "done"
     }
   },
   "prior_failure_evidence": {
@@ -126,8 +131,16 @@
     "status": "pending",
     "responses": []
   },
-  "render_claim": null,
-  "audio_claim": null,
+  "render_claim": {
+    "claimed": true,
+    "source_commit": "fca8e267b5a77b84e377ee9fed1dd219cf6055cf",
+    "completed_runs": 2,
+    "restored_after_stale_frame_writeback": true
+  },
+  "audio_claim": {
+    "claimed": false,
+    "status": "UNKNOWN_PENDING_REVIEW"
+  },
   "claimed_by": "relay-gh@DESKTOP-FKEUGLS",
   "claimed_at": "2026-09-25 06:26:21",
   "claimed_run_key": "ADV_B_20260925_0210_R50",
@@ -153,7 +166,7 @@
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0210_R50/run_A_key_mid.jpg",
-        "kb": 128.0
+        "kb": 128
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0210_R50/run_A_key_tail.jpg",
@@ -174,5 +187,32 @@
     ],
     "total_kb": 724.3,
     "note": "画面证据 = 每次抽样首/中/尾 3 帧（默认），与 render_claim.outputs[].output_sha256 对应的成片一一对应；成片本体 2-4MB 未入 git，留在 D:/H3/outputs/comfyui/，需要原片按 sha256 索取"
+  },
+  "visual_review": {
+    "reviewer": "Codex frame inspection",
+    "reviewed_at": "2026-09-25T07:10:31+08:00",
+    "evidence_scope": "six GitHub keyframes only; not full motion or audio",
+    "verdict": "FAILED_HARD_SINGLE_CHARACTER_CONSTRAINT",
+    "confirmed_observations": [
+      "run_A and run_B contain additional human silhouettes in the airport background",
+      "run_B contains an obvious background group and reflection-like repeated figures",
+      "run_A and run_B use materially different spatial layouts and equipment density",
+      "the foreground ADV instance remains broadly recognizable in all six frames"
+    ],
+    "not_claimed": [
+      "motion timing between keyframes",
+      "audio track quality",
+      "same-character formal validation against the declared FE5A source",
+      "SCENE-05 geometry equivalence"
+    ],
+    "next_single_variable_fix": "zero background human occupancy and zero reflection-person occupancy"
+  },
+  "integrity_note": {
+    "issue": "a later keyframe writeback overwrote done fields with a stale work_rendering snapshot",
+    "evidence_commits": [
+      "fca8e267b5a77b84e377ee9fed1dd219cf6055cf",
+      "c485dd9e42d6d4ef552cc6e81e57ddedd6ec7970"
+    ],
+    "repair": "merged the proven 2/2 render claim with the later six-frame evidence; no seed or task ID was invented"
   }
 }
