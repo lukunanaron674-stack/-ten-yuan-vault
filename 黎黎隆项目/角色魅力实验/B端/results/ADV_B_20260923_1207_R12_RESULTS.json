@@ -1,8 +1,8 @@
 {
   "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
   "task_id": "ADV_B_20260923_1207_R12",
-  "status": "work_render_completed",
-  "actual_completed_runs": 1,
+  "status": "awaiting_work_execution",
+  "actual_completed_runs": 0,
   "created_by": "gh_writeback(auto-template, B端 未建占位)",
   "input_validation": {
     "validated_at": "2026-09-24 19:38:00",
@@ -129,34 +129,21 @@
     "note": "字节级核验已自动完成；「视觉/几何」项需人眼或模型判定，已把参考图上传到 results/inputs/<card>/ 供目视"
   },
   "work_writeback": {
-    "updated_at": "2026-09-24 19:41:08",
+    "updated_at": "2026-09-24 19:41:22",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
   },
   "sampling_plan": {
     "segments": {
       "A": {
-        "status": "completed",
-        "single": {
-          "seed": null,
-          "work_task_id": null,
-          "status": "completed",
-          "relay_status": "done",
-          "execution_record": "work_h3_real_run",
-          "rendered_at": "2026-09-23 12:32:32",
-          "elapsed_sec": 420,
-          "output_id": "ADV_B_20260923_1207_R12_00001_.mp4",
-          "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260923_1207_R12_00001_.mp4",
-          "output_bytes": 3072434,
-          "output_sha256": "18956bcf3c985cdfaf620bfee0f3f33a26ef9b35be97648953e0fa177e570232"
-        }
+        "status": "completed"
       }
     }
   },
   "render_claim": {
-    "claimed": true,
+    "claimed": false,
     "by": "relay-gh@DESKTOP-FKEUGLS",
-    "at": "2026-09-24 19:41:08",
+    "at": "2026-09-24 19:38:02",
     "run_key": "ADV_B_20260923_1207_R12",
     "segment": "A",
     "prompt_sha256": null,
@@ -177,24 +164,8 @@
       "ADV-001_冒险者_H3_sheet_001.jpg",
       "ref0.png"
     ],
-    "outputs": [
-      {
-        "seed": null,
-        "work_task_id": null,
-        "status": "completed",
-        "relay_status": "done",
-        "execution_record": "work_h3_real_run",
-        "rendered_at": "2026-09-23 12:32:32",
-        "elapsed_sec": 420,
-        "output_id": "ADV_B_20260923_1207_R12_00001_.mp4",
-        "output_file": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260923_1207_R12_00001_.mp4",
-        "output_bytes": 3072434,
-        "output_sha256": "18956bcf3c985cdfaf620bfee0f3f33a26ef9b35be97648953e0fa177e570232"
-      }
-    ],
-    "outputs_local_abs": [
-      "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260923_1207_R12_00001_.mp4"
-    ],
+    "outputs": [],
+    "outputs_local_abs": [],
     "outputs_uploaded_to_github": [],
     "output_evidence_policy": {
       "video_uploaded": false,
@@ -218,5 +189,32 @@
     "claimed": false,
     "note": "H3 节点是否出音轨需人工确认；未核实前不宣称有音轨（B端规则：若 Work 的 H3 节点不产音频则改为后期音效需求）",
     "design_received": false
+  },
+  "visual_evidence": {
+    "frames_uploaded_at": "2026-09-24 19:41:22",
+    "run_key": "ADV_B_20260923_1207_R12",
+    "policy": {
+      "mode": "key",
+      "sheet_frames": 6,
+      "sheet_grid": "3x2",
+      "max_kb": 300,
+      "jpg_quality": 90
+    },
+    "files": [
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260923_1207_R12/single_key_head.jpg",
+        "kb": 81.7
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260923_1207_R12/single_key_mid.jpg",
+        "kb": 109.5
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260923_1207_R12/single_key_tail.jpg",
+        "kb": 61.4
+      }
+    ],
+    "total_kb": 252.6,
+    "note": "画面证据 = 每次抽样首/中/尾 3 帧（默认），与 render_claim.outputs[].output_sha256 对应的成片一一对应；成片本体 2-4MB 未入 git，留在 D:/H3/outputs/comfyui/，需要原片按 sha256 索取"
   }
 }
