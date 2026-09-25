@@ -1,0 +1,48 @@
+{
+  "task_id": "MOUSE_B_20260925_1110_R59",
+  "status": "pending",
+  "actual_execution_count": 0,
+  "asset_receipts": {
+    "picture_1": null,
+    "picture_2": null
+  },
+  "per_run": {
+    "run_A": {
+      "seed": null,
+      "work_task_id": null,
+      "output": null,
+      "node_evidence": {
+        "n2": null,
+        "n3": null,
+        "n4": null,
+        "n5": null,
+        "n6": null
+      },
+      "raw_observation": null,
+      "interpretation": null
+    },
+    "run_B": {
+      "seed": null,
+      "work_task_id": null,
+      "output": null,
+      "node_evidence": {
+        "n2": null,
+        "n3": null,
+        "n4": null,
+        "n5": null,
+        "n6": null
+      },
+      "raw_observation": null,
+      "interpretation": null
+    }
+  },
+  "allowed_chain_conclusions": [
+    "SUPPORTED_BY_KEYFRAMES",
+    "CONTRADICTED_BY_KEYFRAMES",
+    "INDETERMINATE",
+    "NOT_REVIEWED"
+  ],
+  "chain_conclusion": "NOT_REVIEWED",
+  "blind_review": null,
+  "warning": "Do not infer full motion or audio success from sparse frames; mark SAMPLING_MISS when a required node is not captured."
+}
