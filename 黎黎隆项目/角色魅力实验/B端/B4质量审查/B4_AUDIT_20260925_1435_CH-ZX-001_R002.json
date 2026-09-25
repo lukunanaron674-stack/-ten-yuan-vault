@@ -10,13 +10,13 @@
   "character": "黎黎隆",
   "ten_yuan_focus": "ZX",
   "mode": "single_ten_yuan",
-  "audited_at": "2026-09-25T14:36:25+08:00",
+  "audited_at": "2026-09-25T15:37:32+08:00",
   "overall_verdict": "AMBIGUOUS",
   "visual_quality_verdict": "NOT_REVIEWED",
   "execution_verdict": "PENDING_WORK_OUTPUT",
-  "text_contract_verdict": "CONDITIONAL_PASS",
+  "text_contract_verdict": "PASS",
   "source_artifacts": {
-    "B1": "黎黎隆项目/角色魅力实验/B端/card_review/rounds/CH-ZX-001_CH-ZX-001-R002.json",
+    "B1": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_INDEX_20260925_1505_CH-ZX-001_R002.json",
     "B2": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260925_1415_CH-ZX-001_R002.json",
     "B3": "黎黎隆项目/角色魅力实验/B端/03_镜头描述词/B3_20260925_1425_CH-ZX-001_R002.json",
     "relay_4090": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/CH-ZX-001_CH-ZX-001-R002_20260925_1411__v10_RELAY.json",
@@ -27,13 +27,14 @@
   },
   "evidence_state": {
     "verified": [
-      "stage identity envelope",
-      "single-ZX boundary",
-      "11-second specification",
-      "16:9 final-output specification",
+      "stage identity envelope across B1/B2/B3/4090/B4/B5",
+      "single-ZX boundary with no second ten-yuan or forced sheng-ke-bu main axis",
+      "11-second and 16:9 final-output text specifications",
       "audio_design fields",
-      "two-run sampling contract",
-      "B3 prompt and relay text existence"
+      "run_A/run_B seed-only sampling contract",
+      "B2/B3 camera contract resolution",
+      "model-facing H3 prompt synchronization across B3/task/relay",
+      "model-facing prompt contains no ten-yuan or sheng-ke-bu terminology"
     ],
     "not_submitted": [
       "same-round Picture 1 binding receipt",
@@ -154,6 +155,10 @@
     "six_frame_evidence_complete": {
       "verdict": "FAIL_MISSING_OUTPUT",
       "evidence": "All six head/mid/tail paths, hashes, frame numbers and timestamps are null."
+    },
+    "model_facing_prompt_term_policy": {
+      "verdict": "PASS",
+      "evidence": "B3 JSON, H3 Markdown, unified task and 4090 relay use the same model-facing prompt; the body contains no ten-yuan or sheng-ke-bu terminology. Internal research constraints remain outside the model-facing body."
     }
   },
   "b5_required_fields": {
@@ -178,8 +183,8 @@
       "evidence": "ten_yuan_focus=ZX, mode=single_ten_yuan, second_ten_yuan=null; no forced sheng-ke-bu explanation is used as the analysis axis."
     },
     "b2_b3_contract_consistency": {
-      "status": "AMBIGUOUS",
-      "evidence": "The event and six beats match, but B2 still lists camera movement as disconfirming while B3 intentionally adds one motivated stable lateral dolly/push-in under the newer anti-static production rule."
+      "status": "PASS",
+      "evidence": "Resolved same-round: 0–6s locked full-body wide; 6–10s one smooth lateral dolly plus restrained push-in; 10–11s locked full-body medium-wide; no extra moves."
     },
     "character_identity": {
       "status": "NOT_REVIEWED",
@@ -232,27 +237,39 @@
     "six_frame_evidence_complete": {
       "status": "FAIL_MISSING_OUTPUT",
       "evidence": "All six head/mid/tail paths, hashes, frame numbers and timestamps are null."
+    },
+    "model_facing_prompt_term_policy": {
+      "status": "PASS",
+      "evidence": "B3/task/relay prompt copies are synchronized and theory terminology is absent from the model-facing body."
     }
   },
   "blockers": [
     "Picture 1/2 same-round binding receipts are absent.",
     "SCENE-05 readable narrow-passage geometry is unverified.",
-    "4090 has produced neither run_A nor run_B.",
+    "4090 has produced neither run_A nor run_B (actual 0/2).",
     "Six real frame files and hashes are absent.",
     "Real output duration, dimensions, fps, frame count and audio presence are absent."
   ],
   "next_action": [
-    "B1/4090 must bind LLL-MAIN-001 and SCENE-05 in the same execution and return path, SHA-256, dimensions and validation verdicts.",
-    "If SCENE-05 lacks the required passage, return binding_mismatch; do not invent geometry.",
-    "4090 must execute the exact same prompt twice with the same workflow and parameters; only seed may differ.",
-    "Return both result records plus six real frames, then rerun B4 visual review."
+    "4090 must bind the exact LLL-MAIN-001 and SCENE-05 sources and return path, SHA-256, dimensions and validation verdicts.",
+    "If SCENE-05 lacks a readable narrow passage, return binding_mismatch and stop.",
+    "Execute the synchronized H3 prompt twice with identical inputs, workflow and parameters; only seed may differ.",
+    "Return run_A/run_B result records plus six real frames and audio metadata, then rerun B4 visual review and finalize B5."
   ],
-  "conclusion": "B2/B3 camera contract is now consistent. Text contract remains CONDITIONAL_PASS; no visual or audio quality claim is allowed, and overall remains pending_work_output.",
+  "conclusion": "Text contract PASS; execution remains pending_work_output (0/2), visual quality NOT_REVIEWED, overall AMBIGUOUS until real Work outputs and six frames exist.",
   "contract_resolution": {
     "status": "resolved_same_round",
     "resolved_at": "2026-09-25T15:10:53+08:00",
     "source_b2_commit": "4ef8f2395943a2542c461b6a61c72df72bd04ee4",
     "retained_b3_camera_grammar": "0–6s locked full-body wide; 6–10s one smooth lateral dolly plus restrained push-in; 10–11s locked full-body medium-wide",
     "visual_claim": "NOT_REVIEWED"
+  },
+  "prompt_contract_resolution": {
+    "status": "PASS",
+    "resolved_at": "2026-09-25T15:27:39+08:00",
+    "b3_commit": "6e3ce9cd60af99fb44466e7cf83b9fb04f88d7e3",
+    "prompt_commit": "ec552855eba68c77933c1ea1e85ed26b3a653bc5",
+    "relay_commit": "7f8534ad4af0c05419c767f1707689e5d509c65c",
+    "model_facing_prompt_term_check": "PASS"
   }
 }
