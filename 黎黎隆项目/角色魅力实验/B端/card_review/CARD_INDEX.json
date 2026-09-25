@@ -1,0 +1,45 @@
+{
+  "schema_version": "B-CARD-INDEX-v1.1",
+  "index_status": "authoritative",
+  "updated_on": "2026-09-25",
+  "namespace": "CH-ZX",
+  "id_pattern": "CH-ZX-###",
+  "next_sequence": 2,
+  "allocation_rule": "serial write only; never reuse card_id; legacy rounds are not retroactively registered",
+  "cards": [
+    {
+      "card_id": "CH-ZX-001",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character": "黎黎隆",
+      "character_id": "LLL-MAIN-001",
+      "ten_yuan_focus": "ZX",
+      "mode": "single_ten_yuan",
+      "status": "active",
+      "registration_status": "registered",
+      "pipeline_status": "ready_for_B1",
+      "duration_target": "10-11s",
+      "output_aspect_ratio": "16:9 landscape",
+      "reference_aspect_ratio": "9:16 allowed",
+      "runs_per_prompt": 2,
+      "run_policy": "run_A and run_B use the same card, inputs, prompt, workflow and parameters; only random seed may differ",
+      "secondary_ten_yuan": "none",
+      "forced_relation": "none",
+      "forced_sheng_ke_bu": false,
+      "b1_b2_b3_4090_b4_card_id": "CH-ZX-001",
+      "source_registration_file": "card_review/cards/CH-ZX-001.json",
+      "review_record": "card_review/cards.json",
+      "frame_status": "pending_work_execution",
+      "visual_verification_status": "pending_work_output",
+      "legacy_rounds": [],
+      "created_from": "B_CARD_SYSTEM_NEXT_ROUND_20260924",
+      "created_on": "2026-09-25"
+    }
+  ],
+  "legacy_policy": {
+    "old_rounds_preserved": true,
+    "retroactive_rewrite": false,
+    "legacy_card_id_may_be_null": true,
+    "legacy_card_id_null_is_not_allowed_for_new_cards": true
+  }
+}
