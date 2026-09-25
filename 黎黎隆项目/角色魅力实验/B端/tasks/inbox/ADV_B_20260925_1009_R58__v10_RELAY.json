@@ -1,0 +1,80 @@
+{
+  "schema_version": "video_tenyuan_prompt_schema_v1.2",
+  "task_id": "ADV_B_20260925_1009_R58__v10_RELAY",
+  "task_version": "v10",
+  "parent_task_id": "ADV_B_20260925_1009_R58",
+  "video_mode": "single_character_narrative",
+  "cast": {
+    "character_id": "ADV-001",
+    "display_name": "冒险者",
+    "on_screen_character_count_max": 1,
+    "other_characters_allowed": false,
+    "duplicate_instance_allowed": false
+  },
+  "source_assets": {
+    "character": {
+      "path": "D:/H3/pool/character_refs/ADV-001_冒险者_H3_sheet_001.jpg",
+      "sha256": "4284a72886e485ffc18fa0672207599bd244e886cd600ca5531d18f133c8e10c",
+      "same_round_receipt_required": true,
+      "same_character_visual_verified": false,
+      "h3_four_grid_layout_verified": null
+    },
+    "scene": {
+      "path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-04_森林湖泊_五色组合.png",
+      "scene_asset_id": "SCENE-04",
+      "sha256": null,
+      "required": true,
+      "git_blob": "efefd97514fc31d569134c821aada9cb3fdcb206",
+      "same_round_receipt_required": true,
+      "scene_identity_verified": null,
+      "geometry_verified": null,
+      "water_or_foliage_support_verified": null
+    }
+  },
+  "render_spec": {
+    "planned_duration_seconds_each": 11,
+    "output_aspect_ratio": "16:9",
+    "run_count": 2,
+    "same_prompt_and_inputs": true,
+    "fixed_camera": true
+  },
+  "audio_design": {
+    "ambient_soundscape": "quiet forest-lake air, distant water only if supported by Picture 2, one brief soft surface-or-leaf rustle with a clear natural decay, one low boot-lift cloth creak and one soft return contact",
+    "emotional_sound_cue": "one sparse non-melodic low tone begins after the boot lifts and resolves when the same boot returns to the original line; no second cue, lyrics or strong beat",
+    "audio_role": "support spatial clarity, action reversibility and restrained emotion only; do not drive cuts; not MV editing",
+    "actual_audio_track_status": "UNKNOWN_PENDING_WORK"
+  },
+  "clips": [
+    {
+      "clip_id": "A",
+      "prompt": "Subject: Landscape 16:9, one continuous 11-second single-character narrative. Show exactly one physical instance of the established heavy adult adventurer from Picture 1. Preserve his broad heavy body, grounded weight, short dark hair, thick dark beard, tired experienced face, layered worn dark clothing, red scarf, crossing straps and buckles, pale metal shoulder and chest structure, complete backpack and rolled equipment, one cyan-lit waist lantern, heavy gloves and boots. Keep every connected item, body proportion, material, surface wear and reference color unchanged.\n\nMovement: From 0 to 2 seconds he stands on the established walking line with both boots planted and his full load settled. From 2 to 4 seconds one brief harmless surface rustle passes once through existing water or foliage visibly supported by Picture 2, then naturally fades; this is the only external stimulus. From 4 to 6 seconds he initiates one small side step toward the affected side: the near boot lifts only two to four centimeters and begins moving sideways, but it does not land, while the other boot remains planted. From 6 to 8 seconds his eyes confirm the now-quiet side first and his head follows only three to five degrees; there is no second cue, no torso turn and no additional step. From 8 to 10 seconds the same lifted boot reverses along one continuous short path and returns to its original walking-line mark before touching down; the planted boot, shoulders and equipment do not recruit into a larger correction. From 10 to 11 seconds both boots remain planted on the original line, the load settles once and the action stops in a calm readable result.\n\nScene: Picture 2 defines SCENE-04, the same forest-lake environment, its existing elements, spatial continuity and original five-color hierarchy. Use the single surface rustle only if the bound scene visibly contains water or foliage capable of that motion. Keep the background empty of people and person-like reflections. Do not invent a path, obstacle, bridge, rock, root, building, sign, rail, creature, vehicle, mechanism or second environmental event.\n\nCamera: One locked eye-level full-body medium-wide three-quarter view in a 16:9 landscape frame. Keep both boots, the original walking line, the complete lifted-foot path, the backpack silhouette and final stance readable together. Fixed framing, focal length and horizon; no push, pull, pan, tilt, tracking, reframing, cut, transition or split screen.\n\nLighting: Preserve Picture 1 materials and Picture 2 palette logic under one fixed soft diffuse light. Keep the cyan lantern as one small identity light only. No new glow, flashing, relighting, weather change, sudden saturation shift or color redesign.\n\nAtmosphere: He reads as decisive rather than fearful: he genuinely begins a small response, notices that its reason has ended and cancels it cleanly before landing, without panic or repeated testing. Use clear two-dimensional hand-drawn shapes, restrained variable-width linework, soft diffuse depth and restrained shadows only where compatible with the bound references.\n\nAudio: Ambient soundscape: quiet forest-lake air, distant water only if supported by Picture 2, one brief soft surface-or-leaf rustle with a clear natural decay, one low boot-lift cloth creak and one soft return contact. Emotional sound cue: one sparse non-melodic low tone begins after the boot lifts and resolves when the same boot returns to the original line, with no second cue, no lyrics and no strong beat. Audio supports spatial clarity, action reversibility and restrained emotion only; it does not drive cuts and is not music-video editing.\n\nNegative: exactly one character and one physical body, no duplicate character, no second human figure, no split screen, no clone or mirror-double, no reflection person, no crowd, no NPC, no extra limbs, no text overlay, no watermark, no abrupt redesign, no young slim redesign, no removed backpack, no dropped equipment, no duplicate lantern, no second external stimulus, no completed side landing, no extra step, no repeated left-right shuffling, no hopping, no stumble, no fall, no panic, no run, no jump, no acrobatics, no torso spin, no invented object or scene geometry, no camera movement, no cut, no transition, no weather change, no abrupt color shift, no lyrics, no strong beat, no MV editing, no glossy 3D rendering.",
+      "negative_prompt": "no duplicate character, no second human figure, no split screen, no clone or mirror-double, no extra limbs, no text overlay, no watermark, no abrupt redesign, no reflection person, no crowd, no NPC, no second external stimulus, no completed side landing, no repeated left-right shuffling, no camera movement, no cut, no weather change, no abrupt color shift, no lyrics, no strong beat, no MV editing"
+    }
+  ],
+  "execution_slots": {
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null
+    }
+  },
+  "causal_scope": {
+    "hypothesis_id": "R58_SINGLE_STIMULUS_NATURAL_DECAY_REVERSAL",
+    "external_stimulus_count_exact": 1,
+    "not_a_test_of": "B2_20260925_0815 dual-cue causality"
+  },
+  "hard_gate": {
+    "same_round_dual_asset_receipt_required": true,
+    "visible_human_count_exact": 1,
+    "external_stimulus_count_exact": 1,
+    "boot_lift_cm": "2-4",
+    "side_landing_allowed": false,
+    "return_to_original_mark_by_sec": 10,
+    "stable_hold_to_sec": 11
+  }
+}
