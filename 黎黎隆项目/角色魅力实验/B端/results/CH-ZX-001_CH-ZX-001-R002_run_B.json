@@ -1,0 +1,95 @@
+{
+  "schema_version": "B-CH-ZX-RUN-RESULT-v1.1",
+  "card_id": "CH-ZX-001",
+  "character": "黎黎隆",
+  "character_id": "LLL-MAIN-001",
+  "ten_yuan_focus": "ZX",
+  "mode": "single_ten_yuan",
+  "round_id": "CH-ZX-001-R002",
+  "task_id": "B-H3-CH-ZX-001-R002",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "duration": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "reference_aspect_ratio": "9:16 allowed",
+  "character_asset_id": "LLL-MAIN-001",
+  "scene_asset_id": "SCENE-05",
+  "run": "run_B",
+  "status": "pending_work_output",
+  "render_completed": false,
+  "visual_validation_completed": false,
+  "b5_acceptance_completed": false,
+  "input_binding": {
+    "picture_1": {
+      "asset_id": "LLL-MAIN-001",
+      "path": null,
+      "sha256": null,
+      "dimensions": null,
+      "validated": false
+    },
+    "picture_2": {
+      "asset_id": "SCENE-05",
+      "path": null,
+      "sha256": null,
+      "dimensions": null,
+      "validated": false
+    }
+  },
+  "prompt": {
+    "file": "黎黎隆项目/角色魅力实验/B端/prompts/generated/CH-ZX-001_CH-ZX-001-R002_H3.md",
+    "sha256": null
+  },
+  "workflow": {
+    "id": null,
+    "version": null,
+    "parameters_fingerprint": null
+  },
+  "seed": null,
+  "execution_order": "second execution",
+  "work_task_id": null,
+  "output": {
+    "path": null,
+    "sha256": null,
+    "width": null,
+    "height": null,
+    "duration_seconds": null,
+    "fps": null,
+    "frame_count": null,
+    "audio_track_present": null
+  },
+  "frames": {
+    "head": {
+      "path": null,
+      "sha256": null,
+      "timestamp_seconds": null
+    },
+    "mid": {
+      "path": null,
+      "sha256": null,
+      "timestamp_seconds": null
+    },
+    "tail": {
+      "path": null,
+      "sha256": null,
+      "timestamp_seconds": null
+    }
+  },
+  "acceptance": {
+    "stage_identity_consistency": null,
+    "asset_reference_consistency": null,
+    "card_and_rule_version_consistency": null,
+    "round_id_consistency": null,
+    "character_identity": null,
+    "action_readability": null,
+    "camera_stability": null,
+    "atmosphere_fit": null,
+    "no_duplicate_or_clone": null,
+    "duration_10_11s": null,
+    "landscape_16_9": null,
+    "audio_fields_complete": null,
+    "run_pair_parameter_consistency": null,
+    "six_frame_evidence_complete": null
+  },
+  "conclusion": "pending_work_output",
+  "note": "No real Work output exists for this round; null evidence fields are deliberate."
+}
