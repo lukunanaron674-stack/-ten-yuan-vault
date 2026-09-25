@@ -141,11 +141,14 @@
       "conclusion": "AMBIGUOUS_pending_work_output",
       "audit_json": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json",
       "audit_report": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.md",
-      "text_contract": "CONDITIONAL_PASS",
+      "text_contract": "PASS",
       "visual_quality": "NOT_REVIEWED",
       "execution": "pending_work_output",
       "contract_resolution": "PASS",
-      "source_commit": "08407aded2bb93650526c6486177d2255f37f87f"
+      "source_commit": "d42febf6c3ad936b548c3679c5843d53e0cc4fbc",
+      "report_commit": "a888530282fc30fb382abeed192acc47c773613e",
+      "prompt_term_policy": "PASS",
+      "actual_completed_runs": 0
     },
     "B5": {
       "card_id": "CH-ZX-001",
@@ -157,7 +160,9 @@
       "status": "pending_work_output",
       "conclusion": "B4_fields_prefilled_visual_evidence_pending",
       "source_b4_audit": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json",
-      "source_commit": "d3ad58a03f78a6df701f1f44b392788e90dcef88"
+      "source_commit": "9fc0376ada608a89804a6f01007d08e92d23fc75",
+      "b4_text_contract": "PASS",
+      "visual_quality": "NOT_REVIEWED"
     }
   },
   "stage_roles": {
@@ -169,11 +174,11 @@
     "B5": "unified fifth-stage acceptance record"
   },
   "invariant_check": "all six stage envelopes must remain byte-equivalent for card/round/version/asset identifiers",
-  "current_conclusion": "B3 consumes the latest same-round B1/B2 artifacts. Model-facing H3 prompt, task and relay are synchronized and contain no ten-yuan/sheng-ke-bu terminology; internal negative constraints remain recorded. Work binding and real outputs remain pending.",
+  "current_conclusion": "B4 confirms stage/version/asset identity, single-ZX boundary, camera-contract resolution and synchronized theory-free model prompt. Work binding and real outputs remain pending; actual completed runs=0/2, so visual quality is NOT_REVIEWED and B5 remains pending_work_output.",
   "last_stage_update": {
-    "stage": "B3",
-    "updated_at": "2026-09-25T15:27:39+08:00",
-    "status": "text_ready_input_validation_pending",
-    "source": "黎黎隆项目/角色魅力实验/B端/03_镜头描述词/B3_20260925_1425_CH-ZX-001_R002.json"
+    "stage": "B4",
+    "updated_at": "2026-09-25T15:37:32+08:00",
+    "status": "audit_complete_visual_not_reviewed",
+    "source": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json"
   }
 }
