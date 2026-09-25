@@ -41,7 +41,10 @@
     "landscape_16_9",
     "audio_fields_complete",
     "run_pair_parameter_consistency",
-    "six_frame_evidence_complete"
+    "six_frame_evidence_complete",
+    "shot_size_change_visible",
+    "background_parallax_visible",
+    "whole_body_displacement_visible"
   ],
   "stages": {
     "4090": {
@@ -85,8 +88,13 @@
       "rule_version": "CH-ZX-EXEC-v1.0",
       "character_asset_id": "LLL-MAIN-001",
       "scene_asset_id": "SCENE-05",
-      "status": "pending_work_output",
-      "conclusion": "pending_work_output"
+      "status": "text_ready_input_validation_pending",
+      "conclusion": "single_ZX_H3_prompt_ready_for_binding_and_4090",
+      "work_order": "黎黎隆项目/角色魅力实验/B端/03_镜头描述词/B3_20260925_1425_CH-ZX-001_R002.json",
+      "prompt": "黎黎隆项目/角色魅力实验/B端/prompts/generated/CH-ZX-001_CH-ZX-001-R002_H3.md",
+      "relay": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/CH-ZX-001_CH-ZX-001-R002_20260925_1411__v10_RELAY.json",
+      "camera_grammar": "0–6s locked full-body wide; 6–10s one smooth lateral dolly plus restrained push-in; 10–11s locked full-body medium-wide",
+      "execution_gate": "pending_work_binding"
     },
     "B4": {
       "card_id": "CH-ZX-001",
@@ -118,11 +126,11 @@
     "B5": "unified fifth-stage acceptance record"
   },
   "invariant_check": "all six stage envelopes must remain byte-equivalent for card/round/version/asset identifiers",
-  "current_conclusion": "B2_text_ready_input_validation_pending; 4090/B4/B5 remain pending_work_output",
+  "current_conclusion": "B3_text_ready_input_validation_pending; Picture 1/2 binding and SCENE-05 passage validation required before 4090; 4090/B4/B5 remain pending_work_output",
   "last_stage_update": {
-    "stage": "B2",
-    "updated_at": "2026-09-25T14:15:04+08:00",
+    "stage": "B3",
+    "updated_at": "2026-09-25T14:26:24+08:00",
     "status": "text_ready_input_validation_pending",
-    "source": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260925_1415_CH-ZX-001_R002.json"
+    "source": "黎黎隆项目/角色魅力实验/B端/03_镜头描述词/B3_20260925_1425_CH-ZX-001_R002.json"
   }
 }
