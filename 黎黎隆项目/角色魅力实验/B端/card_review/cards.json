@@ -12,7 +12,7 @@
       "tenyuan": "ZX",
       "character_id": "LLL-MAIN-001",
       "scene_id": "SCENE-05",
-      "round_id": "CH-ZX-001-R001",
+      "round_id": "CH-ZX-001-R002",
       "card_version": "v1.0",
       "rule_version": "CH-ZX-EXEC-v1.0",
       "status": "active_pending_work_output",
@@ -39,20 +39,22 @@
         }
       },
       "source_registration_file": "card_review/cards/CH-ZX-001.json",
-      "source_task": "tasks/inbox/CH-ZX-001_CH-ZX-001-R001_20260925_1307.json",
-      "notes": "CH-ZX-001 首个执行轮次已登记；文本结构通过。run_A/run_B、两张素材同轮绑定、seed、输出及六张首中尾帧均为 pending_work_output，不得视为已渲染或已完成视觉验证。",
-      "task_id": "B-H3-CH-ZX-001-R001",
-      "current_round_registration": "card_review/rounds/CH-ZX-001_CH-ZX-001-R001.json",
+      "source_task": "tasks/inbox/CH-ZX-001_CH-ZX-001-R002_20260925_1411.json",
+      "notes": "R002已按B1/B2/B3/4090/B4/B5同卡、同素材、同版本、同轮次、同验收登记。run_A/run_B、六帧及B5视觉结论均为pending_work_output。",
+      "task_id": "B-H3-CH-ZX-001-R002",
+      "current_round_registration": "card_review/rounds/CH-ZX-001_CH-ZX-001-R002.json",
       "current_deliverables": {
-        "round_registration": "card_review/rounds/CH-ZX-001_CH-ZX-001-R001.json",
-        "task": "tasks/inbox/CH-ZX-001_CH-ZX-001-R001_20260925_1307.json",
-        "relay": "tasks/inbox/CH-ZX-001_CH-ZX-001-R001_20260925_1307__v10_RELAY.json",
-        "prompt": "prompts/generated/CH-ZX-001_CH-ZX-001-R001_H3.md",
-        "run_A": "results/CH-ZX-001_CH-ZX-001-R001_run_A.json",
-        "run_B": "results/CH-ZX-001_CH-ZX-001-R001_run_B.json",
-        "run_A_frames": "results/frames/CH-ZX-001_CH-ZX-001-R001/run_A_frames.json",
-        "run_B_frames": "results/frames/CH-ZX-001_CH-ZX-001-R001/run_B_frames.json",
-        "audit": "card_review/audits/CH-ZX-001_CH-ZX-001-R001_AUDIT.md"
+        "round_registration": "card_review/rounds/CH-ZX-001_CH-ZX-001-R002.json",
+        "task": "tasks/inbox/CH-ZX-001_CH-ZX-001-R002_20260925_1411.json",
+        "relay": "tasks/inbox/CH-ZX-001_CH-ZX-001-R002_20260925_1411__v10_RELAY.json",
+        "pipeline_manifest": "tasks/inbox/CH-ZX-001_CH-ZX-001-R002_B1-B5-4090_MANIFEST.json",
+        "prompt": "prompts/generated/CH-ZX-001_CH-ZX-001-R002_H3.md",
+        "run_A": "results/CH-ZX-001_CH-ZX-001-R002_run_A.json",
+        "run_B": "results/CH-ZX-001_CH-ZX-001-R002_run_B.json",
+        "run_A_frames": "results/frames/CH-ZX-001_CH-ZX-001-R002/run_A_frames.json",
+        "run_B_frames": "results/frames/CH-ZX-001_CH-ZX-001-R002/run_B_frames.json",
+        "b5_acceptance": "results/CH-ZX-001_CH-ZX-001-R002_B5_UNIFIED_ACCEPTANCE.json",
+        "audit": "card_review/audits/CH-ZX-001_CH-ZX-001-R002_AUDIT.md"
       },
       "pipeline_stages": [
         "B1",
@@ -69,7 +71,8 @@
         "same_rule_version": true,
         "same_round_id": true,
         "same_acceptance": true
-      }
+      },
+      "b5_acceptance_status": "pending_work_output"
     },
     {
       "card_id": null,
