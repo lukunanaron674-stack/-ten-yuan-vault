@@ -1,0 +1,54 @@
+{
+  "task_id": "MOUSE_B_20260925_0110_R49",
+  "prompt_source": "task.h3_prompt",
+  "prompt_sha256": "8ce97f0de6d7f4c7a78d40765d0d292dabc7cd6b93fc93a82986ee00e3604f9d",
+  "prompt_chars": 4469,
+  "dual_sample": true,
+  "samples": [
+    {
+      "run": "run_A",
+      "task_id": "MOUSE_B_20260925_0110_R49_run_A_0925131813",
+      "seed": 287504216,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0110_R49_run_A_00001_.mp4"
+    },
+    {
+      "run": "run_B",
+      "task_id": "MOUSE_B_20260925_0110_R49_run_B_0925131813",
+      "seed": 1038594514,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0110_R49_run_B_00001_.mp4"
+    }
+  ],
+  "dynamic_chain_reading": "",
+  "shot_sequence": [],
+  "character_charm": "",
+  "must_keep_check": [],
+  "negative_prompt": "no text, no subtitle, no logo, no random unreadable text",
+  "refs_source": "search_local",
+  "refs_used": [
+    "030F6E3B89E0998CBF695064BC27C2A8.jpeg"
+  ],
+  "frames": 240,
+  "h3_prompt": "Subject: Landscape 16:9, one continuous 11-second single-character narrative. Show exactly one physical instance of the established mouse-ear mutant girl from Picture 1. Preserve the same identity, face, white short hair with eye-covering fringe and top curl, two short oval translucent pale-purple mouse ears attached directly to the sides of the skull, small body, slender limbs, pale tunic with dark trim, dark cross-body strap, existing side bag, pale socks and oversized dark shoes. Keep both ears inside the head-and-shoulder silhouette with no extension behind the shoulders or along the back. All reference views describe the same one person.\n\nMovement: She begins already walking at one calm steady rhythm along the existing lakeshore route. One small harmless water disturbance briefly reaches the area beside her intended path. Her nearer skull-attached ear pivots first while her eyes stay forward for a fraction of a second. Without fear or haste, she shifts only half a step sideways to leave a little extra space, then keeps her feet settled. The water disturbance fades completely by itself. Nothing appears, answers, rewards her or explains the event. Hold a short clear choice window in which she could turn back or investigate again. Her ears stay attentive briefly, then relax. She does not turn around, approach the water or make a second check. She restores the exact opening walking rhythm and continues in the same overall direction, leaving the finished event behind.\n\nScene: Picture 2 defines SCENE-02, the established forest-lakeshore environment, its visible water, forest atmosphere, spatial continuity, negative space and original color relationship. Use only shoreline, water, vegetation, ground and depth layers visibly supported by the bound scene image. Do not invent a bridge, dock, building, rock, boat, animal, creature, person, sign, machine or story prop. The disturbance is only a small surface-water event and never becomes a figure or entity.\n\nCamera: One locked eye-level three-quarter full-body medium-wide shot in a 16:9 landscape frame. Keep the girl, her walking line and the relevant visible water area readable in the same composition from start to finish. Leave stable horizontal negative space toward the water. Fixed framing, focal length and horizon; no push, pull, pan, tilt, tracking, reframing, cut, transition or split screen. The uncut view must make the initial rhythm, single half-step, unanswered choice window and restored rhythm directly comparable.\n\nLighting: Preserve the bound character materials and Picture 2's original palette logic. Use one fixed soft diffuse light throughout. Keep the pale-purple ear translucency restrained and consistent. No flashing, relighting, weather change, sudden saturation shift or color redesign.\n\nAtmosphere: The visible event should allow a reading of quiet consideration without demanding recognition, certainty or a reward. Her appeal comes from making one small adjustment and then confidently ending her response when nothing follows. Express this only through timing, spacing and visible action. Use clear two-dimensional hand-drawn shapes, clean variable-width ink contours, light watercolor softness, low-saturation shadows and sufficient negative space only where compatible with the bound references. Do not copy another character's cyan-white energy body, materials or identity.\n\nAudio: Ambient soundscape: soft lakeshore wind, faint leaf movement, restrained footsteps, light cloth movement and one subtle water-ripple event in natural open-air ambience. Emotional sound cue: one very sparse soft sustained tone enters only during the short choice window and fades when the original walking rhythm returns, with no lyrics and no strong beat. Audio supports spatial direction, action readability and restrained emotion only; it does not drive cuts and is not music-video editing.\n\nNegative: exactly one character and one physical body, no duplicate character, no second human figure, no split screen, no clone or mirror-double, no mirror duplicate, no reflection person, no crowd, no NPC, no creature from the water, no visible sound source, no rabbit ears, no tail, no horns, no wings, no back-mounted wing-like silhouette, no extra limbs, no deformed hands, no invented structure or prop, no second check, no turn back, no camera movement, no cut, no transition, no weather change, no abrupt color shift, no text overlay, no watermark, no abrupt redesign.",
+  "cloud_feedback": {
+    "character_consistency_score": null,
+    "dynamic_chain_readability_score": null,
+    "tail_action_readability_score": null,
+    "camera_rhythm_score": null,
+    "failure_family": null,
+    "notes": null
+  },
+  "local_render": {
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0110_R49_run_A_00001_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0110_R49_run_A_00001_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0110_R49_run_B_00001_.mp4"
+    ],
+    "elapsed_sec": 880,
+    "rendered_at": "2026-09-25 13:32:54",
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 13:18:13)\n[h3_qq_gen]   状态: running  (2026-09-25 13:18:51)\n[h3_qq_gen]   状态: done  (2026-09-25 13:25:51)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0110_R49_run_A_00001_.mp4\n[h3_qq_gen] 轮询 MOUSE_B_20260925_0110_R49_run_B_0925131813（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 13:25:52)\n[h3_qq_gen]   状态: done  (2026-09-25 13:32:52)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0110_R49_run_B_00001_.mp4",
+    "by": "relay-gh",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
