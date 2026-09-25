@@ -1,0 +1,51 @@
+{
+  "task_id": "MOUSE_B_20260924_1208_R36__v10__B",
+  "parent_task_id": "MOUSE_B_20260924_1208_R36",
+  "schema_version": null,
+  "clip_id": "B",
+  "prompt_chars": 4196,
+  "dual_sample": true,
+  "samples": [
+    {
+      "run": "run_A",
+      "task_id": "MOUSE_B_20260924_1208_R36__v10__B_run_A_0925104339",
+      "seed": 1536609113,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__B_run_A_00002_.mp4"
+    },
+    {
+      "run": "run_B",
+      "task_id": "MOUSE_B_20260924_1208_R36__v10__B_run_B_0925104339",
+      "seed": 1133938530,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__B_run_B_00002_.mp4"
+    }
+  ],
+  "dynamic_chain_reading": "",
+  "shot_sequence": [],
+  "must_keep_check": [],
+  "negative_prompt": "no text, no subtitle, no logo, no random unreadable text",
+  "refs_source": "task",
+  "refs_used": [
+    "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "R1-01_森林湖泊_单色.png"
+  ],
+  "frames": 240,
+  "audio_design": {
+    "ambient_soundscape": "continuous forest-lake air and right water-lap, one soft cloth press, one small footfall, then robe-and-strap settling",
+    "emotional_sound_cue": "breath-like non-lyrical tone opens slightly at weight shift and resolves on the planted landing",
+    "audio_role": "support decision and landing, not a beat-synced edit or MV cue"
+  },
+  "h3_prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds, continuing directly from the Work-selected real ending frame of Segment A.\n\nSTYLE IDENTITY LOCK: preserve the exact same Picture 1 mouse-ear mutant girl, including face, white short hair, translucent pale-violet mouse-ear mutation structures, small slender proportions, oversized pale short robe, dark edge blocks, diagonal strap, single side satchel, pale socks and oversized dark shoes. Preserve the same Picture 2 forest-lake identity, existing elements, monochrome hierarchy, lighting direction and original palette logic. Reference fidelity overrides generic style wording.\n\nVISUAL EXPRESSION VARIABLE: begin from the inherited chest-up framing, then use one slow continuous pull-back to reveal a medium-wide full-body view before the step. Keep compatible variable-weight linework, reference-consistent thin shading, soft diffuse light and quiet negative space. Do not add colors or materials that conflict with either reference.\n\nCHARACTER (Picture 1): show the same one physical girl from Segment A. Inherit the selected real A ending pose, ear angles, head direction, clothing state and satchel position. Her four reference views remain one identity. Do not begin the body movement until the pull-back has established both feet and supported ground.\n\nENVIRONMENT (Picture 2): remain in the same SCENE-01 space. The pull-back may reveal only existing visually supported ground, water, tree layers, mist and open space from Picture 2. Maintain the monochrome palette logic and the same screen directions. If Picture 2 cannot support this continuous reveal and one safe step direction, Work must not render this segment rather than inventing terrain.\n\nCAMERA AND COMPOSITION: inherit the exact eye-level three-quarter axis and close framing from Segment A. During the first four seconds, perform one slow continuous pull-back from chest-up medium close-up to a medium-wide full-body composition. Keep both ear structures visible throughout. Once both feet and the supported ground are readable, stop the camera completely. Preserve foreground ground, the character in the middle ground and forest-lake depth behind her. No cut, orbit, pan, tilt or axis flip.\n\nACTION: hold the inherited listening pose during the pull-back. When the camera settles, the screen-left leaf rustle has subsided and the screen-right water-lap remains soft and regular. Her two mouse-ear structures settle toward the quieter right-hand direction. Her eyes confirm that direction, then her head and shoulders align by a small amount. She shifts her weight without lifting both feet, slides the existing side satchel slightly closer with one forearm, and takes exactly one small step along the visually supported ground, parallel to the safe existing route rather than toward the water. The robe hem and satchel make one restrained follow-through and settle. End with both feet planted again, ears relaxed but attentive, and the same single character continuing calmly.\n\nAUDIO DESIGN: continue the same forest-lake air and screen-right water-lap through the pull-back, then add one soft cloth press at the satchel, one small footfall and a brief robe-and-strap settling sound. The breath-like non-lyrical tone opens slightly at the weight shift and resolves when both feet plant. Audio supports the reveal, decision and landing; it is not a song cue, beat-synced edit or MV structure.\n\nNEGATIVE: no second character, duplicate girl, clone, split screen, four-person character-sheet output, reflection person, shadow double or autonomous silhouette; no rabbit ears, ordinary replacement ears, tail, horns, wings, armor, weapon, new bag or changed robe; no visible animal, person or invented sound source; no body action before both feet and supported ground are established; no step toward or into water, extra steps, run, jump, dance, panic or lip-sync; no cut, orbit, pan, tilt, axis flip, reverse terrain, speed ramp or montage; no invented bridge, dock, stones, roots, building, sign, lamp or path; no location replacement, glossy 3D render, hard synthetic digital edges, cyan-white energy humanoid, text, subtitle, logo or watermark.",
+  "local_render": {
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__B_run_A_00002_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__B_run_A_00002_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__B_run_B_00002_.mp4"
+    ],
+    "elapsed_sec": 902,
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 10:43:39)\n[h3_qq_gen]   状态: running  (2026-09-25 10:44:35)\n[h3_qq_gen]   状态: done  (2026-09-25 10:51:37)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__B_run_A_00002_.mp4\n[h3_qq_gen] 轮询 MOUSE_B_20260924_1208_R36__v10__B_run_B_0925104339（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 10:51:38)\n[h3_qq_gen]   状态: done  (2026-09-25 10:58:38)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__B_run_B_00002_.mp4",
+    "by": "b_new_format",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
