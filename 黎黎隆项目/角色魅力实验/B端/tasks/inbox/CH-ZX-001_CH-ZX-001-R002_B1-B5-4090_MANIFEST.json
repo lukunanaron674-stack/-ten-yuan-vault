@@ -1,0 +1,118 @@
+{
+  "schema_version": "B1-B5-4090-UNIFIED-MANIFEST-v1.0",
+  "card_id": "CH-ZX-001",
+  "character": "黎黎隆",
+  "character_id": "LLL-MAIN-001",
+  "ten_yuan_focus": "ZX",
+  "mode": "single_ten_yuan",
+  "round_id": "CH-ZX-001-R002",
+  "task_id": "B-H3-CH-ZX-001-R002",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "duration": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "reference_aspect_ratio": "9:16 allowed",
+  "character_asset_id": "LLL-MAIN-001",
+  "scene_asset_id": "SCENE-05",
+  "asset_set": {
+    "character": {
+      "asset_id": "LLL-MAIN-001",
+      "registered_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+      "binding_status": "pending_work_binding"
+    },
+    "scene": {
+      "asset_id": "SCENE-05",
+      "registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
+      "binding_status": "pending_work_binding",
+      "geometry_gate": "must contain one existing readable narrow mechanical passage; otherwise binding_mismatch"
+    }
+  },
+  "acceptance_fields": [
+    "stage_identity_consistency",
+    "asset_reference_consistency",
+    "card_and_rule_version_consistency",
+    "round_id_consistency",
+    "character_identity",
+    "action_readability",
+    "camera_stability",
+    "atmosphere_fit",
+    "no_duplicate_or_clone",
+    "duration_10_11s",
+    "landscape_16_9",
+    "audio_fields_complete",
+    "run_pair_parameter_consistency",
+    "six_frame_evidence_complete"
+  ],
+  "stages": {
+    "4090": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05",
+      "status": "pending_work_output",
+      "conclusion": "pending_work_output"
+    },
+    "B1": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05",
+      "status": "pending_work_output",
+      "conclusion": "pending_work_output"
+    },
+    "B2": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05",
+      "status": "pending_work_output",
+      "conclusion": "pending_work_output"
+    },
+    "B3": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05",
+      "status": "pending_work_output",
+      "conclusion": "pending_work_output"
+    },
+    "B4": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05",
+      "status": "pending_work_output",
+      "conclusion": "pending_work_output"
+    },
+    "B5": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05",
+      "status": "pending_work_output",
+      "conclusion": "pending_work_output"
+    }
+  },
+  "stage_roles": {
+    "4090": "two-run execution bridge",
+    "B1": "asset binding and identity preflight",
+    "B2": "single-ZX observable action design",
+    "B3": "H3 prompt and camera grammar",
+    "B4": "evidence review",
+    "B5": "unified fifth-stage acceptance record"
+  },
+  "invariant_check": "all six stage envelopes must remain byte-equivalent for card/round/version/asset identifiers",
+  "current_conclusion": "pending_work_output"
+}
