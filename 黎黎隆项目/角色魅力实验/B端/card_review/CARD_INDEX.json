@@ -26,7 +26,6 @@
       "secondary_ten_yuan": "none",
       "forced_relation": "none",
       "forced_sheng_ke_bu": false,
-      "b1_b2_b3_4090_b4_card_id": "CH-ZX-001",
       "source_registration_file": "card_review/cards/CH-ZX-001.json",
       "review_record": "card_review/cards.json",
       "frame_status": "pending_work_output",
@@ -49,6 +48,23 @@
         "run_A_frames": "results/frames/CH-ZX-001_CH-ZX-001-R001/run_A_frames.json",
         "run_B_frames": "results/frames/CH-ZX-001_CH-ZX-001-R001/run_B_frames.json",
         "audit": "card_review/audits/CH-ZX-001_CH-ZX-001-R001_AUDIT.md"
+      },
+      "pipeline_stages": [
+        "B1",
+        "B2",
+        "B3",
+        "4090",
+        "B4",
+        "B5"
+      ],
+      "b1_b2_b3_4090_b4_b5_card_id": "CH-ZX-001",
+      "unified_update_policy": {
+        "same_card_id": true,
+        "same_assets": true,
+        "same_card_version": true,
+        "same_rule_version": true,
+        "same_round_id": true,
+        "same_acceptance": true
       }
     }
   ],
