@@ -1,0 +1,45 @@
+{
+  "schema_version": "B-CARD-ROUND-v1.0",
+  "card_id": "CH-ZX-001",
+  "character": "黎黎隆",
+  "ten_yuan_focus": "ZX",
+  "mode": "single_ten_yuan",
+  "card_status": "active",
+  "registration_status": "registered",
+  "pipeline_status": "ready_for_B1",
+  "round_status": "pending_work_output",
+  "round_id": "CH-ZX-001-R001",
+  "task_id": "B-H3-CH-ZX-001-R001",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "duration": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "reference_aspect_ratio": "9:16 allowed",
+  "scene_asset_id": "SCENE-05",
+  "visual_goal": "让黎黎隆以一次机灵、好胜的快速穿隙行动赢得眼前开口，同时由自己长尾的过冲把下一步变复杂；只研究ZX，不引入第二十元。",
+  "changed_variable": "首卡基线变量：ZX行动造成自我制造的空间复杂化；唯一后果是长尾因额外加速横到自己的下一步路径前。",
+  "deliverables": {
+    "task": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/CH-ZX-001_CH-ZX-001-R001_20260925_1307.json",
+    "relay": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/CH-ZX-001_CH-ZX-001-R001_20260925_1307__v10_RELAY.json",
+    "prompt": "黎黎隆项目/角色魅力实验/B端/prompts/generated/CH-ZX-001_CH-ZX-001-R001_H3.md",
+    "run_A": "黎黎隆项目/角色魅力实验/B端/results/CH-ZX-001_CH-ZX-001-R001_run_A.json",
+    "run_B": "黎黎隆项目/角色魅力实验/B端/results/CH-ZX-001_CH-ZX-001-R001_run_B.json",
+    "run_A_frames": "黎黎隆项目/角色魅力实验/B端/results/frames/CH-ZX-001_CH-ZX-001-R001/run_A_frames.json",
+    "run_B_frames": "黎黎隆项目/角色魅力实验/B端/results/frames/CH-ZX-001_CH-ZX-001-R001/run_B_frames.json",
+    "audit": "黎黎隆项目/角色魅力实验/B端/card_review/audits/CH-ZX-001_CH-ZX-001-R001_AUDIT.md"
+  },
+  "evidence_boundary": {
+    "confirmed": [
+      "CARD_INDEX.json 与首卡登记一致确认 CH-ZX-001、黎黎隆、ZX、single_ten_yuan、active/registered/ready_for_B1、10–11s、16:9 landscape。",
+      "角色索引登记 LLL-MAIN-001 的 GitHub 路径；本轮已读取角色卡像素，红发、红白灰机械装甲、青色信号区、机械爪足及单条长分节机械龙尾可见。",
+      "场景索引登记 SCENE-05 为机械空港单色技术环境，语义支持固定流线、机械门与清晰受限路径。"
+    ],
+    "candidate": [
+      "SCENE-05 实际像素与门洞几何本轮未能回读；须由 Work 在同轮 Picture 2 绑定后确认。",
+      "最新 B1 R61 将 LLL-MAIN-001 标记为 NOT_AVAILABLE_AS_FINISHED_CHARACTER；与角色池 h3_render_eligible 状态冲突，所以本轮不声称角色完成验证。"
+    ],
+    "inference": [
+      "单次关门问题、一次快速斜向半步和尾部过冲，可把行动力、机灵、好胜与“太想赢使局面变复杂”转成一条可观察连续动作。"
+    ]
+  }
+}
