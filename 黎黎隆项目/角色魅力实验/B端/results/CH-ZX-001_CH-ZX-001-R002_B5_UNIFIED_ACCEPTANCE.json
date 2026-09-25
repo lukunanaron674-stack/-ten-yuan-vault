@@ -154,8 +154,8 @@
       "evidence": "ZX only; no second ten-yuan or forced sheng-ke-bu main axis."
     },
     "b2_b3_contract_consistency": {
-      "status": "AMBIGUOUS",
-      "evidence": "B2 forbids camera movement while B3 requires one motivated stable move; reconcile before 4090."
+      "status": "PASS",
+      "evidence": "Resolved in B2 commit 4ef8f2395943a2542c461b6a61c72df72bd04ee4; the single B3-defined stable lateral dolly plus restrained push-in is allowed, with no additional camera movement."
     }
   },
   "conclusion": "pending_work_output",
@@ -166,9 +166,30 @@
     "SCENE-05 passage geometry unverified",
     "run_A/run_B outputs absent",
     "six real frame files and hashes absent",
-    "audio inspection absent",
-    "B2/B3 camera wording requires reconciliation before execution"
+    "audio inspection absent"
   ],
   "source_b4_audit": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json",
-  "b4_prefill_status": "complete_without_visual_evidence"
+  "b4_prefill_status": "complete_without_visual_evidence",
+  "asset_source_update": {
+    "source": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_INDEX_20260925_1505_CH-ZX-001_R002.json",
+    "character": {
+      "asset_id": "LLL-MAIN-001",
+      "github_blob": "703db937d91ebb995db2a0eb230fd87652903cd2",
+      "bytes": 444265,
+      "dimensions": [
+        1690,
+        931
+      ],
+      "pixel_identity_review": "NOT_REVIEWED"
+    },
+    "scene": {
+      "asset_id": "SCENE-05",
+      "github_blob": "eb34acce753735d96565bc0108d502dfdc775088",
+      "dimensions": null,
+      "geometry_review": "NOT_REVIEWED"
+    },
+    "same_round_work_binding": "PENDING"
+  },
+  "b4_contract_resolution": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json",
+  "updated_at": "2026-09-25T15:10:53+08:00"
 }
