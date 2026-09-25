@@ -1,0 +1,47 @@
+{
+  "task_id": "MOUSE_B_20260925_0008_R48__v10_RELAY__v10__A",
+  "parent_task_id": "MOUSE_B_20260925_0008_R48__v10_RELAY",
+  "schema_version": null,
+  "clip_id": "A",
+  "prompt_chars": 4418,
+  "dual_sample": true,
+  "samples": [
+    {
+      "run": "run_A",
+      "task_id": "MOUSE_B_20260925_0008_R48__v10_RELAY__v10__A_run_A_0925130307",
+      "seed": 300290100,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0008_R48__v10_RELAY__v10__A_run_A_00001_.mp4"
+    },
+    {
+      "run": "run_B",
+      "task_id": "MOUSE_B_20260925_0008_R48__v10_RELAY__v10__A_run_B_0925130307",
+      "seed": 1909449712,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0008_R48__v10_RELAY__v10__A_run_B_00001_.mp4"
+    }
+  ],
+  "dynamic_chain_reading": "",
+  "shot_sequence": [],
+  "must_keep_check": [],
+  "negative_prompt": "no text, no subtitle, no logo, no random unreadable text",
+  "refs_source": "task",
+  "refs_used": [
+    "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "R1-10_异种村庄_双色主导.png"
+  ],
+  "frames": 240,
+  "audio_design": null,
+  "h3_prompt": "Subject: Landscape 16:9, one continuous 10-second single-character narrative. Show exactly one physical instance of the established mouse-ear mutant girl from Picture 1. Preserve her small body, slender limbs, white short hair with eye-covering fringe and top curl, two short oval translucent pale-purple mutated mouse ears attached directly to the sides of the skull, quiet cautious face, loose pale short tunic with dark trim, dark cross-body strap, existing side bag, pale socks and oversized dark shoes. Both ears remain inside the head-and-shoulder silhouette and never extend behind the shoulders or along the back. The reference describes exactly one person throughout.\n\nMovement: She begins with both feet planted and her posture compact. One faint nonverbal dry tap or air resonance occurs off screen from one side; its source is never shown. The nearer skull-attached ear pivots a few degrees toward it, followed by a smaller settling motion from the other ear, while her torso and feet remain still. Her eyes align with the ear direction and her head follows only a few degrees. She then holds a short visible pause with her hand still beside her body, as if deciding rather than recoiling. Only after that pause, one hand gently presses the already existing side bag against her hip without changing the strap layout. She finishes motionless in the original position, attention redirected and posture compact. No step, no whole-body turn and no sudden startle.\n\nScene: Picture 2 defines SCENE-08, the same two-color strange-village environment, its existing spatial continuity, negative space and original palette logic. Use only village forms, ground, depth layers and color relationships visibly supported by the bound scene image. Do not invent a door, bridge, rope, stall, animal, creature, person, machine, sign or story prop. The off-screen sound remains nonvisual and does not create a second subject.\n\nCamera: One locked eye-level three-quarter knee-up medium shot in a 16:9 landscape frame. Keep both ears, face, torso, cross-body strap, free hand and side bag readable together. Leave stable horizontal negative space toward the sound direction and keep headroom unchanged. Fixed framing and focal length; no push, pull, pan, tilt, tracking, cut, transition or split screen. The uncut view must make the ear response, gaze and head alignment, deliberate pause, hand action and final stillness directly comparable.\n\nLighting: Preserve the bound character materials and the scene reference's original two-color palette logic. Use one fixed soft diffuse light throughout. Keep the pale-purple ear translucency restrained and consistent. No flashing, relighting, weather change, sudden saturation shift or color redesign.\n\nAtmosphere: At first she may look withdrawn or fragile; the visible pause before securing the bag should allow a reading of quiet deliberation and self-possession without changing her cautious identity. Express this only through timing, posture and visible action. Use clear two-dimensional hand-drawn shapes, clean variable-width ink contours, light watercolor softness, low-saturation shadows and sufficient negative space only where compatible with the bound references. Do not copy another character's cyan-white energy body, materials or identity.\n\nAudio: Ambient soundscape: very light village air, faint distant structural creak and soft cloth movement, with one small nonverbal dry tap or air resonance after the stable baseline. Emotional sound cue: a restrained thin suspended tone begins after the ear turn, stays quiet through the deliberate pause and fades after the bag is secured, with no lyrics and no strong beat. Audio supports spatial direction, action readability and cautious emotion; it does not drive cuts and is not music-video editing.\n\nNegative: exactly one character and one physical body, no duplicate character, no second human figure, no split screen, no clone or mirror-double, no mirror duplicate, no reflection person, no crowd, no NPC, no visible sound source, no rabbit ears, no tail, no horns, no wings, no back-mounted wing-like silhouette, no shoulder blades or feathered appendages, no armor, no weapon, no invented prop, no extra limbs, no deformed hands, no altered strap layout, no missing side bag, no camera movement, no cut, no transition, no weather change, no abrupt color shift, no text overlay, no watermark, no abrupt redesign.",
+  "local_render": {
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0008_R48__v10_RELAY__v10__A_run_A_00001_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0008_R48__v10_RELAY__v10__A_run_A_00001_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0008_R48__v10_RELAY__v10__A_run_B_00001_.mp4"
+    ],
+    "elapsed_sec": 901,
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 13:03:07)\n[h3_qq_gen]   状态: running  (2026-09-25 13:03:48)\n[h3_qq_gen]   状态: done  (2026-09-25 13:10:49)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0008_R48__v10_RELAY__v10__A_run_A_00001_.mp4\n[h3_qq_gen] 轮询 MOUSE_B_20260925_0008_R48__v10_RELAY__v10__A_run_B_0925130307（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 13:10:49)\n[h3_qq_gen]   状态: done  (2026-09-25 13:17:50)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260925_0008_R48__v10_RELAY__v10__A_run_B_00001_.mp4",
+    "by": "b_new_format",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
