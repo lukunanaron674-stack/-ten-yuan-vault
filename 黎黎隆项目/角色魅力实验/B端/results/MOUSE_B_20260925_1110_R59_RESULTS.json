@@ -1,0 +1,91 @@
+{
+  "schema_version": "B-H3-RESULTS-1.2",
+  "task_id": "MOUSE_B_20260925_1110_R59",
+  "status": "pending_work_execution",
+  "actual_execution_count": 0,
+  "planned_run_count": 2,
+  "h3_validated": false,
+  "asset_binding": {
+    "picture_1": null,
+    "picture_2": null,
+    "same_round_receipts_complete": false
+  },
+  "runs": {
+    "run_A": {
+      "status": "pending",
+      "seed": null,
+      "execution_record": null,
+      "work_task_id": null,
+      "output_path": null,
+      "output_sha256": null,
+      "fps": null,
+      "total_frames": null,
+      "keyframes": [],
+      "audio_review": null
+    },
+    "run_B": {
+      "status": "pending",
+      "seed": null,
+      "execution_record": null,
+      "work_task_id": null,
+      "output_path": null,
+      "output_sha256": null,
+      "fps": null,
+      "total_frames": null,
+      "keyframes": [],
+      "audio_review": null
+    }
+  },
+  "historical_evidence_consumed": [
+    {
+      "task_family": "MOUSE_B_20260924_1208_R36__v10__A",
+      "status": "done_2_of_2",
+      "seeds": [
+        1979706846,
+        908940511
+      ],
+      "use_limit": "execution existence only; no keyframe/audio verdict and not R59 results"
+    },
+    {
+      "task_family": "MOUSE_B_20260924_1208_R36__v10__B",
+      "status": "done_2_of_2",
+      "seeds": [
+        1536609113,
+        1133938530
+      ],
+      "use_limit": "execution existence only; old pull-back/step structure rejected and not R59 results"
+    }
+  ],
+  "review": {
+    "single_character": null,
+    "identity_continuity": null,
+    "ear_topology": null,
+    "sequence_order": null,
+    "strap_contact": null,
+    "fixed_camera": null,
+    "audio": null,
+    "final_verdict": "NOT_REVIEWED"
+  },
+  "validation_target": {
+    "primary": "Both independent runs show the left ear response before eyes/head and complete one visible hand-to-existing-strap contact by 10 seconds, holding it through 11 seconds.",
+    "hard_fail": [
+      "human figure count is not exactly 1 in any acceptance frame",
+      "Picture 1 or Picture 2 lacks a same-round binding receipt",
+      "ear structure extends behind shoulders/back or becomes wing-like",
+      "hand-to-strap contact absent at final hold",
+      "camera/framing/light changes",
+      "more than one stimulus"
+    ],
+    "evidence_required_per_run": [
+      "asset binding receipt",
+      "seed or execution ordinal",
+      "Work task ID",
+      "output path and hash",
+      "fps and total frames",
+      "pre/onset/peak/post frames for n2–n6",
+      "audio presence and timing review"
+    ],
+    "current_verdict": "NOT_EXECUTED_NOT_H3_VALIDATED"
+  },
+  "truthful_boundary": "Sampling plan is not a render result. R59 remains 0/2 until Work writes real receipts, seeds/task IDs and outputs."
+}
