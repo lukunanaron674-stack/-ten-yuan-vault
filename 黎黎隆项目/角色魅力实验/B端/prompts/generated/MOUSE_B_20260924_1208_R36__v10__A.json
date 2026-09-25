@@ -1,0 +1,51 @@
+{
+  "task_id": "MOUSE_B_20260924_1208_R36__v10__A",
+  "parent_task_id": "MOUSE_B_20260924_1208_R36",
+  "schema_version": null,
+  "clip_id": "A",
+  "prompt_chars": 3924,
+  "dual_sample": true,
+  "samples": [
+    {
+      "run": "run_A",
+      "task_id": "MOUSE_B_20260924_1208_R36__v10__A_run_A_0925102856",
+      "seed": 1979706846,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__A_run_A_00002_.mp4"
+    },
+    {
+      "run": "run_B",
+      "task_id": "MOUSE_B_20260924_1208_R36__v10__A_run_B_0925102856",
+      "seed": 908940511,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__A_run_B_00002_.mp4"
+    }
+  ],
+  "dynamic_chain_reading": "",
+  "shot_sequence": [],
+  "must_keep_check": [],
+  "negative_prompt": "no text, no subtitle, no logo, no random unreadable text",
+  "refs_source": "task",
+  "refs_used": [
+    "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "R1-01_森林湖泊_单色.png"
+  ],
+  "frames": 240,
+  "audio_design": {
+    "ambient_soundscape": "quiet forest-lake air, one brief screen-left leaf rustle, a short near-silent gap, then soft screen-right water-lap and faint cloth settling",
+    "emotional_sound_cue": "very soft non-lyrical breath-like tone begins after the second ear turns and fades when the head stops",
+    "audio_role": "make directional attention legible without implying a second actor or MV rhythm"
+  },
+  "h3_prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds.\n\nSTYLE IDENTITY LOCK: preserve the exact identity, drawing language, proportions, materials and original colors of the approved Picture 1 mouse-ear mutant girl references. Keep her white short hair with eye-covering fringe and small upward curl, large translucent pale-violet mouse-ear mutation structures, small slender body, oversized pale short robe, dark collar, cuffs and hem blocks, diagonal strap and one side satchel. Preserve the verified identity, existing elements, spatial continuity and monochrome palette logic of Picture 2. Reference fidelity overrides generic style wording.\n\nVISUAL EXPRESSION VARIABLE: use a restrained chest-up medium close-up to make the sequence of ear, eye and head reactions readable. Use compatible variable-weight linework, reference-consistent thin shading, soft diffuse light and quiet negative space only where compatible with the source images. Do not impose colors, materials or glow absent from the references.\n\nCHARACTER (Picture 1): show exactly one physical instance of the established mouse-ear mutant girl. The half-body dynamic sheet and full-body identity sheet describe the same one person, never four people. Keep both mouse-ear mutation structures fully inside frame. Her torso remains still; only the ears, eyes and head make small movements.\n\nENVIRONMENT (Picture 2): preserve SCENE-01 as the same forest-lake location with its registered monochrome hierarchy. Picture 2 controls location identity and palette logic, not one mandatory crop. In the close background, use only soft supported tree, water, mist and open-space cues that are actually present. Do not invent a visible animal, person, machine, building, bridge, dock, sign, lamp or sound-producing object.\n\nCAMERA AND COMPOSITION: one fixed eye-level chest-up medium close-up in three-quarter view. Keep both mouse-ear structures, both eyes, the top of the diagonal strap and the upper robe readable. Leave quiet negative space on screen-left and screen-right for the two sound directions. The background remains softly subordinate but recognizably the same forest-lake scene. No push, pull, pan, tilt, cut or axis change.\n\nACTION: begin with the girl listening quietly, shoulders and torso still. A light natural breeze first moves the supported off-screen leaves on screen-left; her screen-left mouse-ear structure turns a small angle toward that sound while the other ear remains neutral. The leaf sound fades into a short quiet gap. A soft water-lap becomes clearer on screen-right; her screen-right ear then turns toward the water. Only after both ear reactions are readable do her eyes move from left to right. Her head follows by a few degrees and stops between the two directions. End with the torso unchanged, the ears held at two distinct attentive angles, and her cautious expression readable.\n\nAUDIO DESIGN: quiet forest-lake air, one brief screen-left leaf rustle, a short near-silent gap, then soft screen-right water-lap and faint upper-robe settling. Use one very soft non-lyrical breath-like tone that begins after the second ear turns and fades when her head stops. Audio establishes direction and cautious attention; it is not a song, beat track or MV cue.\n\nNEGATIVE: no second character, duplicate girl, clone, split screen, four-person character-sheet output, reflection person, shadow double or autonomous silhouette; no rabbit ears, ordinary replacement ears, tail, horns, wings, armor, weapon, new bag or changed robe; no cropped or missing mouse-ear structure, face drift or eye redesign; no visible animal or invented sound source; no walking, running, jumping, dancing, panic, exaggerated recoil or lip-sync; no camera movement, reframe, cut, axis flip or montage; no location replacement, glossy 3D render, hard synthetic digital edges, cyan-white energy humanoid, text, subtitle, logo or watermark.",
+  "local_render": {
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__A_run_A_00002_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__A_run_A_00002_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__A_run_B_00002_.mp4"
+    ],
+    "elapsed_sec": 880,
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 10:28:56)\n[h3_qq_gen]   状态: running  (2026-09-25 10:29:33)\n[h3_qq_gen]   状态: done  (2026-09-25 10:36:33)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__A_run_A_00002_.mp4\n[h3_qq_gen] 轮询 MOUSE_B_20260924_1208_R36__v10__A_run_B_0925102856（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 10:36:34)\n[h3_qq_gen]   状态: done  (2026-09-25 10:43:34)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1208_R36__v10__A_run_B_00002_.mp4",
+    "by": "b_new_format",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
