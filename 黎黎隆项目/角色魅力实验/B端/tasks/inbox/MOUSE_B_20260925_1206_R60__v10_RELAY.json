@@ -1,0 +1,97 @@
+{
+  "schema": "video_tenyuan_prompt_schema_v1.2",
+  "relay_id": "MOUSE_B_20260925_1206_R60__v10_RELAY",
+  "source_task_id": "MOUSE_B_20260925_1206_R60",
+  "cast": [
+    {
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "picture_slot": "Picture 1",
+      "expected_sha256": "417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef",
+      "asset_path": null,
+      "actual_sha256": null,
+      "dimensions": null,
+      "identity_verdict": null
+    }
+  ],
+  "scene": {
+    "scene_asset_id": "SCENE-02",
+    "picture_slot": "Picture 2",
+    "asset_path": null,
+    "sha256": null,
+    "dimensions": null,
+    "scene_verdict": null,
+    "geometry_verdict": null
+  },
+  "render_spec": {
+    "duration_seconds": 11,
+    "aspect_ratio": "16:9",
+    "width_greater_than_height": true,
+    "video_mode": "single_character_narrative",
+    "fixed_camera": true,
+    "full_body_required": true
+  },
+  "clips": [
+    {
+      "clip_id": "A",
+      "prompt": "Subject: Show exactly one physical instance of MOUSE-EAR-MUTANT-001 from Picture 1, continuously preserving the same face, short white hair, pale oversized robe with dark structural blocks, small slender proportions, diagonal strap and existing side satchel. Her two short oval translucent pale-violet mouse-ear mutation structures attach directly to the sides of her head and never extend behind the shoulders or become wings. She begins and remains fully upright on both feet, with both knees extended and her pelvis above her planted feet; she never sits, crouches or kneels. Movement: From 0–2 seconds she holds a quiet upright standing baseline with both feet planted and hands relaxed beside the existing diagonal strap. From 2–4 seconds one small localized water ripple occurs in the lake on frame right, the only external stimulus. From 4–6 seconds only the mouse ear nearer the lake turns about 4–7 degrees while both feet, knees, pelvis, torso, hands and the other ear remain still. From 6–8 seconds her eyes look toward the ripple first, then her head follows by about 3–5 degrees without recruiting the shoulders or changing her standing posture. From 8–10 seconds one hand follows one continuous short path to press the existing diagonal strap against the upper chest; there is no second adjustment. From 10–11 seconds every motion stops while the upright stance, attentive ear direction, slight head turn and visible hand-to-strap contact remain held. Scene: Picture 2 defines the single SCENE-02 forest-lake environment, its warm-sky and cool-lake relationship, existing shoreline, water, trees, atmospheric depth and usable standing ground. Use only elements actually supported by the bound image; keep the scene empty of all other people, human-shaped decoration, portrait, screen figure and reflected figure. Camera: 16:9 landscape, one locked eye-level full-body medium-wide shot for the entire 11 seconds; both feet, knees, pelvis, ears, eyes, diagonal strap and side satchel remain visible in the same composition; fixed framing and focal length, no movement and no cut. Lighting: Fixed soft diffuse reference light with clear two-dimensional line-and-plane separation and stable palette throughout; no relighting. Atmosphere: Quiet lakeside vigilance, restrained and observant rather than startled; low-amplitude hand-drawn motion, clean shapes and continuous identity. Audio: Soft lakeside air and low water presence, one gentle localized ripple cue at 2–4 seconds, minimal robe and strap contact at 8–10 seconds, and one sparse suspended low tone that resolves when the hand holds the strap; audio only clarifies space, causality, action and restrained emotion, with no lyrics or strong beat. Negative: no duplicate character, no second human figure, no split screen, no clone or mirror-double, no extra limbs, no text overlay, no watermark, no abrupt redesign, no sitting, no crouching, no kneeling, no bent-knee resting pose, no character reflection, no background human silhouette, no wing-like ear extension, no camera push, no camera pull-back, no pan, no tilt, no tracking, no cut, no weather change, no sudden color shift, no second stimulus, no lyrics, no strong beat.",
+      "audio_design": {
+        "ambient_soundscape": "soft lakeside air, low water presence, one localized gentle ripple, minimal robe and strap contact, quiet natural spatial reverb",
+        "emotional_sound_cue": "one sparse suspended low non-lyrical tone resolving on the final strap hold; no strong beat",
+        "audio_role": "support space, causal timing, action readability and restrained emotion only; never drive cuts or MV rhythm"
+      },
+      "sampling_plan": {
+        "run_count": 2,
+        "same_prompt_required": true,
+        "same_inputs_required": true,
+        "run_A": {
+          "execution_label": "first execution",
+          "seed_A": null,
+          "work_task_id": null,
+          "status": "pending",
+          "output": null
+        },
+        "run_B": {
+          "execution_label": "second execution",
+          "seed_B": null,
+          "work_task_id": null,
+          "status": "pending",
+          "output": null
+        },
+        "compare_axes": [
+          "upright standing posture maintained from first through final frame",
+          "human figure count equals exactly 1",
+          "two short head-attached ear structures remain topologically stable",
+          "ear response precedes eyes and head",
+          "feet, knees, pelvis and shoulders remain fixed",
+          "hand reaches existing diagonal strap by 10 seconds and contact holds through 11 seconds",
+          "fixed 16:9 full-body composition and identity continuity",
+          "single stimulus and audio timing"
+        ],
+        "historical_runs_not_current_results": [
+          {
+            "task_id": "MOUSE_B_20260924_1505_R39",
+            "run": "run_A",
+            "seed": 1192571036,
+            "verdict": "completed; seated/crouched sampled posture hard-failed standing baseline"
+          },
+          {
+            "task_id": "MOUSE_B_20260924_1505_R39",
+            "run": "run_B",
+            "seed": 541085860,
+            "verdict": "completed; standing sampled posture; other temporal/audio/scene claims remain indeterminate"
+          }
+        ]
+      }
+    }
+  ],
+  "execution_gate": {
+    "ready": false,
+    "requires": [
+      "Picture 1 same-round receipt and visual identity verdict",
+      "Picture 2 same-round receipt and SCENE-02 geometry verdict",
+      "upright full-body framing preflight",
+      "same prompt/inputs locked for run_A and run_B"
+    ]
+  },
+  "actual_execution_count": 0
+}
