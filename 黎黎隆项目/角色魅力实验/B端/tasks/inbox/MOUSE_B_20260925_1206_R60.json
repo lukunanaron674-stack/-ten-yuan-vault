@@ -1,0 +1,316 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "task_id": "MOUSE_B_20260925_1206_R60",
+  "task_version": "v1.0",
+  "parent_task_id": "MOUSE_B_20260925_1110_R59",
+  "status": "ready_for_same_round_asset_binding",
+  "video_mode": "single_character_narrative",
+  "duration_seconds_range": [
+    10,
+    11
+  ],
+  "duration_seconds": 11,
+  "aspect_ratio": "16:9",
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "scene_asset_id": "SCENE-02",
+  "reference_view": "Picture 1 authoritative mouse character sheet + Picture 2 SCENE-02 reference; both require same-round path/SHA-256/dimensions/verdict receipts",
+  "evidence_partition": {
+    "confirmed": [
+      {
+        "source": "R39 RESULTS after Work writeback",
+        "fact": "two real 1280x736, 24fps, 240-frame outputs exist with seeds 1192571036 and 541085860 and output SHA-256 values"
+      },
+      {
+        "source": "R39 six GitHub keyframes reviewed by B-end",
+        "fact": "single visible character and final hand-to-strap contact occur in both samples; run_A is seated/crouched while run_B is standing; sampled camera is stable"
+      },
+      {
+        "source": "R39 Work input validation",
+        "fact": "Picture 1 file exists at 941x1672 with SHA-256 417ce97887ba92b6d1c526bb8e6604a6f6d6d81a58a8eb94f0e1309192ea90ef, but authoritative visual identity comparison remains pending"
+      },
+      {
+        "source": "R39 Work gate",
+        "fact": "Picture 2 was not supplied, so SCENE-02 identity/geometry was not validated"
+      },
+      {
+        "source": "R59 and B1 R60 audit",
+        "fact": "R59 remains 0/2; registered or ready does not mean validated or rendered"
+      },
+      {
+        "source": "B-H3-TASK-1.2 user rule",
+        "fact": "one 10–11 second narrative, six fixed beats, one complete prompt executed twice, finished output 16:9"
+      }
+    ],
+    "candidates": [
+      "An explicit feet–knees–pelvis standing lock may prevent the seated/crouched branch seen in R39 run_A.",
+      "A full-body medium-wide composition may make standing compliance objectively reviewable while retaining strap contact readability."
+    ],
+    "inferences": [
+      "Because R39 posture compliance was 1/2 while final strap contact was 2/2, posture is the narrowest evidence-led variable to change.",
+      "Sparse head/mid/tail frames cannot establish ear→eyes→head order; node-relative evidence is still required."
+    ]
+  },
+  "subject_definition": {
+    "confirmed": "one small mouse-ear mutant girl with existing diagonal strap and side satchel; upright standing posture is explicit and measurable",
+    "pending_validation": [
+      "authoritative same-character verdict for Picture 1",
+      "SCENE-02 Picture 2 path/SHA/dimensions/geometry",
+      "whether both ear structures and strap remain readable in bound inputs"
+    ]
+  },
+  "retention_analysis": {
+    "retain": [
+      "R39 single-character lake response",
+      "one water stimulus",
+      "ear→eyes→head ordering hypothesis",
+      "one final strap press",
+      "fixed soft light",
+      "same prompt double sampling"
+    ],
+    "change_only": [
+      "make upright standing posture a hard full-duration constraint and use a fixed full-body medium-wide composition to measure it"
+    ],
+    "reject": [
+      "R39 vertical prompt wording",
+      "run_A seated/crouched baseline",
+      "any scene validation inferred from generated background",
+      "any claim that three frames prove temporal ordering or audio"
+    ]
+  },
+  "changed_variable": "R39 posture compliance: lock both runs to an upright standing baseline and final pose—both feet planted, knees extended, pelvis above feet—with sitting, crouching and kneeling as hard failures. Narrative action, stimulus and strap result stay unchanged.",
+  "internal_action_selection": {
+    "dynamic_chain_code": "N8 → NZ7 → Z5",
+    "observable_translation": [
+      "stable upright baseline",
+      "localized ear response",
+      "eyes-before-head confirmation",
+      "single strap press",
+      "stable upright result"
+    ],
+    "note": "Internal selection only; these terms do not appear in h3_prompt."
+  },
+  "dynamic_chain": [
+    {
+      "node": "n1",
+      "time": "0–2",
+      "observable": "upright standing baseline with two planted feet",
+      "falsifier": "sitting, crouching, kneeling or bent-knee resting pose"
+    },
+    {
+      "node": "n2",
+      "time": "2–4",
+      "observable": "one frame-right water ripple only",
+      "falsifier": "second cue or visible actor"
+    },
+    {
+      "node": "n3",
+      "time": "4–6",
+      "observable": "near ear turns while lower body remains fixed",
+      "falsifier": "whole-body reaction or wing-like ear growth"
+    },
+    {
+      "node": "n4",
+      "time": "6–8",
+      "observable": "eyes lead a 3–5 degree head turn",
+      "falsifier": "shoulders, pelvis or feet recruited"
+    },
+    {
+      "node": "n5",
+      "time": "8–10",
+      "observable": "one continuous hand path reaches existing diagonal strap",
+      "falsifier": "missed contact, repeat motion or new prop"
+    },
+    {
+      "node": "n6",
+      "time": "10–11",
+      "observable": "upright stance and visible contact hold",
+      "falsifier": "posture collapses or motion continues"
+    }
+  ],
+  "time_beats": [
+    {
+      "range_seconds": [
+        0,
+        2
+      ],
+      "role": "initial_state",
+      "single_changed_variable": "none; verify upright standing baseline",
+      "action": "both feet planted, knees extended, pelvis above feet, hands relaxed"
+    },
+    {
+      "range_seconds": [
+        2,
+        4
+      ],
+      "role": "unique_external_stimulus",
+      "single_changed_variable": "one frame-right water ripple begins and ends",
+      "action": "no visible cause and no second cue"
+    },
+    {
+      "range_seconds": [
+        4,
+        6
+      ],
+      "role": "local_response",
+      "single_changed_variable": "lake-side ear rotates 4–7 degrees",
+      "action": "other ear and body remain still"
+    },
+    {
+      "range_seconds": [
+        6,
+        8
+      ],
+      "role": "gaze_or_slight_head_response",
+      "single_changed_variable": "eyes lead, head follows 3–5 degrees",
+      "action": "shoulders and upright stance remain locked"
+    },
+    {
+      "range_seconds": [
+        8,
+        10
+      ],
+      "role": "small_hand_or_posture_change",
+      "single_changed_variable": "one hand presses the existing diagonal strap at upper chest",
+      "action": "one continuous path and no repeat adjustment"
+    },
+    {
+      "range_seconds": [
+        10,
+        11
+      ],
+      "role": "stopped_result",
+      "single_changed_variable": "all motion ceases",
+      "action": "upright stance and visible strap contact hold"
+    }
+  ],
+  "shot_grammar": {
+    "format": "16:9 landscape",
+    "camera": "locked eye-level",
+    "framing": "fixed full-body medium-wide shot",
+    "lens_and_focus": "fixed",
+    "lighting": "fixed soft diffuse",
+    "cuts": 0,
+    "movements": 0
+  },
+  "h3_prompt": "Subject: Show exactly one physical instance of MOUSE-EAR-MUTANT-001 from Picture 1, continuously preserving the same face, short white hair, pale oversized robe with dark structural blocks, small slender proportions, diagonal strap and existing side satchel. Her two short oval translucent pale-violet mouse-ear mutation structures attach directly to the sides of her head and never extend behind the shoulders or become wings. She begins and remains fully upright on both feet, with both knees extended and her pelvis above her planted feet; she never sits, crouches or kneels. Movement: From 0–2 seconds she holds a quiet upright standing baseline with both feet planted and hands relaxed beside the existing diagonal strap. From 2–4 seconds one small localized water ripple occurs in the lake on frame right, the only external stimulus. From 4–6 seconds only the mouse ear nearer the lake turns about 4–7 degrees while both feet, knees, pelvis, torso, hands and the other ear remain still. From 6–8 seconds her eyes look toward the ripple first, then her head follows by about 3–5 degrees without recruiting the shoulders or changing her standing posture. From 8–10 seconds one hand follows one continuous short path to press the existing diagonal strap against the upper chest; there is no second adjustment. From 10–11 seconds every motion stops while the upright stance, attentive ear direction, slight head turn and visible hand-to-strap contact remain held. Scene: Picture 2 defines the single SCENE-02 forest-lake environment, its warm-sky and cool-lake relationship, existing shoreline, water, trees, atmospheric depth and usable standing ground. Use only elements actually supported by the bound image; keep the scene empty of all other people, human-shaped decoration, portrait, screen figure and reflected figure. Camera: 16:9 landscape, one locked eye-level full-body medium-wide shot for the entire 11 seconds; both feet, knees, pelvis, ears, eyes, diagonal strap and side satchel remain visible in the same composition; fixed framing and focal length, no movement and no cut. Lighting: Fixed soft diffuse reference light with clear two-dimensional line-and-plane separation and stable palette throughout; no relighting. Atmosphere: Quiet lakeside vigilance, restrained and observant rather than startled; low-amplitude hand-drawn motion, clean shapes and continuous identity. Audio: Soft lakeside air and low water presence, one gentle localized ripple cue at 2–4 seconds, minimal robe and strap contact at 8–10 seconds, and one sparse suspended low tone that resolves when the hand holds the strap; audio only clarifies space, causality, action and restrained emotion, with no lyrics or strong beat. Negative: no duplicate character, no second human figure, no split screen, no clone or mirror-double, no extra limbs, no text overlay, no watermark, no abrupt redesign, no sitting, no crouching, no kneeling, no bent-knee resting pose, no character reflection, no background human silhouette, no wing-like ear extension, no camera push, no camera pull-back, no pan, no tilt, no tracking, no cut, no weather change, no sudden color shift, no second stimulus, no lyrics, no strong beat.",
+  "audio_design": {
+    "ambient_soundscape": "soft lakeside air, low water presence, one localized gentle ripple, minimal robe and strap contact, quiet natural spatial reverb",
+    "emotional_sound_cue": "one sparse suspended low non-lyrical tone resolving on the final strap hold; no strong beat",
+    "audio_role": "support space, causal timing, action readability and restrained emotion only; never drive cuts or MV rhythm"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "same_prompt_required": true,
+    "same_inputs_required": true,
+    "run_A": {
+      "execution_label": "first execution",
+      "seed_A": null,
+      "work_task_id": null,
+      "status": "pending",
+      "output": null
+    },
+    "run_B": {
+      "execution_label": "second execution",
+      "seed_B": null,
+      "work_task_id": null,
+      "status": "pending",
+      "output": null
+    },
+    "compare_axes": [
+      "upright standing posture maintained from first through final frame",
+      "human figure count equals exactly 1",
+      "two short head-attached ear structures remain topologically stable",
+      "ear response precedes eyes and head",
+      "feet, knees, pelvis and shoulders remain fixed",
+      "hand reaches existing diagonal strap by 10 seconds and contact holds through 11 seconds",
+      "fixed 16:9 full-body composition and identity continuity",
+      "single stimulus and audio timing"
+    ],
+    "historical_runs_not_current_results": [
+      {
+        "task_id": "MOUSE_B_20260924_1505_R39",
+        "run": "run_A",
+        "seed": 1192571036,
+        "verdict": "completed; seated/crouched sampled posture hard-failed standing baseline"
+      },
+      {
+        "task_id": "MOUSE_B_20260924_1505_R39",
+        "run": "run_B",
+        "seed": 541085860,
+        "verdict": "completed; standing sampled posture; other temporal/audio/scene claims remain indeterminate"
+      }
+    ]
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no sitting",
+    "no crouching",
+    "no kneeling",
+    "no bent-knee resting pose",
+    "no character reflection",
+    "no background human silhouette",
+    "no wing-like ear extension",
+    "no camera push",
+    "no camera pull-back",
+    "no pan",
+    "no tilt",
+    "no tracking",
+    "no cut",
+    "no weather change",
+    "no sudden color shift",
+    "no second stimulus",
+    "no lyrics",
+    "no strong beat"
+  ],
+  "must_keep": [
+    "one character and one scene",
+    "11 seconds",
+    "16:9 landscape",
+    "fixed full-body camera",
+    "both feet visible",
+    "one water stimulus",
+    "ear→eyes→head hypothesis",
+    "existing diagonal strap and side satchel",
+    "one final strap press",
+    "same prompt and bound inputs for both runs"
+  ],
+  "must_avoid": [
+    "seated, crouched or kneeling baseline",
+    "second person, reflection double or human-shaped background",
+    "ear becoming wing-like",
+    "step, shuffle or body relocation",
+    "camera movement or cut",
+    "second stimulus",
+    "new prop",
+    "reuse of R39 seeds as R60 results"
+  ],
+  "validation_target": {
+    "primary": "Both independent R60 runs remain fully upright in node evidence from n1 through n6 and finish with visible hand-to-existing-strap contact, while preserving a single character and fixed shot.",
+    "hard_fail": [
+      "any reviewed frame is seated, crouched, kneeling or lacks both planted feet",
+      "human figure count differs from exactly 1",
+      "Picture 1 or Picture 2 same-round receipt missing",
+      "ear becomes wing-like",
+      "final strap contact absent",
+      "camera/framing/light changes",
+      "more than one stimulus"
+    ],
+    "evidence_required_per_run": [
+      "asset receipts",
+      "seed or execution ordinal",
+      "Work task ID",
+      "output path/hash",
+      "fps/frames",
+      "pre/onset/peak/post frames for n2–n6 plus n1 and final posture frames",
+      "audio presence/timing review"
+    ],
+    "current_verdict": "NOT_EXECUTED_NOT_H3_VALIDATED"
+  }
+}
