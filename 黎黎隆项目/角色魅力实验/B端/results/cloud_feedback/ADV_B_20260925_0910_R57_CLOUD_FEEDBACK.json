@@ -1,0 +1,52 @@
+{
+  "schema_version": "B-H3-CLOUD-FEEDBACK-1.2",
+  "task_id": "ADV_B_20260925_0910_R57",
+  "status": "pending",
+  "required_runs": [
+    "run_A",
+    "run_B"
+  ],
+  "required_per_run": {
+    "real_seed_or_execution_order": true,
+    "work_task_id": true,
+    "output_sha256": true,
+    "input_asset_hashes": true,
+    "keyframes": [
+      "stable_start",
+      "cue_onset",
+      "boot_lift_peak",
+      "eye_head_confirmation",
+      "return_touchdown",
+      "tail"
+    ],
+    "same_foot_tracking": true,
+    "audio_track_status": true
+  },
+  "hard_fail_if": [
+    "Picture 2 is not actually bound",
+    "more than one external stimulus",
+    "boot never visibly leaves ground",
+    "boot lands laterally before return",
+    "different foot returns",
+    "repeated left-right shuffling",
+    "second human figure",
+    "camera/framing/light changes",
+    "historical seed or task ID copied"
+  ],
+  "review_labels": [
+    "PASS_REVERSAL_2_OF_2",
+    "FAIL_NO_LIFT",
+    "FAIL_SIDE_LANDING",
+    "FAIL_WRONG_FOOT",
+    "FAIL_REPEATED_TESTING",
+    "FAIL_IDENTITY",
+    "FAIL_SCENE_BINDING",
+    "INDETERMINATE"
+  ],
+  "blind_review_questions": [
+    "Did the character genuinely start the side step?",
+    "Did he cancel it because the single cue had ended, or did he look frightened and indecisive?",
+    "Was the same foot returned to the original line without repeated testing?"
+  ],
+  "notes": "B2 is a text hypothesis only; R53 render evidence is historical and not an R57 result."
+}
