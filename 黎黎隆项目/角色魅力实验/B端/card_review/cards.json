@@ -11,11 +11,11 @@
       "type": "single_tenyuan",
       "tenyuan": "ZX",
       "character_id": "LLL-MAIN-001",
-      "scene_id": null,
-      "round_id": "next_new_card",
+      "scene_id": "SCENE-05",
+      "round_id": "CH-ZX-001-R001",
       "card_version": "v1.0",
       "rule_version": "CH-ZX-EXEC-v1.0",
-      "status": "active",
+      "status": "active_pending_work_output",
       "registration_status": "registered",
       "pipeline_status": "ready_for_B1",
       "duration_target": "10-11s",
@@ -39,8 +39,21 @@
         }
       },
       "source_registration_file": "card_review/cards/CH-ZX-001.json",
-      "source_task": "tasks/inbox/B_CARD_SYSTEM_NEXT_ROUND_20260924.md",
-      "notes": "新卡已正式注册并可进入 B1；真实首中尾帧须由 Work 端从本卡本轮 run_A/run_B 生成结果中回写，不能用参考图冒充。"
+      "source_task": "tasks/inbox/CH-ZX-001_CH-ZX-001-R001_20260925_1307.json",
+      "notes": "CH-ZX-001 首个执行轮次已登记；文本结构通过。run_A/run_B、两张素材同轮绑定、seed、输出及六张首中尾帧均为 pending_work_output，不得视为已渲染或已完成视觉验证。",
+      "task_id": "B-H3-CH-ZX-001-R001",
+      "current_round_registration": "card_review/rounds/CH-ZX-001_CH-ZX-001-R001.json",
+      "current_deliverables": {
+        "round_registration": "card_review/rounds/CH-ZX-001_CH-ZX-001-R001.json",
+        "task": "tasks/inbox/CH-ZX-001_CH-ZX-001-R001_20260925_1307.json",
+        "relay": "tasks/inbox/CH-ZX-001_CH-ZX-001-R001_20260925_1307__v10_RELAY.json",
+        "prompt": "prompts/generated/CH-ZX-001_CH-ZX-001-R001_H3.md",
+        "run_A": "results/CH-ZX-001_CH-ZX-001-R001_run_A.json",
+        "run_B": "results/CH-ZX-001_CH-ZX-001-R001_run_B.json",
+        "run_A_frames": "results/frames/CH-ZX-001_CH-ZX-001-R001/run_A_frames.json",
+        "run_B_frames": "results/frames/CH-ZX-001_CH-ZX-001-R001/run_B_frames.json",
+        "audit": "card_review/audits/CH-ZX-001_CH-ZX-001-R001_AUDIT.md"
+      }
     },
     {
       "card_id": null,
