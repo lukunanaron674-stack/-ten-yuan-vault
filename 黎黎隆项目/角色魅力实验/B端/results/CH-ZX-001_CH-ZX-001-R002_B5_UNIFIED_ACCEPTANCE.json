@@ -82,60 +82,80 @@
   },
   "checks": {
     "stage_identity_consistency": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "PASS",
+      "evidence": "B4 verified the same card, round, versions and asset IDs across inspected stage envelopes."
     },
     "asset_reference_consistency": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "AMBIGUOUS",
+      "evidence": "Registered IDs/paths agree; same-round binding receipts are absent."
     },
     "card_and_rule_version_consistency": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "PASS",
+      "evidence": "v1.0 and CH-ZX-EXEC-v1.0 agree across inspected artifacts."
     },
     "round_id_consistency": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "PASS",
+      "evidence": "CH-ZX-001-R002 agrees across inspected artifacts."
     },
     "character_identity": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "NOT_REVIEWED",
+      "evidence": "No real output pixels."
     },
     "action_readability": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "NOT_REVIEWED",
+      "evidence": "No video or frames."
     },
     "camera_stability": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "NOT_REVIEWED",
+      "evidence": "No rendered temporal evidence."
     },
     "atmosphere_fit": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "NOT_REVIEWED",
+      "evidence": "No rendered visual/audio evidence."
     },
     "no_duplicate_or_clone": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "NOT_REVIEWED",
+      "evidence": "No output frames."
     },
     "duration_10_11s": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "PASS_TEXT_ONLY",
+      "evidence": "11 seconds specified; real output duration null."
     },
     "landscape_16_9": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "PASS_TEXT_ONLY",
+      "evidence": "16:9 landscape specified; 9:16 reference is allowed."
     },
     "audio_fields_complete": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "PASS_TEXT_ONLY",
+      "evidence": "All three fields exist; actual audio absent."
     },
     "run_pair_parameter_consistency": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "PASS_PLAN_ONLY",
+      "evidence": "Same inputs/prompt/workflow/parameters with seed-only difference required; execution fingerprints null."
     },
     "six_frame_evidence_complete": {
-      "status": "pending_work_output",
-      "evidence": null
+      "status": "FAIL_MISSING_OUTPUT",
+      "evidence": "All six frame records remain null."
+    },
+    "shot_size_change_visible": {
+      "status": "NOT_REVIEWED",
+      "evidence": "No video proves wide-to-medium-wide change."
+    },
+    "background_parallax_visible": {
+      "status": "NOT_REVIEWED",
+      "evidence": "No video proves parallax."
+    },
+    "whole_body_displacement_visible": {
+      "status": "NOT_REVIEWED",
+      "evidence": "No video proves one-shoulder-width lateral crossing."
+    },
+    "single_ten_yuan_boundary": {
+      "status": "PASS",
+      "evidence": "ZX only; no second ten-yuan or forced sheng-ke-bu main axis."
+    },
+    "b2_b3_contract_consistency": {
+      "status": "AMBIGUOUS",
+      "evidence": "B2 forbids camera movement while B3 requires one motivated stable move; reconcile before 4090."
     }
   },
   "conclusion": "pending_work_output",
@@ -143,8 +163,12 @@
   "visual_validation_claim": false,
   "blocking_reasons": [
     "Picture 1/2 binding receipt absent",
+    "SCENE-05 passage geometry unverified",
     "run_A/run_B outputs absent",
     "six real frame files and hashes absent",
-    "audio inspection absent"
-  ]
+    "audio inspection absent",
+    "B2/B3 camera wording requires reconciliation before execution"
+  ],
+  "source_b4_audit": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json",
+  "b4_prefill_status": "complete_without_visual_evidence"
 }
