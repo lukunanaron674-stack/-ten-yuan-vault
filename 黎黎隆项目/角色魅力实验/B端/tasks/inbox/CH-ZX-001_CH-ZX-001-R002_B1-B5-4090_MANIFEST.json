@@ -18,13 +18,29 @@
     "character": {
       "asset_id": "LLL-MAIN-001",
       "registered_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
-      "binding_status": "pending_work_binding"
+      "binding_status": "pending_work_binding",
+      "source_evidence": {
+        "github_blob": "703db937d91ebb995db2a0eb230fd87652903cd2",
+        "byte_size": 444265,
+        "dimensions": [
+          1690,
+          931
+        ],
+        "byte_read": true,
+        "pixel_visual_review": false
+      }
     },
     "scene": {
       "asset_id": "SCENE-05",
       "registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
       "binding_status": "pending_work_binding",
-      "geometry_gate": "must contain one existing readable narrow mechanical passage; otherwise binding_mismatch"
+      "geometry_gate": "must contain one existing readable narrow mechanical passage; otherwise binding_mismatch",
+      "source_evidence": {
+        "github_blob": "eb34acce753735d96565bc0108d502dfdc775088",
+        "byte_read": false,
+        "dimensions": null,
+        "geometry_visual_review": false
+      }
     }
   },
   "acceptance_fields": [
@@ -64,8 +80,16 @@
       "rule_version": "CH-ZX-EXEC-v1.0",
       "character_asset_id": "LLL-MAIN-001",
       "scene_asset_id": "SCENE-05",
-      "status": "pending_work_output",
-      "conclusion": "pending_work_output"
+      "status": "asset_sources_indexed_work_binding_pending",
+      "conclusion": "github_sources_indexed_same_round_binding_pending",
+      "asset_index": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_INDEX_20260925_1505_CH-ZX-001_R002.json",
+      "evidence": {
+        "character_source": "GitHub file bytes read; JPEG dimensions parsed; no pixel-level identity verdict",
+        "scene_source": "GitHub registered path/blob confirmed; dimensions and geometry unverified",
+        "work_binding": "Picture 1/2 same-round receipts absent",
+        "work_output": "run_A/run_B actual_completed_runs=0"
+      },
+      "handoff_action": "Work/Codex must bind the exact Picture 1 and Picture 2 sources for R002, return path/SHA256/dimensions receipts, validate character identity and SCENE-05 geometry, then release the unchanged B3 prompt to 4090 run_A/run_B."
     },
     "B2": {
       "card_id": "CH-ZX-001",
@@ -132,11 +156,11 @@
     "B5": "unified fifth-stage acceptance record"
   },
   "invariant_check": "all six stage envelopes must remain byte-equivalent for card/round/version/asset identifiers",
-  "current_conclusion": "B4 audit complete: text CONDITIONAL_PASS, overall AMBIGUOUS, visual NOT_REVIEWED; 4090 and B5 remain pending_work_output",
+  "current_conclusion": "B1 GitHub source refresh complete; same-round Picture 1/2 binding and visual validation remain pending. B2/B3 text are ready; B4 visual quality is NOT_REVIEWED; 4090 and B5 remain pending_work_output.",
   "last_stage_update": {
-    "stage": "B4",
-    "updated_at": "2026-09-25T14:36:25+08:00",
-    "status": "audit_complete_visual_not_reviewed",
-    "source": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json"
+    "stage": "B1",
+    "updated_at": "2026-09-25T15:04:58+08:00",
+    "status": "asset_sources_indexed_work_binding_pending",
+    "source": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_INDEX_20260925_1505_CH-ZX-001_R002.json"
   }
 }
