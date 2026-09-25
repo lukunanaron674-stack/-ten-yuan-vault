@@ -1,0 +1,361 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "research_rule_version": "B端_角色感受实验总规_v1.0",
+  "task_id": "ADV_B_20260925_0811_R56",
+  "task_version": "v1.0",
+  "parent_task_id": "ADV_B_20260925_0710_R55",
+  "comparison_parent_task_id": "ADV_B_20260925_0508_R53",
+  "created_at": "2026-09-25T08:11:33+08:00",
+  "status": "text_ready_render_blocked_pending_dual_asset_binding",
+  "project": "黎黎隆项目/角色魅力实验/B端",
+  "video_mode": "single_character_narrative",
+  "duration_seconds_range": [
+    10,
+    11
+  ],
+  "planned_duration_seconds": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "character_id": "ADV-001",
+  "scene_asset_id": "SCENE-04",
+  "reference_view": {
+    "type": "full_body_identity",
+    "picture_1": "D:/H3/pool/character_refs/ADV-001_冒险者_H3_sheet_001.jpg; sha256 4284a72886e485ffc18fa0672207599bd244e886cd600ca5531d18f133c8e10c; 941x1672; formal same-character verification remains false",
+    "picture_2": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-04_森林湖泊_五色组合.png; actual path/blob/hash/dimensions must be confirmed by Work before execution",
+    "binding_status": "Picture 1 file known with identity warning; Picture 2 pending actual binding"
+  },
+  "source_classification": {
+    "confirmed": [
+      {
+        "source": "R53 real dual render",
+        "commit": "ad804f721cf8acb5eb370f1ca2144f6e41181ca3",
+        "fact": "two real 1280x736, 24fps, 240-frame outputs completed with seeds, task IDs and SHA-256"
+      },
+      {
+        "source": "R53 six keyframes",
+        "commit": "576e6b3b974ad94da3ca82ef84e8b383c7392787",
+        "fact": "all six frames show one foreground character; run_B tail shows chest-strap contact while run_A tail leaves the hand down"
+      },
+      {
+        "source": "R53 integrity merge",
+        "commit": "1e9268efaf86f09829430f46f7ed72efaf5cfead",
+        "fact": "render completion and frame review merged after stale writeback overwrite"
+      },
+      {
+        "source": "R53 Work binding record",
+        "commit": "ed3f00be667706ff0e7ed74787e8c48c2e703cf0",
+        "fact": "primary execution supplied the character image only; Picture 2 was not supplied"
+      }
+    ],
+    "candidate": [
+      "a mandatory visible hand-to-existing-strap endpoint held through the final second may raise action reproducibility from 1/2 to 2/2",
+      "the completed contact may read as economical competence rather than unfinished hesitation"
+    ],
+    "excluded": [
+      "claiming R53 keyframes prove full motion timing or audio",
+      "claiming SCENE-04 was actually bound in R53",
+      "copying R53 seeds/task IDs into R56",
+      "changing the stimulus, character, environment ID, camera, lighting or action order",
+      "using the upstream 9:16 error; finished output remains 16:9"
+    ]
+  },
+  "subject_definition": {
+    "single_subject": "exactly one physical ADV-001 instance",
+    "identity_lock": [
+      "broad heavy adult body",
+      "short dark hair and thick beard",
+      "red scarf",
+      "complete backpack and rolled gear",
+      "pale metal shoulder/chest structure",
+      "one cyan waist lantern",
+      "heavy gloves and boots"
+    ],
+    "contact_target": "one already-existing diagonal chest strap visible throughout; never create a new strap"
+  },
+  "retention_analysis": {
+    "must_retain": [
+      "R53 foreground character and equipment",
+      "R53 SCENE-04 experiment identity",
+      "R53 external cue and cloth response",
+      "eyes-before-head order",
+      "11-second 16:9 locked full-body shot",
+      "fixed soft light",
+      "same-prompt dual sampling"
+    ],
+    "confirmed_failure_to_remove": [
+      "R53 run_A tail lacks visible hand-to-strap contact"
+    ],
+    "not_yet_verified": [
+      "formal character identity",
+      "R56 Picture 2 binding",
+      "full motion path",
+      "audio",
+      "blind viewer impression"
+    ]
+  },
+  "changed_variable": {
+    "type": "hand_action_endpoint",
+    "from": "R53 allowed the press to be absent or unfinished in one sample",
+    "to": "R56 requires one continuous reach to the existing diagonal chest strap, palm contact completed by 10s and visibly held through 11s",
+    "single_variable": true
+  },
+  "dynamic_chain": {
+    "internal_only": true,
+    "chain": "N8+X7 -> NZ8克N6 -> Z6补NZ8 -> Z6克X5 -> XN8克Z3 -> N8补X8 -> N9+NZ7",
+    "status": "EXPERIMENTAL_HYPOTHESIS_NOT_VALIDATED",
+    "nodes": [
+      {
+        "time": "0-2s",
+        "node_id": "n0_stable",
+        "beat": "already settled",
+        "observable_magnitude": {
+          "angle_deg": 0,
+          "displacement": "0",
+          "duration_sec": 2,
+          "affected_body_region": "whole body held stable"
+        },
+        "relation_class": "共存",
+        "relation_direction": "N+X",
+        "camera_change": "none"
+      },
+      {
+        "time": "2-4s",
+        "node_id": "n1_air_cue",
+        "beat": "one natural air cue",
+        "observable_magnitude": {
+          "angle_deg": null,
+          "displacement": "existing foliage/water only, low amplitude",
+          "duration_sec": "<=1.0",
+          "affected_body_region": "environment only"
+        },
+        "relation_class": "克",
+        "relation_direction": "NZ->N",
+        "camera_change": "none"
+      },
+      {
+        "time": "4-6s",
+        "node_id": "n2_cloth_response",
+        "beat": "one local scarf/cloth response",
+        "observable_magnitude": {
+          "angle_deg": "small, <=8",
+          "displacement": "cloth edge only",
+          "duration_sec": "<=1.0",
+          "affected_body_region": "scarf and nearest cloth edge"
+        },
+        "relation_class": "补",
+        "relation_direction": "Z->NZ",
+        "camera_change": "none"
+      },
+      {
+        "time": "6-8s",
+        "node_id": "n3_eye_head_check",
+        "beat": "eyes first, head a few degrees second",
+        "observable_magnitude": {
+          "angle_deg": "head 3-7",
+          "displacement": "no torso or foot translation",
+          "duration_sec": "0.8-1.4",
+          "affected_body_region": "eyes and head only"
+        },
+        "relation_class": "共存",
+        "relation_direction": "Z->X",
+        "camera_change": "none"
+      },
+      {
+        "time": "8-10s",
+        "node_id": "n4_hand_contact",
+        "beat": "one hand reaches existing diagonal chest strap and completes palm contact",
+        "observable_magnitude": {
+          "angle_deg": "elbow flexion only as needed",
+          "displacement": "resting hand to chest strap, one continuous path",
+          "duration_sec": "1.2-1.8",
+          "affected_body_region": "one forearm, hand and existing strap"
+        },
+        "relation_class": "克",
+        "relation_direction": "XN->Z",
+        "camera_change": "none"
+      },
+      {
+        "time": "10-11s",
+        "node_id": "n5_contact_hold",
+        "beat": "hand holds on strap; everything stops",
+        "observable_magnitude": {
+          "angle_deg": 0,
+          "displacement": "0 after contact",
+          "duration_sec": 1,
+          "affected_body_region": "hand-to-strap contact and whole load"
+        },
+        "relation_class": "补",
+        "relation_direction": "N->X",
+        "camera_change": "none"
+      }
+    ]
+  },
+  "time_beats": [
+    {
+      "time": "0-2s",
+      "node_id": "n0_stable",
+      "beat": "already settled",
+      "observable_magnitude": {
+        "angle_deg": 0,
+        "displacement": "0",
+        "duration_sec": 2,
+        "affected_body_region": "whole body held stable"
+      }
+    },
+    {
+      "time": "2-4s",
+      "node_id": "n1_air_cue",
+      "beat": "one natural air cue",
+      "observable_magnitude": {
+        "angle_deg": null,
+        "displacement": "existing foliage/water only, low amplitude",
+        "duration_sec": "<=1.0",
+        "affected_body_region": "environment only"
+      }
+    },
+    {
+      "time": "4-6s",
+      "node_id": "n2_cloth_response",
+      "beat": "one local scarf/cloth response",
+      "observable_magnitude": {
+        "angle_deg": "small, <=8",
+        "displacement": "cloth edge only",
+        "duration_sec": "<=1.0",
+        "affected_body_region": "scarf and nearest cloth edge"
+      }
+    },
+    {
+      "time": "6-8s",
+      "node_id": "n3_eye_head_check",
+      "beat": "eyes first, head a few degrees second",
+      "observable_magnitude": {
+        "angle_deg": "head 3-7",
+        "displacement": "no torso or foot translation",
+        "duration_sec": "0.8-1.4",
+        "affected_body_region": "eyes and head only"
+      }
+    },
+    {
+      "time": "8-10s",
+      "node_id": "n4_hand_contact",
+      "beat": "one hand reaches existing diagonal chest strap and completes palm contact",
+      "observable_magnitude": {
+        "angle_deg": "elbow flexion only as needed",
+        "displacement": "resting hand to chest strap, one continuous path",
+        "duration_sec": "1.2-1.8",
+        "affected_body_region": "one forearm, hand and existing strap"
+      }
+    },
+    {
+      "time": "10-11s",
+      "node_id": "n5_contact_hold",
+      "beat": "hand holds on strap; everything stops",
+      "observable_magnitude": {
+        "angle_deg": 0,
+        "displacement": "0 after contact",
+        "duration_sec": 1,
+        "affected_body_region": "hand-to-strap contact and whole load"
+      }
+    }
+  ],
+  "shot_grammar": {
+    "shot": "locked eye-level full-body medium-wide three-quarter view",
+    "aspect_ratio": "16:9 landscape",
+    "camera_movement": "none",
+    "cut": "none",
+    "lighting": "fixed soft diffuse",
+    "composition": "both boots, full backpack, existing diagonal chest strap, full hand path and final palm contact readable together"
+  },
+  "h3_prompt": "Subject: Landscape 16:9, one continuous 11-second single-character narrative. Show exactly one physical instance of the established heavy adult adventurer from Picture 1. Preserve his broad heavy body, grounded weight, short dark hair, thick dark beard, tired experienced face, layered worn dark clothing, red scarf, crossing straps and buckles, pale metal shoulder and chest structure, complete backpack and rolled equipment, one cyan-lit waist lantern, heavy gloves and boots. Keep every connected item, body proportion, material, surface wear and reference color unchanged.\n\nMovement: From 0 to 2 seconds he stands still with both boots planted and the complete load already settled. From 2 to 4 seconds one brief natural air movement crosses only existing foliage or the water surface visibly supported by Picture 2; it creates no new object and no danger. From 4 to 6 seconds only the existing loose edge of his scarf and the nearest attached cloth layer respond once, while his torso, boots and load remain grounded. From 6 to 8 seconds his eyes move first and his head turns only a few degrees toward the affected side, then stops. From 8 to 10 seconds one gloved hand travels once from its resting position to the already-existing diagonal chest strap, completes clear palm contact by the end of this interval and makes one small press; the hand must not stop in midair, touch a new strap or repeat the adjustment. From 10 to 11 seconds the hand remains visibly resting on that same strap while the cloth and load stop, forming a calm stable final result.\n\nScene: Picture 2 defines SCENE-04, the same forest-lake environment, its existing elements, spatial continuity and original five-color hierarchy. Use the brief air movement only if the bound scene image visibly supports existing foliage or water. Keep the background free of other people and person-like reflections. Do not invent a path, narrowing, obstacle, bridge, rock, root, building, sign, rail, creature, vehicle or new weather event.\n\nCamera: One locked eye-level full-body medium-wide three-quarter view in a 16:9 landscape frame. Keep both boots, the full backpack silhouette, the complete hand-to-strap path and the final palm contact readable together. Fixed framing, focal length and horizon; no push, pull, pan, tilt, tracking, reframing, cut, transition or split screen. The same existing diagonal chest strap remains visible from first frame to last frame.\n\nLighting: Preserve Picture 1 materials and Picture 2 palette logic under one fixed soft diffuse light. Keep the cyan lantern as one small identity light only. No new glow, flashing, relighting, weather change, sudden saturation shift or color redesign.\n\nAtmosphere: He reads as alert without alarm and experienced without theatricality. His appeal comes from noticing a small environmental change and completing one economical, deliberate equipment contact instead of leaving the response unfinished. Use clear two-dimensional hand-drawn shapes, restrained variable-width linework, soft diffuse depth and restrained shadows only where compatible with the bound references.\n\nAudio: Ambient soundscape: quiet forest-lake air, distant water only if supported by Picture 2, one brief soft leaf-or-surface rustle, one cloth response, one faint existing-strap contact creak and low equipment weight. Emotional sound cue: one sparse non-melodic low tone rises slightly during the eye-and-head check and resolves only when the palm reaches the strap, with no lyrics and no strong beat. Audio supports action completion, spatial awareness and restrained emotion only; it does not drive cuts and is not music-video editing.\n\nNegative: exactly one character and one physical body, no duplicate character, no second human figure, no split screen, no clone or mirror-double, no reflection person, no crowd, no NPC, no extra limbs, no text overlay, no watermark, no abrupt redesign, no young slim redesign, no removed backpack, no dropped equipment, no duplicate lantern, no new strap, no new buckle, no new weapon, no hand hovering short of the strap, no ambiguous hand endpoint, no repeated adjustment, no step, no panic, no run, no jump, no acrobatics, no invented object or scene geometry, no camera movement, no cut, no transition, no weather change, no abrupt color shift, no lyrics, no strong beat, no MV editing, no glossy 3D rendering.",
+  "audio_design": {
+    "ambient_soundscape": "quiet forest-lake air, distant water only if supported by Picture 2, one brief soft leaf-or-surface rustle, one cloth response, one faint existing-strap contact creak and low equipment weight",
+    "emotional_sound_cue": "one sparse non-melodic low tone rises slightly during the check and resolves only when the palm reaches the strap; no lyrics or strong beat",
+    "audio_role": "support action completion, spatial awareness and restrained emotion only; do not drive cuts; not MV editing",
+    "actual_audio_track_status": "UNKNOWN_PENDING_WORK"
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "same_prompt_and_inputs": true,
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "status": "planned"
+    },
+    "compare_axes": [
+      "single-character continuity",
+      "ADV identity",
+      "Picture 2 scene consistency",
+      "eyes-before-head order",
+      "hand reaches correct existing strap",
+      "palm contact visible at 10s",
+      "contact held through final frame",
+      "camera stability",
+      "audio presence"
+    ],
+    "actual_completed_runs": 0
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no reflection person",
+    "no crowd",
+    "no NPC",
+    "no new strap",
+    "no new buckle",
+    "no hand hovering short of the strap",
+    "no camera movement",
+    "no cut",
+    "no weather change",
+    "no abrupt color shift",
+    "no lyrics",
+    "no strong beat",
+    "no MV editing"
+  ],
+  "must_keep": [
+    "ADV-001 identity and complete load",
+    "one cyan lantern",
+    "SCENE-04 identity",
+    "six fixed time beats",
+    "11 seconds",
+    "16:9 landscape finished output",
+    "fixed camera, framing and light",
+    "same prompt and inputs for both runs"
+  ],
+  "must_avoid": [
+    "new strap or buckle",
+    "hand stopping in midair",
+    "copying R53 execution identifiers",
+    "claiming scene binding without Picture 2",
+    "9:16 finished output",
+    "camera movement",
+    "unverified render/audio/feeling claims"
+  ],
+  "validation_target": {
+    "input_gate": [
+      "Picture 1 path/SHA/dimensions and identity verdict",
+      "Picture 2 actual path/SHA/dimensions and scene verdict",
+      "same two inputs for both runs"
+    ],
+    "action_gate": "both runs show one hand complete contact with the same existing diagonal chest strap by 10s and hold it through the final result",
+    "hard_fail": [
+      "hand never reaches strap",
+      "hand touches different/new object",
+      "contact not visible in final evidence",
+      "second human figure",
+      "camera/framing/light change"
+    ],
+    "result_gate": "2/2 real R56 runs with seeds/task IDs/output hashes, keyframes and separate audio status"
+  }
+}
