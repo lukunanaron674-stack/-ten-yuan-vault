@@ -1,0 +1,89 @@
+{
+  "schema_version": "B-H3-RESULT-1.3",
+  "task_id": "ADV_B_20260925_0910_R57",
+  "status": "pending_work_execution",
+  "planned_runs": 2,
+  "actual_completed_runs": 0,
+  "input_gate": {
+    "character_path": "D:/H3/pool/character_refs/ADV-001_冒险者_H3_sheet_001.jpg",
+    "character_sha256": "4284a72886e485ffc18fa0672207599bd244e886cd600ca5531d18f133c8e10c",
+    "same_character_visual_verified": false,
+    "scene_registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-04_森林湖泊_五色组合.png",
+    "scene_actual_bound_path": null,
+    "scene_sha256": null,
+    "scene_dimensions": null,
+    "scene_geometry_check": null,
+    "scene_registered_blob": "efefd97514fc31d569134c821aada9cb3fdcb206"
+  },
+  "workflow": {
+    "workflow_id": null,
+    "fps_num": null,
+    "fps_den": null,
+    "total_frames": null,
+    "duration_seconds_actual": null
+  },
+  "audio_design": {
+    "ambient_soundscape": "quiet forest-lake air, distant water only if supported by Picture 2, one brief soft surface-or-leaf rustle with a clear natural decay, one low boot-lift cloth creak and one soft return contact",
+    "emotional_sound_cue": "one sparse non-melodic low tone begins after the boot lifts and resolves when the same boot returns to the original line; no second cue, lyrics or strong beat",
+    "audio_role": "support spatial clarity, action reversibility and restrained emotion only; do not drive cuts; not MV editing",
+    "actual_audio_track_status": "UNKNOWN_PENDING_WORK"
+  },
+  "runs": {
+    "run_A": {
+      "seed": null,
+      "execution_record": "pending_first_execution",
+      "work_task_id": null,
+      "output_path": null,
+      "output_sha256": null,
+      "status": "planned"
+    },
+    "run_B": {
+      "seed": null,
+      "execution_record": "pending_second_execution",
+      "work_task_id": null,
+      "output_path": null,
+      "output_sha256": null,
+      "status": "planned"
+    }
+  },
+  "action_validation": {
+    "status": "NOT_REVIEWED",
+    "per_run": {
+      "run_A": {
+        "boot_lift_frame": null,
+        "quiet_confirmation_frame": null,
+        "return_touchdown_frame": null,
+        "side_landing_before_return": null
+      },
+      "run_B": {
+        "boot_lift_frame": null,
+        "quiet_confirmation_frame": null,
+        "return_touchdown_frame": null,
+        "side_landing_before_return": null
+      }
+    },
+    "hard_gate": "2/2 show lift, no side landing, same-foot return to original mark and final hold"
+  },
+  "prior_evidence_not_current_result": [
+    {
+      "source_task_id": "B2_20260925_0815_ADV-001_SCENE-04",
+      "commit": "e8367a4bcfe21cf6dbd8fe9868518c86480eaf8d",
+      "type": "text_hypothesis_only",
+      "applies_to_current_result": false
+    },
+    {
+      "source_task_id": "ADV_B_20260925_0508_R53",
+      "render_commit": "ad804f721cf8acb5eb370f1ca2144f6e41181ca3",
+      "frame_commit": "576e6b3b974ad94da3ca82ef84e8b383c7392787",
+      "actual_completed_runs": 2,
+      "applies_to_current_result": false
+    }
+  ],
+  "render_claim": null,
+  "audio_claim": null,
+  "blind_viewer_feedback": {
+    "status": "pending",
+    "responses": []
+  },
+  "rule": "Do not copy B2 claims or historical seeds, task IDs or outputs into R57."
+}
