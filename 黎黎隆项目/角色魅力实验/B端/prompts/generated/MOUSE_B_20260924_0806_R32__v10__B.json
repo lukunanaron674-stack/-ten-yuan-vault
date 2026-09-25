@@ -1,0 +1,51 @@
+{
+  "task_id": "MOUSE_B_20260924_0806_R32__v10__B",
+  "parent_task_id": "MOUSE_B_20260924_0806_R32",
+  "schema_version": null,
+  "clip_id": "B",
+  "prompt_chars": 3962,
+  "dual_sample": true,
+  "samples": [
+    {
+      "run": "run_A",
+      "task_id": "MOUSE_B_20260924_0806_R32__v10__B_run_A_0925091231",
+      "seed": 679370437,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0806_R32__v10__B_run_A_00002_.mp4"
+    },
+    {
+      "run": "run_B",
+      "task_id": "MOUSE_B_20260924_0806_R32__v10__B_run_B_0925091231",
+      "seed": 834052193,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0806_R32__v10__B_run_B_00002_.mp4"
+    }
+  ],
+  "dynamic_chain_reading": "",
+  "shot_sequence": [],
+  "must_keep_check": [],
+  "negative_prompt": "no text, no subtitle, no logo, no random unreadable text",
+  "refs_source": "task",
+  "refs_used": [
+    "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "R1-02_森林湖泊_双色主导.png"
+  ],
+  "frames": 240,
+  "audio_design": {
+    "ambient_soundscape": "continuous lake air, faint leaves, soft water, two measured robe-softened side steps, strap movement and fading ripple",
+    "emotional_sound_cue": "two soft non-melodic tonal pulses triggered by the outward and return tests; the second settles into a quiet low release",
+    "audio_role": "support experiment timing and emotional easing; not song structure or MV rhythm"
+  },
+  "h3_prompt": "2D hand-drawn cinematic single-character sequence, vertical 9:16, 15 seconds, continuing directly from the selected real ending frame of Segment A.\n\nSTYLE IDENTITY LOCK: preserve the same verified Picture 1 identity, drawing language, proportions, materials and original colors, and preserve the same Picture 2 forest-lake identity and warm-sky/cool-water palette logic. Keep the girl's short white hair, eye-covering fringe, small upward curl, translucent pale-violet mouse-ear structures, small slender body, oversized pale robe, dark edge blocks, diagonal strap and side satchel exactly consistent with Segment A.\n\nVISUAL EXPRESSION VARIABLE: use restrained readable 2D motion, compatible variable-weight linework, thin watercolor-like shading only where reference-consistent, soft diffuse light, muted shadows and controlled negative space. Let two small reversible tests and their pauses carry the character performance; avoid theatrical posing or rhythmic montage.\n\nCHARACTER (Picture 1): show exactly the same one physical mouse-eared mutant girl from Segment A. Preserve the chosen real A ending pose, clothing state, satchel position and cautious expression. A multi-view reference still represents one identity only.\n\nENVIRONMENT (Picture 2): remain in the same verified SCENE-02 lakeshore space, with the same lake, layered forest, screen direction, lighting direction and established palette relationship. The water image is only the optically dependent reflection of this one girl; it must respond to her body and the water surface and must never behave as a separate entity. Do not add unverified shore objects or a reverse space.\n\nCAMERA AND COMPOSITION: inherit the exact camera side, axis, shoreline relation and character position from the selected real Segment A ending. Use a medium-full three-quarter side view that keeps her feet, the relevant water area and the dependent reflection readable together. A restrained lateral drift may follow her only if Picture 2 supports continuous shore space; otherwise keep the camera fixed. Never cross the axis.\n\nACTION: after the held ending of Segment A, the girl keeps her upper body quiet and makes one small lateral step away from the water. The dependent reflection shifts with her and settles as the last ripple fades. She pauses long enough to confirm the match. Her ears ease slightly. She then deliberately makes one equally small return step to her original walking line, watching the reflection align again. Hold one calm beat. Without approaching the water, she resumes her original slow direction along the shore for two measured steps. End with the reflection still causally aligned, her shoulders less tense, and her attention curious rather than alarmed.\n\nAUDIO DESIGN: continue the same quiet lake air, faint leaves and soft water ambience from Segment A, adding two measured robe-softened side steps, subtle strap movement and the fading ripple. Use two very soft non-melodic tonal pulses triggered by the first lateral test and the return step; the second settles into a low quiet release as she resumes walking. Audio supports observation and emotional easing, never song structure or MV rhythm.\n\nNEGATIVE: no second physical character, no duplicate girl, clone, twin, separate water person, autonomous reflection, emerging reflection, independent shadow double, split screen or four-person character sheet; no rabbit ears, ordinary human ears replacing the mutation, tail, horns, wings, armor, weapon, fitted battle costume or adult muscular proportions; no complete reflection moving before her, acting independently or staying delayed after the water settles; no invented bridge, dock, stones, roots, buildings, props or unseen reverse angle; no approach into the water, jump, run, dance, triumph pose, panic, lip-sync, speed ramp, montage or music-video cutting; no cyan-white energy humanoid, glossy 3D render, hard synthetic digital edges, text, subtitle, logo or watermark.",
+  "local_render": {
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0806_R32__v10__B_run_A_00002_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0806_R32__v10__B_run_A_00002_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0806_R32__v10__B_run_B_00002_.mp4"
+    ],
+    "elapsed_sec": 900,
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 09:12:31)\n[h3_qq_gen]   状态: running  (2026-09-25 09:13:24)\n[h3_qq_gen]   状态: done  (2026-09-25 09:20:24)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0806_R32__v10__B_run_A_00002_.mp4\n[h3_qq_gen] 轮询 MOUSE_B_20260924_0806_R32__v10__B_run_B_0925091231（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 09:20:25)\n[h3_qq_gen]   状态: done  (2026-09-25 09:27:25)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0806_R32__v10__B_run_B_00002_.mp4",
+    "by": "b_new_format",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
