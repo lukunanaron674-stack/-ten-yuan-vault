@@ -1,0 +1,180 @@
+{
+  "schema_version": "B1-UNIFIED-ASSET-INDEX-v1.0",
+  "card_id": "CH-ZX-001",
+  "character": "黎黎隆",
+  "character_id": "LLL-MAIN-001",
+  "ten_yuan_focus": "ZX",
+  "mode": "single_ten_yuan",
+  "round_id": "CH-ZX-001-R002",
+  "task_id": "B-H3-CH-ZX-001-R002",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "duration": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "reference_aspect_ratio": "9:16 allowed",
+  "indexed_at": "2026-09-25T15:04:58+08:00",
+  "status": "asset_sources_indexed_work_binding_pending",
+  "authoritative_sources": [
+    {
+      "path": "黎黎隆项目/角色魅力实验/B端/card_review/CARD_INDEX.json",
+      "blob_sha": "983bd4d5459caaa7917d0944c7457e0bfc230f1c",
+      "role": "authoritative card registry"
+    },
+    {
+      "path": "黎黎隆项目/角色魅力实验/B端/card_review/cards/CH-ZX-001.json",
+      "blob_sha": "a9a02e7a04d0dec102c523ed2ae020c6a6332a74",
+      "role": "card registration"
+    },
+    {
+      "path": "黎黎隆项目/角色魅力实验/B端/card_review/rounds/CH-ZX-001_CH-ZX-001-R002.json",
+      "blob_sha": "ecaa4f1192bdef23b57cce92a7101bc3c84760bf",
+      "role": "same-round identity and asset selection"
+    },
+    {
+      "path": "黎黎隆项目/角色魅力实验/B端/assets/character_pool_index.json",
+      "blob_sha": "59810586b7b8ada9c9a263975a4769b3c4f8ca7a",
+      "schema_version": "lililong-b-character-pool/v1.5",
+      "role": "character pool"
+    },
+    {
+      "path": "黎黎隆项目/角色魅力实验/B端/assets/scene_pool_13_index.json",
+      "blob_sha": "26384b61a8ef8314cf8b5cee81934beed846c021",
+      "schema_version": "lililong-b-scene-pool/v1",
+      "role": "scene pool"
+    }
+  ],
+  "asset_combination": {
+    "combination_id": "CH-ZX-001-R002__LLL-MAIN-001__SCENE-05",
+    "character_asset_id": "LLL-MAIN-001",
+    "scene_asset_id": "SCENE-05",
+    "same_for_stages": [
+      "B1",
+      "B2",
+      "B3",
+      "4090",
+      "B4",
+      "B5"
+    ],
+    "availability": "text_ready_asset_sources_indexed",
+    "execution_gate": "pending_work_binding"
+  },
+  "character_asset": {
+    "asset_type": "character",
+    "asset_id": "LLL-MAIN-001",
+    "name": "黎黎隆",
+    "source": {
+      "repository": "lukunanaron674-stack/-ten-yuan-vault",
+      "branch": "main",
+      "path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+      "blob_sha": "703db937d91ebb995db2a0eb230fd87652903cd2",
+      "byte_length": 444265,
+      "byte_read_status": "actual GitHub bytes fetched",
+      "dimensions": {
+        "width": 1690,
+        "height": 931
+      },
+      "dimensions_method": "JPEG SOF parsed from fetched bytes"
+    },
+    "version_reference": {
+      "character_pool_schema": "lililong-b-character-pool/v1.5",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0"
+    },
+    "availability": {
+      "github_file": "available",
+      "text_task_eligible": true,
+      "pool_h3_render_eligible": true,
+      "same_round_picture_1_bound": false,
+      "identity_visual_verified_this_round": false,
+      "h3_visual_verified_this_round": false
+    },
+    "source_record": {
+      "source": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+      "evidence": [
+        "GitHub blob 703db937d91ebb995db2a0eb230fd87652903cd2",
+        "444265 fetched bytes",
+        "JPEG dimensions 1690×931",
+        "character_pool_index registers LLL-MAIN-001"
+      ],
+      "uncertainty": [
+        "No same-round Work binding path/SHA/dimensions receipt in run_A or run_B",
+        "No visual identity verdict produced from R002 output",
+        "Repository eligibility flag does not prove actual execution binding"
+      ],
+      "handoff_action": "Work/4090 must bind this exact asset as Picture 1 for both runs and return local/remote path, SHA-256, dimensions and identity validation verdict; do not substitute another character card."
+    }
+  },
+  "scene_asset": {
+    "asset_type": "scene",
+    "asset_id": "SCENE-05",
+    "name": "机械空港·单色",
+    "source": {
+      "repository": "lukunanaron674-stack/-ten-yuan-vault",
+      "branch": "main",
+      "path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
+      "blob_sha": "eb34acce753735d96565bc0108d502dfdc775088",
+      "pool_status": "available_by_github_path",
+      "scene_family": "机械空港",
+      "production_stage": "R1",
+      "semantic_description": "单色技术环境；适合固定流程、机械门和清楚的受限路径。"
+    },
+    "version_reference": {
+      "scene_pool_id": "GITHUB_13_SCENE_POOL_V1",
+      "scene_pool_schema": "lililong-b-scene-pool/v1",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0"
+    },
+    "availability": {
+      "github_path": "available",
+      "same_round_picture_2_bound": false,
+      "dimensions_verified_this_round": false,
+      "narrow_passage_geometry_verified_this_round": false
+    },
+    "source_record": {
+      "source": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
+      "evidence": [
+        "scene_pool_13_index registers SCENE-05",
+        "registered blob eb34acce753735d96565bc0108d502dfdc775088",
+        "status available_by_github_path",
+        "pool text supports a technical environment and constrained route"
+      ],
+      "uncertainty": [
+        "This run did not obtain a verified PNG dimension readout",
+        "No same-round Work Picture 2 binding receipt",
+        "A readable narrow mechanical passage has not been visually verified for R002",
+        "Pool semantic text cannot prove exact door geometry"
+      ],
+      "handoff_action": "Work/4090 must bind this exact asset as Picture 2, return path/SHA-256/dimensions, and verify one readable narrow passage. If absent, return binding_mismatch and stop rather than invent geometry."
+    }
+  },
+  "cross_stage_handoff": {
+    "source": "CH-ZX-001-R002 authoritative card, character pool and scene pool",
+    "evidence": [
+      "card/round/version/asset IDs agree across authoritative records",
+      "run_A and run_B result files still report render_completed=false",
+      "both input_binding objects remain null and validated=false"
+    ],
+    "uncertainty": [
+      "No same-round Picture 1/2 receipt",
+      "No output video, frames, seed, Work task ID or audio evidence",
+      "B2/B3 camera wording conflict remains outside B1 asset scope"
+    ],
+    "handoff_action": "B2/B3 retain this exact combination and versions. 4090 may execute only after both bindings and SCENE-05 geometry pass; B4/B5 must remain pending_work_output until real results and six frames arrive."
+  },
+  "pending_assets": [
+    "Picture 1 same-round binding receipt: path, SHA-256, dimensions, identity verdict",
+    "Picture 2 same-round binding receipt: path, SHA-256, dimensions, geometry verdict",
+    "SCENE-05 readable narrow-passage confirmation",
+    "run_A/run_B workflow fingerprints and actual seeds or execution IDs",
+    "two result records and six real head/mid/tail frames",
+    "real audio presence/inspection"
+  ],
+  "execution_state": {
+    "run_A": "pending_work_output",
+    "run_B": "pending_work_output",
+    "actual_completed_runs": 0,
+    "render_claim": false,
+    "visual_validation_claim": false
+  },
+  "conclusion": "GitHub source assets are indexed for the same card and round; Work binding and all visual validation remain pending."
+}
