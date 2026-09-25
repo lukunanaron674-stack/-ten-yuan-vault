@@ -1,0 +1,213 @@
+{
+  "schema_version": "B-CH-ZX-UNIFIED-TASK-v1.1",
+  "card_id": "CH-ZX-001",
+  "character": "黎黎隆",
+  "character_id": "LLL-MAIN-001",
+  "ten_yuan_focus": "ZX",
+  "mode": "single_ten_yuan",
+  "round_id": "CH-ZX-001-R002",
+  "task_id": "B-H3-CH-ZX-001-R002",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "duration": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "reference_aspect_ratio": "9:16 allowed",
+  "character_asset_id": "LLL-MAIN-001",
+  "scene_asset_id": "SCENE-05",
+  "status": {
+    "card": "active",
+    "registration": "registered",
+    "pipeline": "ready_for_B1",
+    "execution": "pending_work_output",
+    "visual_validation": "not_started",
+    "b5_acceptance": "pending_work_output"
+  },
+  "created_at": "2026-09-25T14:11:56+08:00",
+  "asset_set": {
+    "character": {
+      "asset_id": "LLL-MAIN-001",
+      "registered_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+      "binding_status": "pending_work_binding"
+    },
+    "scene": {
+      "asset_id": "SCENE-05",
+      "registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
+      "binding_status": "pending_work_binding",
+      "geometry_gate": "must contain one existing readable narrow mechanical passage; otherwise binding_mismatch"
+    }
+  },
+  "source_boundary": {
+    "confirmed": [
+      "B1–B5统一规则已于2026-09-25写入GitHub，要求六阶段同卡、同素材、同版本、同轮次、同验收。",
+      "权威索引仍登记CH-ZX-001、v1.0、CH-ZX-EXEC-v1.0、LLL-MAIN-001与SCENE-05。",
+      "R001 run_A/run_B仍为pending_work_output，无seed、视频或真实帧。"
+    ],
+    "candidate": [
+      "SCENE-05像素与通道几何仍待Work绑定确认。",
+      "LLL-MAIN-001完成角色状态在B1审计与素材池之间仍有冲突，不能宣布身份验证完成。"
+    ],
+    "inference": [
+      "延迟承诺再侧转穿隙，可将机灵、好胜、出其不意与过度求胜造成的尾端延迟后果转成单一ZX动作实验。"
+    ]
+  },
+  "visual_goal": "让黎黎隆通过一次故意延迟到最后安全时机的侧转表现机灵、好胜与出其不意；尾端慢一拍触边，使干净胜利变得略微复杂。",
+  "changed_variable": "相对R001只改ZX行动时机：从立即抢隙改为短暂计算后在最后安全时机侧转；角色、素材、镜头、光线、声音结构和单门刺激保持。",
+  "dynamic_chain": [
+    "单次通道门合拢",
+    "短暂静止测量剩余开口",
+    "最后安全时机一次侧转穿隙",
+    "尾端延迟轻触门边并偏折",
+    "门后直立停住形成结果"
+  ],
+  "time_beats": [
+    {
+      "time": "0–2s",
+      "role": "initial_state",
+      "single_changed_variable": "ready_alignment",
+      "description": "直立在既有狭窄机械通道前，双脚着地，尾巴紧凑排在身后。"
+    },
+    {
+      "time": "2–4s",
+      "role": "single_problem",
+      "single_changed_variable": "passage_width",
+      "description": "既有通道门仅一次持续合拢。"
+    },
+    {
+      "time": "4–6s",
+      "role": "local_response",
+      "single_changed_variable": "late_timing_preparation",
+      "description": "身体保持不动，仅视线测量开口，前脚轻微内转。"
+    },
+    {
+      "time": "6–8s",
+      "role": "zx_action",
+      "single_changed_variable": "compact_sideways_pivot",
+      "description": "在最后安全时机用一次紧凑侧转穿过剩余开口。"
+    },
+    {
+      "time": "8–10s",
+      "role": "situation_change",
+      "single_changed_variable": "tail_tip_delay",
+      "description": "尾端慢一拍轻触门边并向上偏折，迫使她比预期更早停下。"
+    },
+    {
+      "time": "10–11s",
+      "role": "stopped_result",
+      "single_changed_variable": "final_expression",
+      "description": "门后直立停住，双脚着地，尾端抬起，胜意转为短暂惊讶的好胜笑意。"
+    }
+  ],
+  "shot_grammar": {
+    "camera": "locked_off",
+    "framing": "fixed full-body medium-wide",
+    "movement": "none",
+    "cuts": 0,
+    "scene_count": 1,
+    "character_count": 1,
+    "landscape_requirement": "width > height"
+  },
+  "audio_design": {
+    "ambient_soundscape": "连续低位机械空港底噪与柔和通风声。",
+    "emotional_sound_cue": "2–4秒一次克制门机声；6–8秒一次轻甲转身声；8–10秒一次极轻尾端触边声。",
+    "audio_role": "只辅助问题、行动落点与轻微喜剧后果；不做MV卡点、不加歌词或强节拍、不制造第二刺激。"
+  },
+  "h3_prompt": "Subject — One and only one character: 黎黎隆, matching the registered LLL-MAIN-001 character reference. Preserve her long red hair, sharp competitive expression, white-gray-red modular mechanical armor, cyan functional signal accents, mechanical dragon-claw feet, and one continuous long segmented mechanical dragon tail. Keep her face, armor topology, colors, proportions, and tail structure unchanged throughout.\n\nMovement — 0–2 seconds: she stands upright immediately before one existing narrow mechanical passage, both feet grounded, leading foot neutral, and the long tail aligned compactly behind her. 2–4 seconds: the existing passage door begins one single steady closing motion, creating the only problem. 4–6 seconds: instead of moving immediately, she holds for one brief calculating beat; only her eyes track the shrinking opening and the leading foot turns slightly inward. 6–8 seconds: at the last safe moment, she performs one compact sideways pivot through the remaining gap, bringing both feet and the long tail after her in one continuous action. 8–10 seconds: the tail tip arrives one beat late and lightly touches the closing edge, deflecting upward and forcing her to stop sooner than intended; no injury and no extra action. 10–11 seconds: she remains fully upright just beyond the passage with both feet planted, tail tip raised beside the edge, and her confident grin tightening into a brief surprised competitive smirk. Each interval changes only one small variable.\n\nScene — Use only the registered SCENE-05 mechanical-airport environment if Picture 2 is actually bound and confirms one existing readable narrow mechanical passage. Keep the same single scene and the same asset version for B1, B2, B3, 4090, B4, and B5. Do not invent people, crowds, figure-bearing screens, reflected doubles, extra doors, or new props. If the bound scene lacks the required passage, return binding_mismatch and do not redesign it.\n\nCamera — Fixed 16:9 landscape full-body medium-wide shot. The complete silhouette, both feet, entire tail, passage edges, and remaining gap stay readable. No push-in, pull-back, pan, tilt, orbit, handheld motion, reframing, cut, transition, split screen, or shot-size change.\n\nLighting — Stable soft directional light with clean planes and edges. Preserve registered character colors and cyan accents. No sudden color shift, flicker, weather change, or dramatic relighting.\n\nAtmosphere — Alert, playful, daring, and competitive. Her deliberate late commitment feels clever and unexpected, while the delayed tail contact shows how wanting to win too decisively complicates the clean finish. Keep the performance small, continuous, and physically readable.\n\nAudio — Continuous low mechanical-airport room tone and soft ventilation hum; one restrained passage-motor cue from 2–4 seconds; one light armor pivot and a brief tail-edge tick support action readability. No lyrics, no strong beat, no music-video cutting, and no audio event that creates a second stimulus.\n\nNegative — no duplicate character, no second human figure, no split screen, no clone or mirror-double, no extra limbs, no text overlay, no watermark, no abrupt redesign, no second ten-yuan, no forced sheng-ke-bu main axis, no vertical final output, no crowd, no reflected person, no extra character silhouette, no detached tail, no extra tail, no tail turning into wings, no camera movement, no transition, no second stimulus, no sudden lighting change, no injury.",
+  "runs": {
+    "run_A": {
+      "status": "pending_work_output",
+      "seed": null,
+      "execution_record": "first execution pending"
+    },
+    "run_B": {
+      "status": "pending_work_output",
+      "seed": null,
+      "execution_record": "second execution pending"
+    }
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "same_card": true,
+    "same_round": true,
+    "same_assets": true,
+    "same_prompt": true,
+    "same_workflow": true,
+    "same_parameters": true,
+    "only_allowed_difference": "random seed",
+    "required_evidence_per_run": [
+      "result",
+      "head_frame",
+      "mid_frame",
+      "tail_frame"
+    ],
+    "compare_axes": [
+      "character_identity",
+      "late_commitment_readability",
+      "sideways_pivot_readability",
+      "tail_tip_delay_consequence",
+      "camera_stability",
+      "atmosphere_fit",
+      "single_character_integrity",
+      "duration_and_landscape",
+      "audio_support_only"
+    ]
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no second ten-yuan",
+    "no forced sheng-ke-bu main axis",
+    "no vertical final output",
+    "no crowd",
+    "no reflected person",
+    "no extra character silhouette",
+    "no detached tail",
+    "no extra tail",
+    "no tail turning into wings",
+    "no camera movement",
+    "no transition",
+    "no second stimulus",
+    "no sudden lighting change",
+    "no injury"
+  ],
+  "validation_target": {
+    "required_stage_identity": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05"
+    },
+    "hard_gates": [
+      "all B1/B2/B3/4090/B4/B5 artifacts match required_stage_identity",
+      "Picture 1 and Picture 2 bound in the same execution",
+      "run_A and run_B share prompt, assets, workflow and parameters; only seed differs",
+      "output duration is 10–11 seconds and width > height",
+      "exactly one character in every returned frame",
+      "each run returns result plus head/mid/tail frame hashes"
+    ],
+    "observable_success": [
+      "single door-closing problem only",
+      "brief calculated hold during 4–6s",
+      "one compact sideways pivot during 6–8s",
+      "tail-tip late contact and upward deflection during 8–10s",
+      "upright stopped result during 10–11s"
+    ],
+    "current_conclusion": "pending_work_output"
+  },
+  "pipeline_stages": [
+    "B1",
+    "B2",
+    "B3",
+    "4090",
+    "B4",
+    "B5"
+  ],
+  "audit_status": "text_structure_passed_execution_pending"
+}
