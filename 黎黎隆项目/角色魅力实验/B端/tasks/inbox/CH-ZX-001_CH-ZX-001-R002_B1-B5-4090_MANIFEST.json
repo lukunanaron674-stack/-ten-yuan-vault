@@ -103,7 +103,9 @@
       "work_order": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260925_1415_CH-ZX-001_R002.json",
       "ten_yuan_focus": "ZX",
       "second_ten_yuan": null,
-      "handoff_action": "B3 must consume the same card, round, asset set, versions and six-beat chain; do not execute 4090 before actual Picture 1/2 binding."
+      "handoff_action": "B3 must consume the same card, round, asset set, versions and six-beat chain; do not execute 4090 before actual Picture 1/2 binding.",
+      "camera_contract": "resolved_same_round; one B3-defined stable move allowed",
+      "source_commit": "4ef8f2395943a2542c461b6a61c72df72bd04ee4"
     },
     "B3": {
       "card_id": "CH-ZX-001",
@@ -133,7 +135,9 @@
       "audit_report": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.md",
       "text_contract": "CONDITIONAL_PASS",
       "visual_quality": "NOT_REVIEWED",
-      "execution": "pending_work_output"
+      "execution": "pending_work_output",
+      "contract_resolution": "PASS",
+      "source_commit": "08407aded2bb93650526c6486177d2255f37f87f"
     },
     "B5": {
       "card_id": "CH-ZX-001",
@@ -144,7 +148,8 @@
       "scene_asset_id": "SCENE-05",
       "status": "pending_work_output",
       "conclusion": "B4_fields_prefilled_visual_evidence_pending",
-      "source_b4_audit": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json"
+      "source_b4_audit": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json",
+      "source_commit": "d3ad58a03f78a6df701f1f44b392788e90dcef88"
     }
   },
   "stage_roles": {
@@ -156,11 +161,11 @@
     "B5": "unified fifth-stage acceptance record"
   },
   "invariant_check": "all six stage envelopes must remain byte-equivalent for card/round/version/asset identifiers",
-  "current_conclusion": "B1 GitHub source refresh complete; same-round Picture 1/2 binding and visual validation remain pending. B2/B3 text are ready; B4 visual quality is NOT_REVIEWED; 4090 and B5 remain pending_work_output.",
+  "current_conclusion": "B1 source evidence indexed and B2/B3 camera wording reconciled. All stage identifiers remain consistent; 4090 run_A/run_B, six real frames, audio and visual review remain pending_work_output.",
   "last_stage_update": {
-    "stage": "B1",
-    "updated_at": "2026-09-25T15:04:58+08:00",
-    "status": "asset_sources_indexed_work_binding_pending",
-    "source": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_INDEX_20260925_1505_CH-ZX-001_R002.json"
+    "stage": "B5",
+    "updated_at": "2026-09-25T15:10:53+08:00",
+    "status": "pending_work_output",
+    "source": "黎黎隆项目/角色魅力实验/B端/results/CH-ZX-001_CH-ZX-001-R002_B5_UNIFIED_ACCEPTANCE.json"
   }
 }
