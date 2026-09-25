@@ -147,7 +147,7 @@
   "claimed_at": "2026-09-25 14:56:51",
   "claimed_run_key": "ADV_B_20260925_0811_R56",
   "work_writeback": {
-    "updated_at": "2026-09-25 15:11:59",
+    "updated_at": "2026-09-25 15:12:46",
     "by": "relay-gh",
     "host": "DESKTOP-FKEUGLS"
   },
@@ -265,5 +265,44 @@
     "claimed": false,
     "note": "H3 节点是否出音轨需人工确认；未核实前不宣称有音轨（B端规则：若 Work 的 H3 节点不产音频则改为后期音效需求）",
     "design_received": true
+  },
+  "visual_evidence": {
+    "frames_uploaded_at": "2026-09-25 15:12:46",
+    "run_key": "ADV_B_20260925_0811_R56",
+    "policy": {
+      "mode": "key",
+      "sheet_frames": 6,
+      "sheet_grid": "3x2",
+      "max_kb": 300,
+      "jpg_quality": 90
+    },
+    "files": [
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0811_R56/run_A_key_head.jpg",
+        "kb": 129.6
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0811_R56/run_A_key_mid.jpg",
+        "kb": 136.4
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0811_R56/run_A_key_tail.jpg",
+        "kb": 135.4
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0811_R56/run_B_key_head.jpg",
+        "kb": 176.0
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0811_R56/run_B_key_mid.jpg",
+        "kb": 181.3
+      },
+      {
+        "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0811_R56/run_B_key_tail.jpg",
+        "kb": 180.9
+      }
+    ],
+    "total_kb": 939.6,
+    "note": "画面证据 = 每次抽样首/中/尾 3 帧（默认），与 render_claim.outputs[].output_sha256 对应的成片一一对应；成片本体 2-4MB 未入 git，留在 D:/H3/outputs/comfyui/，需要原片按 sha256 索取"
   }
 }
