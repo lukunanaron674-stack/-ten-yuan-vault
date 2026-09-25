@@ -1,0 +1,42 @@
+{
+  "schema_version": "B-H3-CLOUD-FEEDBACK-1.2",
+  "task_id": "ADV_B_20260925_0811_R56",
+  "status": "pending",
+  "required_runs": [
+    "run_A",
+    "run_B"
+  ],
+  "required_per_run": {
+    "real_seed_or_execution_order": true,
+    "work_task_id": true,
+    "output_sha256": true,
+    "input_asset_hashes": true,
+    "keyframes": [
+      "head",
+      "hand_reach_onset",
+      "palm_contact",
+      "tail"
+    ],
+    "contact_target_label": true,
+    "audio_track_status": true
+  },
+  "hard_fail_if": [
+    "Picture 2 is not actually bound",
+    "hand stops short of strap",
+    "hand contacts a newly generated strap or different object",
+    "final frame does not retain palm contact",
+    "second human figure",
+    "camera/framing/light changes",
+    "historical seed or task ID copied"
+  ],
+  "review_labels": [
+    "PASS_CONTACT_2_OF_2",
+    "FAIL_NO_CONTACT",
+    "FAIL_WRONG_TARGET",
+    "FAIL_CONTACT_NOT_HELD",
+    "FAIL_IDENTITY",
+    "FAIL_SCENE_BINDING",
+    "INDETERMINATE"
+  ],
+  "notes": "R53 real renders are comparison evidence only."
+}
