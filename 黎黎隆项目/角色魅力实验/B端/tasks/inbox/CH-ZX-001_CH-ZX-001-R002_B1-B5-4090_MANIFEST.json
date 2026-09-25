@@ -122,7 +122,13 @@
       "prompt": "黎黎隆项目/角色魅力实验/B端/prompts/generated/CH-ZX-001_CH-ZX-001-R002_H3.md",
       "relay": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/CH-ZX-001_CH-ZX-001-R002_20260925_1411__v10_RELAY.json",
       "camera_grammar": "0–6s locked full-body wide; 6–10s one smooth lateral dolly plus restrained push-in; 10–11s locked full-body medium-wide",
-      "execution_gate": "pending_work_binding"
+      "execution_gate": "pending_work_binding",
+      "source_commit": "6e3ce9cd60af99fb44466e7cf83b9fb04f88d7e3",
+      "prompt_commit": "ec552855eba68c77933c1ea1e85ed26b3a653bc5",
+      "relay_commit": "7f8534ad4af0c05419c767f1707689e5d509c65c",
+      "model_prompt_term_check": "PASS",
+      "source_b1_asset_index": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_INDEX_20260925_1505_CH-ZX-001_R002.json",
+      "source_b2_commit": "e76474899ff456c893bd222721b871a72c7b2d49"
     },
     "B4": {
       "card_id": "CH-ZX-001",
@@ -163,11 +169,11 @@
     "B5": "unified fifth-stage acceptance record"
   },
   "invariant_check": "all six stage envelopes must remain byte-equivalent for card/round/version/asset identifiers",
-  "current_conclusion": "B2 now consumes the same-round B1 source index and retains the resolved one-move camera contract. Single-ZX text is ready; Picture 1/2 Work binding, SCENE-05 geometry, run_A/run_B and all visual/audio evidence remain pending_work_output.",
+  "current_conclusion": "B3 consumes the latest same-round B1/B2 artifacts. Model-facing H3 prompt, task and relay are synchronized and contain no ten-yuan/sheng-ke-bu terminology; internal negative constraints remain recorded. Work binding and real outputs remain pending.",
   "last_stage_update": {
-    "stage": "B2",
-    "updated_at": "2026-09-25T15:16:53+08:00",
+    "stage": "B3",
+    "updated_at": "2026-09-25T15:27:39+08:00",
     "status": "text_ready_input_validation_pending",
-    "source": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260925_1415_CH-ZX-001_R002.json"
+    "source": "黎黎隆项目/角色魅力实验/B端/03_镜头描述词/B3_20260925_1425_CH-ZX-001_R002.json"
   }
 }
