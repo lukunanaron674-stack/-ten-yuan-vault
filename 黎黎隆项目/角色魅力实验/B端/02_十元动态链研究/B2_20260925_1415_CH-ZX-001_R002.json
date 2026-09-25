@@ -46,7 +46,7 @@
   },
   "experiment_title": "最后一拍才穿过去",
   "visual_goal": "观察黎黎隆是否能把短暂计算转成一次突然但清楚的行动，并让过度追求干净胜利造成唯一可见后果。",
-  "changed_variable": "ZX行动的承诺时机：先保持一拍测量，再在最后安全时机一次侧转；只改变时机，不改变角色、素材、刺激、镜头或结果类型。",
+  "changed_variable": "ZX行动的承诺时机：先保持一拍测量，再在最后安全时机一次侧转；只改变行动时机，不改变角色、素材、刺激或结果类型。镜头不是实验变量，统一采用B3已登记的一次有理由的稳定横移并轻推近。",
   "single_ten_yuan_trajectory": [
     {
       "time": "0–2s",
@@ -138,7 +138,7 @@
     "6–8秒出现多次试探、反复进退或第二个动作",
     "尾端接触早于主体穿过，变成被阻挡而非自行复杂化收尾",
     "没有尾端偏折，或角色未停住，导致局面变化不可读",
-    "出现第二人物、分身、额外尾巴、镜头移动或竖屏"
+    "出现第二人物、分身、额外尾巴、超出B3既定单次稳定运动的额外运镜或竖屏"
   ],
   "evidence": {
     "confirmed": [
@@ -218,7 +218,7 @@
   },
   "handoff_action": {
     "target_stage": "B3",
-    "action": "Consume this exact round and asset set. Preserve the six beats and single-ZX trajectory. Compile the existing R002 H3 prompt without adding a second ten-yuan, sheng-ke-bu relation, new prop, second stimulus, camera move, or alternate scene.",
+    "action": "Consume this exact round and asset set. Preserve the six beats and single-ZX trajectory. Compile the existing R002 H3 prompt without adding a second ten-yuan, sheng-ke-bu relation, new prop, second stimulus, camera move beyond B3's one specified stable lateral dolly with restrained push-in, or alternate scene.",
     "source_prompt": "黎黎隆项目/角色魅力实验/B端/prompts/generated/CH-ZX-001_CH-ZX-001-R002_H3.md",
     "unified_manifest": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/CH-ZX-001_CH-ZX-001-R002_B1-B5-4090_MANIFEST.json",
     "preflight_gate": "B3 may prepare text, but 4090 execution must stop with binding_mismatch unless Picture 1 and Picture 2 are actually bound and SCENE-05 confirms the required passage."
@@ -228,5 +228,12 @@
   "asset_version": {
     "character_reference": "registered current path; Work binding hash pending",
     "scene_reference": "registered current path; Work binding hash pending"
+  },
+  "camera_contract": {
+    "status": "resolved_same_round",
+    "experimental_variable": false,
+    "allowed": "0–6s locked full-body wide; 6–10s one smooth lateral dolly plus restrained push-in; 10–11s locked full-body medium-wide",
+    "forbidden": "additional cuts, handheld shake, orbit, whip pan, zoom pulses, or any movement beyond the single B3-defined move",
+    "reason": "Preserve action causality while requiring visible shot-size change and background parallax."
   }
 }
