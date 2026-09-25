@@ -8,7 +8,10 @@
   "ten_yuan_focus": "ZX",
   "mode": "single_ten_yuan",
   "duration": "10-11s",
-  "duration_seconds_range": [10, 11],
+  "duration_seconds_range": [
+    10,
+    11
+  ],
   "output_aspect_ratio": "16:9 landscape",
   "reference_aspect_ratio": "9:16 allowed",
   "visual_goal": {
@@ -32,12 +35,30 @@
     "stopped_result": ""
   },
   "time_beats": [
-    {"time": "0-2s", "beat": ""},
-    {"time": "2-4s", "beat": ""},
-    {"time": "4-6s", "beat": ""},
-    {"time": "6-8s", "beat": ""},
-    {"time": "8-10s", "beat": ""},
-    {"time": "10-11s", "beat": ""}
+    {
+      "time": "0-2s",
+      "beat": ""
+    },
+    {
+      "time": "2-4s",
+      "beat": ""
+    },
+    {
+      "time": "4-6s",
+      "beat": ""
+    },
+    {
+      "time": "6-8s",
+      "beat": ""
+    },
+    {
+      "time": "8-10s",
+      "beat": ""
+    },
+    {
+      "time": "10-11s",
+      "beat": ""
+    }
   ],
   "shot_grammar": {
     "shot": "fixed shot unless one justified change is specified",
@@ -50,14 +71,23 @@
     "emotional_sound_cue": "克制的悬疑/机灵感提示音，轻量，不喧宾夺主",
     "audio_role": "support action and emotion only, not music-video editing"
   },
-  "runs": ["run_A", "run_B"],
+  "runs": [
+    "run_A",
+    "run_B"
+  ],
   "sampling_plan": {
     "run_count": 2,
     "same_card": true,
     "same_inputs": true,
     "same_prompt": true,
-    "run_A": {"seed": "auto_or_explicit", "execution_record": "pending"},
-    "run_B": {"seed": "auto_or_explicit", "execution_record": "pending"}
+    "run_A": {
+      "seed": "auto_or_explicit",
+      "execution_record": "pending"
+    },
+    "run_B": {
+      "seed": "auto_or_explicit",
+      "execution_record": "pending"
+    }
   },
   "h3_prompt": "",
   "negative_constraints": [
@@ -73,7 +103,6 @@
     "no forced sheng-ke-bu main axis",
     "no vertical final output"
   ],
-  "b1_b2_b3_4090_b4_card_id": "CH-ZX-001",
   "deliverables": [
     "card_registration",
     "description_file",
@@ -81,6 +110,7 @@
     "run_B_result",
     "run_A_head_mid_tail",
     "run_B_head_mid_tail",
+    "B5_unified_acceptance_record",
     "brief_audit_conclusion"
   ],
   "validation_target": {
@@ -89,6 +119,24 @@
     "duration": "10-11s",
     "output_aspect_ratio": "16:9 landscape",
     "run_pair_consistent": "pending_work_output",
-    "visual_result": "pending_work_output"
+    "visual_result": "pending_work_output",
+    "b5_unified_acceptance": "pending_work_output"
+  },
+  "pipeline_stages": [
+    "B1",
+    "B2",
+    "B3",
+    "4090",
+    "B4",
+    "B5"
+  ],
+  "b1_b2_b3_4090_b4_b5_card_id": "CH-ZX-001",
+  "unified_update_policy": {
+    "same_card_id": true,
+    "same_assets": true,
+    "same_card_version": true,
+    "same_rule_version": true,
+    "same_round_id": true,
+    "same_acceptance": true
   }
 }
