@@ -53,6 +53,22 @@
         "run_A_frames": "results/frames/CH-ZX-001_CH-ZX-001-R001/run_A_frames.json",
         "run_B_frames": "results/frames/CH-ZX-001_CH-ZX-001-R001/run_B_frames.json",
         "audit": "card_review/audits/CH-ZX-001_CH-ZX-001-R001_AUDIT.md"
+      },
+      "pipeline_stages": [
+        "B1",
+        "B2",
+        "B3",
+        "4090",
+        "B4",
+        "B5"
+      ],
+      "unified_update_policy": {
+        "same_card_id": true,
+        "same_assets": true,
+        "same_card_version": true,
+        "same_rule_version": true,
+        "same_round_id": true,
+        "same_acceptance": true
       }
     },
     {
