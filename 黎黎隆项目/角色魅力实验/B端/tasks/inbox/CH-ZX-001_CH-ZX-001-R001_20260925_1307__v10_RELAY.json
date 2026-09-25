@@ -1,0 +1,92 @@
+{
+  "schema": "video_tenyuan_prompt_schema_v1.2",
+  "card_id": "CH-ZX-001",
+  "round_id": "CH-ZX-001-R001",
+  "task_id": "B-H3-CH-ZX-001-R001",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "cast": [
+    {
+      "character_id": "LLL-MAIN-001",
+      "character": "黎黎隆",
+      "picture_slot": "Picture 1",
+      "registered_asset_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+      "binding_status": "pending_work_binding"
+    }
+  ],
+  "scene": {
+    "scene_asset_id": "SCENE-05",
+    "picture_slot": "Picture 2",
+    "registered_asset_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
+    "binding_status": "pending_work_binding",
+    "preflight_gate": "must confirm one existing readable narrow mechanical passage; otherwise return binding_mismatch"
+  },
+  "render_spec": {
+    "duration_seconds": 11,
+    "aspect_ratio": "16:9",
+    "orientation": "landscape",
+    "camera": "fixed",
+    "framing": "full-body medium-wide",
+    "single_character": true,
+    "single_scene": true
+  },
+  "clips": [
+    {
+      "id": "A",
+      "prompt": "Subject — One and only one character: 黎黎隆, matching the registered LLL-MAIN-001 reference card. Preserve her long red hair, sharp competitive expression, white-gray-red modular mechanical armor, cyan functional signal accents, mechanical dragon-claw feet, and one continuous long segmented mechanical dragon tail with clear upper, middle, and lower rhythm. Keep the same face, armor topology, colors, proportions, and tail structure throughout.\n\nMovement — 0–2 seconds: she stands upright just before an existing narrow mechanical passage, both feet grounded, body ready, and the long tail held in a compact curve behind her. 2–4 seconds: the existing passage door begins one single steady closing motion, creating the only problem. 4–6 seconds: her eyes snap to the remaining side gap while the near shoulder lowers slightly and the tail draws closer to her body. 6–8 seconds: with one quick clever diagonal half-step, she slips her torso and both feet through the narrowing gap and pulls the tail after her, trying to beat the closing door. 8–10 seconds: her extra burst of speed makes the long tail overshoot across her own next step; she has cleared the doorway, but the tail now blocks her forward path. 10–11 seconds: she stops fully upright with both feet planted, tail visibly crossing in front of her route, chin still raised as her winning grin tightens into a brief amused annoyance. Each beat changes only one small variable; no additional action or stimulus.\n\nScene — Use only the registered SCENE-05 mechanical-airport environment if Picture 2 is actually bound and confirms one existing narrow mechanical passage. Keep one scene for the full shot. Do not invent people, crowds, screens with figures, reflective doubles, extra doors, or new props. If the bound scene does not contain a readable existing passage, stop execution and return a binding mismatch instead of redesigning the scene.\n\nCamera — Fixed 16:9 landscape full-body medium-wide shot. Keep her complete silhouette, both feet, the entire long tail, the passage edges, and the remaining gap readable at all times. No push-in, pull-back, pan, tilt, orbit, handheld motion, reframing, cut, transition, split screen, or shot-size change.\n\nLighting — Stable soft directional light with clear planes and edges. Preserve the registered character colors and cyan accents. No sudden color shift, flicker, weather change, or dramatic relighting.\n\nAtmosphere — Focused, nimble, competitive, and lightly comic: she wins the immediate opening, then her own over-eager acceleration complicates the next move. Keep the performance small, continuous, and physically legible.\n\nAudio — Low mechanical-airport room tone and soft ventilation hum; one restrained door-motor cue from 2–4 seconds; a light armor step and brief tail swish support action readability. No lyrics, no strong beat, no music-video cutting, and no audio event that introduces a second stimulus.\n\nNegative — no duplicate character, no second human figure, no split screen, no clone or mirror-double, no extra limbs, no text overlay, no watermark, no abrupt redesign, no second ten-yuan, no forced sheng-ke-bu main axis, no vertical final output, no crowd, no reflected person, no extra character silhouette, no detached tail, no extra tail, no tail turning into wings, no camera movement, no transition, no second stimulus, no sudden lighting change.",
+      "prompt_sha256": null
+    }
+  ],
+  "audio_design": {
+    "ambient_soundscape": "低位机械空港环境底噪与柔和通风声，连续且不抢动作。",
+    "emotional_sound_cue": "2–4秒一次克制的门机声；6–8秒轻甲脚步与短促尾部掠声。",
+    "audio_role": "只辅助空间、关门问题、动作落点和轻微喜剧情绪；不做MV卡点，不加歌词或强节拍，不引入第二刺激。"
+  },
+  "execution_contract": {
+    "run_count": 2,
+    "runs": [
+      "run_A",
+      "run_B"
+    ],
+    "same_card": true,
+    "same_inputs": true,
+    "same_prompt": true,
+    "same_workflow": true,
+    "same_parameters": true,
+    "only_seed_may_differ": true,
+    "status": "pending_work_output",
+    "return_each_run": [
+      "result",
+      "head_frame",
+      "mid_frame",
+      "tail_frame",
+      "seed_or_execution_order",
+      "task_id",
+      "output_hash",
+      "frame_hashes"
+    ]
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no second ten-yuan",
+    "no forced sheng-ke-bu main axis",
+    "no vertical final output",
+    "no crowd",
+    "no reflected person",
+    "no extra character silhouette",
+    "no detached tail",
+    "no extra tail",
+    "no tail turning into wings",
+    "no camera movement",
+    "no transition",
+    "no second stimulus",
+    "no sudden lighting change"
+  ]
+}
