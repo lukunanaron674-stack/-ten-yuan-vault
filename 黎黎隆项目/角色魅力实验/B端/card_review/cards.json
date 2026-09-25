@@ -1,18 +1,27 @@
 {
-  "schema_version": "B-CARD-REVIEW-v1.0",
-  "updated_on": "2026-09-24",
-  "source": "GitHub main; only image paths verified in repository; frame pixel quality not audited",
+  "schema_version": "B-CARD-REVIEW-v1.1",
+  "updated_on": "2026-09-25",
+  "authoritative_card_index": "card_review/CARD_INDEX.json",
+  "source": "GitHub main; frame pixel quality and final visual review remain pending Work output",
   "cards": [
     {
-      "card_id": null,
-      "display_id": "待注册 · CH 卡",
+      "card_id": "CH-ZX-001",
+      "display_id": "CH-ZX-001",
       "title": "黎黎隆 · ZX 单一十元动态实验",
       "type": "single_tenyuan",
       "tenyuan": "ZX",
       "character_id": "LLL-MAIN-001",
       "scene_id": null,
-      "round_id": "R001（待注册）",
-      "status": "awaiting_card_registration",
+      "round_id": "next_new_card",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "status": "active",
+      "registration_status": "registered",
+      "pipeline_status": "ready_for_B1",
+      "duration_target": "10-11s",
+      "output_aspect_ratio": "16:9 landscape",
+      "reference_aspect_ratio": "9:16 allowed",
+      "runs_per_prompt": 2,
       "cover": {
         "status": "pending_render",
         "path": null
@@ -29,8 +38,9 @@
           "tail": null
         }
       },
+      "source_registration_file": "card_review/cards/CH-ZX-001.json",
       "source_task": "tasks/inbox/B_CARD_SYSTEM_NEXT_ROUND_20260924.md",
-      "notes": "新卡号必须先经 CARD_INDEX.json 查重并由编号器分配；未渲染不显示假首帧。"
+      "notes": "新卡已正式注册并可进入 B1；真实首中尾帧须由 Work 端从本卡本轮 run_A/run_B 生成结果中回写，不能用参考图冒充。"
     },
     {
       "card_id": null,
@@ -59,7 +69,7 @@
         }
       },
       "source_task": "tasks/inbox/MOUSE_B_20260924_1110_R35.json",
-      "notes": "真实抽帧文件已在仓库定位；不等于本轮完成像素级质量审核，也不代表已注册 CH 永久卡号。"
+      "notes": "历史真实抽帧；保留原状，不转换为 CH 卡。"
     },
     {
       "card_id": null,
@@ -88,7 +98,7 @@
         }
       },
       "source_task": "tasks/inbox/ADV_B_20260924_1308_R37.json",
-      "notes": "真实抽帧文件已在仓库定位；不等于本轮完成像素级质量审核，也不代表已注册 CH 永久卡号。"
+      "notes": "历史真实抽帧；保留原状，不转换为 CH 卡。"
     }
   ]
 }
