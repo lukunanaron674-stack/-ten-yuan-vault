@@ -1,0 +1,41 @@
+{
+  "schema_version": "B-CH-ZX-FRAMES-v1.0",
+  "card_id": "CH-ZX-001",
+  "round_id": "CH-ZX-001-R001",
+  "task_id": "B-H3-CH-ZX-001-R001",
+  "run": "run_B",
+  "status": "pending_work_output",
+  "source_video": {
+    "path": null,
+    "sha256": null,
+    "fps": null,
+    "frame_count": null
+  },
+  "required_frames": {
+    "head": {
+      "target_role": "0–2s initial state",
+      "path": null,
+      "sha256": null,
+      "frame_number": null,
+      "timestamp_seconds": null,
+      "status": "pending_work_output"
+    },
+    "mid": {
+      "target_role": "6–8s ZX action",
+      "path": null,
+      "sha256": null,
+      "frame_number": null,
+      "timestamp_seconds": null,
+      "status": "pending_work_output"
+    },
+    "tail": {
+      "target_role": "10–11s stopped result",
+      "path": null,
+      "sha256": null,
+      "frame_number": null,
+      "timestamp_seconds": null,
+      "status": "pending_work_output"
+    }
+  },
+  "integrity_rule": "Do not substitute reference images, another round, or another run."
+}
