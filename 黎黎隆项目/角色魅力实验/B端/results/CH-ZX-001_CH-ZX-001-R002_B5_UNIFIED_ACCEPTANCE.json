@@ -1,0 +1,150 @@
+{
+  "schema_version": "B5-UNIFIED-ACCEPTANCE-v1.0",
+  "card_id": "CH-ZX-001",
+  "character": "黎黎隆",
+  "character_id": "LLL-MAIN-001",
+  "ten_yuan_focus": "ZX",
+  "mode": "single_ten_yuan",
+  "round_id": "CH-ZX-001-R002",
+  "task_id": "B-H3-CH-ZX-001-R002",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "duration": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "reference_aspect_ratio": "9:16 allowed",
+  "character_asset_id": "LLL-MAIN-001",
+  "scene_asset_id": "SCENE-05",
+  "status": "pending_work_output",
+  "source_pipeline_manifest": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/CH-ZX-001_CH-ZX-001-R002_B1-B5-4090_MANIFEST.json",
+  "required_runs": [
+    "run_A",
+    "run_B"
+  ],
+  "evidence_required": [
+    "run_A_result",
+    "run_A_head",
+    "run_A_mid",
+    "run_A_tail",
+    "run_B_result",
+    "run_B_head",
+    "run_B_mid",
+    "run_B_tail"
+  ],
+  "stage_identity": {
+    "4090": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05"
+    },
+    "B1": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05"
+    },
+    "B2": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05"
+    },
+    "B3": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05"
+    },
+    "B4": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05"
+    },
+    "B5": {
+      "card_id": "CH-ZX-001",
+      "round_id": "CH-ZX-001-R002",
+      "card_version": "v1.0",
+      "rule_version": "CH-ZX-EXEC-v1.0",
+      "character_asset_id": "LLL-MAIN-001",
+      "scene_asset_id": "SCENE-05"
+    }
+  },
+  "checks": {
+    "stage_identity_consistency": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "asset_reference_consistency": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "card_and_rule_version_consistency": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "round_id_consistency": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "character_identity": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "action_readability": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "camera_stability": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "atmosphere_fit": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "no_duplicate_or_clone": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "duration_10_11s": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "landscape_16_9": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "audio_fields_complete": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "run_pair_parameter_consistency": {
+      "status": "pending_work_output",
+      "evidence": null
+    },
+    "six_frame_evidence_complete": {
+      "status": "pending_work_output",
+      "evidence": null
+    }
+  },
+  "conclusion": "pending_work_output",
+  "render_claim": false,
+  "visual_validation_claim": false,
+  "blocking_reasons": [
+    "Picture 1/2 binding receipt absent",
+    "run_A/run_B outputs absent",
+    "six real frame files and hashes absent",
+    "audio inspection absent"
+  ]
+}
