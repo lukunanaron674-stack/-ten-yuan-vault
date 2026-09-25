@@ -1,0 +1,43 @@
+{
+  "schema_version": "B-H3-RESULT-PLACEHOLDER-1.2",
+  "task_id": "CH-ZX-001_B1-B5_UNIFIED_UPDATE_20260925",
+  "status": "needs_refs",
+  "actual_completed_runs": 0,
+  "created_by": "gh_writeback(auto-template, B端 未建占位)",
+  "work_reject": {
+    "at": "2026-09-25 16:38:50",
+    "by": "relay-gh(auto)",
+    "reason": "md 里没抓到任何图片路径（图片路径不能有空格；角色图路径须含 character_ref）",
+    "fix": "见 results/__A端卡格式规范.json 或本文件 format_notice"
+  },
+  "format_notice": {
+    "schema_version": "A-H3-FORMAT-NOTICE-1.0",
+    "task_id": "__A端卡格式规范",
+    "status": "format_notice",
+    "updated_at": "2026-09-25 16:38:50",
+    "by": "relay-gh(auto)",
+    "accepted_formats": [
+      "video_tenyuan_prompt_schema_v1.2 (推荐, JSON)",
+      "Markdown 任务书 (.md, 执行词进 ```text 围栏块)"
+    ],
+    "rejected_formats": [
+      "B-H3-TASK-1.2 (扁平 JSON, A端 不认)"
+    ],
+    "must_fix": [
+      "执行词必须英文视觉描述且 ≤7000 字符，绝不能是整篇卡文档",
+      "图片路径不能有空格；角色图路径须含 character_ref",
+      "单卡时长 ≤11 秒 (264 帧)",
+      "不要发 B-H3-TASK-1.2 扁平 JSON"
+    ],
+    "reject_status_meaning": {
+      "needs_prompt": "没抽到可用 H3 执行词（空/像卡文档/超7000字符）",
+      "needs_refs": "没抽到可用参考图（路径空格/无character_ref/角色图缺失）"
+    },
+    "spec_markdown": "# A端（Work 渲染端）卡格式规范 —— chat 网页请按此出卡\n\n## A端 只认两种格式（二选一）\n1. **结构化 JSON**：`schema_version` 以 `video_tenyuan_prompt_schema` 开头（v1.2/v1.3 均可）。\n   角色 ID 全支持（ADV/MOUSE/LLL 通吃），最稳，推荐。\n2. **Markdown 任务书**（.md）：执行词放进 ```text 围栏块 或 `## H3 Prompt` 小节。\n\n## 绝对不要发（发了 A端 永久沉默）\n- `B-H3-TASK-1.2` 扁平 JSON：A端 is_new_format 只认 `video_tenyuan_prompt_schema_*`，\n  会被当未知卡跳过，永不入池。\n\n## JSON 模板（已验证 is_new_format=True）\n{\n  \"schema_version\": \"video_tenyuan_prompt_schema_v1.2\",\n  \"task_id\": \"ADV_B_20260925_0001_R41\",\n  \"task_version\": \"v10\",\n  \"cast\": { \"character_id\": \"ADV-001\", \"display_name\": \"冒险者\" },\n  \"source_assets\": {\n    \"character\": { \"path\": \"B端/assets/character_refs/ADV-001_full_body.png\", \"scene_asset_id\": \"SCENE-10\" },\n    \"scene\": { \"path\": \"黎黎隆项目/04_场景/五色视觉系统/R2_主导色/assets/R2-01_机械空港_深墨青主导.png\", \"scene_asset_id\": \"SCENE-10\" }\n  },\n  \"render_spec\": { \"planned_duration_seconds_each\": 10 },\n  \"clips\": [ { \"clip_id\": \"A\", \"h3_prompt\": \"英文视觉描述，≤7000字符\", \"narrative_role\": \"establish\" } ]\n}\n\n## Markdown 模板（已验证 parse_md_task 抽中）\n# ADV_B_20260925_0001_R41｜示例渲染卡\n## 角色\n- character_id：ADV-001\n- 正式名称：**冒险者**\n## 场景\n- scene_id：SCENE-10\n## 参考图（路径不能有空格；角色图路径须含 character_ref）\n- 角色图：`B端/assets/character_refs/ADV-001_full_body.png`\n- 场景图：`黎黎隆项目/04_场景/五色视觉系统/R2_主导色/assets/R2-01_机械空港_深墨青主导.png`\n## H3 Prompt\n```text\nA wide shot of a burly bearded adventurer ..., cinematic lighting, highly detailed.\n```\n\n## 硬约束（踩中任一条 A端 直接拒卡，绝不硬跑）\n- **执行词必须是英文视觉描述，≤7000 字符**；绝不能把整篇卡文档（含 ## 状态/验收/Picture绑定、\n  pending_image_validation/work_validation 等标记、中文多级标题）当执行词 —— A端 有卡文档探测器，\n  会判 needs_prompt 丢弃。执行词务必单独进 ```text 围栏块。\n- **图片路径不能带空格**（中文 / _ - 都行，空格会截断识别）。\n- **角色图路径必须含 `character_ref`** 子串，否则会被当场景图、角色形象锁不住。\n- **单卡时长 ≤11 秒（264 帧）**；超了 A端 自动钳 10 秒（不崩，但丢时长）。\n- md 角色 ID：仅 `LLL-` 前缀会被自动识别为「需角色参考」；ADV/MOUSE 请改用 JSON 的\n  `cast.character_id`，或在英文执行词里加一行 `character_id=ADV-001` 兜底。\n\n## 拒卡状态含义（chat 网页读 results/<CARD>_RESULTS.json 的 status 字段）\n- `needs_prompt`：A端 没抽到可用的 H3 执行词（词为空 / 像卡文档 / 超 7000 字符）。\n- `needs_refs`：A端 没抽到可用的参考图（路径带空格 / 无 character_ref / 角色图缺失）。\n修复后重新推卡即可，A端 会自动重抓入池。\n"
+  },
+  "work_writeback": {
+    "updated_at": "2026-09-25 16:38:50",
+    "by": "relay-gh",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
