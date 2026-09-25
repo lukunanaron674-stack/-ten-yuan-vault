@@ -1,0 +1,68 @@
+{
+  "schema": "lililong-b3-c-handoff/v2-dynamic-camera",
+  "task": "B3_20260925_1305_MOUSE-EAR-MUTANT-001_SCENE-01",
+  "status": "text_ready_picture_validation_pending",
+  "source_b1": {
+    "path": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_AUDIT_20260925_1300_R61.md",
+    "blob": "3fb94daafa3f8cc6ae1d043f0bab875be4f7a02f"
+  },
+  "source_b2": {
+    "path": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260925_1216_MOUSE-EAR-MUTANT-001_SCENE-01.md",
+    "blob": "f17316913fe2f88b013b80f805910d95232949df"
+  },
+  "format": {
+    "aspect_ratio": "9:16",
+    "duration_seconds": "10-11"
+  },
+  "dynamic_requirement": {
+    "shot_scale_phases_min": 3,
+    "character_translation": true,
+    "camera_motion": true,
+    "parallax": true,
+    "static_medium_only": "FAIL"
+  },
+  "variants": {
+    "A": "explicit multi-shot cuts: wide full-body -> medium-full tracking -> close action -> medium-full travel",
+    "B": "continuous moving camera: tracking + side arc + push-in + pull-back"
+  },
+  "runs": [
+    {
+      "slot": "A/run_A",
+      "seed": null,
+      "task_id": null,
+      "output_id": null
+    },
+    {
+      "slot": "A/run_B",
+      "seed": null,
+      "task_id": null,
+      "output_id": null
+    },
+    {
+      "slot": "B/run_A",
+      "seed": null,
+      "task_id": null,
+      "output_id": null
+    },
+    {
+      "slot": "B/run_B",
+      "seed": null,
+      "task_id": null,
+      "output_id": null
+    }
+  ],
+  "asset_gate": {
+    "character_visual_validation": "pending",
+    "scene_binding_geometry": "pending",
+    "LLL-MAIN-001": "excluded_unfinished"
+  },
+  "audio_role": "audio supports action and emotion only; it does not dictate editing and is not pure MV",
+  "c_gate": [
+    "validate Picture 1",
+    "validate Picture 2 and geometry",
+    "derive environmental cue only from verified scene",
+    "execute four runs",
+    "record real receipts and keyframes",
+    "fail static/no-translation/no-camera-motion results"
+  ]
+}
