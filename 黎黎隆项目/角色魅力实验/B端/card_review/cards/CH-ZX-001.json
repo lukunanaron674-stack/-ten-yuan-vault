@@ -1,0 +1,45 @@
+{
+  "card_id": "CH-ZX-001",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "character": "黎黎隆",
+  "character_id": "LLL-MAIN-001",
+  "ten_yuan_focus": "ZX",
+  "mode": "single_ten_yuan",
+  "status": "active",
+  "registration_status": "registered",
+  "pipeline_status": "ready_for_B1",
+  "duration_target": "10-11s",
+  "output_aspect_ratio": "16:9 landscape",
+  "reference_aspect_ratio": "9:16 allowed",
+  "runs_per_prompt": 2,
+  "same_card_across": ["B1", "B2", "B3", "4090", "B4"],
+  "run_policy": {
+    "run_A": "same prompt, same inputs, same workflow and parameters",
+    "run_B": "same prompt, same inputs, same workflow and parameters",
+    "allowed_difference": "random seed only"
+  },
+  "secondary_ten_yuan": null,
+  "forced_relation": null,
+  "forced_sheng_ke_bu": false,
+  "visual_goal": "只突出黎黎隆作为 ZX 主体时的行动力、机灵、好胜，以及常因太想赢使局面变复杂的角色魅力。",
+  "reference_policy": {
+    "character_reference": "角色参考图允许 9:16；不能据此改判最终成片画幅",
+    "output_reference": "最终成片固定 16:9 横屏"
+  },
+  "audio_design": {
+    "ambient_soundscape": "轻微环境声、风声、脚步、衣料摩擦、远处空间回响",
+    "emotional_sound_cue": "克制的悬疑与机灵感提示音，轻量，不喧宾夺主",
+    "audio_role": "support action and emotion only, not music-video editing"
+  },
+  "runs": ["run_A", "run_B"],
+  "frame_outputs_required": ["run_A_head", "run_A_mid", "run_A_tail", "run_B_head", "run_B_mid", "run_B_tail"],
+  "frame_status": "pending_work_execution",
+  "review_status": "pending",
+  "must_not": [
+    "no second ten-yuan",
+    "no forced sheng-ke-bu axis",
+    "no MV editing",
+    "no vertical final output"
+  ]
+}
