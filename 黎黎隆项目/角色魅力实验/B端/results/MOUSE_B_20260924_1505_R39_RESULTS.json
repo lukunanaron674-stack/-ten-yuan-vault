@@ -35,13 +35,13 @@
     "outfit_and_satchel_continuity"
   ],
   "validation_target": {
-    "character_consistency": "work_output_available_pending_human_review",
-    "action_readability": "work_output_available_pending_human_review",
-    "camera_stability": "work_output_available_pending_human_review",
-    "atmosphere_fit": "work_output_available_pending_human_review",
-    "no_duplicate_character": "work_output_available_pending_human_review",
-    "identity_binding": "validated_by_relay_gh",
-    "scene_geometry": "work_output_available_pending_human_review"
+    "character_consistency": "INDETERMINATE_authoritative_identity_sheet_not_visually_compared",
+    "action_readability": "PARTIAL_final_strap_contact_2_of_2_ear_first_order_indeterminate",
+    "camera_stability": "SUPPORTED_BY_SAMPLED_FRAMES_2_of_2",
+    "atmosphere_fit": "INDETERMINATE_scene_reference_not_bound",
+    "no_duplicate_character": "SUPPORTED_BY_SAMPLED_FRAMES_2_of_2",
+    "identity_binding": "byte_validated_with_warnings_visual_identity_not_verified",
+    "scene_geometry": "NOT_VALIDATED_picture_2_not_supplied"
   },
   "render_claim": {
     "claimed": true,
@@ -56,7 +56,7 @@
     "height": 736,
     "length_frames": 240,
     "fps": 24,
-    "duration_sec": 10.0,
+    "duration_sec": 10,
     "steps": 8,
     "model": {
       "unet": "Minimax_H3/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
@@ -258,5 +258,61 @@
     ],
     "total_kb": 699.6,
     "note": "画面证据 = 每次抽样首/中/尾 3 帧（默认），与 render_claim.outputs[].output_sha256 对应的成片一一对应；成片本体 2-4MB 未入 git，留在 D:/H3/outputs/comfyui/，需要原片按 sha256 索取"
+  },
+  "b_end_keyframe_review": {
+    "reviewed_at": "2026-09-25T12:06:48+08:00",
+    "reviewed_evidence": [
+      "run_A_key_head.jpg",
+      "run_A_key_mid.jpg",
+      "run_A_key_tail.jpg",
+      "run_B_key_head.jpg",
+      "run_B_key_mid.jpg",
+      "run_B_key_tail.jpg"
+    ],
+    "raw_observations": {
+      "run_A": [
+        "exactly one visible human figure in all three sampled frames",
+        "character remains seated or crouched from head through tail; this contradicts the prescribed standing baseline",
+        "framing is visually stable across the three sampled frames",
+        "tail frame shows a visible hand-to-diagonal-strap contact",
+        "water ripple is visible at mid frame"
+      ],
+      "run_B": [
+        "exactly one visible human figure in all three sampled frames",
+        "character remains standing in the sampled frames",
+        "framing is visually stable across the three sampled frames",
+        "head/gaze direction changes by mid frame",
+        "tail frame shows a visible hand-to-diagonal-strap contact",
+        "water ripple is visible at mid frame"
+      ],
+      "cross_run": [
+        "run_A and run_B differ strongly in body posture and shot scale despite the same task family",
+        "actual output is 1280x736 landscape in both runs",
+        "Picture 2 was not supplied; the generated lake background cannot validate SCENE-02 identity or geometry",
+        "three sparse frames do not establish that the ear moved before the eyes and head",
+        "audio track remains unverified"
+      ]
+    },
+    "separated_interpretation": {
+      "confirmed_from_frames": [
+        "single visible character 2/2",
+        "final hand-to-strap contact 2/2",
+        "sampled framing stability 2/2",
+        "standing baseline only 1/2"
+      ],
+      "indeterminate": [
+        "ear-before-eyes-before-head temporal order",
+        "full-motion continuity between sampled frames",
+        "audio design compliance",
+        "SCENE-02 identity and geometry",
+        "same-character identity against an authoritative sheet"
+      ],
+      "internal_hypothesis": "The standing baseline needs an explicit full-body posture lock; this is a candidate explanation for the cross-run posture divergence, not a proven causal fix."
+    },
+    "verdict": "RENDERED_2_OF_2_KEYFRAME_REVIEW_PARTIAL_FAIL_NOT_H3_VALIDATED",
+    "hard_failures": [
+      "run_A violates standing baseline"
+    ],
+    "next_single_variable": "lock upright standing posture with both feet planted and knees extended throughout"
   }
 }
