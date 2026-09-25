@@ -1,0 +1,52 @@
+{
+  "schema_version": "B-CH-ZX-FRAMES-v1.1",
+  "card_id": "CH-ZX-001",
+  "character": "黎黎隆",
+  "character_id": "LLL-MAIN-001",
+  "ten_yuan_focus": "ZX",
+  "mode": "single_ten_yuan",
+  "round_id": "CH-ZX-001-R002",
+  "task_id": "B-H3-CH-ZX-001-R002",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "duration": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "reference_aspect_ratio": "9:16 allowed",
+  "character_asset_id": "LLL-MAIN-001",
+  "scene_asset_id": "SCENE-05",
+  "run": "run_A",
+  "status": "pending_work_output",
+  "source_video": {
+    "path": null,
+    "sha256": null,
+    "fps": null,
+    "frame_count": null
+  },
+  "required_frames": {
+    "head": {
+      "target_role": "0–2s initial state",
+      "path": null,
+      "sha256": null,
+      "frame_number": null,
+      "timestamp_seconds": null,
+      "status": "pending_work_output"
+    },
+    "mid": {
+      "target_role": "6–8s ZX action",
+      "path": null,
+      "sha256": null,
+      "frame_number": null,
+      "timestamp_seconds": null,
+      "status": "pending_work_output"
+    },
+    "tail": {
+      "target_role": "10–11s stopped result",
+      "path": null,
+      "sha256": null,
+      "frame_number": null,
+      "timestamp_seconds": null,
+      "status": "pending_work_output"
+    }
+  },
+  "integrity_rule": "Never substitute a reference image, another round, or the other run."
+}
