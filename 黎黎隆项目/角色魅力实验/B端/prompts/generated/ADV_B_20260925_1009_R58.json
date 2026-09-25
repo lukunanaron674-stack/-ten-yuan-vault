@@ -1,0 +1,54 @@
+{
+  "task_id": "ADV_B_20260925_1009_R58",
+  "prompt_source": "task.h3_prompt",
+  "prompt_sha256": "5f92106d8860b23a71db7b71fa6d073f66f849cdc18e50776603736e59e83b84",
+  "prompt_chars": 4372,
+  "dual_sample": true,
+  "samples": [
+    {
+      "run": "run_A",
+      "task_id": "ADV_B_20260925_1009_R58_run_A_0925152853",
+      "seed": 996644290,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260925_1009_R58_run_A_00001_.mp4"
+    },
+    {
+      "run": "run_B",
+      "task_id": "ADV_B_20260925_1009_R58_run_B_0925152853",
+      "seed": 48320510,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260925_1009_R58_run_B_00001_.mp4"
+    }
+  ],
+  "dynamic_chain_reading": "",
+  "shot_sequence": [],
+  "character_charm": "",
+  "must_keep_check": [],
+  "negative_prompt": "no text, no subtitle, no logo, no random unreadable text",
+  "refs_source": "search_local",
+  "refs_used": [
+    "ADV-001_冒险者_H3_sheet_001.jpg"
+  ],
+  "frames": 240,
+  "h3_prompt": "Subject: Landscape 16:9, one continuous 11-second single-character narrative. Show exactly one physical instance of the established heavy adult adventurer from Picture 1. Preserve his broad heavy body, grounded weight, short dark hair, thick dark beard, tired experienced face, layered worn dark clothing, red scarf, crossing straps and buckles, pale metal shoulder and chest structure, complete backpack and rolled equipment, one cyan-lit waist lantern, heavy gloves and boots. Keep every connected item, body proportion, material, surface wear and reference color unchanged.\n\nMovement: From 0 to 2 seconds he stands on the established walking line with both boots planted and his full load settled. From 2 to 4 seconds one brief harmless surface rustle passes once through existing water or foliage visibly supported by Picture 2, then naturally fades; this is the only external stimulus. From 4 to 6 seconds he initiates one small side step toward the affected side: the near boot lifts only two to four centimeters and begins moving sideways, but it does not land, while the other boot remains planted. From 6 to 8 seconds his eyes confirm the now-quiet side first and his head follows only three to five degrees; there is no second cue, no torso turn and no additional step. From 8 to 10 seconds the same lifted boot reverses along one continuous short path and returns to its original walking-line mark before touching down; the planted boot, shoulders and equipment do not recruit into a larger correction. From 10 to 11 seconds both boots remain planted on the original line, the load settles once and the action stops in a calm readable result.\n\nScene: Picture 2 defines SCENE-04, the same forest-lake environment, its existing elements, spatial continuity and original five-color hierarchy. Use the single surface rustle only if the bound scene visibly contains water or foliage capable of that motion. Keep the background empty of people and person-like reflections. Do not invent a path, obstacle, bridge, rock, root, building, sign, rail, creature, vehicle, mechanism or second environmental event.\n\nCamera: One locked eye-level full-body medium-wide three-quarter view in a 16:9 landscape frame. Keep both boots, the original walking line, the complete lifted-foot path, the backpack silhouette and final stance readable together. Fixed framing, focal length and horizon; no push, pull, pan, tilt, tracking, reframing, cut, transition or split screen.\n\nLighting: Preserve Picture 1 materials and Picture 2 palette logic under one fixed soft diffuse light. Keep the cyan lantern as one small identity light only. No new glow, flashing, relighting, weather change, sudden saturation shift or color redesign.\n\nAtmosphere: He reads as decisive rather than fearful: he genuinely begins a small response, notices that its reason has ended and cancels it cleanly before landing, without panic or repeated testing. Use clear two-dimensional hand-drawn shapes, restrained variable-width linework, soft diffuse depth and restrained shadows only where compatible with the bound references.\n\nAudio: Ambient soundscape: quiet forest-lake air, distant water only if supported by Picture 2, one brief soft surface-or-leaf rustle with a clear natural decay, one low boot-lift cloth creak and one soft return contact. Emotional sound cue: one sparse non-melodic low tone begins after the boot lifts and resolves when the same boot returns to the original line, with no second cue, no lyrics and no strong beat. Audio supports spatial clarity, action reversibility and restrained emotion only; it does not drive cuts and is not music-video editing.\n\nNegative: exactly one character and one physical body, no duplicate character, no second human figure, no split screen, no clone or mirror-double, no reflection person, no crowd, no NPC, no extra limbs, no text overlay, no watermark, no abrupt redesign, no young slim redesign, no removed backpack, no dropped equipment, no duplicate lantern, no second external stimulus, no completed side landing, no extra step, no repeated left-right shuffling, no hopping, no stumble, no fall, no panic, no run, no jump, no acrobatics, no torso spin, no invented object or scene geometry, no camera movement, no cut, no transition, no weather change, no abrupt color shift, no lyrics, no strong beat, no MV editing, no glossy 3D rendering.",
+  "cloud_feedback": {
+    "character_consistency_score": null,
+    "dynamic_chain_readability_score": null,
+    "tail_action_readability_score": null,
+    "camera_rhythm_score": null,
+    "failure_family": null,
+    "notes": null
+  },
+  "local_render": {
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260925_1009_R58_run_A_00001_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260925_1009_R58_run_A_00001_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260925_1009_R58_run_B_00001_.mp4"
+    ],
+    "elapsed_sec": 860,
+    "rendered_at": "2026-09-25 15:43:14",
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 15:28:53)\n[h3_qq_gen]   状态: running  (2026-09-25 15:29:04)\n[h3_qq_gen]   状态: done  (2026-09-25 15:36:04)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260925_1009_R58_run_A_00001_.mp4\n[h3_qq_gen] 轮询 ADV_B_20260925_1009_R58_run_B_0925152853（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 15:36:04)\n[h3_qq_gen]   状态: done  (2026-09-25 15:43:04)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260925_1009_R58_run_B_00001_.mp4",
+    "by": "relay-gh",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
