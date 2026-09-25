@@ -1,0 +1,94 @@
+{
+  "schema_version": "B-H3-TASK-CH-ZX-001-v1.0",
+  "card_id": "CH-ZX-001",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "character": "黎黎隆",
+  "character_id": "LLL-MAIN-001",
+  "ten_yuan_focus": "ZX",
+  "mode": "single_ten_yuan",
+  "duration": "10-11s",
+  "duration_seconds_range": [10, 11],
+  "output_aspect_ratio": "16:9 landscape",
+  "reference_aspect_ratio": "9:16 allowed",
+  "visual_goal": {
+    "only_show_zx_character_appeal": true,
+    "text": "只突出黎黎隆作为 ZX 主体时的行动力、机灵、好胜、出其不意、灵活变通，以及太想赢使局面变复杂的特征。",
+    "no_second_ten_yuan": true,
+    "no_forced_sheng_ke_bu": true
+  },
+  "subject_definition": {
+    "one_protagonist_only": true,
+    "same_character_once": true,
+    "second_human_figure": false
+  },
+  "changed_variable": "",
+  "dynamic_chain": {
+    "mode": "single_zx_observable_action",
+    "initial_state": "",
+    "stimulus_or_problem": "",
+    "zx_action": "",
+    "complication_caused_by_action": "",
+    "stopped_result": ""
+  },
+  "time_beats": [
+    {"time": "0-2s", "beat": ""},
+    {"time": "2-4s", "beat": ""},
+    {"time": "4-6s", "beat": ""},
+    {"time": "6-8s", "beat": ""},
+    {"time": "8-10s", "beat": ""},
+    {"time": "10-11s", "beat": ""}
+  ],
+  "shot_grammar": {
+    "shot": "fixed shot unless one justified change is specified",
+    "camera": "stable",
+    "lighting": "fixed",
+    "editing": "continuous, not music-video editing"
+  },
+  "audio_design": {
+    "ambient_soundscape": "轻微环境声、风声、脚步、衣料摩擦、远处空间回响",
+    "emotional_sound_cue": "克制的悬疑/机灵感提示音，轻量，不喧宾夺主",
+    "audio_role": "support action and emotion only, not music-video editing"
+  },
+  "runs": ["run_A", "run_B"],
+  "sampling_plan": {
+    "run_count": 2,
+    "same_card": true,
+    "same_inputs": true,
+    "same_prompt": true,
+    "run_A": {"seed": "auto_or_explicit", "execution_record": "pending"},
+    "run_B": {"seed": "auto_or_explicit", "execution_record": "pending"}
+  },
+  "h3_prompt": "",
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no second ten-yuan",
+    "no forced sheng-ke-bu main axis",
+    "no vertical final output"
+  ],
+  "b1_b2_b3_4090_b4_card_id": "CH-ZX-001",
+  "deliverables": [
+    "card_registration",
+    "description_file",
+    "run_A_result",
+    "run_B_result",
+    "run_A_head_mid_tail",
+    "run_B_head_mid_tail",
+    "brief_audit_conclusion"
+  ],
+  "validation_target": {
+    "card_id": "CH-ZX-001",
+    "ten_yuan_focus": "ZX",
+    "duration": "10-11s",
+    "output_aspect_ratio": "16:9 landscape",
+    "run_pair_consistent": "pending_work_output",
+    "visual_result": "pending_work_output"
+  }
+}
