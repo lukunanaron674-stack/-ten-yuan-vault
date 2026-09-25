@@ -103,8 +103,13 @@
       "rule_version": "CH-ZX-EXEC-v1.0",
       "character_asset_id": "LLL-MAIN-001",
       "scene_asset_id": "SCENE-05",
-      "status": "pending_work_output",
-      "conclusion": "pending_work_output"
+      "status": "audit_complete_visual_not_reviewed",
+      "conclusion": "AMBIGUOUS_pending_work_output",
+      "audit_json": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json",
+      "audit_report": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.md",
+      "text_contract": "CONDITIONAL_PASS",
+      "visual_quality": "NOT_REVIEWED",
+      "execution": "pending_work_output"
     },
     "B5": {
       "card_id": "CH-ZX-001",
@@ -114,7 +119,8 @@
       "character_asset_id": "LLL-MAIN-001",
       "scene_asset_id": "SCENE-05",
       "status": "pending_work_output",
-      "conclusion": "pending_work_output"
+      "conclusion": "B4_fields_prefilled_visual_evidence_pending",
+      "source_b4_audit": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json"
     }
   },
   "stage_roles": {
@@ -126,11 +132,11 @@
     "B5": "unified fifth-stage acceptance record"
   },
   "invariant_check": "all six stage envelopes must remain byte-equivalent for card/round/version/asset identifiers",
-  "current_conclusion": "B3_text_ready_input_validation_pending; Picture 1/2 binding and SCENE-05 passage validation required before 4090; 4090/B4/B5 remain pending_work_output",
+  "current_conclusion": "B4 audit complete: text CONDITIONAL_PASS, overall AMBIGUOUS, visual NOT_REVIEWED; 4090 and B5 remain pending_work_output",
   "last_stage_update": {
-    "stage": "B3",
-    "updated_at": "2026-09-25T14:26:24+08:00",
-    "status": "text_ready_input_validation_pending",
-    "source": "黎黎隆项目/角色魅力实验/B端/03_镜头描述词/B3_20260925_1425_CH-ZX-001_R002.json"
+    "stage": "B4",
+    "updated_at": "2026-09-25T14:36:25+08:00",
+    "status": "audit_complete_visual_not_reviewed",
+    "source": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json"
   }
 }
