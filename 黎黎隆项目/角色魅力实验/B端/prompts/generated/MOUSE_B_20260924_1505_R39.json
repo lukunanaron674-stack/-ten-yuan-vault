@@ -1,0 +1,54 @@
+{
+  "task_id": "MOUSE_B_20260924_1505_R39",
+  "prompt_source": "task.h3_prompt",
+  "prompt_sha256": "83792db01b5681c17cd0cee6f0001c66fa790a935b7fb1ea8f6545d727ae0d73",
+  "prompt_chars": 3811,
+  "dual_sample": true,
+  "samples": [
+    {
+      "run": "run_A",
+      "task_id": "MOUSE_B_20260924_1505_R39_run_A_0925105919",
+      "seed": 1192571036,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1505_R39_run_A_00001_.mp4"
+    },
+    {
+      "run": "run_B",
+      "task_id": "MOUSE_B_20260924_1505_R39_run_B_0925105919",
+      "seed": 541085860,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1505_R39_run_B_00001_.mp4"
+    }
+  ],
+  "dynamic_chain_reading": "",
+  "shot_sequence": [],
+  "character_charm": "",
+  "must_keep_check": [],
+  "negative_prompt": "no text, no subtitle, no logo, no random unreadable text",
+  "refs_source": "search_local",
+  "refs_used": [
+    "030F6E3B89E0998CBF695064BC27C2A8.jpeg"
+  ],
+  "frames": 240,
+  "h3_prompt": "Subject: Vertical 9:16, one continuous 11-second single-character narrative. Show exactly one physical instance of the mouse-ear mutant girl from Picture 1. Preserve her short white hair with eye-covering fringe and small upward curl, large translucent pale-violet mouse-ear mutation structures, small slender body, oversized pale robe, dark collar, sleeve cuffs and hem blocks, diagonal strap and side satchel. Keep the identity, body proportions, recognition parts, outfit connections, original materials and reference colors unchanged.\n\nMovement: From 0 to 2 seconds she stands quietly on visually supported lakeside ground, facing along the shore, with both hands relaxed near the existing strap and satchel. From 2 to 4 seconds one soft localized water ripple sound comes from the lake; no visible creature or person causes it. From 4 to 6 seconds only the mouse ear nearer the lake turns toward the sound while her torso, feet and hands remain still. From 6 to 8 seconds her eyes follow, then her head turns only slightly in the same direction. From 8 to 10 seconds one hand makes a small controlled press on the existing diagonal strap; no step and no new gesture follows. From 10 to 11 seconds every motion stops, leaving the turned ear, gaze and lightly secured strap as one clear result.\n\nScene: Picture 2 defines the same SCENE-02 forest-lake identity, existing elements, spatial continuity, warm-sky and cool-lake color relationship, and original drawing language. Use only ground, water, trees, atmospheric depth and negative space actually supported by the bound scene image. Do not show a character reflection and do not invent a bridge, dock, building, rock, root, sign, rail, animal, object or second path.\n\nCamera: One locked eye-level medium shot in a fixed three-quarter side view for the entire sequence. Keep the mouse-ear structures, eyes, head, upper body, diagonal strap and side satchel readable in the same composition. Fixed framing, fixed focal length, no push-in, no pull-back, no pan, no tilt, no tracking, no cut, no transition and no split-screen composition.\n\nLighting: Preserve the bound reference lighting and palette. Use fixed soft diffuse light for the entire shot. No weather change, no sudden color shift, no new glow and no recoloring of the character or environment.\n\nAtmosphere: Clear readable two-dimensional shapes, clean reference-consistent line-and-plane language, restrained hand-drawn motion and quiet lakeside depth. Character charm comes from the sensitive ear reacting before the eyes and head, followed by one small self-steadying hand action. Keep the mood cautious, calm and observant rather than dramatic.\n\nAudio: Ambient soundscape is soft lakeside air, faint leaves, low water presence, one localized gentle ripple, minimal robe and strap rustle, and quiet natural spatial reverb. Emotional sound cue is one restrained suspended non-lyrical tone that becomes slightly clearer during the ear turn and fades when the pose settles, with no strong beat. Audio only supports space, action readability and emotion; it does not drive editing and does not create a music-video structure. If the H3 node does not support audio, treat this as post-production sound design only.\n\nNegative: no duplicate character, no second human figure, no split screen, no clone or mirror-double, no character reflection, no extra limbs, no text overlay, no watermark, no abrupt redesign, no additional person or creature, no rabbit ears, no wings, no tail, no horns, no armor, no weapon, no fitted battle costume, no adult muscular redesign, no new prop, no invented environmental structure, no camera movement, no cut, no transition, no weather change, no abrupt color change, no lyrics, no strong beat, no beat-synced edit, no montage, no MV editing, no glossy 3D rendering.",
+  "cloud_feedback": {
+    "character_consistency_score": null,
+    "dynamic_chain_readability_score": null,
+    "tail_action_readability_score": null,
+    "camera_rhythm_score": null,
+    "failure_family": null,
+    "notes": null
+  },
+  "local_render": {
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1505_R39_run_A_00001_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1505_R39_run_A_00001_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1505_R39_run_B_00001_.mp4"
+    ],
+    "elapsed_sec": 860,
+    "rendered_at": "2026-09-25 11:13:39",
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 10:59:19)\n[h3_qq_gen]   状态: running  (2026-09-25 10:59:38)\n[h3_qq_gen]   状态: done  (2026-09-25 11:06:39)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1505_R39_run_A_00001_.mp4\n[h3_qq_gen] 轮询 MOUSE_B_20260924_1505_R39_run_B_0925105919（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 11:06:39)\n[h3_qq_gen]   状态: done  (2026-09-25 11:13:39)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_1505_R39_run_B_00001_.mp4",
+    "by": "relay-gh",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
