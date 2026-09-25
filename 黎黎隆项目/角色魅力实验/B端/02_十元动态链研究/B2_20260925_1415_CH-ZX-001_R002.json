@@ -1,0 +1,226 @@
+{
+  "schema_version": "B2-SINGLE-TEN-YUAN-HANDOFF-v1.0",
+  "card_id": "CH-ZX-001",
+  "character": "黎黎隆",
+  "character_id": "LLL-MAIN-001",
+  "ten_yuan_focus": "ZX",
+  "mode": "single_ten_yuan",
+  "round_id": "CH-ZX-001-R002",
+  "task_id": "B-H3-CH-ZX-001-R002",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "duration_seconds": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "reference_aspect_ratio": "9:16 allowed",
+  "status": "text_ready_input_validation_pending",
+  "execution_status": "pending_work_output",
+  "source_b1": {
+    "round_registration": "黎黎隆项目/角色魅力实验/B端/card_review/rounds/CH-ZX-001_CH-ZX-001-R002.json",
+    "unified_manifest": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/CH-ZX-001_CH-ZX-001-R002_B1-B5-4090_MANIFEST.json",
+    "character_asset": {
+      "asset_id": "LLL-MAIN-001",
+      "registered_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+      "binding_status": "pending_work_binding"
+    },
+    "scene_asset": {
+      "asset_id": "SCENE-05",
+      "registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
+      "binding_status": "pending_work_binding",
+      "geometry_status": "pending_work_validation"
+    },
+    "same_round_asset_verdict": "registered_paths_exist_in_authoritative_chain_but_same-round Work binding receipt is absent"
+  },
+  "research_boundary": {
+    "only_ten_yuan": "ZX",
+    "second_ten_yuan": null,
+    "sheng_ke_bu_main_axis": null,
+    "old_dynamic_chain_standard_applied": false,
+    "observable_traits": [
+      "行动力",
+      "机灵",
+      "好胜",
+      "出其不意",
+      "灵活变通",
+      "太想赢使局面变复杂"
+    ]
+  },
+  "experiment_title": "最后一拍才穿过去",
+  "visual_goal": "观察黎黎隆是否能把短暂计算转成一次突然但清楚的行动，并让过度追求干净胜利造成唯一可见后果。",
+  "changed_variable": "ZX行动的承诺时机：先保持一拍测量，再在最后安全时机一次侧转；只改变时机，不改变角色、素材、刺激、镜头或结果类型。",
+  "single_ten_yuan_trajectory": [
+    {
+      "time": "0–2s",
+      "zx_intensity": 3,
+      "observable_state": "身体已经准备好，但尚未抢先行动。",
+      "single_changed_variable": "ready_alignment"
+    },
+    {
+      "time": "2–4s",
+      "zx_intensity": 4,
+      "observable_state": "通道开始合拢，行动窗口变短。",
+      "single_changed_variable": "available_gap"
+    },
+    {
+      "time": "4–6s",
+      "zx_intensity": 6,
+      "observable_state": "身体仍稳，只用视线测量开口并把前脚微微内转。",
+      "single_changed_variable": "calculated_delay"
+    },
+    {
+      "time": "6–8s",
+      "zx_intensity": 9,
+      "observable_state": "在最后安全时机完成一次紧凑侧转穿隙。",
+      "single_changed_variable": "single_sideways_pivot"
+    },
+    {
+      "time": "8–10s",
+      "zx_intensity": 8,
+      "observable_state": "尾端慢一拍触边并偏折，过强的求胜行动制造自己的收尾麻烦。",
+      "single_changed_variable": "tail_tip_delay"
+    },
+    {
+      "time": "10–11s",
+      "zx_intensity": 6,
+      "observable_state": "门后直立停住，结果清楚，胜意转为短暂惊讶的好胜笑意。",
+      "single_changed_variable": "stopped_result"
+    }
+  ],
+  "dynamic_chain": {
+    "start": "准备抢过狭窄通道，但尚未行动",
+    "problem": "既有机械门单次持续合拢",
+    "local_response": "短暂保持身体稳定，只测量最后开口",
+    "zx_action": "最后安全时机一次紧凑侧转穿过",
+    "complication": "尾端因行动过于追求干净快速而慢一拍触边、向上偏折",
+    "end": "角色已穿过但提前停住，形成赢得眼前开口却把收尾变复杂的结果",
+    "compact_notation": "ZX3准备 → ZX4窗口缩短 → ZX6计算延迟 → ZX9突然侧转 → ZX8过量延伸 → ZX6停住结果",
+    "status": "single_ten_yuan_observable_hypothesis_not_visually_validated"
+  },
+  "time_beats": [
+    {
+      "time": "0–2s",
+      "role": "initial_state",
+      "beat": "直立在既有狭窄机械通道前，双脚着地，长尾紧凑排在身后。"
+    },
+    {
+      "time": "2–4s",
+      "role": "problem",
+      "beat": "既有通道门只发生一次持续合拢。"
+    },
+    {
+      "time": "4–6s",
+      "role": "local_response",
+      "beat": "身体不动，视线测量开口，前脚轻微内转。"
+    },
+    {
+      "time": "6–8s",
+      "role": "ZX_action",
+      "beat": "最后安全时机用一次紧凑侧转穿过剩余开口。"
+    },
+    {
+      "time": "8–10s",
+      "role": "complication",
+      "beat": "尾端慢一拍轻触门边并向上偏折，迫使她更早停下。"
+    },
+    {
+      "time": "10–11s",
+      "role": "stopped_result",
+      "beat": "门后直立、双脚着地、尾端抬起，表情留下短暂惊讶的好胜笑意。"
+    }
+  ],
+  "decisive_visual_evidence": [
+    "4–6秒身体没有提前穿越，只有视线与前脚准备发生",
+    "6–8秒只出现一次完整侧转，双脚和尾巴连续通过",
+    "8–10秒尾端触边发生在主体已经穿过之后",
+    "10–11秒角色直立停住，不追加第二次修正动作"
+  ],
+  "disconfirming_evidence": [
+    "角色在4–6秒已经开始穿越，导致延迟承诺不可读",
+    "6–8秒出现多次试探、反复进退或第二个动作",
+    "尾端接触早于主体穿过，变成被阻挡而非自行复杂化收尾",
+    "没有尾端偏折，或角色未停住，导致局面变化不可读",
+    "出现第二人物、分身、额外尾巴、镜头移动或竖屏"
+  ],
+  "evidence": {
+    "confirmed": [
+      "权威卡与同轮登记一致使用CH-ZX-001、LLL-MAIN-001、SCENE-05、v1.0、CH-ZX-EXEC-v1.0、CH-ZX-001-R002。",
+      "同轮统一任务已有11秒、六段时间轴、16:9固定全身中远景、结构化音频和run_A/run_B契约。",
+      "R001与R002目前均无真实Work视频或帧证据。"
+    ],
+    "uncertain": [
+      "Picture 1与Picture 2的同轮实际绑定回执缺失。",
+      "SCENE-05是否真实包含可读狭窄机械通道尚未验证。",
+      "角色同人、侧转动作、尾端先后、镜头稳定与氛围契合度均未视觉验证。"
+    ],
+    "prohibited_inference": [
+      "不得把登记路径当成已绑定素材",
+      "不得把文字可读性当成渲染复现率",
+      "不得生成或代填seed、Work任务ID、视频路径或关键帧哈希"
+    ]
+  },
+  "audio_design": {
+    "ambient_soundscape": "连续低位机械空港底噪与柔和通风声。",
+    "emotional_sound_cue": "2–4秒一次克制门机声；6–8秒一次轻甲转身声；8–10秒一次极轻尾端触边声。",
+    "audio_role": "只辅助问题、ZX行动落点与轻微喜剧后果；不做MV卡点，不制造第二刺激。"
+  },
+  "runs": {
+    "run_A": {
+      "status": "pending_work_output",
+      "seed": null
+    },
+    "run_B": {
+      "status": "pending_work_output",
+      "seed": null
+    }
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "same_card": true,
+    "same_round": true,
+    "same_assets": true,
+    "same_prompt": true,
+    "same_workflow": true,
+    "same_parameters": true,
+    "only_allowed_difference": "random seed",
+    "required_frames": [
+      "run_A_head",
+      "run_A_mid",
+      "run_A_tail",
+      "run_B_head",
+      "run_B_mid",
+      "run_B_tail"
+    ]
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no second ten-yuan",
+    "no forced sheng-ke-bu main axis",
+    "no vertical final output"
+  ],
+  "validation_target": {
+    "B2_text_structure": "pass",
+    "same_round_identity": "pass",
+    "input_binding": "pending_work_binding",
+    "character_identity": "pending_work_output",
+    "action_readability": "pending_work_output",
+    "camera_stability": "pending_work_output",
+    "atmosphere_fit": "pending_work_output",
+    "duplicate_or_clone_fault": "pending_work_output",
+    "duration_and_aspect": "pending_work_output",
+    "audio_fields_complete": "pass",
+    "overall": "text_ready_input_validation_pending"
+  },
+  "handoff_action": {
+    "target_stage": "B3",
+    "action": "Consume this exact round and asset set. Preserve the six beats and single-ZX trajectory. Compile the existing R002 H3 prompt without adding a second ten-yuan, sheng-ke-bu relation, new prop, second stimulus, camera move, or alternate scene.",
+    "source_prompt": "黎黎隆项目/角色魅力实验/B端/prompts/generated/CH-ZX-001_CH-ZX-001-R002_H3.md",
+    "unified_manifest": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/CH-ZX-001_CH-ZX-001-R002_B1-B5-4090_MANIFEST.json",
+    "preflight_gate": "B3 may prepare text, but 4090 execution must stop with binding_mismatch unless Picture 1 and Picture 2 are actually bound and SCENE-05 confirms the required passage."
+  }
+}
