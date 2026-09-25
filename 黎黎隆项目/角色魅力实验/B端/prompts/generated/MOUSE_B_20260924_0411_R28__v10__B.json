@@ -1,0 +1,51 @@
+{
+  "task_id": "MOUSE_B_20260924_0411_R28__v10__B",
+  "parent_task_id": "MOUSE_B_20260924_0411_R28",
+  "schema_version": null,
+  "clip_id": "B",
+  "prompt_chars": 2614,
+  "dual_sample": true,
+  "samples": [
+    {
+      "run": "run_A",
+      "task_id": "MOUSE_B_20260924_0411_R28__v10__B_run_A_0925084226",
+      "seed": 848438709,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__B_run_A_00004_.mp4"
+    },
+    {
+      "run": "run_B",
+      "task_id": "MOUSE_B_20260924_0411_R28__v10__B_run_B_0925084226",
+      "seed": 1516639283,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__B_run_B_00003_.mp4"
+    }
+  ],
+  "dynamic_chain_reading": "",
+  "shot_sequence": [],
+  "must_keep_check": [],
+  "negative_prompt": "no text, no subtitle, no logo, no random unreadable text",
+  "refs_source": "task",
+  "refs_used": [
+    "030F6E3B89E0998CBF695064BC27C2A8.jpeg",
+    "R1-12_异种村庄_五色组合.png"
+  ],
+  "frames": 240,
+  "audio_design": {
+    "ambient_soundscape": "延续A段村庄低风与轻微木石底噪；小步落地时加入一次柔和脚步、袍摆和侧包摩擦声。仅作音效设计。",
+    "emotional_sound_cue": "无歌词、无强拍的低音悬停在确认方向后略微松开；落稳时出现一个短促温和的低频收束，不驱动剪辑。",
+    "audio_role": "support the voluntary repositioning and emotional release; no beat-synced cutting and no MV logic"
+  },
+  "h3_prompt": "2D hand-drawn cinematic character sequence, 15 seconds, vertical 9:16, continuing directly from the selected final frame of Segment A. STYLE IDENTITY LOCK: preserve the exact line quality, materials, original colors and design language visible in Picture 1 for the only character, and preserve the verified five-color palette logic and environmental material language of Picture 2. Do not impose colors or glowing materials that conflict with either source. VISUAL EXPRESSION: clear readable shapes, restrained variable-weight linework, light wash-like shading, soft diffuse illumination and controlled negative space only where compatible with the references. CHARACTER — Picture 1: the same one and only mouse-ear mutant girl from Segment A, preserving her short white hair with eye-covering fringe and small curl, translucent pale-violet mouse-ear structures, small slender proportions, oversized pale robe, dark collar, cuffs and hem blocks, diagonal strap and side satchel. The multiple views describe one identity, never several people. ENVIRONMENT — Picture 2: remain in the same heterogeneous village space, with the same existing elements, ground relationship, spatial axis and five-color palette logic established in Segment A. Picture 2 does not lock the framing. Do not invent new architecture, props, machines or an unseen reverse view. CAMERA AND COMPOSITION: maintain the same slightly elevated three-quarter axis, use a medium shot wide enough to show one small lateral step, keep the movement direction readable, and make only a very slow short lateral follow; if the environment cannot remain coherent, keep the camera locked. ACTION: begin in the exact cautious stopping pose selected from Segment A. Her other ear finishes aligning and her eyes check the adjacent calmer area before her body moves. Her upper body leans slightly in that direction, then she takes one small lateral step, no running and no turn. Her robe hem, diagonal strap and side satchel settle naturally. She looks back once toward her former position and comes to a complete stop. Keep one continuous restrained action, not rhythmic editing. Only one physical character instance appears. NEGATIVE: no second person, no visible creature, no duplicate or clone, no complete humanlike reflection or shadow double, no split screen, no character-sheet layout, no four-person interpretation of reference views, no identity redesign, no cyan-white energy humanoid, no new wings, weapons, clothes or anatomy, no location replacement, no unsupported object, no glossy 3D, no hard digital edges, no text, subtitle, logo or watermark.",
+  "local_render": {
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__B_run_A_00004_.mp4",
+    "mp4s": [
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__B_run_A_00004_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__B_run_B_00003_.mp4"
+    ],
+    "elapsed_sec": 899,
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 08:42:26)\n[h3_qq_gen]   状态: running  (2026-09-25 08:43:22)\n[h3_qq_gen]   状态: done  (2026-09-25 08:50:21)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__B_run_A_00004_.mp4\n[h3_qq_gen] 轮询 MOUSE_B_20260924_0411_R28__v10__B_run_B_0925084226（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 08:50:22)\n[h3_qq_gen]   状态: done  (2026-09-25 08:57:22)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__B_run_B_00003_.mp4",
+    "by": "b_new_format",
+    "host": "DESKTOP-FKEUGLS"
+  }
+}
