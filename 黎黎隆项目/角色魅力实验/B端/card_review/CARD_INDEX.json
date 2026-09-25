@@ -29,11 +29,27 @@
       "b1_b2_b3_4090_b4_card_id": "CH-ZX-001",
       "source_registration_file": "card_review/cards/CH-ZX-001.json",
       "review_record": "card_review/cards.json",
-      "frame_status": "pending_work_execution",
+      "frame_status": "pending_work_output",
       "visual_verification_status": "pending_work_output",
       "legacy_rounds": [],
       "created_from": "B_CARD_SYSTEM_NEXT_ROUND_20260924",
-      "created_on": "2026-09-25"
+      "created_on": "2026-09-25",
+      "current_round_id": "CH-ZX-001-R001",
+      "current_task_id": "B-H3-CH-ZX-001-R001",
+      "scene_id": "SCENE-05",
+      "execution_status": "pending_work_output",
+      "current_round_registration": "card_review/rounds/CH-ZX-001_CH-ZX-001-R001.json",
+      "current_deliverables": {
+        "round_registration": "card_review/rounds/CH-ZX-001_CH-ZX-001-R001.json",
+        "task": "tasks/inbox/CH-ZX-001_CH-ZX-001-R001_20260925_1307.json",
+        "relay": "tasks/inbox/CH-ZX-001_CH-ZX-001-R001_20260925_1307__v10_RELAY.json",
+        "prompt": "prompts/generated/CH-ZX-001_CH-ZX-001-R001_H3.md",
+        "run_A": "results/CH-ZX-001_CH-ZX-001-R001_run_A.json",
+        "run_B": "results/CH-ZX-001_CH-ZX-001-R001_run_B.json",
+        "run_A_frames": "results/frames/CH-ZX-001_CH-ZX-001-R001/run_A_frames.json",
+        "run_B_frames": "results/frames/CH-ZX-001_CH-ZX-001-R001/run_B_frames.json",
+        "audit": "card_review/audits/CH-ZX-001_CH-ZX-001-R001_AUDIT.md"
+      }
     }
   ],
   "legacy_policy": {
