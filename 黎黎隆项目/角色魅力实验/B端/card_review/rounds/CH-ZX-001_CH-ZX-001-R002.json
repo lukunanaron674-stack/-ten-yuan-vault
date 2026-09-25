@@ -1,0 +1,38 @@
+{
+  "schema_version": "B-CARD-ROUND-v1.1",
+  "card_id": "CH-ZX-001",
+  "character": "黎黎隆",
+  "character_id": "LLL-MAIN-001",
+  "ten_yuan_focus": "ZX",
+  "mode": "single_ten_yuan",
+  "round_id": "CH-ZX-001-R002",
+  "task_id": "B-H3-CH-ZX-001-R002",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "duration": 11,
+  "output_aspect_ratio": "16:9 landscape",
+  "reference_aspect_ratio": "9:16 allowed",
+  "character_asset_id": "LLL-MAIN-001",
+  "scene_asset_id": "SCENE-05",
+  "card_status": "active",
+  "registration_status": "registered",
+  "pipeline_status": "ready_for_B1",
+  "round_status": "pending_work_output",
+  "visual_goal": "让黎黎隆通过一次故意延迟到最后安全时机的侧转表现机灵、好胜与出其不意；尾端慢一拍触边，使干净胜利变得略微复杂。",
+  "changed_variable": "相对R001只改ZX行动时机：从立即抢隙改为短暂计算后在最后安全时机侧转；角色、素材、镜头、光线、声音结构和单门刺激保持。",
+  "asset_set": {
+    "character": {
+      "asset_id": "LLL-MAIN-001",
+      "registered_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
+      "binding_status": "pending_work_binding"
+    },
+    "scene": {
+      "asset_id": "SCENE-05",
+      "registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
+      "binding_status": "pending_work_binding",
+      "geometry_gate": "must contain one existing readable narrow mechanical passage; otherwise binding_mismatch"
+    }
+  },
+  "pipeline_manifest": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/CH-ZX-001_CH-ZX-001-R002_B1-B5-4090_MANIFEST.json",
+  "b5_acceptance": "黎黎隆项目/角色魅力实验/B端/results/CH-ZX-001_CH-ZX-001-R002_B5_UNIFIED_ACCEPTANCE.json"
+}
