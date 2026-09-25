@@ -8,15 +8,15 @@
   "samples": [
     {
       "run": "run_A",
-      "task_id": "MOUSE_B_20260924_0411_R28__v10__A_run_A_0925051016",
-      "seed": 425743895,
-      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_A_00003_.mp4"
+      "task_id": "MOUSE_B_20260924_0411_R28__v10__A_run_A_0925082743",
+      "seed": 20862054,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_A_00004_.mp4"
     },
     {
       "run": "run_B",
-      "task_id": "MOUSE_B_20260924_0411_R28__v10__A_run_B_0925051016",
-      "seed": 1012309613,
-      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_B_00003_.mp4"
+      "task_id": "MOUSE_B_20260924_0411_R28__v10__A_run_B_0925082743",
+      "seed": 415696489,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_B_00004_.mp4"
     }
   ],
   "dynamic_chain_reading": "",
@@ -37,14 +37,14 @@
   "h3_prompt": "2D hand-drawn cinematic character sequence, 15 seconds, vertical 9:16. STYLE IDENTITY LOCK: preserve the exact line quality, materials, original colors and design language visible in Picture 1 for the only character, and preserve the verified five-color palette logic and environmental material language of Picture 2. Do not impose colors or glowing materials that conflict with either source. VISUAL EXPRESSION: clear readable shapes, restrained variable-weight linework, light wash-like shading, soft diffuse illumination and generous negative space only where compatible with the references. CHARACTER — Picture 1: one and only one mouse-ear mutant girl, preserving her short white hair with eye-covering fringe and small curl, translucent pale-violet mouse-ear structures, small slender proportions, oversized pale robe, dark collar, cuffs and hem blocks, diagonal strap and side satchel. The multiple views describe the same single identity, never multiple people. ENVIRONMENT — Picture 2: retain the identity, existing elements, spatial continuity and five-color palette logic of the heterogeneous village. Picture 2 does not lock the framing. Do not invent a new building, door, machine, prop or unseen reverse view. CAMERA AND COMPOSITION: a slightly elevated three-quarter medium-wide shot, the sole character placed on one side with ample open space in the direction she watches; use only foreground forms supported by Picture 2, keep its village layers in the background, and hold the camera still. ACTION: at first she stands quietly with subtle breathing and asymmetrical alert ears. An existing boundary between darker and brighter areas of the environment slowly shifts across the ground without creating a new light source. Her nearer ear turns first, then her eyes follow, then her head turns only a little. Her shoulder tightens and the other ear begins to align; her feet and body remain still, and she stops in a cautious listening pose. Keep the action continuous and readable, not rhythmic editing. Only one physical character instance appears. NEGATIVE: no second person, no visible creature, no duplicate or clone, no complete humanlike reflection or shadow double, no split screen, no character-sheet layout, no four-person interpretation of reference views, no identity redesign, no cyan-white energy humanoid, no new wings, weapons, clothes or anatomy, no location replacement, no unsupported object, no glossy 3D, no hard digital edges, no text, subtitle, logo or watermark.",
   "local_render": {
     "status": "done",
-    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_A_00003_.mp4",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_A_00004_.mp4",
     "mp4s": [
-      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_A_00003_.mp4",
-      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_B_00003_.mp4"
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_A_00004_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_B_00004_.mp4"
     ],
-    "elapsed_sec": 899,
+    "elapsed_sec": 880,
     "rc": 0,
-    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 05:10:16)\n[h3_qq_gen]   状态: running  (2026-09-25 05:11:06)\n[h3_qq_gen]   状态: done  (2026-09-25 05:18:05)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_A_00003_.mp4\n[h3_qq_gen] 轮询 MOUSE_B_20260924_0411_R28__v10__A_run_B_0925051016（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 05:18:05)\n[h3_qq_gen]   状态: done  (2026-09-25 05:25:06)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_B_00003_.mp4",
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 08:27:43)\n[h3_qq_gen]   状态: running  (2026-09-25 08:28:21)\n[h3_qq_gen]   状态: done  (2026-09-25 08:35:21)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_A_00004_.mp4\n[h3_qq_gen] 轮询 MOUSE_B_20260924_0411_R28__v10__A_run_B_0925082743（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 08:35:21)\n[h3_qq_gen]   状态: done  (2026-09-25 08:42:22)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\MOUSE_B_20260924_0411_R28__v10__A_run_B_00004_.mp4",
     "by": "b_new_format",
     "host": "DESKTOP-FKEUGLS"
   }
