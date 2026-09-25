@@ -12,7 +12,7 @@
   "duration": 11,
   "output_aspect_ratio": "16:9 landscape",
   "reference_aspect_ratio": "9:16 allowed",
-  "indexed_at": "2026-09-25T15:04:58+08:00",
+  "indexed_at": "2026-09-25T16:04:37+08:00",
   "status": "asset_sources_indexed_work_binding_pending",
   "authoritative_sources": [
     {
@@ -116,7 +116,14 @@
       "pool_status": "available_by_github_path",
       "scene_family": "机械空港",
       "production_stage": "R1",
-      "semantic_description": "单色技术环境；适合固定流程、机械门和清楚的受限路径。"
+      "semantic_description": "单色技术环境；适合固定流程、机械门和清楚的受限路径。",
+      "binary_read_attempt": {
+        "attempted": true,
+        "connector_result": "binary content not returned by fetch_file; fetch_blob failed UTF-8 decode",
+        "verified_blob_sha": "eb34acce753735d96565bc0108d502dfdc775088",
+        "dimensions": null,
+        "pixel_review": false
+      }
     },
     "version_reference": {
       "scene_pool_id": "GITHUB_13_SCENE_POOL_V1",
@@ -135,11 +142,12 @@
       "evidence": [
         "scene_pool_13_index registers SCENE-05",
         "registered blob eb34acce753735d96565bc0108d502dfdc775088",
+        "GitHub binary fetch was attempted; connector confirmed the blob but did not return decodable bytes",
         "status available_by_github_path",
         "pool text supports a technical environment and constrained route"
       ],
       "uncertainty": [
-        "This run did not obtain a verified PNG dimension readout",
+        "PNG dimensions remain unverified because the connector did not return binary bytes",
         "No same-round Work Picture 2 binding receipt",
         "A readable narrow mechanical passage has not been visually verified for R002",
         "Pool semantic text cannot prove exact door geometry"
@@ -148,18 +156,19 @@
     }
   },
   "cross_stage_handoff": {
-    "source": "CH-ZX-001-R002 authoritative card, character pool and scene pool",
+    "source": "CH-ZX-001-R002 authoritative card, B1 source assets, latest same-round B2/B3/B4 and Work result contracts",
     "evidence": [
-      "card/round/version/asset IDs agree across authoritative records",
-      "run_A and run_B result files still report render_completed=false",
-      "both input_binding objects remain null and validated=false"
+      "card/round/version/asset IDs agree across B1/B2/B3/4090/B4/B5",
+      "B2/B3 camera contract is resolved in the same round",
+      "model-facing H3 prompt is synchronized across B3/task/relay and theory terminology is absent",
+      "run_A and run_B still report render_completed=false with null seed and Work task ID"
     ],
     "uncertainty": [
-      "No same-round Picture 1/2 receipt",
-      "No output video, frames, seed, Work task ID or audio evidence",
-      "B2/B3 camera wording conflict remains outside B1 asset scope"
+      "No same-round Picture 1/2 binding receipt",
+      "No verified SCENE-05 narrow-passage geometry",
+      "No output video, six frames, media metadata or audio evidence"
     ],
-    "handoff_action": "B2/B3 retain this exact combination and versions. 4090 may execute only after both bindings and SCENE-05 geometry pass; B4/B5 must remain pending_work_output until real results and six frames arrive."
+    "handoff_action": "B2/B3/4090 must retain this exact asset combination and versions. 4090 may execute only after both bindings and SCENE-05 geometry pass; B4/B5 remain pending_work_output until real results and six frames arrive."
   },
   "pending_assets": [
     "Picture 1 same-round binding receipt: path, SHA-256, dimensions, identity verdict",
@@ -174,7 +183,21 @@
     "run_B": "pending_work_output",
     "actual_completed_runs": 0,
     "render_claim": false,
-    "visual_validation_claim": false
+    "visual_validation_claim": false,
+    "last_verified_at": "2026-09-25T16:04:37+08:00"
   },
-  "conclusion": "GitHub source assets are indexed for the same card and round; Work binding and all visual validation remain pending."
+  "conclusion": "No asset version changed. The same CH-ZX-001-R002 sources remain authoritative; stale camera-conflict language is removed, while Work binding, scene geometry and all visual validation remain pending.",
+  "incremental_update": {
+    "update_type": "handoff_refresh_no_asset_version_change",
+    "checked_at": "2026-09-25T16:04:37+08:00",
+    "asset_version_change": false,
+    "authoritative_card_index_blob": "983bd4d5459caaa7917d0944c7457e0bfc230f1c",
+    "card_registration_blob": "a9a02e7a04d0dec102c523ed2ae020c6a6332a74",
+    "b2_blob": "e4aeda4d2706dd4514053edbdbdc69a438579ee9",
+    "b3_blob": "e3de3c7654d2d328d5f6b2143df13d2d9946305d",
+    "b4_blob": "7731fff34c5996cd50dd1c6b7ccfe2030084c466",
+    "run_A_blob": "58ed87462383c5197c6c1c227ad8cfb1f35155f7",
+    "run_B_blob": "2d685d9b9556b20a35376baacd8c9d397fac86a9",
+    "actual_completed_runs": 0
+  }
 }
