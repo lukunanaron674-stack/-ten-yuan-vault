@@ -71,8 +71,12 @@
       "rule_version": "CH-ZX-EXEC-v1.0",
       "character_asset_id": "LLL-MAIN-001",
       "scene_asset_id": "SCENE-05",
-      "status": "pending_work_output",
-      "conclusion": "pending_work_output"
+      "status": "text_ready_input_validation_pending",
+      "conclusion": "single_ten_yuan_chain_ready_for_B3_input_binding_pending",
+      "work_order": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260925_1415_CH-ZX-001_R002.json",
+      "ten_yuan_focus": "ZX",
+      "second_ten_yuan": null,
+      "handoff_action": "B3 must consume the same card, round, asset set, versions and six-beat chain; do not execute 4090 before actual Picture 1/2 binding."
     },
     "B3": {
       "card_id": "CH-ZX-001",
@@ -114,5 +118,11 @@
     "B5": "unified fifth-stage acceptance record"
   },
   "invariant_check": "all six stage envelopes must remain byte-equivalent for card/round/version/asset identifiers",
-  "current_conclusion": "pending_work_output"
+  "current_conclusion": "B2_text_ready_input_validation_pending; 4090/B4/B5 remain pending_work_output",
+  "last_stage_update": {
+    "stage": "B2",
+    "updated_at": "2026-09-25T14:15:04+08:00",
+    "status": "text_ready_input_validation_pending",
+    "source": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260925_1415_CH-ZX-001_R002.json"
+  }
 }
