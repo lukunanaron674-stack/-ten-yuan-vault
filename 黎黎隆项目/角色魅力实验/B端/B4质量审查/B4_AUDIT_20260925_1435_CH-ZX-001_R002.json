@@ -1,0 +1,252 @@
+{
+  "schema_version": "B4-UNIFIED-QUALITY-AUDIT-v1.0",
+  "card_id": "CH-ZX-001",
+  "round_id": "CH-ZX-001-R002",
+  "card_version": "v1.0",
+  "rule_version": "CH-ZX-EXEC-v1.0",
+  "character_asset_id": "LLL-MAIN-001",
+  "scene_asset_id": "SCENE-05",
+  "task_id": "B-H3-CH-ZX-001-R002",
+  "character": "黎黎隆",
+  "ten_yuan_focus": "ZX",
+  "mode": "single_ten_yuan",
+  "audited_at": "2026-09-25T14:36:25+08:00",
+  "overall_verdict": "AMBIGUOUS",
+  "visual_quality_verdict": "NOT_REVIEWED",
+  "execution_verdict": "PENDING_WORK_OUTPUT",
+  "text_contract_verdict": "CONDITIONAL_PASS",
+  "source_artifacts": {
+    "B1": "黎黎隆项目/角色魅力实验/B端/card_review/rounds/CH-ZX-001_CH-ZX-001-R002.json",
+    "B2": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260925_1415_CH-ZX-001_R002.json",
+    "B3": "黎黎隆项目/角色魅力实验/B端/03_镜头描述词/B3_20260925_1425_CH-ZX-001_R002.json",
+    "relay_4090": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/CH-ZX-001_CH-ZX-001-R002_20260925_1411__v10_RELAY.json",
+    "run_A": "黎黎隆项目/角色魅力实验/B端/results/CH-ZX-001_CH-ZX-001-R002_run_A.json",
+    "run_B": "黎黎隆项目/角色魅力实验/B端/results/CH-ZX-001_CH-ZX-001-R002_run_B.json",
+    "run_A_frames": "黎黎隆项目/角色魅力实验/B端/results/frames/CH-ZX-001_CH-ZX-001-R002/run_A_frames.json",
+    "run_B_frames": "黎黎隆项目/角色魅力实验/B端/results/frames/CH-ZX-001_CH-ZX-001-R002/run_B_frames.json"
+  },
+  "evidence_state": {
+    "verified": [
+      "stage identity envelope",
+      "single-ZX boundary",
+      "11-second specification",
+      "16:9 final-output specification",
+      "audio_design fields",
+      "two-run sampling contract",
+      "B3 prompt and relay text existence"
+    ],
+    "not_submitted": [
+      "same-round Picture 1 binding receipt",
+      "same-round Picture 2 binding receipt",
+      "workflow ID/version/parameters fingerprint",
+      "seed and Work task IDs"
+    ],
+    "unproduced": [
+      "run_A video",
+      "run_B video",
+      "six real head/mid/tail frames",
+      "real audio tracks"
+    ],
+    "unread": [
+      "character pixels for this execution",
+      "scene pixels and passage geometry for this execution",
+      "rendered temporal motion",
+      "rendered audio"
+    ],
+    "prohibited_substitutions": [
+      "old round outputs",
+      "reference images as result frames",
+      "planned seeds as executed seeds",
+      "text prompt as visual proof"
+    ]
+  },
+  "runs": {
+    "run_A": {
+      "status": "pending_work_output",
+      "render_completed": false,
+      "seed": null,
+      "work_task_id": null,
+      "output": null,
+      "frames_complete": false
+    },
+    "run_B": {
+      "status": "pending_work_output",
+      "render_completed": false,
+      "seed": null,
+      "work_task_id": null,
+      "output": null,
+      "frames_complete": false
+    }
+  },
+  "checks": {
+    "stage_identity_consistency": {
+      "verdict": "PASS",
+      "evidence": "B1/B2/B3/4090/B4/B5 envelopes use CH-ZX-001, CH-ZX-001-R002, v1.0, CH-ZX-EXEC-v1.0, LLL-MAIN-001 and SCENE-05."
+    },
+    "asset_reference_consistency": {
+      "verdict": "AMBIGUOUS",
+      "evidence": "Registered asset IDs and repository paths agree, but same-round Picture 1/2 binding path, SHA-256, dimensions and validation receipts are absent."
+    },
+    "card_and_rule_version_consistency": {
+      "verdict": "PASS",
+      "evidence": "card_version v1.0 and rule_version CH-ZX-EXEC-v1.0 agree across inspected artifacts."
+    },
+    "round_id_consistency": {
+      "verdict": "PASS",
+      "evidence": "All inspected R002 artifacts use CH-ZX-001-R002."
+    },
+    "single_ten_yuan_boundary": {
+      "verdict": "PASS",
+      "evidence": "ten_yuan_focus=ZX, mode=single_ten_yuan, second_ten_yuan=null; no forced sheng-ke-bu explanation is used as the analysis axis."
+    },
+    "b2_b3_contract_consistency": {
+      "verdict": "AMBIGUOUS",
+      "evidence": "The event and six beats match, but B2 still lists camera movement as disconfirming while B3 intentionally adds one motivated stable lateral dolly/push-in under the newer anti-static production rule."
+    },
+    "character_identity": {
+      "verdict": "NOT_REVIEWED",
+      "evidence": "No real run video or frame pixels exist."
+    },
+    "action_readability": {
+      "verdict": "NOT_REVIEWED",
+      "evidence": "No real evidence proves the one-shoulder-width whole-body crossing, pivot timing or tail-tip consequence."
+    },
+    "camera_stability": {
+      "verdict": "NOT_REVIEWED",
+      "evidence": "B3 specifies one stable move, but no rendered temporal evidence exists."
+    },
+    "shot_size_change_visible": {
+      "verdict": "NOT_REVIEWED",
+      "evidence": "No video proves full-body wide changes to full-body medium-wide."
+    },
+    "background_parallax_visible": {
+      "verdict": "NOT_REVIEWED",
+      "evidence": "No video proves background parallax."
+    },
+    "whole_body_displacement_visible": {
+      "verdict": "NOT_REVIEWED",
+      "evidence": "No video proves lateral displacement of at least one shoulder-width."
+    },
+    "atmosphere_fit": {
+      "verdict": "NOT_REVIEWED",
+      "evidence": "No visual or audio output exists."
+    },
+    "no_duplicate_or_clone": {
+      "verdict": "NOT_REVIEWED",
+      "evidence": "No output frames exist; prompt constraints alone are not visual evidence."
+    },
+    "duration_10_11s": {
+      "verdict": "PASS_TEXT_ONLY",
+      "evidence": "All task and relay specifications request 11 seconds; real output duration is null."
+    },
+    "landscape_16_9": {
+      "verdict": "PASS_TEXT_ONLY",
+      "evidence": "Final output is specified as 16:9 landscape. The 9:16 allowance applies only to the character reference and is not an error."
+    },
+    "audio_fields_complete": {
+      "verdict": "PASS_TEXT_ONLY",
+      "evidence": "ambient_soundscape, emotional_sound_cue and audio_role are present; real audio_track_present is null."
+    },
+    "run_pair_parameter_consistency": {
+      "verdict": "PASS_PLAN_ONLY",
+      "evidence": "Relay requires identical prompt, inputs, workflow and parameters with seed-only variation; execution fingerprints are null because neither run occurred."
+    },
+    "six_frame_evidence_complete": {
+      "verdict": "FAIL_MISSING_OUTPUT",
+      "evidence": "All six head/mid/tail paths, hashes, frame numbers and timestamps are null."
+    }
+  },
+  "b5_required_fields": {
+    "stage_identity_consistency": {
+      "status": "PASS",
+      "evidence": "B1/B2/B3/4090/B4/B5 envelopes use CH-ZX-001, CH-ZX-001-R002, v1.0, CH-ZX-EXEC-v1.0, LLL-MAIN-001 and SCENE-05."
+    },
+    "asset_reference_consistency": {
+      "status": "AMBIGUOUS",
+      "evidence": "Registered asset IDs and repository paths agree, but same-round Picture 1/2 binding path, SHA-256, dimensions and validation receipts are absent."
+    },
+    "card_and_rule_version_consistency": {
+      "status": "PASS",
+      "evidence": "card_version v1.0 and rule_version CH-ZX-EXEC-v1.0 agree across inspected artifacts."
+    },
+    "round_id_consistency": {
+      "status": "PASS",
+      "evidence": "All inspected R002 artifacts use CH-ZX-001-R002."
+    },
+    "single_ten_yuan_boundary": {
+      "status": "PASS",
+      "evidence": "ten_yuan_focus=ZX, mode=single_ten_yuan, second_ten_yuan=null; no forced sheng-ke-bu explanation is used as the analysis axis."
+    },
+    "b2_b3_contract_consistency": {
+      "status": "AMBIGUOUS",
+      "evidence": "The event and six beats match, but B2 still lists camera movement as disconfirming while B3 intentionally adds one motivated stable lateral dolly/push-in under the newer anti-static production rule."
+    },
+    "character_identity": {
+      "status": "NOT_REVIEWED",
+      "evidence": "No real run video or frame pixels exist."
+    },
+    "action_readability": {
+      "status": "NOT_REVIEWED",
+      "evidence": "No real evidence proves the one-shoulder-width whole-body crossing, pivot timing or tail-tip consequence."
+    },
+    "camera_stability": {
+      "status": "NOT_REVIEWED",
+      "evidence": "B3 specifies one stable move, but no rendered temporal evidence exists."
+    },
+    "shot_size_change_visible": {
+      "status": "NOT_REVIEWED",
+      "evidence": "No video proves full-body wide changes to full-body medium-wide."
+    },
+    "background_parallax_visible": {
+      "status": "NOT_REVIEWED",
+      "evidence": "No video proves background parallax."
+    },
+    "whole_body_displacement_visible": {
+      "status": "NOT_REVIEWED",
+      "evidence": "No video proves lateral displacement of at least one shoulder-width."
+    },
+    "atmosphere_fit": {
+      "status": "NOT_REVIEWED",
+      "evidence": "No visual or audio output exists."
+    },
+    "no_duplicate_or_clone": {
+      "status": "NOT_REVIEWED",
+      "evidence": "No output frames exist; prompt constraints alone are not visual evidence."
+    },
+    "duration_10_11s": {
+      "status": "PASS_TEXT_ONLY",
+      "evidence": "All task and relay specifications request 11 seconds; real output duration is null."
+    },
+    "landscape_16_9": {
+      "status": "PASS_TEXT_ONLY",
+      "evidence": "Final output is specified as 16:9 landscape. The 9:16 allowance applies only to the character reference and is not an error."
+    },
+    "audio_fields_complete": {
+      "status": "PASS_TEXT_ONLY",
+      "evidence": "ambient_soundscape, emotional_sound_cue and audio_role are present; real audio_track_present is null."
+    },
+    "run_pair_parameter_consistency": {
+      "status": "PASS_PLAN_ONLY",
+      "evidence": "Relay requires identical prompt, inputs, workflow and parameters with seed-only variation; execution fingerprints are null because neither run occurred."
+    },
+    "six_frame_evidence_complete": {
+      "status": "FAIL_MISSING_OUTPUT",
+      "evidence": "All six head/mid/tail paths, hashes, frame numbers and timestamps are null."
+    }
+  },
+  "blockers": [
+    "Picture 1/2 same-round binding receipts are absent.",
+    "SCENE-05 readable narrow-passage geometry is unverified.",
+    "4090 has produced neither run_A nor run_B.",
+    "Six real frame files and hashes are absent.",
+    "Real output duration, dimensions, fps, frame count and audio presence are absent."
+  ],
+  "next_action": [
+    "B1/4090 must bind LLL-MAIN-001 and SCENE-05 in the same execution and return path, SHA-256, dimensions and validation verdicts.",
+    "If SCENE-05 lacks the required passage, return binding_mismatch; do not invent geometry.",
+    "Reconcile B2 camera wording with the B3 one-move camera rule before execution, preserving the same single-ZX event.",
+    "4090 must execute the exact same prompt twice with the same workflow and parameters; only seed may differ.",
+    "Return both result records plus six real frames, then rerun B4 visual review."
+  ],
+  "conclusion": "Text structure is conditionally acceptable, but no visual or audio quality claim is allowed. Overall remains pending_work_output."
+}
