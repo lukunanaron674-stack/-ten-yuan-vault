@@ -13,7 +13,13 @@
   "output_aspect_ratio": "16:9 landscape",
   "reference_aspect_ratio": "9:16 allowed",
   "runs_per_prompt": 2,
-  "same_card_across": ["B1", "B2", "B3", "4090", "B4"],
+  "same_card_across": [
+    "B1",
+    "B2",
+    "B3",
+    "4090",
+    "B4"
+  ],
   "run_policy": {
     "run_A": "same prompt, same inputs, same workflow and parameters",
     "run_B": "same prompt, same inputs, same workflow and parameters",
@@ -32,14 +38,49 @@
     "emotional_sound_cue": "克制的悬疑与机灵感提示音，轻量，不喧宾夺主",
     "audio_role": "support action and emotion only, not music-video editing"
   },
-  "runs": ["run_A", "run_B"],
-  "frame_outputs_required": ["run_A_head", "run_A_mid", "run_A_tail", "run_B_head", "run_B_mid", "run_B_tail"],
-  "frame_status": "pending_work_execution",
-  "review_status": "pending",
+  "runs": [
+    "run_A",
+    "run_B"
+  ],
+  "frame_outputs_required": [
+    "run_A_head",
+    "run_A_mid",
+    "run_A_tail",
+    "run_B_head",
+    "run_B_mid",
+    "run_B_tail"
+  ],
+  "frame_status": "pending_work_output",
+  "review_status": "text_structure_passed_execution_pending",
   "must_not": [
     "no second ten-yuan",
     "no forced sheng-ke-bu axis",
     "no MV editing",
     "no vertical final output"
+  ],
+  "current_round_id": "CH-ZX-001-R001",
+  "current_task_id": "B-H3-CH-ZX-001-R001",
+  "scene_id": "SCENE-05",
+  "execution_status": "pending_work_output",
+  "current_round_registration": "card_review/rounds/CH-ZX-001_CH-ZX-001-R001.json",
+  "current_deliverables": {
+    "round_registration": "card_review/rounds/CH-ZX-001_CH-ZX-001-R001.json",
+    "task": "tasks/inbox/CH-ZX-001_CH-ZX-001-R001_20260925_1307.json",
+    "relay": "tasks/inbox/CH-ZX-001_CH-ZX-001-R001_20260925_1307__v10_RELAY.json",
+    "prompt": "prompts/generated/CH-ZX-001_CH-ZX-001-R001_H3.md",
+    "run_A": "results/CH-ZX-001_CH-ZX-001-R001_run_A.json",
+    "run_B": "results/CH-ZX-001_CH-ZX-001-R001_run_B.json",
+    "run_A_frames": "results/frames/CH-ZX-001_CH-ZX-001-R001/run_A_frames.json",
+    "run_B_frames": "results/frames/CH-ZX-001_CH-ZX-001-R001/run_B_frames.json",
+    "audit": "card_review/audits/CH-ZX-001_CH-ZX-001-R001_AUDIT.md"
+  },
+  "rounds": [
+    {
+      "round_id": "CH-ZX-001-R001",
+      "task_id": "B-H3-CH-ZX-001-R001",
+      "scene_id": "SCENE-05",
+      "status": "pending_work_output",
+      "created_at": "2026-09-25T13:07:44+08:00"
+    }
   ]
 }
