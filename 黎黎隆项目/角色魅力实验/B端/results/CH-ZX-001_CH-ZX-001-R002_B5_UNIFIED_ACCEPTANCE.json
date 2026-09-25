@@ -155,21 +155,29 @@
     },
     "b2_b3_contract_consistency": {
       "status": "PASS",
-      "evidence": "Resolved in B2 commit 4ef8f2395943a2542c461b6a61c72df72bd04ee4; the single B3-defined stable lateral dolly plus restrained push-in is allowed, with no additional camera movement."
+      "evidence": "Same-round contract resolved: 0–6s locked full-body wide; 6–10s one smooth lateral dolly plus restrained push-in; 10–11s locked full-body medium-wide."
+    },
+    "model_facing_prompt_term_policy": {
+      "status": "PASS",
+      "evidence": "B3/task/relay prompt copies are synchronized; no ten-yuan or sheng-ke-bu theory terminology appears in the model-facing body."
+    },
+    "execution_output_presence": {
+      "status": "FAIL_MISSING_OUTPUT",
+      "evidence": "run_A and run_B both remain render_completed=false with null seed, Work task ID and output."
     }
   },
   "conclusion": "pending_work_output",
   "render_claim": false,
   "visual_validation_claim": false,
   "blocking_reasons": [
-    "Picture 1/2 binding receipt absent",
+    "Picture 1/2 binding receipts absent",
     "SCENE-05 passage geometry unverified",
-    "run_A/run_B outputs absent",
+    "run_A/run_B actual completed runs = 0/2",
     "six real frame files and hashes absent",
-    "audio inspection absent"
+    "output media metadata and audio inspection absent"
   ],
   "source_b4_audit": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json",
-  "b4_prefill_status": "complete_without_visual_evidence",
+  "b4_prefill_status": "complete_text_contract_pass_visual_evidence_pending",
   "asset_source_update": {
     "source": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_INDEX_20260925_1505_CH-ZX-001_R002.json",
     "character": {
@@ -191,5 +199,7 @@
     "same_round_work_binding": "PENDING"
   },
   "b4_contract_resolution": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json",
-  "updated_at": "2026-09-25T15:10:53+08:00"
+  "updated_at": "2026-09-25T15:37:32+08:00",
+  "b4_audit_commit": "d42febf6c3ad936b548c3679c5843d53e0cc4fbc",
+  "b4_report_commit": "a888530282fc30fb382abeed192acc47c773613e"
 }
