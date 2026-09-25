@@ -20,15 +20,34 @@
     "character_asset": {
       "asset_id": "LLL-MAIN-001",
       "registered_path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
-      "binding_status": "pending_work_binding"
+      "binding_status": "pending_work_binding",
+      "source_evidence": {
+        "github_blob": "703db937d91ebb995db2a0eb230fd87652903cd2",
+        "byte_length": 444265,
+        "dimensions": [
+          1690,
+          931
+        ],
+        "evidence_scope": "GitHub bytes and JPEG structure only; pixel identity not visually reviewed"
+      }
     },
     "scene_asset": {
       "asset_id": "SCENE-05",
       "registered_path": "黎黎隆项目/04_场景/五色视觉系统/R1_场景配色/assets/R1-05_机械空港_单色.png",
       "binding_status": "pending_work_binding",
-      "geometry_status": "pending_work_validation"
+      "geometry_status": "pending_work_validation",
+      "source_evidence": {
+        "github_blob": "eb34acce753735d96565bc0108d502dfdc775088",
+        "dimensions": null,
+        "evidence_scope": "registered path/blob only; geometry not visually reviewed"
+      }
     },
-    "same_round_asset_verdict": "registered_paths_exist_in_authoritative_chain_but_same-round Work binding receipt is absent"
+    "same_round_asset_verdict": "registered_paths_exist_in_authoritative_chain_but_same-round Work binding receipt is absent",
+    "asset_index": {
+      "path": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_INDEX_20260925_1505_CH-ZX-001_R002.json",
+      "blob_sha": "6bb371bd692c953cb1d560e7d46545aad1f41f16",
+      "status": "asset_sources_indexed_work_binding_pending"
+    }
   },
   "research_boundary": {
     "only_ten_yuan": "ZX",
@@ -144,12 +163,14 @@
     "confirmed": [
       "权威卡与同轮登记一致使用CH-ZX-001、LLL-MAIN-001、SCENE-05、v1.0、CH-ZX-EXEC-v1.0、CH-ZX-001-R002。",
       "同轮统一任务已有11秒、六段时间轴、16:9固定全身中远景、结构化音频和run_A/run_B契约。",
-      "R001与R002目前均无真实Work视频或帧证据。"
+      "R001与R002目前均无真实Work视频或帧证据。",
+      "同轮B1_ASSET_INDEX_20260925_1505已登记：角色源文件字节、blob与1690×931尺寸可核实；SCENE-05路径/blob可核实。"
     ],
     "uncertain": [
-      "Picture 1与Picture 2的同轮实际绑定回执缺失。",
       "SCENE-05是否真实包含可读狭窄机械通道尚未验证。",
-      "角色同人、侧转动作、尾端先后、镜头稳定与氛围契合度均未视觉验证。"
+      "角色同人、侧转动作、尾端先后、镜头稳定与氛围契合度均未视觉验证。",
+      "Picture 1与Picture 2的同轮Work绑定路径、SHA-256、尺寸和验证回执仍缺失。",
+      "B1源文件事实不等同于角色身份、四宫格或场景几何视觉通过。"
     ],
     "prohibited_inference": [
       "不得把登记路径当成已绑定素材",
@@ -221,7 +242,9 @@
     "action": "Consume this exact round and asset set. Preserve the six beats and single-ZX trajectory. Compile the existing R002 H3 prompt without adding a second ten-yuan, sheng-ke-bu relation, new prop, second stimulus, camera move beyond B3's one specified stable lateral dolly with restrained push-in, or alternate scene.",
     "source_prompt": "黎黎隆项目/角色魅力实验/B端/prompts/generated/CH-ZX-001_CH-ZX-001-R002_H3.md",
     "unified_manifest": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/CH-ZX-001_CH-ZX-001-R002_B1-B5-4090_MANIFEST.json",
-    "preflight_gate": "B3 may prepare text, but 4090 execution must stop with binding_mismatch unless Picture 1 and Picture 2 are actually bound and SCENE-05 confirms the required passage."
+    "preflight_gate": "B3 may prepare text, but 4090 execution must stop with binding_mismatch unless Picture 1 and Picture 2 are actually bound and SCENE-05 confirms the required passage.",
+    "b1_asset_index": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_INDEX_20260925_1505_CH-ZX-001_R002.json",
+    "evidence_boundary": "Use repository source facts for binding only. Do not promote them to visual validation. Keep execution pending until same-round Work receipts exist."
   },
   "character_asset_id": "LLL-MAIN-001",
   "scene_asset_id": "SCENE-05",
@@ -235,5 +258,6 @@
     "allowed": "0–6s locked full-body wide; 6–10s one smooth lateral dolly plus restrained push-in; 10–11s locked full-body medium-wide",
     "forbidden": "additional cuts, handheld shake, orbit, whip pan, zoom pulses, or any movement beyond the single B3-defined move",
     "reason": "Preserve action causality while requiring visible shot-size change and background parallax."
-  }
+  },
+  "updated_at": "2026-09-25T15:16:53+08:00"
 }
