@@ -1,0 +1,91 @@
+{
+  "schema": "video_tenyuan_prompt_schema_v1.2",
+  "relay_id": "MOUSE_B_20260925_1110_R59__v10_RELAY",
+  "source_task_id": "MOUSE_B_20260925_1110_R59",
+  "cast": [
+    {
+      "character_id": "MOUSE-EAR-MUTANT-001",
+      "picture_slot": "Picture 1",
+      "asset_path": null,
+      "sha256": null,
+      "dimensions": null,
+      "identity_verdict": null
+    }
+  ],
+  "scene": {
+    "scene_asset_id": "SCENE-01",
+    "picture_slot": "Picture 2",
+    "asset_path": null,
+    "sha256": null,
+    "dimensions": null,
+    "scene_verdict": null
+  },
+  "render_spec": {
+    "duration_seconds": 11,
+    "aspect_ratio": "16:9",
+    "width_greater_than_height": true,
+    "video_mode": "single_character_narrative",
+    "fixed_camera": true
+  },
+  "clips": [
+    {
+      "clip_id": "A",
+      "prompt": "Subject: One and only one MOUSE-EAR-MUTANT-001, matching Picture 1 continuously: the same face, hair, costume, body proportions and existing side satchel. Her two short oval translucent pale-violet mouse-ear mutation structures attach directly to the sides of her head; they never extend behind her shoulders or back and never become wings. Movement: 0–2 seconds she stands still with both mouse ears neutral and one hand resting beside the existing satchel strap. 2–4 seconds one brief leaf rustle occurs off-screen to frame left, the only external stimulus. 4–6 seconds only the frame-left mouse ear turns about 4–7 degrees toward the rustle while the other ear and torso remain still. 6–8 seconds her eyes look left first, then her head follows by about 3–5 degrees without moving her shoulders, pelvis or feet. 8–10 seconds the same hand makes one continuous small motion to press the existing satchel strap against her hip and draw the satchel about 2–4 cm closer; no second adjustment. 10–11 seconds all motion stops and she holds the attentive ear direction, slight head turn and visible hand-to-strap contact. Scene: Picture 2, SCENE-01 monochrome forest-lake environment, remains one continuous empty scene with no other person, human-shaped decoration, portrait, screen figure or reflected figure; the left-side foliage may move once for the rustle and then settles. Camera: 16:9 landscape, fixed eye-level waist-up medium shot, fixed framing and focal length for the full 11 seconds, no camera movement and no cut. Lighting: fixed soft diffuse light with clear silhouette and stable line-and-plane separation, no relighting. Atmosphere: quiet restrained alertness; the character reads as perceptive and self-protective rather than startled, with stable identity and low-amplitude motion. Audio: a low forest-lake room tone, one brief dry leaf rustle from frame left at 2–4 seconds, a soft cloth-and-strap contact at 8–10 seconds, and one sparse low emotional tone that resolves as the hand holds; audio only clarifies space, action and emotion, with no lyrics and no strong beat. Negative: no duplicate character, no second human figure, no split screen, no clone or mirror-double, no extra limbs, no text overlay, no watermark, no abrupt redesign, no background human silhouette, no reflected human figure, no wing-like ear extension, no camera push, no camera pull-back, no pan, no cut, no weather change, no sudden color shift, no second stimulus, no lyric, no strong beat.",
+      "audio_design": {
+        "ambient_soundscape": "low forest-lake room tone with one dry leaf rustle from frame left",
+        "emotional_sound_cue": "one sparse low tone resolves when the hand holds the strap",
+        "audio_role": "clarify space, causal timing, strap contact and restrained alertness; never drive editing",
+        "prohibited": [
+          "lyrics",
+          "strong beat",
+          "MV cutting",
+          "second stimulus"
+        ]
+      },
+      "sampling_plan": {
+        "run_count": 2,
+        "same_prompt_required": true,
+        "same_inputs_required": true,
+        "run_A": {
+          "execution_label": "first execution",
+          "seed_A": null,
+          "work_task_id": null,
+          "status": "pending",
+          "output": null
+        },
+        "run_B": {
+          "execution_label": "second execution",
+          "seed_B": null,
+          "work_task_id": null,
+          "status": "pending",
+          "output": null
+        },
+        "compare_axes": [
+          "single-character count equals 1 in every sampled frame",
+          "ear topology remains two short head-attached ovals",
+          "left ear response precedes eyes and head",
+          "head rotation stays within 3–5 degrees without shoulder recruitment",
+          "hand reaches existing strap by 10 seconds and contact holds through 11 seconds",
+          "fixed 16:9 framing and identity continuity",
+          "single stimulus only",
+          "audio cue timing and absence of lyrics/strong beat"
+        ],
+        "historical_seeds_not_for_reuse": [
+          1979706846,
+          908940511,
+          1536609113,
+          1133938530
+        ]
+      }
+    }
+  ],
+  "execution_gate": {
+    "ready": false,
+    "requires": [
+      "Picture 1 receipt complete",
+      "Picture 2 receipt complete",
+      "same prompt and same inputs locked for run_A/run_B"
+    ]
+  },
+  "actual_execution_count": 0
+}
