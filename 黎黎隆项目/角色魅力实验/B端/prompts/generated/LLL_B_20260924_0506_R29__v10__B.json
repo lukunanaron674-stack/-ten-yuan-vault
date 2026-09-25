@@ -8,15 +8,15 @@
   "samples": [
     {
       "run": "run_A",
-      "task_id": "LLL_B_20260924_0506_R29__v10__B_run_A_0924223407",
-      "seed": 176106965,
-      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_A_00003_.mp4"
+      "task_id": "LLL_B_20260924_0506_R29__v10__B_run_A_0925081239",
+      "seed": 1283737704,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_A_00004_.mp4"
     },
     {
       "run": "run_B",
-      "task_id": "LLL_B_20260924_0506_R29__v10__B_run_B_0924223407",
-      "seed": 1121089253,
-      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_B_00003_.mp4"
+      "task_id": "LLL_B_20260924_0506_R29__v10__B_run_B_0925081239",
+      "seed": 658683680,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_B_00004_.mp4"
     }
   ],
   "dynamic_chain_reading": "",
@@ -37,14 +37,14 @@
   "h3_prompt": "2D hand-drawn cinematic character sequence, 15 seconds, vertical 9:16, continuing directly from the Work-selected final frame of Segment A. STYLE IDENTITY LOCK: preserve the exact drawing language, materials, original colors and design details of Picture 1 for the only character, and preserve the verified five-color palette logic and technical-environment identity of Picture 2. Do not impose colors or glowing materials that conflict with either source. VISUAL EXPRESSION: maintain clear readable shapes and the same spatial axis; allow only a very slow short push that improves the final expression without losing the mechanical claw feet or the single tail. CHARACTER — Picture 1: the same one and only LLL-MAIN-001 from Segment A, preserving the established face, long red hair, red-white-black mechanical armor, cyan functional accents, mechanical claw feet, body-module proportions and exactly one long segmented mechanical dragon tail. Every reference view represents this same single identity. ENVIRONMENT — Picture 2: remain in the same five-color mechanical-airfield environment with the same existing elements, ground relationship, spatial direction and palette logic established in Segment A. Do not invent architecture, machinery, props or a reverse view. CAMERA AND COMPOSITION: keep the same low three-quarter axis in a medium-full shot; make only a very slow short push after the foot changes direction, and lock the camera if the environment cannot remain coherent. ACTION: begin in the exact false-start pose selected from Segment A, with one claw foot hovering and the body apparently committed forward. Before the environmental illumination changes again, the tip of her single tail flicks toward the opposite side. Her lifted claw foot lands once in that same sideways direction, making one small lateral placement rather than a forward step. Her torso follows only enough to settle over the foot; her tail opens back out to balance. She looks toward the route she did not take, holds a restrained triumphant half-smile, and becomes completely still. Keep the motion continuous, compact and behavior-driven, with exactly one physical character instance. NEGATIVE: no second person, no creature performer, no duplicate or clone, no complete humanoid reflection or shadow double, no split screen, no character-sheet or four-panel output, no extra head, limb, claw foot or tail, no identity or armor redesign, no cyan-white energy humanoid, no unsupported environment object or unseen reverse view, no location replacement, no glossy 3D, no hard digital edges, no rhythmic MV cutting, no text, subtitle, logo or watermark.",
   "local_render": {
     "status": "done",
-    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_A_00003_.mp4",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_A_00004_.mp4",
     "mp4s": [
-      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_A_00003_.mp4",
-      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_B_00003_.mp4"
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_A_00004_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_B_00004_.mp4"
     ],
-    "elapsed_sec": 846,
+    "elapsed_sec": 901,
     "rc": 0,
-    "tail": "[h3_qq_gen]   状态: pending  (2026-09-24 22:34:07)\n[h3_qq_gen]   状态: running  (2026-09-24 22:35:03)\n[h3_qq_gen]   状态: done  (2026-09-24 22:42:04)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_A_00003_.mp4\n[h3_qq_gen] 轮询 LLL_B_20260924_0506_R29__v10__B_run_B_0924223407（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-24 22:42:05)\n[h3_qq_gen]   状态: done  (2026-09-24 22:48:10)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_B_00003_.mp4",
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 08:12:39)\n[h3_qq_gen]   状态: running  (2026-09-25 08:13:19)\n[h3_qq_gen]   状态: done  (2026-09-25 08:20:22)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_A_00004_.mp4\n[h3_qq_gen] 轮询 LLL_B_20260924_0506_R29__v10__B_run_B_0925081239（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 08:20:22)\n[h3_qq_gen]   状态: done  (2026-09-25 08:27:20)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\LLL_B_20260924_0506_R29__v10__B_run_B_00004_.mp4",
     "by": "b_new_format",
     "host": "DESKTOP-FKEUGLS"
   }
