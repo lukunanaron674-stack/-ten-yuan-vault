@@ -105,7 +105,9 @@
       "second_ten_yuan": null,
       "handoff_action": "B3 must consume the same card, round, asset set, versions and six-beat chain; do not execute 4090 before actual Picture 1/2 binding.",
       "camera_contract": "resolved_same_round; one B3-defined stable move allowed",
-      "source_commit": "4ef8f2395943a2542c461b6a61c72df72bd04ee4"
+      "source_commit": "e76474899ff456c893bd222721b871a72c7b2d49",
+      "source_b1_asset_index": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_INDEX_20260925_1505_CH-ZX-001_R002.json",
+      "evidence_boundary": "GitHub sources indexed; same-round Work binding and visual validation pending."
     },
     "B3": {
       "card_id": "CH-ZX-001",
@@ -161,11 +163,11 @@
     "B5": "unified fifth-stage acceptance record"
   },
   "invariant_check": "all six stage envelopes must remain byte-equivalent for card/round/version/asset identifiers",
-  "current_conclusion": "B1 source evidence indexed and B2/B3 camera wording reconciled. All stage identifiers remain consistent; 4090 run_A/run_B, six real frames, audio and visual review remain pending_work_output.",
+  "current_conclusion": "B2 now consumes the same-round B1 source index and retains the resolved one-move camera contract. Single-ZX text is ready; Picture 1/2 Work binding, SCENE-05 geometry, run_A/run_B and all visual/audio evidence remain pending_work_output.",
   "last_stage_update": {
-    "stage": "B5",
-    "updated_at": "2026-09-25T15:10:53+08:00",
-    "status": "pending_work_output",
-    "source": "黎黎隆项目/角色魅力实验/B端/results/CH-ZX-001_CH-ZX-001-R002_B5_UNIFIED_ACCEPTANCE.json"
+    "stage": "B2",
+    "updated_at": "2026-09-25T15:16:53+08:00",
+    "status": "text_ready_input_validation_pending",
+    "source": "黎黎隆项目/角色魅力实验/B端/02_十元动态链研究/B2_20260925_1415_CH-ZX-001_R002.json"
   }
 }
