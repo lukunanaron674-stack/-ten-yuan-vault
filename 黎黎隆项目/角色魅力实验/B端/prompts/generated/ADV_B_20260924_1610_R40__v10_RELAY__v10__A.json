@@ -8,15 +8,15 @@
   "samples": [
     {
       "run": "run_A",
-      "task_id": "ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_A_0925061218",
-      "seed": 505453482,
-      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_B_00001_.mp4"
+      "task_id": "ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_A_0925135615",
+      "seed": 242370277,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_A_00002_.mp4"
     },
     {
       "run": "run_B",
-      "task_id": "ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_B_0925061218",
-      "seed": 1472524603,
-      "mp4": null
+      "task_id": "ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_B_0925135615",
+      "seed": 2129643294,
+      "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_B_00002_.mp4"
     }
   ],
   "dynamic_chain_reading": "",
@@ -32,14 +32,15 @@
   "audio_design": null,
   "h3_prompt": "Subject: Vertical 9:16, one continuous 10-second single-character narrative. Show exactly one physical instance of the established heavy adult adventurer from Picture 1. Preserve his large broad body, grounded weight, short dark hair, dark beard, tired experienced face, dark teal-black layered cloak, purple and red cloth panels, red scarf, crossing straps and buckles, pale metal shoulder and chest bracket, complete backpack and rolled bedroll, one cyan-lit hanging waist lantern, heavy gloves and heavy boots. Keep every connected item, body proportion, material and reference color unchanged.\n\nMovement: From 0 to 2 seconds the fully loaded adventurer stands one measured step before the visually supported mechanical passage, weight centered and both boots planted. From 2 to 4 seconds the existing passage mechanism begins one closing motion and produces one restrained mechanical sound; no new control or indicator appears. From 4 to 5.5 seconds only his leading shoulder and attached backpack shift slightly forward, then stop before entering the narrowing space; his feet remain planted. From 5.5 to 7 seconds his eyes inspect the remaining opening and his head turns only slightly, making the decision not to force the load through. From 7 to 9 seconds one gloved hand draws one already existing loose strap closer to his torso without changing the strap layout or removing equipment. From 9 to 10 seconds all motion stops with the complete load held compactly on the safe side of the passage.\n\nScene: Picture 2 defines SCENE-05, the same monochrome mechanical-airport environment, its existing technical atmosphere, mechanical passage, constrained route, spatial continuity and original palette. Use only architecture, passage geometry, ground and negative space actually supported by the bound scene image. Do not invent a button, display, sign, rail, platform, new doorway, extra machine, warning light or alternate route.\n\nCamera: One locked eye-level medium-wide three-quarter side view for the entire sequence. Keep the adventurer's full body, both boots, backpack width, existing passage boundary and one safe standing area readable in one composition. Fixed framing, fixed focal length, no push-in, no pull-back, no pan, no tilt, no tracking, no cut, no transition and no split-screen composition.\n\nLighting: Preserve the bound reference lighting and monochrome palette logic. Keep one fixed soft diffuse light for the whole shot. The existing cyan lantern remains a small identity light only. No new glow, no weather change, no sudden color shift and no recoloring.\n\nAtmosphere: Clear readable two-dimensional shapes, clean reference-consistent line-and-plane language, restrained hand-drawn motion, quiet technical depth and visible body weight. Character charm comes from stopping before forcing the complete load into a closing passage, then making one small practical correction without becoming suddenly agile or discarding responsibility.\n\nAudio: Ambient soundscape is low mechanical-airport room tone, restrained ventilation, one existing passage-closing sound, slight backpack weight shift, one strap-tension sound and quiet cloth friction. Emotional sound cue is one sparse non-lyrical low sustained tone that thins at the stop and fades after the strap is secured, with no strong beat. Audio only supports space, weight, decision timing and emotion; it does not drive editing and does not create a music-video structure. If the H3 node does not support audio, treat this as post-production sound design only.\n\nNegative: no duplicate character, no second human figure, no split screen, no clone or mirror-double, no extra limbs, no text overlay, no watermark, no abrupt redesign, no additional person or creature, no young slim redesign, no removed backpack, no dropped bedroll, no discarded equipment, no duplicate lantern, no new strap, no new buckle, no new weapon, no horns, no tail, no wings, no clean modern armor, no invented button, display, sign, rail, platform, doorway, machine, warning light or alternate route, no forward step through the passage, no backward step, no run, no jump, no squeeze-through, no acrobatics, no camera movement, no cut, no transition, no weather change, no abrupt color change, no lyrics, no strong beat, no beat-synced edit, no montage, no MV editing, no glossy 3D rendering.",
   "local_render": {
-    "status": "partial",
-    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_B_00001_.mp4",
+    "status": "done",
+    "mp4": "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_A_00002_.mp4",
     "mp4s": [
-      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_B_00001_.mp4"
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_A_00002_.mp4",
+      "D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_B_00002_.mp4"
     ],
-    "elapsed_sec": 839,
-    "rc": 1,
-    "tail": "CANCELLED|ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_A_0925061218\n[h3_qq_gen] 轮询 ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_B_0925061218（最多 25 分钟）...\n[h3_qq_gen]   状态: pending  (2026-09-25 06:12:18)\n[h3_qq_gen]   状态: running  (2026-09-25 06:20:08)\n[h3_qq_gen]   状态: done  (2026-09-25 06:26:08)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_B_00001_.mp4\n\n[错误] 1 条抽样未成功：['ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_A_0925061218']",
+    "elapsed_sec": 881,
+    "rc": 0,
+    "tail": "[h3_qq_gen]   状态: pending  (2026-09-25 13:56:15)\n[h3_qq_gen]   状态: running  (2026-09-25 13:56:53)\n[h3_qq_gen]   状态: done  (2026-09-25 14:03:53)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_A_00002_.mp4\n[h3_qq_gen] 轮询 ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_B_0925135615（最多 25 分钟）...\n[h3_qq_gen]   状态: running  (2026-09-25 14:03:54)\n[h3_qq_gen]   状态: done  (2026-09-25 14:10:54)\nDONE|D:\\H3\\outputs\\comfyui\\video\\lililong\\character_charm\\ADV_B_20260924_1610_R40__v10_RELAY__v10__A_run_B_00002_.mp4",
     "by": "b_new_format",
     "host": "DESKTOP-FKEUGLS"
   }
