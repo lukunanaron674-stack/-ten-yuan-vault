@@ -1,0 +1,300 @@
+{
+  "schema_version": "B-H3-TASK-1.2",
+  "task_id": "MOUSE_B_20260925_1110_R59",
+  "task_version": "v1.0",
+  "parent_task_id": "ADV_B_20260925_1009_R58",
+  "status": "ready_for_work_binding_and_execution",
+  "video_mode": "single_character_narrative",
+  "duration_seconds_range": [
+    10,
+    11
+  ],
+  "duration_seconds": 11,
+  "aspect_ratio": "16:9",
+  "character_id": "MOUSE-EAR-MUTANT-001",
+  "scene_asset_id": "SCENE-01",
+  "reference_view": "Picture 1 character identity reference + Picture 2 SCENE-01 environment reference; both require same-round Work receipt",
+  "evidence_partition": {
+    "confirmed": [
+      {
+        "source": "R58 result contract",
+        "fact": "actual_execution_count=0/2; no R58 seed, task id, output, keyframe or audio evidence may be reused"
+      },
+      {
+        "source": "R36 Work execution record A, commit 6fd88c1b1f4ded4908073a82a490826e241051d3",
+        "fact": "two completed historical runs, seeds 1979706846 and 908940511, 240 frames each; refs_used recorded as 030F6E3B89E0998CBF695064BC27C2A8.jpeg and R1-01_森林湖泊_单色.png"
+      },
+      {
+        "source": "R36 Work execution record B, commit 1120e1a6e43be6ee3917e5a06def56063ff0c493",
+        "fact": "two completed historical runs, seeds 1536609113 and 1133938530, 240 frames each; same two refs_used"
+      },
+      {
+        "source": "B1 registered materials",
+        "fact": "character_id MOUSE-EAR-MUTANT-001 and scene_asset_id SCENE-01 are registered; same-round visual identity, dimensions and hashes remain unverified"
+      },
+      {
+        "source": "B-H3-TASK-1.2 user rule",
+        "fact": "11-second six-beat single-character task, 16:9 fixed camera, one prompt executed twice"
+      }
+    ],
+    "candidates": [
+      "The historical R36 execution proves that the ear-eye-head production skeleton can reach the renderer; it does not prove visual correctness.",
+      "A single visible strap press may convert directional attention into a readable self-protective result."
+    ],
+    "inferences": [
+      "Removing R36's second cue and camera pull-back reduces causal ambiguity and identity drift risk.",
+      "A fixed waist-up composition should keep both ear topology and final hand-to-strap contact readable."
+    ]
+  },
+  "subject_definition": {
+    "confirmed": "one mouse-ear mutant girl, same identity and costume, with one existing side satchel; two short oval translucent pale-violet ear structures attach directly to head sides",
+    "candidate": "the existing satchel strap is readable in the fixed waist-up frame",
+    "pending_validation": [
+      "Picture 1 path/SHA-256/dimensions/identity verdict",
+      "Picture 2 path/SHA-256/dimensions/scene verdict",
+      "ear topology and strap visibility in actual input pair"
+    ]
+  },
+  "retention_analysis": {
+    "retain": [
+      "single character",
+      "registered character and scene IDs",
+      "historically executed R36 ear→eyes→head low-amplitude skeleton",
+      "fixed camera",
+      "soft stable light",
+      "identity continuity",
+      "same prompt double sampling"
+    ],
+    "reject": [
+      "R36 15-second duration",
+      "R36 9:16 output",
+      "R36 second directional cue",
+      "R36 Segment B pull-back",
+      "R36 full-body step",
+      "any claim that historical execution validates R59 imagery"
+    ]
+  },
+  "changed_variable": "Replace the legacy two-cue/camera-or-step ending with one completed, visible press of the existing side-satchel strap after a single left-side rustle; all motion stays inside one fixed 11-second 16:9 shot.",
+  "internal_action_selection": {
+    "dynamic_chain_code": "N8 → NZ7 → Z5",
+    "note": "internal selection only; these terms do not appear in h3_prompt",
+    "observable_mapping": [
+      "localized ear orientation",
+      "eyes-before-head confirmation",
+      "small self-protective strap press and stable stop"
+    ]
+  },
+  "dynamic_chain": [
+    {
+      "node": "n1",
+      "time": "0–2",
+      "observable": "neutral ear and still-body baseline",
+      "falsifier": "pre-emptive turn or hand motion"
+    },
+    {
+      "node": "n2",
+      "time": "2–4",
+      "observable": "one left leaf rustle only",
+      "falsifier": "second cue or visible actor"
+    },
+    {
+      "node": "n3",
+      "time": "4–6",
+      "observable": "left ear turns before eyes/head",
+      "falsifier": "both ears/body turn together or wing growth"
+    },
+    {
+      "node": "n4",
+      "time": "6–8",
+      "observable": "eyes lead a 3–5 degree head turn",
+      "falsifier": "shoulder/pelvis/feet recruited"
+    },
+    {
+      "node": "n5",
+      "time": "8–10",
+      "observable": "one continuous hand path reaches existing strap",
+      "falsifier": "hand misses, repeats, or creates a new object"
+    },
+    {
+      "node": "n6",
+      "time": "10–11",
+      "observable": "visible contact and attentive pose hold",
+      "falsifier": "contact absent or motion continues"
+    }
+  ],
+  "time_beats": [
+    {
+      "range_seconds": [
+        0,
+        2
+      ],
+      "role": "initial_state",
+      "single_changed_variable": "none; hold neutral baseline",
+      "action": "still, both ears neutral, hand beside existing strap"
+    },
+    {
+      "range_seconds": [
+        2,
+        4
+      ],
+      "role": "unique_external_stimulus",
+      "single_changed_variable": "one off-screen left leaf rustle begins and ends",
+      "action": "no visible source and no second cue"
+    },
+    {
+      "range_seconds": [
+        4,
+        6
+      ],
+      "role": "local_response",
+      "single_changed_variable": "frame-left ear rotates 4–7 degrees",
+      "action": "other ear, torso, pelvis and feet remain still"
+    },
+    {
+      "range_seconds": [
+        6,
+        8
+      ],
+      "role": "gaze_or_slight_head_response",
+      "single_changed_variable": "eyes lead, head follows 3–5 degrees left",
+      "action": "shoulders remain fixed"
+    },
+    {
+      "range_seconds": [
+        8,
+        10
+      ],
+      "role": "small_hand_or_posture_change",
+      "single_changed_variable": "one hand presses the existing strap and draws satchel 2–4 cm closer",
+      "action": "one continuous path; no repeat adjustment"
+    },
+    {
+      "range_seconds": [
+        10,
+        11
+      ],
+      "role": "stopped_result",
+      "single_changed_variable": "motion ceases",
+      "action": "ear direction, head angle and visible hand contact hold"
+    }
+  ],
+  "shot_grammar": {
+    "format": "16:9 landscape",
+    "camera": "fixed eye-level",
+    "framing": "fixed waist-up medium shot",
+    "lens_and_focus": "fixed",
+    "lighting": "fixed soft diffuse",
+    "cuts": 0,
+    "movements": 0
+  },
+  "h3_prompt": "Subject: One and only one MOUSE-EAR-MUTANT-001, matching Picture 1 continuously: the same face, hair, costume, body proportions and existing side satchel. Her two short oval translucent pale-violet mouse-ear mutation structures attach directly to the sides of her head; they never extend behind her shoulders or back and never become wings. Movement: 0–2 seconds she stands still with both mouse ears neutral and one hand resting beside the existing satchel strap. 2–4 seconds one brief leaf rustle occurs off-screen to frame left, the only external stimulus. 4–6 seconds only the frame-left mouse ear turns about 4–7 degrees toward the rustle while the other ear and torso remain still. 6–8 seconds her eyes look left first, then her head follows by about 3–5 degrees without moving her shoulders, pelvis or feet. 8–10 seconds the same hand makes one continuous small motion to press the existing satchel strap against her hip and draw the satchel about 2–4 cm closer; no second adjustment. 10–11 seconds all motion stops and she holds the attentive ear direction, slight head turn and visible hand-to-strap contact. Scene: Picture 2, SCENE-01 monochrome forest-lake environment, remains one continuous empty scene with no other person, human-shaped decoration, portrait, screen figure or reflected figure; the left-side foliage may move once for the rustle and then settles. Camera: 16:9 landscape, fixed eye-level waist-up medium shot, fixed framing and focal length for the full 11 seconds, no camera movement and no cut. Lighting: fixed soft diffuse light with clear silhouette and stable line-and-plane separation, no relighting. Atmosphere: quiet restrained alertness; the character reads as perceptive and self-protective rather than startled, with stable identity and low-amplitude motion. Audio: a low forest-lake room tone, one brief dry leaf rustle from frame left at 2–4 seconds, a soft cloth-and-strap contact at 8–10 seconds, and one sparse low emotional tone that resolves as the hand holds; audio only clarifies space, action and emotion, with no lyrics and no strong beat. Negative: no duplicate character, no second human figure, no split screen, no clone or mirror-double, no extra limbs, no text overlay, no watermark, no abrupt redesign, no background human silhouette, no reflected human figure, no wing-like ear extension, no camera push, no camera pull-back, no pan, no cut, no weather change, no sudden color shift, no second stimulus, no lyric, no strong beat.",
+  "audio_design": {
+    "ambient_soundscape": "low forest-lake room tone with one dry leaf rustle from frame left",
+    "emotional_sound_cue": "one sparse low tone resolves when the hand holds the strap",
+    "audio_role": "clarify space, causal timing, strap contact and restrained alertness; never drive editing",
+    "prohibited": [
+      "lyrics",
+      "strong beat",
+      "MV cutting",
+      "second stimulus"
+    ]
+  },
+  "sampling_plan": {
+    "run_count": 2,
+    "same_prompt_required": true,
+    "same_inputs_required": true,
+    "run_A": {
+      "execution_label": "first execution",
+      "seed_A": null,
+      "work_task_id": null,
+      "status": "pending",
+      "output": null
+    },
+    "run_B": {
+      "execution_label": "second execution",
+      "seed_B": null,
+      "work_task_id": null,
+      "status": "pending",
+      "output": null
+    },
+    "compare_axes": [
+      "single-character count equals 1 in every sampled frame",
+      "ear topology remains two short head-attached ovals",
+      "left ear response precedes eyes and head",
+      "head rotation stays within 3–5 degrees without shoulder recruitment",
+      "hand reaches existing strap by 10 seconds and contact holds through 11 seconds",
+      "fixed 16:9 framing and identity continuity",
+      "single stimulus only",
+      "audio cue timing and absence of lyrics/strong beat"
+    ],
+    "historical_seeds_not_for_reuse": [
+      1979706846,
+      908940511,
+      1536609113,
+      1133938530
+    ]
+  },
+  "negative_constraints": [
+    "no duplicate character",
+    "no second human figure",
+    "no split screen",
+    "no clone or mirror-double",
+    "no extra limbs",
+    "no text overlay",
+    "no watermark",
+    "no abrupt redesign",
+    "no background human silhouette",
+    "no reflected human figure",
+    "no wing-like ear extension",
+    "no camera push",
+    "no camera pull-back",
+    "no pan",
+    "no cut",
+    "no weather change",
+    "no sudden color shift",
+    "no second stimulus",
+    "no lyric",
+    "no strong beat"
+  ],
+  "must_keep": [
+    "one character instance only",
+    "one SCENE-01 environment",
+    "11 seconds",
+    "16:9 landscape",
+    "fixed camera/framing/light",
+    "ear→eyes→head order",
+    "existing satchel only",
+    "same prompt and bound inputs for both runs"
+  ],
+  "must_avoid": [
+    "second person or background human shape",
+    "reflection double",
+    "wing-like ear extension",
+    "second stimulus",
+    "step or whole-body relocation",
+    "camera movement or cut",
+    "new prop",
+    "historical seeds copied into current run"
+  ],
+  "validation_target": {
+    "primary": "Both independent runs show the left ear response before eyes/head and complete one visible hand-to-existing-strap contact by 10 seconds, holding it through 11 seconds.",
+    "hard_fail": [
+      "human figure count is not exactly 1 in any acceptance frame",
+      "Picture 1 or Picture 2 lacks a same-round binding receipt",
+      "ear structure extends behind shoulders/back or becomes wing-like",
+      "hand-to-strap contact absent at final hold",
+      "camera/framing/light changes",
+      "more than one stimulus"
+    ],
+    "evidence_required_per_run": [
+      "asset binding receipt",
+      "seed or execution ordinal",
+      "Work task ID",
+      "output path and hash",
+      "fps and total frames",
+      "pre/onset/peak/post frames for n2–n6",
+      "audio presence and timing review"
+    ],
+    "current_verdict": "NOT_EXECUTED_NOT_H3_VALIDATED"
+  }
+}
