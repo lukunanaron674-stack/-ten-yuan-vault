@@ -1,42 +1,73 @@
 {
   "schema_version": "B-H3-RESULT-1.2",
   "task_id": "ADV_B_20260925_0508_R53",
-  "status": "work_rendering",
-  "actual_completed_runs": 0,
+  "status": "done_rendered_pending_full_motion_audio_review",
+  "actual_completed_runs": 2,
   "planned_run_count": 2,
-  "render_claim": false,
+  "render_claim": {
+    "claimed": true,
+    "source_commit": "ad804f721cf8acb5eb370f1ca2144f6e41181ca3",
+    "prompt_sha256": "3248bcfd3750cb0e1a9277b2b98c0614d1442a2e4cddf0777b78c628a228b922",
+    "width": 1280,
+    "height": 736,
+    "length_frames": 240,
+    "fps": 24,
+    "duration_sec": 10,
+    "restored_after_stale_frame_writeback": true
+  },
   "input_binding": {
-    "character": null,
+    "character": {
+      "path": "D:/H3/pool/character_refs/ADV-001_冒险者_H3_sheet_001.jpg",
+      "sha256": "4284a72886e485ffc18fa0672207599bd244e886cd600ca5531d18f133c8e10c",
+      "width": 941,
+      "height": 1672,
+      "formal_same_character_verified": false
+    },
     "scene": null,
-    "verified": false
+    "verified": false,
+    "note": "primary R53 execution supplied Picture 1 only; Picture 2 was not supplied"
   },
   "runs": {
     "run_A": {
-      "seed": null,
-      "work_task_id": null,
-      "status": "planned",
-      "output": null
+      "seed": 825120441,
+      "work_task_id": "ADV_B_20260925_0508_R53_run_A_0925074222",
+      "status": "completed",
+      "output": {
+        "id": "ADV_B_20260925_0508_R53_run_A_00001_.mp4",
+        "path": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0508_R53_run_A_00001_.mp4",
+        "bytes": 1141775,
+        "sha256": "61d7591e97bb39b248a8c19086caf799655f9b5e2059c813ea737fcbe1383f4e"
+      }
     },
     "run_B": {
-      "seed": null,
-      "work_task_id": null,
-      "status": "planned",
-      "output": null
+      "seed": 201978442,
+      "work_task_id": "ADV_B_20260925_0508_R53_run_B_0925074222",
+      "status": "completed",
+      "output": {
+        "id": "ADV_B_20260925_0508_R53_run_B_00001_.mp4",
+        "path": "D:/H3/outputs/comfyui/video/lililong/character_charm/ADV_B_20260925_0508_R53_run_B_00001_.mp4",
+        "bytes": 1302947,
+        "sha256": "026579a96eb5eada506791eb6d3f8a5afc10257f8a36fa1ad1c3a829ccd420db"
+      }
     }
   },
   "comparison": {
-    "status": "not_started",
+    "status": "KEYFRAME_REVIEWED_MOTION_AUDIO_PENDING",
     "axes": [
       "ADV identity",
       "complete equipment",
       "SCENE-04 silhouette separation",
-      "external cue readability",
       "eyes-before-head order",
       "single strap press",
       "clean stop",
-      "camera stability",
-      "viewer language"
-    ]
+      "camera stability"
+    ],
+    "keyframe_verdicts": {
+      "single_character": "PASS_2_OF_2_SIX_FRAMES",
+      "strap_press_endpoint": "PASS_1_OF_2_KEYFRAME_SETS",
+      "scene_consistency_between_runs": "FAIL_DIFFERENT_LAYOUT_AND_PALETTE_DENSITY",
+      "foreground_identity": "BROADLY_RECOGNIZABLE_NOT_FORMALLY_VERIFIED"
+    }
   },
   "historical_evidence_not_current_result": [
     {
@@ -50,7 +81,7 @@
       "commit": "c9f894399ad7ce73fe0be7ed8f410305fad11b8b"
     }
   ],
-  "h3_validation_status": "NOT_VALIDATED_PENDING_BINDINGS_AND_REAL_OUTPUTS",
+  "h3_validation_status": "PARTIAL_FAIL_ACTION_REPRODUCIBILITY_AND_UNVERIFIED_SCENE_BINDING",
   "claimed_by": "relay-gh@DESKTOP-FKEUGLS",
   "claimed_at": "2026-09-25 07:42:20",
   "claimed_run_key": "ADV_B_20260925_0508_R53",
@@ -72,7 +103,7 @@
     "files": [
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0508_R53/run_A_key_head.jpg",
-        "kb": 168.0
+        "kb": 168
       },
       {
         "path": "黎黎隆项目/角色魅力实验/B端/results/frames/ADV_B_20260925_0508_R53/run_A_key_mid.jpg",
@@ -97,5 +128,30 @@
     ],
     "total_kb": 1034.2,
     "note": "画面证据 = 每次抽样首/中/尾 3 帧（默认），与 render_claim.outputs[].output_sha256 对应的成片一一对应；成片本体 2-4MB 未入 git，留在 D:/H3/outputs/comfyui/，需要原片按 sha256 索取"
+  },
+  "visual_review": {
+    "reviewed_at": "2026-09-25T08:11:33+08:00",
+    "scope": "six GitHub head/mid/tail frames only",
+    "confirmed_observations": [
+      "all six frames contain one foreground human and no second human figure",
+      "run_B tail clearly shows one gloved hand contacting the chest strap",
+      "run_A tail leaves the hand down, so the required strap-contact endpoint is not visible",
+      "run_A and run_B use materially different forest-lake layouts and framing scale"
+    ],
+    "not_claimed": [
+      "full between-frame action timing",
+      "audio track",
+      "formal same-character match",
+      "SCENE-04 binding equivalence"
+    ],
+    "next_single_variable_fix": "make the existing chest-strap contact a mandatory visible endpoint held through the final result"
+  },
+  "integrity_note": {
+    "issue": "later frame upload overwrote completed render fields with a stale work_rendering snapshot",
+    "evidence_commits": [
+      "ad804f721cf8acb5eb370f1ca2144f6e41181ca3",
+      "576e6b3b974ad94da3ca82ef84e8b383c7392787"
+    ],
+    "repair": "merged proven render completion, real identifiers and six-frame evidence"
   }
 }
