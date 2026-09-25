@@ -85,11 +85,13 @@
       "asset_index": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_INDEX_20260925_1505_CH-ZX-001_R002.json",
       "evidence": {
         "character_source": "GitHub file bytes read; JPEG dimensions parsed; no pixel-level identity verdict",
-        "scene_source": "GitHub registered path/blob confirmed; dimensions and geometry unverified",
+        "scene_source": "GitHub registered path/blob confirmed; binary read attempted but connector did not return decodable bytes; dimensions and geometry remain unverified",
         "work_binding": "Picture 1/2 same-round receipts absent",
         "work_output": "run_A/run_B actual_completed_runs=0"
       },
-      "handoff_action": "Work/Codex must bind the exact Picture 1 and Picture 2 sources for R002, return path/SHA256/dimensions receipts, validate character identity and SCENE-05 geometry, then release the unchanged B3 prompt to 4090 run_A/run_B."
+      "handoff_action": "B2/B3/4090 must retain the exact LLL-MAIN-001 × SCENE-05 combination and v1.0 / CH-ZX-EXEC-v1.0. Work must return Picture 1/2 path, SHA256, dimensions and validation receipts before execution; B2/B3 should refresh their source_b1 blob reference to 6d2049df4c6f1d0372968fd4dc59317e068506dc without changing the experiment.",
+      "asset_index_blob": "6d2049df4c6f1d0372968fd4dc59317e068506dc",
+      "source_commit": "93a5d695d9ffc9ff67f478193022f99aa30f0ddd"
     },
     "B2": {
       "card_id": "CH-ZX-001",
@@ -174,11 +176,12 @@
     "B5": "unified fifth-stage acceptance record"
   },
   "invariant_check": "all six stage envelopes must remain byte-equivalent for card/round/version/asset identifiers",
-  "current_conclusion": "B4 confirms stage/version/asset identity, single-ZX boundary, camera-contract resolution and synchronized theory-free model prompt. Work binding and real outputs remain pending; actual completed runs=0/2, so visual quality is NOT_REVIEWED and B5 remains pending_work_output.",
+  "current_conclusion": "B1 refreshed the same R002 asset handoff without changing asset versions. Character source remains GitHub-byte indexed; SCENE-05 remains path/blob indexed but geometry-unverified. Work outputs remain 0/2. Latest B2/B3/B4 contract fixes are acknowledged; downstream should refresh the B1 blob reference only.",
   "last_stage_update": {
-    "stage": "B4",
-    "updated_at": "2026-09-25T15:37:32+08:00",
-    "status": "audit_complete_visual_not_reviewed",
-    "source": "黎黎隆项目/角色魅力实验/B端/B4质量审查/B4_AUDIT_20260925_1435_CH-ZX-001_R002.json"
+    "stage": "B1",
+    "updated_at": "2026-09-25T16:04:37+08:00",
+    "status": "asset_sources_indexed_work_binding_pending",
+    "source": "黎黎隆项目/角色魅力实验/B端/B1素材索引/B1_ASSET_INDEX_20260925_1505_CH-ZX-001_R002.json",
+    "source_commit": "93a5d695d9ffc9ff67f478193022f99aa30f0ddd"
   }
 }
