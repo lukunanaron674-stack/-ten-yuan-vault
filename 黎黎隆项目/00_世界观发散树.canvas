@@ -683,6 +683,16 @@
       "y": 5520,
       "width": 400,
       "height": 420
+    },
+    {
+      "id": "cyan_native_supply_grid",
+      "type": "text",
+      "text": "青色世界观｜原境供养网 v0.1\n\n异质生命材料离开原生态后，仍保留一部分湿度、菌群、矿物、气压、周期或共生关系依赖。\n\nX并Z：对象被拆走，关系没有被完全拆走。\nZ：文明把这些依赖测量、拆解、标准化，做成可运输、可计量、可维护的城市公共供养。\n\n直接后果：原境管网、街区微生态、运输容器、配额、维护职业、断供风险。\n\n影响力体量：8/10\n标签：【X并Z的Z】\nKEEP_PROJECT_APPLICATION_H_CYAN_NATIVE_SUPPLY_GRID_v0.1",
+      "x": 4560,
+      "y": 1980,
+      "width": 760,
+      "height": 520,
+      "color": "#69D4CE"
     }
   ],
   "edges": [
@@ -1351,6 +1361,30 @@
       "fromNode": "noble_img_01",
       "toNode": "noble_character_anchor",
       "label": "原稿身份与比例核对"
+    },
+    {
+      "id": "e_ecology_cyan_native_supply",
+      "fromNode": "fantasy_ecology",
+      "toNode": "cyan_native_supply_grid",
+      "label": "异质生命被拆离后仍携带原生态依赖"
+    },
+    {
+      "id": "e_body_civ_cyan_native_supply",
+      "fromNode": "body_civ",
+      "toNode": "cyan_native_supply_grid",
+      "label": "身体文明必须持续供养被借用的生命关系"
+    },
+    {
+      "id": "e_tech_cyan_native_supply",
+      "fromNode": "tech",
+      "toNode": "cyan_native_supply_grid",
+      "label": "把原境依赖拆成可测量、可标准化的维护变量"
+    },
+    {
+      "id": "e_cyan_native_supply_city",
+      "fromNode": "cyan_native_supply_grid",
+      "toNode": "city",
+      "label": "原境供给成为城市级第三类基础设施"
     }
   ]
 }
