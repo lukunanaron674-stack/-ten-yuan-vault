@@ -35,3 +35,10 @@ PASS / RETRY / REPLAN
 - 审核/返工统一使用 [[../04_协议/REVIEW_SCHEMA]] 与 [[../04_协议/RETRY_PACKET_SCHEMA]]。
 - 每小时学习统一使用 [[../04_协议/LEARNING_TASK_SCHEMA]]。
 - 只填写本岗位允许字段，禁止通过自然语言越权改写其他 Agent 结果。
+
+
+## 第六轮｜生产闭环职责
+- 审核统一使用 [[../04_协议/REVIEW_SCHEMA]]。
+- PASS 必须返回 closing_state 与 continuity_check。
+- RETRY 必须生成 [[../04_协议/RETRY_PACKET_SCHEMA]]，只修改失败项。
+- 不得自行创建 next_shot_id；只有导演在 PASS 后合并并推进下一镜。
