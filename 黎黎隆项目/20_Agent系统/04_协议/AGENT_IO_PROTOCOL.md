@@ -79,3 +79,11 @@ THEME_AUDIT 默认最多 1 轮。
 PRODUCTION 使用 shot_id。
 LEARNING 使用 test_shot_id。
 两者结果禁止互相覆盖。
+
+
+## 第五轮讨论与裁决
+- 内容争议统一读取 [[DISCUSSION_PROTOCOL]]。
+- 无法自动收敛时由导演生成 [[DIRECTOR_DECISION_SCHEMA]]。
+- 讨论只允许修改冲突字段，禁止重写整张任务卡。
+- 主题 / 剧本 / 十元 / 分镜最多 3 轮；THEME_AUDIT 最多 1 轮。
+- 导演裁决后生成 final_patch，并写回当前任务包。
