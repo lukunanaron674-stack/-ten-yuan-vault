@@ -17,6 +17,7 @@
 IDLE
 → PLANNING
 → THEME_READY
+→ WORLD_READY (conditional)
 → SCRIPT_READY
 → TENYUAN_READY
 → STORYBOARD_READY
@@ -32,6 +33,8 @@ IDLE
 
 ## 关键转移
 - PLANNING → 主题 Agent 先定义 `theme_result`，再进入 THEME_READY。
+- THEME_READY → 若 `world_gate = REQUIRED`，世界观 Agent 执行 WORLD_CHECK，通过后进入 WORLD_READY；若 `world_gate = BYPASS`，直接交给剧本 Agent。
+- WORLD_READY → 剧本 Agent 使用已确认 Canon / 区域规则 / 允许机制生成事件。
 - THEME_READY → 剧本 Agent 把主题问题转成人物困境与事件。
 - ASSET_MISSING → 素材 Agent / 生图 Agent。
 - RETRY → 保留已正确字段，只调整失败项，再进入 RENDER_QUEUED。
@@ -42,6 +45,7 @@ IDLE
 ## 写权限
 - **导演 Agent**：唯一允许改 PROJECT / SCENE / 当前 SHOT 指针和 next_action。
 - **主题 Agent**：只提交 theme_result。
+- **世界观 Agent**：仅在 `world_gate = REQUIRED` 时提交 world_result；不得直接改全局 Canon 指针。
 - **剧本 Agent**：只提交 script_result。
 - **十元 Agent**：只提交 tenyuan_result。
 - **分镜 Agent**：只提交 storyboard_result。
@@ -76,3 +80,10 @@ IDLE
 - 关系状态
 - 十元当前体量
 - 若主题压力发生不可逆变化：记录该变化供下一镜继承
+
+
+## 世界观门禁
+- 普通镜头：`world_gate = BYPASS`，不增加状态步骤。
+- 依赖世界规则：`world_gate = REQUIRED`，必须先得到 `world_result`。
+- 若 `new_world_rule_required = true`：进入 REPLAN / BLOCKED，不得进入 RENDER_QUEUED。
+- 新规则需走 [[../04_协议/WORLD_PROPOSAL_SCHEMA]]，完成十元复核与导演裁决后，才允许登记为可调用规则。
