@@ -6,6 +6,7 @@
 ## 调度顺序
 director
 → **theme**
+→ **world（条件触发）**
 → script
 → tenyuan
 → storyboard
@@ -43,6 +44,7 @@ director
 
 ## 各 Agent 责任
 - **theme_agent**：只定义五维主题问题、主题实验、压力机制和人物困境目标，不写完整剧情；只提交 `theme_result`。
+- **world_agent**：仅在 `world_gate = REQUIRED` 时做 Canon / 区域规则 / 文明机制校验；只提交 `world_result`。普通镜头 BYPASS，不强制参与。
 - script_agent：根据 theme_result 定义故事变化，不定机位；只提交 `script_result`。
 - tenyuan_agent：只定义十元结构与验证状态，不强改主题/剧情；只提交 `tenyuan_result`。
 - storyboard_agent：把前三者变成时间镜头；只提交 `storyboard_result`。
@@ -54,20 +56,23 @@ director
 - director_agent：唯一合并全局状态并决定下一跳。
 
 ## 内容接口
-`theme_result → script_result → tenyuan_result → storyboard_result`
+`theme_result → world_result(conditional) → script_result → tenyuan_result → storyboard_result`
 
 - theme_result 回答：**研究什么问题？**
+- world_result 回答：**这个世界允许怎样发生？哪些规则不能被临时改？**
 - script_result 回答：**人物因此发生什么？**
 - tenyuan_result 回答：**内部力量是什么性质、如何作用？**
 - storyboard_result 回答：**怎样在 8–10 秒内让变化可见？**
 
 禁止反向覆盖：
+- 世界观不得为了服务单镜临时发明高体量规则。
+- 世界观不得改主题问题或十元 canonical。
 - 十元不得因为映射方便而改写主题问题。
 - 分镜不得为了画面方便删除核心剧情变化。
 - 主题不得为了“深刻”破坏角色/世界观正本。
 
 ## 交叉讨论
-主题 / 剧本 / 十元 / 分镜最多 3 轮。
+主题 / 世界观（条件触发）/ 剧本 / 十元 / 分镜最多 3 轮。WORLD_CHECK 最多 1 轮。
 THEME_AUDIT 默认最多 1 轮。
 每轮只能返回：
 - ACCEPT
@@ -85,5 +90,5 @@ LEARNING 使用 test_shot_id。
 - 内容争议统一读取 [[DISCUSSION_PROTOCOL]]。
 - 无法自动收敛时由导演生成 [[DIRECTOR_DECISION_SCHEMA]]。
 - 讨论只允许修改冲突字段，禁止重写整张任务卡。
-- 主题 / 剧本 / 十元 / 分镜最多 3 轮；THEME_AUDIT 最多 1 轮。
+- 主题 / 世界观（条件触发）/ 剧本 / 十元 / 分镜最多 3 轮；THEME_AUDIT 与 WORLD_CHECK 各最多 1 轮。
 - 导演裁决后生成 final_patch，并写回当前任务包。
