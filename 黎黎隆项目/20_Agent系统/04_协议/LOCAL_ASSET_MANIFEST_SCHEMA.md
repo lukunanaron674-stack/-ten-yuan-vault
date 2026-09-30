@@ -1,10 +1,10 @@
-# LOCAL_ASSET_MANIFEST_SCHEMA｜本地素材目录清单 v1
+# LOCAL_ASSET_MANIFEST_SCHEMA｜本地素材目录清单 v1.1
 
 > 本地 watcher 维护真实目录映射；仓库只保存逻辑路径与可检索元数据。
 
 ## catalog_header
 ```yaml
-schema_version: "1.0"
+schema_version: "1.1"
 catalog_version:
 generated_at:
 watcher_id:
@@ -36,6 +36,13 @@ scene_ids: []
 roles: []
 tags: []
 
+# 生成来源。仅当真实来源可追溯时填写。
+generation_seed: null
+generation_workflow_id: null
+generation_model: null
+generation_params_ref: null
+seed_source_ref: null
+
 duplicate_of: null
 identity_confidence: 0.0
 tag_source: PATH | EXISTING_INDEX | VISUAL_REVIEW | HUMAN
@@ -48,6 +55,13 @@ last_seen_at:
 notes:
 ```
 
+## seed 导入规则
+- `generation_seed` 是“该图片/素材生成时使用的 seed”，属于资产溯源信息。
+- 它与 `RENDER_TASK_SCHEMA` 中 H3 视频执行任务自己的 `seed` 是两个不同概念，禁止互相覆盖。
+- seed 可以来自旧 seed 文档、ComfyUI 元数据、工作流 JSON 或本地数据库，但必须通过真实文件、hash 或明确记录绑定到具体 `asset_id` 后才写入。
+- 只知道一个 seed、却无法确认对应哪张图片时，不得猜测绑定；保留在待解析队列。
+- 同一 asset 有多次生成记录时，主记录保存最终确认的一组 provenance，其余记录写入 `generation_params_ref` 指向外部历史。
+
 ## delta_record
 ```yaml
 catalog_version_before:
@@ -57,6 +71,8 @@ changed: []
 missing: []
 duplicate_links: []
 tag_updates: []
+seed_links_added: []
+seed_links_unresolved: []
 ```
 
 ## 路径规则
@@ -74,9 +90,10 @@ role:
 root_id:
 relative_path:
 version_or_hash:
+generation_seed: null
 lock_status:
 style_review_status:
 usable_for_h3:
 ```
 
-只有发生冲突、重复或风格核验时才展开更多字段。
+只有发生冲突、重复、seed 追溯或风格核验时才展开更多字段。
