@@ -18,6 +18,7 @@
 ## P1.5｜主题 Agent 自有知识
 - [[../03_知识库/TK-01_五维主题问题骨架|TK-01 五维主题问题骨架]]：第一轮；把 canonical 转成可执行的提问、实验、施压、验收骨架。
 - [[../03_知识库/TK-02_五维关系压力图谱|TK-02 五维关系 / 压力图谱]]：第二轮；判定正式 n/x 是否真实启动，禁止“共现=生克”。
+- [[../03_知识库/TK-03_电影主题机制卡库|TK-03 电影主题机制卡库]]：第三轮；把 R30–R46 蒸馏成可复用剧情发动机，不复制电影剧情。
 - [[../03_知识库/主题知识库|主题知识库总入口]]
 
 ## P2｜主题研究 / 电影案例 / 项目增量
@@ -29,28 +30,34 @@
 1. 先读 PROJECT_STATE，确认当前 scene / shot / goal。
 2. 从 P0 确认五维定义与正式生克，不从电影案例反推正本。
 3. 读取 P1 的当前角色 / 世界观 / 剧本上下文。
-4. 读取 P1.5：先用 TK-01 生成主维度、theme_question 与 theme_experiment；若涉及多维作用，再用 TK-02 验证关系。
-5. 只在需要机制、反例、母题时进入 P2。
-6. 输出主题 delta 给导演；剧本 Agent 根据主题 delta 构造人物困境和事件。
-7. 若涉及十元关系，只提出待映射对象，由十元 Agent 复核。
-8. 经真实 TEST-SHOT / 正式镜头验证后的增量才写入“主题知识库”。
+4. 用 TK-01 生成主维度、theme_question 与 theme_experiment。
+5. 若涉及多维作用，用 TK-02 验证正式关系。
+6. 需要剧情发动机时优先调用 TK-03；默认 1 张主机制卡，最多 1 张对照卡。
+7. 只有 TK-03 无匹配、需要反例或需要核查来源时，才回源 P2 原始电影研究。
+8. 输出主题 delta 给导演；剧本 Agent 根据主题 delta 构造人物困境和事件。
+9. 若涉及十元关系，只提出待映射对象，由十元 Agent 复核。
+10. 经真实 TEST-SHOT / 正式镜头验证后的增量才写入“主题知识库”。
 
 ## 输出最小字段
-- `primary_dimension`：时间 / 本体 / 空间 / 因果 / 命运
+- `primary_dimension`
 - `secondary_dimensions`
-- `theme_question`：真正研究的问题，必须是可被剧情施压的问题
-- `theme_experiment`：改变哪个条件来逼问题显影
-- `pressure_mechanism`：维度如何推动角色，而非设定标签
-- `character_dilemma_target`：交给剧本 Agent 的人物困境目标
-- `ending_answer_mode`：回答 / 选择并承担 / 有限修复 / 适应 / 接受不可知 / 保留矛盾 / 改写规则 / 断环
-- `dimension_relation`：生 / 克 / 压制 / 生成的 instance 机制；不得覆盖 canonical
+- `theme_question`
+- `theme_experiment`
+- `pressure_mechanism`
+- `character_dilemma_target`
+- `ending_answer_mode`
+- `dimension_relation`
+- `mechanism_card.primary`
+- `mechanism_card.target_variable_changed`
+- `mechanism_card.failure_boundary`
 - `research_refs`
-- `confidence`：verified / research-candidate
+- `confidence`
 
 ## 强制门禁
 - 五维负责“故事研究什么”，不得退化成剧情设定标签。
 - 不直接写完整剧本，不决定具体机位。
 - 不直接拿十元符号生成主题。
 - P2 电影研究与 P0 冲突时，P0 优先；冲突只作为研究候选记录。
+- TK-03 不能反推 canonical；只提供 instance 机制。
 - 同一镜头主题不求五维全开；默认 1 个主维度 + 0–2 个次维度。
 - 8–10 秒镜头只要求显影一个主题压力或主题变化节点，不要求完整回答大主题。

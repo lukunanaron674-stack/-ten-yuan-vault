@@ -35,6 +35,12 @@ pressure_mechanism: ""
 character_dilemma_target: ""
 ending_answer_mode: ""
 dimension_relation: ""
+mechanism_card:
+  primary: null
+  alternate: null
+  target_variable_changed: ""
+  expected_story_effect: ""
+  failure_boundary: ""
 research_refs: []
 confidence: verified|research-candidate
 ```
@@ -53,7 +59,7 @@ THEME_AUDIT 默认最多 1 轮；不能把剧本拖进无限哲学会议。
 
 ## 知识索引入口
 - [[../05_索引/IDX-06_主题Agent索引]]
-- 默认按 P0 → P1 → P2 读取；P3 归档不得自动调用。
+- 默认按 P0 → P1 → P1.5 → P2 读取；P3 归档不得自动调用。
 
 ## 共享状态协议
 - 每次执行第一步读取 [[../02_共享状态/PROJECT_STATE.json]]。
@@ -69,13 +75,11 @@ THEME_AUDIT 默认最多 1 轮；不能把剧本拖进无限哲学会议。
 - 每小时学习统一使用 [[../04_协议/LEARNING_TASK_SCHEMA]] 的 `theme_view`。
 - 只填写本岗位允许字段；若主题定义与剧情执行冲突，返回 `MODIFY` 或 `REPLAN` 给导演，不直接改 script_result。
 
-
 ## 第五轮｜讨论规则
 - 参与讨论前读取 [[../04_协议/DISCUSSION_PROTOCOL]]。
 - 只能质疑“剧情是否真正承受主题压力”等主题字段。
 - 不得借主题审计重写完整剧情、十元结论或分镜设计。
 - THEME_AUDIT 最多 1 轮；无新增证据时不得重复提出同一异议。
-
 
 ## 知识调用顺序｜v1.1
 主题规划默认先读取：
@@ -89,7 +93,6 @@ THEME_AUDIT 默认最多 1 轮；不能把剧本拖进无限哲学会议。
 - 未确定 `primary_dimension + theme_question + theme_experiment.variable`，不得把任务交给剧本 Agent。
 - 默认只选 1 个主维度；禁止为了显得复杂而五维全开。
 
-
 ## 关系判定顺序｜v1.2
 主题关系判断必须按以下顺序：
 1. TK-01：先证明各主题本身已显影；
@@ -99,6 +102,37 @@ THEME_AUDIT 默认最多 1 轮；不能把剧本拖进无限哲学会议。
 
 关系层不得由十元结果反推；十元具体化仍交十元 Agent。
 
+## 第三轮｜机制卡调用规则 v1.3
+机制调用必须在“定题”和必要的关系校验之后：
+
+```text
+TK-01 定题
+→ TK-02（仅当涉及多维关系）
+→ TK-03 选剧情发动机
+→ 剧本 Agent 实现
+```
+
+调用 [[../03_知识库/TK-03_电影主题机制卡库]] 时：
+- 按“目标变量需要怎样变化”选卡，不按电影相似度选卡；
+- 默认 1 张主卡，最多 1 张反例 / 对照卡；
+- 卡片只能服务既有 theme_question，不能为了套卡改题；
+- 没有匹配时返回 `NO_MECHANISM_MATCH`，再按需回源 P2 原始电影研究；
+- 不复制电影人物、设定皮肤、场景和剧情；
+- 机制卡若涉及正式 n/x，必须继续服从 TK-02；
+- TK-03 全部为 `research-candidate`，只有经《黎黎隆》真实 TEST-SHOT / 正式剧情验证后，项目知识才允许升级。
+
+提交给剧本 Agent 的新增字段：
+```yaml
+mechanism_card:
+  primary: MC-xx
+  alternate: null
+  trigger_condition: ""
+  transformation_chain: ""
+  target_variable_changed: ""
+  character_dilemma: ""
+  expected_story_effect: ""
+  failure_boundary: ""
+```
 
 ## 第七轮｜上下文工程
 > 本节优先级高于上方旧“知识索引入口”的默认全量读取方式。
