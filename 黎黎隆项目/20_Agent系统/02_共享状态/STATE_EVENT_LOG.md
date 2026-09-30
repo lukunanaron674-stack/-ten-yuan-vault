@@ -100,3 +100,52 @@ artifacts:
 - CH-003 角色卡明确作者原稿与探索图尚未归档为 GitHub 图片资产。
 - 仓库检索未找到“付费魔法入口 / 魔法入口”对应场景资产。
 - 因此正确停在 ASSET_MISSING；未虚构 asset_id、路径、executor receipt 或渲染结果。
+
+
+## 2026-10-01｜Round 7 自动调度与上下文工程
+```yaml
+event_id: EVT-ROUND7-AUTO-DISPATCH
+time: 2026-10-01
+project_id: LLL
+from_status: PRODUCTION_LOOP_READY
+to_status: AUTO_DISPATCH_READY
+writer: director_round7_orchestration
+state_version_before: 6
+state_version_after: 7
+reason: 建立状态驱动自动调度，并将 11 个 Agent 默认读取改为 INDEX_LITE + CTX 提炼工作记忆 + 按需回源
+artifacts:
+  - 04_协议/AUTO_DISPATCH_PROTOCOL.md
+  - 04_协议/DISPATCH_TABLE.json
+  - 04_协议/CONTEXT_DISTILLATION_PROTOCOL.md
+  - 05_索引/INDEX_LITE.md
+  - 03_知识库/上下文提炼/CTX-00_导演.md ... CTX-10_世界观.md
+context_budget:
+  max_primary_agents_per_tick: 1
+  max_distilled_briefs_per_tick: 3
+  max_raw_sources_per_tick: 2
+```
+
+关键结果：旧 IDX 保留为按需证据路由，不再默认 P0→P1→P2 全量读取；同状态 hash 无变化时 NO_OP。
+
+
+## 2026-10-01｜Round 8 连续镜头验证
+```yaml
+event_id: EVT-ROUND8-CONTINUITY
+time: 2026-10-01
+project_id: LLL
+from_status: AUTO_DISPATCH_READY
+to_status: CONTINUITY_GATE_READY
+writer: director_round8_finalize
+state_version_before: 7
+state_version_after: 8
+reason: 用历史真实 H3 执行记录回放验证连续镜头门禁，并建立 closing_state → opening_state 强制继承
+historical_replay_result: AMBIGUOUS_VALIDATED
+artifacts:
+  - 04_协议/CONTINUOUS_SHOT_VALIDATION_PROTOCOL.md
+  - 06_验证/ROUND8_CONTINUITY_VALIDATION_20261001.md
+```
+
+验证说明：
+- 历史 MOUSE R35/R36、LILLONG R01/R02 存在真实 H3 执行/输出证据。
+- 旧任务缺少标准化 previous_shot_id / lineage_id / closing_state → opening_state，因此不得伪判“剧情连续 PASS”。
+- 新生产只有上一镜 review=PASS 且 closing_state 成功继承到下一镜 opening_state，才允许继续。
