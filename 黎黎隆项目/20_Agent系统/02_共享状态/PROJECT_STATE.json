@@ -1,6 +1,6 @@
 {
   "schema_version": "1.3",
-  "state_version": 4,
+  "state_version": 5,
   "project_id": "LLL",
   "project_name": "黎黎隆",
   "pipeline": "B端_Agent",
@@ -10,92 +10,19 @@
   "current_scene_id": null,
   "current_shot_id": null,
   "active_job_id": null,
-  "last_writer": "round5_world_gate_wiring",
-  "updated_at": "2026-10-01T05:33:00+08:00",
-  "director_goal": {
-    "goal_id": null,
-    "mode": "NONE",
-    "text": null,
-    "source": null
-  },
-  "cycle": {
-    "cycle_id": null,
-    "mode": "LEARNING_ONLY",
-    "status": "IDLE",
-    "started_at": null,
-    "completed_at": null
-  },
-  "scene": {
-    "goal": null,
-    "target_duration_sec": null,
-    "completed_duration_sec": 0,
-    "status": "IDLE"
-  },
-  "shot": {
-    "status": "IDLE",
-    "duration_sec": 10,
-    "plan_version": 0,
-    "attempt_no": 0,
-    "previous_shot_id": null,
-    "next_shot_id": null,
-    "opening_state": null,
-    "closing_state": null,
-    "continuity_check": "NOT_REQUIRED",
-    "theme_result": null,
-    "script_result": null,
-    "tenyuan_result": null,
-    "storyboard_result": null,
-    "world_gate": "BYPASS",
-    "world_result": null,
-    "new_world_rule_required": false
-  },
-  "assets": {
-    "status": "UNCHECKED",
-    "required": [],
-    "resolved": [],
-    "missing": [],
-    "pending_style_review": []
-  },
-  "render": {
-    "status": "NOT_STARTED",
-    "render_id": null,
-    "queue_task_id": null,
-    "output_video": null,
-    "head_frame": null,
-    "mid_frame": null,
-    "tail_frame": null,
-    "params": null,
-    "last_error": null
-  },
-  "review": {
-    "status": "NOT_STARTED",
-    "decision": null,
-    "retry_count": 0,
-    "max_retry_count": 3,
-    "failed_dimensions": [],
-    "issues": [],
-    "instructions": []
-  },
-  "learning": {
-    "hourly_cycle_enabled": true,
-    "status": "IDLE",
-    "learning_run_id": null,
-    "last_topic_theme": null,
-    "last_topic_script": null,
-    "last_topic_tenyuan": null,
-    "last_topic_storyboard": null,
-    "last_cross_entry": null,
-    "latest_decision": null,
-    "test_shot_id": null,
-    "last_topic_world": null
-  },
+  "last_writer": "director_agent_learning_cycle",
+  "updated_at": "2026-10-01T05:35:52+08:00",
+  "director_goal": {"goal_id": null,"mode": "NONE","text": null,"source": null},
+  "cycle": {"cycle_id": "RUN-20261001-0535","mode": "LEARNING_ONLY","status": "COMPLETED","started_at": "2026-10-01T05:35:52+08:00","completed_at": "2026-10-01T05:35:52+08:00"},
+  "scene": {"goal": null,"target_duration_sec": null,"completed_duration_sec": 0,"status": "IDLE"},
+  "shot": {"status": "IDLE","duration_sec": 10,"plan_version": 0,"attempt_no": 0,"previous_shot_id": null,"next_shot_id": null,"opening_state": null,"closing_state": null,"continuity_check": "NOT_REQUIRED","theme_result": null,"script_result": null,"tenyuan_result": null,"storyboard_result": null,"world_gate": "BYPASS","world_result": null,"new_world_rule_required": false},
+  "assets": {"status": "UNCHECKED","required": [],"resolved": [],"missing": [],"pending_style_review": []},
+  "render": {"status": "NOT_STARTED","render_id": null,"queue_task_id": null,"output_video": null,"head_frame": null,"mid_frame": null,"tail_frame": null,"params": null,"last_error": null},
+  "review": {"status": "NOT_STARTED","decision": null,"retry_count": 0,"max_retry_count": 3,"failed_dimensions": [],"issues": [],"instructions": []},
+  "learning": {"hourly_cycle_enabled": true,"status": "COMPLETED","learning_run_id": "RUN-20261001-0535","last_topic_theme": null,"last_topic_script": "8-10秒短镜如何用反应后置表现结构性限制","last_topic_tenyuan": "XN克ZX：过去行动成为当前前置结构；不自动推出NX","last_topic_storyboard": "结构回声：同一路径重复时环境在人物动作完成前先响应","last_cross_entry": "CROSS-001","latest_decision": "KEEP reaction-delay + structural-echo; REJECT auto-NX; STOP before new-route attempt","test_shot_id": "TEST-20261001-0535-XNZX-01","last_topic_world": null},
   "pending_deltas": [],
-  "blockers": [],
-  "escalation": {
-    "required": false,
-    "owner": null,
-    "reason": null
-  },
-  "next_action": "WAIT_FOR_DIRECTOR_GOAL_OR_HOURLY_LEARNING",
+  "blockers": [{"id":"BLK-20261001-01","type":"ASSET_MISSING","scope":"TEST-20261001-0535-XNZX-01","detail":"CH-003 locked H3-bindable character reference and paid magical entrance locked scene reference are not confirmed in GitHub assets","owner":"asset_agent"}],
+  "escalation": {"required": false,"owner": null,"reason": null},
+  "next_action": "WAIT_FOR_DIRECTOR_GOAL_OR_NEXT_HOURLY_LEARNING",
   "assigned_agent": "director"
 }
