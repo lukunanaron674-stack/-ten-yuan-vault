@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "state_version": 1,
+  "project_id": "LLL",
+  "project_name": "黎黎隆",
+  "pipeline": "B端_Agent",
+  "run_mode": "LEARNING_AND_TEST",
+  "production_gate": "DIRECTOR_GOAL_REQUIRED",
+  "project_status": "ACTIVE",
+  "current_scene_id": null,
+  "current_shot_id": null,
+  "active_job_id": null,
+  "last_writer": "system_init_round3",
+  "updated_at": "2026-10-01T03:00:00+08:00",
+  "scene": {
+    "goal": null,
+    "target_duration_sec": null,
+    "completed_duration_sec": 0,
+    "status": "IDLE"
+  },
+  "shot": {
+    "status": "IDLE",
+    "duration_sec": 10,
+    "previous_shot_id": null,
+    "next_shot_id": null,
+    "opening_state": null,
+    "closing_state": null,
+    "script_result": null,
+    "tenyuan_result": null,
+    "storyboard_result": null
+  },
+  "assets": {
+    "status": "UNCHECKED",
+    "required": [],
+    "resolved": [],
+    "missing": []
+  },
+  "render": {
+    "status": "NOT_STARTED",
+    "render_id": null,
+    "output_video": null,
+    "head_frame": null,
+    "mid_frame": null,
+    "tail_frame": null,
+    "params": null
+  },
+  "review": {
+    "status": "NOT_STARTED",
+    "decision": null,
+    "retry_count": 0,
+    "max_retry_count": 3,
+    "issues": [],
+    "instructions": []
+  },
+  "learning": {
+    "hourly_cycle_enabled": true,
+    "last_topic_script": null,
+    "last_topic_tenyuan": null,
+    "last_topic_storyboard": null,
+    "last_cross_entry": null,
+    "latest_decision": null
+  },
+  "next_action": "WAIT_FOR_DIRECTOR_GOAL_OR_HOURLY_LEARNING",
+  "assigned_agent": "director"
+}
