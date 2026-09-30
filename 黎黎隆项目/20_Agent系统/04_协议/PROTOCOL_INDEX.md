@@ -1,0 +1,27 @@
+# PROTOCOL_INDEX｜协议总入口
+
+## 每个 Agent 开工前
+1. [[../02_共享状态/PROJECT_STATE.json]]
+2. [[AGENT_IO_PROTOCOL]]
+3. 自己的 Agent 岗位说明
+4. 对应知识索引
+5. 当前任务包
+
+## 正式镜头
+- [[SHOT_TASK_SCHEMA]]
+- [[REVIEW_SCHEMA]]
+- [[RETRY_PACKET_SCHEMA]]
+
+## 每小时学习
+- [[LEARNING_TASK_SCHEMA]]
+
+## 状态相关
+- [[../02_共享状态/STATE_MACHINE]]
+- [[../02_共享状态/STATE_WRITE_PROTOCOL]]
+- [[../02_共享状态/CONTINUITY_STATE_SCHEMA]]
+
+## 核心原则
+- 状态决定“现在在哪”
+- 协议决定“怎么传”
+- Agent 岗位决定“谁能改什么”
+- 知识索引决定“去哪里读”
