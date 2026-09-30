@@ -1,4 +1,4 @@
-# SHOT_TASK_SCHEMA｜正式镜头任务包 v2
+# SHOT_TASK_SCHEMA｜正式镜头任务包 v2.1
 
 ## 身份
 - project_id
@@ -17,6 +17,21 @@
 - opening_state
 - previous_shot_id
 - forbidden_changes
+
+## 主题 Agent 填写
+- primary_dimension
+- secondary_dimensions
+- theme_question
+- theme_experiment
+- pressure_mechanism
+- character_dilemma_target
+- ending_answer_mode
+- dimension_relation
+- research_refs
+- theme_confidence: VERIFIED | RESEARCH_CANDIDATE
+- theme_status: READY | REPLAN
+
+> 8–10 秒镜头不要求完整回答大主题；只要求主题压力或主题变化节点可被剧情显影。
 
 ## 剧本 Agent 填写
 - story_function
@@ -77,10 +92,11 @@
 
 ## READY 门禁
 正式镜头只有同时满足以下条件才允许进入 RENDER_QUEUED：
-1. script_status = READY
-2. tenyuan_status = READY
-3. storyboard_status = READY
-4. asset_status = READY
-5. opening_state 已确定
-6. continuity_check != FAIL
-7. 导演确认本 job_id 仍为当前任务
+1. theme_status = READY
+2. script_status = READY
+3. tenyuan_status = READY
+4. storyboard_status = READY
+5. asset_status = READY
+6. opening_state 已确定
+7. continuity_check != FAIL
+8. 导演确认本 job_id 仍为当前任务
