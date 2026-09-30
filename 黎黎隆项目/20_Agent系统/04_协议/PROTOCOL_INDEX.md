@@ -57,3 +57,18 @@
 - [[../06_验证/ROUND8_CONTINUITY_VALIDATION_20261001]]
 
 连续生产的硬门：上一镜 PASS.closing_state 必须成为下一镜 opening_state；历史 revision 不得冒充剧情连续镜头。
+
+
+## 第七轮｜自动调度与上下文工程
+- [[AUTO_DISPATCH_PROTOCOL]]
+- [[DISPATCH_TABLE.json]]
+- [[CONTEXT_DISTILLATION_PROTOCOL]]
+- [[../05_索引/INDEX_LITE]]
+
+第七轮不再以“所有 Agent 都读完整索引”为默认。调度器每 tick 只唤醒当前 primary Agent，并只加载其 CTX 与必要 source。
+
+## 第八轮｜连续镜头验证
+- [[CONTINUOUS_SHOT_VALIDATION_PROTOCOL]]
+- [[../06_验证/ROUND8_CONTINUITY_VALIDATION_20261001]]
+
+历史真实 H3 回放用于验证协议，但旧 revision 没有标准 closing/opening state 时只允许判 AMBIGUOUS，不得伪报连续 PASS。
