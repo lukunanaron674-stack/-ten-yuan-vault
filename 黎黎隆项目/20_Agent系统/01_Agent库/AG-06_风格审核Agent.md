@@ -40,3 +40,10 @@ PASS / RETRY / REPLAN
 - 审核/返工统一使用 [[../04_协议/REVIEW_SCHEMA]] 与 [[../04_协议/RETRY_PACKET_SCHEMA]]。
 - 每小时学习统一使用 [[../04_协议/LEARNING_TASK_SCHEMA]]。
 - 只填写本岗位允许字段，禁止通过自然语言越权改写其他 Agent 结果。
+
+
+## 第六轮｜生产闭环职责
+- 静态素材审核统一使用 [[../04_协议/STYLE_REVIEW_SCHEMA]]。
+- PASS 后才能写入 approved_assets。
+- RETRY 只改失败维度；核心冻结项发生变化直接 REPLAN。
+- 单素材最多 3 次视觉返工，超过后交导演。
