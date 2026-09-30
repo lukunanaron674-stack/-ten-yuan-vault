@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "rules": [
+    {
+      "when": {
+        "shot_status": "IDLE",
+        "director_mode": "PRODUCTION"
+      },
+      "route": "DIRECTOR_INIT",
+      "agent": "director"
+    },
+    {
+      "when": {
+        "shot_status": "PLANNING"
+      },
+      "route": "THEME_PLAN",
+      "agent": "theme"
+    },
+    {
+      "when": {
+        "shot_status": "THEME_READY",
+        "world_gate": "REQUIRED"
+      },
+      "route": "WORLD_CHECK",
+      "agent": "world"
+    },
+    {
+      "when": {
+        "shot_status": "THEME_READY",
+        "world_gate": "BYPASS"
+      },
+      "route": "SCRIPT_PROPOSAL",
+      "agent": "script"
+    },
+    {
+      "when": {
+        "shot_status": "WORLD_READY"
+      },
+      "route": "SCRIPT_PROPOSAL",
+      "agent": "script"
+    },
+    {
+      "when": {
+        "shot_status": "SCRIPT_READY"
+      },
+      "route": "TENYUAN_REVIEW",
+      "agent": "tenyuan"
+    },
+    {
+      "when": {
+        "shot_status": "TENYUAN_READY"
+      },
+      "route": "STORYBOARD_BUILD",
+      "agent": "storyboard"
+    },
+    {
+      "when": {
+        "shot_status": "STORYBOARD_READY"
+      },
+      "route": "ASSET_CHECK",
+      "agent": "asset"
+    },
+    {
+      "when": {
+        "asset_status": "MISSING",
+        "auto_asset_generation_allowed": true
+      },
+      "route": "IMAGE_GENERATE",
+      "agent": "image"
+    },
+    {
+      "when": {
+        "asset_status": "MISSING",
+        "auto_asset_generation_allowed": false
+      },
+      "route": "BLOCK",
+      "agent": "director"
+    },
+    {
+      "when": {
+        "asset_status": "PENDING_REVIEW"
+      },
+      "route": "STYLE_REVIEW",
+      "agent": "style_review"
+    },
+    {
+      "when": {
+        "asset_status": "READY",
+        "render_status": "NOT_STARTED"
+      },
+      "route": "RENDER_DISPATCH",
+      "agent": "h3"
+    },
+    {
+      "when": {
+        "render_status": "QUEUED",
+        "executor_receipt": null
+      },
+      "route": "WAIT_EXECUTOR",
+      "agent": null,
+      "no_op": true
+    },
+    {
+      "when": {
+        "render_status": "RENDERING"
+      },
+      "route": "WAIT_RENDER",
+      "agent": null,
+      "no_op": true
+    },
+    {
+      "when": {
+        "render_status": "SUCCESS"
+      },
+      "route": "VIDEO_REVIEW",
+      "agent": "video_review"
+    },
+    {
+      "when": {
+        "review_decision": "PASS"
+      },
+      "route": "MERGE_PASS_AND_NEXT",
+      "agent": "director"
+    },
+    {
+      "when": {
+        "review_decision": "RETRY"
+      },
+      "route": "RETRY_ROUTE",
+      "agent": "director"
+    },
+    {
+      "when": {
+        "review_decision": "REPLAN"
+      },
+      "route": "REPLAN_ROUTE",
+      "agent": "director"
+    },
+    {
+      "when": {
+        "shot_status": "BLOCKED"
+      },
+      "route": "BLOCKER_OWNER",
+      "agent": "director"
+    },
+    {
+      "when": {
+        "director_mode": "NONE",
+        "learning_enabled": true
+      },
+      "route": "LEARNING_ROUTER",
+      "agent": "director"
+    },
+    {
+      "when": {
+        "state_changed": false
+      },
+      "route": "NO_OP",
+      "agent": null,
+      "no_op": true
+    }
+  ],
+  "throttle": {
+    "max_primary_agents_per_tick": 1,
+    "max_dependent_agents_per_tick": 1,
+    "max_discussion_rounds": 3,
+    "same_state_hash_no_op": true,
+    "unchanged_blocker_no_repeat": true
+  }
+}
