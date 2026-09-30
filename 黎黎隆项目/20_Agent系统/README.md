@@ -33,3 +33,15 @@
 
 ### 核心原则
 正式生产与每小时学习分离。没有明确导演 production goal 时，每小时循环只产 TEST-SHOT 和知识验证，不得推进正式剧情指针。
+
+
+## 第四轮协议层
+- 协议总入口：`04_协议/PROTOCOL_INDEX.md`
+- Agent 接力：`04_协议/AGENT_IO_PROTOCOL.md`
+- 正式镜头任务包：`04_协议/SHOT_TASK_SCHEMA.md`
+- 审核结果包：`04_协议/REVIEW_SCHEMA.md`
+- 返工包：`04_协议/RETRY_PACKET_SCHEMA.md`
+- 每小时学习包：`04_协议/LEARNING_TASK_SCHEMA.md`
+
+### 接力规则
+九个 Agent 已全部绑定上述协议。任何 Agent 只能填写本岗位允许字段；正式生产使用 shot_id，学习验证使用 test_shot_id，禁止串轨。
