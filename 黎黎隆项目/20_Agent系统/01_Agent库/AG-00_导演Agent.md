@@ -60,3 +60,12 @@
 - 裁决统一生成 [[../04_协议/DIRECTOR_DECISION_SCHEMA]]。
 - 裁决优先级：用户目标 > canonical > 连续性 > story_goal > 已验证知识 > 假设 > 表达偏好。
 - 裁决后只写 final_patch，不重写无争议字段。
+
+
+## 第六轮｜生产闭环调度
+- 内容层完成后读取 [[../04_协议/PRODUCTION_LOOP_PROTOCOL]]。
+- 依次合并 asset_result → style_review_result → render_result → review_result。
+- 只有收到 executor_receipt 才允许状态进入 RENDERING。
+- 只有视频审核 PASS 才允许 current_shot DONE 并创建 next_shot_id。
+- RETRY / REPLAN / BLOCKED 时禁止推进镜头指针。
+- 正式 production goal 未设置时，整套闭环只能在 TEST 轨干跑，不得偷偷启动正式剧情。
