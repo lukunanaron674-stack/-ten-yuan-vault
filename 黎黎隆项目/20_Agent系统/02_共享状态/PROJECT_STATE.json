@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.4",
-  "state_version": 6,
+  "schema_version": "1.6",
+  "state_version": 8,
   "project_id": "LLL",
   "project_name": "黎黎隆",
   "pipeline": "B端_Agent",
@@ -10,7 +10,7 @@
   "current_scene_id": null,
   "current_shot_id": null,
   "active_job_id": null,
-  "last_writer": "director_round6_production_loop",
+  "last_writer": "director_round8_finalize",
   "updated_at": "2026-10-01T05:33:00+08:00",
   "director_goal": {
     "goal_id": null,
@@ -128,5 +128,38 @@
       "next_action": "RESOLVE_REAL_ASSETS_BEFORE_RENDER",
       "render_dispatched": false
     }
+  },
+  "orchestration": {
+    "protocol_version": "v1",
+    "status": "READY",
+    "router": "04_协议/DISPATCH_TABLE.json",
+    "dispatch_policy": "ONE_PRIMARY_AGENT_PER_TICK",
+    "no_op_on_same_state_hash": true,
+    "max_primary_agents_per_tick": 1,
+    "max_dependent_agents_per_tick": 1
+  },
+  "context_engineering": {
+    "protocol_version": "v1",
+    "status": "READY",
+    "mode": "HIERARCHICAL_DISTILLED_CONTEXT",
+    "default_router": "05_索引/INDEX_LITE.md",
+    "legacy_indexes": "ON_DEMAND_ONLY",
+    "all_agents_bound": true,
+    "max_distilled_briefs_per_tick": 3,
+    "max_raw_sources_per_tick": 2,
+    "source_hash_cache": true
+  },
+  "continuity_validation": {
+    "protocol_version": "v1",
+    "status": "READY",
+    "historical_replay_result": "AMBIGUOUS_VALIDATED",
+    "historical_evidence": "REAL_H3_RUNS_PRESENT_BUT_NO_STANDARD_SHOT_TO_SHOT_STATE",
+    "required_for_new_continuous_production": [
+      "lineage_id",
+      "previous_shot_id",
+      "previous_review_PASS",
+      "closing_state_to_opening_state"
+    ],
+    "certified_sequence_id": null
   }
 }
