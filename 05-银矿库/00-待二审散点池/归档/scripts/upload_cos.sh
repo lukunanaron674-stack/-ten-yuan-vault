@@ -1,9 +1,13 @@
 #!/bin/bash
 # 上传三元理论文件夹到COS
 # 使用XML API + V2签名
+# SECURITY: credentials must be provided via environment variables.
 
-SECRET_ID="AKID96pNhla6RZWklY6PWUDgutf3B5lDQO9s"
-SECRET_KEY="XqyrXzNXS9dx2tWv63nMhy1p8E5lCRRD"
+: "${TENCENT_SECRET_ID:?Set TENCENT_SECRET_ID in the environment}"
+: "${TENCENT_SECRET_KEY:?Set TENCENT_SECRET_KEY in the environment}"
+
+SECRET_ID="${TENCENT_SECRET_ID}"
+SECRET_KEY="${TENCENT_SECRET_KEY}"
 BUCKET="674-1420714858"
 REGION="ap-guangzhou"
 COS_HOST="${BUCKET}.cos.${REGION}.myqcloud.com"
@@ -34,10 +38,8 @@ upload_file() {
     return
   fi
   
-  # 生成签名
   local sig=$(sign_v2 "PUT" "/${remote_path}" "")
   
-  # 上传
   local http_code=$(curl -s -o /dev/null -w "%{http_code}" \
     -X PUT \
     -H "Host: ${COS_HOST}" \
@@ -64,7 +66,6 @@ echo "本地: $LOCAL_DIR"
 echo "COS: $COS_HOST/$PREFIX"
 echo ""
 
-# 遍历文件
 while IFS= read -r local_path; do
   rel_path="${local_path#$LOCAL_DIR/}"
   remote_path="${PREFIX}${rel_path}"
