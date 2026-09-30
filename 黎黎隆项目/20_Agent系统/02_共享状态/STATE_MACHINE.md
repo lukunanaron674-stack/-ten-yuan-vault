@@ -16,6 +16,7 @@
 ```text
 IDLE
 → PLANNING
+→ THEME_READY
 → SCRIPT_READY
 → TENYUAN_READY
 → STORYBOARD_READY
@@ -30,14 +31,17 @@ IDLE
 ```
 
 ## 关键转移
-- ASSET_MISSING → 素材 Agent / 生图 Agent
-- RETRY → 保留已正确字段，只调整失败项，再进入 RENDER_QUEUED
-- REPLAN → 回到 STORYBOARD_READY 之前，由分镜/导演修改任务设计
-- PASS → 更新 closing_state，并把它复制为下一镜 opening_state
-- BLOCKED → 停止自动推进，记录 blocker 与 owner
+- PLANNING → 主题 Agent 先定义 `theme_result`，再进入 THEME_READY。
+- THEME_READY → 剧本 Agent 把主题问题转成人物困境与事件。
+- ASSET_MISSING → 素材 Agent / 生图 Agent。
+- RETRY → 保留已正确字段，只调整失败项，再进入 RENDER_QUEUED。
+- REPLAN → 按失败字段回到主题 / 剧本 / 十元 / 分镜对应阶段，不默认整条重跑。
+- PASS → 更新 closing_state，并把它复制为下一镜 opening_state。
+- BLOCKED → 停止自动推进，记录 blocker 与 owner。
 
 ## 写权限
 - **导演 Agent**：唯一允许改 PROJECT / SCENE / 当前 SHOT 指针和 next_action。
+- **主题 Agent**：只提交 theme_result。
 - **剧本 Agent**：只提交 script_result。
 - **十元 Agent**：只提交 tenyuan_result。
 - **分镜 Agent**：只提交 storyboard_result。
@@ -71,3 +75,4 @@ IDLE
 - 光线/时间
 - 关系状态
 - 十元当前体量
+- 若主题压力发生不可逆变化：记录该变化供下一镜继承
