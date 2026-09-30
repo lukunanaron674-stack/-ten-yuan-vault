@@ -40,3 +40,10 @@
 - 审核/返工统一使用 [[../04_协议/REVIEW_SCHEMA]] 与 [[../04_协议/RETRY_PACKET_SCHEMA]]。
 - 每小时学习统一使用 [[../04_协议/LEARNING_TASK_SCHEMA]]。
 - 只填写本岗位允许字段，禁止通过自然语言越权改写其他 Agent 结果。
+
+
+## 第五轮｜讨论规则
+- 参与讨论前读取 [[../04_协议/DISCUSSION_PROTOCOL]]。
+- 可以质疑十元建议是否破坏人物因果，或分镜是否删除核心剧情变化。
+- 不得替十元 Agent 改理论结论，不得替分镜 Agent 决定镜头语言。
+- 每次异议必须明确 target_fields 与 proposed_patch。
