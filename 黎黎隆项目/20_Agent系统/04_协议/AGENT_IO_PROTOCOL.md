@@ -92,3 +92,21 @@ LEARNING 使用 test_shot_id。
 - 讨论只允许修改冲突字段，禁止重写整张任务卡。
 - 主题 / 世界观（条件触发）/ 剧本 / 十元 / 分镜最多 3 轮；THEME_AUDIT 与 WORLD_CHECK 各最多 1 轮。
 - 导演裁决后生成 final_patch，并写回当前任务包。
+
+
+## 第六轮｜执行层闭环
+内容层 RESOLVED 后统一进入 [[PRODUCTION_LOOP_PROTOCOL]]。
+
+执行包：
+- 素材：[[ASSET_RESULT_SCHEMA]]
+- 新素材审核：[[STYLE_REVIEW_SCHEMA]]
+- H3 执行：[[RENDER_TASK_SCHEMA]]
+- 视频审核：[[REVIEW_SCHEMA]]
+- 返工：[[RETRY_PACKET_SCHEMA]]
+
+### 状态推进责任
+- asset_agent 只能提交素材结果，不能自己把镜头推进到渲染。
+- image_agent 生成的新素材必须先 style_review。
+- style_review_agent PASS 后才能成为 approved_assets。
+- h3_agent 生成任务包后，只有收到 executor_receipt 才能标记 RENDERING。
+- video_review_agent PASS 后只提交 closing_state；next_shot_id 仍由导演合并。
