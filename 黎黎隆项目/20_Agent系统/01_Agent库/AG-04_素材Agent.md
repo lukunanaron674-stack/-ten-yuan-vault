@@ -4,15 +4,14 @@
 - 根据镜头任务查找已有角色图、场景图、动作参考、声音参考。
 - 返回真实素材 ID / 路径，而不是只做文字描述。
 - 缺素材时返回 ASSET_MISSING，并请求生图 Agent。
+- 管理本地素材库的轻量 manifest：扫描动作由本地 watcher 执行，Agent 只消费目录、增量与少量候选。
 
 ## 输出
 角色参考、场景参考、动作参考、音频参考、素材状态。
 
-
 ## 知识索引入口
 - [[../05_索引/IDX-04_视觉素材与风格索引]]
 - 默认按 P0 → P1 → P2 读取；P3 归档不得自动调用。
-
 
 ## 共享状态协议
 - 每次执行第一步读取 [[../02_共享状态/PROJECT_STATE.json]]。
@@ -22,7 +21,6 @@
 - 返回结果若基于旧版本状态，必须标记 `STALE_RESULT`。
 - 正式镜头 PASS 后必须维护 closing_state；下一镜继承 opening_state。
 
-
 ## 任务接力协议
 - 执行前必须读取 [[../04_协议/AGENT_IO_PROTOCOL]]。
 - 正式镜头统一使用 [[../04_协议/SHOT_TASK_SCHEMA]]。
@@ -30,14 +28,12 @@
 - 每小时学习统一使用 [[../04_协议/LEARNING_TASK_SCHEMA]]。
 - 只填写本岗位允许字段，禁止通过自然语言越权改写其他 Agent 结果。
 
-
 ## 第六轮｜生产闭环职责
 - 输出必须遵循 [[../04_协议/ASSET_RESULT_SCHEMA]]。
 - “角色卡里写过”不等于“有可绑定图片素材”。
-- READY 必须给真实 asset_id + 路径 + lock_status + style_review_status + usable_for_h3。
+- READY 必须给真实 asset_id + 可解析定位信息 + lock_status + style_review_status + usable_for_h3。
 - 缺失时只报真实缺口，不得从文字说明伪造资产。
 - 素材结果交导演合并后，由 [[../04_协议/PRODUCTION_LOOP_PROTOCOL]] 决定下一跳。
-
 
 ## 第七轮｜上下文工程
 > 本节优先级高于上方旧“知识索引入口”的默认全量读取方式。
@@ -56,3 +52,23 @@
 - source 未变且 brief 未 stale，不重复读原文。
 - 跨 Agent 需要信息时优先读取对方结构化 result/delta，不读取对方完整知识索引。
 - 当前任务不涉及某主题时，不加载该主题知识。
+
+## 本地素材库职责
+遵守 [[../04_协议/LOCAL_ASSET_LIBRARY_PROTOCOL]] 与 [[../04_协议/LOCAL_ASSET_MANIFEST_SCHEMA]]。
+
+### 默认工作方式
+- 不直接遍历整块本地磁盘。
+- 先查 catalog_version 与轻量 manifest 分片。
+- 当前镜头只取相关角色/场景/类型的少量候选，默认不超过 5 个。
+- 需要确认真图/真视频时，再请求本地 watcher 核验候选原文件，默认不超过 2 个。
+- manifest 无变化且当前任务无素材需求时 NO_OP。
+
+### 去重与身份
+- 内容 hash 相同视为精确重复，只保留 canonical asset。
+- 近似重复只标候选，不自动删除。
+- 无法从真实证据确认角色/场景身份时标 UNKNOWN，不根据文件名强猜。
+- 同角色/场景已有 LOCKED 主参考时，新发现素材不得自动顶替。
+
+### 隐私
+- 仓库只保存 root_id + relative_path。
+- 本机绝对目录映射只留在本地 watcher 配置。
