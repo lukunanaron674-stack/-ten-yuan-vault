@@ -100,3 +100,12 @@
 6. opening_state 已确定
 7. continuity_check != FAIL
 8. 导演确认本 job_id 仍为当前任务
+
+
+## 讨论状态
+- discussion_id
+- discussion_status: NOT_STARTED | ACTIVE | RESOLVED | DIRECTOR_REQUIRED
+- rounds_used
+- conflict_fields
+- decision_id
+- final_patch
