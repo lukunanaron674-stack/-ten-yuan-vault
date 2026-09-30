@@ -31,4 +31,6 @@
 - [[DISCUSSION_PROTOCOL]]
 - [[DIRECTOR_DECISION_SCHEMA]]
 
-用于主题 / 剧本 / 十元 / 分镜之间的结构化讨论，以及无法自动收敛时的导演裁决。
+用于主题 / 世界观（条件触发）/ 剧本 / 十元 / 分镜之间的结构化讨论，以及无法自动收敛时的导演裁决。
+
+世界观检查不是每镜必跑。只有 `world_gate = REQUIRED` 才调用 [[../01_Agent库/AG-10_世界观Agent]]；普通镜头直接 BYPASS。
