@@ -34,3 +34,10 @@ ASSET_RESULT：素材 ID、用途、文件路径、版本、待审核状态。
 - 审核/返工统一使用 [[../04_协议/REVIEW_SCHEMA]] 与 [[../04_协议/RETRY_PACKET_SCHEMA]]。
 - 每小时学习统一使用 [[../04_协议/LEARNING_TASK_SCHEMA]]。
 - 只填写本岗位允许字段，禁止通过自然语言越权改写其他 Agent 结果。
+
+
+## 第六轮｜生产闭环职责
+- 只接受 ASSET_MISSING 中明确列出的缺口。
+- 输出遵循 [[../04_协议/ASSET_RESULT_SCHEMA]]。
+- 新生成素材默认 `style_review_status = PENDING`，禁止直接交给 H3。
+- 生成完成后下一跳固定为 [[../04_协议/STYLE_REVIEW_SCHEMA]]。
