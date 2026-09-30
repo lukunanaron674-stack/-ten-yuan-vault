@@ -62,3 +62,9 @@ THEME_AUDIT 默认最多 1 轮；不能把剧本拖进无限哲学会议。
 - 只提交 `theme_result` delta，不直接推进 current_shot_id，不覆盖 script_result / tenyuan_result / storyboard_result。
 - 返回结果若基于旧版本状态，必须标记 `STALE_RESULT`。
 - 正式镜头 PASS 后，若主题状态发生不可逆变化，应在 closing_state 中留下可供下一镜继承的主题压力变化，而不是另建平行状态。
+
+## 任务接力协议
+- 执行前必须读取 [[../04_协议/AGENT_IO_PROTOCOL]]。
+- 正式镜头统一使用 [[../04_协议/SHOT_TASK_SCHEMA]] 的“主题 Agent 填写”区。
+- 每小时学习统一使用 [[../04_协议/LEARNING_TASK_SCHEMA]] 的 `theme_view`。
+- 只填写本岗位允许字段；若主题定义与剧情执行冲突，返回 `MODIFY` 或 `REPLAN` 给导演，不直接改 script_result。
