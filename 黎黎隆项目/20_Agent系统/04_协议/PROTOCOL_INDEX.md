@@ -35,3 +35,12 @@
 用于主题 / 世界观（条件触发）/ 剧本 / 十元 / 分镜之间的结构化讨论，以及无法自动收敛时的导演裁决。
 
 世界观检查不是每镜必跑。只有 `world_gate = REQUIRED` 才调用 [[../01_Agent库/AG-10_世界观Agent]]；普通镜头直接 BYPASS。
+
+
+## 第六轮生产闭环
+- [[PRODUCTION_LOOP_PROTOCOL]]
+- [[ASSET_RESULT_SCHEMA]]
+- [[STYLE_REVIEW_SCHEMA]]
+- [[RENDER_TASK_SCHEMA]]
+
+执行 Agent 必须通过上述结构化包接力，不允许把“文件已写入”误判为“执行已开始”。
