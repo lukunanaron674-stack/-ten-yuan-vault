@@ -42,3 +42,22 @@ PASS / RETRY / REPLAN
 - PASS 必须返回 closing_state 与 continuity_check。
 - RETRY 必须生成 [[../04_协议/RETRY_PACKET_SCHEMA]]，只修改失败项。
 - 不得自行创建 next_shot_id；只有导演在 PASS 后合并并推进下一镜。
+
+
+## 第七轮｜上下文工程
+> 本节优先级高于上方旧“知识索引入口”的默认全量读取方式。
+
+默认启动只读：
+1. [[../02_共享状态/PROJECT_STATE.json]]
+2. 当前任务包
+3. [[../05_索引/INDEX_LITE]]
+4. [[../03_知识库/上下文提炼/CTX-08_视频审核]]
+
+并遵守 [[../04_协议/CONTEXT_DISTILLATION_PROTOCOL]]。
+
+规则：
+- 旧 `IDX-xx` 只作为按需回源导航，不再默认 P0→P1→P2 全读。
+- 默认最多打开 3 个 distilled brief、2 个原始 source。
+- source 未变且 brief 未 stale，不重复读原文。
+- 跨 Agent 需要信息时优先读取对方结构化 result/delta，不读取对方完整知识索引。
+- 当前任务不涉及某主题时，不加载该主题知识。
