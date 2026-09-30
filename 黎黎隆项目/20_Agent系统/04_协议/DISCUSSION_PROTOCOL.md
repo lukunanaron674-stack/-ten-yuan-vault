@@ -1,14 +1,24 @@
 # DISCUSSION_PROTOCOL｜内容 Agent 讨论协议 v1
 
 ## 目标
-让主题 / 剧本 / 十元 / 分镜围绕同一任务收敛，而不是各自重写整张镜头卡。
+让主题 / 世界观（条件触发）/ 剧本 / 十元 / 分镜围绕同一任务收敛，而不是各自重写整张镜头卡。
 
 ## 默认顺序
 1. 主题 Agent：THEME_PLAN
-2. 剧本 Agent：SCRIPT_PROPOSAL
-3. 十元 Agent：TENYUAN_REVIEW
-4. 分镜 Agent：STORYBOARD_REVIEW
-5. 导演 Agent：MERGE / DECIDE
+2. 世界观 Agent：WORLD_CHECK（仅 world_gate = REQUIRED 时）
+3. 剧本 Agent：SCRIPT_PROPOSAL
+4. 十元 Agent：TENYUAN_REVIEW
+5. 分镜 Agent：STORYBOARD_REVIEW
+6. 导演 Agent：MERGE / DECIDE
+
+### 世界观门禁
+以下任一成立时，`world_gate = REQUIRED`：
+- 镜头依赖区域规则、文明机制、组织制度、城市设施、技术/魔法规则；
+- 剧情要调用一个尚未在 Canon 中确认的世界规则；
+- 本镜头会改变世界设定的长期状态；
+- Agent 对“这个世界允许不允许这样发生”出现冲突。
+
+否则 `world_gate = BYPASS`，世界观 Agent 不参与本镜讨论。
 
 必要时允许一次：
 SCRIPT_PROPOSAL → THEME_AUDIT → SCRIPT_REVISION
@@ -34,6 +44,17 @@ SCRIPT_PROPOSAL → THEME_AUDIT → SCRIPT_REVISION
 - 重写完整剧情
 - 定十元
 - 定机位
+
+### 世界观 Agent
+可以质疑：
+- 剧情是否违反当前世界 Canon、区域规则或文明机制
+- 新机制是否其实是重复设定或下位应用
+- 设定调用是否缺少明确 canon_refs
+不可以：
+- 改主题问题
+- 为了服务单镜临时发明高体量世界规则
+- 改十元 canonical
+- 替剧本写事件链或替分镜定机位
 
 ### 剧本 Agent
 可以质疑：
@@ -61,6 +82,7 @@ SCRIPT_PROPOSAL → THEME_AUDIT → SCRIPT_REVISION
 
 ## 讨论轮数
 - 普通讨论最多 3 轮
+- WORLD_CHECK 最多 1 轮；若需要新增世界规则，转 WORLD_PROPOSAL，不在镜头讨论里无限扩写
 - THEME_AUDIT 最多 1 轮
 - 同一字段连续两轮没有新证据时，禁止继续重复争论
 
@@ -73,6 +95,7 @@ SCRIPT_PROPOSAL → THEME_AUDIT → SCRIPT_REVISION
 ## 必须导演裁决
 以下任一出现时停止讨论：
 - canonical 冲突
+- 世界规则冲突或需要新增高体量世界规则
 - 角色核心设定冲突
 - 连续性冲突
 - story_goal 被要求改变
@@ -101,3 +124,5 @@ SCRIPT_PROPOSAL → THEME_AUDIT → SCRIPT_REVISION
 - unresolved_fields
 - director_decision_required
 - final_patch
+- world_gate: REQUIRED | BYPASS
+- world_check: PASS | MODIFY | DIRECTOR_REQUIRED | NOT_APPLICABLE
