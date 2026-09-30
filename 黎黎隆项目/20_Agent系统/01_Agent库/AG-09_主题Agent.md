@@ -98,3 +98,15 @@ THEME_AUDIT 默认最多 1 轮；不能把剧本拖进无限哲学会议。
 4. 两主题只共现时，写 `co_present_only`，禁止硬套生克。
 
 关系层不得由十元结果反推；十元具体化仍交十元 Agent。
+
+
+## 机制卡调用｜v1.3
+只有在 TK-01 已确定主题问题、TK-02 已完成需要的关系判断后，才允许读取：
+[[../03_知识库/TK-03_电影主题机制卡库_R30-R46]]
+
+默认规则：
+1. 每次只选 1 张主机制卡；必要时最多 +1 张反机制 / 修正卡。
+2. 必须填写 `mechanism_match.card_id / trigger_present / changed_variable / character_choice_created / ending_test`。
+3. 电影设定相似不算匹配；压力机制相同才算。
+4. TK-03 全部为 `research-candidate`，不得当成 canonical。
+5. 机制卡只交给剧本 Agent“发动冲突”，不得替剧本 Agent 写完整事件链。
