@@ -72,3 +72,23 @@
 `主题 → 世界观门禁（条件）→ 剧本 → 十元 → 分镜 → 导演合并`
 
 世界观 Agent 不作为每镜固定会议成员。只有 `world_gate = REQUIRED` 才进入；若发现需要新增高体量世界规则，本镜必须 REPLAN，先完成世界规则提案与 Canon 登记，禁止“拍到一半顺手改宇宙法则”。
+
+
+## 第六轮生产闭环
+执行链：
+`SHOT_READY → ASSET_CHECK → IMAGE_GENERATE(缺素材) → STYLE_REVIEW → RENDER_DISPATCH → H3 → VIDEO_REVIEW → PASS/RETRY/REPLAN/BLOCKED → NEXT_SHOT`
+
+核心协议：
+- [[04_协议/PRODUCTION_LOOP_PROTOCOL]]
+- [[04_协议/ASSET_RESULT_SCHEMA]]
+- [[04_协议/STYLE_REVIEW_SCHEMA]]
+- [[04_协议/RENDER_TASK_SCHEMA]]
+
+硬门禁：
+- 正式生产必须有 director production goal。
+- 新生成素材必须先过静态风格审核。
+- GitHub 任务写入不等于 H3 开始；收到 executor receipt 才进入 RENDERING。
+- 视频审核 PASS 才允许继承 closing_state 并创建下一镜。
+- H3 执行错误最多 2 次执行级重试；画面 RETRY 独立最多 3 次。
+
+第六轮干跑使用 `TEST-20261001-0535-XNZX-01`：真实停在 ASSET_MISSING。CH-003 角色卡明确原稿图片尚未归档到 GitHub，且“付费魔法入口”场景未检索到，因此系统没有伪造素材或伪报渲染。
