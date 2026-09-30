@@ -22,7 +22,11 @@ IDLE
 → TENYUAN_READY
 → STORYBOARD_READY
 → ASSET_CHECK
-→ ASSET_MISSING | ASSET_READY
+→ ASSET_MISSING | ASSET_PENDING_REVIEW | ASSET_READY
+→ IMAGE_GENERATING (conditional)
+→ STYLE_REVIEWING (conditional)
+→ ASSET_READY
+→ RENDER_DISPATCH
 → RENDER_QUEUED
 → RENDERING
 → RENDER_DONE
@@ -36,7 +40,11 @@ IDLE
 - THEME_READY → 若 `world_gate = REQUIRED`，世界观 Agent 执行 WORLD_CHECK，通过后进入 WORLD_READY；若 `world_gate = BYPASS`，直接交给剧本 Agent。
 - WORLD_READY → 剧本 Agent 使用已确认 Canon / 区域规则 / 允许机制生成事件。
 - THEME_READY → 剧本 Agent 把主题问题转成人物困境与事件。
-- ASSET_MISSING → 素材 Agent / 生图 Agent。
+- ASSET_MISSING → 先由素材 Agent确认缺口；只有真实缺失才进入 IMAGE_GENERATING。
+- IMAGE_GENERATING → STYLE_REVIEWING；新图不得直接进入 H3。
+- STYLE_REVIEWING PASS → 回 ASSET_CHECK，合并 approved_assets。
+- RENDER_DISPATCH → 生成 RENDER_TASK；任务文件写入后仍不可视为 RENDERING。
+- 收到 executor_receipt → RENDERING。
 - RETRY → 保留已正确字段，只调整失败项，再进入 RENDER_QUEUED。
 - REPLAN → 按失败字段回到主题 / 剧本 / 十元 / 分镜对应阶段，不默认整条重跑。
 - PASS → 更新 closing_state，并把它复制为下一镜 opening_state。
@@ -87,3 +95,12 @@ IDLE
 - 依赖世界规则：`world_gate = REQUIRED`，必须先得到 `world_result`。
 - 若 `new_world_rule_required = true`：进入 REPLAN / BLOCKED，不得进入 RENDER_QUEUED。
 - 新规则需走 [[../04_协议/WORLD_PROPOSAL_SCHEMA]]，完成十元复核与导演裁决后，才允许登记为可调用规则。
+
+
+## 第六轮执行门禁
+完整执行流读取 [[../04_协议/PRODUCTION_LOOP_PROTOCOL]]。
+- ASSET_READY 必须满足 [[../04_协议/ASSET_RESULT_SCHEMA]]。
+- 新素材必须通过 [[../04_协议/STYLE_REVIEW_SCHEMA]]。
+- H3 必须使用 [[../04_协议/RENDER_TASK_SCHEMA]]。
+- GitHub queue_write_status = WRITTEN 不能推进到 RENDERING；必须有 executor_receipt。
+- PASS 才能创建 next_shot_id；RETRY / REPLAN / BLOCKED 均不得前移镜头指针。
