@@ -69,3 +69,22 @@
 - 只有视频审核 PASS 才允许 current_shot DONE 并创建 next_shot_id。
 - RETRY / REPLAN / BLOCKED 时禁止推进镜头指针。
 - 正式 production goal 未设置时，整套闭环只能在 TEST 轨干跑，不得偷偷启动正式剧情。
+
+
+## 第七轮｜上下文工程
+> 本节优先级高于上方旧“知识索引入口”的默认全量读取方式。
+
+默认启动只读：
+1. [[../02_共享状态/PROJECT_STATE.json]]
+2. 当前任务包
+3. [[../05_索引/INDEX_LITE]]
+4. [[../03_知识库/上下文提炼/CTX-00_导演]]
+
+并遵守 [[../04_协议/CONTEXT_DISTILLATION_PROTOCOL]]。
+
+规则：
+- 旧 `IDX-xx` 只作为按需回源导航，不再默认 P0→P1→P2 全读。
+- 默认最多打开 3 个 distilled brief、2 个原始 source。
+- source 未变且 brief 未 stale，不重复读原文。
+- 跨 Agent 需要信息时优先读取对方结构化 result/delta，不读取对方完整知识索引。
+- 当前任务不涉及某主题时，不加载该主题知识。
