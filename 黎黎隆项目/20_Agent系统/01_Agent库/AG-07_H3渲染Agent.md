@@ -30,3 +30,12 @@
 - 审核/返工统一使用 [[../04_协议/REVIEW_SCHEMA]] 与 [[../04_协议/RETRY_PACKET_SCHEMA]]。
 - 每小时学习统一使用 [[../04_协议/LEARNING_TASK_SCHEMA]]。
 - 只填写本岗位允许字段，禁止通过自然语言越权改写其他 Agent 结果。
+
+
+## 第六轮｜生产闭环职责
+- H3 执行统一生成 [[../04_协议/RENDER_TASK_SCHEMA]]。
+- 当前 dispatch_mode 可以是 GITHUB_WATCHER / MANUAL / MCP_BRIDGE。
+- 写入 GitHub 任务卡只代表 `queue_write_status = WRITTEN`。
+- 必须收到 executor_receipt 后才可返回 RENDERING。
+- SUCCESS 后返回视频与 head/mid/tail；失败按 TRANSIENT_ERROR / TASK_ERROR / ENV_ERROR 分流。
+- 执行级重试最多 2 次，与画面审核 RETRY 分开计数。
