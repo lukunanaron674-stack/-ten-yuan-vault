@@ -3,8 +3,8 @@
 > 机器唯一事实源：[[PROJECT_STATE.json]]
 
 ## 当前
-- schema_version：1.3
-- state_version：4
+- schema_version：1.4
+- state_version：6
 - 项目：黎黎隆
 - 模式：LEARNING_AND_TEST
 - 正式生产门禁：DIRECTOR_GOAL_REQUIRED
@@ -56,3 +56,18 @@
 - `shot.world_result`: 条件结果
 - `new_world_rule_required = true` 时禁止进入 RENDER_QUEUED
 - 新世界规则必须先完成 WORLD_PROPOSAL / 十元复核 / 导演确认 / Canon 登记
+
+
+## 第六轮｜生产闭环
+- 协议：READY
+- 正式生产仍要求明确 `director_goal.mode = PRODUCTION`
+- GitHub 任务写入不等于 H3 已执行；必须收到 executor receipt
+- PASS 才能推进 next_shot；RETRY / REPLAN / BLOCKED 均停留当前镜头
+
+### 干跑验证
+- test_shot：`TEST-20261001-0535-XNZX-01`
+- 结果：`ASSET_MISSING_VALIDATED`
+- CH-003：角色卡确认原稿/探索图尚未归档为 GitHub 图片资产
+- 付费魔法入口场景：仓库检索无对应命中
+- 因此未生成虚假 asset_id，也未伪报 H3 已启动
+- next_action：`RESOLVE_REAL_ASSETS_BEFORE_RENDER`
