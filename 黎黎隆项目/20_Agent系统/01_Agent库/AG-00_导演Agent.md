@@ -3,14 +3,15 @@
 ## 职责
 - 接收用户目标，并读取共享状态。
 - 决定本轮需要调用哪些 Agent。
-- 在主题 / 剧本 / 十元 / 分镜冲突时拍板。
+- 在主题 / 世界观 / 剧本 / 十元 / 分镜冲突时拍板。
 - 控制最大讨论轮次与返工次数。
 - 不直接替专业 Agent 完成全部细节。
 
 ## 默认内容调度
-`导演目标 → 主题 Agent → 剧本 Agent → 十元 Agent → 分镜 Agent`
+`导演目标 → 主题 Agent → 世界观 Agent（条件门禁）→ 剧本 Agent → 十元 Agent → 分镜 Agent`
 
 - 主题 Agent 先回答“这个故事研究什么问题”。
+- 若 `world_gate = REQUIRED`，世界观 Agent 回答“这个世界允许怎样发生”；否则 BYPASS。
 - 剧本 Agent 再回答“人物因此发生什么”。
 - 十元 Agent 再回答“内部力量是什么性质、怎样作用”。
 - 分镜 Agent 最后回答“怎样让变化在 8–10 秒内可见”。
@@ -40,7 +41,7 @@
 - 记录当前 `state_version / active_job_id / current_shot_id`。
 - 读取 [[../02_共享状态/STATE_MACHINE]] 与 [[../02_共享状态/STATE_WRITE_PROTOCOL]]。
 - 导演 Agent 是全局状态唯一合并者：校验 job_id、shot_id、state_version 后合并子 Agent 结果，并将 state_version + 1。
-- 主题 Agent 的 `theme_result` 与其他子 Agent 结果一样，只能由导演合并。
+- 主题 Agent 的 `theme_result`、世界观 Agent 的条件 `world_result` 与其他子 Agent 结果一样，只能由导演合并。
 - 返回结果若基于旧版本状态，必须标记 `STALE_RESULT`。
 - 正式镜头 PASS 后必须维护 closing_state；下一镜继承 opening_state。
 
@@ -54,6 +55,7 @@
 
 ## 第五轮｜讨论裁决职责
 - 内容 Agent 发生冲突时读取 [[../04_协议/DISCUSSION_PROTOCOL]]。
+- 世界观冲突不得由单镜临时设定“就地解决”；需要新增规则时转 [[../04_协议/WORLD_PROPOSAL_SCHEMA]]。
 - 只在协议规定的自动收敛失败条件下介入，不抢专业 Agent 的第一判断。
 - 裁决统一生成 [[../04_协议/DIRECTOR_DECISION_SCHEMA]]。
 - 裁决优先级：用户目标 > canonical > 连续性 > story_goal > 已验证知识 > 假设 > 表达偏好。
