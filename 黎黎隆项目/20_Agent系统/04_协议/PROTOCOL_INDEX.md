@@ -72,3 +72,10 @@
 - [[../06_验证/ROUND8_CONTINUITY_VALIDATION_20261001]]
 
 历史真实 H3 回放用于验证协议，但旧 revision 没有标准 closing/opening state 时只允许判 AMBIGUOUS，不得伪报连续 PASS。
+
+## 本地素材库
+- [[LOCAL_ASSET_LIBRARY_PROTOCOL]]
+- [[LOCAL_ASSET_MANIFEST_SCHEMA]]
+- [[ASSET_RESULT_SCHEMA]]
+
+本地 watcher 负责扫描真实文件，AG-04 只消费轻量 manifest 与少量候选。默认不把整块素材盘塞进上下文，也不要求把图片本体上传 GitHub。
