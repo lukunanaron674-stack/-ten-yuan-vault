@@ -30,6 +30,7 @@
 ## 内容协作
 - [[DISCUSSION_PROTOCOL]]
 - [[DIRECTOR_DECISION_SCHEMA]]
+- [[WORLD_PROPOSAL_SCHEMA]]
 
 用于主题 / 世界观（条件触发）/ 剧本 / 十元 / 分镜之间的结构化讨论，以及无法自动收敛时的导演裁决。
 
