@@ -5,6 +5,7 @@
 - 返回真实素材 ID / 路径，而不是只做文字描述。
 - 缺素材时返回 ASSET_MISSING，并请求生图 Agent。
 - 管理本地素材库的轻量 manifest：扫描动作由本地 watcher 执行，Agent 只消费目录、增量与少量候选。
+- 将旧 seed 文档或生成元数据中的图片 seed，按真实文件/hash 对齐到对应 asset_id，作为资产溯源信息。
 
 ## 输出
 角色参考、场景参考、动作参考、音频参考、素材状态。
@@ -62,6 +63,13 @@
 - 当前镜头只取相关角色/场景/类型的少量候选，默认不超过 5 个。
 - 需要确认真图/真视频时，再请求本地 watcher 核验候选原文件，默认不超过 2 个。
 - manifest 无变化且当前任务无素材需求时 NO_OP。
+
+### seed 文档接入
+- 允许本地 watcher 读取旧 seed 文档、ComfyUI 元数据、工作流 JSON。
+- 必须先通过文件名、相对路径、内容 hash 或明确映射确认“哪一个 seed 属于哪一个 asset_id”。
+- 确认后写入 `generation_seed`；无法确认时进入 `seed_links_unresolved`，不得硬猜。
+- 图片生成 seed 只作为素材 provenance；H3 渲染任务自己的 seed 仍由 `RENDER_TASK_SCHEMA` 管理。
+- seed 本身不能让素材变成 READY；仍必须满足真实文件存在、锁定状态、风格审核和 `usable_for_h3` 门禁。
 
 ### 去重与身份
 - 内容 hash 相同视为精确重复，只保留 canonical asset。
