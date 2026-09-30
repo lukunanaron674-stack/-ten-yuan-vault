@@ -94,38 +94,18 @@ cd ..\..
 
 ```powershell
 cd models\diffusion_models
-# 从 Hugging Face 下载 LTX-Video 2B
-# 方式A：用 huggingface-cli（推荐）
 pip install huggingface_hub
 huggingface-cli download Lightricks/LTX-Video --local-dir .\LTX-Video --include "*.safetensors" "*.json"
-
-# 方式B：手动下载放到 models/diffusion_models/LTX-Video/
-# https://huggingface.co/Lightricks/LTX-Video
 ```
-
-> LTX-Video 2B 约 5GB，下载需要 10-20 分钟。
 
 ---
 
 ## 6. 安装 AnimateDiff 节点
 
 ```powershell
-# 在 ComfyUI Manager 中搜索 "AnimateDiff Evolved" 安装
-# 或者手动：
 cd custom_nodes
 git clone https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git
 cd ..
-```
-
-### 下载 AnimateDiff 运动模块
-
-```powershell
-cd models\animatediff_models
-# 下载运动适配器
-huggingface-cli download guoyww/animatediff-motion-adapter-v1-5-2 --local-dir .
-
-# 下载 ByteDance 加速版
-huggingface-cli download ByteDance/AnimateDiff-Lightning --local-dir .\AnimateDiff-Lightning
 ```
 
 ---
@@ -133,14 +113,13 @@ huggingface-cli download ByteDance/AnimateDiff-Lightning --local-dir .\AnimateDi
 ## 7. 验证安装
 
 ```powershell
-# 启动 ComfyUI
-python main.py --highvram
+# 默认只监听本机回环地址，不暴露到局域网或公网
+python main.py --highvram --listen 127.0.0.1
 
 # 浏览器打开 http://127.0.0.1:8188
-# 加载 LTX-Video 工作流测试
 ```
 
-> `--highvram` 适合 8GB 显存，把更多模型常驻 GPU。
+> 安全说明：不要把 ComfyUI 直接绑定到 `0.0.0.0` 后再映射公网端口。若确实需要远程访问，应通过 VPN、SSH 隧道或带认证的反向代理访问。
 
 ---
 
@@ -156,36 +135,17 @@ python main.py --highvram
 | 输出视频缓存 | ~5GB（预留） |
 | **合计** | **~17.5GB** |
 
-当前可用 22GB，安装后剩余约 4.5GB——偏紧。建议：
-- 安装完成后清理 `pip cache`（释放 1-2GB）
-- 定期清理 ComfyUI `output/` 目录
-- Wan2.2/HunyuanVideo 大模型不下载到本地，走云端
-
 ---
 
 ## 9. 导入《灰塔》工作流
 
-安装完成后，加载预设工作流 JSON：
-```
-（后续提供 ComfyUI workflow JSON）
-```
+安装完成后，加载预设工作流 JSON。
 
 ---
 
 ## 云端补充（RunPod）
 
-当需要 Wan2.2-14B 精修时：
-
-```text
-1. 注册 runpod.io
-2. 选 RTX A6000（48GB）模板
-3. 选 ComfyUI 模板（一键启动）
-4. 上传《灰塔》分镜的 Wan2.2 prompt
-5. 生成后下载视频 → 导入本地剪映
-6. 关机（按小时计费 ~$0.79/h）
-
-估算：7 镜 × 8分钟/镜 ≈ 1小时 ≈ $0.79
-```
+需要云端精修时，仍然不要直接把 ComfyUI 管理端口暴露公网。优先使用平台自带认证入口、VPN 或 SSH 隧道。
 
 ---
 
@@ -196,7 +156,7 @@ python main.py --highvram
 ```powershell
 cd C:\AI-Tools\ComfyUI
 .\venv\Scripts\activate
-python main.py --highvram --listen 0.0.0.0
+python main.py --highvram --listen 127.0.0.1
 # 打开 http://127.0.0.1:8188
 ```
 
