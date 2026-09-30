@@ -3,8 +3,8 @@
 > 机器唯一事实源：[[PROJECT_STATE.json]]
 
 ## 当前
-- schema_version：1.4
-- state_version：6
+- schema_version：1.6
+- state_version：8
 - 项目：黎黎隆
 - 模式：LEARNING_AND_TEST
 - 正式生产门禁：DIRECTOR_GOAL_REQUIRED
@@ -71,3 +71,23 @@
 - 付费魔法入口场景：仓库检索无对应命中
 - 因此未生成虚假 asset_id，也未伪报 H3 已启动
 - next_action：`RESOLVE_REAL_ASSETS_BEFORE_RENDER`
+
+
+## 第七轮｜自动调度 + 上下文工程
+- 调度器：READY
+- 默认入口：`05_索引/INDEX_LITE.md`
+- 11 个 Agent 均已绑定各自 CTX 工作记忆
+- 旧 IDX：仅按需回源，不再默认全读
+- 每 tick：最多 1 个 primary Agent
+- 默认上下文预算：最多 3 个 distilled brief + 2 个 raw source
+- 相同 state_hash：NO_OP
+
+默认读取链已经改为：
+`PROJECT_STATE → 当前任务 → INDEX_LITE → 当前 Agent CTX → 必要时 SOURCE`
+
+## 第八轮｜连续镜头门禁
+- 连续性协议：READY
+- 历史真实 H3 回放：AMBIGUOUS_VALIDATED
+- 原因：旧 B 端确有真实渲染证据，但旧任务没有标准化 previous_shot_id / lineage_id / closing_state→opening_state
+- 新生产从现在起强制：上一镜 review=PASS 后，`previous.closing_state = next.opening_state`
+- revision / retry 不得冒充剧情下一镜
