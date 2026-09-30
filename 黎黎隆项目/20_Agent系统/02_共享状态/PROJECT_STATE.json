@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0",
-  "state_version": 1,
+  "schema_version": "1.1",
+  "state_version": 2,
   "project_id": "LLL",
   "project_name": "黎黎隆",
   "pipeline": "B端_Agent",
@@ -10,56 +10,60 @@
   "current_scene_id": null,
   "current_shot_id": null,
   "active_job_id": null,
-  "last_writer": "system_init_round3",
-  "updated_at": "2026-10-01T03:00:00+08:00",
-  "scene": {
-    "goal": null,
-    "target_duration_sec": null,
-    "completed_duration_sec": 0,
-    "status": "IDLE"
-  },
+  "last_writer": "director_round3_finalize",
+  "updated_at": "2026-10-01T04:57:00+08:00",
+  "director_goal": {"goal_id": null, "mode": "NONE", "text": null, "source": null},
+  "cycle": {"cycle_id": null, "mode": "LEARNING_ONLY", "status": "IDLE", "started_at": null, "completed_at": null},
+  "scene": {"goal": null, "target_duration_sec": null, "completed_duration_sec": 0, "status": "IDLE"},
   "shot": {
     "status": "IDLE",
     "duration_sec": 10,
+    "plan_version": 0,
+    "attempt_no": 0,
     "previous_shot_id": null,
     "next_shot_id": null,
     "opening_state": null,
     "closing_state": null,
+    "continuity_check": "NOT_REQUIRED",
     "script_result": null,
     "tenyuan_result": null,
     "storyboard_result": null
   },
-  "assets": {
-    "status": "UNCHECKED",
-    "required": [],
-    "resolved": [],
-    "missing": []
-  },
+  "assets": {"status": "UNCHECKED", "required": [], "resolved": [], "missing": [], "pending_style_review": []},
   "render": {
     "status": "NOT_STARTED",
     "render_id": null,
+    "queue_task_id": null,
     "output_video": null,
     "head_frame": null,
     "mid_frame": null,
     "tail_frame": null,
-    "params": null
+    "params": null,
+    "last_error": null
   },
   "review": {
     "status": "NOT_STARTED",
     "decision": null,
     "retry_count": 0,
     "max_retry_count": 3,
+    "failed_dimensions": [],
     "issues": [],
     "instructions": []
   },
   "learning": {
     "hourly_cycle_enabled": true,
+    "status": "IDLE",
+    "learning_run_id": null,
     "last_topic_script": null,
     "last_topic_tenyuan": null,
     "last_topic_storyboard": null,
     "last_cross_entry": null,
-    "latest_decision": null
+    "latest_decision": null,
+    "test_shot_id": null
   },
+  "pending_deltas": [],
+  "blockers": [],
+  "escalation": {"required": false, "owner": null, "reason": null},
   "next_action": "WAIT_FOR_DIRECTOR_GOAL_OR_HOURLY_LEARNING",
   "assigned_agent": "director"
 }
