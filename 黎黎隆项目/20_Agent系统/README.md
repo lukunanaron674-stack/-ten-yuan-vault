@@ -92,3 +92,25 @@
 - H3 执行错误最多 2 次执行级重试；画面 RETRY 独立最多 3 次。
 
 第六轮干跑使用 `TEST-20261001-0535-XNZX-01`：真实停在 ASSET_MISSING。CH-003 角色卡明确原稿图片尚未归档到 GitHub，且“付费魔法入口”场景未检索到，因此系统没有伪造素材或伪报渲染。
+
+
+## 第七轮｜自动调度与上下文工程
+自动执行不再是“每小时把所有 Agent 叫醒”，而是：
+`PROJECT_STATE → AUTO_DISPATCH → 选 1 个 primary Agent → INDEX_LITE → 当前 Agent CTX → 必要时回源`
+
+上下文层：
+- L1：INDEX_LITE，只负责路由
+- L2：CTX / distilled brief，默认工作记忆
+- L3：原始 Canon / P0 / P1 / P2，仅在证据不足、hash 变化或冲突时打开
+
+旧 IDX 不删除，但降级为按需证据导航。11 个 Agent 均已绑定自己的 CTX 卡。
+默认每 tick 最多 3 个提炼 brief、2 个 raw source；相同 state_hash 直接 NO_OP。
+
+## 第八轮｜连续镜头验证
+真实历史 H3 记录被用于回放。结论不是硬凑 PASS：
+- MOUSE R35/R36、LILLONG R01/R02 均能证明旧 B 端真实执行过；
+- 但旧任务缺少标准化 shot-to-shot continuity state，因此历史“剧情连续性”判为 AMBIGUOUS；
+- 新生产强制 `PASS.closing_state → next.opening_state`，并要求 lineage_id / previous_shot_id；
+- revision / retry 与 story continuity 严格分离。
+
+因此第1–8轮主线已形成：知识路由、状态机、协议、讨论裁决、生产闭环、自动调度、上下文工程、连续性门禁。
