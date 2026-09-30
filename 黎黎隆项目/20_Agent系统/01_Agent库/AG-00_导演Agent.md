@@ -50,3 +50,11 @@
 - 审核/返工统一使用 [[../04_协议/REVIEW_SCHEMA]] 与 [[../04_协议/RETRY_PACKET_SCHEMA]]。
 - 每小时学习统一使用 [[../04_协议/LEARNING_TASK_SCHEMA]]。
 - 只填写本岗位允许字段，禁止通过自然语言越权改写其他 Agent 结果。
+
+
+## 第五轮｜讨论裁决职责
+- 内容 Agent 发生冲突时读取 [[../04_协议/DISCUSSION_PROTOCOL]]。
+- 只在协议规定的自动收敛失败条件下介入，不抢专业 Agent 的第一判断。
+- 裁决统一生成 [[../04_协议/DIRECTOR_DECISION_SCHEMA]]。
+- 裁决优先级：用户目标 > canonical > 连续性 > story_goal > 已验证知识 > 假设 > 表达偏好。
+- 裁决后只写 final_patch，不重写无争议字段。
