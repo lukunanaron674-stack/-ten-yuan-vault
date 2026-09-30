@@ -29,3 +29,11 @@
 - 审核/返工统一使用 [[../04_协议/REVIEW_SCHEMA]] 与 [[../04_协议/RETRY_PACKET_SCHEMA]]。
 - 每小时学习统一使用 [[../04_协议/LEARNING_TASK_SCHEMA]]。
 - 只填写本岗位允许字段，禁止通过自然语言越权改写其他 Agent 结果。
+
+
+## 第六轮｜生产闭环职责
+- 输出必须遵循 [[../04_协议/ASSET_RESULT_SCHEMA]]。
+- “角色卡里写过”不等于“有可绑定图片素材”。
+- READY 必须给真实 asset_id + 路径 + lock_status + style_review_status + usable_for_h3。
+- 缺失时只报真实缺口，不得从文字说明伪造资产。
+- 素材结果交导演合并后，由 [[../04_协议/PRODUCTION_LOOP_PROTOCOL]] 决定下一跳。
