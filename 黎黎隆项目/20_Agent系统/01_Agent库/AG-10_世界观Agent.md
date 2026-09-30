@@ -120,3 +120,25 @@ next_frontier: ""
 - Agent 索引只存路由，不复制正文。
 - 新学习先进入世界观增量知识库；真正 KEEP/MERGE 再回写对应世界观正本。
 - 禁止制造 R17/R18 式平行孤立文件。
+
+
+## 第五轮：镜头协作接口
+正式镜头协作统一读取：
+- [[../04_协议/AGENT_IO_PROTOCOL]]
+- [[../04_协议/DISCUSSION_PROTOCOL]]
+- [[../04_协议/SHOT_TASK_SCHEMA]]
+
+### WORLD_CHECK
+仅当 `world_gate = REQUIRED` 时触发。
+输出只回答：
+1. 本镜头依赖哪些 Canon / 区域规则；
+2. 哪些机制允许调用；
+3. 哪些长期规则禁止被本镜临时修改；
+4. 是否需要新增世界规则。
+
+若需要新增世界规则：
+- 标记 `new_world_rule_required = true`；
+- 镜头进入 REPLAN，不得边拍边造 Canon；
+- 转入 WORLD_PROPOSAL → 十元复核 → 导演确认 → 正本登记后再返回镜头流程。
+
+普通镜头必须允许 `world_gate = BYPASS`，不得为了证明岗位存在而强行发言。
