@@ -44,3 +44,16 @@
 - [[RENDER_TASK_SCHEMA]]
 
 执行 Agent 必须通过上述结构化包接力，不允许把“文件已写入”误判为“执行已开始”。
+
+
+## 第七轮自动调度
+- [[AUTO_DISPATCH_PROTOCOL]]
+- [[DISPATCH_TABLE.json]]
+
+导演每个 tick 只选择当前真正需要的 1 个 primary Agent；状态哈希未变化时 NO_OP。
+
+## 第八轮连续镜头验证
+- [[CONTINUOUS_SHOT_VALIDATION_PROTOCOL]]
+- [[../06_验证/ROUND8_CONTINUITY_VALIDATION_20261001]]
+
+连续生产的硬门：上一镜 PASS.closing_state 必须成为下一镜 opening_state；历史 revision 不得冒充剧情连续镜头。
