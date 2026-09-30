@@ -3,8 +3,8 @@
 > 机器唯一事实源：[[PROJECT_STATE.json]]
 
 ## 当前
-- schema_version：1.2
-- state_version：3
+- schema_version：1.3
+- state_version：4
 - 项目：黎黎隆
 - 模式：LEARNING_AND_TEST
 - 正式生产门禁：DIRECTOR_GOAL_REQUIRED
@@ -51,7 +51,7 @@
 - review.failed_dimensions
 
 
-## schema 1.3 预备门禁
+## schema 1.3 世界观门禁
 - `shot.world_gate`: REQUIRED | BYPASS
 - `shot.world_result`: 条件结果
 - `new_world_rule_required = true` 时禁止进入 RENDER_QUEUED
