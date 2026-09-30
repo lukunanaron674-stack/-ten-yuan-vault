@@ -90,3 +90,17 @@ expected_result_type:
 no_op: true|false
 next_state_if_success:
 ```
+
+
+## 上下文工程门控
+调度顺序改为：
+`STATE → 选 Agent → INDEX_LITE → Agent CTX → 必要时 SOURCE`
+
+在选择 primary_agent 后：
+- 只加载该 Agent 的 CTX；
+- 跨域优先消费上游结构化 result/delta；
+- 默认最多 3 个 distilled brief、2 个 raw source；
+- 若 source hash 未变化，不重复全文读取；
+- 若当前状态无变化，则连 CTX 都不重复扩展，直接 NO_OP。
+
+AUTO_DISPATCH 决定“谁上场”；[[CONTEXT_DISTILLATION_PROTOCOL]] 决定“它最少读什么”。
