@@ -7,3 +7,22 @@
 # 根目录粘贴残留
 /未命名.canvas
 /Pasted image *.png
+
+# Secrets / credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+credentials.json
+secrets.json
+*credentials*.json
+*secret*.json
+*.cookie
+cookies.txt
