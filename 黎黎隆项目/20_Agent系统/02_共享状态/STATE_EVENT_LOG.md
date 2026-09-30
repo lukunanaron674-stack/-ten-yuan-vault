@@ -64,3 +64,11 @@ artifacts:
   - 04_协议/RETRY_PACKET_SCHEMA.md
   - 04_协议/LEARNING_TASK_SCHEMA.md
 ```
+
+
+## 2026-10-01｜Round 5 世界观 Agent 接入
+- 确认 AG-10_世界观Agent 已存在并有独立索引。
+- 内容讨论链升级为：主题 → 世界观门禁（条件）→ 剧本 → 十元 → 分镜 → 导演。
+- 新增 world_gate = REQUIRED | BYPASS；普通镜头不强制世界观 Agent 参与。
+- 若 new_world_rule_required = true，镜头必须 REPLAN，禁止直接进入渲染。
+- 新规则需先 WORLD_PROPOSAL → 十元复核 → 导演确认 → Canon 登记，再返回镜头任务。
