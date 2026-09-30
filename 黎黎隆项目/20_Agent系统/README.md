@@ -20,3 +20,16 @@
 - 02_共享状态：当前镜头、上一镜结果、项目进度
 - 03_知识库：剧本 / 十元 / 分镜 / 交叉知识
 - 04_协议：任务卡、审核卡、状态字段
+
+
+## 共享状态架构
+- 机器唯一事实源：`02_共享状态/PROJECT_STATE.json`
+- 人类看板：`02_共享状态/PROJECT_STATE.md`
+- 状态机：`02_共享状态/STATE_MACHINE.md`
+- 写入协议：`02_共享状态/STATE_WRITE_PROTOCOL.md`
+- 连续性：`02_共享状态/CONTINUITY_STATE_SCHEMA.md`
+- 事件账本：`02_共享状态/STATE_EVENT_LOG.md`
+- 学习状态：`02_共享状态/LEARNING_STATE.md`
+
+### 核心原则
+正式生产与每小时学习分离。没有明确导演 production goal 时，每小时循环只产 TEST-SHOT 和知识验证，不得推进正式剧情指针。
