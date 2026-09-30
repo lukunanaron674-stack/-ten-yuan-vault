@@ -14,9 +14,10 @@
 - 下一动作：WAIT_FOR_DIRECTOR_GOAL_OR_HOURLY_LEARNING
 
 ## 内容决策链
-导演 → **主题 Agent（五维）** → 剧本 Agent → 十元 Agent → 分镜 Agent。
+导演 → **主题 Agent（五维）** → **世界观 Agent（条件门禁）** → 剧本 Agent → 十元 Agent → 分镜 Agent。
 
 - 主题：故事研究什么问题。
+- 世界观：仅在 world_gate = REQUIRED 时检查“这个世界允许怎样发生”；普通镜头 BYPASS。
 - 剧本：人物因此发生什么。
 - 十元：内部力量是什么性质、怎样作用。
 - 分镜：怎样把变化做成 8–10 秒可见镜头。
@@ -48,3 +49,10 @@
 - shot.continuity_check
 - render.last_error
 - review.failed_dimensions
+
+
+## schema 1.3 预备门禁
+- `shot.world_gate`: REQUIRED | BYPASS
+- `shot.world_result`: 条件结果
+- `new_world_rule_required = true` 时禁止进入 RENDER_QUEUED
+- 新世界规则必须先完成 WORLD_PROPOSAL / 十元复核 / 导演确认 / Canon 登记
