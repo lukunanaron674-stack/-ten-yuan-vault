@@ -1,38 +1,35 @@
-# PROJECT_STATE｜人类可读状态看板
+# PROJECT_STATE｜状态看板
 
-> **机器唯一事实源**：[[PROJECT_STATE.json]]  
-> 本文件只做 Obsidian 人类查看摘要，不作为自动化主状态。
+> 机器唯一事实源：[[PROJECT_STATE.json]]
 
-## 当前模式
-- project_id: LLL
-- pipeline: B端_Agent
-- run_mode: LEARNING_AND_TEST
-- production_gate: DIRECTOR_GOAL_REQUIRED
-- project_status: ACTIVE
-
-## 正式生产
-- 当前场次：未设置
-- 当前正式镜头：未设置
+## 当前
+- schema_version：1.1
+- state_version：2
+- 项目：黎黎隆
+- 模式：LEARNING_AND_TEST
+- 正式生产门禁：DIRECTOR_GOAL_REQUIRED
+- 正式场次：未设置
+- 正式镜头：未设置
 - 当前任务：无
-- 状态：IDLE
+- 下一动作：WAIT_FOR_DIRECTOR_GOAL_OR_HOURLY_LEARNING
 
-## 每小时学习
-- 已启用：是
-- 无正式导演目标时：只允许生成 TEST-SHOT
-- TEST-SHOT：不得自动推进正式剧情
+## 两条轨道
+- 正式生产：只有导演目标为 PRODUCTION 才可推进正式场次与镜头。
+- 每小时学习：无正式目标时只能产 TEST-SHOT，不得推进正式剧情。
 
-## 状态写入规则
-- 全局状态合并：导演 Agent
-- 剧本 / 十元 / 分镜 / 素材 / H3 / 审核 Agent：只提交自己的 result delta
-- 旧 state_version：标记 STALE_RESULT，不得覆盖当前状态
-- 每次正式状态变化：追加到 [[STATE_EVENT_LOG]]
+## 状态控制
+- 导演 Agent：唯一合并全局状态。
+- 其他 Agent：只提交本岗位 delta。
+- 旧 state_version：STALE_RESULT，不得覆盖。
+- PASS 镜头：closing_state 必须继承给下一镜 opening_state。
+- 同镜头最多 RETRY 3 次，超过后升级导演 / 用户处理。
 
-## 连续性
-PASS 镜头必须写 closing_state；下一镜 opening_state 必须继承它。详见：
-- [[CONTINUITY_STATE_SCHEMA]]
-- [[STATE_MACHINE]]
-- [[STATE_WRITE_PROTOCOL]]
-
-## 下一步
-- next_action: WAIT_FOR_DIRECTOR_GOAL_OR_HOURLY_LEARNING
-- assigned_agent: director
+## 新增防事故字段
+- director_goal
+- cycle
+- pending_deltas
+- blockers
+- escalation
+- shot.continuity_check
+- render.last_error
+- review.failed_dimensions
