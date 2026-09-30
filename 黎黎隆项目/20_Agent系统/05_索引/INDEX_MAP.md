@@ -11,6 +11,7 @@
 ## Agent → 索引
 - 导演 Agent → [[IDX-00_导演Agent索引]]
 - **主题 Agent → [[IDX-06_主题Agent索引]]**
+- **世界观 Agent → [[IDX-07_世界观Agent索引]]**
 - 剧本 Agent → [[IDX-01_剧本Agent索引]]
 - 十元 Agent → [[IDX-02_十元Agent索引]]
 - 分镜 Agent → [[IDX-03_分镜Agent索引]]
@@ -32,3 +33,4 @@
 5. 新结论经过真实镜头验证后，才允许提议回写正式理论库。
 6. 主题 Agent 不直接拿十元符号生成主题；十元 Agent 不反向覆盖主题问题。
 7. 电影主题研究属于 P2 研究层，与五维 P0 正本冲突时必须以 P0 为准。
+8. 世界观 Agent 只通过索引读取世界总纲、三色正本与十元 Canon；不得复制整库或从案例反推 canonical。
