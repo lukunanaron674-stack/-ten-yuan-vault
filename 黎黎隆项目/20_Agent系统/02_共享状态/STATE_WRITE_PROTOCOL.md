@@ -1,4 +1,4 @@
-# STATE_WRITE_PROTOCOL｜状态读写协议
+# STATE_WRITE_PROTOCOL｜状态读写协议 v1.1
 
 ## 单一事实源
 机器优先读取：
@@ -21,12 +21,20 @@
   "job_id": "JOB-...",
   "shot_id": "SHOT-...",
   "base_state_version": 12,
-  "agent": "storyboard_agent",
-  "result_type": "storyboard_result",
+  "agent": "theme_agent",
+  "result_type": "theme_result",
   "status": "READY",
   "payload": {}
 }
 ```
+
+允许的内容结果按岗位隔离：
+- theme_agent → `theme_result`
+- script_agent → `script_result`
+- tenyuan_agent → `tenyuan_result`
+- storyboard_agent → `storyboard_result`
+
+其他生产 Agent 继续只提交各自 asset / render / review 结果。
 
 ## 导演合并
 导演确认：
@@ -46,6 +54,7 @@
 - 旧 state_version 返回结果标记 STALE_RESULT。
 - REVIEW=PASS 后，任何 RETRY 结果若来自旧 job_id，一律忽略。
 - 子 Agent 不允许自行推进 current_shot_id。
+- theme_result / script_result / tenyuan_result / storyboard_result 不得互相越权覆盖。
 
 ## 人工介入
 用户可随时修改导演目标。导演需创建新 job_id，并保留旧任务为 CANCELED / SUPERSEDED，不删除历史。
