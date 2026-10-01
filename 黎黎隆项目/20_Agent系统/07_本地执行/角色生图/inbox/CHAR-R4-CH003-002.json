@@ -7,7 +7,7 @@
   "character_id": "LLL-CHAR-003",
   "character_card_ref": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
   "mode": "CHARACTER_VISUAL_BRIEF",
-  "status": "READY_FOR_LOCAL_CODEX",
+  "status": "SELF_REVIEW_PASS_PENDING_AG06",
   "execution_owner": "LOCAL_CODEX",
   "execute_without_second_confirmation": true,
   "goal": "第4轮第2抽：只修正上一轮审核失败维度，保持已PASS的身份、头帽、线稿、色卡和二维水彩质感不变。",
@@ -134,5 +134,10 @@
     "require_new_asset_hash": true,
     "require_receipt": true,
     "compare_against_previous_review": true
-  }
+  },
+  "output_asset_id": "AST-IMAGE-21E30DF5",
+  "output_sha256": "21E30DF53F8131EB1483A1058CC621A541B868A7FC99EE6CEF817C618C0AF454",
+  "self_review_ref": "黎黎隆项目/20_Agent系统/07_本地执行/角色生图/reviews/CHAR-R4-CH003-002.style-review.json",
+  "self_review_decision": "PASS",
+  "ag06_task_id": "AG06-R4-CH003-002"
 }
