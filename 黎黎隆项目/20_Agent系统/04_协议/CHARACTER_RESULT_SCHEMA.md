@@ -96,7 +96,7 @@ writeback:
   index_action: UPDATE|NONE
   written: false
 
-next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|IMAGE_GENERATE|STYLE_REVIEW|CHARACTER_WRITEBACK|DIRECTOR
+next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|LOCAL_CODEX_RENDER|IMAGE_GENERATE|STYLE_REVIEW|CHARACTER_WRITEBACK|DIRECTOR
 ```
 
 ## 硬门
@@ -115,6 +115,8 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|IMAGE_GENERATE|STYLE_REV
 12. 原稿未确认的身体区域必须进入 `unknown_regions`，AI首次补全不得直接升级为 LOCKED。
 13. XN vs X 分界仍为研究态；需要时 `body_structure.status=NEEDS_GRAYBODY_TEST`。
 14. 数字比例必须绑定身体落点、主辅权重、分布与证据状态，不得把单个数字当固定体型标签。
+15. 角色视觉默认 `next_route=LOCAL_CODEX_RENDER`；只有用户明确指定其他生图链时才使用 IMAGE_GENERATE。
+16. LOCAL_CODEX_RENDER 完成必须有真实 receipt + output sha256；仅写 prompt 不算生成完成。
 
 ## 角色视觉回写
 风格审核 PASS 后，角色 Agent只追加/更新：
