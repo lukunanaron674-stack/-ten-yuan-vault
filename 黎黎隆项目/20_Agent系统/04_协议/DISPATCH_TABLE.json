@@ -1,5 +1,6 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
+  "production_policy": "ASSET_FIRST_LONGTAKE",
   "rules": [
     {
       "when": {
@@ -11,53 +12,11 @@
     },
     {
       "when": {
-        "shot_status": "PLANNING"
+        "director_mode": "PRODUCTION",
+        "shot_status": "PLANNING",
+        "asset_status": "UNCHECKED"
       },
-      "route": "THEME_PLAN",
-      "agent": "theme"
-    },
-    {
-      "when": {
-        "shot_status": "THEME_READY",
-        "world_gate": "REQUIRED"
-      },
-      "route": "WORLD_CHECK",
-      "agent": "world"
-    },
-    {
-      "when": {
-        "shot_status": "THEME_READY",
-        "world_gate": "BYPASS"
-      },
-      "route": "SCRIPT_PROPOSAL",
-      "agent": "script"
-    },
-    {
-      "when": {
-        "shot_status": "WORLD_READY"
-      },
-      "route": "SCRIPT_PROPOSAL",
-      "agent": "script"
-    },
-    {
-      "when": {
-        "shot_status": "SCRIPT_READY"
-      },
-      "route": "TENYUAN_REVIEW",
-      "agent": "tenyuan"
-    },
-    {
-      "when": {
-        "shot_status": "TENYUAN_READY"
-      },
-      "route": "STORYBOARD_BUILD",
-      "agent": "storyboard"
-    },
-    {
-      "when": {
-        "shot_status": "STORYBOARD_READY"
-      },
-      "route": "ASSET_CHECK",
+      "route": "ASSET_AUDIT",
       "agent": "asset"
     },
     {
@@ -85,10 +44,67 @@
     },
     {
       "when": {
-        "asset_status": "READY",
-        "render_status": "NOT_STARTED"
+        "director_mode": "PRODUCTION",
+        "shot_status": "PLANNING",
+        "asset_status": "READY"
       },
-      "route": "RENDER_DISPATCH",
+      "route": "THEME_PLAN_FROM_ASSETS",
+      "agent": "theme"
+    },
+    {
+      "when": {
+        "shot_status": "THEME_READY",
+        "world_gate": "REQUIRED"
+      },
+      "route": "WORLD_CHECK",
+      "agent": "world"
+    },
+    {
+      "when": {
+        "shot_status": "THEME_READY",
+        "world_gate": "BYPASS"
+      },
+      "route": "SCRIPT_PROPOSAL_FROM_ASSETS",
+      "agent": "script"
+    },
+    {
+      "when": {
+        "shot_status": "WORLD_READY"
+      },
+      "route": "SCRIPT_PROPOSAL_FROM_ASSETS",
+      "agent": "script"
+    },
+    {
+      "when": {
+        "shot_status": "SCRIPT_READY"
+      },
+      "route": "TENYUAN_REVIEW",
+      "agent": "tenyuan"
+    },
+    {
+      "when": {
+        "shot_status": "TENYUAN_READY"
+      },
+      "route": "STORYBOARD_BUILD_LONGTAKE",
+      "agent": "storyboard"
+    },
+    {
+      "when": {
+        "shot_status": "STORYBOARD_READY",
+        "asset_recheck": "REQUIRED"
+      },
+      "route": "ASSET_RECHECK",
+      "agent": "asset"
+    },
+    {
+      "when": {
+        "shot_status": "STORYBOARD_READY",
+        "asset_status": "READY",
+        "asset_recheck": "PASS",
+        "render_status": "NOT_STARTED",
+        "h3_mode": "LONGTAKE"
+      },
+      "route": "LONGTAKE_RENDER_DISPATCH",
       "agent": "h3"
     },
     {
@@ -119,7 +135,7 @@
       "when": {
         "review_decision": "PASS"
       },
-      "route": "MERGE_PASS_AND_NEXT",
+      "route": "MERGE_PASS_AND_NEXT_LONGTAKE",
       "agent": "director"
     },
     {
