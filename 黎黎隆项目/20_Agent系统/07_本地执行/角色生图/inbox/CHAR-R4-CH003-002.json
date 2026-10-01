@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CHAR-R4-CH003-002",
+  "parent_task_id": "CHAR-R4-CH003-001",
+  "retry_no": 2,
+  "project_id": "LLL",
+  "character_id": "LLL-CHAR-003",
+  "character_card_ref": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
+  "mode": "CHARACTER_VISUAL_BRIEF",
+  "status": "READY_FOR_LOCAL_CODEX",
+  "execution_owner": "LOCAL_CODEX",
+  "execute_without_second_confirmation": true,
+  "goal": "第4轮第2抽：只修正上一轮审核失败维度，保持已PASS的身份、头帽、线稿、色卡和二维水彩质感不变。",
+  "usage_target": "角色比例探索 + 后续H3身份参考候选",
+  "previous_review_ref": "黎黎隆项目/20_Agent系统/07_本地执行/角色生图/reviews/CHAR-R4-CH003-001.style-review.json",
+  "previous_candidate_asset_id": "candidate-local:sha256:6E858457D5E02D58630B0A0D5F235A88159E8A5CC92E7396B8036932674782D9",
+  "locked_keep_fields": [
+    "face shape and feature scale",
+    "black short hair and uneven bang mass",
+    "lavender cheek marks",
+    "asymmetrical purple living-hat silhouette",
+    "pale diagonal hat band",
+    "narrow feather-like top structure",
+    "quiet, mischievous performance tone",
+    "hand-drawn 2D linework and restrained paper-watercolor treatment"
+  ],
+  "required_changes": [
+    "make lower-body A/B proportions visibly distinct while preserving the frozen upper body",
+    "replace ambiguous cape-like upper garment read with a clearly separate simple top",
+    "reframe lower-right panel to show a 45-degree half-body head-to-chest connection"
+  ],
+  "failed_dimensions": [
+    "proportion",
+    "composition_for_usage",
+    "forbidden_redesign"
+  ],
+  "identity_anchor_requirements": [
+    "优先读取本地真实 CH-003 作者/已选主参考，不得只靠角色卡文字。",
+    "锁定大圆脸、偏小五官、黑色短发与略不对称刘海、淡紫脸颊圆斑、紫色不对称大帽檐、浅色斜向帽带、细长羽毛状顶部结构。"
+  ],
+  "style_anchor_requirements": [
+    "从本地已确认《黎黎隆》角色风格资产中选择3到6张一致参考；不得把其他角色身份特征复制给CH-003。",
+    "二维平涂或薄影、手绘感线稿、剪影清楚、限制色，不要3D游戏立绘质感。"
+  ],
+  "frozen_visuals": [
+    "脸型与五官比例",
+    "黑色短发及刘海大形",
+    "紫色不对称活体帽剪影",
+    "浅色斜向帽带",
+    "顶部细长羽毛状结构",
+    "外表安静、实际机灵古怪的表演基调"
+  ],
+  "variable_visuals": [
+    "只允许修改下半身A/B比例差异、上衣轮廓分离方式、右下45度半身构图。",
+    "不得借返工机会新增角色身份、武器、机械结构、组织制服或世界设定。"
+  ],
+  "negative_visuals": [
+    "传统法师袍模板化",
+    "未经授权的机械义体或机械核心",
+    "新武器",
+    "复杂赛博装甲",
+    "第二角色",
+    "四宫格变成四个不同人物",
+    "把黑色上身区域擅自锁成斗篷",
+    "标准Q版大头短腿",
+    "仅因候选XN就强制修改作者头部比例"
+  ],
+  "body_structure": {
+    "status": "PARTIAL",
+    "numeric_profile": [],
+    "observed_variables": {
+      "head_body_ratio": "上半身已由作者原稿约束；全身头身比未锁",
+      "shoulder_width": "以原稿上半身为准，不扩肩",
+      "ribcage_length": "以原稿已知区域为准",
+      "pelvis_width": "UNKNOWN",
+      "leg_torso_ratio": "UNKNOWN",
+      "joint_mass": "UNKNOWN",
+      "extremity_mass": "UNKNOWN",
+      "center_of_gravity": "UNKNOWN"
+    },
+    "unknown_regions": [
+      "骨盆",
+      "大腿",
+      "小腿",
+      "脚",
+      "完整腿躯比",
+      "全身重心"
+    ],
+    "candidate_body_types": [
+      "A：保持紧凑下半身，骨盆与腿纵向展开较低；腿躯比明显短于B，但不能变成Q版短腿。",
+      "B：仅下半身增加明确纵向展开，腿躯比明显高于A；头、肩、胸腔、上半身长度全部保持一致。"
+    ],
+    "graybody_test_required": false,
+    "comparison_rule": "A/B必须一眼可见下半身比例差异；除骨盆以下结构外，不得改变冻结上半身。"
+  },
+  "layout": {
+    "aspect_ratio": "9:16",
+    "grid": "2x2",
+    "panels": [
+      "左上：中全景A，紧凑下半身；完整显示头身、骨盆、腿躯比、重心。",
+      "右上：中全景B，较明显纵向腿部展开；只改变骨盆以下，不改变头、帽、肩、胸。",
+      "左下：头部特写，完全继承上一轮PASS的脸、刘海、帽檐、帽带、羽毛结构。",
+      "右下：45度半侧半身，必须从头帽一直显示到肩、胸、上衣下缘，明确头帽与肩胸连接。"
+    ]
+  },
+  "garment_fix": [
+    "上身改成结构清楚的短上衣/简单分体上装，必须看到明确下摆或接缝。",
+    "禁止大片连续锥形暗色块形成斗篷、披风、斗蓬、长袍或poncho视觉。"
+  ],
+  "asset_lookup": {
+    "local_catalog_required": true,
+    "candidate_path_hints": [
+      "黎黎隆项目/03_角色/角色库/06_assets/CH-003/CH-003_逃票魔法学徒_06x08设定融合版_主参考.png",
+      "黎黎隆项目/03_角色/角色库/06_assets/CH-003/CH-003_逃票魔法学徒_9x16_四宫格设定稿_单人_v1.png",
+      "黎黎隆项目/03_角色/角色库/06_assets/CH-003/CH-003_逃票魔法学徒_9x16_四格_灰纸水彩校准_v1.png"
+    ],
+    "max_identity_candidates": 3,
+    "max_style_candidates": 6,
+    "preferred_identity_asset_ids": [
+      "AST-IMAGE-8F4BB563",
+      "AST-IMAGE-E6071AC0"
+    ],
+    "preferred_style_asset_ids": [
+      "AST-IMAGE-10BF021C"
+    ]
+  },
+  "output_contract": {
+    "binary_to_git_required": false,
+    "output_role": "character_visual_candidate",
+    "receipt_required": true,
+    "sha256_required": true,
+    "prompt_record_required": true,
+    "next_route": "STYLE_REVIEW",
+    "require_new_asset_hash": true,
+    "require_receipt": true,
+    "compare_against_previous_review": true
+  }
+}
