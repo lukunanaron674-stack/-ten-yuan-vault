@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "round_id": "ROUND5A",
+  "task_id": "ROUND5A-CHARACTER-LIBRARY-RECONCILE",
+  "project_id": "LLL",
+  "execution_owner": "LOCAL_CODEX",
+  "status": "READY_FOR_LOCAL_CODEX",
+  "execute_without_second_confirmation": true,
+  "title": "第5轮A｜角色库世界观×素材×五色治理对账",
+  "goal": "先把现有角色库与世界观正本、真实素材、五色视觉桶和角色完成度对齐，为第5轮B批量压力测试提供可靠输入。",
+  "implementation_ref": "黎黎隆项目/20_Agent系统/07_本地执行/角色生图/inbox/CHAR-LIB-RECONCILE-5COLOR-001.json",
+  "skill_ref": "07-Codex大脑库/skills/黎黎隆角色库世界素材对账/SKILL.md",
+  "required_outputs": [
+    "逐角色 world_region / world_alignment",
+    "逐角色 color_bucket / color_sort_id",
+    "逐角色 visual_readiness",
+    "真实 source_path / sha256 / view_type",
+    "未登记视觉候选",
+    "身份冲突与重复项",
+    "可供AG-11回写的结构化结果"
+  ],
+  "readiness_rules": {
+    "ready_visual": [
+      "身份匹配的四宫格",
+      "身份匹配的全身角色设定图",
+      "身份匹配的中全景角色设定图",
+      "身份匹配的中景角色设定图"
+    ],
+    "head_only": "HEAD_ONLY_DESIGN_PENDING",
+    "missing_asset": "ASSET_UNVERIFIED"
+  },
+  "hard_rules": [
+    "P00五色视觉桶与青/红/粉世界区域是两条独立轴。",
+    "不移动、不删除、不覆盖原始素材。",
+    "不凭文件名猜角色身份。",
+    "不把单头像判成完整角色设计。",
+    "不为已有中景/中全景/全身角色强制补四宫格。"
+  ],
+  "done_condition": "生成 CHARACTER_WORLD_ASSET_RECONCILE_5COLOR.md 且每个已发现角色都有世界/素材/五色/完成度状态。",
+  "stop_condition": "遇到身份冲突、不可解析路径或世界正本冲突时记录为CONFLICT/UNASSIGNED，不擅自修正原图或世界Canon。",
+  "next_route": "ROUND5B"
+}
