@@ -13,6 +13,12 @@
 - [[IDX-02_十元Agent索引|十元 Agent 索引]]
 - [[IDX-07_世界观Agent索引|世界观 Agent 索引]]
 
+## P1｜角色治理
+- [[../04_协议/CHARACTER_FIVE_COLOR_INDEX_PROTOCOL|角色五色编号协议]]
+- [[../04_协议/CHARACTER_ASSET_SYNC_PROTOCOL|角色×素材对账协议]]
+- [[../04_协议/CHARACTER_WORLD_BIDIRECTIONAL_PROTOCOL|角色×世界双向协议]]
+- [[../../世界观/00_世界观总索引|世界观总索引]]
+
 ## P1｜视觉与生产
 - [[IDX-04_视觉素材与风格索引|视觉素材与风格索引]]
 - [[../04_协议/LOCAL_ASSET_LIBRARY_PROTOCOL|本地素材库协议]]
