@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "state_version": 15,
+  "state_version": 16,
   "project_id": "LLL",
   "project_name": "黎黎隆",
   "pipeline": "B端_Agent",
@@ -10,8 +10,8 @@
   "current_scene_id": "SCN-LLL-60S-001",
   "current_shot_id": "SHOT-LLL-60S-01",
   "active_job_id": "JOB-LLL-60S-001",
-  "last_writer": "director_user_asset_correction",
-  "updated_at": "2026-10-01T19:47:00+08:00",
+  "last_writer": "director_story_reject_and_rotate",
+  "updated_at": "2026-10-01T19:52:00+08:00",
   "director_goal": {
     "goal_id": "GOAL-LLL-60S-001",
     "mode": "PRODUCTION",
@@ -48,61 +48,10 @@
     "opening_state": null,
     "closing_state": null,
     "continuity_check": "NOT_REQUIRED",
-    "theme_result": {
-      "primary_dimension": "因果",
-      "theme_question": "当黎黎隆为了抢先一步而主动进入尚在切换的导引区时，她能否看见新的阻碍正是自己抢跑造成的，并把这种认识转成更聪明的行动？",
-      "source": "asset-first macro run",
-      "verification": "APPROVED"
-    },
-    "script_result": {
-      "status": "APPROVED",
-      "packet": "黎黎隆项目/20_Agent系统/06_正式生产/GOAL-LLL-60S-001_MACRO_RUN_001.md",
-      "segments": 6
-    },
-    "tenyuan_result": {
-      "status": "APPROVED",
-      "verified": [
-        "XN克ZX"
-      ],
-      "behavior": [
-        "Z作为灵活假动作/转向行为"
-      ],
-      "rejected": [
-        "XN→NX自动转化",
-        "未验证的固定Z→ZX生补"
-      ]
-    },
-    "storyboard_result": {
-      "status": "APPROVED",
-      "mode": "LONGTAKE",
-      "segments": [
-        {
-          "id": "SEG-01",
-          "frames": 243
-        },
-        {
-          "id": "SEG-02",
-          "frames": 243
-        },
-        {
-          "id": "SEG-03",
-          "frames": 243
-        },
-        {
-          "id": "SEG-04",
-          "frames": 243
-        },
-        {
-          "id": "SEG-05",
-          "frames": 243
-        },
-        {
-          "id": "SEG-06",
-          "frames": 243
-        }
-      ],
-      "packet": "黎黎隆项目/20_Agent系统/06_正式生产/GOAL-LLL-60S-001_MACRO_RUN_001.md"
-    },
+    "theme_result": null,
+    "script_result": null,
+    "tenyuan_result": null,
+    "storyboard_result": null,
     "world_gate": "BYPASS",
     "world_result": null,
     "new_world_rule_required": false,
@@ -309,5 +258,22 @@
       "resolution": "Archived when formal 60s production goal opened",
       "resolved_at": "2026-10-01T17:42:00+08:00"
     }
-  ]
+  ],
+  "story_rotation": {
+    "rejected": [
+      {
+        "id": "STORY-001-MECHAIR-CAUSAL",
+        "reason": "USER_REJECTED",
+        "rejected_at": "2026-10-01T19:52:00+08:00",
+        "source": "06_正式生产/GOAL-LLL-60S-001_MACRO_RUN_001.md"
+      }
+    ],
+    "current_candidate": {
+      "id": "STORY-002-FOREST-LAKE-SPATIAL",
+      "title": "湖面先走了一步",
+      "status": "PREWRITE_ONLY",
+      "source": "06_正式生产/GOAL-LLL-60S-001_STORY_CANDIDATE_002.md",
+      "primary_dimension": "空间"
+    }
+  }
 }
