@@ -1,21 +1,27 @@
 {
-  "schema_version": "lililong-b-character-pool/v1.5",
+  "schema_version": "lililong-b-character-pool/v1.6",
   "project": "黎黎隆项目/角色魅力实验",
   "source_branch": "main",
   "character_count": 3,
-  "selection_policy": "B端可为登记角色生成结构化文本任务；动态图优先使用half_body_dynamic，full_body_identity只负责身份、比例、服装剪影与装备空间校验。图像渲染必须通过WorkBuddy/WorkBody原图绑定与身份验证。",
+  "selection_policy": "B端可为登记角色生成结构化文本任务；正式图像/视频生产必须同时满足角色已完成、真实图像绑定、身份验证与 h3_render_eligible=true。用户当前完成度声明优先于旧索引。",
   "characters": [
     {
       "character_id": "LLL-MAIN-001",
       "name": "黎黎隆",
       "tenyuan": "ZX主 / Z中 / XN小",
-      "asset_paths": ["黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg"],
+      "asset_paths": [
+        "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg"
+      ],
       "source_image": "LLL_H3_character_card_001.jpg",
       "reference_view_type": "both",
       "github_image_upload": true,
       "text_task_eligible": true,
-      "identity_validation_status": "github_direct_read",
-      "h3_render_eligible": true
+      "identity_validation_status": "blocked_character_incomplete",
+      "h3_render_eligible": false,
+      "production_status": "INCOMPLETE",
+      "user_canonical_status": "未完成，禁止正式H3",
+      "block_reason": "User explicitly stated on 2026-10-01 that 黎黎隆 is not finished and must not be rendered.",
+      "resume_condition": "User explicitly marks LLL-MAIN-001 complete, then revalidate identity/style/H3 eligibility."
     },
     {
       "character_id": "ADV-001",
@@ -54,7 +60,13 @@
       "identity_validation_status": "pending_image_validation",
       "h3_render_eligible": false,
       "recommended_chain": "N → NZ → Z",
-      "must_not_merge_with": ["CHE-001", "LLL-MAIN-001", "ADV-001", "rabbit-ear character", "ordinary girl"]
+      "must_not_merge_with": [
+        "CHE-001",
+        "LLL-MAIN-001",
+        "ADV-001",
+        "rabbit-ear character",
+        "ordinary girl"
+      ]
     }
   ],
   "view_rules": {
@@ -65,8 +77,11 @@
   "gate": {
     "text_generation": "allowed_for_text_task_eligible",
     "image_binding": "WorkBuddy/WorkBody must bind every referenced original asset",
-    "rendering": "allowed only after identity_validation_status=passed and h3_render_eligible=true",
-    "failure_state": ["queued_for_workbuddy_validation", "pending_image_validation"]
+    "rendering": "allowed only after character production_status=COMPLETE, identity validation passes, and h3_render_eligible=true",
+    "failure_state": [
+      "queued_for_workbuddy_validation",
+      "pending_image_validation"
+    ]
   },
   "scene_pool": "GITHUB_13_SCENE_POOL_V1"
 }
