@@ -1,0 +1,90 @@
+{
+  "style_review_id": "SR-CHAR-R4-CH003-002-001",
+  "project_id": "LLL",
+  "job_id": "CHAR-R4-CH003-002",
+  "shot_id": null,
+  "test_shot_id": "CHAR-R4-CH003-002",
+  "asset_id": "AST-IMAGE-21E30DF5",
+  "asset_sha256": "21E30DF53F8131EB1483A1058CC621A541B868A7FC99EE6CEF817C618C0AF454",
+  "base_state_version": "READY_FOR_LOCAL_CODEX",
+  "retry_no": 2,
+  "reviewer": "LOCAL_CODEX_SELF_REVIEW",
+  "review_scope": "Visual self-review of the local candidate; text-only report transmitted to cloud. Candidate binary, prompt, receipt, and manifest were not uploaded.",
+  "canonical_refs": [
+    "AST-IMAGE-8F4BB563",
+    "AST-IMAGE-E6071AC0"
+  ],
+  "character_or_scene_lock_refs": [
+    "LLL-CHAR-003 frozen identity anchors from CHAR-R4-CH003-002"
+  ],
+  "style_refs": [
+    "AST-IMAGE-10BF021C"
+  ],
+  "palette_refs": [
+    "CHAR-R4-CH003-002 limited palette and gray-paper watercolor calibration"
+  ],
+  "usage_target": "Character proportion exploration + later H3 identity-reference candidate",
+  "dimensions": {
+    "identity": {
+      "status": "PASS",
+      "evidence": "Both full-body views and both detail views retain the round face, small features, black short hair with uneven fringe, lavender cheek circles, asymmetrical purple living hat, pale diagonal band, and slender feather-like top structure.",
+      "instruction": "Keep the head and hat anchors unchanged."
+    },
+    "silhouette": {
+      "status": "PASS",
+      "evidence": "The hat remains the dominant recognizable silhouette. The short top has a visible straight waist hem and seams and no longer reads as a continuous cape or poncho.",
+      "instruction": "Preserve the separated short-top silhouette; outfit remains exploratory."
+    },
+    "proportion": {
+      "status": "PASS",
+      "evidence": "A and B preserve the same head, shoulders, chest, and garment; B shows visibly more vertical leg extension below the shorts while A remains compact but not stubby. The contrast is readable as a controlled lower-body comparison.",
+      "instruction": "Keep both branches as candidates only; do not write either proportion as canon."
+    },
+    "linework": {
+      "status": "PASS",
+      "evidence": "Loose, slightly varied hand-drawn dark contours remain consistent across the four panels.",
+      "instruction": "Retain the hand-drawn line quality."
+    },
+    "flat_2d_readability": {
+      "status": "PASS",
+      "evidence": "Clear 2D illustration and readable value grouping; no glossy 3D treatment.",
+      "instruction": "Retain simple 2D value grouping."
+    },
+    "palette": {
+      "status": "PASS",
+      "evidence": "Restrained charcoal, muted purple/lavender, pale cool gray, paper white, and neutral skin tones; no conspicuous new saturated hues.",
+      "instruction": "Keep the restrained palette."
+    },
+    "material_feel": {
+      "status": "PASS",
+      "evidence": "Gray-white paper grain, light watercolor wash, and restrained dry-brush texture are coherent with the style reference.",
+      "instruction": "Preserve the paper-watercolor treatment."
+    },
+    "composition_for_usage": {
+      "status": "PASS",
+      "evidence": "The portrait sheet has four clear 2x2 panels; both full bodies fit from feather to shoes; the lower-left is a head detail; the lower-right is a 45-degree half-body view extending through the chest and waist and shows the head/shoulder connection.",
+      "instruction": "Keep the panel roles and clear gutters."
+    },
+    "forbidden_redesign": {
+      "status": "PASS",
+      "evidence": "No extra character, weapon, armor, mechanical feature, organization uniform, or unauthorized story element is visible; the prior cape-like ambiguity is resolved.",
+      "instruction": "Do not add props or promote the garment/proportions to locked design."
+    }
+  },
+  "decision": "PASS",
+  "keep_fields": [
+    "face and feature scale",
+    "black short hair and uneven fringe",
+    "lavender cheek marks",
+    "purple asymmetrical living-hat silhouette, pale diagonal band, and feather-like structure",
+    "short separate top with visible hem and seams",
+    "A/B as an exploratory lower-body proportion comparison",
+    "four-panel composition, hand-ink linework, restrained palette, paper watercolor feel"
+  ],
+  "change_fields": [],
+  "failed_dimensions": [],
+  "state_after_review": "STYLE_REVIEW",
+  "approval_status": "NOT_APPROVED",
+  "lock_status": "NOT_LOCKED",
+  "reviewer_note": "PASS is a Codex visual self-review only. It does not mark the candidate APPROVED or LOCKED and does not update the character card. The task remains routed to STYLE_REVIEW for the independent review gate."
+}
