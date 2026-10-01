@@ -1,3 +1,7 @@
+# ⛔ CANCELLED｜DO NOT EXECUTE
+
+> LLL-MAIN-001 当前未完成。用户于 2026-10-01 明确禁止正式 H3。原 inbox 任务已删除；本文件仅保留历史预研，不得提交执行器。
+
 # LLL_LONGTAKE_20261001_1930_GOAL60S｜正式60秒 LongTake
 
 - goal: GOAL-LLL-60S-001
@@ -7,7 +11,7 @@
 - output: 16:9
 - 6 × 243f @24fps
 - node preference: H3LongTakeImageRender
-- state: WRITTEN / WAIT_EXECUTOR_RECEIPT
+- state: CANCELLED_DO_NOT_EXECUTE
 
 ## 核心事件
 黎黎隆试图抢在机械空港导引切换前通过；她的抢跑连续触发设施重排，直到她看懂响应关系，用一次假动作骗出重排，再从真实方向通过。
