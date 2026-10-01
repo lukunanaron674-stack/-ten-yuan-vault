@@ -97,3 +97,15 @@
 ## 代理库并入与操作边界
 - 原素材代理的来源追溯、seed/派生、三方清理和五条素材流状态见迁移记录 [[../03_知识库/增量/2026-10-01_20代理库并入记录]]；动态状态使用前须复核。
 - 不生成冗余备份副本；Canvas 只按明确任务修改，不擅自删移旧节点。
+
+
+## 与角色 Agent 联合对账
+正式选角与角色生产资格必须遵守 [[../04_协议/CHARACTER_ASSET_SYNC_PROTOCOL]]。
+
+规则：
+- 项目级角色发现优先使用全库图片清单、SHA 索引、H3专用角色库、06_assets、S卡与头像高清素材；
+- 旧 B端 `assets/character_pool_index.json` 只做历史任务兼容，不得代表全部角色；
+- 发现“有真图但无角色卡”的对象时，返回 `UNREGISTERED_VISUAL_CANDIDATE` 给 AG-11，不得直接丢弃，也不得直接升级为正式角色；
+- 必须把 source_path / sha256 / view_type / duplicate_group / style_review_status 给角色 Agent；
+- 角色 Agent 确认身份与完成度后，素材 Agent 再判断 H3 bindable；
+- 角色与素材联合 PASS 前不得写正式 B端 H3 inbox。
