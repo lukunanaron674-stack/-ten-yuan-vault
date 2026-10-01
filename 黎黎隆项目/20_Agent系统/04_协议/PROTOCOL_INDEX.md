@@ -36,6 +36,12 @@
 
 世界观检查不是每镜必跑。只有 `world_gate = REQUIRED` 才调用 [[../01_Agent库/AG-10_世界观Agent]]；普通镜头直接 BYPASS。
 
+## 角色任务
+- [[CHARACTER_RESULT_SCHEMA]]
+- [[../01_Agent库/AG-11_角色Agent]]
+
+角色创建/更新走独立任务轨。角色文字卡可 STAGING 写回；新角色视觉资产必须经风格审核达到门槛后才能成为 approved 主参考。
+
 
 ## 第六轮生产闭环
 - [[PRODUCTION_LOOP_PROTOCOL]]
