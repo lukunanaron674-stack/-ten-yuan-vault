@@ -1,6 +1,6 @@
 {
-  "schema_version": "2.4",
-  "state_version": 20,
+  "schema_version": "2.5",
+  "state_version": 21,
   "project_id": "LLL",
   "project_name": "黎黎隆",
   "pipeline": "B端_Agent",
@@ -10,8 +10,8 @@
   "current_scene_id": "SCN-LLL-60S-001",
   "current_shot_id": "SHOT-LLL-60S-01",
   "active_job_id": "JOB-LLL-60S-001",
-  "last_writer": "director_build_nonCH_candidate_registry",
-  "updated_at": "2026-10-01T20:55:00+08:00",
+  "last_writer": "director_issue_local_asset_resync_task",
+  "updated_at": "2026-10-01T20:57:00+08:00",
   "director_goal": {
     "goal_id": "GOAL-LLL-60S-001",
     "mode": "PRODUCTION",
@@ -155,11 +155,11 @@
   "pending_deltas": [],
   "blockers": [
     {
-      "id": "BLK-HNSNPC-ASSET-RESYNC",
-      "type": "ASSET_RESYNC_REQUIRED",
+      "id": "WAIT-LOCAL-ASSET-RESYNC-P0",
+      "type": "EXTERNAL_WAIT",
       "scope": "GOAL-LLL-60S-001",
-      "detail": "80个H/N/S/NPC视觉候选已登记；历史清单/SHA有证据，但current main缺对应图片子目录。先恢复或验证P0/P1候选真图，再由角色Agent审身份。CH-*与LLL-MAIN-*继续排除。",
-      "owner": "asset_agent",
+      "detail": "本地Codex素材对账工单已写入，等待 H04/H06/H09 真图 locator + 实测SHA 回执。没有 receipt 不得进入角色身份审计或H3。",
+      "owner": "LOCAL_CODEX",
       "hard_gate": true
     }
   ],
@@ -168,8 +168,8 @@
     "owner": null,
     "reason": null
   },
-  "next_action": "ASSET_RESYNC_P0_H04_H06_H09_THEN_CHARACTER_AUDIT",
-  "assigned_agent": "asset",
+  "next_action": "WAIT_LOCAL_CODEX_ASSET_RESYNC_RECEIPT",
+  "assigned_agent": null,
   "production_loop": {
     "protocol_version": "v1",
     "status": "ACTIVE",
@@ -181,7 +181,7 @@
     "current_scene_id": "SCN-LLL-60S-001",
     "current_shot_id": "SHOT-LLL-60S-01",
     "pipeline_policy": "ASSET_FIRST_LONGTAKE",
-    "current_stage": "NON_CH_REGISTRY_READY_ASSET_RESYNC",
+    "current_stage": "WAIT_LOCAL_ASSET_RESYNC",
     "canceled_task_id": "LLL_LONGTAKE_20261001_1930_GOAL60S",
     "resume_condition": "NON_CH_CANDIDATE_LIVE_ASSET_AND_CHARACTER_AUDIT_PASS"
   },
@@ -193,7 +193,7 @@
     "no_op_on_same_state_hash": true,
     "max_primary_agents_per_tick": null,
     "max_dependent_agents_per_tick": 1,
-    "stop_condition": "HARD_ASSET_RESYNC_GATE"
+    "stop_condition": "WAIT_LOCAL_CODEX_RECEIPT"
   },
   "context_engineering": {
     "protocol_version": "v1",
@@ -299,6 +299,17 @@
         "priority": "P0",
         "reason": "用户已选 + 四宫格候选"
       }
-    ]
+    ],
+    "active_resync_task": {
+      "task_id": "ASSET-RESYNC-P0-H04-H06-H09-001",
+      "task_path": "07_本地执行/角色生图/inbox/ASSET-RESYNC-P0-H04-H06-H09-001.json",
+      "receipt_path": "07_本地执行/角色生图/receipts/ASSET-RESYNC-P0-H04-H06-H09-001.json",
+      "status": "WRITTEN_WAIT_LOCAL_CODEX",
+      "targets": [
+        "H04",
+        "H06",
+        "H09"
+      ]
+    }
   }
 }
