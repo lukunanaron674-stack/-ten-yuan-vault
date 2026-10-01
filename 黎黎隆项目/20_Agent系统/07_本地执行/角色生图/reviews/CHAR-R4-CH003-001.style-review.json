@@ -1,0 +1,98 @@
+{
+  "style_review_id": "SR-CHAR-R4-CH003-001-001",
+  "project_id": "LLL",
+  "job_id": "CHAR-R4-CH003-001",
+  "shot_id": null,
+  "test_shot_id": "CHAR-R4-CH003-001",
+  "asset_id": "candidate-local:sha256:6E858457D5E02D58630B0A0D5F235A88159E8A5CC92E7396B8036932674782D9",
+  "base_state_version": "READY_FOR_LOCAL_CODEX",
+  "retry_no": 1,
+  "reviewer": "LOCAL_CODEX_SELF_REVIEW",
+  "review_scope": "Text-only audit result; candidate image binary was not uploaded.",
+  "canonical_refs": [
+    "AST-IMAGE-8F4BB563",
+    "AST-IMAGE-E6071AC0"
+  ],
+  "character_or_scene_lock_refs": [
+    "LLL-CHAR-003 frozen identity anchors in CHAR-R4-CH003-001"
+  ],
+  "style_refs": [
+    "AST-IMAGE-10BF021C"
+  ],
+  "palette_refs": [
+    "Task style constraints: limited palette, gray-paper watercolor calibration"
+  ],
+  "usage_target": "Character proportion exploration + later H3 identity-reference candidate",
+  "dimensions": {
+    "identity": {
+      "status": "PASS",
+      "evidence": "Both full-body panels and both detail panels retain the large round face, small features, short black hair with uneven bangs, lavender cheek marks, asymmetrical purple living hat, pale diagonal band, and narrow feather-like top structure.",
+      "instruction": "Keep these head and hat anchors unchanged in the retry."
+    },
+    "silhouette": {
+      "status": "PASS",
+      "evidence": "The asymmetrical hat and feather remain immediately legible; the two full-body figures read as the same character.",
+      "instruction": "Preserve the hat silhouette. Clarify the upper garment as an ordinary separate top rather than a cape-like continuous drape."
+    },
+    "proportion": {
+      "status": "FAIL",
+      "evidence": "Candidate A and B have nearly identical leg-to-torso and pelvis proportions, so the requested lower-body A/B exploration is not meaningfully testable.",
+      "instruction": "Make A/B visibly distinct only below the frozen upper-body region: A with compact lower-body expansion; B with a clearly more vertically extended leg-to-torso ratio, without changing the head, shoulders, or ribcage."
+    },
+    "linework": {
+      "status": "PASS",
+      "evidence": "Loose dark hand-drawn contours and sketch variation are visible across the sheet.",
+      "instruction": "Retain the hand-drawn line quality."
+    },
+    "flat_2d_readability": {
+      "status": "PASS",
+      "evidence": "The design reads as a 2D illustrated character with clear panel separation and no 3D game-render appearance.",
+      "instruction": "Keep simple 2D value grouping."
+    },
+    "palette": {
+      "status": "PASS",
+      "evidence": "The image stays mostly in charcoal, pale paper, muted skin, and restrained purple accents.",
+      "instruction": "Keep the limited palette and avoid adding saturated colors."
+    },
+    "material_feel": {
+      "status": "PASS",
+      "evidence": "Paper grain and restrained watercolor wash are consistent across the sheet.",
+      "instruction": "Preserve the gray-paper watercolor feel."
+    },
+    "composition_for_usage": {
+      "status": "FAIL",
+      "evidence": "The lower-right panel is a head-and-shoulder close-up; it does not sufficiently show the 45-degree upper-body connection from head/hat through shoulders and chest requested by the task.",
+      "instruction": "Reframe the lower-right panel as a clear 45-degree half-body view including head, hat, shoulders, chest, and their connection; keep the lower-left as the head detail."
+    },
+    "forbidden_redesign": {
+      "status": "FAIL",
+      "evidence": "The oversized broad, tapered dark upper garment can read as a cape or poncho, risking the prohibited interpretation that the black upper-body area is a locked cape.",
+      "instruction": "Use a clearly separate simple shirt or short jacket silhouette with visible hem/seams; do not add a cape, robe, armor, weapon, or mechanical feature."
+    }
+  },
+  "decision": "RETRY",
+  "keep_fields": [
+    "face shape and feature scale",
+    "black short hair and uneven bang mass",
+    "lavender cheek marks",
+    "asymmetrical purple living-hat silhouette",
+    "pale diagonal hat band",
+    "narrow feather-like top structure",
+    "quiet, mischievous performance tone",
+    "hand-drawn 2D linework and restrained paper-watercolor treatment"
+  ],
+  "change_fields": [
+    "make lower-body A/B proportions visibly distinct while preserving the frozen upper body",
+    "replace ambiguous cape-like upper garment read with a clearly separate simple top",
+    "reframe lower-right panel to show a 45-degree half-body head-to-chest connection"
+  ],
+  "failed_dimensions": [
+    "proportion",
+    "composition_for_usage",
+    "forbidden_redesign"
+  ],
+  "state_after_review": "STYLE_REVIEW",
+  "approval_status": "NOT_APPROVED",
+  "lock_status": "NOT_LOCKED",
+  "reviewer_note": "This is a Codex visual self-review, not an independent AG-06 agent sign-off. Retry is requested; no approval or canon change is implied."
+}
