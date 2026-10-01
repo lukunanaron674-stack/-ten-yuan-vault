@@ -1,7 +1,7 @@
 # WORLD_PROPOSAL_SCHEMA｜世界规则提案包 v1
 
 ## 用途
-仅当正式镜头或学习实验发现 `new_world_rule_required = true` 时使用。
+当正式镜头、学习实验、角色设定或角色图发现 `new_world_rule_required = true` 时使用。
 它不是镜头卡，也不自动等于 Canon。
 
 ## 身份
@@ -11,8 +11,15 @@
 - source_shot_id 或 test_shot_id
 - region
 - base_state_version
+- source_type: SHOT | LEARNING | CHARACTER | CHARACTER_IMAGE
+- source_character_id: null | LLL-CHAR-xxx
+- source_visual_asset_id: null | asset_id
 
 ## 提案
+- visual_evidence: []
+- character_need:
+- affected_population:
+- geography_or_organization_impact:
 - proposed_rule
 - problem_it_solves
 - canon_refs
