@@ -39,6 +39,8 @@
 ## 角色任务
 - [[CHARACTER_RESULT_SCHEMA]]
 - [[CHARACTER_BODY_STRUCTURE_PROTOCOL]]
+- [[CHARACTER_LOCAL_CODEX_RENDER_PROTOCOL]]
+- [[CHARACTER_CODEX_TASK_SCHEMA]]
 - [[../01_Agent库/AG-11_角色Agent]]
 
 角色创建/更新走独立任务轨。角色文字卡可 STAGING 写回；新角色视觉资产必须经风格审核达到门槛后才能成为 approved 主参考。
