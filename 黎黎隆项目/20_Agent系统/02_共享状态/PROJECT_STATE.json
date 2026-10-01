@@ -1,6 +1,6 @@
 {
-  "schema_version": "2.0",
-  "state_version": 16,
+  "schema_version": "2.1",
+  "state_version": 17,
   "project_id": "LLL",
   "project_name": "黎黎隆",
   "pipeline": "B端_Agent",
@@ -10,20 +10,24 @@
   "current_scene_id": "SCN-LLL-60S-001",
   "current_shot_id": "SHOT-LLL-60S-01",
   "active_job_id": "JOB-LLL-60S-001",
-  "last_writer": "director_story_reject_and_rotate",
-  "updated_at": "2026-10-01T19:52:00+08:00",
+  "last_writer": "director_correct_character_selection_policy",
+  "updated_at": "2026-10-01T19:58:00+08:00",
   "director_goal": {
     "goal_id": "GOAL-LLL-60S-001",
     "mode": "PRODUCTION",
-    "text": "制作《黎黎隆》1分钟正式动画。由导演基于当前角色/世界观/主题/十元正本自行确定本场内容，不自动把任何非正史故事候选升级为正史。优先使用现有真实可绑定资产；缺失必要素材时允许进入素材Agent→生图Agent→风格审核分支。最终目标为约60秒连续可剪成片。",
+    "text": "制作《黎黎隆》项目内1分钟正式动画。角色由素材端从当前真正完成、可绑定、可正式H3的非黎黎隆角色中选择；黎黎隆当前未完成，明确排除。主题与剧本必须根据所选真实素材生成。",
     "source": "user",
     "target_duration_sec": 60,
     "target_shot_count": 6,
     "nominal_shot_duration_sec": 10,
-    "main_character": "LLL-MAIN-001",
+    "main_character": null,
     "canon_policy": "CURRENT_CANON_ONLY",
     "asset_policy": "ASSET_FIRST_EXISTING_FIRST_GENERATE_IF_MISSING",
-    "h3_policy": "LONGTAKE_DEFAULT"
+    "h3_policy": "LONGTAKE_DEFAULT",
+    "character_selection_policy": "AUTO_SELECT_NON_LLL_PRODUCTION_READY",
+    "excluded_characters": [
+      "LLL-MAIN-001"
+    ]
   },
   "cycle": {
     "cycle_id": "PROD-LLL-60S-001",
@@ -36,10 +40,10 @@
     "goal": "制作一个约60秒完整小事件：黎黎隆主动争取/试探某个具体目标，第一次行动使局面复杂化，随后被迫变招并承担局部代价；只使用现有正本世界规则，不自动升级非正史候选。",
     "target_duration_sec": 60,
     "completed_duration_sec": 0,
-    "status": "BLOCKED"
+    "status": "PLANNING"
   },
   "shot": {
-    "status": "BLOCKED",
+    "status": "PLANNING",
     "duration_sec": 10,
     "plan_version": 3,
     "attempt_no": 0,
@@ -58,53 +62,20 @@
     "asset_recheck": "FAIL_CHARACTER_INCOMPLETE"
   },
   "assets": {
-    "status": "BLOCKED",
+    "status": "UNCHECKED",
     "auto_asset_generation_allowed": true,
     "policy": "ASSET_FIRST",
     "asset_pack_id": null,
-    "primary_character": {
-      "asset_id": "LLL-MAIN-001",
-      "production_status": "INCOMPLETE",
-      "usable_for_h3": false,
-      "user_canonical_status": "未完成，禁止正式H3"
-    },
+    "primary_character": null,
     "primary_scene_family": "机械空港",
-    "required": [
-      "LLL-MAIN-001",
-      "SCENE-11",
-      "SCENE-12",
-      "SCENE-13"
-    ],
-    "resolved": [
-      {
-        "asset_id": "LLL-MAIN-001",
-        "path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
-        "status": "EXISTS_H3_ELIGIBLE"
-      },
-      {
-        "asset_id": "SCENE-11",
-        "path": "黎黎隆项目/04_场景/五色视觉系统/R4_色彩脚本/assets/R4-01_机械空港_起_安静生命.png",
-        "status": "AVAILABLE_BY_GITHUB_PATH"
-      },
-      {
-        "asset_id": "SCENE-12",
-        "path": "黎黎隆项目/04_场景/五色视觉系统/R4_色彩脚本/assets/R4-02_机械空港_承_技术接口.png",
-        "status": "AVAILABLE_BY_GITHUB_PATH"
-      },
-      {
-        "asset_id": "SCENE-13",
-        "path": "黎黎隆项目/04_场景/五色视觉系统/R4_色彩脚本/assets/R4-04_机械空港_合_稳定结果.png",
-        "status": "AVAILABLE_BY_GITHUB_PATH"
-      }
-    ],
+    "required": [],
+    "resolved": [],
     "optional": [
       "SCENE-05",
       "SCENE-06",
       "SCENE-10"
     ],
-    "missing": [
-      "LLL-MAIN-001_COMPLETE_LOCKED_CHARACTER_ASSET"
-    ],
+    "missing": [],
     "pending_style_review": [],
     "approved": [],
     "generated": [],
@@ -119,8 +90,8 @@
     }
   },
   "render": {
-    "status": "CANCELLED",
-    "render_id": "LLL_LONGTAKE_20261001_1930_GOAL60S",
+    "status": "NOT_STARTED",
+    "render_id": null,
     "queue_task_id": null,
     "output_video": null,
     "head_frame": null,
@@ -140,8 +111,8 @@
     },
     "last_error": "USER_CANONICAL_ASSET_GATE: LLL-MAIN-001 incomplete",
     "dispatch_mode": "LONGTAKE",
-    "task_file_path": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/LLL_LONGTAKE_20261001_1930_GOAL60S.json",
-    "queue_write_status": "CANCELLED_AND_REMOVED_FROM_INBOX",
+    "task_file_path": null,
+    "queue_write_status": "NOT_WRITTEN",
     "executor_receipt": null,
     "executor_retry_count": 0,
     "max_executor_retry_count": 2,
@@ -158,7 +129,7 @@
     }
   },
   "review": {
-    "status": "BLOCKED",
+    "status": "NOT_STARTED",
     "decision": null,
     "retry_count": 0,
     "max_retry_count": 3,
@@ -184,10 +155,10 @@
   "pending_deltas": [],
   "blockers": [
     {
-      "id": "BLK-LLL-CHARACTER-INCOMPLETE-20261001",
-      "type": "CHARACTER_INCOMPLETE",
+      "id": "BLK-SELECT-NONLLL-READY-CHARACTER",
+      "type": "ASSET_SELECTION",
       "scope": "GOAL-LLL-60S-001",
-      "detail": "LLL-MAIN-001 黎黎隆当前未完成。用户明确禁止正式 H3。必须在用户确认角色完成后重新进行素材审核。",
+      "detail": "Select a non-LLL character that is currently COMPLETE/APPROVED and formally H3-eligible. Do not select STAGING/incomplete characters merely because an image file exists.",
       "owner": "asset_agent",
       "hard_gate": true
     }
@@ -197,11 +168,11 @@
     "owner": null,
     "reason": null
   },
-  "next_action": "WAIT_LLL_CHARACTER_COMPLETE",
+  "next_action": "ASSET_SELECT_NON_LLL_PRODUCTION_READY_CHARACTER",
   "assigned_agent": "asset",
   "production_loop": {
     "protocol_version": "v1",
-    "status": "BLOCKED",
+    "status": "ACTIVE",
     "production_goal_required": true,
     "active_goal_id": "GOAL-LLL-60S-001",
     "target_duration_sec": 60,
@@ -210,9 +181,9 @@
     "current_scene_id": "SCN-LLL-60S-001",
     "current_shot_id": "SHOT-LLL-60S-01",
     "pipeline_policy": "ASSET_FIRST_LONGTAKE",
-    "current_stage": "CHARACTER_ASSET_GATE",
+    "current_stage": "CHARACTER_SELECTION",
     "canceled_task_id": "LLL_LONGTAKE_20261001_1930_GOAL60S",
-    "resume_condition": "USER_CONFIRMS_LLL_COMPLETE"
+    "resume_condition": "NON_LLL_PRODUCTION_READY_CHARACTER_SELECTED"
   },
   "orchestration": {
     "protocol_version": "v1.1",
@@ -268,12 +239,6 @@
         "source": "06_正式生产/GOAL-LLL-60S-001_MACRO_RUN_001.md"
       }
     ],
-    "current_candidate": {
-      "id": "STORY-002-FOREST-LAKE-SPATIAL",
-      "title": "湖面先走了一步",
-      "status": "PREWRITE_ONLY",
-      "source": "06_正式生产/GOAL-LLL-60S-001_STORY_CANDIDATE_002.md",
-      "primary_dimension": "空间"
-    }
+    "current_candidate": null
   }
 }
