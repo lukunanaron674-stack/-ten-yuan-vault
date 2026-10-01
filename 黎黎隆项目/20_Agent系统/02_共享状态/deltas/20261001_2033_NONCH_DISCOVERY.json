@@ -1,0 +1,24 @@
+{
+  "base_state_version": 19,
+  "writer": "asset_then_character_nonch_discovery",
+  "created_at": "2026-10-01T20:33:18+08:00",
+  "goal_id": "GOAL-LLL-60S-001",
+  "result": "BLOCKED_NO_NONCH_PRODUCTION_READY_CHARACTER",
+  "audit_report": "06_验证/NONCH_CHARACTER_ASSET_DISCOVERY_20261001_2033.md",
+  "primary_candidate": {
+    "id": "NPC-01",
+    "asset": "03_角色/角色库/02_H3专用角色库/assets/NPC-01/NPC-01_披肩居民_H3四格候选01.png",
+    "sha256": "e6bd11543240ec9c37b70fc8b37a2b4817ab5b3e72529e043c51c2d82e72f51d",
+    "view_type": "FOUR_GRID",
+    "blocker": "IDENTITY_CONFLICT_SAME_SHA_AS_EXCLUDED_CH014"
+  },
+  "verified_fallbacks": [
+    {"id":"S01_new","sha256":"68a657c6b3507f90a44fb5ceee562165aa89fd2b9412ea0365bb23400c13e797","status":"NEEDS_VIEW_AND_IDENTITY_AUDIT"},
+    {"id":"S01","sha256":"3481ea1bfff66afafdd8b9aad98cd6ff78d6d0014807564a8ae3868c9faea611","status":"NEEDS_VIEW_AND_IDENTITY_AUDIT"},
+    {"id":"S02","sha256":"f5507017b155d1bab1e268163dd6bcb7bfd1bc91f8a71d67ca7c34ef5d57028c","status":"NEEDS_VIEW_AND_IDENTITY_AUDIT"}
+  ],
+  "next_action": "RESOLVE_NPC01_IDENTITY_CONFLICT_OR_AUDIT_NEXT_S_CANDIDATE",
+  "assigned_agent": "character",
+  "hard_gate": true,
+  "h3_dispatch": "FORBIDDEN"
+}
