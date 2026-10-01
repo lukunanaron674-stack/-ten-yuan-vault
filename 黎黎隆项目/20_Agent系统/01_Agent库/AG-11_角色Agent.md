@@ -79,7 +79,8 @@
 ## 状态拆分硬门
 角色 Agent 不允许用一个“已确认”覆盖全部维度。每个角色至少独立记录：
 - `world_position_status`: CONFIRMED|CANDIDATE|UNKNOWN
-- `tenyuan_status`: VERIFIED|AUTHOR_INPUT|NEEDS_TENYUAN_REVIEW
+- `tenyuan_source_status`: CANON|AUTHOR_INPUT|INFERRED|UNKNOWN
+- `tenyuan_verification_status`: VERIFIED|NEEDS_TENYUAN_REVIEW|NOT_APPLICABLE
 - `visual_status`: LOCKED|PARTIAL|EXPLORING
 - `body_structure_status`: LOCKED|PARTIAL|EXPLORING|NEEDS_GRAYBODY_TEST
 - `asset_status`: EXISTING|MISSING|PENDING_STYLE_REVIEW|APPROVED
@@ -173,7 +174,8 @@ identity_core: ""
 story_function: ""
 world_refs: []
 tenyuan_refs: []
-tenyuan_review_status: VERIFIED|AUTHOR_INPUT|NEEDS_TENYUAN_REVIEW
+tenyuan_source_status: CANON|AUTHOR_INPUT|INFERRED|UNKNOWN
+tenyuan_verification_status: VERIFIED|NEEDS_TENYUAN_REVIEW|NOT_APPLICABLE
 body_structure:
   status: LOCKED|PARTIAL|EXPLORING|NEEDS_GRAYBODY_TEST
   numeric_profile: []
