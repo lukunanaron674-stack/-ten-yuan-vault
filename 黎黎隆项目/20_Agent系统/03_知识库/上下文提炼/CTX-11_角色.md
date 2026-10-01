@@ -1,6 +1,10 @@
 # CTX-11｜角色工作记忆
 
 ## 必须记住
+- 角色先与世界正本同化，再谈完成：region / geography / organization / mechanism / daily-life effects 必须有状态。
+- 角色主ID不重排；P00五色另用 C01-C05 + color_sort_id 排列，五色不等于世界色区也不等于十元。
+- 素材端身份匹配的真实四宫格 → READY_4GRID，角色设计层可用；只有头像 → HEAD_ONLY_DESIGN_PENDING；无真图 → ASSET_UNVERIFIED。
+- READY_4GRID 不自动等于 H3 正式生产 READY，后者仍需风格审核与绑定门禁。
 - 角色 Agent负责“这个人是谁、为什么行动、在世界中处于什么位置、视觉上什么不能改”，不替十元/世界观/剧本/生图 Agent越权。
 - 世界观 Agent 可以主动规划角色生态位：地理、组织、资源、制度、职业、生活方式先规定“什么样的人会自然出现”，AG-11 再把它个体化。
 - 角色图也可反推世界候选：必须分 visual_evidence / character_interpretation / world_implications；只有群体级、组织级、地理级、制度级含义才提交 WORLD_PROPOSAL。
