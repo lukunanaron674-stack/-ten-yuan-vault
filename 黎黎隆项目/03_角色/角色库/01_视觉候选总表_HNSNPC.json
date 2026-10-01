@@ -1,6 +1,6 @@
 {
   "schema_version": "lililong-visual-character-candidates/v1.0",
-  "updated_at": "2026-10-01T20:49:00+08:00",
+  "updated_at": "2026-10-01T20:52:00+08:00",
   "source_manifest": "黎黎隆项目/00_总览/素材文字对接_全库图床清单_20261001.md",
   "source_sha_index": "黎黎隆项目/00_总览/图片定位与验证_20260930/SHA256SUMS_全部图片.txt",
   "caveat": "The current main branch role directory does not contain the historical H/N/S asset subdirectories referenced by the inventory. Therefore these are indexed visual candidates, not live H3-bindable assets, until resynced and reverified.",
@@ -25,7 +25,7 @@
     "N": 30,
     "S": 19,
     "NPC": 1,
-    "four_grid": 34,
+    "four_grid": 35,
     "user_selected": 3,
     "P0": 3
   },
@@ -1694,7 +1694,7 @@
       "pool": "NPC",
       "name_hint": "披肩居民",
       "legacy_candidate_bucket": "UNASSIGNED",
-      "best_view": "HEAD_ONLY",
+      "best_view": "FOUR_GRID_CANDIDATE",
       "best_file": "NPC-01_披肩居民_H3四格候选01.png",
       "inventory_path": "03_角色/角色库/02_H3专用角色库/assets/NPC-01/NPC-01_披肩居民_H3四格候选01.png",
       "sha256": null,
@@ -1705,10 +1705,10 @@
       "character_registration": "UNREGISTERED_VISUAL_CANDIDATE",
       "world_region": "UNASSIGNED",
       "p00_color_bucket": "UNASSIGNED",
-      "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
+      "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P1"
     }
   ]
 }
