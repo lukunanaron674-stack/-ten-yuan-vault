@@ -125,3 +125,8 @@
 - 必须把 source_path / sha256 / view_type / duplicate_group / style_review_status 给角色 Agent；
 - 角色 Agent 确认身份与完成度后，素材 Agent 再判断 H3 bindable；
 - 角色与素材联合 PASS 前不得写正式 B端 H3 inbox。
+
+
+### 非 CH 候选入口
+当用户排除 CH 或要求新角色时，素材 Agent 直接读取 `../../03_角色/角色库/01_视觉候选总表_HNSNPC.json`。
+优先处理 P0/P1 候选的真图恢复、source_path、SHA、视图类型与重复组。历史清单有记录但 current main 缺图时必须标 `NEEDS_RESYNC`，不能把索引当图片本体。
