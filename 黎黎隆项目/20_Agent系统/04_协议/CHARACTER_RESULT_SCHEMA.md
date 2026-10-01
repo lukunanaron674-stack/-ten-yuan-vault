@@ -40,7 +40,8 @@ tenyuan:
   main:
   secondary: []
   source_refs: []
-  status: VERIFIED|AUTHOR_INPUT|NEEDS_TENYUAN_REVIEW
+  source_status: CANON|AUTHOR_INPUT|INFERRED|UNKNOWN
+  verification_status: VERIFIED|NEEDS_TENYUAN_REVIEW|NOT_APPLICABLE
   behavior_evidence: []
   forbidden_inferences: []
 
@@ -109,6 +110,7 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|IMAGE_GENERATE|STYLE_REV
 8. 没有真实 asset_id / source_path / sha256 或仓库真实路径时，不得伪造资产已归档。
 9. 角色卡写回后 `writeback.written=true`，但这不改变 SHOT / RENDER 状态。
 10. 世界位置、十元、视觉、身体结构、资产状态必须独立记录，禁止互相推导为“都已确认”。
+   十元还必须拆成 `source_status` 与 `verification_status`：作者输入可以明确存在，同时理论关系仍需复核。
 11. 作者原稿/作者数字比例优先于十元体型研究；理论冲突只能记录，不得自动修正原稿。
 12. 原稿未确认的身体区域必须进入 `unknown_regions`，AI首次补全不得直接升级为 LOCKED。
 13. XN vs X 分界仍为研究态；需要时 `body_structure.status=NEEDS_GRAYBODY_TEST`。
