@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "task_id": "ASSET-RESYNC-H29-RED-BUCKET-001",
+  "project_id": "LLL",
+  "execution_owner": "LOCAL_CODEX",
+  "status": "READY_FOR_LOCAL_CODEX",
+  "mode": "ASSET_RESYNC_AND_VERIFY",
+  "goal": "定位旧红桶候选 H29 多身共鸣体的真实四宫格，验证 locator/SHA/尺寸/视图与多头结构是否确为角色设定，不移动删除原图，不生成新图。",
+  "execute_without_second_confirmation": true,
+  "readonly_source_scan": true,
+  "do_not_move_or_delete_assets": true,
+  "do_not_generate_new_images": true,
+  "candidate_registry": "黎黎隆项目/03_角色/角色库/01_视觉候选总表_HNSNPC.json",
+  "inventory_sources": [
+    "黎黎隆项目/00_总览/素材文字对接_全库图床清单_20261001.md",
+    "黎黎隆项目/00_总览/图片定位与验证_20260930/SHA256SUMS_全部图片.txt"
+  ],
+  "targets": [
+    {
+      "visual_id": "H29",
+      "name_hint": "多身共鸣体",
+      "legacy_candidate_bucket": "红桶候选",
+      "expected_file": "H29_四宫格候选.png",
+      "historical_relative_path": "03_角色/角色库/红桶头像四宫格候选_20260928/H29_四宫格候选.png",
+      "expected_inventory_kb": 2451,
+      "historical_note": "多身共鸣体（红批，双头有设定依据）",
+      "role_agent_identity_hypothesis": "红色世界的巡回领声人候选；多头/多身结构用于制造“群体共鸣不能替代主体选择”的个人冲突。仅为STAGING身份假设，必须由真图确认解剖结构后再写角色正本。",
+      "user_selected_this_turn": true
+    }
+  ],
+  "scan_policy": {
+    "first": "查本地轻量 catalog/manifest 与已配置 root_id，不先遍历整盘",
+    "fallback": "若 catalog 无命中，只在已配置角色素材 roots 内按文件名、历史相对路径和近似文件名定向搜索",
+    "max_targets": 1,
+    "calculate_sha256_on_found": true,
+    "perceptual_match": "REVIEW_ONLY"
+  },
+  "per_target_output": {
+    "status": "FOUND_EXACT_PATH|FOUND_NAME_MATCH|FOUND_NEAR_MATCH|MISSING",
+    "root_id": "",
+    "relative_path": "",
+    "sha256": "",
+    "width": null,
+    "height": null,
+    "file_size_bytes": null,
+    "view_type": "FOUR_GRID|OTHER|UNKNOWN",
+    "identity_hint": "",
+    "anatomy_check": {
+      "multi_head_or_multi_body_visible": null,
+      "appears_intentional": null,
+      "notes": ""
+    },
+    "notes": ""
+  },
+  "outputs": {
+    "receipt": "黎黎隆项目/20_Agent系统/07_本地执行/角色生图/receipts/ASSET-RESYNC-H29-RED-BUCKET-001.json",
+    "report": "黎黎隆项目/20_Agent系统/06_验证/ASSET_RESYNC_H29_RED_BUCKET_20261001.md"
+  },
+  "success_gate": "返回真实 locator + 实测 sha256，并确认四宫格身份与多头/多身结构是否匹配历史设定。未找到或身份不一致不得注册正式角色、不得分配P00五色桶、不得标production_ready。",
+  "next_agent_on_success": "AG-11_角色Agent",
+  "next_action_on_success": "CHARACTER_AUDIT_H29_AND_WORLD_SYNC",
+  "skill_ref": "07-Codex大脑库/skills/黎黎隆角色库世界素材对账/SKILL.md"
+}
