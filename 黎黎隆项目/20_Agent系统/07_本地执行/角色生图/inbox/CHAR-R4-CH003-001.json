@@ -5,7 +5,7 @@
   "character_id": "LLL-CHAR-003",
   "character_card_ref": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
   "mode": "CHARACTER_VISUAL_BRIEF",
-  "status": "READY_FOR_LOCAL_CODEX",
+  "status": "REVIEWED_RETRY",
   "execution_owner": "LOCAL_CODEX",
   "goal": "为 CH-003 逃票魔法学徒生成第4轮角色生产测试四宫格。保持作者已确认头部与活体帽身份；下半身仍属探索，不得把第一次补全当定稿。",
   "usage_target": "角色比例探索 + 后续H3身份参考候选",
@@ -96,5 +96,9 @@
     "sha256_required": true,
     "prompt_record_required": true,
     "next_route": "STYLE_REVIEW"
-  }
+  },
+  "review_decision": "RETRY",
+  "review_ref": "黎黎隆项目/20_Agent系统/07_本地执行/角色生图/reviews/CHAR-R4-CH003-001.style-review.json",
+  "retry_task_id": "CHAR-R4-CH003-002",
+  "previous_candidate_asset_id": "candidate-local:sha256:6E858457D5E02D58630B0A0D5F235A88159E8A5CC92E7396B8036932674782D9"
 }
