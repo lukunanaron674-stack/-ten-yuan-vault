@@ -1,6 +1,6 @@
 {
   "schema_version": "lililong-visual-character-candidates/v1.0",
-  "updated_at": "2026-10-01T20:52:00+08:00",
+  "updated_at": "2026-10-01",
   "source_manifest": "黎黎隆项目/00_总览/素材文字对接_全库图床清单_20261001.md",
   "source_sha_index": "黎黎隆项目/00_总览/图片定位与验证_20260930/SHA256SUMS_全部图片.txt",
   "caveat": "The current main branch role directory does not contain the historical H/N/S asset subdirectories referenced by the inventory. Therefore these are indexed visual candidates, not live H3-bindable assets, until resynced and reverified.",
@@ -105,14 +105,16 @@
       "inventory_kb": "2677",
       "latest_evidence_date": "2026-09-29",
       "user_selected": true,
-      "notes": "旧门看守人（青F-Q0，用户已选）",
-      "character_registration": "UNREGISTERED_VISUAL_CANDIDATE",
-      "world_region": "UNASSIGNED",
+      "notes": "旧门看守人（用户已选）；文字角色设计已登记；世界职责=跨区边境归返/身份连续性验证；真图仍待重同步",
+      "character_registration": "TEXT_DESIGN_REGISTERED",
+      "world_region": "cross_region",
       "p00_color_bucket": "UNASSIGNED",
-      "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
+      "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_RESYNC",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P0"
+      "priority": "P0",
+      "text_design_path": "03_角色/角色库/候选角色/H04_旧门看守人.md",
+      "story_seed_path": "05_故事素材/角色绑定/H04_旧门看守人_故事种子.md"
     },
     {
       "visual_id": "H05",
