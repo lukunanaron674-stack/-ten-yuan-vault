@@ -15,6 +15,8 @@
 - 原稿只确认上半身时，下半身保持UNKNOWN；首次AI补全不得变成正本。
 - 角色视觉优先“头像 + 中全景/中景四宫格”，9:16 2×2；至少两格读比例，一格锁头，一格45°半侧。
 - identity_anchor 锁角色是谁；style_anchors 锁作者画法。风格锚点优先从真实已确认资产筛 3–6 张，不能纯文字代替。
+- 角色视觉默认执行者是本地 Codex：AG-11 写 CHARACTER_CODEX_TASK 到本地角色生图 inbox；AG-05 仅作明确指定时的备用链。
+- 本地 Codex 跑图完成必须回写 receipt + output sha256；receipt 不能代替视觉审核。
 - 生图后必须 AG-06 审核；角色一致性40 / 项目风格30 / 生产可用性20 / AI异常10；<80 不进入 approved。
 - 核心冻结项被改直接 REPLAN。
 - GitHub角色库只登记真实存在的路径/asset_id，不伪造聊天附件路径。
