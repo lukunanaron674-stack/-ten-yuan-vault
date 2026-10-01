@@ -64,6 +64,8 @@ character_state:
 asset_state:
   existence: VERIFIED|MISSING
   views: []
+  best_view_type: FOUR_GRID|FULL_BODY|MEDIUM_FULL|HEAD_ONLY|NONE
+  visual_readiness: READY_4GRID|REFERENCE_PARTIAL|HEAD_ONLY_DESIGN_PENDING|ASSET_UNVERIFIED
   source_path:
   sha256:
   style_review: PASS|PENDING|FAIL|UNKNOWN
@@ -73,6 +75,18 @@ production_eligibility:
   status: READY|NEEDS_CHARACTER_AUDIT|NEEDS_ASSET_REVIEW|BLOCKED
   blockers: []
 ```
+
+## 角色设计可用度｜用户当前口径
+素材端先给角色设计层一个简单结论：
+
+| 真实素材 | visual_readiness | 角色设计结论 |
+|---|---|---|
+| 身份匹配的四宫格 | READY_4GRID | **可用**，可作为角色完整设计参考继续生产 |
+| 全身/中全景但无四宫格 | REFERENCE_PARTIAL | 部分可用，建议补四宫格 |
+| 只有单头像 | HEAD_ONLY_DESIGN_PENDING | **待设计**，不得假装全身完成 |
+| 无真实可定位图 | ASSET_UNVERIFIED | 待素材核验 |
+
+`READY_4GRID` 是角色设计完成度，不自动跳过 AG-06 风格审核/H3绑定等正式生产门禁。
 
 ## 正式生产 READY 条件
 必须同时满足：
