@@ -33,7 +33,21 @@
 | SHOT-LLL-60S-06 | ~10s | PENDING | 局部结算 / 余波 |
 
 ## 当前路由
-DIRECTOR_INIT → THEME_PLAN → SCRIPT_PROPOSAL → TENYUAN_REVIEW → STORYBOARD_BUILD → ASSET_CHECK → H3 → VIDEO_REVIEW
+ASSET_AUDIT → STYLE_REVIEW → THEME_PLAN_FROM_ASSETS → SCRIPT_PROPOSAL → TENYUAN_REVIEW → STORYBOARD_BUILD → ASSET_RECHECK → LONGTAKE_PLAN → H3_LONGTAKE → VIDEO_REVIEW
+
+## 素材前置
+- 正式创作先消费 [[GOAL-LLL-60S-001_ASSET_READY_REPORT]]。
+- 主题与剧本只能在已确认素材边界内选择最强方案。
+- 优先使用机械空港同一场景族，除非后续审核明确判定不适用。
+- 不再先写完整剧情后反向逼素材补洞。
+
+## LongTake
+- formal_h3_mode: LONGTAKE
+- target_segments: 6
+- nominal_segment_duration: 8–10s
+- continuity: previous segment closing_state → next segment opening_state
+- rerender_policy: segment-level retry
+- scene_switch: only at explicit edit boundary
 
 ## 当前硬门禁
 - 没有真实 H3 executor receipt，不得标记 RENDERING。
