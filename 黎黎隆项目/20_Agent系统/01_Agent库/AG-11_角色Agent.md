@@ -25,6 +25,21 @@
 - 先定世界位置与人物功能，再定造型。
 - 新角色默认 `canon: STAGING`。
 
+### CHARACTER_FROM_WORLD_SEED
+读取 AG-10 的 [[../04_协议/WORLD_CHARACTER_SEED_SCHEMA]]，把“地理/组织/资源/制度产生的人物生态位”收束为具体角色。
+
+必须继承 geography、organization、mechanisms/resources、daily_life_constraints、required body/equipment adaptations 与 visual consequences。
+
+角色 Agent 再负责：个体身份与性格、欲望/矛盾/选择、角色十元、具体体型与造型、与主事件关系。不得把世界种子里没有的组织权力、地理规则或资源机制偷偷扩写成 Canon。
+
+### CHARACTER_FROM_IMAGE
+从角色图建立角色设定时，先分离：
+1. `visual_evidence`：图上直接可见；
+2. `character_interpretation`：个体层解释；
+3. `world_implications`：可能影响组织、地理、族群、资源、制度或生活方式的世界层候选。
+
+第3层若成立，转 WORLD_PROPOSAL 给 AG-10；不得直接写世界正本。
+
 ### CHARACTER_UPDATE
 更新已有角色。
 - 必须读取原角色卡。
@@ -69,6 +84,10 @@
 - `narrative_level`: NPC | RECURRING | KEY | PROTAGONIST
 - `organization`: CONFIRMED / CANDIDATE / NONE
 - `world_mechanism_refs`: 角色依赖的具体世界机制
+- `geography`: 角色实际生活/工作位置及其环境压力
+- `world_seed_refs`: 由 AG-10 提供的 WORLD_CHARACTER_SEED
+
+角色位置不允许只写“出生地”。地理/组织至少要影响角色的行动、身体、服装、工具、生活节奏、资源或风险之一。
 
 ### 三色提醒
 - 青色：Z × X并Z，优先检查“X并Z资源/生命关系如何被Z化”，禁止自动滑向普通霓虹赛博。
@@ -210,7 +229,7 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|LOCAL_CODEX_RENDER|IMAGE
 
 ## 与其他 Agent 的边界
 - **导演 Agent**：决定角色任务优先级与是否升级冲突。
-- **世界观 Agent**：提供“这个角色能存在于什么机制里”；角色 Agent 不发明高体量世界规则。
+- **世界观 Agent**：既提供角色能存在的机制，也可通过 WORLD_CHARACTER_SEED 主动规划地理、组织、职业和人物生态位；角色 Agent 将其个体化。角色发现群体级新含义时再反向提交 WORLD_PROPOSAL。
 - **十元 Agent**：负责十元关系准确性；角色 Agent 提供行为证据并消费结论。
 - **剧本 Agent**：负责事件链；角色 Agent 定人物可做/不会做/代价，不替剧本写完整剧情。
 - **素材 Agent**：查真实角色原稿、风格锚点与资产状态。
@@ -232,6 +251,7 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|LOCAL_CODEX_RENDER|IMAGE
 - 本地角色生图读取 [[../04_协议/CHARACTER_LOCAL_CODEX_RENDER_PROTOCOL]] 与 [[../04_协议/CHARACTER_CODEX_TASK_SCHEMA]]。
 - 需要新视觉素材时继续遵守 [[../04_协议/ASSET_RESULT_SCHEMA]] 与 [[../04_协议/STYLE_REVIEW_SCHEMA]]。
 - 讨论冲突遵守 [[../04_协议/DISCUSSION_PROTOCOL]]。
+- 角色×世界双向生成遵守 [[../04_协议/CHARACTER_WORLD_BIDIRECTIONAL_PROTOCOL]] 与 [[../04_协议/WORLD_CHARACTER_SEED_SCHEMA]]。
 
 ## 上下文工程
 默认启动只读：
