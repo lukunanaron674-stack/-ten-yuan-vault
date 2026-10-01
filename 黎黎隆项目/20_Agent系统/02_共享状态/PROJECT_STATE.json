@@ -1,6 +1,6 @@
 {
-  "schema_version": "2.3",
-  "state_version": 19,
+  "schema_version": "2.4",
+  "state_version": 20,
   "project_id": "LLL",
   "project_name": "黎黎隆",
   "pipeline": "B端_Agent",
@@ -10,8 +10,8 @@
   "current_scene_id": "SCN-LLL-60S-001",
   "current_shot_id": "SHOT-LLL-60S-01",
   "active_job_id": "JOB-LLL-60S-001",
-  "last_writer": "director_exclude_all_CH_family",
-  "updated_at": "2026-10-01T20:10:00+08:00",
+  "last_writer": "director_build_nonCH_candidate_registry",
+  "updated_at": "2026-10-01T20:55:00+08:00",
   "director_goal": {
     "goal_id": "GOAL-LLL-60S-001",
     "mode": "PRODUCTION",
@@ -41,7 +41,7 @@
     "completed_at": null
   },
   "scene": {
-    "goal": "制作一个约60秒完整小事件：黎黎隆主动争取/试探某个具体目标，第一次行动使局面复杂化，随后被迫变招并承担局部代价；只使用现有正本世界规则，不自动升级非正史候选。",
+    "goal": "制作约60秒完整小事件；主角必须从当前非CH视觉候选注册表中经角色×素材联合审核后选择。主题与剧情根据最终通过的真实角色/场景素材生成，不预设黎黎隆为主角。",
     "target_duration_sec": 60,
     "completed_duration_sec": 0,
     "status": "PLANNING"
@@ -63,7 +63,7 @@
     "world_gate": "BYPASS",
     "world_result": null,
     "new_world_rule_required": false,
-    "asset_recheck": "FAIL_CHARACTER_INCOMPLETE"
+    "asset_recheck": "WAIT_NONCH_CHARACTER_ASSET_SYNC"
   },
   "assets": {
     "status": "UNCHECKED",
@@ -71,14 +71,10 @@
     "policy": "ASSET_FIRST",
     "asset_pack_id": null,
     "primary_character": null,
-    "primary_scene_family": "机械空港",
+    "primary_scene_family": null,
     "required": [],
     "resolved": [],
-    "optional": [
-      "SCENE-05",
-      "SCENE-06",
-      "SCENE-10"
-    ],
+    "optional": [],
     "missing": [],
     "pending_style_review": [],
     "approved": [],
@@ -90,7 +86,7 @@
       "reason": "No traceable style PASS receipt or current visual comparison evidence found; manifest registration is insufficient for formal PASS."
     },
     "style_review": {
-      "decision": "NOT_APPLICABLE_UNTIL_CHARACTER_COMPLETE"
+      "decision": "NOT_STARTED"
     }
   },
   "render": {
@@ -102,7 +98,7 @@
     "mid_frame": null,
     "tail_frame": null,
     "params": {
-      "project_name": "lll_60s_airport_001",
+      "project_name": null,
       "clip_frames": 243,
       "context_frames": 5,
       "segments": 6,
@@ -113,7 +109,7 @@
       "seam_match": "color",
       "steps": 4
     },
-    "last_error": "USER_CANONICAL_ASSET_GATE: LLL-MAIN-001 incomplete",
+    "last_error": null,
     "dispatch_mode": "LONGTAKE",
     "task_file_path": null,
     "queue_write_status": "NOT_WRITTEN",
@@ -127,7 +123,7 @@
       "target_segments": 6,
       "nominal_segment_duration_sec": "8-10",
       "same_character_ref": true,
-      "preferred_scene_family": "机械空港",
+      "preferred_scene_family": null,
       "continuity_rule": "PASS closing_state -> next opening_state",
       "retry_policy": "SEGMENT_LEVEL"
     }
@@ -159,10 +155,10 @@
   "pending_deltas": [],
   "blockers": [
     {
-      "id": "BLK-NONCH-CANDIDATE-DISCOVERY",
-      "type": "ASSET_SELECTION",
+      "id": "BLK-HNSNPC-ASSET-RESYNC",
+      "type": "ASSET_RESYNC_REQUIRED",
       "scope": "GOAL-LLL-60S-001",
-      "detail": "User excludes all CH-family characters. Discover candidates only from H01-H30, N01-N30, S01-S19 and NPC-* pools, then hand off to Character Agent for identity audit.",
+      "detail": "80个H/N/S/NPC视觉候选已登记；历史清单/SHA有证据，但current main缺对应图片子目录。先恢复或验证P0/P1候选真图，再由角色Agent审身份。CH-*与LLL-MAIN-*继续排除。",
       "owner": "asset_agent",
       "hard_gate": true
     }
@@ -172,7 +168,7 @@
     "owner": null,
     "reason": null
   },
-  "next_action": "ASSET_DISCOVER_NON_CH_H_N_S_NPC_CANDIDATES",
+  "next_action": "ASSET_RESYNC_P0_H04_H06_H09_THEN_CHARACTER_AUDIT",
   "assigned_agent": "asset",
   "production_loop": {
     "protocol_version": "v1",
@@ -185,9 +181,9 @@
     "current_scene_id": "SCN-LLL-60S-001",
     "current_shot_id": "SHOT-LLL-60S-01",
     "pipeline_policy": "ASSET_FIRST_LONGTAKE",
-    "current_stage": "NON_CH_CHARACTER_DISCOVERY",
+    "current_stage": "NON_CH_REGISTRY_READY_ASSET_RESYNC",
     "canceled_task_id": "LLL_LONGTAKE_20261001_1930_GOAL60S",
-    "resume_condition": "NON_LLL_PRODUCTION_READY_CHARACTER_SELECTED"
+    "resume_condition": "NON_CH_CANDIDATE_LIVE_ASSET_AND_CHARACTER_AUDIT_PASS"
   },
   "orchestration": {
     "protocol_version": "v1.1",
@@ -197,7 +193,7 @@
     "no_op_on_same_state_hash": true,
     "max_primary_agents_per_tick": null,
     "max_dependent_agents_per_tick": 1,
-    "stop_condition": "HARD_ASSET_GATE"
+    "stop_condition": "HARD_ASSET_RESYNC_GATE"
   },
   "context_engineering": {
     "protocol_version": "v1",
@@ -260,13 +256,9 @@
     ],
     "current_candidate": null,
     "fallback_candidates": [
-      "CH-006",
-      "CH-014",
-      "CH-009",
-      "CH-010",
-      "CH-011",
-      "CH-012",
-      "S01-S19"
+      "P1_FOUR_GRID_CANDIDATES",
+      "P2_PARTIAL_VISUALS",
+      "P3_HEAD_ONLY"
     ],
     "allowed_candidate_pools": {
       "H": "H01-H30",
@@ -279,6 +271,34 @@
       "LLL-MAIN-*",
       "legacy B-end character_pool_index"
     ],
-    "selection_note": "H/N/S are visual candidate slots; not automatically production-ready characters. Character Agent must establish identity/role; Asset Agent must verify real assets."
+    "selection_note": "H/N/S are visual candidate slots; not automatically production-ready characters. Character Agent must establish identity/role; Asset Agent must verify real assets.",
+    "registry": {
+      "markdown": "03_角色/角色库/01_视觉候选总表_HNSNPC.md",
+      "json": "03_角色/角色库/01_视觉候选总表_HNSNPC.json",
+      "status": "ACTIVE",
+      "total_candidates": 80,
+      "four_grid_candidates": 35,
+      "current_main_asset_sync": "NEEDS_RESYNC"
+    },
+    "priority_queue": [
+      {
+        "visual_id": "H04",
+        "name_hint": "旧门看守人",
+        "priority": "P0",
+        "reason": "用户已选 + 四宫格候选"
+      },
+      {
+        "visual_id": "H06",
+        "name_hint": "钢铁教派主教",
+        "priority": "P0",
+        "reason": "用户已选 + 四宫格候选"
+      },
+      {
+        "visual_id": "H09",
+        "name_hint": "返身位登记员",
+        "priority": "P0",
+        "reason": "用户已选 + 四宫格候选"
+      }
+    ]
   }
 }
