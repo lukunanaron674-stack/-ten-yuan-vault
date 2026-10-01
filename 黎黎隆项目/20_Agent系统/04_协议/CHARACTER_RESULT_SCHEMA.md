@@ -34,6 +34,7 @@ character:
     value:
     status: CONFIRMED|CANDIDATE|NONE
   world_mechanism_refs: []
+  world_position_status: CONFIRMED|CANDIDATE|UNKNOWN
 
 tenyuan:
   main:
@@ -42,6 +43,29 @@ tenyuan:
   status: VERIFIED|AUTHOR_INPUT|NEEDS_TENYUAN_REVIEW
   behavior_evidence: []
   forbidden_inferences: []
+
+body_structure:
+  status: LOCKED|PARTIAL|EXPLORING|NEEDS_GRAYBODY_TEST
+  source_priority:
+    - AUTHOR_IMAGE
+    - AUTHOR_NUMERIC
+    - CHARACTER_CARD
+    - TENYUAN_BODY_RESEARCH
+    - STANDARD_ANATOMY
+  numeric_profile: []
+  observed_variables:
+    head_body_ratio:
+    shoulder_width:
+    ribcage_length:
+    pelvis_width:
+    leg_torso_ratio:
+    joint_mass:
+    extremity_mass:
+    center_of_gravity:
+  unknown_regions: []
+  candidate_body_types: []
+  conflict_notes: []
+  graybody_test_required: false
 
 visual:
   identity_anchor: []
@@ -84,6 +108,11 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|IMAGE_GENERATE|STYLE_REV
 7. 核心冻结项变化直接 REPLAN，不允许靠平均分蒙混过关。
 8. 没有真实 asset_id / source_path / sha256 或仓库真实路径时，不得伪造资产已归档。
 9. 角色卡写回后 `writeback.written=true`，但这不改变 SHOT / RENDER 状态。
+10. 世界位置、十元、视觉、身体结构、资产状态必须独立记录，禁止互相推导为“都已确认”。
+11. 作者原稿/作者数字比例优先于十元体型研究；理论冲突只能记录，不得自动修正原稿。
+12. 原稿未确认的身体区域必须进入 `unknown_regions`，AI首次补全不得直接升级为 LOCKED。
+13. XN vs X 分界仍为研究态；需要时 `body_structure.status=NEEDS_GRAYBODY_TEST`。
+14. 数字比例必须绑定身体落点、主辅权重、分布与证据状态，不得把单个数字当固定体型标签。
 
 ## 角色视觉回写
 风格审核 PASS 后，角色 Agent只追加/更新：
