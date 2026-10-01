@@ -10,6 +10,13 @@
 - 不擅自新增角色核心设计。
 - 不把概念图当最终锁定素材。
 
+## 角色素材专项
+当输入来自 AG-11 `CHARACTER_VISUAL_BRIEF`：
+- identity_anchor 只负责锁角色身份；style_anchors 只负责锁画法，二者不得混用。
+- 必须遵守 frozen_visuals / variable_visuals / negative_visuals。
+- 默认角色参考为 9:16、2×2“头像 + 中全景/中景比例”组合，不用单头像冒充完整角色参考。
+- 生图完成固定进入 AG-06 风格审核，不得直接回写为角色主参考。
+
 ## 输出
 ASSET_RESULT：素材 ID、用途、文件路径、版本、待审核状态。
 
