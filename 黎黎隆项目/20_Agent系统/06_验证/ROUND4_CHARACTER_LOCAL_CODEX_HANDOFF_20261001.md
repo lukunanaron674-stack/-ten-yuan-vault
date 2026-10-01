@@ -1,9 +1,9 @@
 # ROUND4｜角色 Agent 本地 Codex 生产闭环交接｜2026-10-01
 
 ## 当前状态
-**READY_FOR_LOCAL_CODEX**
+**RETRY_2_QUEUED**
 
-第4轮尚未判 PASS。现在已完成的是“角色代理 → 本地 Codex”的真实工单交接。
+第4轮尚未判 PASS。第1抽已真实生成并产生审核记录；审核结论为 RETRY，第2抽已自动写入本地 Codex inbox。
 
 ## 测试角色
 - character_id: `LLL-CHAR-003`
@@ -35,18 +35,43 @@
 - [x] 导演角色链改为本地 Codex
 - [x] CTX-11 写入本地执行规则
 
-## 等待本地 Codex 返回
+## 第1抽审核结果
+- 审核文件：`07_本地执行/角色生图/reviews/CHAR-R4-CH003-001.style-review.json`
+- candidate asset：`candidate-local:sha256:6E858457D5E02D58630B0A0D5F235A88159E8A5CC92E7396B8036932674782D9`
+- identity：PASS
+- silhouette：PASS
+- linework：PASS
+- flat_2d_readability：PASS
+- palette：PASS
+- material_feel：PASS
+- proportion：FAIL
+- composition_for_usage：FAIL
+- forbidden_redesign：FAIL
+- decision：**RETRY**
+- approval：NOT_APPROVED
+
+### 失败原因
+1. A/B 下半身比例差异太小，比例实验没有真正成立。
+2. 右下格只到头肩，缺少 45° 头帽→肩→胸连接。
+3. 暗色上衣仍可能被误读成斗篷/披风。
+
+> 当前审核文件自报为 `LOCAL_CODEX_SELF_REVIEW` 且 `Text-only audit`，不是独立 AG-06 实图签字，因此不能把本轮误记为 PASS。
+
+## 第2抽
+- task：`CHAR-R4-CH003-002`
+- 状态：`READY_FOR_LOCAL_CODEX`
+- 原则：只改三项 FAIL；上一轮 PASS 的脸、帽、线稿、色卡、水彩纸感全部冻结。
+- execute_without_second_confirmation：true
+
+## 等待第2抽返回
 必须得到：
-- [ ] identity/style 真实资产解析
-- [ ] 真实输出图片
-- [ ] output root_id + relative_path
-- [ ] SHA-256
-- [ ] prompt/参数记录
-- [ ] receipt
-- [ ] AG-06 实图审核
-- [ ] PASS 后 AG-11 回写角色卡
+- [ ] 新真实输出
+- [ ] 新 output hash / 可解析路径或本地 catalog locator
+- [ ] prompt / 参数记录
+- [ ] 审核结果
+- [ ] 若 PASS，再由 AG-11 回写角色卡
 
 ## Round 4 判定
-当前：**HANDOFF READY / NOT YET PASS**
+当前：**RETRY 2 QUEUED / NOT YET PASS**
 
 只有本地 Codex 真实跑完并经过视觉审核，才允许写 ROUND-04 PASS。
