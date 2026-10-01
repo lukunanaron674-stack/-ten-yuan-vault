@@ -1,4 +1,4 @@
-# AUTO_DISPATCH_PROTOCOL｜第七轮自动调度 v1
+# AUTO_DISPATCH_PROTOCOL｜自动调度 v1.1｜素材前置 + LongTake
 
 ## 目标
 导演 Agent 每个调度 tick 只根据唯一状态源决定“下一位应该是谁”，不把所有 Agent 全部唤醒。
@@ -43,23 +43,37 @@
 ## 路由
 以 [[DISPATCH_TABLE.json]] 为机器可读正本。
 
-典型：
+典型（正式生产）：
 - IDLE + PRODUCTION goal → director
-- PLANNING → theme
+- PLANNING + ASSET_UNCHECKED → **asset**
+- ASSET_MISSING → image（缺口允许自动补图时）
+- ASSET_PENDING_REVIEW / IMAGE_GENERATED → style_review
+- ASSET_READY + PLANNING → **theme（必须基于已批准素材包）**
 - THEME_READY + world_gate REQUIRED → world
-- THEME_READY/BYPASS 或 WORLD_READY → script
+- THEME_READY/BYPASS 或 WORLD_READY → script（不得超出素材边界）
 - SCRIPT_READY → tenyuan
 - TENYUAN_READY → storyboard
-- STORYBOARD_READY → asset
-- ASSET_MISSING → image（前提：缺口允许自动补图）
-- ASSET_PENDING_REVIEW / IMAGE_GENERATED → style_review
-- ASSET_READY → h3
+- STORYBOARD_READY → asset_recheck（只核验分镜新增需求）
+- STORYBOARD_READY + ASSET_READY + asset_recheck PASS → h3，正式模式固定 **LONGTAKE**
 - RENDER_QUEUED 无 receipt → NO_OP / 等待回执
 - RENDER_DONE → video_review
 - RETRY → 根据 retry_packet.route
 - REPLAN → 根据 failure_family 回退
-- PASS → director 合并 closing_state 并创建下一镜
+- PASS → director 合并 closing_state，并把它作为下一 LongTake segment 的 opening_state
 - BLOCKED → blocker.owner；若需要用户决策则 ESCALATE_USER
+
+### 素材前置原则
+- 正式生产禁止默认“主题先行再找素材”。
+- 素材 Agent 先锁定真实可绑定角色、场景、风格状态和 LongTake 可连续性。
+- 主题 / 剧本必须消费已批准的 asset_pack，不能脱离素材包凭空增加必要场景/角色。
+- 分镜若新增不可替代素材需求，必须回到 asset_recheck，不得直接把缺口塞进 H3 Prompt。
+
+### LongTake 原则
+- 正式 H3 默认 `LONGTAKE`；独立短测试才允许普通单段模式。
+- 60s 目标默认拆为约 6 个 8–10s segment。
+- 同一连续段优先共享主角色参考、场景族、光线和色彩脚本。
+- 上一 segment 只有 VIDEO_REVIEW=PASS 后，其 closing_state 才能继承给下一段 opening_state。
+- 局部失败优先单 segment RETRY，不因一个坏段重做整分钟。
 
 ## 自动调度不可越权
 - 不得用自动调度绕过 READY 门禁。
