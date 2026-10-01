@@ -12,6 +12,7 @@
 - 导演 Agent → [[IDX-00_导演Agent索引]]
 - **主题 Agent → [[IDX-06_主题Agent索引]]**
 - **世界观 Agent → [[IDX-07_世界观Agent索引]]**
+- **角色 Agent → [[IDX-11_角色Agent索引]]**
 - 剧本 Agent → [[IDX-01_剧本Agent索引]]
 - 十元 Agent → [[IDX-02_十元Agent索引]]
 - 分镜 Agent → [[IDX-03_分镜Agent索引]]
