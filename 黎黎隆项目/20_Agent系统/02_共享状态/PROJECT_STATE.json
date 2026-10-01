@@ -1,6 +1,6 @@
 {
   "schema_version": "1.7",
-  "state_version": 10,
+  "state_version": 11,
   "project_id": "LLL",
   "project_name": "黎黎隆",
   "pipeline": "B端_Agent",
@@ -10,8 +10,8 @@
   "current_scene_id": "SCN-LLL-60S-001",
   "current_shot_id": "SHOT-LLL-60S-01",
   "active_job_id": "JOB-LLL-60S-001",
-  "last_writer": "director_init_goal_60s",
-  "updated_at": "2026-10-01T17:42:30+08:00",
+  "last_writer": "theme_agent",
+  "updated_at": "2026-10-01T18:36:12+08:00",
   "director_goal": {
     "goal_id": "GOAL-LLL-60S-001",
     "mode": "PRODUCTION",
@@ -36,19 +36,38 @@
     "goal": "制作一个约60秒完整小事件：黎黎隆主动争取/试探某个具体目标，第一次行动使局面复杂化，随后被迫变招并承担局部代价；只使用现有正本世界规则，不自动升级非正史候选。",
     "target_duration_sec": 60,
     "completed_duration_sec": 0,
-    "status": "PLANNING"
+    "status": "THEME_READY"
   },
   "shot": {
-    "status": "PLANNING",
+    "status": "THEME_READY",
     "duration_sec": 10,
-    "plan_version": 0,
+    "plan_version": 1,
     "attempt_no": 0,
     "previous_shot_id": null,
     "next_shot_id": "SHOT-LLL-60S-02",
     "opening_state": null,
     "closing_state": null,
     "continuity_check": "NOT_REQUIRED",
-    "theme_result": null,
+    "theme_result": {
+      "primary_dimension": "因果",
+      "secondary_dimensions": [],
+      "theme_question": "当黎黎隆为了更快赢而主动省略确认、抢先行动时，她能否及时识别‘自己的行动正在制造新的阻碍’，而不是只把阻碍理解成外部妨碍？",
+      "experiment": "只改变行动与后果之间的可见度：让她的第一次主动抢先动作在本镜末端产生一个清楚、可追溯但尚未完全展开的反作用；不在本镜解决后果。",
+      "pressure": "原因可见度由低转高：起初她只看到目标和捷径，动作发生后出现一个与该动作直接相连的新阻碍，使‘太想赢使局面复杂化’成为可见因果而非性格旁白。",
+      "dilemma_target": "后续镜头必须迫使她选择继续加码抢赢，还是承认刚才的动作改变了局面并变招。",
+      "shot01_theme_node": "建立主动目标，并在8–10秒末端留下第一次行动→新阻碍的因果钩子；单镜不承担完整主题回答。",
+      "acceptance": [
+        "删掉黎黎隆的第一次抢先动作，新阻碍就不应以同样方式发生",
+        "观众无需旁白即可看出动作与新阻碍存在直接关系",
+        "本镜只建立因果压力，不提前完成变招或代价结算"
+      ],
+      "source_refs": [
+        "03_知识库/上下文提炼/CTX-09_主题.md",
+        "03_知识库/TK-01_五维主题问题骨架.md"
+      ],
+      "verification": "READY_FOR_SCRIPT",
+      "new_world_rule_required": false
+    },
     "script_result": null,
     "tenyuan_result": null,
     "storyboard_result": null,
@@ -114,8 +133,8 @@
     "owner": null,
     "reason": null
   },
-  "next_action": "THEME_PLAN",
-  "assigned_agent": "theme",
+  "next_action": "SCRIPT_PROPOSAL",
+  "assigned_agent": "script",
   "production_loop": {
     "protocol_version": "v1",
     "status": "ACTIVE",
