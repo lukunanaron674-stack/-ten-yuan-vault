@@ -1,17 +1,17 @@
 {
   "schema_version": "1.7",
-  "state_version": 9,
+  "state_version": 10,
   "project_id": "LLL",
   "project_name": "黎黎隆",
   "pipeline": "B端_Agent",
   "run_mode": "PRODUCTION",
   "production_gate": "OPEN_BY_USER_DIRECTOR_GOAL",
   "project_status": "ACTIVE",
-  "current_scene_id": null,
-  "current_shot_id": null,
+  "current_scene_id": "SCN-LLL-60S-001",
+  "current_shot_id": "SHOT-LLL-60S-01",
   "active_job_id": "JOB-LLL-60S-001",
-  "last_writer": "director_user_goal_60s",
-  "updated_at": "2026-10-01T17:42:00+08:00",
+  "last_writer": "director_init_goal_60s",
+  "updated_at": "2026-10-01T17:42:30+08:00",
   "director_goal": {
     "goal_id": "GOAL-LLL-60S-001",
     "mode": "PRODUCTION",
@@ -33,18 +33,18 @@
     "completed_at": null
   },
   "scene": {
-    "goal": "由导演确定一个能在60秒内成立的完整小事件，突出黎黎隆ZX主/Z次的行动性与“太想赢使局面变复杂”，不改核心设定；优先落在已有世界观与可用场景中。",
+    "goal": "制作一个约60秒完整小事件：黎黎隆主动争取/试探某个具体目标，第一次行动使局面复杂化，随后被迫变招并承担局部代价；只使用现有正本世界规则，不自动升级非正史候选。",
     "target_duration_sec": 60,
     "completed_duration_sec": 0,
-    "status": "IDLE"
+    "status": "PLANNING"
   },
   "shot": {
-    "status": "IDLE",
+    "status": "PLANNING",
     "duration_sec": 10,
     "plan_version": 0,
     "attempt_no": 0,
     "previous_shot_id": null,
-    "next_shot_id": null,
+    "next_shot_id": "SHOT-LLL-60S-02",
     "opening_state": null,
     "closing_state": null,
     "continuity_check": "NOT_REQUIRED",
@@ -114,8 +114,8 @@
     "owner": null,
     "reason": null
   },
-  "next_action": "DIRECTOR_INIT",
-  "assigned_agent": "director",
+  "next_action": "THEME_PLAN",
+  "assigned_agent": "theme",
   "production_loop": {
     "protocol_version": "v1",
     "status": "ACTIVE",
@@ -131,7 +131,9 @@
     "active_goal_id": "GOAL-LLL-60S-001",
     "target_duration_sec": 60,
     "target_shot_count": 6,
-    "completed_shots": 0
+    "completed_shots": 0,
+    "current_scene_id": "SCN-LLL-60S-001",
+    "current_shot_id": "SHOT-LLL-60S-01"
   },
   "orchestration": {
     "protocol_version": "v1",
