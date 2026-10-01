@@ -20,6 +20,12 @@ director
 必要时允许一次：
 `script → theme(THEME_AUDIT) → script`
 
+## 独立角色任务轨
+角色创建/更新与正式镜头分轨：
+`director/user goal → character → (world/tenyuan review when required) → asset → image(if missing) → style_review → character writeback`
+
+角色任务统一使用 [[CHARACTER_RESULT_SCHEMA]]；不得因为角色卡写回而推进 SHOT / RENDER 状态。
+
 ## 统一输入头
 每个 Agent 必须收到：
 - project_id
@@ -45,6 +51,7 @@ director
 ## 各 Agent 责任
 - **theme_agent**：只定义五维主题问题、主题实验、压力机制和人物困境目标，不写完整剧情；只提交 `theme_result`。
 - **world_agent**：仅在 `world_gate = REQUIRED` 时做 Canon / 区域规则 / 文明机制校验；只提交 `world_result`。普通镜头 BYPASS，不强制参与。
+- **character_agent**：新建/更新角色正本、定义人物世界位置与视觉冻结项；只提交 `character_result`。不直接生图，不自行改十元/世界 Canon。
 - script_agent：根据 theme_result 定义故事变化，不定机位；只提交 `script_result`。
 - tenyuan_agent：只定义十元结构与验证状态，不强改主题/剧情；只提交 `tenyuan_result`。
 - storyboard_agent：把前三者变成时间镜头；只提交 `storyboard_result`。
