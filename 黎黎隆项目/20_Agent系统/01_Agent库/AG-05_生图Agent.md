@@ -11,6 +11,8 @@
 - 不把概念图当最终锁定素材。
 
 ## 角色素材专项
+AG-11 的角色视觉默认由本地 Codex 执行，本 Agent 是备用生图链。只有用户/导演明确指定 AG-05 时才接收角色任务。
+
 当输入来自 AG-11 `CHARACTER_VISUAL_BRIEF`：
 - identity_anchor 只负责锁角色身份；style_anchors 只负责锁画法，二者不得混用。
 - 必须遵守 frozen_visuals / variable_visuals / negative_visuals。
