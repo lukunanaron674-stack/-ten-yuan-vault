@@ -53,3 +53,13 @@ ASSET_AUDIT → STYLE_REVIEW → THEME_PLAN_FROM_ASSETS → SCRIPT_PROPOSAL → 
 - 没有真实 H3 executor receipt，不得标记 RENDERING。
 - 缺真实角色/场景绑定时不得伪造“已可渲染”。
 - PASS 镜头的 closing_state 才能继承给下一镜 opening_state。
+
+
+## 当前阻塞｜黎黎隆角色未完成
+- status: BLOCKED_CHARACTER_INCOMPLETE
+- character: LLL-MAIN-001
+- user_canonical: 黎黎隆当前未完成，禁止正式 H3。
+- canceled_task: LLL_LONGTAKE_20261001_1930_GOAL60S
+- B端 inbox 中该任务已撤销。
+- 已完成的主题/剧本/十元/LongTake 方案只保留为**预研草案**，不得视为生产批准。
+- resume_condition: 用户明确确认黎黎隆角色完成，然后重新从素材审核开始。
