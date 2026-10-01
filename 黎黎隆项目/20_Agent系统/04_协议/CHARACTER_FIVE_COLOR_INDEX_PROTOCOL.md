@@ -37,7 +37,7 @@
 ## 五色分桶依据
 优先看：
 1. 已审核四宫格主参考；
-2. 已确认全身/中全景主参考；
+2. 已确认全身 / 中全景 / 中景主参考；
 3. 作者原稿；
 4. 单头像只能做 provisional，不得永久定桶；
 5. 文字颜色描述不能替代真图。
@@ -46,10 +46,9 @@
 
 ## 每个色桶内排序
 先按视觉完成度：
-1. READY_4GRID
-2. FULL_OR_MEDIUM_REFERENCE
-3. HEAD_ONLY_DESIGN_PENDING
-4. ASSET_UNVERIFIED
+1. READY_VISUAL
+2. HEAD_ONLY_DESIGN_PENDING
+3. ASSET_UNVERIFIED
 
 同级再按稳定主 ID 排序。
 
