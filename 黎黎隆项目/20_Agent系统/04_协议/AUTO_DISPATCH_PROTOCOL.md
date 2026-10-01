@@ -1,4 +1,4 @@
-# AUTO_DISPATCH_PROTOCOL｜自动调度 v1.1｜素材前置 + LongTake
+# AUTO_DISPATCH_PROTOCOL｜自动调度 v1.2｜RUN_UNTIL_EXTERNAL_BLOCKER
 
 ## 目标
 导演 Agent 每个调度 tick 只根据唯一状态源决定“下一位应该是谁”，不把所有 Agent 全部唤醒。
@@ -9,19 +9,34 @@
 3. [[DISPATCH_TABLE.json]]
 4. 当前任务包 / blocker / pending_delta
 
-## 单 tick 原则
-每个 tick 默认只允许：
-- 读取一次状态与必要索引；
-- 选择 1 个 primary_agent；
-- 最多追加 1 个 dependent_agent（只有 primary 输出明确要求时）；
-- 最多执行 1 个状态跃迁；
-- 写一次合并后的 PROJECT_STATE。
+## Macro Tick 原则
+一次总调度默认连续执行依赖链，直到遇到**真实外部阻塞**，而不是每个 Agent 执行后就停。
 
-禁止同一 tick 从主题一路跑到 H3。长流水线必须跨状态跃迁接力。
+正式生产默认：
+`ASSET → STYLE → THEME → SCRIPT → TENYUAN → STORYBOARD → ASSET_RECHECK → H3_QUEUE`
+
+若每一阶段 PASS，可在同一 Macro Tick 中继续下一阶段。
+
+### 必须 STOP 的条件
+- 等待真实图片/视频生成结果；
+- H3 task 已 WRITTEN，等待 executor_receipt；
+- RENDERING，等待 /history 终态；
+- 素材缺失且需要真实生图；
+- Canon 冲突无法自动裁决；
+- REVIEW=REPLAN；
+- 需要用户明确创作/资产授权；
+- ENV / TASK 错误超过重试上限。
+
+### 不应 STOP 的条件
+- 一个文本 Agent 刚输出结果；
+- 已有结构化 result/delta 可被下游直接消费；
+- 只是在剧本→十元→分镜之间换岗位；
+- 当前阶段不需要任何新的外部字节或用户决策。
 
 ## 节流
-- `max_primary_agents_per_tick = 1`
-- `max_dependent_agents_per_tick = 1`
+- `dispatch_mode = RUN_UNTIL_EXTERNAL_BLOCKER`
+- 单 Macro Tick 可串行调用多个 primary Agent，但同一时刻只执行一个，必须按依赖顺序。
+- 每一阶段最多追加 1 个 dependent Agent；禁止无依赖并行开会。
 - `max_discussion_rounds = 3`
 - `max_theme_audit = 1`
 - `max_world_check = 1`
@@ -91,7 +106,7 @@
 - 新知识无增量则 NO_OP。
 
 ## 输出
-每个 tick 只写：
+每个 Macro Tick 最终只合并一次主状态；中间结果写任务包/子结果。最终记录：
 ```yaml
 dispatch_id:
 base_state_version:
