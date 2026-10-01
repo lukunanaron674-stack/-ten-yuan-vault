@@ -1,9 +1,9 @@
 # ROUND4｜角色 Agent 本地 Codex 生产闭环交接｜2026-10-01
 
 ## 当前状态
-**RETRY_2_QUEUED**
+**AG06_REVIEW_QUEUED**
 
-第4轮尚未判 PASS。第1抽已真实生成并产生审核记录；审核结论为 RETRY，第2抽已自动写入本地 Codex inbox。
+第4轮尚未判最终 PASS。第1抽 RETRY；第2抽已回传，新资产 hash 已记录，生图端自检九项全部 PASS；现已进入独立 AG-06 实图审核。
 
 ## 测试角色
 - character_id: `LLL-CHAR-003`
@@ -63,6 +63,20 @@
 - 原则：只改三项 FAIL；上一轮 PASS 的脸、帽、线稿、色卡、水彩纸感全部冻结。
 - execute_without_second_confirmation：true
 
+## 第2抽回传
+- task：`CHAR-R4-CH003-002`
+- asset_id：`AST-IMAGE-21E30DF5`
+- sha256：`21E30DF53F8131EB1483A1058CC621A541B868A7FC99EE6CEF817C618C0AF454`
+- 生图端 self-review：九项全部 PASS
+- self-review 文件：`07_本地执行/角色生图/reviews/CHAR-R4-CH003-002.style-review.json`
+- 但该文件 reviewer=`LOCAL_CODEX_SELF_REVIEW`，approval_status 仍为 `NOT_APPROVED`
+
+## 独立 AG-06
+- task：`AG06-R4-CH003-002`
+- 状态：`READY_FOR_AG06`
+- 必须重新读取本地实际图片，不得照抄 self-review
+- PASS 后 next_route=`CHARACTER_WRITEBACK`
+
 ## 等待第2抽返回
 必须得到：
 - [ ] 新真实输出
@@ -72,6 +86,6 @@
 - [ ] 若 PASS，再由 AG-11 回写角色卡
 
 ## Round 4 判定
-当前：**RETRY 2 QUEUED / NOT YET PASS**
+当前：**AG-06 REVIEW QUEUED / SELF-REVIEW PASS / NOT YET FINAL PASS**
 
 只有本地 Codex 真实跑完并经过视觉审核，才允许写 ROUND-04 PASS。
