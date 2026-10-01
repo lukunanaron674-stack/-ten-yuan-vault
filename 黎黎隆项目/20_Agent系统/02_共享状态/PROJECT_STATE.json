@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.9",
-  "state_version": 14,
+  "schema_version": "2.0",
+  "state_version": 15,
   "project_id": "LLL",
   "project_name": "黎黎隆",
   "pipeline": "B端_Agent",
@@ -10,8 +10,8 @@
   "current_scene_id": "SCN-LLL-60S-001",
   "current_shot_id": "SHOT-LLL-60S-01",
   "active_job_id": "JOB-LLL-60S-001",
-  "last_writer": "director_macro_run_001",
-  "updated_at": "2026-10-01T19:30:00+08:00",
+  "last_writer": "director_user_asset_correction",
+  "updated_at": "2026-10-01T19:47:00+08:00",
   "director_goal": {
     "goal_id": "GOAL-LLL-60S-001",
     "mode": "PRODUCTION",
@@ -36,10 +36,10 @@
     "goal": "制作一个约60秒完整小事件：黎黎隆主动争取/试探某个具体目标，第一次行动使局面复杂化，随后被迫变招并承担局部代价；只使用现有正本世界规则，不自动升级非正史候选。",
     "target_duration_sec": 60,
     "completed_duration_sec": 0,
-    "status": "RENDER_QUEUED"
+    "status": "BLOCKED"
   },
   "shot": {
-    "status": "RENDER_QUEUED",
+    "status": "BLOCKED",
     "duration_sec": 10,
     "plan_version": 3,
     "attempt_no": 0,
@@ -106,19 +106,18 @@
     "world_gate": "BYPASS",
     "world_result": null,
     "new_world_rule_required": false,
-    "asset_recheck": "PASS"
+    "asset_recheck": "FAIL_CHARACTER_INCOMPLETE"
   },
   "assets": {
-    "status": "READY",
+    "status": "BLOCKED",
     "auto_asset_generation_allowed": true,
     "policy": "ASSET_FIRST",
-    "asset_pack_id": "PACK-LLL-60S-MECHAIR-001",
+    "asset_pack_id": null,
     "primary_character": {
       "asset_id": "LLL-MAIN-001",
-      "path": "黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg",
-      "source_manifest": "assets/character_pool_index.json",
-      "identity_validation_status": "github_direct_read",
-      "usable_for_h3": true
+      "production_status": "INCOMPLETE",
+      "usable_for_h3": false,
+      "user_canonical_status": "未完成，禁止正式H3"
     },
     "primary_scene_family": "机械空港",
     "required": [
@@ -154,14 +153,11 @@
       "SCENE-06",
       "SCENE-10"
     ],
-    "missing": [],
-    "pending_style_review": [],
-    "approved": [
-      "LLL-MAIN-001",
-      "SCENE-11",
-      "SCENE-12",
-      "SCENE-13"
+    "missing": [
+      "LLL-MAIN-001_COMPLETE_LOCKED_CHARACTER_ASSET"
     ],
+    "pending_style_review": [],
+    "approved": [],
     "generated": [],
     "audit_report": "06_正式生产/GOAL-LLL-60S-001_ASSET_READY_REPORT.md",
     "style_review_result": {
@@ -170,14 +166,13 @@
       "reason": "No traceable style PASS receipt or current visual comparison evidence found; manifest registration is insufficient for formal PASS."
     },
     "style_review": {
-      "decision": "PASS_FOR_QUEUE_WITH_EXECUTOR_PREFLIGHT",
-      "pixel_level_review_claimed": false
+      "decision": "NOT_APPLICABLE_UNTIL_CHARACTER_COMPLETE"
     }
   },
   "render": {
-    "status": "QUEUED",
+    "status": "CANCELLED",
     "render_id": "LLL_LONGTAKE_20261001_1930_GOAL60S",
-    "queue_task_id": "LLL_LONGTAKE_20261001_1930_GOAL60S",
+    "queue_task_id": null,
     "output_video": null,
     "head_frame": null,
     "mid_frame": null,
@@ -194,10 +189,10 @@
       "seam_match": "color",
       "steps": 4
     },
-    "last_error": null,
+    "last_error": "USER_CANONICAL_ASSET_GATE: LLL-MAIN-001 incomplete",
     "dispatch_mode": "LONGTAKE",
     "task_file_path": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/LLL_LONGTAKE_20261001_1930_GOAL60S.json",
-    "queue_write_status": "WRITTEN",
+    "queue_write_status": "CANCELLED_AND_REMOVED_FROM_INBOX",
     "executor_receipt": null,
     "executor_retry_count": 0,
     "max_executor_retry_count": 2,
@@ -214,7 +209,7 @@
     }
   },
   "review": {
-    "status": "WAIT_RENDER",
+    "status": "BLOCKED",
     "decision": null,
     "retry_count": 0,
     "max_retry_count": 3,
@@ -240,11 +235,12 @@
   "pending_deltas": [],
   "blockers": [
     {
-      "id": "WAIT-EXECUTOR-LLL-60S-001",
-      "type": "EXTERNAL_WAIT",
-      "scope": "LLL_LONGTAKE_20261001_1930_GOAL60S",
-      "detail": "B-end LongTake task is WRITTEN. Waiting for cloud executor/watcher receipt; do not mark RENDERING before receipt.",
-      "owner": "h3_executor"
+      "id": "BLK-LLL-CHARACTER-INCOMPLETE-20261001",
+      "type": "CHARACTER_INCOMPLETE",
+      "scope": "GOAL-LLL-60S-001",
+      "detail": "LLL-MAIN-001 黎黎隆当前未完成。用户明确禁止正式 H3。必须在用户确认角色完成后重新进行素材审核。",
+      "owner": "asset_agent",
+      "hard_gate": true
     }
   ],
   "escalation": {
@@ -252,11 +248,11 @@
     "owner": null,
     "reason": null
   },
-  "next_action": "WAIT_EXECUTOR_RECEIPT",
-  "assigned_agent": null,
+  "next_action": "WAIT_LLL_CHARACTER_COMPLETE",
+  "assigned_agent": "asset",
   "production_loop": {
     "protocol_version": "v1",
-    "status": "WAIT_EXTERNAL",
+    "status": "BLOCKED",
     "production_goal_required": true,
     "active_goal_id": "GOAL-LLL-60S-001",
     "target_duration_sec": 60,
@@ -265,7 +261,9 @@
     "current_scene_id": "SCN-LLL-60S-001",
     "current_shot_id": "SHOT-LLL-60S-01",
     "pipeline_policy": "ASSET_FIRST_LONGTAKE",
-    "current_stage": "WAIT_EXECUTOR_RECEIPT"
+    "current_stage": "CHARACTER_ASSET_GATE",
+    "canceled_task_id": "LLL_LONGTAKE_20261001_1930_GOAL60S",
+    "resume_condition": "USER_CONFIRMS_LLL_COMPLETE"
   },
   "orchestration": {
     "protocol_version": "v1.1",
@@ -275,7 +273,7 @@
     "no_op_on_same_state_hash": true,
     "max_primary_agents_per_tick": null,
     "max_dependent_agents_per_tick": 1,
-    "stop_condition": "EXTERNAL_WAIT"
+    "stop_condition": "HARD_ASSET_GATE"
   },
   "context_engineering": {
     "protocol_version": "v1",
