@@ -10,6 +10,20 @@
 ## 输出
 角色参考、场景参考、动作参考、音频参考、素材状态。
 
+### 角色视觉完成度输出
+对每个角色额外返回：
+- `best_view_type`: FOUR_GRID | FULL_BODY | MEDIUM_FULL | HEAD_ONLY | NONE
+- `visual_readiness`: READY_4GRID | REFERENCE_PARTIAL | HEAD_ONLY_DESIGN_PENDING | ASSET_UNVERIFIED
+- `source_path / sha256 / dimensions / identity_match`
+
+硬规则：
+- 真实四宫格存在且身份匹配 → READY_4GRID；
+- 只有单头像 → HEAD_ONLY_DESIGN_PENDING；
+- 只有全身/中全景但缺统一四宫格 → REFERENCE_PARTIAL；
+- 无真实可定位图 → ASSET_UNVERIFIED。
+
+素材 Agent 只裁“图是否真实、是什么视图、是否匹配”，不替角色 Agent 解释人物设定。
+
 ## 知识索引入口
 - [[../05_索引/IDX-04_视觉素材与风格索引]]
 - 默认按 P0 → P1 → P2 读取；P3 归档不得自动调用。
