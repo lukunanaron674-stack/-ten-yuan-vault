@@ -1,6 +1,6 @@
 {
-  "schema_version": "2.1",
-  "state_version": 17,
+  "schema_version": "2.2",
+  "state_version": 18,
   "project_id": "LLL",
   "project_name": "黎黎隆",
   "pipeline": "B端_Agent",
@@ -10,8 +10,8 @@
   "current_scene_id": "SCN-LLL-60S-001",
   "current_shot_id": "SHOT-LLL-60S-01",
   "active_job_id": "JOB-LLL-60S-001",
-  "last_writer": "director_correct_character_selection_policy",
-  "updated_at": "2026-10-01T19:58:00+08:00",
+  "last_writer": "director_character_asset_joint_sync",
+  "updated_at": "2026-10-01T20:05:00+08:00",
   "director_goal": {
     "goal_id": "GOAL-LLL-60S-001",
     "mode": "PRODUCTION",
@@ -155,11 +155,11 @@
   "pending_deltas": [],
   "blockers": [
     {
-      "id": "BLK-SELECT-NONLLL-READY-CHARACTER",
-      "type": "ASSET_SELECTION",
+      "id": "BLK-CH007-CHARACTER-AUDIT",
+      "type": "CHARACTER_REGISTRATION_AUDIT",
       "scope": "GOAL-LLL-60S-001",
-      "detail": "Select a non-LLL character that is currently COMPLETE/APPROVED and formally H3-eligible. Do not select STAGING/incomplete characters merely because an image file exists.",
-      "owner": "asset_agent",
+      "detail": "CH-007 小和尚有真实四视图原稿，但当前角色总索引未登记其正式角色卡。必须由角色 Agent 确认身份/视觉冻结/世界位置后，再由素材 Agent复核H3绑定。",
+      "owner": "character_agent",
       "hard_gate": true
     }
   ],
@@ -168,8 +168,8 @@
     "owner": null,
     "reason": null
   },
-  "next_action": "ASSET_SELECT_NON_LLL_PRODUCTION_READY_CHARACTER",
-  "assigned_agent": "asset",
+  "next_action": "CHARACTER_AUDIT_CH007_FROM_REAL_ASSET",
+  "assigned_agent": "character",
   "production_loop": {
     "protocol_version": "v1",
     "status": "ACTIVE",
@@ -181,7 +181,7 @@
     "current_scene_id": "SCN-LLL-60S-001",
     "current_shot_id": "SHOT-LLL-60S-01",
     "pipeline_policy": "ASSET_FIRST_LONGTAKE",
-    "current_stage": "CHARACTER_SELECTION",
+    "current_stage": "CHARACTER_ASSET_JOINT_SELECTION",
     "canceled_task_id": "LLL_LONGTAKE_20261001_1930_GOAL60S",
     "resume_condition": "NON_LLL_PRODUCTION_READY_CHARACTER_SELECTED"
   },
@@ -240,5 +240,36 @@
       }
     ],
     "current_candidate": null
+  },
+  "character_asset_sync": {
+    "protocol": "04_协议/CHARACTER_ASSET_SYNC_PROTOCOL.md",
+    "latest_audit": "06_验证/CHARACTER_ASSET_JOINT_AUDIT_20261001.md",
+    "status": "JOINT_AUDIT_COMPLETE",
+    "legacy_b_pool_role": "HISTORICAL_COMPATIBILITY_ONLY",
+    "discovery_sources": [
+      "00_总览/素材文字对接_全库图床清单_20261001.md",
+      "00_总览/图片定位与验证_20260930/图片定位与验证总索引.csv",
+      "03_角色/角色库/02_H3专用角色库/assets/",
+      "03_角色/角色库/06_assets/",
+      "03_角色/角色库/03_线A_S卡19人/",
+      "03_角色/角色库/05_头像与高清素材/"
+    ],
+    "current_candidate": {
+      "character_id": "CH-007",
+      "name": "小和尚",
+      "reason": "真实四视图原稿，非旧B池角色，信息量高于单图候选",
+      "role_registration_status": "UNREGISTERED_OR_NOT_IN_CURRENT_TOTAL_INDEX",
+      "asset_status": "VERIFIED_SOURCE_EXISTS",
+      "production_ready": false
+    },
+    "fallback_candidates": [
+      "CH-006",
+      "CH-014",
+      "CH-009",
+      "CH-010",
+      "CH-011",
+      "CH-012",
+      "S01-S19"
+    ]
   }
 }
