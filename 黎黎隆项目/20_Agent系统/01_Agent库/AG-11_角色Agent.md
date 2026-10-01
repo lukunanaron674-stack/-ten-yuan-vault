@@ -83,7 +83,7 @@
 - `world_alignment`: PASS | PARTIAL | CONFLICT | UNASSIGNED
 - `color_bucket`: C01 | C02 | C03 | C04 | C05 | UNASSIGNED
 - `color_sort_id`: 五色桶内排序号；不替代稳定主 ID
-- `visual_readiness`: READY_4GRID | REFERENCE_PARTIAL | HEAD_ONLY_DESIGN_PENDING | ASSET_UNVERIFIED
+- `visual_readiness`: READY_VISUAL | HEAD_ONLY_DESIGN_PENDING | ASSET_UNVERIFIED
 - `region`: cyan | red | pink | cross_region | unassigned
 - `narrative_level`: NPC | RECURRING | KEY | PROTAGONIST
 - `organization`: CONFIRMED / CANDIDATE / NONE
@@ -114,10 +114,10 @@
 
 - 五色编号是 P00 视觉桶，不等于青/红/粉世界区域。
 - 稳定主 ID `LLL-CHAR-###` 不重排；新增 `color_sort_id` 用于五色排序。
-- 素材端确认真实四宫格且身份匹配：`visual_readiness=READY_4GRID`，角色设计层可用。
-- 只有真实单头像：`visual_readiness=HEAD_ONLY_DESIGN_PENDING`，必须继续跑中全景/四宫格。
+- 素材端确认身份匹配的真实四宫格、全身、中全景或中景角色设定图：`visual_readiness=READY_VISUAL`，角色设计层可用。
+- 只有真实单头像：`visual_readiness=HEAD_ONLY_DESIGN_PENDING`，必须继续补中景 / 中全景 / 全身 / 四宫格中的任一种完整角色参考。
 - 没有真实可定位图：`ASSET_UNVERIFIED`。
-- 四宫格设计可用不自动等于 H3 正式生产可用；后者仍走风格审核与绑定门禁。
+- READY_VISUAL 不自动等于 H3 正式生产可用；后者仍走风格审核与绑定门禁。
 
 ## 状态拆分硬门
 角色 Agent 不允许用一个“已确认”覆盖全部维度。每个角色至少独立记录：
