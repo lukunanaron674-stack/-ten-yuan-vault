@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "task_id": "AG06-R4-CH003-002",
+  "source_task_id": "CHAR-R4-CH003-002",
+  "project_id": "LLL",
+  "character_id": "LLL-CHAR-003",
+  "mode": "STYLE_REVIEW",
+  "status": "READY_FOR_AG06",
+  "execution_owner": "AG-06_LOCAL",
+  "execute_without_second_confirmation": true,
+  "asset": {
+    "asset_id": "AST-IMAGE-21E30DF5",
+    "sha256": "21E30DF53F8131EB1483A1058CC621A541B868A7FC99EE6CEF817C618C0AF454",
+    "local_catalog_required": true,
+    "binary_required_for_review": true
+  },
+  "refs": {
+    "character_card": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
+    "generation_task": "黎黎隆项目/20_Agent系统/07_本地执行/角色生图/inbox/CHAR-R4-CH003-002.json",
+    "self_review": "黎黎隆项目/20_Agent系统/07_本地执行/角色生图/reviews/CHAR-R4-CH003-002.style-review.json",
+    "agent": "黎黎隆项目/20_Agent系统/01_Agent库/AG-06_风格审核Agent.md",
+    "schema": "黎黎隆项目/20_Agent系统/04_协议/STYLE_REVIEW_SCHEMA.md"
+  },
+  "independence_rules": [
+    "必须重新读取实际候选图片。",
+    "上一份 LOCAL_CODEX_SELF_REVIEW 仅作生成历史，不得作为独立审核证据。",
+    "重新核对冻结脸帽、A/B比例差异、右下45度半身、上衣非斗篷、二维线稿、限制色与AI异常。",
+    "PASS必须给weighted_scores与total_score。"
+  ],
+  "next_route_on_pass": "CHARACTER_WRITEBACK",
+  "next_route_on_retry": "LOCAL_CODEX_RENDER"
+}
