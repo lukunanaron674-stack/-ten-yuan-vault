@@ -13,14 +13,16 @@
 ### 角色视觉完成度输出
 对每个角色额外返回：
 - `best_view_type`: FOUR_GRID | FULL_BODY | MEDIUM_FULL | HEAD_ONLY | NONE
-- `visual_readiness`: READY_4GRID | REFERENCE_PARTIAL | HEAD_ONLY_DESIGN_PENDING | ASSET_UNVERIFIED
+- `visual_readiness`: READY_VISUAL | HEAD_ONLY_DESIGN_PENDING | ASSET_UNVERIFIED
 - `source_path / sha256 / dimensions / identity_match`
 
 硬规则：
-- 真实四宫格存在且身份匹配 → READY_4GRID；
+- 身份匹配的真实四宫格 → READY_VISUAL；
+- 身份匹配的全身 / 中全景 / 中景角色设定图 → READY_VISUAL；
 - 只有单头像 → HEAD_ONLY_DESIGN_PENDING；
-- 只有全身/中全景但缺统一四宫格 → REFERENCE_PARTIAL；
 - 无真实可定位图 → ASSET_UNVERIFIED。
+
+四宫格是高信息密度格式，但不是可用性的唯一门槛；已经有清楚全身/中全景/中景时，不为了流程强制补四宫格。
 
 素材 Agent 只裁“图是否真实、是什么视图、是否匹配”，不替角色 Agent 解释人物设定。
 
