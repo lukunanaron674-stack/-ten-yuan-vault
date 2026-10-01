@@ -10,11 +10,11 @@
 ## 角色
 ### LLL-MAIN-001｜黎黎隆
 - source: `黎黎隆项目/角色魅力实验/B端/assets/character_refs/LLL_H3_character_card_001.jpg`
-- github_image_upload: true
-- identity_validation_status: github_direct_read
-- h3_render_eligible: true
-- verdict: EXISTING_CANDIDATE
-- note: 正式生产继续使用该主参考，不随机换角色图；进入正式 H3 前仍需按当前 Agent 系统补齐本轮 lock/style_review 记录。
+- **production_status: INCOMPLETE**
+- **h3_render_eligible: false**
+- verdict: **BLOCKED**
+- canonical correction: 2026-10-01 用户明确确认“黎黎隆现在没有完成，不让跑”。
+- note: 旧索引中的 `h3_render_eligible=true` 已作废。该角色仍可用于文字研究/分镜预研，但不得进入正式生图/H3视频生产。
 
 ## 场景池
 现有正式池：13 张，均登记 `available_by_github_path`。
@@ -52,7 +52,7 @@
 - 本轮不启动 H3。
 
 ## 结果
-- asset_inventory: PASS
-- asset_pack: MECHANICAL_AIRPORT_FAMILY
-- next_required_gate: STYLE_REVIEW
-- after_style_pass: THEME_PLAN_FROM_ASSETS
+- asset_inventory: **BLOCKED_CHARACTER_INCOMPLETE**
+- asset_pack: NOT_APPROVED
+- next_required_gate: WAIT_LLL_CHARACTER_COMPLETE
+- H3: DO_NOT_RUN
