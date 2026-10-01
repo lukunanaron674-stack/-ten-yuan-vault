@@ -1,3 +1,7 @@
+# ❌ REJECTED｜错误沿用黎黎隆
+
+> 用户指出“下一个”应切换角色；本候选仍使用黎黎隆，因此作废。禁止自动复活。
+
 # STORY CANDIDATE 002｜湖面先走了一步
 
 > 状态：PREWRITE_ONLY / NOT H3 APPROVED  
