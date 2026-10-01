@@ -247,3 +247,15 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|LOCAL_CODEX_RENDER|IMAGE
 - 新角色查重时最多打开最相近的少量角色卡，不全读角色库。
 - 世界/十元只消费当前相关 result/CTX；证据不足再回源。
 - 原始 source 每 tick 默认最多 2 个。
+
+
+## 与素材 Agent 联合对账
+正式选角与角色生产资格必须遵守 [[../04_协议/CHARACTER_ASSET_SYNC_PROTOCOL]]。
+
+规则：
+- 不只读取 `00_角色总索引.md` 后就认为“未登记 = 不存在”；
+- 当导演要求“新角色/下一个/不要老角色”时，先消费素材 Agent 的全库视觉候选清单；
+- 对 `UNREGISTERED_VISUAL_CANDIDATE` 做身份查重、世界位置、视觉冻结和角色卡登记判断；
+- 角色 Agent 只裁“人物是否完成到可生产”，素材真伪/path/hash/H3绑定由素材 Agent 裁；
+- 二者共同 PASS 前不得标 `production_ready=true`；
+- 旧 B端 `assets/character_pool_index.json` 不再是项目级选角入口。
