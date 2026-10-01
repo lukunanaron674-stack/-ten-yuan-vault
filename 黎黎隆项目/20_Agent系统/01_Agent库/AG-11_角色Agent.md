@@ -304,3 +304,9 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|LOCAL_CODEX_RENDER|IMAGE
 - 角色 Agent 只裁“人物是否完成到可生产”，素材真伪/path/hash/H3绑定由素材 Agent 裁；
 - 二者共同 PASS 前不得标 `production_ready=true`；
 - 旧 B端 `assets/character_pool_index.json` 不再是项目级选角入口。
+
+
+### 非 CH 候选入口
+当用户排除 CH 或要求新角色时，角色 Agent 直接读取 `../../03_角色/角色库/01_视觉候选总表_HNSNPC.json`。
+优先顺序：P0 → P1 → P2 → P3。当前 P0 为 H04 / H06 / H09。
+角色 Agent 只做身份认领、世界位置、十元接口、视觉冻结与正式主 ID 映射，不得把 visual_id 改写成 CH 编号。
