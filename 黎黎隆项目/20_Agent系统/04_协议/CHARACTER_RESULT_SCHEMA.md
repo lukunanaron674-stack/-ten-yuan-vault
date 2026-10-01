@@ -34,6 +34,12 @@ character:
     value:
     status: CONFIRMED|CANDIDATE|NONE
   world_mechanism_refs: []
+  world_seed_refs: []
+  geography:
+    location:
+    status: CONFIRMED|CANDIDATE|UNKNOWN
+    environment_pressures: []
+    character_consequences: []
   world_position_status: CONFIRMED|CANDIDATE|UNKNOWN
 
 tenyuan:
@@ -88,6 +94,14 @@ visual:
 asset_gaps: []
 conflicts: []
 blocked_by: []
+
+world_implications:
+  - source: VISUAL_EVIDENCE|CHARACTER_NEED|REPEATED_PATTERN
+    evidence:
+    proposed_world_rule:
+    scope: PERSONAL|GROUP|ORGANIZATION|GEOGRAPHY|CITY|REGION
+    affected_population:
+    status: NONE|CANDIDATE|WORLD_CHECK|WORLD_PROPOSAL
 
 writeback:
   character_card_path:
