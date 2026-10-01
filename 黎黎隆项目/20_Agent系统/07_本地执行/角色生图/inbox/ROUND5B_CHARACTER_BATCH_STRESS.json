@@ -83,5 +83,6 @@
   "output_path": "黎黎隆项目/20_Agent系统/06_验证/ROUND5B_CHARACTER_BATCH_STRESS_REPORT.md",
   "done_condition": "完成5到10个角色的批量审计，并明确 PASS / PARTIAL / FAIL 与系统级失败模式。",
   "stop_condition": "若同一系统性失败在3个以上角色重复出现，停止继续扩样，先修协议。",
-  "next_route": "ROUND6_CHARACTER_LIBRARY_PRODUCTIONIZATION"
+  "next_route": "ROUND6_CHARACTER_LIBRARY_PRODUCTIONIZATION",
+  "skill_ref": "07-Codex大脑库/skills/黎黎隆角色第5轮批量压力测试/SKILL.md"
 }
