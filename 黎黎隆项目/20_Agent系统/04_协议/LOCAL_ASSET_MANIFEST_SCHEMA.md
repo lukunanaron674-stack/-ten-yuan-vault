@@ -4,7 +4,7 @@
 
 ## catalog_header
 ```yaml
-schema_version: "1.1"
+schema_version: "1.2"
 catalog_version:
 generated_at:
 watcher_id:
@@ -43,7 +43,12 @@ generation_model: null
 generation_params_ref: null
 seed_source_ref: null
 
-duplicate_of: null
+duplicate_group: null
+canonical_asset_id: null
+# 全部物理落点；旧字段 root_id + relative_path 表示首选 locator，不得据此丢弃其他路径。
+asset_locations: []
+# 仅建议状态，不授予任何文件操作权限。
+cleanup_recommendation: KEEP | REVIEW | QUARANTINE_CANDIDATE
 identity_confidence: 0.0
 tag_source: PATH | EXISTING_INDEX | VISUAL_REVIEW | HUMAN
 
@@ -54,6 +59,12 @@ status: PRESENT | MISSING | MOVED
 last_seen_at:
 notes:
 ```
+
+## 重复项与路径保留规则
+- 相同 SHA-256 可共享逻辑 asset_id / canonical_asset_id，但每个实际文件落点必须保存在 asset_locations；保留来源、版本及所有引用。
+- canonical 只表示默认查询/引用入口，不表示其他路径可删除。相似图只标候选，不合并字节不同的资产身份。
+- cleanup_recommendation 仅供人工审核队列使用；本 schema 不授权 watcher 或 Agent 删除、移动或覆盖文件。
+- 永久删除前必须经过逐路径批准、可恢复隔离、引用回归验证和单独的二次授权。
 
 ## seed 导入规则
 - `generation_seed` 是“该图片/素材生成时使用的 seed”，属于资产溯源信息。
