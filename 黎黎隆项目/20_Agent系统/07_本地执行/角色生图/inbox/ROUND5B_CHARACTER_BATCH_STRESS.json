@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "round_id": "ROUND5B",
+  "task_id": "ROUND5B-CHARACTER-BATCH-STRESS",
+  "project_id": "LLL",
+  "execution_owner": "LOCAL_CODEX",
+  "status": "WAITING_FOR_ROUND5A",
+  "execute_without_second_confirmation": true,
+  "title": "第5轮B｜多角色世界同化与生产压力测试",
+  "depends_on": "ROUND5A-CHARACTER-LIBRARY-RECONCILE",
+  "goal": "从5A对账后的真实角色池抽取5到10个差异明显的角色，验证角色代理、世界观代理、素材端和视觉生产规则在批量状态下是否稳定，并测试角色为何存在于这个世界。",
+  "sample_policy": {
+    "count": "5-10",
+    "diversity": [
+      "不同世界区域",
+      "不同视觉完成度",
+      "不同叙事层级",
+      "不同组织/地理位置",
+      "至少包含1个READY_VISUAL、1个HEAD_ONLY_DESIGN_PENDING、1个世界同化PARTIAL/UNASSIGNED",
+      "优先包含现有老角色与未登记视觉候选的混合样本"
+    ],
+    "exclusions": [
+      "最近刚连续测试过且无新信息的重复角色",
+      "作者明确否决/禁用角色",
+      "身份冲突未解决角色不进入生图，只进入审计"
+    ]
+  },
+  "character_purpose_test": {
+    "enabled": true,
+    "purpose_axis": [
+      "WORLD_EXPRESS",
+      "WORLD_TEST",
+      "WORLD_CHANGE"
+    ],
+    "subtypes": [
+      "MECHANISM",
+      "LIFESTYLE",
+      "ORGANIZATION",
+      "GEOGRAPHY",
+      "VALUE",
+      "PROBLEM",
+      "COST",
+      "BOUNDARY",
+      "EXCEPTION",
+      "TRANSITION",
+      "HISTORY",
+      "CHANGE"
+    ],
+    "required_questions": [
+      "这个角色为什么必须存在于这个世界？",
+      "他承担的是哪个具体世界设定、地理、组织、资源或生活方式？",
+      "他的能力是否由该世界机制自然产生？",
+      "他的性格是否由长期世界压力塑造，而不是后贴标签？",
+      "他是在说明世界、暴露世界问题，还是承担世界变化？",
+      "角色十元是否被错误地从世界功能直接推导？"
+    ],
+    "anti_pattern": "禁止把承担类型直接等同十元、阵营、颜色、善恶或战力。"
+  },
+  "per_character_audit": [
+    "world_alignment",
+    "character_purpose",
+    "tenyuan_independence",
+    "visual_identity_stability",
+    "body_template_drift",
+    "unauthorized_world_invention",
+    "unauthorized_org_or_weapon",
+    "asset_identity_match",
+    "visual_readiness",
+    "needs_generation"
+  ],
+  "generation_rule": "只有 HEAD_ONLY_DESIGN_PENDING 且身份/世界位置已足够明确的角色，才允许派生补图任务。READY_VISUAL 不重复生图；ASSET_UNVERIFIED 先回素材端。",
+  "failure_checks": [
+    "角色同质化",
+    "所有角色被做成同一种体型/脸/服装",
+    "十元被视觉刻板化",
+    "世界区域与P00五色混淆",
+    "角色为了剧情方便擅自创造组织/公司/武器/世界规则",
+    "作者原稿被AI候选覆盖",
+    "有完整角色图仍重复跑四宫格",
+    "角色卡与素材身份错配",
+    "角色存在目的为空或换个世界也完全成立"
+  ],
+  "output_path": "黎黎隆项目/20_Agent系统/06_验证/ROUND5B_CHARACTER_BATCH_STRESS_REPORT.md",
+  "done_condition": "完成5到10个角色的批量审计，并明确 PASS / PARTIAL / FAIL 与系统级失败模式。",
+  "stop_condition": "若同一系统性失败在3个以上角色重复出现，停止继续扩样，先修协议。",
+  "next_route": "ROUND6_CHARACTER_LIBRARY_PRODUCTIONIZATION"
+}
