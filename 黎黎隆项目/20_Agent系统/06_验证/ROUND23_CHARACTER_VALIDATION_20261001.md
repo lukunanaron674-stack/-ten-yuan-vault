@@ -20,7 +20,7 @@
 - narrative_level: `KEY`。拥有独立世界接口与潜在主事件功能，但不是主角。
 - organization: `NONE`。不能因为接入城市系统就虚构所属公司/机构。
 - identity_core: 古老能量生命；自愿守护生命，同时保留自身判断权。
-- tenyuan.status: `AUTHOR_INPUT + NEEDS_TENYUAN_REVIEW` 的混合状态。作者已追加 Z核心 + X并Z重要构成，但标准边与体量仍待验证。
+- tenyuan.source_status: `AUTHOR_INPUT`；tenyuan.verification_status: `NEEDS_TENYUAN_REVIEW`。作者已追加 Z核心 + X并Z重要构成，但标准边与体量仍待验证。
 - visual: 全身同质能量、无服装、无机械核心属于冻结项。
 
 **必须拒绝：**
@@ -36,7 +36,7 @@
 - region: `unassigned`。目前只是城市角色，没有三色归属证据。
 - narrative_level: `RECURRING`。具备独立失踪老师/魔法塔线，可反复进入主线，但尚无证据锁成全局KEY。
 - organization: `NONE`。是学徒经历，不等于现存学院/公司成员。
-- tenyuan.status: `NEEDS_TENYUAN_REVIEW`。Z/ZX/XN/NZ/ZN/X并Z均为工作候选。
+- tenyuan.source_status: `INFERRED`；tenyuan.verification_status: `NEEDS_TENYUAN_REVIEW`。Z/ZX/XN/NZ/ZN/X并Z均为工作候选。
 - body_structure.status: `PARTIAL`。作者原稿只确认上半身；下半身必须 UNKNOWN。
 - 视觉最高优先：大圆脸、小五官、黑短发、紫色不对称活体帽。
 - 生成全身时只能做候选比例分支，不得把黑色区域自动解释成斗篷。
@@ -55,7 +55,7 @@
 - narrative_level: `KEY`，对应原卡“A级关键NPC / 世界探索型NPC”。
 - organization.status: `CANDIDATE`。属于青色关系工程/路域体系，但具体公司组织名未锁。
 - world_mechanism_refs: X并Z → 生Z；路域；旧Z失配/新X并Z生成。
-- tenyuan.status: `NEEDS_TENYUAN_REVIEW`。XZ主 / X并Z的Z次 / XN小均为候选。
+- tenyuan.source_status: `INFERRED`；tenyuan.verification_status: `NEEDS_TENYUAN_REVIEW`。XZ主 / X并Z的Z次 / XN小均为候选。
 - 视觉冻结：脸、头部比例、长耳、发型大形、红围巾。
 - 允许发散：中景/中全景服装、勘察工具、承力结构。
 
