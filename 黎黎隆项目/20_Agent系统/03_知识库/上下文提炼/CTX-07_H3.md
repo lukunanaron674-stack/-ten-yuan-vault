@@ -33,3 +33,11 @@
 
 - 提示词生产与渲染执行是不同岗位和状态；任务写入不等于已开始执行，需 executor_receipt。
 - 轮转和评分要求按当前任务卡复核；迁移边界见 [[../增量/2026-10-01_20代理库并入记录]]。
+
+## LongTake（长镜头 >11s 路线，2026-10-01 冒烟通过）
+- 详版见 [[../增量/RUN-20261001-1120_LongTake接入_AG07长镜头路线]]。
+- 长镜头路由 LongTake 分段渲染：每段 clip_frames ≤264（推荐 124=5.2s / 243=10.1s，规则 17k+5），keyframe 锚定 + color 接缝，Stitch 拼接回贴音频。
+- source_file 视频放 **D:\H3\comfyui_input\**（运行实例 --input-directory 指这里，不是 ComfyUI 根下 input/）。
+- H3LongTakeRender 的 prompt 字段必填（接了 prompt_text socket 也要给值）。
+- core 升级后按 master 自带 requirements.txt 对齐依赖（本次 comfy-kitchen 0.2.31→0.2.36 修 int8_linear 签名错），升级后重启实例。
+- 断点续渲 mode=continue；单段翻车 redo_one 换 seed。
