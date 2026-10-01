@@ -1,147 +1,144 @@
 {
   "character_id": "ADV-001",
-  "display_name": "冒险者",
-  "project": "角色魅力实验_B端",
-  "asset_type": "H3_character_sheet",
-  "source_file": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
-  "image": {
+  "display_name": "岑烬（工作名）",
+  "project": "黎黎隆",
+  "asset_type": "character_identity_and_setting",
+  "setting_version": "v1.1_2026-10-01",
+  "canon_status": "working_canon",
+  "color_affiliation": "红色",
+  "organization": "赤途远征队",
+  "role": [
+    "引路人",
+    "失踪归来者",
+    "高危晶化人员"
+  ],
+  "theme": "本体",
+  "current_reference": {
+    "priority": "user_current_original_portrait",
+    "github_image_binding": false,
+    "github_path": null,
+    "sha256": null,
+    "note": "当前用户头像原稿为最高视觉优先级，但尚未建立GitHub图片路径与SHA，不得伪造绑定。"
+  },
+  "legacy_source": {
+    "source_file": "FE5A039B15C5C5B5EA4D721B5C37AB26.jpeg",
     "width": 864,
     "height": 1536,
-    "aspect_ratio": "9:16",
-    "sha256": "dd81d92d9f565831c8e924aa2ff36b3fd3cf85b526376971b51ec4f1dd43d1c4"
+    "sha256": "dd81d92d9f565831c8e924aa2ff36b3fd3cf85b526376971b51ec4f1dd43d1c4",
+    "status": "deprecated_identity_reference",
+    "note": "仅保留历史实验索引，不再覆盖当前角色身份。"
   },
   "identity_validation": {
-    "status": "ready_for_workbuddy_validation",
-    "asset_structure_check": "passed",
-    "sheet_sections": [
-      "full_body_front",
-      "full_body_three_quarter",
-      "face_expression_variants",
-      "equipment_and_costume_detail_references"
-    ],
+    "status": "head_identity_frozen_body_expandable",
     "identity_lock": [
-      "large broad male body with heavy grounded stance",
-      "dark beard and short dark hair",
-      "tired, experienced and restrained facial language",
-      "dark teal-black layered cloak with purple and red cloth panels",
-      "red scarf and multiple crossing straps",
-      "white metal shoulder and chest bracket",
-      "backpack or rolled equipment carried on the back",
-      "cyan-lit hanging lantern",
-      "heavy gloves and heavy boots with cyan accents"
+      "messy short black hair",
+      "cool gray-violet skin",
+      "adult male face with restrained tired expression",
+      "short stubble on cheek and jaw",
+      "cyan-white crystal structure crossing the forehead, one eye and cheek",
+      "uncovered eye keeps cold cyan-white visual signal",
+      "deep dark-red scarf remains the largest identity color block around head and shoulders",
+      "rough hand-drawn linework, dry brush, thin paint and broken edges"
     ],
     "must_keep": [
-      "body mass and grounded weight",
-      "beard, tired eyes and broad face",
-      "layered cloak silhouette and torn cloth edges",
-      "red scarf, red straps and metal buckles",
-      "backpack, rolled bedroll and equipment load",
-      "cyan lantern as a readable prop and light source",
-      "large gloves and heavy boots"
+      "same face shape and age",
+      "same primary crystal-mask coverage and silhouette",
+      "same red scarf identity",
+      "same rough 2D hand-painted style",
+      "single-character identity continuity"
+    ],
+    "body_design_expandable": [
+      "dark worn travel layers",
+      "short cloak or damaged cloth",
+      "straps and bandaging",
+      "practical trousers, old boots and gloves",
+      "limited crystal spread to forearm or hand",
+      "small rescue and route-finding tools"
     ],
     "do_not_change": [
-      "do not merge with Lililong",
-      "do not merge with Che",
-      "do not turn him into a young slim swordsman",
-      "do not remove the backpack, straps or lantern",
-      "do not replace the cloak with clean modern armor",
-      "do not add horns, tail, wings or unrelated weapons",
-      "do not erase the tired and experienced facial quality"
+      "do not redesign the head",
+      "do not rearrange the crystal mask into a new helmet",
+      "do not turn the full body into conventional cyber armor",
+      "do not add horns, tail, wings or unrelated large weapons",
+      "do not use 3D or polished glossy game-concept rendering",
+      "do not add subtitles, logos or text into character images"
+    ]
+  },
+  "setting": {
+    "one_sentence": "红色远征队失踪归来的引路人，身体正在被能够记录已发生状态的青色晶体逐渐替换；他靠晶体寻找失踪者，却每救一个人，就离原来的自己更远一点。",
+    "organization_function": [
+      "危险区域探路",
+      "失联人员搜救",
+      "异常区域回收与撤离",
+      "在地图失效时重新建立可行路线"
     ],
-    "verification_items": [
-      "front, three-quarter and close-up views remain the same adventurer",
-      "body mass and shoulder width remain stable",
-      "cloak layers, straps and buckles remain connected",
-      "lantern remains attached to the belt and keeps cyan light",
-      "equipment load remains readable during walking and turning"
+    "cyan_anomaly": {
+      "working_name": "记忆晶",
+      "type": "生物青 / X并Z型异质结构",
+      "rules": [
+        "记录接触对象的已发生状态",
+        "保存路线、声音、动作、局部物理性质与部分意识记忆",
+        "逐步把人体本身也视为可记录、保存和替换的对象"
+      ],
+      "abilities": [
+        "残迹视觉：读取空间和物体上的过去行动痕迹",
+        "状态复现：晶化手臂短时间复现已记录过的局部状态"
+      ],
+      "limits": [
+        "不是无限复制能力",
+        "只复现有限且已被记录的状态",
+        "偶尔出现疑似不属于过去的画面，但暂不锁定为预知能力"
+      ]
+    },
+    "cost": [
+      "使用越频繁，晶化继续扩散",
+      "晶体开始替角色保存自己的记忆",
+      "主观记忆可能与晶体记录不一致",
+      "晶体可能比本人更准确地保留某些动作和经历"
     ],
-    "h3_verification_status": "pending_workbuddy_render"
+    "personality": [
+      "寡言",
+      "耐心",
+      "很难被激怒",
+      "不喜欢解释自己",
+      "处理危险比处理人际关系更熟练"
+    ],
+    "action_rule": "答应带回来的人，他就认为还没有结束。",
+    "organization_conflict": "组织越不敢相信他，越不得不依赖他。",
+    "theme_question": "如果一个人的记忆、习惯、动作和判断都可以被完整保存，那么原来的那个人还必须继续存在吗？"
   },
   "ten_yuan_analysis": {
-    "analysis_status": "image_based_initial_reading",
+    "analysis_status": "setting_based_candidate",
     "is_frozen": false,
-    "primary": {
-      "symbol": "XN",
-      "strength": 8,
-      "reason": "The character reads as someone formed by accumulated routes, old equipment, repeated travel and practical experience rather than by a single clean identity."
-    },
-    "secondary": {
-      "symbol": "X",
-      "strength": 8,
-      "reason": "Straps, buckles, shoulder hardware, backpack, lantern, gloves and boots create a clear modular equipment system with strong boundaries."
-    },
-    "middle": {
-      "symbol": "N",
-      "strength": 7,
-      "reason": "The broad body, heavy stance, tired eyes and layered worn cloth make physical existence, weight and endurance highly visible."
-    },
-    "latent": [
+    "candidates": [
       {
-        "symbol": "NX",
-        "strength": 6,
-        "reason": "The equipment is useful but also a burden; the character appears to carry responsibility and accumulated cost on his body."
+        "symbol": "ZN",
+        "role": "本体主题主要入口：依靠关系、承诺与自我认定维持连续性"
       },
       {
-        "symbol": "NZ",
-        "strength": 5,
-        "reason": "The cyan lantern can become warmth, guidance and protection for another person in darkness."
+        "symbol": "X",
+        "role": "人体边界与被记录、替代结构之间的分界"
       },
       {
         "symbol": "X并Z",
-        "strength": 5,
-        "reason": "A living body is fused with a practical field system of tools, clothing and light, though the actual anomaly or environment is not yet shown."
+        "role": "青色资源与肉身逐步组成新的行动系统"
       },
       {
-        "symbol": "ZN",
-        "strength": 4,
-        "reason": "The gear is not decorative; it belongs to daily survival, carrying, repair and movement through a difficult world."
-      }
-    ],
-    "low_visibility": [
-      {
-        "symbol": "ZX",
-        "strength": 4,
-        "reason": "There is readiness and toughness, but no active confrontation is visible in the sheet."
-      },
-      {
-        "symbol": "Z",
-        "strength": 3,
-        "reason": "Improvisation is plausible for an adventurer, but the current image emphasizes weight and experience rather than playful unpredictability."
-      },
-      {
-        "symbol": "XZ",
-        "strength": 3,
-        "reason": "The cyan lantern and unusual equipment may support an abnormal or reactive layer, but the image alone does not establish it."
+        "symbol": "NX",
+        "role": "能力越有效，主体自身越被代价反向压缩"
       },
       {
         "symbol": "NZ",
-        "strength": 5,
-        "reason": "Protection and guidance are visible through the lantern, but must be tested through interaction rather than assumed as a fixed personality."
+        "role": "保存自己与保住别人之间的选择入口"
       }
     ],
-    "candidate_dynamic_chains": [
-      {
-        "id": "ADV-001-DL-01",
-        "chain": "XN → X → NX → NZ",
-        "meaning": "Accumulated travel becomes a practical equipment system; the system becomes a burden; the lantern turns that burden into protection or guidance for another person."
-      },
-      {
-        "id": "ADV-001-DL-02",
-        "chain": "X → Z → X并Z",
-        "meaning": "A rigid tool arrangement meets an unexpected obstacle; the adventurer improvises with the equipment and makes body, tool and environment work as one system."
-      },
-      {
-        "id": "ADV-001-DL-03",
-        "chain": "N → NX → NZ",
-        "meaning": "Physical exhaustion and accumulated weight force a pause; responsibility is not discarded, but becomes a reason to keep the light and protect the group."
-      }
-    ],
-    "recommended_first_experiment": "XN → X → NX → NZ",
-    "recommended_experiment_reason": "This chain uses the strongest visible evidence: long-term travel, equipment structure, bodily burden and the lantern's possible protective function."
+    "note": "当前只锁方向，不冻结强度与最终动态链。"
   },
-  "handoff": {
-    "workbuddy_input": "original JPEG + this JSON + companion Markdown validation sheet",
-    "github_image_upload": false,
-    "b_end_use": "Use character_id and the recommended candidate chain only after WorkBuddy confirms visual identity and equipment continuity."
+  "production": {
+    "four_panel_purpose": "扩展中景与全中景造型，不重新设计角色",
+    "head_identity_lock": "frozen",
+    "body_costume_design": "expandable",
+    "legacy_v1_identity": "deprecated",
+    "legacy_prompts_using_broad_body_backpack_lantern": "expired"
   }
 }
