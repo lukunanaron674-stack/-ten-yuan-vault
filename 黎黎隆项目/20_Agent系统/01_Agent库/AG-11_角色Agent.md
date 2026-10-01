@@ -76,12 +76,38 @@
 - 粉色：NZ 主 / X并Z 次，古老遗蜕/生态使用必须保留生命性，禁止偷换成普通机械遗迹。
 - 颜色不是十元本身，角色也不因“穿某色”就属于某区。
 
+## 状态拆分硬门
+角色 Agent 不允许用一个“已确认”覆盖全部维度。每个角色至少独立记录：
+- `world_position_status`: CONFIRMED|CANDIDATE|UNKNOWN
+- `tenyuan_status`: VERIFIED|AUTHOR_INPUT|NEEDS_TENYUAN_REVIEW
+- `visual_status`: LOCKED|PARTIAL|EXPLORING
+- `body_structure_status`: LOCKED|PARTIAL|EXPLORING|NEEDS_GRAYBODY_TEST
+- `asset_status`: EXISTING|MISSING|PENDING_STYLE_REVIEW|APPROVED
+
+**世界位置已明确 ≠ 十元已验证 ≠ 视觉已定稿 ≠ 资产已归档。** 禁止跨状态偷升级。
+
 ## 十元边界
 - 可以把已确认十元转为行为、冲突、动作和造型节奏。
 - 可以给十元 Agent 提交“角色行为证据”供复核。
 - 不得仅凭职业、颜色、善恶、战力直接判十元。
 - 新的生/克/补方向若无 Canon 证据，标记 `NEEDS_TENYUAN_REVIEW`。
 - 用户明确给出的十元可作为作者输入保留，但关系解释仍须区分“作者设定”与“理论已验证”。
+
+## 体型与比例接口
+角色身体结构统一遵守 [[../04_协议/CHARACTER_BODY_STRUCTURE_PROTOCOL]]。
+
+优先级：**作者原稿比例 > 作者数字比例 > 角色卡冻结项 > 十元体型研究 > 标准人体/外部参考**。
+
+每次视觉任务必须明确：
+- `numeric_profile`：331 / 575 / 851 / 931 / 971 / 853 的身体落点、主辅权重和分布；
+- `observed_variables`：头身、肩宽、胸腔、骨盆、腿躯比、关节体量、手脚、重心；
+- `unknown_regions`：尚未确认的身体区域；
+- `candidate_body_types`：仅候选，不得因十元符号强改原稿；
+- `graybody_test_required`：是否需要纯灰膜控制实验。
+
+当前 XN 可调用四个研究分支：XN-A圣职瘦长 / XN-B现代病弱 / XN-C未成熟失衡 / XN-D审判官硬直。XN vs X 的瘦高分界仍在研究态，禁止使用“长腿=X”“小头=X”“971=X”等已降权规则。
+
+原稿只确认上半身时，下半身必须保持 UNKNOWN；第一次AI补全图不得反写成角色真实比例。
 
 ## 视觉生产规则
 角色代理**不直接生图**，只产出冻结条件与任务包。
@@ -148,6 +174,14 @@ story_function: ""
 world_refs: []
 tenyuan_refs: []
 tenyuan_review_status: VERIFIED|AUTHOR_INPUT|NEEDS_TENYUAN_REVIEW
+body_structure:
+  status: LOCKED|PARTIAL|EXPLORING|NEEDS_GRAYBODY_TEST
+  numeric_profile: []
+  observed_variables: {}
+  unknown_regions: []
+  candidate_body_types: []
+  conflict_notes: []
+  graybody_test_required: false
 visual:
   identity_anchor: []
   style_anchors: []
@@ -181,6 +215,7 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|IMAGE_GENERATE|STYLE_REV
 ## 任务接力协议
 - 执行前读取 [[../04_协议/AGENT_IO_PROTOCOL]]。
 - 角色任务读取 [[../04_协议/CHARACTER_RESULT_SCHEMA]]。
+- 身体比例任务读取 [[../04_协议/CHARACTER_BODY_STRUCTURE_PROTOCOL]]。
 - 需要新视觉素材时继续遵守 [[../04_协议/ASSET_RESULT_SCHEMA]] 与 [[../04_协议/STYLE_REVIEW_SCHEMA]]。
 - 讨论冲突遵守 [[../04_协议/DISCUSSION_PROTOCOL]]。
 
