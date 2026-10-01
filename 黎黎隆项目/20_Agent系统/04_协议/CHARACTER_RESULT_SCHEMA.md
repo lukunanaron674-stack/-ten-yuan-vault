@@ -41,6 +41,11 @@ character:
     environment_pressures: []
     character_consequences: []
   world_position_status: CONFIRMED|CANDIDATE|UNKNOWN
+  world_alignment: PASS|PARTIAL|CONFLICT|UNASSIGNED
+  color_bucket: C01|C02|C03|C04|C05|UNASSIGNED
+  color_bucket_status: VERIFIED|PROVISIONAL|NEEDS_ASSET_VERIFY
+  color_sort_id:
+  visual_readiness: READY_4GRID|REFERENCE_PARTIAL|HEAD_ONLY_DESIGN_PENDING|ASSET_UNVERIFIED
 
 tenyuan:
   main:
