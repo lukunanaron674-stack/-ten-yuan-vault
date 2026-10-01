@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CHAR-R4-CH003-001",
+  "project_id": "LLL",
+  "character_id": "LLL-CHAR-003",
+  "character_card_ref": "黎黎隆项目/03_角色/角色库/角色卡/CH-003_逃票魔法学徒.md",
+  "mode": "CHARACTER_VISUAL_BRIEF",
+  "status": "READY_FOR_LOCAL_CODEX",
+  "execution_owner": "LOCAL_CODEX",
+  "goal": "为 CH-003 逃票魔法学徒生成第4轮角色生产测试四宫格。保持作者已确认头部与活体帽身份；下半身仍属探索，不得把第一次补全当定稿。",
+  "usage_target": "角色比例探索 + 后续H3身份参考候选",
+  "identity_anchor_requirements": [
+    "优先读取本地真实 CH-003 作者/已选主参考，不得只靠角色卡文字。",
+    "锁定大圆脸、偏小五官、黑色短发与略不对称刘海、淡紫脸颊圆斑、紫色不对称大帽檐、浅色斜向帽带、细长羽毛状顶部结构。"
+  ],
+  "style_anchor_requirements": [
+    "从本地已确认《黎黎隆》角色风格资产中选择3到6张一致参考；不得把其他角色身份特征复制给CH-003。",
+    "二维平涂或薄影、手绘感线稿、剪影清楚、限制色，不要3D游戏立绘质感。"
+  ],
+  "frozen_visuals": [
+    "脸型与五官比例",
+    "黑色短发及刘海大形",
+    "紫色不对称活体帽剪影",
+    "浅色斜向帽带",
+    "顶部细长羽毛状结构",
+    "外表安静、实际机灵古怪的表演基调"
+  ],
+  "variable_visuals": [
+    "下半身比例候选",
+    "服装下部结构候选",
+    "活体帽的轻微表演动作",
+    "简洁随身工具，但不得抢过帽子主识别形"
+  ],
+  "negative_visuals": [
+    "传统法师袍模板化",
+    "未经授权的机械义体或机械核心",
+    "新武器",
+    "复杂赛博装甲",
+    "第二角色",
+    "四宫格变成四个不同人物",
+    "把黑色上身区域擅自锁成斗篷",
+    "标准Q版大头短腿",
+    "仅因候选XN就强制修改作者头部比例"
+  ],
+  "body_structure": {
+    "status": "PARTIAL",
+    "numeric_profile": [],
+    "observed_variables": {
+      "head_body_ratio": "上半身已由作者原稿约束；全身头身比未锁",
+      "shoulder_width": "以原稿上半身为准，不扩肩",
+      "ribcage_length": "以原稿已知区域为准",
+      "pelvis_width": "UNKNOWN",
+      "leg_torso_ratio": "UNKNOWN",
+      "joint_mass": "UNKNOWN",
+      "extremity_mass": "UNKNOWN",
+      "center_of_gravity": "UNKNOWN"
+    },
+    "unknown_regions": [
+      "骨盆",
+      "大腿",
+      "小腿",
+      "脚",
+      "完整腿躯比",
+      "全身重心"
+    ],
+    "candidate_body_types": [
+      "候选A：延续上半身的收束感，下半身低展开，不通过超长腿补偿。",
+      "候选B：稍增加腿部纵向展开，但维持上半身与下半身共同节奏，禁止形成小核心加异常长四肢。"
+    ],
+    "graybody_test_required": false
+  },
+  "layout": {
+    "aspect_ratio": "9:16",
+    "grid": "2x2",
+    "panels": [
+      "左上：中全景候选A，完整读出头身、肩胸、骨盆、腿躯比与重心。",
+      "右上：中全景候选B，仅改变下半身比例或结构，不改变头脸与帽子。",
+      "左下：头部特写，锁脸、刘海、帽檐、帽带、羽毛结构。",
+      "右下：45度半侧上身，锁头帽与肩胸连接，同时展示帽子的轻微生命动作。"
+    ]
+  },
+  "asset_lookup": {
+    "local_catalog_required": true,
+    "candidate_path_hints": [
+      "黎黎隆项目/03_角色/角色库/06_assets/CH-003/CH-003_逃票魔法学徒_06x08设定融合版_主参考.png",
+      "黎黎隆项目/03_角色/角色库/06_assets/CH-003/CH-003_逃票魔法学徒_9x16_四宫格设定稿_单人_v1.png",
+      "黎黎隆项目/03_角色/角色库/06_assets/CH-003/CH-003_逃票魔法学徒_9x16_四格_灰纸水彩校准_v1.png"
+    ],
+    "max_identity_candidates": 3,
+    "max_style_candidates": 6
+  },
+  "output_contract": {
+    "binary_to_git_required": false,
+    "output_role": "character_visual_candidate",
+    "receipt_required": true,
+    "sha256_required": true,
+    "prompt_record_required": true,
+    "next_route": "STYLE_REVIEW"
+  }
+}
