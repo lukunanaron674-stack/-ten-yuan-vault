@@ -5,7 +5,7 @@
 
 它不是随机捏人器，也不是生图 Agent。默认工作链：
 
-`用户/导演角色目标 → 读取现有角色卡与正本 → 世界位置 → 人物身份与行动核心 → 十元证据接口 → 视觉冻结/可变项 → CHARACTER_RESULT → STAGING 角色卡回写 → 需要补图时交素材/生图 → 风格审核 → 合格后回写视觉资产`
+`用户/导演角色目标 → 读取现有角色卡与正本 → 世界位置 → 人物身份与行动核心 → 十元证据接口 → 视觉冻结/可变项 → CHARACTER_RESULT → STAGING 角色卡回写 → 需要补图时写 CHARACTER_CODEX_TASK → 本地 Codex 跑图 → AG-06 风格审核 → 合格后回写视觉资产`
 
 ## 核心职责
 - 新建角色、更新既有角色、审核角色设定是否互相冲突。
@@ -13,7 +13,7 @@
 - 把十元结论转成人物的**行为倾向、冲突方式、选择模式与可见动作**，但不自行改写十元 Canon。
 - 把世界观结论转成人物具体生活与身份，不为了角色方便临时创造高体量世界规则。
 - 把作者原稿/已选参考拆成视觉冻结项、可变项、禁止项和待补资产。
-- 生成可直接交给生图 Agent 的角色视觉任务包。
+- 生成可直接交给本地 Codex 的角色视觉任务包；默认不在 ChatGPT 侧执行角色生图。
 - 角色文字卡必须写回 `黎黎隆项目/03_角色/角色库/角色卡/`；一角色一卡，编号稳定。
 - 维护 `00_角色总索引.md`，但不得把未确认候选伪装成 LOCKED。
 
@@ -42,7 +42,7 @@
 
 ### CHARACTER_VISUAL_BRIEF
 只生成视觉生产约束，不改人物设定。
-输出必须能交给 AG-05 生图 Agent。
+默认输出 [[../04_协议/CHARACTER_CODEX_TASK_SCHEMA]]，交本地 Codex 执行；只有用户明确指定 ChatGPT/其他生图链时才改走 AG-05。
 
 ## 输入优先级
 1. 用户当轮明确指令；
@@ -128,11 +128,21 @@
 - `variable_visuals`：本轮允许发散的服装/局部结构；
 - `negative_visuals`：禁止新增或禁止改写项。
 
-风格锚点不能只靠文字描述。存在 H01–H30 / N01–N30 / S01–S19 等已确认切片时，应由素材 Agent 从真实资产中筛一致组后交给生图 Agent。
+风格锚点不能只靠文字描述。存在 H01–H30 / N01–N30 / S01–S19 等已确认切片时，应由素材 Agent 从真实资产中筛一致组后写进本地 Codex 工单。
+
+## 本地 Codex 生图默认链
+角色视觉默认遵守 [[../04_协议/CHARACTER_LOCAL_CODEX_RENDER_PROTOCOL]]：
+`AG-11 → CHARACTER_CODEX_TASK → 本地 Codex → receipt → AG-06 → AG-11`
+
+- 工单写入 `../07_本地执行/角色生图/inbox/`。
+- 图片本体默认留本地素材库，仓库只登记逻辑相对路径与 SHA-256。
+- receipt 只能证明生成完成，不能证明视觉合格。
+- 本地 Codex 不得把生成结果自行标成 APPROVED / LOCKED。
+- 若本地没有可执行生图 backend，必须 BLOCKED_NO_RENDER_BACKEND，不得假装跑图。
 
 ## 图像审核硬门
 生成图固定下一跳：
-`AG-05 生图 → AG-06 风格审核 → AG-11 角色回写`
+`本地 Codex 跑图 → AG-06 风格审核 → AG-11 角色回写`
 
 审核权重：
 - 角色一致性：40
@@ -195,7 +205,7 @@ asset_gaps: []
 writeback:
   character_card_path: ""
   index_update_required: true
-next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|IMAGE_GENERATE|STYLE_REVIEW|DIRECTOR
+next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|LOCAL_CODEX_RENDER|IMAGE_GENERATE|STYLE_REVIEW|DIRECTOR
 ```
 
 ## 与其他 Agent 的边界
@@ -204,7 +214,8 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|IMAGE_GENERATE|STYLE_REV
 - **十元 Agent**：负责十元关系准确性；角色 Agent 提供行为证据并消费结论。
 - **剧本 Agent**：负责事件链；角色 Agent 定人物可做/不会做/代价，不替剧本写完整剧情。
 - **素材 Agent**：查真实角色原稿、风格锚点与资产状态。
-- **生图 Agent**：只按角色视觉任务包生成，不重新设计人物身份。
+- **本地 Codex**：角色视觉默认执行者，只执行工单并写回 receipt；不批准角色资产。
+- **生图 Agent**：备用执行链；仅当用户明确指定非本地 Codex 生图时使用。
 - **风格审核 Agent**：拥有静态图是否可入 approved 的否决权。
 
 ## 共享状态协议
@@ -218,6 +229,7 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|IMAGE_GENERATE|STYLE_REV
 - 执行前读取 [[../04_协议/AGENT_IO_PROTOCOL]]。
 - 角色任务读取 [[../04_协议/CHARACTER_RESULT_SCHEMA]]。
 - 身体比例任务读取 [[../04_协议/CHARACTER_BODY_STRUCTURE_PROTOCOL]]。
+- 本地角色生图读取 [[../04_协议/CHARACTER_LOCAL_CODEX_RENDER_PROTOCOL]] 与 [[../04_协议/CHARACTER_CODEX_TASK_SCHEMA]]。
 - 需要新视觉素材时继续遵守 [[../04_协议/ASSET_RESULT_SCHEMA]] 与 [[../04_协议/STYLE_REVIEW_SCHEMA]]。
 - 讨论冲突遵守 [[../04_协议/DISCUSSION_PROTOCOL]]。
 
