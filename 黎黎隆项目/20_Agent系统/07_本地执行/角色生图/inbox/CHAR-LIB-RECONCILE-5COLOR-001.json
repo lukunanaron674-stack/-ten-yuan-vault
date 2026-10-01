@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CHAR-LIB-RECONCILE-5COLOR-001",
+  "project_id": "LLL",
+  "execution_owner": "LOCAL_CODEX",
+  "status": "READY_FOR_LOCAL_CODEX",
+  "goal": "对齐角色库、世界观正本与本地真实角色素材；建立P00五色排序和角色视觉完成度。",
+  "readonly_source_scan": true,
+  "do_not_move_or_delete_assets": true,
+  "inputs": {
+    "character_index": "黎黎隆项目/03_角色/角色库/00_角色总索引.md",
+    "character_cards": "黎黎隆项目/03_角色/角色库/角色卡/",
+    "world_index": "黎黎隆项目/世界观/00_世界观总索引.md",
+    "full_image_inventory": "黎黎隆项目/00_总览/素材文字对接_全库图床清单_20261001.md",
+    "sha_index": "黎黎隆项目/00_总览/图片定位与验证_20260930/SHA256SUMS_全部图片.txt",
+    "asset_roots": [
+      "03_角色/角色库/02_H3专用角色库/assets/",
+      "03_角色/角色库/06_assets/",
+      "03_角色/角色库/03_线A_S卡19人/",
+      "03_角色/角色库/05_头像与高清素材/"
+    ]
+  },
+  "per_character_output": {
+    "identity_match": "REGISTERED|UNREGISTERED|CONFLICT",
+    "world_alignment": "PASS|PARTIAL|CONFLICT|UNASSIGNED",
+    "world_region": "cyan|red|pink|cross_region|unassigned",
+    "color_bucket": "C01|C02|C03|C04|C05|UNASSIGNED",
+    "color_bucket_status": "VERIFIED|PROVISIONAL|NEEDS_ASSET_VERIFY",
+    "best_view_type": "FOUR_GRID|FULL_BODY|MEDIUM_FULL|HEAD_ONLY|NONE",
+    "visual_readiness": "READY_4GRID|REFERENCE_PARTIAL|HEAD_ONLY_DESIGN_PENDING|ASSET_UNVERIFIED",
+    "source_path": "",
+    "sha256": "",
+    "style_review_status": "PASS|PENDING|FAIL|UNKNOWN"
+  },
+  "rules": [
+    "真实四宫格存在且身份匹配：visual_readiness=READY_4GRID。",
+    "只有单头像：visual_readiness=HEAD_ONLY_DESIGN_PENDING。",
+    "没有真实可定位图：visual_readiness=ASSET_UNVERIFIED。",
+    "不要用文件名猜角色身份；有冲突就CONFLICT。",
+    "五色桶依据真实主参考，不把世界色区或十元直接映射成P00色桶。",
+    "不要移动、删除、覆盖任何原始图片。"
+  ],
+  "outputs": [
+    "黎黎隆项目/20_Agent系统/06_验证/CHARACTER_WORLD_ASSET_RECONCILE_5COLOR.md",
+    "可供AG-11更新角色总索引的结构化结果"
+  ]
+}
