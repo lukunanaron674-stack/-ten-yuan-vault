@@ -1,4 +1,4 @@
-# CHARACTER_ASSET_SYNC_PROTOCOL｜角色 Agent × 素材 Agent 对账协议 v1.0
+# CHARACTER_ASSET_SYNC_PROTOCOL｜角色 Agent × 素材 Agent 对账协议 v1.1
 
 ## 目的
 解决“角色正本只登记少量角色，但全库存在大量真实角色图片/候选素材”导致的选角偏差。
@@ -113,3 +113,18 @@ production_eligibility:
 `06_验证/CHARACTER_ASSET_JOINT_AUDIT_<date>.md`
 
 导演只消费联合结果，不直接从单方状态推断“可生产”。
+
+
+## 非 CH 候选注册表
+
+当用户要求“新角色 / 下一个 / 不要 CH”时，双方首先读取：
+- 人读：`黎黎隆项目/03_角色/角色库/01_视觉候选总表_HNSNPC.md`
+- 机器：`黎黎隆项目/03_角色/角色库/01_视觉候选总表_HNSNPC.json`
+
+规则：
+1. H/N/S/NPC 的 `visual_id` 永久作为视觉候选 ID，不改成 CH。
+2. 不得因为候选有四宫格就直接创建正式角色；先做身份/重复/世界位置审计。
+3. 当前 main 若没有真图文件，`live_repo_asset_status` 必须保持未就绪，禁止 H3。
+4. 角色 Agent 优先审 `priority=P0`；素材 Agent 同步负责恢复/验证对应真实文件。
+5. P00 五色桶 C01–C05 只能在真图恢复并审核后分配；旧“青桶/红桶”只保留为来源证据。
+6. 导演选“下一个”时消费本表，而不是重新搜索 CH 或旧 B 端三人池。
