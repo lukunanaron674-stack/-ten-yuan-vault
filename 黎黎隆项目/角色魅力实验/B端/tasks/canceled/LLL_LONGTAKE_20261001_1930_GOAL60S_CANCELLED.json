@@ -1,0 +1,14 @@
+{
+  "task_id": "LLL_LONGTAKE_20261001_1930_GOAL60S",
+  "status": "CANCELLED_DO_NOT_EXECUTE",
+  "cancelled_at": "2026-10-01T19:45:00+08:00",
+  "cancelled_by": "user_canonical_asset_gate",
+  "reason": "LLL-MAIN-001 黎黎隆当前未完成，用户明确禁止正式H3渲染。",
+  "source_inbox_path": "黎黎隆项目/角色魅力实验/B端/tasks/inbox/LLL_LONGTAKE_20261001_1930_GOAL60S.json",
+  "invalidate": [
+    "executor submit",
+    "LongTake render",
+    "all derived formal render claims"
+  ],
+  "resume_condition": "用户明确确认黎黎隆完成，并重新通过角色资产/风格/H3门禁后创建新task_id。"
+}
