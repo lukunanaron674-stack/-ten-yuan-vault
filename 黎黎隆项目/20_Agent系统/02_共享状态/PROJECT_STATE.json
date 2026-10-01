@@ -1,33 +1,40 @@
 {
-  "schema_version": "1.6",
-  "state_version": 8,
+  "schema_version": "1.7",
+  "state_version": 9,
   "project_id": "LLL",
   "project_name": "黎黎隆",
   "pipeline": "B端_Agent",
-  "run_mode": "LEARNING_AND_TEST",
-  "production_gate": "DIRECTOR_GOAL_REQUIRED",
+  "run_mode": "PRODUCTION",
+  "production_gate": "OPEN_BY_USER_DIRECTOR_GOAL",
   "project_status": "ACTIVE",
   "current_scene_id": null,
   "current_shot_id": null,
-  "active_job_id": null,
-  "last_writer": "director_round8_finalize",
-  "updated_at": "2026-10-01T05:33:00+08:00",
+  "active_job_id": "JOB-LLL-60S-001",
+  "last_writer": "director_user_goal_60s",
+  "updated_at": "2026-10-01T17:42:00+08:00",
   "director_goal": {
-    "goal_id": null,
-    "mode": "NONE",
-    "text": null,
-    "source": null
+    "goal_id": "GOAL-LLL-60S-001",
+    "mode": "PRODUCTION",
+    "text": "制作《黎黎隆》1分钟正式动画。由导演基于当前角色/世界观/主题/十元正本自行确定本场内容，不自动把任何非正史故事候选升级为正史。优先使用现有真实可绑定资产；缺失必要素材时允许进入素材Agent→生图Agent→风格审核分支。最终目标为约60秒连续可剪成片。",
+    "source": "user",
+    "target_duration_sec": 60,
+    "target_shot_count": 6,
+    "nominal_shot_duration_sec": 10,
+    "main_character": "LLL-MAIN-001",
+    "canon_policy": "CURRENT_CANON_ONLY",
+    "asset_policy": "EXISTING_FIRST_GENERATE_IF_MISSING",
+    "h3_policy": "FORMAL_PRODUCTION_AFTER_ASSET_AND_REVIEW_GATES"
   },
   "cycle": {
-    "cycle_id": "RUN-20261001-0535",
-    "mode": "LEARNING_ONLY",
-    "status": "COMPLETED",
-    "started_at": "2026-10-01T05:35:52+08:00",
-    "completed_at": "2026-10-01T05:35:52+08:00"
+    "cycle_id": "PROD-LLL-60S-001",
+    "mode": "PRODUCTION",
+    "status": "STARTED",
+    "started_at": "2026-10-01T17:42:00+08:00",
+    "completed_at": null
   },
   "scene": {
-    "goal": null,
-    "target_duration_sec": null,
+    "goal": "由导演确定一个能在60秒内成立的完整小事件，突出黎黎隆ZX主/Z次的行动性与“太想赢使局面变复杂”，不改核心设定；优先落在已有世界观与可用场景中。",
+    "target_duration_sec": 60,
     "completed_duration_sec": 0,
     "status": "IDLE"
   },
@@ -51,6 +58,7 @@
   },
   "assets": {
     "status": "UNCHECKED",
+    "auto_asset_generation_allowed": true,
     "required": [],
     "resolved": [],
     "missing": [],
@@ -100,25 +108,17 @@
     "last_topic_world": null
   },
   "pending_deltas": [],
-  "blockers": [
-    {
-      "id": "BLK-20261001-01",
-      "type": "ASSET_MISSING",
-      "scope": "TEST-20261001-0535-XNZX-01",
-      "detail": "CH-003 locked H3-bindable character reference and paid magical entrance locked scene reference are not confirmed in GitHub assets",
-      "owner": "asset_agent"
-    }
-  ],
+  "blockers": [],
   "escalation": {
     "required": false,
     "owner": null,
     "reason": null
   },
-  "next_action": "WAIT_FOR_DIRECTOR_GOAL_OR_NEXT_HOURLY_LEARNING",
+  "next_action": "DIRECTOR_INIT",
   "assigned_agent": "director",
   "production_loop": {
     "protocol_version": "v1",
-    "status": "READY",
+    "status": "ACTIVE",
     "production_goal_required": true,
     "last_dry_run": {
       "test_shot_id": "TEST-20261001-0535-XNZX-01",
@@ -127,7 +127,11 @@
       "scene_check": "No repository code-search match for paid magical entrance / magical entrance",
       "next_action": "RESOLVE_REAL_ASSETS_BEFORE_RENDER",
       "render_dispatched": false
-    }
+    },
+    "active_goal_id": "GOAL-LLL-60S-001",
+    "target_duration_sec": 60,
+    "target_shot_count": 6,
+    "completed_shots": 0
   },
   "orchestration": {
     "protocol_version": "v1",
@@ -161,5 +165,16 @@
       "closing_state_to_opening_state"
     ],
     "certified_sequence_id": null
-  }
+  },
+  "resolved_blockers": [
+    {
+      "id": "BLK-20261001-01",
+      "type": "ASSET_MISSING",
+      "scope": "TEST-20261001-0535-XNZX-01",
+      "detail": "CH-003 locked H3-bindable character reference and paid magical entrance locked scene reference are not confirmed in GitHub assets",
+      "owner": "asset_agent",
+      "resolution": "Archived when formal 60s production goal opened",
+      "resolved_at": "2026-10-01T17:42:00+08:00"
+    }
+  ]
 }
