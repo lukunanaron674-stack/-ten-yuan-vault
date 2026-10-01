@@ -27,13 +27,14 @@
     "color_bucket": "C01|C02|C03|C04|C05|UNASSIGNED",
     "color_bucket_status": "VERIFIED|PROVISIONAL|NEEDS_ASSET_VERIFY",
     "best_view_type": "FOUR_GRID|FULL_BODY|MEDIUM_FULL|HEAD_ONLY|NONE",
-    "visual_readiness": "READY_4GRID|REFERENCE_PARTIAL|HEAD_ONLY_DESIGN_PENDING|ASSET_UNVERIFIED",
+    "visual_readiness": "READY_VISUAL|HEAD_ONLY_DESIGN_PENDING|ASSET_UNVERIFIED",
     "source_path": "",
     "sha256": "",
     "style_review_status": "PASS|PENDING|FAIL|UNKNOWN"
   },
   "rules": [
-    "真实四宫格存在且身份匹配：visual_readiness=READY_4GRID。",
+    "真实四宫格存在且身份匹配：visual_readiness=READY_VISUAL。",
+    "真实全身/中全景/中景角色设定图存在且身份匹配：visual_readiness=READY_VISUAL，不强制补四宫格。",
     "只有单头像：visual_readiness=HEAD_ONLY_DESIGN_PENDING。",
     "没有真实可定位图：visual_readiness=ASSET_UNVERIFIED。",
     "不要用文件名猜角色身份；有冲突就CONFLICT。",
