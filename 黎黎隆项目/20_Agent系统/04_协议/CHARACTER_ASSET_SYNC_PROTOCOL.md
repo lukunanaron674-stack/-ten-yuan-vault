@@ -65,7 +65,7 @@ asset_state:
   existence: VERIFIED|MISSING
   views: []
   best_view_type: FOUR_GRID|FULL_BODY|MEDIUM_FULL|HEAD_ONLY|NONE
-  visual_readiness: READY_4GRID|REFERENCE_PARTIAL|HEAD_ONLY_DESIGN_PENDING|ASSET_UNVERIFIED
+  visual_readiness: READY_VISUAL|HEAD_ONLY_DESIGN_PENDING|ASSET_UNVERIFIED
   source_path:
   sha256:
   style_review: PASS|PENDING|FAIL|UNKNOWN
@@ -81,12 +81,12 @@ production_eligibility:
 
 | 真实素材 | visual_readiness | 角色设计结论 |
 |---|---|---|
-| 身份匹配的四宫格 | READY_4GRID | **可用**，可作为角色完整设计参考继续生产 |
-| 全身/中全景但无四宫格 | REFERENCE_PARTIAL | 部分可用，建议补四宫格 |
-| 只有单头像 | HEAD_ONLY_DESIGN_PENDING | **待设计**，不得假装全身完成 |
+| 身份匹配的四宫格 | READY_VISUAL | **可用** |
+| 身份匹配的全身 / 中全景 / 中景角色设定图 | READY_VISUAL | **可用**，不强制补四宫格 |
+| 只有单头像 | HEAD_ONLY_DESIGN_PENDING | **待设计**，不得假装完整造型已完成 |
 | 无真实可定位图 | ASSET_UNVERIFIED | 待素材核验 |
 
-`READY_4GRID` 是角色设计完成度，不自动跳过 AG-06 风格审核/H3绑定等正式生产门禁。
+`READY_VISUAL` 表示角色视觉设计信息已足够继续使用；来源既可以是四宫格，也可以是清楚的全身/中全景/中景设定图。它不自动跳过 AG-06 风格审核/H3绑定等正式生产门禁。
 
 ## 正式生产 READY 条件
 必须同时满足：
