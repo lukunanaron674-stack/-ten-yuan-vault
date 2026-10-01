@@ -80,6 +80,10 @@
 7. **什么不能改**：作者冻结项。
 
 ## 世界位置字段
+- `world_alignment`: PASS | PARTIAL | CONFLICT | UNASSIGNED
+- `color_bucket`: C01 | C02 | C03 | C04 | C05 | UNASSIGNED
+- `color_sort_id`: 五色桶内排序号；不替代稳定主 ID
+- `visual_readiness`: READY_4GRID | REFERENCE_PARTIAL | HEAD_ONLY_DESIGN_PENDING | ASSET_UNVERIFIED
 - `region`: cyan | red | pink | cross_region | unassigned
 - `narrative_level`: NPC | RECURRING | KEY | PROTAGONIST
 - `organization`: CONFIRMED / CANDIDATE / NONE
@@ -94,6 +98,26 @@
 - 红色：Z + ZN。
 - 粉色：NZ 主 / X并Z 次，古老遗蜕/生态使用必须保留生命性，禁止偷换成普通机械遗迹。
 - 颜色不是十元本身，角色也不因“穿某色”就属于某区。
+
+## 世界观同化门
+角色设定完成前必须与 AG-10 当前正本对齐：
+- 世界区域；
+- 具体地理位置；
+- 组织/职业；
+- 依赖的世界机制；
+- 世界如何影响角色日常、身体、服装、工具或风险。
+
+`world_alignment=CONFLICT|UNASSIGNED` 时，不得标角色生产完成。需要不存在的世界规则时转 WORLD_PROPOSAL。
+
+## 五色编号与素材完成度
+遵守 [[../04_协议/CHARACTER_FIVE_COLOR_INDEX_PROTOCOL]] 与 [[../04_协议/CHARACTER_ASSET_SYNC_PROTOCOL]]。
+
+- 五色编号是 P00 视觉桶，不等于青/红/粉世界区域。
+- 稳定主 ID `LLL-CHAR-###` 不重排；新增 `color_sort_id` 用于五色排序。
+- 素材端确认真实四宫格且身份匹配：`visual_readiness=READY_4GRID`，角色设计层可用。
+- 只有真实单头像：`visual_readiness=HEAD_ONLY_DESIGN_PENDING`，必须继续跑中全景/四宫格。
+- 没有真实可定位图：`ASSET_UNVERIFIED`。
+- 四宫格设计可用不自动等于 H3 正式生产可用；后者仍走风格审核与绑定门禁。
 
 ## 状态拆分硬门
 角色 Agent 不允许用一个“已确认”覆盖全部维度。每个角色至少独立记录：
@@ -233,6 +257,7 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|LOCAL_CODEX_RENDER|IMAGE
 - **十元 Agent**：负责十元关系准确性；角色 Agent 提供行为证据并消费结论。
 - **剧本 Agent**：负责事件链；角色 Agent 定人物可做/不会做/代价，不替剧本写完整剧情。
 - **素材 Agent**：查真实角色原稿、风格锚点与资产状态。
+- **素材 Agent**同时拥有角色视觉完成度的事实裁定权：四宫格/全身/头像是否真实存在、路径/hash/身份是否匹配由 AG-04 给证据，AG-11 不凭文字自判。
 - **本地 Codex**：角色视觉默认执行者，只执行工单并写回 receipt；不批准角色资产。
 - **生图 Agent**：备用执行链；仅当用户明确指定非本地 Codex 生图时使用。
 - **风格审核 Agent**：拥有静态图是否可入 approved 的否决权。
