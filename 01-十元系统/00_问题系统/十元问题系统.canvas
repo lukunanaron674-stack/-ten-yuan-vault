@@ -1,0 +1,713 @@
+{
+  "nodes": [
+    {
+      "id": "G0",
+      "type": "text",
+      "text": "# G0｜十元体系稳定、可验证、可生成\n\n端点稳定 → 五轴正确调用 → 生克补可证 → 动态链可解释 → DSL跨模型稳定 → 视觉可盲审 → 故事/H3可生成 → 自动化不漂移\n\n[[01-十元系统/00_问题系统/十元问题总纲.md|打开总纲]]",
+      "x": -2150,
+      "y": 250,
+      "width": 660,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "G1",
+      "type": "text",
+      "text": "# G1｜十元端点与正本一致\n状态：ACTIVE\n\nD1问题：1",
+      "x": -1250,
+      "y": -1150,
+      "width": 520,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "G2",
+      "type": "text",
+      "text": "# G2｜五轴被正确调用与回归\n状态：ACTIVE\n\nD1问题：1",
+      "x": -1250,
+      "y": -750,
+      "width": 520,
+      "height": 220,
+      "color": "6"
+    },
+    {
+      "id": "G3",
+      "type": "text",
+      "text": "# G3｜生克补关系可证明、不可串对\n状态：ACTIVE\n\nD1问题：1",
+      "x": -1250,
+      "y": -350,
+      "width": 520,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "G4",
+      "type": "text",
+      "text": "# G4｜动态链可解释、可盲测\n状态：ACTIVE\n\nD1问题：1",
+      "x": -1250,
+      "y": 50,
+      "width": 520,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "G5",
+      "type": "text",
+      "text": "# G5｜解释器 / DSL 跨模型稳定\n状态：ACTIVE\n\nD1问题：1",
+      "x": -1250,
+      "y": 450,
+      "width": 520,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "G6",
+      "type": "text",
+      "text": "# G6｜十元视觉化可生成、可审核\n状态：ACTIVE\n\nD1问题：1",
+      "x": -1250,
+      "y": 850,
+      "width": 520,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "G7",
+      "type": "text",
+      "text": "# G7｜十元能真正驱动故事 / H3 / 感受\n状态：ACTIVE\n\nD1问题：1",
+      "x": -1250,
+      "y": 1250,
+      "width": 520,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "G8",
+      "type": "text",
+      "text": "# G8｜版本、自动化与研究治理不漂移\n状态：ACTIVE\n\nD1问题：1",
+      "x": -1250,
+      "y": 1650,
+      "width": 520,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "Q-TEN-001",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-TEN-001_十元 canonical、信息卡、准度卡之间仍存在端点与版本同步债.md",
+      "x": -300,
+      "y": -1150,
+      "width": 590,
+      "height": 200,
+      "color": "5"
+    },
+    {
+      "id": "Q-AXIS-001",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-AXIS-001_五轴理论已冻结但解释器按同对象层同核心变量判轴的统一运行门禁仍未闭环.md",
+      "x": -300,
+      "y": -750,
+      "width": 590,
+      "height": 200,
+      "color": "5"
+    },
+    {
+      "id": "Q-REL-001",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-REL-001_十元生克补关系尚未全部达到端点正确变量变化反事实的实证闭环.md",
+      "x": -300,
+      "y": -350,
+      "width": 590,
+      "height": 200,
+      "color": "5"
+    },
+    {
+      "id": "Q-DYN-001",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-DYN-001_动态链结构可用但跨题材质量评估与真实泛化尚未闭环.md",
+      "x": -300,
+      "y": 50,
+      "width": 590,
+      "height": 200,
+      "color": "5"
+    },
+    {
+      "id": "Q-DSL-001",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-DSL-001_自然语言到十元五轴关系 DSL 的真实外部泛化仍不足.md",
+      "x": -300,
+      "y": 450,
+      "width": 590,
+      "height": 200,
+      "color": "5"
+    },
+    {
+      "id": "Q-VIS-001",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-VIS-001_十元视觉化仍未形成全部十元关系动态链的可盲审闭环.md",
+      "x": -300,
+      "y": 850,
+      "width": 590,
+      "height": 200,
+      "color": "5"
+    },
+    {
+      "id": "Q-GEN-001",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-GEN-001_十元目前仍不能稳定转化为有趣且可看的生成结果.md",
+      "x": -300,
+      "y": 1250,
+      "width": 590,
+      "height": 200,
+      "color": "5"
+    },
+    {
+      "id": "Q-SYS-001",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-SYS-001_十元研究与自动执行仍存在版本漂移旧定义回流和状态不同步风险.md",
+      "x": -300,
+      "y": 1650,
+      "width": 590,
+      "height": 200,
+      "color": "5"
+    },
+    {
+      "id": "Q-TEN-001.1",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-TEN-001.1_z 与 zn 端点修正后旧生克补关系仍有冻结与历史定义债.md",
+      "x": 700,
+      "y": -1270,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-TEN-001.2",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-TEN-001.2_广义十元与各领域狭义定义仍可能被机械复制而跨层污染.md",
+      "x": 700,
+      "y": -1030,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-AXIS-001.1",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-AXIS-001.1_五轴跨领域映射仍需证明是结构迁移而不是题材词或主题词类比.md",
+      "x": 700,
+      "y": -750,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-REL-001.1",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-REL-001.1_补关系的严格语义仍需用五轴端点重新审计.md",
+      "x": 700,
+      "y": -590,
+      "width": 620,
+      "height": 200,
+      "color": "3"
+    },
+    {
+      "id": "Q-REL-001.2",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-REL-001.2_25条十元关系的 T1 T2 T3 视觉与反事实实测尚未全部完成.md",
+      "x": 700,
+      "y": -350,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-REL-001.3",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-REL-001.3_自动任务会把固定关系对子串错例如 N补X并Z 变成 N补ZN.md",
+      "x": 700,
+      "y": -110,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-DYN-001.1",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-DYN-001.1_Dynamic Chain Evaluator R5 跨题材盲测尚未完成.md",
+      "x": 700,
+      "y": -70,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-DYN-001.2",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-DYN-001.2_动态链仍可能把关系位置允许误写成案例里真实发生.md",
+      "x": 700,
+      "y": 170,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-DSL-001.1",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-DSL-001.1_20k Benchmark 已暴露模板过拟合但真正 Semantic Parser 尚未完成闭环.md",
+      "x": 700,
+      "y": 330,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-DSL-001.2",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-DSL-001.2_GPT Qwen Codex 本地模型尚未稳定读取同一十元中间表示.md",
+      "x": 700,
+      "y": 570,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-VIS-001.1",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-VIS-001.1_除 X 外其余九元 Style Grammar 尚未全部冻结.md",
+      "x": 700,
+      "y": 490,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-VIS-001.2",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-VIS-001.2_生克补单边视觉证明尚未全量通过.md",
+      "x": 700,
+      "y": 730,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-VIS-001.3",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-VIS-001.3_图像审核器 R1.5 的真实盲审回归与反捷径统计尚未闭环.md",
+      "x": 700,
+      "y": 970,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-VIS-001.4",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-VIS-001.4_Dynamic Visual Operations v1 的大规模盲测仍未完成.md",
+      "x": 700,
+      "y": 1210,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-GEN-001.1",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-GEN-001.1_十元作为自动故事发动机的中间结构仍不足.md",
+      "x": 700,
+      "y": 1010,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-GEN-001.2",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-GEN-001.2_十元到 H3 动作镜头描述词仍缺稳定编译层.md",
+      "x": 700,
+      "y": 1250,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-GEN-001.3",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-GEN-001.3_视觉到感受到十元 与 十元到视觉 两个方向仍容易混淆.md",
+      "x": 700,
+      "y": 1490,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-SYS-001.1",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-SYS-001.1_定时任务可能在未锁 relation_id 的情况下自由改写关系对子.md",
+      "x": 700,
+      "y": 1530,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "Q-SYS-001.2",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-SYS-001.2_旧聊天 Obsidian GitHub Linear 中十元研究资产仍需统一索引与去重.md",
+      "x": 700,
+      "y": 1770,
+      "width": 620,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "LEGEND",
+      "type": "text",
+      "text": "# 阅读规则\n\n左→右：G0 → 分目标 → D1 → D2\n\nblocks：问题阻塞目标\ncauses：子问题导致父问题\ndepends_on：解决依赖\n\n正式 Q 都是 file node。\n五轴本体 FROZEN_REGRESSION_ONLY，不因想继续研究就重开。",
+      "x": 1500,
+      "y": 1900,
+      "width": 600,
+      "height": 360,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-G0-G1",
+      "fromNode": "G0",
+      "fromSide": "right",
+      "toNode": "G1",
+      "toSide": "left",
+      "label": "分解为"
+    },
+    {
+      "id": "e-G0-G2",
+      "fromNode": "G0",
+      "fromSide": "right",
+      "toNode": "G2",
+      "toSide": "left",
+      "label": "分解为"
+    },
+    {
+      "id": "e-G0-G3",
+      "fromNode": "G0",
+      "fromSide": "right",
+      "toNode": "G3",
+      "toSide": "left",
+      "label": "分解为"
+    },
+    {
+      "id": "e-G0-G4",
+      "fromNode": "G0",
+      "fromSide": "right",
+      "toNode": "G4",
+      "toSide": "left",
+      "label": "分解为"
+    },
+    {
+      "id": "e-G0-G5",
+      "fromNode": "G0",
+      "fromSide": "right",
+      "toNode": "G5",
+      "toSide": "left",
+      "label": "分解为"
+    },
+    {
+      "id": "e-G0-G6",
+      "fromNode": "G0",
+      "fromSide": "right",
+      "toNode": "G6",
+      "toSide": "left",
+      "label": "分解为"
+    },
+    {
+      "id": "e-G0-G7",
+      "fromNode": "G0",
+      "fromSide": "right",
+      "toNode": "G7",
+      "toSide": "left",
+      "label": "分解为"
+    },
+    {
+      "id": "e-G0-G8",
+      "fromNode": "G0",
+      "fromSide": "right",
+      "toNode": "G8",
+      "toSide": "left",
+      "label": "分解为"
+    },
+    {
+      "id": "e-G1-Q-TEN-001",
+      "fromNode": "G1",
+      "fromSide": "right",
+      "toNode": "Q-TEN-001",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "e-G2-Q-AXIS-001",
+      "fromNode": "G2",
+      "fromSide": "right",
+      "toNode": "Q-AXIS-001",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "e-G3-Q-REL-001",
+      "fromNode": "G3",
+      "fromSide": "right",
+      "toNode": "Q-REL-001",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "e-G4-Q-DYN-001",
+      "fromNode": "G4",
+      "fromSide": "right",
+      "toNode": "Q-DYN-001",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "e-G5-Q-DSL-001",
+      "fromNode": "G5",
+      "fromSide": "right",
+      "toNode": "Q-DSL-001",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "e-G6-Q-VIS-001",
+      "fromNode": "G6",
+      "fromSide": "right",
+      "toNode": "Q-VIS-001",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "e-G7-Q-GEN-001",
+      "fromNode": "G7",
+      "fromSide": "right",
+      "toNode": "Q-GEN-001",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "e-G8-Q-SYS-001",
+      "fromNode": "G8",
+      "fromSide": "right",
+      "toNode": "Q-SYS-001",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "e-Q-TEN-001-Q-TEN-001.1",
+      "fromNode": "Q-TEN-001",
+      "fromSide": "right",
+      "toNode": "Q-TEN-001.1",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-TEN-001-Q-TEN-001.2",
+      "fromNode": "Q-TEN-001",
+      "fromSide": "right",
+      "toNode": "Q-TEN-001.2",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-AXIS-001-Q-AXIS-001.1",
+      "fromNode": "Q-AXIS-001",
+      "fromSide": "right",
+      "toNode": "Q-AXIS-001.1",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-REL-001-Q-REL-001.1",
+      "fromNode": "Q-REL-001",
+      "fromSide": "right",
+      "toNode": "Q-REL-001.1",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-REL-001-Q-REL-001.2",
+      "fromNode": "Q-REL-001",
+      "fromSide": "right",
+      "toNode": "Q-REL-001.2",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-REL-001-Q-REL-001.3",
+      "fromNode": "Q-REL-001",
+      "fromSide": "right",
+      "toNode": "Q-REL-001.3",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-DYN-001-Q-DYN-001.1",
+      "fromNode": "Q-DYN-001",
+      "fromSide": "right",
+      "toNode": "Q-DYN-001.1",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-DYN-001-Q-DYN-001.2",
+      "fromNode": "Q-DYN-001",
+      "fromSide": "right",
+      "toNode": "Q-DYN-001.2",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-DSL-001-Q-DSL-001.1",
+      "fromNode": "Q-DSL-001",
+      "fromSide": "right",
+      "toNode": "Q-DSL-001.1",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-DSL-001-Q-DSL-001.2",
+      "fromNode": "Q-DSL-001",
+      "fromSide": "right",
+      "toNode": "Q-DSL-001.2",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-VIS-001-Q-VIS-001.1",
+      "fromNode": "Q-VIS-001",
+      "fromSide": "right",
+      "toNode": "Q-VIS-001.1",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-VIS-001-Q-VIS-001.2",
+      "fromNode": "Q-VIS-001",
+      "fromSide": "right",
+      "toNode": "Q-VIS-001.2",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-VIS-001-Q-VIS-001.3",
+      "fromNode": "Q-VIS-001",
+      "fromSide": "right",
+      "toNode": "Q-VIS-001.3",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-VIS-001-Q-VIS-001.4",
+      "fromNode": "Q-VIS-001",
+      "fromSide": "right",
+      "toNode": "Q-VIS-001.4",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-GEN-001-Q-GEN-001.1",
+      "fromNode": "Q-GEN-001",
+      "fromSide": "right",
+      "toNode": "Q-GEN-001.1",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-GEN-001-Q-GEN-001.2",
+      "fromNode": "Q-GEN-001",
+      "fromSide": "right",
+      "toNode": "Q-GEN-001.2",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-GEN-001-Q-GEN-001.3",
+      "fromNode": "Q-GEN-001",
+      "fromSide": "right",
+      "toNode": "Q-GEN-001.3",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-SYS-001-Q-SYS-001.1",
+      "fromNode": "Q-SYS-001",
+      "fromSide": "right",
+      "toNode": "Q-SYS-001.1",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "e-Q-SYS-001-Q-SYS-001.2",
+      "fromNode": "Q-SYS-001",
+      "fromSide": "right",
+      "toNode": "Q-SYS-001.2",
+      "toSide": "left",
+      "label": "causes"
+    },
+    {
+      "id": "dep1",
+      "fromNode": "Q-REL-001",
+      "fromSide": "top",
+      "toNode": "Q-TEN-001",
+      "toSide": "bottom",
+      "label": "depends_on"
+    },
+    {
+      "id": "dep2",
+      "fromNode": "Q-DYN-001",
+      "fromSide": "top",
+      "toNode": "Q-REL-001",
+      "toSide": "bottom",
+      "label": "depends_on"
+    },
+    {
+      "id": "dep3",
+      "fromNode": "Q-DSL-001",
+      "fromSide": "top",
+      "toNode": "Q-AXIS-001",
+      "toSide": "bottom",
+      "label": "depends_on"
+    },
+    {
+      "id": "dep4",
+      "fromNode": "Q-VIS-001",
+      "fromSide": "top",
+      "toNode": "Q-REL-001",
+      "toSide": "bottom",
+      "label": "depends_on"
+    },
+    {
+      "id": "dep5",
+      "fromNode": "Q-GEN-001",
+      "fromSide": "top",
+      "toNode": "Q-DSL-001",
+      "toSide": "bottom",
+      "label": "depends_on"
+    },
+    {
+      "id": "dep6",
+      "fromNode": "Q-SYS-001",
+      "fromSide": "top",
+      "toNode": "Q-TEN-001",
+      "toSide": "bottom",
+      "label": "depends_on"
+    }
+  ],
+  "metadata": {
+    "version": "v1.0",
+    "frontmatter": {
+      "type": "ten-yuan-problem-system",
+      "status": "ACTIVE",
+      "updated": "2026-10-03",
+      "q_count": 27
+    }
+  }
+}
