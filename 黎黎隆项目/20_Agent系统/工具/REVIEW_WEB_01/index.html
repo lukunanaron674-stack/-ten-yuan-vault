@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>角色资产审核仓库</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#111;color:#eee}
+body{margin:0;background:#111}
+header{position:sticky;top:0;z-index:10;background:#181818;border-bottom:1px solid #333;padding:12px 16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+button,input,textarea,select{font:inherit}
+button{background:#272727;color:#eee;border:1px solid #444;border-radius:8px;padding:8px 12px;cursor:pointer}
+button:hover{background:#333}
+.badge{padding:5px 8px;border-radius:999px;background:#252525;border:1px solid #444;font-size:12px}
+#syncState[data-state="SYNCED"]{border-color:#4d7}
+#syncState[data-state="UNSYNCED"]{border-color:#da4}
+#syncState[data-state="PROCESSING"]{border-color:#7af}
+#syncState[data-state="ERROR"]{border-color:#f66}
+main{padding:16px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.card{position:relative;background:#191919;border:1px solid #333;border-radius:12px;overflow:hidden}
+.card.pending-delete{outline:2px solid #c33;opacity:.82}
+.card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#222;display:block}
+.actions{position:absolute;top:8px;right:8px;display:flex;gap:8px}
+.iconbtn{width:38px;height:38px;padding:0;border-radius:50%;display:grid;place-items:center;background:#1d1d1ddd}
+.iconbtn.featured.active{background:#7a1f2a;border-color:#c65363}
+.iconbtn.delete.active{background:#6b1d1d;border-color:#d44}
+.meta{padding:10px;display:grid;gap:8px}
+.name{font-size:13px;word-break:break-all;color:#ddd}
+textarea{width:100%;min-height:70px;resize:vertical;box-sizing:border-box;background:#111;color:#eee;border:1px solid #444;border-radius:8px;padding:8px}
+.row{display:flex;gap:8px;align-items:center}
+.small{font-size:12px;color:#aaa}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <strong>角色资产审核仓库</strong>
+  <button id="pickBtn">选择仓库目录</button>
+  <button id="refreshBtn">↻ 刷新</button>
+  <button id="commitBtn">提交本轮审核 / 导出并执行</button>
+  <span id="syncState" class="badge" data-state="UNSYNCED">UNSYNCED</span>
+  <span id="counts" class="badge">精选 0｜普通 0｜待删除 0</span>
+</header>
+<main>
+  <div class="controls">
+    <input id="search" placeholder="搜索文件名" />
+    <select id="filter">
+      <option value="all">全部</option>
+      <option value="featured">只看红心</option>
+      <option value="normal">普通可用</option>
+      <option value="delete">待删除</option>
+    </select>
+  </div>
+  <div id="grid" class="grid"></div>
+</main>
+<script>
+const IMAGE_EXT=/\.(png|jpe?g|webp)$/i;
+let dirHandle=null;
+let store={version:1,last_synced_at:null,items:{}};
+let fileMap=new Map();
+const $=s=>document.querySelector(s);
+
+function setState(s){const el=$('#syncState');el.textContent=s;el.dataset.state=s}
+function keyFor(path){return path}
+function now(){return new Date().toISOString()}
+
+async function ensureDir(parent,name){return await parent.getDirectoryHandle(name,{create:true})}
+async function loadJson(dir,name,fallback){
+  try{const h=await dir.getFileHandle(name);const f=await h.getFile();return JSON.parse(await f.text())}catch{return fallback}
+}
+async function saveJson(dir,name,obj){
+  const h=await dir.getFileHandle(name,{create:true});
+  const w=await h.createWritable();await w.write(JSON.stringify(obj,null,2));await w.close();
+}
+async function scanImages(dir,prefix=''){
+  const out=[];
+  for await (const [name,h] of dir.entries()){
+    if(h.kind==='file' && IMAGE_EXT.test(name)) out.push({name,path:prefix+name,handle:h});
+  }
+  return out;
+}
+function ensureItem(f){
+  if(!store.items[f.path]) store.items[f.path]={
+    asset_id:crypto.randomUUID(),file_name:f.name,relative_path:f.path,
+    review_state:'NORMAL_USABLE',user_inspiration:'',stage:'L1',
+    source_issue:'674-173',created_at:now(),updated_at:now()
+  };
+  return store.items[f.path];
+}
+async function render(){
+  const q=$('#search').value.trim().toLowerCase();
+  const filter=$('#filter').value;
+  const grid=$('#grid');grid.innerHTML='';
+  let featured=0,normal=0,del=0;
+  for(const [path,f] of fileMap){
+    const item=ensureItem(f);
+    if(item.review_state==='FEATURED') featured++;
+    else if(item.review_state==='PENDING_DELETE') del++;
+    else normal++;
+    if(q && !item.file_name.toLowerCase().includes(q)) continue;
+    if(filter==='featured' && item.review_state!=='FEATURED') continue;
+    if(filter==='normal' && item.review_state!=='NORMAL_USABLE') continue;
+    if(filter==='delete' && item.review_state!=='PENDING_DELETE') continue;
+
+    const file=await f.handle.getFile();
+    const url=URL.createObjectURL(file);
+    const card=document.createElement('article');
+    card.className='card'+(item.review_state==='PENDING_DELETE'?' pending-delete':'');
+    card.innerHTML=`
+      <img src="${url}" alt="">
+      <div class="actions">
+        <button class="iconbtn featured ${item.review_state==='FEATURED'?'active':''}" title="特别好">♥</button>
+        <button class="iconbtn delete ${item.review_state==='PENDING_DELETE'?'active':''}" title="待删除">🗑</button>
+      </div>
+      <div class="meta">
+        <div class="name">${item.file_name}</div>
+        <div class="row">
+          <select class="stage">
+            <option value="L1" ${item.stage==='L1'?'selected':''}>L1 头像</option>
+            <option value="L2" ${item.stage==='L2'?'selected':''}>L2 四宫格</option>
+          </select>
+          <span class="small">${item.review_state}</span>
+        </div>
+        <textarea placeholder="写你的角色灵感、身份、职业、服装、剧情用途……">${item.user_inspiration||''}</textarea>
+      </div>`;
+    card.querySelector('.featured').onclick=()=>{
+      item.review_state=item.review_state==='FEATURED'?'NORMAL_USABLE':'FEATURED';
+      item.updated_at=now();setState('UNSYNCED');render();
+    };
+    card.querySelector('.delete').onclick=()=>{
+      item.review_state=item.review_state==='PENDING_DELETE'?'NORMAL_USABLE':'PENDING_DELETE';
+      item.updated_at=now();setState('UNSYNCED');render();
+    };
+    card.querySelector('.stage').onchange=e=>{item.stage=e.target.value;item.updated_at=now();setState('UNSYNCED')};
+    card.querySelector('textarea').oninput=e=>{item.user_inspiration=e.target.value;item.updated_at=now();setState('UNSYNCED')};
+    grid.appendChild(card);
+  }
+  $('#counts').textContent=`精选 ${featured}｜普通 ${normal}｜待删除 ${del}`;
+}
+
+async function pick(){
+  if(!window.showDirectoryPicker){alert('请用最新版 Chrome / Edge 打开此文件。');return}
+  dirHandle=await window.showDirectoryPicker({mode:'readwrite'});
+  const reviewDir=await ensureDir(dirHandle,'review_store');
+  store=await loadJson(reviewDir,'review_manifest.json',{version:1,last_synced_at:null,items:{}});
+  await refresh();
+}
+async function refresh(){
+  if(!dirHandle)return;
+  setState('PROCESSING');
+  fileMap.clear();
+  for(const f of await scanImages(dirHandle,'')) fileMap.set(keyFor(f.path),f);
+  for(const k of Object.keys(store.items)) if(!fileMap.has(k)) delete store.items[k];
+  const reviewDir=await ensureDir(dirHandle,'review_store');
+  await saveJson(reviewDir,'review_manifest.json',store);
+  store.last_synced_at=now();
+  await saveJson(reviewDir,'review_manifest.json',store);
+  setState('SYNCED');await render();
+}
+async function commitReview(){
+  if(!dirHandle)return;
+  setState('PROCESSING');
+  const reviewDir=await ensureDir(dirHandle,'review_store');
+  const exportDir=await ensureDir(reviewDir,'exports');
+  const featuredDir=await ensureDir(exportDir,'featured');
+  const normalDir=await ensureDir(exportDir,'normal');
+  const deleted=[];
+  for(const [path,f] of [...fileMap]){
+    const item=ensureItem(f);
+    if(item.review_state==='PENDING_DELETE'){
+      deleted.push(path);
+      try{await dirHandle.removeEntry(path)}catch(e){console.warn('delete failed',path,e)}
+      delete store.items[path];fileMap.delete(path);
+      continue;
+    }
+    const srcFile=await f.handle.getFile();
+    const targetDir=item.review_state==='FEATURED'?featuredDir:normalDir;
+    const out=await targetDir.getFileHandle(item.file_name,{create:true});
+    const w=await out.createWritable();await w.write(await srcFile.arrayBuffer());await w.close();
+  }
+  store.last_worker_run=now();
+  store.last_synced_at=now();
+  await saveJson(reviewDir,'review_manifest.json',store);
+  const summary={featured:Object.values(store.items).filter(x=>x.review_state==='FEATURED').length,
+    normal:Object.values(store.items).filter(x=>x.review_state==='NORMAL_USABLE').length,
+    deleted:deleted.length,deleted_paths:deleted,at:now()};
+  await saveJson(reviewDir,'last_run_summary.json',summary);
+  setState('SYNCED');await render();
+}
+
+$('#pickBtn').onclick=pick;
+$('#refreshBtn').onclick=refresh;
+$('#commitBtn').onclick=commitReview;
+$('#search').oninput=render;
+$('#filter').onchange=render;
+</script>
+</body>
+</html>
