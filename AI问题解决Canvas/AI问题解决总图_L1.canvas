@@ -6,8 +6,8 @@
       "x": 0,
       "y": 0,
       "width": 420,
-      "height": 300,
-      "text": "# AI Problem–Solution–Unknown Graph\n\n**总状态栏｜2026-10-04**\nC-INTENT：THEORY DONE → EXPERIMENT\nC-CONSTRAINT：CYCLE-01 DONE\nD-AGENCY：CYCLE-01 DONE\nE-REAL-EVAL：CYCLE-01 DONE → E-H1\nF-INDUSTRY / F-PRODUCTION-v1：RESEARCH DONE → IMPLEMENTATION\n\n**同步规则：Linear → MD → Canvas → Next Action 必须同轮闭环**\n新框先读本状态栏与索引，禁止重复 DONE/FROZEN 工作。",
+      "height": 390,
+      "text": "# AI Problem–Solution–Unknown Graph\n\n**总状态栏｜2026-10-04｜Scheduler v2**\nWindows｜RTX3070 Laptop ACTIVE\n4090 Cloud RETIRED｜4080 32G PENDING_INTEGRATION\n重GPU：READY_FOR_4080\n\nSCAN → RECOVER → VERIFY → DISPATCH → WORK → UPDATE\nRecover before Create｜Verify before Expand\n\nC-INTENT：THEORY DONE → EXPERIMENT\nC-CONSTRAINT：CYCLE-01 DONE\nD-AGENCY：CYCLE-01 DONE\nE-REAL-EVAL：CYCLE-01 DONE → E-H1\nF：RESEARCH DONE → IMPLEMENTATION\n\n开工顺序：Canvas → MD → Linear → RECOVER CURRENT_NODE\n禁止重复 DONE/FROZEN；Linear→MD→Canvas→Next Action 同轮闭环。",
       "color": "1"
     },
     {
@@ -66,8 +66,8 @@
       "x": 0,
       "y": 850,
       "width": 360,
-      "height": 370,
-      "text": "# F｜生产工程\n\n**RESEARCH DONE / IMPLEMENTATION ACTIVE**\nF-INDUSTRY：DONE / STOP\nF-PRODUCTION-v1：R1–R6 DONE / STOP\nF-WORKFLOW：Codex-native Workflow\nF-COMPUTE：3070 Laptop ACTIVE\n4080 32G：PENDING_INTEGRATION\n4090 Cloud：RETIRED\nF-ASSET：Local Files + Linear Attachment = P0\n\nNEXT：只做实施/闭环验证，不再横向扩研",
+      "height": 450,
+      "text": "# F｜生产工程\n\n**RESEARCH DONE / IMPLEMENTATION ACTIVE**\nHOST：Windows\nACTIVE_COMPUTE：RTX3070 Laptop\nRTX4080 32G：PENDING_INTEGRATION\n4090 Cloud：RETIRED\n重GPU：READY_FOR_4080\nCodex：工作流执行中枢，无独立Supervisor假设\nP0 Asset：Local Files + Linear Attachment\n退役：Linux本地主链 / SSH-WinRM→4090 / B2-COS默认搬运\n\nNEXT：3070继续非重GPU节点；4080实际闭环验收后再切ACTIVE",
       "color": "4"
     },
     {
