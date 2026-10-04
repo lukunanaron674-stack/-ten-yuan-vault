@@ -23,7 +23,7 @@
     {
       "id": "g2",
       "type": "text",
-      "text": "G2｜角色稳定\n\n当前新增案例：CH-004 青色路域勘察员",
+      "text": "G2｜角色稳定\n\n状态：IN_PROGRESS\nQ-CHAR-001：R1 baseline CLEAR（79个基础头像）\nMAIN-03：R1–R3 DONE，协议已冻结\n当前：R2 ASSET_RESYNC PREFLIGHT RUNNING / WAIT_CODEX_RECEIPT\n案例：CH-004 青色路域勘察员",
       "x": 520,
       "y": -540,
       "width": 330,
@@ -33,7 +33,7 @@
     {
       "id": "g3",
       "type": "text",
-      "text": "G3｜场景稳定",
+      "text": "G3｜场景稳定\n\n状态：IN_PROGRESS / BLOCKED_ON_APPROVED_BASE_ASSET\n已确认动画背景风格方向\n缺口：用户批准的唯一森林背景原件尚未绑定绝对路径 + SHA256",
       "x": 520,
       "y": -340,
       "width": 300,
@@ -43,7 +43,7 @@
     {
       "id": "g4",
       "type": "text",
-      "text": "G4｜分镜 / 镜头稳定",
+      "text": "G4｜分镜 / 镜头稳定\n\nV10-B｜CHAR-STORYBOARD\n状态：BLOCKED_SOURCE_MISMATCH\n当前指定 thread 只支持纯色角色/小世界视觉发散\n缺真正 event → storyboard / shot decomposition / continuity 成功源",
       "x": 520,
       "y": -160,
       "width": 300,
@@ -93,7 +93,7 @@
     {
       "id": "g9",
       "type": "text",
-      "text": "G9｜流程 / Agent / 调度稳定",
+      "text": "G9｜流程 / Agent / 调度稳定\n\n674-115 / 674-116：IN PROGRESS\nV10-A 最新真实执行：BLOCKED_CODEX_CLI_ENVIRONMENT\n规则：每小时收束必须同步 Linear → MD → Canvas → Next Action",
       "x": 520,
       "y": 740,
       "width": 330,
@@ -103,7 +103,7 @@
     {
       "id": "qchar001",
       "type": "text",
-      "text": "# Q-CHAR-001｜头像稳定扩展到中全景\n\n问题：已有头像身份锚后，如何扩出文字身份、身体/服装与中景/中全景，同时仍保持同一角色。\n\n状态：ACTIVE\nCH-004 为新增真实案例。",
+      "text": "# Q-CHAR-001｜头像稳定扩展到中全景\n\n状态：ACTIVE / R2 RUNNING\nR1：79头像 baseline CLEAR\nMAIN-03 R1–R3：DONE，MAIN03-AVATAR-TO-BODY-v1 已冻结\nCURRENT：HEAD-R2-ASSET-RESYNC-PREFLIGHT\nSTOP：WAIT_CODEX_RECEIPT\nCH-004：真实案例",
       "x": 980,
       "y": -570,
       "width": 430,
@@ -138,6 +138,36 @@
       "y": -570,
       "width": 450,
       "height": 270,
+      "color": "6"
+    },
+    {
+      "id": "v10a",
+      "type": "text",
+      "text": "## V10-A｜TOPVIEW-WORLD｜体量10\n\n状态：BLOCKED_CODEX_CLI_ENVIRONMENT\n\n已就绪：\n- TOPVIEW_WORLD_REPRO_PACK_v1.md\n- 3张恢复参考图 SHA 已核\n\n最新真实执行：\nCODEX-RUN-20261004-19-W1\ncodex --version / codex exec --help 均 CommandNotFound\nchild_process_started=false\n\nNEXT：\n修复/提供本地 Codex CLI 绝对入口 → 新 dispatch 明确重授权 → fresh clean-room child",
+      "x": 980,
+      "y": -300,
+      "width": 470,
+      "height": 360,
+      "color": "3"
+    },
+    {
+      "id": "v10b",
+      "type": "text",
+      "text": "## V10-B｜CHAR-STORYBOARD｜体量10\n\n状态：BLOCKED_SOURCE_MISMATCH\n\n指定 source thread 已核：\n01a0cebf-913c-7631-98d0-ee2f8b7a6398\n\n证据只支持：\n纯色角色 / 小世界视觉发散\n\n缺：\nevent → storyboard\nshot decomposition\ncontinuity 成功链\n\nNEXT：重新定位真正的已有角色分镜化成功源",
+      "x": 980,
+      "y": -70,
+      "width": 470,
+      "height": 330,
+      "color": "5"
+    },
+    {
+      "id": "hourly_status_sync",
+      "type": "text",
+      "text": "## HOURLY STATUS SYNC｜2026-10-04\n\n这是状态同步，不另开研究树。\n\n已同步：\n- V10-A：BLOCKED_CODEX_CLI_ENVIRONMENT\n- V10-B：BLOCKED_SOURCE_MISMATCH\n- Q-CHAR-001：R2 RUNNING / WAIT_CODEX_RECEIPT\n- G3：BLOCKED_ON_APPROVED_BASE_ASSET\n\n纪律：\n每小时收束结果都必须回到唯一正本；\nDONE/BLOCKED/RUNNING 只以真实 receipt / artifact 为准。",
+      "x": 980,
+      "y": 700,
+      "width": 480,
+      "height": 330,
       "color": "6"
     }
   ],
@@ -245,6 +275,24 @@
       "fromSide": "right",
       "toSide": "left",
       "label": "本次同步"
+    },
+    {
+      "id": "e_g3_v10a",
+      "fromNode": "g3",
+      "toNode": "v10a",
+      "label": "V10-A"
+    },
+    {
+      "id": "e_g4_v10b",
+      "fromNode": "g4",
+      "toNode": "v10b",
+      "label": "V10-B"
+    },
+    {
+      "id": "e_g9_sync",
+      "fromNode": "g9",
+      "toNode": "hourly_status_sync",
+      "label": "状态同步"
     }
   ]
 }
