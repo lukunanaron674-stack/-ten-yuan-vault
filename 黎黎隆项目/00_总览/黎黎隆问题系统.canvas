@@ -169,6 +169,36 @@
       "width": 480,
       "height": 330,
       "color": "6"
+    },
+    {
+      "id": "l1_l4_compiler",
+      "type": "text",
+      "x": 980,
+      "y": 350,
+      "width": 500,
+      "height": 330,
+      "color": "6",
+      "text": "# L1–L4｜问题上下文编译层\n\n状态：M-END = CLOSED（逻辑+本地实现已验收）\n\nL1 信息提取：事实 / 来源 / 冲突 / 不确定项\nL2 专业分类：角色 / 风格 / 世界观 / 流程 / 资产等路由\nL3 Problem Agent：建立/合并正式 Problem Node，拦截重复/伪问题/假设\nL4 Problem State：形成当前唯一有效状态包，交给 L5/L6\n\n固定链：\n散乱来源 → L1 → L2 → L3 → L4 → Q-ID/问题树 → L5/L6 → 证据回写原Q\n\n规则：L1–L4 不另建第二套 Canvas；问题深度用 D1/D2/D3，避免与 Agent L1–L10 混淆。"
+    },
+    {
+      "id": "problem_state_v1",
+      "type": "text",
+      "x": 1540,
+      "y": 330,
+      "width": 470,
+      "height": 340,
+      "color": "4",
+      "text": "## Problem State v1｜已冻结\n\n核心字段：\nq_id / parent_goal / problem_statement / problem_depth(D1-D3) / domain / status\nknown / unknown / tried / rejected / current_hypotheses / evidence / source_refs\ncurrent_version / next_decision / done_condition / required_agent\n\nM3：3/3 真实样本完成\n- 头像/角色视觉：Q-CHAR-001.1\n- 流程/资产：Q-ASSET-001\n- 世界观/十元：Q-WORLD-001\n\nM4：3/3 L5/L6 消费测试 PASS\nM5：本地真实落地验收 PASS\nlocal commit: 51825b3b4bea924d956d69dd3b968956e74f861d"
+    },
+    {
+      "id": "l1_l4_sync_debt",
+      "type": "text",
+      "x": 2100,
+      "y": 330,
+      "width": 460,
+      "height": 290,
+      "color": "3",
+      "text": "## GitHub 同步状态｜L1–L4\n\n总 Canvas 导航：已同步\n\n仍未同步到 GitHub main 的本地实现文件：\n- 黎黎隆问题总纲.md（L1–L4/Problem State 落地版）\n- 问题卡模板.md\n- Q-CHAR-001.1\n- Q-ASSET-001\n- Q-WORLD-001\n\n这些文件在本地 M5 commit 已验收，但 GitHub 搜索仍缺失。\n\nNEXT：Recover local canonical → 对比 remote → 增量上传，禁止凭聊天重建第二份。"
     }
   ],
   "edges": [
@@ -293,6 +323,24 @@
       "fromNode": "g9",
       "toNode": "hourly_status_sync",
       "label": "状态同步"
+    },
+    {
+      "id": "e_g9_l1l4",
+      "fromNode": "g9",
+      "toNode": "l1_l4_compiler",
+      "label": "上下文编译"
+    },
+    {
+      "id": "e_l1l4_state",
+      "fromNode": "l1_l4_compiler",
+      "toNode": "problem_state_v1",
+      "label": "冻结状态包"
+    },
+    {
+      "id": "e_state_syncdebt",
+      "fromNode": "problem_state_v1",
+      "toNode": "l1_l4_sync_debt",
+      "label": "GitHub同步债"
     }
   ]
 }
