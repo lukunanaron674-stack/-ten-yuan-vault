@@ -469,3 +469,79 @@ H 作者性/权利横跨 C–F。
 
 ### E AUTO CYCLE-01 新增证据
 2026 NIST TEVV-Athlon强调按真实使用目标定制评价；ARIA把Model Testing、Red Teaming、User Testing合并；NIST AI 800-3强调benchmark统计目标与不确定性；2026长时程Agent研究表明final score不足以定位过程瓶颈；细粒度图像编辑评价支持把preservation、edit quality、instruction fidelity拆开。基于此冻结三层评价协议，并进入E-H1预测性离线验证。
+
+## 14. 每小时总调度协议 v2｜2026-10-04
+
+> **CURRENT CANONICAL SCHEDULER.** 本节覆盖旧的小时调度执行口径；旧研究结论不删除。
+
+### 14.1 当前硬件与工作流事实
+- HOST_OS = **Windows**
+- 4090 Cloud = **RETIRED**
+- ACTIVE_COMPUTE = **Windows RTX 3070 Laptop**
+- RTX 3070承担：研究、Agent、Codex、文件工作、轻量验证及当前可承受的图片跑图。
+- RTX 4080魔改32GB = **PENDING_INTEGRATION**。只有实际安装并通过 `Codex → ComfyUI → 小型图片任务 → 产物验证` 后才允许标 ACTIVE。
+- 视频/明显重GPU任务当前不强推，统一标 **READY_FOR_4080**；这不是故障 BLOCKED。
+- Codex = 工作流执行中枢；**不假设独立 Supervisor 服务**。
+- 默认退役路径：Linux本地主链、SSH/WinRM→4090云端、B2/COS默认素材搬运。用户未明确重启前禁止派发。
+- 图片P0链：本地文件 → Codex/ComfyUI；Linear附件负责 ChatGPT 读图、任务绑定、审核桥接。
+- **Minimum Infrastructure Principle**：L0复用现有能力 → L1低成本拼接 → 实测证伪后才进入L2新基础设施。
+
+### 14.2 固定循环
+`SCAN → RECOVER → VERIFY → DISPATCH → WORK → UPDATE`
+
+**Recover before Create. Verify before Expand.**
+
+1. SCAN：先读目标 Canvas、对应 MD、Linear。
+2. RECOVER：恢复 CURRENT_NODE，不把每小时运行当成重新研究。
+3. VERIFY：检查已有结果、receipt、Evidence Delta、同步完整性。
+4. DISPATCH：选择最高价值 READY 节点；专业 Agent 只是按需能力池。
+5. WORK：研究/实验/真实施工；需要施工才形成明确 Codex 工单。
+6. UPDATE：同步 MD + Linear + 一级 Canvas + Next Action。
+
+Canvas决定“解决什么”；小时调度决定“现在推进哪个节点”；Codex负责真实执行。**禁止新增平行总控代理。**
+
+### 14.3 调度优先级与并行
+`解除上游阻塞 > 验证已有结果 > 推进READY节点 > 理论扩展`
+
+- 每小时最多3个互不依赖的高价值子问题；有依赖则串行。
+- 不为凑满3个制造任务。
+- 已解决结论不得重复研究。
+- 失败优先生成最小子问题/单变量实验。
+- USER_REVIEW集中批审，不因单项等待阻塞其他独立任务。
+- 连续两轮同一 BLOCKED：第三轮必须进入 Recovery、切换独立 READY 节点或精确登记外部前置。
+
+### 14.4 专属任务边界
+**头像问题树**：只做头像问题消元。按其 Canvas/MD 正本推进：成功头像方法/画风跨框复现 → 跨轮复现 → 批量稳定性 → 漂移变量定位。总调度只查偏航、重复、连续 BLOCKED/NO_OP、未消费 receipt；不跨线代管。
+
+**V10 双源**：只做 TOPVIEW-WORLD 与 CHAR-STORYBOARD 的可审计独立复现，MAIN-07仅按需支撑。总调度只做状态/偏航/receipt检查，不替代专属任务重新执行。
+
+### 14.5 每轮强制记录
+- 本轮选择原因
+- 调用的专业 Agent
+- 真实新增证据/产物
+- 状态变化
+- 下一最小动作
+- compute_requirement
+- receipt / Evidence Delta
+
+无真实增量 = **NO_OP**。
+
+### 14.6 STOP
+- 节点达到当前证据支持结论
+- 需要用户审美/价值拍板
+- 缺输入/权限/外部资源且无可恢复动作
+- 连续3轮无真实增量
+- 只有事后解释无预测证据
+- 重复已有工作
+
+节点 STOP 后切下一 OPEN。全部 STOP/BLOCKED/READY_FOR_4080 时停止扩张，只报告最小状态。
+
+### 14.7 同步与防失忆
+每个 Cycle 必须完成：
+`Linear → MD → Canvas → Next Action`
+
+启动顺序：
+`READ Canvas → READ MD → READ Linear → RECOVER CURRENT_NODE → VERIFY Evidence Delta → DISPATCH`
+
+任何框不得仅凭聊天上下文重新建立状态。GitHub 本目录是跨框正本。
+
