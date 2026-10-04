@@ -1,0 +1,188 @@
+{
+  "nodes": [
+    {
+      "id": "paper_root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 460,
+      "height": 300,
+      "color": "1",
+      "text": "# PAPER-00｜论文问题系统\n\n3 RQ × 20 编制问题\n状态：ACTIVE / STATUS-SYNC\nLinear：674-118\n\n原则：RQ 与 P 分层；Canvas 只做一级导航；每小时收束必须同步。"
+    },
+    {
+      "id": "rq1",
+      "type": "text",
+      "x": 600,
+      "y": -430,
+      "width": 380,
+      "height": 170,
+      "color": "2",
+      "text": "# RQ-01｜提取\n\n从个人创作提取稳定、可描述、可重复的视觉规律。"
+    },
+    {
+      "id": "rq2",
+      "type": "text",
+      "x": 600,
+      "y": -150,
+      "width": 380,
+      "height": 170,
+      "color": "2",
+      "text": "# RQ-02｜规范化\n\n把视觉规律编制成 AIGC 可执行、可复用的项目级视觉规范。"
+    },
+    {
+      "id": "rq3",
+      "type": "text",
+      "x": 600,
+      "y": 130,
+      "width": 380,
+      "height": 190,
+      "color": "2",
+      "text": "# RQ-03｜验证\n\n层级化视觉规范是否比等量平铺描述更提高跨角色/跨场景的一致性？"
+    },
+    {
+      "id": "p1_4",
+      "type": "text",
+      "x": 1120,
+      "y": -520,
+      "width": 370,
+      "height": 190,
+      "color": "5",
+      "text": "P-01～04｜对象 / 样本 / 变量 / 角色规则\n\n当前：待 ROUND-1 逐项审计"
+    },
+    {
+      "id": "p5_8",
+      "type": "text",
+      "x": 1120,
+      "y": -270,
+      "width": 370,
+      "height": 190,
+      "color": "5",
+      "text": "P-05～08｜场景 / 跨角色 / 跨场景 / 层级规范\n\n当前：待 ROUND-1 逐项审计"
+    },
+    {
+      "id": "p9_13",
+      "type": "text",
+      "x": 1120,
+      "y": -20,
+      "width": 370,
+      "height": 210,
+      "color": "5",
+      "text": "P-09～13｜Flat / Hierarchical / Prompt信息量 / P-12实验变量 / 任务选择\n\n当前：待 ROUND-1 逐项审计"
+    },
+    {
+      "id": "p14_17",
+      "type": "text",
+      "x": 1120,
+      "y": 250,
+      "width": 370,
+      "height": 190,
+      "color": "5",
+      "text": "P-14～17｜64图资产 / 盲评 / 流程 / 统计\n\n当前：待 ROUND-1 逐项审计"
+    },
+    {
+      "id": "p18_20",
+      "type": "text",
+      "x": 1120,
+      "y": 500,
+      "width": 370,
+      "height": 190,
+      "color": "5",
+      "text": "P-18～20｜文献映射 / 结论转换 / 全文冻结\n\n当前：待 ROUND-1 逐项审计"
+    },
+    {
+      "id": "hourly",
+      "type": "text",
+      "x": -620,
+      "y": -100,
+      "width": 470,
+      "height": 520,
+      "color": "4",
+      "text": "# 每小时研究收束｜当前状态\n\nC-INTENT 674-119\nTHEORY DONE → EXPERIMENT DESIGN\n\nC-CONSTRAINT 674-120\nCYCLE-01 DONE → 20–30历史样本离线标注\n\nD-AGENCY 674-121\nCYCLE-01 DONE → 等日志做4因子 replay\n\nE-REAL-EVAL 674-122\nCYCLE-01 DONE → E-H1 30–50 case盲标\n\nF-LONGRUN 674-123\nCYCLE-02 DONE → 累计≥5真实跨轮事件\n\n这些是研究阶段收束，不代表整个 issue 关闭。"
+    },
+    {
+      "id": "paper_index",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文问题系统索引.md",
+      "x": -600,
+      "y": 520,
+      "width": 430,
+      "height": 180,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "pr_rq1",
+      "fromNode": "paper_root",
+      "toNode": "rq1",
+      "label": "RESEARCH-QUESTION"
+    },
+    {
+      "id": "pr_rq2",
+      "fromNode": "paper_root",
+      "toNode": "rq2",
+      "label": "RESEARCH-QUESTION"
+    },
+    {
+      "id": "pr_rq3",
+      "fromNode": "paper_root",
+      "toNode": "rq3",
+      "label": "RESEARCH-QUESTION"
+    },
+    {
+      "id": "pr_hourly",
+      "fromNode": "paper_root",
+      "toNode": "hourly",
+      "label": "STATUS-SYNC"
+    },
+    {
+      "id": "hourly_idx",
+      "fromNode": "hourly",
+      "toNode": "paper_index",
+      "label": "DETAIL"
+    },
+    {
+      "id": "rq1_p1",
+      "fromNode": "rq1",
+      "toNode": "p1_4",
+      "label": "SERVES"
+    },
+    {
+      "id": "rq1_p2",
+      "fromNode": "rq1",
+      "toNode": "p5_8",
+      "label": "SERVES"
+    },
+    {
+      "id": "rq2_p2",
+      "fromNode": "rq2",
+      "toNode": "p5_8",
+      "label": "SERVES"
+    },
+    {
+      "id": "rq2_p3",
+      "fromNode": "rq2",
+      "toNode": "p9_13",
+      "label": "SERVES"
+    },
+    {
+      "id": "rq3_p3",
+      "fromNode": "rq3",
+      "toNode": "p9_13",
+      "label": "SERVES"
+    },
+    {
+      "id": "rq3_p4",
+      "fromNode": "rq3",
+      "toNode": "p14_17",
+      "label": "SERVES"
+    },
+    {
+      "id": "rq3_p5",
+      "fromNode": "rq3",
+      "toNode": "p18_20",
+      "label": "SERVES"
+    }
+  ]
+}
