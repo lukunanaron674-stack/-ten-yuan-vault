@@ -26,3 +26,33 @@ secrets.json
 *secret*.json
 *.cookie
 cookies.txt
+
+# ── 2026-10-05 vault 整理：大二进制 / 第三方产物不入库 ──
+# 图片资产走 E 盘冷存与对象存储，不进 git（.git 已 4.6GB，再涨会爆）
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.mp4
+*.mov
+*.webm
+*.zip
+*.7z
+*.rar
+*.ora
+*.psd
+# Obsidian 插件产物（第三方构建文件，非笔记内容）
+.obsidian/plugins/
+.obsidian/workspace-mobile.json
+# 方志敏项目：2026-10-05 已迁 E:\Vault冷存\20261005\E_方志敏结项_20260925\
+# 但 `方/07_素材图` 下 142 个文件仍被 黎黎隆项目 的 canvas 引用，已就地保留
+/方/06_归档_旧版/
+/方/08_成片候选/
+/方备份/
+# 临时与日志
+*.log
+*.tmp
+_trash/
+.tmp/

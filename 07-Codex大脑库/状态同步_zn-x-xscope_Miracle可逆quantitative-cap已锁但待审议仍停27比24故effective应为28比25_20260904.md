@@ -6,7 +6,7 @@ status: state-correction
 axis: fire
 pair: zn-x
 criterion_version: current-x-scope-distinction-v1_20260830
-source_evidence: 07-Codex大脑库/运行记录_zn-x-xscope可逆quantitative-cap_Miracle2004_Tikhonov同一Soviet在场skater部署权限由常态5经slashing-penalty收缩至4并在power-play终止后恢复5故permission-cap可在同窗高低高往返_20260904.md
+source_evidence: 07-Codex大脑库/运行记录_zn-x-xscope可逆quantitative-cap_Miracle2004_Tikhonov_79e2e5_20260904.md
 source_commit: ba82862f84e7f0059c054f566e6d2c85298f6732
 fact_confidence: 99
 classification_confidence: 99

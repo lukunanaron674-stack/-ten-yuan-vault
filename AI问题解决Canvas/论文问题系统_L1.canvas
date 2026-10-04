@@ -101,6 +101,26 @@
       "text": "# 每小时研究收束｜当前状态\n\nC-INTENT 674-119\nTHEORY DONE → EXPERIMENT DESIGN\n\nC-CONSTRAINT 674-120\nCYCLE-01 DONE → 20–30历史样本离线标注\n\nD-AGENCY 674-121\nCYCLE-01 DONE → 等日志做4因子 replay\n\nE-REAL-EVAL 674-122\nCYCLE-01 DONE → E-H1 30–50 case盲标\n\nF-LONGRUN 674-123\nCYCLE-02 DONE → 累计≥5真实跨轮事件\n\n这些是研究阶段收束，不代表整个 issue 关闭。"
     },
     {
+      "id": "causal_chain",
+      "type": "text",
+      "x": 0,
+      "y": 340,
+      "width": 460,
+      "height": 280,
+      "color": "3",
+      "text": "# CAUSAL｜立论因果链（2026-10-05 同步）\n\n画风层已由参考图机制解决（ref_image 传导）\n→ 黎黎隆弃尾帧双锚定改角色+场景参考，动作约束责任：图→prompt\n→ 实践证据：废片大头=动作跑偏（674 拍板 10-02）\n→ 现有做法=7000 字平铺动作描述\n→ 问题：结构化编码（CBEC）是否优于等量平铺？\n→ EXP-VIDEO：16镜 A/B 配对（Hierarchical vs Flat，视频侧 46 次串行）"
+    },
+    {
+      "id": "exp_video",
+      "type": "text",
+      "x": 600,
+      "y": 360,
+      "width": 380,
+      "height": 240,
+      "color": "3",
+      "text": "# EXP-VIDEO｜视频侧行为验证（STAGING，编号待审计）\n\n服务 RQ-03 视频侧：主指标=行为端点画面命中率（客观二值）。\n16镜×2条件+6基线=46次，单实例串行约4晚；α≥0.80 才推断。\n\n已产出：开题报告 v1.0 CANDIDATE / 文献13条全核验（→P-18）/ 方法建议书（→P-12/15/16/17）。\n\nWAIT_USER：674 填编码表10行 + 核对16镜。"
+    },
+    {
       "id": "paper_index",
       "type": "file",
       "file": "AI问题解决Canvas/论文问题系统索引.md",
@@ -182,6 +202,30 @@
       "id": "rq3_p5",
       "fromNode": "rq3",
       "toNode": "p18_20",
+      "label": "SERVES"
+    },
+    {
+      "id": "pr_causal",
+      "fromNode": "paper_root",
+      "toNode": "causal_chain",
+      "label": "CAUSAL-BASIS"
+    },
+    {
+      "id": "causal_exp",
+      "fromNode": "causal_chain",
+      "toNode": "exp_video",
+      "label": "DERIVES"
+    },
+    {
+      "id": "rq3_exp",
+      "fromNode": "rq3",
+      "toNode": "exp_video",
+      "label": "SUB-TRACK"
+    },
+    {
+      "id": "exp_p9",
+      "fromNode": "exp_video",
+      "toNode": "p9_13",
       "label": "SERVES"
     }
   ]

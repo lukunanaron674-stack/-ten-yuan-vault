@@ -1,0 +1,126 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "novaAnimeXL_ilV190.safetensors"
+    }
+  },
+  "2": {
+    "class_type": "LoraLoader",
+    "inputs": {
+      "lora_name": "lililong_candidates\\lililong_scene_focus_v04_96.safetensors",
+      "clip": [
+        "1",
+        1
+      ],
+      "model": [
+        "1",
+        0
+      ],
+      "strength_clip": 0.65,
+      "strength_model": 0.65
+    }
+  },
+  "3": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        1
+      ],
+      "text": "同一处森林湖岸的二维场景背景，沿用参考图中的森林、湖面、树根和雾山空间关系，不改变为另一个地点。前景为湿润岸石、低矮根系与少量草丛；中景为可读的湖岸通路、留出人物活动区和长机械龙尾扫动净空；远景为冷色湖面、雾层与低饱和山林。暖天空、冷水面，薄雾。色彩限制：骨白 #E8E2D8 用于亮部、树皮浅面和雾中结构；冷灰 #858D91 用于石材和雾山；炭黑 #292A2D 用于承力轮廓与遮挡；暗红 #82343D 只用于极少量人为维护或警示痕迹；烟紫 #81758C 仅用于少量软膜或异质生体细节；青蓝 #63B9C2 仅作为工作中的接口/感知信号，面积不超过3%。低饱和，背景松绘、形体概括清楚，前中后景分层明确。保持自然森林湖泊，不添加新建筑、港口、圆环遗迹、机械设施或新的世界机制。画面无角色，空间预留给后续角色走位。lililong_style, lililong_scene 高处宽幅建立镜头，完整读到树根前景、大片湖湾中景、远处雾山；湖岸主通路从左前景自然延伸到中景，湖面占画面主体；构图留白充足，不能裁掉岸线。"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        1
+      ],
+      "text": "文字，字母，数字，标注，水印，logo，漫画分格线，拼贴边框，多地点拼图，重复场景，不同画风，人物，群像，赛博朋克霓虹，金铜蒸汽朋克，纯黑机甲，城市建筑，码头，圆环遗迹，紫膜机械，厚涂，写实照片，3D渲染，过度细碎笔触，高饱和，青蓝大片铺色，暗红大片铺色，紫色滤镜，失焦，低清晰度，压扁前中后景"
+    }
+  },
+  "5": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "SCIMG-02_R1-02_3e1aad5b2d44.png"
+    }
+  },
+  "6": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "width": 1024,
+      "upscale_method": "lanczos",
+      "crop": "center",
+      "image": [
+        "5",
+        0
+      ],
+      "height": 576
+    }
+  },
+  "7": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "6",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "inputs": {
+      "steps": 20,
+      "negative": [
+        "4",
+        0
+      ],
+      "latent_image": [
+        "7",
+        0
+      ],
+      "model": [
+        "2",
+        0
+      ],
+      "seed": 2026100522,
+      "positive": [
+        "3",
+        0
+      ],
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "cfg": 5.5,
+      "denoise": 0.65
+    }
+  },
+  "9": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "SCIMG-02_20261005/seedB_01_wide",
+      "images": [
+        "9",
+        0
+      ]
+    }
+  }
+}

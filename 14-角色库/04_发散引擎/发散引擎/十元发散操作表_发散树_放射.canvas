@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"no0","type":"text","text":"🧭 十元发散操作表\n核心新对象 · R1 战场\n\n每元四类\n发现问题→变换动作→继续分叉→边界排除\n\n方向已定死：非「分类器」\n＝变量发现 + 变换 + 组合 + 收束","x":-230,"y":-125,"width":460,"height":250,"color":"1"},
+		{"id":"no1","type":"text","text":"🟡 zx\n谁拥有最终方向权\nR1 待填（见建表）","x":-130,"y":-1224,"width":260,"height":88,"color":"4"},
+		{"id":"no2","type":"text","text":"✅ nx\n必须接入既有方向/权限\nL 已定稿四类","x":564,"y":-999,"width":260,"height":88,"color":"3"},
+		{"id":"no3","type":"text","text":"🟡 xn\n运行流程/阶段/节奏/组织\nR1 待填（见建表）","x":992,"y":-409,"width":260,"height":88,"color":"6"},
+		{"id":"no4","type":"text","text":"🟡 z\n谁确认什么成立\nR1 待填（见建表）","x":992,"y":321,"width":260,"height":88,"color":"6"},
+		{"id":"no5","type":"text","text":"🟡 x\n资源真正归谁处置\nR1 待填（见建表）","x":564,"y":911,"width":260,"height":88,"color":"6"},
+		{"id":"no6","type":"text","text":"🟡 n\n进入后须被持续承载\nR1 待填（见建表）","x":-130,"y":1136,"width":260,"height":88,"color":"6"},
+		{"id":"no7","type":"text","text":"🟡 x并z\n内结构→稳定对外接口\nR1 待填（见建表）","x":-824,"y":911,"width":260,"height":88,"color":"6"},
+		{"id":"no8","type":"text","text":"🟡 zn\n原则还进哪些未来判断\nR1 待填（见建表）","x":-1252,"y":321,"width":260,"height":88,"color":"6"},
+		{"id":"no9","type":"text","text":"✅ xz\n哪些回头路正在关闭\nL 已定稿四类","x":-1252,"y":-409,"width":260,"height":88,"color":"3"},
+		{"id":"no10","type":"text","text":"🟡 nz\n关系/位置还能真实回返\nR1 待填（见建表）","x":-824,"y":-999,"width":260,"height":88,"color":"6"},
+		{"id":"no11","type":"text","text":"R1｜十元操作定稿 ×10\nR2｜二/三元交叉组合（拒百分比汤）\nR3｜问题解决流程成器\n\n资产分工：canonical边界 / evidence / mapping\n/ 64题材 / 角色生成器=应用端","x":-1682,"y":-1104,"width":480,"height":190,"color":"6"}
+	],
+	"edges":[
+		{"id":"e0","toFloating":false,"fromNode":"no0","fromSide":"right","toNode":"no1","toSide":"left"},
+		{"id":"e1","fromNode":"no0","fromSide":"right","toNode":"no2","toSide":"left"},
+		{"id":"e2","fromNode":"no0","fromSide":"right","toNode":"no3","toSide":"left"},
+		{"id":"e3","fromNode":"no0","fromSide":"right","toNode":"no4","toSide":"left"},
+		{"id":"e4","fromNode":"no0","fromSide":"right","toNode":"no5","toSide":"left"},
+		{"id":"e5","fromNode":"no0","fromSide":"right","toNode":"no6","toSide":"left"},
+		{"id":"e6","fromNode":"no0","fromSide":"right","toNode":"no7","toSide":"left"},
+		{"id":"e7","fromNode":"no0","fromSide":"right","toNode":"no8","toSide":"left"},
+		{"id":"e8","fromNode":"no0","fromSide":"right","toNode":"no9","toSide":"left"},
+		{"id":"e9","fromNode":"no0","fromSide":"right","toNode":"no10","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

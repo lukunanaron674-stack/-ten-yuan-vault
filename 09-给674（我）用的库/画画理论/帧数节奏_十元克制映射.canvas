@@ -1,0 +1,463 @@
+{
+	"nodes": [
+		{
+			"id": "title",
+			"type": "text",
+			"text": "🎞 帧数节奏 × 十元克制映射\n\n帧数把时间切成可管理的单位；\n十元决定每个单位里装着什么。",
+			"x": 380,
+			"y": -140,
+			"width": 460,
+			"height": 130,
+			"color": "1"
+		},
+		{
+			"id": "core",
+			"type": "text",
+			"text": "核心公式\n\n帧数 = 秒 × 帧率\n三档时长不是十元本体，是入口云：\n1-3秒 ≠ zx，4-6秒 ≠ xn，6-10秒 ≠ zn",
+			"x": 420,
+			"y": 30,
+			"width": 380,
+			"height": 140,
+			"color": "2"
+		},
+		{
+			"id": "t1_3",
+			"type": "text",
+			"text": "⏱ 1-3秒 · 快剪档\n高频刺激 / 单事件 / 立刻切",
+			"x": -40,
+			"y": 240,
+			"width": 260,
+			"height": 70,
+			"color": "3"
+		},
+		{
+			"id": "t1_3_f",
+			"type": "text",
+			"text": "帧数换算（24fps）\n1秒=24帧 / 2秒=48帧 / 3秒=72帧\nH3低帧直出可降到 16fps→1-3s=16-48帧",
+			"x": -140,
+			"y": 340,
+			"width": 260,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t1_3_main",
+			"type": "text",
+			"text": "主入口：zx（目标/执行/冲动）9/10\n条件：必须有目标推进感\n否则塌成 z（爽点）或 x并z（炫技）",
+			"x": -40,
+			"y": 480,
+			"width": 260,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t1_3_ex",
+			"type": "text",
+			"text": "zx案例：拔刀→突进→手按刀柄→影子闪过\n非zx：灯闪/爆炸/无意义快切\n用途：高燃打斗 / 极度震惊 / 危险信号",
+			"x": -140,
+			"y": 620,
+			"width": 280,
+			"height": 120,
+			"color": "6"
+		},
+		{
+			"id": "t4_6",
+			"type": "text",
+			"text": "⏱ 4-6秒 · 标准叙事档\n看清空间 / 人物 / 镜头关系",
+			"x": 340,
+			"y": 240,
+			"width": 260,
+			"height": 70,
+			"color": "3"
+		},
+		{
+			"id": "t4_6_f",
+			"type": "text",
+			"text": "帧数换算（24fps）\n4秒=96帧 / 5秒=120帧 / 6秒=144帧\n低帧直出 16fps→4-6s=64-96帧",
+			"x": 300,
+			"y": 340,
+			"width": 260,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t4_6_main",
+			"type": "text",
+			"text": "主入口：xn（规则/节拍/秩序）9.5/10 ⭐金矿\n本质是「观众刚好能读懂的镜头单位」\n剪辑的节拍器，三件事：看清空间/动作/关系",
+			"x": 340,
+			"y": 480,
+			"width": 280,
+			"height": 130,
+			"color": "4"
+		},
+		{
+			"id": "t4_6_ex",
+			"type": "text",
+			"text": "用途：完整动作（进门/坐下/变身）\n文戏对白（OTS）\n建立空间感——中流砥柱档",
+			"x": 340,
+			"y": 640,
+			"width": 260,
+			"height": 100,
+			"color": "6"
+		},
+		{
+			"id": "t6_10",
+			"type": "text",
+			"text": "⏱ 6-10秒 · 情绪沉淀档\n长镜头 / 慢剪 / 氛围",
+			"x": 720,
+			"y": 240,
+			"width": 260,
+			"height": 70,
+			"color": "3"
+		},
+		{
+			"id": "t6_10_f",
+			"type": "text",
+			"text": "帧数换算（24fps）\n6秒=144帧 / 8秒=192帧 / 10秒=240帧\n低帧直出 12fps→6-10s=72-120帧",
+			"x": 700,
+			"y": 340,
+			"width": 260,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t6_10_main",
+			"type": "text",
+			"text": "主入口：zn/nz/n 8/10\n分型：zn=意义长留 / nz=依恋停靠 / n=空间承载\n有叙事压力才是zn，空镜≠zn",
+			"x": 720,
+			"y": 480,
+			"width": 280,
+			"height": 130,
+			"color": "4"
+		},
+		{
+			"id": "t6_10_ex",
+			"type": "text",
+			"text": "用途：片头意境 / 大远景夕阳 / 沉重内心戏\n8秒不切=对美术资产的绝对自信\n定海神针",
+			"x": 720,
+			"y": 640,
+			"width": 260,
+			"height": 100,
+			"color": "6"
+		},
+		{
+			"id": "fps_band",
+			"type": "text",
+			"text": "🎚 H3 帧率档位 × 十元\n（手绘节奏基线）",
+			"x": 1080,
+			"y": 220,
+			"width": 300,
+			"height": 80,
+			"color": "1"
+		},
+		{
+			"id": "fps8",
+			"type": "text",
+			"text": "8fps · 残影/素描/纸影\n三帧一保持\n→ zx 的破碎冲击 / nz 的闪回",
+			"x": 1060,
+			"y": 330,
+			"width": 340,
+			"height": 90,
+			"color": "3"
+		},
+		{
+			"id": "fps12",
+			"type": "text",
+			"text": "12fps · 对话/表演/黑红四手\n两帧一保持\n→ xn 的克制节奏 · 主档",
+			"x": 1060,
+			"y": 450,
+			"width": 340,
+			"height": 90,
+			"color": "4"
+		},
+		{
+			"id": "fps16",
+			"type": "text",
+			"text": "16fps · 连贯动作/搜房/传递\n→ zx 的推进但不失控",
+			"x": 1060,
+			"y": 570,
+			"width": 340,
+			"height": 80,
+			"color": "3"
+		},
+		{
+			"id": "fps20",
+			"type": "text",
+			"text": "20fps · 短促加速\n→ zx 的爆发前摇",
+			"x": 1060,
+			"y": 680,
+			"width": 340,
+			"height": 70,
+			"color": "3"
+		},
+		{
+			"id": "fps24",
+			"type": "text",
+			"text": "24fps · 复杂运镜/对口型/冲击帧\n→ zn 的重量 + xn 的完整信息",
+			"x": 1060,
+			"y": 780,
+			"width": 340,
+			"height": 90,
+			"color": "2"
+		},
+		{
+			"id": "fastpath",
+			"type": "text",
+			"text": "⚡ 低帧直出（H3提速）\n--frames N --fps-out T\n渲染时间只看帧数 N，播放按 T fps\n时长= N/T 不变，渲染省 1/2~2/3\n对话/口型卡禁用，必须24fps原生",
+			"x": 1060,
+			"y": 920,
+			"width": 360,
+			"height": 150,
+			"color": "5"
+		},
+		{
+			"id": "triangle",
+			"type": "text",
+			"text": "🔺 三角克制\nzn（6-10s 意义）克 xn\nxn（4-6s 规则）克 zx\nzx（1-3s 冲动）咬 zn\nxn 是中枢：管住 zx，托住 zn",
+			"x": 1080,
+			"y": 1110,
+			"width": 340,
+			"height": 150,
+			"color": "2"
+		},
+		{
+			"id": "structure30",
+			"type": "text",
+			"text": "🎥 30秒标准结构\n0-6s zn/n 开场蓄势\n6-11s xn 建立规则\n11-20s 1-3s×多镜 zx 爆发\n20-25s xn 重新校准\n25-30s zn/nz 收刀",
+			"x": -160,
+			"y": 820,
+			"width": 320,
+			"height": 190,
+			"color": "1"
+		},
+		{
+			"id": "errors",
+			"type": "text",
+			"text": "⚠️ 误判检查\n🔴 快切=zx？→有目标才是\n🔴 长镜=zn？→分型 zn/nz/n\n🟢 4-6s普通？→错，是秩序核心\n🔴 低帧=省全部？→只省渲染，不省音轨风险",
+			"x": 360,
+			"y": 820,
+			"width": 360,
+			"height": 160,
+			"color": "2"
+		},
+		{
+			"id": "seal",
+			"type": "text",
+			"text": "📌 封存句\n帧数是时间的标尺，十元是时间的质；\n用 xn 的中段节拍驯住 zx 的冲动、托住 zn 的重量；\n低帧直出让手绘节奏省一半渲染，但口型永远留给24fps。",
+			"x": 380,
+			"y": 1040,
+			"width": 460,
+			"height": 160,
+			"color": "1"
+		}
+	],
+	"edges": [
+		{
+			"id": "e1",
+			"fromNode": "title",
+			"fromSide": "bottom",
+			"toNode": "core",
+			"toSide": "top"
+		},
+		{
+			"id": "e2",
+			"fromNode": "core",
+			"fromSide": "left",
+			"toNode": "t1_3",
+			"toSide": "top",
+			"label": "最短"
+		},
+		{
+			"id": "e3",
+			"fromNode": "core",
+			"fromSide": "bottom",
+			"toNode": "t4_6",
+			"toSide": "top",
+			"label": "最稳⭐"
+		},
+		{
+			"id": "e4",
+			"fromNode": "core",
+			"fromSide": "right",
+			"toNode": "t6_10",
+			"toSide": "top",
+			"label": "最长"
+		},
+		{
+			"id": "e5",
+			"fromNode": "t1_3",
+			"fromSide": "bottom",
+			"toNode": "t1_3_f",
+			"toSide": "top"
+		},
+		{
+			"id": "e6",
+			"fromNode": "t1_3_f",
+			"fromSide": "bottom",
+			"toNode": "t1_3_main",
+			"toSide": "top"
+		},
+		{
+			"id": "e7",
+			"fromNode": "t1_3_main",
+			"fromSide": "bottom",
+			"toNode": "t1_3_ex",
+			"toSide": "top"
+		},
+		{
+			"id": "e8",
+			"fromNode": "t4_6",
+			"fromSide": "bottom",
+			"toNode": "t4_6_f",
+			"toSide": "top"
+		},
+		{
+			"id": "e9",
+			"fromNode": "t4_6_f",
+			"fromSide": "bottom",
+			"toNode": "t4_6_main",
+			"toSide": "top"
+		},
+		{
+			"id": "e10",
+			"fromNode": "t4_6_main",
+			"fromSide": "bottom",
+			"toNode": "t4_6_ex",
+			"toSide": "top"
+		},
+		{
+			"id": "e11",
+			"fromNode": "t6_10",
+			"fromSide": "bottom",
+			"toNode": "t6_10_f",
+			"toSide": "top"
+		},
+		{
+			"id": "e12",
+			"fromNode": "t6_10_f",
+			"fromSide": "bottom",
+			"toNode": "t6_10_main",
+			"toSide": "top"
+		},
+		{
+			"id": "e13",
+			"fromNode": "t6_10_main",
+			"fromSide": "bottom",
+			"toNode": "t6_10_ex",
+			"toSide": "top"
+		},
+		{
+			"id": "e14",
+			"fromNode": "t1_3",
+			"fromSide": "right",
+			"toNode": "triangle",
+			"toSide": "left",
+			"label": "被xn管"
+		},
+		{
+			"id": "e15",
+			"fromNode": "t4_6",
+			"fromSide": "right",
+			"toNode": "triangle",
+			"toSide": "left",
+			"label": "中枢"
+		},
+		{
+			"id": "e16",
+			"fromNode": "t6_10",
+			"fromSide": "right",
+			"toNode": "triangle",
+			"toSide": "left",
+			"label": "管xn"
+		},
+		{
+			"id": "e17",
+			"fromNode": "core",
+			"fromSide": "right",
+			"toNode": "fps_band",
+			"toSide": "left",
+			"label": "H3手绘档"
+		},
+		{
+			"id": "e18",
+			"fromNode": "fps_band",
+			"fromSide": "bottom",
+			"toNode": "fps8",
+			"toSide": "top"
+		},
+		{
+			"id": "e19",
+			"fromNode": "fps8",
+			"fromSide": "bottom",
+			"toNode": "fps12",
+			"toSide": "top"
+		},
+		{
+			"id": "e20",
+			"fromNode": "fps12",
+			"fromSide": "bottom",
+			"toNode": "fps16",
+			"toSide": "top"
+		},
+		{
+			"id": "e21",
+			"fromNode": "fps16",
+			"fromSide": "bottom",
+			"toNode": "fps20",
+			"toSide": "top"
+		},
+		{
+			"id": "e22",
+			"fromNode": "fps20",
+			"fromSide": "bottom",
+			"toNode": "fps24",
+			"toSide": "top"
+		},
+		{
+			"id": "e23",
+			"fromNode": "fps24",
+			"fromSide": "bottom",
+			"toNode": "fastpath",
+			"toSide": "top"
+		},
+		{
+			"id": "e24",
+			"fromNode": "fastpath",
+			"fromSide": "bottom",
+			"toNode": "triangle",
+			"toSide": "top"
+		},
+		{
+			"id": "e25",
+			"fromNode": "t1_3_ex",
+			"fromSide": "right",
+			"toNode": "structure30",
+			"toSide": "left"
+		},
+		{
+			"id": "e26",
+			"fromNode": "t4_6_ex",
+			"fromSide": "bottom",
+			"toNode": "errors",
+			"toSide": "top"
+		},
+		{
+			"id": "e27",
+			"fromNode": "errors",
+			"fromSide": "bottom",
+			"toNode": "seal",
+			"toSide": "top"
+		},
+		{
+			"id": "e28",
+			"fromNode": "triangle",
+			"fromSide": "bottom",
+			"toNode": "seal",
+			"toSide": "right"
+		}
+	],
+	"metadata": {
+		"version": "1.0-1.0",
+		"frontmatter": {}
+	}
+}

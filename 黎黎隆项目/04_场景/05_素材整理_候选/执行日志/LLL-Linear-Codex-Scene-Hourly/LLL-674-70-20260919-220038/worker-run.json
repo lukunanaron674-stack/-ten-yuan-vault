@@ -1,0 +1,45 @@
+{
+  "run_id": "LLL-674-70-20260919-220038",
+  "bridge_issue_id": "674-70",
+  "source_issue_id": "674-68",
+  "started": "2026-09-19T22:00:38.3320531+08:00",
+  "scheduled": false,
+  "manual": true,
+  "scope": "I04 skeleton-airport scene-material整理 only",
+  "max_images": 12,
+  "completed_image_ids_excluded": [
+    "I04-IMG-001",
+    "I04-IMG-002",
+    "I04-IMG-003",
+    "I04-IMG-004",
+    "I04-IMG-005",
+    "I04-IMG-006"
+  ],
+  "h3": "NOT_RUN",
+  "git_push": "NOT_RUN",
+  "originals_modified": "NOT_MODIFIED",
+  "status": "BLOCKED",
+  "preflight": {
+    "exit_code": 0,
+    "event_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\场景素材整理_候选\\执行日志\\LLL-Linear-Codex-Scene-Hourly\\LLL-674-70-20260919-220038\\preflight.events.jsonl",
+    "last_message_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\场景素材整理_候选\\执行日志\\LLL-Linear-Codex-Scene-Hourly\\LLL-674-70-20260919-220038\\preflight.last.txt"
+  },
+  "preflight_decision": {
+    "decision": "BLOCKED",
+    "issue_id": "674-68",
+    "batch_id": "I04-NEXT-UNVERIFIED",
+    "authorization_evidence": "No comment evidence retrieved; latest descriptions and comments remain unverified.",
+    "reason": "Cannot determine whether an eligible new I04 batch exists. Canvas reading was blocked by execution policy, so file nodes, input existence, project-root containment, candidate-output exclusion, and SHA256 uniqueness could not be verified.",
+    "candidate_images": [],
+    "completed_evidence": [
+      "User explicitly identifies I04-IMG-001, I04-IMG-002, I04-IMG-003, I04-IMG-004, I04-IMG-005, and I04-IMG-006 as completed and forbidden to repeat; not independently verified."
+    ],
+    "blocker": "The named linear server returned Method not found for resource discovery; available Linear issue tools are exposed through codex_apps and were not used under the server-only restriction. Local read-only Canvas access was rejected by policy. Authorization and inputs remain unverified; no changes or image inspection performed."
+  },
+  "blocker": "The named linear server returned Method not found for resource discovery; available Linear issue tools are exposed through codex_apps and were not used under the server-only restriction. Local read-only Canvas access was rejected by policy. Authorization and inputs remain unverified; no changes or image inspection performed.",
+  "linear_report": {
+    "phase": "linear_report_blocked",
+    "exit_code": 0,
+    "exact_body_match": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"grp3","type":"group","x":-1280,"y":520,"width":940,"height":1460,"color":"3","label":"🥉 第三优先级｜进阶"},
+		{"id":"grp1","type":"group","x":-1280,"y":-960,"width":940,"height":840,"color":"1","label":"🥇 第一优先级｜治卡 + 每天用"},
+		{"id":"grp2","type":"group","x":700,"y":-960,"width":940,"height":840,"color":"2","label":"🥈 第二优先级｜提升质量"},
+		{"id":"grp4","type":"group","x":700,"y":520,"width":940,"height":620,"color":"6","label":"⚠️ 安全与文件卫生"},
+		{"id":"g3_1","type":"text","text":"# 反复流程做成 skill\n\n同一套做法重复用 → 封装成 skill。\n\n📦 位置：`~/.agents/skills` 或 `.codex/skills`\n✅ 一个 skill 只干一件事\n✅ description 写清什么时候用\n🔧 示例：codex-file-hygiene（刚做的）\n\n📄 详解：[[学Codex发散树_说明/03a_Skill思维|详解]]","x":-1210,"y":590,"width":450,"height":220,"color":"3"},
+		{"id":"g3_3","type":"text","text":"# Automation 定时\n\n稳定流程定时跑。\n\n⏰ 每周自动归档会话\n⏰ 摘要 commit / 检查 CI\n✅ 先手动可靠，再定时\n💡 定时只做可预测的活\n\n📄 详解：[[学Codex发散树_说明/03c_Automation|详解]]","x":-1210,"y":1680,"width":450,"height":200,"color":"3"},
+		{"id":"g3_2n","type":"file","file":"09-给674（我）用的库/09-方法论与工作流/学Codex发散树_03_子代理.canvas","x":-1210,"y":880,"width":560,"height":380},
+		{"id":"root","type":"text","text":"# 学 Codex｜发散树\n\n从一个线程干一件事开始，把 Codex 用顺\n🧭 2026-08-15｜基于官方 Best Practices + 本机实测\n\n📂 第一优先级｜治卡 + 每天用\n├─ 单线程单任务（/compact /fork）\n├─ Prompt 四要素\n└─ 认识 config.toml\n\n📂 第二优先级｜提升质量\n├─ 复杂任务先 /plan\n├─ AGENTS.md 项目家规\n└─ 让 Codex 改完自己验证\n\n📂 第三优先级｜进阶\n├─ 反复流程做成 skill\n├─ 子代理 subagent\n└─ Automation 定时\n\n⚠️ 安全｜danger-full-access + never 审批\n└─ 默认收紧，只对可信仓库放开\n\n📄 详解：[[学Codex发散树_说明/00_根|根·总览]] ｜ [[学Codex发散树_说明/01_第一优先级|🥇]] ｜ [[学Codex发散树_说明/02_第二优先级|🥈]] ｜ [[学Codex发散树_说明/03_第三优先级|🥉]] ｜ [[学Codex发散树_说明/04_安全与文件卫生|⚠️]]\n\n🧭 规则：发散结构只在 canvas（父子级用嵌套 canvas）；md 只做节点内解释，不承载结构。","x":0,"y":0,"width":620,"height":520,"color":"5"},
+		{"id":"g1_1","type":"text","text":"# 单线程单任务\n\n一个 chat 只干一件事。\n卡的最大原因 = 一个 chat 跑一整天（20 万 token）。\n\n✅ 长对话用 `/compact` 压缩\n✅ 分支用 `/fork` 开新线程留档\n❌ 别把整项目塞进一个 chat\n\n📄 详解：[[学Codex发散树_说明/01a_单线程单任务|详解]]","x":-1210,"y":-890,"width":450,"height":220,"color":"1"},
+		{"id":"g1_2","type":"text","text":"# Prompt 四要素\n\n写齐这些，它少瞎猜：\n\n🎯 **Goal** 要达成什么\n📂 **Context** 哪些文件（@引用）\n🚧 **Constraints** 要守的规矩\n✅ **Done when** 完成标准（测试通过/能跑）\n\n📄 详解：[[学Codex发散树_说明/01b_Prompt四要素|详解]]","x":-1210,"y":-630,"width":450,"height":220,"color":"1"},
+		{"id":"g1_3","type":"text","text":"# 认识 config.toml\n\n个人默认写在 `~/.codex/config.toml`\n\n🤖 `model` 用哪个模型\n🧠 `model_reasoning_effort` 推理档位（已改 medium）\n🌐 `web_search` 搜索模式（live）\n🛡 `approval_policy`/`sandbox_mode` 安全\n\n改动前先备份\n\n📄 详解：[[学Codex发散树_说明/01c_config.toml|详解]]","x":-1210,"y":-370,"width":450,"height":230,"color":"1"},
+		{"id":"g4_1","type":"text","text":"# 权限与风险\n\n当前：`danger-full-access` + 审批 `never`\n= 能改、能删、不用问你\n\n⚠️ 跑它之前先想清楚它有哪些权限\n🛡 官方建议：默认收紧，只对可信仓库放开\n\n📄 详解：[[学Codex发散树_说明/04a_权限与风险|详解]]","x":770,"y":590,"width":450,"height":200,"color":"6"},
+		{"id":"g4_2","type":"text","text":"# 文件卫生（skill）\n\n`codex-file-hygiene`：\n\n🗂 归档 >200MB 旧会话 → E盘 CodexSessionsArchive\n📦 改 config 前先备份\n✅ 只移动不删除，可逆\n\n💡 记得：C 盘 .codex 是 Junction → E 盘\n\n📄 详解：[[学Codex发散树_说明/04b_文件卫生|详解]]","x":770,"y":850,"width":450,"height":210,"color":"6"},
+		{"id":"g2_1","type":"text","text":"# 复杂任务先 /plan\n\n多步/复杂任务别边想边做。\n\n✅ `/plan` 或 Shift+Tab 进 Plan 模式\n✅ 让它先列方案、问清楚再动手\n✅ 简单任务可跳过直接干\n\n📄 详解：[[学Codex发散树_说明/02a_Plan模式|详解]]","x":770,"y":-890,"width":450,"height":200,"color":"2"},
+		{"id":"g2_2","type":"text","text":"# AGENTS.md 项目家规\n\n项目级 `AGENTS.md` 自动载入，写死长期规矩。\n\n📄 分层：全局 `~/.codex` → 项目 → 子目录\n✅ 反复犯同一个错 → 让它在 AGENTS.md 记下来\n💡 短而准比长而泛有用\n\n📄 详解：[[学Codex发散树_说明/02b_AGENTS.md|详解]]","x":770,"y":-630,"width":450,"height":200,"color":"2"},
+		{"id":"g2_3","type":"text","text":"# 让 Codex 改完自己验证\n\n别只让它改，让它确认：\n\n✅ 写完跑测试/构建\n✅ 检查 lint/格式\n✅ 自查 diff 有无回归\n✅ 确认结果符合要求\n\n[评审] `/review` 或 diff 面板\n\n📄 详解：[[学Codex发散树_说明/02c_验证习惯|详解]]","x":770,"y":-370,"width":450,"height":210,"color":"2"}
+	],
+	"edges":[
+		{"id":"e-r-grp1","toFloating":false,"fromNode":"root","fromSide":"left","toNode":"grp1","toSide":"right","color":"1"},
+		{"id":"e-r-grp2","toFloating":false,"fromNode":"root","fromSide":"right","toNode":"grp2","toSide":"left","color":"2"},
+		{"id":"e-r-grp3","fromFloating":false,"toFloating":false,"fromNode":"root","fromSide":"left","toNode":"grp3","toSide":"right","color":"3"},
+		{"id":"e-r-grp4","fromFloating":false,"fromNode":"root","fromSide":"right","toNode":"grp4","toSide":"left","color":"6"},
+		{"id":"e-g1-1","fromNode":"grp1","fromSide":"left","toNode":"g1_1","toSide":"left","color":"1"},
+		{"id":"e-g1-2","fromNode":"grp1","fromSide":"left","toNode":"g1_2","toSide":"left","color":"1"},
+		{"id":"e-g1-3","fromNode":"grp1","fromSide":"left","toNode":"g1_3","toSide":"left","color":"1"},
+		{"id":"e-g2-1","fromNode":"grp2","fromSide":"left","toNode":"g2_1","toSide":"left","color":"2"},
+		{"id":"e-g2-2","fromNode":"grp2","fromSide":"left","toNode":"g2_2","toSide":"left","color":"2"},
+		{"id":"e-g2-3","fromFloating":false,"fromNode":"grp2","fromSide":"left","toNode":"g2_3","toSide":"left","color":"2"},
+		{"id":"e-g3-1","fromNode":"grp3","fromSide":"left","toNode":"g3_1","toSide":"left","color":"3"},
+		{"id":"e-g3-3","fromNode":"grp3","fromSide":"left","toNode":"g3_3","toSide":"left","color":"3"},
+		{"id":"e-g4-1","fromNode":"grp4","fromSide":"left","toNode":"g4_1","toSide":"left","color":"6"},
+		{"id":"e-g4-2","fromNode":"grp4","fromSide":"left","toNode":"g4_2","toSide":"left","color":"6"},
+		{"id":"e-g3-2n","fromNode":"grp3","fromSide":"left","toNode":"g3_2n","toSide":"left","color":"3"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

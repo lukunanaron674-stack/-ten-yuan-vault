@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1180" viewBox="0 0 1800 1180">
+<defs>
+ <style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#142A34}.title{font-size:34px;font-weight:700}.sub{font-size:16px}.head{font-size:22px;font-weight:700}.label{font-size:16px;font-weight:600}.small{font-size:13px}.tiny{font-size:11px}.water{fill:#E7F0EE}.land{fill:#F4F1E8;stroke:#687A78;stroke-width:2}.blue{fill:#69D4CE;fill-opacity:.28;stroke:#357F7B;stroke-width:4}.pink{fill:#855D8F;fill-opacity:.22;stroke:#855D8F;stroke-width:4}.red{fill:#913840;fill-opacity:.16;stroke:#913840;stroke-width:4}.dark{fill:#142A34}.route{fill:none;stroke:#913840;stroke-width:4;stroke-dasharray:12 9}.blueRoute{fill:none;stroke:#357F7B;stroke-width:3;stroke-dasharray:7 6}.pinkRoute{fill:none;stroke:#855D8F;stroke-width:3;stroke-dasharray:4 6}.panel{fill:#FAFBF8;stroke:#C4D0CD;stroke-width:2}</style>
+</defs>
+<rect width="1800" height="1180" fill="#FBFBF8"/>
+<text x="48" y="54" class="title">粉・青・红｜世界总览 × 组织分布地图</text>
+<text x="48" y="84" class="sub">CANDIDATE 01｜沿用既有 R1–R6 区域锚点；色块示意影响范围与网络，不代表国界、人口控制或固定住所</text>
+
+<!-- shared world map -->
+<rect x="40" y="110" width="790" height="1018" rx="18" class="panel"/>
+<text x="70" y="153" class="head">三色世界地图｜关系总览</text>
+<rect x="70" y="175" width="730" height="690" rx="30" class="water" stroke="#AFC5C0" stroke-width="2"/>
+<!-- inhabited lands and eco-zones -->
+<path d="M125 270 Q175 225 260 242 L330 220 L400 250 L435 315 L405 360 L435 415 L390 470 L355 555 L290 590 L238 560 L205 505 L150 490 L120 430 L145 370 Z" class="land"/>
+<path d="M500 245 Q560 210 630 238 L710 260 L755 310 L735 365 L770 420 L730 485 L665 505 L635 475 L585 495 L535 450 L510 390 L475 335 Z" class="land"/>
+<path d="M278 520 Q350 485 435 520 L495 580 L485 655 L430 720 L350 735 L290 685 L250 615 Z" class="land"/>
+<path d="M112 300 Q205 240 392 280 L418 360 Q350 405 300 478 L175 470 L115 415 Z" class="blue"/>
+<path d="M552 255 Q638 224 736 288 L746 390 Q695 445 608 455 L548 400 L515 325 Z" class="pink"/>
+<path d="M240 548 Q335 500 437 548 L477 612 L432 690 L345 715 L275 674 Z" class="pink"/>
+<text x="150" y="318" class="label">R1 青｜主流文明区</text>
+<text x="150" y="344" class="small">O1 钢铁教派 · O6 青色商会</text>
+<text x="590" y="310" class="label">R6 粉｜古老生态带</text>
+<text x="582" y="338" class="small">O5 共生网络 · 遗蜕与活膜</text>
+<text x="330" y="616" class="label">R2 遗骨之地</text>
+<text x="313" y="640" class="small">共采 / 朝圣 / 探索交界候选</text>
+<!-- free anchor port and routes -->
+<path d="M405 414 C360 380 305 375 245 400 M409 418 C480 380 555 372 632 386 M410 420 C420 490 407 540 382 582 M405 414 C490 300 540 260 620 265" class="route"/>
+<path d="M230 418 Q265 391 302 418 L294 448 L236 450 Z" fill="#913840" stroke="#6C2930" stroke-width="2"/>
+<text x="228" y="475" class="label">R5 自由锚港</text>
+<text x="226" y="496" class="small">O4 船队枢纽 · O3 通告节点 · O6 限入市场</text>
+<text x="438" y="445" class="small" fill="#913840">红：航线 + 通告网（非领土）</text>
+<!-- migration / unknown -->
+<path d="M120 770 C230 700 280 795 370 780 S575 720 760 785" class="blueRoute"/>
+<ellipse cx="470" cy="780" rx="70" ry="34" fill="#142A34" opacity=".78"/>
+<text x="438" y="786" font-size="13" fill="#FFF">R3 黑金</text>
+<rect x="70" y="884" width="730" height="211" rx="12" fill="#F4F6F3" stroke="#C4D0CD"/>
+<text x="94" y="920" class="label">区域与三色关系图例</text>
+<line x1="96" y1="954" x2="166" y2="954" stroke="#357F7B" stroke-width="8"/><text x="180" y="960" class="small">青：维护街 / 门站 / 商会节点带</text>
+<line x1="96" y1="988" x2="166" y2="988" stroke="#855D8F" stroke-width="8"/><text x="180" y="994" class="small">粉：菌林 / 活膜 / 遗蜕保管区</text>
+<line x1="96" y1="1022" x2="166" y2="1022" stroke="#913840" stroke-width="4" stroke-dasharray="10 7"/><text x="180" y="1028" class="small">红：船队航线与跨区通告网络</text>
+<text x="96" y="1067" class="tiny">R1/R5/R6 位置沿用既有自由意志世界地图 v0.1；具体地形仍属候选。</text>
+
+<!-- blue org map -->
+<rect x="855" y="110" width="905" height="318" rx="18" class="panel"/>
+<text x="885" y="151" class="head">青色组织地图｜城内接口与交易节点</text>
+<rect x="885" y="174" width="845" height="224" rx="14" fill="#EDF5F2"/>
+<path d="M940 300 L1100 225 L1275 290 L1450 218 L1660 303" class="blueRoute"/>
+<rect x="950" y="232" width="150" height="96" rx="18" fill="#CDE7E6" stroke="#357F7B" stroke-width="3"/>
+<text x="975" y="270" class="label">O1 钢铁教派</text><text x="975" y="297" class="small">维护街 / 门站 / 哑区外服务点</text>
+<circle cx="1195" cy="270" r="52" fill="#F4F1E8" stroke="#357F7B" stroke-width="3"/><text x="1162" y="265" class="label">接入</text><text x="1156" y="289" class="small">定价边界</text>
+<rect x="1320" y="218" width="150" height="96" rx="18" fill="#E5F0EE" stroke="#357F7B" stroke-width="3"/>
+<text x="1344" y="255" class="label">O6 商会</text><text x="1340" y="281" class="small">港市 / 外设 / 黑金流通</text>
+<path d="M1518 270 l40 -34 40 34 -40 34 z" fill="#913840" opacity=".84"/><text x="1500" y="348" class="small">R5 自由锚港</text>
+<text x="916" y="375" class="tiny">蓝色线=接口服务链；交易与维护权彼此竞争，不是上下级组织关系。</text>
+
+<!-- red org map -->
+<rect x="855" y="448" width="905" height="318" rx="18" class="panel"/>
+<text x="885" y="489" class="head">红色组织地图｜松散生活网络，不设首都</text>
+<rect x="885" y="512" width="845" height="224" rx="14" fill="#F7F0EE"/>
+<path d="M1000 630 C1120 535 1265 700 1400 592 S1580 545 1650 655" class="route"/>
+<path d="M978 584 Q1020 550 1062 584 L1053 615 L987 615 Z" fill="#913840"/><text x="942" y="651" class="small">O4 自治船队<br/>R5 锚港 / 全水系航路</text>
+<circle cx="1275" cy="615" r="54" fill="#FAFBF8" stroke="#913840" stroke-width="3" stroke-dasharray="5 5"/><text x="1235" y="611" class="label">O3 庭</text><text x="1221" y="635" class="small">流动裁决 / 通告板</text>
+<path d="M1535 626 L1572 554 L1608 626 Z" fill="#CDE7E6" stroke="#913840" stroke-width="3"/><text x="1514" y="653" class="label">O2 佛教</text><text x="1494" y="678" class="small">山门苦修地 / 城内哑区</text>
+<text x="915" y="710" class="tiny">暗红线=航路与公开通告的连接；寺院可庇护，但庭不入哑区。</text>
+
+<!-- pink org map -->
+<rect x="855" y="786" width="905" height="342" rx="18" class="panel"/>
+<text x="885" y="827" class="head">粉色组织地图｜共生生境与分布式应答</text>
+<rect x="885" y="850" width="845" height="250" rx="14" fill="#F3EFF4"/>
+<path d="M935 1017 C1000 905 1070 1065 1145 936 S1280 1046 1350 925 S1500 1050 1665 910" class="pinkRoute"/>
+<ellipse cx="1010" cy="967" rx="74" ry="49" fill="#855D8F" fill-opacity=".25" stroke="#855D8F" stroke-width="3"/><text x="969" y="962" class="label">菌林 / 活膜</text><text x="974" y="985" class="small">记忆寄存点</text>
+<ellipse cx="1285" cy="979" rx="89" ry="55" fill="#CDE7E6" stroke="#855D8F" stroke-width="3"/><text x="1245" y="974" class="label">遗蜕保管库</text><text x="1238" y="997" class="small">采集前先应答</text>
+<rect x="1490" y="897" width="188" height="122" rx="12" fill="#FBFBF8" stroke="#855D8F" stroke-width="3"/><line x1="1552" y1="898" x2="1552" y2="1018" stroke="#855D8F" stroke-dasharray="4 4"/><line x1="1615" y1="898" x2="1615" y2="1018" stroke="#855D8F" stroke-dasharray="4 4"/><text x="1508" y="941" class="small">P-01 应答司</text><text x="1504" y="968" class="tiny">三室分离</text><text x="1504" y="991" class="tiny">三票一致</text>
+<text x="916" y="1072" class="tiny">O5 是共生网络而非帝国；诡异魔法属于个人，不在组织层级图里。</text>
+</svg>

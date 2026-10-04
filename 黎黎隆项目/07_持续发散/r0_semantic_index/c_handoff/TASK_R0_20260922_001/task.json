@@ -1,0 +1,74 @@
+{
+  "schema_version": "lililong-task/v1",
+  "task_id": "TASK_R0_20260922_001",
+  "created_at": "2026-09-21T23:40:49.637372+00:00",
+  "status": "c_resolved_ready_for_generation",
+  "request": "生成黎黎隆森林夜景动作镜头",
+  "project": "黎黎隆",
+  "references": {
+    "character": [
+      {
+        "id": "LLL-IMG-70452F089EE0",
+        "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_持续发散\\2026-09-17\\D01_角色_黎黎隆_夺路尾_v1.png",
+        "object": "黎黎隆",
+        "usage": "角色动作机制与尾部自由度参考"
+      }
+    ],
+    "scene": [
+      {
+        "id": "LLL-IMG-9FA7A4FCB967",
+        "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-04_森林湖泊_五色组合.png",
+        "object": "森林湖泊",
+        "usage": "R1 场景色彩与环境基准"
+      }
+    ]
+  },
+  "action_rules": [
+    "黎黎隆先用巨尾落锚建立第三支点，再让上身转向动作目标",
+    "尾部至少出现一个承力锚点和一个仍可自由改向的活动节",
+    "尾巴不是武器；动作要表现配重、制动、感知或工具平台功能"
+  ],
+  "scene_rules": [
+    "森林和湖泊必须同时可读，湖面承担引路或反射功能",
+    "保留自然奇幻基底，不把场景变成普通森林或纯赛博背景",
+    "夜景只改变光照与可见度，不删除空间结构和角色动作支点"
+  ],
+  "constraints": [
+    "角色身份与巨尾机制优先于风格词",
+    "场景必须保留其功能和空间结构，不降级为泛化背景",
+    "参考图是候选参考，不代表正式锁定资产"
+  ],
+  "c_handoff": {
+    "required_asset_ids": [
+      "LLL-IMG-70452F089EE0",
+      "LLL-IMG-9FA7A4FCB967"
+    ],
+    "asset_paths": [
+      "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_持续发散\\2026-09-17\\D01_角色_黎黎隆_夺路尾_v1.png",
+      "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-04_森林湖泊_五色组合.png"
+    ],
+    "next_status": "generation_requires_explicit_submit"
+  },
+  "resolved_assets": [
+    {
+      "id": "LLL-IMG-70452F089EE0",
+      "type": "character",
+      "source_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_持续发散\\2026-09-17\\D01_角色_黎黎隆_夺路尾_v1.png",
+      "staged_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_持续发散\\r0_semantic_index\\c_handoff\\TASK_R0_20260922_001\\assets\\character\\LLL-IMG-70452F089EE0.png",
+      "source_relative_path": "03_持续发散/2026-09-17/D01_角色_黎黎隆_夺路尾_v1.png",
+      "size": 2559189,
+      "sha256": "f8e481f640dbe7442b3a85b1c6ef6d5e0e179c5db6659765face540b4de326c9",
+      "original_sha256": "f8e481f640dbe7442b3a85b1c6ef6d5e0e179c5db6659765face540b4de326c9"
+    },
+    {
+      "id": "LLL-IMG-9FA7A4FCB967",
+      "type": "scene",
+      "source_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-04_森林湖泊_五色组合.png",
+      "staged_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_持续发散\\r0_semantic_index\\c_handoff\\TASK_R0_20260922_001\\assets\\scene\\LLL-IMG-9FA7A4FCB967.png",
+      "source_relative_path": "04_场景/五色视觉系统/R1_场景配色/assets/R1-04_森林湖泊_五色组合.png",
+      "size": 2324722,
+      "sha256": "b31c507498461342a86133cdfec37b99bb3503c0f8b31fecebb312b33d2c08eb",
+      "original_sha256": "b31c507498461342a86133cdfec37b99bb3503c0f8b31fecebb312b33d2c08eb"
+    }
+  ]
+}

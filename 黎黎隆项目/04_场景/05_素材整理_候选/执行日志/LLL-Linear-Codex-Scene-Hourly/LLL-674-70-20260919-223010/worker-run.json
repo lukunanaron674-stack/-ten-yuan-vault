@@ -1,0 +1,47 @@
+{
+  "run_id": "LLL-674-70-20260919-223010",
+  "bridge_issue_id": "674-70",
+  "source_issue_id": "674-68",
+  "started": "2026-09-19T22:30:10.8471646+08:00",
+  "scheduled": true,
+  "manual": false,
+  "scope": "I04 skeleton-airport scene-material整理 only",
+  "max_images": 12,
+  "completed_image_ids_excluded": [
+    "I04-IMG-001",
+    "I04-IMG-002",
+    "I04-IMG-003",
+    "I04-IMG-004",
+    "I04-IMG-005",
+    "I04-IMG-006"
+  ],
+  "h3": "NOT_RUN",
+  "git_push": "NOT_RUN",
+  "originals_modified": "NOT_MODIFIED",
+  "status": "BLOCKED",
+  "preflight": {
+    "exit_code": 0,
+    "event_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\场景素材整理_候选\\执行日志\\LLL-Linear-Codex-Scene-Hourly\\LLL-674-70-20260919-223010\\preflight.events.jsonl",
+    "last_message_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\场景素材整理_候选\\执行日志\\LLL-Linear-Codex-Scene-Hourly\\LLL-674-70-20260919-223010\\preflight.last.txt"
+  },
+  "preflight_decision": {
+    "decision": "BLOCKED",
+    "issue_id": "674-68",
+    "batch_id": "I04-NEXT-UNVERIFIED",
+    "authorization_evidence": "无法取得 comment id：当前工具目录未提供 linear.get_issue 或 linear.list_comments，未能读取 674-68、674-70 最新描述及评论。",
+    "reason": "Canvas 共 23 个文件节点，文件均存在，SHA256 互不重复；17 个节点位于项目根目录外，已排除。项目内的 6 个节点 img_1 至 img_6，其路径及实算 SHA256 均与已完成索引 I04-IMG-001 至 I04-IMG-006 一致，已全部排除。没有节点引用候选输出目录，候选产物未作为输入。指定 Canvas 内未发现 eligible 新图片，但无法核实远端最新授权。",
+    "candidate_images": [],
+    "completed_evidence": [
+      "用户明确指定 I04-IMG-001 至 I04-IMG-006 已完成且禁止重复。",
+      "场景素材整理_候选/LOCAL_CODEX_674-68_20260919_1935_I04_Q1/00_I04素材索引.csv 的六条 ID、节点、路径及 SHA256 与当前文件一致。",
+      "同目录执行日志记载六张处理结束及核验完成，并明确无自动下一批；完成依据为用户声明、索引内容与执行记录，而非文件名存在。"
+    ],
+    "blocker": "Linear MCP issue/comment 工具不可用，无法验证最新授权及评论证据；未调用其他远端连接器，未查看图片或执行写入。"
+  },
+  "blocker": "Linear MCP issue/comment 工具不可用，无法验证最新授权及评论证据；未调用其他远端连接器，未查看图片或执行写入。",
+  "linear_report": {
+    "phase": "linear_report_blocked",
+    "exit_code": 0,
+    "exact_body_match": true
+  }
+}

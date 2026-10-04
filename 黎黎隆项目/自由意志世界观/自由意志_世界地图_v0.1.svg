@@ -1,0 +1,82 @@
+<svg viewBox="0 0 680 640" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <title>自由意志世界地图 v0.1</title>
+  <desc>巨物生态主导的大航海世界：R1青色文明区 R2遗骨之地 R3黑金渗出 R4巨物迁徙线 R5自由锚港 R6粉色生态带</desc>
+
+  <text x="40" y="50" font-size="15" font-weight="500" fill="#2C2C2A" font-family="sans-serif">自由意志世界｜地图 v0.1（W1，按地域表编号）</text>
+
+  <rect x="40" y="70" width="600" height="340" rx="16" fill="#CDE7E6" stroke="#142A34" stroke-width="0.5"/>
+
+  <path d="M80 380 C180 320 300 330 400 290 C480 258 540 220 590 180" fill="none" stroke="#142A34" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+  <g>
+    <ellipse cx="240" cy="308" rx="34" ry="12" fill="#9FBFBB"/>
+    <path d="M270 302 l20 -10 l-4 12 l4 12 z" fill="#9FBFBB"/>
+    <ellipse cx="386" cy="152" rx="30" ry="10" fill="#9FBFBB"/>
+    <path d="M412 147 l18 -9 l-3 11 l3 11 z" fill="#9FBFBB"/>
+  </g>
+
+  <rect x="70" y="115" width="120" height="60" rx="10" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <rect x="95" y="185" width="80" height="45" rx="9" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <rect x="60" y="240" width="55" height="35" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="82" y="150" font-size="12" fill="#085041" font-family="sans-serif">R1 主流文明区</text>
+  <text x="82" y="166" font-size="11" fill="#0F6E56" font-family="sans-serif">钢铁教派腹地·宜居核心</text>
+  <text x="72" y="260" font-size="11" fill="#085041" font-family="sans-serif">O6 商会港</text>
+
+  <rect x="490" y="110" width="110" height="55" rx="10" fill="#DCCBEB" stroke="#855D8F" stroke-width="0.5"/>
+  <rect x="510" y="175" width="70" height="40" rx="9" fill="#DCCBEB" stroke="#855D8F" stroke-width="0.5"/>
+  <text x="505" y="140" font-size="12" fill="#4B2E57" font-family="sans-serif">R6 粉色生态带</text>
+  <text x="505" y="156" font-size="11" fill="#855D8F" font-family="sans-serif">古老派·不争霸</text>
+
+  <g>
+    <rect x="300" y="200" width="86" height="34" rx="8" fill="#EFE9DA" stroke="#913840" stroke-width="1"/>
+    <circle cx="318" cy="217" r="5" fill="#913840"/>
+    <rect x="330" y="208" width="8" height="18" fill="#B4B2A9"/>
+    <rect x="344" y="212" width="8" height="14" fill="#B4B2A9"/>
+    <rect x="358" y="206" width="8" height="20" fill="#B4B2A9"/>
+    <text x="300" y="192" font-size="12" fill="#501313" font-family="sans-serif">R5 自由锚港</text>
+  </g>
+
+  <g stroke="#8A8578" stroke-width="2" fill="none">
+    <path d="M290 350 q40 -26 90 0"/>
+    <path d="M300 362 q36 -20 72 0"/>
+    <path d="M310 374 q30 -14 54 0"/>
+    <path d="M395 348 l24 -16 M395 348 l28 2"/>
+  </g>
+  <rect x="298" y="344" width="10" height="34" rx="3" fill="#F2EFE4" stroke="#8A8578" stroke-width="0.8"/>
+  <text x="288" y="415" font-size="12" fill="#444441" font-family="sans-serif">R2 遗骨之地（🔶命名三选一）</text>
+
+  <g fill="#2C2C2A">
+    <ellipse cx="455" cy="292" rx="24" ry="10"/>
+    <ellipse cx="230" cy="160" rx="16" ry="7"/>
+    <ellipse cx="150" cy="330" rx="20" ry="8"/>
+  </g>
+  <text x="425" y="318" font-size="11" fill="#2C2C2A" font-family="sans-serif">R3 黑金渗出</text>
+
+  <g>
+    <path d="M300 250 l30 0 l-5 10 l-20 0 z" fill="#913840"/>
+    <path d="M314 250 l0 -16 l10 12 z" fill="#F2EFE4" stroke="#913840" stroke-width="0.8"/>
+    <text x="338" y="248" font-size="11" fill="#501313" font-family="sans-serif">H02 船（O4 船队）</text>
+  </g>
+
+  <text x="52" y="366" font-size="11" fill="#085041" font-family="sans-serif" transform="rotate(0)">R4 迁徙航线（墨青虚线）</text>
+
+  <g font-family="sans-serif">
+    <text x="40" y="446" font-size="14" font-weight="500" fill="#2C2C2A">图例（编号=地域表）</text>
+    <rect x="40" y="462" width="14" height="14" rx="3" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+    <text x="60" y="473" font-size="12" fill="#444441">R1 主流文明区（O1/O6）</text>
+    <rect x="40" y="486" width="14" height="14" rx="3" fill="#EFE9DA" stroke="#913840" stroke-width="0.8"/>
+    <text x="60" y="497" font-size="12" fill="#444441">R5 自由锚港（三阵营碰撞点）</text>
+    <rect x="40" y="510" width="14" height="14" rx="3" fill="#2C2C2A"/>
+    <text x="60" y="521" font-size="12" fill="#444441">R3 黑金渗出海域</text>
+    <rect x="350" y="462" width="14" height="14" rx="3" fill="#DCCBEB" stroke="#855D8F" stroke-width="0.5"/>
+    <text x="370" y="473" font-size="12" fill="#444441">R6 粉色生态带（O5）</text>
+    <rect x="350" y="486" width="14" height="14" rx="3" fill="#F2EFE4" stroke="#8A8578" stroke-width="0.8"/>
+    <text x="370" y="497" font-size="12" fill="#444441">R2 遗骨之地 🔶命名三选一</text>
+    <path d="M350 517 l14 0" stroke="#142A34" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="370" y="521" font-size="12" fill="#444441">R4 巨物迁徙主航线</text>
+  </g>
+
+  <rect x="40" y="548" width="600" height="60" rx="10" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text x="58" y="572" font-size="12" fill="#5F5E5A" font-family="sans-serif">硬约束：巨物生态占世界绝大部分，人类宜居地很少——海面永远大于陆地。</text>
+  <text x="58" y="592" font-size="12" fill="#5F5E5A" font-family="sans-serif">防长霉：对话里的新地名不自动上图；进图先给 R/S 编号。</text>
+</svg>

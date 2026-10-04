@@ -1,0 +1,80 @@
+<svg viewBox="0 0 680 640" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <title>红色势力地图 v0.1</title>
+  <desc>红色阵营（自由意志）视角：O4船队航路与据点、O3审判通告网、O2佛教寺院、遗骨之地原型场、对青对峙线</desc>
+
+  <text x="40" y="50" font-size="15" font-weight="500" fill="#2C2C2A" font-family="sans-serif">红色势力地图 v0.1（红桶视角，底图=世界总图）</text>
+
+  <rect x="40" y="70" width="600" height="340" rx="16" fill="#CDE7E6" stroke="#142A34" stroke-width="0.5"/>
+
+  <path d="M80 380 C180 320 300 330 400 290 C480 258 540 220 590 180" fill="none" stroke="#142A34" stroke-width="1" stroke-dasharray="4 6" opacity="0.5"/>
+
+  <rect x="70" y="115" width="120" height="60" rx="10" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <rect x="95" y="185" width="80" height="45" rx="9" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="82" y="150" font-size="12" fill="#085041" font-family="sans-serif">R1 主流文明区</text>
+  <text x="82" y="166" font-size="11" fill="#0F6E56" font-family="sans-serif">钢铁教派腹地（对峙方）</text>
+
+  <rect x="490" y="110" width="110" height="55" rx="10" fill="#DCCBEB" stroke="#855D8F" stroke-width="0.5"/>
+  <text x="502" y="140" font-size="12" fill="#4B2E57" font-family="sans-serif">R6 粉色生态带</text>
+  <text x="502" y="156" font-size="11" fill="#855D8F" font-family="sans-serif">可交易·共采遗骨</text>
+
+  <rect x="300" y="200" width="86" height="34" rx="8" fill="#913840" stroke="#501313" stroke-width="1"/>
+  <rect x="330" y="208" width="8" height="18" fill="#EFE9DA"/>
+  <rect x="344" y="212" width="8" height="14" fill="#EFE9DA"/>
+  <rect x="358" y="206" width="8" height="20" fill="#EFE9DA"/>
+  <text x="298" y="192" font-size="12" font-weight="500" fill="#501313" font-family="sans-serif">R5 自由锚港｜O4 大本营</text>
+
+  <g stroke="#913840" stroke-width="2.5" fill="none" stroke-dasharray="8 5">
+    <path d="M343 200 C330 150 260 120 190 145"/>
+    <path d="M343 200 C380 160 460 170 505 165"/>
+    <path d="M343 234 C340 280 330 310 330 340"/>
+  </g>
+
+  <g stroke="#8A8578" stroke-width="2" fill="none">
+    <path d="M290 350 q40 -26 90 0"/>
+    <path d="M300 362 q36 -20 72 0"/>
+    <path d="M310 374 q30 -14 54 0"/>
+    <path d="M395 348 l24 -16 M395 348 l28 2"/>
+  </g>
+  <rect x="298" y="344" width="10" height="34" rx="3" fill="#F2EFE4" stroke="#913840" stroke-width="1.2"/>
+  <circle cx="340" cy="360" r="30" fill="none" stroke="#913840" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="286" y="415" font-size="12" font-weight="500" fill="#501313" font-family="sans-serif">R2 遗骨之地｜夺路×回返原型场（O3/O4 共管探索）</text>
+
+  <rect x="150" y="290" width="26" height="26" rx="5" fill="#EFE9DA" stroke="#913840" stroke-width="1"/>
+  <path d="M163 290 v-10 h14 v6 h-14" fill="none" stroke="#913840" stroke-width="1.5"/>
+  <text x="120" y="336" font-size="11" fill="#501313" font-family="sans-serif">O2 苦修寺院</text>
+
+  <g fill="#913840">
+    <path d="M200 145 l0 -14 l3 0 l0 14 z M203 131 l12 4 l-12 4 z"/>
+    <path d="M505 165 l0 -14 l3 0 l0 14 z M508 151 l12 4 l-12 4 z"/>
+    <path d="M420 250 l0 -14 l3 0 l0 14 z M423 236 l12 4 l-12 4 z"/>
+  </g>
+  <text x="392" y="228" font-size="11" fill="#501313" font-family="sans-serif">O3 通告板</text>
+  <text x="150" y="118" font-size="11" fill="#501313" font-family="sans-serif">O3 通告板</text>
+
+  <path d="M60 205 q70 -30 150 -5" fill="none" stroke="#913840" stroke-width="1.2" stroke-dasharray="2 4"/>
+  <text x="52" y="228" font-size="11" fill="#A32D2D" font-family="sans-serif">红青对峙线（非战争线）</text>
+
+  <g>
+    <path d="M470 300 l30 0 l-5 10 l-20 0 z" fill="#913840"/>
+    <path d="M484 300 l0 -16 l10 12 z" fill="#F2EFE4" stroke="#913840" stroke-width="0.8"/>
+    <text x="506" y="304" font-size="11" fill="#501313" font-family="sans-serif">O4 巡航船</text>
+  </g>
+
+  <text x="52" y="366" font-size="11" fill="#501313" font-family="sans-serif">暗红虚线=O4 航路网（R5 为枢纽）</text>
+
+  <g font-family="sans-serif">
+    <text x="40" y="446" font-size="14" font-weight="500" fill="#2C2C2A">图例（红桶视角）</text>
+    <rect x="40" y="462" width="14" height="14" rx="3" fill="#913840"/>
+    <text x="60" y="473" font-size="12" fill="#444441">R5 自由锚港：O4 船队大本营 + O3 通告网枢纽 + O6 限入市场</text>
+    <rect x="40" y="486" width="14" height="14" rx="3" fill="#F2EFE4" stroke="#913840" stroke-width="1.2"/>
+    <text x="60" y="497" font-size="12" fill="#444441">R2 遗骨之地：夺路×回返原型场（探索/朝圣/共采）</text>
+    <path d="M40 514 l14 0" stroke="#913840" stroke-width="2.5" stroke-dasharray="8 5"/>
+    <text x="60" y="521" font-size="12" fill="#444441">O4 航路网 · O3 通告板（红旗）· O2 寺院（离船挂单）</text>
+    <rect x="350" y="486" width="14" height="14" rx="3" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+    <text x="370" y="497" font-size="12" fill="#444441">R1 青方腹地：对峙面，不主动开战</text>
+  </g>
+
+  <rect x="40" y="548" width="600" height="60" rx="10" fill="#FCEBEB" stroke="#913840" stroke-width="0.5"/>
+  <text x="58" y="572" font-size="12" fill="#501313" font-family="sans-serif">红方战略：不占国、不立都——据点（锚港）+网络（通告）+航路（船队），组织即生活方式。</text>
+  <text x="58" y="592" font-size="12" fill="#501313" font-family="sans-serif">锁定句：红色反对的不是改造，而是别人替你决定你的身体。</text>
+</svg>

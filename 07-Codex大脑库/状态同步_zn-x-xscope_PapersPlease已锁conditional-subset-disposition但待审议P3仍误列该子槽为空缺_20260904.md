@@ -30,7 +30,7 @@ P0 strict-v2 与 P1 path-exhaustion 本轮没有出现同时满足事实≥95、
 
 现存 evidence-locked 记录：
 
-`运行记录_zn-x-xscope转移否决到结果态处分权限扩张_PapersPlease_Inspector前期可approve-deny入境而Day5起对合格差异entrant新增detain最终调用接口且guards现实执行故edge-veto与downstream-state-disposition需分账且可动态扩张_20260903.md`
+`运行记录_zn-x-xscope转移否决到结果态处分权限扩张_PapersPlease_Inspector前期_cd438f_20260903.md`
 
 已经锁定：
 

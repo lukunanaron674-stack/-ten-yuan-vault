@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"a100000000000001","type":"group","x":0,"y":0,"width":2520,"height":1600,"color":"5","label":"674-68｜场景整理候选（独立派生 Canvas）"},
+		{"id":"a100000000000002","type":"text","text":"# 674-68 场景整理候选\n\nLinear 状态：Done\n研究交付：PASS（候选/未冻结）\n\n344 个唯一图像\n20 张代表图双栏分析\nH3 / 生图 / Git push：NOT_RUN\n原件：NOT_MODIFIED","x":40,"y":40,"width":520,"height":240,"color":"5"},
+		{"id":"a100000000000003","type":"text","text":"## 候选动态链\n\nNZ 连续生体/遗留结构\n→ Z 局部维护、承力、挂接接口\n→ 通行或身体状态改变\n\n只有出现编号、固定流程、权限/队列证据后，才继续判 XN。\n\nCANDIDATE_NOT_FROZEN","x":620,"y":40,"width":520,"height":240,"color":"3"},
+		{"id":"a100000000000004","type":"file","file":"黎黎隆项目/04_场景/05_素材整理_候选/盘点统计.json","x":1200,"y":40,"width":420,"height":240,"color":"4"},
+		{"id":"a100000000000005","type":"file","file":"黎黎隆项目/04_场景/05_素材整理_候选/missing_and_conflicts.json","x":1680,"y":40,"width":460,"height":240,"color":"1"},
+		{"id":"a100000000000006","type":"file","file":"黎黎隆项目/04_场景/05_素材整理_候选/02_世界观与画风双栏分析.md","subpath":"# 恢复项补充（六张）","x":40,"y":340,"width":600,"height":500,"color":"5"},
+		{"id":"a100000000000007","type":"file","file":"黎黎隆项目/04_场景/05_素材整理_候选/03_风格共性候选.md","x":700,"y":340,"width":520,"height":540,"color":"3"},
+		{"id":"a100000000000008","type":"file","file":"黎黎隆项目/04_场景/05_素材整理_候选/04_缺失与版本冲突.md","x":1280,"y":340,"width":520,"height":420,"color":"1"},
+		{"id":"a100000000000009","type":"file","file":"黎黎隆项目/04_场景/05_素材整理_候选/05_生产框交接规格.md","x":1860,"y":340,"width":580,"height":420,"color":"4"},
+		{"id":"a10000000000000a","type":"file","file":"黎黎隆项目/04_场景/05_素材整理_候选/06_不可读恢复核验.md","x":40,"y":920,"width":650,"height":560,"color":"1"},
+		{"id":"a10000000000000d","type":"text","text":"## 生产边界\n\n可交给生产框：\n- 连续 NZ 大骨架\n- 少量 Z 接口\n- 三层纵深\n- 单一主动作\n- 一个功能点色\n\n禁止：\n- 把参考图当批准背景\n- 把角色 IP 直接移植\n- 把未证实编号/权限写成 XN\n- 把 IMAGE-306 作为输入","x":2040,"y":920,"width":400,"height":500,"color":"4"},
+		{"id":"a10000000000000e","type":"file","file":"黎黎隆项目/04_场景/05_素材整理_候选/执行日志/SCENE-AUDIT-674-68-005.json","x":1200,"y":1320,"width":420,"height":180,"color":"2"},
+		{"id":"a10000000000000f","type":"file","file":"黎黎隆项目/04_场景/05_素材整理_候选/inventory_unique_验收版.json","x":1680,"y":1320,"width":520,"height":180,"color":"4"},
+		{"id":"a10000000000000b","type":"file","file":"黎黎隆项目/04_场景/05_素材整理_候选/01_缩略联系表/04_恢复核验_候选/SCENE-UNREADABLE-AUDIT-674-68-001_contact.jpg","x":708,"y":1320,"width":345,"height":360,"color":"6"},
+		{"id":"a10000000000000c","type":"file","file":"黎黎隆项目/04_场景/05_素材整理_候选/01_缩略联系表/04_恢复核验_候选/relocated_exact/SCENE-UNREADABLE-RELOCATED-674-68-001_contact.jpg","x":1000,"y":780,"width":440,"height":500,"color":"6"}
+	],
+	"edges":[
+		{"id":"b100000000000001","fromNode":"a100000000000002","fromSide":"right","toNode":"a100000000000003","toSide":"left","label":"候选结论"},
+		{"id":"b100000000000002","fromNode":"a100000000000002","fromSide":"right","toNode":"a100000000000004","toSide":"left","label":"盘点统计"},
+		{"id":"b100000000000003","fromNode":"a100000000000002","fromSide":"right","toNode":"a100000000000006","toSide":"left","label":"双栏分析"},
+		{"id":"b100000000000004","fromNode":"a100000000000006","fromSide":"right","toNode":"a100000000000007","toSide":"left","label":"提炼规则"},
+		{"id":"b100000000000005","fromNode":"a100000000000006","fromSide":"right","toNode":"a100000000000008","toSide":"left","label":"缺失边界"},
+		{"id":"b100000000000006","fromNode":"a100000000000008","fromSide":"right","toNode":"a10000000000000a","toSide":"left","label":"恢复审计"},
+		{"id":"b100000000000007","fromNode":"a10000000000000a","fromSide":"right","toNode":"a10000000000000b","toSide":"left","label":"直接解码 6 项"},
+		{"id":"b100000000000008","fromNode":"a10000000000000a","fromSide":"right","toNode":"a10000000000000c","toSide":"left","label":"SHA256 迁移 23 项"},
+		{"id":"b100000000000009","fromNode":"a100000000000006","fromSide":"right","toNode":"a100000000000009","toSide":"left","label":"生产交接"},
+		{"id":"b10000000000000a","fromNode":"a100000000000009","fromSide":"right","toNode":"a10000000000000d","toSide":"left","label":"输入边界"},
+		{"id":"b10000000000000b","fromNode":"a10000000000000a","fromSide":"right","toNode":"a10000000000000e","toSide":"left","label":"执行凭证"},
+		{"id":"b10000000000000c","fromNode":"a100000000000004","fromSide":"right","toNode":"a10000000000000f","toSide":"left","label":"唯一索引"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

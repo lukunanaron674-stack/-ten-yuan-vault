@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"ag_root","type":"text","text":"# 子代理｜是什么\n\n🧩 主代理 = 编排 / 决策 / 对接你\n🧩 子代理 = 上下文隔离的执行单元\n\n📄 解释：[[学Codex发散树_说明/03b_子代理|03b 子代理]]","x":0,"y":0,"width":520,"height":220,"color":"3"},
+		{"id":"ag_how","type":"text","text":"# 怎么用出来\n\n✅ 直接说『派个子代理去做XX』\n📦 适合丢：探索 / 测试 / 分诊 / 独立子任务\n\n📄 解释：[[学Codex发散树_说明/03b1_子代理实操|03b1 实操]]","x":620,"y":0,"width":520,"height":220,"color":"3"},
+		{"id":"ag_flow","type":"text","text":"# 发散树→出图→审核\n\n🧩 A锁定描述词 → B出图 → C审核（✕打回）\n🎯 主代理：抽查锁定稿 + 拍板过/打回\n\n📄 解释：[[学Codex发散树_说明/03b2_发散树出图审核编排|03b2 编排]]","x":1240,"y":0,"width":540,"height":220,"color":"3"}
+	],
+	"edges":[
+		{"id":"e-ag-1","fromNode":"ag_root","fromSide":"right","toNode":"ag_how","toSide":"left","color":"3"},
+		{"id":"e-ag-2","fromNode":"ag_how","fromSide":"right","toNode":"ag_flow","toSide":"left","color":"3"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

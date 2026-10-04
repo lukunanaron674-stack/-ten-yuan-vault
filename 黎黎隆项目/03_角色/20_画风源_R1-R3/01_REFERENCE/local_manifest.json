@@ -1,0 +1,2448 @@
+{
+  "project": "黎黎隆角色风格",
+  "stage": "R1-R3",
+  "status": "R3本地化完成；未执行R4；未跑图",
+  "generated_at": "2026-09-17",
+  "vault_root": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault",
+  "localized_canvas": "黎黎隆项目/角色风格_R1-R3/00_STYLE_CANVAS/黎黎隆_角色风格_R1-R3_本地化.canvas",
+  "source_manifest": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/reference_manifest_R1-R3.json",
+  "r4_executed": false,
+  "generation_run": false,
+  "groups": [
+    {
+      "id": "R01",
+      "name": "WAKFU / Dofus",
+      "folder": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/",
+      "target_collect": 10,
+      "downloaded_count": 10,
+      "blocked_count": 0,
+      "missing_dimensions": "覆盖全身与族谱方向；脸型近景和动态证据仍偏少，后续可补官方角色表情/动作页。",
+      "suggested_supplement": "官方 WAKFU 角色设计页面或更明确的媒体包",
+      "canvas_key_images": 3,
+      "assets": [
+        {
+          "id": "R01",
+          "folder": "R01_WAKFU",
+          "group": "WAKFU / Dofus",
+          "source_url": "https://www.behance.net/gallery/96742705/WAKFU-%28MMORPG%29-_-Lead-character-design",
+          "asset_source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/121b8b96742705.5eb52150b1b67.png",
+          "work": "WAKFU (MMORPG) — Lead character design",
+          "artist_studio": "Fabrice Nzinzi / Ankama credit context on public portfolio",
+          "reference_focus": "全身、族谱、脸型、服装道具、动态、图形概括",
+          "license_or_terms_note": "公开作品集素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 1,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/orig_01.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/thumb_01.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            547
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            456
+          ],
+          "original_sha256": "fec2ada6a92cf7c4580c7b0e75cbee2d0eeaced82b2a929ce8fedeb3eb33315d"
+        },
+        {
+          "id": "R01",
+          "folder": "R01_WAKFU",
+          "group": "WAKFU / Dofus",
+          "source_url": "https://www.behance.net/gallery/96742705/WAKFU-%28MMORPG%29-_-Lead-character-design",
+          "asset_source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/22c24f96742705.5ebd32c042fec.png",
+          "work": "WAKFU (MMORPG) — Lead character design",
+          "artist_studio": "Fabrice Nzinzi / Ankama credit context on public portfolio",
+          "reference_focus": "全身、族谱、脸型、服装道具、动态、图形概括",
+          "license_or_terms_note": "公开作品集素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 2,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/orig_02.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/thumb_02.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1244,
+            799
+          ],
+          "thumbnail_dimensions": [
+            1244,
+            799
+          ],
+          "original_sha256": "c16c094b4e944e72225b1e4360812bef460bac21fe39dc9ccd69b70e50483730"
+        },
+        {
+          "id": "R01",
+          "folder": "R01_WAKFU",
+          "group": "WAKFU / Dofus",
+          "source_url": "https://www.behance.net/gallery/96742705/WAKFU-%28MMORPG%29-_-Lead-character-design",
+          "asset_source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/26159b96742705.5eb52150ace7f.png",
+          "work": "WAKFU (MMORPG) — Lead character design",
+          "artist_studio": "Fabrice Nzinzi / Ankama credit context on public portfolio",
+          "reference_focus": "全身、族谱、脸型、服装道具、动态、图形概括",
+          "license_or_terms_note": "公开作品集素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 3,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/orig_03.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/thumb_03.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1520,
+            384
+          ],
+          "thumbnail_dimensions": [
+            1520,
+            384
+          ],
+          "original_sha256": "2bd433dcebf9d9dad486e5964613c735f5de8daa748ea55b90443113f58f9954"
+        },
+        {
+          "id": "R01",
+          "folder": "R01_WAKFU",
+          "group": "WAKFU / Dofus",
+          "source_url": "https://www.behance.net/gallery/96742705/WAKFU-%28MMORPG%29-_-Lead-character-design",
+          "asset_source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/268b2c96742705.5eb52150a9009.png",
+          "work": "WAKFU (MMORPG) — Lead character design",
+          "artist_studio": "Fabrice Nzinzi / Ankama credit context on public portfolio",
+          "reference_focus": "全身、族谱、脸型、服装道具、动态、图形概括",
+          "license_or_terms_note": "公开作品集素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 4,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/orig_04.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/thumb_04.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1466,
+            1245
+          ],
+          "thumbnail_dimensions": [
+            1466,
+            1245
+          ],
+          "original_sha256": "c7064eae181b133918ec7f5c7cc3ef913f71b2347b32c5a8f4edf5e7246c6893"
+        },
+        {
+          "id": "R01",
+          "folder": "R01_WAKFU",
+          "group": "WAKFU / Dofus",
+          "source_url": "https://www.behance.net/gallery/96742705/WAKFU-%28MMORPG%29-_-Lead-character-design",
+          "asset_source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/5f8d8496742705.67c712603e57c.jpg",
+          "work": "WAKFU (MMORPG) — Lead character design",
+          "artist_studio": "Fabrice Nzinzi / Ankama credit context on public portfolio",
+          "reference_focus": "全身、族谱、脸型、服装道具、动态、图形概括",
+          "license_or_terms_note": "公开作品集素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 5,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/orig_05.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/thumb_05.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            653
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            544
+          ],
+          "original_sha256": "9dff169b25bb081eafa9013d5dc75d546e4a4f3d5fbb61b1d989780ea76af20e"
+        },
+        {
+          "id": "R01",
+          "folder": "R01_WAKFU",
+          "group": "WAKFU / Dofus",
+          "source_url": "https://www.behance.net/gallery/96742705/WAKFU-%28MMORPG%29-_-Lead-character-design",
+          "asset_source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/61888d96742705.5eb52150aa415.png",
+          "work": "WAKFU (MMORPG) — Lead character design",
+          "artist_studio": "Fabrice Nzinzi / Ankama credit context on public portfolio",
+          "reference_focus": "全身、族谱、脸型、服装道具、动态、图形概括",
+          "license_or_terms_note": "公开作品集素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 6,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/orig_06.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/thumb_06.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1250,
+            833
+          ],
+          "thumbnail_dimensions": [
+            1250,
+            833
+          ],
+          "original_sha256": "5cd8bf309faff663149b2696c59c369b0d11f95e8cd049d901f34229f210a8fd"
+        },
+        {
+          "id": "R01",
+          "folder": "R01_WAKFU",
+          "group": "WAKFU / Dofus",
+          "source_url": "https://www.behance.net/gallery/96742705/WAKFU-%28MMORPG%29-_-Lead-character-design",
+          "asset_source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/6a524f96742705.5eb52150b4866.png",
+          "work": "WAKFU (MMORPG) — Lead character design",
+          "artist_studio": "Fabrice Nzinzi / Ankama credit context on public portfolio",
+          "reference_focus": "全身、族谱、脸型、服装道具、动态、图形概括",
+          "license_or_terms_note": "公开作品集素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 7,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/orig_07.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/thumb_07.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1744,
+            976
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            895
+          ],
+          "original_sha256": "82698131899ee193897bd022aa98876ba239848a6215240ec29bc3be2298813c"
+        },
+        {
+          "id": "R01",
+          "folder": "R01_WAKFU",
+          "group": "WAKFU / Dofus",
+          "source_url": "https://www.behance.net/gallery/96742705/WAKFU-%28MMORPG%29-_-Lead-character-design",
+          "asset_source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/6d2d2e96742705.5eb52150afc97.png",
+          "work": "WAKFU (MMORPG) — Lead character design",
+          "artist_studio": "Fabrice Nzinzi / Ankama credit context on public portfolio",
+          "reference_focus": "全身、族谱、脸型、服装道具、动态、图形概括",
+          "license_or_terms_note": "公开作品集素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 8,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/orig_08.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/thumb_08.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1256,
+            693
+          ],
+          "thumbnail_dimensions": [
+            1256,
+            693
+          ],
+          "original_sha256": "d4e169441acab2de2770ebb626e774a2c7c4f93c5f781cce83f2f0d6e095413c"
+        },
+        {
+          "id": "R01",
+          "folder": "R01_WAKFU",
+          "group": "WAKFU / Dofus",
+          "source_url": "https://www.behance.net/gallery/96742705/WAKFU-%28MMORPG%29-_-Lead-character-design",
+          "asset_source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/88e78d96742705.5eb52150b2f5a.png",
+          "work": "WAKFU (MMORPG) — Lead character design",
+          "artist_studio": "Fabrice Nzinzi / Ankama credit context on public portfolio",
+          "reference_focus": "全身、族谱、脸型、服装道具、动态、图形概括",
+          "license_or_terms_note": "公开作品集素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 9,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/orig_09.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/thumb_09.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1604,
+            987
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            985
+          ],
+          "original_sha256": "c2a81ec4fcd8f81789f945886f34b823c22a84d090846de9cd5142512112eb9d"
+        },
+        {
+          "id": "R01",
+          "folder": "R01_WAKFU",
+          "group": "WAKFU / Dofus",
+          "source_url": "https://www.behance.net/gallery/96742705/WAKFU-%28MMORPG%29-_-Lead-character-design",
+          "asset_source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/8cc9b796742705.5eb52150b34a8.png",
+          "work": "WAKFU (MMORPG) — Lead character design",
+          "artist_studio": "Fabrice Nzinzi / Ankama credit context on public portfolio",
+          "reference_focus": "全身、族谱、脸型、服装道具、动态、图形概括",
+          "license_or_terms_note": "公开作品集素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 10,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/orig_10.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R01_WAKFU/thumb_10.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1310,
+            642
+          ],
+          "thumbnail_dimensions": [
+            1310,
+            642
+          ],
+          "original_sha256": "ae0e27918042b2dbf463523869a686cfb351884f86e183d397e9913672cc8acb"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "name": "GUILTY GEAR -STRIVE-",
+      "folder": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/",
+      "target_collect": 12,
+      "downloaded_count": 12,
+      "blocked_count": 0,
+      "missing_dimensions": "覆盖非对称、大轮廓、机械/大型道具角色；当前图以角色图为主，复杂服装拆解仍可补。",
+      "suggested_supplement": "官方 Fan Kit 的更多角色视觉与道具图",
+      "canvas_key_images": 3,
+      "assets": [
+        {
+          "id": "R02",
+          "folder": "R02_GuiltyGear",
+          "group": "GUILTY GEAR -STRIVE-",
+          "source_url": "https://www.guiltygear.com/ggst/en/fankit/",
+          "asset_source_url": "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/themes/ggst/img/fankit/chara16_gld.png",
+          "work": "GUILTY GEAR -STRIVE- official Fan Kit character materials",
+          "artist_studio": "ARC SYSTEM WORKS",
+          "reference_focus": "Goldlewis/Bedman?/Happy Chaos/Jack-O/Baiken 等的轮廓、非对称、大物件与人体关系",
+          "license_or_terms_note": "官方 Fan Kit 页面公开下载；页面使用条款保留，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 1,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/orig_01.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/thumb_01.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1600,
+            1600
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1600
+          ],
+          "original_sha256": "7994c3024e9a4e5f0a72a8881813d00bea8c51d67436317aabb92d6f5532cc66"
+        },
+        {
+          "id": "R02",
+          "folder": "R02_GuiltyGear",
+          "group": "GUILTY GEAR -STRIVE-",
+          "source_url": "https://www.guiltygear.com/ggst/en/fankit/",
+          "asset_source_url": "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/themes/ggst/img/fankit/chara23_bed.png",
+          "work": "GUILTY GEAR -STRIVE- official Fan Kit character materials",
+          "artist_studio": "ARC SYSTEM WORKS",
+          "reference_focus": "Goldlewis/Bedman?/Happy Chaos/Jack-O/Baiken 等的轮廓、非对称、大物件与人体关系",
+          "license_or_terms_note": "官方 Fan Kit 页面公开下载；页面使用条款保留，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 2,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/orig_02.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/thumb_02.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1600,
+            1600
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1600
+          ],
+          "original_sha256": "c246a13cb1b69ae41938fbec0eab2b55de8f9929bf6b6bf5882c07a7f43259a0"
+        },
+        {
+          "id": "R02",
+          "folder": "R02_GuiltyGear",
+          "group": "GUILTY GEAR -STRIVE-",
+          "source_url": "https://www.guiltygear.com/ggst/en/fankit/",
+          "asset_source_url": "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/themes/ggst/img/fankit/chara24_ask.png",
+          "work": "GUILTY GEAR -STRIVE- official Fan Kit character materials",
+          "artist_studio": "ARC SYSTEM WORKS",
+          "reference_focus": "Goldlewis/Bedman?/Happy Chaos/Jack-O/Baiken 等的轮廓、非对称、大物件与人体关系",
+          "license_or_terms_note": "官方 Fan Kit 页面公开下载；页面使用条款保留，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 3,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/orig_03.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/thumb_03.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1600,
+            1600
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1600
+          ],
+          "original_sha256": "b63a09f88398a5a8ff10b7014ee38f8686c976a6ea6bd8488063c9e4b98502b7"
+        },
+        {
+          "id": "R02",
+          "folder": "R02_GuiltyGear",
+          "group": "GUILTY GEAR -STRIVE-",
+          "source_url": "https://www.guiltygear.com/ggst/en/fankit/",
+          "asset_source_url": "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/themes/ggst/img/fankit/chara19_bkn.png",
+          "work": "GUILTY GEAR -STRIVE- official Fan Kit character materials",
+          "artist_studio": "ARC SYSTEM WORKS",
+          "reference_focus": "Goldlewis/Bedman?/Happy Chaos/Jack-O/Baiken 等的轮廓、非对称、大物件与人体关系",
+          "license_or_terms_note": "官方 Fan Kit 页面公开下载；页面使用条款保留，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 4,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/orig_04.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/thumb_04.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1600,
+            1600
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1600
+          ],
+          "original_sha256": "0ef1694a0aabe21988874ba408e1b3af39384adad29fa83b0dbf10d0a814eec5"
+        },
+        {
+          "id": "R02",
+          "folder": "R02_GuiltyGear",
+          "group": "GUILTY GEAR -STRIVE-",
+          "source_url": "https://www.guiltygear.com/ggst/en/fankit/",
+          "asset_source_url": "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/themes/ggst/img/fankit/chara12_nag.png",
+          "work": "GUILTY GEAR -STRIVE- official Fan Kit character materials",
+          "artist_studio": "ARC SYSTEM WORKS",
+          "reference_focus": "Goldlewis/Bedman?/Happy Chaos/Jack-O/Baiken 等的轮廓、非对称、大物件与人体关系",
+          "license_or_terms_note": "官方 Fan Kit 页面公开下载；页面使用条款保留，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 5,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/orig_05.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/thumb_05.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1600,
+            1600
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1600
+          ],
+          "original_sha256": "e856f37d4379827d0edf3d1b66dd3a559d48753969969071c4c97dbc3537f973"
+        },
+        {
+          "id": "R02",
+          "folder": "R02_GuiltyGear",
+          "group": "GUILTY GEAR -STRIVE-",
+          "source_url": "https://www.guiltygear.com/ggst/en/fankit/",
+          "asset_source_url": "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/themes/ggst/img/fankit/chara07_fau.png",
+          "work": "GUILTY GEAR -STRIVE- official Fan Kit character materials",
+          "artist_studio": "ARC SYSTEM WORKS",
+          "reference_focus": "Goldlewis/Bedman?/Happy Chaos/Jack-O/Baiken 等的轮廓、非对称、大物件与人体关系",
+          "license_or_terms_note": "官方 Fan Kit 页面公开下载；页面使用条款保留，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 6,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/orig_06.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/thumb_06.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1600,
+            1600
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1600
+          ],
+          "original_sha256": "5f3caa8f96a0df35382c14df91261cf2fcf6e59be0c19beb4d8c71b1ddd8981e"
+        },
+        {
+          "id": "R02",
+          "folder": "R02_GuiltyGear",
+          "group": "GUILTY GEAR -STRIVE-",
+          "source_url": "https://www.guiltygear.com/ggst/en/fankit/",
+          "asset_source_url": "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/themes/ggst/img/fankit/chara05_chipp.png",
+          "work": "GUILTY GEAR -STRIVE- official Fan Kit character materials",
+          "artist_studio": "ARC SYSTEM WORKS",
+          "reference_focus": "Goldlewis/Bedman?/Happy Chaos/Jack-O/Baiken 等的轮廓、非对称、大物件与人体关系",
+          "license_or_terms_note": "官方 Fan Kit 页面公开下载；页面使用条款保留，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 7,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/orig_07.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/thumb_07.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1600,
+            1600
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1600
+          ],
+          "original_sha256": "59c64330b2e7251486260ffaf813a092f85b54f87b55cac17b075578c5f5de6e"
+        },
+        {
+          "id": "R02",
+          "folder": "R02_GuiltyGear",
+          "group": "GUILTY GEAR -STRIVE-",
+          "source_url": "https://www.guiltygear.com/ggst/en/fankit/",
+          "asset_source_url": "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/themes/ggst/img/fankit/chara10_ram.png",
+          "work": "GUILTY GEAR -STRIVE- official Fan Kit character materials",
+          "artist_studio": "ARC SYSTEM WORKS",
+          "reference_focus": "Goldlewis/Bedman?/Happy Chaos/Jack-O/Baiken 等的轮廓、非对称、大物件与人体关系",
+          "license_or_terms_note": "官方 Fan Kit 页面公开下载；页面使用条款保留，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 8,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/orig_08.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/thumb_08.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1600,
+            1600
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1600
+          ],
+          "original_sha256": "1033fb5a445a2d774091d10c26e3a7360036fb9aad94e3f3aefc4db853356806"
+        },
+        {
+          "id": "R02",
+          "folder": "R02_GuiltyGear",
+          "group": "GUILTY GEAR -STRIVE-",
+          "source_url": "https://www.guiltygear.com/ggst/en/fankit/",
+          "asset_source_url": "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/themes/ggst/img/fankit/chara17_jko.png",
+          "work": "GUILTY GEAR -STRIVE- official Fan Kit character materials",
+          "artist_studio": "ARC SYSTEM WORKS",
+          "reference_focus": "Goldlewis/Bedman?/Happy Chaos/Jack-O/Baiken 等的轮廓、非对称、大物件与人体关系",
+          "license_or_terms_note": "官方 Fan Kit 页面公开下载；页面使用条款保留，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 9,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/orig_09.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/thumb_09.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1600,
+            1600
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1600
+          ],
+          "original_sha256": "a1d70f2da5dae2ce68547116ad9826635c8bb18efb0abb59abdf591948033944"
+        },
+        {
+          "id": "R02",
+          "folder": "R02_GuiltyGear",
+          "group": "GUILTY GEAR -STRIVE-",
+          "source_url": "https://www.guiltygear.com/ggst/en/fankit/",
+          "asset_source_url": "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/themes/ggst/img/fankit/chara21_bgt.png",
+          "work": "GUILTY GEAR -STRIVE- official Fan Kit character materials",
+          "artist_studio": "ARC SYSTEM WORKS",
+          "reference_focus": "Goldlewis/Bedman?/Happy Chaos/Jack-O/Baiken 等的轮廓、非对称、大物件与人体关系",
+          "license_or_terms_note": "官方 Fan Kit 页面公开下载；页面使用条款保留，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 10,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/orig_10.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/thumb_10.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1600,
+            1600
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1600
+          ],
+          "original_sha256": "e9d2043da468825cda117f0eac9db930a43ec7b547e0e041a29f0660d14311da"
+        },
+        {
+          "id": "R02",
+          "folder": "R02_GuiltyGear",
+          "group": "GUILTY GEAR -STRIVE-",
+          "source_url": "https://www.guiltygear.com/ggst/en/fankit/",
+          "asset_source_url": "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/themes/ggst/img/fankit/chara22_sin.png",
+          "work": "GUILTY GEAR -STRIVE- official Fan Kit character materials",
+          "artist_studio": "ARC SYSTEM WORKS",
+          "reference_focus": "Goldlewis/Bedman?/Happy Chaos/Jack-O/Baiken 等的轮廓、非对称、大物件与人体关系",
+          "license_or_terms_note": "官方 Fan Kit 页面公开下载；页面使用条款保留，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 11,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/orig_11.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/thumb_11.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1600,
+            1600
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1600
+          ],
+          "original_sha256": "c699d30634a2ebd62e5532eecc99df5c31cf67cb8253d1d67e78ae894097a738"
+        },
+        {
+          "id": "R02",
+          "folder": "R02_GuiltyGear",
+          "group": "GUILTY GEAR -STRIVE-",
+          "source_url": "https://www.guiltygear.com/ggst/en/fankit/",
+          "asset_source_url": "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/themes/ggst/img/fankit/chara29_dzy.png",
+          "work": "GUILTY GEAR -STRIVE- official Fan Kit character materials",
+          "artist_studio": "ARC SYSTEM WORKS",
+          "reference_focus": "Goldlewis/Bedman?/Happy Chaos/Jack-O/Baiken 等的轮廓、非对称、大物件与人体关系",
+          "license_or_terms_note": "官方 Fan Kit 页面公开下载；页面使用条款保留，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 12,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/orig_12.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R02_GuiltyGear/thumb_12.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1600,
+            1600
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1600
+          ],
+          "original_sha256": "18c89697e05e813c2a6e5b8f0fbc311b1facf5e2dd8195a4943dcbbbf6266d71"
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "name": "PROMARE",
+      "folder": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/",
+      "target_collect": 8,
+      "downloaded_count": 8,
+      "blocked_count": 0,
+      "missing_dimensions": "覆盖多体型角色和强轮廓；制服/机械局部与近景脸部维度不足。",
+      "suggested_supplement": "PROMARE 官方角色页的局部设定或公开设定图",
+      "canvas_key_images": 3,
+      "assets": [
+        {
+          "id": "R03",
+          "folder": "R03_PROMARE",
+          "group": "PROMARE",
+          "source_url": "https://promare-movie.com/character/",
+          "asset_source_url": "https://promare-movie.com/wp-content/themes/promare-theme_v1/asset/img/character/galo_main.png",
+          "work": "PROMARE official character gallery",
+          "artist_studio": "TRIGGER / PROMARE production team",
+          "reference_focus": "不同体型角色、强轮廓、硬色块、科技结构图形化",
+          "license_or_terms_note": "官方角色页公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 1,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/orig_01.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/thumb_01.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1096,
+            1400
+          ],
+          "thumbnail_dimensions": [
+            1096,
+            1400
+          ],
+          "original_sha256": "54267d819a88162ebede7dfb8bdc5ef68103009be71f2fcfe2edca1e2a3b6a63"
+        },
+        {
+          "id": "R03",
+          "folder": "R03_PROMARE",
+          "group": "PROMARE",
+          "source_url": "https://promare-movie.com/character/",
+          "asset_source_url": "https://promare-movie.com/wp-content/themes/promare-theme_v1/asset/img/character/lio_main.png",
+          "work": "PROMARE official character gallery",
+          "artist_studio": "TRIGGER / PROMARE production team",
+          "reference_focus": "不同体型角色、强轮廓、硬色块、科技结构图形化",
+          "license_or_terms_note": "官方角色页公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 2,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/orig_02.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/thumb_02.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1096,
+            1400
+          ],
+          "thumbnail_dimensions": [
+            1096,
+            1400
+          ],
+          "original_sha256": "4ff91f4fca6d1381275208b62f7f7f3057c855592d0cb54768a46991cf46212d"
+        },
+        {
+          "id": "R03",
+          "folder": "R03_PROMARE",
+          "group": "PROMARE",
+          "source_url": "https://promare-movie.com/character/",
+          "asset_source_url": "https://promare-movie.com/wp-content/themes/promare-theme_v1/asset/img/character/aina_main.png",
+          "work": "PROMARE official character gallery",
+          "artist_studio": "TRIGGER / PROMARE production team",
+          "reference_focus": "不同体型角色、强轮廓、硬色块、科技结构图形化",
+          "license_or_terms_note": "官方角色页公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 3,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/orig_03.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/thumb_03.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1040,
+            1400
+          ],
+          "thumbnail_dimensions": [
+            1040,
+            1400
+          ],
+          "original_sha256": "16c8238a7c9180c4aa13c970d2992b629d32c3edcf61bad61fe850010adc531c"
+        },
+        {
+          "id": "R03",
+          "folder": "R03_PROMARE",
+          "group": "PROMARE",
+          "source_url": "https://promare-movie.com/character/",
+          "asset_source_url": "https://promare-movie.com/wp-content/themes/promare-theme_v1/asset/img/character/lucia_main.png",
+          "work": "PROMARE official character gallery",
+          "artist_studio": "TRIGGER / PROMARE production team",
+          "reference_focus": "不同体型角色、强轮廓、硬色块、科技结构图形化",
+          "license_or_terms_note": "官方角色页公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 4,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/orig_04.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/thumb_04.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1100,
+            1402
+          ],
+          "thumbnail_dimensions": [
+            1100,
+            1402
+          ],
+          "original_sha256": "270b4ed2ceacf308905cd5ff0bdc3d1ccf7aeee33120cbc23c34cb1ce21b3d14"
+        },
+        {
+          "id": "R03",
+          "folder": "R03_PROMARE",
+          "group": "PROMARE",
+          "source_url": "https://promare-movie.com/character/",
+          "asset_source_url": "https://promare-movie.com/wp-content/themes/promare-theme_v1/asset/img/character/ignis_main.png",
+          "work": "PROMARE official character gallery",
+          "artist_studio": "TRIGGER / PROMARE production team",
+          "reference_focus": "不同体型角色、强轮廓、硬色块、科技结构图形化",
+          "license_or_terms_note": "官方角色页公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 5,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/orig_05.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/thumb_05.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1096,
+            1400
+          ],
+          "thumbnail_dimensions": [
+            1096,
+            1400
+          ],
+          "original_sha256": "de267a403e1e01f5b547bc33f8802df1fc2750a534eb0a45d562e1c267870df1"
+        },
+        {
+          "id": "R03",
+          "folder": "R03_PROMARE",
+          "group": "PROMARE",
+          "source_url": "https://promare-movie.com/character/",
+          "asset_source_url": "https://promare-movie.com/wp-content/themes/promare-theme_v1/asset/img/character/vulcan_main.png",
+          "work": "PROMARE official character gallery",
+          "artist_studio": "TRIGGER / PROMARE production team",
+          "reference_focus": "不同体型角色、强轮廓、硬色块、科技结构图形化",
+          "license_or_terms_note": "官方角色页公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 6,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/orig_06.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/thumb_06.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1968,
+            1400
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            1138
+          ],
+          "original_sha256": "79916cc611196ca1fcd25abe4cf9f3252ac7096d5acb8e026ff747394e53c7c5"
+        },
+        {
+          "id": "R03",
+          "folder": "R03_PROMARE",
+          "group": "PROMARE",
+          "source_url": "https://promare-movie.com/character/",
+          "asset_source_url": "https://promare-movie.com/wp-content/themes/promare-theme_v1/asset/img/character/gueira_main.png",
+          "work": "PROMARE official character gallery",
+          "artist_studio": "TRIGGER / PROMARE production team",
+          "reference_focus": "不同体型角色、强轮廓、硬色块、科技结构图形化",
+          "license_or_terms_note": "官方角色页公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 7,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/orig_07.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/thumb_07.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1032,
+            1400
+          ],
+          "thumbnail_dimensions": [
+            1032,
+            1400
+          ],
+          "original_sha256": "38b11cccc48b63bf4cd6e4b41315d4554940069230f460a74f9c9d255ee6b67b"
+        },
+        {
+          "id": "R03",
+          "folder": "R03_PROMARE",
+          "group": "PROMARE",
+          "source_url": "https://promare-movie.com/character/",
+          "asset_source_url": "https://promare-movie.com/wp-content/themes/promare-theme_v1/asset/img/character/kray_main.png",
+          "work": "PROMARE official character gallery",
+          "artist_studio": "TRIGGER / PROMARE production team",
+          "reference_focus": "不同体型角色、强轮廓、硬色块、科技结构图形化",
+          "license_or_terms_note": "官方角色页公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 8,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/orig_08.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R03_PROMARE/thumb_08.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1096,
+            1400
+          ],
+          "thumbnail_dimensions": [
+            1096,
+            1400
+          ],
+          "original_sha256": "a34169f69b9f62b77c050f095187032df4f50473f72ffe6f6fc8e20f411bdafa"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "name": "Fortiche / ARCANE",
+      "folder": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/",
+      "target_collect": 8,
+      "downloaded_count": 8,
+      "blocked_count": 0,
+      "missing_dimensions": "覆盖 Arcane 公开 portfolio 与设计/制作方向缩略图；未采集更多明确成年男性机械角色局部。",
+      "suggested_supplement": "Fortiche 官方 Design/Character Props 页面",
+      "canvas_key_images": 3,
+      "assets": [
+        {
+          "id": "R04",
+          "folder": "R04_Fortiche_ARCANE",
+          "group": "Fortiche / ARCANE",
+          "source_url": "https://forticheprod.com/portfolio/arcane-season-2/",
+          "asset_source_url": "https://fortiche.b-cdn.net/wp-content/uploads/2025/04/Fortiche_projects_arcane_s211.jpg",
+          "work": "Arcane Season 2 / Fortiche public portfolio",
+          "artist_studio": "Fortiche Production",
+          "reference_focus": "成年脸部块面、衣物重量、旧材质、人体与机械承载关系",
+          "license_or_terms_note": "Fortiche 官方作品集公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 1,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/orig_01.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/thumb_01.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "4c8d6763544bb60a61cdfc073a127234cf21f5a3e4d777e527fae829bc5037ff"
+        },
+        {
+          "id": "R04",
+          "folder": "R04_Fortiche_ARCANE",
+          "group": "Fortiche / ARCANE",
+          "source_url": "https://forticheprod.com/portfolio/arcane-season-2/",
+          "asset_source_url": "https://fortiche.b-cdn.net/wp-content/uploads/2025/04/Fortiche_projects_arcane_s210.jpg",
+          "work": "Arcane Season 2 / Fortiche public portfolio",
+          "artist_studio": "Fortiche Production",
+          "reference_focus": "成年脸部块面、衣物重量、旧材质、人体与机械承载关系",
+          "license_or_terms_note": "Fortiche 官方作品集公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 2,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/orig_02.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/thumb_02.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "4ad4d5dec15896597c2634350a768f8b60ff6b9484363bc7e83b3934391ae896"
+        },
+        {
+          "id": "R04",
+          "folder": "R04_Fortiche_ARCANE",
+          "group": "Fortiche / ARCANE",
+          "source_url": "https://forticheprod.com/portfolio/arcane-season-2/",
+          "asset_source_url": "https://fortiche.b-cdn.net/wp-content/uploads/2025/04/Fortiche_projects_arcane_s29.jpg",
+          "work": "Arcane Season 2 / Fortiche public portfolio",
+          "artist_studio": "Fortiche Production",
+          "reference_focus": "成年脸部块面、衣物重量、旧材质、人体与机械承载关系",
+          "license_or_terms_note": "Fortiche 官方作品集公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 3,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/orig_03.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/thumb_03.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "fe3e678d0bd64539c5cbf04169c6106d8e3510f8697d902f8669fc786dabda50"
+        },
+        {
+          "id": "R04",
+          "folder": "R04_Fortiche_ARCANE",
+          "group": "Fortiche / ARCANE",
+          "source_url": "https://forticheprod.com/portfolio/arcane-season-2/",
+          "asset_source_url": "https://fortiche.b-cdn.net/wp-content/uploads/2025/04/Fortiche_projects_arcane_s28.jpg",
+          "work": "Arcane Season 2 / Fortiche public portfolio",
+          "artist_studio": "Fortiche Production",
+          "reference_focus": "成年脸部块面、衣物重量、旧材质、人体与机械承载关系",
+          "license_or_terms_note": "Fortiche 官方作品集公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 4,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/orig_04.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/thumb_04.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "d69f6307f6ec9d0d312279db323e178306697f8aab0faea74c8c6b490ecfcc00"
+        },
+        {
+          "id": "R04",
+          "folder": "R04_Fortiche_ARCANE",
+          "group": "Fortiche / ARCANE",
+          "source_url": "https://forticheprod.com/portfolio/arcane-season-2/",
+          "asset_source_url": "https://fortiche.b-cdn.net/wp-content/uploads/2025/04/Fortiche_projects_arcane_s27.jpg",
+          "work": "Arcane Season 2 / Fortiche public portfolio",
+          "artist_studio": "Fortiche Production",
+          "reference_focus": "成年脸部块面、衣物重量、旧材质、人体与机械承载关系",
+          "license_or_terms_note": "Fortiche 官方作品集公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 5,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/orig_05.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/thumb_05.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "ddcf504c1fecd4cc44b553c2addde9fd3d374f6e97ea60aab81bec249649aaed"
+        },
+        {
+          "id": "R04",
+          "folder": "R04_Fortiche_ARCANE",
+          "group": "Fortiche / ARCANE",
+          "source_url": "https://forticheprod.com/portfolio/arcane-season-2/",
+          "asset_source_url": "https://fortiche.b-cdn.net/wp-content/uploads/2025/04/00_THUMBNAIL_AURELIEN_RESSENCOURT.webp",
+          "work": "Arcane Season 2 / Fortiche public portfolio",
+          "artist_studio": "Fortiche Production",
+          "reference_focus": "成年脸部块面、衣物重量、旧材质、人体与机械承载关系",
+          "license_or_terms_note": "Fortiche 官方作品集公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 6,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/orig_06.webp",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/thumb_06.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "2b91261fd9c45dd3dbab2dece645b80e77a2e6e6b33daf9c8bfb913f12e2a26f"
+        },
+        {
+          "id": "R04",
+          "folder": "R04_Fortiche_ARCANE",
+          "group": "Fortiche / ARCANE",
+          "source_url": "https://forticheprod.com/portfolio/arcane-season-2/",
+          "asset_source_url": "https://fortiche.b-cdn.net/wp-content/uploads/2025/04/00_THUMBNAIL_CANDICE_THEUILLON.webp",
+          "work": "Arcane Season 2 / Fortiche public portfolio",
+          "artist_studio": "Fortiche Production",
+          "reference_focus": "成年脸部块面、衣物重量、旧材质、人体与机械承载关系",
+          "license_or_terms_note": "Fortiche 官方作品集公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 7,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/orig_07.webp",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/thumb_07.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "2cfe720b8354178bf22e5a1cb97bd995c7980ada52a917eb997800dcd68bde6a"
+        },
+        {
+          "id": "R04",
+          "folder": "R04_Fortiche_ARCANE",
+          "group": "Fortiche / ARCANE",
+          "source_url": "https://forticheprod.com/portfolio/arcane-season-2/",
+          "asset_source_url": "https://fortiche.b-cdn.net/wp-content/uploads/2025/04/00_THUMBNAIL_EMMANUELLE_AUBEAU.webp",
+          "work": "Arcane Season 2 / Fortiche public portfolio",
+          "artist_studio": "Fortiche Production",
+          "reference_focus": "成年脸部块面、衣物重量、旧材质、人体与机械承载关系",
+          "license_or_terms_note": "Fortiche 官方作品集公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 8,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/orig_08.webp",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R04_Fortiche_ARCANE/thumb_08.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "44f961fcef694ced3d0fd804156cd941994767c2f07f6935273e5d0261738420"
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "name": "HADES",
+      "folder": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/",
+      "target_collect": 8,
+      "downloaded_count": 8,
+      "blocked_count": 0,
+      "missing_dimensions": "官方 press assets 已覆盖角色、主符号、配色和场景；生态/动作剪影需另找合法公开素材。",
+      "suggested_supplement": "Supergiant 官方媒体包中更多角色/剪影表",
+      "canvas_key_images": 3,
+      "assets": [
+        {
+          "id": "R05",
+          "folder": "R05_HADES",
+          "group": "HADES",
+          "source_url": "https://www.supergiantgames.com/blog/hades-switch-retail-edition-now-available/",
+          "asset_source_url": "https://downloads.ctfassets.net/5owu3y35gz1g/zRnFz7KHSb464jGanAa85/1bafdc8ea876ee59b5d4b25fd7230388/Hades.zip#Hades_Aug19_01.png",
+          "work": "Hades official press assets",
+          "artist_studio": "Supergiant Games",
+          "reference_focus": "角色立绘、主符号、限定色、剪影与高辨识",
+          "license_or_terms_note": "Supergiant Games 官方公开 press assets ZIP；使用条款以官方页面为准，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_zip_asset",
+          "source_local_name": "Hades_Aug19_01.png",
+          "index": 1,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/orig_01.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/thumb_01.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "f5373e9cc18370851ae81816547a4b7a682eb374610dea8f23f0d4e403e5469f"
+        },
+        {
+          "id": "R05",
+          "folder": "R05_HADES",
+          "group": "HADES",
+          "source_url": "https://www.supergiantgames.com/blog/hades-switch-retail-edition-now-available/",
+          "asset_source_url": "https://downloads.ctfassets.net/5owu3y35gz1g/zRnFz7KHSb464jGanAa85/1bafdc8ea876ee59b5d4b25fd7230388/Hades.zip#Hades_Aug19_03.png",
+          "work": "Hades official press assets",
+          "artist_studio": "Supergiant Games",
+          "reference_focus": "角色立绘、主符号、限定色、剪影与高辨识",
+          "license_or_terms_note": "Supergiant Games 官方公开 press assets ZIP；使用条款以官方页面为准，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_zip_asset",
+          "source_local_name": "Hades_Aug19_03.png",
+          "index": 2,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/orig_02.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/thumb_02.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "ff43a8c23d1831ce0d2a34ffd584ba36f4b6e49c809b3e831fe2841b3fec8e4f"
+        },
+        {
+          "id": "R05",
+          "folder": "R05_HADES",
+          "group": "HADES",
+          "source_url": "https://www.supergiantgames.com/blog/hades-switch-retail-edition-now-available/",
+          "asset_source_url": "https://downloads.ctfassets.net/5owu3y35gz1g/zRnFz7KHSb464jGanAa85/1bafdc8ea876ee59b5d4b25fd7230388/Hades.zip#Hades_Aug19_04.png",
+          "work": "Hades official press assets",
+          "artist_studio": "Supergiant Games",
+          "reference_focus": "角色立绘、主符号、限定色、剪影与高辨识",
+          "license_or_terms_note": "Supergiant Games 官方公开 press assets ZIP；使用条款以官方页面为准，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_zip_asset",
+          "source_local_name": "Hades_Aug19_04.png",
+          "index": 3,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/orig_03.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/thumb_03.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "d17ef98b3d6c5f8604ad7b12853193cbfb573e1f78bfa4c0b9bf929bde40c5fb"
+        },
+        {
+          "id": "R05",
+          "folder": "R05_HADES",
+          "group": "HADES",
+          "source_url": "https://www.supergiantgames.com/blog/hades-switch-retail-edition-now-available/",
+          "asset_source_url": "https://downloads.ctfassets.net/5owu3y35gz1g/zRnFz7KHSb464jGanAa85/1bafdc8ea876ee59b5d4b25fd7230388/Hades.zip#Hades_Aug2019_02.png",
+          "work": "Hades official press assets",
+          "artist_studio": "Supergiant Games",
+          "reference_focus": "角色立绘、主符号、限定色、剪影与高辨识",
+          "license_or_terms_note": "Supergiant Games 官方公开 press assets ZIP；使用条款以官方页面为准，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_zip_asset",
+          "source_local_name": "Hades_Aug2019_02.png",
+          "index": 4,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/orig_04.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/thumb_04.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "3a0620d8556f68f12b08866fba7fa5fd3469e4e0ecb75ac47b0ce4ff70d3cbea"
+        },
+        {
+          "id": "R05",
+          "folder": "R05_HADES",
+          "group": "HADES",
+          "source_url": "https://www.supergiantgames.com/blog/hades-switch-retail-edition-now-available/",
+          "asset_source_url": "https://downloads.ctfassets.net/5owu3y35gz1g/zRnFz7KHSb464jGanAa85/1bafdc8ea876ee59b5d4b25fd7230388/Hades.zip#Hades_Aug2019_03.png",
+          "work": "Hades official press assets",
+          "artist_studio": "Supergiant Games",
+          "reference_focus": "角色立绘、主符号、限定色、剪影与高辨识",
+          "license_or_terms_note": "Supergiant Games 官方公开 press assets ZIP；使用条款以官方页面为准，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_zip_asset",
+          "source_local_name": "Hades_Aug2019_03.png",
+          "index": 5,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/orig_05.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/thumb_05.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "a85e41cd292e7a70a2ad8098e46601dce8a164a59a9c5f557c8dca79806eec27"
+        },
+        {
+          "id": "R05",
+          "folder": "R05_HADES",
+          "group": "HADES",
+          "source_url": "https://www.supergiantgames.com/blog/hades-switch-retail-edition-now-available/",
+          "asset_source_url": "https://downloads.ctfassets.net/5owu3y35gz1g/zRnFz7KHSb464jGanAa85/1bafdc8ea876ee59b5d4b25fd7230388/Hades.zip#Olympians_Athena_01.jpg",
+          "work": "Hades official press assets",
+          "artist_studio": "Supergiant Games",
+          "reference_focus": "角色立绘、主符号、限定色、剪影与高辨识",
+          "license_or_terms_note": "Supergiant Games 官方公开 press assets ZIP；使用条款以官方页面为准，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_zip_asset",
+          "source_local_name": "Olympians_Athena_01.jpg",
+          "index": 6,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/orig_06.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/thumb_06.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1110,
+            1000
+          ],
+          "thumbnail_dimensions": [
+            1110,
+            1000
+          ],
+          "original_sha256": "c90f95ea0e75f40e3830158c06408086242adf6c7104c2b8a499d4bc86aba6ee"
+        },
+        {
+          "id": "R05",
+          "folder": "R05_HADES",
+          "group": "HADES",
+          "source_url": "https://www.supergiantgames.com/blog/hades-switch-retail-edition-now-available/",
+          "asset_source_url": "https://downloads.ctfassets.net/5owu3y35gz1g/zRnFz7KHSb464jGanAa85/1bafdc8ea876ee59b5d4b25fd7230388/Hades.zip#Olympians_Zeus_01.jpg",
+          "work": "Hades official press assets",
+          "artist_studio": "Supergiant Games",
+          "reference_focus": "角色立绘、主符号、限定色、剪影与高辨识",
+          "license_or_terms_note": "Supergiant Games 官方公开 press assets ZIP；使用条款以官方页面为准，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_zip_asset",
+          "source_local_name": "Olympians_Zeus_01.jpg",
+          "index": 7,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/orig_07.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/thumb_07.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1349,
+            1105
+          ],
+          "thumbnail_dimensions": [
+            1349,
+            1105
+          ],
+          "original_sha256": "e466aabd1d6d92019030afe45dc54557848b0a55460a5511afb23e6cb9fc3d9b"
+        },
+        {
+          "id": "R05",
+          "folder": "R05_HADES",
+          "group": "HADES",
+          "source_url": "https://www.supergiantgames.com/blog/hades-switch-retail-edition-now-available/",
+          "asset_source_url": "https://downloads.ctfassets.net/5owu3y35gz1g/zRnFz7KHSb464jGanAa85/1bafdc8ea876ee59b5d4b25fd7230388/Hades.zip#Wallpaper_Heroes.png",
+          "work": "Hades official press assets",
+          "artist_studio": "Supergiant Games",
+          "reference_focus": "角色立绘、主符号、限定色、剪影与高辨识",
+          "license_or_terms_note": "Supergiant Games 官方公开 press assets ZIP；使用条款以官方页面为准，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_zip_asset",
+          "source_local_name": "Wallpaper_Heroes.png",
+          "index": 8,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/orig_08.png",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R05_HADES/thumb_08.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "0e26133060e2c0988f82e241083f5fdaf27dc7eddbb0df897ed80c8e3404d044"
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "name": "Hi-Fi RUSH",
+      "folder": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/",
+      "target_collect": 10,
+      "downloaded_count": 10,
+      "blocked_count": 0,
+      "missing_dimensions": "覆盖 Hi-Fi RUSH 公开项目图与机械/设备线索；连接关节的专门拆解图仍可补。",
+      "suggested_supplement": "官方/作者公开的机械连接与设备设定页",
+      "canvas_key_images": 3,
+      "assets": [
+        {
+          "id": "R06",
+          "folder": "R06_HiFi_RUSH",
+          "group": "Hi-Fi RUSH",
+          "source_url": "https://keita_sakai.artstation.com/projects/rJPP8m",
+          "asset_source_url": "https://cdnb.artstation.com/p/assets/images/images/065/674/469/large/keita-sakai-a-initial-concept-sketch.jpg?1690945547",
+          "work": "Hi-Fi RUSH — public ArtStation illustration/project pages",
+          "artist_studio": "Keita Sakai / Misha Ignatov, public ArtStation profiles",
+          "reference_focus": "Chai、机器人、设备、机械连接、关节、外壳",
+          "license_or_terms_note": "公开 ArtStation 页面图像；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 1,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/orig_01.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/thumb_01.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            2716
+          ],
+          "thumbnail_dimensions": [
+            1131,
+            1600
+          ],
+          "original_sha256": "5d51b8f68b4266f8380dacd55f7e6770bc922597bc7c58a828f0da267708fc09"
+        },
+        {
+          "id": "R06",
+          "folder": "R06_HiFi_RUSH",
+          "group": "Hi-Fi RUSH",
+          "source_url": "https://keita_sakai.artstation.com/projects/rJPP8m",
+          "asset_source_url": "https://cdnb.artstation.com/p/assets/images/images/065/674/483/large/keita-sakai-c-serious-mode.jpg?1690945586",
+          "work": "Hi-Fi RUSH — public ArtStation illustration/project pages",
+          "artist_studio": "Keita Sakai / Misha Ignatov, public ArtStation profiles",
+          "reference_focus": "Chai、机器人、设备、机械连接、关节、外壳",
+          "license_or_terms_note": "公开 ArtStation 页面图像；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 2,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/orig_02.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/thumb_02.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "7151e893a10b158c88ccc4f1763510896ee3060be327547b8ed43ef4df617919"
+        },
+        {
+          "id": "R06",
+          "folder": "R06_HiFi_RUSH",
+          "group": "Hi-Fi RUSH",
+          "source_url": "https://keita_sakai.artstation.com/projects/rJPP8m",
+          "asset_source_url": "https://cdnb.artstation.com/p/assets/images/images/065/674/485/large/keita-sakai-d-st01-qarobo-finishi.jpg?1690945602",
+          "work": "Hi-Fi RUSH — public ArtStation illustration/project pages",
+          "artist_studio": "Keita Sakai / Misha Ignatov, public ArtStation profiles",
+          "reference_focus": "Chai、机器人、设备、机械连接、关节、外壳",
+          "license_or_terms_note": "公开 ArtStation 页面图像；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 3,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/orig_03.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/thumb_03.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "ada23449f2675e8aa162bd08386739cda879b6e2902fcf752db32977ac5de04d"
+        },
+        {
+          "id": "R06",
+          "folder": "R06_HiFi_RUSH",
+          "group": "Hi-Fi RUSH",
+          "source_url": "https://keita_sakai.artstation.com/projects/rJPP8m",
+          "asset_source_url": "https://cdnb.artstation.com/p/assets/images/images/065/674/505/large/keita-sakai-h-cool-director-poster.jpg?1690945661",
+          "work": "Hi-Fi RUSH — public ArtStation illustration/project pages",
+          "artist_studio": "Keita Sakai / Misha Ignatov, public ArtStation profiles",
+          "reference_focus": "Chai、机器人、设备、机械连接、关节、外壳",
+          "license_or_terms_note": "公开 ArtStation 页面图像；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 4,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/orig_04.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/thumb_04.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            2716
+          ],
+          "thumbnail_dimensions": [
+            1131,
+            1600
+          ],
+          "original_sha256": "6b8b836efa261165150ee845f34510a32ebfb90bf359ea1d3601ef5d0347fe9d"
+        },
+        {
+          "id": "R06",
+          "folder": "R06_HiFi_RUSH",
+          "group": "Hi-Fi RUSH",
+          "source_url": "https://keita_sakai.artstation.com/projects/rJPP8m",
+          "asset_source_url": "https://cdnb.artstation.com/p/assets/images/images/065/674/509/large/keita-sakai-i-hideout-wall.jpg?1690945675",
+          "work": "Hi-Fi RUSH — public ArtStation illustration/project pages",
+          "artist_studio": "Keita Sakai / Misha Ignatov, public ArtStation profiles",
+          "reference_focus": "Chai、机器人、设备、机械连接、关节、外壳",
+          "license_or_terms_note": "公开 ArtStation 页面图像；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 5,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/orig_05.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/thumb_05.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1920,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            900
+          ],
+          "original_sha256": "782bbaef8111a8add3f80e2e0608a705ce6f25b2798171906bbcf3ab4becd21e"
+        },
+        {
+          "id": "R06",
+          "folder": "R06_HiFi_RUSH",
+          "group": "Hi-Fi RUSH",
+          "source_url": "https://keita_sakai.artstation.com/projects/rJPP8m",
+          "asset_source_url": "https://cdnb.artstation.com/p/assets/covers/images/065/642/449/smaller_square/misha-ignatov-misha-ignatov-ignatov-armstrong-thumb.jpg?1690880400",
+          "work": "Hi-Fi RUSH — public ArtStation illustration/project pages",
+          "artist_studio": "Keita Sakai / Misha Ignatov, public ArtStation profiles",
+          "reference_focus": "Chai、机器人、设备、机械连接、关节、外壳",
+          "license_or_terms_note": "公开 ArtStation 页面图像；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 6,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/orig_06.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/thumb_06.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            400,
+            400
+          ],
+          "thumbnail_dimensions": [
+            400,
+            400
+          ],
+          "original_sha256": "78a3434144134a5d9a7d07cd99be3cdb40241dd4ea75296478a86f752259ce90"
+        },
+        {
+          "id": "R06",
+          "folder": "R06_HiFi_RUSH",
+          "group": "Hi-Fi RUSH",
+          "source_url": "https://keita_sakai.artstation.com/projects/rJPP8m",
+          "asset_source_url": "https://cdnb.artstation.com/p/assets/covers/images/065/643/703/smaller_square/misha-ignatov-misha-ignatov-ignatov-2production-entrancethumb.jpg?1690882923",
+          "work": "Hi-Fi RUSH — public ArtStation illustration/project pages",
+          "artist_studio": "Keita Sakai / Misha Ignatov, public ArtStation profiles",
+          "reference_focus": "Chai、机器人、设备、机械连接、关节、外壳",
+          "license_or_terms_note": "公开 ArtStation 页面图像；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 7,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/orig_07.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/thumb_07.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            400,
+            400
+          ],
+          "thumbnail_dimensions": [
+            400,
+            400
+          ],
+          "original_sha256": "cfa371ae8785220e7ba1ba58acfb2c257d70eae048f06518254733fc03897e8f"
+        },
+        {
+          "id": "R06",
+          "folder": "R06_HiFi_RUSH",
+          "group": "Hi-Fi RUSH",
+          "source_url": "https://keita_sakai.artstation.com/projects/rJPP8m",
+          "asset_source_url": "https://cdnb.artstation.com/p/assets/covers/images/065/643/851/smaller_square/misha-ignatov-misha-ignatov-ignatov-2-insidethumb.jpg?1690883240",
+          "work": "Hi-Fi RUSH — public ArtStation illustration/project pages",
+          "artist_studio": "Keita Sakai / Misha Ignatov, public ArtStation profiles",
+          "reference_focus": "Chai、机器人、设备、机械连接、关节、外壳",
+          "license_or_terms_note": "公开 ArtStation 页面图像；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 8,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/orig_08.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/thumb_08.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            400,
+            400
+          ],
+          "thumbnail_dimensions": [
+            400,
+            400
+          ],
+          "original_sha256": "ba253da962e67a494bae947d1f6a97f9b592ee8993e24bfde9041a4ca2ced05c"
+        },
+        {
+          "id": "R06",
+          "folder": "R06_HiFi_RUSH",
+          "group": "Hi-Fi RUSH",
+          "source_url": "https://keita_sakai.artstation.com/projects/rJPP8m",
+          "asset_source_url": "https://cdnb.artstation.com/p/assets/covers/images/065/645/343/smaller_square/misha-ignatov-misha-ignatov-ignatov-rekka-officethumb.jpg?1690885964",
+          "work": "Hi-Fi RUSH — public ArtStation illustration/project pages",
+          "artist_studio": "Keita Sakai / Misha Ignatov, public ArtStation profiles",
+          "reference_focus": "Chai、机器人、设备、机械连接、关节、外壳",
+          "license_or_terms_note": "公开 ArtStation 页面图像；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 9,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/orig_09.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/thumb_09.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            400,
+            400
+          ],
+          "thumbnail_dimensions": [
+            400,
+            400
+          ],
+          "original_sha256": "48a86807ce3ac0abee171d5f239086c404f767a78c5dd8bfb8974280b0d14970"
+        },
+        {
+          "id": "R06",
+          "folder": "R06_HiFi_RUSH",
+          "group": "Hi-Fi RUSH",
+          "source_url": "https://keita_sakai.artstation.com/projects/rJPP8m",
+          "asset_source_url": "https://cdnb.artstation.com/p/assets/covers/images/065/648/809/smaller_square/misha-ignatov-misha-ignatov-ignatov-3-rdthumb.jpg?1690892220",
+          "work": "Hi-Fi RUSH — public ArtStation illustration/project pages",
+          "artist_studio": "Keita Sakai / Misha Ignatov, public ArtStation profiles",
+          "reference_focus": "Chai、机器人、设备、机械连接、关节、外壳",
+          "license_or_terms_note": "公开 ArtStation 页面图像；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 10,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/orig_10.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R06_HiFi_RUSH/thumb_10.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            400,
+            400
+          ],
+          "thumbnail_dimensions": [
+            400,
+            400
+          ],
+          "original_sha256": "795a3114b3cbe0d8fbc9713ccc3894fc83cceb63b5ce036c1c82f73af7dcd88e"
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "name": "Jamie Hewlett / Gorillaz",
+      "folder": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/",
+      "target_collect": 6,
+      "downloaded_count": 6,
+      "blocked_count": 0,
+      "missing_dimensions": "覆盖官方 Gorillaz 公开视觉档案；站内素材以专辑/宣传视觉为主，坐姿和多人对照不足。",
+      "suggested_supplement": "Jamie Hewlett 公开作品集中的人物动作页",
+      "canvas_key_images": 3,
+      "assets": [
+        {
+          "id": "R07",
+          "folder": "R07_Gorillaz_Hewlett",
+          "group": "Jamie Hewlett / Gorillaz",
+          "source_url": "https://gorillaz.com/",
+          "asset_source_url": "http://gorillaz.com/wp-content/themes/gorillaz/assets/IMG/the-mountain-desktop.webp?v=1",
+          "work": "Gorillaz official visual archive / The Mountain and album art",
+          "artist_studio": "Jamie Hewlett / Gorillaz official site",
+          "reference_focus": "瘦长比例、斜肩、长肢、姿势性格、表情概括",
+          "license_or_terms_note": "官方站公开视觉素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 1,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/orig_01.webp",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/thumb_01.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            2000,
+            997
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            798
+          ],
+          "original_sha256": "dcadc0d568b3dddde30e820a626197ab20ec1c51c5be8b4c7ffba9749186189d"
+        },
+        {
+          "id": "R07",
+          "folder": "R07_Gorillaz_Hewlett",
+          "group": "Jamie Hewlett / Gorillaz",
+          "source_url": "https://gorillaz.com/",
+          "asset_source_url": "http://gorillaz.com/wp-content/themes/gorillaz/assets/IMG/the-mountain-large.webp?v=1",
+          "work": "Gorillaz official visual archive / The Mountain and album art",
+          "artist_studio": "Jamie Hewlett / Gorillaz official site",
+          "reference_focus": "瘦长比例、斜肩、长肢、姿势性格、表情概括",
+          "license_or_terms_note": "官方站公开视觉素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 2,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/orig_02.webp",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/thumb_02.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            3000,
+            1496
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            798
+          ],
+          "original_sha256": "d9710482020cede2bacf9d7e64a29e31d105b7bdb28c2be4a9053c95b919092b"
+        },
+        {
+          "id": "R07",
+          "folder": "R07_Gorillaz_Hewlett",
+          "group": "Jamie Hewlett / Gorillaz",
+          "source_url": "https://gorillaz.com/",
+          "asset_source_url": "http://gorillaz.com/wp-content/themes/gorillaz/assets/IMG/the-mountain-mobile.webp?v=1",
+          "work": "Gorillaz official visual archive / The Mountain and album art",
+          "artist_studio": "Jamie Hewlett / Gorillaz official site",
+          "reference_focus": "瘦长比例、斜肩、长肢、姿势性格、表情概括",
+          "license_or_terms_note": "官方站公开视觉素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 3,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/orig_03.webp",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/thumb_03.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            800,
+            1496
+          ],
+          "thumbnail_dimensions": [
+            800,
+            1496
+          ],
+          "original_sha256": "d57c434be7371e7bf9fa8be955519a06b18196912dc4a61593c6979d7b2f2f76"
+        },
+        {
+          "id": "R07",
+          "folder": "R07_Gorillaz_Hewlett",
+          "group": "Jamie Hewlett / Gorillaz",
+          "source_url": "https://gorillaz.com/",
+          "asset_source_url": "http://gorillaz.com/wp-content/uploads/2025/07/The-Fall.jpg",
+          "work": "Gorillaz official visual archive / The Mountain and album art",
+          "artist_studio": "Jamie Hewlett / Gorillaz official site",
+          "reference_focus": "瘦长比例、斜肩、长肢、姿势性格、表情概括",
+          "license_or_terms_note": "官方站公开视觉素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 4,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/orig_04.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/thumb_04.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1000,
+            1000
+          ],
+          "thumbnail_dimensions": [
+            1000,
+            1000
+          ],
+          "original_sha256": "7fe54dd25be696729122891e768a71ab6ce799eb12561a88c90261e5e9bd948f"
+        },
+        {
+          "id": "R07",
+          "folder": "R07_Gorillaz_Hewlett",
+          "group": "Jamie Hewlett / Gorillaz",
+          "source_url": "https://gorillaz.com/",
+          "asset_source_url": "http://gorillaz.com/wp-content/uploads/2025/07/Demon-Days.jpg",
+          "work": "Gorillaz official visual archive / The Mountain and album art",
+          "artist_studio": "Jamie Hewlett / Gorillaz official site",
+          "reference_focus": "瘦长比例、斜肩、长肢、姿势性格、表情概括",
+          "license_or_terms_note": "官方站公开视觉素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 5,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/orig_05.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/thumb_05.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1000,
+            1000
+          ],
+          "thumbnail_dimensions": [
+            1000,
+            1000
+          ],
+          "original_sha256": "a6501bd1078cf2e4ae89f9d6b78696a6b619cdcc3216a3d2f2876bc5a5163ddb"
+        },
+        {
+          "id": "R07",
+          "folder": "R07_Gorillaz_Hewlett",
+          "group": "Jamie Hewlett / Gorillaz",
+          "source_url": "https://gorillaz.com/",
+          "asset_source_url": "http://gorillaz.com/wp-content/uploads/2025/07/Gorillaz.jpg",
+          "work": "Gorillaz official visual archive / The Mountain and album art",
+          "artist_studio": "Jamie Hewlett / Gorillaz official site",
+          "reference_focus": "瘦长比例、斜肩、长肢、姿势性格、表情概括",
+          "license_or_terms_note": "官方站公开视觉素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 6,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/orig_06.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R07_Gorillaz_Hewlett/thumb_06.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1000,
+            1000
+          ],
+          "thumbnail_dimensions": [
+            1000,
+            1000
+          ],
+          "original_sha256": "cc04209fe225f33db465bb3af994fbadbda7b3bfa590e2696e5de9fa35d93c16"
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "name": "Mœbius",
+      "folder": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/",
+      "target_collect": 6,
+      "downloaded_count": 6,
+      "blocked_count": 0,
+      "missing_dimensions": "覆盖 Mœbius 官方 collections 的人物、器物和线稿方向；交通/机械连续设计仍可补。",
+      "suggested_supplement": "Mœbius 官方 collections 的更多交通/器物页",
+      "canvas_key_images": 3,
+      "assets": [
+        {
+          "id": "R08",
+          "folder": "R08_Moebius",
+          "group": "Mœbius",
+          "source_url": "https://www.moebius.fr/Les-Collections.html",
+          "asset_source_url": "https://www.moebius.fr/uploads/1556736783280-arzak-arpen-05.jpg",
+          "work": "Mœbius official collections / Jean Giraud public archive",
+          "artist_studio": "Jean Giraud / Mœbius Production",
+          "reference_focus": "人物+器物、服装、陌生交通/机械、轻线条、线稿",
+          "license_or_terms_note": "作者/制作方官网公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 1,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/orig_01.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/thumb_01.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1200,
+            848
+          ],
+          "thumbnail_dimensions": [
+            1200,
+            848
+          ],
+          "original_sha256": "0cf69183aed38946dde5350b2378843a67e5afbc4b67d6d09a49f5a12d9a16ff"
+        },
+        {
+          "id": "R08",
+          "folder": "R08_Moebius",
+          "group": "Mœbius",
+          "source_url": "https://www.moebius.fr/Les-Collections.html",
+          "asset_source_url": "https://www.moebius.fr/uploads/1556733344662-056-Edena-Sketchbook-036-bis.jpg",
+          "work": "Mœbius official collections / Jean Giraud public archive",
+          "artist_studio": "Jean Giraud / Mœbius Production",
+          "reference_focus": "人物+器物、服装、陌生交通/机械、轻线条、线稿",
+          "license_or_terms_note": "作者/制作方官网公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 2,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/orig_02.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/thumb_02.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1200,
+            584
+          ],
+          "thumbnail_dimensions": [
+            1200,
+            584
+          ],
+          "original_sha256": "46ed12ae9cf883ccfca0aea129e9e8502acfb55416dcd3bf11ec62f90542f9d4"
+        },
+        {
+          "id": "R08",
+          "folder": "R08_Moebius",
+          "group": "Mœbius",
+          "source_url": "https://www.moebius.fr/Les-Collections.html",
+          "asset_source_url": "https://www.moebius.fr/uploads/1557173039257-5-elements.jpg",
+          "work": "Mœbius official collections / Jean Giraud public archive",
+          "artist_studio": "Jean Giraud / Mœbius Production",
+          "reference_focus": "人物+器物、服装、陌生交通/机械、轻线条、线稿",
+          "license_or_terms_note": "作者/制作方官网公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 3,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/orig_03.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/thumb_03.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1200,
+            898
+          ],
+          "thumbnail_dimensions": [
+            1200,
+            898
+          ],
+          "original_sha256": "0cadd5fd8b89f209702a627115b49fa12476d1fa27b93137e784154da518fc6d"
+        },
+        {
+          "id": "R08",
+          "folder": "R08_Moebius",
+          "group": "Mœbius",
+          "source_url": "https://www.moebius.fr/Les-Collections.html",
+          "asset_source_url": "https://www.moebius.fr/uploads/1557175092898-101-T6a.jpg",
+          "work": "Mœbius official collections / Jean Giraud public archive",
+          "artist_studio": "Jean Giraud / Mœbius Production",
+          "reference_focus": "人物+器物、服装、陌生交通/机械、轻线条、线稿",
+          "license_or_terms_note": "作者/制作方官网公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 4,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/orig_04.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/thumb_04.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1200,
+            558
+          ],
+          "thumbnail_dimensions": [
+            1200,
+            558
+          ],
+          "original_sha256": "fa10bcbeb22df7b59453c5162663203997e6a3c334feda645ef00cf5c39c2014"
+        },
+        {
+          "id": "R08",
+          "folder": "R08_Moebius",
+          "group": "Mœbius",
+          "source_url": "https://www.moebius.fr/Les-Collections.html",
+          "asset_source_url": "https://www.moebius.fr/uploads/1556748094502-Profil-Carnet.jpg",
+          "work": "Mœbius official collections / Jean Giraud public archive",
+          "artist_studio": "Jean Giraud / Mœbius Production",
+          "reference_focus": "人物+器物、服装、陌生交通/机械、轻线条、线稿",
+          "license_or_terms_note": "作者/制作方官网公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 5,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/orig_05.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/thumb_05.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            632,
+            876
+          ],
+          "thumbnail_dimensions": [
+            632,
+            876
+          ],
+          "original_sha256": "0fa0a3788ab9d503a6902c5e361fcfc6fc23510560857610cbb6561833f36221"
+        },
+        {
+          "id": "R08",
+          "folder": "R08_Moebius",
+          "group": "Mœbius",
+          "source_url": "https://www.moebius.fr/Les-Collections.html",
+          "asset_source_url": "https://www.moebius.fr/uploads/1556746384303-Ragazza-Carbonara.jpg",
+          "work": "Mœbius official collections / Jean Giraud public archive",
+          "artist_studio": "Jean Giraud / Mœbius Production",
+          "reference_focus": "人物+器物、服装、陌生交通/机械、轻线条、线稿",
+          "license_or_terms_note": "作者/制作方官网公开展示；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 6,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/orig_06.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R08_Moebius/thumb_06.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1200,
+            902
+          ],
+          "thumbnail_dimensions": [
+            1200,
+            902
+          ],
+          "original_sha256": "0c2b738e2d0e6ce203a1318e1884b9fbfb195bcdab013d3773167c9a86fe9acb"
+        }
+      ]
+    },
+    {
+      "id": "R09",
+      "name": "Monster Hunter",
+      "folder": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/",
+      "target_collect": 8,
+      "downloaded_count": 8,
+      "blocked_count": 0,
+      "missing_dimensions": "覆盖 CAPCOM 官方 Monster Hunter 项目页；翼根/骨架的专门设定拆解不足。",
+      "suggested_supplement": "CAPCOM 官方公开开发者/设定文章",
+      "canvas_key_images": 3,
+      "assets": [
+        {
+          "id": "R09",
+          "folder": "R09_MonsterHunter",
+          "group": "Monster Hunter",
+          "source_url": "https://www.capcom.co.jp/recruit/project/mhrise.html",
+          "asset_source_url": "https://www.capcom.co.jp/recruit/images-rec/project/monhan-lise/img-01.jpg",
+          "work": "Monster Hunter Rise / World public project pages",
+          "artist_studio": "CAPCOM",
+          "reference_focus": "飞行怪、四足/双足、翼根、尾巴、攻击姿态、生态关系",
+          "license_or_terms_note": "CAPCOM 官方招聘/项目页面公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 1,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/orig_01.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/thumb_01.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1440,
+            450
+          ],
+          "thumbnail_dimensions": [
+            1440,
+            450
+          ],
+          "original_sha256": "c5dfa70d16eb23b473c44162b63e4b9c59392b05a147bbf76b5a80e68e276e04"
+        },
+        {
+          "id": "R09",
+          "folder": "R09_MonsterHunter",
+          "group": "Monster Hunter",
+          "source_url": "https://www.capcom.co.jp/recruit/project/mhrise.html",
+          "asset_source_url": "https://www.capcom.co.jp/recruit/images-rec/project/monhan-lise/img-02.jpg",
+          "work": "Monster Hunter Rise / World public project pages",
+          "artist_studio": "CAPCOM",
+          "reference_focus": "飞行怪、四足/双足、翼根、尾巴、攻击姿态、生态关系",
+          "license_or_terms_note": "CAPCOM 官方招聘/项目页面公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 2,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/orig_02.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/thumb_02.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1902,
+            1080
+          ],
+          "thumbnail_dimensions": [
+            1600,
+            909
+          ],
+          "original_sha256": "98b3cdb86cb1e78d1217b26a8cbba8598095854a51310fc04f06018785d0a6a7"
+        },
+        {
+          "id": "R09",
+          "folder": "R09_MonsterHunter",
+          "group": "Monster Hunter",
+          "source_url": "https://www.capcom.co.jp/recruit/project/mhrise.html",
+          "asset_source_url": "https://www.capcom.co.jp/recruit/images-rec/project/monhan-lise/img-03.jpg",
+          "work": "Monster Hunter Rise / World public project pages",
+          "artist_studio": "CAPCOM",
+          "reference_focus": "飞行怪、四足/双足、翼根、尾巴、攻击姿态、生态关系",
+          "license_or_terms_note": "CAPCOM 官方招聘/项目页面公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 3,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/orig_03.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/thumb_03.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1440,
+            600
+          ],
+          "thumbnail_dimensions": [
+            1440,
+            600
+          ],
+          "original_sha256": "bddf44b6a74adff25ceb1057af2b13a7bdd72d99dbdf3ef9001b214d05d7d02e"
+        },
+        {
+          "id": "R09",
+          "folder": "R09_MonsterHunter",
+          "group": "Monster Hunter",
+          "source_url": "https://www.capcom.co.jp/recruit/project/mhrise.html",
+          "asset_source_url": "https://www.capcom.co.jp/recruit/images-rec/project/monhan-lise/img-04.jpg",
+          "work": "Monster Hunter Rise / World public project pages",
+          "artist_studio": "CAPCOM",
+          "reference_focus": "飞行怪、四足/双足、翼根、尾巴、攻击姿态、生态关系",
+          "license_or_terms_note": "CAPCOM 官方招聘/项目页面公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 4,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/orig_04.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/thumb_04.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1440,
+            900
+          ],
+          "thumbnail_dimensions": [
+            1440,
+            900
+          ],
+          "original_sha256": "c58d6581514adf868b3a5bffa5de793807764b19336f2240a98a7542e4695cf5"
+        },
+        {
+          "id": "R09",
+          "folder": "R09_MonsterHunter",
+          "group": "Monster Hunter",
+          "source_url": "https://www.capcom.co.jp/recruit/project/mhrise.html",
+          "asset_source_url": "https://www.capcom.co.jp/recruit/images-rec/project/monhan-world/img01.jpg",
+          "work": "Monster Hunter Rise / World public project pages",
+          "artist_studio": "CAPCOM",
+          "reference_focus": "飞行怪、四足/双足、翼根、尾巴、攻击姿态、生态关系",
+          "license_or_terms_note": "CAPCOM 官方招聘/项目页面公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 5,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/orig_05.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/thumb_05.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            661,
+            370
+          ],
+          "thumbnail_dimensions": [
+            661,
+            370
+          ],
+          "original_sha256": "f74cc087a029504742189b72ba903934e639983935646452ec121fca0ae18a3d"
+        },
+        {
+          "id": "R09",
+          "folder": "R09_MonsterHunter",
+          "group": "Monster Hunter",
+          "source_url": "https://www.capcom.co.jp/recruit/project/mhrise.html",
+          "asset_source_url": "https://www.capcom.co.jp/recruit/images-rec/project/monhan-world/img02.jpg",
+          "work": "Monster Hunter Rise / World public project pages",
+          "artist_studio": "CAPCOM",
+          "reference_focus": "飞行怪、四足/双足、翼根、尾巴、攻击姿态、生态关系",
+          "license_or_terms_note": "CAPCOM 官方招聘/项目页面公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 6,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/orig_06.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/thumb_06.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            661,
+            370
+          ],
+          "thumbnail_dimensions": [
+            661,
+            370
+          ],
+          "original_sha256": "54480d34d4ea8cd0e259d0e26b56053d728dcea5eabb58d9d84c6583b7bf6e90"
+        },
+        {
+          "id": "R09",
+          "folder": "R09_MonsterHunter",
+          "group": "Monster Hunter",
+          "source_url": "https://www.capcom.co.jp/recruit/project/mhrise.html",
+          "asset_source_url": "https://www.capcom.co.jp/recruit/images-rec/project/monhan-world/img03.jpg",
+          "work": "Monster Hunter Rise / World public project pages",
+          "artist_studio": "CAPCOM",
+          "reference_focus": "飞行怪、四足/双足、翼根、尾巴、攻击姿态、生态关系",
+          "license_or_terms_note": "CAPCOM 官方招聘/项目页面公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 7,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/orig_07.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/thumb_07.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1317,
+            809
+          ],
+          "thumbnail_dimensions": [
+            1317,
+            809
+          ],
+          "original_sha256": "252dd4f9c1f133a537adb9516efa8dbb05a91374aedf31d5a2447455a08f9d86"
+        },
+        {
+          "id": "R09",
+          "folder": "R09_MonsterHunter",
+          "group": "Monster Hunter",
+          "source_url": "https://www.capcom.co.jp/recruit/project/mhrise.html",
+          "asset_source_url": "https://www.capcom.co.jp/recruit/images-rec/project/monhan-world/img04.jpg",
+          "work": "Monster Hunter Rise / World public project pages",
+          "artist_studio": "CAPCOM",
+          "reference_focus": "飞行怪、四足/双足、翼根、尾巴、攻击姿态、生态关系",
+          "license_or_terms_note": "CAPCOM 官方招聘/项目页面公开素材；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 8,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/orig_08.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R09_MonsterHunter/thumb_08.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            1317,
+            711
+          ],
+          "thumbnail_dimensions": [
+            1317,
+            711
+          ],
+          "original_sha256": "a85210a418d62a4a50fac2fd8929ae66f96fbdf2d4845a0132e9230afacc8a42"
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "name": "League of Legends｜Clarity",
+      "folder": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/",
+      "target_collect": 6,
+      "downloaded_count": 6,
+      "blocked_count": 0,
+      "missing_dimensions": "6 张官方角色 roster 图并生成 100px 对照；动作/动画识别证据需要与 Clarity 文章继续配对。",
+      "suggested_supplement": "Riot 官方 Clarity 文中的更多 silhouette/可读性示例",
+      "canvas_key_images": 3,
+      "assets": [
+        {
+          "id": "R10",
+          "folder": "R10_LoL_Clarity",
+          "group": "League of Legends｜Clarity",
+          "source_url": "https://www.leagueoflegends.com/en-us/champions/",
+          "asset_source_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/55e7e901b1f69d72804665cfbeb1f4f59c8fa877-496x560.jpg?accountingTag=LoL",
+          "work": "League of Legends champion roster / Clarity article context",
+          "artist_studio": "Riot Games",
+          "reference_focus": "角色缩小识别、主轮廓特征、全身缩略图、动作可读性",
+          "license_or_terms_note": "Riot Games 官方站公开角色图；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 1,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/orig_01.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/thumb_01.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            496,
+            560
+          ],
+          "thumbnail_dimensions": [
+            496,
+            560
+          ],
+          "original_sha256": "b15c381c0a83f17f40a90bdacd3bdc9b8354e87c92f9a830e766f1552ab3e511"
+        },
+        {
+          "id": "R10",
+          "folder": "R10_LoL_Clarity",
+          "group": "League of Legends｜Clarity",
+          "source_url": "https://www.leagueoflegends.com/en-us/champions/",
+          "asset_source_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/abbd173df157f943496abb0638add119f753e3b2-496x560.jpg?accountingTag=LoL",
+          "work": "League of Legends champion roster / Clarity article context",
+          "artist_studio": "Riot Games",
+          "reference_focus": "角色缩小识别、主轮廓特征、全身缩略图、动作可读性",
+          "license_or_terms_note": "Riot Games 官方站公开角色图；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 2,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/orig_02.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/thumb_02.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            496,
+            560
+          ],
+          "thumbnail_dimensions": [
+            496,
+            560
+          ],
+          "original_sha256": "77f0b52cf02b745ac7b2f33d4830fdbe1be8c0c060b9b5c2293a697935502fe6"
+        },
+        {
+          "id": "R10",
+          "folder": "R10_LoL_Clarity",
+          "group": "League of Legends｜Clarity",
+          "source_url": "https://www.leagueoflegends.com/en-us/champions/",
+          "asset_source_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9e5ea58123ac5a699700eec49f8412af11e563a0-496x560.jpg?accountingTag=LoL",
+          "work": "League of Legends champion roster / Clarity article context",
+          "artist_studio": "Riot Games",
+          "reference_focus": "角色缩小识别、主轮廓特征、全身缩略图、动作可读性",
+          "license_or_terms_note": "Riot Games 官方站公开角色图；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 3,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/orig_03.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/thumb_03.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            496,
+            560
+          ],
+          "thumbnail_dimensions": [
+            496,
+            560
+          ],
+          "original_sha256": "70418398dfd3fbadc096613c56c95d09465ba11eac30ff5372998e50b899000c"
+        },
+        {
+          "id": "R10",
+          "folder": "R10_LoL_Clarity",
+          "group": "League of Legends｜Clarity",
+          "source_url": "https://www.leagueoflegends.com/en-us/champions/",
+          "asset_source_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/da8cefee5b85bca51360ccc1635ef5b0f6967767-496x560.jpg?accountingTag=LoL",
+          "work": "League of Legends champion roster / Clarity article context",
+          "artist_studio": "Riot Games",
+          "reference_focus": "角色缩小识别、主轮廓特征、全身缩略图、动作可读性",
+          "license_or_terms_note": "Riot Games 官方站公开角色图；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 4,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/orig_04.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/thumb_04.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            496,
+            560
+          ],
+          "thumbnail_dimensions": [
+            496,
+            560
+          ],
+          "original_sha256": "d12ac9fcd3da14ccc5667a6982fe1dc96850cc3f252c264a040113507bda0e84"
+        },
+        {
+          "id": "R10",
+          "folder": "R10_LoL_Clarity",
+          "group": "League of Legends｜Clarity",
+          "source_url": "https://www.leagueoflegends.com/en-us/champions/",
+          "asset_source_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/092febba8905cff35940d036fd20b7e3ad4f428f-496x560.jpg?accountingTag=LoL",
+          "work": "League of Legends champion roster / Clarity article context",
+          "artist_studio": "Riot Games",
+          "reference_focus": "角色缩小识别、主轮廓特征、全身缩略图、动作可读性",
+          "license_or_terms_note": "Riot Games 官方站公开角色图；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 5,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/orig_05.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/thumb_05.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            496,
+            560
+          ],
+          "thumbnail_dimensions": [
+            496,
+            560
+          ],
+          "original_sha256": "33105da66b81a0e613137a60a8b0414172b91b42213b60dcbf98bf19e1a7567c"
+        },
+        {
+          "id": "R10",
+          "folder": "R10_LoL_Clarity",
+          "group": "League of Legends｜Clarity",
+          "source_url": "https://www.leagueoflegends.com/en-us/champions/",
+          "asset_source_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b9081057a6282c7c7f074dc9cec094b8d51df9bf-496x560.jpg?accountingTag=LoL",
+          "work": "League of Legends champion roster / Clarity article context",
+          "artist_studio": "Riot Games",
+          "reference_focus": "角色缩小识别、主轮廓特征、全身缩略图、动作可读性",
+          "license_or_terms_note": "Riot Games 官方站公开角色图；未假定为 CC，研究归档用途。",
+          "download_date": "2026-09-17",
+          "source_type": "public_remote_asset",
+          "index": 6,
+          "original_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/orig_06.jpg",
+          "thumbnail_file": "黎黎隆项目/角色风格_R1-R3/01_REFERENCE/R10_LoL_Clarity/thumb_06.jpg",
+          "download_status": "downloaded",
+          "original_exists": true,
+          "thumbnail_exists": true,
+          "original_dimensions": [
+            496,
+            560
+          ],
+          "thumbnail_dimensions": [
+            496,
+            560
+          ],
+          "original_sha256": "3ce69e3de48b046d7272eafc995335c5f67f2d5f330e5de8745fcc4e77a16043"
+        }
+      ]
+    }
+  ],
+  "asset_count": 82
+}

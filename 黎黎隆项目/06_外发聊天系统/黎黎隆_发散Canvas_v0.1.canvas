@@ -1,0 +1,40 @@
+{
+	"version":"0.2",
+	"nodes":[
+		{"id":"core","type":"text","text":"# 黎黎隆 × 自由意志\n**总核：三色力量体系**\n\n粉 `#855D8F` 诡异魔法·不争霸\n青 `#69D4CE` 生物能量·接口社会\n红 `#913840` 自由意志·出走者\n黑 `#142A34` 雾海骨·世界底\n白 `#CDE7E6` 雾·中立·未觉醒\n\n> 黑金爆发 → 青文明一夜爆发\n> 青走到深处 → 返身断点\n> 红色者出海 = 夺路 × 回返","x":-220,"y":-130,"width":440,"height":280,"color":"#913840"},
+		{"id":"hong","type":"text","text":"## 红｜出走者\n- O4 自由船队（离船权）\n- O3 审判之庭（通告网）\n- O2 佛教（苦修·绝植入）\n- 夺路 × 回返","x":760,"y":-320,"width":340,"height":220,"color":"#913840"},
+		{"id":"hong-roles","type":"text","text":"**红桶角色**\nZY-02 航迹手 ✅\nZY-04 苦修僧人 ✅\n澈 / 黎黎隆 / 小和尚 / 冒险者\nS09 S11 S12 S06 + 60池9人","x":1180,"y":-340,"width":320,"height":180},
+		{"id":"hong-conflict","type":"text","text":"**冲突原型场：遗骨之地 R2**\n往骨堆深处走 = 夺路\n跟着标记退出去 = 回返\n大航海只是战场之一","x":1180,"y":-120,"width":320,"height":160,"color":"#913840"},
+		{"id":"fen","type":"text","text":"## 粉｜古老派\n- 诡异魔法·结晶·天空之骨\n- 不争霸、只交易\n- 菌林 / 活膜 / 异种共生\n- 被自己的魔法克制","x":-1160,"y":-320,"width":340,"height":220,"color":"#855D8F"},
+		{"id":"fen-roles","type":"text","text":"**粉桶角色**\n逃票魔法学徒\n奇美拉\n潮膜采集员\n60池10人（生态共生）","x":-1580,"y":-340,"width":320,"height":180},
+		{"id":"qing","type":"text","text":"## 青｜接口社会\n- 黑金爆发 → 一夜爆发\n- 两枝：赛博资本 ∥ 身体文明\n- 植入=常态，分三层\n- 钢铁教派 vs 佛教=主矛盾","x":-180,"y":420,"width":360,"height":220,"color":"#0F6E56"},
+		{"id":"qing-growth","type":"text","text":"**生长链（G链）**\nG0 黑金引爆\nG1 身体文明（青长熟）\nG2 返身断点（代价）\nG3 夺路×回路（红两面）\nG4-G8 枝干 🔶","x":-180,"y":700,"width":360,"height":200,"color":"#0F6E56"},
+		{"id":"qing-roles","type":"text","text":"**青桶角色**\n大叔 / 裂缝听者\n旧轨引路员 / 壳缝检修员\n60池22人（维护门站记录）\nS17 S10 S19 S04 S08 S16","x":260,"y":700,"width":320,"height":200},
+		{"id":"heibai","type":"text","text":"## 黑白｜中性位\n黑 `#142A34`：世界底·骨·暗面\n白 `#CDE7E6`：雾·中立·未觉醒\n- 洛维恩（黑）\n- 夜渡摆渡员 / NPC（白）\n- 非三能量角色兜底桶","x":760,"y":300,"width":340,"height":220,"color":"#444441"},
+		{"id":"waifa","type":"text","text":"## 📤 外发聊天系统\n四张卡，任何框直接贴：\n**A** 世界观底盘聊\n**B** 角色五桶聊\n**C** 故事发散聊\n**D** 场景出图聊\n\n粘贴 → 聊 → 【归位标记】→ 回流 vault","x":-1160,"y":420,"width":340,"height":240,"color":"#1D9E75"},
+		{"id":"waifa-guiwei","type":"text","text":"**归位卡**\n粘贴任意 GPT 输出 →\n按【标记】归位：\n【世界观更新】【角色·X桶】\n【故事·前提】【场景·出图】\n\n✅ 已归位 → 文件路径","x":-1580,"y":440,"width":320,"height":200,"color":"#1D9E75"},
+		{"id":"guocheng","type":"text","text":"**工作循环**\n① 复制卡片 → 贴进任何框\n② 聊 → 产出带【归位标记】\n③ 粘回 收件框\n④ 我归位 + Canvas 加节点","x":760,"y":-40,"width":340,"height":180,"color":"#1D9E75"},
+		{"id":"3915e7a8af2a401c","type":"file","file":"黎黎隆项目/04_场景/01_五色视觉系统/R5_锚港/SC-02_自由锚港_四宫格探索_v2_暗红主导.png","x":1600,"y":-320,"width":300,"height":200,"color":"#913840"},
+		{"id":"c6db6005a57d494f","type":"file","file":"黎黎隆项目/04_场景/01_五色视觉系统/R5_锚港/SC-02_自由锚港_四宫格探索_v3_暗红灰紫过渡.png","x":1930,"y":-320,"width":300,"height":200,"color":"#855D8F"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"core","toNode":"hong","color":"#913840","label":"红","fromSide":"right","toSide":"left"},
+		{"id":"e2","fromNode":"core","toNode":"fen","color":"#855D8F","label":"粉","fromSide":"left","toSide":"right"},
+		{"id":"e3","fromNode":"core","toNode":"qing","color":"#0F6E56","label":"青","fromSide":"bottom","toSide":"top"},
+		{"id":"e4","fromNode":"core","toNode":"heibai","color":"#444441","label":"黑白","fromSide":"right","toSide":"left"},
+		{"id":"e5","fromNode":"core","toNode":"waifa","color":"#1D9E75","label":"外发","fromSide":"left","toSide":"right"},
+		{"id":"e6","fromNode":"hong","toNode":"hong-roles","fromSide":"right","toSide":"left"},
+		{"id":"e7","fromNode":"hong","toNode":"hong-conflict","fromSide":"right","toSide":"left"},
+		{"id":"e8","fromNode":"fen","toNode":"fen-roles","fromSide":"left","toSide":"right"},
+		{"id":"e9","fromNode":"qing","toNode":"qing-growth","fromSide":"bottom","toSide":"top"},
+		{"id":"e10","fromNode":"qing","toNode":"qing-roles","fromSide":"bottom","toSide":"top"},
+		{"id":"e11","fromNode":"waifa","toNode":"waifa-guiwei","fromSide":"left","toSide":"right"},
+		{"id":"e12","fromNode":"hong","toNode":"guocheng","label":"聊完归位","fromSide":"bottom","toSide":"top"},
+		{"id":"dc443b94c95046fb","fromNode":"hong","toNode":"3915e7a8af2a401c","color":"#913840","label":"场景扩展候选｜暗红主导","fromSide":"right","toSide":"left"},
+		{"id":"615d3f140c194b45","fromNode":"hong","toNode":"c6db6005a57d494f","color":"#855D8F","label":"场景扩展候选｜红-灰紫过渡","fromSide":"right","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

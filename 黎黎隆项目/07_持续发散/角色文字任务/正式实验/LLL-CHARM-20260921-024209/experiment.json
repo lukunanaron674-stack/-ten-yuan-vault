@@ -1,0 +1,182 @@
+﻿{
+    "experiment_id":  "LLL-CHARM-20260921-024209",
+    "source_snapshot":  {
+                            "repository":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault",
+                            "remote":  "https://github.com/lukunanaron674-stack/-ten-yuan-vault.git",
+                            "head":  "1f5017865fe4ee8673bc543e990848dfda557fb4",
+                            "origin_main":  "9be25beb5fbad290106e787a7bc301c2b6b7439d",
+                            "checkout_differs_from_origin_main":  true,
+                            "scoped_worktree_status":  [
+                                                           "M \"\\351\\273\\216\\351\\273\\216\\351\\232\\206\\351\\241\\271\\347\\233\\256/04_\\345\\234\\272\\346\\231\\257/D03_I02\\346\\227\\247\\346\\236\\242\\347\\272\\275\\345\\206\\222\\351\\231\\251\\350\\200\\205\\345\\267\\245\\344\\274\\232_\\347\\273\\230\\345\\210\\266\\345\\207\\206\\345\\244\\207.canvas\"",
+                                                           " M \"\\351\\273\\216\\351\\273\\216\\351\\232\\206\\351\\241\\271\\347\\233\\256/04_\\345\\234\\272\\346\\231\\257/\\351\\273\\216\\351\\273\\216\\351\\232\\206_\\344\\272\\224\\350\\211\\262\\350\\247\\206\\350\\247\\211\\347\\263\\273\\347\\273\\237_\\346\\200\\273\\346\\216\\247_V1.0.canvas\""
+                                                       ],
+                            "read_policy":  "read current checkout; no fetch/pull/commit/push; preserve local edits"
+                        },
+    "character":  {
+                      "id":  "unknown",
+                      "name":  "unknown",
+                      "card_path":  "",
+                      "role_image_path":  null,
+                      "role_image_status":  "missing",
+                      "confirmed_appearance":  [
+                                                   "当前角色身份以角色卡为准：unknown 原稿已确认的头部、脸型与已见剪影只按卡片使用"
+                                               ],
+                      "pending_appearance":  [
+                                                 "性别、准确年龄、全身比例、服装、道具及未归档图片均待定；本轮不新增正式细节"
+                                             ],
+                      "ten_yuan":  "角色卡中的候选十元仅作待验证输入，不作结论",
+                      "ten_yuan_status":  "candidate"
+                  },
+    "scene":  {
+                  "card_or_basis":  "现有场景资产作环境参考；不作为角色定稿",
+                  "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                  "scene_image_status":  "candidate",
+                  "basis":  "场景资产只承担环境参考，不补写角色正式造型"
+              },
+    "relation_hypothesis":  {
+                                "relation_type":  "待判定",
+                                "source_endpoint":  "unknown 的可观察行动",
+                                "target_endpoint":  "城市魔法服务中一条具体路径是否仍可被主角使用",
+                                "direction":  "unknown → 被改变变量",
+                                "force_from":  "unknown",
+                                "receiver":  "城市魔法服务中一条具体路径是否仍可被主角使用",
+                                "initial_state":  "标准入口拒绝当前需求",
+                                "mechanism":  "主角沿未覆盖的侧向路径重新组织动作",
+                                "changed_variable":  "城市魔法服务中一条具体路径是否仍可被主角使用",
+                                "end_state":  "需求被暂时接通，但规则边界与代价仍待验证",
+                                "residue":  "旧路径与新路径同时可见；关系边仍待视频与作者复核",
+                                "next_affordance":  "下一轮只改变主角回应方式或空间尺度",
+                                "charm_hypothesis":  "通过观察、试探、记住失败并临时变招，让机灵与出其不意落到行动上。",
+                                "confidence":  "candidate"
+                            },
+    "story_candidates":  {
+                             "A":  "主角发现标准服务入口没有覆盖一条实际需求；他先观察失败反馈，再用一次可见的侧向动作改变进入路径。",
+                             "B":  "固定流程要求主角排队等待；主角主动让出正面位置，从边缘寻找不改变他人安全的替代路径。",
+                             "C":  "一个活体伙伴或现场对象阻止主角继续；主角不强行压过它，而改变目标顺序，让新线索先进入行动。",
+                             "selected":  "主角发现标准服务入口没有覆盖一条实际需求；他先观察失败反馈，再用一次可见的侧向动作改变进入路径。",
+                             "reason":  "它通过 主角在标准入口前停住，观察一次失败反馈，绕到侧面触碰另一处已存在的接口；入口亮起一小段，主角立即停手确认结果。 这一可观察行为改变接收方状态，让主角魅力落在行动而不是台词或表情。"
+                         },
+    "shots":  [
+                  {
+                      "id":  "01",
+                      "role_image_path":  null,
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 城市魔法服务中一条具体路径是否仍可被主角使用",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "主角在标准入口前停住，观察一次失败反馈，绕到侧面触碰另一处已存在的接口；入口亮起一小段，主角立即停手确认结果。",
+                      "start_change_end":  "起始：标准入口拒绝当前需求；变化：主角在标准入口前停住，观察一次失败反馈，绕到侧面触碰另一处已存在的接口；入口亮起一小段，主角立即停手确认结果。；结束：需求被暂时接通，但规则边界与代价仍待验证",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. unknown is the sole protagonist. Confirmed appearance: 当前角色身份以角色卡为准：unknown 原稿已确认的头部、脸型与已见剪影只按卡片使用. Do not specify any pending appearance. 4-second shot. One dominant action: 主角在标准入口前停住，观察一次失败反馈，绕到侧面触碰另一处已存在的接口；入口亮起一小段，主角立即停手确认结果。 Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "城市魔法服务中一条具体路径是否仍可被主角使用"
+                  },
+                  {
+                      "id":  "02",
+                      "role_image_path":  null,
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 城市魔法服务中一条具体路径是否仍可被主角使用",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "unknown pauses before the other side changes, then shifts one body position to make the changed variable visible: 城市魔法服务中一条具体路径是否仍可被主角使用.",
+                      "start_change_end":  "起始：标准入口拒绝当前需求；变化：unknown pauses before the other side changes, then shifts one body position to make the changed variable visible: 城市魔法服务中一条具体路径是否仍可被主角使用.；结束：需求被暂时接通，但规则边界与代价仍待验证",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. unknown is the sole protagonist. Confirmed appearance: 当前角色身份以角色卡为准：unknown 原稿已确认的头部、脸型与已见剪影只按卡片使用. Do not specify any pending appearance. 4-second shot. One dominant action: unknown pauses before the other side changes, then shifts one body position to make the changed variable visible: 城市魔法服务中一条具体路径是否仍可被主角使用. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "城市魔法服务中一条具体路径是否仍可被主角使用；本条只改变：空间尺度"
+                  },
+                  {
+                      "id":  "03",
+                      "role_image_path":  null,
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 城市魔法服务中一条具体路径是否仍可被主角使用",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "unknown holds the new arrangement without claiming victory; the receiver moves through the newly available path while unknown remains visibly self-directed.",
+                      "start_change_end":  "起始：标准入口拒绝当前需求；变化：unknown holds the new arrangement without claiming victory; the receiver moves through the newly available path while unknown remains visibly self-directed.；结束：需求被暂时接通，但规则边界与代价仍待验证",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. unknown is the sole protagonist. Confirmed appearance: 当前角色身份以角色卡为准：unknown 原稿已确认的头部、脸型与已见剪影只按卡片使用. Do not specify any pending appearance. 4-second shot. One dominant action: unknown holds the new arrangement without claiming victory; the receiver moves through the newly available path while unknown remains visibly self-directed. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "城市魔法服务中一条具体路径是否仍可被主角使用；本条只改变：受阻后的回应方式"
+                  },
+                  {
+                      "id":  "04",
+                      "role_image_path":  null,
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 城市魔法服务中一条具体路径是否仍可被主角使用",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "unknown repeats the same relation in a wider environment, changing only the spatial scale and keeping the main silhouette readable.",
+                      "start_change_end":  "起始：标准入口拒绝当前需求；变化：unknown repeats the same relation in a wider environment, changing only the spatial scale and keeping the main silhouette readable.；结束：需求被暂时接通，但规则边界与代价仍待验证",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. unknown is the sole protagonist. Confirmed appearance: 当前角色身份以角色卡为准：unknown 原稿已确认的头部、脸型与已见剪影只按卡片使用. Do not specify any pending appearance. 4-second shot. One dominant action: unknown repeats the same relation in a wider environment, changing only the spatial scale and keeping the main silhouette readable. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "城市魔法服务中一条具体路径是否仍可被主角使用；本条只改变：角色站位"
+                  },
+                  {
+                      "id":  "05",
+                      "role_image_path":  null,
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 城市魔法服务中一条具体路径是否仍可被主角使用",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "unknown faces a direct obstruction, but changes only the response from force to a lateral redirection; show the receiver\u0027s route changing.",
+                      "start_change_end":  "起始：标准入口拒绝当前需求；变化：unknown faces a direct obstruction, but changes only the response from force to a lateral redirection; show the receiver\u0027s route changing.；结束：需求被暂时接通，但规则边界与代价仍待验证",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. unknown is the sole protagonist. Confirmed appearance: 当前角色身份以角色卡为准：unknown 原稿已确认的头部、脸型与已见剪影只按卡片使用. Do not specify any pending appearance. 4-second shot. One dominant action: unknown faces a direct obstruction, but changes only the response from force to a lateral redirection; show the receiver\u0027s route changing. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "城市魔法服务中一条具体路径是否仍可被主角使用；本条只改变：残余的可见度"
+                  },
+                  {
+                      "id":  "06",
+                      "role_image_path":  null,
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 城市魔法服务中一条具体路径是否仍可被主角使用",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "unknown gives up a privileged position for one beat, then uses the resulting opening to alter the receiver\u0027s available choice.",
+                      "start_change_end":  "起始：标准入口拒绝当前需求；变化：unknown gives up a privileged position for one beat, then uses the resulting opening to alter the receiver\u0027s available choice.；结束：需求被暂时接通，但规则边界与代价仍待验证",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. unknown is the sole protagonist. Confirmed appearance: 当前角色身份以角色卡为准：unknown 原稿已确认的头部、脸型与已见剪影只按卡片使用. Do not specify any pending appearance. 4-second shot. One dominant action: unknown gives up a privileged position for one beat, then uses the resulting opening to alter the receiver\u0027s available choice. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "城市魔法服务中一条具体路径是否仍可被主角使用；本条只改变：镜头距离"
+                  },
+                  {
+                      "id":  "07",
+                      "role_image_path":  null,
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 城市魔法服务中一条具体路径是否仍可被主角使用",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "Close on the concrete residue of the relation: the old route remains visible while the new path stays open; unknown does not add an unconfirmed ability.",
+                      "start_change_end":  "起始：标准入口拒绝当前需求；变化：Close on the concrete residue of the relation: the old route remains visible while the new path stays open; unknown does not add an unconfirmed ability.；结束：需求被暂时接通，但规则边界与代价仍待验证",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. unknown is the sole protagonist. Confirmed appearance: 当前角色身份以角色卡为准：unknown 原稿已确认的头部、脸型与已见剪影只按卡片使用. Do not specify any pending appearance. 4-second shot. One dominant action: Close on the concrete residue of the relation: the old route remains visible while the new path stays open; unknown does not add an unconfirmed ability. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "城市魔法服务中一条具体路径是否仍可被主角使用；本条只改变：动作节拍"
+                  },
+                  {
+                      "id":  "08",
+                      "role_image_path":  null,
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 城市魔法服务中一条具体路径是否仍可被主角使用",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "unknown exits the changed space while the receiver continues independently, leaving one small next affordance for a later experiment.",
+                      "start_change_end":  "起始：标准入口拒绝当前需求；变化：unknown exits the changed space while the receiver continues independently, leaving one small next affordance for a later experiment.；结束：需求被暂时接通，但规则边界与代价仍待验证",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. unknown is the sole protagonist. Confirmed appearance: 当前角色身份以角色卡为准：unknown 原稿已确认的头部、脸型与已见剪影只按卡片使用. Do not specify any pending appearance. 4-second shot. One dominant action: unknown exits the changed space while the receiver continues independently, leaving one small next affordance for a later experiment. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "城市魔法服务中一条具体路径是否仍可被主角使用；本条只改变：离场方向"
+                  }
+              ],
+    "microstory_prompt":  "integrated_multimodal_description: 10-second 2D hand-drawn micro-story. 2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. unknown is the sole protagonist. Confirmed appearance: 当前角色身份以角色卡为准：unknown 原稿已确认的头部、脸型与已见剪影只按卡片使用. Do not specify any pending appearance. 0-3s: 主角在标准入口前停住，观察一次失败反馈，绕到侧面触碰另一处已存在的接口；入口亮起一小段，主角立即停手确认结果。 3-6s: unknown pauses before the other side changes, then shifts one body position to make the changed variable visible: 城市魔法服务中一条具体路径是否仍可被主角使用. 6-10s: unknown holds the new arrangement without claiming victory; the receiver moves through the newly available path while unknown remains visibly self-directed. Keep one continuous environment reference, preserve the confirmed silhouette, and make the relation change observable through the receiver\u0027s movement. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.\n\noverall_soundscape: quiet environment, soft body movement, a restrained contact sound at the moment the path changes, no dialogue, no subtitles.\n\non_diegetic_music: sparse low-volume pulse, one beat at 3s and one resolving beat at 9s, no lyrical voice, no text.",
+    "recovery":  {
+                     "audience_remembers":  "通过观察、试探、记住失败并临时变招，让机灵与出其不意落到行动上。",
+                     "hypothesis_to_test":  "主角沿未覆盖的侧向路径重新组织动作",
+                     "alternative_explanation":  "观众也可能只读到“绕路/让路”的一般机灵，未必读出十元关系；需比较下一轮单变量。",
+                     "actual_result":  "NOT_RUN_DRY_RUN",
+                     "effective_observation":  "",
+                     "failure_and_cause":  "",
+                     "next_single_variable":  "回应方式"
+                 },
+    "h3":  {
+               "status":  "NOT_RUN_DRY_RUN",
+               "video_path":  "",
+               "probe":  null,
+               "reason":  "DryRun/NoH3 switch",
+               "action_id":  "LLL-CHARM-20260921-024241"
+           }
+}

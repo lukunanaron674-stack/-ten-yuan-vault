@@ -1,0 +1,34 @@
+{
+  "schema_version": "lililong-c-handoff/v1",
+  "handoff_id": "TASK_R0_20260922_001",
+  "created_at": "2026-09-21T23:41:37.218119+00:00",
+  "status": "resolved",
+  "source_task_id": "TASK_R0_20260922_001",
+  "asset_ids": [
+    "LLL-IMG-70452F089EE0",
+    "LLL-IMG-9FA7A4FCB967"
+  ],
+  "assets": [
+    {
+      "id": "LLL-IMG-70452F089EE0",
+      "type": "character",
+      "source_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_持续发散\\2026-09-17\\D01_角色_黎黎隆_夺路尾_v1.png",
+      "staged_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_持续发散\\r0_semantic_index\\c_handoff\\TASK_R0_20260922_001\\assets\\character\\LLL-IMG-70452F089EE0.png",
+      "source_relative_path": "03_持续发散/2026-09-17/D01_角色_黎黎隆_夺路尾_v1.png",
+      "size": 2559189,
+      "sha256": "f8e481f640dbe7442b3a85b1c6ef6d5e0e179c5db6659765face540b4de326c9",
+      "original_sha256": "f8e481f640dbe7442b3a85b1c6ef6d5e0e179c5db6659765face540b4de326c9"
+    },
+    {
+      "id": "LLL-IMG-9FA7A4FCB967",
+      "type": "scene",
+      "source_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-04_森林湖泊_五色组合.png",
+      "staged_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_持续发散\\r0_semantic_index\\c_handoff\\TASK_R0_20260922_001\\assets\\scene\\LLL-IMG-9FA7A4FCB967.png",
+      "source_relative_path": "04_场景/五色视觉系统/R1_场景配色/assets/R1-04_森林湖泊_五色组合.png",
+      "size": 2324722,
+      "sha256": "b31c507498461342a86133cdfec37b99bb3503c0f8b31fecebb312b33d2c08eb",
+      "original_sha256": "b31c507498461342a86133cdfec37b99bb3503c0f8b31fecebb312b33d2c08eb"
+    }
+  ],
+  "generation_submitted": false
+}

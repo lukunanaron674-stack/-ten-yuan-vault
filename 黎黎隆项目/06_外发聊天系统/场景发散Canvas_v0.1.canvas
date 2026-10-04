@@ -1,0 +1,34 @@
+{
+	"version":"0.2",
+	"nodes":[
+		{"id":"core","type":"text","text":"# 场景发散总核\n## 三色能量 × R 地域\n\n每场景必须过：\n**五色合成** + **验收五问**\n\n描述词模板见 卡D_场景出图聊","x":-200,"y":-120,"width":400,"height":240,"color":"#501313"},
+		{"id":"r1","type":"text","text":"## R1 主流文明区（青）\n钢铁教派腹地 · 宜居核心\n接口社会街景：维护街 / 门站 / 识别站\n\n**黎黎隆城内10带**\n维护街带 · 居住带 · 门站带 · 广场带\n市井带 · 共鸣庭 · 北缘雾路\n东门识别带 · 生态边缘 · 西侧路口","x":440,"y":-480,"width":400,"height":280,"color":"#0F6E56"},
+		{"id":"r2","type":"text","text":"## R2 遗骨之地（原型场）\n巨物尸骸探索\n往深处走 = 夺路\n退出去 = 回返\n\n白骨营地 · 骨环 · 朝圣路\n🔶 命名三选一","x":900,"y":-140,"width":360,"height":240,"color":"#913840"},
+		{"id":"r3","type":"text","text":"## R3 黑金渗出海域\n墨黑渗口 · 采油筏\n危险资源区（争议地带）","x":440,"y":200,"width":340,"height":160,"color":"#142A34"},
+		{"id":"r4","type":"text","text":"## R4 巨物迁徙主航线\n天上巨鲸 · 移动的路\n航路每天重排\n昨天能走，今天未必","x":-60,"y":-480,"width":340,"height":180,"color":"#855D8F"},
+		{"id":"r5","type":"text","text":"## R5 自由锚港（红）\n三阵营碰撞点 · 禁强制植入\n离船权码头 · 黑金交易所\n装备铺 · 裁决通告板\n招募 · 粉色矿物交换","x":-600,"y":-140,"width":380,"height":260,"color":"#913840"},
+		{"id":"r6","type":"text","text":"## R6 粉色生态带\n菌林 · 活膜 · 异种共生\n古老派地盘 · 不争霸只交易\n粉蘑菇 · 青污脸 · 共生代价区","x":-600,"y":260,"width":360,"height":220,"color":"#855D8F"},
+		{"id":"chengwai","type":"text","text":"## 城外六带（黎黎隆）\n西南（山路水道）· 南栖（季节栖地）\n东南（迁徙线）· 东北（裂风口）\n北（回声林路）· 东裂隙","x":-60,"y":260,"width":360,"height":200},
+		{"id":"rule","type":"text","text":"**视觉三定律**\n1. 五色合成：所有色必须溯源母色\n2. 验收五问（换普通中世纪人成立=失败）\n3. 能量=颜色=立场\n暗红不铺满 / 青绿=接口灯光\n灰紫=活体膜 / 淡青灰=雾与留白","x":900,"y":200,"width":380,"height":220,"color":"#913840"},
+		{"id":"weird","type":"text","text":"**诡异渗出点词库**\n旧锚点被陌生人依赖后\n尾关节在城里被远程锁死\n公共记录多出没人提供过的证词\n脱下的旧壳夜里朝雾区爬\n对岸修桥用失踪探索队的返身位材料","x":-60,"y":-180,"width":380,"height":200,"color":"#913840"},
+		{"id":"89af9638ee6f4fed","type":"file","file":"黎黎隆项目/04_场景/01_五色视觉系统/R5_锚港/SC-02_自由锚港_四宫格探索_v2_暗红主导.png","x":-600,"y":560,"width":300,"height":200,"color":"#913840"},
+		{"id":"35e6325e1b2c407e","type":"file","file":"黎黎隆项目/04_场景/01_五色视觉系统/R5_锚港/SC-02_自由锚港_四宫格探索_v3_暗红灰紫过渡.png","x":-270,"y":560,"width":300,"height":200,"color":"#855D8F"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"core","toNode":"r1","color":"#0F6E56","label":"青","fromSide":"right","toSide":"left"},
+		{"id":"e2","fromNode":"core","toNode":"r2","color":"#913840","label":"原型场","fromSide":"right","toSide":"left"},
+		{"id":"e3","fromNode":"core","toNode":"r3","color":"#142A34","label":"黑","fromSide":"right","toSide":"left"},
+		{"id":"e4","fromNode":"core","toNode":"r4","color":"#855D8F","fromSide":"top","toSide":"bottom"},
+		{"id":"e5","fromNode":"core","toNode":"r5","color":"#913840","label":"红","fromSide":"left","toSide":"right"},
+		{"id":"e6","fromNode":"core","toNode":"r6","color":"#855D8F","label":"粉","fromSide":"bottom","toSide":"top"},
+		{"id":"e7","fromNode":"core","toNode":"chengwai","fromSide":"bottom","toSide":"top"},
+		{"id":"e8","fromNode":"core","toNode":"rule","color":"#913840","label":"验收","fromSide":"right","toSide":"left"},
+		{"id":"e9","fromNode":"core","toNode":"weird","color":"#913840","label":"怪奇","fromSide":"top","toSide":"bottom"},
+		{"id":"725524033c3b4d70","fromNode":"r5","toNode":"89af9638ee6f4fed","color":"#913840","label":"暗红主导候选","fromSide":"bottom","toSide":"top"},
+		{"id":"221d376475844d20","fromNode":"r5","toNode":"35e6325e1b2c407e","color":"#855D8F","label":"红-灰紫过渡候选","fromSide":"bottom","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

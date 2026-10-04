@@ -1,0 +1,158 @@
+{
+  "project": "黎黎隆角色风格",
+  "stage": "R1-R3",
+  "status": "文字Canvas骨架 + 参考源清单 + Codex本地化任务书；尚未做R4消化与跑图",
+  "reference_tiers": {
+    "A 主母体": [
+      "WAKFU / Dofus",
+      "GUILTY GEAR -STRIVE-",
+      "PROMARE"
+    ],
+    "B 结构辅助": [
+      "Fortiche / ARCANE",
+      "HADES",
+      "Hi-Fi RUSH"
+    ],
+    "C 专项诊断": [
+      "Jamie Hewlett / Gorillaz",
+      "Mœbius",
+      "Monster Hunter",
+      "League of Legends｜Clarity"
+    ]
+  },
+  "references": [
+    {
+      "id": "R01",
+      "name": "WAKFU / Dofus",
+      "tier": "A 主母体",
+      "target": "全角色族谱统一、奇幻基底、可爱但不幼儿",
+      "learn": "大中小形、统一脸部概括、奇幻服装的系统性、角色族谱一致性",
+      "avoid": "不要复制具体职业服饰、图腾与法式卡通表皮",
+      "urls": [
+        "https://www.wakfu.com/en/mmorpg/media/illustrations",
+        "https://www.behance.net/gallery/96742705/WAKFU-%28MMORPG%29-_-Lead-character-design",
+        "https://ntamak.artstation.com/projects"
+      ],
+      "collect": "10-14张：全身3、多人族谱2、脸型2、服装/道具2、动态2、图形概括1+"
+    },
+    {
+      "id": "R02",
+      "name": "GUILTY GEAR -STRIVE-",
+      "tier": "A 主母体",
+      "target": "大叔、复杂服装、非对称、机械与身体共形",
+      "learn": "夸张但可读的轮廓、复杂部件的主次、不对称重心、大型道具成为人体剪影",
+      "avoid": "不要照搬格斗游戏潮流装饰、文字贴花与过度堆料",
+      "urls": [
+        "https://www.guiltygear.com/ggst/en/fankit/",
+        "https://www.guiltygear.com/ggst/en/character/"
+      ],
+      "collect": "12-16张：Goldlewis/Bedman?/Happy Chaos/Jack-O'/Baiken等，重点看大物件与人体的关系"
+    },
+    {
+      "id": "R03",
+      "name": "PROMARE",
+      "tier": "A 主母体",
+      "target": "动画化压缩、强图形、科技形状",
+      "learn": "硬色块、轮廓切分、低细节高识别、科技结构的图形化简化",
+      "avoid": "不要直接复制三角几何母题或荧光高饱和表皮",
+      "urls": [
+        "https://promare-movie.com/character/",
+        "https://promare-movie.com/cast_staff/"
+      ],
+      "collect": "8-12张：不同体型角色、制服/机械、强轮廓、近景脸"
+    },
+    {
+      "id": "R04",
+      "name": "Fortiche / ARCANE",
+      "tier": "B 结构辅助",
+      "target": "大叔成年感、材质、旧工业与机械可信度",
+      "learn": "成熟脸部块面、衣物重量、旧材质、人体与机械的承载关系",
+      "avoid": "不要把整体推向厚涂半写实，也不要提高皮肤写实度",
+      "urls": [
+        "https://forticheprod.com/portfolio/arcane-season-2/",
+        "https://forticheprod.com/forticher/"
+      ],
+      "collect": "8-12张：Design优先，其次Layout/Character Props；成年男性与机械件优先"
+    },
+    {
+      "id": "R05",
+      "name": "HADES",
+      "tier": "B 结构辅助",
+      "target": "剪影、主符号、限定色中的高辨识",
+      "learn": "一角色一主视觉、大中小形、局部装饰集中、色块分区",
+      "avoid": "不要搬古希腊纹样，不要让装饰密度覆盖黎黎隆原本的结构",
+      "urls": [
+        "https://www.supergiantgames.com/games/hades/",
+        "https://www.supergiantgames.com/blog/hades-switch-retail-edition-now-available/"
+      ],
+      "collect": "8-12张：角色立绘至少6张，缩略图/剪影对比至少2组"
+    },
+    {
+      "id": "R06",
+      "name": "Hi-Fi RUSH",
+      "tier": "B 结构辅助",
+      "target": "黎黎机械尾、轻量工业、机械运动可读性",
+      "learn": "外壳分块、关节简化、节奏化机械、卡通机械如何保持功能感",
+      "avoid": "不要复制赛璐璐渲染外观和品牌化企业美术表皮",
+      "urls": [
+        "https://kazuyamatsumura.artstation.com/projects/el3xWb",
+        "https://misha.artstation.com/albums/9387617",
+        "https://keita_sakai.artstation.com/projects/rJPP8m"
+      ],
+      "collect": "10-14张：Chai/机器人/NPC/设备，优先机械连接、关节、外壳"
+    },
+    {
+      "id": "R07",
+      "name": "Jamie Hewlett / Gorillaz",
+      "tier": "C 专项诊断",
+      "target": "大叔人体松弛感、瘦长比例、脸与姿势性格",
+      "learn": "少线条产生个性、斜肩、长肢、懒散与痞气、表情概括",
+      "avoid": "不要把世界观改造成街头朋克，也不要复制具体服饰",
+      "urls": [
+        "https://gorillaz.com/",
+        "https://store.gorillaz.com/products/the-mountain-character-cassette-poster-collectors-bundle-uk"
+      ],
+      "collect": "6-10张：全身站姿、坐姿、脸部、多人对照"
+    },
+    {
+      "id": "R08",
+      "name": "Mœbius",
+      "tier": "C 专项诊断",
+      "target": "奇幻×科技的陌生器物、轻线条、非赛博科幻",
+      "learn": "陌生但成立的器物、轻线条、大形先行、奇幻科技暧昧边界",
+      "avoid": "不要让角色变成复古法漫临摹，不直接复制服装",
+      "urls": [
+        "https://www.moebius.fr/",
+        "https://www.moebius.fr/A-propos.html"
+      ],
+      "collect": "6-10张：人物+器物、服装、交通/机械、线稿"
+    },
+    {
+      "id": "R09",
+      "name": "Monster Hunter",
+      "tier": "C 专项诊断",
+      "target": "奇美拉生物结构、功能逻辑、生态可信度",
+      "learn": "翼根/肩胛/后肢/尾巴的功能分工，攻击方式反推骨架",
+      "avoid": "不追求写实鳞片细节，不把奇美拉变成MH风怪兽",
+      "urls": [
+        "https://www.capcom.co.jp/ir/english/feature/2017_mh_crvoice.html",
+        "https://www.capcom.co.jp/recruit/project/mhrise.html",
+        "https://www.capcom.co.jp/recruit/project/monhan-world.html"
+      ],
+      "collect": "8-12张：飞行怪、四足/双足、翼根、尾巴、攻击姿态、生态关系"
+    },
+    {
+      "id": "R10",
+      "name": "League of Legends｜Clarity",
+      "tier": "C 专项诊断",
+      "target": "角色缩小后的识别、主特征锁定、动作可读性",
+      "learn": "主轮廓特征不可丢、动画也是识别辅助、皮肤变化不能破坏核心识别",
+      "avoid": "不学英雄皮肤装饰密度，不学商业MOBA审美表皮",
+      "urls": [
+        "https://www.leagueoflegends.com/en-us/news/dev/clarity-in-league/",
+        "https://www.leagueoflegends.com/en-us/champions/"
+      ],
+      "collect": "6-10张：不同体型角色的全身缩略图；必须做100px缩小对照"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "run_id": "SCENE-AUDIT-674-68-001",
+  "issue_id": "674-68",
+  "bridge_issue_id": "674-70",
+  "status": "PASS",
+  "started": "2026-09-19T16:50:58.2111731+08:00",
+  "finished": "2026-09-19T16:51:06.8416581+08:00",
+  "input_files_seen": 347,
+  "unique_images": 307,
+  "detailed_sample_count": 13,
+  "duplicates": 32,
+  "missing_canvas_file_nodes": 2,
+  "path_errors": 0,
+  "source_classes": [
+    {
+      "class": "LOCAL_GENERATED_CANDIDATE",
+      "count": 6
+    },
+    {
+      "class": "LOCALIZED_EXTERNAL_REFERENCE_SET",
+      "count": 249
+    },
+    {
+      "class": "LOCALIZED_EXTERNAL_REFERENCE_TEST",
+      "count": 4
+    },
+    {
+      "class": "LOCALIZED_EXTERNAL_REFERENCE_WALL",
+      "count": 47
+    },
+    {
+      "class": "PROJECT_DERIVED_OR_UNKNOWN",
+      "count": 1
+    }
+  ],
+  "index_csv": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\场景素材整理_候选\\00_素材索引.csv",
+  "canvas_index_csv": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\场景素材整理_候选\\Canvas文件节点索引.csv",
+  "sample_csv": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\场景素材整理_候选\\执行日志\\本轮详细样本.csv",
+  "contact_sheet": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\场景素材整理_候选\\01_缩略联系表\\SCENE-AUDIT-674-68-001_首轮20张联系表.jpg",
+  "h3": "NOT_RUN",
+  "git_push": "NOT_RUN",
+  "originals_modified": "NOT_MODIFIED",
+  "next_batch": "Use the visual sample to write semantic cards; then inspect the next 20 unique images.",
+  "blocker": "Some Canvas file nodes point outside the local project or to missing historical paths; preserved as MISSING/OUT_OF_SCOPE."
+}

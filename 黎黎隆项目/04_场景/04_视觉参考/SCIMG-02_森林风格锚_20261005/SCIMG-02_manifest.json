@@ -1,0 +1,206 @@
+{
+  "action_id": "SCIMG-02-20261005-01",
+  "issue": "674-127",
+  "subtarget": "SCIMG-02",
+  "status": "GENERATED_CANDIDATES",
+  "channel": "local ComfyUI 0.31.0 / RTX 3070 Laptop",
+  "checkpoint": "novaAnimeXL_ilV190.safetensors",
+  "lora": "lililong_candidates\\lililong_scene_focus_v04_96.safetensors",
+  "lora_strength": {
+    "clip": 0.65,
+    "model": 0.65
+  },
+  "generation": "reference edit",
+  "reference_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\01_五色视觉系统\\R1_场景配色\\assets\\R1-02_森林湖泊_双色主导.png",
+  "reference_sha256": "3e1aad5b2d44cc3fc7143f953870b059183b99e1fe9700c82ca39be910413740",
+  "reference_note": "Existing generated R1 palette-study candidate; used only as a scene-structure reference, not USER_APPROVED background",
+  "comfyui_input": "SCIMG-02_R1-02_3e1aad5b2d44.png",
+  "resolution": "1024x576",
+  "steps": 20,
+  "cfg": 5.5,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 0.65,
+  "prompt_suffix": "lililong_style, lililong_scene",
+  "negative_prompt": "文字，字母，数字，标注，水印，logo，漫画分格线，拼贴边框，多地点拼图，重复场景，不同画风，人物，群像，赛博朋克霓虹，金铜蒸汽朋克，纯黑机甲，城市建筑，码头，圆环遗迹，紫膜机械，厚涂，写实照片，3D渲染，过度细碎笔触，高饱和，青蓝大片铺色，暗红大片铺色，紫色滤镜，失焦，低清晰度，压扁前中后景",
+  "tasks": [
+    {
+      "seedLabel": "seedA",
+      "seed": 2026100521,
+      "shot": "01_wide",
+      "shotLabel": "全景建立镜头",
+      "description": "高处宽幅建立镜头，完整读到树根前景、大片湖湾中景、远处雾山；湖岸主通路从左前景自然延伸到中景，湖面占画面主体；构图留白充足，不能裁掉岸线。",
+      "filename": "SCIMG-02_seedA_01_wide.png"
+    },
+    {
+      "seedLabel": "seedA",
+      "seed": 2026100521,
+      "shot": "02_activity",
+      "shotLabel": "中全景人物活动区",
+      "description": "中全景机位靠近湖岸通路，清楚显示中景空地与活动区，前景只有少量根系框景，湖面和雾山仍能认出是同一地点；横向留足人物站立和长尾横扫空间。",
+      "filename": "SCIMG-02_seedA_02_activity.png"
+    },
+    {
+      "seedLabel": "seedA",
+      "seed": 2026100521,
+      "shot": "03_overhead",
+      "shotLabel": "顶视高机位空间关系",
+      "description": "高机位俯视同一湖岸转弯处，读清树根、岸线、浅水边界、通路和湖面的相对位置；保持二维背景的形状概括，不做地图符号或建筑平面图。",
+      "filename": "SCIMG-02_seedA_03_overhead.png"
+    },
+    {
+      "seedLabel": "seedA",
+      "seed": 2026100521,
+      "shot": "04_layers",
+      "shotLabel": "局部前中后景与树根湖岸",
+      "description": "局部场景镜头，前景树根和岸石，中景浅水边缘与通路，远景湖面和雾山三个层次同时可读；仍能认出是同一森林湖岸，不做纯材质特写。",
+      "filename": "SCIMG-02_seedA_04_layers.png"
+    },
+    {
+      "seedLabel": "seedB",
+      "seed": 2026100522,
+      "shot": "01_wide",
+      "shotLabel": "全景建立镜头",
+      "description": "高处宽幅建立镜头，完整读到树根前景、大片湖湾中景、远处雾山；湖岸主通路从左前景自然延伸到中景，湖面占画面主体；构图留白充足，不能裁掉岸线。",
+      "filename": "SCIMG-02_seedB_01_wide.png"
+    },
+    {
+      "seedLabel": "seedB",
+      "seed": 2026100522,
+      "shot": "02_activity",
+      "shotLabel": "中全景人物活动区",
+      "description": "中全景机位靠近湖岸通路，清楚显示中景空地与活动区，前景只有少量根系框景，湖面和雾山仍能认出是同一地点；横向留足人物站立和长尾横扫空间。",
+      "filename": "SCIMG-02_seedB_02_activity.png"
+    },
+    {
+      "seedLabel": "seedB",
+      "seed": 2026100522,
+      "shot": "03_overhead",
+      "shotLabel": "顶视高机位空间关系",
+      "description": "高机位俯视同一湖岸转弯处，读清树根、岸线、浅水边界、通路和湖面的相对位置；保持二维背景的形状概括，不做地图符号或建筑平面图。",
+      "filename": "SCIMG-02_seedB_03_overhead.png"
+    },
+    {
+      "seedLabel": "seedB",
+      "seed": 2026100522,
+      "shot": "04_layers",
+      "shotLabel": "局部前中后景与树根湖岸",
+      "description": "局部场景镜头，前景树根和岸石，中景浅水边缘与通路，远景湖面和雾山三个层次同时可读；仍能认出是同一森林湖岸，不做纯材质特写。",
+      "filename": "SCIMG-02_seedB_04_layers.png"
+    }
+  ],
+  "results": [
+    {
+      "time": "2026-10-05T02:12:25.442917+08:00",
+      "action_id": "SCIMG-02-20261005-01",
+      "subtarget": "SCIMG-02",
+      "seed_label": "seedA",
+      "seed": 2026100521,
+      "shot": "01_wide",
+      "output_name": "SCIMG-02_seedA_01_wide.png",
+      "source_output": "E:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\output\\SCIMG-02_20261005\\seedA_01_wide_00001_.png",
+      "output_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\04_视觉参考\\SCIMG-02_森林风格锚_20261005\\SCIMG-02_seedA_01_wide.png",
+      "sha256": "719447228192bac4273b553b314b85525ab927d64b62e71422ab4af0a7f59f91",
+      "prompt_id": "2e0df29d-90c6-4898-b3cf-048d7c357a67",
+      "state": "candidate_generated"
+    },
+    {
+      "time": "2026-10-05T02:13:17.3826071+08:00",
+      "action_id": "SCIMG-02-20261005-01",
+      "subtarget": "SCIMG-02",
+      "seed_label": "seedA",
+      "seed": 2026100521,
+      "shot": "02_activity",
+      "output_name": "SCIMG-02_seedA_02_activity.png",
+      "source_output": "E:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\output\\SCIMG-02_20261005\\seedA_02_activity_00001_.png",
+      "output_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\04_视觉参考\\SCIMG-02_森林风格锚_20261005\\SCIMG-02_seedA_02_activity.png",
+      "sha256": "5be43f8dbf3de603ef9dc1e56b1e2de8a865315c78ac4d08220096ddf92eb0a7",
+      "prompt_id": "fbee8236-643a-47fb-a85b-f73301cb809e",
+      "state": "candidate_generated"
+    },
+    {
+      "time": "2026-10-05T02:13:41.9181627+08:00",
+      "action_id": "SCIMG-02-20261005-01",
+      "subtarget": "SCIMG-02",
+      "seed_label": "seedA",
+      "seed": 2026100521,
+      "shot": "03_overhead",
+      "output_name": "SCIMG-02_seedA_03_overhead.png",
+      "source_output": "E:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\output\\SCIMG-02_20261005\\seedA_03_overhead_00001_.png",
+      "output_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\04_视觉参考\\SCIMG-02_森林风格锚_20261005\\SCIMG-02_seedA_03_overhead.png",
+      "sha256": "8330d8fc7144aad8e6824262505e8f397226bb54ddc793739d1c0400c0145a59",
+      "prompt_id": "10539faa-04ba-434b-b0c7-bd5afc0fb371",
+      "state": "candidate_generated"
+    },
+    {
+      "time": "2026-10-05T02:14:00.05179+08:00",
+      "action_id": "SCIMG-02-20261005-01",
+      "subtarget": "SCIMG-02",
+      "seed_label": "seedA",
+      "seed": 2026100521,
+      "shot": "04_layers",
+      "output_name": "SCIMG-02_seedA_04_layers.png",
+      "source_output": "E:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\output\\SCIMG-02_20261005\\seedA_04_layers_00001_.png",
+      "output_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\04_视觉参考\\SCIMG-02_森林风格锚_20261005\\SCIMG-02_seedA_04_layers.png",
+      "sha256": "19c144c407f9263ae11d8f7597b74915a69c3b7363d5d3f171b04b068e3a667b",
+      "prompt_id": "24a22eda-e9ae-4762-95cc-d32aa3e10dc8",
+      "state": "candidate_generated"
+    },
+    {
+      "time": "2026-10-05T02:14:18.38862+08:00",
+      "action_id": "SCIMG-02-20261005-01",
+      "subtarget": "SCIMG-02",
+      "seed_label": "seedB",
+      "seed": 2026100522,
+      "shot": "01_wide",
+      "output_name": "SCIMG-02_seedB_01_wide.png",
+      "source_output": "E:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\output\\SCIMG-02_20261005\\seedB_01_wide_00001_.png",
+      "output_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\04_视觉参考\\SCIMG-02_森林风格锚_20261005\\SCIMG-02_seedB_01_wide.png",
+      "sha256": "9c32f88440f7298a1413ffa7c49628e75b62fabbfdc432b9bb57110a5fbc7a02",
+      "prompt_id": "5c0c9d7e-69ed-4fcc-807c-03b6a0879d19",
+      "state": "candidate_generated"
+    },
+    {
+      "time": "2026-10-05T02:14:36.5129914+08:00",
+      "action_id": "SCIMG-02-20261005-01",
+      "subtarget": "SCIMG-02",
+      "seed_label": "seedB",
+      "seed": 2026100522,
+      "shot": "02_activity",
+      "output_name": "SCIMG-02_seedB_02_activity.png",
+      "source_output": "E:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\output\\SCIMG-02_20261005\\seedB_02_activity_00001_.png",
+      "output_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\04_视觉参考\\SCIMG-02_森林风格锚_20261005\\SCIMG-02_seedB_02_activity.png",
+      "sha256": "2497dae12b2b369fcddec7f817715ff86f2df7bb01df0063c155d7a251354c20",
+      "prompt_id": "538261ef-1933-47f6-a4e1-ad440ab78efe",
+      "state": "candidate_generated"
+    },
+    {
+      "time": "2026-10-05T02:14:51.6477819+08:00",
+      "action_id": "SCIMG-02-20261005-01",
+      "subtarget": "SCIMG-02",
+      "seed_label": "seedB",
+      "seed": 2026100522,
+      "shot": "03_overhead",
+      "output_name": "SCIMG-02_seedB_03_overhead.png",
+      "source_output": "E:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\output\\SCIMG-02_20261005\\seedB_03_overhead_00001_.png",
+      "output_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\04_视觉参考\\SCIMG-02_森林风格锚_20261005\\SCIMG-02_seedB_03_overhead.png",
+      "sha256": "9815ac87ae8a3f4f60fc407e22f39b77190437aebc18052c0f48f42abdcef5c1",
+      "prompt_id": "bcc462ba-a9f3-4469-a28f-e242dac4a893",
+      "state": "candidate_generated"
+    },
+    {
+      "time": "2026-10-05T02:15:24.9026868+08:00",
+      "action_id": "SCIMG-02-20261005-01",
+      "subtarget": "SCIMG-02",
+      "seed_label": "seedB",
+      "seed": 2026100522,
+      "shot": "04_layers",
+      "output_name": "SCIMG-02_seedB_04_layers.png",
+      "source_output": "E:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\output\\SCIMG-02_20261005\\seedB_04_layers_00001_.png",
+      "output_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\04_视觉参考\\SCIMG-02_森林风格锚_20261005\\SCIMG-02_seedB_04_layers.png",
+      "sha256": "f526f43064757edf7f75452f34a6b8aee1e9bdb9c8daefddbba2958af869f88e",
+      "prompt_id": "4d6fd81d-3b17-40ed-b61c-f4fd0919f72a",
+      "state": "candidate_generated"
+    }
+  ]
+}

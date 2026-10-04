@@ -1,0 +1,42 @@
+{
+  "run_id": "LLL-674-70-20260919-215256",
+  "bridge_issue_id": "674-70",
+  "source_issue_id": "674-68",
+  "started": "2026-09-19T21:52:56.2310897+08:00",
+  "scheduled": false,
+  "manual": true,
+  "scope": "I04 skeleton-airport scene-material整理 only",
+  "max_images": 12,
+  "completed_image_ids_excluded": [
+    "I04-IMG-001",
+    "I04-IMG-002",
+    "I04-IMG-003",
+    "I04-IMG-004",
+    "I04-IMG-005",
+    "I04-IMG-006"
+  ],
+  "h3": "NOT_RUN",
+  "git_push": "NOT_RUN",
+  "originals_modified": "NOT_MODIFIED",
+  "status": "BLOCKED",
+  "preflight": {
+    "exit_code": 0,
+    "event_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\场景素材整理_候选\\执行日志\\LLL-Linear-Codex-Scene-Hourly\\LLL-674-70-20260919-215256\\preflight.events.jsonl",
+    "last_message_path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\场景素材整理_候选\\执行日志\\LLL-Linear-Codex-Scene-Hourly\\LLL-674-70-20260919-215256\\preflight.last.txt"
+  },
+  "preflight_decision": {
+    "decision": "BLOCKED",
+    "issue_id": "674-68",
+    "batch_id": "I04-NEXT-UNVERIFIED",
+    "authorization_evidence": "7aa26b55-6826-46d6-aba1-fd3ad37830c6 authorizes the specified I04 Canvas only, maximum 12 unique images. Latest comment 8e256bcf-8d0a-42dc-8c6f-82d588df04f9 requests decoder recovery but identifies no new I04 inputs.",
+    "reason": "Read both issues’ latest descriptions and all comments. No genuinely new I04 batch could be verified. References to unprocessed q2/q3 do not establish existing eligible inputs. No images inspected or changes made.",
+    "candidate_images": [],
+    "completed_evidence": [
+      "674-68 comment d60ba90f-d50b-40ff-9987-75c1943ccf52 reports PASS for I04-IMG-001 through I04-IMG-006, Canvas img_1 through img_6, with 6 images inspected.",
+      "674-70 comment 095ece88-bae7-4739-86e2-aad10bcc0711 corroborates the same six-image execution.",
+      "674-68 comment 7b6908f4-8887-48fd-84b5-d7bd875a4876 records consumption of that run and forbids repeating those IDs."
+    ],
+    "blocker": "Linear-only access cannot verify the local Canvas or input files, project-root containment, candidate-output exclusion, or uniqueness. No explicit new I04 input manifest is present in the comments; eligibility remains unverified, not proven absent."
+  },
+  "blocker": "Linear-only access cannot verify the local Canvas or input files, project-root containment, candidate-output exclusion, or uniqueness. No explicit new I04 input manifest is present in the comments; eligibility remains unverified, not proven absent."
+}

@@ -1,0 +1,8 @@
+﻿{
+    "target":  "RTX 4090D",
+    "channel":  "Hermes -\u003e h3_4090d_channel.py -\u003e pool_run.py",
+    "channel_exit_code":  0,
+    "online":  true,
+    "raw":  "[4090D] SSH: DESKTOP-FKEUGLS\n\ndesktop-fkeugls\\administrator\n[4090D] GPU: NVIDIA GeForce RTX 4090 D, 24564 MiB, 610.88\n[4090D] ComfyUI: online 0.33.0\n[4090D] device: cuda:0 NVIDIA GeForce RTX 4090 D : cudaMallocAsync\n[4090D] pool heartbeat: {\"who\": \"\\u7aefA-\\u751f\\u4ea7\", \"ts\": 1789973171.5262597, \"time\": \"2026-09-21 14:46:11\"}\n[4090D] policy: pool_run only; no direct /prompt and no instance control",
+    "submitted":  false
+}

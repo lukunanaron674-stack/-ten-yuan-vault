@@ -1,0 +1,27 @@
+{
+  "schema_version": "lililong-r0-reverse-review/v1",
+  "review_id": "LLL-R0-6-20260922-001",
+  "reviewed_at": "2026-09-21T23:46:08.591456+00:00",
+  "task_id": "TASK_R0_20260922_001",
+  "verdict": "FAIL",
+  "reasons": [
+    "生成结果没有保留黎黎隆身份、红发小上身与巨尾第二身体",
+    "生成结果没有呈现森林与湖泊，退化为泛化工业交通结构",
+    "画面出现不可读文字，违反 no readable text 约束",
+    "R0 任务要求的动作规则（尾部落锚、承力支点、活动节）不可读"
+  ],
+  "evidence": {
+    "output_exists": true,
+    "output_sha256": "3926e7f50d4b8376d3fd7c5ca10c89de973c5e61a687e4882d1bf49f3e51c999",
+    "input_preview_count": 2,
+    "input_preview_paths": [
+      "E:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\output\\r0_c_handoff\\TASK_R0_20260922_001_input_refs_00001_.png",
+      "E:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\output\\r0_c_handoff\\TASK_R0_20260922_001_input_refs_00002_.png"
+    ],
+    "task_required_asset_ids": [
+      "LLL-IMG-70452F089EE0",
+      "LLL-IMG-9FA7A4FCB967"
+    ]
+  },
+  "scope": "visual candidate reverse review; does not promote or replace formal assets"
+}

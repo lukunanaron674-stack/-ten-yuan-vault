@@ -1,0 +1,17 @@
+{
+  "schema_version": "lililong-r0-6-run/v1",
+  "action_id": "LLL-R0-6-20260922-001",
+  "task_id": "TASK_R0_20260922_001",
+  "prompt_id": "e9d4314e-a99c-4102-9dde-34d59845eb9f",
+  "status_before": "c_resolved_ready_for_generation",
+  "status_after": "generated_candidate_pending_reverse_review",
+  "generated_path": "R0_6_output/TASK_R0_20260922_001_generated.png",
+  "generated_sha256": "3926e7f50d4b8376d3fd7c5ca10c89de973c5e61a687e4882d1bf49f3e51c999",
+  "input_refs_loaded": true,
+  "input_preview_count": 2,
+  "queue_after": {
+    "running": 0,
+    "pending": 0
+  },
+  "reverse_review": "R0_6_output/TASK_R0_20260922_001_reverse_review.json"
+}

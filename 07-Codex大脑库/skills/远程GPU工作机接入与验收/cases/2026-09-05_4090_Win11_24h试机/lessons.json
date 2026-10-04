@@ -1,0 +1,43 @@
+{
+  "machine": "RTX4090-Win11",
+  "host": "DESKTOP-FKEUGLS",
+  "tailscaleIp": "100.73.131.99",
+  "localUser": "19308",
+  "access": "Tailscale",
+  "levels": {
+    "L0": true,
+    "L1": true,
+    "L2_winrm": true,
+    "L2_ssh": true,
+    "L3_winrm": true,
+    "L3_ssh": true,
+    "L4": false,
+    "L5": false,
+    "L6": false,
+    "L7": false
+  },
+  "ssh": {
+    "status": "L3_verified_repeated",
+    "hostEd25519FingerprintObserved": "SHA256:UqmgMmlJEMjIDdzBrpnQmDz6TQWAIcKczKZXj9cZJdc",
+    "knownIssues": [
+      "ProfileList missing in original case",
+      "Missing NTUSER.DAT in original case",
+      "Failed publickey",
+      "lookup_sid 1332 diagnostic clue",
+      "single Accepted publickey was not reproducible",
+      "historical Connection refused before final service recovery"
+    ]
+  },
+  "winrm": {
+    "status": "L3_verified",
+    "port": 5985,
+    "trustedHostScope": "100.73.131.99"
+  },
+  "preferredNextStep": "Verify L4 file upload/download with hashes, then establish L5 Codex remote invocation.",
+  "doNotRepeat": [
+    "blindly rebuild authorized_keys without reading service logs",
+    "treat one successful SSH login as final success",
+    "store passwords or private keys in the vault",
+    "spend the short test window perfecting SSH before validating WinRM fallback"
+  ]
+}
