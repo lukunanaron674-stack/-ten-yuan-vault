@@ -52,3 +52,22 @@
 
 - `SBR-20THCB-KENJI-005`：“朋友”的方案已将童年脚本变成现实威胁时转入地下并等待反击时机，主动进入隐蔽、受威胁的临界生存位置；临界端点：自身暴露程度、反击窗口与受威胁的临界位置。`behavior-candidate` 93（20C-4）。
 - 最近邻提醒：组织调查是xn、公开现身返东京是zx；被逼躲藏不算xz，必须看到主动进入危险临界位置等待时机。
+
+## 第七十二批：天马贤三 / Agni
+
+- `SBR-MONSTER-TENMA-003`：天马躲避警方拉网追捕，在通缉和封锁中主动保留行动边界；`behavior-candidate` 95（MON-2）。
+- `SBR-MONSTER-TENMA-007`：天马试图偷渡进入捷克，主动越过制度边界并承担暴露风险；`behavior-candidate` 96（MON-5）。
+- `SBR-FIREPUNCH-AGNI-001`：Agni在持续燃烧中奋力求生，维持身体处于可行动的临界状态；`behavior-candidate` 95（FP-1）。
+- `SBR-FIREPUNCH-AGNI-007`：Agni寻找逃离虚假和平的出口，尝试脱离既有停靠状态；`behavior-candidate` 92（FP-7）。
+
+## 第七十六批：北条时行
+
+- `SBR-ESCAPE-TOKI-008`：时行主动向贞宗发起最终决战，进入生死临界；`behavior-candidate`88。
+
+## 第七十七批：樱木花道
+
+- `SBR-SLAMDUNK-SAKURAGI-007`：背伤后仍返场，进入职业生涯级风险临界；`behavior-candidate`96。
+
+## 第七十八批：宫本武藏
+
+- `SBR-VAGABOND-MUSASHI-002`：为再战准备并决定不再逃跑，进入高风险节点；`behavior-candidate`96。

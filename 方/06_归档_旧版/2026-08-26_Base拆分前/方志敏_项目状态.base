@@ -1,0 +1,236 @@
+filters:
+  or:
+    - and:
+        - file.inFolder("方/05_画布工作台/卡级状态")
+        - 类型 == "卡级管理"
+    - and:
+        - file.inFolder("方/04_声音设计/幕级")
+        - 类型 == "幕级声音"
+properties:
+  幕:
+    displayName: 幕
+  卡号:
+    displayName: 卡号
+  名称:
+    displayName: 名称
+  状态:
+    displayName: 状态
+  当前阶段:
+    displayName: 当前阶段（5选1）
+  阶段状态备注:
+    displayName: 阶段规则
+  环境音:
+    displayName: ① 环境音
+  氛围音:
+    displayName: ② 氛围音／情绪音
+  云端5090队列:
+    displayName: 云端5090队列
+  云端5090执行器:
+    displayName: 执行器
+  云端5090批次:
+    displayName: 批次
+  云端5090任务类型:
+    displayName: 任务类型
+  云端5090前置:
+    displayName: 前置锁定
+  云端5090结果:
+    displayName: 结果
+  云端5090问题:
+    displayName: 问题
+  云端5090完成证据:
+    displayName: 完成证据
+  卡Canvas:
+    displayName: 🗂 卡 Canvas
+  画面描述词:
+    displayName: ① 画面描述词入口
+  当前画面:
+    displayName: ② 当前画面
+  分镜时间描述词:
+    displayName: ③ 分镜时间描述词入口
+  视频:
+    displayName: ④ 视频
+  音效配音:
+    displayName: ⑤ 音效／配音
+  下一步:
+    displayName: 下一步
+  阻塞:
+    displayName: 阻塞
+  锁定:
+    displayName: 锁定
+  类型:
+    displayName: 类型
+views:
+  - type: table
+    name: 卡级流程｜全部
+    filters: 类型 == "卡级管理"
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 当前阶段
+      - 状态
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+      - 云端5090队列
+      - 卡Canvas
+  - type: table
+    name: 卡级流程｜待解决
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 锁定 != true
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 当前阶段
+      - 状态
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+      - 云端5090队列
+      - 卡Canvas
+  - type: table
+    name: 下次云端5090｜已批准连续跑
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 云端5090队列 == "已批准"
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 当前阶段
+      - 云端5090任务类型
+      - 云端5090前置
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+  - type: table
+    name: 下次云端5090｜待我确认
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 云端5090队列 == "待确认"
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 当前阶段
+      - 云端5090任务类型
+      - 云端5090前置
+  - type: table
+    name: 幕级声音｜环境音→氛围音
+    filters: 类型 == "幕级声音"
+    order:
+      - 幕
+      - 环境音
+      - 氛围音
+      - 状态
+      - 来源
+      - 下一步
+  - type: table
+    name: 阻塞
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 阻塞 != ""
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 当前阶段
+      - 阻塞
+      - 下一步
+  - type: table
+    name: 第一幕
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 幕 == "第一幕"
+    order:
+      - 卡号
+      - 名称
+      - 当前阶段
+      - 状态
+      - 云端5090队列
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+  - type: table
+    name: 第二幕
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 幕 == "第二幕"
+    order:
+      - 卡号
+      - 名称
+      - 当前阶段
+      - 状态
+      - 云端5090队列
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+  - type: table
+    name: 第三幕
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 幕 == "第三幕"
+    order:
+      - 卡号
+      - 名称
+      - 当前阶段
+      - 状态
+      - 云端5090队列
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+  - type: table
+    name: 第四幕
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 幕 == "第四幕"
+    order:
+      - 卡号
+      - 名称
+      - 当前阶段
+      - 状态
+      - 云端5090队列
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+  - type: table
+    name: 第五幕
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 幕 == "第五幕"
+    order:
+      - 卡号
+      - 名称
+      - 当前阶段
+      - 状态
+      - 云端5090队列
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音

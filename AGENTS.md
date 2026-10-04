@@ -13,6 +13,56 @@ This workspace is an Obsidian vault, not a normal code repository.
 
 L0 only governs startup, authority, safety, and write boundaries. It does not define 十元 endpoints, relations, dynamic-chain mechanisms, cases, ratings, or project conclusions.
 
+## Ten-Yuan Semantic Protocol v1.0
+
+For any task that asks an AI to understand or apply 十元, use `15-总思路/Ten-Yuan_Semantic_Protocol_v1.0.md` as the project-level interpretation entry. It is a routing and parsing protocol; it does not override the L2 theory canon.
+
+### Read priority
+
+```text
+L0 AGENTS.md
+→ L1 task gate / rolling hub
+→ L2 current theory canon
+→ 15-总思路/Ten-Yuan_Semantic_Protocol_v1.0.md
+→ its six linked consolidation notes
+→ case evidence and project material
+```
+
+If sources conflict, preserve both statements, name the source and version, mark the field `未判定` or `待二审`, and do not silently merge definitions. Newer dates do not by themselves outrank an explicitly registered canon.
+
+### Required protocol files
+
+- `15-总思路/Ten-Yuan_Semantic_Protocol_v1.0.md`
+- `15-总思路/十元_核心定义.md`
+- `15-总思路/十元_AI解释规则.md`
+- `15-总思路/十元_生克补关系.md`
+- `15-总思路/十元_动态链.md`
+- `15-总思路/五轴_定义.md`
+
+### Semantic prohibitions
+
+1. Do not map a word, color, prop, occupation, emotion, genre, or composition directly to a 十元.
+2. Do not invent a missing endpoint definition, relation, dynamic edge, confidence score, or 五轴 conclusion.
+3. Do not use 五维 themes, 五轴 names, visual style, or a relation label to replace the underlying 十元 evidence.
+4. Do not call a relation `生`, `克`, or `补` from co-occurrence, sequence alone, or a plausible story sentence.
+5. Do not hide a conflict between a current canon and a working/visual definition; return the conflict as an explicit uncertainty.
+
+### Default parsing flow
+
+```text
+自然语言
+→ current_window / object_layer
+→ actor / object
+→ current_state
+→ changed_variable
+→ relation_shape / decision_right / reentry_right
+→ endpoint and nearest neighbors
+→ removal / reverse / third-factor checks
+→ 十元映射
+→ confidence and uncertainty
+→ optional dynamic-chain or 五轴 projection
+```
+
 ## 1. Minimum Boot Sequence
 
 Before reading or writing the vault:

@@ -2,10 +2,38 @@
   "tabManagerState": {
     "openTabs": [
       {
-        "tabId": "tab-1779541698703-dgc14wd",
-        "conversationId": "conv-1779982669236-snllmjoj2"
+        "tabId": "tab-1789547287889-zm0wo20",
+        "conversationId": "conv-1789554632156-pov3yymun"
       }
     ],
-    "activeTabId": "tab-1779541698703-dgc14wd"
-  }
+    "activeTabId": "tab-1789547287889-zm0wo20"
+  },
+  "providerConfigs": {
+    "codex": {
+      "enabled": true,
+      "safeMode": "workspace-write",
+      "cliPath": "C:\\Users\\19308\\AppData\\Local\\OpenAI\\Codex\\bin\\12219cbfbcbddde7\\codex.exe",
+      "cliPathsByHost": {
+        "device:bb9d3951-0f14-47c3-8877-7b506041c6b4": "C:\\Users\\19308\\AppData\\Local\\OpenAI\\Codex\\bin\\12219cbfbcbddde7\\codex.exe"
+      },
+      "customModels": "",
+      "reasoningSummary": "detailed",
+      "environmentVariables": "",
+      "environmentHash": "",
+      "installationMethod": "native-windows",
+      "installationMethodsByHost": {
+        "device:bb9d3951-0f14-47c3-8877-7b506041c6b4": "native-windows"
+      },
+      "wslDistroOverride": "",
+      "wslDistroOverridesByHost": {}
+    }
+  },
+  "settingsProvider": "codex",
+  "savedProviderModel": {
+    "codex": "gpt-5.5"
+  },
+  "savedProviderEffort": {
+    "codex": "high"
+  },
+  "model": "gpt-5.5"
 }

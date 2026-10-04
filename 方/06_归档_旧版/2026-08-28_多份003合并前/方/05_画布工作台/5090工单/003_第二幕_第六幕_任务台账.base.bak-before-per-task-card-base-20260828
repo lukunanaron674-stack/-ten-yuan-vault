@@ -1,0 +1,110 @@
+filters:
+  or:
+    - and:
+        - file.inFolder("方/05_画布工作台/卡级状态")
+        - 类型 == "卡级管理"
+        - or:
+            - 幕 == "第二幕"
+            - 幕 == "第六幕"
+    - file.basename == "003_方志敏_下一批任务"
+properties:
+  幕:
+    displayName: 幕
+  卡号:
+    displayName: 卡号
+  名称:
+    displayName: 名称
+  阶段编号:
+    displayName: 阶段
+  锁定:
+    displayName: 锁
+  状态:
+    displayName: 状态
+  任务状态:
+    displayName: 任务状态
+  缺什么:
+    displayName: 缺什么
+  云端5090队列:
+    displayName: 5090队列
+  云端5090结果:
+    displayName: 5090结果
+  云端5090问题:
+    displayName: 5090问题
+  云端5090完成证据:
+    displayName: 完成证据
+  003工单结果:
+    displayName: 003结果
+  工作流范围:
+    displayName: 工作流范围
+  云端工作流:
+    displayName: 云端工作流
+  阻塞反馈:
+    displayName: 阻塞反馈
+  下一步:
+    displayName: 下一步
+  提交状态:
+    displayName: 提交状态
+views:
+  - type: table
+    name: 003总反馈
+    filters: file.basename == "003_方志敏_下一批任务"
+    order:
+      - 工作流范围
+      - 任务状态
+      - 提交状态
+      - 云端工作流
+      - 阻塞反馈
+      - 下一步
+      - file.mtime
+  - type: table
+    name: 第二幕｜卡级反馈
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 幕 == "第二幕"
+    order:
+      - 卡号
+      - 名称
+      - 阶段编号
+      - 状态
+      - 任务状态
+      - 缺什么
+      - 云端5090队列
+      - 云端5090结果
+      - 云端5090问题
+      - 云端5090完成证据
+      - 003工单结果
+      - 锁定
+  - type: table
+    name: 第六幕｜卡级反馈
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 幕 == "第六幕"
+    order:
+      - 卡号
+      - 名称
+      - 阶段编号
+      - 状态
+      - 任务状态
+      - 缺什么
+      - 云端5090队列
+      - 云端5090结果
+      - 云端5090问题
+      - 云端5090完成证据
+      - 003工单结果
+      - 锁定
+  - type: table
+    name: 待处理反馈
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 状态 != "已完成"
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 状态
+      - 缺什么
+      - 云端5090问题
+      - 下一步

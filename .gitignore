@@ -7,3 +7,50 @@
 # 根目录粘贴残留
 /未命名.canvas
 /Pasted image *.png
+# Video files stay local and are not uploaded to GitHub
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.m4v
+*.wmv
+*.flv
+*.m2ts
+*.3gp
+*.ogv
+*.mts
+*.mxf
+
+# 大体积素材包：走 croc 直传云端 4090，不作为 git 内容（GitHub 只承接文字索引）
+/*.zip
+/*.7z
+/*.tar.gz
+
+# ===== 上传白名单策略（2026-10-01 674 拍板）=====
+# 只传文字：Markdown 原样上传；原始 .json / .canvas 不原样入库，
+# 需先导出为 .md 文字版本再上传；图片 / GIF / 视频 一律不入库。
+# 本段只改"上传范围"，不触碰本地文件、不改写本地历史。
+
+# 图像（任意位图/动图格式，不入库）
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.tiff
+*.tif
+*.avif
+*.heic
+# SVG 属矢量图(也是图像)，按"不上传图像"默认排除；
+# 若某 SVG 是必须的文字示意图，请单独 `git add -f` 或转 .md 后再传。
+*.svg
+
+# 原始结构化文件：不原样上传，需转文字版本(.md)后上传
+*.json
+*.canvas
+
+# Syncthing 同步残留：不入库
+.stfolder/
+.stignore

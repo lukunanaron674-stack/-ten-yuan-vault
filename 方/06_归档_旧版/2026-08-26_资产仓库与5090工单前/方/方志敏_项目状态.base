@@ -1,0 +1,135 @@
+filters:
+  and:
+    - file.inFolder("方/05_画布工作台/卡级状态")
+    - 类型 == "卡级管理"
+    - 锁定 != true
+properties:
+  幕:
+    displayName: 幕
+  卡号:
+    displayName: 卡号
+  名称:
+    displayName: 名称
+  画面描述词:
+    displayName: ① 画面描述词
+  当前画面:
+    displayName: ② 当前画面
+  分镜时间描述词:
+    displayName: ③ 分镜时间
+  视频:
+    displayName: ④ 视频
+  音效配音:
+    displayName: ⑤ 音效／配音
+  卡Canvas:
+    displayName: 卡 Canvas
+views:
+  - type: table
+    name: 全部｜描述词参考
+    filters:
+      and:
+        - file.inFolder("方/05_画布工作台/卡级状态")
+        - 类型 == "卡级管理"
+        - 锁定 != true
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+      - 卡Canvas
+    sort:
+      - property: 当前画面
+        direction: DESC
+  - type: table
+    name: 第一幕｜描述词参考
+    filters:
+      and:
+        - file.inFolder("方/05_画布工作台/卡级状态")
+        - 类型 == "卡级管理"
+        - 锁定 != true
+        - 幕 == "第一幕"
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+      - 卡Canvas
+  - type: table
+    name: 第二幕｜描述词参考
+    filters:
+      and:
+        - file.inFolder("方/05_画布工作台/卡级状态")
+        - 类型 == "卡级管理"
+        - 锁定 != true
+        - 幕 == "第二幕"
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+      - 卡Canvas
+  - type: table
+    name: 第三幕｜描述词参考
+    filters:
+      and:
+        - file.inFolder("方/05_画布工作台/卡级状态")
+        - 类型 == "卡级管理"
+        - 锁定 != true
+        - 幕 == "第三幕"
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+      - 卡Canvas
+  - type: table
+    name: 第四幕｜描述词参考
+    filters:
+      and:
+        - file.inFolder("方/05_画布工作台/卡级状态")
+        - 类型 == "卡级管理"
+        - 锁定 != true
+        - 幕 == "第四幕"
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+      - 卡Canvas
+  - type: table
+    name: 第五幕｜描述词参考
+    filters:
+      and:
+        - file.inFolder("方/05_画布工作台/卡级状态")
+        - 类型 == "卡级管理"
+        - 锁定 != true
+        - 幕 == "第五幕"
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 画面描述词
+      - 当前画面
+      - 分镜时间描述词
+      - 视频
+      - 音效配音
+      - 卡Canvas

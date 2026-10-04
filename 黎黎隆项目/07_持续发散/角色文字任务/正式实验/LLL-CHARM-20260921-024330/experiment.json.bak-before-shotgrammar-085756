@@ -1,0 +1,193 @@
+﻿{
+    "experiment_id":  "LLL-CHARM-20260921-024330",
+    "source_snapshot":  {
+                            "repository":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault",
+                            "remote":  "https://github.com/lukunanaron674-stack/-ten-yuan-vault.git",
+                            "head":  "1f5017865fe4ee8673bc543e990848dfda557fb4",
+                            "origin_main":  "9be25beb5fbad290106e787a7bc301c2b6b7439d",
+                            "checkout_differs_from_origin_main":  true,
+                            "scoped_worktree_status":  [
+                                                           "M \"\\351\\273\\216\\351\\273\\216\\351\\232\\206\\351\\241\\271\\347\\233\\256/04_\\345\\234\\272\\346\\231\\257/D03_I02\\346\\227\\247\\346\\236\\242\\347\\272\\275\\345\\206\\222\\351\\231\\251\\350\\200\\205\\345\\267\\245\\344\\274\\232_\\347\\273\\230\\345\\210\\266\\345\\207\\206\\345\\244\\207.canvas\"",
+                                                           " M \"\\351\\273\\216\\351\\273\\216\\351\\232\\206\\351\\241\\271\\347\\233\\256/04_\\345\\234\\272\\346\\231\\257/\\351\\273\\216\\351\\273\\216\\351\\232\\206_\\344\\272\\224\\350\\211\\262\\350\\247\\206\\350\\247\\211\\347\\263\\273\\347\\273\\237_\\346\\200\\273\\346\\216\\247_V1.0.canvas\""
+                                                       ],
+                            "read_policy":  "read current checkout; no fetch/pull/commit/push; preserve local edits"
+                        },
+    "character":  {
+                      "id":  "CH-001_澈",
+                      "name":  "澈",
+                      "card_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_角色\\角色库\\角色卡\\CH-001_澈.md",
+                      "role_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_角色\\角色库\\assets\\CH-001\\澈_城市守护者_主视觉设定图.png",
+                      "role_image_status":  "verified",
+                      "confirmed_appearance":  [
+                                                   "男性；清冷少年／青年外观；古老能量生命",
+                                                   "浅青白色不对称蓬松发型与头顶小翘发束",
+                                                   "灰紫面部；连续青白色能量人形",
+                                                   "不设计衣服；不增加装甲、武器、固定翅膀或多余挂件"
+                                               ],
+                      "pending_appearance":  [
+                                                 "正／侧／背三视图尚待校准",
+                                                 "凝聚、流动、局部延伸、完整释放的分层设计尚待验证",
+                                                 "与建筑及黎黎隆同框的尺寸关系尚待验证",
+                                                 "持续时间、范围、代价等能力限制未锁定"
+                                             ],
+                      "ten_yuan":  "Z 核心 + X并Z 重要构成（作者追加，关系与体量待行为验证）",
+                      "ten_yuan_status":  "candidate"
+                  },
+    "scene":  {
+                  "card_or_basis":  "现有场景资产作环境参考；不作为角色定稿",
+                  "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                  "scene_image_status":  "candidate",
+                  "basis":  "场景资产只承担环境参考，不补写角色正式造型"
+              },
+    "relation_hypothesis":  {
+                                "relation_type":  "待判定",
+                                "source_endpoint":  "澈 的可观察行动",
+                                "target_endpoint":  "某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径",
+                                "direction":  "澈 → 被改变变量",
+                                "force_from":  "澈",
+                                "receiver":  "某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径",
+                                "initial_state":  "青白能量体被城市接口按异常路径牵引",
+                                "mechanism":  "澈主动退出固定接口并把能量流向重组到被遗漏生命周围",
+                                "changed_variable":  "某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径",
+                                "end_state":  "接口失去对他的直接牵引，被遗漏生命获得一条可继续移动的保护边界",
+                                "residue":  "旧路径与新路径同时可见；关系边仍待视频与作者复核",
+                                "next_affordance":  "下一轮只改变主角回应方式或空间尺度",
+                                "charm_hypothesis":  "他洞悉规则却不把纯粹变成蛮力：通过退出、重组与让出选择空间，显示自主判断。",
+                                "confidence":  "candidate"
+                            },
+    "story_candidates":  {
+                             "A":  "城市防护界面把一个未伤害人的古老生命标成异常；澈不攻击系统，而先收回自身能量，再在被遗漏生命周围重组出一段可见的保护路径。",
+                             "B":  "系统接口要求澈沿固定路线行动；澈向后退半步，放弃直接突破，借自身能量改变一个侧向通道，让被排斥生命先通过。",
+                             "C":  "澈辨认出公开防护命令背后的实际作用点，却把选择权留给现场生命；他只改变能量流向，让对方可以自行离开。",
+                             "selected":  "城市防护界面把一个未伤害人的古老生命标成异常；澈不攻击系统，而先收回自身能量，再在被遗漏生命周围重组出一段可见的保护路径。",
+                             "reason":  "它通过 澈先收回连接城市接口的一束青白能量，停顿后把能量横向铺到小型古老生命前方；生命沿新边界移动，澈保持人形而不追击。 这一可观察行为改变接收方状态，让主角魅力落在行动而不是台词或表情。"
+                         },
+    "shots":  [
+                  {
+                      "id":  "01",
+                      "role_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_角色\\角色库\\assets\\CH-001\\澈_城市守护者_主视觉设定图.png",
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "澈先收回连接城市接口的一束青白能量，停顿后把能量横向铺到小型古老生命前方；生命沿新边界移动，澈保持人形而不追击。",
+                      "start_change_end":  "起始：青白能量体被城市接口按异常路径牵引；变化：澈先收回连接城市接口的一束青白能量，停顿后把能量横向铺到小型古老生命前方；生命沿新边界移动，澈保持人形而不追击。；结束：接口失去对他的直接牵引，被遗漏生命获得一条可继续移动的保护边界",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. 澈 is the sole protagonist. Confirmed appearance: 男性；清冷少年／青年外观；古老能量生命; 浅青白色不对称蓬松发型与头顶小翘发束; 灰紫面部；连续青白色能量人形; 不设计衣服；不增加装甲、武器、固定翅膀或多余挂件. Do not specify any pending appearance. 4-second shot. One dominant action: 澈先收回连接城市接口的一束青白能量，停顿后把能量横向铺到小型古老生命前方；生命沿新边界移动，澈保持人形而不追击。 Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径"
+                  },
+                  {
+                      "id":  "02",
+                      "role_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_角色\\角色库\\assets\\CH-001\\澈_城市守护者_主视觉设定图.png",
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "澈 pauses before the other side changes, then shifts one body position to make the changed variable visible: 某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径.",
+                      "start_change_end":  "起始：青白能量体被城市接口按异常路径牵引；变化：澈 pauses before the other side changes, then shifts one body position to make the changed variable visible: 某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径.；结束：接口失去对他的直接牵引，被遗漏生命获得一条可继续移动的保护边界",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. 澈 is the sole protagonist. Confirmed appearance: 男性；清冷少年／青年外观；古老能量生命; 浅青白色不对称蓬松发型与头顶小翘发束; 灰紫面部；连续青白色能量人形; 不设计衣服；不增加装甲、武器、固定翅膀或多余挂件. Do not specify any pending appearance. 4-second shot. One dominant action: 澈 pauses before the other side changes, then shifts one body position to make the changed variable visible: 某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径；本条只改变：空间尺度"
+                  },
+                  {
+                      "id":  "03",
+                      "role_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_角色\\角色库\\assets\\CH-001\\澈_城市守护者_主视觉设定图.png",
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "澈 holds the new arrangement without claiming victory; the receiver moves through the newly available path while 澈 remains visibly self-directed.",
+                      "start_change_end":  "起始：青白能量体被城市接口按异常路径牵引；变化：澈 holds the new arrangement without claiming victory; the receiver moves through the newly available path while 澈 remains visibly self-directed.；结束：接口失去对他的直接牵引，被遗漏生命获得一条可继续移动的保护边界",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. 澈 is the sole protagonist. Confirmed appearance: 男性；清冷少年／青年外观；古老能量生命; 浅青白色不对称蓬松发型与头顶小翘发束; 灰紫面部；连续青白色能量人形; 不设计衣服；不增加装甲、武器、固定翅膀或多余挂件. Do not specify any pending appearance. 4-second shot. One dominant action: 澈 holds the new arrangement without claiming victory; the receiver moves through the newly available path while 澈 remains visibly self-directed. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径；本条只改变：受阻后的回应方式"
+                  },
+                  {
+                      "id":  "04",
+                      "role_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_角色\\角色库\\assets\\CH-001\\澈_城市守护者_主视觉设定图.png",
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "澈 repeats the same relation in a wider environment, changing only the spatial scale and keeping the main silhouette readable.",
+                      "start_change_end":  "起始：青白能量体被城市接口按异常路径牵引；变化：澈 repeats the same relation in a wider environment, changing only the spatial scale and keeping the main silhouette readable.；结束：接口失去对他的直接牵引，被遗漏生命获得一条可继续移动的保护边界",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. 澈 is the sole protagonist. Confirmed appearance: 男性；清冷少年／青年外观；古老能量生命; 浅青白色不对称蓬松发型与头顶小翘发束; 灰紫面部；连续青白色能量人形; 不设计衣服；不增加装甲、武器、固定翅膀或多余挂件. Do not specify any pending appearance. 4-second shot. One dominant action: 澈 repeats the same relation in a wider environment, changing only the spatial scale and keeping the main silhouette readable. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径；本条只改变：角色站位"
+                  },
+                  {
+                      "id":  "05",
+                      "role_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_角色\\角色库\\assets\\CH-001\\澈_城市守护者_主视觉设定图.png",
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "澈 faces a direct obstruction, but changes only the response from force to a lateral redirection; show the receiver\u0027s route changing.",
+                      "start_change_end":  "起始：青白能量体被城市接口按异常路径牵引；变化：澈 faces a direct obstruction, but changes only the response from force to a lateral redirection; show the receiver\u0027s route changing.；结束：接口失去对他的直接牵引，被遗漏生命获得一条可继续移动的保护边界",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. 澈 is the sole protagonist. Confirmed appearance: 男性；清冷少年／青年外观；古老能量生命; 浅青白色不对称蓬松发型与头顶小翘发束; 灰紫面部；连续青白色能量人形; 不设计衣服；不增加装甲、武器、固定翅膀或多余挂件. Do not specify any pending appearance. 4-second shot. One dominant action: 澈 faces a direct obstruction, but changes only the response from force to a lateral redirection; show the receiver\u0027s route changing. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径；本条只改变：残余的可见度"
+                  },
+                  {
+                      "id":  "06",
+                      "role_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_角色\\角色库\\assets\\CH-001\\澈_城市守护者_主视觉设定图.png",
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "澈 gives up a privileged position for one beat, then uses the resulting opening to alter the receiver\u0027s available choice.",
+                      "start_change_end":  "起始：青白能量体被城市接口按异常路径牵引；变化：澈 gives up a privileged position for one beat, then uses the resulting opening to alter the receiver\u0027s available choice.；结束：接口失去对他的直接牵引，被遗漏生命获得一条可继续移动的保护边界",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. 澈 is the sole protagonist. Confirmed appearance: 男性；清冷少年／青年外观；古老能量生命; 浅青白色不对称蓬松发型与头顶小翘发束; 灰紫面部；连续青白色能量人形; 不设计衣服；不增加装甲、武器、固定翅膀或多余挂件. Do not specify any pending appearance. 4-second shot. One dominant action: 澈 gives up a privileged position for one beat, then uses the resulting opening to alter the receiver\u0027s available choice. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径；本条只改变：镜头距离"
+                  },
+                  {
+                      "id":  "07",
+                      "role_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_角色\\角色库\\assets\\CH-001\\澈_城市守护者_主视觉设定图.png",
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "Close on the concrete residue of the relation: the old route remains visible while the new path stays open; 澈 does not add an unconfirmed ability.",
+                      "start_change_end":  "起始：青白能量体被城市接口按异常路径牵引；变化：Close on the concrete residue of the relation: the old route remains visible while the new path stays open; 澈 does not add an unconfirmed ability.；结束：接口失去对他的直接牵引，被遗漏生命获得一条可继续移动的保护边界",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. 澈 is the sole protagonist. Confirmed appearance: 男性；清冷少年／青年外观；古老能量生命; 浅青白色不对称蓬松发型与头顶小翘发束; 灰紫面部；连续青白色能量人形; 不设计衣服；不增加装甲、武器、固定翅膀或多余挂件. Do not specify any pending appearance. 4-second shot. One dominant action: Close on the concrete residue of the relation: the old route remains visible while the new path stays open; 澈 does not add an unconfirmed ability. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径；本条只改变：动作节拍"
+                  },
+                  {
+                      "id":  "08",
+                      "role_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_角色\\角色库\\assets\\CH-001\\澈_城市守护者_主视觉设定图.png",
+                      "scene_image_path":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\五色视觉系统\\R1_场景配色\\assets\\R1-01_森林湖泊_单色.png",
+                      "relation_direction":  "待判定：主角行动 → 某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径",
+                      "framing":  "中景，平视；小幅慢速横移",
+                      "main_action":  "澈 exits the changed space while the receiver continues independently, leaving one small next affordance for a later experiment.",
+                      "start_change_end":  "起始：青白能量体被城市接口按异常路径牵引；变化：澈 exits the changed space while the receiver continues independently, leaving one small next affordance for a later experiment.；结束：接口失去对他的直接牵引，被遗漏生命获得一条可继续移动的保护边界",
+                      "music_cut":  "4 秒；在动作完成与接收方移动的瞬间切点",
+                      "h3_prompt":  "2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. 澈 is the sole protagonist. Confirmed appearance: 男性；清冷少年／青年外观；古老能量生命; 浅青白色不对称蓬松发型与头顶小翘发束; 灰紫面部；连续青白色能量人形; 不设计衣服；不增加装甲、武器、固定翅膀或多余挂件. Do not specify any pending appearance. 4-second shot. One dominant action: 澈 exits the changed space while the receiver continues independently, leaving one small next affordance for a later experiment. Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver\u0027s state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.",
+                      "negative_constraints":  "no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation",
+                      "variable_changed":  "某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径；本条只改变：离场方向"
+                  }
+              ],
+    "microstory_prompt":  "integrated_multimodal_description: 10-second 2D hand-drawn micro-story. 2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. 澈 is the sole protagonist. Confirmed appearance: 男性；清冷少年／青年外观；古老能量生命; 浅青白色不对称蓬松发型与头顶小翘发束; 灰紫面部；连续青白色能量人形; 不设计衣服；不增加装甲、武器、固定翅膀或多余挂件. Do not specify any pending appearance. 0-3s: 澈先收回连接城市接口的一束青白能量，停顿后把能量横向铺到小型古老生命前方；生命沿新边界移动，澈保持人形而不追击。 3-6s: 澈 pauses before the other side changes, then shifts one body position to make the changed variable visible: 某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径. 6-10s: 澈 holds the new arrangement without claiming victory; the receiver moves through the newly available path while 澈 remains visibly self-directed. Keep one continuous environment reference, preserve the confirmed silhouette, and make the relation change observable through the receiver\u0027s movement. no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra characters, no exaggerated transformation.\n\noverall_soundscape: quiet environment, soft body movement, a restrained contact sound at the moment the path changes, no dialogue, no subtitles.\n\non_diegetic_music: sparse low-volume pulse, one beat at 3s and one resolving beat at 9s, no lyrical voice, no text.",
+    "recovery":  {
+                     "audience_remembers":  "他洞悉规则却不把纯粹变成蛮力：通过退出、重组与让出选择空间，显示自主判断。",
+                     "hypothesis_to_test":  "澈主动退出固定接口并把能量流向重组到被遗漏生命周围",
+                     "alternative_explanation":  "观众也可能只读到“绕路/让路”的一般机灵，未必读出十元关系；需比较下一轮单变量。",
+                     "actual_result":  "已入队_待4090D生产",
+                     "effective_observation":  "",
+                     "failure_and_cause":  "",
+                     "next_single_variable":  "回应方式"
+                 },
+    "h3":  {
+               "status":  "已入队_待4090D生产",
+               "video_path":  "",
+               "probe":  null,
+               "task_id":  "",
+               "remote_prefix":  "video/lililong/character_charm/LLL-CHARM-20260921-085528/CH-001_澈",
+               "spec":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_持续发散\\角色文字任务\\正式实验\\LLL-CHARM-20260921-024330\\h3-4090d-spec.json",
+               "check_log":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_持续发散\\角色文字任务\\正式实验\\LLL-CHARM-20260921-024330\\h3-4090d-check.log",
+               "submit_log":  "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\03_持续发散\\角色文字任务\\正式实验\\LLL-CHARM-20260921-024330\\h3-4090d-submit.log",
+               "input_mode":  "Ref2VA_role_plus_scene",
+               "reason":  "queued through Hermes channel; actual MP4, remote/local probe and human review still pending"
+           }
+}

@@ -1,4 +1,4 @@
-# Visual Inbox Watcher for Ten-Yuan visual R&D
+﻿# Visual Inbox Watcher for Ten-Yuan visual R&D
 # Watches ~/Downloads/十元视觉化 and imports images into the repository.
 # Windows PowerShell 5.1 compatible; no third-party modules required.
 
@@ -110,6 +110,24 @@ function Invoke-GitCommitPush([string]$Root, [string[]]$Paths, [string]$SampleId
         $relative += (Get-RelativePath $Root $p)
     }
 
+    # Do not let an import accidentally publish unrelated local history.
+    # Auto-push is allowed only when the tracked branch is fully synchronized
+    # before this import creates its one new commit.
+    $pushAllowed = $false
+    if (-not $NoPush) {
+        $upstream = (& git -C $Root rev-parse --abbrev-ref --symbolic-full-name '@{u}' 2>$null)
+        if ($LASTEXITCODE -eq 0 -and $upstream) {
+            $counts = ((& git -C $Root rev-list --left-right --count "$upstream...HEAD" 2>$null) -join ' ').Trim()
+            if ($counts -eq '0 0') {
+                $pushAllowed = $true
+            } else {
+                Write-Log "WARN push skipped: upstream not synchronized before import ($counts)"
+            }
+        } else {
+            Write-Log 'WARN push skipped: current branch has no upstream'
+        }
+    }
+
     & git -C $Root add -- @relative
     if ($LASTEXITCODE -ne 0) { throw "git add 失败：$SampleId" }
 
@@ -119,15 +137,17 @@ function Invoke-GitCommitPush([string]$Root, [string[]]$Paths, [string]$SampleId
         return
     }
 
-    if (-not $NoPush) {
+    if ($pushAllowed) {
         & git -C $Root push
         if ($LASTEXITCODE -ne 0) {
             Write-Log "WARN push 失败，提交已保留在本地：$SampleId"
         } else {
             Write-Log "PUSHED $SampleId"
         }
-    } else {
+    } elseif ($NoPush) {
         Write-Log "COMMITTED(no-push) $SampleId"
+    } else {
+        Write-Log "COMMITTED(no-push: upstream not synchronized) $SampleId"
     }
 }
 

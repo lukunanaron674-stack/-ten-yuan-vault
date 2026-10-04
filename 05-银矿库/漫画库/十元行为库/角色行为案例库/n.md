@@ -153,3 +153,23 @@
 
 - `SBR-DD-OKARUN-008`：灵体意外到北海道星子身边得知外星侵略危机时把危机报告给同伴，偶发遭遇被接入团队需要处理的问题范围；承接端点：侵略情报、团队安全、离体状态。`behavior-candidate` 90（DD-V12）。
 - 最近邻提醒：组织回归路线是xn、借既有关系取得方法是nx；只有把危机接住并转交团队处理算n。
+
+## 第七十二批：天马贤三
+
+- `SBR-MONSTER-TENMA-005`：Nina被捕后，天马转向寻找她，把具体被捕者接入持续行动范围；`behavior-candidate` 94（MON-2）。
+
+## 第七十三批：Thorfinn
+
+- `SBR-VINLAND-THORFINN-008`：新聚落需要维持基本生活时，Thorfinn承接分配食物、住所与协作任务；`behavior-candidate` 96（VS-11）。
+
+## 第七十四批：我王
+
+- `SBR-HINOTORI-ICHIO-003`：旅途中接触生老病死与人间疾苦时，我王持续观察并把所见带入雕刻；`behavior-candidate` 94（PH-G3）。
+
+## 第七十六批：北条时行
+
+- `SBR-ESCAPE-TOKI-006`：时行携带遗奏向天皇进言，接住并完成传达责任；`behavior-candidate`92。
+
+## 第七十八批：间黑男
+
+- `SBR-BLACKJACK-HAZAMA-006`：从奇利柯手中接走患者并实施手术，救治原则落实为行动结果；`behavior-candidate`98。

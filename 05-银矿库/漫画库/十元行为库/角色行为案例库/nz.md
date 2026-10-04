@@ -61,3 +61,11 @@
 
 - `SBR-AD-SAWAMURA-008`：中学败北后计划与原队友一起升学并再次冲击全国赛，把原队友关系与共同棒球路线保存到高中；承接端点：原队友关系与共同参赛路径。`behavior-candidate` 88（AD-1）。
 - 最近邻提醒：单向承接负担是n、组织流程是xn；只有保存并延续共同道路算nz。
+
+## 第七十五批：明治編環
+
+- `SBR-KANSHU-MEIJI-TAMAKI-001`：与周成为同学并建立亲密朋友关系，保存两人的共同同窗与友谊接口；`behavior-candidate` 88（KANSHU-PUB）。
+
+## 第七十八批：间黑男
+
+- `SBR-BLACKJACK-HAZAMA-006`不重复计nz；本批nz仅保留原BJ-38功能位，未新增基础记录。

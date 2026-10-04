@@ -1,74 +1,170 @@
 {
- "schema_version": "1.1",
- "phase": "single_behavior",
- "run_status": "READY",
- "run_id": "MANGA-BEHAVIOR-20260814-1810-KU-TAKOPI-DANDADAN-MINING",
- "source_main": "0010adf8244feabb34dfab5e37686c055c9b8fa9",
- "classification_base": "数据/单行为记录.jsonl",
- "classification_overlay": "数据/单行为归类修正清单_v1.1.jsonl",
- "overlay_rule": "read base record then replace listed fields by record_id; overlay has current classification authority",
- "target_symbol": "xn(+n+nx+zx)",
- "selection_rule": "采矿：小林（君と宇宙）n2+xn2+nx1；宇野（君と宇宙）xn3+n2；Takopi（タコピーの原罪）nx3；綾瀬桃（ダンダダン）xn5+zx3+nx1；厄卡伦（ダンダダン）xn6+zx3+n1+nx1。依据第四十七批穷举报告落库；无覆盖层变更，无locked变更。",
- "last_character": "小林 / 宇野（君と宇宙を歩くために）/ タコピー（タコピーの原罪）/ 綾瀬桃 / 高倉健（ダンダダン）",
- "last_work": "君と宇宙を歩くために / タコピーの原罪 / ダンダダン",
- "last_stage": "xn采矿16条（小林92/94，宇野96/94/96，桃95/94/96/94/96，厄卡伦95/94/94/96/95/96）；n采矿5条（小林93/95，宇野94/91，厄卡伦90）；nx采矿6条（小林89，Takopi 96/95/94，桃91，厄卡伦92）；zx采矿6条（桃93/94/95，厄卡伦94/95/95）",
- "last_record_count": 33,
- "corrected_record_count": 10,
- "counts": {
-  "zx": {
-   "works": 16,
-   "evidence_locked": 3,
-   "candidate": 30
+  "schema_version": "1.1",
+  "phase": "single_behavior",
+  "run_status": "READY",
+  "run_id": "MANGA-BEHAVIOR-20260816-1624-VAGABOND-DUNGEON-BJ-MINING",
+  "source_main": "963b4b79d27e96c09d5eab840b01751baf26c28a",
+  "classification_base": "数据/单行为记录.jsonl",
+  "classification_overlay": "数据/单行为归类修正清单_v1.1.jsonl",
+  "overlay_rule": "read base record then replace listed fields by record_id; overlay has current classification authority",
+  "target_symbol": "n+zn+xn+xz+zx+nz",
+  "selection_rule": "采矿：第三十三批已穷举但未完整入库的Vagabond、迷宫饭、怪医黑杰克；只补证据明确动作。",
+  "last_character": "宫本武藏（Vagabond）/ 莱欧斯（迷宫饭）/ 间黑男（怪医黑杰克）",
+  "last_work": "Vagabond / 迷宫饭 / 怪医黑杰克",
+  "last_stage": "基础行为总数341→348；新增n4、zn3、xn2、xz1、zx2、nz1，共7条candidate。",
+  "last_record_count": 7,
+  "corrected_record_count": 10,
+  "counts": {
+    "zx": {
+      "works": 18,
+      "evidence_locked": 3,
+      "candidate": 43
+    },
+    "z": {
+      "works": 18,
+      "evidence_locked": 3,
+      "candidate": 65
+    },
+    "zn": {
+      "works": 8,
+      "evidence_locked": 1,
+      "candidate": 38
+    },
+    "nz": {
+      "works": 5,
+      "evidence_locked": 1,
+      "candidate": 23
+    },
+    "n": {
+      "works": 19,
+      "evidence_locked": 1,
+      "candidate": 58
+    },
+    "nx": {
+      "works": 25,
+      "evidence_locked": 3,
+      "candidate": 214
+    },
+    "xn": {
+      "works": 27,
+      "evidence_locked": 7,
+      "candidate": 312
+    },
+    "x": {
+      "works": 7,
+      "evidence_locked": 1,
+      "candidate": 20
+    },
+    "xz": {
+      "works": 7,
+      "evidence_locked": 3,
+      "candidate": 22
+    },
+    "x并z": {
+      "works": 7,
+      "evidence_locked": 1,
+      "candidate": 16
+    }
   },
-  "z": {
-   "works": 18,
-   "evidence_locked": 3,
-   "candidate": 39
-  },
-  "zn": {
-   "works": 5,
-   "evidence_locked": 1,
-   "candidate": 8
-  },
-  "nz": {
-   "works": 4,
-   "evidence_locked": 1,
-   "candidate": 5
-  },
-  "n": {
-   "works": 16,
-   "evidence_locked": 1,
-   "candidate": 35
-  },
-  "nx": {
-   "works": 19,
-   "evidence_locked": 3,
-   "candidate": 37
-  },
-  "xn": {
-   "works": 21,
-   "evidence_locked": 7,
-   "candidate": 61
-  },
-  "x": {
-   "works": 6,
-   "evidence_locked": 1,
-   "candidate": 9
-  },
-  "xz": {
-   "works": 5,
-   "evidence_locked": 3,
-   "candidate": 5
-  },
-  "x并z": {
-   "works": 6,
-   "evidence_locked": 1,
-   "candidate": 7
-  }
- },
- "next_target_symbol": "x并z（补第二/第三locked）或z/xn/nx/zx各元补locked",
- "next_candidate": "x并z已补首条locked（阳菜KATAGIRI-001=96），可继续补第二/第三locked（Vladek冒充非犹太人97候选）；z已39候选3locked、n已35候选1locked、xn已61候选7locked、nx已37候选3locked、x已9候选1locked、zx已30候选3locked、xz已5候选3locked、zn已8候选1locked、nz已5候选1locked可继续补候选或各元第二/第三locked；无新原页证据时下轮避开小林、宇野、Takopi、綾瀬桃、厄卡伦。",
- "pending_issue_count": 0,
- "lease": null,
- "updated": "2026-08-14T18:10+08:00"
+  "next_target_symbol": "x并z（补第二/第三locked）或z/xn/nx/zx各元补locked",
+  "next_candidate": "避开本批三人；优先x并z第二locked或z/xn/nx/zx强证据",
+  "pending_issue_count": 0,
+  "lease": null,
+  "updated": "2026-08-16T16:24+08:00",
+  "last_stage_20260818": "基础行为 348 → 366；第七十九批18条落库（阳菜6/Vladek6/望月6）；nx、x、x并z、nz各补candidate；xn 83→89 增长最大。",
+  "selection_rule_20260818": "第七十九批3部薄轴采矿：泪雨与小夜曲·阳菜、Maus·Vladek、しねしね生徒会長·望月廉斗。",
+  "next_target_symbol_20260818": "nx（阴金）/ x（阴水）继续补跨人物 locked；xn 第八条 locked。",
+  "updated_20260818": "2026-08-18 09:37 +08:00 第七十九批落库后",
+  "last_stage_20260818_v2": "第八十批 18 条落库后 384 行；nx +2（八虎/泽村）、xn +9（八虎3/泽村4/太洲2）、x +2（太洲）、z +2（八虎/泽村）、x并z +1（八虎）、nz +1（太洲）。",
+  "selection_rule_20260818_v2": "第八十批 3 部薄轴采矿：蓝色时期·矢口八虎、钻石王牌·泽村荣纯、Low Tide in Twilight·吕太洲。",
+  "next_target_symbol_20260818_v2": "nx 跨人物第二条 locked 推进（八虎/泽村候选已就位）；xn 第八条 locked 推进（泽村 行为1/96）；x 跨作品第二条 locked 推进（太洲 行为5/96）。",
+  "updated_20260818_v2": "2026-08-18 13:37 +08:00 第八十批落库后",
+  "last_stage_20260818_v3": "第八十一批 18 条落库后 402 行；zn 候选 +1（多聞 行为5）、xn 候选 +6（刀马1/Bugle 4/多聞1）、zx +1（刀马 行为1）、nx +2（刀马 1/Bugle 1）、z +4（刀马 3/Bugle 1）、n +3（多聞 行为2/3/4）、x并z +1（多聞 行为6）。",
+  "selection_rule_20260818_v3": "第八十一批 3 部：镖人·刀马（zn 阳火 closure）、戦奏教室 / Bugle Call（首次）、多聞さんのおかしなともだち·多聞（首次）。",
+  "next_target_symbol_20260818_v3": "zn 第二条跨作品 locked（多聞 行为5/89）、n 第二条跨作品 locked（多聞 行为2/89）、xn 第八条跨作品 locked（Bugle Call 行为4/96）已就位待原页/出版强证据闭合。",
+  "updated_20260818_v3": "2026-08-18 17:38 +08:00 第八十一批落库后",
+  "last_stage_20260818_v4": "第八十二批 18 条落库后 420 行；z 候选 +4（神楽 3/武蔵 0/早名 1）、xn 候选 +9（神楽 2/武蔵 4/早名 3）、n +1、nx +1、x +3。",
+  "selection_rule_20260818_v4": "第八十二批 3 部首次入库：カグライ～神楽と雷人～、ムサシノ輪舞曲、Gizmorizer。",
+  "next_target_symbol_20260818_v4": "z 第二条跨作品 locked（神楽 行为1/95）、x 第二条跨作品 locked（早名 行为3/91）已就位。",
+  "updated_20260818_v4": "2026-08-18 21:38 +08:00 第八十二批落库后",
+  "last_stage_20260819": "第八十三批 18 条落库后 438 行；xn 候选 +9、nx +3、z +3、n +2、x +1。",
+  "selection_rule_20260819": "第八十三批 3 部首次入库：アイツノカノジョ·彼女、はめつのおうこく·剣子、ヴァンパイドル滾·今泉ゴロー。",
+  "next_target_symbol_20260819": "z 阳火第二条跨作品 locked 候选（剣子 行为6/95）、xn 阳金第八条跨作品 locked 候选（待新闭合）。",
+  "updated_20260819": "2026-08-19 01:38 +08:00 第八十三批落库后",
+  "last_stage_20260819_v2": "第八十四批 18 条落库后 456 行；xn 候选 +11（循菜6/女高中生1/珠子4）、nx +5（女高中生5）、n +1、zn +1。",
+  "selection_rule_20260819_v2": "第八十四批 3 部：アイドラトリィ·陽見循菜（closure 升级）、二月に殺して桜に埋める·女高中生（首次）、まなざし珠子の自由研究·珠子（首次）。",
+  "next_target_symbol_20260819_v2": "xn 阳金第八条跨作品 locked 候选（循菜 行为1/96）已就位；zn 跨作品第二条 locked 候选（珠子 行为5/85）已就位。",
+  "updated_20260819_v2": "2026-08-19 05:38 +08:00 第八十四批落库后",
+  "last_stage_20260819_v3": "第八十五批 18 条落库后 474 行；xn 候选 +9（Genikasuri 4/菌と鉄 5）、nx +4（Genikasuri 2/菌と鉄 1/303号室 1）、n +3（303号室 3）、x并z +2（303号室 2）。",
+  "selection_rule_20260819_v3": "第八十五批 3 部首次入库：Genikasuri、菌と鉄、303号室の神さま。",
+  "next_target_symbol_20260819_v3": "n 阳土第二条跨作品 locked 候选（303号室 行为6/93）已就位；x并z 阴木跨作品第二条 locked 候选（303号室 行为4/88）已就位。",
+  "updated_20260819_v3": "2026-08-19 09:38 +08:00 第八十五批落库后",
+  "last_stage_20260819_v4": "第八十六批 18 条落库后 492 行；xn 候选 +10（新人ホステス 4/高个子 3/ヤクザ 3）、nx +8（新人ホステス 2/高个子 3/ヤクザ 3）。",
+  "selection_rule_20260819_v4": "第八十六批 3 部首次入库：ホストと社畜·新人ホステス、ケツバトラー·高个子、飲み食い道楽～日本統一～·ヤクザ。",
+  "next_target_symbol_20260819_v4": "薄轴继续：xn 阳金总 181 candidate 7 locked；nx 阳金 91 candidate 3 locked。",
+  "updated_20260819_v4": "2026-08-19 13:39 +08:00 第八十六批落库后",
+  "last_stage_20260820": "第八十七批 18 条落库后 510 行；xn 候选 +10（女高中生 4/中三 3/巫女 3）、nx +8（女高中生 2/中三 3/巫女 3）。",
+  "selection_rule_20260820": "第八十七批 3 部首次入库：とりまとまります、ほんとうに怖い中学受験、鬼狩り神社の守り姫。",
+  "next_target_symbol_20260820": "xn 阳金总 191 candidate 7 locked；nx 阳金 99 candidate 3 locked。",
+  "updated_20260820": "2026-08-20 04:11 +08:00 第八十七批落库后",
+  "last_stage_20260820_v2": "第八十八批 18 条落库后 528 行；xn +7、nx +9、n +1、z +1。",
+  "selection_rule_20260820_v2": "第八十八批 2 部首次 + 1 部 closure：美大生・月浪縁の怪談、Live Memorium、剑豪生死斗·藤木源之助。",
+  "next_target_symbol_20260820_v2": "xn 阳金总 198 candidate 7 locked；nx 阳金 108 candidate 3 locked。",
+  "updated_20260820_v2": "2026-08-20 08:11 +08:00 第八十八批落库后",
+  "last_stage_20260820_v3": "第八十九批 18 条落库后 546 行；xn +7、nx +11。",
+  "selection_rule_20260820_v3": "第八十九批 3 部首次入库：友達だった人、スパダリ王子様の狂い愛、竜の番のキノコ姫。",
+  "next_target_symbol_20260820_v3": "xn 阳金总 205 candidate 7 locked；nx 阳金 119 candidate 3 locked。",
+  "updated_20260820_v3": "2026-08-20 12:11 +08:00 第八十九批落库后",
+  "last_stage_20260821": "第九十批 18 条落库后 564 行；xn +11、zn +1、nx +7。",
+  "selection_rule_20260821": "第九十批 2 部 closure + 1 部首次：Vagabond·宫本武藏、Monoiku·主人公、本なら売るほど·十月堂主人。",
+  "next_target_symbol_20260821": "xn 阳金第八条跨作品 locked 候选（武藏 行为4/93、Monoiku 行为6/93）；nx 阳金接近 130 candidate 3 locked。",
+  "updated_20260821": "2026-08-21 08:40 +08:00 第九十批落库后",
+  "last_stage_20260821_v2": "第九十一批 18 条落库后 582 行；xn +11、nx +6、zn +1。",
+  "selection_rule_20260821_v2": "第九十一批 3 部：神引きのモナーク（首次）、Vinland Saga·Askeladd（closure）、Vinland Saga·Einar（closure）。",
+  "next_target_symbol_20260821_v2": "xn 阳金第八条跨作品 locked 候选（Askeladd 行为1/94）；nx 接近 135 candidate 3 locked。",
+  "updated_20260821_v2": "2026-08-20 20:12 +08:00 第九十一批落库后",
+  "last_stage_20260821_v3": "第九十二批 18 条落库后 600 行；xn +13、nx +5。",
+  "selection_rule_20260821_v3": "第九十二批 3 部 Vinland Saga closure：Canute、Karli、Thorfinn 补强。",
+  "next_target_symbol_20260821_v3": "xn 阳金总 240 candidate 7 locked；nx 接近 140 candidate 3 locked。",
+  "updated_20260821_v3": "2026-08-21 00:12 +08:00 第九十二批落库后",
+  "last_stage_20260821_v4": "第九十三批 18 条落库后 618 行；xn +12、nx +6。",
+  "selection_rule_20260821_v4": "第九十三批 3 部 closure：MONSTER 田村勝、Rurouni Kenshin 绯村剑心、进击的巨人 三笠。",
+  "next_target_symbol_20260821_v4": "xn 阳金总 252 candidate 7 locked；nx 阳金 143 candidate 3 locked。",
+  "updated_20260821_v4": "2026-08-21 04:12 +08:00 第九十三批落库后",
+  "last_stage_20260821_v5": "第九十四批 18 条落库后 636 行；xn +8、nx +9、zx +1。",
+  "selection_rule_20260821_v5": "第九十四批 3 部 closure：BLUE GIANT 宫本大、剑豪生死斗 伊良子清玄、进击的巨人 Eren Yeager。",
+  "next_target_symbol_20260821_v5": "xn 阳金总 260 candidate 7 locked；nx 阳金 152 candidate 3 locked。",
+  "updated_20260821_v5": "2026-08-21 08:12 +08:00 第九十四批落库后",
+  "last_stage_20260821_v6": "第九十五批 18 条落库后 654 行；xn +6、nx +11、nz +1。",
+  "selection_rule_20260821_v6": "第九十五批 3 部 closure：灌篮高手 樱木花道、MONSTER 天马贤三、钻石王牌 泽村荣纯 补 nz。",
+  "next_target_symbol_20260821_v6": "xn 阳金第八条跨作品 locked 候选推进（樱木 95、天马 95）；nz 阴土第二条跨作品 locked 候选就位（泽村 89）。",
+  "updated_20260821_v6": "2026-08-21 12:12 +08:00 第九十五批落库后",
+  "last_stage_20260822": "第九十七批 18 条落库后 690 行；xn +8、nx +4、zn +3、z +1、nz +2。",
+  "selection_rule_20260822": "第九十七批 3 部 推しの子 主题解构首次入库：星野愛（偶像狂热）、有馬かな（Girl Crush）、星野ルビー（偶像反转）。",
+  "next_target_symbol_20260822": "zn 阳火总 30 candidate 1 locked；z 阴火 64 candidate 3 locked。",
+  "updated_20260822": "2026-08-22 第九十七批落库后",
+  "last_stage_20260821_v7": "第九十八批 18 条落库后 708 行；xn +8、nx +8、nz +4、zn +1。",
+  "selection_rule_20260821_v7": "第九十八批 3 部 closure：进击的巨人 卡尔拉（首次 closure）、推しの子 黒川あかね（首次 closure）、伪葬家の一族 主人公（标题级 closure）。",
+  "next_target_symbol_20260821_v7": "nz 阴土第七条跨作品 locked 候选推进（卡尔拉 行为3/96）；zn 阳火第九条跨作品 locked 候选推进（黑川 行为4/95）。",
+  "updated_20260821_v7": "2026-08-21 22:43 +08:00 第九十八批落库后",
+  "last_stage_20260822_v2": "第九十九批 18 条落库后 726 行；xn +8、nx +8、nz +1、z +1。",
+  "selection_rule_20260822_v2": "第九十九批 3 部首次入库 closure：进击的巨人 阿尔敏、推しの子 MEMちょ、推しの子 啾太郎。",
+  "next_target_symbol_20260822_v2": "xn 阳金第九条跨作品 locked 候选就位（阿尔敏 行为6/95）；nz 第十条跨作品 locked 候选就位（MEMちょ 行为6/94）；z 第十条跨作品 locked 候选就位（啾太郎 行为5/96）。",
+  "updated_20260822_v2": "2026-08-22 02:44 +08:00 第九十九批落库后",
+  "last_stage_20260822_v3": "第一百批 18 条落库后 744 行；xn +5、nx +8、nz +5。",
+  "selection_rule_20260822_v3": "第一百批 3 部 closure：进击的巨人 萨莎（首次 closure）、推しの子 五反田らん（首次 closure）、进击的巨人 卡尔拉 V2 closure 升级。",
+  "next_target_symbol_20260822_v3": "nx 阴土第十一条跨作品 locked 候选就位（萨莎 行为6/94）；nx 阳金第十条跨作品 locked 候选就位（五反田らん 行为5/93）；nz 阴土第十一条跨作品 locked 候选就位（卡尔拉 V2 行为3/96）。",
+  "updated_20260822_v3": "2026-08-22 06:44 +08:00 第一百批落库后",
+  "last_stage_20260822_v4": "第一百零一批 18 条落库后 762 行；xn +12、nx +4、zn +1、xz +1。",
+  "selection_rule_20260822_v4": "第一百零一批 3 部克制十元实验：进击的巨人 三笠（金克土）、镖人 刀马（火克金）、器官拼图 无名女太空人（水克火）。",
+  "next_target_symbol_20260822_v4": "xn 阳金第八条跨作品 locked 候选就位（三笠 V2-005/96 金克土）；zn 阳火第九条跨作品 locked 候选就位（刀马 V2-005/93 火克金）；xz 阳水第九条跨作品 locked 候选就位（无名女太空人 V2-006/93 水克火）。",
+  "updated_20260822_v4": "2026-08-22 第一百零一批克制十元实验落库后",
+  "last_stage_20260822_v5": "第一百零二批 18 条落库后 780 行；xn +5、nx +1、zn +6、xz +6。",
+  "selection_rule_20260822_v5": "第一百零二批 3 部克制十元实验（阳-阳严格）：进击的巨人 三笠 V3（金克木）、幽游白书 浦饭 V2（火克金）、推しの子 黑川あかね V2（水克火）。",
+  "next_target_symbol_20260822_v5": "xn 第九条跨作品 locked 候选（三笠 V3 5 条 ≥91）；zn 第十条跨作品 locked 候选（浦饭 V2 6 条 ≥90）；xz 第十条跨作品 locked 候选（黑川 V2 6 条 ≥90）。",
+  "updated_20260822_v5": "2026-08-22 第一百零二批克制十元实验落库后",
+  "last_stage_20260822_v6": "第一百零三批 18 条落库后 798 行；nx +18。",
+  "selection_rule_20260822_v6": "第一百零三批 3 部克制十元实验（阴-阴 nx 克 x并z）：进击的巨人 三笠 V4、推しの子 露比 V2、进击的巨人 萨莎 V2。",
+  "next_target_symbol_20260822_v6": "nx 阴金第三条跨作品 locked 候选就位（三笠 V4 6 条 + 露比 V2 6 条 + 萨莎 V2 6 条 均 ≥90）；克制十元第四轮补 木克土 zx→n 与 土克水 n→xz。",
+  "updated_20260822_v6": "2026-08-22 第一百零三批克制十元实验落库后"
 }

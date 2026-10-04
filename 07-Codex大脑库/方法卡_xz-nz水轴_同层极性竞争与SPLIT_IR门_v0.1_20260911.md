@@ -18,7 +18,7 @@ canonical_refs:
 evidence_refs:
   - 07-Codex大脑库/xz-nz水轴研究总纲_20260904.md
   - 07-Codex大脑库/方法卡_xz-nz水轴_closed-to-open_recovery-gate_v0.1_20260911.md
-  - 14-角色库/发散引擎/研究/运行记录_十元语义解释器_xz-vs-nz_回返权极性与路径收窄分账_20260907.md
+  - 14-角色库/04_发散引擎/发散引擎/研究/运行记录_十元语义解释器_xz-vs-nz_回返权极性与路径收窄分账_20260907.md
 ---
 
 # xz ↔ nz 水轴｜同层极性竞争与 SPLIT_IR 门 v0.1

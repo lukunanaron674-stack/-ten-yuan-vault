@@ -34,12 +34,12 @@ v0.2 冻结为：
 
 ## 与已验证案例一致
 
-参考：`14-角色库/X/X_9种发型.canvas`
+参考：`14-角色库/01_发型/X/X_9种发型.canvas`
 
 ```json
 {
   "type": "file",
-  "file": "14-角色库/X/assets/x_bangs_9_grid.png"
+  "file": "14-角色库/01_发型/X/assets/x_bangs_9_grid.png"
 }
 ```
 

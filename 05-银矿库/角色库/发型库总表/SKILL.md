@@ -5,8 +5,8 @@ status: active
 skill_grade: S
 failure_mode: fail-closed
 scope: 05-银矿库/角色库/发型库总表
-rule_source: 14-角色库/刘海98种/SKILL.md
-image_rule_source: 14-角色库/刘海98种/skills/S级_真实参考图片采集/SKILL.md
+rule_source: 14-角色库/01_发型/刘海98种/SKILL.md
+image_rule_source: 14-角色库/01_发型/刘海98种/skills/S级_真实参考图片采集/SKILL.md
 ---
 
 # 女性发型库真实配图执行 Skill v1.0

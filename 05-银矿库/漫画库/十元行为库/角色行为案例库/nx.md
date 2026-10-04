@@ -173,9 +173,49 @@
 - `SBR-DD-MOMO-007`：需要确认在派出所取得金球的人、自己缺少调查权限时请求Turbo Granny进入既有通道调查，调查获得由既有角色提供的权限接口；方向端点：Turbo Granny关系、警察系统权限、调查入口。`behavior-candidate` 91（DD-V16）。
 - 最近邻提醒：主导调查流程是xn、直接硬闯是zx；只有沿既有角色权限入口推进算nx。
 
+## 第七十二批：天马贤三 / 矢口八虎
+
+- `SBR-MONSTER-TENMA-006`：天马请求Gillen医生分析Johan，沿犯罪心理学权威接口取得判断；`behavior-candidate` 94（MON-3）。
+- `SBR-MONSTER-TENMA-008`：天马从邻居处取得双胞胎、秘密警察与火灾信息，沿证言入口推进调查；`behavior-candidate` 92（MON-6）。
+- `SBR-BLUEPERIOD-YATORA-002`：八虎向同伴与大师学习独有作品构想；`behavior-candidate` 95（BP-2）。
+- `SBR-BLUEPERIOD-YATORA-003`：八虎参加第一次美术竞赛，把作品送入外部评价流程；`behavior-candidate` 92（BP-2）。
+- `SBR-BLUEPERIOD-YATORA-004`：八虎接受大叶老师挑战并按100天期限完成训练任务；`behavior-candidate` 96（BP-3）。
+- `SBR-BLUEPERIOD-YATORA-007`：八虎借旧友离开画室并切换光线环境，接回创作路线；`behavior-candidate` 92（BP-5）。
+- `SBR-BLUEPERIOD-YATORA-009`：八虎进入并应对第二次考试，沿正式艺考流程继续；`behavior-candidate` 94（BP-6）。
+
 ## 《ダンダダン》高倉健 / 厄卡伦
 
 ### 候选：沿既有角色接口取得方法与路径（nx 阴金）
 
 - `SBR-DD-OKARUN-009`：离体后缺少返回身体与参战方法时向Turbo Granny取得战斗提示和返回方法，沿既有角色接口获得可执行路径；方向端点：Turbo Granny关系、身体归位、援军通道。`behavior-candidate` 92（DD-V12）。
 - 最近邻提醒：执行返回路线是xn（OKARUN-010）、应用提示战斗是zx（OKARUN-006）；只有取得方法/借道本身算nx，不与其后执行重叠。
+
+## 第七十三批：Kevin Yamagata / 成年Jimmy / Thorfinn
+
+- `SBR-BILLYBAT-KEVIN-002`：外部预言只提供方向时，Kevin建立自己的调查判断；`behavior-candidate` 94（BB-5）。
+- `SBR-BILLYBAT-KEVIN-004`：卷轴信息与现实冲突时，Kevin独立核对并权衡两者；`behavior-candidate` 95（BB-8）。
+- `SBR-BILLYBAT-KEVIN-005`：面对Billy Bat相关风险时，Kevin继续以自身判断筛选行动入口；`behavior-candidate` 96（BB-18）。
+- `SBR-JIMMYCORRIGAN-JIMMY-001`：母亲来电触发家庭信息缺口时，成年Jimmy接听并处理来电；`behavior-candidate` 96（JC-G07）。
+- `SBR-JIMMYCORRIGAN-JIMMY-002`：父亲邀请见面时，成年Jimmy接受邀约并前往会面；`behavior-candidate` 97（JC-PRH）。
+- `SBR-JIMMYCORRIGAN-JIMMY-004`：家庭团聚安排出现时，成年Jimmy实际参加感恩节会面；`behavior-candidate` 93（JC-G01）。
+- `SBR-VINLAND-THORFINN-002`：赎身后需要确定下一步方向时，Thorfinn把离开奴隶身份后的行动范围接上远征准备；`behavior-candidate` 92（VS-5）。
+
+## 第七十四批：我王
+
+- `SBR-HINOTORI-ICHIO-002`：良弁救下并给出同行方向时，我王停止原路线，随良弁周游诸国；`behavior-candidate` 96（PH-G2）。
+
+## 第七十五批：黒田康弘 / 戦後編周
+
+- `SBR-LOSTSTELLA-KURODA-003`：无法成佛时接受支配人安排进入酒店工作，把罪清算接上可日常运行的岗位；`behavior-candidate` 90（ROSTEL-PUB）。
+- `SBR-KANSHU-POSTWAR-SHU-001`：战后复员后在闇市与元上官环再会，沿旧关系接口回到现实位置；`behavior-candidate` 87（KANSHU-PUB）。
+
+## 第七十六批：北条时行 / りんたろう / 千飒与影艳
+
+- `SBR-ESCAPE-TOKI-004/007`：时行按吹雪方案执行暗杀、接受高坂建议返回信浓；`behavior-candidate`90/89。
+- `SBR-1BY24-RINTARO-003/004`：りんたろう加入东映动画与虫制作，沿外部组织接口续接职业路线；`behavior-candidate`90/88。
+- `SBR-EARTHIAN-SENSATSU-002`、`SBR-EARTHIAN-EIEN-001`：千飒与影艳沿调查职务路线降落地球；`behavior-candidate`88/90。
+
+## 第七十七批：樱木花道 / 电次
+
+- `SBR-SLAMDUNK-SAKURAGI-004`：按安西指示拼抢进攻篮板；`behavior-candidate`95。
+- `SBR-CSM-DENJI-004/005`：沿教官训练路线、真纪真救助通道行动；`behavior-candidate`93/96。

@@ -1,0 +1,285 @@
+filters:
+  and:
+    - file.inFolder("09-给674（我）用的库/率土之滨AI短视频")
+    - 'file.ext == "md"'
+    - or:
+        - '类型 == "短视频企划"'
+        - '类型 == "单角色视频任务卡"'
+        - '类型 == "5090批次工单"'
+        - '类型 == "卡级管理"'
+
+formulas:
+  总分: 'if(笑点评分 && 爆点评分, 笑点评分 + 爆点评分, "")'
+  企划状态: 'if(状态, 状态, "未标记")'
+  任务进度: 'if(交付状态 == "已交付", "✅ 已交付", if(生成状态 == "已生成", "🟣 待交付", if(提交状态 == "已提交", "🔵 已提交", if(可执行, "🟡 可执行", "⚪ 待确认"))))'
+  下一动作: 'if(交付状态 == "已交付", "已闭环", if(生成状态 == "已生成", "验收并交付", if(提交状态 == "已提交", "等待生成/回写", if(可执行, "可提交", "补确认或材料"))))'
+
+properties:
+  编号:
+    displayName: 编号
+  标题:
+    displayName: 标题
+  核心梗:
+    displayName: 核心梗
+  企划类型:
+    displayName: 企划类型
+  笑点评分:
+    displayName: 笑点
+  爆点评分:
+    displayName: 爆点
+  formula.总分:
+    displayName: 总分
+  时长:
+    displayName: 时长
+  状态:
+    displayName: 状态
+  素材状态:
+    displayName: 素材状态
+  任务卡:
+    displayName: 任务卡
+  描述词:
+    displayName: 描述词
+  视频:
+    displayName: 成片
+  来源备注:
+    displayName: 来源／备注
+  项目:
+    displayName: 项目
+  企划:
+    displayName: 企划
+  视频标题:
+    displayName: 视频标题
+  角色:
+    displayName: 角色
+  角色参考:
+    displayName: 角色参考
+  输入图:
+    displayName: 输入图
+  输出时长:
+    displayName: 输出时长
+  画幅:
+    displayName: 画幅
+  核心动作:
+    displayName: 核心动作
+  分镜时间:
+    displayName: 分镜时间
+  当前阶段:
+    displayName: 当前阶段
+  锁定:
+    displayName: 锁定
+  工单号:
+    displayName: 工单号
+  批次名称:
+    displayName: 批次名称
+  任务数量:
+    displayName: 任务数量
+  批次任务序号:
+    displayName: 任务序号
+  提交状态:
+    displayName: 提交状态
+  任务状态:
+    displayName: 任务状态
+  执行器:
+    displayName: 执行器
+  模型:
+    displayName: 模型
+  预期输出:
+    displayName: 预期输出
+  完成证据:
+    displayName: 完成证据
+  审批状态:
+    displayName: 审批状态
+  描述词状态:
+    displayName: 描述词状态
+  首帧状态:
+    displayName: 首帧状态
+  生成状态:
+    displayName: 生成状态
+  交付状态:
+    displayName: 交付状态
+  可执行:
+    displayName: 可执行
+  阻塞原因:
+    displayName: 阻塞原因
+  验证计划状态:
+    displayName: 验证计划
+  验证默认画幅:
+    displayName: 验证画幅
+  验证默认步数:
+    displayName: 验证步数
+  验证功率模式:
+    displayName: 验证功率
+  formula.任务进度:
+    displayName: 进度
+  formula.下一动作:
+    displayName: 下一动作
+
+views:
+  - type: table
+    name: 全部短视频企划
+    filters: '类型 == "短视频企划"'
+    order:
+      - 编号
+      - 标题
+      - 核心梗
+      - 笑点评分
+      - 爆点评分
+      - formula.总分
+      - 时长
+      - 状态
+      - 素材状态
+      - 任务卡
+      - 视频
+
+  - type: table
+    name: 单角色视频｜15秒任务卡
+    filters: '类型 == "单角色视频任务卡"'
+    order:
+      - 编号
+      - 视频标题
+      - 角色
+      - 输出时长
+      - 画幅
+      - 核心动作
+      - 当前阶段
+      - 锁定
+      - 审批状态
+      - 工单号
+      - 任务状态
+      - 任务卡
+      - 描述词
+      - 视频
+      - 生成状态
+      - 交付状态
+      - formula.任务进度
+      - formula.下一动作
+      - 可执行
+      - 阻塞原因
+
+  - type: table
+    name: 因果企划
+    filters:
+      and:
+        - '类型 == "短视频企划"'
+        - '企划类型 == "因果企划"'
+    order:
+      - 编号
+      - 标题
+      - 核心梗
+      - 笑点评分
+      - 爆点评分
+      - formula.总分
+      - 输出时长
+      - 状态
+      - 工单号
+      - 任务状态
+
+  - type: table
+    name: 工单｜全部批次
+    filters: '类型 == "5090批次工单"'
+    order:
+      - 工单号
+      - 项目
+      - 批次名称
+      - 任务数量
+      - 任务状态
+      - 审批状态
+      - 提交状态
+      - 生成状态
+      - 交付状态
+      - formula.任务进度
+      - formula.下一动作
+      - 执行器
+      - 模型
+      - 任务卡
+      - 完成证据
+
+  - type: table
+    name: 待打磨企划
+    filters:
+      or:
+        - '状态 == "待打磨"'
+        - '状态 == "待重写"'
+    order:
+      - 编号
+      - 标题
+      - 核心梗
+      - 笑点评分
+      - 爆点评分
+      - formula.总分
+      - 来源备注
+
+  - type: table
+    name: 高分候选
+    filters:
+      and:
+        - '类型 == "短视频企划"'
+        - 'formula.总分 >= 16'
+    order:
+      - 编号
+      - 标题
+      - 笑点评分
+      - 爆点评分
+      - formula.总分
+      - 状态
+
+  - type: table
+    name: 任务卡｜待确认与阻塞
+    filters:
+      and:
+        - '类型 == "单角色视频任务卡"'
+        - '可执行 == false'
+    order:
+      - 编号
+      - 视频标题
+      - 角色
+      - 当前阶段
+      - 审批状态
+      - 首帧状态
+      - 描述词状态
+      - 任务状态
+      - 提交状态
+      - 阻塞原因
+
+  - type: table
+    name: 任务卡｜可执行但未提交
+    filters:
+      and:
+        - '类型 == "单角色视频任务卡"'
+        - '可执行 == true'
+        - '提交状态 == "未提交"'
+    order:
+      - 编号
+      - 视频标题
+      - 执行器
+      - 模型
+      - 画幅
+      - 输出时长
+      - formula.下一动作
+      - 任务卡
+      - 阻塞原因
+
+  - type: table
+    name: 任务卡｜已生成待交付
+    filters:
+      and:
+        - '类型 == "单角色视频任务卡"'
+        - '生成状态 == "已生成"'
+        - '交付状态 != "已交付"'
+    order:
+      - 编号
+      - 视频标题
+      - 视频
+      - 生成状态
+      - 交付状态
+      - 完成证据
+      - formula.下一动作
+
+  - type: cards
+    name: 企划卡片
+    order:
+      - 标题
+      - 核心梗
+      - formula.总分
+      - 状态
+      - 素材状态

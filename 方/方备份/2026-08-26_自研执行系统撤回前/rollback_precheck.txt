@@ -1,0 +1,40 @@
+DATE: 2026-08-26
+VAULT: 
+C:\Users\19308\Documents\Obsidian\ten-yuan-vault
+--- git status ---
+ M .obsidian/app.json
+ M .obsidian/appearance.json
+ M "\346\226\271/09_Codex\346\211\247\350\241\214/\347\254\254\344\270\200\345\271\225/FZM-1-2-H3.md"
+ M "\346\226\271/\346\226\271\345\277\227\346\225\217\344\273\273\345\212\241\345\215\241\345\217\221\346\225\243\346\240\221.canvas"
+?? "\346\226\271/Canvas_\345\244\207\344\273\275/FZM-1-2-H3_before-bindtarget-bracket-fix-20260826.md"
+?? "\346\226\271/Canvas_\345\244\207\344\273\275/FZM-1-2-H3_before-preview-review-clean-20260826.md"
+--- git diff --stat ---
+ .obsidian/app.json                                 |   3 +
+ .obsidian/appearance.json                          |   6 +-
+ .../FZM-1-2-H3.md"                                 |  63 +++--------
+ ...241\345\217\221\346\225\243\346\240\221.canvas" | 126 +++++++++------------
+ 4 files changed, 73 insertions(+), 125 deletions(-)
+--- git diff name-status ---
+M	.obsidian/app.json
+M	.obsidian/appearance.json
+M	"\346\226\271/09_Codex\346\211\247\350\241\214/\347\254\254\344\270\200\345\271\225/FZM-1-2-H3.md"
+M	"\346\226\271/\346\226\271\345\277\227\346\225\217\344\273\273\345\212\241\345\215\241\345\217\221\346\225\243\346\240\221.canvas"
+--- custom-process scan ---
+
+ProcessId Name            CommandLine
+--------- ----            -----------
+    31028 photolaunch.exe "C:\Program Files (x86)\WPS Office\12.1.0.28043\office6\photolaunch.exe" /photo /view "C:\Use…
+    18488 photolaunch.exe "C:\Program Files (x86)\WPS Office\12.1.0.28043\office6\photolaunch.exe" /photo /view "C:\Use…
+    34656 photolaunch.exe "C:\Program Files (x86)\WPS Office\12.1.0.28043\office6\photolaunch.exe" /photo /view "C:\Use…
+    36200 pwsh.exe        "C:\Users\19308\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pw…
+
+
+--- normal ComfyUI scan ---
+
+ProcessId Name       CommandLine
+--------- ----       -----------
+    27912 python.exe "E:\ComfyUI_portable\ComfyUI_windows_portable\python_embeded\python.exe" -s "E:\ComfyUI_portable\C…
+
+
+--- HEAD ---
+e7a2b353db717a332686430ec4371c8e715f5982

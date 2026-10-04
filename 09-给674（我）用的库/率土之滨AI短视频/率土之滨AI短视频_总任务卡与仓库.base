@@ -1,0 +1,199 @@
+filters:
+  or:
+    - and:
+        - file.inFolder("09-给674（我）用的库/率土之滨AI短视频/05_任务仓库")
+        - '类型 == "卡级管理"'
+    - and:
+        - file.inFolder("09-给674（我）用的库/率土之滨AI短视频/03_任务卡与描述词")
+        - '类型 == "5090批次工单"'
+
+formulas:
+  进度标签: 'if(交付状态 == "已交付", "✅ 已交付", if(生成状态 == "已生成", "🟣 待交付", if(提交状态 == "已提交", "🔵 已提交", if(可执行, "🟡 可执行", "⚪ 待确认"))))'
+  下一动作: 'if(交付状态 == "已交付", "已闭环", if(生成状态 == "已生成", "验收并交付", if(提交状态 == "已提交", "等待生成/回写", if(可执行, "可提交", "补确认或材料"))))'
+
+properties:
+  谁:
+    displayName: 谁（执行端）
+  预计总生成时间:
+    displayName: 预计总生成时间
+  实际完成时间:
+    displayName: 实际完成时间
+  卡号:
+    displayName: 卡号
+  任务:
+    displayName: 任务
+  生产材料:
+    displayName: 生产材料＊
+  结果:
+    displayName: 结果
+  花费时间:
+    displayName: 花费时间
+  任务卡:
+    displayName: 任务卡
+  描述词:
+    displayName: 生成的描述词
+  输入图:
+    displayName: 输入图／角色卡
+  输出时长:
+    displayName: 输出时长
+  当前阶段:
+    displayName: 当前阶段
+  任务状态:
+    displayName: 任务状态
+  提交状态:
+    displayName: 提交状态
+  工单号:
+    displayName: 工单号
+  完成证据:
+    displayName: 完成证据
+  来源备注:
+    displayName: 来源／备注
+  批次名称:
+    displayName: 批次名称
+  任务数量:
+    displayName: 任务数量
+  执行器:
+    displayName: 执行器
+  模型:
+    displayName: 模型
+  审批状态:
+    displayName: 审批状态
+  描述词状态:
+    displayName: 描述词状态
+  首帧状态:
+    displayName: 首帧状态
+  生成状态:
+    displayName: 生成状态
+  交付状态:
+    displayName: 交付状态
+  可执行:
+    displayName: 可执行
+  阻塞原因:
+    displayName: 阻塞原因
+  验证计划状态:
+    displayName: 验证计划
+  验证默认画幅:
+    displayName: 验证画幅
+  验证默认步数:
+    displayName: 验证步数
+  验证功率模式:
+    displayName: 验证功率
+  formula.进度标签:
+    displayName: 进度
+  formula.下一动作:
+    displayName: 下一动作
+
+views:
+  - type: table
+    name: 总任务卡｜生产材料仓库
+    filters: '类型 == "卡级管理"'
+    order:
+      - 谁
+      - 预计总生成时间
+      - 实际完成时间
+      - 卡号
+      - 任务
+      - 生产材料
+      - 结果
+      - 花费时间
+      - 任务卡
+      - 描述词
+      - 任务状态
+      - 审批状态
+      - 提交状态
+      - 生成状态
+      - 交付状态
+      - formula.进度标签
+      - formula.下一动作
+      - 可执行
+      - 阻塞原因
+      - 工单号
+
+  - type: table
+    name: 5090云端工单
+    filters: '类型 == "5090批次工单"'
+    order:
+      - 工单号
+      - 批次名称
+      - 谁
+      - 任务数量
+      - 任务状态
+      - 审批状态
+      - 提交状态
+      - 生成状态
+      - 交付状态
+      - formula.进度标签
+      - formula.下一动作
+      - 执行器
+      - 模型
+      - 验证计划状态
+      - 验证默认画幅
+      - 验证默认步数
+      - 任务卡
+      - 完成证据
+
+  - type: table
+    name: 待安排／待确认
+    filters:
+      and:
+        - '类型 == "卡级管理"'
+        - '任务状态 != "已完成"'
+    order:
+      - 卡号
+      - 任务
+      - 生产材料
+      - 谁
+      - 审批状态
+      - 任务状态
+      - 提交状态
+      - 生成状态
+      - 交付状态
+      - formula.下一动作
+      - 工单号
+
+  - type: table
+    name: 已有结果
+    filters:
+      and:
+        - '类型 == "卡级管理"'
+        - '结果 != ""'
+    order:
+      - 卡号
+      - 任务
+      - 结果
+      - 花费时间
+      - 实际完成时间
+      - 完成证据
+
+  - type: table
+    name: 5090工单｜执行闸门
+    filters:
+      and:
+        - '类型 == "5090批次工单"'
+        - '可执行 == true'
+        - '提交状态 == "未提交"'
+    order:
+      - 工单号
+      - 批次名称
+      - 执行器
+      - 模型
+      - 验证默认画幅
+      - 验证默认步数
+      - formula.下一动作
+      - 阻塞原因
+
+  - type: table
+    name: 5090工单｜验证计划
+    filters:
+      and:
+        - '类型 == "5090批次工单"'
+        - '验证计划状态 != ""'
+    order:
+      - 工单号
+      - 批次名称
+      - 验证计划状态
+      - 验证默认画幅
+      - 验证默认步数
+      - 验证功率模式
+      - 提交状态
+      - 完成证据

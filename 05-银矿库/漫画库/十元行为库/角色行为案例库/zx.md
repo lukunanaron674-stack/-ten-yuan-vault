@@ -167,3 +167,31 @@
 - `SBR-DD-OKARUN-006`：作曲家发动袭击且Turbo Granny给出提示时应用提示击败作曲家，把外部提示转成当场战斗的直接执行；权能端点：作曲家、直接攻击、执行后的胜负结果。`behavior-candidate` 95（DD-V8）。
 - `SBR-DD-OKARUN-007`：训练后邪视即将被祓除时主动向邪视提出胜负挑战，把训练投入由他主动发起的直接对抗；权能端点：邪视、挑战声明、直接发起的胜负。`behavior-candidate` 95（DD-V8）。
 - 最近邻提醒：取得提示是nx、组织回归路线是xn；只有直接执行战斗/发起胜负算zx，不与取得方法重叠。
+
+## 第七十二批：Agni
+
+- `SBR-FIREPUNCH-AGNI-002`：Agni公开立下针对Doma的复仇誓言，把生存转成外部目标；`behavior-candidate` 93（FP-1）。
+- `SBR-FIREPUNCH-AGNI-003`：Agni与Doma交战，把复仇目标推进为直接战斗；`behavior-candidate` 96（FP-2）。
+- `SBR-FIREPUNCH-AGNI-008`：Agni焚毁挡路的人和物并前往Judah，以直接破坏清开路线；`behavior-candidate` 98（FP-8）。
+
+## 第七十三批：Thorfinn
+
+- `SBR-VINLAND-THORFINN-001`：决定寻找没有战争与奴役的新土地后，Thorfinn明确选择前往文兰的现实目标；`behavior-candidate` 96（VS-1）。
+
+## 第七十四批：我王
+
+- `SBR-HINOTORI-ICHIO-001`：以盗贼方式夺取生存资源时，我王抢劫并打伤茜丸惯用手；`behavior-candidate` 98（PH-G1）。
+
+## 第七十六批：北条时行
+
+- `SBR-ESCAPE-TOKI-009`：时行使出“鬼心仏刀”斩断师冬野心，以个人招式直接压制对手；`behavior-candidate`90。
+
+## 第七十七批：樱木花道 / 电次
+
+- `SBR-SLAMDUNK-SAKURAGI-005/006`：樱木挑战流川并以篮板改变山王战；`behavior-candidate`92/96。
+- `SBR-CSM-DENJI-006`：电次与真纪真荒野厮杀，重新进入正面对抗；`behavior-candidate`92。
+
+## 第七十八批：宫本武藏 / 莱欧斯
+
+- `SBR-VAGABOND-MUSASHI-004`：单人迎战并击倒七十名门人；`behavior-candidate`98。
+- `SBR-DM-LAIOS-005`：运用怪物知识应战龙群，扭转存活概率；`behavior-candidate`96。

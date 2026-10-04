@@ -243,3 +243,39 @@
 - `SBR-DD-OKARUN-010`：取得返回方法后仍身处异地时按路线返回身体并赶往参战，把偶发漂移执行为连续回归路线；结构端点：返回步骤、身体归位节点、参战时机。`behavior-candidate` 95（DD-V12）。
 - `SBR-DD-OKARUN-011`：战后仍需搜集情报与金球时一行成立历史文化研究社做准备，把零散超常事件收进可持续调查容器；结构端点：研究社组织、资料渠道、长期搜寻路线。`behavior-candidate` 96（DD-V15）。
 - 最近邻提醒：直接战斗是zx、取得提示是nx、报告危机是n；只有主导组织/训练/调查流程算xn。
+
+## 第七十二批：天马贤三 / Agni / 矢口八虎
+
+- `SBR-MONSTER-TENMA-002`：天马启程寻找Nina，把连环案线索排成持续寻人路线；`behavior-candidate` 94（MON-1）。
+- `SBR-MONSTER-TENMA-004`：天马追踪Johan并沿秘密过去查找线索，多类信息进入同一追踪任务；`behavior-candidate` 97（MON-2）。
+- `SBR-MONSTER-TENMA-009`：天马前往红玫瑰宅邸，将分散追查线收束到同一现场；`behavior-candidate` 93（MON-7）。
+- `SBR-FIREPUNCH-AGNI-004`：Agni前往Behemdorg，把Doma复仇转成持续路线；`behavior-candidate` 93（FP-3）。
+- `SBR-FIREPUNCH-AGNI-006`：Agni主动寻找造成全部痛苦的源头人物，把痛苦转成寻人任务；`behavior-candidate` 95（FP-5）。
+- `SBR-BLUEPERIOD-YATORA-006`：八虎在第一次艺大考试不利时调整资源并完成当场创作；`behavior-candidate` 91（BP-5）。
+
+## 第七十三批：Kevin Yamagata / Thorfinn
+
+- `SBR-BILLYBAT-KEVIN-001`：收到Billy Bat预言与卷轴信息后，Kevin整理线索并继续追查；`behavior-candidate` 95（BB-1）。
+- `SBR-BILLYBAT-KEVIN-003`：确认卷轴线索不足以直接定案后，Kevin继续比较线索并推进核验；`behavior-candidate` 92（BB-6）。
+- `SBR-VINLAND-THORFINN-003`：获得赎身与前往新大陆的可行方向后，Thorfinn组织所需船只、人员与资源；`behavior-candidate` 95（VS-6）。
+- `SBR-VINLAND-THORFINN-004`：殖民地准备需要具体路线时，Thorfinn规划航行并安排启航；`behavior-candidate` 97（VS-8）。
+- `SBR-VINLAND-THORFINN-005`：航行资源不足时，Thorfinn筹集资金、物资与人员以维持远征；`behavior-candidate` 94（VS-8）。
+- `SBR-VINLAND-THORFINN-009`：面临新大陆路线的现实阻碍时，Thorfinn继续协调成员与船程；`behavior-candidate` 93（VS-12）。
+
+## 第七十四批：Vladek / Art / Rafal
+
+- `SBR-MAUS-VLADEK-004`：搜捕逼近住所时，Vladek设计、寻找并更换假墙和藏身处；`behavior-candidate` 97（MA-V2）。
+- `SBR-MAUS-VLADEK-005`：与家人分离且正规通信中断时，Vladek用首饰、关系和交换资源安排传话、会合与营救；`behavior-candidate` 96（MA-V4）。
+- `SBR-MAUS-VLADEK-006`：晚年仍把匮乏视作随时可能重现时，Vladek反复计算药物、食物、钱和可回收物；`behavior-candidate` 94（MA-V6）。
+- `SBR-MAUS-ART-003`：要重建父亲经历时，Art多次探访并请Vladek从波兰生活讲起；`behavior-candidate` 96（MA-A1）。
+- `SBR-MAUS-ART-004`：Vladek讲述跳跃时，Art持续追问姓名、地点和先后次序；`behavior-candidate` 97（MA-A2）。
+- `SBR-MAUS-ART-005`：成书可能把Vladek简化成纯受害者时，Art并置幸存经历与晚年矛盾；`behavior-candidate` 95（MA-A5）。
+- `SBR-ORB-RAFAL-004`：本人可能无法完成研究时，Rafal把资料封入石箱留给后来者；`behavior-candidate` 95（ORB-R4）。
+
+## 第七十六批：りんたろう
+
+- `SBR-1BY24-RINTARO-002`：少年期制作幻灯机和纸制胶片，把零散材料组织为可放映装置；`behavior-candidate`92。
+
+## 第七十八批：莱欧斯
+
+- `SBR-DM-LAIOS-006`：为同时满足巨兽与救回法琳制定终局进食方案；`behavior-candidate`95。

@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"f1a2b3c4d5e60001","type":"group","x":-100,"y":-100,"width":3900,"height":3200,"color":"#69D4CE","label":"D03｜I02旧枢纽冒险者工会｜A01/A02/A03场景画法测试"},
+		{"id":"f1a2b3c4d5e60101","type":"text","text":"D03｜场景绘制准备\n\n主题：I02 旧枢纽冒险者工会\n状态：已准备 / 未提交生成 / 待开始 A01-A03 对照\n目标：固定同一场景内容与机位，只更换场景 rendering。","x":0,"y":0,"width":1000,"height":300,"color":"#142A34"},
+		{"id":"f1a2b3c4d5e60102","type":"text","text":"场景种子｜原句保留\n\n骷髅前台在断掉的旧交通枢纽里接任务，冒险者和飞行生物从不同层级进出。\n\n十元标注：NZ + N + Z｜X并Z残留\n世界作用：生活继续占据断裂基础设施。","x":0,"y":420,"width":1200,"height":420,"color":"#855D8F"},
+		{"id":"f1a2b3c4d5e60103","type":"text","text":"世界与结构硬约束\n\nNZ：建筑/生态不是被动背景，必须仍在生长或被使用。\nX并Z：旧交通路径必须有真实断裂、错层、缺口或失去闭合。\nZ：后来的模块、平台、接口、挂点沿旧结构缝合生长。\n\n不能只画“废墟车站”；要画出断裂之后仍能接任务、停靠、补给、维修和通行的公共空间。","x":1350,"y":0,"width":1100,"height":760,"color":"#913840"},
+		{"id":"f1a2b3c4d5e60105","type":"text","text":"固定机位与构图\n\n地点：旧交通枢纽内部，半开放公共大厅。\n时间：阴天白昼。\n天气：空气湿冷，断口处有自然光。\n镜头：中广角、略低机位、正对前台与中断通道。\n构图：前景遮挡 → 中景前台/断口 → 背景多层入口；保留上方负空间给飞行生物进出。\n\n三版只换风格，不换地点、时间、天气、镜头、前中后景。","x":0,"y":980,"width":1200,"height":520,"color":"#69D4CE"},
+		{"id":"f1a2b3c4d5e60108","type":"text","text":"A03｜旧动画背景·废墟再生\n\n低饱和、不均匀颜料感、旧机械、生活痕迹、柔旧纸感。\n\n检查：旧伤是否仍在，但空间是否已经被居民、任务和交通重新占据？","x":0,"y":1640,"width":1200,"height":600,"color":"#913840"},
+		{"id":"f1a2b3c4d5e6010b","type":"text","text":"绘制执行顺序\n\n1. 先以同一构图出 A01/A02/A03。\n2. 每版只记录：结构读图、十元、构图、光线、rendering。\n3. 选出 1 个主候选 + 1 个备选。\n4. 再把胜出画法扩展到 I01/I04/I09/I12。\n\n当前不做：城市大全景、无限搜参考、扩写新人物。","x":0,"y":2380,"width":1200,"height":420,"color":"#69D4CE"},
+		{"id":"f1a2b3c4d5e6010c","type":"text","text":"工作流记录｜准备阶段\n\n计划通道：local-comfy-lililong::lililong-scene-focus\nCheckpoint：novaAnimeXL_ilV190.safetensors\nLoRA：lililong_candidates\\lililong_scene_focus_v04_96.safetensors\n强度：model 0.65 / CLIP 0.65\n\n本 Canvas 只准备内容与变量，尚未调用生成。","x":1350,"y":2380,"width":1100,"height":420,"color":"#855D8F"},
+		{"id":"f1a2b3c4d5e6010d","type":"file","file":"黎黎隆_v1.1_ZEROLOGIN/assets/references/imagewell/refR5_seed_I02/selected.jpg","x":2550,"y":2380,"width":563,"height":420},
+		{"id":"f1a2b3c4d5e6010e","type":"file","file":"黎黎隆项目/黎黎隆_场景视觉化_v1/assets/palette_crop.png","x":0,"y":2860,"width":235,"height":180},
+		{"id":"f1a2b3c4d5e60104","type":"text","text":"固定画面内容｜三版保持不变\n\n前景：入口门槛、承重断梁、一个低位停靠/维修点。\n中景：骷髅前台与任务台，旧枢纽中央通道在此中断。\n背景：上下两层或不同高度的进出路径；飞行生物从高层进入，普通冒险者从低层进入。\n焦点：前台与断裂通道的关系。\n\n不增加城市大全景，不增加第二个叙事焦点。","x":2550,"y":0,"width":1100,"height":760,"color":"#CDE7E6"},
+		{"id":"f1a2b3c4d5e60106","type":"text","text":"A01｜动画平涂机械奇幻\n\n大色块、清晰轮廓、少渐变、近中远分级、材质靠形状区分。\n\n检查：是否最像可连续动画的正式场景？结构是否一眼可读？","x":1350,"y":900,"width":1100,"height":600,"color":"#69D4CE"},
+		{"id":"f1a2b3c4d5e60107","type":"text","text":"A02｜粗线概念动画\n\n粗手绘线、形体概括、局部透视压缩、低精修纹理、结构优先。\n\n检查：设定稿信息是否最清楚？断口、接口、停靠位是否比材质更重要？","x":2550,"y":900,"width":1100,"height":600,"color":"#855D8F"},
+		{"id":"f1a2b3c4d5e60109","type":"text","text":"P00｜全局五色锁\n\n深墨青 #142A34：线、结构、最暗部\n灰紫 #855D8F：奇异、生体、异常侧重音\n暗红 #913840：危险、生命、注意点\n青绿 #69D4CE：技术、能量、接口重音\n淡青灰 #CDE7E6：大面积亮部\n\n允许明度、透明度、叠色变化；禁止新增黄、橙、棕、纯蓝等独立色相。","x":1350,"y":1640,"width":1100,"height":600,"color":"#142A34"},
+		{"id":"f1a2b3c4d5e6010a","type":"text","text":"失败警报｜不通过就不进入下一场景\n\n1. 画成普通火车站或普通酒馆。\n2. 只有漂亮废墟，没有继续运行的公共功能。\n3. 只靠红蓝灯区分十元。\n4. 断裂没有改变路线、进出或停靠方式。\n5. 骷髅前台、飞行入口、低位入口互相看不出尺度差异。\n6. A01/A02/A03 改了内容或机位，导致无法比较。","x":2550,"y":1640,"width":1100,"height":600,"color":"#913840"}
+	],
+	"edges":[
+		{"id":"f2a3b4c5d6e70001","fromNode":"f1a2b3c4d5e60101","fromSide":"right","toNode":"f1a2b3c4d5e60102","toSide":"top","label":"确定场景种子"},
+		{"id":"f2a3b4c5d6e70002","fromNode":"f1a2b3c4d5e60102","fromSide":"right","toNode":"f1a2b3c4d5e60103","toSide":"left","label":"十元进入空间结构"},
+		{"id":"f2a3b4c5d6e70003","fromNode":"f1a2b3c4d5e60103","fromSide":"right","toNode":"f1a2b3c4d5e60104","toSide":"left","label":"结构固定内容"},
+		{"id":"f2a3b4c5d6e70004","fromNode":"f1a2b3c4d5e60104","fromSide":"bottom","toNode":"f1a2b3c4d5e60105","toSide":"top","label":"固定机位"},
+		{"id":"f2a3b4c5d6e70005","fromNode":"f1a2b3c4d5e60105","fromSide":"right","toNode":"f1a2b3c4d5e60106","toSide":"left","label":"只换画法 A01"},
+		{"id":"f2a3b4c5d6e70006","fromNode":"f1a2b3c4d5e60105","fromSide":"right","toNode":"f1a2b3c4d5e60107","toSide":"left","label":"只换画法 A02"},
+		{"id":"f2a3b4c5d6e70007","fromNode":"f1a2b3c4d5e60105","fromSide":"bottom","toNode":"f1a2b3c4d5e60108","toSide":"top","label":"只换画法 A03"},
+		{"id":"f2a3b4c5d6e70008","fromNode":"f1a2b3c4d5e60109","fromSide":"right","toNode":"f1a2b3c4d5e6010a","toSide":"left","label":"统一验收限制"},
+		{"id":"f2a3b4c5d6e70009","fromNode":"f1a2b3c4d5e60102","fromSide":"bottom","toNode":"f1a2b3c4d5e6010d","toSide":"top","label":"原始结构参考"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

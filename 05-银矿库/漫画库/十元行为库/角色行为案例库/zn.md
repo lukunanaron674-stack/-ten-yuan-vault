@@ -94,9 +94,33 @@ Eren离墙路线也转为z候选，不再作为zn候选。
 - `SBR-BR-DAIMA-008`：谛听战后队伍仍未抵达长安时继续经敦煌走镖不放弃护送承诺，关系代价没有取消已认领责任；对象端点：知世郎、小七、未完路线与守诺边界。`behavior-candidate` 96（BR-V13）。8-02复核保留。
 - 最近邻提醒：把自我标准置为最高裁定中心是z（只守自己的路）；直接施动压退是zx；必须看到自己成立的同时主动保存他者独立成立资格。
 
+## 第七十二批：天马贤三 / 矢口八虎
+
+- `SBR-MONSTER-TENMA-001`：天马停止追逐职业成功，选择以救人誓言支配医疗路线；`behavior-candidate` 96（MON-1）。
+- `SBR-BLUEPERIOD-YATORA-001`：八虎全身投入绘画，用新创作选择替换空洞的优等生路线；`behavior-candidate` 94（BP-1）。
+- `SBR-BLUEPERIOD-YATORA-008`：八虎裸露身体并创作裸体自画像，把自身经验转成作品题材；`behavior-candidate` 96（BP-5）。
+
 ## 《泪雨与小夜曲》本乡孝章
 
 ### 候选：公开拒绝家族安排并保存他者独立资格（zn 阳火）
 
 - `SBR-NAMI-HONGO-008`：家族婚约继续剥夺雏子的选择时与雏子在双方父母前宣布解除婚约，公开拒绝按家族安排继续生活、雏子从婚约中释放；对象端点：本乡/北峯两家、婚约制度与雏子独立选择。`behavior-candidate` 96（TS-V13）。8-02口径复核：雏子自由独立存在、未被吸收为孝章个人标准的附属，自己拒绝服从成立的同时实际保存他者独立成立资格（zn）；不是把自我标准单点最高化（非z）、不是沿家族既有路线推进（非nx）。
 - 最近邻提醒：把心意推到公开确认节点是z（HONGO-005）、救助安顿无归属者是n；必须看到自己成立的同时实际保存他者独立成立资格。
+
+## 第七十三批：Thorfinn
+
+- `SBR-VINLAND-THORFINN-007`：新聚落面临冲突风险时，Thorfinn公开拒绝以武力解决并坚持和平规则；`behavior-candidate` 95（VS-11）。
+
+## 第七十四批：Rafal / 我王
+
+- `SBR-ORB-RAFAL-003`：宗教裁判追查异端理论时，Rafal仍继续研究而不退回安全路径；`behavior-candidate` 97（ORB-R3）。
+- `SBR-HINOTORI-ICHIO-004`：觉醒雕刻能力后，我王持续创作面向受苦心灵的雕像；`behavior-candidate` 96（PH-G4）。
+
+## 第七十六批：千飒
+
+- `SBR-EARTHIAN-SENSATSU-001`：千飒选择承担给地球人寻找加分的调查员岗位；`behavior-candidate`92。
+
+## 第七十八批：宫本武藏 / 间黑男
+
+- `SBR-VAGABOND-MUSASHI-001/003`：武藏出走入剑道、返京再战；`behavior-candidate`92/90。
+- `SBR-BLACKJACK-HAZAMA-006`：黑杰克接走患者并实施救治；`behavior-candidate`98。

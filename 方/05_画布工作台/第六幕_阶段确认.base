@@ -1,0 +1,21 @@
+filters:
+  and:
+    - file.inFolder("方/05_画布工作台/卡级状态")
+    - 类型 == "卡级管理"
+    - 幕 == "第六幕"
+    - or:
+        - 卡号 == "6-1"
+        - 卡号 == "6-2"
+        - 卡号 == "6-3"
+properties:
+  幕: {displayName: 幕}
+  卡号: {displayName: 卡号}
+  名称: {displayName: 名称}
+  状态: {displayName: 状态}
+  视频: {displayName: 视频}
+  缺什么: {displayName: 缺什么}
+  锁定: {displayName: 锁卡}
+views:
+  - type: table
+    name: 第六幕｜核心卡号与视频
+    order: [卡号, 名称, 状态, 视频, 缺什么, 锁定]

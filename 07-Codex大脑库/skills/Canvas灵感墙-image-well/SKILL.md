@@ -113,9 +113,9 @@ uv run .tmp/minoan/skills/design-media/image-well/scripts/well.py ...
 
 输入：
 
-`黎黎隆_v1.1_ZEROLOGIN/黎黎隆_场景风格视觉化发散树_v1.2_LOCAL.canvas`
+`黎黎隆项目/04_场景/黎黎隆_场景风格视觉化_R1-R6_本地全量_v1.3.canvas`
 
-只处理失败占位节点。成功节点不动。
+只处理任务清单中的失败/待补节点或新增扩充节点。成功节点不动。
 
 把：
 
@@ -142,8 +142,11 @@ uv run .tmp/minoan/skills/design-media/image-well/scripts/well.py ...
 ## 文件结构
 
 ```text
+黎黎隆项目/
+└─ 04_场景/
+   └─ 黎黎隆_场景风格视觉化_R1-R6_本地全量_v1.3.canvas
+
 黎黎隆_v1.1_ZEROLOGIN/
-├─ 黎黎隆_场景风格视觉化发散树_v1.2_LOCAL.canvas
 ├─ FAILED_参考图.txt
 └─ assets/
    └─ references/
@@ -159,7 +162,7 @@ uv run .tmp/minoan/skills/design-media/image-well/scripts/well.py ...
 
 最终输出：
 
-`黎黎隆_场景风格视觉化发散树_v1.3_FULL_LOCAL.canvas`
+`黎黎隆项目/04_场景/黎黎隆_场景风格视觉化_R1-R6_本地全量_v1.3.canvas`
 
 必须满足：
 
@@ -186,6 +189,6 @@ uv run .tmp/minoan/skills/design-media/image-well/scripts/well.py ...
 
 读取：
 
-`黎黎隆项目/场景视觉参考/补图任务_v1.3_13节点.json`
+`黎黎隆项目/04_场景/04_视觉参考/补图任务_v1.3_13节点.json`
 
 按其中顺序执行。

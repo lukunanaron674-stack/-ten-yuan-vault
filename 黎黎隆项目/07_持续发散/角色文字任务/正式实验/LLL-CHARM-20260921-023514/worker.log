@@ -1,0 +1,4 @@
+﻿RUN_START | scheduled=False | manual=True | dry_run=True | run_id=LLL-CHARM-20260921-023514
+CODEX_START | phase=experiment_generation
+CODEX_END | phase=experiment_generation | exit_code=0
+FAIL | CODEX_FINAL_NOT_JSON phase=experiment_generation
