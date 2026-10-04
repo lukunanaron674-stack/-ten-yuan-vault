@@ -1,0 +1,212 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 420,
+      "height": 300,
+      "text": "# AI Problem–Solution–Unknown Graph\n\n**总状态栏｜2026-10-04**\nC-INTENT：THEORY DONE → EXPERIMENT\nC-CONSTRAINT：CYCLE-01 DONE\nD-AGENCY：CYCLE-01 DONE\nE-REAL-EVAL：CYCLE-01 DONE → E-H1\nF-INDUSTRY / F-PRODUCTION-v1：RESEARCH DONE → IMPLEMENTATION\n\n**同步规则：Linear → MD → Canvas → Next Action 必须同轮闭环**\n新框先读本状态栏与索引，禁止重复 DONE/FROZEN 工作。",
+      "color": "1"
+    },
+    {
+      "id": "A",
+      "type": "text",
+      "x": 0,
+      "y": -850,
+      "width": 360,
+      "height": 210,
+      "text": "# A｜能力\n\n感知｜理解｜推理｜学习｜生成｜规划｜记忆｜Agent｜多模态｜泛化\n\n**部分研究**",
+      "color": "5"
+    },
+    {
+      "id": "B",
+      "type": "text",
+      "x": 499,
+      "y": -687,
+      "width": 360,
+      "height": 210,
+      "text": "# B｜可靠性\n\n正确性｜鲁棒性｜幻觉｜不确定性｜可解释｜可验证｜长任务可靠性\n\n**上游支撑**",
+      "color": "6"
+    },
+    {
+      "id": "C",
+      "type": "text",
+      "x": 808,
+      "y": -262,
+      "width": 360,
+      "height": 280,
+      "text": "# C｜控制与对齐\n\n**ACTIVE**\nC-INTENT：THEORY DONE → EXPERIMENT｜674-119\nC-CONSTRAINT：CYCLE-01 DONE｜674-120\nNEXT：历史数据离线验证",
+      "color": "4"
+    },
+    {
+      "id": "D",
+      "type": "text",
+      "x": 808,
+      "y": 262,
+      "width": 360,
+      "height": 280,
+      "text": "# D｜人机协作\n\n**ACTIVE**\nD-AGENCY：CYCLE-01 DONE｜674-121\n四因子：confidence / reversibility / preference-load / blast-radius\nNEXT：日志 replay",
+      "color": "4"
+    },
+    {
+      "id": "E",
+      "type": "text",
+      "x": 499,
+      "y": 687,
+      "width": 360,
+      "height": 280,
+      "text": "# E｜评价\n\n**ACTIVE**\nE-REAL-EVAL：CYCLE-01 DONE｜674-122\n冻结 L1 Outcome / L2 Intent+Constraint / L3 Trajectory 三层协议\nNEXT：E-H1 冻结30–50历史case并盲标预测",
+      "color": "4"
+    },
+    {
+      "id": "F",
+      "type": "text",
+      "x": 0,
+      "y": 850,
+      "width": 360,
+      "height": 370,
+      "text": "# F｜生产工程\n\n**RESEARCH DONE / IMPLEMENTATION ACTIVE**\nF-INDUSTRY：DONE / STOP\nF-PRODUCTION-v1：R1–R6 DONE / STOP\nF-WORKFLOW：Codex-native Workflow\nF-COMPUTE：3070 Laptop ACTIVE\n4080 32G：PENDING_INTEGRATION\n4090 Cloud：RETIRED\nF-ASSET：Local Files + Linear Attachment = P0\n\nNEXT：只做实施/闭环验证，不再横向扩研",
+      "color": "4"
+    },
+    {
+      "id": "G",
+      "type": "text",
+      "x": -499,
+      "y": 687,
+      "width": 360,
+      "height": 210,
+      "text": "# G｜安全\n\n恶意使用｜网络安全｜越权｜欺骗｜隐私｜对抗攻击｜高风险自主系统\n\n**背景**",
+      "color": "6"
+    },
+    {
+      "id": "H",
+      "type": "text",
+      "x": -808,
+      "y": 262,
+      "width": 360,
+      "height": 210,
+      "text": "# H｜社会与制度\n\n就业｜教育｜不平等｜信息生态｜法律责任｜版权｜作者性｜治理\n\n**部分研究**",
+      "color": "3"
+    },
+    {
+      "id": "I",
+      "type": "text",
+      "x": -808,
+      "y": -262,
+      "width": 360,
+      "height": 210,
+      "text": "# I｜基础资源\n\n算力｜数据｜芯片｜能源｜水｜模型效率｜基础设施\n\n**背景**",
+      "color": "6"
+    },
+    {
+      "id": "J",
+      "type": "text",
+      "x": -499,
+      "y": -687,
+      "width": 360,
+      "height": 210,
+      "text": "# J｜基础未知\n\n智能｜表征｜涌现｜推理机制｜泛化｜世界模型｜长期学习｜Agent边界\n\n**上游未知**",
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "eA",
+      "fromNode": "root",
+      "toNode": "A",
+      "label": "IS-A"
+    },
+    {
+      "id": "eB",
+      "fromNode": "root",
+      "toNode": "B",
+      "label": "IS-A"
+    },
+    {
+      "id": "eC",
+      "fromNode": "root",
+      "toNode": "C",
+      "label": "IS-A"
+    },
+    {
+      "id": "eD",
+      "fromNode": "root",
+      "toNode": "D",
+      "label": "IS-A"
+    },
+    {
+      "id": "eE",
+      "fromNode": "root",
+      "toNode": "E",
+      "label": "IS-A"
+    },
+    {
+      "id": "eF",
+      "fromNode": "root",
+      "toNode": "F",
+      "label": "IS-A"
+    },
+    {
+      "id": "eG",
+      "fromNode": "root",
+      "toNode": "G",
+      "label": "IS-A"
+    },
+    {
+      "id": "eH",
+      "fromNode": "root",
+      "toNode": "H",
+      "label": "IS-A"
+    },
+    {
+      "id": "eI",
+      "fromNode": "root",
+      "toNode": "I",
+      "label": "IS-A"
+    },
+    {
+      "id": "eJ",
+      "fromNode": "root",
+      "toNode": "J",
+      "label": "IS-A"
+    },
+    {
+      "id": "dep0",
+      "fromNode": "C",
+      "toNode": "A",
+      "label": "DEPENDS-ON"
+    },
+    {
+      "id": "dep1",
+      "fromNode": "C",
+      "toNode": "J",
+      "label": "DEPENDS-ON"
+    },
+    {
+      "id": "dep2",
+      "fromNode": "D",
+      "toNode": "B",
+      "label": "DEPENDS-ON"
+    },
+    {
+      "id": "dep3",
+      "fromNode": "E",
+      "toNode": "B",
+      "label": "DEPENDS-ON"
+    },
+    {
+      "id": "dep4",
+      "fromNode": "F",
+      "toNode": "A",
+      "label": "DEPENDS-ON"
+    },
+    {
+      "id": "dep5",
+      "fromNode": "F",
+      "toNode": "B",
+      "label": "DEPENDS-ON"
+    }
+  ]
+}
