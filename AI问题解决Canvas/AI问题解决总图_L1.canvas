@@ -7,7 +7,7 @@
       "y": 0,
       "width": 420,
       "height": 390,
-      "text": "# AI Problem–Solution–Unknown Graph\n\n**总状态栏｜2026-10-04｜Scheduler v2**\nWindows｜RTX3070 Laptop ACTIVE\n4090 Cloud RETIRED｜4080 32G PENDING_INTEGRATION\n重GPU：READY_FOR_4080\n\nSCAN → RECOVER → VERIFY → DISPATCH → WORK → UPDATE\nRecover before Create｜Verify before Expand\n\nC-INTENT：THEORY DONE → EXPERIMENT\nC-CONSTRAINT：CYCLE-01 DONE\nD-AGENCY：CYCLE-01 DONE\nE-REAL-EVAL：CYCLE-01 DONE → E-H1\nF：RESEARCH DONE → IMPLEMENTATION\n\n开工顺序：Canvas → MD → Linear → RECOVER CURRENT_NODE\n禁止重复 DONE/FROZEN；Linear→MD→Canvas→Next Action 同轮闭环。",
+      "text": "# AI Problem–Solution–Unknown Graph\n\n**总状态栏｜2026-10-04｜STATUS SYNC**\nWindows｜RTX3070 Laptop ACTIVE\n4090 Cloud RETIRED｜4080 32G PENDING_INTEGRATION\n\nSCAN → RECOVER → VERIFY → DISPATCH → WORK → UPDATE\nRecover before Create｜Verify before Expand\n\nC-INTENT：THEORY DONE → EXPERIMENT DESIGN\nC-CONSTRAINT：CYCLE-01 DONE → OFFLINE LABEL\nD-AGENCY：CYCLE-01 DONE → LOG REPLAY\nE-REAL-EVAL：CYCLE-01 DONE → E-H1\nF-LONGRUN：CYCLE-02 DONE → ≥5 REAL RUN EVENTS\n\n论文：PAPER-00 ACTIVE｜3 RQ × 20 P\n每小时收束：Linear → MD → Canvas → Next Action",
       "color": "1"
     },
     {
@@ -67,7 +67,7 @@
       "y": 850,
       "width": 360,
       "height": 450,
-      "text": "# F｜生产工程\n\n**RESEARCH DONE / IMPLEMENTATION ACTIVE**\nHOST：Windows\nACTIVE_COMPUTE：RTX3070 Laptop\nRTX4080 32G：PENDING_INTEGRATION\n4090 Cloud：RETIRED\n重GPU：READY_FOR_4080\nCodex：工作流执行中枢，无独立Supervisor假设\nP0 Asset：Local Files + Linear Attachment\n退役：Linux本地主链 / SSH-WinRM→4090 / B2-COS默认搬运\n\nNEXT：3070继续非重GPU节点；4080实际闭环验收后再切ACTIVE",
+      "text": "# F｜生产工程\n\n**RESEARCH CONVERGED / IMPLEMENTATION ACTIVE**\nF-LONGRUN：CYCLE-02 DONE\nRUN_LOG_SCHEMA v1.0：ACTIVE\nNEXT：累计 ≥5 条真实跨轮运行事件 → H-F1\nHOST：Windows / RTX3070 ACTIVE\nRTX4080 32G：PENDING_INTEGRATION\n4090 Cloud：RETIRED\nCodex：工作流执行中枢",
       "color": "4"
     },
     {
@@ -109,6 +109,26 @@
       "height": 210,
       "text": "# J｜基础未知\n\n智能｜表征｜涌现｜推理机制｜泛化｜世界模型｜长期学习｜Agent边界\n\n**上游未知**",
       "color": "2"
+    },
+    {
+      "id": "PAPER",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文问题系统_L1.canvas",
+      "x": 1350,
+      "y": 520,
+      "width": 420,
+      "height": 210,
+      "color": "3"
+    },
+    {
+      "id": "PAPER_STATUS",
+      "type": "text",
+      "x": 1350,
+      "y": 790,
+      "width": 430,
+      "height": 300,
+      "color": "3",
+      "text": "# PAPER STATUS\n\n674-118：ACTIVE\n674-119：THEORY DONE → EXPERIMENT\n674-120：CYCLE-01 DONE\n674-121：CYCLE-01 DONE\n674-122：CYCLE-01 DONE → E-H1\n674-123：CYCLE-02 DONE\n\n注：阶段收束 ≠ 整个 issue DONE。"
     }
   ],
   "edges": [
@@ -207,6 +227,18 @@
       "fromNode": "F",
       "toNode": "B",
       "label": "DEPENDS-ON"
+    },
+    {
+      "id": "ePaper",
+      "fromNode": "root",
+      "toNode": "PAPER",
+      "label": "论文研究切片"
+    },
+    {
+      "id": "ePaperStatus",
+      "fromNode": "PAPER",
+      "toNode": "PAPER_STATUS",
+      "label": "STATUS-SYNC"
     }
   ]
 }
