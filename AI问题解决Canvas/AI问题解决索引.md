@@ -545,3 +545,20 @@ Canvas决定“解决什么”；小时调度决定“现在推进哪个节点�
 
 任何框不得仅凭聊天上下文重新建立状态。GitHub 本目录是跨框正本。
 
+## 15. GitHub 同步债登记｜2026-10-04
+
+### 已补齐
+- `RUN_LOG_SCHEMA_v1.0.md`：F-LONGRUN / STATE / RECOVERY 的 canonical 运行日志契约。
+
+### 待从本地 canonical 同步，禁止凭聊天内容伪造
+- 头像专属问题树 Canvas / MD 正本（若本地已有，以本地正本为准）。
+- Q-ASSET-003 / Q-SCENE-001 / Q-ASSET-002 / Q-H3-001 的独立 Q Markdown（仅在本地确有正本时同步）。
+- 74版每日任务规则正本。
+- 代理七件套统一入口/索引正本。
+
+### 同步原则
+- Recover before Create：先找本地已有文件，再决定是否创建。
+- GitHub 不凭会话摘要伪造本地 canonical。
+- 原始图片/视频默认留本地；GitHub同步结构化MD/YAML/JSON、Canvas、索引、状态、审核记录与配置。
+- 下一次 Windows 本地 Codex 可访问 vault 时，先做 Local ↔ GitHub manifest/diff，再批量补 LOCAL_ONLY / MODIFIED。
+
