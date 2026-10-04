@@ -15,6 +15,7 @@ known:
   - "S10 暂用 H06 四宫格存在已记录的角色面部身份错配，且该结论仅限具体案例。"
   - "CH-013 当前头像原稿优先于旧实验设定；该版本冲突由 Q-ASSET-001 跟踪，不在此重复建卡。"
   - "H04/H06/H09 四宫格曾通过有限的同人视觉初检，但不覆盖所有角度或角色。"
+  - "R2 source check: H04/H06/H09/H01/H08/H10 exist locally, but the six source PNGs are absent from current GitHub main and remain ignored/untracked; this is an asset-source reproducibility gap, not an identity-failure conclusion."
 unknown:
   - "除已记录个案外，其他角色/来源组合是否存在身份错配尚未系统验证。"
   - "H04 正面/半侧对照见 Q-CHAR-001.4：用户最终确认原头像与 TL/TR/BL/BR 四格全部通过。"
@@ -28,12 +29,13 @@ current_hypotheses:
 evidence:
   - "S10/H06 特定错配及其关闭证据见本卡与 Linear 674-87、674-88。"
   - "H04 正面/半侧专项对照及用户最终结论见 Q-CHAR-001.4 / Linear 674-97、674-98、674-110。"
+  - "R2 preflight receipt: 674-115 / CODEX-RUN-20261004-19-W4; stress_test_ready=false. Follow-up verification and worker write-profile recovery: 674-96 comments 2bfdeb1e-5aa4-46e0-b328-e27658ff3b60, 12d78bad-3b05-496a-adcf-69458b010b68, a6bc195f-3382-4ddd-b157-1c4065fd148a."
 source_refs:
   - "https://linear.app/674/issue/674-85"
   - "https://linear.app/674/issue/674-87"
   - "https://linear.app/674/issue/674-90"
-current_version: "1.2"
-next_decision: "只对有明确来源冲突的头像资产逐项核对来源角色、目标角色与验收范围；不把已关闭个案重新打开。"
+current_version: "1.3"
+next_decision: "等待外部 worker/session 层提供窄 writable root；仅一次无业务 probe PASS 后，按既有 LOCAL_ASSET_MANIFEST_SCHEMA / LOCAL_ASSET_LIBRARY_PROTOCOL 建立六项可复现 manifest。"
 done_condition: "当前生产中所有被标记为身份基准的头像均有可追溯来源及目标角色；具体错配和证据缺口均在原 Q 或子 Q 中闭环，且未把未验证候选当作通过资产。"
 required_agent:
   - "角色/头像 Agent"
@@ -103,3 +105,17 @@ required_agent:
 
 ## Linear
 [https://linear.app/674/issue/674-85/head-agent头像问题代理三轮验证](https://linear.app/674/issue/674-85/head-agent头像问题代理三轮验证)
+
+## R2 资产来源可复现性同步｜2026-10-05
+
+### 已验证状态
+- `674-115 / CODEX-RUN-20261004-19-W4` 完成一次只读预检：H04/H06/H09 与 H01/H08/H10 六张头像在本地均有真实路径和 SHA；H01/H08/H10 仍是未审核候选。
+- 六个 PNG 被本地 `*.png` 规则忽略、未跟踪；在当前 GitHub `main`（`11dac1dfa180733d9a429af589d194e28d977858`）的对应切片路径均不存在。`stress_test_ready=false`。
+- 当前阻塞是 `ASSET_SOURCE_OF_TRUTH_GAP`。这不表示头像身份失败，也不改变 H04 已审核、H06 与 S10 的隔离边界、H09 未锁定及其他候选状态。
+
+### 恢复状态与下一步
+- 已确认现有资产登记规范：`LOCAL_ASSET_MANIFEST_SCHEMA.md` 与 `LOCAL_ASSET_LIBRARY_PROTOCOL.md`；不另建第二套 registry。
+- 674-96 最新 recovery 记录确认执行环境没有窄 writable root，`probe_write_attempted=false`，外部前置为 `EXTERNAL_PREREQ_WORKER_WRITE_PROFILE`；禁止重复扫描六张 SHA 或重试已消费的 recovery。
+- 下一步只在外部执行环境提供独立、窄范围 writable root 后进行一次无业务 probe；probe PASS 后，才按既有 schema 写入六项可复现 manifest，再由 L7 复核是否放行压力测试。
+
+本次只同步状态与 Canvas 导航：父 Q 仍为 `OPEN`；不新建 Q、不锁定候选、不生成或修改头像资产。

@@ -54,3 +54,6 @@
 # Syncthing 同步残留：不入库
 .stfolder/
 .stignore
+
+# Local archive copies stay in the vault but must not enter Git
+/黎黎隆项目/99_归档/zip副本/*.zip
