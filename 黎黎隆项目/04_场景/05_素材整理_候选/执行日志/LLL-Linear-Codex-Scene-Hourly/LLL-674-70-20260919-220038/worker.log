@@ -1,0 +1,5 @@
+2026-09-19T22:00:38.3219118+08:00 | RUN_START | scheduled=False | manual=True | run_id=LLL-674-70-20260919-220038
+2026-09-19T22:00:38.3486722+08:00 | CODEX_START | phase=preflight | write_access=False
+2026-09-19T22:01:47.7988366+08:00 | CODEX_END | phase=preflight | exit_code=0
+2026-09-19T22:01:47.8978809+08:00 | CODEX_START | phase=linear_report_blocked | write_access=True
+2026-09-19T22:04:29.3468642+08:00 | CODEX_END | phase=linear_report_blocked | exit_code=0
