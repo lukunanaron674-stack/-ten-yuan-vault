@@ -93,6 +93,14 @@ H3 Agent 在生成 [[../04_协议/RENDER_TASK_SCHEMA]] 前，必须先输出 `H3
 2. **4090 已验证但可作为 4080 默认安全基线的经验**：单实例、10–11s 优先、>264f 不直接批跑、Sage/启动参数/模型路径先 preflight。它们在 4080 完成独立复验前标记 `MIGRATED_BASELINE_NOT_4080_CERTIFIED`。
 3. **必须在 4080 重新标定的硬件量**：VRAM/RAM 峰值、264f 是否仍是硬极限、超时秒数、模型大小上限、吞吐、温度、并发能力。不得把 4090 数字伪装成 4080 实测。
 
+### F｜角色 Agent 对齐包硬门
+- 任何含角色的 H3 任务，AG-07 必须读取 [[../04_协议/CHARACTER_H3_READY_PACKET_SCHEMA]] 对应 Packet。
+- `production_gate.status != READY_FOR_H3`：禁止生成 RENDER_TASK。
+- AG-07 不得直接从目录、manifest 或 Linear 附件“挑一张看起来像的角色图”绕过角色 Agent。
+- H3 的 character_binding 必须引用 Packet 中明确批准的 asset_id / source_path / sha256 / intended_role / usable_shot_scales。
+- 四宫格仅在 Packet 明确 `same_character_compile=PASS` 时可作为 H3 角色包；否则返回 AG-11 / AG-04 / AG-06。
+- 角色 cognition 与视觉冲突属于上游角色/资产问题，不允许 H3 用 prompt 强行解释一致。
+
 ### E｜H3_AGENT_PLAN_PACKET
 任何批量测试/正式渲染先输出：
 ```yaml
