@@ -283,7 +283,7 @@
 		{
 			"id": "m15_c2d1e8f3",
 			"type": "text",
-			"text": "# MAIN-15｜角色/世界观/场景/镜头如何形成统一生产链\n\n状态：部分完成\n总流程骨架已有；端到端批量验收未完成。\r\n知识：[[L1-L4问题知识/MAIN-15|知识卡]]\r\n下钻子问题：13（详见知识卡）",
+			"text": "# MAIN-15｜角色/世界观/场景/镜头统一生产链\n\n状态：部分完成｜角色 Agent 已正式插入 H3 前置门\n新链：ASSET_DISCOVERY → CHARACTER_ALIGNMENT → … → CHARACTER_RECHECK → H3_PLAN → H3_RENDER\nH3 只消费 READY_FOR_H3 角色包。\n知识：[[L1-L4问题知识/MAIN-15|知识卡]]\n下钻子问题：14",
 			"x": -6586,
 			"y": 330,
 			"width": 820,
@@ -353,7 +353,7 @@
 		{
 			"id": "m03_c2d1e8f3",
 			"type": "text",
-			"text": "# MAIN-03｜头像如何稳定扩成中景/中全景/全身\n\n状态：部分完成\nS10/H04 局部身份案例已闭环；跨角色比例和服装继承仍未证明。\r\n知识：[[L1-L4问题知识/MAIN-03|知识卡]]\r\n下钻子问题：8（详见知识卡）",
+			"text": "# MAIN-03｜头像→中景/中全景/全身的角色一致性\n\n状态：部分完成｜新增角色认知×四宫格逐格对齐门\n问题：四宫格存在 ≠ 角色认知已对齐；一格漂移也可能污染 H3。\n办法：AG-11 输出 CHARACTER_H3_READY_PACKET，逐格审 identity/cognition/proportion/costume。\n知识：[[L1-L4问题知识/MAIN-03|知识卡]]\n下钻子问题：9",
 			"x": -4400,
 			"y": -489,
 			"width": 820,
@@ -1072,6 +1072,16 @@
 			"y": 3100,
 			"width": 980,
 			"height": 720,
+			"color": "5"
+		},
+		{
+			"id": "charh3align20261006",
+			"type": "text",
+			"text": "# 角色 Agent → H3 对齐门\n\n发现：角色认知与四宫格没有统一交接，导致“文字是这个人、四宫格却漂了”仍能进视频。\n\n现行门禁：\n1. 素材 Agent 核真图/path/SHA\n2. 角色 Agent 核 identity_core / world_role / age / body / costume / special structures\n3. 四宫格 TL/TR/BL/BR 逐格核 identity/cognition/proportion/costume\n4. AG-06 核静态视觉\n5. 输出 CHARACTER_H3_READY_PACKET\n6. 只有 READY_FOR_H3 才给 AG-07\n\n一格核心错，不允许三格平均；H3 不负责“融合正确角色”。",
+			"x": -4700,
+			"y": -2900,
+			"width": 1150,
+			"height": 760,
 			"color": "5"
 		}
 	],
@@ -1945,10 +1955,37 @@
 			"toSide": "top",
 			"color": "5",
 			"label": "4090经验迁移→4080复验"
+		},
+		{
+			"id": "e_charh3_m03",
+			"fromNode": "charh3align20261006",
+			"fromSide": "right",
+			"toNode": "m03_c2d1e8f3",
+			"toSide": "left",
+			"color": "5",
+			"label": "认知×四宫格"
+		},
+		{
+			"id": "e_charh3_m15",
+			"fromNode": "charh3align20261006",
+			"fromSide": "bottom",
+			"toNode": "m15_c2d1e8f3",
+			"toSide": "top",
+			"color": "5",
+			"label": "正式生产角色门"
+		},
+		{
+			"id": "e_charh3_h3",
+			"fromNode": "charh3align20261006",
+			"fromSide": "bottom",
+			"toNode": "h3exp20261006",
+			"toSide": "top",
+			"color": "5",
+			"label": "READY_FOR_H3→H3计划"
 		}
 	],
 	"metadata": {
-		"version": "1.0-2026-10-06-h3-preflight",
+		"version": "1.0-2026-10-06-character-h3-alignment",
 		"frontmatter": {}
 	}
 }
