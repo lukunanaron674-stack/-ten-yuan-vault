@@ -5,6 +5,8 @@
 
 ## 调度顺序
 director
+→ asset_discovery
+→ **character_alignment（有角色镜头/测试时）**
 → **theme**
 → **world（条件触发）**
 → script
@@ -51,7 +53,7 @@ director
 ## 各 Agent 责任
 - **theme_agent**：只定义五维主题问题、主题实验、压力机制和人物困境目标，不写完整剧情；只提交 `theme_result`。
 - **world_agent**：仅在 `world_gate = REQUIRED` 时做 Canon / 区域规则 / 文明机制校验；只提交 `world_result`。普通镜头 BYPASS，不强制参与。
-- **character_agent**：新建/更新角色正本、定义人物世界位置与视觉冻结项；只提交 `character_result`。不直接生图，不自行改十元/世界 Canon。
+- **character_agent**：新建/更新角色正本、定义人物世界位置与视觉冻结项；正式角色镜头还必须生成 CHARACTER_H3_READY_PACKET，把角色认知与四宫格/全身真实视觉逐格对齐。没有 READY_FOR_H3 不得进入 H3。
 - script_agent：根据 theme_result 定义故事变化，不定机位；只提交 `script_result`。
 - tenyuan_agent：只定义十元结构与验证状态，不强改主题/剧情；只提交 `tenyuan_result`。
 - storyboard_agent：把前三者变成时间镜头；只提交 `storyboard_result`。
@@ -110,6 +112,11 @@ LEARNING 使用 test_shot_id。
 - H3 执行：[[RENDER_TASK_SCHEMA]]
 - 视频审核：[[REVIEW_SCHEMA]]
 - 返工：[[RETRY_PACKET_SCHEMA]]
+
+### 角色进入 H3 的交接
+- 有角色的正式镜头，asset_agent 先提供真实资产事实，character_agent 再做语义/身份/四宫格对齐，AG-06 对新/待审视觉做静态审核。
+- 最终只把 CHARACTER_H3_READY_PACKET=READY_FOR_H3 交给 h3_agent。
+- “角色卡正确”不能代替“视觉正确”；“四宫格存在”也不能代替“认知对齐”。
 
 ### 状态推进责任
 - asset_agent 只能提交素材结果，不能自己把镜头推进到渲染。
