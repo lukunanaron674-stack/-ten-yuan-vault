@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 500,
+      "height": 300,
+      "color": "1",
+      "text": "# PAPER-EXPLORE｜同辈研究地图\n\n状态：EXPLORE / NOT-FROZEN\n用途：横向阅读同辈论文与最新方向，不提前决定自己的论文题目。\n\n主链：别人写了什么 → 方向聚类 → 方法/对象 → 拥挤度 → 新趋势 → 空位 → 候选方向"
+    },
+    {
+      "id": "papers",
+      "type": "text",
+      "x": 650,
+      "y": -520,
+      "width": 430,
+      "height": 260,
+      "color": "2",
+      "text": "# A｜同辈论文题库\n\n优先收集：2022–2026\n对象：动画 / AIGC / 二维视觉 / 数字媒体 / 视觉传达相关本科与硕士论文\n\n每篇登记：\n题目｜年份｜学校｜层级｜研究对象｜方法｜产出｜来源"
+    },
+    {
+      "id": "clusters",
+      "type": "text",
+      "x": 650,
+      "y": -190,
+      "width": 430,
+      "height": 300,
+      "color": "3",
+      "text": "# B｜研究方向聚类\n\n先不判断优劣，只聚类。\n\n候选簇：\n1. AIGC动画生产流程\n2. 角色/场景一致性\n3. 风格迁移与个人视觉语言\n4. 分镜/镜头生成\n5. 动作与视频控制\n6. 人机协同创作\n7. 传统文化/地方文化+AIGC\n8. 交互叙事/虚拟角色\n9. 生成式设计方法论\n10. 其他新出现方向"
+    },
+    {
+      "id": "methods",
+      "type": "text",
+      "x": 650,
+      "y": 190,
+      "width": 430,
+      "height": 280,
+      "color": "4",
+      "text": "# C｜他们怎么研究\n\n记录方法而不是只看题目：\n- 文献综述\n- 案例分析\n- 创作实践\n- A/B实验\n- 用户/专家评审\n- 技术流程验证\n- 模型/Prompt对照\n- 作品反思与方法总结\n\n目标：看同辈论文真正做到哪一层。"
+    },
+    {
+      "id": "trend",
+      "type": "text",
+      "x": 1180,
+      "y": -520,
+      "width": 430,
+      "height": 290,
+      "color": "5",
+      "text": "# D｜最新方向雷达\n\n只登记“近两年明显升温/新出现”的方向。\n\n每个方向标：\n出现年份｜代表论文｜技术变化｜为什么现在能做｜是否适合5000字本科论文｜与毕设是否可直接联动"
+    },
+    {
+      "id": "crowded",
+      "type": "text",
+      "x": 1180,
+      "y": -160,
+      "width": 430,
+      "height": 290,
+      "color": "5",
+      "text": "# E｜拥挤区 / 空位\n\n拥挤区：大量论文重复讨论、创新主要停在换案例。\n\n空位：已有邻近研究，但同辈尚少直接验证。\n\n每个方向给：\n论文数量感｜重复度｜可做性｜资料量｜实验成本｜与个人项目适配度"
+    },
+    {
+      "id": "candidate",
+      "type": "text",
+      "x": 1180,
+      "y": 200,
+      "width": 430,
+      "height": 300,
+      "color": "6",
+      "text": "# F｜候选方向池（暂不冻结）\n\n只有经过 A→E 后才进入这里。\n\n每个候选方向必须回答：\n1. 别人已经做到了哪？\n2. 我比他们多做什么？\n3. 5000字能否讲清？\n4. 能否直接用现有毕设材料验证？\n5. 是否需要新增大量制作成本？\n\n状态：OPEN，禁止提前定题。"
+    },
+    {
+      "id": "rounds",
+      "type": "text",
+      "x": -620,
+      "y": -120,
+      "width": 470,
+      "height": 500,
+      "color": "4",
+      "text": "# 横向扫描轮次\n\nR1｜先看中国同辈近5年论文题目\nR2｜按研究对象聚类\nR3｜按方法聚类\nR4｜看2025–2026新方向\nR5｜找高重复方向\nR6｜找低重复但有资料支撑的方向\nR7｜与《黎黎隆》/方志敏现有资产交叉\nR8｜生成候选方向，不冻结\n\n每轮必须保留来源，不能只留结论。"
+    },
+    {
+      "id": "rules",
+      "type": "text",
+      "x": -620,
+      "y": 450,
+      "width": 470,
+      "height": 310,
+      "color": "3",
+      "text": "# 探索规则\n\n- 当前阶段目标是扩张，不是证明既有方向。\n- 优先阅读真实论文题目、摘要、目录、方法与结论。\n- “最新”与“适合本科5000字”分开判断。\n- 不因为和《黎黎隆》相关就自动给高分。\n- 每发现一个方向，同时记录相邻方向与反例。\n- 最终再从研究价值 × 可执行性 × 个人材料三个维度收束。"
+    }
+  ],
+  "edges": [
+    {"id":"e1","fromNode":"root","toNode":"papers","label":"COLLECT"},
+    {"id":"e2","fromNode":"papers","toNode":"clusters","label":"GROUP"},
+    {"id":"e3","fromNode":"clusters","toNode":"methods","label":"COMPARE"},
+    {"id":"e4","fromNode":"clusters","toNode":"trend","label":"RECENCY"},
+    {"id":"e5","fromNode":"trend","toNode":"crowded","label":"ASSESS"},
+    {"id":"e6","fromNode":"methods","toNode":"crowded","label":"ASSESS"},
+    {"id":"e7","fromNode":"crowded","toNode":"candidate","label":"FILTER"},
+    {"id":"e8","fromNode":"rounds","toNode":"root","label":"PROCESS"},
+    {"id":"e9","fromNode":"rules","toNode":"root","label":"GUARDRAIL"}
+  ]
+}
