@@ -1,4 +1,4 @@
-# STYLE_REVIEW_SCHEMA｜静态素材审核包 v1
+# STYLE_REVIEW_SCHEMA｜静态素材审核包 v1.1
 
 ## 身份
 - style_review_id
@@ -18,6 +18,10 @@
 
 ## 审核维度
 - identity
+- cognition_alignment
+- cross_view_identity
+- cross_view_proportion
+- costume_structure_consistency
 - silhouette
 - proportion
 - linework
@@ -42,3 +46,10 @@
 - PASS 后素材才可进入 approved_assets。
 - RETRY 最多 3 次。
 - 任何核心角色冻结项被改动 → REPLAN，不允许靠继续重抽碰运气。
+
+## 四宫格补充门禁（v1.1）
+- 四宫格必须逐格审核，不允许只给整张总分。
+- 任一格 identity / cognition_alignment 核心 FAIL → REPLAN。
+- cross_view_identity != PASS → 不得进入 approved_assets。
+- cross_view_proportion 明显冲突 → RETRY/REPLAN，不交给 H3 自行融合。
+- 审核 PASS 只证明静态视觉通过；最终 H3资格仍需 CHARACTER_H3_READY_PACKET=READY_FOR_H3。
