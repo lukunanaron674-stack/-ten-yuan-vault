@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>L1 / L2 图片审核台 · REVIEW-WEB-01</title>
+<style>
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --line:#d8dee4; --line-soft:#e8ecf0;
+  --ink:#1f2328; --ink-2:#57606a; --ink-3:#8b949e;
+  --pass:#1a7f37; --pass-bg:#e6f4ea; --pass-line:#57ab5a;
+  --rej:#82071e; --rej-bg:#ffeef0; --rej-line:#d1242f;
+  --accent:#0969da; --warn-bg:#fff8c5; --warn-line:#d4a72c;
+  font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-size:14px}
+header{position:sticky;top:0;z-index:20;background:var(--panel);border-bottom:1px solid var(--line);
+  padding:10px 16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+header strong{font-size:15px;margin-right:4px}
+button{font:inherit;background:var(--panel);color:var(--ink);border:1px solid var(--line);
+  border-radius:6px;padding:6px 11px;cursor:pointer}
+button:hover:not(:disabled){background:#f0f3f6}
+button:disabled{opacity:.45;cursor:not-allowed}
+button.primary{background:var(--pass);border-color:var(--pass);color:#fff}
+button.primary:hover:not(:disabled){background:#15662c}
+select,input[type=text]{font:inherit;background:var(--panel);color:var(--ink);
+  border:1px solid var(--line);border-radius:6px;padding:6px 9px}
+.badge{font-size:12px;padding:4px 9px;border-radius:999px;border:1px solid var(--line);background:#f6f8fa;color:var(--ink-2);white-space:nowrap}
+.badge.pass{background:var(--pass-bg);border-color:var(--pass-line);color:var(--pass);font-weight:600}
+.badge.rej{background:var(--rej-bg);border-color:var(--rej-line);color:var(--rej);font-weight:600}
+.badge.warn{background:var(--warn-bg);border-color:var(--warn-line);color:#7a5b00;font-weight:600}
+main{padding:14px 16px 40px;max-width:1800px;margin:0 auto}
+.bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+.sep{width:1px;height:22px;background:var(--line);margin:0 3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.card{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:pointer}
+.card:hover{border-color:#b6bfc9}
+.card.sel{border-color:var(--pass-line);border-width:2px;box-shadow:0 0 0 3px rgba(26,127,55,.12)}
+.card.rej{border-color:var(--rej-line);background:var(--rej-bg)}
+.card.rej.sel{border-width:2px}
+.thumb{width:100%;aspect-ratio:1/1;object-fit:cover;background:#eaeef2;display:block}
+.thumb.ph{height:auto}
+.meta{padding:8px 9px;display:grid;gap:6px}
+.nm{font-size:12px;word-break:break-all;line-height:1.35;color:var(--ink)}
+.rp{font-size:11px;color:var(--ink-3);word-break:break-all;line-height:1.3}
+.tags{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.stg{font:inherit;font-size:11px;border:1px solid var(--line);border-radius:5px;padding:2px 4px;background:var(--panel);color:var(--ink-2);max-width:88px}
+.mark{position:absolute;top:7px;left:7px;width:26px;height:26px;border-radius:50%;
+  display:grid;place-items:center;font-size:15px;font-weight:700;line-height:1;
+  background:rgba(255,255,255,.94);border:1px solid var(--line);color:var(--ink-3)}
+.card.sel .mark{background:var(--pass);border-color:var(--pass);color:#fff}
+.card.rej .mark{background:var(--rej);border-color:var(--rej);color:#fff}
+.hint{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:6px;padding:9px 12px;margin-bottom:12px;color:var(--ink-2);font-size:12.5px;line-height:1.6}
+.hint b{color:var(--ink)}
+kbd{background:#eef1f4;border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;
+  padding:0 4px;font:inherit;font-size:11px;color:var(--ink)}
+.empty{text-align:center;color:var(--ink-3);padding:60px 20px;font-size:13.5px;line-height:1.9}
+#toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:60;
+  background:#1f2328;color:#fff;padding:10px 18px;border-radius:8px;font-size:13px;
+  opacity:0;pointer-events:none;transition:opacity .2s}
+#toast.on{opacity:1}
+.hidden{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+
+<header>
+  <strong>L1 / L2 图片审核台</strong>
+  <button id="pickBtn" class="primary">① 选择图片目录</button>
+  <button id="recBtn" title="重新扫描源目录">↻ 重新扫描</button>
+  <span class="sep"></span>
+  <label class="sr" for="expDefault">导出目标</label>
+  <input type="text" id="expDefault" placeholder="导出子目录名（在源目录下创建）" value="_PASS_已通过" size="16" />
+  <button id="expBtn" class="primary">② 导出已选（复制）</button>
+  <button id="expPickBtn" title="导出到自选目录">导出到指定目录…</button>
+  <span class="sep"></span>
+  <span class="badge" id="rootBadge">未选目录</span>
+  <span class="badge pass" id="selBadge">已选 0</span>
+  <span class="badge rej" id="rejBadge">不要 0</span>
+  <span class="badge" id="totBadge">共 0 张</span>
+</header>
+
+<main>
+  <div class="hint">
+    <b>左键点图</b> = 通过 / 取消通过　·　<b>Shift + 左键</b> = 区间批量选　·　<b>右键</b> = 标记「不要」（只标记，不删源图）<br />
+    <b>A</b> 全选可见　<b>N</b> 清空　<b>F</b> 仅看已选　·　<b>1 / 2 / 3</b> 把已选设为 未分类 / L1 头像 / L2 四宫格<br />
+    判定只在你点击后产生；本页<b>不会修改、不会移动、不会删除</b>源目录任何原图，导出为复制。
+  </div>
+
+  <div class="bar">
+    <input type="text" id="search" placeholder="搜索文件名 / 路径…" style="width:210px" />
+    <select id="fSel">
+      <option value="all">全部</option>
+      <option value="sel">仅看已选</option>
+      <option value="rej">仅看不要</option>
+      <option value="none">仅看未分类</option>
+    </select>
+    <select id="fStage">
+      <option value="">全部阶段</option>
+      <option value="L1">L1 头像</option>
+      <option value="L2">L2 四宫格</option>
+      <option value="__">未分类</option>
+    </select>
+    <label style="display:flex;gap:5px;align-items:center;font-size:12.5px;color:var(--ink-2)">
+      <input type="checkbox" id="deep" checked /> 含子目录
+    </label>
+    <span class="sep"></span>
+    <button id="allBtn">全选可见</button>
+    <button id="invBtn">反选可见</button>
+    <button id="clrBtn">清空全部</button>
+    <span class="sep"></span>
+    <select id="bulkStage" title="批量设置阶段">
+      <option value="">批量设阶段…</option>
+      <option value="__">未分类</option>
+      <option value="L1">L1 头像</option>
+      <option value="L2">L2 四宫格</option>
+    </select>
+    <button id="bulkApply">应用到已选</button>
+  </div>
+
+  <div id="grid" class="grid"></div>
+  <div id="empty" class="empty">尚未选择目录。<br />点上方「① 选择图片目录」，挑一个生成图文件夹开始审核。</div>
+</main>
+
+<div id="toast"></div>
+
+<script>
+"use strict";
+const IMAGE_EXT = /\.(png|jpe?g|webp)$/i;
+const LS_KEY = "review_web_01_state_v1";
+const STAGES = { "__": "未分类", "L1": "L1 头像", "L2": "L2 四宫格" };
+
+let rootHandle = null;          // 源目录句柄
+let items = new Map();          // relative_path -> item
+let fileHandles = new Map();    // relative_path -> FileSystemFileHandle
+let viewList = [];              // 当前可见（过滤后）item 数组
+let lastIdx = -1;               // Shift 区间锚点
+let urls = new Map();           // relative_path -> objectURL
+let expHandle = null;           // 自选导出目录句柄
+let srcLabel = "";
+
+const $ = s => document.querySelector(s);
+const nowISO = () => new Date().toISOString();
+
+function toast(msg) {
+  const t = $("#toast");
+  t.textContent = msg; t.classList.add("on");
+  clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("on"), 2600);
+}
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, c =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+/* ---------- 选中态持久化（只存判定，不碰文件）---------- */
+function loadState() {
+  try { return JSON.parse(localStorage.getItem(LS_KEY) || "{}") || {}; }
+  catch { return {}; }
+}
+function saveState() {
+  try {
+    const out = {};
+    for (const [p, it] of items) {
+      if (it.selected || it.rejected || it.stage !== "__") {
+        out[p] = { s: it.selected ? 1 : 0, r: it.rejected ? 1 : 0, g: it.stage, at: it.reviewed_at || null };
+      }
+    }
+    localStorage.setItem(LS_KEY, JSON.stringify(out));
+  } catch (e) { console.warn("本地状态保存失败", e); }
+}
+function restoreState() {
+  const st = loadState();
+  for (const [p, it] of items) {
+    const s = st[p];
+    if (!s) continue;
+    it.selected = !!s.s; it.rejected = !!s.r; it.stage = s.g || "__"; it.reviewed_at = s.at || null;
+  }
+}
+
+/* ---------- 目录扫描 ---------- */
+async function scanDir(dir, prefix, deep) {
+  const out = [];
+  for await (const [name, h] of dir.entries()) {
+    if (h.kind === "file") {
+      if (IMAGE_EXT.test(name)) out.push({ name, path: prefix + name, handle: h });
+    } else if (h.kind === "directory" && deep) {
+      out.push(...await scanDir(h, prefix + name + "/", deep));
+    }
+  }
+  return out;
+}
+function guessStage(name, path) {
+  const s = (name + " " + path).toLowerCase();
+  if (/四宫格|4宫格|fourgrid|four|grid|宫格/.test(s)) return "L2";
+  if (/头像|head|avatar|thum|bust/.test(s)) return "L1";
+  return "__";
+}
+async function loadRoot(dir, deep) {
+  setBusy(true, "扫描中…");
+  try {
+    for (const [, u] of urls) URL.revokeObjectURL(u);
+    urls.clear(); items.clear(); fileHandles.clear();
+    const found = await scanDir(dir, "", deep);
+    found.sort((a, b) => a.path.localeCompare(b.path, "zh-Hans-CN"));
+    for (const f of found) {
+      items.set(f.path, {
+        file_name: f.name, relative_path: f.path, stage: guessStage(f.name, f.path),
+        selected: false, rejected: false, reviewed_at: null
+      });
+      fileHandles.set(f.path, f.handle);
+    }
+    restoreState();
+    srcLabel = dir.name || "所选目录";
+    $("#rootBadge").textContent = "源目录：" + srcLabel;
+    render();
+    toast("扫描到 " + items.size + " 张图");
+  } catch (e) {
+    console.error(e); toast("扫描失败：" + e.message);
+  } finally { setBusy(false); }
+}
+
+async function pickRoot() {
+  if (!window.showDirectoryPicker) {
+    return toast("浏览器不支持。请用最新版 Chrome / Edge 打开本页");
+  }
+  try {
+    const dir = await window.showDirectoryPicker({ mode: "readwrite", id: "reviewRoot" });
+    rootHandle = dir;
+    await loadRoot(dir, $("#deep").checked);
+  } catch (e) {
+    if (e && e.name !== "AbortError") toast("选择目录失败：" + e.message);
+  }
+}
+
+/* ---------- 渲染 ---------- */
+function passFilter(it) {
+  const q = $("#search").value.trim().toLowerCase();
+  if (q && !(it.file_name.toLowerCase().includes(q) || it.relative_path.toLowerCase().includes(q))) return false;
+  const fs = $("#fSel").value;
+  if (fs === "sel" && !it.selected) return false;
+  if (fs === "rej" && !it.rejected) return false;
+  if (fs === "none" && (it.selected || it.rejected)) return false;
+  const fg = $("#fStage").value;
+  if (fg === "__" && it.stage !== "__") return false;
+  if (fg && fg !== "__" && it.stage !== fg) return false;
+  return true;
+}
+function counts() {
+  let s = 0, r = 0;
+  for (const it of items.values()) { if (it.selected) s++; if (it.rejected) r++; }
+  return { s, r, t: items.size };
+}
+function updateBadges() {
+  const { s, r, t } = counts();
+  $("#selBadge").textContent = "已选 " + s;
+  $("#rejBadge").textContent = "不要 " + r;
+  $("#totBadge").textContent = "共 " + t + " 张";
+  $("#expBtn").disabled = s === 0;
+  $("#expPickBtn").disabled = s === 0;
+}
+function setBusy(on, msg) {
+  $("#pickBtn").disabled = on; $("#recBtn").disabled = on;
+  $("#totBadge").textContent = on ? (msg || "处理中…") : counts().t + " 张共";
+  if (!on) updateBadges();
+}
+
+const io = ("IntersectionObserver" in window) ? new IntersectionObserver(es => {
+  for (const e of es) {
+    if (!e.isIntersecting) continue;
+    const path = e.target.dataset.path;
+    io.unobserve(e.target);
+    hydrate(e.target, path);
+  }
+}, { rootMargin: "500px 0px" }) : null;
+
+async function hydrate(card, path) {
+  const h = fileHandles.get(path);
+  if (!h) return;
+  try {
+    const file = await h.getFile();
+    let u = urls.get(path);
+    if (!u) { u = URL.createObjectURL(file); urls.set(path, u); }
+    const img = card.querySelector("img");
+    if (img) { img.src = u; img.classList.remove("ph"); }
+  } catch (e) { console.warn("缩略图失败", path, e); }
+}
+
+function render() {
+  const grid = $("#grid");
+  viewList = [...items.values()].filter(passFilter);
+  grid.innerHTML = "";
+  if (io) io.disconnect();
+  for (let i = 0; i < viewList.length; i++) {
+    const it = viewList[i];
+    const card = document.createElement("article");
+    card.className = "card" + (it.selected ? " sel" : "") + (it.rejected ? " rej" : "");
+    card.dataset.path = it.relative_path;
+    card.dataset.idx = i;
+    card.title = it.relative_path;
+    card.innerHTML =
+      '<div class="mark">' + (it.rejected ? "✕" : (it.selected ? "✓" : "")) + '</div>' +
+      '<img class="thumb ph" alt="">' +
+      '<div class="meta">' +
+        '<div class="nm">' + esc(it.file_name) + '</div>' +
+        '<div class="tags">' +
+          '<select class="stg">' +
+            Object.keys(STAGES).map(k =>
+              '<option value="' + k + '"' + (it.stage === k ? " selected" : "") + '>' + STAGES[k] + '</option>'
+            ).join("") +
+          '</select>' +
+          (it.rejected ? '<span class="badge rej">不要</span>' : (it.selected ? '<span class="badge pass">已通过</span>' : "")) +
+        '</div>' +
+        '<div class="rp">' + esc(it.relative_path) + '</div>' +
+      '</div>';
+    card.addEventListener("click", ev => {
+      if (ev.target.classList.contains("stg")) return;
+      if (ev.button === 2) return;
+      if (ev.shiftKey) selectRange(i); else toggleSel(it);
+      render();
+    });
+    card.addEventListener("contextmenu", ev => { ev.preventDefault(); toggleRej(it); render(); });
+    card.querySelector(".stg").addEventListener("change", ev => {
+      it.stage = ev.target.value; it.reviewed_at = nowISO(); saveState();
+    });
+    grid.appendChild(card);
+    if (io) io.observe(card); else hydrate(card, it.relative_path);
+  }
+  $("#empty").classList.toggle("hidden", viewList.length > 0 || items.size === 0);
+  if (items.size && !viewList.length) {
+    $("#empty").classList.remove("hidden");
+    $("#empty").innerHTML = "当前筛选下没有图片。<br />换个筛选条件或清空搜索。";
+  } else if (!items.size) {
+    $("#empty").innerHTML = "尚未选择目录。<br />点上方「① 选择图片目录」，挑一个生成图文件夹开始审核。";
+  }
+  updateBadges();
+}
+function toggleSel(it) {
+  if (it.rejected) it.rejected = false;
+  it.selected = !it.selected;
+  it.reviewed_at = it.selected ? nowISO() : null;
+  saveState();
+}
+function toggleRej(it) {
+  it.rejected = !it.rejected;
+  if (it.rejected) { it.selected = false; it.reviewed_at = nowISO(); }
+  saveState();
+}
+function selectRange(to) {
+  if (lastIdx < 0) { toggleSel(viewList[to]); lastIdx = to; return; }
+  const [a, b] = lastIdx <= to ? [lastIdx, to] : [to, lastIdx];
+  const makeSel = !viewList[to].selected;
+  for (let i = a; i <= b; i++) {
+    const it = viewList[i];
+    it.rejected = false; it.selected = makeSel;
+    if (makeSel) it.reviewed_at = nowISO(); else it.reviewed_at = null;
+  }
+  saveState();
+}
+
+/* ---------- 导出（只复制，不动源文件）---------- */
+function buildManifest(selected) {
+  return {
+    source_issue: "674-173",
+    reviewer: "USER",
+    generated_at: nowISO(),
+    root: srcLabel,
+    total_selected: selected.length,
+    items: selected.map(it => ({
+      file_name: it.file_name,
+      relative_path: it.relative_path,
+      stage: it.stage,
+      selected: true,
+      decision: "PASS",
+      reviewed_at: it.reviewed_at || nowISO(),
+      reviewer: "USER",
+      source_issue: "674-173"
+    }))
+  };
+}
+async function copyOut(destDir, sub) {
+  let target = destDir;
+  if (sub) target = await destDir.getDirectoryHandle(sub, { create: true });
+  const picked = [...items.values()].filter(i => i.selected);
+  let n = 0;
+  for (const it of picked) {
+    const src = fileHandles.get(it.relative_path);
+    if (!src) { console.warn("缺句柄", it.relative_path); continue; }
+    const file = await src.getFile();
+    const flat = it.relative_path.replace(/[\/\\]/g, "__");
+    const outName = (it.stage !== "__" ? it.stage + "__" : "") + flat;
+    const out = await target.getFileHandle(outName, { create: true });
+    const w = await out.createWritable();
+    await w.write(await file.arrayBuffer());
+    await w.close();
+    n++;
+  }
+  const mf = await target.getFileHandle("review_manifest.json", { create: true });
+  const mw = await mf.createWritable();
+  await mw.write(JSON.stringify(buildManifest(picked), null, 2));
+  await mw.close();
+  return n;
+}
+async function exportDefault() {
+  if (!rootHandle) return toast("先选源目录");
+  const picked = [...items.values()].filter(i => i.selected).length;
+  if (!picked) return toast("没有已选图片");
+  const sub = ($("#expDefault").value || "_PASS_已通过").replace(/[\/\\:*?"<>|]/g, "_");
+  setBusy(true, "导出 " + picked + " 张…");
+  try {
+    const n = await copyOut(rootHandle, sub);
+    toast("已复制 " + n + " 张 → 源目录/" + sub + "/（含 review_manifest.json）");
+  } catch (e) { console.error(e); toast("导出失败：" + e.message); }
+  finally { setBusy(false); }
+}
+async function exportPicked() {
+  if (!window.showDirectoryPicker) return toast("浏览器不支持");
+  const picked = [...items.values()].filter(i => i.selected).length;
+  if (!picked) return toast("没有已选图片");
+  try {
+    const dir = await window.showDirectoryPicker({ mode: "readwrite", id: "reviewOut" });
+    setBusy(true, "导出 " + picked + " 张…");
+    const n = await copyOut(dir, null);
+    expHandle = dir;
+    toast("已复制 " + n + " 张 → " + (dir.name || "所选目录") + "/（含 review_manifest.json）");
+  } catch (e) {
+    if (e && e.name !== "AbortError") toast("导出失败：" + e.message);
+  } finally { setBusy(false); }
+}
+
+/* ---------- 事件 ---------- */
+$("#pickBtn").onclick = pickRoot;
+$("#recBtn").onclick = () => rootHandle && loadRoot(rootHandle, $("#deep").checked);
+$("#deep").onchange = () => rootHandle && loadRoot(rootHandle, $("#deep").checked);
+$("#expBtn").onclick = exportDefault;
+$("#expPickBtn").onclick = exportPicked;
+$("#search").oninput = render;
+$("#fSel").onchange = render;
+$("#fStage").onchange = render;
+$("#allBtn").onclick = () => { viewList.forEach(it => { it.rejected = false; it.selected = true; it.reviewed_at = nowISO(); }); saveState(); render(); };
+$("#invBtn").onclick = () => { viewList.forEach(it => { it.selected = !it.selected; it.rejected = false; it.reviewed_at = it.selected ? nowISO() : null; }); saveState(); render(); };
+$("#clrBtn").onclick = () => { items.forEach(it => { it.selected = false; it.rejected = false; it.stage = "__"; it.reviewed_at = null; }); saveState(); render(); };
+$("#bulkApply").onclick = () => {
+  const g = $("#bulkStage").value;
+  if (!g) return toast("先选阶段");
+  const n = [...items.values()].filter(i => i.selected).length;
+  if (!n) return toast("没有已选图片");
+  items.forEach(it => { if (it.selected) { it.stage = g; it.reviewed_at = nowISO(); } });
+  saveState(); render();
+  toast("已把 " + n + " 张设为 " + STAGES[g]);
+};
+document.addEventListener("click", ev => {
+  if (ev.target.closest && ev.target.closest("#grid .card")) lastIdx = +ev.target.closest("#grid .card").dataset.idx;
+});
+document.addEventListener("keydown", ev => {
+  const t = ev.target.tagName;
+  if (t === "INPUT" || t === "TEXTAREA" || t === "SELECT") return;
+  const k = ev.key.toLowerCase();
+  if (k === "a") { ev.preventDefault(); $("#allBtn").click(); }
+  else if (k === "n") { ev.preventDefault(); $("#clrBtn").click(); }
+  else if (k === "f") { ev.preventDefault(); const s = $("#fSel"); s.value = s.value === "sel" ? "all" : "sel"; render(); }
+  else if (k === "1" || k === "2" || k === "3") {
+    ev.preventDefault();
+    const g = { "1": "__", "2": "L1", "3": "L2" }[k];
+    items.forEach(it => { if (it.selected) { it.stage = g; it.reviewed_at = nowISO(); } });
+    saveState(); render(); toast("已选 → " + STAGES[g]);
+  }
+});
+window.addEventListener("beforeunload", e => {
+  if (counts().s > 0) { e.preventDefault(); e.returnValue = ""; }
+});
+updateBadges();
+</script>
+</body>
+</html>

@@ -117,9 +117,7 @@
 		{"id":"ctr_c3","type":"group","label":"C3 系统治理 · Linear 674-77","color":"#6e7781","x":2840,"y":40,"width":5580,"height":2020},
 		{"id":"ctr_c4","type":"group","label":"C4 来源考古 · Linear 674-94（无 MAIN 卡，收纳 source/evidence）","color":"#2da44e","x":8940,"y":40,"width":4020,"height":3370},
 		{"id":"ctr_c5","type":"group","label":"C5 森林场景 · Linear 674-50（待决）","color":"#d4a72c","x":8940,"y":4040,"width":5320,"height":5140},
-		{"id":"ctr_orphan","type":"group","label":"孤儿工单收容区 · 14 条无归属（STAGING 待 674 拍板）","color":"#cf222e","x":-7860,"y":3840,"width":4720,"height":3120},
-		{"id":"l1srcpack_txt_674169","type":"text","x":200,"y":7900,"width":460,"height":300,"color":"6","text":"**L1 正向源 VERIFIED（674-169 Done）**\n\n- 头像精修_第三组_3x5_CANDIDATE.png = codex 生成原图 exec-45253683 字节级同源（SHA 62f101a9…）\n- 色卡头像发散源原始用户文字已找回（会话 01a0cee7，09-23）\n- 唯一缺口：当次生成 prompt 原文未明文留存（不阻塞 L1）\n详见 pack ↓"},
-		{"id":"l1srcpack_file_674169","type":"file","file":"黎黎隆项目/03_角色/角色库/05_头像与高清素材/大头联想源页/HEAD_L1_SOURCE_PACK_v1.md","x":200,"y":8230,"width":387,"height":300,"color":"5"}
+		{"id":"ctr_orphan","type":"group","label":"孤儿工单收容区 · 14 条无归属（STAGING 待 674 拍板）","color":"#cf222e","x":-7860,"y":3840,"width":4720,"height":3120}
 	],
 	"edges":[
 		{"id":"e_g0_g1","toFloating":false,"fromNode":"g0","fromSide":"right","toNode":"g1","toSide":"left","label":"分解为"},
@@ -214,9 +212,7 @@
 		{"id":"ne00008","fromNode":"g6","toNode":"ctr_c3","fromSide":"right","toSide":"left"},
 		{"id":"ne00009","fromNode":"g9","toNode":"ctr_c3","fromSide":"right","toSide":"left"},
 		{"id":"ne00010","fromNode":"g0","toNode":"ctr_c4","fromSide":"right","toSide":"left"},
-		{"id":"ne00011","fromNode":"c2d1e8f3a7b94560","toNode":"g0","fromSide":"bottom","toSide":"top"},
-		{"id":"e_l1srcpack_t2f","fromNode":"l1srcpack_txt_674169","fromSide":"bottom","toNode":"l1srcpack_file_674169","toSide":"top"},
-		{"id":"e_l1srcpack_f2img","fromNode":"l1srcpack_file_674169","fromSide":"left","toNode":"f03f02b7eabb3b93","toSide":"right"}
+		{"id":"ne00011","fromNode":"c2d1e8f3a7b94560","toNode":"g0","fromSide":"bottom","toSide":"top"}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
