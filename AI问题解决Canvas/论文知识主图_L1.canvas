@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"root","type":"text","text":"# PAPER-KG 主图\n\n论文知识地图·目录层\n只放子图入口，细节进子图\n\n更新：2026-10-06","x":0,"y":0,"width":720,"height":240,"color":"6"},
+		{"id":"rule","type":"text","text":"层级规则\n\n① 主图＝目录，只做入口\n② 子图＝一个域一张图，网格布局\n③ 论文一级导航另立：\n　`论文问题系统_L1.canvas`（674-118）\n④ 旧大图已归档：\n　`归档_论文知识图谱_多中心_L1`","x":840,"y":0,"width":620,"height":240,"color":"4"},
+		{"id":"f_sub1","type":"file","file":"AI问题解决Canvas/子图①_文献横向_六板块.canvas","x":0,"y":420,"width":480,"height":170,"color":"3"},
+		{"id":"f_sub2","type":"file","file":"AI问题解决Canvas/子图②_方法与统计.canvas","x":560,"y":420,"width":480,"height":170,"color":"5"},
+		{"id":"f_sub3","type":"file","file":"AI问题解决Canvas/子图③_范式与行为编码.canvas","x":1120,"y":420,"width":480,"height":170,"color":"4"},
+		{"id":"f_nav","type":"file","file":"AI问题解决Canvas/论文问题系统_L1.canvas","x":0,"y":720,"width":480,"height":170,"color":"1"},
+		{"id":"f_cite","type":"file","file":"AI问题解决Canvas/引用清单_20条_勾选版_STAGING.md","x":560,"y":720,"width":480,"height":170,"color":"2"},
+		{"id":"f_read","type":"file","file":"AI问题解决Canvas/文献阅读版导读_20条_STAGING.md","x":1120,"y":720,"width":480,"height":170,"color":"2"},
+		{"id":"f_start","type":"file","file":"AI问题解决Canvas/00_从这里开始看.md","x":1680,"y":720,"width":480,"height":170,"color":"2"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","fromSide":"bottom","toNode":"f_sub1","toSide":"top","label":"① 文献横向·22 条（别人做过什么）"},
+		{"id":"e2","fromNode":"root","fromSide":"bottom","toNode":"f_sub2","toSide":"top","label":"② 方法与统计·α 门槛 + mid-p（凭什么可靠）"},
+		{"id":"e3","fromNode":"root","fromSide":"bottom","toNode":"f_sub3","toSide":"top","label":"③ 范式 + FACS 先例（凭什么算研究/非玄学）"},
+		{"id":"e4","fromNode":"root","fromSide":"bottom","toNode":"f_nav","toSide":"top","label":"一级导航（解决什么/推进到哪）"},
+		{"id":"e5","fromFloating":false,"fromNode":"root","fromSide":"bottom","toNode":"f_cite","toSide":"top","label":"引用落地·20 条勾选"},
+		{"id":"e6","fromNode":"root","fromSide":"bottom","toNode":"f_read","toSide":"top","label":"人话版导读·逐条看懂"},
+		{"id":"e7","fromNode":"root","fromSide":"bottom","toNode":"f_start","toSide":"top","label":"★先看这个·三步阅读路线"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
