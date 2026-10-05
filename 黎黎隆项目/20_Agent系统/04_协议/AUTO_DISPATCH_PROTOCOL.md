@@ -69,7 +69,7 @@
 - SCRIPT_READY → tenyuan
 - TENYUAN_READY → storyboard
 - STORYBOARD_READY → asset_recheck（只核验分镜新增需求）
-- STORYBOARD_READY + ASSET_READY + asset_recheck PASS → h3，正式模式固定 **LONGTAKE**
+- STORYBOARD_READY + ASSET_READY + asset_recheck PASS → h3_plan_preflight → h3_render；正式模式固定 **LONGTAKE**
 - RENDER_QUEUED 无 receipt → NO_OP / 等待回执
 - RENDER_DONE → video_review
 - RETRY → 根据 retry_packet.route
@@ -82,6 +82,13 @@
 - 素材 Agent 先锁定真实可绑定角色、场景、风格状态和 LongTake 可连续性。
 - 主题 / 剧本必须消费已批准的 asset_pack，不能脱离素材包凭空增加必要场景/角色。
 - 分镜若新增不可替代素材需求，必须回到 asset_recheck，不得直接把缺口塞进 H3 Prompt。
+
+### H3 渲染前计划门（2026-10-06）
+- 路由到 h3 时先执行 AG-07 的 `H3_AGENT_PLAN_PACKET`，不是直接 POST /prompt。
+- 真实角色/场景参考必须做 source_type、intended_role、shot_scale、aspect_ratio、resize_mode、role_fit 检查。
+- HEADSHOT 只能承担 IDENTITY_ONLY；需要中景/全身而素材不匹配时回 asset，不得 stretch 或让 H3 猜身体。
+- 非等比 stretch 永久禁止。
+- PLAN != APPROVED_FOR_RENDER 或 preflight != PASS → REPLAN/BLOCKED，不进入队列。
 
 ### LongTake 原则
 - 正式 H3 默认 `LONGTAKE`；独立短测试才允许普通单段模式。
