@@ -1,0 +1,172 @@
+{
+  "schema": "CHARACTER_H3_CARD",
+  "schema_version": "1.0",
+  "character_id": "H04",
+  "card_version": "v1",
+  "canonical_name": "旧门看守人",
+  "canonical_status": "CANDIDATE_TEXT_DESIGN_REGISTERED_H3_CARD_READY",
+  "canonical_scope_note": "H04 仍是非 CH 候选，不自动升级为 LLL-CHAR/CH 或 LOCKED；本卡只冻结 H3 所需角色认知。",
+  "identity_summary": "守在文明与未知的归返边境，负责判断从异律/未知地域返回的人，与出发时的那个人之间的身份连续性是否仍成立。",
+  "world_branch": "cross_region",
+  "world_role": "世界边界承担者 / 边境归返身份连续性验证者",
+  "narrative_function": "把“探索未知→人被改变→返回文明→验证同一性”这一世界命题具体化；在制度已经宣布结束时，仍以具体的人为依据保留或终止其返回可能，并在必要时亲自作最终裁定。",
+  "behavior_core": [
+    "具体的人优先于抽象档案：不只依据制度记录判断一段离开是否结束。",
+    "发现返回者仍存在身份/关系连续性缺口时，不轻易关闭其返回回路。",
+    "变化本身不自动等于人格或身份失效，不按单一污染阈值机械拒绝。",
+    "关键节点必须收束为明确裁定：放行、拒绝、继续保留回返可能或封门。"
+  ],
+  "behavior_allowed": [
+    "观察并核验返回者、记录、标记或判定器物。",
+    "对身份连续性、关系连续性、异常接管程度、回返资格进行逐项判断。",
+    "在发现缺口时延迟关闭回返可能。",
+    "通过明确的裁定手势/动作表达放行、拒绝或继续观察。",
+    "围绕固定归返门位/关口执行检查与裁定。"
+  ],
+  "behavior_forbidden": [
+    "不得演成只看污染数值就机械拒绝的检疫员。",
+    "不得演成万能神秘智者、守旧老人或泛化审判官。",
+    "不得默认承担“带路/引路人”功能；其核心是核验与裁定，不是引导旅行。",
+    "不得因制度宣布结束就自动关闭个体返回可能。",
+    "不得把改变后的返回者自动视为非人或敌对对象。"
+  ],
+  "age_read": {
+    "status": "UNKNOWN",
+    "note": "现有 canonical 文本未确认年龄；“旧门”是岗位/地点语义，不得据此推成老人。H3 不应主动年龄化。"
+  },
+  "temperament_reaction_tendency": [
+    "具体个体优先",
+    "谨慎延迟关闭",
+    "先核验后裁定",
+    "必要时才作最终收束"
+  ],
+  "body_structure": {
+    "status": "UNKNOWN_TEXT / VISUAL_ASSET_EXISTS",
+    "note": "文字正本没有冻结精确身高、头身比、肩胯或体型数值；H04 当前四宫格真图已存在且同角色初检 PASS，具体身体比例只由 674-258 的真实资产 preflight/静态审核读取，不从文字反写。"
+  },
+  "face_head_anchors": [
+    "长檐红斗笠",
+    "侧垂红缨",
+    "长黑发及腰",
+    "面部保持可读，不以深色面帘遮挡"
+  ],
+  "costume_anchors": [
+    "白灰分层长袍",
+    "下摆具有撕裂/不齐边缘",
+    "红系腰带"
+  ],
+  "special_structure_anchors": [
+    "青绿色提灯/判定器物；作为角色识别与岗位动作的重要可见锚点"
+  ],
+  "frozen_fields": [
+    "character_id=H04 与 canonical_name=旧门看守人",
+    "world_branch=cross_region；旧“青桶候选”仅是历史视觉桶，不等于青色世界区域",
+    "世界职责=世界边界承担者 / 身份连续性验证者",
+    "行为核心=具体的人优先于制度记录；发现缺口时保留回返可能；关键节点亲自裁定",
+    "长檐红斗笠+侧垂红缨",
+    "长黑发及腰",
+    "白灰分层长袍+撕裂/不齐下摆",
+    "青绿色提灯/判定器物",
+    "红系腰带",
+    "不得添加审判者冠冕/法槌语义，不得遮挡面部，不得改造成引路人姿态"
+  ],
+  "allowed_variation": [
+    "H3 中可变化基础站姿、转头、迈步、手臂裁定动作与提灯的自然摆动，但不得改变身份锚。",
+    "可因镜头景别出现服装次级褶皱和下摆运动，但不可重设计主轮廓、帽型、发长、主色块和判定器物。",
+    "表情与视线可随核验/裁定动作变化，但不得借此改变年龄或身份读感。"
+  ],
+  "forbidden_drift": [
+    "青桶候选→青色世界角色的偷升级",
+    "宽檐帽/斗笠变成王冠、法帽或金色审判装饰",
+    "新增法槌、权杖、武器等无来源装备",
+    "面部被深色面帘重新遮住",
+    "青绿提灯消失、变成武器或被替换为无关道具",
+    "长黑发大幅缩短/换发色",
+    "白灰分层长袍改成普通现代制服、重甲或赛博装甲",
+    "角色被演成带路者、神秘导师、纯检疫员或敌对守门 Boss"
+  ],
+  "unknown_regions": [
+    "精确年龄与年龄段",
+    "精确身高、头身比、肩宽、胸腔/骨盆比例、腿躯比",
+    "面部五官的数值级冻结点",
+    "惯用手、具体步态、动作速度",
+    "战斗能力与武器能力",
+    "具体组织隶属与正式编制",
+    "归返门/判定器物的详细工程机制",
+    "个人身世、家庭与长期剧情结局",
+    "最终十元强度与 ZN/NZ 主次"
+  ],
+  "action_capabilities": [
+    "站守固定归返门位/边境关口",
+    "观察、核验、对照返回者与记录/标记",
+    "持有并操作青绿色提灯/判定器物进行可见检查动作",
+    "通过手势或简短动作作裁定",
+    "在关口范围内进行基础转头、转身、迈步与位置调整",
+    "执行放行/拒绝/暂缓关闭/保留回返可能等语义明确的门位动作"
+  ],
+  "action_forbidden_or_unproven": [
+    "UNPROVEN: 奔跑、跳跃、攀爬、复杂格斗、武器战、超自然施法",
+    "UNPROVEN: 大幅杂技动作或高速连续肢体交互",
+    "FORBIDDEN: 以引路/带队为主的行为",
+    "FORBIDDEN: 以法槌/王冠/权杖进行审判式表演",
+    "FORBIDDEN: 仅凭污染阈值机械驱逐返回者"
+  ],
+  "source_text_refs": [
+    {
+      "type": "GITHUB_CANONICAL_TEXT",
+      "path": "黎黎隆项目/03_角色/角色库/候选角色/H04_旧门看守人.md",
+      "sha": "f304b0cd1350e8b90cab46d7b7c54e6c1e3fa235",
+      "authority": "PRIMARY"
+    },
+    {
+      "type": "GITHUB_H3_PREPLAN",
+      "path": "黎黎隆项目/20_Agent系统/06_验证/H3_PREPLAN_674-216_20261006.md",
+      "sha": "b6c2c859074b85d1ea39f5c770be628a66afa1d7",
+      "authority": "H3_SCOPE_AND_TEST_ROLE"
+    },
+    {
+      "type": "LINEAR_ASSET_AUDIT",
+      "issue": "674-219",
+      "authority": "VISUAL_EVIDENCE",
+      "asset_id": "H04-GRID-20260929",
+      "asset_sha256": "13b1b40120fa0ef6f02a88a0f3501ba4de1dca6e615887efcaa55bb4fc890267",
+      "note": "CURRENT_CANON；四宫格 TL/TR/BL/BR 为 FULL_BODY~MEDIUM_FULL，cross_cell_identity=PASS；视觉冻结建议来自该次真图对账。"
+    },
+    {
+      "type": "GITHUB_LEGACY_STAGING",
+      "path": "黎黎隆项目/01_世界观/03_NEW_CANDIDATES/头像角色小世界观_独立探索_2026-09-24/H04_旧门看守人_五版设定与个人小世界.md",
+      "sha": "eb60d8814833420fb875a3c09bc70975481b9628",
+      "authority": "LOWER_PRIORITY_SUPERSEDED_WHERE_CONFLICTS",
+      "note": "其中“垂落深色面帘”与 2026-10-06 CURRENT_CANON 视觉审核冲突，禁止升级；保留为历史候选证据。"
+    }
+  ],
+  "user_confirmed_fields": [
+    "H04 为用户明确选过的 P0 视觉候选。",
+    "H04 用作 674-216 H3 PREPLAN 的 PRIMARY 角色。",
+    "H04 当前真图四宫格作为 CURRENT_CANON 视觉证据，SHA 已验证。"
+  ],
+  "inferred_fields": [
+    {
+      "field": "allowed_variation",
+      "status": "PRODUCTION_INFERENCE",
+      "note": "仅用于 H3 运动自由度，不升级为角色世界观 Canon。"
+    },
+    {
+      "field": "basic_locomotion",
+      "status": "PRODUCTION_INFERENCE",
+      "note": "转头/转身/迈步视为基础动作能力；不据此推导跑跳、格斗等复杂能力。"
+    }
+  ],
+  "superseded_candidates": [
+    {
+      "field": "face_head_anchor",
+      "value": "宽檐与垂落深色面帘",
+      "source": "2026-09-24 STAGING 五版稿",
+      "disposition": "SUPERSEDED_FOR_H3_VISUAL_FREEZE",
+      "reason": "2026-10-06 H04 真图 CURRENT_CANON 视觉审计明确要求面部不遮挡；较新且经 SHA/逐格对账的视觉证据覆盖旧候选。"
+    }
+  ],
+  "character_card_gate": "PASS",
+  "character_card_ready": true,
+  "downstream": "674-258"
+}
