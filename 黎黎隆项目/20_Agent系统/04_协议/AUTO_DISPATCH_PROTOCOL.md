@@ -13,7 +13,7 @@
 一次总调度默认连续执行依赖链，直到遇到**真实外部阻塞**，而不是每个 Agent 执行后就停。
 
 正式生产默认：
-`ASSET → STYLE → THEME → SCRIPT → TENYUAN → STORYBOARD → ASSET_RECHECK → H3_QUEUE`
+`ASSET_DISCOVERY → CHARACTER_ALIGNMENT → STYLE → THEME → SCRIPT → TENYUAN → STORYBOARD → ASSET_RECHECK → CHARACTER_RECHECK → H3_PLAN → H3_QUEUE`
 
 若每一阶段 PASS，可在同一 Macro Tick 中继续下一阶段。
 
@@ -61,6 +61,7 @@
 典型（正式生产）：
 - IDLE + PRODUCTION goal → director
 - PLANNING + ASSET_UNCHECKED → **asset**
+- CHARACTER_ASSETS_FOUND + 有角色 → **character_alignment**（AG-11 生成/更新 CHARACTER_H3_READY_PACKET）
 - ASSET_MISSING → image（缺口允许自动补图时）
 - ASSET_PENDING_REVIEW / IMAGE_GENERATED → style_review
 - ASSET_READY + PLANNING → **theme（必须基于已批准素材包）**
@@ -69,7 +70,8 @@
 - SCRIPT_READY → tenyuan
 - TENYUAN_READY → storyboard
 - STORYBOARD_READY → asset_recheck（只核验分镜新增需求）
-- STORYBOARD_READY + ASSET_READY + asset_recheck PASS → h3_plan_preflight → h3_render；正式模式固定 **LONGTAKE**
+- asset_recheck PASS + 有角色 → character_recheck（镜头景别/动作变化后再次验证 Packet 覆盖范围）
+- STORYBOARD_READY + ASSET_READY + asset_recheck PASS + CHARACTER_H3_READY → h3_plan_preflight → h3_render；正式模式固定 **LONGTAKE**
 - RENDER_QUEUED 无 receipt → NO_OP / 等待回执
 - RENDER_DONE → video_review
 - RETRY → 根据 retry_packet.route
@@ -82,6 +84,13 @@
 - 素材 Agent 先锁定真实可绑定角色、场景、风格状态和 LongTake 可连续性。
 - 主题 / 剧本必须消费已批准的 asset_pack，不能脱离素材包凭空增加必要场景/角色。
 - 分镜若新增不可替代素材需求，必须回到 asset_recheck，不得直接把缺口塞进 H3 Prompt。
+
+### 角色认知 × 视觉对齐门（2026-10-06）
+- 有角色的 H3 任务必须先调用 AG-11。
+- AG-11 消费角色正本 + AG-04 真实资产事实 + AG-06 静态审核，输出 CHARACTER_H3_READY_PACKET。
+- 四宫格必须逐格对齐 identity / cognition / proportion / costume；一格核心错即 REPLAN。
+- `production_gate.status != READY_FOR_H3` 时不得进入 H3_PLAN。
+- H3 Agent 不得自己替代角色 Agent 判断“这几张图大概是一个人”。
 
 ### H3 渲染前计划门（2026-10-06）
 - 路由到 h3 时先执行 AG-07 的 `H3_AGENT_PLAN_PACKET`，不是直接 POST /prompt。
