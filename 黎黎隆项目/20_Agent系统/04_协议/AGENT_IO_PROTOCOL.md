@@ -58,7 +58,7 @@ director
 - asset_agent：只查真实素材并报告缺口。
 - image_agent：只补已确认缺失素材。
 - style_review_agent：只审核新参考图。
-- h3_agent：只执行镜头任务。
+- h3_agent：先把 READY 镜头/测试任务转成 H3_AGENT_PLAN_PACKET，完成真实输入 source_type / intended_role / aspect / resize / role_fit preflight；只有 PLAN=APPROVED_FOR_RENDER 且 preflight=PASS 才生成 RENDER_TASK。不得拿到任务就直接渲染。
 - video_review_agent：只审核生成结果。
 - director_agent：唯一合并全局状态并决定下一跳。
 
@@ -115,5 +115,5 @@ LEARNING 使用 test_shot_id。
 - asset_agent 只能提交素材结果，不能自己把镜头推进到渲染。
 - image_agent 生成的新素材必须先 style_review。
 - style_review_agent PASS 后才能成为 approved_assets。
-- h3_agent 生成任务包后，只有收到 executor_receipt 才能标记 RENDERING。
+- h3_agent 必须先完成 PLAN/PREFLIGHT；之后生成 RENDER_TASK，且只有收到 executor_receipt 才能标记 RENDERING。
 - video_review_agent PASS 后只提交 closing_state；next_shot_id 仍由导演合并。
