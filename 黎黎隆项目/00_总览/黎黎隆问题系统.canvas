@@ -193,11 +193,11 @@
 		{
 			"id": "m10_c2d1e8f3",
 			"type": "text",
-			"text": "# MAIN-10｜H3/LongTake 如何从 10–11s 扩展到长连续生产\n\n状态：部分完成｜2026-10-06 H3 Agent 已补输入 Preflight\n新增：4090实战经验已分级吸收；大头图横拉问题已归为 source_type×景别×宽高比门禁缺失。\n知识：[[L1-L4问题知识/MAIN-10|知识卡]]\n下钻子问题：14（含 SUB-10-14 输入参考适配）",
+			"text": "# MAIN-10｜H3/LongTake：10–11s → 长连续生产\\n\\n状态：PARTIAL｜R1 DONE → R2 ACTIVE → R3 CLOSE\\nH04：257 PASS + 258 READY_FOR_H3\\n4层：L1=1根问题｜L2=4问题簇｜L3=14 SUB｜L4=7当前实验未知\\n硬里程碑：短块稳定 → 30s LongTake → 60s\\n知识：[[L1-L4问题知识/MAIN-10|知识卡]]",
 			"x": -3287,
 			"y": 2569,
 			"width": 820,
-			"height": 420,
+			"height": 500,
 			"color": "2"
 		},
 		{
@@ -1083,6 +1083,16 @@
 			"width": 1150,
 			"height": 760,
 			"color": "5"
+		},
+		{
+			"id": "h3_stack_20261006",
+			"type": "text",
+			"text": "# H3 当前问题栈｜2026-10-06\\n\\nR1 DONE：证据去重/失效实验剔除\\nR2 ACTIVE：7 个真实未知最小矩阵\\nR3 PLANNED：复验 + 4份协议冻结\\n\\nL2 四簇：\\n① 输入/职责 3 SUB\\n② 短块稳定 4 SUB\\n③ 调度/审核 4 SUB\\n④ LongTake 3 SUB\\n\\n当前关键缺口：H04 场景资产、动作/镜头边界、CBEC A/B、30s/60s、4080硬件边界",
+			"x": -5300,
+			"y": 2550,
+			"width": 1500,
+			"height": 950,
+			"color": "2"
 		}
 	],
 	"edges": [
@@ -1982,6 +1992,14 @@
 			"toSide": "top",
 			"color": "5",
 			"label": "READY_FOR_H3→H3计划"
+		},
+		{
+			"id": "e_m10_h3stack_20261006",
+			"fromNode": "m10_c2d1e8f3",
+			"fromSide": "left",
+			"toNode": "h3_stack_20261006",
+			"toSide": "right",
+			"label": "当前问题栈"
 		}
 	],
 	"metadata": {
