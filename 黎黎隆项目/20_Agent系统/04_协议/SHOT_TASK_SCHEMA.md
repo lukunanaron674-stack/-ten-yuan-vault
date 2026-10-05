@@ -1,4 +1,4 @@
-# SHOT_TASK_SCHEMA｜正式镜头任务包 v2.1
+# SHOT_TASK_SCHEMA｜正式镜头任务包 v2.2
 
 ## 身份
 - project_id
@@ -75,6 +75,14 @@
 - h3_prompt_draft
 - storyboard_status: READY | REPLAN
 
+## 角色 Agent 生产对齐（有角色镜头必填）
+- character_h3_ready_packet_ref
+- character_semantic_identity_status: PASS | FAIL | AMBIGUOUS
+- character_visual_identity_status: PASS | FAIL | AMBIGUOUS
+- cognition_visual_alignment: PASS | FAIL | AMBIGUOUS
+- four_grid_alignment: PASS | FAIL | AMBIGUOUS | N_A
+- character_production_gate: READY_FOR_H3 | NEEDS_CHARACTER_REPLAN | NEEDS_ASSET_FIX | NEEDS_STYLE_REVIEW | BLOCKED
+
 ## 素材 Agent 填写
 - character_refs
 - scene_refs
@@ -113,6 +121,8 @@
 8. opening_state 已确定
 9. continuity_check != FAIL
 10. 导演确认本 job_id 仍为当前任务
+11. 有角色镜头时 character_production_gate = READY_FOR_H3
+12. cognition_visual_alignment = PASS；存在四宫格时 four_grid_alignment = PASS
 
 若 `new_world_rule_required = true`，镜头不得直接进入渲染；必须先完成 WORLD_PROPOSAL → 十元复核 → 导演确认 → Canon 回写/登记，再重新回到镜头 READY 门禁。
 
