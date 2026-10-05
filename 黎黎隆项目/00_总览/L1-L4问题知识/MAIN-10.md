@@ -56,6 +56,95 @@ Canvas 入口：[[黎黎隆问题系统]]
 - SUB-10-13｜付费云端成本如何限制重试策略与质量门槛。
 - SUB-10-14｜H3 输入参考的 source_type / 景别职责 / 宽高比如何在渲染前验证，避免大头图被横向拉伸、错误承担身体与构图职责。
 
+## 2026-10-06｜H3 问题层级与三轮收口计划 v1
+
+### 问题价值
+MAIN-10 不是“让 H3 能出视频”，而是把 H3 从**偶发生成工具**升级成**可重复、可审核、可扩展到 30s / 60s / 8min 的生产系统**。它直接决定：角色是否能稳定进入动画、失败是否可定位、4080 是否能无人值守连续生产、LongTake 是否能按 block 局部重跑而不是整条推倒。
+
+### 当前轮次
+MAIN-10 按问题系统规则最多 3 轮收口：
+
+- **R1｜证据去重与问题定界：DONE**
+  - 已把历史证据分成 PROVEN / PARTIAL / UNTESTED / INVALID_TEST / NEEDS_4080_REVALIDATION。
+  - 删除 9 类重复实验，不再浪费 GPU 证明“4080 能跑 H3 / 10s 能出片 / Director 能交 worker”等已知事实。
+  - 把旧 T01 视觉结论降级为 INVALID_TEST，但保留其 render_success 工程证据。
+  - 收束出 R2 真正需要回答的 7 个未知量。
+
+- **R2｜最小有效实验矩阵：NEXT / ACTIVE**
+  - 当前 H04 上游门已通过：674-257 CHARACTER_CARD_READY=PASS；674-258 production_gate=READY_FOR_H3。
+  - 只围绕 7 个真实未知跑最小矩阵：短块边界、角色身份、动作复杂度、镜头运动、角色×场景职责、Flat vs CBEC、30s→60s LongTake。
+  - 多 seed 嵌入关键实验，不另起一大组。
+  - H04 暂缺可绑定场景资产，因此角色×场景 / 部分镜头测试可 BLOCK，不允许拿随机背景补洞。
+
+- **R3｜收口、复验与协议冻结：PLANNED**
+  - 只重跑 R2 中 FAIL / UNSTABLE 且有修复价值的最小项。
+  - 冻结 H3_PRODUCTION_BASELINE_v1、H3_FAILURE_FAMILY_v1、H3_PROMPT_PROTOCOL_v1、H3_LONGTAKE_PROTOCOL_v1。
+  - 30s LongTake PASS 后再放 60s；失败只重跑失败 block。
+  - 若 H06/H09 到时 READY_FOR_H3，用 1–2 个角色做模板复制验证，不做无边界扩角色。
+  - 最终把状态、证据、办法、结果回写 Canvas；不能证实的保持 BLOCKED/PARTIAL。
+
+### L1–L4 问题楼层
+为避免 MAIN-10 的 14 个 SUB 平铺，H3 单独按 4 层管理：
+
+#### L1｜根问题：1 个
+1. MAIN-10｜H3 / LongTake 如何从 10–11s 稳定扩展到长连续生产。
+
+#### L2｜问题簇：4 个
+1. **INPUT / ROLE FIT｜输入与职责正确性**
+2. **SHORT BLOCK｜10–11s 短块稳定与可控性**
+3. **ORCHESTRATION / QA｜Director→worker→审核→回执生产链**
+4. **LONGTAKE｜30s / 60s / 8min 连续生产**
+
+#### L3｜正式 SUB：14 个
+- L2-1 INPUT / ROLE FIT：**3 个**
+  - SUB-10-02 最小输入包
+  - SUB-10-03 首/尾/关键帧职责
+  - SUB-10-14 source_type / 景别职责 / 宽高比 / resize preflight
+- L2-2 SHORT BLOCK：**4 个**
+  - SUB-10-01 10–11s 边界
+  - SUB-10-05 多 seed 稳定判据
+  - SUB-10-10 相机/人物/背景运动锁定顺序
+  - SUB-10-12 失败类型归因
+- L2-3 ORCHESTRATION / QA：**4 个**
+  - SUB-10-06 Director packet 结构化
+  - SUB-10-07 worker 领取/回传/重试/去重
+  - SUB-10-08 独立审核
+  - SUB-10-13 成本对重试与质量门的约束
+- L2-4 LONGTAKE：**3 个**
+  - SUB-10-04 block 接缝连续
+  - SUB-10-09 30s / 60s / 8min 长连续策略
+  - SUB-10-11 ambient / emotional / role 音频进入生产
+
+#### L4｜当前最小实验问题：7 个
+1. 4080 10–11s **边界/复跑稳定性**
+2. READY_FOR_H3 条件下的**角色身份稳定**
+3. **动作复杂度边界**
+4. **镜头运动边界**
+5. **角色图 × 场景图职责分离**
+6. **Flat vs CBEC 最小有效对照**
+7. **30s → 60s block 连续性**
+
+L4 是当前 R2 的实验入口；实验结束后要么进入 PROVEN / PARTIAL / FAIL / BLOCKED，要么回流到对应 L3 SUB，不继续无限拆 L5。
+
+### 当前已解决 / 已证明
+- 4080 本地 H3 最小闭环能运行。
+- Director packet → worker → receipt 能工作。
+- 10s 生成能力已证明，11s 已有成功证据但边界尚未冻结。
+- 4090 的运行时排错纪律可迁移。
+- HEAD_ONLY 不能承担 BODY/COSTUME/POSE；非等比 stretch 永久禁止。
+- AG-07 已有强制 input preflight + H3_AGENT_PLAN_PACKET。
+- H04 CHARACTER_H3_CARD + PRODUCTION_PACK 已通过，READY_FOR_H3。
+
+### 当前仍未解决
+- 4080 的真实 RAM/VRAM、264f、超时、吞吐、温度、并发边界。
+- H04 在正确角色包条件下的双 seed 身份稳定。
+- 动作复杂度和镜头运动的受控边界。
+- H04 缺场景资产，因此角色×场景职责分离尚不能完整验证。
+- Flat vs CBEC 尚无真实 A/B 数据。
+- 全时序自动审核（尤其 flicker / action order / LongTake seam）仍为 PARTIAL。
+- 4080 30s / 60s LongTake 尚无正式 PASS 证据。
+
+
 ## 2026-10-06｜4090 实战经验吸收 + H3 Agent 接入
 
 来源：[[../../20_Agent系统/03_知识库/增量/RUN-20261001-0815_H3渲染运行经验_4090实战]]；执行代理：[[../../20_Agent系统/01_Agent库/AG-07_H3渲染Agent]]。
