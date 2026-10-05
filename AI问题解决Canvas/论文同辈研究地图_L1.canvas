@@ -119,6 +119,66 @@
       "width": 430,
       "height": 180,
       "color": "6"
+    },
+    {
+      "id": "r2_done",
+      "type": "text",
+      "x": 650,
+      "y": 820,
+      "width": 430,
+      "height": 360,
+      "color": "2",
+      "text": "# R2｜按研究对象聚类｜DONE\n\n七类对象：\n作品 / 文化内容 / 技术工具 / 视觉语言 / 流程 / 用户交互 / 生产系统。\n\n当前结构：\n题材/作品（最常见）\n→ 技术/流程（升温）\n→ 系统/控制/协同（刚显形）\n\n关键：换题材 ≠ 换研究问题。"
+    },
+    {
+      "id": "r2_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文同辈研究地图_R2_研究对象聚类.md",
+      "x": 650,
+      "y": 1220,
+      "width": 430,
+      "height": 170,
+      "color": "6"
+    },
+    {
+      "id": "r3_done",
+      "type": "text",
+      "x": 1120,
+      "y": 1030,
+      "width": 430,
+      "height": 390,
+      "color": "4",
+      "text": "# R3｜按研究方法聚类｜DONE\n\n本科公开页常见：\n创作实践 / 案例分析 / 流程记录。\n\n研究化方法：\nA/B条件对照 / 专业或用户评价 / 实验组-对照组 / 流程系统比较 / 质性访谈 / 混合方法。\n\n关键发现：\n作品完成度 ≠ 研究证据强度。\n后续每篇必须同时登记“题目”与“拿什么证据支持结论”。"
+    },
+    {
+      "id": "r3_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文同辈研究地图_R3_研究方法聚类.md",
+      "x": 1120,
+      "y": 1460,
+      "width": 430,
+      "height": 170,
+      "color": "6"
+    },
+    {
+      "id": "r4_done",
+      "type": "text",
+      "x": 1650,
+      "y": 700,
+      "width": 460,
+      "height": 590,
+      "color": "5",
+      "text": "# R4｜2025–2026最新方向雷达｜DONE\n\nT1 流程重构\nT2 连续资产一致性\nT3 结构化控制\nT4 人机协同机制\nT5 风格可控+设计意图对齐\nT6 生成评价系统\nT7 AI动画微短剧→工业美学/叙事机制\nT8 AIGC+虚拟拍摄+实时引擎的复合生产体系\n\n横向变化：\n工具 → 作品 → 流程 → 控制 → 协同 → 系统\n\n注意：这是趋势地图，不是选题推荐。"
+    },
+    {
+      "id": "r4_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文同辈研究地图_R4_2025-2026最新方向雷达.md",
+      "x": 1650,
+      "y": 1330,
+      "width": 460,
+      "height": 170,
+      "color": "6"
     }
   ],
   "edges": [
@@ -199,6 +259,60 @@
       "fromNode": "r1_trend",
       "toNode": "trend",
       "label": "UPDATE"
+    },
+    {
+      "id": "e14",
+      "fromNode": "rounds",
+      "toNode": "r2_done",
+      "label": "R2 DONE"
+    },
+    {
+      "id": "e15",
+      "fromNode": "r2_done",
+      "toNode": "r2_file",
+      "label": "DETAIL"
+    },
+    {
+      "id": "e16",
+      "fromNode": "r2_done",
+      "toNode": "clusters",
+      "label": "OBJECT MAP"
+    },
+    {
+      "id": "e17",
+      "fromNode": "rounds",
+      "toNode": "r3_done",
+      "label": "R3 DONE"
+    },
+    {
+      "id": "e18",
+      "fromNode": "r3_done",
+      "toNode": "r3_file",
+      "label": "DETAIL"
+    },
+    {
+      "id": "e19",
+      "fromNode": "r3_done",
+      "toNode": "methods",
+      "label": "METHOD MAP"
+    },
+    {
+      "id": "e20",
+      "fromNode": "rounds",
+      "toNode": "r4_done",
+      "label": "R4 DONE"
+    },
+    {
+      "id": "e21",
+      "fromNode": "r4_done",
+      "toNode": "r4_file",
+      "label": "DETAIL"
+    },
+    {
+      "id": "e22",
+      "fromNode": "r4_done",
+      "toNode": "trend",
+      "label": "TREND MAP"
     }
   ]
 }
