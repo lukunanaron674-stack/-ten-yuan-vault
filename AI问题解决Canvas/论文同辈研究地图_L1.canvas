@@ -89,17 +89,116 @@
       "height": 310,
       "color": "3",
       "text": "# 探索规则\n\n- 当前阶段目标是扩张，不是证明既有方向。\n- 优先阅读真实论文题目、摘要、目录、方法与结论。\n- “最新”与“适合本科5000字”分开判断。\n- 不因为和《黎黎隆》相关就自动给高分。\n- 每发现一个方向，同时记录相邻方向与反例。\n- 最终再从研究价值 × 可执行性 × 个人材料三个维度收束。"
+    },
+    {
+      "id": "r1_done",
+      "type": "text",
+      "x": -620,
+      "y": 820,
+      "width": 470,
+      "height": 410,
+      "color": "2",
+      "text": "# R1｜中国同辈近5年扫描｜DONE\n\n重点样本：2024–2026 本科/硕士毕业设计公开页 + 同期同行评议研究。\n\n初步看到 8 簇：\n1. AIGC+传统文化/非遗\n2. AI短片/全流程动画\n3. AIGC个人视觉表达/风格化\n4. AI+IP/文创/动态视觉\n5. 交互/游戏/AR/VR\n6. 人机协同/生成式UI\n7. 虚拟拍摄/实时引擎/影游融合\n8. 动画生产流程/工业管线\n\n注意：R1只做横向摸底，不定题。"
+    },
+    {
+      "id": "r1_trend",
+      "type": "text",
+      "x": 1180,
+      "y": 590,
+      "width": 430,
+      "height": 360,
+      "color": "5",
+      "text": "# R1｜2024→2026变化信号\n\n2024：AIGC多作为新工具\n→ 风格化 / IP生成 / 辅助动画\n\n2025：进入完整创作流程\n→ 非遗AIGC动画 / 实拍+AIGC / AI短片\n\n2026：向系统化生产移动\n→ 全流程AIGC影像\n→ 人机协同 / 生成式UI\n→ AIGC+虚拟拍摄+实时引擎+影游融合\n\n高拥挤：传统文化+AIGC。\n较少见但暂不判空白：一致性评价 / 视觉规范 / 跨资产控制 / 项目级AI美术资产管理。"
+    },
+    {
+      "id": "r1_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文同辈研究地图_R1_中国同辈近5年扫描.md",
+      "x": 650,
+      "y": 570,
+      "width": 430,
+      "height": 180,
+      "color": "6"
     }
   ],
   "edges": [
-    {"id":"e1","fromNode":"root","toNode":"papers","label":"COLLECT"},
-    {"id":"e2","fromNode":"papers","toNode":"clusters","label":"GROUP"},
-    {"id":"e3","fromNode":"clusters","toNode":"methods","label":"COMPARE"},
-    {"id":"e4","fromNode":"clusters","toNode":"trend","label":"RECENCY"},
-    {"id":"e5","fromNode":"trend","toNode":"crowded","label":"ASSESS"},
-    {"id":"e6","fromNode":"methods","toNode":"crowded","label":"ASSESS"},
-    {"id":"e7","fromNode":"crowded","toNode":"candidate","label":"FILTER"},
-    {"id":"e8","fromNode":"rounds","toNode":"root","label":"PROCESS"},
-    {"id":"e9","fromNode":"rules","toNode":"root","label":"GUARDRAIL"}
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "papers",
+      "label": "COLLECT"
+    },
+    {
+      "id": "e2",
+      "fromNode": "papers",
+      "toNode": "clusters",
+      "label": "GROUP"
+    },
+    {
+      "id": "e3",
+      "fromNode": "clusters",
+      "toNode": "methods",
+      "label": "COMPARE"
+    },
+    {
+      "id": "e4",
+      "fromNode": "clusters",
+      "toNode": "trend",
+      "label": "RECENCY"
+    },
+    {
+      "id": "e5",
+      "fromNode": "trend",
+      "toNode": "crowded",
+      "label": "ASSESS"
+    },
+    {
+      "id": "e6",
+      "fromNode": "methods",
+      "toNode": "crowded",
+      "label": "ASSESS"
+    },
+    {
+      "id": "e7",
+      "fromNode": "crowded",
+      "toNode": "candidate",
+      "label": "FILTER"
+    },
+    {
+      "id": "e8",
+      "fromNode": "rounds",
+      "toNode": "root",
+      "label": "PROCESS"
+    },
+    {
+      "id": "e9",
+      "fromNode": "rules",
+      "toNode": "root",
+      "label": "GUARDRAIL"
+    },
+    {
+      "id": "e10",
+      "fromNode": "rounds",
+      "toNode": "r1_done",
+      "label": "R1 DONE"
+    },
+    {
+      "id": "e11",
+      "fromNode": "r1_done",
+      "toNode": "r1_file",
+      "label": "DETAIL"
+    },
+    {
+      "id": "e12",
+      "fromNode": "r1_done",
+      "toNode": "r1_trend",
+      "label": "SIGNAL"
+    },
+    {
+      "id": "e13",
+      "fromNode": "r1_trend",
+      "toNode": "trend",
+      "label": "UPDATE"
+    }
   ]
 }
