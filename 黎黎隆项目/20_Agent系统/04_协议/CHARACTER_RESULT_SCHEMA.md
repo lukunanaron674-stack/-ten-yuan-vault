@@ -1,4 +1,4 @@
-# CHARACTER_RESULT_SCHEMA｜角色 Agent 结果协议 v1
+# CHARACTER_RESULT_SCHEMA｜角色 Agent 结果协议 v1.1
 
 ## 用途
 规范 AG-11 角色 Agent 的新建、更新、审核与视觉任务输出。
@@ -96,6 +96,13 @@ visual:
   layout: "9:16 2x2"
   asset_status: EXISTING|MISSING|PENDING_STYLE_REVIEW|APPROVED
 
+h3_readiness:
+  packet_required: true
+  packet_ref:
+  cognition_visual_alignment: PASS|FAIL|AMBIGUOUS
+  four_grid_alignment: PASS|FAIL|AMBIGUOUS|N_A
+  production_gate: READY_FOR_H3|NEEDS_CHARACTER_REPLAN|NEEDS_ASSET_FIX|NEEDS_STYLE_REVIEW|BLOCKED
+
 asset_gaps: []
 conflicts: []
 blocked_by: []
@@ -136,6 +143,8 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|LOCAL_CODEX_RENDER|IMAGE
 14. 数字比例必须绑定身体落点、主辅权重、分布与证据状态，不得把单个数字当固定体型标签。
 15. 角色视觉默认 `next_route=LOCAL_CODEX_RENDER`；只有用户明确指定其他生图链时才使用 IMAGE_GENERATE。
 16. LOCAL_CODEX_RENDER 完成必须有真实 receipt + output sha256；仅写 prompt 不算生成完成。
+17. 角色进入 H3 前必须生成 CHARACTER_H3_READY_PACKET；没有 READY_FOR_H3 不得被镜头/H3流程消费。
+18. 四宫格逐格 identity/cognition/proportion/costume 任一核心 FAIL，production_gate 不得 READY_FOR_H3。
 
 ## 角色视觉回写
 风格审核 PASS 后，角色 Agent只追加/更新：
