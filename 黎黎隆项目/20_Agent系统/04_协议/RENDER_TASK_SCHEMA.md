@@ -19,6 +19,16 @@
 
 > WRITTEN 只代表任务文件已写入，不代表本地 H3 已开始。
 
+## 角色生产资格（有角色时必填）
+- character_h3_ready_packet_ref
+- character_production_gate: READY_FOR_H3
+- cognition_visual_alignment: PASS
+- four_grid_alignment: PASS | N_A
+- approved_character_asset_ids
+- approved_shot_scales
+
+> 任一字段缺失或不是上述通过态：不得 QUEUED。
+
 ## 输入锁
 - character_asset_ids
 - scene_asset_ids
