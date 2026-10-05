@@ -9,7 +9,7 @@ linear_issue: 674-116
 r2_phase: R2-B
 status: partial
 problem_level: MAIN
-subproblem_count: 13
+subproblem_count: 14
 ---
 
 # MAIN-10｜H3 / LongTake 如何从 10–11s 稳定扩展到长连续生产
@@ -54,6 +54,47 @@ Canvas 入口：[[黎黎隆问题系统]]
 - SUB-10-11｜ambient / emotional / role 三类音频字段如何真正进入镜头生产。
 - SUB-10-12｜失败日志如何区分模型失败、输入失败、资产失败、连续性失败、调度失败。
 - SUB-10-13｜付费云端成本如何限制重试策略与质量门槛。
+- SUB-10-14｜H3 输入参考的 source_type / 景别职责 / 宽高比如何在渲染前验证，避免大头图被横向拉伸、错误承担身体与构图职责。
+
+## 2026-10-06｜4090 实战经验吸收 + H3 Agent 接入
+
+来源：[[../../20_Agent系统/03_知识库/增量/RUN-20261001-0815_H3渲染运行经验_4090实战]]；执行代理：[[../../20_Agent系统/01_Agent库/AG-07_H3渲染Agent]]。
+
+### 已验证并可直接进入问题解法的工程纪律
+- 任务写入不等于开始渲染；必须有 executor receipt。
+- 运行时真实参数以 ComfyUI `/history/<prompt_id>` 为权威，不以模板 workflow 猜。
+- failed 先读 error body；文件出现不等于完成。
+- 输入声称绑定角色/场景时必须真实给齐；缺失就 BLOCK，不允许“先凑一个图跑”。
+- 崩源卡不得无限重试；失败必须分 TRANSIENT / TASK / ENV / INPUT。
+
+### 4090 已验证、迁移为 4080 默认安全基线但仍需复验
+- 单实例优先。
+- 默认 10–11s block；>264f 不进入批量队列。
+- Sage / 模型路径 / 启动参数在渲染前做 preflight。
+- 这些当前标记：`MIGRATED_BASELINE_NOT_4080_CERTIFIED`，不能冒充 4080 实测结论。
+
+### 新暴露的小问题：参考图用途与画幅不匹配
+现象：大头角色参考直接进入横屏 H3，工作流把图横向拉长。
+
+根因不是“模型偶尔抽风”，而是渲染前缺少：
+1. source_type 分类；
+2. intended_role；
+3. shot_scale_required；
+4. aspect_ratio / resize_mode；
+5. role_fit 门禁。
+
+已落地到 AG-07 与 RENDER_TASK_SCHEMA v1.1：
+- HEADSHOT 只允许锁身份；
+- 中景/中全景/全身必须换适合的角色源；
+- 永久禁止非等比 stretch；
+- 只有 `H3_AGENT_PLAN_PACKET=APPROVED_FOR_RENDER` 且 input_preflight PASS 才能渲染。
+
+### 4080 必须重新标定
+- VRAM/RAM 峰值；
+- 264f 是否仍为硬极限；
+- 模型大小上限；
+- 超时阈值；
+- 吞吐/温度/并发。
 
 ## BLOCKER
 
