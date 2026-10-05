@@ -96,6 +96,19 @@ Canvas 入口：[[黎黎隆问题系统]]
 - 超时阈值；
 - 吞吐/温度/并发。
 
+### 真实反例：T01 大头源直接进横屏视频（2026-10-06）
+674-216 门禁生效前，H04/H06 头像源被直接用于 10s/11s 视频，共4条。
+
+结果：
+- 4/4 render success；
+- identity = FAIL/AMBIGUOUS；
+- body ratio = AMBIGUOUS；
+- camera continuity = FAIL；
+- 场景连续仅 PARTIAL。
+
+结论：**“能渲染成功”与“输入角色适配正确”完全是两回事。**
+这组证据正式归类为 `NEGATIVE_EVIDENCE_INPUT_ROLE_MISMATCH`，反向支持 SUB-10-14 的 source_type / intended_role / shot_scale / aspect 门禁。
+
 ## BLOCKER
 
 （无）
