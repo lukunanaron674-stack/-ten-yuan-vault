@@ -9,7 +9,7 @@ linear_issue: 674-116
 r2_phase: R2-C
 status: partial
 problem_level: MAIN
-subproblem_count: 13
+subproblem_count: 14
 ---
 
 # MAIN-15｜角色/世界观/场景/镜头如何形成统一生产链与质量门禁
@@ -54,6 +54,18 @@ Canvas 入口：[[黎黎隆问题系统]]
 - SUB-15-11｜每天只允许 2 个主任务的 74 版原则如何接入生产调度。
 - SUB-15-12｜LOCKED_ASSET 何时真正可被下游调用，如何防止未审核资产偷偷进入生产。
 - SUB-15-13｜批量生产时吞吐量、返工率、人工审核成本如何记录。
+- SUB-15-14｜角色 Agent 如何作为正式 H3 前置门，把角色认知、四宫格/全身资产、静态审核统一成 CHARACTER_H3_READY_PACKET。
+
+## 2026-10-06｜角色 Agent 正式接入 H3
+
+旧链路的问题：角色 Agent 只存在于“角色创建/更新轨”，正式镜头生产却可能从素材/分镜直接进入 H3，因此角色卡正确不代表 H3 实际拿到的四宫格正确。
+
+新链路：
+`ASSET_DISCOVERY → CHARACTER_ALIGNMENT → STYLE → THEME/SCRIPT/TENYUAN/STORYBOARD → ASSET_RECHECK → CHARACTER_RECHECK → H3_PLAN → H3_RENDER`
+
+角色门输出：CHARACTER_H3_READY_PACKET。
+
+H3 不得绕过该 Packet 自行从目录/manifest/Linear 里挑“看起来像”的角色图。
 
 ## BLOCKER
 
