@@ -251,6 +251,53 @@ writeback:
 next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|LOCAL_CODEX_RENDER|IMAGE_GENERATE|STYLE_REVIEW|DIRECTOR
 ```
 
+## H3 角色对齐门｜Character H3 Ready Packet（2026-10-06，强制）
+
+> 新规则：角色 Agent 不再只负责“角色卡写得对”。进入 H3 前，AG-11 还必须证明**角色认知、四宫格/全身视觉、素材身份三者是同一个角色**。
+
+统一输出 [[../04_协议/CHARACTER_H3_READY_PACKET_SCHEMA]]。
+
+### 角色认知对齐
+每个准备进 H3 的角色必须冻结：
+- identity_core；
+- world_role / narrative_function；
+- behavior_core；
+- age_read；
+- body_type_summary；
+- frozen_identity_anchors；
+- frozen_body_anchors；
+- frozen_costume_anchors；
+- special_structures；
+- forbidden_reinterpretations；
+- unknown_regions。
+
+角色认知不是 prompt 装饰词，而是视觉审核的判据。
+
+### 四宫格逐格审核
+存在 FOUR_PANEL 时，AG-11 必须逐格判：
+- 是否同一角色；
+- 是否与角色认知一致；
+- 比例是否互相兼容；
+- 服装/特殊结构是否一致；
+- 本格承担什么职责。
+
+禁止：
+- “四格整体差不多”就 PASS；
+- 三格对一格错，用平均分蒙混；
+- 把 AI 首次补全出来的未知身体区域反写为角色事实；
+- 四格各自都好看，但其实年龄/体型/服装不是一个人。
+
+### H3 资格
+只有生成：
+`CHARACTER_H3_READY_PACKET.production_gate.status=READY_FOR_H3`
+后，H3 Agent 才能消费该角色。
+
+如果角色认知与四宫格冲突：
+- 身份/设定问题 → `NEEDS_CHARACTER_REPLAN`
+- 图错/版本错 → `NEEDS_ASSET_FIX`
+- 风格/视觉不一致 → `NEEDS_STYLE_REVIEW`
+- 不允许 H3 自己“融合一下”。
+
 ## 与其他 Agent 的边界
 - **导演 Agent**：决定角色任务优先级与是否升级冲突。
 - **世界观 Agent**：既提供角色能存在的机制，也可通过 WORLD_CHARACTER_SEED 主动规划地理、组织、职业和人物生态位；角色 Agent 将其个体化。角色发现群体级新含义时再反向提交 WORLD_PROPOSAL。
