@@ -8,7 +8,7 @@
       "width": 650,
       "height": 430,
       "color": "1",
-      "text": "# R6.1｜那些现代概念都是什么？\n\n问题不是：**谁比五行高级？**\n\n而是看三轴：\n- 抽象层级\n- 形式化程度\n- 可检验程度\n\n当前十元定位：\n**F3 定性关系系统模型 → 向 F4 探索**"
+      "text": "# R6.1｜现代概念是什么？｜已被 R6.2 核心纠偏\n\n⚠️ 原“把十元端点分别认定为 class/state/operator/role”的拆分式方向不再继续。\n\n现行核心：\n**十元是连续映射理论。**\n\n三元压缩 → 三元组合 → 五行十位映射 → 五行深层关系映射 → 跨领域名字切换 / 结构保持。\n\n详见 R6.2。"
     },
     {
       "id": "philosophy",
@@ -169,6 +169,16 @@
       "height": 560,
       "color": "1",
       "text": "# 回答“谁更高级？”\n\n不是直线等级。\n\n五行：\n文化/哲学/关系祖型强\n\n现代图/知识表示：\n表达精确度高\n\n系统动力学/动态系统：\n形式化和计算能力高\n\n十元：\n正在把**传统关系祖型 → 现代关系编码 → AI创作意图工具**连接起来。\n\n它当前的价值不在“比谁高级”，而在能否形成可验证的中层模型。"
+    },
+    {
+      "id": "r62",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/R6.2_十元映射理论核心纠偏.canvas",
+      "x": 2300,
+      "y": -200,
+      "width": 650,
+      "height": 220,
+      "color": "1"
     }
   ],
   "edges": [
@@ -255,15 +265,23 @@
       "fromNode": "answer",
       "toNode": "next",
       "label": "不追求虚假高级"
+    },
+    {
+      "id": "e_r62",
+      "fromNode": "root",
+      "toNode": "r62",
+      "label": "核心纠偏｜以此为准"
     }
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "1.1",
     "frontmatter": {
       "type": "modern-concepts-tenyuan-position",
       "status": "DONE",
       "parent": "674-284/R6",
-      "date": "2026-10-07"
+      "date": "2026-10-07",
+      "superseded_direction": "standalone-endpoint-identity",
+      "current_core": "hierarchical-mapping-theory"
     }
   }
 }
