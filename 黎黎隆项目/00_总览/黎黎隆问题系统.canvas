@@ -1322,6 +1322,76 @@
       "height": 760,
       "color": "2",
       "text": "# XN｜大Z分解后局部规则化\n\n原则：大体量 Z 不应被一整束全局 XN 硬约束。\n\n固定做法：\n1. 先记录大Z拆成多少个小Z\n2. 每个小Z建立自己的 XN_SET / NX_GAPS / PATH / AUTHORITY\n3. 每个小Z单独计算 expected_xn_fit / verified_xn_fit\n4. 小Z达到足够信赖度后，再向上汇总父Z信赖度\n\n目的：把“一个大Z很难被一套规则准确束缚”改成“多个小Z分别规则化、分别校准、分别验证”。\n\n建议字段：\nchild_z_count\nlocal_xn_set\nlocal_verified_fit\nparent_rollup_status\n\n状态：CANDIDATE_XN｜待R3压力测试"
+    },
+    {
+      "id": "z1a_277",
+      "type": "text",
+      "x": 13200,
+      "y": 2300,
+      "width": 1000,
+      "height": 420,
+      "color": "4",
+      "text": "# Z1-A｜目标/问题结构治理\n\nvolume 72\nREQ / HIGH\n骨架层：Goal / Problem / Main / Sub / 父子Z"
+    },
+    {
+      "id": "z1b_277",
+      "type": "text",
+      "x": 14400,
+      "y": 2300,
+      "width": 1000,
+      "height": 420,
+      "color": "2",
+      "text": "# Z1-B｜XN规则获取与校准\n\nvolume 74\nREQ / HIGH\n来源 / 覆盖度 / 可靠度 / 有效性 / 校准"
+    },
+    {
+      "id": "z1c_277",
+      "type": "text",
+      "x": 15600,
+      "y": 2300,
+      "width": 1000,
+      "height": 420,
+      "color": "3",
+      "text": "# Z1-C｜NX / 偏好补充\n\nvolume 63\nREQ / HIGH\n保留未形式化判断 → 素材证据 → 候选XN"
+    },
+    {
+      "id": "z1d_277",
+      "type": "text",
+      "x": 13200,
+      "y": 2900,
+      "width": 1000,
+      "height": 420,
+      "color": "4",
+      "text": "# Z1-D｜Agent主权与责任\n\nvolume 70\nREQ / HIGH\n谁判断 / 执行 / 审核 / 冻结 / 上报"
+    },
+    {
+      "id": "z1e_277",
+      "type": "text",
+      "x": 14400,
+      "y": 2900,
+      "width": 1000,
+      "height": 420,
+      "color": "2",
+      "text": "# Z1-E｜PATH现实执行\n\nvolume 78\nREQ / CRITICAL\n工具 / 权限 / 触发 / 跨端 / 回传"
+    },
+    {
+      "id": "z1f_277",
+      "type": "text",
+      "x": 15600,
+      "y": 2900,
+      "width": 1000,
+      "height": 420,
+      "color": "5",
+      "text": "# Z1-F｜状态/证据/版本/回传\n\nvolume 73\nREQ / CRITICAL\n状态 / 证据 / 版本 / source-of-truth / trace"
+    },
+    {
+      "id": "z1g_277",
+      "type": "text",
+      "x": 14400,
+      "y": 3500,
+      "width": 1000,
+      "height": 420,
+      "color": "6",
+      "text": "# Z1-G｜长期运行/恢复/调度\n\nvolume 65\nREQ / MEDIUM-HIGH\n长期自动运行、恢复点、scheduler"
     }
   ],
   "edges": [
@@ -2280,10 +2350,172 @@
       "toSide": "top",
       "color": "5",
       "label": "局部校准→父Z汇总"
+    },
+    {
+      "id": "e_core_z1a_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1a_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT",
+      "color": "4"
+    },
+    {
+      "id": "e_core_z1b_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1b_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT",
+      "color": "2"
+    },
+    {
+      "id": "e_core_z1c_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1c_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT",
+      "color": "3"
+    },
+    {
+      "id": "e_core_z1d_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1d_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT",
+      "color": "4"
+    },
+    {
+      "id": "e_core_z1e_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1e_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT",
+      "color": "2"
+    },
+    {
+      "id": "e_core_z1f_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1f_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT",
+      "color": "5"
+    },
+    {
+      "id": "e_core_z1g_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1g_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT / LATE",
+      "color": "6"
+    },
+    {
+      "id": "e_z1d_dep_z1a_277",
+      "fromNode": "z1a_277",
+      "fromSide": "bottom",
+      "toNode": "z1d_277",
+      "toSide": "top",
+      "label": "DEPENDS_ON",
+      "color": "4"
+    },
+    {
+      "id": "e_z1e_dep_z1b_277",
+      "fromNode": "z1b_277",
+      "fromSide": "bottom",
+      "toNode": "z1e_277",
+      "toSide": "top",
+      "label": "DEPENDS_ON",
+      "color": "2"
+    },
+    {
+      "id": "e_z1e_dep_z1d_277",
+      "fromNode": "z1d_277",
+      "fromSide": "right",
+      "toNode": "z1e_277",
+      "toSide": "left",
+      "label": "DEPENDS_ON",
+      "color": "4"
+    },
+    {
+      "id": "e_z1e_dep_z1f_277",
+      "fromNode": "z1f_277",
+      "fromSide": "left",
+      "toNode": "z1e_277",
+      "toSide": "right",
+      "label": "DEPENDS_ON",
+      "color": "5"
+    },
+    {
+      "id": "e_z1c_sup_z1b_277",
+      "fromNode": "z1c_277",
+      "fromSide": "left",
+      "toNode": "z1b_277",
+      "toSide": "right",
+      "label": "SUPPORTS",
+      "color": "3"
+    },
+    {
+      "id": "e_z1f_sup_z1b_277",
+      "fromNode": "z1f_277",
+      "fromSide": "top",
+      "toNode": "z1b_277",
+      "toSide": "bottom",
+      "label": "SUPPORTS",
+      "color": "5"
+    },
+    {
+      "id": "e_z1f_sup_z1c_277",
+      "fromNode": "z1f_277",
+      "fromSide": "top",
+      "toNode": "z1c_277",
+      "toSide": "bottom",
+      "label": "SUPPORTS",
+      "color": "5"
+    },
+    {
+      "id": "e_z1g_dep_z1a_277",
+      "fromNode": "z1a_277",
+      "fromSide": "bottom",
+      "toNode": "z1g_277",
+      "toSide": "left",
+      "label": "DEPENDS_ON",
+      "color": "6"
+    },
+    {
+      "id": "e_z1g_dep_z1d_277",
+      "fromNode": "z1d_277",
+      "fromSide": "bottom",
+      "toNode": "z1g_277",
+      "toSide": "left",
+      "label": "DEPENDS_ON",
+      "color": "6"
+    },
+    {
+      "id": "e_z1g_dep_z1e_277",
+      "fromNode": "z1e_277",
+      "fromSide": "bottom",
+      "toNode": "z1g_277",
+      "toSide": "top",
+      "label": "DEPENDS_ON",
+      "color": "6"
+    },
+    {
+      "id": "e_z1g_dep_z1f_277",
+      "fromNode": "z1f_277",
+      "fromSide": "bottom",
+      "toNode": "z1g_277",
+      "toSide": "right",
+      "label": "DEPENDS_ON",
+      "color": "6"
     }
   ],
   "metadata": {
-    "version": "1.2-2026-10-06-core-z-local-xn-decomposition",
+    "version": "1.3-2026-10-06-z-of-z-r2-relations",
     "frontmatter": {}
   }
 }
