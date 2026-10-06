@@ -139,6 +139,16 @@
       "height": 500,
       "color": "5",
       "text": "# R7 NEXT｜正式审十元\n\n必须问：\n- 十元节点到底是什么？\n- 生/克/补是 edge type 还是 operator？\n- 体量1–10是 weight 还是 state？\n- 动态链是 path 还是 trajectory？\n- 哪些来自五行？\n- 哪些来自其他传统理论？\n- 哪些其实是现代系统语言？\n- 哪些完全是用户新增？\n\n统一标：\nINHERITED / TRANSFORMED / NEW / UNSUPPORTED / CONFLICTING"
+    },
+    {
+      "id": "r61",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/R6.1_现代概念是什么与十元位置.canvas",
+      "x": 2280,
+      "y": 500,
+      "width": 620,
+      "height": 220,
+      "color": "1"
     }
   ],
   "edges": [
@@ -219,14 +229,21 @@
       "fromNode": "boundary",
       "toNode": "next",
       "label": "进入十元审计"
+    },
+    {
+      "id": "e_r61",
+      "fromNode": "next",
+      "toNode": "r61",
+      "label": "新好奇｜概念+十元位置"
     }
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "1.1",
     "frontmatter": {
       "type": "wuxing-modern-theory-comparison",
       "status": "R6-DONE",
-      "date": "2026-10-07"
+      "date": "2026-10-07",
+      "r6_1": "DONE"
     }
   }
 }
