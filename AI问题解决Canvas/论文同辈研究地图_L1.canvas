@@ -229,6 +229,26 @@
       "width": 500,
       "height": 160,
       "color": "6"
+    },
+    {
+      "id": "r7_done",
+      "type": "text",
+      "x": 2760,
+      "y": 700,
+      "width": 520,
+      "height": 650,
+      "color": "5",
+      "text": "# R7｜哪些方向刚好能用我手上的东西？｜DONE\n\n★★★★★ 角色怎么一直像\n★★★★★ 角色和场景怎么一直是一套\n★★★★★ 自己的画画要求怎么整理给AI\n★★★★★ AI图怎么判断合不合格\n★★★★★ 一张好图怎么变成一批稳定资产\n★★★★☆ AI动画/视频最容易在哪跑偏\n★★★★★ 人和AI到底怎么分工\n\n最省力的原因：\n你已经有角色、场景、审核、失败、返工、版本、H3和生产记录。\n\n优势不只是“会用AI”，\n而是你有真实过程。"
+    },
+    {
+      "id": "r7_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文同辈研究地图_R7_和现有项目材料对接.md",
+      "x": 2760,
+      "y": 1400,
+      "width": 520,
+      "height": 160,
+      "color": "6"
     }
   ],
   "edges": [
@@ -405,6 +425,24 @@
       "fromNode": "r6_done",
       "toNode": "candidate",
       "label": "放进灵感池"
+    },
+    {
+      "id": "e_r7a",
+      "fromNode": "r6_done",
+      "toNode": "r7_done",
+      "label": "继续"
+    },
+    {
+      "id": "e_r7b",
+      "fromNode": "r7_done",
+      "toNode": "r7_file",
+      "label": "想细看"
+    },
+    {
+      "id": "e_r7c",
+      "fromNode": "r7_done",
+      "toNode": "candidate",
+      "label": "现成材料匹配"
     }
   ]
 }
