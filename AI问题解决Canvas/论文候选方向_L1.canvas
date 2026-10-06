@@ -229,6 +229,36 @@
       "height": 400,
       "color": "6",
       "text": "# F｜长流程可靠生产\n\n**PRODUCTION BACKGROUND**\n不是当前三方向之一。\n\n作用：\n- AI 高产/批量时代背景\n- 长流程实验环境\n- 作品集/就业支撑\n- 验证意图是否真的能被持续保持"
+    },
+    {
+      "id": "three_dir_r2",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文三方向_R2_别人怎么写_15篇拆解.md",
+      "x": -760,
+      "y": 2020,
+      "width": 560,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "r2_three_formats",
+      "type": "text",
+      "x": -760,
+      "y": 2300,
+      "width": 650,
+      "height": 520,
+      "color": "4",
+      "text": "# R2｜别人怎么写：三种论文格式\n\n**方向1｜主体性/主权**\n概念 → 访谈 → 编码 → 模式 → 新概念\n\n**方向2｜审美评价**\n评价维度 → 人类选择 → 对照 → 统计 → 边界\n\n**方向3｜创作意图**\n问题 → 表示结构 → 原型 → baseline → 实验 → 增量\n\n⚠️ 三种格式不要混成一篇。"
+    },
+    {
+      "id": "r2_major_find",
+      "type": "text",
+      "x": -20,
+      "y": 2580,
+      "width": 720,
+      "height": 560,
+      "color": "2",
+      "text": "# R2 重大外部发现\n\n2025–2026 已已有：\nCreative Dialogue｜Evolving Intent\nToMigo｜Design Concept Graph\nDesignerlyLoop｜Design Intent Canvas\nTaxonomy-driven Intent\nCross-stage Constraint Continuity\n\n因此：\n**“把创作意图结构化”本身已经不够新。**\n\n74 真正要守：\nRelation + Priority + Rationale + Dynamic Trace\n+ 真实 ACCEPT/REWORK/REJECT 预测验证。"
     }
   ],
   "edges": [
@@ -369,17 +399,36 @@
       "fromNode": "dir3_intent",
       "toNode": "dir_f_bg",
       "label": "进入长期生产验证"
+    },
+    {
+      "id": "e_three_r2",
+      "fromNode": "three_dir_r1",
+      "toNode": "three_dir_r2",
+      "label": "R2｜15篇论文写法"
+    },
+    {
+      "id": "e_r2_formats",
+      "fromNode": "three_dir_r2",
+      "toNode": "r2_three_formats",
+      "label": "三种格式"
+    },
+    {
+      "id": "e_r2_find",
+      "fromNode": "r2_three_formats",
+      "toNode": "r2_major_find",
+      "label": "外部边界"
     }
   ],
   "metadata": {
-    "version": "1.4",
+    "version": "1.5",
     "frontmatter": {
       "type": "paper-candidate-pool",
       "status": "active-not-frozen",
       "date": "2026-10-07",
       "current_new_candidate": "12",
       "candidate_11_status": "priority-candidate-not-frozen",
-      "three_direction_r1": "done"
+      "three_direction_r1": "done",
+      "three_direction_r2": "done"
     }
   }
 }
