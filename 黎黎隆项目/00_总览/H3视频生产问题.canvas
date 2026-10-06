@@ -1,0 +1,185 @@
+{
+  "nodes": [
+    {
+      "id": "h3_root_20261006",
+      "type": "group",
+      "x": -600,
+      "y": -500,
+      "width": 4100,
+      "height": 3600,
+      "color": "6",
+      "label": "H3 视频生产问题系统｜详细问题、门禁、证据与下一步"
+    },
+    {
+      "id": "h3_title_20261006",
+      "type": "text",
+      "text": "# H3 视频生产问题系统｜2026-10-06\\n\\n来源：黎黎隆问题系统.canvas（1.0-2026-10-06-character-h3-alignment）\\n职责：收拢 H3 / LongTake 的详细问题、输入门禁、实战经验、资产追溯与状态。\\n总览保留 MAIN-03 / 10 / 15 / 20 索引；详细内容以本 Canvas 为准。",
+      "x": 400,
+      "y": -350,
+      "width": 1900,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "g5",
+      "type": "text",
+      "text": "G5｜H3 / 视频生产稳定\n\nIMG-SMOKE-01：PASS\n已验证最小链：Codex imagegen → PNG → SHA256 → Linear attachment\n注意：仅证明测试链路可用，不代表正式批量 / H3 成片已解锁",
+      "x": -350,
+      "y": -300,
+      "width": 720,
+      "height": 340,
+      "color": "5"
+    },
+    {
+      "id": "m10_c2d1e8f3",
+      "type": "text",
+      "text": "# MAIN-10｜H3/LongTake：10–11s → 长连续生产\\n\\n状态：PARTIAL｜R1 DONE → R2 ACTIVE → R3 CLOSE\\nH04：257 PASS + 258 READY_FOR_H3\\n4层：L1=1根问题｜L2=4问题簇｜L3=14 SUB｜L4=7当前实验未知\\n硬里程碑：短块稳定 → 30s LongTake → 60s\\n知识：[[L1-L4问题知识/MAIN-10|知识卡]]",
+      "x": -350,
+      "y": 180,
+      "width": 850,
+      "height": 470,
+      "color": "2"
+    },
+    {
+      "id": "h3_stack_20261006",
+      "type": "text",
+      "text": "# H3 当前问题栈｜2026-10-06\\n\\nR1 DONE：证据去重/失效实验剔除\\nR2 ACTIVE：7 个真实未知最小矩阵\\nR3 PLANNED：复验 + 4份协议冻结\\n\\nL2 四簇：\\n① 输入/职责 3 SUB\\n② 短块稳定 4 SUB\\n③ 调度/审核 4 SUB\\n④ LongTake 3 SUB\\n\\n当前关键缺口：H04 场景资产、动作/镜头边界、CBEC A/B、30s/60s、4080硬件边界",
+      "x": 700,
+      "y": 180,
+      "width": 1150,
+      "height": 700,
+      "color": "2"
+    },
+    {
+      "id": "charh3align20261006",
+      "type": "text",
+      "text": "# 角色 Agent → H3 对齐门\n\n发现：角色认知与四宫格没有统一交接，导致“文字是这个人、四宫格却漂了”仍能进视频。\n\n现行门禁：\n1. 素材 Agent 核真图/path/SHA\n2. 角色 Agent 核 identity_core / world_role / age / body / costume / special structures\n3. 四宫格 TL/TR/BL/BR 逐格核 identity/cognition/proportion/costume\n4. AG-06 核静态视觉\n5. 输出 CHARACTER_H3_READY_PACKET\n6. 只有 READY_FOR_H3 才给 AG-07\n\n一格核心错，不允许三格平均；H3 不负责“融合正确角色”。",
+      "x": -350,
+      "y": 920,
+      "width": 1200,
+      "height": 760,
+      "color": "5"
+    },
+    {
+      "id": "h3exp20261006",
+      "type": "text",
+      "text": "# H3｜4090 实战经验 → 4080 代理门禁\n\n已吸收：\n• /history 为运行时权威\n• failed 先读 error body\n• WRITTEN ≠ RENDERING\n• 文件出现 ≠ 完成\n• 真素材必须真绑定\n• 崩源卡禁止无限重跑\n\n迁移基线：单实例、10–11s优先、>264f不直接批跑\n但以上硬件量必须在4080重新认证。\n\n新增输入门：\nHEADSHOT 只锁身份；中景/全身需相应视图；永久禁止非等比 stretch；PLAN_PACKET + input_preflight PASS 后才渲染。",
+      "x": 950,
+      "y": 920,
+      "width": 1050,
+      "height": 720,
+      "color": "5"
+    },
+    {
+      "id": "d9e8f5a0b4c31276",
+      "type": "text",
+      "text": "# R3｜唯一 Q 增量候选\\n\\nQ-ASSET-001：H3 参考资产的 ID / 路径 / SHA / 实际消费链仍需复验。\\n状态：候选增量，原 Q 保持 OPEN；不新建平行素材引用问题。\\n下一步：读取当前任务 JSON、workflow 和真实 receipt 后再决定是否写回。",
+      "x": 2150,
+      "y": 920,
+      "width": 1150,
+      "height": 500,
+      "color": "5"
+    },
+    {
+      "id": "h3_refs_20261006",
+      "type": "text",
+      "text": "# 总览中的关联问题\\n\\nMAIN-03｜头像→中景/中全景/全身角色一致性\\nH3关联：角色认知×四宫格逐格对齐门。\\n\\nMAIN-15｜角色/世界观/场景/镜头统一生产链\\nH3关联：CHARACTER_RECHECK → H3_PLAN → H3_RENDER。\\n\\nMAIN-20｜本地 4080 32GB / ComfyUI / H3 生产底座\\nH3关联：4080 硬件边界需要重新认证。\\n\\n知识卡：[[L1-L4问题知识/MAIN-03|MAIN-03]] · [[L1-L4问题知识/MAIN-10|MAIN-10]] · [[L1-L4问题知识/MAIN-15|MAIN-15]] · [[L1-L4问题知识/MAIN-20|MAIN-20]]",
+      "x": 2150,
+      "y": 180,
+      "width": 1150,
+      "height": 650,
+      "color": "5"
+    },
+    {
+      "id": "h3_method_20261006",
+      "type": "text",
+      "text": "# 当前采用的生产顺序\\n\\n先锁角色、场景和资产输入，再进入 H3 / 长镜验证。\\nH3 只消费 READY_FOR_H3 角色包；每次运行以任务 JSON、workflow、真实 receipt 与实际文件为证据。",
+      "x": -350,
+      "y": 1750,
+      "width": 1250,
+      "height": 430,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "h3_e_root_title",
+      "fromNode": "h3_root_20261006",
+      "fromSide": "top",
+      "toNode": "h3_title_20261006",
+      "toSide": "bottom",
+      "color": "6",
+      "label": "范围"
+    },
+    {
+      "id": "h3_e_g5_m10",
+      "fromNode": "g5",
+      "fromSide": "right",
+      "toNode": "m10_c2d1e8f3",
+      "toSide": "left",
+      "color": "5",
+      "label": "生产目标"
+    },
+    {
+      "id": "h3_e_m10_stack",
+      "fromNode": "m10_c2d1e8f3",
+      "fromSide": "right",
+      "toNode": "h3_stack_20261006",
+      "toSide": "left",
+      "color": "2",
+      "label": "当前问题栈"
+    },
+    {
+      "id": "h3_e_char_exp",
+      "fromNode": "charh3align20261006",
+      "fromSide": "right",
+      "toNode": "h3exp20261006",
+      "toSide": "left",
+      "color": "5",
+      "label": "READY_FOR_H3 → H3_PLAN"
+    },
+    {
+      "id": "h3_e_char_m03",
+      "fromNode": "charh3align20261006",
+      "fromSide": "left",
+      "toNode": "h3_refs_20261006",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "MAIN-03 / MAIN-15"
+    },
+    {
+      "id": "h3_e_exp_m20",
+      "fromNode": "h3exp20261006",
+      "fromSide": "right",
+      "toNode": "h3_refs_20261006",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "4080复验 / MAIN-20"
+    },
+    {
+      "id": "h3_e_asset_stack",
+      "fromNode": "d9e8f5a0b4c31276",
+      "fromSide": "left",
+      "toNode": "h3_stack_20261006",
+      "toSide": "right",
+      "color": "5",
+      "label": "资产追溯缺口"
+    },
+    {
+      "id": "h3_e_method_stack",
+      "fromNode": "h3_method_20261006",
+      "fromSide": "top",
+      "toNode": "h3_stack_20261006",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "执行顺序"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-2026-10-06-h3-extracted",
+    "frontmatter": {
+      "source_canvas": "黎黎隆项目/00_总览/黎黎隆问题系统.canvas",
+      "source_version": "1.0-2026-10-06-character-h3-alignment"
+    }
+  }
+}
