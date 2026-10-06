@@ -8,7 +8,7 @@
       "width": 700,
       "height": 430,
       "color": "2",
-      "text": "# 论文方向3 v2｜十元理论 × 映射研究\n\n## 先分两条链\n\n### 理论来源链\n色彩关系\n→ 三元\n→ 接五行\n→ 十元关系结构\n→ 生克补 / n-x-z\n→ 十类映射方向\n→ 各领域预映射\n→ 五个相反对子\n\n### 当前使用链\n对象\n→ 十元映射\n→ 端点\n→ 关系\n→ 动态链\n\n**禁止再把“当前功能”倒写成“理论来源”。**"
+      "text": "# 历史研究入口｜已迁移到十元主研究\n\n这个 Canvas 原名“论文方向3_v2”，现已停止作为主入口。\n\n## 当前主研究对象：十元\n\n主入口：\n**AI问题解决Canvas/十元现代理论定位研究_L1.canvas**\n\n论文只作为现代学术视角 / 验证入口。\n\n本 Canvas 保留 R1–R3 历史研究节点，不再承担主定位。"
     },
     {
       "id": "map",
@@ -159,6 +159,16 @@
       "height": 700,
       "color": "1",
       "text": "# 十元理论来源链｜USER CONFIRMED\n\n1 补色→张扬\n2 临近色→耐看\n3 对比色→醒目\n↓\n三元\n↓\n接五行\n↓\n十元关系结构\n↓\n生/克/补 + n/x/z 三关系\n↓\n十类映射方向\n↓\n各领域预映射\n↓\n五个相反对子\n\n这是 genealogy，不等于现行判定算法。"
+    },
+    {
+      "id": "redirect_tenyuan_modern",
+      "type": "file",
+      "file": "AI问题解决Canvas/十元现代理论定位研究_L1.canvas",
+      "x": 0,
+      "y": -700,
+      "width": 760,
+      "height": 240,
+      "color": "1"
     }
   ],
   "edges": [
@@ -251,13 +261,19 @@
       "fromNode": "genealogy",
       "toNode": "genealogy_chain",
       "label": "来源链"
+    },
+    {
+      "id": "redirect_tenyuan_modern_edge",
+      "fromNode": "root",
+      "toNode": "redirect_tenyuan_modern",
+      "label": "迁移到十元主研究"
     }
   ],
   "metadata": {
-    "version": "1.3",
+    "version": "1.4",
     "frontmatter": {
       "type": "paper-direction3-tenyuan-mapping-model-v2",
-      "status": "r3-done-r4-ready",
+      "status": "historical-redirect",
       "rounds": 4,
       "primary_comparison_family": "Conceptual Spaces",
       "mapping_neighbor": "Semantic Differential",
@@ -271,7 +287,8 @@
         "endpoint-gated-relation-error-reduction"
       ],
       "theory_genealogy": "user-confirmed-2026-10-07",
-      "genealogy_runtime_separated": true
+      "genealogy_runtime_separated": true,
+      "canonical_canvas": "AI问题解决Canvas/十元现代理论定位研究_L1.canvas"
     }
   }
 }
