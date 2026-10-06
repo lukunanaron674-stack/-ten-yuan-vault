@@ -1,0 +1,211 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 700,
+      "height": 420,
+      "color": "1",
+      "text": "# 现代理论 × 十元｜R2 DONE\n\n**结构保持判据**\n\n最低单位不是一个十元标签，而是：\n**Relational Episode｜一段连接关系结构**\n\n名字可以换；\n关系角色、方向、依赖与高阶拓扑必须接受结构保持测试。"
+    },
+    {
+      "id": "episode",
+      "type": "text",
+      "x": -1100,
+      "y": -600,
+      "width": 600,
+      "height": 520,
+      "color": "2",
+      "text": "# 最小单位｜Relational Episode\n\nroles\ninitial state\n三元组合来源\n十元位置\n生/克/补张关系\ndirection\ntemporal order\nchanged_variable\nresulting state\nnext_affordance\n\n**ZX=ZX 单点对号几乎没有证明力。**"
+    },
+    {
+      "id": "allow",
+      "type": "text",
+      "x": -1100,
+      "y": 60,
+      "width": 600,
+      "height": 420,
+      "color": "3",
+      "text": "# 可以换｜Surface\n\n✓ 人名\n✓ 题材\n✓ 媒介\n✓ 具体动作\n✓ 物理材料\n✓ 绝对时长\n\n十元理论允许：\n**surface vocabulary substitution**\n\n但必须在关系角色保持条件下。"
+    },
+    {
+      "id": "hard1",
+      "type": "text",
+      "x": -350,
+      "y": -650,
+      "width": 620,
+      "height": 610,
+      "color": "5",
+      "text": "# TY-SI｜硬结构不变量 1–4\n\nSI-1｜Composition\n三元组合来源保持\n\nSI-2｜Relational Role\n作用端/承受端/中介角色保持\n\nSI-3｜Relation Type\n生/克/补张的关系效果保持\n\nSI-4｜Direction\nA→B 不能偷换成 B→A\n\n**这四条是任何强映射的最低硬门。**"
+    },
+    {
+      "id": "hard2",
+      "type": "text",
+      "x": -350,
+      "y": 100,
+      "width": 620,
+      "height": 550,
+      "color": "5",
+      "text": "# TY-SI｜硬结构不变量 5–7\n\nSI-5｜Order / Dependency\nR1结果是R2条件时，先后依赖必须保持\n\nSI-6｜Changed-variable Role\n词可以换，变量在机制中的角色必须对应\n\nSI-7｜Higher-order Topology\n分支/汇合/中介/回返/条件触发/结果→下一条件保持\n\n动态链强主张必须过这些门。"
+    },
+    {
+      "id": "gentner",
+      "type": "text",
+      "x": 430,
+      "y": -650,
+      "width": 650,
+      "height": 560,
+      "color": "4",
+      "text": "# Gentner → 十元三门\n\nG1 Structural Consistency\n→ TY-G1 Role Consistency\n\nG2 Parallel Connectivity\n→ TY-G2 关系对应时，其参数/角色/方向也对应\n\nG3 Systematicity\n→ TY-G3 优先连续关系系统，不接受孤立词义命中\n\n**越是连成系统的关系，证明力越高。**"
+    },
+    {
+      "id": "levels",
+      "type": "text",
+      "x": 430,
+      "y": 50,
+      "width": 650,
+      "height": 600,
+      "color": "1",
+      "text": "# S0–S5｜结构证据等级\n\nS0 表面词/情绪像 → FAIL\nS1 单十元同名 → VERY WEAK\nS2 单条关系对应 → WEAK\nS3 连续关系模式保持 → STRUCTURAL CANDIDATE\nS4 高阶依赖/分支/汇合保持 → STRONG\nS5 未知结果下预测目标后续并命中 → EXTERNAL EVIDENCE\n\n**跨域结构主张最低 S3。**"
+    },
+    {
+      "id": "false",
+      "type": "text",
+      "x": 1250,
+      "y": -650,
+      "width": 650,
+      "height": 610,
+      "color": "6",
+      "text": "# 假映射 Failure\n\nF1 词义对号\nF2 主题对号\nF3 结果倒推\nF4 方向丢失\nF5 关系类型漂移\nF6 组合来源漂移\nF7 时序打乱\nF8 只报漂亮命中\n\n出现这些，只能算类比或污染映射。"
+    },
+    {
+      "id": "math",
+      "type": "text",
+      "x": 1250,
+      "y": 100,
+      "width": 650,
+      "height": 520,
+      "color": "4",
+      "text": "# 数学定位\n\n更像：\n**partial / selective homomorphism**\n\n因为允许：\n- 信息压缩\n- 多对一\n- 不可逆\n- 表面属性丢失\n\n暂不叫：\n❌ full isomorphism\n\n局部极小结构若真满足一一完整保持，才可研究 local isomorphism candidate。"
+    },
+    {
+      "id": "tsig",
+      "type": "text",
+      "x": 2070,
+      "y": -600,
+      "width": 700,
+      "height": 650,
+      "color": "1",
+      "text": "# TSIG｜十元结构签名 v0.1\n\ncomposition_pattern\nrole_pattern\nrelation_sequence\ndirection_pattern\ndependency_pattern\nchanged_variable_roles\ntopology_pattern\n\n不放：\n人名 / 题材词 / 媒介 / 绝对时长 / 未校准绝对强度\n\n跨域比较：\n**TSIG(A) vs TSIG(B)**\n而不是“这个故事像不像那个故事”。"
+    },
+    {
+      "id": "soft",
+      "type": "text",
+      "x": 2070,
+      "y": 180,
+      "width": 700,
+      "height": 430,
+      "color": "3",
+      "text": "# 暂不做硬不变量\n\n**绝对强度 1–10**\n跨领域没有共同单位。\n仅比较排序/阶段形状。\n\n**体量 1–10**\n暂不跨域做数值同构。\n\n以后有统一标尺，再研究 weighted homomorphism。"
+    },
+    {
+      "id": "test",
+      "type": "text",
+      "x": 2930,
+      "y": -580,
+      "width": 700,
+      "height": 600,
+      "color": "5",
+      "text": "# 防自产自证\n\n1. Source first｜先冻结原领域结构\n2. Independent mapping｜领域分开编码\n3. Remove surface words｜遮掉题材/作品名\n4. Compare TSIG｜只比结构签名\n5. Negative controls｜加入表面像但结构不同\n6. Prospective prediction｜S5 必须先预测后揭晓\n\n这样才能测试“结构迁移”，不是测试解释者会不会圆。"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 2930,
+      "y": 160,
+      "width": 700,
+      "height": 450,
+      "color": "1",
+      "text": "# R3 NEXT｜真实跨域验证\n\n问题：\n拿哪些真实材料、怎样盲化、怎样做正负样本，才能检验：\n\n**同一个 TSIG 是否跨角色 / 图像 / 音乐 / 叙事稳定出现？**\n\n以及：\n十元是否优于普通主题词和通用结构字段。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "episode",
+      "label": "最低验证单位"
+    },
+    {
+      "id": "e2",
+      "fromNode": "episode",
+      "toNode": "hard1",
+      "label": "结构保持"
+    },
+    {
+      "id": "e3",
+      "fromNode": "hard1",
+      "toNode": "hard2",
+      "label": "进入动态链"
+    },
+    {
+      "id": "e4",
+      "fromNode": "hard2",
+      "toNode": "gentner",
+      "label": "现代映射门"
+    },
+    {
+      "id": "e5",
+      "fromNode": "gentner",
+      "toNode": "levels",
+      "label": "证据分级"
+    },
+    {
+      "id": "e6",
+      "fromNode": "levels",
+      "toNode": "false",
+      "label": "排除假映射"
+    },
+    {
+      "id": "e7",
+      "fromNode": "hard2",
+      "toNode": "math",
+      "label": "数学候选"
+    },
+    {
+      "id": "e8",
+      "fromNode": "levels",
+      "toNode": "tsig",
+      "label": "生成结构签名"
+    },
+    {
+      "id": "e9",
+      "fromNode": "tsig",
+      "toNode": "test",
+      "label": "盲比较"
+    },
+    {
+      "id": "e10",
+      "fromNode": "soft",
+      "toNode": "tsig",
+      "label": "不做伪精确"
+    },
+    {
+      "id": "e11",
+      "fromNode": "test",
+      "toNode": "next",
+      "label": "进入R3"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {
+      "type": "modern-theory-tenyuan-r2-structure-preservation",
+      "status": "R2-DONE",
+      "date": "2026-10-07",
+      "next": "R3-cross-domain-validation"
+    }
+  }
+}
