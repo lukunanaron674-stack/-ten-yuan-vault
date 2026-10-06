@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 460,
+      "color": "1",
+      "text": "# R2.1｜五轴 × 跨领域结构保持\n\n**跨领域验证的优先单位不是十个孤立十元点，而是五组相反轴。**\n\n五轴 = 同一核心变量上的两个相反十元操作。\n\n跨领域时：\n**名字可以换，轴变量 + 两端相反方向 + 关系拓扑必须保持。**\n\n关联开放问题：Q-AXIS-001.1"
+    },
+    {
+      "id": "wood",
+      "type": "text",
+      "x": -1050,
+      "y": -620,
+      "width": 600,
+      "height": 400,
+      "color": "2",
+      "text": "# 木轴｜ZX ↔ NX\n\n核心变量：\n**最终方向与作用权来源**\n\nZX｜自身生成并占据方向\n↔\nNX｜不占最终方向，沿既有通道续接\n\n跨域要验证的是：\n是否仍然围绕“方向是谁生成/谁不占方向”这一个变量形成相反操作。"
+    },
+    {
+      "id": "fire",
+      "type": "text",
+      "x": -1050,
+      "y": -80,
+      "width": 600,
+      "height": 400,
+      "color": "3",
+      "text": "# 火轴｜ZN ↔ X\n\n核心变量：\n**对象独立成立资格与归属方式**\n\nZN｜保留自身独立成立\n↔\nX｜纳入掌握、调用、处分边界\n\n跨域不能只看“独立/占有”词，而要看同一个对象资格变量是否被相反操作。"
+    },
+    {
+      "id": "earth",
+      "type": "text",
+      "x": -300,
+      "y": -620,
+      "width": 620,
+      "height": 400,
+      "color": "4",
+      "text": "# 土轴｜N ↔ X并Z\n\n核心变量：\n**对象跨越内外边界的方向**\n\nN｜外 → 内，纳入承载\n↔\nX并Z｜内 → 外，映射外化\n\n跨域保持的不是“空间题材”，而是同一内外变量上的反向穿越。"
+    },
+    {
+      "id": "metal",
+      "type": "text",
+      "x": -300,
+      "y": -80,
+      "width": 620,
+      "height": 400,
+      "color": "5",
+      "text": "# 金轴｜XN ↔ Z\n\n核心变量：\n**运行权与裁定重心配置**\n\nXN｜分布到规则、节点、流程\n↔\nZ｜收束到单一最高裁定点\n\n跨域保持的是“分布 ↔ 收束”的裁定结构，不是是否出现规则/领袖这些词。"
+    },
+    {
+      "id": "water",
+      "type": "text",
+      "x": 470,
+      "y": -620,
+      "width": 620,
+      "height": 400,
+      "color": "6",
+      "text": "# 水轴｜XZ ↔ NZ\n\n核心变量：\n**可逆性与对象特异回返空间**\n\nXZ｜持续收窄\n↔\nNZ｜保存、恢复、重建\n\n跨域保持的是“回返空间收窄 ↔ 保留/恢复”的相反结构。"
+    },
+    {
+      "id": "axisrule",
+      "type": "text",
+      "x": 470,
+      "y": -80,
+      "width": 650,
+      "height": 470,
+      "color": "1",
+      "text": "# 五轴跨域硬门｜Axis-level Invariant\n\n一个领域映到另一个领域，必须同时满足：\n\n1. **同核心变量**\n2. **两端仍是相反方向操作**\n3. **对象层级一致**\n4. **不能把单端词义当整轴证据**\n5. **轴间生克桥仍保持结构语义**\n6. **领域名字变化不改变轴身份**\n\n所以：\nZX 单点像 ≠ 木轴保持\n必须看 ZX↔NX 整个对立统一变量。"
+    },
+    {
+      "id": "generation",
+      "type": "text",
+      "x": 1260,
+      "y": -620,
+      "width": 650,
+      "height": 500,
+      "color": "4",
+      "text": "# 五轴相生｜跨域还要保持跨轴桥\n\n木 → 火\n方向/作用来源 → 对象成立资格可判定\n\n火 → 土\n成立/归属边界 → 内外边界\n\n土 → 金\n内外跨越 → 可执行节点/接口\n\n金 → 水\n运行/裁定 → path_set / reentry_right\n\n水 → 木\n可达/回返空间 → 下一轮方向集合\n\n正本定义：\n**生 = 结构条件生成**"
+    },
+    {
+      "id": "overcome",
+      "type": "text",
+      "x": 1260,
+      "y": 40,
+      "width": 650,
+      "height": 500,
+      "color": "6",
+      "text": "# 五轴相克｜跨域还要保持状态空间约束\n\n木克土｜方向作用重写边界\n土克水｜边界限制回返路径\n水克火｜可逆性限制身份/归属恢复\n火克金｜资格/归属限制运行裁定候选\n金克木｜运行/裁定限制行动方向\n\n正本定义：\n**克 = 合法状态空间约束**\n\n跨域若只是“看起来冲突”，不能算克。"
+    },
+    {
+      "id": "crossdomain",
+      "type": "text",
+      "x": 2080,
+      "y": -620,
+      "width": 700,
+      "height": 560,
+      "color": "1",
+      "text": "# 跨领域真正要比什么？\n\n领域 A 与领域 B 各自先独立编码。\n\n比较顺序：\n1. 哪条五轴？\n2. 同一核心变量吗？\n3. 两个相反端是否都能由同变量定义？\n4. 具体关系是生 / 克 / 补张中的哪种？\n5. 轴间桥是否保持？\n6. 动态链的先后/条件是否保持？\n\n因此跨域结构签名应增加：\n**axis_id + axis_variable + pole_direction**"
+    },
+    {
+      "id": "qaxis",
+      "type": "text",
+      "x": 2080,
+      "y": 80,
+      "width": 700,
+      "height": 500,
+      "color": "5",
+      "text": "# Q-AXIS-001.1｜现成研究入口\n\n问题：\n**五轴跨领域映射仍需证明是结构迁移，而不是题材词/主题词类比。**\n\nDONE 条件（仓库已写）：\n- 多领域封闭集外部测试\n- 变量命中率\n- 最近邻错误\n- 反例\n- 不靠自产自测高分\n\n这正好就是现代理论×十元 R3 的实验对象。"
+    },
+    {
+      "id": "correction",
+      "type": "text",
+      "x": 2920,
+      "y": -500,
+      "width": 720,
+      "height": 610,
+      "color": "6",
+      "text": "# 对 R2 的修正\n\n原 R2 说“跨域最低单位 = Relational Episode”仍成立。\n\n但 Episode 内部的十元位置，**优先用五轴整体读取**：\n\n十元单端\n↓\n所属五轴\n↓\n同一核心变量上的相反操作\n↓\n轴间生/克/补张\n↓\n完整关系片段\n\n所以新的优先级：\n**Axis-level invariance > single-pole label match**"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 2920,
+      "y": 250,
+      "width": 720,
+      "height": 470,
+      "color": "1",
+      "text": "# 下一步 R3 要改成这样测\n\n不先测“十元标签跨域准不准”。\n\n先测：\n**五轴变量跨域能否稳定识别。**\n\n五组正轴 + 最近邻负轴：\n木 / 火 / 土 / 金 / 水\n\n每个领域都做：\n- 正样本\n- 反向端样本\n- 最近邻混淆\n- 表面词诱饵\n- 隐去领域词后的盲判\n\n通过后再往十元单端、生克补和动态链下钻。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "wood",
+      "label": "五轴之一"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "toNode": "fire",
+      "label": "五轴之一"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "toNode": "earth",
+      "label": "五轴之一"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "toNode": "metal",
+      "label": "五轴之一"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "toNode": "water",
+      "label": "五轴之一"
+    },
+    {
+      "id": "e6",
+      "fromNode": "wood",
+      "toNode": "axisrule",
+      "label": "轴级读取"
+    },
+    {
+      "id": "e7",
+      "fromNode": "fire",
+      "toNode": "axisrule",
+      "label": "轴级读取"
+    },
+    {
+      "id": "e8",
+      "fromNode": "earth",
+      "toNode": "axisrule",
+      "label": "轴级读取"
+    },
+    {
+      "id": "e9",
+      "fromNode": "metal",
+      "toNode": "axisrule",
+      "label": "轴级读取"
+    },
+    {
+      "id": "e10",
+      "fromNode": "water",
+      "toNode": "axisrule",
+      "label": "轴级读取"
+    },
+    {
+      "id": "e11",
+      "fromNode": "axisrule",
+      "toNode": "generation",
+      "label": "跨轴生"
+    },
+    {
+      "id": "e12",
+      "fromNode": "axisrule",
+      "toNode": "overcome",
+      "label": "跨轴克"
+    },
+    {
+      "id": "e13",
+      "fromNode": "generation",
+      "toNode": "crossdomain",
+      "label": "结构桥"
+    },
+    {
+      "id": "e14",
+      "fromNode": "overcome",
+      "toNode": "crossdomain",
+      "label": "状态空间约束"
+    },
+    {
+      "id": "e15",
+      "fromNode": "crossdomain",
+      "toNode": "qaxis",
+      "label": "对应开放问题"
+    },
+    {
+      "id": "e16",
+      "fromNode": "qaxis",
+      "toNode": "correction",
+      "label": "修正R2读取单位"
+    },
+    {
+      "id": "e17",
+      "fromNode": "correction",
+      "toNode": "next",
+      "label": "进入R3"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {
+      "type": "five-axis-cross-domain-structure-preservation",
+      "status": "REGISTERED",
+      "parent": "modern-theory-tenyuan-R2",
+      "linked_problem": "Q-AXIS-001.1",
+      "date": "2026-10-07"
+    }
+  }
+}
