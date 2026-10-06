@@ -1431,7 +1431,7 @@
       "width": 1700,
       "height": 1100,
       "color": "3",
-      "text": "# 674-280｜头像 L1/L2/L3 Human-in-NX｜问题总览实例\n\n正本链：\nL1_REVIEWED / L1_LOCKED\n→ L2_FOURGRID / L2_BODY_PASS\n→ L3_CANON_PASS\n→ H3_READY\n\nL1｜人参与最多：PASS / FAIL / FAVORITE / 主参考 / 反例 / 未决；用于提取审美NX。\n\nL2｜机器先审 identity / proportion / costume / special structure / cross-view consistency；只有“还是不像 / 味道变了 / 太僵 / 年龄感不对”等剩余NX回 USER_REVIEW。\n\nL3｜机器整理 Canon 字段；新Canon、核心气质、世界职责仍由 USER 裁决。\n\n实验目标：\nL1人工NX → 候选XN → L2减少人工量 → L3只保留少量高价值作者裁决。\n\n不是只验证H04；H04仅作为已有局部证据样本。"
+      "text": "# 674-280｜角色 L1/L2/L3 Human-in-NX｜三个 Z 实例\n\n这里不是“头像三级”，而是角色生产线里的三个独立 Z：\n\nZ-ROLE-L1｜角色身份 / 视觉核心锁定\n- 主参考 / identity_core / 头脸 / 年龄感 / 轮廓 / 识别结构\n- Human-in-NX：最高\n- USER最终判断：是不是这个人 / 有没有味道 / 是否认可\n\nZ-ROLE-L2｜角色多视图 / 身体结构稳定\n- 四宫格 / 中景 / 中全景 / 全身\n- proportion / costume / special structure / cross-view identity\n- Human-in-NX：中等；机器先按局部 XN 审，残余“仍不像/气质漂/年龄感错”再回USER\n\nZ-ROLE-L3｜角色 Canon / 世界职责成立\n- canonical_name / world_role / behavior / home_region / story_hook 等\n- Human-in-NX：低频但高权力；新Canon / 核心气质 / 世界职责归USER裁决\n\n三个Z都独立挂：local XN / NX / AUTHORITY / PATH / expected / verified / done_condition。\n\nH3_READY 是三者完成后的下游消费资格，不属于 L1/L2/L3。"
     }
   ],
   "edges": [
@@ -2627,7 +2627,7 @@
     }
   ],
   "metadata": {
-    "version": "1.7-2026-10-06-avatar-l1-l2-l3-human-nx",
+    "version": "1.8-2026-10-06-role-l1-l2-l3-three-z",
     "frontmatter": {}
   }
 }
