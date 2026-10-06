@@ -409,6 +409,26 @@
       "height": 610,
       "color": "3",
       "text": "# 5轮研究完成\n\nR1 DONE\nR2 DONE\nR3 DONE\nR4 DONE\nR5 DONE\n\n状态：\n## RESEARCH DESIGN DONE\n## EMPIRICAL VALIDATION PENDING\n\n不再开 R6。\n下一步只有：\n**抽真实 case → t0/t1 遮蔽 → B0–B4 盲测。**"
+    },
+    {
+      "id": "teaching_entry",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图论文_大白话教学总图_L1.canvas",
+      "x": -2500,
+      "y": 1260,
+      "width": 620,
+      "height": 240,
+      "color": "5"
+    },
+    {
+      "id": "teaching_note",
+      "type": "text",
+      "x": -2500,
+      "y": 1560,
+      "width": 620,
+      "height": 360,
+      "color": "5",
+      "text": "# 看不懂术语时从这里进\n\n不要继续扩论文理论。\n\n进入：\n**创作意图论文_大白话教学总图_L1.canvas**\n\n学习协议：\n懂 → 物 → 己 → 社会 → 十元 → 论文相关性 → 忆 → 用\n\n下一课：\nNode / Edge / Relation Type"
     }
   ],
   "edges": [
@@ -651,10 +671,22 @@
       "fromNode": "r5_stop",
       "toNode": "r5_end",
       "label": "结果都可收束"
+    },
+    {
+      "id": "teach_entry_edge",
+      "fromNode": "dir3_context",
+      "toNode": "teaching_entry",
+      "label": "先学懂术语"
+    },
+    {
+      "id": "teach_note_edge",
+      "fromNode": "teaching_entry",
+      "toNode": "teaching_note",
+      "label": "学习协议"
     }
   ],
   "metadata": {
-    "version": "1.6",
+    "version": "1.7",
     "frontmatter": {
       "type": "creative-intent-structure-research",
       "status": "open-r1-ready",
@@ -669,7 +701,8 @@
       "r5": "done",
       "remaining_candidate": "decision-grounded-dynamic-intent-relation",
       "research_design": "done",
-      "empirical_validation": "pending"
+      "empirical_validation": "pending",
+      "teaching_entry": "linked"
     }
   }
 }
