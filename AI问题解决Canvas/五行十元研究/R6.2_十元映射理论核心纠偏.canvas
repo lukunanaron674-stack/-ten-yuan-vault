@@ -109,6 +109,16 @@
       "height": 400,
       "color": "5",
       "text": "# NEXT\n\n现在直接做：\n**R1｜十元映射链的现代身份**\n\n核心问题：\n“三元 → 组合 → 五行十位 → 深层关系 → 跨域换名”\n在现代数学 / AI / 知识表示里分别最接近什么？"
+    },
+    {
+      "id": "modern_r1",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/现代理论与十元/R1_十元映射链的现代身份.canvas",
+      "x": 3050,
+      "y": -400,
+      "width": 680,
+      "height": 220,
+      "color": "1"
     }
   ],
   "edges": [
@@ -165,15 +175,23 @@
       "fromNode": "rounds",
       "toNode": "next",
       "label": "开始R1"
+    },
+    {
+      "id": "e_modern_r1",
+      "fromNode": "next",
+      "toNode": "modern_r1",
+      "label": "已运行｜R1 DONE"
     }
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "1.1",
     "frontmatter": {
       "type": "tenyuan-mapping-theory-core-correction",
       "status": "ACTIVE",
       "parent": "674-284/R6",
-      "date": "2026-10-07"
+      "date": "2026-10-07",
+      "modern_theory_r1": "DONE",
+      "next": "R2-structure-preservation"
     }
   }
 }
