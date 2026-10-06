@@ -169,6 +169,16 @@
       "width": 650,
       "height": 220,
       "color": "2"
+    },
+    {
+      "id": "lesson1",
+      "type": "file",
+      "file": "AI问题解决Canvas/275_我要学习的知识/论文方向3专项/01_Node_Edge_RelationType.md",
+      "x": 1780,
+      "y": 1940,
+      "width": 650,
+      "height": 220,
+      "color": "3"
     }
   ],
   "edges": [
@@ -267,16 +277,23 @@
       "fromNode": "terms",
       "toNode": "file",
       "label": "教学正本"
+    },
+    {
+      "id": "lesson1edge",
+      "fromNode": "course",
+      "toNode": "lesson1",
+      "label": "第1课"
     }
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "1.1",
     "frontmatter": {
       "type": "paper-social-terms-learning",
       "parent_course": "674-275",
       "paper_direction": "creative-intent-structure",
       "status": "teaching-route-ready",
-      "next_lesson": "Node / Edge / Relation Type"
+      "next_lesson": "Node / Edge / Relation Type",
+      "lesson1": "ready"
     }
   }
 }
