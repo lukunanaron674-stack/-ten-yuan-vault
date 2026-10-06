@@ -288,7 +288,7 @@
       "width": 720,
       "height": 700,
       "color": "3",
-      "text": "# Ten-Yuan Intent Relation Layer v0.1\n\n挂在 Generic Intent Graph 上，而不是替代它。\n\nNode Annotation\n- ten_yuan_semantic\n- primary / secondary\n- T structural occupancy\n- M stage salience\n- C confidence\n\nTyped Edge\n- 生 / 克 / 补\n- mechanism\n- target_variable\n- E effect magnitude\n\nTemporal Relation\n- continue / reverse / fade / shift\n- new endpoint"
+      "text": "# Ten-Yuan Intent Relation Layer｜纠错后\\n\\n不是 Generic Graph + 三个关系词。\\n\\n正确顺序：\\n对象层/阶段\\n→ 十元端点判定\\n→ 主/次 + T/M/C\\n→ 端点组合约束\\n→ 生/克/补启动审核\\n→ mechanism + target_variable + E\\n→ 动态链跨阶段重新审核\\n\\n**先端点，后关系。**"
     },
     {
       "id": "r3_outscope",
@@ -328,7 +328,7 @@
       "width": 700,
       "height": 600,
       "color": "1",
-      "text": "# R4｜三个“基础原创”主张全部砍掉\n\nA 生克补\n≠ 新 relation primitive\n→ SOCIAL / CAUSAL GRAPH 已有\n\nB 主次 + T/E\n≠ 新 priority / weight\n→ hierarchy / AHP / effect weight 已有\n\nC 动态链\n≠ 新 temporal graph\n→ temporal KG / time cognitive map 已有\n\n**十元不能从图结构本身主张基础创新。**"
+      "text": "# R4｜结论纠错\\n\\n原先把生克补拆出来与 generic relation 单独比较，层级不完整。\\n\\n现在只保留：\\n社会关系词可做表面语义参照。\\n\\n真正新增性审计单位必须是：\\n**十元端点 + 端点组合 + 生克补启动规则 + target variable + E + 动态链**\\n\\n不得再以“生≈support / 克≈conflict”直接给整个十元关系系统下结论。"
     },
     {
       "id": "r4_keep",
@@ -378,7 +378,7 @@
       "width": 760,
       "height": 700,
       "color": "1",
-      "text": "# R5 DONE｜B0–B4 生死实验\n\nB0 Natural Language\nB1 Attribute Structure\nB2 Static Concept Graph\nB3 Generic Dynamic Intent Graph\nB4 Ten-Yuan Dynamic Relation Layer\n\n核心比较：\n**B4 vs B3**\n\n任务：\nACCEPT / REWORK / REJECT\nPreserve / Sacrifice\nModification Target\nRelation Transition\n\n原则：先预测 → 冻结 → 再揭盲"
+      "text": "# R5｜B0–B4 验证｜纠错后\\n\\n核心仍是 B4 vs B3。\\n\\n但 B4 必须是完整处理：\\n对象层/阶段\\n→ 十元端点\\n→ 主次/T/M/C\\n→ 端点组合\\n→ 生克补关系启动\\n→ mechanism / target_variable / E\\n→ 动态链\\n\\n**禁止只给 B3 加三个关系词冒充 B4。**"
     },
     {
       "id": "r5_data",
@@ -429,6 +429,26 @@
       "height": 360,
       "color": "5",
       "text": "# 看不懂术语时从这里进\n\n不要继续扩论文理论。\n\n进入：\n**创作意图论文_大白话教学总图_L1.canvas**\n\n学习协议：\n懂 → 物 → 己 → 社会 → 十元 → 论文相关性 → 忆 → 用\n\n下一课：\nNode / Edge / Relation Type"
+    },
+    {
+      "id": "relation_dependency_correction",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_关键纠错_生克补依赖十元端点.md",
+      "x": 2780,
+      "y": 1540,
+      "width": 720,
+      "height": 240,
+      "color": "1"
+    },
+    {
+      "id": "relation_dependency_rule",
+      "type": "text",
+      "x": 2780,
+      "y": 1840,
+      "width": 760,
+      "height": 500,
+      "color": "1",
+      "text": "# 关键纠错｜覆盖 R3–R5\\n\\n**生 / 克 / 补不得脱离十元端点单独评价。**\\n\\n对象A → 十元A\\n对象B → 十元B\\n↓\\n端点组合 + 当前阶段\\n↓\\n机制 / 目标变量 / 方向 / 证据\\n↓\\n生 / 克 / 补 / NONE / AMBIGUOUS\\n\\n公平比较单位：\\n**十元端点 + 关系启动规则 + 动态链**\\nvs\\nGeneric Dynamic Intent Graph"
     }
   ],
   "edges": [
@@ -683,10 +703,22 @@
       "fromNode": "teaching_entry",
       "toNode": "teaching_note",
       "label": "学习协议"
+    },
+    {
+      "id": "corr_from_r3",
+      "fromNode": "r3",
+      "toNode": "relation_dependency_correction",
+      "label": "关键纠错"
+    },
+    {
+      "id": "corr_rule",
+      "fromNode": "relation_dependency_correction",
+      "toNode": "relation_dependency_rule",
+      "label": "冻结规则"
     }
   ],
   "metadata": {
-    "version": "1.7",
+    "version": "1.8",
     "frontmatter": {
       "type": "creative-intent-structure-research",
       "status": "open-r1-ready",
@@ -702,7 +734,8 @@
       "remaining_candidate": "decision-grounded-dynamic-intent-relation",
       "research_design": "done",
       "empirical_validation": "pending",
-      "teaching_entry": "linked"
+      "teaching_entry": "linked",
+      "relation_dependency_correction": "frozen"
     }
   }
 }
