@@ -98,7 +98,7 @@
       "width": 650,
       "height": 390,
       "color": "3",
-      "text": "# R2｜同型统一 × 关系对折\n\n最低成本 A/B：\nSAME\n同轴反端\n生\n克\n补\nrandom mismatch\n\n目标：第一张\n**关系类型 → 审美感受矩阵**"
+      "text": "# R2｜同型统一 × 关系对折｜PROTOCOL DONE\n\n首轮校准轴：木 ZX↔NX\n\n核心设计：2×3 镜像\n- Base ZX × ZX/NX/RANDOM hair\n- Base NX × NX/ZX/RANDOM hair\n\n至少12个刺激；每端2个hair exemplar。\n\n关键不是哪个发型分高，而是**同端匹配交互**。\n\nEMPIRICAL：PENDING\nNEXT：刺激预检与制作"
     },
     {
       "id": "r3",
@@ -156,6 +156,16 @@
       "file": "AI问题解决Canvas/五行十元研究/十元审美构成研究/R1_审美变量与实验语法冻结.canvas",
       "x": 1350,
       "y": 570,
+      "width": 650,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "r2_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/十元审美构成研究/R2_同型统一与关系对折最小实验.canvas",
+      "x": 2170,
+      "y": -1120,
       "width": 650,
       "height": 220,
       "color": "1"
@@ -263,17 +273,26 @@
       "fromNode": "r1",
       "toNode": "r1_file",
       "label": "R1详细Canvas"
+    },
+    {
+      "id": "e_r2_file",
+      "fromNode": "r2",
+      "toNode": "r2_file",
+      "label": "R2详细Canvas"
     }
   ],
   "metadata": {
-    "version": "0.2",
+    "version": "0.3",
     "frontmatter": {
       "type": "tenyuan-aesthetic-composition-research",
       "status": "RESEARCH_OPEN",
       "date": "2026-10-07",
       "rounds": 5,
       "current_round": "R2",
-      "r1": "DONE"
+      "r1": "DONE",
+      "r2": "PROTOCOL_DONE",
+      "r2_empirical": "PENDING",
+      "current_action": "R2_STIMULUS_PREP"
     }
   }
 }
