@@ -1,0 +1,144 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 460,
+      "height": 300,
+      "color": "4",
+      "text": "# C｜控制与对齐｜L2\n\n目标：把人的意图与多重约束稳定转成 AI 可执行控制，并保持非目标变量不漂移。\n\n状态：PARTIAL → OPEN\n来源：AI问题解决总图_L1"
+    },
+    {
+      "id": "intent",
+      "type": "text",
+      "x": 620,
+      "y": -360,
+      "width": 420,
+      "height": 300,
+      "color": "4",
+      "text": "# C-INTENT｜674-119\n\n隐性创作意图 → 机器可表示 / 可执行 / 可验证\n\n状态：THEORY DONE → EXPERIMENT\n冻结：IRG / Relation / Priority / Rationale / Trace\n下一步：历史 A/B、否决、修改记录离线验证"
+    },
+    {
+      "id": "constraint",
+      "type": "text",
+      "x": 620,
+      "y": 0,
+      "width": 420,
+      "height": 310,
+      "color": "4",
+      "text": "# C-CONSTRAINT｜674-120\n\n多约束解耦、冲突与优先级\n\n状态：CYCLE-01 DONE\n冻结：Constraint Satisfaction + Preservation Cost\nPriority / Strength / LOCK-FLEX 分离\n下一步：20–30 个历史修改样本"
+    },
+    {
+      "id": "preserve",
+      "type": "text",
+      "x": 620,
+      "y": 380,
+      "width": 420,
+      "height": 260,
+      "color": "5",
+      "text": "# C-PRESERVE｜非目标保持\n\n问题：改 A 时，B/C/身份/画风/结构能否严格保持？\n\n状态：OPEN\n与 C-CONSTRAINT 强耦合"
+    },
+    {
+      "id": "known",
+      "type": "text",
+      "x": -620,
+      "y": -330,
+      "width": 420,
+      "height": 260,
+      "color": "6",
+      "text": "# KNOWN / SOLUTION\n\nConditioning\nReference Guidance\nDisentanglement\nPreference Alignment\nConstraint Control\n局部编辑 / 多条件控制"
+    },
+    {
+      "id": "boundary",
+      "type": "text",
+      "x": -620,
+      "y": 40,
+      "width": 420,
+      "height": 300,
+      "color": "2",
+      "text": "# BOUNDARY / GAP\n\n条件干扰\n变量串扰\n冲突与优先级\n多轮漂移\n显式条件 ≠ 完整创作意图\n\nGAP：U1 + U2 + U4"
+    },
+    {
+      "id": "paper",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文问题系统_L1.canvas",
+      "x": -40,
+      "y": 520,
+      "width": 420,
+      "height": 180,
+      "color": "3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "intent",
+      "label": "IS-A",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "toNode": "constraint",
+      "label": "IS-A",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "toNode": "preserve",
+      "label": "IS-A",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "fromNode": "known",
+      "toNode": "root",
+      "label": "SOLVED-BY / 已知路线",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "toNode": "boundary",
+      "label": "OPEN GAP",
+      "fromSide": "left",
+      "toSide": "right"
+    },
+    {
+      "id": "e6",
+      "fromNode": "intent",
+      "toNode": "constraint",
+      "label": "意图→约束化",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "constraint",
+      "toNode": "preserve",
+      "label": "约束→非目标保持",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "toNode": "paper",
+      "label": "论文切片",
+      "fromSide": "bottom",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {}
+  }
+}
