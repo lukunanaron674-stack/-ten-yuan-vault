@@ -1,0 +1,203 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 740,
+      "height": 470,
+      "color": "1",
+      "text": "# 十元审美构成｜R2\n\n**同型统一 × 关系对折最小实验**\n\n状态：PROTOCOL DONE / EMPIRICAL PENDING\n\n首轮选木轴 ZX↔NX，因为两端发型视觉本征均 confirmed。\n\n核心：不是测“哪种发型更美”，而是测**发型与主体结构是否匹配产生交互效应**。"
+    },
+    {
+      "id": "why",
+      "type": "text",
+      "x": -1080,
+      "y": -650,
+      "width": 650,
+      "height": 510,
+      "color": "6",
+      "text": "# 为什么不能只用一个 ZX 人？\n\nZX主体+ZX发型高分\n可能只是：\n**ZX发型本身更漂亮。**\n\n所以必须镜像：\nZX主体测 ZX/NX/random\nNX主体也测 NX/ZX/random\n\n只有两边都出现同端优势，才开始支持“同型统一”。"
+    },
+    {
+      "id": "matrix",
+      "type": "text",
+      "x": -1080,
+      "y": 20,
+      "width": 650,
+      "height": 500,
+      "color": "2",
+      "text": "# 2×3 交叉矩阵\n\nBase-ZX：\nSAME=ZX hair\nOPPOSITE=NX hair\nRANDOM=其它轴控制\n\nBase-NX：\nSAME=NX hair\nOPPOSITE=ZX hair\nRANDOM=其它轴控制\n\n核心是 **MATCH INTERACTION**，不是单个造型主效应。"
+    },
+    {
+      "id": "stage0",
+      "type": "text",
+      "x": -280,
+      "y": -650,
+      "width": 690,
+      "height": 600,
+      "color": "4",
+      "text": "# STAGE 0｜刺激资格预检\n\nBase人物先独立验证：\n静态图里是否真的可辨 ZX / NX？\n若只靠剧情文字，不能进本轮。\n\nHair 直接复用发型库：\nZX｜菱形方向体/主动推出/斜扫外翻\nNX｜方形横向散开/让出中心/多束铺展\n\n每端至少2个 exemplar。\n\n作者定义 ≠ 自动合格刺激。"
+    },
+    {
+      "id": "random",
+      "type": "text",
+      "x": -280,
+      "y": 100,
+      "width": 690,
+      "height": 500,
+      "color": "6",
+      "text": "# RANDOM 不是丑发型\n\n要求：\n- 非木轴目标端\n- 完成度相当\n- 遮挡/复杂度/长度尽量匹配\n- 表面仍合理\n\n优先从已 confirmed 的火/水轴挑控制。\n暂不优先 XN / X并Z，因为几何本征 pending。\n\n否则实验只是在比较漂亮与难看。"
+    },
+    {
+      "id": "stimuli",
+      "type": "text",
+      "x": 570,
+      "y": -650,
+      "width": 690,
+      "height": 570,
+      "color": "3",
+      "text": "# 第一批刺激规模\n\n最低：\n2 base poles × 3 conditions × 2 hair exemplars\n= **12 stimuli**\n\n更稳：\n每端2个 base × 3 × 2\n= 24 stimuli\n\n同一 Base 只改发型结构。\n脸/表情/姿态/服装/色彩/背景/光影/发色全部锁定。"
+    },
+    {
+      "id": "measure",
+      "type": "text",
+      "x": 570,
+      "y": 70,
+      "width": 690,
+      "height": 520,
+      "color": "5",
+      "text": "# 真正看哪些效应？\n\nSame-Match：\nsame_mean - opposite_mean\n→ 主看 Unity / Fit\n\nStructure-Specificity：\nsame_mean - random_mean\n\nOpposition-Tension：\nopposite_T - same_T\n\n还必须分别看：\nZX侧 SAME优势\nNX侧 SAME优势\n\n只一侧成立 = 单端效应，不叫普遍同型规律。"
+    },
+    {
+      "id": "viewer",
+      "type": "text",
+      "x": 1420,
+      "y": -650,
+      "width": 700,
+      "height": 600,
+      "color": "1",
+      "text": "# 盲审两遍\n\nPASS 1｜单图独立看\n自由描述 → U/F/C/I/P/B/T → confidence\n顺序随机\n\nPASS 2｜同一主体三图并排\n位置随机\n只问：\n- 三选一保留哪个？\n- 哪两个最像同一套设计？\n\n这样同时有独立分数和直接选择。"
+    },
+    {
+      "id": "hypotheses",
+      "type": "text",
+      "x": 1420,
+      "y": 100,
+      "width": 700,
+      "height": 520,
+      "color": "4",
+      "text": "# 预注册假设\n\nH1 SAME → Unity/Fit ↑\nH2 OPPOSITE → Tension ↑\nH3 SAME统一高 ≠ Charm/Interest必最高\nH4 同型效应必须 ZX/NX 两侧方向一致\n\n特别允许：\n**OPPOSITE 比 SAME 更有魅力。**\n这可能正支持“关系对折美”。"
+    },
+    {
+      "id": "results",
+      "type": "text",
+      "x": 2270,
+      "y": -650,
+      "width": 720,
+      "height": 650,
+      "color": "3",
+      "text": "# 结果解释不能偷换\n\nA｜SAME统一高，OPPOSITE魅力/张力高\n→ 最有意思：统一与对折分工\n\nB｜SAME全部高\n→ 检查发型主效应后再说\n\nC｜OPPOSITE更受欢迎\n→ 对折审美候选\n\nD｜ZX hair配谁都高\n→ 发型本身主效应，不能算同型\n\nE｜SAME≈RANDOM\n→ 先查刺激/结构显影，再考虑零效应"
+    },
+    {
+      "id": "status",
+      "type": "text",
+      "x": 2270,
+      "y": 150,
+      "width": 720,
+      "height": 480,
+      "color": "6",
+      "text": "# 结果状态固定\n\nSUPPORT_CANDIDATE\nMIXED\nNULL\nREVERSED\nCONFOUNDED\nTECHNICAL_FAIL\nEMPIRICAL_PENDING\n\n禁止写：\n“基本验证成功”。\n\n没有真实观众数据：\n**EMPIRICAL_PENDING**"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 3130,
+      "y": -300,
+      "width": 730,
+      "height": 610,
+      "color": "1",
+      "text": "# 接下来实际要做\n\n1｜从角色库挑 ZX/NX 可视主体候选\n2｜先做 Base 五轴静态预检\n3｜从刘海98库各取 ZX/NX 2个 exemplar\n4｜选2个结构错配但完成度匹配的 control\n5｜生成/编辑 12 张严格控变量刺激\n6｜结构审核通过后才放给 12–20 名盲审者\n7｜回填 R2 数据\n\n**R3理论可以继续设计，但不要把R2协议当成已有审美结果。**"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "why",
+      "label": "排除主效应"
+    },
+    {
+      "id": "e2",
+      "fromNode": "why",
+      "toNode": "matrix",
+      "label": "镜像测试"
+    },
+    {
+      "id": "e3",
+      "fromNode": "matrix",
+      "toNode": "stage0",
+      "label": "先预检"
+    },
+    {
+      "id": "e4",
+      "fromNode": "stage0",
+      "toNode": "random",
+      "label": "控制材料"
+    },
+    {
+      "id": "e5",
+      "fromNode": "random",
+      "toNode": "stimuli",
+      "label": "组成刺激"
+    },
+    {
+      "id": "e6",
+      "fromNode": "stimuli",
+      "toNode": "measure",
+      "label": "计算匹配效应"
+    },
+    {
+      "id": "e7",
+      "fromNode": "measure",
+      "toNode": "viewer",
+      "label": "盲审"
+    },
+    {
+      "id": "e8",
+      "fromNode": "viewer",
+      "toNode": "hypotheses",
+      "label": "预注册"
+    },
+    {
+      "id": "e9",
+      "fromNode": "hypotheses",
+      "toNode": "results",
+      "label": "允许反向结果"
+    },
+    {
+      "id": "e10",
+      "fromNode": "results",
+      "toNode": "status",
+      "label": "明确状态"
+    },
+    {
+      "id": "e11",
+      "fromNode": "status",
+      "toNode": "next",
+      "label": "进入生产"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {
+      "type": "tenyuan-aesthetic-r2-match-opposition",
+      "status": "PROTOCOL_DONE",
+      "empirical_status": "PENDING",
+      "axis": "wood-zx-nx",
+      "date": "2026-10-07",
+      "next": "STIMULUS_PREP"
+    }
+  }
+}
