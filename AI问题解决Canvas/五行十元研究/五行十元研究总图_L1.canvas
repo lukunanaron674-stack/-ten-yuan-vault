@@ -8,7 +8,7 @@
       "width": 620,
       "height": 390,
       "color": "1",
-      "text": "# 五行 × 十元｜独立研究总图\n\n**8轮研究 / R1–R5 DONE / R6 NEXT**\n\nA区 R1–R4：五行本体与批判 DONE\nB区 R5：传统理论网络 DONE\n\nR5 确认：阴阳、气、五行、易/八卦、太极不是原始同一体系，而是在不同历史阶段发生融合和功能互补。\n\n下一步：五行 × 现代关系/系统/网络理论。\n\n**禁止把后世融合倒推成原始起源。**"
+      "text": "# 五行 × 十元｜独立研究总图\n\n**8轮研究 / R1–R6 DONE / R7 NEXT**\n\nA区｜五行本体 R1–R4 DONE\nB区｜五行与传统/现代理论 R5–R6 DONE\n\nR6 核心：五行最稳地可重述为过程导向的关系结构 + signed directed graph；要升级成现代动态系统，必须额外加入状态空间、演化规则、时间、参数和外部数据。\n\n下一步正式进入 C区：**五行 → 十元来源审计。**"
     },
     {
       "id": "A",
@@ -84,11 +84,11 @@
       "id": "R6",
       "type": "text",
       "x": -40,
-      "y": -300,
-      "width": 600,
-      "height": 520,
+      "y": -240,
+      "width": 620,
+      "height": 620,
       "color": "4",
-      "text": "# R6｜五行 × 现代关系理论\n\n比较：\n- process philosophy\n- relational ontology\n- systems thinking\n- network theory\n- signed directed graph\n- dynamic systems\n- feedback / regulation\n- category systems\n\n统一标：SUPPORTED / ANALOGY / OVERREACH\n\n产物：可比/不可比矩阵"
+      "text": "# R6｜五行 × 现代关系理论｜DONE\n\n强可比：\n✓ Process Philosophy\n✓ Directed / Signed Network\n\n中等可比：\n~ Relations / Systems Thinking / Feedback\n\n条件/弱可比：\n△ System Dynamics\n△ Dynamical Systems\n△ Relational Ontology / Structural Realism\n\n关键：\n**五行主要稳定在 F0–F2；要进入真正动态模型 F4–F5，必须新增 state / transition / time / parameter / data。**"
     },
     {
       "id": "C",
@@ -219,6 +219,26 @@
       "width": 620,
       "height": 220,
       "color": "1"
+    },
+    {
+      "id": "R6_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/R6_五行与现代关系系统网络理论.md",
+      "x": 0,
+      "y": 1100,
+      "width": 600,
+      "height": 200,
+      "color": "6"
+    },
+    {
+      "id": "R6_canvas",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/R6_五行与现代关系系统网络理论.canvas",
+      "x": 650,
+      "y": 1100,
+      "width": 600,
+      "height": 200,
+      "color": "1"
     }
   ],
   "edges": [
@@ -347,22 +367,36 @@
       "fromNode": "R5",
       "toNode": "R5_canvas",
       "label": "单独关系Canvas"
+    },
+    {
+      "id": "e_R6_file",
+      "fromNode": "R6",
+      "toNode": "R6_file",
+      "label": "R6详细研究"
+    },
+    {
+      "id": "e_R6_canvas",
+      "fromNode": "R6",
+      "toNode": "R6_canvas",
+      "label": "R6独立Canvas"
     }
   ],
   "metadata": {
-    "version": "1.6",
+    "version": "1.7",
     "frontmatter": {
       "type": "wuxing-tenyuan-research-map",
       "status": "active",
       "rounds": 8,
       "date": "2026-10-07",
-      "current_round": "R6",
+      "current_round": "R7",
       "r1": "DONE",
       "r2": "DONE",
       "r3": "DONE",
       "r4": "DONE",
       "section_a": "DONE",
-      "r5": "DONE"
+      "r5": "DONE",
+      "r6": "DONE",
+      "section_b": "DONE"
     }
   }
 }
