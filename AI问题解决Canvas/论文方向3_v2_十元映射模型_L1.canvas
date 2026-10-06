@@ -48,7 +48,7 @@
       "width": 680,
       "height": 650,
       "color": "5",
-      "text": "# R2｜社会公平邻居｜READY\n\nA Conceptual Spaces\n对象 → 概念空间位置\n\nB Semantic Differential\n对象 → 固定双极维度 profile\n\nC Ontology\n对象 → 类 / 属性 / 关系\n\nD Qualitative Coding\n现实材料 → 预定义代码\n\nR2 要判：\n**十元真正最像哪一类？**"
+      "text": "# R2｜社会公平母类｜DONE\n\n## 主表示母类\n**Conceptual Spaces**\n对象 → 结构化语义空间\n\n## 直接结构邻居\n**Semantic Differential**\n固定双极尺度 → 多维 profile\n\n## 验证方法\n**Coding / Codebook Reliability**\n定义 / 纳入排除 / 一致性\n\n## 机器实现\n**Ontology / OWL**\n类 / 属性 / 关系 / 形式推理"
     },
     {
       "id": "r3",
@@ -58,7 +58,7 @@
       "width": 650,
       "height": 650,
       "color": "4",
-      "text": "# R3｜差异与有效性｜WAIT\n\n找到公平社会母类后再比较：\n\n十元的10位置\n五组相反端\n强度分布\n三元复核\n端点关系系统\n动态重映射\n\n哪些已有？\n哪些只是命名不同？\n哪些值得验证？"
+      "text": "# R3｜真实差异审计｜READY\n\n不再问“十元像谁”。\n\n直接审：\n1 十位置 vs predefined codes\n2 五组相反端 vs bipolar scales\n3 主次/T/M/C vs profile/weight\n4 三元复核 vs second coding layer\n5 生克补 vs post-mapping inference\n6 动态重映射是否有独立价值\n\n只保留可实验差异。"
     },
     {
       "id": "r4",
@@ -79,6 +79,36 @@
       "width": 700,
       "height": 220,
       "color": "2"
+    },
+    {
+      "id": "r2_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文方向3_v2_十元映射模型_R2_社会comparison_family.md",
+      "x": -900,
+      "y": 2050,
+      "width": 700,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "r2_gates",
+      "type": "text",
+      "x": -100,
+      "y": 2050,
+      "width": 720,
+      "height": 620,
+      "color": "4",
+      "text": "# R2｜科学验证顺序重排\n\nGate1｜Mapping Reliability\n同一对象能否稳定映射？\n\nGate2｜Discriminant Validity\n最近邻能否区分？\n\nGate3｜Mapping Utility\n十元 profile 是否有信息增量？\n\nGate4｜Relation Utility\n端点成立后再测生克补\n\nGate5｜Dynamic Utility\n最后才测动态链\n\n**先映射，后关系。**"
+    },
+    {
+      "id": "r2_position",
+      "type": "text",
+      "x": 700,
+      "y": 2050,
+      "width": 760,
+      "height": 620,
+      "color": "2",
+      "text": "# 十元当前研究定位｜R2\n\n**Theory-defined Bipolar Semantic Mapping Space**\n+\n**Rule-governed Coding Procedure**\n+\n**Post-mapping Relation System**\n\n中文：\n一种由理论定义的双极语义映射空间；用规则化编码把对象映射成十元 profile，映射端点成立后才进入生克补和动态链。\n\n⚠️ 这是研究定位，不是已证明学术定义。"
     }
   ],
   "edges": [
@@ -123,14 +153,36 @@
       "fromNode": "r4",
       "toNode": "file",
       "label": "研究正本"
+    },
+    {
+      "id": "r2fileedge",
+      "fromNode": "social",
+      "toNode": "r2_file",
+      "label": "R2正本"
+    },
+    {
+      "id": "r2gateedge",
+      "fromNode": "r2_file",
+      "toNode": "r2_gates",
+      "label": "验证顺序"
+    },
+    {
+      "id": "r2positionedge",
+      "fromNode": "r2_gates",
+      "toNode": "r2_position",
+      "label": "当前定位"
     }
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "1.1",
     "frontmatter": {
       "type": "paper-direction3-tenyuan-mapping-model-v2",
-      "status": "r1-done-r2-ready",
-      "rounds": 4
+      "status": "r2-done-r3-ready",
+      "rounds": 4,
+      "primary_comparison_family": "Conceptual Spaces",
+      "mapping_neighbor": "Semantic Differential",
+      "validation_family": "Qualitative Coding",
+      "machine_formalization": "Ontology"
     }
   }
 }
