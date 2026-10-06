@@ -119,6 +119,16 @@
       "height": 620,
       "color": "5",
       "text": "# R2 NEXT｜结构保持到底保持什么？\n\n冻结 mapping h：\nsource → ten-yuan representation\n\n必须判断是否保存：\n- 三元组成\n- 生/克/补\n- 方向\n- 时序\n- 强度\n- 条件/因果\n- 高阶链结构\n\n并明确哪些可丢：\n名字 / 题材 / 外观 / 媒介\n\n目标：\n**真结构迁移 vs 只是看起来像。**"
+    },
+    {
+      "id": "r2_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/现代理论与十元/R2_结构保持判据.canvas",
+      "x": 3780,
+      "y": -200,
+      "width": 680,
+      "height": 220,
+      "color": "1"
     }
   ],
   "edges": [
@@ -181,15 +191,22 @@
       "fromNode": "stack",
       "toNode": "next",
       "label": "进入R2"
+    },
+    {
+      "id": "e_r2_file",
+      "fromNode": "next",
+      "toNode": "r2_file",
+      "label": "R2 DONE｜结构保持"
     }
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "1.1",
     "frontmatter": {
       "type": "modern-theory-tenyuan-r1-mapping-identity",
       "status": "R1-DONE",
       "date": "2026-10-07",
-      "next": "R2-structure-preservation"
+      "next": "R3-cross-domain-validation",
+      "r2": "DONE"
     }
   }
 }
