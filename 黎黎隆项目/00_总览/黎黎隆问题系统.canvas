@@ -1222,6 +1222,96 @@
       "width": 1600,
       "height": 620,
       "color": "4"
+    },
+    {
+      "id": "grp_core_z_277",
+      "type": "group",
+      "x": 8200,
+      "y": 2100,
+      "width": 4900,
+      "height": 3300,
+      "color": "6",
+      "label": "674-277｜核心 Z 控制层｜CANDIDATE / 校准中"
+    },
+    {
+      "id": "core_z_277",
+      "type": "text",
+      "x": 8400,
+      "y": 2300,
+      "width": 1400,
+      "height": 720,
+      "color": "4",
+      "text": "# CORE_Z｜问题系统的核心目标\n\n状态：CANDIDATE_HIGH_CONFIDENCE\n\nZ：把问题系统变成一个多体量 Z 的总控制系统：大Z→子Z→子子Z；每个Z挂 XN / NX / 权力 / PATH / 达成度，并能被 AI 读取、判断、执行、回传。\n\nz_volume：1–100（体量）\nz_achievement：1–10（达成度）\n\n当前自评：\n- Z理解校准 8.5/10\n- 架构信赖 7.5/10\n- 未经R3验证，不得标 VERIFIED"
+    },
+    {
+      "id": "z_relations_277",
+      "type": "text",
+      "x": 10000,
+      "y": 2300,
+      "width": 1400,
+      "height": 720,
+      "color": "5",
+      "text": "# M4｜多体量 Z 关系\n\n父Z↔子Z至少支持：\n- REQUIRED_COMPONENT 必要组成\n- DEPENDS_ON 前置依赖\n- SUPPORTS 增强支持\n- CONFLICTS_WITH 张力/冲突\n- BLOCKS 阻塞\n\n每个子Z：\ncontribution_weight 1–100\nrequired yes/no\nblocker yes/no\n\n父Z完成度禁止简单平均；必须考虑必要项、blocker、关键依赖、高贡献项与冲突。"
+    },
+    {
+      "id": "xn_set_277",
+      "type": "text",
+      "x": 8400,
+      "y": 3300,
+      "width": 1200,
+      "height": 700,
+      "color": "2",
+      "text": "# XN_SET｜明确规则\n\n每个 Z 挂自己的 XN：\n- 目标XN\n- 生产XN\n- 评价XN\n- 状态XN\n- 权限XN\n- 资产XN\n\n关键字段：\nsource_type\nexpected_xn_fit\nverified_xn_fit\nreliability / validity / calibration\nstatus = CANDIDATE / VERIFIED / REJECTED / DEPRECATED"
+    },
+    {
+      "id": "nx_gaps_277",
+      "type": "text",
+      "x": 9800,
+      "y": 3300,
+      "width": 1200,
+      "height": 700,
+      "color": "3",
+      "text": "# NX_GAPS｜一起跑｜当前未冻结\n\nNX-01：核心Z里“74控制 / AI自主 / 效率”三者最终权重怎么排？\nNX-02：z_volume 1–100 是直觉体量，还是需要固定判分尺？\nNX-03：父Z achievement 如何汇总子Z，什么时候一票否决？\nNX-04：权力是否应随 Z 体量 / 风险 / 可逆性动态变化？\nNX-05：contribution_weight 怎样避免伪精确？\nNX-06：候选XN满足什么证据门槛才能升 VERIFIED？\n\n状态：KEEP_AS_NX，不强行XN化；需74讨论/真实案例压测。"
+    },
+    {
+      "id": "authority_277",
+      "type": "text",
+      "x": 11200,
+      "y": 3300,
+      "width": 1200,
+      "height": 700,
+      "color": "4",
+      "text": "# AUTHORITY｜每个 Z 的权力边界\n\nowner\ndecision_right\nexecution_right\nreview_right\nfreeze_right\nescalation_to\ntakeover_condition\n\n原则：required_agent 只回答谁来做；authority 回答谁有权决定。\n\n当前候选：74保留最终冻结权；AI/Agent在已验证XN与授权边界内自主推进。"
+    },
+    {
+      "id": "path_277",
+      "type": "text",
+      "x": 8400,
+      "y": 4300,
+      "width": 1200,
+      "height": 700,
+      "color": "2",
+      "text": "# PATH｜现实落实\n\n规则知道 ≠ 现实可执行。\n\n检查：\nexecutor / tool / endpoint / permission / trigger / runtime / input / output / return_channel\n\n状态：FOUND → ACQUIRED → READABLE → UNDERSTOOD → ADAPTED → EXECUTABLE → AUTOMATABLE → VERIFIED\n\n缺PATH可形成BLOCKER，但PATH状态不能和problem_status混在一起。"
+    },
+    {
+      "id": "calibration_277",
+      "type": "text",
+      "x": 9800,
+      "y": 4300,
+      "width": 1400,
+      "height": 700,
+      "color": "5",
+      "text": "# CALIBRATION｜AI自我校准\n\nexpected_xn_fit = AI预测XN能把Z支撑到几级\nverified_xn_fit = 74/实测后的实际等级\ncalibration_gap = expected - verified\n\n当前核心Z：\n理解预测：8.5/10\n架构信赖：7.5/10\n最终冻结信赖：暂不超过6/10\n\nR3用自动生图 / 头像稳定 / H3 10–11s 三例校准。"
+    },
+    {
+      "id": "nx_method_277",
+      "type": "text",
+      "x": 11400,
+      "y": 4300,
+      "width": 1400,
+      "height": 700,
+      "color": "3",
+      "text": "# NX运行规则｜M3\n\nNX不直接变XN。\n\n固定链：\nNX → 真实案例/素材证据 → A/B或失败对比 → AI提出候选XN → 74确认 → VERIFIED候选 → 进入生产再校准\n\n本轮先保留6个NX，不抢答。\n\n只有在同类案例重复成立、反例可解释、且74认可后，才允许从NX升级为XN。"
     }
   ],
   "edges": [
@@ -2036,10 +2126,127 @@
       "toSide": "bottom",
       "color": "4",
       "label": "素材证据 / 可追溯"
+    },
+    {
+      "id": "e_ps_corez_277",
+      "fromNode": "problem_state_v1",
+      "fromSide": "bottom",
+      "toNode": "core_z_277",
+      "toSide": "top",
+      "color": "4",
+      "label": "兼容扩展｜Z_STATE"
+    },
+    {
+      "id": "e_corez_rel_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z_relations_277",
+      "toSide": "left",
+      "color": "5",
+      "label": "M4 多体量结构"
+    },
+    {
+      "id": "e_corez_xn_277",
+      "fromNode": "core_z_277",
+      "fromSide": "bottom",
+      "toNode": "xn_set_277",
+      "toSide": "top",
+      "color": "2",
+      "label": "挂 XN"
+    },
+    {
+      "id": "e_corez_nx_277",
+      "fromNode": "core_z_277",
+      "fromSide": "bottom",
+      "toNode": "nx_gaps_277",
+      "toSide": "top",
+      "color": "3",
+      "label": "保留 NX"
+    },
+    {
+      "id": "e_corez_auth_277",
+      "fromNode": "z_relations_277",
+      "fromSide": "bottom",
+      "toNode": "authority_277",
+      "toSide": "top",
+      "color": "4",
+      "label": "每Z权力边界"
+    },
+    {
+      "id": "e_xn_path_277",
+      "fromNode": "xn_set_277",
+      "fromSide": "bottom",
+      "toNode": "path_277",
+      "toSide": "top",
+      "color": "2",
+      "label": "规则→现实执行"
+    },
+    {
+      "id": "e_xn_cal_277",
+      "fromNode": "xn_set_277",
+      "fromSide": "bottom",
+      "toNode": "calibration_277",
+      "toSide": "top",
+      "color": "5",
+      "label": "预测/实测校准"
+    },
+    {
+      "id": "e_nx_method_277",
+      "fromNode": "nx_gaps_277",
+      "fromSide": "bottom",
+      "toNode": "nx_method_277",
+      "toSide": "top",
+      "color": "3",
+      "label": "NX→候选XN"
+    },
+    {
+      "id": "e_corez_m17_277",
+      "fromNode": "core_z_277",
+      "fromSide": "left",
+      "toNode": "m17_c2d1e8f3",
+      "toSide": "right",
+      "color": "5",
+      "label": "目标/问题层级"
+    },
+    {
+      "id": "e_xn_m13_277",
+      "fromNode": "xn_set_277",
+      "fromSide": "left",
+      "toNode": "m13_c2d1e8f3",
+      "toSide": "right",
+      "color": "2",
+      "label": "资产/规则来源"
+    },
+    {
+      "id": "e_path_m14_277",
+      "fromNode": "path_277",
+      "fromSide": "left",
+      "toNode": "m14_c2d1e8f3",
+      "toSide": "right",
+      "color": "2",
+      "label": "跨端传递"
+    },
+    {
+      "id": "e_auth_m16_277",
+      "fromNode": "authority_277",
+      "fromSide": "left",
+      "toNode": "m16_c2d1e8f3",
+      "toSide": "right",
+      "color": "4",
+      "label": "Agent治理"
+    },
+    {
+      "id": "e_path_m15_277",
+      "fromNode": "path_277",
+      "fromSide": "left",
+      "toNode": "m15_c2d1e8f3",
+      "toSide": "right",
+      "color": "2",
+      "label": "生产链"
     }
   ],
   "metadata": {
-    "version": "1.0-2026-10-06-m1m3-control-layer",
+    "version": "1.1-2026-10-06-core-z-nx-calibration",
     "frontmatter": {}
   }
 }
