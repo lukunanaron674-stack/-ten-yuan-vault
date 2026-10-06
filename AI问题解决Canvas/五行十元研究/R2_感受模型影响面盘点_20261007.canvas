@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# R2｜感受模型影响面盘点\n\n状态：DONE\n至少166个受影响文件\n\n目标：把旧“对象分类 / 领域映射”生态拆成\nKEEP / REWRITE / DOWNGRADE / BLOCK",
+      "x": 0,
+      "y": -900,
+      "width": 900,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "count",
+      "type": "text",
+      "text": "## 影响面\n\n14-角色库：67\n01-十元系统：27\nAI研究Canvas：15\n银矿库：15\nCodex/Agent：13\n画画理论：18\n五大主题：5\n\n166是下限；“十元映射”查询达到100条返回上限。",
+      "x": -1100,
+      "y": -250,
+      "width": 720,
+      "height": 620,
+      "color": "5"
+    },
+    {
+      "id": "keep",
+      "type": "text",
+      "text": "## KEEP｜保留\n\n- 五行历史/现代理论研究\n- 理论来源链\n- 五轴配对拓扑\n- 动态链研究\n- 角色/发型/音乐/版式原始素材\n\n原则：保留材料，不保留“对象本体标签”的权威。",
+      "x": -300,
+      "y": -250,
+      "width": 720,
+      "height": 620,
+      "color": "6"
+    },
+    {
+      "id": "rewrite",
+      "type": "text",
+      "text": "## REWRITE｜改写\n\nP0：\n- 十元语义空间总入口\n- 十元问题总纲\n- 现代理论定位总纲\n- DSL / Agent读取链\n\n研究主语：对象映射 → 感受描述/生成。",
+      "x": 500,
+      "y": -250,
+      "width": 720,
+      "height": 620,
+      "color": "2"
+    },
+    {
+      "id": "down",
+      "type": "text",
+      "text": "## DOWNGRADE｜降级\n\n- is-a狭义继承协议\n- 配比度/本征映射准度协议\n- 五大主题=五行狭义正本\n- 发型/服装五行父库\n- 概念映射旧库\n\n全文保留，退出默认判定链。",
+      "x": -700,
+      "y": 520,
+      "width": 720,
+      "height": 620,
+      "color": "3"
+    },
+    {
+      "id": "block",
+      "type": "text",
+      "text": "## BLOCK｜R3先阻断\n\n- 领域狭义事务清单\n- apply_is_a_narrow_semantics.py\n- apply_ten_yuan_mapping_degree.py\n- apply_ten_yuan_archetype_accuracy.py\n- rebuild_five_element_canvases.py\n- rebuild-bangs-five-elements.yml\n- 概念映射流水线/子代理模板\n\n原因：会自动复活旧内核。",
+      "x": 100,
+      "y": 520,
+      "width": 800,
+      "height": 700,
+      "color": "1"
+    },
+    {
+      "id": "r3",
+      "type": "text",
+      "text": "## R3｜全量定义迁移顺序\n\nA 先阻断旧生产\n↓\nB 重写核心入口\n↓\nC 小样迁移：刘海12 / 角色6 / 音乐6 / 叙事6\n↓\n验证“感受谱 + 诱发证据”可用\n↓\n再批量迁移\n\n不从166个文件逐个盲改。",
+      "x": 1000,
+      "y": 520,
+      "width": 760,
+      "height": 700,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "title",
+      "fromSide": "bottom",
+      "toNode": "count",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "title",
+      "fromSide": "bottom",
+      "toNode": "keep",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "title",
+      "fromSide": "bottom",
+      "toNode": "rewrite",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "count",
+      "fromSide": "bottom",
+      "toNode": "down",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "keep",
+      "fromSide": "bottom",
+      "toNode": "block",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "rewrite",
+      "fromSide": "bottom",
+      "toNode": "r3",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "down",
+      "fromSide": "right",
+      "toNode": "block",
+      "toSide": "left"
+    },
+    {
+      "id": "e8",
+      "fromNode": "block",
+      "fromSide": "right",
+      "toNode": "r3",
+      "toSide": "left"
+    }
+  ]
+}
