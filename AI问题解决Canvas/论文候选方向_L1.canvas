@@ -1,0 +1,153 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 560,
+      "height": 360,
+      "color": "1",
+      "text": "# 论文候选方向｜L1\n\n**TOPIC NOT FROZEN**\n\n这里只登记“值得继续推”的方向，不等于最终选题。\n\n来源：\nR1–R8 同辈论文横向探索\n＋ 674-278 USER→SOCIETY 社会价值研究\n\n规则：候选可以增加、合并、降级、删除；冻结必须另做决策。"
+    },
+    {
+      "id": "history",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文同辈研究地图_R8_10个候选方向_不冻结.md",
+      "x": -760,
+      "y": -260,
+      "width": 500,
+      "height": 220,
+      "color": "6"
+    },
+    {
+      "id": "history_summary",
+      "type": "text",
+      "x": -760,
+      "y": 40,
+      "width": 500,
+      "height": 520,
+      "color": "6",
+      "text": "# 历史候选 01–10\n\n01 角色越画越不像\n02 角色和场景不像一个世界\n03 把画画感觉说给 AI\n04 同样要求不同写法\n05 参考图职责\n06 AI 图怎样算合格\n07 一张好图扩成整套资产\n08 失败图变反例库\n09 人和 AI 谁负责哪一步\n10 连续镜头为什么断\n\n**保留历史编号，不覆盖。**"
+    },
+    {
+      "id": "c11",
+      "type": "text",
+      "x": 720,
+      "y": -400,
+      "width": 620,
+      "height": 640,
+      "color": "2",
+      "text": "# 候选 11｜十元创作意图 → 真实创作选择\n\n**核心问题**\n如果先把创作意图写成：\n主次 + 生克补 + 强度 + 动态链，\n是否比“只看画质 / 普通文字要求”更能预测创作者最终：\n\nACCEPT｜收\nREWORK｜改\nREJECT｜扔\n\n来源：674-119 × 674-122\n案例：〈方志敏〉\n\n状态：**CANDIDATE / NOT FROZEN**"
+    },
+    {
+      "id": "meaning",
+      "type": "text",
+      "x": 720,
+      "y": 320,
+      "width": 620,
+      "height": 460,
+      "color": "5",
+      "text": "# 为什么它不是普通“AI评分”\n\nREJECT ≠ 画得差。\n\n可能画面漂亮、完成度高，但：\n- 创作关系错了\n- 主次错了\n- 情绪方向错了\n- 本该保留的关系消失了\n\n所以真正问题是：\n**创作意图结构能不能解释并提前预测真实选择？**"
+    },
+    {
+      "id": "fang",
+      "type": "text",
+      "x": 1420,
+      "y": -400,
+      "width": 620,
+      "height": 520,
+      "color": "4",
+      "text": "# 〈方志敏〉第一案例\n\n已有真实创作决策：\n- 监狱压迫\n- 日常暖意\n- 战友情\n- 《清贫》插叙\n- 关系主次\n- 漂亮但方向不对的否决\n\n不是为论文临时造案例。\n\n目标：把早期/事前意图结构化，再去预测后续真实选择。"
+    },
+    {
+      "id": "exp",
+      "type": "text",
+      "x": 1420,
+      "y": 200,
+      "width": 620,
+      "height": 660,
+      "color": "3",
+      "text": "# 最小实验｜三组对照\n\nA｜只看画面质量\n→ 好不好看 / 技术错误 / 完成度\n\nB｜普通自然语言意图\n→ 如“监狱压迫，但保留人物温度”\n\nC｜十元 / 动态链\n→ 主次 / 生克补 / 强度 / 状态变化\n\n统一预测：\nACCEPT / REWORK / REJECT\n\n最后揭盲真实创作选择。\n\n**只有 C 比 A/B 有稳定增量，才能说十元在这里有额外价值。**"
+    },
+    {
+      "id": "risk",
+      "type": "text",
+      "x": 2140,
+      "y": -120,
+      "width": 560,
+      "height": 520,
+      "color": "6",
+      "text": "# 证据门｜不能作弊\n\n禁止：\n1. 先看最终选择再解释\n2. 挑几个特别顺眼的案例\n3. 同一套样本反复调规则再测试\n4. 用“解释得通”代替“预测得准”\n\n需要：\n- 事前冻结规则\n- 隐藏最终答案\n- 留出案例\n- 最好独立评价\n\n失败也接受：若 C 不优于 B，就说明没证明额外价值。"
+    },
+    {
+      "id": "register",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文候选方向_登记.md",
+      "x": 720,
+      "y": 940,
+      "width": 620,
+      "height": 220,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "history",
+      "toNode": "root",
+      "label": "历史候选来源"
+    },
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "c11",
+      "label": "新增候选"
+    },
+    {
+      "id": "e2",
+      "fromNode": "c11",
+      "toNode": "meaning",
+      "label": "为什么值得研究"
+    },
+    {
+      "id": "e3",
+      "fromNode": "c11",
+      "toNode": "fang",
+      "label": "第一案例"
+    },
+    {
+      "id": "e4",
+      "fromNode": "fang",
+      "toNode": "exp",
+      "label": "做实验"
+    },
+    {
+      "id": "e5",
+      "fromNode": "meaning",
+      "toNode": "exp",
+      "label": "转成验证"
+    },
+    {
+      "id": "e6",
+      "fromNode": "exp",
+      "toNode": "risk",
+      "label": "证据门"
+    },
+    {
+      "id": "e7",
+      "fromNode": "c11",
+      "toNode": "register",
+      "label": "详细登记"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {
+      "type": "paper-candidate-pool",
+      "status": "active-not-frozen",
+      "date": "2026-10-07",
+      "current_new_candidate": "11"
+    }
+  }
+}
