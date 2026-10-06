@@ -8,7 +8,7 @@
       "width": 700,
       "height": 430,
       "color": "2",
-      "text": "# 论文方向3 v2｜十元映射模型研究\n\n**旧 R3–R5 作废后重启**\n\n核心顺序：\n对象/概念\n→ 十元映射\n→ 三元复核\n→ 端点成立\n→ 生克补关系启动\n→ 动态链\n\n4轮：R1→R2→R3→R4"
+      "text": "# 论文方向3 v2｜十元理论 × 映射研究\n\n## 先分两条链\n\n### 理论来源链\n色彩关系\n→ 三元\n→ 接五行\n→ 十元关系结构\n→ 生克补 / n-x-z\n→ 十类映射方向\n→ 各领域预映射\n→ 五个相反对子\n\n### 当前使用链\n对象\n→ 十元映射\n→ 端点\n→ 关系\n→ 动态链\n\n**禁止再把“当前功能”倒写成“理论来源”。**"
     },
     {
       "id": "map",
@@ -18,7 +18,7 @@
       "width": 680,
       "height": 520,
       "color": "3",
-      "text": "# R1｜十元是什么｜DONE\n\n## Ten-Yuan Semantic Mapping Model\n\n不是单标签分类。\n而是：\n对象 → 十元空间里的多位置强度分布\n\n主/次 + T/M/C\n三元独立复核\n五组相反端\n\n**mapping first**"
+      "text": "# R1｜旧表述需加来源层\n\n“十元是 Semantic Mapping Model”只描述**当前功能**，不是理论来源。\n\n理论来源：\n色彩关系 → 三元 → 五行接入 → 十元关系结构 → 十类映射方向。\n\n所以 R1 的 mapping-first 只能作为 runtime/use model，不能作为 genealogy。"
     },
     {
       "id": "tri",
@@ -28,7 +28,7 @@
       "width": 650,
       "height": 500,
       "color": "4",
-      "text": "# 三元的位置\n\nx / n / z\n\n不是：\n三元 → 生成十元\n\n而是：\n十元独立判定\n↕\n三元独立判定\n→ 比例 / 质地 / 侧重复核\n\n**不是父子派生。**"
+      "text": "# 三元｜必须分 Genealogy 与 Runtime\n\n## 理论生成史\n颜色关系 → 三元 → 后来发展十元\n\n## 现行判定\n三元不能机械计算十元；仍可独立判定/复核。\n\n**“历史上三元先于十元” ≠ “运行时三元公式生成十元”。**"
     },
     {
       "id": "relation",
@@ -139,6 +139,26 @@
       "height": 650,
       "color": "6",
       "text": "# R3｜不再主张新增\n\n❌ 10个类别\n❌ 5对相反端本身\n❌ 多维 profile\n❌ 主次 / weight\n❌ T/M/C/E 概念本身\n❌ 第二套复核表示本身\n❌ 动态概念会变化\n❌ 先类型后关系的思想\n\n这些社会上都有对应。"
+    },
+    {
+      "id": "genealogy",
+      "type": "file",
+      "file": "01-十元系统/00_十元理论来源链_用户口述冻结_20261007.md",
+      "x": -1800,
+      "y": -50,
+      "width": 760,
+      "height": 240,
+      "color": "1"
+    },
+    {
+      "id": "genealogy_chain",
+      "type": "text",
+      "x": -1800,
+      "y": 280,
+      "width": 760,
+      "height": 700,
+      "color": "1",
+      "text": "# 十元理论来源链｜USER CONFIRMED\n\n1 补色→张扬\n2 临近色→耐看\n3 对比色→醒目\n↓\n三元\n↓\n接五行\n↓\n十元关系结构\n↓\n生/克/补 + n/x/z 三关系\n↓\n十类映射方向\n↓\n各领域预映射\n↓\n五个相反对子\n\n这是 genealogy，不等于现行判定算法。"
     }
   ],
   "edges": [
@@ -219,10 +239,22 @@
       "fromNode": "r3_keep",
       "toNode": "r3_kill",
       "label": "砍掉伪新增"
+    },
+    {
+      "id": "genealogy_root",
+      "fromNode": "genealogy",
+      "toNode": "root",
+      "label": "理论来源"
+    },
+    {
+      "id": "genealogy_chain_edge",
+      "fromNode": "genealogy",
+      "toNode": "genealogy_chain",
+      "label": "来源链"
     }
   ],
   "metadata": {
-    "version": "1.2",
+    "version": "1.3",
     "frontmatter": {
       "type": "paper-direction3-tenyuan-mapping-model-v2",
       "status": "r3-done-r4-ready",
@@ -237,7 +269,9 @@
         "pair-core-discriminability",
         "three-yuan-error-detection",
         "endpoint-gated-relation-error-reduction"
-      ]
+      ],
+      "theory_genealogy": "user-confirmed-2026-10-07",
+      "genealogy_runtime_separated": true
     }
   }
 }
