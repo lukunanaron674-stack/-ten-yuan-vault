@@ -1,0 +1,23 @@
+{
+  "schema": "CHARACTER_H3_CARD_PACK",
+  "version": "v1",
+  "generated_for": "674-257",
+  "characters": [
+    "H04"
+  ],
+  "ready": [
+    "H04"
+  ],
+  "blocked": [],
+  "rule": "Only CHARACTER_CARD_READY=PASS may hand off to 674-258. This pack does not grant READY_FOR_H3.",
+  "entries": {
+    "H04": {
+      "card_version": "v1",
+      "gate": "PASS",
+      "card_path": "黎黎隆项目/20_Agent系统/06_验证/CHARACTER_H3_CARD_PACK/H04/card.json",
+      "source_map_path": "黎黎隆项目/20_Agent系统/06_验证/CHARACTER_H3_CARD_PACK/H04/source_map.json",
+      "validation_path": "黎黎隆项目/20_Agent系统/06_验证/CHARACTER_H3_CARD_PACK/H04/validation.json",
+      "downstream_issue": "674-258"
+    }
+  }
+}

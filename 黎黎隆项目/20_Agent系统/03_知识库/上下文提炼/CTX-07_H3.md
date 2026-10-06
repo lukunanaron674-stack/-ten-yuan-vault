@@ -6,6 +6,18 @@
 - 执行错误分类：TRANSIENT/TASK/ENV；执行级重试最多 2。
 - 不在 H3 层修改剧情、十元或角色设计。
 
+## 2026-10-06｜输入适配硬闸
+- H3 接任务后先检查真实输入图的尺寸、宽高比、source_type 与 intended_role，不能只看文件名。
+- HEADSHOT / 大头图只锁身份；中景、中全景、全身、体态、服装比例必须有相应视图来源。
+- **永久禁止非等比拉伸参考图**。允许 NONE / CONTAIN_PAD / CROP_PRESERVE_IDENTITY；禁止 stretch / force_resize。
+- 只有大头却要求横屏中全景时，返回 `BLOCKED_INPUT_ROLE_MISMATCH`，交素材 Agent 换 FOUR_PANEL / MID_FULL / FULL_BODY / TURNAROUND；H3 不猜身体。
+- 批量任务必须先给 H3_AGENT_PLAN_PACKET，写明变量、控制量、角色分配、输入 preflight、停止条件；PLAN 未 APPROVED 不渲染。
+
+## 4090 → 4080 经验迁移分级
+- **直接继承纪律**：单一权威 /history；failed 先读 error body；WRITTEN≠RENDERING；文件出现≠完成；真实参考必须绑定；崩源卡禁止无限重跑。
+- **默认安全基线，待 4080 认证**：单实例、10–11s 优先、>264f 不批跑、Sage/路径/启动 flag preflight。标记 `MIGRATED_BASELINE_NOT_4080_CERTIFIED`。
+- **必须 4080 重测**：实际 VRAM/RAM 峰值、264f 极限、模型大小上限、超时阈值、吞吐、温度、并发。
+
 ## H3 提示词执行 QA v1.0
 > 来源：[[../方法论/番茄爆款方法论_代理适配_v1.0]]。H3 只检查，不反向重写剧情。
 - 当前 prompt 必须有明确主体、空间与当前压力。

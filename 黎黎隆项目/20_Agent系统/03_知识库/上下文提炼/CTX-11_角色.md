@@ -27,6 +27,11 @@
 - 核心冻结项被改直接 REPLAN。
 - GitHub角色库只登记真实存在的路径/asset_id，不伪造聊天附件路径。
 
+- 进入 H3 前必须生成 [[../../04_协议/CHARACTER_H3_READY_PACKET_SCHEMA|CHARACTER_H3_READY_PACKET]]：角色认知、四宫格/全身视觉、素材身份必须三方对齐。
+- 四宫格必须逐格审核 identity/cognition/proportion/costume；一格错不能被另外三格平均掉。
+- H3 不允许直接消费“某个四宫格文件”；只消费 production_gate.status=READY_FOR_H3 的角色包。
+- 角色认知字段必须成为视觉判据：identity_core、world_role、behavior_core、age_read、body_type、冻结头脸/比例/服装/特殊结构、unknown_regions。
+
 ## 写回
 - 角色卡：`黎黎隆项目/03_角色/角色库/角色卡/`
 - 总索引：`黎黎隆项目/03_角色/角色库/00_角色总索引.md`

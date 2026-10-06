@@ -1,0 +1,54 @@
+{
+  "schema": "CHARACTER_H3_SOURCE_MAP",
+  "version": "1.0",
+  "character_id": "H04",
+  "precedence": [
+    "USER_CURRENT_INSTRUCTION",
+    "CURRENT_CANONICAL_CHARACTER_TEXT",
+    "CURRENT_VERIFIED_VISUAL_ASSET_AUDIT",
+    "H3_PREPLAN",
+    "LEGACY_STAGING_CANDIDATE"
+  ],
+  "sources": [
+    {
+      "type": "GITHUB_CANONICAL_TEXT",
+      "path": "黎黎隆项目/03_角色/角色库/候选角色/H04_旧门看守人.md",
+      "sha": "f304b0cd1350e8b90cab46d7b7c54e6c1e3fa235",
+      "authority": "PRIMARY"
+    },
+    {
+      "type": "GITHUB_H3_PREPLAN",
+      "path": "黎黎隆项目/20_Agent系统/06_验证/H3_PREPLAN_674-216_20261006.md",
+      "sha": "b6c2c859074b85d1ea39f5c770be628a66afa1d7",
+      "authority": "H3_SCOPE_AND_TEST_ROLE"
+    },
+    {
+      "type": "LINEAR_ASSET_AUDIT",
+      "issue": "674-219",
+      "authority": "VISUAL_EVIDENCE",
+      "asset_id": "H04-GRID-20260929",
+      "asset_sha256": "13b1b40120fa0ef6f02a88a0f3501ba4de1dca6e615887efcaa55bb4fc890267",
+      "note": "CURRENT_CANON；四宫格 TL/TR/BL/BR 为 FULL_BODY~MEDIUM_FULL，cross_cell_identity=PASS；视觉冻结建议来自该次真图对账。"
+    },
+    {
+      "type": "GITHUB_LEGACY_STAGING",
+      "path": "黎黎隆项目/01_世界观/03_NEW_CANDIDATES/头像角色小世界观_独立探索_2026-09-24/H04_旧门看守人_五版设定与个人小世界.md",
+      "sha": "eb60d8814833420fb875a3c09bc70975481b9628",
+      "authority": "LOWER_PRIORITY_SUPERSEDED_WHERE_CONFLICTS",
+      "note": "其中“垂落深色面帘”与 2026-10-06 CURRENT_CANON 视觉审核冲突，禁止升级；保留为历史候选证据。"
+    }
+  ],
+  "conflict_resolution": [
+    {
+      "conflict": "legacy dark face veil vs current no-face-occlusion visual",
+      "winner": "674-219 CURRENT_CANON visual audit",
+      "loser": "2026-09-24 STAGING five-version candidate",
+      "effect": "H3 card freezes readable/unoccluded face and records dark veil as superseded candidate."
+    },
+    {
+      "conflict": "legacy 青桶候选 vs world region",
+      "winner": "canonical character text world_region=cross_region",
+      "effect": "legacy bucket remains historical visual classification only; not a world-branch assignment."
+    }
+  ]
+}

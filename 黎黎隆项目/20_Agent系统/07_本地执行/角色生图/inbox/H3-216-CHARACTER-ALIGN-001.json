@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "task_id": "H3-216-CHARACTER-ALIGN-001",
+  "project_id": "LLL",
+  "source_linear_issue": "674-216",
+  "execution_owner": "LOCAL_CODEX",
+  "status": "READY_FOR_LOCAL_CODEX",
+  "mode": "ASSET_RESYNC_PLUS_CHARACTER_ALIGNMENT",
+  "render_video": false,
+  "generate_images": false,
+  "execute_without_second_confirmation": true,
+  "goal": "在任何H3渲染前，恢复H04/H06/H09真实四宫格并由AG-11完成角色认知×四宫格逐格对齐，输出CHARACTER_H3_READY_PACKET。",
+  "required_git_files": [
+    "黎黎隆项目/20_Agent系统/01_Agent库/AG-11_角色Agent.md",
+    "黎黎隆项目/20_Agent系统/01_Agent库/AG-04_素材Agent.md",
+    "黎黎隆项目/20_Agent系统/04_协议/CHARACTER_H3_READY_PACKET_SCHEMA.md",
+    "黎黎隆项目/20_Agent系统/04_协议/CHARACTER_ASSET_SYNC_PROTOCOL.md",
+    "黎黎隆项目/20_Agent系统/04_协议/STYLE_REVIEW_SCHEMA.md",
+    "黎黎隆项目/20_Agent系统/06_验证/H3_PREPLAN_674-216_20261006.md"
+  ],
+  "steps": [
+    {
+      "id": "S1_ASSET_RESYNC",
+      "action": "EXECUTE_EXISTING_TASK_IF_NO_RECEIPT",
+      "task_ref": "黎黎隆项目/20_Agent系统/07_本地执行/角色生图/inbox/ASSET-RESYNC-P0-H04-H06-H09-001.json",
+      "targets": [
+        "H04",
+        "H06",
+        "H09"
+      ],
+      "rule": "必须拿到真实locator+sha256+width+height；不得用inventory文本冒充文件存在。"
+    },
+    {
+      "id": "S2_H04_CHARACTER_ALIGNMENT",
+      "agent": "AG-11",
+      "modes": [
+        "CHARACTER_AUDIT"
+      ],
+      "character": "H04",
+      "canonical_text": "黎黎隆项目/03_角色/角色库/候选角色/H04_旧门看守人.md",
+      "visual_source": "S1恢复后的H04 FOUR_GRID",
+      "output": "CHARACTER_H3_READY_PACKET_H04.json",
+      "rule": "文字不能反向发明脸/服装/体型；逐格审identity/cognition/proportion/costume。"
+    },
+    {
+      "id": "S3_H06_CHARACTER_ALIGNMENT",
+      "agent": "AG-11",
+      "modes": [
+        "CHARACTER_FROM_IMAGE",
+        "CHARACTER_AUDIT"
+      ],
+      "character": "H06",
+      "name_hint": "钢铁教派主教",
+      "visual_source": "S1恢复后的H06 FOUR_GRID",
+      "output": "CHARACTER_H3_READY_PACKET_H06.json",
+      "rule": "只从真实图建立visual_evidence与最小角色认知；名称不授权脑补组织/装备/世界Canon。"
+    },
+    {
+      "id": "S4_H09_CHARACTER_ALIGNMENT",
+      "agent": "AG-11",
+      "modes": [
+        "CHARACTER_FROM_IMAGE",
+        "CHARACTER_AUDIT"
+      ],
+      "character": "H09",
+      "name_hint": "返身位登记员",
+      "visual_source": "S1恢复后的H09 FOUR_GRID",
+      "output": "CHARACTER_H3_READY_PACKET_H09.json",
+      "rule": "只从真实图建立visual_evidence与最小角色认知；名称不授权脑补制度/能力/世界Canon。"
+    },
+    {
+      "id": "S5_FINAL_SUMMARY",
+      "action": "WRITE_REPORT",
+      "output": "黎黎隆项目/20_Agent系统/06_验证/H3_216_CHARACTER_ALIGNMENT_REPORT_20261006.md",
+      "include": [
+        "每个角色真实path/SHA/尺寸",
+        "TL/TR/BL/BR逐格结果",
+        "cross_cell_identity",
+        "cross_cell_proportion",
+        "same_character_compile",
+        "production_gate.status",
+        "blockers",
+        "推荐H3角色集合"
+      ]
+    }
+  ],
+  "stop_conditions": [
+    "任何目标真实文件找不到或SHA不符",
+    "任何四宫格核心身份冲突且无法由现有证据裁决",
+    "需要用户重新定义角色身份",
+    "不得因为想继续H3而自动生成补图或补设定"
+  ],
+  "success_gate": "至少H04得到READY_FOR_H3；若要解锁T02，H06与H09也需READY_FOR_H3或由FINAL PLAN明确替换。",
+  "next_on_success": "AG-07_H3_FINAL_PLAN_674-216",
+  "linear_receipt": {
+    "issue": "674-216",
+    "prefix": "CHARACTER_ALIGNMENT_RECEIPT"
+  }
+}

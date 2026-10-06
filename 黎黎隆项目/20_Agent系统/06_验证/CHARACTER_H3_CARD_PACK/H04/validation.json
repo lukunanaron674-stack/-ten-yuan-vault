@@ -1,0 +1,24 @@
+{
+  "schema": "CHARACTER_H3_CARD_VALIDATION",
+  "version": "1.0",
+  "character_id": "H04",
+  "checks": {
+    "canonical_identity_source": "PASS",
+    "world_role_source": "PASS",
+    "narrative_function_source": "PASS",
+    "behavior_core_source": "PASS",
+    "confirmed_inferred_unknown_separated": "PASS",
+    "visual_evidence_sha_verified": "PASS",
+    "visual_freeze_conflict_resolved": "PASS",
+    "age_not_invented": "PASS",
+    "body_ratio_not_invented": "PASS",
+    "forbidden_drift_defined": "PASS",
+    "allowed_forbidden_behavior_defined": "PASS",
+    "h3_action_boundary_defined": "PASS"
+  },
+  "unknowns_allowed": true,
+  "blocking_conflicts": [],
+  "character_card_gate": "PASS",
+  "handoff_issue": "674-258",
+  "note": "PASS 只代表角色认知卡可交给 WORKER 装配，不代表 production_gate=READY_FOR_H3；真实 path/SHA/view_role/static_review/preflight 仍由 674-258 负责。"
+}

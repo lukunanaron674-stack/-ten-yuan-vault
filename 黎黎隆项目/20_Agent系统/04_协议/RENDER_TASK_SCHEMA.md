@@ -1,4 +1,4 @@
-# RENDER_TASK_SCHEMA｜H3执行任务包 v1
+# RENDER_TASK_SCHEMA｜H3执行任务包 v1.1
 
 ## 身份
 - project_id
@@ -19,6 +19,16 @@
 
 > WRITTEN 只代表任务文件已写入，不代表本地 H3 已开始。
 
+## 角色生产资格（有角色时必填）
+- character_h3_ready_packet_ref
+- character_production_gate: READY_FOR_H3
+- cognition_visual_alignment: PASS
+- four_grid_alignment: PASS | N_A
+- approved_character_asset_ids
+- approved_shot_scales
+
+> 任一字段缺失或不是上述通过态：不得 QUEUED。
+
 ## 输入锁
 - character_asset_ids
 - scene_asset_ids
@@ -27,6 +37,38 @@
 - opening_state
 - forbidden_changes
 - keep_fields
+
+## 输入 Preflight（v1.1 必填）
+- preflight_status: PASS | REPLAN | BLOCKED
+- preflight_report_path
+- character_ref_checks[]:
+  - asset_id
+  - source_path
+  - width
+  - height
+  - aspect_ratio
+  - source_type: HEADSHOT | BUST | MID_SHOT | MID_FULL | FULL_BODY | FOUR_PANEL | TURNAROUND | OTHER
+  - intended_role: IDENTITY_ONLY | BODY_PROPORTION | COSTUME | POSE
+  - shot_scale_required
+  - role_fit: PASS | FAIL
+  - resize_mode: NONE | CONTAIN_PAD | CROP_PRESERVE_IDENTITY
+  - preserve_aspect_ratio: true
+- scene_ref_checks[]:
+  - asset_id
+  - source_path
+  - width
+  - height
+  - aspect_ratio
+  - intended_role: ENVIRONMENT | COMPOSITION
+  - role_fit: PASS | FAIL
+  - resize_mode: NONE | CONTAIN_PAD | CROP_PRESERVE_IDENTITY
+  - preserve_aspect_ratio: true
+- blockers[]
+
+硬规则：
+- `preserve_aspect_ratio` 必须为 true；非等比 stretch 禁止。
+- HEADSHOT 不能单独支撑中景/中全景/全身/体态或服装比例任务。
+- 任一 role_fit=FAIL 或 preflight_status!=PASS：禁止 QUEUED，返回 H3 Agent / asset_agent。
 
 ## H3
 - workflow_id

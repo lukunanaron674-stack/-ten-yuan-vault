@@ -2,7 +2,7 @@
 type: ten-yuan-four-frame-control
 status: active
 version: v1.0
-updated: 2026-10-04
+updated: 2026-10-06
 authority_level: L3
 scope: governance-navigation-only
 may_override_canonical: false
@@ -110,7 +110,7 @@ Lina02 R3 管理层当前将 30 个有向位置操作分为：
 
 ## 6｜当前 OPEN / 后续执行
 
-十元问题系统当前仍有 27 个正式 Q；四框整理完成不等于这些研究问题完成。
+十元问题系统当前仍有正式 OPEN Q；四框整理完成不等于这些研究问题完成。
 
 当前高优先：
 - Q-REL-001.1｜补关系严格语义
@@ -118,11 +118,11 @@ Lina02 R3 管理层当前将 30 个有向位置操作分为：
 - Q-DSL-001.1｜Semantic Parser 外部泛化
 - Q-VIS-001｜视觉闭环
 
-Lina02 已拆出专项执行：
-- 674-107｜补关系严格语义统一判定与五类验收
-- 674-108｜旧游戏动态链关系语法迁移
-- 674-111｜《进击的巨人》长篇动态链重建
-- 674-112｜音乐动态链外部实证闭环
+Lina02 专项执行状态：
+- 674-107｜补关系严格语义统一判定与五类验收｜IN_PROGRESS / SAME_AXIS_ONLY 子任务 STOP-03/04，等待受控负例
+- 674-108｜旧游戏动态链关系语法迁移｜DONE
+- 674-111｜《进击的巨人》长篇动态链重建｜DONE（2026-10-06；Macro/Meso/Micro 三层压力样本完成，关系允许 NONE/AMBIGUOUS）
+- 674-112｜音乐动态链外部实证闭环｜TODO / EMPIRICAL_PENDING
 
 Lina03 底层实验继续按真实状态推进；“总框三轮整理完成”不得把未跑实验标 Done。
 

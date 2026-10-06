@@ -88,6 +88,27 @@ production_eligibility:
 
 `READY_VISUAL` 表示角色视觉设计信息已足够继续使用；来源既可以是四宫格，也可以是清楚的全身/中全景/中景设定图。它不自动跳过 AG-06 风格审核/H3绑定等正式生产门禁。
 
+## 角色认知 × 四宫格联合对齐门
+
+“身份匹配的四宫格存在”不再自动等于生产可用。
+
+素材 Agent 先证明**文件是谁的**；角色 Agent 再证明**画面是不是角色正本描述的那个人**；AG-06 再证明**四格是否视觉一致**。
+
+联合输出必须引用 [[CHARACTER_H3_READY_PACKET_SCHEMA]]。
+
+对 FOUR_PANEL 必须记录：
+- TL/TR/BL/BR 每格 source / view purpose；
+- identity_match；
+- cognition_match；
+- proportion_match；
+- costume_match；
+- cross_cell_identity；
+- cross_cell_proportion；
+- same_character_compile。
+
+任何一格核心身份错、认知错、比例严重冲突或新造型无来源：
+不得 `production_eligibility.status=READY`。
+
 ## 正式生产 READY 条件
 必须同时满足：
 1. 角色 Agent 明确角色身份可用于本轮正式生产；

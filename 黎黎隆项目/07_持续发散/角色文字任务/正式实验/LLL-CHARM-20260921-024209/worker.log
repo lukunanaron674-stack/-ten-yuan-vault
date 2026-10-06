@@ -1,0 +1,5 @@
+﻿RUN_START | scheduled=False | manual=True | dry_run=True | run_id=LLL-CHARM-20260921-024209
+CODEX_FALLBACK | FALLBACK_ONLY_REQUESTED
+GENERATION_METHOD | deterministic_safe_fallback
+EXPERIMENT_WRITTEN | character=unknown | shots=8 | pending=C:\Users\19308\Documents\Obsidian\ten-yuan-vault\黎黎隆项目\03_持续发散\角色文字任务\正式实验\LLL-CHARM-20260921-024209
+FAIL | Exception setting "h3": "The property 'h3' cannot be found on this object. Verify that the property exists and can be set."
