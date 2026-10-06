@@ -108,7 +108,7 @@
       "width": 650,
       "height": 420,
       "color": "4",
-      "text": "# R3｜动态链魅力\n\n固定人物/事件/素材，\n只换关系顺序和强弱曲线。\n\n验证“克→生→大克→补”等母型。\n\n必须真实观众盲审，不能链条作者自评分。"
+      "text": "# R3｜动态链魅力｜PROTOCOL DONE\n\n目标链：K→S→K+→B\n克→生→重克→补\n\nDAS动态审美签名\n4个合法换序 + 2个消融\n抽象层 → 故事Animatic\nEvaluator先过门，再盲审\n\nEMPIRICAL：PENDING\nNEXT：R4强度谱"
     },
     {
       "id": "r4",
@@ -166,6 +166,16 @@
       "file": "AI问题解决Canvas/五行十元研究/十元审美构成研究/R2_同型统一与关系对折最小实验.canvas",
       "x": 2170,
       "y": -1120,
+      "width": 650,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "r3_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/十元审美构成研究/R3_动态链魅力实验协议.canvas",
+      "x": 2170,
+      "y": -250,
       "width": 650,
       "height": 220,
       "color": "1"
@@ -279,20 +289,28 @@
       "fromNode": "r2",
       "toNode": "r2_file",
       "label": "R2详细Canvas"
+    },
+    {
+      "id": "e_r3_file",
+      "fromNode": "r3",
+      "toNode": "r3_file",
+      "label": "R3详细Canvas"
     }
   ],
   "metadata": {
-    "version": "0.3",
+    "version": "0.4",
     "frontmatter": {
       "type": "tenyuan-aesthetic-composition-research",
       "status": "RESEARCH_OPEN",
       "date": "2026-10-07",
       "rounds": 5,
-      "current_round": "R2",
+      "current_round": "R4",
       "r1": "DONE",
       "r2": "PROTOCOL_DONE",
       "r2_empirical": "PENDING",
-      "current_action": "R2_STIMULUS_PREP"
+      "current_action": "R2_R3_EMPIRICAL_PREP__R4_THEORY",
+      "r3": "PROTOCOL_DONE",
+      "r3_empirical": "PENDING"
     }
   }
 }
