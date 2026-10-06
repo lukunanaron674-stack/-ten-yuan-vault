@@ -129,6 +129,26 @@
       "height": 450,
       "color": "1",
       "text": "# R3 NEXT｜真实跨域验证\n\n问题：\n拿哪些真实材料、怎样盲化、怎样做正负样本，才能检验：\n\n**同一个 TSIG 是否跨角色 / 图像 / 音乐 / 叙事稳定出现？**\n\n以及：\n十元是否优于普通主题词和通用结构字段。"
+    },
+    {
+      "id": "five_axis_branch",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/现代理论与十元/R2.1_五轴跨领域结构保持.canvas",
+      "x": 3800,
+      "y": -520,
+      "width": 720,
+      "height": 240,
+      "color": "1"
+    },
+    {
+      "id": "axis_priority_note",
+      "type": "text",
+      "x": 3760,
+      "y": -100,
+      "width": 760,
+      "height": 430,
+      "color": "5",
+      "text": "# R2 补充冻结｜五轴优先\n\nRelational Episode 仍是最小完整验证片段；\n但其中十元位置的跨域读取优先级改为：\n\n**五轴相反关系变量 > 单十元同名。**\n\n即先验证：\nZX↔NX / ZN↔X / N↔X并Z / XN↔Z / XZ↔NZ\n是否在不同领域保持同一核心变量及相反方向，\n再下钻单端、生克补与动态链。"
     }
   ],
   "edges": [
@@ -197,15 +217,29 @@
       "fromNode": "test",
       "toNode": "next",
       "label": "进入R3"
+    },
+    {
+      "id": "e_five_axis_branch",
+      "fromNode": "next",
+      "toNode": "five_axis_branch",
+      "label": "重要修正｜跨域优先读五轴"
+    },
+    {
+      "id": "e_axis_priority_note",
+      "fromNode": "five_axis_branch",
+      "toNode": "axis_priority_note",
+      "label": "轴级结构保持"
     }
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "1.1",
     "frontmatter": {
       "type": "modern-theory-tenyuan-r2-structure-preservation",
       "status": "R2-DONE",
       "date": "2026-10-07",
-      "next": "R3-cross-domain-validation"
+      "next": "R3-cross-domain-validation",
+      "five_axis_cross_domain": "REGISTERED",
+      "cross_domain_priority": "axis_before_single_pole"
     }
   }
 }
