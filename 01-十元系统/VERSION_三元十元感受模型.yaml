@@ -1,11 +1,11 @@
 model: 三元十元感受模型
-current_release_id: TY-FEELING-1.1.0-R2
-semantic_version: 1.1.0
+current_release_id: TY-FEELING-1.2.0-R3A
+semantic_version: 1.2.0
 date: 2026-10-07
-status: R2_IMPACT_SURFACE_MAPPED
+status: R3A_HUMAN_SUBJECT_AND_MINIMAL_FEELING_FROZEN
 
 canonical_file: 01-十元系统/三元十元感受模型_核心正本_v1.0_20261007.md
-core_definition_commit: c8cd78b63fd7b2fb054d5191f8c4fff8e0134bfb
+r3a_canon: 01-十元系统/R3A_三元最小感受定义_人类主语_v1.0_20261007.md
 
 releases:
   - release_id: TY-FEELING-1.0.0-R1
@@ -18,40 +18,32 @@ releases:
   - release_id: TY-FEELING-1.1.0-R2
     semantic_version: 1.1.0
     scope: migration_impact_surface_map
-    report: AI问题解决Canvas/五行十元研究/R2_感受模型影响面盘点_20261007.md
-    canvas: AI问题解决Canvas/五行十元研究/R2_感受模型影响面盘点_20261007.canvas
     branch: release/tenyuan-feeling-v1.1.0-r2
-    impact_scan_confirmed_minimum_files: 166
+    release_sha: d48e77993c1d8c9cb017af063bfd80696e56cf10
     immutable_intent: true
+
+  - release_id: TY-FEELING-1.2.0-R3A
+    semantic_version: 1.2.0
+    scope: human_subject_and_three_yuan_minimal_feelings
+    branch: release/tenyuan-feeling-v1.2.0-r3a
+    immutable_intent: true
+    frozen_principles:
+      - 感受主语是人
+      - AI不作为三元十元体验主体
+      - AI学习编码预测生成形式与人的感受关系
+      - XZN一级定义优先描述人的直接体验
+      - 旧物象关系认可定义迁移为诱发机制与表现层
 
 rollback:
   pre_migration_version: TY-LEGACY-0.9.0
   pre_migration_sha: bd8d49ef5c2556b081c921b491be92f2319fa7df
   pre_migration_branch: rollback/tenyuan-core-pre-feeling-v0.9.0
-  restore_scope: 三元十元核心定位迁移前状态
   note: 仅在用户明确要求回滚时执行；禁止自动reset、force push或删除新版本历史。
 
 migration:
-  from:
-    - 对象分类
-    - 领域名词映射
-    - 五行本体证明
-  to:
-    - 三元一级感受母结构
-    - 十元十种关系性感受基元
-    - 五轴五组相反感受方向
-    - 五行作为来源参照与母感受研究入口
-    - 跨领域比较感受结构
-
-  r2_findings:
-    confirmed_minimum_impacted_files: 166
-    highest_risk:
-      - old_domain_mapping_protocols
-      - is_a_narrow_inheritance
-      - archetype_accuracy_and_composition_scoring
-      - auto_rebuild_scripts
-      - github_workflow_that_rebuilds_old_five_element_maps
-    next_round: R3_全量定义迁移
+  current_stage: R3A
+  next_stage: R3B_旧定义拆分为感受核_诱发机制_领域表现
+  r2_confirmed_minimum_impacted_files: 166
 
 rollback_policy:
   prefer: create_new_revert_commit_or_restore_from_snapshot
