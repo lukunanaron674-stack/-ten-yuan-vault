@@ -119,6 +119,16 @@
       "width": 760,
       "height": 220,
       "color": "1"
+    },
+    {
+      "id": "paper_candidates",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文候选方向_L1.canvas",
+      "x": 520,
+      "y": 1740,
+      "width": 620,
+      "height": 220,
+      "color": "4"
     }
   ],
   "edges": [
@@ -217,10 +227,16 @@
       "fromNode": "chain",
       "toNode": "teaching",
       "label": "详细教学"
+    },
+    {
+      "id": "e_chain_candidates",
+      "fromNode": "chain",
+      "toNode": "paper_candidates",
+      "label": "登记论文候选"
     }
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "1.1",
     "frontmatter": {
       "type": "user-to-society-teaching-map",
       "status": "direction-exploration",
