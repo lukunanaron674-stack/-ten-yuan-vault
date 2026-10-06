@@ -1202,6 +1202,26 @@
       "width": 460,
       "height": 360,
       "color": "3"
+    },
+    {
+      "id": "learn275_m1m3_control",
+      "type": "text",
+      "text": "# 275 学习反哺｜问题系统 = 74 对 AI 的控制面板\n\n上层目标：持续提高74对 AI 的判断权、规则权、状态权与素材证据权。\n\n三层：\n1｜对象层：图 / 视频 / 角色卡 / 规则 / 素材\n2｜状态层：任务状态 / 素材状态 / 判断状态 / 偏好版本 / 候选XN→正式XN\n3｜控制层：AI能否继续 / 评价是否可信 / 何时74接管 / XN何时更新\n\n来源：674-275｜M1 + M3 学习结果",
+      "x": 4820,
+      "y": 1380,
+      "width": 1600,
+      "height": 620,
+      "color": "5"
+    },
+    {
+      "id": "learn275_m1m3_loop",
+      "type": "text",
+      "text": "# M1 + M3｜控制闭环\n\n问题出现 → 状态记录 → AI执行 → 产生素材 → 人/机评价\n→ M1 检查评价：可靠度 / 有效性 / 漂移 / 古德哈特 / 校准 / 人类评价边界\n→ 74反馈\n→ M3 将 NX 偏好 + 素材证据 + 对比关系 → 候选XN\n→ 74确认 → 正式XN → 更新规则 → 再生产 → 再检查漂移\n\nM1 = 评价控制器\nM3 = 偏好 / 素材证据控制器",
+      "x": 6540,
+      "y": 1380,
+      "width": 1600,
+      "height": 620,
+      "color": "4"
     }
   ],
   "edges": [
@@ -1971,10 +1991,55 @@
       "toNode": "g5_inc2164",
       "toSide": "top",
       "label": "复盘案例"
+    },
+    {
+      "id": "e_m16_learn275",
+      "fromNode": "m16_c2d1e8f3",
+      "fromSide": "bottom",
+      "toNode": "learn275_m1m3_control",
+      "toSide": "top",
+      "color": "5",
+      "label": "学习反哺｜AI控制"
+    },
+    {
+      "id": "e_m17_learn275",
+      "fromNode": "m17_c2d1e8f3",
+      "fromSide": "bottom",
+      "toNode": "learn275_m1m3_control",
+      "toSide": "top",
+      "color": "5",
+      "label": "学习反哺｜问题系统"
+    },
+    {
+      "id": "e_learn275_loop",
+      "fromNode": "learn275_m1m3_control",
+      "fromSide": "right",
+      "toNode": "learn275_m1m3_loop",
+      "toSide": "left",
+      "color": "4",
+      "label": "形成控制闭环"
+    },
+    {
+      "id": "e_learn275_m13",
+      "fromNode": "learn275_m1m3_loop",
+      "fromSide": "top",
+      "toNode": "m13_c2d1e8f3",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "素材状态 / 规则版本"
+    },
+    {
+      "id": "e_learn275_m14",
+      "fromNode": "learn275_m1m3_loop",
+      "fromSide": "top",
+      "toNode": "m14_c2d1e8f3",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "素材证据 / 可追溯"
     }
   ],
   "metadata": {
-    "version": "1.0-2026-10-06-h3-extracted",
+    "version": "1.0-2026-10-06-m1m3-control-layer",
     "frontmatter": {}
   }
 }
