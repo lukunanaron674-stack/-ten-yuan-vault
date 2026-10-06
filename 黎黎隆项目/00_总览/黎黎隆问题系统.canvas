@@ -1402,6 +1402,16 @@
       "height": 1150,
       "color": "5",
       "text": "# R3｜Local-Z Control Packet｜7个Z1已挂局部控制包\n\n每个 Z1 独立拥有：local XN / NX / AUTHORITY / PATH / expected_xn_fit / verified_xn_fit。\n\nAI预测 expected_xn_fit：\nA 目标/问题结构 8.8\nB XN规则获取 8.2\nC NX偏好补充 7.4\nD 主权治理 8.0\nE PATH现实执行 7.8\nF 状态/证据/版本 8.6\nG 长期运行/恢复 7.6\n\n均值≈8.1，但禁止把均值当父Z真实信赖度。\n\n关键：拆小后能定位“哪一块规则可信、哪一块NX高、哪一块缺PATH、哪一块权力不清”。\n\n下一轮 R4：父Z trust rollup / blocker一票否决 / 三个真实案例压力测试。"
+    },
+    {
+      "id": "zofz_r4_summary_277",
+      "type": "text",
+      "x": 13200,
+      "y": 5600,
+      "width": 3400,
+      "height": 1250,
+      "color": "4",
+      "text": "# R4｜父Z汇总 + blocker边界 + 三案例压力测试\n\n父Z禁止简单平均。\n\n固定汇总：\n1. REQUIRED_COMPONENT 门\n2. DEPENDS_ON 门\n3. evidence / verified 门\n4. blocker 影响范围\n5. 状态向量 rollup\n\n父Z未全验证前，不给单一 verified trust；记录：\nrequired_verified_min / unresolved_required_count / critical_blocker_count / unresolved_nx_count / path_verified_ratio / calibration_gap_max。\n\n压力测试：\nA 自动化生图 → 架构PASS，现实能力PARTIAL\nB H04头像稳定 → local VERIFIED，父Z PARTIAL_VERIFIED\nC H3 10–11s → 短块PARTIAL，跨seed/跨角色/LongTake仍未全验\n\n结论：Z-of-Z ARCHITECTURE_PASS；现实系统仍不可宣称全部 VERIFIED。"
     }
   ],
   "edges": [
@@ -2540,10 +2550,28 @@
       "toSide": "right",
       "color": "5",
       "label": "expected ≠ verified"
+    },
+    {
+      "id": "e_r3_r4_277",
+      "fromNode": "local_z_control_summary_277",
+      "fromSide": "bottom",
+      "toNode": "zofz_r4_summary_277",
+      "toSide": "top",
+      "color": "4",
+      "label": "R4 汇总与压力测试"
+    },
+    {
+      "id": "e_r4_core_277",
+      "fromNode": "zofz_r4_summary_277",
+      "fromSide": "left",
+      "toNode": "core_z_277",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "ARCHITECTURE_PASS"
     }
   ],
   "metadata": {
-    "version": "1.4-2026-10-06-z-of-z-r3-local-control",
+    "version": "1.5-2026-10-06-z-of-z-r4-rollup-frozen",
     "frontmatter": {}
   }
 }
