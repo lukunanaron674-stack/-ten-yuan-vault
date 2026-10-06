@@ -58,7 +58,7 @@
       "width": 650,
       "height": 650,
       "color": "4",
-      "text": "# R3｜真实差异审计｜READY\n\n不再问“十元像谁”。\n\n直接审：\n1 十位置 vs predefined codes\n2 五组相反端 vs bipolar scales\n3 主次/T/M/C vs profile/weight\n4 三元复核 vs second coding layer\n5 生克补 vs post-mapping inference\n6 动态重映射是否有独立价值\n\n只保留可实验差异。"
+      "text": "# R3｜真实差异审计｜DONE\n\n基础件全部不抢新增：\n10位置 / 双极 / profile / weight\ncodebook / dynamic / relation\n\n## 只保留4个实验候选\nA 跨对象域结构不变性\nB 五组相反端共享核心变量 + 区分度\nC 三元复核纠错增量\nD 端点门控关系误判下降\n\n动态链退出第一验证层。"
     },
     {
       "id": "r4",
@@ -68,7 +68,7 @@
       "width": 700,
       "height": 650,
       "color": "3",
-      "text": "# R4｜论文/实验重建｜WAIT\n\n只在 R2/R3 完成后重建实验。\n\n验证对象：\n**完整映射模型**\n而不是单独生克补。\n\n674-285 目前只做 DATA PREP。"
+      "text": "# R4｜本科论文重建｜READY\n\n只把 R3 的4个候选压成一个可做论文。\n\n优先：\nMapping Reliability\n+ Discriminant Validity\n\n可选：\n三元复核 A/B\n少量关系门控实验\n\n动态链暂不进第一论文核心。\n\n输出：RQ / 样本 / 变量 / 指标 / STOP / 5000字结构。"
     },
     {
       "id": "file",
@@ -108,7 +108,37 @@
       "width": 760,
       "height": 620,
       "color": "2",
-      "text": "# 十元当前研究定位｜R2\n\n**Theory-defined Bipolar Semantic Mapping Space**\n+\n**Rule-governed Coding Procedure**\n+\n**Post-mapping Relation System**\n\n中文：\n一种由理论定义的双极语义映射空间；用规则化编码把对象映射成十元 profile，映射端点成立后才进入生克补和动态链。\n\n⚠️ 这是研究定位，不是已证明学术定义。"
+      "text": "# 十元当前研究定位｜R3修正\n\n**Theory-defined Semantic Mapping Scheme**\nwith\n**Paired Oppositional Endpoints**\n+\nRule-governed Coding\n+\nPost-mapping Relation System\n\n⚠️ 暂不叫严格 bipolar semantic space：\n没有正式连续轴 / 中点 / metric / distance。"
+    },
+    {
+      "id": "r3_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文方向3_v2_十元映射模型_R3_真实差异审计.md",
+      "x": -100,
+      "y": 2820,
+      "width": 720,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "r3_keep",
+      "type": "text",
+      "x": 700,
+      "y": 2820,
+      "width": 760,
+      "height": 650,
+      "color": "3",
+      "text": "# R3｜只留4个可实验差异\n\nA｜Cross-domain Structural Invariance\n同一十元跨人物/场景/关系/概念是否仍同义？\n\nB｜Pair-Core Discriminability\n相反端是否真共享核心变量且可稳定区分？\n\nC｜Three-Yuan Error-Detection Gain\n加三元复核是否真的少误判？\n\nD｜Endpoint-Gated Relation Error Reduction\n先映射再判关系是否减少假阳性？"
+    },
+    {
+      "id": "r3_kill",
+      "type": "text",
+      "x": 1540,
+      "y": 2820,
+      "width": 720,
+      "height": 650,
+      "color": "6",
+      "text": "# R3｜不再主张新增\n\n❌ 10个类别\n❌ 5对相反端本身\n❌ 多维 profile\n❌ 主次 / weight\n❌ T/M/C/E 概念本身\n❌ 第二套复核表示本身\n❌ 动态概念会变化\n❌ 先类型后关系的思想\n\n这些社会上都有对应。"
     }
   ],
   "edges": [
@@ -171,18 +201,43 @@
       "fromNode": "r2_gates",
       "toNode": "r2_position",
       "label": "当前定位"
+    },
+    {
+      "id": "r3fileedge",
+      "fromNode": "r3",
+      "toNode": "r3_file",
+      "label": "R3正本"
+    },
+    {
+      "id": "r3keepedge",
+      "fromNode": "r3_file",
+      "toNode": "r3_keep",
+      "label": "保留候选"
+    },
+    {
+      "id": "r3killedge",
+      "fromNode": "r3_keep",
+      "toNode": "r3_kill",
+      "label": "砍掉伪新增"
     }
   ],
   "metadata": {
-    "version": "1.1",
+    "version": "1.2",
     "frontmatter": {
       "type": "paper-direction3-tenyuan-mapping-model-v2",
-      "status": "r2-done-r3-ready",
+      "status": "r3-done-r4-ready",
       "rounds": 4,
       "primary_comparison_family": "Conceptual Spaces",
       "mapping_neighbor": "Semantic Differential",
       "validation_family": "Qualitative Coding",
-      "machine_formalization": "Ontology"
+      "machine_formalization": "Ontology",
+      "current_term": "semantic-mapping-scheme-with-paired-oppositional-endpoints",
+      "experimental_candidates": [
+        "cross-domain-invariance",
+        "pair-core-discriminability",
+        "three-yuan-error-detection",
+        "endpoint-gated-relation-error-reduction"
+      ]
     }
   }
 }
