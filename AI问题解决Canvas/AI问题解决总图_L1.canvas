@@ -149,6 +149,26 @@
       "height": 340,
       "text": "# 我要解决的六个问题\n\nA｜能力\nC｜控制与对齐\nD｜人机协作\nE｜评价\nF｜生产工程\nH｜社会与制度\n\n**MY RESEARCH SCOPE｜L1 收束中心**",
       "color": "4"
+    },
+    {
+      "id": "C_L2",
+      "type": "file",
+      "file": "AI问题解决Canvas/C_控制与对齐_L2.canvas",
+      "x": 1230,
+      "y": -420,
+      "width": 420,
+      "height": 180,
+      "color": "4"
+    },
+    {
+      "id": "F_L2",
+      "type": "file",
+      "file": "AI问题解决Canvas/F_工业与生产_L2.canvas",
+      "x": 420,
+      "y": 1260,
+      "width": 420,
+      "height": 180,
+      "color": "4"
     }
   ],
   "edges": [
@@ -351,10 +371,26 @@
       "label": "我要解决",
       "fromSide": "right",
       "toSide": "left"
+    },
+    {
+      "id": "eC_L2",
+      "fromNode": "C",
+      "toNode": "C_L2",
+      "label": "下钻 L2",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "eF_L2",
+      "fromNode": "F",
+      "toNode": "F_L2",
+      "label": "下钻 L2",
+      "fromSide": "right",
+      "toSide": "left"
     }
   ],
   "metadata": {
-    "version": "1.0-1.1",
+    "version": "1.0-1.2",
     "frontmatter": {}
   }
 }
