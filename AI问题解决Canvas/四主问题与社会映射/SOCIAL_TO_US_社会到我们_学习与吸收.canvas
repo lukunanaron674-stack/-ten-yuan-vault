@@ -1,0 +1,18 @@
+{
+  "nodes": [
+    {"id":"root","type":"text","x":0,"y":0,"width":560,"height":330,"color":"4","text":"# SOCIAL → US｜社会 → 我们\n## 学习、吸收与迁移总图\n\n用途：横向比较 C / D / E / F。\n\n不是问‘社会几分、我们几分’就结束，而是定位：\n社会已经会什么 → 我们还不会什么 → 差值是什么 → 学什么 → 接回哪个主问题。\n\n统一字段：社会成熟度/100｜我们掌握度/100｜Learning Gap｜ABSORB / ADAPT｜目标节点"},
+    {"id":"c","type":"text","x":-1150,"y":-520,"width":500,"height":400,"color":"3","text":"# C｜控制与对齐\n社会≈62｜我们≈38\n\n重点学习：\n• constraint satisfaction\n• disentanglement\n• preference learning\n• reference-conditioned generation/editing\n• multi-turn consistency\n\nABSORB：显式条件、基础 guardrail\nADAPT：多约束、preservation cost、多轮保持\n→ 接 C-INTENT / C-PRESERVE / 119 / 120"},
+    {"id":"d","type":"text","x":-1150,"y":120,"width":500,"height":400,"color":"3","text":"# D｜人机协作 / 121\n社会≈65｜我们≈42\n\n重点学习：\n• Human-in-the-loop\n• mixed-initiative systems\n• adjustable autonomy\n• uncertainty calibration\n• escalation policy\n• risk-sensitive decision making\n\nABSORB：审批、权限、sandbox\nADAPT：动态自主 / 风险升级\n→ 接 121 Agency Gate"},
+    {"id":"e","type":"text","x":720,"y":-520,"width":500,"height":420,"color":"3","text":"# E｜评价 / 122\n社会≈60｜我们≈30\n\n重点学习：\n• agent evaluation\n• trajectory evaluation\n• process supervision\n• LLM-as-a-judge bias\n• human preference evaluation\n• inter-rater reliability\n• benchmark design / failure taxonomy\n\nABSORB：普通 outcome / task success\nADAPT：trajectory / long-horizon eval\n→ 接 122 L1/L2/L3"},
+    {"id":"f","type":"text","x":720,"y":120,"width":520,"height":460,"color":"3","text":"# F｜工业与生产\n传统工程社会≈85–95｜我们≈35\n长程创意 Agent 社会≈40–50\n\n重点学习：\n• distributed systems / orchestration\n• checkpoint / retry / resume\n• idempotency / Saga / compensation\n• observability / event sourcing\n• provenance / lineage\n• queue / backpressure / circuit breaker\n• SLO / reliability budget\n\n→ 接 F-STATE / RECOVERY / IDEMPOTENCY / SAGA / PROVENANCE / LONGRUN"},
+    {"id":"priority","type":"text","x":-260,"y":650,"width":620,"height":360,"color":"5","text":"# 学习优先级\n\nP0｜E：评价管线、盲测、ground truth、trajectory\nP0｜C：隐性意图表示 + 多轮非目标保持\nP1｜D：adjustable autonomy + escalation\nP1｜F：成熟可靠性工程快速迁移\n\n原则：社会成熟且可迁移 → 不重新研究，先学、先实现。\n只有迁移后仍存在的缺口才进入原创 RESEARCH。"}
+  ],
+  "edges": [
+    {"id":"e1","fromNode":"root","toNode":"c","label":"LEARN C","fromSide":"left","toSide":"right"},
+    {"id":"e2","fromNode":"root","toNode":"d","label":"LEARN D","fromSide":"left","toSide":"right"},
+    {"id":"e3","fromNode":"root","toNode":"e","label":"LEARN E","fromSide":"right","toSide":"left"},
+    {"id":"e4","fromNode":"root","toNode":"f","label":"LEARN F","fromSide":"right","toSide":"left"},
+    {"id":"e5","fromNode":"root","toNode":"priority","label":"PRIORITY","fromSide":"bottom","toSide":"top"}
+  ],
+  "metadata":{"version":"1.0","role":"SOCIAL_TO_US","score_scale":"0-100","note":"Scores are maturity/mastery estimates, not validated reliability percentages."}
+}
