@@ -8,7 +8,7 @@
       "width": 620,
       "height": 390,
       "color": "1",
-      "text": "# 五行 × 十元｜独立研究总图\n\n**8轮研究 / R1–R7 DONE / R8 NEXT**\n\nA区｜五行本体 R1–R4 DONE\nB区｜传统/现代理论 R5–R6 DONE\nC区｜R7 来源审计 DONE\n\n当前结论：十元有真实阴阳五行结构祖型，但核心十元语义和大量形式化属于现代新增，不能借传统自动证明有效。\n\nR8：冻结最终关系模型、理论来源声明、不可宣称清单与实验入口。"
+      "text": "# 五行 × 十元｜独立研究总图\n\n**R1–R8 ALL DONE｜674-284 COMPLETE**\n\n最终结论：\n十元是一套**受阴阳—五行结构启发，并在十位骨架上重新定义操作语义的现代关系编码模型**。\n\n传统文献解决“来源”；十元正本解决“定义”；现代对照实验解决“有效性”。\n\n下一研究阶段不再继续挖五行历史：\n**NL vs STRUCT vs TEN × 第二创作者 × 先预测后揭盲。**"
     },
     {
       "id": "A",
@@ -114,11 +114,11 @@
       "id": "R8",
       "type": "text",
       "x": 760,
-      "y": -280,
-      "width": 620,
-      "height": 560,
-      "color": "5",
-      "text": "# R8｜五行 × 十元最终关系\n\n最终回答：\n1 十元究竟是什么\n2 是扩展 / 再编码 / 新模型？\n3 保留了五行什么\n4 改了什么\n5 新增了什么\n6 哪些靠文献\n7 哪些必须靠实验\n\n产物：总关系图 + 理论边界 + 可证伪命题"
+      "y": -180,
+      "width": 680,
+      "height": 680,
+      "color": "1",
+      "text": "# R8｜最终收束｜DONE\n\n最终定位：\n**受阴阳—五行结构启发的现代关系编码模型。**\n\n传统负责：\n五类 / 阴阳 / 十位先例 / 生克\n\n十元负责：\n新语义 / 补 / 主次 / 强度 / 动态链 / 五维\n\n实验负责：\n**NL vs STRUCT vs TEN**\n+ 第二创作者\n+ 先预测后揭盲\n\n⚠️ 来源 ≠ 有效性。\n⚠️ R1–R8 没有证明十元优于自然语言；它建立了可真正验证这件事的边界。"
     },
     {
       "id": "sources",
@@ -257,6 +257,26 @@
       "x": 1500,
       "y": -680,
       "width": 580,
+      "height": 200,
+      "color": "1"
+    },
+    {
+      "id": "R8_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/R8_最终理论定位与验证边界.md",
+      "x": 1520,
+      "y": 50,
+      "width": 600,
+      "height": 200,
+      "color": "6"
+    },
+    {
+      "id": "R8_canvas",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/R8_最终理论定位与验证边界.canvas",
+      "x": 1520,
+      "y": 330,
+      "width": 600,
       "height": 200,
       "color": "1"
     }
@@ -411,16 +431,28 @@
       "fromNode": "R7",
       "toNode": "R7_canvas",
       "label": "R7血缘Canvas"
+    },
+    {
+      "id": "e_R8_file",
+      "fromNode": "R8",
+      "toNode": "R8_file",
+      "label": "R8最终报告"
+    },
+    {
+      "id": "e_R8_canvas",
+      "fromNode": "R8",
+      "toNode": "R8_canvas",
+      "label": "R8最终Canvas"
     }
   ],
   "metadata": {
-    "version": "1.8",
+    "version": "2.0",
     "frontmatter": {
       "type": "wuxing-tenyuan-research-map",
       "status": "active",
       "rounds": 8,
       "date": "2026-10-07",
-      "current_round": "R8",
+      "current_round": "COMPLETE",
       "r1": "DONE",
       "r2": "DONE",
       "r3": "DONE",
@@ -429,7 +461,10 @@
       "r5": "DONE",
       "r6": "DONE",
       "section_b": "DONE",
-      "r7": "DONE"
+      "r7": "DONE",
+      "r8": "DONE",
+      "study_status": "COMPLETE",
+      "external_validity": "NOT_YET_PROVEN"
     }
   }
 }
