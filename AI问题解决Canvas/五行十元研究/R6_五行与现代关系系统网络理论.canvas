@@ -1,0 +1,232 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 620,
+      "height": 400,
+      "color": "1",
+      "text": "# R6｜五行 × 现代关系理论\n\n目标不是“现代科学认证五行”。\n\n目标：\n**拆清楚哪些是真可比、哪些只是结构像、哪些属于过度类比。**\n\n结论：\n五行最稳地落在\n**过程 + 关系 + signed directed network**\n层。"
+    },
+    {
+      "id": "process",
+      "type": "text",
+      "x": -900,
+      "y": -620,
+      "width": 480,
+      "height": 330,
+      "color": "2",
+      "text": "# Process Philosophy｜强可比\n\n共同点：\n- 动态/生成优先\n- 过程而非静态实体\n- 稳定可来自持续互动\n\n评级：STRONG ANALOGY\n\n⚠️ 不等于 Whitehead 等具体过程哲学。"
+    },
+    {
+      "id": "relations",
+      "type": "text",
+      "x": -900,
+      "y": -160,
+      "width": 480,
+      "height": 330,
+      "color": "2",
+      "text": "# Relations｜强可比\n\n生 / 克具有：\n- binary\n- direction\n- asymmetry\n\nA→B ≠ B→A\n\n评级：STRONGLY FORMALIZABLE"
+    },
+    {
+      "id": "graph",
+      "type": "text",
+      "x": -260,
+      "y": -620,
+      "width": 520,
+      "height": 430,
+      "color": "5",
+      "text": "# Signed Directed Graph｜最强形式映射\n\n节点：木火土金水\n\n+ / enabling：相生\n− / constraining：相克\n\n方向：incoming / outgoing\n\nWang & Zhang 2020 已做现代形式化。\n\n评级：VERY STRONG FORMAL\n\n⚠️ 图能画出来 ≠ 边在现实中被证明。"
+    },
+    {
+      "id": "network",
+      "type": "text",
+      "x": -260,
+      "y": -80,
+      "width": 520,
+      "height": 360,
+      "color": "5",
+      "text": "# Network Theory｜强形式可比\n\n可研究：\n- node\n- edge\n- cycle\n- path\n- role\n- motif\n- 删除/反转边\n\n评级：STRONG FORMAL\n\n作用：分析结构，不负责替五行证明现实有效。"
+    },
+    {
+      "id": "systems",
+      "type": "text",
+      "x": 420,
+      "y": -620,
+      "width": 510,
+      "height": 350,
+      "color": "4",
+      "text": "# Systems Thinking｜中等可比\n\n可比：\n- 整体\n- 循环\n- 相互制约\n- 非线性\n- 一处变化影响整体\n\n评级：MEDIUM\n\n⚠️ 五行 ≠ General Systems Theory"
+    },
+    {
+      "id": "feedback",
+      "type": "text",
+      "x": 420,
+      "y": -150,
+      "width": 510,
+      "height": 390,
+      "color": "4",
+      "text": "# Feedback / Regulation｜中等可比\n\n乘 / 侮 / 制化 / 胜复\n可重述成：\namplification / constraint / compensation / balancing response\n\n评级：MEDIUM\n\n⚠️ 制化 ≠ 现代 feedback control；传统缺 error / controller / gain 等定义。"
+    },
+    {
+      "id": "sd",
+      "type": "text",
+      "x": 1080,
+      "y": -620,
+      "width": 520,
+      "height": 400,
+      "color": "6",
+      "text": "# System Dynamics｜弱—中\n\n已有：\n✓ loop\n✓ qualitative +/- relation\n\n缺：\n✗ stock\n✗ flow/rate\n✗ delay\n✗ equation\n✗ units / parameters\n\n评级：WEAK–MEDIUM\n\n可做 qualitative causal map，但不能直接等同。"
+    },
+    {
+      "id": "dyn",
+      "type": "text",
+      "x": 1080,
+      "y": -80,
+      "width": 520,
+      "height": 400,
+      "color": "6",
+      "text": "# Dynamical Systems｜需新增形式化\n\n数学动态系统至少需要：\nstate space + time + evolution rule\n\n五行传统没有明确：\nS(t) → S(t+1)\n\n评级：WEAK UNTIL FORMALIZED\n\n潜力：可重构成 discrete-state dynamic model。"
+    },
+    {
+      "id": "ontology",
+      "type": "text",
+      "x": 1740,
+      "y": -620,
+      "width": 520,
+      "height": 380,
+      "color": "6",
+      "text": "# Relational Ontology / Structural Realism｜谨慎\n\n五行确有 relational character：\n节点意义部分依关系位置。\n\n但没有证明：\n关系在本体论上比对象更根本。\n\n评级：WEAK–MEDIUM / OVERREACH RISK"
+    },
+    {
+      "id": "kr",
+      "type": "text",
+      "x": 1740,
+      "y": -100,
+      "width": 520,
+      "height": 390,
+      "color": "3",
+      "text": "# Knowledge Representation｜中强\n\n可编码：\nEntity → classifiedAs → WuxingClass\nClass A → generates/constrains → Class B\n\n关键问题不是能不能编码，而是：\n**membership criterion 是否事前固定。**\n\n评级：MEDIUM–STRONG"
+    },
+    {
+      "id": "ladder",
+      "type": "text",
+      "x": -260,
+      "y": 500,
+      "width": 710,
+      "height": 600,
+      "color": "1",
+      "text": "# 五行现代化升级阶梯 F0–F5\n\nF0｜Traditional Description\n木火土金水 + 生克\n↓\nF1｜Relational Schema\n节点 + 有向关系\n↓\nF2｜Signed Directed Graph\n正/负 + 方向\n↓\nF3｜Qualitative System Model\nstate / strength / context / feedback-like\n↓\nF4｜Formal Dynamical Model\nstate space / transition / time / parameter\n↓\nF5｜Empirically Calibrated\n数据 / 预测 / holdout / 外部验证\n\n传统五行：主要 F0–F2"
+    },
+    {
+      "id": "boundary",
+      "type": "text",
+      "x": 650,
+      "y": 500,
+      "width": 650,
+      "height": 560,
+      "color": "6",
+      "text": "# R6 边界\n\n**能画图 ≠ 已经成为动态模型**\n\ncycle ≠ feedback\nfeedback ≠ control system\ndynamic language ≠ dynamical system\nrelationship ≠ relational ontology\nnetwork representation ≠ empirical validity\n\n现代理论最大的作用：\n**把 class / node / relation / sign / state / weight / path / trajectory / transition 拆开。**"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 1500,
+      "y": 500,
+      "width": 650,
+      "height": 500,
+      "color": "5",
+      "text": "# R7 NEXT｜正式审十元\n\n必须问：\n- 十元节点到底是什么？\n- 生/克/补是 edge type 还是 operator？\n- 体量1–10是 weight 还是 state？\n- 动态链是 path 还是 trajectory？\n- 哪些来自五行？\n- 哪些来自其他传统理论？\n- 哪些其实是现代系统语言？\n- 哪些完全是用户新增？\n\n统一标：\nINHERITED / TRANSFORMED / NEW / UNSUPPORTED / CONFLICTING"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "process",
+      "label": "哲学层"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "toNode": "relations",
+      "label": "关系层"
+    },
+    {
+      "id": "e3",
+      "fromNode": "relations",
+      "toNode": "graph",
+      "label": "形式化"
+    },
+    {
+      "id": "e4",
+      "fromNode": "graph",
+      "toNode": "network",
+      "label": "结构分析"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "toNode": "systems",
+      "label": "系统比较"
+    },
+    {
+      "id": "e6",
+      "fromNode": "systems",
+      "toNode": "feedback",
+      "label": "调节"
+    },
+    {
+      "id": "e7",
+      "fromNode": "feedback",
+      "toNode": "sd",
+      "label": "若进一步形式化"
+    },
+    {
+      "id": "e8",
+      "fromNode": "sd",
+      "toNode": "dyn",
+      "label": "需状态/演化规则"
+    },
+    {
+      "id": "e9",
+      "fromNode": "root",
+      "toNode": "ontology",
+      "label": "防过度类比"
+    },
+    {
+      "id": "e10",
+      "fromNode": "relations",
+      "toNode": "kr",
+      "label": "知识表示"
+    },
+    {
+      "id": "e11",
+      "fromNode": "graph",
+      "toNode": "ladder",
+      "label": "升级阶梯"
+    },
+    {
+      "id": "e12",
+      "fromNode": "dyn",
+      "toNode": "boundary",
+      "label": "边界"
+    },
+    {
+      "id": "e13",
+      "fromNode": "boundary",
+      "toNode": "next",
+      "label": "进入十元审计"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {
+      "type": "wuxing-modern-theory-comparison",
+      "status": "R6-DONE",
+      "date": "2026-10-07"
+    }
+  }
+}
