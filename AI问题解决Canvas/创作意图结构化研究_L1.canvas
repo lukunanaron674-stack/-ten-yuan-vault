@@ -108,7 +108,7 @@
       "width": 460,
       "height": 320,
       "color": "4",
-      "text": "# R1｜现有方法谱系\n\n10–20 个系统\n归类结构路线\n\n输出：\n社会已有结构总谱\n\nDONE：类别趋于饱和"
+      "text": "# R1｜现有方法谱系｜DONE\n\n15 个代表系统\n→ 6 个功能家族\n\n输出：\n社会已有结构总谱\n\n**DONE**"
     },
     {
       "id": "r2",
@@ -118,7 +118,7 @@
       "width": 460,
       "height": 320,
       "color": "4",
-      "text": "# R2｜Schema 字段拆解\n\nNode / Edge / Constraint\nPriority / Rationale\nTime / Stage / Evidence\n\n输出：字段比较矩阵"
+      "text": "# R2｜Schema 字段拆解｜READY\n\nNode / Edge / Relation Type\nDirection / Priority / Weight\nConstraint / Rationale\nState / Transition / Stage\nEvidence / Editability / Propagation\n\n输出：字段比较矩阵"
     },
     {
       "id": "r3",
@@ -199,6 +199,36 @@
       "height": 340,
       "color": "3",
       "text": "# 方向3｜REPRESENT｜当前研究焦点\n创作意图 / 灵感架构\n\nGoal / Relation / Priority / Constraint\nRationale / Dynamic Trace\n\n问题：如何让 AI 持续理解“我为什么这样创作”？"
+    },
+    {
+      "id": "r1_result_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_R1_现有方法谱系.md",
+      "x": -350,
+      "y": 1990,
+      "width": 520,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "r1_taxonomy",
+      "type": "text",
+      "x": 260,
+      "y": 1900,
+      "width": 700,
+      "height": 620,
+      "color": "4",
+      "text": "# R1 DONE｜社会已有方法谱系\n\n15 个代表系统 → 6 类\n\nA｜Prompt refinement / traceability\nB｜Multimodal / context elicitation\nC｜Attribute / dimension / taxonomy\nD｜Atomic intent units / tags\nE｜Semantic / concept / reasoning graph\nF｜Evolving / cross-stage continuity\n\n## 关键社会 baseline\nToMigo → Relation / Graph\nAHP → Weight / Priority\nDesignerlyLoop → Rationale / Dynamic Intent\nCreative Dialogue → Evolving Intent\nGID-HGCC → Cross-stage Constraint\n\n**结论：Node / Edge / Weight / Reasoning / Time / Stage / Trace 都已有人做。**"
+    },
+    {
+      "id": "r1_tenyuan_gate",
+      "type": "text",
+      "x": 1040,
+      "y": 1940,
+      "width": 650,
+      "height": 540,
+      "color": "2",
+      "text": "# R1 给十元留下的硬问题\n\n生克补\n≠ 只证明“我有 relation”\n→ 必须区别于 ToMigo supportive edge\n\n主次 / 体量\n≠ 只证明“我有 weight”\n→ 必须区别于 AHP / Priority\n\n动态链\n≠ 只证明“我的 intent 会变化”\n→ 必须区别于 Evolving Intent Loop\n\n**R3/R4 才判断：换名字，还是有新增操作能力。**"
     }
   ],
   "edges": [
@@ -309,16 +339,36 @@
       "fromNode": "dir3_context",
       "toNode": "root",
       "label": "当前深挖"
+    },
+    {
+      "id": "r1res",
+      "fromNode": "r1",
+      "toNode": "r1_result_file",
+      "label": "R1 正本"
+    },
+    {
+      "id": "r1tax",
+      "fromNode": "r1_result_file",
+      "toNode": "r1_taxonomy",
+      "label": "15→6 类"
+    },
+    {
+      "id": "r1gate",
+      "fromNode": "r1_taxonomy",
+      "toNode": "r1_tenyuan_gate",
+      "label": "十元证据门"
     }
   ],
   "metadata": {
-    "version": "1.1",
+    "version": "1.2",
     "frontmatter": {
       "type": "creative-intent-structure-research",
       "status": "open-r1-ready",
       "rounds": 5,
       "date": "2026-10-07",
-      "three_directions_context": "linked"
+      "three_directions_context": "linked",
+      "r1": "done",
+      "r2": "ready"
     }
   }
 }
