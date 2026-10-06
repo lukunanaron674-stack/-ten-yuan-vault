@@ -1431,7 +1431,7 @@
       "width": 1700,
       "height": 1100,
       "color": "3",
-      "text": "# 674-280｜头像 Human-in-NX 校准实验\n\n让人参与的不是“写长规则”，而是给最小反馈信号：\nACCEPT / FAVORITE / REJECT / RERUN / AMBIGUOUS\n\n可选只补一句：最不对的是哪里？\n脸型 / 五官比例 / 年龄感 / 神态 / 发型 / 头饰 / 轮廓 / 其他 / 说不清\n\n流程：\n头像样本 → 74快速判断 → 保留NX → 多样本重复 → AI提出候选XN → 74确认 → 再验证\n\n重点NX：\n- 同一角色感由哪些锚共同决定？\n- “像但没味道” vs “身份漂移”是否两类问题？\n- 哪些能机械审核，哪些必须USER_REVIEW？\n- 几次重复反馈才值得固化规则？\n\n目标：把人类参与压到低token、高信息量，而不是永久人工长评审。"
+      "text": "# 674-280｜头像 L1/L2/L3 Human-in-NX｜问题总览实例\n\n正本链：\nL1_REVIEWED / L1_LOCKED\n→ L2_FOURGRID / L2_BODY_PASS\n→ L3_CANON_PASS\n→ H3_READY\n\nL1｜人参与最多：PASS / FAIL / FAVORITE / 主参考 / 反例 / 未决；用于提取审美NX。\n\nL2｜机器先审 identity / proportion / costume / special structure / cross-view consistency；只有“还是不像 / 味道变了 / 太僵 / 年龄感不对”等剩余NX回 USER_REVIEW。\n\nL3｜机器整理 Canon 字段；新Canon、核心气质、世界职责仍由 USER 裁决。\n\n实验目标：\nL1人工NX → 候选XN → L2减少人工量 → L3只保留少量高价值作者裁决。\n\n不是只验证H04；H04仅作为已有局部证据样本。"
     }
   ],
   "edges": [
@@ -2627,7 +2627,7 @@
     }
   ],
   "metadata": {
-    "version": "1.6-2026-10-06-xn-efficiency-human-nx-avatar",
+    "version": "1.7-2026-10-06-avatar-l1-l2-l3-human-nx",
     "frontmatter": {}
   }
 }
