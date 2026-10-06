@@ -209,6 +209,26 @@
       "width": 470,
       "height": 160,
       "color": "6"
+    },
+    {
+      "id": "r6_done",
+      "type": "text",
+      "x": 2220,
+      "y": 700,
+      "width": 500,
+      "height": 620,
+      "color": "5",
+      "text": "# R6｜哪些方向没那么挤，但资料够？｜DONE\n\n★★★★★ 同一个角色怎么一直像\n★★★★★ 角色和场景怎么一直像同一个世界\n★★★★★ 自己的画画要求怎么变成AI能执行的规则\n★★★★★ AI图到底怎么判断合不合格\n★★★★☆ 参考图到底该管什么\n★★★★☆ 人和AI到底谁负责哪一步\n★★★★★ 怎么从一张好图变成一批稳定资产\n★★★★☆ AI短片最容易断在哪\n\n共同点：\n不是研究“AI能不能做”，\n而是研究“AI怎么稳定地做对”。"
+    },
+    {
+      "id": "r6_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文同辈研究地图_R6_没那么挤但资料够.md",
+      "x": 2220,
+      "y": 1370,
+      "width": 500,
+      "height": 160,
+      "color": "6"
     }
   ],
   "edges": [
@@ -367,6 +387,24 @@
       "fromNode": "r5_done",
       "toNode": "crowded",
       "label": "更新"
+    },
+    {
+      "id": "e_r6a",
+      "fromNode": "r5_done",
+      "toNode": "r6_done",
+      "label": "继续"
+    },
+    {
+      "id": "e_r6b",
+      "fromNode": "r6_done",
+      "toNode": "r6_file",
+      "label": "想细看"
+    },
+    {
+      "id": "e_r6c",
+      "fromNode": "r6_done",
+      "toNode": "candidate",
+      "label": "放进灵感池"
     }
   ]
 }
