@@ -88,7 +88,7 @@
       "width": 650,
       "height": 390,
       "color": "2",
-      "text": "# R1｜审美变量与实验语法\n\n冻结：\n- unity/fit/charm/tension/...定义\n- SAME/生/克/补/random 条件\n- 盲审格式\n- 正负样本\n\nDONE：\n“好看”不再混成一个分。"
+      "text": "# R1｜审美变量与实验语法｜DONE\n\n冻结：\n- CORE 6指标 U/F/C/I/P/B\n- A2追加 T/K\n- A3追加 CL/W\n- 1–7量表\n- SAME/OPPOSITE/生/克/补/RANDOM\n- 盲审顺序\n- Surface lure / structural match / hidden duplicate 控制\n\nNEXT：R2 最小 SAME/OPPOSITE/RANDOM A/B/C"
     },
     {
       "id": "r2",
@@ -149,6 +149,16 @@
       "height": 500,
       "color": "1",
       "text": "# 现在怎么研究？\n\n**下一步先跑 R1。**\n\n先锁：\n1 审美因变量\n2 SAME/生/克/补/random 刺激条件\n3 五轴作为跨域单位\n4 盲审问卷\n5 正负控制\n\n然后 R2 做小样 A/B。\n成本最低、最容易推翻、信息量最大。"
+    },
+    {
+      "id": "r1_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/十元审美构成研究/R1_审美变量与实验语法冻结.canvas",
+      "x": 1350,
+      "y": 570,
+      "width": 650,
+      "height": 220,
+      "color": "1"
     }
   ],
   "edges": [
@@ -247,16 +257,23 @@
       "fromNode": "logic",
       "toNode": "next",
       "label": "当前行动"
+    },
+    {
+      "id": "e_r1_file",
+      "fromNode": "r1",
+      "toNode": "r1_file",
+      "label": "R1详细Canvas"
     }
   ],
   "metadata": {
-    "version": "0.1",
+    "version": "0.2",
     "frontmatter": {
       "type": "tenyuan-aesthetic-composition-research",
       "status": "RESEARCH_OPEN",
       "date": "2026-10-07",
       "rounds": 5,
-      "current_round": "R1"
+      "current_round": "R2",
+      "r1": "DONE"
     }
   }
 }
