@@ -8,7 +8,7 @@
       "width": 620,
       "height": 390,
       "color": "1",
-      "text": "# 五行 × 十元｜独立研究总图\n\n**8轮研究 / R1–R6 DONE / R7 NEXT**\n\nA区｜五行本体 R1–R4 DONE\nB区｜五行与传统/现代理论 R5–R6 DONE\n\nR6 核心：五行最稳地可重述为过程导向的关系结构 + signed directed graph；要升级成现代动态系统，必须额外加入状态空间、演化规则、时间、参数和外部数据。\n\n下一步正式进入 C区：**五行 → 十元来源审计。**"
+      "text": "# 五行 × 十元｜独立研究总图\n\n**8轮研究 / R1–R7 DONE / R8 NEXT**\n\nA区｜五行本体 R1–R4 DONE\nB区｜传统/现代理论 R5–R6 DONE\nC区｜R7 来源审计 DONE\n\n当前结论：十元有真实阴阳五行结构祖型，但核心十元语义和大量形式化属于现代新增，不能借传统自动证明有效。\n\nR8：冻结最终关系模型、理论来源声明、不可宣称清单与实验入口。"
     },
     {
       "id": "A",
@@ -104,11 +104,11 @@
       "id": "R7",
       "type": "text",
       "x": 760,
-      "y": -900,
-      "width": 620,
-      "height": 520,
+      "y": -940,
+      "width": 650,
+      "height": 650,
       "color": "5",
-      "text": "# R7｜五行 → 十元来源审计\n\n逐项标：\nINHERITED｜继承\nTRANSFORMED｜改造\nNEW｜新增\nUNSUPPORTED｜无文献支持\nCONFLICTING｜与五行冲突\n\n重点审：\n五类→十类\n生 / 克 / 补\n主次\n强度\n方向\n动态链\n\n产物：五行→十元血缘图"
+      "text": "# R7｜五行 → 十元来源审计｜DONE\n\n**继承**\n五行五类 / 阴阳极性 / 五行×阴阳十位先例 / 生克骨架\n\n**改造**\n十元十位映射 / 同变量反向操作 / 十元生克几何 / 五轴\n\n**新增**\n十个核心操作 / 补 / 主次 / 1–10强度 / 动态链 / 五维 / is-a跨域规则\n\n最安全定位：\n**受阴阳—五行十位结构启发并在其上重构的现代关系编码模型。**\n\n⚠️ 五维与跨域 is-a 仍需外部验证。"
     },
     {
       "id": "R8",
@@ -237,6 +237,26 @@
       "x": 650,
       "y": 1100,
       "width": 600,
+      "height": 200,
+      "color": "1"
+    },
+    {
+      "id": "R7_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/R7_五行到十元来源审计.md",
+      "x": 1500,
+      "y": -960,
+      "width": 580,
+      "height": 200,
+      "color": "6"
+    },
+    {
+      "id": "R7_canvas",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/R7_五行到十元来源审计.canvas",
+      "x": 1500,
+      "y": -680,
+      "width": 580,
       "height": 200,
       "color": "1"
     }
@@ -379,16 +399,28 @@
       "fromNode": "R6",
       "toNode": "R6_canvas",
       "label": "R6独立Canvas"
+    },
+    {
+      "id": "e_R7_file",
+      "fromNode": "R7",
+      "toNode": "R7_file",
+      "label": "R7详细审计"
+    },
+    {
+      "id": "e_R7_canvas",
+      "fromNode": "R7",
+      "toNode": "R7_canvas",
+      "label": "R7血缘Canvas"
     }
   ],
   "metadata": {
-    "version": "1.7",
+    "version": "1.8",
     "frontmatter": {
       "type": "wuxing-tenyuan-research-map",
       "status": "active",
       "rounds": 8,
       "date": "2026-10-07",
-      "current_round": "R7",
+      "current_round": "R8",
       "r1": "DONE",
       "r2": "DONE",
       "r3": "DONE",
@@ -396,7 +428,8 @@
       "section_a": "DONE",
       "r5": "DONE",
       "r6": "DONE",
-      "section_b": "DONE"
+      "section_b": "DONE",
+      "r7": "DONE"
     }
   }
 }
