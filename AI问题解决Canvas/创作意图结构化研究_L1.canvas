@@ -159,6 +159,46 @@
       "width": 600,
       "height": 220,
       "color": "2"
+    },
+    {
+      "id": "three_dirs_context",
+      "type": "text",
+      "x": -2500,
+      "y": -500,
+      "width": 620,
+      "height": 360,
+      "color": "2",
+      "text": "# 三个论文方向｜上位背景\n\n① 创作主权 / 个性\nAI 无限生产力下，如何保持“我”\n\n② 审美判断 / 最终否决权\n前三层都过，为什么最后仍 REJECT\n\n③ 创作意图 / 灵感架构\n怎样把“我为什么这样创作”结构化给 AI\n\n**当前 L1 专门深挖③，但必须保留①②作为上游。**"
+    },
+    {
+      "id": "dir1_context",
+      "type": "text",
+      "x": -2500,
+      "y": -20,
+      "width": 560,
+      "height": 300,
+      "color": "5",
+      "text": "# 方向1｜WHY\n创作主权 / 个性\n\n个人风格\n选择习惯\n审美判断\n创作意志\n最终决定权"
+    },
+    {
+      "id": "dir2_context",
+      "type": "text",
+      "x": -2500,
+      "y": 360,
+      "width": 560,
+      "height": 320,
+      "color": "4",
+      "text": "# 方向2｜JUDGE\n审美判断 / 最终否决权\n\nL1 技术正确\n→ L2 约束保持\n→ L3 意图符合\n→ L4 创作者最终决策"
+    },
+    {
+      "id": "dir3_context",
+      "type": "text",
+      "x": -2500,
+      "y": 760,
+      "width": 560,
+      "height": 340,
+      "color": "3",
+      "text": "# 方向3｜REPRESENT｜当前研究焦点\n创作意图 / 灵感架构\n\nGoal / Relation / Priority / Constraint\nRationale / Dynamic Trace\n\n问题：如何让 AI 持续理解“我为什么这样创作”？"
     }
   ],
   "edges": [
@@ -245,15 +285,40 @@
       "fromNode": "r4",
       "toNode": "r5",
       "label": "R5"
+    },
+    {
+      "id": "ctx0",
+      "fromNode": "three_dirs_context",
+      "toNode": "dir1_context",
+      "label": "1｜WHY"
+    },
+    {
+      "id": "ctx1",
+      "fromNode": "dir1_context",
+      "toNode": "dir2_context",
+      "label": "2｜JUDGE"
+    },
+    {
+      "id": "ctx2",
+      "fromNode": "dir2_context",
+      "toNode": "dir3_context",
+      "label": "3｜REPRESENT"
+    },
+    {
+      "id": "ctx3",
+      "fromNode": "dir3_context",
+      "toNode": "root",
+      "label": "当前深挖"
     }
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "1.1",
     "frontmatter": {
       "type": "creative-intent-structure-research",
       "status": "open-r1-ready",
       "rounds": 5,
-      "date": "2026-10-07"
+      "date": "2026-10-07",
+      "three_directions_context": "linked"
     }
   }
 }
