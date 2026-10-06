@@ -1,0 +1,219 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 760,
+      "height": 500,
+      "color": "1",
+      "text": "# 十元审美构成｜R3\n\n**动态链魅力实验**\n\nPROTOCOL DONE / EMPIRICAL PENDING\n\n目标：K→S→K+→B\n克→生→重克→补\n\n测关系序列、状态空间轨迹、residue、next_affordance与收束位置，而不是四个标签。"
+    },
+    {
+      "id": "target",
+      "type": "text",
+      "x": -1100,
+      "y": -700,
+      "width": 680,
+      "height": 600,
+      "color": "2",
+      "text": "# A｜目标链\n\nK：XN克ZX｜mid\n→ S：XZ生ZX｜mid\n→ K+：同一XN克ZX作用范围增强｜high\n→ B：NX补ZX｜mid\n\n路径示意：4→2→3→1→2\n\n最后不回到4。\n**保留代价的收束**是候选魅力来源。"
+    },
+    {
+      "id": "das",
+      "type": "text",
+      "x": -1100,
+      "y": 50,
+      "width": 680,
+      "height": 500,
+      "color": "4",
+      "text": "# DAS｜动态审美签名\n\nrelation_sequence\nintensity_contour\nstate_space_trajectory\nresidue_pattern\naffordance_pattern\ndominance_shift\nclosure_position\nreversibility_pattern\n\n动态链的味道不是一个生/克/补词。"
+    },
+    {
+      "id": "patterns",
+      "type": "text",
+      "x": -270,
+      "y": -700,
+      "width": 720,
+      "height": 630,
+      "color": "3",
+      "text": "# 四个合法换序候选\n\nA K→S→K+→B\n压→扬→重压→补\n\nB K→K+→S→B\n连续加压→恢复\n\nC S→K→K+→B\n先扬→持续坠落→补\n\nD K→S→B→K+\n补位提前→结尾再压\n\n每条都要重新过 mechanism / delta / residue / next_affordance。"
+    },
+    {
+      "id": "abl",
+      "type": "text",
+      "x": -270,
+      "y": 90,
+      "width": 720,
+      "height": 470,
+      "color": "6",
+      "text": "# 两个消融\n\nE｜No Complement\nK→S→K+\n测补是否贡献Closure\n\nF｜No Re-Pressure\nK→S→B\n测重克是否贡献Tension/Charm\n\n消融版不因少一步而偷改总时长。"
+    },
+    {
+      "id": "phasea",
+      "type": "text",
+      "x": 590,
+      "y": -700,
+      "width": 700,
+      "height": 600,
+      "color": "5",
+      "text": "# Phase A｜抽象动态\n\n无角色名/剧情词/十元标签。\n同对象、布局、风格、总时长。\n只变化扩缩与补位顺序。\n\n测：\nTension / Charm / Closure / Interest / W / Beauty\n\n诊断：\nTransition Coherence\nStructural Clarity"
+    },
+    {
+      "id": "phaseb",
+      "type": "text",
+      "x": 590,
+      "y": 40,
+      "width": 700,
+      "height": 500,
+      "color": "2",
+      "text": "# Phase B｜故事Animatic\n\n固定：同一角色、目标、地点、对手系统、视觉风格、关系原料。\n\n只改：顺序与相应因果连接。\n\n抽象层有差异后，再看能否复制到叙事。\n先低成本animatic，不先烧高完成度动画。"
+    },
+    {
+      "id": "gate",
+      "type": "text",
+      "x": 1440,
+      "y": -700,
+      "width": 700,
+      "height": 590,
+      "color": "6",
+      "text": "# 结构门先于审美\n\n每条链先过 Dynamic Chain Evaluator：\n\nsame_object_layer\nsame_core_variable\nmechanism\nΔ\nresidue\nnext_affordance\ndelete/reverse\nclosure\n\nSTRUCTURAL_FAIL 不进审美主比较。\n否则只是连贯链vs乱链。"
+    },
+    {
+      "id": "hyp",
+      "type": "text",
+      "x": 1440,
+      "y": 40,
+      "width": 700,
+      "height": 520,
+      "color": "4",
+      "text": "# 三个候选机制\n\nM1 Contrast/Reversal\n压→扬→再压，两次反转\n\nM2 Earned Relief\n最后补填重压后真实缺口\n\nM3 Residue-Preserving Closure\n补不抹掉损失\n\n候选核心：\n**魅力可能来自有代价的收束，而不是圆满。**"
+    },
+    {
+      "id": "pred",
+      "type": "text",
+      "x": 2280,
+      "y": -700,
+      "width": 720,
+      "height": 610,
+      "color": "3",
+      "text": "# 预注册 + 允许反结果\n\nH1 A tension > F\nH2 A closure > D\nH3 A charm可能高于B/C，不预设\nH4 E closure < A\nH5 closure 与继续观看欲可反向\n\n允许：\nB更迷人\nD更想追\n重克无效\n补不影响收束\n抽象/故事层结果不一致"
+    },
+    {
+      "id": "matrix",
+      "type": "text",
+      "x": 2280,
+      "y": 60,
+      "width": 720,
+      "height": 490,
+      "color": "5",
+      "text": "# 不做审美总分\n\nPattern × Metric：\nTension\nCharm\nClosure\nInterest\nWant-to-Continue\nBeauty\nTC\nSC\n\n首张图建议：\nX=Closure\nY=Tension\n再看Charm/W落点。\n\n不同构成可以各有魅力。"
+    },
+    {
+      "id": "split",
+      "type": "text",
+      "x": 3140,
+      "y": -500,
+      "width": 720,
+      "height": 520,
+      "color": "1",
+      "text": "# 与旧研究分工\n\nDynamic Chain Evaluator\n→ 结构链质量\n\nR3审美实验\n→ 链序的真实观众感受\n\n音乐旧高分\n→ 只找候选/反例\n→ 不证明审美优越\n\n**Structure Quality ≠ Aesthetic Response**"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 3140,
+      "y": 160,
+      "width": 720,
+      "height": 500,
+      "color": "1",
+      "text": "# 下一步\n\n实证线：\nR2继续做木轴发型刺激；\nR3同步可做A–F抽象小样。\n\n理论线：\n**R4｜十元1–10强度谱**\n\n问：Top1只是分类规则，还是完整十维谱形才携带额外审美信息？"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "target",
+      "label": "目标母型"
+    },
+    {
+      "id": "e2",
+      "fromNode": "target",
+      "toNode": "das",
+      "label": "提取动态签名"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "toNode": "patterns",
+      "label": "换序对照"
+    },
+    {
+      "id": "e4",
+      "fromNode": "patterns",
+      "toNode": "abl",
+      "label": "消融"
+    },
+    {
+      "id": "e5",
+      "fromNode": "patterns",
+      "toNode": "phasea",
+      "label": "抽象实验"
+    },
+    {
+      "id": "e6",
+      "fromNode": "phasea",
+      "toNode": "phaseb",
+      "label": "故事复制"
+    },
+    {
+      "id": "e7",
+      "fromNode": "patterns",
+      "toNode": "gate",
+      "label": "先过结构门"
+    },
+    {
+      "id": "e8",
+      "fromNode": "gate",
+      "toNode": "hyp",
+      "label": "再谈审美"
+    },
+    {
+      "id": "e9",
+      "fromNode": "hyp",
+      "toNode": "pred",
+      "label": "可反驳"
+    },
+    {
+      "id": "e10",
+      "fromNode": "pred",
+      "toNode": "matrix",
+      "label": "分指标"
+    },
+    {
+      "id": "e11",
+      "fromNode": "matrix",
+      "toNode": "split",
+      "label": "证据分账"
+    },
+    {
+      "id": "e12",
+      "fromNode": "split",
+      "toNode": "next",
+      "label": "R4/实证并行"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {
+      "type": "tenyuan-aesthetic-r3-dynamic-chain",
+      "status": "PROTOCOL_DONE",
+      "empirical_status": "PENDING",
+      "target_pattern": "K-S-Kplus-B",
+      "date": "2026-10-07",
+      "next": "R4-intensity-profile"
+    }
+  }
+}
