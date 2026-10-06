@@ -1312,6 +1312,16 @@
       "height": 700,
       "color": "3",
       "text": "# NX运行规则｜M3\n\nNX不直接变XN。\n\n固定链：\nNX → 真实案例/素材证据 → A/B或失败对比 → AI提出候选XN → 74确认 → VERIFIED候选 → 进入生产再校准\n\n本轮先保留6个NX，不抢答。\n\n只有在同类案例重复成立、反例可解释、且74认可后，才允许从NX升级为XN。"
+    },
+    {
+      "id": "xn_decompose_277",
+      "type": "text",
+      "x": 11400,
+      "y": 2300,
+      "width": 1400,
+      "height": 760,
+      "color": "2",
+      "text": "# XN｜大Z分解后局部规则化\n\n原则：大体量 Z 不应被一整束全局 XN 硬约束。\n\n固定做法：\n1. 先记录大Z拆成多少个小Z\n2. 每个小Z建立自己的 XN_SET / NX_GAPS / PATH / AUTHORITY\n3. 每个小Z单独计算 expected_xn_fit / verified_xn_fit\n4. 小Z达到足够信赖度后，再向上汇总父Z信赖度\n\n目的：把“一个大Z很难被一套规则准确束缚”改成“多个小Z分别规则化、分别校准、分别验证”。\n\n建议字段：\nchild_z_count\nlocal_xn_set\nlocal_verified_fit\nparent_rollup_status\n\n状态：CANDIDATE_XN｜待R3压力测试"
     }
   ],
   "edges": [
@@ -2243,10 +2253,37 @@
       "toSide": "right",
       "color": "2",
       "label": "生产链"
+    },
+    {
+      "id": "e_rel_decompose_xn_277",
+      "fromNode": "z_relations_277",
+      "fromSide": "right",
+      "toNode": "xn_decompose_277",
+      "toSide": "left",
+      "color": "2",
+      "label": "大Z拆分→局部XN"
+    },
+    {
+      "id": "e_decompose_xnset_277",
+      "fromNode": "xn_decompose_277",
+      "fromSide": "bottom",
+      "toNode": "xn_set_277",
+      "toSide": "top",
+      "color": "2",
+      "label": "每个小Z独立规则束"
+    },
+    {
+      "id": "e_decompose_cal_277",
+      "fromNode": "xn_decompose_277",
+      "fromSide": "bottom",
+      "toNode": "calibration_277",
+      "toSide": "top",
+      "color": "5",
+      "label": "局部校准→父Z汇总"
     }
   ],
   "metadata": {
-    "version": "1.1-2026-10-06-core-z-nx-calibration",
+    "version": "1.2-2026-10-06-core-z-local-xn-decomposition",
     "frontmatter": {}
   }
 }
