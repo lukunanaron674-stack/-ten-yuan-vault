@@ -1,0 +1,165 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 520,
+      "height": 330,
+      "color": "4",
+      "text": "# E｜评价｜674-122 REAL-EVAL\n\n核心：机器“完成”不等于真的做对。\n\n冻结三层协议：\nL1 Outcome Validity\nL2 Intent + Constraint Fidelity\nL3 Trajectory Quality\n\n状态：CYCLE-01 DONE → E-H1\nNEXT：30–50 历史 case 盲标预测"
+    },
+    {
+      "id": "l1",
+      "type": "text",
+      "x": 650,
+      "y": -360,
+      "width": 430,
+      "height": 250,
+      "color": "5",
+      "text": "# L1｜Outcome Validity\n\n有没有真的完成任务？\n结果是否存在、可打开、可验证？\n\n社会成熟度：8/10\n→ ABSORB 普通 task success / pass-fail。"
+    },
+    {
+      "id": "l2",
+      "type": "text",
+      "x": 650,
+      "y": 0,
+      "width": 450,
+      "height": 300,
+      "color": "4",
+      "text": "# L2｜Intent + Constraint Fidelity\n\n是不是完成了 74 真正要的东西？\n身份 / 风格 / 构图 / 非目标变量是否保持？\n\n社会成熟度：3–4/10\n→ 我们最高价值研究层。"
+    },
+    {
+      "id": "l3",
+      "type": "text",
+      "x": 650,
+      "y": 400,
+      "width": 450,
+      "height": 290,
+      "color": "4",
+      "text": "# L3｜Trajectory Quality\n\n过程是否可靠、可恢复、可追踪？\n工具调用 / 状态转换 / first-failure / retry 是否合理？\n\n社会成熟度：6–7/10\n→ ADAPT trajectory / process evaluation。"
+    },
+    {
+      "id": "social_e",
+      "type": "text",
+      "x": -720,
+      "y": 20,
+      "width": 520,
+      "height": 380,
+      "color": "3",
+      "text": "# SOCIAL-E｜社会解决状态\n\n整体成熟度：约 6/10\n\n8｜最终 task success\n7–8｜工具调用/过程记录\n6–7｜trajectory evaluation\n5–6｜长程真实任务评价\n3–4｜“符合具体创作者真实意图”评价\n\n2026 综述仍指出 benchmark→deployment 存在显著有效性缺口。"
+    },
+    {
+      "id": "social_e_absorb",
+      "type": "text",
+      "x": -720,
+      "y": -430,
+      "width": 470,
+      "height": 270,
+      "color": "5",
+      "text": "# ABSORB｜7–10\n\ntask success\npass / fail\nbenchmark score\n工具调用成功率\n基础 outcome eval\n\n动作：直接采用。"
+    },
+    {
+      "id": "social_e_adapt",
+      "type": "text",
+      "x": -1280,
+      "y": 20,
+      "width": 450,
+      "height": 300,
+      "color": "4",
+      "text": "# ADAPT｜4–6\n\ntrajectory evaluation\nprocess evaluation\nfailure taxonomy\nlong-horizon evaluation\n\n动作：吸收进 L3，并与运行日志关联。"
+    },
+    {
+      "id": "social_e_research",
+      "type": "text",
+      "x": -720,
+      "y": 520,
+      "width": 520,
+      "height": 320,
+      "color": "2",
+      "text": "# RESEARCH｜开放缺口\n\n机器完成 ≠ 用户接受\n\n真正保留：Intent Fidelity\n→ 是否符合 74 的隐性创作意图？\n→ 能否预测接受 / 否决 / 重改？\n\n证据：2026 Agent Evaluation 综述指出安全、鲁棒性、过程质量及真实部署有效性仍系统性不足。"
+    },
+    {
+      "id": "experiment",
+      "type": "text",
+      "x": 0,
+      "y": 760,
+      "width": 540,
+      "height": 330,
+      "color": "2",
+      "text": "# E-H1｜下一实验\n\n冻结 30–50 历史 case\n盲标真实结果：\n接受 / 否决 / 重改\n或 Agent 成功 / 恢复 / 失败\n\n用 L1/L2/L3 预测\nVS 单分数 / AI 自评基线\n\n只有外部历史结果可作为验证，不允许自产自测高分。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "l1",
+      "label": "L1",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "toNode": "l2",
+      "label": "L2",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "toNode": "l3",
+      "label": "L3",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "toNode": "social_e",
+      "label": "SOCIAL STATE",
+      "fromSide": "left",
+      "toSide": "right"
+    },
+    {
+      "id": "e5",
+      "fromNode": "social_e",
+      "toNode": "social_e_absorb",
+      "label": "ABSORB",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "e6",
+      "fromNode": "social_e",
+      "toNode": "social_e_adapt",
+      "label": "ADAPT",
+      "fromSide": "left",
+      "toSide": "right"
+    },
+    {
+      "id": "e7",
+      "fromNode": "social_e",
+      "toNode": "social_e_research",
+      "label": "RESEARCH",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "toNode": "experiment",
+      "label": "NEXT EXPERIMENT",
+      "fromSide": "bottom",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "social_state_version": "R4-2026-10-06",
+    "frontmatter": {}
+  }
+}
