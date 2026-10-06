@@ -8,7 +8,8 @@
 		{"id":"n_d3","type":"text","text":"## 🧭 方向3：怎么打分\n\nAI生成得好不好，谁说了算？怎么判？\n\n→ 你逐镜审查的习惯，本身就是一套评价方法。","x":880,"y":580,"width":460,"height":280,"color":"4"},
 		{"id":"f_read","type":"file","file":"AI问题解决Canvas/文献阅读版导读_20条_STAGING.md","x":-440,"y":660,"width":440,"height":220,"color":"2"},
 		{"id":"f_list","type":"file","file":"AI问题解决Canvas/引用清单_20条_勾选版_STAGING.md","x":200,"y":660,"width":440,"height":220,"color":"2"},
-		{"id":"n_next","type":"text","text":"## ⏭ 你现在只欠两件事\n\n**① 把 16 镜名单 + 编码表填给我** → 实验才能开跑\n\n**② 引用清单看一眼，回个「好」** → 我就按它改写开题报告","x":200,"y":960,"width":440,"height":240,"color":"2"}
+		{"id":"n_next","type":"text","text":"## ⏭ 你现在只欠两件事\n\n**① 把 16 镜名单 + 编码表填给我** → 实验才能开跑\n\n**② 引用清单看一眼，回个「好」** → 我就按它改写开题报告","x":200,"y":960,"width":440,"height":240,"color":"2"},
+		{"id":"f_00","type":"file","file":"AI问题解决Canvas/00_从这里开始看.md","x":-440,"y":960,"width":440,"height":240,"color":"1"}
 	],
 	"edges": [
 		{"id":"e1","fromNode":"n_start","fromSide":"bottom","toNode":"n_core","toSide":"top","label":"写什么"},
@@ -18,7 +19,8 @@
 		{"id":"e5","fromNode":"n_core","fromSide":"bottom","toNode":"n_d3","toSide":"top","label":"方向③"},
 		{"id":"e6","fromNode":"n_d1","fromSide":"bottom","toNode":"f_read","toSide":"top","label":"看别人怎么写（每篇都有讲解）"},
 		{"id":"e7","fromNode":"f_read","fromSide":"right","toNode":"f_list","toSide":"left","label":"挑出要引的20条"},
-		{"id":"e8","fromNode":"n_d1","fromSide":"bottom","toNode":"n_next","toSide":"top","label":"定下来之后干嘛"}
+		{"id":"e8","fromNode":"n_d1","fromSide":"bottom","toNode":"n_next","toSide":"top","label":"定下来之后干嘛"},
+		{"id":"e9","fromNode":"n_next","fromSide":"left","toNode":"f_00","toSide":"right","label":"文字版路线（和这张图说的一样）"}
 	],
 	"metadata": {"version": "1.0-1.0", "frontmatter": {}}
 }
