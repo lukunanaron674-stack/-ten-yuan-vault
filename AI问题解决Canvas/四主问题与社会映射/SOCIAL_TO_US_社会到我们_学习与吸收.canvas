@@ -1,18 +1,30 @@
 {
   "nodes": [
-    {"id":"root","type":"text","x":0,"y":0,"width":560,"height":330,"color":"4","text":"# SOCIAL → US｜社会 → 我们\n## 学习、吸收与迁移总图\n\n用途：横向比较 C / D / E / F。\n\n不是问‘社会几分、我们几分’就结束，而是定位：\n社会已经会什么 → 我们还不会什么 → 差值是什么 → 学什么 → 接回哪个主问题。\n\n统一字段：社会成熟度/100｜我们掌握度/100｜Learning Gap｜ABSORB / ADAPT｜目标节点"},
-    {"id":"c","type":"text","x":-1150,"y":-520,"width":500,"height":400,"color":"3","text":"# C｜控制与对齐\n社会≈62｜我们≈38\n\n重点学习：\n• constraint satisfaction\n• disentanglement\n• preference learning\n• reference-conditioned generation/editing\n• multi-turn consistency\n\nABSORB：显式条件、基础 guardrail\nADAPT：多约束、preservation cost、多轮保持\n→ 接 C-INTENT / C-PRESERVE / 119 / 120"},
-    {"id":"d","type":"text","x":-1150,"y":120,"width":500,"height":400,"color":"3","text":"# D｜人机协作 / 121\n社会≈65｜我们≈42\n\n重点学习：\n• Human-in-the-loop\n• mixed-initiative systems\n• adjustable autonomy\n• uncertainty calibration\n• escalation policy\n• risk-sensitive decision making\n\nABSORB：审批、权限、sandbox\nADAPT：动态自主 / 风险升级\n→ 接 121 Agency Gate"},
-    {"id":"e","type":"text","x":720,"y":-520,"width":500,"height":420,"color":"3","text":"# E｜评价 / 122\n社会≈60｜我们≈30\n\n重点学习：\n• agent evaluation\n• trajectory evaluation\n• process supervision\n• LLM-as-a-judge bias\n• human preference evaluation\n• inter-rater reliability\n• benchmark design / failure taxonomy\n\nABSORB：普通 outcome / task success\nADAPT：trajectory / long-horizon eval\n→ 接 122 L1/L2/L3"},
-    {"id":"f","type":"text","x":720,"y":120,"width":520,"height":460,"color":"3","text":"# F｜工业与生产\n传统工程社会≈85–95｜我们≈35\n长程创意 Agent 社会≈40–50\n\n重点学习：\n• distributed systems / orchestration\n• checkpoint / retry / resume\n• idempotency / Saga / compensation\n• observability / event sourcing\n• provenance / lineage\n• queue / backpressure / circuit breaker\n• SLO / reliability budget\n\n→ 接 F-STATE / RECOVERY / IDEMPOTENCY / SAGA / PROVENANCE / LONGRUN"},
-    {"id":"priority","type":"text","x":-260,"y":650,"width":620,"height":360,"color":"5","text":"# 学习优先级\n\nP0｜E：评价管线、盲测、ground truth、trajectory\nP0｜C：隐性意图表示 + 多轮非目标保持\nP1｜D：adjustable autonomy + escalation\nP1｜F：成熟可靠性工程快速迁移\n\n原则：社会成熟且可迁移 → 不重新研究，先学、先实现。\n只有迁移后仍存在的缺口才进入原创 RESEARCH。"}
+    {"id":"root","type":"text","x":0,"y":0,"width":600,"height":360,"color":"4","text":"# SOCIAL → US｜社会 → 我们\n## 学习、吸收与迁移总图\n\n状态：R1–R4 RESEARCH DONE → LEARNING / IMPLEMENTATION\n\n目标：社会已经会什么 → 我们还不会什么 → 学习差距 → ABSORB / ADAPT → 接回 C/D/E/F → 最小验证。\n\n注意：社会成熟度与我们掌握度不是同一个指标；所有百分数是导航估值，不是实验准确率。"},
+    {"id":"r1","type":"text","x":-750,"y":-760,"width":540,"height":330,"color":"6","text":"# R1｜社会知识入口审计\n\n共 42 项：\nC 控制与对齐：6\nD 人机协作：8\nE 评价：12\nF 工业与生产：16\n\n结论：不能全部学；SOCIAL→US 不是知识收藏夹，而是外部知识输入控制器。"},
+    {"id":"r2","type":"text","x":40,"y":-760,"width":560,"height":360,"color":"6","text":"# R2｜Learning Gap 量化\n\n字段：\nS = 社会成熟度 /100\nU = 我们掌握度 /100\nG = S-U\nR = 与74系统相关度\nV = 当前学习价值\n\n判断原则：不是 Gap 越大越先学，而是 Gap × Relevance × 可迁移性 × 当前阻塞程度。\n\n学习缺口总体：E 最大 → F → C → D。"},
+    {"id":"r3","type":"text","x":820,"y":-760,"width":570,"height":380,"color":"6","text":"# R3｜吸收路线\n\n14 项第一梯队被压成 4 个 Learning Pack：\n\nLEARN-E｜真实评价包\nLEARN-F｜可靠生产包\nLEARN-C｜意图保持包\nLEARN-D｜动态介入包\n\n每项必须有：社会知识 → ABSORB/ADAPT → 我们节点 → 最小验证。\n‘知道/看过’不算吸收。"},
+    {"id":"c","type":"text","x":-1320,"y":-220,"width":540,"height":480,"color":"3","text":"# LEARN-C｜意图保持包｜P1\n社会≈62｜我们≈38\n\nNOW：\n1. Preference Learning\n→ C-INTENT / 119\n→ 历史接受/否决预测74偏好\n\n2. Controlled Editing / Disentanglement\n→ C-PRESERVE / 120\n→ 只改A，测B/C/D漂移\n\n3. Multi-turn Consistency\n→ C-PRESERVE\n→ 连续修改5–10轮测累计漂移\n\n社会成熟能力直接吸收：显式条件、基础 guardrail。"},
+    {"id":"d","type":"text","x":-1320,"y":400,"width":540,"height":480,"color":"3","text":"# LEARN-D｜动态介入包｜P1\n社会≈65｜我们≈42\n\nNOW：\n1. Adjustable Autonomy\n2. Uncertainty Calibration\n3. Escalation Policy\n→ 全部接 121 Agency Gate / REVIEW_QUEUE\n\n最小验证：\n• False Escalation：不该找74却打断\n• Missed Escalation：该找74却自主乱做\n\nABSORB：HITL、approval gate、least privilege、sandbox。"},
+    {"id":"e","type":"text","x":760,"y":-220,"width":580,"height":540,"color":"3","text":"# LEARN-E｜真实评价包｜P0\n社会≈60｜我们≈30\n\nNOW：\n1. Constraint Evaluation → 122-L2\n2. Trajectory Evaluation → 122-L3\n3. Human Preference Evaluation → 122-L2\n4. Benchmark Design → 122 Dataset\n5. Long-horizon Evaluation → 122-L3 + F-LONGRUN\n\n最小验证：冻结30–50历史case与真实 ground truth，比较 L1/L2/L3 与单分数/AI自评基线。\n\n这是当前最大的社会知识缺口。"},
+    {"id":"f","type":"text","x":760,"y":460,"width":600,"height":540,"color":"3","text":"# LEARN-F｜可靠生产包｜P0\n传统工程社会≈85–95｜我们≈35\n长程创意 Agent 社会≈40–50\n\nNOW：\n1. Idempotency → F-IDEMPOTENCY\n→ 同工单重复执行2次，无重复副作用\n2. Observability → F-OBSERVABILITY\n→ 任一失败可回答谁/何时/哪步/为什么\n3. Provenance / Lineage → F-PROVENANCE\n→ 任一资产反查输入/模型/参数/工单/版本\n\n成熟软件工程：优先实现，不重新发明。"},
+    {"id":"later","type":"text","x":-520,"y":1040,"width":520,"height":400,"color":"5","text":"# LATER｜8项\n\nConstraint Satisfaction\nRisk-sensitive Decision\nProcess Supervision\nFailure Taxonomy\nRecovery Strategy\nSaga / Compensation\nBackpressure\nSLO / Reliability Budget\n\n升级规则：只有 NOW 实施遇到明确阻塞，才允许升为 NOW。"},
+    {"id":"absorbed","type":"text","x":100,"y":1040,"width":540,"height":420,"color":"5","text":"# ABSORBED / IMPLEMENT｜12项\n\nHITL\nApproval Gate\nLeast Privilege\nSandbox\nTask-success Evaluation\nPairwise Ranking 基础\nState Machine\nCheckpoint\nRetry 基础\nScheduling 基础\nVersioning\nManifest\n\n规则：成熟方案 → 找实现方式 → 接系统 → 测试；不再开理论研究轮次。"},
+    {"id":"stop","type":"text","x":740,"y":1080,"width":500,"height":350,"color":"1","text":"# STOP / ON-DEMAND\n\n剩余低优先知识当前不主动投入。\n例如 Event Sourcing、Circuit Breaker 等不是没价值，而是当前不是主线瓶颈。\n\n出现明确工程故障时，才从 STOP/LATER 拉回。"},
+    {"id":"gate","type":"text","x":-120,"y":1580,"width":700,"height":470,"color":"4","text":"# SOCIAL→US 防重复造轮子 Gate\n\n① 社会成熟度 ≥80 且高度可迁移？\n→ ABSORB，不研究。\n\n② 社会有部分方案，但创意场景不同？\n→ ADAPT。\n\n③ 社会本身仍明显没解决？\n→ 才允许 RESEARCH。\n\n④ 与 C/D/E/F 主线关系弱？\n→ STOP / LATER。\n\n当前学习执行顺序：E → F → C → D。\n这是补社会知识顺序，不等于原创研究价值排序。"}
   ],
   "edges": [
-    {"id":"e1","fromNode":"root","toNode":"c","label":"LEARN C","fromSide":"left","toSide":"right"},
-    {"id":"e2","fromNode":"root","toNode":"d","label":"LEARN D","fromSide":"left","toSide":"right"},
-    {"id":"e3","fromNode":"root","toNode":"e","label":"LEARN E","fromSide":"right","toSide":"left"},
-    {"id":"e4","fromNode":"root","toNode":"f","label":"LEARN F","fromSide":"right","toSide":"left"},
-    {"id":"e5","fromNode":"root","toNode":"priority","label":"PRIORITY","fromSide":"bottom","toSide":"top"}
+    {"id":"e_r1","fromNode":"root","toNode":"r1","label":"R1","fromSide":"top","toSide":"bottom"},
+    {"id":"e_r2","fromNode":"root","toNode":"r2","label":"R2","fromSide":"top","toSide":"bottom"},
+    {"id":"e_r3","fromNode":"root","toNode":"r3","label":"R3","fromSide":"top","toSide":"bottom"},
+    {"id":"e_c","fromNode":"root","toNode":"c","label":"LEARN-C","fromSide":"left","toSide":"right"},
+    {"id":"e_d","fromNode":"root","toNode":"d","label":"LEARN-D","fromSide":"left","toSide":"right"},
+    {"id":"e_e","fromNode":"root","toNode":"e","label":"LEARN-E","fromSide":"right","toSide":"left"},
+    {"id":"e_f","fromNode":"root","toNode":"f","label":"LEARN-F","fromSide":"right","toSide":"left"},
+    {"id":"e_later","fromNode":"c","toNode":"later","label":"DEFER","fromSide":"bottom","toSide":"top"},
+    {"id":"e_abs","fromNode":"e","toNode":"absorbed","label":"IMPLEMENT","fromSide":"bottom","toSide":"top"},
+    {"id":"e_stop","fromNode":"f","toNode":"stop","label":"ON DEMAND","fromSide":"bottom","toSide":"top"},
+    {"id":"e_gate","fromNode":"absorbed","toNode":"gate","label":"CONTROL","fromSide":"bottom","toSide":"top"}
   ],
-  "metadata":{"version":"1.0","role":"SOCIAL_TO_US","score_scale":"0-100","note":"Scores are maturity/mastery estimates, not validated reliability percentages."}
+  "metadata":{"version":"2.0","role":"SOCIAL_TO_US","score_scale":"0-100","research_rounds":"R1-R4 DONE","next_phase":"LEARNING_IMPLEMENTATION","note":"Scores are navigation estimates, not validated reliability percentages."}
 }
