@@ -34,51 +34,41 @@
       "id": "c11",
       "type": "text",
       "x": 720,
-      "y": -400,
-      "width": 620,
-      "height": 640,
+      "y": -500,
+      "width": 660,
+      "height": 700,
       "color": "2",
-      "text": "# 候选 11｜十元创作意图 → 真实创作选择\n\n**核心问题**\n如果先把创作意图写成：\n主次 + 生克补 + 强度 + 动态链，\n是否比“只看画质 / 普通文字要求”更能预测创作者最终：\n\nACCEPT｜收\nREWORK｜改\nREJECT｜扔\n\n来源：674-119 × 674-122\n案例：〈方志敏〉\n\n状态：**CANDIDATE / NOT FROZEN**"
+      "text": "# 候选 11｜结构化创作意图 → 真实创作决策\n\n**核心命题**\n结构化创作意图对真实创作决策具有预测价值。\n\nAI 不只理解“对不对 / 好不好看”，还要理解：\n- Relation｜关系\n- Priority｜优先级\n- Rationale｜理由\n- Dynamic Trace｜动态轨迹\n\n然后提前预测：\nACCEPT｜收\nREWORK｜改\nREJECT｜扔\n\n接口：118 + 119 + 120 + 122\n方法门：112\n\n状态：**重点候选 / NOT FROZEN**"
     },
     {
       "id": "meaning",
       "type": "text",
       "x": 720,
-      "y": 320,
-      "width": 620,
-      "height": 460,
+      "y": 300,
+      "width": 660,
+      "height": 520,
       "color": "5",
-      "text": "# 为什么它不是普通“AI评分”\n\nREJECT ≠ 画得差。\n\n可能画面漂亮、完成度高，但：\n- 创作关系错了\n- 主次错了\n- 情绪方向错了\n- 本该保留的关系消失了\n\n所以真正问题是：\n**创作意图结构能不能解释并提前预测真实选择？**"
+      "text": "# 122｜从“正确”走向“创作者真实选择”\n\n创作评价不能只问：\n- 对不对\n- 像不像\n- 画得好不好\n\n还要问：\n- 是不是我的审美方向\n- 是不是我的创作意图\n- 我会不会真的继续用它\n\nREJECT ≠ 画得差。\n\n候选 11 的推进：\n**结构化创作意图能不能帮助 AI 更准确预测个体创作者的真实审美/创作决策？**"
     },
     {
       "id": "fang",
       "type": "text",
-      "x": 1420,
-      "y": -400,
+      "x": 2140,
+      "y": -520,
       "width": 620,
-      "height": 520,
-      "color": "4",
-      "text": "# 〈方志敏〉第一案例\n\n已有真实创作决策：\n- 监狱压迫\n- 日常暖意\n- 战友情\n- 《清贫》插叙\n- 关系主次\n- 漂亮但方向不对的否决\n\n不是为论文临时造案例。\n\n目标：把早期/事前意图结构化，再去预测后续真实选择。"
+      "height": 500,
+      "color": "6",
+      "text": "# 〈方志敏〉｜开发集 / 内部验证\n\n用途：\n- 设计结构化意图字段\n- 找 failure family\n- 校准预测协议\n- 验证能不能先预测再揭盲\n\n⚠️ 不能承担最终社会有效性证明。\n\n原因：避免“用自己编的理论解释自己的作品”。\n\n状态：DEVELOPMENT / INTERNAL VALIDATION"
     },
     {
       "id": "exp",
       "type": "text",
-      "x": 1420,
-      "y": 200,
+      "x": 2860,
+      "y": -500,
       "width": 620,
-      "height": 660,
+      "height": 650,
       "color": "3",
-      "text": "# 最小实验｜三组对照\n\nA｜只看画面质量\n→ 好不好看 / 技术错误 / 完成度\n\nB｜普通自然语言意图\n→ 如“监狱压迫，但保留人物温度”\n\nC｜十元 / 动态链\n→ 主次 / 生克补 / 强度 / 状态变化\n\n统一预测：\nACCEPT / REWORK / REJECT\n\n最后揭盲真实创作选择。\n\n**只有 C 比 A/B 有稳定增量，才能说十元在这里有额外价值。**"
-    },
-    {
-      "id": "risk",
-      "type": "text",
-      "x": 2140,
-      "y": -120,
-      "width": 560,
-      "height": 520,
-      "color": "6",
-      "text": "# 证据门｜不能作弊\n\n禁止：\n1. 先看最终选择再解释\n2. 挑几个特别顺眼的案例\n3. 同一套样本反复调规则再测试\n4. 用“解释得通”代替“预测得准”\n\n需要：\n- 事前冻结规则\n- 隐藏最终答案\n- 留出案例\n- 最好独立评价\n\n失败也接受：若 C 不优于 B，就说明没证明额外价值。"
+      "text": "# 最小实验升级｜A/B/C/D\n\nA｜Correctness / Quality only\n技术正确、画质、完成度\n\nB｜Aesthetic preference only\n只预测好不好看 / 审美倾向\n\nC｜普通自然语言创作意图\nPrompt / 文字说明\n\nD｜结构化创作意图\nRelation + Priority + Rationale + Dynamic Trace\n+ 必要时十元 / 动态链 / LOCK-FLEX\n\n统一预测：ACCEPT / REWORK / REJECT\n\n**核心检验：D 是否比 A/B/C 有稳定增量？**"
     },
     {
       "id": "register",
@@ -119,6 +109,66 @@
       "height": 640,
       "color": "3",
       "text": "# 候选 12｜可验证切口\n\n可做最小论文版：\n\nA｜普通 AI 创作流程\n聊天 + 文件夹 + 人工记忆\n\nB｜长流程可控协议\nIntent/Constraint + 权限门 + 状态/证据 + Evaluation + Recovery\n\n比较：\n- 意图丢失次数\n- 错误资产使用\n- 人工审核次数\n- 中断恢复成本\n- 返工次数\n- 最终任务完成率\n\n**只有 B 在真实创作任务中稳定改善，才说明协议有额外价值。**"
+    },
+    {
+      "id": "core_dims",
+      "type": "text",
+      "x": 1450,
+      "y": -540,
+      "width": 620,
+      "height": 560,
+      "color": "4",
+      "text": "# 结构化创作意图｜四个核心维度\n\n**Relation｜关系**\n谁增强谁 / 压制谁 / 补偿谁\n\n**Priority｜优先级**\n冲突时保谁、牺牲谁\n\n**Rationale｜理由**\n为什么收 / 改 / 扔\n\n**Dynamic Trace｜动态轨迹**\n意图如何更新、冻结、失效、转向\n\n十元 / 生克补 / 动态链 = 候选关系语法，不预设正确。"
+    },
+    {
+      "id": "interfaces",
+      "type": "text",
+      "x": 1450,
+      "y": 80,
+      "width": 620,
+      "height": 610,
+      "color": "3",
+      "text": "# 118 / 119 / 120 / 122 怎么接\n\n118｜把隐性的个人风格 / 审美判断结构化\n↓\n119｜表示关系、优先级、理由、动态轨迹\n↓\n120｜多个意图冲突时做优先级 + 非目标保持\n↓\n122｜检验 AI 是否更能预测真实 ACCEPT / REWORK / REJECT\n\n这条链的技术意义：\n**Prompt understanding → Structured Creative Intent Understanding**"
+    },
+    {
+      "id": "external_creator",
+      "type": "text",
+      "x": 2140,
+      "y": 60,
+      "width": 620,
+      "height": 650,
+      "color": "1",
+      "text": "# 外部验证硬门｜第二位创作者 + 对方自己的项目\n\n不是让别人评价〈方志敏〉。\n\n要用对方自己的：\n- 创作目标\n- 参考\n- 版本\n- 修改记录\n- 接受 / 否决\n- 最终真实选择\n\n流程：\n结构化意图先冻结\n→ 隐藏后续真实选择\n→ AI 预测 ACCEPT / REWORK / REJECT\n→ 冻结预测\n→ 揭晓创作者真实选择\n→ 和普通画质 / 普通自然语言比较\n\n**跨作者仍有效，才开始接近 USER_VALIDATED_EXTERNAL。**"
+    },
+    {
+      "id": "method112",
+      "type": "text",
+      "x": 2860,
+      "y": 220,
+      "width": 620,
+      "height": 500,
+      "color": "6",
+      "text": "# 112｜反自产自证的方法模板\n\n112 已经要求：\n- 真实材料\n- 受控材料\n- 独立盲标\n- 标注一致性\n- failure family\n- 理论逻辑通过 ≠ 外部实证通过\n\n接到候选 11 后变成：\n自己的项目开发方法 ≠ 外部实证\n解释得通 ≠ 预测得准\n单一作者有效 ≠ 跨作者泛化"
+    },
+    {
+      "id": "social_value",
+      "type": "text",
+      "x": 3580,
+      "y": -260,
+      "width": 660,
+      "height": 760,
+      "color": "5",
+      "text": "# 潜在社会效益｜为什么这题大\n\n**AI进步**\n从理解 Prompt → 理解创作者为什么这样选、什么更重要、意图如何变化。\n\n**人机共创**\nAI 更准确响应创作者，而不是只给平均化“好答案”。\n\n**艺术家保持自我**\n让不同创作者自己的审美与判断被保留，而不是被统一审美覆盖。\n\n**创作者主权**\n哪些意图不可覆盖、哪些决定必须交还创作者。\n\n**文化表达 / 传承 / 再创造**\n不只保留表面符号，还可能保留叙事关系、价值优先级、情感结构与审美判断。\n\n⚠️ 以上是潜在社会效益，必须靠外部验证后再升级主张。"
+    },
+    {
+      "id": "claim",
+      "type": "text",
+      "x": 3580,
+      "y": 580,
+      "width": 660,
+      "height": 360,
+      "color": "2",
+      "text": "# 当前最强论文核\n\n**结构化创作意图对真实创作决策具有预测价值。**\n\n扩展：\n通过表示创作意图中的关系、优先级、理由与动态轨迹，AI 是否能够超越单纯正确性与通用审美评分，更准确预测不同创作者在真实创作过程中的接受、返工与否决？\n\n**仍然只是候选，不冻结题目。**"
     }
   ],
   "edges": [
@@ -138,31 +188,31 @@
       "id": "e2",
       "fromNode": "c11",
       "toNode": "meaning",
-      "label": "为什么值得研究"
+      "label": "122评价层"
     },
     {
       "id": "e3",
       "fromNode": "c11",
       "toNode": "fang",
-      "label": "第一案例"
+      "label": "内部开发"
     },
     {
       "id": "e4",
-      "fromNode": "fang",
+      "fromNode": "external_creator",
       "toNode": "exp",
-      "label": "做实验"
+      "label": "盲测"
     },
     {
       "id": "e5",
       "fromNode": "meaning",
-      "toNode": "exp",
-      "label": "转成验证"
+      "toNode": "interfaces",
+      "label": "评价需求"
     },
     {
       "id": "e6",
-      "fromNode": "exp",
-      "toNode": "risk",
-      "label": "证据门"
+      "fromNode": "interfaces",
+      "toNode": "external_creator",
+      "label": "转成外部验证"
     },
     {
       "id": "e7",
@@ -187,15 +237,52 @@
       "fromNode": "c12_value",
       "toNode": "c12_scope",
       "label": "转成验证"
+    },
+    {
+      "id": "e_dims",
+      "fromNode": "c11",
+      "toNode": "core_dims",
+      "label": "结构化意图"
+    },
+    {
+      "id": "e_interfaces",
+      "fromNode": "core_dims",
+      "toNode": "interfaces",
+      "label": "接入系统"
+    },
+    {
+      "id": "e_external",
+      "fromNode": "fang",
+      "toNode": "external_creator",
+      "label": "跨作者验证"
+    },
+    {
+      "id": "e112",
+      "fromNode": "exp",
+      "toNode": "method112",
+      "label": "证据门"
+    },
+    {
+      "id": "e_social",
+      "fromNode": "method112",
+      "toNode": "social_value",
+      "label": "验证后才能主张"
+    },
+    {
+      "id": "e_claim",
+      "fromNode": "social_value",
+      "toNode": "claim",
+      "label": "论文核"
     }
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "1.2",
     "frontmatter": {
       "type": "paper-candidate-pool",
       "status": "active-not-frozen",
       "date": "2026-10-07",
-      "current_new_candidate": "12"
+      "current_new_candidate": "12",
+      "candidate_11_status": "priority-candidate-not-frozen"
     }
   }
 }
