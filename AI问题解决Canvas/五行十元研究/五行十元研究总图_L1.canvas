@@ -209,6 +209,16 @@
       "height": 700,
       "color": "4",
       "text": "# 传统理论关系网络｜功能而非同义\n\n**宇宙构成层**\n气｜聚散、升降、出入\n↓\n**极性层**\n阴阳｜对立、互补、盛衰\n↓\n**分化/关系层**\n五行｜五类、生克、循环\n↔\n**符号状态层**\n易/八卦｜阴阳线、卦象、变爻\n↔\n**跨域响应层**\n类 / 感应｜同类、同气、相应\n\n后期进入：\n儒家 / 道教 / 中医 / 术数\n\n⚠️ 这是一张现代分析图，不是古代统一标准图。"
+    },
+    {
+      "id": "R5_canvas",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/R5_五行与中国传统理论网络.canvas",
+      "x": 650,
+      "y": -1200,
+      "width": 620,
+      "height": 220,
+      "color": "1"
     }
   ],
   "edges": [
@@ -331,10 +341,16 @@
       "fromNode": "R5",
       "toNode": "R5_network",
       "label": "关系网络"
+    },
+    {
+      "id": "e_R5_canvas",
+      "fromNode": "R5",
+      "toNode": "R5_canvas",
+      "label": "单独关系Canvas"
     }
   ],
   "metadata": {
-    "version": "1.5",
+    "version": "1.6",
     "frontmatter": {
       "type": "wuxing-tenyuan-research-map",
       "status": "active",
