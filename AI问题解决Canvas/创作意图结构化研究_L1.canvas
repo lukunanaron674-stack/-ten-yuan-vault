@@ -8,7 +8,7 @@
       "width": 620,
       "height": 390,
       "color": "2",
-      "text": "# 创作意图结构化研究｜L1\n\n## 三个上位方向中的③深挖\n创作主权 WHY\n→ 审美判断 JUDGE\n→ 创作意图 REPRESENT\n\n## 5轮研究全部完成\nR1 DONE\nR2 DONE\nR3 DONE\nR4 DONE\nR5 DONE\n\n**RESEARCH DESIGN DONE**\n**EMPIRICAL VALIDATION PENDING**"
+      "text": "# 创作意图结构化研究｜L1\n\n## 当前正确模型\n对象 / 概念 / 创作意图\n→ 十元语义映射\n→ 三元独立复核\n→ 十元端点成立\n→ 生克补关系启动\n→ 动态链跨阶段变化\n\nR1–R5 已完成，但 R3–R5 关系层表述已由 v2 纠错覆盖。\n\n**RESEARCH DESIGN DONE / EMPIRICAL VALIDATION PENDING**"
     },
     {
       "id": "routeA",
@@ -78,7 +78,7 @@
       "width": 620,
       "height": 540,
       "color": "2",
-      "text": "# 十元的候选位置\n\n**不是整个 Intent Structure**\n而更可能是：\n## Creative Intent Relation Grammar\n\n生 / 克 / 补\n→ Typed Relation\n\n主 / 次\n→ Priority / Hierarchy\n\n体量 / 强度\n→ Relation Weight\n\n动态链\n→ Temporal Relation Transition\n\n起点→变化→终点\n→ Intent State Transition"
+      "text": "# 十元的正确位置｜v2纠错\n\n十元首先是：\n## Semantic Mapping Model\n\n先把对象/概念映射到十元语义空间：\nX/Z/N/ZN/NZ/XN/NX/ZX/XZ/X并Z\n\n再记录：\n主/次 + T/M/C\n\n三元 x/n/z：\n独立判定 + 比例质感复核\n\n**映射完成后才进入关系。**"
     },
     {
       "id": "notnode",
@@ -88,7 +88,7 @@
       "width": 620,
       "height": 380,
       "color": "6",
-      "text": "# 十元不该替代什么\n\nGoal\nObject\nConstraint\nAttribute\nReference\nStage\nEvidence\n\n这些继续用普通字段。\n\n十元优先研究 **edge / relation / transition**，不要把所有东西硬塞成十元。"
+      "text": "# 映射之后才有关系\n\n两端十元都成立\n+ 同一对象层 / 当前阶段\n+ mechanism\n+ target_variable\n+ direction\n+ 第三因素/反向解释排除\n↓\n才判：\n生 / 克 / 补 / NONE / AMBIGUOUS\n↓\n记录 E 关系作用量"
     },
     {
       "id": "baseline",
@@ -98,7 +98,7 @@
       "width": 620,
       "height": 500,
       "color": "3",
-      "text": "# 真正公平的 Baseline\n\nB0｜Natural Language\nB1｜Attribute / Taxonomy\nB2｜Concept Graph\nB3｜Generic Intent Graph\nGoal + Constraint + Choice\n+ Priority + Rationale + Dynamic Trace\nB4｜Ten-Yuan Relation Graph\nB3 + 生克补 + 主次 + 强度 + 动态链\n\n**真正问题：B4 是否稳定优于 B3？**"
+      "text": "# 公平比较｜纠错后\n\nB3｜Generic Dynamic Intent Representation\n\nVS\n\nB4｜Ten-Yuan Mapping + Relation Model\n\nB4 完整链：\n对象→十元映射→三元复核→端点冻结→生克补启动→动态链\n\n**不是 B3 + 三个关系词。**"
     },
     {
       "id": "r1",
@@ -449,6 +449,16 @@
       "height": 500,
       "color": "1",
       "text": "# 关键纠错｜覆盖 R3–R5\\n\\n**生 / 克 / 补不得脱离十元端点单独评价。**\\n\\n对象A → 十元A\\n对象B → 十元B\\n↓\\n端点组合 + 当前阶段\\n↓\\n机制 / 目标变量 / 方向 / 证据\\n↓\\n生 / 克 / 补 / NONE / AMBIGUOUS\\n\\n公平比较单位：\\n**十元端点 + 关系启动规则 + 动态链**\\nvs\\nGeneric Dynamic Intent Graph"
+    },
+    {
+      "id": "mapping_first_v2",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_关键纠错_v2_十元先映射后关系.md",
+      "x": 3680,
+      "y": 1540,
+      "width": 760,
+      "height": 240,
+      "color": "1"
     }
   ],
   "edges": [
@@ -715,10 +725,16 @@
       "fromNode": "relation_dependency_correction",
       "toNode": "relation_dependency_rule",
       "label": "冻结规则"
+    },
+    {
+      "id": "mapping_first_edge",
+      "fromNode": "root",
+      "toNode": "mapping_first_v2",
+      "label": "v2上位纠错"
     }
   ],
   "metadata": {
-    "version": "1.8",
+    "version": "1.9",
     "frontmatter": {
       "type": "creative-intent-structure-research",
       "status": "open-r1-ready",
@@ -735,7 +751,8 @@
       "research_design": "done",
       "empirical_validation": "pending",
       "teaching_entry": "linked",
-      "relation_dependency_correction": "frozen"
+      "relation_dependency_correction": "frozen",
+      "model_v2": "mapping-first-relations-after"
     }
   }
 }
