@@ -1,12 +1,10 @@
 transaction: domain-narrow-five-element-ten-yuan-habit-20260803
-parent: 07e6b79cf4bc3c62b2f187406bea5e16a3ecb65e
-scope:
-  - 01-十元系统/领域狭义五行十元映射工作习惯协议_v1.0_20260803.md
-  - 07-Codex大脑库/每次任务必读_十元关系防遗忘清单.md
-  - 00-中枢索引/总入口.md
-rule: 每进入一个新领域，先建立该领域的五行对立统一变量与十元狭义映射，再开始案例、素材或项目分类。
-status: completed
-completed_files:
-  - 01-十元系统/领域狭义五行十元映射工作习惯协议_v1.0_20260803.md
-  - 07-Codex大脑库/每次任务必读_十元关系防遗忘清单.md
-  - 00-中枢索引/总入口.md
+status: superseded
+superseded_on: 2026-10-07
+superseded_by:
+  - 01-十元系统/三元十元感受模型_核心正本_v1.0_20261007.md
+  - 01-十元系统/R3A_三元最小感受定义_人类主语_v1.0_20261007.md
+  - 01-十元系统/R3B_旧定义三层迁移正本_v1.0_20261007.md
+legacy_rule: 每进入一个新领域，先建立该领域的五行对立统一变量与十元狭义映射，再开始案例、素材或项目分类。
+current_rule: 先固定刺激、语境与人类感受，再记录十元感受谱；旧领域is-a映射不得自动生成。
+execution: LEGACY_BLOCKED
