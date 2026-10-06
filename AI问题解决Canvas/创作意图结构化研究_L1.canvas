@@ -128,7 +128,7 @@
       "width": 460,
       "height": 320,
       "color": "2",
-      "text": "# R3｜十元映射｜READY\n\n逐项映射：\n十元端点 / 生克补 / 主次 / 体量 / 动态链 / 五维五轴\n\n每项只能判：\nISOMORPHIC\nSPECIALIZATION\nNEW OPERATOR CANDIDATE\nOUT OF SCOPE\n\n禁止硬映射"
+      "text": "# R3｜十元映射｜DONE\n\n结论：\n端点 = Semantic Annotation\n生克补 = Typed Effect Relation\n主次 = Structural Dominance\nT/M/E/C 分离\n动态链 = Relation Transition Candidate\n五轴/五维退出\n\n**DONE**"
     },
     {
       "id": "r4",
@@ -138,7 +138,7 @@
       "width": 460,
       "height": 320,
       "color": "3",
-      "text": "# R4｜GAP 审计\n\n是不是只是换名字？\n是否真多一个操作能力？\n\n只保留 1–3 个可能增量"
+      "text": "# R4｜GAP / 新增性审计｜READY\n\n只审 3 个：\nA 生克补 Typed Effect\nB 主次 + T/E\nC Relation-Type Transition\n\n问题：\n只是换名字？\n还是带来新操作能力？\n\n最终最多保留 1–3 个。"
     },
     {
       "id": "r5",
@@ -259,6 +259,56 @@
       "height": 620,
       "color": "2",
       "text": "# R2 对十元的收缩\n\n十元不再竞争：\n**整个 Creative Intent Structure**\n\n普通 Schema 负责：\nGoal / Object / Constraint / Attribute\nStage / Evidence\n\n十元只竞争：\n**Relation Type**\n**Conflict Priority**\n**Relation Strength**\n**Relation Transition**\n\n因此公平基线必须是：\nGeneric Intent Graph\nvs\nTen-Yuan Relation Graph"
+    },
+    {
+      "id": "r3_result_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_R3_十元逐项映射.md",
+      "x": 730,
+      "y": 1570,
+      "width": 520,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "r3_corrections",
+      "type": "text",
+      "x": 1280,
+      "y": 2280,
+      "width": 700,
+      "height": 650,
+      "color": "2",
+      "text": "# R3 DONE｜三个关键修正\n\n1｜主次 ≠ decision priority\n主次 = compositional dominance\n冲突保谁仍需独立 priority / LOCK-FLEX\n\n2｜T / M / E / C 必须分开\nT = 结构占位\nM = 阶段显影\nE = 关系作用量\nC = 证据置信度\n\n3｜十元端点 ≠ Intent Node Type\n十元 = semantic annotation layer"
+    },
+    {
+      "id": "r3_layer",
+      "type": "text",
+      "x": 2050,
+      "y": 2250,
+      "width": 720,
+      "height": 700,
+      "color": "3",
+      "text": "# Ten-Yuan Intent Relation Layer v0.1\n\n挂在 Generic Intent Graph 上，而不是替代它。\n\nNode Annotation\n- ten_yuan_semantic\n- primary / secondary\n- T structural occupancy\n- M stage salience\n- C confidence\n\nTyped Edge\n- 生 / 克 / 补\n- mechanism\n- target_variable\n- E effect magnitude\n\nTemporal Relation\n- continue / reverse / fade / shift\n- new endpoint"
+    },
+    {
+      "id": "r3_outscope",
+      "type": "text",
+      "x": 2850,
+      "y": 2290,
+      "width": 620,
+      "height": 560,
+      "color": "6",
+      "text": "# R3｜退出当前论文核心\n\n**五轴 → OUT OF SCOPE**\n高阶十元语义空间 / 五行结构层\n\n**五维 → OUT OF SCOPE**\nNarrative / Theme Layer\n时间 / 本体 / 空间 / 因果 / 命运\n\n不代表没价值；\n只是当前“创作意图关系结构”论文不需要它们。"
+    },
+    {
+      "id": "r3_candidate",
+      "type": "text",
+      "x": 2050,
+      "y": 3060,
+      "width": 720,
+      "height": 500,
+      "color": "1",
+      "text": "# 当前唯一 NEW OPERATOR CANDIDATE\n\n## 动态链中的 Relation-Type Transition\n\n不是普通 State0→State1。\n而是：\nRelation0\n→ continue / reverse / fade / shift\n→ Relation1\n\n例如：\n克 → 补 → 反克\n\nR4 必须检查：\n现有 creative intent graph 是否已经有同类第一等操作。"
     }
   ],
   "edges": [
@@ -405,10 +455,40 @@
       "fromNode": "r2_schema",
       "toNode": "r2_ten_scope",
       "label": "十元收缩"
+    },
+    {
+      "id": "r3file",
+      "fromNode": "r3",
+      "toNode": "r3_result_file",
+      "label": "R3 正本"
+    },
+    {
+      "id": "r3corr",
+      "fromNode": "r3_result_file",
+      "toNode": "r3_corrections",
+      "label": "映射修正"
+    },
+    {
+      "id": "r3layer",
+      "fromNode": "r3_corrections",
+      "toNode": "r3_layer",
+      "label": "关系层 v0.1"
+    },
+    {
+      "id": "r3out",
+      "fromNode": "r3_layer",
+      "toNode": "r3_outscope",
+      "label": "范围收缩"
+    },
+    {
+      "id": "r3cand",
+      "fromNode": "r3_layer",
+      "toNode": "r3_candidate",
+      "label": "唯一新操作候选"
     }
   ],
   "metadata": {
-    "version": "1.3",
+    "version": "1.4",
     "frontmatter": {
       "type": "creative-intent-structure-research",
       "status": "open-r1-ready",
@@ -417,7 +497,9 @@
       "three_directions_context": "linked",
       "r1": "done",
       "r2": "done",
-      "r3": "ready"
+      "r3": "done",
+      "r4": "ready",
+      "ten_yuan_intent_layer": "v0.1"
     }
   }
 }
