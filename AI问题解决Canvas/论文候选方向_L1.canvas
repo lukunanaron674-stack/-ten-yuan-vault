@@ -179,6 +179,56 @@
       "width": 620,
       "height": 240,
       "color": "4"
+    },
+    {
+      "id": "three_dir_r1",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文三方向_R1_边界收束.md",
+      "x": -760,
+      "y": 1260,
+      "width": 560,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "dir1_sovereignty",
+      "type": "text",
+      "x": -760,
+      "y": 1540,
+      "width": 560,
+      "height": 420,
+      "color": "2",
+      "text": "# 方向 1｜创作主权 / 个性\n\n**WHY**\nAI 无限生产力下，创作者如何保持：\n- 个人风格\n- 审美判断\n- 创作意志\n- 最终决定权\n\n母题最大，但本科论文必须缩小。"
+    },
+    {
+      "id": "dir2_aesthetic",
+      "type": "text",
+      "x": -120,
+      "y": 1540,
+      "width": 560,
+      "height": 430,
+      "color": "4",
+      "text": "# 方向 2｜审美判断 / 最终否决权\n\n**JUDGE**\nL1 技术正确\n→ L2 约束保持\n→ L3 意图符合\n→ L4 创作者最终决策\n\n核心：\n**前三层都过，为什么最后仍 REJECT？**"
+    },
+    {
+      "id": "dir3_intent",
+      "type": "text",
+      "x": 520,
+      "y": 2020,
+      "width": 620,
+      "height": 470,
+      "color": "3",
+      "text": "# 方向 3｜创作意图 / 灵感架构\n\n**REPRESENT**\nGoal / Relation / Priority / Constraint\nRationale / Dynamic Trace\n\n核心：\n怎样把“我为什么这样创作”变成 AI 能持续理解与执行的结构？\n\n十元 / 动态链 = 候选关系语法，不预设正确。"
+    },
+    {
+      "id": "dir_f_bg",
+      "type": "text",
+      "x": 1220,
+      "y": 2020,
+      "width": 560,
+      "height": 400,
+      "color": "6",
+      "text": "# F｜长流程可靠生产\n\n**PRODUCTION BACKGROUND**\n不是当前三方向之一。\n\n作用：\n- AI 高产/批量时代背景\n- 长流程实验环境\n- 作品集/就业支撑\n- 验证意图是否真的能被持续保持"
     }
   ],
   "edges": [
@@ -289,16 +339,47 @@
       "fromNode": "c11",
       "toNode": "wuxing_lit",
       "label": "五行来源与批判研究"
+    },
+    {
+      "id": "e_three_r1",
+      "fromNode": "root",
+      "toNode": "three_dir_r1",
+      "label": "R1 三方向边界"
+    },
+    {
+      "id": "e_d1",
+      "fromNode": "three_dir_r1",
+      "toNode": "dir1_sovereignty",
+      "label": "1｜WHY"
+    },
+    {
+      "id": "e_d2",
+      "fromNode": "dir1_sovereignty",
+      "toNode": "dir2_aesthetic",
+      "label": "2｜JUDGE"
+    },
+    {
+      "id": "e_d3",
+      "fromNode": "dir2_aesthetic",
+      "toNode": "dir3_intent",
+      "label": "3｜REPRESENT"
+    },
+    {
+      "id": "e_df",
+      "fromNode": "dir3_intent",
+      "toNode": "dir_f_bg",
+      "label": "进入长期生产验证"
     }
   ],
   "metadata": {
-    "version": "1.3",
+    "version": "1.4",
     "frontmatter": {
       "type": "paper-candidate-pool",
       "status": "active-not-frozen",
       "date": "2026-10-07",
       "current_new_candidate": "12",
-      "candidate_11_status": "priority-candidate-not-frozen"
+      "candidate_11_status": "priority-candidate-not-frozen",
+      "three_direction_r1": "done"
     }
   }
 }
