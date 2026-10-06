@@ -169,6 +169,16 @@
       "height": 360,
       "color": "2",
       "text": "# 当前最强论文核\n\n**结构化创作意图对真实创作决策具有预测价值。**\n\n扩展：\n通过表示创作意图中的关系、优先级、理由与动态轨迹，AI 是否能够超越单纯正确性与通用审美评分，更准确预测不同创作者在真实创作过程中的接受、返工与否决？\n\n**仍然只是候选，不冻结题目。**"
+    },
+    {
+      "id": "wuxing_lit",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文候选11_五行文献研究路线.md",
+      "x": 2860,
+      "y": 820,
+      "width": 620,
+      "height": 240,
+      "color": "4"
     }
   ],
   "edges": [
@@ -273,10 +283,16 @@
       "fromNode": "social_value",
       "toNode": "claim",
       "label": "论文核"
+    },
+    {
+      "id": "e_wuxing_lit",
+      "fromNode": "c11",
+      "toNode": "wuxing_lit",
+      "label": "五行来源与批判研究"
     }
   ],
   "metadata": {
-    "version": "1.2",
+    "version": "1.3",
     "frontmatter": {
       "type": "paper-candidate-pool",
       "status": "active-not-frozen",
