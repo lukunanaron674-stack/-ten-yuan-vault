@@ -138,7 +138,7 @@
       "width": 460,
       "height": 320,
       "color": "3",
-      "text": "# R4｜GAP / 新增性审计｜READY\n\n只审 3 个：\nA 生克补 Typed Effect\nB 主次 + T/E\nC Relation-Type Transition\n\n问题：\n只是换名字？\n还是带来新操作能力？\n\n最终最多保留 1–3 个。"
+      "text": "# R4｜GAP / 新增性审计｜DONE\n\nA 生克补 → SPECIALIZATION ONLY\nB 主次+T/E → IMPLEMENTATION VALUE\nC Relation Transition → DOMAIN GAP CANDIDATE\n\n唯一保留：\nDecision-Grounded Dynamic Intent Relation\n\n**DONE**"
     },
     {
       "id": "r5",
@@ -148,7 +148,7 @@
       "width": 480,
       "height": 340,
       "color": "1",
-      "text": "# R5｜验证设计\n\nB0–B4 对照\n\n预测：\nACCEPT / REWORK / REJECT\n优先级\n多轮保持\n跨阶段恢复\n\nB4≈B3 → 十元无增量\nB4>B3 → 才能主张关系语法价值"
+      "text": "# R5｜验证设计｜READY\n\nB0 Natural Language\nB1 Attribute\nB2 Static Concept Graph\nB3 Generic Dynamic Intent Graph\nB4 Ten-Yuan Dynamic Relation Layer\n\n验证：\nACCEPT / REWORK / REJECT\n约束保留/牺牲\nrelation transition\n跨项目泛化\n\n**唯一问题：B4 是否仍优于强 B3？**"
     },
     {
       "id": "routefile",
@@ -309,6 +309,56 @@
       "height": 500,
       "color": "1",
       "text": "# 当前唯一 NEW OPERATOR CANDIDATE\n\n## 动态链中的 Relation-Type Transition\n\n不是普通 State0→State1。\n而是：\nRelation0\n→ continue / reverse / fade / shift\n→ Relation1\n\n例如：\n克 → 补 → 反克\n\nR4 必须检查：\n现有 creative intent graph 是否已经有同类第一等操作。"
+    },
+    {
+      "id": "r4_result_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_R4_GAP新增性审计.md",
+      "x": 1270,
+      "y": 1570,
+      "width": 520,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "r4_kill",
+      "type": "text",
+      "x": 2840,
+      "y": 3060,
+      "width": 700,
+      "height": 600,
+      "color": "1",
+      "text": "# R4｜三个“基础原创”主张全部砍掉\n\nA 生克补\n≠ 新 relation primitive\n→ SOCIAL / CAUSAL GRAPH 已有\n\nB 主次 + T/E\n≠ 新 priority / weight\n→ hierarchy / AHP / effect weight 已有\n\nC 动态链\n≠ 新 temporal graph\n→ temporal KG / time cognitive map 已有\n\n**十元不能从图结构本身主张基础创新。**"
+    },
+    {
+      "id": "r4_keep",
+      "type": "text",
+      "x": 3600,
+      "y": 3060,
+      "width": 760,
+      "height": 650,
+      "color": "4",
+      "text": "# R4｜唯一保留候选\n\n## Decision-Grounded Dynamic Intent Relation\n\n不是“关系会变化”本身。\n而是：\n\nCreative Intent A/B 的 relation semantics\nsupport / conflict / compensate / preserve ...\n在真实创作轮次中如何转型\n↓\n是否能预测真实：\n**ACCEPT / REWORK / REJECT**\n\n状态：DOMAIN GAP CANDIDATE"
+    },
+    {
+      "id": "r4_bridge",
+      "type": "text",
+      "x": 3600,
+      "y": 3820,
+      "width": 760,
+      "height": 520,
+      "color": "2",
+      "text": "# 方向 3 × 方向 2 接口\n\n③ REPRESENT\n动态意图关系结构\n↓\n冻结预测\n↓\n② JUDGE\n真实创作者决策\nACCEPT / REWORK / REJECT\n↓\nEvidence Delta\n\n**表示是否有用，必须交给真实决策验证。**"
+    },
+    {
+      "id": "r4_tenrole",
+      "type": "text",
+      "x": 4460,
+      "y": 3060,
+      "width": 700,
+      "height": 610,
+      "color": "6",
+      "text": "# 十元最终身份｜R4\n\n不是方法本体。\n而是：\n## Candidate Relation Coding Scheme\n\nB3｜Generic Dynamic Intent Graph\nvs\nB4｜Ten-Yuan Dynamic Relation Layer\n\n若 B4≈B3：\n十元无额外预测价值。\n\n若 B4>B3：\n才保留为有增量的关系编码。"
     }
   ],
   "edges": [
@@ -485,10 +535,40 @@
       "fromNode": "r3_layer",
       "toNode": "r3_candidate",
       "label": "唯一新操作候选"
+    },
+    {
+      "id": "r4file",
+      "fromNode": "r4",
+      "toNode": "r4_result_file",
+      "label": "R4 正本"
+    },
+    {
+      "id": "r4kill",
+      "fromNode": "r4_result_file",
+      "toNode": "r4_kill",
+      "label": "新增性审计"
+    },
+    {
+      "id": "r4keep",
+      "fromNode": "r4_kill",
+      "toNode": "r4_keep",
+      "label": "仅保留领域候选"
+    },
+    {
+      "id": "r4bridge",
+      "fromNode": "r4_keep",
+      "toNode": "r4_bridge",
+      "label": "接真实判断"
+    },
+    {
+      "id": "r4tenrole",
+      "fromNode": "r4_keep",
+      "toNode": "r4_tenrole",
+      "label": "十元降级为编码方案"
     }
   ],
   "metadata": {
-    "version": "1.4",
+    "version": "1.5",
     "frontmatter": {
       "type": "creative-intent-structure-research",
       "status": "open-r1-ready",
@@ -498,8 +578,10 @@
       "r1": "done",
       "r2": "done",
       "r3": "done",
-      "r4": "ready",
-      "ten_yuan_intent_layer": "v0.1"
+      "r4": "done",
+      "ten_yuan_intent_layer": "v0.1",
+      "r5": "ready",
+      "remaining_candidate": "decision-grounded-dynamic-intent-relation"
     }
   }
 }
