@@ -89,6 +89,36 @@
       "width": 620,
       "height": 220,
       "color": "1"
+    },
+    {
+      "id": "c12",
+      "type": "text",
+      "x": 720,
+      "y": 1260,
+      "width": 650,
+      "height": 600,
+      "color": "4",
+      "text": "# 候选 12｜F 长流程可靠生产 → 可控 AI 创作生产协议\n\n**核心问题**\n能否构建一套面向独立创作者与小型创作团队的长流程 AI 创作生产协议，使：\n\n- 创作者意图可持续保持\n- AI 自动化权限可控\n- 结果可评价\n- 失败可恢复\n- 资产与状态可追踪\n\n核心链：\nIntent / Constraint\n→ Agency / Escalation\n→ Evaluation\n→ Recovery / Production\n\n来源：674-123 × 674-278\n\n状态：**CANDIDATE / NOT FROZEN**"
+    },
+    {
+      "id": "c12_value",
+      "type": "text",
+      "x": 1440,
+      "y": 1180,
+      "width": 650,
+      "height": 650,
+      "color": "5",
+      "text": "# 候选 12｜研究价值\n\n不是研究“AI 能不能自动生产”，而是研究：\n\n**怎样让一整套长流程 AI 创作在持续自动推进时，仍然保持创作者意图与控制权。**\n\n重点：\n1. 创作意图如何变成可执行约束\n2. 哪些步骤自动、哪些必须交人\n3. 如何判断结果是否真的符合意图\n4. 中断/失败后如何恢复而不丢状态\n5. 小团队如何低成本复用\n\n边界：\n不宣称发明 Agent / HITL / Workflow；\n研究的是面向创作领域的整合、操作化与验证。"
+    },
+    {
+      "id": "c12_scope",
+      "type": "text",
+      "x": 2160,
+      "y": 1180,
+      "width": 620,
+      "height": 640,
+      "color": "3",
+      "text": "# 候选 12｜可验证切口\n\n可做最小论文版：\n\nA｜普通 AI 创作流程\n聊天 + 文件夹 + 人工记忆\n\nB｜长流程可控协议\nIntent/Constraint + 权限门 + 状态/证据 + Evaluation + Recovery\n\n比较：\n- 意图丢失次数\n- 错误资产使用\n- 人工审核次数\n- 中断恢复成本\n- 返工次数\n- 最终任务完成率\n\n**只有 B 在真实创作任务中稳定改善，才说明协议有额外价值。**"
     }
   ],
   "edges": [
@@ -139,6 +169,24 @@
       "fromNode": "c11",
       "toNode": "register",
       "label": "详细登记"
+    },
+    {
+      "id": "e12",
+      "fromNode": "root",
+      "toNode": "c12",
+      "label": "新增候选"
+    },
+    {
+      "id": "e12v",
+      "fromNode": "c12",
+      "toNode": "c12_value",
+      "label": "研究价值"
+    },
+    {
+      "id": "e12s",
+      "fromNode": "c12_value",
+      "toNode": "c12_scope",
+      "label": "转成验证"
     }
   ],
   "metadata": {
@@ -147,7 +195,7 @@
       "type": "paper-candidate-pool",
       "status": "active-not-frozen",
       "date": "2026-10-07",
-      "current_new_candidate": "11"
+      "current_new_candidate": "12"
     }
   }
 }
