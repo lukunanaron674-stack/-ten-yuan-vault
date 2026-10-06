@@ -1412,6 +1412,26 @@
       "height": 1250,
       "color": "4",
       "text": "# R4｜父Z汇总 + blocker边界 + 三案例压力测试\n\n父Z禁止简单平均。\n\n固定汇总：\n1. REQUIRED_COMPONENT 门\n2. DEPENDS_ON 门\n3. evidence / verified 门\n4. blocker 影响范围\n5. 状态向量 rollup\n\n父Z未全验证前，不给单一 verified trust；记录：\nrequired_verified_min / unresolved_required_count / critical_blocker_count / unresolved_nx_count / path_verified_ratio / calibration_gap_max。\n\n压力测试：\nA 自动化生图 → 架构PASS，现实能力PARTIAL\nB H04头像稳定 → local VERIFIED，父Z PARTIAL_VERIFIED\nC H3 10–11s → 短块PARTIAL，跨seed/跨角色/LongTake仍未全验\n\n结论：Z-of-Z ARCHITECTURE_PASS；现实系统仍不可宣称全部 VERIFIED。"
+    },
+    {
+      "id": "xn_efficiency_277",
+      "type": "text",
+      "x": 16800,
+      "y": 2300,
+      "width": 1700,
+      "height": 980,
+      "color": "2",
+      "text": "# XN-EFFICIENCY｜规则有效性与Token经济性\n\n规则不是越多越好。\n\n每条XN增加：\neffect_size / token_cost / scope / load_mode / redundancy / conflict_risk / keep_value\n\n三级加载：\n1. CORE_XN｜高影响、短写、常驻\n2. LOCAL_XN｜只在对应Z激活时加载\n3. EVIDENCE/HISTORY｜追溯时再读\n\n硬规则：\n- 低作用 + 高频读取 + 高重复 → 合并/下沉/删除\n- 大Z只读子Z摘要、关键blocker、verified结果\n- 进入小Z才加载local XN全文\n- 同义规则只保留一个canonical表达\n- 新XN若不改变判断/执行/权限/验证，不能升级为XN\n\n目标：避免规则垃圾场与token浪费。"
+    },
+    {
+      "id": "avatar_human_nx_280",
+      "type": "text",
+      "x": 16800,
+      "y": 3500,
+      "width": 1700,
+      "height": 1100,
+      "color": "3",
+      "text": "# 674-280｜头像 Human-in-NX 校准实验\n\n让人参与的不是“写长规则”，而是给最小反馈信号：\nACCEPT / FAVORITE / REJECT / RERUN / AMBIGUOUS\n\n可选只补一句：最不对的是哪里？\n脸型 / 五官比例 / 年龄感 / 神态 / 发型 / 头饰 / 轮廓 / 其他 / 说不清\n\n流程：\n头像样本 → 74快速判断 → 保留NX → 多样本重复 → AI提出候选XN → 74确认 → 再验证\n\n重点NX：\n- 同一角色感由哪些锚共同决定？\n- “像但没味道” vs “身份漂移”是否两类问题？\n- 哪些能机械审核，哪些必须USER_REVIEW？\n- 几次重复反馈才值得固化规则？\n\n目标：把人类参与压到低token、高信息量，而不是永久人工长评审。"
     }
   ],
   "edges": [
@@ -2568,10 +2588,46 @@
       "toSide": "bottom",
       "color": "4",
       "label": "ARCHITECTURE_PASS"
+    },
+    {
+      "id": "e_efficiency_xnset_277",
+      "fromNode": "xn_set_277",
+      "fromSide": "right",
+      "toNode": "xn_efficiency_277",
+      "toSide": "left",
+      "color": "2",
+      "label": "规则经济性"
+    },
+    {
+      "id": "e_efficiency_corez_277",
+      "fromNode": "xn_efficiency_277",
+      "fromSide": "left",
+      "toNode": "core_z_277",
+      "toSide": "right",
+      "color": "2",
+      "label": "按需加载"
+    },
+    {
+      "id": "e_avatar_nx_from_nxgaps_280",
+      "fromNode": "nx_gaps_277",
+      "fromSide": "right",
+      "toNode": "avatar_human_nx_280",
+      "toSide": "left",
+      "color": "3",
+      "label": "Human-in-NX 实例"
+    },
+    {
+      "id": "e_avatar_nx_efficiency_280",
+      "fromNode": "xn_efficiency_277",
+      "fromSide": "bottom",
+      "toNode": "avatar_human_nx_280",
+      "toSide": "top",
+      "color": "3",
+      "label": "低token反馈"
     }
   ],
   "metadata": {
-    "version": "1.5-2026-10-06-z-of-z-r4-rollup-frozen",
+    "version": "1.6-2026-10-06-xn-efficiency-human-nx-avatar",
     "frontmatter": {}
   }
 }
