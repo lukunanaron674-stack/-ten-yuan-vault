@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 700,
+      "height": 430,
+      "color": "2",
+      "text": "# 论文方向3 v2｜十元映射模型研究\n\n**旧 R3–R5 作废后重启**\n\n核心顺序：\n对象/概念\n→ 十元映射\n→ 三元复核\n→ 端点成立\n→ 生克补关系启动\n→ 动态链\n\n4轮：R1→R2→R3→R4"
+    },
+    {
+      "id": "map",
+      "type": "text",
+      "x": -900,
+      "y": 620,
+      "width": 680,
+      "height": 520,
+      "color": "3",
+      "text": "# R1｜十元是什么｜DONE\n\n## Ten-Yuan Semantic Mapping Model\n\n不是单标签分类。\n而是：\n对象 → 十元空间里的多位置强度分布\n\n主/次 + T/M/C\n三元独立复核\n五组相反端\n\n**mapping first**"
+    },
+    {
+      "id": "tri",
+      "type": "text",
+      "x": -100,
+      "y": 620,
+      "width": 650,
+      "height": 500,
+      "color": "4",
+      "text": "# 三元的位置\n\nx / n / z\n\n不是：\n三元 → 生成十元\n\n而是：\n十元独立判定\n↕\n三元独立判定\n→ 比例 / 质地 / 侧重复核\n\n**不是父子派生。**"
+    },
+    {
+      "id": "relation",
+      "type": "text",
+      "x": 680,
+      "y": 620,
+      "width": 700,
+      "height": 520,
+      "color": "1",
+      "text": "# 映射后才有关系\n\n对象A → 十元A\n对象B → 十元B\n↓\n端点都成立\n↓\n对象层 / 阶段 / mechanism / target variable\n↓\n生 / 克 / 补 / NONE / AMBIGUOUS\n↓\nE作用量\n↓\n动态链\n\n**关系不能脱离映射。**"
+    },
+    {
+      "id": "social",
+      "type": "text",
+      "x": -900,
+      "y": 1300,
+      "width": 680,
+      "height": 650,
+      "color": "5",
+      "text": "# R2｜社会公平邻居｜READY\n\nA Conceptual Spaces\n对象 → 概念空间位置\n\nB Semantic Differential\n对象 → 固定双极维度 profile\n\nC Ontology\n对象 → 类 / 属性 / 关系\n\nD Qualitative Coding\n现实材料 → 预定义代码\n\nR2 要判：\n**十元真正最像哪一类？**"
+    },
+    {
+      "id": "r3",
+      "type": "text",
+      "x": -100,
+      "y": 1300,
+      "width": 650,
+      "height": 650,
+      "color": "4",
+      "text": "# R3｜差异与有效性｜WAIT\n\n找到公平社会母类后再比较：\n\n十元的10位置\n五组相反端\n强度分布\n三元复核\n端点关系系统\n动态重映射\n\n哪些已有？\n哪些只是命名不同？\n哪些值得验证？"
+    },
+    {
+      "id": "r4",
+      "type": "text",
+      "x": 680,
+      "y": 1300,
+      "width": 700,
+      "height": 650,
+      "color": "3",
+      "text": "# R4｜论文/实验重建｜WAIT\n\n只在 R2/R3 完成后重建实验。\n\n验证对象：\n**完整映射模型**\n而不是单独生克补。\n\n674-285 目前只做 DATA PREP。"
+    },
+    {
+      "id": "file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文方向3_v2_十元映射模型_R1_本体重建.md",
+      "x": 0,
+      "y": 2120,
+      "width": 700,
+      "height": 220,
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "map",
+      "label": "R1"
+    },
+    {
+      "id": "e2",
+      "fromNode": "map",
+      "toNode": "tri",
+      "label": "三元复核"
+    },
+    {
+      "id": "e3",
+      "fromNode": "tri",
+      "toNode": "relation",
+      "label": "映射完成"
+    },
+    {
+      "id": "e4",
+      "fromNode": "map",
+      "toNode": "social",
+      "label": "R2"
+    },
+    {
+      "id": "e5",
+      "fromNode": "social",
+      "toNode": "r3",
+      "label": "R3"
+    },
+    {
+      "id": "e6",
+      "fromNode": "r3",
+      "toNode": "r4",
+      "label": "R4"
+    },
+    {
+      "id": "e7",
+      "fromNode": "r4",
+      "toNode": "file",
+      "label": "研究正本"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {
+      "type": "paper-direction3-tenyuan-mapping-model-v2",
+      "status": "r1-done-r2-ready",
+      "rounds": 4
+    }
+  }
+}
