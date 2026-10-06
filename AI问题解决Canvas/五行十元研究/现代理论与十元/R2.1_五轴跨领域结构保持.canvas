@@ -129,6 +129,16 @@
       "height": 470,
       "color": "1",
       "text": "# 下一步 R3 要改成这样测\n\n不先测“十元标签跨域准不准”。\n\n先测：\n**五轴变量跨域能否稳定识别。**\n\n五组正轴 + 最近邻负轴：\n木 / 火 / 土 / 金 / 水\n\n每个领域都做：\n- 正样本\n- 反向端样本\n- 最近邻混淆\n- 表面词诱饵\n- 隐去领域词后的盲判\n\n通过后再往十元单端、生克补和动态链下钻。"
+    },
+    {
+      "id": "aesthetic_branch",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/十元审美构成研究/十元审美构成研究_L1.canvas",
+      "x": 3800,
+      "y": -450,
+      "width": 720,
+      "height": 240,
+      "color": "1"
     }
   ],
   "edges": [
@@ -233,16 +243,23 @@
       "fromNode": "correction",
       "toNode": "next",
       "label": "进入R3"
+    },
+    {
+      "id": "e_aesthetic_branch",
+      "fromNode": "next",
+      "toNode": "aesthetic_branch",
+      "label": "新分支｜结构保持 → 审美构成"
     }
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "1.1",
     "frontmatter": {
       "type": "five-axis-cross-domain-structure-preservation",
       "status": "REGISTERED",
       "parent": "modern-theory-tenyuan-R2",
       "linked_problem": "Q-AXIS-001.1",
-      "date": "2026-10-07"
+      "date": "2026-10-07",
+      "aesthetic_composition_branch": "OPEN"
     }
   }
 }
