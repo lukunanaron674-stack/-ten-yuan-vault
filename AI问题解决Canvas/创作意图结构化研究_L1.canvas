@@ -8,7 +8,7 @@
       "width": 620,
       "height": 390,
       "color": "2",
-      "text": "# 创作意图结构化研究｜L1\n\n## 核心问题\n1. 别人怎么把创作意图结构化？\n2. 十元到底补在哪一层？\n3. 十元是否比普通 Intent Graph 有增量？\n\n**5 轮研究**\nR1→R2→R3→R4→R5\n\n状态：OPEN / R1 READY"
+      "text": "# 创作意图结构化研究｜L1\n\n## 三个上位方向中的③深挖\n创作主权 WHY\n→ 审美判断 JUDGE\n→ 创作意图 REPRESENT\n\n## 5轮研究全部完成\nR1 DONE\nR2 DONE\nR3 DONE\nR4 DONE\nR5 DONE\n\n**RESEARCH DESIGN DONE**\n**EMPIRICAL VALIDATION PENDING**"
     },
     {
       "id": "routeA",
@@ -148,7 +148,7 @@
       "width": 480,
       "height": 340,
       "color": "1",
-      "text": "# R5｜验证设计｜READY\n\nB0 Natural Language\nB1 Attribute\nB2 Static Concept Graph\nB3 Generic Dynamic Intent Graph\nB4 Ten-Yuan Dynamic Relation Layer\n\n验证：\nACCEPT / REWORK / REJECT\n约束保留/牺牲\nrelation transition\n跨项目泛化\n\n**唯一问题：B4 是否仍优于强 B3？**"
+      "text": "# R5｜验证设计｜DONE\n\nB0–B4 已冻结\n核心：B4 vs 强 B3\n\n先预测 → 冻结 → 揭盲\n真实标签：\nACCEPT / REWORK / REJECT\nPreserve / Sacrifice\nRelation Transition\n\n**DONE**"
     },
     {
       "id": "routefile",
@@ -359,6 +359,56 @@
       "height": 610,
       "color": "6",
       "text": "# 十元最终身份｜R4\n\n不是方法本体。\n而是：\n## Candidate Relation Coding Scheme\n\nB3｜Generic Dynamic Intent Graph\nvs\nB4｜Ten-Yuan Dynamic Relation Layer\n\n若 B4≈B3：\n十元无额外预测价值。\n\n若 B4>B3：\n才保留为有增量的关系编码。"
+    },
+    {
+      "id": "r5_result_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_R5_B0-B4对照验证设计.md",
+      "x": 1810,
+      "y": 1570,
+      "width": 540,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "r5_design",
+      "type": "text",
+      "x": 4450,
+      "y": 3820,
+      "width": 760,
+      "height": 700,
+      "color": "1",
+      "text": "# R5 DONE｜B0–B4 生死实验\n\nB0 Natural Language\nB1 Attribute Structure\nB2 Static Concept Graph\nB3 Generic Dynamic Intent Graph\nB4 Ten-Yuan Dynamic Relation Layer\n\n核心比较：\n**B4 vs B3**\n\n任务：\nACCEPT / REWORK / REJECT\nPreserve / Sacrifice\nModification Target\nRelation Transition\n\n原则：先预测 → 冻结 → 再揭盲"
+    },
+    {
+      "id": "r5_data",
+      "type": "text",
+      "x": 5290,
+      "y": 3820,
+      "width": 680,
+      "height": 660,
+      "color": "4",
+      "text": "# 数据三层\n\nPhase A｜内部开发\n30–50 case\n方志敏 / 黎黎隆 / 审核历史\n\nPhase B｜内部留出\n10–20 case\n规则冻结后揭盲\n\nPhase C｜外部创作者\n1位以上 + 对方自己的项目\n10–20 case\n\n只有跨作者仍成立，才接近 External Validation。"
+    },
+    {
+      "id": "r5_stop",
+      "type": "text",
+      "x": 4450,
+      "y": 4600,
+      "width": 760,
+      "height": 610,
+      "color": "6",
+      "text": "# STOP｜怎样杀死十元\n\nB4≈B3\n或\n只在开发集提升\n或\n必须事后改规则\n或\n复杂度增加但预测不增\n或\n跨作者失效\n\n→ 结论：\n**十元关系编码没有稳定额外增量。**\n\n这仍然是有效论文结果。"
+    },
+    {
+      "id": "r5_end",
+      "type": "text",
+      "x": 5290,
+      "y": 4600,
+      "width": 680,
+      "height": 610,
+      "color": "3",
+      "text": "# 5轮研究完成\n\nR1 DONE\nR2 DONE\nR3 DONE\nR4 DONE\nR5 DONE\n\n状态：\n## RESEARCH DESIGN DONE\n## EMPIRICAL VALIDATION PENDING\n\n不再开 R6。\n下一步只有：\n**抽真实 case → t0/t1 遮蔽 → B0–B4 盲测。**"
     }
   ],
   "edges": [
@@ -565,10 +615,46 @@
       "fromNode": "r4_keep",
       "toNode": "r4_tenrole",
       "label": "十元降级为编码方案"
+    },
+    {
+      "id": "r5file",
+      "fromNode": "r5",
+      "toNode": "r5_result_file",
+      "label": "R5 正本"
+    },
+    {
+      "id": "r5design",
+      "fromNode": "r5_result_file",
+      "toNode": "r5_design",
+      "label": "验证协议"
+    },
+    {
+      "id": "r5data",
+      "fromNode": "r5_design",
+      "toNode": "r5_data",
+      "label": "数据层"
+    },
+    {
+      "id": "r5stop",
+      "fromNode": "r5_design",
+      "toNode": "r5_stop",
+      "label": "STOP 门"
+    },
+    {
+      "id": "r5end",
+      "fromNode": "r5_data",
+      "toNode": "r5_end",
+      "label": "研究收束"
+    },
+    {
+      "id": "r5end2",
+      "fromNode": "r5_stop",
+      "toNode": "r5_end",
+      "label": "结果都可收束"
     }
   ],
   "metadata": {
-    "version": "1.5",
+    "version": "1.6",
     "frontmatter": {
       "type": "creative-intent-structure-research",
       "status": "open-r1-ready",
@@ -580,8 +666,10 @@
       "r3": "done",
       "r4": "done",
       "ten_yuan_intent_layer": "v0.1",
-      "r5": "ready",
-      "remaining_candidate": "decision-grounded-dynamic-intent-relation"
+      "r5": "done",
+      "remaining_candidate": "decision-grounded-dynamic-intent-relation",
+      "research_design": "done",
+      "empirical_validation": "pending"
     }
   }
 }
