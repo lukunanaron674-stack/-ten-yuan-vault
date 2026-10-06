@@ -58,7 +58,7 @@
       "width": 700,
       "height": 570,
       "color": "2",
-      "text": "# 十元现在放哪里\n\n普通 Intent Graph 负责：\nGoal / Choice / Constraint / Property / Stage / Evidence\n\n十元只作为候选关系层：\n- 十元语义\n- 生 / 克 / 补\n- 主 / 次\n- T / M / E / C\n- 动态链 Relation Transition\n\n不是整个方法本体。"
+      "text": "# 十元现在到底是什么｜纠错版\n\n不是单独的关系层。\n\n第一步：\n把对象/概念映射到十元位置\nX/Z/N/ZN/NZ/XN/NX/ZX/XZ/X并Z\n\n第二步：\n主/次 + T/M/C\n三元 x/n/z 独立复核\n\n第三步：\n两个十元端点成立后\n才判断生 / 克 / 补\n\n第四步：\n动态链看这些映射与关系怎么跨阶段变化。"
     },
     {
       "id": "verify",
@@ -68,7 +68,7 @@
       "width": 700,
       "height": 570,
       "color": "1",
-      "text": "# 最后怎么验证\n\nB3｜Generic Dynamic Intent Graph\n普通强关系图\n\nVS\n\nB4｜Ten-Yuan Dynamic Relation Layer\n十元关系层\n\n↓\n先预测、后揭盲\n↓\n真实：ACCEPT / REWORK / REJECT\n\n**B4≈B3 → 十元无额外增量**"
+      "text": "# 最后怎么验证｜纠错版\n\nB3｜普通动态意图表示\nVS\nB4｜完整十元模型\n\nB4 =\n对象→十元映射\n→三元复核\n→端点冻结\n→生克补启动\n→动态链\n\n最后再预测：\nACCEPT / REWORK / REJECT\n\n**验证的是整套映射+关系模型，不是三种关系词。**"
     },
     {
       "id": "teachroot",
@@ -179,6 +179,16 @@
       "width": 650,
       "height": 220,
       "color": "3"
+    },
+    {
+      "id": "mapping_model_note",
+      "type": "text",
+      "x": 1780,
+      "y": 260,
+      "width": 700,
+      "height": 520,
+      "color": "1",
+      "text": "# 最重要的学习纠错\n\n先学会：\n**什么是“映射模型”**\n\n十元先回答：\n“这个对象/概念在十元空间里落到哪里？”\n\n映射完成之后才问：\n“这些已成立十元之间发生什么关系？”\n\n所以教学顺序也要改成：\n映射 → 端点 → 关系 → 动态链。"
     }
   ],
   "edges": [
@@ -283,17 +293,24 @@
       "fromNode": "course",
       "toNode": "lesson1",
       "label": "第1课"
+    },
+    {
+      "id": "mapping_model_edge",
+      "fromNode": "ten",
+      "toNode": "mapping_model_note",
+      "label": "先学映射模型"
     }
   ],
   "metadata": {
-    "version": "1.1",
+    "version": "1.2",
     "frontmatter": {
       "type": "paper-social-terms-learning",
       "parent_course": "674-275",
       "paper_direction": "creative-intent-structure",
       "status": "teaching-route-ready",
       "next_lesson": "Node / Edge / Relation Type",
-      "lesson1": "ready"
+      "lesson1": "ready",
+      "mapping_model_correction": "frozen"
     }
   }
 }
