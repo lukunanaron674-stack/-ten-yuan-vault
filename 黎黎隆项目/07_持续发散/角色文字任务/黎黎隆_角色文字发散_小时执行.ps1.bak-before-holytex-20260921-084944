@@ -1,0 +1,651 @@
+﻿param(
+    [switch]$Manual,
+    [switch]$Scheduled,
+    [switch]$DryRun,
+    [switch]$NoH3,
+    [switch]$FallbackOnly
+)
+
+Set-StrictMode -Version Latest
+$ErrorActionPreference = 'Stop'
+
+# LLL-Character-Text-Hourly
+# 《黎黎隆》十元角色魅力实验｜正式版
+#
+# 每轮：从 GitHub checkout 读取角色卡、图片、场景资产和十元资料；
+# 生成一张实验卡与 8 条 H3 描述词；01-03 合成约 10 秒微故事；
+# 4090D ComfyUI 通过 Hermes channel 预检后提交一个候选视频；全部成果保留为候选。
+# 本脚本不 fetch/pull/commit/push GitHub，不修改理论正本，不覆盖原素材。
+# H3 走项目现有 Hermes -> 4090D channel；不在本机启动/提交第二个 ComfyUI。
+
+$TaskName = 'LLL-Character-Text-Hourly'
+$WorkspaceRoot = 'C:\Users\19308\Documents\New project 2'
+$VaultRoot = 'C:\Users\19308\Documents\Obsidian\ten-yuan-vault'
+$ProjectRoot = Join-Path $VaultRoot '黎黎隆项目'
+$TaskRoot = Join-Path $ProjectRoot '03_持续发散\角色文字任务'
+$ExperimentRoot = Join-Path $TaskRoot '正式实验'
+$StatePath = Join-Path $TaskRoot 'hourly-state.json'
+$LogPath = Join-Path $TaskRoot '角色文字发散_小时记录.md'
+$CardRoot = Join-Path $ProjectRoot '03_角色\角色库\角色卡'
+$RoleRoot = Join-Path $ProjectRoot '03_角色'
+$SceneRoot = Join-Path $ProjectRoot '04_场景'
+$DynamicHub = Join-Path $VaultRoot '08-生克补动态链研究\每次任务必读_生克补动态链滚动中枢.md'
+$SemanticProtocol = Join-Path $VaultRoot '15-总思路\Ten-Yuan_Semantic_Protocol_v1.0.md'
+$RelationProtocol = Join-Path $VaultRoot '15-总思路\十元_生克补关系.md'
+$DynamicProtocol = Join-Path $VaultRoot '15-总思路\十元_动态链.md'
+$CodexHomePath = 'C:\Users\19308\.codex'
+$CodexExe = 'C:\Users\19308\AppData\Local\OpenAI\Codex\bin\247581e40ee272fb\codex.exe'
+$ChannelPython = 'C:\Users\19308\AppData\Local\Programs\Python\Python312\python.exe'
+$H34090DChannel = Join-Path $WorkspaceRoot 'h3_4090d_channel.py'
+$CloudWorkflow = Join-Path $WorkspaceRoot 'minimax_h3_setup\batch_018_20260914_5-4A_dongsan_newspaper\workflow_5-4A_ref2va_4090_v2.json'
+$H3DeliveryRoot = 'D:\黎黎隆\角色魅力实验'
+if (-not (Test-Path -LiteralPath 'D:\')) { $H3DeliveryRoot = Join-Path $ExperimentRoot '视频候选' }
+$HermesRoot = Join-Path $TaskRoot 'Hermes'
+$HermesResultJsonl = Join-Path $HermesRoot 'character-charm-results.jsonl'
+$HermesLatest = Join-Path $HermesRoot 'LATEST.md'
+
+foreach ($path in @($TaskRoot, $ExperimentRoot, $H3DeliveryRoot, $HermesRoot)) {
+    New-Item -ItemType Directory -Force -Path $path | Out-Null
+}
+
+$RunId = 'LLL-CHARM-' + (Get-Date -Format 'yyyyMMdd-HHmmss')
+$RunDir = Join-Path $ExperimentRoot $RunId
+New-Item -ItemType Directory -Force -Path $RunDir | Out-Null
+$LockPath = Join-Path $TaskRoot 'formal-charm-experiment.active.lock'
+$LockStream = $null
+
+function Write-RunLog {
+    param([string]$Message)
+    Add-Content -LiteralPath (Join-Path $RunDir 'worker.log') -Value $Message -Encoding UTF8
+}
+
+function Save-Json {
+    param([string]$Path, [object]$Value)
+    $Value | ConvertTo-Json -Depth 30 | Set-Content -LiteralPath $Path -Encoding UTF8
+}
+
+function Get-PropertyValue {
+    param([object]$Object, [string]$Name, [object]$Default = $null)
+    if ($null -eq $Object) { return $Default }
+    if ($Object -is [System.Collections.IDictionary]) {
+        if ($Object.Contains($Name) -and $null -ne $Object[$Name]) { return $Object[$Name] }
+        return $Default
+    }
+    $property = $Object.PSObject.Properties[$Name]
+    if ($null -eq $property) { return $Default }
+    if ($null -eq $property.Value) { return $Default }
+    return $property.Value
+}
+
+# 不依赖 Microsoft.PowerShell.Utility 的 SHA256（该模块在计划任务的最小会话里可能未加载，
+# 会导致 Get-FileHash 不可用并让整轮 FAIL）。改用 .NET 内置加密类，任何 PowerShell 宿主都可用。
+function Get-Sha256Hex {
+    param([Parameter(Mandatory=$true)][string]$LiteralPath)
+    $sha = [System.Security.Cryptography.SHA256]::Create()
+    try {
+        $bytes = [System.IO.File]::ReadAllBytes($LiteralPath)
+        return ([System.BitConverter]::ToString($sha.ComputeHash($bytes)) -replace '-', '').ToLowerInvariant()
+    } finally {
+        $sha.Dispose()
+    }
+}
+
+function Get-State {
+    if (Test-Path -LiteralPath $StatePath) {
+        try {
+            $raw = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json
+            $nextIndex = 0
+            $nextValue = Get-PropertyValue $raw 'next_index' 0
+            if ($null -ne $nextValue) { $nextIndex = [int]$nextValue }
+            $mode = 'formal_character_charm_experiment'
+            $modeValue = Get-PropertyValue $raw 'mode' $mode
+            if ($modeValue) { $mode = [string]$modeValue }
+            return [pscustomobject]@{
+                next_index = $nextIndex
+                last_run = [string](Get-PropertyValue $raw 'last_run' '')
+                last_card = [string](Get-PropertyValue $raw 'last_card' '')
+                mode = $mode
+                pending_run_dir = [string](Get-PropertyValue $raw 'pending_run_dir' '')
+            }
+        } catch { Write-RunLog 'STATE_READ_FAILED | resetting in-memory state' }
+    }
+    return [pscustomobject]@{ next_index = 0; last_run = ''; last_card = ''; mode = 'formal_character_charm_experiment'; pending_run_dir = '' }
+}
+
+function Save-State { param([object]$Value); Save-Json $StatePath $Value }
+
+function Acquire-RunLock {
+    try {
+        $script:LockStream = [System.IO.File]::Open($LockPath, [System.IO.FileMode]::CreateNew, [System.IO.FileAccess]::Write, [System.IO.FileShare]::None)
+    } catch [System.IO.IOException] { Write-RunLog 'SKIP_DUPLICATE_ACTIVE_RUN'; return $false }
+    $text = "run_id=$RunId`npid=$PID`nstarted=$((Get-Date).ToString('o'))"
+    $bytes = [System.Text.Encoding]::UTF8.GetBytes($text)
+    $script:LockStream.Write($bytes, 0, $bytes.Length)
+    $script:LockStream.Flush()
+    return $true
+}
+
+function Release-RunLock {
+    if ($null -ne $script:LockStream) { $script:LockStream.Dispose(); $script:LockStream = $null }
+    if (Test-Path -LiteralPath $LockPath) { Remove-Item -LiteralPath $LockPath -Force }
+}
+
+function Invoke-GitText {
+    param([string[]]$GitArgs)
+    $result = & git -C $VaultRoot @GitArgs 2>$null
+    if ($LASTEXITCODE -ne 0) { return '' }
+    return (@($result) -join "`n").Trim()
+}
+
+function Get-SourceSnapshot {
+    $scopes = @('黎黎隆项目/03_角色','黎黎隆项目/04_场景','08-生克补动态链研究','15-总思路')
+    $statusLines = @()
+    foreach ($scope in $scopes) {
+        $line = Invoke-GitText @('status','--short','--untracked-files=no','--',$scope)
+        if ($line) { $statusLines += $line -split "`n" }
+    }
+    $head = Invoke-GitText @('rev-parse','HEAD')
+    $origin = Invoke-GitText @('rev-parse','origin/main')
+    return [ordered]@{
+        repository = $VaultRoot
+        remote = 'https://github.com/lukunanaron674-stack/-ten-yuan-vault.git'
+        head = $head
+        origin_main = $origin
+        checkout_differs_from_origin_main = [bool]($head -and $origin -and $head -ne $origin)
+        scoped_worktree_status = @($statusLines)
+        read_policy = 'read current checkout; no fetch/pull/commit/push; preserve local edits'
+    }
+}
+
+function Get-AssetInventory {
+    $imageExtensions = @('.png','.jpg','.jpeg','.webp')
+    $cards = @(Get-ChildItem -LiteralPath $CardRoot -File -Filter '*.md' | Where-Object { $_.Name -notmatch '模板' })
+    $roleImages = @()
+    $sceneImages = @()
+    if (Test-Path -LiteralPath $RoleRoot) { $roleImages = @(Get-ChildItem -LiteralPath $RoleRoot -Recurse -File | Where-Object { $imageExtensions -contains $_.Extension.ToLowerInvariant() }) }
+    if (Test-Path -LiteralPath $SceneRoot) { $sceneImages = @(Get-ChildItem -LiteralPath $SceneRoot -Recurse -File | Where-Object { $imageExtensions -contains $_.Extension.ToLowerInvariant() }) }
+    $cardInfo = foreach ($card in $cards) { [ordered]@{ id=$card.BaseName; path=$card.FullName; sha256=(Get-Sha256Hex -LiteralPath $card.FullName); bytes=$card.Length } }
+    $roleInfo = foreach ($image in $roleImages | Select-Object -First 80) { [ordered]@{ path=$image.FullName; bytes=$image.Length; sha256=(Get-Sha256Hex -LiteralPath $image.FullName) } }
+    $sceneInfo = foreach ($image in $sceneImages | Select-Object -First 80) { [ordered]@{ path=$image.FullName; bytes=$image.Length; sha256=(Get-Sha256Hex -LiteralPath $image.FullName) } }
+    return [ordered]@{
+        role_cards = @($cardInfo)
+        role_images = @($roleInfo)
+        scene_images = @($sceneInfo)
+        role_image_count = @($roleImages).Count
+        scene_image_count = @($sceneImages).Count
+        missing_role_image_policy = 'If no actual role image exists, mark missing and use T2VA; never turn an unfinished design into a formal visual detail.'
+    }
+}
+
+function Invoke-CodexGeneration {
+    param([Parameter(Mandatory=$true)][string]$Prompt, [Parameter(Mandatory=$true)][string]$Phase)
+    if (-not (Test-Path -LiteralPath $CodexExe)) { throw "CODEX_NOT_FOUND: $CodexExe" }
+    $eventPath = Join-Path $RunDir "$Phase.events.jsonl"
+    $lastPath = Join-Path $RunDir "$Phase.last.txt"
+    $env:CODEX_HOME = $CodexHomePath
+    # Windows PowerShell 5.1 的 native argument marshalling 会把 JSON 内的
+    # 引号拆成多个 argv；把长提示词经 stdin 交给 `codex exec -`，避免该问题。
+    $args = @('exec','--ephemeral','--ignore-user-config','--json','--skip-git-repo-check','--disable','apps','-C',$WorkspaceRoot,'--add-dir',$VaultRoot,'--sandbox','read-only','-o',$lastPath,'-')
+    Write-RunLog "CODEX_START | phase=$Phase"
+    # 不用 PS5.1 的 native pipeline：它会按当前代码页转码 stdin，中文会变成问号；
+    # 也不把 stderr 当作 PowerShell ErrorRecord。用 .NET 进程以 UTF-8 字节写 stdin。
+    $psi = New-Object System.Diagnostics.ProcessStartInfo
+    $psi.FileName = $CodexExe
+    $psi.UseShellExecute = $false
+    $psi.CreateNoWindow = $true
+    $psi.RedirectStandardInput = $true
+    $psi.RedirectStandardOutput = $true
+    $psi.RedirectStandardError = $true
+    $psi.Arguments = (($args | ForEach-Object { '"' + ([string]$_).Replace('"','\"') + '"' }) -join ' ')
+    $proc = New-Object System.Diagnostics.Process
+    $proc.StartInfo = $psi
+    if (-not $proc.Start()) { throw "CODEX_PROCESS_START_FAILED phase=$Phase" }
+    $promptBytes = [System.Text.Encoding]::UTF8.GetBytes($Prompt)
+    $proc.StandardInput.BaseStream.Write($promptBytes, 0, $promptBytes.Length)
+    $proc.StandardInput.Close()
+    $stdoutTask = $proc.StandardOutput.ReadToEndAsync()
+    $stderrTask = $proc.StandardError.ReadToEndAsync()
+    if (-not $proc.WaitForExit(120000)) {
+        $proc.Kill()
+        $proc.WaitForExit()
+        throw "CODEX_TIMEOUT phase=$Phase"
+    }
+    $stdout = $stdoutTask.Result
+    $stderr = $stderrTask.Result
+    $exitCode = $proc.ExitCode
+    $proc.Dispose()
+    Set-Content -LiteralPath $eventPath -Value ($stderr + $stdout) -Encoding UTF8
+    Write-RunLog "CODEX_END | phase=$Phase | exit_code=$exitCode"
+    if ($exitCode -ne 0) { throw "CODEX_FAILED phase=$Phase exit_code=$exitCode" }
+    if (-not (Test-Path -LiteralPath $lastPath)) { throw "CODEX_NO_FINAL_MESSAGE phase=$Phase" }
+    $text = Get-Content -LiteralPath $lastPath -Raw -Encoding UTF8
+    $start = $text.IndexOf('{'); $end = $text.LastIndexOf('}')
+    if ($start -lt 0 -or $end -le $start) { throw "CODEX_FINAL_NOT_JSON phase=$Phase" }
+    try { return $text.Substring($start,$end-$start+1) | ConvertFrom-Json } catch { throw "CODEX_JSON_PARSE_FAILED phase=$Phase" }
+}
+
+function Build-GenerationPrompt {
+    param([object]$Source, [object]$Inventory, [int]$RoleIndex, [object]$PreviousState)
+    $sourceJson = $Source | ConvertTo-Json -Depth 12 -Compress
+    $inventoryJson = $Inventory | ConvertTo-Json -Depth 12 -Compress
+    $previousJson = $PreviousState | ConvertTo-Json -Depth 8 -Compress
+    $templatePath = Join-Path $TaskRoot 'formal-charm-prompt-template.txt'
+    if (-not (Test-Path -LiteralPath $templatePath)) { throw "PROMPT_TEMPLATE_NOT_FOUND: $templatePath" }
+    $prompt = Get-Content -LiteralPath $templatePath -Raw -Encoding UTF8
+    $prompt = $prompt.Replace('{{RUN_ID}}', $RunId)
+    $prompt = $prompt.Replace('{{ROLE_INDEX}}', [string]$RoleIndex)
+    $prompt = $prompt.Replace('{{VAULT_ROOT}}', $VaultRoot)
+    $prompt = $prompt.Replace('{{PROJECT_ROOT}}', $ProjectRoot)
+    $prompt = $prompt.Replace('{{SOURCE_JSON}}', $sourceJson)
+    $prompt = $prompt.Replace('{{INVENTORY_JSON}}', $inventoryJson)
+    $prompt = $prompt.Replace('{{PREVIOUS_JSON}}', $previousJson)
+    $prompt = $prompt.Replace('{{SEMANTIC_PROTOCOL}}', $SemanticProtocol)
+    $prompt = $prompt.Replace('{{RELATION_PROTOCOL}}', $RelationProtocol)
+    $prompt = $prompt.Replace('{{DYNAMIC_PROTOCOL}}', $DynamicProtocol)
+    $prompt = $prompt.Replace('{{DYNAMIC_HUB}}', $DynamicHub)
+    return $prompt
+}
+
+function Read-JsonFile { param([string]$Path); if (-not (Test-Path -LiteralPath $Path)) { return $null }; try { return Get-Content -LiteralPath $Path -Raw -Encoding UTF8 | ConvertFrom-Json } catch { return $null } }
+
+function Assert-Experiment {
+    param([object]$Experiment)
+    if ($null -eq $Experiment) { throw 'EXPERIMENT_NULL' }
+    if (@($Experiment.shots).Count -ne 8) { throw "EXPERIMENT_SHOT_COUNT_INVALID: $(@($Experiment.shots).Count)" }
+    $ids = @($Experiment.shots | ForEach-Object { [string]$_.id })
+    if (($ids -join ',') -ne '01,02,03,04,05,06,07,08') { throw "EXPERIMENT_SHOT_IDS_INVALID: $($ids -join ',')" }
+    if ([string]::IsNullOrWhiteSpace([string]$Experiment.microstory_prompt)) { throw 'EXPERIMENT_MICROSTORY_PROMPT_EMPTY' }
+    foreach ($shot in @($Experiment.shots)) { if ([string]::IsNullOrWhiteSpace([string]$shot.h3_prompt)) { throw "EXPERIMENT_SHOT_PROMPT_EMPTY: $($shot.id)" } }
+}
+
+function New-FallbackExperiment {
+    param([object]$Inventory, [object]$Source, [int]$RoleIndex, [object]$PreviousState)
+    $cards=@($Inventory.role_cards)
+    $card=$cards[$RoleIndex % $cards.Count]
+    $cardPath=[string](Get-PropertyValue $card 'path' '')
+    $cardText='';if($cardPath -and (Test-Path -LiteralPath $cardPath)){$cardText=Get-Content -LiteralPath $cardPath -Raw -Encoding UTF8}
+    $id=[string](Get-PropertyValue $card 'id' 'unknown')
+    $name=$id
+    if($cardText -match '(?m)^name:\s*(.+)$'){$name=$Matches[1].Trim()}
+    $roleImage=$null
+    foreach($img in @($Inventory.role_images)){if(([string]$img.path) -match [regex]::Escape($id)){ $roleImage=[string]$img.path;break }}
+    $scene=$null
+    foreach($img in @($Inventory.scene_images)){if(([string]$img.path) -notmatch '(_拼图_临时|SHEET_|BEFORE_|AFTER_|预跑_未确认基准)'){$scene=$img;break}}
+    if($null -eq $scene -and @($Inventory.scene_images).Count -gt 0){$scene=$Inventory.scene_images[0]}
+    $scenePath=if($null -ne $scene){[string]$scene.path}else{$null}
+    $sceneBasis=if($scenePath){'现有场景资产作环境参考；不作为角色定稿'}else{'无实际场景图，环境待定'}
+
+    switch -Regex ($name) {
+        '澈' {
+            $confirmed=@('男性；清冷少年／青年外观；古老能量生命','浅青白色不对称蓬松发型与头顶小翘发束','灰紫面部；连续青白色能量人形','不设计衣服；不增加装甲、武器、固定翅膀或多余挂件')
+            $pending=@('正／侧／背三视图尚待校准','凝聚、流动、局部延伸、完整释放的分层设计尚待验证','与建筑及黎黎隆同框的尺寸关系尚待验证','持续时间、范围、代价等能力限制未锁定')
+            $yuan='Z 核心 + X并Z 重要构成（作者追加，关系与体量待行为验证）'
+            $change='某个被城市防护分类遗漏的生命是否仍拥有可用的保护路径'
+            $a='城市防护界面把一个未伤害人的古老生命标成异常；澈不攻击系统，而先收回自身能量，再在被遗漏生命周围重组出一段可见的保护路径。'
+            $b='系统接口要求澈沿固定路线行动；澈向后退半步，放弃直接突破，借自身能量改变一个侧向通道，让被排斥生命先通过。'
+            $c='澈辨认出公开防护命令背后的实际作用点，却把选择权留给现场生命；他只改变能量流向，让对方可以自行离开。'
+            $selected=$a;$charm='他洞悉规则却不把纯粹变成蛮力：通过退出、重组与让出选择空间，显示自主判断。'
+            $before='青白能量体被城市接口按异常路径牵引';$mech='澈主动退出固定接口并把能量流向重组到被遗漏生命周围';$after='接口失去对他的直接牵引，被遗漏生命获得一条可继续移动的保护边界'
+            $action='澈先收回连接城市接口的一束青白能量，停顿后把能量横向铺到小型古老生命前方；生命沿新边界移动，澈保持人形而不追击。'
+        }
+        '洛维恩' {
+            $confirmed=@('男性贵族；拥有领地与日常职责的小领主','冷灰紫肤色；黑色后梳发、低马尾、卷起小胡子与下颏短须','暗红简明衣装大结构；两片浅色金属护领／肩领','约 7.5 头身；轻量手绘线稿、薄涂、少量脏线')
+            $pending=@('正式姓名、家族、年龄与政治职务未确认','湖岸台地领仍是候选，不是正式地图','袖形、前襟连接、束腰、披片和随身物件未冻结','超自然能力、战力与正式主事件未锁定')
+            $yuan='ZN、XN、NZ 为候选；主次与生克补待具体事务验证'
+            $change='居民与异体生命能否沿一段实际公共通路继续通行'
+            $a='湖岸台地的公共阶梯被一段日常维护结构挡住；洛维恩放下礼仪姿态，亲自移动可见的障碍并把通行方向让给居民。'
+            $b='居民按旧礼仪等待领主发话；洛维恩先退到侧面，示意维护者改变站位，让真正需要通过的异体生命先走。'
+            $c='一份领地事务安排与现场身体流线冲突；洛维恩不宣布抽象原则，而是把原本给自己准备的台阶位置改成临时通道。'
+            $selected=$a;$charm='他把贵族身份转成可观察的现场责任：改变站位、移动阻碍、让实际生活继续，而不是靠体面台词证明善意。'
+            $before='公共阶梯的既定秩序把居民与异体生命堵在同一处';$mech='洛维恩放弃自己的优先位置并重新安排障碍与站位';$after='通行路线被打开，领主身份仍在但不再占据通道'
+            $action='洛维恩看向被堵住的阶梯，解下手边的标记杆并将其移到侧面；他退开一步，居民与异体生命先后经过，最后他才跟上。'
+        }
+        default {
+            $confirmed=@('当前角色身份以角色卡为准：'+$name,'原稿已确认的头部、脸型与已见剪影只按卡片使用')
+            $pending=@('性别、准确年龄、全身比例、服装、道具及未归档图片均待定；本轮不新增正式细节')
+            $yuan='角色卡中的候选十元仅作待验证输入，不作结论'
+            $change='城市魔法服务中一条具体路径是否仍可被主角使用'
+            $a='主角发现标准服务入口没有覆盖一条实际需求；他先观察失败反馈，再用一次可见的侧向动作改变进入路径。'
+            $b='固定流程要求主角排队等待；主角主动让出正面位置，从边缘寻找不改变他人安全的替代路径。'
+            $c='一个活体伙伴或现场对象阻止主角继续；主角不强行压过它，而改变目标顺序，让新线索先进入行动。'
+            $selected=$a;$charm='通过观察、试探、记住失败并临时变招，让机灵与出其不意落到行动上。'
+            $before='标准入口拒绝当前需求';$mech='主角沿未覆盖的侧向路径重新组织动作';$after='需求被暂时接通，但规则边界与代价仍待验证'
+            $action='主角在标准入口前停住，观察一次失败反馈，绕到侧面触碰另一处已存在的接口；入口亮起一小段，主角立即停手确认结果。'
+        }
+    }
+    $negative='no dialogue, no subtitles, no readable text, no new formal costume, no new weapon, no unconfirmed body structure, no identity drift, no 3D, no extra protagonist, no exaggerated transformation; the receiver is only a minimal non-protagonist endpoint, not a formal character design'
+    $h3Base="2D hand-drawn animation, restrained flat colors, clean outline, concrete environment reference only. $name is the sole protagonist. Confirmed appearance: $($confirmed -join '; '). Do not specify any pending appearance."
+    $shots=@()
+    $shotActions=@(
+        $action,
+        "$name pauses before the other side changes, then shifts one body position to make the changed variable visible: $change.",
+        "$name holds the new arrangement without claiming victory; the receiver moves through the newly available path while $name remains visibly self-directed.",
+        "$name repeats the same relation in a wider environment, changing only the spatial scale and keeping the main silhouette readable.",
+        "$name faces a direct obstruction, but changes only the response from force to a lateral redirection; show the receiver's route changing.",
+        "$name gives up a privileged position for one beat, then uses the resulting opening to alter the receiver's available choice.",
+        "Close on the concrete residue of the relation: the old route remains visible while the new path stays open; $name does not add an unconfirmed ability.",
+        "$name exits the changed space while the receiver continues independently, leaving one small next affordance for a later experiment."
+    )
+    for($i=0;$i -lt 8;$i++){
+        $id2='{0:D2}' -f ($i+1)
+        $prompt="$h3Base 4-second shot. One dominant action: $($shotActions[$i]) Camera: medium shot, eye-level, slow controlled lateral move with small amplitude. Start with the original arrangement, show the action and the receiver's state change, end on a stable readable composition. Sound: quiet environmental movement and one restrained impact at the action beat. $negative."
+        $shots += [ordered]@{id=$id2;role_image_path=$roleImage;scene_image_path=$scenePath;relation_direction="待判定：主角行动 → $change";framing='中景，平视；小幅慢速横移';main_action=$shotActions[$i];start_change_end="起始：$before；变化：$($shotActions[$i])；结束：$after";music_cut="4 秒；在动作完成与接收方移动的瞬间切点";h3_prompt=$prompt;negative_constraints=$negative;variable_changed=if($i -eq 0){$change}else{"$change；本条只改变：" + @('空间尺度','受阻后的回应方式','角色站位','残余的可见度','镜头距离','动作节拍','离场方向')[$i-1]}}
+    }
+    $micro=@(
+        "integrated_multimodal_description: 10-second 2D hand-drawn micro-story. $h3Base 0-3s: $($shotActions[0]) 3-6s: $($shotActions[1]) 6-10s: $($shotActions[2]) Keep one continuous environment reference, preserve the confirmed silhouette, and make the relation change observable through the receiver's movement. $negative.",
+        'overall_soundscape: Quiet environment, soft body movement, and one restrained contact sound at the moment the path changes. No dialogue or subtitles.',
+        'non_diegetic_music: Sparse low-volume pulse, one beat at 3 seconds and one resolving beat at 9 seconds, with no lyrical voice.'
+    ) -join "`n"
+    return [ordered]@{experiment_id=$RunId;source_snapshot=$Source;character=[ordered]@{id=$id;name=$name;card_path=$cardPath;role_image_path=$roleImage;role_image_status=if($roleImage){'verified'}else{'missing'};confirmed_appearance=$confirmed;pending_appearance=$pending;ten_yuan=$yuan;ten_yuan_status='candidate'};scene=[ordered]@{card_or_basis=$sceneBasis;scene_image_path=$scenePath;scene_image_status=if($scenePath){'candidate'}else{'missing'};basis='场景资产只承担环境参考，不补写角色正式造型'};relation_hypothesis=[ordered]@{relation_type='待判定';source_endpoint=$name+' 的可观察行动';target_endpoint=$change;direction=$name+' → 被改变变量';force_from=$name;receiver=$change;initial_state=$before;mechanism=$mech;changed_variable=$change;end_state=$after;residue='旧路径与新路径同时可见；关系边仍待视频与作者复核';next_affordance='下一轮只改变主角回应方式或空间尺度';charm_hypothesis=$charm;confidence='candidate'};story_candidates=[ordered]@{A=$a;B=$b;C=$c;selected=$selected;reason='它通过 '+$action+' 这一可观察行为改变接收方状态，让主角魅力落在行动而不是台词或表情。'};shots=$shots;microstory_prompt=$micro;recovery=[ordered]@{audience_remembers=$charm;hypothesis_to_test=$mech;alternative_explanation='观众也可能只读到“绕路/让路”的一般机灵，未必读出十元关系；需比较下一轮单变量。';actual_result='未生成';effective_observation='';failure_and_cause='';next_single_variable='回应方式'}}
+}
+
+function Write-ExperimentFiles {
+    param([object]$Experiment, [object]$Source, [object]$Inventory)
+    Save-Json (Join-Path $RunDir 'experiment.json') $Experiment
+    Save-Json (Join-Path $RunDir 'source-snapshot.json') $Source
+    Save-Json (Join-Path $RunDir 'asset-inventory.json') $Inventory
+    Set-Content -LiteralPath (Join-Path $RunDir 'microstory_prompt.md') -Value ([string]$Experiment.microstory_prompt) -Encoding UTF8
+    $shotDir = Join-Path $RunDir 'shots'; New-Item -ItemType Directory -Force -Path $shotDir | Out-Null
+    foreach ($shot in @($Experiment.shots)) {
+        $content = @(
+            "# H3 Shot $($shot.id)",'',
+            "角色图路径：$([string]$shot.role_image_path)","场景图路径：$([string]$shot.scene_image_path)",
+            "十元关系及方向：$([string]$shot.relation_direction)","景别 / 机位 / 运镜：$([string]$shot.framing)",
+            "3—5 秒主要动作：$([string]$shot.main_action)","起始画面 → 动作变化 → 结束画面：$([string]$shot.start_change_end)",
+            "音乐节拍 / 前后镜头切点：$([string]$shot.music_cut)",'','## 可直接复制的 H3 描述词','',
+            [string]$shot.h3_prompt,'',"负面约束：$([string]$shot.negative_constraints)","只改变的变量：$([string]$shot.variable_changed)"
+        ) -join "`n"
+        Set-Content -LiteralPath (Join-Path $shotDir ("shot_{0}.md" -f $shot.id)) -Value $content -Encoding UTF8
+    }
+    $c=$Experiment.character; $s=$Experiment.scene; $r=$Experiment.relation_hypothesis; $st=$Experiment.story_candidates; $rc=$Experiment.recovery
+    $rows = foreach ($shot in @($Experiment.shots)) { "| $($shot.id) | $($shot.relation_direction) | $($shot.main_action) | $($shot.variable_changed) |" }
+    $md = @(
+        '---',"experiment_id: $RunId",'status: candidate_pending_human_review',"source_head: $($Source.head)","source_origin_main: $($Source.origin_main)",'h3_generation: pending','---','',
+        "# 《黎黎隆》十元角色魅力实验｜$RunId",'',
+        '## ① 素材与设定',"- 角色：$($c.name)（$($c.id)）","- 角色卡：$($c.card_path)","- 角色图：$($c.role_image_path)（$($c.role_image_status)）","- 场景依据：$($s.card_or_basis)","- 场景图：$($s.scene_image_path)（$($s.scene_image_status)）","- 已确认造型：$((@($c.confirmed_appearance)-join '；'))","- 尚未确定、不能擅自补画：$((@($c.pending_appearance)-join '；'))","- 角色十元：$($c.ten_yuan)（$($c.ten_yuan_status)）",'',
+        '## ② 十元关系假设',"- 主关系：$($r.relation_type)","- 主符号 → 次符号：$($r.source_endpoint) → $($r.target_endpoint)","- 施力方 → 承受方：$($r.force_from) → $($r.receiver)","- 初始状态 → 关系变化 → 结束状态：$($r.initial_state) → $($r.mechanism) → $($r.end_state)","- 被改变的具体变量：$($r.changed_variable)","- 残余：$($r.residue)","- 下一可供性：$($r.next_affordance)","- 本轮想检验的角色魅力：$($r.charm_hypothesis)","- 置信度：$($r.confidence)",'',
+        '## ③ 故事发散',"- 候选 A：$($st.A)","- 候选 B：$($st.B)","- 候选 C：$($st.C)","- 选中方案：$($st.selected)","- 选择理由：$($st.reason)",'',
+        '## ④ MV 镜头实验','- 01–03：见 `microstory_prompt.md`，合成约 10 秒微故事。','- 04–08：各自改变一个变量，见 `shots/shot_04.md` 至 `shots/shot_08.md`。','',
+        '## ⑤ 八条镜头词','| ID | 关系方向 | 主要动作 | 只改变的变量 |','|---|---|---|---|',$rows,'',
+        '## ⑥ 实验回收',"- 本轮预期观众记住的角色魅力：$($rc.audience_remembers)","- 镜头需要验证的十元假设：$($rc.hypothesis_to_test)","- 可能存在的另一种解释：$($rc.alternative_explanation)","- H3 实际生成结果：$($rc.actual_result)","- 观察到的有效表现：$($rc.effective_observation)","- 失败表现及可能原因：$($rc.failure_and_cause)","- 下轮只改变的关键变量：$($rc.next_single_variable)",'',
+        '## 状态边界','- 本文件是实验记录和候选镜头词，不是角色设定卡。','- 没有人工验收前，不锁定角色、不改正式 Canvas、不替换正式片。','- “已生成”只表示拿到 MP4；画面是否把魅力和关系拍清楚，仍待人工审片。'
+    ) -join "`n"
+    Set-Content -LiteralPath (Join-Path $RunDir 'experiment.md') -Value $md -Encoding UTF8
+}
+
+function Invoke-4090DChannel {
+    param([string[]]$ChannelArgs, [string]$LogPath)
+    if (-not (Test-Path -LiteralPath $ChannelPython)) { throw "CHANNEL_PYTHON_NOT_FOUND: $ChannelPython" }
+    if (-not (Test-Path -LiteralPath $H34090DChannel)) { throw "CHANNEL_SCRIPT_NOT_FOUND: $H34090DChannel" }
+    $oldErrorAction = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    try {
+        $lines = @(& $ChannelPython $H34090DChannel @ChannelArgs 2>&1)
+        $exitCode = $LASTEXITCODE
+    } catch {
+        $lines = @($_.Exception.Message)
+        $exitCode = 2
+    } finally {
+        $ErrorActionPreference = $oldErrorAction
+    }
+    $output = (@($lines | ForEach-Object { [string]$_ }) -join "`n").Trim()
+    if ($LogPath) { Set-Content -LiteralPath $LogPath -Value $output -Encoding UTF8 }
+    return [pscustomobject]@{ exit_code=$exitCode; output=$output }
+}
+
+function Convert-LastJsonLine {
+    param([string]$Text)
+    foreach($line in (@($Text -split "`n") | Select-Object -Reverse)) {
+        $candidate=[string]$line
+        if($candidate.Trim().StartsWith('{')){try{return $candidate.Trim()|ConvertFrom-Json}catch{}}
+    }
+    return $null
+}
+
+function Get-LocalVideoProbe {
+    param([string]$VideoPath)
+    if(-not $VideoPath -or -not (Test-Path -LiteralPath $VideoPath)){return $null}
+    try {
+        $probeLines=@(& ffprobe -v error -show_entries format=duration:stream=index,codec_type,codec_name,width,height,avg_frame_rate -of json -- $VideoPath 2>&1)
+        $probeText=(@($probeLines|ForEach-Object{[string]$_})-join "`n")
+        try{return $probeText|ConvertFrom-Json}catch{return [ordered]@{raw=$probeText}}
+    } catch { return [ordered]@{error=$_.Exception.Message} }
+}
+
+function New-H3CloudPrompt {
+    param([object]$Experiment, [bool]$UseScenePicture)
+    $character = Get-PropertyValue $Experiment 'character' $null
+    $scene = Get-PropertyValue $Experiment 'scene' $null
+    $relation = Get-PropertyValue $Experiment 'relation_hypothesis' $null
+    $name = [string](Get-PropertyValue $character 'name' 'the protagonist')
+    $confirmed = @((Get-PropertyValue $character 'confirmed_appearance' @()) | ForEach-Object { [string]$_ }) -join '; '
+    $pending = @((Get-PropertyValue $character 'pending_appearance' @()) | ForEach-Object { [string]$_ }) -join '; '
+    $changed = [string](Get-PropertyValue $relation 'changed_variable' 'the receiver state')
+    $mechanism = [string](Get-PropertyValue $relation 'mechanism' 'the protagonist changes the available path')
+    $shots = @($Experiment.shots)
+    $s1 = if($shots.Count -gt 0){$shots[0]}else{$null}
+    $s2 = if($shots.Count -gt 1){$shots[1]}else{$null}
+    $s3 = if($shots.Count -gt 2){$shots[2]}else{$null}
+    $a1 = [string](Get-PropertyValue $s1 'main_action' '')
+    $a2 = [string](Get-PropertyValue $s2 'main_action' '')
+    $a3 = [string](Get-PropertyValue $s3 'main_action' '')
+    $camera = [string](Get-PropertyValue $s1 'framing' 'medium shot, eye-level, slow controlled lateral move')
+    $sound = 'Quiet environmental movement, soft body motion, and one restrained contact sound at the moment the path changes. No dialogue or subtitles.'
+    $music = 'Sparse low-volume pulse, one beat near 3 seconds and one resolving beat near 9 seconds, with no lyrical voice.'
+    # pool_submit.load_prompt 要求 md 里有 ```text 块，取块内内容；不包会被 preflight 拒绝。
+    if($UseScenePicture){
+        return (@(
+            '```text',
+            'subject_definitions:',
+            "<Subject 1> is $name, the sole protagonist. Confirmed appearance: $confirmed. Pending details remain unspecified: $pending. Do not invent any pending design detail.",
+            "<Subject 2> is the small receiver whose state changes in the story. It is only a minimal non-protagonist silhouette used as an observable relationship endpoint, not a formal character design.",
+            '<Picture 1> is the supplied scene image used only as an environment and composition reference; it does not define the protagonist design.',
+            '',
+            'summary:',
+            "[reference generation] A 10-second 2D hand-drawn animation uses <Subject 1> as the sole protagonist and <Subject 2> as a minimal receiver. <Picture 1> supplies the environment only. The observable experiment is: $mechanism; the changed variable is $changed.",
+            '',
+            'retention_analysis:',
+            "<Subject 1> (Shots 1-3): fully_preserved - preserve the confirmed silhouette, color grouping, energy-body continuity, and the explicit absence of formal clothing, armor, weapons, fixed wings, and extra ornaments.",
+            "<Subject 2> (Shots 1-3): partially_preserved - show only enough abstract movement to make the receiver's state change readable; do not establish a formal design.",
+            '<Picture 1> (Shots 1-3 environment): weak_reference - preserve broad environment layout and restrained flat-color atmosphere without turning the image into a character reference.',
+            '',
+            'detailed_description:',
+            "[Shot 1] 2D hand-drawn animation, restrained flat colors and clean outlines. At the opening, <Subject 1> stands in the environment from <Picture 1> while a fixed interface pulls one strand of pale energy. Between 0.00 and 3.00 seconds, $a1 Camera: $camera. The receiver remains a minimal abstract endpoint.",
+            "[Shot 2] At 00:03.000, the camera cuts to a slightly clearer view of the same space. <Subject 1> pauses, changes position, and makes the altered path visible through <Subject 2>'s movement: $a2. No new costume, anatomy, power limit, or formal receiver design is introduced.",
+            "[Shot 3] At 00:06.000, the shot holds the changed arrangement until 10.00 seconds. <Subject 1> does not claim victory or chase the receiver; <Subject 2> moves through the newly available boundary while the old route remains visible: $a3. End on a stable readable composition.",
+            '',
+            "overall_soundscape: $sound",
+            "non_diegetic_music: $music",
+            '```'
+        ) -join "`n")
+    }
+    return (@(
+        '```text',
+        "integrated_multimodal_description: [Shot 1] 2D hand-drawn animation, restrained flat colors and clean outlines. A 10-second micro-story follows $name as the sole protagonist. Confirmed appearance: $confirmed. Pending details remain unspecified: $pending. From 0.00 to 3.00 seconds, $a1. [Shot 2] At 00:03.000, $a2. [Shot 3] At 00:06.000, $a3. The observable change is $changed. $mechanism. The receiver is only a minimal non-protagonist endpoint; do not create a formal design. No dialogue or subtitles.",
+        "overall_soundscape: $sound",
+        "non_diegetic_music: $music",
+        '```'
+    ) -join "`n")
+}
+
+function Poll-4090DTask {
+    param([object]$Experiment)
+    $oldH3=Get-PropertyValue $Experiment 'h3' $null
+    $taskId=[string](Get-PropertyValue $oldH3 'task_id' '')
+    if(-not $taskId){return $null}
+    $resultLog=Join-Path $RunDir 'h3-4090d-result.log'
+    $poll=Invoke-4090DChannel -ChannelArgs @('result','--task-id',$taskId) -LogPath $resultLog
+    $snapshot=Convert-LastJsonLine $poll.output
+    if(-not $snapshot){return [pscustomobject]@{status='已入队_待4090D生产';task_id=$taskId;video_path='';probe=$null;reason='result poll returned no JSON; see result log';poll_log=$resultLog}}
+    $remoteStatus=[string](Get-PropertyValue (Get-PropertyValue $snapshot 'status' $null) 'status' 'unknown')
+    $remoteFiles=@(Get-PropertyValue $snapshot 'remote_files' @())
+    if($remoteStatus -eq 'done' -and $remoteFiles.Count -gt 0){
+        $collectLog=Join-Path $RunDir 'h3-4090d-collect.log'
+        $collect=Invoke-4090DChannel -ChannelArgs @('collect','--task-id',$taskId,'--out-dir',$H3DeliveryRoot) -LogPath $collectLog
+        $collected=Convert-LastJsonLine $collect.output
+        $videoPath=[string](Get-PropertyValue $collected 'local_file' '')
+        if($collect.exit_code -eq 0 -and $videoPath -and (Test-Path -LiteralPath $videoPath)){
+            $probe=Get-LocalVideoProbe $videoPath;Save-Json (Join-Path $RunDir 'h3-postflight.json') $probe
+            return [pscustomobject]@{status='已生成_待人工验收';task_id=$taskId;video_path=$videoPath;probe=$probe;remote_result=$snapshot;collect=$collected;reason='remote task done; local MP4 collected and probed; visual review pending'}
+        }
+        return [pscustomobject]@{status='FAILED_4090D_COLLECT';task_id=$taskId;video_path='';probe=$null;remote_result=$snapshot;reason='remote task done but local collection failed; see collect log'}
+    }
+    if($remoteStatus -in @('failed','error')){return [pscustomobject]@{status='FAILED_4090D_REMOTE';task_id=$taskId;video_path='';probe=$null;remote_result=$snapshot;reason='remote pool status failed; no automatic retry'}}
+    return [pscustomobject]@{status='已入队_待4090D生产';task_id=$taskId;video_path='';probe=$null;remote_result=$snapshot;reason="remote task status=$remoteStatus; no MP4 claim"}
+}
+
+function Publish-HermesResult {
+    param([string]$Status, [string]$RunDirectory, [object]$Experiment, [object]$H3, [object]$Source)
+    $character = Get-PropertyValue $Experiment 'character' $null
+    $record = [ordered]@{
+        action_id = $RunId
+        updated_at = (Get-Date).ToString('o')
+        status = $Status
+        experiment_id = [string](Get-PropertyValue $Experiment 'experiment_id' $RunId)
+        character_id = [string](Get-PropertyValue $character 'id' '')
+        character_name = [string](Get-PropertyValue $character 'name' '')
+        run_dir = $RunDirectory
+        experiment_json = Join-Path $RunDirectory 'experiment.json'
+        experiment_markdown = Join-Path $RunDirectory 'experiment.md'
+        shots_dir = Join-Path $RunDirectory 'shots'
+        h3 = $H3
+        source_head = [string](Get-PropertyValue $Source 'head' '')
+        source_origin_main = [string](Get-PropertyValue $Source 'origin_main' '')
+        human_review = 'REQUIRED'
+        formal_assets_modified = $false
+    }
+    Add-Content -LiteralPath $HermesResultJsonl -Value ($record | ConvertTo-Json -Depth 30 -Compress) -Encoding UTF8
+    $latest = @(
+        '# 黎黎隆角色魅力实验｜Hermes 最新结果',
+        '',
+        "- 更新时间：$($record.updated_at)",
+        "- 状态：$Status",
+        "- 角色：$($record.character_name)（$($record.character_id)）",
+        "- 实验卡：$($record.experiment_markdown)",
+        "- 8 条镜头词：$($record.shots_dir)",
+        "- H3 结果：$([string](Get-PropertyValue $H3 'status' '未运行'))",
+        "- H3 任务证据：$([string](Get-PropertyValue $H3 'task_id' '无'))",
+        "- H3 候选视频：$([string](Get-PropertyValue $H3 'video_path' '未回收'))",
+        '- 人工验收：必需；入队、MP4 存在或 probe 通过都不等于十元假设已验证。',
+        '',
+        'Hermes 读取入口：character-charm-results.jsonl（每行一轮）与本文件（最新一轮）。'
+    ) -join "`n"
+    Set-Content -LiteralPath $HermesLatest -Value $latest -Encoding UTF8
+    Save-Json (Join-Path $RunDirectory 'hermes-result.json') $record
+}
+
+function Update-ExperimentForH3 {
+    param([string]$Status,[string]$VideoPath,[object]$Probe,[string]$Reason)
+    $path=Join-Path $RunDir 'experiment.json'; $obj=Read-JsonFile $path; if($null -eq $obj){return}
+    $obj.recovery.actual_result=$Status
+    $h3Value=[ordered]@{status=$Status;video_path=$VideoPath;probe=$Probe;reason=$Reason;action_id=$RunId}
+    if($null -ne $obj.PSObject.Properties['h3']){$obj.h3=$h3Value}else{$obj | Add-Member -NotePropertyName h3 -NotePropertyValue $h3Value}
+    Save-Json $path $obj
+    $mdPath=Join-Path $RunDir 'experiment.md'
+    if(Test-Path -LiteralPath $mdPath){$md=Get-Content -LiteralPath $mdPath -Raw -Encoding UTF8;$replacement="- H3 实际生成结果：$Status";if($VideoPath){$replacement += "`n- H3 候选视频：$VideoPath"};$md=[regex]::Replace($md,'(?m)^- H3 实际生成结果：.*$',[System.Text.RegularExpressions.MatchEvaluator]{param($m)$replacement});Set-Content -LiteralPath $mdPath -Value $md -Encoding UTF8}
+}
+
+function Invoke-H3Microstory {
+    param([object]$Experiment)
+    if($NoH3 -or $DryRun){Update-ExperimentForH3 'NOT_RUN_DRY_RUN' '' $null 'DryRun/NoH3 switch';return [pscustomobject]@{status='NOT_RUN_DRY_RUN';video_path='';probe=$null;task_id=''}}
+    $polled=Poll-4090DTask -Experiment $Experiment
+    if($null -ne $polled){
+        $path=Join-Path $RunDir 'experiment.json';$obj=Read-JsonFile $path
+        if($null -ne $obj){$obj.recovery.actual_result=$polled.status;if($null -ne $obj.PSObject.Properties['h3']){$obj.h3=$polled}else{$obj|Add-Member -NotePropertyName h3 -NotePropertyValue $polled};Save-Json $path $obj}
+        $mdPath=Join-Path $RunDir 'experiment.md';if(Test-Path -LiteralPath $mdPath){$md=Get-Content -LiteralPath $mdPath -Raw -Encoding UTF8;$md=[regex]::Replace($md,'(?m)^- H3 实际生成结果：.*$',[System.Text.RegularExpressions.MatchEvaluator]{param($m)"- H3 实际生成结果：$($polled.status)"});if($polled.video_path){$md += "`n- H3 候选视频：$($polled.video_path)"};Set-Content -LiteralPath $mdPath -Value $md -Encoding UTF8}
+        return $polled
+    }
+    if(-not (Test-Path -LiteralPath $CloudWorkflow)){Update-ExperimentForH3 'BLOCKED_WORKFLOW_MISSING' '' $null "4090D workflow missing: $CloudWorkflow";return [pscustomobject]@{status='BLOCKED_WORKFLOW_MISSING';video_path='';probe=$null;task_id=''}}
+
+    $preflightLog=Join-Path $RunDir 'h3-4090d-status.log'
+    $statusResult=Invoke-4090DChannel -ChannelArgs @('status') -LogPath $preflightLog
+    $h3Status=[ordered]@{target='RTX 4090D';channel='Hermes -> h3_4090d_channel.py -> pool_run.py';channel_exit_code=$statusResult.exit_code;online=($statusResult.output -match '\[4090D\] ComfyUI: online');raw=$statusResult.output;submitted=$false}
+    Save-Json (Join-Path $RunDir 'h3-preflight.json') $h3Status
+    Write-RunLog "H3_4090D_PREFLIGHT | exit=$($statusResult.exit_code) | online=$($h3Status.online)"
+    if(-not $h3Status.online){Update-ExperimentForH3 'BLOCKED_4090D_COMFYUI_OFFLINE' '' $null 'Hermes 4090D status: ComfyUI API unavailable; no submit attempted';return [pscustomobject]@{status='BLOCKED_4090D_COMFYUI_OFFLINE';video_path='';probe=$null;task_id=''}}
+
+    $refs=@()
+    $roleImage=[string](Get-PropertyValue (Get-PropertyValue $Experiment 'character' $null) 'role_image_path' '')
+    $sceneImage=[string](Get-PropertyValue (Get-PropertyValue $Experiment 'scene' $null) 'scene_image_path' '')
+    if($roleImage -and (Test-Path -LiteralPath $roleImage)){$refs += $roleImage}
+    if($sceneImage -and (Test-Path -LiteralPath $sceneImage) -and $refs.Count -lt 2){$refs += $sceneImage}
+    $promptMd=Join-Path $RunDir 'h3_cloud_prompt.md'
+    $cloudPrompt=New-H3CloudPrompt -Experiment $Experiment -UseScenePicture ([bool]($sceneImage -and (Test-Path -LiteralPath $sceneImage)))
+    Set-Content -LiteralPath $promptMd -Value $cloudPrompt -Encoding UTF8
+    $charId=[string](Get-PropertyValue (Get-PropertyValue $Experiment 'character' $null) 'id' 'unknown')
+    $prefix="video/lililong/character_charm/$RunId/$charId"
+    $specPath=Join-Path $RunDir 'h3-4090d-spec.json'
+    $spec=[ordered]@{
+        by='QQ-Hermes-1904128621-Lililong-Character-Charm'
+        remote_input_prefix="hermes/lililong/$RunId"
+        defaults=[ordered]@{w=1280;h=736;len=240;steps=8;seed=0;note='candidate only; formal character charm experiment; human review required'}
+        tasks=@([ordered]@{card=$RunId;prompt_md=$promptMd;workflow=$CloudWorkflow;prefix=$prefix;w=1280;h=736;len=240;steps=8;seed=0;note='01-03 microstory; scene reference is environment only; role image is absent unless explicitly verified';ref=($refs -join ',')})
+    }
+    Save-Json $specPath $spec
+    $checkLog=Join-Path $RunDir 'h3-4090d-check.log'
+    $check=Invoke-4090DChannel -ChannelArgs @('check','--spec',$specPath) -LogPath $checkLog
+    # check-only 模式下，h3_4090d_channel.py 的退出码 0 即代表 preflight 通过
+    # （它内部已用真实回显判过，失败会 return 1）。
+    # 不要再拿中文字符串去 match —— 经 Windows 控制台编码层后中文会变乱码，
+    # 导致「实际全绿却被判 FAILED」（2026-09-21 踩过）。
+    if($check.exit_code -ne 0) {Update-ExperimentForH3 'BLOCKED_4090D_PREFLIGHT_FAILED' '' $null "check exit_code=$($check.exit_code); see $checkLog";return [pscustomobject]@{status='BLOCKED_4090D_PREFLIGHT_FAILED';video_path='';probe=$null;task_id=''}}
+    $submitLog=Join-Path $RunDir 'h3-4090d-submit.log'
+    $submit=Invoke-4090DChannel -ChannelArgs @('submit','--spec',$specPath) -LogPath $submitLog
+    $taskId='';$m=[regex]::Match($submit.output,'(?m)\[OK\] 入池\s+([^\s|]+)');if($m.Success){$taskId=$m.Groups[1].Value}
+    # 同理：submit 的成败看退出码（channel 内部已用真实回显判过，未确认写入会 return 1），
+    # 别 match 中文 '已写入 pending'——编码层会把它变成乱码导致误判 FAILED。
+    if($submit.exit_code -ne 0){Update-ExperimentForH3 'FAILED_4090D_SUBMIT' '' $null "submit exit_code=$($submit.exit_code); see $submitLog";return [pscustomobject]@{status='FAILED_4090D_SUBMIT';video_path='';probe=$null;task_id=$taskId}}
+    $result=[ordered]@{status='已入队_待4090D生产';video_path='';probe=$null;task_id=$taskId;remote_prefix=$prefix;spec=$specPath;check_log=$checkLog;submit_log=$submitLog;input_mode=$(if($roleImage -and (Test-Path -LiteralPath $roleImage)){'Ref2VA_role_plus_scene'}else{'Ref2VA_scene_environment_only_role_text_locked'});reason='queued through Hermes channel; actual MP4, remote/local probe and human review still pending'}
+    Update-ExperimentForH3 '已入队_待4090D生产' '' $null 'check passed and task was written to remote pending; no MP4 claim'
+    $obj=Read-JsonFile (Join-Path $RunDir 'experiment.json');if($null -ne $obj){$obj.h3=$result;Save-Json (Join-Path $RunDir 'experiment.json') $obj}
+    Write-RunLog "H3_4090D_SUBMITTED | task_id=$taskId | prefix=$prefix"
+    return [pscustomobject]$result
+}
+
+if(-not (Acquire-RunLock)){exit 0}
+try {
+    Write-RunLog "RUN_START | scheduled=$Scheduled | manual=$Manual | dry_run=$DryRun | run_id=$RunId"
+    $state=Get-State; $source=Get-SourceSnapshot; $inventory=Get-AssetInventory
+    Save-Json (Join-Path $RunDir 'preflight-source.json') $source; Save-Json (Join-Path $RunDir 'preflight-assets.json') $inventory
+    $experiment=$null; $activeRunDir=[string]$state.pending_run_dir
+    if($activeRunDir -and (Test-Path -LiteralPath (Join-Path $activeRunDir 'experiment.json'))){$experiment=Read-JsonFile (Join-Path $activeRunDir 'experiment.json');$resumeId=[string](Get-PropertyValue (Get-PropertyValue $experiment 'character' $null) 'id' '');if($null -ne $experiment -and $resumeId -and $resumeId -ne 'unknown'){Write-RunLog "RESUME_PENDING_EXPERIMENT | pending=$activeRunDir";$RunDir=$activeRunDir}else{$experiment=$null;Write-RunLog 'DISCARD_INVALID_PENDING_EXPERIMENT | missing character id'}}
+    if($null -eq $experiment){
+        $cards=@($inventory.role_cards);if($cards.Count -eq 0){throw 'NO_ROLE_CARDS_FOUND'}
+        $roleIndex=[int]$state.next_index % $cards.Count; $generationPrompt=Build-GenerationPrompt -Source $source -Inventory $inventory -RoleIndex $roleIndex -PreviousState $state
+        try {
+            if($FallbackOnly){throw 'FALLBACK_ONLY_REQUESTED'}
+            $experiment=Invoke-CodexGeneration -Prompt $generationPrompt -Phase 'experiment_generation'
+            Assert-Experiment $experiment
+            Write-RunLog 'GENERATION_METHOD | codex_exec_json'
+        } catch {
+            # 计划任务不能因嵌套 Codex 的环境策略、网络或编码问题丢掉本轮实验。
+            # 回退卡只使用角色卡中已确认身份/造型，所有关系都保持“待判定/候选”。
+            Write-RunLog ("CODEX_FALLBACK | " + $_.Exception.Message)
+            $experiment=New-FallbackExperiment -Inventory $inventory -Source $source -RoleIndex $roleIndex -PreviousState $state
+            Assert-Experiment $experiment
+            Write-RunLog 'GENERATION_METHOD | deterministic_safe_fallback'
+        }
+        Write-ExperimentFiles -Experiment $experiment -Source $source -Inventory $inventory
+        Save-State ([ordered]@{next_index=(($roleIndex+1)%$cards.Count);last_run=(Get-Date).ToString('o');last_card=[string]$experiment.character.id;mode='formal_character_charm_experiment';pending_run_dir=$RunDir})
+        Write-RunLog "EXPERIMENT_WRITTEN | character=$($experiment.character.id) | shots=8 | pending=$RunDir"
+    }
+    $h3=Invoke-H3Microstory -Experiment $experiment; $finalState=Get-State
+    $finalState.last_run=(Get-Date).ToString('o');$finalState.last_card=[string]$experiment.character.id
+    if($h3.status -eq '已生成_待人工验收'){$finalState.pending_run_dir=''}else{$finalState.pending_run_dir=$RunDir};Save-State $finalState
+    $runSummary=[ordered]@{action_id=$RunId;status=$h3.status;run_dir=$RunDir;experiment_id=[string]$experiment.experiment_id;character_id=[string]$experiment.character.id;character_name=[string]$experiment.character.name;shots_written=@($experiment.shots).Count;h3_video=[string](Get-PropertyValue $h3 'video_path' '');h3_probe=(Get-PropertyValue $h3 'probe' $null);h3_task_id=[string](Get-PropertyValue $h3 'task_id' '');h3=$h3;source_head=$source.head;source_origin_main=$source.origin_main;original_role_or_scene_assets_modified=$false;formal_canvas_modified=$false;theory_canon_modified=$false;human_review='REQUIRED'}
+    Save-Json (Join-Path $RunDir 'run-summary.json') $runSummary
+    Publish-HermesResult -Status ([string]$h3.status) -RunDirectory $RunDir -Experiment $experiment -H3 $h3 -Source $source
+    if(-not (Test-Path -LiteralPath $LogPath)){@('# 黎黎隆十元角色魅力实验｜小时记录','','- 每轮 8 条 H3 描述词；01–03 合成约 10 秒微故事。','- 输出均为候选；视频需人工验收后才可锁定。','')|Set-Content -LiteralPath $LogPath -Encoding UTF8}
+    $logVideo=[string](Get-PropertyValue $h3 'video_path' '')
+    $logTask=[string](Get-PropertyValue $h3 'task_id' '')
+    $logBlock=@("## $RunId｜$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss zzz'))｜$($experiment.character.name)",'',"- 角色卡：$($experiment.character.card_path)","- 关系假设：$($experiment.relation_hypothesis.relation_type)；$($experiment.relation_hypothesis.source_endpoint) → $($experiment.relation_hypothesis.target_endpoint)","- 被改变变量：$($experiment.relation_hypothesis.changed_variable)","- 写入 8 条描述词：$RunDir","- H3：$($h3.status)",$(if($logTask){"- Hermes/4090D task_id：$logTask"}else{'- Hermes/4090D task_id：无'}),$(if($logVideo){"- MP4：$logVideo"}else{'- MP4：未回收；入队不等于出片。'}),'- 原角色卡、正式 Canvas、十元理论正本：未修改。','- 人工验收：必需；不能从描述词或 MP4 存在直接推出魅力假设已验证。','') -join "`n"
+    Add-Content -LiteralPath $LogPath -Value $logBlock -Encoding UTF8
+    Write-Output ("RUN_OK action_id={0} character={1} h3={2} run_dir={3}" -f $RunId,$experiment.character.id,$h3.status,$RunDir)
+    if($h3.status -like 'FAILED*'){exit 20};exit 0
+} catch {
+    $message=$_.Exception.Message;Write-RunLog "FAIL | $message"
+    try{Save-Json (Join-Path $RunDir 'run-summary.json') ([ordered]@{action_id=$RunId;status='FAIL';blocker=$message;originals_modified=$false;formal_canvas_modified=$false;theory_canon_modified=$false})}catch{}
+    Write-Error $message;exit 99
+} finally { Release-RunLock }
+
+

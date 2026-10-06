@@ -1,6 +1,6 @@
 {
   "schema_version": "lililong-visual-character-candidates/v1.0",
-  "updated_at": "2026-10-01",
+  "updated_at": "2026-10-06",
   "source_manifest": "黎黎隆项目/00_总览/素材文字对接_全库图床清单_20261001.md",
   "source_sha_index": "黎黎隆项目/00_总览/图片定位与验证_20260930/SHA256SUMS_全部图片.txt",
   "caveat": "The current main branch role directory does not contain the historical H/N/S asset subdirectories referenced by the inventory. Therefore these are indexed visual candidates, not live H3-bindable assets, until resynced and reverified.",
@@ -20,12 +20,12 @@
     "production_gate": "Character Agent PASS + Asset Agent live-path/hash PASS + style/H3 binding PASS"
   },
   "counts": {
-    "total": 80,
+    "total": 86,
     "H": 30,
     "N": 30,
     "S": 19,
-    "NPC": 1,
-    "four_grid": 35,
+    "NPC": 7,
+    "four_grid": 41,
     "user_selected": 3,
     "P0": 3
   },
@@ -49,7 +49,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "H02",
@@ -70,7 +71,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "H03",
@@ -91,7 +93,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "H04",
@@ -114,7 +117,8 @@
       "production_ready": false,
       "priority": "P0",
       "text_design_path": "03_角色/角色库/候选角色/H04_旧门看守人.md",
-      "story_seed_path": "05_故事素材/角色绑定/H04_旧门看守人_故事种子.md"
+      "story_seed_path": "05_故事素材/角色绑定/H04_旧门看守人_故事种子.md",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "H05",
@@ -135,7 +139,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "H06",
@@ -156,7 +161,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P0"
+      "priority": "P0",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "H07",
@@ -177,7 +183,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "H08",
@@ -198,7 +205,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "H09",
@@ -219,7 +227,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P0"
+      "priority": "P0",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "H10",
@@ -240,7 +249,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C04"
     },
     {
       "visual_id": "H11",
@@ -261,7 +271,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "H12",
@@ -282,7 +293,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "H13",
@@ -303,7 +315,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "H14",
@@ -324,7 +337,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "H15",
@@ -345,7 +359,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "H16",
@@ -366,7 +381,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "H17",
@@ -387,7 +403,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "H18",
@@ -408,7 +425,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C02"
     },
     {
       "visual_id": "H19",
@@ -429,7 +447,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "H20",
@@ -450,7 +469,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "H21",
@@ -471,7 +491,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "H22",
@@ -492,7 +513,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "H23",
@@ -513,7 +535,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "H24",
@@ -534,7 +557,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C02"
     },
     {
       "visual_id": "H25",
@@ -555,7 +579,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "H26",
@@ -576,7 +601,8 @@
       "visual_readiness": "REFERENCE_PARTIAL",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P2_BLOCKED_FIX"
+      "priority": "P2_BLOCKED_FIX",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "H27",
@@ -597,7 +623,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "H28",
@@ -618,7 +645,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "H29",
@@ -639,7 +667,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "H30",
@@ -660,7 +689,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "N01",
@@ -681,7 +711,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C05"
     },
     {
       "visual_id": "N02",
@@ -702,7 +733,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "N03",
@@ -723,7 +755,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C02"
     },
     {
       "visual_id": "N04",
@@ -744,7 +777,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C05"
     },
     {
       "visual_id": "N05",
@@ -765,7 +799,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "N06",
@@ -786,7 +821,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C05"
     },
     {
       "visual_id": "N07",
@@ -807,7 +843,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "N08",
@@ -828,7 +865,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C02"
     },
     {
       "visual_id": "N09",
@@ -849,7 +887,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C02"
     },
     {
       "visual_id": "N10",
@@ -870,7 +909,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "N11",
@@ -891,7 +931,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "N12",
@@ -912,7 +953,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C04"
     },
     {
       "visual_id": "N13",
@@ -933,7 +975,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "N14",
@@ -954,7 +997,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "N15",
@@ -975,7 +1019,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C02"
     },
     {
       "visual_id": "N16",
@@ -996,7 +1041,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "N17",
@@ -1017,7 +1063,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "N18",
@@ -1038,7 +1085,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C02"
     },
     {
       "visual_id": "N19",
@@ -1059,7 +1107,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "N20",
@@ -1080,7 +1129,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C02"
     },
     {
       "visual_id": "N21",
@@ -1101,7 +1151,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "N22",
@@ -1122,7 +1173,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "N23",
@@ -1143,7 +1195,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C02"
     },
     {
       "visual_id": "N24",
@@ -1164,7 +1217,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "N25",
@@ -1185,7 +1239,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "N26",
@@ -1206,7 +1261,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "N27",
@@ -1227,7 +1283,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "N28",
@@ -1248,7 +1305,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "N29",
@@ -1269,7 +1327,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C02"
     },
     {
       "visual_id": "N30",
@@ -1290,7 +1349,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "S01",
@@ -1311,7 +1371,8 @@
       "visual_readiness": "HEAD_ONLY_REFINED",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C02"
     },
     {
       "visual_id": "S02",
@@ -1332,7 +1393,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "S03",
@@ -1353,7 +1415,8 @@
       "visual_readiness": "HEAD_ONLY_REFINED",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "S04",
@@ -1374,7 +1437,8 @@
       "visual_readiness": "REFERENCE_PARTIAL",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "S05",
@@ -1395,7 +1459,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "S06",
@@ -1416,7 +1481,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "S07",
@@ -1437,7 +1503,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "S08",
@@ -1458,7 +1525,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C01"
     },
     {
       "visual_id": "S09",
@@ -1479,7 +1547,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "S10",
@@ -1500,7 +1569,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "S11",
@@ -1521,7 +1591,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "S12",
@@ -1542,7 +1613,8 @@
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "S13",
@@ -1563,7 +1635,8 @@
       "visual_readiness": "HEAD_ONLY_REFINED",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "S14",
@@ -1584,7 +1657,8 @@
       "visual_readiness": "HEAD_ONLY_REFINED",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "S15",
@@ -1605,7 +1679,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "S16",
@@ -1626,7 +1701,8 @@
       "visual_readiness": "HEAD_ONLY_REFINED",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "S17",
@@ -1647,7 +1723,8 @@
       "visual_readiness": "HEAD_ONLY_REFINED",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "S18",
@@ -1668,7 +1745,8 @@
       "visual_readiness": "HEAD_ONLY_REFINED",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "C03"
     },
     {
       "visual_id": "S19",
@@ -1689,7 +1767,8 @@
       "visual_readiness": "HEAD_ONLY_DESIGN_PENDING",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P3"
+      "priority": "P3",
+      "p00_five_color": "MONO"
     },
     {
       "visual_id": "NPC-01",
@@ -1705,12 +1784,145 @@
       "user_selected": false,
       "notes": "",
       "character_registration": "UNREGISTERED_VISUAL_CANDIDATE",
-      "world_region": "UNASSIGNED",
-      "p00_color_bucket": "UNASSIGNED",
+      "world_region": "披肩坡市",
+      "p00_color_bucket": "C02",
       "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
       "live_repo_asset_status": "INDEXED_IN_INVENTORY__DIRECT_ASSET_PATH_NOT_PRESENT_ON_CURRENT_MAIN",
       "production_ready": false,
-      "priority": "P1"
+      "priority": "P1",
+      "p00_five_color": "C02"
+    },
+    {
+      "visual_id": "NPC-02",
+      "pool": "NPC",
+      "name_hint": "阶梯壳背老人",
+      "legacy_candidate_bucket": "UNASSIGNED",
+      "best_view": "FOUR_GRID_CANDIDATE",
+      "best_file": "15_阶梯壳背老人_四格_候选01.png",
+      "inventory_path": "03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/15_阶梯壳背老人_四格_候选01.png",
+      "sha256": "921543f53894436294741a94aa73d5e0d006f542f51193098dc71f47aee62058",
+      "inventory_kb": "1975",
+      "latest_evidence_date": "2026-09-23",
+      "user_selected": false,
+      "notes": "披肩坡市关联NPC（674-173 分工：WorkBuddy 设计关联场景/组织）",
+      "character_registration": "UNREGISTERED_VISUAL_CANDIDATE",
+      "world_region": "披肩坡市",
+      "p00_color_bucket": "C01",
+      "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
+      "live_repo_asset_status": "LIVE_FILE_ON_DISK__VAULT_CANONICAL",
+      "production_ready": false,
+      "priority": "P3",
+      "p00_five_color": "C01"
+    },
+    {
+      "visual_id": "NPC-03",
+      "pool": "NPC",
+      "name_hint": "听泡等车孩子",
+      "legacy_candidate_bucket": "UNASSIGNED",
+      "best_view": "FOUR_GRID_CANDIDATE",
+      "best_file": "16_听泡等车孩子_四格_候选01.png",
+      "inventory_path": "03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/16_听泡等车孩子_四格_候选01.png",
+      "sha256": "cc6c1b28e09af13ae02824bc3fc9161e83c47bba17f1348caa731083df334d00",
+      "inventory_kb": "1471",
+      "latest_evidence_date": "2026-09-23",
+      "user_selected": false,
+      "notes": "披肩坡市关联NPC（674-173 分工：WorkBuddy 设计关联场景/组织）",
+      "character_registration": "UNREGISTERED_VISUAL_CANDIDATE",
+      "world_region": "披肩坡市",
+      "p00_color_bucket": "MONO",
+      "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
+      "live_repo_asset_status": "LIVE_FILE_ON_DISK__VAULT_CANONICAL",
+      "production_ready": false,
+      "priority": "P3",
+      "p00_five_color": "MONO"
+    },
+    {
+      "visual_id": "NPC-04",
+      "pool": "NPC",
+      "name_hint": "高领雨披通勤者",
+      "legacy_candidate_bucket": "UNASSIGNED",
+      "best_view": "FOUR_GRID_CANDIDATE",
+      "best_file": "17_高领雨披通勤者_四格_候选01.png",
+      "inventory_path": "03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/17_高领雨披通勤者_四格_候选01.png",
+      "sha256": "57f24bc908667b73044a4eef87025f99d43acdfe02c5e7de7a30256b93eaa913",
+      "inventory_kb": "1699",
+      "latest_evidence_date": "2026-09-23",
+      "user_selected": false,
+      "notes": "披肩坡市关联NPC（674-173 分工：WorkBuddy 设计关联场景/组织）",
+      "character_registration": "UNREGISTERED_VISUAL_CANDIDATE",
+      "world_region": "披肩坡市",
+      "p00_color_bucket": "C05",
+      "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
+      "live_repo_asset_status": "LIVE_FILE_ON_DISK__VAULT_CANONICAL",
+      "production_ready": false,
+      "priority": "P3",
+      "p00_five_color": "C05"
+    },
+    {
+      "visual_id": "NPC-05",
+      "pool": "NPC",
+      "name_hint": "喉囊邻居",
+      "legacy_candidate_bucket": "UNASSIGNED",
+      "best_view": "FOUR_GRID_CANDIDATE",
+      "best_file": "18_喉囊邻居_四格_候选01.png",
+      "inventory_path": "03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/18_喉囊邻居_四格_候选01.png",
+      "sha256": "ec91470a174243337c84f97de6bb83aaef0dc23b1d70bbe2518ea33ce8359d2b",
+      "inventory_kb": "1697",
+      "latest_evidence_date": "2026-09-23",
+      "user_selected": false,
+      "notes": "披肩坡市关联NPC（674-173 分工：WorkBuddy 设计关联场景/组织）",
+      "character_registration": "UNREGISTERED_VISUAL_CANDIDATE",
+      "world_region": "披肩坡市",
+      "p00_color_bucket": "C01",
+      "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
+      "live_repo_asset_status": "LIVE_FILE_ON_DISK__VAULT_CANONICAL",
+      "production_ready": false,
+      "priority": "P3",
+      "p00_five_color": "C01"
+    },
+    {
+      "visual_id": "NPC-06",
+      "pool": "NPC",
+      "name_hint": "背壳市集四足居民",
+      "legacy_candidate_bucket": "UNASSIGNED",
+      "best_view": "FOUR_GRID_CANDIDATE",
+      "best_file": "19_背壳市集四足居民_四格_候选01.png",
+      "inventory_path": "03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/19_背壳市集四足居民_四格_候选01.png",
+      "sha256": "8158b7b7464929b6d3ceb12ab8181f3ed740e35ed7835d60566a8ff0de006a94",
+      "inventory_kb": "1409",
+      "latest_evidence_date": "2026-09-23",
+      "user_selected": false,
+      "notes": "披肩坡市关联NPC（674-173 分工：WorkBuddy 设计关联场景/组织）",
+      "character_registration": "UNREGISTERED_VISUAL_CANDIDATE",
+      "world_region": "披肩坡市",
+      "p00_color_bucket": "C02",
+      "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
+      "live_repo_asset_status": "LIVE_FILE_ON_DISK__VAULT_CANONICAL",
+      "production_ready": false,
+      "priority": "P3",
+      "p00_five_color": "C02"
+    },
+    {
+      "visual_id": "NPC-07",
+      "pool": "NPC",
+      "name_hint": "宽披肩抱碗居民",
+      "legacy_candidate_bucket": "UNASSIGNED",
+      "best_view": "FOUR_GRID_CANDIDATE",
+      "best_file": "20_宽披肩抱碗居民_四格_候选01.png",
+      "inventory_path": "03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/20_宽披肩抱碗居民_四格_候选01.png",
+      "sha256": "827462c56ef0c20f93c6fcc4eaa4fbe04ef6a777d20e473cb2a72b15b280420b",
+      "inventory_kb": "1623",
+      "latest_evidence_date": "2026-09-23",
+      "user_selected": false,
+      "notes": "披肩坡市关联NPC（674-173 分工：WorkBuddy 设计关联场景/组织）",
+      "character_registration": "UNREGISTERED_VISUAL_CANDIDATE",
+      "world_region": "披肩坡市",
+      "p00_color_bucket": "C01",
+      "visual_readiness": "FOUR_GRID_CANDIDATE_NEEDS_IDENTITY_CHECK",
+      "live_repo_asset_status": "LIVE_FILE_ON_DISK__VAULT_CANONICAL",
+      "production_ready": false,
+      "priority": "P3",
+      "p00_five_color": "C01"
     }
   ]
 }

@@ -2036,6 +2036,46 @@
       "width": 480,
       "height": 300,
       "label": "SCIMG-01｜森林湖泊候选回收表（4项；非已批准背景）"
+    },
+    {
+      "id": "sc06_return_use_v1",
+      "type": "file",
+      "file": "黎黎隆项目/04_场景/01_五色视觉系统/SC-06_门站带/SC-06_返身门站一次完整使用_v1.png",
+      "x": 1515,
+      "y": 2520,
+      "width": 300,
+      "height": 169,
+      "color": "#142A34"
+    },
+    {
+      "id": "sc02_departure_act_v1",
+      "type": "file",
+      "file": "黎黎隆项目/04_场景/01_五色视觉系统/R5_锚港/SC-02_自由锚港_离船权兑现_v1.png",
+      "x": 1180,
+      "y": 1350,
+      "width": 300,
+      "height": 169,
+      "color": "#913840"
+    },
+    {
+      "id": "sc18_migration_h",
+      "type": "text",
+      "text": "## SC-18｜巨物迁徙改泊湾\n天上巨鲸经过引发潮涌，居民抬高系泊点并迁移浮台。巨物改变水位与停靠制度；候选，待验收。",
+      "x": 220,
+      "y": 8500,
+      "width": 350,
+      "height": 260,
+      "color": "#69D4CE"
+    },
+    {
+      "id": "sc18_migration_v1",
+      "type": "file",
+      "file": "黎黎隆项目/04_场景/01_五色视觉系统/SC-18_巨物迁徙改泊湾/SC-18_巨物迁徙改泊湾_潮位变化_v1.png",
+      "x": 610,
+      "y": 8470,
+      "width": 960,
+      "height": 540,
+      "color": "#69D4CE"
     }
   ],
   "edges": [
@@ -2381,6 +2421,33 @@
       "toEnd": "arrow",
       "color": "#0f6e56",
       "label": "BATCH-01 · SCIMG-01 候选回收"
+    },
+    {
+      "id": "e_sc06_return_use_v1",
+      "fromNode": "sc06_h",
+      "fromSide": "right",
+      "toNode": "sc06_return_use_v1",
+      "toSide": "left",
+      "color": "#142A34",
+      "label": "实际返身操作候选"
+    },
+    {
+      "id": "e_sc02_departure_act_v1",
+      "fromNode": "sc02_h",
+      "fromSide": "right",
+      "toNode": "sc02_departure_act_v1",
+      "toSide": "left",
+      "color": "#913840",
+      "label": "离船权实际发生候选"
+    },
+    {
+      "id": "e_sc18_migration_v1",
+      "fromNode": "sc18_migration_h",
+      "fromSide": "right",
+      "toNode": "sc18_migration_v1",
+      "toSide": "left",
+      "color": "#69D4CE",
+      "label": "迁徙造成潮位与改泊候选"
     }
   ],
   "metadata": {

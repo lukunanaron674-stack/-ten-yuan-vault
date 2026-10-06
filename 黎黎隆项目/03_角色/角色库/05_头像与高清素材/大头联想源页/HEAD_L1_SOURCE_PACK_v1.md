@@ -1,6 +1,88 @@
 # HEAD-L1-SOURCE-PACK v1｜L1 两份头像源文件与文字源整理
 
-> 工单：Linear `674-169` HEAD-L1-SOURCE-ORGANIZE（父 `674-156` HEAD-L1-REPRO）
+> **状态：FROZEN = TRUE（2026-10-06 冻结，工单 `674-167`）**
+> 机读入口：同目录 `HEAD_L1_SOURCE_PACK_v1.manifest.json`
+> 冻结后 RUN-A/B/C（674-254/255/256）只允许消费本包，不得临时增删约束。
+
+## 冻结头（固定输入字段）
+
+| 字段 | 值 |
+|---|---|
+| SOURCE_PACK_ID | `HEAD_L1_SOURCE_PACK` |
+| SOURCE_PACK_VERSION | `v1` |
+| SOURCE_PATH | `黎黎隆项目/03_角色/角色库/05_头像与高清素材/大头联想源页/`（md + manifest.json） |
+| ASSET_MANIFEST | 15 项，见 §冻结资产清单（全部 PRESENT，SHA 实测） |
+| ASSET_SHA256 | REQUIRED 唯一图像输入 = `62f101a92fa72e62d94966b60b6001dc3eff237d754ef1024b50459d01b888fa` |
+| PROMPT_SPEC | 见 §PROMPT_SPEC（英文，来自 RUN-A receipt） |
+| NEGATIVE_CONSTRAINT | 见 §NEGATIVE_CONSTRAINT |
+| DIVERSITY_CONSTRAINT_REF | `674-259` / `DIVERSITY_CONSTRAINT_v1`（已冻结） |
+| OUTPUT_LAYOUT | 3 列 × 5 行 = 15 个头肩候选，972×1618，每 RUN 出 1 板 |
+| FROZEN | `TRUE` |
+| SOURCE_PACK_READY | `PASS` |
+
+### REQUIRED 资产（唯一图像输入）
+
+- `A_POSITIVE_BASELINE` → `…/头像精修候选_20261003_第三组/头像精修_第三组_3x5_CANDIDATE.png`
+- SHA-256：`62f101a92fa72e62d94966b60b6001dc3eff237d754ef1024b50459d01b888fa`｜2,421,642 bytes｜972×1618
+- 依据：RUN-A / RUN-B / RUN-C 三份 receipt 均记录 `source_sha256` 为此值，且 `source_role = the only image input`
+
+### 冻结资产清单（15 项，SHA 本次实测）
+
+| key | role | SHA-256（前 16） | bytes |
+|---|---|---|---|
+| A_POSITIVE_BASELINE | **REQUIRED** | `62f101a92fa72e62` | 2421642 |
+| A_SIBLING_G1 | PROVENANCE | `9d57640b21cc5e59` | 2562772 |
+| A_SIBLING_G2 | PROVENANCE | `43d524f09e99b14b` | 2339224 |
+| LEGACY_CAND01 | CONTEXT | `51a451f10f75a0f8` | 1812701 |
+| LEGACY_CAND03 | CONTEXT | `44f188724da1f347` | 2287445 |
+| B_REF_01 | REFERENCE | `44ccbc154eed28c9` | 1521861 |
+| B_REF_02 | REFERENCE | `319c5feaf0a44a10` | 1833177 |
+| B_REF_03 | REFERENCE | `e6a72398016b2aa3` | 2460467 |
+| B_REF_04 | REFERENCE | `9366267d990fad85` | 277432 |
+| B_REF_05 | REFERENCE | `e1379dff0d0dbce0` | 362871 |
+| B_USERORIG_01 | REFERENCE | `3cbc5a86444427d2` | 2819697 |
+| B_USERORIG_02 | REFERENCE | `c4906d962353173d` | 2353830 |
+| B_USERORIG_03 | REFERENCE | `cb78d33b803e7e96` | 2179242 |
+| B_USERORIG_04 | REFERENCE | `57ee6823d4ea75a4` | 1082192 |
+| B_REF_NEWBASE | REFERENCE | `6d6718918891eb17` | 3028410 |
+
+完整路径见 manifest.json。`missing_count = 0`。
+
+### PROMPT_SPEC（exact）
+
+```text
+Generate one new 3x5 board with exactly 15 head-and-shoulder character candidates.
+Use the provided positive source image only as the visual reference for style and structural diversity language.
+Required drawing language: ink / charcoal / dry brush / gouache.
+Use restrained P00-like color behavior.
+Structural diversity must include at least several of: mechanical, hooded, hat/helmet,
+horn/ear, older age, short-haired, non-human.
+```
+
+- 输入图像：仅 `A_POSITIVE_BASELINE`
+- 来源：RUN-A receipt「Generation scope」+ `674-254` 描述；RUN-A/B/C 三次一致
+
+### NEGATIVE_CONSTRAINT
+
+1. 不使用 ComfyUI / H3 / 本地 diffusion workflow。
+2. 不使用其他 RUN 的输出作为输入或上下文。
+3. 不自行改角色设定、画风目标或输入模板。
+4. 禁止 `template_collapse`：不得出现「同脸换饰品」式复用。
+5. 禁止「统一极端左视 + 半垂眼」成为默认解（来自 674-254 眼睛/视线约束）。
+6. 主要可见眼的虹膜 / 瞳孔必须清晰可读，能直接辨认颜色。
+7. 白发不得成为默认解（RUN-B 7/15 为当前可接受上限基线）。
+8. 头部剪影差异必须来自结构，不靠小配件。
+9. 禁止 fallback 到历史聊天、旧候选图或未登记本地素材。
+
+### DIVERSITY_CONSTRAINT_REF
+
+- `674-259`｜`DIVERSITY_CONSTRAINT_v1`｜`DIVERSITY_CONSTRAINT_FROZEN = TRUE`
+- 审核维度固定：head_silhouette_diversity / structural_diversity / face_language / age_read / gaze_readability / hair_head_repetition / template_collapse
+- 下一轮 RUN 不得临时增删约束；修改须升版本并留 changelog
+
+---
+
+> 工单：Linear `674-169` HEAD-L1-SOURCE-ORGANIZE（父 `674-156` HEAD-L1-REPRO）；冻结升级见 `674-167`
 > 目标：把 L1 当前两份真正输入源整理成可验证 source pack，服务 clean-room 复刻。
 > 规则：不生图 / 不四宫格 / 不做 L2。找不到即标 PARTIAL/MISSING，不脑补。
 > 校验：size + SHA-256 + 尺寸，全部实算（Python hashlib + PIL）。
@@ -146,3 +228,23 @@
 2. **B→A 绑定**：色卡发散参考图与第三组 3×5 的逐图对应关系未建立（同源参考，非逐图证据）。
 
 以上两项均不阻塞 L1 复刻启动；正向基线实体与溯源链已 VERIFIED。
+
+---
+
+## CHANGELOG
+
+### v1 · 2026-10-06 · FROZEN
+
+1. `FROZEN = TRUE`，新增机读 `HEAD_L1_SOURCE_PACK_v1.manifest.json`。
+2. 补齐 15 项资产的实测 SHA-256（本次定向计算，非全库扫描）；正向基线值与 674-169 pack 记录交叉一致。
+3. 写入 `PROMPT_SPEC`（取自 RUN-A receipt 的 Generation scope，三次 RUN 一致）。
+4. 写入 `NEGATIVE_CONSTRAINT`（674-254 眼睛/视线约束 + 674-259 FAIL 条件）。
+5. 挂载 `DIVERSITY_CONSTRAINT_REF → 674-259 / DIVERSITY_CONSTRAINT_v1`（已冻结）。
+6. 声明 `SOURCE_PACK_READY = PASS`，解锁 674-254 / 255 / 256 的下一轮 clean-room 复跑。
+
+### 冻结后规则
+
+- CODEX IMAGE 只消费本包，不负责补素材、不负责改规则。
+- 缺任一 REQUIRED 资产或 SHA 不符 → `SOURCE_PACK_READY = FAIL`，不得开跑。
+- 674-254 / 255 / 256 已有图片全部保留，不删除、不视为白跑。
+- 本包修改必须升版本（v2）并留 changelog。
