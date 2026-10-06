@@ -548,6 +548,17 @@ Canvas决定“解决什么”；小时调度决定“现在推进哪个节点�
 
 任何框不得仅凭聊天上下文重新建立状态。GitHub 本目录是跨框正本。
 
+## 14.8｜D-AGENCY 674-121｜ROUND-2 自主权分级｜2026-10-06
+
+> 正文：[[D-AGENCY_674-121]]
+
+- L3 AUTO：高 confidence / 高 reversibility / 低 preference-load / 小 blast-radius。
+- L2 AUTO + CHECKPOINT：可自动，但必须保留执行前状态、输入版本、回执和恢复点。
+- L1 USER_REVIEW：高审美/价值偏好、低可逆、高影响面，或候选升级为正式正本。
+- L0 BLOCK / STOP：关键输入不可验证、source-of-truth 冲突、缺原始资产或权限。
+- ROUND-2 DONE。
+- NEXT：ROUND-3 反馈沉淀（ACCEPT / REJECT / MODIFY → 可复用知识，防止一次性偏好错误泛化）。
+
 ## 15. GitHub 同步债登记｜2026-10-04
 
 ### 已补齐
