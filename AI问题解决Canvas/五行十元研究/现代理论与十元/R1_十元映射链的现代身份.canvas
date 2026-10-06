@@ -1,0 +1,195 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 700,
+      "height": 430,
+      "color": "1",
+      "text": "# 现代理论 × 十元｜R1 DONE\n\n十元现代身份不是单一理论。\n\n最强组合：\n**关系抽象 + 组合式表示 + Structure-Mapping + 结构保持映射**\n\n核心：\n表层名字可换，关系系统必须可检验地保持。"
+    },
+    {
+      "id": "color",
+      "type": "text",
+      "x": -1200,
+      "y": -620,
+      "width": 600,
+      "height": 440,
+      "color": "2",
+      "text": "# ① 色彩关系经验｜SOURCE\n\n补色 → **张扬 Z**\n互相强化 / 振动 / 强度抬高\n\n邻近/类似色 → **耐 N**\n连续 / 协调 / 稳定观看\n\n对比关系 → **醒 X**\n差异拉开 / 边界清楚 / 醒目\n\n⚠️ 是用户的三种关系效果抽象，不是“印象派正式三分法”。"
+    },
+    {
+      "id": "abstract",
+      "type": "text",
+      "x": -1200,
+      "y": -40,
+      "width": 600,
+      "height": 420,
+      "color": "3",
+      "text": "# ② 关系抽象｜Relational Abstraction\n\n抽掉红/绿/蓝这些对象属性。\n保留：\n- 互相强化\n- 稳定协调\n- 清楚区分\n\n三元 = **relational effect primitives**\n更像人工关系基底，暂不叫 learned latent space。"
+    },
+    {
+      "id": "composition",
+      "type": "text",
+      "x": -420,
+      "y": -620,
+      "width": 620,
+      "height": 430,
+      "color": "4",
+      "text": "# ③ 三元 → 组合｜Compositional Representation\n\nX / Z / N = primitives\n\n通过组合规则 C 展开复杂位置。\n\n十元不是 10 个平铺 class；\n是**由基础构件+组合方式生成的关系位置空间**。\n\n关键：最终标签必须保留组合 provenance。"
+    },
+    {
+      "id": "wuxing",
+      "type": "text",
+      "x": -420,
+      "y": -40,
+      "width": 620,
+      "height": 440,
+      "color": "5",
+      "text": "# ④ 五行十位｜Relational Schema Alignment\n\n三元组合\n→ 对齐阴阳×五行十位\n\n五行角色：\n**intermediate relational scaffold**\n中间关系骨架\n\n提供：\n五父位 / 阴阳十位 / 生克循环 / 对位张力\n\n不是装饰，也不是有效性证明。"
+    },
+    {
+      "id": "relations",
+      "type": "text",
+      "x": 380,
+      "y": -620,
+      "width": 640,
+      "height": 470,
+      "color": "5",
+      "text": "# ⑤ 深层关系映射｜Structure-preserving candidate\n\n映射的不只名字：\n还要保存\n- relation type\n- direction\n- composition\n- higher-order relation\n\n数学候选：\n**homomorphism > isomorphism**\n\n同构要求太强；十元更可能是选择性关系保持。"
+    },
+    {
+      "id": "smt",
+      "type": "text",
+      "x": 380,
+      "y": -20,
+      "width": 650,
+      "height": 500,
+      "color": "1",
+      "text": "# ⑥ 跨领域换名｜Structure-Mapping Theory\n\nGentner 的关键：\n对象属性可以不同；\n真正重要的是关系系统对齐。\n\n这和十元最接近：\n角色/音乐/视觉/叙事名字全部不同，\n但若深层关系系统相同，才算有效映射。\n\n**当前最强现代邻居。**"
+    },
+    {
+      "id": "notanalogy",
+      "type": "text",
+      "x": 1210,
+      "y": -620,
+      "width": 650,
+      "height": 500,
+      "color": "6",
+      "text": "# 表面类比 vs 十元目标\n\n表面类比：\n红色 ≈ 愤怒\n\n十元目标：\n领域A：A限制B→C补入→路径改变\n领域B：A'限制B'→C'补入→路径改变\n\n对象可完全不同；\n**关系角色与高阶结构必须重复。**"
+    },
+    {
+      "id": "math",
+      "type": "text",
+      "x": 1210,
+      "y": 20,
+      "width": 650,
+      "height": 500,
+      "color": "4",
+      "text": "# 数学化边界\n\nHomomorphism｜候选\n保存指定关系/运算\n\nIsomorphism｜目前过强\n要求一一、可逆、完整保存\n\nFunctor｜未来候选\n还需定义 objects/morphisms/composition/identity\n\n⚠️ 不能因为“听起来像”就直接挂范畴论。"
+    },
+    {
+      "id": "stack",
+      "type": "text",
+      "x": 2050,
+      "y": -620,
+      "width": 700,
+      "height": 700,
+      "color": "1",
+      "text": "# 十元现代翻译 v1\n\n综合色彩实例\n↓\nRelational Abstraction\n↓\n三元关系基底 {X,Z,N}\n↓\nCompositional Representation\n↓\n十元候选位置\n↓\nRelational Schema Alignment（五行十位）\n↓\nTyped Relational Topology（生克补张）\n↓\nCross-domain Structure Mapping\n↓\nStructure-preservation Test\n\n**名字可以换，结构必须过测试。**"
+    },
+    {
+      "id": "conflict",
+      "type": "text",
+      "x": 2050,
+      "y": 220,
+      "width": 700,
+      "height": 480,
+      "color": "6",
+      "text": "# 仓库冲突登记\n\n旧文件仍写：\n“三元不派生十元 / 只做并列校验”\n\n用户 2026-10-07 最新核心：\n**三元是映射链底座，并经组合与五行形成十元。**\n\n研究层标记：\nSUPERSEDED BY USER CORE CORRECTION\n\n旧文件保留作历史版本，不作为现行理论依据。"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 2910,
+      "y": -200,
+      "width": 700,
+      "height": 620,
+      "color": "5",
+      "text": "# R2 NEXT｜结构保持到底保持什么？\n\n冻结 mapping h：\nsource → ten-yuan representation\n\n必须判断是否保存：\n- 三元组成\n- 生/克/补\n- 方向\n- 时序\n- 强度\n- 条件/因果\n- 高阶链结构\n\n并明确哪些可丢：\n名字 / 题材 / 外观 / 媒介\n\n目标：\n**真结构迁移 vs 只是看起来像。**"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "color",
+      "toNode": "abstract",
+      "label": "抽取关系效果"
+    },
+    {
+      "id": "e2",
+      "fromNode": "abstract",
+      "toNode": "composition",
+      "label": "三元基底"
+    },
+    {
+      "id": "e3",
+      "fromNode": "composition",
+      "toNode": "wuxing",
+      "label": "组合对齐十位"
+    },
+    {
+      "id": "e4",
+      "fromNode": "wuxing",
+      "toNode": "relations",
+      "label": "导入关系拓扑"
+    },
+    {
+      "id": "e5",
+      "fromNode": "relations",
+      "toNode": "smt",
+      "label": "跨域关系保持"
+    },
+    {
+      "id": "e6",
+      "fromNode": "smt",
+      "toNode": "notanalogy",
+      "label": "排除表面相似"
+    },
+    {
+      "id": "e7",
+      "fromNode": "relations",
+      "toNode": "math",
+      "label": "数学候选"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "toNode": "stack",
+      "label": "总翻译"
+    },
+    {
+      "id": "e9",
+      "fromNode": "conflict",
+      "toNode": "stack",
+      "label": "现行口径"
+    },
+    {
+      "id": "e10",
+      "fromNode": "stack",
+      "toNode": "next",
+      "label": "进入R2"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {
+      "type": "modern-theory-tenyuan-r1-mapping-identity",
+      "status": "R1-DONE",
+      "date": "2026-10-07",
+      "next": "R2-structure-preservation"
+    }
+  }
+}
