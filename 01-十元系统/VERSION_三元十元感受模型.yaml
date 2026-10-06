@@ -1,11 +1,28 @@
 model: 三元十元感受模型
-release_id: TY-FEELING-1.0.0-R1
-semantic_version: 1.0.0
+current_release_id: TY-FEELING-1.1.0-R2
+semantic_version: 1.1.0
 date: 2026-10-07
-status: R1_CORE_DEFINITION_FROZEN
+status: R2_IMPACT_SURFACE_MAPPED
 
 canonical_file: 01-十元系统/三元十元感受模型_核心正本_v1.0_20261007.md
 core_definition_commit: c8cd78b63fd7b2fb054d5191f8c4fff8e0134bfb
+
+releases:
+  - release_id: TY-FEELING-1.0.0-R1
+    semantic_version: 1.0.0
+    scope: core_definition_freeze
+    branch: release/tenyuan-feeling-v1.0.0-r1
+    release_sha: 9125c0da4c75913c0a4cf3a6b53a2350b953edc0
+    immutable_intent: true
+
+  - release_id: TY-FEELING-1.1.0-R2
+    semantic_version: 1.1.0
+    scope: migration_impact_surface_map
+    report: AI问题解决Canvas/五行十元研究/R2_感受模型影响面盘点_20261007.md
+    canvas: AI问题解决Canvas/五行十元研究/R2_感受模型影响面盘点_20261007.canvas
+    branch: release/tenyuan-feeling-v1.1.0-r2
+    impact_scan_confirmed_minimum_files: 166
+    immutable_intent: true
 
 rollback:
   pre_migration_version: TY-LEGACY-0.9.0
@@ -13,11 +30,6 @@ rollback:
   pre_migration_branch: rollback/tenyuan-core-pre-feeling-v0.9.0
   restore_scope: 三元十元核心定位迁移前状态
   note: 仅在用户明确要求回滚时执行；禁止自动reset、force push或删除新版本历史。
-
-release:
-  branch: release/tenyuan-feeling-v1.0.0-r1
-  immutable_intent: true
-  note: 该分支作为R1冻结快照使用，后续R2/R3不得移动此分支；新版本另建新release分支。
 
 migration:
   from:
@@ -30,7 +42,16 @@ migration:
     - 五轴五组相反感受方向
     - 五行作为来源参照与母感受研究入口
     - 跨领域比较感受结构
-  next_round: R2_影响面盘点
+
+  r2_findings:
+    confirmed_minimum_impacted_files: 166
+    highest_risk:
+      - old_domain_mapping_protocols
+      - is_a_narrow_inheritance
+      - archetype_accuracy_and_composition_scoring
+      - auto_rebuild_scripts
+      - github_workflow_that_rebuilds_old_five_element_maps
+    next_round: R3_全量定义迁移
 
 rollback_policy:
   prefer: create_new_revert_commit_or_restore_from_snapshot
