@@ -189,6 +189,26 @@
       "width": 500,
       "height": 180,
       "color": "6"
+    },
+    {
+      "id": "r5_done",
+      "type": "text",
+      "x": 1700,
+      "y": 700,
+      "width": 470,
+      "height": 520,
+      "color": "5",
+      "text": "# R5｜哪些方向已经很挤？｜DONE\n\n★★★★★ 传统文化/非遗 + AI\n★★★★★ “AI赋能某某设计”\n★★★★☆ AI短片 / 用AI做一部动画\n★★★★☆ AI + IP / 文创\n★★★★☆ AI换风格 / 风格化\n★★★☆☆ AI + 互动 / AR / VR\n\n记住：\n只换题材，通常不算换问题。\n真正值得继续挖的是“具体麻烦”。"
+    },
+    {
+      "id": "r5_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文同辈研究地图_R5_哪些方向已经很挤.md",
+      "x": 1700,
+      "y": 1270,
+      "width": 470,
+      "height": 160,
+      "color": "6"
     }
   ],
   "edges": [
@@ -329,6 +349,24 @@
       "fromNode": "start_here_plain",
       "toNode": "root",
       "label": "先看这里"
+    },
+    {
+      "id": "e_r5a",
+      "fromNode": "r4_done",
+      "toNode": "r5_done",
+      "label": "继续"
+    },
+    {
+      "id": "e_r5b",
+      "fromNode": "r5_done",
+      "toNode": "r5_file",
+      "label": "想细看"
+    },
+    {
+      "id": "e_r5c",
+      "fromNode": "r5_done",
+      "toNode": "crowded",
+      "label": "更新"
     }
   ]
 }
