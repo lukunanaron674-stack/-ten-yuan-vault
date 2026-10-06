@@ -85,10 +85,10 @@
       "type": "text",
       "x": 0,
       "y": 500,
-      "width": 560,
-      "height": 290,
+      "width": 600,
+      "height": 420,
       "color": "5",
-      "text": "# 组合候选 B｜119 + 122\n\n**十元创作意图结构 → 预测真实创作选择**\n\n问题：加入关系结构后，是否比“只看画质/普通描述”更能预测最终接受、返工、否决？\n\n原创潜力高，实验要求也更高。\n\n仍保持候选。"
+      "text": "# 重点候选 B｜结构化创作意图 → 真实选择\n\n**核心命题：结构化创作意图对真实创作决策具有预测价值。**\n\n118｜把隐性风格/审美结构化\n→ 119｜关系 / 优先级 / 理由 / 动态轨迹\n→ 120｜冲突处理 + 非目标保持\n→ 122｜预测 ACCEPT / REWORK / REJECT\n\n方法门：112｜外部实证 / 盲标 / failure family\n\n内部开发：〈方志敏〉\n外部硬门：第二创作者 + 对方自己的项目\n\n状态：重点候选 / NOT FROZEN"
     },
     {
       "id": "bridgeC",
@@ -208,7 +208,7 @@
       "id": "e_B_chain",
       "fromNode": "bridgeB",
       "toNode": "chain",
-      "label": "进入总链"
+      "label": "重点候选"
     },
     {
       "id": "e_A_chain",
@@ -236,7 +236,7 @@
     }
   ],
   "metadata": {
-    "version": "1.1",
+    "version": "1.2",
     "frontmatter": {
       "type": "user-to-society-teaching-map",
       "status": "direction-exploration",
