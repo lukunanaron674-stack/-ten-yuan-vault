@@ -8,7 +8,7 @@
       "width": 620,
       "height": 390,
       "color": "1",
-      "text": "# 五行 × 十元｜独立研究总图\n\n**8轮研究 / 不预设十元正确**\n\n顺序：\n五行本身\n→ 五行与其他理论\n→ 五行与十元\n\n核心纪律：\n**禁止从十元倒推五行来证明十元。**"
+      "text": "# 五行 × 十元｜独立研究总图\n\n**8轮研究 / R1 DONE / R2 NEXT**\n\n顺序：\n五行本身\n→ 五行与其他理论\n→ 五行与十元\n\nR1 已确认：五行是长期形成、语义复合的历史系统，不是一次性完整理论。\n\n核心纪律：\n**禁止从十元倒推五行来证明十元。**"
     },
     {
       "id": "A",
@@ -25,10 +25,10 @@
       "type": "text",
       "x": -1450,
       "y": -900,
-      "width": 520,
-      "height": 400,
+      "width": 540,
+      "height": 520,
       "color": "2",
-      "text": "# R1｜五行是什么\n\n- “行”的含义\n- Five Elements / Phases / Processes\n- 早期材料\n- 木火土金水最初功能\n- 五行是否一开始就是完整理论\n\n产物：概念史 + 术语表"
+      "text": "# R1｜五行是什么｜DONE\n\n**关键结论**\n五行不是从一开始就等于“木火土金水+完整生克”的单一理论。\n\n当前识别四条形成线：\n1. 五的空间/数字结构\n2. 五材 / 资源\n3. 行为 / 德行\n4. phase / process / correlation\n\n成熟宇宙论不能简单译成固定“元素”，但早期五材线真实存在。\n\n★ 工作假设：MULTIPLE ORIGINS\n⚠️ 《洪范》年代/层次有争议\n\n详细研究见 R1 文件。"
     },
     {
       "id": "R2",
@@ -149,6 +149,16 @@
       "width": 620,
       "height": 220,
       "color": "1"
+    },
+    {
+      "id": "R1_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/R1_五行是什么_概念词义与早期材料.md",
+      "x": -2100,
+      "y": -900,
+      "width": 520,
+      "height": 220,
+      "color": "6"
     }
   ],
   "edges": [
@@ -235,15 +245,23 @@
       "fromNode": "R8",
       "toNode": "sot",
       "label": "详细总纲"
+    },
+    {
+      "id": "e_R1_file",
+      "fromNode": "R1",
+      "toNode": "R1_file",
+      "label": "R1详细研究"
     }
   ],
   "metadata": {
-    "version": "1.0",
+    "version": "1.1",
     "frontmatter": {
       "type": "wuxing-tenyuan-research-map",
       "status": "active",
       "rounds": 8,
-      "date": "2026-10-07"
+      "date": "2026-10-07",
+      "current_round": "R2",
+      "r1": "DONE"
     }
   }
 }
