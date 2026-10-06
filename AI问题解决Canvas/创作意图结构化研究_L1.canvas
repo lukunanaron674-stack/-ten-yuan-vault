@@ -1,0 +1,259 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 620,
+      "height": 390,
+      "color": "2",
+      "text": "# 创作意图结构化研究｜L1\n\n## 核心问题\n1. 别人怎么把创作意图结构化？\n2. 十元到底补在哪一层？\n3. 十元是否比普通 Intent Graph 有增量？\n\n**5 轮研究**\nR1→R2→R3→R4→R5\n\n状态：OPEN / R1 READY"
+    },
+    {
+      "id": "routeA",
+      "type": "text",
+      "x": -1450,
+      "y": -720,
+      "width": 520,
+      "height": 390,
+      "color": "5",
+      "text": "# A｜Attribute / Taxonomy\n\n意图 → 属性变量\nitem / silhouette / color / material / style\n\n强：WHAT\n弱：关系 / 主次 / 动态"
+    },
+    {
+      "id": "routeB",
+      "type": "text",
+      "x": -780,
+      "y": -720,
+      "width": 520,
+      "height": 390,
+      "color": "4",
+      "text": "# B｜Concept Graph\n\nToMigo\nNode = purpose/content/style\nEdge = interpretable relation\n\n**与 IRG 最近的社会 baseline**"
+    },
+    {
+      "id": "routeC",
+      "type": "text",
+      "x": -1450,
+      "y": -180,
+      "width": 520,
+      "height": 410,
+      "color": "4",
+      "text": "# C｜Intent / Reasoning Canvas\n\nDesignerlyLoop\nproblem framing\nconstraints\nstrategies\nevaluation criteria\nreasoning\n\n意图 = 可持续编辑对象"
+    },
+    {
+      "id": "routeD",
+      "type": "text",
+      "x": -780,
+      "y": -180,
+      "width": 520,
+      "height": 400,
+      "color": "3",
+      "text": "# D｜Evolving Intent Loop\n\nCreative Intention Loop\n↕\nExecution Loop\n↕\nOutput / Feedback\n\nIntent 会随过程变化"
+    },
+    {
+      "id": "routeE",
+      "type": "text",
+      "x": -1110,
+      "y": 390,
+      "width": 540,
+      "height": 400,
+      "color": "6",
+      "text": "# E｜Cross-stage Constraint Artifact\n\nRequirements\n→ Concept\n→ Evaluation\n→ Production\n\n核心：\n防 semantic decay / constraint drift"
+    },
+    {
+      "id": "layers",
+      "type": "text",
+      "x": -180,
+      "y": -740,
+      "width": 520,
+      "height": 480,
+      "color": "5",
+      "text": "# 社会已有的 5 层\n\nL1 WHAT｜属性\nL2 CONNECT｜概念关系\nL3 WHY｜推理/理由\nL4 CHANGE｜意图演化\nL5 SURVIVE｜跨阶段保持\n\n⚠️ “结构化意图”本身已经不是新点"
+    },
+    {
+      "id": "tenyuan",
+      "type": "text",
+      "x": 650,
+      "y": -720,
+      "width": 620,
+      "height": 540,
+      "color": "2",
+      "text": "# 十元的候选位置\n\n**不是整个 Intent Structure**\n而更可能是：\n## Creative Intent Relation Grammar\n\n生 / 克 / 补\n→ Typed Relation\n\n主 / 次\n→ Priority / Hierarchy\n\n体量 / 强度\n→ Relation Weight\n\n动态链\n→ Temporal Relation Transition\n\n起点→变化→终点\n→ Intent State Transition"
+    },
+    {
+      "id": "notnode",
+      "type": "text",
+      "x": 650,
+      "y": -80,
+      "width": 620,
+      "height": 380,
+      "color": "6",
+      "text": "# 十元不该替代什么\n\nGoal\nObject\nConstraint\nAttribute\nReference\nStage\nEvidence\n\n这些继续用普通字段。\n\n十元优先研究 **edge / relation / transition**，不要把所有东西硬塞成十元。"
+    },
+    {
+      "id": "baseline",
+      "type": "text",
+      "x": 650,
+      "y": 430,
+      "width": 620,
+      "height": 500,
+      "color": "3",
+      "text": "# 真正公平的 Baseline\n\nB0｜Natural Language\nB1｜Attribute / Taxonomy\nB2｜Concept Graph\nB3｜Generic Intent Graph\nGoal + Constraint + Choice\n+ Priority + Rationale + Dynamic Trace\nB4｜Ten-Yuan Relation Graph\nB3 + 生克补 + 主次 + 强度 + 动态链\n\n**真正问题：B4 是否稳定优于 B3？**"
+    },
+    {
+      "id": "r1",
+      "type": "text",
+      "x": -350,
+      "y": 1120,
+      "width": 460,
+      "height": 320,
+      "color": "4",
+      "text": "# R1｜现有方法谱系\n\n10–20 个系统\n归类结构路线\n\n输出：\n社会已有结构总谱\n\nDONE：类别趋于饱和"
+    },
+    {
+      "id": "r2",
+      "type": "text",
+      "x": 190,
+      "y": 1120,
+      "width": 460,
+      "height": 320,
+      "color": "4",
+      "text": "# R2｜Schema 字段拆解\n\nNode / Edge / Constraint\nPriority / Rationale\nTime / Stage / Evidence\n\n输出：字段比较矩阵"
+    },
+    {
+      "id": "r3",
+      "type": "text",
+      "x": 730,
+      "y": 1120,
+      "width": 460,
+      "height": 320,
+      "color": "2",
+      "text": "# R3｜十元映射\n\n十元逐项映射社会 schema\n\n找：\n同构 / 新增 / 不该映射\n\n禁止硬映射"
+    },
+    {
+      "id": "r4",
+      "type": "text",
+      "x": 1270,
+      "y": 1120,
+      "width": 460,
+      "height": 320,
+      "color": "3",
+      "text": "# R4｜GAP 审计\n\n是不是只是换名字？\n是否真多一个操作能力？\n\n只保留 1–3 个可能增量"
+    },
+    {
+      "id": "r5",
+      "type": "text",
+      "x": 1810,
+      "y": 1120,
+      "width": 480,
+      "height": 340,
+      "color": "1",
+      "text": "# R5｜验证设计\n\nB0–B4 对照\n\n预测：\nACCEPT / REWORK / REJECT\n优先级\n多轮保持\n跨阶段恢复\n\nB4≈B3 → 十元无增量\nB4>B3 → 才能主张关系语法价值"
+    },
+    {
+      "id": "routefile",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_L1_研究路线.md",
+      "x": 0,
+      "y": 1570,
+      "width": 600,
+      "height": 220,
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "a0",
+      "fromNode": "routeA",
+      "toNode": "layers",
+      "label": "WHAT"
+    },
+    {
+      "id": "a1",
+      "fromNode": "routeB",
+      "toNode": "layers",
+      "label": "CONNECT"
+    },
+    {
+      "id": "a2",
+      "fromNode": "routeC",
+      "toNode": "layers",
+      "label": "WHY"
+    },
+    {
+      "id": "a3",
+      "fromNode": "routeD",
+      "toNode": "layers",
+      "label": "CHANGE"
+    },
+    {
+      "id": "a4",
+      "fromNode": "routeE",
+      "toNode": "layers",
+      "label": "SURVIVE"
+    },
+    {
+      "id": "a5",
+      "fromNode": "layers",
+      "toNode": "root",
+      "label": "社会基线"
+    },
+    {
+      "id": "a6",
+      "fromNode": "root",
+      "toNode": "tenyuan",
+      "label": "十元关系"
+    },
+    {
+      "id": "a7",
+      "fromNode": "tenyuan",
+      "toNode": "notnode",
+      "label": "边界"
+    },
+    {
+      "id": "a8",
+      "fromNode": "notnode",
+      "toNode": "baseline",
+      "label": "公平验证"
+    },
+    {
+      "id": "r01",
+      "fromNode": "root",
+      "toNode": "r1",
+      "label": "R1"
+    },
+    {
+      "id": "r12",
+      "fromNode": "r1",
+      "toNode": "r2",
+      "label": "R2"
+    },
+    {
+      "id": "r23",
+      "fromNode": "r2",
+      "toNode": "r3",
+      "label": "R3"
+    },
+    {
+      "id": "r34",
+      "fromNode": "r3",
+      "toNode": "r4",
+      "label": "R4"
+    },
+    {
+      "id": "r45",
+      "fromNode": "r4",
+      "toNode": "r5",
+      "label": "R5"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {
+      "type": "creative-intent-structure-research",
+      "status": "open-r1-ready",
+      "rounds": 5,
+      "date": "2026-10-07"
+    }
+  }
+}
