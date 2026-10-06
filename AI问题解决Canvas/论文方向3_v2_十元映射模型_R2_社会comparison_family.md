@@ -1,3 +1,5 @@
+> ⚠️ **R3 术语修正**：R2 暂用的 “Theory-defined Bipolar Semantic Mapping Space” 过强。十元目前尚未定义连续轴、中点、距离函数与轴内插值，因此当前统一改称：**Theory-defined Semantic Mapping Scheme with Paired Oppositional Endpoints**。本文件其余 comparison family 结论继续有效。
+
 # 论文方向3 v2｜十元映射模型研究｜R2 社会映射模型 comparison family
 
 > 前提：旧“十元=关系层”路线已作废。
