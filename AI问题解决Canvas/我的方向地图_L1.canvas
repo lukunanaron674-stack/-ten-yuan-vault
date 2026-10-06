@@ -1,0 +1,202 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 520,
+      "height": 360,
+      "color": "1",
+      "text": "# 我的方向地图｜L1\n\n只收束 AI 问题总图中与我当前创作、毕设、论文、就业直接相关的方向。\n\n主项目：〈黎黎隆〉\n辅助案例：〈以青春赴可爱的中国〉\n\n主链：个人原创画风 → 视觉规范 → AIGC执行 → 一致性验证 → 连续动画生产"
+    },
+    {
+      "id": "c_intent",
+      "type": "text",
+      "x": 650,
+      "y": -520,
+      "width": 420,
+      "height": 260,
+      "color": "4",
+      "text": "# 1｜创作意图 → AI可执行\n\n来源：C｜控制与对齐\n\n问题：我自己知道“这是我的画风”，AI怎么知道？\n\n方向：视觉规律提取、Visual Facts、项目/角色/场景层级规则、CORE / RANGE / BAN。"
+    },
+    {
+      "id": "c_constraint",
+      "type": "text",
+      "x": 650,
+      "y": -180,
+      "width": 420,
+      "height": 280,
+      "color": "4",
+      "text": "# 2｜一致性与多约束\n\n来源：C｜控制与对齐\n\n问题：只改动作，为什么脸、服装、画风也跟着变？\n\n方向：角色一致性、场景一致性、非目标保持、LOCK / FLEX、Flat vs Hierarchical。"
+    },
+    {
+      "id": "d_agency",
+      "type": "text",
+      "x": 650,
+      "y": 180,
+      "width": 420,
+      "height": 260,
+      "color": "5",
+      "text": "# 3｜人机协同\n\n来源：D｜人机协作\n\n问题：哪些能自动跑，哪些必须等我审核？\n\n方向：生成/筛选/返工分工；审美决策保留给创作者；自动化边界与升级条件。"
+    },
+    {
+      "id": "e_eval",
+      "type": "text",
+      "x": 650,
+      "y": 520,
+      "width": 420,
+      "height": 280,
+      "color": "5",
+      "text": "# 4｜真实评价\n\n来源：E｜评价\n\n问题：AI说PASS不等于我真能用。\n\n方向：角色身份、比例、线面、色彩、风格归属、连续镜头可用性；盲评与真实接受/否决记录。"
+    },
+    {
+      "id": "f_prod",
+      "type": "text",
+      "x": -650,
+      "y": 520,
+      "width": 420,
+      "height": 310,
+      "color": "3",
+      "text": "# 5｜工业与生产\n\n来源：F｜生产工程\n\n问题：一张能生成，不等于能做8分钟动画。\n\n方向：批量资产、版本、状态、恢复、日志、连续镜头、长流程可靠性。\n\n核心：会生成 ≠ 能生产。"
+    },
+    {
+      "id": "h_author",
+      "type": "text",
+      "x": -650,
+      "y": 150,
+      "width": 420,
+      "height": 260,
+      "color": "6",
+      "text": "# 6｜作者性 / 就业 / 行业\n\n来源：H｜社会与制度\n\n问题：AI介入后，个人风格、作者判断和职业价值还剩什么？\n\n方向：作者性、原创视觉体系、岗位能力证明、AI作为生产工具而非风格来源。"
+    },
+    {
+      "id": "practice",
+      "type": "text",
+      "x": -650,
+      "y": -210,
+      "width": 420,
+      "height": 300,
+      "color": "2",
+      "text": "# 7｜项目实践证据\n\n〈黎黎隆〉：原创风格的扩展一致性\n〈以青春赴可爱的中国〉：既有视觉设计的复现一致性\n\n真实证据：角色卡、场景规范、参考图、失败图、连续镜头、审核记录、生产日志。"
+    },
+    {
+      "id": "paper",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文问题系统_L1.canvas",
+      "x": -650,
+      "y": -560,
+      "width": 420,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "thesis_cut",
+      "type": "text",
+      "x": 0,
+      "y": 470,
+      "width": 520,
+      "height": 300,
+      "color": "3",
+      "text": "# 当前论文最适合的切片\n\nRQ1：我的画风由哪些稳定视觉规律组成？\nRQ2：这些规律如何转成AIGC可执行视觉规范？\nRQ3：层级化规范是否比等量平铺描述更稳定？\n\n5000字只写这条小闭环，不把整个AI问题总库塞进论文。"
+    },
+    {
+      "id": "source",
+      "type": "file",
+      "file": "AI问题解决Canvas/AI问题解决总图_L1.canvas",
+      "x": -1200,
+      "y": -100,
+      "width": 360,
+      "height": 190,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_src_root",
+      "fromNode": "source",
+      "toNode": "root",
+      "label": "从总问题库收束"
+    },
+    {
+      "id": "e_root_intent",
+      "fromNode": "root",
+      "toNode": "c_intent",
+      "label": "核心"
+    },
+    {
+      "id": "e_root_constraint",
+      "fromNode": "root",
+      "toNode": "c_constraint",
+      "label": "核心"
+    },
+    {
+      "id": "e_root_agency",
+      "fromNode": "root",
+      "toNode": "d_agency",
+      "label": "协作"
+    },
+    {
+      "id": "e_root_eval",
+      "fromNode": "root",
+      "toNode": "e_eval",
+      "label": "验证"
+    },
+    {
+      "id": "e_root_prod",
+      "fromNode": "root",
+      "toNode": "f_prod",
+      "label": "落地"
+    },
+    {
+      "id": "e_root_h",
+      "fromNode": "root",
+      "toNode": "h_author",
+      "label": "外层"
+    },
+    {
+      "id": "e_root_practice",
+      "fromNode": "root",
+      "toNode": "practice",
+      "label": "证据"
+    },
+    {
+      "id": "e_root_paper",
+      "fromNode": "root",
+      "toNode": "paper",
+      "label": "论文系统"
+    },
+    {
+      "id": "e_intent_cut",
+      "fromNode": "c_intent",
+      "toNode": "thesis_cut",
+      "label": "进入论文"
+    },
+    {
+      "id": "e_constraint_cut",
+      "fromNode": "c_constraint",
+      "toNode": "thesis_cut",
+      "label": "进入论文"
+    },
+    {
+      "id": "e_eval_cut",
+      "fromNode": "e_eval",
+      "toNode": "thesis_cut",
+      "label": "验证"
+    },
+    {
+      "id": "e_prod_cut",
+      "fromNode": "f_prod",
+      "toNode": "thesis_cut",
+      "label": "实践背景"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {
+      "type": "my-thesis-direction-map",
+      "status": "active",
+      "date": "2026-10-06"
+    }
+  }
+}
