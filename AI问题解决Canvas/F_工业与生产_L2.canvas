@@ -109,6 +109,46 @@
       "width": 500,
       "height": 180,
       "color": "3"
+    },
+    {
+      "id": "social_f",
+      "type": "text",
+      "x": -1280,
+      "y": 720,
+      "width": 520,
+      "height": 390,
+      "color": "3",
+      "text": "# SOCIAL-F｜社会解决状态\n\n软件工程外壳成熟；Agent 长程可靠性仍未成熟。\n\n9｜checkpoint / retry / resume / state persistence\n8–9｜幂等 / 补偿事务 / 基础 observability\n5–6｜Agent 长程可靠性\n3–4｜24h 无人创意生产\n\n结论：不要研究成熟软件工程本身，要研究它包住非确定性 AI 后是否仍可靠。"
+    },
+    {
+      "id": "social_f_absorb",
+      "type": "text",
+      "x": -1840,
+      "y": 660,
+      "width": 470,
+      "height": 340,
+      "color": "5",
+      "text": "# ABSORB｜7–10\n\ncheckpoint / retry / resume\nstate persistence / logging\nhash / manifest / provenance 基础\nidempotency / transaction / compensation\nbackpressure / scheduler 基础\n\n动作：工程实现，停止当研究题。"
+    },
+    {
+      "id": "social_f_adapt",
+      "type": "text",
+      "x": -1280,
+      "y": 1160,
+      "width": 500,
+      "height": 320,
+      "color": "4",
+      "text": "# ADAPT｜4–6\n\nAgent checkpoint 存什么\n非确定性 retry 策略\nAI asset provenance\nAgent failure taxonomy\nlong-task observability\n\n动作：适配本地 4080 + Linear + Worker/Codex 工作流。"
+    },
+    {
+      "id": "social_f_research",
+      "type": "text",
+      "x": -700,
+      "y": 1160,
+      "width": 520,
+      "height": 350,
+      "color": "2",
+      "text": "# RESEARCH｜开放缺口\n\n核心：24h 创意生产可靠性\n\n成熟工程外壳 + 非确定性模型\n→ 是否能长期连续生产？\n→ 错误是否累积 / 扩散？\n→ 恢复后是否保持创作状态？\n\n证据：MAP 2026 将 reliability 列为生产 Agent 首要挑战；Datadog 2026 仍观察到明显生产调用失败与容量瓶颈。"
     }
   ],
   "edges": [
@@ -191,10 +231,43 @@
       "label": "运行证据",
       "fromSide": "bottom",
       "toSide": "top"
+    },
+    {
+      "id": "e_social_f",
+      "fromNode": "root",
+      "toNode": "social_f",
+      "label": "SOCIAL STATE",
+      "fromSide": "left",
+      "toSide": "right"
+    },
+    {
+      "id": "e_social_f_absorb",
+      "fromNode": "social_f",
+      "toNode": "social_f_absorb",
+      "label": "ABSORB",
+      "fromSide": "left",
+      "toSide": "right"
+    },
+    {
+      "id": "e_social_f_adapt",
+      "fromNode": "social_f",
+      "toNode": "social_f_adapt",
+      "label": "ADAPT",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_social_f_research",
+      "fromNode": "social_f",
+      "toNode": "social_f_research",
+      "label": "RESEARCH",
+      "fromSide": "bottom",
+      "toSide": "top"
     }
   ],
   "metadata": {
     "version": "1.0",
-    "frontmatter": {}
+    "frontmatter": {},
+    "social_state_version": "R4-2026-10-06"
   }
 }
