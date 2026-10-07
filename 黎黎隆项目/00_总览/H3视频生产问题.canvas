@@ -229,6 +229,16 @@
       "width": 1100,
       "height": 300,
       "color": "6"
+    },
+    {
+      "id": "three_layer_role_map",
+      "type": "text",
+      "text": "# 三层职责映射｜H3专项执行层\n\n本 Canvas = **AI Execution / H3专项问题与验证图**。\n\n负责：H3 / LongTake、输入门禁、参数 profile、动作/镜头/连续性、真实实验、抽帧审核与 VERIFIED_XN。\n\n上游：角色/场景/镜头必须先通过 READY_FOR_H3。\n下游：实验结果进入 AI Database 的 EVIDENCE / RULE / ASSET_REF，并回写 B端与项目总问题层。\n给674：只有需要审美、Canon、主参考或无法自动裁决的冲突时才升级。\n\n禁止：一次偶然 PASS 直接升级成项目永久规则。",
+      "x": 300,
+      "y": -780,
+      "width": 1400,
+      "height": 620,
+      "color": "2"
     }
   ],
   "edges": [
