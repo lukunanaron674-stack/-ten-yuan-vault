@@ -1481,6 +1481,16 @@
       "width": 1500,
       "height": 760,
       "color": "4"
+    },
+    {
+      "id": "b_end_canvas_entry_20261007",
+      "type": "text",
+      "x": -2800,
+      "y": -900,
+      "width": 1250,
+      "height": 520,
+      "color": "4",
+      "text": "# B端/H3 详细问题唯一入口\n\n[[B端问题系统.canvas]]\n\n包含：674-286 B1–B4、AG-07/Z-H3、282→READY_FOR_H3、674-216真实实验、A/C反馈与人在环外闭环。\n\n总 Canvas 此处只做导航。"
     }
   ],
   "edges": [
@@ -2761,6 +2771,22 @@
       "toNode": "problem_state_v1",
       "toSide": "left",
       "label": "Base / XN / NX 回写"
+    },
+    {
+      "id": "edge_h3agent_bcanvas_20261007",
+      "fromNode": "h3_agent_bridge_20261007",
+      "fromSide": "right",
+      "toNode": "b_end_canvas_entry_20261007",
+      "toSide": "left",
+      "label": "详细正本"
+    },
+    {
+      "id": "edge_282_bcanvas_20261007",
+      "fromNode": "role_experiment_282_20261007",
+      "fromSide": "right",
+      "toNode": "b_end_canvas_entry_20261007",
+      "toSide": "left",
+      "label": "B/H3入口"
     }
   ],
   "metadata": {
