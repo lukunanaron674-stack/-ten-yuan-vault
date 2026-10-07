@@ -214,3 +214,12 @@ INTERNAL_LIBRARY_PREFLIGHT:
 - [x] 外部知识留待 272 后续深接入
 
 下一轮 R2：角色链深接入（282/124/293/173 + AG-04/06/11 + H3 Ready Packet）。
+
+
+## 9｜R2 角色链深接入
+
+详细正本：[[黎黎隆项目/00_总览/AI数据库/04_角色链工单适配协议_20261008|角色链工单适配协议 v1.0]]。
+
+固定映射：AG-11/角色语义→674-282；静态真实生成→674-124；AG-04/资产事实→674-293；AG-06→MACHINE_PREPASS_ONLY；USER最终裁决→674-173；293机械编译 CHARACTER_H3_READY_PACKET；READY_FOR_H3→674-286。
+
+旧 B端三人池降为 HISTORICAL_COMPATIBILITY_ONLY；286 不得绕过 Ready Packet 自行挑图。
