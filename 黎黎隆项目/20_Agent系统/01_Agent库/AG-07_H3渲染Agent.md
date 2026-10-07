@@ -126,3 +126,98 @@ H3_AGENT_PLAN_PACKET:
 - 接收分镜/提示词岗位整理好的候选提示词后，仍须检查正式 render task、素材状态和获准执行端。
 - 提示词完成、任务写入和 executor receipt 是不同状态；没有 receipt 不得报告已开始渲染。
 - 原代理库所称“只写词不跑视频”约束提示词生产岗位，不替代本岗位的正式渲染协议；迁移说明见 [[../03_知识库/增量/2026-10-01_20代理库并入记录]]。
+
+
+## 第九轮｜H3 知识全面问题系统化（2026-10-07，强制）
+
+> H3 Agent 不再维护一套与问题系统平行的“私有知识”。AG-07 已知规则、运行经验、失败模式、参数经验、LongTake 经验，必须全部映射到问题系统对象；新知识若未完成映射，不得升级成正式执行规则。
+
+### A｜H3 总 Z
+`Z-H3`：让 H3 从 READY_FOR_H3 输入稳定地产生可追溯、可复验、可连续拼接的动画视频，并把失败反馈重新转化为 XN / NX / PATH 改进。
+
+### B｜H3 子 Z
+1. `Z-H3-01 INPUT`｜输入与职责匹配
+2. `Z-H3-02 SHORTBLOCK`｜10–11s 稳定短块
+3. `Z-H3-03 ACTION`｜动作复杂度边界
+4. `Z-H3-04 CAMERA`｜镜头运动边界
+5. `Z-H3-05 BINDING`｜角色 × 场景双参考职责稳定
+6. `Z-H3-06 ENCODING`｜Flat / CBEC / 动态链提示结构
+7. `Z-H3-07 SEED`｜多 seed 鲁棒性与失败族
+8. `Z-H3-08 LONGTAKE`｜10–11s → 30s → 60s 连续性
+9. `Z-H3-09 RUNTIME`｜4080 / ComfyUI / 模型 / 显存 / 调度现实能力
+10. `Z-H3-10 REVIEW`｜抽帧、审核、重试、receipt、状态回传
+
+### C｜任何 H3 知识必须登记为以下对象之一
+
+#### XN_RECORD｜已经可执行/可检验的规则
+示例：
+- HEADSHOT 只承担 IDENTITY_ONLY。
+- 永久禁止非等比 stretch。
+- READY_FOR_H3 是含角色任务的前置门。
+- WRITTEN ≠ RENDERING；文件出现 ≠ 完成。
+- 执行级重试最多 2 次，与视觉返工分开。
+- 单实例、10–11s 优先目前只能作为 migrated baseline，未完成 4080 独立认证前不得伪装为 hardware-verified XN。
+
+每条必须记录：
+`xn_id / supports_z / statement / source_type / evidence_ref / expected_fit / verified_fit / status`
+
+#### NX_GAP｜尚不知道或仍靠74/实验判断的内容
+包括但不限于：
+- 4080 上 10s 与 11s 的真实稳定差；
+- 264f 是否仍构成硬边界；
+- 复杂动作从哪一级开始显著破坏身份；
+- 哪一级镜头运动是默认安全区；
+- 两参考图是否总是最小充分输入；
+- CBEC 是否稳定优于 Flat；
+- 需要多少 seed 才足以判“可生产”；
+- block 间哪些状态字段足以支持 30s/60s LongTake；
+- “运动中角色味道漂移”哪些可机械化，哪些仍需 USER_REVIEW。
+
+#### PATH_STATE｜现实执行能力
+必须单列：
+- 4080_local_32g 是否可用；
+- ComfyUI / H3 workflow 是否 readable / executable；
+- 模型、节点、Sage、显存、RAM；
+- watcher / queue / executor；
+- Linear 附件读取；
+- output / keyframe / SHA / receipt 回传；
+- 视频抽帧审核链。
+
+禁止用“AG-07知道规则”代替 PATH 已成立。
+
+#### EVIDENCE｜证据
+只认：
+- task JSON / workflow；
+- /history 与 error body；
+- 输入 SHA；
+- output SHA；
+- 实际视频；
+- head/mid/tail 或抽帧；
+- runtime / VRAM / RAM / duration；
+- 人工审核或机械审核结果。
+
+### D｜知识升级状态
+`RAW_OBSERVATION → NX_GAP → CANDIDATE_XN → TESTING → VERIFIED_XN | REJECTED | DEPRECATED`
+
+4090 经验迁移到 4080 时默认进入：
+`MIGRATED / CANDIDATE_XN`
+不得直接进入 `VERIFIED_XN`。
+
+### E｜AG-07 每次执行固定回路
+`读取 Z-H3 子问题 → 只加载该 Z 的 local XN / NX / PATH → H3_AGENT_PLAN_PACKET → 执行/阻塞 → EVIDENCE → 更新 verified_fit / NX / PATH → 回传 Problem State`
+
+若一次失败不能改变任何 XN / NX / PATH / evidence，则不得制造一条新“知识笔记”。
+
+### F｜权力边界
+- AG-07：H3 技术规划、输入 preflight、渲染任务生成、有限执行级重试。
+- 4080 Worker：纯现实执行，不解释角色 Canon。
+- AG-11 / 角色代理：角色身份与 READY_FOR_H3 权力。
+- 审核 Agent：机械视觉审核。
+- 74：审美最终判断、角色味道、不可形式化连续性裁决。
+- 问题系统：决定知识属于 XN / NX / PATH、状态升级与父 Z rollup。
+
+### G｜唯一详细问题正本
+H3 详细问题图：[[../../00_总览/H3视频生产问题.canvas]]
+总问题入口：[[../../00_总览/黎黎隆问题系统.canvas]]
+
+AG-07 文件只保留“代理如何读取/执行问题系统”的操作规则；H3 的问题状态和知识成熟度以问题系统为准。
