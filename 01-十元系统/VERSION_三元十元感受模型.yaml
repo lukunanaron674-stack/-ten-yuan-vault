@@ -1,14 +1,15 @@
 model: 三元十元感受模型
-current_release_id: TY-FEELING-1.4.0-R4
-semantic_version: 1.4.0
+current_release_id: TY-FEELING-1.5.0-R5
+semantic_version: 1.5.0
 date: 2026-10-07
-status: R4_RESEARCH_ROUTE_REORDERED
+status: R5_REGRESSION_AUDITED_FINAL_SEAL
 
 canonical_file: 01-十元系统/三元十元感受模型_核心正本_v1.0_20261007.md
 r3a_canon: 01-十元系统/R3A_三元最小感受定义_人类主语_v1.0_20261007.md
 r3b_canon: 01-十元系统/R3B_旧定义三层迁移正本_v1.0_20261007.md
 pipeline: 01-十元系统/_流水线/感受谱流水线模板_v1.0_20261007.md
 r4_research_route: 01-十元系统/R4_感受模型研究路线重排_20261007.md
+r5_final_audit: 01-十元系统/R5_回归检查与最终封板_20261007.md
 
 releases:
   - release_id: TY-FEELING-1.0.0-R1
@@ -51,6 +52,19 @@ releases:
       - P4_AI感受目标生成控制
       - P5_来源史与文化参照
 
+  - release_id: TY-FEELING-1.5.0-R5
+    semantic_version: 1.5.0
+    scope: regression_audit_and_final_seal
+    branch: release/tenyuan-feeling-v1.5.0-r5
+    immutable_intent: true
+    regression_pass:
+      - canonical_entry_route
+      - human_subject_guard
+      - bangs_skill_migration_guard
+      - clothing_skill_migration_guard
+      - codex_legacy_redirect_guard
+      - legacy_assets_preserved
+
 rollback:
   pre_migration_version: TY-LEGACY-0.9.0
   pre_migration_sha: bd8d49ef5c2556b081c921b491be92f2319fa7df
@@ -58,8 +72,8 @@ rollback:
   note: 仅在用户明确要求回滚时执行；禁止自动reset、force push或删除新版本历史。
 
 migration:
-  current_stage: R4_DONE
-  next_stage: R5_回归检查与最终封板
+  current_stage: R5_DONE
+  next_stage: STOP_CORE_MIGRATION_START_EMPIRICAL_RESEARCH
   r2_confirmed_minimum_impacted_files: 166
 
 rollback_policy:
