@@ -123,3 +123,30 @@ MASTER 指针初始值：
 4. 只推进 NEXT；
 5. 完成后更新状态和 NEXT 指针；
 6. 不因换聊天框重新研究已冻结内容。
+
+## 4. 第二阶段｜外部知识接入
+
+固定顺序：
+
+论文 / GitHub项目 / 技术报告 / 行业方法
+→ 674-272
+→ `INTERNAL_Z_ROUTE_REGISTRY.md`
+→ 查“它解决哪个已有 Z？”
+→ 候选知识
+→ 实验验证
+→ E0 → E1 → E2 → E3 → E4 → E5
+→ 目标 Z canonical gate
+→ 正本
+
+硬规则：
+- 未完成内部 GitHub 路由接线前，不允许批量灌入外部知识。
+- 674-272 只做 intake / provenance / route / status，不取得领域 canonical 权。
+- 未命中已有 Z 时先去 674-276 / 674-116 查现有问题，不直接新建第二套问题树。
+- 只有 E5 才允许申请进入正本；E5 不等于自动升级。
+- 每次晋级必须登记 pre_promotion_ref / promotion_commit / rollback_ref。
+- 回滚使用 revert / 反向 PR，禁止改写 main 历史；失败证据必须保留。
+
+协议：
+- `AI_KNOWLEDGE/EXTERNAL_KNOWLEDGE_INGEST_PROTOCOL.md`
+- `AI_KNOWLEDGE/INTERNAL_Z_ROUTE_REGISTRY.md`
+- `AI_KNOWLEDGE/ROLLBACK_LEDGER.md`
