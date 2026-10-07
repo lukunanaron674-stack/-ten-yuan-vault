@@ -5,8 +5,8 @@
       "type": "group",
       "x": 0,
       "y": 0,
-      "width": 5800,
-      "height": 3000,
+      "width": 5900,
+      "height": 3150,
       "color": "6",
       "label": "674 总控｜唯一总入口"
     },
@@ -15,70 +15,80 @@
       "type": "text",
       "x": 220,
       "y": 180,
-      "width": 1900,
-      "height": 480,
+      "width": 1850,
+      "height": 440,
       "color": "1",
-      "text": "# 674 总控\n\n你只从这里看全局。\n\n**总目标：**《黎黎隆》稳定、持续、可生产。\n**总体体量：10/10**\n**当前可行度：8/10**"
+      "text": "# 674 总控\n\n**总目标：**《黎黎隆》稳定、持续、可生产。\n\n角色生产链已收束为 4 个活工单，不再沿旧号分叉。"
     },
     {
       "id": "project",
       "type": "file",
       "file": "黎黎隆项目/00_总览/黎黎隆问题系统.canvas",
       "x": 220,
-      "y": 900,
-      "width": 1500,
-      "height": 520,
+      "y": 780,
+      "width": 1250,
+      "height": 420,
       "color": "2"
+    },
+    {
+      "id": "role",
+      "type": "file",
+      "file": "黎黎隆项目/00_总览/角色代理.canvas",
+      "x": 1640,
+      "y": 780,
+      "width": 1250,
+      "height": 420,
+      "color": "3"
     },
     {
       "id": "b",
       "type": "file",
       "file": "黎黎隆项目/00_总览/B端问题系统.canvas",
-      "x": 2050,
-      "y": 900,
-      "width": 1500,
-      "height": 520,
+      "x": 3060,
+      "y": 780,
+      "width": 1250,
+      "height": 420,
       "color": "4"
     },
     {
       "id": "h3",
       "type": "file",
       "file": "黎黎隆项目/00_总览/H3视频生产问题.canvas",
-      "x": 3880,
-      "y": 900,
-      "width": 1500,
-      "height": 520,
+      "x": 4480,
+      "y": 780,
+      "width": 1100,
+      "height": 420,
       "color": "5"
     },
     {
       "id": "status",
       "type": "text",
       "x": 220,
-      "y": 1700,
-      "width": 2500,
-      "height": 650,
+      "y": 1500,
+      "width": 2700,
+      "height": 850,
       "color": "4",
-      "text": "# 现在在哪\n\n✅ 总控 + 三分控结构已建立\n✅ 三张分控都只保留目标 / 分目标 / 体量 / 可行度 / 进度 / 下一步 / 1条NX\n🟡 674-116 问题闭环继续\n🟡 674-286 B端/H3继续\n✅ 674-282 本轮角色链完成"
+      "text": "# 角色链当前状态\n\n**124｜生产** → **293｜Pocket素材正本** → **173｜USER审核** → **282｜规则学习/验证** → 回 124\n\n- 282-L1 头像形态 XN：✅ FROZEN / 可生产\n- 282-L2 四宫格 XN：🟡 OPEN_VALIDATION\n- 282-L3 角色文字 SN：🟡 OPEN_VALIDATION\n- 293：🟡 In Progress，后续 Pocket 人在环外维护\n- 173：🟡 唯一人工审核台\n\n旧号已并入：125→124｜154/281→293｜168/280→282"
     },
     {
       "id": "need",
       "type": "text",
-      "x": 3020,
-      "y": 1700,
-      "width": 2360,
-      "height": 650,
+      "x": 3160,
+      "y": 1500,
+      "width": 2420,
+      "height": 850,
       "color": "3",
-      "text": "# 现在需要你吗？\n\n**不需要。**\n\n系统继续人在环外推进。\n只有审美 / Canon / 主参考 / 无法自动裁决的冲突才找你。\n\n审核入口仍是 674-173，前置 674-154。"
+      "text": "# 人现在做什么？\n\n只在 **674-173** 做高价值 NX：\nPASS / FAIL / ♥ / ★主参考 / RERUN / 最小意见。\n\n其它默认人在环外：\n124 自动生产 → 293 自动入库/建索引 → 282 累积 NX 并验证规则。\n\n目标：随着 L2 XN、L3 SN 被锁定，173 需要你看的样本越来越少。"
     },
     {
       "id": "rule",
       "type": "text",
       "x": 220,
-      "y": 2500,
-      "width": 5160,
+      "y": 2600,
+      "width": 5360,
       "height": 300,
       "color": "6",
-      "text": "# 阅读规则\n\n总控看全局；点进三张分控看各自一屏。XN / PATH / 日志 / SHA / 完整证据全部留 AI 后台；分控只显示当前唯一 NX。"
+      "text": "# 阅读规则\n\n总览只看状态；角色细节点「角色代理」。素材路径/MD/Base 看 293；审核只看 173；规则只看 282；生产只看 124。"
     }
   ],
   "edges": [
@@ -93,11 +103,18 @@
       "id": "e2",
       "fromNode": "title",
       "fromSide": "bottom",
-      "toNode": "b",
+      "toNode": "role",
       "toSide": "top"
     },
     {
       "id": "e3",
+      "fromNode": "title",
+      "fromSide": "bottom",
+      "toNode": "b",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
       "fromNode": "title",
       "fromSide": "bottom",
       "toNode": "h3",
