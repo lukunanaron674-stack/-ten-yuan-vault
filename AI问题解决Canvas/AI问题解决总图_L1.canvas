@@ -1,113 +1,73 @@
 {
   "nodes": [
     {
-      "id": "root",
-      "type": "text",
-      "x": 0,
-      "y": 0,
-      "width": 420,
-      "height": 390,
-      "text": "# AI Problem–Solution–Unknown Graph\n\n**总状态栏｜2026-10-04｜STATUS SYNC**\nWindows｜RTX3070 Laptop ACTIVE\n4090 Cloud RETIRED｜4080 32G PENDING_INTEGRATION\n\nSCAN → RECOVER → VERIFY → DISPATCH → WORK → UPDATE\nRecover before Create｜Verify before Expand\n\nC-INTENT：THEORY DONE → EXPERIMENT DESIGN\nC-CONSTRAINT：CYCLE-01 DONE → OFFLINE LABEL\nD-AGENCY：CYCLE-01 DONE → LOG REPLAY\nE-REAL-EVAL：CYCLE-01 DONE → E-H1\nF-LONGRUN：CYCLE-02 DONE → ≥5 REAL RUN EVENTS\n\n论文：PAPER-00 ACTIVE｜3 RQ × 20 P\n每小时收束：Linear → MD → Canvas → Next Action",
-      "color": "1"
-    },
-    {
       "id": "A",
       "type": "text",
+      "text": "# A｜能力\n\n感知｜理解｜推理｜学习｜生成｜规划｜记忆｜Agent｜多模态｜泛化\n\n**部分研究**",
       "x": 0,
       "y": -850,
       "width": 360,
       "height": 210,
-      "text": "# A｜能力\n\n感知｜理解｜推理｜学习｜生成｜规划｜记忆｜Agent｜多模态｜泛化\n\n**部分研究**",
       "color": "5"
     },
     {
       "id": "B",
       "type": "text",
+      "text": "# B｜可靠性\n\n正确性｜鲁棒性｜幻觉｜不确定性｜可解释｜可验证｜长任务可靠性\n\n**上游支撑**",
       "x": 499,
       "y": -687,
       "width": 360,
       "height": 210,
-      "text": "# B｜可靠性\n\n正确性｜鲁棒性｜幻觉｜不确定性｜可解释｜可验证｜长任务可靠性\n\n**上游支撑**",
       "color": "6"
-    },
-    {
-      "id": "C",
-      "type": "text",
-      "x": 808,
-      "y": -262,
-      "width": 360,
-      "height": 280,
-      "text": "# C｜控制与对齐\n\n**ACTIVE**\nC-INTENT：THEORY DONE → EXPERIMENT｜674-119\nC-CONSTRAINT：CYCLE-01 DONE｜674-120\nNEXT：历史数据离线验证",
-      "color": "4"
-    },
-    {
-      "id": "D",
-      "type": "text",
-      "x": 808,
-      "y": 262,
-      "width": 360,
-      "height": 280,
-      "text": "# D｜人机协作\\n\\n**ACTIVE**\\nD-AGENCY｜674-121\\nROUND-1：四因子冻结 DONE\\nROUND-2：自主权分级 DONE\\nL3 AUTO / L2 AUTO+CHECKPOINT / L1 USER_REVIEW / L0 BLOCK\\nNEXT：ROUND-3 反馈沉淀",
-      "color": "4"
     },
     {
       "id": "E",
       "type": "text",
+      "text": "# E｜评价\n\n**ACTIVE**\nE-REAL-EVAL：CYCLE-01 DONE｜674-122\n冻结 L1 Outcome / L2 Intent+Constraint / L3 Trajectory 三层协议\nNEXT：E-H1 冻结30–50历史case并盲标预测",
       "x": 499,
       "y": 687,
       "width": 360,
       "height": 280,
-      "text": "# E｜评价\n\n**ACTIVE**\nE-REAL-EVAL：CYCLE-01 DONE｜674-122\n冻结 L1 Outcome / L2 Intent+Constraint / L3 Trajectory 三层协议\nNEXT：E-H1 冻结30–50历史case并盲标预测",
       "color": "4"
     },
     {
       "id": "F",
       "type": "text",
+      "text": "# F｜生产工程\n\n**RESEARCH CONVERGED / IMPLEMENTATION ACTIVE**\nF-LONGRUN：CYCLE-02 DONE\nRUN_LOG_SCHEMA v1.0：ACTIVE\nNEXT：累计 ≥5 条真实跨轮运行事件 → H-F1\nHOST：Windows / RTX3070 ACTIVE\nRTX4080 32G：PENDING_INTEGRATION\n4090 Cloud：RETIRED\nCodex：工作流执行中枢",
       "x": 0,
       "y": 850,
       "width": 360,
       "height": 450,
-      "text": "# F｜生产工程\n\n**RESEARCH CONVERGED / IMPLEMENTATION ACTIVE**\nF-LONGRUN：CYCLE-02 DONE\nRUN_LOG_SCHEMA v1.0：ACTIVE\nNEXT：累计 ≥5 条真实跨轮运行事件 → H-F1\nHOST：Windows / RTX3070 ACTIVE\nRTX4080 32G：PENDING_INTEGRATION\n4090 Cloud：RETIRED\nCodex：工作流执行中枢",
       "color": "4"
     },
     {
       "id": "G",
       "type": "text",
+      "text": "# G｜安全\n\n恶意使用｜网络安全｜越权｜欺骗｜隐私｜对抗攻击｜高风险自主系统\n\n**背景**",
       "x": -499,
       "y": 687,
       "width": 360,
       "height": 210,
-      "text": "# G｜安全\n\n恶意使用｜网络安全｜越权｜欺骗｜隐私｜对抗攻击｜高风险自主系统\n\n**背景**",
       "color": "6"
-    },
-    {
-      "id": "H",
-      "type": "text",
-      "x": -808,
-      "y": 262,
-      "width": 360,
-      "height": 210,
-      "text": "# H｜社会与制度\n\n就业｜教育｜不平等｜信息生态｜法律责任｜版权｜作者性｜治理\n\n**部分研究**",
-      "color": "3"
     },
     {
       "id": "I",
       "type": "text",
+      "text": "# I｜基础资源\n\n算力｜数据｜芯片｜能源｜水｜模型效率｜基础设施\n\n**背景**",
       "x": -808,
       "y": -262,
       "width": 360,
       "height": 210,
-      "text": "# I｜基础资源\n\n算力｜数据｜芯片｜能源｜水｜模型效率｜基础设施\n\n**背景**",
       "color": "6"
     },
     {
       "id": "J",
       "type": "text",
+      "text": "# J｜基础未知\n\n智能｜表征｜涌现｜推理机制｜泛化｜世界模型｜长期学习｜Agent边界\n\n**上游未知**",
       "x": -499,
       "y": -687,
       "width": 360,
       "height": 210,
-      "text": "# J｜基础未知\n\n智能｜表征｜涌现｜推理机制｜泛化｜世界模型｜长期学习｜Agent边界\n\n**上游未知**",
       "color": "2"
     },
     {
@@ -123,22 +83,72 @@
     {
       "id": "PAPER_STATUS",
       "type": "text",
+      "text": "# PAPER STATUS\n\n674-118：ACTIVE\n674-119：THEORY DONE → EXPERIMENT\n674-120：CYCLE-01 DONE\n674-121：CYCLE-01 DONE\n674-122：CYCLE-01 DONE → E-H1\n674-123：CYCLE-02 DONE\n\n注：阶段收束 ≠ 整个 issue DONE。",
       "x": 1350,
       "y": 790,
       "width": 430,
-      "height": 300,
-      "color": "3",
-      "text": "# PAPER STATUS\n\n674-118：ACTIVE\n674-119：THEORY DONE → EXPERIMENT\n674-120：CYCLE-01 DONE\n674-121：CYCLE-01 DONE\n674-122：CYCLE-01 DONE → E-H1\n674-123：CYCLE-02 DONE\n\n注：阶段收束 ≠ 整个 issue DONE。"
+      "height": 285,
+      "color": "3"
+    },
+    {
+      "id": "H",
+      "type": "text",
+      "text": "# H｜社会与制度\n\n就业｜教育｜不平等｜信息生态｜法律责任｜版权｜作者性｜治理\n\n**部分研究**",
+      "x": -859,
+      "y": 332,
+      "width": 360,
+      "height": 210,
+      "color": "3"
+    },
+    {
+      "id": "D",
+      "type": "text",
+      "x": 990,
+      "y": 160,
+      "width": 360,
+      "height": 280,
+      "text": "# D｜人机协作\\n\\n**ACTIVE**\\nD-AGENCY｜674-121\\nROUND-1：四因子冻结 DONE\\nROUND-2：自主权分级 DONE\\nL3 AUTO / L2 AUTO+CHECKPOINT / L1 USER_REVIEW / L0 BLOCK\\nNEXT：ROUND-3 反馈沉淀",
+      "color": "4"
+    },
+    {
+      "id": "C",
+      "type": "text",
+      "text": "# C｜控制与对齐\n\n**ACTIVE**\nC-INTENT：THEORY DONE → EXPERIMENT｜674-119\nC-CONSTRAINT：CYCLE-01 DONE｜674-120\nNEXT：历史数据离线验证",
+      "x": 880,
+      "y": -420,
+      "width": 360,
+      "height": 280,
+      "color": "4"
     },
     {
       "id": "MY_DIRECTION",
       "type": "file",
       "file": "AI问题解决Canvas/我的方向地图_L1.canvas",
-      "x": 1350,
-      "y": -140,
+      "x": 1565,
+      "y": -280,
       "width": 420,
       "height": 210,
       "color": "4"
+    },
+    {
+      "id": "root",
+      "type": "text",
+      "text": "# AI Problem–Solution–Unknown Graph\n\n**总状态栏｜2026-10-04｜STATUS SYNC**\nWindows｜RTX3070 Laptop ACTIVE\n4090 Cloud RETIRED｜4080 32G PENDING_INTEGRATION\n\nSCAN → RECOVER → VERIFY → DISPATCH → WORK → UPDATE\nRecover before Create｜Verify before Expand\n\nC-INTENT：THEORY DONE → EXPERIMENT DESIGN\nC-CONSTRAINT：CYCLE-01 DONE → OFFLINE LABEL\nD-AGENCY：CYCLE-01 DONE → LOG REPLAY\nE-REAL-EVAL：CYCLE-01 DONE → E-H1\nF-LONGRUN：CYCLE-02 DONE → ≥5 REAL RUN EVENTS\n\n论文：PAPER-00 ACTIVE｜3 RQ × 20 P\n每小时收束：Linear → MD → Canvas → Next Action",
+      "x": 150,
+      "y": -52,
+      "width": 420,
+      "height": 390,
+      "color": "1"
+    },
+    {
+      "id": "bff09d1f9ad4463f",
+      "type": "text",
+      "text": "",
+      "styleAttributes": {},
+      "x": 920,
+      "y": 2740,
+      "width": 400,
+      "height": 340
     },
     {
       "id": "MY_SIX_ROOT",
@@ -204,155 +214,158 @@
   "edges": [
     {
       "id": "eA",
+      "toFloating": false,
       "fromNode": "root",
-      "toNode": "A",
-      "label": "IS-A",
       "fromSide": "top",
-      "toSide": "bottom"
+      "toNode": "A",
+      "toSide": "bottom",
+      "label": "IS-A"
     },
     {
       "id": "eB",
       "fromNode": "root",
-      "toNode": "B",
-      "label": "IS-A",
       "fromSide": "top",
-      "toSide": "bottom"
+      "toNode": "B",
+      "toSide": "bottom",
+      "label": "IS-A"
     },
     {
       "id": "eC",
       "fromNode": "root",
-      "toNode": "C",
-      "label": "IS-A",
       "fromSide": "right",
-      "toSide": "left"
+      "toNode": "C",
+      "toSide": "left",
+      "label": "IS-A"
     },
     {
       "id": "eD",
       "fromNode": "root",
-      "toNode": "D",
-      "label": "IS-A",
       "fromSide": "right",
-      "toSide": "left"
+      "toNode": "D",
+      "toSide": "left",
+      "label": "IS-A"
     },
     {
       "id": "eE",
       "fromNode": "root",
-      "toNode": "E",
-      "label": "IS-A",
       "fromSide": "bottom",
-      "toSide": "top"
+      "toNode": "E",
+      "toSide": "top",
+      "label": "IS-A"
     },
     {
       "id": "eF",
+      "fromFloating": false,
       "fromNode": "root",
-      "toNode": "F",
-      "label": "IS-A",
       "fromSide": "bottom",
-      "toSide": "top"
+      "toNode": "F",
+      "toSide": "top",
+      "label": "IS-A"
     },
     {
       "id": "eG",
       "fromNode": "root",
-      "toNode": "G",
-      "label": "IS-A",
       "fromSide": "bottom",
-      "toSide": "top"
+      "toNode": "G",
+      "toSide": "top",
+      "label": "IS-A"
     },
     {
       "id": "eH",
       "fromNode": "root",
-      "toNode": "H",
-      "label": "IS-A",
       "fromSide": "left",
-      "toSide": "right"
+      "toNode": "H",
+      "toSide": "right",
+      "label": "IS-A"
     },
     {
       "id": "eI",
       "fromNode": "root",
-      "toNode": "I",
-      "label": "IS-A",
       "fromSide": "left",
-      "toSide": "right"
+      "toNode": "I",
+      "toSide": "right",
+      "label": "IS-A"
     },
     {
       "id": "eJ",
       "fromNode": "root",
-      "toNode": "J",
-      "label": "IS-A",
       "fromSide": "top",
-      "toSide": "bottom"
+      "toNode": "J",
+      "toSide": "bottom",
+      "label": "IS-A"
     },
     {
       "id": "dep0",
       "fromNode": "C",
-      "toNode": "A",
-      "label": "DEPENDS-ON",
       "fromSide": "left",
-      "toSide": "bottom"
+      "toNode": "A",
+      "toSide": "bottom",
+      "label": "DEPENDS-ON"
     },
     {
       "id": "dep1",
       "fromNode": "C",
-      "toNode": "J",
-      "label": "DEPENDS-ON",
       "fromSide": "left",
-      "toSide": "right"
+      "toNode": "J",
+      "toSide": "right",
+      "label": "DEPENDS-ON"
     },
     {
       "id": "dep2",
       "fromNode": "D",
-      "toNode": "B",
-      "label": "DEPENDS-ON",
       "fromSide": "top",
-      "toSide": "bottom"
+      "toNode": "B",
+      "toSide": "bottom",
+      "label": "DEPENDS-ON"
     },
     {
       "id": "dep3",
+      "fromFloating": false,
       "fromNode": "E",
-      "toNode": "B",
-      "label": "DEPENDS-ON",
       "fromSide": "top",
-      "toSide": "bottom"
+      "toNode": "B",
+      "toSide": "bottom",
+      "label": "DEPENDS-ON"
     },
     {
       "id": "dep4",
       "fromNode": "F",
-      "toNode": "A",
-      "label": "DEPENDS-ON",
       "fromSide": "top",
-      "toSide": "bottom"
+      "toNode": "A",
+      "toSide": "bottom",
+      "label": "DEPENDS-ON"
     },
     {
       "id": "dep5",
       "fromNode": "F",
-      "toNode": "B",
-      "label": "DEPENDS-ON",
       "fromSide": "top",
-      "toSide": "bottom"
+      "toNode": "B",
+      "toSide": "bottom",
+      "label": "DEPENDS-ON"
     },
     {
       "id": "ePaper",
       "fromNode": "root",
-      "toNode": "PAPER",
-      "label": "论文研究切片",
       "fromSide": "right",
-      "toSide": "left"
+      "toNode": "PAPER",
+      "toSide": "left",
+      "label": "论文研究切片"
     },
     {
       "id": "ePaperStatus",
       "fromNode": "PAPER",
-      "toNode": "PAPER_STATUS",
-      "label": "STATUS-SYNC",
       "fromSide": "bottom",
-      "toSide": "top"
+      "toNode": "PAPER_STATUS",
+      "toSide": "top",
+      "label": "STATUS-SYNC"
     },
     {
       "id": "eMyDirection",
       "fromNode": "root",
-      "toNode": "MY_DIRECTION",
-      "label": "我的方向收束",
       "fromSide": "right",
-      "toSide": "left"
+      "toNode": "MY_DIRECTION",
+      "toSide": "left",
+      "label": "我的方向收束"
     },
     {
       "id": "eMySixA",

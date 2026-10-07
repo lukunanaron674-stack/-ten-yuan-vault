@@ -1,26 +1,29 @@
 {
-	"nodes": [
+	"nodes":[
 		{"id":"n_start","type":"text","text":"## 🎯 你现在要交的东西\n\n**开题报告**（5000字论文的第一步）\n\n导师说：有五分文献参考就能写。","x":-440,"y":-60,"width":440,"height":220,"color":"1"},
 		{"id":"n_core","type":"text","text":"## 💡 论文一句话\n\n拿你自己 **黎黎隆项目的 46 次AI生成记录** 当实验数据，验证一件事：\n\n**动作描述写得细，AI画面就照做。**\n\n（描述词→画面对不对得上，逐镜核对）","x":-440,"y":260,"width":440,"height":280,"color":"6"},
 		{"id":"n_material","type":"text","text":"## 📦 你手头的料（全是现成的）\n\n· 雨中战斗 10 镜 + 酒馆 6 镜 = **16 镜**\n· **46 次生成记录**（ComfyUI 已跑完）\n· 黎黎隆世界观 + 十元理论全套","x":200,"y":260,"width":440,"height":280},
 		{"id":"n_d1","type":"text","text":"## 🧭 方向1：教AI听懂动作\n\n把「尾巴甩、拔锚」这类动作写成一张编码表，AI 照着演。\n\n→ 你的十元理论正好用上。\n\n**你已经在做的就是这个。**","x":880,"y":-60,"width":460,"height":280,"color":"4"},
 		{"id":"n_d2","type":"text","text":"## 🧭 方向2：画面不崩\n\n连续剧情里，角色长相 / 服装不串戏。\n\n→ 方志敏项目里踩过的坑就是素材。","x":880,"y":260,"width":460,"height":280,"color":"4"},
 		{"id":"n_d3","type":"text","text":"## 🧭 方向3：怎么打分\n\nAI生成得好不好，谁说了算？怎么判？\n\n→ 你逐镜审查的习惯，本身就是一套评价方法。","x":880,"y":580,"width":460,"height":280,"color":"4"},
-		{"id":"f_read","type":"file","file":"AI问题解决Canvas/文献阅读版导读_20条_STAGING.md","x":-440,"y":660,"width":440,"height":220,"color":"2"},
 		{"id":"f_list","type":"file","file":"AI问题解决Canvas/引用清单_20条_勾选版_STAGING.md","x":200,"y":660,"width":440,"height":220,"color":"2"},
 		{"id":"n_next","type":"text","text":"## ⏭ 你现在只欠两件事\n\n**① 把 16 镜名单 + 编码表填给我** → 实验才能开跑\n\n**② 引用清单看一眼，回个「好」** → 我就按它改写开题报告","x":200,"y":960,"width":440,"height":240,"color":"2"},
-		{"id":"f_00","type":"file","file":"AI问题解决Canvas/00_从这里开始看.md","x":-440,"y":960,"width":440,"height":240,"color":"1"}
+		{"id":"f_00","type":"file","file":"AI问题解决Canvas/00_从这里开始看.md","x":-440,"y":960,"width":440,"height":240,"color":"1"},
+		{"id":"f_read","type":"file","file":"AI问题解决Canvas/文献阅读版导读_20条_STAGING.md","x":-440,"y":640,"width":440,"height":220,"color":"2"}
 	],
-	"edges": [
-		{"id":"e1","fromNode":"n_start","fromSide":"bottom","toNode":"n_core","toSide":"top","label":"写什么"},
+	"edges":[
+		{"id":"e1","toFloating":false,"fromNode":"n_start","fromSide":"bottom","toNode":"n_core","toSide":"top","label":"写什么"},
 		{"id":"e2","fromNode":"n_material","fromSide":"left","toNode":"n_core","toSide":"right","label":"拿什么写"},
 		{"id":"e3","fromNode":"n_core","fromSide":"right","toNode":"n_d1","toSide":"left","label":"能写的方向①"},
 		{"id":"e4","fromNode":"n_core","fromSide":"right","toNode":"n_d2","toSide":"left","label":"方向②"},
-		{"id":"e5","fromNode":"n_core","fromSide":"bottom","toNode":"n_d3","toSide":"top","label":"方向③"},
+		{"id":"e5","toFloating":false,"fromNode":"n_core","fromSide":"bottom","toNode":"n_d3","toSide":"top","label":"方向③"},
 		{"id":"e6","fromNode":"n_d1","fromSide":"bottom","toNode":"f_read","toSide":"top","label":"看别人怎么写（每篇都有讲解）"},
 		{"id":"e7","fromNode":"f_read","fromSide":"right","toNode":"f_list","toSide":"left","label":"挑出要引的20条"},
 		{"id":"e8","fromNode":"n_d1","fromSide":"bottom","toNode":"n_next","toSide":"top","label":"定下来之后干嘛"},
 		{"id":"e9","fromNode":"n_next","fromSide":"left","toNode":"f_00","toSide":"right","label":"文字版路线（和这张图说的一样）"}
 	],
-	"metadata": {"version": "1.0-1.0", "frontmatter": {}}
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
