@@ -3066,6 +3066,16 @@
       "width": 720,
       "height": 620,
       "color": "5"
+    },
+    {
+      "id": "b_end_canvas_role_entry_20261007",
+      "type": "text",
+      "x": -50,
+      "y": 900,
+      "width": 720,
+      "height": 420,
+      "color": "4",
+      "text": "# B端/H3生产问题入口\n\n角色 L1/L2/L3 + 282 完成后，详细生产链统一进入：\n[[../../00_总览/B端问题系统.canvas]]\n\n角色 Canvas 不维护 H3 详细规则。"
     }
   ],
   "edges": [
@@ -3231,6 +3241,14 @@
       "toNode": "ag07_h3_problem_gate_20261007",
       "toSide": "top",
       "label": "READY_FOR_H3"
+    },
+    {
+      "id": "edge_ag07_bcanvas_role_20261007",
+      "fromNode": "ag07_h3_problem_gate_20261007",
+      "fromSide": "bottom",
+      "toNode": "b_end_canvas_role_entry_20261007",
+      "toSide": "top",
+      "label": "详细生产问题"
     }
   ],
   "metadata": {
