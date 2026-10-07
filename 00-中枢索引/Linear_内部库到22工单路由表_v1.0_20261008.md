@@ -214,3 +214,15 @@ INTERNAL_LIBRARY_PREFLIGHT:
 - [x] 外部知识留待 272 后续深接入
 
 下一轮 R2：角色链深接入（282/124/293/173 + AG-04/06/11 + H3 Ready Packet）。
+
+## 9｜第二阶段：外部知识接入
+
+本表继续作为唯一内部路由正本。外部知识不得另建第二套路由表。
+
+固定链：
+外部来源 → 674-272 → 本表 → 674-294 → 已有目标工单/Z → 候选实验 → E0–E5 → 正本门禁。
+
+外部接入协议：`AI_KNOWLEDGE/EXTERNAL_KNOWLEDGE_INGEST_PROTOCOL.md`
+回滚账：`AI_KNOWLEDGE/ROLLBACK_LEDGER.md`
+
+只有本表无法找到职责承接时，才进入 674-116 / 674-276；仍无承接时才允许 674-294 preflight CREATE。
