@@ -1471,6 +1471,16 @@
       "width": 1250,
       "height": 620,
       "color": "3"
+    },
+    {
+      "id": "role_experiment_282_20261007",
+      "type": "text",
+      "text": "# 674-282｜角色 XN+Z 实验对象子模块（MERGED）\n\n282 保持 Duplicate of 276；内容并入角色域，不形成平行问题树。\n\nZ1 来源 → Z2 素材标准化/154 → Z3 机器审核/173异常升级 → Z4 FAIL/NPC/核心分流 → Z5 NX→candidate XN → Z6 Base回写/新Z\n\n位置：Z-ROLE-L1/L2/L3 的实验对象与证据层。\n输出：READY_FOR_H3 或回到对应角色Z继续校准。",
+      "x": -1320,
+      "y": -1700,
+      "width": 1500,
+      "height": 760,
+      "color": "4"
     }
   ],
   "edges": [
@@ -2727,6 +2737,30 @@
       "toNode": "problem_state_v1",
       "toSide": "left",
       "label": "feedback / calibration"
+    },
+    {
+      "id": "edge_rolebridge_282_20261007",
+      "fromNode": "role_z_bridge_20261007",
+      "fromSide": "right",
+      "toNode": "role_experiment_282_20261007",
+      "toSide": "left",
+      "label": "实验对象/证据"
+    },
+    {
+      "id": "edge_282_h3bridge_20261007",
+      "fromNode": "role_experiment_282_20261007",
+      "fromSide": "right",
+      "toNode": "h3_agent_bridge_20261007",
+      "toSide": "left",
+      "label": "READY_FOR_H3"
+    },
+    {
+      "id": "edge_282_problemstate_20261007",
+      "fromNode": "role_experiment_282_20261007",
+      "fromSide": "bottom",
+      "toNode": "problem_state_v1",
+      "toSide": "left",
+      "label": "Base / XN / NX 回写"
     }
   ],
   "metadata": {
