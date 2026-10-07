@@ -591,3 +591,19 @@ R1–R4 DONE。当前总候选：
 当前社会可迁移价值工作评分：68/100；证据 E3-（强内部、弱外部）。
 
 状态：**STOP_EXTERNAL_VALIDATION**。唯一阻塞：独立使用者 / 陌生项目 / 对照实验。出现外部复现前，不再扩理论。
+
+
+## 17. CONTEXT_GC｜长期 Linear 上下文治理（2026-10-08）
+
+正文：[[CONTEXT_GC_POLICY_v1.0]]
+
+- Linear 总规则：674-294。
+- 每小时自动触发钩子：674-116。
+- 系统总协议：674-77。
+- 默认读取：CURRENT_SNAPSHOT → ACTIVE_LINKS/BLOCKERS/NEXT → 最近3–5条 receipt。
+- 常规运行禁止批量读取全量 comments/history；恢复/冲突/provenance 才定向扩读。
+- 默认 GC：10轮、热区>5条运行记录、估算>=6000 tokens、出现 superseded/duplicate，任一触发。
+- 冷历史进入 `AI问题解决Canvas/context_gc/<issue_id>/`；Linear 保留热状态与索引。
+- 首批：674-282 / 293 / 272 / 106 / 286 / 116。
+
+冻结原则：**Hot Before History；Archive Before Bulk Read。**
