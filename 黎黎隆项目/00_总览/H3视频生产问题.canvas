@@ -199,6 +199,16 @@
       "width": 1150,
       "height": 700,
       "color": "5"
+    },
+    {
+      "id": "moved_to_b_canvas_20261007",
+      "type": "text",
+      "x": -350,
+      "y": 2350,
+      "width": 3650,
+      "height": 520,
+      "color": "1",
+      "text": "# CANONICAL MOVED｜B端问题系统.canvas\n\n本 Canvas 自 2026-10-07 起降级为 H3 历史/导航视图；B端、AG-07、H3问题、B1–B4、READY_FOR_H3、A/C反馈的详细正本统一迁移至 [[B端问题系统.canvas]]。\n\n后续状态更新优先写 B端问题系统.canvas；本图只保留历史节点与导航，禁止再发展平行详细问题树。"
     }
   ],
   "edges": [
@@ -362,6 +372,8 @@
     "frontmatter": {
       "source_canvas": "黎黎隆项目/00_总览/黎黎隆问题系统.canvas",
       "source_version": "1.0-2026-10-06-character-h3-alignment"
-    }
+    },
+    "canonical_status": "MOVED_TO_B_END_CANVAS",
+    "canonical_path": "黎黎隆项目/00_总览/B端问题系统.canvas"
   }
 }
