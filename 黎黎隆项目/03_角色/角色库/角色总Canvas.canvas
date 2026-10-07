@@ -3046,6 +3046,16 @@
       "width": 380,
       "height": 650,
       "color": "4"
+    },
+    {
+      "id": "ag07_h3_problem_gate_20261007",
+      "type": "text",
+      "text": "# AG-07｜H3代理（问题系统化）\n\n只消费 READY_FOR_H3。\n角色三个Z完成不是“结束”，而是把已冻结角色包交给 H3 子Z。\n\nH3知识全部归入：XN / NX / PATH / EVIDENCE。\n详细：[[../../00_总览/H3视频生产问题.canvas]]\n\n禁止：从散头像直接进视频；禁止 H3 用 prompt 修复上游角色 Canon。",
+      "x": -800,
+      "y": 270,
+      "width": 720,
+      "height": 520,
+      "color": "4"
     }
   ],
   "edges": [
@@ -3179,6 +3189,22 @@
       "fromSide": "right",
       "toNode": "role_z_shared_packet_20261007",
       "toSide": "left"
+    },
+    {
+      "id": "edge_role_packet_ag07_20261007",
+      "fromNode": "role_z_shared_packet_20261007",
+      "fromSide": "right",
+      "toNode": "ag07_h3_problem_gate_20261007",
+      "toSide": "left",
+      "label": "READY_FOR_H3"
+    },
+    {
+      "id": "edge_h3promotion_ag07_20261007",
+      "fromNode": "h3_promotion_gate_20261006",
+      "fromSide": "left",
+      "toNode": "ag07_h3_problem_gate_20261007",
+      "toSide": "right",
+      "label": "生产资格"
     }
   ],
   "metadata": {
