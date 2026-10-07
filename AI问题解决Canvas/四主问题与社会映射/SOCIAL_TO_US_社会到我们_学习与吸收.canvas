@@ -221,314 +221,204 @@
       "text": "# 中心③｜知识责任 Gate\n\n1. 能由 AI 学并客观测试？ → AI_LEARN + MACHINE_VERIFY\n2. 会影响74的创作/研究决策？ → 74_LEARN，默认只到L2–L3\n3. AI能力声明涉及74真实意图/偏好？ → HUMAN_AI_VALIDATE\n4. 客观工程指标机器能验证？ → 不找74\n5. 只有74能提供 ground truth？ → 才进入74审核\n\n目标：AI承担专业知识和实现；74只承担不可替代的判断。"
     },
     {
-      "id": "r8v_center",
-      "type": "text",
-      "x": 4200,
-      "y": 0,
-      "width": 780,
-      "height": 520,
-      "color": "1",
-      "text": "# R8｜哪些外部知识不能直接信？\n## 大白话验证中心\n\n不是“这个知识没用”，而是：\n**它只要声称‘更稳 / 更准 / 更省 / 能自动替人’，就先拿真实样本试。**\n\n分流：\n- 21条｜纯结构：直接吸收\n- 15条｜结构吸收，效果验证\n- 6条｜整项先验证\n\n验证只问一件事：\n**放到我们的真实生产里，它到底有没有稳定增益？**"
-    },
-    {
-      "id": "r8v_direct",
-      "type": "text",
-      "x": 4200,
-      "y": -1050,
-      "width": 780,
-      "height": 540,
-      "color": "4",
-      "text": "# 不占验证资源｜直接吸收\n\n纯直接：\nM01 M02 M03 M06\nM13 M14 M17 M18 M19\nM22 M23\nM26 M27 M29 M31\nM32 M33 M34 M36 M37 M42\n\n这些主要是：\n对象分开、状态显式、版本不覆盖、结构化交接、实体记忆、批准版优先、镜头边界、审核留证、职责/终止/追踪等。\n\n**它们可以直接成为工程规则；实现是否真的跑通，再做机器回归测试。**"
-    },
-    {
-      "id": "r8v_split",
-      "type": "text",
-      "x": 5100,
-      "y": -1050,
-      "width": 700,
-      "height": 540,
-      "color": "6",
-      "text": "# 拆开吸收｜15条\nM04 M05 M07 M08 M10 M11 M12 M15 M16\nM25 M28 M30 M35 M40 M41\n\n大白话：\n**结构先拿走，效果别先吹。**\n\n例：\n“要有Checkpoint”可以直接吸收；\n“Checkpoint一定让当前流程更省”要测。\n\n“身份/服装/姿态分账”可以先作为输入结构；\n“这样一定比一张主参考稳”要测。"
-    },
-    {
-      "id": "r8v_ref",
-      "type": "text",
-      "x": 2300,
-      "y": -650,
-      "width": 650,
-      "height": 360,
-      "color": "3",
-      "text": "# ① 角色 / Reference\n中心问题：\n**把身份、衣服、姿态、风格拆开以后，真的更稳吗？**\n\n对应：M07 M08 M09 M10 M11 M12"
-    },
-    {
-      "id": "r8v_v01",
-      "type": "text",
-      "x": 1250,
-      "y": -1150,
-      "width": 620,
-      "height": 300,
-      "color": "5",
-      "text": "## V01｜一张主参考 vs 分账参考\n同角色同Prompt：\nA 一张主参考全包\nB 身份/服装/姿态/风格分开\n\n看：身份漂移、衣服串、动作完成、返工次数。\n类型：MIXED"
-    },
-    {
-      "id": "r8v_v02",
-      "type": "text",
-      "x": 1250,
-      "y": -650,
-      "width": 620,
-      "height": 300,
-      "color": "5",
-      "text": "## V02｜锁太死会不会动不起来？\n逐级提高身份约束。\n\n看从哪一级开始：\n脸更稳，但姿态/镜头/动作明显变差。\n对应：M09\n类型：MACHINE + USER"
-    },
-    {
-      "id": "r8v_v03",
-      "type": "text",
-      "x": 1250,
-      "y": -150,
-      "width": 620,
-      "height": 320,
-      "color": "5",
-      "text": "## V03｜四宫格到底值不值？\n联合四宫格 / 三视图\nvs\n四张独立生成图\n\n拿去做后续全身、多姿态、视频。\n看哪个累计漂移更少。\n对应：M10\n类型：MIXED"
-    },
-    {
-      "id": "r8v_v04",
-      "type": "text",
-      "x": 1250,
-      "y": 370,
-      "width": 620,
-      "height": 320,
-      "color": "5",
-      "text": "## V04｜场景几何状态有没有用？\n只给漂亮背景参考\nvs\n额外保存位置 / 左右 / 遮挡 / 相机轴线\n\n看人物回到同场景后空间会不会乱。\n对应：M12 / M25\n类型：MIXED"
-    },
-    {
-      "id": "r8v_mem",
-      "type": "text",
-      "x": 2700,
-      "y": 850,
-      "width": 650,
-      "height": 360,
-      "color": "3",
-      "text": "# ② 记忆 / 检索\n中心问题：\n**到底给AI多少历史、怎么找历史，才不会又贵又乱？**\n\n对应：M15 M16 M20 M21"
-    },
-    {
-      "id": "r8v_v05",
-      "type": "text",
-      "x": 1800,
-      "y": 1350,
-      "width": 620,
-      "height": 300,
-      "color": "5",
-      "text": "## V05｜向量搜够不够？\nVector only\nvs\n实体/状态硬过滤 + exact + vector\n\n看：主参考命中率、错拿废版率、检索耗时。\n对应：M16\n类型：MACHINE"
-    },
-    {
-      "id": "r8v_v06",
-      "type": "text",
-      "x": 2500,
-      "y": 1500,
-      "width": 620,
-      "height": 300,
-      "color": "5",
-      "text": "## V06｜历史给多少最合适？\n全历史\nvs\n只选相关历史\nvs\nHot/Warm/Cold分层\n\n看：正确率、token/显存、上下文污染。\n对应：M15 / M21\n类型：MACHINE"
-    },
-    {
-      "id": "r8v_v07",
-      "type": "text",
-      "x": 3200,
-      "y": 1500,
-      "width": 620,
-      "height": 320,
-      "color": "5",
-      "text": "## V07｜最后一帧够不够？\n只传last frame\nvs\n最近运动窗口 + 长期身份anchor\n\n看连续3/5/10段后的脸、动作、场景漂移。\n对应：M20\n类型：MIXED"
-    },
-    {
-      "id": "r8v_long",
-      "type": "text",
-      "x": 4200,
-      "y": 1200,
-      "width": 700,
-      "height": 380,
-      "color": "3",
-      "text": "# ③ LongTake / 连续性\n中心问题：\n**10秒能接，不代表60秒还能是同一个角色、同一个世界。**\n\n对应：M20 M21 M24 M25"
-    },
-    {
-      "id": "r8v_v08",
-      "type": "text",
-      "x": 3900,
-      "y": 1800,
-      "width": 620,
-      "height": 300,
-      "color": "5",
-      "text": "## V08｜周期重新锚定真能抗漂吗？\n连续续写\nvs\n每N段重新用高质量anchor / recache\n\n看30s / 60s累计漂移曲线。\n对应：M24\n类型：MACHINE + USER"
-    },
-    {
-      "id": "r8v_v09",
-      "type": "text",
-      "x": 4600,
-      "y": 1800,
-      "width": 620,
-      "height": 320,
-      "color": "5",
-      "text": "## V09｜世界状态值不值得存？\n只传像素参考\nvs\n再传位置、方向、轴线、动作阶段、道具手位\n\n看跨cut和相机回看是否更连续。\n对应：M25\n类型：MIXED"
-    },
-    {
-      "id": "r8v_qa",
-      "type": "text",
-      "x": 5700,
-      "y": 800,
-      "width": 700,
-      "height": 390,
-      "color": "3",
-      "text": "# ④ 审核 / Retake\n中心问题：\n**机器到底能帮你挡掉多少废片？局部修是不是比整条重跑真省？**\n\n对应：M28 M30 + M27的能力部分"
-    },
-    {
-      "id": "r8v_v10",
-      "type": "text",
-      "x": 6500,
-      "y": 200,
-      "width": 650,
-      "height": 340,
-      "color": "5",
-      "text": "## V10｜VLM哪些错误真看得准？\n按failure family分开测：\n身份 / 肢体 / 动作 / 连续 / 物理 / 逻辑\n\n每类算召回、误报、不确定率。\n类型：MACHINE，对USER标签做金标准"
-    },
-    {
-      "id": "r8v_v11",
-      "type": "text",
-      "x": 6500,
-      "y": 750,
-      "width": 650,
-      "height": 300,
-      "color": "5",
-      "text": "## V11｜A/B比选真的比打分稳？\n同一批版本：\n绝对1–10分\nvs\n两两比较\n\n看谁更接近你的最终选择。\n对应：M28\n类型：HUMAN_AI_VALIDATE"
-    },
-    {
-      "id": "r8v_v12",
-      "type": "text",
-      "x": 6500,
-      "y": 1250,
-      "width": 650,
-      "height": 350,
-      "color": "5",
-      "text": "## V12｜局部修 vs 整条重跑\n同一局部失败：\nA FULL_RERENDER\nB LOCAL_RETAKE\n\n同时看：原错修好没、正确区坏没、接缝、成本、次数。\n对应：M30\n类型：MIXED"
-    },
-    {
-      "id": "r8v_agent",
-      "type": "text",
-      "x": 5900,
-      "y": -700,
-      "width": 720,
-      "height": 390,
-      "color": "3",
-      "text": "# ⑤ 多Agent / 人在环外\n中心问题：\n**无人盯着跑，是真稳定，还是只是没人看它出错？**\n\n对应：M04 M05 M33 M34 M35 M36"
-    },
-    {
-      "id": "r8v_v13",
-      "type": "text",
-      "x": 6750,
-      "y": -1350,
-      "width": 660,
-      "height": 330,
-      "color": "5",
-      "text": "## V13｜断电/崩溃后能不能真续？\n运行到一半强制中断。\n\n看：是否从checkpoint恢复、是否重复渲染、是否覆盖旧版本。\n对应：M04 / M35\n类型：MACHINE"
-    },
-    {
-      "id": "r8v_v14",
-      "type": "text",
-      "x": 6750,
-      "y": -850,
-      "width": 660,
-      "height": 320,
-      "color": "5",
-      "text": "## V14｜重复执行会不会重复副作用？\n同一个execution key故意跑两次。\n\n看：是否重复写正式资产/版本/任务。\n对应：M05\n类型：MACHINE"
-    },
-    {
-      "id": "r8v_v15",
-      "type": "text",
-      "x": 6750,
-      "y": -350,
-      "width": 660,
-      "height": 340,
-      "color": "5",
-      "text": "## V15｜全历史共享 vs 最小共享\nAgent拿完整上下文\nvs\n只拿职责需要的state/packet\n\n看：成功率、token、串线、旧任务污染。\n对应：M33\n类型：MACHINE"
-    },
-    {
-      "id": "r8v_v16",
-      "type": "text",
-      "x": 6750,
-      "y": 150,
-      "width": 660,
-      "height": 350,
-      "color": "5",
-      "text": "## V16｜什么时候该停 / 找你？\n冻结一批真实任务。\n测：stall阈值、replan次数、False Escalation、Missed Escalation。\n\n对应：M34\n类型：HUMAN_AI_VALIDATE"
-    },
-    {
-      "id": "r8v_cost",
-      "type": "text",
-      "x": 4200,
-      "y": -1800,
-      "width": 720,
-      "height": 390,
-      "color": "3",
-      "text": "# ⑥ 成本 / 模型分工\n中心问题：\n**哪些“省钱流程”在我们的H3/Wan/本地机上真省，不是纸上省？**\n\n对应：M38 M39 M40 M41"
-    },
-    {
-      "id": "r8v_v17",
-      "type": "text",
-      "x": 2800,
-      "y": -2400,
-      "width": 650,
-      "height": 330,
-      "color": "5",
-      "text": "## V17｜静帧先锁 vs 直接视频\n相同镜头目标：\nA 直接T2V/宽松参考\nB 先静帧PASS再I2V\n\n看可用率、reroll、身份漂移、总耗时。\n对应：M38\n类型：MIXED"
-    },
-    {
-      "id": "r8v_v18",
-      "type": "text",
-      "x": 3550,
-      "y": -2450,
-      "width": 650,
-      "height": 330,
-      "color": "5",
-      "text": "## V18｜短Beat vs 完整长Take\n同一段剧情：\n3–5秒目标镜头拼接\nvs\n完整长take再剪\n\n看总成本、可用素材率、连续性、剪辑自由。\n对应：M39\n类型：MIXED"
-    },
-    {
-      "id": "r8v_v19",
+      "id": "v2_center",
       "type": "text",
       "x": 4300,
-      "y": -2500,
+      "y": 0,
+      "width": 820,
+      "height": 520,
+      "color": "1",
+      "text": "# SOCIAL→US｜验证 Canvas v2\n## 只验证项目里真正不知道的 12 件事\n\n外部广搜：STOP\n280 RAW → 66 MASTER\n吸收：R1–R4 DONE\n\n现在不再问：\n“这个理论社会上有没有？”\n只问：\n**“放到我们的真实角色、H3/Wan、4080和审核链里，具体参数/收益是多少？”**\n\n原则：机器能测先机器测；必须看审美/身份的才找 USER；高成本最后跑。"
+    },
+    {
+      "id": "v2_absorbed",
+      "type": "text",
+      "x": 4300,
+      "y": -1150,
+      "width": 820,
+      "height": 470,
+      "color": "4",
+      "text": "# 已经吸收，不再重复验证\n\n✅ Reference职责要分账\n✅ Identity不只是脸\n✅ 四宫格/多视图是联合资产\n✅ Hybrid Retrieval\n✅ continuity是多层状态\n✅ Shot Boundary / Director Packet\n✅ QA要定位错误而不是只打总分\n✅ Machine Review ≠ USER Final Approval\n✅ Checkpoint / Idempotency / Bounded State\n✅ Audio分轨 / Timeline / J-L Cut\n✅ Model-by-Job + Version/Date\n✅ License / Rights / Provenance分开\n\n这些只剩“项目参数”要测。"
+    },
+    {
+      "id": "v2_p0",
+      "type": "text",
+      "x": 2100,
+      "y": -350,
+      "width": 700,
+      "height": 360,
+      "color": "3",
+      "text": "# P0｜先跑：便宜、会解锁后面\n\n**机器优先**\n1. 4080真实性能基线\n2. VLM预审准确率\n3. Reference槽位甜点\n\n这三项尽量复用现有日志/图片/视频，不先烧新大片。"
+    },
+    {
+      "id": "v2_g01",
+      "type": "text",
+      "x": 900,
+      "y": -900,
+      "width": 650,
+      "height": 330,
+      "color": "5",
+      "text": "## V-GAP01｜4080真实性能基线\n测：\nVRAM / RAM / 温度 / 264f / timeout / 并发 / 吞吐\n\n输出：一张 Performance Baseline\n\nPASS不是“快”，而是：\n**数字可复现，后面所有优化都有基线。**"
+    },
+    {
+      "id": "v2_g09",
+      "type": "text",
+      "x": 900,
+      "y": -300,
       "width": 650,
       "height": 340,
       "color": "5",
-      "text": "## V19｜粗产→筛选→精修真省多少？\n最终规格全跑\nvs\n低成本preview→选赢家→精修\n\n看总GPU/credit、最终PASS率、是否粗产误杀好方案。\n对应：M40\n类型：MACHINE + USER"
+      "text": "## V-GAP09｜VLM预审到底准到哪\n直接拿已有 PASS / FAIL / PARTIAL 视频。\n\n按 failure_family 算：\nrecall / precision / false positive / uncertain rate / time-range overlap\n\n先别测审美，只测客观技术错误。"
     },
     {
-      "id": "r8v_v20",
+      "id": "v2_g05",
       "type": "text",
-      "x": 5050,
-      "y": -2450,
+      "x": 900,
+      "y": 320,
+      "width": 650,
+      "height": 350,
+      "color": "5",
+      "text": "## V-GAP05｜Reference槽位甜点\n已知：Identity / Costume / Pose / Style / Composition 要分账。\n\n未知：\n**H3/Wan具体怎么分槽最稳？**\n\n同角色同Prompt做最小A/B，记录身份、动作、服装、返工次数。"
+    },
+    {
+      "id": "v2_p1",
+      "type": "text",
+      "x": 3250,
+      "y": 1050,
+      "width": 720,
+      "height": 360,
+      "color": "3",
+      "text": "# P1｜第二层：在P0基线之上优化\n\n4. H3本地优化\n5. Wan本地优化\n6. Identity↔Editability\n7. Local Retake\n8. Audio continuity\n\n这些不是证明“概念存在”，而是找项目甜点。"
+    },
+    {
+      "id": "v2_g02",
+      "type": "text",
+      "x": 1900,
+      "y": 1550,
       "width": 650,
       "height": 340,
       "color": "5",
-      "text": "## V20｜模型按Job分工\n不要比“总冠军”。\n按任务族测：身份 / 动作 / 多角色 / 长镜 / 编辑 / 成本 / 本地可跑。\n\n输出：任务×模型矩阵。\n对应：M41\n类型：MIXED"
+      "text": "## V-GAP02｜H3本地优化\n前置：V-GAP01\n\n变量：quant / cache / offload / steps / resolution / frames\n\n同时记录：\n速度 + 峰值显存 + identity/action质量\n\n输出：H3 Pareto Profile。"
     },
     {
-      "id": "r8v_guard",
+      "id": "v2_g03",
       "type": "text",
-      "x": 5350,
-      "y": 1600,
-      "width": 760,
-      "height": 430,
-      "color": "2",
-      "text": "# 验证门｜大白话\n\n一次漂亮结果 ≠ 规则成立。\n\n至少要回答：\n1. 跟什么基线比？\n2. 哪些变量锁住？\n3. 换角色/场景还成立吗？\n4. 失败是什么样？\n5. 是机器能判，还是必须你来判？\n6. 修好一个地方有没有弄坏别处？\n\n**验证通过才允许把“更稳/更准/更省”写成项目规则。**"
+      "x": 2650,
+      "y": 1750,
+      "width": 650,
+      "height": 340,
+      "color": "5",
+      "text": "## V-GAP03｜Wan本地优化\n前置：V-GAP01\n\n不要复制H3参数。\n独立测Wan：\nquant / cache / offload / frames / resolution\n\n输出：Wan Pareto Profile。"
     },
     {
-      "id": "r8v_raw",
+      "id": "v2_g06",
       "type": "text",
-      "x": 5350,
-      "y": 2200,
-      "width": 760,
+      "x": 3400,
+      "y": 1800,
+      "width": 650,
+      "height": 350,
+      "color": "6",
+      "text": "## V-GAP06｜Identity↔Editability甜点\n前置：V-GAP05\n\n已知：锁身份和动作自由有拉扯。\n未知：\n**黎黎隆/其它角色锁到哪一级开始僵？**\n\n需要 USER 看：身份漂移 + 动作完成。"
+    },
+    {
+      "id": "v2_g08",
+      "type": "text",
+      "x": 4150,
+      "y": 1800,
+      "width": 650,
+      "height": 350,
+      "color": "5",
+      "text": "## V-GAP08｜Local Retake真省吗\n前置：已有failure定位\n\nA：整条重跑\nB：局部Retake\n\n看：\n原错修好？正确区坏没？接缝？成本？\n\n只修好一处不算PASS。"
+    },
+    {
+      "id": "v2_g11",
+      "type": "text",
+      "x": 4900,
+      "y": 1650,
+      "width": 650,
       "height": 360,
       "color": "6",
-      "text": "# RAW条件技巧｜先别升规则\nTurbo / steps\n低分辨率先找运动\nColorMatch再续段\n禁止无对白角色乱张嘴\n某模型特定Control组合 / Reference槽位\n\n这些都只做小规模A/B。\n**必须绑定模型版本、workflow、显卡/分辨率和镜头类型。**"
+      "text": "## V-GAP11｜Dialogue / Lip-sync / Audio continuity\n已知：Voice / Lip / Timing / Room Tone要分层。\n\n未知：\n当前动画风格/工具下能不能稳定保持：\n声线、嘴型、空间感、声桥。\n\n机器同步指标 + USER自然度判断。"
+    },
+    {
+      "id": "v2_p2",
+      "type": "text",
+      "x": 5950,
+      "y": -200,
+      "width": 720,
+      "height": 380,
+      "color": "3",
+      "text": "# P2｜高成本 / 后跑\n\n9. 30s/60s LongTake\n10. 真实 Model-by-Job 矩阵\n11. USER审美↔机器指标标定\n12. 商业项目合规 Profile\n\n这些要建立在前面基线已经可信之后。"
+    },
+    {
+      "id": "v2_g07",
+      "type": "text",
+      "x": 7000,
+      "y": -1050,
+      "width": 680,
+      "height": 360,
+      "color": "5",
+      "text": "## V-GAP07｜LongTake memory / anchor\n前置：短块稳定 + Local Retake可用\n\n测30s，再60s：\nrecent motion window\nselected history\nanchor cadence\n\n看identity / action / lighting / seam / drift曲线。\n30s不过，不跑60s。"
+    },
+    {
+      "id": "v2_g04",
+      "type": "text",
+      "x": 7000,
+      "y": -430,
+      "width": 680,
+      "height": 360,
+      "color": "5",
+      "text": "## V-GAP04｜真实 Model-by-Job\n前置：H3/Wan各自已有稳定Profile\n\n任务族分别比：\n身份 / 动作 / 多角色 / camera / longtake / audio / cost / local\n\n输出不是“总冠军”，而是任务×模型×版本矩阵。"
+    },
+    {
+      "id": "v2_g10",
+      "type": "text",
+      "x": 7000,
+      "y": 200,
+      "width": 680,
+      "height": 350,
+      "color": "6",
+      "text": "## V-GAP10｜USER审美 ↔ 机器指标\nAI必须先冻结预测，再给USER看。\n\n比较：\nPairwise / 绝对评分 / 技术指标\nvs\nUSER最终 accept / rework / reject\n\n目标：知道机器什么时候可信，什么时候必须找USER。"
+    },
+    {
+      "id": "v2_g12",
+      "type": "text",
+      "x": 7000,
+      "y": 820,
+      "width": 680,
+      "height": 350,
+      "color": "2",
+      "text": "## V-GAP12｜项目商业合规Profile\n只在真实发布/客户项目出现时做。\n\n检查：\nprovider terms\ninput rights\n肖像/商标/音乐\n目标地区披露\nC2PA策略\n\n不是一次性全球规则。"
+    },
+    {
+      "id": "v2_verify7",
+      "type": "text",
+      "x": 5350,
+      "y": -1050,
+      "width": 760,
+      "height": 410,
+      "color": "6",
+      "text": "# 7个 VERIFY_MASTER 现在归哪里\n\nM09 → V-GAP06\nM20/M21/M24 → V-GAP07\nM38 → 以后结合具体I2V项目做小A/B，不单独开大实验\nM39 → V-GAP07 + V-GAP04中的镜头经济数据\nM62 → V-GAP02 / V-GAP03\n\n**不再保留“证明概念存在”的实验。只测项目参数/收益。**"
+    },
+    {
+      "id": "v2_gate",
+      "type": "text",
+      "x": 5350,
+      "y": 1050,
+      "width": 760,
+      "height": 470,
+      "color": "2",
+      "text": "# 统一验证门\n\n一次漂亮样片 ≠ 规则成立。\n\n每个实验至少要有：\n1. frozen baseline\n2. 单一主变量\n3. 负控/对照\n4. evidence locator\n5. PASS / FAIL / STOP\n6. 是否需要 USER ground truth\n7. 不允许自产自测高分冒充泛化\n\n状态：\nCANDIDATE → E0 → E1…\n没有证据绝不写 VERIFIED。"
+    },
+    {
+      "id": "v2_done",
+      "type": "text",
+      "x": 4300,
+      "y": 650,
+      "width": 820,
+      "height": 330,
+      "color": "4",
+      "text": "# 已完成的前置\n\n✅ 280 RAW总去重\n✅ 66 MASTER\n✅ 4个Knowledge Pack吸收并ROUTED\n✅ 22工单路由已接\n✅ 外部广搜STOP\n\n**当前唯一工作面：这12个项目未知。**"
     }
   ],
   "edges": [
@@ -709,242 +599,218 @@
       "toSide": "top"
     },
     {
-      "id": "r8v_e01",
-      "fromNode": "r8v_center",
-      "toNode": "r8v_direct",
-      "label": "直接吸收，不用占实验",
+      "id": "v2_e01",
+      "fromNode": "v2_center",
+      "toNode": "v2_absorbed",
+      "label": "已知移出验证",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e02",
-      "fromNode": "r8v_center",
-      "toNode": "r8v_split",
-      "label": "结构先拿，效果再测",
+      "id": "v2_e02",
+      "fromNode": "v2_center",
+      "toNode": "v2_p0",
+      "label": "先做",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e03",
-      "fromNode": "r8v_center",
-      "toNode": "r8v_ref",
-      "label": "验证",
+      "id": "v2_e03",
+      "fromNode": "v2_center",
+      "toNode": "v2_p1",
+      "label": "第二层",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e04",
-      "fromNode": "r8v_center",
-      "toNode": "r8v_mem",
-      "label": "验证",
+      "id": "v2_e04",
+      "fromNode": "v2_center",
+      "toNode": "v2_p2",
+      "label": "后做",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e05",
-      "fromNode": "r8v_center",
-      "toNode": "r8v_long",
-      "label": "验证",
+      "id": "v2_e05",
+      "fromNode": "v2_center",
+      "toNode": "v2_verify7",
+      "label": "7个旧VERIFY归并",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e06",
-      "fromNode": "r8v_center",
-      "toNode": "r8v_qa",
-      "label": "验证",
+      "id": "v2_e06",
+      "fromNode": "v2_center",
+      "toNode": "v2_done",
+      "label": "当前状态",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e07",
-      "fromNode": "r8v_center",
-      "toNode": "r8v_agent",
-      "label": "验证",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "r8v_e08",
-      "fromNode": "r8v_center",
-      "toNode": "r8v_cost",
-      "label": "验证",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "r8v_e09",
-      "fromNode": "r8v_center",
-      "toNode": "r8v_guard",
+      "id": "v2_e07",
+      "fromNode": "v2_center",
+      "toNode": "v2_gate",
       "label": "统一门禁",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e10",
-      "fromNode": "r8v_ref",
-      "toNode": "r8v_v01",
-      "label": "A/B",
+      "id": "v2_e08",
+      "fromNode": "v2_p0",
+      "toNode": "v2_g01",
+      "label": "机器基线",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e11",
-      "fromNode": "r8v_ref",
-      "toNode": "r8v_v02",
-      "label": "阈值",
+      "id": "v2_e09",
+      "fromNode": "v2_p0",
+      "toNode": "v2_g09",
+      "label": "复用已有视频",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e12",
-      "fromNode": "r8v_ref",
-      "toNode": "r8v_v03",
-      "label": "生产链",
+      "id": "v2_e10",
+      "fromNode": "v2_p0",
+      "toNode": "v2_g05",
+      "label": "最小A/B",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e13",
-      "fromNode": "r8v_ref",
-      "toNode": "r8v_v04",
-      "label": "空间",
+      "id": "v2_e11",
+      "fromNode": "v2_p1",
+      "toNode": "v2_g02",
+      "label": "H3",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e14",
-      "fromNode": "r8v_mem",
-      "toNode": "r8v_v05",
-      "label": "检索",
+      "id": "v2_e12",
+      "fromNode": "v2_p1",
+      "toNode": "v2_g03",
+      "label": "Wan",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e15",
-      "fromNode": "r8v_mem",
-      "toNode": "r8v_v06",
-      "label": "预算",
+      "id": "v2_e13",
+      "fromNode": "v2_p1",
+      "toNode": "v2_g06",
+      "label": "身份甜点",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e16",
-      "fromNode": "r8v_mem",
-      "toNode": "r8v_v07",
-      "label": "长短记忆",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "r8v_e17",
-      "fromNode": "r8v_long",
-      "toNode": "r8v_v08",
-      "label": "抗漂",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "r8v_e18",
-      "fromNode": "r8v_long",
-      "toNode": "r8v_v09",
-      "label": "世界状态",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "r8v_e19",
-      "fromNode": "r8v_qa",
-      "toNode": "r8v_v10",
-      "label": "机器预审",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "r8v_e20",
-      "fromNode": "r8v_qa",
-      "toNode": "r8v_v11",
-      "label": "你的选择",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "r8v_e21",
-      "fromNode": "r8v_qa",
-      "toNode": "r8v_v12",
+      "id": "v2_e14",
+      "fromNode": "v2_p1",
+      "toNode": "v2_g08",
       "label": "局部修",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e22",
-      "fromNode": "r8v_agent",
-      "toNode": "r8v_v13",
-      "label": "恢复",
+      "id": "v2_e15",
+      "fromNode": "v2_p1",
+      "toNode": "v2_g11",
+      "label": "音频",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e23",
-      "fromNode": "r8v_agent",
-      "toNode": "r8v_v14",
-      "label": "去重",
+      "id": "v2_e16",
+      "fromNode": "v2_p2",
+      "toNode": "v2_g07",
+      "label": "LongTake",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e24",
-      "fromNode": "r8v_agent",
-      "toNode": "r8v_v15",
-      "label": "上下文",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "r8v_e25",
-      "fromNode": "r8v_agent",
-      "toNode": "r8v_v16",
-      "label": "升级给你",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "r8v_e26",
-      "fromNode": "r8v_cost",
-      "toNode": "r8v_v17",
-      "label": "静帧→动",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "r8v_e27",
-      "fromNode": "r8v_cost",
-      "toNode": "r8v_v18",
-      "label": "镜头经济",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "r8v_e28",
-      "fromNode": "r8v_cost",
-      "toNode": "r8v_v19",
-      "label": "粗→精",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "r8v_e29",
-      "fromNode": "r8v_cost",
-      "toNode": "r8v_v20",
+      "id": "v2_e17",
+      "fromNode": "v2_p2",
+      "toNode": "v2_g04",
       "label": "模型矩阵",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "r8v_e30",
-      "fromNode": "r8v_guard",
-      "toNode": "r8v_raw",
-      "label": "条件技巧",
+      "id": "v2_e18",
+      "fromNode": "v2_p2",
+      "toNode": "v2_g10",
+      "label": "USER标定",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "v2_e19",
+      "fromNode": "v2_p2",
+      "toNode": "v2_g12",
+      "label": "按项目",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "v2_e20",
+      "fromNode": "v2_g01",
+      "toNode": "v2_g02",
+      "label": "前置",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "v2_e21",
+      "fromNode": "v2_g01",
+      "toNode": "v2_g03",
+      "label": "前置",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "v2_e22",
+      "fromNode": "v2_g05",
+      "toNode": "v2_g06",
+      "label": "前置",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "v2_e23",
+      "fromNode": "v2_g09",
+      "toNode": "v2_g08",
+      "label": "failure定位基础",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "v2_e24",
+      "fromNode": "v2_g08",
+      "toNode": "v2_g07",
+      "label": "先局部修再长镜",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "v2_e25",
+      "fromNode": "v2_g02",
+      "toNode": "v2_g04",
+      "label": "稳定profile",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "v2_e26",
+      "fromNode": "v2_g03",
+      "toNode": "v2_g04",
+      "label": "稳定profile",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "v2_e27",
+      "fromNode": "v2_g09",
+      "toNode": "v2_g10",
+      "label": "机器指标来源",
       "fromSide": "right",
       "toSide": "left"
     }
@@ -959,6 +825,10 @@
     "note": "Center 2 controls WHICH/WHEN; Center 3 controls WHO/VERIFY. Keep them separate.",
     "r8_disposition": "21_DIRECT + 15_SPLIT + 6_VALIDATE",
     "r8_validation_canvas": "RADIAL_PLAIN_LANGUAGE",
-    "updated": "2026-10-08"
+    "updated": "2026-10-08",
+    "validation_canvas_version": "v2",
+    "validation_scope": "12_PROJECT_SPECIFIC_GAPS",
+    "external_research": "STOP",
+    "absorbed_packs": "ABS-R1,ABS-R2,ABS-R3,ABS-R4"
   }
 }
