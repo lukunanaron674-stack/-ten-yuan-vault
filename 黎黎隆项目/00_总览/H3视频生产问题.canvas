@@ -209,6 +209,26 @@
       "height": 520,
       "color": "1",
       "text": "# CANONICAL MOVED｜B端问题系统.canvas\n\n本 Canvas 自 2026-10-07 起降级为 H3 历史/导航视图；B端、AG-07、H3问题、B1–B4、READY_FOR_H3、A/C反馈的详细正本统一迁移至 [[B端问题系统.canvas]]。\n\n后续状态更新优先写 B端问题系统.canvas；本图只保留历史节点与导航，禁止再发展平行详细问题树。"
+    },
+    {
+      "id": "human_view_backlink",
+      "type": "file",
+      "file": "黎黎隆项目/00_总览/674总览.canvas",
+      "x": -600,
+      "y": -1200,
+      "width": 760,
+      "height": 300,
+      "color": "1"
+    },
+    {
+      "id": "ai_backend_notice",
+      "type": "text",
+      "text": "# H3视频生产问题｜AI执行版\\n\\n这是 AI 后台执行版。\\n674 默认入口：[[674总览.canvas]]\\n\\n规则：内部状态变化先生成 Human Snapshot，再同步到人类总览。",
+      "x": 300,
+      "y": -1200,
+      "width": 1100,
+      "height": 300,
+      "color": "6"
     }
   ],
   "edges": [
