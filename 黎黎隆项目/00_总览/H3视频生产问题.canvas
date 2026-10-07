@@ -179,6 +179,16 @@
       "width": 1150,
       "height": 740,
       "color": "5"
+    },
+    {
+      "id": "h3_authority_oop_20261007",
+      "type": "text",
+      "text": "# AUTHORITY｜人在环外默认\n\nAUTO_CONTINUE=true\n\nAG-07/问题系统可自主：选子Z → 最小实验 → preflight → RENDER_TASK → receipt → evidence → XN/NX/PATH校准 → NEXT。\n\n只把以下升级给74：\n• 审美/角色味道\n• 新Canon/身份冲突\n• 用户确认冲突\n• 高风险不可逆\n• 购买/登录/授权\n• NX长期不收敛\n\n局部 USER_REVIEW 不阻塞其他分支。\n\n每轮必须结束为：CYCLE_DONE / NO_OP / WAIT_RUNTIME_TEST / WAIT_ASSET / USER_REVIEW / BLOCKED",
+      "x": 6400,
+      "y": 2150,
+      "width": 1150,
+      "height": 760,
+      "color": "3"
     }
   ],
   "edges": [
@@ -303,10 +313,26 @@
       "fromSide": "bottom",
       "toNode": "h3_evidence_system_20261007",
       "toSide": "top"
+    },
+    {
+      "id": "edge_zh3_authority_20261007",
+      "fromNode": "z_h3_root_20261007",
+      "fromSide": "right",
+      "toNode": "h3_authority_oop_20261007",
+      "toSide": "top",
+      "label": "AUTHORITY"
+    },
+    {
+      "id": "edge_evidence_authority_20261007",
+      "fromNode": "h3_evidence_system_20261007",
+      "fromSide": "bottom",
+      "toNode": "h3_authority_oop_20261007",
+      "toSide": "top",
+      "label": "自动NEXT"
     }
   ],
   "metadata": {
-    "version": "1.1-2026-10-07-h3-agent-problem-system",
+    "version": "1.2-2026-10-07-human-out-of-loop",
     "frontmatter": {
       "source_canvas": "黎黎隆项目/00_总览/黎黎隆问题系统.canvas",
       "source_version": "1.0-2026-10-06-character-h3-alignment"
