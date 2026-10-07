@@ -96,3 +96,29 @@ TASK
 Do not load all 66 MASTER entries by default.
 Do not load all four absorbed packs when one pack or a few Mxx sections are enough.
 Do not treat model familiarity with a concept as AI_LEARNED.
+
+
+## SOCIAL→US absorbed pack registry
+
+Source master: `AI_KNOWLEDGE/EXTERNAL_KNOWLEDGE_MASTER_v2_20261008.md`
+
+- RAW = 280
+- MASTER = 66
+- DIRECT = 40
+- SPLIT = 19
+- VERIFY = 7
+- BROAD_RESEARCH = STOP
+
+| pack_id | file | status |
+|---|---|---|
+| ABS-R1 | `AI_KNOWLEDGE/ABSORBED/R1_RELIABLE_PRODUCTION_AND_AGENCY_v1.md` | ROUTED |
+| ABS-R2 | `AI_KNOWLEDGE/ABSORBED/R2_VISUAL_MEMORY_CONTINUITY_DIRECTOR_v1.md` | ROUTED |
+| ABS-R3 | `AI_KNOWLEDGE/ABSORBED/R3_QA_RETAKE_AND_HUMAN_GATE_v1.md` | ROUTED |
+| ABS-R4 | `AI_KNOWLEDGE/ABSORBED/R4_PRODUCTION_AUDIO_MODEL_OPS_COMPLIANCE_v1.md` | ROUTED |
+
+Rules:
+- DIRECT may be used as structural/process knowledge.
+- SPLIT exposes only the structural half; effect claims remain WAIT_TEST.
+- VERIFY is a validation candidate, not a production guarantee.
+- ROUTED does not mean CONNECTED / VERIFIED / AI_LEARNED.
+- Load only the minimum pack/Mxx sections needed for the task.
