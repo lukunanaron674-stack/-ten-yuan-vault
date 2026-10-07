@@ -123,3 +123,20 @@ MASTER 指针初始值：
 4. 只推进 NEXT；
 5. 完成后更新状态和 NEXT 指针；
 6. 不因换聊天框重新研究已冻结内容。
+
+## 4. 第二阶段｜外部知识接入
+
+固定顺序：
+外部来源 → 674-272 → 读取 `00-中枢索引/Linear_内部库到22工单路由表_v1.0_20261008.md` → 查 674-294 → 找已有 Z → 候选 → 实验 → E0→E5 → canonical gate → 正本。
+
+硬规则：
+- 未查内部 22 工单路由，不允许新建问题或新工单。
+- 674-272 只做 intake / provenance / route / status，不取得领域 canonical 权。
+- 未命中已有 Z 时先去 674-116；跨架构冲突再去 674-276。
+- 只有 E5 才允许申请进入正本；E5 不等于自动升级。
+- 每次晋级必须有 pre_promotion_ref / promotion_commit / rollback_ref。
+- 回滚使用 revert / 反向 PR，失败证据必须保留。
+
+详细协议：
+- `AI_KNOWLEDGE/EXTERNAL_KNOWLEDGE_INGEST_PROTOCOL.md`
+- `AI_KNOWLEDGE/ROLLBACK_LEDGER.md`
