@@ -1,0 +1,32 @@
+{
+  "schema": "CHARACTER_AGENT_EXPERIMENT_MANIFEST",
+  "schema_version": "1.0",
+  "updated_at": "2026-10-07T18:40:00+08:00",
+  "updated_by": "WORKER (674-282, 人在环外模式)",
+  "note": "角色域 Asset Index 种子账（对齐 674-154 Review Manifest 口径）。全库级 154 回填另行推进；本账只登记已进入角色代理链的素材。derived 图必须带 parent_asset_id。",
+  "subjects": {
+    "H04": {
+      "subject_type": "red-heart-character",
+      "red_heart": true,
+      "red_heart_source": "用户明确选定的 P0 视觉候选（674-257 user_confirmed_fields）",
+      "assets": [
+        {"asset_id": "H04-GRID-20260929", "local_path": "E:/黎黎隆项目/03_角色/角色库/青桶头像四宫格候选_20260929/H04_四宫格候选.png", "sha256": "13b1b40120fa0ef6f02a88a0f3501ba4de1dca6e615887efcaa55bb4fc890267", "width": 941, "height": 1672, "parent_asset_id": null, "view_type": "FOUR_GRID", "usable_roles": ["IDENTITY","BODY","COSTUME","POSE"], "review_status": "CURRENT_CANON", "source_receipt": "674-219 + 674-258"},
+        {"asset_id": "H04-GRID-20260929-CELL-TL", "local_path": "E:/黎黎隆项目/20_Agent系统/06_验证/H3_CHARACTER_PACKS/H04/v1/refs/cells/H04-GRID-20260929-CELL-TL.png", "sha256": "bcedfc83748c249ce28ecb46a3cc809f8cc006e73d3409f8800aaba101512afd", "width": 470, "height": 836, "parent_asset_id": "H04-GRID-20260929", "view_type": "SINGLE_CELL", "usable_roles": ["IDENTITY","BODY","COSTUME","POSE"], "review_status": "CANON_DERIVED", "source_receipt": "674-258"},
+        {"asset_id": "H04-GRID-20260929-CELL-TR", "local_path": "E:/黎黎隆项目/20_Agent系统/06_验证/H3_CHARACTER_PACKS/H04/v1/refs/cells/H04-GRID-20260929-CELL-TR.png", "sha256": "a4f3153eec80b46596097525ebf48b9ec9ea92f81388e5d1dd8e9c6950ec5fb7", "width": 471, "height": 836, "parent_asset_id": "H04-GRID-20260929", "view_type": "SINGLE_CELL", "usable_roles": ["IDENTITY","BODY","COSTUME","POSE"], "review_status": "CANON_DERIVED", "source_receipt": "674-258"},
+        {"asset_id": "H04-GRID-20260929-CELL-BL", "local_path": "E:/黎黎隆项目/20_Agent系统/06_验证/H3_CHARACTER_PACKS/H04/v1/refs/cells/H04-GRID-20260929-CELL-BL.png", "sha256": "e9876fa0d13a4934374a08aee48bffddcf1cd724bb5834804036e4d260491181", "width": 470, "height": 836, "parent_asset_id": "H04-GRID-20260929", "view_type": "SINGLE_CELL", "usable_roles": ["POSE","IDENTITY","COSTUME"], "review_status": "CANON_DERIVED", "source_receipt": "674-258"},
+        {"asset_id": "H04-GRID-20260929-CELL-BR", "local_path": "E:/黎黎隆项目/20_Agent系统/06_验证/H3_CHARACTER_PACKS/H04/v1/refs/cells/H04-GRID-20260929-CELL-BR.png", "sha256": "470e97a524d48f5e74a1cfd2ff77dd6dcd065f364ca965e1af2ba970bed9350d", "width": 471, "height": 836, "parent_asset_id": "H04-GRID-20260929", "view_type": "SINGLE_CELL", "usable_roles": ["IDENTITY","BODY","COSTUME","POSE"], "review_status": "CANON_DERIVED", "source_receipt": "674-258"},
+        {"asset_id": "H04-HEAD-SLICE-20260925", "local_path": "E:/黎黎隆项目/03_角色/角色库/05_头像与高清素材/头像切片79/H04.png", "sha256": "b4c402f0a74023536499de1f79d012de92d36e7a086717be34bf227b464c23c8", "width": 324, "height": 311, "parent_asset_id": null, "view_type": "HEAD_ONLY", "usable_roles": ["IDENTITY"], "review_status": "CURRENT_CANON", "source_receipt": "674-219（MIRROR_PAIR）"},
+        {"asset_id": "H04-SCENE-P00-C01-GATE-20261006", "local_path": "E:/黎黎隆项目/20_Agent系统/06_验证/H3_CHARACTER_PACKS/H04/v1/refs/scene/H04-SCENE-P00-C01-GATE-20261006.png", "sha256": "c4941cd175692ea7660dace2b788b8075a3a7905ccebf5577e1653efbf9a4b41", "width": 1672, "height": 941, "parent_asset_id": null, "view_type": "SCENE", "usable_roles": ["SCENE"], "review_status": "CANON_SCENE_P00_C01", "source_receipt": "674-216 SCENE_ASSET_H04_RECEIPT"}
+      ]
+    },
+    "H06": {
+      "subject_type": "npc",
+      "red_heart": false,
+      "assets": [
+        {"asset_id": "H06-GRID-20260929", "local_path": "E:/黎黎隆项目/03_角色/角色库/青桶头像四宫格候选_20260929/H06_四宫格候选.png", "sha256": "941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729", "width": 941, "height": 1672, "parent_asset_id": null, "view_type": "FOUR_GRID", "usable_roles": ["IDENTITY","BODY","COSTUME","POSE"], "review_status": "MACHINE_PREPASS_ONLY", "source_receipt": "674-219（cross_cell_identity=PASS，四格均含完整身体）"},
+        {"asset_id": "H06-HEAD-SLICE-20260925", "local_path": "E:/黎黎隆项目/03_角色/角色库/05_头像与高清素材/头像切片79/H06.png", "sha256": "9037de05f93aa98e941ab4e43dfaff85bfadf8dde5218df53386e8b47e0ad7d2", "width": 249, "height": 324, "parent_asset_id": null, "view_type": "HEAD_ONLY", "usable_roles": ["IDENTITY"], "review_status": "MIRROR_PAIR", "source_receipt": "674-219"},
+        {"asset_id": "H06-GRID-20260928", "local_path": "E:/黎黎隆项目/03_角色/角色库/青桶头像四宫格候选_20260928/H06_四宫格候选.png", "sha256": "e2b251054c727ca0e87f3b38b3ba1957c5e6edf83ac89e0fbb6c6c2f4948f494", "width": 941, "height": 1672, "parent_asset_id": null, "view_type": "FOUR_GRID", "usable_roles": [], "review_status": "SUPERSEDED_DO_NOT_BIND", "source_receipt": "674-219"}
+      ]
+    }
+  }
+}
