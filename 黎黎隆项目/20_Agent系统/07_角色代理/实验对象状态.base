@@ -50,3 +50,13 @@ views:
       - file.name
       - main_ref
       - review_status
+  - type: table
+    name: 角色仓库入口
+    filters:
+      and:
+        - subject_type == "role_warehouse"
+    order:
+      - file.name
+      - warehouse_status
+      - role_warehouse_link
+      - source_issue
