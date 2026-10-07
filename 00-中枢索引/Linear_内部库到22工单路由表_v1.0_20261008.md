@@ -223,3 +223,22 @@ INTERNAL_LIBRARY_PREFLIGHT:
 固定映射：AG-11/角色语义→674-282；静态真实生成→674-124；AG-04/资产事实→674-293；AG-06→MACHINE_PREPASS_ONLY；USER最终裁决→674-173；293机械编译 CHARACTER_H3_READY_PACKET；READY_FOR_H3→674-286。
 
 旧 B端三人池降为 HISTORICAL_COMPATIBILITY_ONLY；286 不得绕过 Ready Packet 自行挑图。
+
+
+## 10｜R3 B端/H3深接入
+
+详细正本：[[黎黎隆项目/00_总览/AI数据库/05_B端H3调度与LongTake工单适配协议_20261008|B端/H3/LongTake 工单适配协议 v1.0]]。
+
+固定路由：
+
+674-76 项目目标
+→ 674-286 AUTO_DISPATCH / director state merge
+→ R2 CHARACTER_H3_READY_PACKET
+→ H3_AGENT_PLAN_PACKET + PREFLIGHT
+→ executor receipt
+→ 674-289 H3V-NNNN 视频事实/版本
+→ AG-08 TECHNICAL_PASS / RETRY / REPLAN
+→ 286
+→ 正式作者锁定需要 674-173 CANONICAL_PASS。
+
+PROJECT_STATE.json 在恢复旧 job 前必须 RECONCILE_BEFORE_RESUME；旧 blocker 不能因仍写在 JSON 中就自动重复执行。
