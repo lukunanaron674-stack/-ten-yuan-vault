@@ -1442,6 +1442,16 @@
       "width": 1500,
       "height": 760,
       "color": "4"
+    },
+    {
+      "id": "h3_agent_bridge_20261007",
+      "type": "text",
+      "text": "# AG-07｜H3代理问题系统入口\n\nZ-H3 → 10个 H3 子Z → local XN / NX / PATH / AUTHORITY / EVIDENCE\n\n详细：[[H3视频生产问题.canvas]]\n代理：[[../20_Agent系统/01_Agent库/AG-07_H3渲染Agent.md]]\n\n角色输入：Z-ROLE-L1/L2/L3 完成 → READY_FOR_H3\nH3输出：视频/抽帧/receipt → Problem State → 重新校准\n\n规则：H3 Agent 不再拥有平行私有知识库；任何新经验必须先问题系统化。",
+      "x": -4620,
+      "y": -1700,
+      "width": 1600,
+      "height": 700,
+      "color": "4"
     }
   ],
   "edges": [
@@ -2658,6 +2668,22 @@
       "toNode": "role_z_bridge_20261007",
       "toSide": "right",
       "label": "parent Z / authority / PATH"
+    },
+    {
+      "id": "edge_m10_h3agent_bridge_20261007",
+      "fromNode": "m10_c2d1e8f3",
+      "fromSide": "top",
+      "toNode": "h3_agent_bridge_20261007",
+      "toSide": "bottom",
+      "label": "H3专业代理"
+    },
+    {
+      "id": "edge_role_h3agent_bridge_20261007",
+      "fromNode": "role_z_bridge_20261007",
+      "fromSide": "right",
+      "toNode": "h3_agent_bridge_20261007",
+      "toSide": "left",
+      "label": "READY_FOR_H3"
     }
   ],
   "metadata": {
