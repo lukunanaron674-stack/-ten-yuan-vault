@@ -1,123 +1,106 @@
 {
   "nodes": [
     {
-      "id": "human_root",
+      "id": "root",
       "type": "group",
       "x": 0,
       "y": 0,
-      "width": 5200,
+      "width": 5800,
       "height": 3000,
       "color": "6",
-      "label": "674 总览｜默认只看这里"
+      "label": "674 总控｜唯一总入口"
     },
     {
-      "id": "human_goal",
+      "id": "title",
       "type": "text",
-      "x": 250,
-      "y": 220,
-      "width": 1700,
-      "height": 520,
+      "x": 220,
+      "y": 180,
+      "width": 1900,
+      "height": 480,
       "color": "1",
-      "text": "# 674 总览｜《黎黎隆》\n\n目标：稳定、持续地把角色 / 场景 / 镜头 / H3 生产跑起来。\n\n规则：这里永远只说人话；工单、字段、日志、依赖全部留在 AI 后台。"
+      "text": "# 674 总控\n\n你只从这里看全局。\n\n**总目标：**《黎黎隆》稳定、持续、可生产。\n**总体体量：10/10**\n**当前可行度：8/10**"
     },
     {
-      "id": "human_now",
-      "type": "text",
-      "x": 2050,
-      "y": 220,
-      "width": 1350,
-      "height": 520,
-      "color": "4",
-      "text": "# 现在在哪\n\n✅ 三层架构改造：DONE\n🟡 问题系统闭环：674-116 继续运行\n✅ 角色链 674-282：本轮落地完成\n🟡 B端/H3总控 674-286：继续运行"
-    },
-    {
-      "id": "human_next",
-      "type": "text",
-      "x": 3650,
-      "y": 220,
-      "width": 1250,
-      "height": 520,
-      "color": "3",
-      "text": "# 系统接下来自动做\n\n1. 继续 674-116 增量闭环\n2. 674-154 完整 Review Manifest\n3. 286 继续 H3 文字→执行→抽帧→审核闭环\n4. 状态变化自动压缩回本页"
-    },
-    {
-      "id": "human_me",
-      "type": "text",
-      "x": 250,
-      "y": 1050,
-      "width": 2000,
-      "height": 620,
-      "color": "5",
-      "text": "# 现在需要你吗？\n\n**目前不需要你介入。**\n\n674-173 是你的图片审核入口，但前置 674-154 仍在整理完整 Review Manifest。\n只有真正需要审美 / Canon / 主参考判断时，才把最小选项推给你。"
-    },
-    {
-      "id": "human_outputs",
-      "type": "text",
-      "x": 2500,
-      "y": 1050,
-      "width": 2000,
-      "height": 620,
-      "color": "2",
-      "text": "# 成果 / 审核入口\n\n- 图片审核：674-173（等 154 完整 Manifest）\n- 角色生产：674-282（本轮 Done）\n- B端/H3：674-286\n- 项目问题闭环：674-116\n\n原则：不给你看执行日志，只给结果、差异和需要决定的点。"
-    },
-    {
-      "id": "human_rules",
-      "type": "text",
-      "x": 250,
-      "y": 2050,
-      "width": 3000,
-      "height": 650,
-      "color": "6",
-      "text": "# 674阅读规则\n\n只回答 5 件事：①总目标 ②当前阶段 ③正在做什么 ④下一步 ⑤需不需要你。\n默认最多显示 2 个主任务；其余折叠到 AI 后台。\n任何 AI 状态变更，必须先翻译成人话，才能进入这个 Canvas。\n\n本次 Human / AI / Database 三层拆分已完成，不依赖额外定时任务。"
-    },
-    {
-      "id": "backend_link",
+      "id": "project",
       "type": "file",
       "file": "黎黎隆项目/00_总览/黎黎隆问题系统.canvas",
-      "x": 3650,
-      "y": 2050,
-      "width": 1250,
-      "height": 260,
-      "color": "6"
+      "x": 220,
+      "y": 900,
+      "width": 1500,
+      "height": 520,
+      "color": "2"
     },
     {
-      "id": "db_link",
+      "id": "b",
       "type": "file",
-      "file": "黎黎隆项目/00_总览/AI数据库/00_AI数据库索引.md",
-      "x": 3650,
-      "y": 2390,
-      "width": 1250,
-      "height": 260,
-      "color": "6"
+      "file": "黎黎隆项目/00_总览/B端问题系统.canvas",
+      "x": 2050,
+      "y": 900,
+      "width": 1500,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "h3",
+      "type": "file",
+      "file": "黎黎隆项目/00_总览/H3视频生产问题.canvas",
+      "x": 3880,
+      "y": 900,
+      "width": 1500,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "status",
+      "type": "text",
+      "x": 220,
+      "y": 1700,
+      "width": 2500,
+      "height": 650,
+      "color": "4",
+      "text": "# 现在在哪\n\n✅ 总控 + 三分控结构已建立\n✅ 三张分控都只保留目标 / 分目标 / 体量 / 可行度 / 进度 / 下一步 / 1条NX\n🟡 674-116 问题闭环继续\n🟡 674-286 B端/H3继续\n✅ 674-282 本轮角色链完成"
+    },
+    {
+      "id": "need",
+      "type": "text",
+      "x": 3020,
+      "y": 1700,
+      "width": 2360,
+      "height": 650,
+      "color": "3",
+      "text": "# 现在需要你吗？\n\n**不需要。**\n\n系统继续人在环外推进。\n只有审美 / Canon / 主参考 / 无法自动裁决的冲突才找你。\n\n审核入口仍是 674-173，前置 674-154。"
+    },
+    {
+      "id": "rule",
+      "type": "text",
+      "x": 220,
+      "y": 2500,
+      "width": 5160,
+      "height": 300,
+      "color": "6",
+      "text": "# 阅读规则\n\n总控看全局；点进三张分控看各自一屏。XN / PATH / 日志 / SHA / 完整证据全部留 AI 后台；分控只显示当前唯一 NX。"
     }
   ],
   "edges": [
     {
       "id": "e1",
-      "fromNode": "human_goal",
-      "fromSide": "right",
-      "toNode": "human_now",
-      "toSide": "left"
-    },
-    {
-      "id": "e2",
-      "fromNode": "human_now",
-      "fromSide": "right",
-      "toNode": "human_next",
-      "toSide": "left"
-    },
-    {
-      "id": "e3",
-      "fromNode": "human_now",
+      "fromNode": "title",
       "fromSide": "bottom",
-      "toNode": "human_me",
+      "toNode": "project",
       "toSide": "top"
     },
     {
-      "id": "e4",
-      "fromNode": "human_now",
+      "id": "e2",
+      "fromNode": "title",
       "fromSide": "bottom",
-      "toNode": "human_outputs",
+      "toNode": "b",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "title",
+      "fromSide": "bottom",
+      "toNode": "h3",
       "toSide": "top"
     }
   ]
