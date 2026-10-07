@@ -1,0 +1,263 @@
+{
+  "nodes": [
+    {
+      "id": "g",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 7600,
+      "height": 5000,
+      "color": "6",
+      "label": "B端问题系统｜唯一详细正本"
+    },
+    {
+      "id": "t",
+      "type": "text",
+      "x": 250,
+      "y": 180,
+      "width": 1500,
+      "height": 520,
+      "color": "6",
+      "text": "# B端问题系统\n\n唯一详细正本：B端、AG-07、H3问题、B1–B4、READY_FOR_H3、A/C执行反馈。\nLinear：674-286｜上游674-276｜角色实验674-282｜H3实验674-216\n其它Canvas只保留入口/摘要。"
+    },
+    {
+      "id": "z",
+      "type": "text",
+      "x": 250,
+      "y": 850,
+      "width": 1500,
+      "height": 650,
+      "color": "4",
+      "text": "# B-Z0\n已审核角色/场景/资产 → 稳定、可追溯、可反馈学习的H3视频生产。\nZ→XN→NX→PATH→AUTHORITY→执行→EVIDENCE→校准→NEXT\nAUTO_CONTINUE=true"
+    },
+    {
+      "id": "b",
+      "type": "text",
+      "x": 1950,
+      "y": 180,
+      "width": 1700,
+      "height": 1050,
+      "color": "2",
+      "text": "# B1–B4 每小时循环\nB1 读角色/场景/资产/Problem State/receipt\nB2 选最小Z + local XN/NX/PATH + 动态链\nB3 最多3条Director/H3包：Picture1/2职责、start/end、beats、camera、negative、acceptance\nB4 读真实视频/抽帧/SHA/review/failure_family，只改失败字段，回写Problem State"
+    },
+    {
+      "id": "r",
+      "type": "text",
+      "x": 250,
+      "y": 1700,
+      "width": 1500,
+      "height": 900,
+      "color": "5",
+      "text": "# 角色输入｜L1/L2/L3 + 282\nL1身份核心｜L2身体/多视图｜L3 Canon/世界职责\n282：Z1来源→Z2标准化/154→Z3机器审核/173异常→Z4分流→Z5 NX→candidate XN→Z6 Base回写\nL1 PASS + L2 PASS + L3 PASS + path/SHA PASS → READY_FOR_H3"
+    },
+    {
+      "id": "h",
+      "type": "text",
+      "x": 3900,
+      "y": 180,
+      "width": 1550,
+      "height": 650,
+      "color": "4",
+      "text": "# AG-07 / Z-H3\nAG-07不拥有私有知识岛；知识只进入 XN_RECORD / NX_GAP / PATH_STATE / EVIDENCE。\n只消费READY_FOR_H3；禁止散头像直接进视频；禁止用prompt修补上游Canon。"
+    },
+    {
+      "id": "h1",
+      "type": "text",
+      "x": 3900,
+      "y": 950,
+      "width": 1550,
+      "height": 880,
+      "color": "2",
+      "text": "## H3子Z 01–05\n01 INPUT 输入职责\n02 SHORTBLOCK 10–11s稳定\n03 ACTION 动作复杂度\n04 CAMERA 镜头运动\n05 BINDING 角色×场景职责\n候选XN：HEADSHOT→IDENTITY_ONLY；禁非等比stretch；READY_FOR_H3前置。"
+    },
+    {
+      "id": "h2",
+      "type": "text",
+      "x": 5650,
+      "y": 950,
+      "width": 1550,
+      "height": 880,
+      "color": "2",
+      "text": "## H3子Z 06–10\n06 ENCODING Flat/CBEC/动态链\n07 SEED 多seed鲁棒性\n08 LONGTAKE 10–11s→30s→60s\n09 RUNTIME 4080/ComfyUI/PATH\n10 REVIEW 抽帧/审核/重试/receipt"
+    },
+    {
+      "id": "xn",
+      "type": "text",
+      "x": 3900,
+      "y": 2050,
+      "width": 1550,
+      "height": 850,
+      "color": "5",
+      "text": "## XN_RECORD\n字段：xn_id/supports_z/statement/source/evidence/expected_fit/verified_fit/status\nWRITTEN≠RENDERING｜文件出现≠完成｜真实输入path+SHA｜执行重试≤2｜4090→4080先MIGRATED/CANDIDATE\nRAW→CANDIDATE→TESTING→VERIFIED/REJECTED/DEPRECATED"
+    },
+    {
+      "id": "nx",
+      "type": "text",
+      "x": 5650,
+      "y": 2050,
+      "width": 1550,
+      "height": 850,
+      "color": "3",
+      "text": "## NX_GAP\n10s vs11s｜264f｜动作阈值｜镜头安全级｜双参考最小充分性｜CBEC vs Flat｜seed数量｜LongTake状态字段｜运动中角色味道机械化程度\nNX不得自动升级XN_LOCK。"
+    },
+    {
+      "id": "path",
+      "type": "text",
+      "x": 3900,
+      "y": 3150,
+      "width": 1550,
+      "height": 850,
+      "color": "4",
+      "text": "## PATH / A端4080\n4080_local_32g｜ComfyUI/H3 workflow｜模型/节点/Sage｜VRAM/RAM/耗时｜watcher/queue/executor｜附件读取｜视频/关键帧/SHA回传\nFOUND→ACQUIRED→READABLE→UNDERSTOOD→ADAPTED→EXECUTABLE→AUTOMATABLE→VERIFIED\n无真实receipt不标VERIFIED。"
+    },
+    {
+      "id": "c",
+      "type": "text",
+      "x": 5650,
+      "y": 3150,
+      "width": 1550,
+      "height": 850,
+      "color": "5",
+      "text": "## C端审核/仓库\nA：MP4+start/q1/mid/q3/end+first_frame+SHA\nB：B-FRAME-HANDOFF\nC：逐帧审核+video_version+首帧+asset_record\n审：identity/body/costume/action/order/limb/scene/camera/flicker/duplicate/redesign/event/end_state\nPASS+STORED才LOCKED。"
+    },
+    {
+      "id": "fb",
+      "type": "text",
+      "x": 1950,
+      "y": 1600,
+      "width": 1700,
+      "height": 1150,
+      "color": "5",
+      "text": "# 反馈归因｜禁止只改Prompt\n身份/脸/味道→L1+282\n比例/多视图/服装→L2+282\nCanon/行为/世界职责→L3+282\n输入/动作/镜头/编码/seed/runtime/review→对应Z-H3\nB4记录kept_fields/changed_fields/reason/next_version。"
+    },
+    {
+      "id": "auth",
+      "type": "text",
+      "x": 1950,
+      "y": 2950,
+      "width": 1700,
+      "height": 1000,
+      "color": "3",
+      "text": "# AUTHORITY｜人在环外\n默认B1→B2→B3→H3/A/C→B4→NEXT。\n只升级74：审美/角色味道、新Canon/身份冲突、确认冲突、覆盖冻结主参考、XN_LOCK、高风险不可逆、购买登录授权、NX长期不收敛。\n局部USER_REVIEW不阻塞其它分支。"
+    },
+    {
+      "id": "done",
+      "type": "text",
+      "x": 250,
+      "y": 2850,
+      "width": 1500,
+      "height": 1050,
+      "color": "6",
+      "text": "# DONE/STOP\n每轮：CYCLE_DONE|NO_OP|WAIT_ASSET|WAIT_RUNTIME_TEST|USER_REVIEW|BLOCKED\n架构DONE≠runtime DONE；真实实验必须有task/workflow、input SHA、receipt/history、output SHA、视频/抽帧、审核。\nLOCKED无新反馈不重复；B端持续写674-286。"
+    },
+    {
+      "id": "refs",
+      "type": "text",
+      "x": 250,
+      "y": 4150,
+      "width": 6950,
+      "height": 520,
+      "color": "6",
+      "text": "# 入口\n[[黎黎隆问题系统.canvas]]｜[[../03_角色/角色库/角色总Canvas.canvas]]｜[[H3视频生产问题.canvas]]（历史/导航）｜[[../20_Agent系统/01_Agent库/AG-07_H3渲染Agent.md]]\nLinear：674-276 / 282 / 286 / 216 / 154 / 173 / 125"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "t",
+      "toNode": "z"
+    },
+    {
+      "id": "e2",
+      "fromNode": "z",
+      "toNode": "b",
+      "label": "每小时"
+    },
+    {
+      "id": "e3",
+      "fromNode": "r",
+      "toNode": "b",
+      "label": "READY_FOR_H3"
+    },
+    {
+      "id": "e4",
+      "fromNode": "b",
+      "toNode": "h",
+      "label": "B3→AG-07"
+    },
+    {
+      "id": "e5",
+      "fromNode": "h",
+      "toNode": "h1"
+    },
+    {
+      "id": "e6",
+      "fromNode": "h",
+      "toNode": "h2"
+    },
+    {
+      "id": "e7",
+      "fromNode": "h1",
+      "toNode": "xn"
+    },
+    {
+      "id": "e8",
+      "fromNode": "h2",
+      "toNode": "nx"
+    },
+    {
+      "id": "e9",
+      "fromNode": "h2",
+      "toNode": "path"
+    },
+    {
+      "id": "e10",
+      "fromNode": "path",
+      "toNode": "c",
+      "label": "A→C"
+    },
+    {
+      "id": "e11",
+      "fromNode": "c",
+      "toNode": "fb",
+      "label": "review"
+    },
+    {
+      "id": "e12",
+      "fromNode": "fb",
+      "toNode": "r",
+      "label": "角色反流"
+    },
+    {
+      "id": "e13",
+      "fromNode": "fb",
+      "toNode": "h",
+      "label": "H3反流"
+    },
+    {
+      "id": "e14",
+      "fromNode": "b",
+      "toNode": "auth",
+      "label": "AUTO_CONTINUE"
+    },
+    {
+      "id": "e15",
+      "fromNode": "auth",
+      "toNode": "done",
+      "label": "收束"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-2026-10-07",
+    "frontmatter": {
+      "canonical_for": [
+        "B-END",
+        "AG-07",
+        "H3",
+        "B1-B4",
+        "674-286",
+        "674-216"
+      ]
+    }
+  }
+}
