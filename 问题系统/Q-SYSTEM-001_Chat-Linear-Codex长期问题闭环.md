@@ -3,6 +3,8 @@ q_id: Q-SYSTEM-001
 scope: global
 domain: workflow_and_human_ai_collaboration
 status: IN_PROGRESS
+execution_mode: HUMAN_OUT_OF_LOOP
+authority_profile: "674-77 user instruction; exception policy aligned to confirmed 674-282 profile"
 volume: 9
 blocker: 5
 priority_score: 45
@@ -15,6 +17,7 @@ known:
   - 《黎黎隆》项目级问题系统有本地实现和 commit 51825b3b4bea924d956d69dd3b968956e74f861d。
   - 全局问题系统与该项目系统应分开；现有 AI 研究知识图谱不是问题执行库。
   - Linear 子单 674-78/79/80/81/82/84/171/217 当前为 Duplicate；其需求由 674-77 继续承接。
+  - 674-282 记录 2026-10-07 经 74 确认角色 Z1–Z6 全链默认为人在环外，并明确六类升级条件。
 unknown:
   - Chat 中的新问题能否在无需用户搬运上下文的情况下可靠地匹配或创建 Q，并完整回写真实来源。
   - 全局系统在 Obsidian 内的文件节点点击、路径和关系是否已完成现场验收。
@@ -27,7 +30,7 @@ tried:
 rejected:
   - 把 L1–L4 子 Campaign 的 M-END 当作 674-77 整体完成。
   - 把 Linear comment、Git commit 或本地文件单独当作端到端/远端发布证明。
-  - AI 建议、候选文件或工具成功自动升格为用户确认或 Canonical。
+  - AI 建议、候选文件或工具成功自动升格为用户确认、XN_LOCK 或 Canonical。
   - 重建第二份《黎黎隆》问题树，或把 AI 学术知识图谱当作执行问题库。
 current_hypotheses:
   - 现有 Linear MCP + 本地执行器可以承担经授权的路由和回写；自动触发、状态恢复与端到端可靠性仍需实测。
@@ -38,8 +41,9 @@ source_refs:
   - https://linear.app/674/issue/674-77/systemchat-linear-codex-长期问题交互系统
   - https://linear.app/674/issue/674-81/sys-04定义-chat-linear-codex-双向协议与回写格式
   - https://linear.app/674/issue/674-82/sys-05端到端验收chat发现问题-codex更新-chat继续
+  - https://linear.app/674/issue/674-282/worker角色-xnz-实验对象系统落地纵向主链横向分流base闭环
   - 问题系统总纲.md
-current_version: 1.0
+current_version: 1.1
 next_decision: 完成并记录一轮真实 Q-ID 端到端执行，然后按证据关闭或列出具体失败环节。
 done_condition: 全局问题系统可用；双向协议在真实样本上运行；Chat→Linear→Codex→Markdown/Canvas→Linear→Chat 完成一次可复核闭环；远端发布状态明确；未解决结构性 blocker 为零。
 required_agent:
@@ -72,11 +76,11 @@ Chat、Linear、Vault 与 Git 的状态没有持续绑定 → 问题定义和执
 - 上游：接入触发方式、Q-ID 去重/创建协议、状态源规则、回执结构和恢复规则尚未由一次真实全链路测试共同证明。
 - 下游：Q Markdown、Canvas、Linear、GitHub 与 Chat 可能各自显示不同状态；人工需要重新解释上下文。
 
-## 人工决策边界
+## 人在环外运行模式
 
-自动承担：上下文搬运、已知 Q 匹配、Problem State 整理、明确授权任务路由、执行回执和链接回写。
+在 674-77 已授权的流程中，明确规则覆盖的 L1–L4 编译、已知 Q 匹配、正式 Q 登记、任务路由、文件执行、验证和回执都应自动完成，不逐步等待 74。复用 674-282 的 H-OOTL 升级表：新 Canon/角色身份核心变化、candidate XN→XN_LOCK、无法自动消解的规则冲突、低置信度/AMBIGUOUS 达阈值、不可逆操作或覆盖冻结主参考、连续失败到重试上限。
 
-人工确认：新问题正式入树、目标/范围变化、Canonical/Frozen 晋升、争议裁决、语义验收和对外发布。遇到来源冲突或权限范围不清时必须停下并列出缺口。
+权限应按 Linear/工作域逐项授权。此模式不等于无权限执行；目标或范围不清、来源缺失、超出 `write_scope` 时应停止该项。用户确认和 Canon 来源仍须可追溯，AI 不得冒充。
 
 ## 三个真实接入样本
 
@@ -102,7 +106,7 @@ Chat、Linear、Vault 与 Git 的状态没有持续绑定 → 问题定义和执
 
 ## 当前结论与下一步
 
-本问题保持 `IN_PROGRESS`。全局问题系统文档和 Canvas MVP 已建立；本次文件创建本身不代表协议与端到端门禁通过。下一步应选一个已有 Q-ID 完成真实端到端运行，再核验安全发布。Linear MCP 当前不提供 Issue 删除/归档操作；重复子单已处于 Duplicate，可保留历史并由 674-77 承接。
+本问题保持 `IN_PROGRESS`。全局问题系统文档和 Canvas MVP 已建立；本次文件创建本身不代表协议与端到端门禁通过。目标运行模式已按当前任务更新为 HUMAN_OUT_OF_LOOP。下一步验证无需逐步人工触发的任务入口和异常升级行为，再核验安全发布。Linear MCP 当前不提供 Issue 删除/归档操作；重复子单已处于 Duplicate，可保留历史并由 674-77 承接。
 
 ## DONE 条件
 
