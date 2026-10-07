@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"7700000000000001","type":"text","x":0,"y":0,"width":420,"height":190,"text":"# G-SYS-001｜长期问题协作闭环\n\nLinear：674-77\n状态：IN PROGRESS\n目标：Chat 提出问题后，形成可追溯状态、执行与回写。"},
+		{"id":"7700000000000002","type":"file","x":540,"y":0,"width":500,"height":300,"file":"问题系统/Q-SYSTEM-001_Chat-Linear-Codex长期问题闭环.md"},
+		{"id":"7700000000000003","type":"file","x":1120,"y":-420,"width":500,"height":260,"file":"黎黎隆项目/00_总览/Q-CHAR-001_头像怎么稳定扩中全景.md"},
+		{"id":"7700000000000004","type":"file","x":1120,"y":0,"width":500,"height":260,"file":"黎黎隆项目/00_总览/Q-ASSET-001_旧角色设定和新设定谁优先.md"},
+		{"id":"7700000000000005","type":"file","x":1120,"y":420,"width":500,"height":260,"file":"黎黎隆项目/00_总览/Q-PIPE-001_冻结项可发散项禁止项怎么进入生图流程.md"}
+	],
+	"edges":[
+		{"id":"77e0000000000001","fromNode":"7700000000000001","fromSide":"right","toNode":"7700000000000002","toSide":"left","label":"被问题阻塞"},
+		{"id":"77e0000000000002","fromNode":"7700000000000002","fromSide":"right","toNode":"7700000000000003","toSide":"left","label":"项目样例｜角色视觉"},
+		{"id":"77e0000000000003","fromNode":"7700000000000002","fromSide":"right","toNode":"7700000000000004","toSide":"left","label":"项目样例｜资产来源"},
+		{"id":"77e0000000000004","fromNode":"7700000000000002","fromSide":"right","toNode":"7700000000000005","toSide":"left","label":"项目样例｜流程输入"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
