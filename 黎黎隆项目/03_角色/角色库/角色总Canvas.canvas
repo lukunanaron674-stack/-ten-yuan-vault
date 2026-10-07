@@ -3056,6 +3056,16 @@
       "width": 720,
       "height": 520,
       "color": "4"
+    },
+    {
+      "id": "role_282_module_20261007",
+      "type": "text",
+      "text": "# 282｜角色 XN+Z 实验对象层\n\nMERGED INTO 276，不另建第二套总控。\n\nZ1 实验对象来源\n→ Z2 素材标准化 / 154\n→ Z3 机器审核；异常→173\n→ Z4 FAIL→125 / PASS→NPC / 核心→核心池\n→ Z5 NX→candidate XN\n→ Z6 Base回写→新Z\n\n映射：\nZ1/Z3→L1\nZ2/Z4→L2\nZ5/Z6→L1/L2/L3\n\n默认 AUTO_CONTINUE。",
+      "x": -900,
+      "y": -420,
+      "width": 720,
+      "height": 620,
+      "color": "5"
     }
   ],
   "edges": [
@@ -3205,6 +3215,22 @@
       "toNode": "ag07_h3_problem_gate_20261007",
       "toSide": "right",
       "label": "生产资格"
+    },
+    {
+      "id": "edge_rolepacket_282_20261007",
+      "fromNode": "role_z_shared_packet_20261007",
+      "fromSide": "right",
+      "toNode": "role_282_module_20261007",
+      "toSide": "left",
+      "label": "实验对象化"
+    },
+    {
+      "id": "edge_282_ag07_20261007",
+      "fromNode": "role_282_module_20261007",
+      "fromSide": "bottom",
+      "toNode": "ag07_h3_problem_gate_20261007",
+      "toSide": "top",
+      "label": "READY_FOR_H3"
     }
   ],
   "metadata": {
