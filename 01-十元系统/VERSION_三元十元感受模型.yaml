@@ -1,14 +1,14 @@
 model: 三元十元感受模型
-current_release_id: TY-FEELING-1.3.0-R3
-semantic_version: 1.3.0
+current_release_id: TY-FEELING-1.4.0-R4
+semantic_version: 1.4.0
 date: 2026-10-07
-status: R3_FULL_DEFINITION_MIGRATION_FROZEN
+status: R4_RESEARCH_ROUTE_REORDERED
 
 canonical_file: 01-十元系统/三元十元感受模型_核心正本_v1.0_20261007.md
 r3a_canon: 01-十元系统/R3A_三元最小感受定义_人类主语_v1.0_20261007.md
 r3b_canon: 01-十元系统/R3B_旧定义三层迁移正本_v1.0_20261007.md
 pipeline: 01-十元系统/_流水线/感受谱流水线模板_v1.0_20261007.md
-release_manifest: 01-十元系统/RELEASE_TY-FEELING-1.3.0-R3_20261007.md
+r4_research_route: 01-十元系统/R4_感受模型研究路线重排_20261007.md
 
 releases:
   - release_id: TY-FEELING-1.0.0-R1
@@ -35,15 +35,21 @@ releases:
     semantic_version: 1.3.0
     scope: full_definition_migration_and_legacy_pipeline_retirement
     branch: release/tenyuan-feeling-v1.3.0-r3
+    release_sha: a763f3a7798f00f49f40b8de6538e199310cd939
     immutable_intent: true
-    frozen_principles:
-      - 感受主语是人
-      - 三层结构为感受核_诱发机制_领域表现
-      - X_Z_N最小感受为醒_张_耐
-      - 十元与五轴旧本体定义降级为诱发机制或领域表现
-      - 旧对象分类与概念映射自动生产链退出默认路径
-      - 新默认链为刺激语境_人反馈_感受谱_诱发特征_AI预测生成_人复核
-      - 旧素材和训练数据保留并重新解释
+
+  - release_id: TY-FEELING-1.4.0-R4
+    semantic_version: 1.4.0
+    scope: human_feeling_research_route_reorder
+    branch: release/tenyuan-feeling-v1.4.0-r4
+    immutable_intent: true
+    priority_order:
+      - P0_十种感受体验定义
+      - P1_人类感受测量可靠性
+      - P2_诱发机制控变量实验
+      - P3_审美关系与动态链
+      - P4_AI感受目标生成控制
+      - P5_来源史与文化参照
 
 rollback:
   pre_migration_version: TY-LEGACY-0.9.0
@@ -52,8 +58,8 @@ rollback:
   note: 仅在用户明确要求回滚时执行；禁止自动reset、force push或删除新版本历史。
 
 migration:
-  current_stage: R3_DONE
-  next_stage: R4_研究路线重排
+  current_stage: R4_DONE
+  next_stage: R5_回归检查与最终封板
   r2_confirmed_minimum_impacted_files: 166
 
 rollback_policy:
