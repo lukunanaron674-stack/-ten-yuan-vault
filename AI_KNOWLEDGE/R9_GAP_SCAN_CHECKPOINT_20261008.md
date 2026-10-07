@@ -1,10 +1,10 @@
 ---
 type: social-to-us-gap-scan-checkpoint
-status: canonical-current
+status: r9-collection-complete
 version: v1.0
 updated: 2026-10-08
 parent_linear: 674-272
-mode: PRE_R9_FREEZE
+mode: R9_COLLECTION_COMPLETE
 internal_router: INTERNAL_ROUTER_V1_FROZEN
 human_entry: 黎黎隆项目/00_总览/674总览.canvas
 machine_entry: 黎黎隆项目/00_总览/AI后台/00_AI后台总索引.md
@@ -701,3 +701,248 @@ R9-B 已覆盖：
 
 R9-C 不再重复这些内容；转向：
 VRAM / quantization / cache / offload / throughput / queue economics / current model-by-job capability / Rights / Licensing / C2PA / commercial provenance。
+
+
+# 12｜R9-C DONE｜生产基础设施 / 当前模型分工 / 商业交付
+
+## 结果
+
+- ROUND = R9-C
+- RAW_ADDED = 24
+- KNOWLEDGE_ID = K257–K280
+- R9_TOTAL_RAW_ADDED = 72
+- ALL_EXTERNAL_RAW_TOTAL = 280
+- MODE = COLLECT_ONLY / GAP_FILL COMPLETE
+- EXTERNAL_EXPANSION = STOP
+- E0_E5 = 本轮未推进
+- CANONICAL_EFFECT_CLAIMS_AUTO_PROMOTED = 0
+- NEXT = R9 TOTAL DEDUPE → FINAL ABSORB R1–R4 → PROJECT-SPECIFIC VALIDATION
+
+## RAW｜K257–K280
+
+K257｜Quantization 的本质是用更低精度表示权重/激活，以换取更低显存和计算成本；它允许原本放不进显存的模型运行，但不能默认等价于“无损加速”。来源：Hugging Face Diffusers Quantization。成熟度：A/B。
+
+K258｜量化应按 pipeline component 选择，而不是“整个模型统一降位宽”；transformer/text encoder等不同组件可分别决定是否量化，具体质量/速度/兼容性由模型与backend决定。来源：Diffusers PipelineQuantizationConfig。成熟度：A/B。
+
+K259｜Offload 至少有 model-level / group-level / leaf(sequential)-level 三档：越细通常越省VRAM，但CPU↔GPU搬运和同步开销越高；sequential offload可非常慢。来源：Diffusers memory optimization。成熟度：A。
+
+K260｜对 video diffusion，quantization + group offloading 往往比最细粒度 sequential offload 更有实际价值，因为视频模型计算更重，更有机会用stream/prefetch覆盖数据搬运；但这仍需具体模型验证。来源：Diffusers speed-memory optimization。成熟度：A/B。
+
+K261｜能不能跑不只看“模型权重多大”；长视频还要给 activation / latent / VAE 等中间张量留余量。现代offloader甚至提供 memory reserve margin，说明“显存装得下权重”不等于“forward不会OOM”。来源：Diffusers CLI / memory guide。成熟度：A。
+
+K262｜Cache 是典型 speed↔memory↔quality 三方交换：复用中间结果能省计算，但缓存本身占内存，并可能引入近似误差；cache threshold/profile必须成为可回滚参数，不应写死为万能加速开关。来源：Diffusers optimization + cache研究。成熟度：A/B。
+
+K263｜TeaCache说明不同denoising timestep的输出变化并不均匀，训练外缓存可根据变化程度选择复用；论文在特定Open-Sora-Plan设置报告最高约4.41×加速、VBench轻微下降。该数字只属于论文设置，不能直接外推到本机H3/Wan。来源：CVPR 2025 TeaCache。成熟度：B。
+
+K264｜MagCache用residual magnitude规律做自适应缓存，在论文中对Open-Sora/CogVideoX/Wan2.1/HunyuanVideo报告约2.10–2.68×加速；官方实现后来增加Wan2.2支持。说明cache可跨模型迁移，但每模型仍需校准/验证。来源：NeurIPS 2025 MagCache + official repo。成熟度：B。
+
+K265｜Cache不是“越激进越好”；后续TaoCache等工作明确指出早/中期跳步或残差缓存可能造成结构差异、指令跟随和角色一致性下降。因此缓存验证必须包含结构/identity/action回归，而不只测秒数。来源：TaoCache 2025。成熟度：B/C。
+
+K266｜远程生成的队列成本具有不可逆性：Runway当前插件文档明确说明任务一旦提交不能取消并会消耗credits。成熟生产应把input preflight / cost estimate / duplicate suppression放在submit之前，而不是提交后再发现错误。来源：Runway Premiere/Resolve plugin docs 2026。成熟度：A（平台事实）+工程推论。
+
+K267｜性能结论必须绑定profile：model/version、workflow、dtype/quant backend、resolution、frames、steps、cache、offload、GPU VRAM、system RAM、driver/runtime。官方Diffusers也强调优化效果依赖硬件与模型；因此“4080能跑多少帧/多少并发”只能本机实测。来源：Diffusers optimization docs。成熟度：A。
+
+K268｜MiniMax H3（2026-08开源）当前官方定位为统一text/image/video/audio上下文的视频模型，原生stereo audio、最高2K、4–15s，并强调复杂多模态指令和V2V motion transfer。对当前模型矩阵，这更适合归入“多模态/音画联合/开放权重候选”，而不是仅沿用旧Hailuo 2.3能力认知。来源：MiniMax H3官方发布。成熟度：A（官方能力声明，效果仍需项目验证）。
+
+K269｜H3“开源”不等于Apache式无限制使用：官方H3 Community License包含Applicable Territory、商业UI标识、年收入门槛下的额外授权等条件，并限制用H3输出去改进其他非H3模型。许可证必须跟模型版本一起保存。来源：MiniMax H3 official license。成熟度：A（许可证事实）。
+
+K270｜Wan2.2官方仓库的模型许可为Apache 2.0，并声明不主张生成内容权利；但使用者仍需遵守适用法律并对用途负责。说明“开权重模型”之间许可证差异很大，不能把H3/Wan统一标成open-source=同许可。来源：Wan2.2官方repo。成熟度：A。
+
+K271｜截至2026-09，Wan3.0云端已成为All-in-One多模态视频模型：支持text/image/video/audio等参考、T2V、首帧/首尾帧I2V、reference、editing/extension，官方最长30s并可原生音画。当前模型矩阵应把“Wan2.2本地开放链”和“Wan3.0当前云端能力”分开记，不能混成同一版本。来源：Alibaba Cloud Model Studio。成熟度：A（官方产品事实）。
+
+K272｜Vidu Q4当前官方能力强调reference-heavy工作：1–15张image refs、0–3 voice refs、最长16s、同步音画，并面向人物/场景/风格/声音联合一致性。适合作为“多参考+声音参考”候选，而不是笼统与所有模型比总分。来源：Vidu Q4官方。成熟度：A（官方能力声明）。
+
+K273｜Runway Gen-4.5当前是Text-to-Video / Image-to-Video主生成模型，官方强调复杂sequenced instructions、camera choreography与2–10s生成；它更像“通用短镜头生成/运动与镜头指令”槽，而非performance capture专用。来源：Runway 2026官方帮助。成熟度：A。
+
+K274｜Runway Act-Two把“角色外观”和“驱动表演”分开：performance video提供movement/expression/audio/gesture，character image/video提供角色外观；因此performance transfer应作为独立job类型，不应和普通I2V/T2V混为一个模型评分维度。来源：Runway Act-Two。成熟度：A。
+
+K275｜模型矩阵必须date-stamped并按job维护，而不是选永久“总冠军”。2026当前平台已同时出现H3、Wan3.0、Vidu Q4、Gen-4.5、Act-Two等明显不同input/control特征；路由字段应是TASK×MODEL×VERSION×COST×LOCALITY，而不是MODEL_RANK=1。来源：多官方当前文档综合。成熟度：A/B。
+
+K276｜“可商用”至少要拆成五个问题：provider是否允许商业使用、你是否有输入素材权利、输出是否有可主张版权、数据/训练条款如何、是否有AI披露义务。Runway当前开发者指南也明确把这些问题分开。来源：Runway Dev commercial-use guide。成熟度：A（合规框架；非法律意见）。
+
+K277｜托管服务允许商用也不等于排他权或无风险。Runway当前明确不限制其输出的商业使用，但同时提醒输出可能不唯一，并要求检查输入图像、肖像、商标、音频、style references等权利。来源：Runway usage rights / Dev guide。成熟度：A（服务条款事实）。
+
+K278｜在美国版权框架下，纯AI输出的版权保护仍要求足够的人类作者性；美国版权局2025报告明确认为，仅提供prompt本身通常不足，但人对结果的创作性选择、编排或修改可能受保护。来源：U.S. Copyright Office AI Report Part 2。成熟度：A（美国法域；不能外推全球）。
+
+K279｜欧盟AI Act Article 50的透明度义务已自2026-08-02开始适用：生成/操纵内容涉及machine-readable marking，deepfake图像/音频/视频还涉及披露；艺术/创作/讽刺/虚构作品的披露方式有相应规则。商业发布需要把jurisdiction/disclosure profile做成项目交付条件，而不是事后补标签。来源：European Commission / AI Act Article 50。成熟度：A（欧盟法域；非全球规则）。
+
+K280｜C2PA Content Credentials解决的是“可验证的来源与修改历史”，不是判断内容真假或好坏。manifest可记录生成/编辑来源并通过加密签名与资产绑定；Adobe 2026已在更多GenAI工作流自动附加C2PA。对内部系统最有价值的是把asset/version/source/model/action等provenance映射成可选择公开的外部凭证，而不是把内部日志整包公开。来源：C2PA官方原则/实施指南 + Adobe Content Credentials。成熟度：A。
+
+## MERGED｜R9-C 母知识
+
+C01｜OPTIMIZATION IS A PROFILE, NOT A SWITCH
+量化/cache/offload/compile都必须绑定model×version×hardware×resolution×frames×workflow测，不存在脱离环境的“最佳参数”。
+
+C02｜VRAM ≠ MODEL SIZE
+权重、activation、latent、VAE、cache、transfer buffer共同决定峰值；必须保留运行余量。
+
+C03｜OFFLOAD IS A MEMORY↔LATENCY LADDER
+model / group / leaf offload越细越省显存但通常增加搬运；video更适合测试group offload + quantization。
+
+C04｜CACHE NEEDS QUALITY REGRESSION
+TeaCache/MagCache证明cache能显著加速特定video diffusion，但必须连同identity / structure / action / prompt-following一起验，不只看秒数。
+
+C05｜SUBMIT IS A COST GATE
+远程任务可能提交即产生不可逆成本；preflight、dedupe、budget、stop rule必须在enqueue/submit之前。
+
+C06｜MODEL-BY-JOB MUST BE CURRENT
+H3 / Wan / Vidu / Runway等能力变化很快；模型矩阵必须date-stamped，按job与version路由，禁止永久“第一名”。
+
+C07｜OPEN MODEL ≠ SAME LICENSE
+Wan2.2 Apache 2.0 与H3 Community License差异显著；每个model artifact必须绑定license/version/territory/commercial conditions。
+
+C08｜COMMERCIAL USE HAS MULTIPLE RIGHTS LAYERS
+provider permission、input rights、output copyright、likeness/trademark/audio、data terms、AI disclosure必须分开检查。
+
+C09｜PROVENANCE ≠ COPYRIGHT ≠ TRUTH
+SHA/lineage/C2PA回答“从哪里来、怎么改”；copyright回答“谁能主张权利”；C2PA本身不判内容真假。
+
+C10｜DELIVERY NEEDS COMPLIANCE PROFILE
+商业交付除了视频技术profile，还应有target jurisdiction / provider terms snapshot / AI disclosure / credential policy / input-rights receipt。
+
+## 推荐的 Performance Profile（仅外部收集结果）
+
+```yaml
+profile_id:
+model:
+model_version:
+license_snapshot:
+workflow_version:
+
+hardware:
+  gpu:
+  vram:
+  system_ram:
+  driver:
+  runtime:
+
+generation:
+  resolution:
+  frames:
+  duration:
+  steps:
+  dtype:
+  quantization:
+  cache:
+  offload:
+  compile:
+  concurrency:
+
+measure:
+  peak_vram:
+  peak_ram:
+  wall_time:
+  sec_per_output_sec:
+  energy_or_temperature_if_needed:
+  failure_rate:
+  quality_regression:
+
+cost:
+  local_gpu_time:
+  cloud_credits_or_price:
+  retry_cost:
+```
+
+## 推荐的 Commercial Provenance Packet（仅外部收集结果）
+
+```yaml
+asset_id:
+asset_version:
+sha256:
+
+generator:
+  provider:
+  model:
+  model_version:
+  service_or_local:
+  terms_or_license_snapshot:
+
+inputs:
+  - asset_id:
+    role:
+    rights_basis:
+    consent_or_license_ref:
+
+generation_record:
+  prompt_version:
+  seed_or_task_id:
+  workflow_version:
+  human_edits:
+  parent_assets:
+
+rights:
+  provider_commercial_use_status:
+  input_rights_status:
+  likeness_status:
+  trademark_status:
+  music_audio_status:
+  jurisdiction_profile:
+
+transparency:
+  ai_generated_or_modified:
+  disclosure_required:
+  visible_label_policy:
+  c2pa_or_content_credentials:
+  credential_locator:
+
+delivery:
+  client_or_platform:
+  territory:
+  rights_receipt:
+  compliance_receipt:
+```
+
+## 冲突 / 边界
+
+- **更低位宽 ≠ 必然更快**：显存下降与kernel/backend支持不是同一回事；某些量化只解决“放得下”，不一定降低延迟。
+- **更多offload ≠ 更高吞吐**：省VRAM会增加PCIe/CPU内存压力；可能把GPU瓶颈换成总线/RAM瓶颈。
+- **cache speedup ≠ 项目speedup**：论文倍率只覆盖特定模型、prompt、硬件和指标；角色一致/复杂动作可能更敏感。
+- **30s native generation ≠ 30s production pass**：Wan3.0等官方支持更长输出只说明接口能力，不证明当前角色/风格/LongTake能一次通过。
+- **open source ≠ unrestricted commercial**：必须读具体license。
+- **provider说可商用 ≠ 自动拥有版权**：服务合同与法定copyright是不同问题。
+- **C2PA存在 ≠ 内容真实**：它验证声明/历史与资产绑定，不替代真实性判断。
+- **法律规则有法域**：美国copyright与EU Article 50不能写成全球统一规范。
+
+## R9-C COVERAGE
+
+已覆盖：
+- quantization
+- component-level quantization
+- model/group/leaf offload
+- activation headroom
+- TeaCache / MagCache / cache quality risk
+- preflight / submit cost gate
+- hardware-bound performance profiling
+- current H3 / Wan3 / Vidu Q4 / Gen-4.5 / Act-Two task profiles
+- open-weight license differences
+- commercial-use layers
+- US AI copyrightability
+- EU AI transparency
+- C2PA / Content Credentials
+
+仍必须本项目验证：
+- 4080具体VRAM/RAM/温度/264f/并发/吞吐
+- H3本地具体quant/cache/offload最佳组合
+- Wan本地具体profile
+- H3/Wan/Vidu/Runway在黎黎隆角色/动作/风格上的真实任务矩阵
+- provider价格随时间变化，成本只能记录date-stamped snapshot
+- 实际商业项目目标地区的法律/合同审查
+
+## R9 COLLECTION STOP
+
+R9-A = 24
+R9-B = 24
+R9-C = 24
+R9_TOTAL = 72
+
+R1–R8 RAW = 208
+ALL_EXTERNAL_RAW = 280
+
+EXTERNAL_BROAD_RESEARCH = STOP
+
+NEXT：
+280 RAW
+→ 总去重 / 更新MASTER / 冲突簇 / 缺口
+→ 最终吸收 R1–R4
+→ 已有社会答案直接进入知识
+→ 只把项目特定未知量留给验证 Canvas / E0→E5
