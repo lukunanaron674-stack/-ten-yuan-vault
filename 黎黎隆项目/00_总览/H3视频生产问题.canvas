@@ -99,6 +99,86 @@
       "width": 1250,
       "height": 430,
       "color": "5"
+    },
+    {
+      "id": "h3_problem_system_group_20261007",
+      "type": "group",
+      "x": 3600,
+      "y": -500,
+      "width": 4200,
+      "height": 3600,
+      "color": "4",
+      "label": "AG-07 H3代理｜知识全部问题系统化"
+    },
+    {
+      "id": "z_h3_root_20261007",
+      "type": "text",
+      "text": "# Z-H3｜H3总目标\n\nREADY_FOR_H3 → 可追溯、可复验、可连续拼接的视频生产。\n\nAG-07 不保留平行私有知识；所有知识进入 XN / NX / PATH / EVIDENCE。\n\nAgent正本：[[../20_Agent系统/01_Agent库/AG-07_H3渲染Agent.md]]\n总问题：[[黎黎隆问题系统.canvas]]",
+      "x": 3800,
+      "y": -320,
+      "width": 1200,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "z_h3_cluster_a_20261007",
+      "type": "text",
+      "text": "## H3 子Z｜输入与短块\nZ-H3-01 INPUT｜输入/职责匹配\nZ-H3-02 SHORTBLOCK｜10–11s稳定\nZ-H3-03 ACTION｜动作复杂度边界\nZ-H3-04 CAMERA｜镜头运动边界\nZ-H3-05 BINDING｜角色×场景职责",
+      "x": 3800,
+      "y": 320,
+      "width": 1150,
+      "height": 620,
+      "color": "2"
+    },
+    {
+      "id": "z_h3_cluster_b_20261007",
+      "type": "text",
+      "text": "## H3 子Z｜结构与连续性\nZ-H3-06 ENCODING｜Flat/CBEC/动态链编码\nZ-H3-07 SEED｜多seed鲁棒性\nZ-H3-08 LONGTAKE｜10–11s→30s→60s\nZ-H3-09 RUNTIME｜4080/ComfyUI现实能力\nZ-H3-10 REVIEW｜审核/重试/receipt",
+      "x": 5100,
+      "y": 320,
+      "width": 1150,
+      "height": 620,
+      "color": "2"
+    },
+    {
+      "id": "h3_xn_system_20261007",
+      "type": "text",
+      "text": "## XN_RECORD｜规则\n\n每条 H3 规则必须记录：\nxn_id / supports_z / statement / source_type / evidence_ref / expected_fit / verified_fit / status\n\n已知候选：\n• HEADSHOT→IDENTITY_ONLY\n• 禁非等比 stretch\n• READY_FOR_H3 前置\n• WRITTEN≠RENDERING\n• 文件出现≠完成\n• 执行重试≤2\n\n迁移经验未经4080复验不得 VERIFIED。",
+      "x": 3800,
+      "y": 1120,
+      "width": 1150,
+      "height": 820,
+      "color": "5"
+    },
+    {
+      "id": "h3_nx_system_20261007",
+      "type": "text",
+      "text": "## NX_GAP｜待实验\n\n• 10s vs 11s真实稳定差\n• 264f边界\n• 动作复杂度阈值\n• 镜头运动安全级\n• 双参考是否最小充分\n• CBEC vs Flat\n• seed数量规则\n• LongTake状态字段\n• 运动中“角色味道”可否机械审\n\nNX → 实验 → evidence → candidate XN → verified/rejected",
+      "x": 5100,
+      "y": 1120,
+      "width": 1150,
+      "height": 820,
+      "color": "3"
+    },
+    {
+      "id": "h3_path_system_20261007",
+      "type": "text",
+      "text": "## PATH_STATE｜现实能力\n\n4080_local_32g\nComfyUI / H3 workflow\n模型/节点/Sage\nVRAM/RAM/耗时\nwatcher/queue/executor\nLinear附件读取\n视频/关键帧/SHA回传\n抽帧审核链\n\nFOUND→ACQUIRED→READABLE→UNDERSTOOD→ADAPTED→EXECUTABLE→AUTOMATABLE→VERIFIED",
+      "x": 6400,
+      "y": 320,
+      "width": 1150,
+      "height": 800,
+      "color": "4"
+    },
+    {
+      "id": "h3_evidence_system_20261007",
+      "type": "text",
+      "text": "## EVIDENCE｜只认真实证据\n\ntask JSON / workflow\n/history + error body\ninput SHA / output SHA\n实际视频\nhead/mid/tail / 抽帧\nruntime / VRAM / RAM\n机械审核 + 74审核\n\n知识状态：RAW_OBSERVATION → NX → CANDIDATE_XN → TESTING → VERIFIED_XN / REJECTED / DEPRECATED",
+      "x": 6400,
+      "y": 1250,
+      "width": 1150,
+      "height": 740,
+      "color": "5"
     }
   ],
   "edges": [
@@ -173,10 +253,60 @@
       "toSide": "bottom",
       "color": "5",
       "label": "执行顺序"
+    },
+    {
+      "id": "edge_m10_zh3_20261007",
+      "fromNode": "m10_c2d1e8f3",
+      "fromSide": "right",
+      "toNode": "z_h3_root_20261007",
+      "toSide": "left",
+      "label": "问题系统化"
+    },
+    {
+      "id": "edge_zh3_a_20261007",
+      "fromNode": "z_h3_root_20261007",
+      "fromSide": "bottom",
+      "toNode": "z_h3_cluster_a_20261007",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_zh3_b_20261007",
+      "fromNode": "z_h3_root_20261007",
+      "fromSide": "bottom",
+      "toNode": "z_h3_cluster_b_20261007",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_a_xn_20261007",
+      "fromNode": "z_h3_cluster_a_20261007",
+      "fromSide": "bottom",
+      "toNode": "h3_xn_system_20261007",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_b_nx_20261007",
+      "fromNode": "z_h3_cluster_b_20261007",
+      "fromSide": "bottom",
+      "toNode": "h3_nx_system_20261007",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_b_path_20261007",
+      "fromNode": "z_h3_cluster_b_20261007",
+      "fromSide": "right",
+      "toNode": "h3_path_system_20261007",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_path_evidence_20261007",
+      "fromNode": "h3_path_system_20261007",
+      "fromSide": "bottom",
+      "toNode": "h3_evidence_system_20261007",
+      "toSide": "top"
     }
   ],
   "metadata": {
-    "version": "1.0-2026-10-06-h3-extracted",
+    "version": "1.1-2026-10-07-h3-agent-problem-system",
     "frontmatter": {
       "source_canvas": "黎黎隆项目/00_总览/黎黎隆问题系统.canvas",
       "source_version": "1.0-2026-10-06-character-h3-alignment"
