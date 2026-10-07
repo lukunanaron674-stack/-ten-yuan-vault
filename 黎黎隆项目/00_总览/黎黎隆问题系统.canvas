@@ -1511,6 +1511,16 @@
       "width": 1100,
       "height": 300,
       "color": "6"
+    },
+    {
+      "id": "three_layer_role_map",
+      "type": "text",
+      "text": "# 三层职责映射｜项目总问题层\n\n本 Canvas = **AI Execution / 项目级问题总图**。\n\n负责：项目总目标、正式问题树、L1–L4 Problem State、跨角色/场景/H3 的依赖与状态。\n\n上游给 674：只输出 Human Snapshot → [[674总览.canvas]]。\n下游读取：[[AI数据库/00_AI数据库索引.md]] → 对应 canonical Markdown / Linear / 证据。\n\n禁止：把完整问题树直接当成674默认阅读页。",
+      "x": -7360,
+      "y": -3580,
+      "width": 1400,
+      "height": 620,
+      "color": "2"
     }
   ],
   "edges": [
