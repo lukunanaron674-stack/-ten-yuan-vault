@@ -1,45 +1,124 @@
 {
   "nodes": [
     {
-      "id": "retired_group",
+      "id": "root",
       "type": "group",
       "x": 0,
       "y": 0,
-      "width": 3200,
-      "height": 1500,
+      "width": 4600,
+      "height": 2600,
       "color": "6",
-      "label": "H3视频生产问题｜历史入口"
+      "label": "H3分控｜人类阅读版"
     },
     {
-      "id": "retired_notice",
+      "id": "goal",
       "type": "text",
       "x": 220,
       "y": 180,
-      "width": 1800,
-      "height": 620,
+      "width": 1350,
+      "height": 520,
       "color": "1",
-      "text": "# 已退役｜不再作为工作面\n\n本 Canvas 已退役。H3执行转入 AI后台 Markdown + Linear。\n\n现行唯一用户 Canvas：[[674总览.canvas]]\nAI后台正本：[[AI后台/03_H3执行.md]]\n\n规则：禁止继续往本 Canvas 写问题节点 / 日志 / 任务状态。"
+      "text": "# 目标\n\n让 H3 从 10–11 秒稳定短块，逐步扩展到角色身份、动作、空间都连续的 30–60 秒生产能力。\n\n**目标体量：9/10**\n**可行度：7/10**"
     },
     {
-      "id": "human_link",
+      "id": "subgoals",
+      "type": "text",
+      "x": 1750,
+      "y": 180,
+      "width": 1500,
+      "height": 520,
+      "color": "2",
+      "text": "# 分目标\n\n1. 先稳定身份与动作完成率\n2. 建立镜头与 end_state → start_state 连续性\n3. 短块稳定后再扩大到 LongTake"
+    },
+    {
+      "id": "progress",
+      "type": "text",
+      "x": 3440,
+      "y": 180,
+      "width": 940,
+      "height": 520,
+      "color": "4",
+      "text": "# 当前进度\n\n短块链路已有可用基础；H3 真实实验与抽帧审核仍在继续，LongTake 还不能宣称稳定。"
+    },
+    {
+      "id": "nx",
+      "type": "text",
+      "x": 220,
+      "y": 930,
+      "width": 2500,
+      "height": 650,
+      "color": "5",
+      "text": "# 当前唯一 NX\n\n**H3唯一 NX：** 10–11 秒短块的稳定性，能否可靠扩展到 30–60 秒而不出现身份漂移、动作乱序或场景连续性崩坏。\n\n> 这里只保留当前最卡脖子的未知；其它 NX、XN、PATH、证据全部在 AI 后台。"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 2940,
+      "y": 930,
+      "width": 1440,
+      "height": 650,
+      "color": "3",
+      "text": "# 下一步\n\n优先做短块多 seed 验证和连续拼接实验；未稳定前不把偶然 PASS 当永久规则。\n\n# 需要你吗？\n\n目前不用。只有出现两个方向都能跑通但审美结果不同，才交给你选。"
+    },
+    {
+      "id": "home",
       "type": "file",
       "file": "黎黎隆项目/00_总览/674总览.canvas",
       "x": 220,
-      "y": 950,
-      "width": 1000,
-      "height": 280,
+      "y": 1840,
+      "width": 1200,
+      "height": 320,
       "color": "4"
     },
     {
-      "id": "backend_link",
+      "id": "backend",
       "type": "file",
       "file": "黎黎隆项目/00_总览/AI后台/03_H3执行.md",
-      "x": 1450,
-      "y": 950,
-      "width": 1200,
-      "height": 280,
-      "color": "2"
+      "x": 1700,
+      "y": 1840,
+      "width": 1600,
+      "height": 320,
+      "color": "6"
+    },
+    {
+      "id": "rule",
+      "type": "text",
+      "x": 3440,
+      "y": 1840,
+      "width": 940,
+      "height": 320,
+      "color": "6",
+      "text": "# 阅读规则\n\n你只看这一屏。\n不展示 XN / PATH / SHA / 日志。"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "goal",
+      "fromSide": "right",
+      "toNode": "subgoals",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "subgoals",
+      "fromSide": "right",
+      "toNode": "progress",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "goal",
+      "fromSide": "bottom",
+      "toNode": "nx",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "nx",
+      "fromSide": "right",
+      "toNode": "next",
+      "toSide": "left"
+    }
+  ]
 }
