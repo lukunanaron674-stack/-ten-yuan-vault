@@ -58,3 +58,12 @@ GitHub is the versioned Single Source of Truth. ChatGPT researches/compiles; Wor
 TASK → classify capability → MASTER INDEX → minimum knowledge_id set → executor → evidence.
 
 Do not load all 42 entries by default. Do not treat model familiarity with a concept as AI_LEARNED.
+
+## External ingest entry
+
+外部论文 / GitHub / 技术报告 / 行业方法先进入：
+- `EXTERNAL_KNOWLEDGE_INGEST_PROTOCOL.md`
+- `00-中枢索引/Linear_内部库到22工单路由表_v1.0_20261008.md`
+- `ROLLBACK_LEDGER.md`
+
+MASTER INDEX 只在知识完成内部路由后选择最小 knowledge_id set。外部来源存在 ≠ AI_LEARNED，也不得跳过目标 Z 的 E0–E5 / 验证门。
