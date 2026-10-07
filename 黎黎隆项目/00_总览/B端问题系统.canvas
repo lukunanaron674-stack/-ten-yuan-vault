@@ -179,6 +179,16 @@
       "width": 1100,
       "height": 300,
       "color": "6"
+    },
+    {
+      "id": "three_layer_role_map",
+      "type": "text",
+      "text": "# 三层职责映射｜B端执行层\n\n本 Canvas = **AI Execution / B端文字导演与反馈闭环**。\n\n负责：B1–B4、H3描述词、READY_FOR_H3、A/C端回执、失败族、版本反馈与下一轮提示词修订。\n\n上游：从项目问题层与角色链读取当前目标/约束。\n下游：把真实执行证据、版本、审核结果写回 AI Database / Linear。\n给674：只同步“本轮做成什么 / 卡在哪里 / 下一步 / 是否需要你”。\n\n禁止：把 seed、SHA、failure_family、日志直接倾倒到674总览。",
+      "x": 900,
+      "y": -280,
+      "width": 1400,
+      "height": 620,
+      "color": "2"
     }
   ],
   "edges": [
