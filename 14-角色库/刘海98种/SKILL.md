@@ -1,21 +1,40 @@
 ---
 name: 刘海98种角色视觉词库建库
-version: 1.5.0
-status: structure-stable-shape-review-active
+version: 1.6.0
+status: feeling-route-migrated-legacy-assets-active
 skill_grade: S
 failure_mode: fail-closed
 scope: 14-角色库/刘海98种
 canonical_path: 14-角色库/刘海98种
 canonical: true
 critical_dependency: skills/S级_真实参考图片采集/SKILL.md
-ontology_dependencies:
+current_canon:
+  - 01-十元系统/三元十元感受模型_核心正本_v1.0_20261007.md
+legacy_ontology_dependencies:
   - 01-十元系统/05-十元语义空间/L1_is-a狭义继承关系协议_v1.0_20260803.md
   - 01-十元系统/05-十元语义空间/L1_十元配比度与本征映射准度协议_v1.1_20260803.md
   - 01-十元系统/05-十元语义空间/狭义视觉库/00_十元形状感受与轴变换上游正本_v0.3.md
   - 01-十元系统/05-十元语义空间/狭义视觉库/发型98种十元形状映射接口_v0.2.md
 ---
 
-# S级 Skill｜刘海98种角色视觉词库建库 v1.5
+# S级 Skill｜刘海98种角色视觉词库建库 v1.6
+
+## 0｜R5 感受版执行门禁
+
+从 TY-FEELING-1.5.0-R5 起，本库的图片、名称、结构指纹和旧评分继续保留，但**默认研究目标已改为“发型在具体语境中诱发人的十元感受谱”**。
+
+执行顺序固定为：
+
+```text
+具体发型/图像 + 语境
+→ 人的自由感受描述
+→ 十元感受1–10谱
+→ 主导/次级感受
+→ 反查轮廓、边界、密度、方向、节奏等诱发特征
+→ 人复核
+```
+
+禁止默认执行“对象本体 → is-a狭义 → 五行父项 → 本征准度 → 自动定十元”。旧字段只作历史对照，不得覆盖现行感受正本。
 
 ## 1｜定位
 
@@ -54,7 +73,9 @@ ontology_dependencies:
 
 ## 3｜必读顺序
 
-1. `skills/S级_真实参考图片采集/SKILL.md`
+1. `01-十元系统/三元十元感受模型_核心正本_v1.0_20261007.md`
+2. `01-十元系统/_流水线/感受谱流水线模板_v1.0_20261007.md`
+3. `skills/S级_真实参考图片采集/SKILL.md`
 2. `01-十元系统/05-十元语义空间/狭义视觉库/00_十元形状感受与轴变换上游正本_v0.3.md`
 3. `01-十元系统/05-十元语义空间/狭义视觉库/发型98种十元形状映射接口_v0.2.md`
 4. `01-十元系统/03-十元准度卡/x_视觉狭义卡_v0.1.md`
@@ -66,16 +87,16 @@ ontology_dependencies:
 10. `02_五行十元重组/SKILL.md`
 11. `01-十元系统/05-十元语义空间/L1_十元配比度与本征映射准度协议_v1.1_20260803.md`
 
-## 4｜最高层级
+## 4｜现行最高层级
 
 ```text
-五行＝广义对立统一体。
-五大主题＝五行在叙事领域的is-a狭义子项。
-形状感受＝十元在视觉领域的is-a狭义显影。
-发型轮廓＝形状感受在发型领域的进一步is-a狭义。
+人＝感受主语
+十元＝关系性感受基元
+发型轮廓/纹理/局部结构＝可能的诱发特征
+五行/is-a/旧本征准度＝历史结构参考
 ```
 
-不得把叙事主题、五行父项、视觉形状与具体发型类型写成完全等号。
+不得再把具体发型写成某十元的客观本体。
 
 ## 5｜已确认发型形状
 
@@ -224,9 +245,9 @@ final_status: canonical | provisional | legacy-pending-review
 ## 13｜自动工具
 
 - 重建：`tools/rebuild_five_element_canvases.py`
-- 狭义继承：`tools/apply_is_a_narrow_semantics.py`
-- 配比度：`tools/apply_ten_yuan_mapping_degree.py`
-- 本征准度与排行：`tools/apply_ten_yuan_archetype_accuracy.py`
+- 狭义继承：`tools/apply_is_a_narrow_semantics.py`（LEGACY，仅历史复现，禁止默认执行）
+- 配比度：`tools/apply_ten_yuan_mapping_degree.py`（LEGACY，仅历史复现）
+- 本征准度与排行：`tools/apply_ten_yuan_archetype_accuracy.py`（LEGACY，仅历史复现）
 - 来源审计：`tools/check_reference_links.py`
 - 综合审计：`02_五行十元重组/02_图片与结构审计报告.md`
 
