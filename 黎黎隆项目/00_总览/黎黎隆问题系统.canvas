@@ -1491,6 +1491,26 @@
       "height": 520,
       "color": "4",
       "text": "# B端/H3 详细问题唯一入口\n\n[[B端问题系统.canvas]]\n\n包含：674-286 B1–B4、AG-07/Z-H3、282→READY_FOR_H3、674-216真实实验、A/C反馈与人在环外闭环。\n\n总 Canvas 此处只做导航。"
+    },
+    {
+      "id": "human_view_backlink",
+      "type": "file",
+      "file": "黎黎隆项目/00_总览/674总览.canvas",
+      "x": -8260,
+      "y": -4000,
+      "width": 760,
+      "height": 300,
+      "color": "1"
+    },
+    {
+      "id": "ai_backend_notice",
+      "type": "text",
+      "text": "# 《黎黎隆》问题系统｜AI执行版\\n\\n这是 AI 后台执行版。\\n674 默认入口：[[674总览.canvas]]\\n\\n规则：内部状态变化先生成 Human Snapshot，再同步到人类总览。",
+      "x": -7360,
+      "y": -4000,
+      "width": 1100,
+      "height": 300,
+      "color": "6"
     }
   ],
   "edges": [
