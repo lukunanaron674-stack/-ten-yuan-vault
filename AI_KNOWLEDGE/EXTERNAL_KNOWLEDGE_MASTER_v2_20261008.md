@@ -305,7 +305,7 @@ SHA/C2PA回答来源/修改；copyright回答权利；真实性另论。交付�
 旧21 DIRECT，加R9新增19条结构知识。
 
 新增DIRECT：
-M43 M44 M45 M46 M47 M48 M49
+M43 M44 M45 M46 M47 M48
 M50 M51 M52 M53 M54 M56 M57 M58 M59
 M60 M64 M65 M66
 
@@ -321,7 +321,7 @@ M60 M64 M65 M66
 - M63 SUBMIT COST GATE：preflight结构吸收；具体平台成本策略按当前服务验证
 - M49 PREVIS：blockout作为可选生产结构吸收；是否显著提升当前H3成功率验证
 
-注：M49同时出现在DIRECT结构层；吸收“可用作previs”，不直接宣称“必然提高成功率”。
+注：M49只归SPLIT，不重复计入DIRECT；吸收“previs/blockout可作为生产结构”，不直接宣称“必然提高成功率”。
 
 ## VERIFY_FULL = 7
 
