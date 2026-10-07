@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 620,
+      "height": 430,
+      "color": "1",
+      "text": "# R7｜五行 → 十元来源审计\n\n**结论：不是纯继承，也不是凭空自造。**\n\n十元继承：\n五行五类 + 阴阳极性 + 生克骨架 + 十位传统先例\n\n十元新增：\n具体十元语义 + 补 + 主次 + 体量/强度 + 动态链 + 五维 + 跨域映射规则\n\n状态：R7 DONE"
+    },
+    {
+      "id": "trad",
+      "type": "text",
+      "x": -950,
+      "y": -620,
+      "width": 520,
+      "height": 430,
+      "color": "2",
+      "text": "# 传统骨架｜INHERITED\n\n✓ 木火土金水五类\n✓ 生 / 克循环\n✓ 阴阳极性\n✓ 五行内部阴阳分化\n✓ 五行×阴阳形成十位的历史先例\n\n代表：十天干\n甲乙木 / 丙丁火 / 戊己土 / 庚辛金 / 壬癸水"
+    },
+    {
+      "id": "trans",
+      "type": "text",
+      "x": -950,
+      "y": -60,
+      "width": 520,
+      "height": 430,
+      "color": "4",
+      "text": "# 十元改造｜TRANSFORMED\n\n△ 五行×阴阳十位 → ZX/NX…十元位置\n△ 五行生克 → 十元阴/阳两条关系几何\n△ 阴阳对立 → 同对象层/同变量/反向操作\n△ 五轴 → 五个现代抽象变量\n\n骨架有传统来源；具体语义不是传统原义。"
+    },
+    {
+      "id": "new",
+      "type": "text",
+      "x": -250,
+      "y": -650,
+      "width": 560,
+      "height": 600,
+      "color": "5",
+      "text": "# 十元新增｜NEW\n\n- ZX/NX/ZN/X/N/X并Z/XN/Z/XZ/NZ 符号\n- 十个核心操作定义\n- 木=方向与作用权\n- 火=独立成立与归属\n- 土=内外跨越\n- 金=运行/裁定配置\n- 水=可逆性/回返\n- 补关系\n- 主 / 次\n- 体量1–10\n- 关系强度1–10\n- changed_variable / residue / next_affordance\n- 动态链构图\n\n这些必须由十元自己接受现代验证。"
+    },
+    {
+      "id": "themes",
+      "type": "text",
+      "x": 450,
+      "y": -650,
+      "width": 600,
+      "height": 530,
+      "color": "6",
+      "text": "# 高风险新主张｜五维 / 跨域 is-a\n\n当前：\n木→因果\n火→本体\n土→空间\n金→时间\n水→命运\n\n传统五行文献：\n**没有直接给出这组对应。**\n\n所以：\n五维 = NEW DOMAIN MODEL\n五行→五维 = TESTABLE HYPOTHESIS\nis-a狭义 = EXTERNAL VALIDATION OPEN\n\nQ-AXIS-001.1 本身也仍 OPEN。"
+    },
+    {
+      "id": "relation",
+      "type": "text",
+      "x": 450,
+      "y": 20,
+      "width": 600,
+      "height": 520,
+      "color": "3",
+      "text": "# 生 / 克 / 补来源\n\n**生**｜INHERITED 五行骨架\n**克**｜INHERITED 五行骨架\n\n抬升到十元阴/阳关系几何：\nTRANSFORMED\n\n**补**｜NEW / YINYANG-INSPIRED\n不是传统五行第三基础关系。\n\n⚠️ v2.22 旧关系表早于 8/2 端点重定义；含 z / zn 机制继续冻结，不能拿旧机制证明理论来源。"
+    },
+    {
+      "id": "chain",
+      "type": "text",
+      "x": 1180,
+      "y": -650,
+      "width": 620,
+      "height": 560,
+      "color": "4",
+      "text": "# 动态链｜NEW FORMALIZATION\n\n传统启发：\n- 生克\n- 循环\n- 过程\n- 顺逆\n\n现代形式：\n- directed relation\n- signed graph\n- path / trajectory\n- stage\n- state change\n\n用户新增：\n- 主次\n- changed_variable\n- residue\n- next_affordance\n- 1–10强度\n- 并行/汇合/删除/反向测试\n\n结论：不是古代五行原样。"
+    },
+    {
+      "id": "blood",
+      "type": "text",
+      "x": 1180,
+      "y": 20,
+      "width": 650,
+      "height": 650,
+      "color": "1",
+      "text": "# 十元血缘图\n\n传统五行五类 ───────── INHERITED\n│\n├─ 生克循环 ─────────── INHERITED\n│\n传统阴阳 ────────────── INHERITED\n│\n└─ 五行×阴阳十位 ───── INHERITED PRECEDENT\n      │\n      ▼\n现代十元重构\n├─ 十个操作语义 ────── NEW\n├─ 同变量反向操作 ──── NEW FORMALIZATION\n├─ 补 / 主次 / 强度 ── NEW\n├─ 动态链 ───────────── NEW FORMALIZATION\n├─ 五维 ─────────────── NEW DOMAIN MODEL\n└─ is-a跨域继承 ─────── HIGH-RISK HYPOTHESIS\n\n现代网络/过程语言提供“怎么写清楚”，不替十元证明正确。"
+    },
+    {
+      "id": "claim",
+      "type": "text",
+      "x": 1950,
+      "y": -520,
+      "width": 650,
+      "height": 520,
+      "color": "2",
+      "text": "# 最安全理论定位\n\n**受阴阳—五行十位结构启发，并在其上重构的现代关系编码模型。**\n\n不是：\n❌ 传统五行本来就是十元\n❌ 古人已经定义十个现代创作变量\n❌ 五行古老所以十元有效\n\n而是：\n✅ 传统提供部分结构骨架\n✅ 十元重新定义操作语义\n✅ 新语义必须独立实验验证"
+    },
+    {
+      "id": "test",
+      "type": "text",
+      "x": 1950,
+      "y": 120,
+      "width": 650,
+      "height": 560,
+      "color": "5",
+      "text": "# 最终验证三层\n\nA｜来源\n阴阳×五行十位 / 生克有没有历史依据？\n→ YES，较强\n\nB｜表示\n十元新语义能否稳定区分 Relation / Priority / Trace？\n→ 待独立编码\n\nC｜增量预测\nTEN 是否优于：\nNL 普通自然语言\nSTRUCT 通用结构化意图\n→ 必须第二创作者 + 先预测后揭盲\n\n**传统文献只能帮助 A，不能替代 B/C。**"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "trad",
+      "toNode": "trans",
+      "label": "骨架被重构"
+    },
+    {
+      "id": "e2",
+      "fromNode": "trans",
+      "toNode": "new",
+      "label": "进入十元新语义"
+    },
+    {
+      "id": "e3",
+      "fromNode": "new",
+      "toNode": "themes",
+      "label": "应用到叙事域"
+    },
+    {
+      "id": "e4",
+      "fromNode": "trad",
+      "toNode": "relation",
+      "label": "生克来源"
+    },
+    {
+      "id": "e5",
+      "fromNode": "relation",
+      "toNode": "chain",
+      "label": "关系进入时间结构"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "toNode": "blood",
+      "label": "总血缘"
+    },
+    {
+      "id": "e7",
+      "fromNode": "blood",
+      "toNode": "claim",
+      "label": "理论定位"
+    },
+    {
+      "id": "e8",
+      "fromNode": "claim",
+      "toNode": "test",
+      "label": "不能停在来源证明"
+    },
+    {
+      "id": "e9",
+      "fromNode": "themes",
+      "toNode": "test",
+      "label": "跨域需外验"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {
+      "type": "wuxing-tenyuan-source-audit",
+      "status": "R7-DONE",
+      "date": "2026-10-07"
+    }
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 700,
+      "height": 430,
+      "color": "2",
+      "text": "# 历史研究入口｜已迁移到十元主研究\n\n这个 Canvas 原名“论文方向3_v2”，现已停止作为主入口。\n\n## 当前主研究对象：十元\n\n主入口：\n**AI问题解决Canvas/十元现代理论定位研究_L1.canvas**\n\n论文只作为现代学术视角 / 验证入口。\n\n本 Canvas 保留 R1–R3 历史研究节点，不再承担主定位。"
+    },
+    {
+      "id": "map",
+      "type": "text",
+      "x": -900,
+      "y": 620,
+      "width": 680,
+      "height": 520,
+      "color": "3",
+      "text": "# R1｜旧表述需加来源层\n\n“十元是 Semantic Mapping Model”只描述**当前功能**，不是理论来源。\n\n理论来源：\n色彩关系 → 三元 → 五行接入 → 十元关系结构 → 十类映射方向。\n\n所以 R1 的 mapping-first 只能作为 runtime/use model，不能作为 genealogy。"
+    },
+    {
+      "id": "tri",
+      "type": "text",
+      "x": -100,
+      "y": 620,
+      "width": 650,
+      "height": 500,
+      "color": "4",
+      "text": "# 三元｜必须分 Genealogy 与 Runtime\n\n## 理论生成史\n颜色关系 → 三元 → 后来发展十元\n\n## 现行判定\n三元不能机械计算十元；仍可独立判定/复核。\n\n**“历史上三元先于十元” ≠ “运行时三元公式生成十元”。**"
+    },
+    {
+      "id": "relation",
+      "type": "text",
+      "x": 680,
+      "y": 620,
+      "width": 700,
+      "height": 520,
+      "color": "1",
+      "text": "# 映射后才有关系\n\n对象A → 十元A\n对象B → 十元B\n↓\n端点都成立\n↓\n对象层 / 阶段 / mechanism / target variable\n↓\n生 / 克 / 补 / NONE / AMBIGUOUS\n↓\nE作用量\n↓\n动态链\n\n**关系不能脱离映射。**"
+    },
+    {
+      "id": "social",
+      "type": "text",
+      "x": -900,
+      "y": 1300,
+      "width": 680,
+      "height": 650,
+      "color": "5",
+      "text": "# R2｜社会公平母类｜DONE\n\n## 主表示母类\n**Conceptual Spaces**\n对象 → 结构化语义空间\n\n## 直接结构邻居\n**Semantic Differential**\n固定双极尺度 → 多维 profile\n\n## 验证方法\n**Coding / Codebook Reliability**\n定义 / 纳入排除 / 一致性\n\n## 机器实现\n**Ontology / OWL**\n类 / 属性 / 关系 / 形式推理"
+    },
+    {
+      "id": "r3",
+      "type": "text",
+      "x": -100,
+      "y": 1300,
+      "width": 650,
+      "height": 650,
+      "color": "4",
+      "text": "# R3｜真实差异审计｜DONE\n\n基础件全部不抢新增：\n10位置 / 双极 / profile / weight\ncodebook / dynamic / relation\n\n## 只保留4个实验候选\nA 跨对象域结构不变性\nB 五组相反端共享核心变量 + 区分度\nC 三元复核纠错增量\nD 端点门控关系误判下降\n\n动态链退出第一验证层。"
+    },
+    {
+      "id": "r4",
+      "type": "text",
+      "x": 680,
+      "y": 1300,
+      "width": 700,
+      "height": 650,
+      "color": "3",
+      "text": "# R4｜本科论文重建｜READY\n\n只把 R3 的4个候选压成一个可做论文。\n\n优先：\nMapping Reliability\n+ Discriminant Validity\n\n可选：\n三元复核 A/B\n少量关系门控实验\n\n动态链暂不进第一论文核心。\n\n输出：RQ / 样本 / 变量 / 指标 / STOP / 5000字结构。"
+    },
+    {
+      "id": "file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文方向3_v2_十元映射模型_R1_本体重建.md",
+      "x": 0,
+      "y": 2120,
+      "width": 700,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "r2_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文方向3_v2_十元映射模型_R2_社会comparison_family.md",
+      "x": -900,
+      "y": 2050,
+      "width": 700,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "r2_gates",
+      "type": "text",
+      "x": -100,
+      "y": 2050,
+      "width": 720,
+      "height": 620,
+      "color": "4",
+      "text": "# R2｜科学验证顺序重排\n\nGate1｜Mapping Reliability\n同一对象能否稳定映射？\n\nGate2｜Discriminant Validity\n最近邻能否区分？\n\nGate3｜Mapping Utility\n十元 profile 是否有信息增量？\n\nGate4｜Relation Utility\n端点成立后再测生克补\n\nGate5｜Dynamic Utility\n最后才测动态链\n\n**先映射，后关系。**"
+    },
+    {
+      "id": "r2_position",
+      "type": "text",
+      "x": 700,
+      "y": 2050,
+      "width": 760,
+      "height": 620,
+      "color": "2",
+      "text": "# 十元当前研究定位｜R3修正\n\n**Theory-defined Semantic Mapping Scheme**\nwith\n**Paired Oppositional Endpoints**\n+\nRule-governed Coding\n+\nPost-mapping Relation System\n\n⚠️ 暂不叫严格 bipolar semantic space：\n没有正式连续轴 / 中点 / metric / distance。"
+    },
+    {
+      "id": "r3_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文方向3_v2_十元映射模型_R3_真实差异审计.md",
+      "x": -100,
+      "y": 2820,
+      "width": 720,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "r3_keep",
+      "type": "text",
+      "x": 700,
+      "y": 2820,
+      "width": 760,
+      "height": 650,
+      "color": "3",
+      "text": "# R3｜只留4个可实验差异\n\nA｜Cross-domain Structural Invariance\n同一十元跨人物/场景/关系/概念是否仍同义？\n\nB｜Pair-Core Discriminability\n相反端是否真共享核心变量且可稳定区分？\n\nC｜Three-Yuan Error-Detection Gain\n加三元复核是否真的少误判？\n\nD｜Endpoint-Gated Relation Error Reduction\n先映射再判关系是否减少假阳性？"
+    },
+    {
+      "id": "r3_kill",
+      "type": "text",
+      "x": 1540,
+      "y": 2820,
+      "width": 720,
+      "height": 650,
+      "color": "6",
+      "text": "# R3｜不再主张新增\n\n❌ 10个类别\n❌ 5对相反端本身\n❌ 多维 profile\n❌ 主次 / weight\n❌ T/M/C/E 概念本身\n❌ 第二套复核表示本身\n❌ 动态概念会变化\n❌ 先类型后关系的思想\n\n这些社会上都有对应。"
+    },
+    {
+      "id": "genealogy",
+      "type": "file",
+      "file": "01-十元系统/00_十元理论来源链_用户口述冻结_20261007.md",
+      "x": -1800,
+      "y": -50,
+      "width": 760,
+      "height": 240,
+      "color": "1"
+    },
+    {
+      "id": "genealogy_chain",
+      "type": "text",
+      "x": -1800,
+      "y": 280,
+      "width": 760,
+      "height": 700,
+      "color": "1",
+      "text": "# 十元理论来源链｜USER CONFIRMED\n\n1 补色→张扬\n2 临近色→耐看\n3 对比色→醒目\n↓\n三元\n↓\n接五行\n↓\n十元关系结构\n↓\n生/克/补 + n/x/z 三关系\n↓\n十类映射方向\n↓\n各领域预映射\n↓\n五个相反对子\n\n这是 genealogy，不等于现行判定算法。"
+    },
+    {
+      "id": "redirect_tenyuan_modern",
+      "type": "file",
+      "file": "AI问题解决Canvas/十元现代理论定位研究_L1.canvas",
+      "x": 0,
+      "y": -700,
+      "width": 760,
+      "height": 240,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "map",
+      "label": "R1"
+    },
+    {
+      "id": "e2",
+      "fromNode": "map",
+      "toNode": "tri",
+      "label": "三元复核"
+    },
+    {
+      "id": "e3",
+      "fromNode": "tri",
+      "toNode": "relation",
+      "label": "映射完成"
+    },
+    {
+      "id": "e4",
+      "fromNode": "map",
+      "toNode": "social",
+      "label": "R2"
+    },
+    {
+      "id": "e5",
+      "fromNode": "social",
+      "toNode": "r3",
+      "label": "R3"
+    },
+    {
+      "id": "e6",
+      "fromNode": "r3",
+      "toNode": "r4",
+      "label": "R4"
+    },
+    {
+      "id": "e7",
+      "fromNode": "r4",
+      "toNode": "file",
+      "label": "研究正本"
+    },
+    {
+      "id": "r2fileedge",
+      "fromNode": "social",
+      "toNode": "r2_file",
+      "label": "R2正本"
+    },
+    {
+      "id": "r2gateedge",
+      "fromNode": "r2_file",
+      "toNode": "r2_gates",
+      "label": "验证顺序"
+    },
+    {
+      "id": "r2positionedge",
+      "fromNode": "r2_gates",
+      "toNode": "r2_position",
+      "label": "当前定位"
+    },
+    {
+      "id": "r3fileedge",
+      "fromNode": "r3",
+      "toNode": "r3_file",
+      "label": "R3正本"
+    },
+    {
+      "id": "r3keepedge",
+      "fromNode": "r3_file",
+      "toNode": "r3_keep",
+      "label": "保留候选"
+    },
+    {
+      "id": "r3killedge",
+      "fromNode": "r3_keep",
+      "toNode": "r3_kill",
+      "label": "砍掉伪新增"
+    },
+    {
+      "id": "genealogy_root",
+      "fromNode": "genealogy",
+      "toNode": "root",
+      "label": "理论来源"
+    },
+    {
+      "id": "genealogy_chain_edge",
+      "fromNode": "genealogy",
+      "toNode": "genealogy_chain",
+      "label": "来源链"
+    },
+    {
+      "id": "redirect_tenyuan_modern_edge",
+      "fromNode": "root",
+      "toNode": "redirect_tenyuan_modern",
+      "label": "迁移到十元主研究"
+    }
+  ],
+  "metadata": {
+    "version": "1.4",
+    "frontmatter": {
+      "type": "paper-direction3-tenyuan-mapping-model-v2",
+      "status": "historical-redirect",
+      "rounds": 4,
+      "primary_comparison_family": "Conceptual Spaces",
+      "mapping_neighbor": "Semantic Differential",
+      "validation_family": "Qualitative Coding",
+      "machine_formalization": "Ontology",
+      "current_term": "semantic-mapping-scheme-with-paired-oppositional-endpoints",
+      "experimental_candidates": [
+        "cross-domain-invariance",
+        "pair-core-discriminability",
+        "three-yuan-error-detection",
+        "endpoint-gated-relation-error-reduction"
+      ],
+      "theory_genealogy": "user-confirmed-2026-10-07",
+      "genealogy_runtime_separated": true,
+      "canonical_canvas": "AI问题解决Canvas/十元现代理论定位研究_L1.canvas"
+    }
+  }
+}

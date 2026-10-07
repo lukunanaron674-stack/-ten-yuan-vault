@@ -1202,6 +1202,246 @@
       "width": 460,
       "height": 360,
       "color": "3"
+    },
+    {
+      "id": "learn275_m1m3_control",
+      "type": "text",
+      "text": "# 275 学习反哺｜问题系统 = 74 对 AI 的控制面板\n\n上层目标：持续提高74对 AI 的判断权、规则权、状态权与素材证据权。\n\n三层：\n1｜对象层：图 / 视频 / 角色卡 / 规则 / 素材\n2｜状态层：任务状态 / 素材状态 / 判断状态 / 偏好版本 / 候选XN→正式XN\n3｜控制层：AI能否继续 / 评价是否可信 / 何时74接管 / XN何时更新\n\n来源：674-275｜M1 + M3 学习结果",
+      "x": 4820,
+      "y": 1380,
+      "width": 1600,
+      "height": 620,
+      "color": "5"
+    },
+    {
+      "id": "learn275_m1m3_loop",
+      "type": "text",
+      "text": "# M1 + M3｜控制闭环\n\n问题出现 → 状态记录 → AI执行 → 产生素材 → 人/机评价\n→ M1 检查评价：可靠度 / 有效性 / 漂移 / 古德哈特 / 校准 / 人类评价边界\n→ 74反馈\n→ M3 将 NX 偏好 + 素材证据 + 对比关系 → 候选XN\n→ 74确认 → 正式XN → 更新规则 → 再生产 → 再检查漂移\n\nM1 = 评价控制器\nM3 = 偏好 / 素材证据控制器",
+      "x": 6540,
+      "y": 1380,
+      "width": 1600,
+      "height": 620,
+      "color": "4"
+    },
+    {
+      "id": "grp_core_z_277",
+      "type": "group",
+      "x": 8200,
+      "y": 2100,
+      "width": 4900,
+      "height": 3300,
+      "color": "6",
+      "label": "674-277｜核心 Z 控制层｜CANDIDATE / 校准中"
+    },
+    {
+      "id": "core_z_277",
+      "type": "text",
+      "x": 8400,
+      "y": 2300,
+      "width": 1400,
+      "height": 720,
+      "color": "4",
+      "text": "# CORE_Z｜问题系统的核心目标\n\n状态：CANDIDATE_HIGH_CONFIDENCE\n\nZ：把问题系统变成一个多体量 Z 的总控制系统：大Z→子Z→子子Z；每个Z挂 XN / NX / 权力 / PATH / 达成度，并能被 AI 读取、判断、执行、回传。\n\nz_volume：1–100（体量）\nz_achievement：1–10（达成度）\n\n当前自评：\n- Z理解校准 8.5/10\n- 架构信赖 7.5/10\n- 未经R3验证，不得标 VERIFIED"
+    },
+    {
+      "id": "z_relations_277",
+      "type": "text",
+      "x": 10000,
+      "y": 2300,
+      "width": 1400,
+      "height": 720,
+      "color": "5",
+      "text": "# M4｜多体量 Z 关系\n\n父Z↔子Z至少支持：\n- REQUIRED_COMPONENT 必要组成\n- DEPENDS_ON 前置依赖\n- SUPPORTS 增强支持\n- CONFLICTS_WITH 张力/冲突\n- BLOCKS 阻塞\n\n每个子Z：\ncontribution_weight 1–100\nrequired yes/no\nblocker yes/no\n\n父Z完成度禁止简单平均；必须考虑必要项、blocker、关键依赖、高贡献项与冲突。"
+    },
+    {
+      "id": "xn_set_277",
+      "type": "text",
+      "x": 8400,
+      "y": 3300,
+      "width": 1200,
+      "height": 700,
+      "color": "2",
+      "text": "# XN_SET｜明确规则\n\n每个 Z 挂自己的 XN：\n- 目标XN\n- 生产XN\n- 评价XN\n- 状态XN\n- 权限XN\n- 资产XN\n\n关键字段：\nsource_type\nexpected_xn_fit\nverified_xn_fit\nreliability / validity / calibration\nstatus = CANDIDATE / VERIFIED / REJECTED / DEPRECATED"
+    },
+    {
+      "id": "nx_gaps_277",
+      "type": "text",
+      "x": 9800,
+      "y": 3300,
+      "width": 1200,
+      "height": 700,
+      "color": "3",
+      "text": "# NX_GAPS｜一起跑｜当前未冻结\n\nNX-01：核心Z里“74控制 / AI自主 / 效率”三者最终权重怎么排？\nNX-02：z_volume 1–100 是直觉体量，还是需要固定判分尺？\nNX-03：父Z achievement 如何汇总子Z，什么时候一票否决？\nNX-04：权力是否应随 Z 体量 / 风险 / 可逆性动态变化？\nNX-05：contribution_weight 怎样避免伪精确？\nNX-06：候选XN满足什么证据门槛才能升 VERIFIED？\n\n状态：KEEP_AS_NX，不强行XN化；需74讨论/真实案例压测。"
+    },
+    {
+      "id": "authority_277",
+      "type": "text",
+      "x": 11200,
+      "y": 3300,
+      "width": 1200,
+      "height": 700,
+      "color": "4",
+      "text": "# AUTHORITY｜每个 Z 的权力边界\n\nowner\ndecision_right\nexecution_right\nreview_right\nfreeze_right\nescalation_to\ntakeover_condition\n\n原则：required_agent 只回答谁来做；authority 回答谁有权决定。\n\n当前候选：74保留最终冻结权；AI/Agent在已验证XN与授权边界内自主推进。"
+    },
+    {
+      "id": "path_277",
+      "type": "text",
+      "x": 8400,
+      "y": 4300,
+      "width": 1200,
+      "height": 700,
+      "color": "2",
+      "text": "# PATH｜现实落实\n\n规则知道 ≠ 现实可执行。\n\n检查：\nexecutor / tool / endpoint / permission / trigger / runtime / input / output / return_channel\n\n状态：FOUND → ACQUIRED → READABLE → UNDERSTOOD → ADAPTED → EXECUTABLE → AUTOMATABLE → VERIFIED\n\n缺PATH可形成BLOCKER，但PATH状态不能和problem_status混在一起。"
+    },
+    {
+      "id": "calibration_277",
+      "type": "text",
+      "x": 9800,
+      "y": 4300,
+      "width": 1400,
+      "height": 700,
+      "color": "5",
+      "text": "# CALIBRATION｜AI自我校准\n\nexpected_xn_fit = AI预测XN能把Z支撑到几级\nverified_xn_fit = 74/实测后的实际等级\ncalibration_gap = expected - verified\n\n当前核心Z：\n理解预测：8.5/10\n架构信赖：7.5/10\n最终冻结信赖：暂不超过6/10\n\nR3用自动生图 / 头像稳定 / H3 10–11s 三例校准。"
+    },
+    {
+      "id": "nx_method_277",
+      "type": "text",
+      "x": 11400,
+      "y": 4300,
+      "width": 1400,
+      "height": 700,
+      "color": "3",
+      "text": "# NX运行规则｜M3\n\nNX不直接变XN。\n\n固定链：\nNX → 真实案例/素材证据 → A/B或失败对比 → AI提出候选XN → 74确认 → VERIFIED候选 → 进入生产再校准\n\n本轮先保留6个NX，不抢答。\n\n只有在同类案例重复成立、反例可解释、且74认可后，才允许从NX升级为XN。"
+    },
+    {
+      "id": "xn_decompose_277",
+      "type": "text",
+      "x": 11400,
+      "y": 2300,
+      "width": 1400,
+      "height": 760,
+      "color": "2",
+      "text": "# XN｜大Z分解后局部规则化\n\n原则：大体量 Z 不应被一整束全局 XN 硬约束。\n\n固定做法：\n1. 先记录大Z拆成多少个小Z\n2. 每个小Z建立自己的 XN_SET / NX_GAPS / PATH / AUTHORITY\n3. 每个小Z单独计算 expected_xn_fit / verified_xn_fit\n4. 小Z达到足够信赖度后，再向上汇总父Z信赖度\n\n目的：把“一个大Z很难被一套规则准确束缚”改成“多个小Z分别规则化、分别校准、分别验证”。\n\n建议字段：\nchild_z_count\nlocal_xn_set\nlocal_verified_fit\nparent_rollup_status\n\n状态：CANDIDATE_XN｜待R3压力测试"
+    },
+    {
+      "id": "z1a_277",
+      "type": "text",
+      "x": 13200,
+      "y": 2300,
+      "width": 1000,
+      "height": 420,
+      "color": "4",
+      "text": "# Z1-A｜目标/问题结构治理\n\nvolume 72\nREQ / HIGH\n骨架层：Goal / Problem / Main / Sub / 父子Z"
+    },
+    {
+      "id": "z1b_277",
+      "type": "text",
+      "x": 14400,
+      "y": 2300,
+      "width": 1000,
+      "height": 420,
+      "color": "2",
+      "text": "# Z1-B｜XN规则获取与校准\n\nvolume 74\nREQ / HIGH\n来源 / 覆盖度 / 可靠度 / 有效性 / 校准"
+    },
+    {
+      "id": "z1c_277",
+      "type": "text",
+      "x": 15600,
+      "y": 2300,
+      "width": 1000,
+      "height": 420,
+      "color": "3",
+      "text": "# Z1-C｜NX / 偏好补充\n\nvolume 63\nREQ / HIGH\n保留未形式化判断 → 素材证据 → 候选XN"
+    },
+    {
+      "id": "z1d_277",
+      "type": "text",
+      "x": 13200,
+      "y": 2900,
+      "width": 1000,
+      "height": 420,
+      "color": "4",
+      "text": "# Z1-D｜Agent主权与责任\n\nvolume 70\nREQ / HIGH\n谁判断 / 执行 / 审核 / 冻结 / 上报"
+    },
+    {
+      "id": "z1e_277",
+      "type": "text",
+      "x": 14400,
+      "y": 2900,
+      "width": 1000,
+      "height": 420,
+      "color": "2",
+      "text": "# Z1-E｜PATH现实执行\n\nvolume 78\nREQ / CRITICAL\n工具 / 权限 / 触发 / 跨端 / 回传"
+    },
+    {
+      "id": "z1f_277",
+      "type": "text",
+      "x": 15600,
+      "y": 2900,
+      "width": 1000,
+      "height": 420,
+      "color": "5",
+      "text": "# Z1-F｜状态/证据/版本/回传\n\nvolume 73\nREQ / CRITICAL\n状态 / 证据 / 版本 / source-of-truth / trace"
+    },
+    {
+      "id": "z1g_277",
+      "type": "text",
+      "x": 14400,
+      "y": 3500,
+      "width": 1000,
+      "height": 420,
+      "color": "6",
+      "text": "# Z1-G｜长期运行/恢复/调度\n\nvolume 65\nREQ / MEDIUM-HIGH\n长期自动运行、恢复点、scheduler"
+    },
+    {
+      "id": "local_z_control_summary_277",
+      "type": "text",
+      "x": 13200,
+      "y": 4200,
+      "width": 3400,
+      "height": 1150,
+      "color": "5",
+      "text": "# R3｜Local-Z Control Packet｜7个Z1已挂局部控制包\n\n每个 Z1 独立拥有：local XN / NX / AUTHORITY / PATH / expected_xn_fit / verified_xn_fit。\n\nAI预测 expected_xn_fit：\nA 目标/问题结构 8.8\nB XN规则获取 8.2\nC NX偏好补充 7.4\nD 主权治理 8.0\nE PATH现实执行 7.8\nF 状态/证据/版本 8.6\nG 长期运行/恢复 7.6\n\n均值≈8.1，但禁止把均值当父Z真实信赖度。\n\n关键：拆小后能定位“哪一块规则可信、哪一块NX高、哪一块缺PATH、哪一块权力不清”。\n\n下一轮 R4：父Z trust rollup / blocker一票否决 / 三个真实案例压力测试。"
+    },
+    {
+      "id": "zofz_r4_summary_277",
+      "type": "text",
+      "x": 13200,
+      "y": 5600,
+      "width": 3400,
+      "height": 1250,
+      "color": "4",
+      "text": "# R4｜父Z汇总 + blocker边界 + 三案例压力测试\n\n父Z禁止简单平均。\n\n固定汇总：\n1. REQUIRED_COMPONENT 门\n2. DEPENDS_ON 门\n3. evidence / verified 门\n4. blocker 影响范围\n5. 状态向量 rollup\n\n父Z未全验证前，不给单一 verified trust；记录：\nrequired_verified_min / unresolved_required_count / critical_blocker_count / unresolved_nx_count / path_verified_ratio / calibration_gap_max。\n\n压力测试：\nA 自动化生图 → 架构PASS，现实能力PARTIAL\nB H04头像稳定 → local VERIFIED，父Z PARTIAL_VERIFIED\nC H3 10–11s → 短块PARTIAL，跨seed/跨角色/LongTake仍未全验\n\n结论：Z-of-Z ARCHITECTURE_PASS；现实系统仍不可宣称全部 VERIFIED。"
+    },
+    {
+      "id": "xn_efficiency_277",
+      "type": "text",
+      "x": 16800,
+      "y": 2300,
+      "width": 1700,
+      "height": 980,
+      "color": "2",
+      "text": "# XN-EFFICIENCY｜规则有效性与Token经济性\n\n规则不是越多越好。\n\n每条XN增加：\neffect_size / token_cost / scope / load_mode / redundancy / conflict_risk / keep_value\n\n三级加载：\n1. CORE_XN｜高影响、短写、常驻\n2. LOCAL_XN｜只在对应Z激活时加载\n3. EVIDENCE/HISTORY｜追溯时再读\n\n硬规则：\n- 低作用 + 高频读取 + 高重复 → 合并/下沉/删除\n- 大Z只读子Z摘要、关键blocker、verified结果\n- 进入小Z才加载local XN全文\n- 同义规则只保留一个canonical表达\n- 新XN若不改变判断/执行/权限/验证，不能升级为XN\n\n目标：避免规则垃圾场与token浪费。"
+    },
+    {
+      "id": "avatar_human_nx_280",
+      "type": "text",
+      "x": 16800,
+      "y": 3500,
+      "width": 1700,
+      "height": 1100,
+      "color": "3",
+      "text": "# 674-280｜角色 L1/L2/L3 Human-in-NX｜三个 Z 实例\n\n这里不是“头像三级”，而是角色生产线里的三个独立 Z：\n\nZ-ROLE-L1｜角色身份 / 视觉核心锁定\n- 主参考 / identity_core / 头脸 / 年龄感 / 轮廓 / 识别结构\n- Human-in-NX：最高\n- USER最终判断：是不是这个人 / 有没有味道 / 是否认可\n\nZ-ROLE-L2｜角色多视图 / 身体结构稳定\n- 四宫格 / 中景 / 中全景 / 全身\n- proportion / costume / special structure / cross-view identity\n- Human-in-NX：中等；机器先按局部 XN 审，残余“仍不像/气质漂/年龄感错”再回USER\n\nZ-ROLE-L3｜角色 Canon / 世界职责成立\n- canonical_name / world_role / behavior / home_region / story_hook 等\n- Human-in-NX：低频但高权力；新Canon / 核心气质 / 世界职责归USER裁决\n\n三个Z都独立挂：local XN / NX / AUTHORITY / PATH / expected / verified / done_condition。\n\nH3_READY 是三者完成后的下游消费资格，不属于 L1/L2/L3。"
+    },
+    {
+      "id": "role_z_bridge_20261007",
+      "type": "text",
+      "text": "# ROLE_Z_BRIDGE｜角色 L1/L2/L3 双 Canvas 接头\n\n总问题系统只负责总控，不复制角色细节。\n\nG2｜角色稳定 → 三个独立 Z：\n- Z-ROLE-L1｜身份 / 视觉核心锁定\n- Z-ROLE-L2｜多视图 / 身体结构稳定\n- Z-ROLE-L3｜Canon / 世界职责成立\n\n每个 Z 独立挂：local_xn_set / nx_gaps / authority_state / path_state / expected_xn_fit / verified_xn_fit / done_condition\n\n角色侧正本：[[../03_角色/角色库/角色总Canvas.canvas]]\nLinear：674-280\n\n回传：achievement / verified_xn_fit / unresolved_nx / blocker_scope / evidence / done_status\n\n⚠️ L1/L2/L3 不是头像三级 step；H3_READY 只是下游消费资格。",
+      "x": -6620,
+      "y": -1180,
+      "width": 1500,
+      "height": 760,
+      "color": "4"
     }
   ],
   "edges": [
@@ -1971,10 +2211,457 @@
       "toNode": "g5_inc2164",
       "toSide": "top",
       "label": "复盘案例"
+    },
+    {
+      "id": "e_m16_learn275",
+      "fromNode": "m16_c2d1e8f3",
+      "fromSide": "bottom",
+      "toNode": "learn275_m1m3_control",
+      "toSide": "top",
+      "color": "5",
+      "label": "学习反哺｜AI控制"
+    },
+    {
+      "id": "e_m17_learn275",
+      "fromNode": "m17_c2d1e8f3",
+      "fromSide": "bottom",
+      "toNode": "learn275_m1m3_control",
+      "toSide": "top",
+      "color": "5",
+      "label": "学习反哺｜问题系统"
+    },
+    {
+      "id": "e_learn275_loop",
+      "fromNode": "learn275_m1m3_control",
+      "fromSide": "right",
+      "toNode": "learn275_m1m3_loop",
+      "toSide": "left",
+      "color": "4",
+      "label": "形成控制闭环"
+    },
+    {
+      "id": "e_learn275_m13",
+      "fromNode": "learn275_m1m3_loop",
+      "fromSide": "top",
+      "toNode": "m13_c2d1e8f3",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "素材状态 / 规则版本"
+    },
+    {
+      "id": "e_learn275_m14",
+      "fromNode": "learn275_m1m3_loop",
+      "fromSide": "top",
+      "toNode": "m14_c2d1e8f3",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "素材证据 / 可追溯"
+    },
+    {
+      "id": "e_ps_corez_277",
+      "fromNode": "problem_state_v1",
+      "fromSide": "bottom",
+      "toNode": "core_z_277",
+      "toSide": "top",
+      "color": "4",
+      "label": "兼容扩展｜Z_STATE"
+    },
+    {
+      "id": "e_corez_rel_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z_relations_277",
+      "toSide": "left",
+      "color": "5",
+      "label": "M4 多体量结构"
+    },
+    {
+      "id": "e_corez_xn_277",
+      "fromNode": "core_z_277",
+      "fromSide": "bottom",
+      "toNode": "xn_set_277",
+      "toSide": "top",
+      "color": "2",
+      "label": "挂 XN"
+    },
+    {
+      "id": "e_corez_nx_277",
+      "fromNode": "core_z_277",
+      "fromSide": "bottom",
+      "toNode": "nx_gaps_277",
+      "toSide": "top",
+      "color": "3",
+      "label": "保留 NX"
+    },
+    {
+      "id": "e_corez_auth_277",
+      "fromNode": "z_relations_277",
+      "fromSide": "bottom",
+      "toNode": "authority_277",
+      "toSide": "top",
+      "color": "4",
+      "label": "每Z权力边界"
+    },
+    {
+      "id": "e_xn_path_277",
+      "fromNode": "xn_set_277",
+      "fromSide": "bottom",
+      "toNode": "path_277",
+      "toSide": "top",
+      "color": "2",
+      "label": "规则→现实执行"
+    },
+    {
+      "id": "e_xn_cal_277",
+      "fromNode": "xn_set_277",
+      "fromSide": "bottom",
+      "toNode": "calibration_277",
+      "toSide": "top",
+      "color": "5",
+      "label": "预测/实测校准"
+    },
+    {
+      "id": "e_nx_method_277",
+      "fromNode": "nx_gaps_277",
+      "fromSide": "bottom",
+      "toNode": "nx_method_277",
+      "toSide": "top",
+      "color": "3",
+      "label": "NX→候选XN"
+    },
+    {
+      "id": "e_corez_m17_277",
+      "fromNode": "core_z_277",
+      "fromSide": "left",
+      "toNode": "m17_c2d1e8f3",
+      "toSide": "right",
+      "color": "5",
+      "label": "目标/问题层级"
+    },
+    {
+      "id": "e_xn_m13_277",
+      "fromNode": "xn_set_277",
+      "fromSide": "left",
+      "toNode": "m13_c2d1e8f3",
+      "toSide": "right",
+      "color": "2",
+      "label": "资产/规则来源"
+    },
+    {
+      "id": "e_path_m14_277",
+      "fromNode": "path_277",
+      "fromSide": "left",
+      "toNode": "m14_c2d1e8f3",
+      "toSide": "right",
+      "color": "2",
+      "label": "跨端传递"
+    },
+    {
+      "id": "e_auth_m16_277",
+      "fromNode": "authority_277",
+      "fromSide": "left",
+      "toNode": "m16_c2d1e8f3",
+      "toSide": "right",
+      "color": "4",
+      "label": "Agent治理"
+    },
+    {
+      "id": "e_path_m15_277",
+      "fromNode": "path_277",
+      "fromSide": "left",
+      "toNode": "m15_c2d1e8f3",
+      "toSide": "right",
+      "color": "2",
+      "label": "生产链"
+    },
+    {
+      "id": "e_rel_decompose_xn_277",
+      "fromNode": "z_relations_277",
+      "fromSide": "right",
+      "toNode": "xn_decompose_277",
+      "toSide": "left",
+      "color": "2",
+      "label": "大Z拆分→局部XN"
+    },
+    {
+      "id": "e_decompose_xnset_277",
+      "fromNode": "xn_decompose_277",
+      "fromSide": "bottom",
+      "toNode": "xn_set_277",
+      "toSide": "top",
+      "color": "2",
+      "label": "每个小Z独立规则束"
+    },
+    {
+      "id": "e_decompose_cal_277",
+      "fromNode": "xn_decompose_277",
+      "fromSide": "bottom",
+      "toNode": "calibration_277",
+      "toSide": "top",
+      "color": "5",
+      "label": "局部校准→父Z汇总"
+    },
+    {
+      "id": "e_core_z1a_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1a_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT",
+      "color": "4"
+    },
+    {
+      "id": "e_core_z1b_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1b_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT",
+      "color": "2"
+    },
+    {
+      "id": "e_core_z1c_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1c_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT",
+      "color": "3"
+    },
+    {
+      "id": "e_core_z1d_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1d_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT",
+      "color": "4"
+    },
+    {
+      "id": "e_core_z1e_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1e_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT",
+      "color": "2"
+    },
+    {
+      "id": "e_core_z1f_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1f_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT",
+      "color": "5"
+    },
+    {
+      "id": "e_core_z1g_277",
+      "fromNode": "core_z_277",
+      "fromSide": "right",
+      "toNode": "z1g_277",
+      "toSide": "left",
+      "label": "REQUIRED_COMPONENT / LATE",
+      "color": "6"
+    },
+    {
+      "id": "e_z1d_dep_z1a_277",
+      "fromNode": "z1a_277",
+      "fromSide": "bottom",
+      "toNode": "z1d_277",
+      "toSide": "top",
+      "label": "DEPENDS_ON",
+      "color": "4"
+    },
+    {
+      "id": "e_z1e_dep_z1b_277",
+      "fromNode": "z1b_277",
+      "fromSide": "bottom",
+      "toNode": "z1e_277",
+      "toSide": "top",
+      "label": "DEPENDS_ON",
+      "color": "2"
+    },
+    {
+      "id": "e_z1e_dep_z1d_277",
+      "fromNode": "z1d_277",
+      "fromSide": "right",
+      "toNode": "z1e_277",
+      "toSide": "left",
+      "label": "DEPENDS_ON",
+      "color": "4"
+    },
+    {
+      "id": "e_z1e_dep_z1f_277",
+      "fromNode": "z1f_277",
+      "fromSide": "left",
+      "toNode": "z1e_277",
+      "toSide": "right",
+      "label": "DEPENDS_ON",
+      "color": "5"
+    },
+    {
+      "id": "e_z1c_sup_z1b_277",
+      "fromNode": "z1c_277",
+      "fromSide": "left",
+      "toNode": "z1b_277",
+      "toSide": "right",
+      "label": "SUPPORTS",
+      "color": "3"
+    },
+    {
+      "id": "e_z1f_sup_z1b_277",
+      "fromNode": "z1f_277",
+      "fromSide": "top",
+      "toNode": "z1b_277",
+      "toSide": "bottom",
+      "label": "SUPPORTS",
+      "color": "5"
+    },
+    {
+      "id": "e_z1f_sup_z1c_277",
+      "fromNode": "z1f_277",
+      "fromSide": "top",
+      "toNode": "z1c_277",
+      "toSide": "bottom",
+      "label": "SUPPORTS",
+      "color": "5"
+    },
+    {
+      "id": "e_z1g_dep_z1a_277",
+      "fromNode": "z1a_277",
+      "fromSide": "bottom",
+      "toNode": "z1g_277",
+      "toSide": "left",
+      "label": "DEPENDS_ON",
+      "color": "6"
+    },
+    {
+      "id": "e_z1g_dep_z1d_277",
+      "fromNode": "z1d_277",
+      "fromSide": "bottom",
+      "toNode": "z1g_277",
+      "toSide": "left",
+      "label": "DEPENDS_ON",
+      "color": "6"
+    },
+    {
+      "id": "e_z1g_dep_z1e_277",
+      "fromNode": "z1e_277",
+      "fromSide": "bottom",
+      "toNode": "z1g_277",
+      "toSide": "top",
+      "label": "DEPENDS_ON",
+      "color": "6"
+    },
+    {
+      "id": "e_z1g_dep_z1f_277",
+      "fromNode": "z1f_277",
+      "fromSide": "bottom",
+      "toNode": "z1g_277",
+      "toSide": "right",
+      "label": "DEPENDS_ON",
+      "color": "6"
+    },
+    {
+      "id": "e_z1s_local_summary_277",
+      "fromNode": "z1g_277",
+      "fromSide": "bottom",
+      "toNode": "local_z_control_summary_277",
+      "toSide": "top",
+      "color": "5",
+      "label": "7个局部控制包汇总"
+    },
+    {
+      "id": "e_local_summary_cal_277",
+      "fromNode": "local_z_control_summary_277",
+      "fromSide": "left",
+      "toNode": "calibration_277",
+      "toSide": "right",
+      "color": "5",
+      "label": "expected ≠ verified"
+    },
+    {
+      "id": "e_r3_r4_277",
+      "fromNode": "local_z_control_summary_277",
+      "fromSide": "bottom",
+      "toNode": "zofz_r4_summary_277",
+      "toSide": "top",
+      "color": "4",
+      "label": "R4 汇总与压力测试"
+    },
+    {
+      "id": "e_r4_core_277",
+      "fromNode": "zofz_r4_summary_277",
+      "fromSide": "left",
+      "toNode": "core_z_277",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "ARCHITECTURE_PASS"
+    },
+    {
+      "id": "e_efficiency_xnset_277",
+      "fromNode": "xn_set_277",
+      "fromSide": "right",
+      "toNode": "xn_efficiency_277",
+      "toSide": "left",
+      "color": "2",
+      "label": "规则经济性"
+    },
+    {
+      "id": "e_efficiency_corez_277",
+      "fromNode": "xn_efficiency_277",
+      "fromSide": "left",
+      "toNode": "core_z_277",
+      "toSide": "right",
+      "color": "2",
+      "label": "按需加载"
+    },
+    {
+      "id": "e_avatar_nx_from_nxgaps_280",
+      "fromNode": "nx_gaps_277",
+      "fromSide": "right",
+      "toNode": "avatar_human_nx_280",
+      "toSide": "left",
+      "color": "3",
+      "label": "Human-in-NX 实例"
+    },
+    {
+      "id": "e_avatar_nx_efficiency_280",
+      "fromNode": "xn_efficiency_277",
+      "fromSide": "bottom",
+      "toNode": "avatar_human_nx_280",
+      "toSide": "top",
+      "color": "3",
+      "label": "低token反馈"
+    },
+    {
+      "id": "edge_g2_role_z_bridge_20261007",
+      "fromNode": "g2",
+      "fromSide": "bottom",
+      "toNode": "role_z_bridge_20261007",
+      "toSide": "top",
+      "label": "角色域总控"
+    },
+    {
+      "id": "edge_role_z_bridge_280_20261007",
+      "fromNode": "role_z_bridge_20261007",
+      "fromSide": "right",
+      "toNode": "avatar_human_nx_280",
+      "toSide": "left",
+      "label": "三个Z实例"
+    },
+    {
+      "id": "edge_corez_rolebridge_20261007",
+      "fromNode": "core_z_277",
+      "fromSide": "left",
+      "toNode": "role_z_bridge_20261007",
+      "toSide": "right",
+      "label": "parent Z / authority / PATH"
     }
   ],
   "metadata": {
-    "version": "1.0-2026-10-06-h3-extracted",
+    "version": "1.8-2026-10-06-role-l1-l2-l3-three-z",
     "frontmatter": {}
   }
 }

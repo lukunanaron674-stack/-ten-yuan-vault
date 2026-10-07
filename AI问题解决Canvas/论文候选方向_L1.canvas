@@ -1,0 +1,434 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 560,
+      "height": 360,
+      "color": "1",
+      "text": "# 论文候选方向｜L1\n\n**TOPIC NOT FROZEN**\n\n这里只登记“值得继续推”的方向，不等于最终选题。\n\n来源：\nR1–R8 同辈论文横向探索\n＋ 674-278 USER→SOCIETY 社会价值研究\n\n规则：候选可以增加、合并、降级、删除；冻结必须另做决策。"
+    },
+    {
+      "id": "history",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文同辈研究地图_R8_10个候选方向_不冻结.md",
+      "x": -760,
+      "y": -260,
+      "width": 500,
+      "height": 220,
+      "color": "6"
+    },
+    {
+      "id": "history_summary",
+      "type": "text",
+      "x": -760,
+      "y": 40,
+      "width": 500,
+      "height": 520,
+      "color": "6",
+      "text": "# 历史候选 01–10\n\n01 角色越画越不像\n02 角色和场景不像一个世界\n03 把画画感觉说给 AI\n04 同样要求不同写法\n05 参考图职责\n06 AI 图怎样算合格\n07 一张好图扩成整套资产\n08 失败图变反例库\n09 人和 AI 谁负责哪一步\n10 连续镜头为什么断\n\n**保留历史编号，不覆盖。**"
+    },
+    {
+      "id": "c11",
+      "type": "text",
+      "x": 720,
+      "y": -500,
+      "width": 660,
+      "height": 700,
+      "color": "2",
+      "text": "# 候选 11｜结构化创作意图 → 真实创作决策\n\n**核心命题**\n结构化创作意图对真实创作决策具有预测价值。\n\nAI 不只理解“对不对 / 好不好看”，还要理解：\n- Relation｜关系\n- Priority｜优先级\n- Rationale｜理由\n- Dynamic Trace｜动态轨迹\n\n然后提前预测：\nACCEPT｜收\nREWORK｜改\nREJECT｜扔\n\n接口：118 + 119 + 120 + 122\n方法门：112\n\n状态：**重点候选 / NOT FROZEN**"
+    },
+    {
+      "id": "meaning",
+      "type": "text",
+      "x": 720,
+      "y": 300,
+      "width": 660,
+      "height": 520,
+      "color": "5",
+      "text": "# 122｜从“正确”走向“创作者真实选择”\n\n创作评价不能只问：\n- 对不对\n- 像不像\n- 画得好不好\n\n还要问：\n- 是不是我的审美方向\n- 是不是我的创作意图\n- 我会不会真的继续用它\n\nREJECT ≠ 画得差。\n\n候选 11 的推进：\n**结构化创作意图能不能帮助 AI 更准确预测个体创作者的真实审美/创作决策？**"
+    },
+    {
+      "id": "fang",
+      "type": "text",
+      "x": 2140,
+      "y": -520,
+      "width": 620,
+      "height": 500,
+      "color": "6",
+      "text": "# 〈方志敏〉｜开发集 / 内部验证\n\n用途：\n- 设计结构化意图字段\n- 找 failure family\n- 校准预测协议\n- 验证能不能先预测再揭盲\n\n⚠️ 不能承担最终社会有效性证明。\n\n原因：避免“用自己编的理论解释自己的作品”。\n\n状态：DEVELOPMENT / INTERNAL VALIDATION"
+    },
+    {
+      "id": "exp",
+      "type": "text",
+      "x": 2860,
+      "y": -500,
+      "width": 620,
+      "height": 650,
+      "color": "3",
+      "text": "# 最小实验升级｜A/B/C/D\n\nA｜Correctness / Quality only\n技术正确、画质、完成度\n\nB｜Aesthetic preference only\n只预测好不好看 / 审美倾向\n\nC｜普通自然语言创作意图\nPrompt / 文字说明\n\nD｜结构化创作意图\nRelation + Priority + Rationale + Dynamic Trace\n+ 必要时十元 / 动态链 / LOCK-FLEX\n\n统一预测：ACCEPT / REWORK / REJECT\n\n**核心检验：D 是否比 A/B/C 有稳定增量？**"
+    },
+    {
+      "id": "register",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文候选方向_登记.md",
+      "x": 720,
+      "y": 940,
+      "width": 620,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "c12",
+      "type": "text",
+      "x": 720,
+      "y": 1260,
+      "width": 650,
+      "height": 600,
+      "color": "4",
+      "text": "# 候选 12｜F 长流程可靠生产 → 可控 AI 创作生产协议\n\n**核心问题**\n能否构建一套面向独立创作者与小型创作团队的长流程 AI 创作生产协议，使：\n\n- 创作者意图可持续保持\n- AI 自动化权限可控\n- 结果可评价\n- 失败可恢复\n- 资产与状态可追踪\n\n核心链：\nIntent / Constraint\n→ Agency / Escalation\n→ Evaluation\n→ Recovery / Production\n\n来源：674-123 × 674-278\n\n状态：**CANDIDATE / NOT FROZEN**"
+    },
+    {
+      "id": "c12_value",
+      "type": "text",
+      "x": 1440,
+      "y": 1180,
+      "width": 650,
+      "height": 650,
+      "color": "5",
+      "text": "# 候选 12｜研究价值\n\n不是研究“AI 能不能自动生产”，而是研究：\n\n**怎样让一整套长流程 AI 创作在持续自动推进时，仍然保持创作者意图与控制权。**\n\n重点：\n1. 创作意图如何变成可执行约束\n2. 哪些步骤自动、哪些必须交人\n3. 如何判断结果是否真的符合意图\n4. 中断/失败后如何恢复而不丢状态\n5. 小团队如何低成本复用\n\n边界：\n不宣称发明 Agent / HITL / Workflow；\n研究的是面向创作领域的整合、操作化与验证。"
+    },
+    {
+      "id": "c12_scope",
+      "type": "text",
+      "x": 2160,
+      "y": 1180,
+      "width": 620,
+      "height": 640,
+      "color": "3",
+      "text": "# 候选 12｜可验证切口\n\n可做最小论文版：\n\nA｜普通 AI 创作流程\n聊天 + 文件夹 + 人工记忆\n\nB｜长流程可控协议\nIntent/Constraint + 权限门 + 状态/证据 + Evaluation + Recovery\n\n比较：\n- 意图丢失次数\n- 错误资产使用\n- 人工审核次数\n- 中断恢复成本\n- 返工次数\n- 最终任务完成率\n\n**只有 B 在真实创作任务中稳定改善，才说明协议有额外价值。**"
+    },
+    {
+      "id": "core_dims",
+      "type": "text",
+      "x": 1450,
+      "y": -540,
+      "width": 620,
+      "height": 560,
+      "color": "4",
+      "text": "# 结构化创作意图｜四个核心维度\n\n**Relation｜关系**\n谁增强谁 / 压制谁 / 补偿谁\n\n**Priority｜优先级**\n冲突时保谁、牺牲谁\n\n**Rationale｜理由**\n为什么收 / 改 / 扔\n\n**Dynamic Trace｜动态轨迹**\n意图如何更新、冻结、失效、转向\n\n十元 / 生克补 / 动态链 = 候选关系语法，不预设正确。"
+    },
+    {
+      "id": "interfaces",
+      "type": "text",
+      "x": 1450,
+      "y": 80,
+      "width": 620,
+      "height": 610,
+      "color": "3",
+      "text": "# 118 / 119 / 120 / 122 怎么接\n\n118｜把隐性的个人风格 / 审美判断结构化\n↓\n119｜表示关系、优先级、理由、动态轨迹\n↓\n120｜多个意图冲突时做优先级 + 非目标保持\n↓\n122｜检验 AI 是否更能预测真实 ACCEPT / REWORK / REJECT\n\n这条链的技术意义：\n**Prompt understanding → Structured Creative Intent Understanding**"
+    },
+    {
+      "id": "external_creator",
+      "type": "text",
+      "x": 2140,
+      "y": 60,
+      "width": 620,
+      "height": 650,
+      "color": "1",
+      "text": "# 外部验证硬门｜第二位创作者 + 对方自己的项目\n\n不是让别人评价〈方志敏〉。\n\n要用对方自己的：\n- 创作目标\n- 参考\n- 版本\n- 修改记录\n- 接受 / 否决\n- 最终真实选择\n\n流程：\n结构化意图先冻结\n→ 隐藏后续真实选择\n→ AI 预测 ACCEPT / REWORK / REJECT\n→ 冻结预测\n→ 揭晓创作者真实选择\n→ 和普通画质 / 普通自然语言比较\n\n**跨作者仍有效，才开始接近 USER_VALIDATED_EXTERNAL。**"
+    },
+    {
+      "id": "method112",
+      "type": "text",
+      "x": 2860,
+      "y": 220,
+      "width": 620,
+      "height": 500,
+      "color": "6",
+      "text": "# 112｜反自产自证的方法模板\n\n112 已经要求：\n- 真实材料\n- 受控材料\n- 独立盲标\n- 标注一致性\n- failure family\n- 理论逻辑通过 ≠ 外部实证通过\n\n接到候选 11 后变成：\n自己的项目开发方法 ≠ 外部实证\n解释得通 ≠ 预测得准\n单一作者有效 ≠ 跨作者泛化"
+    },
+    {
+      "id": "social_value",
+      "type": "text",
+      "x": 3580,
+      "y": -260,
+      "width": 660,
+      "height": 760,
+      "color": "5",
+      "text": "# 潜在社会效益｜为什么这题大\n\n**AI进步**\n从理解 Prompt → 理解创作者为什么这样选、什么更重要、意图如何变化。\n\n**人机共创**\nAI 更准确响应创作者，而不是只给平均化“好答案”。\n\n**艺术家保持自我**\n让不同创作者自己的审美与判断被保留，而不是被统一审美覆盖。\n\n**创作者主权**\n哪些意图不可覆盖、哪些决定必须交还创作者。\n\n**文化表达 / 传承 / 再创造**\n不只保留表面符号，还可能保留叙事关系、价值优先级、情感结构与审美判断。\n\n⚠️ 以上是潜在社会效益，必须靠外部验证后再升级主张。"
+    },
+    {
+      "id": "claim",
+      "type": "text",
+      "x": 3580,
+      "y": 580,
+      "width": 660,
+      "height": 360,
+      "color": "2",
+      "text": "# 当前最强论文核\n\n**结构化创作意图对真实创作决策具有预测价值。**\n\n扩展：\n通过表示创作意图中的关系、优先级、理由与动态轨迹，AI 是否能够超越单纯正确性与通用审美评分，更准确预测不同创作者在真实创作过程中的接受、返工与否决？\n\n**仍然只是候选，不冻结题目。**"
+    },
+    {
+      "id": "wuxing_lit",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文候选11_五行文献研究路线.md",
+      "x": 2860,
+      "y": 820,
+      "width": 620,
+      "height": 240,
+      "color": "4"
+    },
+    {
+      "id": "three_dir_r1",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文三方向_R1_边界收束.md",
+      "x": -760,
+      "y": 1260,
+      "width": 560,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "dir1_sovereignty",
+      "type": "text",
+      "x": -760,
+      "y": 1540,
+      "width": 560,
+      "height": 420,
+      "color": "2",
+      "text": "# 方向 1｜创作主权 / 个性\n\n**WHY**\nAI 无限生产力下，创作者如何保持：\n- 个人风格\n- 审美判断\n- 创作意志\n- 最终决定权\n\n母题最大，但本科论文必须缩小。"
+    },
+    {
+      "id": "dir2_aesthetic",
+      "type": "text",
+      "x": -120,
+      "y": 1540,
+      "width": 560,
+      "height": 430,
+      "color": "4",
+      "text": "# 方向 2｜审美判断 / 最终否决权\n\n**JUDGE**\nL1 技术正确\n→ L2 约束保持\n→ L3 意图符合\n→ L4 创作者最终决策\n\n核心：\n**前三层都过，为什么最后仍 REJECT？**"
+    },
+    {
+      "id": "dir3_intent",
+      "type": "text",
+      "x": 520,
+      "y": 2020,
+      "width": 620,
+      "height": 470,
+      "color": "3",
+      "text": "# 方向 3｜创作意图 / 灵感架构\n\n**REPRESENT**\nGoal / Relation / Priority / Constraint\nRationale / Dynamic Trace\n\n核心：\n怎样把“我为什么这样创作”变成 AI 能持续理解与执行的结构？\n\n十元 / 动态链 = 候选关系语法，不预设正确。"
+    },
+    {
+      "id": "dir_f_bg",
+      "type": "text",
+      "x": 1220,
+      "y": 2020,
+      "width": 560,
+      "height": 400,
+      "color": "6",
+      "text": "# F｜长流程可靠生产\n\n**PRODUCTION BACKGROUND**\n不是当前三方向之一。\n\n作用：\n- AI 高产/批量时代背景\n- 长流程实验环境\n- 作品集/就业支撑\n- 验证意图是否真的能被持续保持"
+    },
+    {
+      "id": "three_dir_r2",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文三方向_R2_别人怎么写_15篇拆解.md",
+      "x": -760,
+      "y": 2020,
+      "width": 560,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "r2_three_formats",
+      "type": "text",
+      "x": -760,
+      "y": 2300,
+      "width": 650,
+      "height": 520,
+      "color": "4",
+      "text": "# R2｜别人怎么写：三种论文格式\n\n**方向1｜主体性/主权**\n概念 → 访谈 → 编码 → 模式 → 新概念\n\n**方向2｜审美评价**\n评价维度 → 人类选择 → 对照 → 统计 → 边界\n\n**方向3｜创作意图**\n问题 → 表示结构 → 原型 → baseline → 实验 → 增量\n\n⚠️ 三种格式不要混成一篇。"
+    },
+    {
+      "id": "r2_major_find",
+      "type": "text",
+      "x": -20,
+      "y": 2580,
+      "width": 720,
+      "height": 560,
+      "color": "2",
+      "text": "# R2 重大外部发现\n\n2025–2026 已已有：\nCreative Dialogue｜Evolving Intent\nToMigo｜Design Concept Graph\nDesignerlyLoop｜Design Intent Canvas\nTaxonomy-driven Intent\nCross-stage Constraint Continuity\n\n因此：\n**“把创作意图结构化”本身已经不够新。**\n\n74 真正要守：\nRelation + Priority + Rationale + Dynamic Trace\n+ 真实 ACCEPT/REWORK/REJECT 预测验证。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "history",
+      "toNode": "root",
+      "label": "历史候选来源"
+    },
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "c11",
+      "label": "新增候选"
+    },
+    {
+      "id": "e2",
+      "fromNode": "c11",
+      "toNode": "meaning",
+      "label": "122评价层"
+    },
+    {
+      "id": "e3",
+      "fromNode": "c11",
+      "toNode": "fang",
+      "label": "内部开发"
+    },
+    {
+      "id": "e4",
+      "fromNode": "external_creator",
+      "toNode": "exp",
+      "label": "盲测"
+    },
+    {
+      "id": "e5",
+      "fromNode": "meaning",
+      "toNode": "interfaces",
+      "label": "评价需求"
+    },
+    {
+      "id": "e6",
+      "fromNode": "interfaces",
+      "toNode": "external_creator",
+      "label": "转成外部验证"
+    },
+    {
+      "id": "e7",
+      "fromNode": "c11",
+      "toNode": "register",
+      "label": "详细登记"
+    },
+    {
+      "id": "e12",
+      "fromNode": "root",
+      "toNode": "c12",
+      "label": "新增候选"
+    },
+    {
+      "id": "e12v",
+      "fromNode": "c12",
+      "toNode": "c12_value",
+      "label": "研究价值"
+    },
+    {
+      "id": "e12s",
+      "fromNode": "c12_value",
+      "toNode": "c12_scope",
+      "label": "转成验证"
+    },
+    {
+      "id": "e_dims",
+      "fromNode": "c11",
+      "toNode": "core_dims",
+      "label": "结构化意图"
+    },
+    {
+      "id": "e_interfaces",
+      "fromNode": "core_dims",
+      "toNode": "interfaces",
+      "label": "接入系统"
+    },
+    {
+      "id": "e_external",
+      "fromNode": "fang",
+      "toNode": "external_creator",
+      "label": "跨作者验证"
+    },
+    {
+      "id": "e112",
+      "fromNode": "exp",
+      "toNode": "method112",
+      "label": "证据门"
+    },
+    {
+      "id": "e_social",
+      "fromNode": "method112",
+      "toNode": "social_value",
+      "label": "验证后才能主张"
+    },
+    {
+      "id": "e_claim",
+      "fromNode": "social_value",
+      "toNode": "claim",
+      "label": "论文核"
+    },
+    {
+      "id": "e_wuxing_lit",
+      "fromNode": "c11",
+      "toNode": "wuxing_lit",
+      "label": "五行来源与批判研究"
+    },
+    {
+      "id": "e_three_r1",
+      "fromNode": "root",
+      "toNode": "three_dir_r1",
+      "label": "R1 三方向边界"
+    },
+    {
+      "id": "e_d1",
+      "fromNode": "three_dir_r1",
+      "toNode": "dir1_sovereignty",
+      "label": "1｜WHY"
+    },
+    {
+      "id": "e_d2",
+      "fromNode": "dir1_sovereignty",
+      "toNode": "dir2_aesthetic",
+      "label": "2｜JUDGE"
+    },
+    {
+      "id": "e_d3",
+      "fromNode": "dir2_aesthetic",
+      "toNode": "dir3_intent",
+      "label": "3｜REPRESENT"
+    },
+    {
+      "id": "e_df",
+      "fromNode": "dir3_intent",
+      "toNode": "dir_f_bg",
+      "label": "进入长期生产验证"
+    },
+    {
+      "id": "e_three_r2",
+      "fromNode": "three_dir_r1",
+      "toNode": "three_dir_r2",
+      "label": "R2｜15篇论文写法"
+    },
+    {
+      "id": "e_r2_formats",
+      "fromNode": "three_dir_r2",
+      "toNode": "r2_three_formats",
+      "label": "三种格式"
+    },
+    {
+      "id": "e_r2_find",
+      "fromNode": "r2_three_formats",
+      "toNode": "r2_major_find",
+      "label": "外部边界"
+    }
+  ],
+  "metadata": {
+    "version": "1.5",
+    "frontmatter": {
+      "type": "paper-candidate-pool",
+      "status": "active-not-frozen",
+      "date": "2026-10-07",
+      "current_new_candidate": "12",
+      "candidate_11_status": "priority-candidate-not-frozen",
+      "three_direction_r1": "done",
+      "three_direction_r2": "done"
+    }
+  }
+}

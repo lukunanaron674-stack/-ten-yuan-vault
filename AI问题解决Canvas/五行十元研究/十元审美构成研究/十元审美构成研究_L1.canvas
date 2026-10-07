@@ -1,0 +1,316 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 480,
+      "color": "1",
+      "text": "# 十元审美构成研究\n\n从“结构是否相同”进一步研究：\n**这些结构怎样组合，会不会稳定地产生审美效果？**\n\nA1 同型统一\nA2 关系对折\nA3 动态链魅力\nA4 十元强度谱\n\n⚠️ 结构成立 ≠ 审美成立"
+    },
+    {
+      "id": "a1",
+      "type": "text",
+      "x": -1100,
+      "y": -620,
+      "width": 620,
+      "height": 480,
+      "color": "2",
+      "text": "# A1｜跨领域同型统一美\n\n人物 / 发型 / 服装 / 音乐 / 动作 / 镜头\n若映到同一五轴/十元结构：\n→ 是否更统一、更匹配、更“对味”？\n\n同轴同端 vs 同轴反端 vs 生/克/补 vs 随机错配\n\n主测：unity / fit / coherence"
+    },
+    {
+      "id": "a2",
+      "type": "text",
+      "x": -1100,
+      "y": 20,
+      "width": 620,
+      "height": 500,
+      "color": "3",
+      "text": "# A2｜关系对折美\n\n主结构立住后，被其他结构：\n- 生\n- 克\n- 补\n- 反端扰动\n可能产生更复杂魅力。\n\n预测：\nSAME→统一\n克→张力\n补→完整\n生→流动\n组合→charm"
+    },
+    {
+      "id": "a3",
+      "type": "text",
+      "x": -300,
+      "y": -620,
+      "width": 650,
+      "height": 520,
+      "color": "4",
+      "text": "# A3｜动态链魅力\n\n研究关系顺序的节奏美。\n\n候选：\n1 克→生→大克→补\n2 生→克→再生→补\n3 双克→双生→三克→选择→互补\n4 交替拉扯\n5 并行双线→汇合\n\n测 tension / charm / closure / want-to-continue"
+    },
+    {
+      "id": "a4",
+      "type": "text",
+      "x": -300,
+      "y": 60,
+      "width": 650,
+      "height": 540,
+      "color": "5",
+      "text": "# A4｜十元强度谱 1–10\n\n十个符号各自映射 1–10。\n\n判定层：Top1 = 主导十元\n构成层：完整谱形可能更重要。\n\n记录：Top1/2/3、Top1-Top2 gap、同轴两端差、集中/分散、阶段谱形变化。\n\n比较 Top1 vs Top3 vs Full Profile"
+    },
+    {
+      "id": "metrics",
+      "type": "text",
+      "x": 520,
+      "y": -620,
+      "width": 650,
+      "height": 560,
+      "color": "6",
+      "text": "# 审美不能只叫“美”\n\nunity 统一\nfit 匹配\ncoherence 整体性\ninterest 有趣\ntension 张力\ncharm 魅力\ncompleteness 完整\nmemorability 记忆点\npreference 喜欢\nbeauty 美感\n\n全同型可能最统一，却不一定最有趣。"
+    },
+    {
+      "id": "existing",
+      "type": "text",
+      "x": 520,
+      "y": 80,
+      "width": 650,
+      "height": 520,
+      "color": "3",
+      "text": "# 现有实验接口\n\n五轴 V1.0 → 跨域结构底座\nQ-AXIS-001.1 → 真结构迁移 vs 题材类比\n动态链质量评估器 → 结构机制审计\n黎黎隆 B端 → 已有匿名感受盲审\n音乐动态链库 → 跨媒介材料\n\n这些可直接复用。"
+    },
+    {
+      "id": "warning",
+      "type": "text",
+      "x": 1350,
+      "y": -620,
+      "width": 650,
+      "height": 520,
+      "color": "6",
+      "text": "# 旧材料不能自产自证\n\n旧《概念映射_美》已有：\n- 十元1–10\n- 生克补链\n- 美的解释\n\n只算：\n**历史假设 / 开发材料**\n\n不能当观众审美规律证据。\n动态链质量分也 ≠ 审美分。"
+    },
+    {
+      "id": "r1",
+      "type": "text",
+      "x": 1350,
+      "y": 40,
+      "width": 650,
+      "height": 390,
+      "color": "2",
+      "text": "# R1｜审美变量与实验语法｜DONE\n\n冻结：\n- CORE 6指标 U/F/C/I/P/B\n- A2追加 T/K\n- A3追加 CL/W\n- 1–7量表\n- SAME/OPPOSITE/生/克/补/RANDOM\n- 盲审顺序\n- Surface lure / structural match / hidden duplicate 控制\n\nNEXT：R2 最小 SAME/OPPOSITE/RANDOM A/B/C"
+    },
+    {
+      "id": "r2",
+      "type": "text",
+      "x": 2170,
+      "y": -620,
+      "width": 650,
+      "height": 390,
+      "color": "3",
+      "text": "# R2｜同型统一 × 关系对折｜PROTOCOL DONE\n\n首轮校准轴：木 ZX↔NX\n\n核心设计：2×3 镜像\n- Base ZX × ZX/NX/RANDOM hair\n- Base NX × NX/ZX/RANDOM hair\n\n至少12个刺激；每端2个hair exemplar。\n\n关键不是哪个发型分高，而是**同端匹配交互**。\n\nEMPIRICAL：PENDING\nNEXT：刺激预检与制作"
+    },
+    {
+      "id": "r3",
+      "type": "text",
+      "x": 2170,
+      "y": -100,
+      "width": 650,
+      "height": 420,
+      "color": "4",
+      "text": "# R3｜动态链魅力｜PROTOCOL DONE\n\n目标链：K→S→K+→B\n克→生→重克→补\n\nDAS动态审美签名\n4个合法换序 + 2个消融\n抽象层 → 故事Animatic\nEvaluator先过门，再盲审\n\nEMPIRICAL：PENDING\nNEXT：R4强度谱"
+    },
+    {
+      "id": "r4",
+      "type": "text",
+      "x": 2170,
+      "y": 450,
+      "width": 650,
+      "height": 400,
+      "color": "5",
+      "text": "# R4｜十元强度谱\n\n建立十维 1–10 profile。\n\n比较：\nTop1\nvs Top1+Top2/Top3\nvs Full Profile\n\n若 Full Profile 更好，说明谱形本身有信息。"
+    },
+    {
+      "id": "r5",
+      "type": "text",
+      "x": 2990,
+      "y": -320,
+      "width": 700,
+      "height": 520,
+      "color": "1",
+      "text": "# R5｜跨领域总验证\n\n至少：\n人物造型 × 音乐\n角色行为 × 镜头/故事\n\n要求：\n- 新评价者\n- 隐藏十元标签\n- holdout\n- 负控\n- 开发集 ≠ 最终验证集\n\nDONE 后才能谈跨领域审美预测价值。"
+    },
+    {
+      "id": "logic",
+      "type": "text",
+      "x": 2990,
+      "y": 340,
+      "width": 700,
+      "height": 430,
+      "color": "6",
+      "text": "# 两条证据链必须独立\n\n五轴/TSIG → 证明“结构是否相同”\n\n观众盲审 → 证明“这种组合产生什么审美效果”\n\n禁止：\n觉得美 → 倒推结构正确\n结构正确 → 自动宣称很美"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 3810,
+      "y": -50,
+      "width": 700,
+      "height": 500,
+      "color": "1",
+      "text": "# 现在怎么研究？\n\n**下一步先跑 R1。**\n\n先锁：\n1 审美因变量\n2 SAME/生/克/补/random 刺激条件\n3 五轴作为跨域单位\n4 盲审问卷\n5 正负控制\n\n然后 R2 做小样 A/B。\n成本最低、最容易推翻、信息量最大。"
+    },
+    {
+      "id": "r1_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/十元审美构成研究/R1_审美变量与实验语法冻结.canvas",
+      "x": 1350,
+      "y": 570,
+      "width": 650,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "r2_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/十元审美构成研究/R2_同型统一与关系对折最小实验.canvas",
+      "x": 2170,
+      "y": -1120,
+      "width": 650,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "r3_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/十元审美构成研究/R3_动态链魅力实验协议.canvas",
+      "x": 2170,
+      "y": -250,
+      "width": 650,
+      "height": 220,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "a1",
+      "label": "统一"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "toNode": "a2",
+      "label": "对折"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "toNode": "a3",
+      "label": "序列"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "toNode": "a4",
+      "label": "强度谱"
+    },
+    {
+      "id": "e5",
+      "fromNode": "a1",
+      "toNode": "metrics",
+      "label": "测什么"
+    },
+    {
+      "id": "e6",
+      "fromNode": "a2",
+      "toNode": "metrics",
+      "label": "分开审美结果"
+    },
+    {
+      "id": "e7",
+      "fromNode": "a3",
+      "toNode": "existing",
+      "label": "复用实验接口"
+    },
+    {
+      "id": "e8",
+      "fromNode": "a4",
+      "toNode": "warning",
+      "label": "防自产评分"
+    },
+    {
+      "id": "e9",
+      "fromNode": "metrics",
+      "toNode": "r1",
+      "label": "先定义"
+    },
+    {
+      "id": "e10",
+      "fromNode": "r1",
+      "toNode": "r2",
+      "label": "小实验"
+    },
+    {
+      "id": "e11",
+      "fromNode": "r2",
+      "toNode": "r3",
+      "label": "时间链"
+    },
+    {
+      "id": "e12",
+      "fromNode": "r3",
+      "toNode": "r4",
+      "label": "谱形"
+    },
+    {
+      "id": "e13",
+      "fromNode": "r4",
+      "toNode": "r5",
+      "label": "holdout"
+    },
+    {
+      "id": "e14",
+      "fromNode": "warning",
+      "toNode": "logic",
+      "label": "证据纪律"
+    },
+    {
+      "id": "e15",
+      "fromNode": "r5",
+      "toNode": "logic",
+      "label": "最终证据"
+    },
+    {
+      "id": "e16",
+      "fromNode": "logic",
+      "toNode": "next",
+      "label": "当前行动"
+    },
+    {
+      "id": "e_r1_file",
+      "fromNode": "r1",
+      "toNode": "r1_file",
+      "label": "R1详细Canvas"
+    },
+    {
+      "id": "e_r2_file",
+      "fromNode": "r2",
+      "toNode": "r2_file",
+      "label": "R2详细Canvas"
+    },
+    {
+      "id": "e_r3_file",
+      "fromNode": "r3",
+      "toNode": "r3_file",
+      "label": "R3详细Canvas"
+    }
+  ],
+  "metadata": {
+    "version": "0.4",
+    "frontmatter": {
+      "type": "tenyuan-aesthetic-composition-research",
+      "status": "RESEARCH_OPEN",
+      "date": "2026-10-07",
+      "rounds": 5,
+      "current_round": "R4",
+      "r1": "DONE",
+      "r2": "PROTOCOL_DONE",
+      "r2_empirical": "PENDING",
+      "current_action": "R2_R3_EMPIRICAL_PREP__R4_THEORY",
+      "r3": "PROTOCOL_DONE",
+      "r3_empirical": "PENDING"
+    }
+  }
+}

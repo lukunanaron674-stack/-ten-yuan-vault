@@ -1,0 +1,758 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 620,
+      "height": 390,
+      "color": "2",
+      "text": "# 创作意图结构化研究｜L1\n\n## 当前正确模型\n对象 / 概念 / 创作意图\n→ 十元语义映射\n→ 三元独立复核\n→ 十元端点成立\n→ 生克补关系启动\n→ 动态链跨阶段变化\n\nR1–R5 已完成，但 R3–R5 关系层表述已由 v2 纠错覆盖。\n\n**RESEARCH DESIGN DONE / EMPIRICAL VALIDATION PENDING**"
+    },
+    {
+      "id": "routeA",
+      "type": "text",
+      "x": -1450,
+      "y": -720,
+      "width": 520,
+      "height": 390,
+      "color": "5",
+      "text": "# A｜Attribute / Taxonomy\n\n意图 → 属性变量\nitem / silhouette / color / material / style\n\n强：WHAT\n弱：关系 / 主次 / 动态"
+    },
+    {
+      "id": "routeB",
+      "type": "text",
+      "x": -780,
+      "y": -720,
+      "width": 520,
+      "height": 390,
+      "color": "4",
+      "text": "# B｜Concept Graph\n\nToMigo\nNode = purpose/content/style\nEdge = interpretable relation\n\n**与 IRG 最近的社会 baseline**"
+    },
+    {
+      "id": "routeC",
+      "type": "text",
+      "x": -1450,
+      "y": -180,
+      "width": 520,
+      "height": 410,
+      "color": "4",
+      "text": "# C｜Intent / Reasoning Canvas\n\nDesignerlyLoop\nproblem framing\nconstraints\nstrategies\nevaluation criteria\nreasoning\n\n意图 = 可持续编辑对象"
+    },
+    {
+      "id": "routeD",
+      "type": "text",
+      "x": -780,
+      "y": -180,
+      "width": 520,
+      "height": 400,
+      "color": "3",
+      "text": "# D｜Evolving Intent Loop\n\nCreative Intention Loop\n↕\nExecution Loop\n↕\nOutput / Feedback\n\nIntent 会随过程变化"
+    },
+    {
+      "id": "routeE",
+      "type": "text",
+      "x": -1110,
+      "y": 390,
+      "width": 540,
+      "height": 400,
+      "color": "6",
+      "text": "# E｜Cross-stage Constraint Artifact\n\nRequirements\n→ Concept\n→ Evaluation\n→ Production\n\n核心：\n防 semantic decay / constraint drift"
+    },
+    {
+      "id": "layers",
+      "type": "text",
+      "x": -180,
+      "y": -740,
+      "width": 520,
+      "height": 480,
+      "color": "5",
+      "text": "# 社会已有的 5 层\n\nL1 WHAT｜属性\nL2 CONNECT｜概念关系\nL3 WHY｜推理/理由\nL4 CHANGE｜意图演化\nL5 SURVIVE｜跨阶段保持\n\n⚠️ “结构化意图”本身已经不是新点"
+    },
+    {
+      "id": "tenyuan",
+      "type": "text",
+      "x": 650,
+      "y": -720,
+      "width": 620,
+      "height": 540,
+      "color": "2",
+      "text": "# 十元的正确位置｜v2纠错\n\n十元首先是：\n## Semantic Mapping Model\n\n先把对象/概念映射到十元语义空间：\nX/Z/N/ZN/NZ/XN/NX/ZX/XZ/X并Z\n\n再记录：\n主/次 + T/M/C\n\n三元 x/n/z：\n独立判定 + 比例质感复核\n\n**映射完成后才进入关系。**"
+    },
+    {
+      "id": "notnode",
+      "type": "text",
+      "x": 650,
+      "y": -80,
+      "width": 620,
+      "height": 380,
+      "color": "6",
+      "text": "# 映射之后才有关系\n\n两端十元都成立\n+ 同一对象层 / 当前阶段\n+ mechanism\n+ target_variable\n+ direction\n+ 第三因素/反向解释排除\n↓\n才判：\n生 / 克 / 补 / NONE / AMBIGUOUS\n↓\n记录 E 关系作用量"
+    },
+    {
+      "id": "baseline",
+      "type": "text",
+      "x": 650,
+      "y": 430,
+      "width": 620,
+      "height": 500,
+      "color": "3",
+      "text": "# 公平比较｜纠错后\n\nB3｜Generic Dynamic Intent Representation\n\nVS\n\nB4｜Ten-Yuan Mapping + Relation Model\n\nB4 完整链：\n对象→十元映射→三元复核→端点冻结→生克补启动→动态链\n\n**不是 B3 + 三个关系词。**"
+    },
+    {
+      "id": "r1",
+      "type": "text",
+      "x": -350,
+      "y": 1120,
+      "width": 460,
+      "height": 320,
+      "color": "4",
+      "text": "# R1｜现有方法谱系｜DONE\n\n15 个代表系统\n→ 6 个功能家族\n\n输出：\n社会已有结构总谱\n\n**DONE**"
+    },
+    {
+      "id": "r2",
+      "type": "text",
+      "x": 190,
+      "y": 1120,
+      "width": 460,
+      "height": 320,
+      "color": "4",
+      "text": "# R2｜Schema 字段拆解｜DONE\n\n14 字段统一矩阵\n15 个社会方法同表比较\n\n输出：\n成熟字段 / 可能 GAP / Generic Intent Graph v0.1\n\n**DONE**"
+    },
+    {
+      "id": "r3",
+      "type": "text",
+      "x": 730,
+      "y": 1120,
+      "width": 460,
+      "height": 320,
+      "color": "2",
+      "text": "# R3｜十元映射｜DONE\n\n结论：\n端点 = Semantic Annotation\n生克补 = Typed Effect Relation\n主次 = Structural Dominance\nT/M/E/C 分离\n动态链 = Relation Transition Candidate\n五轴/五维退出\n\n**DONE**"
+    },
+    {
+      "id": "r4",
+      "type": "text",
+      "x": 1270,
+      "y": 1120,
+      "width": 460,
+      "height": 320,
+      "color": "3",
+      "text": "# R4｜GAP / 新增性审计｜DONE\n\nA 生克补 → SPECIALIZATION ONLY\nB 主次+T/E → IMPLEMENTATION VALUE\nC Relation Transition → DOMAIN GAP CANDIDATE\n\n唯一保留：\nDecision-Grounded Dynamic Intent Relation\n\n**DONE**"
+    },
+    {
+      "id": "r5",
+      "type": "text",
+      "x": 1810,
+      "y": 1120,
+      "width": 480,
+      "height": 340,
+      "color": "1",
+      "text": "# R5｜验证设计｜DONE\n\nB0–B4 已冻结\n核心：B4 vs 强 B3\n\n先预测 → 冻结 → 揭盲\n真实标签：\nACCEPT / REWORK / REJECT\nPreserve / Sacrifice\nRelation Transition\n\n**DONE**"
+    },
+    {
+      "id": "routefile",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_L1_研究路线.md",
+      "x": 0,
+      "y": 1570,
+      "width": 600,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "three_dirs_context",
+      "type": "text",
+      "x": -2500,
+      "y": -500,
+      "width": 620,
+      "height": 360,
+      "color": "2",
+      "text": "# 三个论文方向｜上位背景\n\n① 创作主权 / 个性\nAI 无限生产力下，如何保持“我”\n\n② 审美判断 / 最终否决权\n前三层都过，为什么最后仍 REJECT\n\n③ 创作意图 / 灵感架构\n怎样把“我为什么这样创作”结构化给 AI\n\n**当前 L1 专门深挖③，但必须保留①②作为上游。**"
+    },
+    {
+      "id": "dir1_context",
+      "type": "text",
+      "x": -2500,
+      "y": -20,
+      "width": 560,
+      "height": 300,
+      "color": "5",
+      "text": "# 方向1｜WHY\n创作主权 / 个性\n\n个人风格\n选择习惯\n审美判断\n创作意志\n最终决定权"
+    },
+    {
+      "id": "dir2_context",
+      "type": "text",
+      "x": -2500,
+      "y": 360,
+      "width": 560,
+      "height": 320,
+      "color": "4",
+      "text": "# 方向2｜JUDGE\n审美判断 / 最终否决权\n\nL1 技术正确\n→ L2 约束保持\n→ L3 意图符合\n→ L4 创作者最终决策"
+    },
+    {
+      "id": "dir3_context",
+      "type": "text",
+      "x": -2500,
+      "y": 760,
+      "width": 560,
+      "height": 340,
+      "color": "3",
+      "text": "# 方向3｜REPRESENT｜当前研究焦点\n创作意图 / 灵感架构\n\nGoal / Relation / Priority / Constraint\nRationale / Dynamic Trace\n\n问题：如何让 AI 持续理解“我为什么这样创作”？"
+    },
+    {
+      "id": "r1_result_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_R1_现有方法谱系.md",
+      "x": -350,
+      "y": 1990,
+      "width": 520,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "r1_taxonomy",
+      "type": "text",
+      "x": 260,
+      "y": 1900,
+      "width": 700,
+      "height": 620,
+      "color": "4",
+      "text": "# R1 DONE｜社会已有方法谱系\n\n15 个代表系统 → 6 类\n\nA｜Prompt refinement / traceability\nB｜Multimodal / context elicitation\nC｜Attribute / dimension / taxonomy\nD｜Atomic intent units / tags\nE｜Semantic / concept / reasoning graph\nF｜Evolving / cross-stage continuity\n\n## 关键社会 baseline\nToMigo → Relation / Graph\nAHP → Weight / Priority\nDesignerlyLoop → Rationale / Dynamic Intent\nCreative Dialogue → Evolving Intent\nGID-HGCC → Cross-stage Constraint\n\n**结论：Node / Edge / Weight / Reasoning / Time / Stage / Trace 都已有人做。**"
+    },
+    {
+      "id": "r1_tenyuan_gate",
+      "type": "text",
+      "x": 1040,
+      "y": 1940,
+      "width": 650,
+      "height": 540,
+      "color": "2",
+      "text": "# R1 给十元留下的硬问题\n\n生克补\n≠ 只证明“我有 relation”\n→ 必须区别于 ToMigo supportive edge\n\n主次 / 体量\n≠ 只证明“我有 weight”\n→ 必须区别于 AHP / Priority\n\n动态链\n≠ 只证明“我的 intent 会变化”\n→ 必须区别于 Evolving Intent Loop\n\n**R3/R4 才判断：换名字，还是有新增操作能力。**"
+    },
+    {
+      "id": "r2_result_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_R2_Schema字段矩阵.md",
+      "x": 190,
+      "y": 1570,
+      "width": 520,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "r2_schema",
+      "type": "text",
+      "x": 760,
+      "y": 1540,
+      "width": 700,
+      "height": 650,
+      "color": "4",
+      "text": "# R2 DONE｜统一 Schema\n\n14 字段：\nNode / Edge / Relation Type / Direction\nPriority / Weight / Constraint / Rationale\nState / Transition / Stage / Evidence\nEditability / Propagation\n\n## 已高度成熟\nNode / basic Edge / Direction / Constraint\nState / Stage / Editability / basic Propagation\n\n## 仍值得追\n1. Typed relational effect\n2. Conflict priority\n3. Relation transition\n4. Decision-grounded rationale"
+    },
+    {
+      "id": "r2_ten_scope",
+      "type": "text",
+      "x": 1540,
+      "y": 1540,
+      "width": 690,
+      "height": 620,
+      "color": "2",
+      "text": "# R2 对十元的收缩\n\n十元不再竞争：\n**整个 Creative Intent Structure**\n\n普通 Schema 负责：\nGoal / Object / Constraint / Attribute\nStage / Evidence\n\n十元只竞争：\n**Relation Type**\n**Conflict Priority**\n**Relation Strength**\n**Relation Transition**\n\n因此公平基线必须是：\nGeneric Intent Graph\nvs\nTen-Yuan Relation Graph"
+    },
+    {
+      "id": "r3_result_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_R3_十元逐项映射.md",
+      "x": 730,
+      "y": 1570,
+      "width": 520,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "r3_corrections",
+      "type": "text",
+      "x": 1280,
+      "y": 2280,
+      "width": 700,
+      "height": 650,
+      "color": "2",
+      "text": "# R3 DONE｜三个关键修正\n\n1｜主次 ≠ decision priority\n主次 = compositional dominance\n冲突保谁仍需独立 priority / LOCK-FLEX\n\n2｜T / M / E / C 必须分开\nT = 结构占位\nM = 阶段显影\nE = 关系作用量\nC = 证据置信度\n\n3｜十元端点 ≠ Intent Node Type\n十元 = semantic annotation layer"
+    },
+    {
+      "id": "r3_layer",
+      "type": "text",
+      "x": 2050,
+      "y": 2250,
+      "width": 720,
+      "height": 700,
+      "color": "3",
+      "text": "# Ten-Yuan Intent Relation Layer｜纠错后\\n\\n不是 Generic Graph + 三个关系词。\\n\\n正确顺序：\\n对象层/阶段\\n→ 十元端点判定\\n→ 主/次 + T/M/C\\n→ 端点组合约束\\n→ 生/克/补启动审核\\n→ mechanism + target_variable + E\\n→ 动态链跨阶段重新审核\\n\\n**先端点，后关系。**"
+    },
+    {
+      "id": "r3_outscope",
+      "type": "text",
+      "x": 2850,
+      "y": 2290,
+      "width": 620,
+      "height": 560,
+      "color": "6",
+      "text": "# R3｜退出当前论文核心\n\n**五轴 → OUT OF SCOPE**\n高阶十元语义空间 / 五行结构层\n\n**五维 → OUT OF SCOPE**\nNarrative / Theme Layer\n时间 / 本体 / 空间 / 因果 / 命运\n\n不代表没价值；\n只是当前“创作意图关系结构”论文不需要它们。"
+    },
+    {
+      "id": "r3_candidate",
+      "type": "text",
+      "x": 2050,
+      "y": 3060,
+      "width": 720,
+      "height": 500,
+      "color": "1",
+      "text": "# 当前唯一 NEW OPERATOR CANDIDATE\n\n## 动态链中的 Relation-Type Transition\n\n不是普通 State0→State1。\n而是：\nRelation0\n→ continue / reverse / fade / shift\n→ Relation1\n\n例如：\n克 → 补 → 反克\n\nR4 必须检查：\n现有 creative intent graph 是否已经有同类第一等操作。"
+    },
+    {
+      "id": "r4_result_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_R4_GAP新增性审计.md",
+      "x": 1270,
+      "y": 1570,
+      "width": 520,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "r4_kill",
+      "type": "text",
+      "x": 2840,
+      "y": 3060,
+      "width": 700,
+      "height": 600,
+      "color": "1",
+      "text": "# R4｜结论纠错\\n\\n原先把生克补拆出来与 generic relation 单独比较，层级不完整。\\n\\n现在只保留：\\n社会关系词可做表面语义参照。\\n\\n真正新增性审计单位必须是：\\n**十元端点 + 端点组合 + 生克补启动规则 + target variable + E + 动态链**\\n\\n不得再以“生≈support / 克≈conflict”直接给整个十元关系系统下结论。"
+    },
+    {
+      "id": "r4_keep",
+      "type": "text",
+      "x": 3600,
+      "y": 3060,
+      "width": 760,
+      "height": 650,
+      "color": "4",
+      "text": "# R4｜唯一保留候选\n\n## Decision-Grounded Dynamic Intent Relation\n\n不是“关系会变化”本身。\n而是：\n\nCreative Intent A/B 的 relation semantics\nsupport / conflict / compensate / preserve ...\n在真实创作轮次中如何转型\n↓\n是否能预测真实：\n**ACCEPT / REWORK / REJECT**\n\n状态：DOMAIN GAP CANDIDATE"
+    },
+    {
+      "id": "r4_bridge",
+      "type": "text",
+      "x": 3600,
+      "y": 3820,
+      "width": 760,
+      "height": 520,
+      "color": "2",
+      "text": "# 方向 3 × 方向 2 接口\n\n③ REPRESENT\n动态意图关系结构\n↓\n冻结预测\n↓\n② JUDGE\n真实创作者决策\nACCEPT / REWORK / REJECT\n↓\nEvidence Delta\n\n**表示是否有用，必须交给真实决策验证。**"
+    },
+    {
+      "id": "r4_tenrole",
+      "type": "text",
+      "x": 4460,
+      "y": 3060,
+      "width": 700,
+      "height": 610,
+      "color": "6",
+      "text": "# 十元最终身份｜R4\n\n不是方法本体。\n而是：\n## Candidate Relation Coding Scheme\n\nB3｜Generic Dynamic Intent Graph\nvs\nB4｜Ten-Yuan Dynamic Relation Layer\n\n若 B4≈B3：\n十元无额外预测价值。\n\n若 B4>B3：\n才保留为有增量的关系编码。"
+    },
+    {
+      "id": "r5_result_file",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_R5_B0-B4对照验证设计.md",
+      "x": 1810,
+      "y": 1570,
+      "width": 540,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "r5_design",
+      "type": "text",
+      "x": 4450,
+      "y": 3820,
+      "width": 760,
+      "height": 700,
+      "color": "1",
+      "text": "# R5｜B0–B4 验证｜纠错后\\n\\n核心仍是 B4 vs B3。\\n\\n但 B4 必须是完整处理：\\n对象层/阶段\\n→ 十元端点\\n→ 主次/T/M/C\\n→ 端点组合\\n→ 生克补关系启动\\n→ mechanism / target_variable / E\\n→ 动态链\\n\\n**禁止只给 B3 加三个关系词冒充 B4。**"
+    },
+    {
+      "id": "r5_data",
+      "type": "text",
+      "x": 5290,
+      "y": 3820,
+      "width": 680,
+      "height": 660,
+      "color": "4",
+      "text": "# 数据三层\n\nPhase A｜内部开发\n30–50 case\n方志敏 / 黎黎隆 / 审核历史\n\nPhase B｜内部留出\n10–20 case\n规则冻结后揭盲\n\nPhase C｜外部创作者\n1位以上 + 对方自己的项目\n10–20 case\n\n只有跨作者仍成立，才接近 External Validation。"
+    },
+    {
+      "id": "r5_stop",
+      "type": "text",
+      "x": 4450,
+      "y": 4600,
+      "width": 760,
+      "height": 610,
+      "color": "6",
+      "text": "# STOP｜怎样杀死十元\n\nB4≈B3\n或\n只在开发集提升\n或\n必须事后改规则\n或\n复杂度增加但预测不增\n或\n跨作者失效\n\n→ 结论：\n**十元关系编码没有稳定额外增量。**\n\n这仍然是有效论文结果。"
+    },
+    {
+      "id": "r5_end",
+      "type": "text",
+      "x": 5290,
+      "y": 4600,
+      "width": 680,
+      "height": 610,
+      "color": "3",
+      "text": "# 5轮研究完成\n\nR1 DONE\nR2 DONE\nR3 DONE\nR4 DONE\nR5 DONE\n\n状态：\n## RESEARCH DESIGN DONE\n## EMPIRICAL VALIDATION PENDING\n\n不再开 R6。\n下一步只有：\n**抽真实 case → t0/t1 遮蔽 → B0–B4 盲测。**"
+    },
+    {
+      "id": "teaching_entry",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图论文_大白话教学总图_L1.canvas",
+      "x": -2500,
+      "y": 1260,
+      "width": 620,
+      "height": 240,
+      "color": "5"
+    },
+    {
+      "id": "teaching_note",
+      "type": "text",
+      "x": -2500,
+      "y": 1560,
+      "width": 620,
+      "height": 360,
+      "color": "5",
+      "text": "# 看不懂术语时从这里进\n\n不要继续扩论文理论。\n\n进入：\n**创作意图论文_大白话教学总图_L1.canvas**\n\n学习协议：\n懂 → 物 → 己 → 社会 → 十元 → 论文相关性 → 忆 → 用\n\n下一课：\nNode / Edge / Relation Type"
+    },
+    {
+      "id": "relation_dependency_correction",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_关键纠错_生克补依赖十元端点.md",
+      "x": 2780,
+      "y": 1540,
+      "width": 720,
+      "height": 240,
+      "color": "1"
+    },
+    {
+      "id": "relation_dependency_rule",
+      "type": "text",
+      "x": 2780,
+      "y": 1840,
+      "width": 760,
+      "height": 500,
+      "color": "1",
+      "text": "# 关键纠错｜覆盖 R3–R5\\n\\n**生 / 克 / 补不得脱离十元端点单独评价。**\\n\\n对象A → 十元A\\n对象B → 十元B\\n↓\\n端点组合 + 当前阶段\\n↓\\n机制 / 目标变量 / 方向 / 证据\\n↓\\n生 / 克 / 补 / NONE / AMBIGUOUS\\n\\n公平比较单位：\\n**十元端点 + 关系启动规则 + 动态链**\\nvs\\nGeneric Dynamic Intent Graph"
+    },
+    {
+      "id": "mapping_first_v2",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图结构化研究_关键纠错_v2_十元先映射后关系.md",
+      "x": 3680,
+      "y": 1540,
+      "width": 760,
+      "height": 240,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "a0",
+      "fromNode": "routeA",
+      "toNode": "layers",
+      "label": "WHAT"
+    },
+    {
+      "id": "a1",
+      "fromNode": "routeB",
+      "toNode": "layers",
+      "label": "CONNECT"
+    },
+    {
+      "id": "a2",
+      "fromNode": "routeC",
+      "toNode": "layers",
+      "label": "WHY"
+    },
+    {
+      "id": "a3",
+      "fromNode": "routeD",
+      "toNode": "layers",
+      "label": "CHANGE"
+    },
+    {
+      "id": "a4",
+      "fromNode": "routeE",
+      "toNode": "layers",
+      "label": "SURVIVE"
+    },
+    {
+      "id": "a5",
+      "fromNode": "layers",
+      "toNode": "root",
+      "label": "社会基线"
+    },
+    {
+      "id": "a6",
+      "fromNode": "root",
+      "toNode": "tenyuan",
+      "label": "十元关系"
+    },
+    {
+      "id": "a7",
+      "fromNode": "tenyuan",
+      "toNode": "notnode",
+      "label": "边界"
+    },
+    {
+      "id": "a8",
+      "fromNode": "notnode",
+      "toNode": "baseline",
+      "label": "公平验证"
+    },
+    {
+      "id": "r01",
+      "fromNode": "root",
+      "toNode": "r1",
+      "label": "R1"
+    },
+    {
+      "id": "r12",
+      "fromNode": "r1",
+      "toNode": "r2",
+      "label": "R2"
+    },
+    {
+      "id": "r23",
+      "fromNode": "r2",
+      "toNode": "r3",
+      "label": "R3"
+    },
+    {
+      "id": "r34",
+      "fromNode": "r3",
+      "toNode": "r4",
+      "label": "R4"
+    },
+    {
+      "id": "r45",
+      "fromNode": "r4",
+      "toNode": "r5",
+      "label": "R5"
+    },
+    {
+      "id": "ctx0",
+      "fromNode": "three_dirs_context",
+      "toNode": "dir1_context",
+      "label": "1｜WHY"
+    },
+    {
+      "id": "ctx1",
+      "fromNode": "dir1_context",
+      "toNode": "dir2_context",
+      "label": "2｜JUDGE"
+    },
+    {
+      "id": "ctx2",
+      "fromNode": "dir2_context",
+      "toNode": "dir3_context",
+      "label": "3｜REPRESENT"
+    },
+    {
+      "id": "ctx3",
+      "fromNode": "dir3_context",
+      "toNode": "root",
+      "label": "当前深挖"
+    },
+    {
+      "id": "r1res",
+      "fromNode": "r1",
+      "toNode": "r1_result_file",
+      "label": "R1 正本"
+    },
+    {
+      "id": "r1tax",
+      "fromNode": "r1_result_file",
+      "toNode": "r1_taxonomy",
+      "label": "15→6 类"
+    },
+    {
+      "id": "r1gate",
+      "fromNode": "r1_taxonomy",
+      "toNode": "r1_tenyuan_gate",
+      "label": "十元证据门"
+    },
+    {
+      "id": "r2file",
+      "fromNode": "r2",
+      "toNode": "r2_result_file",
+      "label": "R2 正本"
+    },
+    {
+      "id": "r2schema",
+      "fromNode": "r2_result_file",
+      "toNode": "r2_schema",
+      "label": "字段矩阵"
+    },
+    {
+      "id": "r2scope",
+      "fromNode": "r2_schema",
+      "toNode": "r2_ten_scope",
+      "label": "十元收缩"
+    },
+    {
+      "id": "r3file",
+      "fromNode": "r3",
+      "toNode": "r3_result_file",
+      "label": "R3 正本"
+    },
+    {
+      "id": "r3corr",
+      "fromNode": "r3_result_file",
+      "toNode": "r3_corrections",
+      "label": "映射修正"
+    },
+    {
+      "id": "r3layer",
+      "fromNode": "r3_corrections",
+      "toNode": "r3_layer",
+      "label": "关系层 v0.1"
+    },
+    {
+      "id": "r3out",
+      "fromNode": "r3_layer",
+      "toNode": "r3_outscope",
+      "label": "范围收缩"
+    },
+    {
+      "id": "r3cand",
+      "fromNode": "r3_layer",
+      "toNode": "r3_candidate",
+      "label": "唯一新操作候选"
+    },
+    {
+      "id": "r4file",
+      "fromNode": "r4",
+      "toNode": "r4_result_file",
+      "label": "R4 正本"
+    },
+    {
+      "id": "r4kill",
+      "fromNode": "r4_result_file",
+      "toNode": "r4_kill",
+      "label": "新增性审计"
+    },
+    {
+      "id": "r4keep",
+      "fromNode": "r4_kill",
+      "toNode": "r4_keep",
+      "label": "仅保留领域候选"
+    },
+    {
+      "id": "r4bridge",
+      "fromNode": "r4_keep",
+      "toNode": "r4_bridge",
+      "label": "接真实判断"
+    },
+    {
+      "id": "r4tenrole",
+      "fromNode": "r4_keep",
+      "toNode": "r4_tenrole",
+      "label": "十元降级为编码方案"
+    },
+    {
+      "id": "r5file",
+      "fromNode": "r5",
+      "toNode": "r5_result_file",
+      "label": "R5 正本"
+    },
+    {
+      "id": "r5design",
+      "fromNode": "r5_result_file",
+      "toNode": "r5_design",
+      "label": "验证协议"
+    },
+    {
+      "id": "r5data",
+      "fromNode": "r5_design",
+      "toNode": "r5_data",
+      "label": "数据层"
+    },
+    {
+      "id": "r5stop",
+      "fromNode": "r5_design",
+      "toNode": "r5_stop",
+      "label": "STOP 门"
+    },
+    {
+      "id": "r5end",
+      "fromNode": "r5_data",
+      "toNode": "r5_end",
+      "label": "研究收束"
+    },
+    {
+      "id": "r5end2",
+      "fromNode": "r5_stop",
+      "toNode": "r5_end",
+      "label": "结果都可收束"
+    },
+    {
+      "id": "teach_entry_edge",
+      "fromNode": "dir3_context",
+      "toNode": "teaching_entry",
+      "label": "先学懂术语"
+    },
+    {
+      "id": "teach_note_edge",
+      "fromNode": "teaching_entry",
+      "toNode": "teaching_note",
+      "label": "学习协议"
+    },
+    {
+      "id": "corr_from_r3",
+      "fromNode": "r3",
+      "toNode": "relation_dependency_correction",
+      "label": "关键纠错"
+    },
+    {
+      "id": "corr_rule",
+      "fromNode": "relation_dependency_correction",
+      "toNode": "relation_dependency_rule",
+      "label": "冻结规则"
+    },
+    {
+      "id": "mapping_first_edge",
+      "fromNode": "root",
+      "toNode": "mapping_first_v2",
+      "label": "v2上位纠错"
+    }
+  ],
+  "metadata": {
+    "version": "1.9",
+    "frontmatter": {
+      "type": "creative-intent-structure-research",
+      "status": "open-r1-ready",
+      "rounds": 5,
+      "date": "2026-10-07",
+      "three_directions_context": "linked",
+      "r1": "done",
+      "r2": "done",
+      "r3": "done",
+      "r4": "done",
+      "ten_yuan_intent_layer": "v0.1",
+      "r5": "done",
+      "remaining_candidate": "decision-grounded-dynamic-intent-relation",
+      "research_design": "done",
+      "empirical_validation": "pending",
+      "teaching_entry": "linked",
+      "relation_dependency_correction": "frozen",
+      "model_v2": "mapping-first-relations-after"
+    }
+  }
+}

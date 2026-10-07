@@ -1,0 +1,234 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 560,
+      "height": 360,
+      "color": "1",
+      "text": "# R5｜五行 × 中国传统理论网络\n\n**不是同义词系统，而是后期不断融合的理论网络。**\n\n三种边：\n- ORIGIN｜历史来源\n- SYNTHESIS｜后期融合\n- FUNCTIONAL｜功能互补\n\n核心纪律：\n**逻辑生成次序 ≠ 历史出现顺序**"
+    },
+    {
+      "id": "qi",
+      "type": "text",
+      "x": -900,
+      "y": -520,
+      "width": 440,
+      "height": 320,
+      "color": "2",
+      "text": "# 气｜QI\n\n主要回答：\n世界/身体靠什么构成、流动、聚散、升降、变化？\n\n关键词：\n聚散 / 升降 / 出入 / 清浊 / 流动\n\n功能定位：\n**连续变化媒介**"
+    },
+    {
+      "id": "yy",
+      "type": "text",
+      "x": -900,
+      "y": -80,
+      "width": 440,
+      "height": 320,
+      "color": "3",
+      "text": "# 阴阳｜YINYANG\n\n主要回答：\n变化为什么呈现两极、互补、交替、盛衰与反转？\n\n关键词：\n对立 / 互补 / 交替 / 盛衰 / 反转\n\n功能定位：\n**极性变化框架**"
+    },
+    {
+      "id": "wuxing",
+      "type": "text",
+      "x": -220,
+      "y": -220,
+      "width": 500,
+      "height": 420,
+      "color": "5",
+      "text": "# 五行｜WUXING\n\n主要回答：\n复杂变化如何分成五类，并建立生克关系？\n\n关键词：\n五类 / 生 / 克 / 循环 / 关系位置\n\n功能定位：\n**中层关系分类器**\nMESO-LEVEL RELATIONAL CLASSIFIER"
+    },
+    {
+      "id": "yijing",
+      "type": "text",
+      "x": 520,
+      "y": -520,
+      "width": 460,
+      "height": 340,
+      "color": "4",
+      "text": "# 易 / 八卦｜YIJING / BAGUA\n\n主要回答：\n变化状态如何被符号化、组合和转换？\n\n关键词：\n阴爻 / 阳爻 / 八卦 / 六十四卦 / 变爻\n\n功能定位：\n**变化状态编码系统**"
+    },
+    {
+      "id": "ganying",
+      "type": "text",
+      "x": 520,
+      "y": -40,
+      "width": 460,
+      "height": 340,
+      "color": "4",
+      "text": "# 感应｜GANYING\n\n主要回答：\n为什么跨对象、跨领域的同类/同气现象还能被认为会响应？\n\n关键词：\n同类 / 同气 / 同声 / 响应 / 感召\n\n功能定位：\n**跨域响应机制**"
+    },
+    {
+      "id": "taiji",
+      "type": "text",
+      "x": -200,
+      "y": -760,
+      "width": 500,
+      "height": 280,
+      "color": "6",
+      "text": "# 太极｜TAIJI\n\n尤其在宋代理学中：\n太极 → 阴阳 → 五行 → 万物\n\n功能定位：\n**统一 / 生成顶层**\n\n⚠️ 这是后期成熟综合，不是五行最初起源。"
+    },
+    {
+      "id": "conf",
+      "type": "text",
+      "x": 1220,
+      "y": -560,
+      "width": 480,
+      "height": 350,
+      "color": "2",
+      "text": "# 儒家\n\n主要吸收方向：\n- 伦理化\n- 政治化\n- 修身\n- 天人秩序\n\n典型：汉儒、《春秋繁露》、宋代理学\n\n关系：\n**吸收并重构五行**"
+    },
+    {
+      "id": "dao",
+      "type": "text",
+      "x": 1220,
+      "y": -100,
+      "width": 480,
+      "height": 350,
+      "color": "3",
+      "text": "# 道家 / 道教\n\n老庄哲学 ≠ 五行理论。\n\n宗教道教大量吸收：\n- 气\n- 阴阳\n- 五行\n- 八卦\n- 身体修炼\n- 仪式\n\n关系：\n**后期宇宙论化 / 实践化**"
+    },
+    {
+      "id": "tcm",
+      "type": "text",
+      "x": 1220,
+      "y": 360,
+      "width": 480,
+      "height": 380,
+      "color": "5",
+      "text": "# 中医\n\n高度操作化：\n气 + 阴阳 + 五行\n\n气｜流动与功能\n阴阳｜寒热/表里/盛衰\n五行｜脏腑/系统之间生克、乘侮、制化\n\n关系：\n**身体—环境—病理关系模型**"
+    },
+    {
+      "id": "rule1",
+      "type": "text",
+      "x": -900,
+      "y": 420,
+      "width": 500,
+      "height": 300,
+      "color": "6",
+      "text": "# 三种关系必须分开\n\n**ORIGIN / GENEALOGY**\n历史上 A 是否真的产生 B\n\n**SYNTHESIS**\nA、B 原本不同，后来融合\n\n**FUNCTIONAL COMPATIBILITY**\nA、B 解决不同问题，因此能协同使用"
+    },
+    {
+      "id": "rule2",
+      "type": "text",
+      "x": -220,
+      "y": 420,
+      "width": 520,
+      "height": 330,
+      "color": "6",
+      "text": "# 最大误区\n\n❌ 阴阳 = 五行\n❌ 八卦 = 五行\n❌ 太极图从最早就包含完整五行\n❌ 中医五行 = 原始五行\n❌ 儒释道都用五行 → 五行就是三教共同根本\n\n✅ 更准确：\n**独立来源 + 后期融合 + 功能互补**"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "x": 520,
+      "y": 420,
+      "width": 500,
+      "height": 330,
+      "color": "1",
+      "text": "# R5 一句话\n\n五行最稳定的中层角色：\n\n上接：\n道 / 太极 / 理 / 气 / 阴阳\n\n下接：\n季节 / 身体 / 色彩 / 音乐 / 政治 / 行为\n\n自己负责：\n**把复杂对象压成有限关系类，再用生克组织。**"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_qi_yy",
+      "fromNode": "qi",
+      "toNode": "yy",
+      "label": "后期宇宙论常联动"
+    },
+    {
+      "id": "e_yy_wx",
+      "fromNode": "yy",
+      "toNode": "wuxing",
+      "label": "SYNTHESIS｜汉代明显融合"
+    },
+    {
+      "id": "e_qi_wx",
+      "fromNode": "qi",
+      "toNode": "wuxing",
+      "label": "FUNCTIONAL｜媒介↔模式"
+    },
+    {
+      "id": "e_yi_wx",
+      "fromNode": "yijing",
+      "toNode": "wuxing",
+      "label": "SYNTHESIS｜后世映射"
+    },
+    {
+      "id": "e_wx_ganying",
+      "fromNode": "wuxing",
+      "toNode": "ganying",
+      "label": "FUNCTIONAL｜分类↔响应"
+    },
+    {
+      "id": "e_taiji_yy",
+      "fromNode": "taiji",
+      "toNode": "yy",
+      "label": "后期生成结构"
+    },
+    {
+      "id": "e_taiji_wx",
+      "fromNode": "taiji",
+      "toNode": "wuxing",
+      "label": "宋代理学生成层级"
+    },
+    {
+      "id": "e_wx_conf",
+      "fromNode": "wuxing",
+      "toNode": "conf",
+      "label": "吸收/伦理政治化"
+    },
+    {
+      "id": "e_wx_dao",
+      "fromNode": "wuxing",
+      "toNode": "dao",
+      "label": "吸收/宇宙论化"
+    },
+    {
+      "id": "e_wx_tcm",
+      "fromNode": "wuxing",
+      "toNode": "tcm",
+      "label": "操作化"
+    },
+    {
+      "id": "e_qi_tcm",
+      "fromNode": "qi",
+      "toNode": "tcm",
+      "label": "FUNCTIONAL"
+    },
+    {
+      "id": "e_yy_tcm",
+      "fromNode": "yy",
+      "toNode": "tcm",
+      "label": "FUNCTIONAL"
+    },
+    {
+      "id": "e_rules_root",
+      "fromNode": "rule1",
+      "toNode": "root",
+      "label": "关系判定"
+    },
+    {
+      "id": "e_rule2_root",
+      "fromNode": "rule2",
+      "toNode": "root",
+      "label": "防误读"
+    },
+    {
+      "id": "e_summary_wx",
+      "fromNode": "summary",
+      "toNode": "wuxing",
+      "label": "中层定位"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {
+      "type": "wuxing-traditional-theory-network",
+      "status": "R5-DONE",
+      "date": "2026-10-07"
+    }
+  }
+}

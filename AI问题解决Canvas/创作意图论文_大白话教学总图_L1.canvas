@@ -1,0 +1,316 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 620,
+      "height": 360,
+      "color": "2",
+      "text": "# 创作意图论文｜大白话教学总图\n\n目标：\n**先把社会已有方法学懂，再谈十元与论文。**\n\n不背英文。\n能从真实创作问题里认出来才算学会。"
+    },
+    {
+      "id": "d1",
+      "type": "text",
+      "x": -1900,
+      "y": -500,
+      "width": 520,
+      "height": 300,
+      "color": "5",
+      "text": "# ① WHY｜创作主权\nAI 越能无限生产\n→ 我怎样仍然保持“这是我的创作”"
+    },
+    {
+      "id": "d2",
+      "type": "text",
+      "x": -1250,
+      "y": -500,
+      "width": 520,
+      "height": 300,
+      "color": "4",
+      "text": "# ② JUDGE｜审美决定\n技术/约束/意图都对\n→ 为什么我仍然可以 REJECT"
+    },
+    {
+      "id": "d3",
+      "type": "text",
+      "x": -600,
+      "y": -500,
+      "width": 560,
+      "height": 320,
+      "color": "3",
+      "text": "# ③ REPRESENT｜当前深挖\n怎样把“我为什么这样创作”\n整理成 AI 能持续理解的结构"
+    },
+    {
+      "id": "social",
+      "type": "text",
+      "x": -650,
+      "y": 80,
+      "width": 650,
+      "height": 570,
+      "color": "4",
+      "text": "# 社会已经做到哪\n\nPrompt\n↓\n属性 Attribute\n↓\n标签 Tag\n↓\n节点 Node\n↓\n关系 Edge / Relation\n↓\n理由 Rationale\n↓\n动态 Intent / Transition\n↓\n跨阶段保持\n\n所以：\n**“结构化创作意图”本身不是新点。**"
+    },
+    {
+      "id": "ten",
+      "type": "text",
+      "x": 120,
+      "y": 80,
+      "width": 700,
+      "height": 570,
+      "color": "2",
+      "text": "# 十元现在到底是什么｜纠错版\n\n不是单独的关系层。\n\n第一步：\n把对象/概念映射到十元位置\nX/Z/N/ZN/NZ/XN/NX/ZX/XZ/X并Z\n\n第二步：\n主/次 + T/M/C\n三元 x/n/z 独立复核\n\n第三步：\n两个十元端点成立后\n才判断生 / 克 / 补\n\n第四步：\n动态链看这些映射与关系怎么跨阶段变化。"
+    },
+    {
+      "id": "verify",
+      "type": "text",
+      "x": 940,
+      "y": 80,
+      "width": 700,
+      "height": 570,
+      "color": "1",
+      "text": "# 最后怎么验证｜纠错版\n\nB3｜普通动态意图表示\nVS\nB4｜完整十元模型\n\nB4 =\n对象→十元映射\n→三元复核\n→端点冻结\n→生克补启动\n→动态链\n\n最后再预测：\nACCEPT / REWORK / REJECT\n\n**验证的是整套映射+关系模型，不是三种关系词。**"
+    },
+    {
+      "id": "teachroot",
+      "type": "text",
+      "x": 0,
+      "y": 800,
+      "width": 620,
+      "height": 360,
+      "color": "5",
+      "text": "# 名词教学流程｜275 专项\n\n懂 → 物 → 己 → 社会 → 十元 → 论文相关性 → 忆 → 用\n\n每个名词最后分：\nP0 核心 / P1 实验 / P2 背景 / P3 放掉"
+    },
+    {
+      "id": "s1",
+      "type": "text",
+      "x": -1600,
+      "y": 1300,
+      "width": 500,
+      "height": 400,
+      "color": "5",
+      "text": "# 1｜懂 + 物\n\n先一句大白话\n再变成看得见的东西\n\nNode = 一张意思卡\nEdge = 两张卡之间的线\nConstraint = 一个不能动的红锁"
+    },
+    {
+      "id": "s2",
+      "type": "text",
+      "x": -980,
+      "y": 1300,
+      "width": 500,
+      "height": 400,
+      "color": "4",
+      "text": "# 2｜己\n\n必须进你的真实项目：\n黎黎隆 / 方志敏\n角色 / 场景 / H3\nPASS / REWORK / REJECT\n\n不能举自己的例子 = 还没学会"
+    },
+    {
+      "id": "s3",
+      "type": "text",
+      "x": -360,
+      "y": 1300,
+      "width": 500,
+      "height": 400,
+      "color": "4",
+      "text": "# 3｜社会\n\n问：\n**别人遇到了什么问题，才需要这个概念？**\n\n不是只查英文定义。"
+    },
+    {
+      "id": "s4",
+      "type": "text",
+      "x": 260,
+      "y": 1300,
+      "width": 500,
+      "height": 400,
+      "color": "2",
+      "text": "# 4｜十元\n\n理解社会概念后再比：\nT0 不同\nT1 同类\nT2 十元细化\nT3 可能新增\nT4 社会更成熟\n\n禁止硬映射。"
+    },
+    {
+      "id": "s5",
+      "type": "text",
+      "x": 880,
+      "y": 1300,
+      "width": 500,
+      "height": 400,
+      "color": "3",
+      "text": "# 5｜论文相关性\n\nP0｜论文核心\nP1｜实验必须\nP2｜背景理解\nP3｜当前放掉\n\n防止每学一个词就把论文扩大。"
+    },
+    {
+      "id": "s6",
+      "type": "text",
+      "x": 1500,
+      "y": 1300,
+      "width": 500,
+      "height": 400,
+      "color": "1",
+      "text": "# 6｜忆 + 用\n\n关闭答案主动回忆\n↓\n给陌生案例重新识别\n↓\nKNOWN → RECOGNIZE → APPLY → TRANSFER\n\n能迁移才算学会。"
+    },
+    {
+      "id": "course",
+      "type": "text",
+      "x": -900,
+      "y": 1900,
+      "width": 760,
+      "height": 600,
+      "color": "3",
+      "text": "# 7课顺序\n\n1 Node / Edge / Relation Type\n2 Constraint / Priority\n3 State / Transition / Dynamic Intent\n4 Relation Transition\n5 Baseline / Blind Test / Holdout\n6 十元映射：生克补 / 主次 / T/M/E/C\n7 拼成你的5000字论文\n\n**下一步从第1课开始。**"
+    },
+    {
+      "id": "terms",
+      "type": "text",
+      "x": 0,
+      "y": 1900,
+      "width": 760,
+      "height": 600,
+      "color": "4",
+      "text": "# 第一批必须会的词\n\nP0：\nNode / Edge / Relation Type\nConstraint / Priority / Rationale\nState / Transition / Dynamic Intent\nBaseline / Blind Test\n\nP1：\nDirection / Weight / Holdout\n\nP2：\nMacro-F1 等统计细节\n\n暂时不学整套图论/因果图数学。"
+    },
+    {
+      "id": "file",
+      "type": "file",
+      "file": "AI问题解决Canvas/创作意图论文_社会名词大白话教学路线.md",
+      "x": 900,
+      "y": 1940,
+      "width": 650,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "lesson1",
+      "type": "file",
+      "file": "AI问题解决Canvas/275_我要学习的知识/论文方向3专项/01_Node_Edge_RelationType.md",
+      "x": 1780,
+      "y": 1940,
+      "width": 650,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "mapping_model_note",
+      "type": "text",
+      "x": 1780,
+      "y": 260,
+      "width": 700,
+      "height": 520,
+      "color": "1",
+      "text": "# 最重要的学习纠错\n\n先学会：\n**什么是“映射模型”**\n\n十元先回答：\n“这个对象/概念在十元空间里落到哪里？”\n\n映射完成之后才问：\n“这些已成立十元之间发生什么关系？”\n\n所以教学顺序也要改成：\n映射 → 端点 → 关系 → 动态链。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "d1",
+      "toNode": "d2",
+      "label": "WHY→JUDGE"
+    },
+    {
+      "id": "e2",
+      "fromNode": "d2",
+      "toNode": "d3",
+      "label": "JUDGE→REPRESENT"
+    },
+    {
+      "id": "e3",
+      "fromNode": "d3",
+      "toNode": "root",
+      "label": "当前学习"
+    },
+    {
+      "id": "e4",
+      "fromNode": "social",
+      "toNode": "ten",
+      "label": "社会基线→十元位置"
+    },
+    {
+      "id": "e5",
+      "fromNode": "ten",
+      "toNode": "verify",
+      "label": "公平验证"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "toNode": "social",
+      "label": "先看社会已有"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "toNode": "teachroot",
+      "label": "看不懂→教学"
+    },
+    {
+      "id": "e8",
+      "fromNode": "teachroot",
+      "toNode": "s1",
+      "label": "STEP1"
+    },
+    {
+      "id": "e9",
+      "fromNode": "s1",
+      "toNode": "s2",
+      "label": "STEP2"
+    },
+    {
+      "id": "e10",
+      "fromNode": "s2",
+      "toNode": "s3",
+      "label": "STEP3"
+    },
+    {
+      "id": "e11",
+      "fromNode": "s3",
+      "toNode": "s4",
+      "label": "STEP4"
+    },
+    {
+      "id": "e12",
+      "fromNode": "s4",
+      "toNode": "s5",
+      "label": "STEP5"
+    },
+    {
+      "id": "e13",
+      "fromNode": "s5",
+      "toNode": "s6",
+      "label": "STEP6"
+    },
+    {
+      "id": "e14",
+      "fromNode": "s6",
+      "toNode": "course",
+      "label": "课程顺序"
+    },
+    {
+      "id": "e15",
+      "fromNode": "course",
+      "toNode": "terms",
+      "label": "第一批词"
+    },
+    {
+      "id": "e16",
+      "fromNode": "terms",
+      "toNode": "file",
+      "label": "教学正本"
+    },
+    {
+      "id": "lesson1edge",
+      "fromNode": "course",
+      "toNode": "lesson1",
+      "label": "第1课"
+    },
+    {
+      "id": "mapping_model_edge",
+      "fromNode": "ten",
+      "toNode": "mapping_model_note",
+      "label": "先学映射模型"
+    }
+  ],
+  "metadata": {
+    "version": "1.2",
+    "frontmatter": {
+      "type": "paper-social-terms-learning",
+      "parent_course": "674-275",
+      "paper_direction": "creative-intent-structure",
+      "status": "teaching-route-ready",
+      "next_lesson": "Node / Edge / Relation Type",
+      "lesson1": "ready",
+      "mapping_model_correction": "frozen"
+    }
+  }
+}

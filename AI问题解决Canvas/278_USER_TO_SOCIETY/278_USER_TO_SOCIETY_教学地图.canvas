@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 560,
+      "height": 360,
+      "color": "1",
+      "text": "# 674-278｜我 → 社会｜社会价值教学地图\n\n**论文方向仍在推进：TOPIC NOT FROZEN**\n\n这张图不负责现在选题。\n只负责分清：\n① 社会已经知道什么\n② 我现在做到哪里\n③ 哪些地方可能继续变成我的贡献\n\n规则：社会已有 ≠ 我的原创；项目内有效 ≠ 社会贡献。"
+    },
+    {
+      "id": "c120",
+      "type": "text",
+      "x": 720,
+      "y": -620,
+      "width": 520,
+      "height": 420,
+      "color": "4",
+      "text": "# 120｜多约束控制 × 非目标保持\n\n**人话：只改我叫你改的，别顺手把别的改坏。**\n\n社会已有：图像编辑已经研究 modification vs preservation。\n\n我的位置：从单图推进到动画项目级——脸/服装/比例/场景/画风/世界规则同时存在，只允许局部变量变化。\n\n✅ 当前很值得推进\n✅ 可直接接 118\n⚠️ 仍是候选贡献，不等于已证明原创"
+    },
+    {
+      "id": "c122",
+      "type": "text",
+      "x": 720,
+      "y": -80,
+      "width": 520,
+      "height": 540,
+      "color": "5",
+      "text": "# 122｜真实评价｜ACCEPT / REWORK / REJECT\n\n**REJECT = 这次结果/方向不继续用了。**\n不是“画得一定很烂”。\n\nACCEPT：直接继续生产\nREWORK：方向保留，改后继续\nREJECT：弃用 / 重开 / 停止这条方向\n\n核心：**好不好看 ≠ 我要不要它。**\n\n★ 和方志敏十元高度相关：\n十元可描述“为什么我要/不要”；122负责检验它能不能预测真实选择。\n\n候选实验：只看画质 vs 加入十元创作意图，谁更能预测最终选择？"
+    },
+    {
+      "id": "c123",
+      "type": "text",
+      "x": 720,
+      "y": 580,
+      "width": 520,
+      "height": 500,
+      "color": "3",
+      "text": "# 123｜长流程 Agent 可靠生产\n\n**人话：AI每一步都会，不代表它能连续干几十/几百步不出事。**\n\n社会在研究：长任务的状态漂移、失败恢复、效率、工具链可靠性。\n\n我的位置：⚠️ 现在还没真正跑出一条可验证的 Agent 动画长流程。\n\n我有的是：复杂真实创作流程 + 大量失败问题 + 资产/审核/返工/本地GPU链。\n\n潜在价值：把 long-horizon Agent 从 coding/web 推到原创动画生产。\n\n当前：HIGH POTENTIAL / NOT YET RUN"
+    },
+    {
+      "id": "c121",
+      "type": "text",
+      "x": -720,
+      "y": 580,
+      "width": 520,
+      "height": 500,
+      "color": "6",
+      "text": "# 121｜人机动态自主权\n\n**人话：什么时候 AI 自己做，什么时候必须来问我？**\n\n重要：这不是我的原创。\nHuman-AI agency / mixed initiative / 动态分权，本来就是社会已有研究。\n\n我现在主要是在学社会知识，再翻译到动画工作流。\n\n我的四因子：\nconfidence / 可逆性 / 审美负载 / 错误影响面\n→ AUTO / CHECKPOINT / USER REVIEW / BLOCK\n\n只有以后证明它比“全问人/全自动”更好，才可能成为新增价值。\n\n当前：SOCIAL_KNOWN + USER_TRANSLATION"
+    },
+    {
+      "id": "c118",
+      "type": "text",
+      "x": -720,
+      "y": -620,
+      "width": 520,
+      "height": 450,
+      "color": "4",
+      "text": "# 118｜个人画风 → 项目级层级视觉规范\n\n**人话：我脑子里知道“像不像我的画风”，怎么教 AI 稳定复现？**\n\n个人创作样本\n→ 提取视觉规律\n→ 项目/角色/场景层级规范\n→ AIGC执行\n→ 对照验证\n\n社会已有：一致性、身份保持、可控生成。\n\n我的推进：把“隐性个人风格判断”编译成可执行项目规范，而不是一句 style prompt。\n\n✅ 素材基础强\n✅ 适合本科5000字\n✅ 可和120合并\n⚠️ 论文题目还没冻结"
+    },
+    {
+      "id": "c119",
+      "type": "text",
+      "x": -720,
+      "y": -80,
+      "width": 520,
+      "height": 540,
+      "color": "2",
+      "text": "# 119｜创作意图关系化｜十元 × 动态链\n\n**人话：创作意图不是一堆形容词，而是谁压谁、谁生成谁、什么时候转向。**\n\n十元在这里不是“答案”，而是候选关系语法：\n主/次 + 生克补 + 强度 + 起点→变化→终点。\n\n★ 方志敏可以当真实案例：\n十元/动态链不是只解释作品，而可以事前指导监狱、日常温度、战友情、插叙等关系怎样落到镜头与选择。\n\n更强验证：先记录十元意图 → 隐藏最终选择 → 预测 ACCEPT/REWORK/REJECT → 揭盲。\n\n当前：原创潜力高，但禁止事后解释冒充验证。"
+    },
+    {
+      "id": "bridgeA",
+      "type": "text",
+      "x": 0,
+      "y": -520,
+      "width": 560,
+      "height": 260,
+      "color": "3",
+      "text": "# 组合候选 A｜118 + 120\n\n**个人视觉规律 → 层级规范 → 多约束稳定执行**\n\n目前最稳、最容易做成本科 5000 字的小闭环。\n\n但：只是候选方向，不冻结。"
+    },
+    {
+      "id": "bridgeB",
+      "type": "text",
+      "x": 0,
+      "y": 500,
+      "width": 600,
+      "height": 420,
+      "color": "5",
+      "text": "# 重点候选 B｜结构化创作意图 → 真实选择\n\n**核心命题：结构化创作意图对真实创作决策具有预测价值。**\n\n118｜把隐性风格/审美结构化\n→ 119｜关系 / 优先级 / 理由 / 动态轨迹\n→ 120｜冲突处理 + 非目标保持\n→ 122｜预测 ACCEPT / REWORK / REJECT\n\n方法门：112｜外部实证 / 盲标 / failure family\n\n内部开发：〈方志敏〉\n外部硬门：第二创作者 + 对方自己的项目\n\n状态：重点候选 / NOT FROZEN"
+    },
+    {
+      "id": "bridgeC",
+      "type": "text",
+      "x": 0,
+      "y": 900,
+      "width": 560,
+      "height": 280,
+      "color": "6",
+      "text": "# 未来候选 C｜121 + 123\n\n**动态自主权 → 长流程创意 Agent**\n\n121主要是学社会已有知识；123目前还没真实跑。\n\n未来只有在动画长流程里做出对照 / 恢复 / 人工介入数据后，才可能形成你的贡献。"
+    },
+    {
+      "id": "chain",
+      "type": "text",
+      "x": 0,
+      "y": 1290,
+      "width": 720,
+      "height": 380,
+      "color": "2",
+      "text": "# 六个中心其实是一条生产链\n\n119｜我到底想要什么关系？\n↓\n118｜把隐性创作规律写成规范\n↓\n120｜执行时只改该改的\n↓\n122｜判断接受 / 返工 / 否决\n↓\n121｜决定 AI 自动做还是交给人\n↓\n123｜串成可靠的长流程\n\n**这不是六篇论文。它更像你的 AI 动画创作系统逐渐长出来的六层。**"
+    },
+    {
+      "id": "teaching",
+      "type": "file",
+      "file": "AI问题解决Canvas/278_USER_TO_SOCIETY/278_R2_社会价值分中心_教学版.md",
+      "x": -380,
+      "y": 1740,
+      "width": 760,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "paper_candidates",
+      "type": "file",
+      "file": "AI问题解决Canvas/论文候选方向_L1.canvas",
+      "x": 520,
+      "y": 1740,
+      "width": 620,
+      "height": 220,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_root_118",
+      "fromNode": "root",
+      "toNode": "c118",
+      "label": "风格规范"
+    },
+    {
+      "id": "e_root_119",
+      "fromNode": "root",
+      "toNode": "c119",
+      "label": "创作意图"
+    },
+    {
+      "id": "e_root_120",
+      "fromNode": "root",
+      "toNode": "c120",
+      "label": "控制"
+    },
+    {
+      "id": "e_root_122",
+      "fromNode": "root",
+      "toNode": "c122",
+      "label": "评价"
+    },
+    {
+      "id": "e_root_121",
+      "fromNode": "root",
+      "toNode": "c121",
+      "label": "协作"
+    },
+    {
+      "id": "e_root_123",
+      "fromNode": "root",
+      "toNode": "c123",
+      "label": "长流程"
+    },
+    {
+      "id": "e_118_A",
+      "fromNode": "c118",
+      "toNode": "bridgeA",
+      "label": "组合"
+    },
+    {
+      "id": "e_120_A",
+      "fromNode": "c120",
+      "toNode": "bridgeA",
+      "label": "组合"
+    },
+    {
+      "id": "e_119_B",
+      "fromNode": "c119",
+      "toNode": "bridgeB",
+      "label": "组合"
+    },
+    {
+      "id": "e_122_B",
+      "fromNode": "c122",
+      "toNode": "bridgeB",
+      "label": "组合"
+    },
+    {
+      "id": "e_121_C",
+      "fromNode": "c121",
+      "toNode": "bridgeC",
+      "label": "辅助/未来"
+    },
+    {
+      "id": "e_123_C",
+      "fromNode": "c123",
+      "toNode": "bridgeC",
+      "label": "未来验证"
+    },
+    {
+      "id": "e_B_chain",
+      "fromNode": "bridgeB",
+      "toNode": "chain",
+      "label": "重点候选"
+    },
+    {
+      "id": "e_A_chain",
+      "fromNode": "bridgeA",
+      "toNode": "chain",
+      "label": "进入总链"
+    },
+    {
+      "id": "e_C_chain",
+      "fromNode": "bridgeC",
+      "toNode": "chain",
+      "label": "进入总链"
+    },
+    {
+      "id": "e_chain_teach",
+      "fromNode": "chain",
+      "toNode": "teaching",
+      "label": "详细教学"
+    },
+    {
+      "id": "e_chain_candidates",
+      "fromNode": "chain",
+      "toNode": "paper_candidates",
+      "label": "登记论文候选"
+    }
+  ],
+  "metadata": {
+    "version": "1.2",
+    "frontmatter": {
+      "type": "user-to-society-teaching-map",
+      "status": "direction-exploration",
+      "topic_frozen": false,
+      "date": "2026-10-07",
+      "linear": "674-278"
+    }
+  }
+}

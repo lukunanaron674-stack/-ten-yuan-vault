@@ -1,0 +1,287 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 650,
+      "height": 430,
+      "color": "1",
+      "text": "# R6.1｜现代概念是什么？｜已被 R6.2 核心纠偏\n\n⚠️ 原“把十元端点分别认定为 class/state/operator/role”的拆分式方向不再继续。\n\n现行核心：\n**十元是连续映射理论。**\n\n三元压缩 → 三元组合 → 五行十位映射 → 五行深层关系映射 → 跨领域名字切换 / 结构保持。\n\n详见 R6.2。"
+    },
+    {
+      "id": "philosophy",
+      "type": "text",
+      "x": -1100,
+      "y": -620,
+      "width": 560,
+      "height": 300,
+      "color": "2",
+      "text": "# 哲学层｜解释“世界怎么看”\n\nProcess Philosophy｜过程哲学\nRelational Ontology｜关系本体论\nStructural Realism｜结构实在论\n\n特点：抽象很高。\n不等于更可计算。"
+    },
+    {
+      "id": "process",
+      "type": "text",
+      "x": -1100,
+      "y": -220,
+      "width": 520,
+      "height": 320,
+      "color": "2",
+      "text": "# Process Philosophy\n\n世界首先是：\n**发生 / 生成 / 过程**\n而不是固定物。\n\n五行：强哲学亲缘\n十元：动态链明显 process-oriented\n\n用途：理论姿态\n优先级：P1参照"
+    },
+    {
+      "id": "ontology",
+      "type": "text",
+      "x": -1100,
+      "y": 200,
+      "width": 520,
+      "height": 360,
+      "color": "6",
+      "text": "# Relational Ontology / Structural Realism\n\n关注：\n关系/结构是否比对象更根本？\n科学真正保留下来的是否是结构？\n\n和十元：有启发，但不是直接工具。\n\n用途：哲学提醒\n优先级：P3"
+    },
+    {
+      "id": "representation",
+      "type": "text",
+      "x": -370,
+      "y": -620,
+      "width": 620,
+      "height": 300,
+      "color": "3",
+      "text": "# 表示层｜解释“怎么写清楚”\n\nRelations\nSigned Directed Graph\nNetwork Theory\nKnowledge Representation\n\n**这是十元目前最重要的现代邻域。**"
+    },
+    {
+      "id": "relation",
+      "type": "text",
+      "x": -370,
+      "y": -220,
+      "width": 560,
+      "height": 320,
+      "color": "3",
+      "text": "# Relations + Directed Graph\n\nsource → target\nA→B ≠ B→A\nedge type / sign / direction\n\n五行：生克可直接表示\n十元：生克补 + 主次 + 强度\n\n用途：核心底座\n优先级：P0"
+    },
+    {
+      "id": "kr",
+      "type": "text",
+      "x": -370,
+      "y": 200,
+      "width": 560,
+      "height": 400,
+      "color": "5",
+      "text": "# Knowledge Representation\n\nclass / instance / relation / state / event / rule\n\n十元现在正在做：\n自然语言\n→ actor/object\n→ changed_variable\n→ relation\n→ ten-yuan\n→ dynamic trace\n\n用途：AI解释器/编译器\n**优先级：P0最高**"
+    },
+    {
+      "id": "system",
+      "type": "text",
+      "x": 390,
+      "y": -620,
+      "width": 600,
+      "height": 300,
+      "color": "4",
+      "text": "# 系统层｜解释“多个东西怎么互相影响”\n\nSystems Thinking\nFeedback / Regulation\n\n不是严格数学模型，但比单纯关系图更关注回路与二阶效果。"
+    },
+    {
+      "id": "systems",
+      "type": "text",
+      "x": 390,
+      "y": -220,
+      "width": 550,
+      "height": 320,
+      "color": "4",
+      "text": "# Systems Thinking\n\n整体 / 相互依赖 / 回路 / 延迟 / 二阶后果\n\n五行：有关系系统倾向\n十元：关系2可由关系1的结果触发\n\n用途：复杂动态链设计\n优先级：P1"
+    },
+    {
+      "id": "feedback",
+      "type": "text",
+      "x": 390,
+      "y": 200,
+      "width": 550,
+      "height": 360,
+      "color": "4",
+      "text": "# Feedback\n\n不是 A→B→C。\n必须有结果**回流**，改变前端或输入。\n\n十元用途：\n检查所谓“反馈链”是否真的回流。\n\ncycle ≠ feedback\n优先级：P1"
+    },
+    {
+      "id": "formal",
+      "type": "text",
+      "x": 1120,
+      "y": -620,
+      "width": 600,
+      "height": 300,
+      "color": "6",
+      "text": "# 动态模型层｜解释“下一状态怎么出来”\n\nSystem Dynamics\nDynamical Systems\n\n形式化/可计算程度高。\n但不是天然比五行“思想更高级”。"
+    },
+    {
+      "id": "sd",
+      "type": "text",
+      "x": 1120,
+      "y": -220,
+      "width": 560,
+      "height": 350,
+      "color": "6",
+      "text": "# System Dynamics\n\nstock / flow / accumulation / feedback / delay\n\n五行：只有部分定性相似\n十元：目前也缺 stock-flow 语义\n\n用途：未来长期积累/延迟问题\n优先级：P2"
+    },
+    {
+      "id": "dyn",
+      "type": "text",
+      "x": 1120,
+      "y": 220,
+      "width": 560,
+      "height": 380,
+      "color": "6",
+      "text": "# Dynamical Systems\n\n最小：\nstate space + time + evolution rule\n\nS(t) → S(t+1)\n\n十元已有阶段/变化，但没有统一转移函数。\n\n定位：F3，向F4探索\n优先级：P2"
+    },
+    {
+      "id": "ladder",
+      "type": "text",
+      "x": -300,
+      "y": 780,
+      "width": 740,
+      "height": 650,
+      "color": "1",
+      "text": "# F0–F5｜十元当前位置\n\nF0 传统描述｜五行\n↓\nF1 关系模式\n↓\nF2 Typed/Signed Directed Graph\n↓\n**F3 Qualitative System Model ← 十元当前主位置**\nstate / strength / context / stage / changed_variable / trajectory\n↓\nF4 Formal Dynamical Model\nstate space / transition / time / parameters\n↓\nF5 Empirical Model\nprediction / holdout / external validation\n\n十元：F3 strong / F4 candidate / F5 NOT YET"
+    },
+    {
+      "id": "identity",
+      "type": "text",
+      "x": 600,
+      "y": 780,
+      "width": 720,
+      "height": 650,
+      "color": "5",
+      "text": "# 十元现代身份｜下一步先冻结\n\n十元端点\n→ typed relational operation / role\n\n五轴\n→ paired variable axis\n\n生/克/补\n→ relation / operator type\n\n方向\n→ directed edge\n\n关系强度\n→ edge effect magnitude\n\n动态链\n→ time-ordered relational trajectory\n\nchanged_variable\n→ state variable delta\n\nresidue\n→ retained effect/state\n\nnext_affordance\n→ enabled next transition\n\n⚠️ 体量到底是 state salience 还是别的，还需专门冻结。"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 1500,
+      "y": 780,
+      "width": 700,
+      "height": 640,
+      "color": "1",
+      "text": "# 现在最该做什么\n\n**NEXT-1｜十元现代形式身份表**\n先把 node/state/operator/edge/weight/trajectory 等身份锁清楚。\n\n**NEXT-2｜停止继续堆哲学名词**\nProcess / Structural Realism 暂时够用。\n\n**NEXT-3｜进入真正验证**\nNL vs STRUCT vs TEN\n+ 第二创作者\n+ 先预测后揭盲\n\n原因：\n哪怕形式化到 F4，如果 TEN 不比 STRUCT 更有用，继续复杂化也没有意义。"
+    },
+    {
+      "id": "answer",
+      "type": "text",
+      "x": 1500,
+      "y": -160,
+      "width": 700,
+      "height": 560,
+      "color": "1",
+      "text": "# 回答“谁更高级？”\n\n不是直线等级。\n\n五行：\n文化/哲学/关系祖型强\n\n现代图/知识表示：\n表达精确度高\n\n系统动力学/动态系统：\n形式化和计算能力高\n\n十元：\n正在把**传统关系祖型 → 现代关系编码 → AI创作意图工具**连接起来。\n\n它当前的价值不在“比谁高级”，而在能否形成可验证的中层模型。"
+    },
+    {
+      "id": "r62",
+      "type": "file",
+      "file": "AI问题解决Canvas/五行十元研究/R6.2_十元映射理论核心纠偏.canvas",
+      "x": 2300,
+      "y": -200,
+      "width": 650,
+      "height": 220,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "philosophy",
+      "label": "抽象世界观"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "toNode": "representation",
+      "label": "精确表示"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "toNode": "system",
+      "label": "整体作用"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "toNode": "formal",
+      "label": "状态演化"
+    },
+    {
+      "id": "e5",
+      "fromNode": "process",
+      "toNode": "relation",
+      "label": "过程被写成关系"
+    },
+    {
+      "id": "e6",
+      "fromNode": "relation",
+      "toNode": "kr",
+      "label": "机器可读"
+    },
+    {
+      "id": "e7",
+      "fromNode": "relation",
+      "toNode": "systems",
+      "label": "多关系系统"
+    },
+    {
+      "id": "e8",
+      "fromNode": "systems",
+      "toNode": "feedback",
+      "label": "检查回流"
+    },
+    {
+      "id": "e9",
+      "fromNode": "feedback",
+      "toNode": "sd",
+      "label": "进一步形式化"
+    },
+    {
+      "id": "e10",
+      "fromNode": "sd",
+      "toNode": "dyn",
+      "label": "状态/演化规则"
+    },
+    {
+      "id": "e11",
+      "fromNode": "kr",
+      "toNode": "identity",
+      "label": "十元现代翻译"
+    },
+    {
+      "id": "e12",
+      "fromNode": "dyn",
+      "toNode": "ladder",
+      "label": "定位阶梯"
+    },
+    {
+      "id": "e13",
+      "fromNode": "ladder",
+      "toNode": "next",
+      "label": "当前决策"
+    },
+    {
+      "id": "e14",
+      "fromNode": "answer",
+      "toNode": "next",
+      "label": "不追求虚假高级"
+    },
+    {
+      "id": "e_r62",
+      "fromNode": "root",
+      "toNode": "r62",
+      "label": "核心纠偏｜以此为准"
+    }
+  ],
+  "metadata": {
+    "version": "1.1",
+    "frontmatter": {
+      "type": "modern-concepts-tenyuan-position",
+      "status": "DONE",
+      "parent": "674-284/R6",
+      "date": "2026-10-07",
+      "superseded_direction": "standalone-endpoint-identity",
+      "current_core": "hierarchical-mapping-theory"
+    }
+  }
+}

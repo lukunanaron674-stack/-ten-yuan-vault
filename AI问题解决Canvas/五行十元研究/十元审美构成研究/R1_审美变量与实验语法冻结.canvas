@@ -1,0 +1,213 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 470,
+      "color": "1",
+      "text": "# 十元审美构成｜R1 DONE\n\n审美实验语法已冻结。\n\n三层证据严格分开：\nA 技术有效\nB 结构有效\nC 审美反应\n\n**结构对 ≠ 一定美；觉得美 ≠ 结构一定对。**"
+    },
+    {
+      "id": "core",
+      "type": "text",
+      "x": -1100,
+      "y": -650,
+      "width": 640,
+      "height": 600,
+      "color": "2",
+      "text": "# CORE｜所有试次 6 指标\n\nU｜Unity 统一感\n元素是否像同一整体\n\nF｜Fit 匹配感\n搭配是否适合主体\n\nC｜Charm 魅力\n有没有独特吸引力/味道\n\nI｜Interest 有趣度\n是否值得继续观察\n\nP｜Preference 个人偏好\n我个人喜不喜欢\n\nB｜Beauty 总体美感\n整体是否好看\n\n统一用 1–7 分。"
+    },
+    {
+      "id": "modules",
+      "type": "text",
+      "x": -1100,
+      "y": 100,
+      "width": 640,
+      "height": 500,
+      "color": "3",
+      "text": "# 模块指标\n\nA2 关系构成：\nT｜Tension 张力\nK｜Completeness 完整感\n\nA3 动态链：\nCL｜Closure 收束感\nW｜Want-to-Continue 继续观看欲\n\nCoherence 暂不单列，避免与 Unity/Fit 短刺激重叠。"
+    },
+    {
+      "id": "conditions",
+      "type": "text",
+      "x": -300,
+      "y": -650,
+      "width": 700,
+      "height": 650,
+      "color": "5",
+      "text": "# 六类实验条件\n\n1 SAME｜同轴同端\n2 OPPOSITE｜同轴反端\n3 GENERATE｜生\n4 OVERCOME｜克\n5 COMPLEMENT｜补/补张\n6 RANDOM｜结构错配负控\n\n⚠️ OPPOSITE ≠ 自动补\n⚠️ 克 ≠ 看起来冲突\n⚠️ 生 ≠ 看起来顺\n\n全部以五轴/正式关系机制预先冻结。"
+    },
+    {
+      "id": "phases",
+      "type": "text",
+      "x": -300,
+      "y": 150,
+      "width": 700,
+      "height": 520,
+      "color": "4",
+      "text": "# 不要一开始六条件全塞\n\nPhase A｜SAME vs RANDOM\n先测实验是否有信号\n\nPhase B｜SAME vs OPPOSITE vs RANDOM\n测轴内同端/反端\n\nPhase C｜生 vs 克 vs 补\n分别做关系实验\n\nPhase D｜Full Matrix\n前面稳定后才做六条件整表"
+    },
+    {
+      "id": "blind",
+      "type": "text",
+      "x": 570,
+      "y": -650,
+      "width": 680,
+      "height": 640,
+      "color": "1",
+      "text": "# 盲审顺序\n\n1｜自由描述\n“第一眼什么感觉？为什么？”\n\n2｜证据指认\n“哪个具体地方最影响判断？”\n\n3｜量表\nU/F/C/I/P/B\n按模块加 T/K/CL/W\n\n4｜替代读法\n“还有完全不同的解释吗？”\n\n5｜confidence 1–5\n\n观众永远不看十元、五行、关系条件和作者预期。"
+    },
+    {
+      "id": "controls",
+      "type": "text",
+      "x": 570,
+      "y": 150,
+      "width": 680,
+      "height": 520,
+      "color": "6",
+      "text": "# 三个关键控制\n\nCTRL-1 Surface Lure\n表面很像，但结构不匹配\n\nCTRL-2 Surface-Different Match\n表面很不同，但结构匹配\n\nCTRL-3 Hidden Duplicate\n隐藏重复，检查同一评价者稳定性\n\n再加：匿名条件、随机顺序、A/B位置随机。"
+    },
+    {
+      "id": "stimulus",
+      "type": "text",
+      "x": 1420,
+      "y": -650,
+      "width": 680,
+      "height": 600,
+      "color": "4",
+      "text": "# 刺激语法\n\n每组必须：\nBASE + VARIABLE_ELEMENT\n\n一次只改一个主要跨领域关系变量。\n\n尽量固定：\n角色身份/场景/事件/画风/清晰度/时长/景别/动作/音量/信息量/模型参数\n\n技术 FAIL：\n不进入审美因果解释，但保留 production failure。"
+    },
+    {
+      "id": "schema",
+      "type": "text",
+      "x": 1420,
+      "y": 90,
+      "width": 680,
+      "height": 560,
+      "color": "3",
+      "text": "# 结构字段（研究侧隐藏）\n\nbase_axis\nbase_pole\nvariable_axis\nvariable_pole\ncondition\naxis_core_variable\nrelation_mechanism\nchanged_variable\ndirection\nstructural_evidence\ncompeting_interpretation\n\n观众侧只看匿名刺激 A/B/C..."
+    },
+    {
+      "id": "prediction",
+      "type": "text",
+      "x": 2260,
+      "y": -650,
+      "width": 700,
+      "height": 590,
+      "color": "5",
+      "text": "# 预测矩阵｜只是 HYPOTHESIS\n\nSAME → 可能 ↑ Unity/Fit\nOPPOSITE → 可能 ↑ Tension / ↓ Unity\n生 → 可能 ↑ Fit/流动感/Charm\n克 → 可能 ↑ Tension/Interest\n补 → 可能 ↑ Completeness/Fit/Charm\nRANDOM → 预计 ↓ Fit/Unity\n\n必须允许所有预测失败，甚至 RANDOM 最受欢迎。"
+    },
+    {
+      "id": "bend",
+      "type": "text",
+      "x": 2260,
+      "y": 80,
+      "width": 700,
+      "height": 540,
+      "color": "2",
+      "text": "# 直接复用黎黎隆 B端\n\n继续用：\nviewer_impression_hypothesis\nblind_viewer_feedback\nexpected_impression\nobserved_feedback\ntechnical_validation\ninterpretation\n\n新增：\naesthetic_response_ratings\naesthetic_condition_hidden\n\n**不创建第二套重复审核器。**"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 3090,
+      "y": -300,
+      "width": 720,
+      "height": 600,
+      "color": "1",
+      "text": "# R2 NEXT｜最小实验\n\n先不要人物×发型×音乐一起上。\n\n第一组建议：\n**固定角色 BASE × 单一视觉元素**\n\nA SAME\nB OPPOSITE\nC RANDOM\n\n先测：\nU / F / C / I / P / B / T\n\n如果这组都没有稳定差异，先查结构和刺激，不急着加音乐/动态链。\n\n第二组再做：角色 × 配乐。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "core",
+      "label": "审美变量"
+    },
+    {
+      "id": "e2",
+      "fromNode": "core",
+      "toNode": "modules",
+      "label": "按研究模块追加"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "toNode": "conditions",
+      "label": "实验条件"
+    },
+    {
+      "id": "e4",
+      "fromNode": "conditions",
+      "toNode": "phases",
+      "label": "分阶段"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "toNode": "blind",
+      "label": "观众层"
+    },
+    {
+      "id": "e6",
+      "fromNode": "blind",
+      "toNode": "controls",
+      "label": "防偏差"
+    },
+    {
+      "id": "e7",
+      "fromNode": "conditions",
+      "toNode": "stimulus",
+      "label": "操纵结构"
+    },
+    {
+      "id": "e8",
+      "fromNode": "stimulus",
+      "toNode": "schema",
+      "label": "预先冻结"
+    },
+    {
+      "id": "e9",
+      "fromNode": "conditions",
+      "toNode": "prediction",
+      "label": "只做假设"
+    },
+    {
+      "id": "e10",
+      "fromNode": "blind",
+      "toNode": "bend",
+      "label": "复用现有盲审"
+    },
+    {
+      "id": "e11",
+      "fromNode": "phases",
+      "toNode": "next",
+      "label": "进入R2"
+    },
+    {
+      "id": "e12",
+      "fromNode": "controls",
+      "toNode": "next",
+      "label": "最小A/B/C"
+    },
+    {
+      "id": "e13",
+      "fromNode": "bend",
+      "toNode": "next",
+      "label": "生产接口"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {
+      "type": "tenyuan-aesthetic-r1-experiment-grammar",
+      "status": "R1-DONE",
+      "date": "2026-10-07",
+      "next": "R2-same-opposite-random"
+    }
+  }
+}

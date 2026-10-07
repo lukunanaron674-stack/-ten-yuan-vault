@@ -1,19 +1,37 @@
 ---
 name: 现代服装视觉词库建库
-version: 0.1.0
-status: active-seed
+version: 0.2.0
+status: legacy-seed-feeling-redirect
 skill_grade: S
 failure_mode: fail-closed
 scope: 14-角色库/现代服装
 canonical_path: 14-角色库/现代服装
 canonical: true
 evidence_dependency: ../刘海98种/skills/S级_真实参考图片采集/SKILL.md
-ontology_dependencies:
+current_canon:
+  - 01-十元系统/三元十元感受模型_核心正本_v1.0_20261007.md
+legacy_ontology_dependencies:
   - 01-十元系统/05-十元语义空间/L1_is-a狭义继承关系协议_v1.0_20260803.md
   - 01-十元系统/05-十元语义空间/L1_十元配比度与本征映射准度协议_v1.1_20260803.md
 ---
 
-# S级 Skill｜现代服装视觉词库建库 v0.1
+# S级 Skill｜现代服装视觉词库建库 v0.2
+
+## R5｜迁移声明
+
+本路径保留为早期现代服装种子库。**结构资料可继续使用，旧十元本体映射不可继续作为默认分析。**
+
+新分析统一走：
+
+```text
+服装结构 + 具体人物/动作/搭配/镜头语境
+→ 人的感受
+→ 十元1–10感受谱
+→ 诱发特征
+→ 人复核
+```
+
+`is_a_narrow`、本征准度、五行父项等旧字段只用于历史兼容，不得自动写回现行感受正本。
 
 ## 定位
 
@@ -36,12 +54,13 @@ ontology_dependencies:
 
 不得直接把旧分数或 Pinterest、淘宝、AI 角色图迁入正本。
 
-## 最高层级
+## 最高层级（现行）
 
 ```text
-五行＝广义父项
-现代服装狭义结构 --is-a狭义[domain=现代服装]→ 五行
-五大主题 --is-a狭义[domain=叙事]→ 五行
+人＝感受主语
+十元＝关系性感受基元
+服装结构＝诱发感受的候选特征
+旧五行/is-a＝历史结构参考
 ```
 
 现代服装领域的五个狭义子项：

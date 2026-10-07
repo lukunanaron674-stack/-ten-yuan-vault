@@ -576,3 +576,18 @@ Canvas决定“解决什么”；小时调度决定“现在推进哪个节点�
 - 原始图片/视频默认留本地；GitHub同步结构化MD/YAML/JSON、Canvas、索引、状态、审核记录与配置。
 - 下一次 Windows 本地 Codex 可访问 vault 时，先做 Local ↔ GitHub manifest/diff，再批量补 LOCAL_ONLY / MODIFIED。
 
+
+
+## 16. USER→SOCIETY｜674-278 最终收束（2026-10-07）
+
+入口：`AI问题解决Canvas/278_USER_TO_SOCIETY/USER_TO_SOCIETY_最终总图.canvas`
+
+R1–R4 DONE。当前总候选：
+
+`C Intent/Constraint → D Agency/Escalation → E Evaluation → F Recovery/Production`
+
+冻结一句话：**将通用 Agent 可靠性、人机协作与评价方法，转译为适合独立创作者和小型创作团队的长流程 AI 视觉创作协议，使创作意图、Agent 权限、结果验收与失败恢复可以被显式管理、留证与追踪。**
+
+当前社会可迁移价值工作评分：68/100；证据 E3-（强内部、弱外部）。
+
+状态：**STOP_EXTERNAL_VALIDATION**。唯一阻塞：独立使用者 / 陌生项目 / 对照实验。出现外部复现前，不再扩理论。

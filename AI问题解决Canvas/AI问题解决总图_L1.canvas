@@ -169,6 +169,36 @@
       "width": 420,
       "height": 180,
       "color": "4"
+    },
+    {
+      "id": "USER_TO_SOCIETY",
+      "type": "file",
+      "file": "AI问题解决Canvas/278_USER_TO_SOCIETY/USER_TO_SOCIETY_最终总图.canvas",
+      "x": -1980,
+      "y": 300,
+      "width": 460,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "USER_TO_SOCIETY_STATUS",
+      "type": "text",
+      "x": -1980,
+      "y": 580,
+      "width": 460,
+      "height": 260,
+      "color": "3",
+      "text": "# USER → SOCIETY｜674-278\\n\\nR1–R4 DONE\\n总系统社会可迁移价值：68/100（当前）\\n证据：E3-｜强内部 / 弱外部\\n\\n**STOP_EXTERNAL_VALIDATION**\\n唯一阻塞：独立使用者 / 陌生项目 / 对照实验"
+    },
+    {
+      "id": "USER_SOCIETY_ROOT",
+      "type": "text",
+      "x": -2500,
+      "y": 250,
+      "width": 480,
+      "height": 320,
+      "color": "3",
+      "text": "# 我的研究 → 社会\n\n**USER → SOCIETY 独立中心**\n\n研究：我的成果能帮助谁？\n解决什么真实问题？\n哪些是社会已有？\n哪些是我的转译 / 操作化 / 候选贡献？\n\n**674-278｜独立中心，不并入六问题中心**"
     }
   ],
   "edges": [
@@ -385,6 +415,22 @@
       "fromNode": "F",
       "toNode": "F_L2",
       "label": "下钻 L2",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "eUserSocietyStatus",
+      "fromNode": "USER_TO_SOCIETY",
+      "toNode": "USER_TO_SOCIETY_STATUS",
+      "label": "STATUS",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "eUserSocietyRoot",
+      "fromNode": "USER_SOCIETY_ROOT",
+      "toNode": "USER_TO_SOCIETY",
+      "label": "USER→SOCIETY",
       "fromSide": "right",
       "toSide": "left"
     }
