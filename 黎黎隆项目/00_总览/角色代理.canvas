@@ -1,429 +1,172 @@
 {
   "nodes": [
     {
-      "id": "az_root",
-      "type": "text",
-      "x": 1000,
-      "y": 2200,
-      "width": 960,
-      "height": 220,
-      "text": "# 【角色代理｜总Z】\n角色 XN+Z 实验对象素材系统（Linear 674-282）\nZ目标｜把“角色是谁→多视图稳定→Canon成立”拆成三个独立 Z，素材→审核→XN 结晶→Base 全链可追踪\n四层分工｜Canvas=结构｜Obsidian Base=状态正本｜Linear=任务与回传｜674-154=素材身份",
-      "color": "6"
+      "id": "root",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 4700,
+      "height": 3000,
+      "color": "6",
+      "label": "角色代理｜四工单闭环"
     },
     {
-      "id": "z_l1",
+      "id": "title",
       "type": "text",
-      "x": 180,
-      "y": 2620,
-      "width": 640,
-      "height": 400,
-      "text": "# Z-ROLE-L1｜身份/视觉核心锁定\nZ目标｜确定角色是谁，锁最小身份核心与主视觉锚\nlocal XN｜脸型/五官比例/年龄感/轮廓/关键识别结构（候选→冻结）\nNX缺口｜“是不是这个人/有没有味道”无法完全形式化\n执行代理/PATH｜CODEX IMAGE 生图 + WORKER 登记索引\n素材入口｜Z1 每小时生图/已有角色/红心角色\n审核入口｜Z3 674-173：PASS/FAIL/FAVORITE/★主参考/反例\n状态/等级｜L1_REVIEWED → L1_LOCKED\nDONE｜主参考锁定 + identity_core 冻结\nHuman-in-NX｜最高（74 拥有最终权力）",
-      "color": "1"
+      "x": 1450,
+      "y": 120,
+      "width": 1800,
+      "height": 320,
+      "color": "6",
+      "text": "# 角色代理｜现在只看这一条链\n\n**124 生产 → 293 素材 → 173 审核 → 282 规则 → 回124**\n\n不再把素材、审核、规则、返工拆成一堆平行工单。"
     },
     {
-      "id": "z_l2",
+      "id": "prod",
       "type": "text",
-      "x": 880,
-      "y": 2620,
-      "width": 640,
-      "height": 400,
-      "text": "# Z-ROLE-L2｜多视图/身体结构稳定\nZ目标｜L1 锁定角色扩展为可连续生产的身体与多视图资产，不发生身份/比例/服装/特殊结构漂移\nlocal XN｜identity/proportion/costume/special structure/cross-view（冻结后机械审）\nNX缺口｜“仍不像/气质漂/年龄感错/太僵”——机器规则覆盖不了的残余\n执行代理/PATH｜生产代理(PATH) + 裁切代理(PATH)（挂本 Z 下，非一级 Z）\n素材入口｜Z2 四宫格/中景/中全景/全身 + 原图裁切派生\n审核入口｜机器按冻结 XN 预审 → 674-173 残余人工\n状态/等级｜L2_FOURGRID → L2_BODY_PASS\nDONE｜cross-view identity PASS + 比例/服装稳定\nHuman-in-NX｜中等（只处理残余）",
-      "color": "4"
+      "x": 220,
+      "y": 700,
+      "width": 900,
+      "height": 500,
+      "color": "2",
+      "text": "# 674-124｜生产端\n\n读取 282 的 FROZEN/LOCKED 规则。\n\nL1：头像默认 4×4 方框板\nL2 GOLD：单角色四宫格\nL2 SILVER：按区域批量四宫格\nFAIL/RERUN 也直接回这里。"
     },
     {
-      "id": "z_l3",
+      "id": "asset",
       "type": "text",
-      "x": 1580,
-      "y": 2620,
-      "width": 640,
-      "height": 400,
-      "text": "# Z-ROLE-L3｜Canon/世界职责成立\nZ目标｜视觉角色升级为世界观内正式角色正本\nlocal XN｜identity_core/world_role/behavior_allowed/forbidden/home_region（结构化可 AI 整理）\nNX缺口｜新 Canon 是否成立/核心气质/作者意图——必须作者裁决\n执行代理/PATH｜CHATGPT 文字正本（如 CHARACTER_H3_CARD_PACK）\n素材入口｜Z4 分流后的图像证据 + USER_NX\n审核入口｜674-173 回传 + 作者裁决（低频高权力）\n状态/等级｜L3_CANON_PASS\nDONE｜canon 冻结 + frozen_visual_constraints/unknown_regions 登记\nHuman-in-NX｜低频但高权力（作者权力保留）",
-      "color": "5"
+      "x": 1320,
+      "y": 700,
+      "width": 900,
+      "height": 500,
+      "color": "4",
+      "text": "# 674-293｜Pocket 素材正本\n\nLinear中转 → Obsidian。\n\n负责：\nMD + images + Base\nasset_id / SHA / parent_asset_id\n原始板保留、裁切、去重\nreview_manifest / 审核Canvas输入"
     },
     {
-      "id": "d_l1",
+      "id": "review",
       "type": "text",
-      "x": 180,
-      "y": 3080,
-      "width": 640,
-      "height": 140,
-      "text": "**L1 对象**：头像 · ♥红心 · ★主参考 · 反例 · 重复/替代 · 未决\n70/74 低成本信号：ACCEPT/FAVORITE/REJECT/RERUN/AMBIGUOUS"
+      "x": 2420,
+      "y": 700,
+      "width": 900,
+      "height": 500,
+      "color": "1",
+      "text": "# 674-173｜唯一 USER 审核台\n\n你只做：\nPASS / FAIL / ♥ / ★主参考\nRERUN / AMBIGUOUS / 最小NX\n\nCanvas/网页只是前端；审核数据必须持久化。"
     },
     {
-      "id": "d_l2",
+      "id": "rules",
       "type": "text",
-      "x": 880,
-      "y": 3080,
-      "width": 640,
-      "height": 140,
-      "text": "**L2 对象**：四宫格 · 中景/中全景 · 全身 · proportion · costume · special structure · cross-view identity"
+      "x": 3520,
+      "y": 700,
+      "width": 900,
+      "height": 500,
+      "color": "5",
+      "text": "# 674-282｜规则学习/验证\n\n把 173 的 USER_NX 转成：\ncandidate XN/SN → 正反例 → 验证 → LOCK\n\n只有 FROZEN / LOCKED 规则才能回 124 正式生产。"
     },
     {
-      "id": "d_l3",
+      "id": "stages",
       "type": "text",
-      "x": 1580,
-      "y": 3080,
-      "width": 640,
-      "height": 140,
-      "text": "**L3 对象**：NPC 文字层 · 区域组织 · 服装规则 · 色卡 · 允许/禁止发散区 · version"
+      "x": 650,
+      "y": 1500,
+      "width": 1550,
+      "height": 700,
+      "color": "3",
+      "text": "# L1 / L2 / L3 规则状态\n\n✅ **282-L1｜头像形态 XN**\nFROZEN / PRODUCTION_READY\n头像形态规则已经定了，只做回归与补丁验证。\n\n🟡 **282-L2｜四宫格 XN**\nOPEN_VALIDATION\n重点验证身份、比例、年龄、服装、特殊结构、跨视图一致性。\n\n🟡 **282-L3｜角色文字 SN**\nOPEN_VALIDATION\n验证视觉→文字哪些是事实、推断、Canon；防止 AI 重设计角色。"
     },
     {
-      "id": "h3_ready",
+      "id": "tiers",
       "type": "text",
-      "x": 1580,
-      "y": 3280,
-      "width": 640,
-      "height": 110,
-      "text": "**H3_READY**＝三个角色 Z 完成后的下游消费资格，不是 L1/L2/L3 之一",
-      "color": "2"
+      "x": 2500,
+      "y": 1500,
+      "width": 1550,
+      "height": 700,
+      "color": "3",
+      "text": "# 金矿 / 银矿分流\n\n**GOLD｜金矿 / 红心核心角色**\n→ 单角色独立四宫格\n→ 主参考 + local XN/SN\n→ 高质量、低批量\n\n**SILVER｜银矿 / NPC**\n→ 先绑定 region / organization / costume_family\n→ 按区域批量四宫格\n→ character_id 独立\n→ 防同脸/template collapse\n\n这里只是 Base 分级，不复制两套素材仓。"
     },
     {
-      "id": "crop_path",
+      "id": "feedback",
       "type": "text",
-      "x": 640,
-      "y": 3300,
-      "width": 440,
-      "height": 180,
-      "text": "## 裁切代理｜PATH（挂 Z-ROLE-L2 下）\n职责｜读 674-154 原图 → 按裁切标准生成派生图 → 保留 parent_asset_id → 派生图回 674-154\n禁止｜不建独立裁切仓库",
-      "color": "2"
-    },
-    {
-      "id": "prod_path",
-      "type": "text",
-      "x": 1120,
-      "y": 3300,
-      "width": 440,
-      "height": 180,
-      "text": "## 生产代理｜PATH（挂 Z-ROLE-L2 下）\n职责｜按新 Z 生产图像（本地 4080 / CODEX IMAGE）\n输出｜全部回 674-154 素材母仓登记",
-      "color": "2"
-    },
-    {
-      "id": "asset_154",
-      "type": "text",
-      "x": 640,
-      "y": 3560,
-      "width": 920,
-      "height": 150,
-      "text": "## 674-154｜素材母仓 / Asset Index（Z2 标准化）\n原图/四宫格/裁切派生统一 asset_id + parent_asset_id + Review Manifest；Inner 视觉墙只引用 asset_id，不建第二资产身份",
-      "color": "4"
-    },
-    {
-      "id": "review_173",
-      "type": "text",
-      "x": 640,
-      "y": 3790,
-      "width": 920,
-      "height": 200,
-      "text": "## 674-173｜唯一人工审核入口（Z3）\nPASS / FAIL / ★主参考 / ♥红心 / USER_NX\n（125 只承担 FAIL 返工；本入口不重复建第二审核位）",
-      "color": "1"
-    },
-    {
-      "id": "rework_125",
-      "type": "text",
-      "x": 140,
-      "y": 3790,
-      "width": 420,
-      "height": 150,
-      "text": "## 674-125｜FAIL/返工队列\nFAIL 自动路由；返工后重新进入 Z2 标准化",
-      "color": "1"
-    },
-    {
-      "id": "pools",
-      "type": "text",
-      "x": 1640,
-      "y": 3790,
-      "width": 560,
-      "height": 150,
-      "text": "## Z4 分流\n♥ 红心 → 核心角色池\n普通 PASS → NPC 池",
-      "color": "3"
-    },
-    {
-      "id": "user_nx",
-      "type": "text",
-      "x": 640,
-      "y": 4070,
-      "width": 920,
-      "height": 180,
-      "text": "## USER_NX｜最小人工信号（不得被 AI 冒充为正式 XN）\nACCEPT / FAVORITE / REJECT / RERUN / AMBIGUOUS + 可选单问“最不对的是哪一处”\n记录：asset_id / human_signal / candidate_xn / evidence_count / counterexample_count / status",
-      "color": "3"
-    },
-    {
-      "id": "cand_xn",
-      "type": "text",
-      "x": 640,
-      "y": 4310,
-      "width": 920,
-      "height": 150,
-      "text": "## 候选 XN｜AI 从图像证据 + USER_NX 提取\n升级条件（满足其一）：同类判断多样本重复｜A/B 稳定区分｜74 可指认观察锚点｜规则能预测后续判断"
-    },
-    {
-      "id": "verify",
-      "type": "text",
-      "x": 640,
-      "y": 4520,
-      "width": 920,
-      "height": 140,
-      "text": "## 验证｜evidence_count vs counterexample_count\n不得 XN 化：单次感觉 / 反馈矛盾 / 只能整体感觉 / 规则一写就僵 / token 成本 > 收益"
-    },
-    {
-      "id": "xn_lock",
-      "type": "text",
-      "x": 640,
-      "y": 4720,
-      "width": 920,
-      "height": 130,
-      "text": "## XN_LOCK｜正式规则冻结\n回写对应 Z 的 local_xn_set；L1 高频审美 → L2 机械预审 → L3 仅 Canon 级作者裁决",
-      "color": "5"
+      "x": 1450,
+      "y": 2380,
+      "width": 1800,
+      "height": 360,
+      "color": "6",
+      "text": "# 学习闭环\n\n173 的每次审核都变成 282 的训练证据。\n目标不是永远让你审，而是让 L2 XN、L3 SN 逐步覆盖常规判断；只有新审美、Canon、低置信度冲突再升级给你。"
     },
     {
       "id": "base",
-      "type": "text",
-      "x": 640,
-      "y": 4910,
-      "width": 920,
-      "height": 200,
-      "text": "## Z6｜Obsidian Base｜实验对象状态正本\nZ等级 / XN等级 / NX数量 / 素材量 / 主参考 / 审核状态 / 可实验性\nInner 与 Base 使用同一 asset_id 引用",
+      "type": "file",
+      "file": "黎黎隆项目/20_Agent系统/07_角色代理/实验对象状态.base",
+      "x": 350,
+      "y": 2460,
+      "width": 700,
+      "height": 260,
       "color": "4"
     },
     {
-      "id": "gap_next",
-      "type": "text",
-      "x": 640,
-      "y": 5170,
-      "width": 920,
-      "height": 150,
-      "text": "## 缺口识别 → 形成新的 Z\nBase 回写后按缺口生成下一 Z（不为 Z1–Z6 另开六张 Linear 工单）",
-      "color": "6"
-    },
-    {
-      "id": "role_warehouse_index_20261008",
+      "id": "warehouse",
       "type": "file",
       "file": "黎黎隆项目/03_角色/角色库/10_角色仓库/00_角色仓库总表.md",
-      "x": 1660,
-      "y": 5430,
-      "width": 280,
-      "height": 190
-    },
-    {
-      "id": "role_warehouse_entry_20261008",
-      "type": "file",
-      "file": "黎黎隆项目/03_角色/角色库/10_角色仓库/角色仓库入口.md",
-      "x": 1980,
-      "y": 5430,
-      "width": 280,
-      "height": 190
-    },
-    {
-      "id": "role_warehouse_base_20261008",
-      "type": "file",
-      "file": "黎黎隆项目/20_Agent系统/07_角色代理/实验对象状态.base",
-      "x": 1980,
-      "y": 5670,
-      "width": 280,
-      "height": 190
+      "x": 3650,
+      "y": 2460,
+      "width": 700,
+      "height": 260,
+      "color": "4"
     }
   ],
   "edges": [
     {
-      "id": "e_root_l1",
-      "fromNode": "az_root",
-      "fromSide": "bottom",
-      "toNode": "z_l1",
-      "toSide": "top",
-      "label": "REQUIRED_COMPONENT"
-    },
-    {
-      "id": "e_root_l2",
-      "fromNode": "az_root",
-      "fromSide": "bottom",
-      "toNode": "z_l2",
-      "toSide": "top",
-      "label": "REQUIRED_COMPONENT"
-    },
-    {
-      "id": "e_root_l3",
-      "fromNode": "az_root",
-      "fromSide": "bottom",
-      "toNode": "z_l3",
-      "toSide": "top",
-      "label": "REQUIRED_COMPONENT"
-    },
-    {
-      "id": "e_l1_d",
-      "fromNode": "z_l1",
-      "fromSide": "bottom",
-      "toNode": "d_l1",
-      "toSide": "top"
-    },
-    {
-      "id": "e_l2_d",
-      "fromNode": "z_l2",
-      "fromSide": "bottom",
-      "toNode": "d_l2",
-      "toSide": "top"
-    },
-    {
-      "id": "e_l3_d",
-      "fromNode": "z_l3",
-      "fromSide": "bottom",
-      "toNode": "d_l3",
-      "toSide": "top"
-    },
-    {
-      "id": "e_l3_h3",
-      "fromNode": "z_l3",
-      "fromSide": "bottom",
-      "toNode": "h3_ready",
-      "toSide": "top",
-      "label": "下游消费资格"
-    },
-    {
-      "id": "e_l2_crop",
-      "fromNode": "z_l2",
-      "fromSide": "bottom",
-      "toNode": "crop_path",
-      "toSide": "top",
-      "label": "PATH"
-    },
-    {
-      "id": "e_l2_prod",
-      "fromNode": "z_l2",
-      "fromSide": "bottom",
-      "toNode": "prod_path",
-      "toSide": "top",
-      "label": "PATH"
-    },
-    {
-      "id": "e_crop_154",
-      "fromNode": "crop_path",
-      "fromSide": "bottom",
-      "toNode": "asset_154",
-      "toSide": "top"
-    },
-    {
-      "id": "e_prod_154",
-      "fromNode": "prod_path",
-      "fromSide": "bottom",
-      "toNode": "asset_154",
-      "toSide": "top"
-    },
-    {
-      "id": "e_154_173",
-      "fromNode": "asset_154",
-      "fromSide": "bottom",
-      "toNode": "review_173",
-      "toSide": "top",
-      "label": "Z3 审核"
-    },
-    {
-      "id": "e_173_125",
-      "fromNode": "review_173",
-      "fromSide": "left",
-      "toNode": "rework_125",
-      "toSide": "right",
-      "label": "FAIL"
-    },
-    {
-      "id": "e_173_pools",
-      "fromNode": "review_173",
+      "id": "e_pa",
+      "fromNode": "prod",
       "fromSide": "right",
-      "toNode": "pools",
+      "toNode": "asset",
       "toSide": "left",
-      "label": "Z4 分流"
+      "label": "产物"
     },
     {
-      "id": "e_173_nx",
-      "fromNode": "review_173",
-      "fromSide": "bottom",
-      "toNode": "user_nx",
-      "toSide": "top",
-      "label": "通过信号"
+      "id": "e_ar",
+      "fromNode": "asset",
+      "fromSide": "right",
+      "toNode": "review",
+      "toSide": "left",
+      "label": "审核输入"
     },
     {
-      "id": "e_nx_cand",
-      "fromNode": "user_nx",
-      "fromSide": "bottom",
-      "toNode": "cand_xn",
-      "toSide": "top",
-      "label": "Z5"
+      "id": "e_rr",
+      "fromNode": "review",
+      "fromSide": "right",
+      "toNode": "rules",
+      "toSide": "left",
+      "label": "USER_NX"
     },
     {
-      "id": "e_cand_ver",
-      "fromNode": "cand_xn",
-      "fromSide": "bottom",
-      "toNode": "verify",
-      "toSide": "top"
-    },
-    {
-      "id": "e_ver_lock",
-      "fromNode": "verify",
-      "fromSide": "bottom",
-      "toNode": "xn_lock",
-      "toSide": "top",
-      "label": "XN_LOCK"
-    },
-    {
-      "id": "e_lock_base",
-      "fromNode": "xn_lock",
-      "fromSide": "bottom",
-      "toNode": "base",
-      "toSide": "top",
-      "label": "回写"
-    },
-    {
-      "id": "e_base_gap",
-      "fromNode": "base",
-      "fromSide": "bottom",
-      "toNode": "gap_next",
-      "toSide": "top"
-    },
-    {
-      "id": "e_gap_l1",
-      "fromNode": "gap_next",
-      "fromSide": "left",
-      "toNode": "z_l1",
-      "toSide": "bottom",
-      "label": "回到对应Z"
-    },
-    {
-      "id": "e_gap_l2",
-      "fromNode": "gap_next",
+      "id": "e_rp",
+      "fromNode": "rules",
       "fromSide": "top",
-      "toNode": "z_l2",
-      "toSide": "bottom",
-      "label": "回到对应Z"
-    },
-    {
-      "id": "e_gap_l3",
-      "fromNode": "gap_next",
-      "fromSide": "right",
-      "toNode": "z_l3",
-      "toSide": "bottom",
-      "label": "回到对应Z"
-    },
-    {
-      "id": "e_root_role_warehouse_20261008",
-      "fromNode": "az_root",
-      "fromSide": "right",
-      "toNode": "role_warehouse_index_20261008",
-      "toSide": "left",
-      "label": "ROLE_WAREHOUSE"
-    },
-    {
-      "id": "e_warehouse_index_entry_20261008",
-      "fromNode": "role_warehouse_index_20261008",
-      "fromSide": "right",
-      "toNode": "role_warehouse_entry_20261008",
-      "toSide": "left",
-      "label": "仓库入口"
-    },
-    {
-      "id": "e_warehouse_entry_base_20261008",
-      "fromNode": "role_warehouse_entry_20261008",
-      "fromSide": "bottom",
-      "toNode": "role_warehouse_base_20261008",
+      "toNode": "prod",
       "toSide": "top",
-      "label": "Base 链接"
+      "label": "LOCKED规则"
+    },
+    {
+      "id": "e_rules_stages",
+      "fromNode": "rules",
+      "fromSide": "bottom",
+      "toNode": "stages",
+      "toSide": "right",
+      "label": "L1/L2/L3"
+    },
+    {
+      "id": "e_rules_tiers",
+      "fromNode": "rules",
+      "fromSide": "bottom",
+      "toNode": "tiers",
+      "toSide": "top",
+      "label": "生产分流"
+    },
+    {
+      "id": "e_review_feedback",
+      "fromNode": "review",
+      "fromSide": "bottom",
+      "toNode": "feedback",
+      "toSide": "top",
+      "label": "审核证据"
     }
   ]
 }
