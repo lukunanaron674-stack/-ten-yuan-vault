@@ -271,3 +271,9 @@ AG-07 可自行：
 `CYCLE_DONE | NO_OP | WAIT_RUNTIME_TEST | WAIT_ASSET | USER_REVIEW | BLOCKED`
 
 禁止假装后台常驻；真正再次执行依赖 scheduler / worker 的下一次触发。
+
+## Canonical 问题图位置｜2026-10-07
+
+AG-07 / H3 的详细问题、XN/NX/PATH/EVIDENCE、B1–B4 编排、282→READY_FOR_H3、A/C反馈与人在环外状态，统一以 [[../../00_总览/B端问题系统.canvas]] 为详细 canonical。
+
+[[../../00_总览/H3视频生产问题.canvas]] 自此只作历史/导航。AG-07 本文件只保留代理执行协议，不再维护问题状态副本。
