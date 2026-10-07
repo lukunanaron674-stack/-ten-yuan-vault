@@ -189,6 +189,16 @@
       "width": 1150,
       "height": 760,
       "color": "3"
+    },
+    {
+      "id": "h3_to_282_feedback_20261007",
+      "type": "text",
+      "text": "# H3 → 282 反向证据回流\n\nH3 的 identity/body/costume 漂移、失败族、关键帧审核不能只留在视频域。\n\n回流：\nH3 EVIDENCE\n→ 对应 Z-ROLE-L1/L2/L3\n→ 282 Z5 candidate XN / NX\n→ Z6 Base / asset state\n→ 新Z或修订 READY_FOR_H3 包\n\n这样 H3 会反向教角色系统，而不是每次只改 prompt。",
+      "x": 3800,
+      "y": 2200,
+      "width": 1150,
+      "height": 700,
+      "color": "5"
     }
   ],
   "edges": [
@@ -329,10 +339,26 @@
       "toNode": "h3_authority_oop_20261007",
       "toSide": "top",
       "label": "自动NEXT"
+    },
+    {
+      "id": "edge_h3evidence_282_20261007",
+      "fromNode": "h3_evidence_system_20261007",
+      "fromSide": "left",
+      "toNode": "h3_to_282_feedback_20261007",
+      "toSide": "right",
+      "label": "角色证据回流"
+    },
+    {
+      "id": "edge_282_charalign_20261007",
+      "fromNode": "h3_to_282_feedback_20261007",
+      "fromSide": "left",
+      "toNode": "charh3align20261006",
+      "toSide": "right",
+      "label": "重新校准角色包"
     }
   ],
   "metadata": {
-    "version": "1.2-2026-10-07-human-out-of-loop",
+    "version": "1.3-2026-10-07-282-bridge",
     "frontmatter": {
       "source_canvas": "黎黎隆项目/00_总览/黎黎隆问题系统.canvas",
       "source_version": "1.0-2026-10-06-character-h3-alignment"
