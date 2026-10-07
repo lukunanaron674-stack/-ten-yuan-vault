@@ -322,3 +322,182 @@ R9-A / R9-B / R9-C 完成后：
 → 再读 `AI后台/00_AI后台总索引.md`
 → 再读 674-272 HOT_HEADER
 → 不重新发散 R1–R8。
+
+
+# 10｜R9-A DONE｜导演 / 镜头 / 剧本编译
+
+## 结果
+
+- ROUND = R9-A
+- RAW_ADDED = 24
+- KNOWLEDGE_ID = K209–K232
+- TOTAL_RAW = 232
+- MODE = COLLECT_ONLY / GAP_FILL
+- INTERNAL_Z_MAPPING = NOT_STARTED
+- E0_E5 = NOT_STARTED
+- CANONICAL_MUTATION = NONE
+- NEXT = R9-B｜音频 / 后期 / 跨模态
+
+## RAW｜K209–K232
+
+K209｜Script 到生产不是“按句拆 Prompt”；成熟影视流程会把 screenplay 继续转成 shooting script / storyboard / shot list，并补齐每镜所需的人物、动作、地点、道具、机位、特殊效果等执行信息。来源：Adobe shooting script / shot list。成熟度：A。
+
+K210｜Shot 是生产与剪辑单位，不只是故事段落。Shot list 的价值之一是保证 editor 需要的 coverage，并减少现场/生成阶段遗漏必要镜头。来源：Adobe shot list。成熟度：A。
+
+K211｜Coverage 不是“镜头越多越好”；shot list 必须可扫读、围绕必要 coverage 组织，过度详细会降低可执行性。来源：Adobe shot list。成熟度：A。
+
+K212｜Master shot 可以承担场景地理、关键动作和 timing/blocking 的基准，然后 close-up / reverse / insert 等 coverage 围绕它展开。来源：Adobe master shot。成熟度：A。
+
+K213｜动画工作流中的 animatic 本质上是“先剪后做”：在粗图阶段先决定 timing、camera blocking、character action 与设计，再进入昂贵动画/生成。来源：Frame.io animation editing。成熟度：A。
+
+K214｜Storyboard 不只是漂亮预览，而是把 script 中的叙事意图变成 shot angle / size / composition / visual relationship 的决策层。来源：Adobe storyboarding。成熟度：A。
+
+K215｜PACE把 screenplay→film 中间层定义为“空间优先”的 planning：先明确角色、道具、场景、主体位置和相机，而不是把这些都留给自由文本 Prompt 自己猜。来源：PACE arXiv 2609.19853。成熟度：C（新研究）。
+
+K216｜PACE的 typed hierarchy 将信息分到 script / scene / shot / panel 层，并向下继承；同一事实只在正确层写一次，避免每镜重复描述造成漂移。来源：PACE。成熟度：C。
+
+K217｜同一 Director Plan 可以同时编译成 diffusion prompt 与 metric 3D scene，再由 camera solver 让声明的 framing 尽量变成真正的 staged framing；说明“导演意图”可拆成可计算字段，而非只写自然语言。来源：PACE。成熟度：C。
+
+K218｜PACE结果也暴露重要边界：几何/构图控制与动作表达可能发生冲突；更强的 framing control 不等于动作也更对。因此 camera/blocking/action 不能压成单一 prompt-strength。来源：PACE。成熟度：C。
+
+K219｜STAGE不把 storyboard 仅当若干孤立 keyframe，而是为每个 shot 预测 start-end frame pair，使镜头本身带有“从哪里开始、到哪里结束”的结构。来源：STAGE, CVPR 2026。成熟度：B。
+
+K220｜结构化 storyboard 可以作为 multi-shot narrative 的主锚；shot 内与 shot 间需要不同机制，说明 storyboard packet 应区分 per-shot temporal intent 与 cross-shot story progression。来源：STAGE。成熟度：B。
+
+K221｜ShotPlan证明 multi-shot 需要显式的 cut/transition timing；planning token 可在 frame level 控制 shot transition timestamp。来源：ShotPlan arXiv 2607.17675。成熟度：C。
+
+K222｜因此“然后切到近景”不应只存在于自然语言里；cut frame / shot duration / transition point 应成为可执行字段。来源：ShotPlan + 传统剪辑实践。成熟度：B/C convergence。
+
+K223｜ShotDirector指出低层视觉连续并不等于导演表达；shot transition 本身承载 narrative expression，需要 editing-pattern-aware hierarchy。来源：ShotDirector, CVPR 2026。成熟度：B。
+
+K224｜ShotDirector把 camera control 拆成 parameter-level 6-DoF pose / intrinsic settings + hierarchical semantic prompt，说明镜头控制至少有“数值相机层”和“叙事语义层”两套表示。来源：ShotDirector。成熟度：B。
+
+K225｜ShotVerse提出 Plan-then-Control：Planner先从文本/空间先验得到全局对齐 camera trajectories，再由 Controller 执行；这是“导演规划”和“视频渲染”分离的外部证据。来源：ShotVerse 2026。成熟度：C。
+
+K226｜ShotVerse也指出两种极端都不好：纯文字 camera prompt 不够精确；完全手绘 trajectory 又太重。更实际的是自动规划 + 人可改 + 精确执行。来源：ShotVerse。成熟度：C。
+
+K227｜Towards Storytelling Animations 将角色运动与相机运动视为同等重要并联合建模；故事性动作里 camera 不应是动作完成后才附加的装饰变量。来源：CVPR 2026。成熟度：B。
+
+K228｜多角色故事镜头中，camera placement/motion决定角色在画面中的大小、构图和关系读取，因此 actor blocking 与 camera path 是耦合问题。来源：Towards Storytelling Animations。成熟度：B。
+
+K229｜GenCine进一步指出：当 camera 与 foreground 同时运动时，单纯2D拖拽轨迹存在歧义；把 camera/object motion 放进同一3D world coordinate scaffold 更容易保持“物体相对世界怎么动”。来源：Generative Cinematographer 2026。成熟度：C。
+
+K230｜PlayLife显示 tracking shot 的可靠执行需要把 human motion sequence 与 camera/view control协调；appearance anchor、动作序列和 camera follow 可以是分开的输入职责。来源：PlayLife, IJCV 2026。成熟度：B/C。
+
+K231｜AI-native previs 的 practical pattern 是“低保真但无歧义”的 blockout：简单3D人偶/mark/camera path 只要能说清走位和机位，就能作为 motion-reference package；不需要先做漂亮3D。来源：Blockout 2026 design + PACE geometry-control方向。成熟度：D/C。
+
+K232｜多镜头“看起来连贯”不等于会执行专业剪辑语法；CutCraft显示当前系统对 shot structure、transition grammar、J/L-cut、更高阶 montage 的执行仍明显不稳定，因此 Director Packet 还应把 editing intent 显式保存，不能指望模型自动“电影化”。来源：CutCraft 2026。成熟度：C。
+
+## MERGED｜R9-A 母知识
+
+A01｜BEAT / SHOT = FUNCTIONAL UNIT
+不要按句号拆镜。先判断这一段剧情的叙事功能、信息变化、动作变化，再决定一镜还是多镜。
+
+A02｜SHOT PURPOSE + COVERAGE
+每镜必须知道“为什么存在”，并考虑编辑需要的 coverage；不是镜头越多越好。
+
+A03｜SPATIAL PLAN BEFORE PROMPT
+人物/道具/场景位置先明确，再让相机看；否则 Prompt 会替导演偷偷决定 blocking。
+
+A04｜BLOCKING × CAMERA ARE COUPLED
+人物怎么走和相机怎么走必须联合规划，尤其多角色/追踪/遮挡镜头。
+
+A05｜CAMERA HAS TWO LAYERS
+语义层：shot size / angle / relationship / reveal。
+参数层：pose / 6DoF / lens/intrinsics / trajectory。
+两层都需要，不能只留一句“cinematic dolly”。
+
+A06｜SHOT BOUNDARY / CUT TIMING IS EXECUTABLE DATA
+shot duration、cut point、transition type、start/end state 都应该是字段，不是散落在Prompt文字里。
+
+A07｜STORYBOARD / ANIMATIC = APPROVAL + EXECUTION PLAN
+它既是视觉预演，也是 timing / blocking / camera / edit 的低成本冻结层。
+
+A08｜TYPED INHERITANCE REDUCES RESTATEMENT DRIFT
+script/scene/shot/panel 分层；共享事实向下继承，局部差异在局部覆盖。
+
+A09｜PREVIS TARGET = UNAMBIGUOUS, NOT BEAUTIFUL
+复杂镜头必要时用 greybox / blockout；其价值是让空间和运动不歧义，而不是作为最终画面。
+
+A10｜DIRECTOR PACKET SHOULD COMPILE, NOT JUST DESCRIBE
+导演输出应能同时喂给 storyboard、previs、video prompt、camera control、review，而不是每个阶段重新理解自然语言。
+
+## 推荐的最小 Director / Shot Packet（仅外部收集结果，不写入内部正本）
+
+```yaml
+scene_id:
+beat_id:
+shot_id:
+shot_purpose:
+story_change:
+subjects:
+required_props:
+scene_geometry_ref:
+
+blocking:
+  subject_positions:
+  subject_motion:
+  interaction_target:
+
+camera:
+  shot_size:
+  angle:
+  lens_or_focal_behavior:
+  camera_pose:
+  camera_motion:
+  trajectory_ref:
+
+timing:
+  duration:
+  action_beats:
+  cut_in:
+  cut_out:
+  transition_intent:
+
+visual:
+  composition_goal:
+  lighting_intent:
+  reference_assets:
+
+continuity:
+  opening_state:
+  closing_state:
+  screen_direction:
+  eyeline:
+  action_phase:
+
+coverage_role:
+  master | wide | medium | close | reverse | insert | reaction | transition | other
+
+editability:
+  must_have:
+  optional:
+  alternate:
+```
+
+## 冲突 / 边界
+
+- **精确几何 vs 动作自然**：PACE表明 framing 锁得更准，不代表 action 也更准；需要分目标。
+- **完整规划 vs 可执行简洁**：Adobe强调 shot list 过度详细会失去可用性；typed schema应有核心字段与可选字段，不能每镜写百科。
+- **全手工 trajectory vs 纯文本 camera**：ShotVerse显示两端都有成本/精度问题；更值得保留“自动计划→必要时人工改→控制器执行”。
+- **一个长take vs coverage**：长take适合连续体验，但会降低剪辑选择；coverage提供编辑自由，二者是导演选择，不是一方永久优于另一方。
+- **漂亮 storyboard vs 可执行 storyboard**：DreamShot/STAGE更强调跨镜一致与shot结构；工业previs更强调time/blocking/camera。最终生成前需要的是“能执行”，不是“单张最漂亮”。
+
+## COVERAGE
+
+R9-A 已覆盖：
+- Script / shooting script / storyboard / shot list
+- Beat→Shot 的功能性拆解
+- coverage / master shot / reverse / insert / reaction
+- animatic / edit-first
+- typed script→scene→shot→panel hierarchy
+- spatial blocking
+- camera shot size / angle / lens / pose / trajectory
+- actor-camera joint motion
+- start/end storyboard pair
+- explicit cut timing / transition grammar
+- greybox / 3D previs
+- plan-then-control
+
+R9-B 不再重复这些内容；转向：
+Audio / Dialogue / Voice identity / Lip-sync / AMB/SFX/BGM / cross-modal timing / NLE / color / delivery。
