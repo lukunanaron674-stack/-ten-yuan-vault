@@ -501,3 +501,203 @@ R9-A 已覆盖：
 
 R9-B 不再重复这些内容；转向：
 Audio / Dialogue / Voice identity / Lip-sync / AMB/SFX/BGM / cross-modal timing / NLE / color / delivery。
+
+
+# 11｜R9-B DONE｜音频 / 后期 / 跨模态
+
+## 结果
+
+- ROUND = R9-B
+- RAW_ADDED = 24
+- KNOWLEDGE_ID = K233–K256
+- TOTAL_RAW = 256
+- MODE = COLLECT_ONLY / GAP_FILL
+- INTERNAL_Z_MAPPING = 保持当前272最新状态，不在本轮覆盖
+- E0_E5 = 本轮未推进
+- CANONICAL_EFFECT_CLAIMS_AUTO_PROMOTED = 0
+- NEXT = R9-C｜生产基础设施 / 商业交付
+
+## RAW｜K233–K256
+
+K233｜Movie dubbing 至少同时有四个目标：voice identity、speech naturalness、lip synchronization、timing/context alignment；不能把“声音像”当成“配音完成”。来源：CoSyncDiT 2026。成熟度：B/C。
+
+K234｜Dubbing 的 reference voice 与 target lip motion 是不同约束源；强行只做 duration-level 对齐会伤害自然度/音色，因此语音身份、语义、视觉时序应分账。来源：CoSyncDiT 2026。成熟度：C。
+
+K235｜复杂场景 lip-sync 是独立难题；普通正脸/单人通过不代表遮挡、侧脸、运动、复杂背景仍能同步。来源：ComplexSync 2026 + complex benchmark。成熟度：C。
+
+K236｜Audio-video synchronization 至少应拆成“语义同步”和“时间同步”：声音是不是这个事件的声音，与声音是否在正确时刻发生，是两个指标。来源：AV-SyncBench 2026。成熟度：B。
+
+K237｜同步音视频质量不能用单一总分；VABench同时检查 text↔video、text↔audio、video↔audio、AV sync、lip-speech等多维关系。来源：VABench CVPR 2026。成熟度：B。
+
+K238｜Audio-video aesthetics 高不代表任务可靠；AVGen-Bench发现模型可有较好整体观感，但 speech coherence、physics、music pitch 等仍明显失败。来源：AVGen-Bench ICML 2026。成熟度：B。
+
+K239｜Video→Audio/Foley 需要同时控制“是什么声音”和“什么时候响”；MultiFoley把 text/audio/video 条件分开，说明 timbre/semantic source 与 temporal cue 应独立表示。来源：MultiFoley CVPR 2025。成熟度：B。
+
+K240｜FoleyCrafter将 semantic adapter 与 temporal adapter分离；再次支持“声音语义”和“声音时序”是不同控制维度。来源：FoleyCrafter 2026。成熟度：B。
+
+K241｜Video-Foley用 frame-level RMS/intensity envelope做 temporal event condition，同时用text/audio决定音色；声音强度曲线本身也可成为时间状态，而不只是一个音频文件。来源：IEEE TASLP 2025。成熟度：B。
+
+K242｜长视频声音不能只按每个短块独立生成；SALSA-V说明 long-form V2A需要连续合成/条件续写，否则频谱/音色/环境底容易在块边界跳变。来源：SALSA-V ICML 2026。成熟度：B。
+
+K243｜Reference audio不仅能锁voice，也可用于匹配环境/Foley的spectral character；“声音参考”应区分 voice identity reference 与 environment/SFX character reference。来源：SALSA-V / MultiFoley。成熟度：B。
+
+K244｜物理上“听起来合理”不等于声音真的匹配画面物理；FlatSounds显示文本caption有时提高语义/物理正确，却可能降低temporal alignment，因此物理声效QA应单独检查事件与时刻。来源：FlatSounds CVPR 2026。成熟度：B。
+
+K245｜成熟后期先把音频分类成 Dialogue / Music / SFX / Ambience，再按类别处理；不同类别的降噪、压缩、EQ、ducking、reverb任务不同。来源：Adobe Premiere Essential Sound 2026。成熟度：A。
+
+K246｜Dialogue存在时，Music/Ambience可通过ducking自动降低，但ducking是mix automation，不等于最终创意混音；类别标签是自动化前提。来源：Adobe Premiere 2026。成熟度：A。
+
+K247｜音频和画面不必同一帧切换；J-cut/L-cut是成熟剪辑语法：下镜声音可提前进入，或上镜声音延续到下一画面，用于预示/连续性。来源：Adobe Premiere 2025/2026。成熟度：A。
+
+K248｜因此“shot boundary”与“audio boundary”应分开记录；每个镜头只有一个同步起止点会限制对白、环境音、声桥与反应镜剪辑。来源：J/L-cut + editorial practice。成熟度：A。
+
+K249｜Loudness是交付工程指标，不应靠“听起来差不多”；ITU-R BS.1770定义programme loudness与true-peak测量算法。来源：ITU-R BS.1770-5。成熟度：A。
+
+K250｜具体LUFS/LKFS目标取决于交付平台，不能把一个平台数字写成通用规则；例如Premiere Auto-Match示例使用-23 LUFS，而Netflix近场对白交付使用其特定dialogue-gated loudness规范。来源：Adobe / Netflix。成熟度：A。
+
+K251｜专业交付保留 Dialogue / Music / Effects stems；Netflix要求某些交付中D/M/E或M&E能够重组/支持dubbing，说明最终mix和可复用stem是不同资产。来源：Netflix Post Production / Dubbing specs。成熟度：A。
+
+K252｜M&E不是简单“删掉对白”；ambience、Foley及所有非对白内容必须完整存在并匹配最终mix，才能让后续dub无缝替换对白。来源：Netflix M&E delivery requirements。成熟度：A。
+
+K253｜声音空间也是连续性：reverb/delay、panning、perspective表达人物所处空间；跨镜或dub时若这些变化不对应场景，会破坏空间感。来源：Netflix dubbing creative guidelines。成熟度：A。
+
+K254｜Color management应区分 input / working(timeline) / output transform，并依赖正确source tagging；调色和显示转换不能混成一个LUT步骤。来源：Adobe Premiere Color Management / ACES / DaVinci Resolve。成熟度：A。
+
+K255｜ACES的核心价值之一是把不同输入统一到scene-referred工作空间，再通过Output Transform适配不同显示/交付；“调色结果”和“显示设备变换”是不同层。来源：ACES官方文档。成熟度：A。
+
+K256｜Final delivery不是单个MP4：成熟流程还包含timeline metadata、audio stems、timed text/subtitles、color/output metadata、版本/组合关系；OTIO负责剪辑结构，IMF用Composition Playlist组织完成版essence，字幕也有独立timing/file规范。来源：OpenTimelineIO / SMPTE IMF / Netflix timed text。成熟度：A。
+
+## MERGED｜R9-B 母知识
+
+B01｜AUDIO IS MULTI-LAYER STATE
+Dialogue / Voice / Music / SFX / Ambience必须分轨/分职责；“音频”不是一个单字段。
+
+B02｜IDENTITY ≠ LIP SYNC ≠ NATURALNESS
+声音像谁、说得自然不自然、嘴是否同步、句子是否落在正确动作/上下文，是不同维度。
+
+B03｜SEMANTIC SYNC ≠ TEMPORAL SYNC
+“这个声音属于这个事件”与“它在这一帧响”分开记录与审核。
+
+B04｜AUDIO NEEDS TIMELINE EVENTS
+对白start/end、SFX event、music cue、ambience bed、intensity envelope、audio lead/lag都应是时间线事件，而不是Prompt段落。
+
+B05｜SHOT CUT ≠ AUDIO CUT
+J/L-cut、声桥、reaction over dialogue要求video in/out与audio in/out可独立。
+
+B06｜LONG-FORM AUDIO NEEDS CONTINUITY
+长段生成要保持voice timbre、ambience spectral character、room tone、music key/texture等连续状态；不能每10秒完全重新起音。
+
+B07｜MIX ≠ STEMS
+Final mix是观看版本；Dialogue / Music / Effects / M&E等stems是返工、dub、归档、交付用生产资产。
+
+B08｜LOUDNESS / TRUE-PEAK ARE DELIVERY METRICS
+响度和true-peak要按目标平台测；平台规范是profile，不是全局常数。
+
+B09｜COLOR MANAGEMENT IS A PIPELINE
+Input transform → working/timeline color space → creative grade → output transform；显示转换与创意调色分离。
+
+B10｜FINAL DELIVERY IS A PACKAGE
+Picture + mix/stems + captions/timed text + timeline/composition metadata + color/output profile + version/provenance共同构成交付。
+
+## 推荐的最小 Audio / Post Packet（仅外部收集结果，不写入内部正本）
+
+```yaml
+sequence_id:
+shot_id:
+timebase:
+
+dialogue:
+  speaker_id:
+  voice_identity_ref:
+  text:
+  in:
+  out:
+  lip_sync_required:
+  spatial_perspective:
+  room_character:
+
+sfx_events:
+  - event_id:
+    semantic_source:
+    in:
+    peak_or_envelope:
+    reference_audio:
+
+ambience:
+  environment_id:
+  bed_ref:
+  in:
+  out:
+  continuity_group:
+
+music:
+  cue_id:
+  in:
+  out:
+  role:
+  transition:
+  duck_against_dialogue:
+
+split_edit:
+  audio_in:
+  audio_out:
+  video_in:
+  video_out:
+  j_or_l_cut:
+
+mix:
+  dialogue_stem:
+  music_stem:
+  effects_stem:
+  ambience_or_me_stem:
+  loudness_profile:
+  true_peak_profile:
+
+color:
+  source_color_space:
+  timeline_space:
+  output_space:
+  output_transform:
+
+captions:
+  language:
+  timed_text_asset:
+  timing_verified:
+
+delivery:
+  picture_master:
+  mix_master:
+  stems:
+  captions:
+  timeline_or_cpl:
+  qc_profile:
+```
+
+## 冲突 / 边界
+
+- **自动同步 ≠ 创意声音设计**：V2A可以对齐事件，但拟音的夸张、象征、主观声仍需要设计意图。
+- **统一生成音画 ≠ 必然更可控**：联合模型能提高耦合，但也可能更难单独修音频或画面；模块化后期仍有明确价值。
+- **字幕跟音频 ≠ 字幕跟镜头**：timed text同时受speech timing和shot change影响，不能机械只贴waveform。
+- **固定LUFS ≠ 通用交付**：不同平台/用途目标不同；只吸收“必须profile化测量”，不吸收单一数字。
+- **ACES ≠ 必须所有小项目都全套使用**：吸收其input/working/output分层思想；具体色管线按项目复杂度决定。
+- **Final MP4 ≠ Master Package**：社交发布可以只有单文件，但可持续生产/商业交付需要可返工的timeline、stems、captions与版本信息。
+
+## COVERAGE
+
+R9-B 已覆盖：
+- dubbing / voice identity / naturalness
+- lip-sync复杂场景
+- semantic vs temporal AV synchronization
+- video-to-audio / Foley
+- long-form audio continuity
+- reference audio roles
+- Dialogue / Music / SFX / Ambience分类
+- ducking / J-cut / L-cut
+- loudness / true peak
+- D/M/E stems / M&E / dubbing
+- reverb / panning / perspective
+- color management / ACES
+- OTIO / IMF / captions / delivery packaging
+
+R9-C 不再重复这些内容；转向：
+VRAM / quantization / cache / offload / throughput / queue economics / current model-by-job capability / Rights / Licensing / C2PA / commercial provenance。
