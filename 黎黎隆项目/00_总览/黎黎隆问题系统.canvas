@@ -1,45 +1,124 @@
 {
   "nodes": [
     {
-      "id": "retired_group",
+      "id": "root",
       "type": "group",
       "x": 0,
       "y": 0,
-      "width": 3200,
-      "height": 1500,
+      "width": 4600,
+      "height": 2600,
       "color": "6",
-      "label": "《黎黎隆》问题系统｜历史入口"
+      "label": "黎黎隆分控｜人类阅读版"
     },
     {
-      "id": "retired_notice",
+      "id": "goal",
       "type": "text",
       "x": 220,
       "y": 180,
-      "width": 1800,
-      "height": 620,
+      "width": 1350,
+      "height": 520,
       "color": "1",
-      "text": "# 已退役｜不再作为工作面\n\n本 Canvas 已退役。项目问题执行转入 AI后台 Markdown + Linear。\n\n现行唯一用户 Canvas：[[674总览.canvas]]\nAI后台正本：[[AI后台/01_项目问题执行.md]]\n\n规则：禁止继续往本 Canvas 写问题节点 / 日志 / 任务状态。"
+      "text": "# 目标\n\n把《黎黎隆》从角色、场景、镜头到视频生产收束成稳定、持续、可复用的完整项目链。\n\n**目标体量：10/10**\n**可行度：8/10**"
     },
     {
-      "id": "human_link",
+      "id": "subgoals",
+      "type": "text",
+      "x": 1750,
+      "y": 180,
+      "width": 1500,
+      "height": 520,
+      "color": "2",
+      "text": "# 分目标\n\n1. 角色 / 场景 / 世界观的有效正本不互相冲突\n2. 问题闭环能自动收束到真实下一步\n3. 角色、场景、镜头能顺利交给 B端 / H3 生产"
+    },
+    {
+      "id": "progress",
+      "type": "text",
+      "x": 3440,
+      "y": 180,
+      "width": 940,
+      "height": 520,
+      "color": "4",
+      "text": "# 当前进度\n\n结构骨架已建立；674-116 继续做增量问题闭环；674-282 本轮角色链已落地。"
+    },
+    {
+      "id": "nx",
+      "type": "text",
+      "x": 220,
+      "y": 930,
+      "width": 2500,
+      "height": 650,
+      "color": "5",
+      "text": "# 当前唯一 NX\n\n**项目级唯一 NX：** 现在各模块已经能分别工作，但“角色 → 场景 → 镜头 → H3 → 审核反馈”能否长期保持同一套状态、不中途分叉或漂移，还需要继续用真实生产闭环验证。\n\n> 这里只保留当前最卡脖子的未知；其它 NX、XN、PATH、证据全部在 AI 后台。"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 2940,
+      "y": 930,
+      "width": 1440,
+      "height": 650,
+      "color": "3",
+      "text": "# 下一步\n\n继续让 674-116、B端和 H3 在同一套 canonical 状态上跑；发现分叉时只修后台，不把复杂度推给你。\n\n# 需要你吗？\n\n目前不用。只有出现 Canon / 主参考 / 审美冲突时再找你。"
+    },
+    {
+      "id": "home",
       "type": "file",
       "file": "黎黎隆项目/00_总览/674总览.canvas",
       "x": 220,
-      "y": 950,
-      "width": 1000,
-      "height": 280,
+      "y": 1840,
+      "width": 1200,
+      "height": 320,
       "color": "4"
     },
     {
-      "id": "backend_link",
+      "id": "backend",
       "type": "file",
       "file": "黎黎隆项目/00_总览/AI后台/01_项目问题执行.md",
-      "x": 1450,
-      "y": 950,
-      "width": 1200,
-      "height": 280,
-      "color": "2"
+      "x": 1700,
+      "y": 1840,
+      "width": 1600,
+      "height": 320,
+      "color": "6"
+    },
+    {
+      "id": "rule",
+      "type": "text",
+      "x": 3440,
+      "y": 1840,
+      "width": 940,
+      "height": 320,
+      "color": "6",
+      "text": "# 阅读规则\n\n你只看这一屏。\n不展示 XN / PATH / SHA / 日志。"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "goal",
+      "fromSide": "right",
+      "toNode": "subgoals",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "subgoals",
+      "fromSide": "right",
+      "toNode": "progress",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "goal",
+      "fromSide": "bottom",
+      "toNode": "nx",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "nx",
+      "fromSide": "right",
+      "toNode": "next",
+      "toSide": "left"
+    }
+  ]
 }
