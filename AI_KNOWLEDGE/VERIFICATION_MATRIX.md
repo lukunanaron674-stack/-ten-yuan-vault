@@ -44,3 +44,13 @@ AI_LEARNED requires evidence. No evidence = PARTIAL / WAIT_TEST.
 
 ## Current audit
 The architecture and verification protocols are frozen by AI_LEARN R1–R3. This file does NOT claim that every listed capability is already CONNECTED or VERIFIED. Individual capabilities remain KNOWLEDGE_READY/ROUTED/PARTIAL until implementation evidence exists.
+
+## External knowledge promotion gate
+
+外部知识采用双轨门：
+- AI_LEARN：DRAFT → KNOWLEDGE_READY → ROUTED → CONNECTED → VERIFIED → AI_LEARNED
+- 证据：E0 → E1 → E2 → E3 → E4 → E5
+
+只有完成内部路由、冻结实验、E5、regression PASS、pre_promotion_ref、rollback_ref，以及需要时的 HUMAN_GATE，才进入 PROMOTION_ELIGIBLE。
+
+PROMOTION_ELIGIBLE 仍需目标 Z 的 canonical gate。发生回归或证据降级时：PROMOTED → ROLLED_BACK，并 revert promotion commit；保留 negative evidence。
