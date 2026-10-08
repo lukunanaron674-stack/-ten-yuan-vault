@@ -1079,6 +1079,56 @@
       "height": 425,
       "color": "6",
       "text": "## P5-10｜创作—反思循环（灵感）\n\n**改一处视觉关系，记录预期与真实感受偏差。**\n\n方法创意（非特定文献）　❤️ 有感觉｜？继续查｜× 没感觉"
+    },
+    {
+      "id": "subjective_route3_root",
+      "type": "text",
+      "x": -5550,
+      "y": -1800,
+      "width": 820,
+      "height": 420,
+      "color": "1",
+      "text": "# 第三解释路线｜主观感受构成（R0）\n\n**不是问所有人应该感受到什么，而是此时的我到底感受到了什么十元？**\n\n科学向：为什么会感受到？\n感受向：感受怎样描述？\n主观向：我具体怎样感受到，并在我身上怎么变化？\n\n状态：CANDIDATE / NOT FROZEN\n❤️ 有感觉｜？继续查｜× 没感觉"
+    },
+    {
+      "id": "subjective_route3_firstperson",
+      "type": "text",
+      "x": -6600,
+      "y": -1140,
+      "width": 860,
+      "height": 330,
+      "color": "1",
+      "text": "## 先识别我感受到什么\n\n先记我的原始感受词、第一眼/听的瞬间与线索；**之后**再用十元尝试编码。\n\n禁止先给十元答案，逼感受往标签靠。"
+    },
+    {
+      "id": "subjective_route3_composition",
+      "type": "text",
+      "x": -5550,
+      "y": -1140,
+      "width": 820,
+      "height": 330,
+      "color": "1",
+      "text": "## 再探索怎样构成\n\n主/次感受、强度、同时出现、顺序、变化、意义背景。\n\n允许未知、混合和反例，绝不以一个人的经验证明人人如此。"
+    },
+    {
+      "id": "subjective_route3_literature",
+      "type": "text",
+      "x": -6600,
+      "y": -560,
+      "width": 860,
+      "height": 300,
+      "color": "1",
+      "text": "## 外部方法的启发\n\nDES：记录某一刻的真实体验。\n微观体验访谈：追问感受怎么发生。\nIPA：理解个人如何解释体验。\n\n它们是方法参考，不能用来直接证明十元。"
+    },
+    {
+      "id": "subjective_route3_details",
+      "type": "file",
+      "file": "AI问题解决Canvas/感受三元论文_L1_MD库/11_第三解释路线_主观感受构成_R0_大白话.md",
+      "x": -5550,
+      "y": -560,
+      "width": 820,
+      "height": 240,
+      "color": "1"
     }
   ],
   "edges": [
@@ -1830,6 +1880,48 @@
       "toNode": "p5_verified_10",
       "label": "继续发散",
       "color": "6"
+    },
+    {
+      "id": "subjective_route3_e1",
+      "fromNode": "root",
+      "toNode": "subjective_route3_root",
+      "label": "第三解释路线",
+      "color": "1"
+    },
+    {
+      "id": "subjective_route3_e2",
+      "fromNode": "subjective_route3_root",
+      "toNode": "subjective_route3_firstperson",
+      "label": "识别",
+      "color": "1"
+    },
+    {
+      "id": "subjective_route3_e3",
+      "fromNode": "subjective_route3_root",
+      "toNode": "subjective_route3_composition",
+      "label": "构成",
+      "color": "1"
+    },
+    {
+      "id": "subjective_route3_e4",
+      "fromNode": "subjective_route3_root",
+      "toNode": "subjective_route3_literature",
+      "label": "外部方法",
+      "color": "1"
+    },
+    {
+      "id": "subjective_route3_e5",
+      "fromNode": "subjective_route3_root",
+      "toNode": "subjective_route3_details",
+      "label": "详情 MD",
+      "color": "1"
+    },
+    {
+      "id": "subjective_route3_e6",
+      "fromNode": "r6",
+      "toNode": "subjective_route3_root",
+      "label": "审美主观体验扩展",
+      "color": "1"
     }
   ],
   "metadata": {
