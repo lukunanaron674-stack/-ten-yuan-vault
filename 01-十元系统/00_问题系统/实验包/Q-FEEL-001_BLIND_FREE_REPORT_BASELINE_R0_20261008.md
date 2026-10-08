@@ -1,7 +1,7 @@
 ---
 experiment_id: Q-FEEL-001-BLIND-R0
 parent_q: Q-FEEL-001
-status: PREREGISTERED_WAIT_ASSET_VERIFICATION
+status: WAIT_PARENT_BYTES_AND_BLIND_DISPLAY
 date: 2026-10-08
 authority: research-only
 owner: Lina01/674-104
@@ -106,8 +106,28 @@ Stage B（在Stage A锁定后）：
 | AV-20261008-BOARD-C-13 | 121137 | 309×324 | `eb15e9b5c024f15c38213281d81813cc673aabc2c877d87ffc2c5aa56c0f2372` |
 | AV-20261008-BOARD-C-15 | 105430 | 304×324 | `2afe0baa6154f1864bfcfb24dba6af9f5d35da90f816d319e18571e6c439cf72` |
 
-**尚未完成：** parent_asset_id与版本链核对；可持续访问的盲化展示；前期曝光/选择偏差登记；随机盲码冻结。因此 **HUMAN_GATE=NOT_READY**，`status=WAIT_BLIND_DISPLAY_AND_LINEAGE`。
+**尚未完成：** 父图字节级SHA与裁切manifest核验；可持续访问的盲化展示；随机盲码冻结。因此 **HUMAN_GATE=NOT_READY**，`status=WAIT_BLIND_DISPLAY_AND_LINEAGE`。
 
 **证据纪律：** C2→C2；E0→E0；`human_feeling_profile=null`；`profile_mae=null`；`top1_hit=null`；`top3_overlap=null`。6张图是**资产字节证据**，不是人类感受实验6例；不计有效实验轮次，不引用独立五轴A/B为本实验成果。
 
 NEXT：核对父图/裁切版本与持久可显示的盲化素材后，再决定是否进入最小HUMAN_GATE。
+
+
+## 9. R1.5｜父图/裁切版本声明链核对（2026-10-08）
+
+**本轮唯一Q：Q-FEEL-001 / BLIND-R0。** 只对上一轮6张已核验的候选PNG追溯父图与版本声明；没有新增感受实验，不计五轴A/B实验轮次。
+
+- source_issue: `674-293`; source_comment_id: `fd93a4cb-4a39-4702-8ea3-c778a8cb83fc`（2026-10-07 23:34Z创建，23:50Z更新）。
+- declared_parent_asset_id: `AV-20261008-BOARD-C`; source_board_layout: 3×5; declared_parent_path: `/workspace/scratch/33d192a5211e/generated_images/exec-45a726c7-c92d-4eec-900e-afbd2a7b0588.png`。
+- declared_parent_sha256: `2b4a37070de02fac27b927fdbad3174f73f4a448e152995f4704d702e21cef3f`；**仅来源评论声明，未取得父图原字节，不能宣称父图SHA已复验**。
+- declared_crop_manifest: `/workspace/scratch/33d192a5211e/crops/AV-20261008-BOARD-C/manifest.json`；当前执行环境路径不可访问，故未验证裁切坐标与中间版本哈希。
+- 已对齐6个裁切附件的**声明版本与源板格号**：`#2→v1`、`#4→v3`、`#5→v2`、`#12→v1`、`#13→v2`、`#15→v2`；附件ID、SHA与上一轮R1回执一致。
+- #4/#5/#13/#15 经过边界细修，故这些最终版本不应被宣称为“从父图直接无损裁切”；没有中间版本原字节，无法重建完整编辑链。
+- **曝光/选择偏差已登记**：六张是用户已挑选的同一来源板候选；用户此前见过来源板及部分编号，`prior_exposure=YES_OR_LIKELY`，`selection_bias=YES`，`same_board_cluster=YES`，不能当作未见样本或外部泛化。只有个人自由描述方法回归可在后续合格盲化条件下探索。
+- source_comment已说明误选 #14 撤下；#14 不入本Campaign。
+
+**状态：** `crop_byte_sha=VERIFIED_PREVIOUS_R1`；`parent_metadata=TRACEABLE_DECLARED`；`parent_byte_sha=UNVERIFIED`；`edit_lineage=PARTIAL`；`blind_display=NOT_READY`；`random_blind_code=NOT_FROZEN`；`HUMAN_GATE=NOT_READY`。
+
+**证据纪律：** `C2→C2`，`E0→E0`，`human_feeling_profile=null`，`MAE=null`，`Top1=null`，`Top3=null`；`research_rounds_completed=0`（本轮为工程溯源，不是有效人类实验轮次）。
+
+**NEXT：** 找到可持续访问的父图/manifest原字节核对其SHA与版本；准备不暴露来源编号的六张真实图片展示与预锁随机盲码；在此之前 `WAIT_PARENT_BYTES_AND_BLIND_DISPLAY`，不触发用户。
