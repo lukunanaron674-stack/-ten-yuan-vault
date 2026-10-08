@@ -35,3 +35,16 @@ updated: 2026-10-07
 - 至少完成一轮重复测量与多人盲测基线。
 - 得到初版混淆矩阵与“暂不可稳定区分”的感受对。
 - AI不得先展示十元词后再让人确认。
+
+
+## 6｜R1资产核验回写｜2026-10-08
+
+`receipt_id: R1_ASSET_VERIFICATION_RECONCILED_20261008`
+
+- 子Campaign：`Q-FEEL-001-BLIND-R0`，预注册实验包：`实验包/Q-FEEL-001_BLIND_FREE_REPORT_BASELINE_R0_20261008.md`。
+- 674-293 六张真实 PNG 的上一轮字节复核结果已回填实验包，6/6 SHA256 匹配；04号原截断SHA已纠正。
+- 这仅构成素材完整性/可追溯工程证据，不构成人类感受重复测量、编码一致性或外部泛化证据。
+- 现状：`status=OPEN`; `subcampaign=WAIT_BLIND_DISPLAY_AND_LINEAGE`; `C=C2`; `E=E0`; `HUMAN_GATE=NOT_READY`。
+- 无人类反馈：`human_feeling_profile=null`; `MAE=null`; `Top1=null`; `Top3=null`。
+- 下一步：核对父图/裁切版本、可持续展示的盲化图、预先曝光偏差、随机盲码；未就绪前不请求用户。
+- 独立五轴感受 A/B 的执行/轮次归其专属任务，本 Q 不重复计数。
