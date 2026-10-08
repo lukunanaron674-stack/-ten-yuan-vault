@@ -48,3 +48,13 @@ updated: 2026-10-07
 - 无人类反馈：`human_feeling_profile=null`; `MAE=null`; `Top1=null`; `Top3=null`。
 - 下一步：核对父图/裁切版本、可持续展示的盲化图、预先曝光偏差、随机盲码；未就绪前不请求用户。
 - 独立五轴感受 A/B 的执行/轮次归其专属任务，本 Q 不重复计数。
+
+
+## 7｜R1.5父图与版本声明链审计｜2026-10-08
+
+- receipt: `Q-FEEL-001-BLIND-R0-R1.5-LINEAGE-20261008`，详细证据见既有实验包第9节。
+- 674-293 源评论 `fd93a4cb-4a39-4702-8ea3-c778a8cb83fc` 已提供来源板 `AV-20261008-BOARD-C`、声明SHA `2b4a37070de02fac27b927fdbad3174f73f4a448e152995f4704d702e21cef3f`、六张裁切格号与版本。
+- 父图与裁切manifest原字节当前不可访问：`parent_byte_sha=UNVERIFIED`；四张边界细修图的中间编辑链尚未取证。**只确认声明可追溯，不冒充父图SHA复验。**
+- 已登记 `prior_exposure=YES_OR_LIKELY`、`selection_bias=YES`、`same_board_cluster=YES`；这六张仅能作为个人方法回归候选，不能称陌生样本、用户PASS或外部泛化。
+- `C=C2`；`E=E0`；`HUMAN_GATE=NOT_READY`；`human_feeling_profile/MAE/Top1/Top3=null`；`research_rounds_completed=0`。
+- `NEXT=WAIT_PARENT_BYTES_AND_BLIND_DISPLAY`：先补父图/manifest原字节与持续可展示的盲化图片，再冻结随机盲码。独立五轴A/B不由本Q执行或计数。
