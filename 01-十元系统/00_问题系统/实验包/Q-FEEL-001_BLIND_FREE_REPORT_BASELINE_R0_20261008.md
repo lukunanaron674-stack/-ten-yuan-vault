@@ -154,3 +154,20 @@ NEXT：核对父图/裁切版本与持久可显示的盲化素材后，再决定
 `C=C2`; `E=E0`; `human_feeling_profile=null`; `MAE=null`; `Top1=null`; `Top3=null`; `research_rounds_completed=0`.
 
 **NEXT:** 从674-293恢复来源板原字节及crop manifest（不能只复述声明路径）；用真实6张PNG建立可持续的盲化展示并做标签泄漏/顺序/完整性预检。完成前不打扰用户。
+
+
+## 11. R1.7｜盲码预锁独立复算与父图阻塞审计（2026-10-08）
+
+- receipt_id: `Q-FEEL-001-BLIND-R0-R1.7-COMMITMENT-AUDIT-20261008`
+- 本轮唯一Q：`Q-FEEL-001`；未执行五轴A/B、未发起人类感受测试、未修改感受正本。
+- 样本集合：`AV-20261008-BOARD-C-{02,04,05,12,13,15}`（六张候选，沿用R1原字节SHA回执）。
+- 独立复算：按第10节预注册算法，用 SHA256 对6个完整 asset_id 进行排序，并对逗号连接后的完整 asset_id 顺序再次计算 SHA256；三组承诺均逐字符匹配：
+  - blind-code-v1: `aeaf85219cf4fc65aead2c52f0f4d9db7d8478822dbddc84b4400732b3f88b66` — MATCH
+  - session-A: `ebacd1943dd77e2a73b7677062e6d000cd28eccf3d87d516e132bb077c6946bc` — MATCH
+  - session-B: `dd0bdcb411d318a35227ee5269741c4373447b327914829c2a8b49e63999345b` — MATCH
+- A/B展示顺序确实不同，盲码是6个唯一S码；未执行实际前端渲染，因此 `display_runtime=NOT_VERIFIED`。
+- 674-293 当前 `get_issue` 返回的50个附件中包含六张子图及BOARD-A/BOARD-B/BOARD-D，但未列出BOARD-C父图；此项只证明“本次返回的附件清单未见父图”，**不证明所有历史附件均不存在父图**。
+- 当前执行容器中声明的 `/workspace/scratch/.../exec-45a726c7-c92d-4eec-900e-afbd2a7b0588.png` 与 `/workspace/scratch/.../crops/AV-20261008-BOARD-C/manifest.json` 均不可访问；父图字节与裁切manifest仍未复核。
+- `status=WAIT_PARENT_BYTES_AND_BLIND_DISPLAY`; `blind_code=FROZEN_AND_RECOMPUTED`; `parent_byte_sha=UNVERIFIED`; `edit_lineage=PARTIAL`; `HUMAN_GATE=NOT_READY`。
+- `C2→C2`; `E0→E0`; `research_rounds_completed=0`; `human_feeling_profile=null`; `MAE=null`; `Top1=null`; `Top3=null`。此回执只证明预锁算法可复算，不能当感受实验成绩。
+- NEXT：从有权限的资产环境取得BOARD-C父图与裁切manifest真实字节，建立可持续显示的六图盲化页面，进行标签泄漏/顺序/图片SHA端到端验收；未就绪则WAIT/NO_OP。
