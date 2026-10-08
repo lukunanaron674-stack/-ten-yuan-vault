@@ -58,3 +58,11 @@ updated: 2026-10-07
 - 已登记 `prior_exposure=YES_OR_LIKELY`、`selection_bias=YES`、`same_board_cluster=YES`；这六张仅能作为个人方法回归候选，不能称陌生样本、用户PASS或外部泛化。
 - `C=C2`；`E=E0`；`HUMAN_GATE=NOT_READY`；`human_feeling_profile/MAE/Top1/Top3=null`；`research_rounds_completed=0`。
 - `NEXT=WAIT_PARENT_BYTES_AND_BLIND_DISPLAY`：先补父图/manifest原字节与持续可展示的盲化图片，再冻结随机盲码。独立五轴A/B不由本Q执行或计数。
+
+## 8｜R1.8 连接器展示回执｜2026-10-08
+
+`receipt_id: Q-FEEL-001-BLIND-R0-R1.8-CONNECTOR-DISPLAY-20261008`；详见既有实验包第12节。
+- 674-293六张原PNG本轮重新通过Linear附件接口取回，独立复算SHA256 6/6 MATCH；六图已实际通过当前工具侧多模态渲染通道显示 6/6 PASS。
+- 仅消除“本轮连接器无法取回/渲染六张子图”的疑虑；尚无可复核的**用户盲化展示端到端验收**，父图原字节和裁切manifest仍缺，编辑链不完整。
+- `C2/E0`不变；`HUMAN_GATE=NOT_READY`; `human_feeling_profile/MAE/Top1/Top3=null`; `research_rounds_completed=0`；不执行或计数独立五轴A/B。
+- `NEXT=WAIT_PARENT_BYTES_AND_BLIND_USER_DISPLAY`。GitHub public仓库未新增公开图片原字节。
