@@ -1129,6 +1129,86 @@
       "width": 820,
       "height": 240,
       "color": "1"
+    },
+    {
+      "id": "issue300_center",
+      "type": "text",
+      "x": -10150,
+      "y": -5000,
+      "width": 1000,
+      "height": 340,
+      "color": "2",
+      "text": "# 674-300｜五对十元导师讲解\n\n**先感受到什么 → 再讨论为什么 → 最后翻译成创作**\n十元＝10个待检验感受方向；五轴＝5组对照。\nX醒、Z张、N耐已定；其余七项名字均为AI候选。\nR1–R10文字发散完成，未跑图／未完成真人理解验证。"
+    },
+    {
+      "id": "issue300_route",
+      "type": "text",
+      "x": -10150,
+      "y": -4360,
+      "width": 1000,
+      "height": 290,
+      "color": "1",
+      "text": "## 导师阅读路径\n先讲色彩来源：醒／张／耐\n↓ 逐对体验十个方向（不背字母）\n↓ 看近邻、反例和混合\n↓ 用电影/音乐/文学举例\n↓ 三档讲解词 + 10枚几何图标文字规范\n**USER先挑词，随后才出图标**"
+    },
+    {
+      "id": "issue300_wood",
+      "type": "text",
+      "x": -12900,
+      "y": -3600,
+      "width": 1100,
+      "height": 330,
+      "color": "3",
+      "text": "## 木｜ZX ↔ NX\n**开路 ↔ 接流（候选）**\n问：我感觉路是被主动开出来的，还是像接上了已有脉络？\n禁止：勇敢↔软弱。"
+    },
+    {
+      "id": "issue300_fire",
+      "type": "text",
+      "x": -11750,
+      "y": -3600,
+      "width": 1100,
+      "height": 330,
+      "color": "3",
+      "text": "## 火｜ZN ↔ X\n**自成（候选）↔醒（已定）**\n问：我感到一个存在完整站住，还是突然看清差别？\n重点：两端未必真的相反！"
+    },
+    {
+      "id": "issue300_earth",
+      "type": "text",
+      "x": -10600,
+      "y": -3600,
+      "width": 1100,
+      "height": 330,
+      "color": "3",
+      "text": "## 土｜N ↔ X并Z\n**耐（已定）↔透出（候选）**\n问：我愿意停留其中，还是看到内部事物向外显出？\n留意混合而不是强判。"
+    },
+    {
+      "id": "issue300_metal",
+      "type": "text",
+      "x": -9450,
+      "y": -3600,
+      "width": 1100,
+      "height": 330,
+      "color": "3",
+      "text": "## 金｜XN ↔ Z\n**循序（候选）↔张（已定）**\n问：我沿着节律走，还是感到存在向外放大？\n秩序与张可共同出现。"
+    },
+    {
+      "id": "issue300_water",
+      "type": "text",
+      "x": -8300,
+      "y": -3600,
+      "width": 1100,
+      "height": 330,
+      "color": "3",
+      "text": "## 水｜XZ ↔ NZ\n**关途 ↔ 余路（候选）**\n问：返路在关闭，还是仍留可以回来的路？\n禁止：绝望↔希望直接替换。"
+    },
+    {
+      "id": "issue300_md",
+      "type": "file",
+      "file": "AI问题解决Canvas/感受三元论文_L1_MD库/22_674-300_导师五对十元讲解_R1-R10_文字发散_v0.1.md",
+      "x": -10150,
+      "y": -2770,
+      "width": 1000,
+      "height": 260,
+      "color": "2"
     }
   ],
   "edges": [
@@ -1922,6 +2002,55 @@
       "toNode": "subjective_route3_root",
       "label": "审美主观体验扩展",
       "color": "1"
+    },
+    {
+      "id": "issue300_e1",
+      "fromNode": "issue300_center",
+      "fromSide": "bottom",
+      "toNode": "issue300_route",
+      "toSide": "top"
+    },
+    {
+      "id": "issue300_e2",
+      "fromNode": "issue300_route",
+      "fromSide": "bottom",
+      "toNode": "issue300_wood",
+      "toSide": "top"
+    },
+    {
+      "id": "issue300_e3",
+      "fromNode": "issue300_route",
+      "fromSide": "bottom",
+      "toNode": "issue300_fire",
+      "toSide": "top"
+    },
+    {
+      "id": "issue300_e4",
+      "fromNode": "issue300_route",
+      "fromSide": "bottom",
+      "toNode": "issue300_earth",
+      "toSide": "top"
+    },
+    {
+      "id": "issue300_e5",
+      "fromNode": "issue300_route",
+      "fromSide": "bottom",
+      "toNode": "issue300_metal",
+      "toSide": "top"
+    },
+    {
+      "id": "issue300_e6",
+      "fromNode": "issue300_route",
+      "fromSide": "bottom",
+      "toNode": "issue300_water",
+      "toSide": "top"
+    },
+    {
+      "id": "issue300_e7",
+      "fromNode": "issue300_route",
+      "fromSide": "bottom",
+      "toNode": "issue300_md",
+      "toSide": "top"
     }
   ],
   "metadata": {
