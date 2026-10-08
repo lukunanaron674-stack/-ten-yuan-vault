@@ -1,18 +1,18 @@
 {
-  "nodes": [
-    {"id":"root","type":"text","x":0,"y":0,"width":580,"height":340,"color":"4","text":"# US → SOCIAL｜我们 → 社会\n## 潜在贡献与验证总图\n\n用途：横向比较 C / D / E / F 中哪些自有结构可能补社会现有 GAP。\n\n注意：这里只能登记 CONTRIBUTION_CANDIDATE。\n没有外部验证，不得写成‘已解决社会问题’。\n\n证据等级：IDEA → PROTOTYPE → INTERNAL VALIDATION → EXTERNAL VALIDATION"},
-    {"id":"c","type":"text","x":-1150,"y":-500,"width":510,"height":400,"color":"2","text":"# C｜CONTRIBUTION_CANDIDATE\n潜力：9/10\n\n我们的候选：\nIRG / 隐性意图结构化 + Preserve\n\n可能补的社会 GAP：\n创作者没有明确说出口的意图，如何转成机器可执行、可保持、可验证的约束。\n\n当前：THEORY / PROTOTYPE 候选\n还缺：历史样本、对照基线、多轮保持实验、外部任务泛化"},
-    {"id":"d","type":"text","x":-1150,"y":120,"width":510,"height":410,"color":"2","text":"# D｜121 Agency Control\n潜力：8/10\n\n我们的候选：\nconfidence × reversibility × preference-load × blast-radius\n→ AUTO / REVIEW / STOP\n\n可能补的社会 GAP：\n创意任务什么时候值得打断人，而不是普通风险审批。\n\n当前：SYSTEM DESIGN\n还缺：真实日志 replay、介入率、错误扩散率、与普通 risk gate 对照"},
-    {"id":"e","type":"text","x":730,"y":-500,"width":520,"height":420,"color":"2","text":"# E｜122 REAL-EVAL\n潜力：9/10\n\n我们的候选：\nL1 Outcome Validity\nL2 Intent + Constraint Fidelity\nL3 Trajectory Quality\n\n可能补的社会 GAP：\nbenchmark 成功 ≠ 具体创作者真实接受。\n\n当前：PROTOCOL FROZEN\n还缺：30–50 历史 case 盲标、baseline、预测接受/否决/重改、统计验证"},
-    {"id":"f","type":"text","x":730,"y":120,"width":530,"height":430,"color":"2","text":"# F｜确定性外壳 × 非确定性创意核心\n潜力：8/10\n\n我们的候选：\n把 checkpoint / recovery / provenance / evaluation / agency control 组合进真实动画生产。\n\n可能补的社会 GAP：\n长程 Agent 在创意生产里如何持续运行且不积累不可控漂移。\n\n当前：ARCHITECTURE / IMPLEMENTATION\n还缺：长时运行、真实失败恢复、质量衰减曲线、24h生产证据"},
-    {"id":"chain","type":"text","x":-250,"y":670,"width":650,"height":370,"color":"6","text":"# 最可能形成社会价值的组合链\n\nC｜表示人的真实意图\n↓\nD｜决定什么时候需要人介入\n↓\nE｜验证是否真的实现人的意图\n↓\nF｜把前三层放入长期生产系统\n\n贡献命题候选：\n‘面向创意生产的意图保持—动态介入—真实评价—长期可靠执行框架’\n\n现在仍是候选，不作为已证明结论。"}
-  ],
-  "edges": [
-    {"id":"e1","fromNode":"root","toNode":"c","label":"CANDIDATE C","fromSide":"left","toSide":"right"},
-    {"id":"e2","fromNode":"root","toNode":"d","label":"CANDIDATE D","fromSide":"left","toSide":"right"},
-    {"id":"e3","fromNode":"root","toNode":"e","label":"CANDIDATE E","fromSide":"right","toSide":"left"},
-    {"id":"e4","fromNode":"root","toNode":"f","label":"CANDIDATE F","fromSide":"right","toSide":"left"},
-    {"id":"e5","fromNode":"root","toNode":"chain","label":"COMBINE","fromSide":"bottom","toSide":"top"}
-  ],
-  "metadata":{"version":"1.0","role":"US_TO_SOCIAL","evidence_rule":"No external validation = CONTRIBUTION_CANDIDATE only."}
+	"nodes":[
+		{"id":"root","type":"text","x":0,"y":0,"width":580,"height":340,"color":"4","text":"# US → SOCIAL｜我们 → 社会\n## 潜在贡献与验证总图\n\n用途：横向比较 C / D / E / F 中哪些自有结构可能补社会现有 GAP。\n\n注意：这里只能登记 CONTRIBUTION_CANDIDATE。\n没有外部验证，不得写成‘已解决社会问题’。\n\n证据等级：IDEA → PROTOTYPE → INTERNAL VALIDATION → EXTERNAL VALIDATION"},
+		{"id":"c","type":"text","x":-1150,"y":-500,"width":510,"height":400,"color":"2","text":"# C｜CONTRIBUTION_CANDIDATE\n潜力：9/10\n\n我们的候选：\nIRG / 隐性意图结构化 + Preserve\n\n可能补的社会 GAP：\n创作者没有明确说出口的意图，如何转成机器可执行、可保持、可验证的约束。\n\n当前：THEORY / PROTOTYPE 候选\n还缺：历史样本、对照基线、多轮保持实验、外部任务泛化"},
+		{"id":"d","type":"text","x":-1150,"y":120,"width":510,"height":410,"color":"2","text":"# D｜121 Agency Control\n潜力：8/10\n\n我们的候选：\nconfidence × reversibility × preference-load × blast-radius\n→ AUTO / REVIEW / STOP\n\n可能补的社会 GAP：\n创意任务什么时候值得打断人，而不是普通风险审批。\n\n当前：SYSTEM DESIGN\n还缺：真实日志 replay、介入率、错误扩散率、与普通 risk gate 对照"},
+		{"id":"e","type":"text","x":730,"y":-500,"width":520,"height":420,"color":"2","text":"# E｜122 REAL-EVAL\n潜力：9/10\n\n我们的候选：\nL1 Outcome Validity\nL2 Intent + Constraint Fidelity\nL3 Trajectory Quality\n\n可能补的社会 GAP：\nbenchmark 成功 ≠ 具体创作者真实接受。\n\n当前：PROTOCOL FROZEN\n还缺：30–50 历史 case 盲标、baseline、预测接受/否决/重改、统计验证"},
+		{"id":"f","type":"text","x":730,"y":120,"width":530,"height":430,"color":"2","text":"# F｜确定性外壳 × 非确定性创意核心\n潜力：8/10\n\n我们的候选：\n把 checkpoint / recovery / provenance / evaluation / agency control 组合进真实动画生产。\n\n可能补的社会 GAP：\n长程 Agent 在创意生产里如何持续运行且不积累不可控漂移。\n\n当前：ARCHITECTURE / IMPLEMENTATION\n还缺：长时运行、真实失败恢复、质量衰减曲线、24h生产证据"},
+		{"id":"chain","type":"text","x":-250,"y":670,"width":650,"height":370,"color":"6","text":"# 最可能形成社会价值的组合链\n\nC｜表示人的真实意图\n↓\nD｜决定什么时候需要人介入\n↓\nE｜验证是否真的实现人的意图\n↓\nF｜把前三层放入长期生产系统\n\n贡献命题候选：\n‘面向创意生产的意图保持—动态介入—真实评价—长期可靠执行框架’\n\n现在仍是候选，不作为已证明结论。"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","toNode":"c","label":"CANDIDATE C","fromSide":"left","toSide":"right"},
+		{"id":"e2","fromNode":"root","toNode":"d","label":"CANDIDATE D","fromSide":"left","toSide":"right"},
+		{"id":"e3","fromNode":"root","toNode":"e","label":"CANDIDATE E","fromSide":"right","toSide":"left"},
+		{"id":"e4","fromNode":"root","toNode":"f","label":"CANDIDATE F","fromSide":"right","toSide":"left"},
+		{"id":"e5","fromNode":"root","toNode":"chain","label":"COMBINE","fromSide":"bottom","toSide":"top"}
+	],
+	"metadata":{"version":"1.0","role":"US_TO_SOCIAL","evidence_rule":"No external validation = CONTRIBUTION_CANDIDATE only."}
 }

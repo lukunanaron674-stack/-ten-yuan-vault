@@ -1,0 +1,36 @@
+{
+  "schema": "NPC_CHARACTER_PACK",
+  "schema_version": "v0-skeleton",
+  "pack_version": "v0",
+  "character_id": "H06",
+  "name_hint": "钢铁教派主教（仅文件名线索，非正本）",
+  "canonical_status": "UNREGISTERED_VISUAL_CANDIDATE / CHARACTER_SPEC_MISSING",
+  "identity_core": "UNKNOWN（等 Z-ROLE-L3-H06-CANON-SPEC 产出）",
+  "world_region": "UNASSIGNED",
+  "npc_pool_entry": {
+    "routing": "npc-pool",
+    "entered_at": "2026-10-07",
+    "reason": "素材机器预审 PASS 但无人工审核信号、无文字正本"
+  },
+  "costume_rules": {
+    "status": "EVIDENCE_ONLY",
+    "visual_anchors_observed": "以 H06-GRID-20260929 四格实图为准（机器可读，未做人工语义冻结）",
+    "allowed_variation": [],
+    "forbidden_drift": []
+  },
+  "consistency_rules": {
+    "cross_cell_identity": "PASS（674-219，机器）",
+    "human_review": "NOT_DONE"
+  },
+  "color_palette": {
+    "status": "PENDING_P00_MAPPING",
+    "note": "色卡需走 P00 五色映射（粉/青/红桶归属），属 Canon 决策，等文字正本"
+  },
+  "assets_ref": "见 07_角色代理/experiments_manifest.json H06 节点",
+  "forbidden": [
+    "不得据图代写身份/组织/教义（674-219 H06_SPECIAL 硬禁）",
+    "不得绑定 H06-GRID-20260928（SUPERSEDED）",
+    "HEAD_ONLY 仅限 IDENTITY"
+  ],
+  "version_note": "v0 = 骨架包，字段占位 + 证据指针；v1 待文字正本（Z-ROLE-L3-H06-CANON-SPEC 完成）后按红心角色包同 schema 升格"
+}

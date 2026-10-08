@@ -1,273 +1,40 @@
 {
-  "nodes": [
-    {
-      "id": "root",
-      "type": "text",
-      "x": 0,
-      "y": 0,
-      "width": 500,
-      "height": 330,
-      "color": "4",
-      "text": "# F｜工业与生产｜L2\n\n核心：确定性工程外壳 + 非确定性智能核心\n\n冻结目标：状态不丢 / 失败能续 / 结果能验\n状态：研究主线已收束 → 实施验证"
-    },
-    {
-      "id": "f1",
-      "type": "text",
-      "x": 620,
-      "y": -600,
-      "width": 430,
-      "height": 260,
-      "color": "4",
-      "text": "# F1｜Reliability\n能否长期持续正确？\n\nPARTIAL / 核心开放\n→ F-LONGRUN\n→ horizon / checkpoint / escalation"
-    },
-    {
-      "id": "f2",
-      "type": "text",
-      "x": 620,
-      "y": -290,
-      "width": 430,
-      "height": 270,
-      "color": "5",
-      "text": "# F2｜Durability\n中断后能否继续？\n\n较成熟\n→ F-STATE\n→ F-RECOVERY\n→ checkpoint / resume / retry"
-    },
-    {
-      "id": "f3",
-      "type": "text",
-      "x": 620,
-      "y": 40,
-      "width": 430,
-      "height": 280,
-      "color": "4",
-      "text": "# F3｜Verifiability\n怎么证明真的完成且正确？\n\nPARTIAL / 高价值\n→ Completion Contract\n→ 外部证据\n→ process + outcome eval"
-    },
-    {
-      "id": "f4",
-      "type": "text",
-      "x": 620,
-      "y": 390,
-      "width": 430,
-      "height": 270,
-      "color": "5",
-      "text": "# F4｜Controllability\n能否只做允许的动作？\n\n快速发展\n→ least privilege\n→ sandbox / tool policy\n→ approval / trajectory monitoring"
-    },
-    {
-      "id": "f5",
-      "type": "text",
-      "x": 620,
-      "y": 720,
-      "width": 430,
-      "height": 270,
-      "color": "5",
-      "text": "# F5｜Scalability\n放大后能否保持成本 / 吞吐 / 质量？\n\nPARTIAL\n→ backpressure\n→ routing / scheduling\n→ capacity / cost control"
-    },
-    {
-      "id": "asset",
-      "type": "text",
-      "x": -650,
-      "y": -560,
-      "width": 460,
-      "height": 300,
-      "color": "4",
-      "text": "# F-ASSET｜生产资产流\n\nasset identity / URI / version / hash / manifest / provenance / permission / lifecycle\n\nP0：Local Files + Linear Attachment\nB2/COS 非 P0"
-    },
-    {
-      "id": "advanced",
-      "type": "text",
-      "x": -650,
-      "y": -180,
-      "width": 460,
-      "height": 390,
-      "color": "2",
-      "text": "# 高价值未充分触碰\n\nF-IDEMPOTENCY｜幂等与副作用\nF-SAGA｜跨系统补偿事务\nF-PROVENANCE｜生产谱系\nF-LIFESPAN｜长期退化\nF-BACKPRESSURE｜背压\nF-SCHEDULING｜调度"
-    },
-    {
-      "id": "chain",
-      "type": "text",
-      "x": -650,
-      "y": 300,
-      "width": 460,
-      "height": 360,
-      "color": "6",
-      "text": "# 因果研究顺序\n\nLONGRUN\n↓\nSTATE\n↓\nRECOVERY\n↓\nIDEMPOTENCY\n↓\nSAGA\n↓\nASSET\n↓\nPROVENANCE\n↓\nVERIFIABLE OUTCOME / LONG-EVAL\n↓\nLIFESPAN → BACKPRESSURE → SCHEDULING"
-    },
-    {
-      "id": "contracts",
-      "type": "text",
-      "x": -40,
-      "y": 500,
-      "width": 500,
-      "height": 370,
-      "color": "3",
-      "text": "# 当前冻结知识\n\nCheckpoint Contract\nCompletion Contract\nAsset Manifest\nFailure Taxonomy\nRecovery Matrix\nReliability Budget\nTrajectory Evidence\n\nNEXT：真实生产实施验收，不继续无边界扩研。"
-    },
-    {
-      "id": "runlog",
-      "type": "file",
-      "file": "AI问题解决Canvas/RUN_LOG_SCHEMA_v1.0.md",
-      "x": -40,
-      "y": 940,
-      "width": 500,
-      "height": 180,
-      "color": "3"
-    },
-    {
-      "id": "social_f",
-      "type": "text",
-      "x": -1280,
-      "y": 720,
-      "width": 520,
-      "height": 390,
-      "color": "3",
-      "text": "# SOCIAL-F｜社会解决状态\n\n软件工程外壳成熟；Agent 长程可靠性仍未成熟。\n\n9｜checkpoint / retry / resume / state persistence\n8–9｜幂等 / 补偿事务 / 基础 observability\n5–6｜Agent 长程可靠性\n3–4｜24h 无人创意生产\n\n结论：不要研究成熟软件工程本身，要研究它包住非确定性 AI 后是否仍可靠。"
-    },
-    {
-      "id": "social_f_absorb",
-      "type": "text",
-      "x": -1840,
-      "y": 660,
-      "width": 470,
-      "height": 340,
-      "color": "5",
-      "text": "# ABSORB｜7–10\n\ncheckpoint / retry / resume\nstate persistence / logging\nhash / manifest / provenance 基础\nidempotency / transaction / compensation\nbackpressure / scheduler 基础\n\n动作：工程实现，停止当研究题。"
-    },
-    {
-      "id": "social_f_adapt",
-      "type": "text",
-      "x": -1280,
-      "y": 1160,
-      "width": 500,
-      "height": 320,
-      "color": "4",
-      "text": "# ADAPT｜4–6\n\nAgent checkpoint 存什么\n非确定性 retry 策略\nAI asset provenance\nAgent failure taxonomy\nlong-task observability\n\n动作：适配本地 4080 + Linear + Worker/Codex 工作流。"
-    },
-    {
-      "id": "social_f_research",
-      "type": "text",
-      "x": -700,
-      "y": 1160,
-      "width": 520,
-      "height": 350,
-      "color": "2",
-      "text": "# RESEARCH｜开放缺口\n\n核心：24h 创意生产可靠性\n\n成熟工程外壳 + 非确定性模型\n→ 是否能长期连续生产？\n→ 错误是否累积 / 扩散？\n→ 恢复后是否保持创作状态？\n\n证据：MAP 2026 将 reliability 列为生产 Agent 首要挑战；Datadog 2026 仍观察到明显生产调用失败与容量瓶颈。"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e1",
-      "fromNode": "root",
-      "toNode": "f1",
-      "label": "IS-A",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e2",
-      "fromNode": "root",
-      "toNode": "f2",
-      "label": "IS-A",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e3",
-      "fromNode": "root",
-      "toNode": "f3",
-      "label": "IS-A",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e4",
-      "fromNode": "root",
-      "toNode": "f4",
-      "label": "IS-A",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e5",
-      "fromNode": "root",
-      "toNode": "f5",
-      "label": "IS-A",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e6",
-      "fromNode": "root",
-      "toNode": "asset",
-      "label": "ACTIVE LINE",
-      "fromSide": "left",
-      "toSide": "right"
-    },
-    {
-      "id": "e7",
-      "fromNode": "root",
-      "toNode": "advanced",
-      "label": "OPEN / NEXT",
-      "fromSide": "left",
-      "toSide": "right"
-    },
-    {
-      "id": "e8",
-      "fromNode": "root",
-      "toNode": "chain",
-      "label": "研究顺序",
-      "fromSide": "left",
-      "toSide": "right"
-    },
-    {
-      "id": "e9",
-      "fromNode": "root",
-      "toNode": "contracts",
-      "label": "FROZEN KNOWLEDGE",
-      "fromSide": "bottom",
-      "toSide": "top"
-    },
-    {
-      "id": "e10",
-      "fromNode": "contracts",
-      "toNode": "runlog",
-      "label": "运行证据",
-      "fromSide": "bottom",
-      "toSide": "top"
-    },
-    {
-      "id": "e_social_f",
-      "fromNode": "root",
-      "toNode": "social_f",
-      "label": "SOCIAL STATE",
-      "fromSide": "left",
-      "toSide": "right"
-    },
-    {
-      "id": "e_social_f_absorb",
-      "fromNode": "social_f",
-      "toNode": "social_f_absorb",
-      "label": "ABSORB",
-      "fromSide": "left",
-      "toSide": "right"
-    },
-    {
-      "id": "e_social_f_adapt",
-      "fromNode": "social_f",
-      "toNode": "social_f_adapt",
-      "label": "ADAPT",
-      "fromSide": "bottom",
-      "toSide": "top"
-    },
-    {
-      "id": "e_social_f_research",
-      "fromNode": "social_f",
-      "toNode": "social_f_research",
-      "label": "RESEARCH",
-      "fromSide": "bottom",
-      "toSide": "top"
-    }
-  ],
-  "metadata": {
-    "version": "1.0",
-    "frontmatter": {},
-    "social_state_version": "R4-2026-10-06"
-  }
+	"nodes":[
+		{"id":"root","type":"text","text":"# F｜工业与生产｜L2\n\n核心：确定性工程外壳 + 非确定性智能核心\n\n冻结目标：状态不丢 / 失败能续 / 结果能验\n状态：研究主线已收束 → 实施验证","x":0,"y":0,"width":500,"height":330,"color":"4"},
+		{"id":"f1","type":"text","text":"# F1｜Reliability\n能否长期持续正确？\n\nPARTIAL / 核心开放\n→ F-LONGRUN\n→ horizon / checkpoint / escalation","x":620,"y":-600,"width":430,"height":260,"color":"4"},
+		{"id":"f2","type":"text","text":"# F2｜Durability\n中断后能否继续？\n\n较成熟\n→ F-STATE\n→ F-RECOVERY\n→ checkpoint / resume / retry","x":620,"y":-290,"width":430,"height":270,"color":"5"},
+		{"id":"f3","type":"text","text":"# F3｜Verifiability\n怎么证明真的完成且正确？\n\nPARTIAL / 高价值\n→ Completion Contract\n→ 外部证据\n→ process + outcome eval","x":620,"y":40,"width":430,"height":280,"color":"4"},
+		{"id":"f4","type":"text","text":"# F4｜Controllability\n能否只做允许的动作？\n\n快速发展\n→ least privilege\n→ sandbox / tool policy\n→ approval / trajectory monitoring","x":620,"y":390,"width":430,"height":270,"color":"5"},
+		{"id":"f5","type":"text","text":"# F5｜Scalability\n放大后能否保持成本 / 吞吐 / 质量？\n\nPARTIAL\n→ backpressure\n→ routing / scheduling\n→ capacity / cost control","x":620,"y":720,"width":430,"height":270,"color":"5"},
+		{"id":"asset","type":"text","text":"# F-ASSET｜生产资产流\n\nasset identity / URI / version / hash / manifest / provenance / permission / lifecycle\n\nP0：Local Files + Linear Attachment\nB2/COS 非 P0","x":-650,"y":-560,"width":460,"height":300,"color":"4"},
+		{"id":"advanced","type":"text","text":"# 高价值未充分触碰\n\nF-IDEMPOTENCY｜幂等与副作用\nF-SAGA｜跨系统补偿事务\nF-PROVENANCE｜生产谱系\nF-LIFESPAN｜长期退化\nF-BACKPRESSURE｜背压\nF-SCHEDULING｜调度","x":-650,"y":-180,"width":460,"height":390,"color":"2"},
+		{"id":"chain","type":"text","text":"# 因果研究顺序\n\nLONGRUN\n↓\nSTATE\n↓\nRECOVERY\n↓\nIDEMPOTENCY\n↓\nSAGA\n↓\nASSET\n↓\nPROVENANCE\n↓\nVERIFIABLE OUTCOME / LONG-EVAL\n↓\nLIFESPAN → BACKPRESSURE → SCHEDULING","x":-650,"y":300,"width":460,"height":360,"color":"6"},
+		{"id":"contracts","type":"text","text":"# 当前冻结知识\n\nCheckpoint Contract\nCompletion Contract\nAsset Manifest\nFailure Taxonomy\nRecovery Matrix\nReliability Budget\nTrajectory Evidence\n\nNEXT：真实生产实施验收，不继续无边界扩研。","x":-40,"y":500,"width":500,"height":370,"color":"3"},
+		{"id":"runlog","type":"file","file":"AI问题解决Canvas/RUN_LOG_SCHEMA_v1.0.md","x":-40,"y":940,"width":500,"height":180,"color":"3"},
+		{"id":"social_f","type":"text","text":"# SOCIAL-F｜社会解决状态\n\n软件工程外壳成熟；Agent 长程可靠性仍未成熟。\n\n9｜checkpoint / retry / resume / state persistence\n8–9｜幂等 / 补偿事务 / 基础 observability\n5–6｜Agent 长程可靠性\n3–4｜24h 无人创意生产\n\n结论：不要研究成熟软件工程本身，要研究它包住非确定性 AI 后是否仍可靠。","x":-1280,"y":720,"width":520,"height":390,"color":"3"},
+		{"id":"social_f_absorb","type":"text","text":"# ABSORB｜7–10\n\ncheckpoint / retry / resume\nstate persistence / logging\nhash / manifest / provenance 基础\nidempotency / transaction / compensation\nbackpressure / scheduler 基础\n\n动作：工程实现，停止当研究题。","x":-1840,"y":660,"width":470,"height":340,"color":"5"},
+		{"id":"social_f_adapt","type":"text","text":"# ADAPT｜4–6\n\nAgent checkpoint 存什么\n非确定性 retry 策略\nAI asset provenance\nAgent failure taxonomy\nlong-task observability\n\n动作：适配本地 4080 + Linear + Worker/Codex 工作流。","x":-1280,"y":1160,"width":500,"height":320,"color":"4"},
+		{"id":"social_f_research","type":"text","text":"# RESEARCH｜开放缺口\n\n核心：24h 创意生产可靠性\n\n成熟工程外壳 + 非确定性模型\n→ 是否能长期连续生产？\n→ 错误是否累积 / 扩散？\n→ 恢复后是否保持创作状态？\n\n证据：MAP 2026 将 reliability 列为生产 Agent 首要挑战；Datadog 2026 仍观察到明显生产调用失败与容量瓶颈。","x":-700,"y":1160,"width":520,"height":350,"color":"2"}
+	],
+	"edges":[
+		{"id":"e1","toFloating":false,"fromNode":"root","fromSide":"right","toNode":"f1","toSide":"left","label":"IS-A"},
+		{"id":"e2","fromNode":"root","fromSide":"right","toNode":"f2","toSide":"left","label":"IS-A"},
+		{"id":"e3","fromNode":"root","fromSide":"right","toNode":"f3","toSide":"left","label":"IS-A"},
+		{"id":"e4","fromNode":"root","fromSide":"right","toNode":"f4","toSide":"left","label":"IS-A"},
+		{"id":"e5","fromNode":"root","fromSide":"right","toNode":"f5","toSide":"left","label":"IS-A"},
+		{"id":"e6","fromNode":"root","fromSide":"left","toNode":"asset","toSide":"right","label":"ACTIVE LINE"},
+		{"id":"e7","fromNode":"root","fromSide":"left","toNode":"advanced","toSide":"right","label":"OPEN / NEXT"},
+		{"id":"e8","fromNode":"root","fromSide":"left","toNode":"chain","toSide":"right","label":"研究顺序"},
+		{"id":"e9","fromNode":"root","fromSide":"bottom","toNode":"contracts","toSide":"top","label":"FROZEN KNOWLEDGE"},
+		{"id":"e10","fromNode":"contracts","fromSide":"bottom","toNode":"runlog","toSide":"top","label":"运行证据"},
+		{"id":"e_social_f","fromNode":"root","fromSide":"left","toNode":"social_f","toSide":"right","label":"SOCIAL STATE"},
+		{"id":"e_social_f_absorb","fromNode":"social_f","fromSide":"left","toNode":"social_f_absorb","toSide":"right","label":"ABSORB"},
+		{"id":"e_social_f_adapt","fromNode":"social_f","fromSide":"bottom","toNode":"social_f_adapt","toSide":"top","label":"ADAPT"},
+		{"id":"e_social_f_research","fromNode":"social_f","fromSide":"bottom","toNode":"social_f_research","toSide":"top","label":"RESEARCH"}
+	],
+	"metadata":{
+		"version":"1.0",
+		"frontmatter":{},
+		"social_state_version":"R4-2026-10-06"
+	}
 }

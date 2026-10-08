@@ -1,0 +1,47 @@
+{
+  "schema": "CHARACTER_AGENT_NX_XN_LOG",
+  "schema_version": "1.0",
+  "updated_at": "2026-10-07T18:40:00+08:00",
+  "mode": "人在环外（74 未参与本轮）→ 所有候选 XN 一律停在 candidate，LOCK_PENDING_USER",
+  "nx_records": [
+    {
+      "nx_id": "NX-ROLE-01",
+      "statement": "四宫格逐格是否同一角色，决定素材能否进入角色代理链（cross-cell identity）",
+      "human_signals": [
+        {"source": "674-173 / Q-CHAR-001.4", "detail": "74 人工逐格审 H04 TL/TR/BL/BR，正面/半侧身份审核 DONE"},
+        {"source": "用户 P0 候选选择", "detail": "H04 为用户明确选过的视觉候选（674-257 user_confirmed_fields）"}
+      ],
+      "evidence_count": 3,
+      "counterexample_count": 0,
+      "evidence_assets": ["H04-GRID-20260929", "H06-GRID-20260929", "H09-GRID-20260929"],
+      "current_nx_statement": "同角色感由 斗笠/发长/服制轮廓/器物 等可见锚共同决定",
+      "candidate_xn": "四宫格逐格同角色一致性（identity/proportion/costume 三项全 PASS）为素材入库硬门",
+      "upgrade_basis": "同类判断在 3 个样本重复出现 + A/B（H04 双版四宫格）可稳定区分",
+      "status": "CANDIDATE_LOCK_PENDING_USER"
+    },
+    {
+      "nx_id": "NX-ROLE-02",
+      "statement": "HEAD_ONLY 头像切片不能承担身体/服装/姿态职责",
+      "human_signals": [
+        {"source": "674-219 STOP 规则 + 674-216 T01 复盘", "detail": "H01/H08/H10 因 HEAD_ONLY 被退回 L2 视觉线（用户认可的处理方向）"}
+      ],
+      "evidence_count": 3,
+      "counterexample_count": 0,
+      "evidence_assets": ["H01", "H08", "H10"],
+      "candidate_xn": "view_type=HEAD_ONLY 的素材 usable_roles 仅允许 IDENTITY",
+      "upgrade_basis": "三例同类 STOP + 根因 R1 实证（头像切片直送导致 camera 失控）",
+      "status": "CANDIDATE_LOCK_PENDING_USER"
+    },
+    {
+      "nx_id": "NX-ROLE-03",
+      "statement": "“像但没味道”与“身份漂移”是否两类问题（NX-AVATAR-02 延伸到角色域）",
+      "human_signals": [],
+      "evidence_count": 0,
+      "counterexample_count": 0,
+      "candidate_xn": null,
+      "status": "OPEN_NX_WAITING_HUMAN"
+    }
+  ],
+  "locked_xn": [],
+  "note": "locked_xn 为空是设计使然：674-280 规定 AI 不得把 NX 擅自升级为正式 XN；74 回环后逐条拍板即可晋升。"
+}

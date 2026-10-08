@@ -1,1 +1,17 @@
-{"nodes":[{"id":"root","type":"text","x":0,"y":0,"width":520,"height":330,"color":"4","text":"# E｜122 REAL-EVAL\n机器完成 ≠ 真正做对。\nL1 Outcome Validity\nL2 Intent + Constraint Fidelity\nL3 Trajectory Quality"},{"id":"our","type":"text","x":620,"y":-200,"width":470,"height":340,"color":"4","text":"# OUR CENTER\n三层评价协议已冻结\n下一步：30–50历史case盲标预测\n当前实际掌握度：约30/100（未完成数据集/基线/统计验证）"},{"id":"social","type":"text","x":-650,"y":-200,"width":470,"height":360,"color":"3","text":"# SOCIAL-E\n社会成熟度：约60/100\n成熟：task success / pass-fail\n半成熟：trajectory / process evaluation\n开放：真实用户意图忠实度、长程部署有效性\n→ 详见 LEARNING_GAP.canvas"},{"id":"gap","type":"text","x":0,"y":470,"width":520,"height":300,"color":"2","text":"# OUR RESEARCH GAP\nIntent Fidelity\n能否预测74接受 / 否决 / 重改？\n必须用外部历史结果验证，禁止自产自测高分。\n\n贡献候选→详见 CONTRIBUTION.canvas"}],"edges":[{"id":"e1","fromNode":"root","toNode":"our","label":"OUR"},{"id":"e2","fromNode":"root","toNode":"social","label":"SOCIAL"},{"id":"e3","fromNode":"root","toNode":"gap","label":"RESEARCH"}]}
+{
+	"nodes":[
+		{"id":"root","type":"text","x":0,"y":0,"width":520,"height":330,"color":"4","text":"# E｜122 REAL-EVAL\n机器完成 ≠ 真正做对。\nL1 Outcome Validity\nL2 Intent + Constraint Fidelity\nL3 Trajectory Quality"},
+		{"id":"our","type":"text","x":620,"y":-200,"width":470,"height":340,"color":"4","text":"# OUR CENTER\n三层评价协议已冻结\n下一步：30–50历史case盲标预测\n当前实际掌握度：约30/100（未完成数据集/基线/统计验证）"},
+		{"id":"social","type":"text","x":-650,"y":-200,"width":470,"height":360,"color":"3","text":"# SOCIAL-E\n社会成熟度：约60/100\n成熟：task success / pass-fail\n半成熟：trajectory / process evaluation\n开放：真实用户意图忠实度、长程部署有效性\n→ 详见 LEARNING_GAP.canvas"},
+		{"id":"gap","type":"text","x":0,"y":470,"width":520,"height":300,"color":"2","text":"# OUR RESEARCH GAP\nIntent Fidelity\n能否预测74接受 / 否决 / 重改？\n必须用外部历史结果验证，禁止自产自测高分。\n\n贡献候选→详见 CONTRIBUTION.canvas"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","toNode":"our","label":"OUR","fromSide":"right","toSide":"left"},
+		{"id":"e2","fromNode":"root","toNode":"social","label":"SOCIAL","fromSide":"left","toSide":"right"},
+		{"id":"e3","fromNode":"root","toNode":"gap","label":"RESEARCH","fromSide":"bottom","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
