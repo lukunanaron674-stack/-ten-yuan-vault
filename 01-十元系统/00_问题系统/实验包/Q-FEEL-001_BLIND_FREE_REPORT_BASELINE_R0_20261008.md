@@ -38,7 +38,7 @@ top3_overlap: null
 | internal_asset_id | declared SHA256 | version | original status |
 |---|---|---|---|
 | AV-20261008-BOARD-C-02 | 6934b7e0cb536bd06f7941851b6368edf703e2df8046f4e4b8f79abd7fe7bf45 | v1 | UNREVIEWED |
-| AV-20261008-BOARD-C-04 | a333396bd303aadd44bbf5bc226897010e0a5 | v3 | UNREVIEWED |
+| AV-20261008-BOARD-C-04 | a333396bd303aadd44bbf5bc139adf01ea816c485547795f9bc226897010e0a5 | v3 | UNREVIEWED |
 | AV-20261008-BOARD-C-05 | df31915bc444982d2518aefd922fe95e45d1c55ec3678edfa764611d2ad6acc2 | v2 | UNREVIEWED |
 | AV-20261008-BOARD-C-12 | c96d9eb0f97783f6c86410c23cd4e790cc78ac825b60ec0a803025568b644a16 | v1 | UNREVIEWED |
 | AV-20261008-BOARD-C-13 | eb15e9b5c024f15c38213281d81813cc673aabc2c877d87ffc2c5aa56c0f2372 | v2 | UNREVIEWED |
@@ -88,3 +88,26 @@ Stage B（在Stage A锁定后）：
 - `HUMAN_GATE=NOT_READY`; `NEXT=VERIFY_ASSET_BYTES_AND_BLIND_DISPLAY`。
 - 研究写回位置：Q-FEEL-001 原Q + Lina01/674-104；跨系统证据总控 Lina00/674-93。
 - 禁止改写感受正本、伪报USER PASS、借用独立五轴A/B receipt计本包实验成绩。
+
+
+## 8. R1｜真实图像字节核验回执（2026-10-08）
+
+- receipt_id: `Q-FEEL-001-BLIND-R0-R1-ASSET-VERIFY-20261008`
+- source_issue: Linear `674-293`; source_comment_id: `fd93a4cb-4a39-4702-8ea3-c778a8cb83fc`
+- verification_method: 上一自动轮读取6个Linear image/png附件原字节，复算SHA256，并检查PNG签名/IHDR尺寸；本次为**既有回执的回写**，不冒充再次下载复算。
+- result: 6/6 SHA256匹配；6个SHA互不相同；第04号原预注册文件哈希被截断，现已更正为完整64位值。
+
+| asset_id | bytes | size | verified_sha256 |
+|---|---:|---|---|
+| AV-20261008-BOARD-C-02 | 113041 | 324×324 | `6934b7e0cb536bd06f7941851b6368edf703e2df8046f4e4b8f79abd7fe7bf45` |
+| AV-20261008-BOARD-C-04 | 90223 | 258×324 | `a333396bd303aadd44bbf5bc139adf01ea816c485547795f9bc226897010e0a5` |
+| AV-20261008-BOARD-C-05 | 121573 | 359×324 | `df31915bc444982d2518aefd922fe95e45d1c55ec3678edfa764611d2ad6acc2` |
+| AV-20261008-BOARD-C-12 | 120638 | 324×324 | `c96d9eb0f97783f6c86410c23cd4e790cc78ac825b60ec0a803025568b644a16` |
+| AV-20261008-BOARD-C-13 | 121137 | 309×324 | `eb15e9b5c024f15c38213281d81813cc673aabc2c877d87ffc2c5aa56c0f2372` |
+| AV-20261008-BOARD-C-15 | 105430 | 304×324 | `2afe0baa6154f1864bfcfb24dba6af9f5d35da90f816d319e18571e6c439cf72` |
+
+**尚未完成：** parent_asset_id与版本链核对；可持续访问的盲化展示；前期曝光/选择偏差登记；随机盲码冻结。因此 **HUMAN_GATE=NOT_READY**，`status=WAIT_BLIND_DISPLAY_AND_LINEAGE`。
+
+**证据纪律：** C2→C2；E0→E0；`human_feeling_profile=null`；`profile_mae=null`；`top1_hit=null`；`top3_overlap=null`。6张图是**资产字节证据**，不是人类感受实验6例；不计有效实验轮次，不引用独立五轴A/B为本实验成果。
+
+NEXT：核对父图/裁切版本与持久可显示的盲化素材后，再决定是否进入最小HUMAN_GATE。
