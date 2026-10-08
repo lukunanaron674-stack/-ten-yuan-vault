@@ -25,3 +25,33 @@ complexity 与 comprehensibility 都显著预测 interest。后续研究还发�
 
 ## 来源
 Paul J. Silvia (2005), Cognitive Appraisals and Interest in Visual Art: Exploring an Appraisal Theory of Aesthetic Emotions. Empirical Studies of the Arts 23(2), 119–133.
+
+## 英文名词中文对照
+
+- **aesthetic emotion**：审美情绪或艺术体验中的情绪，不只等于“好看”。
+- **appraisal**：评价，指观看者对作品和自身理解状态的意义判断。
+- **interest**：兴趣，想继续看、理解和探索的倾向。
+- **complexity**：复杂度，作品包含多少变化、层次或难以一眼看完的结构。
+- **comprehensibility**：可理解性，观看者觉得自己能不能抓住作品的组织方式。
+- **multilevel model**：多层模型，同时考虑作品、观看者和评分层面的差异。
+
+## 论文内容大白话扩展
+
+Silvia 研究的是：为什么有些现代艺术作品让人想继续看，而不是只让人说“喜欢”或“不喜欢”？他的思路是把兴趣看成一种评价结果。观看者会同时判断作品有多复杂、自己能不能理解；复杂度和可理解性一起影响兴趣。太简单可能没东西可发现，复杂到完全抓不住也可能让人放弃，最容易产生兴趣的往往是“有挑战，但我觉得还能理解”。
+
+这类研究的关键是把一句“很有感觉”拆成可测的步骤：先让参与者报告作品复杂不复杂、能不能理解，再报告兴趣强不强，然后检验前面的评价是否能预测后面的兴趣。这样，审美情绪就不再只是评论词，而变成一条可以重复测试的路径。
+
+大白话例子：一张完全空白的图可能太简单，一张信息堆满、看不出重点的图可能太难；一张有秩序但需要多看几秒才能发现关系的图，往往更容易让人产生探索欲。这个例子不能直接证明三元，但能示范怎样把感受拆成可操纵的视觉关系和可测的体验结果。
+
+## 和感受三元的具体接口
+
+它给三元一个实用的实验模板：不要一上来测全部感受，可以先选一个明确体验，再控制一两个关系变量，看它是否稳定预测体验。比如改变构图关系、颜色对比或空间秩序，测兴趣、敬畏或压迫感的变化；再观察 X/Z/N 是否比简单的复杂度评分提供更多信息。
+
+## 不能乱推出
+
+兴趣能被评价预测，不代表所有审美情绪都由同一套关系产生；艺术训练、文化经验和任务说明也可能改变可理解性判断。
+
+## 来源校正
+
+Paul J. Silvia (2005), *Cognitive Appraisals and Interest in Visual Art: Exploring an Appraisal Theory of Aesthetic Emotions*. DOI: [10.2190/12AV-AH2P-MCEH-289E](https://doi.org/10.2190/12AV-AH2P-MCEH-289E)。
+可并读 Silvia (2006), *Artistic Training and Interest in Visual Art*, DOI: [10.2190/DX8K-6WEA-6WPA-FM84](https://doi.org/10.2190/DX8K-6WEA-6WPA-FM84)。
