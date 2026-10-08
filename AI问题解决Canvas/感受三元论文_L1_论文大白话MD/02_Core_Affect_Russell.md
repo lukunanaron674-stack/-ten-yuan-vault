@@ -4,10 +4,10 @@
 复杂情绪下面可能先有一种更基础的“我现在整体感觉好不好、有没有劲”的底层状态。
 
 ## 它在研究什么
-Russell 2003 试图把 emotion、mood 等现象下面更基础的共同部分抽出来，称为 core affect。
+Russell 2003 试图把 emotion（情绪）、mood（心境/心情） 等现象下面更基础的共同部分抽出来，称为 core affect（核心情感状态）。
 
 ## 核心想法
-核心感受可被体验为简单的 pleasant–unpleasant 与 energized–enervated 等状态；它会影响知觉、认知和行为，也受内外因素影响。
+核心感受可被体验为简单的 pleasant（愉悦）–unpleasant（不愉悦） 与 energized（有能量）–enervated（低能量） 等状态；它会影响知觉、认知和行为，也受内外因素影响。
 
 ## 白话理解
 “愤怒”“敬畏”“怀念”是已经有名字的复杂东西；在它们下面，人可能先处于舒服/难受、激活/低能量这样的底色。
@@ -16,23 +16,23 @@ Russell 2003 试图把 emotion、mood 等现象下面更基础的共同部分抽
 它给三元一个很重要的问题：X/Z/N 到底想描述“底层感受状态”，还是描述“构成感受的关系结构”？这两个不能混。
 
 ## 可以继续发散
-- 三元是否与 core affect 正交？
-- 同一个 valence/arousal 状态能否出现不同 X/Z/N 关系？
+- 三元是否与 core affect（核心情感状态） 正交？
+- 同一个 valence（效价）/arousal（唤醒） 状态能否出现不同 X/Z/N 关系？
 - 如果能，三元可能补充已有二维模型没有的信息。
 
 ## 不能乱推出
-Core Affect 不是 X/Z/N 的外部证明，也不等于“所有复杂情绪都只是两个数”。
+Core Affect（核心情感状态） 不是 X/Z/N 的外部证明，也不等于“所有复杂情绪都只是两个数”。
 
 ## 来源
 James A. Russell (2003), Core affect and the psychological construction of emotion. Psychological Review 110(1), 145–172. DOI: 10.1037/0033-295X.110.1.145.
 
-## 英文名词中文对照
+## 英文名词中文对照（正文采用“英文（中文）”并排标注）
 
-- **core affect**：核心情感状态，尚未被命名或解释的原始感觉底色。
-- **pleasant–unpleasant**：愉悦—不愉悦，回答“舒服还是难受”。
-- **activated–deactivated**：激活—去激活，回答“有劲还是没劲”。
-- **affective quality**：刺激的情感性质，例如一张脸让人觉得亲切或危险。
-- **emotional episode**：情绪事件，指被归因、被解释成“我在害怕／生气”的完整过程。
+- **core affect（核心情感状态）**：尚未被命名或解释的原始感觉底色。
+- **pleasant–unpleasant（愉悦—不愉悦）**：回答“舒服还是难受”。
+- **activated–deactivated（激活—去激活）**：回答“有劲还是没劲”。
+- **affective quality（刺激的情感性质）**：例如一张脸让人觉得亲切或危险。
+- **emotional episode（情绪事件）**：指被归因、被解释成“我在害怕／生气”的完整过程。
 
 ## 论文内容大白话扩展
 
@@ -49,3 +49,17 @@ Russell 先把日常语言里混在一起的“心情、情绪、感觉”拆开
 ## 不能乱推出
 
 核心情感状态不是 X/Z/N 的实验证明，也不等于“所有复杂情绪都只是两个数”。它是一个底层描述框架，三元是否增加信息仍需独立实验。
+
+---
+
+## 我的阅读备注
+
+> [!note] 我的书写栏
+>
+>
+>
+>
+>
+>
+>
+>

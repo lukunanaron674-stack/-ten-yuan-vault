@@ -20,13 +20,12 @@
 		{"id":"dir1_sovereignty","type":"text","text":"# 方向 1｜创作主权 / 个性\n\n**WHY**\nAI 无限生产力下，创作者如何保持：\n- 个人风格\n- 审美判断\n- 创作意志\n- 最终决定权\n\n母题最大，但本科论文必须缩小。","x":-1000,"y":1550,"width":560,"height":420,"color":"2"},
 		{"id":"three_dir_r1","type":"file","file":"AI问题解决Canvas/论文三方向_R1_边界收束.md","x":-830,"y":1080,"width":560,"height":220,"color":"2"},
 		{"id":"dir_f_bg","type":"text","text":"# F｜长流程可靠生产\n\n**PRODUCTION BACKGROUND**\n不是当前三方向之一。\n\n作用：\n- AI 高产/批量时代背景\n- 长流程实验环境\n- 作品集/就业支撑\n- 验证意图是否真的能被持续保持","x":1530,"y":2255,"width":560,"height":400,"color":"6"},
-		{"id":"history","type":"file","file":"AI问题解决Canvas/前辈/论文同辈研究地图_R8_10个候选方向_不冻结.md","x":-720,"y":-1060,"width":500,"height":1240,"color":"6"},
+		{"id":"history","type":"file","file":"AI问题解决Canvas/论文同辈研究地图_R8_10个候选方向_不冻结.md","x":-720,"y":-1060,"width":500,"height":1240,"color":"6"},
 		{"id":"history_summary","type":"text","text":"# 历史候选 01–10\n\n01 角色越画越不像\n02 角色和场景不像一个世界\n03 把画画感觉说给 AI\n04 同样要求不同写法\n05 参考图职责\n06 AI 图怎样算合格\n07 一张好图扩成整套资产\n08 失败图变反例库\n09 人和 AI 谁负责哪一步\n10 连续镜头为什么断\n\n**保留历史编号，不覆盖。**","x":-1160,"y":200,"width":500,"height":520,"color":"6"},
 		{"id":"c11","type":"text","text":"# 候选 11｜结构化创作意图 → 真实创作决策\n\n**核心命题**\n结构化创作意图对真实创作决策具有预测价值。\n\nAI 不只理解“对不对 / 好不好看”，还要理解：\n- Relation｜关系\n- Priority｜优先级\n- Rationale｜理由\n- Dynamic Trace｜动态轨迹\n\n然后提前预测：\nACCEPT｜收\nREWORK｜改\nREJECT｜扔\n\n接口：118 + 119 + 120 + 122\n方法门：112\n\n状态：**重点候选 / NOT FROZEN**","x":560,"y":-1400,"width":660,"height":700,"color":"2"},
 		{"id":"meaning","type":"text","text":"# 122｜从“正确”走向“创作者真实选择”\n\n创作评价不能只问：\n- 对不对\n- 像不像\n- 画得好不好\n\n还要问：\n- 是不是我的审美方向\n- 是不是我的创作意图\n- 我会不会真的继续用它\n\nREJECT ≠ 画得差。\n\n候选 11 的推进：\n**结构化创作意图能不能帮助 AI 更准确预测个体创作者的真实审美/创作决策？**","x":920,"y":-610,"width":660,"height":520,"color":"5"},
 		{"id":"interfaces","type":"text","text":"# 118 / 119 / 120 / 122 怎么接\n\n118｜把隐性的个人风格 / 审美判断结构化\n↓\n119｜表示关系、优先级、理由、动态轨迹\n↓\n120｜多个意图冲突时做优先级 + 非目标保持\n↓\n122｜检验 AI 是否更能预测真实 ACCEPT / REWORK / REJECT\n\n这条链的技术意义：\n**Prompt understanding → Structured Creative Intent Understanding**","x":1340,"y":100,"width":620,"height":610,"color":"3"},
-		{"id":"core_dims","type":"text","text":"# 结构化创作意图｜四个核心维度\n\n**Relation｜关系**\n谁增强谁 / 压制谁 / 补偿谁\n\n**Priority｜优先级**\n冲突时保谁、牺牲谁\n\n**Rationale｜理由**\n为什么收 / 改 / 扔\n\n**Dynamic Trace｜动态轨迹**\n意图如何更新、冻结、失效、转向\n\n十元 / 生克补 / 动态链 = 候选关系语法，不预设正确。","x":1960,"y":-1440,"width":620,"height":560,"color":"4"},
-		{"id":"gan_shou_entry","type":"text","text":"# 🧪 感受三元论文｜学术邻居与定位（NEW）\n\n来源：74（另一通道）\n\n另一篇论文轴线：\n具体感受 → 统一关系提取 → X/Z/N → 十元复合结构\n\n六个外部学术邻居：\nA Russell｜B Scherer｜C Schloss\nD GEW ｜E 混合感受｜H Silvia\n\n⚠️ 与候选 11/12 是不同论文，骨架不混\n\n📄 [[感受三元论文_学术邻居与定位_登记]]\n🗺 [[感受三元论文_L1.canvas]]","x":-1900,"y":-1060,"width":620,"height":500,"color":"5"}
+		{"id":"core_dims","type":"text","text":"# 结构化创作意图｜四个核心维度\n\n**Relation｜关系**\n谁增强谁 / 压制谁 / 补偿谁\n\n**Priority｜优先级**\n冲突时保谁、牺牲谁\n\n**Rationale｜理由**\n为什么收 / 改 / 扔\n\n**Dynamic Trace｜动态轨迹**\n意图如何更新、冻结、失效、转向\n\n十元 / 生克补 / 动态链 = 候选关系语法，不预设正确。","x":1960,"y":-1440,"width":620,"height":560,"color":"4"}
 	],
 	"edges":[
 		{"id":"e0","toFloating":false,"fromFloating":false,"fromNode":"history","fromSide":"right","toNode":"root","toSide":"left","label":"历史候选来源"},
@@ -54,8 +53,7 @@
 		{"id":"e_df","fromNode":"dir3_intent","fromSide":"right","toNode":"dir_f_bg","toSide":"left","label":"进入长期生产验证"},
 		{"id":"e_three_r2","fromNode":"three_dir_r1","fromSide":"bottom","toNode":"three_dir_r2","toSide":"top","label":"R2｜15篇论文写法"},
 		{"id":"e_r2_formats","fromNode":"three_dir_r2","fromSide":"bottom","toNode":"r2_three_formats","toSide":"top","label":"三种格式"},
-		{"id":"e_r2_find","fromNode":"r2_three_formats","fromSide":"right","toNode":"r2_major_find","toSide":"left","label":"外部边界"},
-		{"id":"e_gs_entry","fromNode":"gan_shou_entry","fromSide":"right","toNode":"history","toSide":"left","label":"另一篇论文轴线"}
+		{"id":"e_r2_find","fromNode":"r2_three_formats","fromSide":"right","toNode":"r2_major_find","toSide":"left","label":"外部边界"}
 	],
 	"metadata":{
 		"version":"1.5",

@@ -1,455 +1,69 @@
 {
-  "nodes": [
-    {
-      "id": "A",
-      "type": "text",
-      "text": "# A｜能力\n\n感知｜理解｜推理｜学习｜生成｜规划｜记忆｜Agent｜多模态｜泛化\n\n**部分研究**",
-      "x": 0,
-      "y": -850,
-      "width": 360,
-      "height": 210,
-      "color": "5"
-    },
-    {
-      "id": "B",
-      "type": "text",
-      "text": "# B｜可靠性\n\n正确性｜鲁棒性｜幻觉｜不确定性｜可解释｜可验证｜长任务可靠性\n\n**上游支撑**",
-      "x": 499,
-      "y": -687,
-      "width": 360,
-      "height": 210,
-      "color": "6"
-    },
-    {
-      "id": "E",
-      "type": "text",
-      "text": "# E｜评价\n\n**ACTIVE**\nE-REAL-EVAL：CYCLE-01 DONE｜674-122\n冻结 L1 Outcome / L2 Intent+Constraint / L3 Trajectory 三层协议\nNEXT：E-H1 冻结30–50历史case并盲标预测",
-      "x": 499,
-      "y": 687,
-      "width": 360,
-      "height": 280,
-      "color": "4"
-    },
-    {
-      "id": "F",
-      "type": "text",
-      "text": "# F｜生产工程\n\n**RESEARCH CONVERGED / IMPLEMENTATION ACTIVE**\nF-LONGRUN：CYCLE-02 DONE\nRUN_LOG_SCHEMA v1.0：ACTIVE\nNEXT：累计 ≥5 条真实跨轮运行事件 → H-F1\nHOST：Windows / RTX3070 ACTIVE\nRTX4080 32G：PENDING_INTEGRATION\n4090 Cloud：RETIRED\nCodex：工作流执行中枢",
-      "x": 0,
-      "y": 850,
-      "width": 360,
-      "height": 450,
-      "color": "4"
-    },
-    {
-      "id": "G",
-      "type": "text",
-      "text": "# G｜安全\n\n恶意使用｜网络安全｜越权｜欺骗｜隐私｜对抗攻击｜高风险自主系统\n\n**背景**",
-      "x": -499,
-      "y": 687,
-      "width": 360,
-      "height": 210,
-      "color": "6"
-    },
-    {
-      "id": "I",
-      "type": "text",
-      "text": "# I｜基础资源\n\n算力｜数据｜芯片｜能源｜水｜模型效率｜基础设施\n\n**背景**",
-      "x": -808,
-      "y": -262,
-      "width": 360,
-      "height": 210,
-      "color": "6"
-    },
-    {
-      "id": "J",
-      "type": "text",
-      "text": "# J｜基础未知\n\n智能｜表征｜涌现｜推理机制｜泛化｜世界模型｜长期学习｜Agent边界\n\n**上游未知**",
-      "x": -499,
-      "y": -687,
-      "width": 360,
-      "height": 210,
-      "color": "2"
-    },
-    {
-      "id": "PAPER",
-      "type": "file",
-      "file": "AI问题解决Canvas/论文问题系统_L1.canvas",
-      "x": 1350,
-      "y": 520,
-      "width": 420,
-      "height": 210,
-      "color": "3"
-    },
-    {
-      "id": "PAPER_STATUS",
-      "type": "text",
-      "text": "# PAPER STATUS\n\n674-118：ACTIVE\n674-119：THEORY DONE → EXPERIMENT\n674-120：CYCLE-01 DONE\n674-121：CYCLE-01 DONE\n674-122：CYCLE-01 DONE → E-H1\n674-123：CYCLE-02 DONE\n\n注：阶段收束 ≠ 整个 issue DONE。",
-      "x": 1350,
-      "y": 790,
-      "width": 430,
-      "height": 285,
-      "color": "3"
-    },
-    {
-      "id": "H",
-      "type": "text",
-      "text": "# H｜社会与制度\n\n就业｜教育｜不平等｜信息生态｜法律责任｜版权｜作者性｜治理\n\n**部分研究**",
-      "x": -859,
-      "y": 332,
-      "width": 360,
-      "height": 210,
-      "color": "3"
-    },
-    {
-      "id": "D",
-      "type": "text",
-      "x": 990,
-      "y": 160,
-      "width": 360,
-      "height": 280,
-      "text": "# D｜人机协作\\n\\n**ACTIVE**\\nD-AGENCY｜674-121\\nROUND-1：四因子冻结 DONE\\nROUND-2：自主权分级 DONE\\nL3 AUTO / L2 AUTO+CHECKPOINT / L1 USER_REVIEW / L0 BLOCK\\nNEXT：ROUND-3 反馈沉淀",
-      "color": "4"
-    },
-    {
-      "id": "C",
-      "type": "text",
-      "text": "# C｜控制与对齐\n\n**ACTIVE**\nC-INTENT：THEORY DONE → EXPERIMENT｜674-119\nC-CONSTRAINT：CYCLE-01 DONE｜674-120\nNEXT：历史数据离线验证",
-      "x": 880,
-      "y": -420,
-      "width": 360,
-      "height": 280,
-      "color": "4"
-    },
-    {
-      "id": "MY_DIRECTION",
-      "type": "file",
-      "file": "AI问题解决Canvas/我的方向地图_L1.canvas",
-      "x": 1565,
-      "y": -280,
-      "width": 420,
-      "height": 210,
-      "color": "4"
-    },
-    {
-      "id": "root",
-      "type": "text",
-      "text": "# AI Problem–Solution–Unknown Graph\n\n**总状态栏｜2026-10-04｜STATUS SYNC**\nWindows｜RTX3070 Laptop ACTIVE\n4090 Cloud RETIRED｜4080 32G PENDING_INTEGRATION\n\nSCAN → RECOVER → VERIFY → DISPATCH → WORK → UPDATE\nRecover before Create｜Verify before Expand\n\nC-INTENT：THEORY DONE → EXPERIMENT DESIGN\nC-CONSTRAINT：CYCLE-01 DONE → OFFLINE LABEL\nD-AGENCY：CYCLE-01 DONE → LOG REPLAY\nE-REAL-EVAL：CYCLE-01 DONE → E-H1\nF-LONGRUN：CYCLE-02 DONE → ≥5 REAL RUN EVENTS\n\n论文：PAPER-00 ACTIVE｜3 RQ × 20 P\n每小时收束：Linear → MD → Canvas → Next Action",
-      "x": 150,
-      "y": -52,
-      "width": 420,
-      "height": 390,
-      "color": "1"
-    },
-    {
-      "id": "bff09d1f9ad4463f",
-      "type": "text",
-      "text": "",
-      "styleAttributes": {},
-      "x": 920,
-      "y": 2740,
-      "width": 400,
-      "height": 340
-    },
-    {
-      "id": "MY_SIX_ROOT",
-      "type": "text",
-      "x": -1500,
-      "y": -170,
-      "width": 460,
-      "height": 340,
-      "text": "# 我要解决的六个问题\n\nA｜能力\nC｜控制与对齐\nD｜人机协作\nE｜评价\nF｜生产工程\nH｜社会与制度\n\n**MY RESEARCH SCOPE｜L1 收束中心**",
-      "color": "4"
-    },
-    {
-      "id": "C_L2",
-      "type": "file",
-      "file": "AI问题解决Canvas/C_控制与对齐_L2.canvas",
-      "x": 1230,
-      "y": -420,
-      "width": 420,
-      "height": 180,
-      "color": "4"
-    },
-    {
-      "id": "F_L2",
-      "type": "file",
-      "file": "AI问题解决Canvas/F_工业与生产_L2.canvas",
-      "x": 420,
-      "y": 1260,
-      "width": 420,
-      "height": 180,
-      "color": "4"
-    },
-    {
-      "id": "USER_TO_SOCIETY",
-      "type": "file",
-      "file": "AI问题解决Canvas/278_USER_TO_SOCIETY/USER_TO_SOCIETY_最终总图.canvas",
-      "x": -1980,
-      "y": 300,
-      "width": 460,
-      "height": 220,
-      "color": "3"
-    },
-    {
-      "id": "USER_TO_SOCIETY_STATUS",
-      "type": "text",
-      "x": -1980,
-      "y": 580,
-      "width": 460,
-      "height": 260,
-      "color": "3",
-      "text": "# USER → SOCIETY｜674-278\\n\\nR1–R4 DONE\\n总系统社会可迁移价值：68/100（当前）\\n证据：E3-｜强内部 / 弱外部\\n\\n**STOP_EXTERNAL_VALIDATION**\\n唯一阻塞：独立使用者 / 陌生项目 / 对照实验"
-    },
-    {
-      "id": "USER_SOCIETY_ROOT",
-      "type": "text",
-      "x": -2500,
-      "y": 250,
-      "width": 480,
-      "height": 320,
-      "color": "3",
-      "text": "# 我的研究 → 社会\n\n**USER → SOCIETY 独立中心**\n\n研究：我的成果能帮助谁？\n解决什么真实问题？\n哪些是社会已有？\n哪些是我的转译 / 操作化 / 候选贡献？\n\n**674-278｜独立中心，不并入六问题中心**"
-    }
-  ],
-  "edges": [
-    {
-      "id": "eA",
-      "toFloating": false,
-      "fromNode": "root",
-      "fromSide": "top",
-      "toNode": "A",
-      "toSide": "bottom",
-      "label": "IS-A"
-    },
-    {
-      "id": "eB",
-      "fromNode": "root",
-      "fromSide": "top",
-      "toNode": "B",
-      "toSide": "bottom",
-      "label": "IS-A"
-    },
-    {
-      "id": "eC",
-      "fromNode": "root",
-      "fromSide": "right",
-      "toNode": "C",
-      "toSide": "left",
-      "label": "IS-A"
-    },
-    {
-      "id": "eD",
-      "fromNode": "root",
-      "fromSide": "right",
-      "toNode": "D",
-      "toSide": "left",
-      "label": "IS-A"
-    },
-    {
-      "id": "eE",
-      "fromNode": "root",
-      "fromSide": "bottom",
-      "toNode": "E",
-      "toSide": "top",
-      "label": "IS-A"
-    },
-    {
-      "id": "eF",
-      "fromFloating": false,
-      "fromNode": "root",
-      "fromSide": "bottom",
-      "toNode": "F",
-      "toSide": "top",
-      "label": "IS-A"
-    },
-    {
-      "id": "eG",
-      "fromNode": "root",
-      "fromSide": "bottom",
-      "toNode": "G",
-      "toSide": "top",
-      "label": "IS-A"
-    },
-    {
-      "id": "eH",
-      "fromNode": "root",
-      "fromSide": "left",
-      "toNode": "H",
-      "toSide": "right",
-      "label": "IS-A"
-    },
-    {
-      "id": "eI",
-      "fromNode": "root",
-      "fromSide": "left",
-      "toNode": "I",
-      "toSide": "right",
-      "label": "IS-A"
-    },
-    {
-      "id": "eJ",
-      "fromNode": "root",
-      "fromSide": "top",
-      "toNode": "J",
-      "toSide": "bottom",
-      "label": "IS-A"
-    },
-    {
-      "id": "dep0",
-      "fromNode": "C",
-      "fromSide": "left",
-      "toNode": "A",
-      "toSide": "bottom",
-      "label": "DEPENDS-ON"
-    },
-    {
-      "id": "dep1",
-      "fromNode": "C",
-      "fromSide": "left",
-      "toNode": "J",
-      "toSide": "right",
-      "label": "DEPENDS-ON"
-    },
-    {
-      "id": "dep2",
-      "fromNode": "D",
-      "fromSide": "top",
-      "toNode": "B",
-      "toSide": "bottom",
-      "label": "DEPENDS-ON"
-    },
-    {
-      "id": "dep3",
-      "fromFloating": false,
-      "fromNode": "E",
-      "fromSide": "top",
-      "toNode": "B",
-      "toSide": "bottom",
-      "label": "DEPENDS-ON"
-    },
-    {
-      "id": "dep4",
-      "fromNode": "F",
-      "fromSide": "top",
-      "toNode": "A",
-      "toSide": "bottom",
-      "label": "DEPENDS-ON"
-    },
-    {
-      "id": "dep5",
-      "fromNode": "F",
-      "fromSide": "top",
-      "toNode": "B",
-      "toSide": "bottom",
-      "label": "DEPENDS-ON"
-    },
-    {
-      "id": "ePaper",
-      "fromNode": "root",
-      "fromSide": "right",
-      "toNode": "PAPER",
-      "toSide": "left",
-      "label": "论文研究切片"
-    },
-    {
-      "id": "ePaperStatus",
-      "fromNode": "PAPER",
-      "fromSide": "bottom",
-      "toNode": "PAPER_STATUS",
-      "toSide": "top",
-      "label": "STATUS-SYNC"
-    },
-    {
-      "id": "eMyDirection",
-      "fromNode": "root",
-      "fromSide": "right",
-      "toNode": "MY_DIRECTION",
-      "toSide": "left",
-      "label": "我的方向收束"
-    },
-    {
-      "id": "eMySixA",
-      "fromNode": "MY_SIX_ROOT",
-      "toNode": "A",
-      "label": "我要解决",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "eMySixC",
-      "fromNode": "MY_SIX_ROOT",
-      "toNode": "C",
-      "label": "我要解决",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "eMySixD",
-      "fromNode": "MY_SIX_ROOT",
-      "toNode": "D",
-      "label": "我要解决",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "eMySixE",
-      "fromNode": "MY_SIX_ROOT",
-      "toNode": "E",
-      "label": "我要解决",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "eMySixF",
-      "fromNode": "MY_SIX_ROOT",
-      "toNode": "F",
-      "label": "我要解决",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "eMySixH",
-      "fromNode": "MY_SIX_ROOT",
-      "toNode": "H",
-      "label": "我要解决",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "eC_L2",
-      "fromNode": "C",
-      "toNode": "C_L2",
-      "label": "下钻 L2",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "eF_L2",
-      "fromNode": "F",
-      "toNode": "F_L2",
-      "label": "下钻 L2",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "eUserSocietyStatus",
-      "fromNode": "USER_TO_SOCIETY",
-      "toNode": "USER_TO_SOCIETY_STATUS",
-      "label": "STATUS",
-      "fromSide": "bottom",
-      "toSide": "top"
-    },
-    {
-      "id": "eUserSocietyRoot",
-      "fromNode": "USER_SOCIETY_ROOT",
-      "toNode": "USER_TO_SOCIETY",
-      "label": "USER→SOCIETY",
-      "fromSide": "right",
-      "toSide": "left"
-    }
-  ],
-  "metadata": {
-    "version": "1.0-1.2",
-    "frontmatter": {}
-  }
+	"nodes":[
+		{"id":"A","type":"text","text":"# A｜能力\n\n感知｜理解｜推理｜学习｜生成｜规划｜记忆｜Agent｜多模态｜泛化\n\n**部分研究**","x":0,"y":-850,"width":360,"height":210,"color":"5"},
+		{"id":"B","type":"text","text":"# B｜可靠性\n\n正确性｜鲁棒性｜幻觉｜不确定性｜可解释｜可验证｜长任务可靠性\n\n**上游支撑**","x":499,"y":-687,"width":360,"height":210,"color":"6"},
+		{"id":"E","type":"text","text":"# E｜评价\n\n**ACTIVE**\nE-REAL-EVAL：CYCLE-01 DONE｜674-122\n冻结 L1 Outcome / L2 Intent+Constraint / L3 Trajectory 三层协议\nNEXT：E-H1 冻结30–50历史case并盲标预测","x":499,"y":687,"width":360,"height":280,"color":"4"},
+		{"id":"F","type":"text","text":"# F｜生产工程\n\n**RESEARCH CONVERGED / IMPLEMENTATION ACTIVE**\nF-LONGRUN：CYCLE-02 DONE\nRUN_LOG_SCHEMA v1.0：ACTIVE\nNEXT：累计 ≥5 条真实跨轮运行事件 → H-F1\nHOST：Windows / RTX3070 ACTIVE\nRTX4080 32G：PENDING_INTEGRATION\n4090 Cloud：RETIRED\nCodex：工作流执行中枢","x":0,"y":850,"width":360,"height":450,"color":"4"},
+		{"id":"G","type":"text","text":"# G｜安全\n\n恶意使用｜网络安全｜越权｜欺骗｜隐私｜对抗攻击｜高风险自主系统\n\n**背景**","x":-499,"y":687,"width":360,"height":210,"color":"6"},
+		{"id":"I","type":"text","text":"# I｜基础资源\n\n算力｜数据｜芯片｜能源｜水｜模型效率｜基础设施\n\n**背景**","x":-808,"y":-262,"width":360,"height":210,"color":"6"},
+		{"id":"J","type":"text","text":"# J｜基础未知\n\n智能｜表征｜涌现｜推理机制｜泛化｜世界模型｜长期学习｜Agent边界\n\n**上游未知**","x":-499,"y":-687,"width":360,"height":210,"color":"2"},
+		{"id":"PAPER","type":"file","file":"AI问题解决Canvas/论文问题系统_L1.canvas","x":1350,"y":520,"width":420,"height":210,"color":"3"},
+		{"id":"PAPER_STATUS","type":"text","text":"# PAPER STATUS\n\n674-118：ACTIVE\n674-119：THEORY DONE → EXPERIMENT\n674-120：CYCLE-01 DONE\n674-121：CYCLE-01 DONE\n674-122：CYCLE-01 DONE → E-H1\n674-123：CYCLE-02 DONE\n\n注：阶段收束 ≠ 整个 issue DONE。","x":1350,"y":790,"width":430,"height":285,"color":"3"},
+		{"id":"H","type":"text","text":"# H｜社会与制度\n\n就业｜教育｜不平等｜信息生态｜法律责任｜版权｜作者性｜治理\n\n**部分研究**","x":-859,"y":332,"width":360,"height":210,"color":"3"},
+		{"id":"D","type":"text","x":990,"y":160,"width":360,"height":280,"text":"# D｜人机协作\\n\\n**ACTIVE**\\nD-AGENCY｜674-121\\nROUND-1：四因子冻结 DONE\\nROUND-2：自主权分级 DONE\\nL3 AUTO / L2 AUTO+CHECKPOINT / L1 USER_REVIEW / L0 BLOCK\\nNEXT：ROUND-3 反馈沉淀","color":"4"},
+		{"id":"C","type":"text","text":"# C｜控制与对齐\n\n**ACTIVE**\nC-INTENT：THEORY DONE → EXPERIMENT｜674-119\nC-CONSTRAINT：CYCLE-01 DONE｜674-120\nNEXT：历史数据离线验证","x":880,"y":-420,"width":360,"height":280,"color":"4"},
+		{"id":"MY_DIRECTION","type":"file","file":"AI问题解决Canvas/我的方向地图_L1.canvas","x":1565,"y":-280,"width":420,"height":210,"color":"4"},
+		{"id":"root","type":"text","text":"# AI Problem–Solution–Unknown Graph\n\n**总状态栏｜2026-10-04｜STATUS SYNC**\nWindows｜RTX3070 Laptop ACTIVE\n4090 Cloud RETIRED｜4080 32G PENDING_INTEGRATION\n\nSCAN → RECOVER → VERIFY → DISPATCH → WORK → UPDATE\nRecover before Create｜Verify before Expand\n\nC-INTENT：THEORY DONE → EXPERIMENT DESIGN\nC-CONSTRAINT：CYCLE-01 DONE → OFFLINE LABEL\nD-AGENCY：CYCLE-01 DONE → LOG REPLAY\nE-REAL-EVAL：CYCLE-01 DONE → E-H1\nF-LONGRUN：CYCLE-02 DONE → ≥5 REAL RUN EVENTS\n\n论文：PAPER-00 ACTIVE｜3 RQ × 20 P\n每小时收束：Linear → MD → Canvas → Next Action","x":150,"y":-52,"width":420,"height":390,"color":"1"},
+		{
+			"id":"bff09d1f9ad4463f",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":920,
+			"y":2740,
+			"width":400,
+			"height":340
+		},
+		{"id":"MY_SIX_ROOT","type":"text","x":-1500,"y":-170,"width":460,"height":340,"text":"# 我要解决的六个问题\n\nA｜能力\nC｜控制与对齐\nD｜人机协作\nE｜评价\nF｜生产工程\nH｜社会与制度\n\n**MY RESEARCH SCOPE｜L1 收束中心**","color":"4"},
+		{"id":"C_L2","type":"file","file":"AI问题解决Canvas/四主问题_CDEF/C_控制与对齐_L2.canvas","x":1230,"y":-420,"width":420,"height":180,"color":"4"},
+		{"id":"F_L2","type":"file","file":"AI问题解决Canvas/四主问题_CDEF/F_工业与生产_L2.canvas","x":420,"y":1260,"width":420,"height":180,"color":"4"},
+		{"id":"USER_TO_SOCIETY","type":"file","file":"AI问题解决Canvas/278_USER_TO_SOCIETY/USER_TO_SOCIETY_最终总图.canvas","x":-1980,"y":300,"width":460,"height":220,"color":"3"},
+		{"id":"USER_TO_SOCIETY_STATUS","type":"text","x":-1980,"y":580,"width":460,"height":260,"color":"3","text":"# USER → SOCIETY｜674-278\\n\\nR1–R4 DONE\\n总系统社会可迁移价值：68/100（当前）\\n证据：E3-｜强内部 / 弱外部\\n\\n**STOP_EXTERNAL_VALIDATION**\\n唯一阻塞：独立使用者 / 陌生项目 / 对照实验"},
+		{"id":"USER_SOCIETY_ROOT","type":"text","x":-2500,"y":250,"width":480,"height":320,"color":"3","text":"# 我的研究 → 社会\n\n**USER → SOCIETY 独立中心**\n\n研究：我的成果能帮助谁？\n解决什么真实问题？\n哪些是社会已有？\n哪些是我的转译 / 操作化 / 候选贡献？\n\n**674-278｜独立中心，不并入六问题中心**"}
+	],
+	"edges":[
+		{"id":"eA","toFloating":false,"fromNode":"root","fromSide":"top","toNode":"A","toSide":"bottom","label":"IS-A"},
+		{"id":"eB","fromNode":"root","fromSide":"top","toNode":"B","toSide":"bottom","label":"IS-A"},
+		{"id":"eC","fromNode":"root","fromSide":"right","toNode":"C","toSide":"left","label":"IS-A"},
+		{"id":"eD","fromNode":"root","fromSide":"right","toNode":"D","toSide":"left","label":"IS-A"},
+		{"id":"eE","fromNode":"root","fromSide":"bottom","toNode":"E","toSide":"top","label":"IS-A"},
+		{"id":"eF","fromFloating":false,"fromNode":"root","fromSide":"bottom","toNode":"F","toSide":"top","label":"IS-A"},
+		{"id":"eG","fromNode":"root","fromSide":"bottom","toNode":"G","toSide":"top","label":"IS-A"},
+		{"id":"eH","fromNode":"root","fromSide":"left","toNode":"H","toSide":"right","label":"IS-A"},
+		{"id":"eI","fromNode":"root","fromSide":"left","toNode":"I","toSide":"right","label":"IS-A"},
+		{"id":"eJ","fromNode":"root","fromSide":"top","toNode":"J","toSide":"bottom","label":"IS-A"},
+		{"id":"dep0","fromNode":"C","fromSide":"left","toNode":"A","toSide":"bottom","label":"DEPENDS-ON"},
+		{"id":"dep1","fromNode":"C","fromSide":"left","toNode":"J","toSide":"right","label":"DEPENDS-ON"},
+		{"id":"dep2","fromNode":"D","fromSide":"top","toNode":"B","toSide":"bottom","label":"DEPENDS-ON"},
+		{"id":"dep3","fromFloating":false,"fromNode":"E","fromSide":"top","toNode":"B","toSide":"bottom","label":"DEPENDS-ON"},
+		{"id":"dep4","fromNode":"F","fromSide":"top","toNode":"A","toSide":"bottom","label":"DEPENDS-ON"},
+		{"id":"dep5","fromNode":"F","fromSide":"top","toNode":"B","toSide":"bottom","label":"DEPENDS-ON"},
+		{"id":"ePaper","fromNode":"root","fromSide":"right","toNode":"PAPER","toSide":"left","label":"论文研究切片"},
+		{"id":"ePaperStatus","fromNode":"PAPER","fromSide":"bottom","toNode":"PAPER_STATUS","toSide":"top","label":"STATUS-SYNC"},
+		{"id":"eMyDirection","fromNode":"root","fromSide":"right","toNode":"MY_DIRECTION","toSide":"left","label":"我的方向收束"},
+		{"id":"eMySixA","fromNode":"MY_SIX_ROOT","toNode":"A","label":"我要解决","fromSide":"right","toSide":"left"},
+		{"id":"eMySixC","fromNode":"MY_SIX_ROOT","toNode":"C","label":"我要解决","fromSide":"right","toSide":"left"},
+		{"id":"eMySixD","fromNode":"MY_SIX_ROOT","toNode":"D","label":"我要解决","fromSide":"right","toSide":"left"},
+		{"id":"eMySixE","fromNode":"MY_SIX_ROOT","toNode":"E","label":"我要解决","fromSide":"right","toSide":"left"},
+		{"id":"eMySixF","fromNode":"MY_SIX_ROOT","toNode":"F","label":"我要解决","fromSide":"right","toSide":"left"},
+		{"id":"eMySixH","fromNode":"MY_SIX_ROOT","toNode":"H","label":"我要解决","fromSide":"right","toSide":"left"},
+		{"id":"eC_L2","fromNode":"C","toNode":"C_L2","label":"下钻 L2","fromSide":"right","toSide":"left"},
+		{"id":"eF_L2","fromNode":"F","toNode":"F_L2","label":"下钻 L2","fromSide":"right","toSide":"left"},
+		{"id":"eUserSocietyStatus","fromNode":"USER_TO_SOCIETY","toNode":"USER_TO_SOCIETY_STATUS","label":"STATUS","fromSide":"bottom","toSide":"top"},
+		{"id":"eUserSocietyRoot","fromNode":"USER_SOCIETY_ROOT","toNode":"USER_TO_SOCIETY","label":"USER→SOCIETY","fromSide":"right","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.2",
+		"frontmatter":{}
+	}
 }

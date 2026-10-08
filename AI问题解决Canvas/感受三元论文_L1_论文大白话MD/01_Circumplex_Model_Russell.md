@@ -4,13 +4,13 @@
 很多感受词不是一堆互不相干的盒子，而可能按少数基础方向排成一张连续的“感受地图”。
 
 ## 它为什么研究
-早期研究常把 displeasure、distress、depression、excitement 等当成相互独立维度。Russell 发现它们之间有系统关系，因此尝试用空间结构统一表示。
+早期研究常把 displeasure（不愉悦）、distress（痛苦/困扰）、depression（低落/抑郁）、excitement（兴奋） 等当成相互独立维度。Russell 发现它们之间有系统关系，因此尝试用空间结构统一表示。
 
 ## 怎么做
 Russell 1980 对 28 个情感形容词用多种方法检验，包括相似性、多维尺度、愉悦—不愉悦与唤醒程度、自我报告的主成分分析。
 
 ## 发现
-结果支持一种环形排列：例如 pleasure、excitement、arousal、distress、displeasure、depression、sleepiness、relaxation 按顺序分布。
+结果支持一种环形排列：例如 pleasure（愉悦）、excitement（兴奋）、arousal（唤醒）、distress（痛苦/困扰）、displeasure（不愉悦）、depression（低落/抑郁）、sleepiness（困倦）、relaxation（放松） 按顺序分布。
 
 ## 白话理解
 不是“开心一个抽屉、紧张一个抽屉”。更像地图：每种感受占一个位置，相近感受靠近，相反感受隔得远。
@@ -20,7 +20,7 @@ Russell 1980 对 28 个情感形容词用多种方法检验，包括相似性、
 
 ## 可以继续发散
 - 三元能不能形成自己的空间，而不是硬套圆环？
-- 同一感受的 X/Z/N 构成与 valence/arousal 位置有什么对应？
+- 同一感受的 X/Z/N 构成与 valence（效价）/arousal（唤醒） 位置有什么对应？
 - 三元能否解释圆环中位置相近、但结构感不同的体验？
 
 ## 不能乱推出
@@ -29,13 +29,13 @@ Russell 的环形结构不能证明 X/Z/N 存在，也不能证明感受一定�
 ## 来源
 James A. Russell (1980), A Circumplex Model of Affect. DOI: 10.1037/h0077714.
 
-## 英文名词中文对照
+## 英文名词中文对照（正文采用“英文（中文）”并排标注）
 
-- **affect**：情感状态，范围比“情绪”更宽，也可以只是当下的感觉色调。
-- **valence**：效价，回答“总体舒服还是难受”。
-- **arousal / activation**：唤醒或激活，回答“有劲、紧绷、兴奋，还是困倦、松弛”。
-- **circumplex**：环形或周环结构，表示两个连续维度绕成一张圆形地图。
-- **multidimensional scaling（MDS）**：多维尺度分析，把“哪些词彼此相似”还原成空间位置。
+- **affect（情感状态）**：范围比“情绪”更宽，也可以只是当下的感觉色调。
+- **valence（效价）**：回答“总体舒服还是难受”。
+- **arousal / activation（唤醒或激活）**：回答“有劲、紧绷、兴奋，还是困倦、松弛”。
+- **circumplex（环形或周环结构）**：表示两个连续维度绕成一张圆形地图。
+- **multidimensional scaling（多维尺度分析，MDS）**：把“哪些词彼此相似”还原成空间位置。
 
 ## 论文内容大白话扩展
 
@@ -50,3 +50,17 @@ James A. Russell (1980), A Circumplex Model of Affect. DOI: 10.1037/h0077714.
 1. “二维”是连续坐标，不是两个情绪盒子。
 2. 相邻感受可以有家族相似性，相反感受不一定完全没有共同点。
 3. 三元若要超越它，必须给出可测量、可重复、超出效价—唤醒的新增信息。
+
+---
+
+## 我的阅读备注
+
+> [!note] 我的书写栏
+>
+>
+>
+>
+>
+>
+>
+>

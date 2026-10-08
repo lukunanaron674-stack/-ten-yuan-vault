@@ -1,267 +1,41 @@
 {
-  "nodes": [
-    {
-      "id": "root",
-      "type": "text",
-      "x": 0,
-      "y": 0,
-      "width": 760,
-      "height": 520,
-      "color": "2",
-      "text": "# 十元现代理论定位研究｜L1\n\n研究主语：**十元**\n\n不是为了论文研究十元；\n而是借现代论文/理论方法研究：\n\n1 十元到底是什么\n2 现代位置是什么\n3 应该叫什么\n4 能否稳定映射\n5 比普通表示多什么\n\n论文 = 外部学术视角 / 验证入口"
-    },
-    {
-      "id": "genealogy",
-      "type": "text",
-      "x": -1900,
-      "y": -200,
-      "width": 760,
-      "height": 780,
-      "color": "1",
-      "text": "# 理论来源链｜Genealogy\n\n印象派 / 色彩关系经验\n↓\n补色→张扬\n临近色→耐看\n对比色→醒目\n↓\n三元\n↓\n接五行\n↓\n十元关系结构\n↓\n生/克/补 + n/x/z 三关系\n↓\n十类映射方向\n↓\n各领域预映射\n↓\n五个相反对子\n↓\n主次 / 体量 / 动态链 / 五维\n\n**这是理论怎么长出来。**"
-    },
-    {
-      "id": "runtime",
-      "type": "text",
-      "x": -1000,
-      "y": -200,
-      "width": 760,
-      "height": 780,
-      "color": "4",
-      "text": "# 当前使用链｜Runtime\n\n现实对象 / 概念\n↓\n冻结对象层 / current window\n↓\n十元映射\n↓\n主次 + T/M/C\n↓\n三元独立复核\n↓\n端点成立\n↓\n生 / 克 / 补\n↓\nmechanism + target_variable + E\n↓\n动态链\n\n**这是今天怎么使用。**"
-    },
-    {
-      "id": "modern",
-      "type": "text",
-      "x": 900,
-      "y": -200,
-      "width": 820,
-      "height": 780,
-      "color": "5",
-      "text": "# 现代位置｜不是单一理论\n\n## 表示母类\nConceptual Spaces\n\n## 映射形式邻居\nSemantic Differential\n\n## 可靠性方法\nQualitative Coding / Codebook\n\n## 机器形式化\nOntology / OWL\n\n十元 ≠ 它们中的任何一个\n但可以借它们定位、验证、实现。"
-    },
-    {
-      "id": "name",
-      "type": "text",
-      "x": 1850,
-      "y": -200,
-      "width": 800,
-      "height": 760,
-      "color": "3",
-      "text": "# 当前最谨慎名字\n\n**Theory-defined Semantic Mapping Scheme with Paired Oppositional Endpoints**\n\n中文：\n**由理论定义、包含成对相反结构端点的语义映射体系**\n\n+\nRule-governed Coding\n+\nPost-mapping Relation System\n\n⚠️ 暂不叫严格 semantic space / bipolar scale：\n还没有正式 metric / distance / continuous axis。"
-    },
-    {
-      "id": "q1",
-      "type": "text",
-      "x": -1300,
-      "y": 900,
-      "width": 900,
-      "height": 560,
-      "color": "3",
-      "text": "# 核心问题 Q1｜最底层\n\n**一套固定的十元结构映射，能否将不同创作对象稳定映射到可区分的语义位置？**\n\n稳定 =\n- 同对象重复映射接近\n- 不同编码者接近\n- 最近邻可区分\n- 换领域后核心定义仍保持\n\n这是当前最重要问题。"
-    },
-    {
-      "id": "q2",
-      "type": "text",
-      "x": -250,
-      "y": 900,
-      "width": 900,
-      "height": 560,
-      "color": "4",
-      "text": "# 核心问题 Q2｜额外价值\n\n**这种映射相比普通分类或通用语义 profile，是否具有额外价值？**\n\n要比较：\n普通分类\nvs\n普通结构化语义 profile\nvs\n十元映射\n\n看：\n信息增量 / 区分度 / 预测 / 控制 / 迁移"
-    },
-    {
-      "id": "profile",
-      "type": "text",
-      "x": 800,
-      "y": 900,
-      "width": 920,
-      "height": 650,
-      "color": "5",
-      "text": "# 什么是“通用语义 profile”\n\n它不是固定理论名。\n是研究里的**对照表示**：\n\n不用十元，也把对象变成一组普通语义维度的分数/标签。\n\n例：\n主动性 8\n规则依赖 6\n关系导向 4\n可逆性 7\n……\n\n或：\n主动↔被动\n集中↔分散\n开放↔封闭\n……\n\n最后得到一组 profile = **语义画像 / 语义剖面**。\n\n最终实验必须把它操作化成具体 baseline，不能只写“通用 profile”。"
-    },
-    {
-      "id": "candidates",
-      "type": "text",
-      "x": 1850,
-      "y": 900,
-      "width": 800,
-      "height": 700,
-      "color": "2",
-      "text": "# 当前4个可实验问题\n\nA｜跨对象域结构不变性\n同一十元跨人物/场景/关系/音乐是否仍同义\n\nB｜相反端区分度\n五组对子是否真共享核心变量且可区分\n\nC｜三元纠错增量\n加三元复核后是否少误判\n\nD｜端点门控关系\n先映射端点再判生克补是否少假阳性"
-    },
-    {
-      "id": "gates",
-      "type": "text",
-      "x": -650,
-      "y": 1700,
-      "width": 1000,
-      "height": 600,
-      "color": "1",
-      "text": "# 科学验证顺序\n\nGate1｜Mapping Reliability\n映射稳不稳\n↓\nGate2｜Discriminant Validity\n十元分不分得开\n↓\nGate3｜Mapping Utility\n比普通分类 / semantic profile 多不多\n↓\nGate4｜Relation Utility\n再测生克补\n↓\nGate5｜Dynamic Utility\n最后测动态链\n\n**先映射，后关系。**"
-    },
-    {
-      "id": "paper",
-      "type": "text",
-      "x": 500,
-      "y": 1700,
-      "width": 900,
-      "height": 600,
-      "color": "6",
-      "text": "# 论文在这里是什么角色\n\n论文不是研究主语。\n\n论文只负责：\n1 帮十元找到现代学术邻居\n2 把十元变成可证伪问题\n3 用小型实验先验证最底层问题\n\n**不是为了论文改十元；而是借论文方法解决十元。**"
-    },
-    {
-      "id": "researchfile",
-      "type": "file",
-      "file": "01-十元系统/十元现代理论定位研究_总纲_v1.0.md",
-      "x": 1550,
-      "y": 1750,
-      "width": 850,
-      "height": 220,
-      "color": "2"
-    },
-    {
-      "id": "genealogy_file",
-      "type": "file",
-      "file": "01-十元系统/00_十元理论来源链_用户口述冻结_20261007.md",
-      "x": -1900,
-      "y": 700,
-      "width": 760,
-      "height": 220,
-      "color": "1"
-    },
-    {
-      "id": "r1",
-      "type": "file",
-      "file": "AI问题解决Canvas/论文方向3_v2_十元映射模型_R1_本体重建.md",
-      "x": -1900,
-      "y": 1050,
-      "width": 760,
-      "height": 220,
-      "color": "4"
-    },
-    {
-      "id": "r2",
-      "type": "file",
-      "file": "AI问题解决Canvas/论文方向3_v2_十元映射模型_R2_社会comparison_family.md",
-      "x": -1900,
-      "y": 1370,
-      "width": 760,
-      "height": 220,
-      "color": "5"
-    },
-    {
-      "id": "r3",
-      "type": "file",
-      "file": "AI问题解决Canvas/论文方向3_v2_十元映射模型_R3_真实差异审计.md",
-      "x": -1900,
-      "y": 1690,
-      "width": 760,
-      "height": 220,
-      "color": "3"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e1",
-      "fromNode": "genealogy",
-      "toNode": "root",
-      "label": "来源"
-    },
-    {
-      "id": "e2",
-      "fromNode": "runtime",
-      "toNode": "root",
-      "label": "当前功能"
-    },
-    {
-      "id": "e3",
-      "fromNode": "modern",
-      "toNode": "root",
-      "label": "现代参照"
-    },
-    {
-      "id": "e4",
-      "fromNode": "root",
-      "toNode": "name",
-      "label": "现代命名"
-    },
-    {
-      "id": "e5",
-      "fromNode": "root",
-      "toNode": "q1",
-      "label": "核心问题1"
-    },
-    {
-      "id": "e6",
-      "fromNode": "q1",
-      "toNode": "q2",
-      "label": "再问增量"
-    },
-    {
-      "id": "e7",
-      "fromNode": "q2",
-      "toNode": "profile",
-      "label": "定义baseline"
-    },
-    {
-      "id": "e8",
-      "fromNode": "q2",
-      "toNode": "candidates",
-      "label": "拆实验"
-    },
-    {
-      "id": "e9",
-      "fromNode": "candidates",
-      "toNode": "gates",
-      "label": "验证顺序"
-    },
-    {
-      "id": "e10",
-      "fromNode": "gates",
-      "toNode": "paper",
-      "label": "论文切入口"
-    },
-    {
-      "id": "e11",
-      "fromNode": "paper",
-      "toNode": "researchfile",
-      "label": "总纲"
-    },
-    {
-      "id": "e12",
-      "fromNode": "genealogy_file",
-      "toNode": "genealogy",
-      "label": "来源正本"
-    },
-    {
-      "id": "e13",
-      "fromNode": "r1",
-      "toNode": "runtime",
-      "label": "旧R1可复用"
-    },
-    {
-      "id": "e14",
-      "fromNode": "r2",
-      "toNode": "modern",
-      "label": "旧R2可复用"
-    },
-    {
-      "id": "e15",
-      "fromNode": "r3",
-      "toNode": "candidates",
-      "label": "旧R3可复用"
-    }
-  ],
-  "metadata": {
-    "version": "1.0",
-    "frontmatter": {
-      "type": "ten-yuan-modern-theory-positioning",
-      "research_subject": "ten-yuan",
-      "paper_role": "external-academic-lens-only",
-      "status": "core-questions-frozen",
-      "primary_question": "Can a fixed ten-yuan structural mapping stably map different creative objects to discriminable semantic positions?",
-      "secondary_question": "Does ten-yuan mapping add value over ordinary classification or generic structured semantic profiles?"
-    }
-  }
+	"nodes":[
+		{"id":"root","type":"text","text":"# 十元现代理论定位研究｜L1\n\n研究主语：**十元**\n\n不是为了论文研究十元；\n而是借现代论文/理论方法研究：\n\n1 十元到底是什么\n2 现代位置是什么\n3 应该叫什么\n4 能否稳定映射\n5 比普通表示多什么\n\n论文 = 外部学术视角 / 验证入口","x":0,"y":0,"width":760,"height":520,"color":"2"},
+		{"id":"genealogy","type":"text","text":"# 理论来源链｜Genealogy\n\n印象派 / 色彩关系经验\n↓\n补色→张扬\n临近色→耐看\n对比色→醒目\n↓\n三元\n↓\n接五行\n↓\n十元关系结构\n↓\n生/克/补 + n/x/z 三关系\n↓\n十类映射方向\n↓\n各领域预映射\n↓\n五个相反对子\n↓\n主次 / 体量 / 动态链 / 五维\n\n**这是理论怎么长出来。**","x":-1900,"y":-200,"width":760,"height":780,"color":"1"},
+		{"id":"runtime","type":"text","text":"# 当前使用链｜Runtime\n\n现实对象 / 概念\n↓\n冻结对象层 / current window\n↓\n十元映射\n↓\n主次 + T/M/C\n↓\n三元独立复核\n↓\n端点成立\n↓\n生 / 克 / 补\n↓\nmechanism + target_variable + E\n↓\n动态链\n\n**这是今天怎么使用。**","x":-1000,"y":-200,"width":760,"height":780,"color":"4"},
+		{"id":"modern","type":"text","text":"# 现代位置｜不是单一理论\n\n## 表示母类\nConceptual Spaces\n\n## 映射形式邻居\nSemantic Differential\n\n## 可靠性方法\nQualitative Coding / Codebook\n\n## 机器形式化\nOntology / OWL\n\n十元 ≠ 它们中的任何一个\n但可以借它们定位、验证、实现。","x":900,"y":-200,"width":820,"height":780,"color":"5"},
+		{"id":"name","type":"text","text":"# 当前最谨慎名字\n\n**Theory-defined Semantic Mapping Scheme with Paired Oppositional Endpoints**\n\n中文：\n**由理论定义、包含成对相反结构端点的语义映射体系**\n\n+\nRule-governed Coding\n+\nPost-mapping Relation System\n\n⚠️ 暂不叫严格 semantic space / bipolar scale：\n还没有正式 metric / distance / continuous axis。","x":1850,"y":-200,"width":800,"height":760,"color":"3"},
+		{"id":"q1","type":"text","text":"# 核心问题 Q1｜最底层\n\n**一套固定的十元结构映射，能否将不同创作对象稳定映射到可区分的语义位置？**\n\n稳定 =\n- 同对象重复映射接近\n- 不同编码者接近\n- 最近邻可区分\n- 换领域后核心定义仍保持\n\n这是当前最重要问题。","x":-1300,"y":900,"width":900,"height":560,"color":"3"},
+		{"id":"q2","type":"text","text":"# 核心问题 Q2｜额外价值\n\n**这种映射相比普通分类或通用语义 profile，是否具有额外价值？**\n\n要比较：\n普通分类\nvs\n普通结构化语义 profile\nvs\n十元映射\n\n看：\n信息增量 / 区分度 / 预测 / 控制 / 迁移","x":-250,"y":900,"width":900,"height":560,"color":"4"},
+		{"id":"profile","type":"text","text":"# 什么是“通用语义 profile”\n\n它不是固定理论名。\n是研究里的**对照表示**：\n\n不用十元，也把对象变成一组普通语义维度的分数/标签。\n\n例：\n主动性 8\n规则依赖 6\n关系导向 4\n可逆性 7\n……\n\n或：\n主动↔被动\n集中↔分散\n开放↔封闭\n……\n\n最后得到一组 profile = **语义画像 / 语义剖面**。\n\n最终实验必须把它操作化成具体 baseline，不能只写“通用 profile”。","x":800,"y":900,"width":920,"height":650,"color":"5"},
+		{"id":"candidates","type":"text","text":"# 当前4个可实验问题\n\nA｜跨对象域结构不变性\n同一十元跨人物/场景/关系/音乐是否仍同义\n\nB｜相反端区分度\n五组对子是否真共享核心变量且可区分\n\nC｜三元纠错增量\n加三元复核后是否少误判\n\nD｜端点门控关系\n先映射端点再判生克补是否少假阳性","x":1850,"y":900,"width":800,"height":700,"color":"2"},
+		{"id":"gates","type":"text","text":"# 科学验证顺序\n\nGate1｜Mapping Reliability\n映射稳不稳\n↓\nGate2｜Discriminant Validity\n十元分不分得开\n↓\nGate3｜Mapping Utility\n比普通分类 / semantic profile 多不多\n↓\nGate4｜Relation Utility\n再测生克补\n↓\nGate5｜Dynamic Utility\n最后测动态链\n\n**先映射，后关系。**","x":-650,"y":1700,"width":1000,"height":600,"color":"1"},
+		{"id":"paper","type":"text","text":"# 论文在这里是什么角色\n\n论文不是研究主语。\n\n论文只负责：\n1 帮十元找到现代学术邻居\n2 把十元变成可证伪问题\n3 用小型实验先验证最底层问题\n\n**不是为了论文改十元；而是借论文方法解决十元。**","x":500,"y":1700,"width":900,"height":600,"color":"6"},
+		{"id":"researchfile","type":"file","file":"01-十元系统/十元现代理论定位研究_总纲_v1.0.md","x":1550,"y":1750,"width":850,"height":220,"color":"2"},
+		{"id":"genealogy_file","type":"file","file":"01-十元系统/00_十元理论来源链_用户口述冻结_20261007.md","x":-2240,"y":680,"width":760,"height":220,"color":"1"},
+		{"id":"r1","type":"file","file":"AI问题解决Canvas/论文方向3_v2_十元映射模型_R1_本体重建.md","x":-2320,"y":960,"width":760,"height":220,"color":"4"},
+		{"id":"r2","type":"file","file":"AI问题解决Canvas/论文方向3_v2_十元映射模型_R2_社会comparison_family.md","x":-2620,"y":1180,"width":760,"height":900,"color":"5"},
+		{"id":"r3","type":"file","file":"AI问题解决Canvas/论文方向3_v2_十元映射模型_R3_真实差异审计.md","x":-1480,"y":1920,"width":760,"height":220,"color":"3"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"genealogy","fromSide":"right","toNode":"root","toSide":"left","label":"来源"},
+		{"id":"e2","fromNode":"runtime","fromSide":"right","toNode":"root","toSide":"left","label":"当前功能"},
+		{"id":"e3","fromNode":"modern","fromSide":"left","toNode":"root","toSide":"right","label":"现代参照"},
+		{"id":"e4","fromNode":"root","fromSide":"right","toNode":"name","toSide":"left","label":"现代命名"},
+		{"id":"e5","fromNode":"root","fromSide":"bottom","toNode":"q1","toSide":"top","label":"核心问题1"},
+		{"id":"e6","fromNode":"q1","fromSide":"right","toNode":"q2","toSide":"left","label":"再问增量"},
+		{"id":"e7","fromNode":"q2","fromSide":"right","toNode":"profile","toSide":"left","label":"定义baseline"},
+		{"id":"e8","fromNode":"q2","fromSide":"right","toNode":"candidates","toSide":"left","label":"拆实验"},
+		{"id":"e9","fromNode":"candidates","fromSide":"left","toNode":"gates","toSide":"right","label":"验证顺序"},
+		{"id":"e10","fromNode":"gates","fromSide":"right","toNode":"paper","toSide":"left","label":"论文切入口"},
+		{"id":"e11","fromNode":"paper","fromSide":"right","toNode":"researchfile","toSide":"left","label":"总纲"},
+		{"id":"e12","fromNode":"genealogy_file","fromSide":"top","toNode":"genealogy","toSide":"bottom","label":"来源正本"},
+		{"id":"e13","fromNode":"r1","fromSide":"top","toNode":"runtime","toSide":"bottom","label":"旧R1可复用"},
+		{"id":"e14","fromNode":"r2","fromSide":"top","toNode":"modern","toSide":"left","label":"旧R2可复用"},
+		{"id":"e15","fromNode":"r3","fromSide":"right","toNode":"candidates","toSide":"left","label":"旧R3可复用"}
+	],
+	"metadata":{
+		"version":"1.0",
+		"frontmatter":{"type":"ten-yuan-modern-theory-positioning","research_subject":"ten-yuan","paper_role":"external-academic-lens-only","status":"core-questions-frozen","primary_question":"Can a fixed ten-yuan structural mapping stably map different creative objects to discriminable semantic positions?","secondary_question":"Does ten-yuan mapping add value over ordinary classification or generic structured semantic profiles?"}
+	}
 }

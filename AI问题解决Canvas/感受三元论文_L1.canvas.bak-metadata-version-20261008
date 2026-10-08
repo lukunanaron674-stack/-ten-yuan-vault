@@ -20,7 +20,7 @@
 		{"id":"nH","type":"text","text":"# H｜审美情绪 / 艺术体验 ⭐⭐⭐⭐☆\n\n**Silvia** 审美情绪研究\n\n像：appraisal → interest 等审美体验\n不像：你的「感受」混了 emotion + aesthetic experience + perceptual quality + appraisal\n\n⚠️ **边界不清会被判死刑**——必须先给「感受」一个可操作定义\n\n→ 概念边界\n\n---\n\n## 对应大白话 MD\n- [[AI问题解决Canvas/感受三元论文_L1_论文大白话MD/08_Aesthetic_Emotion_Silvia.md|08 Aesthetic Emotion / Silvia]]","x":2600,"y":136,"width":560,"height":380,"color":"2"},
 		{"id":"nE","type":"text","text":"# E｜混合感受 / 感受关系 ⭐⭐⭐⭐⭐\n\n**Mixed Emotions / Emotion Blends / 情绪网络分析**\n\n像：A感受+B感受 → 什么；已区分共现/相反 valence/blends/切换/appraisal 组合\n不像：**你要进一步问 A 与 B 之间是什么关系（生克补），以及关系本身是否改变整体**\n\n→ 最可能被超越的点\n\n---\n\n## 对应大白话 MD\n- [[AI问题解决Canvas/感受三元论文_L1_论文大白话MD/06_Core_Relational_Themes.md|06 Core Relational Themes]]\n- [[AI问题解决Canvas/感受三元论文_L1_论文大白话MD/10_Mixed_Emotions.md|10 Mixed Emotions]]\n- [[AI问题解决Canvas/感受三元论文_L1_论文大白话MD/12_Emotion_Dynamics.md|12 Emotion Dynamics]]\n- [[AI问题解决Canvas/感受三元论文_L1_论文大白话MD/15_Componential_Relational_Structure.md|15 Componential Relational Structure]]\n- [[AI问题解决Canvas/感受三元论文_L1_论文大白话MD/16_Five_Phase_Emotion_Relations.md|16 Five Phase Emotion Relations]]","x":2280,"y":-300,"width":560,"height":360,"color":"3"},
 		{"id":"gap","type":"text","text":"# GAP 判词（本批最硬）\n\n现有理论已答：\n视觉特征 → 知觉/加工/评价 → 愉悦/唤醒/兴趣/敬畏\n\n❌ 所以不能声称：「我首次发现视觉结构会产生感受」\n\n✅ 真正可守：\n不同表面视觉元素产生的复杂感受，能否抽象为少量**关系型感受结构**？","x":1400,"y":680,"width":620,"height":320,"color":"2"},
-		{"id":"nB","type":"text","text":"# B｜构成主义 / 成分过程 ⭐⭐⭐⭐⭐\n\n**Russell/Barrett** 心理建构 ＋ **Scherer** Component Process Model\n\n像：复杂情绪由更基础成分构成、随时间展开的动态过程\n不像：他的 component ≠ 你的「关系元」\n\nCPM 强调 appraisal sequence 与 response-system synchronization\n\n→ 必须精读\n\n---\n\n## 对应大白话 MD\n- [[AI问题解决Canvas/感受三元论文_L1_论文大白话MD/03_Psychological_Construction.md|03 Psychological Construction]]\n- [[AI问题解决Canvas/感受三元论文_L1_论文大白话MD/04_Component_Process_Model_Scherer.md|04 Component Process / Scherer]]\n- [[AI问题解决Canvas/感受三元论文_L1_论文大白话MD/05_Appraisal_Theory.md|05 Appraisal Theory]]\n- [[AI问题解决Canvas/感受三元论文_L1_MD库/02_心理建构与第一人称感受构成_Psychological_Construction_大白话|02 Psychological Construction｜第一人称感受构成]]\n","x":1600,"y":-80,"width":560,"height":360,"color":"4"}
+		{"id":"nB","type":"text","text":"# B｜构成主义 / 成分过程 ⭐⭐⭐⭐⭐\n\n**Russell/Barrett** 心理建构 ＋ **Scherer** Component Process Model\n\n像：复杂情绪由更基础成分构成、随时间展开的动态过程\n不像：他的 component ≠ 你的「关系元」\n\nCPM 强调 appraisal sequence 与 response-system synchronization\n\n→ 必须精读\n\n---\n\n## 对应大白话 MD\n- [[AI问题解决Canvas/感受三元论文_L1_论文大白话MD/03_Psychological_Construction.md|03 Psychological Construction]]\n- [[AI问题解决Canvas/感受三元论文_L1_论文大白话MD/04_Component_Process_Model_Scherer.md|04 Component Process / Scherer]]\n- [[AI问题解决Canvas/感受三元论文_L1_论文大白话MD/05_Appraisal_Theory.md|05 Appraisal Theory]]","x":1600,"y":-80,"width":560,"height":360,"color":"4"}
 	],
 	"edges":[
 		{"id":"e_title","fromNode":"root","fromSide":"bottom","toNode":"title","toSide":"top","label":"题目"},
@@ -32,7 +32,7 @@
 		{"id":"e_nD","fromNode":"nC","fromSide":"bottom","toNode":"nD","toSide":"top","label":"邻居D"},
 		{"id":"e_nE","fromNode":"gap","fromSide":"right","toNode":"nE","toSide":"left","label":"邻居E"},
 		{"id":"e_nH","fromNode":"nE","fromSide":"bottom","toNode":"nH","toSide":"top","label":"邻居H"},
-		{"id":"e_meth","toFloating":false,"fromNode":"nH","fromSide":"bottom","toNode":"method","toSide":"top","label":"方法学"},
+		{"id":"e_meth","fromNode":"nH","fromSide":"bottom","toNode":"method","toSide":"top","label":"方法学"},
 		{"id":"e_srch","fromNode":"method","fromSide":"bottom","toNode":"search","toSide":"top","label":"检索拆路"},
 		{"id":"e_srch2","fromNode":"method","fromSide":"right","toNode":"search2","toSide":"left","label":"补搜概念"},
 		{"id":"e_judge","fromNode":"nH","fromSide":"right","toNode":"judge","toSide":"left","label":"674判读"},
@@ -45,7 +45,7 @@
 		{"id":"a271200000000002","fromNode":"root","fromSide":"bottom","toNode":"a271200000000001","toSide":"top","label":"XN固定规则"}
 	],
 	"metadata":{
-		"version":"1.0-1.0",
+		"version":"1.5",
 		"frontmatter":{"type":"paper-academic-neighbor-pool","status":"candidate-pending-review","date":"2026-10-08","source":"74-external-channel","topic":"gan-shou-san-yuan"}
 	}
 }

@@ -1,4 +1,4 @@
-# Psychological Construction｜心理建构
+# Psychological Construction（心理建构）｜心理建构
 
 ## 一句话
 “愤怒、恐惧、神圣感”未必各自天生是一整块；复杂感受可能由更基础过程组合出来。
@@ -15,21 +15,21 @@
 ## 可以继续发散
 - X/Z/N 是成分、关系，还是生成规则？
 - 相同基础材料能否因关系不同生成不同感受？
-- 三元→十元更像 composition 还是 relation grammar？
+- 三元→十元更像 composition（组合）还是 relation grammar（关系语法）？
 
 ## 不能乱推出
 “情绪可建构”不等于“恰好由三个元素建构”，更不等于十元组合规则成立。
 
 ## 主要入口
-Russell 2003 的 Core Affect / psychological construction 路线可作为这一卡的第一入口。
+Russell 2003 的 Core Affect（核心情感状态） / psychological construction（心理建构） 路线可作为这一卡的第一入口。
 
-## 英文名词中文对照
+## 英文名词中文对照（正文采用“英文（中文）”并排标注）
 
-- **psychological construction**：心理建构，强调体验是多种过程组合出来的。
-- **constructed emotion**：建构的情绪，不是“假的情绪”，而是情绪类别在具体情境中形成。
-- **interoception**：内感受，对心跳、呼吸、胃部等身体内部信号的感知。
-- **categorization**：分类，把当前体验归入“害怕、兴奋、敬畏”等概念。
-- **prediction / active inference**：预测／主动推断，用已有经验预测身体和世界，再根据误差调整。
+- **psychological construction（心理建构）**：强调体验是多种过程组合出来的。
+- **constructed emotion（建构的情绪）**：不是“假的情绪”，而是情绪类别在具体情境中形成。
+- **interoception（内感受）**：对心跳、呼吸、胃部等身体内部信号的感知。
+- **categorization（分类）**：把当前体验归入“害怕、兴奋、敬畏”等概念。
+- **prediction（预测） / active inference（主动推断）**：用已有经验预测身体和世界，再根据误差调整。
 
 ## 论文内容大白话扩展
 
@@ -49,3 +49,18 @@ Russell 2003 的 Core Affect / psychological construction 路线可作为这一�
 
 James A. Russell (2003), *Core Affect and the Psychological Construction of Emotion*. DOI: 10.1037/0033-295X.110.1.145。
 Lisa Feldman Barrett (2017), *The Theory of Constructed Emotion: An Active Inference Account of Interoception and Categorization*. DOI: [10.1093/scan/nsw154](https://doi.org/10.1093/scan/nsw154)。
+
+---
+
+## 我的阅读备注
+
+> [!note] 我的书写栏
+>强调的是主观感受的构成 自我感受而不是别人的感受  自我感受要怎么构成式表现出来 
+>
+>
+>
+>
+>
+>
+>
+>

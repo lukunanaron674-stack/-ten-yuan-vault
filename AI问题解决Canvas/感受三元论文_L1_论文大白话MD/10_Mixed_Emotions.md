@@ -17,13 +17,13 @@
 ## 不能乱推出
 混合情绪研究只支持多种情绪可以共存的可能性，不支持具体 X/Z/N 组合规则。
 
-## 英文名词中文对照
+## 英文名词中文对照（正文采用“英文（中文）”并排标注）
 
-- **mixed emotions**：混合情绪，同一时段出现两种或多种情绪体验。
-- **coactivation**：共激活，正向和负向系统在同一时段都被激活。
-- **ambivalence**：矛盾或两可，同时对同一对象有相反倾向。
-- **simultaneous**：同时发生，不等于两种体验快速交替。
-- **sequential change**：序列变化，先出现一种，再转成另一种。
+- **mixed emotions（混合情绪）**：同一时段出现两种或多种情绪体验。
+- **coactivation（共激活）**：正向和负向系统在同一时段都被激活。
+- **ambivalence（矛盾或两可）**：同时对同一对象有相反倾向。
+- **simultaneous（同时发生）**：不等于两种体验快速交替。
+- **sequential change（序列变化）**：先出现一种，再转成另一种。
 
 ## 论文内容大白话扩展
 
@@ -44,3 +44,17 @@ Larsen 等人的经典问题很简单：人能不能同时感到开心和难过�
 ## 来源与阅读入口
 
 Larsen, McGraw & Cacioppo (2001), *Can People Feel Happy and Sad at the Same Time?*, Journal of Personality and Social Psychology. DOI: [10.1037/0022-3514.81.4.684](https://doi.org/10.1037/0022-3514.81.4.684)。
+
+---
+
+## 我的阅读备注
+
+> [!note] 我的书写栏
+>
+>
+>
+>
+>
+>
+>
+>

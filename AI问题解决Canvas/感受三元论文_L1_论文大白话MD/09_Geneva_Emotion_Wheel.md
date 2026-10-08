@@ -4,7 +4,7 @@
 轮盘不是漂亮理论图，而是一个让人真的点选“我感到了什么、强度多少”的测量工具。
 
 ## 它怎么工作
-GEW 用理论与经验支持的二维空间组织 20 个 emotion families；常见版本以 valence 与 power/control 组织，并允许报告单一或混合情绪及强度。
+GEW（日内瓦情绪轮盘）用理论与经验支持的二维空间组织 20 个 emotion families（情绪家族）；常见版本以 valence（效价） 与 power / control（力量感/控制感） 组织，并允许报告单一或混合情绪及强度。
 
 ## 白话理解
 它的价值不是“圆”，而是：别人能拿它做实验、被试能操作、结果能记录。
@@ -24,15 +24,15 @@ GEW 的成功不证明“三元轮盘”有效；它只是告诉我们一个轮�
 ## 来源
 Swiss Center for Affective Sciences, Geneva Emotion Wheel；Scherer, Shuman, Fontaine & Soriano (2013), The GRID meets the Wheel.
 
-## 英文名词中文对照
+## 英文名词中文对照（正文采用“英文（中文）”并排标注）
 
-- **emotion wheel**：情绪轮盘，用空间位置组织情绪词或情绪家族。
-- **emotion family**：情绪家族，把相近的词归在一个区域，而不是假设每个词完全独立。
-- **valence**：效价，正向到负向。
-- **power / control**：力量感／控制感，感觉自己有掌控力还是被压制。
-- **intensity**：强度，感受有多强，不只是“有没有”。
-- **self-report**：自我报告，由参与者直接选择或评分自己的体验。
-- **mixed emotions**：混合情绪，允许多个情绪同时被报告。
+- **emotion wheel（情绪轮盘）**：用空间位置组织情绪词或情绪家族。
+- **emotion family（情绪家族）**：把相近的词归在一个区域，而不是假设每个词完全独立。
+- **valence（效价）**：正向到负向。
+- **power / control（力量感／控制感）**：感觉自己有掌控力还是被压制。
+- **intensity（强度）**：感受有多强，不只是“有没有”。
+- **self-report（自我报告）**：由参与者直接选择或评分自己的体验。
+- **mixed emotions（混合情绪）**：允许多个情绪同时被报告。
 
 ## 这个工具到底怎么用
 
@@ -56,3 +56,17 @@ GEW 的可操作性不等于三元轮盘天然有效。轮盘的词、坐标和�
 
 Scherer, Shuman, Fontaine & Soriano (2013), *The GRID Meets the Wheel: Assessing Emotional Feeling via Self-Report*. DOI: [10.1093/acprof:oso/9780199592746.003.0019](https://doi.org/10.1093/acprof:oso/9780199592746.003.0019)。
 Geneva Emotion Wheel 官方入口：[affective-sciences.org](https://www.affective-sciences.org/en/emotion-wheel/)。
+
+---
+
+## 我的阅读备注
+
+> [!note] 我的书写栏
+>
+>
+>
+>
+>
+>
+>
+>

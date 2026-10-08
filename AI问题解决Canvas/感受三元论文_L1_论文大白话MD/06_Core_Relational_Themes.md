@@ -4,20 +4,20 @@
 一种情绪可以看成“我和当前处境形成了哪一种整体关系意义”。
 
 ## 怎么研究
-Smith & Lazarus 1993 把 appraisal 分成较细的 components 与较整体的 core relational themes，并用两阶段引导想象操纵情境，研究 anger、guilt、fear/anxiety、sadness。
+Smith & Lazarus 1993 把 appraisal（评价/意义评估） 分成较细的 components（成分）与较整体的 core relational themes（核心关系主题），并用两阶段引导想象操纵情境，研究 anger（愤怒）、guilt（内疚）、fear / anxiety（恐惧/焦虑）、sadness（悲伤）。
 
 ## 发现
-对 anger、guilt、fear/anxiety 的理论预测得到较强支持；sadness 的支持较弱，部分因为操纵不够有效。
+对 anger（愤怒）、guilt（内疚）、fear / anxiety（恐惧/焦虑） 的理论预测得到较强支持；sadness（悲伤） 的支持较弱，部分因为操纵不够有效。
 
 ## 白话理解
 不是只问“事情危险吗”，而是把一组判断合起来，看成“这件事整体上对我构成了什么关系”。
 
 ## 和三元怎么碰
-这是最需要防止撞名的邻居：它已经是成熟的 relational emotion theory。但它的 relation 是 person–environment meaning；三元候选的 relation 是更抽象的构成母型。
+这是最需要防止撞名的邻居：它已经是成熟的 relational emotion（情绪） theory。但它的 relation（关系） 是 person–environment meaning；三元候选的 relation（关系） 是更抽象的构成母型。
 
 ## 可以继续发散
 - 做“意义关系”与“形式关系”双层对照。
-- 看同一 core relational theme 是否能有不同 X/Z/N 视觉表达。
+- 看同一 core relational theme（核心关系主题） 是否能有不同 X/Z/N 视觉表达。
 - 反过来看相同视觉三元是否因关系主题不同产生不同情绪。
 
 ## 不能乱推出
@@ -26,12 +26,12 @@ Smith & Lazarus 1993 把 appraisal 分成较细的 components 与较整体的 co
 ## 来源
 Craig A. Smith & Richard S. Lazarus (1993), Appraisal components, core relational themes, and the emotions. Cognition and Emotion 7(3–4), 233–269.
 
-## 英文名词中文对照
+## 英文名词中文对照（正文采用“英文（中文）”并排标注）
 
-- **core relational theme（CRT）**：核心关系主题，把一组评价合成一句“这个处境对我构成了什么关系意义”。
-- **appraisal component**：评价成分，例如目标相关、责任、控制、应对能力和规范判断。
-- **person–environment relationship**：人与环境的关系，不是抽象形式关系，而是“我和这个处境怎么相处”。
-- **anger / guilt / fear / sadness**：愤怒／内疚／恐惧（或焦虑）／悲伤。
+- **core relational theme（核心关系主题，CRT）**：把一组评价合成一句“这个处境对我构成了什么关系意义”。
+- **appraisal component（评价成分）**：例如目标相关、责任、控制、应对能力和规范判断。
+- **person–environment relationship（人与环境的关系）**：不是抽象形式关系，而是“我和这个处境怎么相处”。
+- **anger / guilt / fear / sadness（愤怒/内疚/恐惧或焦虑/悲伤）**：分别指愤怒、内疚、恐惧（或焦虑）和悲伤。
 
 ## 论文内容大白话扩展
 
@@ -43,7 +43,7 @@ Smith 和 Lazarus 认为，情绪不是由一个评价问题单独决定的。�
 
 ## 和感受三元的具体接口
 
-这是三元必须认真区分的邻居。CRT 的“关系”是 person–environment meaning，也就是人和环境之间的意义关系；三元候选若说的是色彩、形状或空间内部的形式关系，就属于另一层。可以提出双层假设：同一个视觉三元可能在不同核心关系主题下产生不同情绪，而同一个核心关系主题也可能由不同视觉三元表达。
+这是三元必须认真区分的邻居。CRT（核心关系主题） 的“关系”是 person–environment meaning，也就是人和环境之间的意义关系；三元候选若说的是色彩、形状或空间内部的形式关系，就属于另一层。可以提出双层假设：同一个视觉三元可能在不同核心关系主题下产生不同情绪，而同一个核心关系主题也可能由不同视觉三元表达。
 
 ## 不能乱推出
 
@@ -52,3 +52,17 @@ Smith 和 Lazarus 认为，情绪不是由一个评价问题单独决定的。�
 ## 来源
 
 Smith & Lazarus (1993), *Appraisal Components, Core Relational Themes, and the Emotions*, Cognition and Emotion 7(3–4), 233–269. DOI: [10.1080/02699939308409188](https://doi.org/10.1080/02699939308409188)。
+
+---
+
+## 我的阅读备注
+
+> [!note] 我的书写栏
+>
+>
+>
+>
+>
+>
+>
+>

@@ -4,13 +4,13 @@
 颜色带来的感觉不能只看“这个颜色是什么”，还要看“它和另一个颜色怎么相处”。
 
 ## 为什么研究
-过去关于颜色组合的 preference 与 harmony 出现互相矛盾的说法。作者认为大家可能把不同判断混在了一起。
+过去关于颜色组合的 preference（偏好） 与 harmony（和谐） 出现互相矛盾的说法。作者认为大家可能把不同判断混在了一起。
 
 ## 怎么做
 他们区分三件事：整对颜色的偏好、整对颜色的和谐度、图形色放在背景色上时对图形色的偏好；再比较色相相似、明度对比、组成色偏好等因素。
 
 ## 发现
-pair preference 与 harmony 都会随 hue similarity 增加，但 preference 更受组成色偏好和 lightness contrast 影响。也就是说“喜欢”和“和谐”相关但不是同一件事。
+pair preference（偏好） 与 harmony（和谐） 都会随 hue similarity（色相相似度） 增加，但 preference（偏好） 更受组成色偏好和 lightness contrast（明度对比） 影响。也就是说“喜欢”和“和谐”相关但不是同一件事。
 
 ## 白话理解
 你喜欢蓝色和喜欢黄色，并不能直接推出你喜欢“蓝+黄”；真正产生体验的是组合关系。
@@ -20,7 +20,7 @@ pair preference 与 harmony 都会随 hue similarity 增加，但 preference 更
 
 ## 可以继续发散
 - 控制单色不变，只改变两色关系。
-- 从 hue similarity、lightness contrast、figure-ground 等具体变量往 X/Z/N 抽象。
+- 从 hue similarity（色相相似度）、lightness contrast（明度对比）、figure-ground 等具体变量往 X/Z/N 抽象。
 - 测“关系变量”相对“单元素变量”的增量解释力。
 
 ## 不能乱推出
@@ -29,14 +29,14 @@ pair preference 与 harmony 都会随 hue similarity 增加，但 preference 更
 ## 来源
 Karen B. Schloss & Stephen E. Palmer (2011), Aesthetic response to color combinations: preference, harmony, and similarity. Attention, Perception, & Psychophysics 73, 551–571. DOI: 10.3758/s13414-010-0027-0.
 
-## 英文名词中文对照
+## 英文名词中文对照（正文采用“英文（中文）”并排标注）
 
-- **color combination**：色彩组合，不是单个颜色，而是一对或一组颜色的共同关系。
-- **preference**：偏好，回答“我喜欢不喜欢”。
-- **harmony**：和谐，回答“这组颜色搭不搭、是否协调”。
-- **hue similarity**：色相相似度，颜色在色相环上有多接近。
-- **lightness contrast**：明度对比，颜色一个亮、一个暗的差异。
-- **figure–ground**：图形—背景关系，前景颜色放在什么背景上。
+- **color combination（色彩组合）**：不是单个颜色，而是一对或一组颜色的共同关系。
+- **preference（偏好）**：回答“我喜欢不喜欢”。
+- **harmony（和谐）**：回答“这组颜色搭不搭、是否协调”。
+- **hue similarity（色相相似度）**：颜色在色相环上有多接近。
+- **lightness contrast（明度对比）**：颜色一个亮、一个暗的差异。
+- **figure–ground（图形—背景关系）**：前景颜色放在什么背景上。
 
 ## 论文内容大白话扩展
 
@@ -57,3 +57,17 @@ Karen B. Schloss & Stephen E. Palmer (2011), Aesthetic response to color combina
 ## 来源校正
 
 Karen B. Schloss & Stephen E. Palmer, *Aesthetic Response to Color Combinations: Preference, Harmony, and Similarity*, Attention, Perception, & Psychophysics. DOI: [10.3758/s13414-010-0027-0](https://doi.org/10.3758/s13414-010-0027-0)。论文 2010 年在线发表，期刊卷期常标为 2011。
+
+---
+
+## 我的阅读备注
+
+> [!note] 我的书写栏
+>
+>
+>
+>
+>
+>
+>
+>
