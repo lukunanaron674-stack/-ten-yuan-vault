@@ -44,3 +44,43 @@ AI_LEARNED requires evidence. No evidence = PARTIAL / WAIT_TEST.
 
 ## Current audit
 The architecture and verification protocols are frozen by AI_LEARN R1–R3. This file does NOT claim that every listed capability is already CONNECTED or VERIFIED. Individual capabilities remain KNOWLEDGE_READY/ROUTED/PARTIAL until implementation evidence exists.
+
+## VERIFY_FULL｜7 master claims
+
+These are not internal effect rules until tested:
+
+| master | validation target |
+|---|---|
+| M09 | Identity locking ↔ editability sweet spot |
+| M20 | short memory + long anchor benefit |
+| M21 | selected history vs full history benefit |
+| M24 | anchor/recache effect on long drift |
+| M38 | approved still → motion production benefit |
+| M39 | short-beat vs longtake economic boundary |
+| M62 | cache speedup ↔ quality regression Pareto |
+
+## Remaining project validation gaps｜12
+
+1. V-GAP01｜4080 VRAM/RAM/temperature/264f/timeout/concurrency/throughput
+2. V-GAP02｜H3 local quant/cache/offload/steps/resolution/frame Pareto
+3. V-GAP03｜Wan local optimization Pareto
+4. V-GAP04｜real TASK×MODEL×VERSION matrix for project assets
+5. V-GAP05｜reference-slot sweet spot
+6. V-GAP06｜identity↔editability threshold
+7. V-GAP07｜30s/60s LongTake memory/anchor strategy
+8. V-GAP08｜Local Retake real benefit + preservation
+9. V-GAP09｜VLM per-failure-family recall/precision/false-positive/uncertain-rate
+10. V-GAP10｜USER preference vs machine-metric calibration
+11. V-GAP11｜dialogue/lip-sync/voice/room-tone/audio continuity
+12. V-GAP12｜project-specific jurisdiction/provider/input-rights/disclosure/C2PA profile
+
+## Absorbed pack promotion rule
+
+ABS-R1 / ABS-R2 / ABS-R3 / ABS-R4 are currently ROUTED.
+
+- DIRECT structural rules may be used while ROUTED.
+- SPLIT exposes only structural fields/guards; effect claims remain WAIT_TEST.
+- VERIFY_FULL entries remain validation candidates.
+- CONNECTED requires proof an executor actually loaded/used the rule.
+- VERIFIED requires frozen test evidence.
+- USER-ground-truth tests cannot self-promote.

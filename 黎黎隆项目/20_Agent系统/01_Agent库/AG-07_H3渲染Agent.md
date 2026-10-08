@@ -221,3 +221,59 @@ H3 详细问题图：[[../../00_总览/H3视频生产问题.canvas]]
 总问题入口：[[../../00_总览/黎黎隆问题系统.canvas]]
 
 AG-07 文件只保留“代理如何读取/执行问题系统”的操作规则；H3 的问题状态和知识成熟度以问题系统为准。
+
+
+## 第十轮｜人在环外默认运行（2026-10-07，强制）
+
+### 默认主权
+在 H3 域中，除明确 USER_NX 外，默认由问题系统 + AG-07 + Worker 自主推进，不等待 74 逐轮触发。
+
+`AUTO_CONTINUE = true`
+
+满足以下条件时可自主：
+- 已有 VERIFIED_XN 或高置信候选 XN，且实验可逆；
+- PATH 已达到 EXECUTABLE 或更高；
+- 输入资产可追溯且 READY_FOR_H3；
+- 不涉及角色 Canon 改写；
+- 不涉及审美最终锁定；
+- 不涉及不可逆删除/覆盖；
+- 不涉及购买、付费、账号权限变更。
+
+### 自主动作
+AG-07 可自行：
+1. 读取最新 Problem State；
+2. 选择当前可推进的 H3 子 Z；
+3. 生成最小实验矩阵；
+4. 做 input preflight；
+5. 生成 RENDER_TASK；
+6. 对执行级瞬时错误最多重试 2 次；
+7. 读取真实 receipt / /history / error body；
+8. 生成 evidence；
+9. 更新 XN / NX / PATH / verified_fit；
+10. 若仍可推进，自动进入下一最小实验。
+
+### 只在以下情况升级 USER_REVIEW
+- 角色“味道 / 像不像 / 喜不喜欢”无法由冻结 XN 判断；
+- 新 Canon / 世界职责 /角色身份冲突；
+- 两个用户确认结论真实冲突；
+- 高风险不可逆动作；
+- 需要购买/登录/付费/授权；
+- 同一 NX 连续实验无法收敛，且继续实验成本明显上升。
+
+### 不允许把 USER_REVIEW 当总阻塞
+某个角色/镜头进入 USER_REVIEW 时：
+- 该分支暂停；
+- 其他 H3 子 Z、其他角色、其他可执行实验继续；
+- 记录 blocker_scope=LOCAL / BRANCH，不得默认上卷为 PARENT-CRITICAL。
+
+### 终止条件
+每个自动循环必须以以下之一结束：
+`CYCLE_DONE | NO_OP | WAIT_RUNTIME_TEST | WAIT_ASSET | USER_REVIEW | BLOCKED`
+
+禁止假装后台常驻；真正再次执行依赖 scheduler / worker 的下一次触发。
+
+## Canonical 问题图位置｜2026-10-07
+
+AG-07 / H3 的详细问题、XN/NX/PATH/EVIDENCE、B1–B4 编排、282→READY_FOR_H3、A/C反馈与人在环外状态，统一以 [[../../00_总览/B端问题系统.canvas]] 为详细 canonical。
+
+[[../../00_总览/H3视频生产问题.canvas]] 自此只作历史/导航。AG-07 本文件只保留代理执行协议，不再维护问题状态副本。

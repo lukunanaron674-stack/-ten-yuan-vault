@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 4600,
+      "height": 2600,
+      "color": "6",
+      "label": "B端分控｜人类阅读版"
+    },
+    {
+      "id": "goal",
+      "type": "text",
+      "x": 220,
+      "y": 180,
+      "width": 1350,
+      "height": 520,
+      "color": "1",
+      "text": "# 目标\n\n把角色 / 场景输入编译成稳定可执行的 H3 动画任务，并把真实视频反馈反哺下一版文字。\n\n**目标体量：9/10**\n**可行度：8/10**"
+    },
+    {
+      "id": "subgoals",
+      "type": "text",
+      "x": 1750,
+      "y": 180,
+      "width": 1500,
+      "height": 520,
+      "color": "2",
+      "text": "# 分目标\n\n1. 每轮只生成可执行、可追溯的 H3 描述词\n2. A端执行结果能被 C端抽帧 / 审核 / 版本化\n3. 失败只修失败字段，不整条重写"
+    },
+    {
+      "id": "progress",
+      "type": "text",
+      "x": 3440,
+      "y": 180,
+      "width": 940,
+      "height": 520,
+      "color": "4",
+      "text": "# 当前进度\n\n674-286 正在运行；B1–B4 和 A/C 反馈格式已建立，角色上游 674-282 本轮已完成。"
+    },
+    {
+      "id": "nx",
+      "type": "text",
+      "x": 220,
+      "y": 930,
+      "width": 2500,
+      "height": 650,
+      "color": "5",
+      "text": "# 当前唯一 NX\n\n**B端唯一 NX：** A端真实 H3 输出 → C端审核 → B端定向修订，这条反馈链能否连续多轮稳定运行，而不靠你或人工反复搬运。\n\n> 这里只保留当前最卡脖子的未知；其它 NX、XN、PATH、证据全部在 AI 后台。"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 2940,
+      "y": 930,
+      "width": 1440,
+      "height": 650,
+      "color": "3",
+      "text": "# 下一步\n\n继续用真实 H3 视频回执验证闭环；只要反馈链稳定，就把 B端继续推向自动续跑。\n\n# 需要你吗？\n\n目前不用。只有审核结论无法自动裁定时才找你。"
+    },
+    {
+      "id": "home",
+      "type": "file",
+      "file": "黎黎隆项目/00_总览/674总览.canvas",
+      "x": 220,
+      "y": 1840,
+      "width": 1200,
+      "height": 320,
+      "color": "4"
+    },
+    {
+      "id": "backend",
+      "type": "file",
+      "file": "黎黎隆项目/00_总览/AI后台/02_B端执行.md",
+      "x": 1700,
+      "y": 1840,
+      "width": 1600,
+      "height": 320,
+      "color": "6"
+    },
+    {
+      "id": "rule",
+      "type": "text",
+      "x": 3440,
+      "y": 1840,
+      "width": 940,
+      "height": 320,
+      "color": "6",
+      "text": "# 阅读规则\n\n你只看这一屏。\n不展示 XN / PATH / SHA / 日志。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "goal",
+      "fromSide": "right",
+      "toNode": "subgoals",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "subgoals",
+      "fromSide": "right",
+      "toNode": "progress",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "goal",
+      "fromSide": "bottom",
+      "toNode": "nx",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "nx",
+      "fromSide": "right",
+      "toNode": "next",
+      "toSide": "left"
+    }
+  ]
+}
