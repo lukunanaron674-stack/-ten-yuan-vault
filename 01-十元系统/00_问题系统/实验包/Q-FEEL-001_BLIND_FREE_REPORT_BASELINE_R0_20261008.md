@@ -131,3 +131,26 @@ NEXT：核对父图/裁切版本与持久可显示的盲化素材后，再决定
 **证据纪律：** `C2→C2`，`E0→E0`，`human_feeling_profile=null`，`MAE=null`，`Top1=null`，`Top3=null`；`research_rounds_completed=0`（本轮为工程溯源，不是有效人类实验轮次）。
 
 **NEXT：** 找到可持续访问的父图/manifest原字节核对其SHA与版本；准备不暴露来源编号的六张真实图片展示与预锁随机盲码；在此之前 `WAIT_PARENT_BYTES_AND_BLIND_DISPLAY`，不触发用户。
+
+
+## 10. R1.6｜盲码与展示次序预锁（2026-10-08）
+
+**唯一Q：Q-FEEL-001。** 这是一项研究工程预锁，不是人类感受实验，不计有效实验轮次，也不执行独立五轴 A/B。
+
+### 固定样本与盲码规则
+- 样本集合固定为上一轮已核验的6张 `AV-20261008-BOARD-C-{02,04,05,12,13,15}`，保留原 SHA256/版本；本轮不换样本、不补选漂亮结果。
+- 盲码 `S01…S06` 由稳定算法确定：对每个 `asset_id` 计算 `SHA256("Q-FEEL-001-BLIND-R0|blind-code-v1|" + asset_id)`，按完整哈希字典序升序排列，依次赋 `S01…S06`。
+- Session-A 和 Session-B 展示顺序分别由 `SHA256("Q-FEEL-001-BLIND-R0|session-A|" + asset_id)`、`SHA256("Q-FEEL-001-BLIND-R0|session-B|" + asset_id)` 升序决定。复测至少间隔24小时；两个session不可共用固定顺序。
+- 预锁的顺序 SHA256 commitment（对逗号拼接的完整 asset_id 顺序取 SHA256）：
+  - blind-code-v1: `aeaf85219cf4fc65aead2c52f0f4d9db7d8478822dbddc84b4400732b3f88b66`
+  - session-A: `ebacd1943dd77e2a73b7677062e6d000cd28eccf3d87d516e132bb077c6946bc`
+  - session-B: `dd0bdcb411d318a35227ee5269741c4373447b327914829c2a8b49e63999345b`
+- 以上算法与commitment在任何人类反馈前冻结；前端只显示盲码+图片+通用问题，不显示来源格号、十元标签、预测、候选类别、SHA、主角/有趣备注或原文件名。后台可追溯映射但不得在同一用户展示页面泄漏。
+- 渲染器必须从674-293的6个附件ID读取**真实原字节**，在展示时再次比对实验包第8节已登记SHA；临时签名URL不能冒充永久可访问展示。不得用模型重绘/相似图替代。
+- `parent_byte_sha=UNVERIFIED`、`edit_lineage=PARTIAL`、`prior_exposure=YES_OR_LIKELY`、`selection_bias=YES`、`same_board_cluster=YES` 均保持不变。若父图/manifest未补齐，不开放HUMAN_GATE；如后续按研究方案批准“只用子图作个人方法回归”，需另行在本Q预注册变更并记录理由。
+
+### 状态与下一步
+`blind_code=FROZEN_PRE_FEEDBACK`; `display_order=FROZEN_PRE_FEEDBACK`; `display_runtime=NOT_VERIFIED`; `parent_byte_sha=UNVERIFIED`; `HUMAN_GATE=NOT_READY`; `status=WAIT_PARENT_BYTES_AND_BLIND_DISPLAY`.
+`C=C2`; `E=E0`; `human_feeling_profile=null`; `MAE=null`; `Top1=null`; `Top3=null`; `research_rounds_completed=0`.
+
+**NEXT:** 从674-293恢复来源板原字节及crop manifest（不能只复述声明路径）；用真实6张PNG建立可持续的盲化展示并做标签泄漏/顺序/完整性预检。完成前不打扰用户。
