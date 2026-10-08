@@ -1,8 +1,8 @@
 {
   "schema": "CHARACTER_AGENT_NX_XN_LOG",
-  "schema_version": "1.0",
-  "updated_at": "2026-10-07T18:40:00+08:00",
-  "mode": "人在环外（74 未参与本轮）→ 所有候选 XN 一律停在 candidate，LOCK_PENDING_USER",
+  "schema_version": "1.1",
+  "updated_at": "2026-10-08T15:42:00+08:00",
+  "mode": "人在环外（74 未逐张介入）→ 候选 XN 未获 74 拍板前一律停在 candidate",
   "nx_records": [
     {
       "nx_id": "NX-ROLE-01",
@@ -21,27 +21,48 @@
     },
     {
       "nx_id": "NX-ROLE-02",
-      "statement": "HEAD_ONLY 头像切片不能承担身体/服装/姿态职责",
+      "statement": "HEAD_ONLY 头像切片在链路中的职责边界",
       "human_signals": [
-        {"source": "674-219 STOP 规则 + 674-216 T01 复盘", "detail": "H01/H08/H10 因 HEAD_ONLY 被退回 L2 视觉线（用户认可的处理方向）"}
+        {"source": "74 原话 2026-10-08", "detail": "「2 可以承担 主要发散点 啊 4宫格就是去发散这些的 文字也是其中的一个让他发散的方向罢了」"}
       ],
       "evidence_count": 3,
       "counterexample_count": 0,
       "evidence_assets": ["H01", "H08", "H10"],
-      "candidate_xn": "view_type=HEAD_ONLY 的素材 usable_roles 仅允许 IDENTITY",
-      "upgrade_basis": "三例同类 STOP + 根因 R1 实证（头像切片直送导致 camera 失控）",
-      "status": "CANDIDATE_LOCK_PENDING_USER"
+      "resolution": "LOCKED → 见 locked_xn/XN-ROLE-02（按 74 裁决改写，不再是原候选的一刀切禁令）",
+      "status": "LOCKED"
     },
     {
       "nx_id": "NX-ROLE-03",
-      "statement": "“像但没味道”与“身份漂移”是否两类问题（NX-AVATAR-02 延伸到角色域）",
-      "human_signals": [],
-      "evidence_count": 0,
+      "statement": "「像但没味道」与「身份漂移」是否两类问题；身份漂移如何判定",
+      "human_signals": [
+        {"source": "74 原话 2026-10-08", "detail": "「3是两类 身份漂移看两层 1我灵感来了得遵守得文字锚点权重最高的 2ai补充得文字是发散方向 漂移看十元有没有对上 最后还得是四宫格敲定」"}
+      ],
+      "evidence_count": 1,
       "counterexample_count": 0,
-      "candidate_xn": null,
-      "status": "OPEN_NX_WAITING_HUMAN"
+      "resolution": "LOCKED → 见 locked_xn/XN-ROLE-03",
+      "status": "LOCKED"
     }
   ],
-  "locked_xn": [],
-  "note": "locked_xn 为空是设计使然：674-280 规定 AI 不得把 NX 擅自升级为正式 XN；74 回环后逐条拍板即可晋升。"
+  "locked_xn": [
+    {
+      "xn_id": "XN-ROLE-02",
+      "locked_at": "2026-10-08T15:40:00+08:00",
+      "locked_by": "74（用户原话裁决）",
+      "user_verbatim": "2 可以承担 主要发散点 啊 4宫格就是去发散这些的 文字也是其中的一个让他发散的方向罢了",
+      "locked_rule": "头像/身份源可以承担「主要发散点」：在 L1/L2 发散生产层，四宫格本身就是发散身体/服装/姿态的工具，文字锚点只是让它发散的方向之一。原候选「HEAD_ONLY 仅限 IDENTITY」的一刀切表述不再作为 L1/L2 生产层禁令。",
+      "scope_note": "两层口径并存不冲突：发散层（L1/L2 生图）以头像为种子发散、四宫格承载发散结果；H3 绑定层维持 674-219/258 既有硬闸（HEAD_ONLY 不作 H3 的 BODY/COSTUME/POSE ref，绑定用单格/正本）。若 74 要连绑定层一起放开，需另行明示。",
+      "supersedes": "NX-ROLE-02 candidate 原文",
+      "status": "XN_LOCK"
+    },
+    {
+      "xn_id": "XN-ROLE-03",
+      "locked_at": "2026-10-08T15:40:00+08:00",
+      "locked_by": "74（用户原话裁决）",
+      "user_verbatim": "3是两类 身份漂移看两层 1我灵感来了得遵守得文字锚点权重最高的 2ai补充得文字是发散方向 漂移看十元有没有对上 最后还得是四宫格敲定",
+      "locked_rule": "①「像但没味道」与「身份漂移」是两类问题，分开处理。②身份漂移判定=两层文字权重：用户灵感的文字锚点权重最高（必须遵守）；AI 补充的文字只是发散方向（非硬约束）。③漂移与否看十元有没有对上。④最终由四宫格敲定。",
+      "downstream": "身份漂移审核顺序固定为：用户文字锚点（最高权重）→ AI 发散文字（参考）→ 十元对位检查 → 四宫格终审",
+      "status": "XN_LOCK"
+    }
+  ],
+  "note": "locked_xn v1.1：74 于 2026-10-08 拍板两条。NX-ROLE-01 仍待拍板；NX-AVATAR-01~05（674-280 头像域）未接证据，另行推进。"
 }
