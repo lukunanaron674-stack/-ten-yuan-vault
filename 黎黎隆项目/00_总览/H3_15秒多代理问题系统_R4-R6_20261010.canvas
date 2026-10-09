@@ -1,0 +1,560 @@
+{
+  "nodes": [
+    {
+      "id": "core",
+      "type": "text",
+      "x": 2840,
+      "y": 1840,
+      "width": 1360,
+      "height": 510,
+      "color": "1",
+      "text": "# Z0｜H3 15秒总问题\n\n角色图×1＋独立场景图×1 → 十元感受 → 最小故事 → 分镜/描述词 → 4080 → 技术审 → USER终审\n\n**状态：协议 R1–R6 已组装；生产 BLOCKED_MISSING_SCENE**\n\n问题体量层级 Z0–Z3 是管理候选，不是客观数值。"
+    },
+    {
+      "id": "asset",
+      "type": "text",
+      "x": 160,
+      "y": 250,
+      "width": 1750,
+      "height": 305,
+      "color": "2",
+      "text": "# Z1｜素材 / 身份\n\n问题目标：独立验收，不把Agent动作当Z。"
+    },
+    {
+      "id": "asset_xn",
+      "type": "text",
+      "x": 160,
+      "y": 655,
+      "width": 1750,
+      "height": 220,
+      "color": "4",
+      "text": "XN｜工单优先，双图源、格位、SHA/路径分开核；用户规则已确定。"
+    },
+    {
+      "id": "asset_nx",
+      "type": "text",
+      "x": 160,
+      "y": 925,
+      "width": 1750,
+      "height": 240,
+      "color": "1",
+      "text": "NX｜H06缺审核明确且4080实测可读的**独立门廊场景图**。"
+    },
+    {
+      "id": "asset_path",
+      "type": "text",
+      "x": 160,
+      "y": 1220,
+      "width": 1750,
+      "height": 215,
+      "color": "3",
+      "text": "PATH｜674-296/293 补图与SHA；674-173 USER格位；AG-04/AG-11核。"
+    },
+    {
+      "id": "asset_ev",
+      "type": "text",
+      "x": 160,
+      "y": 1470,
+      "width": 1750,
+      "height": 220,
+      "color": "6",
+      "text": "EVIDENCE｜674-286 A端 2026-10-10 MISSING_REF 回执；角色P3已报告可读。"
+    },
+    {
+      "id": "feeling",
+      "type": "text",
+      "x": 2570,
+      "y": 250,
+      "width": 1750,
+      "height": 305,
+      "color": "2",
+      "text": "# Z1｜十元 / 感受\n\n问题目标：独立验收，不把Agent动作当Z。"
+    },
+    {
+      "id": "feeling_xn",
+      "type": "text",
+      "x": 2570,
+      "y": 655,
+      "width": 1750,
+      "height": 220,
+      "color": "4",
+      "text": "XN｜R2协议区分单对象增强与双对象关系；对象十元须分栏。"
+    },
+    {
+      "id": "feeling_nx",
+      "type": "text",
+      "x": 2570,
+      "y": 925,
+      "width": 1750,
+      "height": 240,
+      "color": "1",
+      "text": "NX｜场景B的十元来源/可视行为未证；观众感受强度未测。"
+    },
+    {
+      "id": "feeling_path",
+      "type": "text",
+      "x": 2570,
+      "y": 1220,
+      "width": 1750,
+      "height": 215,
+      "color": "3",
+      "text": "PATH｜AG-02感受卡→AG-01故事→AG-02反审一次；目标与实测分账。"
+    },
+    {
+      "id": "feeling_ev",
+      "type": "text",
+      "x": 2570,
+      "y": 1470,
+      "width": 1750,
+      "height": 220,
+      "color": "6",
+      "text": "EVIDENCE｜R2 GitHub AG-02岗位卡；H06个人ZN/XN、组织ZX/NZ不同。"
+    },
+    {
+      "id": "story",
+      "type": "text",
+      "x": 4980,
+      "y": 250,
+      "width": 1750,
+      "height": 305,
+      "color": "2",
+      "text": "# Z1｜剧本 / 动态链\n\n问题目标：独立验收，不把Agent动作当Z。"
+    },
+    {
+      "id": "story_xn",
+      "type": "text",
+      "x": 4980,
+      "y": 655,
+      "width": 1750,
+      "height": 220,
+      "color": "4",
+      "text": "XN｜R3最小15秒事件：初态→触发→行动→回应→新状态。"
+    },
+    {
+      "id": "story_nx",
+      "type": "text",
+      "x": 4980,
+      "y": 925,
+      "width": 1750,
+      "height": 240,
+      "color": "1",
+      "text": "NX｜独立场景未齐，故事仅DRAFT；双对象删去B是否影响因果待验证。"
+    },
+    {
+      "id": "story_path",
+      "type": "text",
+      "x": 4980,
+      "y": 1220,
+      "width": 1750,
+      "height": 215,
+      "color": "3",
+      "text": "PATH｜AG-01 2–3机制候选→选1条→AG-02因果反审→AG-00收束。"
+    },
+    {
+      "id": "story_ev",
+      "type": "text",
+      "x": 4980,
+      "y": 1470,
+      "width": 1750,
+      "height": 220,
+      "color": "6",
+      "text": "EVIDENCE｜R3 Github AG-01规则；674-286 H06 单对象草案。"
+    },
+    {
+      "id": "director",
+      "type": "text",
+      "x": 160,
+      "y": 3200,
+      "width": 1750,
+      "height": 305,
+      "color": "2",
+      "text": "# Z1｜导演 / H3 Prompt\n\n问题目标：独立验收，不把Agent动作当Z。"
+    },
+    {
+      "id": "director_xn",
+      "type": "text",
+      "x": 160,
+      "y": 3605,
+      "width": 1750,
+      "height": 220,
+      "color": "4",
+      "text": "XN｜R4分镜卡→机位/光影/动作可见→英文prompt；不能跳过故事。"
+    },
+    {
+      "id": "director_nx",
+      "type": "text",
+      "x": 160,
+      "y": 3875,
+      "width": 1750,
+      "height": 240,
+      "color": "1",
+      "text": "NX｜新独立场景实际视角/光向缺失，无法确认机位与构图兼容。"
+    },
+    {
+      "id": "director_path",
+      "type": "text",
+      "x": 160,
+      "y": 4170,
+      "width": 1750,
+      "height": 215,
+      "color": "3",
+      "text": "PATH｜AG-03 出SHOT_PACKAGE；角色身份与独立场景分别锁定ref0/ref1。"
+    },
+    {
+      "id": "director_ev",
+      "type": "text",
+      "x": 160,
+      "y": 4420,
+      "width": 1750,
+      "height": 220,
+      "color": "6",
+      "text": "EVIDENCE｜GitHub AG-03 R4专项；草案非可投GPU工作流。"
+    },
+    {
+      "id": "runtime",
+      "type": "text",
+      "x": 2570,
+      "y": 3200,
+      "width": 1750,
+      "height": 305,
+      "color": "2",
+      "text": "# Z1｜H3 4080 / 执行\n\n问题目标：独立验收，不把Agent动作当Z。"
+    },
+    {
+      "id": "runtime_xn",
+      "type": "text",
+      "x": 2570,
+      "y": 3605,
+      "width": 1750,
+      "height": 220,
+      "color": "4",
+      "text": "XN｜Ref0/Ref1真实绑定与A端receipt分状态；旧同源双图不合法。"
+    },
+    {
+      "id": "runtime_nx",
+      "type": "text",
+      "x": 2570,
+      "y": 3875,
+      "width": 1750,
+      "height": 240,
+      "color": "1",
+      "text": "NX｜新双图A端预检仍缺SCENE；当前workflow无新执行回执。"
+    },
+    {
+      "id": "runtime_path",
+      "type": "text",
+      "x": 2570,
+      "y": 4170,
+      "width": 1750,
+      "height": 215,
+      "color": "3",
+      "text": "PATH｜AG-07 preflight→批准render task→A端4080→视频临时区。"
+    },
+    {
+      "id": "runtime_ev",
+      "type": "text",
+      "x": 2570,
+      "y": 4420,
+      "width": 1750,
+      "height": 220,
+      "color": "6",
+      "text": "EVIDENCE｜2026-10-10 A端回执：4080曾在线、旧15.08秒同源双图不合规。"
+    },
+    {
+      "id": "review",
+      "type": "text",
+      "x": 4980,
+      "y": 3200,
+      "width": 1750,
+      "height": 305,
+      "color": "2",
+      "text": "# Z1｜质检 / USER裁决\n\n问题目标：独立验收，不把Agent动作当Z。"
+    },
+    {
+      "id": "review_xn",
+      "type": "text",
+      "x": 4980,
+      "y": 3605,
+      "width": 1750,
+      "height": 220,
+      "color": "4",
+      "text": "XN｜AG-08 TECH_PASS ≠ USER_PASS；173过审才入289正式库。"
+    },
+    {
+      "id": "review_nx",
+      "type": "text",
+      "x": 4980,
+      "y": 3875,
+      "width": 1750,
+      "height": 240,
+      "color": "1",
+      "text": "NX｜尚无此次合法双图成片可供USER观看；目标感受无法裁定。"
+    },
+    {
+      "id": "review_path",
+      "type": "text",
+      "x": 4980,
+      "y": 4170,
+      "width": 1750,
+      "height": 215,
+      "color": "3",
+      "text": "PATH｜A端临时MP4→AG-08全片/抽帧→674-173 USER→674-289 PASS入库。"
+    },
+    {
+      "id": "review_ev",
+      "type": "text",
+      "x": 4980,
+      "y": 4420,
+      "width": 1750,
+      "height": 220,
+      "color": "6",
+      "text": "EVIDENCE｜用户最新规则 674-286；289旧评论保留为历史非当前通过。"
+    },
+    {
+      "id": "blocker",
+      "type": "text",
+      "x": 2860,
+      "y": 2450,
+      "width": 1360,
+      "height": 610,
+      "color": "1",
+      "text": "# 当前唯一最高优先NX\n\n**MISSING_SCENE**：不能从H06 P3裁切或本身背景冒充第2张图。\n\n**DONE条件**：场景asset_id/version/USER审核格位/完整SHA/4080可读路径在293/296真实登记，并由A端实机复验。\n\n未完成：不提交渲染，不无限重写Prompt。"
+    },
+    {
+      "id": "method",
+      "type": "text",
+      "x": 2860,
+      "y": 1370,
+      "width": 1360,
+      "height": 370,
+      "color": "5",
+      "text": "# XN / NX / PATH / EVIDENCE 语义\n\nXN = 已有规则或知识（标区分POLICY与真实技术验证）\nNX = 未解问题，必须有可检验边界\nPATH = 责任端 + 下一步操作\nEVIDENCE = 真实链接 / SHA / 视频 / USER回执\n\n十元符号「XN」≠问题系统知识「XN」。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "asset_e1",
+      "fromNode": "asset",
+      "fromSide": "bottom",
+      "toNode": "asset_xn",
+      "toSide": "top"
+    },
+    {
+      "id": "asset_e2",
+      "fromNode": "asset_xn",
+      "fromSide": "bottom",
+      "toNode": "asset_nx",
+      "toSide": "top"
+    },
+    {
+      "id": "asset_e3",
+      "fromNode": "asset_nx",
+      "fromSide": "bottom",
+      "toNode": "asset_path",
+      "toSide": "top"
+    },
+    {
+      "id": "asset_e4",
+      "fromNode": "asset_path",
+      "fromSide": "bottom",
+      "toNode": "asset_ev",
+      "toSide": "top"
+    },
+    {
+      "id": "core_asset",
+      "fromNode": "core",
+      "fromSide": "top",
+      "toNode": "asset",
+      "toSide": "bottom"
+    },
+    {
+      "id": "feeling_e1",
+      "fromNode": "feeling",
+      "fromSide": "bottom",
+      "toNode": "feeling_xn",
+      "toSide": "top"
+    },
+    {
+      "id": "feeling_e2",
+      "fromNode": "feeling_xn",
+      "fromSide": "bottom",
+      "toNode": "feeling_nx",
+      "toSide": "top"
+    },
+    {
+      "id": "feeling_e3",
+      "fromNode": "feeling_nx",
+      "fromSide": "bottom",
+      "toNode": "feeling_path",
+      "toSide": "top"
+    },
+    {
+      "id": "feeling_e4",
+      "fromNode": "feeling_path",
+      "fromSide": "bottom",
+      "toNode": "feeling_ev",
+      "toSide": "top"
+    },
+    {
+      "id": "core_feeling",
+      "fromNode": "core",
+      "fromSide": "top",
+      "toNode": "feeling",
+      "toSide": "bottom"
+    },
+    {
+      "id": "story_e1",
+      "fromNode": "story",
+      "fromSide": "bottom",
+      "toNode": "story_xn",
+      "toSide": "top"
+    },
+    {
+      "id": "story_e2",
+      "fromNode": "story_xn",
+      "fromSide": "bottom",
+      "toNode": "story_nx",
+      "toSide": "top"
+    },
+    {
+      "id": "story_e3",
+      "fromNode": "story_nx",
+      "fromSide": "bottom",
+      "toNode": "story_path",
+      "toSide": "top"
+    },
+    {
+      "id": "story_e4",
+      "fromNode": "story_path",
+      "fromSide": "bottom",
+      "toNode": "story_ev",
+      "toSide": "top"
+    },
+    {
+      "id": "core_story",
+      "fromNode": "core",
+      "fromSide": "top",
+      "toNode": "story",
+      "toSide": "bottom"
+    },
+    {
+      "id": "director_e1",
+      "fromNode": "director",
+      "fromSide": "bottom",
+      "toNode": "director_xn",
+      "toSide": "top"
+    },
+    {
+      "id": "director_e2",
+      "fromNode": "director_xn",
+      "fromSide": "bottom",
+      "toNode": "director_nx",
+      "toSide": "top"
+    },
+    {
+      "id": "director_e3",
+      "fromNode": "director_nx",
+      "fromSide": "bottom",
+      "toNode": "director_path",
+      "toSide": "top"
+    },
+    {
+      "id": "director_e4",
+      "fromNode": "director_path",
+      "fromSide": "bottom",
+      "toNode": "director_ev",
+      "toSide": "top"
+    },
+    {
+      "id": "core_director",
+      "fromNode": "core",
+      "fromSide": "bottom",
+      "toNode": "director",
+      "toSide": "top"
+    },
+    {
+      "id": "runtime_e1",
+      "fromNode": "runtime",
+      "fromSide": "bottom",
+      "toNode": "runtime_xn",
+      "toSide": "top"
+    },
+    {
+      "id": "runtime_e2",
+      "fromNode": "runtime_xn",
+      "fromSide": "bottom",
+      "toNode": "runtime_nx",
+      "toSide": "top"
+    },
+    {
+      "id": "runtime_e3",
+      "fromNode": "runtime_nx",
+      "fromSide": "bottom",
+      "toNode": "runtime_path",
+      "toSide": "top"
+    },
+    {
+      "id": "runtime_e4",
+      "fromNode": "runtime_path",
+      "fromSide": "bottom",
+      "toNode": "runtime_ev",
+      "toSide": "top"
+    },
+    {
+      "id": "core_runtime",
+      "fromNode": "core",
+      "fromSide": "bottom",
+      "toNode": "runtime",
+      "toSide": "top"
+    },
+    {
+      "id": "review_e1",
+      "fromNode": "review",
+      "fromSide": "bottom",
+      "toNode": "review_xn",
+      "toSide": "top"
+    },
+    {
+      "id": "review_e2",
+      "fromNode": "review_xn",
+      "fromSide": "bottom",
+      "toNode": "review_nx",
+      "toSide": "top"
+    },
+    {
+      "id": "review_e3",
+      "fromNode": "review_nx",
+      "fromSide": "bottom",
+      "toNode": "review_path",
+      "toSide": "top"
+    },
+    {
+      "id": "review_e4",
+      "fromNode": "review_path",
+      "fromSide": "bottom",
+      "toNode": "review_ev",
+      "toSide": "top"
+    },
+    {
+      "id": "core_review",
+      "fromNode": "core",
+      "fromSide": "bottom",
+      "toNode": "review",
+      "toSide": "top"
+    },
+    {
+      "id": "method_core",
+      "fromNode": "method",
+      "fromSide": "bottom",
+      "toNode": "core",
+      "toSide": "top"
+    },
+    {
+      "id": "core_blocker",
+      "fromNode": "core",
+      "fromSide": "bottom",
+      "toNode": "blocker",
+      "toSide": "top"
+    }
+  ]
+}
