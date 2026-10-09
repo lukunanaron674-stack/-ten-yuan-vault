@@ -61,3 +61,29 @@
 - 按任务卡写时间线、可观察变化和声音字段；自评分档只筛选候选，不等于审核通过或锁定。
 - 提示词生产不提交渲染任务、不调用 ComfyUI；执行由 [[AG-07_H3渲染Agent]] 按正式协议接手。
 - 原轮转、角色白名单和分数门槛是 2026-10-01 工作流快照，执行前回查当前任务卡。迁移映射见 [[../03_知识库/增量/2026-10-01_20代理库并入记录]]。
+
+## H3_15S_PILOT｜R4 导演镜头与描述词编译（2026-10-10）
+
+**专项覆盖**：当任务目标是674-286每小时15秒H3时，以上旧8–10秒默认时长失效。输入必须是AG-04的ASSET_PAIR_PACKET_V1、AG-11角色门、AG-02的TENYUAN_FEEL_PACKET_V1、AG-01的STORY_PACKET_V1、AG-00目标/上一轮NX。稿件状态为DRAFT_ONLY时，本岗位只可出带BLOCKED的候选镜头卡，不得宣称渲染指令已批准。
+
+**先导演，后编译（不可颠倒）**：
+1. STORY_BEAT：0–15秒完整故事事件序列（初态→触发→行动/关系→可见变化→终态），匹配SINGLE_OBJECT或TWO_OBJECT_RELATION，明确每一时刻观众应该看到什么。
+2. SHOT_DESIGN：为每个镜头/连续单镜的节拍分别写景别、机位、构图重心、画面内角色/场景的位置、镜头运动、光源依据、环境已有物反应、动作起止和具体可验证的目标感受机制。源图不支持的新机位或局部特写只能提出素材NX，不准靠提示词虚构。
+3. CAMERA_REALITY_CHECK：单镜能否在真实参考图中保持方位、比例、光向和镜头连续；不能则REPLAN。H06 目前**最近A端用户指令为原生15秒一次跑完而非旧五镜剪辑**；362f/24fps≈15.083秒是此前A端报告的成功技术规格，不等于按独立双图门已PASS。若未来改用多镜剪辑，须来自新明确导演批准与多镜源图门，不默认恢复旧V4.1五镜。
+4. H3_PROMPT_COMPILER（AG-03内部独立交付阶段）：输入前3项已审镜头卡，输出适合真实H3工作流的逐镜英文positive prompt、动作时间分配、camera、lighting、subject+environment locks、negative constraints、source_ref_0=CHARACTER / source_ref_1=SCENE职责、禁止变形/新增人数/变构图、seed/模型参数**引用而不是猜测**、最后稳定态。
+5. QA：用“删除十元抽象词后是否仍有可见事件”“静音可否理解初末变化”“镜头、景别、光影是否提升感受而不是相互争抢”自检；报告最重要的一个NX，进入AG-07前仅为CANDIDATE。
+
+**交接包 SHOT_PACKAGE_15S_V1**：
+- job_id, source_task=674-286, evidence_refs, base_state_version, mode。
+- asset_pair_ref（两个独立SHA/asset_id及审核/绑定状态），tenyuan_packet_ref, story_packet_ref。
+- native_take_policy=ONE_NATIVE_15S_BY_DEFAULT | MULTISHOT_IF_APPROVED。
+- shot_cards=[{time_range,shot_size,camera_position,camera_motion,composition,character_blocking,environment_blocking,lighting_source,action,feeling_mechanism,source_supported,opening_state,closing_state}]。
+- h3_prompt_en, negative_prompt_en, ref0_role=CHARACTER, ref1_role=SCENE, workflow_requirements, exact_duration_vs_native_frames, known_risks。
+- status=DRAFT_ONLY | READY_FOR_H3_PREFLIGHT | REPLAN，禁止由本Agent填RENDER_SUCCESS或USER_PASS。
+
+**样例DRAFT_ONLY（H06/SINGLE_OBJECT）**：
+- 0–4秒：门前中全景/原参考轴线静机，主教稳立，完整身体轮廓承载仪式感。
+- 4–10秒：主教缓慢而清晰地完整抬起手臂作出命令姿态，不说话、不嘴动、衣袍惯性从属动作；镜头若有缓推，幅度小且需源空间支持。
+- 10–15秒：动作停住，让构图与原场景环境的稳定状态持续，强化“不可动摇”，不添加群众或建筑反馈。
+- EN draft: "One uninterrupted fifteen-second shot. Use reference image 0 only to preserve the exact H06 bishop identity, mechanical facial structure, costume, proportions, staff and palette. Use independent reference image 1 only to preserve the actual approved location, architecture, perspective, light direction and background. First hold a solemn still pose. Then perform one complete deliberate arm-raising command gesture with a clearly visible start and end. Settle into a steady final hold. The motion is physically continuous and restrained. Keep camera axis and lighting coherent. No speaking, no lip motion, no extra limbs, no new characters, no scene reconstruction, no unrelated symbols, no unmotivated cuts."
+- **该段仅为待独立场景图补齐后的占位草案，未进行双图执行。** 场景光影、观众感受和本机参数不能凭空确认。
