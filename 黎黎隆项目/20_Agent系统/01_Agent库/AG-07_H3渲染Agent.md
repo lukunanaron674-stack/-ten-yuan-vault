@@ -277,3 +277,27 @@ AG-07 可自行：
 AG-07 / H3 的详细问题、XN/NX/PATH/EVIDENCE、B1–B4 编排、282→READY_FOR_H3、A/C反馈与人在环外状态，统一以 [[../../00_总览/B端问题系统.canvas]] 为详细 canonical。
 
 [[../../00_总览/H3视频生产问题.canvas]] 自此只作历史/导航。AG-07 本文件只保留代理执行协议，不再维护问题状态副本。
+
+## H3_15S_PILOT｜R4–R6 4080执行与问题系统回收（2026-10-10）
+
+专项先检查证据，不能看到SHOT_PACKAGE就直接提交。必须读取674-286最新执行与AG-SYS问题状态、674-296+293的ASSET_PAIR_PACKET_V1、674-173对应逐图USER审核、AG-11角色门、AG-03的SHOT_PACKAGE_15S_V1。不能自行到本地仓库搜一个新场景绕过工单。
+
+### R4 渲染前技术门
+- 输入角色图和独立场景图分别具有不同原始asset_id、不同parent SHA，均经USER有效版本/格位审核，记录两图全SHA、A端实际可解码路径和角色/场景职责。角色图自带背景/裁切不能作为第二张场景图。
+- 仅允许后端实际存在的ref_images.ref_image_0绑定CHARACTER、ref_images.ref_image_1绑定SCENE；对每张绑定记录workflow节点路径/运行日志。文字写ref0/ref1并不证明图已入模型。
+- source_type、分辨率、裁切、宽高比、镜头景别、安全镜头运动、身份和动作边界必须预检，禁止stretch；异常按BLOCKED_INPUT_ROLE_MISMATCH/SCENE_MISSING/REF_BIND_FAIL等返回上游。
+- 15秒H06默认执行方式跟从最新USER方向ONE_NATIVE_15S（非旧五镜分段），以现场workflow实证为准。已有A端362f/24fps≈15.083秒报告是历史工程回执，那条片因将P3同源当双图而不满足最新素材门；不可把该实验PASS复制为本轮READY。若要求精确15.00秒，必须证明fps/帧数与必要的时间截取方式，不将15.08冒充15.00。
+- 只有真图门PASS、AG-11READY、AG-00确认和H3_AGENT_PLAN_PACKET=APPROVED_FOR_RENDER方可转RENDER_TASK；实际executor_receipt后才标RUNNING。
+
+### R5 问题系统（不是伪造独立进程）
+- 读取canonical [[../../00_总览/B端问题系统.canvas]] 及其15秒专项分图；H3总Z分化为INPUT/FEEL_STORY/STORYBOARD_PROMPT/EXECUTE/REVIEW等有独立验收边界的子Z，执行步骤本身不是子Z。
+- 对每个子Z记录XN=已验证规则及来源、NX=待解决单点、PATH=真正负责人/可执行步骤、EVIDENCE=真实回执。体量Z0–Z3的数字分档只作为候选管理刻度，不是物理测量；十元符号XN与问题系统知识XN严格分开。
+- 本轮最高优先NX=缺独立、工单登记、具USER审批范围且4080可读的场景图。仅通过293/296真实补图+173USER裁决+A端实际SHA核验后升级；若没有新证据，则NO_OP/WAIT_ASSET而不是每小时换一种同义文案。
+
+### R6 技术审核→用户审核→入库
+- 实际MP4只能在A端临时区保存并由AG-08读取全视频、抽帧、检验身份/手脚/衣袍/构图/动作因果/目标时长/稳定性；TECH_PASS不等于USER_PASS。
+- 在674-173向USER提供真实可访问临时视频的审核入口和版本/问题摘要；不能只上传元数据要求用户凭空审核。
+- 仅明确USER PASS的素材进入674-289正式视频库；未确认或FAIL保留临时版本及必要诊断记录，按USER规则清理，不作为正式H3V。
+- R6每个证据状态必须分开：PROTOCOL_WRITTEN、PREFLIGHT_BLOCKED、RENDER_SUCCESS、TECH_PASS、USER_PASS、CANONICAL_STORED。任何不可现场验证的环节填UNKNOWN/BLOCKED。
+
+结束门：WAIT_ASSET | WAIT_USER_REVIEW | EXECUTABLE | CYCLE_DONE | NO_OP | BLOCKED，每次必须写唯一最前置阻塞和下一责任端，不允许循环制造重复计划。所有R6实机字段必须以当次4080执行回执为准，不将历史GPU在线证明当现在在线。
