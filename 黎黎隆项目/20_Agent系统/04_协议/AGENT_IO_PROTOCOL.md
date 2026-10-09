@@ -124,3 +124,28 @@ LEARNING 使用 test_shot_id。
 - style_review_agent PASS 后才能成为 approved_assets。
 - h3_agent 必须先完成 PLAN/PREFLIGHT；之后生成 RENDER_TASK，且只有收到 executor_receipt 才能标记 RENDERING。
 - video_review_agent PASS 后只提交 closing_state；next_shot_id 仍由导演合并。
+
+## H3_15S_PILOT｜R1–R3 专项交接（2026-10-10）
+
+以下仅覆盖本专项15秒H3实践的默认代理调度；通用PRODUCTION/LEARNING、主题与世界观门禁保持不变。专项生产入口674-286、素材事实293、A端可用池296、USER审核173；297只作感受既有证据来源，用户已否决的低质EXT-R1素材不得复用。**工单先行，不自行搜扫场景库和角色库。**
+
+### 顺序与责任
+1. AG-00导演/问题系统：读取当前674-286目标、上轮NX和status，确定一个本轮问题，锁定任务ID。
+2. AG-04素材：按296→293→173回读出具ASSET_PAIR_PACKET_V1（角色图×1、独立场景图×1）及SHA/版本/USER审核格位/A端可达性；不假定双图READY。
+3. AG-11角色：读取AG-04真实素材事实，核角色身份、固定设定及画面允许的动作，回CHARACTER_H3_READY_PACKET或精确BLOCKED。
+4. AG-02十元：选择SINGLE_OBJECT或TWO_OBJECT_RELATION其中之一，继承各对象十元证据及目标感受，回TENYUAN_FEEL_PACKET_V1。单对象中的第二张图仅为技术输入/情境支持；双对象双方十元分别登记，明确作用机制。
+5. AG-01剧本：按选定模式产出2–3个不同事件机制候选，最终选一条15秒最小故事，回STORY_PACKET_V1。
+6. AG-02反审一次真实因果与目标感受；AG-01只修争议字段，AG-00合并决策，反审未过则REPLAN，不无限循环。
+7. R4后AG-03分镜与H3提示词编译，AG-07输入与4080执行门，A端只有真实执行receipt才算RENDERED；本地技术审核独立于173 USER最终PASS。
+8. USER只审临时视频；用户PASS后才进入289正式视频库。失败反馈写286问题NX，可靠新证据支持才升级问题XN。
+
+### 交接硬条件
+- 资产与业务状态分轴记录：已登记/候选≠USER_PASS，素材TECH_PASS≠A_READY，剧本READY≠RENDER_READY。
+- 每轮只选一个问题/一种模式/一个最小故事；前置素材缺失仍允许离线DRAFT，但不得伪称A端执行。
+- 通用AGENT_IO中script先于tenyuan的旧序列，对本专项允许AG-02先给感受关系方案、AG-01写事件、AG-02反审；两者不越权改写主题与世界Canon。
+- 所有结果携带job_id、base_state_version与证据；状态过期标STALE_RESULT；交AG-00唯一合并，不以十个虚拟代理阶段充当十次真实执行。
+
+### R1–R3当前验收状态
+R1：AG-04专项读工单与双图ASSET_PAIR_PACKET已写入岗位卡；Windows目录、双图实际可达性仍BLOCKED_LOCAL_EVIDENCE。
+R2：AG-02单对象/双对象感受协议及结构化输出已写入岗位卡；尚无USER感受实测。
+R3：AG-01 15秒最小故事协议、反审与脚本输出已写入岗位卡；真实素材组合未READY，不放行渲染。
