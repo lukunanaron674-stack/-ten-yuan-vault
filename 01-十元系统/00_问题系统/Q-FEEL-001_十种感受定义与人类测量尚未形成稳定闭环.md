@@ -76,3 +76,14 @@ updated: 2026-10-07
 - 下游 `674-286 DA_INTERFACE_V1` / `674-289 VIDEO_ASSET_RECORD` 若消费两种量表，应使用**两个独立可空字段族**：`sensory_load_M_15s`（来源674-297）与 `human_feeling_profile_10d`（来源Q-FEEL-001）；禁止混算或跨字段自动补值。仅作数据契约隔离，不表示已完成接口施工。
 - 证据状态保持：`C=C2`、`E=E0`、`HUMAN_GATE=NOT_READY`、`human_feeling_profile=null`、`MAE=null`、`Top1=null`、`Top3=null`、`research_rounds_completed=0`。
 - 原有素材阻塞保持：`parent_byte_sha=UNVERIFIED`、`crop_manifest=UNVERIFIED`、`blind_user_display=NOT_VERIFIED`；`NEXT=WAIT_PARENT_BYTES_AND_BLIND_USER_DISPLAY`。这次只新增**可复核的跨系统测量边界**，不是人类感受实验或可信度升级。
+
+
+## 10｜R2.0 下游感受量表字段落地差异核验｜2026-10-09
+
+- **本轮唯一 Q：Q-FEEL-001**。本轮仅核对跨系统现行接口声明，不执行五轴感受单变量 A/B、不请求用户、不新增样本、不改十元感受正本。
+- 上游量表已区分：`human_feeling_profile_10d` 是 Q-FEEL-001 的十维人类感受谱；`sensory_load_M_15s` 是 674-297 的独立15秒感官体验总量。两者不能互填、互算或用 AI 自评补值；前者暂无真人数据，后者暂无真人标尺实测。
+- **实际 HOT 读取结果**：Linear 674-286 当前描述（updatedAt `2026-10-09T23:07:20.437Z`）与最新8条评论、674-289 当前描述（updatedAt `2026-10-08T20:40:06.369Z`）与最新8条评论中，均未发现字段名 `human_feeling_profile_10d` 或 `sensory_load_M_15s`。674-289 已有 `DA_INTERFACE_V1 / VIDEO_ASSET_RECORD`，但本次可见 HOT schema 中尚未声明这两项独立可空字段。
+- **可复核结论**：R1.9 的“双量表字段隔离”目前是**上游研究契约建议**，不能冒充 286/289 下游已实际落地的接口。当前只能登记 `DOWNSTREAM_SCHEMA_WIRING=NOT_VERIFIED_IN_HOT`；这不证明所有仓库代码、旧评论或本地运行时都缺字段，也不等于视频生产故障。
+- **NEXT/责任边界**：由 286/289 各自责任端核对正式 DA_INTERFACE_V1 实际 schema/运行时；若确需消费两项量表，分别追加可空字段与 source/evidence/human_gate 元数据，给出真实 schema/样本包回执后本 Q 只读验收。不得由本 WATCHDOG 越权直接修改 B 端或视频仓正本。
+- **保留原阻塞**：`parent_byte_sha=UNVERIFIED`；`crop_manifest=UNVERIFIED`；`blind_user_display=NOT_VERIFIED`；`HUMAN_GATE=NOT_READY`。
+- **证据与统计**：`C=C2`；`E=E0`；`research_rounds_completed=0`；`human_feeling_profile=null`；`MAE=null`；`Top1=null`；`Top3=null`。本轮是接口现状审计，不是感受实测或五轴A/B成绩。
