@@ -171,3 +171,18 @@ NEXT：核对父图/裁切版本与持久可显示的盲化素材后，再决定
 - `status=WAIT_PARENT_BYTES_AND_BLIND_DISPLAY`; `blind_code=FROZEN_AND_RECOMPUTED`; `parent_byte_sha=UNVERIFIED`; `edit_lineage=PARTIAL`; `HUMAN_GATE=NOT_READY`。
 - `C2→C2`; `E0→E0`; `research_rounds_completed=0`; `human_feeling_profile=null`; `MAE=null`; `Top1=null`; `Top3=null`。此回执只证明预锁算法可复算，不能当感受实验成绩。
 - NEXT：从有权限的资产环境取得BOARD-C父图与裁切manifest真实字节，建立可持续显示的六图盲化页面，进行标签泄漏/顺序/图片SHA端到端验收；未就绪则WAIT/NO_OP。
+
+
+## 12. R1.8｜六图连接器字节与渲染回执（2026-10-08）
+
+- receipt_id: `Q-FEEL-001-BLIND-R0-R1.8-CONNECTOR-DISPLAY-20261008`
+- 来源：674-293 六张真实 PNG 附件；此节是**对既有 R1.8 运行回执的正式补写**，不是本次重新下载、重算或重跑。
+- R1.8 运行回执记录：`connector_byte_fetch=PASS_6_OF_6`、`sha256=PASS_6_OF_6`、`tool_render_smoke=PASS_6_OF_6`；六张子图各自 SHA256 与第8节已登记值匹配。该记录只证明当次连接器工具侧可读取与显示，**不等于用户端盲化展示通过**。
+- 六张附件身份及最终版本沿用第2/8/9节：BOARD-C-{02:v1,04:v3,05:v2,12:v1,13:v2,15:v2}；不得把机器可显示写成 USER PASS。
+- `blind_user_display=NOT_VERIFIED`；`parent_byte_sha=UNVERIFIED`；`crop_manifest=UNVERIFIED`；`edit_lineage=PARTIAL`。
+- `prior_exposure=YES_OR_LIKELY`；`selection_bias=YES`；`same_board_cluster=YES`。只作为个人方法回归候选，不宣称陌生题材、外部泛化或独立人类测量。
+- `blind_code=FROZEN_AND_RECOMPUTED`（第10/11节），但用户端显示泄漏检查尚未完成。
+- `C=C2`；`E=E0`；`HUMAN_GATE=NOT_READY`；`human_feeling_profile=null`；`MAE=null`；`Top1=null`；`Top3=null`；`research_rounds_completed=0`；`five_axis_ab_experiments_counted=0`。
+- 本节用于修复 Q-FEEL-001 原Q第8节指向“实验包第12节”的断链；不修改十元感受正本，不增加研究成绩。
+
+**NEXT：** `WAIT_PARENT_BYTES_AND_BLIND_USER_DISPLAY`。从有权限的原资产环境取得 BOARD-C 父图原字节、裁切 manifest 和细修版本证据；再建立持久的六图盲化展示，按预锁顺序与 SHA 做端到端验收。未满足前不请求用户。
