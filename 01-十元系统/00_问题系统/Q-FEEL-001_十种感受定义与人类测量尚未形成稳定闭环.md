@@ -87,3 +87,5 @@ updated: 2026-10-07
 - **NEXT/责任边界**：由 286/289 各自责任端核对正式 DA_INTERFACE_V1 实际 schema/运行时；若确需消费两项量表，分别追加可空字段与 source/evidence/human_gate 元数据，给出真实 schema/样本包回执后本 Q 只读验收。不得由本 WATCHDOG 越权直接修改 B 端或视频仓正本。
 - **保留原阻塞**：`parent_byte_sha=UNVERIFIED`；`crop_manifest=UNVERIFIED`；`blind_user_display=NOT_VERIFIED`；`HUMAN_GATE=NOT_READY`。
 - **证据与统计**：`C=C2`；`E=E0`；`research_rounds_completed=0`；`human_feeling_profile=null`；`MAE=null`；`Top1=null`；`Top3=null`。本轮是接口现状审计，不是感受实测或五轴A/B成绩。
+
+- `R2.0_SYNC_STATUS: GitHub original Q write/readback PASS; Linear 674-104 comment BLOCKED_BY_SAFETY_CHECK`。GitHub commit `41e7cd82024539fbb7a585c536a7e69bc5e5398f`；Linear同步未成功，不得称已完成跨系统双写；后续仅在可写权限/安全检查允许时补同步。
