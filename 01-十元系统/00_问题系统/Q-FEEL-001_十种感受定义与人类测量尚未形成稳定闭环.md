@@ -66,3 +66,13 @@ updated: 2026-10-07
 - 仅消除“本轮连接器无法取回/渲染六张子图”的疑虑；尚无可复核的**用户盲化展示端到端验收**，父图原字节和裁切manifest仍缺，编辑链不完整。
 - `C2/E0`不变；`HUMAN_GATE=NOT_READY`; `human_feeling_profile/MAE/Top1/Top3=null`; `research_rounds_completed=0`；不执行或计数独立五轴A/B。
 - `NEXT=WAIT_PARENT_BYTES_AND_BLIND_USER_DISPLAY`。GitHub public仓库未新增公开图片原字节。
+
+
+## 9｜R1.9 跨系统量表隔离审计｜2026-10-09
+
+- **本轮唯一 Q：Q-FEEL-001**；只执行跨系统证据字段审计，不启动/重复五轴感受单变量 A/B，不计有效人类实验轮次。
+- 新增已读来源：674-297 感受体量标尺 `AI问题解决Canvas/五行十元研究/感受实现研究_20261009/感受体量标尺与营造成本_v0.1.md`，GitHub commit `ee4018d5929a3466d53e6e71331d269e616905e9`（R2.1 单一 `M_15s` 标尺协议）。该来源明确 `M_15s` 是统一15秒下的主观感官体验总份量，非十元分量向量；候选100M锚尚待用户确认，`M_observed=null`。
+- **边界校验：** `M_15s` 不能填入 `human_feeling_profile`（十元10维人类感受谱）、`profile_mae`、`top1_hit`、`top3_overlap`；不能将 `100 M` 锚的约定值当作人类测量值、十元类型/强度、用户PASS或Q-FEEL-001重复测量证据。
+- 下游 `674-286 DA_INTERFACE_V1` / `674-289 VIDEO_ASSET_RECORD` 若消费两种量表，应使用**两个独立可空字段族**：`sensory_load_M_15s`（来源674-297）与 `human_feeling_profile_10d`（来源Q-FEEL-001）；禁止混算或跨字段自动补值。仅作数据契约隔离，不表示已完成接口施工。
+- 证据状态保持：`C=C2`、`E=E0`、`HUMAN_GATE=NOT_READY`、`human_feeling_profile=null`、`MAE=null`、`Top1=null`、`Top3=null`、`research_rounds_completed=0`。
+- 原有素材阻塞保持：`parent_byte_sha=UNVERIFIED`、`crop_manifest=UNVERIFIED`、`blind_user_display=NOT_VERIFIED`；`NEXT=WAIT_PARENT_BYTES_AND_BLIND_USER_DISPLAY`。这次只新增**可复核的跨系统测量边界**，不是人类感受实验或可信度升级。
