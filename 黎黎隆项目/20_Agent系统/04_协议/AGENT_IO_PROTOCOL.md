@@ -149,3 +149,21 @@ LEARNING 使用 test_shot_id。
 R1：AG-04专项读工单与双图ASSET_PAIR_PACKET已写入岗位卡；Windows目录、双图实际可达性仍BLOCKED_LOCAL_EVIDENCE。
 R2：AG-02单对象/双对象感受协议及结构化输出已写入岗位卡；尚无USER感受实测。
 R3：AG-01 15秒最小故事协议、反审与脚本输出已写入岗位卡；真实素材组合未READY，不放行渲染。
+
+## H3_15S_PILOT｜R4–R6 编译、问题回收与端到端验收（2026-10-10）
+
+本节与本协议R1–R3专项交接配套，只对674-286每小时15秒H3任务生效，其他项目仍使用原协议。
+
+R4（已定义）：AG-00统一目标和真实双图包；AG-03从TENYUAN_FEEL_PACKET_V1和STORY_PACKET_V1推导15秒镜头卡及英文H3 prompt，输出SHOT_PACKAGE_15S_V1。H06必须优先遵照USER最新原生15秒单镜执行方向，不能机械复用旧五镜剪辑。AG-03不直接运行GPU。AG-07只在两张独立真图、USER审核、SHA、角色身份、A端ref_images双节点、机位与景别均真实PASS后提交RENDER_TASK。
+
+R5（已定义）：问题系统入口仍为674-286（AG-SYS逻辑职责，不等于另起一个后台进程）。正本Canvas为黎黎隆项目/00_总览/B端问题系统.canvas，其中链接H3_15秒多代理问题系统_R4-R6_20261010.canvas。每轮只选一个NX，输出Z/XN(知识规则)/NX/PATH/EVIDENCE与变更版本。十元体系的XN是tenyuan_code_XN，与知识XN必须区分。Z量级Z0–Z3仅为待校准管理模型。无新资产/运行证据时WAIT_ASSET或NO_OP，不变更XN成熟度。
+
+R6（验收门）：只在真实GPU和视频可读回执下，逐级验证：
+- SOURCE：674-296+293+173提供两张**不同原始资产**，角色图、场景图均有独立asset_id/完整SHA/version/review_scope/原始字节和4080路径；AG-11角色包有效。
+- SCRIPT：模式唯一，AG-02对象十元来源明确，AG-01故事存在起始/触发/选择或动作/结果，AG-02已反审；AG-03分镜/词包足够表达。
+- PREFLIGHT：AG-07实测两图绑定、模型工作流、4080节点/参数，收到执行方回执。
+- RENDER：真实可解码MP4、完整视频SHA、帧率/帧数/时长、关键帧、动作质检与运行receipt。禁止同源双图通过；旧同源15秒历史输出只可当工程样本。
+- REVIEW：AG-08机械技术质检；674-173的USER实际观看明确PASS/FAIL/RERUN/AMBIGUOUS。机器技术PASS不等于USER审美或十元感受PASS。
+- STORAGE：只有USER PASS才允许674-289正式保存；未审/FAIL只本地临时，元数据存Linear。
+
+R6失败应返回**第一个真正阻塞项**而不是一长串猜测。当前读取674-286 2026-10-10 A端最新回执：H06角色P3真图据报可读；**没有被工单登记及实机核验的独立场景图**，因此R6结果=BLOCKED_MISSING_SCENE；R4文稿完成、R5 Canvas落地，不代表R6真实生产闭环PASS。只从674-296/293/173补齐证据后复验，不新建Issue、不重启297 EXT-R1被拒路线。
