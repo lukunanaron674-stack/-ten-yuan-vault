@@ -130,3 +130,19 @@
 ### 非 CH 候选入口
 当用户排除 CH 或要求新角色时，素材 Agent 直接读取 `../../03_角色/角色库/01_视觉候选总表_HNSNPC.json`。
 优先处理 P0/P1 候选的真图恢复、source_path、SHA、视图类型与重复组。历史清单有记录但 current main 缺图时必须标 `NEEDS_RESYNC`，不能把索引当图片本体。
+
+## H3 15秒专项｜R1 工单驱动双图门禁（2026-10-10）
+
+适用 task_mode=H3_15S_PILOT；以本节覆盖普通全库发现流程，不改变素材正本。每小时先读取Linear 674-286当前要求→674-296 A端可用切池→674-293原始资产状态→674-173逐版本/格位USER审核。必要时只读674-68已登记场景索引。**不在本流程遍历/搜索角色仓库和场景仓库；只从工单登记的候选中选择。**
+
+每轮恰好两张独立参考图：CHARACTER_REF×1负责身份造型；SCENE_REF×1负责环境空间。两者必须是不同原始图、不同asset_id；角色图自带背景不能充当独立场景图。四宫格按被审格位单格使用，父图SHA与派生SHA分开记。
+
+输出 ASSET_PAIR_PACKET_V1：
+- source_task=674-286；job_id；base_state_version。
+- character_ref / scene_ref：各自 asset_id、version、sha256、source_issue、root_id+relative_path、review_scope、user_review_evidence、review_state、4080_path_verified、visual_description、usable_shot_scale、style_compatibility。
+- 各对象十元仅继承已有来源：main、secondary、status=FROZEN|USER_CONFIRMED|PROVISIONAL|UNKNOWN；素材代理不得擅自定十元。
+- status=READY|WAIT_REVIEW|MISSING_CHARACTER|MISSING_SCENE|BLOCKED_PATH|BLOCKED_REVIEW；next_action与证据缺口。
+
+READY必须两张真图、SHA/版本/格位和明确用户审核相符、A端实际字节可读、用途与景别适配。SCENE_POOL_USABLE/FEATURED/文件存在/机器技术审核均不等于H3 A_READY。未满足只给MISSING/WAIT，不转渲染。联合AG-11核角色身份。
+
+R1真实状态：工单记录H06后版P3角色原图SHA，但尚不能确定一张独立已核验场景图；293曾报告AG-04索引UNINITIALIZED、旧路径与review_scope错配。此段只是接口落地，不能称本地修复完成。
