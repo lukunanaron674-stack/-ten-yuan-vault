@@ -1,0 +1,164 @@
+{
+  "title": "十元双轨映射对照用例",
+  "version": "0.1.0",
+  "status": "USER_ANCHOR_NOT_BENCHMARK",
+  "rules": {
+    "separate_noun_and_verb": true,
+    "require_cross_tenyuan_comparison": true,
+    "accept_grey": true,
+    "prevent_fabricated_scores": true,
+    "endpoint_not_relation": true,
+    "feeling_not_mapping": true,
+    "ten_yuan_symbols": [
+      "X",
+      "Z",
+      "N",
+      "ZN",
+      "NZ",
+      "XN",
+      "NX",
+      "ZX",
+      "XZ",
+      "X并Z"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "USER-ANCHOR-01",
+      "item": "拳击手",
+      "part_of_speech": "职业身份",
+      "preferred_candidate": "ZX",
+      "preferred_source": "USER_2026-10-10",
+      "candidate_competitors": [
+        "XZ",
+        "Z",
+        "XN"
+      ],
+      "analysis_context": "职业结构（细节待补）",
+      "note": "与具体比赛中的出拳、对抗和关系结构分开",
+      "actual_mapping_status": "UNVERIFIED",
+      "mapping_score": null,
+      "feeling_score": null,
+      "needs_user_calibration": true
+    },
+    {
+      "case_id": "USER-ANCHOR-02",
+      "item": "军官",
+      "part_of_speech": "职业身份",
+      "preferred_candidate": "ZX?",
+      "preferred_source": "USER_2026-10-10",
+      "candidate_competitors": [
+        "XN",
+        "Z",
+        "XZ"
+      ],
+      "analysis_context": "职业结构（细节待补）",
+      "note": "依命令权、制度职务、实战攻势等不同情境重评",
+      "actual_mapping_status": "UNVERIFIED",
+      "mapping_score": null,
+      "feeling_score": null,
+      "needs_user_calibration": true
+    },
+    {
+      "case_id": "USER-ANCHOR-03",
+      "item": "改革推动者",
+      "part_of_speech": "社会角色",
+      "preferred_candidate": "ZN",
+      "preferred_source": "USER_2026-10-10",
+      "candidate_competitors": [
+        "ZX",
+        "Z",
+        "NX"
+      ],
+      "analysis_context": "职业结构（细节待补）",
+      "note": "不可仅凭“主动推进”归ZX",
+      "actual_mapping_status": "UNVERIFIED",
+      "mapping_score": null,
+      "feeling_score": null,
+      "needs_user_calibration": true
+    },
+    {
+      "case_id": "USER-ANCHOR-04",
+      "item": "审讯官",
+      "part_of_speech": "职业身份",
+      "preferred_candidate": "XZ",
+      "preferred_source": "USER_2026-10-10",
+      "candidate_competitors": [
+        "ZX",
+        "XN",
+        "Z"
+      ],
+      "analysis_context": "职业结构（细节待补）",
+      "note": "临界试探与强制压迫不是同一结构判据",
+      "actual_mapping_status": "UNVERIFIED",
+      "mapping_score": null,
+      "feeling_score": null,
+      "needs_user_calibration": true
+    },
+    {
+      "case_id": "USER-ANCHOR-05",
+      "item": "外科医生",
+      "part_of_speech": "专业职业",
+      "preferred_candidate": "XN",
+      "preferred_source": "USER_2026-10-10",
+      "candidate_competitors": [
+        "ZX",
+        "XZ",
+        "Z"
+      ],
+      "analysis_context": "职业结构（细节待补）",
+      "note": "专业制度流程与实施切开动作分开",
+      "actual_mapping_status": "UNVERIFIED",
+      "mapping_score": null,
+      "feeling_score": null,
+      "needs_user_calibration": true
+    },
+    {
+      "case_id": "USER-ANCHOR-06",
+      "item": "调查记者",
+      "part_of_speech": "专业职业",
+      "preferred_candidate": "Z",
+      "preferred_source": "USER_2026-10-10",
+      "candidate_competitors": [
+        "ZX",
+        "XN",
+        "ZN"
+      ],
+      "analysis_context": "职业结构（细节待补）",
+      "note": "揭示/被看见与冲击性行为分开",
+      "actual_mapping_status": "UNVERIFIED",
+      "mapping_score": null,
+      "feeling_score": null,
+      "needs_user_calibration": true
+    }
+  ],
+  "negative_tests": [
+    {
+      "input": "外科医生进行一次强力切开",
+      "require_distinction": [
+        "职业本体映射",
+        "瞬时行为关系表达",
+        "观众感受"
+      ],
+      "must_not": "因为切开很主动就把职业固定为ZX"
+    },
+    {
+      "input": "审讯官在监狱里发号施令",
+      "require_distinction": [
+        "职业本体映射",
+        "行为关系",
+        "受压者感受"
+      ],
+      "must_not": "因为有威压就直接将审讯官职业归ZX"
+    },
+    {
+      "input": "三人围堵某同学（事件）",
+      "require_distinction": [
+        "角色身份",
+        "群体行为",
+        "受害方经验"
+      ],
+      "must_not": "将整个关系表达映射成每个人本体都属于ZX"
+    }
+  ]
+}
