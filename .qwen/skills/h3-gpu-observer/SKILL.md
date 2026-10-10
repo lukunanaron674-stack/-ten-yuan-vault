@@ -6,8 +6,8 @@ description: Inspect local NVIDIA VRAM and ComfyUI queue status in read-only mod
 仅允许使用项目脚本 `黎黎隆项目/20_Agent系统/07_本地执行/QWEN_SHADOW/h3_gpu_observer.py` 获取显存与ComfyUI队列快照；所有结果仅做技术建议，不是渲染批准。
 
 ## 只读执行
-`python "黎黎隆项目/20_Agent系统/07_本地执行/QWEN_SHADOW/h3_gpu_observer.py" --gpu-index 0 --min-free-mib 4096`
-不要擅自默认GPU index=0正确：R1现场确认真正4080序号后才正式使用。
+`python "黎黎隆项目/20_Agent系统/07_本地执行/QWEN_SHADOW/h3_gpu_observer.py" --gpu-index <R1确认的4080编号> --expected-gpu-name "RTX 4080" --min-free-mib 4096`
+脚本不再默认index=0；现场确认设备编号后显式传入。只读探针会校验名称确属RTX 4080，错卡返回WAIT。
 纯离线测试提供`--fixture path/to/test.json`，无GPU/ComfyUI即可测试。
 `--min-free-mib`起点不是H3模型峰值需求，必须在实机测过H3峰值和余量后由Codex填写。
 

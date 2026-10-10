@@ -36,8 +36,11 @@ def validate(packet):
             errs.append("INVARIANT_FAILED:" + key)
     if packet.get("action") not in ALLOWED_ACTIONS:
         errs.append("ACTION_NOT_ALLOWED")
-    if not isinstance(packet.get("source_refs"), list) or not packet.get("source_refs"):
+    sources = packet.get("source_refs")
+    if not isinstance(sources, list) or not sources:
         errs.append("SOURCES_REQUIRED")
+    elif any(not isinstance(source, str) for source in sources):
+        errs.append("SOURCE_REF_WRONG_TYPE")
     for key in ("project_id", "job_id", "base_state_version"):
         if not isinstance(packet.get(key), str) or not packet[key].strip():
             errs.append("IDENTITY_REQUIRED:" + key)

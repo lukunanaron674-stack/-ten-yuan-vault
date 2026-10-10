@@ -23,7 +23,8 @@ def audit(assets):
         aid = a.get("asset_id") if isinstance(a, dict) else None
         path_text = a.get("path") if isinstance(a, dict) else None
         expected = a.get("sha256") if isinstance(a, dict) else None
-        if not aid or not isinstance(path_text, str) or not isinstance(expected, str):
+        valid_id = isinstance(aid, str) and bool(aid.strip())
+        if not valid_id or not isinstance(path_text, str) or not path_text.strip() or not isinstance(expected, str):
             status, actual = "BAD_MANIFEST", None
         elif aid in seen or len(expected) != 64 or any(c not in "0123456789abcdef" for c in expected.lower()):
             status, actual = "BAD_MANIFEST", None
@@ -37,11 +38,17 @@ def audit(assets):
                     status = "PASS_SHA" if actual == expected.lower() else "SHA_MISMATCH"
                 except OSError:
                     status, actual = "MISSING_FILE", None
-        if aid:
+        if valid_id:
             seen.add(aid)
         counts[status] += 1
-        has_review = (isinstance(a, dict) and
-                      all(a.get(k) for k in ("version", "review_scope", "source_issue")))
+        has_review = (
+            isinstance(a, dict)
+            and all(isinstance(a.get(k), str) and a[k].strip()
+                    for k in ("version", "review_scope", "source_issue"))
+            and ("parent_asset_id" in a)
+            and (a["parent_asset_id"] is None or
+                 (isinstance(a["parent_asset_id"], str) and bool(a["parent_asset_id"].strip())))
+        )
         if not has_review:
             counts["MISSING_REVIEW_METADATA"] += 1
         results.append({

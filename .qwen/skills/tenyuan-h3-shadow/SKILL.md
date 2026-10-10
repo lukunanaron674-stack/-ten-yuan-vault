@@ -17,12 +17,19 @@ description: Read the approved Linear/Obsidian H3 task packet and output a stric
 ## 影子输出
 只生成遵从 `QWEN_SHADOW_PACKET_SCHEMA.json` 的JSON：
 - action只能取 `NO_OP | READ_ONLY_PREFLIGHT | PROPOSE_NEXT_TEST | ESCALATE_NX`；
-- reason，source_refs，current_z，xn_candidate（若有），nx_gap（若有），blocker，next_action；
+- 只填写schema定义字段：`reason`、`source_refs`、`blocker`、`xn_candidate`、`nx_gap`、`next_action`等；不要输出schema外字段（schema中没有`current_z`）；
 - 明确 `submitted_to_comfyui=false`、`authority=NONE`；
 - 所有感受判断只记录B端或USER已证实来源。H06USER认为缓慢压掌与圣光表达神圣感，不准凭此推出通用高可信XN。
 
+### action选择
+- `NO_OP`：没有新证据/可执行变更；或任务已`QUEUED/RUNNING`且无新反馈。
+- `ESCALATE_NX`：缺少其他负责人必须补齐的门禁证据，如场景审核、合法工作流帧网格或运行证据。把缺口写入`blocker`，`next_action`写自然语言补证动作。
+- `PROPOSE_NEXT_TEST`：无阻断，且存在不触碰生产的最小可验证动作。
+- `READ_ONLY_PREFLIGHT`：仅用于读取检查且未发现需要升级的阻断缺口。
+- 不要把下一步建议写成action枚举值。发现缺门禁必须`ESCALATE_NX`，不能用`READ_ONLY_PREFLIGHT`或`PROPOSE_NEXT_TEST`弱化阻断。
+
 ## 安全与效率
-- 首轮上下文约4096 tokens为工程试点，仅加载当前小包，不整库灌入；
+- 首轮上下文约4096 tokens为工程试点，仅加载当前小包，不整库灌入；本地回放使用Qwen3 ChatML格式和JSON Schema约束生成；
 - 无source SHA、审核格位或真实PATH，输出BLOCKED而非补造图；
 - 本地Qwen和Codex意见冲突时，以当前USER/Canon/真实EVIDENCE/Director为准，记录差异作NX，不覆盖；
 - 两轮影子输出相同且无新证据则NO_OP，不再重复研究。
