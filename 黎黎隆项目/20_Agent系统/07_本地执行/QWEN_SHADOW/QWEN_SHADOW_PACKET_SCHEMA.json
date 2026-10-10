@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QWEN_SHADOW_PACKET_V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "mode",
+    "authority",
+    "active_executor",
+    "project_id",
+    "job_id",
+    "base_state_version",
+    "source_refs",
+    "action",
+    "reason",
+    "blocker",
+    "xn_candidate",
+    "nx_gap",
+    "next_action",
+    "submitted_to_comfyui"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "v1"
+    },
+    "mode": {
+      "const": "SHADOW"
+    },
+    "authority": {
+      "const": "NONE"
+    },
+    "active_executor": {
+      "const": "CODEX"
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "job_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "base_state_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "action": {
+      "enum": [
+        "NO_OP",
+        "READ_ONLY_PREFLIGHT",
+        "PROPOSE_NEXT_TEST",
+        "ESCALATE_NX"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "blocker": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "xn_candidate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nx_gap": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "submitted_to_comfyui": {
+      "const": false
+    }
+  }
+}
