@@ -81,3 +81,53 @@ slots:
 DESIGN_DONE=第一小时实际可追溯地生成12条有效文本候选；LOOP_DONE=后续至少有一个带真实FEEDBACK_EVENT的多卡改版和小时收据，且已排队版本未被篡改；HOST_DONE=现场证明24h小时Scheduler活跃，GPU无并发。
 SPEC_DONE=本文件和Linear 286/216同步；HOST_DONE当前未知、Qwen本地尚未安装/实跑。
 STOP=无证据、无素材、USER审核缺失时只停当前卡，**不中断小时监测**；当没有真正可做的工作时允许低成本IDLE_WATCH，不为维持“连续思考”反复花token或GPU成本。
+
+
+## v1.1 USER覆盖｜根据问题系统知识XN/NX弹性回收未跑槽位（2026-10-11）
+
+**本节覆盖v1中“当天12卡按原计划执行/只在USER反馈后更新”的任何隐含假设。** 每天12个是“同时管理的候选槽位”而非12条不可更换的描述词、不是必须跑满12条视频。第一轮给12槽提供可追溯的候选初稿，之后各小时按最新 **Z→知识XN→NX→PATH→执行证据** 重排。即使没有新的USER反馈，知识XN状态变化、已有技术回执、PATH能力变化，也应触发未跑候选重新评价。**禁止为满足数字12而保持过时测试。**
+
+### 1. 每小时先检XN，再选词
+1. 读取674-276问题树 + 674-286本轮Z和XN_delta/NX_delta + 216技术失败族/真实receipt + 173 USER反馈 + 293/296双图素材PATH；增量读，不重复全文。
+2. 对所有尚未QUEUED的槽，重算`z_coverage`, `xn_evidence_level`, `nx_remaining`, `path_ready`, `expected_information_gain`, `expected_feeling_gain`, `experiment_cost`，只要事实增量导致结论变了就产生`plan_revision`。
+3. 先用新证据归档已经无需再验证的候选，再从最重要的剩余Z/NX选下一条最小差异实验；B端AG-00审核，CODEX仅执行合规READY卡，Qwen仍SHADOW。
+4. 目标不是填满12轮，是用最少GPU出片获得足够的有效感受与问题收敛证据。必要时只保留3条READY+其余备用或空槽，不能伪造“12轮全READY”。
+
+### 2. 未跑候选的可回收动作
+- `KEEP`：当前知识XN仍适用，研究价值与素材门都成立，保留原提示词。
+- `PATCH`：XN/NX或USER反馈要求改动作/镜头/光影/十元关系，生成`prompt_vN+1`，保留v0及变更证据。
+- `REPRIORITIZE`：仍有研究价值但不是当前最大NX，后移；可转次日carryover。
+- `RECYCLE`：知识XN已解决旧问题、测试与新规则矛盾、重复低收益或PATH改变时，将**未运行**候选标`SUPERSEDED_UNRUN`，释放其SXX槽并放入另一个针对优先NX的新候选，新的`candidate_id`、`prompt_v0`及`replaces_candidate_id`。原条保留只读审计，不能静默覆盖。
+- `HOLD`：素材/审核/显存/批准暂缺且暂不值得替换，等待真实外部变化；HOLD与RECYCLE不同。
+- `DROP`：用户明确否决或安全/审核禁止，记录原因和证据，不得借RECYCLE在同一时刻绕过拒绝。
+
+### 3. 不可回收范围与预算
+- 只能回收`DRAFT / CONDITIONAL / RESERVE / READY / WAIT_ASSET / WAIT_REVIEW / HOLD`且**未曾QUEUE**的候选。
+- `QUEUED / RUNNING / RENDERED / USER_WAIT / PASS / QA_FAIL / STOP` 的已发生attempt绝不复用ID，也不得把用户看过的片改成新词；需继续实验时为新候选/子attempt安排空闲槽且重新审核，不覆盖视频回执。
+- `S01..S12`是每日**12个可循环占用的位置**，在同日RECYCLE后历史candidate数量可以超过12，但任一时点不超过12个活跃候选；真正GPU运行数由可用小时/显存/审核门决定，**不强制12次渲染、不自动加GPU工作量**。
+- 不能为了填空槽重复自我改词。连续两个小时同一XN/NX没有新证据，则`UNCHANGED/IDLE_WATCH`，等待真实反馈；重大已验证问题优先，避免无限更换假设。
+- 十元代码`tenyuan_code_XN`与问题系统`knowledge_XN`必须在所有字段中使用不同名字。
+
+### 4. 每次回收的强制记录
+```yaml
+slot_id: S07
+old_candidate_id: "S07-C01"
+old_state: READY
+new_state: SUPERSEDED_UNRUN
+recycle_reason: "XN evidence now covers old Z; related NX has shifted"
+knowledge_xn_ref: "674-276/problem-ref-required"
+nx_ref: "problem-ref-required"
+evidence_refs: ["real-feedback-or-receipt-required"]
+old_prompt_hash: "sha256-required"
+new_candidate_id: "S07-C02"
+replaces_candidate_id: "S07-C01"
+new_prompt_version: 0
+new_target_z: "required"
+review_gate: "RECHECK_293_296_173_AND_AG07"
+committed_to_gpu: false
+```
+示例仅说明结构，**不是实际发生的XN解决或真实回收记录**。
+
+### 5. 动态循环 DONE/STOP
+DONE：在出现真实XN/NX/USER/PATH证据变更的后续小时里，至少一次完成`KEEP/PATCH/RECYCLE/REPRIORITIZE/HOLD`逐槽判定，对RECYCLE保留旧候选并生成新candidate、重做素材/导演门禁；只选择一条最有价值且READY的任务执行。
+STOP：无新证据不翻新12词、不为“让千问有任务”强行重投GPU；遇到正在执行或已验收的版本不能回收。小时服务保持轻量心跳，`ACTIVE_EXECUTOR=CODEX`，Qwen在未实机授权前不执行生产。
