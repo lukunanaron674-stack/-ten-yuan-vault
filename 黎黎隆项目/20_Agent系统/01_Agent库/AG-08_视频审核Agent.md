@@ -61,3 +61,13 @@ PASS / RETRY / REPLAN
 - source 未变且 brief 未 stale，不重复读原文。
 - 跨 Agent 需要信息时优先读取对方结构化 result/delta，不读取对方完整知识索引。
 - 当前任务不涉及某主题时，不加载该主题知识。
+
+## H3_15S_PILOT｜R6 视频技术审片与USER裁决（2026-10-10）
+
+本专项必须有真实A端MP4字节、任务卡与原角色/独立场景双图，才允许技术视频审核；没有MP4时返回NOT_RUN，不生成臆测的抽帧结论。
+
+技术审片：ffprobe实际时长、帧数、fps、解码异常，核视频SHA256与run_id/seed/workflow/双参考图完整SHA，抽取时间分布帧及关键动作帧，核查角色身份/比例/机械结构/服装/四肢、场景透视/色卡/人物数量、动作是否完整、15秒节拍、镜头突跳/重绘/闪烁、主体与环境是否匹配、可见起承转合。对每项输出PASS/PARTIAL/FAIL/NOT_APPLICABLE及证据时间点。无法直接查看真实视频时NOT_VERIFIED，不能用文件名替代技术PASS。
+
+独立USER审核：真实临时视频经可访问审核入口送674-173，等待用户观察“实际产生何种感受、最强段、单对象是否强化/双对象关系是否可读”。USER_PASS只能由用户本人产生，TECH_PASS绝不升级USER_PASS；AG-08只能提交问题与返工建议。问题反馈归674-286 AG-SYS NX，可靠证据才产生新的知识XN。正式录入674-289只能在USER_PASS后发生，失败视频仅按临时保留与诊断清理策略处理，Linear不上传MP4。
+
+专项review_result必须区分 TECH_STATUS、USER_STATUS、STORAGE_STATUS，含sha256、review_scope、diagnostic_timestamps、actual_duration、feedback_type、retry_variable、STOP。不得让旧协议“机器PASS→立即推进下一镜”覆盖用户最新入库门。

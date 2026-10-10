@@ -62,3 +62,24 @@
 - 先区分“横向构图 / 纵向变化 / 角色内部构成”，禁止把 ZX主+Z中+小XN 机械写成 ZX→Z→XN。
 - 默认流程：本 Agent 先给横向构图/纵向链候选 → 剧本 Agent 发散 6–10 条一句话故事 → 本 Agent 反审关系是否真实进入因果 → 剧本 Agent 二次改写。
 - 未经正式验证的音乐/案例十元映射必须标记 HYPOTHESIS，不得升级为 VERIFIED。
+
+## H3 15秒专项｜R2 单对象/双对象感受协议（2026-10-10）
+
+专项 task_mode=H3_15S_PILOT。目标是**创造观众可以体会的主观感受**，不是把旧映射词命中率当最终评价。输入：AG-04 ASSET_PAIR_PACKET_V1、AG-11身份约束、已记录主次十元/感受目标。每轮先选择且仅选择以下一个模式：
+
+### SINGLE_OBJECT｜单对象感受增强
+一个对象是感受主体；第二张场景/角色图仍是H3技术输入，但若不作为独立十元受体，必须标 SUPPORT_ONLY。输出主体A的十元、目标感受、可触发机制（姿势/行为/选择/光影/场景回应）、初末状态。不得为了“双图输入”虚构生克补关系。对象可以是角色或场景，但必须在审核参考图中可见。
+
+### TWO_OBJECT_RELATION｜双对象十元关系构成
+对象A与B**分别**有id、类别(CHARACTER/SCENE/ORGANIZATION_WHEN_VISIBLE)、主十元、次十元、证据等级；允许人×人、人×场景、场景×场景，前提是既有两张输入参考图与审核范围真能承载这些对象。每条关系必须回答：谁→通过什么可见行动/事件→改变谁的什么状态→观众感受发生何种变化。关系候选PRESS/SUPPLEMENT/ALTERNATE/CONVERGE/GENERATE/OTHER；不强行生克补，删除B不影响剧情则退回单对象或REPLAN。横向同时存在不等于纵向转化。
+
+### 统一输出 TENYUAN_FEEL_PACKET_V1
+- mode = SINGLE_OBJECT | TWO_OBJECT_RELATION。
+- object_a = {id,type,main,secondary,evidence_status,evidence_ref}；object_b相同，单对象时可为SUPPORT_ONLY/UNKNOWN。
+- target_feeling；target_intensity_design_only；horizontal_relation={kind,who_affects_whom,mechanism,if_removed_test}。
+- vertical_state={before,trigger,observable_change,after}；forbidden_misread；tenyuan_status=READY_FOR_SCRIPT|HYPOTHESIS_FOR_SCRIPT|REPLAN。
+- 十元自身的XN符号写成 tenyuan_code_XN；问题系统XN写成 problem_xn，两个命名空间不能混用。
+
+只能继承FROZEN/USER_CONFIRMED或显式标PROVISIONAL/UNKNOWN；AI建议未经用户证实不升级正本。感受强度只能作为设计目标，非用户实测。当前H06角色ZN/XN为工作候选，教派ZX/NZ属于组织而非主教个人；没有被核实且真实可见的第二对象/独立场景十元时，双对象只能HYPOTHESIS/REPLAN。
+
+交接：本Agent提出结构→AG-01剧本写真实事件→本Agent核查十元关系是否真正进入因果，只回修改意见，不取代剧本。该专项优先于原跨媒介发散协议的6-10条候选数量要求，但不改旧研究流程。
