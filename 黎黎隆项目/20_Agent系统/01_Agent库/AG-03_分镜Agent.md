@@ -87,3 +87,10 @@
 - 10–15秒：动作停住，让构图与原场景环境的稳定状态持续，强化“不可动摇”，不添加群众或建筑反馈。
 - EN draft: "One uninterrupted fifteen-second shot. Use reference image 0 only to preserve the exact H06 bishop identity, mechanical facial structure, costume, proportions, staff and palette. Use independent reference image 1 only to preserve the actual approved location, architecture, perspective, light direction and background. First hold a solemn still pose. Then perform one complete deliberate arm-raising command gesture with a clearly visible start and end. Settle into a steady final hold. The motion is physically continuous and restrained. Keep camera axis and lighting coherent. No speaking, no lip motion, no extra limbs, no new characters, no scene reconstruction, no unrelated symbols, no unmotivated cuts."
 - **该段仅为待独立场景图补齐后的占位草案，未进行双图执行。** 场景光影、观众感受和本机参数不能凭空确认。
+
+
+## 2026-10-12｜影视感受方法吸收到H3镜头的记录门
+
+当674-286收到来自674-106/297的MATCH_PACKET时，AG-03检查：具体影视片段/来源可查、方法不是复刻作品版权镜头/人物、目标对象（角色/组织/场景）ID和各自十元不串、真实素材足以支撑景别机位、拟测试变量单一。导演包增加字段：
+method_id | inspiration_source | target_object_ids | target_feeling | visible_mechanism | changed_variable | held_constant | negative_control | expected_observation | fail_condition | proposed_review。
+缺独立场景素材、USER审核或前镜连续性证据则DRAFT_ONLY/WAIT_ASSET，不得标READY。真片回传后改下一版导演包必须引用feedback_run_id并说明具体调整的变量；仅称“已吸收经验”而无镜头机制与可观察变化不算应用。保持现行16:9、约14.5秒目标；原生合法帧数以216实机回执为准。
