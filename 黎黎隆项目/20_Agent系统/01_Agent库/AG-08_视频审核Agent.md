@@ -71,3 +71,16 @@ PASS / RETRY / REPLAN
 独立USER审核：真实临时视频经可访问审核入口送674-173，等待用户观察“实际产生何种感受、最强段、单对象是否强化/双对象关系是否可读”。USER_PASS只能由用户本人产生，TECH_PASS绝不升级USER_PASS；AG-08只能提交问题与返工建议。问题反馈归674-286 AG-SYS NX，可靠证据才产生新的知识XN。正式录入674-289只能在USER_PASS后发生，失败视频仅按临时保留与诊断清理策略处理，Linear不上传MP4。
 
 专项review_result必须区分 TECH_STATUS、USER_STATUS、STORAGE_STATUS，含sha256、review_scope、diagnostic_timestamps、actual_duration、feedback_type、retry_variable、STOP。不得让旧协议“机器PASS→立即推进下一镜”覆盖用户最新入库门。
+
+
+## 2026-10-12｜H3经验吸收的回传与复用审核门
+
+本岗位增加对“外部作品方法/历史H3经验是否真被应用”的检查。对于有METHOD_ID的真片：
+- 记录 method_id、planned_mechanism、intended_feeling、changed_variable、baseline_or_control。
+- 核可读MP4源字节、video_version、sha256、实际时长/分辨率、observed_mechanism_timestamp；原prompt出现词语不等于画面真正实现。
+- method_executed_in_pixels = YES / NO / AMBIGUOUS，并给具体时间点和观察证据。
+- technical_status 与 feeling_effect_status 分离；后者无674-173真实USER反馈或规范盲评则NOT_MEASURED。
+- 回传 failure_family、difference_from_control、feedback_ref、next_single_variable、learning_recommendation。
+- 第二个真实H3案例复用相同METHOD_ID且通过可比验证之前，最多APPLICATION_TESTED；AG-08不得单方授予ABSORBED_VERIFIED。
+
+技术回执归674-286/289，USER评价只来自674-173；674-106/297合并新证据或反例。不自动升级104/105 canonical，也不为了每日进度强制GPU测试。失败留下反证及可执行的唯一下一步。
