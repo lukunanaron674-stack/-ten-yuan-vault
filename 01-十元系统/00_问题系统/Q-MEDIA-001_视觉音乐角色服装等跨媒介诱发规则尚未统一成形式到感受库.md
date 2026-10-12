@@ -46,3 +46,16 @@ stimulus / context / human_free_report / feeling_profile / eliciting_features / 
 - `research_campaign_started=false`；`effective_experiment_rounds=0`；独立“五轴感受实验推进”A/B不在本轮执行、写入或计数。
 - `NEXT=WAIT_EXACT_VIDEO_BINDING`：由 674-286/289/173 在各自正本核对作者实际看过的具体 video_id、MP4 SHA、版本与审核范围。拿到可复核绑定后，本 Q 才能将该候选进入形式→感受样本记录；如要研究光/手单独贡献，须**先预注册**样本/对照、唯一改变变量、指标、门槛与最多6轮预算，交实际执行端完成，不由 WATCHDOG 代跑。
 - `CYCLE_RESULT=EVIDENCE_INTAKE_WITH_EXPLICIT_BLOCKER`；无用户门禁请求，不覆盖十元感受正本，不改 173 USER 裁决。
+
+## 6｜R2｜H06 ROUND16真实视频输入链与感受证据隔离核验｜2026-10-11
+
+- receipt_id: `Q-MEDIA-001-R2-H06-R16-VIDEO-PROVENANCE-20261011`；本轮唯一Q=`Q-MEDIA-001`，只做已有生产/审核证据的增量对账，不执行五轴A/B、不运行H3、不向用户索取反馈。
+- 新增来源：Linear 674-286 评论 `5a371d6c-05a0-4cd5-bf0a-bda207ed045a`（ComfyUI history、双参考、MP4字节和帧数的执行端回执）及 `d76ef21f-5de7-4b16-9b5d-e82ae3486016`；674-173 送审评论 `73faffcf-0ded-475b-bfc5-b0e13c7b462a`。本 WATCHDOG 未读取本地 MP4 原字节，不独立复算视频SHA；以下标记 `EXECUTION_RECEIPT_REPORTED`。
+- `video_candidate=ROUND16_16x9_AST0053_286_00001_`；`output_sha256_declared=63540f62dff07dc5df2a663572c46c49c45ee5b22398ed6e69e88309526e1e4f`；`bytes_declared=3859318`；`345f/24fps=14.375s`；`1280×736`；`prompt_id=c4c47021-47b4-48cf-90e1-f2efc7743625`；`seed=803783588`（取完整回执）。
+- 角色参考 `H06-CYAN-0929-P3`，执行端复核SHA `7681e903c411d7eea9dd37b70665818fd24accbeb67a238b657581a59326d084`；场景参考为 **674-293登记正本** `AST-0053`，执行端复核SHA `672e16ef704dd94ccdc59c29e871510a0f63839a5e220daa65fc998e0122a034`。两参考独立且节点实际绑定；只对 **ROUND16这条新片** 认定旧SC-07本地副本来源冲突已规避，**不得倒填旧v007–R14的来源合规性**。
+- 该片同时更改了 `aspect_ratio` 与 `scene_source` 两项；技术结果“尾段未消散、主体在位”只作生产证据，不能作为任何单变量感受因果结论。
+- `user_review_state=PENDING`：173已送审但无本片PASS/FAIL；674-289本轮可见HOT尚无该片正式 `VIDEO_ASSET_RECORD`。先用后审的生产政策不等于USER PASS或已入正式视频仓。
+- **关键隔离**：既有作者反馈“神圣感通过光和手达到了”仍是**未绑定精确视频版本的历史片组自报**，不得转嫁给ROUND16；`stimulus_version_link_for_prior_feedback=UNRESOLVED`，`human_free_report_for_R16=null`，`human_feeling_profile=null`，`MAE=null`，`Top1=null`，`Top3=null`，`feeling_evidence_level=E0`。
+- `CYCLE_RESULT=PROVENANCE_DELTA_RECONCILED`：新片的技术输入证据与旧片的感受反馈已隔离；本轮**没有真人感受新证据、没有启动研究子Campaign、有效实验轮次=0**。独立五轴A/B不执行、不计数。
+- NEXT：由286/289按原权限提交可读取的精确 `VIDEO_ASSET_RECORD` 和源MP4/抽帧校验；173在真实可展示且预锁预测的条件下独立审片。WATCHDOG只读核验，不要求用户重复回答旧片的感受，不擅自升级C/E或覆盖感受正本。
+
