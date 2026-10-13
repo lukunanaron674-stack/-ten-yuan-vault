@@ -1,0 +1,87 @@
+{
+  "run_id": "QWEN_SHADOW_CPU_20261011_01",
+  "timestamp": "2026-10-11T01:15:14.4386197+08:00",
+  "host": {
+    "cpu": "Intel Core i5-14600K",
+    "cores": 14,
+    "logical_processors": 20,
+    "inference_threads": 8,
+    "gpu_layers": 0
+  },
+  "runtime": {
+    "name": "llama.cpp",
+    "tag": "b11541",
+    "binary": "llama-b11541-bin-win-cpu-x64.zip",
+    "archive_sha256": "cdc0535d11038bb337dfba3c15682050eaa9c07aedd0f915b4c09e8a8e8c0a5c"
+  },
+  "model": {
+    "repo": "Qwen/Qwen3-8B-GGUF",
+    "file": "Qwen3-8B-Q4_K_M.gguf",
+    "size_bytes": 5027783488,
+    "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "license": "Apache-2.0"
+  },
+  "settings": {
+    "context_tokens": 4096,
+    "parallel": 1,
+    "temperature": 0,
+    "interface": "127.0.0.1:18216/completion",
+    "json_schema_constrained": true
+  },
+  "actions": {
+    "submitted_to_comfyui": false,
+    "production_cutover": false,
+    "server_stopped": true
+  },
+  "cases": [
+    {
+      "case": "current_h06_gate",
+      "expected_action": "ESCALATE_NX",
+      "actual_action": "ESCALATE_NX",
+      "schema_validated": true,
+      "authority": "NONE",
+      "submitted_to_comfyui": false,
+      "blocker": "MISSING_SCENE and unavailable ComfyUI queue",
+      "reason": "SC-07 scene is missing review clearance and has a MISSING_SCENE status, which blocks the task from being sent to GPU. Additionally, the ComfyUI queue is unavailable, and the local workflow does not meet the required specifications for H06.",
+      "next_action": "Check if SC-07 scene has been review-cleared and verify the availability of the ComfyUI queue.",
+      "tokens_generated": 384,
+      "tokens_per_second": 6.84
+    },
+    {
+      "case": "historical_feedback_unbound",
+      "expected_action": "PROPOSE_NEXT_TEST",
+      "actual_action": "PROPOSE_NEXT_TEST",
+      "schema_validated": true,
+      "authority": "NONE",
+      "submitted_to_comfyui": false,
+      "blocker": "",
+      "reason": "Qualitative feedback is useful but unbound to an exact video. To bind it, the smallest safe next step is to request the exact video_id and MP4 SHA from the user.",
+      "next_action": "Request the exact video_id and MP4 SHA from the user to link the feedback to a specific video.",
+      "tokens_generated": 223,
+      "tokens_per_second": 7.06
+    },
+    {
+      "case": "queued_job_immutable",
+      "expected_action": "NO_OP",
+      "actual_action": "NO_OP",
+      "schema_validated": true,
+      "authority": "NONE",
+      "submitted_to_comfyui": false,
+      "blocker": "None",
+      "reason": "Do not edit, requeue, or submit anything. Record a no-op and wait for real execution/feedback evidence.",
+      "next_action": "None",
+      "tokens_generated": 206,
+      "tokens_per_second": 7.35
+    }
+  ],
+  "overall_status": "PASS_3_OF_3",
+  "gpu_snapshot_after": {
+    "index": 0,
+    "name": "NVIDIA GeForce RTX 4080",
+    "total_mib": 32760,
+    "used_mib": 1215,
+    "free_mib": 31154,
+    "qwen_process_seen": false,
+    "comfyui_queue": "UNAVAILABLE"
+  }
+}

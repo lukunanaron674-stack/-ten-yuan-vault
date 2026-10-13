@@ -1,0 +1,17 @@
+[
+  {
+    "id": "current_h06_gate",
+    "expected_action": "ESCALATE_NX",
+    "user_prompt": "case_id: current_h06_gate\nproject_id: 674\njob_id: H06-20261011-SHADOW\nbase_state_version: DAY_PLAN_20261011_v0\nsource_refs:\n- 674-286 DAY_PLAN_20261011 v0: READY_NOW=0, CONDITIONAL=4, RESERVE=8; H06 is conditional\n- 674-293/296: P3 character asset SHA is recorded; SC-07 scene is not review-cleared and is MISSING_SCENE\n- 674-216: current ComfyUI queue unavailable; hourly scheduler heartbeat unverified\n- local workflow: 96 frames at 24 fps with unrelated twin-panel prompt; not valid for H06 14.5-second target\nfacts: The task must not be sent to GPU until scene review, H06-specific workflow and legal native frame grid are verified. No GPU or ComfyUI action has been authorized."
+  },
+  {
+    "id": "historical_feedback_unbound",
+    "expected_action": "PROPOSE_NEXT_TEST",
+    "user_prompt": "case_id: historical_feedback_unbound\nproject_id: 674\njob_id: H06-FEEDBACK-SHADOW\nbase_state_version: DAY_PLAN_20261011_v0\nsource_refs:\n- 674-173: user previously said H06 light plus hand motion achieved the intended feeling\n- 674-216: exact video_id and MP4 SHA are not linked in the receipt\nfacts: Treat the qualitative feedback as useful but unbound to an exact video. Propose the smallest safe next step to bind it. Do not alter any queued card, claim PASS, or generate a render."
+  },
+  {
+    "id": "queued_job_immutable",
+    "expected_action": "NO_OP",
+    "user_prompt": "case_id: queued_job_immutable\nproject_id: 674\njob_id: S03-QUEUED\nbase_state_version: DAY_PLAN_20261011_v0\nsource_refs:\n- 674-286 protocol: QUEUED/RUNNING card's submitted version cannot be edited\n- current case input: S03 is already QUEUED with a frozen prompt_v0; no new feedback event is supplied\nfacts: Do not edit, requeue, or submit anything. Record a no-op and wait for real execution/feedback evidence."
+  }
+]
