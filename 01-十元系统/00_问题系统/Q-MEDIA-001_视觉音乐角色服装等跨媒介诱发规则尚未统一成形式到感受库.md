@@ -81,3 +81,14 @@ stimulus / context / human_free_report / feeling_profile / eliciting_features / 
 - review: 173 有送审记录，但未找到 ROUND18 的 USER PASS；674-289 当前 HOT 与评论未见该版本的正式 `VIDEO_ASSET_RECORD`。因此 `user_review_state=PENDING`，`video_asset_record=NOT_VERIFIED`，`human_free_report=null`，`human_feeling_profile=null`，`MAE=null`，`Top1=null`，`Top3=null`，`feeling_evidence_level=E0`，`research_campaign_started=false`，`effective_feeling_experiment_rounds=0`。
 - failure/control boundary: ROUND17 的 `F06_GENERATOR_CONTROL_FAILURE`（机位）保留；ROUND18 不得被误算为“场景变化诱发神圣感”或独立五轴 A/B。若后续要测“场景→人的感受”，必须另行在实验启动前冻结目标/竞争感受、R17/R18 是否有真正等价的控制项、预测、盲码、样本、阈值、最多6有效轮次；具体生成由有权执行端负责。
 - `CYCLE_RESULT=TECHNICAL_SCENE_CONTEXT_FEASIBILITY_RECEIPT_RECONCILED`；`NEXT=WAIT_EXACT_VIDEO_ASSET_RECORD_AND_PRELOCKED_HUMAN_FEELING_TEST`。本轮不升级 C/E、不触发 HUMAN_GATE、不覆盖十元感受正本。
+
+
+## 9｜R5｜H3 ROUND26 角色锚点与动作对象的联合干预边界审计｜2026-10-13
+
+- `receipt_id=Q-MEDIA-001-R5-H3-R26-COUPLED-FACTOR-AUDIT-20261013`；**本轮唯一Q=Q-MEDIA-001**。本 WATCHDOG 只读取 H3 执行回执与 USER 送审状态，未执行五轴感受 A/B、未发起 H3、未读取本地 MP4/帧原字节，不计任何有效感受实验轮次。
+- source: Linear 674-286 comment `69cc9a4f-5c1b-4070-9249-307de24ef6c3`（R26 执行端记录）；674-173 comment `cbb5acd5-6ea2-4ea2-88c8-db1a02857d10`（送审记录，**非USER PASS**）；674-289 HOT 尚未确认 R26 正式 `VIDEO_ASSET_RECORD`。
+- stimulus_candidate=`ROUND26_16x9_N14_AST0053_286_00001_.mp4`；`output_sha256_declared=eb09ef4cd0831ad45aa48593dbb8cd656d99e22ac525410dcf6dde06a698f890`；`bytes_declared=3131828`；`345f/24fps=14.375s`；`1280×736`；`seed=803783588`；`prompt_id=f2673ba9-510e-4d71-8610-937ab7775f2f`。这些均是**执行端报告**，本 WATCHDOG 未独立复算原始字节。
+- **新发现的可复核控制边界**：R25→R26 不只替换了角色参考图/身份描述，还把动作对象从 `record book` 改为 `red coral ring`，即 `DOCUMENT RAISE → CORAL RING RAISE`。即使动作族、seed、场景、机位、时长等固定，这仍是**角色身份条件+道具/动作对象的联合变化**，不得在“形式→人的感受”研究中称为严格单一感受变量，不能归因“角色身份本身诱发了某感受”。286 对角色锚点生产可行性的内部说法与本 Q 的感受因果判据必须分开。
+- 286 报告 R26 主体身份稳定、片尾无消散、珊瑚环举起动作发生，属于 `TECHNICAL_EXECUTION_REPORTED`，并不证明真人感受命中、十元映射、跨媒体泛化、用户审美 PASS。对“光影+手势产生神圣感”的旧反馈，具体旧片版本绑定仍未解决，不可嫁接给 R26。
+- `failure_family=F02_COUPLED_INTERVENTION_FOR_FEELING_CAUSAL_INFERENCE`（仅限未来感受因果归因的控制缺口，不是 H3 生成失败）；`rule_status=CANDIDATE_ONLY`；`feeling_evidence_level=E0`；`human_free_report=null`；`human_feeling_profile=null`；`MAE=null`；`Top1=null`；`Top3=null`；`research_campaign_started=false`；`effective_feeling_experiment_rounds=0`；Q-FEEL-001 继续 `C2/E0`，`HUMAN_GATE=NOT_READY`。
+- `CYCLE_RESULT=EVIDENCE_CONTROL_BOUNDARY_RECONCILED`；`NEXT=WAIT_EXACT_VIDEO_RECORD_AND_PRELOCKED_STIMULUS_COMPARISON`。如未来确需检验角色身份对人的感受影响，须由有权生产端先提供同一动作对象/场景/机位等条件可比的刺激对，再在真人反馈前预锁预测、盲码、指标与阈值；无真实输入则 WAIT/NO_OP，不无限扩轮。
