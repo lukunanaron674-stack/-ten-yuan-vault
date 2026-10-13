@@ -59,3 +59,14 @@ stimulus / context / human_free_report / feeling_profile / eliciting_features / 
 - `CYCLE_RESULT=PROVENANCE_DELTA_RECONCILED`：新片的技术输入证据与旧片的感受反馈已隔离；本轮**没有真人感受新证据、没有启动研究子Campaign、有效实验轮次=0**。独立五轴A/B不执行、不计数。
 - NEXT：由286/289按原权限提交可读取的精确 `VIDEO_ASSET_RECORD` 和源MP4/抽帧校验；173在真实可展示且预锁预测的条件下独立审片。WATCHDOG只读核验，不要求用户重复回答旧片的感受，不擅自升级C/E或覆盖感受正本。
 
+
+## 7｜R3｜H06 ROUND17机位干预可执行性负证据｜2026-10-12
+
+- receipt_id: `Q-MEDIA-001-R3-H06-R17-CAMERA-F06-20261012`；本轮唯一Q=`Q-MEDIA-001`，只读取已执行H3回执并做跨系统证据分级，不执行五轴感受A/B、不重复投H3、不请求USER、不改十元感受正本。
+- source: Linear `674-286` comment `1af35d31-6954-4430-a196-81aea729ee6c`（ROUND17运行、ComfyUI history与抽帧自检报告）；对照 ROUND16 comment `5a371d6c-05a0-4cd5-bf0a-bda207ed045a`。两次均是执行端回执，本WATCHDOG未取得MP4原始字节，不能称独立复算视频SHA或独立目视验证。
+- intervention: 固定角色 `H06-CYAN-0929-P3`、场景 `AST-0053`、seed `803783588`、1280×736、345f/24fps、相同双参考，主要改变机位提示 `wide frontal view` → `fixed THREE-QUARTER (≈45°) vantage + CAMERA VANTAGE LOCK`（附nonce）。R17 `prompt_id=725f0d3a-df9f-4944-bce9-b57fcae25e14`；`video_candidate=ROUND17_16x9_3Q_AST0053_286_00001_`；`output_sha256_declared=ffd33eae80a56aca7f66ed9b115deb99b88aa621d8a4df0a5527b20a8c5bdff3`；`bytes_declared=4303052`。
+- technical_observation_reported: R17执行端抽帧判断主视位仍回到近正面，只有局部身体轻微转角，明确45°机位未被持续锁住；动作/身份与末帧稳定。这里记录的是**生成器对机位指令的执行失败候选**，不是观众的主观感受差异，更不能推论「正面比3/4更神圣」。
+- failure_family=`F06_GENERATOR_CONTROL_FAILURE`（机位目标未被可靠实现）；`mechanism_status=NOT_CALLABLE_AS_CONTROLLED_3Q`；`evidence_scope=ONE_H3_R16_R17_EXECUTION_RECEIPT_PAIR`；`technical_evidence=REPORTED_NOT_BYTE_REVERIFIED`；`feeling_evidence_level=E0`。若未来研究机位→感受，必须先用首帧/姿态硬条件得到可核验的真正机位差异，且在人类感受反馈前预锁预测和盲码；不可将本次失败直接算成有效感受单变量实验。
+- `user_review_state=UNVERIFIED_FOR_R17`；`human_free_report=null`；`human_feeling_profile=null`；`MAE=null`；`Top1=null`；`Top3=null`；`research_campaign_started=false`；`effective_feeling_experiment_rounds=0`；独立五轴A/B计数不变。
+- 原H06「光影+手势产生神圣感」反馈仍未绑定精确视频版本；R17的机位控制负证据不能给历史反馈补绑定。674-289 VIDEO_ASSET_RECORD 与674-173 USER审美裁决继续由各自责任端确认，WATCHDOG不代签。
+- CYCLE_RESULT=`CONTROL_FEASIBILITY_NEGATIVE_EVIDENCE_RECONCILED`；NEXT=`WAIT_VIDEO_ASSET_RECORD_AND_VALID_CONTROLLED_CAMERA_STIMULUS`，若无法取得可执行机位干预，则对该机位→感受子假设STOP/REPLAN，不因漂亮成片继续扩轮。
