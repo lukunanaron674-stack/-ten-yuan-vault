@@ -70,3 +70,14 @@ stimulus / context / human_free_report / feeling_profile / eliciting_features / 
 - `user_review_state=UNVERIFIED_FOR_R17`；`human_free_report=null`；`human_feeling_profile=null`；`MAE=null`；`Top1=null`；`Top3=null`；`research_campaign_started=false`；`effective_feeling_experiment_rounds=0`；独立五轴A/B计数不变。
 - 原H06「光影+手势产生神圣感」反馈仍未绑定精确视频版本；R17的机位控制负证据不能给历史反馈补绑定。674-289 VIDEO_ASSET_RECORD 与674-173 USER审美裁决继续由各自责任端确认，WATCHDOG不代签。
 - CYCLE_RESULT=`CONTROL_FEASIBILITY_NEGATIVE_EVIDENCE_RECONCILED`；NEXT=`WAIT_VIDEO_ASSET_RECORD_AND_VALID_CONTROLLED_CAMERA_STIMULUS`，若无法取得可执行机位干预，则对该机位→感受子假设STOP/REPLAN，不因漂亮成片继续扩轮。
+
+## 8｜R4｜H06 ROUND18 场景替换可执行性正证据（仅技术层）｜2026-10-12
+
+- receipt_id: `Q-MEDIA-001-R4-H06-R18-SCENE-20261012`；本轮唯一 Q=`Q-MEDIA-001`，只读取 H3 B端/视频/USER审核的既有回执，不执行五轴感受单变量 A/B、不投 H3、不请求 USER、不改十元感受正本。
+- sources: Linear `674-286` comment `48a3ce4f-97df-44d0-a7b3-476f9fc82d47`（ROUND18 真实渲染及抽帧技术回执），`674-173` comment `93058491-f3cd-4ba3-a9ba-4ae4c7846df4`（送审，非USER PASS）；技术前轮参照为 286 的 ROUND17 comment `1af35d31-6954-4430-a196-81aea729ee6c`。本 WATCHDOG 未取得本地 MP4/参考图原字节或帧包独立复算，全部为 `EXECUTION_RECEIPT_REPORTED`。
+- controlled_factor: 场景输入从 `AST-0053 共鸣庭` 改为 `AST-0064 东裂隙带`；同时同步修改了**场景参考图和场景描述句**，这是一个“场景条件”成组替换，不是仅改一项像素/提示词的纯单变量因果实验。角色 `H06-CYAN-0929-P3`、seed `803783588`、1280×736、345f/24fps、机位与动作骨架沿用 R17。R17 的 `3/4` 机位控制失败未被本轮推翻。
+- stimulus_candidate: `ROUND18_16x9_AST0064_286_00001_.mp4`；`prompt_id=fb28d79a-c393-4f41-ad37-7b5a43fa1b1d`；`output_sha256_declared=819cc40113578303184c284321550b8529e4a102f6b38a312a50f5cd6e033b7b`；`bytes_declared=3722951`；源参考 `AST-0064` 的执行端SHA仅在可见回执中提供前缀 `acda5cc6e93ca6fb…`，不得称本 WATCHDOG 复验了完整 SHA。
+- technical_observation_reported: 286 执行端抽帧称高耸岩壁、冷雾、紫红藤蔓成功替换原共鸣庭拱顶，H06 身份与尾段主体保持；这只支持“当前 H3 输入通路能够切换场景语境”的**技术可行性候选**，不是跨媒介诱发规则或场景对人的感受影响已证实。
+- review: 173 有送审记录，但未找到 ROUND18 的 USER PASS；674-289 当前 HOT 与评论未见该版本的正式 `VIDEO_ASSET_RECORD`。因此 `user_review_state=PENDING`，`video_asset_record=NOT_VERIFIED`，`human_free_report=null`，`human_feeling_profile=null`，`MAE=null`，`Top1=null`，`Top3=null`，`feeling_evidence_level=E0`，`research_campaign_started=false`，`effective_feeling_experiment_rounds=0`。
+- failure/control boundary: ROUND17 的 `F06_GENERATOR_CONTROL_FAILURE`（机位）保留；ROUND18 不得被误算为“场景变化诱发神圣感”或独立五轴 A/B。若后续要测“场景→人的感受”，必须另行在实验启动前冻结目标/竞争感受、R17/R18 是否有真正等价的控制项、预测、盲码、样本、阈值、最多6有效轮次；具体生成由有权执行端负责。
+- `CYCLE_RESULT=TECHNICAL_SCENE_CONTEXT_FEASIBILITY_RECEIPT_RECONCILED`；`NEXT=WAIT_EXACT_VIDEO_ASSET_RECORD_AND_PRELOCKED_HUMAN_FEELING_TEST`。本轮不升级 C/E、不触发 HUMAN_GATE、不覆盖十元感受正本。
