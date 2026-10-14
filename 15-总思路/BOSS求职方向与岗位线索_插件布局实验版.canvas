@@ -1,0 +1,2886 @@
+{
+  "nodes": [
+    {
+      "id": "zone-narrative-20261014",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 7350,
+      "height": 4489,
+      "color": "1",
+      "label": "求职中心｜01｜多中心独立径向分层"
+    },
+    {
+      "id": "zone-video-20261014",
+      "type": "group",
+      "x": 15915,
+      "y": 0,
+      "width": 8420,
+      "height": 4277,
+      "color": "5",
+      "label": "求职中心｜03｜多中心独立径向分层"
+    },
+    {
+      "id": "zone-visual-20261014",
+      "type": "group",
+      "x": 7690,
+      "y": 0,
+      "width": 7885,
+      "height": 4174,
+      "color": "4",
+      "label": "求职中心｜02｜多中心独立径向分层"
+    },
+    {
+      "id": "zone-review-20261014",
+      "type": "group",
+      "x": 7958,
+      "y": 4514,
+      "width": 7350,
+      "height": 4752,
+      "color": "2",
+      "label": "求职中心｜05｜多中心独立径向分层"
+    },
+    {
+      "id": "zone-creative-20261014",
+      "type": "group",
+      "x": 0,
+      "y": 4829,
+      "width": 7350,
+      "height": 4024,
+      "color": "6",
+      "label": "求职中心｜04｜多中心独立径向分层"
+    },
+    {
+      "id": "v2-category-narrative-director",
+      "type": "group",
+      "label": "1.1｜导演与AI影像统筹｜紧凑径向分支",
+      "x": 225,
+      "y": 225,
+      "width": 2005,
+      "height": 2111,
+      "color": "2"
+    },
+    {
+      "id": "v2-category-narrative-comic",
+      "type": "group",
+      "label": "1.2｜AI漫剧分镜与制作｜紧凑径向分支",
+      "x": 4505,
+      "y": 370,
+      "width": 2620,
+      "height": 1956,
+      "color": "3"
+    },
+    {
+      "id": "v2-category-narrative-writer",
+      "type": "group",
+      "label": "1.3｜编剧与故事开发｜紧凑径向分支",
+      "x": 225,
+      "y": 2636,
+      "width": 1830,
+      "height": 1295,
+      "color": "4"
+    },
+    {
+      "id": "v2-category-visual-gameart",
+      "type": "group",
+      "label": "2.1｜角色与场景原画｜紧凑径向分支",
+      "x": 7915,
+      "y": 225,
+      "width": 3770,
+      "height": 1796,
+      "color": "5"
+    },
+    {
+      "id": "v2-category-visual-marketing",
+      "type": "group",
+      "label": "2.2｜游戏运营视觉/赛事KV｜紧凑径向分支",
+      "x": 13520,
+      "y": 2321,
+      "width": 1830,
+      "height": 1395,
+      "color": "2"
+    },
+    {
+      "id": "v2-category-video-game",
+      "type": "group",
+      "label": "3.1｜游戏CG、PV和买量视频｜紧凑径向分支",
+      "x": 16140,
+      "y": 225,
+      "width": 3770,
+      "height": 1646,
+      "color": "6"
+    },
+    {
+      "id": "v2-category-video-product",
+      "type": "group",
+      "label": "3.2｜产品视频/品牌AIGC视效｜紧凑径向分支",
+      "x": 20340,
+      "y": 265,
+      "width": 3770,
+      "height": 1606,
+      "color": "1"
+    },
+    {
+      "id": "v2-category-video-unknown",
+      "type": "group",
+      "label": "3.3｜泛视频岗位，招聘主体待核｜紧凑径向分支",
+      "x": 16675,
+      "y": 2171,
+      "width": 2005,
+      "height": 1881,
+      "color": "2"
+    },
+    {
+      "id": "v2-category-creative-drama",
+      "type": "group",
+      "label": "4.1｜AI漫剧/IP内容构成｜紧凑径向分支",
+      "x": 225,
+      "y": 5054,
+      "width": 2005,
+      "height": 1636,
+      "color": "1"
+    },
+    {
+      "id": "v2-category-creative-brand",
+      "type": "group",
+      "label": "4.2｜品牌内容与AI视觉创意｜紧凑径向分支",
+      "x": 5120,
+      "y": 7000,
+      "width": 2005,
+      "height": 1476,
+      "color": "4"
+    },
+    {
+      "id": "v2-category-review-adjacent",
+      "type": "group",
+      "label": "5.1｜传统或邻近内容岗位｜紧凑径向分支",
+      "x": 8183,
+      "y": 4739,
+      "width": 2620,
+      "height": 1636,
+      "color": "3"
+    },
+    {
+      "id": "v2-category-review-governance",
+      "type": "group",
+      "label": "5.2｜JD证据、职位状态和决策｜紧凑径向分支",
+      "x": 12463,
+      "y": 6675,
+      "width": 2620,
+      "height": 2366,
+      "color": "6"
+    },
+    {
+      "id": "portfolio-center-674",
+      "type": "group",
+      "x": 17360,
+      "y": 4617,
+      "width": 5530,
+      "height": 6422,
+      "label": "作品中心｜作品中心｜多中心独立径向分层",
+      "color": "3"
+    },
+    {
+      "id": "portfolio-group-fz",
+      "type": "group",
+      "x": 17585,
+      "y": 4842,
+      "width": 880,
+      "height": 1507,
+      "label": "01｜《方志敏》完整动画｜紧凑径向分支",
+      "color": "4"
+    },
+    {
+      "id": "portfolio-group-ll",
+      "type": "group",
+      "x": 21785,
+      "y": 4842,
+      "width": 880,
+      "height": 1507,
+      "label": "02｜《黎黎隆》原创IP开发｜紧凑径向分支",
+      "color": "5"
+    },
+    {
+      "id": "portfolio-group-independent",
+      "type": "group",
+      "x": 17585,
+      "y": 7629,
+      "width": 880,
+      "height": 1467,
+      "label": "03｜独立美术与其他作品｜紧凑径向分支",
+      "color": "6"
+    },
+    {
+      "id": "portfolio-group-method",
+      "type": "group",
+      "x": 21785,
+      "y": 7629,
+      "width": 880,
+      "height": 1467,
+      "label": "04｜AI流程与个人方法｜紧凑径向分支",
+      "color": "1"
+    },
+    {
+      "id": "61a660aecd664165",
+      "type": "text",
+      "text": "# BOSS 求职地图｜从 Linear 能力中心向外找 AI 岗",
+      "x": 20,
+      "y": -1020,
+      "width": 950,
+      "height": 90
+    },
+    {
+      "id": "bbd3d1cad24d48af",
+      "type": "text",
+      "text": "## 你的能力主线（取自 Linear）\n1. **完整AI动画：**《方志敏》4分17秒成片，叙事组织、AI动画执行和成片呈现。\n2. **原创IP视觉：**《黎黎隆》开发中，有母图、色卡、角色/场景探索与H3单镜实践；不是已完成8分钟动画。\n3. **软件：**你自述会AE、PR、CSP、PS、Maya等；具体熟练度仍逐项对照作品。\n4. **创作方法：**十元感受/关系构成、跨媒介整合与个人AI工作流；迁移到商业/IP/游戏仍待项目证据。",
+      "x": 20,
+      "y": -790,
+      "width": 850,
+      "height": 150
+    },
+    {
+      "id": "4a6dde039f09424d",
+      "type": "text",
+      "text": "## 找岗筛选法\n**主线岗位：**AIGC叙事/动画/漫剧；明确支持AI的角色/场景视觉开发；AI视频生成与后期；AIGC创意内容。\n**把JD证据连回能力：**脚本/分镜→完整作品；角色/色卡→原创视觉；AI素材+审片→AI执行与审美返工；AE/PR→制作后期；流程沉淀→个人工作流。\n**分级：**直接证据 / 可迁移但需补证 / AI职责未写、不计主投。十元跨媒介潜力不等于已验证商业成绩。",
+      "x": 1040,
+      "y": -790,
+      "width": 850,
+      "height": 150
+    },
+    {
+      "id": "hub-narrative-20261014",
+      "type": "text",
+      "text": "## 中心一｜AI叙事动画与漫剧\n**Linear能力：**完整作品叙事组织 + AI动画执行 + 镜头/情绪推进。\n**证据：**《方志敏》4分17秒完成片；《黎黎隆》在开发中。优先找能参与剧本拆解、分镜、角色风格到成片的岗位。AI职责需在卡片JD中明确。",
+      "x": 3205,
+      "y": 2396,
+      "width": 940,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "hub-visual-20261014",
+      "type": "text",
+      "text": "## 中心二｜AI游戏视觉与角色开发\n**Linear能力：**原创角色/IP、色卡与风格探索、角色/场景视觉统一；你自述会CSP、PS、Maya。\n《黎黎隆》有母图、色卡和角色/场景阶段性设计；不把传统画功门槛说成已验证。岗位方向含角色概念、游戏赛事视觉KV和美宣；优先选择JD明确支持AI辅助、又需要人工定稿的创作岗。",
+      "x": 11430,
+      "y": 2081,
+      "width": 940,
+      "height": 170,
+      "color": "4"
+    },
+    {
+      "id": "hub-video-20261014",
+      "type": "text",
+      "text": "## 中心三｜AIGC视频制作与后期\n**Linear能力：**AI生图/生视频→人工筛选与修改→剪辑、合成和完整输出；你自述会AE、PR、PS。优先找明确使用AI、又能参与镜头创意、节奏、风格和成片的初级/校招岗位。纯搬运剪辑降级。",
+      "x": 19655,
+      "y": 1931,
+      "width": 940,
+      "height": 170,
+      "color": "5"
+    },
+    {
+      "id": "hub-creative-20261014",
+      "type": "text",
+      "text": "## 中心四｜AI创意构成与跨媒介IP\n**Linear能力：**十元感受/关系构成、叙事与角色/世界/音乐等整体组织、个人AI流程经验。**成熟度：**个人方法与项目探索；商业品牌、互动/游戏迁移尚未证实。发散找AIGC创意、内容策划、IP视觉与跨媒介内容岗位，核实创意参与度。",
+      "x": 3205,
+      "y": 6760,
+      "width": 940,
+      "height": 170,
+      "color": "6"
+    },
+    {
+      "id": "hub-review-20261014",
+      "type": "text",
+      "text": "## 中心五｜AI职责待核与投递筛选\n橙色区的岗位原文**未明确证明实际使用AI**，先作为核实线索，不算AI主投。确认AI用在哪个环节、JD是否开放、公司主体/带教/工资/毕业资格。Linear评分：创作参与25、带教20、内容匹配20、AI可用15、入职适配10、稳定薪酬10。",
+      "x": 11163,
+      "y": 6445,
+      "width": 940,
+      "height": 170,
+      "color": "2"
+    },
+    {
+      "id": "f612a91eb6594c1b",
+      "type": "text",
+      "text": "## Linear画像扩展｜校招与漫剧岗位观察\n\n**深圳阅视传媒｜AIGC漫剧设计师**：6–10K/月，深圳；剧本拆解、角色/分镜、AI图视频、风格一致和后期。转载页发布日期4/24，状态待确认；页内有较高月产要求，需核实工时和带教。\n[招聘页](https://campus.niuqizp.com/job-vU85ZMCnC.html)\n\n**蓝色光标｜AI Creator 2027**：11–20K/月×13，校招页列深圳等多城；适用毕业区间和具体城市HC待核。职责涵盖脚本、视觉风格、AI生成至后期，偏品牌营销内容，原创IP参与度待问。\n[岗位页](https://www.nowcoder.com/jobs/detail/464996) · [公司官网](https://www.bluefocusgroup.com/about/)\n\n**长期扩展**：继续找游戏/动画/IP团队中JD明确允许AI辅助的角色、场景、分镜与视觉开发职位。只搜到“AI”词但原职位未提的标为待证。\n\n## 新增深圳候选｜岗位与Linear能力交叉\n\n**影石 Insta360｜Visual Designer（AIGC，2027校招）**：深圳全职；官方JD把 AIGC 用于产品/生活方式营销图、概念与 moodboard，fresh grad可投，薪资未公开。视觉/生成迭代匹配，叙事IP参与较少。\n[职位](https://arashivision.jobs.feishu.cn/campus/m/position/7663464224874268982/detail) · [公司](https://www.insta360.com/jobs)\n\n**冰川网络｜AI游戏视频设计实习 J11501**：深圳；游戏买量创意、AI视频工具、风格/节奏迭代，薪酬与当前开放状态待官方核验；商业转化而非原创IP。\n[岗位信息](https://www.shushuqiuzhi.com/position/422949) · [2027招聘介绍](https://www.scfai.edu.cn/xsc/info/1015/20732.htm)\n\n**吉比特｜美宣视觉实习**：深圳、AI辅助游戏宣发视觉；要求扎实手绘与KV交付，薪资和状态未核。作品成长潜力高，基础门槛也高。\n[岗位线索](https://watchjobs.net/zh/explore/job/c291-8a82ac07a061e74b01a06212b51b0062/%E7%BE%8E%E5%AE%A3%E8%A7%86%E8%A7%89%E8%AE%BE%E8%AE%A1-%E5%90%89%E6%AF%94%E7%89%B9)\n",
+      "x": 4620,
+      "y": 485,
+      "width": 520,
+      "height": 700,
+      "color": "3"
+    },
+    {
+      "id": "mitang-boss-shortdrama-20261014",
+      "type": "text",
+      "text": "## 广州｜蜜糖网络AI短剧团队（BOSS 10/13更新）\n\nBOSS公司页当天更新并列有12个在招岗位，含AI短剧美术设计、AI短剧后期和AI动态漫应用工程师。公司自述做精品竖屏短剧投资出品、内容孵化、拍摄制作与发行，也做小说内容及游戏；规模页标100–499人。\n\nAI短剧美术设计的详情与薪资需登录账号复核。旧BOSS搜索快照有AI动画师4–9K、经验不限的岗位，但不能当当前工资。AI动态漫应用工程师要求1–3年。\n\n你会AE/PR/PS/CSP，与图像和视频制作相关；建议重点核岗位具体分工、产量和作品授权。当前公共职位链接触发BOSS登录/安全验证，尚未核到薪资与要求。\n[BOSS公司页](https://m.zhipin.com/companys/315895d404a9026f1Hxz2du8GFU~.html) · [旧岗位快照](https://m.zhipin.com/zhaopin/1f8d8f9ba262e9f41H193ti-Ew~~/)",
+      "x": 5850,
+      "y": 845,
+      "width": 520,
+      "height": 340,
+      "color": "3"
+    },
+    {
+      "id": "a652fcb2a20e4c73",
+      "type": "text",
+      "text": "## AI叙事动画｜主攻\n**TCL 雷鸟科技｜执行导演**：8–12K，经验不限；描述涉及 AI 生图/生视频，并把剧本转成影视画面。\n**公司介绍**：TCL 体系里的场景互联网与 AIoT 服务平台，负责 TCL 智能电视系统开发运营，也拓展 OTT 盒子、投影等终端与家庭内容服务。来源：[TCL 招聘官网](https://zhaopin.tcl.com/industries)。注意别和做 AR 眼镜的“雷鸟创新”混为一谈。\n核实应届要求、实际职责、导师安排。\n[查看 BOSS 职位页](https://m.zhipin.com/zhaopin/c9eec58818b6cb03031729u_Fg~~/)\n\n**深圳市媒体研究会｜AI视频短剧制作**：15–20K，标 1–3 年；描述包含自有 IP 与商业定制，从脚本到成片。\n**单位介绍**：2016 年成立的媒体与公共政策研究智库，做媒体融合、舆情/信息研究、政策与行业研究、传播效果评估等；其官网称品牌产品和运营由深媒智汇（深圳）信息科技有限公司负责。面试时核实合同签约主体、视频业务团队和项目来源。来源：[研究会官网](https://www.szdmtt.com/) · [BOSS 单位页](https://m.zhipin.com/companys/a25207ef0e2fa8dd1HN-39m5ElI~.html)\n[查看职位集合](https://www.zhipin.com/zhaopin/d235d15d1a040f9e1Xx73tq6FA~~/)\n\n**幻希赛隆｜AI影视剧导演**：旧索引称接受应届/实习转正，但页面标 1–3 年。\n**公司介绍待核**：目前只找到公开报道提及其制作 AI 3D 漫剧《海晏河清》；没核实到官网或清晰的工商主体，不能据此确认公司规模和经营情况。来源：[相关报道](https://ent.china.com.cn/2026-02/10/content_43354784.shtml)。仅在账号内岗位仍开放时复核。\n[查看职位集合](https://www.zhipin.com/zhaopin/0b64e4fc1a9eeaae0XB609S5/)",
+      "x": 1035,
+      "y": 635,
+      "width": 520,
+      "height": 550,
+      "color": "2"
+    },
+    {
+      "id": "thunderbird-ai-director-2027",
+      "type": "text",
+      "text": "## 深圳冲刺观察｜雷鸟科技AI电影导演（2027校招）\n第三方校招汇总页称由纳雷科技发布，地点深圳南山，未披露工资。职责从剧本、分镜、视觉风格到纯AIGC短片/电影成片；页面收录至10月28日。\n\n**硬门槛**：要求本科及以上、2027届，且写明实拍导演经验必备，镜头语言/场面调度/光影叙事也要求较高。你已有AI动画作品，但是否有实拍导演经历尚未核实；若没有，这条暂不算匹配可投。招聘主体与雷鸟科技/TCL的关系、实际HC和截止日要向官方确认。\n[岗位盘点](https://hicv.cn/xiaozhao/thunderbird-2027-autumn-campus-shenzhen-14321-ea5c72) · [TCL招聘官网](https://zhaopin.tcl.com/industries)",
+      "x": 1595,
+      "y": 780,
+      "width": 520,
+      "height": 260,
+      "color": "2"
+    },
+    {
+      "id": "fdded174c4ca4abe",
+      "type": "text",
+      "text": "## AI漫剧前期｜分镜与制作\n**FutureLink Media｜AI抽卡/分镜/CG/特效**：10–15K，标 1–3 年，可按作品集争取。\n**公司介绍**：BOSS 公司页显示 FutureLink Media 是深圳市宇欣文化有限公司旗下品牌；业务围绕原创内容 IP，包括形象设计、内容创作、海外发行和衍生品，面向 YouTube、TikTok、Facebook 等平台做多语种传播。BOSS 页面标注文化艺术/娱乐、100–499 人。来源：[BOSS 公司页](https://m.zhipin.com/companys/0a807873ab630cfa03V_0925GVQ~.html) · [FutureLink 内容介绍](https://futurelinkmedia.com/entertainment-content)。招聘主体及实际制作团队仍建议面试确认。\n[查看职位集合](https://m.zhipin.com/zhaopin/3df112098b14c6ca1Xd93dS7FA~~/)\n\n**AI短剧制作师**：6–8K，旧记录标 1 年以内；职位集合页不足以确认具体招聘公司。描述含按剧本拆分镜、提取资产。需在 BOSS 详情页核实公司名称、是真人短剧还是动画漫剧、创作空间和产能要求。\n[回查职位集合](https://www.zhipin.com/zhaopin/d235d15d1a040f9e1Xx73tq6FA~~/)\n**BOSS再核（10/14）**：搜索结果快照显示FutureLink Media“AI抽卡/分镜/CG/特效”10–15K、深圳南山、1–3年、本科。对你的AI叙事和分镜实践相关，但经验门槛明显；岗位详情未登录核实，先确认开放状态及是否接受作品抵年限。",
+      "x": 5180,
+      "y": 620,
+      "width": 520,
+      "height": 430,
+      "color": "3"
+    },
+    {
+      "id": "a7af251ff13046a4",
+      "type": "text",
+      "text": "## 故事开发｜创意出口\n**兼职 AI短剧编剧（实习生）**：150–300 元/天；可作为进入 AI漫剧制作链的补充线索。\n**公司待核**：原记录只有职位集合链接，没有能确认招聘主体的信息。先核实公司、兼职性质、试稿长度、署名与版权归属。\n[回查职位集合](https://m.zhipin.com/zhaopin/68197fb1403ffc4c03Zz3d-_FA~~/)\n\n用《方志敏》说明故事实践；把十元方法作为个人构思方法，不声称已有商业爆款成绩。",
+      "x": 1210,
+      "y": 3616,
+      "width": 730,
+      "height": 200,
+      "color": "4"
+    },
+    {
+      "id": "boss-ai-premium-storyboard-watch",
+      "type": "text",
+      "text": "## 深圳观察｜AI精品剧分镜师（BOSS安全验证未过）\nBOSS搜索快照列：趣火鑫行文化传媒｜深圳坪山｜5–9K｜1–3年｜大专。职责为AI精品剧分镜设计与视觉规划，按剧情和导演意图画分镜并迭代；和你的故事组织、AI动画及CSP视觉实践相关，但岗位标1–3年经验。工资/年限来自BOSS聚合搜索摘要，点详情及公司页均要求登录安全验证，开放状态和招聘主体尚未确认。\n未能确认招聘公司与公开报道中的“趣火映画”是否同一主体，因此暂不套用那篇报道的公司介绍。\n[BOSS职位详情（登录验证）](https://m.zhipin.com/job_detail/c4648e127aeb849d0nF529-0EFBZ.html) · [BOSS公司页（登录验证）](https://m.zhipin.com/gongsi/c5293fcd86a7754903x939y5EVY~.html) · [BOSS搜索列表](https://m.zhipin.com/zhaopin/a86c16564bcfedb903d-3du4EQ~~/)",
+      "x": 6410,
+      "y": 885,
+      "width": 520,
+      "height": 260,
+      "color": "3"
+    },
+    {
+      "id": "duoyi-game-art-2027",
+      "type": "text",
+      "text": "## 多益网络｜原画设计师（27届校招）\n**8–10K/月；本科在学；广东省；页面列导师指导；2026-07-20发布，当前名额待核。**参与角色/场景概念设计、宣传图与概念图；AI设计工具为加分项，动效也加分。\n**能力对应：**原创视觉、PS/AE类软件、角色场景和AI辅助工作流。**限制：**地点不够明确：页面提示录用后可能在广州、苏州或武汉实习/入职；岗位仍含扎实美术审美与手绘门槛。\n来源：[高校就业岗位原文](https://job.tiangong.edu.cn/correcruit/content/id/55271.html)",
+      "x": 8030,
+      "y": 650,
+      "width": 520,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "dreamsky-ai-game-art-intern-20261014",
+      "type": "text",
+      "text": "## 深圳｜创梦天地角色原画实习（AI辅助明确）\n**招聘截止：2026-11-22；本科在校；深圳南山；每周5天、每天6小时；至少6个月；不转正；工资未公开。**\n做休闲游戏角色/道具原画、三渲二修图和插画，与策划、设计、开发协作。要求PS/SAI并会AI辅助设计绘画。\n**能力对应：**角色/IP视觉、PS/CSP、AI辅助探索。**关键限制：**纯实习、无转正、半年起，传统造型与色感要求高；只有时间和条件合适才考虑。\n来源：[招聘详情](https://www.deizao.net/m/index/shixixq/jobid/93771)（第三方校园信息页，投前核雇主状态）",
+      "x": 9260,
+      "y": 630,
+      "width": 520,
+      "height": 240,
+      "color": "5"
+    },
+    {
+      "id": "c819b24119d9444b",
+      "type": "text",
+      "text": "## 广州新增｜游戏角色原画与AIGC视频校招\n\n**三七互娱｜角色原画，2027届**：10–20K×15；广州，本科；投递至11/30。AI辅助灵感、草图迭代列为要求/加分项。原创角色和成套风格设计匹配；传统造型功底和多风格能力门槛高。\n[职位](https://www.nowcoder.com/jobs/detail/460081) · [公司招聘](https://zhaopin.37.com/index.php?a=recruit&c=recruit&m=Home&recruit=1)\n\n**诗悦网络｜AIGC视频设计师，2027届**：10–15K；广州天河；AI人物/场景/动态素材、工作流沉淀；重点偏游戏广告、投放反馈、多版本素材，叙事IP创作较少。正式校招线索，可作为商业制作成长备选。\n[职位详情](https://gsut.bysjy.com.cn/detail/job?id=3229126&online_id=3375031)\n\n**按Linear能力判断**：三七更贴原创角色与风格开发，但需核验画功/多风格作品；诗悦可积累AI商业交付，但应确认作品创意权、复盘带教与交付节奏。\n\n**补充核查（2026-10-14）**：牛客职位快照此轮显示HR约20分钟前在线；列本科、2027届，10–20K×15，投递期至11/30。详细要求包括两类以上游戏美术风格、角色成套资源、了解3D模型/骨骼动画/特效流程；支持AI用于灵感、参考和草图迭代。软件上你会PS/CSP/Maya，传统手绘功底与作品集多风格覆盖需由作品证明。三七互娱是广州总部的上市游戏公司；公司总体介绍并不能替代具体美术组带教/工作方式核验。[职位快照](https://www.nowcoder.com/jobs/detail/460081) · [公司介绍与校招](https://career.nankai.edu.cn/correcruit/content/id/117057.html)",
+      "x": 10490,
+      "y": 340,
+      "width": 520,
+      "height": 530,
+      "color": "5"
+    },
+    {
+      "id": "a724c921-9377-video",
+      "type": "text",
+      "text": "## 广州新增｜9377游戏视频设计（2027届）\n\n**薪资未公开**；本科、美术/数字媒体/视觉/动画相关，毕业期2026-09至2027-07，公开页截止11/30。职责含游戏广告视频全流程、AI素材生成调优、按投放反馈迭代；介绍页写资深美术1对1带教。公司介绍称广州研运一体游戏公司、600+员工。商业投放方向与原创叙事主线不同，官方HC/薪资/导师待核。\n[招聘介绍](https://www.wondercv.com/xiaozhao/9377-games-2027-campus-art-guangzhou-17254-518208/) · [公司官网](https://www.9377.cn/)\n\n**能力匹配初评74/100**：校招入口、全流程、AIGC和带教线索较清楚；扣分为偏投放、工资未披露、招聘介绍非官方系统。\n**公司与岗位补充（2026-10-14核）**：9377自述广州总部、600+人，研运一体并做国内/海外发行；要求AE/PS，投递要附作品集，页面称资深美术1对1带教并提供AI视频工具。工资未公开，页面截止11月30日。工作核心是游戏广告视频、按投放数据优化，不是原创叙事。来源：[校招详情](https://www.wondercv.com/xiaozhao/9377-games-2027-campus-art-guangzhou-17254-518208/) · [公司官网](https://www.9377.cn/)",
+      "x": 16255,
+      "y": 340,
+      "width": 520,
+      "height": 380,
+      "color": "6"
+    },
+    {
+      "id": "silkroad-aigc-2027",
+      "type": "text",
+      "text": "## 深圳新增｜丝路视觉AIGC设计师（2027校招）\n\n官方校招页10/10更新；深圳、本科及以上、2027届，工资未披露。工作包括视觉概念生成、视频风格化、动态合成；与策划、导演、动效团队协同，并测试/微调模型。公司为2002年成立、深圳总部的上市数字视觉服务公司，做数字展陈、广告、影视/动漫等视觉服务。\n\n**技术门槛要重点确认**：JD要求熟悉Python和TensorFlow/PyTorch，并熟练多种主流AI视频工具。先问这些要求是硬门槛还是加分、具体业务项目与薪资。\n[官方职位页](https://wecruit.hotjob.cn/SU63181444bef57c71a910505b/pb/posDetail.html?postId=6aca0e98f0cfabf2b4e9a246&postType=campus) · [公司介绍](https://cg.silkroadcg.com/about)\n\n**初评78/100**：深圳正式校招、AIGC视觉生产和导演协作匹配度较高；技术门槛/工资未知扣分。",
+      "x": 20455,
+      "y": 380,
+      "width": 520,
+      "height": 340,
+      "color": "1"
+    },
+    {
+      "id": "perfect-world-ai-video-2027",
+      "type": "text",
+      "text": "## 广州｜完美世界AI视频设计师（27届）\n\n**13–30K×14；广州；本科；职位页列投递至12/31，但同一页面按钮显示已结束，招聘状态冲突。**工作做游戏素材管线、MG动画、AE特效/表达式/脚本批量动画和合成调色。要求精通AE及Adobe软件。\n\n你已确认AE/PR/PS，但AE表达式/插件脚本熟练度仍未知；先确认岗位是否开放和技术深度。\n[职位页](https://www.nowcoder.com/jobs/detail/463821)\n",
+      "x": 17485,
+      "y": 460,
+      "width": 520,
+      "height": 260,
+      "color": "6"
+    },
+    {
+      "id": "huyavisual20261014",
+      "type": "text",
+      "text": "## 广州新增｜虎牙AI视觉设计师-运营方向\n\n**2027届；400–550元/天；广州；每周4天、至少3个月，页面注明有转正。**负责赛事KV、海报、社媒/直播包装/H5等视觉，探索风格规范与模板；明确用AIGC辅助创意、草图和素材并校验质量。你的风格/角色与AI流程可迁移，但岗位核心是电竞宣发平面，需要扎实PS/AI及电竞视觉审美。\n\n招聘页来自牛客，官方虎牙校招公告显示2027毕业资格、工作城市及投递至10/31；具体实习职位/HC、带教、转正薪资待核。官方校招汇总薪资不当成本岗位转正工资。\n[岗位详情](https://www.nowcoder.com/jobs/detail/463659) · [虎牙官方校招](https://hr.huya.com/campusRecruit/index) · [校招公告](https://career.nankai.edu.cn/correcruit/content/id/119582.html)\n\n**匹配初评75/100**：AIGC、视觉全链路、日薪和转正线索清楚；扣分为商业宣发、不做叙事IP且平面门槛较高。",
+      "x": 13635,
+      "y": 3301,
+      "width": 730,
+      "height": 300,
+      "color": "2"
+    },
+    {
+      "id": "649d190a200d450c",
+      "type": "text",
+      "text": "## AIGC制作与流程｜相邻方向\n**深圳 AIGC制作**：8–13K，经验不限；品牌项目涉及 AI 视频、图片、动画和短片，适合作为初级入口核实内容比例与作品集要求。\n**公司待核**：旧记录保存的是职位集合页，无法可靠确认这条岗位对应哪家公司；需点开具体职位详情再补公司介绍。\n[回查职位集合](https://www.zhipin.com/zhaopin/d235d15d1a040f9e1Xx73tq6FA~~/)\n\n**CG/AI动画制片人**：9–14K，经验不限；描述包含创意、故事板、团队组织到执行。属于流程统筹伸展岗，商业排期与团队协作经验待补。\n**公司待核**：原搜索记录未保留可验证的公司名称，需从职位详情补全。\n[查看职位页](https://m.zhipin.com/zhaopin/7a8b922e5dcfc17d03Jz2NS5Fg~~/)",
+      "x": 17485,
+      "y": 3312,
+      "width": 520,
+      "height": 300,
+      "color": "2"
+    },
+    {
+      "id": "yuzhou-ai-visual-intern",
+      "type": "text",
+      "text": "## 深圳观察｜雨舟科技AI视频Agent视效实习\n\n**190–200元/天；深圳南山；2027届；每周5天、至少3个月，页面写有转正；投递期至2026-11-26。**做AI Agent产品功能/活动/运营/教程视频，负责剪辑包装、AE动效/转场与合成修补，并可用AI图视频补素材。公司页标签为企业服务、未融资，产品团队和规模仍需核实。\n\n适合积累产品内容交付，不是叙事动画岗；需熟练PR并能独立完成AE包装与动效。确认导师、转正标准/工资和迭代节奏。\n[岗位详情](https://www.nowcoder.com/jobs/detail/463447)\n\n**初评68/100**：AIGC产品素材、工资和转正线索明确；AE技能门槛和企业信息未知。",
+      "x": 21685,
+      "y": 400,
+      "width": 520,
+      "height": 320,
+      "color": "1"
+    },
+    {
+      "id": "lighthub-ai-video-watch",
+      "type": "text",
+      "text": "## 广州观察｜光盒动力AIGC视频与漫剧\n\n公司介绍称做AI海外短剧制作/发行与影视广告。2026-05旧帖列AIGC视频师8–12K，AI漫剧实习职位薪资同时出现120–200元/天与面议，办公地址也有番禺/海珠两个版本。\n\n职责包含AI短视频/动漫、全流程策划与剪辑，对你的软件/AI动画方向相邻；但旧帖且工资地点冲突，不算确认在招。\n[旧招聘帖](https://m.sohu.com/a/1027058635_121124210/?_trans_=000014_bdss_dklzxbpcgP3p) · [近期公司报道](https://news.southcn.com/node_9a94bc2d4c/243fe7acfc.shtml)\n",
+      "x": 18045,
+      "y": 3332,
+      "width": 520,
+      "height": 260,
+      "color": "2"
+    },
+    {
+      "id": "usmile-ai-content-2027",
+      "type": "text",
+      "text": "## 广州｜星际悦动AI内容制作师（2027届）\n\n**8–12K；本科；广州；初级全职。**用AI工具拆解/复刻短视频，做分镜、画面、切片与视频生成，沉淀SOP并与内容营销/拍摄/后期协作。公司经营usmile口腔护理及美护品牌，工作偏消费品内容营销。\n\n职位近期见于LinkedIn，注明来自猎聘；官方在招状态/薪资还要复核。\n[岗位](https://cn.linkedin.com/jobs/view/%E3%80%902027%E5%B1%8A%E6%A0%A1%E6%8B%9B%E3%80%91ai%E5%86%85%E5%AE%B9%E5%88%B6%E4%BD%9C%E5%B8%88-at-%E5%B9%BF%E5%B7%9E%E6%98%9F%E9%99%85%E6%82%A6%E5%8A%A8%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-4470108502) · [官网招聘](https://jobs.usmile.com/)\n",
+      "x": 21015,
+      "y": 430,
+      "width": 520,
+      "height": 240,
+      "color": "1"
+    },
+    {
+      "id": "centurygames-ai-video-sh-2027",
+      "type": "text",
+      "text": "## 跨城观察｜点点互动AI视频设计师（上海，2027校招）\n工资面议；本科；官方岗位页显示全职校招，负责全球游戏广告视频/图片，从创意脚本、分镜、AI素材生成到剪辑合成、渠道趋势与投放数据复盘。AE/PR/PS是加分项，与已确认软件和叙事制作经验匹配；但核心指标是广告转化，岗位地点上海，超出当前深圳优先/广州备选范围，先留作跨城对照。\n公司2010年成立，聚焦全球休闲、RPG、策略游戏，自研《无尽冬日》《奔奔王国》等产品。\n[岗位详情](https://www.nowcoder.com/jobs/detail/465405) · [公司与2027校招介绍](https://job.hust.edu.cn/zpinfo1/2407295.htm) · [官方招聘](https://career.centurygames.cn/campus/jobs)",
+      "x": 18715,
+      "y": 470,
+      "width": 520,
+      "height": 240,
+      "color": "6"
+    },
+    {
+      "id": "yuzhou-ai-visual-fulltime",
+      "type": "text",
+      "text": "## 深圳观察｜雨舟AI Agent视效设计（全职校招）\n\n**招聘页标注14–35K×15；深圳南山；2027届本科；页面投递期至2026-11-26。**制作AI视频Agent产品功能、活动和教程视频；要求AE动效包装、PR剪辑，你已确认工具匹配。\n\n工资跨度大，需核实真实定薪/级别、公司团队信息、岗位真实性和全职劳动关系。\n[职位页](https://www.nowcoder.com/jobs/detail/463446)\n\n**观察分77/100**：技能和校招相符；薪资及团队不确定性高。",
+      "x": 22915,
+      "y": 440,
+      "width": 520,
+      "height": 280,
+      "color": "1"
+    },
+    {
+      "id": "21ad5ef611e144b6",
+      "type": "text",
+      "text": "## 广州备选｜实习\n**AI动画制作实习**：150–200 元/天；描述含分镜拆解、生图/生视频、镜头衔接与成片辅助交付。\n**公司待核**：旧链接是广州职位集合页，不能确定这条实习对应哪家单位。先在 BOSS 详情页确认公司、导师和作品能否用于作品集。\n[回查职位集合](https://www.zhipin.com/zhaopin/4d5231deb6abdebc1Hx62t26GQ~~/)\n\n只在学习支持、实际产出或成长明显优于深圳选项时考虑。",
+      "x": 17660,
+      "y": 3737,
+      "width": 730,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "momentculture-aigc-video-watch",
+      "type": "text",
+      "text": "## 深圳观察｜时刻文化AIGC视频制作师（BOSS旧快照）\nBOSS摘要：8–13K；深圳南山华侨城；标1–3年、大专；具体职责摘要为AIGC视频制作和持续优化流程。页面来自约3个月前的岗位搜索快照，不能确认现在仍招；完整JD及经验是否可由作品抵扣，需在BOSS账号登录后核验。\n公司自述：时刻文化（深圳时刻文化传播有限公司）2016年成立，是原创内容型MCN，覆盖AIGC创意、AI科技讲解、时尚、汽车与生活方式等矩阵；官网称粉丝总量1.5亿、服务1000+品牌。官网案例体现商业内容、TVC与自孵化达人并行，团队创作更像“内容/IP+品牌项目”而非纯漫剧流水线。\n对你：AE/PR/PS与AI动画项目可迁移到品牌故事及AIGC短片；核实真实工作是自主创意/完整制作，还是按需批量出片；经验要求需面试确认。\n[BOSS岗位摘要](https://m.zhipin.com/zhaopin/5a867a1e4aa760301H163du7FA~~/) · [公司官网](https://www.momentculture.com/)",
+      "x": 22245,
+      "y": 400,
+      "width": 520,
+      "height": 320,
+      "color": "1"
+    },
+    {
+      "id": "tuyoo-ai-video-2027",
+      "type": "text",
+      "text": "## 广州｜途游AI视频设计（2027校招）\n\n**10–17K×13；本科；广州；投递期至2027-08-31。**游戏项目广告创意与视频制作，按投放反馈调整素材方向；要求AE/PR/PS。你已确认三项软件，工具匹配；工作偏商业获客视频，创作空间和带教待核。\n[岗位详情](https://www.nowcoder.com/jobs/detail/463236)\n\n**初评81/100**：薪资与技能要求清楚，应届入口明确；投放目标占比高。",
+      "x": 16815,
+      "y": 410,
+      "width": 520,
+      "height": 240,
+      "color": "6"
+    },
+    {
+      "id": "4399-game-video-2027",
+      "type": "text",
+      "text": "## 广州｜4399游戏视频设计（2027校招）\n\nAI提升宣传片创意，职责含分镜、包装、剪辑，也做投放广告视频；要求AE，UE动画加分。工资未公开；校招简章提及导师带教。AE符合你确认的技能，UE未确认。\n[职位介绍](https://www.shushuqiuzhi.com/position/384592) · [校招简章](https://career.gdufs.edu.cn/web/Index/jobs-brief-detail?id=VKUXSMR)\n\n须从官方招聘系统核职位状态、团队、薪资和导师安排。",
+      "x": 18045,
+      "y": 480,
+      "width": 520,
+      "height": 220,
+      "color": "6"
+    },
+    {
+      "id": "xiangrui-ai-manhua-design-20261014",
+      "type": "text",
+      "text": "## 广州观察｜享瑞电子商务 AI漫剧设计师\n**8–15K（招聘平台职位说明）；广州白云；大专及以上；标注1年以下。**公开职位页最近可见，但招聘是否仍开放、正式/实习性质需核实。\n\n工作做角色形象校准、场景素材、分镜画面初调、AI提示词/模型参数测试和基础精修；JD称由资深设计师指导，参与风格一致与单集视觉交付。技能任务与你的AI动画/角色和镜头实践贴近。\n\n**单位情况**：招聘平台将公司列为20–99人、综合商贸/文化娱乐；平台展示的工商摘要称企业2026-06成立、自然人独资、注册资本1万元。本轮未找到可核的官方项目介绍。信息尚不足以判断团队质量，需核合同主体、实际项目、导师、试用期工资和社保、薪资范围是否真实。\n\n来源：[智联岗位详情](https://www.zhaopin.com/jobdetail/CCL1528393570J40887958409.htm)。此线索来自智联，不是BOSS职位，不列当前确认开放。",
+      "x": 1035,
+      "y": 5189,
+      "width": 520,
+      "height": 340,
+      "color": "1"
+    },
+    {
+      "id": "quwan-ai-content-intern-20261014",
+      "type": "text",
+      "text": "## 广州观察｜趣丸科技 AI内容创作实习生\n**110–150元/天；广州；本科、2027届；每周5天，至少4个月。**牛客招聘页本次检索显示招聘负责人刚刚在线。\n\n参与游戏/电竞/娱乐品牌AI内容，以及都市生活、科幻题材短剧/漫剧/互动内容，从创意、制作到成片；也可能参与AI内容平台与工作流共创。与你的AI动画、叙事和视频软件能力相邻，方向比纯投放剪辑更广。\n\n**单位介绍（官网自述）**：趣丸科技2014年在广州成立，业务涵盖兴趣社交、人工智能和电竞；官方介绍AI音乐、AI语音、数字人、三维生成等自研产品。该岗位具体属于哪个内容团队、作品能否入集仍要确认。\n\n**适配边界**：用户资料记录为2027届，但需核毕业时间/学历是否满足；广州及连续4个月全勤是现实条件。先列优先观察，不代表已投。\n\n[岗位详情](https://www.nowcoder.com/jobs/detail/469416) · [公司介绍](https://www.quwangroup.com/about)",
+      "x": 1595,
+      "y": 5169,
+      "width": 520,
+      "height": 380,
+      "color": "1"
+    },
+    {
+      "id": "bluefocus-ai-creator-2027",
+      "type": "text",
+      "text": "## 广州/深圳｜BlueFocus AI Creator 2027\n\n**11–20K×13；2027届；投递至11/30。**全流程AI内容：剧本改编、视觉风格、资产生成、镜头和后期合成；页面列广州、深圳等城市。PR/AE是加分项，与你确认的软件匹配。\n\n承接品牌广告、AI短片和实验影像；城市HC、创作权和导师配置待核。\n[招聘页](https://www.nowcoder.com/jobs/detail/464995)",
+      "x": 5235,
+      "y": 8141,
+      "width": 520,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "b04a8a1dc8594cfe",
+      "type": "text",
+      "text": "## 新增核实线索｜Linear画像匹配\n**深圳大梦龙途｜AI漫剧动画师**：6–8K/月，无经验可投，本科；AI素材生成、剪辑配音并完成成片，岗位页列五险一金、双休。成片链接与真实贡献要准备。\n来源：[高校就业页](https://career.gdufs.edu.cn/index.php/web/Index/job-detail?id=11180) · [官网](https://www.dodjoy.com/)\n\n**广州海象文化｜AI漫剧设计助理**：5.5–6.5K/月，经验不限；角色/风格、脚本转分镜、场景图、剪辑。主营艺术教育，需确认真实商业制作与带教。\n来源：[岗位页](https://www.gzrecruit.com/jobs/recruit/detail/75F00A049AF23B477080E5AFC37A51DD)\n\n**深圳幻实科技｜AI内容/多媒体设计师**：官网长期招聘；薪资、经验未披露。岗位涉及 AI 短剧/漫剧、数字人、工作流资产。\n来源：[官网招聘页](https://fancyar.com/join.html)\n\n职位公开页需再次确认是否仍开放；未代发消息或投递。\n\n**广州光盒动力｜AIGC视频设计师**：10–15K/月（2026-07高校就业页）；创意策划 8–12K。强商业品牌/广告取向，可练商业AIGC交付，低于原创叙事岗优先级。是否仍开放待核。\n[岗位详情](https://career.nhic.edu.cn/web/index/jobs-brief-detail?id=TDUXSP6)\n\n**广州星动数娱｜AI漫剧导演/编导（挑战岗）**：1年内且能力突出 9–13K，1–3年 13–18K。工作含分镜、叙事节奏、视觉风格和全流程品控，和能力主线很贴；但要求导演作品集和至少一年相关经历，页面发布日期2026-08-27，需确认仍招。\n[岗位详情](https://www.liepin.com/job/1984999003.shtml) · [公司业务报道](https://www.gzasc.edu.cn/yscm/info/1034/5531.htm)\n\n**深圳浪险声动｜AI漫剧制作师**：8–10K（底薪+绩效+产能奖），无经验可投；分镜拆解、角色风格一致、生成与成片。公司主营商户获客短视频，属于产量型备选，需核算产能奖和项目稳定性。\n[岗位与公司](https://www.zhaopin.com/jobdetail/CCL1522141900J40891144413.htm)\n\n**深圳深耕数字影像｜编剧/AIGC导演/制作师**：当前公司职位列表列 5–8K 编剧、6–10K导演、5–6K制作师；叙事与AI内容贴合。编剧标1年以下，其他岗位1–3年。另有实习培训/住宿但薪资未公布，需核实岗位开放和带教。\n[当前职位列表](https://www.zhaopin.com/companydetail/jobs-CZL1512933740/) · [实习招聘](https://dwqys.scauzj.edu.cn/tzgg/webinfo/2026/03/1774387508675302.htm)\n\n**近截止待核｜“优达诺”AI短剧编导实习生**：深圳福田，页面截止10/16；做脚本、分镜、AI生成和后期，贴合能力但不是正式岗。只显示招聘名，签约主体未给；页面同时报180–250元/天和3500–4500元/月，需先核实，不代投。\n[实习页](https://www.shixiseng.com/intern/inn_k8sqng2qmxuw?pcm=pc_SearchList)\n\n**大梦龙途城市/薪资复核（2026-10-14）**：较新的2027校招介绍把AI漫剧动画师列为**长沙**，未公开工资；旧高校页另写“深圳、6–8K”，目前无法确认是同一批岗位。不要把6–8K套到长沙岗位，也不把长沙岗位标为深圳优先。仅当你愿意考虑长沙时再核官方网申岗位。来源：[2027校招介绍](https://jy.gzhu.edu.cn/index.php/web/index/jobs-brief-detail?id=SXUXSWA) · [旧高校页](https://career.gdufs.edu.cn/index.php/web/Index/job-detail?id=11180)",
+      "x": 12578,
+      "y": 7826,
+      "width": 520,
+      "height": 1100,
+      "color": "6"
+    },
+    {
+      "id": "bgi-newmedia-2027",
+      "type": "text",
+      "text": "> **AI职责待核｜不计入AI主投**\n\n## 深圳｜华大智造新媒体制作与传播储备生（2027届）\n全职校招；深圳；本科及以上；新闻传播/广告/新媒体/视觉/影视等专业方向，工资未公开。职责含新媒体策划、图文与短视频、官方账号、品牌素材和内容矩阵；要求会用AI协作文案、视觉素材与短视频脚本，AI短剧/视频经验优先。你已有AI动画成片、AE/PR/PS等软件能力，可作为品牌科技内容方向拓展；内容面向生命科技品牌传播，不是动画制作岗。\n公司介绍：华大智造（688114）做基因测序及多组学仪器与解决方案，面向全球科研与临床用户；校招资料称业务覆盖120多个国家和地区。\n[岗位页](https://www.shushuqiuzhi.com/job/650673) · [华大智造2027校招](https://genomics.zhiye.com/)",
+      "x": 8378,
+      "y": 4904,
+      "width": 520,
+      "height": 280,
+      "color": "3"
+    },
+    {
+      "id": "c819b24119d9444d",
+      "type": "text",
+      "text": "## Linear岗位评分标准｜用于横向比较，不等于已投递/已录用\n创作参与25｜带教20｜内容匹配20｜AI可用15｜入职适配10｜稳定薪酬10。\n先核对岗位原文是否明确使用AI、地点/届别/状态与薪资。AE、PR、CSP、PS、Maya为你自述会用的软件；是否匹配以JD和作品证据逐项核验。\n彩色放射线只表示“该岗位线索对应这个能力中心”，不代表已确认开放。",
+      "x": 13808,
+      "y": 7851,
+      "width": 520,
+      "height": 170,
+      "color": "6"
+    },
+    {
+      "id": "deepblue-storyboard-2027",
+      "type": "text",
+      "text": "> **AI职责待核｜不计入AI主投**\n\n## 广州｜深蓝互动视频编导（2027校招）\n\n二次元游戏研发公司，简章介绍创始团队参与多款游戏产品研发。按剧情脚本设计游戏过场动画/CG、绘制关键剧情分镜，与美术/动作团队协作，突出镜头语言和情绪表达。\n\n**工资未公开；广州；本科；2027届。**PR/AE是加分项，符合你已确认的软件；UE/Unity也加分，但你未确认。非AI岗位，是叙事影像迁移方向。职位简章8/10更新，学校转载现显示过期，需核官方HC。\n[职位页](https://www.shushuqiuzhi.com/position/454902) · [校招简章](https://career.nankai.edu.cn/correcruit/content/id/116767.html)",
+      "x": 9608,
+      "y": 4934,
+      "width": 520,
+      "height": 300,
+      "color": "3"
+    },
+    {
+      "id": "damenglongtu-ae-video-2027-shenzhen",
+      "type": "text",
+      "text": "> **AI职责待核｜不计入AI主投**\n\n## 深圳｜大梦龙途 AE视频设计（2027校招）\n**深圳；2027届本科；工资未公开。**校园招聘页列有AE视频设计，需登录官方网申确认HC、专业与截止时间。\n\n职责做游戏宣传、广告与包装后期；参与视频创意、脚本和制作，完成剪辑、特效、调色/镜头校色、合成与音乐音效。与你确认的AE/PR及成片经验直接相关，创作参与度比单纯素材后期更高。\n\n**单位介绍**：大梦龙途2014年在深圳成立，做手游研发、发行和社交互动，校招资料也提到AI业务；公司宣传有新人1对1导师和双休制度（需确认部门落实）。此AE视频岗与其游戏广告业务相连，投放节奏和创作空间要问具体团队。\n\n[2027校招岗位介绍](https://jy.gzhu.edu.cn/index.php/web/index/jobs-brief-detail?id=SXUXSWA) · [官方网申](https://app.mokahr.com/campus-recruitment/damenglongtu/36328) · [公司官网](https://www.dodjoy.com/)",
+      "x": 8938,
+      "y": 4854,
+      "width": 520,
+      "height": 380,
+      "color": "3"
+    },
+    {
+      "id": "2858461238e141d0",
+      "type": "text",
+      "text": "## 线索状态与公司识别\n这些内容来自此前的 BOSS 搜索记录，整理日期 2026-10-14；职位是否仍在招、薪资和要求均需登录账号复核。\n\n画布已补公司/单位介绍：TCL 雷鸟科技、深圳市媒体研究会、FutureLink Media；幻希赛隆只有公开项目报道，主体信息待核。其余岗位旧记录未留下可确认的雇主名称，已明确标“公司待核”，避免把职位集合页里的其他公司误当成招聘方。\n\n原《就业.canvas》里的 4 张临时截图引用文件目前缺失；Vault 回收站、Git 和 Windows 回收站均未找到副本。这里保留原始职位链接和文字记录，便于逐条回查。\n\n[[BOSS公司介绍与工资追踪表|打开公司、介绍与工资追踪表]]。后续新增和更新都记在这张表里。",
+      "x": 13138,
+      "y": 8196,
+      "width": 520,
+      "height": 360,
+      "color": "6"
+    },
+    {
+      "id": "kuro-storyboard-2027",
+      "type": "text",
+      "text": "> **AI职责待核｜不计入AI主投**\n\n## 广州｜库洛游戏分镜师（2027校招）\n广州；面向2027届。根据脚本独立设计/绘制游戏过场动画分镜，需独立完成绘制分镜和动态分镜，镜头表达、透视与故事讲述是核心；会用三维软件辅助分镜加分，热爱二次元/日系风格加分。你确认会Maya、AE、PR等，三维辅助与动态表达相关；独立手绘分镜水平需用作品集核验。工资未公开，第三方招聘页显示10/26截止，及时核官方岗位状态。\n公司：2014年成立、广州总部，做《战双帕弥什》《鸣潮》等游戏研发运营和原创IP孵化。\n[官方职位](https://kurogame.jobs.feishu.cn/campus/position/7674878862292453695/detail) · [校招与公司介绍](https://jy.gzhu.edu.cn/index.php/web/Index/jobs-brief-detail?id=18266) · [投递批次/截止信息](https://campus.niuqizp.com/job-vm85aNLML.html)",
+      "x": 10168,
+      "y": 4944,
+      "width": 520,
+      "height": 280,
+      "color": "3"
+    },
+    {
+      "id": "d2c171e446484ac5",
+      "type": "text",
+      "text": "## 面试时核实单位的做事方式\n- 新人能否参与脚本、分镜、视觉设定，还是只按量出图？\n- 谁带教、多久审片复盘？返修依据是什么？\n- 考核看成片质量，还是每日生成数量？\n- 职位主体、劳动关系、经验门槛、薪资结构是否与页面一致？\n- 作品归属、署名和公开到个人作品集的权限？\n\n这里的“单位个性”是待验证画像，招聘文案本身不能证明团队文化。",
+      "x": 14368,
+      "y": 7826,
+      "width": 520,
+      "height": 220,
+      "color": "6"
+    },
+    {
+      "id": "insta360-ai-visual-designer-2027",
+      "type": "text",
+      "text": "## 深圳｜影石 Visual Designer（2027正式校招，AIGC）\n**官方职位当前可见；深圳；2027届正式岗位；工资和截止日未披露。**\n用AIGC做营销视觉、产品/生活方式图与社媒内容；参与概念、moodboard、AI出图与风格迭代，并与设计、3D、视频和修图团队协作。要求构图、色彩、排版、图像编辑基础和作品集。\n**能力对应：**视觉构成、PS、AI生成筛选与多轮调整；与你的角色/场景视觉经验相邻。**内容偏产品/品牌营销，不是原创叙事IP。**\n来源：[影石官方职位页](https://arashivision.jobs.feishu.cn/campus/m/position/7663464224874268982/detail)",
+      "x": 5795,
+      "y": 8141,
+      "width": 520,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "wondershare-ai-video-designer-intern-2027",
+      "type": "text",
+      "text": "## 万兴科技｜AI视频设计 / AI创意设计实习（深圳、长沙）\n**官方校招页仍可访问；岗位发布日期2026-03-30，当前HC未确认；具体工资未披露。**面向2027届及以后在读生。本科，AE/PR/PS；AI视频设计岗制作AI特效/视频模板、参与文生视频/图生视频测试，把AI画面与传统后期整合并做质量优化。另有AI创意设计岗做视频模板和宣传教程。\n**能力对应：**AE/PR/PS + 已完成动画成片 + AI视觉迭代。方向是创意软件素材与产品内容，不等于原创漫剧制作；投前核实岗位是否仍开放和具体待遇。\n公司做数字创意软件，旗下有视频剪辑与AIGC创作产品。来源：[官方2027招聘岗位页](https://wondersharecampus.zhiye.com/jobs?1=%5B%7B%22id%22%3A%224%22%2C%22label%22%3A%22%E8%AE%BE%E8%AE%A1%E7%B1%BB%22%7D%5D) · [公司招聘介绍](https://www.wondershare.cn/about/join-us.html)",
+      "x": 23475,
+      "y": 450,
+      "width": 520,
+      "height": 260,
+      "color": "1"
+    },
+    {
+      "id": "moke-aigc-ad-video-2027",
+      "type": "text",
+      "text": "## 广州｜梦可网络AIGC视频广告设计（2027校招）\n\n职责包括海外信息流AI视频、Prompt/分镜与角色模板、生成筛选、多版调优并按广告数据优化。职位页称有1对1带教，要求AIGC实操与主流视频生成工具，PR为加分项。\n\n**薪资未公开；广州；本科；2027届。**你已确认PR，AI动画作品也可能相邻；岗位目标是海外广告转化。公司规模/客户说法和仍有HC待核，页面2026-07-30更新。\n[职位页](https://www.shushuqiuzhi.com/position/384060)",
+      "x": 19275,
+      "y": 460,
+      "width": 520,
+      "height": 260,
+      "color": "6"
+    },
+    {
+      "id": "v2-root",
+      "type": "text",
+      "text": "## 长期目标：进入能学习创作的内容团队\n**我的优势：原创美术与叙事构成＋跨领域统一＋AI辅助动画实现**\n公司主业做游戏/动画/IP，岗位名称不一定包含“AI”；重点看JD实际职责和作品。",
+      "x": 2060,
+      "y": -790,
+      "width": 920,
+      "height": 110
+    },
+    {
+      "id": "v2-key-0",
+      "type": "text",
+      "text": "**L0　长期创作目标**",
+      "x": 20,
+      "y": -570,
+      "width": 300,
+      "height": 90
+    },
+    {
+      "id": "v2-key-1",
+      "type": "text",
+      "text": "**L1　行业方向**",
+      "x": 390,
+      "y": -570,
+      "width": 300,
+      "height": 90
+    },
+    {
+      "id": "v2-key-2",
+      "type": "text",
+      "text": "**L2　岗位类型**",
+      "x": 760,
+      "y": -570,
+      "width": 300,
+      "height": 90
+    },
+    {
+      "id": "v2-key-3",
+      "type": "text",
+      "text": "**L3　具体公司／JD**",
+      "x": 1130,
+      "y": -570,
+      "width": 300,
+      "height": 90
+    },
+    {
+      "id": "v2-key-4",
+      "type": "text",
+      "text": "**L4　作品与能力证明**",
+      "x": 1500,
+      "y": -570,
+      "width": 300,
+      "height": 90
+    },
+    {
+      "id": "v2-key-5",
+      "type": "text",
+      "text": "**L5　待核实与学习反馈**",
+      "x": 1870,
+      "y": -570,
+      "width": 300,
+      "height": 90
+    },
+    {
+      "id": "v2-role-narrative-director",
+      "type": "text",
+      "text": "## 1.1｜导演与AI影像统筹\n目标：脚本、镜头、风格、表演、成片；区分执行导演和高阶导演。",
+      "x": 1250,
+      "y": 1636,
+      "width": 650,
+      "height": 90,
+      "color": "2"
+    },
+    {
+      "id": "v2-proof-narrative-director",
+      "type": "text",
+      "text": "### L4｜拿什么作品证明匹配？\n《方志敏》4分17秒完整片＋具体镜头证明视听表达；实拍导演经验不能用AI短片自动代替。",
+      "x": 350,
+      "y": 1886,
+      "width": 490,
+      "height": 110,
+      "color": "2"
+    },
+    {
+      "id": "v2-check-narrative-director",
+      "type": "text",
+      "text": "### L5｜怎样验证／发现短板？\n核实导演分工、实拍经验是否硬要求、2027届资格、导师审片及作品。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
+      "x": 340,
+      "y": 2071,
+      "width": 510,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "v2-role-narrative-comic",
+      "type": "text",
+      "text": "## 1.2｜AI漫剧分镜与制作\n从故事拆镜到角色一致性、镜头生成、成片审核。",
+      "x": 5450,
+      "y": 1636,
+      "width": 650,
+      "height": 90,
+      "color": "3"
+    },
+    {
+      "id": "v2-proof-narrative-comic",
+      "type": "text",
+      "text": "### L4｜拿什么作品证明匹配？\n《方志敏》成片及《黎黎隆》角色、色卡、H3试镜是现有证据。",
+      "x": 6510,
+      "y": 1896,
+      "width": 490,
+      "height": 90,
+      "color": "3"
+    },
+    {
+      "id": "v2-check-narrative-comic",
+      "type": "text",
+      "text": "### L5｜怎样验证／发现短板？\n核实是否参与创意，月产量、成片质量、真实导演带教和在招状态。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
+      "x": 6500,
+      "y": 2081,
+      "width": 510,
+      "height": 130,
+      "color": "3"
+    },
+    {
+      "id": "v2-role-narrative-writer",
+      "type": "text",
+      "text": "## 1.3｜编剧与故事开发\n人物关系、事件逻辑、节奏及分集。",
+      "x": 1250,
+      "y": 3236,
+      "width": 650,
+      "height": 90,
+      "color": "4"
+    },
+    {
+      "id": "v2-proof-narrative-writer",
+      "type": "text",
+      "text": "### L4｜拿什么作品证明匹配？\n可讲《方志敏》真实剧情结构；十元仅作个人构思方法。",
+      "x": 350,
+      "y": 2976,
+      "width": 490,
+      "height": 90,
+      "color": "4"
+    },
+    {
+      "id": "v2-check-narrative-writer",
+      "type": "text",
+      "text": "### L5｜怎样验证／发现短板？\n核实名下雇主、试稿长度、版权/署名和兼职性质。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
+      "x": 340,
+      "y": 2751,
+      "width": 510,
+      "height": 130,
+      "color": "4"
+    },
+    {
+      "id": "v2-role-visual-gameart",
+      "type": "text",
+      "text": "## 2.1｜角色与场景原画\n岗位可以不叫AI；AI辅助和人工设计规范并重。",
+      "x": 9475,
+      "y": 1321,
+      "width": 650,
+      "height": 90,
+      "color": "5"
+    },
+    {
+      "id": "v2-proof-visual-gameart",
+      "type": "text",
+      "text": "### L4｜拿什么作品证明匹配？\n《黎黎隆》母图、角色、色卡、15头像、人工筛选与视频镜头；传统画功按作品验证。",
+      "x": 8575,
+      "y": 1571,
+      "width": 490,
+      "height": 110,
+      "color": "5"
+    },
+    {
+      "id": "v2-check-visual-gameart",
+      "type": "text",
+      "text": "### L5｜怎样验证／发现短板？\n核实已上线游戏作品、造型/多风格门槛、规范图与AI使用、带教及转正。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
+      "x": 8565,
+      "y": 1756,
+      "width": 510,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "v2-role-visual-marketing",
+      "type": "text",
+      "text": "## 2.2｜游戏运营视觉/赛事KV\n偏海报与品牌视觉，不等同原创角色IP设计。",
+      "x": 13675,
+      "y": 2921,
+      "width": 650,
+      "height": 90,
+      "color": "2"
+    },
+    {
+      "id": "v2-proof-visual-marketing",
+      "type": "text",
+      "text": "### L4｜拿什么作品证明匹配？\n视觉统一能力可迁移；平面排版和真正的KV作品需补。",
+      "x": 14735,
+      "y": 2661,
+      "width": 490,
+      "height": 90,
+      "color": "2"
+    },
+    {
+      "id": "v2-check-visual-marketing",
+      "type": "text",
+      "text": "### L5｜怎样验证／发现短板？\n核实PS/AI/版式要求、导师、原画设计参与度。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
+      "x": 14725,
+      "y": 2436,
+      "width": 510,
+      "height": 130,
+      "color": "2"
+    },
+    {
+      "id": "v2-role-video-game",
+      "type": "text",
+      "text": "## 3.1｜游戏CG、PV和买量视频\n镜头语言可迁移；广告转化指标不同于原创叙事。",
+      "x": 17700,
+      "y": 1171,
+      "width": 650,
+      "height": 90,
+      "color": "6"
+    },
+    {
+      "id": "v2-proof-video-game",
+      "type": "text",
+      "text": "### L4｜拿什么作品证明匹配？\n《方志敏》完整片、分镜和后期；AE/PR及AI视频实际熟练度需作品对照。",
+      "x": 16800,
+      "y": 1421,
+      "width": 490,
+      "height": 110,
+      "color": "6"
+    },
+    {
+      "id": "v2-check-video-game",
+      "type": "text",
+      "text": "### L5｜怎样验证／发现短板？\n区分游戏PV/CG与投放广告；核实AE表达式、UE、数据分析与带教要求。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
+      "x": 16790,
+      "y": 1606,
+      "width": 510,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "v2-role-video-product",
+      "type": "text",
+      "text": "## 3.2｜产品视频/品牌AIGC视效\n可能学习视频后期与AI流程，但原生IP参与度需要核实。",
+      "x": 21900,
+      "y": 1171,
+      "width": 650,
+      "height": 90,
+      "color": "1"
+    },
+    {
+      "id": "v2-proof-video-product",
+      "type": "text",
+      "text": "### L4｜拿什么作品证明匹配？\n成片、H3镜头、AE/PR/PS和个人审核/返工流程；不能冒称商业协作经验。",
+      "x": 22960,
+      "y": 1421,
+      "width": 490,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "v2-check-video-product",
+      "type": "text",
+      "text": "### L5｜怎样验证／发现短板？\n核实产品教程/品牌广告/叙事比例，转正合同、导师和模型技术硬门槛。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
+      "x": 22950,
+      "y": 1606,
+      "width": 510,
+      "height": 150,
+      "color": "1"
+    },
+    {
+      "id": "v2-role-video-unknown",
+      "type": "text",
+      "text": "## 3.3｜泛视频岗位，招聘主体待核\n集合页/旧帖不等于真实在招职位，不擅自填公司。",
+      "x": 17700,
+      "y": 2771,
+      "width": 650,
+      "height": 90,
+      "color": "2"
+    },
+    {
+      "id": "v2-proof-video-unknown",
+      "type": "text",
+      "text": "### L4｜拿什么作品证明匹配？\n目前只保留初级AIGC制作能力的候选匹配，不升级真实性。",
+      "x": 16800,
+      "y": 2511,
+      "width": 490,
+      "height": 90,
+      "color": "2"
+    },
+    {
+      "id": "v2-check-video-unknown",
+      "type": "text",
+      "text": "### L5｜怎样验证／发现短板？\n先确认公司主体、具体JD URL、薪资、投递入口、发布日期。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
+      "x": 16790,
+      "y": 2286,
+      "width": 510,
+      "height": 130,
+      "color": "2"
+    },
+    {
+      "id": "v2-role-creative-drama",
+      "type": "text",
+      "text": "## 4.1｜AI漫剧/IP内容构成\n关注人物、关系、风格和原创权限，非纯抽卡。",
+      "x": 1250,
+      "y": 6000,
+      "width": 650,
+      "height": 90,
+      "color": "1"
+    },
+    {
+      "id": "v2-proof-creative-drama",
+      "type": "text",
+      "text": "### L4｜拿什么作品证明匹配？\n十元构成方法可在个人作品中说明；跨游戏/互动应用仍缺实机Demo。",
+      "x": 350,
+      "y": 6250,
+      "width": 490,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "v2-check-creative-drama",
+      "type": "text",
+      "text": "### L5｜怎样验证／发现短板？\n确认编剧分镜/角色风格的实际决策权及团队作品。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
+      "x": 340,
+      "y": 6445,
+      "width": 510,
+      "height": 130,
+      "color": "1"
+    },
+    {
+      "id": "v2-role-creative-brand",
+      "type": "text",
+      "text": "## 4.2｜品牌内容与AI视觉创意\n品牌视觉是相邻职业，需补传播与设计案例。",
+      "x": 5450,
+      "y": 7600,
+      "width": 650,
+      "height": 90,
+      "color": "4"
+    },
+    {
+      "id": "v2-proof-creative-brand",
+      "type": "text",
+      "text": "### L4｜拿什么作品证明匹配？\n《黎黎隆》视觉识别、角色场景与《方志敏》视听组织可做迁移示例。",
+      "x": 6510,
+      "y": 7330,
+      "width": 490,
+      "height": 110,
+      "color": "4"
+    },
+    {
+      "id": "v2-check-creative-brand",
+      "type": "text",
+      "text": "### L5｜怎样验证／发现短板？\n核实品牌创意、构图排版、用AI环节及导师。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
+      "x": 6500,
+      "y": 7115,
+      "width": 510,
+      "height": 130,
+      "color": "4"
+    },
+    {
+      "id": "v2-role-review-adjacent",
+      "type": "text",
+      "text": "## 5.1｜传统或邻近内容岗位\n目前不能把AI职责未证实的传统岗位冒充AI创作岗。",
+      "x": 9208,
+      "y": 5685,
+      "width": 650,
+      "height": 90,
+      "color": "3"
+    },
+    {
+      "id": "v2-proof-review-adjacent",
+      "type": "text",
+      "text": "### L4｜拿什么作品证明匹配？\n分镜、剪辑、品牌内容可与现有作品对照，但每岗仍需验收专业技能。",
+      "x": 8308,
+      "y": 5935,
+      "width": 490,
+      "height": 110,
+      "color": "3"
+    },
+    {
+      "id": "v2-check-review-adjacent",
+      "type": "text",
+      "text": "### L5｜怎样验证／发现短板？\n向HR核实是否接受AI辅助、导师、校招和创作权限。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
+      "x": 8298,
+      "y": 6130,
+      "width": 510,
+      "height": 130,
+      "color": "3"
+    },
+    {
+      "id": "v2-role-review-governance",
+      "type": "text",
+      "text": "## 5.2｜JD证据、职位状态和决策\n评分≠录用，也不代表岗位实时开放。",
+      "x": 13408,
+      "y": 7285,
+      "width": 650,
+      "height": 90,
+      "color": "6"
+    },
+    {
+      "id": "v2-proof-review-governance",
+      "type": "text",
+      "text": "### L4｜拿什么作品证明匹配？\n保留原图评分口径：创作25、带教20、内容20、AI15、入职10、待遇10；要有证据。",
+      "x": 14468,
+      "y": 7015,
+      "width": 490,
+      "height": 110,
+      "color": "6"
+    },
+    {
+      "id": "v2-check-review-governance",
+      "type": "text",
+      "text": "### L5｜怎样验证／发现短板？\nJD开放→企业作品→导师→毕业生资格→试稿/面试反馈；状态回写674-302。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
+      "x": 14458,
+      "y": 6790,
+      "width": 510,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "v3-star-digital",
+      "type": "text",
+      "text": "## ★ 重点兴趣｜星动数娱（广州）\n**用户明确感兴趣｜AI漫剧导演／编导**。\n已有招聘记录：10–15K，涉及剧本分镜、视听节奏、角色和风格统一及成片；**当前BOSS JD、在招状态、校招资格、导师及真实作品尚未确认**。\n[猎聘岗位记录](https://www.liepin.com/job/1984999003.shtml)\n**下一步：**获取最近上线的AI剧集，问创意权限、导演带教、正式岗位条件、固定工资与制作周期。",
+      "x": 1210,
+      "y": 340,
+      "width": 730,
+      "height": 170,
+      "color": "2"
+    },
+    {
+      "id": "v3-fangcun",
+      "type": "text",
+      "text": "## 深圳｜方寸互娱｜普通游戏原画＋AI辅助\n此前招聘搜索线索提到AI绘图工具用于**角色、场景、氛围图与动画前期美术**；岗位名称可以只是“游戏原画师”。经验及薪资应以BOSS现行JD为准。\n[旧岗位搜索入口](https://m.zhipin.com/zhaopin/4bd4ea16ae21587a1H163dS1Ew~~/)\n**待核：**职位ID、在招、作品类型、Spine/手绘基本功和成长带教。",
+      "x": 8590,
+      "y": 675,
+      "width": 520,
+      "height": 170,
+      "color": "5"
+    },
+    {
+      "id": "v3-tengyu",
+      "type": "text",
+      "text": "## 深圳｜腾娱互动｜游戏概念美术实习\n此前岗位资料涉及**角色／场景／道具设计＋AI辅助**，ComfyUI/SD/PS/Blender为参考技能；页面标题包含“主美术”，但岗位性质为实习，不能当成主美负责人职位。\n[旧校招线索](https://www.shushuqiuzhi.com/article/179709)\n**待核：**2027届可否申请、公司作品、转正及实际指导者。",
+      "x": 9820,
+      "y": 665,
+      "width": 520,
+      "height": 170,
+      "color": "5"
+    },
+    {
+      "id": "v3-zhining",
+      "type": "text",
+      "text": "## 深圳｜致宁互动｜模拟经营游戏原画\n此前BOSS搜索线索涉及角色、物件及**ComfyUI＋PS辅助设计**。应查看真实游戏成品与原画标准；岗位可能有本科、经验等门槛。\n[旧BOSS搜索入口](https://m.zhipin.com/zhaopin/bb3fc4ed635e63851H1_2t26GA~~/)\n**待核：**现行职位、薪资、作品集要求及设计自主权。",
+      "x": 11050,
+      "y": 528,
+      "width": 520,
+      "height": 155,
+      "color": "5"
+    },
+    {
+      "id": "v3-kuaigou",
+      "type": "text",
+      "text": "## 深圳｜快狗互动科技｜游戏原画设计\n此前搜索线索出现**SD／ComfyUI辅助绘图**，另有岗位涉及Spine与切图导出。\n[旧BOSS搜索入口](https://m.zhipin.com/zhaopin/9ec1472a98c2b9611Hd50tu-Fg~~/)\n**待核：**具体游戏画风、本人是否有造型与切图技能证据、面试允许AI的实际环节。",
+      "x": 8205,
+      "y": 370,
+      "width": 730,
+      "height": 155,
+      "color": "5"
+    },
+    {
+      "id": "v3-outcome-narrative",
+      "type": "text",
+      "text": "## L6｜叙事动画方向：下一步如何选？\n**优先：**有真实导演/美术带教、能参与剧本／分镜／风格与完整成片的团队；不优先只有产能指标的抽卡岗位。\n**当前个人兴趣：**★ 星动数娱（广州），但JD在招、应届资格和作品尚待核实。\n**实证动作：**选2家公司看已上线短片，问一位导演审片方式，拿《方志敏》准备3段有时间码的镜头分析。\n**回写：**真正的JD与沟通状态→Linear 674-302。",
+      "x": 5230,
+      "y": 4099,
+      "width": 790,
+      "height": 165,
+      "color": "5"
+    },
+    {
+      "id": "v3-outcome-visual",
+      "type": "text",
+      "text": "## L6｜游戏原画方向：下一步如何选？\n重点找**普通游戏美术/原画岗位，但JD明确允许AI辅助**；深圳优先。先看实际游戏品质、角色原画能力、风格标准和导师，不能用AI熟练替代手绘要求。\n**优先复核线索：**方寸互娱、腾娱互动、致宁互动、快狗互动；广州三七互娱与多益为校招对照。\n**实证动作：**以《黎黎隆》母图制作规范角色卡（正侧背/设计细节）并和真实JD逐条比对。",
+      "x": 13455,
+      "y": 384,
+      "width": 790,
+      "height": 165,
+      "color": "6"
+    },
+    {
+      "id": "v3-outcome-video",
+      "type": "text",
+      "text": "## L6｜视频方向：下一步如何选？\n**区分创作价值：**游戏CG/PV、AI产品视频与广告买量是三种不同工作；不要只按薪资高低排序。\n**要看：**实际成片、AE／PR技术深度、镜头/节奏是否有决策权、是否有导师与正常返工流程。\n**实证动作：**从《方志敏》整理30秒镜头片段与剪辑修改依据；岗位明确要求AE表达式、UE时按实测标记技能差距。",
+      "x": 21680,
+      "y": 3634,
+      "width": 790,
+      "height": 165,
+      "color": "3"
+    },
+    {
+      "id": "v3-outcome-creative",
+      "type": "text",
+      "text": "## L6｜创意/IP方向：下一步如何选？\n**目标：**把角色、故事、色彩、镜头和目标感受构成一件完整作品的机会。十元是你的个人工作方法，不是已经被企业验证的专业标准。\n**要看：**公司是否允许参与原创IP和创意前期，而非仅复刻广告／模板；品牌创意与游戏玩法是相邻方向。\n**实证动作：**做一个《黎黎隆》“目标感受→角色设计→镜头”完整案例；未来游戏方向另做可玩Demo。",
+      "x": 5230,
+      "y": 5063,
+      "width": 790,
+      "height": 165,
+      "color": "2"
+    },
+    {
+      "id": "v3-outcome-review",
+      "type": "text",
+      "text": "## L6｜岗位核实与认知更新\n**统一状态：**INTERESTED→JD_VERIFIED→READY→APPLIED→INTERVIEW→OFFER；过期=EXPIRED、未写AI=AI_UNCONFIRMED。不能把兴趣当成投递或录用。\n**评分：**创意25＋导师20＋内容20＋AI支持15＋入职10＋待遇10；每一项要有职位或面试证据。\n**每轮收束：**本轮看懂的一个行业事实、一个能力短板、一个最小练习；职位状态唯一回写674-302。",
+      "x": 13188,
+      "y": 4748,
+      "width": 790,
+      "height": 165,
+      "color": "4"
+    },
+    {
+      "id": "portfolio-hub",
+      "type": "text",
+      "x": 19655,
+      "y": 6904,
+      "width": 940,
+      "height": 170,
+      "text": "## 作品中心｜我的作品能够证明什么？\n**以实际作品为中心，而不是先写“会什么软件”**。\n阅读顺序：作品状态 → 真实素材 → 能证明的能力 → 作品集呈现 → 待补证据。\n该区独立整理，不连接其他行业/岗位节点。",
+      "color": "3"
+    },
+    {
+      "id": "portfolio-links",
+      "type": "text",
+      "x": 18575,
+      "y": 10664,
+      "width": 510,
+      "height": 150,
+      "text": "### 作品集的两个正式工单\n**[674-302｜求职与作品集总控](https://linear.app/674/issue/674-302)**：确定投什么岗位、作品集应证明什么。\n**[674-303｜CODEX 作品资料归集与作品集制作](https://linear.app/674/issue/674-303)**：核实素材、整理 V3/V4、生成可查看页面。\n素材事实另回读293／173／289，不能由文字代替媒体验收。",
+      "color": "3"
+    },
+    {
+      "id": "portfolio-principles",
+      "type": "text",
+      "x": 19175,
+      "y": 10664,
+      "width": 460,
+      "height": 150,
+      "text": "### 展示边界\n**已完成 ≠ 开发中 ≠ 候选待验收**。\n作品必须说明本人绘制、AI生成、人工选择和后期处理分别是哪部分。\n未确认授权或 USER 审核的素材只留候选，不自动公开。",
+      "color": "3"
+    },
+    {
+      "id": "portfolio-reading",
+      "type": "text",
+      "x": 19725,
+      "y": 10694,
+      "width": 510,
+      "height": 90,
+      "text": "**横向对照：四类材料的证明价值**　｜　**纵向深入：01项目定位 → 02真实素材 → 03能力主张 → 04具体展示 → 05证据缺口**",
+      "color": "3"
+    },
+    {
+      "id": "portfolio-colhead-fz",
+      "type": "text",
+      "x": 17700,
+      "y": 6144,
+      "width": 650,
+      "height": 90,
+      "text": "## 01｜《方志敏》完整动画",
+      "color": "4"
+    },
+    {
+      "id": "portfolio-fz-level-1",
+      "type": "text",
+      "x": 17700,
+      "y": 5869,
+      "width": 650,
+      "height": 130,
+      "text": "### L1｜作品身份与状态\n**《以青春赴可爱的中国》／《方志敏》**\n已完成AI动画短片；原视频实测约257.875秒，展示时统一标作**4分17秒**。\n这是证明“从故事走到成片”的主作品。",
+      "color": "4"
+    },
+    {
+      "id": "portfolio-fz-level-2",
+      "type": "text",
+      "x": 17700,
+      "y": 5631,
+      "width": 650,
+      "height": 150,
+      "text": "### L2｜已有、可追溯的素材\n完整成片；已有抽帧与部分作品集媒体。\n**待674-303核：**原始剧本、人物设计、场景、分镜、逐镜时间码、素材修改记录、高清母版。\n成片抽帧不能冒充原始分镜。",
+      "color": "4"
+    },
+    {
+      "id": "portfolio-fz-level-3",
+      "type": "text",
+      "x": 17700,
+      "y": 5393,
+      "width": 650,
+      "height": 150,
+      "text": "### L3｜能证明的能力\n• **完整交付**：能够组织一部有开头与结尾的动画短片。\n• **视听叙事**：通过人物事件、镜头、节奏传达故事。\n• **AI辅助制作**：有从制作到剪辑输出的个人项目实践。\n*具体本人职责和各环节原始证据仍需逐项核实。*",
+      "color": "4"
+    },
+    {
+      "id": "portfolio-fz-level-4",
+      "type": "text",
+      "x": 17700,
+      "y": 5175,
+      "width": 650,
+      "height": 130,
+      "text": "### L4｜在作品集里怎样证明\n**首页先放精选成片镜头**；再选2–3组“故事目的→相应镜头→实际成片”。\n若原件存在，再加原始分镜/镜头变化/人工修改前后。\n目标岗位：**AI动画编导、动画前期、分镜、AIGC影视内容**。",
+      "color": "4"
+    },
+    {
+      "id": "portfolio-fz-level-5",
+      "type": "text",
+      "x": 17700,
+      "y": 4957,
+      "width": 650,
+      "height": 130,
+      "text": "### L5｜不足与下一步\n674-303优先输出逐镜索引、代表帧、来源证明、本人职责说明。\n验收高清版本、授权与电脑/手机播放。\n不把对故事的事后十元分析说成当时全部依此制作。",
+      "color": "4"
+    },
+    {
+      "id": "portfolio-colhead-ll",
+      "type": "text",
+      "x": 21900,
+      "y": 6144,
+      "width": 650,
+      "height": 90,
+      "text": "## 02｜《黎黎隆》原创IP开发",
+      "color": "5"
+    },
+    {
+      "id": "portfolio-ll-level-1",
+      "type": "text",
+      "x": 21900,
+      "y": 5869,
+      "width": 650,
+      "height": 130,
+      "text": "### L1｜作品身份与状态\n**原创二维角色与世界观IP，开发中**。\n现在已有角色、场景和AI镜头实验；**8分钟正片尚未完成**。\n重点证明美术判断、视觉开发及连续迭代。",
+      "color": "5"
+    },
+    {
+      "id": "portfolio-ll-level-2",
+      "type": "text",
+      "x": 21900,
+      "y": 5651,
+      "width": 650,
+      "height": 130,
+      "text": "### L2｜已有、可追溯的素材\n原创手绘母图、角色造型和剪影、色卡、场景探索；有**3×5头像候选发散＋人工选择和修正**。\nH3已有10.125秒、24fps的已验证试镜来源；具体公开版本须按视频索引与审核确认。",
+      "color": "5"
+    },
+    {
+      "id": "portfolio-ll-level-3",
+      "type": "text",
+      "x": 21900,
+      "y": 5413,
+      "width": 650,
+      "height": 150,
+      "text": "### L3｜能证明的能力\n• **原创角色与IP视觉**：不是只靠提示词随机生成。\n• **风格约束**：让角色、色彩、场景属于同一项目。\n• **AI辅助变体与筛选**：从母图到候选，再由人决定采用什么。\n• **跨镜头探索**：静态设计开始进入动态呈现。",
+      "color": "5"
+    },
+    {
+      "id": "portfolio-ll-level-4",
+      "type": "text",
+      "x": 21900,
+      "y": 5175,
+      "width": 650,
+      "height": 150,
+      "text": "### L4｜在作品集里怎样证明\n展示一条明确链条：**手绘母图→色卡与形体规则→15种探索→人工筛选→规范设计→实际H3镜头**。\n旁列同风格场景与角色关系（以已核资产为准）。\n目标岗位：**游戏原画、角色/场景、IP视觉开发、AI辅助美术**。",
+      "color": "5"
+    },
+    {
+      "id": "portfolio-ll-level-5",
+      "type": "text",
+      "x": 21900,
+      "y": 4957,
+      "width": 650,
+      "height": 130,
+      "text": "### L5｜不足与下一步\n补齐规范角色卡、三视/道具、场景和角色多情境一致性对照；只在原件确实存在时标“已完成”。\n短镜头不等于8分钟成片；也不等于商业游戏开发经验。",
+      "color": "5"
+    },
+    {
+      "id": "portfolio-colhead-independent",
+      "type": "text",
+      "x": 17700,
+      "y": 7744,
+      "width": 650,
+      "height": 90,
+      "text": "## 03｜独立美术与其他作品",
+      "color": "6"
+    },
+    {
+      "id": "portfolio-independent-level-1",
+      "type": "text",
+      "x": 17700,
+      "y": 7979,
+      "width": 650,
+      "height": 110,
+      "text": "### L1｜候选池，而非已确认精选\n候选类型：**传统绘画／插画、独立AI图像、角色或场景作品、3D补充、短镜头**。\n674-303已规划统一归集，但本中心不凭工单描述断定每项均有合格可公开原件。",
+      "color": "6"
+    },
+    {
+      "id": "portfolio-independent-level-2",
+      "type": "text",
+      "x": 17700,
+      "y": 8177,
+      "width": 650,
+      "height": 110,
+      "text": "### L2｜如何找到真实展件\n从现有作品集、个人绘画资料、293素材仓与289视频索引读取。\n每件记录：实际文件路径、截图/原片、版本、作者贡献、USER审核、公开许可。",
+      "color": "6"
+    },
+    {
+      "id": "portfolio-independent-level-3",
+      "type": "text",
+      "x": 17700,
+      "y": 8375,
+      "width": 650,
+      "height": 150,
+      "text": "### L3｜分别能证明什么\n• **独立绘画**：造型、线条、色彩和审美判断。\n• **角色/场景插画**：造型语言与画面组织。\n• **3D候选**：只有真实建模或场景作品才证明对应技能。\n• **AI图像**：原创输入、筛选、精修和版本控制。",
+      "color": "6"
+    },
+    {
+      "id": "portfolio-independent-level-4",
+      "type": "text",
+      "x": 17700,
+      "y": 8613,
+      "width": 650,
+      "height": 130,
+      "text": "### L4｜怎样放进作品集\n只留**质量高、来源清楚、与目标岗位对应**的3–5件候选精品。\n不要把多张类似头像当成多套独立IP；按“原图＋设计目的＋结果”解释。\n针对游戏原画、美宣、动画前期调整排列顺序。",
+      "color": "6"
+    },
+    {
+      "id": "portfolio-independent-level-5",
+      "type": "text",
+      "x": 17700,
+      "y": 8831,
+      "width": 650,
+      "height": 150,
+      "text": "### L5｜缺口与筛选标准\n**状态：待CODEX核原件**。\n有真实原件但尚未进作品集＝候选；文件不可读＝MISSING；未经审核/公开权限未知＝WAIT_USER。\n不因候选数量多而自动升级作品质量。",
+      "color": "6"
+    },
+    {
+      "id": "portfolio-colhead-method",
+      "type": "text",
+      "x": 21900,
+      "y": 7744,
+      "width": 650,
+      "height": 90,
+      "text": "## 04｜AI流程与个人方法",
+      "color": "1"
+    },
+    {
+      "id": "portfolio-method-level-1",
+      "type": "text",
+      "x": 21900,
+      "y": 7979,
+      "width": 650,
+      "height": 110,
+      "text": "### L1｜跨项目支撑材料\n这是说明**怎样创作与改稿**的辅助部分，不应该压过前两部作品。\nAI工具链、版本反馈、个人十元构成，均需指向具体案例，不能只展示流程名词。",
+      "color": "1"
+    },
+    {
+      "id": "portfolio-method-level-2",
+      "type": "text",
+      "x": 21900,
+      "y": 8177,
+      "width": 650,
+      "height": 130,
+      "text": "### L2｜目前已有的实践\nComfyUI／H3镜头生成，人工审核与返工；Obsidian＋Linear＋Codex进行个人素材、任务及知识组织。\n十元：通过目标感受、映射发散、生克补和动态链研究角色/故事/视觉统一。",
+      "color": "1"
+    },
+    {
+      "id": "portfolio-method-level-3",
+      "type": "text",
+      "x": 21900,
+      "y": 8395,
+      "width": 650,
+      "height": 150,
+      "text": "### L3｜能证明的能力\n• **AI制作可操作性**：不仅生成图片，也有视频产出与调整。\n• **视觉控制意识**：约束角色/场景、检查风格与选择质量。\n• **迭代与记录**：将问题、返工原因和资产关联。\n• **构成思维**：尝试统一感受、事件、角色、色彩和镜头。",
+      "color": "1"
+    },
+    {
+      "id": "portfolio-method-level-4",
+      "type": "text",
+      "x": 21900,
+      "y": 8633,
+      "width": 650,
+      "height": 150,
+      "text": "### L4｜怎样呈现才有说服力\n取**1个真实成功案例＋1个真实失败修正案例**，并排展示输入、约束、错误、修改、成品。\n十元只用一张简短示意和对应的作品画面说明，大白话优先。\n目标岗位：**AIGC视觉设计、AI动画流程、创意编导**。",
+      "color": "1"
+    },
+    {
+      "id": "portfolio-method-level-5",
+      "type": "text",
+      "x": 21900,
+      "y": 8871,
+      "width": 650,
+      "height": 110,
+      "text": "### L5｜不该越界的说法\n个人流程≠成熟商业产线；十元方法≠普适科学结论；尚无跨公司验证。\n模型参数、通过率、团队协同和成本改善如缺真实记录，全部标**待证**。",
+      "color": "1"
+    },
+    {
+      "id": "portfolio-summary",
+      "type": "text",
+      "x": 20325,
+      "y": 10664,
+      "width": 510,
+      "height": 150,
+      "text": "### 作品中心使用原则\n**一张作品卡始终回答：** 我实际完成了什么？我具体做了哪部分？哪一个画面或过程能证明？有什么无法证明？\n新素材由674-303验收后再加入；岗位需求由674-302管理；这里展示**作品与能力**，不改造为另一份招聘数据库。",
+      "color": "3"
+    },
+    {
+      "id": "xn-hub-route-visual",
+      "type": "text",
+      "text": "**本方向的筛选门槛**\n确认目标游戏的实际画风、原画标准与是否支持AI；传统造型、Spine等硬技能必须实测。",
+      "x": 9555,
+      "y": 3784,
+      "width": 790,
+      "height": 165,
+      "color": "1"
+    },
+    {
+      "id": "xn-hub-route-creative",
+      "type": "text",
+      "text": "**跨领域迁移校准**\n由一份作品的角色/色彩/故事/镜头案例说明构成能力；不把个人十元研究当商业验证。",
+      "x": 1330,
+      "y": 8463,
+      "width": 790,
+      "height": 165,
+      "color": "3"
+    },
+    {
+      "id": "xn-hub-route-review",
+      "type": "text",
+      "text": "**岗位真实性门禁**\nAI未写明＝AI_UNCONFIRMED；职位旧链接不当在招证明。学校三方、合同主体、导师和作品权益分别核实。",
+      "x": 9288,
+      "y": 8148,
+      "width": 790,
+      "height": 165,
+      "color": "5"
+    },
+    {
+      "id": "compact-narrative-director-1",
+      "type": "text",
+      "text": "**导演方向｜画像说明＋重点公司**\n星动数娱是候选，公司状态待核。",
+      "width": 570,
+      "height": 102,
+      "color": "2",
+      "x": 1290,
+      "y": 1295
+    },
+    {
+      "id": "compact-narrative-comic-1",
+      "type": "text",
+      "text": "**漫剧方向｜岗位概览与分镜说明**\n两张说明卡不是两家不同公司。",
+      "width": 570,
+      "height": 102,
+      "color": "3",
+      "x": 4875,
+      "y": 1295
+    },
+    {
+      "id": "compact-narrative-comic-2",
+      "type": "text",
+      "text": "**公司线索组 2｜2 个并列候选**\n按真实JD比较，不表示公司之间存在上下级关系。",
+      "width": 570,
+      "height": 102,
+      "color": "3",
+      "x": 6105,
+      "y": 1295
+    },
+    {
+      "id": "compact-visual-gameart-1",
+      "type": "text",
+      "text": "**公司线索组 1｜3 个并列候选**\n按真实JD比较，不表示公司之间存在上下级关系。",
+      "width": 570,
+      "height": 102,
+      "color": "5",
+      "x": 8285,
+      "y": 980
+    },
+    {
+      "id": "compact-visual-gameart-2",
+      "type": "text",
+      "text": "**公司线索组 2｜2 个并列候选**\n按真实JD比较，不表示公司之间存在上下级关系。",
+      "width": 570,
+      "height": 102,
+      "color": "5",
+      "x": 9515,
+      "y": 980
+    },
+    {
+      "id": "compact-visual-gameart-3",
+      "type": "text",
+      "text": "**公司线索组 3｜2 个并列候选**\n按真实JD比较，不表示公司之间存在上下级关系。",
+      "width": 570,
+      "height": 102,
+      "color": "5",
+      "x": 10745,
+      "y": 980
+    },
+    {
+      "id": "compact-video-game-1",
+      "type": "text",
+      "text": "**公司线索组 1｜2 个并列候选**\n按真实JD比较，不表示公司之间存在上下级关系。",
+      "width": 570,
+      "height": 102,
+      "color": "6",
+      "x": 16510,
+      "y": 830
+    },
+    {
+      "id": "compact-video-game-2",
+      "type": "text",
+      "text": "**公司线索组 2｜2 个并列候选**\n按真实JD比较，不表示公司之间存在上下级关系。",
+      "width": 570,
+      "height": 102,
+      "color": "6",
+      "x": 17740,
+      "y": 830
+    },
+    {
+      "id": "compact-video-game-3",
+      "type": "text",
+      "text": "**公司线索组 3｜2 个并列候选**\n按真实JD比较，不表示公司之间存在上下级关系。",
+      "width": 570,
+      "height": 102,
+      "color": "6",
+      "x": 18970,
+      "y": 830
+    },
+    {
+      "id": "compact-video-product-1",
+      "type": "text",
+      "text": "**公司线索组 1｜2 个并列候选**\n按真实JD比较，不表示公司之间存在上下级关系。",
+      "width": 570,
+      "height": 102,
+      "color": "1",
+      "x": 20710,
+      "y": 830
+    },
+    {
+      "id": "compact-video-product-2",
+      "type": "text",
+      "text": "**公司线索组 2｜2 个并列候选**\n按真实JD比较，不表示公司之间存在上下级关系。",
+      "width": 570,
+      "height": 102,
+      "color": "1",
+      "x": 21940,
+      "y": 830
+    },
+    {
+      "id": "compact-video-product-3",
+      "type": "text",
+      "text": "**公司线索组 3｜2 个并列候选**\n按真实JD比较，不表示公司之间存在上下级关系。",
+      "width": 570,
+      "height": 102,
+      "color": "1",
+      "x": 23170,
+      "y": 830
+    },
+    {
+      "id": "compact-video-unknown-1",
+      "type": "text",
+      "text": "**AIGC制作｜方法与实习线索**\n来源和主体不明确时不当作在招公司。",
+      "width": 570,
+      "height": 102,
+      "color": "2",
+      "x": 17740,
+      "y": 3100
+    },
+    {
+      "id": "compact-creative-drama-1",
+      "type": "text",
+      "text": "**公司线索组 1｜2 个并列候选**\n按真实JD比较，不表示公司之间存在上下级关系。",
+      "width": 570,
+      "height": 102,
+      "color": "1",
+      "x": 1290,
+      "y": 5659
+    },
+    {
+      "id": "compact-creative-brand-1",
+      "type": "text",
+      "text": "**公司线索组 1｜2 个并列候选**\n按真实JD比较，不表示公司之间存在上下级关系。",
+      "width": 570,
+      "height": 102,
+      "color": "4",
+      "x": 5490,
+      "y": 7929
+    },
+    {
+      "id": "compact-review-adjacent-1",
+      "type": "text",
+      "text": "**传统内容岗位｜AI职责待核**\n岗位为并列观察候选。",
+      "width": 570,
+      "height": 102,
+      "color": "3",
+      "x": 8633,
+      "y": 5344
+    },
+    {
+      "id": "compact-review-adjacent-2",
+      "type": "text",
+      "text": "**传统内容岗位｜AI职责待核**\n岗位为并列观察候选。",
+      "width": 570,
+      "height": 102,
+      "color": "3",
+      "x": 9863,
+      "y": 5344
+    },
+    {
+      "id": "compact-review-governance-1",
+      "type": "text",
+      "text": "**岗位核验材料｜事实与来源**\n区分岗位信息与画像分析。",
+      "width": 570,
+      "height": 102,
+      "color": "6",
+      "x": 12833,
+      "y": 7614
+    },
+    {
+      "id": "compact-review-governance-2",
+      "type": "text",
+      "text": "**岗位核验材料｜评分与面试**\n属于方法资料，并非公司名单。",
+      "width": 570,
+      "height": 102,
+      "color": "6",
+      "x": 14063,
+      "y": 7614
+    }
+  ],
+  "edges": [
+    {
+      "id": "fit-001",
+      "fromNode": "hub-narrative-20261014",
+      "toNode": "v2-role-narrative-director",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "2",
+      "label": "方向"
+    },
+    {
+      "id": "fit-002",
+      "fromNode": "v2-role-narrative-director",
+      "toNode": "v2-proof-narrative-director",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "2",
+      "label": "能力证据"
+    },
+    {
+      "id": "fit-003",
+      "fromNode": "v2-proof-narrative-director",
+      "toNode": "v2-check-narrative-director",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "2",
+      "label": "NX/下一步"
+    },
+    {
+      "id": "fit-004",
+      "fromNode": "v2-role-narrative-director",
+      "toNode": "compact-narrative-director-1",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "2",
+      "label": "子组"
+    },
+    {
+      "id": "fit-005",
+      "fromNode": "compact-narrative-director-1",
+      "toNode": "a652fcb2a20e4c73",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "2",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-006",
+      "fromNode": "compact-narrative-director-1",
+      "toNode": "thunderbird-ai-director-2027",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "2",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-007",
+      "fromNode": "compact-narrative-director-1",
+      "toNode": "v3-star-digital",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "2",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-008",
+      "fromNode": "hub-narrative-20261014",
+      "toNode": "v2-role-narrative-comic",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "3",
+      "label": "方向"
+    },
+    {
+      "id": "fit-009",
+      "fromNode": "v2-role-narrative-comic",
+      "toNode": "v2-proof-narrative-comic",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "3",
+      "label": "能力证据"
+    },
+    {
+      "id": "fit-010",
+      "fromNode": "v2-proof-narrative-comic",
+      "toNode": "v2-check-narrative-comic",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "3",
+      "label": "NX/下一步"
+    },
+    {
+      "id": "fit-011",
+      "fromNode": "v2-role-narrative-comic",
+      "toNode": "compact-narrative-comic-1",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "3",
+      "label": "子组"
+    },
+    {
+      "id": "fit-012",
+      "fromNode": "compact-narrative-comic-1",
+      "toNode": "f612a91eb6594c1b",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "3",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-013",
+      "fromNode": "compact-narrative-comic-1",
+      "toNode": "fdded174c4ca4abe",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "3",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-014",
+      "fromNode": "v2-role-narrative-comic",
+      "toNode": "compact-narrative-comic-2",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "3",
+      "label": "子组"
+    },
+    {
+      "id": "fit-015",
+      "fromNode": "compact-narrative-comic-2",
+      "toNode": "mitang-boss-shortdrama-20261014",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "3",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-016",
+      "fromNode": "compact-narrative-comic-2",
+      "toNode": "boss-ai-premium-storyboard-watch",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "3",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-017",
+      "fromNode": "hub-narrative-20261014",
+      "toNode": "v2-role-narrative-writer",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "4",
+      "label": "方向"
+    },
+    {
+      "id": "fit-018",
+      "fromNode": "v2-role-narrative-writer",
+      "toNode": "v2-proof-narrative-writer",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "4",
+      "label": "能力证据"
+    },
+    {
+      "id": "fit-019",
+      "fromNode": "v2-proof-narrative-writer",
+      "toNode": "v2-check-narrative-writer",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "NX/下一步"
+    },
+    {
+      "id": "fit-020",
+      "fromNode": "v2-role-narrative-writer",
+      "toNode": "a7af251ff13046a4",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "4",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-021",
+      "fromNode": "hub-narrative-20261014",
+      "toNode": "v3-outcome-narrative",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "5",
+      "label": "复盘"
+    },
+    {
+      "id": "fit-022",
+      "fromNode": "hub-visual-20261014",
+      "toNode": "v2-role-visual-gameart",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "5",
+      "label": "方向"
+    },
+    {
+      "id": "fit-023",
+      "fromNode": "v2-role-visual-gameart",
+      "toNode": "v2-proof-visual-gameart",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "5",
+      "label": "能力证据"
+    },
+    {
+      "id": "fit-024",
+      "fromNode": "v2-proof-visual-gameart",
+      "toNode": "v2-check-visual-gameart",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "5",
+      "label": "NX/下一步"
+    },
+    {
+      "id": "fit-025",
+      "fromNode": "v2-role-visual-gameart",
+      "toNode": "compact-visual-gameart-1",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "5",
+      "label": "子组"
+    },
+    {
+      "id": "fit-026",
+      "fromNode": "compact-visual-gameart-1",
+      "toNode": "duoyi-game-art-2027",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "5",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-027",
+      "fromNode": "compact-visual-gameart-1",
+      "toNode": "v3-fangcun",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "5",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-028",
+      "fromNode": "compact-visual-gameart-1",
+      "toNode": "v3-kuaigou",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-029",
+      "fromNode": "v2-role-visual-gameart",
+      "toNode": "compact-visual-gameart-2",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "子组"
+    },
+    {
+      "id": "fit-030",
+      "fromNode": "compact-visual-gameart-2",
+      "toNode": "dreamsky-ai-game-art-intern-20261014",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-031",
+      "fromNode": "compact-visual-gameart-2",
+      "toNode": "v3-tengyu",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-032",
+      "fromNode": "v2-role-visual-gameart",
+      "toNode": "compact-visual-gameart-3",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "5",
+      "label": "子组"
+    },
+    {
+      "id": "fit-033",
+      "fromNode": "compact-visual-gameart-3",
+      "toNode": "c819b24119d9444b",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-034",
+      "fromNode": "compact-visual-gameart-3",
+      "toNode": "v3-zhining",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-035",
+      "fromNode": "hub-visual-20261014",
+      "toNode": "v2-role-visual-marketing",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "2",
+      "label": "方向"
+    },
+    {
+      "id": "fit-036",
+      "fromNode": "v2-role-visual-marketing",
+      "toNode": "v2-proof-visual-marketing",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "2",
+      "label": "能力证据"
+    },
+    {
+      "id": "fit-037",
+      "fromNode": "v2-proof-visual-marketing",
+      "toNode": "v2-check-visual-marketing",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "2",
+      "label": "NX/下一步"
+    },
+    {
+      "id": "fit-038",
+      "fromNode": "v2-role-visual-marketing",
+      "toNode": "huyavisual20261014",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "2",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-039",
+      "fromNode": "hub-visual-20261014",
+      "toNode": "v3-outcome-visual",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "6",
+      "label": "复盘"
+    },
+    {
+      "id": "fit-040",
+      "fromNode": "hub-visual-20261014",
+      "toNode": "xn-hub-route-visual",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "1",
+      "label": "复盘"
+    },
+    {
+      "id": "fit-041",
+      "fromNode": "hub-video-20261014",
+      "toNode": "v2-role-video-game",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "6",
+      "label": "方向"
+    },
+    {
+      "id": "fit-042",
+      "fromNode": "v2-role-video-game",
+      "toNode": "v2-proof-video-game",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "6",
+      "label": "能力证据"
+    },
+    {
+      "id": "fit-043",
+      "fromNode": "v2-proof-video-game",
+      "toNode": "v2-check-video-game",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "6",
+      "label": "NX/下一步"
+    },
+    {
+      "id": "fit-044",
+      "fromNode": "v2-role-video-game",
+      "toNode": "compact-video-game-1",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "6",
+      "label": "子组"
+    },
+    {
+      "id": "fit-045",
+      "fromNode": "compact-video-game-1",
+      "toNode": "a724c921-9377-video",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "6",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-046",
+      "fromNode": "compact-video-game-1",
+      "toNode": "tuyoo-ai-video-2027",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "6",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-047",
+      "fromNode": "v2-role-video-game",
+      "toNode": "compact-video-game-2",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "6",
+      "label": "子组"
+    },
+    {
+      "id": "fit-048",
+      "fromNode": "compact-video-game-2",
+      "toNode": "perfect-world-ai-video-2027",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "6",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-049",
+      "fromNode": "compact-video-game-2",
+      "toNode": "4399-game-video-2027",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "6",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-050",
+      "fromNode": "v2-role-video-game",
+      "toNode": "compact-video-game-3",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "6",
+      "label": "子组"
+    },
+    {
+      "id": "fit-051",
+      "fromNode": "compact-video-game-3",
+      "toNode": "centurygames-ai-video-sh-2027",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "6",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-052",
+      "fromNode": "compact-video-game-3",
+      "toNode": "moke-aigc-ad-video-2027",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "6",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-053",
+      "fromNode": "hub-video-20261014",
+      "toNode": "v2-role-video-product",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "1",
+      "label": "方向"
+    },
+    {
+      "id": "fit-054",
+      "fromNode": "v2-role-video-product",
+      "toNode": "v2-proof-video-product",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "1",
+      "label": "能力证据"
+    },
+    {
+      "id": "fit-055",
+      "fromNode": "v2-proof-video-product",
+      "toNode": "v2-check-video-product",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "1",
+      "label": "NX/下一步"
+    },
+    {
+      "id": "fit-056",
+      "fromNode": "v2-role-video-product",
+      "toNode": "compact-video-product-1",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "1",
+      "label": "子组"
+    },
+    {
+      "id": "fit-057",
+      "fromNode": "compact-video-product-1",
+      "toNode": "silkroad-aigc-2027",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-058",
+      "fromNode": "compact-video-product-1",
+      "toNode": "usmile-ai-content-2027",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-059",
+      "fromNode": "v2-role-video-product",
+      "toNode": "compact-video-product-2",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "子组"
+    },
+    {
+      "id": "fit-060",
+      "fromNode": "compact-video-product-2",
+      "toNode": "yuzhou-ai-visual-intern",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-061",
+      "fromNode": "compact-video-product-2",
+      "toNode": "momentculture-aigc-video-watch",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-062",
+      "fromNode": "v2-role-video-product",
+      "toNode": "compact-video-product-3",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "1",
+      "label": "子组"
+    },
+    {
+      "id": "fit-063",
+      "fromNode": "compact-video-product-3",
+      "toNode": "yuzhou-ai-visual-fulltime",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-064",
+      "fromNode": "compact-video-product-3",
+      "toNode": "wondershare-ai-video-designer-intern-2027",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-065",
+      "fromNode": "hub-video-20261014",
+      "toNode": "v2-role-video-unknown",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "2",
+      "label": "方向"
+    },
+    {
+      "id": "fit-066",
+      "fromNode": "v2-role-video-unknown",
+      "toNode": "v2-proof-video-unknown",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "2",
+      "label": "能力证据"
+    },
+    {
+      "id": "fit-067",
+      "fromNode": "v2-proof-video-unknown",
+      "toNode": "v2-check-video-unknown",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "2",
+      "label": "NX/下一步"
+    },
+    {
+      "id": "fit-068",
+      "fromNode": "v2-role-video-unknown",
+      "toNode": "compact-video-unknown-1",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "2",
+      "label": "子组"
+    },
+    {
+      "id": "fit-069",
+      "fromNode": "compact-video-unknown-1",
+      "toNode": "649d190a200d450c",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "2",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-070",
+      "fromNode": "compact-video-unknown-1",
+      "toNode": "lighthub-ai-video-watch",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "2",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-071",
+      "fromNode": "compact-video-unknown-1",
+      "toNode": "21ad5ef611e144b6",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "2",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-072",
+      "fromNode": "hub-video-20261014",
+      "toNode": "v3-outcome-video",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "3",
+      "label": "复盘"
+    },
+    {
+      "id": "fit-073",
+      "fromNode": "hub-creative-20261014",
+      "toNode": "v2-role-creative-drama",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "1",
+      "label": "方向"
+    },
+    {
+      "id": "fit-074",
+      "fromNode": "v2-role-creative-drama",
+      "toNode": "v2-proof-creative-drama",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "1",
+      "label": "能力证据"
+    },
+    {
+      "id": "fit-075",
+      "fromNode": "v2-proof-creative-drama",
+      "toNode": "v2-check-creative-drama",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "1",
+      "label": "NX/下一步"
+    },
+    {
+      "id": "fit-076",
+      "fromNode": "v2-role-creative-drama",
+      "toNode": "compact-creative-drama-1",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "子组"
+    },
+    {
+      "id": "fit-077",
+      "fromNode": "compact-creative-drama-1",
+      "toNode": "xiangrui-ai-manhua-design-20261014",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-078",
+      "fromNode": "compact-creative-drama-1",
+      "toNode": "quwan-ai-content-intern-20261014",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-079",
+      "fromNode": "hub-creative-20261014",
+      "toNode": "v2-role-creative-brand",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "4",
+      "label": "方向"
+    },
+    {
+      "id": "fit-080",
+      "fromNode": "v2-role-creative-brand",
+      "toNode": "v2-proof-creative-brand",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "4",
+      "label": "能力证据"
+    },
+    {
+      "id": "fit-081",
+      "fromNode": "v2-proof-creative-brand",
+      "toNode": "v2-check-creative-brand",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "NX/下一步"
+    },
+    {
+      "id": "fit-082",
+      "fromNode": "v2-role-creative-brand",
+      "toNode": "compact-creative-brand-1",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "4",
+      "label": "子组"
+    },
+    {
+      "id": "fit-083",
+      "fromNode": "compact-creative-brand-1",
+      "toNode": "bluefocus-ai-creator-2027",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "4",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-084",
+      "fromNode": "compact-creative-brand-1",
+      "toNode": "insta360-ai-visual-designer-2027",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "4",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-085",
+      "fromNode": "hub-creative-20261014",
+      "toNode": "v3-outcome-creative",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "2",
+      "label": "复盘"
+    },
+    {
+      "id": "fit-086",
+      "fromNode": "hub-creative-20261014",
+      "toNode": "xn-hub-route-creative",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "3",
+      "label": "复盘"
+    },
+    {
+      "id": "fit-087",
+      "fromNode": "hub-review-20261014",
+      "toNode": "v2-role-review-adjacent",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "3",
+      "label": "方向"
+    },
+    {
+      "id": "fit-088",
+      "fromNode": "v2-role-review-adjacent",
+      "toNode": "v2-proof-review-adjacent",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "3",
+      "label": "能力证据"
+    },
+    {
+      "id": "fit-089",
+      "fromNode": "v2-proof-review-adjacent",
+      "toNode": "v2-check-review-adjacent",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "3",
+      "label": "NX/下一步"
+    },
+    {
+      "id": "fit-090",
+      "fromNode": "v2-role-review-adjacent",
+      "toNode": "compact-review-adjacent-1",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "3",
+      "label": "子组"
+    },
+    {
+      "id": "fit-091",
+      "fromNode": "compact-review-adjacent-1",
+      "toNode": "bgi-newmedia-2027",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "3",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-092",
+      "fromNode": "compact-review-adjacent-1",
+      "toNode": "damenglongtu-ae-video-2027-shenzhen",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "3",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-093",
+      "fromNode": "v2-role-review-adjacent",
+      "toNode": "compact-review-adjacent-2",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "3",
+      "label": "子组"
+    },
+    {
+      "id": "fit-094",
+      "fromNode": "compact-review-adjacent-2",
+      "toNode": "deepblue-storyboard-2027",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "3",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-095",
+      "fromNode": "compact-review-adjacent-2",
+      "toNode": "kuro-storyboard-2027",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "3",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-096",
+      "fromNode": "hub-review-20261014",
+      "toNode": "v2-role-review-governance",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "6",
+      "label": "方向"
+    },
+    {
+      "id": "fit-097",
+      "fromNode": "v2-role-review-governance",
+      "toNode": "v2-proof-review-governance",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "6",
+      "label": "能力证据"
+    },
+    {
+      "id": "fit-098",
+      "fromNode": "v2-proof-review-governance",
+      "toNode": "v2-check-review-governance",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "6",
+      "label": "NX/下一步"
+    },
+    {
+      "id": "fit-099",
+      "fromNode": "v2-role-review-governance",
+      "toNode": "compact-review-governance-1",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "6",
+      "label": "子组"
+    },
+    {
+      "id": "fit-100",
+      "fromNode": "compact-review-governance-1",
+      "toNode": "b04a8a1dc8594cfe",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "6",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-101",
+      "fromNode": "compact-review-governance-1",
+      "toNode": "2858461238e141d0",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "6",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-102",
+      "fromNode": "v2-role-review-governance",
+      "toNode": "compact-review-governance-2",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "6",
+      "label": "子组"
+    },
+    {
+      "id": "fit-103",
+      "fromNode": "compact-review-governance-2",
+      "toNode": "c819b24119d9444d",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "6",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-104",
+      "fromNode": "compact-review-governance-2",
+      "toNode": "d2c171e446484ac5",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "6",
+      "label": "岗位/JD"
+    },
+    {
+      "id": "fit-105",
+      "fromNode": "hub-review-20261014",
+      "toNode": "v3-outcome-review",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "4",
+      "label": "复盘"
+    },
+    {
+      "id": "fit-106",
+      "fromNode": "hub-review-20261014",
+      "toNode": "xn-hub-route-review",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "5",
+      "label": "复盘"
+    },
+    {
+      "id": "fit-107",
+      "fromNode": "portfolio-hub",
+      "toNode": "portfolio-colhead-fz",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "4",
+      "label": "方向"
+    },
+    {
+      "id": "fit-108",
+      "fromNode": "portfolio-colhead-fz",
+      "toNode": "portfolio-fz-level-1",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "L1"
+    },
+    {
+      "id": "fit-109",
+      "fromNode": "portfolio-fz-level-1",
+      "toNode": "portfolio-fz-level-2",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "L2"
+    },
+    {
+      "id": "fit-110",
+      "fromNode": "portfolio-fz-level-2",
+      "toNode": "portfolio-fz-level-3",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "L3"
+    },
+    {
+      "id": "fit-111",
+      "fromNode": "portfolio-fz-level-3",
+      "toNode": "portfolio-fz-level-4",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "L4"
+    },
+    {
+      "id": "fit-112",
+      "fromNode": "portfolio-fz-level-4",
+      "toNode": "portfolio-fz-level-5",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "L5"
+    },
+    {
+      "id": "fit-113",
+      "fromNode": "portfolio-hub",
+      "toNode": "portfolio-colhead-ll",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "5",
+      "label": "方向"
+    },
+    {
+      "id": "fit-114",
+      "fromNode": "portfolio-colhead-ll",
+      "toNode": "portfolio-ll-level-1",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "L1"
+    },
+    {
+      "id": "fit-115",
+      "fromNode": "portfolio-ll-level-1",
+      "toNode": "portfolio-ll-level-2",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "L2"
+    },
+    {
+      "id": "fit-116",
+      "fromNode": "portfolio-ll-level-2",
+      "toNode": "portfolio-ll-level-3",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "L3"
+    },
+    {
+      "id": "fit-117",
+      "fromNode": "portfolio-ll-level-3",
+      "toNode": "portfolio-ll-level-4",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "L4"
+    },
+    {
+      "id": "fit-118",
+      "fromNode": "portfolio-ll-level-4",
+      "toNode": "portfolio-ll-level-5",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "color": "5",
+      "label": "L5"
+    },
+    {
+      "id": "fit-119",
+      "fromNode": "portfolio-hub",
+      "toNode": "portfolio-colhead-independent",
+      "fromSide": "left",
+      "toSide": "right",
+      "color": "6",
+      "label": "方向"
+    },
+    {
+      "id": "fit-120",
+      "fromNode": "portfolio-colhead-independent",
+      "toNode": "portfolio-independent-level-1",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "6",
+      "label": "L1"
+    },
+    {
+      "id": "fit-121",
+      "fromNode": "portfolio-independent-level-1",
+      "toNode": "portfolio-independent-level-2",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "6",
+      "label": "L2"
+    },
+    {
+      "id": "fit-122",
+      "fromNode": "portfolio-independent-level-2",
+      "toNode": "portfolio-independent-level-3",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "6",
+      "label": "L3"
+    },
+    {
+      "id": "fit-123",
+      "fromNode": "portfolio-independent-level-3",
+      "toNode": "portfolio-independent-level-4",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "6",
+      "label": "L4"
+    },
+    {
+      "id": "fit-124",
+      "fromNode": "portfolio-independent-level-4",
+      "toNode": "portfolio-independent-level-5",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "6",
+      "label": "L5"
+    },
+    {
+      "id": "fit-125",
+      "fromNode": "portfolio-hub",
+      "toNode": "portfolio-colhead-method",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "1",
+      "label": "方向"
+    },
+    {
+      "id": "fit-126",
+      "fromNode": "portfolio-colhead-method",
+      "toNode": "portfolio-method-level-1",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "1",
+      "label": "L1"
+    },
+    {
+      "id": "fit-127",
+      "fromNode": "portfolio-method-level-1",
+      "toNode": "portfolio-method-level-2",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "1",
+      "label": "L2"
+    },
+    {
+      "id": "fit-128",
+      "fromNode": "portfolio-method-level-2",
+      "toNode": "portfolio-method-level-3",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "1",
+      "label": "L3"
+    },
+    {
+      "id": "fit-129",
+      "fromNode": "portfolio-method-level-3",
+      "toNode": "portfolio-method-level-4",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "1",
+      "label": "L4"
+    },
+    {
+      "id": "fit-130",
+      "fromNode": "portfolio-method-level-4",
+      "toNode": "portfolio-method-level-5",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "1",
+      "label": "L5"
+    }
+  ]
+}
