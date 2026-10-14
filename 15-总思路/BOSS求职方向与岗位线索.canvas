@@ -13,9 +13,9 @@
     {
       "id": "zone-video-20261014",
       "type": "group",
-      "x": 22190,
+      "x": 21505,
       "y": -3424,
-      "width": 12405,
+      "width": 13090,
       "height": 6553,
       "color": "5",
       "label": "求职中心｜03｜多中心独立径向分层"
@@ -35,7 +35,7 @@
       "type": "group",
       "x": 7990,
       "y": 10977,
-      "width": 12420,
+      "width": 12905,
       "height": 7352,
       "color": "2",
       "label": "求职中心｜05｜多中心独立径向分层"
@@ -124,9 +124,9 @@
       "id": "v2-category-video-unknown",
       "type": "group",
       "label": "3.3｜泛视频岗位，招聘主体待核｜紧凑径向分支",
-      "x": 22490,
+      "x": 21805,
       "y": 485,
-      "width": 5620,
+      "width": 6305,
       "height": 2264,
       "color": "2"
     },
@@ -166,7 +166,7 @@
       "label": "5.2｜JD证据、职位状态和决策｜紧凑径向分支",
       "x": 14490,
       "y": 14885,
-      "width": 5620,
+      "width": 6105,
       "height": 3064,
       "color": "6"
     },
@@ -974,7 +974,7 @@
       "id": "v2-check-video-unknown",
       "type": "text",
       "text": "### L5｜怎样验证／发现短板？\n先确认公司主体、具体JD URL、薪资、投递入口、发布日期。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
-      "x": 22785,
+      "x": 21935,
       "y": 995,
       "width": 2350,
       "height": 300,
@@ -1094,7 +1094,7 @@
       "id": "v2-check-review-governance",
       "type": "text",
       "text": "### L5｜怎样验证／发现短板？\nJD开放→企业作品→导师→毕业生资格→试稿/面试反馈；状态回写674-302。\n**扩展**：从具体JD卡继续加“岗位原文→作品证据→差距→试稿/反馈”。",
-      "x": 17465,
+      "x": 18115,
       "y": 15395,
       "width": 2350,
       "height": 300,
@@ -2192,9 +2192,9 @@
     {
       "id": "dense-070",
       "fromNode": "v2-proof-video-unknown",
-      "fromSide": "bottom",
+      "fromSide": "left",
       "toNode": "v2-check-video-unknown",
-      "toSide": "top",
+      "toSide": "right",
       "color": "2",
       "label": "NX/下一步"
     },
@@ -2426,9 +2426,9 @@
     {
       "id": "dense-102",
       "fromNode": "v2-proof-review-governance",
-      "fromSide": "bottom",
+      "fromSide": "right",
       "toNode": "v2-check-review-governance",
-      "toSide": "top",
+      "toSide": "left",
       "color": "6",
       "label": "NX/下一步"
     },
