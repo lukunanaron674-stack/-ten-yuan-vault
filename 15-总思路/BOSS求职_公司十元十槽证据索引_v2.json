@@ -77,7 +77,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "ZN?＋Z"
+      "legacy_workstyle_tag": "ZN?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "ZN",
+        "secondary": [
+          "XN",
+          "Z"
+        ],
+        "hypothesis_reason": "多镜头叙事设计与风格统筹可能激活共同创作意义；成片品控带来流程秩序感。",
+        "alternative_or_disproof": "如果编导只能执行既定分镜要求，NX/XN可能超过ZN。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "v3-star-digital",
+        "basis_excerpt": "分镜、视听节奏、统一风格与成片品控；带教未证",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E02",
@@ -115,7 +131,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z＋ZN?"
+      "legacy_workstyle_tag": "Z＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "X并Z",
+          "ZN"
+        ],
+        "hypothesis_reason": "剧本转为AI图像/视频的持续工序，可能激活流程连贯与公共可见表达的感受。",
+        "alternative_or_disproof": "若项目强调自由实验而非规范交付，ZN可上升。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "a652fcb2a20e4c73",
+        "basis_excerpt": "AI生图视频与剧本画面化；团队未证",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E03",
@@ -153,7 +185,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z＋ZN?"
+      "legacy_workstyle_tag": "Z＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "ZN",
+          "X并Z"
+        ],
+        "hypothesis_reason": "脚本到成片的连续生产环节突出执行顺序与呈现结果。",
+        "alternative_or_disproof": "具体团队是否享有自主创作尚未明确。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "a652fcb2a20e4c73",
+        "basis_excerpt": "短剧脚本到成片；签约主体待核",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E04",
@@ -190,7 +238,20 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "未定"
+      "legacy_workstyle_tag": "未定",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": null,
+        "secondary": [],
+        "hypothesis_reason": "只有作品报道，没有足以建立求职体验语境的岗位事实。",
+        "alternative_or_disproof": "须先确认真实雇主及现行岗位。",
+        "evidence_grade": "INSUFFICIENT",
+        "basis_source_id": "a652fcb2a20e4c73",
+        "basis_excerpt": "仅有作品报道；企业文化无法判断",
+        "validated_by_human": false,
+        "status": "INSUFFICIENT_SOURCE"
+      }
     },
     {
       "id": "E05",
@@ -230,7 +291,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z＋ZN?"
+      "legacy_workstyle_tag": "Z＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "ZN",
+          "X并Z"
+        ],
+        "hypothesis_reason": "短剧制作到发行的工序分工可能带来有序推进与内容共同成形的感受。",
+        "alternative_or_disproof": "具体创作权限若低，NX可能取代ZN。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "mitang-boss-shortdrama-20261014",
+        "basis_excerpt": "短剧制作发行与工序分工；团队未证",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E06",
@@ -270,7 +347,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "ZN?＋Z"
+      "legacy_workstyle_tag": "ZN?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "ZN",
+        "secondary": [
+          "X并Z",
+          "XN"
+        ],
+        "hypothesis_reason": "原创IP与制作发行组合，可能激活共同赋义与形象对外成立的感受。",
+        "alternative_or_disproof": "若以商业批量代工为主，XN/NX更可能成为主导。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "fdded174c4ca4abe",
+        "basis_excerpt": "原创IP形象、内容制作和发行；人际氛围未证",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E07",
@@ -308,7 +401,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z"
+      "legacy_workstyle_tag": "Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "NX",
+        "secondary": [
+          "XN",
+          "ZN"
+        ],
+        "hypothesis_reason": "按导演要求进行分镜迭代，可能首先激活承接已有方向、按流程完成的体验。",
+        "alternative_or_disproof": "若允许主导镜头方案则ZX/ZN可替代NX。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "boss-ai-premium-storyboard-watch",
+        "basis_excerpt": "按导演要求进行AI分镜迭代；BOSS详情受限制",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E08",
@@ -346,7 +455,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z（产量）"
+      "legacy_workstyle_tag": "Z（产量）",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "XZ",
+          "NX"
+        ],
+        "hypothesis_reason": "较高产量要求可能使人关注工序组织；如期限不可缓冲才可能出现临界紧张感。",
+        "alternative_or_disproof": "仅有产量字眼并不能证明XZ真实发生。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "f612a91eb6594c1b",
+        "basis_excerpt": "招聘快照有较高月产要求，工时导师未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E09",
@@ -386,7 +511,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "ZN?＋Z"
+      "legacy_workstyle_tag": "ZN?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "X并Z",
+          "ZN"
+        ],
+        "hypothesis_reason": "短剧、数字人与工作流并置，可能突出技术制作秩序与视觉公开形象。",
+        "alternative_or_disproof": "没有可见团队创作实例，ZN属弱候选。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "b04a8a1dc8594cfe",
+        "basis_excerpt": "AI短剧、数字人与工作流；团队未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E10",
@@ -424,7 +565,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z（产量）"
+      "legacy_workstyle_tag": "Z（产量）",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "XZ",
+          "Z"
+        ],
+        "hypothesis_reason": "绩效和产能奖可能使求职者注意产出规则及时间限制。",
+        "alternative_or_disproof": "具体排期若宽松则XZ未必激活；KPI不是Z感受定义。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "b04a8a1dc8594cfe",
+        "basis_excerpt": "职位薪酬含绩效和产能奖；实际压力未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E11",
@@ -464,7 +621,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "ZN?＋Z"
+      "legacy_workstyle_tag": "ZN?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "ZN",
+        "secondary": [
+          "XN",
+          "N"
+        ],
+        "hypothesis_reason": "编剧导演与制作的多工种共同成片，可能触发共创；实习培训或使人期待被承接。",
+        "alternative_or_disproof": "培训线索不能证明N真实体验，流程主导时XN可第一。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "b04a8a1dc8594cfe",
+        "basis_excerpt": "编剧、导演、制作多工种及实习培训线索",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E12",
@@ -501,7 +674,20 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "未定"
+      "legacy_workstyle_tag": "未定",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": null,
+        "secondary": [],
+        "hypothesis_reason": "单位主体和薪资信息不一致，不具备稳定的招聘语境。",
+        "alternative_or_disproof": "核实合同主体、团队及JD后再预测。",
+        "evidence_grade": "INSUFFICIENT",
+        "basis_source_id": "b04a8a1dc8594cfe",
+        "basis_excerpt": "只有招聘名和薪酬冲突材料，主体待核",
+        "validated_by_human": false,
+        "status": "INSUFFICIENT_SOURCE"
+      }
     },
     {
       "id": "E13",
@@ -538,7 +724,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z＋ZN?"
+      "legacy_workstyle_tag": "Z＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "NX",
+        "secondary": [
+          "XN",
+          "ZN"
+        ],
+        "hypothesis_reason": "设计助理围绕既定漫剧风格、场景、剪辑协作，可能以继承方向与细化工序为先。",
+        "alternative_or_disproof": "若助理有造型决定权，ZN/ZX可上升。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "b04a8a1dc8594cfe",
+        "basis_excerpt": "AI漫剧助理涉及风格、场景和剪辑；培养未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E14",
@@ -578,7 +780,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "NZ?＋ZN?"
+      "legacy_workstyle_tag": "NZ?＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "N",
+        "secondary": [
+          "NZ",
+          "XN"
+        ],
+        "hypothesis_reason": "官网描述的导师与员工反馈渠道可能让求职者期待被接纳和持续帮助。",
+        "alternative_or_disproof": "实习岗位可能不享该机制；若只有制度无实际响应则N/NZ预测失败。",
+        "evidence_grade": "MEDIUM_FOR_TEXT",
+        "basis_source_id": "dreamsky-ai-game-art-intern-20261014",
+        "basis_excerpt": "官网写导师带领、Open Day反馈；实习组适用待核",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E15",
@@ -616,7 +834,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "NZ?＋Z"
+      "legacy_workstyle_tag": "NZ?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "N",
+        "secondary": [
+          "NZ",
+          "XN"
+        ],
+        "hypothesis_reason": "公司自述师徒互助，阅读时可能唤起受照顾与可返回关系的期待。",
+        "alternative_or_disproof": "自选员工故事不足以证明部门体验，制度严格也可能让XN更显著。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "duoyi-game-art-2027",
+        "basis_excerpt": "官网自有员工评价谈师徒互助；样本有筛选偏差",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E16",
@@ -656,7 +890,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z＋ZN?"
+      "legacy_workstyle_tag": "Z＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "ZN",
+          "X并Z"
+        ],
+        "hypothesis_reason": "成套角色和多风格美术生产可能让人看到风格组织、共同创作与可见角色形象。",
+        "alternative_or_disproof": "若高度模板化且不允许原创，ZN预测应下调。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "c819b24119d9444b",
+        "basis_excerpt": "角色成套、多风格、AI草图；美术团队氛围未证",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E17",
@@ -694,7 +944,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z＋ZN?"
+      "legacy_workstyle_tag": "Z＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "X",
+        "secondary": [
+          "Z",
+          "XN"
+        ],
+        "hypothesis_reason": "美宣KV/手绘展示倾向于抓住注意与强化可见表现。",
+        "alternative_or_disproof": "纯视觉吸引的判断不能推到公司职场感受。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "f612a91eb6594c1b",
+        "basis_excerpt": "美宣KV与手绘交付；无可靠NZ材料",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E18",
@@ -732,7 +998,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "ZN?＋Z"
+      "legacy_workstyle_tag": "ZN?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "ZN",
+        "secondary": [
+          "X",
+          "X并Z"
+        ],
+        "hypothesis_reason": "角色/场景与氛围探索可能在阅读时引发原创构成和醒目画面的期待。",
+        "alternative_or_disproof": "旧岗位资料待核，真实岗位可能只要求现有风格执行。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "v3-fangcun",
+        "basis_excerpt": "旧搜索提角色场景氛围及AI辅绘；现JD待核",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E19",
@@ -772,7 +1054,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "ZN?＋Z；NZ未证"
+      "legacy_workstyle_tag": "ZN?＋Z；NZ未证",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "NX",
+        "secondary": [
+          "XN",
+          "ZN"
+        ],
+        "hypothesis_reason": "服务型概念美术容易让求职者想象承接项目方方向、按规范持续交付。",
+        "alternative_or_disproof": "若团队赋予原画师设计主导权，ZN或ZX可抬升。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "v3-tengyu",
+        "basis_excerpt": "游戏研发美术服务；公司文化宣传不能证明部门NZ",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E20",
@@ -810,7 +1108,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z＋ZN?"
+      "legacy_workstyle_tag": "Z＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "ZN",
+          "X并Z"
+        ],
+        "hypothesis_reason": "模拟经营物件/角色与AI辅助工作流，更容易让人注意资产一致性和持续组织。",
+        "alternative_or_disproof": "缺实际试稿，不能仅以品类判断个人体验。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "v3-zhining",
+        "basis_excerpt": "模拟经营角色物件与AI辅助；NZ未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E21",
@@ -848,7 +1162,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z＋ZN?"
+      "legacy_workstyle_tag": "Z＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "NX",
+          "ZN"
+        ],
+        "hypothesis_reason": "原画、切图、Spine/ComfyUI衔接强调资产生产链和既定规格。",
+        "alternative_or_disproof": "若允许独立设定角色，ZN可成为主候选。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "v3-kuaigou",
+        "basis_excerpt": "原画、Spine/切图与ComfyUI；团队体验未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E22",
@@ -889,7 +1219,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "ZN?＋Z"
+      "legacy_workstyle_tag": "ZN?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "ZN",
+        "secondary": [
+          "XN",
+          "X"
+        ],
+        "hypothesis_reason": "剧情分镜与动作美术协作可能触发共同叙事、时间组织与镜头鲜明感。",
+        "alternative_or_disproof": "实际职务若只执行既定分镜，则NX更接近。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "kuro-storyboard-2027",
+        "basis_excerpt": "游戏剧情分镜与美术动作协作；员工NZ未证",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E23",
@@ -929,7 +1275,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "NZ?＋Z"
+      "legacy_workstyle_tag": "NZ?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "N",
+        "secondary": [
+          "XN",
+          "NZ"
+        ],
+        "hypothesis_reason": "校招培训和1对1导师形成被接纳期待，视频交付同时凸显流程。",
+        "alternative_or_disproof": "导师是否陪伴新人并支持返工仍未知；广告交付可能让XN为首。",
+        "evidence_grade": "MEDIUM_FOR_TEXT",
+        "basis_source_id": "damenglongtu-ae-video-2027-shenzhen",
+        "basis_excerpt": "校招简章有新人培训、导师1V1；视频交付目标明确",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E24",
@@ -969,7 +1331,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "ZN?＋Z"
+      "legacy_workstyle_tag": "ZN?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "ZN",
+        "secondary": [
+          "XN",
+          "NX"
+        ],
+        "hypothesis_reason": "剧情/CG分镜与动作美术协同会让人想到共同完成叙事与镜头工序。",
+        "alternative_or_disproof": "若创意主权不在岗位，NX可能成为主候选。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "deepblue-storyboard-2027",
+        "basis_excerpt": "剧情/CG分镜与动作美术协同；团队未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E25",
@@ -1010,7 +1388,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "NZ?＋Z"
+      "legacy_workstyle_tag": "NZ?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "N",
+        "secondary": [
+          "XN",
+          "NZ"
+        ],
+        "hypothesis_reason": "招聘材料有资深美术1对1带教，同时岗位依投放反馈交付。",
+        "alternative_or_disproof": "带教材料未说明新人实际反复获得支持；可能以XN产出为主。",
+        "evidence_grade": "MEDIUM_FOR_TEXT",
+        "basis_source_id": "a724c921-9377-video",
+        "basis_excerpt": "招聘介绍资深美术1对1带教；广告投放目标",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E26",
@@ -1050,7 +1444,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "NZ?＋Z"
+      "legacy_workstyle_tag": "NZ?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "N",
+        "secondary": [
+          "XN",
+          "Z"
+        ],
+        "hypothesis_reason": "导师带教与绩效项目奖励并存，可能同时引发支持期待和规范化目标感。",
+        "alternative_or_disproof": "同岗位组实际待遇与导师安排须确认；Z不是奖金的自动感受。",
+        "evidence_grade": "MEDIUM_FOR_TEXT",
+        "basis_source_id": "4399-game-video-2027",
+        "basis_excerpt": "校招简章有导师带教、绩效/全勤和项目奖金",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E27",
@@ -1088,7 +1498,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z（投放）"
+      "legacy_workstyle_tag": "Z（投放）",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "X",
+          "XZ"
+        ],
+        "hypothesis_reason": "广告多版本生成与投放反馈突出循环调整，可能唤起持续流程和视觉识别感。",
+        "alternative_or_disproof": "如数据期限不构成风险，XZ应取消。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "c819b24119d9444b",
+        "basis_excerpt": "AIGC广告多版本素材与投放数据反馈",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E28",
@@ -1125,7 +1551,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z＋ZN?"
+      "legacy_workstyle_tag": "Z＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "X并Z",
+          "ZN"
+        ],
+        "hypothesis_reason": "素材管线/AE合成强调流程持续运行和成片的外部可视表达。",
+        "alternative_or_disproof": "在招状态有冲突，整条预测暂只能弱候选。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "perfect-world-ai-video-2027",
+        "basis_excerpt": "游戏素材管线、AE与合成；JD开放状态冲突",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E29",
@@ -1165,7 +1607,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z（投放）"
+      "legacy_workstyle_tag": "Z（投放）",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "X",
+          "XZ"
+        ],
+        "hypothesis_reason": "买量素材持续迭代突出步骤和争取注意；若投放目标紧迫则可能激活XZ。",
+        "alternative_or_disproof": "NZ体验完全无依据；压力方向也缺真实工时证据。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "f612a91eb6594c1b",
+        "basis_excerpt": "游戏买量广告创意与素材迭代；NZ未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E30",
@@ -1203,7 +1661,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z（投放）"
+      "legacy_workstyle_tag": "Z（投放）",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "X并Z",
+          "X"
+        ],
+        "hypothesis_reason": "国际广告渠道的多版本转化复盘突出外部传播界面与流程。",
+        "alternative_or_disproof": "渠道指标不是Z感受的充分条件。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "centurygames-ai-video-sh-2027",
+        "basis_excerpt": "国际游戏广告、渠道数据与转化复盘；上海对照",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E31",
@@ -1243,7 +1717,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z（投放）"
+      "legacy_workstyle_tag": "Z（投放）",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "X",
+          "NX"
+        ],
+        "hypothesis_reason": "依据投放反馈反复调整广告素材，可能更接近持续优化、清楚识别与执行已有方向。",
+        "alternative_or_disproof": "没有原创自主权事实时不提升ZX。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "tuyoo-ai-video-2027",
+        "basis_excerpt": "游戏广告依投放反馈调整；带教待核",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E32",
@@ -1281,7 +1771,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z（品牌）"
+      "legacy_workstyle_tag": "Z（品牌）",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "X并Z",
+          "X"
+        ],
+        "hypothesis_reason": "科技品牌新媒体矩阵与规范形象，可能激活组织化、可识别对外界面与清楚传达的感受。",
+        "alternative_or_disproof": "品牌标准不能单判X并Z，仍待作品上下文。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "bgi-newmedia-2027",
+        "basis_excerpt": "新媒体矩阵与科技品牌传播规范；NZ未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E33",
@@ -1319,7 +1825,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "ZN?＋Z"
+      "legacy_workstyle_tag": "ZN?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "ZN",
+        "secondary": [
+          "X",
+          "X并Z"
+        ],
+        "hypothesis_reason": "视觉概念、3D和影像跨专业配合可能产生共创与醒目的品牌表现期待。",
+        "alternative_or_disproof": "跨部门工作不保证愉悦；N/NZ还缺人际支持材料。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "insta360-ai-visual-designer-2027",
+        "basis_excerpt": "概念与3D/视频/视觉跨部门协作；NZ未证",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E34",
@@ -1360,7 +1882,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z＋ZN?"
+      "legacy_workstyle_tag": "Z＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "X并Z",
+        "secondary": [
+          "ZN",
+          "XN"
+        ],
+        "hypothesis_reason": "AI品牌广告把创意组织为外界可识别的品牌呈现，可能突出公共表现界面。",
+        "alternative_or_disproof": "是否由岗位主导创意未知，不能把高管交流当导师NZ。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "bluefocus-ai-creator-2027",
+        "basis_excerpt": "品牌广告短片创意与交付；高管交流不等于导师制",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E35",
@@ -1400,7 +1938,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z＋ZN?"
+      "legacy_workstyle_tag": "Z＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "ZN",
+        "secondary": [
+          "X并Z",
+          "XN"
+        ],
+        "hypothesis_reason": "策划、导演、动效共同生成视觉项目，可能让人期待创作整合与表达落地。",
+        "alternative_or_disproof": "协作是机制线索，不等于人一定感到ZN。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "silkroad-aigc-2027",
+        "basis_excerpt": "策划、导演、动效协作与视觉生成；文化未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E36",
@@ -1437,7 +1991,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z＋ZN?"
+      "legacy_workstyle_tag": "Z＋ZN?",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "X",
+        "secondary": [
+          "Z",
+          "X并Z"
+        ],
+        "hypothesis_reason": "赛事KV/运营视觉强调醒目识别和舞台化显现，可能更有X与Z的形式诱发。",
+        "alternative_or_disproof": "只能判断视觉作品可能产生的感受，不能推到办公室氛围。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "huyavisual20261014",
+        "basis_excerpt": "赛事KV和运营视觉；实习培养未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E37",
@@ -1474,7 +2044,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z（产品）"
+      "legacy_workstyle_tag": "Z（产品）",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "X",
+          "X并Z"
+        ],
+        "hypothesis_reason": "教程功能视频与AE包装要求按步骤清楚表达产品，让人注意流程与可辨识度。",
+        "alternative_or_disproof": "若任务有高自由视觉发散，可再考虑ZN。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "yuzhou-ai-visual-intern",
+        "basis_excerpt": "AI Agent视频教程和AE包装；NZ未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E38",
@@ -1512,7 +2098,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "NZ?＋Z"
+      "legacy_workstyle_tag": "NZ?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "N",
+        "secondary": [
+          "NZ",
+          "XN"
+        ],
+        "hypothesis_reason": "校招双导师和集训安排使求职者可能期待支持、回返与稳定组织。",
+        "alternative_or_disproof": "需实证同一部门的日常求助与导师时间，未证不能称真实NZ。",
+        "evidence_grade": "MEDIUM_FOR_TEXT",
+        "basis_source_id": "wondershare-ai-video-designer-intern-2027",
+        "basis_excerpt": "2027校招简章有双导师制、集训营；部门落实待证",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E39",
@@ -1553,7 +2155,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "ZN?＋Z"
+      "legacy_workstyle_tag": "ZN?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "ZN",
+        "secondary": [
+          "X并Z",
+          "XN"
+        ],
+        "hypothesis_reason": "原创MCN与商业品牌内容并置，会让人期待多样创意与公共传播。",
+        "alternative_or_disproof": "商业执行比重未知，可能改判XN/NX。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "momentculture-aigc-video-watch",
+        "basis_excerpt": "原创MCN与品牌广告并行；团队感受未知",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E40",
@@ -1591,7 +2209,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "Z（营销）"
+      "legacy_workstyle_tag": "Z（营销）",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "XN",
+        "secondary": [
+          "X并Z",
+          "X"
+        ],
+        "hypothesis_reason": "营销短视频SOP、复刻与品牌呈现突出组织化传播与注意捕捉。",
+        "alternative_or_disproof": "流程明显不等于真人有XN感受强度。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "usmile-ai-content-2027",
+        "basis_excerpt": "营销短视频拆解与SOP，协作方式未证",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E41",
@@ -1631,7 +2265,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "NZ?＋Z"
+      "legacy_workstyle_tag": "NZ?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "N",
+        "secondary": [
+          "XN",
+          "NZ"
+        ],
+        "hypothesis_reason": "招聘页承诺1对1带教，海外广告多版本迭代体现目标规范。",
+        "alternative_or_disproof": "带教是否兑现及实际返工支持均未知。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "moke-aigc-ad-video-2027",
+        "basis_excerpt": "招聘页说1对1带教；海外广告多版本调整",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E42",
@@ -1671,7 +2321,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "ZN?＋Z"
+      "legacy_workstyle_tag": "ZN?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "ZN",
+        "secondary": [
+          "X并Z",
+          "XN"
+        ],
+        "hypothesis_reason": "AIGC短剧、广告和内容形态组合，可能诱发创作与可公开显现的期待。",
+        "alternative_or_disproof": "工资地址版本冲突，招聘语境不稳定，信度很低。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "lighthub-ai-video-watch",
+        "basis_excerpt": "AIGC短剧/广告制作，工资和地址版本不一致",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E43",
@@ -1711,7 +2377,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "ZN?＋Z"
+      "legacy_workstyle_tag": "ZN?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "ZN",
+        "secondary": [
+          "N",
+          "X并Z"
+        ],
+        "hypothesis_reason": "互动短剧和平台共创可能激发共同故事建设与连接感。",
+        "alternative_or_disproof": "‘共创’岗位词不等于N式实际承接，验证要问真实项目互动。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "quwan-ai-content-intern-20261014",
+        "basis_excerpt": "短剧、互动内容与平台共创；NZ未证",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     },
     {
       "id": "E44",
@@ -1751,7 +2433,23 @@
       "secondary": [],
       "relationship_hypotheses": [],
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
-      "legacy_workstyle_tag": "NZ?＋Z"
+      "legacy_workstyle_tag": "NZ?＋Z",
+      "ai_prediction": {
+        "subject": "求职者阅读已收集的岗位/企业文本产生的可能感受（非真实员工或公司本体）",
+        "context": "以当前Vault收录材料为刺激；阅读者和阅读时点待指定",
+        "primary": "N",
+        "secondary": [
+          "XN",
+          "ZN"
+        ],
+        "hypothesis_reason": "招聘页称资深设计师指导，同时单集视觉有规范，可能唤起被支持与有序制作感。",
+        "alternative_or_disproof": "指导存在与否、师生关系真实性须和团队核实。",
+        "evidence_grade": "LOW",
+        "basis_source_id": "xiangrui-ai-manhua-design-20261014",
+        "basis_excerpt": "JD称资深设计师指导，单集视觉交付有规范",
+        "validated_by_human": false,
+        "status": "AI_HYPOTHESIS"
+      }
     }
   ],
   "tenyuan_agent_binding": {
