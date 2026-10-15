@@ -1753,5 +1753,49 @@
       "human_verification": "未实测／不应依据职位JD产生感受强度值",
       "legacy_workstyle_tag": "NZ?＋Z"
     }
-  ]
+  ],
+  "tenyuan_agent_binding": {
+    "status": "SOURCE_LINKED__ANALYSIS_PENDING",
+    "authority_order": [
+      "AGENTS.md",
+      "00-中枢索引/AI文件权力与任务总览.md",
+      "00-中枢索引/总入口.md",
+      "07-Codex大脑库/每次任务必读_十元关系防遗忘清单.md",
+      "01-十元系统/三元十元感受模型_核心正本_v1.0_20261007.md",
+      "01-十元系统/R3A_三元最小感受定义_人类主语_v1.0_20261007.md",
+      "01-十元系统/_流水线/感受谱流水线模板_v1.0_20261007.md"
+    ],
+    "agent_source": "黎黎隆项目/20_Agent系统/01_Agent库/AG-02_十元Agent.md",
+    "agent_min_context": [
+      "黎黎隆项目/20_Agent系统/05_索引/INDEX_LITE.md",
+      "黎黎隆项目/20_Agent系统/03_知识库/上下文提炼/CTX-02_十元.md"
+    ],
+    "agent_scope_note": "AG-02 is a LLL drama/project agent. For recruitment data reuse its REVIEW METHOD only; do not claim autonomous AG-02 was started or write its PROJECT_STATE.",
+    "ten_endpoint_source": "01-十元系统/十元体系密度卡总览.md",
+    "endpoint_limit": "L2 core feeling canon takes priority; structural operation cards are potential mechanisms, not human feeling definitions.",
+    "accuracy_gate": "01-十元系统/03-十元准度卡/README_准度卡总控_v0.6.md",
+    "research_mode": "AI-predicted response to employer materials, NOT observed team culture or established ten-yuan identity",
+    "prediction_policy": "AI MUST attempt evidence-based ten-yuan primary, secondary and alternative hypotheses when asked to analyze; evidence status and nearest competing interpretation needed; low confidence allowed. Do not leave all human scores null as excuse to skip AI analysis.",
+    "prediction_fields": [
+      "stimulus_context",
+      "observable_evidence",
+      "ai_hypothesis_main",
+      "ai_hypothesis_secondary",
+      "nearest_neighbor_alternative",
+      "eliciting_mechanism",
+      "evidence_refs",
+      "confidence",
+      "unknowns",
+      "falsification_question"
+    ],
+    "human_field": "records[].feeling_profile is reserved for actual human observer reports and remains null until collected.",
+    "legacy_tag_field": "records[].legacy_workstyle_tag is historical and never used as independent proof",
+    "namespace_rule": "TENYUAN_XN (feeling direction) is not PROBLEM_XN (rule); use distinct keys",
+    "stop_conditions": [
+      "no corroborated JD/company identity",
+      "conflict between L2 canon and old mappings",
+      "no scene or material",
+      "mechanism requires relation but actor/changed_variable not evidenced"
+    ]
+  }
 }
