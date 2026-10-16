@@ -2,7 +2,7 @@
 """Create a title-first overview .canvas linked to a lossless detailed Canvas.
 
 Overview titles are supplied by an explicit, source-checked JSON plan.
-No inferred employer identities, no original text deletion, no overwrites.
+No inferred employer identities, no original text deletion, no overwrites. Defaults to dry-run; never creates a duplicate Canvas implicitly.
 Python 3 standard library only.
 """
 import argparse
@@ -125,7 +125,9 @@ def main():
         source=json.loads(a.canvas.read_text(encoding="utf8"))
         plan=json.loads(a.plan.read_text(encoding="utf8"))
         result=make(source,plan,a.canvas)
-        target=a.output or a.canvas.with_name(a.canvas.stem+"_标题总览.canvas")
+        target=a.output or a.canvas
+        if not a.dry_run and a.output is None:
+            raise ValueError('No implicit new Canvas allowed: supply an explicit --output only when USER authorized a separate artifact')
         stats={"status":"dry-run" if a.dry_run else "written",
                "source":str(a.canvas),"output":str(target),
                "centers":len(result["nodes"])-2*sum(len(c["roles"]) for c in plan["centers"]),
