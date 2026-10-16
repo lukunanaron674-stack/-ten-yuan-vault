@@ -760,6 +760,13 @@
       "fromSide": "bottom",
       "toNode": "score-transfer",
       "toSide": "top"
+    },
+    {
+      "id": "e_C_audit",
+      "fromNode": "review-hub",
+      "fromSide": "bottom",
+      "toNode": "score-layout-audit",
+      "toSide": "top"
     }
   ]
 }
