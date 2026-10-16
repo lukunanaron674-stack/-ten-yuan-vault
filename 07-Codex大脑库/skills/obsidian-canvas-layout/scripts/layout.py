@@ -85,7 +85,13 @@ def layout(data, group_gap=160, forest_gap=300, aspect=1.4):
         subgroups=[n for n in nodes if n['type']=='group' and n['id']!=z['id'] and within(z,n)]
         immediate=[g for g in subgroups if not any(p['id']!=g['id'] and within(p,g) for p in subgroups)]
         if len(immediate)<2:
-            raise ValueError('Zone has fewer than two child branches: '+z['id'])
+            if len(immediate)==0:
+                # Group-free radial diagrams are already laid out by the author.
+                # Keep every child offset unchanged; only forest-pack entire root groups.
+                zone_info[z['id']]={'mode':'preserve_existing_radial','leftBranches':0,
+                                   'rightBranches':0,'width':z['width'],'height':z['height']}
+                continue
+            raise ValueError('Zone has only one subgroup; ambiguous layout: '+z['id'])
         immediate.sort(key=lambda n:(n['y'],n['x'],n['id']))
         childmap={g['id']:[n for n in nodes if n['id']!=g['id'] and within(g,n)] for g in immediate}
         assigned=[set(n['id'] for n in vv if n['type']!='group') for vv in childmap.values()]
@@ -170,6 +176,37 @@ def layout(data, group_gap=160, forest_gap=300, aspect=1.4):
     return {'nodes':len(nodes),'edges':len(data['edges']),'zones':len(zones),'gridColumns':cols,'rows':rows,'zoneInfo':zone_info,'contentPreserved':True}
 
 
+
+def audit(data):
+    """Read-only geometry and graph audit; works for ungrouped legacy Canvas too."""
+    validate(data)
+    nodes=data['nodes'];edges=data['edges']
+    zones=top_zones(nodes)
+    owner={}
+    for z in zones:
+        for n in nodes:
+            if n['type']=='group' or not within(z,n):continue
+            if n['id'] in owner:
+                raise ValueError('Node belongs to multiple root groups: '+n['id'])
+            owner[n['id']]=z['id']
+    cross=[e['id'] for e in edges if owner.get(e['fromNode'])!=owner.get(e['toNode'])]
+    ungrouped=[n['id'] for n in nodes if n['type']!='group' and n['id'] not in owner]
+    overlap=[]
+    cards=[n for n in nodes if n['type']!='group']
+    for i,a in enumerate(cards):
+        for b in cards[i+1:]:
+            if rect_overlap(a,b,5):overlap.append((a['id'],b['id']))
+    group_overlaps=[]
+    for i,a in enumerate(zones):
+        for b in zones[i+1:]:
+            if rect_overlap(a,b):group_overlaps.append((a['id'],b['id']))
+    return {'nodes':len(nodes),'edges':len(edges),'topGroups':len(zones),
+            'groupFreeZones':sum(not any(n['type']=='group' and n['id']!=z['id'] and within(z,n) for n in nodes) for z in zones),
+            'crossCenterEdges':cross,'ungroupedNodes':ungrouped,
+            'cardOverlaps':overlap,'groupOverlaps':group_overlaps,
+            'canRunGeometryOnly':len(zones)>=2 and not cross and not overlap and not group_overlaps and not ungrouped}
+
+
 def atomic_json_write(path, data):
     path.parent.mkdir(parents=True,exist_ok=True)
     fd,tmp=tempfile.mkstemp(prefix='.canvas-lr-',suffix='.tmp',dir=path.parent)
@@ -186,6 +223,7 @@ def main():
     p.add_argument('canvas',type=Path)
     p.add_argument('--output',type=Path)
     p.add_argument('--dry-run',action='store_true')
+    p.add_argument('--audit-only',action='store_true',help='Read-only audit for existing, grouped or legacy ungrouped Canvas')
     p.add_argument('--in-place',action='store_true',help='Modify the existing Canvas path after making a backup outside the Vault')
     p.add_argument('--group-gap',type=int,default=160)
     p.add_argument('--forest-gap',type=int,default=300)
@@ -194,6 +232,9 @@ def main():
     try:
         inp=args.canvas.resolve(strict=True)
         data=json.loads(inp.read_text(encoding='utf-8'))
+        if args.audit_only:
+            print(json.dumps({'status':'audit-only','source':str(inp),**audit(data)},ensure_ascii=False))
+            return
         result=layout(data,args.group_gap,args.forest_gap)
         if args.dry_run or (not args.in_place and args.output is None):
             print(json.dumps({'status':'dry-run','source':str(inp),**result},ensure_ascii=False));return
