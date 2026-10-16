@@ -1,7 +1,7 @@
 ---
 name: obsidian-canvas-layout
-version: 1.1.0
-description: 将现有 Obsidian JSON Canvas 安全重排为多个互不连线的独立中心、左右双向发散、紧凑子树和森林布局；保留原文本、职位链接、主题底盘色、分支轴色以及所有关系边；输出副本、验收和概览预览。
+version: 1.2.0
+description: 将现有 Obsidian JSON Canvas 安全重排为多个互不连线的独立中心、左右双向发散、紧凑子树和森林布局；保留原文本、职位链接、主题底盘色、分支轴色以及所有关系边；原位修改已存在Canvas、验收和安全回滚；禁止自动生成重复版本。
 ---
 
 # Obsidian Canvas｜多中心左右双向自动排版
@@ -19,57 +19,43 @@ description: 将现有 Obsidian JSON Canvas 安全重排为多个互不连线的
 5. **尺寸与文字**：此 v1 仅重排节点坐标和**顶层底盘**尺寸。各文本卡已有宽高及所有中文、长JD、URL必须保持；如发现某卡截字，应先用专门的文字尺寸测量流程修好，再运行该Skill，不要自动裁字。
 6. **安全验收**：ID唯一、边端点存在、无跨中心边、无文本卡重叠、顶层底盘互不重叠；原 text/file/url/color 和全部原 edge 数组相同。视觉预览是辅助，**不代表已在 Windows Obsidian 实际PASS**。
 
-## 执行指令（Python 3标准库）
+## XN-CANVAS-SINGLE-SOURCE｜只更新已有文件（2026-10-16 USER确认）
+**强制原则：已有的去改，不能新建。** 在操作前找到此项目已存在的唯一Canvas及其注册证据MD/索引；只对现有路径原位改内容，不得自动生成 `_实验版`、`_插件版`、`_v2`、`_接入版`、`_标题总览`、`*_LR_PREVIEW.canvas` 或复制衍生 Canvas，除非USER明确提出另建独立新资源。Git历史是版本历史，不使用重复文件表达版本。所有公司十元证据直接放到**原有公司卡**里，原JD、ID、连接、分色与背景布局必须保留。
+**唯一求职项目正本**：
+- Canvas：`15-总思路/BOSS求职方向与岗位线索.canvas`
+- 公司证据（完整十元推测＋AI/真人分离）：`15-总思路/BOSS求职_公司十元感受证据.md`
+- 机器索引：`15-总思路/BOSS求职_公司十元证据索引.json`
+**禁止**退回旧版或重建新的“公司十元证据.canvas”。公司主次十元应原位显示于对应求职卡，单公司直接标签，混合公司逐名标签；详细材料通过公司标题链接到原有MD的对应章节。
+
+### 推荐执行（只读干跑 → 改原路径 → Git回读）
 
 ```powershell
-# 1) 从Vault根目录执行，先模拟（不会写入）
+# 从vault根执行：先读 AGENTS 与该项目的正本文件；先模拟校验，不产生新Canvas
 python "07-Codex大脑库/skills/obsidian-canvas-layout/scripts/layout.py" "15-总思路/BOSS求职方向与岗位线索.canvas" --dry-run
 
-# 2) 默认生成新副本 *_LR_PREVIEW.canvas，不覆盖原文件
-python "07-Codex大脑库/skills/obsidian-canvas-layout/scripts/layout.py" "15-总思路/BOSS求职方向与岗位线索.canvas"
+# 已确认目标、完成Git提交/备份、且USER授权修改时，在原路径原位写入
+python "07-Codex大脑库/skills/obsidian-canvas-layout/scripts/layout.py" "15-总思路/BOSS求职方向与岗位线索.canvas" --in-place
 
-# 3) 可选生成全图PNG预览（需要pip install pillow）
-python "07-Codex大脑库/skills/obsidian-canvas-layout/scripts/preview.py" "15-总思路/BOSS求职方向与岗位线索_LR_PREVIEW.canvas" "15-总思路/BOSS_LR_总览预览.png"
-```
-
-**只在用户明确批准覆盖且确认本地工作树没有未保存改动时**使用 `--in-place`，该选项会先创建带时间戳的 `.bak_...` 备份，再原子替换目标；重复运行时默认副本存在即停止，不静默覆盖。
-
-### 自动验收与报告
-
-```powershell
+# 只跑本地测试，不要把单独“标题总览”生成器用于已存在的BOSS项目
 python "07-Codex大脑库/skills/obsidian-canvas-layout/scripts/test_layout.py"
 ```
 
-此测试含6个独立中心、18条岗位子树、36条边的合成样例及干跑/拒绝覆盖/强制备份检查。真实Canvas需要再用 `--dry-run` 实验，检查实际Obsidian UI截图，不能将合成测试冒充真实作品的屏幕验收。
+- GitHub写入：使用 `fetch_file` 获取现有SHA，用 `update_file` 按SHA修改**同一路径**；随后 `fetch_file` 回读核对。**禁止对已有功能使用 create_file。**
+- Windows本地执行：先确认 `git status` 和未提交的本地修改；不得以GitHub的新版本直接覆盖Windows未提交编辑。任何 `--in-place` 操作应先备份到Vault之外的Git管理区，或先提交Git以支持回滚，禁止在Obsidian工作区里散落重复Canvas。
+- 验收：比较编辑前后节点ID/原JD和链接/非目标文本、颜色及边，查零卡片重叠、分组边界不越界、实际缩放中的标签可读性。可有新的证据行，但不能删旧JD。
+- 旧`overview.py`仅作为其它项目**确实要求新建**时的可选功能；本项目没有单独“标题总览.canvas”正本。一个Canvas中利用中心、岗位、公司三级标题导航，不能以二级新文件补偿排版问题。
 
-
-## XN-CANVAS-READABILITY-01｜缩放层次和可见标题（用户2026-10-15截图确认）
-
-**问题：** 详细Canvas的172张JD卡虽然部分已经有`##`标题，但整图缩到很小时仍不可辨；Obsidian Canvas原生缩放**不会把所有小字自动变成大字**。不能继续仅靠缩节点来冒称提高可读性。
-
-**分层解决：**
-1. **标题总览（新一张伴随图）**：只画每个独立中心的清楚名称、每个岗位方向的 `# 标题`、最多1–3行代表公司/内容；中心仍独立，左右双向，底盘主题色/各方向轴色来自原始卡片。总览属于导航，而不是第二份招聘数据库。建议 6中心/16方向/44节点，而不是172张JD挤在一张一屏里。
-2. **完整详图（只读保留）**：保留当前原始公司JD、来源链接、评级、作品证据、核实备注、172节点和130条关系边；总览中心放 Obsidian Wiki 链接到详细Canvas，以便聚焦查看。**总览不能替代证据，不能凭标题判断当前在招**。
-3. **标题必须可读**：总览的每张业务卡要以真实 `# ` Markdown标题开头；不能出现公司名缺失、只有“候选组1”或无意义横线的节点。名称由明确的`plans/*.json`人工审核后提供，`source_ids`和`source_role_id`必须存在于原Canvas，绝不凭AI猜单位。
-4. **验收分两级**：程序检查标题覆盖率100%、引用ID存在、无卡片重叠和跨中心线；最终缩放后的文字阅读仍必须由Obsidian截图人工验收。对整张详细图要求极远缩放下同时读清公司名并不现实，应当进入对应分区放大/点击详图。
-
-**复制到任何项目的方式**：只需制作符合模板的计划JSON，按不同的真实行业/作品内容填`centers[].roles[]`标题和最多3条短说明，再调用下面的生成器；没有充分证据来源时写`待核`，不要编造公司。
-
-```powershell
-# 先跑只读校验；输出新图名称自行选择，不覆盖已存在图
-python "07-Codex大脑库/skills/obsidian-canvas-layout/scripts/overview.py" "15-总思路/BOSS求职方向与岗位线索_左右双向实验版.canvas" --plan "07-Codex大脑库/skills/obsidian-canvas-layout/plans/boss-portfolio-overview.json" --dry-run
-
-# 生成只含标题与重点信息的总览副本（若目标已存在会拒绝覆盖）
-python "07-Codex大脑库/skills/obsidian-canvas-layout/scripts/overview.py" "15-总思路/BOSS求职方向与岗位线索_左右双向实验版.canvas" --plan "07-Codex大脑库/skills/obsidian-canvas-layout/plans/boss-portfolio-overview.json" --output "15-总思路/BOSS求职方向与岗位线索_标题总览_v2.canvas"
-```
-
-**GitHub已发布首例**：`15-总思路/BOSS求职方向与岗位线索_标题总览.canvas`；它不覆盖`BOSS求职方向与岗位线索_左右双向实验版.canvas`或正式主文件。前者给人缩放浏览，后者给人查看长JD。
+## XN-CANVAS-READABILITY-01｜缩放标题与双层阅读（在同一张Canvas内）
+1. 缩小整体查看中心主题色、方向名称和公司标题；放大后查看公司卡正文、十元候选、原始JD与证据链接。**两个阅读层级并不意味着要生成两张Canvas。**
+2. 公司卡标题固定明显，紧随标题的第二行即可显示 `十元预测（AI，非真人实测）：主元→次元` 和来源证据内链。多公司的共用JD卡需分别标明每家公司，不得只放组链接。
+3. 对较长JD作自适应宽高和局部无重叠排版，不裁字、不重写事实。禁止把某单一NZ研究问题替代完整十元判断。
+4. 在 Obsidian 真机缩放及连线截图验收前，不要宣布USER视觉PASS；结构合格也不能代替阅读合格。
 
 ## DONE / STOP
 
-- **DONE（程序）**：报告树数量、节点、边、布局列数、备份/输出路径；GitHub如有提交则回读 SHA；保留原内容、颜色、所有边；全图检查通过。
-- **WAIT_LOCAL_UI**：在Obsidian里看局部卡片可读性、箭头走向、跨区空白，人工确认通过后才将实验版晋升正式版。
-- **STOP**：存在跨中心边、无明确顶层分组、子树相互重叠、文本内容变化、原图片资产/引用缺失、输出目标已有文件或工作树冲突时立即停，不自动修造资料。
+- **DONE（程序）**：报告树数量、节点、边、布局列数、既有路径和Git回滚点；GitHub如有提交则回读 SHA；保留原内容、颜色、所有边；全图检查通过。
+- **WAIT_LOCAL_UI**：在Obsidian里看局部卡片可读性、箭头走向、跨区空白，人工确认通过后才将原位排版达到用户验收。
+- **STOP**：存在跨中心边、无明确顶层分组、子树相互重叠、文本内容变化、原图片资产/引用缺失、用户已有文件被错误重建或工作树冲突时立即停，不自动修造资料。
 
 ## 来源与限制
 
