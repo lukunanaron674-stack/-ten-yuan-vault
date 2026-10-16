@@ -50,10 +50,10 @@ def main():
         dry=subprocess.run([sys.executable,str(script),str(src),'--dry-run'],capture_output=True,text=True)
         assert dry.returncode==0,dry.stderr
         assert json.loads(src.read_text(encoding='utf8'))==original
-        run=subprocess.run([sys.executable,str(script),str(src)],capture_output=True,text=True)
+        run=subprocess.run([sys.executable,str(script),str(src),'--output',str(Path(td)/'test_LR_PREVIEW.canvas')],capture_output=True,text=True)
         assert run.returncode==0,run.stderr
         assert (Path(td)/'test_LR_PREVIEW.canvas').exists()
-        repeat=subprocess.run([sys.executable,str(script),str(src)],capture_output=True,text=True)
+        repeat=subprocess.run([sys.executable,str(script),str(src),'--output',str(Path(td)/'test_LR_PREVIEW.canvas')],capture_output=True,text=True)
         assert repeat.returncode!=0 and 'Output exists' in repeat.stderr
         inplace=subprocess.run([sys.executable,str(script),str(src),'--in-place'],capture_output=True,text=True)
         assert inplace.returncode==0,inplace.stderr
