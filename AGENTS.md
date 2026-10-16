@@ -64,6 +64,7 @@ L0 root rules
 8. AI/F12 outputs remain `pending-absorb` until promoted through the registered review route.
 9. Never invent a category, parent, is-a relation, canonical status, commit SHA, run result, or evidence.
 10. A ledger entry, Canvas edge, co-occurrence, sequence, contrast, or visual similarity does not by itself prove a theory relation.
+11. **Single-source updates**: if a Canvas, document, or data index for the requested function already exists, edit that exact file in place. Do not create suffixed variants such as `_实验版`, `_v2`, `_接入版`, `_标题总览` or copies merely to represent a revision unless the user explicitly authorizes a genuinely separate artifact. Use Git commits for version history; preserve content, IDs, and source evidence and validate all links before duplicate cleanup.
 
 ## 4. Write Discipline
 
