@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "detail_file": "BOSS求职方向与岗位线索_左右双向实验版.canvas",
+  "detail_file": "BOSS求职方向与岗位线索.canvas",
   "layout": {
     "columns": 3,
     "zone_width": 3220,
@@ -258,5 +258,7 @@
         }
       ]
     }
-  ]
+  ],
+  "disabled_for_existing_canvas": true,
+  "note": "Historic overview template, do not execute or write a second Canvas. BOSS project has one canonical canvas. Used only if user explicitly authorizes separate new artifact."
 }
