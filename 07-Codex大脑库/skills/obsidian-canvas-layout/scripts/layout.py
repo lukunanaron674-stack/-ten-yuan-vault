@@ -2,7 +2,7 @@
 """Safe balanced left/right layout for Obsidian JSON Canvas forests.
 
 Standard library only. Geometry-only: preserves IDs, text, colors and edges.
-Defaults to a new output path; writing in-place needs --in-place and a backup.
+Defaults to dry-run and never creates duplicate Canvas; --in-place modifies the source with an external-temp backup.
 """
 import argparse
 import copy
@@ -186,7 +186,7 @@ def main():
     p.add_argument('canvas',type=Path)
     p.add_argument('--output',type=Path)
     p.add_argument('--dry-run',action='store_true')
-    p.add_argument('--in-place',action='store_true')
+    p.add_argument('--in-place',action='store_true',help='Modify the existing Canvas path after making a backup outside the Vault')
     p.add_argument('--group-gap',type=int,default=160)
     p.add_argument('--forest-gap',type=int,default=300)
     args=p.parse_args()
@@ -195,13 +195,15 @@ def main():
         inp=args.canvas.resolve(strict=True)
         data=json.loads(inp.read_text(encoding='utf-8'))
         result=layout(data,args.group_gap,args.forest_gap)
-        if args.dry_run:
+        if args.dry_run or (not args.in_place and args.output is None):
             print(json.dumps({'status':'dry-run','source':str(inp),**result},ensure_ascii=False));return
         target=inp if args.in_place else (args.output or inp.with_name(inp.stem+'_LR_PREVIEW.canvas'))
         if target.exists() and not args.in_place: raise FileExistsError('Output exists (no overwrite): '+str(target))
         if args.in_place:
             stamp=datetime.now().strftime('%Y%m%d_%H%M%S_%f')
-            backup=inp.with_name(inp.name+'.bak_'+stamp)
+            backup_dir=Path(tempfile.gettempdir()) / 'obsidian-canvas-layout-backups'
+            backup_dir.mkdir(parents=True,exist_ok=True)
+            backup=backup_dir / (str(abs(hash(str(inp))))+'_'+inp.name+'.bak_'+stamp)
             shutil.copy2(inp,backup)
             result['backup']=str(backup)
         atomic_json_write(target,data)
