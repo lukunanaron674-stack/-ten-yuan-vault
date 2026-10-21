@@ -1,0 +1,264 @@
+{
+  "version": 1,
+  "detail_file": "BOSS求职方向与岗位线索.canvas",
+  "layout": {
+    "columns": 3,
+    "zone_width": 3220,
+    "zone_height": 2440,
+    "gap_x": 260,
+    "gap_y": 260
+  },
+  "centers": [
+    {
+      "key": "narrative",
+      "title": "01｜AI叙事动画与漫剧",
+      "color": "1",
+      "roles": [
+        {
+          "id": "narrative-director",
+          "title": "导演／影像统筹",
+          "source_role_id": "v2-role-narrative-director",
+          "lines": [
+            "星动数娱｜AI漫剧导演",
+            "雷鸟科技｜AI电影导演"
+          ],
+          "source_ids": [
+            "v3-star-digital",
+            "thunderbird-ai-director-2027"
+          ]
+        },
+        {
+          "id": "narrative-comic",
+          "title": "AI漫剧分镜／制作",
+          "source_role_id": "v2-role-narrative-comic",
+          "lines": [
+            "蜜糖网络｜AI短剧",
+            "精品剧分镜｜主体待核"
+          ],
+          "source_ids": [
+            "mitang-boss-shortdrama-20261014",
+            "boss-ai-premium-storyboard-watch"
+          ]
+        },
+        {
+          "id": "narrative-writer",
+          "title": "编剧与故事开发",
+          "source_role_id": "v2-role-narrative-writer",
+          "lines": [
+            "故事结构／人物关系",
+            "原创剧本与试稿待补"
+          ],
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "key": "visual",
+      "title": "02｜游戏原画与AI辅助",
+      "color": "4",
+      "roles": [
+        {
+          "id": "visual-gameart",
+          "title": "角色／场景原画",
+          "source_role_id": "v2-role-visual-gameart",
+          "lines": [
+            "方寸互娱／腾娱互动",
+            "致宁互动／快狗互动",
+            "多益网络｜游戏原画"
+          ],
+          "source_ids": [
+            "v3-fangcun",
+            "v3-tengyu",
+            "v3-zhining",
+            "v3-kuaigou",
+            "duoyi-game-art-2027"
+          ]
+        },
+        {
+          "id": "visual-marketing",
+          "title": "游戏运营视觉／KV",
+          "source_role_id": "v2-role-visual-marketing",
+          "lines": [
+            "虎牙｜运营AI视觉"
+          ],
+          "source_ids": [
+            "huyavisual20261014"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "video",
+      "title": "03｜AI视频与游戏CG",
+      "color": "5",
+      "roles": [
+        {
+          "id": "video-game",
+          "title": "游戏CG／PV／买量视频",
+          "source_role_id": "v2-role-video-game",
+          "lines": [
+            "9377／完美世界",
+            "点点互动／4399",
+            "游戏视频与买量投放"
+          ],
+          "source_ids": [
+            "a724c921-9377-video",
+            "perfect-world-ai-video-2027",
+            "centurygames-ai-video-sh-2027",
+            "4399-game-video-2027"
+          ]
+        },
+        {
+          "id": "video-product",
+          "title": "品牌AIGC／产品视频",
+          "source_role_id": "v2-role-video-product",
+          "lines": [
+            "丝路视觉／雨舟科技",
+            "万兴科技｜AI视频"
+          ],
+          "source_ids": [
+            "silkroad-aigc-2027",
+            "yuzhou-ai-visual-intern",
+            "wondershare-ai-video-designer-intern-2027"
+          ]
+        },
+        {
+          "id": "video-unknown",
+          "title": "AI视频待核岗位",
+          "source_role_id": "v2-role-video-unknown",
+          "lines": [
+            "光盒动力｜AIGC视频",
+            "其他招聘主体待核"
+          ],
+          "source_ids": [
+            "lighthub-ai-video-watch"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "creative",
+      "title": "04｜IP创意与跨媒介",
+      "color": "6",
+      "roles": [
+        {
+          "id": "creative-drama",
+          "title": "漫剧／IP内容构成",
+          "source_role_id": "v2-role-creative-drama",
+          "lines": [
+            "享瑞｜AI漫剧设计",
+            "趣丸｜AI内容"
+          ],
+          "source_ids": [
+            "xiangrui-ai-manhua-design-20261014",
+            "quwan-ai-content-intern-20261014"
+          ]
+        },
+        {
+          "id": "creative-brand",
+          "title": "品牌AI视觉创意",
+          "source_role_id": "v2-role-creative-brand",
+          "lines": [
+            "BlueFocus｜AI Creator",
+            "影石｜视觉设计"
+          ],
+          "source_ids": [
+            "bluefocus-ai-creator-2027",
+            "insta360-ai-visual-designer-2027"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "review",
+      "title": "05｜岗位核验与反馈",
+      "color": "2",
+      "roles": [
+        {
+          "id": "review-adjacent",
+          "title": "传统与相邻岗位",
+          "source_role_id": "v2-role-review-adjacent",
+          "lines": [
+            "华大智造／深蓝互动",
+            "大梦龙途／库洛游戏",
+            "AI职责待核"
+          ],
+          "source_ids": [
+            "bgi-newmedia-2027",
+            "deepblue-storyboard-2027",
+            "damenglongtu-ae-video-2027-shenzhen",
+            "kuro-storyboard-2027"
+          ]
+        },
+        {
+          "id": "review-governance",
+          "title": "职位状态与核验",
+          "source_role_id": "v2-role-review-governance",
+          "lines": [
+            "核实JD与招聘状态",
+            "确认导师／作品／资格",
+            "招聘评分不等于已录用"
+          ],
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "key": "portfolio",
+      "title": "06｜作品集与能力",
+      "color": "3",
+      "roles": [
+        {
+          "id": "portfolio-fz",
+          "title": "《方志敏》",
+          "source_role_id": "portfolio-colhead-fz",
+          "lines": [
+            "4分17秒完整成片",
+            "叙事、镜头、交付"
+          ],
+          "source_ids": [
+            "portfolio-fz-level-1"
+          ]
+        },
+        {
+          "id": "portfolio-ll",
+          "title": "《黎黎隆》",
+          "source_role_id": "portfolio-colhead-ll",
+          "lines": [
+            "原创二维IP开发中",
+            "角色、场景、色卡、H3"
+          ],
+          "source_ids": [
+            "portfolio-ll-level-1"
+          ]
+        },
+        {
+          "id": "portfolio-independent",
+          "title": "独立美术",
+          "source_role_id": "portfolio-colhead-independent",
+          "lines": [
+            "绘画、插画候选",
+            "原件与审核待确认"
+          ],
+          "source_ids": [
+            "portfolio-independent-level-1"
+          ]
+        },
+        {
+          "id": "portfolio-method",
+          "title": "AI工作流与十元方法",
+          "source_role_id": "portfolio-colhead-method",
+          "lines": [
+            "ComfyUI／H3流程",
+            "十元：个人创作构成方法"
+          ],
+          "source_ids": [
+            "portfolio-method-level-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "disabled_for_existing_canvas": true,
+  "note": "Historic overview template, do not execute or write a second Canvas. BOSS project has one canonical canvas. Used only if user explicitly authorizes separate new artifact."
+}

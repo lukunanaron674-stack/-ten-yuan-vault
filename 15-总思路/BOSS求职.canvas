@@ -1,0 +1,986 @@
+{
+  "nodes": [
+    {
+      "id": "group-a",
+      "type": "group",
+      "x": -3100,
+      "y": -520,
+      "width": 930,
+      "height": 2172,
+      "label": "01｜个人定位与岗位翻译",
+      "color": "5"
+    },
+    {
+      "id": "group-b",
+      "type": "group",
+      "x": -2070,
+      "y": -520,
+      "width": 930,
+      "height": 2172,
+      "label": "02｜BOSS搜索：双主线并行",
+      "color": "4"
+    },
+    {
+      "id": "group-c",
+      "type": "group",
+      "x": -1040,
+      "y": -520,
+      "width": 930,
+      "height": 2429,
+      "label": "03｜读JD、判断成长质量",
+      "color": "3"
+    },
+    {
+      "id": "group-d",
+      "type": "group",
+      "x": -10,
+      "y": -520,
+      "width": 930,
+      "height": 2429,
+      "label": "04｜候选公司兴趣池（不是在招保证）",
+      "color": "6"
+    },
+    {
+      "id": "group-e",
+      "type": "group",
+      "x": 1020,
+      "y": -520,
+      "width": 930,
+      "height": 2172,
+      "label": "05｜投递、作品展示与面试",
+      "color": "2"
+    },
+    {
+      "id": "group-f",
+      "type": "group",
+      "x": 2050,
+      "y": -520,
+      "width": 930,
+      "height": 2172,
+      "label": "06｜求职反馈→能力成长闭环",
+      "color": "1"
+    },
+    {
+      "id": "map-title",
+      "type": "text",
+      "text": "# BOSS求职｜内容型公司 + AI辅助创作\n**2027届｜深圳优先／广州高质量备选｜成长优先，不只看岗位是否带AI**",
+      "x": -650,
+      "y": -1740,
+      "width": 1260,
+      "height": 168,
+      "color": "5"
+    },
+    {
+      "id": "map-center",
+      "type": "text",
+      "text": "## 核心判断\n**我的价值＝原创视觉与故事构成 × 跨领域统一 × AI辅助实现**\n把职位当学习真实创作流程的入口，不只找会出图的工作。",
+      "x": -650,
+      "y": -1490,
+      "width": 1260,
+      "height": 195,
+      "color": "4"
+    },
+    {
+      "id": "map-flow",
+      "type": "text",
+      "text": "**流程**　认识自己 → 搜索JD → 查公司/学习质量 → 保留候选 → 投递 → 外部反馈 → 提升能力",
+      "x": -650,
+      "y": -1190,
+      "width": 1260,
+      "height": 115
+    },
+    {
+      "id": "a-head",
+      "type": "text",
+      "text": "# 01｜个人定位与岗位翻译\n**我有什么能被公司使用的能力？**",
+      "x": -3047,
+      "y": -400,
+      "width": 824,
+      "height": 136,
+      "color": "5"
+    },
+    {
+      "id": "a-0",
+      "type": "text",
+      "text": "### 已有结果｜完整动画作品\n《方志敏》4分17秒完整AI动画；可展示故事组织、镜头和完整成片。强调真实作品和本人负责的环节，不凭时长推断商业能力。",
+      "x": -3047,
+      "y": -207,
+      "width": 824,
+      "height": 185,
+      "color": "5"
+    },
+    {
+      "id": "a-1",
+      "type": "text",
+      "text": "### 已有实践｜原创视觉IP\n《黎黎隆》母图、角色/色卡、15头像发散→人工选择→场景/动画镜头试作。仍在开发中，不能说8分钟已完成。",
+      "x": -3047,
+      "y": 50,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "a-2",
+      "type": "text",
+      "text": "### 方法优势｜十元构成\n目标感受→名词/动作/对象联想→生、克、补及动态链→角色、故事、色彩、视听统一。是个人创作方法，不是被普遍验证的规律。",
+      "x": -3047,
+      "y": 307,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "a-3",
+      "type": "text",
+      "text": "### 方法优势｜跨媒介整合\n把角色、世界观、叙事、音画及潜在游戏玩法围绕同一体验目标组织。游戏仍需最小可玩Demo，不包装成完成作品。",
+      "x": -3047,
+      "y": 564,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "a-4",
+      "type": "text",
+      "text": "### 生产与迭代｜AIGC工作流\n手绘/设计约束→ComfyUI/H3辅助制作→人工审片→修改/版本/素材管理。Linear+Obsidian+Codex为个人实践。",
+      "x": -3047,
+      "y": 821,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "a-5",
+      "type": "text",
+      "text": "### 职位语言怎么翻译\n原创角色/场景原画；IP视觉开发；动画前期/分镜；内容编导；叙事策划；AI辅助游戏美术；AIGC视觉流程。",
+      "x": -3047,
+      "y": 1078,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "a-6",
+      "type": "text",
+      "text": "### 作品集双入口\nA 美术/游戏版：角色母图→规范→场景→镜头。B AI编导版：故事/分镜→连续镜头→成片→修改证据。禁止未授权公开素材。",
+      "x": -3047,
+      "y": 1335,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "b-head",
+      "type": "text",
+      "text": "# 02｜BOSS搜索：双主线并行\n**不看岗位名里有没有AI，看公司做什么、JD是否支持AI**",
+      "x": -2017,
+      "y": -400,
+      "width": 824,
+      "height": 136,
+      "color": "4"
+    },
+    {
+      "id": "b-0",
+      "type": "text",
+      "text": "### A主投｜普通岗位+AI辅助\n关键词：原画师 支持AI／游戏美术 ComfyUI／角色设计 AI绘图／场景概念设计 Stable Diffusion／IP视觉开发 AI加分。",
+      "x": -2017,
+      "y": -207,
+      "width": 824,
+      "height": 185,
+      "color": "4"
+    },
+    {
+      "id": "b-1",
+      "type": "text",
+      "text": "### B主投｜创意型AIGC岗位\n关键词：动画编导／AI视频导演助理／AI漫剧导演／角色视觉统筹／风格化AI视频／游戏CG/PV。创作权优先于大量抽卡。",
+      "x": -2017,
+      "y": 50,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "b-2",
+      "type": "text",
+      "text": "### 城市与身份条件\n深圳优先；广州只有更好成长/作品/导师才优先。2027届或允许在校面试，12月后稳定全职可沟通。正式岗位优先。",
+      "x": -2017,
+      "y": 307,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "b-3",
+      "type": "text",
+      "text": "### 搜索不能只看一个平台标签\n查看公司经营的内容类型、岗位职责原文、关键词“可使用AI/熟悉ComfyUI/AI辅助为加分项”；没写就标AI_UNCONFIRMED，别擅自推断。",
+      "x": -2017,
+      "y": 564,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "b-4",
+      "type": "text",
+      "text": "### Codex搜索作业\n首批最多15条【当前可核实】不同职位JD；记录企业、岗位、BOSS职位ID、完整JD URL、截图/原句证据、招聘日期、2027届资格；不足15要报告。",
+      "x": -2017,
+      "y": 821,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "b-5",
+      "type": "text",
+      "text": "### 去重与状态\n按BOSS职位ID去重；区分公司详情、搜索列表、真实岗位JD；历史招聘≠正在招聘；已投/待投/取消/过期不能混写。",
+      "x": -2017,
+      "y": 1078,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "b-6",
+      "type": "text",
+      "text": "### 输出TOP5而不是堆数量\n先保留创造性与带教较强的5家，和你最喜欢的星动数娱比较；岗位真实名单统一回传Linear 674-302。",
+      "x": -2017,
+      "y": 1335,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "c-head",
+      "type": "text",
+      "text": "# 03｜读JD、判断成长质量\n**这家公司能让你一年后更强吗？**",
+      "x": -987,
+      "y": -400,
+      "width": 824,
+      "height": 136,
+      "color": "3"
+    },
+    {
+      "id": "c-0",
+      "type": "text",
+      "text": "### 先看公司作品，不先看薪资\n至少找到1部公开成片、游戏或IP作品：它的角色美术、镜头、故事、运动和一致性到什么水平？作品与岗位是否同一团队？",
+      "x": -987,
+      "y": -207,
+      "width": 824,
+      "height": 185,
+      "color": "3"
+    },
+    {
+      "id": "c-1",
+      "type": "text",
+      "text": "### 再看创作权限\n能否接触概念、人物关系、世界观、色彩、分镜、角色/场景和审片？还是只按固定脚本生成、拼接和跑量？",
+      "x": -987,
+      "y": 50,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "c-2",
+      "type": "text",
+      "text": "### 带教与反馈机制\n谁是直属美术/导演负责人？是否有成熟代表作？每周如何审片和改稿？能否解释设计为什么改变？",
+      "x": -987,
+      "y": 307,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "c-3",
+      "type": "text",
+      "text": "### AI是否真的被支持\n岗位名称没AI也可以；必须记录JD“AI辅助、SD、ComfyUI、MJ、可灵”等原文。允许AI≠可以只靠AI，先判断绘画、Spine、AE、Unity/UE等必需技能。",
+      "x": -987,
+      "y": 564,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "c-4",
+      "type": "text",
+      "text": "### 2027届 / 正式 / 薪资\n确认学历、经验、仍招、到岗时间、合同主体、固定底薪、绩效和工作日。学校岗位实习三方和正式合同能否并行仍需学校认可。",
+      "x": -987,
+      "y": 821,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "c-5",
+      "type": "text",
+      "text": "### 内部筛选量尺（100）\n创意权限25＋导师20＋IP/美术/叙事匹配20＋实际AI支持15＋毕业生入职可行10＋薪资工时稳定10。分数仅用于筛选，须每项写证据。",
+      "x": -987,
+      "y": 1078,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "c-6",
+      "type": "text",
+      "text": "### 红线 / 淘汰依据\n全职无底薪、身份或主体不明、付费培训强制、无作品又拒绝展示、产能强制但无设计权、虚假合同；有风险先核实，不仅凭猜测定性。",
+      "x": -987,
+      "y": 1335,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "c-7",
+      "type": "text",
+      "text": "### 结论卡\n输出：该团队主要做什么｜能教我什么｜我能贡献什么｜最大能力缺口｜岗位当前状态｜下一步询问谁。",
+      "x": -987,
+      "y": 1592,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "d-head",
+      "type": "text",
+      "text": "# 04｜候选公司兴趣池（不是在招保证）\n**公司评价用真实JD与作品逐条更新**",
+      "x": 43,
+      "y": -400,
+      "width": 824,
+      "height": 136,
+      "color": "6"
+    },
+    {
+      "id": "d-0",
+      "type": "text",
+      "text": "### 已表达兴趣｜星动数娱（广州）\nUSER明确感兴趣：AI漫剧导演/编导；此前猎聘记录10–15K，需查岗位是否仍招、资深导师/作品和是否有IP构成权限。不是BOSS已投。",
+      "x": 43,
+      "y": -207,
+      "width": 824,
+      "height": 185,
+      "color": "6"
+    },
+    {
+      "id": "d-1",
+      "type": "text",
+      "text": "### 深圳｜方寸互娱\n岗位线索：游戏原画，公开信息提到AI辅助角色/场景；重点核实游戏类型、原画标准、应届资格和Spine要求。",
+      "x": 43,
+      "y": 50,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "d-2",
+      "type": "text",
+      "text": "### 深圳｜腾娱互动\n岗位线索：游戏角色/场景/道具及AI辅助的实习；“游戏主美术”名称与实习身份有差异，核实带教和转正。",
+      "x": 43,
+      "y": 307,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "d-3",
+      "type": "text",
+      "text": "### 深圳｜致宁互动 / 快狗互动\n普通游戏原画岗位出现ComfyUI、PS或SD辅助关键词。核对当期BOSS直接JD、实际项目和工作中的设计决策权。",
+      "x": 43,
+      "y": 564,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "d-4",
+      "type": "text",
+      "text": "### 深圳｜冰川网络\n旧校招原画提过AI辅助，但原职位发布较早；只当找2027届新岗位的公司线索，非当前开放确认。",
+      "x": 43,
+      "y": 821,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "d-5",
+      "type": "text",
+      "text": "### 广州｜三七互娱 / 灵犀互娱\n27届原画类岗位有AI辅助加分/学习能力线索；需重新核对当期官方职位、画工要求和开放状态。",
+      "x": 43,
+      "y": 1078,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "d-6",
+      "type": "text",
+      "text": "### 公司卡怎么继续扩\n只为真正感兴趣或真实投递的公司新建一张详细卡：公司作品 → JD证据 → 核心学习点 → 作品匹配 → HR反馈 → 决定。",
+      "x": 43,
+      "y": 1335,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "d-7",
+      "type": "text",
+      "text": "### 兴趣与实际状态分离\nINTERESTED / JD_VERIFIED / READY / APPLIED / INTERVIEW / OFFER / REJECTED / EXPIRED。任何“招聘中”都必须有本次可核对证据。",
+      "x": 43,
+      "y": 1592,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "e-head",
+      "type": "text",
+      "text": "# 05｜投递、作品展示与面试\n**从岗位需求倒推展示什么，不用一个简历投所有人**",
+      "x": 1073,
+      "y": -400,
+      "width": 824,
+      "height": 136,
+      "color": "2"
+    },
+    {
+      "id": "e-0",
+      "type": "text",
+      "text": "### 选择投递方向\n岗位是美术设计、分镜编导、游戏IP还是AIGC制作？选一条主线后调用《方志敏》或《黎黎隆》对应证据。",
+      "x": 1073,
+      "y": -207,
+      "width": 824,
+      "height": 185,
+      "color": "2"
+    },
+    {
+      "id": "e-1",
+      "type": "text",
+      "text": "### 《方志敏》怎么讲\n4分17秒完整成片；挑选真实镜头时间码，说明故事/镜头的意图、制作输入、本人工作和修改结果。",
+      "x": 1073,
+      "y": 50,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "e-2",
+      "type": "text",
+      "text": "### 《黎黎隆》怎么讲\n母图与配色约束→候选角色→取舍→角色小人/场景→H3短镜头；表现原创视觉和AI控制，不夸大开发阶段。",
+      "x": 1073,
+      "y": 307,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "e-3",
+      "type": "text",
+      "text": "### 十元怎么讲给企业听\n用大白话：我能把一个想表达的感受组织成故事、角色、色彩和镜头；用一个前后对照案例，术语放附录。",
+      "x": 1073,
+      "y": 564,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "e-4",
+      "type": "text",
+      "text": "### 联系HR前核对\n作品是否可公开？职位仍招？正式/实习？2027届可否面试？当前作品集版本是用户确认可发布版吗？",
+      "x": 1073,
+      "y": 821,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "e-5",
+      "type": "text",
+      "text": "### 面试必问五题\n谁带教？你们哪部作品最能代表质量？我能否参与前期创意/角色场景/分镜？半年后的职责？入职需补哪些硬技能？",
+      "x": 1073,
+      "y": 1078,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "e-6",
+      "type": "text",
+      "text": "### 投递/沟通状态记录\n真实HR回复、面试、试稿只在本人确认后登记；未经许可不自动联系HR、不投递；BOSS登录/验证码交还用户。",
+      "x": 1073,
+      "y": 1335,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "f-head",
+      "type": "text",
+      "text": "# 06｜求职反馈→能力成长闭环\n**找工作也是认识自己：用外部证据更新能力地图**",
+      "x": 2103,
+      "y": -400,
+      "width": 824,
+      "height": 136,
+      "color": "1"
+    },
+    {
+      "id": "f-0",
+      "type": "text",
+      "text": "### 输入｜真实岗位要求\n每个JD保留一条决定性要求：传统画工、角色设计过程、镜头、Spine/UE/AE、AI辅助或企业协作。",
+      "x": 2103,
+      "y": -207,
+      "width": 824,
+      "height": 185,
+      "color": "1"
+    },
+    {
+      "id": "f-1",
+      "type": "text",
+      "text": "### 对照｜已有作品能不能证明\n能证明＝提供具体画面和版本；只能口头解释＝证据待补；没做过＝学习目标，严禁假装履历。",
+      "x": 2103,
+      "y": 50,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "f-2",
+      "type": "text",
+      "text": "### 缺口按价值排序\n只挑最影响近期目标公司的一项：原画规范图/角色表演/连续镜头/完整分镜/商业交付流程等，别同时学十项。",
+      "x": 2103,
+      "y": 307,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "f-3",
+      "type": "text",
+      "text": "### 最小练习与验证\n把欠缺的技能变为一个可交付测试：同角色三镜头，规范角色卡，15–30秒可看懂的故事，或1个可玩小游戏Demo。",
+      "x": 2103,
+      "y": 564,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "f-4",
+      "type": "text",
+      "text": "### 返回岗位，复核收益\n让专业人/HR或试稿评分：作品是否更符合JD？有新反馈才更新能力评价，不依据生成数量宣称提高。",
+      "x": 2103,
+      "y": 821,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "f-5",
+      "type": "text",
+      "text": "### 归档与证据来源\n职位事实与进度→Linear 674-302；原始作品→674-303 / 资产仓；这张Canvas→职业认知和选择，不取代十元L2正本。",
+      "x": 2103,
+      "y": 1078,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "f-6",
+      "type": "text",
+      "text": "### 每周复盘（仅一个结果）\n本周筛到了什么好团队？为什么？发现了哪个能力短板？下一步只推进一个最小练习。只记录真实增量。",
+      "x": 2103,
+      "y": 1335,
+      "width": 824,
+      "height": 185
+    },
+    {
+      "id": "file-prev",
+      "type": "file",
+      "file": "15-总思路/就业.canvas",
+      "x": 3220,
+      "y": -1660,
+      "width": 760,
+      "height": 440
+    },
+    {
+      "id": "file-main",
+      "type": "file",
+      "file": "15-总思路/总思路.canvas",
+      "x": 3220,
+      "y": -1120,
+      "width": 760,
+      "height": 440
+    },
+    {
+      "id": "links-guide",
+      "type": "text",
+      "text": "## 已有Canvas回看\n此图是 **BOSS岗位执行／认知图**，不是替代旧就业分析。\n左侧对应原 `就业.canvas`，下侧为总思路；两份旧图均保持不变。",
+      "x": 3220,
+      "y": -610,
+      "width": 760,
+      "height": 220
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-000",
+      "fromNode": "map-title",
+      "toNode": "map-center",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-001",
+      "fromNode": "map-center",
+      "toNode": "map-flow",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-002",
+      "fromNode": "a-head",
+      "toNode": "a-0",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-003",
+      "fromNode": "a-0",
+      "toNode": "a-1",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-004",
+      "fromNode": "a-1",
+      "toNode": "a-2",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-005",
+      "fromNode": "a-2",
+      "toNode": "a-3",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-006",
+      "fromNode": "a-3",
+      "toNode": "a-4",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-007",
+      "fromNode": "a-4",
+      "toNode": "a-5",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-008",
+      "fromNode": "a-5",
+      "toNode": "a-6",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-009",
+      "fromNode": "map-flow",
+      "toNode": "a-head",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-010",
+      "fromNode": "b-head",
+      "toNode": "b-0",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-011",
+      "fromNode": "b-0",
+      "toNode": "b-1",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-012",
+      "fromNode": "b-1",
+      "toNode": "b-2",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-013",
+      "fromNode": "b-2",
+      "toNode": "b-3",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-014",
+      "fromNode": "b-3",
+      "toNode": "b-4",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-015",
+      "fromNode": "b-4",
+      "toNode": "b-5",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-016",
+      "fromNode": "b-5",
+      "toNode": "b-6",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-017",
+      "fromNode": "map-flow",
+      "toNode": "b-head",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-018",
+      "fromNode": "c-head",
+      "toNode": "c-0",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-019",
+      "fromNode": "c-0",
+      "toNode": "c-1",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-020",
+      "fromNode": "c-1",
+      "toNode": "c-2",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-021",
+      "fromNode": "c-2",
+      "toNode": "c-3",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-022",
+      "fromNode": "c-3",
+      "toNode": "c-4",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-023",
+      "fromNode": "c-4",
+      "toNode": "c-5",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-024",
+      "fromNode": "c-5",
+      "toNode": "c-6",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-025",
+      "fromNode": "c-6",
+      "toNode": "c-7",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-026",
+      "fromNode": "map-flow",
+      "toNode": "c-head",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-027",
+      "fromNode": "d-head",
+      "toNode": "d-0",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-028",
+      "fromNode": "d-0",
+      "toNode": "d-1",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-029",
+      "fromNode": "d-1",
+      "toNode": "d-2",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-030",
+      "fromNode": "d-2",
+      "toNode": "d-3",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-031",
+      "fromNode": "d-3",
+      "toNode": "d-4",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-032",
+      "fromNode": "d-4",
+      "toNode": "d-5",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-033",
+      "fromNode": "d-5",
+      "toNode": "d-6",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-034",
+      "fromNode": "d-6",
+      "toNode": "d-7",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-035",
+      "fromNode": "map-flow",
+      "toNode": "d-head",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-036",
+      "fromNode": "e-head",
+      "toNode": "e-0",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-037",
+      "fromNode": "e-0",
+      "toNode": "e-1",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-038",
+      "fromNode": "e-1",
+      "toNode": "e-2",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-039",
+      "fromNode": "e-2",
+      "toNode": "e-3",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-040",
+      "fromNode": "e-3",
+      "toNode": "e-4",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-041",
+      "fromNode": "e-4",
+      "toNode": "e-5",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-042",
+      "fromNode": "e-5",
+      "toNode": "e-6",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-043",
+      "fromNode": "map-flow",
+      "toNode": "e-head",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-044",
+      "fromNode": "f-head",
+      "toNode": "f-0",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-045",
+      "fromNode": "f-0",
+      "toNode": "f-1",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-046",
+      "fromNode": "f-1",
+      "toNode": "f-2",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-047",
+      "fromNode": "f-2",
+      "toNode": "f-3",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-048",
+      "fromNode": "f-3",
+      "toNode": "f-4",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-049",
+      "fromNode": "f-4",
+      "toNode": "f-5",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-050",
+      "fromNode": "f-5",
+      "toNode": "f-6",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-051",
+      "fromNode": "map-flow",
+      "toNode": "f-head",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-052",
+      "fromNode": "file-prev",
+      "toNode": "links-guide",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-053",
+      "fromNode": "file-main",
+      "toNode": "links-guide",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-054",
+      "fromNode": "d-0",
+      "toNode": "c-0",
+      "fromSide": "left",
+      "toSide": "right",
+      "label": "带作品评估"
+    },
+    {
+      "id": "edge-055",
+      "fromNode": "b-4",
+      "toNode": "c-3",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "AI原文确认"
+    },
+    {
+      "id": "edge-056",
+      "fromNode": "e-6",
+      "toNode": "f-0",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "反馈进入学习闭环"
+    }
+  ]
+}
