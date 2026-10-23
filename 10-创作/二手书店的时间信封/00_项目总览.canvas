@@ -1,0 +1,421 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "# 674-313｜《二手书店的时间信封》项目总览\n**唯一总入口 · v1（2026-10-23）**\n3条主干：**故事与人物 → 电影横纵构图 → 视觉生产与交付**。\n当前创作方向：**爱情＋悬疑**；亲情不是主线。\n⚠️ 剧情增写均标“改编候选”；人物图未审核；未有正式成片。\n[Linear 674-313](https://linear.app/674/issue/674-313/userncda-9c3二手书店的时间信封省赛片花与国赛三集)",
+      "x": -100,
+      "y": -1850,
+      "width": 1040,
+      "height": 410,
+      "color": "6"
+    },
+    {
+      "id": "story",
+      "type": "text",
+      "text": "# A｜剧本与人物\n从官方梗概建立一条自洽的因果链，再写镜头。\n**横向**＝同一事件中人物/物件/信息如何互相影响；**纵向**＝事件如何造成下一事件。\n**必须区分官方事实与自主编剧假设**。",
+      "x": -3330,
+      "y": -1090,
+      "width": 970,
+      "height": 320,
+      "color": "3"
+    },
+    {
+      "id": "movie",
+      "type": "text",
+      "text": "# B｜参考电影：横纵文字构图\n三部电影已完成**公开剧情层面的**纵向因果、横向同事件关系与手法提取。\n⚠️ 未取得完整分场剧本、未逐帧拉片；不宣称全片场景级分析完成。\n**本项目不再将未经核对的十元标签当论证结论。**",
+      "x": -150,
+      "y": -1090,
+      "width": 1050,
+      "height": 390,
+      "color": "4"
+    },
+    {
+      "id": "prod",
+      "type": "text",
+      "text": "# C｜制作与交付\n复用《方志敏》**一镜一卡**方法，而不是把旧角色或旧画面当成新片成品。\n当前工作只使用已查明来源的内容；待验收素材标 `候选` 或 `MISSING`。",
+      "x": 3000,
+      "y": -1090,
+      "width": 900,
+      "height": 320,
+      "color": "5"
+    },
+    {
+      "id": "facts",
+      "type": "text",
+      "text": "# A1｜官方给定事实（正本）\n美国交换生 Claire（22岁）在巴黎左岸二手书店发现神秘信件，信件可**轻微改变现在**。\n她遇见写信人祖母的孙子、地铁钢琴家 Lucas（26岁）；书店老板 Marcel（60岁）知情但只引导。\n**赛事给出的短梗概就是全部给定剧本**；不等待不存在的长版。\n[官方给定短剧本登记](https://linear.app/674/document/官方给定短剧本正本第5号二手书店的时间信封第一映射-d9b421d001d2)",
+      "x": -4550,
+      "y": -250,
+      "width": 980,
+      "height": 470,
+      "color": "3"
+    },
+    {
+      "id": "characters",
+      "type": "text",
+      "text": "# A2｜人物关系：行动优先\n**Claire**：好奇且不善交际；有理由主动询问陌生人。\n**Lucas**：钢琴家、祖母的孙子；有能力核查笔迹/物件。\n**Marcel**：掌握部分线索但不能替 Claire 解决全部谜题。\n**祖母**：仅在信件、笔迹、旋律等可见证据中出现；不凭空确定她等待谁。\n**感情线的验证：**两人共同经历、相互选择，而非突然表白。",
+      "x": -3370,
+      "y": -250,
+      "width": 980,
+      "height": 480,
+      "color": "3"
+    },
+    {
+      "id": "plot",
+      "type": "text",
+      "text": "# A3｜90秒片花因果草案（待锁定）\n0–15s 旧书店 → Claire发现不合理的信。\n15–35s 核对日期/笔迹/地址等小证据 → 她决定去找 Lucas。\n35–58s 地铁钢琴家遇见她 → 一方要答案，一方不轻信。\n58–78s 两人共同验证一条线索 → 信任出现。\n78–90s **当下有一个可观察的微小变化** → 新悬念。\n**上述为改编候选，不是官方镜头。**",
+      "x": -2170,
+      "y": -250,
+      "width": 1020,
+      "height": 505,
+      "color": "3"
+    },
+    {
+      "id": "relation313",
+      "type": "text",
+      "text": "# A4｜横向同事件：Claire把信交给Lucas\n- Claire：想知道信来源，又怕被拒绝。\n- Lucas：担心私人物件被误用，掌握核对家族线索的权力。\n- Marcel：知道部分来历，只能提供有限提示。\n- 信件：两人都能读到，但各自理解不同。\n- 场景：地铁琴声让 Lucas 的私人记忆被带进公众空间。\n**同场后果：**核对一个事实→旧解释动摇→必须合作。",
+      "x": -3370,
+      "y": 430,
+      "width": 980,
+      "height": 525,
+      "color": "3"
+    },
+    {
+      "id": "rule",
+      "type": "text",
+      "text": "# A5｜世界规则边界\n唯一必守：**信件只能轻微改变现在**。\n“读信并完成一个小行动，某细节改变”“失灵琴键恢复”都仅为改编候选。\n**不能**写成大范围穿越、角色复活、万能改命。\n爱情和悬疑都应依赖角色作出的具体选择。",
+      "x": -2170,
+      "y": 430,
+      "width": 1020,
+      "height": 405,
+      "color": "3"
+    },
+    {
+      "id": "film_dearyou",
+      "type": "text",
+      "text": "# 参考01｜《给阿嬷的情书》（2026）\n**已核情节：**孙子带旧家书赴泰国找人；查访发现收信所指之人已亡，通信另有代笔者。\n**编剧结构：**旧信（钩子）→跨国追索（行动）→身份错认（悬疑）→代笔揭示（真相重估）。\n**对313只取：**「信件提示的关系，不等于真实关系」；用一条反证线索推动Claire调查。\n**不取：**祖孙亲情主题、海外寻亲任务、原片角色剧情。\n**已核资料：**https://www.chinafilm.gov.cn/xwzx/gzdt/202605/t20260521_990708.html\nhttps://static.nfnews.com/content/202605/19/c12444698.html\n\n**对313提取：**反证机制：观众以为寄信者是 A，追查证明另有其人；先建立认知，再给一条可核实的反证。\n**避免照抄：**不复制侨批身份反转、泰国寻亲及亲情主线。",
+      "x": -1100,
+      "y": -250,
+      "width": 900,
+      "height": 550,
+      "color": "4"
+    },
+    {
+      "id": "film_dearyou_vertical",
+      "type": "text",
+      "text": "# 影片1《给阿嬷的情书》｜纵轴【叙事因果】\nE1 阿嬷长期保存家书→孙子因现实困境赴泰查找。\nE2 发现郑木生早逝，与持续来信冲突。\nE3 查出谢南枝多年代笔寄款→旧信含义翻转。\nE4 揭开延迟沟通/误解；过往两位女性的关系得到重新理解。\n**核心：**先立“信件来源”预期，再以反证改变解释；查信目的由利益转向认知/伦理。\n\n**适用层级：**公开故事事件因果，不是逐镜拉片记录。",
+      "x": -1100,
+      "y": 530,
+      "width": 900,
+      "height": 450,
+      "color": "4"
+    },
+    {
+      "id": "film_dearyou_horizontal",
+      "type": "text",
+      "text": "# 影片1｜横轴【同事件 E2：寄信人早已去世】\n孙子晓伟：原先盼找到富豪祖父→发现信件不合逻辑→继续追。\n阿嬷淑柔：多年相信来信来自丈夫→其等待逻辑受挑战（她此时是否知情与何时知情须依电影段落区分）。\n谢南枝：隐藏的真实寄信者→承担保密/物质代价。\n物件：侨批既是过去的爱情证据，也成身份错误的证据。\n\n**剧本工具：**记录各方目标、已知/未知、冲突物件和下一次行动，不把不同人物拆成平行年表。",
+      "x": -1100,
+      "y": 1200,
+      "width": 900,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "film_loveletter",
+      "type": "text",
+      "text": "# 参考02｜《情书》（1995，岩井俊二）\n**已核情节：**女主写信给已逝未婚夫的旧地址，竟收到同名女性回信，调查逐步揭示旧日隐秘感情。\n**编剧结构：**不可能的回信（钩子）→同名/地址误认（悬念）→双方往复验证（调查）→细小旧事重估感情（情感反转）。\n**对313只取：**先让观众问「这封信为何到她手里？」；让线索一层层更改角色对过去的理解。\n**不取：**死亡悼亡做主线。\n**已核资料：**https://www.iq.com/wiki/zh_cn/album/%E6%83%85%E4%B9%A6-%E9%A2%84%E5%91%8A%E7%89%87-1995-19rrk1y3ik\nhttps://www.thepaper.cn/newsDetail_forward_30841823\n\n**对313提取：**递进线索机制：第一次回信制造疑问，后续姓名/地址/画像等实物逐步改写观众解释。\n**避免照抄：**不照搬同名误投、逝者通信或悼亡剧情。",
+      "x": 0,
+      "y": -250,
+      "width": 900,
+      "height": 550,
+      "color": "4"
+    },
+    {
+      "id": "film_loveletter_vertical",
+      "type": "text",
+      "text": "# 影片2《情书》｜纵轴【叙事因果】\nE1 博子写信给已故未婚夫旧址，本不期待回信。\nE2 同名女藤井树回信→“不可能”的悬念成立。\nE3 往来通信、回忆和查证→两个藤井树的过去逐渐重构。\nE4 借书卡背面的画像揭示未表达的暗恋。\n**核心：**小事实滚动修订旧判断，终局用物件而非解释台词兑现爱情。\n\n**适用层级：**公开故事事件因果，不是逐镜拉片记录。",
+      "x": 0,
+      "y": 530,
+      "width": 900,
+      "height": 450,
+      "color": "4"
+    },
+    {
+      "id": "film_loveletter_horizontal",
+      "type": "text",
+      "text": "# 影片2｜横轴【同事件 E2：意外回信】\n博子：寄信=与逝者对话→回信让哀思转为求证。\n女藤井树：只看见寄错的陌生信→被要求回忆少年时代。\n已逝男藤井树：不出场行动，过去的信息差成为现在的动力。\n地址/姓名：同名误投形成可解释的异常，不是真正复活。\n\n**剧本工具：**记录各方目标、已知/未知、冲突物件和下一次行动，不把不同人物拆成平行年表。",
+      "x": 0,
+      "y": 1200,
+      "width": 900,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "film_ilmare",
+      "type": "text",
+      "text": "# 参考03｜《触不到的恋人》/《湖边小屋》（2000/2006）\n**已核情节：**两人在不同时期通过同一个信箱通信；恋爱受时间差阻隔，并尝试会面。\n**编剧结构：**单一异常媒介（信箱）→可验证时间规则→通信促成亲密→「无法如常见面」成为爱情障碍→行动解决。\n**对313只取：**一条明确、可验证的时间信件规则；时间异常同时推动浪漫与谜题。\n**不取：**跨年双向通信/大幅改写历史，313给定仅「微弱改变现在」。\n**已核资料：**https://app2.atmovies.com.tw/film/fikr30282599/\nhttps://www.iq.com/album/%E8%A7%B8%E4%B8%8D%E5%88%B0%E7%9A%84%E6%88%80%E4%BA%BA-2000-kwtjkiqr7s?lang=zh_tw\n\n**对313提取：**规则制造阻碍：先用行动验证时间异常，再让这条规则同时促进靠近、妨碍相见。\n**避免照抄：**不得移植跨年双向通信；本项目只能轻微改变现在。",
+      "x": 1100,
+      "y": -250,
+      "width": 900,
+      "height": 550,
+      "color": "4"
+    },
+    {
+      "id": "film_ilmare_vertical",
+      "type": "text",
+      "text": "# 影片3《触不到的恋人》(2000)｜纵轴【叙事因果】\nE1 1997/1999年的住客通过同一信箱通信。\nE2 日期相冲突→回信、验证时间差。\nE3 书信积累了解与依恋→想要相见。\nE4 两年错位让爱情成为行动难题；双方试图影响现实。\n**核心：**时间机制不是一次奇观，而是不断阻碍人物愿望的一条规则。\n\n**适用层级：**公开故事事件因果，不是逐镜拉片记录。",
+      "x": 1100,
+      "y": 530,
+      "width": 900,
+      "height": 450,
+      "color": "4"
+    },
+    {
+      "id": "film_ilmare_horizontal",
+      "type": "text",
+      "text": "# 影片3｜横轴【同事件 E2：验证信箱穿越时间】\n1997年的星贤：掌握较早时间的信息，可提前行动，却不知后来结果。\n1999年的恩珠：知道未来已发生的事实，却无法直接走回过去。\n信箱：双方共同接触点；时间差即阻力。\n**权力/信息不对称：**一个能先行动，一个能后验证；每次通信用双方不同的“现在”交叉构成。\n\n**剧本工具：**记录各方目标、已知/未知、冲突物件和下一次行动，不把不同人物拆成平行年表。",
+      "x": 1100,
+      "y": 1200,
+      "width": 900,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "transfer",
+      "type": "text",
+      "text": "# B4｜从三部电影借什么？\n《给阿嬷的情书》→**反证改变认知**，而非照搬寄信人身份。\n《情书》→**物件分层揭示真相**，而非大段解说。\n《触不到的恋人》→**一条稳定可验证时间规则**，同时产生恋爱动力与障碍。\n**转化到313：**一封异常信 → Claire主动核实 → Lucas以证据回应 → 二人合作 → 微小变化 → 留谜。\n⚠️ 不移植他片人物、结局及更强魔法。",
+      "x": 0,
+      "y": 1970,
+      "width": 1050,
+      "height": 490,
+      "color": "2"
+    },
+    {
+      "id": "assets",
+      "type": "text",
+      "text": "# C1｜角色、场景与旧素材\n已收集：Claire／Lucas／Marcel 三套**四宫格初稿**，均是 **候选，未冻结**。\n待做：书店、地铁琴位、街道的母图和色卡。\n《方志敏》可迁移的是二维微Q平涂、线稿、暖冷光影和一镜一卡制作习惯；原MP4、旧分镜逐镜对账仍 **PARTIAL**。\n旧《方志敏》《黎黎隆》资料保留备份；**不在本仓覆盖**。",
+      "x": 2280,
+      "y": -250,
+      "width": 960,
+      "height": 510,
+      "color": "5"
+    },
+    {
+      "id": "shotcard",
+      "type": "text",
+      "text": "# C2｜一镜一卡：图像 × 时间\n**图像构成**：人物身份/场景/机位/景别/光影/构图/风格 + 首帧路径。\n**时间构成**：0–N秒动作、表情、镜头运动、停顿、台词与音轨。\n**融合**：一张任务卡统一表达可生成镜头，包含时长、首尾状态、禁项与审核结果。\n⚠️ 《方志敏》第一幕原卡已证实一卡有时可含多切景；不能强制等于一条连续镜。\n[方志敏第一幕任务卡](https://github.com/lukunanaron674-stack/-ten-yuan-vault/blob/main/方/01_任务卡/第一幕_任务卡.md)",
+      "x": 3470,
+      "y": -250,
+      "width": 1020,
+      "height": 530,
+      "color": "5"
+    },
+    {
+      "id": "deliver",
+      "type": "text",
+      "text": "# C3｜10月30日前省赛交付\n**片花**：60–120秒，MP4／H.264+AAC／≥1080p／24–30fps／立体声／≤500MB。\n**海报**：A3竖版、300DPI、RGB、JPG ≤5MB。\n**设计说明**：≤500字；核对学校投稿资格、标识和版权。\n10月31日作为投稿缓冲。\n**国赛三集仅入围后执行**，不挤占片花生产。",
+      "x": 4660,
+      "y": -250,
+      "width": 950,
+      "height": 485,
+      "color": "5"
+    },
+    {
+      "id": "todo",
+      "type": "text",
+      "text": "# C4｜目前实际状态与两件优先事\nR0 官方梗概事实：用户已确认；报名资格/版权另核。\nR1 方志敏素材审计：**PARTIAL**，本地D盘实际素材未访问，不能认定已复用。\nR2 剧本/分镜：横纵草案有，**12–16镜可拍版本尚未定稿**。\nR3 三角色四宫格：**候选**，未 USER PASS。\n**下一步只做两件：**①冻结可拍90秒因果与分镜 ②审三角色和必要场景。\n**STOP：**无谓拓展世界观、不添加第四集、不把参考研究当成片。",
+      "x": 3420,
+      "y": 510,
+      "width": 1200,
+      "height": 620,
+      "color": "5"
+    },
+    {
+      "id": "links",
+      "type": "text",
+      "text": "# C5｜相关 Canvas 与资料入口\n[黎黎隆·世界观总图](https://github.com/lukunanaron674-stack/-ten-yuan-vault/blob/main/黎黎隆项目/00_世界观发散树.canvas)（只借总览层级）\n[AI漫剧成熟工作流·学习总图](https://github.com/lukunanaron674-stack/-ten-yuan-vault/blob/main/AI问题解决Canvas/AI漫剧成熟工作流复现_学习总图_20261014.canvas)（借生产流程）\n[方志敏规则发散树](https://github.com/lukunanaron674-stack/-ten-yuan-vault/blob/main/黎黎隆项目/01_灵感墙_R5_方志敏规则发散树.canvas)（借画布阅读规则）\n[674-313 Linear](https://linear.app/674/issue/674-313/userncda-9c3二手书店的时间信封省赛片花与国赛三集)\n本项目详表：`10-创作/二手书店的时间信封/01_三部电影_横纵文字构图.md`",
+      "x": 4650,
+      "y": 510,
+      "width": 1150,
+      "height": 650,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_root_story",
+      "fromNode": "root",
+      "toNode": "story",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_root_movie",
+      "fromNode": "root",
+      "toNode": "movie",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_root_prod",
+      "fromNode": "root",
+      "toNode": "prod",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_story_facts",
+      "fromNode": "story",
+      "toNode": "facts",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_story_characters",
+      "fromNode": "story",
+      "toNode": "characters",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_story_plot",
+      "fromNode": "story",
+      "toNode": "plot",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_characters_relation313",
+      "fromNode": "characters",
+      "toNode": "relation313",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_plot_rule",
+      "fromNode": "plot",
+      "toNode": "rule",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_movie_film_dearyou",
+      "fromNode": "movie",
+      "toNode": "film_dearyou",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_film_dearyou_film_dearyou_vertical",
+      "fromNode": "film_dearyou",
+      "toNode": "film_dearyou_vertical",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_film_dearyou_vertical_film_dearyou_horizontal",
+      "fromNode": "film_dearyou_vertical",
+      "toNode": "film_dearyou_horizontal",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_movie_film_loveletter",
+      "fromNode": "movie",
+      "toNode": "film_loveletter",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_film_loveletter_film_loveletter_vertical",
+      "fromNode": "film_loveletter",
+      "toNode": "film_loveletter_vertical",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_film_loveletter_vertical_film_loveletter_horizontal",
+      "fromNode": "film_loveletter_vertical",
+      "toNode": "film_loveletter_horizontal",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_movie_film_ilmare",
+      "fromNode": "movie",
+      "toNode": "film_ilmare",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_film_ilmare_film_ilmare_vertical",
+      "fromNode": "film_ilmare",
+      "toNode": "film_ilmare_vertical",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_film_ilmare_vertical_film_ilmare_horizontal",
+      "fromNode": "film_ilmare_vertical",
+      "toNode": "film_ilmare_horizontal",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_film_dearyou_horizontal_transfer",
+      "fromNode": "film_dearyou_horizontal",
+      "toNode": "transfer",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_film_loveletter_horizontal_transfer",
+      "fromNode": "film_loveletter_horizontal",
+      "toNode": "transfer",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_film_ilmare_horizontal_transfer",
+      "fromNode": "film_ilmare_horizontal",
+      "toNode": "transfer",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_prod_assets",
+      "fromNode": "prod",
+      "toNode": "assets",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_prod_shotcard",
+      "fromNode": "prod",
+      "toNode": "shotcard",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_prod_deliver",
+      "fromNode": "prod",
+      "toNode": "deliver",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_prod_todo",
+      "fromNode": "prod",
+      "toNode": "todo",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_prod_links",
+      "fromNode": "prod",
+      "toNode": "links",
+      "fromSide": "bottom",
+      "toSide": "top"
+    }
+  ]
+}
