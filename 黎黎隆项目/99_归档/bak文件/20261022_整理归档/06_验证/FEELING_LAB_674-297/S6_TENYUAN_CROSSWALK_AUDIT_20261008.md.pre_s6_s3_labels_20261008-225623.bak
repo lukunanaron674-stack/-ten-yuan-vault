@@ -1,0 +1,92 @@
+# S6 十元候选字段三源核对｜2026-10-08
+
+## 一眼结论
+
+- 173-04审核台、S4_ASSIGN和区域感受地图中的18个角色十元主/次候选值：18/18逐项相同，差异0。
+- 四个重点角色对应的8个组织/区域/场景十元候选值，与S4_ASSIGN对象行相同。
+- 这证明记录字段互相对得上，不证明角色十元、小世界挂靠或关系感受已经过审/实测。
+- 18张角色卡仍PROVISIONAL / PENDING_USER；角色×小世界关系和组合感受仍UNKNOWN。本轮真人报告、受控实验、H3提交均为0。
+
+## 输入证据
+
+| 文件 | 用途 | 审计前SHA-256 |
+|---|---|---|
+| 黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/173-04_红心角色十元审核台_STAGING_20261008.canvas | 18张候选卡与十元候选 | 427d63d104ad65f9f9e8753b9760398a6e96e028bb0f73e3e91165f435e853ed |
+| 黎黎隆项目/06_验证/FEELING_LAB_674-297/S4_ASSIGN.json | 角色记录、组织/区域/暂存场景十元字段 | 2a6791f65985fe3576ec4fbcb3ce8dc8c22501ec1dcbae26070b8ce348977a41 |
+| 黎黎隆项目/06_验证/FEELING_LAB_674-297/REGION_FEELING_MAP.md | 18行角色—小世界候选交叉表 | c877c6a40ff7ef6749c7a6d280c7db32a1f3e0ebe90397f184ae455f03376b4f |
+
+## 18个角色的候选主/次值
+
+“单一”表示次项留空、不补凑。三来源的每一行完全一致。
+
+| 角色卡 | 角色十元候选主/次 | 状态 |
+|---|---|---|
+| H02｜红色船员副手 | z + xn | PROVISIONAL / PENDING_USER |
+| H05｜荒野猎手（旧表另有「折层递送者」） | xn + n | PROVISIONAL / PENDING_USER |
+| H06｜钢铁教派主教 | zn + xn | PROVISIONAL / PENDING_USER |
+| H24（＝线A S01）｜苗圃学徒 / 共生农人 | n + zn | PROVISIONAL / PENDING_USER |
+| N14｜红珊瑚祭司 | zn + xn | PROVISIONAL / PENDING_USER |
+| S03b_new｜学院区 / 灯塔守夜人 | n + xn | PROVISIONAL / PENDING_USER |
+| S09｜粉色魔法师·黑金魔法 | z + zn | PROVISIONAL / PENDING_USER |
+| S17_new｜钢铁教派神官 | zn + xn | PROVISIONAL / PENDING_USER |
+| 大头联想角色_十五款候选02_r1c3 | xn + 单一 | PROVISIONAL / PENDING_USER |
+| 大头联想角色_十五款候选02_r2c1 | xn + 单一 | PROVISIONAL / PENDING_USER |
+| 头像精修_第三组_3x5_CANDIDATE_r1c3 | xn + 单一 | PROVISIONAL / PENDING_USER |
+| 头像精修_第三组_3x5_CANDIDATE_r2c3 | xn + 单一 | PROVISIONAL / PENDING_USER |
+| 第二批_十五头像_3x5_候选01_r1c4 | n + 单一 | PROVISIONAL / PENDING_USER |
+| L1_RUN-B_r3c2 | zx + 单一 | PROVISIONAL / PENDING_USER |
+| L1_RUN-C_r1c3 | n + 单一 | PROVISIONAL / PENDING_USER |
+| HEADRERUN_A_r3c3 | zx + 单一 | PROVISIONAL / PENDING_USER |
+| HEADRERUN_B_r3c3 | zx + 单一 | PROVISIONAL / PENDING_USER |
+| 第三批_跳染_r2c4 | n + 单一 | PROVISIONAL / PENDING_USER |
+
+## 四角色—小世界候选对象字段
+
+| 角色 | 小世界对象候选 | S4_ASSIGN源字段 | 挂靠/关系边界 |
+|---|---|---|---|
+| H05 | 白角猎径 xn+n；R11城市—边境通路 zx+xn | staging_objects.猎径 attaches H05；regions.R11.characters含H05 | 白角猎径明示区域候选；R11对象值相符不替用户确认最终身份挂靠 |
+| H06 | O1钢铁教派 n+xn；青镜圣堂 zn+xn | organizations.O1钢派；staging_objects.镜堂 attaches O1钢派 | 角色身份/归属记录有用户确认不等于角色或小世界十元确认；十元仍候选 |
+| N14 | O5生态共生 n+nz；珊瑚滩祭场 zn+xn；R13退潮水道 nz+xz | organizations.O5共生；staging_objects.珊祭 attaches O5（候选）；characters.N14.world_position写R13 | O5与祭场挂靠待审；R13角色行/区域角色清单冲突，另有R06共桌、R07灯影线索并存，均未裁决 |
+| S09 | 粉色魔法城·髓盆咒市 z+zn | staging_objects.粉城，note指向S09 | 粉城方向有身份/位置记录，不等于十元审核或组合感受通过；赤罩旧支仍未终裁 |
+
+### N14—R13具体差异
+
+S4_ASSIGN.characters[N14].world_position含R13退潮水道，但S4_ASSIGN.regions[R13].characters为H30 N15 N21，没有N14。与此同时，R06对象行列N14，R07对象行也列N14。因此地图保留并列线索，不把R13候选关系升级为确定挂靠。
+
+## 方法和解释范围
+
+1. 从审核Canvas读取18个包含“角色十元候选”的候选卡标题及主/次值。
+2. 按S4_ASSIGN角色键对齐；对“单一，不补凑”只在机器字段比较时对应源JSON的次项空值标记“—”，没有推补第二项。
+3. 对照区域地图同名18行的主/次值，逐条比较；结果CanvasRoleRows=18、MapRows=18、exactCanvasMap=18、exactCanvasS4=18、mismatches=0、USER_PENDING=18。
+4. 四组小世界值从S4_ASSIGN各自的组织、区域和staging_objects取字段复核。值相同只证明表中引用一致；不据此确认对象关联、实际感受或因果。
+
+## 下一步门槛
+
+继续保持S6。待用户逐卡裁决和/或674-296出现真实可继承资产行后，再分别推进角色十元审核、对象挂靠复核和单变量感受实验；4080目标端当前离线，A_READY仍为0。
+## 18行小世界对象候选来源全量核验｜2026-10-08 14:48 UTC
+
+输入SHA-256：173-04审核Canvas 427d63d104ad65f9f9e8753b9760398a6e96e028bb0f73e3e91165f435e853ed；S4_ASSIGN.json 2a6791f65985fe3576ec4fbcb3ce8dc8c22501ec1dcbae26070b8ce348977a41；REGION_FEELING_MAP.md当前快照 588a00d39a01eb0899d08bb9960f338428641a9bc2292bf32c22103db344dc5b。
+
+共17个具名对象Ten Yuan候选值，逐项能在S4_ASSIGN对象记录找到唯一同名/同编号对象，且对象值精确匹配；对象名称/编号也出现在同一角色的S4 characters.world_position。结果：concreteObjects=17、exactObjectValues=17、rolePositionLinks=17、mismatches=0。以下短码来自地图原文：
+
+| 角色 | 对象 | 候选Ten Yuan | S4_ASSIGN对象键 |
+|---|---|---|---|
+| H02 | 船队 | z+xn | organizations.O4船队 |
+| H02 | 锚港 | z+nz | scenes.SC02 |
+| H02 | 离船碑 | z+nz | scenes.SC14 |
+| H05 | 白角猎径 | xn+n | staging_objects.猎径 |
+| H05 | 边境通路 | zx+xn | regions.R11 |
+| H06 | 钢铁教派 | n+xn | organizations.O1钢派 |
+| H06 | 青镜圣堂 | zn+xn | staging_objects.镜堂 |
+| H24 | 屋顶苗圃 | n+zn | staging_objects.苗圃 |
+| H24 | 南栖地 | n+nz | regions.R14 |
+| N14 | 生态共生 | n+nz | organizations.O5共生 |
+| N14 | 珊瑚滩祭场 | zn+xn | staging_objects.珊祭 |
+| N14 | 退潮水道 | nz+xz | regions.R13 |
+| S03b_new | 青色学院区 | n+xn | staging_objects.学院区 |
+| S09 | 粉色魔法城·髓盆咒市 | z+zn | staging_objects.粉城 |
+| S17_new | 钢铁教派 | n+xn | organizations.O1钢派 |
+| S17_new | 青镜圣堂 | zn+xn | staging_objects.镜堂 |
+| 第二批_十五头像_3x5_候选01_r1c4 | 青色城区 | n+nx | staging_objects.城区 |
+
+另外9个角色行没有具名小世界对象值，明确保持UNKNOWN / UNASSIGNED，不从其他角色复制对象。N14的world_position写R13，但R13区域对象characters字段未列N14；R06和R07对象字段同时列N14。此项只证明17个地图候选值能追到S4源对象和角色位置文字，不证明这些关系已最终确认、角色/对象Ten Yuan已由USER批准、或组合感受有真实实验支持。

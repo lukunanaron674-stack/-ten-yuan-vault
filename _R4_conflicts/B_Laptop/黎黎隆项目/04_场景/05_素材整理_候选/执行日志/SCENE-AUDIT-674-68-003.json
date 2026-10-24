@@ -1,0 +1,86 @@
+{
+  "run_id": "SCENE-AUDIT-674-68-003",
+  "issue_id": "674-68",
+  "timestamp": "2026-10-05T02:31:17+08:00",
+  "status": "PARTIAL_PASS / DELIVERABLES_COMPLETED_FOR_REVIEW",
+  "scope": "补齐双栏分析、风格候选、缺失冲突登记与生产交接，不生成图片",
+  "representative_cards": 14,
+  "detailed_evidence_sources": [
+    "SCENE-AUDIT-674-68-001",
+    "SCENE-AUDIT-674-68-002",
+    "I04_SOURCE_PATH_AUDIT_20260919_230520"
+  ],
+  "inventory": {
+    "canvases_scanned": 16,
+    "physical_image_paths_indexed": 360,
+    "unique_sha256_images": 344,
+    "duplicate_groups": 14,
+    "missing_source_or_conflict_records": 7,
+    "thumbnail_slots": 344,
+    "thumbnail_renderer_directly_renderable": 314,
+    "thumbnail_renderer_unreadable_or_unsupported": 30,
+    "detailed_full_open_sample": 13
+  },
+  "resolved_missing": [
+    {
+      "record": "seed_characters.png",
+      "state": "CONTINUE_MISSING"
+    },
+    {
+      "record": "seed_process.png",
+      "state": "CONTINUE_MISSING"
+    },
+    {
+      "record": "黎黎隆_X并Z克NZ_灵感墙_R1-R5_最终参考墙.canvas",
+      "state": "CONTINUE_MISSING"
+    },
+    {
+      "record": "02_X并Z克NZ_参考墙_R1-R5_v3.canvas",
+      "state": "ALTERNATE_PRESENT_NEEDS_CONFIRMATION"
+    },
+    {
+      "record": "D03_I02旧枢纽冒险者工会_绘制准备.canvas",
+      "state": "ARCHIVED_ONLY_NEEDS_CONFIRMATION"
+    },
+    {
+      "record": "duplicate seed_characters",
+      "state": "DUPLICATE_MISSING_RECORD"
+    },
+    {
+      "record": "duplicate seed_process",
+      "state": "DUPLICATE_MISSING_RECORD"
+    }
+  ],
+  "deliverables": [
+    {
+      "name": "02_世界观与画风双栏分析.md",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\02_世界观与画风双栏分析.md",
+      "bytes": 9820,
+      "sha256": "dda2405e6a18182a4765196b8ac74043f5de6a2f26fccceadd66c53ff6f7db4d"
+    },
+    {
+      "name": "03_风格共性候选.md",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\03_风格共性候选.md",
+      "bytes": 3305,
+      "sha256": "f54ee935edc3ae983fbb451649f4ddbe8b1ccf3d3062dca3ba7a121da8ce6db3"
+    },
+    {
+      "name": "04_缺失与版本冲突.md",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\04_缺失与版本冲突.md",
+      "bytes": 2518,
+      "sha256": "cfe804467da5a20f4e93ebc2f0903585100daa8c996b2e2e6cab8f113d035497"
+    },
+    {
+      "name": "05_生产框交接规格.md",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\05_生产框交接规格.md",
+      "bytes": 2935,
+      "sha256": "9d50083a757f73d612648c0a46ff87ea29e91881285cb0edfce3f0e864b0bd8f"
+    }
+  ],
+  "h3": "NOT_RUN",
+  "batch_image_generation": "NOT_RUN",
+  "network_research": "NOT_RUN",
+  "git_push": "NOT_RUN",
+  "originals_modified": "NOT_MODIFIED",
+  "next_step": "用户确认缺失/版本替代后，再决定是否允许生产框领取候选方向；整理框不自行恢复或替换来源"
+}

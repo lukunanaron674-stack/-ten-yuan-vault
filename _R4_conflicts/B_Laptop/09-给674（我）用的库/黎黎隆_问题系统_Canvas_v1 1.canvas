@@ -1,0 +1,411 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "# 《黎黎隆》问题系统\n\n**目标：问题 → 实验 → 任务 → 结果 → 结论 → 锁卡**\n\nLinear 只做调度；Codex 只执行；代理负责定义与审核。",
+      "x": 0,
+      "y": 0,
+      "width": 430,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "qpipe001",
+      "type": "text",
+      "text": "Q-PIPE-001｜什么算完成\n体量 10/10\n\n没有明确完成条件\n→ 资产持续发散\n→ 无法锁卡\n→ 下游一直吃漂移输入",
+      "x": 560,
+      "y": -360,
+      "width": "1",
+      "height": 180
+    },
+    {
+      "id": "qpipe008",
+      "type": "text",
+      "text": "Q-PIPE-008｜任务堆如何升级为问题系统\n体量 10/10\n\n只记录任务\n→ 看不到根因\n→ 重复返工\n→ 无法判断先解决什么",
+      "x": 560,
+      "y": -100,
+      "width": "1",
+      "height": 180
+    },
+    {
+      "id": "qpipe009",
+      "type": "text",
+      "text": "Q-PIPE-009｜问题编号 / 体量 / 因果链\n体量 10/10\n\n编号只表登记顺序\n体量衡量影响范围\n因果链追溯上游与下游",
+      "x": 560,
+      "y": 160,
+      "width": "1",
+      "height": 180
+    },
+    {
+      "id": "qasset001",
+      "type": "text",
+      "text": "Q-ASSET-001｜素材唯一来源不明确\n体量 9/10\n\n原稿 / AI图 / GitHub旧描述混用\n→ 身份漂移\n→ Codex误读\n→ 资产无法复用",
+      "x": 560,
+      "y": 420,
+      "width": "3",
+      "height": 180
+    },
+    {
+      "id": "qchar001",
+      "type": "text",
+      "text": "Q-CHAR-001｜角色文字身份未咬定\n体量 6/10\n\n视觉有了，但组织/身份/主题不稳定\n→ 每轮都可能重写角色",
+      "x": 1040,
+      "y": -420,
+      "width": "4",
+      "height": 180
+    },
+    {
+      "id": "qchar002",
+      "type": "text",
+      "text": "Q-CHAR-002｜文字设定如何服务视觉\n体量 7/10\n\n设定太发散\n→ 生图扩大变化\n→ 角色越画越不像原稿",
+      "x": 1040,
+      "y": -180,
+      "width": "4",
+      "height": 180
+    },
+    {
+      "id": "qchar003",
+      "type": "text",
+      "text": "Q-CHAR-003｜头像与身体比例继承\n体量 8/10\n\n只锁头像\n→ 四宫格身体漂移\n→ 全身比例不稳定",
+      "x": 1040,
+      "y": 60,
+      "width": "4",
+      "height": 180
+    },
+    {
+      "id": "qchar004",
+      "type": "text",
+      "text": "Q-CHAR-004｜冻结项 / 可发散项 / 禁止项\n体量 8/10\n\n未分层\n→ Codex不知道什么能改\n→ 审核标准模糊",
+      "x": 1040,
+      "y": 300,
+      "width": "4",
+      "height": 180
+    },
+    {
+      "id": "qchar005",
+      "type": "text",
+      "text": "Q-CHAR-005｜四宫格能否稳定锁比例\n体量 9/10\n\n单头像信息不足\n→ 全身随机补完\n→ H3身份连续性下降",
+      "x": 1040,
+      "y": 540,
+      "width": "4",
+      "height": 180
+    },
+    {
+      "id": "qpipe003",
+      "type": "text",
+      "text": "Q-PIPE-003｜Codex到底负责什么\n体量 8/10\n\nCodex若同时设计+执行\n→ 职责污染\n→ 版本不可控\n\n结论：Codex只执行明确任务",
+      "x": 1540,
+      "y": -420,
+      "width": "2",
+      "height": 180
+    },
+    {
+      "id": "qpipe004",
+      "type": "text",
+      "text": "Q-PIPE-004｜代理职责边界重叠\n体量 8/10\n\n世界观 / 角色 / 场景 / 审核互相越权\n→ 每轮都重新定义问题",
+      "x": 1540,
+      "y": -180,
+      "width": "2",
+      "height": 180
+    },
+    {
+      "id": "qpipe005",
+      "type": "text",
+      "text": "Q-PIPE-005｜生图输入闸门\n体量 9/10\n\n必须同时给：\n目标 / 保持 / 可变 / 禁止 / 参考资产",
+      "x": 1540,
+      "y": 60,
+      "width": "2",
+      "height": 180
+    },
+    {
+      "id": "qpipe006",
+      "type": "text",
+      "text": "Q-PIPE-006｜生图结果回写\n体量 8/10\n\nrun_id / 输入版本 / prompt / 输出路径 / 自检 / 失败原因 / 下一步",
+      "x": 1540,
+      "y": 300,
+      "width": "2",
+      "height": 180
+    },
+    {
+      "id": "qpipe007",
+      "type": "text",
+      "text": "Q-PIPE-007｜何时允许进入H3\n体量 9/10\n\n角色未锁 + 场景未锁\n→ 正式镜头禁止开始",
+      "x": 1540,
+      "y": 540,
+      "width": "2",
+      "height": 180
+    },
+    {
+      "id": "qasset002",
+      "type": "text",
+      "text": "Q-ASSET-002｜图像路径 / SHA 未绑定\n体量 7/10\n\n没有真实路径或SHA\n→ 不得假装正式资产\n→ 标记 MISSING / BLOCKED",
+      "x": 2020,
+      "y": -320,
+      "width": "3",
+      "height": 180
+    },
+    {
+      "id": "qasset003",
+      "type": "text",
+      "text": "Q-ASSET-003｜资产优先级树\n体量 9/10\n\n作者原稿 > 人工通过AI图 > 候选AI图 > 历史实验文字\n\n还需正式冻结",
+      "x": 2020,
+      "y": -80,
+      "width": "3",
+      "height": 180
+    },
+    {
+      "id": "qscene001",
+      "type": "text",
+      "text": "Q-SCENE-001｜场景视觉规则未冻结\n体量 7/10\n\n空间/色卡/风格不稳定\n→ Picture2持续变化",
+      "x": 2020,
+      "y": 160,
+      "width": "5",
+      "height": 180
+    },
+    {
+      "id": "qh3001",
+      "type": "text",
+      "text": "Q-H3-001｜H3输入版本与记录不一致\n体量 9/10\n\n任务记录词 ≠ 实际渲染词\n→ 测试结论失真",
+      "x": 2020,
+      "y": 400,
+      "width": "5",
+      "height": 180
+    },
+    {
+      "id": "qshot001",
+      "type": "text",
+      "text": "Q-SHOT-001｜镜头前缺锁卡闸门\n体量 8/10\n\n未锁角色 + 未锁场景\n→ 分镜/H3吃脏输入\n→ 返工扩大",
+      "x": 2020,
+      "y": 640,
+      "width": "5",
+      "height": 180
+    },
+    {
+      "id": "lifecycle",
+      "type": "text",
+      "text": "# 问题生命周期\n\n1. 登记 Q-ID\n2. 标体量 1–10\n3. 写因果链\n4. 找上游原因\n5. 标下游污染对象\n6. 设计最小实验\n7. 生成任务\n8. 回写结果\n9. 得出结论\n10. 锁卡 / 继续下一问题",
+      "x": 2560,
+      "y": 60,
+      "width": 460,
+      "height": 390,
+      "color": "6"
+    },
+    {
+      "id": "scale",
+      "type": "text",
+      "text": "# 体量尺标\n\n1–2 局部点问题\n3–4 单资产问题\n5–6 一类资产问题\n7–8 跨模块问题\n9 系统级问题\n10 根问题 / 母问题\n\n**优先级 ≠ 体量**\n建议：优先级 = 体量 × 阻塞度(1–5)",
+      "x": 2560,
+      "y": 520,
+      "width": 460,
+      "height": 340,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_root_1",
+      "fromNode": "root",
+      "toNode": "qpipe001",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e_root_2",
+      "fromNode": "root",
+      "toNode": "qpipe008",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e_root_3",
+      "fromNode": "root",
+      "toNode": "qpipe009",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e_root_4",
+      "fromNode": "root",
+      "toNode": "qasset001",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e_char_1",
+      "fromNode": "qasset001",
+      "toNode": "qchar001",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "素材与身份冲突"
+    },
+    {
+      "id": "e_char_2",
+      "fromNode": "qchar001",
+      "toNode": "qchar002",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "设定需服务视觉"
+    },
+    {
+      "id": "e_char_3",
+      "fromNode": "qchar002",
+      "toNode": "qchar003",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "开始锁身份"
+    },
+    {
+      "id": "e_char_4",
+      "fromNode": "qchar003",
+      "toNode": "qchar004",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "明确变与不变"
+    },
+    {
+      "id": "e_char_5",
+      "fromNode": "qchar004",
+      "toNode": "qchar005",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "进入比例验证"
+    },
+    {
+      "id": "e_pipe_1",
+      "fromNode": "qpipe008",
+      "toNode": "qpipe003",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "问题驱动执行"
+    },
+    {
+      "id": "e_pipe_2",
+      "fromNode": "qpipe003",
+      "toNode": "qpipe004",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "明确代理边界"
+    },
+    {
+      "id": "e_pipe_3",
+      "fromNode": "qpipe004",
+      "toNode": "qpipe005",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "形成输入闸门"
+    },
+    {
+      "id": "e_pipe_4",
+      "fromNode": "qpipe005",
+      "toNode": "qpipe006",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "生成后必须回写"
+    },
+    {
+      "id": "e_pipe_5",
+      "fromNode": "qpipe006",
+      "toNode": "qpipe007",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "审核通过再下游"
+    },
+    {
+      "id": "e_asset_1",
+      "fromNode": "qasset001",
+      "toNode": "qasset002",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "需要真实绑定"
+    },
+    {
+      "id": "e_asset_2",
+      "fromNode": "qasset002",
+      "toNode": "qasset003",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "建立优先级"
+    },
+    {
+      "id": "e_asset_3",
+      "fromNode": "qasset003",
+      "toNode": "qscene001",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "统一输入源"
+    },
+    {
+      "id": "e_h3_1",
+      "fromNode": "qpipe007",
+      "toNode": "qshot001",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "锁卡后才能镜头"
+    },
+    {
+      "id": "e_h3_2",
+      "fromNode": "qscene001",
+      "toNode": "qh3001",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "场景进入H3"
+    },
+    {
+      "id": "e_h3_3",
+      "fromNode": "qh3001",
+      "toNode": "qshot001",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "确保实际输入一致"
+    },
+    {
+      "id": "e_life_1",
+      "fromNode": "qpipe001",
+      "toNode": "lifecycle",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "进入闭环"
+    },
+    {
+      "id": "e_life_2",
+      "fromNode": "qpipe009",
+      "toNode": "lifecycle",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "进入闭环"
+    },
+    {
+      "id": "e_life_3",
+      "fromNode": "qchar005",
+      "toNode": "lifecycle",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "进入闭环"
+    },
+    {
+      "id": "e_life_4",
+      "fromNode": "qpipe007",
+      "toNode": "lifecycle",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "进入闭环"
+    },
+    {
+      "id": "e_life_5",
+      "fromNode": "qshot001",
+      "toNode": "lifecycle",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "进入闭环"
+    },
+    {
+      "id": "e_scale",
+      "fromNode": "qpipe009",
+      "toNode": "scale",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "统一评分"
+    }
+  ]
+}

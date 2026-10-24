@@ -1,0 +1,108 @@
+filters:
+  or:
+    - and:
+        - file.inFolder("方/05_画布工作台/卡级状态")
+        - 类型 == "卡级管理"
+    - and:
+        - file.inFolder("方/04_声音设计/幕级")
+        - 类型 == "幕级声音"
+properties:
+  幕:
+    displayName: 幕
+  卡号:
+    displayName: 卡号
+  名称:
+    displayName: 名称
+  阶段编号:
+    displayName: 阶段（1—5）
+  锁定:
+    displayName: 锁
+  环境音:
+    displayName: 环境音
+  氛围音:
+    displayName: 氛围音
+  状态:
+    displayName: 状态
+  缺什么:
+    displayName: 缺什么
+views:
+  - type: table
+    name: 卡｜阶段确认
+    filters: 类型 == "卡级管理"
+    order:
+      - 幕
+      - 卡号
+      - 名称
+      - 阶段编号
+      - 缺什么
+      - 锁定
+    sort: []
+  - type: table
+    name: 第一幕｜阶段确认
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 幕 == "第一幕"
+    order:
+      - 卡号
+      - 名称
+      - 阶段编号
+      - 缺什么
+      - 锁定
+  - type: table
+    name: 第二幕｜阶段确认
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 幕 == "第二幕"
+    order:
+      - 卡号
+      - 名称
+      - 阶段编号
+      - 缺什么
+      - 锁定
+  - type: table
+    name: 第三幕｜阶段确认
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 幕 == "第三幕"
+    order:
+      - 卡号
+      - 名称
+      - 阶段编号
+      - 缺什么
+      - 锁定
+  - type: table
+    name: 第四幕｜阶段确认
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 幕 == "第四幕"
+    order:
+      - 卡号
+      - 名称
+      - 阶段编号
+      - 缺什么
+      - 锁定
+  - type: table
+    name: 第五幕｜阶段确认
+    filters:
+      and:
+        - 类型 == "卡级管理"
+        - 幕 == "第五幕"
+    order:
+      - 卡号
+      - 名称
+      - 阶段编号
+      - 缺什么
+      - 锁定
+  - type: table
+    name: 幕｜声音确认
+    filters: 类型 == "幕级声音"
+    order:
+      - 幕
+      - 环境音
+      - 氛围音
+      - 缺什么
+      - 状态

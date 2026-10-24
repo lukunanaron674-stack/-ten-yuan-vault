@@ -1,0 +1,38 @@
+---
+project: 黎黎隆
+source_issue: 674-296
+source_manifest_attachment: e49420cd-885f-4570-a467-9089a76a9e07
+source_receipt_comment: f58fd1b3-e7fe-46d4-beb1-3f3b048dc6fc
+verified_at: 2026-10-08 23:15 CST
+status: LOCAL_SOURCE_RECHECK / TARGET_4080_BLOCKED
+---
+
+# 674-296 R3 五项本机资产复核｜2026-10-08
+
+674-296 当前仍为 Todo；R3 清单为 `A_READY=0 / WAIT_REVIEW=5 / MISSING_SOURCE=0 / BLOCKED_4080=5`。本轮逐项复核清单中源图、导出副本和被选格文件，共 **12 个文件**：尺寸、SHA-256、图像解码全部与 R3 清单一致。所有 SHA 是源端或派生资产证据；没有一个证明 4080 输入端可读。
+
+| 项目 | 文件 | bytes | SHA-256 | 解码 |
+|---|---|---:|---|---|
+| H05原图 | `E:/黎黎隆头像审核仓库_v1/L2_四宫格/L2_H05_四宫格_红桶0928.png` | 2497364 | `886fdfe486c1daad0d8bab5bd21f61a849c534b3ce2bac962837537795425493` | PASS `PNG`, 941×1672 |
+| H05导出副本 | `E:/黎黎隆H3可用素材导出_20261008/L2_四宫格_精选对应/L2_H05_四宫格_红桶0928.png` | 2497364 | `886fdfe486c1daad0d8bab5bd21f61a849c534b3ce2bac962837537795425493` | PASS `PNG`, 941×1672 |
+| H06后版原图 | `E:/黎黎隆头像审核仓库_v1/L2_四宫格/L2_H06_四宫格_青桶0929.png` | 2704746 | `941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729` | PASS `PNG`, 941×1672 |
+| H06后版导出副本 | `E:/黎黎隆H3可用素材导出_20261008/L2_四宫格_精选对应/L2_H06_四宫格_青桶0929.png` | 2704746 | `941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729` | PASS `PNG`, 941×1672 |
+| H06格4派生图 | `Vault/黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/derived/H06_back_cell4.jpg` | 135177 | `34de1d31e57dc8c936397c6bfa64a9949b1ec9f8f711c1fc7f936a68b22c2bde` | PASS `JPEG`, 470×836 |
+| N14原图 | `E:/黎黎隆头像审核仓库_v1/L2_四宫格/L2_N14_四宫格_红桶0928.png` | 2758853 | `e983ef6b3ded987150286934eed6a4c494878c071e85575d299224d0692db292` | PASS `PNG`, 941×1672 |
+| N14导出副本 | `E:/黎黎隆H3可用素材导出_20261008/L2_四宫格_精选对应/L2_N14_四宫格_红桶0928.png` | 2758853 | `e983ef6b3ded987150286934eed6a4c494878c071e85575d299224d0692db292` | PASS `PNG`, 941×1672 |
+| N14格3派生图 | `Vault/黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/derived/N14_cell3.jpg` | 124019 | `c9b3846e9c6086c2bac4e481c1e9e4e676ff118a824ec9edd47773d71166ad29` | PASS `JPEG`, 470×836 |
+| S09原图 | `E:/黎黎隆头像审核仓库_v1/L2_四宫格/L2_S09_四宫格_红桶0928.png` | 2656768 | `59d091096580dde11653ad2eff25dd137ae24efc21d944066c377749675189fc` | PASS `PNG`, 941×1672 |
+| S09导出副本 | `E:/黎黎隆H3可用素材导出_20261008/L2_四宫格_精选对应/L2_S09_四宫格_红桶0928.png` | 2656768 | `59d091096580dde11653ad2eff25dd137ae24efc21d944066c377749675189fc` | PASS `PNG`, 941×1672 |
+| S09格3派生图 | `Vault/黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/derived/S09_cell3.jpg` | 112055 | `7ea956c2a5de5a1ef0f9aff03facb92e6b5cd10ace6501edf2920c93685d6309` | PASS `JPEG`, 470×836 |
+| AST-0284场景图 | `Vault/黎黎隆项目/04_场景/场景库/10_图像仓库/AST-0284__LLL-IMG-83F49E191AE1.png` | 2436653 | `ccf676053663eac2e7fa5dd2e724a5f5f582fb51a643b4c8f8cf0a30681e4ed8` | PASS `PNG`, 1672×941 |
+
+## 审核与候选范围
+
+- H05 原图仍仅 `ACCEPTED_STYLE_SAMPLE`，不升级为身份 PASS。
+- H06 仅使用青桶 0929 后版；旧版维持 `SUPERSEDED`。格4派生图范围不扩展到其它格。
+- N14、S09 各自只继承格3选择；这不是整张四宫格 PASS。
+- AST-0284 仍是 `unprocessed · TASK_R0 生产素材清单`，未找到 USER 审图凭据；位置/场景十元/实际感受维持 UNKNOWN。
+- 本机路径复核不代表 4080 可读。Tailscale 的 `DESKTOP-FKEUGLS` 两个 peer 本轮均 `Online=false`；目标路径、4080 stat/read/decode/SHA 未验证。
+- 角色十元候选及角色—小世界关系/组合感受不因本机文件通过而升级；没有真人报告、正式实验、H3 提交或新因果规则。
+
+来源：674-296 R3 `A_ASSET_MANIFEST` 附件；评论 `f58fd1b3-e7fe-46d4-beb1-3f3b048dc6fc` 与后续目标端阻塞回执 `e59eb114-49ee-4aa3-9e82-706c512e03d4`。

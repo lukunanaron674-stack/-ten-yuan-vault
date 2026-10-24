@@ -1,0 +1,758 @@
+{
+  "schema_version": "674-297-G3-R1-R4-v1",
+  "issue": "674-297",
+  "status": "SEMANTIC_DESIGN_ONLY",
+  "updated": "2026-10-08",
+  "global_gate": {
+    "A_READY": 0,
+    "WAIT_REVIEW": 5,
+    "BLOCKED_4080": 5,
+    "participant_reports": 0,
+    "formal_experiments": 0,
+    "H3_submissions": 0
+  },
+  "provenance_rules": [
+    "User examples are prompts, not participant responses.",
+    "Researcher hypotheses are not ten-yuan mappings.",
+    "Role-card candidates are not objective properties.",
+    "Visual assets retain their own review_scope and A_READY status.",
+    "Local Markdown evidence sources carry a snapshot SHA-256; cited Linear comments retain their comment UUID and no fabricated file hash."
+  ],
+  "terms": [
+    {
+      "source_id": "LIN-297-C182b",
+      "noun_category": "object",
+      "name": "船",
+      "carrier": "text",
+      "visual_identity": "UNSPECIFIED",
+      "intrinsic_ten_yuan": {
+        "status": "UNKNOWN",
+        "evidence": "No object-to-ten-yuan mapping; the noun is a semantic stimulus, not a ten-yuan class."
+      },
+      "candidate_feelings": [
+        {
+          "label": "漂泊",
+          "basis": "User-provided example in 674-297 C182b",
+          "trigger_condition": "Waterway without visible destination or control",
+          "cue_visible": "Open water / movement away from a stable shore",
+          "counterexample": "Anchored safe harbor or clearly controlled route",
+          "status": "SEMANTIC_CANDIDATE_NOT_OBSERVED"
+        },
+        {
+          "label": "归途",
+          "basis": "User-provided example in 674-297 C182b",
+          "trigger_condition": "Visible return route, familiar harbor, arrival cue",
+          "cue_visible": "Route toward a known safe place",
+          "counterexample": "No route/arrival cues; unfamiliar waters",
+          "status": "SEMANTIC_CANDIDATE_NOT_OBSERVED"
+        },
+        {
+          "label": "安全",
+          "basis": "User-provided example in 674-297 C182b",
+          "trigger_condition": "Shelter, stable vessel, rescue/harbor signals",
+          "cue_visible": "Protected interior or accessible harbor",
+          "counterexample": "Storm exposure or damaged vessel",
+          "status": "SEMANTIC_CANDIDATE_NOT_OBSERVED"
+        },
+        {
+          "label": "自由",
+          "basis": "User-provided example in 674-297 C182b",
+          "trigger_condition": "Choice/control over departure and route",
+          "cue_visible": "Open route and agency",
+          "counterexample": "No choice, constraint, or forced departure",
+          "status": "SEMANTIC_CANDIDATE_NOT_OBSERVED"
+        },
+        {
+          "label": "孤独",
+          "basis": "User-provided example in 674-297 C182b",
+          "trigger_condition": "Isolation/no companions/no contact cues",
+          "cue_visible": "Single occupant or empty deck",
+          "counterexample": "Crew, communication, or shared arrival",
+          "status": "SEMANTIC_CANDIDATE_NOT_OBSERVED"
+        },
+        {
+          "label": "危机",
+          "basis": "User-provided example in 674-297 C182b",
+          "trigger_condition": "Visible danger, instability, rescue need",
+          "cue_visible": "High waves, damage, urgent action",
+          "counterexample": "Calm water and routine travel",
+          "status": "SEMANTIC_CANDIDATE_NOT_OBSERVED"
+        }
+      ],
+      "context": "R2 semantic example card; no actual stimulus or observer",
+      "priming_and_culture_notes": "Prompting the word may itself prime associations; record language/cultural context only if participant volunteers.",
+      "cue_visible": "Not applicable until an image/story stimulus exists.",
+      "variables_changed": [],
+      "comparator": "Future: same participants/material under word-only, image-only and narrative conditions; not yet run.",
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [
+        "All six are candidates; no ranking or observed competition yet."
+      ],
+      "alternatives": [
+        "No feeling",
+        "Multiple/coexisting associations",
+        "Participant-specific association not listed"
+      ],
+      "evidence_level": "USER_EXAMPLE_AS_RESEARCH_PROMPT",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "Linear 674-297 comment 182b04af-5280-4c29-b169-5cba738ce9e5",
+        "sha": null,
+        "version": "text prompt only",
+        "review_scope": "not a visual asset; not A_READY"
+      }
+    },
+    {
+      "source_id": "LIN-297-C182b",
+      "noun_category": "world_state",
+      "name": "暴雨",
+      "carrier": "text",
+      "visual_identity": "UNSPECIFIED",
+      "intrinsic_ten_yuan": {
+        "status": "UNKNOWN",
+        "evidence": "No ten-yuan mapping; context factor from user example."
+      },
+      "candidate_feelings": [
+        {
+          "label": "恐惧/危机（待分辨）",
+          "basis": "User lists fear as a possible competing report; mapping this word to it is a researcher hypothesis, not user report.",
+          "trigger_condition": "Danger cues vs shelter/control cues",
+          "cue_visible": "Rain intensity, exposure, shelter, action consequences",
+          "counterexample": "Rain as sheltering or routine background",
+          "status": "DESIGN_HYPOTHESIS_NOT_OBSERVED"
+        },
+        {
+          "label": "孤独（竞争候选）",
+          "basis": "User notes scenarios may also intensify loneliness; not an observed response to storm.",
+          "trigger_condition": "Storm isolates character or interrupts contact",
+          "cue_visible": "No companions/contact, blocked travel",
+          "counterexample": "Companions/support or safe shared shelter",
+          "status": "DESIGN_HYPOTHESIS_NOT_OBSERVED"
+        }
+      ],
+      "context": "One semantic context factor in the ship→storm→apocalypse→alone example",
+      "priming_and_culture_notes": "Storm meanings may depend on weather exposure, narrative genre and personal experience; unmeasured.",
+      "cue_visible": "Not present in text-only noun prompt.",
+      "variables_changed": [
+        "storm cue only, in a future controlled visual stimulus"
+      ],
+      "comparator": "Same base with storm cue absent; planned only.",
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [
+        "Fear, loneliness, safety, calm are hypotheses to probe; none observed."
+      ],
+      "alternatives": [
+        "storm as relief/shelter",
+        "no feeling",
+        "other participant-specific association"
+      ],
+      "evidence_level": "USER_CONTEXT_EXAMPLE_PLUS_RESEARCHER_HYPOTHESIS",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "Linear 674-297 comments 182b04af and 63cee2f5",
+        "sha": null,
+        "version": "text prompt only",
+        "review_scope": "not a visual asset; not A_READY"
+      }
+    },
+    {
+      "source_id": "LIN-297-C182b",
+      "noun_category": "world_state",
+      "name": "末世语境",
+      "carrier": "text",
+      "visual_identity": "UNSPECIFIED",
+      "intrinsic_ten_yuan": {
+        "status": "UNKNOWN",
+        "evidence": "No ten-yuan mapping; context factor from user example."
+      },
+      "candidate_feelings": [
+        {
+          "label": "恐惧/危机（待分辨）",
+          "basis": "User lists fear as a possible competitor; applying it to apocalypse is a design hypothesis.",
+          "trigger_condition": "Visible threat, loss or imminent consequence",
+          "cue_visible": "Deterioration/threat only if actually visible",
+          "counterexample": "Stable community, mutual aid, routine tasks",
+          "status": "DESIGN_HYPOTHESIS_NOT_OBSERVED"
+        },
+        {
+          "label": "孤独（竞争候选）",
+          "basis": "User notes context may strengthen loneliness; not an observed response to apocalypse.",
+          "trigger_condition": "Isolation or missing social ties",
+          "cue_visible": "Absence of others/contact cues",
+          "counterexample": "Crowded/shared survival cues",
+          "status": "DESIGN_HYPOTHESIS_NOT_OBSERVED"
+        }
+      ],
+      "context": "One semantic context factor; cannot be stacked with others if estimating a single effect.",
+      "priming_and_culture_notes": "The term itself is a strong narrative prime; compare word-only vs image/action carrier.",
+      "cue_visible": "Not present in text-only noun prompt.",
+      "variables_changed": [
+        "apocalypse cue only, in a future controlled stimulus"
+      ],
+      "comparator": "Same base with apocalypse cue absent; planned only.",
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [
+        "Fear and loneliness are hypotheses, not assigned ten-yuan labels."
+      ],
+      "alternatives": [
+        "collective purpose",
+        "relief",
+        "no feeling",
+        "other"
+      ],
+      "evidence_level": "USER_CONTEXT_EXAMPLE_PLUS_RESEARCHER_HYPOTHESIS",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "Linear 674-297 comments 182b04af and 63cee2f5",
+        "sha": null,
+        "version": "text prompt only",
+        "review_scope": "not a visual asset; not A_READY"
+      }
+    },
+    {
+      "source_id": "LIN-297-C182b",
+      "noun_category": "living_context",
+      "name": "独居/独处线索",
+      "carrier": "text",
+      "visual_identity": "UNSPECIFIED",
+      "intrinsic_ten_yuan": {
+        "status": "UNKNOWN",
+        "evidence": "No ten-yuan mapping; context factor from user example."
+      },
+      "candidate_feelings": [
+        {
+          "label": "孤独（候选）",
+          "basis": "User names loneliness as a possible competing feeling; design hypothesis only.",
+          "trigger_condition": "Unwanted isolation or unavailable contact",
+          "cue_visible": "No companion/contact and no sign of chosen solitude",
+          "counterexample": "Chosen privacy, agency, valued solitude or reliable contact",
+          "status": "DESIGN_HYPOTHESIS_NOT_OBSERVED"
+        },
+        {
+          "label": "自主/安宁（替代解释候选）",
+          "basis": "Researcher alternative to prevent one-sided interpretation; not a user or participant report.",
+          "trigger_condition": "Solitude is chosen and conditions feel safe",
+          "cue_visible": "Control of space and routine, no threat cue",
+          "counterexample": "Confinement or inability to contact others",
+          "status": "DESIGN_HYPOTHESIS_NOT_OBSERVED"
+        }
+      ],
+      "context": "Independent factor; do not infer loneliness from living alone.",
+      "priming_and_culture_notes": "Living alone has culturally and personally variable meaning; no personal history solicited unless volunteered.",
+      "cue_visible": "Not present in text-only noun prompt.",
+      "variables_changed": [
+        "solitude/alone cue only, in a future controlled stimulus"
+      ],
+      "comparator": "Same base with companion/contact cue; planned only.",
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [
+        "loneliness vs chosen autonomy/peace; hypotheses only"
+      ],
+      "alternatives": [
+        "no feeling",
+        "mixed/uncertain",
+        "other"
+      ],
+      "evidence_level": "USER_CONTEXT_EXAMPLE_PLUS_RESEARCHER_HYPOTHESIS",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "Linear 674-297 comments 182b04af and 63cee2f5",
+        "sha": null,
+        "version": "text prompt only",
+        "review_scope": "not a visual asset; not A_READY"
+      }
+    },
+    {
+      "source_id": "G1-H05-L2",
+      "noun_category": "character_identity",
+      "name": "H05｜荒野猎手 / 折层递送者（身份分支）",
+      "carrier": "image+text",
+      "visual_identity": "红发、单侧浅青角、尖耳；背包/包裹/长杖与淡青高塔反复出现",
+      "intrinsic_ten_yuan": {
+        "status": "PROVISIONAL",
+        "candidate": "猎手 xn+n；旧递送者 zx",
+        "evidence": "REGION_FEELING_MAP; both identity branches remain open"
+      },
+      "candidate_feelings": [],
+      "context": "STYLE_SAMPLE_ONLY; no confirmed identity-to-world relation",
+      "priming_and_culture_notes": "The image has accepted style-sample scope only; identity and plot inference are unapproved.",
+      "cue_visible": "Visible design only; no feeling is established.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [],
+      "evidence_level": "SOURCE_DESCRIPTION_PLUS_PROVISIONAL_ROLE_CARD",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/review_images/L2/ASSET-SHA256-886fdfe486c1daad0d8bab5bd21f61a849c534b3ce2bac962837537795425493.png",
+        "sha": "886fdfe486c1daad0d8bab5bd21f61a849c534b3ce2bac962837537795425493",
+        "version": "L2 source image",
+        "review_scope": "ACCEPTED_STYLE_SAMPLE only; not identity PASS; not A_READY"
+      }
+    },
+    {
+      "source_id": "G1-H05-ROLE",
+      "noun_category": "occupation_or_role_name",
+      "name": "荒野猎手 / 折层递送者",
+      "carrier": "text",
+      "visual_identity": "No single identity branch selected.",
+      "intrinsic_ten_yuan": {
+        "status": "PROVISIONAL",
+        "candidate": "hunter xn+n; courier zx",
+        "evidence": "REGION_FEELING_MAP and CHARACTER_NPC_EXPERIMENTS; conflicting branches retained"
+      },
+      "candidate_feelings": [],
+      "context": "Role-name prompt; context and participant interpretation untested.",
+      "priming_and_culture_notes": "Occupation words prime different action scripts; no actual viewer report.",
+      "cue_visible": "Text label only; visual ability/action not fixed.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [
+        "hunter and courier remain alternatives; do not merge"
+      ],
+      "evidence_level": "SOURCE_TEXT_CANDIDATE_ONLY",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/06_验证/FEELING_LAB_674-297/REGION_FEELING_MAP.md",
+        "sha": "f55d51672999383e7c1e649172fdcbd50e0fcb45c3625d9930fd6e71797be628",
+        "version": "2026-10-08 source snapshot SHA-256",
+        "review_scope": "Not USER identity-resolved; not experiment input"
+      }
+    },
+    {
+      "source_id": "G1-H06",
+      "noun_category": "character_identity",
+      "name": "H06｜钢铁教派主教",
+      "carrier": "image+text",
+      "visual_identity": "银灰金属面具、青色圆眼、浅袍/暗红披肩、圆环顶杖；后版图中有冷色高拱大厅和面向人群动作",
+      "intrinsic_ten_yuan": {
+        "status": "PROVISIONAL",
+        "candidate": "zn+xn",
+        "evidence": "REGION_FEELING_MAP; identity association confirmed but ten-yuan is pending"
+      },
+      "candidate_feelings": [],
+      "context": "Use the later accepted version only; organization/scene interpretations remain separate.",
+      "priming_and_culture_notes": "Identity association confirmation does not establish the feeling of the organization or image.",
+      "cue_visible": "Visible attire, prop and pose description only.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [
+        "scene may be a different place; prior version rejected"
+      ],
+      "evidence_level": "SOURCE_DESCRIPTION_PLUS_PROVISIONAL_ROLE_CARD",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/review_images/L2/ASSET-SHA256-941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729.png",
+        "sha": "941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729",
+        "version": "L2 later accepted version",
+        "review_scope": "Version scope only; role ten-yuan provisional; not A_READY"
+      }
+    },
+    {
+      "source_id": "G1-N14",
+      "noun_category": "character_identity",
+      "name": "N14｜红珊瑚祭司",
+      "carrier": "image+text",
+      "visual_identity": "白发、珊瑚枝突起、紫灰肤色、高领深袍；红枝装饰圆环/器物",
+      "intrinsic_ten_yuan": {
+        "status": "PROVISIONAL",
+        "candidate": "zn+xn",
+        "evidence": "REGION_FEELING_MAP; cell 3 selected but evidence UNKNOWN"
+      },
+      "candidate_feelings": [],
+      "context": "Coral festival/O5 are separate location and organization candidates.",
+      "priming_and_culture_notes": "Do not infer a ritual or organization from coral-shaped appearance.",
+      "cue_visible": "Visible appearance only; local role card contains no measured feeling.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [
+        "O5 attachment, location scope and identity evidence remain open"
+      ],
+      "evidence_level": "SOURCE_DESCRIPTION_PLUS_PROVISIONAL_ROLE_CARD",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/review_images/L2/ASSET-SHA256-e983ef6b3ded987150286934eed6a4c494878c071e85575d299224d0692db292.png",
+        "sha": "e983ef6b3ded987150286934eed6a4c494878c071e85575d299224d0692db292",
+        "version": "L2 source image / selected cell 3",
+        "review_scope": "Selected cell is not full-image PASS; not A_READY"
+      }
+    },
+    {
+      "source_id": "G1-S09",
+      "noun_category": "character_identity",
+      "name": "S09｜粉色魔法师·黑金魔法（赤罩旧支并列）",
+      "carrier": "image+text",
+      "visual_identity": "黑短发、紫肤、青眼；红围巾/兜帽遮面，深衣紫披肩；浅蓝石拱/水岸背景",
+      "intrinsic_ten_yuan": {
+        "status": "PROVISIONAL",
+        "candidate": "z+zn; old red-hood branch remains open",
+        "evidence": "REGION_FEELING_MAP; pink-city direction confirmed, cell evidence UNKNOWN"
+      },
+      "candidate_feelings": [],
+      "context": "Do not use the background to conclude pink-city presence or actual feeling.",
+      "priming_and_culture_notes": "Confirmed direction does not resolve cell review or ten-yuan mapping.",
+      "cue_visible": "Appearance and background description only.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [
+        "red-hood branch remains; image cell evidence unknown"
+      ],
+      "evidence_level": "SOURCE_DESCRIPTION_PLUS_PROVISIONAL_ROLE_CARD",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/review_images/L2/ASSET-SHA256-59d091096580dde11653ad2eff25dd137ae24efc21d944066c377749675189fc.png",
+        "sha": "59d091096580dde11653ad2eff25dd137ae24efc21d944066c377749675189fc",
+        "version": "L2 source image / selected cell 3",
+        "review_scope": "Selected cell evidence unknown; not A_READY"
+      }
+    },
+    {
+      "source_id": "G1-NPC04-LOOK",
+      "noun_category": "clothing",
+      "name": "NPC-04｜高领雨披通勤者",
+      "carrier": "image+text",
+      "visual_identity": "浅灰蓝披衣、高领、斜挎布件、长裤、厚底鞋",
+      "intrinsic_ten_yuan": {
+        "status": "UNKNOWN",
+        "candidate": null,
+        "evidence": "NPC experiment log shows role review/user fields UNKNOWN"
+      },
+      "candidate_feelings": [],
+      "context": "Commuting and rain context are text proposals, not facts from the image alone.",
+      "priming_and_culture_notes": "Visual inventory does not establish protection, constraint, mood or lived experience.",
+      "cue_visible": "Clothing shape, color and footwear only.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [
+        "raincoat may be worn for weather, uniform, style or another reason"
+      ],
+      "evidence_level": "SOURCE_DESCRIPTION_IMAGE_CANDIDATE",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/17_高领雨披通勤者_四格_候选01.png",
+        "sha": "57f24bc908667b73044a4eef87025f99d43acdfe02c5e7de7a30256b93eaa913",
+        "version": "NPC four-panel candidate 01",
+        "review_scope": "173 review fields UNKNOWN; not 296 A_READY"
+      }
+    },
+    {
+      "source_id": "G1-O1",
+      "noun_category": "organization",
+      "name": "O1｜钢铁教派",
+      "carrier": "text",
+      "visual_identity": "No organization event/scene image verified in this scope.",
+      "intrinsic_ten_yuan": {
+        "status": "CANDIDATE_CONFLICT",
+        "candidate": "one ledger entry gives n+xn; another current map row says UNKNOWN",
+        "evidence": "REGION_FEELING_MAP §§ organization table and crosswalk"
+      },
+      "candidate_feelings": [],
+      "context": "Keep organization ten-yuan separate from H06 character ten-yuan and Qing Mirror Hall scene candidate.",
+      "priming_and_culture_notes": "Name/steel concept may prime expectations; no observation or organization event evidence.",
+      "cue_visible": "Text name only.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [
+        "organization composition UNKNOWN vs sourced S4 candidate n+xn"
+      ],
+      "evidence_level": "CONFLICTING_CANDIDATE_TEXT",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/06_验证/FEELING_LAB_674-297/REGION_FEELING_MAP.md",
+        "sha": "f55d51672999383e7c1e649172fdcbd50e0fcb45c3625d9930fd6e71797be628",
+        "version": "2026-10-08 source snapshot SHA-256",
+        "review_scope": "Text candidate only; no approved organization stimulus"
+      }
+    },
+    {
+      "source_id": "G1-O5",
+      "noun_category": "organization",
+      "name": "O5｜生态共生组织",
+      "carrier": "text",
+      "visual_identity": "No O5 organization behavior scene verified in this scope.",
+      "intrinsic_ten_yuan": {
+        "status": "CANDIDATE_CONFLICT",
+        "candidate": "S4 crosswalk lists n+nz; main object row says UNKNOWN",
+        "evidence": "REGION_FEELING_MAP §§ organization table and crosswalk"
+      },
+      "candidate_feelings": [],
+      "context": "Do not infer O5 membership or behavior from N14 coral appearance.",
+      "priming_and_culture_notes": "The word symbiosis itself can prime readers; no event evidence available.",
+      "cue_visible": "Text name only.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [
+        "n+nz candidate vs UNKNOWN main row"
+      ],
+      "evidence_level": "CONFLICTING_CANDIDATE_TEXT",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/06_验证/FEELING_LAB_674-297/REGION_FEELING_MAP.md",
+        "sha": "f55d51672999383e7c1e649172fdcbd50e0fcb45c3625d9930fd6e71797be628",
+        "version": "2026-10-08 source snapshot SHA-256",
+        "review_scope": "N14 attachment/location evidence UNKNOWN"
+      }
+    },
+    {
+      "source_id": "G1-R-WHITEHORN",
+      "noun_category": "region_or_scene",
+      "name": "白角猎径 / 边境通路（分支）",
+      "carrier": "text",
+      "visual_identity": "No verified trail/route image located in this scoped audit.",
+      "intrinsic_ten_yuan": {
+        "status": "PROVISIONAL",
+        "candidate": "白角猎径 xn+n; 边境通路 zx+xn is separate",
+        "evidence": "REGION_FEELING_MAP H05 crosswalk"
+      },
+      "candidate_feelings": [],
+      "context": "H05 identity conflict means route-role relation remains unresolved.",
+      "priming_and_culture_notes": "Names may activate different travel imagery; participant reports absent.",
+      "cue_visible": "Text labels only.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [
+        "no visual or event asset; cannot infer location from H05 avatar"
+      ],
+      "evidence_level": "SOURCE_TEXT_CANDIDATE_ONLY",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/06_验证/FEELING_LAB_674-297/REGION_FEELING_MAP.md",
+        "sha": "f55d51672999383e7c1e649172fdcbd50e0fcb45c3625d9930fd6e71797be628",
+        "version": "2026-10-08 source snapshot SHA-256",
+        "review_scope": "STAGING; no verified scene image"
+      }
+    },
+    {
+      "source_id": "G1-R-PINKCITY",
+      "noun_category": "region_or_scene",
+      "name": "粉色魔法城 / 髓盆咒市",
+      "carrier": "text+image candidate",
+      "visual_identity": "Triptych proposal shows three different spaces; style has not been accepted and spaces are not split into independent stimuli.",
+      "intrinsic_ten_yuan": {
+        "status": "PROVISIONAL_OR_UNKNOWN",
+        "candidate": "some S4 object entries list z+zn; region-feeling entry remains UNKNOWN",
+        "evidence": "REGION_FEELING_MAP; object layers remain split"
+      },
+      "candidate_feelings": [],
+      "context": "S09 pink-city direction does not certify this scene or city feeling.",
+      "priming_and_culture_notes": "Triptych labels and visual style can prime; no actual observer data.",
+      "cue_visible": "Candidate environments only; do not treat each panel as reviewed stimulus.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [
+        "region candidate values conflict with explicit UNKNOWN region status"
+      ],
+      "evidence_level": "SOURCE_CANDIDATE_WITH_STYLE_REVIEW_PENDING",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/07_持续发散/2026-10-03_粉色世界_小魔法师锚点_角色与生活景视探索/SCENE-PINK-001_三处魔法城生活景视_CANDIDATE.png",
+        "sha": "11b2755917d44e40f35b0c184361a72874b27d40f8f313a1788b9f4e434879ec",
+        "version": "CANDIDATE triptych",
+        "review_scope": "User style acceptance pending; not 296 A_READY"
+      }
+    },
+    {
+      "source_id": "G1-A073-EVENT",
+      "noun_category": "event_or_action",
+      "name": "SC-18｜潮位变化 / 巨物迁徙改泊湾",
+      "carrier": "image candidate+text",
+      "visual_identity": "High-water harbor/boardwalk, multiple people, large form above; version v1.",
+      "intrinsic_ten_yuan": {
+        "status": "PROVISIONAL",
+        "candidate": "SC-18 family nz/n; region crosswalk candidates remain separate",
+        "evidence": "SCENE_STIMULUS_MANIFEST / current mapping"
+      },
+      "candidate_feelings": [],
+      "context": "Compared with A-074, several aspects vary at once; use as parallel case only.",
+      "priming_and_culture_notes": "Visible cue inventory is not viewer feeling evidence.",
+      "cue_visible": "Waterline, harbor path, crowd and giant form.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [
+        "not a single-variable comparison with A-074"
+      ],
+      "evidence_level": "SOURCE_DESCRIPTION_ONLY; WAIT_REVIEW",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/04_场景/场景库/10_图像仓库/AST-0073__SC-18_巨物迁徙改泊湾_潮位变化_v1.png",
+        "sha": "2655757f942eefc7592cae1ce38e6cc548993330b32f349127216ccdc7884564",
+        "version": "AST-0073/A-073 v1",
+        "review_scope": "USER PASS/review scope not found; 296 WAIT_REVIEW; not A_READY"
+      }
+    },
+    {
+      "source_id": "G1-PROPER-SC18",
+      "noun_category": "proper_name_or_word",
+      "name": "改泊湾（SC-18素材标签）",
+      "carrier": "text",
+      "visual_identity": "Asset/scenegroup label; not an independently verified formal place name.",
+      "intrinsic_ten_yuan": {
+        "status": "UNKNOWN",
+        "candidate": null,
+        "evidence": "label is a source descriptor; no map coordinates confirmed"
+      },
+      "candidate_feelings": [],
+      "context": "Keep SC-18 and R4/R-04 number/name conflict open.",
+      "priming_and_culture_notes": "A proper name can prime location assumptions; do not present it during blind stimulus.",
+      "cue_visible": "Title text is not visual evidence.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [
+        "no confirmed geography or route intersection"
+      ],
+      "evidence_level": "SOURCE_LABEL_ONLY",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/06_验证/FEELING_LAB_674-297/SCENE_STIMULUS_MANIFEST.md",
+        "sha": "36e2290705b425d481235447b0387f2823dbc00396efad404093e8da4ec4a8bc",
+        "version": "2026-10-08 source snapshot SHA-256",
+        "review_scope": "Not USER-confirmed location"
+      }
+    },
+    {
+      "source_id": "G1-A074-CUE",
+      "noun_category": "audiovisual_cue",
+      "name": "A-074｜浪涌/栈道/人群/上方巨物",
+      "carrier": "image candidate+text",
+      "visual_identity": "Harbor with visible splash/wave action, boardwalk and crowd, large form above; version v2.",
+      "intrinsic_ten_yuan": {
+        "status": "UNKNOWN",
+        "candidate": null,
+        "evidence": "No participant feeling report; source visual description only"
+      },
+      "candidate_feelings": [],
+      "context": "A-073 also differs in water state/scale/action/composition; no causal pair.",
+      "priming_and_culture_notes": "Do not infer danger, awe or urgency solely from visible cue list.",
+      "cue_visible": "Water splash, people and giant-form cue co-occur in this version.",
+      "variables_changed": [],
+      "comparator": null,
+      "observer_free_report": null,
+      "observed_ten_yuan_main_secondary": null,
+      "observed_NX_intensity": null,
+      "competing_feelings": [],
+      "alternatives": [
+        "multi-variable difference from A-073; review status WAIT_REVIEW"
+      ],
+      "evidence_level": "SOURCE_DESCRIPTION_ONLY; WAIT_REVIEW",
+      "confidence": "No empirical confidence assigned",
+      "source_sha_version_review_scope": {
+        "source": "黎黎隆项目/04_场景/场景库/10_图像仓库/AST-0074__SC-18_巨物迁徙改泊湾_环境改写_动作证据_v2.png",
+        "sha": "669b3fc1ff23540e038b7b28f2d9b44d6d77f7dbf5a96603528a59e17426fb81",
+        "version": "AST-0074/A-074 v2",
+        "review_scope": "USER scope not found; 296 WAIT_REVIEW; not A_READY"
+      }
+    }
+  ],
+  "r1_categories": [
+    {
+      "id": "character_identity",
+      "status": "INDEXED_WITH_SOURCE_EXAMPLES; feelings remain UNKNOWN unless explicitly listed as hypotheses",
+      "item_count": 4
+    },
+    {
+      "id": "occupation_or_role_name",
+      "status": "INDEXED_WITH_SOURCE_EXAMPLES; feelings remain UNKNOWN unless explicitly listed as hypotheses",
+      "item_count": 1
+    },
+    {
+      "id": "clothing",
+      "status": "INDEXED_WITH_SOURCE_EXAMPLES; feelings remain UNKNOWN unless explicitly listed as hypotheses",
+      "item_count": 1
+    },
+    {
+      "id": "organization",
+      "status": "INDEXED_WITH_SOURCE_EXAMPLES; feelings remain UNKNOWN unless explicitly listed as hypotheses",
+      "item_count": 2
+    },
+    {
+      "id": "region_or_scene",
+      "status": "INDEXED_WITH_SOURCE_EXAMPLES; feelings remain UNKNOWN unless explicitly listed as hypotheses",
+      "item_count": 2
+    },
+    {
+      "id": "world_state",
+      "status": "INDEXED_WITH_SOURCE_EXAMPLES; feelings remain UNKNOWN unless explicitly listed as hypotheses",
+      "item_count": 2
+    },
+    {
+      "id": "object",
+      "status": "INDEXED_WITH_SOURCE_EXAMPLES; feelings remain UNKNOWN unless explicitly listed as hypotheses",
+      "item_count": 1
+    },
+    {
+      "id": "proper_name_or_word",
+      "status": "INDEXED_WITH_SOURCE_EXAMPLES; feelings remain UNKNOWN unless explicitly listed as hypotheses",
+      "item_count": 1
+    },
+    {
+      "id": "event_or_action",
+      "status": "INDEXED_WITH_SOURCE_EXAMPLES; feelings remain UNKNOWN unless explicitly listed as hypotheses",
+      "item_count": 1
+    },
+    {
+      "id": "audiovisual_cue",
+      "status": "INDEXED_WITH_SOURCE_EXAMPLES; feelings remain UNKNOWN unless explicitly listed as hypotheses",
+      "item_count": 1
+    },
+    {
+      "id": "living_context",
+      "status": "INDEXED_WITH_SOURCE_EXAMPLES; context factor only; feelings remain UNKNOWN unless explicitly listed as hypotheses",
+      "item_count": 1
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+---
+project: 黎黎隆
+type: 674-297 Codex 多框实验槽登记
+status: IN_PROGRESS
+updated: 2026-10-08
+---
+
+# 674-297 实验槽状态
+
+领取要求：对象范围不重叠；同一对象同一 controlled_variable 不由两个框重复跑，除非标记 `REPLICATION`。
+
+| Slot | 对象范围 | Worker | 领取时间 | 状态 | 回执 |
+|---|---|---|---|---|---|
+| S1 角色主角 | 674-173 L2：H05、H06 后版、N14 格3、S09 格3 | Codex desktop thread `01a11a2a-d703-7dc1-9754-f7b48e63d2d7` | 2026-10-08 Asia/Shanghai | IN_PROGRESS（源图/裁决已核；4080 端可达与 296 入池未核） | Linear 评论 `5c3da493-16e2-4f56-aa28-6e37e0e4157e` |
+| S2 NPC/配角 | 当前优先：173 L1 中 18 个 FEATURED 红心头像的角色十元主次候选，等待 USER NX 审核；NPC-01~07 四格候选降为低优先级参考 | Linear 回执标记“Codex 当前框”；thread 未列明 | 2026-10-08 | IN_PROGRESS（18 个红心角色十元候选已制成审核 Canvas，待 USER 裁决） | Canvas `173-04_红心角色十元审核台_STAGING_20261008.canvas`；18 张原图按 L1 asset_id/SHA 与 S4_ASSIGN 对齐；十元全 `PROVISIONAL`；旧评论 `a7b92414-b5e2-4258-98e0-b4ceb1821af1` 保留七图对账历史 |
+| S3 场景 | 场景库 289 张去重图像素材 | Linear 回执标记“Codex 当前框”；thread 未列明 | 2026-10-08 | IN_PROGRESS | 原评论 `95d67247-166a-4cca-871a-2d3198e7b59c`；补充回执 `650bbd36-7ecf-40ef-b3a6-0e640d39ad2c`；A-271/A-283 的 G1/G5 并列标 `CONFLICT_OPEN`；机器表最新 relatedLayers=30/37组、126张；余7组中5组有具名组织文字参照（含限制原句），I06/I11无组织文字锚；机器表当前宽口径11组/68张；旧5组/46张是较早快照，不拼加；实验等296的合格行。|
+| S4 世界观/区域 | 组织 O1–O7 / G1–G7 / 区域 R-01–R-17 / 场景 SC-01–SC-18 ＋ STAGING 新对象；场景库 289 张按 sceneGroup 归并索引（不复跑 S3 逐张变量实验） | WorkBuddy（workbuddy/674-297-s4-tenyuan） | 2026-10-08 Asia/Shanghai | IN_PROGRESS（底表已回传，S4 回执仍进行中） | Linear S4 评论 `552aef84-f412-4182-a048-51801673925d`；附件 `S4｜素材十元·世界位置·五色（总表）` + JSON；本地同名 MD/JSON；待冲突复核/用户裁决项，未跑实验 |
+| S5 十元关系与感受因果汇总 | 674-173 审核/灵感/十元数据；角色 × 组织/区域/场景映射与感受假设核对 | WorkBuddy（GLM；S5 已独立领取）；S6 接入复核 | 2026-10-08 | IN_PROGRESS（数据包已到，实验未启动） | Linear 评论 `12dac84f-42c3-4e0e-83e3-7745c67d1ca2` + 附件 `19b578bd-37b0-4865-9484-15a17f2c6fb5`；S09 派别色彩对立仅列 HYPOTHESIS，等 296 的资产行后再决定是否实验 |
+| S6 控制台/冲突检查/缺口 | H05/H06/N14/S09 与 S2/S3/S4/S5 回执汇总 | Codex desktop thread `01a11a2a-d703-7dc1-9754-f7b48e63d2d7` | 2026-10-08 Asia/Shanghai | IN_PROGRESS | 10 件当前成果已附 Linear；本轮并入 S3 `worldRegion` 逐图计数并登记与 S4 `sceneGroup` 的口径差；实验继续等 296 可追溯池行 |
+
+槽位以 674-297 最新附件/评论为准。S2 首轮全量核对、S3 场景盘点、S4 世界/区域底表、S5 审核数据包均已回传或部分回传，仍在各自槽位中等待后续输入/裁决；S6 继续维护总控台。S2/S3 工作的对象范围与状态不得由 S6 覆盖。
+
+
+## S6 NPC-01~07 接入 173 最新候选｜2026-10-08
+
+- 674-173 新回传的七位 NPC 图文与角色/关联小世界十元候选已接入 297 总控 Canvas、`CHARACTER_NPC_EXPERIMENTS.md`、`REGION_FEELING_MAP.md`。
+- 173 最新主次结构与 297 旧单值/场景排序存在差异，均以候选并列；NPC-01 巷坊自治独立于 O6，O6 仅挂 NPC-03 慢车站与 NPC-06 市集候选。
+- 七张图 path/SHA 核对通过；逐项审核仍 UNKNOWN、296 未入池、实验未启动。S2 优先级仍由原任务决定，本回执只做对账和可视入口，不覆盖 S2 正在审核的 18 个红心角色范围。
+- 总控 Canvas 当前含 4 张原角色图 + 7 张 NPC 四格图及大白话说明，文件路径：`感受实验总控台_674-297.canvas`。
+
+## S6 最新上游闸门复核｜2026-10-08 16:11 Asia/Shanghai
+
+- 现场读取 674-296：状态 `Todo`，Linear 附件 0、评论 0；未见 `A_ASSET_MANIFEST.md`、`A_READY_CHARACTER.md`、`A_READY_SCENE.md`、`WAIT_REVIEW.md`、`EXPERIMENT.md` 或 `TEN_YUAN_STATUS.md` 的已交付版本。
+- 当前可继承到 674-297 的 296 资产行：0。674-293/173 的源库与审核记录继续作为来源证据，不能代替 296 的正式池别。
+- 决策：保持 `WAIT_INPUT_296`；本次不启动单变量实验，不把源图提升为 `A_READY`。实验完成数仍为 0，674-297 保持 `In Progress`。
+- 恢复条件：296 出现可追溯资产行后，逐行核对 asset_id、path、SHA、USER 审核凭据和池别，再从合格对象开一项控变量实验。
+
+## S6 18 角色—小世界交叉表回写｜2026-10-08 16:27 Asia/Shanghai
+
+- 已把 173-04 的 18 个 L1 FEATURED 角色逐项加入 `REGION_FEELING_MAP.md`：角色十元与组织/区域/场景候选分列；18/18 仍为 `PROVISIONAL` / `PENDING_USER`，关系及组合感受均 `UNKNOWN`。
+- `CHARACTER_NPC_EXPERIMENTS.md` 加入交叉表索引。对应 Linear 674-297 附件：区域地图 `1c672253-50ad-4176-a4bc-cdbc920ac8a0`；角色/NPC 日志 `5f39d2c9-f1d4-41f1-9259-29395dfc2c0b`。
+- 最新复核 674-296：`Todo`，附件 0、评论 0；可继承正式资产行 0。实验仍为 0，继续 `WAIT_INPUT_296`；来源库材料不代替 296 的池别。
+- SHA-256：`REGION_FEELING_MAP.md` = `94c77272a1167cf0c40c77ed0ca7a28368dbb918faa4cd33f2e6bd9ce957260f`；`CHARACTER_NPC_EXPERIMENTS.md` = `e7a9ad650789178a8cdb85d20fcc7cd776f4fabcfa2079c0d348cf17c88c7675`。
+## S6 台账同步与 S3 统计口径更正｜2026-10-08 16:37 Asia/Shanghai
+
+- 回查 S3 机器 JSON（assetCount=289）：worldRegionCounts 青54/粉14/红14/未分配78/不适用129。已将冲突清单与控制台同步；不适用不再混计为未分配，S4 48 个 sceneGroup 仍是另一统计口径。
+- 同步控制台、场景实验、世界观实验、因果规则、冲突清单。输入门仍是 674-296 Todo、0 附件/评论、可继承行0；场景/世界实验0，新因果规则0。
+- 本轮新增 Linear 附件：控制台 `640e9e83-793b-43d0-9fab-52d1753d4786`；场景日志 `0d0b440b-64ec-45af-ae97-f36564492323`；世界日志 `36b23e04-c9b0-4bab-9594-ef058303e683`；因果账本 `c2fbc6bf-0a0b-4233-96e6-a79e43db1375`；冲突清单 `b0a1619a-784f-449c-9042-3e49a5db2bc8`。
+## S6 资产用途细分复核｜2026-10-08 16:40 Asia/Shanghai
+
+- S3 机器 JSON 的 289 条资产用途统计：146 张场景族候选 + 14 张空间参考 = 160 张地点/空间候选；129 张非地点素材为 NOT_APPLICABLE。worldRegion 字段另分青54/粉14/红14/未分配78/不适用129。
+- 对应区域地图与大白话控制台已更新到此口径；冲突清单已把“289/289场景十元UNKNOWN”改为“160张地点/空间候选 UNKNOWN，129张非地点 N/A”。
+- 674-296 仍 Todo、无附件/评论、正式资产可继承行0；不启动实验、不升级候选。
+## S6 最新快照回写｜2026-10-08 16:43 Asia/Shanghai
+
+- 674-297 工单顶部已同步 160 张地点/空间候选 + 129 张非地点素材的正确口径；18 角色交叉表及候选边界保留。
+- 最新附件：区域地图 `45e7b059-15f8-4c61-8991-2cf3f4ad4e6b`；大白话控制台 `3710694b-997c-46b4-a12d-ac6ab6a73372`；冲突清单 `20272119-b8de-492a-9584-f381d05a58b4`。
+- 674-296 最新 Todo，附件/评论 0、可继承正式资产行 0；因此场景/世界受控实验 0、因果新规则 0。S6 已同步回执，不将该输入门误记为项目完成。
+- 图文总控 Canvas v4（同步最新289/160/129口径，34节点/13连线）：Linear 附件 `407af0b4-4dd4-449b-9434-ab2de623101e`。
+
+## S3 复读 674-296 R3 输入门｜2026-10-08 16:49 Asia/Shanghai
+
+- 674-296 当前仍为 `Todo`；附件 0，评论 1，最新评论 `f14f3982-7e64-44c1-8823-9fd2b617d1b2`（R3）标记 `BLOCKED_INPUT`。
+- R3 明确：没有真实 4080 文件扫描/可达性回执；`A_READY verified_count=NOT_VERIFIED`，因此 S3 没有可继承的正式 A_READY 场景行。
+- S3 本轮完成 89 张待归位图用途复核、289 张分层统计、审核 Canvas 与公开观览台 v10 更新；Linear 新回执 `c47503d9-f0b3-4efd-aadb-ce9c9be62a9a` 已写入 674-297；感受实验保持 0，674-297 保持 `In Progress`。公开 URL：https://lililong-scene-observatory.lukunanaron674.chatgpt.site
+
+## S3 位置/关系覆盖审查｜2026-10-08 16:59 Asia/Shanghai
+
+- 复核 `A端289张...json` 与 S4：48 组规范化 `s4SceneGroup` / 63 种原始 `sceneGroup`；34 组编号场景 106 张。17 组有 SC 编号候选；4 组/44 张冲突保留；另 8 组/9 张只有题名级位置候选。
+- 新增本地审查表 `S3_POSITION_RELATION_COVERAGE_STAGING_20261008.md`；没有将色桶写成地理位置，没有把 S4 候选写成用户十元感受。
+- 296 最新仍 Todo/R3 BLOCKED_INPUT，A_READY verified_count=NOT_VERIFIED。S3 ACTIVE；感受实验仍 0。
+## S3 来源差异追加｜2026-10-08 17:02 Asia/Shanghai
+
+- I01 历史 R1 十元样板候选 N / (NZ, X并Z)，final 18；S4_ASSIGN 为 XZ / NZ，保留冲突，不覆盖 UNKNOWN 感受字段。
+- AST-0268 登记源路径本机不存在；只标记 REGISTERED_PATH_MISSING，尚未全库按 SHA 搜索重命名副本。
+
+## Linear 回执索引｜2026-10-08
+
+- 工作经验与覆盖审查：674-297 评论 `2c864cc6-9d3a-4f32-a5ae-c03bef9a7f16`。
+- I01 十元候选差异与登记路径复核：674-297 评论 `3dba08f3-17a4-4488-8b1e-845fb5bf25c3`。
+## AST-0268 仓库核验更正｜2026-10-08 17:04 Asia/Shanghai
+
+- 修正上一条：旧登记 sourcePath 失效；中央图像仓存在 AST-0268__LLL-IMG-CD1EEECA39E2.png，2,081,051 bytes；实际 SHA=3c86bfbb322fde1dadd36f6a23f73b12b993cce0cfe2c09e2dd50c947e25cf26 与清单一致。SOURCE_PATH_STALE; CENTRAL_WAREHOUSE_SHA_VERIFIED。
+- 实看图只支持巨构内部生活空间与外部荒漠峡谷视野，不提供 G/R/O 地图锚点；R1 与 S4 十元候选差异继续并列，实测场景感受仍 UNKNOWN。
+
+- AST-0268 仓库核验更正：674-297 评论 
+0bf3d41-4495-420d-bf68-53273ffe3474。
+
+
+## S1｜L2 四项资产恢复与 296 输入门核对｜2026-10-08
+
+- 范围：L2_H05 四宫格、L2_H06 青桶0929后版、L2_N14 四宫格格3、L2_S09 四宫格格3。与 S2 的 18 个 L1 FEATURED 红心头像范围分开。领取评论：`5c3da493-16e2-4f56-aa28-6e37e0e4157e`。
+- 本机四张源图均可恢复，实算 SHA-256 与 `asset_id` 一致；总控 Canvas 已新增四张原图和大白话外观说明。
+- H05：`ACCEPTED_STYLE_SAMPLE` / evidence `CONFIRMED`，只确认风格样本；不代表角色身份、十元或 A_READY 通过。SHA `886fdfe486c1daad0d8bab5bd21f61a849c534b3ce2bac962837537795425493`。
+- H06：当前后版 `ACCEPTED_LATER_VERSION` / evidence `CONFIRMED`。旧版 `e2b25105c…` 是 `REJECTED_OLDER_VERSION`，不得混用。后版 SHA `941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729`；格4派生图 SHA `34de1d31e57dc8c936397c6bfa64a9949b1ec9f8f711c1fc7f936a68b22c2bde`。
+- N14：当前记录只选格3，源图 decision `SELECTED_CELL_3`，但 `user_evidence_state=UNKNOWN`；格3派生 SHA `c9b3846e9c6086c2bac4e481c1e9e4e676ff118a824ec9edd47773d71166ad29`。
+- S09：当前记录只选格3，源图 decision `SELECTED_CELL_3`，但 `user_evidence_state=UNKNOWN`；格3派生 SHA `7ea956c2a5de5a1ef0f9aff03facb92e6b5cd10ace6501edf2920c93685d6309`。
+- 门禁：这些是 173 的裁决/来源材料，不等于 296 A_READY。当前电脑是 RTX 3070 Laptop；4080 端读取与 SHA 一致性没有证明。674-296 最新为 `Todo / BLOCKED_INPUT`，`A_READY verified_count=NOT_VERIFIED`。本机恢复数 4；可确认 4080 端可读数 0；A_READY 行 0；实验仍 0。
+- 本地源图目录：`03_角色/角色库/10_角色仓库/03_审核数据/173/review_images/L2/`；选格派生图目录：`03_角色/角色库/10_角色仓库/03_审核数据/173/derived/`。
+
+
+## S6 同步 S3 场景锚点续审｜G5 候选保留｜2026-10-08
+
+- 674-297 顶部最新 S3 回执：A-271/AST-0271（I04_骨骼空港）与 A-283/AST-0283 可增加 G5「白骨营地」候选关联；依据场景总 Canvas `ext_a_h` 与正式地域表 §1。
+- “模块化生活城交通/维护节点”仍并列；是否同地点、是否正式归属 G5、SC/R/O/R-17 均未定。其余 7 组继续 UNKNOWN，14 张空间参考未锚定。
+- 已同步区域地图、场景/世界观实验日志、冲突清单和图文总控。S3 范围与原分类保持不变；296 仍 BLOCKED_INPUT，场景/世界观实验不启动。
+
+
+## S6 同步 S3 18:12 relatedLayers 覆盖复核｜2026-10-08
+
+- S3 对 289 个唯一 SHA 资产、146 张场景族候选/37 个来源组完成字段覆盖核对：SC 17组/47张、区域6组/19张、组织13组/38张、世界结构11组/60张、冲突4组/44张；分组交叠，禁止相加成地点数。
+- `relatedLayers` 至少有一项候选的组为29/37；余下7组是“暂无结构化 relatedLayers”，不代表确定无关系。完整逐组审查见 `S3_FIELD_COVERAGE_AUDIT_20261008.md`。
+- 已同步大白话控制台、区域地图、场景/世界观实验日志、冲突清单与图文总控。未改素材池、用户审核或正史状态；296 仍 BLOCKED_INPUT，实验继续 0。
+
+
+## S6 接入 674-296 R3 与目标机可达性复核｜2026-10-08
+
+- 当前 674-296 实况：Todo；附件 2、评论 3。R3 清单/七文件包现可回读，不再使用本文件较早“附件/评论 0”的历史快照作为当前状态。
+- R3 范围：H05、H06 青桶0929后版、N14 格3、S09 格3、AST-0284。五项 `WAIT_REVIEW=5`、`A_READY=0`、`MISSING_SOURCE=0`、`BLOCKED_4080=5`。源端路径/字节/SHA/解码已本机核验；H05 风格样本限定、H06版本、N14/S09格位以及 AST-0284 无 USER 审图凭据继续保留。
+- 本轮复算五项现有素材 SHA 均匹配 R3 清单且解码通过；这台机器是 Lenovo 82JQ / RTX 3070 Laptop，不代替 4080。
+- Tailscale 中唯一近期待查 Windows peer `DESKTOP-FKEUGLS`（100.81.254.47）当前 offline，定向 ping 超时；没有目标机 machine_id/GPU/ComfyUI input root/target-side SHA，因此 `BLOCKED_4080=5` 不变。
+- 槽位没有空位；S1/S3/S6 继续沿现有领取范围工作。未生成图、未运行 H3、未改变用户审核或实验状态；A_READY=0、实验=0、297 继续 In Progress。
+- R3 回执：674-296 评论 `5771610a-1935-40e9-8989-92af1b3017c3`；清单附件 `e49420cd-885f-4570-a467-9089a76a9e07`；七文件包 `e02d2386-8b52-4578-a195-400b39ac2db6`。
+
+## S6 继续核对｜冲突数字历史边界与槽位复查｜2026-10-08
+
+- 最新机器表当前标记 11 组/68 张跨层冲突；旧回执 5 组/46 张是较早快照，不将两者相加/相减推导新增项。区域词面冲突另列：R5 与正式 R-05 的8张，R6 与正式 R-06 的10张，均保留候选。
+- 已核对角色日志与区域地图：H05、H06、N14、S09 的角色十元与关联组织/区域/场景十元分层记录；十元全是候选，关系与组合感受 UNKNOWN。H05身份仍有分支，H06只继承后版，N14/S09的格3选择不等于完整视觉 PASS。
+- 槽位复查：S1—S6 当前全部 IN_PROGRESS，没有空实验槽可新领。继续当前已领取的 S6 汇总/冲突维护范围，不另占 S1/S2/S3/S4/S5 的对象实验范围。
+- 当前环境 Tailscale 状态 Running，本机 LAPTOP-M57EA4JG；唯一近期待查 Windows peer DESKTOP-FKEUGLS 的两个 peer 记录均 Offline。674-296 最新仍 Todo，A_READY=0、WAIT_REVIEW=5、BLOCKED_4080=5；未启动生图、H3或感受实验。
+## S6 继续｜SC-18 候选交叉线接入与槽位复查｜2026-10-08
+
+- 当前源表更新到 SHA `5eb3b56267a4b27491be610d8b1300d9a4cbd4ba026b012781459bd642a0673e`；相较上一快照 3c33b7，仅 AST-0073/A-073 与 AST-0074/A-074 新增 R13/R15 语义交叉字段。relatedLayers 从29/37、124张变为30/37、126张；冲突仍11组/68张。
+- 7个未结构化关联组：黑金渗口、异种村庄、I06、I07、I08、I11、I12；5组有具名组织文字参照，I06/I11无组织文字锚，参照内容仍须按候选/限制/排除原句解释。
+- S1—S6仍全部 IN_PROGRESS，没有空实验槽；S6继续总控和跨槽同步，不占用其它槽的对象实验范围。674-296 A_READY=0、实验=0。
+
+## S6 续办｜296 五项实物回读 + R1–R6 结果对齐｜2026-10-08
+
+- 实时复读 674-297/296：S1–S6 全部 `IN_PROGRESS`，无空槽；继续 S6，不占用其他槽对象范围。
+- 读回 674-296 R3 的 manifest 与交付包：H05、H06、N14、S09、AST-0284 五项均 `WAIT_REVIEW`，`A_READY=0`、`MISSING_SOURCE=0`、`BLOCKED_4080=5`。
+- 在本地 vault 重新核了五项源图/选格的 SHA 和图像解码。此项只证明本机副本可读；4080 端机器身份、目标路径、读图和 SHA 仍未验证。
+- 674-297 的 R1–R5 已有概念机制/研究语法结果；R6 盲测协议完成但 `BLOCKED_PARTIAL`。真人报告 0、受控实验 0、H3 提交 0。
+- 四角色—小世界、组织与区域关联继续以候选/`UNKNOWN` 记录；本轮没有新增审核裁决、正史确认或实验结论。
+- R1 来源审计：17 条记录逐项回读；4 条 Linear 评论 UUID 可追溯、8 条图片 SHA 匹配、5 条本地 Markdown 来源补存快照 SHA；17 条记录的 11 种 category 计数与 ledger 明细一致。结果已写入 G3 研究记录/白话控制台并同步 Linear。
+
+## S6 纠正 G3 六轮编号状态｜2026-10-08
+
+- 依 674-297 用户确认评论 `63cee2f5-6c89-45a6-a096-14bcd2a38b5c` 与 R5/R6 结果评论 `5b719d6c-1a63-4a0c-9a87-d84887fe0e04`、`34d75761-ea97-4e67-bd7e-af2c4cdb20e0`，统一六轮编号：R5=全十元通用机制迁移，机制层 COMPLETE；R6=盲测/H3 协议，协议 COMPLETE、实跑 BLOCKED_PARTIAL。
+- 更正旧版路线表把 R5 写成盲评、R6 写成迁移的交叉编号；实验实际数据仍为真人报告 0、正式实验 0、H3 提交 0；674-296 A_READY=0、WAIT_REVIEW=5、BLOCKED_4080=5。
+- 同步 G3 研究稿、实验准备度表和总控 Canvas；S1–S6 仍全部 IN_PROGRESS，本轮留在已领取 S6，不占其他槽。
+## S6 审核台—地图逐卡对齐复核｜2026-10-08
+
+- 对照来源审核 Canvas `173-04_红心角色十元审核台_STAGING_20261008.canvas` 与本地图 §173-04：18 个唯一角色卡与 18 行交叉表逐名对应，缺项 0、多项 0。
+- 18 行十元状态均保持 `PROVISIONAL / PENDING_USER`；关系/组合感受均为 `UNKNOWN`。本轮只核对覆盖，不改身份、角色十元、小世界挂靠或审核状态。
+- 回查源：18 张头像卡的原图路径/SHA及 USER 留白栏保留在 173-04；小世界候选按对象分列，来源为 S4_ASSIGN。Linear 674-297 当前仍附该审核 Canvas 与区域感受地图。
+## S6｜18角色主次三源核对与小世界对象溯源｜2026-10-08 14:27 UTC
+
+- 当前仍无空槽；继续S6汇总范围。实时Linear回读：674-297 In Progress；674-296 Todo，A_READY=0、WAIT_REVIEW=5、BLOCKED_4080=5。Tailscale目标DESKTOP-FKEUGLS仍Offline（最近在线2026-10-08T07:02:12Z）。
+- 18个角色在173-04审核Canvas、S4_ASSIGN.characters及REGION_FEELING_MAP的主/次候选值逐项完全一致（18/18，差异0）；全部PROVISIONAL / PENDING_USER。
+- 四角色的8个关联小世界对象候选值已与S4_ASSIGN对象记录逐项对照。N14→R13角色行与R13区域characters字段不一致；该挂靠和R06/R07并列线索保持未裁冲突。
+- 本次只做字段溯源与账面一致性核对；无用户裁决、无新的A_READY行、真人报告0、正式实验0、H3提交0。详细表和源文件SHA见 [[S6_TENYUAN_CROSSWALK_AUDIT_20261008]]。
+## S6｜18行小世界对象候选全量来源核验｜2026-10-08 14:48 UTC
+
+- 674-297仍In Progress；674-296仍Todo，A_READY=0、WAIT_REVIEW=5、BLOCKED_4080=5。目标DESKTOP-FKEUGLS当前Offline；无新资产可进入实验。
+- 18行地图中17个具名小世界对象值覆盖9个角色，S4_ASSIGN对象字段和值均17/17匹配，并能由角色world_position定位；9行继续UNKNOWN / UNASSIGNED。
+- N14角色行/R13对象名单不一致，R06/R07并列线索仍OPEN；没有通过机器匹配裁关系。18角色状态仍PROVISIONAL / PENDING_USER，真人报告/正式实验/H3提交均0。
+- 本轮仍在S6，不更改其他槽范围。逐对象来源表见 [[S6_TENYUAN_CROSSWALK_AUDIT_20261008]]。
+
+## S6 续办｜接入 S3 五张场景设计标签来源｜2026-10-08 22:56 CST
+
+- 新证据：674-297 最新 S3 评论 `53085fa5-6be9-4ee4-b60f-f80c83debcf8`，补录 A-273/A-274/A-275/A-279/A-280 的 Canvas 原始标签。
+- 本轮更新：大白话控制台、区域地图提醒、场景实验日志、S6 跨表审计与图文总控 Canvas。角色/NPC、世界观十元不由该场景标签反推。
+- 五项原始标签与 S4 候选并列保存；主次、强度和实际感受不推断，位置/组织限制原样保留。全部仍为候选，五张实际感受 UNKNOWN / NOT_MEASURED。
+- 674-296 当前仍 Todo，A_READY=0、WAIT_REVIEW=5、BLOCKED_4080=5；4080 两个 Tailscale peer 均 Offline。S1-S6 已占用，继续原领取 S6；真人报告/正式实验/H3 提交均为 0。
+
+
+## S6 附件字节一致性回读｜2026-10-08 23:02 CST
+
+- Canvas v24 已从 Linear 取回，内容为 103 节点 / 61 连线 / 27 张图；A-275 的 S4 候选为 `x并z / nz`。
+- Vault 的 Canvas 在首轮打包后发生格式写回，导致包内旧字节与当前 Canvas 不同；已按当前 Vault 文件重建同步包 v15。
+- 下列 SHA 清单是最终包的唯一文件级基线；发布前再对比 Linear 附件回读，防止版本漂移。

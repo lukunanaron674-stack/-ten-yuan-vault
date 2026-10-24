@@ -1,0 +1,4022 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "🏮 民国 is-a 名词素材库\n Republic of China — 1912-1949 东方世纪浮世绘",
+      "x": -200,
+      "y": -950,
+      "width": 480,
+      "height": 80,
+      "color": "1"
+    },
+    {
+      "id": "def",
+      "type": "text",
+      "text": "📖 风格定义\nis-a 民国视觉风格\n东方·变革·战争·新旧交融\n军阀/文人/谍战/抗日",
+      "x": -160,
+      "y": -850,
+      "width": 260,
+      "height": 110,
+      "color": "6"
+    },
+    {
+      "id": "cm",
+      "type": "text",
+      "text": "👗 服装 is-a 民国角色造型类目 ├ 官商·市井·文人·谍战·抗日·农村 ┤ ↔ 建筑·场景·构件·元素",
+      "x": -3400,
+      "y": -700,
+      "width": 1750,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "am",
+      "type": "text",
+      "text": "🏛️ 建筑 is-a 民国空间场景类目 ├ 官商公馆·市井街区·农村乡土·军事堡垒·交通枢纽 ┤ ↔ 服装·场景·构件·元素",
+      "x": -2100,
+      "y": -700,
+      "width": 1500,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "sm",
+      "type": "text",
+      "text": "🌄 场景 is-a 民国镜头情境类目 ├ 官商社交·市井生活·文人书斋·战场前线·农村田野 ┤ ↔ 服装·建筑·构件·元素",
+      "x": -800,
+      "y": -700,
+      "width": 1500,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "com",
+      "type": "text",
+      "text": "🔩 构件 is-a 民国组成部分类目 ├ 建筑构件·服装构件 ┤ ↔ 建筑·服装·元素",
+      "x": 400,
+      "y": -700,
+      "width": 700,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "mm",
+      "type": "text",
+      "text": "🎭 元素 is-a 民国视觉母题类目 ├ 符号·生物·物件·氛围 ┤ ↔ 服装·建筑·场景·构件",
+      "x": 1600,
+      "y": -700,
+      "width": 1400,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "ph",
+      "type": "text",
+      "text": "🔍 检索关键词弹药库",
+      "x": 3100,
+      "y": -780,
+      "width": 280,
+      "height": 50,
+      "color": "6"
+    },
+    {
+      "id": "pe",
+      "type": "text",
+      "text": "EN Prompt Keywords\nrepublic of china era style\n1920s shanghai aesthetic\ncheongsam and changshan\nart deco meets east\nwarlord uniform\nunderground spy trenchcoat\nmay fourth intellectual\nchinese rural village scene\ngrand shanghai nightclub\nrickshaw in rainy alley",
+      "x": 3100,
+      "y": -700,
+      "width": 300,
+      "height": 185,
+      "color": "6"
+    },
+    {
+      "id": "pc",
+      "type": "text",
+      "text": "CN 意象脑暴词\n民国风情·旧上海摩登\n旗袍勾勒的东方曲线\n长衫先生的沉静背影\n百乐门霓虹灯牌闪烁\n黄包车在雨中石库门弄堂\n报童的叫卖声·电车叮当\n大学校园里飘动的学生装\n战火中的残垣断壁\n延安窑洞的灯火\n国军德械师的钢盔反光",
+      "x": 3420,
+      "y": -820,
+      "width": 300,
+      "height": 345,
+      "color": "6"
+    },
+    {
+      "id": "tyh",
+      "type": "text",
+      "text": "📊 十元映射简表\n类别  形        色       质        光       空",
+      "x": 3100,
+      "y": -410,
+      "width": 280,
+      "height": 50,
+      "color": "6"
+    },
+    {
+      "id": "tyt",
+      "type": "text",
+      "text": "服装  修身直线  黑白灰蓝  丝绸棉麻  微弱暖光  阶层隔离\n建筑  中西混杂  青砖灰瓦  石材木梁  煤灯电光  内院外街\n场景  横纵交错  灰黄土绿  尘土硝烟  战火天光  私密vs宏大\n构件  几何装饰  铜铁木漆  金属木头  光泽磨损  垂直vs水平\n元素  方圆交织  红旗金色  潮湿与干  天光照耀  符号化标语",
+      "x": 3100,
+      "y": -345,
+      "width": 640,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "note",
+      "type": "text",
+      "text": "📎 全部完成\n所有5大类共22子类·约160条目\n含十元映射简表+Prompt检索词",
+      "x": 3100,
+      "y": -170,
+      "width": 460,
+      "height": 100,
+      "color": "1"
+    },
+    {
+      "id": "hcm0",
+      "type": "text",
+      "text": "💰 官商名流\n10项 · 政商穿戴",
+      "x": -3400,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "4"
+    },
+    {
+      "id": "icm0_0",
+      "type": "text",
+      "text": "暗纹绸缎长衫\nis-a 官商日常正装\n🌆 老派商人茶楼谈生意",
+      "x": -3400,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icm0_1",
+      "type": "text",
+      "text": "织锦马褂\nis-a 富绅便服外套\n🌆 老财主踱步庭院",
+      "x": -3400,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icm0_2",
+      "type": "text",
+      "text": "高领刺绣旗袍\nis-a 名流女性礼服\n🌆 名媛出席宴会",
+      "x": -3400,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icm0_3",
+      "type": "text",
+      "text": "貂绒披肩\nis-a 贵妇御寒外套\n🌆 贵妇人乘车赴约",
+      "x": -3400,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icm0_4",
+      "type": "text",
+      "text": "中山装\nis-a 民国政府制服\n🌆 政要在礼堂演说",
+      "x": -3400,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icm0_5",
+      "type": "text",
+      "text": "军官大氅\nis-a 高级将领外套\n🌆 军阀在军部升帐",
+      "x": -3400,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icm0_6",
+      "type": "text",
+      "text": "流苏披肩\nis-a 名媛社交配件\n🌆 舞女在百乐门旋转",
+      "x": -3400,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icm0_7",
+      "type": "text",
+      "text": "西式三件套\nis-a 留洋绅士正装\n🌆 海归学者在酒会交谈",
+      "x": -3400,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icm0_8",
+      "type": "text",
+      "text": "珍珠滚边短袄\nis-a 官家少妇常服\n🌆 少妇在公馆会客",
+      "x": -3400,
+      "y": 80,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icm0_9",
+      "type": "text",
+      "text": "毛领丝绒大衣\nis-a 名流冬季外套\n🌆 阔太在戏院包厢看戏",
+      "x": -3400,
+      "y": 150,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "mcm0",
+      "type": "text",
+      "text": "📎 更多\n→ 金丝边眼镜 is-a 知识分子配饰\n→ 盘扣短褂 is-a 官商休闲装\n→ 檀香扇 is-a 贵妇随身物",
+      "x": -3400,
+      "y": 220,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hcm1",
+      "type": "text",
+      "text": "🍜 市井百业\n10项 · 日常劳动",
+      "x": -3115,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "icm1_0",
+      "type": "text",
+      "text": "蓝布长衫\nis-a 底层男性日常服\n🌆 老掌柜在店铺拨算盘",
+      "x": -3115,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icm1_1",
+      "type": "text",
+      "text": "对襟短褂\nis-a 苦力工装上衣\n🌆 码头工人弯腰扛货",
+      "x": -3115,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icm1_2",
+      "type": "text",
+      "text": "打补丁裤\nis-a 贫民日常裤装\n🌆 黄包车夫在街角等客",
+      "x": -3115,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icm1_3",
+      "type": "text",
+      "text": "粗布围裙\nis-a 小吃摊主围裙\n🌆 馄饨摊主在灶前翻炒",
+      "x": -3115,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icm1_4",
+      "type": "text",
+      "text": "阴丹士林旗袍\nis-a 平民女性日常裙\n🌆 女学生结伴走在街上",
+      "x": -3115,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icm1_5",
+      "type": "text",
+      "text": "老头布鞋\nis-a 老年男性便鞋\n🌆 老人在胡同口晒太阳",
+      "x": -3115,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icm1_6",
+      "type": "text",
+      "text": "蓝印花布头巾\nis-a 劳动妇女头饰\n🌆 农妇在集市叫卖青菜",
+      "x": -3115,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icm1_7",
+      "type": "text",
+      "text": "工装背带裤\nis-a 工厂工人制服\n🌆 工人从纱厂放工",
+      "x": -3115,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icm1_8",
+      "type": "text",
+      "text": "水手条纹衫\nis-a 船工便服\n🌆 船工在岸边修船",
+      "x": -3115,
+      "y": 80,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icm1_9",
+      "type": "text",
+      "text": "白衬衫黑裙\nis-a 女学生校服\n🌆 女学生骑车穿过校园",
+      "x": -3115,
+      "y": 150,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "mcm1",
+      "type": "text",
+      "text": "📎 更多\n→ 草鞋 is-a 贫民凉鞋\n→ 棉袄 is-a 穷人冬衣\n→ 蓑衣 is-a 农夫雨披",
+      "x": -3115,
+      "y": 220,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hcm2",
+      "type": "text",
+      "text": "📖 文人风骨\n8项 · 知识阶层",
+      "x": -2830,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "3"
+    },
+    {
+      "id": "icm2_0",
+      "type": "text",
+      "text": "灰布长衫围巾\nis-a 清贫文人标志装\n🌆 教员夹着讲义穿过校园",
+      "x": -2830,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "icm2_1",
+      "type": "text",
+      "text": "白色围巾长衫\nis-a 新派文人装扮\n🌆 作家在公园长椅沉思",
+      "x": -2830,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "icm2_2",
+      "type": "text",
+      "text": "民国学生装\nis-a 进步青年制服\n🌆 学生举旗参加游行",
+      "x": -2830,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "icm2_3",
+      "type": "text",
+      "text": "麻布文人袍\nis-a 乡村教书先生服\n🌆 私塾先生在堂前授课",
+      "x": -2830,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "icm2_4",
+      "type": "text",
+      "text": "墨色棉袍\nis-a 冬季文人常服\n🌆 老先生在书房挥毫泼墨",
+      "x": -2830,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "icm2_5",
+      "type": "text",
+      "text": "八角帽列宁装\nis-a 左翼青年装束\n🌆 进步青年在秘密集会",
+      "x": -2830,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "icm2_6",
+      "type": "text",
+      "text": "旧西装外套\nis-a 穷文人洋装\n🌆 落魄编辑伏案写稿",
+      "x": -2830,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "icm2_7",
+      "type": "text",
+      "text": "中山装配围巾\nis-a 爱国知识分子\n🌆 教授在课堂激昂讲演",
+      "x": -2830,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "mcm2",
+      "type": "text",
+      "text": "📎 更多\n→ 呢帽 is-a 文人礼帽\n→ 袖套 is-a 案牍护袖\n→ 旧皮鞋 is-a 文人行头",
+      "x": -2830,
+      "y": 80,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hcm3",
+      "type": "text",
+      "text": "🕵️ 谍战暗流\n8项 · 秘密战线",
+      "x": -2545,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "5"
+    },
+    {
+      "id": "icm3_0",
+      "type": "text",
+      "text": "黑风衣礼帽\nis-a 特工标准外出服\n🎬 特工在雨夜跟踪目标",
+      "x": -2545,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "icm3_1",
+      "type": "text",
+      "text": "暗花丝绒旗袍\nis-a 女特工社交装\n🎬 女谍在舞会传递情报",
+      "x": -2545,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "icm3_2",
+      "type": "text",
+      "text": "立领中山谍装\nis-a 伪装官员的特工\n🎬 潜入机关大楼盗取文件",
+      "x": -2545,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "icm3_3",
+      "type": "text",
+      "text": "皮手套大衣\nis-a 冷酷行动者外套\n🎬 杀手在暗巷等待目标",
+      "x": -2545,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "icm3_4",
+      "type": "text",
+      "text": "女学生便装\nis-a 女谍伪装校服\n🎬 伪装学生混入校园",
+      "x": -2545,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "icm3_5",
+      "type": "text",
+      "text": "工装裤工服\nis-a 潜伏工厂的线人\n🎬 线人在车间与接头人密谈",
+      "x": -2545,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "icm3_6",
+      "type": "text",
+      "text": "深色对襟短打\nis-a 行动组夜行服\n🎬 行动组翻墙进入大院",
+      "x": -2545,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "icm3_7",
+      "type": "text",
+      "text": "日军军官服伪装\nis-a 深入敌营的伪装\n🎬 我方特工伪装的敌军军官",
+      "x": -2545,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "mcm3",
+      "type": "text",
+      "text": "📎 更多\n→ 黑色围巾 is-a 遮面配件\n→ 宽檐帽 is-a 隐藏面容\n→ 白西装 is-a 汉奸买办装束",
+      "x": -2545,
+      "y": 80,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hcm4",
+      "type": "text",
+      "text": "⚔️ 抗日战场\n10项 · 军事装备",
+      "x": -2260,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "1"
+    },
+    {
+      "id": "icm4_0",
+      "type": "text",
+      "text": "灰布八路军军装\nis-a 八路军标准步兵服\n🎬 士兵在战壕中射击",
+      "x": -2260,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "icm4_1",
+      "type": "text",
+      "text": "德式钢盔\nis-a 中央军装备\n🎬 敢死队在炮火中冲锋",
+      "x": -2260,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "icm4_2",
+      "type": "text",
+      "text": "武装皮带子弹带\nis-a 军人标准装备\n🎬 长官佩枪巡营",
+      "x": -2260,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "icm4_3",
+      "type": "text",
+      "text": "绑腿布条\nis-a 长途行军装备\n🎬 部队在泥泞中跋涉",
+      "x": -2260,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "icm4_4",
+      "type": "text",
+      "text": "呢料军官制服\nis-a 国军军官正装\n🎬 指挥官在桌前看地图",
+      "x": -2260,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "icm4_5",
+      "type": "text",
+      "text": "土黄军装\nis-a 地方杂牌军服\n🎬 民团在村口集合",
+      "x": -2260,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "icm4_6",
+      "type": "text",
+      "text": "游击队员短打\nis-a 敌后武装便装\n🎬 游击队员在芦苇荡潜伏",
+      "x": -2260,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "icm4_7",
+      "type": "text",
+      "text": "黑色夜行服\nis-a 特战队夜袭装\n🎬 突击队在夜色中摸哨",
+      "x": -2260,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "icm4_8",
+      "type": "text",
+      "text": "白毛巾头巾\nis-a 农民抗日义军标识\n🎬 民兵在山路上奔跑",
+      "x": -2260,
+      "y": 80,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "icm4_9",
+      "type": "text",
+      "text": "血染绷带\nis-a 战场伤员标志\n🎬 伤兵在野战医院接受救治",
+      "x": -2260,
+      "y": 150,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "mcm4",
+      "type": "text",
+      "text": "📎 更多\n→ 军大衣 is-a 冬季军服\n→ 斗笠 is-a 士兵防雨具\n→ 草鞋军 is-a 极度艰苦部队",
+      "x": -2260,
+      "y": 220,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hcm5",
+      "type": "text",
+      "text": "🌾 农村乡土\n8项 · 乡土生活",
+      "x": -1975,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "2"
+    },
+    {
+      "id": "icm5_0",
+      "type": "text",
+      "text": "粗麻对襟衣\nis-a 农民日常上衣\n🌾 农夫在田里弯腰插秧",
+      "x": -1975,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "icm5_1",
+      "type": "text",
+      "text": "大裆裤布腰带\nis-a 农民传统裤装\n🌾 老农赶着水牛犁地",
+      "x": -1975,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "icm5_2",
+      "type": "text",
+      "text": "蓝印花布衫\nis-a 农村妇女上衣\n🌾 村妇在井边洗衣淘米",
+      "x": -1975,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "icm5_3",
+      "type": "text",
+      "text": "草帽蓑衣\nis-a 农民防雨套装\n🌾 农夫在雨中赶路回家",
+      "x": -1975,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "icm5_4",
+      "type": "text",
+      "text": "羊肚毛巾白羊肚\nis-a 陕北农民标志头饰\n🌾 老汉在窑洞门口抽旱烟",
+      "x": -1975,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "icm5_5",
+      "type": "text",
+      "text": "肚兜红布裤\nis-a 农村孩童衣装\n🌾 光脚小孩在村头追鸡",
+      "x": -1975,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "icm5_6",
+      "type": "text",
+      "text": "对襟棉坎肩\nis-a 农村老年冬装\n🌾 老大爷在墙根晒太阳",
+      "x": -1975,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "icm5_7",
+      "type": "text",
+      "text": "黑布鞋白袜\nis-a 农民标准鞋袜\n🌾 赶集人走在乡间小路上",
+      "x": -1975,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "mcm5",
+      "type": "text",
+      "text": "📎 更多\n→ 补丁摞补丁 is-a 极度贫寒装\n→ 红头绳 is-a 村女头发装饰\n→ 烟袋荷包 is-a 老农随身物",
+      "x": -1975,
+      "y": 80,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "ham0",
+      "type": "text",
+      "text": "🏛️ 官商公馆\n8项 · 政商宅邸",
+      "x": -2100,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "4"
+    },
+    {
+      "id": "iam0_0",
+      "type": "text",
+      "text": "石库门公馆\nis-a 官商住宅建筑\n🎬 老上海富商宅邸/深院",
+      "x": -2100,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "iam0_1",
+      "type": "text",
+      "text": "军阀大帅府\nis-a 军事兼住宅府邸\n🎬 军阀升帐/内部权力斗争",
+      "x": -2100,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "iam0_2",
+      "type": "text",
+      "text": "百乐门舞厅\nis-a 娱乐歌舞场\n🎬 谍战接头/名流社交",
+      "x": -2100,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "iam0_3",
+      "type": "text",
+      "text": "大饭店\nis-a 西式高层酒店\n🎬 政要会谈/落地窗远眺",
+      "x": -2100,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "iam0_4",
+      "type": "text",
+      "text": "银行大楼\nis-a 金融办公建筑\n🎬 经济争夺/金库劫案",
+      "x": -2100,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "iam0_5",
+      "type": "text",
+      "text": "西式花园洋房\nis-a 买办/海归豪宅\n🎬 留洋派生活/派对",
+      "x": -2100,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "iam0_6",
+      "type": "text",
+      "text": "中式深宅大院\nis-a 传统官宦宅第\n🎬 大家族内斗/封建压迫",
+      "x": -2100,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "iam0_7",
+      "type": "text",
+      "text": "大使馆领事馆\nis-a 外国驻华机构\n🎬 外交斡旋/势力交锋",
+      "x": -2100,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "mam0",
+      "type": "text",
+      "text": "📎 更多\n→ 俱乐部 is-a 名流社交场所\n→ 交易所 is-a 金融市场",
+      "x": -2100,
+      "y": 80,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "ham1",
+      "type": "text",
+      "text": "🏘️ 市井街区\n8项 · 街巷设施",
+      "x": -1830,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "iam1_0",
+      "type": "text",
+      "text": "石库门弄堂\nis-a 上海典型住宅街巷\n🎬 生活百态/追逐躲避",
+      "x": -1830,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "iam1_1",
+      "type": "text",
+      "text": "老茶馆\nis-a 民间社交场所\n🎬 市井闲谈/秘密接头",
+      "x": -1830,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "iam1_2",
+      "type": "text",
+      "text": "老戏院剧场\nis-a 民间演出场所\n🎬 台上台下/后台暗流",
+      "x": -1830,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "iam1_3",
+      "type": "text",
+      "text": "报馆出版社\nis-a 新闻出版机构\n🎬 舆论战/地下印刷",
+      "x": -1830,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "iam1_4",
+      "type": "text",
+      "text": "照相馆\nis-a 人像摄影店铺\n🎬 身份伪装/情报传递",
+      "x": -1830,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "iam1_5",
+      "type": "text",
+      "text": "码头仓库区\nis-a 水上货物装卸区\n🎬 黑市交易/地下党运货",
+      "x": -1830,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "iam1_6",
+      "type": "text",
+      "text": "电车轨道街\nis-a 城市公共交通街道\n🎬 通勤人流/追逐跳车",
+      "x": -1830,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "iam1_7",
+      "type": "text",
+      "text": "夜市排档街\nis-a 夜间小吃摊聚集地\n🎬 底层生活/情报交易掩护",
+      "x": -1830,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "mam1",
+      "type": "text",
+      "text": "📎 更多\n→ 药铺 is-a 中药店\n→ 当铺 is-a 典当行",
+      "x": -1830,
+      "y": 80,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "ham2",
+      "type": "text",
+      "text": "🌾 农村乡土\n6项 · 田园民居",
+      "x": -1560,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "2"
+    },
+    {
+      "id": "iam2_0",
+      "type": "text",
+      "text": "陕北窑洞\nis-a 黄土高原传统民居\n🎬 红军驻地/根据地",
+      "x": -1560,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "iam2_1",
+      "type": "text",
+      "text": "南方瓦房\nis-a 江南传统民居\n🎬 水乡村落/地主宅院",
+      "x": -1560,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "iam2_2",
+      "type": "text",
+      "text": "土楼围屋\nis-a 闽赣聚族堡垒民居\n🎬 大家族聚居/防御村寨",
+      "x": -1560,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "iam2_3",
+      "type": "text",
+      "text": "祠堂宗庙\nis-a 家族祭祀建筑\n🎬 族老议事/香火传承",
+      "x": -1560,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "iam2_4",
+      "type": "text",
+      "text": "晒谷场\nis-a 农村公共劳作空地\n🎬 农忙/集会/批斗大会",
+      "x": -1560,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "iam2_5",
+      "type": "text",
+      "text": "村口古树井台\nis-a 农村公共聚集点\n🎬 闲聊/送别/信息传播",
+      "x": -1560,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "mam2",
+      "type": "text",
+      "text": "📎 更多\n→ 茅草屋 is-a 贫农住所\n→ 地主大院 is-a 富户宅邸",
+      "x": -1560,
+      "y": -60,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "ham3",
+      "type": "text",
+      "text": "⚔️ 军事堡垒\n8项 · 战争设施",
+      "x": -1290,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "1"
+    },
+    {
+      "id": "iam3_0",
+      "type": "text",
+      "text": "战壕炮兵阵地\nis-a 前线防御工事\n🎬 阵地战/冲锋与坚守",
+      "x": -1290,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "iam3_1",
+      "type": "text",
+      "text": "碉堡炮楼\nis-a 日军国军防御据点\n🎬 攻坚/封锁与突破",
+      "x": -1290,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "iam3_2",
+      "type": "text",
+      "text": "指挥部参谋部\nis-a 军事指挥所\n🎬 战略部署/沙盘推演",
+      "x": -1290,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "iam3_3",
+      "type": "text",
+      "text": "兵营军营\nis-a 部队驻扎地\n🎬 训练/集结/休整",
+      "x": -1290,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "iam3_4",
+      "type": "text",
+      "text": "城墙城门楼\nis-a 古城防御建筑\n🎬 攻城战/阅兵/要冲",
+      "x": -1290,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "iam3_5",
+      "type": "text",
+      "text": "日军宪兵队\nis-a 敌占区镇压机构\n🎬 审讯/拷打/地下党营救",
+      "x": -1290,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "iam3_6",
+      "type": "text",
+      "text": "防空洞避难所\nis-a 空袭避难设施\n🎬 空袭/平民躲藏",
+      "x": -1290,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "iam3_7",
+      "type": "text",
+      "text": "地雷阵封锁线\nis-a 爆炸装置区\n🎬 过雷区/排雷/引爆",
+      "x": -1290,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "mam3",
+      "type": "text",
+      "text": "📎 更多\n→ 军火库 is-a 武器弹药储藏点\n→ 瞭望哨 is-a 前沿监视岗",
+      "x": -1290,
+      "y": 80,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "ham4",
+      "type": "text",
+      "text": "🚂 交通枢纽\n6项 · 出行连接",
+      "x": -1020,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "iam4_0",
+      "type": "text",
+      "text": "火车站铁轨\nis-a 铁路运输枢纽\n🎬 离别/抵达/追车/大撤退",
+      "x": -1020,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "iam4_1",
+      "type": "text",
+      "text": "老码头渡口\nis-a 水上客运枢纽\n🎬 逃难/物资运输/告别",
+      "x": -1020,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "iam4_2",
+      "type": "text",
+      "text": "黄包车停靠点\nis-a 人力车聚集站\n🎬 等客/抢客/穿梭街巷",
+      "x": -1020,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "iam4_3",
+      "type": "text",
+      "text": "大桥铁桥\nis-a 跨越江河桥梁\n🎬 战略争夺/炸桥/行军",
+      "x": -1020,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "iam4_4",
+      "type": "text",
+      "text": "公路检查站\nis-a 路障关卡\n🎬 搜身/盘查/蒙混过关",
+      "x": -1020,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "iam4_5",
+      "type": "text",
+      "text": "老式轿车\nis-a 交通工具/道具\n🎬 人物登场/逃亡/追逐",
+      "x": -1020,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "mam4",
+      "type": "text",
+      "text": "📎 更多\n→ 黄包车 is-a 人力两轮车\n→ 三轮车 is-a 脚蹬载客车",
+      "x": -1020,
+      "y": -60,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hsm0",
+      "type": "text",
+      "text": "🥂 官商社交\n8项 · 名流空间",
+      "x": -800,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "4"
+    },
+    {
+      "id": "ism0_0",
+      "type": "text",
+      "text": "百乐门舞池\nis-a 歌舞娱乐场景\n🎬 旋转舞台/灯红酒绿/接头",
+      "x": -800,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "ism0_1",
+      "type": "text",
+      "text": "公馆会客厅\nis-a 官商宅邸接待室\n🎬 社交/谈生意/家族聚会",
+      "x": -800,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "ism0_2",
+      "type": "text",
+      "text": "大饭店顶层餐厅\nis-a 西式高级餐厅\n🎬 浪漫约会/政要密谈",
+      "x": -800,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "ism0_3",
+      "type": "text",
+      "text": "赛马场跑马厅\nis-a 上流娱乐竞技场\n🎬 社交赌博/阔太出场",
+      "x": -800,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "ism0_4",
+      "type": "text",
+      "text": "夜总会包厢\nis-a 歌舞厅私密空间\n🎬 情欲/密谋/暗杀",
+      "x": -800,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "ism0_5",
+      "type": "text",
+      "text": "银行金库\nis-a 金融保险库房\n🎬 劫案/秘密储藏/经济命脉",
+      "x": -800,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "ism0_6",
+      "type": "text",
+      "text": "官邸书房\nis-a 政要办公私室\n🎬 密谋/文件签署/深夜独思",
+      "x": -800,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "ism0_7",
+      "type": "text",
+      "text": "鸦片馆烟馆\nis-a 颓废社交场所\n🎬 堕落/情报交易/烟雾缭绕",
+      "x": -800,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "msm0",
+      "type": "text",
+      "text": "📎 更多\n→ 裁缝店 is-a 高级定制场所\n→ 赌场 is-a 地下赌博空间",
+      "x": -800,
+      "y": 80,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hsm1",
+      "type": "text",
+      "text": "🏮 市井生活\n8项 · 民间百态",
+      "x": -530,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "ism1_0",
+      "type": "text",
+      "text": "弄堂清晨\nis-a 石库门早晨街景\n🎬 倒马桶/生煤炉/邻里聊天",
+      "x": -530,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "ism1_1",
+      "type": "text",
+      "text": "老茶馆里\nis-a 茶楼内部场景\n🎬 评书/打探消息/民间仲裁",
+      "x": -530,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "ism1_2",
+      "type": "text",
+      "text": "夜市大排档\nis-a 夜间街边饮食摊\n🎬 底层生活/江湖人群",
+      "x": -530,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "ism1_3",
+      "type": "text",
+      "text": "澡堂子\nis-a 公共洗浴场所\n🎬 放松/江湖密谈/三教九流",
+      "x": -530,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "ism1_4",
+      "type": "text",
+      "text": "理发店\nis-a 街边理发铺\n🎬 闲聊/社会新闻/日常",
+      "x": -530,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "ism1_5",
+      "type": "text",
+      "text": "菜市场\nis-a 农贸集市\n🎬 讨价还价/市井烟火",
+      "x": -530,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "ism1_6",
+      "type": "text",
+      "text": "弄堂婚礼丧事\nis-a 民间红白喜事\n🎬 喧闹/悲情/传统仪轨",
+      "x": -530,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "ism1_7",
+      "type": "text",
+      "text": "棚户区\nis-a 贫民聚居区\n🎬 极度贫困/逃难人群",
+      "x": -530,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "msm1",
+      "type": "text",
+      "text": "📎 更多\n→ 算命摊 is-a 民间卜卦\n→ 街头卖艺 is-a 杂耍表演",
+      "x": -530,
+      "y": 80,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hsm2",
+      "type": "text",
+      "text": "📚 文人书斋\n6项 · 精神角落",
+      "x": -260,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "3"
+    },
+    {
+      "id": "ism2_0",
+      "type": "text",
+      "text": "大学教室礼堂\nis-a 高等教育场所\n🎬 讲课/演讲/学生运动集会",
+      "x": -260,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "ism2_1",
+      "type": "text",
+      "text": "书房书斋\nis-a 文人工作空间\n🎬 写作/阅读/深夜孤灯",
+      "x": -260,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "ism2_2",
+      "type": "text",
+      "text": "湖畔公园长椅\nis-a 文人独处处所\n🎬 沉思/写作/约会/接头",
+      "x": -260,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "ism2_3",
+      "type": "text",
+      "text": "图书馆资料室\nis-a 藏书阅览场所\n🎬 研读/查资料/秘密约定",
+      "x": -260,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "ism2_4",
+      "type": "text",
+      "text": "咖啡馆\nis-a 西式文艺社交空间\n🎬 文人聚会/思想碰撞",
+      "x": -260,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "ism2_5",
+      "type": "text",
+      "text": "书局书店\nis-a 书籍售卖场所\n🎬 文化交流/禁书传播/遇知音",
+      "x": -260,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "msm2",
+      "type": "text",
+      "text": "📎 更多\n→ 手稿摊 is-a 文稿传递处\n→ 报刊亭 is-a 新闻零售点",
+      "x": -260,
+      "y": -60,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hsm3",
+      "type": "text",
+      "text": "💥 战场前线\n8项 · 战争场面",
+      "x": 10,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "1"
+    },
+    {
+      "id": "ism3_0",
+      "type": "text",
+      "text": "战壕对峙\nis-a 前沿阵地场景\n🎬 机枪扫射/炮弹落下/冲锋号",
+      "x": 10,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "ism3_1",
+      "type": "text",
+      "text": "巷战街道\nis-a 城市废墟战斗\n🎬 楼顶狙击/转角遭遇/手雷",
+      "x": 10,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "ism3_2",
+      "type": "text",
+      "text": "日军扫荡村庄\nis-a 敌军占领搜刮\n🎬 放火/屠杀/村民逃亡",
+      "x": 10,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "ism3_3",
+      "type": "text",
+      "text": "游击队夜袭\nis-a 敌后突袭作战\n🎬 摸哨/炸铁路/剪电线",
+      "x": 10,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "ism3_4",
+      "type": "text",
+      "text": "野战医院\nis-a 战地医疗场所\n🎬 手术/伤员/悲壮牺牲",
+      "x": 10,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "ism3_5",
+      "type": "text",
+      "text": "渡江过河\nis-a 军队强行渡河\n🎬 木船/枪林弹雨/沉没",
+      "x": 10,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "ism3_6",
+      "type": "text",
+      "text": "万人坑尸堆\nis-a 大屠杀现场\n🎬 日军暴行/触目惊心",
+      "x": 10,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "ism3_7",
+      "type": "text",
+      "text": "胜利入城式\nis-a 光复胜利场面\n🎬 红旗招展/民众欢呼",
+      "x": 10,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "msm3",
+      "type": "text",
+      "text": "📎 更多\n→ 敌后交通站 is-a 秘密联络点\n→ 秘密电台 is-a 报务员地点",
+      "x": 10,
+      "y": 80,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hsm4",
+      "type": "text",
+      "text": "🌾 农村田野\n6项 · 乡土生活",
+      "x": 280,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "2"
+    },
+    {
+      "id": "ism4_0",
+      "type": "text",
+      "text": "春耕秋收\nis-a 农田劳作场景\n🎬 插秧/打谷/集体劳动",
+      "x": 280,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "ism4_1",
+      "type": "text",
+      "text": "村头开会\nis-a 农村集体议事\n🎬 农会/批斗/分田地/动员",
+      "x": 280,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "ism4_2",
+      "type": "text",
+      "text": "赶集庙会\nis-a 集市日场景\n🎬 热闹/货物交换/走亲戚",
+      "x": 280,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "ism4_3",
+      "type": "text",
+      "text": "水车磨坊\nis-a 传统农业设施\n🎬 劳作的节奏/世外桃源",
+      "x": 280,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "ism4_4",
+      "type": "text",
+      "text": "地主收租\nis-a 阶级压迫场景\n🎬 盘剥/反抗/悲苦农民",
+      "x": 280,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "ism4_5",
+      "type": "text",
+      "text": "送红军送别\nis-a 军民告别场景\n🎬 依依不舍/革命情谊",
+      "x": 280,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "msm4",
+      "type": "text",
+      "text": "📎 更多\n→ 塘边洗衣 is-a 妇女聚集地\n→ 晒粮场 is-a 公共劳作区",
+      "x": 280,
+      "y": -60,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hcom0",
+      "type": "text",
+      "text": "🏛️ 建筑构件\n10项 · 结构/装饰",
+      "x": 400,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "icom0_0",
+      "type": "text",
+      "text": "拱形骑楼\nis-a 南方沿街过廊建筑\n🎬 遮阳避雨/市井穿行",
+      "x": 400,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icom0_1",
+      "type": "text",
+      "text": "铁艺阳台栏杆\nis-a 西式铸铁栏杆\n🎬 精致/殖民风格/装饰细节",
+      "x": 400,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icom0_2",
+      "type": "text",
+      "text": "石库门门楣\nis-a 上海石库门入口装饰\n🎬 中西合璧/家族匾额",
+      "x": 400,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icom0_3",
+      "type": "text",
+      "text": "霓虹灯招牌\nis-a 彩色灯管广告牌\n🎬 夜上海繁华/歌舞厅标志",
+      "x": 400,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "icom0_4",
+      "type": "text",
+      "text": "青砖墙灰瓦顶\nis-a 传统民居外墙屋顶\n🎬 江南水乡/老城街景",
+      "x": 400,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icom0_5",
+      "type": "text",
+      "text": "老式木质百叶窗\nis-a 手动遮光窗扇\n🎬 窥视/光影/通风",
+      "x": 400,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icom0_6",
+      "type": "text",
+      "text": "朱红大门铜钉\nis-a 传统官宅大门\n🎬 权势/庄严/叩门",
+      "x": 400,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icom0_7",
+      "type": "text",
+      "text": "琉璃瓦屋顶\nis-a 彩色釉面瓦顶\n🎬 中式庙宇/官式建筑",
+      "x": 400,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icom0_8",
+      "type": "text",
+      "text": "水泥电线杆\nis-a 城市电力设施\n🎬 新文明/现代化痕迹",
+      "x": 400,
+      "y": 80,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icom0_9",
+      "type": "text",
+      "text": "烟囱工厂烟筒\nis-a 工业建筑排烟道\n🎬 工业文明/污染/火力",
+      "x": 400,
+      "y": 150,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "mcom0",
+      "type": "text",
+      "text": "📎 更多\n→ 老虎窗 is-a 屋顶开窗\n→ 石板路 is-a 传统路面",
+      "x": 400,
+      "y": 220,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hcom1",
+      "type": "text",
+      "text": "👗 服装构件\n10项 · 配件/细节",
+      "x": 680,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "icom1_0",
+      "type": "text",
+      "text": "盘扣蝴蝶扣\nis-a 中式服装扣件\n🎬 细节质感/传统韵味",
+      "x": 680,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icom1_1",
+      "type": "text",
+      "text": "立领\nis-a 旗袍长衫领型\n🎬 挺拔/禁欲/端庄",
+      "x": 680,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icom1_2",
+      "type": "text",
+      "text": "开衩\nis-a 旗袍下摆开口\n🎬 性感/行动便利/若隐若现",
+      "x": 680,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "icom1_3",
+      "type": "text",
+      "text": "金刚纂簪子\nis-a 女性发饰\n🎬 身份/婚否/年代感",
+      "x": 680,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icom1_4",
+      "type": "text",
+      "text": "怀表挂链\nis-a 便携计时器\n🎬 绅士/身份/时间的重量",
+      "x": 680,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "icom1_5",
+      "type": "text",
+      "text": "毡帽礼帽\nis-a 男性头饰帽\n🎬 体面/遮阳/脱帽礼",
+      "x": 680,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icom1_6",
+      "type": "text",
+      "text": "围巾披肩\nis-a 颈部御寒织物\n🎬 飘逸/文人气/保暖",
+      "x": 680,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "icom1_7",
+      "type": "text",
+      "text": "眼镜墨镜\nis-a 视力矫正装饰镜\n🎬 知识分子/隐蔽身份",
+      "x": 680,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "icom1_8",
+      "type": "text",
+      "text": "烟斗卷烟\nis-a 吸烟用具\n🎬 沉思/焦虑/男人味",
+      "x": 680,
+      "y": 80,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "icom1_9",
+      "type": "text",
+      "text": "袖扣领带夹\nis-a 西装金属配件\n🎬 精致/留洋/西化细节",
+      "x": 680,
+      "y": 150,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "mcom1",
+      "type": "text",
+      "text": "📎 更多\n→ 手提箱 is-a 便携行李\n→ 油纸伞 is-a 传统雨具",
+      "x": 680,
+      "y": 220,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hmm0",
+      "type": "text",
+      "text": "🔴 符号标志\n8项 · 象征标语",
+      "x": 1600,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "1"
+    },
+    {
+      "id": "imm0_0",
+      "type": "text",
+      "text": "青天白日旗\nis-a 民国国旗国军标识\n🎬 政权象征/国统区/阅兵",
+      "x": 1600,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "imm0_1",
+      "type": "text",
+      "text": "红旗五角星\nis-a 共产党标识\n🎬 革命/解放区/红军/信仰",
+      "x": 1600,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "imm0_2",
+      "type": "text",
+      "text": "太阳旗日军旗\nis-a 日本军国主义标志\n🎬 入侵/敌占/刺眼压迫",
+      "x": 1600,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "imm0_3",
+      "type": "text",
+      "text": "标语大字报\nis-a 墙面文字宣传\n🎬 政治动员/时代特征/口号",
+      "x": 1600,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "imm0_4",
+      "type": "text",
+      "text": "中山像\nis-a 孙中山画像雕像\n🎬 精神领袖/国父/三民主义",
+      "x": 1600,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "imm0_5",
+      "type": "text",
+      "text": "毛主席像\nis-a 毛泽东画像\n🎬 延安/解放区/革命导师",
+      "x": 1600,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "imm0_6",
+      "type": "text",
+      "text": "龙纹龙凤\nis-a 传统皇权吉祥图案\n🎬 封建残余/传统/旧时代",
+      "x": 1600,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "imm0_7",
+      "type": "text",
+      "text": "月份牌海报\nis-a 民国商业广告画\n🎬 摩登女郎/商业/时代记忆",
+      "x": 1600,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "mmm0",
+      "type": "text",
+      "text": "📎 更多\n→ 青年徽章 is-a 学生团体标识\n→ 红十字会 is-a 医疗标识",
+      "x": 1600,
+      "y": 80,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hmm1",
+      "type": "text",
+      "text": "🐎 生物动物\n6项 · 役畜野物",
+      "x": 1880,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "6"
+    },
+    {
+      "id": "imm1_0",
+      "type": "text",
+      "text": "水牛黄牛\nis-a 农田耕作役畜\n🎬 农耕/田园/慢节奏",
+      "x": 1880,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "imm1_1",
+      "type": "text",
+      "text": "战马军马\nis-a 军事骑乘动物\n🎬 骑兵冲锋/军官座驾",
+      "x": 1880,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "imm1_2",
+      "type": "text",
+      "text": "黄包车夫\nis-a 人力车劳动者\n🎬 奔走/汗流/底层挣扎",
+      "x": 1880,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "imm1_3",
+      "type": "text",
+      "text": "报童\nis-a 卖报纸的少年\n🎬 叫卖/穿梭/时代声音",
+      "x": 1880,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "imm1_4",
+      "type": "text",
+      "text": "信鸽\nis-a 传递信息的鸽子\n🎬 情报/联络/希望",
+      "x": 1880,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "imm1_5",
+      "type": "text",
+      "text": "麻雀燕子\nis-a 民间常见鸟类\n🎬 乡村/自然/生机",
+      "x": 1880,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "mmm1",
+      "type": "text",
+      "text": "📎 更多\n→ 看门狗 is-a 乡村看守犬\n→ 夜猫子 is-a 猫头鹰",
+      "x": 1880,
+      "y": -60,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hmm2",
+      "type": "text",
+      "text": "🔫 物件道具\n10项 · 器具用具",
+      "x": 2160,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "1"
+    },
+    {
+      "id": "imm2_0",
+      "type": "text",
+      "text": "毛瑟手枪盒子炮\nis-a 民国经典手枪\n🎬 军官/杀手/游击队标配",
+      "x": 2160,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "imm2_1",
+      "type": "text",
+      "text": "电报机电台\nis-a 无线通讯设备\n🎬 密电/情报/嘀嗒声",
+      "x": 2160,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "imm2_2",
+      "type": "text",
+      "text": "留声机\nis-a 唱片播放设备\n🎬 靡靡之音/夜上海/怀旧",
+      "x": 2160,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "4"
+    },
+    {
+      "id": "imm2_3",
+      "type": "text",
+      "text": "煤油灯马灯\nis-a 传统照明工具\n🎬 昏暗/乡村/战时",
+      "x": 2160,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "imm2_4",
+      "type": "text",
+      "text": "钢笔毛笔\nis-a 书写工具\n🎬 文人/签字/革命笔杆",
+      "x": 2160,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "imm2_5",
+      "type": "text",
+      "text": "密函鸡毛信\nis-a 紧急密书信件\n🎬 传递/阅读/事关重大",
+      "x": 2160,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "imm2_6",
+      "type": "text",
+      "text": "算盘\nis-a 传统计算工具\n🎬 账房/商贾/精打细算",
+      "x": 2160,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "imm2_7",
+      "type": "text",
+      "text": "磨刀剃头挑子\nis-a 走街串巷手艺担\n🎬 市井/老行当/匠人",
+      "x": 2160,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "imm2_8",
+      "type": "text",
+      "text": "手摇电话\nis-a 老式电话机\n🎬 办公室/通话/紧急",
+      "x": 2160,
+      "y": 80,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "imm2_9",
+      "type": "text",
+      "text": "缝纫机\nis-a 家用作坊缝制机\n🎬 女工/家庭/生产力",
+      "x": 2160,
+      "y": 150,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "mmm2",
+      "type": "text",
+      "text": "📎 更多\n→ 暖水瓶 is-a 日用保温瓶\n→ 搪瓷缸子 is-a 军用饮水杯",
+      "x": 2160,
+      "y": 220,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "hmm3",
+      "type": "text",
+      "text": "🌫 氛围质感\n8项 · 材质意境",
+      "x": 2440,
+      "y": -550,
+      "width": 260,
+      "height": 55,
+      "color": "2"
+    },
+    {
+      "id": "imm3_0",
+      "type": "text",
+      "text": "潮湿石板路\nis-a 雨后街面质感\n🎬 江南/水汽/映照灯火",
+      "x": 2440,
+      "y": -480,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "imm3_1",
+      "type": "text",
+      "text": "硝烟战火\nis-a 战场烟尘火光\n🎬 前线/惨烈/毁灭",
+      "x": 2440,
+      "y": -410,
+      "width": 230,
+      "height": 65,
+      "color": "1"
+    },
+    {
+      "id": "imm3_2",
+      "type": "text",
+      "text": "霓虹倒影\nis-a 灯光水面反射\n🎬 夜上海/迷离/醉意",
+      "x": 2440,
+      "y": -340,
+      "width": 230,
+      "height": 65,
+      "color": "5"
+    },
+    {
+      "id": "imm3_3",
+      "type": "text",
+      "text": "煤烟雾霾\nis-a 工业取暖烟尘\n🎬 北方城市/沉重/压抑",
+      "x": 2440,
+      "y": -270,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "imm3_4",
+      "type": "text",
+      "text": "旧报纸\nis-a 废旧新闻纸张\n🎬 历史/包装/铺垫/记忆",
+      "x": 2440,
+      "y": -200,
+      "width": 230,
+      "height": 65,
+      "color": "6"
+    },
+    {
+      "id": "imm3_5",
+      "type": "text",
+      "text": "雨水屋檐\nis-a 瓦檐滴落水帘\n🎬 等待/困顿/诗意",
+      "x": 2440,
+      "y": -130,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "imm3_6",
+      "type": "text",
+      "text": "黄土黄土地\nis-a 北方干燥土地\n🎬 黄土地/贫瘠/厚重",
+      "x": 2440,
+      "y": -60,
+      "width": 230,
+      "height": 65,
+      "color": "2"
+    },
+    {
+      "id": "imm3_7",
+      "type": "text",
+      "text": "夕阳余晖\nis-a 黄昏金色光线\n🎬 旧时代落幕/怀旧/终结",
+      "x": 2440,
+      "y": 10,
+      "width": 230,
+      "height": 65,
+      "color": "3"
+    },
+    {
+      "id": "mmm3",
+      "type": "text",
+      "text": "📎 更多\n→ 雪花 is-a 纯净冷冽\n→ 青烟 is-a 香火/炊烟",
+      "x": 2440,
+      "y": 80,
+      "width": 250,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "img_minguo_sheet_01",
+      "type": "file",
+      "file": "09-给674（我）用的库/画画理论/assets/minguo-contact-sheet-batch/images/民国素材板_01_暗纹绸缎长衫_织锦马褂_高领刺绣旗袍_貂绒披肩.png",
+      "x": -3050,
+      "y": -495,
+      "width": 360,
+      "height": 520,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e5a90421",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "def",
+      "toSide": "top"
+    },
+    {
+      "id": "9c56e934",
+      "fromNode": "def",
+      "fromSide": "left",
+      "toNode": "cm",
+      "toSide": "right"
+    },
+    {
+      "id": "d736471c",
+      "fromNode": "cm",
+      "fromSide": "right",
+      "toNode": "am",
+      "toSide": "left"
+    },
+    {
+      "id": "805a6b70",
+      "fromNode": "am",
+      "fromSide": "right",
+      "toNode": "sm",
+      "toSide": "left"
+    },
+    {
+      "id": "bd298522",
+      "fromNode": "sm",
+      "fromSide": "right",
+      "toNode": "com",
+      "toSide": "left"
+    },
+    {
+      "id": "309c708d",
+      "fromNode": "com",
+      "fromSide": "right",
+      "toNode": "mm",
+      "toSide": "left"
+    },
+    {
+      "id": "d838921f",
+      "fromNode": "ph",
+      "fromSide": "bottom",
+      "toNode": "pe",
+      "toSide": "top"
+    },
+    {
+      "id": "b5bbe2d4",
+      "fromNode": "pe",
+      "fromSide": "right",
+      "toNode": "pc",
+      "toSide": "left"
+    },
+    {
+      "id": "4abcc2f2",
+      "fromNode": "pe",
+      "fromSide": "bottom",
+      "toNode": "tyh",
+      "toSide": "top"
+    },
+    {
+      "id": "bba8c7d0",
+      "fromNode": "tyh",
+      "fromSide": "bottom",
+      "toNode": "tyt",
+      "toSide": "top"
+    },
+    {
+      "id": "1eedca82",
+      "fromNode": "cm",
+      "fromSide": "bottom",
+      "toNode": "hcm0",
+      "toSide": "top"
+    },
+    {
+      "id": "84664aaf",
+      "fromNode": "hcm0",
+      "fromSide": "bottom",
+      "toNode": "icm0_0",
+      "toSide": "top"
+    },
+    {
+      "id": "6f5cd08e",
+      "fromNode": "icm0_0",
+      "fromSide": "bottom",
+      "toNode": "icm0_1",
+      "toSide": "top"
+    },
+    {
+      "id": "918f2eff",
+      "fromNode": "icm0_1",
+      "fromSide": "bottom",
+      "toNode": "icm0_2",
+      "toSide": "top"
+    },
+    {
+      "id": "2f95512e",
+      "fromNode": "icm0_2",
+      "fromSide": "bottom",
+      "toNode": "icm0_3",
+      "toSide": "top"
+    },
+    {
+      "id": "c3de728a",
+      "fromNode": "icm0_3",
+      "fromSide": "bottom",
+      "toNode": "icm0_4",
+      "toSide": "top"
+    },
+    {
+      "id": "a5a19175",
+      "fromNode": "icm0_4",
+      "fromSide": "bottom",
+      "toNode": "icm0_5",
+      "toSide": "top"
+    },
+    {
+      "id": "a6fc174e",
+      "fromNode": "icm0_5",
+      "fromSide": "bottom",
+      "toNode": "icm0_6",
+      "toSide": "top"
+    },
+    {
+      "id": "088e87cd",
+      "fromNode": "icm0_6",
+      "fromSide": "bottom",
+      "toNode": "icm0_7",
+      "toSide": "top"
+    },
+    {
+      "id": "5c816174",
+      "fromNode": "icm0_7",
+      "fromSide": "bottom",
+      "toNode": "icm0_8",
+      "toSide": "top"
+    },
+    {
+      "id": "df35d958",
+      "fromNode": "icm0_8",
+      "fromSide": "bottom",
+      "toNode": "icm0_9",
+      "toSide": "top"
+    },
+    {
+      "id": "2c69dcbc",
+      "fromNode": "icm0_9",
+      "fromSide": "bottom",
+      "toNode": "mcm0",
+      "toSide": "top"
+    },
+    {
+      "id": "ea2bbffd",
+      "fromNode": "cm",
+      "fromSide": "bottom",
+      "toNode": "hcm1",
+      "toSide": "top"
+    },
+    {
+      "id": "33e0813b",
+      "fromNode": "hcm1",
+      "fromSide": "bottom",
+      "toNode": "icm1_0",
+      "toSide": "top"
+    },
+    {
+      "id": "f9ecebdf",
+      "fromNode": "icm1_0",
+      "fromSide": "bottom",
+      "toNode": "icm1_1",
+      "toSide": "top"
+    },
+    {
+      "id": "54184193",
+      "fromNode": "icm1_1",
+      "fromSide": "bottom",
+      "toNode": "icm1_2",
+      "toSide": "top"
+    },
+    {
+      "id": "78b966b7",
+      "fromNode": "icm1_2",
+      "fromSide": "bottom",
+      "toNode": "icm1_3",
+      "toSide": "top"
+    },
+    {
+      "id": "6fb258eb",
+      "fromNode": "icm1_3",
+      "fromSide": "bottom",
+      "toNode": "icm1_4",
+      "toSide": "top"
+    },
+    {
+      "id": "413d925a",
+      "fromNode": "icm1_4",
+      "fromSide": "bottom",
+      "toNode": "icm1_5",
+      "toSide": "top"
+    },
+    {
+      "id": "7e94359e",
+      "fromNode": "icm1_5",
+      "fromSide": "bottom",
+      "toNode": "icm1_6",
+      "toSide": "top"
+    },
+    {
+      "id": "04b60fdd",
+      "fromNode": "icm1_6",
+      "fromSide": "bottom",
+      "toNode": "icm1_7",
+      "toSide": "top"
+    },
+    {
+      "id": "980db6c4",
+      "fromNode": "icm1_7",
+      "fromSide": "bottom",
+      "toNode": "icm1_8",
+      "toSide": "top"
+    },
+    {
+      "id": "998f686b",
+      "fromNode": "icm1_8",
+      "fromSide": "bottom",
+      "toNode": "icm1_9",
+      "toSide": "top"
+    },
+    {
+      "id": "95aaf005",
+      "fromNode": "icm1_9",
+      "fromSide": "bottom",
+      "toNode": "mcm1",
+      "toSide": "top"
+    },
+    {
+      "id": "b99b8d4e",
+      "fromNode": "cm",
+      "fromSide": "bottom",
+      "toNode": "hcm2",
+      "toSide": "top"
+    },
+    {
+      "id": "de269809",
+      "fromNode": "hcm2",
+      "fromSide": "bottom",
+      "toNode": "icm2_0",
+      "toSide": "top"
+    },
+    {
+      "id": "fb96b40c",
+      "fromNode": "icm2_0",
+      "fromSide": "bottom",
+      "toNode": "icm2_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e91dbc3f",
+      "fromNode": "icm2_1",
+      "fromSide": "bottom",
+      "toNode": "icm2_2",
+      "toSide": "top"
+    },
+    {
+      "id": "57bc2443",
+      "fromNode": "icm2_2",
+      "fromSide": "bottom",
+      "toNode": "icm2_3",
+      "toSide": "top"
+    },
+    {
+      "id": "296e2c7f",
+      "fromNode": "icm2_3",
+      "fromSide": "bottom",
+      "toNode": "icm2_4",
+      "toSide": "top"
+    },
+    {
+      "id": "394d89c5",
+      "fromNode": "icm2_4",
+      "fromSide": "bottom",
+      "toNode": "icm2_5",
+      "toSide": "top"
+    },
+    {
+      "id": "49456d8b",
+      "fromNode": "icm2_5",
+      "fromSide": "bottom",
+      "toNode": "icm2_6",
+      "toSide": "top"
+    },
+    {
+      "id": "af63b21d",
+      "fromNode": "icm2_6",
+      "fromSide": "bottom",
+      "toNode": "icm2_7",
+      "toSide": "top"
+    },
+    {
+      "id": "8a376ae7",
+      "fromNode": "icm2_7",
+      "fromSide": "bottom",
+      "toNode": "mcm2",
+      "toSide": "top"
+    },
+    {
+      "id": "f7eb1624",
+      "fromNode": "cm",
+      "fromSide": "bottom",
+      "toNode": "hcm3",
+      "toSide": "top"
+    },
+    {
+      "id": "92064d7c",
+      "fromNode": "hcm3",
+      "fromSide": "bottom",
+      "toNode": "icm3_0",
+      "toSide": "top"
+    },
+    {
+      "id": "b5e4697a",
+      "fromNode": "icm3_0",
+      "fromSide": "bottom",
+      "toNode": "icm3_1",
+      "toSide": "top"
+    },
+    {
+      "id": "337fdb12",
+      "fromNode": "icm3_1",
+      "fromSide": "bottom",
+      "toNode": "icm3_2",
+      "toSide": "top"
+    },
+    {
+      "id": "676b4c8e",
+      "fromNode": "icm3_2",
+      "fromSide": "bottom",
+      "toNode": "icm3_3",
+      "toSide": "top"
+    },
+    {
+      "id": "47622c18",
+      "fromNode": "icm3_3",
+      "fromSide": "bottom",
+      "toNode": "icm3_4",
+      "toSide": "top"
+    },
+    {
+      "id": "76ba47ca",
+      "fromNode": "icm3_4",
+      "fromSide": "bottom",
+      "toNode": "icm3_5",
+      "toSide": "top"
+    },
+    {
+      "id": "2bd5a98d",
+      "fromNode": "icm3_5",
+      "fromSide": "bottom",
+      "toNode": "icm3_6",
+      "toSide": "top"
+    },
+    {
+      "id": "517ad12f",
+      "fromNode": "icm3_6",
+      "fromSide": "bottom",
+      "toNode": "icm3_7",
+      "toSide": "top"
+    },
+    {
+      "id": "2cdae69e",
+      "fromNode": "icm3_7",
+      "fromSide": "bottom",
+      "toNode": "mcm3",
+      "toSide": "top"
+    },
+    {
+      "id": "ac21ecc8",
+      "fromNode": "cm",
+      "fromSide": "bottom",
+      "toNode": "hcm4",
+      "toSide": "top"
+    },
+    {
+      "id": "cda0d609",
+      "fromNode": "hcm4",
+      "fromSide": "bottom",
+      "toNode": "icm4_0",
+      "toSide": "top"
+    },
+    {
+      "id": "88787f97",
+      "fromNode": "icm4_0",
+      "fromSide": "bottom",
+      "toNode": "icm4_1",
+      "toSide": "top"
+    },
+    {
+      "id": "33cfe3f1",
+      "fromNode": "icm4_1",
+      "fromSide": "bottom",
+      "toNode": "icm4_2",
+      "toSide": "top"
+    },
+    {
+      "id": "41ff2a79",
+      "fromNode": "icm4_2",
+      "fromSide": "bottom",
+      "toNode": "icm4_3",
+      "toSide": "top"
+    },
+    {
+      "id": "65dd0966",
+      "fromNode": "icm4_3",
+      "fromSide": "bottom",
+      "toNode": "icm4_4",
+      "toSide": "top"
+    },
+    {
+      "id": "b93a2c6f",
+      "fromNode": "icm4_4",
+      "fromSide": "bottom",
+      "toNode": "icm4_5",
+      "toSide": "top"
+    },
+    {
+      "id": "24129b6f",
+      "fromNode": "icm4_5",
+      "fromSide": "bottom",
+      "toNode": "icm4_6",
+      "toSide": "top"
+    },
+    {
+      "id": "7649516d",
+      "fromNode": "icm4_6",
+      "fromSide": "bottom",
+      "toNode": "icm4_7",
+      "toSide": "top"
+    },
+    {
+      "id": "568e9e36",
+      "fromNode": "icm4_7",
+      "fromSide": "bottom",
+      "toNode": "icm4_8",
+      "toSide": "top"
+    },
+    {
+      "id": "38c84f2e",
+      "fromNode": "icm4_8",
+      "fromSide": "bottom",
+      "toNode": "icm4_9",
+      "toSide": "top"
+    },
+    {
+      "id": "0e29cce0",
+      "fromNode": "icm4_9",
+      "fromSide": "bottom",
+      "toNode": "mcm4",
+      "toSide": "top"
+    },
+    {
+      "id": "ac42fa4c",
+      "fromNode": "cm",
+      "fromSide": "bottom",
+      "toNode": "hcm5",
+      "toSide": "top"
+    },
+    {
+      "id": "6efcaa5c",
+      "fromNode": "hcm5",
+      "fromSide": "bottom",
+      "toNode": "icm5_0",
+      "toSide": "top"
+    },
+    {
+      "id": "cffb3916",
+      "fromNode": "icm5_0",
+      "fromSide": "bottom",
+      "toNode": "icm5_1",
+      "toSide": "top"
+    },
+    {
+      "id": "9e28efce",
+      "fromNode": "icm5_1",
+      "fromSide": "bottom",
+      "toNode": "icm5_2",
+      "toSide": "top"
+    },
+    {
+      "id": "0aa853a3",
+      "fromNode": "icm5_2",
+      "fromSide": "bottom",
+      "toNode": "icm5_3",
+      "toSide": "top"
+    },
+    {
+      "id": "edf9535d",
+      "fromNode": "icm5_3",
+      "fromSide": "bottom",
+      "toNode": "icm5_4",
+      "toSide": "top"
+    },
+    {
+      "id": "d9e3701b",
+      "fromNode": "icm5_4",
+      "fromSide": "bottom",
+      "toNode": "icm5_5",
+      "toSide": "top"
+    },
+    {
+      "id": "52f27439",
+      "fromNode": "icm5_5",
+      "fromSide": "bottom",
+      "toNode": "icm5_6",
+      "toSide": "top"
+    },
+    {
+      "id": "4a608ea6",
+      "fromNode": "icm5_6",
+      "fromSide": "bottom",
+      "toNode": "icm5_7",
+      "toSide": "top"
+    },
+    {
+      "id": "ab1bda31",
+      "fromNode": "icm5_7",
+      "fromSide": "bottom",
+      "toNode": "mcm5",
+      "toSide": "top"
+    },
+    {
+      "id": "88126298",
+      "fromNode": "am",
+      "fromSide": "bottom",
+      "toNode": "ham0",
+      "toSide": "top"
+    },
+    {
+      "id": "823ff3bc",
+      "fromNode": "ham0",
+      "fromSide": "bottom",
+      "toNode": "iam0_0",
+      "toSide": "top"
+    },
+    {
+      "id": "a6445a4c",
+      "fromNode": "iam0_0",
+      "fromSide": "bottom",
+      "toNode": "iam0_1",
+      "toSide": "top"
+    },
+    {
+      "id": "ae59c740",
+      "fromNode": "iam0_1",
+      "fromSide": "bottom",
+      "toNode": "iam0_2",
+      "toSide": "top"
+    },
+    {
+      "id": "f4daef95",
+      "fromNode": "iam0_2",
+      "fromSide": "bottom",
+      "toNode": "iam0_3",
+      "toSide": "top"
+    },
+    {
+      "id": "24e54bf6",
+      "fromNode": "iam0_3",
+      "fromSide": "bottom",
+      "toNode": "iam0_4",
+      "toSide": "top"
+    },
+    {
+      "id": "03b89429",
+      "fromNode": "iam0_4",
+      "fromSide": "bottom",
+      "toNode": "iam0_5",
+      "toSide": "top"
+    },
+    {
+      "id": "65fe668b",
+      "fromNode": "iam0_5",
+      "fromSide": "bottom",
+      "toNode": "iam0_6",
+      "toSide": "top"
+    },
+    {
+      "id": "2ffccf13",
+      "fromNode": "iam0_6",
+      "fromSide": "bottom",
+      "toNode": "iam0_7",
+      "toSide": "top"
+    },
+    {
+      "id": "d73fa583",
+      "fromNode": "iam0_7",
+      "fromSide": "bottom",
+      "toNode": "mam0",
+      "toSide": "top"
+    },
+    {
+      "id": "5020b4a0",
+      "fromNode": "am",
+      "fromSide": "bottom",
+      "toNode": "ham1",
+      "toSide": "top"
+    },
+    {
+      "id": "0d247847",
+      "fromNode": "ham1",
+      "fromSide": "bottom",
+      "toNode": "iam1_0",
+      "toSide": "top"
+    },
+    {
+      "id": "c8243745",
+      "fromNode": "iam1_0",
+      "fromSide": "bottom",
+      "toNode": "iam1_1",
+      "toSide": "top"
+    },
+    {
+      "id": "59bfc519",
+      "fromNode": "iam1_1",
+      "fromSide": "bottom",
+      "toNode": "iam1_2",
+      "toSide": "top"
+    },
+    {
+      "id": "912bada3",
+      "fromNode": "iam1_2",
+      "fromSide": "bottom",
+      "toNode": "iam1_3",
+      "toSide": "top"
+    },
+    {
+      "id": "e4aa9a1e",
+      "fromNode": "iam1_3",
+      "fromSide": "bottom",
+      "toNode": "iam1_4",
+      "toSide": "top"
+    },
+    {
+      "id": "000b9d44",
+      "fromNode": "iam1_4",
+      "fromSide": "bottom",
+      "toNode": "iam1_5",
+      "toSide": "top"
+    },
+    {
+      "id": "93ddd5ea",
+      "fromNode": "iam1_5",
+      "fromSide": "bottom",
+      "toNode": "iam1_6",
+      "toSide": "top"
+    },
+    {
+      "id": "a6c18d3c",
+      "fromNode": "iam1_6",
+      "fromSide": "bottom",
+      "toNode": "iam1_7",
+      "toSide": "top"
+    },
+    {
+      "id": "da9793dc",
+      "fromNode": "iam1_7",
+      "fromSide": "bottom",
+      "toNode": "mam1",
+      "toSide": "top"
+    },
+    {
+      "id": "2a08b6ca",
+      "fromNode": "am",
+      "fromSide": "bottom",
+      "toNode": "ham2",
+      "toSide": "top"
+    },
+    {
+      "id": "e4efdf8a",
+      "fromNode": "ham2",
+      "fromSide": "bottom",
+      "toNode": "iam2_0",
+      "toSide": "top"
+    },
+    {
+      "id": "28ff8419",
+      "fromNode": "iam2_0",
+      "fromSide": "bottom",
+      "toNode": "iam2_1",
+      "toSide": "top"
+    },
+    {
+      "id": "65202557",
+      "fromNode": "iam2_1",
+      "fromSide": "bottom",
+      "toNode": "iam2_2",
+      "toSide": "top"
+    },
+    {
+      "id": "176305f0",
+      "fromNode": "iam2_2",
+      "fromSide": "bottom",
+      "toNode": "iam2_3",
+      "toSide": "top"
+    },
+    {
+      "id": "329953ea",
+      "fromNode": "iam2_3",
+      "fromSide": "bottom",
+      "toNode": "iam2_4",
+      "toSide": "top"
+    },
+    {
+      "id": "66c508a5",
+      "fromNode": "iam2_4",
+      "fromSide": "bottom",
+      "toNode": "iam2_5",
+      "toSide": "top"
+    },
+    {
+      "id": "7c8072eb",
+      "fromNode": "iam2_5",
+      "fromSide": "bottom",
+      "toNode": "mam2",
+      "toSide": "top"
+    },
+    {
+      "id": "c4ad6f00",
+      "fromNode": "am",
+      "fromSide": "bottom",
+      "toNode": "ham3",
+      "toSide": "top"
+    },
+    {
+      "id": "f9640e85",
+      "fromNode": "ham3",
+      "fromSide": "bottom",
+      "toNode": "iam3_0",
+      "toSide": "top"
+    },
+    {
+      "id": "a2f76f87",
+      "fromNode": "iam3_0",
+      "fromSide": "bottom",
+      "toNode": "iam3_1",
+      "toSide": "top"
+    },
+    {
+      "id": "d301cce9",
+      "fromNode": "iam3_1",
+      "fromSide": "bottom",
+      "toNode": "iam3_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e3277eb8",
+      "fromNode": "iam3_2",
+      "fromSide": "bottom",
+      "toNode": "iam3_3",
+      "toSide": "top"
+    },
+    {
+      "id": "a4ab1938",
+      "fromNode": "iam3_3",
+      "fromSide": "bottom",
+      "toNode": "iam3_4",
+      "toSide": "top"
+    },
+    {
+      "id": "0402fd15",
+      "fromNode": "iam3_4",
+      "fromSide": "bottom",
+      "toNode": "iam3_5",
+      "toSide": "top"
+    },
+    {
+      "id": "c619211f",
+      "fromNode": "iam3_5",
+      "fromSide": "bottom",
+      "toNode": "iam3_6",
+      "toSide": "top"
+    },
+    {
+      "id": "050b0de2",
+      "fromNode": "iam3_6",
+      "fromSide": "bottom",
+      "toNode": "iam3_7",
+      "toSide": "top"
+    },
+    {
+      "id": "d530d440",
+      "fromNode": "iam3_7",
+      "fromSide": "bottom",
+      "toNode": "mam3",
+      "toSide": "top"
+    },
+    {
+      "id": "f053f174",
+      "fromNode": "am",
+      "fromSide": "bottom",
+      "toNode": "ham4",
+      "toSide": "top"
+    },
+    {
+      "id": "56a43008",
+      "fromNode": "ham4",
+      "fromSide": "bottom",
+      "toNode": "iam4_0",
+      "toSide": "top"
+    },
+    {
+      "id": "7a021be2",
+      "fromNode": "iam4_0",
+      "fromSide": "bottom",
+      "toNode": "iam4_1",
+      "toSide": "top"
+    },
+    {
+      "id": "01065897",
+      "fromNode": "iam4_1",
+      "fromSide": "bottom",
+      "toNode": "iam4_2",
+      "toSide": "top"
+    },
+    {
+      "id": "fb506297",
+      "fromNode": "iam4_2",
+      "fromSide": "bottom",
+      "toNode": "iam4_3",
+      "toSide": "top"
+    },
+    {
+      "id": "0bc98816",
+      "fromNode": "iam4_3",
+      "fromSide": "bottom",
+      "toNode": "iam4_4",
+      "toSide": "top"
+    },
+    {
+      "id": "a58145ff",
+      "fromNode": "iam4_4",
+      "fromSide": "bottom",
+      "toNode": "iam4_5",
+      "toSide": "top"
+    },
+    {
+      "id": "315f1b40",
+      "fromNode": "iam4_5",
+      "fromSide": "bottom",
+      "toNode": "mam4",
+      "toSide": "top"
+    },
+    {
+      "id": "8c2fcf45",
+      "fromNode": "sm",
+      "fromSide": "bottom",
+      "toNode": "hsm0",
+      "toSide": "top"
+    },
+    {
+      "id": "9a210317",
+      "fromNode": "hsm0",
+      "fromSide": "bottom",
+      "toNode": "ism0_0",
+      "toSide": "top"
+    },
+    {
+      "id": "c078de8c",
+      "fromNode": "ism0_0",
+      "fromSide": "bottom",
+      "toNode": "ism0_1",
+      "toSide": "top"
+    },
+    {
+      "id": "865820cf",
+      "fromNode": "ism0_1",
+      "fromSide": "bottom",
+      "toNode": "ism0_2",
+      "toSide": "top"
+    },
+    {
+      "id": "b80f289e",
+      "fromNode": "ism0_2",
+      "fromSide": "bottom",
+      "toNode": "ism0_3",
+      "toSide": "top"
+    },
+    {
+      "id": "dfa87fe8",
+      "fromNode": "ism0_3",
+      "fromSide": "bottom",
+      "toNode": "ism0_4",
+      "toSide": "top"
+    },
+    {
+      "id": "84c7af55",
+      "fromNode": "ism0_4",
+      "fromSide": "bottom",
+      "toNode": "ism0_5",
+      "toSide": "top"
+    },
+    {
+      "id": "e8da437c",
+      "fromNode": "ism0_5",
+      "fromSide": "bottom",
+      "toNode": "ism0_6",
+      "toSide": "top"
+    },
+    {
+      "id": "b983f670",
+      "fromNode": "ism0_6",
+      "fromSide": "bottom",
+      "toNode": "ism0_7",
+      "toSide": "top"
+    },
+    {
+      "id": "7b76b22c",
+      "fromNode": "ism0_7",
+      "fromSide": "bottom",
+      "toNode": "msm0",
+      "toSide": "top"
+    },
+    {
+      "id": "7e718e5d",
+      "fromNode": "sm",
+      "fromSide": "bottom",
+      "toNode": "hsm1",
+      "toSide": "top"
+    },
+    {
+      "id": "a12a5763",
+      "fromNode": "hsm1",
+      "fromSide": "bottom",
+      "toNode": "ism1_0",
+      "toSide": "top"
+    },
+    {
+      "id": "78704261",
+      "fromNode": "ism1_0",
+      "fromSide": "bottom",
+      "toNode": "ism1_1",
+      "toSide": "top"
+    },
+    {
+      "id": "fa47979b",
+      "fromNode": "ism1_1",
+      "fromSide": "bottom",
+      "toNode": "ism1_2",
+      "toSide": "top"
+    },
+    {
+      "id": "7c1c1961",
+      "fromNode": "ism1_2",
+      "fromSide": "bottom",
+      "toNode": "ism1_3",
+      "toSide": "top"
+    },
+    {
+      "id": "a7771b6d",
+      "fromNode": "ism1_3",
+      "fromSide": "bottom",
+      "toNode": "ism1_4",
+      "toSide": "top"
+    },
+    {
+      "id": "ad965eee",
+      "fromNode": "ism1_4",
+      "fromSide": "bottom",
+      "toNode": "ism1_5",
+      "toSide": "top"
+    },
+    {
+      "id": "60fda97b",
+      "fromNode": "ism1_5",
+      "fromSide": "bottom",
+      "toNode": "ism1_6",
+      "toSide": "top"
+    },
+    {
+      "id": "f8978c16",
+      "fromNode": "ism1_6",
+      "fromSide": "bottom",
+      "toNode": "ism1_7",
+      "toSide": "top"
+    },
+    {
+      "id": "e2f12a6e",
+      "fromNode": "ism1_7",
+      "fromSide": "bottom",
+      "toNode": "msm1",
+      "toSide": "top"
+    },
+    {
+      "id": "c6eb7fc7",
+      "fromNode": "sm",
+      "fromSide": "bottom",
+      "toNode": "hsm2",
+      "toSide": "top"
+    },
+    {
+      "id": "35655e69",
+      "fromNode": "hsm2",
+      "fromSide": "bottom",
+      "toNode": "ism2_0",
+      "toSide": "top"
+    },
+    {
+      "id": "b600a9b8",
+      "fromNode": "ism2_0",
+      "fromSide": "bottom",
+      "toNode": "ism2_1",
+      "toSide": "top"
+    },
+    {
+      "id": "92e20441",
+      "fromNode": "ism2_1",
+      "fromSide": "bottom",
+      "toNode": "ism2_2",
+      "toSide": "top"
+    },
+    {
+      "id": "51f33adc",
+      "fromNode": "ism2_2",
+      "fromSide": "bottom",
+      "toNode": "ism2_3",
+      "toSide": "top"
+    },
+    {
+      "id": "d89ba5fd",
+      "fromNode": "ism2_3",
+      "fromSide": "bottom",
+      "toNode": "ism2_4",
+      "toSide": "top"
+    },
+    {
+      "id": "3ba8da6e",
+      "fromNode": "ism2_4",
+      "fromSide": "bottom",
+      "toNode": "ism2_5",
+      "toSide": "top"
+    },
+    {
+      "id": "fcf665d2",
+      "fromNode": "ism2_5",
+      "fromSide": "bottom",
+      "toNode": "msm2",
+      "toSide": "top"
+    },
+    {
+      "id": "071615c8",
+      "fromNode": "sm",
+      "fromSide": "bottom",
+      "toNode": "hsm3",
+      "toSide": "top"
+    },
+    {
+      "id": "32adf917",
+      "fromNode": "hsm3",
+      "fromSide": "bottom",
+      "toNode": "ism3_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e85784b3",
+      "fromNode": "ism3_0",
+      "fromSide": "bottom",
+      "toNode": "ism3_1",
+      "toSide": "top"
+    },
+    {
+      "id": "b1435b31",
+      "fromNode": "ism3_1",
+      "fromSide": "bottom",
+      "toNode": "ism3_2",
+      "toSide": "top"
+    },
+    {
+      "id": "2e0fc368",
+      "fromNode": "ism3_2",
+      "fromSide": "bottom",
+      "toNode": "ism3_3",
+      "toSide": "top"
+    },
+    {
+      "id": "b2067893",
+      "fromNode": "ism3_3",
+      "fromSide": "bottom",
+      "toNode": "ism3_4",
+      "toSide": "top"
+    },
+    {
+      "id": "fd10ab10",
+      "fromNode": "ism3_4",
+      "fromSide": "bottom",
+      "toNode": "ism3_5",
+      "toSide": "top"
+    },
+    {
+      "id": "9d9d469c",
+      "fromNode": "ism3_5",
+      "fromSide": "bottom",
+      "toNode": "ism3_6",
+      "toSide": "top"
+    },
+    {
+      "id": "e22fd704",
+      "fromNode": "ism3_6",
+      "fromSide": "bottom",
+      "toNode": "ism3_7",
+      "toSide": "top"
+    },
+    {
+      "id": "ecc0adde",
+      "fromNode": "ism3_7",
+      "fromSide": "bottom",
+      "toNode": "msm3",
+      "toSide": "top"
+    },
+    {
+      "id": "9f2ae710",
+      "fromNode": "sm",
+      "fromSide": "bottom",
+      "toNode": "hsm4",
+      "toSide": "top"
+    },
+    {
+      "id": "fe02a39f",
+      "fromNode": "hsm4",
+      "fromSide": "bottom",
+      "toNode": "ism4_0",
+      "toSide": "top"
+    },
+    {
+      "id": "d66455e9",
+      "fromNode": "ism4_0",
+      "fromSide": "bottom",
+      "toNode": "ism4_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e11a2879",
+      "fromNode": "ism4_1",
+      "fromSide": "bottom",
+      "toNode": "ism4_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e97e2277",
+      "fromNode": "ism4_2",
+      "fromSide": "bottom",
+      "toNode": "ism4_3",
+      "toSide": "top"
+    },
+    {
+      "id": "9be7b4ae",
+      "fromNode": "ism4_3",
+      "fromSide": "bottom",
+      "toNode": "ism4_4",
+      "toSide": "top"
+    },
+    {
+      "id": "62089a38",
+      "fromNode": "ism4_4",
+      "fromSide": "bottom",
+      "toNode": "ism4_5",
+      "toSide": "top"
+    },
+    {
+      "id": "018e3871",
+      "fromNode": "ism4_5",
+      "fromSide": "bottom",
+      "toNode": "msm4",
+      "toSide": "top"
+    },
+    {
+      "id": "b94cb49f",
+      "fromNode": "com",
+      "fromSide": "bottom",
+      "toNode": "hcom0",
+      "toSide": "top"
+    },
+    {
+      "id": "8451161c",
+      "fromNode": "hcom0",
+      "fromSide": "bottom",
+      "toNode": "icom0_0",
+      "toSide": "top"
+    },
+    {
+      "id": "7233ba84",
+      "fromNode": "icom0_0",
+      "fromSide": "bottom",
+      "toNode": "icom0_1",
+      "toSide": "top"
+    },
+    {
+      "id": "fe4ff77d",
+      "fromNode": "icom0_1",
+      "fromSide": "bottom",
+      "toNode": "icom0_2",
+      "toSide": "top"
+    },
+    {
+      "id": "c493c4db",
+      "fromNode": "icom0_2",
+      "fromSide": "bottom",
+      "toNode": "icom0_3",
+      "toSide": "top"
+    },
+    {
+      "id": "88ba7a0d",
+      "fromNode": "icom0_3",
+      "fromSide": "bottom",
+      "toNode": "icom0_4",
+      "toSide": "top"
+    },
+    {
+      "id": "ed7083ce",
+      "fromNode": "icom0_4",
+      "fromSide": "bottom",
+      "toNode": "icom0_5",
+      "toSide": "top"
+    },
+    {
+      "id": "d2c66668",
+      "fromNode": "icom0_5",
+      "fromSide": "bottom",
+      "toNode": "icom0_6",
+      "toSide": "top"
+    },
+    {
+      "id": "d0b0a396",
+      "fromNode": "icom0_6",
+      "fromSide": "bottom",
+      "toNode": "icom0_7",
+      "toSide": "top"
+    },
+    {
+      "id": "05329726",
+      "fromNode": "icom0_7",
+      "fromSide": "bottom",
+      "toNode": "icom0_8",
+      "toSide": "top"
+    },
+    {
+      "id": "e5a2945a",
+      "fromNode": "icom0_8",
+      "fromSide": "bottom",
+      "toNode": "icom0_9",
+      "toSide": "top"
+    },
+    {
+      "id": "40d1e329",
+      "fromNode": "icom0_9",
+      "fromSide": "bottom",
+      "toNode": "mcom0",
+      "toSide": "top"
+    },
+    {
+      "id": "e00575ee",
+      "fromNode": "com",
+      "fromSide": "bottom",
+      "toNode": "hcom1",
+      "toSide": "top"
+    },
+    {
+      "id": "cd08ca79",
+      "fromNode": "hcom1",
+      "fromSide": "bottom",
+      "toNode": "icom1_0",
+      "toSide": "top"
+    },
+    {
+      "id": "b973b83f",
+      "fromNode": "icom1_0",
+      "fromSide": "bottom",
+      "toNode": "icom1_1",
+      "toSide": "top"
+    },
+    {
+      "id": "f234b0ab",
+      "fromNode": "icom1_1",
+      "fromSide": "bottom",
+      "toNode": "icom1_2",
+      "toSide": "top"
+    },
+    {
+      "id": "ce7d6914",
+      "fromNode": "icom1_2",
+      "fromSide": "bottom",
+      "toNode": "icom1_3",
+      "toSide": "top"
+    },
+    {
+      "id": "dc865f14",
+      "fromNode": "icom1_3",
+      "fromSide": "bottom",
+      "toNode": "icom1_4",
+      "toSide": "top"
+    },
+    {
+      "id": "8944ca2b",
+      "fromNode": "icom1_4",
+      "fromSide": "bottom",
+      "toNode": "icom1_5",
+      "toSide": "top"
+    },
+    {
+      "id": "cb7be1cb",
+      "fromNode": "icom1_5",
+      "fromSide": "bottom",
+      "toNode": "icom1_6",
+      "toSide": "top"
+    },
+    {
+      "id": "d00cebb8",
+      "fromNode": "icom1_6",
+      "fromSide": "bottom",
+      "toNode": "icom1_7",
+      "toSide": "top"
+    },
+    {
+      "id": "8ba3941d",
+      "fromNode": "icom1_7",
+      "fromSide": "bottom",
+      "toNode": "icom1_8",
+      "toSide": "top"
+    },
+    {
+      "id": "14ad4371",
+      "fromNode": "icom1_8",
+      "fromSide": "bottom",
+      "toNode": "icom1_9",
+      "toSide": "top"
+    },
+    {
+      "id": "5abc255f",
+      "fromNode": "icom1_9",
+      "fromSide": "bottom",
+      "toNode": "mcom1",
+      "toSide": "top"
+    },
+    {
+      "id": "c25e1f81",
+      "fromNode": "mm",
+      "fromSide": "bottom",
+      "toNode": "hmm0",
+      "toSide": "top"
+    },
+    {
+      "id": "15c8c37d",
+      "fromNode": "hmm0",
+      "fromSide": "bottom",
+      "toNode": "imm0_0",
+      "toSide": "top"
+    },
+    {
+      "id": "a8d5599f",
+      "fromNode": "imm0_0",
+      "fromSide": "bottom",
+      "toNode": "imm0_1",
+      "toSide": "top"
+    },
+    {
+      "id": "f0fa83fa",
+      "fromNode": "imm0_1",
+      "fromSide": "bottom",
+      "toNode": "imm0_2",
+      "toSide": "top"
+    },
+    {
+      "id": "138ee212",
+      "fromNode": "imm0_2",
+      "fromSide": "bottom",
+      "toNode": "imm0_3",
+      "toSide": "top"
+    },
+    {
+      "id": "72e6cd67",
+      "fromNode": "imm0_3",
+      "fromSide": "bottom",
+      "toNode": "imm0_4",
+      "toSide": "top"
+    },
+    {
+      "id": "64a6e4de",
+      "fromNode": "imm0_4",
+      "fromSide": "bottom",
+      "toNode": "imm0_5",
+      "toSide": "top"
+    },
+    {
+      "id": "5e2cc793",
+      "fromNode": "imm0_5",
+      "fromSide": "bottom",
+      "toNode": "imm0_6",
+      "toSide": "top"
+    },
+    {
+      "id": "4c70b160",
+      "fromNode": "imm0_6",
+      "fromSide": "bottom",
+      "toNode": "imm0_7",
+      "toSide": "top"
+    },
+    {
+      "id": "9519f2d6",
+      "fromNode": "imm0_7",
+      "fromSide": "bottom",
+      "toNode": "mmm0",
+      "toSide": "top"
+    },
+    {
+      "id": "b1ab78a8",
+      "fromNode": "mm",
+      "fromSide": "bottom",
+      "toNode": "hmm1",
+      "toSide": "top"
+    },
+    {
+      "id": "47b2a18f",
+      "fromNode": "hmm1",
+      "fromSide": "bottom",
+      "toNode": "imm1_0",
+      "toSide": "top"
+    },
+    {
+      "id": "89118190",
+      "fromNode": "imm1_0",
+      "fromSide": "bottom",
+      "toNode": "imm1_1",
+      "toSide": "top"
+    },
+    {
+      "id": "7b9ef884",
+      "fromNode": "imm1_1",
+      "fromSide": "bottom",
+      "toNode": "imm1_2",
+      "toSide": "top"
+    },
+    {
+      "id": "27fc165e",
+      "fromNode": "imm1_2",
+      "fromSide": "bottom",
+      "toNode": "imm1_3",
+      "toSide": "top"
+    },
+    {
+      "id": "1e9f6626",
+      "fromNode": "imm1_3",
+      "fromSide": "bottom",
+      "toNode": "imm1_4",
+      "toSide": "top"
+    },
+    {
+      "id": "b9570901",
+      "fromNode": "imm1_4",
+      "fromSide": "bottom",
+      "toNode": "imm1_5",
+      "toSide": "top"
+    },
+    {
+      "id": "545b6f76",
+      "fromNode": "imm1_5",
+      "fromSide": "bottom",
+      "toNode": "mmm1",
+      "toSide": "top"
+    },
+    {
+      "id": "af00aba3",
+      "fromNode": "mm",
+      "fromSide": "bottom",
+      "toNode": "hmm2",
+      "toSide": "top"
+    },
+    {
+      "id": "105d1810",
+      "fromNode": "hmm2",
+      "fromSide": "bottom",
+      "toNode": "imm2_0",
+      "toSide": "top"
+    },
+    {
+      "id": "cecedff6",
+      "fromNode": "imm2_0",
+      "fromSide": "bottom",
+      "toNode": "imm2_1",
+      "toSide": "top"
+    },
+    {
+      "id": "a6feeb75",
+      "fromNode": "imm2_1",
+      "fromSide": "bottom",
+      "toNode": "imm2_2",
+      "toSide": "top"
+    },
+    {
+      "id": "d50115dd",
+      "fromNode": "imm2_2",
+      "fromSide": "bottom",
+      "toNode": "imm2_3",
+      "toSide": "top"
+    },
+    {
+      "id": "6bf6487b",
+      "fromNode": "imm2_3",
+      "fromSide": "bottom",
+      "toNode": "imm2_4",
+      "toSide": "top"
+    },
+    {
+      "id": "58344006",
+      "fromNode": "imm2_4",
+      "fromSide": "bottom",
+      "toNode": "imm2_5",
+      "toSide": "top"
+    },
+    {
+      "id": "6311c539",
+      "fromNode": "imm2_5",
+      "fromSide": "bottom",
+      "toNode": "imm2_6",
+      "toSide": "top"
+    },
+    {
+      "id": "d6a2f81d",
+      "fromNode": "imm2_6",
+      "fromSide": "bottom",
+      "toNode": "imm2_7",
+      "toSide": "top"
+    },
+    {
+      "id": "cb007dc6",
+      "fromNode": "imm2_7",
+      "fromSide": "bottom",
+      "toNode": "imm2_8",
+      "toSide": "top"
+    },
+    {
+      "id": "ea10f06b",
+      "fromNode": "imm2_8",
+      "fromSide": "bottom",
+      "toNode": "imm2_9",
+      "toSide": "top"
+    },
+    {
+      "id": "4442ce68",
+      "fromNode": "imm2_9",
+      "fromSide": "bottom",
+      "toNode": "mmm2",
+      "toSide": "top"
+    },
+    {
+      "id": "bd0c390e",
+      "fromNode": "mm",
+      "fromSide": "bottom",
+      "toNode": "hmm3",
+      "toSide": "top"
+    },
+    {
+      "id": "23027523",
+      "fromNode": "hmm3",
+      "fromSide": "bottom",
+      "toNode": "imm3_0",
+      "toSide": "top"
+    },
+    {
+      "id": "ad658ae7",
+      "fromNode": "imm3_0",
+      "fromSide": "bottom",
+      "toNode": "imm3_1",
+      "toSide": "top"
+    },
+    {
+      "id": "967f7c82",
+      "fromNode": "imm3_1",
+      "fromSide": "bottom",
+      "toNode": "imm3_2",
+      "toSide": "top"
+    },
+    {
+      "id": "6e62caf2",
+      "fromNode": "imm3_2",
+      "fromSide": "bottom",
+      "toNode": "imm3_3",
+      "toSide": "top"
+    },
+    {
+      "id": "21952ae8",
+      "fromNode": "imm3_3",
+      "fromSide": "bottom",
+      "toNode": "imm3_4",
+      "toSide": "top"
+    },
+    {
+      "id": "8079fee1",
+      "fromNode": "imm3_4",
+      "fromSide": "bottom",
+      "toNode": "imm3_5",
+      "toSide": "top"
+    },
+    {
+      "id": "187a1585",
+      "fromNode": "imm3_5",
+      "fromSide": "bottom",
+      "toNode": "imm3_6",
+      "toSide": "top"
+    },
+    {
+      "id": "9e99eeed",
+      "fromNode": "imm3_6",
+      "fromSide": "bottom",
+      "toNode": "imm3_7",
+      "toSide": "top"
+    },
+    {
+      "id": "bcff10b3",
+      "fromNode": "imm3_7",
+      "fromSide": "bottom",
+      "toNode": "mmm3",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_icm0_0_img_minguo_sheet_01",
+      "fromNode": "icm0_0",
+      "fromSide": "right",
+      "toNode": "img_minguo_sheet_01",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "edge_icm0_1_img_minguo_sheet_01",
+      "fromNode": "icm0_1",
+      "fromSide": "right",
+      "toNode": "img_minguo_sheet_01",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "edge_icm0_2_img_minguo_sheet_01",
+      "fromNode": "icm0_2",
+      "fromSide": "right",
+      "toNode": "img_minguo_sheet_01",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "edge_icm0_3_img_minguo_sheet_01",
+      "fromNode": "icm0_3",
+      "fromSide": "right",
+      "toNode": "img_minguo_sheet_01",
+      "toSide": "left",
+      "color": "4"
+    }
+  ]
+}

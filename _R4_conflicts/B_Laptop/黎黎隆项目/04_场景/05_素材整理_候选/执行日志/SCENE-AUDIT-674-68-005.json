@@ -1,0 +1,88 @@
+{
+  "run_id": "SCENE-AUDIT-674-68-005",
+  "issue_id": "674-68",
+  "status": "PASS_FOR_RESEARCH_DELIVERABLES / ONE_SOURCE_FAILURE_RECORDED",
+  "scope": "完成原 30 个不可读或不支持项的只读恢复、路径迁移核验与联系表；不修改原图、不补采、不生图",
+  "input_count": 30,
+  "direct_decoded_count": 6,
+  "relocated_exact_hash_decoded_count": 23,
+  "empty_file_count": 1,
+  "recovery_complete_count": 29,
+  "empty_file_ids": [
+    "IMAGE-306"
+  ],
+  "sha256_matches_inventory_for_relocated": true,
+  "direct_contact_sheet": "01_缩略联系表/04_恢复核验_候选/SCENE-UNREADABLE-AUDIT-674-68-001_contact.jpg",
+  "relocated_contact_sheet": "01_缩略联系表/04_恢复核验_候选/relocated_exact/SCENE-UNREADABLE-RELOCATED-674-68-001_contact.jpg",
+  "deliverables": [
+    {
+      "name": "02_世界观与画风双栏分析.md",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\02_世界观与画风双栏分析.md",
+      "exists": true,
+      "bytes": 10930,
+      "sha256": "04114eb949335908a4a3d8068c00caed7f758e8611027e5c55d288977d67f133"
+    },
+    {
+      "name": "03_风格共性候选.md",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\03_风格共性候选.md",
+      "exists": true,
+      "bytes": 3305,
+      "sha256": "f54ee935edc3ae983fbb451649f4ddbe8b1ccf3d3062dca3ba7a121da8ce6db3"
+    },
+    {
+      "name": "04_缺失与版本冲突.md",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\04_缺失与版本冲突.md",
+      "exists": true,
+      "bytes": 3002,
+      "sha256": "f2ca541dd2c936a7dd262af994025904f1d6fdfa4f34acef4952065c4e1c7ffb"
+    },
+    {
+      "name": "05_生产框交接规格.md",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\05_生产框交接规格.md",
+      "exists": true,
+      "bytes": 3508,
+      "sha256": "a4d8b44b7737cf3cc466e9f0b03f482f67ffc3b4c36327b050167a93b068dc7c"
+    },
+    {
+      "name": "06_不可读恢复核验.md",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\06_不可读恢复核验.md",
+      "exists": true,
+      "bytes": 11814,
+      "sha256": "368fb2203c2d354db532ac5bf3875389b8424a2f78e839ed2b7f3ef4c6dc38bf"
+    },
+    {
+      "name": "01_缩略联系表/04_恢复核验_候选/SCENE-UNREADABLE-AUDIT-674-68-001_contact.jpg",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\01_缩略联系表\\04_恢复核验_候选\\SCENE-UNREADABLE-AUDIT-674-68-001_contact.jpg",
+      "exists": true,
+      "bytes": 196207,
+      "sha256": "a7e5ac6a852a47c72265c4facb9708f765172835f4260b60e577314684408449"
+    },
+    {
+      "name": "01_缩略联系表/04_恢复核验_候选/relocated_exact/SCENE-UNREADABLE-RELOCATED-674-68-001_contact.jpg",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\01_缩略联系表\\04_恢复核验_候选\\relocated_exact\\SCENE-UNREADABLE-RELOCATED-674-68-001_contact.jpg",
+      "exists": true,
+      "bytes": 427253,
+      "sha256": "d5be7cbf0d666f19447ad2bfd9ac79a8d17b4c5a3dbccb7a9355118e733fbbaa"
+    },
+    {
+      "name": "执行日志/SCENE-UNREADABLE-AUDIT-674-68-001.json",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\执行日志\\SCENE-UNREADABLE-AUDIT-674-68-001.json",
+      "exists": true,
+      "bytes": 16092,
+      "sha256": "092072ef69d034d1f31b0bd04c21bafa3c7ef2d07ed39c2bac4e59f78083a9ff"
+    },
+    {
+      "name": "执行日志/SCENE-UNREADABLE-RELOCATION-MAP.json",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\执行日志\\SCENE-UNREADABLE-RELOCATION-MAP.json",
+      "exists": true,
+      "bytes": 13877,
+      "sha256": "d3ec91943e71e70e41b9c7d6b2ce07acf6290150e29d41a7c3aa60c5c95d3d46"
+    }
+  ],
+  "h3": "NOT_RUN",
+  "batch_image_generation": "NOT_RUN",
+  "network_research": "NOT_RUN",
+  "git_push": "NOT_RUN",
+  "originals_modified": "NOT_MODIFIED",
+  "next_step": "将 674-68 标记为研究交付完成；IMAGE-306 保持 MISSING_SOURCE，不进入生产输入"
+}

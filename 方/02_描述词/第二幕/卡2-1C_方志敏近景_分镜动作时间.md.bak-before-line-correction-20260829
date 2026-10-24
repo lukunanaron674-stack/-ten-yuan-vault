@@ -1,0 +1,28 @@
+# 卡2-1C｜方志敏正打·接2-2｜分镜动作时间
+
+> 唯一参考首帧：![[方/07_素材图/第二幕/2-1c.png]]。目标时长 5.2 秒，H3 原生 24fps。
+
+| 时间       | 镜头与动作                               | 台词／声音                            |
+| -------- | ----------------------------------- | -------------------------------- |
+| 0—1.2s   | 正打方志敏；镜头略向下、向左，方志敏低头静止，保持首帧构图与身份。   | 牢房低底噪；无字幕。                       |
+| 1.2—2.6s | 镜头以小幅、慢速向上跟随；方志敏从低头逐渐抬头，肩颈自然带动。     | 轻微衣料摩擦与呼吸。                       |
+| 2.6—4.4s | 正面中近景稳定；方志敏直视镜头前方的胡逸民，说出唯一一句。       | 方志敏（S1）：<d>[中文] 胡兄知我当晚被捕之事？</d> |
+| 4.4—5.2s | 台词结束，镜头不再移动；方志敏维持平静坚定的目光，尾帧用于接 2-2。 | 环境音延续；无额外对白。                     |
+
+## H3 I2VA 执行提示词
+
+```text
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Preserve only the exact 2D hand-drawn cold gray-blue prison style, Fang Zhimin's identity, clothing, seated position, and background already visible in <Picture 1>. Fang is the only visible character and the only sharp subject; do not introduce Hu Yimin or any other reference image. From 00:00.000 to 00:01.200, the camera is aimed slightly downward and left while Fang keeps his head lowered. From 00:01.200 to 00:02.600, the camera tilts upward with small amplitude at slow speed, following Fang's natural head lift. From 00:02.600 to 00:04.400, hold a frontal medium close shot as Fang Zhimin (S1), using the new low-mid, clear, restrained dry prison-room voice, looks toward Hu off screen and says exactly: <d>[中文] 胡兄知我当晚被捕之事？</d> His mouth synchronizes only to this line. From 00:04.400 to 00:05.200, he keeps the steady forward gaze as the exact handoff image for 2-2. No subtitles, no extra dialogue, no extra people, no camera reversal, no new props, no 3D, no identity drift.
+
+overall_soundscape: Low prison-room ambience, soft cloth movement during the head lift, and quiet breathing. No sound other than the single specified line.
+
+non_diegetic_music: N/A
+```
+
+## 锁定
+
+- 只用 `2-1c.png`；不得混入其他参考图。
+- 镜头方向固定：先向下向左，再向上跟随方志敏抬头。
+- 尾帧接 2-2；候选不等于批准。

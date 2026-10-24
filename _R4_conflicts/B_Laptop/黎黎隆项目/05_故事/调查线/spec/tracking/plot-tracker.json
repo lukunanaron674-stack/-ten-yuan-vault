@@ -1,0 +1,16 @@
+{
+  "story": "调查线",
+  "updated": "2026-09-26",
+  "foreshadows": [
+    {"id": "F1", "planted": "ch01", "item": "男男叉掉的旧路线+「你第一次上调查线那年」", "expect_payoff": "ch03", "status": "open", "note": "正文已种，措辞=旧线出过事，与黎黎隆首次上线同年"},
+    {"id": "F2", "planted": "ch01", "item": "「她连块砖头都打不过」+搬装备砸手的新痂", "expect_payoff": "ch03", "status": "open", "note": "坠浪一击回收：她不需要打得过，需要借势"},
+    {"id": "F3", "planted": "ch01", "item": "北边那条线又封了（酒客闲聊）", "expect_payoff": "ch03", "status": "open", "note": "雾沉anchor定不住=奇美拉生物电外溢的世界侧证据"},
+    {"id": "F4", "planted": "ch01", "item": "男男问「你翅膀多久没展了」+取了两份背带（断后重装带翼膜开口）", "expect_payoff": "ch03", "status": "open", "note": "男男早知道她会飞；第1章内已半回收，ch03正式展开翼膜"},
+    {"id": "F5", "planted": "ch01", "item": "黎黎隆宣布「走新的」", "expect_payoff": "ch02", "status": "open", "note": "ch02开头兑现：队伍偏离老路→进那个检测器误报的洞"}
+  ],
+  "payoffs_done": [],
+  "conflicts": [
+    {"layer": "outer", "line": "调查线×狼群→奇美拉", "arc": "ch02起→ch03峰→ch03收"},
+    {"layer": "inner", "line": "黎黎隆：被照顾的位置 vs 想证明", "arc": "ch01憋→ch03第一次被跟走→ch04没有反驳"}
+  ]
+}

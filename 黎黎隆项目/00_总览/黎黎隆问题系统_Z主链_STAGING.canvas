@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"Z0","type":"text","x":0,"y":0,"width":460,"height":130,"color":"1","text":"## Z 总览｜角色 / 头像\nXN+Z 实验对象素材\n**2026-10-07T18:41:15**\n池 297 = L1 244 + L2 53"},
+		{"id":"Z1","type":"text","x":0,"y":180,"width":300,"height":110,"color":"3","text":"## Z1 实验对象来源\n人在环外自动\n已识别：红心 18 / NPC 275 / FAIL 4 / L2 53"},
+		{"id":"Z2","type":"text","x":340,"y":180,"width":300,"height":110,"color":"3","text":"## Z2 素材标准化\n裁切/四宫格/命名/SHA/Manifest\nparent_asset_id 全自动"},
+		{"id":"Z3","type":"text","x":680,"y":180,"width":320,"height":130,"color":"4","text":"## Z3 人工审核 674-173\n头像页 /l1 ・ 四宫格页 /l2\n**异常与高价值才升级给 74**"},
+		{"id":"Z4","type":"text","x":1040,"y":180,"width":340,"height":150,"color":"4","text":"## Z4 素材分流（自动）\n红心 18 → 核心角色池\n普通 PASS 275 → NPC 池\nFAIL 4 → 674-125 返工"},
+		{"id":"Z5","type":"text","x":1040,"y":380,"width":340,"height":160,"color":"5","text":"## Z5 NX → 候选 XN\n候选 NX 12 个（全 CANDIDATE）\n**需 74 确认 6 个**\nAI 不得直接 XN_LOCK"},
+		{"id":"Z6","type":"text","x":680,"y":380,"width":320,"height":150,"color":"6","text":"## Z6 Obsidian Base\nZ等级/XN等级/素材量/主参考\n审核状态/可实验性 → 回写 STAGING"},
+		{"id":"GAP","type":"text","x":340,"y":380,"width":300,"height":150,"color":"5","text":"## 缺口 → 下一 Z\n红心缺四宫格 11 张\n需 74 拍板项 3 类"},
+		{"id":"ESC","type":"text","x":0,"y":380,"width":300,"height":170,"color":"5","text":"## 升级给 74 的六条件\n① Canon 变更 ② XN_LOCK\n③ 规则冲突 ④ 低置信/歧义\n⑤ 不可逆 ⑥ 连续失败\n**本轮命中 6 项**"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"Z1","fromSide":"right","toNode":"Z2","toSide":"left"},
+		{"id":"e2","fromNode":"Z2","fromSide":"right","toNode":"Z3","toSide":"left"},
+		{"id":"e3","fromNode":"Z3","fromSide":"right","toNode":"Z4","toSide":"left"},
+		{"id":"e4","fromNode":"Z4","fromSide":"right","toNode":"Z5","toSide":"left"},
+		{"id":"e5","fromNode":"Z5","fromSide":"right","toNode":"Z6","toSide":"left"},
+		{"id":"e6","fromNode":"Z6","fromSide":"right","toNode":"GAP","toSide":"left"},
+		{"id":"e7","fromNode":"GAP","fromSide":"right","toNode":"Z1","toSide":"left"},
+		{"id":"e8","fromNode":"ESC","fromSide":"right","toNode":"Z3","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

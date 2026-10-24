@@ -1,0 +1,151 @@
+{
+  "schema": "674-293/173-adjudication-crosswalk-v1",
+  "source_issue": "674-173",
+  "decisions": [
+    {
+      "candidate_id": "H24",
+      "file_name": "L2_H24_四宫格_L2_1006.png",
+      "asset_id": "ASSET-SHA256-d951c5393553872ab30be9b94891b25b654c4243f8df65ebfec1f7b17c59e9d7",
+      "decision": "RERUN",
+      "user_evidence_state": "REJECTED",
+      "history_state": "HISTORICAL",
+      "comment_id": "96c8bc90-85c1-4785-94ed-a792e4ef3a47"
+    },
+    {
+      "candidate_id": "S03",
+      "file_name": "L2_S03_四宫格_L2_1006.png",
+      "asset_id": "ASSET-SHA256-791d35f1b205e2b8fa3c9c4cb48517ceffad290db5392130b16a8e5385c65c48",
+      "decision": "ACCEPTED",
+      "user_evidence_state": "CONFIRMED",
+      "history_state": "CURRENT",
+      "comment_id": "96c8bc90-85c1-4785-94ed-a792e4ef3a47"
+    },
+    {
+      "candidate_id": "H05",
+      "file_name": "L2_H05_四宫格_红桶0928.png",
+      "asset_id": "ASSET-SHA256-886fdfe486c1daad0d8bab5bd21f61a849c534b3ce2bac962837537795425493",
+      "decision": "ACCEPTED_STYLE_SAMPLE",
+      "user_evidence_state": "CONFIRMED",
+      "history_state": "CURRENT",
+      "comment_id": "96c8bc90-85c1-4785-94ed-a792e4ef3a47"
+    },
+    {
+      "candidate_id": "N14",
+      "file_name": "L2_N14_四宫格_红桶0928.png",
+      "asset_id": "ASSET-SHA256-e983ef6b3ded987150286934eed6a4c494878c071e85575d299224d0692db292",
+      "decision": "SELECTED_CELL_3",
+      "user_evidence_state": "UNKNOWN",
+      "history_state": "CURRENT",
+      "comment_id": "96c8bc90-85c1-4785-94ed-a792e4ef3a47"
+    },
+    {
+      "candidate_id": "S09",
+      "file_name": "L2_S09_四宫格_红桶0928.png",
+      "asset_id": "ASSET-SHA256-59d091096580dde11653ad2eff25dd137ae24efc21d944066c377749675189fc",
+      "decision": "SELECTED_CELL_3",
+      "user_evidence_state": "UNKNOWN",
+      "history_state": "CURRENT",
+      "comment_id": "96c8bc90-85c1-4785-94ed-a792e4ef3a47"
+    },
+    {
+      "candidate_id": "H06",
+      "file_name": "L2_H06_四宫格_其它.png",
+      "asset_id": "ASSET-SHA256-e2b251054c727ca0e87f3b38b3ba1957c5e6edf83ac89e0fbb6c6c2f4948f494",
+      "decision": "REJECTED_OLDER_VERSION",
+      "user_evidence_state": "REJECTED",
+      "history_state": "SUPERSEDED",
+      "comment_id": "96c8bc90-85c1-4785-94ed-a792e4ef3a47"
+    },
+    {
+      "candidate_id": "H02",
+      "file_name": "L2_H02_四宫格_青桶0929.png",
+      "asset_id": "ASSET-SHA256-44a105d6bf7fe2f2f9f0dbb79d692c143dbaf5897be4417a8c845b3e0fc5c313",
+      "decision": "REJECTED",
+      "user_evidence_state": "REJECTED",
+      "history_state": "REJECTED",
+      "comment_id": "96c8bc90-85c1-4785-94ed-a792e4ef3a47"
+    },
+    {
+      "candidate_id": "H07",
+      "file_name": "L2_H07_四宫格_青桶0929.png",
+      "asset_id": "ASSET-SHA256-b78dd594a3250c59b4086b1f746f4b49539eb540ee215d8a18cb261eca138741",
+      "decision": "SETTING_MISMATCH_ALIAS_CONFIRMED",
+      "user_evidence_state": "UNKNOWN",
+      "history_state": "CURRENT",
+      "comment_id": "96c8bc90-85c1-4785-94ed-a792e4ef3a47"
+    },
+    {
+      "candidate_id": "H06",
+      "file_name": "L2_H06_四宫格_青桶0929.png",
+      "asset_id": "ASSET-SHA256-941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729",
+      "decision": "ACCEPTED_LATER_VERSION",
+      "user_evidence_state": "CONFIRMED",
+      "history_state": "CURRENT",
+      "comment_id": "96c8bc90-85c1-4785-94ed-a792e4ef3a47"
+    }
+  ],
+  "derived_assets": [
+    {
+      "file": "H06_back_cell1.jpg",
+      "asset_id": "ASSET-SHA256-d75fbf8b5d32dca8bbb06db40481604de35a17aa58012b68acab5fca469688e9",
+      "sha256": "d75fbf8b5d32dca8bbb06db40481604de35a17aa58012b68acab5fca469688e9",
+      "parent_asset_id": "ASSET-SHA256-941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729",
+      "parent_sha256": "941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729",
+      "candidate_id": "H06",
+      "path": "黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/derived/H06_back_cell1.jpg",
+      "parent_path": "E:\\黎黎隆头像审核仓库_v1\\L2_四宫格\\L2_H06_四宫格_青桶0929.png"
+    },
+    {
+      "file": "H06_back_cell2.jpg",
+      "asset_id": "ASSET-SHA256-bb9d56aa55d749c69a110cc800b056dc15ed5ae057018f313c93a1272e01ec97",
+      "sha256": "bb9d56aa55d749c69a110cc800b056dc15ed5ae057018f313c93a1272e01ec97",
+      "parent_asset_id": "ASSET-SHA256-941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729",
+      "parent_sha256": "941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729",
+      "candidate_id": "H06",
+      "path": "黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/derived/H06_back_cell2.jpg",
+      "parent_path": "E:\\黎黎隆头像审核仓库_v1\\L2_四宫格\\L2_H06_四宫格_青桶0929.png"
+    },
+    {
+      "file": "H06_back_cell3.jpg",
+      "asset_id": "ASSET-SHA256-469a387dd63aba270f7dcbbb3a5fe41e9f4c437276667850c0b8ba7e788e98c4",
+      "sha256": "469a387dd63aba270f7dcbbb3a5fe41e9f4c437276667850c0b8ba7e788e98c4",
+      "parent_asset_id": "ASSET-SHA256-941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729",
+      "parent_sha256": "941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729",
+      "candidate_id": "H06",
+      "path": "黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/derived/H06_back_cell3.jpg",
+      "parent_path": "E:\\黎黎隆头像审核仓库_v1\\L2_四宫格\\L2_H06_四宫格_青桶0929.png"
+    },
+    {
+      "file": "H06_back_cell4.jpg",
+      "asset_id": "ASSET-SHA256-34de1d31e57dc8c936397c6bfa64a9949b1ec9f8f711c1fc7f936a68b22c2bde",
+      "sha256": "34de1d31e57dc8c936397c6bfa64a9949b1ec9f8f711c1fc7f936a68b22c2bde",
+      "parent_asset_id": "ASSET-SHA256-941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729",
+      "parent_sha256": "941daa3f513998db578ab7ffdcab6525f56f83a9de9fed610892ee0578d0c729",
+      "candidate_id": "H06",
+      "path": "黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/derived/H06_back_cell4.jpg",
+      "parent_path": "E:\\黎黎隆头像审核仓库_v1\\L2_四宫格\\L2_H06_四宫格_青桶0929.png"
+    },
+    {
+      "file": "S09_cell3.jpg",
+      "asset_id": "ASSET-SHA256-7ea956c2a5de5a1ef0f9aff03facb92e6b5cd10ace6501edf2920c93685d6309",
+      "sha256": "7ea956c2a5de5a1ef0f9aff03facb92e6b5cd10ace6501edf2920c93685d6309",
+      "parent_asset_id": "ASSET-SHA256-59d091096580dde11653ad2eff25dd137ae24efc21d944066c377749675189fc",
+      "parent_sha256": "59d091096580dde11653ad2eff25dd137ae24efc21d944066c377749675189fc",
+      "candidate_id": "S09",
+      "path": "黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/derived/S09_cell3.jpg",
+      "parent_path": "E:\\黎黎隆头像审核仓库_v1\\L2_四宫格\\L2_S09_四宫格_红桶0928.png"
+    },
+    {
+      "file": "N14_cell3.jpg",
+      "asset_id": "ASSET-SHA256-c9b3846e9c6086c2bac4e481c1e9e4e676ff118a824ec9edd47773d71166ad29",
+      "sha256": "c9b3846e9c6086c2bac4e481c1e9e4e676ff118a824ec9edd47773d71166ad29",
+      "parent_asset_id": "ASSET-SHA256-e983ef6b3ded987150286934eed6a4c494878c071e85575d299224d0692db292",
+      "parent_sha256": "e983ef6b3ded987150286934eed6a4c494878c071e85575d299224d0692db292",
+      "candidate_id": "N14",
+      "path": "黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/derived/N14_cell3.jpg",
+      "parent_path": "E:\\黎黎隆头像审核仓库_v1\\L2_四宫格\\L2_N14_四宫格_红桶0928.png"
+    }
+  ],
+  "raw_review_manifest_sha256": "c97abccf5dcb346661e57358f705a664ac89007807c2485b31a5b40c575b4d69",
+  "snapshot": "黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/review_manifest_snapshot_20261008.json"
+}

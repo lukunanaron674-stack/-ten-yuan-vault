@@ -1,0 +1,2561 @@
+{
+	"nodes": [
+		{
+			"id": "root",
+			"type": "text",
+			"text": "🏠 Hirayasumi（ひらやすみ）is-a 漫画名词素材库 · 试作\n真造圭伍｜日常人间剧｜空间怎样让疲惫的人重新能呼吸",
+			"x": -540,
+			"y": -1120,
+			"width": 720,
+			"height": 100,
+			"color": "4"
+		},
+		{
+			"id": "definition",
+			"type": "text",
+			"text": "📖 作品定义\n现代东京阿佐谷/高圆寺。29岁的自由职业者弘人与18岁的美大生表妹夏美在继承来的平屋共同生活。\n分析目标：不写读后感，而是提取可用于角色、场景、分镜与创作检索的名词图谱。",
+			"x": -520,
+			"y": -990,
+			"width": 680,
+			"height": 150,
+			"color": "4"
+		},
+		{
+			"id": "legend",
+			"type": "text",
+			"text": "🧭 证据标记\n✅ 官方简介可确认\n△ 视觉/创作提取，待实读逐格复核\n※ 十元结构推断，不替代用户二审",
+			"x": 200,
+			"y": -990,
+			"width": 330,
+			"height": 150,
+			"color": "5"
+		},
+		{
+			"id": "source_file",
+			"type": "file",
+			"file": "05-银矿库/漫画库/03-空间型 x并z+n.md",
+			"x": 560,
+			"y": -990,
+			"width": 330,
+			"height": 150,
+			"color": "5"
+		},
+		{
+			"id": "person_h",
+			"type": "text",
+			"text": "👤 人物身份 is-a 库\n身份/社会位置/画面功能",
+			"x": -2780,
+			"y": -700,
+			"width": 250,
+			"height": 62,
+			"color": "1"
+		},
+		{
+			"id": "person_0",
+			"type": "text",
+			"text": "✅ Hiroto / ヒロト\nis-a：29岁自由职业者、前演员志望者\n画面功能：低压稳定中心",
+			"x": -2780,
+			"y": -624,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "person_1",
+			"type": "text",
+			"text": "✅ Hiroto\nis-a：钓鱼池兼职者\n视觉：轻工作装、松弛站姿、水边背景",
+			"x": -2780,
+			"y": -536,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "person_2",
+			"type": "text",
+			"text": "✅ Natsumi / なつみ\nis-a：18岁美大生、上京者\n画面功能：焦虑与成长入口",
+			"x": -2780,
+			"y": -448,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "person_3",
+			"type": "text",
+			"text": "✅ Natsumi\nis-a：漫画家志望者\n视觉：画具、草稿、熬夜后的疲态",
+			"x": -2780,
+			"y": -360,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "person_4",
+			"type": "text",
+			"text": "✅ 和田はなえ\nis-a：邻居老人、平屋原主人\n画面功能：缺席后仍持续存在的人",
+			"x": -2780,
+			"y": -272,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "person_5",
+			"type": "text",
+			"text": "✅ 美大同学\nis-a：创作者同辈群体\n用途：比较、竞争、互相观看",
+			"x": -2780,
+			"y": -184,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "person_6",
+			"type": "text",
+			"text": "✅ 房地产公司职员\nis-a：都市正规劳动者\n用途：效率生活与平屋生活的对照",
+			"x": -2780,
+			"y": -96,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "person_7",
+			"type": "text",
+			"text": "✅ 家具店员\nis-a：生活物件的职业观察者\n用途：空间品味与现实劳动连接",
+			"x": -2780,
+			"y": -8,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "person_8",
+			"type": "text",
+			"text": "✅ 小说家\nis-a：另一类创作者\n用途：把创作焦虑扩展到成年人",
+			"x": -2780,
+			"y": 80,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "person_9",
+			"type": "text",
+			"text": "✅ 邻居/店主/来客\nis-a：弱关系共同体\n用途：让社区成为可见的人际网",
+			"x": -2780,
+			"y": 168,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "relation_h",
+			"type": "text",
+			"text": "🤝 关系 is-a 库\n共同生活/弱连接/照料",
+			"x": -2500,
+			"y": -700,
+			"width": 250,
+			"height": 62,
+			"color": "2"
+		},
+		{
+			"id": "relation_0",
+			"type": "text",
+			"text": "✅ 弘人 × 夏美\nis-a：成年表兄妹共同生活\n动力：松弛节奏对撞焦虑节奏",
+			"x": -2500,
+			"y": -624,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "relation_1",
+			"type": "text",
+			"text": "✅ 花惠 × 弘人\nis-a：非血缘忘年友谊\n动力：房屋继承携带未处理的感情",
+			"x": -2500,
+			"y": -536,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "relation_2",
+			"type": "text",
+			"text": "※ 房屋赠与\nis-a：关系遗产\n不是财产奖励，而是继续居住的托付",
+			"x": -2500,
+			"y": -448,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "relation_3",
+			"type": "text",
+			"text": "※ 平屋住民\nis-a：选择性家族\n通过吃饭和重复相处形成，不靠宣誓",
+			"x": -2500,
+			"y": -360,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "relation_4",
+			"type": "text",
+			"text": "※ 弘人对夏美\nis-a：低干预照料\n不替她解决，只让失败后仍能回来",
+			"x": -2500,
+			"y": -272,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "relation_5",
+			"type": "text",
+			"text": "※ 夏美对弘人\nis-a：价值观摩擦\n把“没有计划”看作问题，也逐渐看见其力量",
+			"x": -2500,
+			"y": -184,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "relation_6",
+			"type": "text",
+			"text": "※ 邻里往来\nis-a：弱连接共同体\n不亲密到互相控制，却足够提供支持",
+			"x": -2500,
+			"y": -96,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "relation_7",
+			"type": "text",
+			"text": "※ 来客与住民\nis-a：临时停靠关系\n人在这里获得喘息，不必永久归属",
+			"x": -2500,
+			"y": -8,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "relation_8",
+			"type": "text",
+			"text": "※ 创作者同辈\nis-a：比较型关系\n目光、成绩与进度制造自我怀疑",
+			"x": -2500,
+			"y": 80,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "relation_9",
+			"type": "text",
+			"text": "※ 作品总关系\nis-a：容器先于答案\n先有可停留空间，人物才有重新行动的可能",
+			"x": -2500,
+			"y": 168,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "space_h",
+			"type": "text",
+			"text": "🏘 空间/建筑 is-a 库\n场域类型/叙事职责",
+			"x": -2220,
+			"y": -700,
+			"width": 250,
+			"height": 62,
+			"color": "3"
+		},
+		{
+			"id": "space_0",
+			"type": "text",
+			"text": "✅ 平屋\nis-a：东京低层独栋住宅\n叙事职责：全作关系容器",
+			"x": -2220,
+			"y": -624,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "space_1",
+			"type": "text",
+			"text": "△ 起居室\nis-a：共享生活空间\n镜头：多人同框、沉默也不尴尬",
+			"x": -2220,
+			"y": -536,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "space_2",
+			"type": "text",
+			"text": "△ 厨房/饭厅\nis-a：日常照料空间\n镜头：做饭动作替代直接安慰",
+			"x": -2220,
+			"y": -448,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "space_3",
+			"type": "text",
+			"text": "△ 玄关\nis-a：进入/返回的边界\n镜头：鞋、钥匙、停顿、欢迎",
+			"x": -2220,
+			"y": -360,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "space_4",
+			"type": "text",
+			"text": "△ 缘侧/檐下\nis-a：室内外过渡空间\n镜头：并坐、雨声、季节变化",
+			"x": -2220,
+			"y": -272,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "space_5",
+			"type": "text",
+			"text": "△ 小院\nis-a：微型自然空间\n镜头：植物变化替人物说明时间",
+			"x": -2220,
+			"y": -184,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "space_6",
+			"type": "text",
+			"text": "✅ 屋顶\nis-a：住宅上方的临时观察台\n用途：回望童年、改变视角",
+			"x": -2220,
+			"y": -96,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "space_7",
+			"type": "text",
+			"text": "✅ 阿佐谷住宅街\nis-a：东京生活街区\n用途：低密度步行与邻里偶遇",
+			"x": -2220,
+			"y": -8,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "space_8",
+			"type": "text",
+			"text": "✅ 高圆寺街区\nis-a：都市文化/商业街区\n用途：把平屋连接到外部城市",
+			"x": -2220,
+			"y": 80,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "space_9",
+			"type": "text",
+			"text": "✅ 钓鱼池\nis-a：半工作半停顿空间\n用途：水面、等待、低强度交流",
+			"x": -2220,
+			"y": 168,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "space_10",
+			"type": "text",
+			"text": "✅ 美术大学\nis-a：创作竞争空间\n用途：评价、同辈目光与身份压力",
+			"x": -2220,
+			"y": 256,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "space_11",
+			"type": "text",
+			"text": "※ 城市中的平屋\nis-a：慢空间孤岛\n不是逃离东京，而是在东京内部减速",
+			"x": -2220,
+			"y": 344,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "scene_h",
+			"type": "text",
+			"text": "🎬 生活场景 is-a 库\n可直接变成分镜标题",
+			"x": -1940,
+			"y": -700,
+			"width": 250,
+			"height": 62,
+			"color": "4"
+		},
+		{
+			"id": "scene_0",
+			"type": "text",
+			"text": "✅ 表妹搬入平屋\nis-a：共同生活开场\n镜头：行李越过玄关，空间被重新分配",
+			"x": -1940,
+			"y": -624,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "scene_1",
+			"type": "text",
+			"text": "✅ 继承房屋后的独处\nis-a：关系缺席场景\n镜头：空房、旧物、无法立刻命名的悲伤",
+			"x": -1940,
+			"y": -536,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "scene_2",
+			"type": "text",
+			"text": "△ 两人共同吃晚饭\nis-a：非语言和解场景\n镜头：桌面物件与视线错开",
+			"x": -1940,
+			"y": -448,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "scene_3",
+			"type": "text",
+			"text": "△ 夏美深夜画稿\nis-a：创作焦虑场景\n镜头：台灯、纸面、擦除痕迹",
+			"x": -1940,
+			"y": -360,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "scene_4",
+			"type": "text",
+			"text": "✅ 弘人在钓鱼池工作\nis-a：低强度职业场景\n镜头：水面等待代替任务高潮",
+			"x": -1940,
+			"y": -272,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "scene_5",
+			"type": "text",
+			"text": "△ 邻居临时串门\nis-a：弱关系进入场景\n镜头：门口到饭桌的距离逐渐缩短",
+			"x": -1940,
+			"y": -184,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "scene_6",
+			"type": "text",
+			"text": "△ 雨天被留在室内\nis-a：强制减速场景\n镜头：窗外雨线、室内小动作",
+			"x": -1940,
+			"y": -96,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "scene_7",
+			"type": "text",
+			"text": "✅ 屋顶回忆童年\nis-a：垂直视角转换场景\n镜头：屋顶边缘与街区远景",
+			"x": -1940,
+			"y": -8,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "scene_8",
+			"type": "text",
+			"text": "△ 失败后回家吃饭\nis-a：失败被容纳场景\n重点：问题没有解决，人先恢复体温",
+			"x": -1940,
+			"y": 80,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "scene_9",
+			"type": "text",
+			"text": "✅ 阿佐谷/高圆寺散步\nis-a：城市观察场景\n镜头：店面、路口、熟人擦肩",
+			"x": -1940,
+			"y": 168,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "scene_10",
+			"type": "text",
+			"text": "△ 晾衣与收衣\nis-a：共同生活证据场景\n镜头：两个人的衣物进入同一画面",
+			"x": -1940,
+			"y": 256,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "scene_11",
+			"type": "text",
+			"text": "△ 季节更替中的同一院子\nis-a：重复构图场景\n用途：用微变化表达成长",
+			"x": -1940,
+			"y": 344,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "clothing_h",
+			"type": "text",
+			"text": "👕 服装 is-a 库\n身份轮廓/生活状态",
+			"x": -1660,
+			"y": -700,
+			"width": 250,
+			"height": 62,
+			"color": "1"
+		},
+		{
+			"id": "clothing_0",
+			"type": "text",
+			"text": "△ 弘人的宽松T恤\nis-a：非竞争型日常服\n轮廓：松、平、没有权力尖角",
+			"x": -1660,
+			"y": -624,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "clothing_1",
+			"type": "text",
+			"text": "△ 弘人的短裤/便鞋\nis-a：近家活动服\n用途：强化随时可坐下的身体状态",
+			"x": -1660,
+			"y": -536,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "clothing_2",
+			"type": "text",
+			"text": "△ 钓鱼池工作装\nis-a：低强度服务劳动服\n用途：工作身份存在但不吞没人物",
+			"x": -1660,
+			"y": -448,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "clothing_3",
+			"type": "text",
+			"text": "△ 夏美的宽松上衣\nis-a：美大生实用服\n用途：允许画画、搬材料、熬夜",
+			"x": -1660,
+			"y": -360,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "clothing_4",
+			"type": "text",
+			"text": "△ 帆布鞋/帆布包\nis-a：学生移动装备\n用途：承载画具和城市通勤磨损",
+			"x": -1660,
+			"y": -272,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "clothing_5",
+			"type": "text",
+			"text": "△ 沾颜料的衣袖\nis-a：创作痕迹\n用途：让职业状态长在身体表面",
+			"x": -1660,
+			"y": -184,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "clothing_6",
+			"type": "text",
+			"text": "△ 花惠的针织开衫\nis-a：邻里老人家常服\n用途：柔软体积与旧屋质感呼应",
+			"x": -1660,
+			"y": -96,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "clothing_7",
+			"type": "text",
+			"text": "△ 正规通勤装\nis-a：都市效率服\n用途：与弘人的松弛服形成节奏对比",
+			"x": -1660,
+			"y": -8,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "clothing_8",
+			"type": "text",
+			"text": "△ 围裙\nis-a：临时照料服\n用途：做饭者身份可交换，不固定性别",
+			"x": -1660,
+			"y": 80,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "clothing_9",
+			"type": "text",
+			"text": "△ 雨天薄外套\nis-a：东京步行服\n用途：湿度、季节和身体距离",
+			"x": -1660,
+			"y": 168,
+			"width": 250,
+			"height": 78,
+			"color": "1"
+		},
+		{
+			"id": "prop_h",
+			"type": "text",
+			"text": "🔑 道具 is-a 库\n器具/生活证据/叙事触点",
+			"x": -1380,
+			"y": -700,
+			"width": 250,
+			"height": 62,
+			"color": "5"
+		},
+		{
+			"id": "prop_0",
+			"type": "text",
+			"text": "※ 平屋钥匙\nis-a：居住许可物\n意象：被允许回来",
+			"x": -1380,
+			"y": -624,
+			"width": 250,
+			"height": 78,
+			"color": "5"
+		},
+		{
+			"id": "prop_1",
+			"type": "text",
+			"text": "✅ 行李箱/搬家箱\nis-a：上京者物件\n用途：旧生活被压缩后带入新空间",
+			"x": -1380,
+			"y": -536,
+			"width": 250,
+			"height": 78,
+			"color": "5"
+		},
+		{
+			"id": "prop_2",
+			"type": "text",
+			"text": "✅ 素描本/漫画稿纸\nis-a：创作者工作面\n用途：自我怀疑可视化",
+			"x": -1380,
+			"y": -448,
+			"width": 250,
+			"height": 78,
+			"color": "5"
+		},
+		{
+			"id": "prop_3",
+			"type": "text",
+			"text": "△ 铅笔/橡皮/削笔屑\nis-a：反复修改工具\n用途：用物质残留表现努力",
+			"x": -1380,
+			"y": -360,
+			"width": 250,
+			"height": 78,
+			"color": "5"
+		},
+		{
+			"id": "prop_4",
+			"type": "text",
+			"text": "✅ 钓竿\nis-a：等待型劳动工具\n用途：动作小、时间长、注意力外放",
+			"x": -1380,
+			"y": -272,
+			"width": 250,
+			"height": 78,
+			"color": "5"
+		},
+		{
+			"id": "prop_5",
+			"type": "text",
+			"text": "△ 自行车\nis-a：社区尺度交通工具\n用途：连接家、街区、工作与学校",
+			"x": -1380,
+			"y": -184,
+			"width": 250,
+			"height": 78,
+			"color": "5"
+		},
+		{
+			"id": "prop_6",
+			"type": "text",
+			"text": "△ 锅/平底锅\nis-a：日常照料器具\n用途：以动作承担情绪交流",
+			"x": -1380,
+			"y": -96,
+			"width": 250,
+			"height": 78,
+			"color": "5"
+		},
+		{
+			"id": "prop_7",
+			"type": "text",
+			"text": "△ 饭碗/便当盒\nis-a：共同进食容器\n用途：人物关系的尺寸参照",
+			"x": -1380,
+			"y": -8,
+			"width": 250,
+			"height": 78,
+			"color": "5"
+		},
+		{
+			"id": "prop_8",
+			"type": "text",
+			"text": "△ 购物袋\nis-a：城市生活补给物\n用途：顺路帮助，不需要宏大理由",
+			"x": -1380,
+			"y": 80,
+			"width": 250,
+			"height": 78,
+			"color": "5"
+		},
+		{
+			"id": "prop_9",
+			"type": "text",
+			"text": "△ 二手家具\nis-a：时间有痕的生活物\n用途：空间不是新装修，而是接续使用",
+			"x": -1380,
+			"y": 168,
+			"width": 250,
+			"height": 78,
+			"color": "5"
+		},
+		{
+			"id": "prop_10",
+			"type": "text",
+			"text": "△ 晾衣架/衣夹\nis-a：共居证据物\n用途：不同人物的生活并列出现",
+			"x": -1380,
+			"y": 256,
+			"width": 250,
+			"height": 78,
+			"color": "5"
+		},
+		{
+			"id": "prop_11",
+			"type": "text",
+			"text": "△ 盆栽/院中植物\nis-a：缓慢变化物\n用途：替代日历，记录季节和照料",
+			"x": -1380,
+			"y": 344,
+			"width": 250,
+			"height": 78,
+			"color": "5"
+		},
+		{
+			"id": "component_h",
+			"type": "text",
+			"text": "🧩 part-of 构件库\n只能作为组成部分",
+			"x": -1100,
+			"y": -700,
+			"width": 250,
+			"height": 62,
+			"color": "6"
+		},
+		{
+			"id": "component_0",
+			"type": "text",
+			"text": "△ 低坡屋顶\npart-of：平屋\n作用：把视觉重心压低，拒绝宏伟感",
+			"x": -1100,
+			"y": -624,
+			"width": 250,
+			"height": 78,
+			"color": "6"
+		},
+		{
+			"id": "component_1",
+			"type": "text",
+			"text": "△ 屋檐\npart-of：屋顶\n作用：制造阴影、雨帘与半室外停留区",
+			"x": -1100,
+			"y": -536,
+			"width": 250,
+			"height": 78,
+			"color": "6"
+		},
+		{
+			"id": "component_2",
+			"type": "text",
+			"text": "△ 拉门/推拉窗\npart-of：房间边界\n作用：边界可开合，不是永久封闭",
+			"x": -1100,
+			"y": -448,
+			"width": 250,
+			"height": 78,
+			"color": "6"
+		},
+		{
+			"id": "component_3",
+			"type": "text",
+			"text": "△ 门槛\npart-of：玄关\n作用：进入、犹豫、返回的脚部镜头",
+			"x": -1100,
+			"y": -360,
+			"width": 250,
+			"height": 78,
+			"color": "6"
+		},
+		{
+			"id": "component_4",
+			"type": "text",
+			"text": "△ 榻榻米/旧木地板\npart-of：室内地面\n作用：坐卧尺度贴近身体",
+			"x": -1100,
+			"y": -272,
+			"width": 250,
+			"height": 78,
+			"color": "6"
+		},
+		{
+			"id": "component_5",
+			"type": "text",
+			"text": "△ 低矮饭桌\npart-of：共享起居空间\n作用：人物围合但保持平视",
+			"x": -1100,
+			"y": -184,
+			"width": 250,
+			"height": 78,
+			"color": "6"
+		},
+		{
+			"id": "component_6",
+			"type": "text",
+			"text": "△ 水槽与灶台\npart-of：厨房\n作用：把照料拆成洗、切、煮的动作",
+			"x": -1100,
+			"y": -96,
+			"width": 250,
+			"height": 78,
+			"color": "6"
+		},
+		{
+			"id": "component_7",
+			"type": "text",
+			"text": "△ 晾衣杆\npart-of：院子/檐下\n作用：把共同生活挂到外部空间",
+			"x": -1100,
+			"y": -8,
+			"width": 250,
+			"height": 78,
+			"color": "6"
+		},
+		{
+			"id": "component_8",
+			"type": "text",
+			"text": "△ 院落小径\npart-of：住宅外部\n作用：短距离迎接与送别",
+			"x": -1100,
+			"y": 80,
+			"width": 250,
+			"height": 78,
+			"color": "6"
+		},
+		{
+			"id": "component_9",
+			"type": "text",
+			"text": "✅ 屋顶边缘\npart-of：平屋屋顶\n作用：安全日常中出现轻微临界感",
+			"x": -1100,
+			"y": 168,
+			"width": 250,
+			"height": 78,
+			"color": "6"
+		},
+		{
+			"id": "component_10",
+			"type": "text",
+			"text": "△ 商店招牌/电线\npart-of：街区景观\n作用：建立真实东京生活密度",
+			"x": -1100,
+			"y": 256,
+			"width": 250,
+			"height": 78,
+			"color": "6"
+		},
+		{
+			"id": "motif_h",
+			"type": "text",
+			"text": "🌱 motif / 意象库\n不是物种分类，是意义携带",
+			"x": -820,
+			"y": -700,
+			"width": 250,
+			"height": 62,
+			"color": "2"
+		},
+		{
+			"id": "motif_0",
+			"type": "text",
+			"text": "※ 平屋\ncarries：被继承的感情、继续生活的资格",
+			"x": -820,
+			"y": -624,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "motif_1",
+			"type": "text",
+			"text": "※ 钥匙\ncarries：进入权、返回权、没有被赶走",
+			"x": -820,
+			"y": -536,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "motif_2",
+			"type": "text",
+			"text": "※ 饭\ncarries：不说出口的照料与关系修复",
+			"x": -820,
+			"y": -448,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "motif_3",
+			"type": "text",
+			"text": "※ 空房\ncarries：死亡后的缺席仍有体积",
+			"x": -820,
+			"y": -360,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "motif_4",
+			"type": "text",
+			"text": "※ 洗好的衣服\ncarries：生活重新开始运转",
+			"x": -820,
+			"y": -272,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "motif_5",
+			"type": "text",
+			"text": "※ 画稿\ncarries：尚未得到承认的自我",
+			"x": -820,
+			"y": -184,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "motif_6",
+			"type": "text",
+			"text": "※ 擦除痕迹\ncarries：创作者对自己的反复否定",
+			"x": -820,
+			"y": -96,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "motif_7",
+			"type": "text",
+			"text": "※ 水面\ncarries：等待、停顿、情绪不被催促",
+			"x": -820,
+			"y": -8,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "motif_8",
+			"type": "text",
+			"text": "※ 屋顶\ncarries：短暂离开日常高度后重新看生活",
+			"x": -820,
+			"y": 80,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "motif_9",
+			"type": "text",
+			"text": "※ 雨\ncarries：被迫停下、人与人靠近室内",
+			"x": -820,
+			"y": 168,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "motif_10",
+			"type": "text",
+			"text": "※ 院中植物\ncarries：不依赖戏剧高潮的缓慢变化",
+			"x": -820,
+			"y": 256,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "motif_11",
+			"type": "text",
+			"text": "※ 街区转角\ncarries：弱关系偶遇与城市熟悉感",
+			"x": -820,
+			"y": 344,
+			"width": 250,
+			"height": 78,
+			"color": "2"
+		},
+		{
+			"id": "visual_h",
+			"type": "text",
+			"text": "🎨 形·色·质·光·空\n视觉语汇提取",
+			"x": -540,
+			"y": -700,
+			"width": 250,
+			"height": 62,
+			"color": "3"
+		},
+		{
+			"id": "visual_0",
+			"type": "text",
+			"text": "△ 形：横向低屋顶\n视觉作用：稳定、贴地、不制造权威",
+			"x": -540,
+			"y": -624,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "visual_1",
+			"type": "text",
+			"text": "△ 形：门框套门框\n视觉作用：人物被空间温和地组织",
+			"x": -540,
+			"y": -536,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "visual_2",
+			"type": "text",
+			"text": "△ 色：旧木褐/米白\n视觉作用：使用痕迹与非展示性温暖",
+			"x": -540,
+			"y": -448,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "visual_3",
+			"type": "text",
+			"text": "△ 色：植物绿\n视觉作用：给城市日常一个缓慢生命刻度",
+			"x": -540,
+			"y": -360,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "visual_4",
+			"type": "text",
+			"text": "△ 色：浅蓝灰\n视觉作用：阴天、疲惫与不过度煽情",
+			"x": -540,
+			"y": -272,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "visual_5",
+			"type": "text",
+			"text": "△ 色：夕阳橙\n视觉作用：一天结束但关系没有终结",
+			"x": -540,
+			"y": -184,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "visual_6",
+			"type": "text",
+			"text": "△ 质：棉布/纸张\n视觉作用：柔软、可皱、可留下劳动痕迹",
+			"x": -540,
+			"y": -96,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "visual_7",
+			"type": "text",
+			"text": "△ 质：旧木/水面\n视觉作用：一边承载，一边让时间显现",
+			"x": -540,
+			"y": -8,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "visual_8",
+			"type": "text",
+			"text": "△ 光：檐下柔影\n视觉作用：半开放空间的安全感",
+			"x": -540,
+			"y": 80,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "visual_9",
+			"type": "text",
+			"text": "△ 光：窗边逆光\n视觉作用：人物情绪保留，不被完全说明",
+			"x": -540,
+			"y": 168,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "visual_10",
+			"type": "text",
+			"text": "△ 光：雨天漫射\n视觉作用：压低对比，拉近室内关系",
+			"x": -540,
+			"y": 256,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "visual_11",
+			"type": "text",
+			"text": "△ 空：低、开、可呼吸\n视觉作用：人物之间留有不被逼问的距离",
+			"x": -540,
+			"y": 344,
+			"width": 250,
+			"height": 78,
+			"color": "3"
+		},
+		{
+			"id": "shot_h",
+			"type": "text",
+			"text": "🎥 镜头语法库\n构图/节奏/动画用途",
+			"x": -260,
+			"y": -700,
+			"width": 250,
+			"height": 62,
+			"color": "4"
+		},
+		{
+			"id": "shot_0",
+			"type": "text",
+			"text": "△ 平屋横向建立镜头\n用途：先让空间成为主语，再让人物进入",
+			"x": -260,
+			"y": -624,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "shot_1",
+			"type": "text",
+			"text": "△ 门框中的人物\n用途：表现进入、退出、偷听与犹豫",
+			"x": -260,
+			"y": -536,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "shot_2",
+			"type": "text",
+			"text": "△ 饭桌多人平视镜头\n用途：关系没有中心权威",
+			"x": -260,
+			"y": -448,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "shot_3",
+			"type": "text",
+			"text": "△ 人离开后的空镜\n用途：让缺席继续占据画面",
+			"x": -260,
+			"y": -360,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "shot_4",
+			"type": "text",
+			"text": "△ 手部做饭特写\n用途：用照料动作替代解释性台词",
+			"x": -260,
+			"y": -272,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "shot_5",
+			"type": "text",
+			"text": "△ 手部画稿特写\n用途：擦除、停笔、重画构成心理动作",
+			"x": -260,
+			"y": -184,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "shot_6",
+			"type": "text",
+			"text": "△ 走路脚部镜头\n用途：把城市转换成身体可丈量的距离",
+			"x": -260,
+			"y": -96,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "shot_7",
+			"type": "text",
+			"text": "△ 水面反射镜头\n用途：停顿、等待、情绪不立刻结算",
+			"x": -260,
+			"y": -8,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "shot_8",
+			"type": "text",
+			"text": "△ 屋顶高位双人镜头\n用途：短暂改变关系视角",
+			"x": -260,
+			"y": 80,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "shot_9",
+			"type": "text",
+			"text": "△ 季节插入镜头\n用途：植物、衣物、天气完成时间跳转",
+			"x": -260,
+			"y": 168,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "shot_10",
+			"type": "text",
+			"text": "△ 同构图重复\n用途：用细微差异表现人物已经变化",
+			"x": -260,
+			"y": 256,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "shot_11",
+			"type": "text",
+			"text": "△ 反应前保留一拍\n用途：不抢着定义情绪，让日常自然沉淀",
+			"x": -260,
+			"y": 344,
+			"width": 250,
+			"height": 78,
+			"color": "4"
+		},
+		{
+			"id": "tenyuan_h",
+			"type": "text",
+			"text": "📊 十元映射 · 库内判断展开",
+			"x": 80,
+			"y": -700,
+			"width": 570,
+			"height": 62,
+			"color": "6"
+		},
+		{
+			"id": "tenyuan_main",
+			"type": "text",
+			"text": "主维：空间型 x并z+n｜库内94分｜子型：零振动空间型\nx并z = 可进入、可辨认的生活外壳；n = 实际承载休息、吃饭、失败与关系。\n核心：外壳与承载匹配，空间没有欺骗或吞噬住民。",
+			"x": 80,
+			"y": -620,
+			"width": 570,
+			"height": 150,
+			"color": "6"
+		},
+		{
+			"id": "tenyuan_second",
+			"type": "text",
+			"text": "次维：nz\n重复相处形成“不想离开”的温柔依恋，但它不是强占有，也不是宿命绑定。\n辅维：zn\n夏美对创作意义与自我价值的追问，为空间结构提供精神穿透。",
+			"x": 80,
+			"y": -450,
+			"width": 570,
+			"height": 140,
+			"color": "6"
+		},
+		{
+			"id": "tenyuan_motion",
+			"type": "text",
+			"text": "关系运动\nx并z ↔ n：空间补对完成\nn → xn：稳定居住自然长出轻度生活秩序\nn 克 xz：安全日常降低漂流、警戒和失归感\n注意：这是结构推断，等待实读逐章验证。",
+			"x": 80,
+			"y": -290,
+			"width": 570,
+			"height": 150,
+			"color": "6"
+		},
+		{
+			"id": "exclude",
+			"type": "text",
+			"text": "🚧 排除判断\n不是时间主：季节是纹理，不是期限统治。\n不是本体主：创作身份焦虑重要，但未压过平屋承载。\n不是命运主：继承与相遇是开端，持续机制是居住。\n不是因果主：没有选择—代价—清算链统治全作。",
+			"x": 80,
+			"y": -120,
+			"width": 570,
+			"height": 170,
+			"color": "1"
+		},
+		{
+			"id": "test",
+			"type": "text",
+			"text": "🧪 可证伪测试\n1. 去掉平屋，人物关系是否仍按原方式成立？若否，支持空间主。\n2. 平屋是否持续改变来客的停留方式？\n3. 各卷高潮后是否回到吃饭/居住/街区日常？\n4. 若后续创作身份线压倒居住线，则本体维应上调。",
+			"x": 80,
+			"y": 70,
+			"width": 570,
+			"height": 180,
+			"color": "1"
+		},
+		{
+			"id": "query_h",
+			"type": "text",
+			"text": "🔍 检索关键词弹药库",
+			"x": 680,
+			"y": -700,
+			"width": 500,
+			"height": 62,
+			"color": "5"
+		},
+		{
+			"id": "query_cn",
+			"type": "text",
+			"text": "中文\n东京平屋日常｜旧木屋共同生活｜阿佐谷住宅街｜美大生创作焦虑｜城市慢生活｜选择性家族｜弱关系社区｜雨天室内｜饭桌非语言照料｜低事件分镜",
+			"x": 680,
+			"y": -620,
+			"width": 500,
+			"height": 150,
+			"color": "5"
+		},
+		{
+			"id": "query_jp",
+			"type": "text",
+			"text": "日本語\n東京 平屋 暮らし｜阿佐ヶ谷 住宅街｜高円寺 日常｜美大生 アトリエ｜釣り堀 アルバイト｜縁側 雨｜共同生活 食卓｜木造平屋 内観｜日常漫画 背景",
+			"x": 680,
+			"y": -450,
+			"width": 500,
+			"height": 150,
+			"color": "5"
+		},
+		{
+			"id": "query_en",
+			"type": "text",
+			"text": "English\nTokyo single-story house slice of life｜old wooden home interior｜Asagaya residential street｜art student shared house｜quiet neighborhood manga｜soft daylight domestic scene｜everyday life storyboard",
+			"x": 680,
+			"y": -280,
+			"width": 500,
+			"height": 150,
+			"color": "5"
+		},
+		{
+			"id": "creation_h",
+			"type": "text",
+			"text": "🛠 创作转化试验",
+			"x": 680,
+			"y": -90,
+			"width": 500,
+			"height": 62,
+			"color": "4"
+		},
+		{
+			"id": "creation_illust",
+			"type": "text",
+			"text": "插画母题\n雨后傍晚，夏美抱着画具停在玄关；弘人在厨房背对她盛饭。\n重点不是“欢迎回来”的台词，而是鞋、湿衣、锅中热气与亮着的室内。",
+			"x": 680,
+			"y": -10,
+			"width": 500,
+			"height": 150,
+			"color": "4"
+		},
+		{
+			"id": "creation_storyboard",
+			"type": "text",
+			"text": "四镜分镜母型\n1 平屋空镜 → 2 门锁响 → 3 饭桌多一只碗 → 4 院里两件衣服。\n关系变化通过空间与物件显现，不让人物解释。",
+			"x": 680,
+			"y": 160,
+			"width": 500,
+			"height": 140,
+			"color": "4"
+		},
+		{
+			"id": "creation_character",
+			"type": "text",
+			"text": "角色对子母型\nA：没有计划但能承载别人。\nB：计划很多却无法承载失败。\n两人共同生活后，不互相改造成对方，而是交换一点能力。",
+			"x": 680,
+			"y": 320,
+			"width": 500,
+			"height": 140,
+			"color": "4"
+		},
+		{
+			"id": "creation_env",
+			"type": "text",
+			"text": "环境设计母型\n低屋顶 + 可开合边界 + 一张共享桌 + 可见季节的院子。\n空间必须既能让人相遇，也能让人各自沉默；过度精致会破坏“可继续生活”的可信度。",
+			"x": 680,
+			"y": 480,
+			"width": 500,
+			"height": 150,
+			"color": "4"
+		},
+		{
+			"id": "boundary",
+			"type": "text",
+			"text": "⚖️ is-a / has-a / part-of 边界\n平屋 is-a 低层住宅；平屋 has-a 小院；屋檐 part-of 屋顶。\n夏美 is-a 美大生；夏美 has-a 画具；铅笔不是“美大生的一种”。\n饭 is-a 日常食物；饭 carries 照料意象；饭碗 part-of 餐桌陈设。\n以后漫画素材库按此规则避免把分类、拥有和构件混在一起。",
+			"x": 80,
+			"y": 280,
+			"width": 570,
+			"height": 210,
+			"color": "3"
+		},
+		{
+			"id": "source_note",
+			"type": "text",
+			"text": "📎 来源与状态\n✅ 事实底座：小学馆《ひらやすみ》作品简介、VIZ Vol.1/系列简介。\n※ 库内依据：空间型页的94分、nz次维、zn辅维、零振动空间型。\n△ 本 Canvas 为 AI 试作、pending-absorb；服装/构件/镜头词需要用户实读或逐格复核后再升格。",
+			"x": 80,
+			"y": 510,
+			"width": 570,
+			"height": 190,
+			"color": "5"
+		},
+		{
+			"id": "story_h",
+			"type": "text",
+			"text": "🧱 从 is-a 到故事：三个分类分别控制什么",
+			"x": 80,
+			"y": 760,
+			"width": 1100,
+			"height": 70,
+			"color": "2"
+		},
+		{
+			"id": "story_layers",
+			"type": "text",
+			"text": "日常生活漫画 = 控制事件尺度：吃饭、迟到、买东西、收衣服等小事必须承载真实情绪。\n都市共居漫画 = 提供关系发动机：不同年龄、职业、作息和价值观的人被同一住处迫使反复相遇。\n低事件空间叙事 = 规定表达方式：少靠大反转，让房间、路线、物件和重复构图先发生变化。",
+			"x": 80,
+			"y": 850,
+			"width": 1100,
+			"height": 160,
+			"color": "2"
+		},
+		{
+			"id": "story_formula",
+			"type": "text",
+			"text": "故事生成公式\n一个有历史的生活容器 + 一个不催促别人的承载者 + 一个带着外部压力进入的人 + 两套不兼容的生活节奏 + 一张弱关系邻里网 + 三个可重复的生活动作 + 一个缓慢变化的物件。\n挑完这些以后，故事已经有了人物、冲突、章节发动机和视觉母题。",
+			"x": 80,
+			"y": 1030,
+			"width": 1100,
+			"height": 170,
+			"color": "4"
+		},
+		{
+			"id": "story_seed",
+			"type": "text",
+			"text": "原创示例：《洗完再走》\n空间：旧自助洗衣店二楼的临时住处。\nA：32岁、离开剧场的灯光师，夜间看店，不再做长期计划。\nB：20岁动画学生，宿舍整修，被迫借住三个月，每天被作业截止时间追赶。\n关系：非亲属都市共居；A会承载却回避自己，B会冲刺却无法容纳失败。",
+			"x": 80,
+			"y": 1220,
+			"width": 1100,
+			"height": 200,
+			"color": "4"
+		},
+		{
+			"id": "story_chapters",
+			"type": "text",
+			"text": "六个低事件章节\n1 丢失的一只袜子：两人的物品第一次混在一起。\n2 暴雨停电：B的湿画稿只能铺满洗衣店。\n3 烘干机坏了：A重新使用过去的舞台维修能力。\n4 深夜客人：一位不愿回家的上班族坐到天亮。\n5 电费账单：两种生活方式第一次正面摩擦。\n6 晾衣绳多出一个夹子：B决定搬走，但承认这里已经是可返回之处。",
+			"x": 80,
+			"y": 1440,
+			"width": 1100,
+			"height": 230,
+			"color": "3"
+		},
+		{
+			"id": "story_usage",
+			"type": "text",
+			"text": "你可以从本 Canvas 直接拿什么\n人物库：选两种互相缺少对方能力的身份。｜空间库：选一个会迫使他们重复见面的容器。\n场景库：选3个每天会发生的动作作为章节骨架。｜道具库：用钥匙、饭碗、画稿等触发小冲突。\n意象库：选1件缓慢变化的东西承担主题。｜镜头库：用空镜、重复构图和手部动作表现人物变化。\n十元映射：检查空间到底在承载人物，还是只是一张漂亮背景。",
+			"x": 80,
+			"y": 1690,
+			"width": 1100,
+			"height": 210,
+			"color": "6"
+		}
+	],
+	"edges": [
+		{
+			"id": "e_root_definition",
+			"fromNode": "root",
+			"fromSide": "bottom",
+			"toNode": "definition",
+			"toSide": "top"
+		},
+		{
+			"id": "e_root_legend",
+			"fromNode": "root",
+			"fromSide": "bottom",
+			"toNode": "legend",
+			"toSide": "top"
+		},
+		{
+			"id": "e_root_source_file",
+			"fromNode": "root",
+			"fromSide": "bottom",
+			"toNode": "source_file",
+			"toSide": "top"
+		},
+		{
+			"id": "e_person_h_person_0",
+			"fromNode": "person_h",
+			"fromSide": "bottom",
+			"toNode": "person_0",
+			"toSide": "top"
+		},
+		{
+			"id": "e_person_0_person_1",
+			"fromNode": "person_0",
+			"fromSide": "bottom",
+			"toNode": "person_1",
+			"toSide": "top"
+		},
+		{
+			"id": "e_person_1_person_2",
+			"fromNode": "person_1",
+			"fromSide": "bottom",
+			"toNode": "person_2",
+			"toSide": "top"
+		},
+		{
+			"id": "e_person_2_person_3",
+			"fromNode": "person_2",
+			"fromSide": "bottom",
+			"toNode": "person_3",
+			"toSide": "top"
+		},
+		{
+			"id": "e_person_3_person_4",
+			"fromNode": "person_3",
+			"fromSide": "bottom",
+			"toNode": "person_4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_person_4_person_5",
+			"fromNode": "person_4",
+			"fromSide": "bottom",
+			"toNode": "person_5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_person_5_person_6",
+			"fromNode": "person_5",
+			"fromSide": "bottom",
+			"toNode": "person_6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_person_6_person_7",
+			"fromNode": "person_6",
+			"fromSide": "bottom",
+			"toNode": "person_7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_person_7_person_8",
+			"fromNode": "person_7",
+			"fromSide": "bottom",
+			"toNode": "person_8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_person_8_person_9",
+			"fromNode": "person_8",
+			"fromSide": "bottom",
+			"toNode": "person_9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_definition_person_h",
+			"fromNode": "definition",
+			"fromSide": "bottom",
+			"toNode": "person_h",
+			"toSide": "top",
+			"label": "展开"
+		},
+		{
+			"id": "e_relation_h_relation_0",
+			"fromNode": "relation_h",
+			"fromSide": "bottom",
+			"toNode": "relation_0",
+			"toSide": "top"
+		},
+		{
+			"id": "e_relation_0_relation_1",
+			"fromNode": "relation_0",
+			"fromSide": "bottom",
+			"toNode": "relation_1",
+			"toSide": "top"
+		},
+		{
+			"id": "e_relation_1_relation_2",
+			"fromNode": "relation_1",
+			"fromSide": "bottom",
+			"toNode": "relation_2",
+			"toSide": "top"
+		},
+		{
+			"id": "e_relation_2_relation_3",
+			"fromNode": "relation_2",
+			"fromSide": "bottom",
+			"toNode": "relation_3",
+			"toSide": "top"
+		},
+		{
+			"id": "e_relation_3_relation_4",
+			"fromNode": "relation_3",
+			"fromSide": "bottom",
+			"toNode": "relation_4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_relation_4_relation_5",
+			"fromNode": "relation_4",
+			"fromSide": "bottom",
+			"toNode": "relation_5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_relation_5_relation_6",
+			"fromNode": "relation_5",
+			"fromSide": "bottom",
+			"toNode": "relation_6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_relation_6_relation_7",
+			"fromNode": "relation_6",
+			"fromSide": "bottom",
+			"toNode": "relation_7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_relation_7_relation_8",
+			"fromNode": "relation_7",
+			"fromSide": "bottom",
+			"toNode": "relation_8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_relation_8_relation_9",
+			"fromNode": "relation_8",
+			"fromSide": "bottom",
+			"toNode": "relation_9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_definition_relation_h",
+			"fromNode": "definition",
+			"fromSide": "bottom",
+			"toNode": "relation_h",
+			"toSide": "top",
+			"label": "展开"
+		},
+		{
+			"id": "e_space_h_space_0",
+			"fromNode": "space_h",
+			"fromSide": "bottom",
+			"toNode": "space_0",
+			"toSide": "top"
+		},
+		{
+			"id": "e_space_0_space_1",
+			"fromNode": "space_0",
+			"fromSide": "bottom",
+			"toNode": "space_1",
+			"toSide": "top"
+		},
+		{
+			"id": "e_space_1_space_2",
+			"fromNode": "space_1",
+			"fromSide": "bottom",
+			"toNode": "space_2",
+			"toSide": "top"
+		},
+		{
+			"id": "e_space_2_space_3",
+			"fromNode": "space_2",
+			"fromSide": "bottom",
+			"toNode": "space_3",
+			"toSide": "top"
+		},
+		{
+			"id": "e_space_3_space_4",
+			"fromNode": "space_3",
+			"fromSide": "bottom",
+			"toNode": "space_4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_space_4_space_5",
+			"fromNode": "space_4",
+			"fromSide": "bottom",
+			"toNode": "space_5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_space_5_space_6",
+			"fromNode": "space_5",
+			"fromSide": "bottom",
+			"toNode": "space_6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_space_6_space_7",
+			"fromNode": "space_6",
+			"fromSide": "bottom",
+			"toNode": "space_7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_space_7_space_8",
+			"fromNode": "space_7",
+			"fromSide": "bottom",
+			"toNode": "space_8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_space_8_space_9",
+			"fromNode": "space_8",
+			"fromSide": "bottom",
+			"toNode": "space_9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_space_9_space_10",
+			"fromNode": "space_9",
+			"fromSide": "bottom",
+			"toNode": "space_10",
+			"toSide": "top"
+		},
+		{
+			"id": "e_space_10_space_11",
+			"fromNode": "space_10",
+			"fromSide": "bottom",
+			"toNode": "space_11",
+			"toSide": "top"
+		},
+		{
+			"id": "e_definition_space_h",
+			"fromNode": "definition",
+			"fromSide": "bottom",
+			"toNode": "space_h",
+			"toSide": "top",
+			"label": "展开"
+		},
+		{
+			"id": "e_scene_h_scene_0",
+			"fromNode": "scene_h",
+			"fromSide": "bottom",
+			"toNode": "scene_0",
+			"toSide": "top"
+		},
+		{
+			"id": "e_scene_0_scene_1",
+			"fromNode": "scene_0",
+			"fromSide": "bottom",
+			"toNode": "scene_1",
+			"toSide": "top"
+		},
+		{
+			"id": "e_scene_1_scene_2",
+			"fromNode": "scene_1",
+			"fromSide": "bottom",
+			"toNode": "scene_2",
+			"toSide": "top"
+		},
+		{
+			"id": "e_scene_2_scene_3",
+			"fromNode": "scene_2",
+			"fromSide": "bottom",
+			"toNode": "scene_3",
+			"toSide": "top"
+		},
+		{
+			"id": "e_scene_3_scene_4",
+			"fromNode": "scene_3",
+			"fromSide": "bottom",
+			"toNode": "scene_4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_scene_4_scene_5",
+			"fromNode": "scene_4",
+			"fromSide": "bottom",
+			"toNode": "scene_5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_scene_5_scene_6",
+			"fromNode": "scene_5",
+			"fromSide": "bottom",
+			"toNode": "scene_6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_scene_6_scene_7",
+			"fromNode": "scene_6",
+			"fromSide": "bottom",
+			"toNode": "scene_7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_scene_7_scene_8",
+			"fromNode": "scene_7",
+			"fromSide": "bottom",
+			"toNode": "scene_8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_scene_8_scene_9",
+			"fromNode": "scene_8",
+			"fromSide": "bottom",
+			"toNode": "scene_9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_scene_9_scene_10",
+			"fromNode": "scene_9",
+			"fromSide": "bottom",
+			"toNode": "scene_10",
+			"toSide": "top"
+		},
+		{
+			"id": "e_scene_10_scene_11",
+			"fromNode": "scene_10",
+			"fromSide": "bottom",
+			"toNode": "scene_11",
+			"toSide": "top"
+		},
+		{
+			"id": "e_definition_scene_h",
+			"fromNode": "definition",
+			"fromSide": "bottom",
+			"toNode": "scene_h",
+			"toSide": "top",
+			"label": "展开"
+		},
+		{
+			"id": "e_clothing_h_clothing_0",
+			"fromNode": "clothing_h",
+			"fromSide": "bottom",
+			"toNode": "clothing_0",
+			"toSide": "top"
+		},
+		{
+			"id": "e_clothing_0_clothing_1",
+			"fromNode": "clothing_0",
+			"fromSide": "bottom",
+			"toNode": "clothing_1",
+			"toSide": "top"
+		},
+		{
+			"id": "e_clothing_1_clothing_2",
+			"fromNode": "clothing_1",
+			"fromSide": "bottom",
+			"toNode": "clothing_2",
+			"toSide": "top"
+		},
+		{
+			"id": "e_clothing_2_clothing_3",
+			"fromNode": "clothing_2",
+			"fromSide": "bottom",
+			"toNode": "clothing_3",
+			"toSide": "top"
+		},
+		{
+			"id": "e_clothing_3_clothing_4",
+			"fromNode": "clothing_3",
+			"fromSide": "bottom",
+			"toNode": "clothing_4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_clothing_4_clothing_5",
+			"fromNode": "clothing_4",
+			"fromSide": "bottom",
+			"toNode": "clothing_5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_clothing_5_clothing_6",
+			"fromNode": "clothing_5",
+			"fromSide": "bottom",
+			"toNode": "clothing_6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_clothing_6_clothing_7",
+			"fromNode": "clothing_6",
+			"fromSide": "bottom",
+			"toNode": "clothing_7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_clothing_7_clothing_8",
+			"fromNode": "clothing_7",
+			"fromSide": "bottom",
+			"toNode": "clothing_8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_clothing_8_clothing_9",
+			"fromNode": "clothing_8",
+			"fromSide": "bottom",
+			"toNode": "clothing_9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_definition_clothing_h",
+			"fromNode": "definition",
+			"fromSide": "bottom",
+			"toNode": "clothing_h",
+			"toSide": "top",
+			"label": "展开"
+		},
+		{
+			"id": "e_prop_h_prop_0",
+			"fromNode": "prop_h",
+			"fromSide": "bottom",
+			"toNode": "prop_0",
+			"toSide": "top"
+		},
+		{
+			"id": "e_prop_0_prop_1",
+			"fromNode": "prop_0",
+			"fromSide": "bottom",
+			"toNode": "prop_1",
+			"toSide": "top"
+		},
+		{
+			"id": "e_prop_1_prop_2",
+			"fromNode": "prop_1",
+			"fromSide": "bottom",
+			"toNode": "prop_2",
+			"toSide": "top"
+		},
+		{
+			"id": "e_prop_2_prop_3",
+			"fromNode": "prop_2",
+			"fromSide": "bottom",
+			"toNode": "prop_3",
+			"toSide": "top"
+		},
+		{
+			"id": "e_prop_3_prop_4",
+			"fromNode": "prop_3",
+			"fromSide": "bottom",
+			"toNode": "prop_4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_prop_4_prop_5",
+			"fromNode": "prop_4",
+			"fromSide": "bottom",
+			"toNode": "prop_5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_prop_5_prop_6",
+			"fromNode": "prop_5",
+			"fromSide": "bottom",
+			"toNode": "prop_6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_prop_6_prop_7",
+			"fromNode": "prop_6",
+			"fromSide": "bottom",
+			"toNode": "prop_7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_prop_7_prop_8",
+			"fromNode": "prop_7",
+			"fromSide": "bottom",
+			"toNode": "prop_8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_prop_8_prop_9",
+			"fromNode": "prop_8",
+			"fromSide": "bottom",
+			"toNode": "prop_9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_prop_9_prop_10",
+			"fromNode": "prop_9",
+			"fromSide": "bottom",
+			"toNode": "prop_10",
+			"toSide": "top"
+		},
+		{
+			"id": "e_prop_10_prop_11",
+			"fromNode": "prop_10",
+			"fromSide": "bottom",
+			"toNode": "prop_11",
+			"toSide": "top"
+		},
+		{
+			"id": "e_definition_prop_h",
+			"fromNode": "definition",
+			"fromSide": "bottom",
+			"toNode": "prop_h",
+			"toSide": "top",
+			"label": "展开"
+		},
+		{
+			"id": "e_component_h_component_0",
+			"fromNode": "component_h",
+			"fromSide": "bottom",
+			"toNode": "component_0",
+			"toSide": "top"
+		},
+		{
+			"id": "e_component_0_component_1",
+			"fromNode": "component_0",
+			"fromSide": "bottom",
+			"toNode": "component_1",
+			"toSide": "top"
+		},
+		{
+			"id": "e_component_1_component_2",
+			"fromNode": "component_1",
+			"fromSide": "bottom",
+			"toNode": "component_2",
+			"toSide": "top"
+		},
+		{
+			"id": "e_component_2_component_3",
+			"fromNode": "component_2",
+			"fromSide": "bottom",
+			"toNode": "component_3",
+			"toSide": "top"
+		},
+		{
+			"id": "e_component_3_component_4",
+			"fromNode": "component_3",
+			"fromSide": "bottom",
+			"toNode": "component_4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_component_4_component_5",
+			"fromNode": "component_4",
+			"fromSide": "bottom",
+			"toNode": "component_5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_component_5_component_6",
+			"fromNode": "component_5",
+			"fromSide": "bottom",
+			"toNode": "component_6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_component_6_component_7",
+			"fromNode": "component_6",
+			"fromSide": "bottom",
+			"toNode": "component_7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_component_7_component_8",
+			"fromNode": "component_7",
+			"fromSide": "bottom",
+			"toNode": "component_8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_component_8_component_9",
+			"fromNode": "component_8",
+			"fromSide": "bottom",
+			"toNode": "component_9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_component_9_component_10",
+			"fromNode": "component_9",
+			"fromSide": "bottom",
+			"toNode": "component_10",
+			"toSide": "top"
+		},
+		{
+			"id": "e_definition_component_h",
+			"fromNode": "definition",
+			"fromSide": "bottom",
+			"toNode": "component_h",
+			"toSide": "top",
+			"label": "展开"
+		},
+		{
+			"id": "e_motif_h_motif_0",
+			"fromNode": "motif_h",
+			"fromSide": "bottom",
+			"toNode": "motif_0",
+			"toSide": "top"
+		},
+		{
+			"id": "e_motif_0_motif_1",
+			"fromNode": "motif_0",
+			"fromSide": "bottom",
+			"toNode": "motif_1",
+			"toSide": "top"
+		},
+		{
+			"id": "e_motif_1_motif_2",
+			"fromNode": "motif_1",
+			"fromSide": "bottom",
+			"toNode": "motif_2",
+			"toSide": "top"
+		},
+		{
+			"id": "e_motif_2_motif_3",
+			"fromNode": "motif_2",
+			"fromSide": "bottom",
+			"toNode": "motif_3",
+			"toSide": "top"
+		},
+		{
+			"id": "e_motif_3_motif_4",
+			"fromNode": "motif_3",
+			"fromSide": "bottom",
+			"toNode": "motif_4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_motif_4_motif_5",
+			"fromNode": "motif_4",
+			"fromSide": "bottom",
+			"toNode": "motif_5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_motif_5_motif_6",
+			"fromNode": "motif_5",
+			"fromSide": "bottom",
+			"toNode": "motif_6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_motif_6_motif_7",
+			"fromNode": "motif_6",
+			"fromSide": "bottom",
+			"toNode": "motif_7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_motif_7_motif_8",
+			"fromNode": "motif_7",
+			"fromSide": "bottom",
+			"toNode": "motif_8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_motif_8_motif_9",
+			"fromNode": "motif_8",
+			"fromSide": "bottom",
+			"toNode": "motif_9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_motif_9_motif_10",
+			"fromNode": "motif_9",
+			"fromSide": "bottom",
+			"toNode": "motif_10",
+			"toSide": "top"
+		},
+		{
+			"id": "e_motif_10_motif_11",
+			"fromNode": "motif_10",
+			"fromSide": "bottom",
+			"toNode": "motif_11",
+			"toSide": "top"
+		},
+		{
+			"id": "e_definition_motif_h",
+			"fromNode": "definition",
+			"fromSide": "bottom",
+			"toNode": "motif_h",
+			"toSide": "top",
+			"label": "展开"
+		},
+		{
+			"id": "e_visual_h_visual_0",
+			"fromNode": "visual_h",
+			"fromSide": "bottom",
+			"toNode": "visual_0",
+			"toSide": "top"
+		},
+		{
+			"id": "e_visual_0_visual_1",
+			"fromNode": "visual_0",
+			"fromSide": "bottom",
+			"toNode": "visual_1",
+			"toSide": "top"
+		},
+		{
+			"id": "e_visual_1_visual_2",
+			"fromNode": "visual_1",
+			"fromSide": "bottom",
+			"toNode": "visual_2",
+			"toSide": "top"
+		},
+		{
+			"id": "e_visual_2_visual_3",
+			"fromNode": "visual_2",
+			"fromSide": "bottom",
+			"toNode": "visual_3",
+			"toSide": "top"
+		},
+		{
+			"id": "e_visual_3_visual_4",
+			"fromNode": "visual_3",
+			"fromSide": "bottom",
+			"toNode": "visual_4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_visual_4_visual_5",
+			"fromNode": "visual_4",
+			"fromSide": "bottom",
+			"toNode": "visual_5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_visual_5_visual_6",
+			"fromNode": "visual_5",
+			"fromSide": "bottom",
+			"toNode": "visual_6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_visual_6_visual_7",
+			"fromNode": "visual_6",
+			"fromSide": "bottom",
+			"toNode": "visual_7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_visual_7_visual_8",
+			"fromNode": "visual_7",
+			"fromSide": "bottom",
+			"toNode": "visual_8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_visual_8_visual_9",
+			"fromNode": "visual_8",
+			"fromSide": "bottom",
+			"toNode": "visual_9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_visual_9_visual_10",
+			"fromNode": "visual_9",
+			"fromSide": "bottom",
+			"toNode": "visual_10",
+			"toSide": "top"
+		},
+		{
+			"id": "e_visual_10_visual_11",
+			"fromNode": "visual_10",
+			"fromSide": "bottom",
+			"toNode": "visual_11",
+			"toSide": "top"
+		},
+		{
+			"id": "e_definition_visual_h",
+			"fromNode": "definition",
+			"fromSide": "bottom",
+			"toNode": "visual_h",
+			"toSide": "top",
+			"label": "展开"
+		},
+		{
+			"id": "e_shot_h_shot_0",
+			"fromNode": "shot_h",
+			"fromSide": "bottom",
+			"toNode": "shot_0",
+			"toSide": "top"
+		},
+		{
+			"id": "e_shot_0_shot_1",
+			"fromNode": "shot_0",
+			"fromSide": "bottom",
+			"toNode": "shot_1",
+			"toSide": "top"
+		},
+		{
+			"id": "e_shot_1_shot_2",
+			"fromNode": "shot_1",
+			"fromSide": "bottom",
+			"toNode": "shot_2",
+			"toSide": "top"
+		},
+		{
+			"id": "e_shot_2_shot_3",
+			"fromNode": "shot_2",
+			"fromSide": "bottom",
+			"toNode": "shot_3",
+			"toSide": "top"
+		},
+		{
+			"id": "e_shot_3_shot_4",
+			"fromNode": "shot_3",
+			"fromSide": "bottom",
+			"toNode": "shot_4",
+			"toSide": "top"
+		},
+		{
+			"id": "e_shot_4_shot_5",
+			"fromNode": "shot_4",
+			"fromSide": "bottom",
+			"toNode": "shot_5",
+			"toSide": "top"
+		},
+		{
+			"id": "e_shot_5_shot_6",
+			"fromNode": "shot_5",
+			"fromSide": "bottom",
+			"toNode": "shot_6",
+			"toSide": "top"
+		},
+		{
+			"id": "e_shot_6_shot_7",
+			"fromNode": "shot_6",
+			"fromSide": "bottom",
+			"toNode": "shot_7",
+			"toSide": "top"
+		},
+		{
+			"id": "e_shot_7_shot_8",
+			"fromNode": "shot_7",
+			"fromSide": "bottom",
+			"toNode": "shot_8",
+			"toSide": "top"
+		},
+		{
+			"id": "e_shot_8_shot_9",
+			"fromNode": "shot_8",
+			"fromSide": "bottom",
+			"toNode": "shot_9",
+			"toSide": "top"
+		},
+		{
+			"id": "e_shot_9_shot_10",
+			"fromNode": "shot_9",
+			"fromSide": "bottom",
+			"toNode": "shot_10",
+			"toSide": "top"
+		},
+		{
+			"id": "e_shot_10_shot_11",
+			"fromNode": "shot_10",
+			"fromSide": "bottom",
+			"toNode": "shot_11",
+			"toSide": "top"
+		},
+		{
+			"id": "e_definition_shot_h",
+			"fromNode": "definition",
+			"fromSide": "bottom",
+			"toNode": "shot_h",
+			"toSide": "top",
+			"label": "展开"
+		},
+		{
+			"id": "e_tenyuan_h_tenyuan_main",
+			"fromNode": "tenyuan_h",
+			"fromSide": "bottom",
+			"toNode": "tenyuan_main",
+			"toSide": "top"
+		},
+		{
+			"id": "e_tenyuan_main_tenyuan_second",
+			"fromNode": "tenyuan_main",
+			"fromSide": "bottom",
+			"toNode": "tenyuan_second",
+			"toSide": "top"
+		},
+		{
+			"id": "e_tenyuan_second_tenyuan_motion",
+			"fromNode": "tenyuan_second",
+			"fromSide": "bottom",
+			"toNode": "tenyuan_motion",
+			"toSide": "top"
+		},
+		{
+			"id": "e_tenyuan_motion_exclude",
+			"fromNode": "tenyuan_motion",
+			"fromSide": "bottom",
+			"toNode": "exclude",
+			"toSide": "top"
+		},
+		{
+			"id": "e_exclude_test",
+			"fromNode": "exclude",
+			"fromSide": "bottom",
+			"toNode": "test",
+			"toSide": "top"
+		},
+		{
+			"id": "e_definition_tenyuan_h",
+			"fromNode": "definition",
+			"fromSide": "bottom",
+			"toNode": "tenyuan_h",
+			"toSide": "top",
+			"label": "十元"
+		},
+		{
+			"id": "e_query_h_query_cn",
+			"fromNode": "query_h",
+			"fromSide": "bottom",
+			"toNode": "query_cn",
+			"toSide": "top"
+		},
+		{
+			"id": "e_query_cn_query_jp",
+			"fromNode": "query_cn",
+			"fromSide": "bottom",
+			"toNode": "query_jp",
+			"toSide": "top"
+		},
+		{
+			"id": "e_query_jp_query_en",
+			"fromNode": "query_jp",
+			"fromSide": "bottom",
+			"toNode": "query_en",
+			"toSide": "top"
+		},
+		{
+			"id": "e_definition_query_h",
+			"fromNode": "definition",
+			"fromSide": "bottom",
+			"toNode": "query_h",
+			"toSide": "top",
+			"label": "检索"
+		},
+		{
+			"id": "e_creation_h_creation_illust",
+			"fromNode": "creation_h",
+			"fromSide": "bottom",
+			"toNode": "creation_illust",
+			"toSide": "top"
+		},
+		{
+			"id": "e_creation_illust_creation_storyboard",
+			"fromNode": "creation_illust",
+			"fromSide": "bottom",
+			"toNode": "creation_storyboard",
+			"toSide": "top"
+		},
+		{
+			"id": "e_creation_storyboard_creation_character",
+			"fromNode": "creation_storyboard",
+			"fromSide": "bottom",
+			"toNode": "creation_character",
+			"toSide": "top"
+		},
+		{
+			"id": "e_creation_character_creation_env",
+			"fromNode": "creation_character",
+			"fromSide": "bottom",
+			"toNode": "creation_env",
+			"toSide": "top"
+		},
+		{
+			"id": "e_query_en_creation_h",
+			"fromNode": "query_en",
+			"fromSide": "bottom",
+			"toNode": "creation_h",
+			"toSide": "top"
+		},
+		{
+			"id": "e_test_boundary",
+			"fromNode": "test",
+			"fromSide": "bottom",
+			"toNode": "boundary",
+			"toSide": "top"
+		},
+		{
+			"id": "e_boundary_source_note",
+			"fromNode": "boundary",
+			"fromSide": "bottom",
+			"toNode": "source_note",
+			"toSide": "top"
+		},
+		{
+			"id": "e_source_note_story_h",
+			"fromNode": "source_note",
+			"fromSide": "bottom",
+			"toNode": "story_h",
+			"toSide": "top"
+		},
+		{
+			"id": "e_story_h_story_layers",
+			"fromNode": "story_h",
+			"fromSide": "bottom",
+			"toNode": "story_layers",
+			"toSide": "top"
+		},
+		{
+			"id": "e_story_layers_story_formula",
+			"fromNode": "story_layers",
+			"fromSide": "bottom",
+			"toNode": "story_formula",
+			"toSide": "top"
+		},
+		{
+			"id": "e_story_formula_story_seed",
+			"fromNode": "story_formula",
+			"fromSide": "bottom",
+			"toNode": "story_seed",
+			"toSide": "top"
+		},
+		{
+			"id": "e_story_seed_story_chapters",
+			"fromNode": "story_seed",
+			"fromSide": "bottom",
+			"toNode": "story_chapters",
+			"toSide": "top"
+		},
+		{
+			"id": "e_story_chapters_story_usage",
+			"fromNode": "story_chapters",
+			"fromSide": "bottom",
+			"toNode": "story_usage",
+			"toSide": "top"
+		}
+	]
+}

@@ -1,0 +1,210 @@
+{
+  "SOURCE_PACK_ID": "HEAD_L1_SOURCE_PACK",
+  "SOURCE_PACK_VERSION": "v1",
+  "FROZEN": true,
+  "SOURCE_PACK_READY": "PASS",
+  "linear_issue": "674-167",
+  "parent_issue": "674-156",
+  "serves": ["674-254", "674-255", "674-256"],
+  "generated_at": "2026-10-06",
+  "source_of_truth": "local Obsidian vault (relative paths only; absolute paths not stored)",
+
+  "SOURCE_PATH": {
+    "root_id": "CHAR_REF",
+    "md": "黎黎隆项目/03_角色/角色库/05_头像与高清素材/大头联想源页/HEAD_L1_SOURCE_PACK_v1.md",
+    "manifest": "黎黎隆项目/03_角色/角色库/05_头像与高清素材/大头联想源页/HEAD_L1_SOURCE_PACK_v1.manifest.json"
+  },
+
+  "ASSET_MANIFEST": [
+    {
+      "asset_key": "A_POSITIVE_BASELINE",
+      "role": "REQUIRED",
+      "note": "RUN-A/B/C 三次实际使用的唯一图像输入",
+      "relative_path": "黎黎隆项目/03_角色/角色库/05_头像与高清素材/大头联想源页/头像精修候选_20261003_第三组/头像精修_第三组_3x5_CANDIDATE.png",
+      "sha256": "62f101a92fa72e62d94966b60b6001dc3eff237d754ef1024b50459d01b888fa",
+      "file_size_bytes": 2421642,
+      "dimensions": "972x1618",
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "A_SIBLING_G1",
+      "role": "PROVENANCE",
+      "relative_path": "黎黎隆项目/03_角色/角色库/05_头像与高清素材/大头联想源页/头像精修候选_20261003/头像精修_3x5_CANDIDATE.png",
+      "sha256": "9d57640b21cc5e592f14ee0ad9314e642729da0507b3019d6930020fda76374d",
+      "file_size_bytes": 2562772,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "A_SIBLING_G2",
+      "role": "PROVENANCE",
+      "relative_path": "黎黎隆项目/03_角色/角色库/05_头像与高清素材/大头联想源页/头像精修候选_20261003_第二组/头像精修_第二组_3x5_CANDIDATE.png",
+      "sha256": "43d524f09e99b14bf02c195f92640a6ab519269e3a91011fa4036142ce513480",
+      "file_size_bytes": 2339224,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "LEGACY_CAND01",
+      "role": "CONTEXT",
+      "relative_path": "黎黎隆项目/03_角色/角色库/05_头像与高清素材/大头联想源页/大头联想角色_八款候选01.png",
+      "sha256": "51a451f10f75a0f80c0f1ac590bc89965ab57384d3d376f1e1ace2cf089a34c6",
+      "file_size_bytes": 1812701,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "LEGACY_CAND03",
+      "role": "CONTEXT",
+      "relative_path": "黎黎隆项目/03_角色/角色库/05_头像与高清素材/大头联想源页/大头联想角色_十五款3x5_候选03.png",
+      "sha256": "44f188724da1f347757c4994e5d5a7aaf4bbb3aa1f8c56be2fd5804edff88b81",
+      "file_size_bytes": 2287445,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "B_REF_01",
+      "role": "REFERENCE",
+      "note": "Source B 色卡发散参考，非本轮 image input",
+      "relative_path": "黎黎隆项目/01_世界观/03_NEW_CANDIDATES/头像色卡探索 与旧世界观融合/04_远景色块小人_2026-09-25/头像接全身_用户指定无脸平面样式参考_2026-09-25.png",
+      "sha256": "44ccbc154eed28c96308a8d6842a7fa9fabeaf6498813200ccd736bc468b74e3",
+      "file_size_bytes": 1521861,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "B_REF_02",
+      "role": "REFERENCE",
+      "relative_path": "黎黎隆项目/01_世界观/03_NEW_CANDIDATES/头像色卡探索 与旧世界观融合/04_远景色块小人_2026-09-25/头像接全身_用户选定比例参考_2026-09-25.png",
+      "sha256": "319c5feaf0a44a102e060daa8ca80240eaa78e19d8c385c40acc58867153584d",
+      "file_size_bytes": 1833177,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "B_REF_03",
+      "role": "REFERENCE",
+      "relative_path": "黎黎隆项目/01_世界观/03_NEW_CANDIDATES/头像色卡探索 与旧世界观融合/05_竖版头像转全身_2026-09-25/用户补充_十五角色头像_身份源候选01.png",
+      "sha256": "e6a72398016b2aa3b57901df23aba26d3d1b9eb34ceed0f0e72c773633ed9a4d",
+      "file_size_bytes": 2460467,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "B_REF_04",
+      "role": "REFERENCE",
+      "relative_path": "黎黎隆项目/01_世界观/03_NEW_CANDIDATES/头像色卡探索 与旧世界观融合/06_单角色竖版全身色块_2026-09-25/角色头像_枝状发饰多色发_身份源.png",
+      "sha256": "9366267d990fad85d85b30114d38ba2651e87208a0c1bbc8290fb5b31a92bdc4",
+      "file_size_bytes": 277432,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "B_REF_05",
+      "role": "REFERENCE",
+      "relative_path": "黎黎隆项目/01_世界观/03_NEW_CANDIDATES/独立头像世界观探索_2026-10-01/04_第二批头像/第二批头像_15人大头候选_色卡页01.jpg",
+      "sha256": "e1379dff0d0dbce0ce0a2011abcc9720ef067fda80fc2f1f09d7b4e0dff26eb6",
+      "file_size_bytes": 362871,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "B_USERORIG_01",
+      "role": "REFERENCE",
+      "relative_path": "黎黎隆项目/03_角色/20_画风源_R1-R3/02_USER_ORIGINAL/大叔角色配色2.jpg",
+      "sha256": "3cbc5a86444427d240643483c25c3c586747c0f857f27be0447ffa855cf83945",
+      "file_size_bytes": 2819697,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "B_USERORIG_02",
+      "role": "REFERENCE",
+      "relative_path": "黎黎隆项目/03_角色/20_画风源_R1-R3/02_USER_ORIGINAL/小和尚角色_四视图原稿.png",
+      "sha256": "c4906d962353173d5293e1495a04557b78c77bcdf36cfabe7ee2dc7480019c1e",
+      "file_size_bytes": 2353830,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "B_USERORIG_03",
+      "role": "REFERENCE",
+      "relative_path": "黎黎隆项目/03_角色/20_画风源_R1-R3/02_USER_ORIGINAL/黎黎角色_配色.jpg",
+      "sha256": "cb78d33b803e7e962440a5cd8676533f50f1f6803385c8678d0adbe9d85b9406",
+      "file_size_bytes": 2179242,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "B_USERORIG_04",
+      "role": "REFERENCE",
+      "relative_path": "黎黎隆项目/03_角色/20_画风源_R1-R3/02_USER_ORIGINAL/奇美拉角色.jpg",
+      "sha256": "57ee6823d4ea75a464d9f2c9c725af56b744bf3a198dd7e73546513d08e6b793",
+      "file_size_bytes": 1082192,
+      "status": "PRESENT__VERIFIED"
+    },
+    {
+      "asset_key": "B_REF_NEWBASE",
+      "role": "REFERENCE",
+      "relative_path": "黎黎隆项目/03_角色/20_画风源_R1-R3/01_REFERENCE/USER_INPUT_20260920/黎黎隆角色新基准参考_原始截图.png",
+      "sha256": "6d6718918891eb170c656503794de24fb138d4731a53903dab3ddaf52e89c8e9",
+      "file_size_bytes": 3028410,
+      "status": "PRESENT__VERIFIED"
+    }
+  ],
+
+  "ASSET_SHA256": {
+    "required_asset_count": 1,
+    "required_asset_key": "A_POSITIVE_BASELINE",
+    "required_asset_sha256": "62f101a92fa72e62d94966b60b6001dc3eff237d754ef1024b50459d01b888fa",
+    "references_count": 14,
+    "all_verified": true,
+    "missing_count": 0
+  },
+
+  "PROMPT_SPEC": {
+    "language": "en",
+    "exact": "Generate one new 3x5 board with exactly 15 head-and-shoulder character candidates. Use the provided positive source image only as the visual reference for style and structural diversity language. Required drawing language: ink / charcoal / dry brush / gouache. Use restrained P00-like color behavior. Structural diversity must include at least several of: mechanical, hooded, hat/helmet, horn/ear, older age, short-haired, non-human.",
+    "source": "RUN-A receipt (Generation scope) + 674-254 description; consistent across RUN-A/B/C",
+    "input_image": "A_POSITIVE_BASELINE only"
+  },
+
+  "NEGATIVE_CONSTRAINT": [
+    "No ComfyUI / H3 / local diffusion workflow",
+    "No other RUN output used as input or context",
+    "No self-modification of character setting, style target, or input template",
+    "No template_collapse: no same-face-different-accessory repetition",
+    "No uniform extreme-left gaze combined with half-lidded eyes as default",
+    "Iris/pupil of the main visible eye must stay clearly readable",
+    "White hair must not become the default solution (RUN-B 7/15 is the current acceptable ceiling)",
+    "Head silhouette difference must come from structure, not small accessories",
+    "No fallback to historical chats, legacy candidate images, or unregistered local assets"
+  ],
+
+  "DIVERSITY_CONSTRAINT_REF": {
+    "linear_issue": "674-259",
+    "constraint_id": "DIVERSITY_CONSTRAINT_v1",
+    "frozen": true,
+    "dimensions": [
+      "head_silhouette_diversity (>=5 recognizable classes)",
+      "structural_diversity",
+      "face_language",
+      "age_read (>=3 age tiers)",
+      "gaze_readability",
+      "hair_head_repetition",
+      "template_collapse"
+    ],
+    "rule": "constraints may not be added or removed ad hoc in RUN-A/B/C; changes require a version bump and changelog"
+  },
+
+  "OUTPUT_LAYOUT": {
+    "grid": "3 columns x 5 rows",
+    "quantity": 15,
+    "format": "head-and-shoulder candidates",
+    "dimensions": "972x1618",
+    "per_run": 1
+  },
+
+  "CHANGELOG": [
+    {
+      "version": "v1",
+      "date": "2026-10-06",
+      "changes": [
+        "FROZEN=TRUE; added machine-readable manifest",
+        "Added ASSET_SHA256 for all 15 registered assets (this-run measurement, cross-checked against 674-169 pack for the positive baseline)",
+        "Added PROMPT_SPEC from RUN-A receipt Generation scope",
+        "Added NEGATIVE_CONSTRAINT (674-254 eyes/gaze constraint + 674-259 fail conditions)",
+        "Added DIVERSITY_CONSTRAINT_REF -> 674-259 DIVERSITY_CONSTRAINT_v1 (frozen)",
+        "Declared SOURCE_PACK_READY=PASS; unblocks 674-254/255/256 clean-room re-runs"
+      ]
+    }
+  ]
+}

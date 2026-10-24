@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"root","type":"text","text":"🕯️ 秘境/圣所\nzn+n 意义+容器\n\n神圣封闭的空间\n圣所不是宗教建筑\n是「意义被空间包裹后」的形态","x":400,"y":30,"width":320,"height":110,"color":"1"},
+		{"id":"ty_zn","type":"text","text":"zn（意义/信念）\n核心\n\n圣所存在就是为了承载意义\n——它不是实用的\n它是「必须存在」的空间\n意义找到了形状","x":80,"y":190,"width":230,"height":150,"color":"3"},
+		{"id":"ty_n","type":"text","text":"n（容器/承载）\n核心\n\n圣所的封闭性\n就是n的物理化\n——四面墙围起来的\n不是空间\n是意义的容器","x":340,"y":190,"width":230,"height":150,"color":"4"},
+		{"id":"ty_xz","type":"text","text":"xz（边缘/漂流）\n辅链\n\n圣所通常位于边缘\n——山顶/深林/洞穴\n不在日常路径上\n要去圣所需要穿越xz","x":600,"y":190,"width":230,"height":150,"color":"2"},
+		{"id":"ty_nx","type":"text","text":"nx（暗账/结算）\n暗面\n\n圣所也是有代价的\n——谁建造了它？\n用多少血/多少金子？\n每个圣所背后都有一本账","x":860,"y":190,"width":230,"height":150,"color":"2"},
+		{"id":"work_0","type":"text","text":"📚 指环王·精灵庇护所\nzn+n\n\n瑞文戴尔是圣所的完美形态\n——你进入后\n时间变慢了\n世界在外面\n意义在里面","x":80,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_1","type":"text","text":"🎬 降临·七肢桶空间\nzn+n+xz\n\n七肢桶的空间\n不是建筑——是意义的可视化\n时间/语言/存在\n被空间包裹","x":400,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_2","type":"text","text":"🎮 塞尔达·神庙\nzn+n+zx\n\n海拉尔的神庙\n是zn+n：意义被容器保护\n+ zx：你必须通过试炼\n才能接触到那个意义","x":720,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"principle","type":"text","text":"🎨 秘境/圣所的视觉设计原则\n\n① 圣所的光不是照明的——是「意义可见了」。神圣感来自光的「不自然」\n② 入口是圣所最重要的部分——门/拱/结界。通过入口的瞬间就是进入zn的瞬间\n③ 安静的视觉：圣所不需要太多细节。空和静比装饰更有力量——n的力量来自空\n④ 最重要的技巧：圣所里放一个「被供奉的东西」。不一定是神像——可以是光/树/文字/一个姿势","x":150,"y":590,"width":900,"height":170,"color":"1"},
+		{"id":"trap","type":"text","text":"⚠️ 秘境/圣所的常见误判\n\n🔴 圣所=教堂\n→ 圣所不一定是宗教的。可以是图书馆/档案馆/一个人的房间——只要那个空间被意义包裹\n\n🔴 秘境=难到达\n→ 难到达不是秘境的本质——是「不该被轻易到达」。真正重要的是到达后的感受\n\n🔴 圣所=安全\n→ 圣所可能是最危险的——因为你在意义的核心。意义本身可以摧毁你","x":150,"y":810,"width":700,"height":160,"color":"2"},
+		{"id":"seal","type":"text","text":"📌 封存句\n\n圣所不是让你感到安全\n是让你感到\n「有什么东西在这里\n比在外面更大」\n\n← [[奇幻子类型谱系.canvas]]","x":450,"y":1020,"width":350,"height":140,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","fromSide":"bottom","toNode":"ty_zn","toSide":"top"},
+		{"id":"e2","fromNode":"root","fromSide":"bottom","toNode":"ty_n","toSide":"top"},
+		{"id":"e3","fromNode":"root","fromSide":"bottom","toNode":"ty_xz","toSide":"top"},
+		{"id":"e4","fromNode":"root","fromSide":"bottom","toNode":"ty_nx","toSide":"top"},
+		{"id":"e5","fromNode":"root","fromSide":"bottom","toNode":"work_0","toSide":"top"},
+		{"id":"e6","fromNode":"root","fromSide":"bottom","toNode":"work_1","toSide":"top"},
+		{"id":"e7","fromNode":"root","fromSide":"bottom","toNode":"work_2","toSide":"top"},
+		{"id":"e8","fromNode":"root","fromSide":"bottom","toNode":"principle","toSide":"top"},
+		{"id":"e9","fromNode":"principle","fromSide":"bottom","toNode":"trap","toSide":"top"},
+		{"id":"e10","fromNode":"trap","fromSide":"bottom","toNode":"seal","toSide":"top"}
+	]
+}

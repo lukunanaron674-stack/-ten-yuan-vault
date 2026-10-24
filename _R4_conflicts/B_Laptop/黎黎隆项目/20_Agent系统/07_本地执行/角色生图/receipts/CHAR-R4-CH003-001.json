@@ -1,0 +1,80 @@
+{
+  "task_id": "CHAR-R4-CH003-001",
+  "character_id": "LLL-CHAR-003",
+  "status": "GENERATED_PENDING_STYLE_REVIEW",
+  "accepted_from": "READY_FOR_LOCAL_CODEX",
+  "started_at": "2026-10-01T20:20:00+08:00",
+  "completed_at": "2026-10-01T20:25:06+08:00",
+  "output": {
+    "root_id": "LLL_CHAR_ASSETS",
+    "relative_path": "CH-003/CHAR-R4-CH003-001_candidate.png",
+    "sha256": "6E858457D5E02D58630B0A0D5F235A88159E8A5CC92E7396B8036932674782D9",
+    "width": 941,
+    "height": 1672,
+    "requested_aspect_ratio": "9:16",
+    "actual_aspect_ratio": "941:1672"
+  },
+  "prompt_relative_path": "黎黎隆项目/20_Agent系统/07_本地执行/角色生图/prompts/CHAR-R4-CH003-001_prompt.md",
+  "generation": {
+    "backend": "Codex built-in image_gen",
+    "workflow_id": null,
+    "model_version": null,
+    "seed": null,
+    "transparent_background": false,
+    "attempt_count": 2,
+    "selected_attempt": 2,
+    "revision_input_sha256": "C6267DA2B188605EDBB93A1EE5320265ACE8B43DFEB4575DCE11013FF31C9CCC",
+    "unexposed_parameters": ["seed", "model_version", "workflow_id", "explicit pixel-size controls"]
+  },
+  "source_assets": {
+    "identity": [
+      {
+        "asset_id": "AST-IMAGE-8F4BB563",
+        "root_id": "LLL_CHAR_ASSETS",
+        "relative_path": "CH-003/CH-003_逃票魔法学徒_06x08设定融合版_主参考.png",
+        "sha256": "8F4BB563E8123B958631D163A0298687509D29E62D5BD82BF327C8E06B4970F0",
+        "lock_status": "CANDIDATE"
+      },
+      {
+        "asset_id": "AST-IMAGE-E6071AC0",
+        "root_id": "LLL_CHAR_ASSETS",
+        "relative_path": "CH-003/CH-003_逃票魔法学徒_9x16_四宫格设定稿_单人_v1.png",
+        "sha256": "E6071AC0E593D95AE8887E910EB3954E7D351E38C53156DD5E9B4FC1F97279EC",
+        "lock_status": "CANDIDATE"
+      }
+    ],
+    "style": [
+      {
+        "asset_id": "AST-IMAGE-8F4BB563",
+        "root_id": "LLL_CHAR_ASSETS",
+        "relative_path": "CH-003/CH-003_逃票魔法学徒_06x08设定融合版_主参考.png",
+        "sha256": "8F4BB563E8123B958631D163A0298687509D29E62D5BD82BF327C8E06B4970F0",
+        "style_version": "LLL-CHAR-STYLE-v0.2",
+        "status": "STAGING"
+      },
+      {
+        "asset_id": "AST-IMAGE-E6071AC0",
+        "root_id": "LLL_CHAR_ASSETS",
+        "relative_path": "CH-003/CH-003_逃票魔法学徒_9x16_四宫格设定稿_单人_v1.png",
+        "sha256": "E6071AC0E593D95AE8887E910EB3954E7D351E38C53156DD5E9B4FC1F97279EC",
+        "lock_status": "CANDIDATE"
+      },
+      {
+        "asset_id": "AST-IMAGE-10BF021C",
+        "root_id": "LLL_CHAR_ASSETS",
+        "relative_path": "CH-003/CH-003_逃票魔法学徒_9x16_四格_灰纸水彩校准_v1.png",
+        "sha256": "10BF021CFAFE7D58E67AF03C33A153BD527922B637087DA1D29D5A973C06F9EF",
+        "lock_status": "CANDIDATE",
+        "style_review_status": "PENDING"
+      }
+    ]
+  },
+  "body_structure_branch": "A/B proportion exploration; head and known upper-body identity preserved; pelvis and legs remain unknown and unlocked.",
+  "notes": [
+    "Source files were verified locally by path, visual inspection, and SHA-256 before generation.",
+    "The initial preview was not selected because the black garment read as cape-like; the final revision simplified clothing and removed speculative straps, belts, bags, and tools.",
+    "The final image was visually inspected. It remains a candidate and has not received AG-06 style review.",
+    "The global local asset catalog remains UNINITIALIZED; this receipt records only the task-scoped, directly verified assets."
+  ],
+  "next_route": "STYLE_REVIEW"
+}

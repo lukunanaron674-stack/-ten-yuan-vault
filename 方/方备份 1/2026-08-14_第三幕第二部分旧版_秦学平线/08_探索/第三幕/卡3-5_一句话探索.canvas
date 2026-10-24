@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "🔍 一句话·十元探索｜卡3-5",
+      "x": -170,
+      "y": -560,
+      "width": 340,
+      "height": 50,
+      "color": "6"
+    },
+    {
+      "id": "hub",
+      "type": "text",
+      "text": "卡3-5｜方交文稿给胡逸民\n\n一句话探索：10s 无对白交接，怎么让「托付」在搜查逼近里成立，不握手不煽情？\n\n📄 [[方/08_探索/第三幕/卡3-5_方交文稿_探索.md|探索卡]]",
+      "x": -230,
+      "y": -330,
+      "width": 460,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "ratio_A",
+      "type": "text",
+      "text": "方案A｜nx6 zx4 n3 xz2\n\n暗线托付+执行+安顿",
+      "x": 393,
+      "y": 342,
+      "width": 360,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "ratio_B",
+      "type": "text",
+      "text": "方案B｜zx5 nx5 n3 nz2\n\n执行+暗线+一丝暖",
+      "x": 1,
+      "y": 616,
+      "width": 360,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "ratio_C",
+      "type": "text",
+      "text": "方案C｜n4 nx4 zx4 xz3\n\n安顿+暗线+执行+漂流",
+      "x": -476,
+      "y": 574,
+      "width": 360,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "ratio_D",
+      "type": "text",
+      "text": "方案D｜xn5 nx5 x3 nz2\n\n压迫+暗线+毁灭+柔情",
+      "x": -814,
+      "y": 236,
+      "width": 360,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "rec",
+      "type": "text",
+      "text": "🏆 推荐 #nx6 zx4 n3 xz2",
+      "x": -180,
+      "y": 660,
+      "width": 360,
+      "height": 80,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-title-hub",
+      "fromNode": "title",
+      "toNode": "hub"
+    },
+    {
+      "id": "e-hub-ratio_A",
+      "fromNode": "hub",
+      "toNode": "ratio_A"
+    },
+    {
+      "id": "e-hub-ratio_B",
+      "fromNode": "hub",
+      "toNode": "ratio_B"
+    },
+    {
+      "id": "e-hub-ratio_C",
+      "fromNode": "hub",
+      "toNode": "ratio_C"
+    },
+    {
+      "id": "e-hub-ratio_D",
+      "fromNode": "hub",
+      "toNode": "ratio_D"
+    },
+    {
+      "id": "e-hub-rec",
+      "fromNode": "hub",
+      "toNode": "rec"
+    }
+  ]
+}

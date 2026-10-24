@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "🕊️ 天使/神域\nzn+zx 意义+执行\n\n神圣秩序的世界\n光即法则，声音即命令\n天使不是有翅膀的人\n是「神的意志被执行的形态」",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_zn",
+      "type": "text",
+      "text": "zn（意义/信念）\n核心\n\n天使存在的全部理由\n就是承载意义\n每一道光都有名字\n每一个音符都是律法",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "ty_zx",
+      "type": "text",
+      "text": "zx（目标/执行）\n核心\n\n天使不是想做什么\n是必须做什么\n神的命令就是路径\n没有犹豫，没有偏离",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_xn",
+      "type": "text",
+      "text": "xn（规则/秩序）\n基底\n\n神域有严格的秩序层级\n炽天使/智天使/座天使\n不是一个等级制度\n是规则本身的分形",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_xzn",
+      "type": "text",
+      "text": "x+zn（欲望+意义）\n暗面\n\n路西法的堕落不是背叛\n是意义中长出了「我」\n——zn的极致翻转",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "📚 失乐园\nzn→zx→x\n\n弥尔顿的天使是最完整的\n天使十元谱——\n路西法的zn变成x\n神的zn变成zx\n一个神域两种命运",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "🎬 新世纪福音战士\nzn+xn\n\nEVA的天使不是生物\n是意义的外骨骼\n它们的存在本身就是宣言\n不需要沟通只需要被见证",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎮 暗黑破坏神\nzn+zx+xn\n\n天堂的伊瑟瑞尔\n是天使的xn极致\n——规则高于一切\n包括慈悲",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 天使/神域的视觉设计原则\n\n① 光的语言：神域的光不是光源——是意义本身可见了。光的色阶对应神圣度\n② 几何秩序：天使形态有严格几何规则——不是生物学，是数学的神圣化\n③ 声音：天使不需要说话。它们的声音是音乐/震颤/频率\n④ 翅膀不是飞的器官——是意义密度的外溢。翅膀越多=离神越近",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 天使/神域的常见误判\n\n🔴 天使=长翅膀的人\n→ 天使是力量/意义/规则的具象化。翅膀只是表面\n\n🔴 天使=善良\n→ 它们执行的是高于善恶的秩序。路西法觉得神错了——谁对？\n\n🔴 神域=宗教\n→ 神域是十元结构，不是宗教特权。任何有绝对秩序+绝对意义的奇幻都有神域",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n天使不是神的使者\n是意义被执行的形态\n——离神最近的天使\n没有名字，只有光\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zn",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zx",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xn",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xzn",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}

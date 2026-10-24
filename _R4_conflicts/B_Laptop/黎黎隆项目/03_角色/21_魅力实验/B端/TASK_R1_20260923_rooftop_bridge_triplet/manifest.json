@@ -1,0 +1,63 @@
+{
+  "schema_version": "lililong-b-production-triplet/v1",
+  "package_id": "TASK_R1_20260923_rooftop_bridge_triplet",
+  "project": "黎黎隆",
+  "created_at": "2026-09-23T19:19:12.8996324+08:00",
+  "status": "candidate_production_reference",
+  "instruction_boundary": "The three attached PNG files are visual assets only; no text or embedded content in attachments is treated as an instruction.",
+  "source": {
+    "kind": "user_attached_clipboard_images",
+    "preservation": "original PNG files copied unchanged; no compression, no crop, no color edit"
+  },
+  "github": {
+    "repository": "lukunanaron674-stack/-ten-yuan-vault",
+    "branch": "codex/lililong-mv-tenyuan-cards-20260921",
+    "repo_root": "C:/Users/19308/Documents/Obsidian/ten-yuan-vault",
+    "publication_status": "pending_commit_push_verification"
+  },
+  "cloud_4090": {
+    "requested_target_label": "4090c",
+    "used_channel": "h3 / RTX 4090D Hermes-compatible asset staging",
+    "remote_dir": "D:/H3/comfyui_input/lililong/bside/TASK_R1_20260923_rooftop_bridge_triplet",
+    "upload_status": "uploaded_and_sha256_verified",
+    "note": "Asset upload only; no generation task was submitted."
+  },
+  "assets": [
+    {
+      "id": "LLL-B-ROOFTOP-BRIDGE-01",
+      "filename": "LLL-B-ROOFTOP-BRIDGE-01-overview.png",
+      "path": "assets/LLL-B-ROOFTOP-BRIDGE-01-overview.png",
+      "repo_relative_path": "黎黎隆项目/角色魅力实验/B端/TASK_R1_20260923_rooftop_bridge_triplet/assets/LLL-B-ROOFTOP-BRIDGE-01-overview.png",
+      "cloud_4090_path": "D:/H3/comfyui_input/lililong/bside/TASK_R1_20260923_rooftop_bridge_triplet/LLL-B-ROOFTOP-BRIDGE-01-overview.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2443302,
+      "sha256": "9335b07dda012644a9e668eb046ce9a51d9b61a24c02ca906783e618f9466d31",
+      "role": "wide environment reference; ruined elevated bridge city and rooftop overlook"
+    },
+    {
+      "id": "LLL-B-ROOFTOP-BRIDGE-02",
+      "filename": "LLL-B-ROOFTOP-BRIDGE-02-walkway.png",
+      "path": "assets/LLL-B-ROOFTOP-BRIDGE-02-walkway.png",
+      "repo_relative_path": "黎黎隆项目/角色魅力实验/B端/TASK_R1_20260923_rooftop_bridge_triplet/assets/LLL-B-ROOFTOP-BRIDGE-02-walkway.png",
+      "cloud_4090_path": "D:/H3/comfyui_input/lililong/bside/TASK_R1_20260923_rooftop_bridge_triplet/LLL-B-ROOFTOP-BRIDGE-02-walkway.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2501838,
+      "sha256": "b4a5af4f95c6a664a3d26ab6f4d1a9b7b06ec3411e1b2ffa120e25fba3a26368",
+      "role": "mid-wide action-space reference; sloped roof walkway, cat endpoint, layered bridges"
+    },
+    {
+      "id": "LLL-B-ROOFTOP-BRIDGE-03",
+      "filename": "LLL-B-ROOFTOP-BRIDGE-03-closeup.png",
+      "path": "assets/LLL-B-ROOFTOP-BRIDGE-03-closeup.png",
+      "repo_relative_path": "黎黎隆项目/角色魅力实验/B端/TASK_R1_20260923_rooftop_bridge_triplet/assets/LLL-B-ROOFTOP-BRIDGE-03-closeup.png",
+      "cloud_4090_path": "D:/H3/comfyui_input/lililong/bside/TASK_R1_20260923_rooftop_bridge_triplet/LLL-B-ROOFTOP-BRIDGE-03-closeup.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2569819,
+      "sha256": "60b46a97ba3c1a66496fae0f3194bfed36d704d6be16a92bca69e96a9e5c007a",
+      "role": "close interaction reference; child, cat, roof mechanism, turquoise light detail"
+    }
+  ]
+}

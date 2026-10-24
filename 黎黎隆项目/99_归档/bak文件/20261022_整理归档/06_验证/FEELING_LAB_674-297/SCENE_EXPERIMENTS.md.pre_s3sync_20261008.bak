@@ -1,0 +1,64 @@
+---
+project: 黎黎隆
+type: 场景感受实验记录
+status: BASELINES_ONLY
+source_issue: 674-297
+updated: 2026-10-08
+---
+
+# 场景实验日志
+
+## 粉城三处生活景视
+
+- asset：`SCENE-PINK-001_三处魔法城生活景视_CANDIDATE.png`
+- local path：`黎黎隆项目/07_持续发散/2026-10-03_粉色世界_小魔法师锚点_角色与生活景视探索/SCENE-PINK-001_三处魔法城生活景视_CANDIDATE.png`
+- bytes：3,279,157；本地 SHA-256：`11b2755917d44e40f35b0c184361a72874b27d40f8f313a1788b9f4e434879ec`。
+- 画面基线：三联画分别呈现髓盆咒市、膜染高台、髓腔学徒回声学堂候选空间；遗蜕建筑与粉色中古魔法氛围明显。底部有生成字样；既有记录写明画风尚待用户验收。
+- pool：`EXPERIMENT` / `PROVISIONAL`，不作 A_READY、USER_CONFIRMED 或正式场景。
+- 当前实验：无。controlled_variable=`NONE`；result/delta=`MISSING`。
+- 下一步：先从 674-296/674-68/674-293 对应场景输入核 asset_id、SHA、审核状态；再拆成可单独引用的场景对象。若图风格/标签干扰实验，先标清干扰变量，不擅自修图。
+
+## 白角猎径、镜堂、珊瑚祭场
+
+当前只查到文本候选映射，未核到能代表相应地方/组织/仪式的已审核场景输入。记 `EXISTING_VISUAL=UNKNOWN`、`baseline_feeling_plain=UNKNOWN`、实验 `NOT_STARTED`。不因缺图就自动生成新场景。
+
+
+## S3 全量素材用途复核｜2026-10-08
+
+289张按 A-001—A-289 保持原编号。146张保留场景族候选，14张是单张空间场景参考但黎黎隆世界锚点未映射，129张为非地点素材。原89张待逐张归位批次已拆为：43张联系表/审计拼图、18张氛围/功能细节实验、14张空间参考、4张角色/生物精灵图、6张道具/部件参考、3张现实人物访谈参考、1张设备结构图。非地点素材的世界区域和组织关系标为 NOT_APPLICABLE；空间参考继续 UNKNOWN/UNASSIGNED。上述仅为用途分类，不是用户审核或A_READY。
+
+## 674-296 输入门复核｜历史快照 2026-10-08 16:37 Asia/Shanghai
+
+- Linear 674-296 当前 Todo，附件 0、评论 1（R3=`BLOCKED_INPUT`）；A_READY verified_count=`NOT_VERIFIED`，可继承 A_READY 场景行 = 0。
+- 因此本日志当前是素材基线与候选记录，未启动受控场景实验；实验结果与变量差异仍为 MISSING。
+- 粉城三联图继续 `CANDIDATE / EXPERIMENT`，不当作三个过审场景或 A_READY；等正式资产行后再核 asset_id、path/SHA、review_evidence 和 pool。
+
+## 最新 S3/上游状态回读｜2026-10-08 16:53 Asia/Shanghai
+
+- 674-297 已写入 S3 继续回执 `c47503d9-f0b3-4efd-aadb-ce9c9be62a9a`：89 张用途细分、146/14/129 分类、区域字段统计、公开观览台 v10 和继续闸门。
+- 674-296 仍 Todo；最新 R3 评论 `f14f3982-7e64-44c1-8823-9fd2b617d1b2` 为 `BLOCKED_INPUT`，verified_count=`NOT_VERIFIED`。没有可继承的 A_READY 场景行，本槽实验数保持 0。
+
+## S3 场景位置/关系覆盖审查｜2026-10-08 16:59 Asia/Shanghai
+
+- 新增 `S3_POSITION_RELATION_COVERAGE_STAGING_20261008.md`：区分 48 组规范化 `s4SceneGroup` 与 63 种原始 `sceneGroup` 写法；34 组编号场景/106 张中，17 组有 SC 候选、4 组/44 张冲突并列、8 组/9 张仅有题名级候选。
+- 可从当前快照安全确认的只有来源明示候选；8 组未映射项不按颜色、题名或图面补造区域/组织关系。14 张空间参考仍 `UNKNOWN / UNASSIGNED`。
+- 最新复读 674-296 为 `Todo`，唯一评论 R3=`BLOCKED_INPUT`，无 4080 实机可达/ SHA 回执；没有可继承 A_READY 场景行。场景实验数仍为 0。
+- 继续顺序：逐项查 674-68/场景总 Canvas/世界观文字锚点 → 有证据才补 STAGING 交叉索引 → 保留冲突 → 等 296 合格行后才开始单变量实验。
+## 直接来源复核补记｜2026-10-08 17:02 Asia/Shanghai
+
+- I01《旧机械腹腔小窝》在历史 R1 十元样板中另有单帧候选：主 N，次 NZ / X并Z，最终置信度 18；当前 S4_ASSIGN 是 XZ / NZ，状态 PROVISIONAL。二者对象层与来源版本不一致，单独并列为候选差异，不合并为场景感受。A-0268 的 `sceneTenYuanMain/Secondary` 仍是 UNKNOWN。
+- 旧机器索引给 AST-0268 的路径指向 `image_handoff/.../assets/scene/LLL-IMG-CD1EEECA39E2.png`，该登记路径本机不存在；SHA 仍出现在场景库/历史 manifest/样板索引中。本次没有扫描所有图片并按 SHA 查找可能的改名副本，因此只记 `REGISTERED_PATH_MISSING; REPLACEMENT_NOT_VERIFIED`，不声称素材已永久丢失。旧样板的画面文字描述作为历史索引，不算本轮重新看图。
+- 证据位置：`07_持续发散/r0_semantic_index/R1_十元化样板_2026-09-22.md` §12；机器表 AST-0268；原路径检查结果。无新世界坐标可补，继续 UNKNOWN。
+## Linear 回执索引｜2026-10-08
+
+- 工作经验与覆盖审查：674-297 评论 `2c864cc6-9d3a-4f32-a5ae-c03bef9a7f16`。
+- I01 十元候选差异与登记路径复核：674-297 评论 `3dba08f3-17a4-4488-8b1e-845fb5bf25c3`。
+## AST-0268 仓库副本核验更正｜2026-10-08 17:04 Asia/Shanghai
+
+> 更正上一条：登记源路径失效，但唯一素材仓内找到同 SHA 原图，故素材本体不是未验证/丢失状态。
+
+- 场景库 `uniqueAssets` 记录的中央仓路径：`黎黎隆项目/04_场景/场景库/10_图像仓库/AST-0268__LLL-IMG-CD1EEECA39E2.png`；文件 2,081,051 bytes。实测 SHA-256=`3c86bfbb322fde1dadd36f6a23f73b12b993cce0cfe2c09e2dd50c947e25cf26`，与清单一致。
+- 本轮实际看图：大型弧形/舱体金属内室，右侧有床、桌椅、架子、织物等起居陈设；弧形开口外可见荒漠岩柱/峡谷。可描述为“巨构内部的生活空间，外接荒漠峡谷视野”；图像不证明其在 G1/G5/G7 或其他地图坐标，也不证明人物长期居住/组织关系。
+- 十元层保留差异：历史 R1 单帧候选 N / (NZ, X并Z)，final 18；当前 S4 为 XZ / NZ、PROVISIONAL；两者都不是用户感受结论。A-0268 `sceneTenYuanMain/Secondary` 仍 UNKNOWN。
+- 状态改为：`SOURCE_PATH_STALE; CENTRAL_WAREHOUSE_SHA_VERIFIED`。原 sourcePath 已旧；不改源素材路径、不动图像，不把候选升级为审核通过。
+- AST-0268 仓库核验更正：674-297 评论 0bf3d41-4495-420d-bf68-53273ffe3474。

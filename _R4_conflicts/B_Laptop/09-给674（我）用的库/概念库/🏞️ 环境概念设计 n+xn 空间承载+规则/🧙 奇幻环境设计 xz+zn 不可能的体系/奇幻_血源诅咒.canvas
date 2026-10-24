@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "🩸 血源诅咒\nx+nx 欲望+暗账\n\n狩猎的代价\n每一刀都在结算\n血源诅咒不是吸血鬼故事\n是「欲望永远不可能被满足」的故事",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_x",
+      "type": "text",
+      "text": "x（欲望/吞噬）\n核心\n\n血液=欲望\n血疗=满足欲望的捷径\n但欲望永远不会被满足\n——你越吸越渴",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "ty_nx",
+      "type": "text",
+      "text": "nx（暗账/结算）\n核心\n\n每条命都记在账上\n每个古神都在算账\n雅楠是一个巨大的结算空间\n——你欠谁的？谁欠你的？",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "ty_zn",
+      "type": "text",
+      "text": "zn（意义/信念）\n腐蚀\n\n雅楠曾经有zn\n治愈教会的信仰\n——但现在zn被x腐蚀了\n意义变成了欲望的借口",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "ty_xz",
+      "type": "text",
+      "text": "xz（边缘/漂流）\n基底\n\n雅楠本身就是边缘城市\n哥特/维多利亚/但一切都在崩塌\n猎人也是边缘人——\n他们在猎杀中漂流\n没有归处",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "🎮 血源诅咒\nx+nx+xz\n\n所有血源诅咒本身就是子画布\n——雅楠是x（吸血的欲望）\n+ nx（古神的暗账）\n+ xz（梦境的边缘）",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "📚 德古拉\nx+nx\n\n德古拉不是吸血\n是在结算\n四百年的暗账\n——他的血是欠条\n吸的血是利息",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎬 夜访吸血鬼\nx+nz\n\n路易的悲剧不是吸血\n是他永远在等\n——等欲望结束/等死亡/等救赎\n但nx不让他走\n账还没算完",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 血源诅咒的视觉设计原则\n\n① 血液的颜色不要像血——像欲望的颜色。暗红/黑色/偶尔的金色（古神之血）\n② 维多利亚哥特：华丽的表面（x并z）和内里的腐烂（x同时存在\n③ 建筑：向上（哥特尖顶）和向下（地下墓穴）同样重要——天堂和地狱同时在场\n④ 最重要的视觉元素：眼睛。在血源里眼睛是欲望和真相的入口",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 血源诅咒的常见误判\n\n🔴 血源=吸血鬼\n→ 血源不是吸血是欲望。吸血鬼只是欲望的一个人形形态\n\n🔴 血源=恐怖\n→ 血源不是恐怖是无解。恐怖有出路，血源没有\n\n🔴 狩猎=正义\n→ 猎人也是诅咒的一部分。你在狩猎怪物——但你也变成了怪物",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n猎人不是在狩猎\n是在结算\n——每一刀砍下去\n账本上就多了一行\n「你也一样」\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_x",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_nx",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zn",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xz",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}

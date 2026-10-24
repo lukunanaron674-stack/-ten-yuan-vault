@@ -1,0 +1,14 @@
+{
+	"edges":[],
+	"nodes":[
+		{"height":360,"x":0,"y":0,"id":"553af278b86d4517","type":"text","text":"# 674-173｜USER 视觉审核工作台\n\n**你在 Canvas 看候选图；你在本聊天给裁决；我按你的原话记录。** AI 不替你做最终审美 PASS。\n\n## 审核规则\n\n- 静态输入从 674-293；视频输入从 674-289。缺图、asset_id、SHA、主参考或必要版本时标 MISSING，不补猜测。\n- 静态 L1：角色是否认可、是否是这个角色、是否进主参考、是否收藏。\n- 静态 L2：同一角色感、比例/年龄/服装/特殊结构漂移、哪一格可用、是否返工。\n- 视频：按 video_id + video_version 裁决，可记 failure_time_range。\n- 裁决 PASS / FAIL / RERUN / AMBIGUOUS；FAVORITE 与 MAIN_REFERENCE 是独立标记；NX 作为备注。\n- 正式 PASS 仅为 USER_REVIEW_PACKET 且 reviewer=USER、decision=PASS。机器预审和执行成功不算 PASS。\n- 静态状态回写 293，学习反馈去 282；视频状态回写 289，学习反馈去 286。\n- 若视频反馈涉及角色静态形态/Canon，另拆反馈去 282。\n\n## 当前输入状况\n\n- 293 输入清单：285 张有效图，L1 225、L2 60；源路径与 SHA 已核对。\n- L1 待审 225；18 张 FEATURED 仅代表红心，不当作 PASS。\n- L2 待审 51；9 条既有裁决单列，其中 3 条 evidence UNKNOWN。\n- 293 快照另有 3 条空记录，未伪造为资产。\n- 当前包没有 main_reference 或冻结的 rule_version；各卡标 MISSING。\n- 当前 289 没有视频附件；收到完整 289 packet 后再加视频卡。\n\n## 页面是前端\n\n本地图片副本只供 Canvas 显示；原 E: 审核池不移动、不覆盖。USER 裁决的结构化日志与 293/289 manifest 才是状态正本。","width":1080,"color":"4"},
+		{"height":190,"x":1180,"y":0,"id":"2f281523671148ff","type":"text","text":"## L1 头像审核\n\n待审 225 张。\n\n[[黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/173_USER_REVIEW_L1_20261008.canvas|打开 L1 视觉审核板]]","width":520,"color":"5"},
+		{"height":190,"x":1180,"y":250,"id":"250ac9aba3ad4a59","type":"text","text":"## L2 四宫格审核\n\n待审 51 张；历史/旧记录 9 张。\n\n[[黎黎隆项目/03_角色/角色库/10_角色仓库/03_审核数据/173/173_USER_REVIEW_L2_20261008.canvas|打开 L2 视觉审核板]]","width":520,"color":"3"},
+		{"height":240,"x":0,"y":470,"id":"5852bee4e94e41c2","type":"text","text":"## 视频审核入口｜674-289\n\n289 描述中登记了 H3V-0001、0002、0004、0006 四条视频记录，但无附件；描述写的本地库路径当前不存在，未找到可播放原片。video_version 也未填。因此四条均标 MISSING，不生成可裁决视频卡、不把旧 S/A/B/C 评级映射成 173 PASS。\n\n收到可播放原片及完整 VIDEO_ASSET_RECORD 后，再加卡：video_id、video_version、shot_id、MP4 SHA、duration/fps/frame_count/resolution、source_refs、frames、version_chain。裁决记录 decision、user_nx、failure_time_range、reviewed_at。只有 USER 的视频 PASS 可用于正式剪辑候选、下一镜 previous PASS、286 可信 end_state。","width":1080,"color":"2"},
+		{"height":190,"x":0,"y":760,"id":"33108f7a304b4ed9","type":"text","text":"## 审核记录\n\n新裁决追加到 user_review_log_20261008.jsonl，保留 asset_id + SHA + source version + reviewer + reviewed_at + rule_version_at_review。\n\n历史 crosswalk：0 条；旧记录待核对：9 条。","width":1080,"color":"1"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

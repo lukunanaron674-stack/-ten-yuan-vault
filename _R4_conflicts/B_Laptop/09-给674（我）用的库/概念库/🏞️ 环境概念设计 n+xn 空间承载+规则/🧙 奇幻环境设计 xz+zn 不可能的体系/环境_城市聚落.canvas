@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"root","type":"text","text":"🏙️ 城市/聚落\nxn+nx 规则+暗账\n\n社会空间的秩序与暗流\n城市不是建筑集合\n是「规则变成空间后的人间」","x":400,"y":30,"width":320,"height":110,"color":"1"},
+		{"id":"ty_xn","type":"text","text":"xn（规则/秩序）\n核心\n\n城市的本质是xn\n街道网格/建筑规范/交通规则\n——城市让大量陌生人\n在有限空间共存","x":80,"y":190,"width":230,"height":150,"color":"4"},
+		{"id":"ty_nx","type":"text","text":"nx（暗账/结算）\n核心\n\n城市背面是nx\n——贫富差距/权力交易/地下经济\n每个光鲜的街区背后\n都有一本暗账","x":340,"y":190,"width":230,"height":150,"color":"2"},
+		{"id":"ty_zx","type":"text","text":"zx（目标/执行）\n辅链\n\n城市里的人都在执行\n——上班/送货/赶路/追梦\n城市是所有zx的交汇点","x":600,"y":190,"width":230,"height":150,"color":"4"},
+		{"id":"ty_xbz","type":"text","text":"x并z（伪装/表面）\n暗面\n\n城市是最大的x并z\n——广告牌上的笑脸\n和地铁里的疲惫\n是同一座城市的表面和里面","x":860,"y":190,"width":230,"height":150,"color":"5"},
+		{"id":"work_0","type":"text","text":"📚 北京折叠\nxn+nx\n\n北京被xn分成三层空间\n每一层有自己的规则\n——nx是「谁在决定你住哪层」","x":80,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_1","type":"text","text":"🎬 银翼杀手\nxn+xbz\n\n洛杉矶2019\n——城市的上层是xn（广告/飞车）\n下层是nx（阴暗/交易）\nx并z是那个永远下雨的天","x":400,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_2","type":"text","text":"🎮 赛博朋克2077\nxn+nx+zx\n\n夜之城是xn+nx的极致\n——规则写在芯片里\n暗账写在人脸上\nzx是每个人的「再干一票」","x":720,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"principle","type":"text","text":"🎨 城市/聚落的视觉设计原则\n\n① 城市的天际线是最重要的xn视觉——不同高度/形状/密度的建筑说不同的故事\n② 光污染不是污染——是城市的xn在晚上变成可见的（霓虹/路灯/车流）\n③ 街道的层级：主干道（xn规范）→小巷（nx交易）→死胡同（xz终点）\n④ 最重要的技巧：在城市里加一个「不属于这里」的东西。一个树/一座古建筑/一个空地——那是xn的裂缝","x":150,"y":590,"width":900,"height":170,"color":"1"},
+		{"id":"trap","type":"text","text":"⚠️ 城市/聚落的常见误判\n\n🔴 城市=建筑\n→ 城市是规则+暗账的空间化。建筑只是规则的物理形态\n\n🔴 城市=进步\n→ 城市不进步——只是换了一种xn。中世纪的城市和现代城市只是规则不同\n\n🔴 城市=人类\n→ 城市是xn本身。当城市被遗弃——xn还在（空中的交通灯还在闪）","x":150,"y":810,"width":700,"height":160,"color":"2"},
+		{"id":"seal","type":"text","text":"📌 封存句\n\n城市不是人建造的\n是规则\n找到了最适合自己的\n物理形态\n\n← [[奇幻子类型谱系.canvas]]","x":450,"y":1020,"width":350,"height":140,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","fromSide":"bottom","toNode":"ty_xn","toSide":"top"},
+		{"id":"e2","fromNode":"root","fromSide":"bottom","toNode":"ty_nx","toSide":"top"},
+		{"id":"e3","fromNode":"root","fromSide":"bottom","toNode":"ty_zx","toSide":"top"},
+		{"id":"e4","fromNode":"root","fromSide":"bottom","toNode":"ty_xbz","toSide":"top"},
+		{"id":"e5","fromNode":"root","fromSide":"bottom","toNode":"work_0","toSide":"top"},
+		{"id":"e6","fromNode":"root","fromSide":"bottom","toNode":"work_1","toSide":"top"},
+		{"id":"e7","fromNode":"root","fromSide":"bottom","toNode":"work_2","toSide":"top"},
+		{"id":"e8","fromNode":"root","fromSide":"bottom","toNode":"principle","toSide":"top"},
+		{"id":"e9","fromNode":"principle","fromSide":"bottom","toNode":"trap","toSide":"top"},
+		{"id":"e10","fromNode":"trap","fromSide":"bottom","toNode":"seal","toSide":"top"}
+	]
+}

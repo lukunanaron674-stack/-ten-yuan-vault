@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"⏱ 分镜探索×10｜第三部分 意义越狱·抽象（总方向）｜v1.0","x":-240,"y":-900,"width":500,"height":50,"color":"6"},
+		{"id":"hub","type":"text","text":"第三部分总方向｜分镜×10\n\n27s：卡3-6承载成立13s＋卡3-7公开击穿14s\n\n📄 [[方/08_探索/第三幕/第三幕_03_意义越狱·抽象_总方向探索.md|完整分镜×10与评分]]","x":-260,"y":-650,"width":520,"height":170,"color":"5"},
+		{"id":"t1","type":"text","text":"第1名｜9.6｜zx6 n5 xn4 xz3\n\n13s四手临界＋2s吞纸＋3s举刀＋3s拖拽＋3s断臂＋3s灌屏。","x":500,"y":-560,"width":380,"height":130,"color":"4"},
+		{"id":"t2","type":"text","text":"第2名｜9.2｜zx7 x5 n4 xn3\n\n四受压点显红→低机位举刀→一压一割→末句呼救。","x":760,"y":-210,"width":380,"height":130,"color":"3"},
+		{"id":"t3","type":"text","text":"第3名｜9.0｜zx5 n6 nz4 xn3\n\n母亲先独立护胸，再被围住；末帧保留护胸黑影。","x":710,"y":190,"width":380,"height":130,"color":"3"},
+		{"id":"t4","type":"text","text":"第4名｜8.8｜zx6 n5 nx4 xz4\n\n纸漂→四手接稳→红潮化地面→母亲站起→双鬼进入。","x":470,"y":540,"width":380,"height":130,"color":"3"},
+		{"id":"t5","type":"text","text":"第5名｜8.6｜zx6 xn5 n4 x3\n\n三幅固定构图分别对应三句画外音。","x":80,"y":760,"width":380,"height":130,"color":"3"},
+		{"id":"t6","type":"text","text":"第6名｜8.4｜n6 zx5 nz4 xz2\n\n母亲单独成立两秒后双鬼入画，承载更重。","x":-360,"y":760,"width":380,"height":130,"color":"3"},
+		{"id":"t7","type":"text","text":"第7名｜8.1｜zx7 xn4 x4 n3\n\n胖鬼军靴压场，瘦鬼刀尖执行，职责清楚。","x":-740,"y":540,"width":380,"height":130,"color":"3"},
+		{"id":"t8","type":"text","text":"第8名｜7.8｜zx5 n5 xn4 nz3\n\n固定远景落前两句，两个近景完成攻击与末句。","x":-940,"y":170,"width":380,"height":130,"color":"3"},
+		{"id":"t9","type":"text","text":"第9名｜7.4｜xz5 zx5 n4 xn3\n\n纸漂与拖拽后仰同向，红潮从下方漫满。","x":-880,"y":-240,"width":380,"height":130,"color":"2"},
+		{"id":"t10","type":"text","text":"第10名｜6.8｜x7 zx6 xn4 n2\n\n三次几何硬切钉三句台词，动作辨识风险最高。","x":-750,"y":-820,"width":380,"height":130,"color":"1"}
+	],
+	"edges":[
+		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
+		{"id":"e-hub-t1","fromNode":"hub","fromSide":"right","toNode":"t1","toSide":"left"},
+		{"id":"e-hub-t2","fromNode":"hub","fromSide":"right","toNode":"t2","toSide":"left"},
+		{"id":"e-hub-t3","fromNode":"hub","fromSide":"right","toNode":"t3","toSide":"left"},
+		{"id":"e-hub-t4","fromNode":"hub","fromSide":"bottom","toNode":"t4","toSide":"top"},
+		{"id":"e-hub-t5","fromNode":"hub","fromSide":"bottom","toNode":"t5","toSide":"top"},
+		{"id":"e-hub-t6","fromNode":"hub","fromSide":"bottom","toNode":"t6","toSide":"top"},
+		{"id":"e-hub-t7","fromNode":"hub","fromSide":"left","toNode":"t7","toSide":"right"},
+		{"id":"e-hub-t8","fromNode":"hub","fromSide":"left","toNode":"t8","toSide":"right"},
+		{"id":"e-hub-t9","fromNode":"hub","fromSide":"left","toNode":"t9","toSide":"right"},
+		{"id":"e-hub-t10","fromNode":"hub","fromSide":"top","toNode":"t10","toSide":"bottom"}
+	],
+	"metadata":{"version":"1.0-2026-08-14","frontmatter":{}}
+}

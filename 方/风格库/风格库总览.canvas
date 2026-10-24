@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"rootstyle001","type":"group","x":-60,"y":-60,"width":1760,"height":1280,"label":"风格库｜根级总览｜包含方志敏","color":"6"},
+		{"id":"rootstyle002","type":"text","x":0,"y":0,"width":560,"height":340,"text":"# 风格库｜总览\n\n库位置：Vault 根目录\n\n`风格库/` 与 `方/` 同级。\n`方` 是本库收录的项目入口，不是风格库的子目录。\n\n候选状态：待人工比较\n不自动锁定、不自动交付。"},
+		{"id":"rootstyle003","type":"file","x":640,"y":0,"width":500,"height":300,"file":"方/风格库/方志敏/方志敏_LoRA五轴风格库.canvas"},
+		{"id":"rootstyle004","type":"file","x":1200,"y":0,"width":500,"height":300,"file":"方/方志敏任务卡发散树.canvas"},
+		{"id":"rootstyle005","type":"file","x":0,"y":480,"width":500,"height":300,"file":"方/风格库/方志敏/自动轮换候选索引.md"},
+		{"id":"rootstyle006","type":"file","x":560,"y":480,"width":500,"height":300,"file":"方/风格库/方志敏/LoRA注册表_当前.md"},
+		{"id":"rootstyle007","type":"file","x":1120,"y":480,"width":500,"height":300,"file":"方/风格库/风格库总览.md"},
+		{"id":"rootstyle008","type":"file","x":560,"y":880,"width":500,"height":300,"file":"方/风格库/审核台.md"}
+	],
+	"edges":[
+		{"id":"rootedge001","fromNode":"rootstyle002","fromSide":"right","toNode":"rootstyle003","toSide":"left","toEnd":"arrow","label":"项目风格库"},
+		{"id":"rootedge002","fromNode":"rootstyle002","fromSide":"right","toNode":"rootstyle004","toSide":"left","toEnd":"arrow","label":"正式项目｜同级方"},
+		{"id":"rootedge003","fromNode":"rootstyle003","fromSide":"bottom","toNode":"rootstyle005","toSide":"top","toEnd":"arrow","label":"候选"},
+		{"id":"rootedge004","fromNode":"rootstyle003","fromSide":"bottom","toNode":"rootstyle006","toSide":"top","toEnd":"arrow","label":"LoRA"},
+		{"id":"rootedge005","fromNode":"rootstyle002","fromSide":"bottom","toNode":"rootstyle007","toSide":"top","toEnd":"arrow","label":"边界"},
+		{"id":"rootedge006","fromNode":"rootstyle003","fromSide":"bottom","toNode":"rootstyle008","toSide":"top","toEnd":"arrow","label":"审核台"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

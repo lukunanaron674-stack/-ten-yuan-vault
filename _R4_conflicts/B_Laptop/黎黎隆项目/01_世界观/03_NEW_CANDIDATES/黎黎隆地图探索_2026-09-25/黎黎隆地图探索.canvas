@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"e8250e9000000001","type":"file","file":"黎黎隆项目/01_世界观/03_NEW_CANDIDATES/黎黎隆地图探索_2026-09-25/黎黎隆区域地图_候选01.png","label":"区域地图候选01｜模块城—未知边境—断裂带","x":0,"y":0,"width":1280,"height":853},
+		{"id":"e8250e9000000004","type":"file","file":"黎黎隆项目/01_世界观/黎黎隆_世界观发散树_R5_阅读版_v1.0.canvas","label":"R5 阅读版｜候选地貌素材来源，不是正史地图","x":1380,"y":1200,"width":620,"height":420},
+		{"id":"e8250e9000000003","type":"file","file":"黎黎隆项目/01_世界观/黎黎隆_世界观总纲_v2.0.canvas","label":"世界观旧正本｜地图锚点来源","x":1440,"y":853,"width":620,"height":420},
+		{"id":"e8250e9000000002","type":"file","file":"黎黎隆项目/01_世界观/03_NEW_CANDIDATES/黎黎隆地图探索_2026-09-25/黎黎隆区域地图_图例与设定边界.md","label":"图例｜正史依据与候选地理边界","x":1380,"y":80,"width":620,"height":600}
+	],
+	"edges":[
+		{"id":"e8250e9000000011","fromNode":"e8250e9000000001","fromSide":"right","toNode":"e8250e9000000002","toSide":"left","label":"图例与候选边界"},
+		{"id":"e8250e9000000012","fromNode":"e8250e9000000003","fromSide":"left","toNode":"e8250e9000000001","toSide":"right","label":"既有设定锚点"},
+		{"id":"e8250e9000000013","fromNode":"e8250e9000000004","fromSide":"left","toNode":"e8250e9000000001","toSide":"right","label":"候选地貌灵感，未升格正史"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

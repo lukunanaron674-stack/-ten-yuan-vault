@@ -1,0 +1,262 @@
+// sidepanel-v2.js — F12 总监面板 v2.0
+// 监控多个浏览器端脚本，不执行任务
+
+const BRIDGE = 'http://127.0.0.1:17312';
+const CHANNEL_NAME = 'ten-yuan-f12-v1';
+let activeTabId = null;
+let bridgeOnline = false;
+let scripts = [];
+let tabs = {};
+
+// ======== Script Library ========
+const SCRIPT_LIBRARY = [
+  {
+    id: 'onto-creation',
+    name: '本体类创作框',
+    desc: '故事种子→三幕式→排名→扩写→图像提示词→分镜→归档 (R1-R9)',
+    file: '本体类创作框_F12总控_v0.1.js',
+    icon: '??'
+  },
+  {
+    id: 'char-analyzer',
+    name: '角色十元分析器',
+    desc: '分析电影主角的十元结构，生成v0.4角色归档卡',
+    file: '角色十元分析器.js',
+    icon: '??'
+  },
+  {
+    id: 'custom',
+    name: '自定义脚本',
+    desc: '从文件加载任意浏览器端脚本',
+    file: '',
+    icon: '??'
+  }
+];
+
+// ======== Bridge API ========
+async function bridgeCall(method, path, body) {
+  try {
+    const opts = { method, headers: { 'content-type': 'application/json' } };
+    if (body) opts.body = JSON.stringify(body);
+    const r = await fetch(BRIDGE + path, opts);
+    return await r.json();
+  } catch(e) {
+    bridgeOnline = false;
+    updateConn();
+    return { ok: false, error: e.message };
+  }
+}
+
+async function bridgePost(type, payload) {
+  return bridgeCall('POST', '/commands', { type, payload });
+}
+
+// ======== UI ========
+function updateConn() {
+  const el = document.getElementById('conn');
+  if (bridgeOnline) { el.className = 'conn online'; el.textContent = '桥在线'; }
+  else { el.className = 'conn offline'; el.textContent = '桥离线'; }
+}
+
+function log(msg) {
+  const el = document.getElementById('logs');
+  const ts = new Date().toLocaleTimeString();
+  el.innerHTML += `<div class="log-line"><span class="ts">${ts}</span> ${msg}</div>`;
+  el.scrollTop = el.scrollHeight;
+  // keep last 30
+  const lines = el.querySelectorAll('.log-line');
+  if (lines.length > 30) lines[0].remove();
+}
+
+function renderScriptLibrary() {
+  const el = document.getElementById('script-library');
+  el.innerHTML = SCRIPT_LIBRARY.map(s => `
+    <div class="script-card">
+      <div class="script-info">
+        <div class="script-name">${s.icon} ${s.name}</div>
+        <div class="script-desc">${s.desc}</div>
+      </div>
+      <button class="btn-inject" onclick="injectScript('${s.id}')" ${!activeTabId?'disabled':''}>注入</button>
+    </div>
+  `).join('');
+}
+
+function renderTabs() {
+  const el = document.getElementById('active-tabs');
+  const entries = Object.values(tabs);
+  if (!entries.length) {
+    el.innerHTML = '<div class="empty">等待页面注册...</div>';
+    return;
+  }
+  el.innerHTML = entries.map(t => {
+    const age = Math.round((Date.now() - (t.lastHeartbeat||0)) / 1000);
+    const isAlive = age < 30;
+    const statusClass = t.status === 'running' ? 'running' : t.status === 'stopped' ? 'stopped' : t.status === 'done' ? 'done' : 'idle';
+    const statusText = isAlive ? (t.status||'idle') : 'offline';
+    const round = t.currentRound ? `R${t.currentRound}/${t.total||'?'}` : '';
+    return `
+      <div class="tab-row">
+        <div class="tab-header">
+          <span class="tab-title">${t.scriptName||t.title||'Tab '+t.tabId}</span>
+          <span class="tab-status ${isAlive?statusClass:'stopped'}">${statusText}</span>
+        </div>
+        <div class="tab-progress">${round} ${age}s前 ${t.lastMessage||''}</div>
+        <div class="tab-actions">
+          <button class="btn-sm btn-go" onclick="tabAction('${t.tabId}','resume')">?</button>
+          <button class="btn-sm btn-stop" onclick="tabAction('${t.tabId}','stop')">■</button>
+          <button class="btn-sm btn-ghost" onclick="tabAction('${t.tabId}','archive')">??</button>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function updateBindInfo() {
+  const el = document.getElementById('bind-info');
+  if (activeTabId) {
+    const t = tabs[activeTabId];
+    el.textContent = `已绑定: Tab ${activeTabId} ${t ? '- '+t.title : ''}`;
+  } else {
+    el.textContent = '未绑定';
+  }
+}
+
+// ======== Actions ========
+async function doBind() {
+  log('BIND...');
+  const r = await bridgePost('BIND', { source: 'sidepanel' });
+  if (r.ok) {
+    // poll for result
+    setTimeout(async () => {
+      const cmd = await bridgeCall('GET', '/commands/' + r.command.id);
+      if (cmd.command?.result?.activeTabId) {
+        activeTabId = cmd.command.result.activeTabId;
+        log('绑定成功: Tab ' + activeTabId);
+        updateBindInfo();
+        renderScriptLibrary();
+      }
+    }, 2000);
+  } else {
+    log('BIND失败');
+  }
+}
+
+async function doInject() {
+  if (!activeTabId) { log('请先绑定标签'); return; }
+  log('INJECT → Tab ' + activeTabId);
+  await bridgePost('INJECT', { source: 'sidepanel' });
+  setTimeout(async () => {
+    bridgeOnline = true;
+    updateConn();
+    log('注入完成');
+  }, 2000);
+}
+
+async function injectScript(scriptId) {
+  if (!activeTabId) { log('请先绑定标签'); return; }
+  const script = SCRIPT_LIBRARY.find(s => s.id === scriptId);
+  if (!script) return;
+
+  if (scriptId === 'custom') {
+    // trigger file picker
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.js';
+    input.onchange = async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const code = await file.text();
+      await doInjectScript(activeTabId, code, file.name);
+    };
+    input.click();
+  } else {
+    // Load from vault
+    const vaultBase = '../../..';
+    log('加载脚本: ' + script.file);
+    // Script will be loaded via bridge CLI
+    log('请通过桥CLI注入: npm run f12 -- multi-script ' + activeTabId + ' ' + script.file);
+  }
+}
+
+async function doInjectScript(tabId, code, name) {
+  log('注入脚本: ' + name + ' → Tab ' + tabId);
+  const r = await bridgePost('MULTI_COMMAND', {
+    tabId,
+    command: 'RUN_SCRIPT',
+    script: code,
+    source: 'sidepanel'
+  });
+  if (r.ok) {
+    log('脚本已注入: ' + name);
+  } else {
+    log('注入失败: ' + (r.error || 'unknown'));
+  }
+}
+
+async function tabAction(tabId, action) {
+  if (action === 'stop') {
+    await bridgePost('MULTI_COMMAND', { tabId, command: 'STOP', source: 'sidepanel' });
+    log('STOP → Tab ' + tabId);
+  } else if (action === 'resume') {
+    await bridgePost('MULTI_COMMAND', { tabId, command: 'AUTO_RUN', source: 'sidepanel' });
+    log('CONTINUE → Tab ' + tabId);
+  } else if (action === 'archive') {
+    await bridgePost('MULTI_COMMAND', { tabId, command: 'ARCHIVE_LATEST', source: 'sidepanel' });
+    log('ARCHIVE → Tab ' + tabId);
+  }
+}
+
+async function doRefresh() {
+  log('刷新状态...');
+  try {
+    const r = await bridgeCall('GET', '/health');
+    bridgeOnline = r.ok;
+    updateConn();
+    if (bridgeOnline) log('桥在线');
+  } catch(e) {
+    bridgeOnline = false;
+    updateConn();
+  }
+  renderTabs();
+}
+
+// ======== BroadcastChannel listener ========
+function setupChannel() {
+  try {
+    const channel = new BroadcastChannel(CHANNEL_NAME);
+    channel.onmessage = (event) => {
+      const msg = event.data || {};
+      if (msg.source === 'ten-yuan-f12-agent') {
+        const tabId = msg.tabId || msg.agentTabId;
+        if (!tabId) return;
+
+        if (msg.type === 'REGISTER' || msg.type === 'HEARTBEAT') {
+          tabs[tabId] = {
+            tabId,
+            title: msg.title || '',
+            url: msg.url || '',
+            status: msg.status || 'idle',
+            currentRound: msg.currentRound || 0,
+            total: msg.total || 0,
+            lastMessage: msg.lastMessage || '',
+            lastHeartbeat: Date.now(),
+            scriptName: msg.scriptName || ''
+          };
+          renderTabs();
+        }
+      }
+    };
+    log('BroadcastChannel 已监听');
+  } catch(e) {
+    log('BroadcastChannel 不可用');
+  }
+}
+
+// ======== Init ========
+document.getElementById('btn-bind').onclick = doBind;
+document.getElementById('btn-inject').onclick = doInject;
+document.getElementById('btn-refresh').onclick = doRefresh;
+renderScriptLibrary();
+setupChannel();
+doRefresh();
+setInterval(doRefresh, 5000);
+log('F12 总监面板 v2.0 已就绪');

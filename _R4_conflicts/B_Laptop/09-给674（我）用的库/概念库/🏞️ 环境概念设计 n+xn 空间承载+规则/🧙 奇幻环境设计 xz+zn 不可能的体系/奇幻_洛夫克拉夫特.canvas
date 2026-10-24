@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"root","type":"text","text":"👁️ 洛夫克拉夫特\nxz+x+zn 边缘+欲望+意义\n\n不可知的恐惧\n知道太多会疯\n克苏鲁不是怪物\n是「人类无法理解的zn」","x":400,"y":30,"width":320,"height":110,"color":"1"},
+		{"id":"ty_xz","type":"text","text":"xz（边缘/漂流）\n核心\n\n克苏鲁世界观里\n人类本身就是边缘存在\n宇宙不在乎\n——我们的意义/规则/文明\n在宇宙尺度上毫无意义","x":80,"y":190,"width":230,"height":150,"color":"2"},
+		{"id":"ty_x","type":"text","text":"x（欲望/吞噬）\n核心\n\n旧日支配者的欲望\n不是贪婪——是存在本身\n它们的存在在吞噬人类的理智\n不是故意的\n只是存在","x":340,"y":190,"width":230,"height":150,"color":"5"},
+		{"id":"ty_zn","type":"text","text":"zn（意义/信念）\n反转\n\n克苏鲁的zn是倒过来的\n——人类以为有意义\n但真相是意义不存在\n这种「意义缺席」本身\n就是克苏鲁的zn","x":600,"y":190,"width":230,"height":150,"color":"3"},
+		{"id":"ty_nx","type":"text","text":"nx（暗账/结算）\n暗面\n\n克苏鲁的恐怖在于\n宇宙在算账——\n你知道了不该知道的\n你要付出代价\n你的理智就是利息","x":860,"y":190,"width":230,"height":150,"color":"2"},
+		{"id":"work_0","type":"text","text":"📚 克苏鲁的呼唤\nxz+x+zn\n\n原著本身\n——不可名状的恐惧\n一个雕像就足以瓦解\n你所有的认知框架（xn）","x":80,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_1","type":"text","text":"🎬 迷雾\nxz+x\n\n迷雾不是怪物\n是「意义之外的东西」\n——人类在迷雾中\n建立了临时的n（超市）\n然后看着xn一个接一个崩塌","x":400,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_2","type":"text","text":"🎮 血源·古神\nxz+zn\n\n血源的古神化了\n——宇宙之女/科斯/孤儿\n你无法理解它们\n但它们在看着你\n那就是xz+x+zn","x":720,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"principle","type":"text","text":"🎨 洛夫克拉夫特的视觉设计原则\n\n① 不可名状的规则：不要画出完整的怪物。最恐怖的是你脑补的那部分——画30%让观众想象70%\n② 建筑：非欧几何。角度不对/比例不对/透视不对——看起来是建筑但哪里不舒服\n③ 色彩：不是黑暗——是「颜色不对」。克苏鲁绿/不可名状的紫/太空的活黑\n④ 最重要的技巧：让观众觉得画面里还有别的东西——在视野边缘/在阴影深处/在看不见的角落","x":150,"y":590,"width":900,"height":170,"color":"1"},
+		{"id":"trap","type":"text","text":"⚠️ 洛夫克拉夫特的常见误判\n\n🔴 克苏鲁=大章鱼\n→ 章鱼只是克苏鲁的一个形象。真正的克苏鲁是「人类无法理解」这个概念本身\n\n🔴 克苏鲁=邪神崇拜\n→ 邪神崇拜是人类试图理解克苏鲁的方式——但克苏鲁不需要被崇拜\n\n🔴 恐怖=吓人\n→ 克苏鲁不吓人——是「认知溶解」。吓人之后你会恢复，认知溶解后你不再是原来的你","x":150,"y":810,"width":700,"height":160,"color":"2"},
+		{"id":"seal","type":"text","text":"📌 封存句\n\n最大的恐惧不是未知\n是知道了一点点\n——而那一点点\n就已经足够瓦解\n你所有的「已知」\n\n← [[奇幻子类型谱系.canvas]]","x":450,"y":1020,"width":350,"height":150,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","fromSide":"bottom","toNode":"ty_xz","toSide":"top"},
+		{"id":"e2","fromNode":"root","fromSide":"bottom","toNode":"ty_x","toSide":"top"},
+		{"id":"e3","fromNode":"root","fromSide":"bottom","toNode":"ty_zn","toSide":"top"},
+		{"id":"e4","fromNode":"root","fromSide":"bottom","toNode":"ty_nx","toSide":"top"},
+		{"id":"e5","fromNode":"root","fromSide":"bottom","toNode":"work_0","toSide":"top"},
+		{"id":"e6","fromNode":"root","fromSide":"bottom","toNode":"work_1","toSide":"top"},
+		{"id":"e7","fromNode":"root","fromSide":"bottom","toNode":"work_2","toSide":"top"},
+		{"id":"e8","fromNode":"root","fromSide":"bottom","toNode":"principle","toSide":"top"},
+		{"id":"e9","fromNode":"principle","fromSide":"bottom","toNode":"trap","toSide":"top"},
+		{"id":"e10","fromNode":"trap","fromSide":"bottom","toNode":"seal","toSide":"top"}
+	]
+}

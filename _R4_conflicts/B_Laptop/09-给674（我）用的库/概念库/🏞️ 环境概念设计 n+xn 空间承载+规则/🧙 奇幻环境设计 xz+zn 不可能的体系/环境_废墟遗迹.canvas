@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"root","type":"text","text":"🏘️ 废墟/遗迹\nxz+n 边缘+容器\n\n时间侵蚀后的空间叙事\n废墟不是「坏掉的建筑」\n是「故事被时间打开后的形态」","x":400,"y":30,"width":320,"height":110,"color":"1"},
+		{"id":"ty_xz","type":"text","text":"xz（边缘/漂流）\n核心\n\n废墟是被时间边缘化的空间\n曾经是中心\n现在是角落\n——但它在xz中获得了新的意义","x":80,"y":190,"width":230,"height":150,"color":"2"},
+		{"id":"ty_n","type":"text","text":"n（容器/承载）\n核心\n\n废墟仍然是容器\n它承载的不再是人\n是过去/记忆/遗忘\n——空的n比满的n更重","x":340,"y":190,"width":230,"height":150,"color":"4"},
+		{"id":"ty_nz","type":"text","text":"nz（守望/等待）\n辅链\n\n废墟在等什么？\n等重建/等彻底倒下/等被发现\n——废墟的nz是最安静的\n它不发出声音，只是在","x":600,"y":190,"width":230,"height":150,"color":"6"},
+		{"id":"ty_nx","type":"text","text":"nx（暗账/结算）\n暗面\n\n每座废墟都在结算\n——是谁建造了它？\n谁摧毁了它？\n谁遗忘了它？\n废墟本身是一本打开的账本","x":860,"y":190,"width":230,"height":150,"color":"2"},
+		{"id":"work_0","type":"text","text":"🎬 银翼杀手2049\nxz+nx\n\n拉斯维加斯的废墟\n不是被炸毁的——是被遗忘的\n废墟里残留的全息投影\n是nx的视觉化","x":80,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_1","type":"text","text":"📚 最后一人\nxz+n\n\n地球上最后一个人\n坐在废墟里\n——废墟的n承载了\n所有的曾经和所有的空","x":400,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"work_2","type":"text","text":"🎮 最后生还者\nxz+nz\n\n废墟中的美国\n植物重新占领城市\n——废墟在等全新的使用者\n不是人类，是自然","x":720,"y":390,"width":280,"height":150,"color":"6"},
+		{"id":"principle","type":"text","text":"🎨 废墟/遗迹的视觉设计原则\n\n① 时间在废墟上留下的痕迹比建筑本身更重要——裂缝/青苔/锈迹/褪色\n② 废墟最好的状态是「刚被遗弃」和「快要完全消失」之间的中间态\n③ 植物是废墟最好的搭档——藤蔓/树根/苔藓在说「自然在收回它的空间」\n④ 最重要的技巧：在废墟里放一个「还完好」的东西。一张没被撕碎的照片/一只完整的鞋——那是时间留下的最残忍的对比","x":150,"y":590,"width":900,"height":170,"color":"1"},
+		{"id":"trap","type":"text","text":"⚠️ 废墟/遗迹的常见误判\n\n🔴 废墟=破坏\n→ 废墟不是被破坏的——是被时间打开的。破坏是瞬间，废墟是过程\n\n🔴 废墟=废弃\n→ 废墟仍然在被使用——被风/植物/动物/记忆使用\n\n🔴 遗迹=古代\n→ 废墟可以是昨天的（切尔诺贝利）。时间长短不是废墟的定义","x":150,"y":810,"width":700,"height":160,"color":"2"},
+		{"id":"seal","type":"text","text":"📌 封存句\n\n废墟不是建筑死了\n是建筑终于\n开始说出真相\n\n← [[奇幻子类型谱系.canvas]]","x":450,"y":1020,"width":350,"height":140,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","fromSide":"bottom","toNode":"ty_xz","toSide":"top"},
+		{"id":"e2","fromNode":"root","fromSide":"bottom","toNode":"ty_n","toSide":"top"},
+		{"id":"e3","fromNode":"root","fromSide":"bottom","toNode":"ty_nz","toSide":"top"},
+		{"id":"e4","fromNode":"root","fromSide":"bottom","toNode":"ty_nx","toSide":"top"},
+		{"id":"e5","fromNode":"root","fromSide":"bottom","toNode":"work_0","toSide":"top"},
+		{"id":"e6","fromNode":"root","fromSide":"bottom","toNode":"work_1","toSide":"top"},
+		{"id":"e7","fromNode":"root","fromSide":"bottom","toNode":"work_2","toSide":"top"},
+		{"id":"e8","fromNode":"root","fromSide":"bottom","toNode":"principle","toSide":"top"},
+		{"id":"e9","fromNode":"principle","fromSide":"bottom","toNode":"trap","toSide":"top"},
+		{"id":"e10","fromNode":"trap","fromSide":"bottom","toNode":"seal","toSide":"top"}
+	]
+}

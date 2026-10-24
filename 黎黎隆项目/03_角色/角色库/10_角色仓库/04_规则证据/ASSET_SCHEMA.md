@@ -1,0 +1,2 @@
+# 资产字段规则
+ issue 字段与 provenance_state、source_refs、evidence_ids、user_evidence_state、history_state、supersedes、superseded_by、first_seen、last_seen、parent_asset_id。asset_id=ASSET-SHA256-完整 SHA256。character_id 未正式分配时 UNKNOWN；candidate_id 只复制现有编号。tier 只按明确证据写 GOLD（红心/核心）或 SILVER（NPC），否则 UNKNOWN；不从图片/五色桶推断 region/organization。保留 raw review_state，user_decision 分栏。FEATURED 按 674-173 明确红心清单记 CONFIRMED；NORMAL_USABLE 默认值保持 UNKNOWN。派生图需 parent_asset_id；旧版/拒绝资产保留。Canvas 本体只读。

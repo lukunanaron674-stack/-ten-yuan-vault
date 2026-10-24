@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1200" viewBox="0 0 1920 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#20272b"/>
+      <stop offset="1" stop-color="#101417"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#364249"/>
+      <stop offset="1" stop-color="#20282d"/>
+    </linearGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b513c"/>
+      <stop offset="1" stop-color="#2e251f"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#e58b68"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#9ed4e2"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#edc875"/>
+    </marker>
+    <style>
+      .title { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; font-size: 30px; font-weight: 700; fill: #f1e4cf; letter-spacing: 2px; }
+      .sub { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; font-size: 18px; fill: #c6d0d1; }
+      .label { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; font-size: 22px; font-weight: 700; fill: #f6e9d2; }
+      .small { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; font-size: 17px; fill: #d4d9d7; }
+      .tiny { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; font-size: 15px; fill: #bbc4c5; }
+      .line { stroke: #9aa9ad; stroke-width: 3; fill: none; }
+      .dash { stroke: #839195; stroke-width: 3; stroke-dasharray: 12 10; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1200" fill="url(#bg)"/>
+  <text x="48" y="54" class="title">卡6-1｜素材图机位・人物调度・光源关系</text>
+  <text x="48" y="84" class="sub">依据：Pasted image 20260830060945.png｜不改变原素材，只补空间关系标注</text>
+
+  <!-- Original frame -->
+  <rect x="40" y="115" width="1000" height="562" rx="4" fill="#0a0d0f" stroke="#dfd0b7" stroke-width="3" filter="url(#shadow)"/>
+  <image x="40" y="115" width="1000" height="562" preserveAspectRatio="xMidYMid slice" xlink:href="Pasted%20image%2020260830060945.png"/>
+  <rect x="40" y="115" width="1000" height="562" fill="none" stroke="#dfd0b7" stroke-width="3"/>
+  <text x="64" y="151" class="label" style="paint-order:stroke;stroke:#111;stroke-width:6">原素材构图</text>
+
+  <!-- Overlay on original: camera and light -->
+  <path d="M540 650 L540 570" stroke="#e58b68" stroke-width="7" marker-end="url(#arrowRed)"/>
+  <rect x="466" y="630" width="148" height="32" rx="15" fill="#7c3f32" stroke="#efaa87" stroke-width="2"/>
+  <text x="486" y="653" class="small">C1 低机位</text>
+  <path d="M548 650 C548 575 548 500 548 410" stroke="#edc875" stroke-width="8" stroke-dasharray="16 10" fill="none" marker-end="url(#arrowGold)"/>
+  <path d="M480 650 C492 575 505 500 520 430" stroke="#edc875" stroke-width="4" stroke-dasharray="14 11" fill="none" opacity=".7" marker-end="url(#arrowGold)"/>
+  <path d="M616 650 C604 575 590 500 574 430" stroke="#edc875" stroke-width="4" stroke-dasharray="14 11" fill="none" opacity=".7" marker-end="url(#arrowGold)"/>
+  <text x="610" y="190" class="small" fill="#edc875">蒋介石身后／镜头后方</text>
+  <text x="610" y="214" class="small" fill="#edc875">画外冷灰光 → 桌面与方志敏</text>
+  <path d="M275 470 C360 445 445 430 520 426" stroke="#9ed4e2" stroke-width="5" stroke-dasharray="12 9" fill="none" marker-end="url(#arrowBlue)"/>
+  <text x="70" y="465" class="small" fill="#9ed4e2">桌面冷暖反光</text>
+
+  <!-- Right top plan -->
+  <rect x="1080" y="115" width="800" height="630" rx="8" fill="url(#panel)" stroke="#dfd0b7" stroke-width="3"/>
+  <text x="1110" y="157" class="label">俯视调度图｜镜头在桌前侧</text>
+  <text x="1110" y="187" class="sub">轴线：C1 → 蒋介石 → 方志敏；顾祝同在右后方压场</text>
+
+  <!-- room outline -->
+  <rect x="1140" y="225" width="680" height="430" fill="#1c2428" stroke="#89979b" stroke-width="3"/>
+  <text x="1160" y="252" class="tiny">对面无窗木护墙／地图与柜子方向</text>
+  <path d="M1160 274 H1800" class="dash"/>
+
+  <!-- table -->
+  <ellipse cx="1480" cy="452" rx="270" ry="142" fill="url(#table)" stroke="#c8a784" stroke-width="4"/>
+  <ellipse cx="1480" cy="452" rx="255" ry="129" fill="none" stroke="#8c6a4f" stroke-width="2"/>
+  <text x="1414" y="455" class="small">深色椭圆木桌</text>
+
+  <!-- Chairs / character positions -->
+  <rect x="1422" y="570" width="116" height="62" rx="12" fill="#2d3336" stroke="#dfb48f" stroke-width="3"/>
+  <text x="1368" y="684" class="label">蒋介石</text>
+  <text x="1364" y="708" class="tiny">前景主位｜背对镜头</text>
+
+  <rect x="1300" y="286" width="108" height="58" rx="12" fill="#263036" stroke="#9fb9bd" stroke-width="3"/>
+  <text x="1252" y="270" class="label">方志敏</text>
+  <text x="1210" y="298" class="tiny">桌对面偏左｜正面</text>
+
+  <circle cx="1704" cy="322" r="25" fill="#4c5e55" stroke="#e0be88" stroke-width="3"/>
+  <path d="M1704 348 V416" stroke="#e0be88" stroke-width="6"/>
+  <path d="M1678 374 H1730" stroke="#e0be88" stroke-width="6"/>
+  <text x="1660" y="285" class="label">顾祝同</text>
+  <text x="1634" y="448" class="tiny">右后方站立｜双手背后</text>
+
+  <!-- Camera -->
+  <path d="M1475 708 L1475 632" stroke="#e58b68" stroke-width="7" marker-end="url(#arrowRed)"/>
+  <path d="M1438 708 L1512 708 L1498 735 L1452 735 Z" fill="#9b4c3d" stroke="#efaa87" stroke-width="3"/>
+  <text x="1418" y="766" class="label">C1 摄像机</text>
+  <text x="1390" y="792" class="tiny">桌前正中略低机位｜中远景</text>
+
+  <!-- Eye-lines and blocking -->
+  <path d="M1452 580 C1408 520 1375 410 1352 344" stroke="#e58b68" stroke-width="5" stroke-dasharray="13 9" fill="none" marker-end="url(#arrowRed)"/>
+  <text x="1500" y="560" class="small" fill="#e58b68">蒋→方</text>
+  <path d="M1332 342 C1375 410 1420 512 1450 575" stroke="#9ed4e2" stroke-width="5" stroke-dasharray="13 9" fill="none" marker-end="url(#arrowBlue)"/>
+  <text x="1250" y="520" class="small" fill="#9ed4e2">方→蒋</text>
+  <path d="M1690 360 C1640 380 1585 397 1548 410" stroke="#b4a1d4" stroke-width="4" stroke-dasharray="10 9" fill="none" marker-end="url(#arrowBlue)"/>
+  <text x="1658" y="382" class="tiny" fill="#c8b6df">顾只做一次轻微转眼</text>
+
+  <!-- Light diagram -->
+  <path d="M1480 710 C1480 645 1480 575 1480 510" stroke="#edc875" stroke-width="9" stroke-dasharray="15 10" fill="none" marker-end="url(#arrowGold)"/>
+  <path d="M1405 700 C1425 635 1440 575 1450 520" stroke="#edc875" stroke-width="5" stroke-dasharray="15 10" fill="none" opacity=".75" marker-end="url(#arrowGold)"/>
+  <path d="M1555 700 C1535 635 1520 575 1510 520" stroke="#edc875" stroke-width="5" stroke-dasharray="15 10" fill="none" opacity=".75" marker-end="url(#arrowGold)"/>
+  <text x="1590" y="214" class="small" fill="#edc875">主光：蒋介石身后</text>
+  <text x="1590" y="238" class="tiny" fill="#edc875">镜头后方画外冷灰光</text>
+  <path d="M1230 610 C1300 575 1360 548 1410 530" stroke="#71858c" stroke-width="5" stroke-dasharray="10 10" fill="none" marker-end="url(#arrowBlue)"/>
+  <text x="1158" y="620" class="tiny" fill="#9ed4e2">左侧保持压暗</text>
+
+  <!-- Bottom relationship notes -->
+  <rect x="40" y="715" width="1840" height="430" rx="8" fill="#182024" stroke="#dfd0b7" stroke-width="3"/>
+  <text x="72" y="760" class="label">执行关系（按这张素材图复现）</text>
+
+  <g transform="translate(76,800)">
+    <circle cx="16" cy="16" r="12" fill="#e58b68"/>
+    <text x="44" y="23" class="small">机位</text>
+    <text x="44" y="53" class="sub">C1 放在桌前正中略低处；桌面占前景下半部，蒋介石背影作为第一压迫层。</text>
+  </g>
+  <g transform="translate(76,900)">
+    <circle cx="16" cy="16" r="12" fill="#9ed4e2"/>
+    <text x="44" y="23" class="small">人物调度</text>
+    <text x="44" y="53" class="sub">方志敏固定在桌对面偏左，正面看蒋；顾祝同固定在画面右后方，站定、双手背后，不抢台词。</text>
+  </g>
+  <g transform="translate(980,800)">
+    <circle cx="16" cy="16" r="12" fill="#edc875"/>
+    <text x="44" y="23" class="small">光源</text>
+    <text x="44" y="53" class="sub">主光位于蒋介石身后、镜头后方，从前景向桌面和方志敏方向打入；蒋背影保持暗，桌面与对面人物被带亮。</text>
+  </g>
+  <g transform="translate(980,900)">
+    <circle cx="16" cy="16" r="12" fill="#b4a1d4"/>
+    <text x="44" y="23" class="small">不可改变</text>
+    <text x="44" y="53" class="sub">不换轴、不让顾祝同站到蒋的位置、不让蒋露脸、不让方志敏换到画面右侧。</text>
+  </g>
+  <text x="72" y="1095" class="tiny">备注：这是一张机位／调度／光源关系图，不是新的首帧；原素材仍以截图文件为准。</text>
+</svg>

@@ -1,0 +1,311 @@
+{
+  "batch_id": "FZM-674-314-B2-title-candidates",
+  "candidate_sessions_total": 19,
+  "counts": {
+    "evidence_rows": 632,
+    "candidate_sessions_scanned": 19,
+    "raw_lines": 30867,
+    "response_messages": 2497,
+    "user_messages": 623,
+    "assistant_messages": 1760,
+    "tool_messages": 0,
+    "session_errors": 0
+  },
+  "sessions": [
+    {
+      "session_id": "019ff1d7-cf77-7842-804c-37711d73571d",
+      "title": [
+        "Clarify task request",
+        "H3视频",
+        "4-5C｜程全昭窗口交稿生成图"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\12\\rollout-2026-08-12T01-21-20-019ff1d7-cf77-7842-804c-37711d73571d.jsonl.zst",
+      "line_count": 11124,
+      "role_counts": {
+        "developer": 41,
+        "user": 246,
+        "assistant": 855
+      },
+      "evidence_rows": 205,
+      "exit_code": 0
+    },
+    {
+      "session_id": "019ff211-ced6-7a53-8190-1e7dd20d63c0",
+      "title": [
+        "整理并收缩方志敏资料"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\12\\rollout-2026-08-12T02-24-41-019ff211-ced6-7a53-8190-1e7dd20d63c0.jsonl.zst",
+      "line_count": 736,
+      "role_counts": {
+        "developer": 3,
+        "user": 7,
+        "assistant": 83
+      },
+      "evidence_rows": 13,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a00617-8266-7d91-aa1f-ea952c587841",
+      "title": [
+        "生成方志敏项目两张图"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T23-43-19-01a00617-8266-7d91-aa1f-ea952c587841.jsonl.zst",
+      "line_count": 47,
+      "role_counts": {
+        "developer": 1,
+        "user": 2,
+        "assistant": 6
+      },
+      "evidence_rows": 1,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a0063b-c4ff-7900-8f67-da1fe3367ef8",
+      "title": [
+        "重生成方志敏9张首帧"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T00-22-55-01a0063b-c4ff-7900-8f67-da1fe3367ef8.jsonl.zst",
+      "line_count": 120,
+      "role_counts": {
+        "developer": 1,
+        "user": 5,
+        "assistant": 8
+      },
+      "evidence_rows": 2,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a010b6-eda1-7332-9a43-15ed2b1c74fd",
+      "title": [
+        "你是 1 号「瘦鬼动态清单员 A」（qwen3-8b）。任务：列出方志敏第五幕 5-2 系列（黑红高潮）中瘦鬼角色所需…"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T01-13-39-01a010b6-eda1-7332-9a43-15ed2b1c74fd.jsonl.zst",
+      "line_count": 15,
+      "role_counts": {
+        "developer": 1,
+        "user": 4
+      },
+      "evidence_rows": 2,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a03d10-2553-7852-ad8e-fecf5b3b69a8",
+      "title": [
+        "定位方志敏资产仓库",
+        "小一"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T15-54-23-01a03d10-2553-7852-ad8e-fecf5b3b69a8.jsonl.zst",
+      "line_count": 7115,
+      "role_counts": {
+        "developer": 9,
+        "user": 141,
+        "assistant": 312
+      },
+      "evidence_rows": 151,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a04277-01fd-7a31-8829-fcbc43b15346",
+      "title": [
+        "方志敏002｜本地3070｜第五幕5-1与5-2A"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\27\\rollout-2026-08-27T17-04-50-01a04277-01fd-7a31-8829-fcbc43b15346.jsonl.zst",
+      "line_count": 3102,
+      "role_counts": {
+        "developer": 16,
+        "user": 66,
+        "assistant": 157
+      },
+      "evidence_rows": 83,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a043b3-506b-78a3-bdc0-e4817e48b17a",
+      "title": [
+        "方志敏5090空闲任务调度"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\27\\rollout-2026-08-27T22-50-20-01a043b3-506b-78a3-bdc0-e4817e48b17a.jsonl.zst",
+      "line_count": 433,
+      "role_counts": {
+        "developer": 5,
+        "user": 11,
+        "assistant": 21
+      },
+      "evidence_rows": 4,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a0485b-8d9e-71c3-9777-1558a3690761",
+      "title": [
+        "整理云端5090运行Skill",
+        "6-2",
+        "6-2跑5090",
+        "2-1c"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\28\\rollout-2026-08-28T20-32-34-01a0485b-8d9e-71c3-9777-1558a3690761.jsonl.zst",
+      "line_count": 3199,
+      "role_counts": {
+        "developer": 8,
+        "user": 51,
+        "assistant": 101
+      },
+      "evidence_rows": 41,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a049a9-6697-7ec0-85a1-4e6ed5521eec",
+      "title": [
+        "生成方志敏手握报纸特写"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T02-37-14-01a049a9-6697-7ec0-85a1-4e6ed5521eec.jsonl.zst",
+      "line_count": 447,
+      "role_counts": {
+        "developer": 1,
+        "user": 13,
+        "assistant": 25
+      },
+      "evidence_rows": 10,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a04f47-f2b8-7142-9f81-b8a34475a21f",
+      "title": [
+        "方志敏第四幕4-1 Canvas入口修复"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T04-48-30-01a04f47-f2b8-7142-9f81-b8a34475a21f.jsonl.zst",
+      "line_count": 277,
+      "role_counts": {
+        "developer": 3,
+        "user": 9,
+        "assistant": 16
+      },
+      "evidence_rows": 15,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a05f3c-fb6c-7c32-817f-3e89ac77b5c9",
+      "title": [
+        "修复程全照4-5C镜头逻辑"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-10-27-01a05f3c-fb6c-7c32-817f-3e89ac77b5c9.jsonl.zst",
+      "line_count": 833,
+      "role_counts": {
+        "developer": 5,
+        "user": 23,
+        "assistant": 38
+      },
+      "evidence_rows": 30,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a05f53-b243-7ea2-a198-433f902ac817",
+      "title": [
+        "第三幕3-2A九宫格探索A"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-35-15-01a05f53-b243-7ea2-a198-433f902ac817.jsonl.zst",
+      "line_count": 66,
+      "role_counts": {
+        "developer": 1,
+        "user": 1,
+        "assistant": 6
+      },
+      "evidence_rows": 4,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a05f53-b71a-7320-8a8f-41fe4d8cb7bc",
+      "title": [
+        "第三幕3-2A九宫格探索B"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-35-17-01a05f53-b71a-7320-8a8f-41fe4d8cb7bc.jsonl.zst",
+      "line_count": 69,
+      "role_counts": {
+        "developer": 1,
+        "user": 1,
+        "assistant": 5
+      },
+      "evidence_rows": 4,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a05f53-bc0c-7623-807b-5223048ae1f1",
+      "title": [
+        "第三幕3-2A九宫格探索C"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-35-18-01a05f53-bc0c-7623-807b-5223048ae1f1.jsonl.zst",
+      "line_count": 92,
+      "role_counts": {
+        "developer": 1,
+        "user": 1,
+        "assistant": 8
+      },
+      "evidence_rows": 5,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a06699-8936-7fd0-8e07-b171159b914d",
+      "title": [
+        "处理6-2视频"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\03\\rollout-2026-09-03T17-28-53-01a06699-8936-7fd0-8e07-b171159b914d.jsonl.zst",
+      "line_count": 327,
+      "role_counts": {
+        "developer": 5,
+        "user": 5,
+        "assistant": 10
+      },
+      "evidence_rows": 9,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a08af2-35ac-7883-a2bf-6ebd574dd402",
+      "title": [
+        "补全方志敏首帧解释"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\10\\rollout-2026-09-10T18-52-04-01a08af2-35ac-7883-a2bf-6ebd574dd402.jsonl.zst",
+      "line_count": 670,
+      "role_counts": {
+        "developer": 7,
+        "user": 14,
+        "assistant": 25
+      },
+      "evidence_rows": 14,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a0a00f-7bd7-7f42-a170-0a6796a29287",
+      "title": [
+        "设计方志敏动画封面"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T21-16-04-01a0a00f-7bd7-7f42-a170-0a6796a29287.jsonl.zst",
+      "line_count": 542,
+      "role_counts": {
+        "developer": 1,
+        "user": 11,
+        "assistant": 27
+      },
+      "evidence_rows": 19,
+      "exit_code": 0
+    },
+    {
+      "session_id": "01a0a117-59fa-79b0-83e5-745be8ba57da",
+      "title": [
+        "整理方志敏项目并评估石元作用"
+      ],
+      "source_path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\15\\rollout-2026-09-15T02-04-17-01a0a117-59fa-79b0-83e5-745be8ba57da.jsonl.zst",
+      "line_count": 1653,
+      "role_counts": {
+        "developer": 4,
+        "user": 12,
+        "assistant": 57
+      },
+      "evidence_rows": 20,
+      "exit_code": 0
+    }
+  ],
+  "limitations": [
+    "Only 19 title-index candidates scanned; full 718-session alias scan pending.",
+    "Excerpts are short and credential-pattern redacted; final evidence typing/decision validation pending.",
+    "Active JSONL and additional candidate sessions were not read."
+  ]
+}

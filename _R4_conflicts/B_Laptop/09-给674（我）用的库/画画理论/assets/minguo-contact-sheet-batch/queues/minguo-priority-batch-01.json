@@ -1,0 +1,502 @@
+{
+  "id": "minguo-priority-batch-01",
+  "title": "民国素材优先批次 1（服装与场景）",
+  "target": "https://chatgpt.com/c/6a54b960-7854-83ea-ac0d-a4e9fded575f",
+  "canvasPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\民国_is-a名词素材库.canvas",
+  "status": "done",
+  "currentIndex": 10,
+  "total": 10,
+  "createdAt": "2026-07-13T19:00:38.564Z",
+  "updatedAt": "2026-07-14T12:41:36.211Z",
+  "tasks": [
+    {
+      "id": "minguo_sheet_04",
+      "title": "民国素材板_04_服装_打补丁裤_粗布围裙_阴丹士林旗袍_老头布鞋",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\民国素材板_04_服装_打补丁裤_粗布围裙_阴丹士林旗袍_老头布鞋.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_04_服装_打补丁裤_粗布围裙_阴丹士林旗袍_老头布鞋.png",
+      "imageNodeId": "img_minguo_sheet_04",
+      "sourceIds": [
+        "icm1_2",
+        "icm1_3",
+        "icm1_4",
+        "icm1_5"
+      ],
+      "status": "done",
+      "attempts": 0,
+      "error": null,
+      "items": [
+        {
+          "id": "icm1_2",
+          "title": "打补丁裤",
+          "isa": "贫民日常裤装",
+          "scene": "黄包车夫在街角等客",
+          "nodeText": "打补丁裤\nis-a 贫民日常裤装\n🌆 黄包车夫在街角等客"
+        },
+        {
+          "id": "icm1_3",
+          "title": "粗布围裙",
+          "isa": "小吃摊主围裙",
+          "scene": "馄饨摊主在灶前翻炒",
+          "nodeText": "粗布围裙\nis-a 小吃摊主围裙\n🌆 馄饨摊主在灶前翻炒"
+        },
+        {
+          "id": "icm1_4",
+          "title": "阴丹士林旗袍",
+          "isa": "平民女性日常裙",
+          "scene": "女学生结伴走在街上",
+          "nodeText": "阴丹士林旗袍\nis-a 平民女性日常裙\n🌆 女学生结伴走在街上"
+        },
+        {
+          "id": "icm1_5",
+          "title": "老头布鞋",
+          "isa": "老年男性便鞋",
+          "scene": "老人在胡同口晒太阳",
+          "nodeText": "老头布鞋\nis-a 老年男性便鞋\n🌆 老人在胡同口晒太阳"
+        }
+      ],
+      "completedAt": "2026-07-14T17:19:35.6136202+08:00"
+    },
+    {
+      "id": "minguo_sheet_05",
+      "title": "民国素材板_05_服装_蓝印花布头巾_工装背带裤_水手条纹衫_白衬衫黑裙",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\民国素材板_05_服装_蓝印花布头巾_工装背带裤_水手条纹衫_白衬衫黑裙.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_05_服装_蓝印花布头巾_工装背带裤_水手条纹衫_白衬衫黑裙.png",
+      "imageNodeId": "img_minguo_sheet_05",
+      "sourceIds": [
+        "icm1_6",
+        "icm1_7",
+        "icm1_8",
+        "icm1_9"
+      ],
+      "status": "done",
+      "attempts": 2,
+      "error": null,
+      "items": [
+        {
+          "id": "icm1_6",
+          "title": "蓝印花布头巾",
+          "isa": "劳动妇女头饰",
+          "scene": "农妇在集市叫卖青菜",
+          "nodeText": "蓝印花布头巾\nis-a 劳动妇女头饰\n🌆 农妇在集市叫卖青菜"
+        },
+        {
+          "id": "icm1_7",
+          "title": "工装背带裤",
+          "isa": "工厂工人制服",
+          "scene": "工人从纱厂放工",
+          "nodeText": "工装背带裤\nis-a 工厂工人制服\n🌆 工人从纱厂放工"
+        },
+        {
+          "id": "icm1_8",
+          "title": "水手条纹衫",
+          "isa": "船工便服",
+          "scene": "船工在岸边修船",
+          "nodeText": "水手条纹衫\nis-a 船工便服\n🌆 船工在岸边修船"
+        },
+        {
+          "id": "icm1_9",
+          "title": "白衬衫黑裙",
+          "isa": "女学生校服",
+          "scene": "女学生骑车穿过校园",
+          "nodeText": "白衬衫黑裙\nis-a 女学生校服\n🌆 女学生骑车穿过校园"
+        }
+      ],
+      "sentAt": "2026-07-14T09:51:05.897Z",
+      "completedAt": "2026-07-14T09:56:16.371Z"
+    },
+    {
+      "id": "minguo_sheet_06",
+      "title": "民国素材板_06_服装_灰布长衫围巾_白色围巾长衫_民国学生装_麻布文人袍",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\民国素材板_06_服装_灰布长衫围巾_白色围巾长衫_民国学生装_麻布文人袍.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_06_服装_灰布长衫围巾_白色围巾长衫_民国学生装_麻布文人袍.png",
+      "imageNodeId": "img_minguo_sheet_06",
+      "sourceIds": [
+        "icm2_0",
+        "icm2_1",
+        "icm2_2",
+        "icm2_3"
+      ],
+      "status": "done",
+      "attempts": 1,
+      "error": null,
+      "items": [
+        {
+          "id": "icm2_0",
+          "title": "灰布长衫围巾",
+          "isa": "清贫文人标志装",
+          "scene": "教员夹着讲义穿过校园",
+          "nodeText": "灰布长衫围巾\nis-a 清贫文人标志装\n🌆 教员夹着讲义穿过校园"
+        },
+        {
+          "id": "icm2_1",
+          "title": "白色围巾长衫",
+          "isa": "新派文人装扮",
+          "scene": "作家在公园长椅沉思",
+          "nodeText": "白色围巾长衫\nis-a 新派文人装扮\n🌆 作家在公园长椅沉思"
+        },
+        {
+          "id": "icm2_2",
+          "title": "民国学生装",
+          "isa": "进步青年制服",
+          "scene": "学生举旗参加游行",
+          "nodeText": "民国学生装\nis-a 进步青年制服\n🌆 学生举旗参加游行"
+        },
+        {
+          "id": "icm2_3",
+          "title": "麻布文人袍",
+          "isa": "乡村教书先生服",
+          "scene": "私塾先生在堂前授课",
+          "nodeText": "麻布文人袍\nis-a 乡村教书先生服\n🌆 私塾先生在堂前授课"
+        }
+      ],
+      "sentAt": "2026-07-14T09:56:31.388Z",
+      "completedAt": "2026-07-14T10:01:51.920Z"
+    },
+    {
+      "id": "minguo_sheet_07",
+      "title": "民国素材板_07_服装_墨色棉袍_八角帽列宁装_旧西装外套_中山装配围巾",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\民国素材板_07_服装_墨色棉袍_八角帽列宁装_旧西装外套_中山装配围巾.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_07_服装_墨色棉袍_八角帽列宁装_旧西装外套_中山装配围巾.png",
+      "imageNodeId": "img_minguo_sheet_07",
+      "sourceIds": [
+        "icm2_4",
+        "icm2_5",
+        "icm2_6",
+        "icm2_7"
+      ],
+      "status": "done",
+      "attempts": 1,
+      "error": null,
+      "items": [
+        {
+          "id": "icm2_4",
+          "title": "墨色棉袍",
+          "isa": "冬季文人常服",
+          "scene": "老先生在书房挥毫泼墨",
+          "nodeText": "墨色棉袍\nis-a 冬季文人常服\n🌆 老先生在书房挥毫泼墨"
+        },
+        {
+          "id": "icm2_5",
+          "title": "八角帽列宁装",
+          "isa": "左翼青年装束",
+          "scene": "进步青年在秘密集会",
+          "nodeText": "八角帽列宁装\nis-a 左翼青年装束\n🌆 进步青年在秘密集会"
+        },
+        {
+          "id": "icm2_6",
+          "title": "旧西装外套",
+          "isa": "穷文人洋装",
+          "scene": "落魄编辑伏案写稿",
+          "nodeText": "旧西装外套\nis-a 穷文人洋装\n🌆 落魄编辑伏案写稿"
+        },
+        {
+          "id": "icm2_7",
+          "title": "中山装配围巾",
+          "isa": "爱国知识分子",
+          "scene": "教授在课堂激昂讲演",
+          "nodeText": "中山装配围巾\nis-a 爱国知识分子\n🌆 教授在课堂激昂讲演"
+        }
+      ],
+      "sentAt": "2026-07-14T10:02:06.931Z",
+      "completedAt": "2026-07-14T10:04:47.175Z"
+    },
+    {
+      "id": "minguo_sheet_08",
+      "title": "民国素材板_08_服装_黑风衣礼帽_暗花丝绒旗袍_立领中山谍装_皮手套大衣",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\民国素材板_08_服装_黑风衣礼帽_暗花丝绒旗袍_立领中山谍装_皮手套大衣.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_08_服装_黑风衣礼帽_暗花丝绒旗袍_立领中山谍装_皮手套大衣.png",
+      "imageNodeId": "img_minguo_sheet_08",
+      "sourceIds": [
+        "icm3_0",
+        "icm3_1",
+        "icm3_2",
+        "icm3_3"
+      ],
+      "status": "done",
+      "attempts": 1,
+      "error": null,
+      "items": [
+        {
+          "id": "icm3_0",
+          "title": "黑风衣礼帽",
+          "isa": "特工标准外出服",
+          "scene": "特工在雨夜跟踪目标",
+          "nodeText": "黑风衣礼帽\nis-a 特工标准外出服\n🎬 特工在雨夜跟踪目标"
+        },
+        {
+          "id": "icm3_1",
+          "title": "暗花丝绒旗袍",
+          "isa": "女特工社交装",
+          "scene": "女谍在舞会传递情报",
+          "nodeText": "暗花丝绒旗袍\nis-a 女特工社交装\n🎬 女谍在舞会传递情报"
+        },
+        {
+          "id": "icm3_2",
+          "title": "立领中山谍装",
+          "isa": "伪装官员的特工",
+          "scene": "潜入机关大楼盗取文件",
+          "nodeText": "立领中山谍装\nis-a 伪装官员的特工\n🎬 潜入机关大楼盗取文件"
+        },
+        {
+          "id": "icm3_3",
+          "title": "皮手套大衣",
+          "isa": "冷酷行动者外套",
+          "scene": "杀手在暗巷等待目标",
+          "nodeText": "皮手套大衣\nis-a 冷酷行动者外套\n🎬 杀手在暗巷等待目标"
+        }
+      ],
+      "sentAt": "2026-07-14T10:05:02.182Z",
+      "completedAt": "2026-07-14T10:07:12.415Z"
+    },
+    {
+      "id": "minguo_sheet_09",
+      "title": "民国素材板_09_服装_女学生便装_工装裤工服_深色对襟短打_日军军官服伪装",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\民国素材板_09_服装_女学生便装_工装裤工服_深色对襟短打_日军军官服伪装.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_09_服装_女学生便装_工装裤工服_深色对襟短打_日军军官服伪装.png",
+      "imageNodeId": "img_minguo_sheet_09",
+      "sourceIds": [
+        "icm3_4",
+        "icm3_5",
+        "icm3_6",
+        "icm3_7"
+      ],
+      "status": "done",
+      "attempts": 1,
+      "error": null,
+      "items": [
+        {
+          "id": "icm3_4",
+          "title": "女学生便装",
+          "isa": "女谍伪装校服",
+          "scene": "伪装学生混入校园",
+          "nodeText": "女学生便装\nis-a 女谍伪装校服\n🎬 伪装学生混入校园"
+        },
+        {
+          "id": "icm3_5",
+          "title": "工装裤工服",
+          "isa": "潜伏工厂的线人",
+          "scene": "线人在车间与接头人密谈",
+          "nodeText": "工装裤工服\nis-a 潜伏工厂的线人\n🎬 线人在车间与接头人密谈"
+        },
+        {
+          "id": "icm3_6",
+          "title": "深色对襟短打",
+          "isa": "行动组夜行服",
+          "scene": "行动组翻墙进入大院",
+          "nodeText": "深色对襟短打\nis-a 行动组夜行服\n🎬 行动组翻墙进入大院"
+        },
+        {
+          "id": "icm3_7",
+          "title": "日军军官服伪装",
+          "isa": "深入敌营的伪装",
+          "scene": "我方特工伪装的敌军军官",
+          "nodeText": "日军军官服伪装\nis-a 深入敌营的伪装\n🎬 我方特工伪装的敌军军官"
+        }
+      ],
+      "sentAt": "2026-07-14T10:07:27.427Z",
+      "completedAt": "2026-07-14T10:08:57.535Z"
+    },
+    {
+      "id": "minguo_sheet_10",
+      "title": "民国素材板_10_服装_灰布八路军军装_德式钢盔_武装皮带子弹带_绑腿布条",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\民国素材板_10_服装_灰布八路军军装_德式钢盔_武装皮带子弹带_绑腿布条.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_10_服装_灰布八路军军装_德式钢盔_武装皮带子弹带_绑腿布条.png",
+      "imageNodeId": "img_minguo_sheet_10",
+      "sourceIds": [
+        "icm4_0",
+        "icm4_1",
+        "icm4_2",
+        "icm4_3"
+      ],
+      "status": "done",
+      "attempts": 3,
+      "error": null,
+      "items": [
+        {
+          "id": "icm4_0",
+          "title": "灰布八路军军装",
+          "isa": "八路军标准步兵服",
+          "scene": "士兵在战壕中射击",
+          "nodeText": "灰布八路军军装\nis-a 八路军标准步兵服\n🎬 士兵在战壕中射击"
+        },
+        {
+          "id": "icm4_1",
+          "title": "德式钢盔",
+          "isa": "中央军装备",
+          "scene": "敢死队在炮火中冲锋",
+          "nodeText": "德式钢盔\nis-a 中央军装备\n🎬 敢死队在炮火中冲锋"
+        },
+        {
+          "id": "icm4_2",
+          "title": "武装皮带子弹带",
+          "isa": "军人标准装备",
+          "scene": "长官佩枪巡营",
+          "nodeText": "武装皮带子弹带\nis-a 军人标准装备\n🎬 长官佩枪巡营"
+        },
+        {
+          "id": "icm4_3",
+          "title": "绑腿布条",
+          "isa": "长途行军装备",
+          "scene": "部队在泥泞中跋涉",
+          "nodeText": "绑腿布条\nis-a 长途行军装备\n🎬 部队在泥泞中跋涉"
+        }
+      ],
+      "sentAt": "2026-07-14T10:36:05.939Z",
+      "completedAt": "2026-07-14T10:38:46.222Z"
+    },
+    {
+      "id": "minguo_sheet_11",
+      "title": "民国素材板_11_服装_呢料军官制服_土黄军装_游击队员短打_黑色夜行服",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\民国素材板_11_服装_呢料军官制服_土黄军装_游击队员短打_黑色夜行服.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_11_服装_呢料军官制服_土黄军装_游击队员短打_黑色夜行服.png",
+      "imageNodeId": "img_minguo_sheet_11",
+      "sourceIds": [
+        "icm4_4",
+        "icm4_5",
+        "icm4_6",
+        "icm4_7"
+      ],
+      "status": "done",
+      "attempts": 1,
+      "error": null,
+      "items": [
+        {
+          "id": "icm4_4",
+          "title": "呢料军官制服",
+          "isa": "国军军官正装",
+          "scene": "指挥官在桌前看地图",
+          "nodeText": "呢料军官制服\nis-a 国军军官正装\n🎬 指挥官在桌前看地图"
+        },
+        {
+          "id": "icm4_5",
+          "title": "土黄军装",
+          "isa": "地方杂牌军服",
+          "scene": "民团在村口集合",
+          "nodeText": "土黄军装\nis-a 地方杂牌军服\n🎬 民团在村口集合"
+        },
+        {
+          "id": "icm4_6",
+          "title": "游击队员短打",
+          "isa": "敌后武装便装",
+          "scene": "游击队员在芦苇荡潜伏",
+          "nodeText": "游击队员短打\nis-a 敌后武装便装\n🎬 游击队员在芦苇荡潜伏"
+        },
+        {
+          "id": "icm4_7",
+          "title": "黑色夜行服",
+          "isa": "特战队夜袭装",
+          "scene": "突击队在夜色中摸哨",
+          "nodeText": "黑色夜行服\nis-a 特战队夜袭装\n🎬 突击队在夜色中摸哨"
+        }
+      ],
+      "sentAt": "2026-07-14T10:39:01.226Z",
+      "completedAt": "2026-07-14T10:41:31.445Z"
+    },
+    {
+      "id": "minguo_sheet_12",
+      "title": "民国素材板_12_服装_白毛巾头巾_血染绷带_粗麻对襟衣_大裆裤布腰带",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\民国素材板_12_服装_白毛巾头巾_血染绷带_粗麻对襟衣_大裆裤布腰带.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_12_服装_白毛巾头巾_血染绷带_粗麻对襟衣_大裆裤布腰带.png",
+      "imageNodeId": "img_minguo_sheet_12",
+      "sourceIds": [
+        "icm4_8",
+        "icm4_9",
+        "icm5_0",
+        "icm5_1"
+      ],
+      "status": "done",
+      "attempts": 1,
+      "error": null,
+      "items": [
+        {
+          "id": "icm4_8",
+          "title": "白毛巾头巾",
+          "isa": "农民抗日义军标识",
+          "scene": "民兵在山路上奔跑",
+          "nodeText": "白毛巾头巾\nis-a 农民抗日义军标识\n🎬 民兵在山路上奔跑"
+        },
+        {
+          "id": "icm4_9",
+          "title": "血染绷带",
+          "isa": "战场伤员标志",
+          "scene": "伤兵在野战医院接受救治",
+          "nodeText": "血染绷带\nis-a 战场伤员标志\n🎬 伤兵在野战医院接受救治"
+        },
+        {
+          "id": "icm5_0",
+          "title": "粗麻对襟衣",
+          "isa": "农民日常上衣",
+          "scene": "农夫在田里弯腰插秧",
+          "nodeText": "粗麻对襟衣\nis-a 农民日常上衣\n🌾 农夫在田里弯腰插秧"
+        },
+        {
+          "id": "icm5_1",
+          "title": "大裆裤布腰带",
+          "isa": "农民传统裤装",
+          "scene": "老农赶着水牛犁地",
+          "nodeText": "大裆裤布腰带\nis-a 农民传统裤装\n🌾 老农赶着水牛犁地"
+        }
+      ],
+      "sentAt": "2026-07-14T10:41:46.462Z",
+      "completedAt": "2026-07-14T10:44:11.696Z"
+    },
+    {
+      "id": "minguo_sheet_13",
+      "title": "民国素材板_13_服装_蓝印花布衫_草帽蓑衣_羊肚毛巾白羊肚_肚兜红布裤",
+      "theme": "服装",
+      "promptPath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\prompts\\民国素材板_13_服装_蓝印花布衫_草帽蓑衣_羊肚毛巾白羊肚_肚兜红布裤.txt",
+      "imagePath": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\09-给674（我）用的库\\画画理论\\assets\\minguo-contact-sheet-batch\\images\\民国素材板_13_服装_蓝印花布衫_草帽蓑衣_羊肚毛巾白羊肚_肚兜红布裤.png",
+      "imageNodeId": "img_minguo_sheet_13",
+      "sourceIds": [
+        "icm5_2",
+        "icm5_3",
+        "icm5_4",
+        "icm5_5"
+      ],
+      "status": "done",
+      "attempts": 1,
+      "error": null,
+      "items": [
+        {
+          "id": "icm5_2",
+          "title": "蓝印花布衫",
+          "isa": "农村妇女上衣",
+          "scene": "村妇在井边洗衣淘米",
+          "nodeText": "蓝印花布衫\nis-a 农村妇女上衣\n🌾 村妇在井边洗衣淘米"
+        },
+        {
+          "id": "icm5_3",
+          "title": "草帽蓑衣",
+          "isa": "农民防雨套装",
+          "scene": "农夫在雨中赶路回家",
+          "nodeText": "草帽蓑衣\nis-a 农民防雨套装\n🌾 农夫在雨中赶路回家"
+        },
+        {
+          "id": "icm5_4",
+          "title": "羊肚毛巾白羊肚",
+          "isa": "陕北农民标志头饰",
+          "scene": "老汉在窑洞门口抽旱烟",
+          "nodeText": "羊肚毛巾白羊肚\nis-a 陕北农民标志头饰\n🌾 老汉在窑洞门口抽旱烟"
+        },
+        {
+          "id": "icm5_5",
+          "title": "肚兜红布裤",
+          "isa": "农村孩童衣装",
+          "scene": "光脚小孩在村头追鸡",
+          "nodeText": "肚兜红布裤\nis-a 农村孩童衣装\n🌾 光脚小孩在村头追鸡"
+        }
+      ],
+      "sentAt": "2026-07-14T10:44:26.706Z",
+      "completedAt": "2026-07-14T10:46:46.938Z"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+	"nodes":[
+		{"id":"8b7deb11d71440b1","type":"text","text":"# G0｜《黎黎隆》稳定、持续、可生产地发展\n状态：ACTIVE","x":-1700,"y":1600,"width":560,"height":220},
+		{"id":"1111111111111111","type":"text","text":"G1｜世界观稳定\n状态：ACTIVE","x":-760,"y":0,"width":480,"height":160},
+		{"id":"d497e117c883477d","type":"text","text":"G2｜角色稳定\n状态：ACTIVE","x":-760,"y":500,"width":480,"height":160},
+		{"id":"2222222222222222","type":"text","text":"G2-AV｜角色头像身份稳定且可验证\n状态：ACTIVE","x":0,"y":420,"width":560,"height":180},
+		{"id":"3333333333333333","type":"text","text":"G3｜场景稳定\n状态：ACTIVE","x":-760,"y":1000,"width":480,"height":160},
+		{"id":"4444444444444444","type":"text","text":"G4｜分镜/镜头稳定\n状态：ACTIVE｜本轮无证据支持新增正式 Q","x":-760,"y":1500,"width":520,"height":180},
+		{"id":"5555555555555555","type":"text","text":"G5｜H3/视频生产稳定\n状态：ACTIVE｜本轮无证据支持新增正式 Q","x":-760,"y":2000,"width":540,"height":180},
+		{"id":"6666666666666666","type":"text","text":"G6｜资产与版本稳定\n状态：ACTIVE","x":-760,"y":2500,"width":480,"height":160},
+		{"id":"7777777777777777","type":"text","text":"G7｜风格一致性稳定\n状态：ACTIVE｜未把偏好/候选升格为正式 Q","x":-760,"y":3000,"width":540,"height":180},
+		{"id":"8888888888888888","type":"text","text":"G8｜故事/十元/动态链稳定\n状态：ACTIVE｜研究任务不自动视为问题","x":-760,"y":3500,"width":560,"height":180},
+		{"id":"9999999999999999","type":"text","text":"G9｜流程/Agent/调度稳定\n状态：ACTIVE","x":-760,"y":4000,"width":500,"height":160},
+		{"id":"a11ce00000000001","type":"text","text":"Q-CHAR-001\n[[Q-CHAR-001_头像怎么稳定扩中全景|头像来源与身份一致性总问题]]\nlevel：1\nvolume：6/10\nimpact_weight：9/10\nparent：G2-AV\nstatus：OPEN","x":800,"y":240,"width":620,"height":360},
+		{"id":"f3bbc5ac25da418f","type":"text","text":"Q-CHAR-001.1\n[[Q-CHAR-001.1_头部身份锚是否稳定继承|S10 暂用 H06 四宫格导致面部身份错配]]\nlevel：2\nvolume：4/10\nimpact_weight：8/10\nparent：Q-CHAR-001\nstatus：DONE","x":1600,"y":120,"width":620,"height":360},
+		{"id":"qchar0014blocked","type":"text","text":"Q-CHAR-001.4\n[[Q-CHAR-001.4_H04正面半侧身份继承是否有充分证据|H04 正面/半侧身份继承是否有充分证据]]\nlevel：2\nvolume：2/10\nimpact_weight：4/10\nparent：Q-CHAR-001\nstatus：DONE","x":1600,"y":560,"width":620,"height":380},
+		{"id":"a11ce00000000002","type":"file","file":"黎黎隆项目/00_总览/Q-ASSET-001_旧角色设定和新设定谁优先.md","x":100,"y":2440,"width":620,"height":360},
+		{"id":"a11ce00000000003","type":"file","file":"黎黎隆项目/00_总览/Q-PIPE-001_冻结项可发散项禁止项怎么进入生图流程.md","x":100,"y":3940,"width":620,"height":380},
+		{"id":"f0d2c9a77e8b41a6","type":"file","file":"黎黎隆项目/00_总览/Q-WORLD-001_候选世界观版本如何安全进入实验.md","x":0,"y":-600,"width":600,"height":330},
+		{"id":"abcdefabcdefabcd","type":"file","file":"黎黎隆项目/00_总览/Q-SCENE-001_SC-001森林背景批准来源是否已定位核验.md","x":180,"y":1000,"width":620,"height":380}
+	],
+	"edges":[
+		{"id":"e90745ca1e8b4391","fromNode":"8b7deb11d71440b1","fromSide":"right","toNode":"1111111111111111","toSide":"left","label":"分解为"},
+		{"id":"1af96986f0dc4330","fromNode":"8b7deb11d71440b1","fromSide":"right","toNode":"d497e117c883477d","toSide":"left","label":"分解为"},
+		{"id":"0a00000000000003","fromNode":"8b7deb11d71440b1","fromSide":"right","toNode":"3333333333333333","toSide":"left","label":"分解为"},
+		{"id":"0a00000000000004","toFloating":false,"fromNode":"8b7deb11d71440b1","fromSide":"right","toNode":"4444444444444444","toSide":"left","label":"分解为"},
+		{"id":"0a00000000000005","toFloating":false,"fromNode":"8b7deb11d71440b1","fromSide":"right","toNode":"5555555555555555","toSide":"left","label":"分解为"},
+		{"id":"0a00000000000006","fromNode":"8b7deb11d71440b1","fromSide":"right","toNode":"6666666666666666","toSide":"left","label":"分解为"},
+		{"id":"0a00000000000007","fromNode":"8b7deb11d71440b1","fromSide":"right","toNode":"7777777777777777","toSide":"left","label":"分解为"},
+		{"id":"0a00000000000008","fromNode":"8b7deb11d71440b1","fromSide":"right","toNode":"8888888888888888","toSide":"left","label":"分解为"},
+		{"id":"0a00000000000009","fromNode":"8b7deb11d71440b1","fromSide":"right","toNode":"9999999999999999","toSide":"left","label":"分解为"},
+		{"id":"0a0000000000000a","fromNode":"d497e117c883477d","fromSide":"right","toNode":"2222222222222222","toSide":"left","label":"分解为"},
+		{"id":"0a0000000000000b","fromNode":"f0d2c9a77e8b41a6","fromSide":"left","toNode":"1111111111111111","toSide":"right","label":"阻塞目标"},
+		{"id":"57a6e30e8bef43c4","fromNode":"a11ce00000000001","fromSide":"left","toNode":"2222222222222222","toSide":"right","label":"影响目标"},
+		{"id":"1e55784df8b343ed","fromNode":"f3bbc5ac25da418f","fromSide":"left","toNode":"a11ce00000000001","toSide":"right","label":"子问题｜导致"},
+		{"id":"eqchar0014blocked","fromNode":"qchar0014blocked","fromSide":"left","toNode":"a11ce00000000001","toSide":"right","label":"子问题｜阻塞验证"},
+		{"id":"46757068bef44aa8","fromNode":"a11ce00000000002","fromSide":"left","toNode":"6666666666666666","toSide":"right","label":"影响目标"},
+		{"id":"386da35e8d27466e","fromNode":"a11ce00000000003","fromSide":"left","toNode":"9999999999999999","toSide":"right","label":"阻塞目标"},
+		{"id":"0a0000000000000c","fromNode":"abcdefabcdefabcd","fromSide":"left","toNode":"3333333333333333","toSide":"right","label":"阻塞目标"}
+	],
+	"metadata":{
+		"version":"1.0.1",
+		"frontmatter":{}
+	}
+}

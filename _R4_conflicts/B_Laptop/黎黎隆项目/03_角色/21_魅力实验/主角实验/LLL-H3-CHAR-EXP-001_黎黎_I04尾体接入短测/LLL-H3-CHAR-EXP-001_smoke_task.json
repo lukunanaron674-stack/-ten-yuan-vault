@@ -1,0 +1,174 @@
+{
+  "schema_version": "lililong-h3-character-smoke/v1",
+  "task_id": "LLL-H3-CHAR-EXP-001-SMOKE-001",
+  "experiment_card": "LLL-H3-CHAR-EXP-001_黎黎_I04尾体接入短测.md",
+  "project": "黎黎隆",
+  "created": "2026-09-23",
+  "status": {
+    "candidate_state": "prepared_candidate",
+    "submitted_to_h3": false,
+    "output_exists": false,
+    "official_asset_modified": false,
+    "locked": false,
+    "delivery_state": "not_delivered"
+  },
+  "selected_character": {
+    "id": "CH-005",
+    "name": "黎黎",
+    "formal_card": "黎黎隆项目/03_角色/角色库/角色卡/CH-005_黎黎.md",
+    "h3_card": "黎黎隆项目/03_角色/角色库/H3专用角色库/CH-005_黎黎_H3.md",
+    "ten_yuan_from_card": "zx + z + 点 xn",
+    "ten_yuan_status": "candidate_requires_shot_evidence"
+  },
+  "selected_scene": {
+    "id": "I04",
+    "name": "骨骼空港",
+    "scene_canvas": "黎黎隆项目/04_场景/黎黎隆_场景风格视觉化_R1-R6_本地全量_v2.0.canvas",
+    "ten_yuan_from_scene": "NZ + Z",
+    "scene_status": "candidate_pending_human_review_not_locked"
+  },
+  "reference_assets": [
+    {
+      "label": "Picture 1",
+      "role": "main_character_four_panel_reference",
+      "vault_path": "黎黎隆项目/03_角色/角色库/H3专用角色库/assets/CH-005/CH-005_黎黎_H3四格卡_v2.png",
+      "absolute_path": "C:/Users/19308/Documents/Obsidian/ten-yuan-vault/黎黎隆项目/03_角色/角色库/H3专用角色库/assets/CH-005/CH-005_黎黎_H3四格卡_v2.png",
+      "width": 941,
+      "height": 1672,
+      "sha256": "155E5E77FDE1A357F7AEB9B63540B35A6E680C8C5E4FEF07EA37F7E48C5B466E",
+      "status": "four_panel_candidate_not_h3_usable"
+    },
+    {
+      "label": "Picture 2",
+      "role": "dynamic_tail_reference",
+      "vault_path": "黎黎隆项目/03_角色/角色库/assets/CH-005/黎黎_机械尾_候选01.png",
+      "absolute_path": "C:/Users/19308/Documents/Obsidian/ten-yuan-vault/黎黎隆项目/03_角色/角色库/assets/CH-005/黎黎_机械尾_候选01.png",
+      "width": 1690,
+      "height": 931,
+      "sha256": "466695613BAAF0C43FA55A906A894D1D43383F43B43FAB760F84A4DE18BE2778",
+      "status": "exploration_reference_not_formal_final"
+    },
+    {
+      "label": "Picture 3",
+      "role": "main_scene_reference",
+      "vault_path": "黎黎隆项目/03_持续发散/2026-09-20/D04_I04_骨骼空港_v1.png",
+      "absolute_path": "C:/Users/19308/Documents/Obsidian/ten-yuan-vault/黎黎隆项目/03_持续发散/2026-09-20/D04_I04_骨骼空港_v1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "F33993B9F7B872A5AC7BE82A637354284E28BAF0BBE178A979E831539B487706",
+      "status": "scene_candidate_pending_human_review_not_locked"
+    },
+    {
+      "label": "Picture 4",
+      "role": "secondary_scene_scale_reference",
+      "vault_path": "黎黎隆项目/03_持续发散/2026-09-19/场景_I04_骨骼空港_参考吸收_v1.png",
+      "absolute_path": "C:/Users/19308/Documents/Obsidian/ten-yuan-vault/黎黎隆项目/03_持续发散/2026-09-19/场景_I04_骨骼空港_参考吸收_v1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "3D72BB3E3B5CB407B0DFD55D39998EB7F5AB4EB7AA48A754151D2C1AE48DD879",
+      "status": "scene_candidate_not_locked"
+    }
+  ],
+  "shot_options": [
+    {
+      "id": "S01",
+      "rank": 1,
+      "prepared_for_smoke_test": true,
+      "duration_seconds": 4,
+      "shot_word": "In a single 4-second medium-wide shot, Lili anchors the tip of her massive segmented tail into a cyan docking socket on the wet foreground platform of the bone airport; the tail absorbs her weight, her small upper body snaps steady, red warning lights stop blinking, and the camera slowly pushes in along the giant rib arches."
+    },
+    {
+      "id": "S02",
+      "rank": 2,
+      "prepared_for_smoke_test": false,
+      "shot_word": "Lili slides across the foreground platform of the bone airport, using the heavy tail as a low brake; the tail scrapes sparks and mist from the dark metal floor while cyan lamps trace the path and her red hair whips forward."
+    },
+    {
+      "id": "S03",
+      "rank": 3,
+      "prepared_for_smoke_test": false,
+      "shot_word": "A low-angle shot under the giant ribs shows Lili looking up at a passing winged craft; her tail rises behind her like a second spine, balancing her body against the scale of the bone hangar."
+    },
+    {
+      "id": "S04",
+      "rank": 4,
+      "prepared_for_smoke_test": false,
+      "shot_word": "Lili jumps down from a side platform and lands on the tail first, then her feet touch the floor; the tail bends, unfolds, and pushes her upright as gray-purple banners sway in the airport draft."
+    },
+    {
+      "id": "S05",
+      "rank": 5,
+      "prepared_for_smoke_test": false,
+      "shot_word": "A close medium shot follows Lili grinning as a red warning beacon reflects across the red armor plates of her tail; she taps a cyan interface with one clawed tail tip and the beacon turns into a steady guide light."
+    },
+    {
+      "id": "S06",
+      "rank": 6,
+      "prepared_for_smoke_test": false,
+      "shot_word": "Lili pivots around a suspended cargo crate, curling her tail around the platform edge to avoid a worker; the camera tracks sideways, keeping her red hair, small torso, and massive tail in one readable silhouette."
+    },
+    {
+      "id": "S07",
+      "rank": 7,
+      "prepared_for_smoke_test": false,
+      "shot_word": "On a narrow bone bridge, Lili hooks her tail under a rib support and pulls herself across a gap; the bone structure flexes slightly, cyan maintenance lights flicker, and the action shows shared weight between body, tail, and bridge."
+    },
+    {
+      "id": "S08",
+      "rank": 8,
+      "prepared_for_smoke_test": false,
+      "shot_word": "Lili releases the tail from a docking socket and turns back toward the camera; a pale cyan afterglow trails from the socket, her tail plates fold closed, and the bone airport continues moving behind her."
+    }
+  ],
+  "smoke_test": {
+    "shot_id": "S01",
+    "h3_mode": "Ref2VA",
+    "task_type": "reference generation",
+    "duration_seconds": 4,
+    "fps": 24,
+    "frames": 96,
+    "recommended_resolution": [
+      "1152x640",
+      "1280x736"
+    ],
+    "dimension_rule": "width and height must be divisible by 32",
+    "ten_yuan_relation_to_test": "Lili's connected tail uses a Z interface to transfer weight into the NZ bone airport infrastructure; this is a candidate visual relation, not a locked theory claim.",
+    "action_to_test": "tail contacts floor, tail tip plugs into cyan socket, body stabilizes through the tail",
+    "candidate_output_policy": "write any future MP4 to a separate candidate folder only; do not overwrite source images, formal character cards, scene canvases, or locked assets"
+  },
+  "prompt_sections": {
+    "subject_definitions": [
+      "<Subject 1> is Lili from <Picture 1> and <Picture 2>, a red-haired expressive protagonist with a compact upper body, sharp teeth, cyan eyes, white-and-black clothing, and a huge connected mechanical-biological segmented tail with red armor plates, dark gray body segments, pale gray panels, and cyan interface cores. <Picture 1> provides the four-panel identity reference for her body proportion, face, red hair, head pieces, and tail-to-body relationship. <Picture 2> provides the dynamic tail motion, panel details, contact weight, and action language.",
+      "<Subject 2> is the I04 bone airport environment from <Picture 3>, a vast public transit space built inside giant pale bone ribs, with wet dark foreground platforms, layered walkways, gray-purple hanging cloth, cyan navigation lamps, suspended cargo, small workers, mist, and large arched depth. <Picture 4> is a secondary scale reference for the giant exterior bone docking structure and long aviation depth.",
+      "<Picture 3> is the main composition anchor for the target shot, especially the foreground platform, rib arches, cyan lamps, misty pale background, and public airport scale."
+    ],
+    "summary": "[reference generation] The target video is a 4-second single-shot H3 smoke test showing <Subject 1> entering <Subject 2> on the foreground platform, anchoring her huge tail into a cyan docking socket, and visibly transferring her body weight into the bone airport infrastructure. The test checks whether Lili keeps her red-haired identity, compact upper body, and connected massive tail while the I04 bone airport remains readable.",
+    "retention_analysis": [
+      "<Subject 1> (appears throughout [Shot 1]): fully_preserved - Lili's red hair, expressive face, compact upper body, huge connected segmented tail, red/dark-gray/pale-gray tail armor, and cyan interface details are retained from <Picture 1> and <Picture 2>.",
+      "<Subject 2> (appears throughout [Shot 1]): fully_preserved - the giant bone-rib airport, wet foreground platform, cyan lamps, gray-purple cloth accents, suspended cargo, mist, and public transit depth are retained from <Picture 3>.",
+      "<Picture 3> ([Shot 1] composition anchor): partially_preserved - the foreground platform, rib arches, depth, mist, and cyan lamps guide the shot composition while the frame is adapted to place Lili in the lower foreground.",
+      "<Picture 4> (secondary scale reference): weak_reference - only the giant bone-docking scale and long aviation depth are referenced, without copying its exact exterior composition."
+    ],
+    "detailed_description": "The target video uses a restrained hand-drawn mechanical-fantasy animation look with the P00 palette: deep ink-cyan dark structure, pale cyan-gray mist, gray-purple biological cloth accents, cyan interface light, and small dark-red warning accents.\n[Shot 1] A single 4-second medium-wide shot begins on the wet foreground platform of <Subject 2>, the giant bone airport from <Picture 3>. Rib arches curve overhead into pale mist, small workers and hanging cargo remain in the background, and cyan navigation lamps glow along the platform edge. <Subject 1>, Lili from <Picture 1> and <Picture 2>, slides in from the left foreground with red hair whipping forward, her compact upper body leaning low and her huge segmented tail still connected to her lower body. The camera makes a slow low push-in along the platform, keeping Lili in the lower foreground and the rib arches readable behind her. Her tail lands first with visible weight, the dark gray segments compress, and red armor plates overlap as the tail bends. At about 00:01.200, the tail tip finds a cyan docking socket on the platform beside a short lamp post. At about 00:02.000, the tail tip plugs into the socket; cyan light travels from the socket into the tail's interface cores, while a nearby dark-red warning point stops blinking. Lili's feet skid for a half step, then her body snaps steady as the tail takes the load. At about 00:03.200, she lifts her chin with a sharp confident grin, hair and sleeve ends settling from the inertia, while the tail remains braced between her body and the platform. The final frame holds the connected tail, the glowing socket, and the bone airport depth in one clear silhouette.",
+    "overall_soundscape": "Cold airy airport room tone, distant wing beats, soft suspended-cargo creaks, wet platform foot-scrape, a heavy segmented tail scrape, and a short cyan interface hum when the tail plugs in.",
+    "non_diegetic_music": "N/A"
+  },
+  "negative_constraints": [
+    "Do not turn Lili into a generic cyberpunk girl, mecha pilot, chibi mascot, or another character.",
+    "Do not detach the tail from the body or turn it into a separate creature, aircraft, cannon, or decorative background object.",
+    "Do not add extra arms, wings, hats, capes, staffs, or identity parts not present in the selected Lili references.",
+    "Do not change I04 into a normal airport, train station, cyberpunk street, plain hangar, or battle sky.",
+    "Do not introduce yellow, orange, brown, gold, grass green, pure blue, or pink as a dominant independent hue.",
+    "Do not use glossy generic 3D CG, heavy cinematic filters, excessive depth-of-field blur, strong camera shake, or multiple cuts.",
+    "Do not generate subtitles, watermarks, logos, UI text, garbled characters, or explanatory text.",
+    "Do not lock or deliver the result automatically; any output remains a candidate until visual review, hash/probe verification, and human approval."
+  ],
+  "verification_required_if_run": [
+    "record runtime, workflow, seed if available, prompt_id or task_id, and queue state before claiming submission",
+    "save MP4 to a separate candidate path",
+    "record output SHA-256",
+    "run ffprobe and record duration, frame rate, resolution, codec, and audio presence",
+    "take at least one still-frame review image",
+    "mark PASS/FAIL against identity, action causality, scene readability, P00 palette, and candidate boundary"
+  ]
+}

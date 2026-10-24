@@ -1,0 +1,109 @@
+---
+project: 黎黎隆
+type: 角色/NPC 感受实验记录
+status: BASELINES_ONLY
+source_issue: 674-297
+updated: 2026-10-08
+---
+
+# 角色基线与实验日志
+
+## USER 审核范围修正｜2026-10-08
+
+本轮任务已细化为：从 674-173 L1 中筛出 18 个 FEATURED 红心头像，整理角色十元主次候选供 USER 审核；对应 Canvas 为 `03_角色/角色库/10_角色仓库/03_审核数据/173/173-04_红心角色十元审核台_STAGING_20261008.canvas`。FEATURED 只表示收藏，不能证明视觉 PASS；S4 的身份/归属确认也不自动确认十元。此前 NPC-01~07 七张四格发散候选降为低优先级参考；旧对账与路径/SHA 保留作历史。
+
+- L1 头像审核：`03_角色/角色库/10_角色仓库/03_审核数据/173/173_USER_REVIEW_L1_20261008.canvas`，225 张待审。
+- L2 四宫格审核：`03_角色/角色库/10_角色仓库/03_审核数据/173/173_USER_REVIEW_L2_20261008.canvas`，51 张待审；9 条既有裁决按原始历史/当前状态区分。
+- L1 的 FEATURED 红心是收藏信号，不等于 PASS；最终以 USER 对具体 asset/candidate 的裁决为准。
+
+## NPC-01~07｜低优先级四格候选记录
+
+## 173 最新回传｜NPC-01~07 角色与小世界十元候选（2026-10-08，未合并）
+
+> 来源：`03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/NPC-01_07_关联场景组织设计_STAGING_20261006.md` 的 2026-10-08 复核段。它与本日志此前 S2 的“角色单值”及部分场景十元排列不同。为保留版本证据，下面并列 173 最新候选与 297 原登记；两者都仍是候选，待来源裁决/事件验证后再决定是否统一。不要把这次记录写成七位 NPC 已过审。
+
+| NPC | 173 最新角色候选 | 297 原登记 | 关联小世界候选（区域 / 场景） | 组织候选 | 仍缺什么 |
+|---|---|---|---|---|---|
+| NPC-01 披肩居民 | `n > zx` | `n` 单值 | 披肩坡市 `n > zx` / 檐下层 `n > zx`（297 旧场景记 `n+zx`） | 巷坊自治独立候选；不挂 O6 | 原始逐项审核回执；组织/信号行为证据 |
+| NPC-02 阶梯壳背老人 | `n > xn` | `n` 单值 | 披肩坡市 `n > zx` / 梯歇台 `n > xn`（297 旧场景记 `n+xn`） | 暂无 | 歇台资产与倚靠行为证据 |
+| NPC-03 听泡等车孩子 | `xn > zx` | `xn` 单值 | 披肩坡市 `n > zx` / 社区慢车站 `xn > zx`（297 旧场景记 `xn+zx`） | O6 青色商会 `n > xn` 挂靠候选 | 图上没有车站；站点与组织运转证据 |
+| NPC-04 高领雨披通勤者 | `zx > n` | `zx` 单值 | 披肩坡市 `n > zx` / 湿阶巷 `zx > n`（297 旧场景记 `zx+n`） | 暂无 | 湿阶巷视觉与通行行为证据 |
+| NPC-05 喉囊邻居 | `zn > xn` | `zn` 单值 | 披肩坡市 `n > zx` / 回声院落 `xn > zn`（297 旧场景记 `xn+zn`） | 暂无 | 四格没有回应者；互答仍只是文字提案 |
+| NPC-06 背壳市集四足居民 | `zx > n` | `zx` 单值 | 披肩坡市 `n > zx` / 背壳市集窄口 `zx > n`（297 旧场景记 `zx+n`） | O6 青色商会 `n > xn` 挂靠候选 | 市集通行与组织运转证据 |
+| NPC-07 宽披肩抱碗居民 | `zn > n` | `zn` 单值 | 披肩坡市 `n > zx` / 檐下住区 `n > zn`（297 旧场景记 `n+zn`） | 暂无 | 四格没有第二人；闲谈仍只是文字提案 |
+
+所有七张源图路径/SHA 已复核；逐项 `review_state / user_decision / user_evidence_state / reviewer` 仍为 `UNKNOWN`，不在 674-296 A_READY，实验数为 0。O6 只作为 NPC-03 慢车站、NPC-06 市集挂靠候选；NPC-01 巷坊自治是独立候选。
+
+> 以下第一印象由 Codex 目视原头像写下，标作 `PROVISIONAL`；不是用户感受、不是稳定规律。**目前没有做任何变体实验。** 实验需先从 674-296 的真实资产记录领取输入；角色身份冲突或图不够表达关系时先挂起。
+
+> 18 个红心 L1 头像的角色十元 × 小世界交叉表已接入 [[REGION_FEELING_MAP]] 的“173-04 红心 L1 角色 × 小世界候选交叉表”段；逐资产 SHA、特征与 USER 裁决栏以 173-04 Canvas 为准。
+
+## H05｜候选角色身份待拆分
+
+- experiment_id：`FEEL-674297-H05-BASE-001`
+- asset_id：`H05`；path：`黎黎隆项目/03_角色/角色库/05_头像与高清素材/头像切片79/H05.png`
+- SHA-256：`faabd1127458c98e291d06d6f49c1c7c0d0fce3f03a1fc0f4855b19916f3f121`
+- baseline_feeling_plain：红发、单侧白角与侧看眼神，初看警觉、像在观察；`PROVISIONAL`。
+- baseline_ten_yuan：猎手分支 `xn+n`；旧表递送者分支 `zx`；identity `UNKNOWN`。
+- controlled_variable / variant / result / delta：`NONE / MISSING / MISSING / MISSING`。
+- decision：暂停感受实验，先解决身份分支；该头像本轮裁决为风格样本，不是身份通过。
+
+## H06｜钢铁教派主教
+
+- experiment_id：`FEEL-674297-H06-BASE-001`
+- asset_id：`H06`；path：`黎黎隆项目/03_角色/角色库/05_头像与高清素材/头像切片79/H06.png`
+- SHA-256：`9037de05f93aa98e941ab4e43dfaff85bfadf8dde5218df53386e8b47e0ad7d2`
+- baseline_feeling_plain：对称浅金属面具、青色圆镜眼、深围巾与暗红披肩，初看庄严、安静；`PROVISIONAL`。
+- baseline_ten_yuan：角色 `zn+xn` 候选；关联镜堂 `zn+xn` 候选；小世界关系结果 `UNKNOWN`。
+- controlled_variable / variant / result / delta：`NONE / MISSING / MISSING / MISSING`。
+- decision：头像不能检验仪式节点或教规如何改变行动；等 674-296 场景/组织输入及具体行为证据，再选一个变量实验。
+
+## N14｜红珊瑚祭司候选
+
+- experiment_id：`FEEL-674297-N14-BASE-001`
+- asset_id：`N14`；path：`黎黎隆项目/03_角色/角色库/05_头像与高清素材/头像切片79/N14.png`
+- SHA-256：`20ec779ee6cb94eb31a7d42287e8d1b6cd44a2bdad772ab5076ca04117e2fc45`
+- baseline_feeling_plain：白发、珊瑚枝角、遮颈深衣与侧看眼神，初看疏离、谨慎；`PROVISIONAL`。
+- baseline_ten_yuan：角色 `zn+xn` 候选；祭场 `zn+xn` 候选；O5 与关系结果 `UNKNOWN`。
+- controlled_variable / variant / result / delta：`NONE / MISSING / MISSING / MISSING`。
+- decision：选格裁决 user evidence 为 `UNKNOWN`；外观不能证明共生互养或潮汐节点，暂不启动角色—世界因果实验。
+
+## S09｜粉城方向已确认，旧赤罩分支待终裁
+
+- experiment_id：`FEEL-674297-S09-BASE-001`
+- asset_id：`S09`；path：`黎黎隆项目/03_角色/角色库/05_头像与高清素材/头像切片79/S09.png`
+- SHA-256：`3fb5d1735086f389e803c8796f2831217075407c2d416095045673beb884a865`
+- baseline_feeling_plain：黑发、紫肤、红围巾遮脸、侧看眼神，初看警惕、有距离感；`PROVISIONAL`。
+- baseline_ten_yuan：粉色魔法师·黑金→粉城方向由 674 确认；`z` 仍是十元候选。旧赤罩“发言须本人确认”`zn` 分支保留待终裁；relationship `UNKNOWN`。
+- controlled_variable / variant / result / delta：`NONE / MISSING / MISSING / MISSING`。
+- review_evidence：173 crosswalk 的 S09 L2 单格选择为 `SELECTED_CELL_3`，`user_evidence_state=UNKNOWN`；S5 包里的❤️和灵感原话是方向信号，不能替代该格 PASS。
+- decision：方向确认与视觉审核分开；旧支终裁、单格 PASS、十元结论均未闭环，不合并成同一角色实验。
+
+## S5 输入的实验候选（未开跑）
+
+- user_signal：`HEADRERUN_B_r3c3` 用户原话把红色描述为更有组织、粉色描述为自由魔物方向。
+- source_image：`E:\黎黎隆头像审核仓库_v1\HEADRERUN_B_r3c3.png`
+- SHA-256：`d61638fa4f9ad8683f49cf2bd2dd002d6b4c3749a0df379cf519a134fdd7a51d`
+- 173 状态：`FEATURED`；`user_evidence_state=CONFIRMED`；`user_decision=UNKNOWN`。这不是 A_READY。
+- 单变量候选：同一角色只变红/粉色彩，其他画面因素不变；等待 674-296 对应资产行/池别后再决定是否执行。
+- 实验结果：`NONE`；因果状态：`HYPOTHESIS_ONLY`。
+
+## S2 NPC-01~07｜图源、审核状态与观察题候选
+
+来源：674-297 S2 全量对账回执 `a7b92414-b5e2-4258-98e0-b4ceb1821af1`。七张图均为 941×1672 PNG；此处路径/SHA 已在本地逐张实算复核。资产完整、来源可追溯，不等于审核通过或可用池入选。
+
+| NPC | 图上可核外观 | 源图相对路径 | SHA-256 | 审核/池状态 | 观察题候选（未实施） |
+|---|---|---|---|---|---|
+| NPC-01 披肩居民 | 红发、浅色红边宽披肩、深色高领内层、头侧角状识别件 | `03_角色/角色库/02_H3专用角色库/assets/NPC-01/NPC-01_披肩居民_H3四格候选01.png` | `e6bd11543240ec9c37b70fc8b37a2b4817ab5b3e72529e043c51c2d82e72f51d` | source=674-173；path/SHA verified；review_state/user_decision/user_evidence/reviewer=`UNKNOWN`；not in 296 A_READY | 只改披肩轮廓宽度，观察更被包裹还是更疏离 |
+| NPC-02 阶梯壳背老人 | 白灰发、疲惫眼神、手杖、浅色弧壳、深色宽衣 | `03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/15_阶梯壳背老人_四格_候选01.png` | `921543f53894436294741a94aa73d5e0d006f542f51193098dc71f47aee62058` | source=674-173；path/SHA verified；review/user fields=`UNKNOWN`；not in 296 A_READY | 只改倚靠姿势，观察更像得到支撑还是负担加重 |
+| NPC-03 听泡等车孩子 | 白发遮眼、侧后半透明听膜、浅色宽袖、斜挎包 | `03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/16_听泡等车孩子_四格_候选01.png` | `cc6c1b28e09af13ae02824bc3fc9161e83c47bba17f1348caa731083df334d00` | source=674-173；path/SHA verified；review/user fields=`UNKNOWN`；not in 296 A_READY | 只改眼神方向，观察更像等候还是警觉 |
+| NPC-04 高领雨披通勤者 | 浅灰蓝披衣、高领、斜挎布件、长裤、厚底鞋 | `03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/17_高领雨披通勤者_四格_候选01.png` | `57f24bc908667b73044a4eef87025f99d43acdfe02c5e7de7a30256b93eaa913` | source=674-173；path/SHA verified；review/user fields=`UNKNOWN`；not in 296 A_READY | 只改站姿收放，观察更受保护还是行动受限 |
+| NPC-05 喉囊邻居 | 深发、疲倦眼神、颈侧软囊、浅衣深马甲、手持碗 | `03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/18_喉囊邻居_四格_候选01.png` | `ec91470a174243337c84f97de6bb83aaef0dc23b1d70bbe2518ea33ce8359d2b` | source=674-173；path/SHA verified；review/user fields=`UNKNOWN`；not in 296 A_READY | 只改喉囊张合幅度，观察表达意愿还是疲劳感 |
+| NPC-06 背壳市集四足居民 | 低重心四足、宽软背壳、背上布面和少量蔬菜 | `03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/19_背壳市集四足居民_四格_候选01.png` | `8158b7b7464929b6d3ceb12ab8181f3ed740e35ed7835d60566a8ff0de006a94` | source=674-173；path/SHA verified；review/user fields=`UNKNOWN`；not in 296 A_READY | 只改背上货物量，观察更可亲还是更受压 |
+| NPC-07 宽披肩抱碗居民 | 深色宽披肩、浅色内衣、宽裤、单手持碗 | `03_角色/22_NEW_CANDIDATES/NPC发散_2026-09-23/20_宽披肩抱碗居民_四格_候选01.png` | `827462c56ef0c20f93c6fcc4eaa4fbe04ef6a777d20e473cb2a72b15b280420b` | source=674-173；path/SHA verified；review/user fields=`UNKNOWN`；not in 296 A_READY | 只改碗的位置，观察主动交谈还是停下来独处 |
+
+S2 的整体回执记录：七图对应的 asset_index 均为 `CANONICAL_LIBRARY_ASSET`、完整且可追溯；但七条 `review_state / user_decision / user_evidence_state / reviewer` 都是 `UNKNOWN`，`evidence_ids` 为空，也未进入 285 条 review_input_manifest。用户指定的“已过审 NPC”处理范围照录；当前可见记录尚不能证明这七条逐项有 173 PASS。正式实验等 674-296 资产行/池别回写后按同一 asset_id 滚动启动；上表观察题只是设计候选，不是实验结果。
+
+## 实验状态
+
+首批四项加七个 NPC 均已完成路径/SHA/来源登记；仅四角色有静态首印象，七 NPC 有可见外观描述和观察题候选。全部对象都无受控变量变体、无结果、无可写成因果规律的证据。后续按 `原资产 → 只改一个变量 → 新感受 → 十元变化 → 原因假设 → 可信度` 追加，不覆盖本基线。

@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "⛪ 哥特奇幻\nzn+xz 神圣废墟\n\n信仰坍塌后——空腔的崇高\n哥特不是黑暗\n是「曾经有光的地方现在只有腔体」",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_zn",
+      "type": "text",
+      "text": "zn（意义/信念）\n残余\n\n哥特建筑的意义是zn的化石\n——尖顶指向天/彩窗讲述圣经\n但现在已经没人信了\n意义还在，信仰没了",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "ty_xz",
+      "type": "text",
+      "text": "xz（边缘/漂流）\n核心\n\n哥特空间本身就是xz\n——你站在宏伟的大教堂里\n但你感觉自己不属于这里\n边缘者在神圣的废墟中",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "ty_n",
+      "type": "text",
+      "text": "n（容器/承载）\n基底\n\n教堂是最大的n\n它的拱顶/中殿/回廊\n都是为了「容纳」而设计\n——现在容纳的是空",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_x",
+      "type": "text",
+      "text": "x（欲望/吞噬）\n暗面\n\n黑暗哥特的x在于\n教堂在吞噬光\n——彩色玻璃过滤后的光\n不是照亮\n是染色",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "🎬 巴黎圣母院\nzn+n\n\n雨果的圣母院不是建筑\n是zn的容器——\n它见证了太多\n所以它比人更懂爱",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "🎮 血源·大教堂\nzn+xz\n\n亚楠的大教堂\n是哥特zn的尸体\n——治愈教会的意义死了\n但教堂还在\n它在等你来发现它已经空了",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎬 圣战骑士\nzn+zx\n\n哥特也可以不是黑暗的\n——骑士的信仰在教堂中\n得到zn的确认\nzx从教堂出发",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 哥特奇幻的视觉设计原则\n\n① 玫瑰窗是哥特的眼睛——彩色玻璃在黑暗中是最重要的光源和意义载体\n② 尖拱的重复是哥特的xn：一排排尖拱制造出「没有尽头的秩序感」\n③ 飞扶壁是哥特的骨骼：它们让墙可以变薄/让窗可以变大——结构本身就是美学\n④ 最重要的哥特氛围：光穿过彩窗落在石柱上的彩色光斑——zn的颜色/n的载体",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 哥特奇幻的常见误判\n\n🔴 哥特=黑暗/恐怖\n→ 哥特是「曾经光明的东西变得黑暗」。没有光明过的黑暗不是哥特\n\n🔴 哥特=装饰\n→ 哥特建筑没有装饰——每一根柱子/每一个尖拱都是结构必须\n\n🔴 哥特=欧洲\n→ 哥特是一种空间xn——任何文明都可以有自己的哥特（哥特式清真寺/哥特式佛塔）",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n哥特不是黑暗的风格\n是「光曾经在这里」的证据\n——最宏伟的大教堂\n最空\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zn",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xz",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_n",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_x",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}

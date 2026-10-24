@@ -1,0 +1,1622 @@
+{
+  "meta": {
+    "source_issue": "674-297",
+    "slot": "S4 世界观/区域",
+    "generated_at": "2026-10-08",
+    "status": "STAGING / PROVISIONAL",
+    "rule": "十元一律候选；不得升级 FROZEN/USER_CONFIRMED；头像剪影不证明职业/组织/十元",
+    "scene_total_unique": 289,
+    "sources": [
+      "04_场景/场景库/场景库数据.json",
+      "00_总览/短名表_组织区域场景十元_STAGING_20261008.md",
+      "03_角色/角色库/候选角色/173-02_角色关联区域组织场景_STAGING_20261006.md",
+      "03_角色/角色库/候选角色/未定批180_十元与分桶_STAGING_20261008.md",
+      "03_角色/角色库/候选角色/01_候选文字设定_按图补充_STAGING_20261006.md",
+      "00_总览/P00_项目统一色卡_v1.0.md",
+      "01_世界观/04_统合总卷_20260925/黎黎隆_十元×世界观映射与辅助接口_v0.1.md"
+    ]
+  },
+  "characters": [
+    {
+      "key": "H02",
+      "identity": "红色船员副手",
+      "world_position": "O4船队 ＋ SC02 锚港 / SC14 离船碑",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "xn",
+      "p00": "C03",
+      "color_bucket": "红桶",
+      "status": "USER_CONFIRMED(674 10-08)",
+      "note": "674 改判，旧「边境贩子＋界棚」作废"
+    },
+    {
+      "key": "H05",
+      "identity": "荒野猎手（旧表另有「折层递送者」）",
+      "world_position": "猎径（区域·候选） / R11 城市—边境通路",
+      "ten_yuan_main": "xn",
+      "ten_yuan_secondary": "n",
+      "p00": "C03",
+      "color_bucket": "红桶",
+      "status": "PROVISIONAL",
+      "note": "674 认可画法样板；身份冲突未裁"
+    },
+    {
+      "key": "H06",
+      "identity": "钢铁教派主教",
+      "world_position": "O1钢派 ＋ 镜堂（青镜圣堂）",
+      "ten_yuan_main": "zn",
+      "ten_yuan_secondary": "xn",
+      "p00": "C03",
+      "color_bucket": "青桶",
+      "status": "USER_CONFIRMED(674 10-08)",
+      "note": "机械肉体＝钢铁教派"
+    },
+    {
+      "key": "H24（＝线A S01）",
+      "identity": "苗圃学徒 / 共生农人（674：粉色独立生活的小孩·有自己魔法力量）",
+      "world_position": "苗圃（屋顶苗圃·线A） / R14 南栖地",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "zn",
+      "p00": "C02",
+      "color_bucket": "粉桶",
+      "status": "USER_CONFIRMED(674 10-07/08)",
+      "note": "同身份 S01"
+    },
+    {
+      "key": "N14",
+      "identity": "红珊瑚祭司",
+      "world_position": "O5共生（候选） ＋ 珊祭（珊瑚滩祭场） / R13 退潮水道",
+      "ten_yuan_main": "zn",
+      "ten_yuan_secondary": "xn",
+      "p00": "MONO",
+      "color_bucket": "红桶候选",
+      "status": "PROVISIONAL",
+      "note": "O5 挂靠待审；674 取第三格"
+    },
+    {
+      "key": "S03b_new",
+      "identity": "学院区（674 归类 10-07）；线A S03 灯塔守夜人",
+      "world_position": "学院区（青色学院区） / 灯塔",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "xn",
+      "p00": "C01",
+      "color_bucket": "青桶",
+      "status": "USER_CONFIRMED(674 10-07)",
+      "note": "灯塔为线A 原挂靠，学院区为 674 新归类"
+    },
+    {
+      "key": "S09",
+      "identity": "粉色魔法师·黑金魔法（674 改判 10-06）；赤罩旧支竞争",
+      "world_position": "粉城（髓盆咒市） ＋ 黑金",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "zn",
+      "p00": "C03",
+      "color_bucket": "红桶",
+      "status": "USER_CONFIRMED(674 10-06)",
+      "note": "双分支（粉城 / 赤罩听证）未终裁"
+    },
+    {
+      "key": "S17_new",
+      "identity": "钢铁教派神官",
+      "world_position": "O1钢派 ＋ 镜堂",
+      "ten_yuan_main": "zn",
+      "ten_yuan_secondary": "xn",
+      "p00": "C03",
+      "color_bucket": "青桶",
+      "status": "USER_CONFIRMED(674 10-08)",
+      "note": "原 O3 候补作废"
+    },
+    {
+      "key": "大头联想角色_十五款候选02_r1c3",
+      "identity": "待认领",
+      "world_position": "UNKNOWN",
+      "ten_yuan_main": "xn",
+      "ten_yuan_secondary": "—",
+      "p00": "MONO",
+      "color_bucket": "—",
+      "status": "PROVISIONAL",
+      "note": "弱锚（黑白＋青耳·以听代看）"
+    },
+    {
+      "key": "大头联想角色_十五款候选02_r2c1",
+      "identity": "待认领",
+      "world_position": "UNKNOWN",
+      "ten_yuan_main": "xn",
+      "ten_yuan_secondary": "—",
+      "p00": "MONO",
+      "color_bucket": "—",
+      "status": "PROVISIONAL",
+      "note": "强锚（黑发紫镜青饰·观察）"
+    },
+    {
+      "key": "头像精修_第三组_3x5_CANDIDATE_r1c3",
+      "identity": "674：主要角色级别；身份待判",
+      "world_position": "UNKNOWN",
+      "ten_yuan_main": "xn",
+      "ten_yuan_secondary": "—",
+      "p00": "MONO",
+      "color_bucket": "—",
+      "status": "PROVISIONAL",
+      "note": "弱锚（黑白＋青点·静观）"
+    },
+    {
+      "key": "头像精修_第三组_3x5_CANDIDATE_r2c3",
+      "identity": "身份待判",
+      "world_position": "UNKNOWN",
+      "ten_yuan_main": "xn",
+      "ten_yuan_secondary": "—",
+      "p00": "MONO",
+      "color_bucket": "—",
+      "status": "PROVISIONAL",
+      "note": "强锚（黑发青镜）"
+    },
+    {
+      "key": "第二批_十五头像_3x5_候选01_r1c4",
+      "identity": "青色城区（674 归类 10-07）",
+      "world_position": "城区（青色城区）",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "—",
+      "p00": "C01",
+      "color_bucket": "青桶",
+      "status": "USER_CONFIRMED(674 10-07)",
+      "note": "弱锚（黑发深青蔽体）"
+    },
+    {
+      "key": "L1_RUN-B_r3c2",
+      "identity": "独立角色（674 裁定 10-07）",
+      "world_position": "UNKNOWN",
+      "ten_yuan_main": "zx",
+      "ten_yuan_secondary": "—",
+      "p00": "C03",
+      "color_bucket": "—",
+      "status": "USER_CONFIRMED(独立身份)",
+      "note": "弱锚（红角精灵体格）；十元仍 PROVISIONAL"
+    },
+    {
+      "key": "L1_RUN-C_r1c3",
+      "identity": "独立角色（与 N14 非同一，674 10-07）",
+      "world_position": "UNKNOWN",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "—",
+      "p00": "C03",
+      "color_bucket": "—",
+      "status": "USER_CONFIRMED(独立身份)",
+      "note": "弱锚（白发尖耳红巾）"
+    },
+    {
+      "key": "HEADRERUN_A_r3c3",
+      "identity": "身份待判",
+      "world_position": "UNKNOWN",
+      "ten_yuan_main": "zx",
+      "ten_yuan_secondary": "—",
+      "p00": "C03",
+      "color_bucket": "—",
+      "status": "PROVISIONAL",
+      "note": "弱锚（白角兽耳体格）"
+    },
+    {
+      "key": "HEADRERUN_B_r3c3",
+      "identity": "身份待判",
+      "world_position": "UNKNOWN",
+      "ten_yuan_main": "zx",
+      "ten_yuan_secondary": "—",
+      "p00": "C03",
+      "color_bucket": "—",
+      "status": "PROVISIONAL",
+      "note": "弱锚（绿皮红角体格）"
+    },
+    {
+      "key": "第三批_跳染_r2c4",
+      "identity": "身份待判",
+      "world_position": "UNKNOWN",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "—",
+      "p00": "C02",
+      "color_bucket": "—",
+      "status": "PROVISIONAL",
+      "note": "弱锚（白发紫球青饰）"
+    },
+    {
+      "key": "大头联想角色_八款候选01_r2c1",
+      "identity": "武侠角色（674-173 v3；已并入 H05）",
+      "world_position": "UNKNOWN",
+      "ten_yuan_main": "zx",
+      "ten_yuan_secondary": "—",
+      "p00": "C03",
+      "color_bucket": "红桶",
+      "status": "USER_CONFIRMED(并入 H05)",
+      "note": "红发白角精灵；与 L1_RUN-B_r3c2 为两个角色"
+    },
+    {
+      "key": "头像精修_第三组_3x5_CANDIDATE_r5c1",
+      "identity": "674：没拆且好；身份待判",
+      "world_position": "UNKNOWN",
+      "ten_yuan_main": "zn",
+      "ten_yuan_secondary": "—",
+      "p00": "C03",
+      "color_bucket": "—",
+      "status": "PROVISIONAL",
+      "note": "弱锚（红皮老者礼巾）"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "O1钢派",
+      "name": "钢铁教派",
+      "bucket": "青",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "xn",
+      "one_line": "身体是设施，维护即修行；机械肉体＝青镜面甲；可拆卸=可自由。地盘=维护街带/东门门站"
+    },
+    {
+      "id": "O2佛门",
+      "name": "佛教",
+      "bucket": "红",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "nz",
+      "one_line": "无人有权决定你的身体；零植入（绝植入仅限僧侣）"
+    },
+    {
+      "id": "O3法堂",
+      "name": "审判之庭",
+      "bucket": "红",
+      "ten_yuan_main": "nz",
+      "ten_yuan_secondary": "z",
+      "one_line": "只审一种罪——替别人决定身体"
+    },
+    {
+      "id": "O4船队",
+      "name": "船队",
+      "bucket": "红",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "xn",
+      "one_line": "本人决定；航线与身体一样只走自己选的（H02 归此）"
+    },
+    {
+      "id": "O5共生",
+      "name": "生态共生",
+      "bucket": "粉",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "nz",
+      "one_line": "共生须双方同意（对人、对遗蜕皆然）"
+    },
+    {
+      "id": "O6青商",
+      "name": "青色商会",
+      "bucket": "青",
+      "ten_yuan_main": "x",
+      "ten_yuan_secondary": "nx",
+      "one_line": "接入权可买，谁付费谁决定"
+    },
+    {
+      "id": "O7塔脊",
+      "name": "塔脊集会",
+      "bucket": "粉",
+      "ten_yuan_main": "zn",
+      "ten_yuan_secondary": "n",
+      "one_line": "术法与人双方自愿；塔=巨物一段站立脊椎（传统法师公会正身）"
+    }
+  ],
+  "world_structure": [
+    {
+      "id": "G1",
+      "name": "生活城（模块化异体生活城）",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "x"
+    },
+    {
+      "id": "G2",
+      "name": "城外七带",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "zx"
+    },
+    {
+      "id": "G3",
+      "name": "断裂带（旧桥残迹·返身断点灾难锚点）",
+      "ten_yuan_main": "x并z",
+      "ten_yuan_secondary": "nz"
+    },
+    {
+      "id": "G4",
+      "name": "雾区（雾与未知区）",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "—"
+    },
+    {
+      "id": "G5",
+      "name": "白骨（埋骨之地·白骨营地）",
+      "ten_yuan_main": "x并z",
+      "ten_yuan_secondary": "nz"
+    },
+    {
+      "id": "G6",
+      "name": "见证地（见证礼地×静默档案诸城）",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "n"
+    },
+    {
+      "id": "G7",
+      "name": "浮陆（七色浮陆·线C 隔离）",
+      "ten_yuan_main": "zn",
+      "ten_yuan_secondary": "n"
+    }
+  ],
+  "regions": [
+    {
+      "id": "R01",
+      "name": "维护带（维护街带）",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "x",
+      "p00": "C01",
+      "org": "O1钢派地盘",
+      "characters": "H02 06 07 15"
+    },
+    {
+      "id": "R02",
+      "name": "排雾渠（排雾渠带）",
+      "ten_yuan_main": "nz",
+      "ten_yuan_secondary": "n",
+      "p00": "C01",
+      "org": "O1钢派",
+      "characters": "H15"
+    },
+    {
+      "id": "R03",
+      "name": "北雾路（北缘雾路）",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "n",
+      "p00": "MONO",
+      "org": "—",
+      "characters": "H03 N01 03 06"
+    },
+    {
+      "id": "R04",
+      "name": "东门站（东门识别站）",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "xn",
+      "p00": "C01",
+      "org": "O1钢派 / F6城门识别",
+      "characters": "H04 N05"
+    },
+    {
+      "id": "R05",
+      "name": "居住巷",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "nx",
+      "p00": "C01",
+      "org": "—",
+      "characters": "H08 20 21 27 28"
+    },
+    {
+      "id": "R06",
+      "name": "共桌（共桌广场）",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "nx",
+      "p00": "C01",
+      "org": "—",
+      "characters": "H17 N14"
+    },
+    {
+      "id": "R07",
+      "name": "灯影（灯影广场）",
+      "ten_yuan_main": "zn",
+      "ten_yuan_secondary": "n",
+      "p00": "C03",
+      "org": "—",
+      "characters": "H25 N14"
+    },
+    {
+      "id": "R08",
+      "name": "雨棚（市井雨棚层）",
+      "ten_yuan_main": "nx",
+      "ten_yuan_secondary": "n",
+      "p00": "C01",
+      "org": "—",
+      "characters": "H16 18 19 23"
+    },
+    {
+      "id": "R09",
+      "name": "共鸣庭",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "nx",
+      "p00": "C01",
+      "org": "—",
+      "characters": "H29"
+    },
+    {
+      "id": "R10",
+      "name": "活膜带（生态边缘活膜带）",
+      "ten_yuan_main": "nz",
+      "ten_yuan_secondary": "nx",
+      "p00": "C02",
+      "org": "O5共生",
+      "characters": "H10 N08"
+    },
+    {
+      "id": "R11",
+      "name": "边境通路（城市—边境通路）",
+      "ten_yuan_main": "zx",
+      "ten_yuan_secondary": "xn",
+      "p00": "C03",
+      "org": "—",
+      "characters": "H05"
+    },
+    {
+      "id": "R12",
+      "name": "高差山路（西南高差山路）",
+      "ten_yuan_main": "zx",
+      "ten_yuan_secondary": "nz",
+      "p00": "MONO",
+      "org": "—",
+      "characters": "H12 H14"
+    },
+    {
+      "id": "R13",
+      "name": "退潮水道",
+      "ten_yuan_main": "nz",
+      "ten_yuan_secondary": "xz",
+      "p00": "C03",
+      "org": "—",
+      "characters": "H30 N15 N21"
+    },
+    {
+      "id": "R14",
+      "name": "南栖地（脱壳季）",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "nz",
+      "p00": "C02",
+      "org": "—",
+      "characters": "H22 H24"
+    },
+    {
+      "id": "R15",
+      "name": "迁徙路（东南迁徙路）",
+      "ten_yuan_main": "nx",
+      "ten_yuan_secondary": "zx",
+      "p00": "C01",
+      "org": "—",
+      "characters": "H26 N24 N26 N27 N30"
+    },
+    {
+      "id": "R16",
+      "name": "裂风口（东北裂风口·回声林）",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "nx",
+      "p00": "MONO",
+      "org": "—",
+      "characters": "N17 18 23 / H13 N16 22"
+    },
+    {
+      "id": "R17",
+      "name": "东裂隙（东裂隙带·断裂带旧桥）",
+      "ten_yuan_main": "x并z",
+      "ten_yuan_secondary": "nz",
+      "p00": "MONO",
+      "org": "—",
+      "characters": "H11 N19 N28"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "SC01",
+      "name": "骨环（白骨营地·骨环广场）",
+      "ten_yuan_main": "x并z",
+      "ten_yuan_secondary": "nz",
+      "p00": "MONO",
+      "org": "G5 白骨",
+      "note": "—"
+    },
+    {
+      "id": "SC02",
+      "name": "锚港（自由锚港·离船权码头）",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "nz",
+      "p00": "C01",
+      "org": "O4船队",
+      "note": "G1 港口"
+    },
+    {
+      "id": "SC03",
+      "name": "金口（黑金渗口）",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "xz",
+      "p00": "C03",
+      "org": "—",
+      "note": "黑金/拔锚资格"
+    },
+    {
+      "id": "SC04",
+      "name": "菌林（菌林夜景）",
+      "ten_yuan_main": "nz",
+      "ten_yuan_secondary": "xz",
+      "p00": "C02",
+      "org": "O5共生",
+      "note": "—"
+    },
+    {
+      "id": "SC05",
+      "name": "维护街（维护街带）",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "x",
+      "p00": "C01",
+      "org": "O1钢派",
+      "note": "R01"
+    },
+    {
+      "id": "SC06",
+      "name": "门站（门站带）",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "xn",
+      "p00": "C01",
+      "org": "O1钢派 / F6",
+      "note": "R04"
+    },
+    {
+      "id": "SC07",
+      "name": "共鸣庭",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "nx",
+      "p00": "C01",
+      "org": "—",
+      "note": "R09"
+    },
+    {
+      "id": "SC08",
+      "name": "雾路（北缘雾路）",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "n",
+      "p00": "MONO",
+      "org": "—",
+      "note": "R03"
+    },
+    {
+      "id": "SC09",
+      "name": "生态边（生态边缘）",
+      "ten_yuan_main": "nz",
+      "ten_yuan_secondary": "nx",
+      "p00": "C02",
+      "org": "O5共生",
+      "note": "R10"
+    },
+    {
+      "id": "SC10",
+      "name": "裂隙（东裂隙带）",
+      "ten_yuan_main": "x并z",
+      "ten_yuan_secondary": "nz",
+      "p00": "MONO",
+      "org": "—",
+      "note": "R17"
+    },
+    {
+      "id": "SC11",
+      "name": "—（空号，未使用）",
+      "ten_yuan_main": "—",
+      "ten_yuan_secondary": "—",
+      "p00": "—",
+      "org": "—",
+      "note": "—"
+    },
+    {
+      "id": "SC12",
+      "name": "塔厅（塔站登记大厅）",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "xn",
+      "p00": "C01",
+      "org": "O7塔脊",
+      "note": "—"
+    },
+    {
+      "id": "SC13",
+      "name": "商签（青色商会签约室）",
+      "ten_yuan_main": "x",
+      "ten_yuan_secondary": "nx",
+      "p00": "C01",
+      "org": "O6青商",
+      "note": "—"
+    },
+    {
+      "id": "SC14",
+      "name": "离船碑（锚港离船权碑）",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "nz",
+      "p00": "C01",
+      "org": "O4船队",
+      "note": "—"
+    },
+    {
+      "id": "SC15",
+      "name": "裁决厅",
+      "ten_yuan_main": "nz",
+      "ten_yuan_secondary": "z",
+      "p00": "C03",
+      "org": "O3法堂",
+      "note": "—"
+    },
+    {
+      "id": "SC16",
+      "name": "哑区",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "nz",
+      "p00": "MONO",
+      "org": "—",
+      "note": "—"
+    },
+    {
+      "id": "SC17",
+      "name": "寄存廊（记忆寄存廊）",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "z",
+      "p00": "C02",
+      "org": "—",
+      "note": "G6 见证地"
+    },
+    {
+      "id": "SC18",
+      "name": "改泊湾（巨物迁徙改泊湾）",
+      "ten_yuan_main": "nz",
+      "ten_yuan_secondary": "n",
+      "p00": "C05",
+      "org": "—",
+      "note": "巨物迁徙"
+    }
+  ],
+  "staging_objects": [
+    {
+      "short": "镜堂",
+      "full": "青镜圣堂",
+      "type": "场景(L3)",
+      "attach": "O1钢派",
+      "ten_yuan_main": "zn",
+      "ten_yuan_secondary": "xn",
+      "p00": "C01",
+      "note": "H06 主教席 / S17 同族"
+    },
+    {
+      "short": "界棚",
+      "full": "界碑歇脚棚",
+      "type": "场景(L3)",
+      "attach": "待认领",
+      "ten_yuan_main": "zx",
+      "ten_yuan_secondary": "xn",
+      "p00": "MONO",
+      "note": "674 决定保留；已解除与 H02 关联"
+    },
+    {
+      "short": "猎径",
+      "full": "白角猎径",
+      "type": "区域(候选)",
+      "attach": "H05",
+      "ten_yuan_main": "xn",
+      "ten_yuan_secondary": "n",
+      "p00": "C03",
+      "note": "径权=发间白角饰"
+    },
+    {
+      "short": "珊祭",
+      "full": "珊瑚滩祭场",
+      "type": "场景(L3)",
+      "attach": "O5共生(候选)",
+      "ten_yuan_main": "zn",
+      "ten_yuan_secondary": "xn",
+      "p00": "C02",
+      "note": "潮位节点定祭期"
+    },
+    {
+      "short": "檐下",
+      "full": "披肩坡市·檐下层",
+      "type": "区域子层",
+      "attach": "披肩坡市",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "zx",
+      "p00": "C02",
+      "note": "NPC-01~07 同市"
+    },
+    {
+      "short": "苗圃",
+      "full": "屋顶苗圃",
+      "type": "场景(线A)",
+      "attach": "H24 / S01",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "zn",
+      "p00": "C02",
+      "note": "轮值承载"
+    },
+    {
+      "short": "粉城",
+      "full": "粉色魔法城·髓盆咒市",
+      "type": "区域",
+      "attach": "JOB-LLL-PINK-MAGECITY-001",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "zn",
+      "p00": "C03",
+      "note": "黑金魔法·S09"
+    },
+    {
+      "short": "学院区",
+      "full": "青色学院区",
+      "type": "区域",
+      "attach": "S03b_new(674 10-07)",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "xn",
+      "p00": "C01",
+      "note": "—"
+    },
+    {
+      "short": "城区",
+      "full": "青色城区",
+      "type": "区域",
+      "attach": "第二批_r1c4(674 10-07)",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "nx",
+      "p00": "C01",
+      "note": "—"
+    }
+  ],
+  "scene_groups": [
+    {
+      "group_key": "森林湖泊",
+      "count": 17,
+      "world_position": "森林湖泊（五色视觉系统 R1/R3 研究图，未定稿）",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "xz",
+      "p00": "青绿+淡青灰",
+      "kind": "五色实验",
+      "note": "非场景定稿；只作色卡参考",
+      "asset_ids": [
+        "AST-0001",
+        "AST-0002",
+        "AST-0003",
+        "AST-0004",
+        "AST-0013",
+        "AST-0016",
+        "AST-0019",
+        "AST-0139",
+        "AST-0140",
+        "AST-0141",
+        "AST-0142",
+        "AST-0143",
+        "AST-0144",
+        "AST-0145",
+        "AST-0146",
+        "AST-0147",
+        "AST-0148"
+      ]
+    },
+    {
+      "group_key": "机械空港",
+      "count": 37,
+      "world_position": "机械空港·骨构空港（候选挂靠 G5 白骨带/巨物）",
+      "ten_yuan_main": "x",
+      "ten_yuan_secondary": "nz",
+      "p00": "MONO+青绿",
+      "kind": "编号场景",
+      "note": "674 用户确认基准图 R2-01",
+      "asset_ids": [
+        "AST-0005",
+        "AST-0006",
+        "AST-0007",
+        "AST-0008",
+        "AST-0014",
+        "AST-0017",
+        "AST-0020",
+        "AST-0025",
+        "AST-0026",
+        "AST-0027",
+        "AST-0028",
+        "AST-0077",
+        "AST-0078",
+        "AST-0079",
+        "AST-0080",
+        "AST-0081",
+        "AST-0082",
+        "AST-0083",
+        "AST-0084",
+        "AST-0085",
+        "AST-0086",
+        "AST-0105",
+        "AST-0106",
+        "AST-0107",
+        "AST-0108",
+        "AST-0109",
+        "AST-0110",
+        "AST-0129",
+        "AST-0130",
+        "AST-0131",
+        "AST-0132",
+        "AST-0133",
+        "AST-0134",
+        "AST-0135",
+        "AST-0136",
+        "AST-0137",
+        "AST-0138"
+      ]
+    },
+    {
+      "group_key": "异种村庄",
+      "count": 12,
+      "world_position": "异种村庄（同上，R1 研究图）",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "nx",
+      "p00": "灰紫+淡青灰",
+      "kind": "五色实验",
+      "note": "非场景定稿",
+      "asset_ids": [
+        "AST-0009",
+        "AST-0010",
+        "AST-0011",
+        "AST-0012",
+        "AST-0015",
+        "AST-0018",
+        "AST-0021",
+        "AST-0184",
+        "AST-0185",
+        "AST-0186",
+        "AST-0187",
+        "AST-0188"
+      ]
+    },
+    {
+      "group_key": "黑金渗口",
+      "count": 3,
+      "world_position": "SC03 金口",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "xz",
+      "p00": "暗红+墨青",
+      "kind": "编号场景",
+      "note": "黑金=拔锚资格",
+      "asset_ids": [
+        "AST-0022",
+        "AST-0023",
+        "AST-0024"
+      ]
+    },
+    {
+      "group_key": "关系判别实验",
+      "count": 9,
+      "world_position": "实验图（不进世界点位）",
+      "ten_yuan_main": "—",
+      "ten_yuan_secondary": "—",
+      "p00": "—",
+      "kind": "实验图",
+      "note": "关系判别用",
+      "asset_ids": [
+        "AST-0029",
+        "AST-0030",
+        "AST-0031",
+        "AST-0032",
+        "AST-0033",
+        "AST-0034",
+        "AST-0035",
+        "AST-0036",
+        "AST-0037"
+      ]
+    },
+    {
+      "group_key": "自由锚港",
+      "count": 5,
+      "world_position": "SC02 锚港（自由锚港·离船权码头） / O4船队",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "nz",
+      "p00": "青绿+墨青",
+      "kind": "编号场景",
+      "note": "离船权=z",
+      "asset_ids": [
+        "AST-0038",
+        "AST-0039",
+        "AST-0040",
+        "AST-0041",
+        "AST-0042"
+      ]
+    },
+    {
+      "group_key": "菌林夜景",
+      "count": 8,
+      "world_position": "SC04 菌林",
+      "ten_yuan_main": "nz",
+      "ten_yuan_secondary": "xz",
+      "p00": "灰紫",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0043",
+        "AST-0044",
+        "AST-0045",
+        "AST-0168",
+        "AST-0169",
+        "AST-0170",
+        "AST-0171",
+        "AST-0172"
+      ]
+    },
+    {
+      "group_key": "维护街带",
+      "count": 2,
+      "world_position": "SC05 维护街 / R01 / O1钢派",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "x",
+      "p00": "青绿",
+      "kind": "编号场景",
+      "note": "平实维护",
+      "asset_ids": [
+        "AST-0046",
+        "AST-0047"
+      ]
+    },
+    {
+      "group_key": "门站带",
+      "count": 5,
+      "world_position": "SC06 门站 / R04 东门站",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "xn",
+      "p00": "青绿",
+      "kind": "编号场景",
+      "note": "识别=z",
+      "asset_ids": [
+        "AST-0048",
+        "AST-0049",
+        "AST-0050",
+        "AST-0051",
+        "AST-0052"
+      ]
+    },
+    {
+      "group_key": "共鸣庭",
+      "count": 4,
+      "world_position": "SC07 共鸣庭 / R09",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "nx",
+      "p00": "青绿",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0053",
+        "AST-0054",
+        "AST-0055",
+        "AST-0056"
+      ]
+    },
+    {
+      "group_key": "北缘雾路",
+      "count": 2,
+      "world_position": "SC08 雾路 / R03",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "n",
+      "p00": "淡青灰",
+      "kind": "编号场景",
+      "note": "雾=封藏",
+      "asset_ids": [
+        "AST-0057",
+        "AST-0058"
+      ]
+    },
+    {
+      "group_key": "生态边缘",
+      "count": 4,
+      "world_position": "SC09 生态边 / R10 活膜带 / O5共生",
+      "ten_yuan_main": "nz",
+      "ten_yuan_secondary": "nx",
+      "p00": "灰紫",
+      "kind": "编号场景",
+      "note": "共生=双方同意",
+      "asset_ids": [
+        "AST-0059",
+        "AST-0060",
+        "AST-0061",
+        "AST-0062"
+      ]
+    },
+    {
+      "group_key": "东裂隙带",
+      "count": 2,
+      "world_position": "SC10 裂隙 / R17",
+      "ten_yuan_main": "x并z",
+      "ten_yuan_secondary": "nz",
+      "p00": "墨青+暗红",
+      "kind": "编号场景",
+      "note": "断裂",
+      "asset_ids": [
+        "AST-0063",
+        "AST-0064"
+      ]
+    },
+    {
+      "group_key": "塔站登记大厅",
+      "count": 1,
+      "world_position": "SC12 塔厅 / O7塔脊",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "xn",
+      "p00": "青绿",
+      "kind": "编号场景",
+      "note": "登记=z",
+      "asset_ids": [
+        "AST-0065"
+      ]
+    },
+    {
+      "group_key": "青色商会签约室",
+      "count": 1,
+      "world_position": "SC13 商签 / O6青商",
+      "ten_yuan_main": "x",
+      "ten_yuan_secondary": "nx",
+      "p00": "青绿",
+      "kind": "编号场景",
+      "note": "接入权可买=x",
+      "asset_ids": [
+        "AST-0066"
+      ]
+    },
+    {
+      "group_key": "锚港离船权碑",
+      "count": 3,
+      "world_position": "SC14 离船碑 / O4船队",
+      "ten_yuan_main": "z",
+      "ten_yuan_secondary": "nz",
+      "p00": "青绿",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0067",
+        "AST-0068",
+        "AST-0069"
+      ]
+    },
+    {
+      "group_key": "裁决厅",
+      "count": 1,
+      "world_position": "SC15 / O3法堂",
+      "ten_yuan_main": "nz",
+      "ten_yuan_secondary": "z",
+      "p00": "暗红",
+      "kind": "编号场景",
+      "note": "只审一种罪",
+      "asset_ids": [
+        "AST-0070"
+      ]
+    },
+    {
+      "group_key": "哑区",
+      "count": 1,
+      "world_position": "SC16",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "nz",
+      "p00": "墨青",
+      "kind": "编号场景",
+      "note": "封闭沉默",
+      "asset_ids": [
+        "AST-0071"
+      ]
+    },
+    {
+      "group_key": "记忆寄存廊",
+      "count": 1,
+      "world_position": "SC17 / G6 见证地",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "z",
+      "p00": "灰紫",
+      "kind": "编号场景",
+      "note": "封存可重开",
+      "asset_ids": [
+        "AST-0072"
+      ]
+    },
+    {
+      "group_key": "巨物迁徙改泊湾",
+      "count": 2,
+      "world_position": "SC18 改泊湾",
+      "ten_yuan_main": "nz",
+      "ten_yuan_secondary": "n",
+      "p00": "淡青灰",
+      "kind": "编号场景",
+      "note": "回返/守卫",
+      "asset_ids": [
+        "AST-0073",
+        "AST-0074"
+      ]
+    },
+    {
+      "group_key": "白骨营地",
+      "count": 2,
+      "world_position": "SC01 骨环 / G5 白骨",
+      "ten_yuan_main": "x并z",
+      "ten_yuan_secondary": "nz",
+      "p00": "墨青",
+      "kind": "编号场景",
+      "note": "灾难锚点",
+      "asset_ids": [
+        "AST-0075",
+        "AST-0076"
+      ]
+    },
+    {
+      "group_key": "多场景功能细节",
+      "count": 18,
+      "world_position": "多场景混装批次（待逐张归位）",
+      "ten_yuan_main": "UNKNOWN",
+      "ten_yuan_secondary": "UNKNOWN",
+      "p00": "UNKNOWN",
+      "kind": "批次",
+      "note": "未逐张定位",
+      "asset_ids": [
+        "AST-0087",
+        "AST-0088",
+        "AST-0089",
+        "AST-0090",
+        "AST-0091",
+        "AST-0092",
+        "AST-0093",
+        "AST-0094",
+        "AST-0095",
+        "AST-0096",
+        "AST-0097",
+        "AST-0098",
+        "AST-0099",
+        "AST-0100",
+        "AST-0101",
+        "AST-0102",
+        "AST-0103",
+        "AST-0104"
+      ]
+    },
+    {
+      "group_key": "区域地图与全景",
+      "count": 2,
+      "world_position": "R 层地图/全景（非点位）",
+      "ten_yuan_main": "—",
+      "ten_yuan_secondary": "—",
+      "p00": "—",
+      "kind": "地图",
+      "note": "—",
+      "asset_ids": [
+        "AST-0111",
+        "AST-0112"
+      ]
+    },
+    {
+      "group_key": "七色场概念锚点",
+      "count": 11,
+      "world_position": "G7 七色浮陆（线C 隔离）",
+      "ten_yuan_main": "zn",
+      "ten_yuan_secondary": "n",
+      "p00": "七色",
+      "kind": "概念锚点",
+      "note": "世界级 zn 缺口补位",
+      "asset_ids": [
+        "AST-0113",
+        "AST-0114",
+        "AST-0115",
+        "AST-0116",
+        "AST-0117",
+        "AST-0118",
+        "AST-0119",
+        "AST-0120",
+        "AST-0121",
+        "AST-0122",
+        "AST-0123"
+      ]
+    },
+    {
+      "group_key": "其他场景素材",
+      "count": 5,
+      "world_position": "多场景混装批次（待逐张归位）",
+      "ten_yuan_main": "UNKNOWN",
+      "ten_yuan_secondary": "UNKNOWN",
+      "p00": "UNKNOWN",
+      "kind": "批次",
+      "note": "未逐张定位",
+      "asset_ids": [
+        "AST-0124",
+        "AST-0125",
+        "AST-0126",
+        "AST-0127",
+        "AST-0128"
+      ]
+    },
+    {
+      "group_key": "外部视觉参考",
+      "count": 36,
+      "world_position": "EXTERNAL_REF 外部参考（不进世界点位）",
+      "ten_yuan_main": "—",
+      "ten_yuan_secondary": "—",
+      "p00": "—",
+      "kind": "外部参考",
+      "note": "沿用规则：参考图不冒充定稿地点",
+      "asset_ids": [
+        "AST-0149",
+        "AST-0150",
+        "AST-0151",
+        "AST-0152",
+        "AST-0153",
+        "AST-0154",
+        "AST-0155",
+        "AST-0156",
+        "AST-0157",
+        "AST-0158",
+        "AST-0159",
+        "AST-0160",
+        "AST-0161",
+        "AST-0162",
+        "AST-0163",
+        "AST-0164",
+        "AST-0165",
+        "AST-0166",
+        "AST-0167",
+        "AST-0173",
+        "AST-0174",
+        "AST-0175",
+        "AST-0176",
+        "AST-0177",
+        "AST-0178",
+        "AST-0179",
+        "AST-0180",
+        "AST-0181",
+        "AST-0182",
+        "AST-0183",
+        "AST-0189",
+        "AST-0190",
+        "AST-0191",
+        "AST-0192",
+        "AST-0193",
+        "AST-0194"
+      ]
+    },
+    {
+      "group_key": "多场景素材盘点",
+      "count": 26,
+      "world_position": "多场景混装批次（待逐张归位）",
+      "ten_yuan_main": "UNKNOWN",
+      "ten_yuan_secondary": "UNKNOWN",
+      "p00": "UNKNOWN",
+      "kind": "批次",
+      "note": "未逐张定位",
+      "asset_ids": [
+        "AST-0195",
+        "AST-0196",
+        "AST-0197",
+        "AST-0198",
+        "AST-0199",
+        "AST-0200",
+        "AST-0201",
+        "AST-0202",
+        "AST-0203",
+        "AST-0204",
+        "AST-0205",
+        "AST-0206",
+        "AST-0207",
+        "AST-0208",
+        "AST-0209",
+        "AST-0210",
+        "AST-0211",
+        "AST-0212",
+        "AST-0213",
+        "AST-0214",
+        "AST-0215",
+        "AST-0216",
+        "AST-0217",
+        "AST-0218",
+        "AST-0219",
+        "AST-0263"
+      ]
+    },
+    {
+      "group_key": "世界机制图像候选",
+      "count": 3,
+      "world_position": "机制示意（非点位）",
+      "ten_yuan_main": "—",
+      "ten_yuan_secondary": "—",
+      "p00": "—",
+      "kind": "机制图",
+      "note": "—",
+      "asset_ids": [
+        "AST-0220",
+        "AST-0221",
+        "AST-0222"
+      ]
+    },
+    {
+      "group_key": "场景候选素材整理",
+      "count": 40,
+      "world_position": "多场景混装批次（待逐张归位）",
+      "ten_yuan_main": "UNKNOWN",
+      "ten_yuan_secondary": "UNKNOWN",
+      "p00": "UNKNOWN",
+      "kind": "批次",
+      "note": "40 张，未逐张定位",
+      "asset_ids": [
+        "AST-0223",
+        "AST-0224",
+        "AST-0225",
+        "AST-0226",
+        "AST-0227",
+        "AST-0228",
+        "AST-0229",
+        "AST-0230",
+        "AST-0231",
+        "AST-0232",
+        "AST-0233",
+        "AST-0234",
+        "AST-0235",
+        "AST-0236",
+        "AST-0237",
+        "AST-0238",
+        "AST-0239",
+        "AST-0240",
+        "AST-0241",
+        "AST-0242",
+        "AST-0243",
+        "AST-0244",
+        "AST-0245",
+        "AST-0246",
+        "AST-0247",
+        "AST-0248",
+        "AST-0249",
+        "AST-0250",
+        "AST-0251",
+        "AST-0252",
+        "AST-0253",
+        "AST-0254",
+        "AST-0255",
+        "AST-0256",
+        "AST-0257",
+        "AST-0258",
+        "AST-0259",
+        "AST-0260",
+        "AST-0261",
+        "AST-0262"
+      ]
+    },
+    {
+      "group_key": "雾桥城屋顶远眺",
+      "count": 1,
+      "world_position": "模块化异体生活城·屋顶层 / G1",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "x",
+      "p00": "淡青灰",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0264"
+      ]
+    },
+    {
+      "group_key": "屋顶栈道行进",
+      "count": 1,
+      "world_position": "模块化异体生活城·屋顶栈道 / G1",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "zx",
+      "p00": "淡青灰",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0265"
+      ]
+    },
+    {
+      "group_key": "公共尾部维护站",
+      "count": 1,
+      "world_position": "身体维护所（G1 维护类） / O1钢派",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "x",
+      "p00": "青绿",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0266"
+      ]
+    },
+    {
+      "group_key": "环形公共身体维护台",
+      "count": 1,
+      "world_position": "身体维护所（G1 维护类） / O1钢派",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "x",
+      "p00": "青绿",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0267"
+      ]
+    },
+    {
+      "group_key": "I01_旧机械腹腔小窝",
+      "count": 1,
+      "world_position": "巨物内部·旧机械腹腔小窝",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "nz",
+      "p00": "墨青",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0268"
+      ]
+    },
+    {
+      "group_key": "旧枢纽冒险者工会",
+      "count": 5,
+      "world_position": "旧枢纽冒险者工会 / O7塔脊（原传统法师公会）",
+      "ten_yuan_main": "nx",
+      "ten_yuan_secondary": "zx",
+      "p00": "青绿",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0269",
+        "AST-0281",
+        "AST-0282",
+        "AST-0286",
+        "AST-0287"
+      ]
+    },
+    {
+      "group_key": "I03_断裂城市晒衣",
+      "count": 1,
+      "world_position": "G3 断裂带",
+      "ten_yuan_main": "x并z",
+      "ten_yuan_secondary": "n",
+      "p00": "墨青+暗红",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0270"
+      ]
+    },
+    {
+      "group_key": "骨骼空港",
+      "count": 2,
+      "world_position": "机械空港·骨构空港（同上）",
+      "ten_yuan_main": "x",
+      "ten_yuan_secondary": "nz",
+      "p00": "MONO+青绿",
+      "kind": "编号场景",
+      "note": "同族",
+      "asset_ids": [
+        "AST-0271",
+        "AST-0283"
+      ]
+    },
+    {
+      "group_key": "I05_机械植物街区",
+      "count": 1,
+      "world_position": "机械植物街区",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "xz",
+      "p00": "青绿",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0272"
+      ]
+    },
+    {
+      "group_key": "I06_空白禁区观景台",
+      "count": 1,
+      "world_position": "空白禁区观景台",
+      "ten_yuan_main": "xz",
+      "ten_yuan_secondary": "nz",
+      "p00": "淡青灰",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0273"
+      ]
+    },
+    {
+      "group_key": "I07_巨根雨林导航",
+      "count": 1,
+      "world_position": "巨根雨林导航",
+      "ten_yuan_main": "xn",
+      "ten_yuan_secondary": "xz",
+      "p00": "青绿",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0274"
+      ]
+    },
+    {
+      "group_key": "I08_奇美拉断层巢穴",
+      "count": 1,
+      "world_position": "奇美拉断层巢穴（威胁/外部）",
+      "ten_yuan_main": "x并z",
+      "ten_yuan_secondary": "nz",
+      "p00": "墨青",
+      "kind": "编号场景",
+      "note": "奇美拉在禁用清单，仅作场景",
+      "asset_ids": [
+        "AST-0275"
+      ]
+    },
+    {
+      "group_key": "I09_维修铺科研室",
+      "count": 1,
+      "world_position": "维修铺科研室 / O1钢派",
+      "ten_yuan_main": "xn",
+      "ten_yuan_secondary": "n",
+      "p00": "青绿",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0276"
+      ]
+    },
+    {
+      "group_key": "I10_垂直城市运输层",
+      "count": 2,
+      "world_position": "垂直城市运输层 / G1",
+      "ten_yuan_main": "n",
+      "ten_yuan_secondary": "xn",
+      "p00": "墨青",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0277",
+        "AST-0278"
+      ]
+    },
+    {
+      "group_key": "I11_废设施训练场",
+      "count": 1,
+      "world_position": "废设施训练场",
+      "ten_yuan_main": "zx",
+      "ten_yuan_secondary": "nz",
+      "p00": "墨青",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0279"
+      ]
+    },
+    {
+      "group_key": "I12_脊椎夜市",
+      "count": 1,
+      "world_position": "脊椎夜市（巨物脊椎段）",
+      "ten_yuan_main": "zn",
+      "ten_yuan_secondary": "nx",
+      "p00": "暗红+墨青",
+      "kind": "编号场景",
+      "note": "—",
+      "asset_ids": [
+        "AST-0280"
+      ]
+    },
+    {
+      "group_key": "I13_",
+      "count": 2,
+      "world_position": "EXTERNAL_REF 外部参考（异世界地名）",
+      "ten_yuan_main": "—",
+      "ten_yuan_secondary": "—",
+      "p00": "—",
+      "kind": "外部参考",
+      "note": "洛维恩湖岸台地领",
+      "asset_ids": [
+        "AST-0284",
+        "AST-0285"
+      ]
+    },
+    {
+      "group_key": "AFTER",
+      "count": 1,
+      "world_position": "对照图（处理前后）",
+      "ten_yuan_main": "—",
+      "ten_yuan_secondary": "—",
+      "p00": "—",
+      "kind": "对照图",
+      "note": "—",
+      "asset_ids": [
+        "AST-0288"
+      ]
+    },
+    {
+      "group_key": "BEFORE",
+      "count": 1,
+      "world_position": "对照图（处理前后）",
+      "ten_yuan_main": "—",
+      "ten_yuan_secondary": "—",
+      "p00": "—",
+      "kind": "对照图",
+      "note": "—",
+      "asset_ids": [
+        "AST-0289"
+      ]
+    }
+  ],
+  "unmatched_groups": []
+}

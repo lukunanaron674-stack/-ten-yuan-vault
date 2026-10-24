@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.2",
+  "task_id": "CHAR-R4-CH003-001",
+  "catalog_version_before": null,
+  "catalog_version_after": null,
+  "catalog_state_note": "Global LOCAL_ASSET_CATALOG_LITE remains UNINITIALIZED; this is a task-scoped verified increment, not a full catalog initialization.",
+  "roots": [
+    {
+      "root_id": "LLL_CHAR_ASSETS",
+      "label": "黎黎隆角色库/06_assets",
+      "local_mapping_file": ".local_asset_roots.json"
+    }
+  ],
+  "verified_source_assets": [
+    {
+      "asset_id": "AST-IMAGE-8F4BB563",
+      "root_id": "LLL_CHAR_ASSETS",
+      "relative_path": "CH-003/CH-003_逃票魔法学徒_06x08设定融合版_主参考.png",
+      "file_hash_sha256": "8F4BB563E8123B958631D163A0298687509D29E62D5BD82BF327C8E06B4970F0",
+      "media_type": "IMAGE",
+      "width": 1312,
+      "height": 1199,
+      "project_refs": ["黎黎隆项目"],
+      "character_ids": ["LLL-CHAR-003"],
+      "roles": ["identity_anchor", "style_anchor"],
+      "lock_status": "CANDIDATE",
+      "status": "PRESENT"
+    },
+    {
+      "asset_id": "AST-IMAGE-E6071AC0",
+      "root_id": "LLL_CHAR_ASSETS",
+      "relative_path": "CH-003/CH-003_逃票魔法学徒_9x16_四宫格设定稿_单人_v1.png",
+      "file_hash_sha256": "E6071AC0E593D95AE8887E910EB3954E7D351E38C53156DD5E9B4FC1F97279EC",
+      "media_type": "IMAGE",
+      "width": 941,
+      "height": 1672,
+      "project_refs": ["黎黎隆项目"],
+      "character_ids": ["LLL-CHAR-003"],
+      "roles": ["identity_anchor", "style_anchor"],
+      "lock_status": "CANDIDATE",
+      "status": "PRESENT"
+    },
+    {
+      "asset_id": "AST-IMAGE-10BF021C",
+      "root_id": "LLL_CHAR_ASSETS",
+      "relative_path": "CH-003/CH-003_逃票魔法学徒_9x16_四格_灰纸水彩校准_v1.png",
+      "file_hash_sha256": "10BF021CFAFE7D58E67AF03C33A153BD527922B637087DA1D29D5A973C06F9EF",
+      "media_type": "IMAGE",
+      "width": 941,
+      "height": 1672,
+      "project_refs": ["黎黎隆项目"],
+      "character_ids": ["LLL-CHAR-003"],
+      "roles": ["style_anchor"],
+      "lock_status": "CANDIDATE",
+      "style_review_status": "PENDING",
+      "status": "PRESENT"
+    }
+  ],
+  "added": [
+    {
+      "asset_id": "AST-IMAGE-6E858457",
+      "root_id": "LLL_CHAR_ASSETS",
+      "relative_path": "CH-003/CHAR-R4-CH003-001_candidate.png",
+      "file_name": "CHAR-R4-CH003-001_candidate.png",
+      "file_hash_sha256": "6E858457D5E02D58630B0A0D5F235A88159E8A5CC92E7396B8036932674782D9",
+      "media_type": "IMAGE",
+      "width": 941,
+      "height": 1672,
+      "project_refs": ["黎黎隆项目"],
+      "character_ids": ["LLL-CHAR-003"],
+      "roles": ["character_visual_candidate"],
+      "tags": ["CHAR-R4-CH003-001", "9:16", "2x2", "body-proportion-exploration", "gray-paper-watercolor"],
+      "generation_model": null,
+      "generation_workflow_id": null,
+      "generation_params_ref": "黎黎隆项目/20_Agent系统/07_本地执行/角色生图/prompts/CHAR-R4-CH003-001_prompt.md",
+      "generation_seed": null,
+      "lock_status": "CANDIDATE",
+      "style_review_status": "PENDING",
+      "usable_for_h3": false,
+      "status": "PRESENT",
+      "notes": "Candidate only; global catalog remains uninitialized; model/version and seed were not exposed by the backend."
+    }
+  ],
+  "changed": [],
+  "missing": [],
+  "duplicate_links": [],
+  "tag_updates": [],
+  "seed_links_added": [],
+  "seed_links_unresolved": ["AST-IMAGE-6E858457: backend did not expose seed/model version"]
+}

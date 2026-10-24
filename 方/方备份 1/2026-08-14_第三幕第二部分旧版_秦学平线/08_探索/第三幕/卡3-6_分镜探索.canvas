@@ -1,0 +1,185 @@
+{
+	"nodes": [
+		{
+			"id": "title",
+			"type": "text",
+			"text": "⏱ 分镜探索｜卡3-6",
+			"x": -150,
+			"y": -700,
+			"width": 300,
+			"height": 50,
+			"color": "6"
+		},
+		{
+			"id": "hub",
+			"type": "text",
+			"text": "⏱ 分镜描述词 ×10｜卡3-6 秘密传出\n\n一句话：15s 现实→抽象过渡，怎么让「传递的紧张感」进入黑红抽象而不破功？\n\n📄 [[方/08_探索/第三幕/卡3-6_秘密传出_探索.md|探索卡]]",
+			"x": -220,
+			"y": -460,
+			"width": 440,
+			"height": 150,
+			"color": "5"
+		},
+		{
+			"id": "n1",
+			"type": "text",
+			"text": "第1名｜9.0分｜配比 nx5 zx4 xz3 n2｜0-6s 冷灰蓝手与纸交接（只拍手）；6-10s 另一处接稿同景别；10-15s 人物渐隐、四手围纸、红从纸边漫入至纯红；每段交接后停半拍再动。",
+			"x": 496,
+			"y": 116,
+			"width": 360,
+			"height": 144,
+			"color": "4"
+		},
+		{
+			"id": "n2",
+			"type": "text",
+			"text": "第2名｜8.5分｜配比 zx6 nx4 xn3｜0-5s 手特写交纸（两次快切）；5-9s 接稿；9-15s 四手并拢→张开，红「渗」入，速度均匀。",
+			"x": 465,
+			"y": 307,
+			"width": 360,
+			"height": 130,
+			"color": "3"
+		},
+		{
+			"id": "n3",
+			"type": "text",
+			"text": "第3名｜8.0分｜配比 xz5 n4 nx3 zx2｜0-6s 交接加轻微窗光与风；6-11s 接稿停顿更久；11-15s 红漫入更慢，结尾停在纯红中一张纸的黑影。",
+			"x": 379,
+			"y": 494,
+			"width": 360,
+			"height": 130,
+			"color": "3"
+		},
+		{
+			"id": "n4",
+			"type": "text",
+			"text": "第4名｜8.0分｜配比 xn6 x5 nz2｜0-5s 桌下交接；5-9s 衣襟交接；9-15s 红入侵用斜线构图压迫式漫入。",
+			"x": 238,
+			"y": 658,
+			"width": 360,
+			"height": 130,
+			"color": "3"
+		},
+		{
+			"id": "n5",
+			"type": "text",
+			"text": "第5名｜7.5分｜配比 nx5 nz3 zx3 x2｜0-5s 交纸；5-7s 白纸特写半秒；7-11s 接稿；11-15s 红漫入前先黑背景。",
+			"x": 48,
+			"y": 785,
+			"width": 360,
+			"height": 130,
+			"color": "1"
+		},
+		{
+			"id": "n6",
+			"type": "text",
+			"text": "第6名｜7.5分｜配比 zx5 nx4 x3 n3｜0-6s 中景切手两次；6-10s 方与程只留轮廓；10-15s 背景先黑再压人物，红最后漫入。",
+			"x": -180,
+			"y": 860,
+			"width": 360,
+			"height": 130,
+			"color": "1"
+		},
+		{
+			"id": "n7",
+			"type": "text",
+			"text": "第7名｜7.0分｜配比 xz4 x4 nx4 n3｜0-6s 手影略晃、纸边微颤；6-11s 接稿带一次停顿；11-15s 红从纸角切入，逐渐满屏。",
+			"x": -431,
+			"y": 872,
+			"width": 360,
+			"height": 130,
+			"color": "1"
+		},
+		{
+			"id": "n8",
+			"type": "text",
+			"text": "第8名｜7.0分｜配比 xn5 x5 nz3 zx2｜0-5s 手变剪影直接交纸；5-9s 红吞纸；9-15s 纯红里四手黑轮廓散开。",
+			"x": -687,
+			"y": 814,
+			"width": 360,
+			"height": 130,
+			"color": "1"
+		},
+		{
+			"id": "n9",
+			"type": "text",
+			"text": "第9名｜6.5分｜配比 n4 nx4 xz3 zx3｜0-7s 极静极慢交接；7-12s 环境抽空；12-15s 红如墨晕开，慢收。",
+			"x": -930,
+			"y": 685,
+			"width": 360,
+			"height": 130,
+			"color": "1"
+		},
+		{
+			"id": "n10",
+			"type": "text",
+			"text": "第10名｜6.0分｜配比 x6 xn4 nx3 nz2｜0-4s 快切交接；4-8s 红失控抖动漫入；8-15s 四手黑轮廓在纯红里静止。",
+			"x": -1137,
+			"y": 487,
+			"width": 360,
+			"height": 130,
+			"color": "1"
+		}
+	],
+	"edges": [
+		{
+			"id": "e-title-hub",
+			"fromNode": "title",
+			"toNode": "hub"
+		},
+		{
+			"id": "e-hub-n1",
+			"fromNode": "hub",
+			"toNode": "n1"
+		},
+		{
+			"id": "e-hub-n2",
+			"fromNode": "hub",
+			"toNode": "n2"
+		},
+		{
+			"id": "e-hub-n3",
+			"fromNode": "hub",
+			"toNode": "n3"
+		},
+		{
+			"id": "e-hub-n4",
+			"fromNode": "hub",
+			"toNode": "n4"
+		},
+		{
+			"id": "e-hub-n5",
+			"fromNode": "hub",
+			"toNode": "n5"
+		},
+		{
+			"id": "e-hub-n6",
+			"fromNode": "hub",
+			"toNode": "n6"
+		},
+		{
+			"id": "e-hub-n7",
+			"fromNode": "hub",
+			"toNode": "n7"
+		},
+		{
+			"id": "e-hub-n8",
+			"fromNode": "hub",
+			"toNode": "n8"
+		},
+		{
+			"id": "e-hub-n9",
+			"fromNode": "hub",
+			"toNode": "n9"
+		},
+		{
+			"id": "e-hub-n10",
+			"fromNode": "hub",
+			"toNode": "n10"
+		}
+	],
+	"metadata": {
+		"version": "1.0-1.0",
+		"frontmatter": {}
+	}
+}

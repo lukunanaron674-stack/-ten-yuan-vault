@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "⚓ 海盗/航海\nxz+zx 边缘+执行\n\n游离于秩序之外\n在海上建立自己的规则\n海盗不是坏人\n是「不想被规则定义」的人",
+      "x": 400,
+      "y": 30,
+      "width": 320,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "ty_xz",
+      "type": "text",
+      "text": "xz（边缘/漂流）\n核心\n\n海是最大的边缘\n没有路标/没有国界\n海盗的xz在于\n他们选择了不被陆地定义的生活",
+      "x": 80,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "ty_zx",
+      "type": "text",
+      "text": "zx（目标/执行）\n核心\n\n海盗不是流浪——\n他们有目标：宝藏/自由/复仇\n每一张航海图\n都是一份zx的执行计划",
+      "x": 340,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_n",
+      "type": "text",
+      "text": "n（容器/承载）\n基底\n\n船就是海盗的容器\n船不只是交通工具\n是家/是王国/是坟墓\n——船的沉没就是文明的终结",
+      "x": 600,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "ty_x",
+      "type": "text",
+      "text": "x（欲望/吞噬）\n暗面\n\n大海本身就是x\n它吞噬船只/生命/希望\n海盗的欲望（黄金/朗姆/女人）\n在海上被放大了",
+      "x": 860,
+      "y": 190,
+      "width": 230,
+      "height": 150,
+      "color": "5"
+    },
+    {
+      "id": "work_0",
+      "type": "text",
+      "text": "📚 加勒比海盗\nxz+zx\n\n杰克斯派洛不是海盗\n是xz的化身——\n永远在边缘\n永远执行自己的计划\n没人能定义他",
+      "x": 80,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_1",
+      "type": "text",
+      "text": "📚 海贼王\nzx+zn\n\n路飞的zx（我是要成为海贼王的男人）\n+ 伟大航路的zn（一切都有意义）\n——海盗变成了最宏大的zn容器",
+      "x": 400,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "work_2",
+      "type": "text",
+      "text": "🎮 刺客信条·黑旗\nxz+nx\n\n爱德华不是英雄\n是海盗——\n追逐利益（nx）\n但被历史（xz）推着走",
+      "x": 720,
+      "y": 390,
+      "width": 280,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "principle",
+      "type": "text",
+      "text": "🎨 海盗/航海的视觉设计原则\n\n① 海不是蓝的——海的颜色取决于天气/时间/心情。奇幻的海可以是绿的/紫的/黑的\n② 船是有表情的。每一艘船的设计（帆/船首像/伤痕）都在说船的性格\n③ 港口比海更重要。港口的杂乱/气味/人群/酒馆——那是xz（边缘）的交汇点\n④ 海盗旗不只是骷髅——是宣言。每一个标志都在说「我们是不同的人」",
+      "x": 150,
+      "y": 590,
+      "width": 900,
+      "height": 170,
+      "color": "1"
+    },
+    {
+      "id": "trap",
+      "type": "text",
+      "text": "⚠️ 海盗/航海的常见误判\n\n🔴 海盗=坏人\n→ 海盗是不服从规则的人。规则是陆地定的——海上的规则不一样\n\n🔴 航海=冒险\n→ 航海的核心不是冒险是生存。海是xz——你不尊重它它就会杀了你\n\n🔴 海盗=自由\n→ 海盗不是自由的——他们被海（xz）和欲望（x）双重绑架",
+      "x": 150,
+      "y": 810,
+      "width": 700,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "seal",
+      "type": "text",
+      "text": "📌 封存句\n\n海盗不是选择自由\n是选择了不被定义\n——海上没有法律\n但有比法律更可怕的东西\n叫海\n\n← [[奇幻子类型谱系.canvas]]",
+      "x": 450,
+      "y": 1020,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_xz",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_zx",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_n",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "ty_x",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_0",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_1",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "work_2",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "principle",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "principle",
+      "fromSide": "bottom",
+      "toNode": "trap",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "trap",
+      "fromSide": "bottom",
+      "toNode": "seal",
+      "toSide": "top"
+    }
+  ]
+}

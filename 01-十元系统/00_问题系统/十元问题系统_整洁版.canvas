@@ -1,0 +1,447 @@
+{
+  "nodes": [
+    {
+      "id": "G0",
+      "type": "text",
+      "text": "# G0｜AI能理解、预测、生成并编排人的目标感受\n\n核心目标：不是给对象判十元，而是学习「什么形式 → 让人产生什么感受」，再反向用目标感受控制创作。\n\n[[01-十元系统/00_问题系统/十元问题总纲.md|打开总纲]]",
+      "x": 0,
+      "y": 300,
+      "width": 700,
+      "height": 360,
+      "color": "6"
+    },
+    {
+      "id": "LANE-A",
+      "type": "text",
+      "text": "# A｜单点感受能力线\n\n定义/测量 → 诱发机制 → AI预测 → 反向生成\n\n这是最快获得“AI会制造目标感受”能力的主线。",
+      "x": 750,
+      "y": -300,
+      "width": 650,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "G1",
+      "type": "text",
+      "text": "# G1｜十种感受可定义、可测量\n状态：ACTIVE\n\n先确保“人到底感觉到了什么”可记录。",
+      "x": 750,
+      "y": 0,
+      "width": 520,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "Q-FEEL-001",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-FEEL-001_十种感受定义与人类测量尚未形成稳定闭环.md",
+      "x": 1450,
+      "y": 0,
+      "width": 650,
+      "height": 210,
+      "color": "5"
+    },
+    {
+      "id": "G2",
+      "type": "text",
+      "text": "# G2｜五轴成为五组感受控制旋钮\n状态：ACTIVE\n\n旧结构变量不废弃，改验“能否推动感受位移”。",
+      "x": 750,
+      "y": 280,
+      "width": 520,
+      "height": 230,
+      "color": "1"
+    },
+    {
+      "id": "Q-AXIS-002",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-AXIS-002_五轴需要从本体判定改造成五组感受控制旋钮并重新验证.md",
+      "x": 1450,
+      "y": 280,
+      "width": 650,
+      "height": 210,
+      "color": "5"
+    },
+    {
+      "id": "G6",
+      "type": "text",
+      "text": "# G6｜跨媒介形式→感受诱发库\n状态：ACTIVE\n\n发型 / 服装 / 角色 / 场景 / 音乐 / 镜头 / 叙事统一成诱发规则。",
+      "x": 750,
+      "y": 560,
+      "width": 520,
+      "height": 230,
+      "color": "1"
+    },
+    {
+      "id": "Q-MEDIA-001",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-MEDIA-001_视觉音乐角色服装等跨媒介诱发规则尚未统一成形式到感受库.md",
+      "x": 1450,
+      "y": 560,
+      "width": 650,
+      "height": 210,
+      "color": "5"
+    },
+    {
+      "id": "G5",
+      "type": "text",
+      "text": "# G5｜AI能理解并预测人的感受谱\n状态：WAITING_DATA\n\n输入刺激+语境，输出十元1–10谱、诱发依据与竞争解释。",
+      "x": 750,
+      "y": 840,
+      "width": 520,
+      "height": 230,
+      "color": "1"
+    },
+    {
+      "id": "Q-DSL-002",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-DSL-002_AI尚不能稳定理解和预测人的十元感受谱.md",
+      "x": 1450,
+      "y": 840,
+      "width": 650,
+      "height": 210,
+      "color": "5"
+    },
+    {
+      "id": "G7",
+      "type": "text",
+      "text": "# G7｜目标感受→AI反向生成\n状态：WAITING_DATA\n\n给目标感受谱，AI选择形式并生成，再由人盲审。",
+      "x": 750,
+      "y": 1120,
+      "width": 520,
+      "height": 230,
+      "color": "1"
+    },
+    {
+      "id": "Q-GEN-002",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-GEN-002_AI尚不能从目标感受谱稳定反向生成让人产生该感受的形式.md",
+      "x": 1450,
+      "y": 1120,
+      "width": 650,
+      "height": 210,
+      "color": "5"
+    },
+    {
+      "id": "LANE-B",
+      "type": "text",
+      "text": "# B｜复合审美 / 时间线\n\n生克补 → 动态链\n\n用于“魅力、张力、回收、节奏”等高级感受编排；不阻塞第一版单点感受生成。",
+      "x": 2550,
+      "y": -300,
+      "width": 650,
+      "height": 240,
+      "color": "3"
+    },
+    {
+      "id": "G3",
+      "type": "text",
+      "text": "# G3｜生克补成为感受关系\n状态：WAITING_UPSTREAM\n\n研究一种感受如何增强、压制、补全另一种感受。",
+      "x": 2550,
+      "y": 0,
+      "width": 520,
+      "height": 230,
+      "color": "3"
+    },
+    {
+      "id": "Q-REL-002",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-REL-002_生克补需要改写为感受之间的增强压制补全关系并重新验证.md",
+      "x": 3250,
+      "y": 0,
+      "width": 650,
+      "height": 210,
+      "color": "5"
+    },
+    {
+      "id": "G4",
+      "type": "text",
+      "text": "# G4｜动态链成为感受时间曲线\n状态：WAITING_UPSTREAM\n\n不是标签按顺序出现，而是人的感受真的随时间发生预期变化。",
+      "x": 2550,
+      "y": 280,
+      "width": 520,
+      "height": 230,
+      "color": "3"
+    },
+    {
+      "id": "Q-DYN-002",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-DYN-002_动态链需要从标签序列改造成时间上的感受编排模型.md",
+      "x": 3250,
+      "y": 280,
+      "width": 650,
+      "height": 210,
+      "color": "5"
+    },
+    {
+      "id": "LANE-C",
+      "type": "text",
+      "text": "# C｜治理 / 长时间实验工厂\n\n代理可以每小时跑，但只负责：挑假设→预注册→A/B→生成→盲审卡。\n\n人的真实感受必须经过 HUMAN GATE。",
+      "x": 2550,
+      "y": 620,
+      "width": 650,
+      "height": 260,
+      "color": "4"
+    },
+    {
+      "id": "G8",
+      "type": "text",
+      "text": "# G8｜自动实验不自证、不漂移\n状态：ACTIVE\n\n长时间自动化按信息增益生产实验，人按批次集中审核。",
+      "x": 2550,
+      "y": 920,
+      "width": 520,
+      "height": 230,
+      "color": "4"
+    },
+    {
+      "id": "Q-SYS-002",
+      "type": "file",
+      "file": "01-十元系统/00_问题系统/Q-SYS-002_每小时代理需要变成感受实验工厂但最终判断必须经过人类门禁.md",
+      "x": 3250,
+      "y": 920,
+      "width": 650,
+      "height": 210,
+      "color": "5"
+    },
+    {
+      "id": "EVIDENCE",
+      "type": "text",
+      "text": "# 证据升级\n\nE0 旧假设\n→ E1 单人重复\n→ E2 多人趋势\n→ E3 跨素材/场景\n→ E4 跨媒介\n→ E5 AI反向生成有效\n\n只有 E5 才进入“AI创作控制规则库”。",
+      "x": 4200,
+      "y": 120,
+      "width": 570,
+      "height": 360,
+      "color": "6"
+    },
+    {
+      "id": "ORDER",
+      "type": "text",
+      "text": "# 当前执行排序\n\n① Q-FEEL-001\n② Q-AXIS-002 + Q-MEDIA-001 并行\n③ Q-DSL-002\n④ Q-GEN-002\n\n高级支线：Q-REL-002 → Q-DYN-002\n\nQ-SYS-002 从现在开始并行搭实验工厂。",
+      "x": 4200,
+      "y": -300,
+      "width": 570,
+      "height": 360,
+      "color": "4"
+    },
+    {
+      "id": "LEGACY",
+      "type": "text",
+      "text": "# 旧问题树｜冻结保留\n\n迁移前 27 个 Q 不删除，但退出当前主 Canvas。\n\n[[01-十元系统/00_问题系统/历史冻结/十元问题系统_v1.0_感受迁移前_20261007.canvas|打开 v1.0 旧问题树]]\n\n旧问题若仍有价值，迁移为新 Q 的“候选诱发机制 / 历史债 / 失败样本”。",
+      "x": 4200,
+      "y": 620,
+      "width": 570,
+      "height": 330,
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0a",
+      "fromNode": "G0",
+      "fromSide": "right",
+      "toNode": "LANE-A",
+      "toSide": "left",
+      "label": "主能力线"
+    },
+    {
+      "id": "e0b",
+      "fromNode": "G0",
+      "fromSide": "right",
+      "toNode": "LANE-B",
+      "toSide": "left",
+      "label": "高级审美线"
+    },
+    {
+      "id": "e0c",
+      "fromNode": "G0",
+      "fromSide": "right",
+      "toNode": "LANE-C",
+      "toSide": "left",
+      "label": "治理层"
+    },
+    {
+      "id": "eG1Q",
+      "fromNode": "G1",
+      "fromSide": "right",
+      "toNode": "Q-FEEL-001",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "eQFG2",
+      "fromNode": "Q-FEEL-001",
+      "fromSide": "bottom",
+      "toNode": "G2",
+      "toSide": "top",
+      "label": "enables"
+    },
+    {
+      "id": "eG2Q",
+      "fromNode": "G2",
+      "fromSide": "right",
+      "toNode": "Q-AXIS-002",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "eQFG6",
+      "fromNode": "Q-FEEL-001",
+      "fromSide": "bottom",
+      "toNode": "G6",
+      "toSide": "top",
+      "label": "enables"
+    },
+    {
+      "id": "eG6Q",
+      "fromNode": "G6",
+      "fromSide": "right",
+      "toNode": "Q-MEDIA-001",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "eAxisDSL",
+      "fromNode": "Q-AXIS-002",
+      "fromSide": "bottom",
+      "toNode": "G5",
+      "toSide": "top",
+      "label": "feeds"
+    },
+    {
+      "id": "eMediaDSL",
+      "fromNode": "Q-MEDIA-001",
+      "fromSide": "bottom",
+      "toNode": "G5",
+      "toSide": "top",
+      "label": "feeds"
+    },
+    {
+      "id": "eG5Q",
+      "fromNode": "G5",
+      "fromSide": "right",
+      "toNode": "Q-DSL-002",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "eDslGen",
+      "fromNode": "Q-DSL-002",
+      "fromSide": "bottom",
+      "toNode": "G7",
+      "toSide": "top",
+      "label": "enables"
+    },
+    {
+      "id": "eG7Q",
+      "fromNode": "G7",
+      "fromSide": "right",
+      "toNode": "Q-GEN-002",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "eAxisRel",
+      "fromNode": "Q-AXIS-002",
+      "fromSide": "right",
+      "toNode": "G3",
+      "toSide": "left",
+      "label": "基础"
+    },
+    {
+      "id": "eG3Q",
+      "fromNode": "G3",
+      "fromSide": "right",
+      "toNode": "Q-REL-002",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "eRelDyn",
+      "fromNode": "Q-REL-002",
+      "fromSide": "bottom",
+      "toNode": "G4",
+      "toSide": "top",
+      "label": "enables"
+    },
+    {
+      "id": "eG4Q",
+      "fromNode": "G4",
+      "fromSide": "right",
+      "toNode": "Q-DYN-002",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "eDynGen",
+      "fromNode": "Q-DYN-002",
+      "fromSide": "bottom",
+      "toNode": "Q-GEN-002",
+      "toSide": "top",
+      "label": "高级生成输入"
+    },
+    {
+      "id": "eG8Q",
+      "fromNode": "G8",
+      "fromSide": "right",
+      "toNode": "Q-SYS-002",
+      "toSide": "left",
+      "label": "blocks"
+    },
+    {
+      "id": "eSysFeel",
+      "fromNode": "Q-SYS-002",
+      "fromSide": "left",
+      "toNode": "Q-FEEL-001",
+      "toSide": "right",
+      "label": "HUMAN_GATE"
+    },
+    {
+      "id": "eSysAxis",
+      "fromNode": "Q-SYS-002",
+      "fromSide": "left",
+      "toNode": "Q-AXIS-002",
+      "toSide": "right",
+      "label": "实验生产"
+    },
+    {
+      "id": "eSysMedia",
+      "fromNode": "Q-SYS-002",
+      "fromSide": "left",
+      "toNode": "Q-MEDIA-001",
+      "toSide": "right",
+      "label": "实验生产"
+    },
+    {
+      "id": "eOrder",
+      "fromNode": "ORDER",
+      "fromSide": "left",
+      "toNode": "Q-GEN-002",
+      "toSide": "right",
+      "label": "路线说明"
+    },
+    {
+      "id": "eEv",
+      "fromNode": "EVIDENCE",
+      "fromSide": "left",
+      "toNode": "Q-SYS-002",
+      "toSide": "right",
+      "label": "统一证据等级"
+    },
+    {
+      "id": "eLegacy",
+      "fromNode": "LANE-C",
+      "fromSide": "right",
+      "toNode": "LEGACY",
+      "toSide": "left",
+      "label": "v1.0 旧问题树冻结"
+    }
+  ],
+  "metadata": {
+    "version": "v2.0",
+    "frontmatter": {
+      "type": "ten-yuan-feeling-problem-system",
+      "status": "ACTIVE",
+      "updated": "2026-10-07",
+      "active_q_count": 8,
+      "legacy_q_count": 27,
+      "core_goal": "AI能理解、预测、生成并编排人的目标感受"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"edges":[
+		{"id":"edge-fzm-to-new-v2","fromNode":"source-fzm-20261022","fromSide":"right","toNode":"design-v2-20261022","toSide":"left","color":"2","label":"风格与比例参考"},
+		{"id":"edge-note-v2","fromNode":"design-v2-20261022","fromSide":"bottom","toNode":"note-v2-20261022","toSide":"top","color":"3","label":"概念稿约束"},
+		{"id":"edge-claire-v4-20261023","fromNode":"title-20261022","fromSide":"right","toNode":"b7c2b5f603202601","toSide":"left","color":"2","label":"Claire V4｜待审"},
+		{"id":"edge-lucas-v4-20261023","fromNode":"title-20261022","fromSide":"right","toNode":"c8d3c6f704202602","toSide":"left","color":"2","label":"Lucas V4｜待审"},
+		{"id":"edge-marcel-v2-20261023","fromNode":"title-20261022","fromSide":"right","toNode":"d9e4d7a805202603","toSide":"left","color":"2","label":"Marcel V2｜待审"},
+		{"id":"edge-status-issue-20261023","fromNode":"a1c1a4e5f6022023","fromSide":"bottom","toNode":"e0f5e8b906202604","toSide":"top","color":"4","label":"Linear 工单"}
+	],
+	"nodes":[
+		{"type":"group","id":"zone-20261022","x":-470,"y":-35,"width":2600,"height":1010,"color":"2","label":"方项目风格迁移｜书店角色候选与审核状态"},
+		{"file":"方/07_素材图/二手书店时间信封_角色设计/03_Marcel_60岁_9比16四宫格_方志敏风格V2.png","id":"d9e4d7a805202603","type":"file","x":1590,"y":0,"width":420,"height":746},
+		{"type":"text","text":"# 二手书店的时间信封｜角色设计\\n\\n美术方向参考《方志敏》项目的二维线稿、平涂质感与成年微Q比例。只借鉴画法与构图方法，不迁移其身份、脸型、服装或历史道具。\\n\\n人物年龄与身份按工单给定信息；其他外观设定仍是候选。","id":"title-20261022","x":-430,"y":-350,"width":760,"height":220,"color":"6"},
+		{"id":"source-fzm-20261022","type":"file","file":"方/07_素材图/二手书店时间信封_角色设计/方志敏_干净囚服三视图_风格参考.png","x":-430,"y":0,"width":379,"height":249},
+		{"id":"design-v2-20261022","type":"file","file":"方/07_素材图/二手书店时间信封_角色设计/二手书店角色设计_图生图_v2.png","x":70,"y":0,"width":440,"height":175},
+		{"type":"text","text":"## 迭代与审核说明\\n\\n- 风格参考：角色库《方志敏》干净囚服三视图。\\n- 保留：二维手绘线稿、平涂阴影、克制暖冷光影、成年约五头身。\\n- 不复用：方志敏的面貌、服装、历史身份与道具。\\n- 大赛给定的第5号短梗概即全部给定文本，不再等待另一个完整剧本；未指定的角色外观仍按改编候选处理。\\n- 当前方向：爱情＋悬疑；不是以亲情为主线。\\n- Claire V4、Lucas V4、Marcel V2 均为生成候选，待用户审核，未冻结、未标记 PASS。","id":"note-v2-20261022","x":70,"y":275,"width":440,"height":200,"color":"3"},
+		{"text":"# Linear 674-313｜当前状态｜2026-10-23\\n\\n工单 In Progress / Urgent。当前角色候选：Claire V4、Lucas V4、Marcel V2。仍待用户审核；生成完成不等于通过。\\n\\n按工单计划，下一步推进 90 秒片花节拍与 12–18 镜分镜（R2）。《方志敏》全片逐镜审计仍 PARTIAL。\\n\\n官方第5号给定短梗概就是全部给定文本；此前‘等待完整剧本’的说法已更正。","id":"a1c1a4e5f6022023","type":"text","x":650,"y":-350,"width":950,"height":300,"color":"2"},
+		{"file":"方/07_素材图/二手书店时间信封_角色设计/01_Claire_22岁_9比16四宫格_方志敏风格V4.png","id":"b7c2b5f603202601","type":"file","x":650,"y":0,"width":310,"height":551},
+		{"file":"方/07_素材图/二手书店时间信封_角色设计/02_Lucas_26岁_9比16四宫格_方志敏风格V4.png","id":"c8d3c6f704202602","type":"file","x":1120,"y":0,"width":420,"height":746},
+		{"id":"e0f5e8b906202604","url":"https://linear.app/674/issue/674-313/userncda-9c3二手书店的时间信封省赛片花与国赛三集","type":"link","x":650,"y":800,"width":450,"height":160}
+	]
+}

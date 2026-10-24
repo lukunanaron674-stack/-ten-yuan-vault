@@ -1,0 +1,52 @@
+filters:
+  and:
+    - file.hasProperty("subject_id")
+views:
+  - type: table
+    name: 全部实验对象
+    order:
+      - file.name
+      - subject_type
+      - red_heart
+      - z_stage
+      - xn_level
+      - nx_count
+      - asset_count
+      - main_ref
+      - review_status
+      - routing
+      - new_z_generated
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 红心角色池
+    filters:
+      and:
+        - red_heart == true
+    order:
+      - file.name
+      - z_stage
+      - main_ref
+      - review_status
+      - character_pack
+  - type: table
+    name: NPC 池
+    filters:
+      and:
+        - red_heart == false
+    order:
+      - file.name
+      - z_stage
+      - review_status
+      - routing
+      - new_z_generated
+  - type: table
+    name: 待 74 拍板（XN LOCK 队列）
+    filters:
+      and:
+        - xn_level == "candidate"
+    order:
+      - file.name
+      - main_ref
+      - review_status

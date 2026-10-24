@@ -1,0 +1,93 @@
+{
+  "run_id": "SCENE-AUDIT-674-68-004",
+  "issue_id": "674-68",
+  "status": "PARTIAL_PASS / RECOVERY_AUDIT_COMPLETE",
+  "scope": "只读恢复核验原先 30 个不可读或不支持项；不修改原图、不补采、不生图",
+  "input_count": 30,
+  "status_counts": {
+    "PIL_DECODED": 6,
+    "MISSING_FILE": 23,
+    "EMPTY_FILE": 1
+  },
+  "recovered_ids": [
+    "IMAGE-013",
+    "IMAGE-069",
+    "IMAGE-091",
+    "IMAGE-109",
+    "IMAGE-139",
+    "IMAGE-340"
+  ],
+  "missing_ids": [
+    "IMAGE-041",
+    "IMAGE-052",
+    "IMAGE-054",
+    "IMAGE-055",
+    "IMAGE-073",
+    "IMAGE-090",
+    "IMAGE-098",
+    "IMAGE-126",
+    "IMAGE-175",
+    "IMAGE-200",
+    "IMAGE-225",
+    "IMAGE-230",
+    "IMAGE-251",
+    "IMAGE-255",
+    "IMAGE-257",
+    "IMAGE-266",
+    "IMAGE-283",
+    "IMAGE-284",
+    "IMAGE-289",
+    "IMAGE-293",
+    "IMAGE-327",
+    "IMAGE-339",
+    "IMAGE-341"
+  ],
+  "empty_ids": [
+    "IMAGE-306"
+  ],
+  "sha256_matches_inventory": true,
+  "contact_sheet": "01_缩略联系表/04_恢复核验_候选/SCENE-UNREADABLE-AUDIT-674-68-001_contact.jpg",
+  "deliverables": [
+    {
+      "name": "02_世界观与画风双栏分析.md",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\02_世界观与画风双栏分析.md",
+      "exists": true,
+      "bytes": 10930,
+      "sha256": "04114eb949335908a4a3d8068c00caed7f758e8611027e5c55d288977d67f133"
+    },
+    {
+      "name": "05_生产框交接规格.md",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\05_生产框交接规格.md",
+      "exists": true,
+      "bytes": 3455,
+      "sha256": "f17fa07667960087229d503073145a2d04d27e6863aca110a297ad4b0885fff1"
+    },
+    {
+      "name": "06_不可读恢复核验.md",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\06_不可读恢复核验.md",
+      "exists": true,
+      "bytes": 8219,
+      "sha256": "ca543828c43c38d4b442f82c9d4cb2a0548033df485f92071ec610cfc722944f"
+    },
+    {
+      "name": "01_缩略联系表/04_恢复核验_候选/SCENE-UNREADABLE-AUDIT-674-68-001_contact.jpg",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\01_缩略联系表\\04_恢复核验_候选\\SCENE-UNREADABLE-AUDIT-674-68-001_contact.jpg",
+      "exists": true,
+      "bytes": 196207,
+      "sha256": "a7e5ac6a852a47c72265c4facb9708f765172835f4260b60e577314684408449"
+    },
+    {
+      "name": "执行日志/SCENE-UNREADABLE-AUDIT-674-68-001.json",
+      "path": "C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault\\黎黎隆项目\\04_场景\\05_素材整理_候选\\执行日志\\SCENE-UNREADABLE-AUDIT-674-68-001.json",
+      "exists": true,
+      "bytes": 16092,
+      "sha256": "092072ef69d034d1f31b0bd04c21bafa3c7ef2d07ed39c2bac4e59f78083a9ff"
+    }
+  ],
+  "h3": "NOT_RUN",
+  "batch_image_generation": "NOT_RUN",
+  "network_research": "NOT_RUN",
+  "git_push": "NOT_RUN",
+  "originals_modified": "NOT_MODIFIED",
+  "next_step": "恢复缺失源需用户提供原始挂载、归档路径或文件；未获得来源前不进入生产输入"
+}

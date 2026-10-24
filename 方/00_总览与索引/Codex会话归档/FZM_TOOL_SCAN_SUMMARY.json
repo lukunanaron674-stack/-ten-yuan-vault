@@ -1,0 +1,2209 @@
+{
+  "batch_id": "FZM-674-314-B2-tool-output",
+  "started_at": "2026-10-23T06:14:41.178065",
+  "totals": {
+    "evidence_rows": 9437,
+    "sessions_processed": 267
+  },
+  "session_results": [
+    {
+      "session_id": "019f739e-006f-7271-ab3c-2819456de897",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\07\\18\\rollout-2026-07-18T13-06-06-019f739e-006f-7271-ab3c-2819456de897.jsonl.zst",
+      "line_count": 20250,
+      "tool_evidence_rows": 80,
+      "role_counts": {
+        "TOOL": 73,
+        "CODEX_ASSISTANT": 7
+      }
+    },
+    {
+      "session_id": "019fc187-89ce-77b3-b3ad-dbafa2e62e87",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\02\\rollout-2026-08-02T16-11-53-019fc187-89ce-77b3-b3ad-dbafa2e62e87.jsonl.zst",
+      "line_count": 688,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "019fc79a-daaa-7103-821e-938c7a59e7f8",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\03\\rollout-2026-08-03T20-30-42-019fc79a-daaa-7103-821e-938c7a59e7f8.jsonl.zst",
+      "line_count": 388,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "019ff1d7-cf77-7842-804c-37711d73571d",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\12\\rollout-2026-08-12T01-21-20-019ff1d7-cf77-7842-804c-37711d73571d.jsonl.zst",
+      "line_count": 11124,
+      "tool_evidence_rows": 1135,
+      "role_counts": {
+        "TOOL": 593,
+        "CODEX_ASSISTANT": 542
+      }
+    },
+    {
+      "session_id": "019ff211-ced6-7a53-8190-1e7dd20d63c0",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\12\\rollout-2026-08-12T02-24-41-019ff211-ced6-7a53-8190-1e7dd20d63c0.jsonl.zst",
+      "line_count": 736,
+      "tool_evidence_rows": 47,
+      "role_counts": {
+        "CODEX_ASSISTANT": 17,
+        "TOOL": 30
+      }
+    },
+    {
+      "session_id": "019ff24b-bab0-7ba2-89e0-1625e3f9f18e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\12\\rollout-2026-08-12T03-27-57-019ff24b-bab0-7ba2-89e0-1625e3f9f18e.jsonl.zst",
+      "line_count": 9015,
+      "tool_evidence_rows": 14,
+      "role_counts": {
+        "TOOL": 13,
+        "CODEX_ASSISTANT": 1
+      }
+    },
+    {
+      "session_id": "019ff265-851e-7742-a210-4bb548a0509d",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\12\\rollout-2026-08-12T03-56-07-019ff265-851e-7742-a210-4bb548a0509d.jsonl.zst",
+      "line_count": 481,
+      "tool_evidence_rows": 19,
+      "role_counts": {
+        "TOOL": 12,
+        "CODEX_ASSISTANT": 7
+      }
+    },
+    {
+      "session_id": "019ff30a-c9bc-7b10-b011-48f2fbd2ec2e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\12\\rollout-2026-08-12T06-56-38-019ff30a-c9bc-7b10-b011-48f2fbd2ec2e.jsonl.zst",
+      "line_count": 145,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "019ff30b-21f6-7572-be66-3190664fc345",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\12\\rollout-2026-08-12T06-57-01-019ff30b-21f6-7572-be66-3190664fc345.jsonl.zst",
+      "line_count": 84,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "019ff958-e5c4-7270-9fba-5381015fe26c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\13\\rollout-2026-08-13T12-19-41-019ff958-e5c4-7270-9fba-5381015fe26c.jsonl.zst",
+      "line_count": 3386,
+      "tool_evidence_rows": 376,
+      "role_counts": {
+        "TOOL": 227,
+        "CODEX_ASSISTANT": 149
+      }
+    },
+    {
+      "session_id": "019ffebf-414b-73a3-b1d8-73beb8205955",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\14\\rollout-2026-08-14T13-29-34-019ffebf-414b-73a3-b1d8-73beb8205955.jsonl.zst",
+      "line_count": 267,
+      "tool_evidence_rows": 40,
+      "role_counts": {
+        "TOOL": 32,
+        "CODEX_ASSISTANT": 8
+      }
+    },
+    {
+      "session_id": "019fff04-577f-78d1-86d4-fc694f14f7a2",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\14\\rollout-2026-08-14T14-45-02-019fff04-577f-78d1-86d4-fc694f14f7a2.jsonl.zst",
+      "line_count": 2023,
+      "tool_evidence_rows": 161,
+      "role_counts": {
+        "TOOL": 95,
+        "CODEX_ASSISTANT": 66
+      }
+    },
+    {
+      "session_id": "01a00063-2a4b-70c3-9c3f-3d5ffe237498",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\14\\rollout-2026-08-14T21-08-14-01a00063-2a4b-70c3-9c3f-3d5ffe237498.jsonl.zst",
+      "line_count": 185,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a0010d-aea5-77d2-89ef-b850b36e032c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T00-14-29-01a0010d-aea5-77d2-89ef-b850b36e032c.jsonl.zst",
+      "line_count": 9896,
+      "tool_evidence_rows": 1119,
+      "role_counts": {
+        "TOOL": 556,
+        "CODEX_ASSISTANT": 563
+      }
+    },
+    {
+      "session_id": "01a00151-6796-77b3-b85b-4da959421be0",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T01-28-27-01a00151-6796-77b3-b85b-4da959421be0.jsonl.zst",
+      "line_count": 695,
+      "tool_evidence_rows": 4,
+      "role_counts": {
+        "TOOL": 3,
+        "CODEX_ASSISTANT": 1
+      }
+    },
+    {
+      "session_id": "01a00196-a300-7b10-b038-69a7f349d507",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T02-44-04-01a00196-a300-7b10-b038-69a7f349d507.jsonl.zst",
+      "line_count": 8537,
+      "tool_evidence_rows": 907,
+      "role_counts": {
+        "TOOL": 460,
+        "CODEX_ASSISTANT": 447
+      }
+    },
+    {
+      "session_id": "01a00328-305d-7661-8099-d04351d6b3fa",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T10-02-40-01a00328-305d-7661-8099-d04351d6b3fa.jsonl.zst",
+      "line_count": 5381,
+      "tool_evidence_rows": 562,
+      "role_counts": {
+        "TOOL": 298,
+        "CODEX_ASSISTANT": 264
+      }
+    },
+    {
+      "session_id": "01a0033c-1d70-72b3-832b-cc5142cbb6bc",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T10-24-26-01a0033c-1d70-72b3-832b-cc5142cbb6bc.jsonl.zst",
+      "line_count": 9,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0033e-3528-7dd3-bb7d-bd12bcb6e6af",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T10-26-44-01a0033e-3528-7dd3-bb7d-bd12bcb6e6af.jsonl.zst",
+      "line_count": 216,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a005dc-4b8c-7ff2-b23b-85d0f4701314",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T22-38-38-01a005dc-4b8c-7ff2-b23b-85d0f4701314.jsonl.zst",
+      "line_count": 1526,
+      "tool_evidence_rows": 95,
+      "role_counts": {
+        "TOOL": 49,
+        "CODEX_ASSISTANT": 46
+      }
+    },
+    {
+      "session_id": "01a00605-3d2d-7840-aaf8-594da5158042",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T23-23-22-01a00605-3d2d-7840-aaf8-594da5158042.jsonl.zst",
+      "line_count": 10421,
+      "tool_evidence_rows": 219,
+      "role_counts": {
+        "TOOL": 121,
+        "CODEX_ASSISTANT": 98
+      }
+    },
+    {
+      "session_id": "01a00611-3d1c-7322-acee-6ec306deb23f",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T23-36-28-01a00611-3d1c-7322-acee-6ec306deb23f.jsonl.zst",
+      "line_count": 211,
+      "tool_evidence_rows": 40,
+      "role_counts": {
+        "TOOL": 23,
+        "CODEX_ASSISTANT": 17
+      }
+    },
+    {
+      "session_id": "01a00617-7f97-7ba0-8761-29ad78a302e8",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T23-43-18-01a00617-7f97-7ba0-8761-29ad78a302e8.jsonl.zst",
+      "line_count": 43,
+      "tool_evidence_rows": 7,
+      "role_counts": {
+        "CODEX_ASSISTANT": 5,
+        "TOOL": 2
+      }
+    },
+    {
+      "session_id": "01a00617-80ec-7ef0-bb75-ff0f2e291980",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T23-43-18-01a00617-80ec-7ef0-bb75-ff0f2e291980.jsonl.zst",
+      "line_count": 38,
+      "tool_evidence_rows": 6,
+      "role_counts": {
+        "CODEX_ASSISTANT": 4,
+        "TOOL": 2
+      }
+    },
+    {
+      "session_id": "01a00617-8266-7d91-aa1f-ea952c587841",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T23-43-19-01a00617-8266-7d91-aa1f-ea952c587841.jsonl.zst",
+      "line_count": 47,
+      "tool_evidence_rows": 7,
+      "role_counts": {
+        "CODEX_ASSISTANT": 5,
+        "TOOL": 2
+      }
+    },
+    {
+      "session_id": "01a00617-83d2-7e70-916b-180f8e86815b",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T23-43-19-01a00617-83d2-7e70-916b-180f8e86815b.jsonl.zst",
+      "line_count": 38,
+      "tool_evidence_rows": 6,
+      "role_counts": {
+        "CODEX_ASSISTANT": 4,
+        "TOOL": 2
+      }
+    },
+    {
+      "session_id": "01a00622-e755-7701-9878-283c974b8772",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\15\\rollout-2026-08-15T23-55-46-01a00622-e755-7701-9878-283c974b8772.jsonl.zst",
+      "line_count": 33,
+      "tool_evidence_rows": 4,
+      "role_counts": {
+        "CODEX_ASSISTANT": 1,
+        "TOOL": 3
+      }
+    },
+    {
+      "session_id": "01a00636-1f3e-7261-bd52-186f3c31559e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T00-16-45-01a00636-1f3e-7261-bd52-186f3c31559e.jsonl.zst",
+      "line_count": 47,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a00637-8305-7533-8d6e-86c37acf4c08",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T00-18-16-01a00637-8305-7533-8d6e-86c37acf4c08.jsonl.zst",
+      "line_count": 126,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0063b-c4ff-7900-8f67-da1fe3367ef8",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T00-22-55-01a0063b-c4ff-7900-8f67-da1fe3367ef8.jsonl.zst",
+      "line_count": 120,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a00668-5676-7080-b358-290738ca3c3c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T01-11-36-01a00668-5676-7080-b358-290738ca3c3c.jsonl.zst",
+      "line_count": 128,
+      "tool_evidence_rows": 24,
+      "role_counts": {
+        "TOOL": 17,
+        "CODEX_ASSISTANT": 7
+      }
+    },
+    {
+      "session_id": "01a00673-b5c2-79b2-91a5-7c8d9e7d4682",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T01-24-01-01a00673-b5c2-79b2-91a5-7c8d9e7d4682.jsonl.zst",
+      "line_count": 106,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a006a3-839e-7b70-97cd-71c78941140b",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T02-16-14-01a006a3-839e-7b70-97cd-71c78941140b.jsonl.zst",
+      "line_count": 661,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a006a5-5db4-74c3-b7dc-5c5495c7b565",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T02-18-15-01a006a5-5db4-74c3-b7dc-5c5495c7b565.jsonl.zst",
+      "line_count": 848,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a006aa-d86d-78c2-95f9-2f0a2b1d8f85",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T02-24-15-01a006aa-d86d-78c2-95f9-2f0a2b1d8f85.jsonl.zst",
+      "line_count": 174,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a006bf-c1c0-7d92-8d98-ffe241988522",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T02-47-05-01a006bf-c1c0-7d92-8d98-ffe241988522.jsonl.zst",
+      "line_count": 85,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a006d6-950b-7940-92dd-d4cd92034930",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T03-12-01-01a006d6-950b-7940-92dd-d4cd92034930.jsonl.zst",
+      "line_count": 443,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a006db-27f9-7602-8b6b-95efddfe1b96",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T03-17-01-01a006db-27f9-7602-8b6b-95efddfe1b96.jsonl.zst",
+      "line_count": 1013,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a00a12-5060-7ec3-9803-84f2bfa005d6",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T18-16-07-01a00a12-5060-7ec3-9803-84f2bfa005d6.jsonl.zst",
+      "line_count": 109,
+      "tool_evidence_rows": 37,
+      "role_counts": {
+        "TOOL": 17,
+        "CODEX_ASSISTANT": 20
+      }
+    },
+    {
+      "session_id": "01a00ae5-e336-7ed3-a687-38e0d1ccf908",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\16\\rollout-2026-08-16T22-07-14-01a00ae5-e336-7ed3-a687-38e0d1ccf908.jsonl.zst",
+      "line_count": 1131,
+      "tool_evidence_rows": 136,
+      "role_counts": {
+        "TOOL": 54,
+        "CODEX_ASSISTANT": 82
+      }
+    },
+    {
+      "session_id": "01a00bd0-8ae3-7753-bb95-68884e743d8d",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T02-23-31-01a00bd0-8ae3-7753-bb95-68884e743d8d.jsonl.zst",
+      "line_count": 1594,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a00bd0-9bb7-75e2-97ee-4b386e92b86c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T02-23-35-01a00bd0-9bb7-75e2-97ee-4b386e92b86c.jsonl.zst",
+      "line_count": 1540,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a00bd0-ac0b-74d1-aab5-5a3c197e429c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T02-23-40-01a00bd0-ac0b-74d1-aab5-5a3c197e429c.jsonl.zst",
+      "line_count": 1572,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a00bd0-bdff-7a00-9bbf-0627c6bd7942",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T02-23-44-01a00bd0-bdff-7a00-9bbf-0627c6bd7942.jsonl.zst",
+      "line_count": 1547,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a00be1-80e4-7c60-9d77-e0ead7df27c2",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T02-42-03-01a00be1-80e4-7c60-9d77-e0ead7df27c2.jsonl.zst",
+      "line_count": 49,
+      "tool_evidence_rows": 9,
+      "role_counts": {
+        "CODEX_ASSISTANT": 5,
+        "TOOL": 4
+      }
+    },
+    {
+      "session_id": "01a00be1-8232-7b60-ad5a-c55ae19a6a9a",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T02-42-03-01a00be1-8232-7b60-ad5a-c55ae19a6a9a.jsonl.zst",
+      "line_count": 67,
+      "tool_evidence_rows": 17,
+      "role_counts": {
+        "CODEX_ASSISTANT": 4,
+        "TOOL": 13
+      }
+    },
+    {
+      "session_id": "01a00be1-8405-7ce0-9fce-f32687a708b4",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T02-42-04-01a00be1-8405-7ce0-9fce-f32687a708b4.jsonl.zst",
+      "line_count": 38,
+      "tool_evidence_rows": 7,
+      "role_counts": {
+        "CODEX_ASSISTANT": 2,
+        "TOOL": 5
+      }
+    },
+    {
+      "session_id": "01a00c10-c0da-71a3-a2e7-8e6965b2199e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T03-33-39-01a00c10-c0da-71a3-a2e7-8e6965b2199e.jsonl.zst",
+      "line_count": 2228,
+      "tool_evidence_rows": 123,
+      "role_counts": {
+        "TOOL": 61,
+        "CODEX_ASSISTANT": 62
+      }
+    },
+    {
+      "session_id": "01a00f31-b21c-7fc1-883a-2facba7c18a0",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T18-08-30-01a00f31-b21c-7fc1-883a-2facba7c18a0.jsonl.zst",
+      "line_count": 90,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a00f31-b32d-7be1-a159-a0a7081c8b26",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T18-08-30-01a00f31-b32d-7be1-a159-a0a7081c8b26.jsonl.zst",
+      "line_count": 78,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a00f31-b484-7261-887f-8c48c97edad9",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T18-08-31-01a00f31-b484-7261-887f-8c48c97edad9.jsonl.zst",
+      "line_count": 87,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a00f38-924d-71e1-9b50-13f9d82df59b",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T18-16-00-01a00f38-924d-71e1-9b50-13f9d82df59b.jsonl.zst",
+      "line_count": 79,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a00f38-9367-70c3-9a27-c7c0651f2fc7",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T18-16-01-01a00f38-9367-70c3-9a27-c7c0651f2fc7.jsonl.zst",
+      "line_count": 74,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a00f93-8db6-79c1-bc91-206e9a29c709",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T19-55-23-01a00f93-8db6-79c1-bc91-206e9a29c709.jsonl.zst",
+      "line_count": 213,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a00ff1-afd5-75c0-a97f-10f44504bf42",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T21-38-12-01a00ff1-afd5-75c0-a97f-10f44504bf42.jsonl.zst",
+      "line_count": 314,
+      "tool_evidence_rows": 37,
+      "role_counts": {
+        "CODEX_ASSISTANT": 24,
+        "TOOL": 13
+      }
+    },
+    {
+      "session_id": "01a01003-14f6-7f42-80eb-bb84ec722a8f",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T21-57-12-01a01003-14f6-7f42-80eb-bb84ec722a8f.jsonl.zst",
+      "line_count": 3173,
+      "tool_evidence_rows": 241,
+      "role_counts": {
+        "CODEX_ASSISTANT": 114,
+        "TOOL": 127
+      }
+    },
+    {
+      "session_id": "01a01036-fd52-7121-a726-c770997fe29a",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T22-53-54-01a01036-fd52-7121-a726-c770997fe29a.jsonl.zst",
+      "line_count": 29,
+      "tool_evidence_rows": 6,
+      "role_counts": {
+        "CODEX_ASSISTANT": 4,
+        "TOOL": 2
+      }
+    },
+    {
+      "session_id": "01a0103c-e82a-7311-b704-0eb3be755dd3",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\17\\rollout-2026-08-17T23-00-22-01a0103c-e82a-7311-b704-0eb3be755dd3.jsonl.zst",
+      "line_count": 38,
+      "tool_evidence_rows": 6,
+      "role_counts": {
+        "CODEX_ASSISTANT": 2,
+        "TOOL": 4
+      }
+    },
+    {
+      "session_id": "01a0109f-6d14-7d31-b61e-c24249f0a6ba",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T00-47-58-01a0109f-6d14-7d31-b61e-c24249f0a6ba.jsonl.zst",
+      "line_count": 14,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0109f-6e44-7a52-aadd-74100ceb28b1",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T00-47-59-01a0109f-6e44-7a52-aadd-74100ceb28b1.jsonl.zst",
+      "line_count": 15,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a010b6-eda1-7332-9a43-15ed2b1c74fd",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T01-13-39-01a010b6-eda1-7332-9a43-15ed2b1c74fd.jsonl.zst",
+      "line_count": 15,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a010b6-eead-7f00-adfe-988b2b7de44b",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T01-13-39-01a010b6-eead-7f00-adfe-988b2b7de44b.jsonl.zst",
+      "line_count": 15,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a01247-4655-7300-bdd2-c825a78650a4",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T08-30-56-01a01247-4655-7300-bdd2-c825a78650a4.jsonl.zst",
+      "line_count": 169,
+      "tool_evidence_rows": 2,
+      "role_counts": {
+        "TOOL": 2
+      }
+    },
+    {
+      "session_id": "01a01249-8b34-7d22-baa5-34bb35317a1d",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T08-33-25-01a01249-8b34-7d22-baa5-34bb35317a1d.jsonl.zst",
+      "line_count": 236,
+      "tool_evidence_rows": 29,
+      "role_counts": {
+        "TOOL": 14,
+        "CODEX_ASSISTANT": 15
+      }
+    },
+    {
+      "session_id": "01a01255-0901-7511-882e-793fda4d7316",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T08-45-58-01a01255-0901-7511-882e-793fda4d7316.jsonl.zst",
+      "line_count": 131,
+      "tool_evidence_rows": 6,
+      "role_counts": {
+        "TOOL": 6
+      }
+    },
+    {
+      "session_id": "01a01310-c71c-7bc0-ae25-dc6ba81079a5",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T12-11-02-01a01310-c71c-7bc0-ae25-dc6ba81079a5.jsonl.zst",
+      "line_count": 115,
+      "tool_evidence_rows": 8,
+      "role_counts": {
+        "CODEX_ASSISTANT": 5,
+        "TOOL": 3
+      }
+    },
+    {
+      "session_id": "01a01334-0f10-70d1-89c6-8bd739f95599",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T12-49-34-01a01334-0f10-70d1-89c6-8bd739f95599.jsonl.zst",
+      "line_count": 4661,
+      "tool_evidence_rows": 245,
+      "role_counts": {
+        "CODEX_ASSISTANT": 111,
+        "TOOL": 134
+      }
+    },
+    {
+      "session_id": "01a0139e-9f03-7fe3-a2e0-9a93341c113e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T14-45-58-01a0139e-9f03-7fe3-a2e0-9a93341c113e.jsonl.zst",
+      "line_count": 449,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a01dc3-4a66-79c0-82c6-c65ab3f722ae",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\20\\rollout-2026-08-20T14-02-13-01a01dc3-4a66-79c0-82c6-c65ab3f722ae.jsonl.zst",
+      "line_count": 327,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a01f63-d0ca-7b41-b534-d8791c8dc3e6",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\20\\rollout-2026-08-20T21-37-10-01a01f63-d0ca-7b41-b534-d8791c8dc3e6.jsonl.zst",
+      "line_count": 4169,
+      "tool_evidence_rows": 235,
+      "role_counts": {
+        "CODEX_ASSISTANT": 111,
+        "TOOL": 124
+      }
+    },
+    {
+      "session_id": "01a022f8-3dc0-7f90-90da-30bca152f75b",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\21\\rollout-2026-08-21T14-18-09-01a022f8-3dc0-7f90-90da-30bca152f75b.jsonl.zst",
+      "line_count": 9106,
+      "tool_evidence_rows": 190,
+      "role_counts": {
+        "TOOL": 92,
+        "CODEX_ASSISTANT": 98
+      }
+    },
+    {
+      "session_id": "01a022ff-1110-7090-a07a-10a5c1637b3e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\21\\rollout-2026-08-21T14-25-36-01a022ff-1110-7090-a07a-10a5c1637b3e.jsonl.zst",
+      "line_count": 10145,
+      "tool_evidence_rows": 211,
+      "role_counts": {
+        "TOOL": 113,
+        "CODEX_ASSISTANT": 98
+      }
+    },
+    {
+      "session_id": "01a02318-a19a-7f21-afcb-bea525006ecf",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\21\\rollout-2026-08-21T14-53-32-01a02318-a19a-7f21-afcb-bea525006ecf.jsonl.zst",
+      "line_count": 385,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0233a-7ddd-7741-91c2-cd9777e3320e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\21\\rollout-2026-08-21T15-30-31-01a0233a-7ddd-7741-91c2-cd9777e3320e.jsonl.zst",
+      "line_count": 9803,
+      "tool_evidence_rows": 207,
+      "role_counts": {
+        "TOOL": 109,
+        "CODEX_ASSISTANT": 98
+      }
+    },
+    {
+      "session_id": "01a0233f-17cb-7950-854f-bdf3c4ae9ea5",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\21\\rollout-2026-08-21T15-35-32-01a0233f-17cb-7950-854f-bdf3c4ae9ea5.jsonl.zst",
+      "line_count": 12252,
+      "tool_evidence_rows": 207,
+      "role_counts": {
+        "TOOL": 102,
+        "CODEX_ASSISTANT": 105
+      }
+    },
+    {
+      "session_id": "01a02375-483b-7563-b223-b12b89333f1d",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\21\\rollout-2026-08-21T16-34-44-01a02375-483b-7563-b223-b12b89333f1d.jsonl.zst",
+      "line_count": 14368,
+      "tool_evidence_rows": 201,
+      "role_counts": {
+        "TOOL": 98,
+        "CODEX_ASSISTANT": 103
+      }
+    },
+    {
+      "session_id": "01a028fb-0bb2-7193-b692-8a5591c4aa7a",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\22\\rollout-2026-08-22T18-18-56-01a028fb-0bb2-7193-b692-8a5591c4aa7a.jsonl.zst",
+      "line_count": 2113,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a02a6d-0098-7190-b083-e80a6135692f",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\23\\rollout-2026-08-23T01-03-02-01a02a6d-0098-7190-b083-e80a6135692f.jsonl.zst",
+      "line_count": 9217,
+      "tool_evidence_rows": 5,
+      "role_counts": {
+        "CODEX_ASSISTANT": 5
+      }
+    },
+    {
+      "session_id": "01a034bc-badc-7171-a1f7-42ad58cfbba0",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\25\\rollout-2026-08-25T01-06-19-01a034bc-badc-7171-a1f7-42ad58cfbba0.jsonl.zst",
+      "line_count": 5784,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a03d10-2553-7852-ad8e-fecf5b3b69a8",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T15-54-23-01a03d10-2553-7852-ad8e-fecf5b3b69a8.jsonl.zst",
+      "line_count": 7115,
+      "tool_evidence_rows": 12,
+      "role_counts": {
+        "CODEX_ASSISTANT": 10,
+        "TOOL": 2
+      }
+    },
+    {
+      "session_id": "01a03d56-f7e1-7b12-aad2-20f3b2f57c4c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T17-11-45-01a03d56-f7e1-7b12-aad2-20f3b2f57c4c.jsonl.zst",
+      "line_count": 369,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a03d85-4176-7361-8b20-01801993a9cd",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T18-02-18-01a03d85-4176-7361-8b20-01801993a9cd.jsonl.zst",
+      "line_count": 1053,
+      "tool_evidence_rows": 2,
+      "role_counts": {
+        "TOOL": 2
+      }
+    },
+    {
+      "session_id": "01a03d87-3d8b-75f3-ac1c-6da942d56a1e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T18-04-28-01a03d87-3d8b-75f3-ac1c-6da942d56a1e.jsonl.zst",
+      "line_count": 5241,
+      "tool_evidence_rows": 15,
+      "role_counts": {
+        "CODEX_ASSISTANT": 10,
+        "TOOL": 5
+      }
+    },
+    {
+      "session_id": "01a04277-01fd-7a31-8829-fcbc43b15346",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\27\\rollout-2026-08-27T17-04-50-01a04277-01fd-7a31-8829-fcbc43b15346.jsonl.zst",
+      "line_count": 3102,
+      "tool_evidence_rows": 24,
+      "role_counts": {
+        "CODEX_ASSISTANT": 24
+      }
+    },
+    {
+      "session_id": "01a042a4-2a4a-7150-9c2d-6ce31dfe71b8",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\27\\rollout-2026-08-27T17-54-10-01a042a4-2a4a-7150-9c2d-6ce31dfe71b8.jsonl.zst",
+      "line_count": 677,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a042bb-aa1f-7540-aebe-75031ab7daf3",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\27\\rollout-2026-08-27T18-19-50-01a042bb-aa1f-7540-aebe-75031ab7daf3.jsonl.zst",
+      "line_count": 4438,
+      "tool_evidence_rows": 72,
+      "role_counts": {
+        "CODEX_ASSISTANT": 47,
+        "TOOL": 25
+      }
+    },
+    {
+      "session_id": "01a042c2-4a15-7a13-a825-488727bed602",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\27\\rollout-2026-08-27T18-27-04-01a042c2-4a15-7a13-a825-488727bed602.jsonl.zst",
+      "line_count": 2380,
+      "tool_evidence_rows": 313,
+      "role_counts": {
+        "CODEX_ASSISTANT": 192,
+        "TOOL": 121
+      }
+    },
+    {
+      "session_id": "01a042d7-5f81-7db2-80a1-082f2d6e9f40",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\27\\rollout-2026-08-27T18-50-06-01a042d7-5f81-7db2-80a1-082f2d6e9f40.jsonl.zst",
+      "line_count": 909,
+      "tool_evidence_rows": 157,
+      "role_counts": {
+        "TOOL": 71,
+        "CODEX_ASSISTANT": 86
+      }
+    },
+    {
+      "session_id": "01a042e2-f4fb-7842-a136-e573a86b0250",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\27\\rollout-2026-08-27T19-02-45-01a042e2-f4fb-7842-a136-e573a86b0250.jsonl.zst",
+      "line_count": 900,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "CODEX_ASSISTANT": 1
+      }
+    },
+    {
+      "session_id": "01a043b3-506b-78a3-bdc0-e4817e48b17a",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\27\\rollout-2026-08-27T22-50-20-01a043b3-506b-78a3-bdc0-e4817e48b17a.jsonl.zst",
+      "line_count": 433,
+      "tool_evidence_rows": 6,
+      "role_counts": {
+        "CODEX_ASSISTANT": 6
+      }
+    },
+    {
+      "session_id": "01a0441e-8540-7ba0-a84b-24ba47d2bdac",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\28\\rollout-2026-08-28T00-47-26-01a0441e-8540-7ba0-a84b-24ba47d2bdac.jsonl.zst",
+      "line_count": 84,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a04471-e829-7623-96fe-de45770012f4",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\28\\rollout-2026-08-28T02-18-31-01a04471-e829-7623-96fe-de45770012f4.jsonl.zst",
+      "line_count": 162,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a047f5-e7b4-71d0-8a6e-8b8aeb2a9062",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\28\\rollout-2026-08-28T18-41-33-01a047f5-e7b4-71d0-8a6e-8b8aeb2a9062.jsonl.zst",
+      "line_count": 746,
+      "tool_evidence_rows": 64,
+      "role_counts": {
+        "TOOL": 44,
+        "CODEX_ASSISTANT": 20
+      }
+    },
+    {
+      "session_id": "01a0485b-8d9e-71c3-9777-1558a3690761",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\28\\rollout-2026-08-28T20-32-34-01a0485b-8d9e-71c3-9777-1558a3690761.jsonl.zst",
+      "line_count": 3199,
+      "tool_evidence_rows": 24,
+      "role_counts": {
+        "TOOL": 14,
+        "CODEX_ASSISTANT": 10
+      }
+    },
+    {
+      "session_id": "01a0492a-6a2d-7682-94f2-53c899c755f2",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T00-18-31-01a0492a-6a2d-7682-94f2-53c899c755f2.jsonl.zst",
+      "line_count": 3038,
+      "tool_evidence_rows": 6,
+      "role_counts": {
+        "TOOL": 6
+      }
+    },
+    {
+      "session_id": "01a0499c-9361-74e1-811d-5e7258bc01e4",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T02-23-13-01a0499c-9361-74e1-811d-5e7258bc01e4.jsonl.zst",
+      "line_count": 4170,
+      "tool_evidence_rows": 2,
+      "role_counts": {
+        "CODEX_ASSISTANT": 1,
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a049a7-4e08-7040-9d24-0c14b142ddda",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T02-34-56-01a049a7-4e08-7040-9d24-0c14b142ddda.jsonl.zst",
+      "line_count": 2000,
+      "tool_evidence_rows": 4,
+      "role_counts": {
+        "TOOL": 4
+      }
+    },
+    {
+      "session_id": "01a049a9-6697-7ec0-85a1-4e6ed5521eec",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T02-37-14-01a049a9-6697-7ec0-85a1-4e6ed5521eec.jsonl.zst",
+      "line_count": 447,
+      "tool_evidence_rows": 12,
+      "role_counts": {
+        "TOOL": 12
+      }
+    },
+    {
+      "session_id": "01a049d0-d04d-7e43-bea0-6bc1708a9b31",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T03-20-16-01a049d0-d04d-7e43-bea0-6bc1708a9b31.jsonl.zst",
+      "line_count": 7164,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a04a75-47f4-7dd3-9e8e-b9e383e8a3ab",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T06-19-55-01a04a75-47f4-7dd3-9e8e-b9e383e8a3ab.jsonl.zst",
+      "line_count": 513,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a04a80-e800-7943-ac12-fea2d6493866",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T06-32-37-01a04a80-e800-7943-ac12-fea2d6493866.jsonl.zst",
+      "line_count": 1073,
+      "tool_evidence_rows": 50,
+      "role_counts": {
+        "TOOL": 24,
+        "CODEX_ASSISTANT": 26
+      }
+    },
+    {
+      "session_id": "01a04abc-4289-7171-bc2d-a61730fd0ac9",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T07-37-27-01a04abc-4289-7171-bc2d-a61730fd0ac9.jsonl.zst",
+      "line_count": 1047,
+      "tool_evidence_rows": 5,
+      "role_counts": {
+        "CODEX_ASSISTANT": 2,
+        "TOOL": 3
+      }
+    },
+    {
+      "session_id": "01a04cf7-8333-7db3-bca9-355b824a3014",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T18-01-24-01a04cf7-8333-7db3-bca9-355b824a3014.jsonl.zst",
+      "line_count": 376,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a04d29-5d49-7f01-9aef-4acc2d45f713",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T18-55-51-01a04d29-5d49-7f01-9aef-4acc2d45f713.jsonl.zst",
+      "line_count": 299,
+      "tool_evidence_rows": 49,
+      "role_counts": {
+        "TOOL": 22,
+        "CODEX_ASSISTANT": 27
+      }
+    },
+    {
+      "session_id": "01a04d2e-6df7-7a52-9f31-af73c5f5bf47",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T19-01-23-01a04d2e-6df7-7a52-9f31-af73c5f5bf47.jsonl.zst",
+      "line_count": 788,
+      "tool_evidence_rows": 124,
+      "role_counts": {
+        "CODEX_ASSISTANT": 76,
+        "TOOL": 48
+      }
+    },
+    {
+      "session_id": "01a04d30-a1ab-7cd0-a80d-f2e5b9879069",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T19-03-48-01a04d30-a1ab-7cd0-a80d-f2e5b9879069.jsonl.zst",
+      "line_count": 275,
+      "tool_evidence_rows": 42,
+      "role_counts": {
+        "CODEX_ASSISTANT": 33,
+        "TOOL": 9
+      }
+    },
+    {
+      "session_id": "01a04d30-a346-79c3-a556-c6393c30b7b3",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T19-03-48-01a04d30-a346-79c3-a556-c6393c30b7b3.jsonl.zst",
+      "line_count": 82,
+      "tool_evidence_rows": 11,
+      "role_counts": {
+        "CODEX_ASSISTANT": 6,
+        "TOOL": 5
+      }
+    },
+    {
+      "session_id": "01a04d30-a59f-77e1-a57a-b7f5719bb2b7",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T19-03-49-01a04d30-a59f-77e1-a57a-b7f5719bb2b7.jsonl.zst",
+      "line_count": 163,
+      "tool_evidence_rows": 32,
+      "role_counts": {
+        "CODEX_ASSISTANT": 10,
+        "TOOL": 22
+      }
+    },
+    {
+      "session_id": "01a04d30-a7d9-7690-9f67-fa6e75035378",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T19-03-49-01a04d30-a7d9-7690-9f67-fa6e75035378.jsonl.zst",
+      "line_count": 112,
+      "tool_evidence_rows": 31,
+      "role_counts": {
+        "CODEX_ASSISTANT": 13,
+        "TOOL": 18
+      }
+    },
+    {
+      "session_id": "01a04d30-a9cb-74a1-9cd6-46f3744d358a",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\29\\rollout-2026-08-29T19-03-50-01a04d30-a9cb-74a1-9cd6-46f3744d358a.jsonl.zst",
+      "line_count": 99,
+      "tool_evidence_rows": 25,
+      "role_counts": {
+        "CODEX_ASSISTANT": 12,
+        "TOOL": 13
+      }
+    },
+    {
+      "session_id": "01a04eba-2b0f-7de1-8a94-16b6b859a4cc",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T02-13-38-01a04eba-2b0f-7de1-8a94-16b6b859a4cc.jsonl.zst",
+      "line_count": 4534,
+      "tool_evidence_rows": 8,
+      "role_counts": {
+        "TOOL": 8
+      }
+    },
+    {
+      "session_id": "01a04ecf-ec74-7581-8e6f-f53369f3bb85",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T02-37-24-01a04ecf-ec74-7581-8e6f-f53369f3bb85.jsonl.zst",
+      "line_count": 4571,
+      "tool_evidence_rows": 32,
+      "role_counts": {
+        "CODEX_ASSISTANT": 1,
+        "TOOL": 31
+      }
+    },
+    {
+      "session_id": "01a04ed9-63c7-7770-9b1b-eb0a520707dc",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T02-47-46-01a04ed9-63c7-7770-9b1b-eb0a520707dc.jsonl.zst",
+      "line_count": 2780,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "CODEX_ASSISTANT": 1
+      }
+    },
+    {
+      "session_id": "01a04ee8-b908-76f2-85ed-23331fe045cc",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T03-04-29-01a04ee8-b908-76f2-85ed-23331fe045cc.jsonl.zst",
+      "line_count": 2810,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a04f0d-fd0f-7b01-8904-618d74a5944c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T03-45-12-01a04f0d-fd0f-7b01-8904-618d74a5944c.jsonl.zst",
+      "line_count": 677,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a04f15-5358-76c1-aafb-d1e5aedc93ac",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T03-53-12-01a04f15-5358-76c1-aafb-d1e5aedc93ac.jsonl.zst",
+      "line_count": 1361,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a04f47-f2b8-7142-9f81-b8a34475a21f",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T04-48-30-01a04f47-f2b8-7142-9f81-b8a34475a21f.jsonl.zst",
+      "line_count": 277,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a04f9d-7f76-79e3-a2ff-05aabd5c89b7",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T06-21-57-01a04f9d-7f76-79e3-a2ff-05aabd5c89b7.jsonl.zst",
+      "line_count": 536,
+      "tool_evidence_rows": 87,
+      "role_counts": {
+        "TOOL": 46,
+        "CODEX_ASSISTANT": 41
+      }
+    },
+    {
+      "session_id": "01a0526a-f765-76b2-b0d0-74f838ab5fb4",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T19-25-37-01a0526a-f765-76b2-b0d0-74f838ab5fb4.jsonl.zst",
+      "line_count": 808,
+      "tool_evidence_rows": 164,
+      "role_counts": {
+        "TOOL": 74,
+        "CODEX_ASSISTANT": 90
+      }
+    },
+    {
+      "session_id": "01a052e3-0b22-7b01-bae8-896a2c5617e8",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T21-36-46-01a052e3-0b22-7b01-bae8-896a2c5617e8.jsonl.zst",
+      "line_count": 3963,
+      "tool_evidence_rows": 3,
+      "role_counts": {
+        "TOOL": 3
+      }
+    },
+    {
+      "session_id": "01a0530f-5cdd-77b0-8873-85f89821ff50",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T22-25-11-01a0530f-5cdd-77b0-8873-85f89821ff50.jsonl.zst",
+      "line_count": 62,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0530f-5e9e-7600-8478-287546bb5221",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T22-25-11-01a0530f-5e9e-7600-8478-287546bb5221.jsonl.zst",
+      "line_count": 137,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0530f-62f3-7531-ae4f-bc9036322482",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T22-25-12-01a0530f-62f3-7531-ae4f-bc9036322482.jsonl.zst",
+      "line_count": 124,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a053cb-6789-7bc2-8d01-244a51ab59fb",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\31\\rollout-2026-08-31T01-50-34-01a053cb-6789-7bc2-8d01-244a51ab59fb.jsonl.zst",
+      "line_count": 114,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a053ec-38f8-7510-8433-d7e6d70e3c44",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\31\\rollout-2026-08-31T02-26-25-01a053ec-38f8-7510-8433-d7e6d70e3c44.jsonl.zst",
+      "line_count": 2543,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0541b-deee-7950-9604-cde9461e52a1",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\31\\rollout-2026-08-31T03-18-28-01a0541b-deee-7950-9604-cde9461e52a1.jsonl.zst",
+      "line_count": 728,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a058e1-5eb9-73c0-a297-98dc9cee4197",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\01\\rollout-2026-09-01T01-32-40-01a058e1-5eb9-73c0-a297-98dc9cee4197.jsonl.zst",
+      "line_count": 17188,
+      "tool_evidence_rows": 6,
+      "role_counts": {
+        "TOOL": 6
+      }
+    },
+    {
+      "session_id": "01a05904-6a75-7bf3-85eb-dfadb44f3eca",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\01\\rollout-2026-09-01T02-10-56-01a05904-6a75-7bf3-85eb-dfadb44f3eca.jsonl.zst",
+      "line_count": 572,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a05942-e2ee-7bd0-91ef-5b1cbc148a7c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\01\\rollout-2026-09-01T03-19-10-01a05942-e2ee-7bd0-91ef-5b1cbc148a7c.jsonl.zst",
+      "line_count": 138,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a05b75-a135-7fb0-9a51-2de8f9c2b6d7",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\01\\rollout-2026-09-01T13-33-50-01a05b75-a135-7fb0-9a51-2de8f9c2b6d7.jsonl.zst",
+      "line_count": 355,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a05c3f-2039-7012-b45f-a1130c84f840",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\01\\rollout-2026-09-01T17-13-56-01a05c3f-2039-7012-b45f-a1130c84f840.jsonl.zst",
+      "line_count": 166,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a05e84-b0a4-7a32-9e1c-afea9cf14742",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T03-49-09-01a05e84-b0a4-7a32-9e1c-afea9cf14742.jsonl.zst",
+      "line_count": 112,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a05e84-b419-7bb0-ae06-ca0b964f1dad",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T03-49-10-01a05e84-b419-7bb0-ae06-ca0b964f1dad.jsonl.zst",
+      "line_count": 82,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a05e84-b7a9-7303-88c1-4527e91e7f1c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T03-49-11-01a05e84-b7a9-7303-88c1-4527e91e7f1c.jsonl.zst",
+      "line_count": 79,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a05e84-bbd9-77d0-886a-53e5446cbae7",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T03-49-12-01a05e84-bbd9-77d0-886a-53e5446cbae7.jsonl.zst",
+      "line_count": 85,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a05f3c-fb6c-7c32-817f-3e89ac77b5c9",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-10-27-01a05f3c-fb6c-7c32-817f-3e89ac77b5c9.jsonl.zst",
+      "line_count": 833,
+      "tool_evidence_rows": 4,
+      "role_counts": {
+        "TOOL": 4
+      }
+    },
+    {
+      "session_id": "01a05f41-8680-7110-bd98-5bd060610c08",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-15-25-01a05f41-8680-7110-bd98-5bd060610c08.jsonl.zst",
+      "line_count": 121,
+      "tool_evidence_rows": 3,
+      "role_counts": {
+        "TOOL": 3
+      }
+    },
+    {
+      "session_id": "01a05f41-87fa-70f0-9739-44e926bf7c3c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-15-25-01a05f41-87fa-70f0-9739-44e926bf7c3c.jsonl.zst",
+      "line_count": 117,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a05f41-8994-7381-abb6-3c7a0b0289a8",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-15-25-01a05f41-8994-7381-abb6-3c7a0b0289a8.jsonl.zst",
+      "line_count": 65,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a05f41-8b38-7e71-bc5d-7d933fa8751e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-15-26-01a05f41-8b38-7e71-bc5d-7d933fa8751e.jsonl.zst",
+      "line_count": 46,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a05f41-8ce8-7ae3-99c4-fe0631d1568f",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-15-26-01a05f41-8ce8-7ae3-99c4-fe0631d1568f.jsonl.zst",
+      "line_count": 49,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a05f53-b243-7ea2-a198-433f902ac817",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-35-15-01a05f53-b243-7ea2-a198-433f902ac817.jsonl.zst",
+      "line_count": 66,
+      "tool_evidence_rows": 18,
+      "role_counts": {
+        "TOOL": 9,
+        "CODEX_ASSISTANT": 9
+      }
+    },
+    {
+      "session_id": "01a05f53-b71a-7320-8a8f-41fe4d8cb7bc",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-35-17-01a05f53-b71a-7320-8a8f-41fe4d8cb7bc.jsonl.zst",
+      "line_count": 69,
+      "tool_evidence_rows": 20,
+      "role_counts": {
+        "TOOL": 10,
+        "CODEX_ASSISTANT": 10
+      }
+    },
+    {
+      "session_id": "01a05f53-bc0c-7623-807b-5223048ae1f1",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T07-35-18-01a05f53-bc0c-7623-807b-5223048ae1f1.jsonl.zst",
+      "line_count": 92,
+      "tool_evidence_rows": 22,
+      "role_counts": {
+        "TOOL": 10,
+        "CODEX_ASSISTANT": 12
+      }
+    },
+    {
+      "session_id": "01a05fc5-ebff-7fb0-8107-60a553140a95",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T09-40-01-01a05fc5-ebff-7fb0-8107-60a553140a95.jsonl.zst",
+      "line_count": 74,
+      "tool_evidence_rows": 16,
+      "role_counts": {
+        "TOOL": 10,
+        "CODEX_ASSISTANT": 6
+      }
+    },
+    {
+      "session_id": "01a06236-5ded-7e10-9559-3fd90849196e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\02\\rollout-2026-09-02T21-02-05-01a06236-5ded-7e10-9559-3fd90849196e.jsonl.zst",
+      "line_count": 6962,
+      "tool_evidence_rows": 6,
+      "role_counts": {
+        "TOOL": 6
+      }
+    },
+    {
+      "session_id": "01a06678-0c96-7b60-aaad-ca0ddf5f4819",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\03\\rollout-2026-09-03T16-52-18-01a06678-0c96-7b60-aaad-ca0ddf5f4819.jsonl.zst",
+      "line_count": 10792,
+      "tool_evidence_rows": 8,
+      "role_counts": {
+        "TOOL": 8
+      }
+    },
+    {
+      "session_id": "01a06699-8936-7fd0-8e07-b171159b914d",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\03\\rollout-2026-09-03T17-28-53-01a06699-8936-7fd0-8e07-b171159b914d.jsonl.zst",
+      "line_count": 327,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a066b7-e43e-7d12-ae29-da720cca2241",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\03\\rollout-2026-09-03T18-02-02-01a066b7-e43e-7d12-ae29-da720cca2241.jsonl.zst",
+      "line_count": 285,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a06f57-4174-7860-80f1-902358500921",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T10-13-06-01a06f57-4174-7860-80f1-902358500921.jsonl.zst",
+      "line_count": 3536,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a072a1-5f4d-7f30-871b-7caf199110c4",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T01-32-53-01a072a1-5f4d-7f30-871b-7caf199110c4.jsonl.zst",
+      "line_count": 6952,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a072cd-b4fa-7b41-9bc3-807c2f464ecc",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T02-21-19-01a072cd-b4fa-7b41-9bc3-807c2f464ecc.jsonl.zst",
+      "line_count": 64,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a072da-6b08-7892-81bc-d16fe83d6801",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T02-35-12-01a072da-6b08-7892-81bc-d16fe83d6801.jsonl.zst",
+      "line_count": 285,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a07748-1a68-78f2-88a9-465dac76994a",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T23-13-29-01a07748-1a68-78f2-88a9-465dac76994a.jsonl.zst",
+      "line_count": 2850,
+      "tool_evidence_rows": 16,
+      "role_counts": {
+        "TOOL": 16
+      }
+    },
+    {
+      "session_id": "01a07750-31f2-7941-b8f3-3d8eaa5ac1ae",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T23-22-19-01a07750-31f2-7941-b8f3-3d8eaa5ac1ae.jsonl.zst",
+      "line_count": 2719,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a07f64-d47f-7c31-b412-bde2876dd3b6",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T13-01-49-01a07f64-d47f-7c31-b412-bde2876dd3b6.jsonl.zst",
+      "line_count": 4001,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a07f78-a84e-7ec0-8ddf-f5faf3dcdd33",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T13-23-29-01a07f78-a84e-7ec0-8ddf-f5faf3dcdd33.jsonl.zst",
+      "line_count": 227,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a07f78-aa09-7221-ae1d-bee079a2777a",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T13-23-29-01a07f78-aa09-7221-ae1d-bee079a2777a.jsonl.zst",
+      "line_count": 169,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a07f9f-8bd7-7242-85f8-8221555fdba2",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T14-05-57-01a07f9f-8bd7-7242-85f8-8221555fdba2.jsonl.zst",
+      "line_count": 114,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a07f9f-8f8c-7d03-ae97-63962f927b09",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T14-05-58-01a07f9f-8f8c-7d03-ae97-63962f927b09.jsonl.zst",
+      "line_count": 133,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a081b6-2aed-7271-b440-642faab764a7",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T23-49-54-01a081b6-2aed-7271-b440-642faab764a7.jsonl.zst",
+      "line_count": 3925,
+      "tool_evidence_rows": 7,
+      "role_counts": {
+        "TOOL": 7
+      }
+    },
+    {
+      "session_id": "01a081c4-1368-7d22-b4a8-50a828a2241d",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\09\\rollout-2026-09-09T00-05-06-01a081c4-1368-7d22-b4a8-50a828a2241d.jsonl.zst",
+      "line_count": 172,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a08af2-35ac-7883-a2bf-6ebd574dd402",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\10\\rollout-2026-09-10T18-52-04-01a08af2-35ac-7883-a2bf-6ebd574dd402.jsonl.zst",
+      "line_count": 670,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0915f-aa2e-7091-a30b-422fe6293c5f",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\12\\rollout-2026-09-12T00-49-21-01a0915f-aa2e-7091-a30b-422fe6293c5f.jsonl.zst",
+      "line_count": 6689,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a091e5-b53a-79d0-9d90-8daf0350fc9b",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\12\\rollout-2026-09-12T03-15-45-01a091e5-b53a-79d0-9d90-8daf0350fc9b.jsonl.zst",
+      "line_count": 2950,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a09223-7b94-7c41-89ac-7b894347d11a",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\12\\rollout-2026-09-12T04-23-14-01a09223-7b94-7c41-89ac-7b894347d11a.jsonl.zst",
+      "line_count": 1512,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a09472-199b-7b50-ae46-445461ea1c5c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\12\\rollout-2026-09-12T15-08-20-01a09472-199b-7b50-ae46-445461ea1c5c.jsonl.zst",
+      "line_count": 189,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a094e2-1a6a-7ed0-bd45-9611f4930898",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\12\\rollout-2026-09-12T17-10-41-01a094e2-1a6a-7ed0-bd45-9611f4930898.jsonl.zst",
+      "line_count": 288,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a096a6-f6d2-7222-be2b-128d6e1aa5c4",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\13\\rollout-2026-09-13T01-25-19-01a096a6-f6d2-7222-be2b-128d6e1aa5c4.jsonl.zst",
+      "line_count": 700,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a096a8-68a4-7951-9462-2dec0c3d7f06",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\13\\rollout-2026-09-13T01-26-54-01a096a8-68a4-7951-9462-2dec0c3d7f06.jsonl.zst",
+      "line_count": 524,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a096c1-fedc-71a1-915b-b65517d1f452",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\13\\rollout-2026-09-13T01-54-51-01a096c1-fedc-71a1-915b-b65517d1f452.jsonl.zst",
+      "line_count": 1512,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a096c8-1266-7001-b880-913069f170ee",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\13\\rollout-2026-09-13T02-01-29-01a096c8-1266-7001-b880-913069f170ee.jsonl.zst",
+      "line_count": 200,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a09768-129b-7b82-a2b3-c610949c4a9e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\13\\rollout-2026-09-13T04-56-15-01a09768-129b-7b82-a2b3-c610949c4a9e.jsonl.zst",
+      "line_count": 981,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a09b07-a626-7010-8323-53943a905f9d",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\13\\rollout-2026-09-13T21-49-25-01a09b07-a626-7010-8323-53943a905f9d.jsonl.zst",
+      "line_count": 2967,
+      "tool_evidence_rows": 3,
+      "role_counts": {
+        "TOOL": 3
+      }
+    },
+    {
+      "session_id": "01a09b6b-8653-7c23-b798-1fc3f7ad6140",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\13\\rollout-2026-09-13T23-38-30-01a09b6b-8653-7c23-b798-1fc3f7ad6140.jsonl.zst",
+      "line_count": 2643,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a09b72-14da-7c90-a192-b741da6d7b07",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\13\\rollout-2026-09-13T23-45-40-01a09b72-14da-7c90-a192-b741da6d7b07.jsonl.zst",
+      "line_count": 283,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a09b96-f87b-7b03-a611-056fac2e3846",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T00-25-57-01a09b96-f87b-7b03-a611-056fac2e3846.jsonl.zst",
+      "line_count": 73,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a09c06-4b03-7f13-8469-cb3f9f1be288",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T02-27-33-01a09c06-4b03-7f13-8469-cb3f9f1be288.jsonl.zst",
+      "line_count": 231,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a09dbf-c9a3-70b2-8195-6d25da65ba8b",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T10-29-47-01a09dbf-c9a3-70b2-8195-6d25da65ba8b.jsonl.zst",
+      "line_count": 1334,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a09de3-d47b-74c3-8eec-a2790a4e2665",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T11-09-09-01a09de3-d47b-74c3-8eec-a2790a4e2665.jsonl.zst",
+      "line_count": 2796,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a09df9-a09e-7801-bc82-6eb980a93705",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T11-32-57-01a09df9-a09e-7801-bc82-6eb980a93705.jsonl.zst",
+      "line_count": 1327,
+      "tool_evidence_rows": 2,
+      "role_counts": {
+        "TOOL": 2
+      }
+    },
+    {
+      "session_id": "01a09dfa-837b-7ed2-ae6c-f548b2b207bf",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T11-33-56-01a09dfa-837b-7ed2-ae6c-f548b2b207bf.jsonl.zst",
+      "line_count": 1520,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a09e10-5eef-7620-aa9b-a4719eec7d0a",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T11-57-50-01a09e10-5eef-7620-aa9b-a4719eec7d0a.jsonl.zst",
+      "line_count": 1570,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0a00f-7bd7-7f42-a170-0a6796a29287",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T21-16-04-01a0a00f-7bd7-7f42-a170-0a6796a29287.jsonl.zst",
+      "line_count": 542,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a0a033-99da-7d40-8d36-2bc047293204",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T21-55-31-01a0a033-99da-7d40-8d36-2bc047293204.jsonl.zst",
+      "line_count": 9457,
+      "tool_evidence_rows": 2,
+      "role_counts": {
+        "TOOL": 2
+      }
+    },
+    {
+      "session_id": "01a0a050-1e3b-73e0-a523-27064aee991e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T22-26-40-01a0a050-1e3b-73e0-a523-27064aee991e.jsonl.zst",
+      "line_count": 8706,
+      "tool_evidence_rows": 5,
+      "role_counts": {
+        "TOOL": 5
+      }
+    },
+    {
+      "session_id": "01a0a098-c0c8-7761-b919-f59c68497039",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T23-46-00-01a0a098-c0c8-7761-b919-f59c68497039.jsonl.zst",
+      "line_count": 223,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0a098-c0c8-7761-b919-f5b40803f3d4",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\14\\rollout-2026-09-14T23-46-00-01a0a098-c0c8-7761-b919-f5b40803f3d4.jsonl.zst",
+      "line_count": 39,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0a117-59fa-79b0-83e5-745be8ba57da",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\15\\rollout-2026-09-15T02-04-17-01a0a117-59fa-79b0-83e5-745be8ba57da.jsonl.zst",
+      "line_count": 1653,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0a58f-6b53-7352-ba35-58350d7cb314",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\15\\rollout-2026-09-15T22-53-55-01a0a58f-6b53-7352-ba35-58350d7cb314.jsonl.zst",
+      "line_count": 699,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0a887-003b-7ea1-b8ba-4f021833ec84",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\16\\rollout-2026-09-16T12-43-35-01a0a887-003b-7ea1-b8ba-4f021833ec84.jsonl.zst",
+      "line_count": 4501,
+      "tool_evidence_rows": 21,
+      "role_counts": {
+        "TOOL": 21
+      }
+    },
+    {
+      "session_id": "01a0a94d-b824-71b3-8730-b984a96a04fe",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\16\\rollout-2026-09-16T16-20-38-01a0a94d-b824-71b3-8730-b984a96a04fe.jsonl.zst",
+      "line_count": 59,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0aa5e-48b5-71a1-bf27-c04aacd9b912",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\16\\rollout-2026-09-16T21-18-21-01a0aa5e-48b5-71a1-bf27-c04aacd9b912.jsonl.zst",
+      "line_count": 1119,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0ab5c-c84d-7ba3-998a-5916c925c93c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\17\\rollout-2026-09-17T01-56-19-01a0ab5c-c84d-7ba3-998a-5916c925c93c.jsonl.zst",
+      "line_count": 1363,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0af48-267e-7823-8cdb-f99bf757af5f",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\17\\rollout-2026-09-17T20-12-16-01a0af48-267e-7823-8cdb-f99bf757af5f.jsonl.zst",
+      "line_count": 290,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0b010-2395-7763-98b0-e51013687de1",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\17\\rollout-2026-09-17T23-50-42-01a0b010-2395-7763-98b0-e51013687de1.jsonl.zst",
+      "line_count": 331,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0b035-0d25-7a63-8e30-26f393d9a61e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\18\\rollout-2026-09-18T00-31-02-01a0b035-0d25-7a63-8e30-26f393d9a61e.jsonl.zst",
+      "line_count": 4526,
+      "tool_evidence_rows": 7,
+      "role_counts": {
+        "TOOL": 7
+      }
+    },
+    {
+      "session_id": "01a0b324-9951-7ea2-8633-d04fad3f8bff",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\18\\rollout-2026-09-18T14-11-55-01a0b324-9951-7ea2-8633-d04fad3f8bff.jsonl.zst",
+      "line_count": 565,
+      "tool_evidence_rows": 5,
+      "role_counts": {
+        "TOOL": 5
+      }
+    },
+    {
+      "session_id": "01a0b7fb-5b14-7f93-a066-19d744119878",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\19\\rollout-2026-09-19T12-44-58-01a0b7fb-5b14-7f93-a066-19d744119878.jsonl.zst",
+      "line_count": 2790,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0ba29-e190-7e73-b532-1182e789881a",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\19\\rollout-2026-09-19T22-55-02-01a0ba29-e190-7e73-b532-1182e789881a.jsonl.zst",
+      "line_count": 1629,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0bc7a-1b47-7d43-803e-3e4d2fd20a93",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\20\\rollout-2026-09-20T09-41-54-01a0bc7a-1b47-7d43-803e-3e4d2fd20a93.jsonl.zst",
+      "line_count": 2769,
+      "tool_evidence_rows": 5,
+      "role_counts": {
+        "TOOL": 5
+      }
+    },
+    {
+      "session_id": "01a0bfd5-774a-7f33-9030-466d557b2df4",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\21\\rollout-2026-09-21T01-20-33-01a0bfd5-774a-7f33-9030-466d557b2df4.jsonl.zst",
+      "line_count": 3585,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a0ca25-6b9f-74b0-9c83-b3559a87b93b",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\23\\rollout-2026-09-23T01-24-05-01a0ca25-6b9f-74b0-9c83-b3559a87b93b.jsonl.zst",
+      "line_count": 2189,
+      "tool_evidence_rows": 13,
+      "role_counts": {
+        "CODEX_ASSISTANT": 1,
+        "TOOL": 12
+      }
+    },
+    {
+      "session_id": "01a0cd70-a6d7-7fc3-a5bc-26d9e828817f",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\23\\rollout-2026-09-23T16-45-07-01a0cd70-a6d7-7fc3-a5bc-26d9e828817f.jsonl.zst",
+      "line_count": 245,
+      "tool_evidence_rows": 7,
+      "role_counts": {
+        "TOOL": 7
+      }
+    },
+    {
+      "session_id": "01a0cd79-5791-7d51-a854-ec785d416ced",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\23\\rollout-2026-09-23T16-54-36-01a0cd79-5791-7d51-a854-ec785d416ced.jsonl.zst",
+      "line_count": 527,
+      "tool_evidence_rows": 4,
+      "role_counts": {
+        "TOOL": 4
+      }
+    },
+    {
+      "session_id": "01a0ce6a-7e63-75d0-85f7-c37177b4319e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\23\\rollout-2026-09-23T21-18-00-01a0ce6a-7e63-75d0-85f7-c37177b4319e.jsonl.zst",
+      "line_count": 182,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0ce72-5df4-7f21-8d39-b8162e161d64",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\23\\rollout-2026-09-23T21-26-36-01a0ce72-5df4-7f21-8d39-b8162e161d64.jsonl.zst",
+      "line_count": 431,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0ce85-b869-71c0-979f-8d45a4958217",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\23\\rollout-2026-09-23T21-47-45-01a0ce85-b869-71c0-979f-8d45a4958217.jsonl.zst",
+      "line_count": 2517,
+      "tool_evidence_rows": 13,
+      "role_counts": {
+        "TOOL": 13
+      }
+    },
+    {
+      "session_id": "01a0d6eb-1a6e-73e0-a041-8c71be256d37",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\25\\rollout-2026-09-25T12-55-27-01a0d6eb-1a6e-73e0-a041-8c71be256d37.jsonl.zst",
+      "line_count": 4959,
+      "tool_evidence_rows": 3,
+      "role_counts": {
+        "TOOL": 3
+      }
+    },
+    {
+      "session_id": "01a0dd45-2ca3-7ca2-9299-719892025098",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\26\\rollout-2026-09-26T18-31-35-01a0dd45-2ca3-7ca2-9299-719892025098.jsonl.zst",
+      "line_count": 270,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0dd4d-e56f-7583-9d8d-c1c6c66df96e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\26\\rollout-2026-09-26T18-41-05-01a0dd4d-e56f-7583-9d8d-c1c6c66df96e.jsonl.zst",
+      "line_count": 85,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0de17-a6ff-7ea2-8a73-0eac3476e816",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\26\\rollout-2026-09-26T22-21-27-01a0de17-a6ff-7ea2-8a73-0eac3476e816.jsonl.zst",
+      "line_count": 106,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0de1a-01fc-75b0-a414-9f0562c6df5e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\26\\rollout-2026-09-26T22-24-01-01a0de1a-01fc-75b0-a414-9f0562c6df5e.jsonl.zst",
+      "line_count": 198,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0de1a-caed-7953-9b72-7d659254ab41",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\26\\rollout-2026-09-26T22-24-53-01a0de1a-caed-7953-9b72-7d659254ab41.jsonl.zst",
+      "line_count": 164,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0de1c-6754-7250-9ec2-1e9ba7f99eec",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\26\\rollout-2026-09-26T22-26-38-01a0de1c-6754-7250-9ec2-1e9ba7f99eec.jsonl.zst",
+      "line_count": 122,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0e44a-8a52-7d12-9bb6-53b0691faea3",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\28\\rollout-2026-09-28T03-14-45-01a0e44a-8a52-7d12-9bb6-53b0691faea3.jsonl.zst",
+      "line_count": 102,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0e845-3372-7552-b4cb-f31b901c34a3",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\28\\rollout-2026-09-28T21-47-24-01a0e845-3372-7552-b4cb-f31b901c34a3.jsonl.zst",
+      "line_count": 9483,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0e87a-f4b6-7642-b433-cf812b3b8b3b",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\28\\rollout-2026-09-28T22-46-07-01a0e87a-f4b6-7642-b433-cf812b3b8b3b.jsonl.zst",
+      "line_count": 2069,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a0e8f1-6b35-7b30-b123-add6cfd07e3f",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\29\\rollout-2026-09-29T00-55-31-01a0e8f1-6b35-7b30-b123-add6cfd07e3f.jsonl.zst",
+      "line_count": 67,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0e92d-b0ea-77c0-9a8d-7fe95cbdd039",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\29\\rollout-2026-09-29T02-01-21-01a0e92d-b0ea-77c0-9a8d-7fe95cbdd039.jsonl.zst",
+      "line_count": 386,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a0f451-e3fc-7c92-96ce-68d621ac8212",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\01\\rollout-2026-10-01T05-56-42-01a0f451-e3fc-7c92-96ce-68d621ac8212.jsonl.zst",
+      "line_count": 2268,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0f4cf-9d6d-7f22-aa3b-ded60434effa",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\01\\rollout-2026-10-01T08-14-02-01a0f4cf-9d6d-7f22-aa3b-ded60434effa.jsonl.zst",
+      "line_count": 167,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0f794-ee56-79e1-b388-d7b59d116441",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\01\\rollout-2026-10-01T21-08-48-01a0f794-ee56-79e1-b388-d7b59d116441.jsonl.zst",
+      "line_count": 3414,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0fd42-12df-7ec0-b2c3-572ab2d52e78",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\02\\rollout-2026-10-02T23-36-01-01a0fd42-12df-7ec0-b2c3-572ab2d52e78.jsonl.zst",
+      "line_count": 388,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a0fd4c-54f2-7272-ab52-d060263075ec",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\02\\rollout-2026-10-02T23-47-13-01a0fd4c-54f2-7272-ab52-d060263075ec.jsonl.zst",
+      "line_count": 264,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a10149-1069-7852-8970-5c8c7c628e24",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\03\\rollout-2026-10-03T18-22-08-01a10149-1069-7852-8970-5c8c7c628e24.jsonl.zst",
+      "line_count": 6493,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a102b8-5e00-7771-bd24-cd31dfcf1689",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\04\\rollout-2026-10-04T01-03-19-01a102b8-5e00-7771-bd24-cd31dfcf1689.jsonl.zst",
+      "line_count": 2683,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a102bb-bab5-72e1-b2a7-a4199eb74138",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\04\\rollout-2026-10-04T01-07-00-01a102bb-bab5-72e1-b2a7-a4199eb74138.jsonl.zst",
+      "line_count": 1000,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a102bd-88da-7380-b0ef-a87371d494fd",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\04\\rollout-2026-10-04T01-08-58-01a102bd-88da-7380-b0ef-a87371d494fd.jsonl.zst",
+      "line_count": 1584,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a10379-e64b-7cd2-ab6b-f7462800b77b",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\04\\rollout-2026-10-04T04-34-43-01a10379-e64b-7cd2-ab6b-f7462800b77b.jsonl.zst",
+      "line_count": 1025,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a10380-c855-7fe0-83cc-ad8b822ad109",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\04\\rollout-2026-10-04T04-42-14-01a10380-c855-7fe0-83cc-ad8b822ad109.jsonl.zst",
+      "line_count": 2047,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a10657-fdf8-7b91-bc58-31da1146af13",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\04\\rollout-2026-10-04T17-56-32-01a10657-fdf8-7b91-bc58-31da1146af13.jsonl.zst",
+      "line_count": 1611,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a107f2-777a-7872-aaf3-1724429e831f",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\05\\rollout-2026-10-05T01-24-53-01a107f2-777a-7872-aaf3-1724429e831f.jsonl.zst",
+      "line_count": 819,
+      "tool_evidence_rows": 2,
+      "role_counts": {
+        "TOOL": 2
+      }
+    },
+    {
+      "session_id": "01a10ae9-b170-7a80-bc96-1bcd038a3947",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\05\\rollout-2026-10-05T15-14-10-01a10ae9-b170-7a80-bc96-1bcd038a3947.jsonl.zst",
+      "line_count": 978,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a10d08-6076-7eb3-895d-2b4dd96fe063",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\06\\rollout-2026-10-06T01-07-00-01a10d08-6076-7eb3-895d-2b4dd96fe063.jsonl.zst",
+      "line_count": 345,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a10d5f-7a73-76f2-944d-2730ee01692e",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\06\\rollout-2026-10-06T02-42-03-01a10d5f-7a73-76f2-944d-2730ee01692e.jsonl.zst",
+      "line_count": 527,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a10e05-a57f-70e3-ac00-cc430b98bdd0",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\06\\rollout-2026-10-06T05-43-33-01a10e05-a57f-70e3-ac00-cc430b98bdd0.jsonl.zst",
+      "line_count": 93,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a10e20-b975-7810-a924-eb5fb3a3b79d",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\06\\rollout-2026-10-06T06-13-08-01a10e20-b975-7810-a924-eb5fb3a3b79d.jsonl.zst",
+      "line_count": 1275,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a12537-0877-7980-ab1e-20e33b90d8d5",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\10\\rollout-2026-10-10T17-48-46-01a12537-0877-7980-ab1e-20e33b90d8d5.jsonl.zst",
+      "line_count": 909,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a1253f-d6b8-76c0-876d-89b310228206",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\10\\rollout-2026-10-10T17-58-23-01a1253f-d6b8-76c0-876d-89b310228206.jsonl.zst",
+      "line_count": 424,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a12a7d-d0ee-71d1-bcca-a573b9693350",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\11\\rollout-2026-10-11T18-24-11-01a12a7d-d0ee-71d1-bcca-a573b9693350.jsonl.zst",
+      "line_count": 443,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a1368f-8994-7890-b66d-506cfd91642f",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\14\\rollout-2026-10-14T02-38-59-01a1368f-8994-7890-b66d-506cfd91642f.jsonl.zst",
+      "line_count": 85,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "019fffe6-f3e1-7471-be12-415d8eff01bf",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-14T18-52-34-019fffe6-f3e1-7471-be12-415d8eff01bf.jsonl.zst",
+      "line_count": 141,
+      "tool_evidence_rows": 3,
+      "role_counts": {
+        "CODEX_ASSISTANT": 2,
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a03f88-990f-7eb0-9439-c372e75e57aa",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-27T03-25-11-01a03f88-990f-7eb0-9439-c372e75e57aa.jsonl.zst",
+      "line_count": 9367,
+      "tool_evidence_rows": 194,
+      "role_counts": {
+        "TOOL": 96,
+        "CODEX_ASSISTANT": 98
+      }
+    },
+    {
+      "session_id": "01a0427c-e83e-73a3-9b7d-f11fc15ecdef",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-27T17-11-17-01a0427c-e83e-73a3-9b7d-f11fc15ecdef.jsonl.zst",
+      "line_count": 540,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a042c5-8890-7423-b9b2-e56ca19c317c",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-27T18-30-37-01a042c5-8890-7423-b9b2-e56ca19c317c.jsonl.zst",
+      "line_count": 98,
+      "tool_evidence_rows": 7,
+      "role_counts": {
+        "TOOL": 3,
+        "CODEX_ASSISTANT": 4
+      }
+    },
+    {
+      "session_id": "01a043d8-a9b1-76d1-b755-673b902203ab",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-27T23-31-07-01a043d8-a9b1-76d1-b755-673b902203ab.jsonl.zst",
+      "line_count": 56,
+      "tool_evidence_rows": 1,
+      "role_counts": {
+        "TOOL": 1
+      }
+    },
+    {
+      "session_id": "01a0477b-6543-7370-a0b7-ba7fccc0d7d6",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-28T16-27-44-01a0477b-6543-7370-a0b7-ba7fccc0d7d6.jsonl.zst",
+      "line_count": 392,
+      "tool_evidence_rows": 102,
+      "role_counts": {
+        "CODEX_ASSISTANT": 56,
+        "TOOL": 46
+      }
+    },
+    {
+      "session_id": "01a0477c-3bdd-77a2-8867-05ec0e5a68cb",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-28T16-28-39-01a0477c-3bdd-77a2-8867-05ec0e5a68cb.jsonl.zst",
+      "line_count": 1258,
+      "tool_evidence_rows": 209,
+      "role_counts": {
+        "TOOL": 79,
+        "CODEX_ASSISTANT": 130
+      }
+    },
+    {
+      "session_id": "01a04838-4e5c-71e1-8018-760e28310e38",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-28T19-54-04-01a04838-4e5c-71e1-8018-760e28310e38.jsonl.zst",
+      "line_count": 594,
+      "tool_evidence_rows": 91,
+      "role_counts": {
+        "TOOL": 45,
+        "CODEX_ASSISTANT": 46
+      }
+    },
+    {
+      "session_id": "01a04a0f-0ea9-7672-90ce-6b4748dc31f2",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-29T04-28-16-01a04a0f-0ea9-7672-90ce-6b4748dc31f2.jsonl.zst",
+      "line_count": 697,
+      "tool_evidence_rows": 134,
+      "role_counts": {
+        "TOOL": 54,
+        "CODEX_ASSISTANT": 80
+      }
+    },
+    {
+      "session_id": "01a04adf-7e4a-73c3-84aa-1980a68abb81",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-29T08-15-57-01a04adf-7e4a-73c3-84aa-1980a68abb81.jsonl.zst",
+      "line_count": 152,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a052dc-2f6c-7823-9695-8fd375bdee68",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-30T21-29-18-01a052dc-2f6c-7823-9695-8fd375bdee68.jsonl.zst",
+      "line_count": 646,
+      "tool_evidence_rows": 21,
+      "role_counts": {
+        "CODEX_ASSISTANT": 7,
+        "TOOL": 14
+      }
+    },
+    {
+      "session_id": "01a05325-e4f2-7660-b3f0-2f5ffd17c401",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-30T22-49-47-01a05325-e4f2-7660-b3f0-2f5ffd17c401.jsonl.zst",
+      "line_count": 98,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a05365-1986-77e0-aed8-f8375ee6c13a",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-30T23-58-50-01a05365-1986-77e0-aed8-f8375ee6c13a.jsonl.zst",
+      "line_count": 507,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a05380-cdec-7963-9396-fb32330329b1",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-08-31T00-29-05-01a05380-cdec-7963-9396-fb32330329b1.jsonl.zst",
+      "line_count": 76,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a101dd-a35b-7600-94da-d7e24653a3e3",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-10-03T21-04-25-01a101dd-a35b-7600-94da-d7e24653a3e3.jsonl.zst",
+      "line_count": 26,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a102bc-667c-7353-850c-75a61ac553ae",
+      "path": "C:\\Users\\19308\\.codex\\archived_sessions\\rollout-2026-10-04T01-07-44-01a102bc-667c-7353-850c-75a61ac553ae.jsonl.zst",
+      "line_count": 37,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a04eeb-b545-77b2-8769-cfb13df92d6c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\08\\30\\rollout-2026-08-30T03-07-45-01a04eeb-b545-77b2-8769-cfb13df92d6c.jsonl",
+      "line_count": 11048,
+      "tool_evidence_rows": 7,
+      "role_counts": {
+        "TOOL": 7
+      }
+    },
+    {
+      "session_id": "01a07f63-cd33-7281-9ee5-faee06fb89d2",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T13-00-42-01a07f63-cd33-7281-9ee5-faee06fb89d2.jsonl",
+      "line_count": 9647,
+      "tool_evidence_rows": 7,
+      "role_counts": {
+        "CODEX_ASSISTANT": 2,
+        "TOOL": 5
+      }
+    },
+    {
+      "session_id": "01a07f64-7b74-7470-b981-f7b47675c121",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T13-01-26-01a07f64-7b74-7470-b981-f7b47675c121.jsonl",
+      "line_count": 12213,
+      "tool_evidence_rows": 9,
+      "role_counts": {
+        "TOOL": 9
+      }
+    },
+    {
+      "session_id": "01a12508-4d8e-7ac3-9df9-71b0dc9d9cff",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\10\\rollout-2026-10-10T16-57-43-01a12508-4d8e-7ac3-9df9-71b0dc9d9cff.jsonl",
+      "line_count": 5836,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a15e66-0b3c-7ed1-b017-612904d37756",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T20-18-28-01a15e66-0b3c-7ed1-b017-612904d37756.jsonl",
+      "line_count": 604,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a161f9-bd56-7e61-a129-e9989e736d7c",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\22\\rollout-2026-10-22T12-58-39-01a161f9-bd56-7e61-a129-e9989e736d7c.jsonl",
+      "line_count": 2560,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a161fb-3e8a-79a3-8df2-073903c6b7df",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\22\\rollout-2026-10-22T13-00-18-01a161fb-3e8a-79a3-8df2-073903c6b7df.jsonl",
+      "line_count": 1853,
+      "tool_evidence_rows": 2,
+      "role_counts": {
+        "CODEX_ASSISTANT": 2
+      }
+    },
+    {
+      "session_id": "01a16460-eadc-75d0-ae63-8a79948990c7",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\23\\rollout-2026-10-23T00-10-35-01a16460-eadc-75d0-ae63-8a79948990c7.jsonl",
+      "line_count": 241,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    },
+    {
+      "session_id": "01a16589-b3b1-7623-84d4-6c6393e1ded8",
+      "path": "C:\\Users\\19308\\.codex\\sessions\\2026\\10\\23\\rollout-2026-10-23T05-34-45-01a16589-b3b1-7623-84d4-6c6393e1ded8.jsonl",
+      "line_count": 108,
+      "tool_evidence_rows": 0,
+      "role_counts": {}
+    }
+  ]
+}
