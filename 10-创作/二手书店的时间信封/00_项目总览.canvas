@@ -913,6 +913,16 @@
       "width": 3800,
       "height": 1600,
       "color": "6"
+    },
+    {
+      "id": "g_second_sources_20261025",
+      "type": "text",
+      "text": "# G｜第二批实证素材：绘画、巴黎场景、音乐职业（2026-10-25）\n**目的**：给《二手书店的时间信封》增加可以落地的场景、人物困境与视觉参照，不把猜想当官方剧本。\n\n| 类型 | 核实结果 | 给剧情的作用 | 资料来源 |\n|---|---|---|---|\n| 法国恋人绘画 | 皮埃尔-奥古斯特·科特 Pierre-Auguste Cot《Springtime／春天》，1873年，画面是一对年轻恋人；大都会博物馆藏，馆方标明Public Domain。**不是莫奈的作品**。 | 作为“年轻爱情／理想化拥抱”视觉情绪参照，不能直接证明巴黎街景。 | https://www.metmuseum.org/art/collection/search/438158 |\n| 莫奈画名待核 | 对语音“Claude Monet, Two Young Lovers”，没有找到可确认的**莫奈作品正式馆藏条目**；不可擅自认定它就是《春天》。 | 归档为未证检索词，禁止写入正式作品名。 | 另待用户提供图像、画集或准确外语名称 |\n| 巴黎车站公共钢琴 | SNCF Gares & Connexions确认Paris-Austerlitz（巴黎奥斯特里茨站）有开放钢琴，标记位置在**19号站台对面**（页面可能调整）。 | 合理呈现Claire和Lucas偶遇、同演二重奏；**火车站钢琴不是地铁钢琴**。 | https://www.garesetconnexions.sncf/fr/gares-services/paris-austerlitz/services-commerces/piano-gare |\n| 巴黎地铁音乐演出 | RATP 2026秋季音乐人选拔**报名已关闭**；其公示为每年约300位获准演出、近千人尝试；许可演出有审查与席位。 | Lucas可面临资格/入选压力，但“已参加面试”须在剧本中另立事件。 | https://www.ratp.fr/castingsMDM |\n| 真实面试流程 | RATP 2026-09-15说明：受邀音乐人携乐器按指定时间参加面试，约10天后获结果，通过后领取资格凭证。 | 可做有明确期限的现实行动：演出机会与送别Claire撞期。 | https://askip.ratpgroup.com/question/jai-ete-selectionne-pour-participer-au-casting-de-musiciens-du-metro-comment-se-deroule-laudition/ |\n| 巴黎学生租住成本 | Campus France 2026-06-26住房指南：巴黎CROUS房间约€450/月，私人单间/一居示例至少€800/月；身份、房源、优惠因人而异。 | 她为什么不能任意延长交换期：生活与住处都有现实代价。 | https://www.campusfrance.org/en/student-housing-france |\n| 法国留学预算 | Campus France 2026-07-07更新，明确巴黎大城市生活成本高，需要事先估算食住行。 | “为爱留下”不是免费的结局，可以写具体预算与回国期限。 | https://www.campusfrance.org/en/preparing-budget-student-France |\n| 更大范围车站钢琴 | SNCF列出70余台开放钢琴，多座巴黎大型站有设置。 | 如果想换场地应按车站核对站内位置与开放时间。 | https://www.garesetconnexions.sncf/fr/services-du-quotidien/se-detendre/vos-pianos-gare |\n\n**可拍的强因果样例［未定稿］**：Lucas在获得地铁演出机会前，必须选择是否向Claire坦白一场即将离开的巡演；Claire已交付巴黎住宿退租，无法随口为爱延长停留。“音乐信”呈现祖母当年**为成全对方隐瞒自己真实意愿**的一段未完成二重奏。历史不能倒退，现代两人必须自己说出答案。\n**视觉采集入口**：科特《Springtime》馆藏高清；SNCF巴黎奥斯特里茨站钢琴现场页；RATP地铁演出实景和面试介绍；Campus France学生住宅实景。\n**边界**：真实机构仅证明存在这一环境，虚构角色经历与超自然歌曲仍是剧本候选。**资料阶段并非“所有资料找齐”**，未完成逐镜素材/授权音乐/完整故事筛选。\n",
+      "x": 22600,
+      "y": -2280,
+      "width": 3650,
+      "height": 2850,
+      "color": "4"
     }
   ],
   "edges": [
@@ -1509,6 +1519,13 @@
       "fromSide": "bottom",
       "toNode": "f_music_social_root",
       "toSide": "top"
+    },
+    {
+      "id": "edge_f_sources_g_second_sources_20261025",
+      "fromNode": "f_sources",
+      "fromSide": "right",
+      "toNode": "g_second_sources_20261025",
+      "toSide": "left"
     }
   ]
 }
