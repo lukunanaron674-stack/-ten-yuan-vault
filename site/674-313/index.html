@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>时间信封｜十元 × 横纵文字构图</title>
+<meta name="description" content="第5号《二手书店的时间信封》独立可视化：官方模板、十元生克补、横纵一体故事因果、人物共同事件。">
+<style>
+:root{--bg:#090e1b;--surface:#131e30;--surface2:#1a2840;--line:#33425a;--text:#eaf1fa;--muted:#a1b3ca;--blue:#7abcf9;--orange:#edb782;--pink:#eda4bf;--green:#88d9b8;--purple:#b8a2f9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse 80% 60% at 35% -5%,#1e3559 0%,transparent 68%),var(--bg);color:var(--text);font:15px/1.75 system-ui,-apple-system,"Microsoft YaHei",sans-serif}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}button{font:inherit;cursor:pointer;color:inherit}
+.shell{width:min(1500px,calc(100% - 48px));margin:auto}.topbar{position:sticky;z-index:15;top:0;background:#0b1425eb;backdrop-filter:blur(18px);border-bottom:1px solid #34445c;display:flex;justify-content:space-between;align-items:center;padding:11px max(24px,calc((100% - 1500px)/2));gap:18px}
+.brand{font-weight:800;letter-spacing:.055em;white-space:nowrap;font-size:14px}.brand b{color:var(--orange)}.nav{display:flex;align-items:center;gap:5px;flex-wrap:wrap}.nav a{padding:6px 13px;border-radius:22px;color:#d4e5f7;font-size:13px}.nav a:hover{background:#293854;text-decoration:none}
+header.hero{padding:74px 0 52px;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}.eyebrow{color:var(--orange);font-weight:750;letter-spacing:.16em;font-size:12px}.hero h1{font-family:Georgia,"Songti SC","SimSun",serif;font-size:clamp(38px,5vw,74px);letter-spacing:-.045em;line-height:1.12;margin:15px 0 24px;font-weight:650}.hero h1 em{font-style:normal;color:var(--orange)}.hero p{color:var(--muted);font-size:16px;max-width:780px}.pillrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.pill{border:1px solid #425773;border-radius:999px;color:#b8c9df;font-size:12px;padding:6px 13px}
+.hero-stamp{border:1px solid #6a5870;border-radius:16px;padding:24px;min-width:220px;color:#e8bbce;background:#39293c55}.hero-stamp strong{font-size:44px;line-height:1.3;display:block;color:#ffdfba;font-family:Georgia,serif}.hero-stamp small{font-size:12px;display:block;line-height:1.8;color:#cbb8c6}
+section{margin:24px 0 80px;scroll-margin-top:95px}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin:0 0 22px}.section-head h2{font-family:Georgia,"Songti SC",serif;font-size:30px;line-height:1.25;margin:0}.section-head p{color:var(--muted);margin:7px 0 0;font-size:13px}.seq{font-family:Georgia,serif;color:#7799c1;font-size:13px}
+.card{border:1px solid var(--line);border-radius:17px;background:linear-gradient(155deg,#17243a,#101a2b);padding:23px}.overline{font-size:11px;color:#91a9c9;font-weight:800;letter-spacing:.14em}.card h3{margin:9px 0 11px;font-size:20px}.card p{color:#c4d1e3;margin:0}
+.axis{display:grid;grid-template-columns:1fr 140px 1fr;gap:22px;align-items:stretch}.axis .card{padding:30px}.axis .symbol{font-size:29px;font-weight:850;letter-spacing:2px}.axis .left{border-top:3px solid var(--blue)}.axis .right{border-top:3px solid var(--pink)}.axis .bridge{display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:var(--green)}.axis .bridge .arrow{font-size:46px;line-height:1.4}.axis .desc{font-size:12px;color:#bacce3;margin-top:7px}
+.theme-line{margin-top:18px;padding:19px 24px;border-radius:12px;border:1px solid #405d6e;background:#102433;font-size:17px;letter-spacing:.03em}.theme-line strong{color:#c6ffe7}
+.section-intro{font-size:13px;color:var(--muted);margin:0 0 24px}
+.legend{display:flex;align-items:center;flex-wrap:wrap;gap:12px;color:#c5d3e8;font-size:12px}.dot{width:8px;height:8px;display:inline-block;border-radius:50%;margin-right:5px}.dot.past{background:var(--orange)}.dot.today{background:var(--blue)}.dot.cause{background:var(--pink)}.dot.fate{background:var(--green)}
+.map-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px;flex-wrap:wrap}.tools{display:flex;gap:6px}.tool-btn{border:1px solid #526482;border-radius:9px;background:#1b2c43;padding:6px 13px}.tool-btn:hover{background:#2b4566}
+.map-stage{overflow:auto;border:1px solid #354761;border-radius:18px;background:radial-gradient(ellipse at 55% 30%,#26395055 0,transparent 60%),repeating-linear-gradient(0deg,transparent,transparent 39px,#ffffff06 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,#ffffff06 40px),#111a2b;min-height:560px}
+.map-paper{width:1435px;height:600px;transform-origin:0 0;position:relative;transition:transform .18s}
+.map-paper svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.map-coltag{position:absolute;top:17px;font-size:11px;letter-spacing:.13em;font-weight:800;color:#98acc9}.map-node{position:absolute;width:288px;min-height:126px;text-align:left;padding:16px 19px;border:1px solid #52718e;border-radius:14px;background:#15263a;color:var(--text);box-shadow:0 8px 28px #080d1988;transition:transform .16s,border .16s,background .16s;display:flex;flex-direction:column;gap:6px}.map-node:hover,.map-node.active{border-color:#f1c59b;background:#2d3447;transform:translateY(-3px)}.map-node .id{color:#a5b7ce;font-size:11px;letter-spacing:.12em;font-weight:700}.map-node strong{font-size:15px;line-height:1.45}.map-node small{font-size:12px;color:#c1cfe0;line-height:1.5}.map-node.past{border-left:4px solid var(--orange)}.map-node.now{border-left:4px solid var(--blue)}.map-node.fate{border-left:4px solid var(--green)}.map-node.end{border-left:4px solid var(--pink)}
+.detail-panel{display:grid;grid-template-columns:1fr 220px;align-items:center;gap:20px;margin-top:14px;border:1px solid #435772;border-radius:16px;padding:21px 26px;background:#182940}.detail-panel h3{margin:3px 0 5px;font-size:20px}.detail-panel p{margin:0;color:#d2e1ee}.detail-panel .type{font-size:11px;color:#91d9f7;font-weight:700;letter-spacing:.1em}.detail-panel aside{border-left:1px solid #486079;padding-left:20px;color:#e2c39f;font-size:13px}
+.columns{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.char{position:relative;overflow:hidden}.char:before{content:"";position:absolute;right:-42px;top:-50px;border:28px solid #496a8a33;border-radius:50%;width:120px;height:120px}.char .name{font-size:22px;font-family:Georgia,serif}.char .tag{display:inline-block;border:1px solid #63819e;border-radius:7px;padding:1px 10px;font-weight:800;color:#d6e6fd;margin:8px 0 12px}.char h4{font-size:13px;color:#88c9e9;margin:10px 0 5px}.char p{font-size:13px;line-height:1.8}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}table{width:100%;border-collapse:collapse;min-width:980px;text-align:left}th{font-size:12px;color:#a6c0de;background:#22334b;padding:16px 20px;white-space:nowrap}td{font-size:13px;color:#d3dfea;border-top:1px solid #344862;padding:17px 20px;vertical-align:top;line-height:1.8}td b{color:#f3e2c9}td:first-child{white-space:nowrap;font-weight:700;color:#c8e4fe}
+.flow-text{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.flow-step{border-top:3px solid #4d8bc4}.flow-step:nth-child(2){border-top-color:#9c82d8}.flow-step:nth-child(3){border-top-color:#e7aa80}.flow-step:nth-child(4){border-top-color:#80cda7}.flow-step h3{font-size:18px}.flow-step .stepnum{font-family:Georgia,serif;font-size:32px;color:#adc0dd}.flow-step p{font-size:13px}
+.rail{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:22px 0 15px}.rail button{border:1px solid #506079;background:#18263a;border-radius:11px;padding:10px 6px;font-size:12px;line-height:1.55}.rail button.active{border-color:#f1c59b;background:#3c3542}.readout{border:1px solid #51647d;border-radius:13px;padding:22px 25px;background:#142238}.readout strong{font-size:18px}.readout p{color:#d2deec;line-height:1.95}.source-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.source-grid .card p{font-size:13px}.tagline{font-size:12px;color:#97acc6;margin-top:14px}
+footer{border-top:1px solid #2e3e57;padding:30px 0 50px;color:#8aa3bc;font-size:12px}
+@media(max-width:900px){.hero-stamp{display:none}.axis{grid-template-columns:1fr}.axis .bridge .arrow{transform:rotate(90deg)}.columns,.flow-text,.source-grid{grid-template-columns:1fr 1fr}.nav{justify-content:flex-end}.detail-panel{grid-template-columns:1fr}}
+@media(max-width:600px){.shell{width:calc(100% - 28px)}.topbar{padding:10px 14px;display:block}.brand{display:none}.nav{justify-content:center}.nav a{padding:5px 7px;font-size:11px}header.hero{padding:47px 0 33px}.hero p{font-size:14px}section{margin-bottom:56px}.columns,.flow-text,.source-grid{grid-template-columns:1fr}.detail-panel aside{border-left:0;border-top:1px solid #41546b;padding-left:0;padding-top:10px}.rail{grid-template-columns:repeat(4,1fr)}.section-head h2{font-size:25px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="brand">674-313 <b>·</b> TIME ENVELOPE</div><nav class="nav"><a href="#thesis">故事命题</a><a href="#map">关系总图</a><a href="#ten">十元生克补</a><a href="#horizontal">横向构图</a><a href="#vertical">纵向因果</a><a href="#canon">官方模板</a></nav></div>
+<main class="shell">
+<header class="hero">
+<div>
+<div class="eyebrow">STORY ATLAS / 可交互剧情工作台 / 第 5 号故事</div>
+<h1>二手书店的<br><em>时间信封</em></h1>
+<p>用一封写成音乐的旧情书，让两代人的爱情在同一条因果链中相遇。这里不是剧情简介，而是一张可以点击查看证据、人物动机与十元关系的<strong>横纵一体文字构图</strong>。</p>
+<div class="pillrow"><span class="pill">独立网页 · 无需 Obsidian</span><span class="pill">人物十元：USER 确认</span><span class="pill">《休止符之后》：原创候选，未定稿</span></div>
+</div><div class="hero-stamp"><small>核心主线</small><strong>XN × Z</strong><small>时间克制因果<br>命运搭桥<br>微小魔法 · 真实代价</small></div>
+</header>
+<section id="thesis">
+<div class="section-head"><div><div class="seq">01 / 核心命题</div><h2>不是时间替人改变命运，而是人自己回应命运</h2></div></div>
+<div class="axis">
+<div class="card left"><div class="overline">USER 一级命题 / TIME</div><div class="symbol" style="color:var(--blue)">时间 · XN + Z</div><p>时间不能倒转已发生的分离、婚姻和下一代的出生。过去的选择无法免费修改。</p></div>
+<div class="bridge"><div class="overline">作用关系</div><div class="arrow">克 →</div><div class="desc">不是抹掉一切，<br>而是给行动划出边界</div></div>
+<div class="card right"><div class="overline">USER 一级命题 / CAUSALITY</div><div class="symbol" style="color:var(--pink)">因果 · ZX + NX</div><p>沉默不是“没有行动”。祖母的沉默使恋人误判，数十年人生因此分岔。</p></div>
+</div>
+<div class="theme-line"><strong>命运（XZ + NZ）搭桥：</strong>信封中的乐谱只改变现实的一枚音符，却把过去未说出的答复，送到今天还来得及选择的人面前。</div>
+</section>
+<section id="map">
+<div class="section-head"><div><div class="seq">02 / 可交互总图</div><h2>四段关系 · 两代人的因果在此交汇</h2><p>点击节点，查看该事件中的行为、证据与十元动态。画面可横向滚动及缩放。</p></div></div>
+<div class="map-toolbar"><div class="legend"><span><i class="dot past"></i>祖母的过去</span><span><i class="dot today"></i>Claire 与 Lucas</span><span><i class="dot fate"></i>信的异变 / 命运桥</span><span><i class="dot cause"></i>当下抉择</span></div><div class="tools"><button class="tool-btn" id="minus">−</button><button class="tool-btn" id="reset">重置视图</button><button class="tool-btn" id="plus">＋</button></div></div>
+<div class="map-stage" id="stage"><div class="map-paper" id="paper">
+<svg id="wires" viewBox="0 0 1435 600" aria-hidden="true"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#758da9"/></marker><marker id="arrowgreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#79cdb0"/></marker></defs></svg>
+<div class="map-coltag" style="left:26px">A / 官方框架</div><div class="map-coltag" style="left:388px">B / 祖母的过去</div><div class="map-coltag" style="left:750px">C / 现在的调查</div><div class="map-coltag" style="left:1110px">D / 当下抉择</div>
+</div></div>
+<div class="detail-panel"><div><div id="selected-type" class="type">点击任一事件</div><h3 id="selected-title">从官方故事骨架开始</h3><p id="selected-desc">Claire 在巴黎左岸旧书店发现一封能轻微改变现在的神秘信；她遇见地铁钢琴家 Lucas，他是写信祖母的孙子。Marcel 只负责引导。其余历史与音乐因果都是原创候选。</p></div><aside id="selected-ten">人物：Claire XN+ZX · Lucas Z · Marcel ZX · 祖母 XZ+NZ</aside></div>
+</section>
+<section id="ten">
+<div class="section-head"><div><div class="seq">03 / 人物与十元</div><h2>固定角色，不给人物随意换标签</h2><p>人物十元采用 USER 已确认版本；下面每条“生、克、补”是本剧情的事件性表达，不当作无条件定律。</p></div></div>
+<div class="columns">
+<div class="card char"><div class="overline">22岁 · 美国交换生</div><div class="name">Claire</div><div class="tag">XN + ZX</div><h4>渴望</h4><p>想理解陌生城市和 Lucas 的音乐，也渴望被理解。</p><h4>受阻 → 行动</h4><p>社交焦虑使她不敢开口；调查旧谱以及返美期限迫使她主动询问和表达。</p></div>
+<div class="card char"><div class="overline">26岁 · 地铁钢琴家</div><div class="name">Lucas</div><div class="tag">Z</div><h4>渴望</h4><p>坚持音乐职业，也想拥有自主选择的亲密关系。</p><h4>受阻 → 行动</h4><p>祖母未完成的旋律撞上职业机会；不能用“成全”替 Claire 决定是否离开。</p></div>
+<div class="card char"><div class="overline">60岁 · 书店老板</div><div class="name">Marcel</div><div class="tag">ZX</div><h4>知道</h4><p>了解祖母所留下的时间遗产与书信来源。</p><h4>界限 → 行动</h4><p>只提示线索、保管证据，不代替年轻人说出感情，更不直接揭晓全部答案。</p></div>
+<div class="card char"><div class="overline">写信者 · 过去时态</div><div class="name">祖母</div><div class="tag">XZ + NZ</div><h4>渴望</h4><p>爱与对家人的责任同时存在；愿意让恋人追求音乐理想。</p><h4>选择 → 代价</h4><p>把答复改成休止符，隐瞒心意；对方误认为拒绝，后来各自建立人生。</p></div>
+</div>
+<div class="table-wrap" style="margin-top:18px"><table><thead><tr><th>关系</th><th>谁 → 作用于谁</th><th>具体事件</th><th>观众可能感受到什么</th></tr></thead><tbody>
+<tr><td>克①</td><td><b>时间 XN+Z 克制 因果 ZX+NX</b></td><td>信只改现在一枚音符；不能回到旧车站，让错过的人重新拥有原本人生。</td><td>不可逆、遗憾、真实的重量</td></tr>
+<tr><td>克②</td><td><b>现实职业/地域 X并Z 克 亲近愿望 NZ</b></td><td>Claire 交换期将结束，Lucas 有演出与资格选择；谁也不能轻易停止生活。</td><td>焦灼、现实的阻力</td></tr>
+<tr><td>生①</td><td><b>祖母的沉默 ZX 生出 误认 NX</b></td><td>祖母没有交出第二声部，对方以为她拒绝，离开后多年未能确认。</td><td>心痛、后悔、强因果</td></tr>
+<tr><td>生②</td><td><b>Marcel 的引导 ZX 生出 Claire 的追查 ZX</b></td><td>书店老板只给乐谱线索，Claire 主动寻找在地铁演奏熟悉旋律的 Lucas。</td><td>悬疑推进、人物成长</td></tr>
+<tr><td>补①</td><td><b>祖母的命运 XZ+NZ 补过去/现在断裂</b></td><td>旧谱一枚休止符改变，暴露过去没说出口的爱，但不改写历史。</td><td>惊奇之后的惆怅</td></tr>
+<tr><td>补②</td><td><b>Lucas 的回应 Z 补 Claire 的表达 ZX</b></td><td>两人明确说出返美、工作机会和心意，提出可执行的未来约定，而非保证永不分离。</td><td>被理解、开放的希望</td></tr></tbody></table></div>
+</section>
+<section id="horizontal">
+<div class="section-head"><div><div class="seq">04 / 横向重文字构图</div><h2>同一事件里，所有关系如何共同作用？</h2><p>关键场景：Claire 带着“休止符已变音符”的旧谱来到 Lucas 的琴前。不是各人各写一条平行时间线。</p></div></div>
+<div class="table-wrap"><table><thead><tr><th>参与者 / 物</th><th>目标 / 已知</th><th>此刻具体行为与信息差</th><th>作用于谁 / 下一后果</th></tr></thead><tbody>
+<tr><td>Claire<br>XN + ZX</td><td>想知道为何旧谱变化；也想理解 Lucas；她隐瞒返美日期。</td><td>拿出旧谱和前后两张照片，犹豫之后开口问祖母；相较初来巴黎，她第一次主动向陌生人要求协助。</td><td>迫使 Lucas 接受调查；她的隐瞒让两人仍有重演旧误会的危险。</td></tr>
+<tr><td>Lucas<br>Z</td><td>认识从小听过的旋律，却不知道祖母写给谁；面临音乐工作机会。</td><td>弹奏旧谱，确认异变音符；发现第二声部像一个没有交出的回答。</td><td>为 Claire 提供音乐证据；他的职业选择也成为她是否直言的压力。</td></tr>
+<tr><td>Marcel<br>ZX</td><td>知道祖母为何把信留在书店，但受保管承诺约束。</td><td>出示旧年份、曲谱保管线索；不代讲爱情结论。</td><td>令真相有历史依据，使两人必须亲自查证并承担决定。</td></tr>
+<tr><td>祖母（缺席）<br>XZ + NZ</td><td>原想成全恋人的未来；未说明自己仍然爱他。</td><td>通过乐谱、笔迹、休止符而“参与”今日事件，不能亲自修复旧误会。</td><td>她的一次旧决定成为 Lucas 身世的一部分，也成为当代两人反思的反证。</td></tr>
+<tr><td>乐谱 / 信件</td><td>一首未完成的二重奏，既是情书，也是缺失答案的证物。</td><td>今天仅一枚休止符变为音符；对照旧照片，确认变化发生于现在。</td><td>搭起跨代信息桥；不能替恋人告白，不能取消机票或职业期限。</td></tr>
+<tr><td>外部时间与制度</td><td>交换期、返程时间、音乐演出机会都有期限。</td><td>两张通知与旧谱同时摆在琴上；眼前选择不等于过去选择。</td><td>给两人真正无法回避的期限，构成时间克因果的现实压力。</td></tr>
+</tbody></table></div>
+<div class="theme-line"><strong>这一场横向总关系：</strong>祖母失去的答复（XZ+NZ） → 信封微变（命运桥） → Claire 的好奇和追查（XN→ZX） ↔ Lucas 的音乐回应（Z） ↔ Marcel 的有界引导（ZX） ← 现实期限（XN+Z）。所有角色在<strong>同一件事</strong>中互相改变下一步。</div>
+</section>
+<section id="vertical">
+<div class="section-head"><div><div class="seq">05 / 纵向重文字构图</div><h2>原因 → 证据 → 行动 → 不可逆后果</h2><p>按可验证的事件组织，不靠“时间魔法让大家幸福”填平因果。</p></div></div>
+<div class="flow-text">
+<div class="card flow-step"><div class="stepnum">01</div><h3>旧爱相约</h3><p>祖母与恋人合写二重奏。外地发展机会出现，家人需要照顾，两个需求发生冲突。<br><b>NZ 被时间/责任 XN 克制。</b></p></div>
+<div class="card flow-step"><div class="stepnum">02</div><h3>用沉默替对方决定</h3><p>祖母写下答句又改成休止符，交由 Marcel 保存；恋人误认为遭拒并离开。<br><b>沉默 ZX 生误判 NX。</b></p></div>
+<div class="card flow-step"><div class="stepnum">03</div><h3>数十年人生分岔</h3><p>二人分别成家，Lucas 由此出生。修正过去不再是没有代价的善举。<br><b>时间 XN+Z 克因果 ZX+NX。</b></p></div>
+<div class="card flow-step"><div class="stepnum">04</div><h3>今天仍可以开口</h3><p>旧谱仅变动一枚音符。Claire 查明真相后坦白返美与感情；Lucas 在事业和感情间作出自己的答复。<br><b>命运 XZ+NZ 搭桥，Z 补 ZX。</b></p></div>
+</div>
+<div class="rail" id="rail"></div>
+<div class="readout" id="beat-detail"><strong>点击上方事件节点</strong><p>逐场查看：动机、行动、可见证据、关系变化和下一事件。</p></div>
+</section>
+<section id="canon">
+<div class="section-head"><div><div class="seq">06 / 正本边界与现实素材</div><h2>哪些不能改，哪些仍然只是探索？</h2></div></div>
+<div class="source-grid">
+<div class="card"><div class="overline">官方已给定 · 必须保留</div><h3>第5号短梗概</h3><p><strong>Claire</strong>，22岁美国交换生、好奇且有社交焦虑；在<strong>巴黎左岸二手书店</strong>发现神秘信件，信能轻微改变现在。她遇见<strong>Lucas</strong>，26岁的地铁钢琴家、写信祖母的孙子；<strong>Marcel</strong>，60岁书店老板，知道秘密但只提供引导；故事牵涉祖母的时间遗产。</p><p class="tagline">该描述依据现有保存的赛事短梗概整理，并非官网逐字扫描。官方没有指定信的文字、爱情终局与具体能力触发。</p></div>
+<div class="card"><div class="overline">原创探索 · 仍需用户审核</div><h3>《休止符之后》</h3><p>信写成音乐/情书；祖母曾有旧恋人并为其发展选择沉默；一枚休止符在现在变成音符；Claire 和 Lucas 面临返美及演出选择；两人用自己写的新答句回应过去。<strong>这些不是赛事指定情节，也尚未定稿。</strong></p><p class="tagline">能力边界：只改变现在的一枚记号，不穿越、不复活、不消灭后代。</p></div>
+<div class="card"><div class="overline">法国社会背景 · 公共资料</div><h3>交换生与音乐职业</h3><p><a href="https://www.campusfrance.org/en/preparing-budget-student-France" target="_blank" rel="noopener">Campus France：法国留学生生活预算 ↗</a><br><a href="https://www.ratp.fr/castingsMDM" target="_blank" rel="noopener">RATP：地铁音乐人选拔 ↗</a><br><a href="https://www.garesetconnexions.sncf/fr/services-du-quotidien/se-detendre/vos-pianos-gare" target="_blank" rel="noopener">SNCF：法国车站公共钢琴 ↗</a></p><p class="tagline">地铁音乐人选拔与火车站公共钢琴是两种不同场域，不能在剧本里混作同一制度。</p></div>
+<div class="card"><div class="overline">本页使用说明</div><h3>可交互、可审稿</h3><p>上方关系总图可以缩放、点击看单个事件；十元表有<strong>生/克/补与具体行为</strong>，横向表记录同场各方信息差，纵向轴追踪“过去如何造成今天”。页面是静态可视化，无需登录、无需打开 Obsidian。</p><p class="tagline">工作编号 674-313 · 独立网页 R1 · 仅展示研究稿，不代替正式拍摄分镜和用户审核。</p></div>
+</div>
+</section>
+</main>
+<footer><div class="shell">674-313 · 时间信封 · 剧情可视化 R1　｜　USER 一级命题与角色十元保持不变；新故事设定均为原创候选。</div></footer>
+<script>
+const nodes=[
+{id:"base",col:0,y:83,label:"官方模板",title:"巴黎左岸二手书店",sub:"Claire 发现神秘信，Marcel 只引导",kind:"fate",desc:"官方仅规定：Claire 在巴黎左岸的旧书店发现可轻微改变现在的神秘信件。Lucas 是写信祖母的孙子，也是地铁钢琴家。Marcel 知道秘密，却只引导。",ten:"官方身份框架；具体信的内容、恋爱与超能力触发均待原创。"},
+{id:"bridge",col:0,y:322,label:"一级命题",title:"时间克制因果，命运搭桥",sub:"XN+Z 克 ZX+NX · XZ+NZ 桥接",kind:"fate",desc:"USER 确认的创作主线：时间无法免费撤回已成事实；命运通过一封信给今天的人一次主动选择的机会。",ten:"时间 XN+Z 克因果 ZX+NX；命运 XZ+NZ 搭桥。"},
+{id:"old",col:1,y:83,label:"过去 / 因",title:"祖母与恋人合写二重奏",sub:"爱与照顾家人的责任冲突",kind:"past",desc:"祖母和年轻恋人计划一起生活与创作；恋人获得音乐发展机会，她却需要留在当地照顾家人。二者难以兼得。",ten:"NZ 相守愿望，被现实时间和责任 XN 克制。"},
+{id:"silence",col:1,y:322,label:"过去 / 行动",title:"她把答复写成休止符",sub:"原本要说“我愿意”，却交给沉默",kind:"past",desc:"她不愿让对方为自己放弃前途，于是将二重奏中象征回应的音符改成休止符，未交出真正答复。对方误以为她拒绝而远行，两人后来各自成家。",ten:"祖母 ZX 式替人决定 → NX 信息误判 → XZ+NZ 终生牵挂。"},
+{id:"discover",col:2,y:83,label:"现在 / 线索",title:"Claire 找到写成音乐的信",sub:"跟随旋律，找到地铁琴前的 Lucas",kind:"now",desc:"Claire 在书店旧谱中发现线索，Marcel 只给出保管信息；她因好奇而克服社交焦虑，去问地铁钢琴家 Lucas。",ten:"Marcel ZX 的引导生 Claire ZX 的追查；Claire XN 是阻碍，不会自动消失。"},
+{id:"note",col:2,y:322,label:"现在 / 异变",title:"一枚休止符变成音符",sub:"只改今天的纸面，不改过去的人生",kind:"fate",desc:"Claire 拍下乐谱，稍后纸面的一枚休止符变为音符，Lucas 认出祖母的笔迹。对照照片验证微小变化，他们追查出当年沉默是主动选择，而非不爱。",ten:"命运 XZ+NZ 搭桥；时间 XN+Z 仍克制过去因果。"},
+{id:"pressure",col:3,y:83,label:"当下 / 压力",title:"返美期限 × 职业机会",sub:"现实选择不允许轻易停下来",kind:"end",desc:"Claire 的交换期将结束，Lucas 有职业试演机会。两人都觉得不应让对方牺牲，于是差点重演祖母当年的沉默。",ten:"现实系统 X并Z 克亲近 NZ；时间 XN 克延宕的选择。"},
+{id:"reply",col:3,y:322,label:"当下 / 回应",title:"说出心意，各自承担选择",sub:"继续音乐与关系，不让魔法代办",kind:"end",desc:"Claire 主动说明返美日期与心意，不再替 Lucas 决定。他继续争取演出，两人商量异地关系；不承诺必然圆满，而是让选择确实发生。",ten:"Claire ZX 突破其 XN；Lucas Z 的主动回应补充 NZ 的关系可能。"}
+];
+const paper=document.getElementById("paper"),svg=document.getElementById("wires"),stage=document.getElementById("stage");let zoom=1;const pos={},colors={past:"#dfac79",now:"#81c6f4",fate:"#79cdb0",end:"#de9bbd"};
+for(const n of nodes){const x=26+n.col*360,y=n.y;pos[n.id]={x,y};const b=document.createElement("button");b.className="map-node "+n.kind;b.style.left=x+"px";b.style.top=y+"px";b.innerHTML='<span class="id">'+n.label+'</span><strong>'+n.title+'</strong><small>'+n.sub+'</small>';b.onclick=()=>selectNode(n.id);b.dataset.id=n.id;paper.appendChild(b)}
+const links=[["base","old"],["old","discover"],["discover","pressure"],["bridge","silence"],["silence","note"],["note","reply"],["old","silence"],["discover","note"],["pressure","reply"],["silence","discover"],["bridge","note"]];
+for(const [from,to] of links){const a=pos[from],b=pos[to],out=nodes.find(n=>n.id===from),x1=a.x+288,y1=a.y+65,x2=b.x,y2=b.y+65,vertical=a.x===b.x;let d;if(vertical){d='M'+(a.x+144)+' '+(a.y+126)+' C'+(a.x+144)+' '+(a.y+175)+' '+(b.x+144)+' '+(b.y-35)+' '+(b.x+144)+' '+b.y}else{d='M'+x1+' '+y1+' C'+(x1+60)+' '+y1+' '+(x2-60)+' '+y2+' '+x2+' '+y2}const e=document.createElementNS("http://www.w3.org/2000/svg","path");e.setAttribute("d",d);e.setAttribute("fill","none");e.setAttribute("stroke",to==="note"?"#79cdb0":"#68819d");e.setAttribute("stroke-width",to==="note"?"2.7":"1.8");e.setAttribute("stroke-dasharray",["silence","bridge"].includes(from)&&to==="discover"?"7 6":"none");e.setAttribute("marker-end",to==="note"?"url(#arrowgreen)":"url(#arrow)");svg.appendChild(e)}
+function selectNode(id){const n=nodes.find(n=>n.id===id);document.querySelectorAll(".map-node").forEach(x=>x.classList.toggle("active",x.dataset.id===id));document.getElementById("selected-type").textContent=n.label;document.getElementById("selected-title").textContent=n.title;document.getElementById("selected-desc").textContent=n.desc;document.getElementById("selected-ten").textContent=n.ten}selectNode("bridge");
+function setZoom(v){zoom=Math.max(.65,Math.min(1.35,v));paper.style.transform="scale("+zoom+")";stage.style.minHeight=(Math.max(460,600*zoom))+"px";paper.style.marginBottom=((600*zoom)-600)+"px";paper.style.marginRight=((1435*zoom)-1435)+"px";}document.getElementById("plus").onclick=()=>setZoom(zoom+.15);document.getElementById("minus").onclick=()=>setZoom(zoom-.15);document.getElementById("reset").onclick=()=>{setZoom(1);stage.scrollLeft=0;stage.scrollTop=0};
+const beats=[
+["祖母相爱","二重奏建立互相回应的承诺。前途与家庭义务出现冲突。","NZ ↔ XN / 开始"],
+["祖母沉默","本该交出的回应被写成休止符；她是主动省略，不是信丢失。","ZX 生 NX / 强因果"],
+["恋人离开","对方读出“她不愿意”，离开后各自成家；Lucas 的存在依赖后来的人生。","XN+Z 克 ZX+NX"],
+["发现旧谱","Claire 在巴黎左岸旧书店发现祖母音乐信；Marcel 引导而不直接答题。","ZX 生 ZX"],
+["纸面微变","一个休止符在当下变成音符；两张照片形成可拍证据。","XZ+NZ 命运搭桥"],
+["反证揭露","Lucas 认出旋律与笔迹；查明祖母沉默背后的真实情感。","NX → XZ / 重新理解"],
+["今天选择","返美和演出撞期，两人不再替彼此作决定；告白、明确回复。","Z 补 ZX / NZ 开放"]
+];const rail=document.getElementById("rail");function selectBeat(i){document.querySelectorAll("#rail button").forEach((b,j)=>b.classList.toggle("active",i===j));document.getElementById("beat-detail").innerHTML="<strong>"+(i+1)+" · "+beats[i][0]+"</strong><p>"+beats[i][1]+"</p><span class='overline'>十元关系："+beats[i][2]+"</span>"};beats.forEach((b,i)=>{let x=document.createElement("button");x.textContent=(i+1)+" "+b[0];x.onclick=()=>selectBeat(i);rail.appendChild(x)});selectBeat(0);
+</script>
+</body></html>
