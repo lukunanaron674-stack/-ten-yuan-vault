@@ -1,0 +1,220 @@
+{
+  "nodes": [
+    {
+      "id": "grp-knowledge",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 1760,
+      "height": 1500,
+      "label": "01｜运营原理 · 高级局势判断",
+      "color": "4"
+    },
+    {
+      "id": "grp-know-wave",
+      "type": "group",
+      "x": 55,
+      "y": 350,
+      "width": 770,
+      "height": 1040,
+      "label": "① 胜利条件 × 兵线 × 节奏",
+      "color": "4"
+    },
+    {
+      "id": "grp-know-map",
+      "type": "group",
+      "x": 915,
+      "y": 350,
+      "width": 770,
+      "height": 1040,
+      "label": "② 地图信息 × 资源交换",
+      "color": "4"
+    },
+    {
+      "id": "node-hub",
+      "type": "file",
+      "x": 490,
+      "y": 83,
+      "width": 770,
+      "height": 240,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/LOL_研究总纲.md",
+      "color": "4"
+    },
+    {
+      "id": "node-r1",
+      "type": "file",
+      "x": 135,
+      "y": 480,
+      "width": 610,
+      "height": 310,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/R1_胜利条件与基线.md",
+      "color": "4"
+    },
+    {
+      "id": "node-r2",
+      "type": "file",
+      "x": 135,
+      "y": 925,
+      "width": 610,
+      "height": 310,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/R2_兵线回城与节奏.md",
+      "color": "4"
+    },
+    {
+      "id": "node-r3",
+      "type": "file",
+      "x": 990,
+      "y": 480,
+      "width": 610,
+      "height": 310,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/R3_地图信息与野区联动.md",
+      "color": "4"
+    },
+    {
+      "id": "node-r4",
+      "type": "file",
+      "x": 990,
+      "y": 925,
+      "width": 610,
+      "height": 310,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/R4_目标控制与资源交换.md",
+      "color": "4"
+    },
+    {
+      "id": "grp-practice",
+      "type": "group",
+      "x": 2070,
+      "y": 0,
+      "width": 1650,
+      "height": 1500,
+      "label": "02｜实战运营 · 决策验证闭环",
+      "color": "5"
+    },
+    {
+      "id": "grp-prac-macro",
+      "type": "group",
+      "x": 2120,
+      "y": 350,
+      "width": 720,
+      "height": 1040,
+      "label": "③ 中后期的进攻组织",
+      "color": "5"
+    },
+    {
+      "id": "grp-prac-review",
+      "type": "group",
+      "x": 2930,
+      "y": 350,
+      "width": 720,
+      "height": 1040,
+      "label": "④ 复盘与上分能力验证",
+      "color": "5"
+    },
+    {
+      "id": "node-focus",
+      "type": "text",
+      "x": 2480,
+      "y": 83,
+      "width": 830,
+      "height": 235,
+      "text": "## 实战判据\n**不是这一波有没有赢，而是当时信息下有没有做出高收益决策。**\n\n每局只训练一个动作；被对面克制或队友无法配合时切换到低依赖方案。",
+      "color": "5"
+    },
+    {
+      "id": "node-r5",
+      "type": "file",
+      "x": 2200,
+      "y": 495,
+      "width": 555,
+      "height": 335,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/R5_中后期分推与终结.md",
+      "color": "5"
+    },
+    {
+      "id": "node-adv-example",
+      "type": "text",
+      "x": 2200,
+      "y": 955,
+      "width": 555,
+      "height": 260,
+      "text": "### 局势实验\n4-1 → 1-3-1 → 抱团\n\n比较先手权、兵线、撤退、目标窗口。真正的分带要让对手付出回应成本。",
+      "color": "5"
+    },
+    {
+      "id": "node-r6",
+      "type": "file",
+      "x": 3020,
+      "y": 495,
+      "width": 550,
+      "height": 335,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/R6_实战复盘与上分验证.md",
+      "color": "5"
+    },
+    {
+      "id": "node-template",
+      "type": "file",
+      "x": 3020,
+      "y": 955,
+      "width": 550,
+      "height": 310,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/实战复盘模板.md",
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-hub-r1",
+      "fromNode": "node-hub",
+      "toNode": "node-r1",
+      "fromSide": "left",
+      "toSide": "top",
+      "label": "defines",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-hub-r3",
+      "fromNode": "node-hub",
+      "toNode": "node-r3",
+      "fromSide": "right",
+      "toSide": "top",
+      "label": "defines",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-r1-r2",
+      "fromNode": "node-r1",
+      "toNode": "node-r2",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "depends_on",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-r3-r4",
+      "fromNode": "node-r3",
+      "toNode": "node-r4",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "depends_on",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-r5-example",
+      "fromNode": "node-r5",
+      "toNode": "node-adv-example",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "applies",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-r6-template",
+      "fromNode": "node-r6",
+      "toNode": "node-template",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "measures",
+      "toEnd": "arrow"
+    }
+  ]
+}
