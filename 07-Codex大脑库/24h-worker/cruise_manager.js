@@ -62,12 +62,13 @@ class CruiseManager {
             try {
                 console.log(`执行任务: ${task.name}`);
                 const result = await this.executeTask(task);
+                const skipped = result && result.status === 'NO_OP';
                 report.tasks.push({
                     task: task.name,
-                    status: 'success',
+                    status: skipped ? 'skipped' : 'success',
                     result: result
                 });
-                this.state.completedTasks.push(task.name);
+                if (!skipped) this.state.completedTasks.push(task.name);
             } catch (error) {
                 console.error(`任务失败: ${task.name}`, error);
                 report.tasks.push({
@@ -84,37 +85,29 @@ class CruiseManager {
         }
 
         report.endTime = new Date().toISOString();
-        report.status = 'completed';
-        this.state.lastCruise = cruiseId;
-        this.state.cruiseCount++;
-        
-        this.saveReport(report);
-        this.saveState();
+        const succeeded = report.tasks.filter(t => t.status === 'success').length;
+        const failed = report.tasks.filter(t => t.status === 'failed').length;
+        report.status = failed ? 'PARTIAL' : succeeded ? 'COMPLETED' : 'NO_OP';
+        if (report.status !== 'NO_OP') {
+            this.state.lastCruise = cruiseId;
+            this.state.cruiseCount++;
+            this.saveReport(report);
+            this.saveState();
+        }
 
         console.log(`巡航完成: ${cruiseId}`);
         return report;
     }
 
     async executeTask(task) {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                if (task.script) {
-                    try {
-                        const scriptPath = path.join(__dirname, task.script);
-                        if (fs.existsSync(scriptPath)) {
-                            const result = require(scriptPath);
-                            resolve(result);
-                        } else {
-                            resolve({ message: `脚本不存在: ${task.script}` });
-                        }
-                    } catch (e) {
-                        reject(e);
-                    }
-                } else {
-                    resolve({ message: `任务执行: ${task.name}` });
-                }
-            }, 100);
-        });
+        // A missing or placeholder script is not evidence that a task ran.
+        if (!task.script) return { status: 'NO_OP', reason: 'NO_SCRIPT' };
+        const scriptPath = path.resolve(__dirname, task.script);
+        if (!fs.existsSync(scriptPath)) throw new Error('SCRIPT_MISSING: ' + task.script);
+        const worker = require(scriptPath);
+        if (typeof worker === 'function') return await worker(task);
+        if (worker && typeof worker.run === 'function') return await worker.run(task);
+        return { status: 'NO_OP', reason: 'NO_EXECUTABLE_EXPORT' };
     }
 
     saveReport(report) {
