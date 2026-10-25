@@ -1,13 +1,25 @@
 ---
 type: lol-macro-learning-hub
-scope: summoners-rift-ranked
+scope: wild-rift-ranked-active-pc-legacy
 linear_issue: 674-316
-patch_baseline: "26.21"
-status: six-round-desk-study-complete-await-real-matches
-updated: 2026-10-25
+patch_baseline: "Wild Rift 7.3c / PC 26.21 legacy"
+status: wild-rift-teemo-mid-active-pc-legacy
+updated: 2026-10-26
 ---
 
 # LOL 高级运营与上分｜唯一研究总纲
+
+## 🚩 当前优先研究｜英雄联盟手游 · 宗师提莫中路
+
+**当前游戏**：Wild Rift《英雄联盟手游》排位；**位置**：中路；**专精英雄**：提莫；**分段**：用户自报宗师。**用户确认**：天使、吸血鬼、卡牌常能很好对线与单杀；主要问题是进入团战后无法把前期优势转成胜势。
+
+[[手游_宗师提莫中路_优势转胜势|进入：宗师提莫中路完整节奏、目标团流程与五局验证]]
+
+**当前研究的唯一主问题**：提莫中路先获得线杀优势后，怎样转为中塔收益、河道入场权、蘑菇封锁与目标兑换？先检验首杀后60秒收益和第一波目标团前的30–50秒准备，而不是泛泛提高击杀数。
+
+**版本隔离**：当前用于手游的是7.3系列、2026-10-21的7.3c公告（以AAA ARAM调整为主）。**本文件下方历史R1–R6、PC 26.21、PC位置任务/男爵计时/职业比赛与五路参考均为PC端旧资料，不允许直接套到手游。** 保留历史文件与旧Canvas节点便于溯源，但当前个人训练只有上面的手游专精卡。手机实际打法以手机游戏内与官方Wild Rift补丁为准。
+
+
 
 **核心 Z：为什么对线/打团并不差，还是无法稳定把优势转成赢？**
 
