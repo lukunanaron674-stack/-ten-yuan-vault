@@ -4,9 +4,10 @@ const http = require('http');
 const path = require('path');
 
 const BRIDGE = 'http://127.0.0.1:17312';
-const VAULT = 'C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault';
+const runtime = require('./incremental_cruise');
+const VAULT = runtime.resolveVault();
 const ARCHIVE_DIR = path.join(VAULT, '07-Codex大脑库', 'F12归档输出');
-const GUARD_DIR = path.join(VAULT, '07-Codex大脑库', 'F12归档输出', 'memory_guard');
+const GUARD_DIR = path.join(runtime.resolveStateDir(VAULT), 'f12-memory-guard');
 const INTERVAL_MS = 2 * 60 * 1000;
 
 fs.mkdirSync(GUARD_DIR, { recursive: true });
