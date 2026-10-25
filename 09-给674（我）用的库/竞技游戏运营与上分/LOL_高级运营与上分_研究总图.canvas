@@ -7,7 +7,7 @@
       "y": 0,
       "width": 1760,
       "height": 1500,
-      "label": "01｜运营原理 · 高级局势判断",
+      "label": "01｜PC旧资料 · 运营原理（仅历史参考）",
       "color": "4"
     },
     {
@@ -87,7 +87,7 @@
       "y": 0,
       "width": 1650,
       "height": 1900,
-      "label": "02｜实战运营 · 决策验证闭环",
+      "label": "02｜PC旧资料 · 实战推演（非手游现行）",
       "color": "5"
     },
     {
@@ -117,7 +117,7 @@
       "y": 83,
       "width": 830,
       "height": 235,
-      "text": "## 674-316｜六轮桌面研究已跑完\n\n**R1–R5：5/5资料推演；R6：协议完成（六轮桌面阶段6/6）**\n\n✅ 每轮已有规则、反例、题目和来源\n⏳ USER真实录像验证 0 局\n\n行动前问：WIN → WAVE → INFO → TEMPO → TRADE → EXIT",
+      "text": "## 674-316｜PC端六轮桌面资料已归档\n\n**这里只保留历史框架；用户现行游戏是 Wild Rift 手游。**\n\n▶ 请向右看 03｜手游宗师提莫中路；PC版本、装备、技能与地图计时不可照搬。\n\nPC历史研究：R1–R5资料 / R6协议；USER手游真实录像0局。",
       "color": "5"
     },
     {
@@ -179,6 +179,86 @@
       "height": 335,
       "color": "5",
       "file": "09-给674（我）用的库/竞技游戏运营与上分/职业比赛实证_DK逆转与GenG滚雪球.md"
+    },
+    {
+      "id": "grp-wr",
+      "type": "group",
+      "x": 3930,
+      "y": 0,
+      "width": 1850,
+      "height": 1710,
+      "label": "03｜Wild Rift 手游 · 宗师提莫中路（唯一当前路线）",
+      "color": "3"
+    },
+    {
+      "id": "grp-wr-macro",
+      "type": "group",
+      "x": 3975,
+      "y": 370,
+      "width": 830,
+      "height": 1230,
+      "label": "⑤ 中路线杀 → 地图兑现",
+      "color": "3"
+    },
+    {
+      "id": "grp-wr-fight",
+      "type": "group",
+      "x": 4925,
+      "y": 370,
+      "width": 830,
+      "height": 1230,
+      "label": "⑥ 蘑菇设战场 → 团战复盘",
+      "color": "3"
+    },
+    {
+      "id": "node-wr-hub",
+      "type": "text",
+      "x": 4210,
+      "y": 80,
+      "width": 1270,
+      "height": 240,
+      "color": "3",
+      "text": "## 手游 · 宗师提莫中路｜当前研究中心\n**真实困难：经常单杀天使、吸血鬼、卡牌，前期领先；团战后优势难转胜势。**\n\n🚫 PC 26.21 不是手游7.3系列；旧PC课程不作排位现行依据。\n**闭环：杀线 → 送线/镀层 → 河道先手 → 蘑菇控入口 → 目标/塔收益 → 复盘**"
+    },
+    {
+      "id": "node-wr-specialist",
+      "type": "file",
+      "x": 4030,
+      "y": 520,
+      "width": 715,
+      "height": 365,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/手游_宗师提莫中路_优势转胜势.md",
+      "color": "3"
+    },
+    {
+      "id": "node-wr-convert",
+      "type": "text",
+      "x": 4030,
+      "y": 980,
+      "width": 715,
+      "height": 475,
+      "color": "3",
+      "text": "### 单杀后行动卡（宗师中路）\n**在十秒内选择一项**\n\n① 安全、有兵线、敌人可定位：送线进塔→兑现镀层/结晶收益→撤离。\n\n② 队友正准备进入河道：先处理兵线→与野辅同侧做入口控制。\n\n③ 己方低血量/敌人失踪：先重置，别把线杀变成被抓。\n\n**STOP**：无兵线、敌方多人消失、队友未跟，不贪塔下一次普攻。"
+    },
+    {
+      "id": "node-wr-team",
+      "type": "text",
+      "x": 4980,
+      "y": 520,
+      "width": 715,
+      "height": 365,
+      "color": "3",
+      "text": "### 团前30–50秒｜先取得入场权\n**蘑菇3类价值**：敌方入场必经路、我方安全撤退角、侧翼伏击角；有条件才布，不为凑数量送命。\n\n**团中3定位**：Q限制普攻核心 / 蘑菇拦路拉扯 / E伪装短距离伏击。\n\n如果队友无法正面接团，比较边线交换与止损，不要求提莫一定打成传统中单法师。"
+    },
+    {
+      "id": "node-wr-test",
+      "type": "text",
+      "x": 4980,
+      "y": 980,
+      "width": 715,
+      "height": 475,
+      "color": "3",
+      "text": "### 5局试验｜找领先消失的最早断点\n\n记录：首杀后60秒里是否兑现塔/河道/安全重置；首波资源团前是否提前占位；蘑菇有无迫使扫眼、绕路或减速；Q给谁、死在哪。\n\n**只改一件事**：单杀后先找一项地图收益，不继续无目标追杀。\n\n**状态**：USER自报宗师；手游真实录像0局。\n**禁止**：拿PC机制/职业赛当手游强度证据；未复盘不宣称已提高胜率。"
     }
   ],
   "edges": [
@@ -252,6 +332,42 @@
       "fromSide": "bottom",
       "toSide": "top",
       "label": "tested_against",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-wr-hub-doc",
+      "fromNode": "node-wr-hub",
+      "toNode": "node-wr-specialist",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "current_specialist",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-wr-hub-team",
+      "fromNode": "node-wr-hub",
+      "toNode": "node-wr-team",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "setup",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-wr-doc-convert",
+      "fromNode": "node-wr-specialist",
+      "toNode": "node-wr-convert",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "drill",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-wr-team-test",
+      "fromNode": "node-wr-team",
+      "toNode": "node-wr-test",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "verify",
       "toEnd": "arrow"
     }
   ]
