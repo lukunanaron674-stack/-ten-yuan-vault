@@ -1,3 +1,21 @@
+# 2026-10-25｜674-298 增量巡航（只读试点）
+
+**这是修复分支里的候选实现，不代表用户 Windows 4080 已部署或定时任务已启用。**
+
+- 运行入口：`node "07-Codex大脑库/24h-worker/cruiser.js"`，无 `--batch` 参数时只读检查 `黎黎隆项目/`。
+- 若当前目录不是 Vault：设置 `OBSIDIAN_VAULT` 为真实 Vault 绝对路径，或传 `--vault=绝对路径`；不得沿用旧机硬编码路径。
+- 可选 `--scope=黎黎隆项目`，`--state-dir=Vault外目录`；默认状态存于用户主目录 `.74-obsidian-maintainer`。
+- 首次为 `BASELINE`，随后无变化为 `NO_OP`（不新增报告），有变化为 `REVIEW`（仓库外更新一份 `latest-*.json`）。
+- 按 SHA-256 识别 Markdown/Canvas/JSON/YAML 增量，输出重复内容候选及 Canvas JSON 解析异常，不自动移动、合并、删除、修改正本或提交 Git。
+- 超过 8MB 的文本文件会列为 `skipped_oversize`，不当作已分析；全量资源图片和视频不在本扫描范围。
+- 工作进程持有独占锁；遇到旧锁/路径不明/越界立即 STOP，不能静默抢锁或创建空 Vault。
+- `node --test "07-Codex大脑库/24h-worker/tests/incremental_cruise.test.js"` 用于本地验证；PR 检查在 Windows/Linux 执行。
+- 原 `cruiser.js --batch=N` 仍为手动旧批次报告，不应用作新自动化默认入口。
+- `cruiser-daemon.js` 需要 `--allow-legacy-full-scan`；`role-cruiser.js` 需要 `--allow-legacy-role-cruise` 和 `F12_CLI_COMMAND`，均不得自动恢复旧每小时任务。
+- 本轮只实现 R1（增量发现与安全门），语义优化/本地 Hermes 接口、真实文件受控搬迁属于后续 R2/R3，必须走现有 L0/L1/L2 权力门禁。
+- GitHub 版本不是 Windows 当前文件树；正式搬迁前仍需核对 674-270、674-298 和本地实际运行状态。
+
+---
 # Codex 24h Worker v0.1
 
 ## 它是什么

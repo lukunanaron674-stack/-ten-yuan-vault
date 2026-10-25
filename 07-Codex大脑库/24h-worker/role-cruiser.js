@@ -1,12 +1,18 @@
-﻿// role-cruiser.js — F12角色库8h巡航 v1.0
+// role-cruiser.js — F12角色库8h巡航 v1.0
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
-const VAULT = 'C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault';
-const REPORT_DIR = path.join(VAULT, '07-Codex大脑库', '24h-worker', 'reports');
+// Legacy F12 automation requires explicit user opt-in and a verified CLI.
+if (!process.argv.includes('--allow-legacy-role-cruise') || !process.env.F12_CLI_COMMAND) {
+  console.error('STOP: use the incremental scanner; legacy F12 cruise requires --allow-legacy-role-cruise and F12_CLI_COMMAND');
+  process.exit(2);
+}
+const runtime = require('./incremental_cruise');
+const VAULT = runtime.resolveVault();
+const REPORT_DIR = path.join(runtime.resolveStateDir(VAULT), 'legacy-reports');
 const TASK_DIR = path.join(VAULT, '04-F12总控载体', 'runtime', 'tasks');
-const F12 = 'node C:\\Users\\19308\\.codex\\skills\\ten-yuan-f12-operator\\scripts\\f12.js';
+const F12 = process.env.F12_CLI_COMMAND;
 const TOTAL_HOURS = 8;
 const HEARTBEAT_MS = 5 * 60 * 1000;
 
@@ -133,7 +139,7 @@ async function generateFinalReport() {
     '- 简索: 05-银矿库/角色库/简索/',
     '- 扩展名单: 07-Codex大脑库/deepseek的实践/扩展名单.md',
   ].join('\n');
-  const f = path.join(VAULT, '07-Codex大脑库', 'deepseek的实践', '8h巡航报告.md');
+  const f = path.join(REPORT_DIR, 'role-cruise-final.md');
   fs.writeFileSync(f, report);
   log(`Report written to ${f}`);
 }

@@ -5,8 +5,14 @@ const fs = require('fs');
 const path = require('path');
 const http = require('http');
 
-const VAULT = 'C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault';
-const REPORT_DIR = path.join(VAULT, '07-Codex大脑库', '24h-worker', 'reports');
+// Old 8-hour full crawl is destructive to attention, not to files: manual opt-in only.
+if (!process.argv.includes('--allow-legacy-full-scan')) {
+  console.error('STOP: legacy 8-hour cruiser disabled. Use node cruiser.js for incremental NO_OP scanning.');
+  process.exit(2);
+}
+const runtime = require('./incremental_cruise');
+const VAULT = runtime.resolveVault();
+const REPORT_DIR = path.join(runtime.resolveStateDir(VAULT), 'legacy-reports');
 const BRIDGE_URL = 'http://127.0.0.1:17312';
 
 const BATCHES = [

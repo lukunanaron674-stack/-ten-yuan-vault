@@ -1,0 +1,38 @@
+name: Vault incremental maintainer tests
+on:
+  push:
+    branches:
+      - 'codex/674-298-*'
+    paths:
+      - '07-Codex大脑库/24h-worker/**'
+      - '.github/workflows/vault-incremental-maintainer-test.yml'
+  pull_request:
+    paths:
+      - '07-Codex大脑库/24h-worker/**'
+      - '.github/workflows/vault-incremental-maintainer-test.yml'
+permissions:
+  contents: read
+jobs:
+  node-test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate Node syntax
+        shell: bash
+        run: |
+          node --check "07-Codex大脑库/24h-worker/incremental_cruise.js"
+          node --check "07-Codex大脑库/24h-worker/cruiser.js"
+          node --check "07-Codex大脑库/24h-worker/cruiser-daemon.js"
+          node --check "07-Codex大脑库/24h-worker/role-cruiser.js"
+          node --check "07-Codex大脑库/24h-worker/f12-memory-guard.js"
+          node --check "07-Codex大脑库/24h-worker/cruise_manager.js"
+      - name: Test incremental audit and fail-closed behavior
+        shell: bash
+        run: node --test "07-Codex大脑库/24h-worker/tests/incremental_cruise.test.js"
