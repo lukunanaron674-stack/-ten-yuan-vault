@@ -86,7 +86,7 @@
       "x": 2070,
       "y": 0,
       "width": 1650,
-      "height": 1500,
+      "height": 1900,
       "label": "02｜实战运营 · 决策验证闭环",
       "color": "5"
     },
@@ -96,7 +96,7 @@
       "x": 2120,
       "y": 350,
       "width": 720,
-      "height": 1040,
+      "height": 1480,
       "label": "③ 中后期的进攻组织",
       "color": "5"
     },
@@ -106,7 +106,7 @@
       "x": 2930,
       "y": 350,
       "width": 720,
-      "height": 1040,
+      "height": 1480,
       "label": "④ 复盘与上分能力验证",
       "color": "5"
     },
@@ -159,6 +159,26 @@
       "height": 310,
       "file": "09-给674（我）用的库/竞技游戏运营与上分/实战复盘模板.md",
       "color": "5"
+    },
+    {
+      "id": "node-role-specific",
+      "type": "file",
+      "x": 2200,
+      "y": 1400,
+      "width": 555,
+      "height": 325,
+      "color": "5",
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/五路高阶运营_低配合决策卡.md"
+    },
+    {
+      "id": "node-pro-evidence",
+      "type": "file",
+      "x": 3020,
+      "y": 1400,
+      "width": 550,
+      "height": 335,
+      "color": "5",
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/职业比赛实证_DK逆转与GenG滚雪球.md"
     }
   ],
   "edges": [
@@ -214,6 +234,24 @@
       "fromSide": "bottom",
       "toSide": "top",
       "label": "measures",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-adv-role",
+      "fromNode": "node-adv-example",
+      "toNode": "node-role-specific",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "applies",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-review-cases",
+      "fromNode": "node-template",
+      "toNode": "node-pro-evidence",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "tested_against",
       "toEnd": "arrow"
     }
   ]
