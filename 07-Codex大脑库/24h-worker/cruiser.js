@@ -1,8 +1,14 @@
-﻿const fs = require('fs');
+// Default entrypoint now runs the incremental, no-write scanner.
+// Legacy batch reports require an explicit --batch=N.
+if (!process.argv.some(a => a.startsWith('--batch='))) {
+  process.exitCode = require('./incremental_cruise').runCli();
+} else {
+const fs = require('fs');
 const path = require('path');
 
-const VAULT = 'C:\\Users\\19308\\Documents\\Obsidian\\ten-yuan-vault';
-const REPORT_DIR = path.join(VAULT, '07-Codex大脑库', '24h-worker', 'reports');
+const runtime = require('./incremental_cruise');
+const VAULT = runtime.resolveVault();
+const REPORT_DIR = path.join(runtime.resolveStateDir(VAULT), 'legacy-reports');
 
 const BATCHES = [
   { id: 1, name: '命运型 xz+nz', dir: '05-银矿库\\五大主题仓库\\01-命运 xz+nz' },
@@ -142,3 +148,5 @@ fs.writeFileSync(reportPath, report, 'utf8');
 
 console.log(`[cruiser] Report: ${path.relative(VAULT, reportPath)}`);
 console.log(`[cruiser] Done. Grades: 完整=${files.filter(f=>f.quality.grade==='完整').length} 待补=${files.filter(f=>f.quality.grade==='待补').length} 骨架=${files.filter(f=>f.quality.grade==='骨架').length}`);
+
+}
