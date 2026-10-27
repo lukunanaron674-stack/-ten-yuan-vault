@@ -1,0 +1,374 @@
+{
+  "nodes": [
+    {
+      "id": "grp-knowledge",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 1760,
+      "height": 1500,
+      "label": "01｜PC旧资料 · 运营原理（仅历史参考）",
+      "color": "4"
+    },
+    {
+      "id": "grp-know-wave",
+      "type": "group",
+      "x": 55,
+      "y": 350,
+      "width": 770,
+      "height": 1040,
+      "label": "① 胜利条件 × 兵线 × 节奏",
+      "color": "4"
+    },
+    {
+      "id": "grp-know-map",
+      "type": "group",
+      "x": 915,
+      "y": 350,
+      "width": 770,
+      "height": 1040,
+      "label": "② 地图信息 × 资源交换",
+      "color": "4"
+    },
+    {
+      "id": "node-hub",
+      "type": "file",
+      "x": 490,
+      "y": 83,
+      "width": 770,
+      "height": 240,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/LOL_研究总纲.md",
+      "color": "4"
+    },
+    {
+      "id": "node-r1",
+      "type": "file",
+      "x": 135,
+      "y": 480,
+      "width": 610,
+      "height": 310,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/R1_胜利条件与基线.md",
+      "color": "4"
+    },
+    {
+      "id": "node-r2",
+      "type": "file",
+      "x": 135,
+      "y": 925,
+      "width": 610,
+      "height": 310,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/R2_兵线回城与节奏.md",
+      "color": "4"
+    },
+    {
+      "id": "node-r3",
+      "type": "file",
+      "x": 990,
+      "y": 480,
+      "width": 610,
+      "height": 310,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/R3_地图信息与野区联动.md",
+      "color": "4"
+    },
+    {
+      "id": "node-r4",
+      "type": "file",
+      "x": 990,
+      "y": 925,
+      "width": 610,
+      "height": 310,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/R4_目标控制与资源交换.md",
+      "color": "4"
+    },
+    {
+      "id": "grp-practice",
+      "type": "group",
+      "x": 2070,
+      "y": 0,
+      "width": 1650,
+      "height": 1900,
+      "label": "02｜PC旧资料 · 实战推演（非手游现行）",
+      "color": "5"
+    },
+    {
+      "id": "grp-prac-macro",
+      "type": "group",
+      "x": 2120,
+      "y": 350,
+      "width": 720,
+      "height": 1480,
+      "label": "③ 中后期的进攻组织",
+      "color": "5"
+    },
+    {
+      "id": "grp-prac-review",
+      "type": "group",
+      "x": 2930,
+      "y": 350,
+      "width": 720,
+      "height": 1480,
+      "label": "④ 复盘与上分能力验证",
+      "color": "5"
+    },
+    {
+      "id": "node-focus",
+      "type": "text",
+      "x": 2480,
+      "y": 83,
+      "width": 830,
+      "height": 235,
+      "text": "## 674-316｜PC端六轮桌面资料已归档\n\n**这里只保留历史框架；用户现行游戏是 Wild Rift 手游。**\n\n▶ 请向右看 03｜手游宗师提莫中路；PC版本、装备、技能与地图计时不可照搬。\n\nPC历史研究：R1–R5资料 / R6协议；USER手游真实录像0局。",
+      "color": "5"
+    },
+    {
+      "id": "node-r5",
+      "type": "file",
+      "x": 2200,
+      "y": 495,
+      "width": 555,
+      "height": 335,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/R5_中后期分推与终结.md",
+      "color": "5"
+    },
+    {
+      "id": "node-adv-example",
+      "type": "text",
+      "x": 2200,
+      "y": 955,
+      "width": 555,
+      "height": 260,
+      "text": "### 2026关键策略\n**4-1 / 1-3-1 / 五人推进**\n\n真正分推=给对方制造必须回应的兵线压力，并同步兑现另一侧资源。2026推进收益增强，但未知视野下强带仍可能亏。",
+      "color": "5"
+    },
+    {
+      "id": "node-r6",
+      "type": "file",
+      "x": 3020,
+      "y": 495,
+      "width": 550,
+      "height": 335,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/R6_实战复盘与上分验证.md",
+      "color": "5"
+    },
+    {
+      "id": "node-template",
+      "type": "file",
+      "x": 3020,
+      "y": 955,
+      "width": 550,
+      "height": 310,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/实战复盘模板.md",
+      "color": "5"
+    },
+    {
+      "id": "node-role-specific",
+      "type": "file",
+      "x": 2200,
+      "y": 1400,
+      "width": 555,
+      "height": 325,
+      "color": "5",
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/五路高阶运营_低配合决策卡.md"
+    },
+    {
+      "id": "node-pro-evidence",
+      "type": "file",
+      "x": 3020,
+      "y": 1400,
+      "width": 550,
+      "height": 335,
+      "color": "5",
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/职业比赛实证_DK逆转与GenG滚雪球.md"
+    },
+    {
+      "id": "grp-wr",
+      "type": "group",
+      "x": 3930,
+      "y": 0,
+      "width": 1850,
+      "height": 1710,
+      "label": "03｜Wild Rift 手游 · 宗师提莫中路（唯一当前路线）",
+      "color": "3"
+    },
+    {
+      "id": "grp-wr-macro",
+      "type": "group",
+      "x": 3975,
+      "y": 370,
+      "width": 830,
+      "height": 1230,
+      "label": "⑤ 中路线杀 → 地图兑现",
+      "color": "3"
+    },
+    {
+      "id": "grp-wr-fight",
+      "type": "group",
+      "x": 4925,
+      "y": 370,
+      "width": 830,
+      "height": 1230,
+      "label": "⑥ 蘑菇设战场 → 团战复盘",
+      "color": "3"
+    },
+    {
+      "id": "node-wr-hub",
+      "type": "text",
+      "x": 4210,
+      "y": 80,
+      "width": 1270,
+      "height": 240,
+      "color": "3",
+      "text": "## 手游 · 宗师提莫中路｜当前研究中心\n**真实困难：经常单杀天使、吸血鬼、卡牌，前期领先；团战后优势难转胜势。**\n\n🚫 PC 26.21 不是手游7.3系列；旧PC课程不作排位现行依据。\n**闭环：杀线 → 送线/镀层 → 河道先手 → 蘑菇控入口 → 目标/塔收益 → 复盘**"
+    },
+    {
+      "id": "node-wr-specialist",
+      "type": "file",
+      "x": 4030,
+      "y": 520,
+      "width": 715,
+      "height": 365,
+      "file": "09-给674（我）用的库/竞技游戏运营与上分/手游_宗师提莫中路_优势转胜势.md",
+      "color": "3"
+    },
+    {
+      "id": "node-wr-convert",
+      "type": "text",
+      "x": 4030,
+      "y": 980,
+      "width": 715,
+      "height": 475,
+      "color": "3",
+      "text": "### 单杀后行动卡（宗师中路）\n**在十秒内选择一项**\n\n① 安全、有兵线、敌人可定位：送线进塔→兑现镀层/结晶收益→撤离。\n\n② 队友正准备进入河道：先处理兵线→与野辅同侧做入口控制。\n\n③ 己方低血量/敌人失踪：先重置，别把线杀变成被抓。\n\n**STOP**：无兵线、敌方多人消失、队友未跟，不贪塔下一次普攻。"
+    },
+    {
+      "id": "node-wr-team",
+      "type": "text",
+      "x": 4980,
+      "y": 520,
+      "width": 715,
+      "height": 365,
+      "color": "3",
+      "text": "### 团前30–50秒｜先取得入场权\n**蘑菇3类价值**：敌方入场必经路、我方安全撤退角、侧翼伏击角；有条件才布，不为凑数量送命。\n\n**团中3定位**：Q限制普攻核心 / 蘑菇拦路拉扯 / E伪装短距离伏击。\n\n如果队友无法正面接团，比较边线交换与止损，不要求提莫一定打成传统中单法师。"
+    },
+    {
+      "id": "node-wr-test",
+      "type": "text",
+      "x": 4980,
+      "y": 980,
+      "width": 715,
+      "height": 475,
+      "color": "3",
+      "text": "### 5局试验｜找领先消失的最早断点\n\n记录：首杀后60秒里是否兑现塔/河道/安全重置；首波资源团前是否提前占位；蘑菇有无迫使扫眼、绕路或减速；Q给谁、死在哪。\n\n**只改一件事**：单杀后先找一项地图收益，不继续无目标追杀。\n\n**状态**：USER自报宗师；手游真实录像0局。\n**禁止**：拿PC机制/职业赛当手游强度证据；未复盘不宣称已提高胜率。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-hub-r1",
+      "fromNode": "node-hub",
+      "toNode": "node-r1",
+      "fromSide": "left",
+      "toSide": "top",
+      "label": "defines",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-hub-r3",
+      "fromNode": "node-hub",
+      "toNode": "node-r3",
+      "fromSide": "right",
+      "toSide": "top",
+      "label": "defines",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-r1-r2",
+      "fromNode": "node-r1",
+      "toNode": "node-r2",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "depends_on",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-r3-r4",
+      "fromNode": "node-r3",
+      "toNode": "node-r4",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "depends_on",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-r5-example",
+      "fromNode": "node-r5",
+      "toNode": "node-adv-example",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "applies",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-r6-template",
+      "fromNode": "node-r6",
+      "toNode": "node-template",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "measures",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-adv-role",
+      "fromNode": "node-adv-example",
+      "toNode": "node-role-specific",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "applies",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-review-cases",
+      "fromNode": "node-template",
+      "toNode": "node-pro-evidence",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "tested_against",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-wr-hub-doc",
+      "fromNode": "node-wr-hub",
+      "toNode": "node-wr-specialist",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "current_specialist",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-wr-hub-team",
+      "fromNode": "node-wr-hub",
+      "toNode": "node-wr-team",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "setup",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-wr-doc-convert",
+      "fromNode": "node-wr-specialist",
+      "toNode": "node-wr-convert",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "drill",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e-wr-team-test",
+      "fromNode": "node-wr-team",
+      "toNode": "node-wr-test",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "verify",
+      "toEnd": "arrow"
+    }
+  ]
+}

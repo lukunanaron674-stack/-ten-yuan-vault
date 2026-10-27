@@ -1,0 +1,619 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "# 674-313｜时间信封·人物十元发散树\n阶段：人物本体十元待定 → 关系构成 → 观众感受 → 主题选择\n**不是剧情定稿；全部十元为候选映射，感受需验证。**\n**本轮方向：爱情＋悬疑；亲情不作主线。**",
+      "x": 0,
+      "y": 0,
+      "width": 550,
+      "height": 210,
+      "color": "6"
+    },
+    {
+      "id": "rules",
+      "type": "text",
+      "text": "# A｜大赛硬约束（官网已核）\n🔒 仅指定剧本库；不能换剧本\n🔒 不得大改故事框架、人设、姓名\n🔒 省赛片花须有人物、画风、核心冲突、基调\n🟡 允许适度调整情节、台词、叙事重点\n⚠️“爱情”并非官网明定主题；官方梗概标注**跨代情缘**，但未锁定主角必须恋爱。\n✅用户已确认：赛事只提供第5号短梗概，不等待更长版本。",
+      "x": -1400,
+      "y": 340,
+      "width": 530,
+      "height": 370,
+      "color": "1"
+    },
+    {
+      "id": "facts",
+      "type": "text",
+      "text": "# B｜第5号已知故事事实\n巴黎二手书店／神秘时间信件／微弱改变现在／祖母的时间遗产\nClaire 22：好奇、社恐\nLucas 26：地铁钢琴家，写信人的孙子\nMarcel 60：知情但只引导\n不得把“废弃车站、失灵琴键、祖母旧恋人、两人恋爱”当官方事实。\n✅ 当前确认：第5号短梗概就是赛事全部给定剧本；旧「等待长版剧本」阻塞已取消。",
+      "x": -1400,
+      "y": 820,
+      "width": 530,
+      "height": 320,
+      "color": "1"
+    },
+    {
+      "id": "characters",
+      "type": "text",
+      "text": "# C｜先锁人物十元（不先锁爱情）\n每人：**本体映射 → 行动触发 → 关系对照 → 观众感受词 → 证据镜头**",
+      "x": -300,
+      "y": 350,
+      "width": 580,
+      "height": 180,
+      "color": "3"
+    },
+    {
+      "id": "claire",
+      "type": "text",
+      "text": "# Claire｜人物候选\n**方案C1：XN主＋ZX潜势**\n谨慎边界→好奇促使主动→从回避到开口\n感受：拘谨→紧张→勇敢→释然\n**方案C2：NZ主＋XN防御**\n渴望亲近→怕被拒绝→替人送信\n感受：孤独→共情→被接纳\n**区分测试：**她最先主动做的是“查真相”还是“帮别人”？",
+      "x": -820,
+      "y": 700,
+      "width": 460,
+      "height": 380,
+      "color": "3"
+    },
+    {
+      "id": "lucas",
+      "type": "text",
+      "text": "# Lucas｜人物候选\n**L1：NZ主＋XN防御**\n怀念、保留旋律→不愿谈过去→回应他人\n感受：温柔、距离、触动\n**L2：XN主＋XZ触发**\n独自用音乐自处→家族未知冲击→主动追索\n感受：孤独、震动、靠近\n**区分测试：**他弹琴是为了怀念，还是为了隔绝现实？",
+      "x": -270,
+      "y": 700,
+      "width": 460,
+      "height": 380,
+      "color": "3"
+    },
+    {
+      "id": "marcel",
+      "type": "text",
+      "text": "# Marcel｜人物候选\n**M1：ZN主＋Z边界**\n稳固日常、可信赖→有原则地保密\n感受：安心中有神秘\n**M2：Z主＋ZX引导**\n掌握信息、控制揭示→提示Claire选择\n感受：被试探、警觉、好奇\n**区分测试：**他为何不能自己送信？",
+      "x": 280,
+      "y": 700,
+      "width": 460,
+      "height": 380,
+      "color": "3"
+    },
+    {
+      "id": "grandma",
+      "type": "text",
+      "text": "# 祖母｜缺席角色\n**G1：NZ＋XZ**：牵挂未完成、情感传递\n**G2：ZX＋NZ**：主动安排后代相遇/行动\n**G3：XN＋NZ**：珍藏而未寄、迟到的表达\n感受由笔迹、旧书、音乐而非解释性独白形成\n**未定：**等待对象是谁？不要提前写死旧恋人。",
+      "x": 830,
+      "y": 700,
+      "width": 460,
+      "height": 380,
+      "color": "3"
+    },
+    {
+      "id": "relations",
+      "type": "text",
+      "text": "# D｜十元关系发散（先人后主题）\n关系不是“贴两标签”，要写：**A想要什么 → B如何阻碍/补足 → A如何行动 → 感受如何变化**",
+      "x": 600,
+      "y": 350,
+      "width": 550,
+      "height": 180,
+      "color": "2"
+    },
+    {
+      "id": "r1",
+      "type": "text",
+      "text": "# R-A｜Claire XN ↔ Lucas NZ\n候选：克制↔接纳（补）\n事件：Claire不敢开口；Lucas通过音乐留出回应空间\n观众感受：紧绷→被理解\n**适配：**友情、治愈、慢热爱情",
+      "x": 1300,
+      "y": 650,
+      "width": 560,
+      "height": 270,
+      "color": "2"
+    },
+    {
+      "id": "r2",
+      "type": "text",
+      "text": "# R-B｜Claire ZX ↔ Lucas XN\n候选：主动突破↔回避抵抗（克/拉扯）\n事件：她要查信的来历；他拒谈祖母\n观众感受：焦急、冲突、尊重边界\n**适配：**悬疑、成长、亲情",
+      "x": 1300,
+      "y": 980,
+      "width": 560,
+      "height": 280,
+      "color": "2"
+    },
+    {
+      "id": "r3",
+      "type": "text",
+      "text": "# R-C｜Marcel Z ↔ Claire ZX\n候选：信息限制↔探索推动（克/生）\n事件：老板只给线索不揭答案；Claire自行判断\n观众感受：疑问、探索欲、主体性\n**适配：**解谜、责任与选择",
+      "x": 1300,
+      "y": 1320,
+      "width": 560,
+      "height": 290,
+      "color": "2"
+    },
+    {
+      "id": "r4",
+      "type": "text",
+      "text": "# R-D｜祖母 NZ/XZ ↔ Lucas NZ/XN\n候选：过去未竟↔当下回应（补/回收）\n事件：他认出笔迹，重新理解旧旋律\n观众感受：怀念、遗憾、释怀\n**适配：**跨代亲情、记忆传承、爱情遗憾",
+      "x": 1300,
+      "y": 1670,
+      "width": 560,
+      "height": 280,
+      "color": "2"
+    },
+    {
+      "id": "themes",
+      "type": "text",
+      "text": "# E｜主题发散树：不是默认爱情\n每条主题必须保留官方时间信件、祖母遗产、三位角色；差异在人物选择与关系焦点。\n**当前用户选择：以爱情＋悬疑为目标，T1/T4优先；T2亲情线不作为主线。**",
+      "x": -800,
+      "y": 1320,
+      "width": 650,
+      "height": 180,
+      "color": "5"
+    },
+    {
+      "id": "t1",
+      "type": "text",
+      "text": "# T1｜跨代爱情／慢热恋爱\nClaire×Lucas共同追查祖母的未竟情缘\n主关系：XN↔NZ；XZ→NZ\n感受：心动、遗憾、勇敢表达\n**风险：**双主角恋爱可能挤占祖母故事；恋爱非强制。",
+      "x": -1500,
+      "y": 1650,
+      "width": 570,
+      "height": 270,
+      "color": "5"
+    },
+    {
+      "id": "t2",
+      "type": "text",
+      "text": "# T2｜跨代亲情／记忆传承\nLucas理解祖母未曾说出的心愿；Claire成为传递者\n主关系：NZ↔XZ；XN→NZ\n感受：怀念、失落、被连接\n**优点：**最贴近“孙子＋时间遗产”。",
+      "x": -850,
+      "y": 1650,
+      "width": 570,
+      "height": 270,
+      "color": "5"
+    },
+    {
+      "id": "t3",
+      "type": "text",
+      "text": "# T3｜社恐成长／主动表达\nClaire因替人传信，学会面对自己的关系\n主关系：XN→ZX→NZ\n感受：拘谨、鼓起勇气、释然\n**优点：**人物弧线可在90秒内清晰呈现。",
+      "x": -200,
+      "y": 1650,
+      "width": 570,
+      "height": 270,
+      "color": "5"
+    },
+    {
+      "id": "t4",
+      "type": "text",
+      "text": "# T4｜时间悬疑／选择与代价\n查明为何信件微弱改变现在，谁决定改变什么\n主关系：XZ↔ZX；Z↔ZX\n感受：诡秘、发现、责任\n**风险：**不得自行扩展成宏大穿越体系。",
+      "x": -1500,
+      "y": 2010,
+      "width": 570,
+      "height": 270,
+      "color": "5"
+    },
+    {
+      "id": "t5",
+      "type": "text",
+      "text": "# T5｜遗憾与告别\n不一定重逢；找到收信对象/真相后完成一次告别\n主关系：XZ→NZ；XN→ZX\n感受：难过、理解、放下\n**优点：**符合二维克制演出。",
+      "x": -850,
+      "y": 2010,
+      "width": 570,
+      "height": 270,
+      "color": "5"
+    },
+    {
+      "id": "t6",
+      "type": "text",
+      "text": "# T6｜陌生人互助／关系修复\nClaire、Lucas、Marcel各承担不同选择，不必发展恋爱\n主关系：ZN↔ZX、XN↔NZ\n感受：信任、互助、温暖\n**优点：**不强行增加爱情线。",
+      "x": -200,
+      "y": 2010,
+      "width": 570,
+      "height": 270,
+      "color": "5"
+    },
+    {
+      "id": "gate",
+      "type": "text",
+      "text": "# F｜收束门槛（待USER确认）\n① 先选Claire / Lucas / Marcel各1个主十元候选，保留备选。\n② 每条关系做**同事件对照**：有/无行为，感受是否改变。\n③ 当前优先爱情＋悬疑（T1＋T4），仍须落实具体事件；不写亲情主线。\n④ 映射=角色结构解释；感受=观众报告的词，不能预设必然相等。\n⑤ 下一步才写90秒分镜，不先冻结旧V2。",
+      "x": 200,
+      "y": 2470,
+      "width": 770,
+      "height": 340,
+      "color": "6"
+    },
+    {
+      "id": "filmhead",
+      "type": "text",
+      "text": "# G｜影片结构对照（爱情＋悬疑，不改剧本硬约束）\n仅从公开剧情梗概和影评提炼叙事结构，不宣称已阅读完整电影剧本。\n对照问题：信如何制造悬念？线索如何推动行动？爱情如何因时间或真相产生障碍？",
+      "x": -1500,
+      "y": 2980,
+      "width": 650,
+      "height": 270,
+      "color": "4"
+    },
+    {
+      "id": "film_dearyou",
+      "type": "text",
+      "text": "# 参考01｜《给阿嬷的情书》（2026）\n**已核情节：**孙子带旧家书赴泰国找人；查访发现收信所指之人已亡，通信另有代笔者。\n**编剧结构：**旧信（钩子）→跨国追索（行动）→身份错认（悬疑）→代笔揭示（真相重估）。\n**对313只取：**「信件提示的关系，不等于真实关系」；用一条反证线索推动Claire调查。\n**不取：**祖孙亲情主题、海外寻亲任务、原片角色剧情。\n**已核资料：**https://www.chinafilm.gov.cn/xwzx/gzdt/202605/t20260521_990708.html\nhttps://static.nfnews.com/content/202605/19/c12444698.html",
+      "x": -1500,
+      "y": 3330,
+      "width": 620,
+      "height": 470,
+      "color": "4"
+    },
+    {
+      "id": "film_loveletter",
+      "type": "text",
+      "text": "# 参考02｜《情书》（1995，岩井俊二）\n**已核情节：**女主写信给已逝未婚夫的旧地址，竟收到同名女性回信，调查逐步揭示旧日隐秘感情。\n**编剧结构：**不可能的回信（钩子）→同名/地址误认（悬念）→双方往复验证（调查）→细小旧事重估感情（情感反转）。\n**对313只取：**先让观众问「这封信为何到她手里？」；让线索一层层更改角色对过去的理解。\n**不取：**死亡悼亡做主线。\n**已核资料：**https://www.iq.com/wiki/zh_cn/album/%E6%83%85%E4%B9%A6-%E9%A2%84%E5%91%8A%E7%89%87-1995-19rrk1y3ik\nhttps://www.thepaper.cn/newsDetail_forward_30841823",
+      "x": -780,
+      "y": 3330,
+      "width": 620,
+      "height": 470,
+      "color": "4"
+    },
+    {
+      "id": "film_lakehouse",
+      "type": "text",
+      "text": "# 参考03｜《触不到的恋人》/《湖边小屋》（2000/2006）\n**已核情节：**两人在不同时期通过同一个信箱通信；恋爱受时间差阻隔，并尝试会面。\n**编剧结构：**单一异常媒介（信箱）→可验证时间规则→通信促成亲密→「无法如常见面」成为爱情障碍→行动解决。\n**对313只取：**一条明确、可验证的时间信件规则；时间异常同时推动浪漫与谜题。\n**不取：**跨年双向通信/大幅改写历史，313给定仅「微弱改变现在」。\n**已核资料：**https://app2.atmovies.com.tw/film/fikr30282599/\nhttps://www.iq.com/album/%E8%A7%B8%E4%B8%8D%E5%88%B0%E7%9A%84%E6%88%80%E4%BA%BA-2000-kwtjkiqr7s?lang=zh_tw",
+      "x": -60,
+      "y": 3330,
+      "width": 620,
+      "height": 470,
+      "color": "4"
+    },
+    {
+      "id": "film_compare",
+      "type": "text",
+      "text": "# H｜313片花落地：三部电影的不同用途\n**爱情主线：**Claire因信而接近Lucas，两人因真相而需要共同选择，不靠强行表白。\n**悬疑驱动：**开场异常信→第一条可核实线索→出现与预期不符的细节→两人一起查。\n**时间设定：**只保留「信件轻微改变现在」这一硬边界；具体触发方式标【改编假设】，不冒称官方。\n**90秒建议：**0–15s异常信；15–40s Claire行动；40–65s Lucas的反证/误会；65–85s两人一次共同选择；85–90s留下未解谜题。\n**停止条件：**先以三部为参照，不无限扩片单；进入镜头卡前验证因果链。",
+      "x": 640,
+      "y": 3270,
+      "width": 720,
+      "height": 540,
+      "color": "6"
+    },
+    {
+      "id": "method",
+      "type": "text",
+      "text": "# I｜方法：真正的横纵一体，而非人物各走一条线\n**纵轴：**按时间顺序列出事件、证据、行动、真相揭示、结果。\n**横轴：**同一个事件切开，同时记录每个角色的欲望/认知差、信件/环境、权力与限制、实际行动、观众感受。\n**十元两层：**映射=创作解释；感受=观众实际可能体验，需盲测，禁止混同。",
+      "x": -1700,
+      "y": 3060,
+      "width": 700,
+      "height": 290,
+      "color": "6"
+    },
+    {
+      "id": "film1_vertical",
+      "type": "text",
+      "text": "# 影片1《给阿嬷的情书》｜纵轴【叙事因果】\nE1 阿嬷长期保存家书→孙子因现实困境赴泰查找。\nE2 发现郑木生早逝，与持续来信冲突。\nE3 查出谢南枝多年代笔寄款→旧信含义翻转。\nE4 揭开延迟沟通/误解；过往两位女性的关系得到重新理解。\n**核心：**先立“信件来源”预期，再以反证改变解释；查信目的由利益转向认知/伦理。",
+      "x": -2500,
+      "y": 3500,
+      "width": 680,
+      "height": 380,
+      "color": "4"
+    },
+    {
+      "id": "film1_horizontal",
+      "type": "text",
+      "text": "# 影片1｜横轴【同事件 E2：寄信人早已去世】\n孙子晓伟：原先盼找到富豪祖父→发现信件不合逻辑→继续追。\n阿嬷淑柔：多年相信来信来自丈夫→其等待逻辑受挑战（她此时是否知情与何时知情须依电影段落区分）。\n谢南枝：隐藏的真实寄信者→承担保密/物质代价。\n物件：侨批既是过去的爱情证据，也成身份错误的证据。\n**映射假设：**Z旧认知→XZ破裂→ZX追查→NZ重估关怀。\n**目标感受：**惊疑→错愕→心疼；并非观众实测。",
+      "x": -1700,
+      "y": 3500,
+      "width": 680,
+      "height": 470,
+      "color": "2"
+    },
+    {
+      "id": "film2_vertical",
+      "type": "text",
+      "text": "# 影片2《情书》｜纵轴【叙事因果】\nE1 博子写信给已故未婚夫旧址，本不期待回信。\nE2 同名女藤井树回信→“不可能”的悬念成立。\nE3 往来通信、回忆和查证→两个藤井树的过去逐渐重构。\nE4 借书卡背面的画像揭示未表达的暗恋。\n**核心：**小事实滚动修订旧判断，终局用物件而非解释台词兑现爱情。",
+      "x": -900,
+      "y": 3500,
+      "width": 680,
+      "height": 380,
+      "color": "4"
+    },
+    {
+      "id": "film2_horizontal",
+      "type": "text",
+      "text": "# 影片2｜横轴【同事件 E2：意外回信】\n博子：寄信=与逝者对话→回信让哀思转为求证。\n女藤井树：只看见寄错的陌生信→被要求回忆少年时代。\n已逝男藤井树：不出场行动，过去的信息差成为现在的动力。\n地址/姓名：同名误投形成可解释的异常，不是真正复活。\n**映射假设：**XN封存情感→XZ异常→ZX调查→NZ理解。\n**目标感受：**惊讶→好奇→迟到的心动/遗憾（未盲测）。",
+      "x": -100,
+      "y": 3500,
+      "width": 680,
+      "height": 470,
+      "color": "2"
+    },
+    {
+      "id": "film3_vertical",
+      "type": "text",
+      "text": "# 影片3《触不到的恋人》(2000)｜纵轴【叙事因果】\nE1 1997/1999年的住客通过同一信箱通信。\nE2 日期相冲突→回信、验证时间差。\nE3 书信积累了解与依恋→想要相见。\nE4 两年错位让爱情成为行动难题；双方试图影响现实。\n**核心：**时间机制不是一次奇观，而是不断阻碍人物愿望的一条规则。",
+      "x": 700,
+      "y": 3500,
+      "width": 680,
+      "height": 380,
+      "color": "4"
+    },
+    {
+      "id": "film3_horizontal",
+      "type": "text",
+      "text": "# 影片3｜横轴【同事件 E2：验证信箱穿越时间】\n1997年的星贤：掌握较早时间的信息，可提前行动，却不知后来结果。\n1999年的恩珠：知道未来已发生的事实，却无法直接走回过去。\n信箱：双方共同接触点；时间差即阻力。\n**权力/信息不对称：**一个能先行动，一个能后验证；每次通信用双方不同的“现在”交叉构成。\n**映射假设：**XZ时间缝隙×Z规则限制；XN孤独→NZ连结→ZX行动。\n**目标感受：**神奇→靠近→焦虑→盼望（未盲测）。",
+      "x": 1500,
+      "y": 3500,
+      "width": 680,
+      "height": 490,
+      "color": "2"
+    },
+    {
+      "id": "transfer",
+      "type": "text",
+      "text": "# J｜迁移313：不照抄情节，只迁移因果机件\n**电影1：**观众相信的一条“信的来源”，被可查证事实推翻。\n**电影2：**回信/地址/笔迹等微小物件层层改写认知；结尾实体物件兑现爱情。\n**电影3：**仅一条稳定规则，且爱情因为规则受到阻碍。\n**313候选事件：**Claire在旧书店发现时间信→读出不合当下的细节→Marcel只提示→Claire找到Lucas核实→两人在同一证据上产生冲突与吸引→某小细节改变→留下未解释的另一信息。\n**不宣称官方：**触发条件、琴键、隐藏地址及两人恋爱都属于待审原创补充。\n**拍摄压缩：**片花只保留1异常+1核实+1情感碰撞+1轻微变化。\n**停止：**不扩为纯亲情，不直接复制影片结局，不做宏大穿越。",
+      "x": -100,
+      "y": 4160,
+      "width": 1130,
+      "height": 550,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "256f2491-5aa6-4cd1-8dc7-888502fb1176",
+      "fromNode": "root",
+      "toNode": "rules",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "87dcc4c1-e8e8-42d9-a76d-8d616816a3e7",
+      "fromNode": "rules",
+      "toNode": "facts",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "bd04ecd7-bc68-43ea-bc99-70508208f756",
+      "fromNode": "root",
+      "toNode": "characters",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "c8864c02-9da0-4127-a507-376a9ab93c27",
+      "fromNode": "root",
+      "toNode": "relations",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "38676dd9-bb9d-4f10-b961-8a42eccb003b",
+      "fromNode": "characters",
+      "toNode": "claire",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "5b5ed46c-5df8-4efb-ad44-cc88e8c6be37",
+      "fromNode": "characters",
+      "toNode": "lucas",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "2d0fc661-31a9-4194-a037-9a0a0423154f",
+      "fromNode": "characters",
+      "toNode": "marcel",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "34c0db31-a233-4ea0-b8cd-a7e707d2616e",
+      "fromNode": "characters",
+      "toNode": "grandma",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "995b6dd7-b2ab-4052-a102-2355a87d16f6",
+      "fromNode": "relations",
+      "toNode": "r1",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "a6ac1bbf-04d9-47a0-b0d6-16b085056c76",
+      "fromNode": "relations",
+      "toNode": "r2",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "4347630e-74b4-4b5f-a3bd-6797aa11ca5e",
+      "fromNode": "relations",
+      "toNode": "r3",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "f94dab13-4196-41d6-94ac-e8e67e3c040d",
+      "fromNode": "relations",
+      "toNode": "r4",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "1d8ca25f-6aa6-4ff6-817d-83244db37e0d",
+      "fromNode": "characters",
+      "toNode": "themes",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "bc0a8e75-9445-418e-bccb-fd5278374450",
+      "fromNode": "themes",
+      "toNode": "t1",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "45493396-78fb-49aa-9ed4-7648e7c5fd08",
+      "fromNode": "themes",
+      "toNode": "t2",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "a8b35b38-d226-4550-a9b3-4b2c5381f03e",
+      "fromNode": "themes",
+      "toNode": "t3",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "95bbf2c5-1634-4137-8883-133d24270de0",
+      "fromNode": "themes",
+      "toNode": "t4",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "51d5639c-5e51-4baf-af3e-4dd1f7397225",
+      "fromNode": "themes",
+      "toNode": "t5",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "a190b35f-5516-4129-b502-a040494784bf",
+      "fromNode": "themes",
+      "toNode": "t6",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "4d1e98a3-1184-40e1-8f72-8e89dd19e7c8",
+      "fromNode": "themes",
+      "toNode": "gate",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "filmref313-1",
+      "fromNode": "themes",
+      "toNode": "filmhead",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "filmref313-2",
+      "fromNode": "filmhead",
+      "toNode": "film_dearyou",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "filmref313-3",
+      "fromNode": "filmhead",
+      "toNode": "film_loveletter",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "filmref313-4",
+      "fromNode": "filmhead",
+      "toNode": "film_lakehouse",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "filmref313-5",
+      "fromNode": "filmhead",
+      "toNode": "film_compare",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "8f34dbd0-8f55-4621-bc96-e2797ef84aae",
+      "fromNode": "film_compare",
+      "toNode": "method",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "9f2b44ec-cd27-4561-a41a-9b581b77f59f",
+      "fromNode": "film_dearyou",
+      "toNode": "film1_vertical",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "c55035a7-da94-42c6-bd4b-bc36cc99aa63",
+      "fromNode": "film1_vertical",
+      "toNode": "film1_horizontal",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "11c6007f-26d5-4a4a-a421-aa4aeecb7d6f",
+      "fromNode": "film_loveletter",
+      "toNode": "film2_vertical",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "fb9a077c-dffe-41c1-a0ff-e29ba1b4cb8c",
+      "fromNode": "film2_vertical",
+      "toNode": "film2_horizontal",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "d3ba7c29-b43b-4b09-b5db-1edd54ce1ae0",
+      "fromNode": "film_lakehouse",
+      "toNode": "film3_vertical",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "8ab91ed9-5c26-4037-aa28-8fca7143bd28",
+      "fromNode": "film3_vertical",
+      "toNode": "film3_horizontal",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "5d5b5e06-910a-43f2-99d7-ff78fc90dc07",
+      "fromNode": "method",
+      "toNode": "transfer",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "d97463f9-108a-4bd0-8a59-37e3cb79e0e6",
+      "fromNode": "method",
+      "toNode": "film1_vertical",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "275aef64-c25e-4297-82a1-911bddbf2ce8",
+      "fromNode": "method",
+      "toNode": "film2_vertical",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "4c7c99ce-a44b-47a4-8469-000ff2cf93d8",
+      "fromNode": "method",
+      "toNode": "film3_vertical",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "8a3e6fd5-781c-4f0e-b5a0-59f918ec8741",
+      "fromNode": "film1_horizontal",
+      "toNode": "transfer",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "85d8b076-cb98-4a42-8607-e5b7c9d8c82d",
+      "fromNode": "film2_horizontal",
+      "toNode": "transfer",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "c9383856-42ee-4848-9f4c-91c209e16aa1",
+      "fromNode": "film3_horizontal",
+      "toNode": "transfer",
+      "fromSide": "bottom",
+      "toSide": "top"
+    }
+  ]
+}

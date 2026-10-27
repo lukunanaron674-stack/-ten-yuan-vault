@@ -6,7 +6,7 @@ import subprocess
 import sys
 import tempfile
 from pathlib import Path
-from layout import layout,validate,within
+from layout import layout,validate,within,audit
 
 
 def fixture():
@@ -60,4 +60,27 @@ def main():
         assert len(list(Path(td).glob('test.canvas.bak_*')))==1
     print(json.dumps({'pass':True,'fixtureZones':report['zones'],'fixtureNodes':report['nodes'],'fixtureEdges':report['edges'],'previewRefusesOverwrite':True,'inplaceMakesBackup':True},ensure_ascii=False))
 
-if __name__=='__main__':main()
+
+def test_group_free_radial():
+    # Regression: an already grouped, author-arranged radial diagram must not be rejected.
+    flat={'nodes':[
+        {'id':'gA','type':'group','x':0,'y':0,'width':2500,'height':2400,'color':'5'},
+        {'id':'a','type':'text','x':950,'y':950,'width':400,'height':250,'text':'A hub','color':'5'},
+        {'id':'a1','type':'text','x':200,'y':300,'width':420,'height':260,'text':'A leaf'},
+        {'id':'a2','type':'text','x':1750,'y':300,'width':420,'height':260,'text':'B leaf'},
+        {'id':'gB','type':'group','x':3000,'y':0,'width':2500,'height':2400,'color':'2'},
+        {'id':'b','type':'text','x':3950,'y':950,'width':400,'height':250,'text':'B hub','color':'2'},
+        {'id':'b1','type':'text','x':3200,'y':300,'width':420,'height':260,'text':'B leaf'},
+        {'id':'b2','type':'text','x':4750,'y':300,'width':420,'height':260,'text':'B leaf'}],
+        'edges':[{'id':'e1','fromNode':'a','toNode':'a1'},{'id':'e2','fromNode':'a','toNode':'a2'},
+                 {'id':'e3','fromNode':'b','toNode':'b1'},{'id':'e4','fromNode':'b','toNode':'b2'}]}
+    chk=audit(flat)
+    assert chk['canRunGeometryOnly'] and chk['groupFreeZones']==2
+    before={n['id']:(n['text'],n.get('color')) for n in flat['nodes'] if n['type']=='text'}
+    result=layout(flat)
+    assert result['zones']==2 and all(v['mode']=='preserve_existing_radial' for v in result['zoneInfo'].values())
+    assert before=={n['id']:(n['text'],n.get('color')) for n in flat['nodes'] if n['type']=='text'}
+
+if __name__=='__main__':
+    main()
+    test_group_free_radial()

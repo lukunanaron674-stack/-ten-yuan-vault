@@ -92,3 +92,14 @@ stimulus / context / human_free_report / feeling_profile / eliciting_features / 
 - 286 报告 R26 主体身份稳定、片尾无消散、珊瑚环举起动作发生，属于 `TECHNICAL_EXECUTION_REPORTED`，并不证明真人感受命中、十元映射、跨媒体泛化、用户审美 PASS。对“光影+手势产生神圣感”的旧反馈，具体旧片版本绑定仍未解决，不可嫁接给 R26。
 - `failure_family=F02_COUPLED_INTERVENTION_FOR_FEELING_CAUSAL_INFERENCE`（仅限未来感受因果归因的控制缺口，不是 H3 生成失败）；`rule_status=CANDIDATE_ONLY`；`feeling_evidence_level=E0`；`human_free_report=null`；`human_feeling_profile=null`；`MAE=null`；`Top1=null`；`Top3=null`；`research_campaign_started=false`；`effective_feeling_experiment_rounds=0`；Q-FEEL-001 继续 `C2/E0`，`HUMAN_GATE=NOT_READY`。
 - `CYCLE_RESULT=EVIDENCE_CONTROL_BOUNDARY_RECONCILED`；`NEXT=WAIT_EXACT_VIDEO_RECORD_AND_PRELOCKED_STIMULUS_COMPARISON`。如未来确需检验角色身份对人的感受影响，须由有权生产端先提供同一动作对象/场景/机位等条件可比的刺激对，再在真人反馈前预锁预测、盲码、指标与阈值；无真实输入则 WAIT/NO_OP，不无限扩轮。
+
+
+## 10｜R33｜R318/R319 声画时序外部心理物理证据跨系统归档｜2026-10-26
+
+- **唯一 Q：Q-MEDIA-001**。来源：Linear 674-297 R320 评论 `2009c60d-1d48-4eb1-8cc5-896bf3ef2348`；证据总控 674-106 R320 评论 `3ea6c6cb-4992-4cb8-93cf-2b79253e57bb`。本节将既有证据归入原Q，不新建METHOD、MASTER或平行问题树。
+- **独立核验的外部论文元数据/摘要**：Jaekl et al. (2015), DOI `10.1371/journal.pone.0141125`，视听时延可影响点群相对距离判断（原论文公开文本含实验1 40/60ms条件）；Jaekl et al. (2012), DOI `10.1007/s00221-011-2948-9`，研究声画时延对视觉大小判断的影响；Fornaciai & Di Luca (2020), DOI `10.1037/xhp0000754`，在stream/bounce实验中事件因果解释可系统性偏移声画先后判断。来源：https://pubmed.ncbi.nlm.nih.gov/26509795/ ; https://pubmed.ncbi.nlm.nih.gov/22105336/ ; https://pubmed.ncbi.nlm.nih.gov/32352821/ 。独立核验限公开摘要、论文身份和2015公开实验摘录；本轮未重新统计原始数据。
+- **严格边界**：以上外部受试者任务≠十元感受自由描述、H3视觉成片、173用户盲审或R319目标感受验证；2015论文短时延的距离判断结果**不能**外推为原创`800ms`火箭音画错位的已证感受规律，亦不能据此判定800ms在叙事中绝对无效。R318感官动作同步与R319远距事件声迟到属相邻时序机制，不合并为同一因果命题，也不重复记为已验证方法。
+- **既有候选路由**：`FEEL-CANDIDATE-DISTANT_EVENT_SOUND_GAP_AS_PERCEIVED_SCALE-01` → `REPLAN_PARAMETER / STOP_REPLAN_PENDING_EVIDENCE / DUP_PENDING_GLOBAL / NOT_MASTER`；`FEEL-CANDIDATE-CROSSMODAL_INACCESSIBLE_SENSE_PROXY_WITH_CAUSAL_SYNC-01` 仍是独立的未验证候选。参数0ms/50ms/800ms和无关提示音负控只是待预注册的研究设计建议，**未启动实验、未执行CPU/GPU A/B**。
+- **证据分账**：`external_psychophysics=SOURCE_SUPPORTED_FOR_OWN_TASK`；`Q_MEDIA_FEELING_EVIDENCE=E0`；`Q_FEEL_001=C2/E0`；`human_free_report=null`；`human_feeling_profile=null`；`MAE=null`；`Top1=null`；`Top3=null`；`human_n=0`；`effective_feeling_experiment_rounds=0`；`five_axis_ab_counted=0`；`HUMAN_GATE=NOT_READY`；`173_USER_PASS=NOT_CLAIMED`。
+- **阻塞/停止**：没有可展示且SHA可复核的同源刺激、预测预锁、盲码和173真人反馈，R318/R319同族研究不扩轮；只在原素材/授权/去重READY后重启预注册，最多6有效轮次。Q-FEEL BLIND-R0父图与裁切manifest及用户端盲化展示未闭环。
+- **NEXT**：`WAIT_GLOBAL_DEDUPE_AND_VERIFIABLE_STIMULUS`；下轮无真实增量则`NO_OP`。本节不修改十元感受正本、104/105、293/286/289/173职责内资产或用户裁决。
