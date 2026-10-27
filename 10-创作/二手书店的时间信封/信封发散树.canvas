@@ -1,0 +1,864 @@
+{
+  "nodes": [
+    {
+      "id": "envelope_master",
+      "type": "group",
+      "label": "📂 信封发散树｜三集、十元、编号与候选",
+      "x": -300,
+      "y": -1650,
+      "width": 16050,
+      "height": 11900,
+      "color": "6"
+    },
+    {
+      "id": "envelope_root",
+      "type": "text",
+      "x": 6030,
+      "y": -1380,
+      "width": 3460,
+      "height": 880,
+      "color": "6",
+      "text": "# 📂 信封发散树｜总根\n**USER三集故事骨架始终优先**：①巴黎社交困难→音乐信封→地铁同曲；②N架桥、祖母ZX克男主N、女主ZN再架桥；③祖母XN＋ZX遇困→祖父Z＋NX帮助→长期XN到Z。\n**原始来源**：[[00_项目总览.canvas|三集用户原稿L0–L3、角色A2/A11]]。\n**规则**：1-/2-/3-主事件卡；a=符号解释+镜头证据；7=可恢复候选。USER与AI剧情均显式分开，卡号固定，待人工裁决。"
+    },
+    {
+      "id": "envelope_group_1",
+      "type": "group",
+      "label": "第一集｜孤独 → 音乐信封 → 地铁同曲",
+      "x": 100,
+      "y": 100,
+      "width": 4990,
+      "height": 9140,
+      "color": "3"
+    },
+    {
+      "id": "envelope_1_0",
+      "type": "text",
+      "x": 430,
+      "y": 340,
+      "width": 4330,
+      "height": 750,
+      "color": "3",
+      "text": "# 1-0｜孤独 → 音乐信封 → 地铁同曲\n**人物 USER 十元**：Claire XN被ZN克制、追求Z；Lucas XN＋N；Marcel NX；祖母 XN＋ZX。N闺蜜和祖父Z＋NX为USER三集新增。\n**层级**：左列1–6为剧情事件，右列1a–6a为符号/感受/镜头行为；第7为可保留的替代分支。\n**权限**：只依据原稿提取确认内容，其余均标AI候选。"
+    },
+    {
+      "id": "envelope_1_1",
+      "type": "text",
+      "x": 275,
+      "y": 1300,
+      "width": 2190,
+      "height": 790,
+      "color": "3",
+      "text": "# 🎬 1-1｜N闺蜜：巴黎的不适应\n**📄 事件**：Claire是美国交换生，在巴黎交不到朋友，向N闺蜜倾诉。\n**来源等级**：USER第一集骨架；镜头行为是AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：expand／待USER修订。"
+    },
+    {
+      "id": "envelope_1_1a",
+      "type": "text",
+      "x": 2570,
+      "y": 1300,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 1-1a｜符号解释与画面证据\n**十元／感受关系**：XN是哀默、想靠近却收回话语；N闺蜜提供可以倾诉的位置。\n**🖼 镜头证据**：镜头：对聊天框反复删改，最后才说出自己孤独。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_1_2",
+      "type": "text",
+      "x": 275,
+      "y": 2350,
+      "width": 2190,
+      "height": 790,
+      "color": "3",
+      "text": "# 🎬 1-2｜Marcel的二手书店\n**📄 事件**：Claire到巴黎左岸二手书店借书，Marcel将书交给她。\n**来源等级**：借书USER已定；对话和道具AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：hold／待USER修订。"
+    },
+    {
+      "id": "envelope_1_2a",
+      "type": "text",
+      "x": 2570,
+      "y": 2350,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 1-2a｜符号解释与画面证据\n**十元／感受关系**：Marcel NX：谨慎循线索做事，不替她决定，不是ZX。\n**🖼 镜头证据**：镜头：安静问候，柜台递出旧书，信在页间。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_1_3",
+      "type": "text",
+      "x": 275,
+      "y": 3400,
+      "width": 2190,
+      "height": 790,
+      "color": "3",
+      "text": "# 🎬 1-3｜信封进入出租屋\n**📄 事件**：Claire回出租屋，翻书发现有特殊音乐内容的信封。\n**来源等级**：USER信件已定；具体谱面AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：hold／待USER修订。"
+    },
+    {
+      "id": "envelope_1_3a",
+      "type": "text",
+      "x": 2570,
+      "y": 3400,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 1-3a｜符号解释与画面证据\n**十元／感受关系**：XN的房间被外来讯号打破，但接触音乐不自动证明ZN。\n**🖼 镜头证据**：镜头：信滑落，Claire主动触碰；音符尚未出现。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_1_4",
+      "type": "text",
+      "x": 275,
+      "y": 4450,
+      "width": 2190,
+      "height": 790,
+      "color": "3",
+      "text": "# 🎬 1-4｜奇幻音乐唤醒ZN\n**📄 事件**：光线、音符与音乐想象照亮室内，Claire由惊讶到喜悦。\n**来源等级**：奇幻USER已定；纸面魔法规则未锁。\n**⏱ 镜头时长**：待制作确认。\n**状态**：expand／待USER修订。"
+    },
+    {
+      "id": "envelope_1_4a",
+      "type": "text",
+      "x": 2570,
+      "y": 4450,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 1-4a｜符号解释与画面证据\n**十元／感受关系**：ZN喜悦短暂克制XN退缩；这不是永远治愈她。\n**🖼 镜头证据**：镜头：第一次自然笑；休止符变化仅为AI待审分叉。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_1_5",
+      "type": "text",
+      "x": 275,
+      "y": 5500,
+      "width": 2190,
+      "height": 790,
+      "color": "3",
+      "text": "# 🎬 1-5｜地铁中的Lucas\n**📄 事件**：Claire在地铁看到Lucas弹琴，感到神圣ZN，却不敢靠近。\n**来源等级**：USER地铁相遇、主观ZN已定。\n**⏱ 镜头时长**：待制作确认。\n**状态**：expand／待USER修订。"
+    },
+    {
+      "id": "envelope_1_5a",
+      "type": "text",
+      "x": 2570,
+      "y": 5500,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 1-5a｜符号解释与画面证据\n**十元／感受关系**：Lucas本体XN＋N；Claire主观感到ZN，不得误把男主标为ZN。\n**🖼 镜头证据**：镜头：她迈半步又停；男主现实表情含哀默。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_1_6",
+      "type": "text",
+      "x": 275,
+      "y": 6550,
+      "width": 2190,
+      "height": 790,
+      "color": "3",
+      "text": "# 🎬 1-6｜两处出现相同旋律\n**📄 事件**：Lucas弹出与信封一样的旋律，留下音乐来源悬念。\n**来源等级**：USER同曲钩子已定；对白AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：hold／待USER修订。"
+    },
+    {
+      "id": "envelope_1_6a",
+      "type": "text",
+      "x": 2570,
+      "y": 6550,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 1-6a｜符号解释与画面证据\n**十元／感受关系**：信谱与演奏建立故事关联，不等于已经能改写过去。\n**🖼 镜头证据**：镜头：信谱与琴键同一音型匹配；Lucas是否开口待定。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_1_7",
+      "type": "text",
+      "x": 495,
+      "y": 7680,
+      "width": 4210,
+      "height": 1080,
+      "color": "3",
+      "text": "# 🎬 1-7｜候选发散／待裁决\n1-7｜可恢复分叉：A 五线谱信；B 无字听觉信；C 两代声部叠在同一信。待定：魔法是否只轻改现在、男主哪句台词收尾。\n**分支管理**：未选候选继续保留，不因为折叠而删除。\n**反馈**：回复「改1-3a：……」即可逐卡修订。"
+    },
+    {
+      "id": "envelope_group_2",
+      "type": "group",
+      "label": "第二集｜N架桥 → ZX克N → ZN再架桥",
+      "x": 5320,
+      "y": 100,
+      "width": 4990,
+      "height": 9140,
+      "color": "4"
+    },
+    {
+      "id": "envelope_2_0",
+      "type": "text",
+      "x": 5650,
+      "y": 340,
+      "width": 4330,
+      "height": 750,
+      "color": "4",
+      "text": "# 2-0｜N架桥 → ZX克N → ZN再架桥\n**人物 USER 十元**：Claire XN被ZN克制、追求Z；Lucas XN＋N；Marcel NX；祖母 XN＋ZX。N闺蜜和祖父Z＋NX为USER三集新增。\n**层级**：左列1–6为剧情事件，右列1a–6a为符号/感受/镜头行为；第7为可保留的替代分支。\n**权限**：只依据原稿提取确认内容，其余均标AI候选。"
+    },
+    {
+      "id": "envelope_2_1",
+      "type": "text",
+      "x": 5495,
+      "y": 1300,
+      "width": 2190,
+      "height": 790,
+      "color": "4",
+      "text": "# 🎬 2-1｜Lucas的N第一次架桥\n**📄 事件**：地铁琴位Lucas认出Claire的哼唱，愿意等待并倾听她。\n**来源等级**：男主N架桥USER已定，具体触发AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：expand／待USER修订。"
+    },
+    {
+      "id": "envelope_2_1a",
+      "type": "text",
+      "x": 7790,
+      "y": 1300,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 2-1a｜符号解释与画面证据\n**十元／感受关系**：N是持续接纳、思念和亲近；让Claire的XN不再把打扰当成唯一结果。\n**🖼 镜头证据**：镜头：她收回的手再次靠向琴键，Lucas让出琴凳位置。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_2_2",
+      "type": "text",
+      "x": 5495,
+      "y": 2350,
+      "width": 2190,
+      "height": 790,
+      "color": "4",
+      "text": "# 🎬 2-2｜Claire的ZN克XN\n**📄 事件**：一起演奏让Claire开心；尽管害怕被拒，她主动邀Lucas继续找谱。\n**来源等级**：USER关系已定，邀请是AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：hold／待USER修订。"
+    },
+    {
+      "id": "envelope_2_2a",
+      "type": "text",
+      "x": 7790,
+      "y": 2350,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 2-2a｜符号解释与画面证据\n**十元／感受关系**：ZN不是Lucas直接给的快乐，而是她想主动延续喜悦；XN仍在但不再主导行动。\n**🖼 镜头证据**：镜头：Lucas没有先邀请，她自己开口约定明天。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_2_3",
+      "type": "text",
+      "x": 5495,
+      "y": 3400,
+      "width": 2190,
+      "height": 790,
+      "color": "4",
+      "text": "# 🎬 2-3｜Marcel提供祖母线索\n**📄 事件**：二人向Marcel寻找祖母的真实往事；他提供录音、日期或旧谱。\n**来源等级**：查祖母USER已定，录音形式AI待审。\n**⏱ 镜头时长**：待制作确认。\n**状态**：hold／待USER修订。"
+    },
+    {
+      "id": "envelope_2_3a",
+      "type": "text",
+      "x": 7790,
+      "y": 3400,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 2-3a｜符号解释与画面证据\n**十元／感受关系**：Marcel NX不强行解释，不承担ZX克N的源端角色。\n**🖼 镜头证据**：镜头：只递事实材料，留给两人自己判断。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_2_4",
+      "type": "text",
+      "x": 5495,
+      "y": 4450,
+      "width": 2190,
+      "height": 790,
+      "color": "4",
+      "text": "# 🎬 2-4｜祖母的ZX克Lucas N\n**📄 事件**：祖母过往的反抗冲击Lucas原来的温柔记忆，使他暂时停弹。\n**来源等级**：USER已指明祖母ZX克男主N；具体事件AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：expand／待USER修订。"
+    },
+    {
+      "id": "envelope_2_4a",
+      "type": "text",
+      "x": 7790,
+      "y": 4450,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 2-4a｜符号解释与画面证据\n**十元／感受关系**：ZX不是说话大声，必须有拒绝被定义的实际抗争；N被克需证明怀念的方式失效。\n**🖼 镜头证据**：镜头：Lucas合上谱，不愿再按原理解弹奏。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_2_5",
+      "type": "text",
+      "x": 5495,
+      "y": 5500,
+      "width": 2190,
+      "height": 790,
+      "color": "4",
+      "text": "# 🎬 2-5｜Claire的ZN重新架桥\n**📄 事件**：Claire发现祖母的不甘之后仍有继续创作的渴望，邀请Lucas重新听和奏。\n**来源等级**：ZN架桥USER已定；音乐证据AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：expand／待USER修订。"
+    },
+    {
+      "id": "envelope_2_5a",
+      "type": "text",
+      "x": 7790,
+      "y": 5500,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 2-5a｜符号解释与画面证据\n**十元／感受关系**：ZN架桥不是消灭ZX，而是让祖母反抗和Lucas思念仍能共同存在。\n**🖼 镜头证据**：镜头：Claire主动哼唱或重放关键声部，Lucas重新打开曲谱。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_2_6",
+      "type": "text",
+      "x": 5495,
+      "y": 6550,
+      "width": 2190,
+      "height": 790,
+      "color": "4",
+      "text": "# 🎬 2-6｜两人感情成为双向\n**📄 事件**：Claire主动期待再次见面，Lucas信任她、分享祖母私人记忆。\n**来源等级**：爱情方向USER已定；合奏安排AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：hold／待USER修订。"
+    },
+    {
+      "id": "envelope_2_6a",
+      "type": "text",
+      "x": 7790,
+      "y": 6550,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 2-6a｜符号解释与画面证据\n**十元／感受关系**：Lucas N帮助Claire ZN稳定；Claire ZN反向架桥Lucas N。爱情不靠一句告白立刻成立。\n**🖼 镜头证据**：镜头：主动约定再见、交换下一条线索，终点露出祖辈照片。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_2_7",
+      "type": "text",
+      "x": 5715,
+      "y": 7680,
+      "width": 4210,
+      "height": 1080,
+      "color": "4",
+      "text": "# 🎬 2-7｜候选发散／待裁决\n2-7｜祖母材料候选：A旧录音；B未寄信；C修改过的谱页。USER原截图“和x老年斑讨价还价”“X并Z生X／X补ZN”身份方向待审，不能冒认Marcel。优先修改2-2a／2-4a／2-5a。\n**分支管理**：未选候选继续保留，不因为折叠而删除。\n**反馈**：回复「改2-3a：……」即可逐卡修订。"
+    },
+    {
+      "id": "envelope_group_3",
+      "type": "group",
+      "label": "第三集｜祖母XN＋ZX → 祖父Z＋NX → XN积累到Z",
+      "x": 10540,
+      "y": 100,
+      "width": 4990,
+      "height": 9140,
+      "color": "5"
+    },
+    {
+      "id": "envelope_3_0",
+      "type": "text",
+      "x": 10870,
+      "y": 340,
+      "width": 4330,
+      "height": 750,
+      "color": "5",
+      "text": "# 3-0｜祖母XN＋ZX → 祖父Z＋NX → XN积累到Z\n**人物 USER 十元**：Claire XN被ZN克制、追求Z；Lucas XN＋N；Marcel NX；祖母 XN＋ZX。N闺蜜和祖父Z＋NX为USER三集新增。\n**层级**：左列1–6为剧情事件，右列1a–6a为符号/感受/镜头行为；第7为可保留的替代分支。\n**权限**：只依据原稿提取确认内容，其余均标AI候选。"
+    },
+    {
+      "id": "envelope_3_1",
+      "type": "text",
+      "x": 10715,
+      "y": 1300,
+      "width": 2190,
+      "height": 790,
+      "color": "5",
+      "text": "# 🎬 3-1｜祖母遭遇重大困境\n**📄 事件**：年轻祖母遇到令音乐道路改变的困难；旧R2采用错过1977演奏。\n**来源等级**：USER只确定遇困，1977演出为AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：expand／待USER修订。"
+    },
+    {
+      "id": "envelope_3_1a",
+      "type": "text",
+      "x": 13010,
+      "y": 1300,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 3-1a｜符号解释与画面证据\n**十元／感受关系**：XN是失去、哀默；必须有不可逆的损失，不能靠魔法重来。\n**🖼 镜头证据**：镜头：对她重要的机会在明确时间窗关闭。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_3_2",
+      "type": "text",
+      "x": 10715,
+      "y": 2350,
+      "width": 2190,
+      "height": 790,
+      "color": "5",
+      "text": "# 🎬 3-2｜XN与ZX共同作用\n**📄 事件**：祖母难过，却不肯接受他人替她宣告自己已经放弃音乐。\n**来源等级**：USER锁定XN＋ZX；行动细节AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：hold／待USER修订。"
+    },
+    {
+      "id": "envelope_3_2a",
+      "type": "text",
+      "x": 13010,
+      "y": 2350,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 3-2a｜符号解释与画面证据\n**十元／感受关系**：XN是承受与沉默；ZX是通过明确行为反抗剥夺，不能只有激动喊话。\n**🖼 镜头证据**：镜头：她主动拾回谱子继续写，或争取重新表演。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_3_3",
+      "type": "text",
+      "x": 10715,
+      "y": 3400,
+      "width": 2190,
+      "height": 790,
+      "color": "5",
+      "text": "# 🎬 3-3｜祖父Z＋NX的帮助\n**📄 事件**：祖父不替祖母决定，利用时间、关系、资源帮她保持创作。\n**来源等级**：USER锁定祖父Z＋NX帮助；路径AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：hold／待USER修订。"
+    },
+    {
+      "id": "envelope_3_3a",
+      "type": "text",
+      "x": 13010,
+      "y": 3400,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 3-3a｜符号解释与画面证据\n**十元／感受关系**：Z＝激动与确认；NX＝循实际渠道援助，而不是凭权力替她获胜。\n**🖼 镜头证据**：镜头：祖父找到可用排练时间/照护方案，同时把是否继续弹的决定交给祖母。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_3_4",
+      "type": "text",
+      "x": 10715,
+      "y": 4450,
+      "width": 2190,
+      "height": 790,
+      "color": "5",
+      "text": "# 🎬 3-4｜长期XN逐层积累\n**📄 事件**：祖母多年生活压力与错过不断发生，每次留下新的音乐片段。\n**来源等级**：USER锁定长期XN堆叠；每年一小节AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：expand／待USER修订。"
+    },
+    {
+      "id": "envelope_3_4a",
+      "type": "text",
+      "x": 13010,
+      "y": 4450,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 3-4a｜符号解释与画面证据\n**十元／感受关系**：累积不是重复悲伤，必须有重复阻碍、付出代价与新行动，形成音乐张力增长。\n**🖼 镜头证据**：镜头：年份、纸张、反复音型、增加声部与和声密度。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_3_5",
+      "type": "text",
+      "x": 10715,
+      "y": 5500,
+      "width": 2190,
+      "height": 790,
+      "color": "5",
+      "text": "# 🎬 3-5｜祖母主动释放Z\n**📄 事件**：在某一节点，祖母主动完成创作并激烈地表现长期感受。\n**来源等级**：USER锁定XN积累最终到Z；演奏会AI候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：expand／待USER修订。"
+    },
+    {
+      "id": "envelope_3_5a",
+      "type": "text",
+      "x": 13010,
+      "y": 5500,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 3-5a｜符号解释与画面证据\n**十元／感受关系**：Z是她真实经历的情绪释放，不能简单等同获奖、掌声或他人的认可。\n**🖼 镜头证据**：镜头：她自己决定开始，第一集旋律完整出现并逐渐扩张。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_3_6",
+      "type": "text",
+      "x": 10715,
+      "y": 6550,
+      "width": 2190,
+      "height": 790,
+      "color": "5",
+      "text": "# 🎬 3-6｜音乐信形成现实回收\n**📄 事件**：祖母的音乐成为信件，Claire与Lucas得知往事，选择如何回应彼此。\n**来源等级**：祖辈与信的具体连接仍是AI剧情候选。\n**⏱ 镜头时长**：待制作确认。\n**状态**：hold／待USER修订。"
+    },
+    {
+      "id": "envelope_3_6a",
+      "type": "text",
+      "x": 13010,
+      "y": 6550,
+      "width": 2270,
+      "height": 850,
+      "color": "6",
+      "text": "# 📄 3-6a｜符号解释与画面证据\n**十元／感受关系**：时间不能重写，但过去可改变今天作决定的方式；魔法机制仍未冻结。\n**🖼 镜头证据**：镜头：第一集同曲在终章回归；双方主动发言而非被魔法推动。\n**请USER评**：此动作是否真的激活预期感受？\n**状态**：AI分析候选，不代表理论PASS。"
+    },
+    {
+      "id": "envelope_3_7",
+      "type": "text",
+      "x": 10935,
+      "y": 7680,
+      "width": 4210,
+      "height": 1080,
+      "color": "5",
+      "text": "# 🎬 3-7｜候选发散／待裁决\n3-7｜困境候选：A错过演出；B作品署名/演奏机会遭剥夺；C家庭责任与音乐选择冲突。Z终局：A祖母自己弹完；B留下乐章等后人续写；C另种公开表达。未裁决的不删除。\n**分支管理**：未选候选继续保留，不因为折叠而删除。\n**反馈**：回复「改3-3a：……」即可逐卡修订。"
+    },
+    {
+      "id": "envelope_review",
+      "type": "text",
+      "x": 5950,
+      "y": 9640,
+      "width": 3710,
+      "height": 490,
+      "color": "6",
+      "text": "📄 修改入口｜逐卡反馈：「改1-4a」「改2-5」「改3-1」；不修改不相关卡。原USER骨架在00_项目总览.canvas，此处为编号审稿发散树。\n⏱ 第一集E01–E14是现有分镜规划；第三集困境、信封魔法规则、第二集讨价还价对象仍待你决定。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "envelope_edge_1",
+      "fromNode": "envelope_root",
+      "fromSide": "bottom",
+      "toNode": "envelope_1_0",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_2",
+      "fromNode": "envelope_1_0",
+      "fromSide": "bottom",
+      "toNode": "envelope_1_1",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_3",
+      "fromNode": "envelope_1_1",
+      "fromSide": "right",
+      "toNode": "envelope_1_1a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_4",
+      "fromNode": "envelope_1_1",
+      "fromSide": "bottom",
+      "toNode": "envelope_1_2",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_5",
+      "fromNode": "envelope_1_2",
+      "fromSide": "right",
+      "toNode": "envelope_1_2a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_6",
+      "fromNode": "envelope_1_2",
+      "fromSide": "bottom",
+      "toNode": "envelope_1_3",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_7",
+      "fromNode": "envelope_1_3",
+      "fromSide": "right",
+      "toNode": "envelope_1_3a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_8",
+      "fromNode": "envelope_1_3",
+      "fromSide": "bottom",
+      "toNode": "envelope_1_4",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_9",
+      "fromNode": "envelope_1_4",
+      "fromSide": "right",
+      "toNode": "envelope_1_4a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_10",
+      "fromNode": "envelope_1_4",
+      "fromSide": "bottom",
+      "toNode": "envelope_1_5",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_11",
+      "fromNode": "envelope_1_5",
+      "fromSide": "right",
+      "toNode": "envelope_1_5a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_12",
+      "fromNode": "envelope_1_5",
+      "fromSide": "bottom",
+      "toNode": "envelope_1_6",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_13",
+      "fromNode": "envelope_1_6",
+      "fromSide": "right",
+      "toNode": "envelope_1_6a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_14",
+      "fromNode": "envelope_1_6",
+      "fromSide": "bottom",
+      "toNode": "envelope_1_7",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "3"
+    },
+    {
+      "id": "envelope_edge_15",
+      "fromNode": "envelope_root",
+      "fromSide": "bottom",
+      "toNode": "envelope_2_0",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_16",
+      "fromNode": "envelope_2_0",
+      "fromSide": "bottom",
+      "toNode": "envelope_2_1",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_17",
+      "fromNode": "envelope_2_1",
+      "fromSide": "right",
+      "toNode": "envelope_2_1a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_18",
+      "fromNode": "envelope_2_1",
+      "fromSide": "bottom",
+      "toNode": "envelope_2_2",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_19",
+      "fromNode": "envelope_2_2",
+      "fromSide": "right",
+      "toNode": "envelope_2_2a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_20",
+      "fromNode": "envelope_2_2",
+      "fromSide": "bottom",
+      "toNode": "envelope_2_3",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_21",
+      "fromNode": "envelope_2_3",
+      "fromSide": "right",
+      "toNode": "envelope_2_3a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_22",
+      "fromNode": "envelope_2_3",
+      "fromSide": "bottom",
+      "toNode": "envelope_2_4",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_23",
+      "fromNode": "envelope_2_4",
+      "fromSide": "right",
+      "toNode": "envelope_2_4a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_24",
+      "fromNode": "envelope_2_4",
+      "fromSide": "bottom",
+      "toNode": "envelope_2_5",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_25",
+      "fromNode": "envelope_2_5",
+      "fromSide": "right",
+      "toNode": "envelope_2_5a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_26",
+      "fromNode": "envelope_2_5",
+      "fromSide": "bottom",
+      "toNode": "envelope_2_6",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_27",
+      "fromNode": "envelope_2_6",
+      "fromSide": "right",
+      "toNode": "envelope_2_6a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_28",
+      "fromNode": "envelope_2_6",
+      "fromSide": "bottom",
+      "toNode": "envelope_2_7",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "envelope_edge_29",
+      "fromNode": "envelope_root",
+      "fromSide": "bottom",
+      "toNode": "envelope_3_0",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_30",
+      "fromNode": "envelope_3_0",
+      "fromSide": "bottom",
+      "toNode": "envelope_3_1",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_31",
+      "fromNode": "envelope_3_1",
+      "fromSide": "right",
+      "toNode": "envelope_3_1a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_32",
+      "fromNode": "envelope_3_1",
+      "fromSide": "bottom",
+      "toNode": "envelope_3_2",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_33",
+      "fromNode": "envelope_3_2",
+      "fromSide": "right",
+      "toNode": "envelope_3_2a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_34",
+      "fromNode": "envelope_3_2",
+      "fromSide": "bottom",
+      "toNode": "envelope_3_3",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_35",
+      "fromNode": "envelope_3_3",
+      "fromSide": "right",
+      "toNode": "envelope_3_3a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_36",
+      "fromNode": "envelope_3_3",
+      "fromSide": "bottom",
+      "toNode": "envelope_3_4",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_37",
+      "fromNode": "envelope_3_4",
+      "fromSide": "right",
+      "toNode": "envelope_3_4a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_38",
+      "fromNode": "envelope_3_4",
+      "fromSide": "bottom",
+      "toNode": "envelope_3_5",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_39",
+      "fromNode": "envelope_3_5",
+      "fromSide": "right",
+      "toNode": "envelope_3_5a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_40",
+      "fromNode": "envelope_3_5",
+      "fromSide": "bottom",
+      "toNode": "envelope_3_6",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_41",
+      "fromNode": "envelope_3_6",
+      "fromSide": "right",
+      "toNode": "envelope_3_6a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "envelope_edge_42",
+      "fromNode": "envelope_3_6",
+      "fromSide": "bottom",
+      "toNode": "envelope_3_7",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5"
+    }
+  ]
+}
