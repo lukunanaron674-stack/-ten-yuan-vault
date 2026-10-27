@@ -1722,6 +1722,16 @@
       "width": 3350,
       "height": 1150,
       "text": "# 2-R｜修改入口·本轮待裁决／不可跳过\n**结构已定（USER）**：女主ZN克XN；男主N架桥；祖母ZX克男主N；女主ZN再架桥；四位角色身份保持A2/A11。\n**AI剧情未锁**：2-3a录音来源、2-4a祖母反抗语气、2-5a女主音乐桥接、2-6a合奏与爱情节奏。\n**原截图未解析两项**：`和x老年斑讨价还价` 的对象；`X并Z 生 X、X 补 ZN` 的实施者及方向。原词保留在L2。本表中`X并Z 生 X`还与现行关系表的`X 生 X并Z`方向不同，必须待你重新指定，不擅自改符号或自证。\n**接下来最多展开**：2-2a（ZN如何真克XN）、2-4a（ZX如何真克N）、2-5a（ZN桥接的关键证据）。\n**反馈方式**：直接说“改2-4a：……”；编号稳定，改该卡不影响其他卡。"
+    },
+    {
+      "id": "l_envelope_tree_nav",
+      "type": "file",
+      "file": "10-创作/二手书店的时间信封/信封发散树.canvas",
+      "x": 69800,
+      "y": 24100,
+      "width": 3200,
+      "height": 570,
+      "color": "6"
     }
   ],
   "edges": [
@@ -2952,6 +2962,15 @@
       "fromNode": "l_ep2_tree_2_6a",
       "fromSide": "bottom",
       "toNode": "l_ep2_tree_review",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "6"
+    },
+    {
+      "id": "edge_l_envelope_tree_nav",
+      "fromNode": "l_ep2_tree_review",
+      "fromSide": "bottom",
+      "toNode": "l_envelope_tree_nav",
       "toSide": "top",
       "toEnd": "arrow",
       "color": "6"
