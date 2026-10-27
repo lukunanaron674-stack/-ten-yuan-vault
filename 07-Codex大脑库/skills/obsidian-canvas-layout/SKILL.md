@@ -1,6 +1,6 @@
 ---
 name: obsidian-canvas-layout
-version: 1.2.0
+version: 1.3.0
 description: 将现有 Obsidian JSON Canvas 安全重排为多个互不连线的独立中心、左右双向发散、紧凑子树和森林布局；保留原文本、职位链接、主题底盘色、分支轴色以及所有关系边；原位修改已存在Canvas、验收和安全回滚；禁止自动生成重复版本。
 ---
 
@@ -56,6 +56,27 @@ python "07-Codex大脑库/skills/obsidian-canvas-layout/scripts/test_layout.py"
 - **DONE（程序）**：报告树数量、节点、边、布局列数、既有路径和Git回滚点；GitHub如有提交则回读 SHA；保留原内容、颜色、所有边；全图检查通过。
 - **WAIT_LOCAL_UI**：在Obsidian里看局部卡片可读性、箭头走向、跨区空白，人工确认通过后才将原位排版达到用户验收。
 - **STOP**：存在跨中心边、无明确顶层分组、子树相互重叠、文本内容变化、原图片资产/引用缺失、用户已有文件被错误重建或工作树冲突时立即停，不自动修造资料。
+
+
+## v1.3.0｜已有Canvas原位改版、评分/课程多中心兼容（2026-10-17）
+
+**适用对象：** 布局中已经有多个中心、但没有子group的放射图，以及尚未建立group的旧单中心长图。
+
+1. **先 `--audit-only`**：对所有已有Canvas做只读节点/边/归属/重叠/跨中心边审计。旧图没有group时只报告`ungrouped`，不擅自猜测中心。
+2. **两种已有布局兼容：** CLASSIC（每个顶层group有至少2个子group）继续左右双向重排；RADIAL_GROUP_FREE（至少2个顶层group，没有子group）**保留原中心内部径向布局不动，只对多group外框做2/3列装箱**。只有一个子group而归属模糊仍FAIL_CLOSED。
+3. **首次从旧单中心转换为多个中心是内容编排任务，不是geometry-only算法。** 先按USER明确要求定主题和边归属；需要断开跨中心**导航型**视觉线时，必须获得该任务明确的重组授权、在**原Canvas内**列出旧edge id与原两端点、改成文本跳转/工单引用，保持原卡片文字和同中心关系。**理论生克补/材料论证边不得作为导航线删除。** 未授权则STOP，不自动动边。
+4. **评分表不代替评分正本：** 案例的`TECH_PASS`、`F_pred/S/T` AI候选、`F_human`真观看和USER个人作品分必须分开存；`F_human`无实测填`null`。原有评分来源参考674-106与作品管理674-308，不擅自改官方评分。
+5. **READABILITY**：沿用USER确认的多中心/独立主色/多层环绕；画布图例缩小后可见中心标题，放大阅读细节。脚本只做结构审计和可安全识别的几何移动，**不宣称完成Windows Obsidian实屏验收**。
+6. **单一文件入口：** 同一对象只更新现有Canvas，保留Git提交与旧blob SHA回滚点，不生成`_v2`、`_标题总览`、`_预览.canvas`等平行正本。
+
+示例：
+```powershell
+python "07-Codex大脑库/skills/obsidian-canvas-layout/scripts/layout.py" "AI问题解决Canvas/AI漫剧成熟工作流复现_学习总图_20261014.canvas" --audit-only
+python "07-Codex大脑库/skills/obsidian-canvas-layout/scripts/layout.py" "AI问题解决Canvas/AI漫剧成熟工作流复现_学习总图_20261014.canvas" --dry-run
+# 若作者已经认可现有径向群组的内部摆放，正常情况不必再以 --in-place 二次装箱
+```
+
+**DONE（程序）：** 读到有效多中心分组、无跨中心边/卡片重叠、所有节点可追溯、评分未越权、SHA回读PASS。**WAIT_LOCAL_UI：** USER在Obsidian真实缩放/点开/检查箭头后才表示可视验收通过。
 
 ## 来源与限制
 

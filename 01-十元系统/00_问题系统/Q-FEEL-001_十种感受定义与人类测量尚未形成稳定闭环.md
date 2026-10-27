@@ -89,3 +89,14 @@ updated: 2026-10-07
 - **证据与统计**：`C=C2`；`E=E0`；`research_rounds_completed=0`；`human_feeling_profile=null`；`MAE=null`；`Top1=null`；`Top3=null`。本轮是接口现状审计，不是感受实测或五轴A/B成绩。
 
 - `R2.0_SYNC_STATUS: GitHub original Q write/readback PASS; Linear 674-104 comment BLOCKED_BY_SAFETY_CHECK`。GitHub commit `41e7cd82024539fbb7a585c536a7e69bc5e5398f`；Linear同步未成功，不得称已完成跨系统双写；后续仅在可写权限/安全检查允许时补同步。
+
+
+## 11｜WATCHDOG R34｜自由描述前置标签暴露回归的跨系统证据归档｜2026-10-26
+
+- **唯一 Q**：Q-FEEL-001。增量为将既有 Linear 674-104 的 R26 证据分级回填到本原 Q；不是新实验、不是第二套问题系统，也不改变三元—十元感受核心正本。
+- **直接来源**：Linear 674-104 评论 `c47b6f46-2f48-41ce-997f-bfa157509520`（2026-10-24 00:53 +08），引用 Linear 674-297 R272 评论 `f3349300-429e-4aed-8692-3e764650ec7e`。R272 报告旧文字双轨 HTML 在自由描述尚未填写时显示十元/情绪标签，随后报告 V2 修复与合成 QA 2/2 PASS。
+- **失败族**：`FREE_RESPONSE_PRELABEL_EXPOSURE`；风险是自由描述受理论词提示污染，不能作为未经提示的自发感受报告。**证据级别仅为** `REPORTED_TECHNICAL_REGRESSION / REPORTED_SYNTHETIC_QA`；本 WATCHDOG 未取得 R270/R272 HTML 原字节或真实用户端浏览器日志，故既不能声称独立复验旧缺陷，也不能声称 V2 已通过真实展示验收。
+- **严格分账**：旧文字双轨工具 ≠ `Q-FEEL-001-BLIND-R0` 六张真实 PNG 实验包；不可将旧工具的失败、修复或合成 QA 计入 BLIND-R0 的真实人类实验轮次、成功率或仪器验收。
+- **BLIND-R0 用户门禁前最小验证**：①在实际用户展示端，Stage A 自由描述提交/锁定前不出现十元词、预测或评分提示；②锁定后不能回改；③核对父图原始字节及裁切 manifest 的完整 SHA/版本链；④图像可持续展示、Session-A/B 盲码顺序和预测预锁可回读。以上尚未共同 READY。
+- **不变状态**：`C2/E0`；`HUMAN_GATE=NOT_READY`；`parent_byte_sha=UNVERIFIED`；`crop_manifest=UNVERIFIED`；`blind_user_display=NOT_VERIFIED`；`human_feeling_profile=null`；`MAE=null`；`Top1=null`；`Top3=null`；`effective_feeling_experiment_rounds=0`；独立五轴 A/B 未执行、未写入、未计数；`173_USER_PASS=NOT_CLAIMED`。
+- **NEXT**：`WAIT_PARENT_BYTES_AND_BLIND_USER_DISPLAY`。不请求人评、不触发 H3、不把技术修复当真人感受效果；若无新的可复核证据，下一轮 `NO_OP`。

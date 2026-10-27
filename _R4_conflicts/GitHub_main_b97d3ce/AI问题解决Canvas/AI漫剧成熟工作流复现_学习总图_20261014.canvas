@@ -1,0 +1,592 @@
+{
+  "nodes": [
+    {
+      "id": "source",
+      "type": "text",
+      "x": -1780,
+      "y": -1060,
+      "width": 620,
+      "height": 320,
+      "color": "6",
+      "text": "# ① 外部原型｜我们到底复现谁？\n**第一源：comfyui-auto-drama**\n\n原剧本《最后两分钟》：\n- 林川 + 苏芮，2位角色\n- 10个镜头 × 12秒＝120秒\n- 源样例：9:16竖版\n\n[原仓库](https://github.com/qiukaihui/comfyui-auto-drama) · [真实Demo JSON](https://github.com/qiukaihui/comfyui-auto-drama/blob/main/examples/demo_script.json)\n\n**规则：先照原样读懂，再做设备适配。**"
+    },
+    {
+      "id": "hub",
+      "type": "text",
+      "x": -660,
+      "y": -1090,
+      "width": 1320,
+      "height": 315,
+      "color": "5",
+      "text": "# 🎬 AI漫剧流程复现｜学习型 Canvas（回传版 v1.1）\n## 中心：从“单镜能动” → “多镜头能讲故事”\n**本轮已经从方法研究推进到三镜 36.75秒技术样片。**\n\n阅读路线：上排7步生产流程 → 中排M0–M5真实批次 → 下排学习问答 → 最下排真实视频回执。\n\n**关键：** 系统报告 TECH_PASS，但不代表 USER 已经觉得好看，也不意味着全10镜或商业漫剧管线已完成。"
+    },
+    {
+      "id": "status",
+      "type": "text",
+      "x": 1050,
+      "y": -1060,
+      "width": 700,
+      "height": 320,
+      "color": "4",
+      "text": "# ② 最新回传｜2026-10-14 🟢\n**M0 已验证源文件 ✅**\n**M1 本机环境 ✅（据A端回执）**\n**M2 源剧解析通过；字段完整审计待补 🟡**\n**M3 三条原剧镜头 TECH_PASS ✅**\n**M4 三镜剪辑样片 TECH_PASS ✅**\n**M5 用户观看与经验吸收 ⏳**\n\n**最新技术成果：**\n3 × 12.25s → **36.75s / 882帧**\n864×480 / 24fps / H.264+AAC\n\n⚠️ 该成果依据674-216的Codex运行回执；原始新MP4尚未在289见到附件。**审美未通过**。"
+    },
+    {
+      "id": "P1",
+      "type": "text",
+      "x": -1780,
+      "y": -520,
+      "width": 460,
+      "height": 340,
+      "color": "5",
+      "text": "# 📖 第1站｜剧本\n\n从故事里读出**谁、在哪里、做了什么、为什么发生**。\n\n原Demo：10段，角色林川和苏芮。\n\n输出：有顺序的故事/场次表。\n\n**学：剧本不是提示词。**"
+    },
+    {
+      "id": "P2",
+      "type": "text",
+      "x": -1275,
+      "y": -520,
+      "width": 460,
+      "height": 340,
+      "color": "5",
+      "text": "# 👤 第2站｜角色锚点\n\n为每个人锁**身份、发型、服装、道具、比例**。\n\n同一人物跨镜头不得忽然换衣或换脸。\n\n输出：角色卡 + 可查原图。\n\n**学：角色参考是“身份证”。**"
+    },
+    {
+      "id": "P3",
+      "type": "text",
+      "x": -770,
+      "y": -520,
+      "width": 460,
+      "height": 340,
+      "color": "5",
+      "text": "# 🎥 第3站｜分镜契约\n\n一镜一个明确任务：**人物、场景、动作、机位、景别、时长、对白**。\n\n例：控制室里的林川看水位红线。\n\n输出：SHOT_CARD。\n\n**学：分镜不是一堆美图。**"
+    },
+    {
+      "id": "P4",
+      "type": "text",
+      "x": -265,
+      "y": -520,
+      "width": 460,
+      "height": 340,
+      "color": "5",
+      "text": "# 🧷 第4站｜参考绑定\n\n角色锚点、场景图、镜头图必须**真实进入H3节点**。\n\n记录源图路径、SHA、角色/场景权重。\n\n输出：REF_BINDING_RECEIPT。\n\n**学：有图≠模型真的读了图。**"
+    },
+    {
+      "id": "P5",
+      "type": "text",
+      "x": 240,
+      "y": -520,
+      "width": 460,
+      "height": 340,
+      "color": "5",
+      "text": "# ⚙️ 第5站｜H3真实渲染 ✅\n**A端本轮已提交并回传3镜：**\nS02控制室、S03进水机房、S04抢修。\n\n每段294f / 24fps / 12.25s；三段均记录prompt_id和输出SHA。\n\n这一步证明：**不止单镜鼠标可以动，连续剧本镜头也能生成。**\n\n⚠️ 864×480是1.8:1宽屏，不是严格16:9。"
+    },
+    {
+      "id": "P6",
+      "type": "text",
+      "x": 745,
+      "y": -520,
+      "width": 460,
+      "height": 340,
+      "color": "5",
+      "text": "# 🔎 第6站｜质量审查\n\n机器检查：角色身份、衣服、物体、接镜、说话者、音轨。\n\n173由USER看：**动作是否有因果、剧情是否吸引、画风是否满意**。\n\n**学：机器可检技术，不能代签审美。**"
+    },
+    {
+      "id": "P7",
+      "type": "text",
+      "x": 1250,
+      "y": -520,
+      "width": 460,
+      "height": 340,
+      "color": "5",
+      "text": "# 🎞️ 第7站｜剪辑样片 ✅ 技术\n三条镜头拼成 36.75秒 / 882帧，已附中文字幕及SRT（A端回执）。\n\n**学：** 镜头→切点→音轨→字幕→成片，属于另一层生产能力。\n\n**当前不等于完整交付：** 尚缺云端实片入289、配音/字幕人工听审与173审美裁决。"
+    },
+    {
+      "id": "M0",
+      "type": "text",
+      "x": -1780,
+      "y": 30,
+      "width": 540,
+      "height": 360,
+      "color": "4",
+      "text": "# M0｜源码验证 ✅\n\n**已完成**\n\nREADME / 配置 / 环境脚本 / Demo JSON核验。\n\n**DONE**：原版信息、固定版本和依赖可追踪。\n\n**STOP**：不可把源码可用当运行成功。"
+    },
+    {
+      "id": "M1",
+      "type": "text",
+      "x": -1175,
+      "y": 30,
+      "width": 540,
+      "height": 360,
+      "color": "3",
+      "text": "# M1｜4080 环境 ✅（已回传）\n**A端报告：** 独立clone上游固定commit、clean工作树；Windows + RTX4080 32GB、ComfyUI 0.31.0、Python3.13.12、Torch2.11.0+cu130。\n\n**已证明：** 实机可提交并生成此批 H3 镜头。\n\n**学习：** 本机兼容 ≠ 外部默认配置完全一致。\n\n**缺口：** 后续核对具体Ref2VA参数与运行回执原件。"
+    },
+    {
+      "id": "M2",
+      "type": "text",
+      "x": -570,
+      "y": 30,
+      "width": 540,
+      "height": 360,
+      "color": "3",
+      "text": "# M2｜剧本导入 🟡 部分有证据\n**A端报告：** 上游 `parse_script_json()` 成功解析；已生成林川、苏芮身份锚图与控制室/机房场景锚图。\n\n**DONE已知：** 解析+角色/场景资产生成。\n\n**仍缺：** 10镜全字段无损导入、每镜角色/对白/时长与原JSON逐一比对的完整表。\n\n**学习：** 能解析JSON ≠ 10镜都已核对。"
+    },
+    {
+      "id": "M3",
+      "type": "text",
+      "x": 35,
+      "y": 30,
+      "width": 540,
+      "height": 360,
+      "color": "3",
+      "text": "# M3｜首镜复现 ✅ 技术通过\n已不是计划：**scene #2 控制室真实生成**。\n\n- 12.25s / 294帧 / 24fps\n- 864×480 / H.264+AAC\n- ComfyUI prompt_id 有回传\n- 原片SHA：`92396B08…99C0`\n\n同时 A端扩成 #3进水机房、#4配电箱抢修，共3条原始MP4。\n\n**注意：** 该分辨率为横屏适配，1.8:1，**不严格等于16:9**。"
+    },
+    {
+      "id": "M4",
+      "type": "text",
+      "x": 640,
+      "y": 30,
+      "width": 540,
+      "height": 360,
+      "color": "3",
+      "text": "# M4｜三镜样片 ✅ 技术通过\n**组合成片已由Codex报告：**\n场景 #2 → #3 → #4（控制室→机房进水→抢修）\n\n**36.75s / 882f / 864×480 /24fps**\n\n- 三段真实MP4记录独立SHA\n- 视频可解码；拼接点抽检\n- 中文字幕烧录，SRT另存\n- MP4：10,201,651 bytes\n- 最终SHA：`C9617C81…3AFA9B3`\n\n**未验证：** 配音听感/字幕对齐、观众理解、跨镜身份、USER审美。\n**云端附件未见；现存A端本地路径。**"
+    },
+    {
+      "id": "M5",
+      "type": "text",
+      "x": 1245,
+      "y": 30,
+      "width": 540,
+      "height": 360,
+      "color": "3",
+      "text": "# M5｜下一步：看片+证据归档 ⏳\n**尚未达到生产质量终验。**\n\n1. A端将三条原片、组合片、SRT、QA图、完整receipt上传至674-289（本地路径不等于云端上传）。\n2. 173：USER看实际样片，判剧情清晰度、身份/场景连续性、动作和对白字幕。\n3. 补“原剧10镜字段逐行对照”，独立核实M2完整性。\n4. 处理864×480与严格16:9不同的问题；不暗改历史。\n5. 286提取 ≤3条真实有证据的经验，才能迁入《黎黎隆》。\n\n**STOP：未看样片，不能写 USER_PASS。**"
+    },
+    {
+      "id": "study",
+      "type": "text",
+      "x": -1780,
+      "y": 560,
+      "width": 1020,
+      "height": 360,
+      "color": "2",
+      "text": "# 📚 三个学习实验｜边看边懂\n1. **读剧本**：第2镜里，谁在场？危险从哪里来？哪句对白推进剧情？\n2. **读镜头**：动作/机位/景别/时长，哪些必须单独指定？\n3. **读结果**：看到MP4后，如何区别“视频生成成功”和“观众看懂”？\n\n回答三问，才算学会一个阶段，而不只是看了一堆技术名词。"
+    },
+    {
+      "id": "terms",
+      "type": "text",
+      "x": -620,
+      "y": 560,
+      "width": 1020,
+      "height": 360,
+      "color": "2",
+      "text": "# 🧠 五个大白话术语\n- **Source Demo**：别人给的原始例子\n- **Character Anchor**：角色“身份证”\n- **Shot Contract**：镜头的“拍摄合同”\n- **Reference Binding**：参考图真正插进生成模型\n- **Continuity**：前后镜头的人物与事件能接上\n\n**最关键区别**：\n渲染 = 某一镜能动；\n生产 = 连续镜头能讲完一个故事。"
+    },
+    {
+      "id": "pitfalls",
+      "type": "text",
+      "x": 550,
+      "y": 560,
+      "width": 1170,
+      "height": 360,
+      "color": "1",
+      "text": "# ⚠️ 本轮踩出的三个边界\n**①“宽屏”≠“严格16:9”**\n864×480=1.8:1；真正16:9≈1.7778。不能虚称几何比例完全达标。\n\n**② 解析成功≠全10镜被核对**\nM2的解析与人物锚图有证据，但字段无损比对尚缺。\n\n**③ TECH_PASS≠观感PASS**\n36.75秒、882帧解码通过，不自动证明故事、画风、动作/对白、角色连续性令人满意。\n\n**先审视频再决定是否返工。**"
+    },
+    {
+      "id": "compare",
+      "type": "text",
+      "x": -1780,
+      "y": 1070,
+      "width": 1030,
+      "height": 300,
+      "color": "6",
+      "text": "# 🔀 只在第一套跑通后做对照\n[Drama Skills](https://github.com/zenstory-ai/drama-skills)：学导演分镜、角色和首帧冻结。\n\n[Wind Comic](https://github.com/ChrisChen667788/wind-comic)：学多Agent分工和剪辑流程。\n\n[AI Manju Pipeline](https://github.com/mxbr111/ai-manju-pipeline)：第二条全链路对照。\n\n**不要一开始混用四套流程。**"
+    },
+    {
+      "id": "roles",
+      "type": "text",
+      "x": -620,
+      "y": 1070,
+      "width": 1020,
+      "height": 300,
+      "color": "6",
+      "text": "# 🧩 谁负责什么？\n**B端（CHATGPT）**：读方法、拆剧本、写分镜、判断失败原因。\n\n**A端（4080 / CODEX）**：真实运行H3、回传MP4和GPU证据。\n\n**C端（素材库）**：角色场景源图、SHA与资产交付。\n\n**USER（674-173）**：亲自观看，裁决画风和剧情质量。"
+    },
+    {
+      "id": "handoff",
+      "type": "text",
+      "x": 550,
+      "y": 1070,
+      "width": 1170,
+      "height": 300,
+      "color": "4",
+      "text": "# 下一步：让“复现”变成有凭据的技能\n**当前：M4技术完成 / M5待人工审片。**\n\n先接收4条MP4（三条源片+一条合成片）+ SRT/QA图/原始receipt → 674-289。\n\n再由USER在674-173对照：\n①人物身份跨镜是否连续？\n②三镜有无因果、能不能看懂？\n③字幕声音是否对齐、是否想看下去？\n\n最后286写**最多3条**真正有证据的方法。\n\n[完整回传学习补丁](AI漫剧成熟工作流复现_学习手册_20261014.md)"
+    },
+    {
+      "id": "receipt",
+      "type": "text",
+      "x": -1780,
+      "y": 1530,
+      "width": 1020,
+      "height": 390,
+      "color": "4",
+      "text": "# 📦 最新三镜技术回执（674-216）\n**上游固定commit** `362c8fd...`\n\n| 镜头 | 时长 | SHA256缩写 |\n|---|---|---|\n| S02 控制室 | 12.25s | 92396B08…99C0 |\n| S03 进水机房 | 12.25s | 2327CE10…831D |\n| S04 抢修 | 12.25s | F8EDD574…3939 |\n| 组合样片 | **36.75s** | C9617C81…FA9B3 |\n\n[原工单回执](https://linear.app/674/issue/674-216)\n\n这是一份A端Codex日志，不是本次ChatGPT重新打开本地原片所得的独立视听判定。"
+    },
+    {
+      "id": "story",
+      "type": "text",
+      "x": -620,
+      "y": 1530,
+      "width": 1020,
+      "height": 390,
+      "color": "2",
+      "text": "# 🎭 真实案例｜三镜怎样构成因果？\n**S02** 控制室：水位红线与电力告急。\n↓\n**S03** 机房：洪水冲入，设备面临损坏。\n↓\n**S04** 抢修：林川试图修复配电箱，苏芮报告信息。\n\n**学习重点：**\n前镜提出的问题，后镜必须通过事件回答或升级。\n\n**待看片判断：** 真实成片是否让观众看懂？角色衣服、相貌是否连续？不能从脚本直接推定视听结果。"
+    },
+    {
+      "id": "pending",
+      "type": "text",
+      "x": 550,
+      "y": 1530,
+      "width": 1170,
+      "height": 390,
+      "color": "1",
+      "text": "# 🔴 M5真正缺口：片和人工意见\n**目前视频库674-289尚未见此三镜组合片附件**（只见之前鼠标/官方I2V批次）。\n\nA端回执给出本地组合片：\n`H3_SHORT_REPRO_SCENES02_04_CAPTIONED_20261014.mp4`\n\n大小 **10,201,651 bytes**\nSHA256 **C9617C81997AFBB2D25E48B1B25A97A51052682E5E44A85E6B6C4D2453AFA9B3**\n\n**不能只凭文件路径说“ChatGPT已看片”**。\n\n下一步：附件/真视频 → USER实际观看 → 173裁决 → 286规则吸收。"
+    },
+    {
+      "id": "course-hub",
+      "type": "text",
+      "x": -1780,
+      "y": 2080,
+      "width": 3530,
+      "height": 240,
+      "color": "5",
+      "text": "# 📚 之后要学的｜AI漫剧复现课程路线（更新于2026-10-15）\n**先学习已经做出的36.75秒三镜样片，再扩展镜头/声音/自动化，最后评估迁入《黎黎隆》。**\n规则：**每个学习单元有可见产物 + DONE + STOP**；批次推进，不启动每小时GPU，不把候选内容冒充已验证经验。\n**优先级：L0 → L1 → L2 → L3 → L4 → L5 → L6；其中L0优先解除素材与目视审核缺口。**"
+    },
+    {
+      "id": "course-L0",
+      "type": "text",
+      "x": -1780,
+      "y": 2420,
+      "width": 1100,
+      "height": 425,
+      "color": "3",
+      "text": "# L0｜先学会看成片（现在优先）\n\n**学什么：** 真看《最后两分钟》S02–S04三镜36.75秒样片：人物连续、故事是否能懂、对白和字幕同步、镜头切口。\n\n**练习：** 取得4条MP4+SRT/QA及实际媒体SHA，带着5个问题做观片记录；保留原声。\n\n**DONE**：一张逐镜观片表 + 173 USER实际评价。\n\n**STOP**：拿不到视频源，就标WAIT_MEDIA，不能凭回执说好看。"
+    },
+    {
+      "id": "course-L1",
+      "type": "text",
+      "x": -600,
+      "y": 2420,
+      "width": 1100,
+      "height": 425,
+      "color": "2",
+      "text": "# L1｜剧本如何变成镜头\n\n**学什么：** 学习横向“同一事件所有关系共同作用”与纵向“前镜问题被下一镜升级/回答”的分镜组织方法。\n\n**练习：** 把10镜Demo整理成【镜头目的/角色/动作/场景/机位/台词/对下镜的作用】表。\n\n**DONE**：10镜字段逐项对照 + 3镜因果图。\n\n**STOP**：故事推进说不清时，不以增加提示词长度替代编剧。"
+    },
+    {
+      "id": "course-L2",
+      "type": "text",
+      "x": 580,
+      "y": 2420,
+      "width": 1100,
+      "height": 425,
+      "color": "2",
+      "text": "# L2｜角色与场景为什么能保持一致\n\n**学什么：** 学习 Character Anchor / Reference Binding / Style Consistency：同一人跨镜保脸型、服装、比例、场景风格。\n\n**练习：** 对S02–S04各抽首中尾帧，对比林川、苏芮服装/发型和场景资产；核参考图实接线。\n\n**DONE**：身份漂移表 + 有证据的角色/场景锁定规则。\n\n**STOP**：无原图与视频，就不能认定“多参考一致性通过”。"
+    },
+    {
+      "id": "course-L3",
+      "type": "text",
+      "x": -1780,
+      "y": 2940,
+      "width": 1100,
+      "height": 425,
+      "color": "2",
+      "text": "# L3｜镜头衔接与电影叙事\n\n**学什么：** 学习连续性剪辑：景别变化、视线方向、动作匹配、空间方向、节奏与事件因果。\n\n**练习：** 比对S02→S03和S03→S04切点；只给出最重要的1–2处需要调整的具体理由。\n\n**DONE**：切点对照卡（问题→修改→预期改善）。\n\n**STOP**：若问题是角色身份，不用大规模重剪掩盖问题。"
+    },
+    {
+      "id": "course-L4",
+      "type": "text",
+      "x": -600,
+      "y": 2940,
+      "width": 1100,
+      "height": 425,
+      "color": "2",
+      "text": "# L4｜对白、配音、字幕、音效\n\n**学什么：** 区分带AAC声轨、真正可听清的对白、角色音色一致、字幕真实同步；理解声音怎样帮助观众读懂冲突。\n\n**练习：** 试听原片，核 SRT 时间轴、角色归属、字幕遮挡与音画；必要时用后期配音替代乱音。\n\n**DONE**：声音/字幕校对清单 + 实际音画问题。\n\n**STOP**：只有字幕文字或声轨存在，不宣布“对白合格”。"
+    },
+    {
+      "id": "course-L5",
+      "type": "text",
+      "x": 580,
+      "y": 2940,
+      "width": 1100,
+      "height": 425,
+      "color": "6",
+      "text": "# L5｜如何稳定地批量做漫剧\n\n**学什么：** 学习别人如何让10镜变成可以恢复、可以检查、可以追踪的批量流程，而不是不断抽卡。\n\n**练习：** 统计三镜实际时长/失败/返工原因，学习队列互斥、素材hash、按镜重试、日志与批次结束点。\n\n**DONE**：批次运行模板 + 每类失败如何停/重试的判断表。\n\n**STOP**：三镜尚未过人工验收，不直接扩成10镜全量GPU。"
+    },
+    {
+      "id": "course-L6",
+      "type": "text",
+      "x": -1780,
+      "y": 3460,
+      "width": 1100,
+      "height": 415,
+      "color": "4",
+      "text": "# L6｜换别人的成熟方法再对照\n\n**学什么：** 第一套闭环审完后，再看Drama Skills（前期导演）、Wind Comic（多代理）、AI Manju Pipeline（全流程），找可迁移方法。\n\n**练习：** 比较【剧本/锚图/镜头契约/渲染/字幕/审片/版本证据】7环节，先选一个最弱环节补课。\n\n**DONE**：外部方法对照表 + 不超过3条实证支持的复用规则。\n\n**STOP**：不同时混跑4套；没有对照素材就只保留候选。"
+    },
+    {
+      "id": "course-end",
+      "type": "text",
+      "x": -550,
+      "y": 3460,
+      "width": 2300,
+      "height": 415,
+      "color": "5",
+      "text": "# 🎓 学完后，你应该真正掌握什么？\n1. **能拆**：拿到一篇故事，可以拆成拍得出来、能彼此接上的分镜。\n2. **能复刻**：固定角色/场景素材，知道H3每镜用了哪张图、哪份提示词。\n3. **能审**：分辨“MP4技术成功”与“观众确实理解和有感受”。\n4. **能量产**：知道失败原因、重跑边界、单镜和成片的版本归档。\n5. **能迁移**：只有验证后才将外部有效方法纳入《黎黎隆》，不重启每小时无目的出片。\n\n**现在最佳下一课：L0，看36.75秒真视频；再做L1、L2。**\n[配套大白话学习手册](AI漫剧成熟工作流复现_学习手册_20261014.md)"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_P1_P2",
+      "fromNode": "P1",
+      "fromSide": "right",
+      "toNode": "P2",
+      "toSide": "left"
+    },
+    {
+      "id": "e_P2_P3",
+      "fromNode": "P2",
+      "fromSide": "right",
+      "toNode": "P3",
+      "toSide": "left"
+    },
+    {
+      "id": "e_P3_P4",
+      "fromNode": "P3",
+      "fromSide": "right",
+      "toNode": "P4",
+      "toSide": "left"
+    },
+    {
+      "id": "e_P4_P5",
+      "fromNode": "P4",
+      "fromSide": "right",
+      "toNode": "P5",
+      "toSide": "left"
+    },
+    {
+      "id": "e_P5_P6",
+      "fromNode": "P5",
+      "fromSide": "right",
+      "toNode": "P6",
+      "toSide": "left"
+    },
+    {
+      "id": "e_P6_P7",
+      "fromNode": "P6",
+      "fromSide": "right",
+      "toNode": "P7",
+      "toSide": "left"
+    },
+    {
+      "id": "e_source_hub",
+      "fromNode": "source",
+      "fromSide": "right",
+      "toNode": "hub",
+      "toSide": "left"
+    },
+    {
+      "id": "e_hub_status",
+      "fromNode": "hub",
+      "fromSide": "right",
+      "toNode": "status",
+      "toSide": "left"
+    },
+    {
+      "id": "e_hub_P4",
+      "fromNode": "hub",
+      "fromSide": "bottom",
+      "toNode": "P4",
+      "toSide": "top",
+      "label": "从方法到执行"
+    },
+    {
+      "id": "e_M0_M1",
+      "fromNode": "M0",
+      "fromSide": "right",
+      "toNode": "M1",
+      "toSide": "left"
+    },
+    {
+      "id": "e_M1_M2",
+      "fromNode": "M1",
+      "fromSide": "right",
+      "toNode": "M2",
+      "toSide": "left"
+    },
+    {
+      "id": "e_M2_M3",
+      "fromNode": "M2",
+      "fromSide": "right",
+      "toNode": "M3",
+      "toSide": "left"
+    },
+    {
+      "id": "e_M3_M4",
+      "fromNode": "M3",
+      "fromSide": "right",
+      "toNode": "M4",
+      "toSide": "left"
+    },
+    {
+      "id": "e_M4_M5",
+      "fromNode": "M4",
+      "fromSide": "right",
+      "toNode": "M5",
+      "toSide": "left"
+    },
+    {
+      "id": "e_P1_M0",
+      "fromNode": "P1",
+      "fromSide": "bottom",
+      "toNode": "M0",
+      "toSide": "top"
+    },
+    {
+      "id": "e_P5_M3",
+      "fromNode": "P5",
+      "fromSide": "bottom",
+      "toNode": "M3",
+      "toSide": "top"
+    },
+    {
+      "id": "e_P7_M5",
+      "fromNode": "P7",
+      "fromSide": "bottom",
+      "toNode": "M5",
+      "toSide": "top"
+    },
+    {
+      "id": "e_M0_study",
+      "fromNode": "M0",
+      "fromSide": "bottom",
+      "toNode": "study",
+      "toSide": "top"
+    },
+    {
+      "id": "e_M2_terms",
+      "fromNode": "M2",
+      "fromSide": "bottom",
+      "toNode": "terms",
+      "toSide": "top"
+    },
+    {
+      "id": "e_M4_pitfalls",
+      "fromNode": "M4",
+      "fromSide": "bottom",
+      "toNode": "pitfalls",
+      "toSide": "top"
+    },
+    {
+      "id": "e_study_compare",
+      "fromNode": "study",
+      "fromSide": "bottom",
+      "toNode": "compare",
+      "toSide": "top"
+    },
+    {
+      "id": "e_terms_roles",
+      "fromNode": "terms",
+      "fromSide": "bottom",
+      "toNode": "roles",
+      "toSide": "top"
+    },
+    {
+      "id": "e_pitfalls_handoff",
+      "fromNode": "pitfalls",
+      "fromSide": "bottom",
+      "toNode": "handoff",
+      "toSide": "top"
+    },
+    {
+      "id": "e_compare_receipt",
+      "fromNode": "compare",
+      "fromSide": "bottom",
+      "toNode": "receipt",
+      "toSide": "top"
+    },
+    {
+      "id": "e_roles_story",
+      "fromNode": "roles",
+      "fromSide": "bottom",
+      "toNode": "story",
+      "toSide": "top"
+    },
+    {
+      "id": "e_handoff_pending",
+      "fromNode": "handoff",
+      "fromSide": "bottom",
+      "toNode": "pending",
+      "toSide": "top"
+    },
+    {
+      "id": "roadmap-in",
+      "fromNode": "pending",
+      "fromSide": "bottom",
+      "toNode": "course-hub",
+      "toSide": "top"
+    },
+    {
+      "id": "study-from-hub-0",
+      "fromNode": "course-hub",
+      "fromSide": "bottom",
+      "toNode": "course-L0",
+      "toSide": "top"
+    },
+    {
+      "id": "study-from-hub-1",
+      "fromNode": "course-hub",
+      "fromSide": "bottom",
+      "toNode": "course-L1",
+      "toSide": "top"
+    },
+    {
+      "id": "study-from-hub-2",
+      "fromNode": "course-hub",
+      "fromSide": "bottom",
+      "toNode": "course-L2",
+      "toSide": "top"
+    },
+    {
+      "id": "study-from-hub-3",
+      "fromNode": "course-hub",
+      "fromSide": "bottom",
+      "toNode": "course-L3",
+      "toSide": "top"
+    },
+    {
+      "id": "study-from-hub-4",
+      "fromNode": "course-hub",
+      "fromSide": "bottom",
+      "toNode": "course-L4",
+      "toSide": "top"
+    },
+    {
+      "id": "study-from-hub-5",
+      "fromNode": "course-hub",
+      "fromSide": "bottom",
+      "toNode": "course-L5",
+      "toSide": "top"
+    },
+    {
+      "id": "study-from-hub-6",
+      "fromNode": "course-hub",
+      "fromSide": "bottom",
+      "toNode": "course-L6",
+      "toSide": "top"
+    },
+    {
+      "id": "course-last",
+      "fromNode": "course-L6",
+      "fromSide": "right",
+      "toNode": "course-end",
+      "toSide": "left"
+    }
+  ]
+}
