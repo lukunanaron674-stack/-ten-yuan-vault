@@ -1740,7 +1740,7 @@
       "x": 78000,
       "y": -3100,
       "width": 10600,
-      "height": 34000,
+      "height": 43800,
       "color": "6"
     },
     {
@@ -1962,6 +1962,66 @@
       "height": 1050,
       "color": "6",
       "text": "# M21｜本轮审稿状态｜旧95撤销\n**USER直接反馈**：S21《第十三针》情感太假、视觉主题偏离音乐、Marcel定X、祖母定XN＋ZX；旧95仅历史自评，当前不合格。\n**V0.3《留给下一位的休止符》**：改善相识→多次互动→理解→边界冲突→尊重→自愿回应。没有把“弹得好/神圣感”直接当作爱情，不让偶遇两次就告白，Marcel不是万能解说工具。\n**未达到可确认95**：目前仍缺“手机多出一音为何只能由这封信造成”的严密触发检验，以及整片第三方观看情感可信度；评分标 PENDING_INDEPENDENT_REVIEW，禁止机械自评给95。\n下一审片：陌生观众能否不读十元说明仍感到双方逐步靠近？若不能，即便因果结构完整也退回剧本。"
+    },
+    {
+      "id": "m_music_layer_1",
+      "type": "text",
+      "x": 78400,
+      "y": 31300,
+      "width": 9450,
+      "height": 1260,
+      "color": "6",
+      "text": "# M22｜USER新B方向优先顺序\n男主Lucas NX＋Z，Z压过NX，十几年只顾音乐认可，生活及历年作品失序；女主Claire XN＋ZX。她用XN主动整理所有音乐稿件，补足男主Z所需的持续证据和可执行作品。随后男主NX通过音乐圈及珍贵旧书路线，帮助女主ZX跨过Marcel X控制的档案门禁；再进入祖母（USER本轮称外祖母）XN＋ZX与男主NX＋Z的跨代补位。全以音乐为主，前《第十三针》旧95作废。十元补位两组已锁；Z克NX、NX生X严格关系机制在L2仍未锁定，保留为USER剧情方向/候选。原A版不改。"
+    },
+    {
+      "id": "m_music_layer_2",
+      "type": "text",
+      "x": 78400,
+      "y": 32850,
+      "width": 4300,
+      "height": 1650,
+      "color": "3",
+      "text": "# M23｜第一补：女主XN ↔ 男主Z\nLucas为获得重要音乐认可持续创作十余年，录音/谱纸/版本混乱，无法重现一首完整代表作。Claire获他允许，按年份、主题动机、谱稿版本、对应录音整理全部作品成目录，保留失败稿，并标出每首下一步。Lucas自己确认哪些片段值得保留，选出可继续练习的一首，不被她替代作者权。旧变量：版本不可辨/无法推进；新变量：有完整可追溯档案/有明确终稿路线。经过多次合作与边界协商形成信任，不是一夜整理完便恋爱。"
+    },
+    {
+      "id": "m_music_layer_3",
+      "type": "text",
+      "x": 83500,
+      "y": 32850,
+      "width": 4300,
+      "height": 1650,
+      "color": "5",
+      "text": "# M24｜第二补：男主NX ↔ 女主ZX；Marcel X\nClaire发现祖母旧曲和Lucas某个版本有关，主动向Marcel索线索但被拒；Marcel掌握私人手稿的访问权，不是一般的坏人或贪财者。Lucas借助已有音乐圈关系找到Marcel一直寻觅的珍贵绝版谱集（USER提出昂贵的书一类），协助核对来源，并与Claire整理出的谱稿索引一同交给Marcel。Marcel在能保护私人原件的前提下自主同意有限阅览。Claire再亲自对比谱文，推动调查。拿掉她的ZX则找不到关键问题；拿掉他的NX则无法跨过独立调查的门禁。书籍支持Marcel现有X，但不能直接认定未锁定的NX生X已成立。"
+    },
+    {
+      "id": "m_music_layer_4",
+      "type": "text",
+      "x": 78400,
+      "y": 34900,
+      "width": 9450,
+      "height": 1360,
+      "color": "4",
+      "text": "# M25｜第二层跨代补：祖母XN＋ZX ↔ Lucas NX＋Z\n严格入场顺序：①Claire整理好男主十多年所有谱稿→②Lucas打通Marcel的有限查阅→③取得祖母原稿才能进入跨代故事。\n祖母XN多年谱稿、录音、手写修改形成可以复核的证据，让Lucas发现自己十多年反复写的旋律与她留下的音乐线索有关，给予他的Z可确证的对象。Lucas Z确认祖母音乐的真正来源与值得保留的内容，为长期归档提供一次阶段认可；Lucas NX通过既有演出渠道，让祖母ZX当年主动写出的音乐在当代得到实际奏响与正确署名。祖母当年失去机会的原因、演出方式均为AI候选，不预设其生死；官方只给神秘信轻微改变现在，单次音符变化规则还需单独验证。"
+    },
+    {
+      "id": "m_music_layer_5",
+      "type": "text",
+      "x": 78400,
+      "y": 36550,
+      "width": 9450,
+      "height": 1750,
+      "color": "3",
+      "text": "# M26｜横纵文字构图\n```text\n男主失衡 ─────────────────────────────────────────────────\nLucas Z强求音乐认可 ──→ 十多年谱稿乱 ────→ 无法持续有效推进\n                                             │\n                                             ↓\n第一层① ──────────────────────────────────────────────────\nClaire XN建立目录 ────→ Lucas确认代表作 ────→ 可复核、可续写\n                                             │\n                                             ↓\n第一层② ──────────────────────────────────────────────────\nClaire ZX直接求见 ────→ Marcel X拒交档案 ←──── Lucas NX寻珍本\n     │                                          │\n     └───────── 有限阅览资格 ←── Marcel决定核对 ┘\n                      │\n                      ↓\n第二层 ────────────────────────────────────────────────────\n祖母XN长年创作 ────→ Lucas Z确认来源、选择演奏内容\n祖母ZX主动留下音乐 ─→ Lucas NX用当代渠道实现公开演奏\n                      │\n                      ↓\n反馈：若无整理，Lucas难完成旧谱；若无Lucas渠道，女主无法查证；\n      若无前两层，祖母旧信无法得到可信当代回应。\n```\n【USER层】人物、先后顺序与音乐主轴；【H】具体旧书、查阅许可、历史旋律、公开演奏事件。"
+    },
+    {
+      "id": "m_music_layer_6",
+      "type": "text",
+      "x": 78400,
+      "y": 38600,
+      "width": 9450,
+      "height": 950,
+      "color": "6",
+      "text": "# M27｜验收与尚缺\n未到95分、未通过观众测试。必须先把两次男女主互补各写出一组真实场景和可见变量，不要提前写祖母大结局。待定：Lucas的Z究竟渴望哪位重要对象怎样确认他的音乐；Marcel为何拒绝、稀有书怎样帮助而不构成买通；祖母曲子与十多年男主谱稿的独特音型证据。感情必须由长期共同劳动、互相尊重音乐作者权、克服分歧形成，不能仅靠一次整理就告白。"
     }
   ],
   "edges": [
@@ -3370,6 +3430,48 @@
       "id": "m_music_e6",
       "fromNode": "m_rewrite_music_diagram",
       "toNode": "m_rewrite_music_score",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_music_layer_e0",
+      "fromNode": "m_rewrite_music_score",
+      "toNode": "m_music_layer_1",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_music_layer_e1",
+      "fromNode": "m_music_layer_1",
+      "toNode": "m_music_layer_2",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_music_layer_e2",
+      "fromNode": "m_music_layer_2",
+      "toNode": "m_music_layer_3",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_music_layer_e3",
+      "fromNode": "m_music_layer_3",
+      "toNode": "m_music_layer_4",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_music_layer_e4",
+      "fromNode": "m_music_layer_4",
+      "toNode": "m_music_layer_5",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_music_layer_e5",
+      "fromNode": "m_music_layer_5",
+      "toNode": "m_music_layer_6",
       "fromSide": "bottom",
       "toSide": "top"
     }
