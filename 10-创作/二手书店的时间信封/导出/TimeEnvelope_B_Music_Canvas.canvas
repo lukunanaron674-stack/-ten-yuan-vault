@@ -1,0 +1,420 @@
+{
+  "nodes": [
+    {
+      "id": "g_all",
+      "type": "group",
+      "label": "音乐双层互补｜可下载阅读导出（正本仍为项目总 Canvas）",
+      "x": 0,
+      "y": 0,
+      "width": 1500,
+      "height": 2730,
+      "color": "6"
+    },
+    {
+      "id": "root",
+      "type": "text",
+      "text": "# 时间信封 B方向｜先双人互补，再祖母音乐\n\n【USER】先解决男女主的两次互补，再进入祖母 XN＋ZX 与 Lucas NX＋Z 的跨代音乐互补。\n音乐人生失序 → 复原十多年乐谱 → 打开 Marcel 的档案门槛 → 发现跨代谱系。",
+      "x": 240,
+      "y": 85,
+      "width": 1020,
+      "height": 175,
+      "color": "6"
+    },
+    {
+      "id": "legend",
+      "type": "text",
+      "text": "# 图例与权力边界\n\n【USER】人物十元、音乐主题及互补顺序。 【H】绝版书、档案开放条件、具体旧曲等剧情候选。\nXN↔Z、ZX↔NX为锁定补位；Z克NX、NX生X的严格机制尚未锁定。旧95分无效。",
+      "x": 240,
+      "y": 275,
+      "width": 1020,
+      "height": 145,
+      "color": "1"
+    },
+    {
+      "id": "g_start",
+      "type": "group",
+      "label": "00｜失衡：Lucas 十多年音乐创作失去秩序",
+      "x": 75,
+      "y": 450,
+      "width": 1350,
+      "height": 355,
+      "color": "2"
+    },
+    {
+      "id": "s_lucas",
+      "type": "text",
+      "text": "# Lucas｜NX＋Z\n\n【USER】Z成为追求的中心；长期只顾写曲、追求音乐认可。\nZ压NX为剧情目标，但严格机制待验证。",
+      "x": 100,
+      "y": 515,
+      "width": 400,
+      "height": 235,
+      "color": "2"
+    },
+    {
+      "id": "s_chaos",
+      "type": "text",
+      "text": "# 十几年的乐谱｜混乱\n\n【USER】录音、乐谱、草稿与版本散乱，无法找到可靠终稿。\n可见损失：作品难以复原和继续创作。",
+      "x": 550,
+      "y": 515,
+      "width": 400,
+      "height": 235,
+      "color": "1"
+    },
+    {
+      "id": "s_claire",
+      "type": "text",
+      "text": "# Claire｜XN＋ZX\n\n【USER】XN负责跨时间整理与复核；ZX希望主动查清音乐信的线索。\n她看见的是作品丢失，不只是房间脏乱。",
+      "x": 1000,
+      "y": 515,
+      "width": 400,
+      "height": 235,
+      "color": "4"
+    },
+    {
+      "id": "g_pair1",
+      "type": "group",
+      "label": "01｜第一次互补：Claire XN ↔ Lucas Z",
+      "x": 75,
+      "y": 840,
+      "width": 660,
+      "height": 805,
+      "color": "5"
+    },
+    {
+      "id": "p1_heading",
+      "type": "text",
+      "text": "# 她先帮他找回自己的音乐\n\n【USER】补的是十几年创作的可复核证据，而不是替他做家务、替他作曲。",
+      "x": 100,
+      "y": 905,
+      "width": 610,
+      "height": 125,
+      "color": "5"
+    },
+    {
+      "id": "p1_claire",
+      "type": "text",
+      "text": "# Claire｜XN补入\n\n取得允许后按年份、主题、手稿版本、对应录音建立目录。\n保存废稿与缺页，反复核对，不代替Lucas作最终选择。",
+      "x": 100,
+      "y": 1050,
+      "width": 295,
+      "height": 315,
+      "color": "5"
+    },
+    {
+      "id": "p1_lucas",
+      "type": "text",
+      "text": "# Lucas｜Z反向补位\n\n自己试听、决定哪些版本值得继续，给整理过程提供筛选标准、确认节点与下一阶段目标。",
+      "x": 415,
+      "y": 1050,
+      "width": 295,
+      "height": 315,
+      "color": "3"
+    },
+    {
+      "id": "p1_result",
+      "type": "text",
+      "text": "# 结果A｜有序才可以继续前进\n\n原来：无法稳定找到或重现曲子。\n现在：有完整索引及可续写作品。\n感情：共同工作中积累信任，不是突然恋爱。",
+      "x": 100,
+      "y": 1385,
+      "width": 610,
+      "height": 205,
+      "color": "3"
+    },
+    {
+      "id": "g_pair2",
+      "type": "group",
+      "label": "02｜第二次互补：Lucas NX ↔ Claire ZX",
+      "x": 765,
+      "y": 840,
+      "width": 660,
+      "height": 805,
+      "color": "4"
+    },
+    {
+      "id": "p2_heading",
+      "type": "text",
+      "text": "# 他再帮她打开 Marcel 的音乐线索\n\n【USER】Claire直接请求失败；Lucas通过旧有音乐关系与渠道借力。Marcel是X，掌握原稿与查阅权。",
+      "x": 790,
+      "y": 905,
+      "width": 610,
+      "height": 125,
+      "color": "4"
+    },
+    {
+      "id": "p2_claire",
+      "type": "text",
+      "text": "# Claire｜ZX受阻\n\n整理稿件后发现与祖母旧曲相似的旋律。\n她主动请求Marcel查阅私藏原稿，却未获同意。",
+      "x": 790,
+      "y": 1050,
+      "width": 295,
+      "height": 315,
+      "color": "4"
+    },
+    {
+      "id": "p2_marcel",
+      "type": "text",
+      "text": "# Marcel｜X的门槛\n\n掌握受托保管的私人乐谱与档案。\n拒绝需有正当保管边界，不能写成单纯贪财或工具人。",
+      "x": 1105,
+      "y": 1050,
+      "width": 295,
+      "height": 315,
+      "color": "1"
+    },
+    {
+      "id": "p2_lucas",
+      "type": "text",
+      "text": "# Lucas｜NX借现成渠道\n\n经音乐圈关系借到Marcel需要的珍贵绝版谱集，用于核对来源。\n昂贵书籍是USER举例；具体渠道和交易均待定。",
+      "x": 790,
+      "y": 1385,
+      "width": 295,
+      "height": 205,
+      "color": "4"
+    },
+    {
+      "id": "p2_result",
+      "type": "text",
+      "text": "# 结果B｜有限查阅\n\nMarcel自行决定允许店内核对；Claire亲自对照。\n没有她的ZX就没有关键问题；没有他的NX则进不了档案。",
+      "x": 1105,
+      "y": 1385,
+      "width": 295,
+      "height": 205,
+      "color": "3"
+    },
+    {
+      "id": "g_ancestry",
+      "type": "group",
+      "label": "03｜跨代音乐互补：第一层完成后才进入",
+      "x": 75,
+      "y": 1690,
+      "width": 1350,
+      "height": 580,
+      "color": "3"
+    },
+    {
+      "id": "a_gate",
+      "type": "text",
+      "text": "# 入场门槛｜先完成两次双人互补\n\n① 十多年谱稿完成整理并由Lucas确认 → ② Marcel允许有限查阅 → ③ 对照祖母旧谱与Lucas的早年创作。",
+      "x": 110,
+      "y": 1755,
+      "width": 1280,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "a_grandma",
+      "type": "text",
+      "text": "# 祖母｜XN＋ZX\n\n【USER】多年音乐创作、记录与修改；另有主动表达的意愿。\n【待定】她昔日的真实处境、收件人及作品目的。",
+      "x": 100,
+      "y": 1895,
+      "width": 400,
+      "height": 305,
+      "color": "6"
+    },
+    {
+      "id": "a_evidence",
+      "type": "text",
+      "text": "# 音乐信｜跨代证据\n\n【H】一段可核验的旋律把祖母原谱与男主多年创作连接。\n官方魔法边界：只轻微改变当下，不重写过去。",
+      "x": 550,
+      "y": 1895,
+      "width": 400,
+      "height": 305,
+      "color": "2"
+    },
+    {
+      "id": "a_lucas",
+      "type": "text",
+      "text": "# Lucas｜Z确认、NX借力\n\nZ确认作品来源与重要性，给祖母长期积累一个清晰回应节点；NX借已有演奏渠道令乐曲被听见。",
+      "x": 1000,
+      "y": 1895,
+      "width": 400,
+      "height": 305,
+      "color": "3"
+    },
+    {
+      "id": "g_review",
+      "type": "group",
+      "label": "04｜回流与审核｜不冒充95分",
+      "x": 75,
+      "y": 2320,
+      "width": 1350,
+      "height": 340,
+      "color": "1"
+    },
+    {
+      "id": "r_counter",
+      "type": "text",
+      "text": "# 删除测试\n\n删Claire XN→音乐稿仍乱。\n删Lucas NX→查阅入口受阻。\n前两步没完成→跨代证据难以成立。",
+      "x": 100,
+      "y": 2380,
+      "width": 400,
+      "height": 225,
+      "color": "1"
+    },
+    {
+      "id": "r_uncertain",
+      "type": "text",
+      "text": "# 待解决\n\nLucas最需要谁的认可？Marcel为何真正需要那本书？跨代音型的独特证据是什么？",
+      "x": 550,
+      "y": 2380,
+      "width": 400,
+      "height": 225,
+      "color": "1"
+    },
+    {
+      "id": "r_status",
+      "type": "text",
+      "text": "# 当前状态\n\n【USER】顺序已明确。\n【H】具体剧情未冻结；无观众盲测或H3成片。\n这是阅读导出，不代替唯一正本。",
+      "x": 1000,
+      "y": 2380,
+      "width": 400,
+      "height": 225,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "s_lucas",
+      "toNode": "s_chaos",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "长期失序"
+    },
+    {
+      "id": "e1",
+      "fromNode": "s_chaos",
+      "toNode": "p1_claire",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "需要整理"
+    },
+    {
+      "id": "e2",
+      "fromNode": "s_claire",
+      "toNode": "p1_claire",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "XN参与"
+    },
+    {
+      "id": "e3",
+      "fromNode": "p1_claire",
+      "toNode": "p1_lucas",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "反复核对"
+    },
+    {
+      "id": "e4",
+      "fromNode": "p1_lucas",
+      "toNode": "p1_result",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "确认收束"
+    },
+    {
+      "id": "e5",
+      "fromNode": "p1_result",
+      "toNode": "p2_claire",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "发现旧曲"
+    },
+    {
+      "id": "e6",
+      "fromNode": "p2_claire",
+      "toNode": "p2_marcel",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "请求被拒"
+    },
+    {
+      "id": "e7",
+      "fromNode": "p2_claire",
+      "toNode": "p2_lucas",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "需要NX"
+    },
+    {
+      "id": "e8",
+      "fromNode": "p2_lucas",
+      "toNode": "p2_marcel",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "label": "珍本查证"
+    },
+    {
+      "id": "e9",
+      "fromNode": "p2_marcel",
+      "toNode": "p2_result",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "有限授权"
+    },
+    {
+      "id": "e10",
+      "fromNode": "p2_lucas",
+      "toNode": "p2_result",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "打开通道"
+    },
+    {
+      "id": "e11",
+      "fromNode": "p2_result",
+      "toNode": "a_gate",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "两补成立"
+    },
+    {
+      "id": "e12",
+      "fromNode": "a_gate",
+      "toNode": "a_evidence",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "开始比对"
+    },
+    {
+      "id": "e13",
+      "fromNode": "a_grandma",
+      "toNode": "a_evidence",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "原稿证据"
+    },
+    {
+      "id": "e14",
+      "fromNode": "a_evidence",
+      "toNode": "a_lucas",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "确认奏响"
+    },
+    {
+      "id": "e15",
+      "fromNode": "a_lucas",
+      "toNode": "r_counter",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "检验"
+    },
+    {
+      "id": "e16",
+      "fromNode": "r_counter",
+      "toNode": "r_uncertain",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "未判"
+    },
+    {
+      "id": "e17",
+      "fromNode": "r_uncertain",
+      "toNode": "r_status",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "待审"
+    }
+  ]
+}
