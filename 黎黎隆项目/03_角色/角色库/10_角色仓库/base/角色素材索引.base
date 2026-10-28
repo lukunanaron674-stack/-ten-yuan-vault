@@ -1,0 +1,45 @@
+filters:
+  and:
+    - 'file.inFolder("黎黎隆项目/03_角色/角色库/10_角色仓库")'
+    - 'file.hasProperty("asset_id")'
+views:
+  - type: table
+    name: 全部资产
+    order:
+      - file.name
+      - asset_id
+      - candidate_id
+      - character_id
+      - asset_type
+      - tier
+      - region
+      - organization
+      - md_path
+      - image_path
+      - source_issue
+      - source_run
+      - sha256
+      - review_state
+      - user_decision
+      - main_reference
+      - rule_version
+      - last_updated
+      - integrity_state
+      - provenance_state
+      - source_refs
+      - evidence_ids
+      - user_evidence_state
+      - history_state
+      - supersedes
+      - superseded_by
+      - first_seen
+      - last_seen
+      - parent_asset_id
+      - source_avatar_id
+      - version
+      - generation_method
+      - layout
+      - reviewer
+      - notes
+      - record_class
+      - related_candidate_ids

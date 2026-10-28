@@ -1,0 +1,33 @@
+﻿{
+	"nodes":[
+		{"id":"title","type":"text","text":"🎬 画面探索｜卡3-3A｜矮胖眼睛右看（16:9）","x":-150,"y":-700,"width":420,"height":50,"color":"6"},
+{"id":"hub","type":"text","text":"🎬 画面描述词 ×10｜卡3-3A\n\n一句话：矮胖士兵由左缓慢转右、铁笼光影掠脸，16:9。\n\n📄 [[方/08_探索/第三幕/卡3-3A_画面探索.md|完整×10与评分]]","x":-220,"y":-460,"width":460,"height":160,"color":"5"},
+{"id":"p1","type":"text","text":"第1名｜9.6｜zx6 z5 xn4 n2｜铁栏居中偏左，矮胖侧脸占右，由左转右，栅影掠脸，视线锁右。✅ 已选用","x":496,"y":116,"width":360,"height":130,"color":"4"},
+{"id":"p2","type":"text","text":"第2名｜9.2｜z6 zx5 nx4 xn3｜铁栏影斜切光带扫脸，镜头固定，转头一次完成。","x":465,"y":307,"width":360,"height":130,"color":"4"},
+{"id":"p3","type":"text","text":"第3名｜8.9｜zx7 xn4 x4 n2｜低机位微仰，栅影压脸，转头小但眼神明确。","x":379,"y":494,"width":360,"height":130,"color":"3"},
+{"id":"p4","type":"text","text":"第4名｜8.7｜zx5 z5 xn5 nz2｜脸眼特写：栅影掠过时瞳孔右移，再缓慢转头。","x":238,"y":658,"width":360,"height":130,"color":"3"},
+{"id":"p5","type":"text","text":"第5名｜8.5｜z6 xn5 nx3 x3｜走廊纵深，矮胖半身右前，左后虚化方写稿身影。","x":48,"y":785,"width":360,"height":130,"color":"3"},
+{"id":"p6","type":"text","text":"第6名｜8.2｜zx6 z4 xn4 n3｜框式构图，横档切脸成明暗两段，转头一次。","x":-180,"y":860,"width":360,"height":130,"color":"3"},
+{"id":"p7","type":"text","text":"第7名｜8.0｜xn6 zx4 z4 n2｜帽檐压低，光影掠过只露一眼锁右，冷感强。","x":-431,"y":872,"width":360,"height":130,"color":"1"},
+{"id":"p8","type":"text","text":"第8名｜7.7｜z5 zx5 x4 nx3｜转头带动肩部轻移，更生动但动作略多。","x":-687,"y":814,"width":360,"height":130,"color":"1"},
+{"id":"p9","type":"text","text":"第9名｜7.3｜nx5 z5 xn4 xz2｜先快左看再慢转右，节奏反差但显鬼祟。","x":-930,"y":685,"width":360,"height":130,"color":"1"},
+{"id":"p10","type":"text","text":"第10名｜6.8｜x5 z5 zx4 xn3｜快速甩头转右，冲击强但变脸风险高。","x":-1137,"y":487,"width":360,"height":130,"color":"1"}
+	],
+	"edges":[
+		{"id":"e-title-hub","fromNode":"title","fromSide":"bottom","toNode":"hub","toSide":"top"},
+{"id":"e-hub-p1","fromNode":"hub","fromSide":"bottom","toNode":"p1","toSide":"top"},
+{"id":"e-hub-p2","fromNode":"hub","fromSide":"bottom","toNode":"p2","toSide":"top"},
+{"id":"e-hub-p3","fromNode":"hub","fromSide":"bottom","toNode":"p3","toSide":"top"},
+{"id":"e-hub-p4","fromNode":"hub","fromSide":"bottom","toNode":"p4","toSide":"top"},
+{"id":"e-hub-p5","fromNode":"hub","fromSide":"bottom","toNode":"p5","toSide":"top"},
+{"id":"e-hub-p6","fromNode":"hub","fromSide":"bottom","toNode":"p6","toSide":"top"},
+{"id":"e-hub-p7","fromNode":"hub","fromSide":"bottom","toNode":"p7","toSide":"top"},
+{"id":"e-hub-p8","fromNode":"hub","fromSide":"bottom","toNode":"p8","toSide":"top"},
+{"id":"e-hub-p9","fromNode":"hub","fromSide":"bottom","toNode":"p9","toSide":"top"},
+{"id":"e-hub-p10","fromNode":"hub","fromSide":"bottom","toNode":"p10","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-2026-08-15",
+		"frontmatter":{}
+	}
+}

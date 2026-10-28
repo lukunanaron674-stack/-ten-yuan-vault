@@ -19,7 +19,10 @@
 		{"id":"verify","type":"text","x":640,"y":4520,"width":920,"height":140,"text":"## 验证｜evidence_count vs counterexample_count\n不得 XN 化：单次感觉 / 反馈矛盾 / 只能整体感觉 / 规则一写就僵 / token 成本 > 收益"},
 		{"id":"xn_lock","type":"text","x":640,"y":4720,"width":920,"height":130,"text":"## XN_LOCK｜正式规则冻结\n回写对应 Z 的 local_xn_set；L1 高频审美 → L2 机械预审 → L3 仅 Canon 级作者裁决","color":"5"},
 		{"id":"base","type":"text","x":640,"y":4910,"width":920,"height":200,"text":"## Z6｜Obsidian Base｜实验对象状态正本\nZ等级 / XN等级 / NX数量 / 素材量 / 主参考 / 审核状态 / 可实验性\nInner 与 Base 使用同一 asset_id 引用","color":"4"},
-		{"id":"gap_next","type":"text","x":640,"y":5170,"width":920,"height":150,"text":"## 缺口识别 → 形成新的 Z\nBase 回写后按缺口生成下一 Z（不为 Z1–Z6 另开六张 Linear 工单）","color":"6"}
+		{"id":"gap_next","type":"text","x":640,"y":5170,"width":920,"height":150,"text":"## 缺口识别 → 形成新的 Z\nBase 回写后按缺口生成下一 Z（不为 Z1–Z6 另开六张 Linear 工单）","color":"6"},
+		{"id":"role_warehouse_index_20261008","type":"file","file":"黎黎隆项目/03_角色/角色库/10_角色仓库/00_角色仓库总表.md","x":1660,"y":5430,"width":280,"height":190},
+		{"id":"role_warehouse_entry_20261008","type":"file","file":"黎黎隆项目/03_角色/角色库/10_角色仓库/角色仓库入口.md","x":1980,"y":5430,"width":280,"height":190},
+		{"id":"role_warehouse_base_20261008","type":"file","file":"黎黎隆项目/20_Agent系统/07_角色代理/实验对象状态.base","x":1980,"y":5670,"width":280,"height":190}
 	],
 	"edges":[
 		{"id":"e_root_l1","fromNode":"az_root","fromSide":"bottom","toNode":"z_l1","toSide":"top","label":"REQUIRED_COMPONENT"},
@@ -44,10 +47,9 @@
 		{"id":"e_base_gap","fromNode":"base","fromSide":"bottom","toNode":"gap_next","toSide":"top"},
 		{"id":"e_gap_l1","fromNode":"gap_next","fromSide":"left","toNode":"z_l1","toSide":"bottom","label":"回到对应Z"},
 		{"id":"e_gap_l2","fromNode":"gap_next","fromSide":"top","toNode":"z_l2","toSide":"bottom","label":"回到对应Z"},
-		{"id":"e_gap_l3","fromNode":"gap_next","fromSide":"right","toNode":"z_l3","toSide":"bottom","label":"回到对应Z"}
-	],
-	"metadata":{
-		"version":"1.0-1.0",
-		"frontmatter":{}
-	}
+		{"id":"e_gap_l3","fromNode":"gap_next","fromSide":"right","toNode":"z_l3","toSide":"bottom","label":"回到对应Z"},
+		{"id":"e_root_role_warehouse_20261008","fromNode":"az_root","fromSide":"right","toNode":"role_warehouse_index_20261008","toSide":"left","label":"ROLE_WAREHOUSE"},
+		{"id":"e_warehouse_index_entry_20261008","fromNode":"role_warehouse_index_20261008","fromSide":"right","toNode":"role_warehouse_entry_20261008","toSide":"left","label":"仓库入口"},
+		{"id":"e_warehouse_entry_base_20261008","fromNode":"role_warehouse_entry_20261008","fromSide":"bottom","toNode":"role_warehouse_base_20261008","toSide":"top","label":"Base 链接"}
+	]
 }

@@ -1,0 +1,49 @@
+{
+	"version":"0.2",
+	"nodes":[
+		{"id":"core","type":"text","text":"# 世界观总核\n## 三色力量体系\n\n**粉** `#855D8F` 诡异魔法·不争霸\n**青** `#69D4CE` 生物能量·接口社会\n**红** `#913840` 自由意志·出走者\n\n黑 `#142A34` 骨/底 ｜ 白 `#CDE7E6` 雾/中立\n\n> 锁定句：红色反对的不是改造，\n> 而是别人替你决定你的身体","x":-200,"y":-140,"width":400,"height":280,"color":"#913840"},
+		{"id":"g0","type":"text","text":"**G0 黑金引爆**\n巨物尸骸忽然可大量激发\n青色文明一夜爆发\n分两枝：赛博资本 ∥ 身体文明","x":360,"y":-380,"width":300,"height":160,"color":"#0F6E56"},
+		{"id":"g1","type":"text","text":"**G1 身体文明**\n修身体 = 做装备\n外显器官是青长熟的样子","x":740,"y":-380,"width":300,"height":140},
+		{"id":"g2","type":"text","text":"**G2 返身断点**\n接口公共化\n个体「变回自己」的路径断裂\n青走到深处的代价","x":1120,"y":-380,"width":300,"height":160,"color":"#0F6E56"},
+		{"id":"g3","type":"text","text":"**G3 夺路 × 回路**\n红色者出海\n大航海时代开幕","x":1500,"y":-380,"width":280,"height":140,"color":"#913840"},
+		{"id":"g48","type":"text","text":"**G4-G8 枝干 🔶**\nG4 巨尾=基因金属探索器官\nG5 菌林活膜=粉生态面\nG6 四纪元=三色沉淀史\nG7 职业谱系=三色分工\nG8 黎黎隆位置：远境/雾封/史前","x":1140,"y":-160,"width":320,"height":220},
+		{"id":"o4","type":"text","text":"**O4 自由意志船队**\n无中央聚合 · 离船权\n合作必须允许退出","x":-840,"y":-440,"width":300,"height":140,"color":"#913840"},
+		{"id":"o3","type":"text","text":"**O3 审判之庭**\n裁决者网络 · 通告板\n祖源 = 史前裁决派","x":-840,"y":-280,"width":300,"height":140,"color":"#913840"},
+		{"id":"o2","type":"text","text":"**O2 佛教**\n苦修抑制红色能量\n绝植入 = 僧人专属\n外设不过夜","x":-840,"y":-120,"width":300,"height":140,"color":"#913840"},
+		{"id":"fen","type":"text","text":"## 粉｜古老派\n诡异魔法 · 结晶 · 天空之骨\n菌林 / 活膜 / 异种共生\n不争霸、只交易\n被自己的诡异魔法克制","x":-220,"y":-520,"width":400,"height":200,"color":"#855D8F"},
+		{"id":"heibai","type":"text","text":"## 黑白｜中性位\n黑 `#142A34`：世界底 · 骨 · 暗面\n白 `#CDE7E6`：雾 · 中立 · 未觉醒\n非三能量角色/事物兜底","x":-200,"y":240,"width":400,"height":160,"color":"#444441"},
+		{"id":"chain","type":"text","text":"**资源链（定版）**\n魔法生物遗骸 → 黑金\n→ 科技激发 → 青色能量\n→ 基因金属 / 基因钢铁","x":360,"y":120,"width":300,"height":160,"color":"#444441"},
+		{"id":"voyage","type":"text","text":"**大航海时代**\n宜居地很少 → 冒险者经济\n三类文明并存交易牵制","x":360,"y":-120,"width":300,"height":140},
+		{"id":"conflict","type":"text","text":"**冲突轴**\n青红对立 = 主旋律\n钢铁教派 vs 佛教 = 主要矛盾\n夺路 × 回返（大航海只是战场之一）\n原型场 = R2 遗骨之地","x":-840,"y":80,"width":300,"height":200,"color":"#913840"},
+		{"id":"regions","type":"text","text":"**地域 R 编号（冻结）**\nR1 主流文明区（青）\nR2 遗骨之地 🔶命名三选一\nR3 黑金渗出海域\nR4 巨物迁徙主航线\nR5 自由锚港（三阵营碰撞）\nR6 粉色生态带","x":-200,"y":480,"width":400,"height":220},
+		{"id":"five","type":"text","text":"**五色合成视觉体系**\nP00 五色 = 母色（像三原色）\n一次 / 二次合成出所有颜色\n墨青/淡青灰双身份：\n中性母色 + 黑白位\n验收问：这颜色是哪两个母色合的？","x":740,"y":120,"width":320,"height":200,"color":"#855D8F"},
+		{"id":"josei","type":"text","text":"**巨物生态（硬约束）**\n世界绝大部分是巨物生态\n天上巨鲸 · 人类宜居地很少\n海面永远大于陆地","x":-840,"y":440,"width":300,"height":160,"color":"#444441"},
+		{"id":"3b900cfa08ae4ca3","type":"file","file":"黎黎隆项目/04_场景/01_五色视觉系统/R5_锚港/SC-02_自由锚港_四宫格探索_v2_暗红主导.png","x":1840,"y":-380,"width":300,"height":200,"color":"#913840"},
+		{"id":"43819c9230c04d86","type":"file","file":"黎黎隆项目/04_场景/01_五色视觉系统/R5_锚港/SC-02_自由锚港_四宫格探索_v3_暗红灰紫过渡.png","x":2170,"y":-380,"width":300,"height":200,"color":"#855D8F"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"core","toNode":"g0","label":"引爆","fromSide":"right","toSide":"bottom"},
+		{"id":"e2","fromNode":"g0","toNode":"g1","fromSide":"right","toSide":"left"},
+		{"id":"e3","fromNode":"g1","toNode":"g2","fromSide":"right","toSide":"left"},
+		{"id":"e4","fromNode":"g2","toNode":"g3","fromSide":"right","toSide":"left"},
+		{"id":"e5","fromNode":"g2","toNode":"g48","fromSide":"bottom","toSide":"top"},
+		{"id":"e6","fromNode":"core","toNode":"o4","color":"#913840","label":"红","fromSide":"left","toSide":"bottom"},
+		{"id":"e7","fromNode":"core","toNode":"o3","color":"#913840","fromSide":"left","toSide":"right"},
+		{"id":"e8","fromNode":"core","toNode":"o2","color":"#913840","fromSide":"left","toSide":"right"},
+		{"id":"e9","fromNode":"core","toNode":"fen","color":"#855D8F","label":"粉","fromSide":"top","toSide":"bottom"},
+		{"id":"e10","fromNode":"core","toNode":"heibai","color":"#444441","label":"黑白","fromSide":"bottom","toSide":"top"},
+		{"id":"e11","fromNode":"core","toNode":"chain","fromSide":"right","toSide":"left"},
+		{"id":"e12","fromNode":"core","toNode":"voyage","fromSide":"right","toSide":"left"},
+		{"id":"e13","fromNode":"core","toNode":"conflict","color":"#913840","label":"冲突轴","fromSide":"left","toSide":"right"},
+		{"id":"e14","fromNode":"core","toNode":"regions","fromSide":"bottom","toSide":"top"},
+		{"id":"e15","fromNode":"core","toNode":"five","color":"#855D8F","label":"视觉","fromSide":"right","toSide":"left"},
+		{"id":"e16","fromNode":"core","toNode":"josei","label":"硬约束","fromSide":"bottom","toSide":"top"},
+		{"id":"e17","fromNode":"g3","toNode":"conflict","label":"长出冲突","fromSide":"left","toSide":"right"},
+		{"id":"17d1b71a342c49c6","fromNode":"g3","toNode":"3b900cfa08ae4ca3","color":"#913840","label":"R5 场景候选｜暗红主导","fromSide":"right","toSide":"left"},
+		{"id":"6c6360976e2a4e70","fromNode":"g3","toNode":"43819c9230c04d86","color":"#855D8F","label":"R5 场景候选｜红-灰紫过渡","fromSide":"right","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

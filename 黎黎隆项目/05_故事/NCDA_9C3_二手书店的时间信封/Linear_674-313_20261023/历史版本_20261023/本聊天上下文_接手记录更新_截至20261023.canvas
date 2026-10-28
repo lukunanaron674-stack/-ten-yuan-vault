@@ -1,0 +1,51 @@
+{
+	"nodes":[
+		{"id":"goal","type":"file","file":"00_先读我.md","x":360,"y":-650,"width":1060,"height":400},
+		{"id":"sources","type":"file","file":"01_可见对话与来源.md","x":0,"y":0,"width":600,"height":280},
+		{"id":"scope","type":"file","file":"02_四故事范围与判断.md","x":680,"y":0,"width":600,"height":280},
+		{"id":"style","type":"file","file":"03_风格与版本.md","x":1360,"y":0,"width":600,"height":280},
+		{"id":"routing","type":"file","file":"05_Linear问题系统核对.md","x":2040,"y":0,"width":600,"height":280},
+		{"id":"story5","type":"file","file":"故事/5_二手书店的时间信封.md","x":0,"y":420,"width":600,"height":260},
+		{"id":"story3","type":"file","file":"故事/3_咖啡师与玫瑰.md","x":680,"y":420,"width":600,"height":260},
+		{"id":"story9","type":"file","file":"故事/9_超市真爱扫描.md","x":1360,"y":420,"width":600,"height":260},
+		{"id":"story8","type":"file","file":"故事/8_我们的声音在回响.md","x":2040,"y":420,"width":600,"height":260},
+		{"id":"art0","type":"file","file":"图像/书店/01_Claire_22岁_9比16四宫格_方志敏风格V4.png","x":0,"y":770,"width":600,"height":1065},
+		{"id":"art1","type":"file","file":"图像/书店/02_Lucas_26岁_9比16四宫格_方志敏风格V4.png","x":0,"y":1910,"width":600,"height":1065},
+		{"id":"art2","type":"file","file":"图像/书店/03_Marcel_60岁_9比16四宫格_方志敏风格V2.png","x":0,"y":3050,"width":600,"height":1065},
+		{"id":"art3","type":"file","file":"图像/其他故事/02_咖啡师与玫瑰_双人角色卡_方项目风格.png","x":680,"y":770,"width":600,"height":1065},
+		{"id":"art4","type":"file","file":"图像/其他故事/03_超市真爱扫描_双人角色卡_方项目风格.png","x":1360,"y":770,"width":600,"height":1065},
+		{"id":"art5","type":"file","file":"图像/其他故事/04_我们的声音在回响_双人角色卡_方项目风格.png","x":2040,"y":770,"width":600,"height":1065},
+		{"id":"q0","type":"file","file":"问题/Q1_范围与身份.md","x":0,"y":4300,"width":600,"height":430},
+		{"id":"q1","type":"file","file":"问题/Q2_风格与审美.md","x":680,"y":4300,"width":600,"height":430},
+		{"id":"q2","type":"file","file":"问题/Q3_角色资产格式.md","x":1360,"y":4300,"width":600,"height":430},
+		{"id":"q3","type":"file","file":"问题/Q4_回传与上下文.md","x":2040,"y":4300,"width":600,"height":430},
+		{"id":"prompts","type":"file","file":"04_提示词与执行证据.md","x":680,"y":2100,"width":600,"height":600},
+		{"text":"# Linear 674-313｜接手记录｜2026-10-23\n\n工单状态：In Progress / Urgent。已将本聊天接入该工单上下文。\n\n当前事实：本聊天恢复包归档完成；四故事角色候选仍待用户审核；R1《方志敏》逐镜音画核验仍为 PARTIAL。\n\n下一步按工单节奏推进 R2：90 秒片花节拍、12–18 镜分镜与临时旁白。R3 角色外观冻结须等待用户审阅，不把生成候选写成 PASS。\n\n边界：本次仅更新恢复包 Canvas 导航，不改变 Linear 工单状态，也不宣称 R2 或角色审核已完成。","id":"a3157db680f21c4e","type":"text","height":420,"width":600,"color":"2","y":2100,"x":2040}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"goal","fromSide":"bottom","toNode":"sources","toSide":"top","label":"evidence"},
+		{"id":"e2","fromNode":"goal","fromSide":"bottom","toNode":"scope","toSide":"top","label":"scope"},
+		{"id":"e3","fromNode":"goal","fromSide":"bottom","toNode":"style","toSide":"top","label":"constraints"},
+		{"id":"e4","fromNode":"goal","fromSide":"bottom","toNode":"routing","toSide":"top","label":"existing_issue"},
+		{"id":"e5","fromNode":"scope","fromSide":"bottom","toNode":"story5","toSide":"top","label":"covers"},
+		{"id":"e6","fromNode":"scope","fromSide":"bottom","toNode":"story3","toSide":"top","label":"covers"},
+		{"id":"e7","fromNode":"scope","fromSide":"bottom","toNode":"story9","toSide":"top","label":"covers"},
+		{"id":"e8","fromNode":"scope","fromSide":"bottom","toNode":"story8","toSide":"top","label":"covers"},
+		{"id":"e9","fromNode":"story5","fromSide":"bottom","toNode":"art0","toSide":"top","label":"generated_candidate"},
+		{"id":"e10","fromNode":"story5","fromSide":"bottom","toNode":"art1","toSide":"top","label":"generated_candidate"},
+		{"id":"e11","fromNode":"story5","fromSide":"bottom","toNode":"art2","toSide":"top","label":"generated_candidate"},
+		{"id":"e12","fromNode":"story3","fromSide":"bottom","toNode":"art3","toSide":"top","label":"generated_candidate"},
+		{"id":"e13","fromNode":"story9","fromSide":"bottom","toNode":"art4","toSide":"top","label":"generated_candidate"},
+		{"id":"e14","fromNode":"story8","fromSide":"bottom","toNode":"art5","toSide":"top","label":"generated_candidate"},
+		{"id":"e15","fromNode":"routing","fromSide":"bottom","toNode":"q0","toSide":"top","label":"tracks_gap"},
+		{"id":"e16","fromNode":"routing","fromSide":"bottom","toNode":"q1","toSide":"top","label":"tracks_gap"},
+		{"id":"e17","fromNode":"routing","fromSide":"bottom","toNode":"q2","toSide":"top","label":"tracks_gap"},
+		{"id":"e18","fromNode":"routing","fromSide":"bottom","toNode":"q3","toSide":"top","label":"tracks_gap"},
+		{"id":"e19","fromNode":"style","fromSide":"bottom","toNode":"prompts","toSide":"top","label":"execution_evidence"},
+		{"id":"d9f8c7b6a5043210","toSide":"left","toEnd":"arrow","fromSide":"right","toNode":"a3157db680f21c4e","fromNode":"goal","label":"current handoff"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

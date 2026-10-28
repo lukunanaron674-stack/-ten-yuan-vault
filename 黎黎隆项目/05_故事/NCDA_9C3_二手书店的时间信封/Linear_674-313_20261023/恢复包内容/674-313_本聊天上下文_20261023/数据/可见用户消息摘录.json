@@ -1,0 +1,56 @@
+[
+  {
+    "source_locator": "U01",
+    "excerpt": "接linear313画角色",
+    "domain": "角色生产",
+    "normalized_fact": "本框初始目标，指向既有工单313。"
+  },
+  {
+    "source_locator": "U02",
+    "excerpt": "脸这个画",
+    "domain": "视觉参考",
+    "normalized_fact": "用户随附写实男女肖像；后续风格要求优先。"
+  },
+  {
+    "source_locator": "U03",
+    "excerpt": "方志敏风格化的脸啊",
+    "domain": "风格约束",
+    "normalized_fact": "明确要求方项目风格化脸部。"
+  },
+  {
+    "source_locator": "U04",
+    "excerpt": "你看看那15个剧本 能看得到不 哪个适合方志敏风格",
+    "domain": "选题比较",
+    "normalized_fact": "要求核实可见性与适配；本次没有15篇原文逐字导出。"
+  },
+  {
+    "source_locator": "U05",
+    "excerpt": "1",
+    "domain": "歧义记录",
+    "normalized_fact": "助手曾解释为第1号梦境故事；没有足够证据冻结这一选择。"
+  },
+  {
+    "source_locator": "U06",
+    "excerpt": "好 都用方项目角色风格画画这些角色",
+    "domain": "范围初次确认",
+    "normalized_fact": "助手当时仅执行书店三位角色，后续用户补表明确四故事范围。"
+  },
+  {
+    "source_locator": "U07",
+    "excerpt": "排名表：#5二手书店的时间信封；#3咖啡师与玫瑰；#9超市真爱扫描；#8我们的声音在回响",
+    "domain": "范围补充",
+    "normalized_fact": "表格内容另存排序记录。此句为摘录性归并，不是整张表逐字转录。"
+  },
+  {
+    "source_locator": "U08",
+    "excerpt": "都用方项目角色风格画画这些角色",
+    "domain": "范围最终明确",
+    "normalized_fact": "用户连同四故事表格再次提出画图要求，覆盖四部的已识别核心角色。"
+  },
+  {
+    "source_locator": "U09",
+    "excerpt": "建立canvas 把这个聊天上下文数据都整理上传 看看问题系统linear",
+    "domain": "当前任务",
+    "normalized_fact": "建立可点击上下文导航、证据与问题状态、上传并回写现有Linear。"
+  }
+]

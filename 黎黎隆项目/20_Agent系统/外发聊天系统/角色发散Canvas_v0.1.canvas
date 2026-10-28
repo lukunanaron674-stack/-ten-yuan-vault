@@ -1,0 +1,32 @@
+{
+	"version":"0.2",
+	"nodes":[
+		{"id":"core","type":"text","text":"# 角色发散总核\n## 角色五桶\n\n粉 / 青 / 红 / 黑 / 白\n挂三能量，或进黑白兜底\n\n编号：ZY-（自由）｜黎黎隆编号不混用\n头像=视觉参考，不当身份证明","x":-200,"y":-130,"width":400,"height":260,"color":"#501313"},
+		{"id":"hong","type":"text","text":"## 红｜出走者\n**完整卡**\nZY-02 航迹手（弱而稳·航向不让渡）✅\nZY-04 苦修僧人（抑·压场）✅\n空位：ZY-01 船长型 / ZY-03 裁决者","x":420,"y":-440,"width":360,"height":200,"color":"#913840"},
+		{"id":"hongCh","type":"text","text":"**CH 红桶**\n澈（能量生命守护者）\n黎黎隆（夺路尾/锚序锁身）\n小和尚（苦修原型）\n冒险者","x":860,"y":-440,"width":300,"height":180},
+		{"id":"hongList","type":"text","text":"**红桶名单**\nS09 赤罩主角 · S11 · S12 · S06\n60池9人：05 25 26 29 31 44 47 56 60\n折层递送者等","x":860,"y":-220,"width":300,"height":160},
+		{"id":"fen","type":"text","text":"## 粉｜古老派\n**CH**\n逃票魔法学徒（活体紫帽）\n奇美拉（翼臂混合体）\n潮膜采集员（活体膜披片）\n**60池10人**\n10 22 24 30 38 48 50 52 55 58","x":-840,"y":-440,"width":340,"height":260,"color":"#855D8F"},
+		{"id":"qing","type":"text","text":"## 青｜接口社会\n**CH**\n大叔（单侧巨臂）· 裂缝听者\n旧轨引路员 · 壳缝检修员\n**60池22人**（维护/记录/门站）\nS17 S10 S19 S04 S08 S16","x":-840,"y":140,"width":340,"height":240,"color":"#0F6E56"},
+		{"id":"hei","type":"text","text":"## 黑｜骨与暗面\nCH：洛维恩（贵族小领主）\n60池5人：17 19 23 49 57\n旧物集市 / 遗骸拾材","x":-60,"y":440,"width":340,"height":180,"color":"#142A34"},
+		{"id":"bai","type":"text","text":"## 白｜雾与中立\nCH：夜渡摆渡员 / NPC-01 披肩居民\n60池12人：01 08 12 14 16 18 20 21 27 28 36 45\nS01 S02 S03 S05 S07 S13 S14 S15 S18","x":420,"y":440,"width":400,"height":220,"color":"#CDE7E6"},
+		{"id":"rule","type":"text","text":"**分桶纪律**\n挂三能量，或进黑白兜底\n新角色必答：哪种能量长出来的（G链）\n黎黎隆素材分桶=推演🔶 不回写正本\nCH 卡原文不改写","x":-840,"y":440,"width":340,"height":200,"color":"#1D9E75"},
+		{"id":"stats","type":"text","text":"**分桶统计（风险）**\n青 37 · 白 25 · 红 18 · 粉 8 · 黑 6\n⚠️ 青白过重 粉红偏轻\n→ 新角色优先补粉 / 红\n60池红桶=推演最弱一批 🔶","x":-420,"y":-440,"width":340,"height":180,"color":"#913840"},
+		{"id":"guiwei","type":"text","text":"**外发回执**\n聊完产出带【角色·X桶】标记\n→ 归位卡路由 → 本 Canvas\n对应桶加节点","x":420,"y":-160,"width":340,"height":160,"color":"#1D9E75"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"core","toNode":"hong","color":"#913840","label":"红","fromSide":"right","toSide":"bottom"},
+		{"id":"e2","fromNode":"core","toNode":"fen","color":"#855D8F","label":"粉","fromSide":"left","toSide":"right"},
+		{"id":"e3","fromNode":"core","toNode":"qing","color":"#0F6E56","label":"青","fromSide":"left","toSide":"right"},
+		{"id":"e4","fromNode":"core","toNode":"hei","color":"#142A34","label":"黑","fromSide":"bottom","toSide":"top"},
+		{"id":"e5","fromNode":"core","toNode":"bai","color":"#CDE7E6","label":"白","fromSide":"bottom","toSide":"top"},
+		{"id":"e6","fromNode":"hong","toNode":"hongCh","fromSide":"right","toSide":"left"},
+		{"id":"e7","fromNode":"hong","toNode":"hongList","fromSide":"right","toSide":"left"},
+		{"id":"e8","fromNode":"core","toNode":"rule","color":"#1D9E75","label":"纪律","fromSide":"bottom","toSide":"top"},
+		{"id":"e9","fromNode":"core","toNode":"stats","color":"#913840","label":"风险","fromSide":"top","toSide":"bottom"},
+		{"id":"e10","fromNode":"core","toNode":"guiwei","color":"#1D9E75","label":"回流","fromSide":"right","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

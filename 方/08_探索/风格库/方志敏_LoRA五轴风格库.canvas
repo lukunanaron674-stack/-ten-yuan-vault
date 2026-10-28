@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{"id":"a1f0c3d9e7b24681","type":"group","x":-80,"y":-80,"width":2940,"height":1740,"label":"方志敏｜LoRA 五轴风格库｜探索候选","color":"6"},
+		{"id":"b2e1d4c8f6a35792","type":"text","x":0,"y":0,"width":620,"height":300,"text":"# 五轴轮换\n\n每小时只改变一个视觉轴；同一个 LoRA 连续跑完五轴后切换。\n\n状态：候选 / 待人工比较\n闸门：ComfyUI 忙或 GPU ≥85°C 时跳过。\n\n首张真实候选：![[候选图/20260912_Neonify/LORA-20260912-045933-00000_line_edge.png|180]]"},
+		{"id":"c3f2e5d7a8b46903","type":"file","x":680,"y":0,"width":480,"height":300,"file":"08_探索/风格库/风格库_五轴轮换规则.md"},
+		{"id":"d4a3f6e8b9c57014","type":"file","x":1220,"y":0,"width":480,"height":300,"file":"08_探索/风格库/LoRA注册表_当前.md"},
+		{"id":"e5b4a7f9c0d68125","type":"file","x":1760,"y":0,"width":480,"height":300,"file":"08_探索/风格库/探索日志_20260912.md"},
+		{"id":"f6c5b8a0d1e79237","type":"file","x":2280,"y":0,"width":480,"height":300,"file":"08_探索/风格库/自动轮换候选索引.md"},
+		{"id":"f6c5b8a0d1e79236","type":"group","x":0,"y":400,"width":500,"height":480,"label":"轴1｜线条 / 边缘","color":"1"},
+		{"id":"07d6c9b1e2f80347","type":"text","x":30,"y":440,"width":440,"height":380,"text":"墨线平涂 → 木刻断边 → 细霓虹边\n\n本轮变量：只改轮廓、边缘、块面边界。\n\n候选入口：[[方/08_探索/风格库/风格库_五轴轮换规则#五轴定义]]"},
+		{"id":"18e7d0c2f3a91458","type":"group","x":560,"y":400,"width":500,"height":480,"label":"轴2｜媒介 / 材质","color":"2"},
+		{"id":"29f8e1d3a4b02569","type":"text","x":590,"y":440,"width":440,"height":380,"text":"纸纤维 → 哑光剪纸层 → 织物表面\n\n本轮变量：只改表面材料和层间质感。\n\n保持主体、动作与空间基准不变。"},
+		{"id":"3a09f2e4b5c1367a","type":"group","x":1120,"y":400,"width":500,"height":480,"label":"轴3｜色彩 / 光线","color":"3"},
+		{"id":"4b1a03f5c6d2478b","type":"text","x":1150,"y":440,"width":440,"height":380,"text":"冷灰蓝 → 黑红平面 → 炉火青影\n\n本轮变量：只改色相、明暗对比和光向。\n\n红色不自动等于第五幕正式风格。"},
+		{"id":"5c2b14a6d7e3589c","type":"group","x":1680,"y":400,"width":500,"height":480,"label":"轴4｜构图 / 镜头","color":"4"},
+		{"id":"6d3c25b7e8f469ad","type":"text","x":1710,"y":440,"width":440,"height":380,"text":"正面轴对称 → 侧面水平 → 低机位汇聚\n\n本轮变量：只改景别、机位和线性空间。\n\n避免把构图实验写回视频卡。"},
+		{"id":"7e4d36c8f9057abe","type":"group","x":2240,"y":400,"width":500,"height":480,"label":"轴5｜场景信息密度","color":"5"},
+		{"id":"8f5e47d9a0168bcf","type":"text","x":2270,"y":440,"width":440,"height":380,"text":"稀疏舞台 → 中等叙事 → 深层空间\n\n本轮变量：只改前中后景与物件密度。\n\n文字元素一律视为风险，不作正式素材。"},
+		{"id":"90a158e2b1279cd0","type":"group","x":0,"y":980,"width":2740,"height":600,"label":"既有候选｜Neonify｜未归轴","color":"6"},
+		{"id":"a1b269f3c2380de1","type":"file","x":40,"y":1040,"width":400,"height":440,"file":"08_探索/风格库/候选图/20260912_Neonify/conceptlib_neonify124_ref_witch_cats_00001_.png"},
+		{"id":"b2c37a04d3491ef2","type":"file","x":480,"y":1040,"width":400,"height":440,"file":"08_探索/风格库/候选图/20260912_Neonify/conceptlib_neonify124_baroque_gallery_00001_.png"},
+		{"id":"c3d48b15e4502f03","type":"file","x":920,"y":1040,"width":400,"height":440,"file":"08_探索/风格库/候选图/20260912_Neonify/conceptlib_neonify124_underground_ritual_00001_.png"},
+		{"id":"d4e59c26f5613a14","type":"file","x":1360,"y":1040,"width":400,"height":440,"file":"08_探索/风格库/候选图/20260912_Neonify/conceptlib_neonify124_cyber_market_00001_.png"},
+		{"id":"e5f6ad37a6724b25","type":"file","x":1800,"y":1040,"width":400,"height":440,"file":"08_探索/风格库/候选图/20260912_Neonify/conceptlib_neonify124_gothic_sanctuary_00001_.png"},
+		{"id":"f607be48b7835c36","type":"file","x":2240,"y":1040,"width":400,"height":440,"file":"08_探索/风格库/候选图/20260912_Neonify/conceptlib_neonify124_ref_factory_gardener_00001_.png"}
+	],
+	"edges":[
+		{"id":"aabbccddeeff0011","fromNode":"b2e1d4c8f6a35792","fromSide":"right","toNode":"c3f2e5d7a8b46903","toSide":"left","toEnd":"arrow","label":"规则"},
+		{"id":"bbccddee00112233","fromNode":"b2e1d4c8f6a35792","fromSide":"right","toNode":"d4a3f6e8b9c57014","toSide":"left","toEnd":"arrow","label":"LoRA"},
+		{"id":"ccddeeff11223344","fromNode":"b2e1d4c8f6a35792","fromSide":"bottom","toNode":"f6c5b8a0d1e79236","toSide":"top","toEnd":"arrow","label":"轮换"},
+		{"id":"ddeeff0011223344","fromNode":"b2e1d4c8f6a35792","fromSide":"bottom","toNode":"18e7d0c2f3a91458","toSide":"top","toEnd":"arrow"},
+		{"id":"eeff001122334455","fromNode":"b2e1d4c8f6a35792","fromSide":"bottom","toNode":"3a09f2e4b5c1367a","toSide":"top","toEnd":"arrow"},
+		{"id":"ff00112233445566","fromNode":"b2e1d4c8f6a35792","fromSide":"bottom","toNode":"5c2b14a6d7e3589c","toSide":"top","toEnd":"arrow"},
+		{"id":"0011223344556677","fromNode":"b2e1d4c8f6a35792","fromSide":"bottom","toNode":"7e4d36c8f9057abe","toSide":"top","toEnd":"arrow"},
+		{"id":"1122334455667788","fromNode":"e5b4a7f9c0d68125","fromSide":"bottom","toNode":"90a158e2b1279cd0","toSide":"top","toEnd":"arrow","label":"候选"},
+		{"id":"2233445566778899","fromNode":"e5b4a7f9c0d68125","fromSide":"right","toNode":"f6c5b8a0d1e79237","toSide":"left","toEnd":"arrow","label":"持续追加"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
