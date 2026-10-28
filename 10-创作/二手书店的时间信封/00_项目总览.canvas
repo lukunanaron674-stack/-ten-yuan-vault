@@ -1732,6 +1732,96 @@
       "width": 3200,
       "height": 570,
       "color": "6"
+    },
+    {
+      "id": "m_direction_b_group",
+      "type": "group",
+      "label": "M｜B方向 · USER 2026-10-28｜XN＋ZX为主 → 双线转补（独立候选）",
+      "x": 78000,
+      "y": -3100,
+      "width": 10600,
+      "height": 8500,
+      "color": "6"
+    },
+    {
+      "id": "m_direction_b_root",
+      "type": "text",
+      "text": "# M0｜B方向｜用户设定原文登记\n**USER于2026-10-28确定：**「这是b方向，男主nx加z，女主xn加zx，信也是，故事也是xn加zx为主，转补的故事。」\n**严格分版：**B为新的独立探索方向，**不覆盖原A方向**（Claire XN被ZN克制、追求Z；Lucas XN＋N）及10-27三集用户大纲。官方人物身份与场景约束仍有效。下述补位机制是研究推演，不等于新剧本已冻结。\n**附图：**同日聊天的男女双角度角色参考图；图片本体尚未上传GitHub，当前仅文本索引。",
+      "x": 81000,
+      "y": -2800,
+      "width": 4650,
+      "height": 880,
+      "color": "6"
+    },
+    {
+      "id": "m_direction_b_claire",
+      "type": "text",
+      "text": "# M1｜女主 Claire｜XN＋ZX（USER）\n**XN 主／ZX 次**（次序按USER「XN加ZX」记录，强度需后续标定）。\n视觉参考：长卷曲深发、灰色横纹宽松针织衫、深色长裤、耳机与背包，正面与约45°侧身；暗色都市青年气质。\n**候选表现**：X N 长期规则/旧信时间线使即兴ZX行动受阻，ZX又使她不愿永远被动等待。\n**关系检验**：不能将服装本身当成十元证据；必须通过行为、镜头、观众感受验证。",
+      "x": 78400,
+      "y": -1500,
+      "width": 4300,
+      "height": 1150,
+      "color": "3"
+    },
+    {
+      "id": "m_direction_b_lucas",
+      "type": "text",
+      "text": "# M2｜男主 Lucas｜NX＋Z（USER）\n**NX 主／Z 次**（按USER「NX加Z」顺序登记，强度待实测）。\n视觉参考：深棕卷发、深蓝灰西装式外套、米白衬衫、宽松黑裤、深色皮鞋，正面与约45°侧面。\n**候选角色功能**：NX不以强行控制实现目标，而通过既有身份/关系/渠道借力；Z提供明确认可、确认节点。\n**互补边**：男主NX ↔ 女主ZX；男主Z ↔ 女主XN。角色设计图仅是素材方向，不证明感受已成立。",
+      "x": 83500,
+      "y": -1500,
+      "width": 4300,
+      "height": 1150,
+      "color": "5"
+    },
+    {
+      "id": "m_direction_b_letter",
+      "type": "text",
+      "text": "# M3｜音乐信件｜XN＋ZX 主导（USER）\n**XN：**跨时间累积的纸张、乐谱、未完成的信息、长期组织的记录与安排（具体魔法规则尚未锁定）。\n**ZX：**信的内容试图形成一次主动决定／被公开听见的权能；需要具体事件证实，不把每封信都视为ZX。\n**内在张力候选：XN 克 ZX**——时间和既有事实限制“当下直接改变结果”。\n**从信转补的待验证机制：**男主Z对信的证据形成可见认可；男主NX借既有演奏渠道让其实际到达听者；不修改过去的既定事实。",
+      "x": 78400,
+      "y": 0,
+      "width": 4300,
+      "height": 1270,
+      "color": "3"
+    },
+    {
+      "id": "m_direction_b_story",
+      "type": "text",
+      "text": "# M4｜故事总基调｜XN＋ZX → 补（USER）\n**一级主导不变：XN＋ZX。**它是整个故事的预期感受组合，不只是女主独有的标签。\n**起：**XN为主，长期积累/沉默/时间限制ZX的当下行动。\n**承：**ZX尝试以主动行为推动因果，但不能越过已经发生的时间约束。\n**转：**男主NX所掌握的现有渠道，补足女主ZX行动的实现路径；男主Z的明确确认，补足女主XN积累证据的被看见条件。\n**合：**不是时间被魔法推翻，而是长期积累终于在现实取得认可与行动通道（原创候选，待USER审稿）。",
+      "x": 83500,
+      "y": 0,
+      "width": 4300,
+      "height": 1270,
+      "color": "3"
+    },
+    {
+      "id": "m_direction_b_paired",
+      "type": "text",
+      "text": "# M5｜双补关系（位置已锁定，事件启动待证）\n**补① XN ↔ Z：**女主XN＝证据和长期组织；男主Z＝认可节点与阶段收束。不能将“他欣赏她”直接等于补位启动。\n**补② ZX ↔ NX：**女主ZX＝直接显现并发挥主体权能；男主NX＝沿现有通道借力实现。不能将“互相帮忙”直接等于补位启动。\n**故事内部张力：XN 克 ZX。**这是一组与双补并存的克位，反映过去规则/积累对眼前行动的限制。\n**最低验收：**每条补位各给1个明确镜头事件、发出者→接受者、被改变的现实变量；缺一则标候选。",
+      "x": 81100,
+      "y": 1620,
+      "width": 4550,
+      "height": 1410,
+      "color": "4"
+    },
+    {
+      "id": "m_direction_b_horizontal",
+      "type": "text",
+      "text": "# M6｜横纵一体因果候选（非已定剧本）\n**事件A（横向）**：Claire／旧音乐信（XN证据+ZX意图）／时间的不可逆条件 → 她试图让信被听见但受阻。→ **纵向**：她寻找能延续信的现实通道。\n**事件B（横向）**：Claire ZX ↔ Lucas NX；演奏场所/身份/人群 → 原本无法传递的音乐获得具体到达路径。→ **纵向**：信中信息可以被听见。\n**事件C（横向）**：Claire XN ↔ Lucas Z；纸面记录/可追溯音符/当下确认 → 长期积累被明确认可。→ **纵向**：两人以现实行动回应，不改变已发生的过去。\n全部为AI场景推演、非USER已经确认的信件能力或结局。",
+      "x": 78400,
+      "y": 3390,
+      "width": 4300,
+      "height": 1350,
+      "color": "5"
+    },
+    {
+      "id": "m_direction_b_reference",
+      "type": "text",
+      "text": "# M7｜B方向视觉 & A/B版本边界\n**聊天原图2026-10-28：**浅暖灰背景双角色站姿；左男正/侧双视图，右女正/约45°双视图，女角外有紫色圆角框。当前为角色美术候选，不是最终资产冻结。\n**A方向现行设定**：原L区三集、原人物十元继续作为A版本保留。\n**B方向此处**：只锁USER明示：男NX＋Z、女XN＋ZX、信XN＋ZX、故事XN＋ZX主导并转补；本卡所有剧情机制另标AI候选。\n**尚缺**：B方向三集事件分配、信件实际内容、每条“补”的现实证明与真实观看感受。",
+      "x": 83500,
+      "y": 3390,
+      "width": 4300,
+      "height": 1350,
+      "color": "6"
     }
   ],
   "edges": [
@@ -2974,6 +3064,62 @@
       "toSide": "top",
       "toEnd": "arrow",
       "color": "6"
+    },
+    {
+      "id": "m_b_e0_1",
+      "fromNode": "m_direction_b_root",
+      "toNode": "m_direction_b_claire",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_b_e0_2",
+      "fromNode": "m_direction_b_root",
+      "toNode": "m_direction_b_lucas",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_b_e1_3",
+      "fromNode": "m_direction_b_claire",
+      "toNode": "m_direction_b_letter",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_b_e2_4",
+      "fromNode": "m_direction_b_lucas",
+      "toNode": "m_direction_b_story",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_b_e3_5",
+      "fromNode": "m_direction_b_letter",
+      "toNode": "m_direction_b_paired",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_b_e4_5",
+      "fromNode": "m_direction_b_story",
+      "toNode": "m_direction_b_paired",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_b_e5_6",
+      "fromNode": "m_direction_b_paired",
+      "toNode": "m_direction_b_horizontal",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "m_b_e5_7",
+      "fromNode": "m_direction_b_paired",
+      "toNode": "m_direction_b_reference",
+      "fromSide": "bottom",
+      "toSide": "top"
     }
   ]
 }
