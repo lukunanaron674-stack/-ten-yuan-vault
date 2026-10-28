@@ -29,6 +29,7 @@ Scope routes:
 - 生克补动态链：`08-生克补动态链研究/每次任务必读_生克补动态链滚动中枢.md` → its declared execution gate, index, template, and exact previous case.
 - 十元语义空间：`01-十元系统/05-十元语义空间/README_十元语义空间研究总入口_v1.0.md` → the registered validation or compile route.
 - 专项知识生产：only when the task explicitly enters that workflow, read `07-Codex大脑库/给 Codex 看的训练协议.md`.
+- 静态文字横纵构图：当用户要求文字横纵构图、静态视觉线、多泳道关系、剧情横纵网、审核反馈/依赖回流时，必须读取 `07-Codex大脑库/skills/story-horizontal-vertical-text/SKILL.md` 及其所指向的 `黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL.md`。**先出等宽纯文字主图**，横向同层多方与流向、纵向跨层因果、反馈回流都须清楚；禁止用散文、普通表格、独立角色时间线或 Obsidian 卡片排布冒充文字横纵构图。这是逻辑/文本图 Skill，与上一条 Canvas 几何排版 Skill 相互独立。
 - Canvas 排版与 Obsidian 可视化：当用户要求布局、左右展开、多中心排布、缩小空白、调整 Canvas 卡片、线条或可读性时，先读取 `07-Codex大脑库/skills/obsidian-canvas-layout/SKILL.md`（现行 v1.3.0）及 Linear 674-77 的 XN-CANVAS-01 约束；只读审计→干跑→原位编辑已有 Canvas→Git SHA 回读与结构验证→Windows Obsidian 视觉人工验收。禁止跳过 Skill、复制第二份 Canvas 正本，或将程序 PASS 当作 Windows 视觉 PASS。该 Skill 的唯一完整正文在上述路径，不能仅凭其存放于 `skills/` 字样推断已被 Codex 原生技能列表自动注册。
 
 A task has not started until its registered L1 gate and relevant L2 canon have been read.
