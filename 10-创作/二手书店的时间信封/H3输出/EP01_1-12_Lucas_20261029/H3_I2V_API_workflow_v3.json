@@ -1,0 +1,182 @@
+{
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "device": "default",
+      "type": "minimax"
+    },
+    "class_type": "CLIPLoader"
+  },
+  "14": {
+    "inputs": {
+      "samples": [
+        "13",
+        0
+      ],
+      "vae": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "VAEDecode"
+  },
+  "17": {
+    "inputs": {
+      "video": [
+        "16",
+        0
+      ],
+      "format": "mp4",
+      "filename_prefix": "ten_yuan_envelope_h3_20261029/EP01_1-12_Lucas_I2V_firstframe_v3_345f",
+      "codec": "h264"
+    },
+    "class_type": "SaveVideo"
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "11": {
+    "inputs": {
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "model": [
+        "2",
+        0
+      ],
+      "steps": 4
+    },
+    "class_type": "BasicScheduler"
+  },
+  "15": {
+    "inputs": {
+      "samples": [
+        "13",
+        0
+      ],
+      "vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "VAEDecodeAudio"
+  },
+  "12": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect"
+  },
+  "16": {
+    "inputs": {
+      "fps": 24.0,
+      "audio": [
+        "15",
+        0
+      ],
+      "images": [
+        "14",
+        0
+      ],
+      "bit_depth": 8
+    },
+    "class_type": "CreateVideo"
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "13": {
+    "inputs": {
+      "sampler": [
+        "12",
+        0
+      ],
+      "noise": [
+        "10",
+        0
+      ],
+      "latent_image": [
+        "8",
+        1
+      ],
+      "sigmas": [
+        "11",
+        0
+      ],
+      "guider": [
+        "9",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced"
+  },
+  "8": {
+    "inputs": {
+      "clip": [
+        "3",
+        0
+      ],
+      "vae": [
+        "4",
+        0
+      ],
+      "prompt": "Use the supplied first frame as the exact opening composition and visual style. Preserve Lucas with the same face, dark wavy hair, navy blazer, white shirt, seated posture, wooden table, music sheets and warm old bookstore. One continuous locked medium-wide shot. He studies the pages briefly, gently places one selected score on top of the remaining stack, then lets his hand rest and holds a quiet, thoughtful expression. Keep the action small and readable, with natural breathing and subtle page movement only. Maintain the same framing, lighting and painterly 2D look throughout; no camera move, no cut. Quiet room tone and a soft paper rustle only. No new people, no glasses, no outfit changes, no face or body redesign, no morphing, no extra fingers or props, no legible text, no subtitles.",
+      "width": 1024,
+      "height": 576,
+      "length": 345,
+      "first_frame": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3ImageToVideo"
+  },
+  "1": {
+    "inputs": {
+      "weight_dtype": "default",
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors"
+    },
+    "class_type": "UNETLoader"
+  },
+  "10": {
+    "inputs": {
+      "noise_seed": 202610290113
+    },
+    "class_type": "RandomNoise"
+  },
+  "9": {
+    "inputs": {
+      "conditioning": [
+        "8",
+        0
+      ],
+      "model": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "BasicGuider"
+  },
+  "2": {
+    "inputs": {
+      "strength_model": 1.0,
+      "lora_name": "minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly"
+  },
+  "6": {
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261029/Lucas_B02_composite_start_1024x576.png"
+    },
+    "class_type": "LoadImage"
+  }
+}
