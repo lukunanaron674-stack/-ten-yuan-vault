@@ -30,6 +30,8 @@ Codex 可以主动判断：
 
 ## 入口
 
+- [Obsidian Canvas 排版 Skill｜v1.3.0](./skills/obsidian-canvas-layout/SKILL.md) — **Codex Canvas 任务必读，唯一正文入口**。触发：Canvas 排版、左右展开、多中心、卡片密度、空白、重叠与可视化检查。按 Skill 审计→干跑→原位更新唯一 Canvas→结构与缩放验收；不擅自生成平行 Canvas，也不能把远端结构 PASS 冒充 Windows 视觉验收。
+
 - [[每次任务必读_十元关系防遗忘清单|每次任务必读｜十元关系防遗忘与滚动推进中枢]]
 - [[给 Codex 看的训练协议]]
 - [[给你看的大脑报告]]

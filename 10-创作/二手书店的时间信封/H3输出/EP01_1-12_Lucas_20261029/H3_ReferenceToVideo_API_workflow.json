@@ -1,0 +1,210 @@
+[
+  16,
+  "a646b3fc-dbd6-4aa9-8022-c170d9c787a9",
+  {
+    "7": {
+      "inputs": {
+        "image": "ten_yuan_envelope_h3_20261029/B02_书店音乐信封奇幻触发_场景.png"
+      },
+      "class_type": "LoadImage"
+    },
+    "3": {
+      "inputs": {
+        "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+        "device": "default",
+        "type": "minimax"
+      },
+      "class_type": "CLIPLoader"
+    },
+    "14": {
+      "inputs": {
+        "samples": [
+          "13",
+          0
+        ],
+        "vae": [
+          "4",
+          0
+        ]
+      },
+      "class_type": "VAEDecode"
+    },
+    "17": {
+      "inputs": {
+        "video": [
+          "16",
+          0
+        ],
+        "format": "mp4",
+        "filename_prefix": "ten_yuan_envelope_h3_20261029/EP01_1-12_Lucas_Ref2V_345f",
+        "codec": "h264"
+      },
+      "class_type": "SaveVideo"
+    },
+    "4": {
+      "inputs": {
+        "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+      },
+      "class_type": "VAELoader"
+    },
+    "11": {
+      "inputs": {
+        "scheduler": "simple",
+        "denoise": 1.0,
+        "model": [
+          "2",
+          0
+        ],
+        "steps": 4
+      },
+      "class_type": "BasicScheduler"
+    },
+    "15": {
+      "inputs": {
+        "samples": [
+          "13",
+          0
+        ],
+        "vae": [
+          "5",
+          0
+        ]
+      },
+      "class_type": "VAEDecodeAudio"
+    },
+    "12": {
+      "inputs": {
+        "sampler_name": "res_multistep"
+      },
+      "class_type": "KSamplerSelect"
+    },
+    "16": {
+      "inputs": {
+        "fps": 24.0,
+        "audio": [
+          "15",
+          0
+        ],
+        "images": [
+          "14",
+          0
+        ],
+        "bit_depth": 8
+      },
+      "class_type": "CreateVideo"
+    },
+    "5": {
+      "inputs": {
+        "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+      },
+      "class_type": "VAELoader"
+    },
+    "13": {
+      "inputs": {
+        "sampler": [
+          "12",
+          0
+        ],
+        "noise": [
+          "10",
+          0
+        ],
+        "latent_image": [
+          "8",
+          1
+        ],
+        "sigmas": [
+          "11",
+          0
+        ],
+        "guider": [
+          "9",
+          0
+        ]
+      },
+      "class_type": "SamplerCustomAdvanced"
+    },
+    "8": {
+      "inputs": {
+        "audio_vae": [
+          "5",
+          0
+        ],
+        "ref_images": {
+          "ref_image_0": [
+            "6",
+            0
+          ],
+          "ref_image_1": [
+            "7",
+            0
+          ]
+        },
+        "clip": [
+          "3",
+          0
+        ],
+        "height": 576,
+        "width": 1024,
+        "prompt": "Use <Picture 1> as the exact and only character identity reference for Lucas. Use <Picture 2> as the bookstore environment and lighting reference. One continuous cinematic 2D anime-realism shot, 16:9 medium-wide framing inside this warm old bookstore at late afternoon. Lucas is the young man from Picture 1: preserve his wavy dark-brown hair, youthful face, clean-shaven look, navy blue blazer, open-collar white shirt and dark trousers exactly; he wears no glasses and no vest. He sits at a wooden table with several music-and-letter drafts and a small audio recorder. First he compares the pages, then selects one draft, briefly listens to the recorder, writes a final check mark on the selected page, and settles into a quiet thoughtful pose. Show the actions in this order with clear readable hand movement and gentle natural breathing. Keep the same Lucas face, hair and clothes throughout every frame. Keep the bookstore shelves, tall window, warm lamps, wood furniture and amber palette from Picture 2. Locked camera with only a very slow subtle push-in, restrained acting, stable anatomy and props. Hold on the quiet finished composition for the final two seconds. No cuts, no extra people, no glasses, no vest, no costume changes, no morphing, no extra limbs, no logos, no subtitles, no legible generated writing.",
+        "vae": [
+          "4",
+          0
+        ],
+        "length": 345,
+        "ref_image_size": "match"
+      },
+      "class_type": "MiniMaxH3ReferenceToVideo"
+    },
+    "1": {
+      "inputs": {
+        "weight_dtype": "default",
+        "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors"
+      },
+      "class_type": "UNETLoader"
+    },
+    "10": {
+      "inputs": {
+        "noise_seed": 202610290113
+      },
+      "class_type": "RandomNoise"
+    },
+    "9": {
+      "inputs": {
+        "conditioning": [
+          "8",
+          0
+        ],
+        "model": [
+          "2",
+          0
+        ]
+      },
+      "class_type": "BasicGuider"
+    },
+    "2": {
+      "inputs": {
+        "strength_model": 1.0,
+        "lora_name": "minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+        "model": [
+          "1",
+          0
+        ]
+      },
+      "class_type": "LoraLoaderModelOnly"
+    },
+    "6": {
+      "inputs": {
+        "image": "ten_yuan_envelope_h3_20261029/Lucas_男主_角色参考.png"
+      },
+      "class_type": "LoadImage"
+    }
+  },
+  {
+    "client_id": "codex-ten-yuan-h3-20261029",
+    "create_time": 1793242808738
+  },
+  [
+    "17"
+  ]
+]
