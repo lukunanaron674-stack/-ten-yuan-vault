@@ -1,16 +1,18 @@
 ---
 type: envelope-story-tree-card
-status: USER_REVIEW
+status: STORYBOARD_APPROVED
 source: B方向｜第一集第三张必要十元主卡
 issue: 674-313
 card_id: B1-EP1-03
 duration_seconds: 20
 lock_1: pending
 lock_2: pending
-lock_3: pending
+lock_3: user_approved_storyboard
 lock_4: pending
 ---
 # B1-EP1-03｜XN感：相同的孤独，Claire把信交给Lucas
+
+**2026-10-30 用户口头审核：分镜和时间节奏已通过（PASS）。** 本裁决不等于首帧、具体VFX魔法规则或H3视频通过；剧情未更改。
 
 **一句话目标**：音乐让Claire想起自己在巴黎没有朋友的孤独，看到Lucas也是一个人弹琴；她安静地走近，把音乐信交给他。
 **唯一十元任务**：**XN感（哀默、孤独、想靠近却犹豫）**。Claire的孤独与Lucas的独奏处境在同一空间形成主观共鸣；**不是把Lucas本体重判为XN**。本卡不做ZX×Z、XN↔Z或ZX↔NX的关系结论。
@@ -33,7 +35,7 @@ lock_4: pending
 **色光与场面调度**：地铁恢复普通偏冷的环境灯和真实空间声；一人弹琴、另一人站在人群外，人物之间原本隔着的空位在递信时缩短。不要凭特效制造孤独；用“人群经过却没有驻足、无人交谈、琴凳只坐一人”构成。
 **四锁**：只确认“孤独共鸣＋递信”的用户叙事目的；具体首帧未审核。
 
-## 3_分镜时间锁｜2026-10-30 导演候选V2（7镜，20秒，待USER审）
+## 3_分镜时间锁｜2026-10-30 分镜V2（7镜，20秒，USER通过）
 
 **十元目标**：仅XN孤独共鸣→递信。Lucas独自弹琴，Claire想起自己在巴黎没有朋友；不核对乐谱，不验证未来录音，不提前完成互补。
 
