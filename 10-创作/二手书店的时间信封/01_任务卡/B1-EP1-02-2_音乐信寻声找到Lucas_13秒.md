@@ -1,6 +1,6 @@
 ---
 type: envelope-video-task-card
-status: USER_REVIEW
+status: STORYBOARD_APPROVED
 source: B方向｜第一集B1-EP1-02第2张制作卡｜2026-10-29 USER内容改版
 issue: 674-313
 card_id: B1-EP1-02-2
@@ -10,10 +10,12 @@ absolute_in_seconds: 26.5
 absolute_out_seconds: 39.5
 lock_1: user_direction_confirmed
 lock_2: pending
-lock_3: pending
+lock_3: user_approved_storyboard
 lock_4: pending
 ---
 # B1-EP1-02-2｜旧书与信封→奇幻震惊→惊叫→老板轰出｜13秒
+
+**2026-10-30 用户口头审核：分镜和时间节奏已通过（PASS）。** 本裁决不等于首帧、具体VFX魔法规则或H3视频通过；剧情未更改。
 
 **一句话目标【USER】**：Claire走进二手书店，从书中发现音乐信封，眼前出现不可思议的奇幻景象；她由难以置信转为震惊，忍不住惊叫“What the fuck?!”（USER口述“wodefa”）；镜头切到**原本正安静看书的老板Marcel**被惊扰，生气把她轰出去。
 **归属十元**：音乐先触及XN并唤起ZX好奇后，未知信封进一步造成**奇幻冲击和强烈惊异**；这是卡2同一个事件的感受推进，不另开十元主卡，也**不是此卡完成男女主交集**。
@@ -31,7 +33,7 @@ lock_4: pending
 **素材**：二手书店室内母图、Claire、书架/翻开的旧书、音乐信封、**奇幻景象VFX占位**、正在看书的Marcel（X）、书店门口／被赶出动作。只需复用同一店内空间，不新增图书馆/地铁镜头。
 **构图**：书与信封的手部近景→Claire瞳孔/光影震动→突兀的惊叫→读书中的老板被惊到的反应正反打→店门外。具体奇幻影像画法为候选、不能冒称已产出。
 
-## 3_分镜时间锁｜2026-10-30 导演候选V2（7镜，13秒，待USER审）
+## 3_分镜时间锁｜2026-10-30 分镜V2（7镜，13秒，USER通过）
 
 | 镜头 | 时间 | 机位与动作 |
 |---|---|---|
