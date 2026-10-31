@@ -1,0 +1,351 @@
+{
+	"nodes": [
+		{
+			"id": "a_master",
+			"type": "group",
+			"label": "A方向｜三集十元变化 × 500字内制作卡｜B方向不覆盖",
+			"x": -11500,
+			"y": -6300,
+			"width": 32500,
+			"height": 22300,
+			"color": "6"
+		},
+		{
+			"id": "a_root",
+			"type": "text",
+			"x": 2500,
+			"y": -5600,
+			"width": 5500,
+			"height": 1150,
+			"color": "6",
+			"text": "# 📂 A方向｜三集发散树·12张制作卡\n**USER最新第一集：**手机和N闺蜜聊天（一个多月交不到朋友→想交朋友）→图书馆音乐奇迹→初见Lucas，主观神圣感、想避开→认出信封里的曲子，主动去找他。\n**三个一级视觉中心=三集；卡片均≤500字。**\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/00_A方向_三集12卡_索引|三集任务卡索引]] · [[10-创作/二手书店的时间信封/信封发散树.canvas|B方向独立树]]\n**状态**：EP1剧情USER确认，分镜/首帧待审；EP2历史候选，EP3旧纲候选。NO_GPU。"
+		},
+		{
+			"id": "a_group_ep1",
+			"type": "group",
+			"label": "第一集｜USER最新确认 3卡",
+			"x": -10500,
+			"y": -3400,
+			"width": 9900,
+			"height": 16000,
+			"color": "3"
+		},
+		{
+			"id": "a_header_ep1",
+			"type": "text",
+			"x": -10130,
+			"y": -2900,
+			"width": 9100,
+			"height": 1050,
+			"color": "3",
+			"text": "# 🎬 第一集｜USER最新确认 3卡\n**唯一剧情链**：手机聊天→图书馆音乐奇迹→认曲追向Lucas\n**审核**：剧情顺序 USER_CONFIRMED；图像、机位、时长、信封来源 pending\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/00_A方向_三集12卡_索引|返回三集索引]]"
+		},
+		{
+			"id": "a_card_A_EP1_01",
+			"type": "text",
+			"x": -10130,
+			"y": -1400,
+			"width": 9100,
+			"height": 1770,
+			"color": "3",
+			"text": "# A-EP1-01｜XN孤独→渴望朋友｜手机与N闺蜜\n\n状态：USER_STORY_CONFIRMED_SHOTS_PENDING\n\n①内容｜Claire来到巴黎已一个多月，仍然交不到朋友。她打开手机和N闺蜜聊天，说自己在这里依旧孤单；说完又坦白：还是希望能交到朋友。情绪从XN的失落转向明确的交友愿望。闺蜜提供倾听，不直接替她解决问题。\n②画面｜手机聊天界面与Claire近景交错；手机中文信息用后期合成。卧室或校园角落为AI地点候选，服装保持已审核形象。\n③分镜候选｜先手机聊天记录→她迟疑输入“一个多月了……”→与闺蜜继续聊→镜头停在她说出交友愿望的表情。\n④声音｜中文自然聊天，不写死闺蜜具体回复；生活环境音收敛。H3逐镜独立跑，精确时码与镜头数待审。\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/A-EP1-01_XN孤独_渴望朋友_手机与N闺蜜|打开独立卡]]"
+		},
+		{
+			"id": "a_card_A_EP1_02",
+			"type": "text",
+			"x": -10130,
+			"y": 650,
+			"width": 9100,
+			"height": 1770,
+			"color": "3",
+			"text": "# A-EP1-02｜音乐奇迹打断日常｜图书馆\n\n状态：USER_STORY_CONFIRMED_SHOTS_PENDING\n\n①内容｜Claire来到图书馆，遇见超出常理的音乐奇迹。声音或光影打断安静的借阅体验，使她从孤独的自我沉浸转为惊讶与好奇；这是音乐信线索的起点，不提前见到男主。\n②画面｜地点锁定为“图书馆”，不是B方向的二手书店。书架、阅览桌和窗光统一母图，二维平涂微Q。音乐信封究竟从哪本书出现、是否就在本卡取得，均为待审衔接。\n③分镜候选｜图书馆建立→异常旋律或书页细节→Claire停下动作、确认异象→旧信封/乐谱线索短特写【H】。\n④声音｜安静书页声中出现原创音乐动机M1，图像奇迹形态后期制作；不能用H3乱生成谱面文字。\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/A-EP1-02_音乐奇迹打断日常_图书馆|打开独立卡]]"
+		},
+		{
+			"id": "a_card_A_EP1_03",
+			"type": "text",
+			"x": -10130,
+			"y": 2700,
+			"width": 9100,
+			"height": 1770,
+			"color": "3",
+			"text": "# A-EP1-03｜ZN神圣观感→避开→认曲主动靠近\n\n状态：USER_STORY_CONFIRMED_SHOTS_PENDING\n\n①内容｜Claire见到正在演奏的Lucas，主观觉得他非常神圣、不可轻易接近，起初想避开。随后她听出他弹的正是音乐信封里的曲子，停步回望，主动去找他。结束动作是“主动接近”，不抢先写成递信或相恋。\n②十元｜Claire的XN回避被主观ZN触动；神圣感属于Claire的观看，不等于Lucas本体是ZN，Lucas仍按A方向XN＋N设定。\n③画面｜Lucas演奏的琴位与人物首帧先审；地铁琴位是A方向旧历史候选，是否沿用待导演定。暖光与周围冷色形成主观对照，不用真实神迹。\n④分镜候选｜初见远景→Claire避开→同曲音乐信细节匹配切→她回身寻找并迈步。\n⑤声音｜先是陌生琴声，识别后与图书馆M1明确重合；其他对白不擅加。\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/A-EP1-03_ZN神圣观感_避开_认曲主动靠近|打开独立卡]]"
+		},
+		{
+			"id": "a_group_ep2",
+			"type": "group",
+			"label": "第二集｜旧A关系延展 6卡",
+			"x": 0,
+			"y": -3400,
+			"width": 9900,
+			"height": 16000,
+			"color": "4"
+		},
+		{
+			"id": "a_header_ep2",
+			"type": "text",
+			"x": 370,
+			"y": -2900,
+			"width": 9100,
+			"height": 1050,
+			"color": "4",
+			"text": "# 🎬 第二集｜旧A关系延展 6卡\n**唯一剧情链**：Lucas N架桥→Claire ZN克XN→祖母ZX冲击Lucas N→ZN再架桥\n**审核**：旧A候选，仅保留供讨论；与B方向版本不混\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/00_A方向_三集12卡_索引|返回三集索引]]"
+		},
+		{
+			"id": "a_card_A_EP2_01",
+			"type": "text",
+			"x": 370,
+			"y": -1400,
+			"width": 9100,
+			"height": 1770,
+			"color": "4",
+			"text": "# A-EP2-01｜Lucas的N倾听→Claire XN松动\n\n状态：A_HISTORICAL_CANDIDATE_NOT_USER_LOCKED\n\n①内容候选｜承接第一集主动靠近，Lucas认真倾听Claire的声音或提问，记住她的音乐片段，留出让她回应的位置。她原本怕打扰，但因对方真正等待而不再退开。\n②十元｜Lucas N以接纳为事件桥梁，Claire XN松动；并不由“男主神圣”直接推出恋爱。\n③镜头候选｜两人保持距离→Lucas停下聆听→Claire试着回应；场地沿第一集已审核琴位，不额外更换地点。\n④声音｜中文对白需后续审定，钢琴动机承接A1。来源为既有A方向2-1历史候选；用户此轮未审核该剧情。\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/A-EP2-01_Lucas的N倾听_Claire_XN松动|打开独立卡]]"
+		},
+		{
+			"id": "a_card_A_EP2_02",
+			"type": "text",
+			"x": 370,
+			"y": 650,
+			"width": 9100,
+			"height": 1770,
+			"color": "4",
+			"text": "# A-EP2-02｜Claire ZN克XN→第一次主动邀请\n\n状态：A_HISTORICAL_CANDIDATE_NOT_USER_LOCKED\n\n①内容候选｜二人围绕共同听到的曲子有过真实交流后，Claire虽然害怕被拒，仍主动提出下次一起找谱或再听一次；不让Lucas替她开口。\n②十元｜ZN的喜悦暂时克制XN退缩，结果必须是Claire自己发出邀请，不靠欢乐灯光偷换行动证据。\n③镜头候选｜对话结束她欲走→回头攥紧信封→抬眼提出邀请→停下等待回应。\n④声音｜普通话简短邀请为AI候选，音乐留作背景而非替代角色行动。来源既有A方向2-2；尚待USER剧情和镜头审核。\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/A-EP2-02_Claire_ZN克XN_第一次主动邀请|打开独立卡]]"
+		},
+		{
+			"id": "a_card_A_EP2_03",
+			"type": "text",
+			"x": 370,
+			"y": 2700,
+			"width": 9100,
+			"height": 1770,
+			"color": "4",
+			"text": "# A-EP2-03｜Marcel NX给线索→Lucas N寻找\n\n状态：A_HISTORICAL_CANDIDATE_NOT_USER_LOCKED\n\n①内容候选｜两人向二手书店Marcel询问音乐信线索，他以NX方式提供可以核实的旧录音、曲谱或日期【具体证据类型待审】；Lucas因祖母留下的声音产生更深的思念。\n②衔接｜A第一集明确发生在“图书馆”；二手书店可以在第二集单独出场，但必须补清图书馆的信怎样接到Marcel，不可把两个场景偷换为同一地点。\n③镜头候选｜展示信件→Marcel核对→提供单项证据→Lucas听到熟悉动机。\n④声音｜普通话，录音年代/谱面可读文字后期补。此为A历史2-3候选，证据可得性与剧情未锁。\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/A-EP2-03_Marcel_NX给线索_Lucas_N寻找|打开独立卡]]"
+		},
+		{
+			"id": "a_card_A_EP2_04",
+			"type": "text",
+			"x": 370,
+			"y": 4750,
+			"width": 9100,
+			"height": 1770,
+			"color": "4",
+			"text": "# A-EP2-04｜祖母ZX抗争→Lucas N受冲击\n\n状态：A_HISTORICAL_CANDIDATE_NOT_USER_LOCKED\n\n①内容候选｜旧录音或乐谱揭出祖母曾经为创作权利抗争的一面，Lucas原本只愿怀念她温柔弹琴的样子；真实证据打破他的单一回忆，他合上谱暂时停止演奏。\n②十元｜祖母ZX克Lucas事件N必须看到怀念方式被改变，而非只用愤怒声音。\n③镜头候选｜播放旧录音→Lucas观察祖母的另一面→手离键、合谱→留出空琴凳。\n④声音｜祖母话语与钢琴的时间声桥需审定。此为A旧2-4候选，祖母是否为ZX施加者以现有A发散文本为候选，未由本轮用户重新确认。\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/A-EP2-04_祖母ZX抗争_Lucas_N受冲击|打开独立卡]]"
+		},
+		{
+			"id": "a_card_A_EP2_05",
+			"type": "text",
+			"x": 370,
+			"y": 6800,
+			"width": 9100,
+			"height": 1770,
+			"color": "4",
+			"text": "# A-EP2-05｜Claire ZN再架桥→Lucas重新接奏\n\n状态：A_HISTORICAL_CANDIDATE_NOT_USER_LOCKED\n\n①内容候选｜祖母的抗争让Lucas无法照旧演奏，Claire不否认祖母的痛苦，而从同一段历史录音中发现她仍愿意继续音乐的证据。Claire主动回放旋律，邀请Lucas重新听见这份持续创作的意愿。\n②十元｜ZN架桥是叙事功能：把祖母ZX的反抗和Lucas N的思念放回同一个人身上，不是用快乐消灭伤害。\n③镜头候选｜Lucas合谱→Claire发现录音另一段→她主动按播放→两人认真听完。音源必须与上卡一致。\n④声音｜中文简短邀请待审；录音来源与具体旧事仍是AI候选，沿既有A方向2-5发展。\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/A-EP2-05_Claire_ZN再架桥_Lucas重新接奏|打开独立卡]]"
+		},
+		{
+			"id": "a_card_A_EP2_06",
+			"type": "text",
+			"x": 370,
+			"y": 8850,
+			"width": 9100,
+			"height": 1770,
+			"color": "4",
+			"text": "# A-EP2-06｜双人接奏→双方主动靠近\n\n状态：A_HISTORICAL_CANDIDATE_NOT_USER_LOCKED\n\n①内容候选｜Lucas愿意重新弹起祖母的曲子，Claire接上属于自己的回应声部。双方都要实际作出选择：Lucas邀请她进入共同演奏，Claire主动提出下次再见或继续找谱；不以神圣光效代替关系推进。\n②十元｜Lucas事件N接纳↔Claire ZN分享，形成互相帮助，仍不提前写死告白或爱情结局。\n③镜头候选｜Lucas弹主题→停下给她进入空位→Claire自己接奏→两人确认下一次相见。\n④声音｜两声部先后进入而非同时堆满，普通话少台词；A方向旧2-6历史候选，须用户审片。\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/A-EP2-06_双人接奏_双方主动靠近|打开独立卡]]"
+		},
+		{
+			"id": "a_group_ep3",
+			"type": "group",
+			"label": "第三集｜USER旧纲 3卡",
+			"x": 10500,
+			"y": -3400,
+			"width": 9900,
+			"height": 16000,
+			"color": "5"
+		},
+		{
+			"id": "a_header_ep3",
+			"type": "text",
+			"x": 10870,
+			"y": -2900,
+			"width": 9100,
+			"height": 1050,
+			"color": "5",
+			"text": "# 🎬 第三集｜USER旧纲 3卡\n**唯一剧情链**：祖母XN＋ZX受困→祖父Z＋NX帮助→长期XN积累推出Z\n**审核**：USER大纲已留存；所有剧情细节/魔法桥段待审\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/00_A方向_三集12卡_索引|返回三集索引]]"
+		},
+		{
+			"id": "a_card_A_EP3_01",
+			"type": "text",
+			"x": 10870,
+			"y": -1400,
+			"width": 9100,
+			"height": 1770,
+			"color": "5",
+			"text": "# A-EP3-01｜祖母XN＋ZX遭遇现实困境\n\n状态：A_OUTLINE_ONLY_SCENE_DRAFT\n\n①内容｜回到上一代：祖母具XN承受与ZX主动表达两面，遇到无法随意绕开的现实困境。困境必须真实影响她继续创作或接触音乐的机会，不能只靠悲伤表情。\n②十元｜先拍现实约束下的XN损失，再让ZX的抗争有动因。祖母的具体困难、职业与时代细节，USER本轮尚未定稿。\n③镜头候选｜未完成谱纸与即将错过的机会→外部限制显现→祖母收起谱、思索下一步。\n④声音｜中文或无对白均待导演决定。祖母死亡与过去能否被改变，不能由本卡擅自改写。\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/A-EP3-01_祖母XN_ZX遭遇现实困境|打开独立卡]]"
+		},
+		{
+			"id": "a_card_A_EP3_02",
+			"type": "text",
+			"x": 10870,
+			"y": 650,
+			"width": 9100,
+			"height": 1770,
+			"color": "5",
+			"text": "# A-EP3-02｜祖父Z＋NX帮助→创作条件改变\n\n状态：A_OUTLINE_ONLY_SCENE_DRAFT\n\n①内容｜祖父以Z＋NX的行动帮助祖母面对第三集的现实困境。他不是替祖母决定未来，而是提供一项真正可执行的支持，使她可以继续尝试自己的音乐目标。\n②十元｜Z带来确认与激励，NX给出实际办法；结果须通过具体资源、时间或场地条件的变化呈现，不能只拍安慰。\n③镜头候选｜祖母因问题停下→祖父确认需求→递交可用的帮助或共同完成实际事务【细节待审】→祖母重新行动。\n④声音｜中文对白候选；不得把祖父直接套入B方向Lucas参选线。\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/A-EP3-02_祖父Z_NX帮助_创作条件改变|打开独立卡]]"
+		},
+		{
+			"id": "a_card_A_EP3_03",
+			"type": "text",
+			"x": 10870,
+			"y": 2700,
+			"width": 9100,
+			"height": 1770,
+			"color": "5",
+			"text": "# A-EP3-03｜长期XN积累→Z释放｜跨代回收\n\n状态：A_OUTLINE_ONLY_SCENE_DRAFT\n\n①内容｜祖母长期经历的XN不是一场即逝的伤心，而是由反复选择、失去与持续创作层层积累，最后通过她自己的行动推出Z。音乐信作为跨代媒介，把过去的选择与Claire、Lucas今天听见的旋律连在一起。\n②十元｜XN累积→Z是本集终点，但不能假定祖母一定获奖、重新活过来或改变历史；怎样让现实时刻轻微变化尚待审。\n③镜头候选｜多年同物件匹配切→祖母自己完成一段旋律或作出决定→音乐信进入现在→同曲声桥。\n④声音｜同一原创旋律跨年代复现，实际A/B/C曲式以USER审核为准。\n[[10-创作/二手书店的时间信封/01_任务卡/A方向/A-EP3-03_长期XN积累_Z释放_跨代回收|打开独立卡]]"
+		},
+		{
+			"id": "a_versions",
+			"type": "text",
+			"x": 2700,
+			"y": 13000,
+			"width": 5600,
+			"height": 1400,
+			"color": "6",
+			"text": "# 🗂 版本隔离与未决问题\n- A第一集“图书馆”，不得套用B二手书店或B惊叫“wodefa！”；A第一集目前无已批准惊叫。\n- 信封如何在图书馆被发现、男主最终演奏地点、何时能比较乐曲尚未锁定。\n- 2026-10-28旧A14镜/135s保留历史候选，不能与本三卡混派。\n- A第二集沿旧2-1~2-6候选，第三集只据USER L3祖父母骨架；B方向独立。\n**GPU**：首帧／时码／素材引用／音画未核，不可排队。"
+		}
+	],
+	"edges": [
+		{
+			"id": "a_edge_root_ep1",
+			"fromNode": "a_root",
+			"fromSide": "bottom",
+			"toNode": "a_header_ep1",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "3"
+		},
+		{
+			"id": "a_edge_A-EP1-01",
+			"fromNode": "a_header_ep1",
+			"fromSide": "bottom",
+			"toNode": "a_card_A_EP1_01",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "3"
+		},
+		{
+			"id": "a_edge_A-EP1-02",
+			"fromNode": "a_header_ep1",
+			"fromSide": "bottom",
+			"toNode": "a_card_A_EP1_02",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "3"
+		},
+		{
+			"id": "a_edge_A-EP1-03",
+			"fromNode": "a_header_ep1",
+			"fromSide": "bottom",
+			"toNode": "a_card_A_EP1_03",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "3"
+		},
+		{
+			"id": "a_edge_root_ep2",
+			"fromNode": "a_root",
+			"fromSide": "bottom",
+			"toNode": "a_header_ep2",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "a_edge_A-EP2-01",
+			"fromNode": "a_header_ep2",
+			"fromSide": "bottom",
+			"toNode": "a_card_A_EP2_01",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "a_edge_A-EP2-02",
+			"fromNode": "a_header_ep2",
+			"fromSide": "bottom",
+			"toNode": "a_card_A_EP2_02",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "a_edge_A-EP2-03",
+			"fromNode": "a_header_ep2",
+			"fromSide": "bottom",
+			"toNode": "a_card_A_EP2_03",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "a_edge_A-EP2-04",
+			"fromNode": "a_header_ep2",
+			"fromSide": "bottom",
+			"toNode": "a_card_A_EP2_04",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "a_edge_A-EP2-05",
+			"fromNode": "a_header_ep2",
+			"fromSide": "bottom",
+			"toNode": "a_card_A_EP2_05",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "a_edge_A-EP2-06",
+			"fromNode": "a_header_ep2",
+			"fromSide": "bottom",
+			"toNode": "a_card_A_EP2_06",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "a_edge_root_ep3",
+			"fromNode": "a_root",
+			"fromSide": "bottom",
+			"toNode": "a_header_ep3",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "a_edge_A-EP3-01",
+			"fromNode": "a_header_ep3",
+			"fromSide": "bottom",
+			"toNode": "a_card_A_EP3_01",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "a_edge_A-EP3-02",
+			"fromNode": "a_header_ep3",
+			"fromSide": "bottom",
+			"toNode": "a_card_A_EP3_02",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "a_edge_A-EP3-03",
+			"fromNode": "a_header_ep3",
+			"fromSide": "bottom",
+			"toNode": "a_card_A_EP3_03",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "5"
+		}
+	]
+}
