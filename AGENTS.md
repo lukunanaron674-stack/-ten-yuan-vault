@@ -30,7 +30,7 @@ Scope routes:
 - 十元语义空间：`01-十元系统/05-十元语义空间/README_十元语义空间研究总入口_v1.0.md` → the registered validation or compile route.
 - 专项知识生产：only when the task explicitly enters that workflow, read `07-Codex大脑库/给 Codex 看的训练协议.md`.
 - 静态文字横纵构图：当用户要求文字横纵构图、静态视觉线、多泳道关系、剧情横纵网、审核反馈/依赖回流时，必须读取 `07-Codex大脑库/skills/story-horizontal-vertical-text/SKILL.md` 及其所指向的 `黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL.md`。**先出等宽纯文字主图**，横向同层多方与流向、纵向跨层因果、反馈回流都须清楚；禁止用散文、普通表格、独立角色时间线或 Obsidian 卡片排布冒充文字横纵构图。这是逻辑/文本图 Skill，与上一条 Canvas 几何排版 Skill 相互独立。
-- Canvas 排版与 Obsidian 可视化：当用户要求布局、左右展开、多中心排布、缩小空白、调整 Canvas 卡片、线条或可读性时，先读取 `07-Codex大脑库/skills/obsidian-canvas-layout/SKILL.md`（现行 v1.3.0）及 Linear 674-77 的 XN-CANVAS-01 约束；只读审计→干跑→原位编辑已有 Canvas→Git SHA 回读与结构验证→Windows Obsidian 视觉人工验收。禁止跳过 Skill、复制第二份 Canvas 正本，或将程序 PASS 当作 Windows 视觉 PASS。该 Skill 的唯一完整正文在上述路径，不能仅凭其存放于 `skills/` 字样推断已被 Codex 原生技能列表自动注册。
+- Canvas 排版与 Obsidian 可视化（CANVAS-DEFAULT-SKILL，USER 2026-11-01 明确要求默认执行）：**任何新建、编辑、补节点、接入素材、更新链接、调整分组或几何的 `.canvas` 任务，均必须主动读取并应用** `07-Codex大脑库/skills/obsidian-canvas-layout/SKILL.md`（现行 v1.5.1）及相关 Linear 674-77/XN-CANVAS-01 规则，**不等用户提醒“使用排版 Skill”**。先检查已有唯一 Canvas、原始节点/边及证据资料；内容修改后自动按布局 Skill 做只读审计、必要时干跑与安全原位调整、文字自适应与多中心排布，最终校验节点ID、颜色、文字、引用、边、分组归属、零越界与零重叠，再 Git SHA 回读；无法安全自动重排则 FAIL CLOSED 并报告阻塞。不得复制第二份 Canvas、不得改变理论正本，不得将程序 PASS 冒充 Windows Obsidian 视觉 PASS（未实屏验收标 WAIT_LOCAL_UI）。独立静态横纵文字构图仍遵守其自身 Skill。
 
 A task has not started until its registered L1 gate and relevant L2 canon have been read.
 
