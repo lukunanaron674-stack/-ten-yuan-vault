@@ -1,0 +1,388 @@
+{
+  "nodes": [
+    {
+      "id": "L1_HEAD",
+      "type": "text",
+      "text": "# ① L1｜整篇十元架构\n**核心问题：** 这不是十元人物标签表，而是整部作品的动力结构。\n先写人物目标、阻碍、事件代价，再看十元体验、图形骨架与竞争解释。\n\n**原创演示【H】**：《最后一班灯塔》；海雾夜，老灯塔即将封停，自动航标误报，返航渔船逼近浅滩。",
+      "x": 70,
+      "y": 76,
+      "width": 980,
+      "height": 240,
+      "color": "5"
+    },
+    {
+      "id": "L1_ENTITIES",
+      "type": "text",
+      "text": "## 1｜端点、欲望与制度限制\n- 阿岚：要核查航标、保护返航船。【行为焦点 ZX，H】\n- 主管：执行封塔命令，拒绝无证据重新点灯。【XN，H】\n- 渔船：需要识别正确航向；人物十元暂不判。\n- 旧灯、自动航标、日志、海雾：事件中的物件和约束，不是人格十元。\n- 主题问题：面对规程与现场异常冲突，该如何负责任地行动？\n\n**人物内在构成 ≠ 纵向变化**；先给行为证据，不因颜色或语气贴元。",
+      "x": 70,
+      "y": 358,
+      "width": 980,
+      "height": 350,
+      "color": "5"
+    },
+    {
+      "id": "L1_SHAPE",
+      "type": "text",
+      "text": "## 2｜主骨架＋竞争骨架\n**主图：T03串联＋T07证据桥【H】**\n误报 → 查证 → 受阻 → 点亮旧灯 → 渔船改向 → 日志复核。\n\n**竞争① T05汇聚【H】**：阿岚日志与渔船航迹，若分别提供独立证据，才共同通向复核。\n**竞争② T11回环【暂否】**：目前只有一次误报，没有重复回到同态事件的证据。\n\n图形T01–T12只是连接拓扑，不能替代正式生克补。z/zn端点冻结不动。",
+      "x": 70,
+      "y": 750,
+      "width": 980,
+      "height": 330,
+      "color": "5"
+    },
+    {
+      "id": "L1_SPECTRUM",
+      "type": "text",
+      "text": "## 3｜目标感受与事实证据的四分法\n- 作者设计意图：责任与证据之间的选择。【原创目标】\n- 角色行为：比对海图、点灯、提交日志。【情节H】\n- AI预测观众感受：约束焦虑→有依据的行动→缓解而非全胜。【H】\n- 真人观众感受：null，尚无真实评测。\n\n**L1输出：** 人物端点＋主题问题＋主拓扑与两竞争解释＋起始/最终状态 → 移交L2。",
+      "x": 70,
+      "y": 1122,
+      "width": 980,
+      "height": 290,
+      "color": "5"
+    },
+    {
+      "id": "GROUP_STEP1",
+      "type": "group",
+      "label": "01｜十元架构 · 谁如何改变谁",
+      "x": 0,
+      "y": 0,
+      "width": 1120,
+      "height": 1802,
+      "color": "5"
+    },
+    {
+      "id": "L2_HEAD",
+      "type": "text",
+      "text": "# ② L2｜画出能追踪的事件网络\n拓扑形状只是容器；每一条箭头都要落在角色、制度、物件、行动和发生改变的变量上。\n\n**本页先展示完整等宽横纵主图，再读十元概念映射。**",
+      "x": 1270,
+      "y": 76,
+      "width": 980,
+      "height": 180,
+      "color": "6"
+    },
+    {
+      "id": "L2_GRAPH",
+      "type": "text",
+      "text": "## 1｜第一屏：同层横向 × 跨阶段纵向 × 回流\n~~~text\n【T03事件串联＋T07证据桥｜原创H】\n时窗     岸上阿岚(ZX H)        海上渔船       主管(XN H)\n第一幕 ─────────────────────────────────────\nT0       对比航标 ─────────→ 船逼近浅滩       宣布封塔\n           │异常发现↑         │风险↑           │\n           ↓进入复核          ↓待提示          ↓仍禁开灯\n第二幕 ─────────────────────────────────────\nT1       日志与旧图对照        船未获修正信号   拒绝点灯\n           │证据充分↑                         │代价↑\nT2       短时点亮旧灯 ─────→ 船看灯后转舵     记录违规\n           │警示开启↑          │改向↑            │\n           ↓                  └─────┐           ↓\n第三幕 ──────────────────────────────┼────────────\nT3       提交误报日志 ←───── 提交航迹         启动复核\n           │                        │             │\n反馈      └──复核结论回写T0误报判断 ←────────┘\n负控      没误报→不应点灯；没改向→效果尚未证\n~~~\n\n**横向读箭头：** 同一时间窗，谁对谁做了什么？\n**纵向读连线：** 上幕结果是否成为下幕前提？\n**反馈读回流：** 新证据改变的是哪个旧判断？",
+      "x": 1270,
+      "y": 298,
+      "width": 980,
+      "height": 745,
+      "color": "6"
+    },
+    {
+      "id": "L2_SYMBOL",
+      "type": "text",
+      "text": "## 2｜十元符号 → 概念 → 具体事件 → 视听【H】\nXN → 规程压力 → 主管封塔、倒数屏 → 对称机位＋规则提示音。\nZX → 现场查证 → 阿岚拿海图核对自动灯位 → 过肩中景、手部近景。\nXZ（竞争候选）→ 不可逆风险 → 船靠近浅滩 → 海雾低对比、压迫构图。\nZ（竞争候选）→ 自主决断 → 船员真实转舵 → 航迹与电台确认。\n\n**注意：** 这只是观众感受触发方案，不是人物十元本体证明，也不是已成立的生克补。",
+      "x": 1270,
+      "y": 1085,
+      "width": 980,
+      "height": 300,
+      "color": "6"
+    },
+    {
+      "id": "L2_NEGATIVE",
+      "type": "text",
+      "text": "## 3｜拿掉测试／回流检查\n- 无航标误报：点灯像无依据的违规。\n- 无主管拒绝：故事缺少必须承担的选择代价。\n- 无船舶转舵：旧灯是否救船无法用镜头证实。\n- 无故障日志：现场事件无法桥接制度复核。\n- 无返回T0的复核结果：不应硬画一个反馈圈。\n\n**L2输出：** 具体事件零件、改变变量Δ、图形连接与必要条件 → 移交L3。",
+      "x": 1270,
+      "y": 1427,
+      "width": 980,
+      "height": 291,
+      "color": "6"
+    },
+    {
+      "id": "GROUP_STEP2",
+      "type": "group",
+      "label": "02｜图形×横纵构图 · 十元符号化为事件",
+      "x": 1200,
+      "y": 0,
+      "width": 1120,
+      "height": 1802,
+      "color": "6"
+    },
+    {
+      "id": "L3_HEAD",
+      "type": "text",
+      "text": "# ③ L3｜分幕编号 × 单焦点视听卡\n**编号：** A01-C01＝第一幕第1卡；A02-C01＝第二幕第1卡；A03-C01＝第三幕第1卡。\n\n**每卡一个焦点：** SINGLE_TENYUAN（本例均为此类）或已核关系的 SINGLE_RELATION。只认一个changed_variable；其他元可共现但不额外评分。\n\n**卡片统一检查：** 目标 → 触发 → 行动 → 阻碍 → Δ变化 → 景别／机位／构图／运镜／光影／声音 → 删卡反例。",
+      "x": 2470,
+      "y": 76,
+      "width": 980,
+      "height": 290,
+      "color": "4"
+    },
+    {
+      "id": "A01_C01",
+      "type": "text",
+      "text": "### A01-C01｜倒计时\n**焦点XN【H】**；主管宣布封塔。\nΔ deadline_known：0→1。\n控制室固定对称中景→倒数屏特写；冷光、提示音。\n**删卡：** 时间压力失去可见来源。",
+      "x": 2453,
+      "y": 414,
+      "width": 487,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "A01_C02",
+      "type": "text",
+      "text": "### A01-C02｜发现误报\n**焦点ZX【H】**；阿岚比对航标与旧海图。\nΔ anomaly_detected：0→1。\n过肩中近景同屏对照、轻推机、两信号错拍。\n**删卡：** 误报只有猜测。",
+      "x": 2983,
+      "y": 414,
+      "width": 487,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "A02_C01",
+      "type": "text",
+      "text": "### A02-C01｜主管拒绝\n**焦点XN【H】**；主管拒绝缺证据的点灯。\nΔ authorization_denied：0→1。\n门框隔人、双人固定中景；冷暖分区、电台底噪。\n**删卡：** 没有制度选择代价。",
+      "x": 2453,
+      "y": 770,
+      "width": 487,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "A02_C02",
+      "type": "text",
+      "text": "### A02-C02｜短时点灯\n**焦点ZX【H】**；核查后手动点旧灯。\nΔ warning_active：0→1。\n手部特写→灯塔远景；灯机声先于海雾光。\n**删卡：** 无核查就成莽撞行动。",
+      "x": 2983,
+      "y": 770,
+      "width": 487,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "A03_C01",
+      "type": "text",
+      "text": "### A03-C01｜船舶改向\n**焦点Z【竞争H】**；船员看见灯位后转舵。\nΔ course_corrected：0→1。\n船头中景→海面宽景；航迹＋电台确认。\n**删卡：** 警示是否有效仍未证实。",
+      "x": 2453,
+      "y": 1126,
+      "width": 487,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "A03_C02",
+      "type": "text",
+      "text": "### A03-C02｜证据交付\n**焦点ZX【H】**；提交日志，启动复核。\nΔ review_requested：0→1。\n日志与航迹同屏近景→控制室宽景；提示音停。\n**删卡：** T07制度证据桥断开。",
+      "x": 2983,
+      "y": 1126,
+      "width": 487,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "L3_GATE",
+      "type": "text",
+      "text": "## L3验收：片子还没生成，不可越级\n这六卡只是原创导演方案，绝非已完成的H3视频。镜头时长、首帧、角色/场景资产SHA、声轨与用户审核必须独立确认。\nAI目标感受≠真人评价（仍为null）。未经真实视频测试不能升APPLICATION_TESTED；未经跨对象真人验证不能升ABSORBED_VERIFIED。",
+      "x": 2470,
+      "y": 1482,
+      "width": 980,
+      "height": 245,
+      "color": "4"
+    },
+    {
+      "id": "GROUP_STEP3",
+      "type": "group",
+      "label": "03｜分幕单焦点视听 · 三幕六卡",
+      "x": 2400,
+      "y": 0,
+      "width": 1120,
+      "height": 1802,
+      "color": "4"
+    },
+    {
+      "id": "FOOT_FORWARD",
+      "type": "text",
+      "text": "## 正向创作｜L1 → L2 → L3\n人物目标＋主题问题 → 候选结构 → 横纵事件与反馈 → 单焦点导演卡 → 用户审核 → 真实素材与H3测试。\n\n**原则：** 十元零件必须是实际事件，不能只写叙事价值。",
+      "x": 70,
+      "y": 1968,
+      "width": 980,
+      "height": 230,
+      "color": "3"
+    },
+    {
+      "id": "FOOT_REVERSE",
+      "type": "text",
+      "text": "## 反向学习｜L3 → L2 → L1\n核实影片版本与真实事件 → 镜头/声音证据 → 事件关系横纵图 → 主结构＋竞争骨架 → 可迁移的事件机制。\n\n没有原片不能伪造机位、时间码、导演意图或真人观感。",
+      "x": 70,
+      "y": 2233,
+      "width": 980,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "FILE_MAIN_CANVAS",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/01_十元故事三级构成_图形横纵分幕视听.canvas",
+      "x": 70,
+      "y": 2481,
+      "width": 463,
+      "height": 135,
+      "color": "3"
+    },
+    {
+      "id": "FILE_PROTOCOL",
+      "type": "file",
+      "file": "黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL.md",
+      "x": 585,
+      "y": 2481,
+      "width": 463,
+      "height": 135,
+      "color": "3"
+    },
+    {
+      "id": "FOOT_TOPO",
+      "type": "text",
+      "text": "## 12个图形母型｜只代表拓扑\nT01单向　　 T02双向　　 T03串联\nT04分叉　　 T05汇聚　　 T06双通道\nT07架桥　　 T08三角　　 T09分合\nT10星形　　 T11反馈回环　T12交叉镜像\n\n**图形 ≠ 生/克/补**；有两人≠双补，有环≠事件真的重复。\n\n《时间信封》的旧谱桥与《最后一班灯塔》的日志桥，可以复用T07结构，不能照搬具体物件、人物或主题。",
+      "x": 1270,
+      "y": 1968,
+      "width": 980,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "FOOT_GATES",
+      "type": "text",
+      "text": "## 四个必须分清的层级\n1. 【USER】用户确认、冻结的角色或情节。\n2. 【事实】经来源核查的作品剧情；原片镜头未核则待看片。\n3. 【H】原创十元映射、视听与观众感受预测。\n4. 【真人】真实人评；本图 human_feeling=null。\n\n**十元关系门禁：** z/zn端点冻结；L2正本没有验证的关系标H，不因连线入图就转正。\n\n**成果身份：** 此图是独立阅读用的L5可视化；不改变原Canvas、关系正本或制作卡。",
+      "x": 2470,
+      "y": 1968,
+      "width": 980,
+      "height": 420,
+      "color": "3"
+    },
+    {
+      "id": "FOOT_AUDIT",
+      "type": "text",
+      "text": "## Canvas排版Skill验收口径\n三块中心独立，颜色区分；卡片自适应高度、内部有向边；零重复ID、零越界、零文字重叠和零跨中心连线。\nGitHub写后回读；Windows Obsidian缩放/字体/箭头实屏仍需人工确认：WAIT_LOCAL_UI。",
+      "x": 1270,
+      "y": 2403,
+      "width": 980,
+      "height": 190,
+      "color": "3"
+    },
+    {
+      "id": "GROUP_READING",
+      "type": "group",
+      "label": "04｜复用路线与原件链接｜L1→L2→L3／L3→L2→L1",
+      "x": 0,
+      "y": 1888,
+      "width": 3520,
+      "height": 818,
+      "color": "3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_L1_HEAD_L1_ENTITIES",
+      "fromNode": "L1_HEAD",
+      "fromSide": "bottom",
+      "toNode": "L1_ENTITIES",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_L1_ENTITIES_L1_SHAPE",
+      "fromNode": "L1_ENTITIES",
+      "fromSide": "bottom",
+      "toNode": "L1_SHAPE",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_L1_SHAPE_L1_SPECTRUM",
+      "fromNode": "L1_SHAPE",
+      "fromSide": "bottom",
+      "toNode": "L1_SPECTRUM",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_L2_HEAD_L2_GRAPH",
+      "fromNode": "L2_HEAD",
+      "fromSide": "bottom",
+      "toNode": "L2_GRAPH",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_L2_GRAPH_L2_SYMBOL",
+      "fromNode": "L2_GRAPH",
+      "fromSide": "bottom",
+      "toNode": "L2_SYMBOL",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_L2_SYMBOL_L2_NEGATIVE",
+      "fromNode": "L2_SYMBOL",
+      "fromSide": "bottom",
+      "toNode": "L2_NEGATIVE",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_L3_HEAD_A01_C01",
+      "fromNode": "L3_HEAD",
+      "fromSide": "bottom",
+      "toNode": "A01_C01",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_L3_HEAD_A01_C02",
+      "fromNode": "L3_HEAD",
+      "fromSide": "bottom",
+      "toNode": "A01_C02",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_A01_C01_A02_C01",
+      "fromNode": "A01_C01",
+      "fromSide": "bottom",
+      "toNode": "A02_C01",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_A02_C01_A03_C01",
+      "fromNode": "A02_C01",
+      "fromSide": "bottom",
+      "toNode": "A03_C01",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_A01_C02_A02_C02",
+      "fromNode": "A01_C02",
+      "fromSide": "bottom",
+      "toNode": "A02_C02",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_A02_C02_A03_C02",
+      "fromNode": "A02_C02",
+      "fromSide": "bottom",
+      "toNode": "A03_C02",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_FOOT_FORWARD_FOOT_REVERSE",
+      "fromNode": "FOOT_FORWARD",
+      "fromSide": "bottom",
+      "toNode": "FOOT_REVERSE",
+      "toSide": "top",
+      "label": "传递／继续"
+    },
+    {
+      "id": "edge_FOOT_TOPO_FOOT_AUDIT",
+      "fromNode": "FOOT_TOPO",
+      "fromSide": "bottom",
+      "toNode": "FOOT_AUDIT",
+      "toSide": "top",
+      "label": "传递／继续"
+    }
+  ]
+}
