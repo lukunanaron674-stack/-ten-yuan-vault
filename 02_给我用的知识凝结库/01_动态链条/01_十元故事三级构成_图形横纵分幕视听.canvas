@@ -1299,6 +1299,86 @@
       "width": 5060,
       "height": 255,
       "color": "6"
+    },
+    {
+      "id": "DB_C4_GROUP",
+      "type": "group",
+      "label": "15｜R4/5 已分析电影真实事件→十元单焦点与横纵构图",
+      "x": 0,
+      "y": 30000,
+      "width": 5240,
+      "height": 2790,
+      "color": "5"
+    },
+    {
+      "id": "DB_C4_HEAD",
+      "type": "text",
+      "x": 90,
+      "y": 30070,
+      "width": 5060,
+      "height": 175,
+      "color": "6",
+      "text": "# R4/5｜《阿甘正传》学术人工标注事件链 → L3 → L2 → L1\n原始资料：[MovieGraphs论文Fig.1](https://openaccess.thecvf.com/content_cvpr_2018/papers/Vicol_MovieGraphs_Towards_Understanding_CVPR_2018_paper.pdf)：公路欺凌、投石、Jenny劝跑、Forrest奔跑时矫正支架散开。数据是**学者人工图与场景描述**，不是本机观看原片；原片镜头、音色及时间码映射【待看片】。"
+    },
+    {
+      "id": "DB_C4_MAP",
+      "type": "text",
+      "x": 90,
+      "y": 30280,
+      "width": 5060,
+      "height": 800,
+      "color": "4",
+      "text": "# 第一屏主图｜同场横向 × 连续纵向 × 反馈／反事实\n```text\n《阿甘正传》MovieGraphs Fig.1：Road/Bullying【外部人工标注】\n          男孩群                 Forrest               Jenny\n欺凌线    向他扔石头 ────────→ 身体遭外部威胁 ←───── 朋友察觉局面\n                                  │                 │\n                                  │                 └─劝他逃跑【事实】\n                                  ↓                           │\n行动线       反击/不跑【未见】  Forrest开始跑 ←─────┘（劝告是因果原因？【H】）\n                                  │\n                                  ↓\n后果线                       腿部支架散开【事实】──→ 原身体条件改变\n                                  │\n反馈／反证   去掉投石→威胁失因；去掉Jenny劝跑→Forrest可能仍会跑\n             去掉支架散开→身体限制变化不可证；返回动作证据核对\n───────────────────────────────────────────────────────────\n结构 T03串联【候选】／T07朋友信息桥【候选】≠生克补已验证\n画面机位/音乐/剪辑【未证】｜MND beat不能强配到此片段\n```\n"
+    },
+    {
+      "id": "DB_C4_C01",
+      "type": "text",
+      "x": 90,
+      "y": 31120,
+      "width": 1600,
+      "height": 970,
+      "color": "5",
+      "text": "## MG-FG-C01｜投石威胁（单焦点XZ【H】）\n**外部标注**：欺凌男孩群向Forrest投掷石头；角色敌对关系属于标注员判断。\n**改变的唯一变量**：physical_threat↑，来自可定位的投掷动作；不是Forrest本体变成XZ。\n**L2横向**：男孩群→石头→Forrest，主动施加外部危险。\n**L2纵向**：动作威胁→Jenny发出逃跑建议，因果必要性尚未确定。\n**反事实**：没有投石动作，危险失去直接行为证据；观众也可能体验愤怒而非恐惧。\n**创作镜头【H】**：远处欺凌者固定中景→被作用者反应近景；实际原片景别／声音／时长=null。\n**关系**：NOT_RELATION；人评=null；事件来源=[MovieGraphs Fig.1](https://openaccess.thecvf.com/content_cvpr_2018/papers/Vicol_MovieGraphs_Towards_Understanding_CVPR_2018_paper.pdf)。"
+    },
+    {
+      "id": "DB_C4_C02",
+      "type": "text",
+      "x": 1740,
+      "y": 31120,
+      "width": 1600,
+      "height": 970,
+      "color": "3",
+      "text": "## MG-FG-C02｜Jenny提醒逃跑（单焦点NZ【H】）\n**外部标注**：Jenny向Forrest发出“跑”的建议；MovieGraphs关系字段标注friend。\n**改变的唯一变量**：escape_instruction_present:0→1；Forrest是否理解、是否因为她才跑【待核】。\n**L2横向**：Jenny的行动信息→Forrest，构成潜在选择提示。\n**L2纵向**：威胁已存在→发出逃跑建议→Forrest随后奔跑。\n**反事实**：无Jenny建议时，Forrest可能仍因石头而逃；因此“补”不成立。\n**创作镜头【H】**：Jenny发出提醒的近景接Forrest启动动作；声桥只是提案，原电影声画=null。\n**关系**：NOT_RELATION；人评=null；事件来源=[MovieGraphs Fig.1](https://openaccess.thecvf.com/content_cvpr_2018/papers/Vicol_MovieGraphs_Towards_Understanding_CVPR_2018_paper.pdf)。"
+    },
+    {
+      "id": "DB_C4_C03",
+      "type": "text",
+      "x": 3390,
+      "y": 31120,
+      "width": 1760,
+      "height": 970,
+      "color": "2",
+      "text": "## MG-FG-C03｜跑动中支架散开（单焦点ZX【H】）\n**外部标注**：Forrest开始奔跑，腿部矫正支架在跑动过程中散开。\n**改变的唯一变量**：brace_integrity:完整→散开；身体受限状态的物件证据发生改变。\n**L2横向**：Forrest主动奔跑→支架发生物理变化；没有推断结果=康复或得到超能力。\n**L2纵向**：威胁与逃跑建议→奔跑→支架散开；Jenny劝告是否为必要原因未验证。\n**反事实**：删支架变化则只剩奔跑，无法据此讨论限制外显改变。\n**创作镜头【H】**：腿部特写→奔跑中景→物件变化的动作落点，后期物件音效。原电影镜头、音色、时长=null。\n**关系**：NOT_RELATION；人评=null；来源=[MovieGraphs Fig.1](https://openaccess.thecvf.com/content_cvpr_2018/papers/Vicol_MovieGraphs_Towards_Understanding_CVPR_2018_paper.pdf)。"
+    },
+    {
+      "id": "DB_C4_FA",
+      "type": "text",
+      "x": 90,
+      "y": 32130,
+      "width": 2460,
+      "height": 470,
+      "color": "6",
+      "text": "# 视听零件｜另一来源，不得拼同场\n[FilmAnnotation forrest.xml](https://github.com/husky-helen/FilmAnnotation/blob/master/forrest.xml) 独立标注：frame2 Forrest 头部x=.48216,y=.28224，MS / Eye；frame4 Jenny MCU / High。这两帧**没有**与MovieGraphs欺凌片段同时间窗的证据。\n镜头注释作为独立可复用视觉素材字段；**不是上方三卡实际原片镜头**。scene_alignment=UNVERIFIED。"
+    },
+    {
+      "id": "DB_C4_FOOT",
+      "type": "text",
+      "x": 2610,
+      "y": 32130,
+      "width": 2540,
+      "height": 470,
+      "color": "6",
+      "text": "# R4/5 验收／R5交接\n1个已发表人工事件图 + 3张不同事件的单焦点十元【H】卡 + 1张横纵反馈图；无虚构时码。MND的Catalyst/Break into Two/Midpoint不强配此欺凌片段。\n**复用事件零件**：实际威胁→朋友提供行动信息→当事人采取行动→物件/身体状态可见改变；转译自己作品时换角色/行为/道具，不照搬具体剧情。\n**NEXT DB-C5**：检索/导航和验收，完成后STOP；无F2实看片、人评=null、UI=WAIT_LOCAL_UI。"
     }
   ],
   "edges": [
@@ -1498,9 +1578,9 @@
       "r8_original": "COASTAL_LIGHTHOUSE_6_CARDS_H"
     },
     "movie_db_canvas_20261102": {
-      "status": "R3_MOVIE_JOIN_PASS_SCENE_UNVERIFIED",
-      "progress": "3/5",
-      "next": "R4",
+      "status": "R4_SOURCE_EVENT_3CARDS_AND_VISUAL_H",
+      "progress": "4/5",
+      "next": "R5_SEARCH_INDEX_AND_CLOSE",
       "issue": "674-324",
       "verified_source_count": 8,
       "local_ui": "WAIT_LOCAL_UI",
@@ -1517,7 +1597,14 @@
         "status": "PASS"
       },
       "filmAnnotation_movie_match": "CANDIDATE_NO_IMDB",
-      "cross_movie_negative": "REJECTED"
+      "cross_movie_negative": "REJECTED",
+      "event_source": "MovieGraphs CVPR2018 Figure 1",
+      "case_id": "MG-FG",
+      "evidence_level": "F1_EXTERNAL_MANUAL_ANNOTATION",
+      "event_cards": 3,
+      "source_actual_movie_view": false,
+      "filmannotation_scene_match": "UNVERIFIED",
+      "human_feeling": null
     }
   }
 }
