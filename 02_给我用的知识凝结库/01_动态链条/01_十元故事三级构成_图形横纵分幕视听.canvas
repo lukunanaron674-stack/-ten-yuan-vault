@@ -919,6 +919,86 @@
       "height": 270,
       "color": "6",
       "text": "**R1 验收**：8库来源/字段/访问门禁。**R2** 导入真实原记录；**R3** 同片/同场对齐；**R4** 十元L3→L2→L1；**R5** 按电影/事件/构图检索，完结STOP。\n技术来源与样本见 [[黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL|原协议索引]]；本地Canvas视觉WAIT_LOCAL_UI。"
+    },
+    {
+      "id": "DB_C2_GROUP",
+      "type": "group",
+      "label": "12｜R2/5 已分析电影真实记录｜MND×MovieGraphs×FilmAnnotation",
+      "x": 0,
+      "y": 18900,
+      "width": 5240,
+      "height": 1860,
+      "color": "3"
+    },
+    {
+      "id": "DB_C2_HEAD",
+      "type": "text",
+      "x": 90,
+      "y": 18965,
+      "width": 5060,
+      "height": 155,
+      "color": "6",
+      "text": "# R2/5｜电影分析库真实原始记录入库【DONE】\n本轮已读三份原始分析格式：MND逐场CSV、MovieGraphs官方Notebook实际输出、FilmAnnotation影片XML。只存标注来源、场景编号和元数据；未看片、没做十元判定。"
+    },
+    {
+      "id": "DB_C2_MAP",
+      "type": "text",
+      "x": 90,
+      "y": 19150,
+      "width": 5060,
+      "height": 490,
+      "color": "4",
+      "text": "# 一张静态横纵图｜同片 ≠ 同一场景\n```text\n电影索引  《阿甘正传》tt0109830              《泰坦尼克号》tt0120338\n                  │                                 │\n              ┌───┴──────┐                     MovieGraphs\n            MND        FilmAnnotation           scene248\n           原片场景     摘选片段XML              ↓\nscene13/27/86│        frame2/3/4/5          片段内23–41.5s\n剧情节拍+秒级时码      景别／机位／人物坐标            │\n        │              │                           │\n        └─────┬────────┘                        仍无演员动作\n              ↓（版本/场景时码尚未对齐）\nR3待核：IMDb电影层可对照 ─→ 场景对齐UNVERIFIED ─→ 不推断十元\n反馈：时间单位不明／不同电影 ──→ 原始数据，禁止强行拼接\n```"
+    },
+    {
+      "id": "DB_C2_MND",
+      "type": "text",
+      "x": 90,
+      "y": 19680,
+      "width": 1215,
+      "height": 595,
+      "color": "5",
+      "text": "# MND｜《阿甘正传》\n**IMDb** tt0109830\n**来源：**人工众包叙事节拍CSV（数据已回读）\n\n- scene13：Catalyst，778.444–805.680秒\n- scene27：Break into Two，1254.587–1290.122秒\n- scene86：Midpoint，4022.060–4055.134秒\n\n[原标签](https://github.com/llafcode/The-Movie-Narrative-Dataset-MND/tree/main/Scene_Classification/labels) / [场景时码](https://github.com/llafcode/The-Movie-Narrative-Dataset-MND/tree/main/Scene_Classification/scene_timestamps)\n**不能确认具体事件**；人评=null。"
+    },
+    {
+      "id": "DB_C2_MG",
+      "type": "text",
+      "x": 1355,
+      "y": 19680,
+      "width": 1215,
+      "height": 595,
+      "color": "2",
+      "text": "# MovieGraphs｜《泰坦尼克号》\n**IMDb** tt0120338\n**[官方示例Notebook](https://github.com/katha-ai/MovieGraphs-Dataset-CVPR2018/blob/main/py3loader_new/tutorial.ipynb)**：读取已保存的运行输出（非解析pkl）\n\n- scene=[248]\n- fname=scene-248.ss-1270.es-1276.mp4\n- 原值 ss=1270 / es=1276\n- time-node：clip内23–41.5秒\n\n**动作/关系**：null（图内容未实际解包）\n**ss/es单位未核**，不能当电影时码。"
+    },
+    {
+      "id": "DB_C2_FA",
+      "type": "text",
+      "x": 2620,
+      "y": 19680,
+      "width": 1215,
+      "height": 595,
+      "color": "3",
+      "text": "# FilmAnnotation｜《阿甘正传》片段\n**[forrest.xml 原始标注](https://github.com/husky-helen/FilmAnnotation/blob/master/forrest.xml)**；Forrest refId0、Jenny refId1\n\n- frame2 / timeId157：Forrest、MS、Eye；头部x=.48216,y=.28224\n- frame3 / timeId314：Forrest、CU、Eye\n- frame4 / timeId468：Jenny、MCU、High\n- frame5 / timeId534：双人、MCU、Low、OTS\n\n**timeId的秒数基准未知**；不填原电影秒级时码。"
+    },
+    {
+      "id": "DB_C2_JOIN",
+      "type": "text",
+      "x": 3885,
+      "y": 19680,
+      "width": 1260,
+      "height": 595,
+      "color": "6",
+      "text": "# 电影层匹配候选与负控\n**MovieGraphs名单** 有 tt0109830：《阿甘正传》；它与MND的IMDb一致，属于电影层可用关联。\n\n**不可自动联接**：MND scene13/27/86 与 FilmAnnotation frame2/3/4/5，缺版本/片段内外时码映射。\n\nMovieGraphs示例是另一部电影《泰坦尼克号》；禁止误合成《阿甘正传》的具体事件。\n\n[MovieGraphs原片名名单](https://github.com/katha-ai/MovieGraphs-Dataset-CVPR2018/blob/main/movies_list.txt)"
+    },
+    {
+      "id": "DB_C2_FOOT",
+      "type": "text",
+      "x": 90,
+      "y": 20310,
+      "width": 5060,
+      "height": 340,
+      "color": "6",
+      "text": "# R2回执｜3源的真实记录已经入库，下一轮R3\n记录：MND 3场、MovieGraphs 官方示例clip 1场＋影片ID索引1条、FilmAnnotation 4帧，共9条原始记录，所有材料在[[黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL#DB-C2/5｜三源真实电影分析记录入库（2026-11-02）|原协议R2证据表]]逐一列原始文件blob SHA。\n**R3**：优先同片身份核验，然后比对版次/镜头时码；保持scene_alignment=UNVERIFIED直到实证通过。所有十元感受【未判】/human=null；原片F2未看；本地Obsidian视觉WAIT_LOCAL_UI。"
     }
   ],
   "edges": [
@@ -1076,12 +1156,16 @@
       "r6_visualization": "3_F1_cards"
     },
     "movie_db_canvas_20261102": {
-      "status": "R1_SOURCE_CARDS",
-      "progress": "1/5",
-      "next": "R2",
+      "status": "R2_ANNOTATION_SAMPLES_VERIFIED",
+      "progress": "2/5",
+      "next": "R3",
       "issue": "674-324",
       "verified_source_count": 8,
-      "local_ui": "WAIT_LOCAL_UI"
+      "local_ui": "WAIT_LOCAL_UI",
+      "source_count": 3,
+      "record_count": 9,
+      "film_identity_join": "MovieGraphs+MND tt0109830",
+      "scene_alignment": "UNVERIFIED"
     }
   }
 }
