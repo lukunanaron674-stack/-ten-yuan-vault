@@ -19,6 +19,20 @@ updated: 2026-11-02
 
 本技能只补 **影片实际证据入口**，不新建电影Canvas，不改L2理论。674-324的R6已由独立定时任务完成；这里是工程子模块，不重新计R6。
 
+## 让本地Codex识别Skill（用户本机执行）
+
+GitHub里存在SKILL.md **不等于**本地Codex已经安装。先确认Git工作树没有未同步/未提交的改动并安全拉取，再在Windows PowerShell、Obsidian仓库根目录执行（若目标已存在，先对比，禁止直接覆盖）：
+
+~~~powershell
+$src = (Resolve-Path "07-Codex大脑库/skills/ten-yuan-film-analysis").Path
+$dst = Join-Path $HOME ".codex\skills\ten-yuan-film-analysis"
+New-Item -ItemType Directory -Force (Split-Path $dst) | Out-Null
+if (Test-Path $dst) { Write-Error "目标Skill已存在，请先检查差异，勿直接复制"; exit 1 }
+Copy-Item -LiteralPath $src -Destination $dst -Recurse
+~~~
+
+之后重启Codex会话，再让Codex调用 ten-yuan-film-analysis。若用户用的是项目级而非全局Skill位置，应按所用Agent的官方发现规则登记；仅调用本Python脚本不需要安装到Codex目录。完成这一操作需要真正访问用户电脑，远程GitHub写回不能代替本地安装证明。
+
 ## 可执行命令（Windows原生）
 前提：Python 3.10+、ffmpeg与ffprobe位于PATH。先在仓库根执行：
 
