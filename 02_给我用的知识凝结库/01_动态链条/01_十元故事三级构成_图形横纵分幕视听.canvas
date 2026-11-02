@@ -1129,6 +1129,76 @@
       "width": 5020,
       "height": 90,
       "color": "6"
+    },
+    {
+      "id": "DB_C3_GROUP",
+      "type": "group",
+      "label": "14｜电影已分析库 R3/5｜同片/同场关联门禁与负控",
+      "x": 0,
+      "y": 24500,
+      "width": 5240,
+      "height": 2110,
+      "color": "3"
+    },
+    {
+      "id": "DB_C3_HEAD",
+      "type": "text",
+      "x": 90,
+      "y": 24565,
+      "width": 5050,
+      "height": 180,
+      "color": "6",
+      "text": "# DB-C3 / 5｜跨库关联（唯一可用JOIN：影片IMDb）\n【事实】MND和MovieGraphs均直接记录tt0109830；【待核】FilmAnnotation仅forrest.xml/角色名，没有原始IMDb主键。**同片PASS≠同场PASS，严禁把MND节拍自动灌入FilmAnnotation帧。**"
+    },
+    {
+      "id": "DB_C3_MAP",
+      "type": "text",
+      "x": 90,
+      "y": 24780,
+      "width": 5050,
+      "height": 760,
+      "color": "4",
+      "text": "# 横纵文字构图｜三种来源 × 电影级关联 × 场景级拒绝\n```text\n影片身份层 ─────────────────────────────────────────────────────────────\nMND【人工节拍】             MovieGraphs【人物关系标注】           FilmAnnotation【摄影标注】\n电影ID=tt0109830 ──同IMDb──→ 片单tt0109830【PASS】   forrest.xml：Forrest／Jenny\n  │                           │                             │（无IMDb）\n  ├─scene13: 778.444–805.680s│                             │ 影片身份【候选H】\n  │  raw beat=Catalyst        │                             ├─frame2: timeId=157\n  ├─scene27:1254.587–1290.122s                             │  shot=MS／Eye\n  │  raw beat=Break into Two  │                             └─frame4: timeId=468\n  └─scene86:4022.060–4055.134s│                               shot=MCU／High\n     raw beat=Midpoint        │                             │\n                             ↓                             ↓\n场景联接层 ─────────────────────────────────────────────────────────────\nMND.scene_id / 整片秒数   MovieGraphs.clip_id / 帧段   FA.frame_id / 片段timeId\n       └───────────────┬───────────────┬──────────────────┘\n                       ↓ 时间基准与具体画面未对齐\n           scene_join=UNVERIFIED　｜　十元=null　｜　F2原片未看\n反馈／反证 ────────────────────────────────────────────────────────────\n没有共同IMDb主键→撤销影片级PASS；没有同版本+片段起点+时码单位\n→不准将MND scene13/27/86与FA frame2/4连线；R4必须回原数据审查\n```\n"
+    },
+    {
+      "id": "DB_C3_PASS",
+      "type": "text",
+      "x": 90,
+      "y": 25585,
+      "width": 1590,
+      "height": 595,
+      "color": "5",
+      "text": "# ✅ 影片层 PASS｜同一个IMDb\n**MND**：[阿甘正传逐场标签CSV](https://github.com/llafcode/The-Movie-Narrative-Dataset-MND/blob/main/Scene_Classification/labels/tt0109830_forrest%20gump.csv)\n**MovieGraphs**：[影片清单](https://github.com/katha-ai/MovieGraphs-Dataset-CVPR2018/blob/main/movies_list.txt)\n两处原始key均为 `tt0109830`。可建立 movie_id Join，同片候选数据可检索。\n**验收级别：MOVIE_PASS**；尚无两源同场的已核片段，**SCENE_UNVERIFIED**。"
+    },
+    {
+      "id": "DB_C3_NEG",
+      "type": "text",
+      "x": 1740,
+      "y": 25585,
+      "width": 1590,
+      "height": 595,
+      "color": "2",
+      "text": "# ⛔ 场景层 WAIT｜时码单位不兼容\n**MND**：scene13 778.444–805.680秒；scene27 1254.587–1290.122秒；scene86 4022.060–4055.134秒。\n**FilmAnnotation**：[forrest.xml](https://github.com/husky-helen/FilmAnnotation/blob/master/forrest.xml)：frame2 timeId157，MS/Eye；frame4 timeId468，MCU/High，片段timeId原点/单位不明。\n不允许将这些frame绑定到MND任何一场，**scene_join=UNVERIFIED**，画面事件=null。"
+    },
+    {
+      "id": "DB_C3_REJECT",
+      "type": "text",
+      "x": 3390,
+      "y": 25585,
+      "width": 1760,
+      "height": 595,
+      "color": "3",
+      "text": "# ⛔ 不同片负控｜明确不联接\n[MovieGraphs官方Notebook](https://github.com/katha-ai/MovieGraphs-Dataset-CVPR2018/blob/main/py3loader_new/tutorial.ipynb)的示例 `tt0120338` 是《泰坦尼克号》，`scene-248.ss-1270.es-1276.mp4`，不应链接到《阿甘正传》 `tt0109830`。\n原 `ss/es` 的单位未证实；不得当作电影秒数。**cross_movie_join=REJECTED**。\n十元主/次、人物动作、真实观众感受均未判。"
+    },
+    {
+      "id": "DB_C3_FOOT",
+      "type": "text",
+      "x": 90,
+      "y": 26220,
+      "width": 5050,
+      "height": 300,
+      "color": "6",
+      "text": "# R3/5 验收与下轮交接\n**状态**：影片级有且仅有一条确定的 MND ↔ MovieGraphs IMDb JOIN；FilmAnnotation基于文件名/人物名仅候选；场景级PASS=0；另有跨电影REJECTED负例。**没有额外凭空生成电影剧情**。\n**NEXT R4**：选外部原始数据中真正写明动作/动机的具体事件，先作L3证据卡，再画L2横纵/反馈与L1十元感受【H】，不可用只有Catalyst的场景凭空写事件。F2原片=未看，human_feeling=null；本地UI=WAIT_LOCAL_UI。"
     }
   ],
   "edges": [
@@ -1327,16 +1397,26 @@
       "r7_visualization": "8_cards_B_V4"
     },
     "movie_db_canvas_20261102": {
-      "status": "R2_ANNOTATION_SAMPLES_VERIFIED",
-      "progress": "2/5",
-      "next": "R3",
+      "status": "R3_MOVIE_JOIN_PASS_SCENE_UNVERIFIED",
+      "progress": "3/5",
+      "next": "R4",
       "issue": "674-324",
       "verified_source_count": 8,
       "local_ui": "WAIT_LOCAL_UI",
       "source_count": 3,
       "record_count": 9,
       "film_identity_join": "MovieGraphs+MND tt0109830",
-      "scene_alignment": "UNVERIFIED"
+      "scene_alignment": "UNVERIFIED",
+      "movie_identity_join": {
+        "movie_imdb": "tt0109830",
+        "sources": [
+          "MND",
+          "MovieGraphs"
+        ],
+        "status": "PASS"
+      },
+      "filmAnnotation_movie_match": "CANDIDATE_NO_IMDB",
+      "cross_movie_negative": "REJECTED"
     }
   }
 }
