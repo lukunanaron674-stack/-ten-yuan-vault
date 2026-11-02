@@ -689,6 +689,76 @@
       "width": 4970,
       "height": 85,
       "color": "6"
+    },
+    {
+      "id": "G_MOVIEDB_01",
+      "type": "group",
+      "label": "09｜现成电影分析库｜已有人物/事件/镜头标注，不是片源",
+      "x": 0,
+      "y": 13420,
+      "width": 5240,
+      "height": 1860,
+      "color": "3"
+    },
+    {
+      "id": "MOVIEDB_HEAD",
+      "type": "text",
+      "text": "# 已分析电影数据库｜用户纠偏后的正式入口\n**找别人已经做好的分析，不找电影原片、不继续扩张拉片Skill。** 8个数据源已核官网/真实文件，详细字段见 [[黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL#674-324｜现成电影分析库接入索引（USER纠偏｜2026-11-02）|唯一协议索引]]；本区只作检索入口。",
+      "x": 90,
+      "y": 13505,
+      "width": 5050,
+      "height": 220,
+      "color": "6"
+    },
+    {
+      "id": "MOVIEDB_MAP",
+      "type": "text",
+      "text": "# 核心静态横纵构图｜外部已经分析好的数据 → 单焦点十元构图\n```text\n上游影片层  IMDb ID／片名／版本\n   │\n   ├── MND【人工】 ──→ 场景时码+15种叙事节拍 ─→ 分幕主骨架\n   ├── MovieGraphs【人工】→ 人物/动作/动机/互动 ─→ L2同场横向\n   ├── FilmAnnotation【人工】→ 景别/机位/画面位置 ─→ L3视听\n   ├── MovieNet / CineScale → 镜头/场景量化标签 ──→ 镜头证据\n   └── DataReel【模型】──→ 场景描述/声画统计 ───→ 全库检索\n                                      │\n验证桥：同片 ≠ 同场　需片源版本+时码+事件匹配【待核】\n                                      ↓\n L3 单焦点事件 ──→ L2横纵图/反事实 ──→ L1十元预测【H】\n                                      │\n反馈：不符合材料/关系端点 ─→ 返回原始标注核对；human=null\n```\n",
+      "x": 90,
+      "y": 13755,
+      "width": 5050,
+      "height": 610,
+      "color": "4"
+    },
+    {
+      "id": "MOVIEDB_NARRATIVE",
+      "type": "text",
+      "text": "# 人物行动＋故事节拍（优先）\n**[MovieGraphs](https://github.com/katha-ai/MovieGraphs-Dataset-CVPR2018)**：51电影／7,637片段，人物、关系、动作、理由/情境，多为人工场景图；原片不在GitHub。\n**[MND](https://github.com/llafcode/The-Movie-Narrative-Dataset-MND)**：45电影逐场15种节拍＋真实时间码CSV，已回读《阿甘正传》scene 13/27/86 标签。**45部≠仓库已有的45个时间主题条目**。\n**[UCSC因果事件对](https://nlds.soe.ucsc.edu/narrativecausality)**：物理/动机/心理/使能四类；申请获取，尚未下载。",
+      "x": 90,
+      "y": 14390,
+      "width": 1590,
+      "height": 570,
+      "color": "5"
+    },
+    {
+      "id": "MOVIEDB_VISUAL",
+      "type": "text",
+      "text": "# 镜头视听（已标注）\n**[FilmAnnotation](https://github.com/husky-helen/FilmAnnotation)**：真实XML逐帧人物位置、景别/机位；已检查benjamin.xml含MS/Eye。\n**[MovieNet](https://movienet.github.io/)**：1,100电影的动作/场景/景别/运动标注，不给电影正片。\n**[CineScale](https://data.mendeley.com/datasets/th46h4vdwd/1)**：124电影约79.2万帧景别类别，CSV可取，帧素材另申请。",
+      "x": 1740,
+      "y": 14390,
+      "width": 1590,
+      "height": 570,
+      "color": "3"
+    },
+    {
+      "id": "MOVIEDB_SEARCH",
+      "type": "text",
+      "text": "# 直接浏览的现成分析网站\n**[DV DataReel](https://datareel.distantviewing.org/)**：2,000+电影，搜索**语义场景**，看场景文字、镜头联系表、人物/镜头长度/景别/音轨统计；描述含模型生成，未核批量API。\n**[Kinolab](https://www.kinolab.org/)**：专家/师生标注过的电影片段，电影语言标签与片段检索；注册且有学术用途限制。\n**推荐先用DataReel找题材，再用MovieGraphs和MND取结构标签。**",
+      "x": 3390,
+      "y": 14390,
+      "width": 1760,
+      "height": 570,
+      "color": "2"
+    },
+    {
+      "id": "MOVIEDB_FOOT",
+      "type": "text",
+      "text": "**已核验的跨源实例**：《阿甘正传》IMDb tt0109830 同时列于MND/MovieGraphs；MND scene13=催化剂778.444–805.680秒，scene27=进入第二幕1254.587–1290.122秒；MovieGraphs论文另有Jenny叫Forrest逃跑的场景图，**未确认与这两个scene同一时窗，禁止强配**。F1/外部人工标签不是本机F2实看片；十元【H】、human=null、WAIT_LOCAL_UI。",
+      "x": 90,
+      "y": 14990,
+      "width": 5050,
+      "height": 225,
+      "color": "6"
     }
   ],
   "edges": [
@@ -840,7 +910,9 @@
         "B_V4": "R3_R4_candidate_existing"
       },
       "film_skill": "07-Codex大脑库/skills/ten-yuan-film-analysis/SKILL.md",
-      "local_f2_ready": false
+      "local_f2_ready": false,
+      "analyzed_movie_dbs": "DB-01..DB-08 repo-indexed",
+      "dataset_scope": "external_annotated_sources_not_films_viewed"
     }
   }
 }
