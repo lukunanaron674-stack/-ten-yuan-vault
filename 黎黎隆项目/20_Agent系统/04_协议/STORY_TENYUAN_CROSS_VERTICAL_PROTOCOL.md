@@ -953,3 +953,43 @@ T07叙事桥≠严格十元补位；同是音乐/旧物≠相同十元关系。
 **数据纪律**：不得把商业电影源视频、截图、字幕、访问Cookie、私有绝对路径放进GitHub/Canvas；正式仓库仅存事件概括/时间码/脱敏帧ID及关系H审计。必须回读现行L2正本与关系门禁，所有含z/zn旧生克补仍冻结。已有工作Canvas原位更新，不新建平行图；原674-313导演锁卡不受影响。
 
 **后续执行**：这不是R6-A/B/C/D重新记轮；R6原任务已于2026-11-02完成三部F1事件分析。新增F2管线部署作为674-324独立工程依赖记录在工单；接下来按原计划只跑R7，再跑R8至STOP。
+
+
+---
+
+## 674-324｜现成电影分析库接入索引（USER纠偏｜2026-11-02）
+
+> **USER真实需求**：不是找商业电影源文件，也不是再写拉片工具；而是找到**其他研究者/机构已经完成分析的电影数据库**，直接复用已有人物关系、动作、动机、故事节拍、逐镜摄像、剪辑、声音等人工或模型标注，再做独立十元映射。本章节是**现有三级编译协议的外部知识源索引**，不可声称电影已被本系统原片审看，更不能把数据集的一般标签等同十元结论。
+
+### 一级优先：能检索或下载已经存在的分析结果
+
+| 编号 | 数据库（公开入口） | **已有分析字段** | 访问/素材界限 | 优先接口 |
+|---|---|---|---|---|
+| DB-01 | [DV DataReel](https://datareel.distantviewing.org/) | 2,000+部影片：逐镜长度/景别/人物数/画面运动/音乐与对白比例；逐场模型描述、镜头接触表、人物踪迹；按情节语义找场景 | 官网可公开交互检索；未验证大批量官方API/原始标注可下载。其场景描述为**模型生成**，不是人工十元事实；主页展示总片数会更新 | 按问题检索“反复失败/旧信改变认知”→人审场景描述→L3证据候选 |
+| DB-02 | [MovieGraphs 官方数据](https://github.com/katha-ai/MovieGraphs-Dataset-CVPR2018) / [论文](https://openaccess.thecvf.com/content_cvpr_2018/html/Vicol_MovieGraphs_Towards_Understanding_CVPR_2018_paper.html) | 51部/7,637个电影片段；逐片段人物/情绪属性/相互关系/互动动作及原因/话题/自然语言情境描述，部分有时间戳；官方2025 Python3.10版已发布预标注的all_movies.pkl | GitHub有约62MB pkl分析数据、官方片名IMDb ID列表和教程；完整原片未发布；官方提供研究用1fps版链接但授权和访问需逐条核对。**pickle不应在未经可信度/隔离审查的本机直接反序列化** | 角色→行为→对象→动机→后果 L2横向 |
+| DB-03 | [The Movie Narrative Dataset (MND)](https://github.com/llafcode/The-Movie-Narrative-Dataset-MND) | 45部电影人工众包故事类型（10类）与**每个场景单独1个15节拍叙事功能标签**；labels CSV + scene_timestamps CSV 可查 | GitHub真实存在45部逐场标签与时间码文件；**无完整电影/场景视频**，标签本身不能证明具体镜头动作 | 先形成事件序列/转折骨架→L3 Axx-Cxx卡 |
+| DB-04 | [FilmAnnotation](https://github.com/husky-helen/FilmAnnotation) | 多部片中选定片段的XML逐帧角色位置、头部朝向、景别distance、camera angle、影像时码等（例如benjamin.xml、forrest.xml） | 仓库现有逐片XML文本；学术研究用途，**非全片视频，且XML中的网页视频源不保证持续可看**；多个文件并非全部电影完整逐镜标注 | 逐场的画面布局/角色位置/景别→L3视听 |
+| DB-05 | [Kinolab](https://www.kinolab.org/) / [Collections](https://kinolab.org/Collections.php) | 研究者/学生挑出的数百个具体电影片段及摄影、场面调度、剪辑、声音等电影语言标签 | 公开目录与注册入口；实际片段库需满足其学术用途和账户资格，不得将登录资源当公开可下载片源 | 人类影视专业标签补充视听技术 |
+| DB-06 | [MovieNet](https://movienet.github.io/) / [GitHub工具](https://github.com/movienet/movienet-tools) | 1,100部电影：约42K场景段落、65K动作/地点标签、92K景别/运镜标签、shot keyframes、字幕/剧本等 | **官方不发布原始电影**；整库截图很大，先取标注/索引而非161GB关键帧；各包下载实际可用性需实测 | 补L3动作/场景/视听字段，跨电影搜索同型画面 |
+| DB-07 | [CineScale](https://data.mendeley.com/datasets/th46h4vdwd/1) / [论文](https://pmc.ncbi.nlm.nih.gov/articles/PMC8090997/) | 124部导演作品、约79.2万帧的人为景别标签（以1fps标注），含远近景类别 | CSV源数据公开；帧图像另按作者说明申请，不代表正片；作者样本并非覆盖所有电影 | 验证景别分布、与十元【H】感受假说对照 |
+| DB-08 | [UCSC Narrative Causality](https://nlds.soe.ucsc.edu/narrativecausality) / [GitHub](https://github.com/zhichaohu/narrative-causality-event-pairs) | 从电影故事研究事件关系：物理因果、动机因果、心理因果、条件使能四类，以及实验评价 | 官网页面说明需填写申请以获取电影场景/事件评价数据；尚未本地实际取得样本 | L2纵向因果类型/删除测试的负例 |
+
+### 已读取的可验证真实数据实例（不是空项目推荐）
+
+- **CASE-DB-001｜《阿甘正传》Forrest Gump (1994)｜MND叙事节拍**：GitHub原数据 [场景标签CSV](https://github.com/llafcode/The-Movie-Narrative-Dataset-MND/blob/main/Scene_Classification/labels/tt0109830_forrest%20gump.csv) + [时间码CSV](https://github.com/llafcode/The-Movie-Narrative-Dataset-MND/blob/main/Scene_Classification/scene_timestamps/tt0109830_forrest%20gump_timestamps.csv) 已真实回读；IMDb \`tt0109830\`，对应\`scene_id=13\`的标注为\`Catalyst\`，范围\`778.444–805.680s\`；\`scene_id=27\`的标注为\`Break into Two\`，范围\`1254.587–1290.122s\`；\`scene_id=86\`为\`Midpoint\`，范围\`4022.060–4055.134s\`；这些是**MND作者的叙事节拍分类**，并**不能据此断言该区间的真实剧情具体发生了什么**。待L3具体事件证据。
+- **CASE-DB-002｜《阿甘正传》MovieGraphs人物行动图（论文展示例子，未与上方MND片段配对）**：研究论文图示明确“Jenny与Forrest在路上，三名男孩朝Forrest扔石头；Jenny叫他快跑，跑动过程中腿部矫形支架散开”。图中有**人物、动作、互动、动机、场景/情境文字**，可抽成横向事实端点；尚未核两个库为同一具体scene_id，**禁止把MND的13、27、86直接错配此事件**。十元感受分布【H】、human=null。
+- **CASE-DB-003｜FilmAnnotation \`benjamin.xml\`原始XML**：[源码](https://github.com/husky-helen/FilmAnnotation/blob/master/benjamin.xml) 实际存在\`<actor name="Ben">\`、镜头帧\`frame id="2"\`，摄影字段\`distance=MS\`与\`angle=Eye\`，以及演员头部相对画面\`position\`数值；可证明它**已经有人做好具体视听标注**，但这段样本不是完整电影已核镜头，也不允许直接补声效或观众感受。
+- **CASE-DB-004｜已有重叠索引机会**：MovieGraphs的\`movies_list.txt\`有\`tt0109830\`，MND有\`tt0109830\`，可用IMDb统一关联《阿甘正传》**影片层**；FilmAnnotation的\`forrest.xml\`是名称候选，未核发布版本与时码同源；不同源的场景需要核对版本/时长/局部文本/镜头证据才能scene_join=PASS。
+
+### 下一步的**真正成果**，不是继续做Skill
+
+1. **MOVIE-DB-INVENTORY**：先取以上DB-02/03/04三个可机器读的数据源，生成外部源登记字段\`source_id, film_imdb_id, title, year/version, annotation_file, scene_id, start_s, end_s, annotation_kind, raw_label, evidence_url, human_or_model, access_status, license, confidence\`；先只读，严禁盲目下载/上传商业电影。
+2. **MOVIE-DB-JOIN**：电影层合并用IMDb ID+年份+片别；镜头/场景层不按片名或排序拼接；未经时码与版本核对保持\`scene_alignment=UNVERIFIED\`。只在需要对照源为同一时窗时尝试关联。MND里45部并不等于本仓库“时间主题电影45条”。
+3. **MOVIE-DB-TRANSLATE**：已经存在的人工或模型标签→具名主体、动作、关系、动机、分幕、声画字段；具体事件不明确则\`event=null\`，不允许由Catalyst/Set-Up等标签脑补事件。再按本协议L3→L2→L1映射十元【H】，不自动升格关系正本。
+4. **验收阈值**：至少3个数据源的真实可读单例+1部跨库电影层匹配+1组明确不能跨库场景强行拼接的负例+至少1张不脑补时间码的横纵卡。源索引与可迁移事件零件存已有Canvas/协议原位，不新建重复Canvas。若希望持久离线查询**全库**，待用户指定可用存储/本地执行环境后只把开源标注索引同步到本地，不把原始电影/受限帧当可自由公开素材。
+
+### 与十元研究的边界
+
+- 别人做出的“人物恐惧/助人动机/中景/动机转折/催化剂”是**外部研究标签**；不能自动替换十元XN/XZ/NZ等的**十种主观关系性感受**，也不能据标签直接判生克补。
+- L2图形Txx是拓扑；MND 15节拍是叙事分类；严格十元关系另行验证；带声画样本不等于真实观众反馈。
+- Kinolab的内容有访问限制；DataReel站点可浏览但未验证官方批量API；MovieGraphs数据是pickle，**未经安全检查不得在用户4080本地直接反序列化**。所有“已分析”只说明原数据有该字段，不说明本用户已获得版权原片。
