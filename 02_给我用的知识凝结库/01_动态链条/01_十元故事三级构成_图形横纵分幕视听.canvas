@@ -13,7 +13,7 @@
     {
       "id": "intro",
       "type": "text",
-      "text": "# 十元故事三级构成｜统一工作台 · R3/8\n**目的**：把抽象感受变成可写、可拍、可审、可反向学习的具体事件。\n**分层**：①整片十元架构 → ②图形＋文字横纵构图＋概念映射 → ③分幕编号＋单焦点视听卡。\n**创作**自顶向下，**作品分析**从具体镜头和事件逆向回推。图形拓扑T≠十元生克补；同场、同向、双人互助不自动成为补位。\n**责任**：<https://linear.app/674/issue/674-324>　方法正本：[[黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL]]",
+      "text": "# 十元故事三级构成｜统一工作台 · R4/8\n**目的**：把抽象感受变成可写、可拍、可审、可反向学习的具体事件。\n**分层**：①整片十元架构 → ②图形＋文字横纵构图＋概念映射 → ③分幕编号＋单焦点视听卡。\n**创作**自顶向下，**作品分析**从具体镜头和事件逆向回推。图形拓扑T≠十元生克补；同场、同向、双人互助不自动成为补位。\n**责任**：<https://linear.app/674/issue/674-324>　方法正本：[[黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL]]",
       "x": 95,
       "y": 80,
       "width": 2030,
@@ -393,7 +393,7 @@
     {
       "id": "round_head",
       "type": "text",
-      "text": "# 只做有终点的研究｜当前 R3/8 已完成；下面是尚待执行的卡位\n**核心目标**：从单一十元或单一关系出发，按幕号×卡号具体到视听，而不是堆抽象标签。R4之前不将下列示例占位记作已审核镜头。",
+      "text": "# 只做有终点的研究｜当前 R4/8 已完成；R5–R8待做\n**核心目标**：从单一十元或单一关系出发，按幕号×卡号具体到视听，而不是堆抽象标签。R4之前不将下列示例占位记作已审核镜头。",
       "x": 85,
       "y": 4900,
       "width": 5080,
@@ -403,7 +403,7 @@
     {
       "id": "round_R4",
       "type": "text",
-      "text": "# R4｜幕卡视听编译【待做】\n\nA02-C01｜失序：life_capacity↓\nA02-C02｜整理：paper_order↑\nA03-C03｜证据：可见性↑\nA03-C04｜自主：choice↑\n**待补**每卡景别/角度/光色/声音/时长/反证。",
+      "text": "# R4｜幕卡视听编译【已完成H】\n\nA02-C01｜失序：life_capacity↓\nA02-C02｜整理：paper_order↑\nA03-C03｜证据：可见性↑\nA03-C04｜自主：choice↑\n**已补，详细见06区/协议：**每卡景别/角度/光色/声音/时长/反证。",
       "x": 85,
       "y": 5150,
       "width": 940,
@@ -458,6 +458,76 @@
       "y": 5810,
       "width": 5080,
       "height": 95,
+      "color": "6"
+    },
+    {
+      "id": "G_R4",
+      "type": "group",
+      "label": "06｜R4四张单焦点导演卡",
+      "x": 0,
+      "y": 6160,
+      "width": 5240,
+      "height": 1590,
+      "color": "4"
+    },
+    {
+      "id": "R4_header",
+      "type": "text",
+      "text": "# R4｜单一十元焦点×幕卡视听【H】\nL3编号Axx-Cxx仅为方法示范，对应原EP事件；严格生克补仍未验证。下方每卡只考一个主变量，镜头时间为剪辑候选，非H3直接生成。完整逐镜文本：[[黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL]] R4章节。",
+      "x": 80,
+      "y": 6230,
+      "width": 5050,
+      "height": 215,
+      "color": "4"
+    },
+    {
+      "id": "R4_A02-C01",
+      "type": "text",
+      "text": "# A02-C01【H】\n**焦点** Lucas XN＋N｜追求Z｜SINGLE_TENYUAN\n**结构** T11｜**唯一主变量** life_capacity↓\n**镜头/时段** 0–4 琴旁冷饭中景；4–8 俯拍乱谱/未回消息；8–12 手部特写空拍停奏；12–15 Claire观察纸墙遮人。\n**构图、光色、声音** 实践光；重复琴声到断奏；生活道具占比增大。\n**删卡测试** 去掉生活损失，反馈失序无证据。\n**审核** 人评null、未渲染、未审核。",
+      "x": 90,
+      "y": 6540,
+      "width": 950,
+      "height": 840,
+      "color": "1"
+    },
+    {
+      "id": "R4_A02-C02",
+      "type": "text",
+      "text": "# A02-C02【H】\n**焦点** Claire XN｜SINGLE_TENYUAN\n**结构** T03｜**唯一主变量** paper_order↑\n**镜头/时段** 0–3.5 双人中景征许可；3.5–7 俯拍整理谱纸；7–10.5 发现信②内层；10.5–14.3 Lucas仍转身继续练。\n**构图、光色、声音** 纸张整齐而人物未变；纸声转回琴声，保持光源和轴线。\n**删卡测试** 删去整理行为，纸面改善无法成立；帮助不等于十元补位。\n**审核** 人评null、未渲染、未审核。",
+      "x": 1360,
+      "y": 6540,
+      "width": 950,
+      "height": 840,
+      "color": "5"
+    },
+    {
+      "id": "R4_A03-C03",
+      "type": "text",
+      "text": "# A03-C03【H】\n**焦点** Lucas XN＋N｜SINGLE_TENYUAN\n**结构** T07｜**唯一主变量** past_evidence_visibility↑\n**镜头/时段** 0–3.2 Marcel敲A两拍；3.2–6.5 递蓝线旧书；6.5–10.3 俯拍拆信③；10.3–14.3 碎谱与缺页匹配切。\n**构图、光色、声音** 旧纸纹理/轮廓必须可对证；翻纸声与音乐错拍相接。\n**删卡测试** 若口头解释足以替代碎页，物件桥不独特。\n**审核** 人评null、未渲染、未审核。",
+      "x": 2630,
+      "y": 6540,
+      "width": 950,
+      "height": 840,
+      "color": "3"
+    },
+    {
+      "id": "R4_A03-C04",
+      "type": "text",
+      "text": "# A03-C04【H】\n**焦点** Lucas XN＋N｜追求Z｜SINGLE_TENYUAN\n**结构** T11回收｜**唯一主变量** composition_agency↑\n**镜头/时段** 0–3.3 读信④中近景；3.3–6.6 信⑤空白谱特写；6.6–10.3 同机位餐桌主动进食；10.3–14.3 主角落笔写C。\n**构图、光色、声音** 餐桌首尾构图同构；被动断奏→主动续音，A/B/C需后期核对。\n**删卡测试** 若祖母写完C或无亲自落笔，自主创作变量未发生。\n**审核** 人评null、未渲染、未审核。",
+      "x": 3900,
+      "y": 6540,
+      "width": 950,
+      "height": 840,
+      "color": "4"
+    },
+    {
+      "id": "R4_footer",
+      "type": "text",
+      "text": "R4四卡已生成；R5–R8待执行。当前只是研究候选；不得覆盖674-313的剧情与制作镜头。Windows Obsidian视觉验收待做。",
+      "x": 80,
+      "y": 7445,
+      "width": 5050,
+      "height": 125,
       "color": "6"
     }
   ],
@@ -515,17 +585,41 @@
       "toNode": "event_ep304",
       "toSide": "left",
       "label": "证据促成选择"
+    },
+    {
+      "id": "R4_edge_1",
+      "fromNode": "R4_A02-C01",
+      "fromSide": "right",
+      "toNode": "R4_A02-C02",
+      "toSide": "left",
+      "label": "纵向因果"
+    },
+    {
+      "id": "R4_edge_2",
+      "fromNode": "R4_A02-C02",
+      "fromSide": "right",
+      "toNode": "R4_A03-C03",
+      "toSide": "left",
+      "label": "经EP2-03/04"
+    },
+    {
+      "id": "R4_edge_3",
+      "fromNode": "R4_A03-C03",
+      "fromSide": "right",
+      "toNode": "R4_A03-C04",
+      "toSide": "left",
+      "label": "纵向因果"
     }
   ],
   "metadata": {
     "story_compiler_20261102": {
-      "version": "R3/8-canvas1",
+      "version": "R4/8-canvas1",
       "status": "research-hypothesis",
       "issue": "674-324",
       "authority": "L5-method-visualization",
       "source_protocol": "黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL.md",
       "topology": "T01-T12-candidate",
-      "next_round": "R4",
+      "next_round": "R5",
       "human_review": null,
       "local_ui": "WAIT_LOCAL_UI"
     }
