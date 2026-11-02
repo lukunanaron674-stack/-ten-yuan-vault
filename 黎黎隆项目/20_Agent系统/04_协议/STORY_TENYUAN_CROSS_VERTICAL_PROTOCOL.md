@@ -419,3 +419,9 @@ state: H | VERIFIED_TEXT | VIEWED_FRAME | HUMAN_REVIEWED
 - **后续使用**：R5从可信片介/影片证据中逆向选2个具体事件；R6只从这45条按F0/F1/F2分层挑3个证据充分者出卡，证据不足则WAIT。必须先区分作者意图/角色感情/AI预测观众感受/真实人评。
 
 **本轮唯一产物**：本协议R1索引与组合门禁；`FORMAT_PASS`=索引清点（非R3横纵主图验收）；`relation_gate=FROZEN_L2_UNCHANGED`；`counterfactual`=移除关键边后若后果不变，判伪关系/伪桥；`state=KNOWLEDGE_CAPTURED / RESEARCH_ONLY`；`NEXT=R2 L1整篇十元架构＋至少2个竞争骨架`；`WAIT_LOCAL_UI`（本轮不改Canvas，也未在本地Obsidian验收）。
+
+### R1并行回执保全｜同轮合并，不另计研究轮次
+本小时另一写入回执先行形成 Git commit `67229f3d225dcdeb9da37f0fe3353f34b5119441`（当时协议blob `988fc68c2da383dbaa6b19e9f98a927a1c310ac5`），随后本轮扩充清点写入。两份R1属于**同一轮资产审计**，不算两次研究，保留此前唯一的可复核补充：
+- 原Canvas元数据 `topology_gallery.edition=T01-T12-candidate`；时间Canvas `films_indexed=45`、`topology_candidates=41`、`unverified=[17,20,41,43]`、`f2_scene_verified=0`（均是文件内标记，不是本轮对原片的实看证明）。
+- 原R1已有四个**仅拓扑候选**对照：《我们一起摇太阳》T02+T05、《超时空辉耀姬！》T02+T05、《情书》T07+T12、《星际穿越》T07+T03。此处不由拓扑推导十元关系，也不升级F2。
+- 先前R1评论和commit保留作审计历史；本文件以当前合并后的R1清点为唯一继续入口，下一轮只进入R2。
