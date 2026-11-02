@@ -1379,6 +1379,126 @@
       "height": 470,
       "color": "6",
       "text": "# R4/5 验收／R5交接\n1个已发表人工事件图 + 3张不同事件的单焦点十元【H】卡 + 1张横纵反馈图；无虚构时码。MND的Catalyst/Break into Two/Midpoint不强配此欺凌片段。\n**复用事件零件**：实际威胁→朋友提供行动信息→当事人采取行动→物件/身体状态可见改变；转译自己作品时换角色/行为/道具，不照搬具体剧情。\n**NEXT DB-C5**：检索/导航和验收，完成后STOP；无F2实看片、人评=null、UI=WAIT_LOCAL_UI。"
+    },
+    {
+      "id": "DB_C5_GROUP",
+      "type": "group",
+      "label": "16｜已分析电影知识库 R5/5 四路检索与封闭验收",
+      "x": 0,
+      "y": 33000,
+      "width": 5240,
+      "height": 2780,
+      "color": "4"
+    },
+    {
+      "id": "DB_C5_HEAD",
+      "type": "text",
+      "x": 90,
+      "y": 33060,
+      "width": 5060,
+      "height": 190,
+      "color": "6",
+      "text": "# DB-C5 / 5｜电影知识库四种检索入口 · 样本库结案\n已可按电影、具体事件、视听标签、十元感受候选查既有卡号和原始数据链接。**这是有限样本导航**，不是所有电影已批量导入或整片F2分析。"
+    },
+    {
+      "id": "DB_C5_MAP",
+      "type": "text",
+      "x": 90,
+      "y": 33275,
+      "width": 5060,
+      "height": 565,
+      "color": "4",
+      "text": "# 第一屏｜横纵文字导航：已做过分析的数据 → 十元候选\n```text\n电影索引 ──→《阿甘正传》tt0109830 ──┬─→ MND叙事场景/时间码\n                                   ├─→ MovieGraphs人工行动图【影片级PASS】\n                                   └─→ FilmAnnotation镜头标签【片名候选】\n          └─→《泰坦尼克号》tt0120338 ──→ MovieGraphs Notebook元数据\n事件机制 ──→ 男孩投石 → Jenny劝逃 → Forrest奔跑 → 支架散开\n镜头语言 ──→ MS／Eye，MCU／High【独立XML帧，不是欺凌片段实拍证明】\n十元感受 ──→ XZ【H】威胁 / NZ【H】帮助 / ZX【H】主动变化\n                                            │\n负控回流 ←── 无匹配的电影版本/场景时间 → scene_join=UNVERIFIED\n```"
+    },
+    {
+      "id": "DB_C5_Q_FILM",
+      "type": "text",
+      "x": 90,
+      "y": 33900,
+      "width": 1190,
+      "height": 595,
+      "color": "5",
+      "text": "## ① 按电影名／IMDb检索\n**关键词**：阿甘正传、Forrest Gump、tt0109830；泰坦尼克号、Titanic、tt0120338。\n**已有出处**：[MovieGraphs片单](https://github.com/katha-ai/MovieGraphs-Dataset-CVPR2018/blob/main/movies_list.txt)、[MND电影目录](https://github.com/llafcode/The-Movie-Narrative-Dataset-MND/tree/main/Scene_Classification/labels)。\n**跳到**：第12分区 DB_C2_MND／DB_C2_MG；第14分区 DB_C3_PASS。\n此维度只确定影片身份，不代表片段已经对齐。"
+    },
+    {
+      "id": "DB_C5_Q_EVENT",
+      "type": "text",
+      "x": 1380,
+      "y": 33900,
+      "width": 1190,
+      "height": 595,
+      "color": "5",
+      "text": "## ② 按事件机制检索\n**关键词**：投石、威胁、朋友提醒、逃离、奔跑、支架散开。\n**可复用零件**：有人实施威胁→第三方给出行动提示→当事人行动→物件约束出现可见改变。\n**证据**：[MovieGraphs论文Fig.1](https://openaccess.thecvf.com/content_cvpr_2018/papers/Vicol_MovieGraphs_Towards_Understanding_CVPR_2018_paper.pdf)。\n**跳到**：第15分区 DB_C4_C01／C02／C03；事件从外部研究标注提取。"
+    },
+    {
+      "id": "DB_C5_Q_VIS",
+      "type": "text",
+      "x": 2670,
+      "y": 33900,
+      "width": 1190,
+      "height": 595,
+      "color": "3",
+      "text": "## ③ 按视听/构图语言检索\n**关键词**：MS中景、MCU中近景、Eye平视、High俯视、Low仰视、OTS过肩。\n**证据**：[FilmAnnotation forrest.xml](https://github.com/husky-helen/FilmAnnotation/blob/master/forrest.xml)。\n**跳到**：第12分区 DB_C2_FA；第15分区 DB_C4_FA。\n注意这组镜头不是已证实的MovieGraphs欺凌场景画面；音效/运镜仍null。"
+    },
+    {
+      "id": "DB_C5_Q_FEEL",
+      "type": "text",
+      "x": 3960,
+      "y": 33900,
+      "width": 1190,
+      "height": 595,
+      "color": "2",
+      "text": "## ④ 按十元感受候选检索\n**关键词**：XZ【H】／恐惧；NZ【H】／依靠；ZX【H】／主动突破；T03／T07。\n**映射**：MG-FG-C01→XZ【H】；MG-FG-C02→NZ【H】；MG-FG-C03→ZX【H】。\n**跳到**：第15分区 DB_C4_MAP 与三张 MG-FG 卡。\n未真人实验，不能拿角色心理标签证明观众感受，更不能判补。"
+    },
+    {
+      "id": "DB_C5_R_FILM",
+      "type": "text",
+      "x": 90,
+      "y": 34530,
+      "width": 1190,
+      "height": 735,
+      "color": "5",
+      "text": "## 影片结果卡｜真实标注片单\n**《阿甘正传》tt0109830**：MND scene13 Catalyst（778.444–805.680s）、27 Break into Two（1254.587–1290.122s）、86 Midpoint（4022.060–4055.134s）。[原始标签和时间码](https://github.com/llafcode/The-Movie-Narrative-Dataset-MND/tree/main/Scene_Classification)。\nMovieGraphs片单同IMDb：movie_join=PASS。FilmAnnotation只有forrest.xml和角色名称，IMDb未记载：身份候选。\n**《泰坦尼克号》tt0120338**：[Notebook](https://github.com/katha-ai/MovieGraphs-Dataset-CVPR2018/blob/main/py3loader_new/tutorial.ipynb)保存scene248示例；ss/es单位未核。"
+    },
+    {
+      "id": "DB_C5_R_EVENT",
+      "type": "text",
+      "x": 1380,
+      "y": 34530,
+      "width": 1190,
+      "height": 735,
+      "color": "5",
+      "text": "## 事件结果卡｜三张单焦点\n**MG-FG-C01**：男孩投石→physical_threat↑；XZ【H】。\n**MG-FG-C02**：Jenny劝跑→escape_instruction_present:0→1；NZ【H】。\n**MG-FG-C03**：Forrest跑动支架散开→brace_integrity:完整→散开；ZX【H】。\n[原始论文Fig.1](https://openaccess.thecvf.com/content_cvpr_2018/papers/Vicol_MovieGraphs_Towards_Understanding_CVPR_2018_paper.pdf)；本Canvas第15分区有完整横纵图与反事实。\n**竞争解释**：Jenny不喊跑，Forrest也可能因外部威胁而跑。补位关系尚未证明。"
+    },
+    {
+      "id": "DB_C5_R_VIS",
+      "type": "text",
+      "x": 2670,
+      "y": 34530,
+      "width": 1190,
+      "height": 735,
+      "color": "3",
+      "text": "## 视听结果卡｜独立景别原标注\n来源：[FilmAnnotation forrest.xml](https://github.com/husky-helen/FilmAnnotation/blob/master/forrest.xml)\n- frame2 timeId157：Forrest MS／Eye，头部相对坐标 x=.48216,y=.28224。\n- frame4 timeId468：Jenny MCU／High。\n- frame5 timeId534：双人 MCU／Low／OTS（见 DB_C2_FA）。\n**原电影绝对秒数**：null；片段起点/timeId单位未核；与MovieGraphs欺凌场景scene_alignment=UNVERIFIED。\n仅能作可迁移景别词汇，不可称原影片已核镜头语言。"
+    },
+    {
+      "id": "DB_C5_R_FEEL",
+      "type": "text",
+      "x": 3960,
+      "y": 34530,
+      "width": 1190,
+      "height": 735,
+      "color": "2",
+      "text": "## 十元与证据结果卡\n**XZ【H】**→被投石威胁的危险感；\n**NZ【H】**→朋友提醒可能诱发的依靠感；\n**ZX【H】**→行动与约束变化。\n这些均为**对观众感受的AI假设**，非外部标注员或真人观众给出的十元分数。\nT03为叙事串联；T07只是假设性的朋友信息桥；不是正式生克补。\n**负控**：MND场景秒码不与FilmAnnotation frame2强拼。\n详细研究：[[黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL|三级编译方法正本]]。"
+    },
+    {
+      "id": "DB_C5_FOOT",
+      "type": "text",
+      "x": 90,
+      "y": 35310,
+      "width": 5060,
+      "height": 350,
+      "color": "6",
+      "text": "# DB-C1–C5 五轮已完成【研究Canvas级】｜STOP\n**已做**：R1八来源卡→R2三库九条原始标注→R3影片级PASS/场景级不对齐负控→R4一组已标注事件、三张十元候选→R5四条检索路径和原始出处链接。\n**没有做**：全量电影数据抓取/离线数据库搜索引擎、可信PKL批量解析、电影原片F2逐镜、观众实测、Windows Obsidian实屏验证。状态分别为NOT_IMPORTED／UNVERIFIED／null／WAIT_LOCAL_UI。\n**封闭**：本五轮到此STOP，不新建DB-C6；若以后扩大数据覆盖率，需另行明确授权和范围，不修改已结案的八轮研究任务。"
     }
   ],
   "edges": [
@@ -1551,6 +1671,38 @@
       "toNode": "R7_A03-C03",
       "toSide": "left",
       "label": "因果推进"
+    },
+    {
+      "id": "DB_C5_EDGE_1",
+      "fromNode": "DB_C5_Q_FILM",
+      "fromSide": "bottom",
+      "toNode": "DB_C5_R_FILM",
+      "toSide": "top",
+      "label": "影片索引"
+    },
+    {
+      "id": "DB_C5_EDGE_2",
+      "fromNode": "DB_C5_Q_EVENT",
+      "fromSide": "bottom",
+      "toNode": "DB_C5_R_EVENT",
+      "toSide": "top",
+      "label": "事件索引"
+    },
+    {
+      "id": "DB_C5_EDGE_3",
+      "fromNode": "DB_C5_Q_VIS",
+      "fromSide": "bottom",
+      "toNode": "DB_C5_R_VIS",
+      "toSide": "top",
+      "label": "镜头索引"
+    },
+    {
+      "id": "DB_C5_EDGE_4",
+      "fromNode": "DB_C5_Q_FEEL",
+      "fromSide": "bottom",
+      "toNode": "DB_C5_R_FEEL",
+      "toSide": "top",
+      "label": "十元索引"
     }
   ],
   "metadata": {
@@ -1578,9 +1730,9 @@
       "r8_original": "COASTAL_LIGHTHOUSE_6_CARDS_H"
     },
     "movie_db_canvas_20261102": {
-      "status": "R4_SOURCE_EVENT_3CARDS_AND_VISUAL_H",
-      "progress": "4/5",
-      "next": "R5_SEARCH_INDEX_AND_CLOSE",
+      "status": "REPO_DONE_WITH_LIMITS",
+      "progress": "5/5",
+      "next": "STOP",
       "issue": "674-324",
       "verified_source_count": 8,
       "local_ui": "WAIT_LOCAL_UI",
@@ -1604,7 +1756,14 @@
       "event_cards": 3,
       "source_actual_movie_view": false,
       "filmannotation_scene_match": "UNVERIFIED",
-      "human_feeling": null
+      "human_feeling": null,
+      "navigable_facets": [
+        "film_imdb",
+        "event_mechanism",
+        "shot_label",
+        "tenyuan_H"
+      ],
+      "full_offline_search": false
     }
   }
 }
