@@ -169,30 +169,335 @@
       "width": 620,
       "height": 370,
       "color": "4"
+    },
+    {
+      "id": "topology_v1_gallery",
+      "type": "group",
+      "label": "故事关系图形母型｜12种基础拓扑（候选工作分类）",
+      "x": 2610,
+      "y": -1660,
+      "width": 1330,
+      "height": 3380,
+      "color": "5"
+    },
+    {
+      "id": "topology_v1_intro",
+      "type": "text",
+      "x": 2700,
+      "y": -1550,
+      "width": 1140,
+      "height": 300,
+      "color": "4",
+      "text": "# 🎬 故事关系图形构成｜拓扑母型 T01–T12\n**地位：创作工作分类／非十元理论新正本｜2026-11-02**\n先画“点与线的连接方式”，再填人物、十元和事件。数量不是数学上的全部图形；复杂网络可继续组合。\n**读图：** A/B/C=人物、场景、组织、物件或状态；→只表示待检验的作用通道，不自动等于生、克、补；↛ 表示原本不可直接连通。\n**核心分层：** 图形拓扑（怎么连）≠ 十元关系（何种作用）≠ 剧情事件（如何真实发生）。"
+    },
+    {
+      "id": "topology_v1_T01",
+      "type": "text",
+      "x": 2700,
+      "y": -1200,
+      "width": 535,
+      "height": 330,
+      "color": "2",
+      "text": "# T01｜单向\n```text\nA → B\n```\n**构成条件：**最小一条关系通道。A的行为必须改变B的某个状态；同框不算发生作用。\n**填元方式：**先确立端点与方向，再试填十元；按现行关系表验收生/克/补，未验收只写“候选/none”。"
+    },
+    {
+      "id": "topology_v1_T02",
+      "type": "text",
+      "x": 3280,
+      "y": -1200,
+      "width": 535,
+      "height": 330,
+      "color": "3",
+      "text": "# T02｜双向\n```text\nA ⇄ B\n```\n**构成条件：**A改变B，B也以独立行为改变A。双向作用不等于天然互补；需分两条事件证据。\n**填元方式：**先确立端点与方向，再试填十元；按现行关系表验收生/克/补，未验收只写“候选/none”。"
+    },
+    {
+      "id": "topology_v1_T03",
+      "type": "text",
+      "x": 2700,
+      "y": -835,
+      "width": 535,
+      "height": 330,
+      "color": "2",
+      "text": "# T03｜串联\n```text\nA → B → C\n```\n**构成条件：**第一步的输出成为第二步的条件，强调逐级传递；B只是经过站时不升级为“架桥”。\n**填元方式：**先确立端点与方向，再试填十元；按现行关系表验收生/克/补，未验收只写“候选/none”。"
+    },
+    {
+      "id": "topology_v1_T04",
+      "type": "text",
+      "x": 3280,
+      "y": -835,
+      "width": 535,
+      "height": 330,
+      "color": "3",
+      "text": "# T04｜分叉\n```text\n　　↗ B\nA\n　　↘ C\n```\n**构成条件：**同一个行动分出两种后果；检查B、C是否真的分别变化，而非重复叙述A的行动。\n**填元方式：**先确立端点与方向，再试填十元；按现行关系表验收生/克/补，未验收只写“候选/none”。"
+    },
+    {
+      "id": "topology_v1_T05",
+      "type": "text",
+      "x": 2700,
+      "y": -470,
+      "width": 535,
+      "height": 330,
+      "color": "2",
+      "text": "# T05｜汇聚\n```text\nA → C ← B\n```\n**构成条件：**两个来源汇向共同结果C。检验各自输入及共同造成的变化，可构成合力或抵消。\n**填元方式：**先确立端点与方向，再试填十元；按现行关系表验收生/克/补，未验收只写“候选/none”。"
+    },
+    {
+      "id": "topology_v1_T06",
+      "type": "text",
+      "x": 3280,
+      "y": -470,
+      "width": 535,
+      "height": 330,
+      "color": "3",
+      "text": "# T06｜并联／双通道\n```text\nA ⇄ B【关系①】\nA ⇄ B【关系②】\n```\n**构成条件：**同一双人之间有两条独立机制。双人双补可填两条严格补位；必须分别给出事件与变量。\n**填元方式：**先确立端点与方向，再试填十元；按现行关系表验收生/克/补，未验收只写“候选/none”。"
+    },
+    {
+      "id": "topology_v1_T07",
+      "type": "text",
+      "x": 2700,
+      "y": -105,
+      "width": 535,
+      "height": 330,
+      "color": "2",
+      "text": "# T07｜架桥\n```text\nA ↛ C\nA → M → C\n```\n**构成条件：**M提供不可替代的中介／桥变量，使A与C由不连通变可连通。拿掉M后连线须断。\n**填元方式：**先确立端点与方向，再试填十元；按现行关系表验收生/克/补，未验收只写“候选/none”。"
+    },
+    {
+      "id": "topology_v1_T08",
+      "type": "text",
+      "x": 3280,
+      "y": -105,
+      "width": 535,
+      "height": 330,
+      "color": "3",
+      "text": "# T08｜三角\n```text\nA → B\n↑　 ↘\nC ←─\n```\n**构成条件：**三处关系真实相互牵制或回流。图上画三角形却没有第三方作用，不成立。\n**填元方式：**先确立端点与方向，再试填十元；按现行关系表验收生/克/补，未验收只写“候选/none”。"
+    },
+    {
+      "id": "topology_v1_T09",
+      "type": "text",
+      "x": 2700,
+      "y": 260,
+      "width": 535,
+      "height": 330,
+      "color": "2",
+      "text": "# T09｜菱形／分合\n```text\nA → B ↘\n　　　 D\nA → C ↗\n```\n**构成条件：**起点分成至少两条不同路径，在D合流；两条路径要提供不同条件而非重复。\n**填元方式：**先确立端点与方向，再试填十元；按现行关系表验收生/克/补，未验收只写“候选/none”。"
+    },
+    {
+      "id": "topology_v1_T10",
+      "type": "text",
+      "x": 3280,
+      "y": 260,
+      "width": 535,
+      "height": 330,
+      "color": "3",
+      "text": "# T10｜星形／中心辐射\n```text\n　 B\n　 ↕\nC ⇄ H ⇄ D\n```\n**构成条件：**多个对象与中心H发生关系。检查中心移除后哪些支路失效，辨别权力中心与中介平台。\n**填元方式：**先确立端点与方向，再试填十元；按现行关系表验收生/克/补，未验收只写“候选/none”。"
+    },
+    {
+      "id": "topology_v1_T11",
+      "type": "text",
+      "x": 2700,
+      "y": 625,
+      "width": 535,
+      "height": 330,
+      "color": "2",
+      "text": "# T11｜回环／反馈\n```text\nA₀ → B → C → A₁\n```\n**构成条件：**阶段末回到同一对象，但A₁应带有可观察的残差或新状态；原样重播只是重复。\n**填元方式：**先确立端点与方向，再试填十元；按现行关系表验收生/克/补，未验收只写“候选/none”。"
+    },
+    {
+      "id": "topology_v1_T12",
+      "type": "text",
+      "x": 3280,
+      "y": 625,
+      "width": 535,
+      "height": 330,
+      "color": "3",
+      "text": "# T12｜交叉／镜像\n```text\nA → C　 A → D\nB → D　 B → C\n```\n**构成条件：**两组角色/力量交叉作用于两端，适合错位、互换、双线反衬；检验四条边的必要性。\n**填元方式：**先确立端点与方向，再试填十元；按现行关系表验收生/克/补，未验收只写“候选/none”。"
+    },
+    {
+      "id": "topology_v1_pipeline",
+      "type": "text",
+      "x": 2700,
+      "y": 1090,
+      "width": 1140,
+      "height": 530,
+      "color": "6",
+      "text": "# 🧩 抽取图形 → 填十元 → 验证事件｜六步卡\n**①选拓扑**：T01–T12一种或叠加；只决定连接方式。\n**②定端点**：每个点是谁/是什么；人物数与关系数分开。\n**③填十元**：记录主/次十元及感受目标；不以人物标签替代事件。\n**④选作用边**：生／克／补／none；依《十元生补克表》判合法位置与机制。\n**⑤写具体事件**：行动者→具体行动→受作用对象→被改变变量Δ→后续可行动条件。\n**⑥拿掉测试**：移除某个点/边后，剧情的哪一环断裂？再审五维主题与横纵因果。\n\n**迁移例（候选）**：时间信封B方向“双人双补”＝T06并联：XN↔Z、ZX↔NX，需两起独立补位事件；信件若实际承担不可替代的中介机制，再叠T07架桥。A/B探索版本不得混为已定剧本。\n**来源**：[[01-十元系统/动态母型]] · [[01-十元系统/十元生补克表]] · [[08-生克补动态链研究/README_生克补动态链研究总索引]]"
     }
   ],
   "edges": [
-    {"id":"e1","fromNode":"canonical","fromSide":"right","toNode":"center","toSide":"left","label":"定义节点"},
-    {"id":"e2","fromNode":"relation_comp","fromSide":"left","toNode":"center","toSide":"right","label":"编排生/克/补"},
-    {"id":"e3","fromNode":"chain_core","fromSide":"right","toNode":"center","toSide":"left","label":"状态变化边"},
-    {"id":"e4","fromNode":"hv","fromSide":"top","toNode":"center","toSide":"bottom","label":"阶段读法"},
-    {"id":"e5","fromNode":"center","fromSide":"right","toNode":"evaluator","toSide":"left","label":"质量审核"},
-    {"id":"e6","fromNode":"canonical","fromSide":"right","toNode":"relation_comp","toSide":"left","label":"节点语义 → 关系语法"},
-    {"id":"e7","fromNode":"relation_comp","fromSide":"left","toNode":"chain_core","toSide":"right","label":"关系骨架 → 动态链"},
-    {"id":"e8","fromNode":"classic","fromSide":"right","toNode":"relation_comp","toSide":"left","label":"反例修正 v1.1"},
-    {"id":"e9","fromNode":"center","fromSide":"top","toNode":"relation_visual","toSide":"bottom","label":"单边视觉证明"},
-    {"id":"e10","fromNode":"center","fromSide":"top","toNode":"visual_ops","toSide":"bottom","label":"状态变化可视化"},
-    {"id":"e11","fromNode":"style","fromSide":"right","toNode":"visual_ops","toSide":"left","label":"起点/终点前置"},
-    {"id":"e12","fromNode":"relation_visual","fromSide":"right","toNode":"visual_ops","toSide":"left","label":"单边证据 → 动态操作"},
-    {"id":"e13","fromNode":"visual_ops","fromSide":"right","toNode":"auditor","toSide":"left","label":"生成结果审核"},
-    {"id":"e14","fromNode":"dsl","fromSide":"left","toNode":"visual_ops","toSide":"right","label":"机器接口"},
-    {"id":"e15","fromNode":"five_axis","fromSide":"right","toNode":"world","toSide":"left","label":"具象映射辅助（不合并）"},
-    {"id":"e16","fromNode":"center","fromSide":"right","toNode":"world","toSide":"left","label":"关系结构输出"},
-    {"id":"e17","fromNode":"evaluator","fromSide":"bottom","toNode":"lililong","toSide":"top","label":"筛选母链"},
-    {"id":"e18","fromNode":"world","fromSide":"bottom","toNode":"lililong","toSide":"top","label":"世界观候选骨架"},
-    {"id":"e19","fromNode":"lililong","fromSide":"left","toNode":"archive","toSide":"right","label":"实战反例才回灌"},
-    {"id":"e20","fromNode":"auditor","fromSide":"bottom","toNode":"archive","toSide":"right","label":"failure 回灌"},
-    {"id":"e21","fromNode":"archive","fromSide":"top","toNode":"center","toSide":"bottom","label":"仅触发条件满足才重开研究"}
+    {
+      "id": "e1",
+      "fromNode": "canonical",
+      "fromSide": "right",
+      "toNode": "center",
+      "toSide": "left",
+      "label": "定义节点"
+    },
+    {
+      "id": "e2",
+      "fromNode": "relation_comp",
+      "fromSide": "left",
+      "toNode": "center",
+      "toSide": "right",
+      "label": "编排生/克/补"
+    },
+    {
+      "id": "e3",
+      "fromNode": "chain_core",
+      "fromSide": "right",
+      "toNode": "center",
+      "toSide": "left",
+      "label": "状态变化边"
+    },
+    {
+      "id": "e4",
+      "fromNode": "hv",
+      "fromSide": "top",
+      "toNode": "center",
+      "toSide": "bottom",
+      "label": "阶段读法"
+    },
+    {
+      "id": "e5",
+      "fromNode": "center",
+      "fromSide": "right",
+      "toNode": "evaluator",
+      "toSide": "left",
+      "label": "质量审核"
+    },
+    {
+      "id": "e6",
+      "fromNode": "canonical",
+      "fromSide": "right",
+      "toNode": "relation_comp",
+      "toSide": "left",
+      "label": "节点语义 → 关系语法"
+    },
+    {
+      "id": "e7",
+      "fromNode": "relation_comp",
+      "fromSide": "left",
+      "toNode": "chain_core",
+      "toSide": "right",
+      "label": "关系骨架 → 动态链"
+    },
+    {
+      "id": "e8",
+      "fromNode": "classic",
+      "fromSide": "right",
+      "toNode": "relation_comp",
+      "toSide": "left",
+      "label": "反例修正 v1.1"
+    },
+    {
+      "id": "e9",
+      "fromNode": "center",
+      "fromSide": "top",
+      "toNode": "relation_visual",
+      "toSide": "bottom",
+      "label": "单边视觉证明"
+    },
+    {
+      "id": "e10",
+      "fromNode": "center",
+      "fromSide": "top",
+      "toNode": "visual_ops",
+      "toSide": "bottom",
+      "label": "状态变化可视化"
+    },
+    {
+      "id": "e11",
+      "fromNode": "style",
+      "fromSide": "right",
+      "toNode": "visual_ops",
+      "toSide": "left",
+      "label": "起点/终点前置"
+    },
+    {
+      "id": "e12",
+      "fromNode": "relation_visual",
+      "fromSide": "right",
+      "toNode": "visual_ops",
+      "toSide": "left",
+      "label": "单边证据 → 动态操作"
+    },
+    {
+      "id": "e13",
+      "fromNode": "visual_ops",
+      "fromSide": "right",
+      "toNode": "auditor",
+      "toSide": "left",
+      "label": "生成结果审核"
+    },
+    {
+      "id": "e14",
+      "fromNode": "dsl",
+      "fromSide": "left",
+      "toNode": "visual_ops",
+      "toSide": "right",
+      "label": "机器接口"
+    },
+    {
+      "id": "e15",
+      "fromNode": "five_axis",
+      "fromSide": "right",
+      "toNode": "world",
+      "toSide": "left",
+      "label": "具象映射辅助（不合并）"
+    },
+    {
+      "id": "e16",
+      "fromNode": "center",
+      "fromSide": "right",
+      "toNode": "world",
+      "toSide": "left",
+      "label": "关系结构输出"
+    },
+    {
+      "id": "e17",
+      "fromNode": "evaluator",
+      "fromSide": "bottom",
+      "toNode": "lililong",
+      "toSide": "top",
+      "label": "筛选母链"
+    },
+    {
+      "id": "e18",
+      "fromNode": "world",
+      "fromSide": "bottom",
+      "toNode": "lililong",
+      "toSide": "top",
+      "label": "世界观候选骨架"
+    },
+    {
+      "id": "e19",
+      "fromNode": "lililong",
+      "fromSide": "left",
+      "toNode": "archive",
+      "toSide": "right",
+      "label": "实战反例才回灌"
+    },
+    {
+      "id": "e20",
+      "fromNode": "auditor",
+      "fromSide": "bottom",
+      "toNode": "archive",
+      "toSide": "right",
+      "label": "failure 回灌"
+    },
+    {
+      "id": "e21",
+      "fromNode": "archive",
+      "fromSide": "top",
+      "toNode": "center",
+      "toSide": "bottom",
+      "label": "仅触发条件满足才重开研究"
+    },
+    {
+      "id": "topology_v1_to_world",
+      "fromNode": "topology_v1_pipeline",
+      "fromSide": "left",
+      "toNode": "world",
+      "toSide": "right",
+      "label": "骨架母型供世界观调用｜导航非十元关系"
+    }
   ],
   "metadata": {
     "version": "1.0-1.0",
@@ -201,6 +506,11 @@
       "version": "v1.0",
       "updated": "2026-09-17",
       "status": "current"
+    },
+    "topology_gallery": {
+      "edition": "T01-T12-candidate",
+      "updated": "2026-11-02",
+      "note": "graph topology vs ten-yuan semantics vs story evidence"
     }
   }
 }
