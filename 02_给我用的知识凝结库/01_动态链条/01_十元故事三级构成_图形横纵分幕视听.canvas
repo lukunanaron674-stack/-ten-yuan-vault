@@ -759,6 +759,56 @@
       "width": 5050,
       "height": 225,
       "color": "6"
+    },
+    {
+      "id": "G_R6_FILM",
+      "type": "group",
+      "label": "10｜R6时间电影45条分层＋三项F1分析",
+      "x": 0,
+      "y": 15480,
+      "width": 5240,
+      "height": 1200,
+      "color": "6"
+    },
+    {
+      "id": "R6_TOP",
+      "type": "text",
+      "text": "# R6/8已完成｜45条索引：41条身份可辨候选＋4条待核\n3部官方简介F1／原片F2=0／真人观感null。图形T不等于十元生克补。详情：[[黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL]] R6章。",
+      "x": 100,
+      "y": 15550,
+      "width": 5020,
+      "height": 250,
+      "color": "6"
+    },
+    {
+      "id": "R6_FILM_0",
+      "type": "text",
+      "text": "# 《土拨鼠之日》【F1】\n**图形** T11 回环\n**唯一变量** calendar_progress=0\n**横纵事件** 暴雪困住菲尔→次晨仍是2月2日；外部日期重置，内在经验待核。\n**十元** 只可提出【H】感受预测。\n**视听** 原片未看，机位、声音及镜头时长待核。\n**反证** 取消时间规则/损失限制后，结构是否还成立？",
+      "x": 100,
+      "y": 15910,
+      "width": 1500,
+      "height": 610,
+      "color": "1"
+    },
+    {
+      "id": "R6_FILM_1",
+      "type": "text",
+      "text": "# 《源代码》【F1】\n**图形** T11＋T03\n**唯一变量** clue_access↑【H】\n**横纵事件** 重复进入爆炸前8分钟列车→搜寻炸弹及凶手；线索增量需原片证实。\n**十元** 只可提出【H】感受预测。\n**视听** 原片未看，机位、声音及镜头时长待核。\n**反证** 取消时间规则/损失限制后，结构是否还成立？",
+      "x": 1810,
+      "y": 15910,
+      "width": 1500,
+      "height": 610,
+      "color": "3"
+    },
+    {
+      "id": "R6_FILM_2",
+      "type": "text",
+      "text": "# 《时空恋旅人》【F1】\n**图形** T04＋T03\n**唯一变量** control_scope受限【H】\n**横纵事件** 蒂姆能修改个人过去→尝试改善生活→不能消除所有家庭损失。\n**十元** 只可提出【H】感受预测。\n**视听** 原片未看，机位、声音及镜头时长待核。\n**反证** 取消时间规则/损失限制后，结构是否还成立？",
+      "x": 3520,
+      "y": 15910,
+      "width": 1500,
+      "height": 610,
+      "color": "5"
     }
   ],
   "edges": [
@@ -912,7 +962,8 @@
       "film_skill": "07-Codex大脑库/skills/ten-yuan-film-analysis/SKILL.md",
       "local_f2_ready": false,
       "analyzed_movie_dbs": "DB-01..DB-08 repo-indexed",
-      "dataset_scope": "external_annotated_sources_not_films_viewed"
+      "dataset_scope": "external_annotated_sources_not_films_viewed",
+      "r6_visualization": "3_F1_cards"
     }
   }
 }
