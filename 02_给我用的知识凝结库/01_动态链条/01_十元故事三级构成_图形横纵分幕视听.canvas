@@ -393,7 +393,7 @@
     {
       "id": "round_head",
       "type": "text",
-      "text": "# 有限八轮｜R1–R5已完成，下一轮R6/8\nR5已新增2部F1电影事件逆向结构，不是实看逐镜；第07分区有两片对照。R6只查既有45条证据和3个可核事件，未达F2不能宣称实证。",
+      "text": "# 有限八轮｜R1–R6已完成（F1），下一轮 R7/8\nR6核查了45条候选及3部官方片介事件；F2原片逐镜仍缺。电影视频采集接入作为独立工程技能，不重新计算R6。",
       "x": 85,
       "y": 4900,
       "width": 5080,
@@ -423,7 +423,7 @@
     {
       "id": "round_R6",
       "type": "text",
-      "text": "# R6｜时间电影证据分层【待做】\n\n现有45条索引：41条图形候选、4条片名待核、F2逐场镜头验证=0。挑3条有足够证据者深入拆卡，禁止冒充41条实证。",
+      "text": "# R6｜电影证据分层【完成F1】\n\n原45条：41条可识别，4条身份待核；新增《土拨鼠之日》《源代码》《时空恋旅人》三部官方剧情事件卡。\n\n**F2影片入口（工程）**：[[07-Codex大脑库/skills/ten-yuan-film-analysis/SKILL|十元电影拉片Skill]]\n\nGitHub源文件已就绪；本地4080尚未部署，未看原片F2。",
       "x": 2125,
       "y": 5150,
       "width": 940,
@@ -825,20 +825,22 @@
   ],
   "metadata": {
     "story_compiler_20261102": {
-      "version": "R5/8-canvas1",
-      "status": "F1-events-and-H-topologies",
+      "version": "R6/8-canvas1",
+      "status": "F1_FILM_CASES_DONE_F2_INTAKE_REPO_READY",
       "issue": "674-324",
       "authority": "L5-method-visualization",
       "source_protocol": "黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL.md",
       "topology": "T01-T12-candidate",
-      "next_round": "R6",
+      "next_round": "R7",
       "human_review": null,
       "local_ui": "WAIT_LOCAL_UI",
       "story_branches": {
         "A": "independent_A_ancestral_support_analysis",
         "B_original": "independent_pending_visualization",
         "B_V4": "R3_R4_candidate_existing"
-      }
+      },
+      "film_skill": "07-Codex大脑库/skills/ten-yuan-film-analysis/SKILL.md",
+      "local_f2_ready": false
     }
   }
 }
