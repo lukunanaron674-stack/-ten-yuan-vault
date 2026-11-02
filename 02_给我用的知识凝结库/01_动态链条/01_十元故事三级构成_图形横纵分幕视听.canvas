@@ -809,6 +809,116 @@
       "width": 1500,
       "height": 610,
       "color": "5"
+    },
+    {
+      "id": "DB_C1_GROUP",
+      "type": "group",
+      "label": "11｜电影库Canvas化｜R1/5八个已分析来源",
+      "x": 0,
+      "y": 16900,
+      "width": 5240,
+      "height": 1700,
+      "color": "4"
+    },
+    {
+      "id": "DB_C1_TOP",
+      "type": "text",
+      "x": 90,
+      "y": 16965,
+      "width": 5050,
+      "height": 165,
+      "color": "6",
+      "text": "# R1/5｜现成电影分析库的8张来源卡\n只接收别人已经做好的分析标签，不等于电影已看片；十元转译仍需事件证据。"
+    },
+    {
+      "id": "DB_C1_1",
+      "type": "text",
+      "x": 90,
+      "y": 17165,
+      "width": 1200,
+      "height": 475,
+      "color": "2",
+      "text": "## [DataReel](https://datareel.distantviewing.org/)\n\n**已有分析**：场景文字、景别与声音统计\n\n**核验状态**：公开检索；批量API未核\n\n【独立数据源】DB-01；人评null、十元未判。"
+    },
+    {
+      "id": "DB_C1_2",
+      "type": "text",
+      "x": 1360,
+      "y": 17165,
+      "width": 1200,
+      "height": 475,
+      "color": "3",
+      "text": "## [MovieGraphs](https://github.com/katha-ai/MovieGraphs-Dataset-CVPR2018)\n\n**已有分析**：人物、行动、动机、关系\n\n**核验状态**：实际数据文件存在；未解析pickle\n\n【独立数据源】DB-02；人评null、十元未判。"
+    },
+    {
+      "id": "DB_C1_3",
+      "type": "text",
+      "x": 2630,
+      "y": 17165,
+      "width": 1200,
+      "height": 475,
+      "color": "4",
+      "text": "## [MND](https://github.com/llafcode/The-Movie-Narrative-Dataset-MND)\n\n**已有分析**：45片逐场故事节拍与时间戳\n\n**核验状态**：CSV标签与时码已核\n\n【独立数据源】DB-03；人评null、十元未判。"
+    },
+    {
+      "id": "DB_C1_4",
+      "type": "text",
+      "x": 3900,
+      "y": 17165,
+      "width": 1200,
+      "height": 475,
+      "color": "5",
+      "text": "## [FilmAnnotation](https://github.com/husky-helen/FilmAnnotation)\n\n**已有分析**：角色画面位置、机位、景别\n\n**核验状态**：XML片段已核\n\n【独立数据源】DB-04；人评null、十元未判。"
+    },
+    {
+      "id": "DB_C1_5",
+      "type": "text",
+      "x": 90,
+      "y": 17705,
+      "width": 1200,
+      "height": 475,
+      "color": "2",
+      "text": "## [Kinolab](https://www.kinolab.org/)\n\n**已有分析**：影视片段的专业镜头分析\n\n**核验状态**：需要符合访问资格\n\n【独立数据源】DB-05；人评null、十元未判。"
+    },
+    {
+      "id": "DB_C1_6",
+      "type": "text",
+      "x": 1360,
+      "y": 17705,
+      "width": 1200,
+      "height": 475,
+      "color": "3",
+      "text": "## [MovieNet](https://movienet.github.io/)\n\n**已有分析**：动作、场景、运镜标签\n\n**核验状态**：原电影不开放；批量包待核\n\n【独立数据源】DB-06；人评null、十元未判。"
+    },
+    {
+      "id": "DB_C1_7",
+      "type": "text",
+      "x": 2630,
+      "y": 17705,
+      "width": 1200,
+      "height": 475,
+      "color": "4",
+      "text": "## [CineScale](https://data.mendeley.com/datasets/th46h4vdwd/1)\n\n**已有分析**：景别标注与帧序列\n\n**核验状态**：CSV样本尚未逐行核实\n\n【独立数据源】DB-07；人评null、十元未判。"
+    },
+    {
+      "id": "DB_C1_8",
+      "type": "text",
+      "x": 3900,
+      "y": 17705,
+      "width": 1200,
+      "height": 475,
+      "color": "5",
+      "text": "## [UCSC Narrative Causality](https://nlds.soe.ucsc.edu/narrativecausality)\n\n**已有分析**：叙事事件因果类型\n\n**核验状态**：研究数据需确认授权\n\n【独立数据源】DB-08；人评null、十元未判。"
+    },
+    {
+      "id": "DB_C1_FOOT",
+      "type": "text",
+      "x": 90,
+      "y": 18270,
+      "width": 5050,
+      "height": 270,
+      "color": "6",
+      "text": "**R1 验收**：8库来源/字段/访问门禁。**R2** 导入真实原记录；**R3** 同片/同场对齐；**R4** 十元L3→L2→L1；**R5** 按电影/事件/构图检索，完结STOP。\n技术来源与样本见 [[黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL|原协议索引]]；本地Canvas视觉WAIT_LOCAL_UI。"
     }
   ],
   "edges": [
@@ -964,6 +1074,14 @@
       "analyzed_movie_dbs": "DB-01..DB-08 repo-indexed",
       "dataset_scope": "external_annotated_sources_not_films_viewed",
       "r6_visualization": "3_F1_cards"
+    },
+    "movie_db_canvas_20261102": {
+      "status": "R1_SOURCE_CARDS",
+      "progress": "1/5",
+      "next": "R2",
+      "issue": "674-324",
+      "verified_source_count": 8,
+      "local_ui": "WAIT_LOCAL_UI"
     }
   }
 }
