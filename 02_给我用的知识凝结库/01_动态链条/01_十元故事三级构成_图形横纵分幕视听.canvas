@@ -999,6 +999,136 @@
       "height": 340,
       "color": "6",
       "text": "# R2回执｜3源的真实记录已经入库，下一轮R3\n记录：MND 3场、MovieGraphs 官方示例clip 1场＋影片ID索引1条、FilmAnnotation 4帧，共9条原始记录，所有材料在[[黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL#DB-C2/5｜三源真实电影分析记录入库（2026-11-02）|原协议R2证据表]]逐一列原始文件blob SHA。\n**R3**：优先同片身份核验，然后比对版次/镜头时码；保持scene_alignment=UNVERIFIED直到实证通过。所有十元感受【未判】/human=null；原片F2未看；本地Obsidian视觉WAIT_LOCAL_UI。"
+    },
+    {
+      "id": "G_R7",
+      "type": "group",
+      "label": "12｜R7 B-V4三幕8张单焦点分析卡（非制作卡）",
+      "x": 0,
+      "y": 20950,
+      "width": 5240,
+      "height": 3260,
+      "color": "4"
+    },
+    {
+      "id": "R7_head",
+      "type": "text",
+      "text": "# R7｜新B V4三幕八卡：十元架构 → 图形横纵 → 单焦点视听【H】\n【USER】Lucas为音乐目标牺牲生活→祖母多封信逐级揭示事实→他仍入场自行演奏；角色十元见项目正本。\n**主形状** T03串联＋T07旧物桥【候选】，T11反噬回环【竞争】；**不是**A跨代帮助或原B双补。方法Axx-Cxx=Act编号，不是A故事路线。\n全部镜头、感受【H】，真正四锁/H3/人评都未由本轮取得。完整逐卡见 [[黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL#674-324｜R7 《时间信封》三幕八卡正向编译（2026-11-02｜创作候选）|R7文字总稿]]。",
+      "x": 100,
+      "y": 21025,
+      "width": 5020,
+      "height": 275,
+      "color": "4"
+    },
+    {
+      "id": "R7_network",
+      "type": "text",
+      "text": "# 横向同窗 × 纵向因果 × 回收图\n```text\n第一幕｜Claire循暖金细丝 ─→ 书架信① ─→ Marcel惊扰拒绝\n             │                     │\n             └── Lucas先弹A ───────→ 信①强光回应 ─→ Claire主动靠近\n                                                ↓\n第二幕｜Lucas为甄选过练 ─→ 冷饭/停奏 ─→ Claire整理与信②\n             ↑                 │                ↓\n             └── 仍然练习 ─────┘      旧蓝线书/Marcel拒答\n                                             │\n       Lucas扶肩拉回说「交给我来」──────────────┘\n                                             ↓\n第三幕｜祖母已故/旧书送店 ─→ Marcel交书 ─→ Lucas拼缺页③\n                                             ↓\n             ④珍惜笑＋⑤留空白 ─→ 他自己吃饭/作C\n                                     │\n             Claire独立发道歉       └→ 入场弹A/B/C（不宣布结果）\n【反写】第三幕主动吃饭→第二幕冷饭；发道歉→第一幕未发\n【待核】五信载体音乐vs文字；微改现在是否可证；人评=null\n```",
+      "x": 100,
+      "y": 21360,
+      "width": 5020,
+      "height": 750,
+      "color": "2"
+    },
+    {
+      "id": "R7_A01-C01",
+      "type": "text",
+      "text": "# A01-C01｜EP1-02-2｜找到信①【H】\n**十元焦点** XN【H】；图形T07（关系未锁）\n**唯一主Δ** letter_location_known↑\n**横向事件** 沿细光→触旧书发现信→惊叫wodefa！→被赶出。\n**视听设计** 固定长书架中景→旧书近景；细金光仅引路，纸声→惊叫；13s/7镜。\n**反事实** 删掉金丝定位，定点寻信缺因果。\n**状态** H / human=null / NO_GPU",
+      "x": 100,
+      "y": 22235,
+      "width": 1530,
+      "height": 495,
+      "color": "1"
+    },
+    {
+      "id": "R7_A01-C02",
+      "type": "text",
+      "text": "# A01-C02｜EP1-03｜琴声触发信光【H】\n**十元焦点** ZX【H】；图形T07（关系未锁）\n**唯一主Δ** recipient_contact↑\n**横向事件** Lucas弹A→信先亮后强光四射→Claire主动接近/递信【H】。\n**视听设计** 琴键侧面近景→信特写→强光中景；先音乐后VFX；20s/7镜编辑。\n**反事实** 没有A就爆光，声触发关系失效。\n**状态** H / human=null / NO_GPU",
+      "x": 1810,
+      "y": 22235,
+      "width": 1530,
+      "height": 495,
+      "color": "1"
+    },
+    {
+      "id": "R7_A02-C01",
+      "type": "text",
+      "text": "# A02-C01｜EP2-01｜透支【H】\n**十元焦点** XN【H】；图形T11?（关系未锁）\n**唯一主Δ** performance_capacity↓\n**横向事件** 为试听不断练琴→冷饭乱谱→疲倦停奏。\n**视听设计** 固定琴桌中景反复、手部特写；重复音型在空拍中断；15s/4镜。\n**反事实** 没拍真实失奏，便只有勤奋蒙太奇。\n**状态** H / human=null / NO_GPU",
+      "x": 100,
+      "y": 22815,
+      "width": 1530,
+      "height": 495,
+      "color": "3"
+    },
+    {
+      "id": "R7_A02-C02",
+      "type": "text",
+      "text": "# A02-C02｜EP2-02｜信②辨认旧习【H】\n**十元焦点** NZ【H】；图形T03（关系未锁）\n**唯一主Δ** past_pattern_recognition↑\n**横向事件** Claire经许可整理纸张→②童年凉饭与现在冷饭呼应，Lucas仍练。\n**视听设计** 餐盘/折页近景，同物件匹配切；纸声与琴声接；14.3s/4镜。\n**反事实** ②只讲道理而无具体可比事件，桥不成立。\n**状态** H / human=null / NO_GPU",
+      "x": 1810,
+      "y": 22815,
+      "width": 1530,
+      "height": 495,
+      "color": "3"
+    },
+    {
+      "id": "R7_A02-C03",
+      "type": "text",
+      "text": "# A02-C03｜EP2-04｜主动接手【H】\n**十元焦点** ZX【H】；图形T03（关系未锁）\n**唯一主Δ** investigation_agency↑\n**横向事件** Marcel拒答→Lucas双手扶肩轻拉半步转头说「交给我来」→自己询问仍未获书。\n**视听设计** 双人侧中景再过肩问话；动作拆镜，台词配音；13s/4镜。\n**反事实** 只替人争吵、不承担查证则变量不变。\n**状态** H / human=null / NO_GPU",
+      "x": 3520,
+      "y": 22815,
+      "width": 1530,
+      "height": 495,
+      "color": "3"
+    },
+    {
+      "id": "R7_A03-C01",
+      "type": "text",
+      "text": "# A03-C01｜EP3-03｜③旧页证据【H】\n**十元焦点** XZ【H】；图形T07（关系未锁）\n**唯一主Δ** error_page_origin_known↑\n**横向事件** Marcel敲A→交蓝线书→Lucas以旧碎纸对当下谱缺口。\n**视听设计** 书店中近景/俯拍撕页/同轴匹配切，旧纸声+错拍；14.3s/4镜。\n**反事实** 没有可对证的纸片，T07物证桥失效。\n**状态** H / human=null / NO_GPU",
+      "x": 100,
+      "y": 23395,
+      "width": 1530,
+      "height": 495,
+      "color": "2"
+    },
+    {
+      "id": "R7_A03-C02",
+      "type": "text",
+      "text": "# A03-C02｜EP3-04｜④⑤与C【H】\n**十元焦点** Z【H】；图形T03＋回收（关系未锁）\n**唯一主Δ** self_authored_C↑\n**横向事件** 看到④笑与⑤空白谱→Lucas自己吃饭→自己写出C。\n**视听设计** 同机位餐桌重用旧冷饭构图，时间切至写谱手部；14.3s/4镜。\n**反事实** 让祖母写好C，则自我创作未成立。\n**状态** H / human=null / NO_GPU",
+      "x": 1810,
+      "y": 23395,
+      "width": 1530,
+      "height": 495,
+      "color": "2"
+    },
+    {
+      "id": "R7_A03-C03",
+      "type": "text",
+      "text": "# A03-C03｜EP3-05｜入场【H】\n**十元焦点** Z【H】；图形T05?（关系未锁）\n**唯一主Δ** audition_attended↑\n**横向事件** Lucas实入试听室弹A/B/C；Claire候场独立发送道歉，结果未知。\n**视听设计** 入场侧全景→手机近景→演奏固定侧面；声轨后期；12s/3镜。\n**反事实** 只展示成绩不弹琴，或Claire等他批准，不能成立。\n**状态** H / human=null / NO_GPU",
+      "x": 3520,
+      "y": 23395,
+      "width": 1530,
+      "height": 495,
+      "color": "2"
+    },
+    {
+      "id": "R7_note",
+      "type": "text",
+      "text": "# R7最关键的未解决问题\n① **音乐信本身是曲子**【USER】与新B五封长文字信【H】冲突；不可擅自锁文本。② 官方“信轻微改变现在”尚缺可被前后镜头客观验证的改变，仅有光丝、回忆和人物选择不自动满足。③ 递信能否带出、Marcel为何交书待核。④ Claire的道歉是独立选择，不能直接写作双补。",
+      "x": 3520,
+      "y": 22235,
+      "width": 1530,
+      "height": 495,
+      "color": "6"
+    },
+    {
+      "id": "R7_bottom",
+      "type": "text",
+      "text": "**数量守恒**：八张分析卡（第一幕2＋第二幕3＋第三幕3）只是方法工作台；原三集13张制作卡/EP1 25镜/EP2 17镜/EP3 18镜不增加。第2集15s与第1集20s均为剪辑卡时长，不可作为单次14.5s H3投喂。NEXT R8陌生题材迁移后STOP。",
+      "x": 100,
+      "y": 24030,
+      "width": 5020,
+      "height": 90,
+      "color": "6"
     }
   ],
   "edges": [
@@ -1131,17 +1261,57 @@
       "toNode": "A_CARD_BRIDGE",
       "toSide": "left",
       "label": "跨代传递【H】"
+    },
+    {
+      "id": "R7_ED_1",
+      "fromNode": "R7_A01-C01",
+      "fromSide": "right",
+      "toNode": "R7_A01-C02",
+      "toSide": "left",
+      "label": "因果推进"
+    },
+    {
+      "id": "R7_ED_3",
+      "fromNode": "R7_A02-C01",
+      "fromSide": "right",
+      "toNode": "R7_A02-C02",
+      "toSide": "left",
+      "label": "因果推进"
+    },
+    {
+      "id": "R7_ED_4",
+      "fromNode": "R7_A02-C02",
+      "fromSide": "right",
+      "toNode": "R7_A02-C03",
+      "toSide": "left",
+      "label": "因果推进"
+    },
+    {
+      "id": "R7_ED_6",
+      "fromNode": "R7_A03-C01",
+      "fromSide": "right",
+      "toNode": "R7_A03-C02",
+      "toSide": "left",
+      "label": "因果推进"
+    },
+    {
+      "id": "R7_ED_7",
+      "fromNode": "R7_A03-C02",
+      "fromSide": "right",
+      "toNode": "R7_A03-C03",
+      "toSide": "left",
+      "label": "因果推进"
     }
   ],
   "metadata": {
     "story_compiler_20261102": {
-      "version": "R6/8-canvas1",
+      "version": "R7/8-canvas1",
       "status": "F1_FILM_CASES_DONE_F2_INTAKE_REPO_READY",
       "issue": "674-324",
       "authority": "L5-method-visualization",
       "source_protocol": "黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL.md",
       "topology": "T01-T12-candidate",
-      "next_round": "R7",
+      "next_round": "R8",
       "human_review": null,
       "local_ui": "WAIT_LOCAL_UI",
       "story_branches": {
@@ -1153,7 +1323,8 @@
       "local_f2_ready": false,
       "analyzed_movie_dbs": "DB-01..DB-08 repo-indexed",
       "dataset_scope": "external_annotated_sources_not_films_viewed",
-      "r6_visualization": "3_F1_cards"
+      "r6_visualization": "3_F1_cards",
+      "r7_visualization": "8_cards_B_V4"
     },
     "movie_db_canvas_20261102": {
       "status": "R2_ANNOTATION_SAMPLES_VERIFIED",
