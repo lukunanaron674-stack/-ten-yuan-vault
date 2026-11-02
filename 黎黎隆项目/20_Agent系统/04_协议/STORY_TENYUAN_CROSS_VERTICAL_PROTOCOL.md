@@ -993,3 +993,50 @@ T07叙事桥≠严格十元补位；同是音乐/旧物≠相同十元关系。
 - 别人做出的“人物恐惧/助人动机/中景/动机转折/催化剂”是**外部研究标签**；不能自动替换十元XN/XZ/NZ等的**十种主观关系性感受**，也不能据标签直接判生克补。
 - L2图形Txx是拓扑；MND 15节拍是叙事分类；严格十元关系另行验证；带声画样本不等于真实观众反馈。
 - Kinolab的内容有访问限制；DataReel站点可浏览但未验证官方批量API；MovieGraphs数据是pickle，**未经安全检查不得在用户4080本地直接反序列化**。所有“已分析”只说明原数据有该字段，不说明本用户已获得版权原片。
+
+---
+
+## DB-C2/5｜三源真实电影分析记录入库（2026-11-02）
+
+**权限/工作流**：只在原协议登记，用户仅要求 DB-C2；不计入674-324原R7/R8，不修改影片主题Canvas或十元关系正本。三种上游标签为外部人工/研究者标注，不是观看原片的F2，也不是用户的人类感受实测。下表字段 `null` 表示来源没有给出，绝不由数据集名称猜出。
+
+### R2 首屏｜电影层 → 已有标注的三条独立证据泳道
+
+```text
+电影身份层   《阿甘正传》tt0109830             《泰坦尼克号》tt0120338
+                 │                                 │
+原始来源      ┌──┴──────────────┐               MovieGraphs【官方Notebook】
+              │                 │                    │
+MND【CSV】  scene13/27/86    FilmAnnotation       scene248 / 原始ss1270-es1276
+  │           │              【forrest.xml】          │
+叙事节拍+秒级时窗     frame2/3/4/5               clip内局部time=23–41.5s
+  │                   │                            │
+L3分幕索引候选   摄像景别/人物位置          人物图可读状态待提取
+  └──────────┬────────┘                            │
+             │                                      │
+场景相等?【未核】└→ 等待R3验证版本、时码与具体动作      │
+                 │                                 │
+结果：原始数据入库→保留source_id、原文件SHA、原ID；不得猜场景/十元
+反馈：对不齐→返回原数据源；人评=null／声画未看片／生克补未判
+```
+
+### 原始记录索引（CASE-DB-C2）
+
+| record_id / source_id | film_id与来源级别 | 已实读原标注 | 时间字段及单位 | 来源与blob SHA | 可判断与不可判断 |
+|---|---|---|---|---|---|
+| DB-C2-MND-13 / DB-03 | `tt0109830` 《阿甘正传》；研究者众包节拍标签 | scene_id=`13`；raw_label=`Catalyst` | start_s=`778.444`，end_s=`805.680`，明确是**原电影秒级场景时窗** | [labels.csv](https://github.com/llafcode/The-Movie-Narrative-Dataset-MND/blob/main/Scene_Classification/labels/tt0109830_forrest%20gump.csv) blob `5826b5d59ef90a423e773c12c0344a911ae8107a`；[scene_timestamps.csv](https://github.com/llafcode/The-Movie-Narrative-Dataset-MND/blob/main/Scene_Classification/scene_timestamps/tt0109830_forrest%20gump_timestamps.csv) blob `1c7096b2b829b162f5b33fc47265de8984246823` | 知研究者标注“催化”，不知道对应具体行为 |
+| DB-C2-MND-27 / DB-03 | 同上 | scene_id=`27`；raw_label=`Break into Two` | start_s=`1254.587`，end_s=`1290.122` | 同上两份CSV | 只能说对应节拍分类，不能直接下“第二幕的某事件必然发生” |
+| DB-C2-MND-86 / DB-03 | 同上 | scene_id=`86`；raw_label=`Midpoint` | start_s=`4022.060`，end_s=`4055.134` | 同上两份CSV | 不能据此声称看过影片镜头 |
+| DB-C2-MG-248 / DB-02 | `tt0120338` 《泰坦尼克号》；MovieGraphs官方教程保存的实际运行输出 | `cg.video = {'movie':'tt0120338','fname':['scene-248.ss-1270.es-1276.mp4'],'scene':[248],'ss':1270,'es':1276}`；同一示范clip的time-node含`start=23,end=41.5` | `23–41.5`为**片段内局部时码**；`ss=1270,es=1276`原字段保留，**单位/镜头基准未独立核验，不转换成电影秒数** | [官方 py3loader_new/tutorial.ipynb](https://github.com/katha-ai/MovieGraphs-Dataset-CVPR2018/blob/main/py3loader_new/tutorial.ipynb) blob `b83ace7765762a12726037504486623c1627fd0d` | 说明确有预先分析好的图和时间结点，但当前**未安全解析all_movies.pkl**；此卡具体人物动作/事件=`null`，不能由影片名字编造。 |
+| DB-C2-FA-02 / DB-04 | `forrest.xml` 人工电影片段标注，角色名Forrest与Jenny；**片段版本/IMDb仅候选tt0109830，尚未与完整电影比对** | `frame id=2`，`timeId=157`（原始单位未核），actor`refId=0`/Forrest，`distance=MS`、`angle=Eye`，Head `position=(0.48216295,0.28223568)`（相对坐标） | time_start_s/end_s=`null`，**不得把timeId=157当作157秒** | [forrest.xml](https://github.com/husky-helen/FilmAnnotation/blob/master/forrest.xml)，blob `e7e9d85b24a0087a92e4b50dd07b9bd02c621bfb` | 景别/机位/人物画面位置有外部人工标注；声轨、全片时码、戏剧动作、十元=`null` |
+| DB-C2-FA-03 / DB-04 | 同上 | `frame id=3`, `timeId=314`, actor=Forrest, `distance=CU`, `angle=Eye`, Head=`(0.2609835,0.3671819)` | 原始timeId；秒级=`null` | 同上XML | 可见作者记录从frame2的MS到frame3的CU类别变化；**不是原片已核推拉或剪辑镜头顺序** |
+| DB-C2-FA-04 / DB-04 | 同上 | `frame id=4`, `timeId=468`, actor=Jenny，`distance=MCU`, `angle=High`, Head=`(0.48377016,0.35855737)` | 原始timeId；秒级=`null` | 同上XML | 不应推断角色的具体情绪 |
+| DB-C2-FA-05 / DB-04 | 同上 | `frame id=5`, `timeId=534`, actor=Forrest+Jenny，`distance=MCU`, `angle=Low`, `shot-type=OTS` | 原始timeId；秒级=`null` | 同上XML | 现成过肩镜头类型；不能据此编造人物对白 |
+| DB-C2-MG-ID / DB-02 | `tt0109830` 《阿甘正传》电影层片名索引 | `movies_list.txt`包含 `tt0109830` | 场景编号=null；影片时码=null | [movies_list.txt](https://github.com/katha-ai/MovieGraphs-Dataset-CVPR2018/blob/main/movies_list.txt)，blob `38adf2c1a044993656a1cd61df93f3dae4bc1c7a` | **可供R3做IMDb电影层匹配**，但这条不是《阿甘正传》的完整MovieGraphs场景图记录；R2样本图对应的是《泰坦尼克号》。 |
+
+### R2 已完成与待补
+
+- 三类可机器读取的来源 **MND CSV / MovieGraphs notebook官方执行输出 / FilmAnnotation XML** 均真实读取到**记录级数据**；MovieGraphs另读取片名IMDb ID列表。**MovieGraphs正式PKL里面的事件图尚未解析**；本轮不执行不可信的pickle反序列化。
+- `film_id`与`scene_id`是不同层；`timeId`、片段内`time-node`、MND完整电影秒级时码也是不同时间基准。证据入库的跨源 `scene_alignment=UNVERIFIED`，不是PASS。
+- 库内原标签、数据源作者解释、十元主观关系感受、人类被试感受分别存放：`raw_label`真实；`tenyuan_H=null`（R4才提出）；`human_feeling=null`。声画原片F2_NOT_VIEWED。
+- **NEXT R3/5**：检验跨库同片ID，独立核对影片/片段版次和时码；《阿甘正传》IMDb层有两源明确同片（MND与MovieGraphs），FilmAnnotation为待确认同片候选；**不可将FilmAnnotation frame2/3/4/5与MND scene13/27/86直接联接**。至少交一个负控错配例；R4再进行十元内容映射。
