@@ -393,7 +393,7 @@
     {
       "id": "round_head",
       "type": "text",
-      "text": "# 只做有终点的研究｜当前 R4/8 已完成；R5–R8待做\n**核心目标**：从单一十元或单一关系出发，按幕号×卡号具体到视听，而不是堆抽象标签。R4之前不将下列示例占位记作已审核镜头。",
+      "text": "# 有限八轮｜R1–R5已完成，下一轮R6/8\nR5已新增2部F1电影事件逆向结构，不是实看逐镜；第07分区有两片对照。R6只查既有45条证据和3个可核事件，未达F2不能宣称实证。",
       "x": 85,
       "y": 4900,
       "width": 5080,
@@ -413,7 +413,7 @@
     {
       "id": "round_R5",
       "type": "text",
-      "text": "# R5｜两部作品逆向【待做】\n\n选2部具体且来源可靠的电影/动画；真实事件→L3→L2→L1，未观看原片则视听填【待看片】，不能伪造时间码。",
+      "text": "# R5｜两部作品逆向【完成·F1】\n\n《钢琴家》：演奏→军官自主援助\n《情书》：旧书卡背→迟到的识别\n已回读公开来源并完成L3→L2→L1，**镜头原片待核F2=0**，参见07区与方法协议R5。",
       "x": 1105,
       "y": 5150,
       "width": 940,
@@ -523,11 +523,61 @@
     {
       "id": "R4_footer",
       "type": "text",
-      "text": "R4四卡已生成；R5–R8待执行。当前只是研究候选；不得覆盖674-313的剧情与制作镜头。Windows Obsidian视觉验收待做。",
+      "text": "R4四张单焦点导演卡已完成；R5两部作品逆向也已完成（仅公开剧情F1）。R6–R8待做。Windows Obsidian可视验收仍WAIT_LOCAL_UI；均非H3已审镜头。",
       "x": 80,
       "y": 7445,
       "width": 5050,
       "height": 125,
+      "color": "6"
+    },
+    {
+      "id": "G_R5",
+      "type": "group",
+      "label": "07｜R5两部真实电影逆向结构｜F1事件，F2镜头待核",
+      "x": 0,
+      "y": 7960,
+      "width": 5240,
+      "height": 1630,
+      "color": "3"
+    },
+    {
+      "id": "R5_head",
+      "type": "text",
+      "text": "# R5｜真实事件 L3 → 图形横纵 L2 → 十元整片 L1\n片名/版本和事件核实【F1】；镜头角度、音乐混音、精确时码均【待看片】。下列十元是观众感受假设【H】，不是人物客观本体或生克补已成立。",
+      "x": 90,
+      "y": 8030,
+      "width": 5050,
+      "height": 230,
+      "color": "3"
+    },
+    {
+      "id": "R5_PIANIST",
+      "type": "text",
+      "text": "# FILM-P-2002｜《钢琴家》【F1】\n**具体事实**：Szpilman藏身被军官发现→被要求弹琴→军官决定提供食物并继续援助。\n**L3-A** 演奏得到机会｜唯一变量：audible_identity↑。\n**L3-B** 军官实际施助｜唯一变量：help_access↑。\n**L2** T03串联：发现→演奏→他人选择→实物援助；T07中介必要性待证。\n**L1主题**：长期不被允许公开发声的钢琴家何时能够表达？并非音乐直接战胜战争。\n**十元感受【H】** XN受压→Z再发声→NZ获得依托；F_human=null。\n**视听**【待看片】：实际反打、琴声段落、机位、明暗未验；【H建议】用军官行动和食物来证明外部变量真的改变。\n**反证**：拿掉军官的独立援助，弹琴无法自动推得获救。\n**事实源** https://www.fondazioneprada.org/project/the-pianist/?lang=en\n**结构零件** R5-E1｜能力被听见≠条件自动改变，需独立决策者。",
+      "x": 90,
+      "y": 8370,
+      "width": 2400,
+      "height": 990,
+      "color": "1"
+    },
+    {
+      "id": "R5_LOVELETTER",
+      "type": "text",
+      "text": "# FILM-L-1995｜岩井俊二《情书》【F1】\n**具体事实**：男藤井树曾留书；学校后辈将书交女藤井树；借书卡背面画着她的肖像，迟到的心意才被认识。\n**L3-A** 隐藏证据得以保存｜变量：latent_evidence仍可取。\n**L3-B** 翻卡背识别图像｜变量：recognition_of_past_feeling↑。\n**L2** T07旧物跨年代桥＋T03信息串联；去掉卡背画就无法等量确认。\n**L1主题**：过去的人无法回到现在，但未说出的感情还能被认识吗？\n**十元感受【H】** XZ不可逆的失去→NZ迟到的联结；F_human=null。\n**视听**【待看片】：实片镜头运动、翻卡时码与配乐未核；【H建议】让翻面动作明确先于认知改变。\n**反证**：如果空白借书卡也能产生相同结论，T07不成立。\n**来源** BFI / KINENOTE，完整URL与可复核字段见方法协议R5。\n**结构零件** R5-E2｜独占信息旧物→现在核对→重估过去；不能照搬画像。",
+      "x": 2650,
+      "y": 8370,
+      "width": 2490,
+      "height": 990,
+      "color": "4"
+    },
+    {
+      "id": "R5_foot",
+      "type": "text",
+      "text": "**下一轮R6**：原45条时间电影目录证据分层；优先3个真实可核事件做幕卡，不复制原电影Canvas。严格关系冻结不变；R5不触H3/不修改674-313剧本；本地Obsidian视觉：WAIT_LOCAL_UI。",
+      "x": 90,
+      "y": 9405,
+      "width": 5050,
+      "height": 110,
       "color": "6"
     }
   ],
@@ -609,17 +659,45 @@
       "toNode": "R4_A03-C04",
       "toSide": "left",
       "label": "纵向因果"
+    },
+    {
+      "id": "e_r5_h_p",
+      "fromNode": "R5_head",
+      "toNode": "R5_PIANIST",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_r5_h_l",
+      "fromNode": "R5_head",
+      "toNode": "R5_LOVELETTER",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_r5_p_f",
+      "fromNode": "R5_PIANIST",
+      "toNode": "R5_foot",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e_r5_l_f",
+      "fromNode": "R5_LOVELETTER",
+      "toNode": "R5_foot",
+      "fromSide": "bottom",
+      "toSide": "top"
     }
   ],
   "metadata": {
     "story_compiler_20261102": {
-      "version": "R4/8-canvas1",
-      "status": "research-hypothesis",
+      "version": "R5/8-canvas1",
+      "status": "F1-events-and-H-topologies",
       "issue": "674-324",
       "authority": "L5-method-visualization",
       "source_protocol": "黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL.md",
       "topology": "T01-T12-candidate",
-      "next_round": "R5",
+      "next_round": "R6",
       "human_review": null,
       "local_ui": "WAIT_LOCAL_UI"
     }
