@@ -1199,6 +1199,106 @@
       "height": 300,
       "color": "6",
       "text": "# R3/5 验收与下轮交接\n**状态**：影片级有且仅有一条确定的 MND ↔ MovieGraphs IMDb JOIN；FilmAnnotation基于文件名/人物名仅候选；场景级PASS=0；另有跨电影REJECTED负例。**没有额外凭空生成电影剧情**。\n**NEXT R4**：选外部原始数据中真正写明动作/动机的具体事件，先作L3证据卡，再画L2横纵/反馈与L1十元感受【H】，不可用只有Catalyst的场景凭空写事件。F2原片=未看，human_feeling=null；本地UI=WAIT_LOCAL_UI。"
+    },
+    {
+      "id": "G_R8_LIGHTHOUSE",
+      "type": "group",
+      "label": "13｜R8八轮收口｜原创《最后一班灯塔》三幕六卡",
+      "x": 0,
+      "y": 26810,
+      "width": 5240,
+      "height": 2970,
+      "color": "4"
+    },
+    {
+      "id": "R8_HEAD",
+      "type": "text",
+      "text": "# R8/8｜陌生题材迁移＋结构收口【H，非制作片】\n《最后一班灯塔》：自动航标误报，旧灯塔将关闭，阿岚在封塔命令与海上安全之间选择。\n**主拓扑 T03事件串联＋T07日志与灯光证据桥【候选】**；竞争 T05双轨必须补两条独立信息边；T11仅一次事件，不成立。\n**人物十元**：阿岚ZX【H】、主管XN【H】；渔船船员不强行赋元，技术设备是事件对象而非十元人格。全轮观众感受human=null。\n**使用规范**：详细三幕六卡、迁移比较、负控在 [[黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL]] R8章节。",
+      "x": 90,
+      "y": 26885,
+      "width": 5060,
+      "height": 300,
+      "color": "4"
+    },
+    {
+      "id": "R8_NETWORK",
+      "type": "text",
+      "text": "# L2｜同窗横向行动 × 纵向状态递进【原创H】\n```text\n时窗        岸上阿岚(ZX H)         海上渔船              主管(XN H)\n第一幕 ────────────────────────────────────────────\nT0          比对误报位置 ───────→ 船正靠近浅滩      封塔倒计时开始\n              │ Δ异常已知:0→1     │               │\n              ↓ 进入复核           ↓ 风险未解除     ↓ 命令有效\n第二幕 ────────────────────────────────────────────\nT1          提交复核请求 ─────────→ 船仍循错灯      主管拒绝无证操作\n              │                    │               │\n              ↓ 查到故障日志       ↓               ↓\nT2          短时点亮旧灯 ─────────→ 船员看见并转舵  记录越规\n              │ Δ警示有效:0→1      │ Δ航向已纠正↑\n              ↓                    ↓\n第三幕 ────────────────────────────────────────────\nT3          递交日志＋灯位记录 ──→ 船员提供航迹 ─→ 主管启动复核\n              │                      │             │\n反馈        复核请求回到T0：误报可重现？制度是否修改【未定】\n负控        无误报→点灯是无依据违规；无日志→制度反馈桥失败\n```",
+      "x": 90,
+      "y": 27270,
+      "width": 5060,
+      "height": 665,
+      "color": "2"
+    },
+    {
+      "id": "R8_A01-C01",
+      "type": "text",
+      "text": "# A01-C01｜封塔倒计时【H】\n**单焦点** XN【H】，`SINGLE_TENYUAN`\n**唯一主变量** shutdown_deadline_known:0→1\n**可拍事件** 封塔倒计时：行动和结果需可辨，不靠十元标签讲解。\n**机位/构图/光色/声音** 控制室对称中景、倒数屏特写；静机、冷光、规则提示音。\n**删卡测试** 删倒计时，时间压力没有事件来源。\n**状态** 非真实视频、未填实片时码，观众评价null；关系未锁。",
+      "x": 90,
+      "y": 28030,
+      "width": 1510,
+      "height": 620,
+      "color": "1"
+    },
+    {
+      "id": "R8_A01-C02",
+      "type": "text",
+      "text": "# A01-C02｜航标误报被发现【H】\n**单焦点** ZX【H】，`SINGLE_TENYUAN`\n**唯一主变量** anomaly_detected:0→1\n**可拍事件** 航标误报被发现：行动和结果需可辨，不靠十元标签讲解。\n**机位/构图/光色/声音** 海图与航标同屏过肩中近景，缓推；两信号错拍。\n**删卡测试** 删独立对照，误报只是未经证实的怀疑。\n**状态** 非真实视频、未填实片时码，观众评价null；关系未锁。",
+      "x": 1810,
+      "y": 28030,
+      "width": 1510,
+      "height": 620,
+      "color": "2"
+    },
+    {
+      "id": "R8_A02-C01",
+      "type": "text",
+      "text": "# A02-C01｜主管明确拒绝【H】\n**单焦点** XN【H】，`SINGLE_TENYUAN`\n**唯一主变量** authorization_denied:0→1\n**可拍事件** 主管明确拒绝：行动和结果需可辨，不靠十元标签讲解。\n**机位/构图/光色/声音** 门框隔出二人，平视双人固定中景；短停顿与电台底噪。\n**删卡测试** 删拒绝，主人公失去实际决定代价。\n**状态** 非真实视频、未填实片时码，观众评价null；关系未锁。",
+      "x": 3530,
+      "y": 28030,
+      "width": 1510,
+      "height": 620,
+      "color": "1"
+    },
+    {
+      "id": "R8_A02-C02",
+      "type": "text",
+      "text": "# A02-C02｜旧灯短时被点亮【H】\n**单焦点** ZX【H】，`SINGLE_TENYUAN`\n**唯一主变量** warning_active:0→1\n**可拍事件** 旧灯短时被点亮：行动和结果需可辨，不靠十元标签讲解。\n**机位/构图/光色/声音** 手部操作特写→灯塔远景；灯机声先于扫雾光，构图轴线连续。\n**删卡测试** 无日志无核对就点灯，会变成莽撞英雄化。\n**状态** 非真实视频、未填实片时码，观众评价null；关系未锁。",
+      "x": 90,
+      "y": 28750,
+      "width": 1510,
+      "height": 620,
+      "color": "2"
+    },
+    {
+      "id": "R8_A03-C01",
+      "type": "text",
+      "text": "# A03-C01｜船员完成转舵【H】\n**单焦点** Z【竞争H】，`SINGLE_TENYUAN`\n**唯一主变量** course_corrected:0→1\n**可拍事件** 船员完成转舵：行动和结果需可辨，不靠十元标签讲解。\n**机位/构图/光色/声音** 船头中景→海上宽景；航向变化有电台确认，不靠欢呼替代。\n**删卡测试** 船没改向，灯光对风险的作用未证。\n**状态** 非真实视频、未填实片时码，观众评价null；关系未锁。",
+      "x": 1810,
+      "y": 28750,
+      "width": 1510,
+      "height": 620,
+      "color": "5"
+    },
+    {
+      "id": "R8_A03-C02",
+      "type": "text",
+      "text": "# A03-C02｜技术复核被启动【H】\n**单焦点** ZX【H】，`SINGLE_TENYUAN`\n**唯一主变量** review_requested:0→1\n**可拍事件** 技术复核被启动：行动和结果需可辨，不靠十元标签讲解。\n**机位/构图/光色/声音** 日志＋航迹同屏近景→控制室宽景；提示音停，保留未决沉默。\n**删卡测试** 无日志，T07制度证据桥断裂；不写制度已改革。\n**状态** 非真实视频、未填实片时码，观众评价null；关系未锁。",
+      "x": 3530,
+      "y": 28750,
+      "width": 1510,
+      "height": 620,
+      "color": "6"
+    },
+    {
+      "id": "R8_CLOSE",
+      "type": "text",
+      "text": "# 八轮总验收｜研究方法DONE，实验和生产尚未完成\n**拓扑复用**：《时间信封》T03旧信接力＋T07旧谱桥 → 《最后一班灯塔》T03事件接力＋T07日志与灯光桥。保留结构功能，不复制人物、物件和具体情节。\n**失败类型**：双人≠双补；画环≠时间循环；暗红画面≠XZ；AI预测≠真人感受；GitHub更新≠Windows Obsidian同步。\n**实测边界**：T01–T12已登记，不等于12型均被实证。真实电影F2=待核、真人评价=null、H3=未执行、导演锁卡=未改。\n**收口状态** R8完成→STOP，不新建R9；原每小时研究任务恢复《黎黎隆》十元作品与H3经验吸收。",
+      "x": 90,
+      "y": 29430,
+      "width": 5060,
+      "height": 255,
+      "color": "6"
     }
   ],
   "edges": [
@@ -1375,13 +1475,13 @@
   ],
   "metadata": {
     "story_compiler_20261102": {
-      "version": "R7/8-canvas1",
-      "status": "F1_FILM_CASES_DONE_F2_INTAKE_REPO_READY",
+      "version": "R8/8-complete",
+      "status": "METHOD_RESEARCH_COMPLETE_EXPERIMENTS_PENDING",
       "issue": "674-324",
       "authority": "L5-method-visualization",
       "source_protocol": "黎黎隆项目/20_Agent系统/04_协议/STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL.md",
       "topology": "T01-T12-candidate",
-      "next_round": "R8",
+      "next_round": "STOP_R8",
       "human_review": null,
       "local_ui": "WAIT_LOCAL_UI",
       "story_branches": {
@@ -1394,7 +1494,8 @@
       "analyzed_movie_dbs": "DB-01..DB-08 repo-indexed",
       "dataset_scope": "external_annotated_sources_not_films_viewed",
       "r6_visualization": "3_F1_cards",
-      "r7_visualization": "8_cards_B_V4"
+      "r7_visualization": "8_cards_B_V4",
+      "r8_original": "COASTAL_LIGHTHOUSE_6_CARDS_H"
     },
     "movie_db_canvas_20261102": {
       "status": "R3_MOVIE_JOIN_PASS_SCENE_UNVERIFIED",
