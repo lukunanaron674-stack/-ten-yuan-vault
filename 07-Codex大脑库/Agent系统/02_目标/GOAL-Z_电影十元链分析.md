@@ -141,3 +141,10 @@ updated: 2026-11-03
 - **证据门禁**：三关系方向符合现行五维生克盘，但`AUTHOR_THEME_STRUCTURE`不能当具体电影边的F2/F3实测，也不能改写楚门稳定人格。楚门AG-11主次仍旧`NOT_USER_LOCKED`；与`ZN/X`主题分开。反例：仅知道骗局但不能行动，不足以克制空间；来到出口却仍选择留下，不足以兑现本体生空间。未出现「自动桥接」或「三角克」。
 - **材料正本写入**：唯一电影Canvas第⑦卡`REL_MOTHER_CARD_07_TRUMAN_WORLD_SHELL_EXIT`已改为紧凑三关系卡，Git `b4761669a36aa1f7319102a6a9fbc81dbab7f9e8`、回读`STRUCTURE_PASS`，原ID和edges保存，零碰撞，Obsidian实际视觉`WAIT_LOCAL_UI`。同目录完整研究详档新增当前R5段并保留旧长卡作为历史，Git `be4408cb374d4e7c52bcd5eb4179554024de29e2`；已看WATCH-021索引同步Git `40984494a12d6c92aa9f08f79a6814ee94f795ee`，回读通过。
 - **能力记录**：`FZ4`主题关系三边与主次判读纠错、`FZ5`横纵多边主题网络、`FZ6`主体进入外部空间的非整体毁灭结算、`FZ7`旧解释误写三角/架桥/局部因果的纠错，均`ASSISTED_AUTHOR_CORRECTION`；`INDEPENDENT_HOLDOUT_NOT_SCORED`、`C_FILM_GRADE_UNCHANGED`，不冒充独立代理成绩。
+
+## 2026-11-03｜十五部电影三轴分类参考版 v0.1
+- **用户提出三个独立问题**：①整部电影究竟由人物十元关系主导还是五维主题主导；②主题内部是三者、三角克、架桥，还是其他尚未验证机制；③五维主题与人物十元是彼此共振、相克对冲，还是在高潮处反转/相互转化。**这只是参考分类体系，不是新增L2定义或已经获得USER确认的15张标签**。
+- **推荐三轴**：`narrative_driver=THEME|CHARACTER|DUAL_CORE`; `theme_topology=THREE_RELATIONS_NONCYCLIC|TRIANGULAR_CONSTRAINT_CYCLE|BRIDGE|OTHER|UNKNOWN`（允许次标签）；`theme_role_coupling=ALIGNED|OPPOSING|OPPOSITION_TO_ALIGNMENT|PARALLEL|UNKNOWN`。在每个标签旁提供`creator_confirmed / model_H / evidence_F1_F2_F3`与具体删边反证。三者可含三条共存作用边；三角克强调有向反馈闭环而非画成三角形；架桥强调不可直连之两端通过第三物或第三者建立条件。主题公式与人物主元符号相似不能自动判同向；主题的“克”也不直接等于人物严格L2“克”。
+- **15部全集**：在既有电影详档`00_十元链电影卡片_研究详档.md`里新增`CURRENT-CLASSIFICATION-20261103`三轴分类表，覆盖Canvas 15电影主卡＋《钢琴家》1张机制子卡（非第16电影），GitHub `aa5c0b219539b4b120d93603459757e2b158a153`回读PASS。原Canvas导航只增加详情表链接、保留所有卡片及边且无重叠，commit`b063e144e25fe89078b5910aea09d82d53590f21`回读PASS，Windows Obsidian尚需视觉验收。
+- **最有区分力的三片**：⑦《楚门》主题主×三者【USER】（因果生本体／因果克空间／本体生空间）；①《一起摇太阳》双核偏人物【H】×三角克【USER】（本体克时间／时间生命运／命运克本体）；⑪《飞越疯人院》人物主【H】×NZ命运架桥【USER】。其他电影中③《钢琴家》人物主、主题多关系候选；⑤《情书》命运架桥；⑩《千年女优》角色自我ZX回收；⑮《日瓦戈》因果首尾架桥。
+- **量化边界**：新增的是人机协作分类与可复核判题标准，不是AG-09/11/13三个独立运行实体的盲测；`FZ4/5/6/7=TRAINING_TAXONOMY_DRAFT`，`C_film_independent=NOT_SCORED`，`C_film_estimated_grade=UNCHANGED`，`F2/F3=null`。下一轮分片作者评审后才能逐项锁类别，尤其③/⑥/⑧/⑫/⑭/⑯需要确认主导权及主题关系构型。
