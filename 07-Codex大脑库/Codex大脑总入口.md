@@ -30,6 +30,9 @@ Codex 可以主动判断：
 
 ## 入口
 
+- [五维主题 × 十元双层审稿 Skill](./skills/five-theme-tenyuan-dual-audit/SKILL.md) — AG-09主主题关系＋AG-02人物十元独立映射＋AG-00交叉合稿；作品卡写回唯一Canvas。不是新理论正本，也不表示本机已安装。
+
+
 - [[07-Codex大脑库/Agent系统/README|全库 Agent 核心｜AG-00～AG-12＋五维主题 AG-09＋TK-01～03]] — 通用代理岗位唯一正文；《黎黎隆》共享状态及H3执行仍留项目。
 
 
