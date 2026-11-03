@@ -32,6 +32,7 @@ Linear：674-104。
 
 ### Lina02｜关系与动态链
 负责生/克/补的感受关系、对子、Observed Feeling Relation、动态感受链/动态图、长故事、游戏、音乐动态链。
+**问题与代理绑定**：Q-DYN-002 → [[07-Codex大脑库/Agent系统/01_Agent库/AG-14_动态链Agent|AG-14动态链主代理]] → [[07-Codex大脑库/Agent系统/02_目标/GOAL-Z_电影十元链分析|GOAL-Z目标Z]] → [[07-Codex大脑库/Agent系统/01_Agent库/AG-13_十元链Agent|AG-13电影十元链子代理]]；角色证据与主次十元交AG-11，L2关系AG-02审核，主题AG-09独立判。目标Z不是十元Z；应用能力结果不替代人类感受曲线验证。
 Linear：674-105。
 
 固定读取门：

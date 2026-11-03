@@ -93,3 +93,16 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 **最近优先训练错误族**：人物元误判（《你的名字。》）→双边克补遗漏（《辉耀姬》）→电影级五维生与角色级五轴混淆（《你的名字。》）→关系经过压力/间接触发，不能把行为顺序当公式（《钢琴家》）→R1优秀但R2漏符号（《情书》）→角色通过自己选择退出制度（《楚门的世界》）。
 **执行**：现有`十元作品研究与H3吸收`每小时任务已优先电影十元链，只在有真实新证据、用户新确认或新增未看过的独立测试题时写原卡；单轮最多一张实质研究卡，不制造96张空文件。直接复用原电影Canvas和观影索引；本次不自动创立第9个D1问题卡，也不新增Agent实例。关系科学真值仍须另过原L2证据门禁。
 **当前状态**：`METHOD_REGISTERED / BASELINE_ESTIMATED / HOLDOUT_TESTS_NOT_STARTED`；无正式盲测C-film验收；C-feeling/E0–E5不动。
+
+
+## 6｜代理执行绑定（2026-11-03，应用路由不改变D1目标）
+
+> **问题系统与代理系统共用问题ID，不新设D1问题**。G4/Q-DYN-002管理动态感受曲线与正式验收；AG-14只承担任务执行与研究整理，不能自我裁定E级。
+
+- **主代理**：[[07-Codex大脑库/Agent系统/01_Agent库/AG-14_动态链Agent|AG-14动态链主代理]]；归Lina02与Linear 674-105，监督十元链顺序、证据/门禁、C-film独立评分。
+- **现有应用 APP-FILM-CHAIN-001 绑定**：[[07-Codex大脑库/Agent系统/02_目标/GOAL-Z_电影十元链分析|GOAL-Z目标Z]] → [[07-Codex大脑库/Agent系统/01_Agent库/AG-13_十元链Agent|AG-13电影十元链子代理]]。**目标Z**是代理系统局部任务代号，不是十元感受Z；不增加`Q-DYN-003`或第二份电影分析能力规格。
+- **角色判定**：AG-11角色代理执行[[07-Codex大脑库/Agent系统/03_知识库/角色材料论证/README_角色十元判定_双主路与关系反推实验|角色十元A/B/C判定法]]，A十项独立相似度、B跨场材料证据；C经已审关系约束反推只作研究，不自动定稿。
+- **机制审查**：AG-02审核端点、生克补、冻结与证据；**五维主题**：AG-09按需独立审主题，不拿五维公式推角色稳定元。
+- **提交与回写**：AG-13交`case_id, R0_frozen, R2_chain, candidate_vs_user_confirmed, failed_edges, F1/F2/F3, independent_pass, assisted_pass, error_family` → AG-14汇总`problem_delta/evidence_receipt` → 本Q应用段和Linear 674-105登记；真实观众感受必须转Lina00/HUMAN_GATE。
+- **状态强制四分**：`theory_status`, `mechanism_lifecycle`, `evidence_level`, `execution_status`，APP状态`METHOD_REGISTERED/Baseline estimated/HOLDOUT_NOT_STARTED`不因新Agent文件改变。
+- **当前边界**：AG-14与AG-13均为GitHub岗位定义，本地Codex/Hermes加载、后台自动执行、独立C-film得分均未验证。旧Z/ZN关系仍冻结。单轮最多一个有效新事件；未新证据则`NO_NEW_EVIDENCE`。
