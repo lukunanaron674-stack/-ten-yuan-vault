@@ -41,3 +41,10 @@ updated: 2026-11-03
 - **能力增量归属**：FZ2（无提示角色主元）出现明确USER纠偏样本；FZ4（五维主题/关系）出现USER纠偏样本；FZ5（横纵具体事件图）与FZ7（R1→R2保留内容后补符号）获得有条件的协作交付。记录 error_family=ROLE_MISCLASSIFICATION + THEME_RELATION_MISSED；assistant 自主前测未在用户揭底前封存，所以不提供独立正确率。
 - **等级状态不变**：method=METHOD_REGISTERED；baseline=ESTIMATED_NOT_BLIND_TESTED；execution=REPO_REGISTERED_LOCAL_UNVERIFIED；independent_holdout=NOT_STARTED；assisted_case=RECORDED；正式C-film的FZ1–FZ8仍按Q-DYN-002内的估计值，不提升。F2原片、F3真人感受、跨题材独立盲测与两个原创可拍案例的C9门槛都未满足。
 - **精确后续动作**：下一个全新电影案例先由AG-13无提示冻结R1事实+R2主次/主题/关系预测，再由AG-11独立材料审核，最后请USER裁定；不得把《情书》当未见测试集。无新事实时STOP，不继续对同一片盲迭代。
+
+## 2026-11-03｜WATCH-026《釜山行》独立预锁记录
+- **R1先行封存**：2016《釜山行》核对片源；事件链含错过女儿的歌唱→隧道的歌声识别、门外救人→门内拒绝、父亲起初只管家人→被咬后主动离开。R1 commit 4b448b1b849a9ddd41e84a640748b83ec43eb695。
+- **R2后贴符号**：石宇早段X?、后段N?/ZN?（均阶段）；秀安ZN?主/Z?次；尚华N?主/ZN?次；主题空间(X并Z+N)主候选、本体(ZN+X)次候选。最重要的错误防线：士兵听歌认出幸存者的Z，不等于父亲终于看见女儿。R2 commit 00ecfe83238ff7b7687c2ef5167e5d6154e4a94c；Canvas 14节点/1边，远端回读通过。
+- **已看状态**：WATCH-026确认用户看过，原观影表已更新 R1/R2 进度，commit bb4d0dfd960276ef95daa9b5b747f504f72853d7。
+- **能力验收边界**：本轮没有读取旧十元正文，但仓库已有釜山行动态链初审，历史污染风险仍在；status=PRELOCKED_PENDING_USER，holdout_eligible=false，independent_pass=NOT_SCORED；F2=null，F3=null，LOCAL_UI=WAIT。C-film基线不升级，不充正式新片盲测。
+- **下一步明确终点**：等待USER先看本轮预锁角色与主题；再对照旧十元初审并记录FZ2/FZ4/FZ5/FZ7的具体错因。真正C6/C7必须在没有旧标签暴露的确实未见片上预注册。
