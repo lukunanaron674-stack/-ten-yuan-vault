@@ -13,7 +13,7 @@
     {
       "id": "TENYUAN_MOVIE_CASES_INDEX",
       "type": "text",
-      "text": "# 🎬 十元链电影卡片库｜一眼看结构\n**15部电影主卡＋1张细分机制卡｜五大主题分区。**\n每张卡只放「人物十元 → 具体事件 → 关系链 → 结局」。长篇证据全部保存于 [[00_十元链电影卡片_研究详档|完整研究详档]]，点卡片底部「📖 展开」即可看原文。**【USER】**作者读法；**【H】**待审。主题分区是查找入口，不能代替严格主次定案。",
+      "text": "# 🎬 十元链电影卡片库｜一眼看结构\n**15部电影主卡＋1张细分机制卡｜五大主题分区。**⑦《楚门的世界》已按作者改为三关系（非三角克制/架桥）。****\n每张卡只放「人物十元 → 具体事件 → 关系链 → 结局」。长篇证据全部保存于 [[00_十元链电影卡片_研究详档|完整研究详档]]，点卡片底部「📖 展开」即可看原文。**【USER】**作者读法；**【H】**待审。主题分区是查找入口，不能代替严格主次定案。",
       "x": 85,
       "y": 85,
       "width": 1980,
@@ -88,7 +88,7 @@
       "width": 620,
       "height": 500,
       "color": "2",
-      "text": "## ⑦《楚门的世界》｜造壳→退出\n**本体与空间压力【H】**\n楚门人格十元仍待复核\n\n```text\n真人秀包装其全部生活\n          ↓\n发现人际与世界的漏洞\n          ↓\n驾船撞上摄影棚墙\n          ↓\n找到出口、自主选择离开\n```\n**残留**：节目世界仍在；逃离不等于自动ZN。\n\n[[00_十元链电影卡片_研究详档#CARD-REL_MOTHER_CARD_07_TRUMAN_WORLD_SHELL_EXIT|📖 展开完整论证与历史修正]]"
+      "text": "## ⑦《楚门的世界》｜主题三关系【USER】\n**不是三角克制，也不是架桥。**\n**因果生本体｜因果克空间｜本体生空间**\n\n```text\n因果：摄影灯、串台、后台线索\n ├─生→ 本体：识破被安排的身份\n └─克→ 空间：海景镇控制效力下降\n             ↓\n本体：拒绝导演的安全与照护承诺\n └─生→ 空间：自主跨门，走入真实世界\n```\n**因果贯穿全片，主题支撑人物选择。**\n**结局**：楚门离开，节目体系未被毁。\n克的是对他的空间覆盖；生的是自主可进入的生活，不是新造出一扇门。\n**角色主次十元未锁**；三边属于五维主题关系，不等于严格人物生克补。\n\n[[00_十元链电影卡片_研究详档#CURRENT-TRUMAN-R5|📖 三关系材料论证与负例]]"
     },
     {
       "id": "TENYUAN_FILM_WATCH007_TOKYO_GODFATHERS_2003",
@@ -338,6 +338,24 @@
       "visible_cases": 14,
       "mechanism_cards": 1,
       "links": 15,
+      "local_ui": "WAIT_LOCAL_UI",
+      "updated": "2026-11-03"
+    },
+    "last_author_theme_review": {
+      "film": "The Truman Show (1998)",
+      "card_id": "REL_MOTHER_CARD_07_TRUMAN_WORLD_SHELL_EXIT",
+      "author_relation_count": 3,
+      "relations": [
+        "因果生本体",
+        "因果克空间",
+        "本体生空间"
+      ],
+      "role_tenyuan": "NOT_USER_LOCKED",
+      "interpretation": "THREE_THEME_RELATIONS_NOT_TRIANGULAR_OR_BRIDGE",
+      "evidence": "F1_FILM_PLOT",
+      "F2": null,
+      "F3": null,
+      "independent_grade": "UNCHANGED",
       "local_ui": "WAIT_LOCAL_UI",
       "updated": "2026-11-03"
     }
