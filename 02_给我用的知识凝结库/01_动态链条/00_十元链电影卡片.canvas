@@ -13,7 +13,7 @@
     {
       "id": "TENYUAN_MOVIE_CASES_INDEX",
       "type": "text",
-      "text": "# 🎬 十元链电影卡片库｜一眼看结构\n**15部电影主卡＋1张细分机制卡｜五大主题分区。**⑦《楚门的世界》已按作者改为三关系（非三角克制/架桥）。****\n每张卡只放「人物十元 → 具体事件 → 关系链 → 结局」。长篇证据全部保存于 [[00_十元链电影卡片_研究详档|完整研究详档]]，点卡片底部「📖 展开」即可看原文。**【USER】**作者读法；**【H】**待审。主题分区是查找入口，不能代替严格主次定案。",
+      "text": "# 🎬 十元链电影卡片库｜分类导航\n**15部电影主卡＋《钢琴家》机制子卡｜五维主题浏览。**\n**三轴：谁主导（人物／主题／双核） × 主题构型（三者／三角克／架桥／其他） × 主题×人物（共振／对冲／转化）。**\n[[00_十元链电影卡片_研究详档#CURRENT-CLASSIFICATION-20261103|📊 15部电影三轴分类完整表（含作者确认与AI候选）]]\n下方电影短卡看人物→事件→关系→回收；全部证据在 [[00_十元链电影卡片_研究详档|研究详档]]。",
       "x": 85,
       "y": 85,
       "width": 1980,
@@ -339,7 +339,9 @@
       "mechanism_cards": 1,
       "links": 15,
       "local_ui": "WAIT_LOCAL_UI",
-      "updated": "2026-11-03"
+      "updated": "2026-11-03",
+      "classification_index": "CURRENT-CLASSIFICATION-20261103",
+      "classification_status": "REFERENCE_AXIS_PROPOSAL_NOT_AUTHOR_LOCKED"
     },
     "last_author_theme_review": {
       "film": "The Truman Show (1998)",
