@@ -54,3 +54,9 @@ updated: 2026-11-03
 - **能力增量**：FZ2=首次明确记录「原始性格NX、向往ZX、所爱对象ZN、屏幕行动误显Z」四层混淆，USER纠正；FZ4=电影宏观「时间克因果／命运架桥」与人物内在小十元关系分层；FZ6=外在追求无果→内在爱自己的ZX之反转回收；FZ7=从旧AI Z+XN错判到可解释纠偏的协作审校。均只计`ASSISTED_CASE_RECORDED`，不计`independent_pass`。
 - **最新盘点**：当前电影Canvas共11部不同影片主卡＋《钢琴家》1张机制子卡，28部用户确认已看作品中有11部有主卡，仍有17部尚无主卡；“11/28”只算**电影覆盖**，不是96个验证题卡的完成比例。GOAL-Q标准仍为FZ1–FZ8原C-film暂估 C5/C2/C3/C2/C4/C4/C3/C4，独立成绩`NOT_SCORED`。当前另一《釜山行》R1/R2仅PRELOCKED_PENDING_USER且旧库潜在污染，不能充holdout。
 - **目标状态不可抬高**：`research_status=METHOD_REGISTERED`，`baseline_status=ESTIMATED_NOT_BLIND_TESTED`，`independent_holdout=NOT_STARTED`，`execution_status=REPO_REGISTERED_LOCAL_UNVERIFIED`。C7/C8/C9的至少5/10部未泄题多题材考试／两个不同题材原创可拍剧本尚未通过；F2原片、F3真人观感缺位，不因USER纠错就增级。
+
+## 2026-11-03｜WATCH-005《土拨鼠之日》R3角色灵魂复核
+- **既有卡原位增量**：唯一电影Canvas第⑨张`TENYUAN_FILM_WATCH005_GROUNDHOG_DAY_1993`已补AG-11性格核竞争、时间与因果双尺度、丽塔独立拒绝、流浪老人救不回的反证及Rita/Phil不伪锁。旧R1/R2不删，Canvas GitHub读回PASS commit `9d0dd35fa34259ebd532131f6683c8dc1173d330`。WATCH-005研究索引GitHub读回PASS commit `6f85b896f1141c4ce44be913b2ad05d0c33f077e`，已看总数仍28、不同电影主卡仍11。
+- **暂判与争议**：Phil前期`Z主【H】`（个人目标绝对置顶）vs `ZX/XN【H】`行动与信息利用手段；后期`ZN【H】`自身成立并保存他人独立资格、`N【H】`具体照顾功能。不能由「他后来帮助别人」强推N主，也不能由时间题材推XN人格。Rita主元待判。后期是「Z原核改目标，ZN显影」还是「Z只是表层，实际人格发生变化」，需作者判断。
+- **关键因果**：2月2日外部日历重置、角色内部经验持续；旧人无法被救回说明主角不全能；2月3日出现与心灵变化的时间顺序，不构成“人格变化必然导致魔法解除”的已证因果。F1剧情／SONY官方梗概与IMDb剧情，F2逐镜=WAIT，F3人评=null，严格L2机制未锁。
+- **能力状态**：本轮新增的是FZ2/FZ4/FZ6有竞争反例的`AI_HYPOTHESIS`，不属于`AUTHOR_INPUT`或独立盲测`PASS`。此片旧库已有分析，`holdout_eligible=false`；Q-DYN-002 C-film起点与目标均不变，等级不升级。下一步仅待USER给菲尔性格核心的判断，再按有区分度的具体事件修订。
