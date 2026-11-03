@@ -114,6 +114,12 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - **成绩边界**：已知旧库标签在查新中暴露，`LEGACY_CONTAMINATION=YES`；当前仅`TRAINING_CASE_1`，`INDEPENDENT_HOLDOUT=NOT_STARTED`，`INDEPENDENT_PASS=NOT_SCORED`，`F2=null`、`F3=null`、`LOCAL_AGENT_RUNTIME=UNVERIFIED`。不可把前后两次Git commit冒充不同模型独立考试或真人验证。八维估计C-film和96验证题位预算均不变。
 - 当前库包含13部电影唯一主卡（另《钢琴家》同片1机制子卡），USER已看登记29条（其中1 TV、3版本待核），**13/29只是观看条目覆盖口径，不等于C7通过比例**。下一步先完成真正没有历史十元答案的片源污染排查，再进行冻结和评分。
 
+### 5.9｜WATCH-021《楚门的世界》作者三主题关系纠偏
+- 2026-11-03 AUTHOR_INPUT：用户否定旧「三角克制／架桥」解释，改为**因果生本体、因果克空间、本体生空间**三条五维主题边，因果贯穿全片、由主题支持人物行为。与现行五维生克盘方向一致；不证明严格人物十元关系自动成立。
+- 纠错重点：过去AG-09将因果降为局部、将空间克命运和命运克本体作为主图，属于`THEME_CAUSALITY_UNDERWEIGHTED`、`THEME_THREE_EDGES_MISREAD_AS_BRIDGE_OR_TRIANGULAR_RESTRAINT`。摄影棚本体未毁；克的是对楚门的空间覆盖与行动限制，本体生的是自主能进入外界的可实践空间。
+- 回执：统一Canvas第⑦卡`REL_MOTHER_CARD_07_TRUMAN_WORLD_SHELL_EXIT`原位简卡 `b4761669`；既有研究详档R5补充 `be4408cb`（旧全文保留）；观影记录WATCH-021 `40984494`；GOAL-Z目标 `5a12fceb`。均远端回读通过，Windows Obsidian UI未验。
+- 贡献范围：FZ4、FZ5、FZ6、FZ7的作者协作纠错；`INDEPENDENT_HOLDOUT=NOT_SCORED`、`F2=null`、`F3=null`、C-film等级不变。楚门稳定角色主次十元未获本轮确认。
+
 ## 6｜代理执行绑定（2026-11-03，应用路由不改变D1目标）
 
 > **问题系统与代理系统共用问题ID，不新设D1问题**。G4/Q-DYN-002管理动态感受曲线与正式验收；AG-14只承担任务执行与研究整理，不能自我裁定E级。
