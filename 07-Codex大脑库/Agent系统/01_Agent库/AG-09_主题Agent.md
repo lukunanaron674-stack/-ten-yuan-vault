@@ -47,10 +47,6 @@ research_refs: []
 confidence: verified|research-candidate
 ```
 
-## 联合审稿专用 Skill｜主题首席
-- [[07-Codex大脑库/skills/five-theme-tenyuan-dual-audit/SKILL|五维主题 × 十元双层审稿]]：本Agent主用，负责R1五大主题定题/主次显影、TK-02生克实例可观察变量。向AG-02交接锁定的事件事实和主题结果；**不可直接指定楚门/其他角色稳定十元**。
-- 合稿由AG-00完成；输出theme_result/具体主题边、反证和研究等级，电影案例不覆盖P0。
-
 ## 两种运行模式
 ### THEME_PLAN
 在剧本 Agent 之前运行：定义本轮要研究的问题、施压条件和人物困境目标。
