@@ -34,3 +34,10 @@ updated: 2026-11-03
 - 单轮只处理一个可核实剧情增量；没有新证据时止于`NO_NEW_EVIDENCE`；涉及用户人物归类争议时回AG-11等待确认。
 - 角色候选、主题关系、故事动态链、人的感受曲线分别验收。电影故事文本分析 PASS 不代表F3人类感受预测已有效。
 - 角色样例：[[07-Codex大脑库/Agent系统/03_知识库/角色材料论证/CASE-001_楚门_十元角色材料论证|楚门材料论证／AG-11]]；电影动态链原卡在[[02_给我用的知识凝结库/01_动态链条/00_十元链电影卡片.canvas|统一电影Canvas]]，不要生成第2个Canvas。
+
+
+## 本轮进展｜《情书》USER校正（2026-11-03）
+- **案例新证据**：电影卡⑤获作者明确判定：博子Z／男藤井树XN／女藤井树NX；一级故事主题「时间(XN+Z)克制因果(ZX+NX)，被爱与命运(XZ+NZ)架桥」。唯一电影卡原位登记，commit 010badf4d9552d305af291f37c0b89dca010cdde，blob 554b8a234320093d1360e982897d2b17e524d948。
+- **能力增量归属**：FZ2（无提示角色主元）出现明确USER纠偏样本；FZ4（五维主题/关系）出现USER纠偏样本；FZ5（横纵具体事件图）与FZ7（R1→R2保留内容后补符号）获得有条件的协作交付。记录 error_family=ROLE_MISCLASSIFICATION + THEME_RELATION_MISSED；assistant 自主前测未在用户揭底前封存，所以不提供独立正确率。
+- **等级状态不变**：method=METHOD_REGISTERED；baseline=ESTIMATED_NOT_BLIND_TESTED；execution=REPO_REGISTERED_LOCAL_UNVERIFIED；independent_holdout=NOT_STARTED；assisted_case=RECORDED；正式C-film的FZ1–FZ8仍按Q-DYN-002内的估计值，不提升。F2原片、F3真人感受、跨题材独立盲测与两个原创可拍案例的C9门槛都未满足。
+- **精确后续动作**：下一个全新电影案例先由AG-13无提示冻结R1事实+R2主次/主题/关系预测，再由AG-11独立材料审核，最后请USER裁定；不得把《情书》当未见测试集。无新事实时STOP，不继续对同一片盲迭代。
