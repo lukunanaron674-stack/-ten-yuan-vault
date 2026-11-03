@@ -116,3 +116,8 @@ updated: 2026-11-03
 - **纠错归属**：AG-11旧`ZX主/Z次`与`Chief ZN?/N?/NZ?`为`AI_HYPOTHESIS_DISPLACED_BY_AUTHOR`，不因旧卡曾写「灵魂核验通过」凌驾此次USER输入；AG-09补`空间克命运`、命运双人架桥；AG-13补关系传递、命运分叉、`前端升华被毁／后端升华逃离`；AG-02守住端点冻结和身份/行为区分。
 - **证据回执**：统一电影Canvas原卡ID`TENYUAN_FILM_WATCH027_CUCKOOS_NEST_SOUL_1975` R4前置，旧R0–R3完整保留；GitHub更新commit `f9ae2b10e54d35e97151e126d72c11bd49632a2a`、回读PASS，旧节点和边未变、碰撞0、`WAIT_LOCAL_UI`。
 - **能力验收**：新增`FZ2`用户修正人物稳定元、`FZ4`五维背景/架桥层、`FZ5/6`双主角角色命运分岔及同物回收、`FZ7`旧AI误主元的协作纠错；仍是`ASSISTED_CASE_RECORDED`，`F2=null`,`F3=null`,`INDEPENDENT_PASS=NOT_SCORED`,`C_FILM_GRADE=UNCHANGED`，本地独立Agent加载未证。
+
+## 2026-11-03｜WATCH-020 R4 USER确认：因果架桥贯穿开头与结尾溯源
+- **本次作者纠正**：原R3主要聚焦「时代XZ?压尤里ZN?实践通道vs人物本核被克」，漏掉本片更高一层的**因果首尾架桥【USER】**。影片外框开头叶夫格拉夫在水坝寻找可能的侄女塔妮娅→大段倒叙追溯尤里与拉拉的人生及女儿失散→尾声塔妮娅无师自通的巴拉莱卡琴艺与尤里母亲遗物形成线索回扣；她并未法律式认亲。因果桥属于框架叙事与意义回收，不是命运克本体已获作者确认。当前主体本体压力与命运克本体继续标【H】。
+- **AG-09/13新的误判族**：THEME_FRAME_CAUSAL_BRIDGE_OMITTED（只分析主人公经历，漏掉首尾叙事外框与向后溯源的问题）；AG-11人物ZN?仍待判。新增FZ4跨维层次、FZ5横纵嵌套、FZ6首尾回收、FZ7外框遗漏审错的AUTHOR_ASSISTED案例；这不是未见独立考试命中。
+- **登记回执**：统一Canvas唯一第⑮电影卡R4已原位补写并修复导航首页与首排卡间距；远端提交并回读PASS `1bb305f019a6e387c77e389c19797863ae8df4c7`，17节点／1边／14电影主卡＋1机制卡，结构无重叠/越界，Windows Obsidian视觉`WAIT_LOCAL_UI`。剧情F1=AFI＋TCM，原片逐镜F2=null、真实观感F3=null；C-film依旧估计C5/C2/C3/C2/C4/C4/C3/C4，盲测`NOT_STARTED`。
