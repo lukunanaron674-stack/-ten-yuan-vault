@@ -148,3 +148,10 @@ updated: 2026-11-03
 - **15部全集**：在既有电影详档`00_十元链电影卡片_研究详档.md`里新增`CURRENT-CLASSIFICATION-20261103`三轴分类表，覆盖Canvas 15电影主卡＋《钢琴家》1张机制子卡（非第16电影），GitHub `aa5c0b219539b4b120d93603459757e2b158a153`回读PASS。原Canvas导航只增加详情表链接、保留所有卡片及边且无重叠，commit`b063e144e25fe89078b5910aea09d82d53590f21`回读PASS，Windows Obsidian尚需视觉验收。
 - **最有区分力的三片**：⑦《楚门》主题主×三者【USER】（因果生本体／因果克空间／本体生空间）；①《一起摇太阳》双核偏人物【H】×三角克【USER】（本体克时间／时间生命运／命运克本体）；⑪《飞越疯人院》人物主【H】×NZ命运架桥【USER】。其他电影中③《钢琴家》人物主、主题多关系候选；⑤《情书》命运架桥；⑩《千年女优》角色自我ZX回收；⑮《日瓦戈》因果首尾架桥。
 - **量化边界**：新增的是人机协作分类与可复核判题标准，不是AG-09/11/13三个独立运行实体的盲测；`FZ4/5/6/7=TRAINING_TAXONOMY_DRAFT`，`C_film_independent=NOT_SCORED`，`C_film_estimated_grade=UNCHANGED`，`F2/F3=null`。下一轮分片作者评审后才能逐项锁类别，尤其③/⑥/⑧/⑫/⑭/⑯需要确认主导权及主题关系构型。
+
+## 2026-11-03｜三轴分类作者纠偏 R2：情书／超时空辉耀姬／你的名字
+- **⑤《情书》 A轴**：USER把旧AI/H「双核偏主题」改成**主题主导**；既有时间克因果/命运架桥不变，博子Z、男藤井树XN、女藤井树NX仍是人物承载与分路回收，不能因为人物戏份多而降低主题权重。
+- **②《超时空辉耀姬！》 A轴＋人物配置**：USER确认**主题＋双人物核**；双人物核专指彩叶XN与辉夜Z，两人互补、在本体双克后各自跨时间兑现关系。要单独记录 character_core_count=2；这**不等于**此前模型 DUAL_CORE = THEME+CHARACTER 的双层共主，应将词汇拆成 narrative_driver 和 character_core_count。
+- **⑥《你的名字。》 C轴**：USER明确**主题＝人物**，指泷XN＋XZ、三叶NZ＋Z的**组合结构**共同承载命运XZ＋NZ生时间XN＋Z；强于AI先前的「只是同向候选」。这不是从主题形式直接锁L2补，也不表示单一个人等于整部主题。用户**未在本轮修改A轴主导权**，该字段仍保留H。
+- **写回**：同一详档三轴参考表修正＋作者纠偏段 6938c55ab751b89883ed187ce86e5048b55ca4bc；原Canvas第②⑤⑥卡简洁标签 72233316fcb36088800733f1e71c48ffd3bb6013（24节点、既有关系边保留、零重叠；估计文字尺寸可容纳，Windows UI仍WAIT_LOCAL_UI）；观影索引WATCH-002／008／017三行修正 8bfad4c4616f0d6240d66bd2b25971d484e9b038。三处均读回PASS，原案例与F2/F3门禁保留。
+- **结果**：FZ4多层主题与角色结构混名、FZ5主题对人整体映射的错误族新增作者协作纠偏；C_film_independent=NOT_SCORED、C_film_grade=UNCHANGED，不冒充多Agent盲测。下一步分类体系使用四个独立字段：narrative_driver、character_core_count、theme_topology、theme_role_coupling，依旧可以面向USER展示为三条主轴＋A子字段。
