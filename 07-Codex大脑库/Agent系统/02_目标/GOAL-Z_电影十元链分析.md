@@ -155,3 +155,11 @@ updated: 2026-11-03
 - **⑥《你的名字。》 C轴**：USER明确**主题＝人物**，指泷XN＋XZ、三叶NZ＋Z的**组合结构**共同承载命运XZ＋NZ生时间XN＋Z；强于AI先前的「只是同向候选」。这不是从主题形式直接锁L2补，也不表示单一个人等于整部主题。用户**未在本轮修改A轴主导权**，该字段仍保留H。
 - **写回**：同一详档三轴参考表修正＋作者纠偏段 6938c55ab751b89883ed187ce86e5048b55ca4bc；原Canvas第②⑤⑥卡简洁标签 72233316fcb36088800733f1e71c48ffd3bb6013（24节点、既有关系边保留、零重叠；估计文字尺寸可容纳，Windows UI仍WAIT_LOCAL_UI）；观影索引WATCH-002／008／017三行修正 8bfad4c4616f0d6240d66bd2b25971d484e9b038。三处均读回PASS，原案例与F2/F3门禁保留。
 - **结果**：FZ4多层主题与角色结构混名、FZ5主题对人整体映射的错误族新增作者协作纠偏；C_film_independent=NOT_SCORED、C_film_grade=UNCHANGED，不冒充多Agent盲测。下一步分类体系使用四个独立字段：narrative_driver、character_core_count、theme_topology、theme_role_coupling，依旧可以面向USER展示为三条主轴＋A子字段。
+
+## 2026-11-03｜电影分类器思考中枢：主导权优先与Canvas布局
+- **用户问题**：「什么分类是主导的，什么东西可以给这些分类；我要我的排版Skill方便思考他们」。执行口径：**电影全片A叙事主导权**是第一入口，B主题关系构型（三者、三角克、架桥、其他）与D人物配置（单人、双人、群像、接力）是第二层，C主题×人物耦合（结构相等、共振、对冲、转化）为第三层；具体事件、镜头、道具是证据，不是与A争主导的主题标签。所有概念是用户创作研究的参考分类，**不提升为L2理论正本**。
+- **重要独立字段**：narrative_driver、theme_topology、character_core_count、theme_role_coupling、evidence_grade、human_gate。注意②超时空的“主题＋双人物核”是主题框架与双主角叙事配置，不自动等同“主题/人物双层共主”；⑥你的名字“主题＝人物”仅锁用户给的结构对应而非单一角色十元等同主题或严格L2已验证。
+- **方法详档回执**：现有《十元链电影卡片_研究详档.md》原位新增“分类决策树｜先总、再构型、再对应、最后反证”及对象层级、删主题/删人物/删桥/换结局的测试；Git 27fd0cc4f91b71979c5a96598298da65015d6b42，readback PASS；不改既有15片全表/旧证据。
+- **Canvas可视化回执**：原唯一 02_给我用的知识凝结库/01_动态链条/00_十元链电影卡片.canvas 右侧增分类思考中心（A四卡、B四卡、C四卡、D三卡及标题/四组底盘），左侧原电影卡与五维底盘原样保留。现45节点、旧边原封不动；21个新节点，文本卡重叠0，越界0，旧其他文本不变，右侧四类独立中心，所有新卡按宽度估算能容纳文本。Git 0370ebf5b53e5129f67ade4666e7c036ce4d129f，remote readback STRUCTURE_PASS，Windows Obsidian实屏 WAIT_LOCAL_UI。分类器只做「可以思考和对照」，不把写了标签算严格证据。
+- **案例入口**：⑤情书主题主×架桥【USER】、⑦楚门主题主×三者【USER】、②超时空主题＋双人物核【USER】、⑥你的名字主题＝人物【USER】、①一起摇太阳三角克【USER】、⑪飞越疯人院NZ架桥【USER】；其余主导/耦合解释属AI/H未锁。
+- **评估**：FZ4/5/7=ASSISTED_CLASSIFICATION_METHOD_AND_VISUAL_ORGANIZATION；C_FILM_GRADE_UNCHANGED、INDEPENDENT_PASS=NOT_SCORED、F2=null、F3=null，本地Agent和实际Canvas缩放未验证。
