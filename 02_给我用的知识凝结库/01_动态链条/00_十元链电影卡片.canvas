@@ -3,7 +3,7 @@
     {
       "id": "GROUP_TENYUAN_MOVIE_CASES",
       "type": "group",
-      "label": "十元链｜单一电影Canvas（14主卡＋1机制；五维导航）",
+      "label": "十元链｜单一电影Canvas（15主卡＋1机制；五维导航）",
       "x": 20,
       "y": 20,
       "width": 2180,
@@ -13,7 +13,7 @@
     {
       "id": "TENYUAN_MOVIE_CASES_INDEX",
       "type": "text",
-      "text": "# 🎬 十元链电影卡片库｜一眼看结构\n**14部电影主卡＋1张细分机制卡｜五大主题分区。**\n每张卡只放「人物十元 → 具体事件 → 关系链 → 结局」。长篇证据全部保存于 [[00_十元链电影卡片_研究详档|完整研究详档]]，点卡片底部「📖 展开」即可看原文。**【USER】**作者读法；**【H】**待审。主题分区是查找入口，不能代替严格主次定案。",
+      "text": "# 🎬 十元链电影卡片库｜一眼看结构\n**15部电影主卡＋1张细分机制卡｜五大主题分区。**\n每张卡只放「人物十元 → 具体事件 → 关系链 → 结局」。长篇证据全部保存于 [[00_十元链电影卡片_研究详档|完整研究详档]]，点卡片底部「📖 展开」即可看原文。**【USER】**作者读法；**【H】**待审。主题分区是查找入口，不能代替严格主次定案。",
       "x": 85,
       "y": 85,
       "width": 1980,
@@ -226,6 +226,16 @@
       "width": 2050,
       "height": 675,
       "color": "3"
+    },
+    {
+      "id": "TENYUAN_FILM_WATCH013_SHAWSHANK_REDEMPTION_1994",
+      "type": "text",
+      "x": 1450,
+      "y": 3170,
+      "width": 620,
+      "height": 500,
+      "color": "3",
+      "text": "## ⑯《肖申克的救赎》｜双线自由／不对称结局\n**主题候选：空间压制命运；因果证据被制度阻断【H】**\n**人物十元：安迪 待判｜瑞德 待判｜诺顿 待判（不得从希望直接定ZN/Z）**\n\n```text\n第一层｜监狱空间封闭\n安迪 ──蒙冤入狱、向瑞德取得小锤──→ 长期隐蔽行动\n瑞德 ──供应物件、建立友谊──→ 安迪\n                 ↓\n第二层｜制度吸纳／反证遭封锁\n安迪 ──替狱长理财、扩建图书馆──→ 有限自主\n汤米 ──提供另案真凶证词──→ 安迪翻案希望\n诺顿 ──拒绝翻案、汤米被杀──→ 法律路径关闭\n                 ↓\n第三层｜两条不同的命运\n安迪 ──多年挖洞、逃离、交出账本──→ 现实自由\n瑞德 ──获释却难适应、循信赴海边──→ 重获选择\n                 ↓\n结局｜海边重逢；布鲁克斯出狱后死亡无法回收\n```\n**横向**：安迪↔瑞德（工具与信任）；诺顿→安迪（控制）；汤米→安迪（翻案信息）。\n**纵向**：冤判→狱中交换→翻案受阻→秘密越狱／揭腐→瑞德重新选择。\n**竞争解释**：空间压制命运 vs 因果证据遭权力封锁；不以两条主题候选推出L2克补生。\n**预测观感【AI/H】**：受压→愤懑→释放／希望；作者意图≠角色体验≠真人观感（F3=null）。\n**反例/反驳**：布鲁克斯的出狱悲剧反驳“走出监狱=获得自由”；若瑞德并未改变行动，则“双线回收”不成立。\n**证据**：Stephen King官方电影页；AFI电影梗概；Warner Bros官方片介；具体汤米／越狱／海边情节为次级剧情资料，原片逐镜F2=null。\n**状态**：F1/H；人物元未锁；METHOD_ID无；H3 WAIT。\n"
     }
   ],
   "edges": [
@@ -254,7 +264,7 @@
     "relocated_edge_ids": [
       "edge_REL_MOTHER_03_to_04_LATENT_RELEASE"
     ],
-    "case_count": 14,
+    "case_count": 15,
     "mechanism_card_count": 1,
     "facts": "F1_CASE_NOT_STRICT_L2",
     "f2_source": null,
@@ -262,7 +272,7 @@
     "local_ui": "WAIT_LOCAL_UI",
     "single_source_of_truth": true,
     "skill_path": "07-Codex大脑库/skills/ten-yuan-chain/SKILL.md",
-    "newest_case": "WATCH020_DOCTOR_ZHIVAGO_1965_H",
+    "newest_case": "WATCH013_SHAWSHANK_REDEMPTION_1994_H",
     "latest_theme_agent_case": "TRUMAN_AG09_R3",
     "latest_theme_tenyuan_review": "TRUMAN_AG09_AG02_R4",
     "latest_user_film_case": {
