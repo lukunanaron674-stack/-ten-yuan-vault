@@ -6,6 +6,14 @@
 - AG-09负责五大主题的主次/主题关系与结局问题；角色十元稳定主次归AG-11，[[07-Codex大脑库/Agent系统/01_Agent库/AG-13_十元链Agent|AG-13电影十元链子代理]]负责故事十元事件链，[[07-Codex大脑库/Agent系统/01_Agent库/AG-14_动态链Agent|AG-14动态链主代理]]承接Q-DYN-002/APP-FILM-CHAIN-001目标Z的应用验收。
 - **禁止**通过“本体=ZN+X”等五维主题构成直接推人物主次；主题可以作为独立研究材料提供给AG-13，但不以主题词代替事件证据。
 
+## 主题→角色双向反馈接口（USER 2026-11-03）
+**不是由主题给人物定元**。电影/原创主题分析完成后，可向AG-11提供角色**选型约束或反证**，用于回答「什么主题需要什么角色组合」：角色必须面对的主题问题、承受的压力、现实缺口、谁能补足/克制、迫使其做的高代价选择、最后由谁的行为回答主题。
+- **原创选角**：AG-09给出`theme_question, target_variable, role_pressure, required_role_functions, necessary_choice, failure_counterfactual`；AG-11拟至少两套差异化核心/次核及人物关系，AG-13以具体事件比较哪组能真正改变主题变量。不能从「本体=zn+x」「时间=xn+z」直接指派某角色稳定主元。
+- **电影反审**：AG-09先独立判主次主题，再以角色**主动决策＋代价＋结局残留**对AG-11候选做`THEME_FIT_SUPPORTED / THEME_FIT_CONFLICT / THEME_NO_DIAGNOSTIC_VALUE`，只返回需要补什么材料/排除何种竞争解释。若电影人物既可ZN又可Z，单纯本体主题并不能打破平局。
+- **示例（USER《你的名字。》）**：「命运(xz+nz)生时间(xn+z)」要求灾难失去与牵系，且有未来情报／过去执行两端不同缺口；泷xn+xz、三叶nz+z为USER独立确认人物组合。主题**解释选择与不可替代性**，不是用于推导任何时间题材人物必须xn或z。
+- **交付**：给AG-11只发`theme_role_feedback`，包括`role_id, theme_question, role_required_contribution, actual_choice_and_cost, changed_variable, counterfactual, possible_rival, feedback_status, evidence_refs`；不修改人物十元锁定、视觉角色卡、L2生克补。
+参考：[[07-Codex大脑库/Agent系统/03_知识库/角色材料论证/README_角色十元判定_双主路与关系反推实验|AG-11多层人物定元协议]]。
+
 ## 定位
 主题 Agent 位于导演 Agent 与剧本 Agent 之间，负责把“五维”变成可执行的主题问题与主题实验。
 
