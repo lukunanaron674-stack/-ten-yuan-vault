@@ -48,3 +48,9 @@ updated: 2026-11-03
 - **已看状态**：WATCH-026确认用户看过，原观影表已更新 R1/R2 进度，commit bb4d0dfd960276ef95daa9b5b747f504f72853d7。
 - **能力验收边界**：本轮没有读取旧十元正文，但仓库已有釜山行动态链初审，历史污染风险仍在；status=PRELOCKED_PENDING_USER，holdout_eligible=false，independent_pass=NOT_SCORED；F2=null，F3=null，LOCAL_UI=WAIT。C-film基线不升级，不充正式新片盲测。
 - **下一步明确终点**：等待USER先看本轮预锁角色与主题；再对照旧十元初审并记录FZ2/FZ4/FZ5/FZ7的具体错因。真正C6/C7必须在没有旧标签暴露的确实未见片上预注册。
+
+## 2026-11-03｜WATCH-011《千年女优》USER观后新证据（当前增量）
+- **案例登记已核**：原电影Canvas第⑩卡`TENYUAN_FILM_WATCH011_MILLENNIUM_ACTRESS_SOUL_2001`已原位更新为「时间克因果／命运架桥→千代子NX爱自己的ZX」，`WATCH-011`已恢复为USER确认看过；角色正本《千代子》已将旧AI `Z+XN`退为历史，现行为USER判断「千代子NX；向往／爱自己的ZX；画家ZN」。相关写后回读已PASS：电影Canvas commit `d72b2e3ab90153893bcf22fd8c8c1725f4b8c61b`；角色 `aeec4515e5266de860d5eb3ec7d8743c1e7a67fe`；观影登记 `b773bf44e707b2f28be57a78f67c98830e2a284c`；AG-11方法错误族 `CHAR-ERR-ASPIRATIONAL-TENYUAN` commit `42e3be43898a90f43f1d2a439d4620850e08ce8a`。Linear 674-105回执comment `40adc717-c4a3-4502-85f9-16dd812753a5`。
+- **能力增量**：FZ2=首次明确记录「原始性格NX、向往ZX、所爱对象ZN、屏幕行动误显Z」四层混淆，USER纠正；FZ4=电影宏观「时间克因果／命运架桥」与人物内在小十元关系分层；FZ6=外在追求无果→内在爱自己的ZX之反转回收；FZ7=从旧AI Z+XN错判到可解释纠偏的协作审校。均只计`ASSISTED_CASE_RECORDED`，不计`independent_pass`。
+- **最新盘点**：当前电影Canvas共11部不同影片主卡＋《钢琴家》1张机制子卡，28部用户确认已看作品中有11部有主卡，仍有17部尚无主卡；“11/28”只算**电影覆盖**，不是96个验证题卡的完成比例。GOAL-Q标准仍为FZ1–FZ8原C-film暂估 C5/C2/C3/C2/C4/C4/C3/C4，独立成绩`NOT_SCORED`。当前另一《釜山行》R1/R2仅PRELOCKED_PENDING_USER且旧库潜在污染，不能充holdout。
+- **目标状态不可抬高**：`research_status=METHOD_REGISTERED`，`baseline_status=ESTIMATED_NOT_BLIND_TESTED`，`independent_holdout=NOT_STARTED`，`execution_status=REPO_REGISTERED_LOCAL_UNVERIFIED`。C7/C8/C9的至少5/10部未泄题多题材考试／两个不同题材原创可拍剧本尚未通过；F2原片、F3真人观感缺位，不因USER纠错就增级。
