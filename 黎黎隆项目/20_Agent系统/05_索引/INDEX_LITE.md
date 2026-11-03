@@ -1,5 +1,8 @@
 # INDEX_LITE｜Agent 最小上下文路由
 
+> 岗位正文统一在 [[07-Codex大脑库/Agent系统/README|全库 Agent 核心]]；本页只做《黎黎隆》PROJECT_STATE与CTX的最小路由。
+
+
 > 默认入口。旧 `IDX-xx` 保留为证据/回源导航，不再作为每次启动必读。
 
 | Agent | 默认工作记忆 | 允许按需回源 |

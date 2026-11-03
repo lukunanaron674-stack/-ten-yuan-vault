@@ -30,6 +30,9 @@ Codex 可以主动判断：
 
 ## 入口
 
+- [[07-Codex大脑库/Agent系统/README|全库 Agent 核心｜AG-00～AG-12＋五维主题 AG-09＋TK-01～03]] — 通用代理岗位唯一正文；《黎黎隆》共享状态及H3执行仍留项目。
+
+
 - [十元链 Skill｜生克补动态链构成与蓄补爆发](./skills/ten-yuan-chain/SKILL.md) — 一张链卡记录具体事件、生克补候选、阶段因果、触发、爆发与回收；《钢琴师》为“克—补—生／蓄补爆发”的示例，不自动升格理论正本。
 
 - [静态文字横纵构图 Skill｜多泳道文本关系图](./skills/story-horizontal-vertical-text/SKILL.md) — 用户范式；剧本、任务流程、人物多方因果、反馈回流均先画等宽文本主图；方法正本为 `STORY_TENYUAN_CROSS_VERTICAL_PROTOCOL.md`，与 Obsidian Canvas 几何排版不同。
