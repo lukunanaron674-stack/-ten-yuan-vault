@@ -95,6 +95,12 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 **当前状态**：`METHOD_REGISTERED / BASELINE_ESTIMATED / HOLDOUT_TESTS_NOT_STARTED`；无正式盲测C-film验收；C-feeling/E0–E5不动。
 
 
+### 5.6｜2026-11-03 最新增量：千年女优 NX→ZX USER观后反审
+- **WATCH-011协作研究卡确认写入**：千代子`NX`为人物本核，`ZX`为向往并在结尾爱上的自我，画家`ZN`为所爱对象；整部电影的「时间克因果／命运架桥」与人物小十元「爱自己的ZX」分层。原AI`Z+XN`属`CHAR-ERR-ASPIRATIONAL-TENYUAN`：追逐行为/银幕时间剪辑 ≠ 稳定人格，角色向往之十元 ≠ 本体主元。
+- **FZ2/FZ4/FZ6/FZ7增量性质**：作者纠错`ASSISTED_CASE_RECORDED`，没有预锁的AI独立判对成绩；不能自动提升原C-film暂评。原目标预算96只是题卡位，非96个完成样本；`independent_holdout=NOT_STARTED`。
+- **当前基数更正（取代§5.1/5.3的历史起点，不改历史证据）**：最新统一Canvas存11部影片主卡、1张《钢琴家》机制卡；用户已看28部，覆盖11/28，剩17部未建电影主卡。另《釜山行》已R1/R2预锁待USER审，`holdout_eligible=false`。不得把旧「6部→差22部」当现行数。
+- **验收门槛仍未满足**：本地Agent实际加载未验证；F2逐镜与F3真人观感缺失；C-film仍为`METHOD_REGISTERED/BASELINE_ESTIMATED/HOLDOUT_NOT_STARTED`。同一次协作纠正不可重复记为若干独立测试通过。
+
 ## 6｜代理执行绑定（2026-11-03，应用路由不改变D1目标）
 
 > **问题系统与代理系统共用问题ID，不新设D1问题**。G4/Q-DYN-002管理动态感受曲线与正式验收；AG-14只承担任务执行与研究整理，不能自我裁定E级。
