@@ -13,7 +13,7 @@
     {
       "id": "TENYUAN_MOVIE_CASES_INDEX",
       "type": "text",
-      "text": "# 🎬 十元链电影卡片库｜左边电影、右边分类思考\n**左：16部电影＋《钢琴家》机制子卡｜右：按排版Skill整理的主导分类与判题卡。**\n**三轴：主导（主题／人物／双层） × 构型（三者／三角克／架桥等） × 主题×人物（等于／共振／对冲／转化）。**\n**作者修正：⑤《情书》主题主；②《超时空辉耀姬！》主题＋双人物核；⑥《你的名字。》主题＝人物。**\n[[00_十元链电影卡片_研究详档#CURRENT-CLASSIFICATION-20261103|📊 16部电影三轴分类完整表（含作者确认与AI候选）]]\n下方电影短卡看人物→事件→关系→回收；全部证据在 [[00_十元链电影卡片_研究详档|研究详档]]。",
+      "text": "# 🎬 十元链电影卡片库｜左边电影、右边分类思考\n**左：17部电影＋《钢琴家》机制子卡｜右：按排版Skill整理的主导分类与判题卡。**\n**三轴：主导（主题／人物／双层） × 构型（三者／三角克／架桥等） × 主题×人物（等于／共振／对冲／转化）。**\n**作者修正：⑤《情书》主题主；②《超时空辉耀姬！》主题＋双人物核；⑥《你的名字。》主题＝人物。**\n[[00_十元链电影卡片_研究详档#CURRENT-CLASSIFICATION-20261103|📊 17部电影三轴分类完整表（含作者确认与AI候选）]]\n新增⑰《死亡诗社》：空间规训/本体表达竞争【H】，双分叉结局；人物十元待判。\\n下方电影短卡看人物→事件→关系→回收；全部证据在 [[00_十元链电影卡片_研究详档|研究详档]]。",
       "x": -1890,
       "y": 4400,
       "width": 3780,
@@ -756,6 +756,16 @@
       "width": 4940,
       "height": 730,
       "color": "3"
+    },
+    {
+      "id": "TENYUAN_FILM_WATCH024_DEAD_POETS_SOCIETY_1989",
+      "type": "text",
+      "x": -940,
+      "y": 8811,
+      "width": 870,
+      "height": 1220,
+      "color": "4",
+      "text": "## ⑰《死亡诗社》（1989）｜规训与表达分叉【F1/H】\n**人物十元**：基廷＝待判；尼尔＝待判；托德＝待判。不能由教师自由理念、尼尔表演欲、托德沉默直接推出人格十元。\n**主题竞争【H】**：本体（个人选择/自我表达）与空间（学校及家庭的制度环境）冲突；备选：因果（责任归属与行动后果）主导。**五维是主题层，不是人物十元定元。**\n\n```text\n第一层｜课堂打开行动可能\n基廷：诗歌教学、鼓励换角度看世界 十元待判\n  ├──鼓励独立思考──→ 尼尔：希望登台 十元待判\n  └──鼓励发声──────→ 托德：表达受阻 十元待判\n                       ↓\n第二层｜同一环境，两种后果\n尼尔 ──出演戏剧──→ 父亲反对、要求转学\n学校规训＋家庭命令 ──限制选择──→ 尼尔\n                       ↓\n尼尔死亡；学校调查将责任归向基廷\n                       ↓\n第三层｜另一条不对称回收\n托德 ──率先站上课桌──→ 向离开的基廷致意\n其他学生 ──陆续跟随──→ 公开表达支持\n                       ↓\n结局：表达能力部分兑现；尼尔死亡不可逆，\n      基廷离校，制度约束未整体消失。\n```\n\n**横向同一冲突窗**：尼尔希望演出 ↔ 父亲要求服从；学生与校方在调查中存在权力不对称。**纵向**：课堂鼓励→演出/禁令→悲剧/追责→托德公开表达。\n**关系审稿**：规训“限制选择”是剧情层行为边，不自动等于 L2「克」；托德公开表达是可观察行动，不等于人格从XN变Z。双补、三角克均缺合法端点与机制，不立。\n**作者意图**：影片表达独立思考的创作取向【基于情节的H解读，非导演原话】；**角色感情**：尼尔对演出的渴望、托德的犹疑与最后支持【H】；**AI预测观众感受**：启发→压迫/悲痛→有限振奋【预测，非实测】；`human_feeling=null`。\n**反例/可反驳**：若课堂教学并非托德最后行动的重要条件，则「教学→表达」因果边降级；若制度压力不足以解释尼尔悲剧，则空间主导降权、个人/家庭关系解释上升。\n**竞争母型**：不是《飞越疯人院》式单一空间突破；本片同一规训下出现不可逆损失与有限表达两条不对称结局。差异是事件级，不构成新L2机制。\n**证据**：R1四组事件据IMDb剧情资料与帕多瓦大学影片研究资料交叉梳理（仅F1）；未持有原片逐镜证据，不写镜头/时间码。F2=null；F3=null；状态 KNOWLEDGE_CAPTURED（研究假设，非应用验证）。\n**来源**：IMDb tt0097165 plotsummary；Padova DeadPoetsSociety.pdf。**未做H3映射**：674-293资产及USER_PASS+SHA未READY，WAIT。"
     }
   ],
   "edges": [
@@ -816,7 +826,7 @@
     "relocated_edge_ids": [
       "edge_REL_MOTHER_03_to_04_LATENT_RELEASE"
     ],
-    "case_count": 16,
+    "case_count": 17,
     "mechanism_card_count": 1,
     "facts": "F1_CASE_NOT_STRICT_L2",
     "f2_source": null,
@@ -824,7 +834,7 @@
     "local_ui": "WAIT_LOCAL_UI",
     "single_source_of_truth": true,
     "skill_path": "07-Codex大脑库/skills/ten-yuan-chain/SKILL.md",
-    "newest_case": "WATCH013_SHAWSHANK_REDEMPTION_1994_H",
+    "newest_case": "TENYUAN_FILM_WATCH024_DEAD_POETS_SOCIETY_1989",
     "latest_theme_agent_case": "TRUMAN_AG09_R3",
     "latest_theme_tenyuan_review": "TRUMAN_AG09_AG02_R4",
     "latest_user_film_case": {
@@ -846,7 +856,7 @@
       "F3": null,
       "local_ui": "WAIT_LOCAL_UI"
     },
-    "updated": "2026-11-03",
+    "updated": "2026-11-04",
     "r1_sealed_case_id": "FILM-CHAIN-WATCH026-20261103",
     "holdout_eligible": false,
     "legacy_case_isolated": true,
@@ -981,9 +991,9 @@
         "02_给我用的知识凝结库/01_动态链条/01_十元故事三级构成_图形横纵分幕视听.canvas"
       ],
       "retirement_condition": "verify unique historical research migration, incoming references and local Obsidian sync; no deletion yet",
-      "current_case_count": 17,
+      "current_case_count": 18,
       "quality": "structural_only_not_windows_visual_pass",
-      "current_main_film_count": 16,
+      "current_main_film_count": 17,
       "current_mechanism_subcards": 1
     }
   }
