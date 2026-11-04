@@ -3,7 +3,7 @@
     {
       "id": "GROUP_TENYUAN_MOVIE_CASES",
       "type": "group",
-      "label": "南｜17部电影主卡＋1张机制卡（单一案例库）",
+      "label": "南｜16部电影主卡＋1张机制卡（单一案例库）",
       "x": -2050,
       "y": 4200,
       "width": 4100,
@@ -540,7 +540,7 @@
     {
       "id": "TENCHAIN_NORTH_STATE",
       "type": "text",
-      "text": "# 状态｜方法已登记，能力未通过独立盲测\n- 电影卡：**17主卡＋1机制卡**（本图已有，非全部已验证）\n- 十元链分析目标：`METHOD_REGISTERED`\n- 独立未知影片：`NOT_STARTED / NOT_SCORED`\n- 真人观众感受 F3：未测\n- Obsidian 本机缩放：`WAIT_LOCAL_UI`",
+      "text": "# 状态｜方法已登记，能力未通过独立盲测\n- 电影卡：**16主卡＋1机制卡**（本图已有，非全部已验证）\n- 十元链分析目标：`METHOD_REGISTERED`\n- 独立未知影片：`NOT_STARTED / NOT_SCORED`\n- 真人观众感受 F3：未测\n- Obsidian 本机缩放：`WAIT_LOCAL_UI`",
       "x": -2090,
       "y": -2750,
       "width": 1300,
@@ -982,7 +982,9 @@
       ],
       "retirement_condition": "verify unique historical research migration, incoming references and local Obsidian sync; no deletion yet",
       "current_case_count": 17,
-      "quality": "structural_only_not_windows_visual_pass"
+      "quality": "structural_only_not_windows_visual_pass",
+      "current_main_film_count": 16,
+      "current_mechanism_subcards": 1
     }
   }
 }
