@@ -1,0 +1,33 @@
+{
+  "inputs": {
+    "lucasSha256": "35A0F79E0074187E6477D1FC55108BD36C7A33188E3F15212305EED5968B4E5E",
+    "claireHeadSha256": "3F17D491D61F8484905C0B2AB6165CD1DA94E43FD57205FC985DFC1FA0D7BF7D",
+    "frameSha256": "79ACD3E2EF4E0E2A8CAC502E9C54D9B31A58F1C74471D2DDC6A4239751074AB8",
+    "claireSha256": "3503D15DDCAE0E4E8C7A384005249A586747386B9EF4E216CCA8F2123A4140A9"
+  },
+  "shots": [
+    {
+      "frames": 96,
+      "shot": 1,
+      "prompt_id": "c6bf50f7-ba9b-44c5-b479-47010449391b"
+    },
+    {
+      "frames": 96,
+      "shot": 2,
+      "prompt_id": "2ee98ca2-2035-44f3-b6e9-834390937d2f"
+    },
+    {
+      "frames": 96,
+      "shot": 3,
+      "prompt_id": "e2434dce-0898-4fda-9b03-5f4e4121b6bf"
+    },
+    {
+      "frames": 72,
+      "shot": 4,
+      "prompt_id": "634fb853-6f72-467d-93d9-d94114772729"
+    }
+  ],
+  "tag": "EP2_01_taskcard_20261031_114147",
+  "task": "B1-EP2-01",
+  "status": "queued_candidate"
+}

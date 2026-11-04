@@ -1,0 +1,195 @@
+{
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "device": "default",
+      "type": "minimax"
+    },
+    "class_type": "CLIPLoader"
+  },
+  "14": {
+    "inputs": {
+      "samples": [
+        "13",
+        0
+      ],
+      "vae": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "VAEDecode"
+  },
+  "17": {
+    "inputs": {
+      "video": [
+        "16",
+        0
+      ],
+      "format": "mp4",
+      "filename_prefix": "ten_yuan_envelope_h3_20261029/B1_EP1_02_2_Marcel_13s_candidate",
+      "codec": "h264"
+    },
+    "class_type": "SaveVideo"
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "11": {
+    "inputs": {
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "model": [
+        "2",
+        0
+      ],
+      "steps": 4
+    },
+    "class_type": "BasicScheduler"
+  },
+  "15": {
+    "inputs": {
+      "samples": [
+        "13",
+        0
+      ],
+      "vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "VAEDecodeAudio"
+  },
+  "12": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect"
+  },
+  "16": {
+    "inputs": {
+      "fps": 24.0,
+      "audio": [
+        "15",
+        0
+      ],
+      "images": [
+        "14",
+        0
+      ],
+      "bit_depth": 8
+    },
+    "class_type": "CreateVideo"
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "13": {
+    "inputs": {
+      "sampler": [
+        "12",
+        0
+      ],
+      "noise": [
+        "10",
+        0
+      ],
+      "latent_image": [
+        "8",
+        1
+      ],
+      "sigmas": [
+        "11",
+        0
+      ],
+      "guider": [
+        "9",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced"
+  },
+  "8": {
+    "inputs": {
+      "clip": [
+        "3",
+        0
+      ],
+      "vae": [
+        "4",
+        0
+      ],
+      "prompt": "Use the supplied first frame as the exact opening composition, bookstore layout, character identities, clothes and warm hand-drawn 2D style. Story for B1-EP1-02-2 only, approximately 13 seconds, no Lucas. Timeline: 0-3s, Claire notices the music page inside the old book and carefully lifts it; a very restrained warm glimmer and a few subtle light ripples suggest the strange music, while the bookstore remains ordinary. 3-6s, hard cut to a close insert of the page and her fingers, a short delicate musical phrase, no legible writing. 6-8s, hard cut to Claire's surprised face; she recoils slightly and exclaims clearly, \"What the fuck?!\" 8-10s, hard cut to Marcel quietly reading in his chair; he is startled by her shout, lowers his book and looks annoyed. 10-13s, medium-wide view in the same room; Marcel stands and firmly points toward the entrance, Claire hurries out without physical contact, ending at the open doorway. Keep all cuts simple and spatially coherent. Preserve Claire as the same young woman with long dark wavy hair, silver clips, grey striped sweater, headphones and backpack. Preserve Marcel as the same middle-aged bookseller with glasses, brown tweed jacket, dark green vest and cream shirt. Natural limited movement, stable bookstore geometry, warm lamps and cool window daylight. Audio: quiet room tone, page rustle, one small mysterious musical phrase, Claire's single startled line, chair/book movement, no other dialogue or music bed. No camera zooms within shots, no morphing, no extra people, no outfit or face changes, no extra props, no violent action, no subtitles, no text overlay, no historical flashback, no large magical VFX.",
+      "width": 1024,
+      "height": 576,
+      "length": 311,
+      "first_frame": [
+        "50",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3ImageToVideo"
+  },
+  "1": {
+    "inputs": {
+      "weight_dtype": "default",
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors"
+    },
+    "class_type": "UNETLoader"
+  },
+  "10": {
+    "inputs": {
+      "noise_seed": 202610292202
+    },
+    "class_type": "RandomNoise"
+  },
+  "9": {
+    "inputs": {
+      "conditioning": [
+        "8",
+        0
+      ],
+      "model": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "BasicGuider"
+  },
+  "2": {
+    "inputs": {
+      "strength_model": 1.0,
+      "lora_name": "minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly"
+  },
+  "6": {
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261029/B1_EP1_02_2_Marcel_firstframe_candidate.png"
+    },
+    "class_type": "LoadImage"
+  },
+  "50": {
+    "inputs": {
+      "upscale_method": "lanczos",
+      "width": 1024,
+      "height": 576,
+      "crop": "center",
+      "image": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "ImageScale"
+  }
+}

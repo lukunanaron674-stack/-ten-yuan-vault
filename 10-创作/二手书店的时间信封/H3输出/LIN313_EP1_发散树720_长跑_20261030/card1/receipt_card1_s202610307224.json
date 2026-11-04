@@ -1,0 +1,30 @@
+{
+ "task": "B1-EP1-card1-720-T8",
+ "prompt_id": "9d82fb41-6d77-44e1-9fb1-7dd1afc67421",
+ "status": "SUCCESS_CANDIDATE",
+ "node_stack": "MiniMaxH3AudioConditioningT8 + DualClockSamplerT8 + AVDecodeT8",
+ "task_type": "Hybrid",
+ "width": 1280,
+ "height": 704,
+ "native_frames": 362,
+ "fps": 24,
+ "duration_s": 15.083,
+ "seed": 202610307224,
+ "steps": 8,
+ "first_frame_sha256": "199c482c5960f4479b2e0f4c02aad5b85bec33ad1a85571f41e48bfa638bb034",
+ "refs": [
+  {
+   "file": "card1_ref0.png",
+   "sha256": "bce059714fb6ad6a6e506ae0695da9f01265775eee001a79cd3b003eb24a551b"
+  },
+  {
+   "file": "card1_ref1.png",
+   "sha256": "96252d6be510ac076cb4449d0edf5544707ff8b519240d56a60cea4ce4f6095f"
+  }
+ ],
+ "elapsed_minutes": 12.25,
+ "output": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\LIN313_EP1_发散树720_长跑_20261030\\card1\\card1_H3_720_362f_s202610307224.mp4",
+ "evidence_workflow": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\LIN313_EP1_发散树720_长跑_20261030\\card1\\workflow_card1_s202610307224.json",
+ "sha256": "d967a3811b78313f9b3f0786b8930ee3bd38c1d11f1321e3a1af82a0710d2829",
+ "review": "PENDING"
+}

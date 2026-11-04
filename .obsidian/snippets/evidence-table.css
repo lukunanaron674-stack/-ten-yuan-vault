@@ -1,0 +1,4 @@
+.evidence-table table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.evidence-table th, .evidence-table td { border: 1px solid var(--background-modifier-border); padding: 0.55em 0.7em; vertical-align: top; }
+.evidence-table th { background: var(--background-secondary); font-weight: 700; text-align: center; }
+.evidence-table mark { padding: 0.08em 0.2em; color: inherit; background: color-mix(in srgb, var(--color-yellow) 30%, transparent); }

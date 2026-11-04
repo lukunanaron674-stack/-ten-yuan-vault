@@ -1,0 +1,247 @@
+{
+  "7": {
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "inputs": {
+      "audio_mode": "native",
+      "ref_images.ref_image_1": [
+        "17",
+        0
+      ],
+      "video_vae": [
+        "3",
+        0
+      ],
+      "prompt": "同一地铁琴位双人中近景，按图5和图6构图。Claire把唯一一封信递给Lucas；Lucas停琴、抬头、接过信。动作顺序清楚，最后Claire、Lucas和信同时留在画面，稳定收束；不增加文字、不重复信封。",
+      "length": 65,
+      "audio_vae": [
+        "4",
+        0
+      ],
+      "ref_image_size": "match",
+      "ref_images.ref_image_0": [
+        "16",
+        0
+      ],
+      "task_type": "Hybrid",
+      "width": 736,
+      "ref_images.ref_image_5": [
+        "21",
+        0
+      ],
+      "audio_denoise_strength": 0.35,
+      "ref_images.ref_image_3": [
+        "19",
+        0
+      ],
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "2",
+        0
+      ],
+      "add_source_as_reference": false,
+      "strict_prompt_tags": true,
+      "prompt_primary_audio_ordinal": 0,
+      "ref_images.ref_image_2": [
+        "18",
+        0
+      ],
+      "ref_images.ref_image_4": [
+        "20",
+        0
+      ],
+      "height": 416,
+      "first_frame": [
+        "20",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "MiniMaxH3PDDAccApply",
+    "inputs": {
+      "model": [
+        "24",
+        0
+      ],
+      "pdd_file": "MiniMax-H3-Ref2VA-Acc-8Step.safetensors",
+      "nfe": "8",
+      "lora_strength": 1.0,
+      "head_strength": 1.0,
+      "on_off_grid": "error"
+    }
+  },
+  "16": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card3_Claire.png"
+    }
+  },
+  "20": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card3_MetroStoryboard.png"
+    }
+  },
+  "15": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card3_firstframe.png"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+    }
+  },
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "device": "default",
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax"
+    }
+  },
+  "18": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card3_MetroPlatform.png"
+    }
+  },
+  "11": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "sampler": [
+        "25",
+        0
+      ],
+      "guider": [
+        "10",
+        0
+      ],
+      "latent_image": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "8",
+        1
+      ]
+    }
+  },
+  "17": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card3_Lucas.png"
+    }
+  },
+  "10": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "conditioning": [
+        "7",
+        0
+      ],
+      "model": [
+        "8",
+        0
+      ]
+    }
+  },
+  "14": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "codec": "h264",
+      "filename_prefix": "ten_yuan_envelope_h3_20261031/Card3_PDD8_14.3s/shot07_LetterTransfer_retry",
+      "video": [
+        "13",
+        0
+      ],
+      "format": "mp4"
+    }
+  },
+  "12": {
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "inputs": {
+      "audio_vae": [
+        "4",
+        0
+      ],
+      "av_latent": [
+        "11",
+        0
+      ],
+      "video_vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "19": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card3_PianoComposition.png"
+    }
+  },
+  "13": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "audio": [
+        "12",
+        1
+      ],
+      "bit_depth": 8,
+      "images": [
+        "12",
+        0
+      ],
+      "fps": 24.0
+    }
+  },
+  "21": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card3_ClaireCloseupStyle.png"
+    }
+  },
+  "9": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 202610310324
+    }
+  },
+  "24": {
+    "class_type": "MiniMaxH3SigmaShift",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "shift_video": 12.0,
+      "shift_audio": 3.0
+    }
+  },
+  "25": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    }
+  }
+}

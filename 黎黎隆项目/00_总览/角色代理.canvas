@@ -51,5 +51,9 @@
 		{"id":"e_root_role_warehouse_20261008","fromNode":"az_root","fromSide":"right","toNode":"role_warehouse_index_20261008","toSide":"left","label":"ROLE_WAREHOUSE"},
 		{"id":"e_warehouse_index_entry_20261008","fromNode":"role_warehouse_index_20261008","fromSide":"right","toNode":"role_warehouse_entry_20261008","toSide":"left","label":"仓库入口"},
 		{"id":"e_warehouse_entry_base_20261008","fromNode":"role_warehouse_entry_20261008","fromSide":"bottom","toNode":"role_warehouse_base_20261008","toSide":"top","label":"Base 链接"}
-	]
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

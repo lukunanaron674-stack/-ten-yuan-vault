@@ -1,0 +1,23 @@
+{
+  "task_id": "B1-EP1-03-CARD3-20261030-01",
+  "execution_class": "LOCAL_CANDIDATE_PREVIEW",
+  "comfy_prompt_id": "856a639d-4313-4cd0-b16b-c9ceff078241",
+  "source_first_frame": "ten_yuan_envelope_h3_20261030\\B1_EP1_03_Card3_14s\\Card3_站台递信_首帧.png",
+  "source_first_frame_sha256": "87e6432a26d06c6a37efcad8d42d12654b4b4d2e1a7ce732efbebcc336a086f3",
+  "frames": 343,
+  "fps": 24,
+  "duration_seconds": 14.292,
+  "duration_label": "14.3s",
+  "resolution": "1024x576",
+  "seed": 202610301403,
+  "workflow": "H3_I2V_API_workflow_v3.json",
+  "output_file": "B1-EP1-03_Card3_Claire递信给Lucas_14.3s_candidate.mp4",
+  "status": "SUCCESS_CANDIDATE",
+  "production_gate": "NOT_READY_FOR_H3_PACKET",
+  "user_request": "Render one Card 3 segment at 14.3 seconds.",
+  "raw_h3_output_file": "B1-EP1-03_Card3_Claire递信给Lucas_rawH3_14.38s.mp4",
+  "raw_h3_output_sha256": "ca4e71aaf94340fd4f8b2d660bd3d7c5a37f9cf115095a1e506e5cd2088a15ed",
+  "output_sha256": "771f33cbbfe761cec34e0ea8cfd0243d459955fd68e7b5af42fa9ecb5fcdc5eb",
+  "final_container_duration": "14.29s (24fps, 343 frames; rounds to 14.3s)",
+  "postprocess": "Re-encoded delivery copy to align audio and container duration; raw H3 render preserved alongside."
+}

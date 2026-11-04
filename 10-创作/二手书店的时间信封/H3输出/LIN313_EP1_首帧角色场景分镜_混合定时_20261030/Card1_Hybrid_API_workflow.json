@@ -1,0 +1,204 @@
+{
+  "18": {
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261030\\LIN313_EP1_HybridRefs\\Card1_ClaireCloseupStyle.png"
+    },
+    "class_type": "LoadImage"
+  },
+  "3": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "8": {
+    "inputs": {
+      "shift_video": 12.0,
+      "av_latent": [
+        "7",
+        1
+      ],
+      "shift_audio": 3.0,
+      "sampler_name": "dual_clock_euler",
+      "scheduler": "native_flow",
+      "steps": 20,
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8"
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "14": {
+    "inputs": {
+      "filename_prefix": "ten_yuan_envelope_h3_20261030/LIN313_EP1_HybridRefs/Card1_345f",
+      "format": "mp4",
+      "codec": "h264",
+      "video": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "SaveVideo"
+  },
+  "10": {
+    "inputs": {
+      "model": [
+        "8",
+        0
+      ],
+      "conditioning": [
+        "7",
+        0
+      ]
+    },
+    "class_type": "BasicGuider"
+  },
+  "1": {
+    "inputs": {
+      "weight_dtype": "default",
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors"
+    },
+    "class_type": "UNETLoader"
+  },
+  "12": {
+    "inputs": {
+      "av_latent": [
+        "11",
+        0
+      ],
+      "video_vae": [
+        "3",
+        0
+      ],
+      "audio_vae": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8"
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 202610301701
+    },
+    "class_type": "RandomNoise"
+  },
+  "17": {
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261030\\LIN313_EP1_HybridRefs\\Card1_WorkshopStoryboard.png"
+    },
+    "class_type": "LoadImage"
+  },
+  "15": {
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261030\\LIN313_EP1_HybridRefs\\Card1_firstframe.png"
+    },
+    "class_type": "LoadImage"
+  },
+  "13": {
+    "inputs": {
+      "audio": [
+        "12",
+        1
+      ],
+      "bit_depth": 8,
+      "fps": 24.0,
+      "images": [
+        "12",
+        0
+      ]
+    },
+    "class_type": "CreateVideo"
+  },
+  "16": {
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261030\\LIN313_EP1_HybridRefs\\Card1_Claire.png"
+    },
+    "class_type": "LoadImage"
+  },
+  "11": {
+    "inputs": {
+      "guider": [
+        "10",
+        0
+      ],
+      "noise": [
+        "9",
+        0
+      ],
+      "latent_image": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "8",
+        2
+      ],
+      "sampler": [
+        "8",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced"
+  },
+  "2": {
+    "inputs": {
+      "device": "default",
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax"
+    },
+    "class_type": "CLIPLoader"
+  },
+  "7": {
+    "inputs": {
+      "audio_mode": "native",
+      "prompt": "Use <Picture 1> as the exact opening image and composition. <Picture 2> is Claires approved identity and clothing reference. <Picture 3> is the workshop scene and action-storyboard reference. Preserve Claire and her classmate as the same two people throughout, the existing dark fabric, scissors, table geometry and workshop. Hand-drawn 2D animation with clean dark ink lines, matte flat colors, restrained gentle shading and warm everyday Paris atmosphere; keep the supplied character proportions. Each timed beat is one full-screen shot in the listed order. Keep screen direction and action continuity. No split-screen or storyboard grid, no extra people, no costume or face redesign, no duplicate scissors or fabric, no legible text, no photorealism or 3D. No intelligible speech; dialogue and the final black are post-production. <Picture 4> is the close-up illustration style reference: borrow its soft warm skin shading, expressive facial rendering, fine dark ink lines, natural hair detail and gentle matte texture. Keep each shot a single full-screen composition; never reproduce its contact sheet or panel grid. Keep character identity and costume from the separate identity references.\n\nTIME-CODED STORYBOARD (follow in order; each range is one full-screen shot):\n00-02.2s | 01-01: Wide establishing view inside the same fashion-design workshop. Claire and the classmate work at one shared table on the same dark fabric; Claire places one fabric piece in the shared work area. No cutting yet.\n02.2-04.2s | 01-02: Close insert on the classmates existing hand, scissors and Claires fabric. The scissors close exactly once and sever the crucial detail; the fabric edge falls visibly onto the table.\n04.2-07.0s | 01-03: Medium-close on Claire as she sees the cut, pulls back the same damaged fabric and faces the classmate with a controlled angry reaction. Complete torso and arm action; dialogue is added in post.\n07.0-09.7s | 01-04: Locked medium-wide, same table and screen axis. The classmate sets down the tool, turns and walks out of frame. Claire stays. Hold the now-empty place clearly.\n09.7-13.8s | 01-05: Locked close shot. Claire parts her lips as if to explain, raises one hand halfway, cannot speak, closes her lips and slowly lowers the same hand; remain still for the quiet beat.\n13.8-14.375s | 01-06 edit lead-in: Hold on the settled empty workshop image; the exact 0.7-second black is a post-production insert, do not generate text or a new shot.",
+      "ref_images.ref_image_1": [
+        "17",
+        0
+      ],
+      "height": 416,
+      "audio_denoise_strength": 0.35,
+      "task_type": "Hybrid",
+      "clip": [
+        "2",
+        0
+      ],
+      "width": 736,
+      "audio_vae": [
+        "4",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "18",
+        0
+      ],
+      "length": 345,
+      "add_source_as_reference": false,
+      "strict_prompt_tags": true,
+      "ref_images.ref_image_0": [
+        "16",
+        0
+      ],
+      "reference_video_policy": "official_2_to_15s",
+      "prompt_primary_audio_ordinal": 0,
+      "ref_image_size": "match",
+      "first_frame": [
+        "15",
+        0
+      ],
+      "video_vae": [
+        "3",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8"
+  }
+}

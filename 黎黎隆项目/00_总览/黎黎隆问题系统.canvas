@@ -15,5 +15,9 @@
 		{"id":"e2","fromNode":"subgoals","fromSide":"right","toNode":"progress","toSide":"left"},
 		{"id":"e3","fromNode":"goal","fromSide":"bottom","toNode":"nx","toSide":"top"},
 		{"id":"e4","fromNode":"nx","fromSide":"right","toNode":"next","toSide":"left"}
-	]
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

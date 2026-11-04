@@ -1,0 +1,65 @@
+{
+  "task_id": "B1-EP1-03-CARD3-HYBRID-20261030-01",
+  "execution_class": "LOCAL_CANDIDATE_PREVIEW",
+  "comfy_prompt_id": "0f8aa863-76e0-48b5-9bc8-a804e95e2515",
+  "client_id": "codex-card3-hybrid-8steps-front-20261030-r2",
+  "workflow": "workflow_card3_hybrid.json",
+  "input_manifest": "reference_manifest.json",
+  "requested_native_frames": 345,
+  "fps": 24,
+  "requested_duration_seconds": 14.375,
+  "duration_target_label": "approximately 14.3s",
+  "resolution": "736x416",
+  "seed": 202610303303,
+  "status": "COMPLETED",
+  "production_gate": "NOT_READY_FOR_H3_PACKET",
+  "review": "NEEDS_REVISION",
+  "user_request": "One seven-shot Card 3 candidate render, no H3 segment split.",
+  "original_submission": {
+    "prompt_id": "cd9b8f4b-6f06-48a4-ba41-a092b94944b5",
+    "client_id": "codex-lin313-card3-hybrid-20261030",
+    "status": "ACCEPTED_THEN_DISAPPEARED",
+    "verification": "Not present in running/pending queue or history; no matching ComfyUI output file"
+  },
+  "requeue_reason": "One retry after confirming the original prompt had no execution, queue entry, history, or output. No duplicate active render.",
+  "sampler": {
+    "scheduler": "native_flow",
+    "shift_video": 12.0,
+    "node": "8: MiniMaxH3DualClockSamplerT8",
+    "shift_audio": 3.0,
+    "sampler": "dual_clock_euler",
+    "steps": 8
+  },
+  "queue_front": true,
+  "active_job_at_enqueue": "23cb368c-34b1-406e-b905-e816cf4c234c",
+  "outputs": {
+    "raw_native": "C:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\output\\ten_yuan_envelope_h3_20261030\\B1_EP1_Card3_Hybrid\\Card3_7shots_345f_00002_.mp4",
+    "raw_copy": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\B1-EP1-03_Hybrid七镜_候选_20261030\\Card3_7shots_345f_00002_.mp4",
+    "candidate_343f": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\B1-EP1-03_Hybrid七镜_候选_20261030\\Card3_7shots_343f_14.3s_candidate.mp4",
+    "contact_sheet": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\B1-EP1-03_Hybrid七镜_候选_20261030\\review_0f8aa863\\contact_sheet_7shots.png",
+    "media_qa": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\B1-EP1-03_Hybrid七镜_候选_20261030\\review_0f8aa863\\media_qa.json"
+  },
+  "execution": {
+    "submitted_local_time": "2026-10-30T19:25:27+08:00",
+    "execution_start_local_time": "2026-10-30T19:25:33+08:00",
+    "execution_success_local_time": "2026-10-30T19:28:14+08:00",
+    "render_seconds": 161.518,
+    "comfy_status": "success",
+    "raw_frames": 345,
+    "raw_fps": 24,
+    "raw_duration_seconds": 14.375,
+    "candidate_frames": 343,
+    "candidate_duration_seconds": 14.291667,
+    "candidate_resolution": "736x414",
+    "steps": 8,
+    "queue_order": "Submitted front=true while Card1 cb02fdf7-463d-413d-ada6-0b66e8aa5521 was observed running; Card3 completed and entered history. No second Card3 submission."
+  },
+  "review_findings": [
+    "Opening bookshop and metro-to-piano progression are present.",
+    "Claire recognition and Lucas piano shots appear.",
+    "Workshop memory insert is present but shows Claire and classmate together rather than the requested empty place/empty chair; fails intended memory beat.",
+    "Some sampled transition frames show ghosted/overlapping pedestrians and visible image blending; inspect the full clip before approval.",
+    "Ending shows Claire offering the envelope and Lucas looking at/holding it; quiet two-shot present.",
+    "Audio AAC stereo stream exists; measured mean frame RMS is 0.0148; no subjective listening review recorded."
+  ]
+}

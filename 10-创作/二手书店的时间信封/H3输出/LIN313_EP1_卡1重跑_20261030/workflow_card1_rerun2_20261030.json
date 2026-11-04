@@ -1,0 +1,223 @@
+{
+ "2": {
+  "inputs": {
+   "lora_name": "minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+   "strength_model": 0.0,
+   "model": [
+    "1",
+    0
+   ]
+  },
+  "class_type": "LoraLoaderModelOnly"
+ },
+ "15": {
+  "inputs": {
+   "samples": [
+    "14",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "class_type": "VAEDecode"
+ },
+ "7": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_user_first_frames\\02_claire.png"
+  }
+ },
+ "18": {
+  "inputs": {
+   "filename_prefix": "ten_yuan_envelope_h3_20261030/B1_EP1_user_first_frames/EP1_card1_rerun3_345f",
+   "codec": "h264",
+   "video": [
+    "17",
+    0
+   ],
+   "format": "mp4"
+  },
+  "class_type": "SaveVideo"
+ },
+ "9": {
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "ref_image_size": "match",
+   "vae": [
+    "4",
+    0
+   ],
+   "ref_images": {
+    "ref_image_0": [
+     "6",
+     0
+    ],
+    "ref_image_1": [
+     "7",
+     0
+    ]
+   },
+   "audio_vae": [
+    "5",
+    0
+   ],
+   "height": 576,
+   "prompt": "Create ONE 14.3-second edited sequence with five DISTINCT film shots in exact order; each shot fills the screen, never a grid. <Picture 1> is the opening composition and the sole visual authority: a hand-drawn Paris fashion-design workshop where Claire (dark wavy hair, hair clips, gray striped sweater, headphones around her neck, backpack) works on dark fabric with scissors on the left, and her classmate (dark hair, black top, beige apron) rests her chin on her hand on the right, at the same shared table. <Picture 2> is the exact Claire character design for identity and clothing. Preserve the referenced hand-drawn 2D style, muted colors and stable proportions. SHOT 1, 0.0-2.2 seconds: medium shot, both students work around the shared table on the same dark fabric design, a briefly cooperative atmosphere. CUT. SHOT 2, 2.2-4.2 seconds: close insert on the hands, scissors and the dark fabric at the worktable; one cutting motion severs a crucial portion and the detached edge falls against the table. CUT. SHOT 3, 4.2-7.0 seconds: medium-close shot, Claire pulls back the damaged fabric, faces the classmate and delivers one short angry line, a complete forceful but controlled torso action — she is clearly scolding, staying planted in place, not leaving. CUT. SHOT 4, 7.0-9.7 seconds: locked medium-wide shot on the same table, same screen axis; Claire stays and keeps confronting, jaw set and hot with anger; the classmate stays IN FRAME, stunned and silent, maybe lowering her gaze or raising a hand defensively, but she does NOT leave — the standoff holds between them. CUT. SHOT 5, 9.7-14.3 seconds: locked close-medium shot of Claire still standing her ground by the table, expression still fiery, one sharp gesture reiterating her point; the classmate remains visible at the edge of frame, present but silenced, no one exits; the conflict is left unresolved as the quiet workshop holds the tension. Clear hard editorial cuts, restrained but charged emotion. No dialogue audio, text, subtitles, invented characters, costume changes, face redesign, red hair, magic effects, photorealism, 3D, split screens, storyboard grid or extra fingers.",
+   "width": 1024,
+   "length": 345
+  },
+  "class_type": "MiniMaxH3ReferenceToVideo"
+ },
+ "1": {
+  "inputs": {
+   "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+   "weight_dtype": "default"
+  },
+  "class_type": "UNETLoader"
+ },
+ "6": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_user_first_frames\\01_studio_first.png"
+  }
+ },
+ "10": {
+  "inputs": {
+   "conditioning": [
+    "9",
+    0
+   ],
+   "model": [
+    "2",
+    0
+   ]
+  },
+  "class_type": "BasicGuider"
+ },
+ "11": {
+  "inputs": {
+   "noise_seed": 202610301501
+  },
+  "class_type": "RandomNoise"
+ },
+ "16": {
+  "inputs": {
+   "samples": [
+    "14",
+    0
+   ],
+   "vae": [
+    "5",
+    0
+   ]
+  },
+  "class_type": "VAEDecodeAudio"
+ },
+ "12": {
+  "inputs": {
+   "scheduler": "simple",
+   "steps": 8,
+   "denoise": 1.0,
+   "model": [
+    "2",
+    0
+   ]
+  },
+  "class_type": "BasicScheduler"
+ },
+ "4": {
+  "inputs": {
+   "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+  },
+  "class_type": "VAELoader"
+ },
+ "13": {
+  "inputs": {
+   "sampler_name": "res_multistep"
+  },
+  "class_type": "KSamplerSelect"
+ },
+ "8": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_03_7shots\\03_station.png"
+  }
+ },
+ "3": {
+  "inputs": {
+   "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+   "type": "minimax",
+   "device": "default"
+  },
+  "class_type": "CLIPLoader"
+ },
+ "14": {
+  "inputs": {
+   "latent_image": [
+    "9",
+    1
+   ],
+   "noise": [
+    "11",
+    0
+   ],
+   "sigmas": [
+    "12",
+    0
+   ],
+   "sampler": [
+    "13",
+    0
+   ],
+   "guider": [
+    "10",
+    0
+   ]
+  },
+  "class_type": "SamplerCustomAdvanced"
+ },
+ "5": {
+  "inputs": {
+   "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+  },
+  "class_type": "VAELoader"
+ },
+ "17": {
+  "inputs": {
+   "fps": 24.0,
+   "bit_depth": 8,
+   "images": [
+    "15",
+    0
+   ],
+   "audio": [
+    "16",
+    0
+   ]
+  },
+  "class_type": "CreateVideo"
+ },
+ "19": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_03_7shots\\04_studio.png"
+  }
+ },
+ "20": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_03_7shots\\05_claire.png"
+  }
+ },
+ "21": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_03_7shots\\06_lucas.png"
+  }
+ }
+}

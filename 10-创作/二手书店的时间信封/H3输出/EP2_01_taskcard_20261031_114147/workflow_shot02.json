@@ -1,0 +1,204 @@
+{
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "device": "default",
+      "type": "minimax",
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+    }
+  },
+  "12": {
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "inputs": {
+      "av_latent": [
+        "11",
+        0
+      ],
+      "video_vae": [
+        "3",
+        0
+      ],
+      "audio_vae": [
+        "4",
+        0
+      ]
+    }
+  },
+  "15": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "EP2_01_taskcard_20261031_114147\\frame.png"
+    }
+  },
+  "14": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "codec": "h264",
+      "format": "mp4",
+      "video": [
+        "13",
+        0
+      ],
+      "filename_prefix": "EP2_01_taskcard_20261031_114147/shot02"
+    }
+  },
+  "10": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "conditioning": [
+        "7",
+        0
+      ],
+      "model": [
+        "8",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 20261031101
+    }
+  },
+  "16": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "EP2_01_taskcard_20261031_114147\\lucas.png"
+    }
+  },
+  "8": {
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "inputs": {
+      "scheduler": "native_flow",
+      "shift_video": 12.0,
+      "av_latent": [
+        "7",
+        1
+      ],
+      "shift_audio": 3.0,
+      "steps": 8,
+      "model": [
+        "1",
+        0
+      ],
+      "sampler_name": "dual_clock_euler"
+    }
+  },
+  "18": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "EP2_01_taskcard_20261031_114147\\face.png"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+    }
+  },
+  "17": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "EP2_01_taskcard_20261031_114147\\claire.png"
+    }
+  },
+  "4": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "7": {
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "inputs": {
+      "audio_vae": [
+        "4",
+        0
+      ],
+      "audio_mode": "native",
+      "task_type": "Hybrid",
+      "audio_denoise_strength": 0.35,
+      "height": 416,
+      "clip": [
+        "2",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "17",
+        0
+      ],
+      "strict_prompt_tags": true,
+      "ref_images.ref_image_2": [
+        "18",
+        0
+      ],
+      "width": 736,
+      "add_source_as_reference": false,
+      "ref_image_size": "match",
+      "video_vae": [
+        "3",
+        0
+      ],
+      "prompt": "Use <Picture 1> as the exact opening scene and composition. <Picture 2> is Lucas identity reference, <Picture 3> and <Picture 4> are Claire identity and face references. Keep the same adult characters, hair, clothing, hands, piano and paper layout. One continuous shot, one main action, fixed or gentle camera; no cuts or storyboard panels. Slow close-in toward three distinct versions of the same music spread across the table; Lucas turns one page and reveals a different handwritten revision. Hand-drawn 2D flat-color micro-chibi style, warm muted Paris atmosphere. No legible text, no official logo, no extra people or duplicated objects, no finished composition, no dialogue. Phone UI and precise score markings are added in post; retain quiet room tone and paper movement.",
+      "reference_video_policy": "official_2_to_15s",
+      "prompt_primary_audio_ordinal": 0,
+      "ref_images.ref_image_0": [
+        "16",
+        0
+      ],
+      "first_frame": [
+        "15",
+        0
+      ],
+      "length": 96
+    }
+  },
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "11": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "sigmas": [
+        "8",
+        2
+      ],
+      "guider": [
+        "10",
+        0
+      ],
+      "sampler": [
+        "8",
+        1
+      ],
+      "noise": [
+        "9",
+        0
+      ],
+      "latent_image": [
+        "7",
+        1
+      ]
+    }
+  },
+  "13": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "audio": [
+        "12",
+        1
+      ],
+      "bit_depth": 8,
+      "fps": 24.0
+    }
+  }
+}

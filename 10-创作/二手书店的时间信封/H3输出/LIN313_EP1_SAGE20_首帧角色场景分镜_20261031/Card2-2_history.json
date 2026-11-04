@@ -1,0 +1,292 @@
+{
+  "prompt": [
+    16,
+    "0cba92fe-342f-4ff1-8b4f-6eb9930044fc",
+    {
+      "7": {
+        "class_type": "MiniMaxH3AudioConditioningT8",
+        "inputs": {
+          "audio_mode": "native",
+          "ref_images.ref_image_1": [
+            "17",
+            0
+          ],
+          "video_vae": [
+            "3",
+            0
+          ],
+          "prompt": "Use <Picture 1> as the exact opening image and composition. <Picture 2> is Claires identity reference, <Picture 3> is Marcels identity reference, and <Picture 4> is the approved bookshop interior reference; <Picture 5> shows Marcel quietly reading in the shop. Preserve the same faces, clothing, relative height, room geometry, chair, old book and one cream envelope. Hand-drawn 2D animation with clean ink outlines, matte flat colors and restrained warm shading; match the supplied adult proportions. Follow all time-coded beats in order. Keep the bookseller reading before the interruption. No invented writing, no duplicated envelope, no generated phone UI, no supernatural effect in the placeholder beat, no unapproved envelope carry, no extra people or costume/face redesign, no photorealism or 3D. Dialogue and any VFX are post-production. <Picture 6> is the close-up illustration style reference: borrow its soft warm skin shading, expressive facial rendering, fine dark ink lines, natural hair detail and gentle matte texture. Keep each shot a single full-screen composition; never reproduce its contact sheet or panel grid. Keep character identity and costume from the separate identity references.\n\nTIME-CODED STORYBOARD (follow in order; each range is one full-screen shot):\n00-01.8s | 02-2-01: Stable medium inside the approved intimate bookshop. Claire notices one old book while Marcel is already quietly reading in the rear of the same composition.\n01.8-03.5s | 02-2-02: Near-top-down hands and single old book. Claire opens the page, reveals one paper envelope between the sheets and touches its edge once. Preserve its dimensions and orientation; no writing.\n03.5-06.4s | 02-2-03 VFX placeholder: Hold on the physical page and Claires attention as the subjective beat. Do not render a supernatural glow or change the object; leave any page/piano-shadow composite for separately reviewed post-production.\n06.4-08.5s | 02-2-04: Fixed extreme close-up. Claire leans closer in doubt, pauses, then her eyebrows rise and eyes open in genuine shock; no face distortion.\n08.5-09.8s | 02-2-05: Medium upper-body. Claire recoils once with a clear torso reaction and opens her mouth for one startled exclamation; spoken line is post-dubbed.\n09.8-11.4s | 02-2-06: Hard reaction shot on Marcel in his established chair. The scream interrupts him; he closes his book once, looks up and points toward the existing front door.\n11.4-12.958s | 02-2-07 conditional: At the established doorway, Claire ends outside as the door closes once. Do not show the envelope in her hand; ownership and carrying it out remain unconfirmed.",
+          "length": 311,
+          "audio_vae": [
+            "4",
+            0
+          ],
+          "ref_image_size": "match",
+          "first_frame": [
+            "15",
+            0
+          ],
+          "ref_images.ref_image_0": [
+            "16",
+            0
+          ],
+          "task_type": "Hybrid",
+          "width": 736,
+          "audio_denoise_strength": 0.35,
+          "ref_images.ref_image_3": [
+            "19",
+            0
+          ],
+          "reference_video_policy": "official_2_to_15s",
+          "clip": [
+            "2",
+            0
+          ],
+          "add_source_as_reference": false,
+          "strict_prompt_tags": true,
+          "prompt_primary_audio_ordinal": 0,
+          "ref_images.ref_image_2": [
+            "18",
+            0
+          ],
+          "ref_images.ref_image_4": [
+            "20",
+            0
+          ],
+          "height": 416
+        }
+      },
+      "8": {
+        "class_type": "MiniMaxH3DualClockSamplerT8",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "shift_video": 12.0,
+          "av_latent": [
+            "7",
+            1
+          ],
+          "shift_audio": 3.0,
+          "steps": 20,
+          "sampler_name": "dual_clock_euler",
+          "scheduler": "native_flow"
+        }
+      },
+      "16": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card2-2_Claire.png"
+        }
+      },
+      "20": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card2-2_ClaireCloseupStyle.png"
+        }
+      },
+      "15": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card2-2_firstframe.png"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+        }
+      },
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "4": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "device": "default",
+          "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+          "type": "minimax"
+        }
+      },
+      "18": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card2-2_BookshopInterior.png"
+        }
+      },
+      "11": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "9",
+            0
+          ],
+          "sampler": [
+            "8",
+            1
+          ],
+          "guider": [
+            "10",
+            0
+          ],
+          "latent_image": [
+            "7",
+            1
+          ],
+          "sigmas": [
+            "8",
+            2
+          ]
+        }
+      },
+      "17": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card2-2_Marcel.png"
+        }
+      },
+      "10": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "conditioning": [
+            "7",
+            0
+          ],
+          "model": [
+            "8",
+            0
+          ]
+        }
+      },
+      "14": {
+        "class_type": "SaveVideo",
+        "inputs": {
+          "codec": "h264",
+          "filename_prefix": "ten_yuan_envelope_h3_20261031/LIN313_EP1_SAGE20_HybridRefs/Card2-2_311f",
+          "video": [
+            "13",
+            0
+          ],
+          "format": "mp4"
+        }
+      },
+      "12": {
+        "class_type": "MiniMaxH3AVDecodeT8",
+        "inputs": {
+          "audio_vae": [
+            "4",
+            0
+          ],
+          "av_latent": [
+            "11",
+            0
+          ],
+          "video_vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "19": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card2-2_MarcelReading.png"
+        }
+      },
+      "13": {
+        "class_type": "CreateVideo",
+        "inputs": {
+          "audio": [
+            "12",
+            1
+          ],
+          "bit_depth": 8,
+          "images": [
+            "12",
+            0
+          ],
+          "fps": 24.0
+        }
+      },
+      "9": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 202610301703
+        }
+      }
+    },
+    {
+      "client_id": "codex-lin313-ep1-sage20-Card2-2",
+      "create_time": 1793406847636
+    },
+    [
+      "14"
+    ]
+  ],
+  "outputs": {
+    "14": {
+      "images": [
+        {
+          "filename": "Card2-2_311f_00001_.mp4",
+          "subfolder": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs",
+          "type": "output"
+        }
+      ],
+      "animated": [
+        true
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "0cba92fe-342f-4ff1-8b4f-6eb9930044fc",
+          "timestamp": 1793406847639
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "3",
+            "1",
+            "4",
+            "2"
+          ],
+          "prompt_id": "0cba92fe-342f-4ff1-8b4f-6eb9930044fc",
+          "timestamp": 1793406847702
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "0cba92fe-342f-4ff1-8b4f-6eb9930044fc",
+          "timestamp": 1793407140719
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "14": {
+      "node_id": "14",
+      "display_node": "14",
+      "parent_node": null,
+      "real_node_id": "14"
+    }
+  }
+}

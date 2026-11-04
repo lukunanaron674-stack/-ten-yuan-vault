@@ -1,0 +1,21 @@
+{
+ "task": "B1-EP1-card2-1-scene-only",
+ "prompt_id": "23cb368c-34b1-406e-b905-e816cf4c234c",
+ "status": "SUCCESS_CANDIDATE",
+ "native_frames": 294,
+ "fps": 24,
+ "raw_duration_seconds": 12.25,
+ "seed": 202610301601,
+ "steps": 8,
+ "scheduler": "simple",
+ "sampler": "res_multistep",
+ "lora": "turbo_4step DISABLED(strength=0) -> base 8-step direct",
+ "sage_attention": "launch-flag --use-sage-attention (instance-wide, enabled)",
+ "scene_ref": "街边书店正面_指定内景_用户确认.png",
+ "scene_sha256": "45906067d90d9bab60f6de3329ed9ee60a6d54684617dac4e570cbc95d82f508",
+ "mode": "SCENE_ONLY (no people, per H3_RUN_PACKET.md)",
+ "output": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\LIN313_EP1_卡2-1场景重跑_20261030\\EP1_card2_1_scene_H3原始输出_294帧.mp4",
+ "evidence_workflow": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\LIN313_EP1_卡2-1场景重跑_20261030\\workflow_card2_1_scene_20261030.json",
+ "sha256": "fb443ad6cf46b5bb7b2060d99fdbc9dd9d417209b03b0db09ca0284092a83943",
+ "review": "PENDING"
+}

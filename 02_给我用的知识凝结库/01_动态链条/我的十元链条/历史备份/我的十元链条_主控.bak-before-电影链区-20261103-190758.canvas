@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"myc_master_group","type":"group","x":0,"y":-120,"width":2600,"height":1660,"color":"5","label":"🧭 我的十元链条｜个人主控 v0（STAGING）｜登记工单 674-105"},
+		{"id":"myc_registry_group","type":"group","x":660,"y":580,"width":1900,"height":900,"color":"4","label":"🧾 链条登记区｜每条链一个 md，这里只挂入口"},
+		{"id":"myc_elements_group","type":"group","x":660,"y":-40,"width":1900,"height":560,"color":"1","label":"十元基准｜语义只读，右栏待填我自己的典型触发与表现"},
+		{"id":"myc_readme","type":"text","text":"# 🧭 我的十元链条｜个人主控 v0\n**状态：STAGING 空框架**——只搭骨架，不写链条结论。\n\n**目的**：把我自己的真实处境（求职／创作／项目／关系）用 674-105 的动态链语法做成可审计的链：不是事件流水账，而是**前一阶段制造后一阶段**。\n\n**铁律（继承 674-105）**\n1. 不重定义十元本体，语义以 [[01-十元系统/动态母型|动态母型]] 只读为准\n2. 五轴相反关系不自动写成生克补\n3. 同框、攻击、成长、帮助都不自动算生克补\n4. 位置允许 ≠ 实际发生；固定对子不许串\n5. 每条链单独一个 `链NNN_标题.md`，登记表只记状态\n\n**总控 md**：[[02_给我用的知识凝结库/01_动态链条/我的十元链条/00_我的十元链条_主控|00_我的十元链条_主控]]\n**工单**：[674-105](https://linear.app/674/issue/674-105)","x":40,"y":-40,"width":560,"height":500},
+		{"id":"myc_entry","type":"text","text":"# 📂 入口\n\n- 动态链总控：[[02_给我用的知识凝结库/01_动态链条/00_动态链条总控_零件关系与完成度.canvas|00_动态链条总控（P0–P3＋T01–T12）]]\n- 十元语义（只读）：[[01-十元系统/动态母型|动态母型]]\n- 关系校验：[[01-十元系统/关系五对校验包_v0.1|关系五对校验包_v0.1]]\n- 登记表：[[02_给我用的知识凝结库/01_动态链条/我的十元链条/00_我的十元链条_主控|00_我的十元链条_主控.md]]","x":40,"y":520,"width":560,"height":380},
+		{"id":"myc_el_x","type":"text","text":"**X（无望）**\n语义：以 canonical 为准\n\n我的典型触发：【待填】\n我的典型表现：【待填】","x":700,"y":40,"width":340,"height":180},
+		{"id":"myc_el_z","type":"text","text":"**Z（主体资格）**\n语义：以 canonical 为准\n\n我的典型触发：【待填】\n我的典型表现：【待填】","x":1072,"y":40,"width":340,"height":180},
+		{"id":"myc_el_n","type":"text","text":"**N（思念）**\n语义：以 canonical 为准\n\n我的典型触发：【待填】\n我的典型表现：【待填】","x":1444,"y":40,"width":340,"height":180},
+		{"id":"myc_el_zn","type":"text","text":"**ZN（喜悦）**\n语义：以 canonical 为准\n\n我的典型触发：【待填】\n我的典型表现：【待填】","x":1816,"y":40,"width":340,"height":180},
+		{"id":"myc_el_nz","type":"text","text":"**NZ（依赖）**\n语义：以 canonical 为准\n\n我的典型触发：【待填】\n我的典型表现：【待填】","x":2188,"y":40,"width":340,"height":180},
+		{"id":"myc_el_xn","type":"text","text":"**XN（承受·沉默）**\n语义：以 canonical 为准\n\n我的典型触发：【待填】\n我的典型表现：【待填】","x":700,"y":260,"width":340,"height":180},
+		{"id":"myc_el_nx","type":"text","text":"**NX（平淡）**\n语义：以 canonical 为准\n\n我的典型触发：【待填】\n我的典型表现：【待填】","x":1072,"y":260,"width":340,"height":180},
+		{"id":"myc_el_zx","type":"text","text":"**ZX（怒火）**\n语义：以 canonical 为准\n\n我的典型触发：【待填】\n我的典型表现：【待填】","x":1444,"y":260,"width":340,"height":180},
+		{"id":"myc_el_xz","type":"text","text":"**XZ（惧怕）**\n语义：以 canonical 为准\n\n我的典型触发：【待填】\n我的典型表现：【待填】","x":1816,"y":260,"width":340,"height":180},
+		{"id":"myc_el_xz2","type":"text","text":"**X并Z**\n语义：以 canonical 为准\n\n我的典型触发：【待填】\n我的典型表现：【待填】","x":2188,"y":260,"width":340,"height":180},
+		{"id":"myc_chain001","type":"file","file":"02_给我用的知识凝结库/01_动态链条/我的十元链条/链001_模板.md","x":700,"y":640,"width":420,"height":280},
+		{"id":"myc_chain002","type":"text","text":"（空位）\n链002｜【待定对象】\n\n建新链：复制 链001_模板 → 改名 链NNN_标题.md → 在主控登记表加一行 → 文件卡拖进本组","x":1160,"y":640,"width":420,"height":200},
+		{"id":"myc_syntax","type":"text","text":"# 语法卡（合格边最低记录）\n`A_state + trigger + mechanism → changed_variable Δ → B_state + residue + next_affordance`\n\n- relation_type：生 / 克 / 补 / none\n- reversibility：可逆 / 不可逆\n- 证据：日期／事件／文件\n\n**核心句**：好链不是事件连续，而是前一阶段制造后一阶段。","x":1620,"y":640,"width":560,"height":380},
+		{"id":"myc_topology","type":"text","text":"# 拓扑速查（T01–T12，详见总控）\nT01 单向｜T02 双向｜T03 串联｜T04 分叉\nT05 汇聚｜T06 并联／双通道｜T07 架桥｜T08 三角\nT09 菱形／分合｜T10 星形／中心辐射｜T11 回环／反馈｜T12 交叉／镜像\n\n选拓扑时只判**形状**，不判生克补；关系类型在边表里逐边判。","x":700,"y":980,"width":860,"height":300}
+	],
+	"edges":[
+		{"id":"myc_e1","fromNode":"myc_readme","fromSide":"right","toNode":"myc_elements_group","toSide":"left","color":"1"},
+		{"id":"myc_e2","fromNode":"myc_elements_group","fromSide":"bottom","toNode":"myc_registry_group","toSide":"top","color":"4"},
+		{"id":"myc_e3","fromNode":"myc_chain001","fromSide":"right","toNode":"myc_chain002","toSide":"left","color":"4"}
+	],
+	"metadata":{"version":"1.0-1.0"}
+}

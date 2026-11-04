@@ -1,0 +1,32 @@
+{
+ "card": "B1-EP2-01",
+ "spec": "1280x704 / 24fps / T8 Hybrid 8 steps",
+ "first_frames": "用户九宫格场景板对应格",
+ "refs": "Claire/Lucas 四视图裁切",
+ "clips": [
+  {
+   "beat": "b1",
+   "file": "EP2-01_b1_720.mp4",
+   "sha256": "C6B26CE519BC860129A366E6854F2E8EF4FD57724C5162C40154FD4CFD071384",
+   "bytes": 485676
+  },
+  {
+   "beat": "b2",
+   "file": "EP2-01_b2_720.mp4",
+   "sha256": "7A09D299A16C2C25DEF50FAFC332B9304A647286014094870C4D8A98F8660F2D",
+   "bytes": 1290997
+  },
+  {
+   "beat": "b3",
+   "file": "EP2-01_b3_720.mp4",
+   "sha256": "D2AE3167381C6ABDF52EF81E267CDC1958A136F73551CDE07AD8DCEC5DBB57C2",
+   "bytes": 460720
+  },
+  {
+   "beat": "b4",
+   "file": "EP2-01_b4_720.mp4",
+   "sha256": "195CF0841523083F4D0B8A01732854CA89BB0293808E31E25D6647074DF6A7F7",
+   "bytes": 413795
+  }
+ ]
+}

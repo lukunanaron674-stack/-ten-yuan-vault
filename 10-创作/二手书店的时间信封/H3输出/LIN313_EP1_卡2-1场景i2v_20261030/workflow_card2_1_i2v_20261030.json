@@ -1,0 +1,212 @@
+{
+ "2": {
+  "inputs": {
+   "lora_name": "minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+   "strength_model": 0.0,
+   "model": [
+    "1",
+    0
+   ]
+  },
+  "class_type": "LoraLoaderModelOnly"
+ },
+ "15": {
+  "inputs": {
+   "samples": [
+    "14",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "class_type": "VAEDecode"
+ },
+ "7": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_user_first_frames\\02_claire.png"
+  }
+ },
+ "18": {
+  "inputs": {
+   "filename_prefix": "ten_yuan_envelope_h3_20261030/B1_EP1_user_first_frames/EP1_card2_1_i2v_294f",
+   "codec": "h264",
+   "video": [
+    "17",
+    0
+   ],
+   "format": "mp4"
+  },
+  "class_type": "SaveVideo"
+ },
+ "9": {
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "prompt": "A locked-off static shot that must stay identical to the input first frame. Reproduce the exact same dark-green Paris secondhand bookstore facade, the same stone building, the same street and pavement, the same lamp post and bollards, the same distant riverbank and cathedral skyline, and the same muted hand-drawn 2D illustration style and color palette. Do NOT redraw, recolor, reframe, zoom, pan or pull back the camera. Only extremely subtle natural motion is allowed: a few leaves sway gently in a light breeze, the soft daylight shifts slightly, and faint reflections move on the shop windows. No people, no vehicles, no new objects, no text, no cuts, no camera movement, no composition change, no 3D or photorealism.",
+   "width": 1024,
+   "height": 576,
+   "length": 294,
+   "first_frame": [
+    "6",
+    0
+   ]
+  },
+  "class_type": "MiniMaxH3ImageToVideo"
+ },
+ "1": {
+  "inputs": {
+   "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+   "weight_dtype": "default"
+  },
+  "class_type": "UNETLoader"
+ },
+ "6": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_user_first_frames\\01_scene_street.png"
+  }
+ },
+ "10": {
+  "inputs": {
+   "conditioning": [
+    "9",
+    0
+   ],
+   "model": [
+    "2",
+    0
+   ]
+  },
+  "class_type": "BasicGuider"
+ },
+ "11": {
+  "inputs": {
+   "noise_seed": 202610301611
+  },
+  "class_type": "RandomNoise"
+ },
+ "16": {
+  "inputs": {
+   "samples": [
+    "14",
+    0
+   ],
+   "vae": [
+    "5",
+    0
+   ]
+  },
+  "class_type": "VAEDecodeAudio"
+ },
+ "12": {
+  "inputs": {
+   "scheduler": "simple",
+   "steps": 8,
+   "denoise": 1.0,
+   "model": [
+    "2",
+    0
+   ]
+  },
+  "class_type": "BasicScheduler"
+ },
+ "4": {
+  "inputs": {
+   "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+  },
+  "class_type": "VAELoader"
+ },
+ "13": {
+  "inputs": {
+   "sampler_name": "res_multistep"
+  },
+  "class_type": "KSamplerSelect"
+ },
+ "8": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_03_7shots\\03_station.png"
+  }
+ },
+ "3": {
+  "inputs": {
+   "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+   "type": "minimax",
+   "device": "default"
+  },
+  "class_type": "CLIPLoader"
+ },
+ "14": {
+  "inputs": {
+   "latent_image": [
+    "9",
+    1
+   ],
+   "noise": [
+    "11",
+    0
+   ],
+   "sigmas": [
+    "12",
+    0
+   ],
+   "sampler": [
+    "13",
+    0
+   ],
+   "guider": [
+    "10",
+    0
+   ]
+  },
+  "class_type": "SamplerCustomAdvanced"
+ },
+ "5": {
+  "inputs": {
+   "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+  },
+  "class_type": "VAELoader"
+ },
+ "17": {
+  "inputs": {
+   "fps": 24.0,
+   "bit_depth": 8,
+   "images": [
+    "15",
+    0
+   ],
+   "audio": [
+    "16",
+    0
+   ]
+  },
+  "class_type": "CreateVideo"
+ },
+ "19": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_03_7shots\\04_studio.png"
+  }
+ },
+ "20": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_03_7shots\\05_claire.png"
+  }
+ },
+ "21": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_03_7shots\\06_lucas.png"
+  }
+ }
+}

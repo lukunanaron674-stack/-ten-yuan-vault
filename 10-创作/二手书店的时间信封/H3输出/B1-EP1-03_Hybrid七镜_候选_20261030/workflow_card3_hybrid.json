@@ -1,0 +1,246 @@
+{
+  "3": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "17": {
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_Card3_Hybrid\\03_lucas_identity.png"
+    },
+    "class_type": "LoadImage"
+  },
+  "7": {
+    "inputs": {
+      "audio_denoise_strength": 0.35,
+      "width": 736,
+      "audio_vae": [
+        "4",
+        0
+      ],
+      "first_frame": [
+        "15",
+        0
+      ],
+      "length": 345,
+      "prompt": "Render ONE continuous 14.3-second candidate video with seven distinct full-screen shots in the exact time-coded order below. Use hard editorial cuts between shots. Never create a storyboard grid, split screen, montage sheet, or dissolve.\n\nVisual references and strict roles: <Picture 1> is the exact opening frame, showing Claire outside the bookshop with the envelope; begin on this composition and animate only a small natural walking movement before the first cut. <Picture 2> is Claire's identity, face, hair, body proportions and outfit. <Picture 3> is Lucas's identity, face, hair, body proportions and outfit. <Picture 4> is the empty Paris metro platform environment and its public piano. <Picture 5> is the Claire-and-Lucas piano staging reference; use its two-person scale and screen direction only. <Picture 6> is the clothing-workshop memory location and classmate reference. Maintain one consistent hand-drawn 2D illustration style with fine dark linework, matte colors, quiet warm/cool Paris lighting, and the supplied adult proportions. Claire always has long dark wavy hair, gray striped sweater, headphones and backpack; Lucas has dark hair and the navy jacket with white shirt. No wardrobe swaps, face/hair redesign, red hair, photorealism, 3D, magic effects, readable text, subtitles, logos, new foreground people, duplicate bodies, extra limbs, or extra fingers.\n\n01 | 00.0–01.6s | Exterior medium-wide. Start from <Picture 1>. Claire walks away from the bookshop alone, holding the cream envelope at her side. Keep the storefront and sidewalk composition stable.\nCUT.\n02 | 01.6–03.2s | Wide metro entrance view, a clear time-elision cut into the station. The same gentle piano motif is heard again; no visible transition effect. Use the metro architecture from <Picture 4>.\nCUT.\n03 | 03.2–05.4s | Wide view at the public piano. Lucas plays alone. A few distant commuters pass through the background without stopping or looking at him. Keep Lucas and piano readable; no crowd crosses in front of him.\nCUT.\n04 | 05.4–07.0s | Side close-up of Claire among the passersby. She recognizes Lucas, pauses mid-step, and looks toward him. Keep her face and clothing consistent with <Picture 2>.\nMATCH CUT.\n05 | 07.0–08.5s | Brief quiet memory insert in the workshop from <Picture 6>: the classmate's place is empty; Claire's half-raised hand slowly drops beside the cut fabric. This is a single flashback image, not a montage. Match Claire's sweater and screen direction; keep the chair/table visible.\nCUT BACK TO PRESENT.\n06 | 08.5–11.7s | Medium-long two-shot from the side. Claire walks from the edge of the station crowd toward Lucas and the piano; the distance between them visibly closes. Lucas keeps playing until she reaches him. Use the staging relation from <Picture 5>.\nCUT.\n07 | 11.7–14.3s | Close on Claire's hand offering the cream envelope, then settle into a clear two-shot. Lucas stops playing, looks up and accepts the envelope. End with both of them and the envelope visible, sharing a quiet, restrained look. No embrace or dialogue.\n\nKeep each shot's main action clear and singular; preserve chronological order, identity, outfits, and screen direction. Use restrained natural motion and clean cuts. Candidate audio only: quiet metro ambience, a soft piano motif during the station shots, the piano stops as Lucas accepts the envelope, and a light paper rustle. No intelligible speech.\r\n",
+      "clip": [
+        "2",
+        0
+      ],
+      "strict_prompt_tags": true,
+      "prompt_primary_audio_ordinal": 0,
+      "ref_images.ref_image_0": [
+        "16",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "17",
+        0
+      ],
+      "height": 416,
+      "task_type": "Hybrid",
+      "video_vae": [
+        "3",
+        0
+      ],
+      "reference_video_policy": "official_2_to_15s",
+      "add_source_as_reference": false,
+      "ref_image_size": "match",
+      "audio_mode": "native",
+      "ref_images": {
+        "ref_image_0": [
+          "16",
+          0
+        ],
+        "ref_image_4": [
+          "20",
+          0
+        ],
+        "ref_image_2": [
+          "18",
+          0
+        ],
+        "ref_image_3": [
+          "19",
+          0
+        ],
+        "ref_image_1": [
+          "17",
+          0
+        ]
+      },
+      "ref_images.ref_image_2": [
+        "18",
+        0
+      ],
+      "ref_images.ref_image_3": [
+        "19",
+        0
+      ],
+      "ref_images.ref_image_4": [
+        "20",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8"
+  },
+  "14": {
+    "inputs": {
+      "format": "mp4",
+      "video": [
+        "13",
+        0
+      ],
+      "filename_prefix": "ten_yuan_envelope_h3_20261030/B1_EP1_Card3_Hybrid/Card3_7shots_345f",
+      "codec": "h264"
+    },
+    "class_type": "SaveVideo"
+  },
+  "12": {
+    "inputs": {
+      "audio_vae": [
+        "4",
+        0
+      ],
+      "video_vae": [
+        "3",
+        0
+      ],
+      "av_latent": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8"
+  },
+  "10": {
+    "inputs": {
+      "model": [
+        "8",
+        0
+      ],
+      "conditioning": [
+        "7",
+        0
+      ]
+    },
+    "class_type": "BasicGuider"
+  },
+  "2": {
+    "inputs": {
+      "device": "default",
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax"
+    },
+    "class_type": "CLIPLoader"
+  },
+  "15": {
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_Card3_Hybrid\\01_opening_first_frame.png"
+    },
+    "class_type": "LoadImage"
+  },
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader"
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 202610303303
+    },
+    "class_type": "RandomNoise"
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "8": {
+    "inputs": {
+      "steps": 8,
+      "shift_audio": 3.0,
+      "shift_video": 12.0,
+      "av_latent": [
+        "7",
+        1
+      ],
+      "model": [
+        "1",
+        0
+      ],
+      "scheduler": "native_flow",
+      "sampler_name": "dual_clock_euler"
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8"
+  },
+  "11": {
+    "inputs": {
+      "sampler": [
+        "8",
+        1
+      ],
+      "guider": [
+        "10",
+        0
+      ],
+      "noise": [
+        "9",
+        0
+      ],
+      "sigmas": [
+        "8",
+        2
+      ],
+      "latent_image": [
+        "7",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced"
+  },
+  "13": {
+    "inputs": {
+      "fps": 24.0,
+      "audio": [
+        "12",
+        1
+      ],
+      "images": [
+        "12",
+        0
+      ],
+      "bit_depth": 8
+    },
+    "class_type": "CreateVideo"
+  },
+  "16": {
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_Card3_Hybrid\\02_claire_identity.png"
+    },
+    "class_type": "LoadImage"
+  },
+  "18": {
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_Card3_Hybrid\\04_metro_environment.png"
+    },
+    "class_type": "LoadImage"
+  },
+  "19": {
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_Card3_Hybrid\\05_metro_duo_composition.png"
+    },
+    "class_type": "LoadImage"
+  },
+  "20": {
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261030\\B1_EP1_Card3_Hybrid\\06_workshop_memory.png"
+    },
+    "class_type": "LoadImage"
+  }
+}

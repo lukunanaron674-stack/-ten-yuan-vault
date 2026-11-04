@@ -1,0 +1,1129 @@
+{
+  "schema": "TSE_H3_PREP_MANIFEST_V0.1",
+  "issue": "674-313",
+  "created": "2026-10-29",
+  "notice": "PREP ONLY: DO NOT dispatch. IDs are symbolic requirements, not verified assets. B character mentions are candidate text extraction, not actual shot cast approvals.",
+  "render_enabled": false,
+  "shot_count": 56,
+  "a_count": 14,
+  "b_count": 42,
+  "agent_plan_required": true,
+  "per_image_preserve_aspect_ratio": true,
+  "max_duration_sec": 14.2,
+  "required_gates": [
+    "selected_direction_confirmed",
+    "script_lock",
+    "character_asset_exists_sha_and_user_review",
+    "scene_asset_exists_sha_and_style_review",
+    "first_frame_verified",
+    "H3_AGENT_PLAN_PACKET_APPROVED_FOR_RENDER",
+    "preflight_pass",
+    "worker_receipt"
+  ],
+  "shots": [
+    {
+      "shot_id": "TSE-01-E01",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "CLAIRE"
+      ],
+      "scene_req_id": "SC-A-01",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E02",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "CLAIRE",
+        "VO_NFRIEND"
+      ],
+      "scene_req_id": "SC-A-01",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E03",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "CLAIRE",
+        "XBOSS"
+      ],
+      "scene_req_id": "SC-A-02",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E04",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "LUCAS",
+        "XBOSS",
+        "CLAIRE"
+      ],
+      "scene_req_id": "SC-A-02",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E05",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "LUCAS",
+        "XBOSS"
+      ],
+      "scene_req_id": "SC-A-02",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E06",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "LUCAS",
+        "XBOSS",
+        "CLAIRE"
+      ],
+      "scene_req_id": "SC-A-02",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E07",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "CLAIRE",
+        "MARCEL"
+      ],
+      "scene_req_id": "SC-A-03",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E08",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "CLAIRE_HAND"
+      ],
+      "scene_req_id": "SC-A-01",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E09",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "CLAIRE"
+      ],
+      "scene_req_id": "SC-A-01",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E10",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "PROP_SCORE"
+      ],
+      "scene_req_id": "SC-A-01",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E11",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "CLAIRE"
+      ],
+      "scene_req_id": "SC-A-04",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E12",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "LUCAS",
+        "CLAIRE"
+      ],
+      "scene_req_id": "SC-A-04",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E13",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "required_characters": [
+        "CLAIRE",
+        "LUCAS"
+      ],
+      "scene_req_id": "SC-A-04",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-01-E14",
+      "source": "A_EP01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 5,
+      "required_characters": [
+        "LUCAS",
+        "CLAIRE_HAND"
+      ],
+      "scene_req_id": "SC-A-04",
+      "prompt_doc": "01_A方向_EP01_14卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-01",
+      "source": "B_EP01",
+      "original_card_id": "1-01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 8,
+      "candidate_characters": [
+        "Claire"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-02",
+      "source": "B_EP01",
+      "original_card_id": "1-02",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "candidate_characters": [
+        "Marcel",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-03",
+      "source": "B_EP01",
+      "original_card_id": "1-03",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 9,
+      "candidate_characters": [
+        "Claire",
+        "Lucas"
+      ],
+      "scene_req_id": "SC-B-02",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-04",
+      "source": "B_EP01",
+      "original_card_id": "1-04",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 11,
+      "candidate_characters": [
+        "Lucas"
+      ],
+      "scene_req_id": "SC-B-02",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-05",
+      "source": "B_EP01",
+      "original_card_id": "1-05",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 12,
+      "candidate_characters": [
+        "Claire",
+        "Lucas"
+      ],
+      "scene_req_id": "SC-B-02",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-06",
+      "source": "B_EP01",
+      "original_card_id": "1-06",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "candidate_characters": [
+        "Marcel",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-07",
+      "source": "B_EP01",
+      "original_card_id": "1-07",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 9,
+      "candidate_characters": [
+        "Claire"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-08",
+      "source": "B_EP01",
+      "original_card_id": "1-08",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 12,
+      "candidate_characters": [
+        "Claire",
+        "Lucas"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-09",
+      "source": "B_EP01",
+      "original_card_id": "1-09",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "candidate_characters": [
+        "Claire",
+        "Lucas"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-10",
+      "source": "B_EP01",
+      "original_card_id": "1-10",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 9,
+      "candidate_characters": [
+        "Claire"
+      ],
+      "scene_req_id": "SC-B-03",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-11",
+      "source": "B_EP01",
+      "original_card_id": "1-11",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 12,
+      "candidate_characters": [
+        "Claire",
+        "Lucas"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-12",
+      "source": "B_EP01",
+      "original_card_id": "1-12",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 13,
+      "candidate_characters": [
+        "Claire",
+        "Lucas",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-13",
+      "source": "B_EP01",
+      "original_card_id": "1-13",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 12,
+      "candidate_characters": [
+        "Claire",
+        "Marcel"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP1-14",
+      "source": "B_EP01",
+      "original_card_id": "1-14",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 13,
+      "candidate_characters": [
+        "Claire",
+        "Lucas",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-01",
+      "source": "B_EP02",
+      "original_card_id": "2-01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "candidate_characters": [
+        "Claire"
+      ],
+      "scene_req_id": "SC-B-03",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-02",
+      "source": "B_EP02",
+      "original_card_id": "2-02",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "candidate_characters": [
+        "Claire",
+        "Lucas"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-03",
+      "source": "B_EP02",
+      "original_card_id": "2-03",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 9,
+      "candidate_characters": [
+        "Claire",
+        "Marcel"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-04",
+      "source": "B_EP02",
+      "original_card_id": "2-04",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 12,
+      "candidate_characters": [
+        "Claire",
+        "Marcel"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-05",
+      "source": "B_EP02",
+      "original_card_id": "2-05",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 11,
+      "candidate_characters": [
+        "Claire",
+        "Lucas",
+        "Marcel"
+      ],
+      "scene_req_id": "SC-B-02",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-06",
+      "source": "B_EP02",
+      "original_card_id": "2-06",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 11,
+      "candidate_characters": [
+        "Lucas"
+      ],
+      "scene_req_id": "SC-B-02",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-07",
+      "source": "B_EP02",
+      "original_card_id": "2-07",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "candidate_characters": [
+        "Claire",
+        "Lucas"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-08",
+      "source": "B_EP02",
+      "original_card_id": "2-08",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 11,
+      "candidate_characters": [
+        "Lucas",
+        "Marcel"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-09",
+      "source": "B_EP02",
+      "original_card_id": "2-09",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 9,
+      "candidate_characters": [
+        "Lucas",
+        "Marcel"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-10",
+      "source": "B_EP02",
+      "original_card_id": "2-10",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 11,
+      "candidate_characters": [
+        "Marcel"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-11",
+      "source": "B_EP02",
+      "original_card_id": "2-11",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 12,
+      "candidate_characters": [
+        "Claire",
+        "Lucas"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-12",
+      "source": "B_EP02",
+      "original_card_id": "2-12",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 9,
+      "candidate_characters": [
+        "Lucas",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-13",
+      "source": "B_EP02",
+      "original_card_id": "2-13",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 12,
+      "candidate_characters": [
+        "Claire"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP2-14",
+      "source": "B_EP02",
+      "original_card_id": "2-14",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 13,
+      "candidate_characters": [
+        "Marcel",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-01",
+      "source": "B_EP03",
+      "original_card_id": "3-01",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 9,
+      "candidate_characters": [
+        "Marcel",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-02",
+      "source": "B_EP03",
+      "original_card_id": "3-02",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "candidate_characters": [
+        "Claire",
+        "Lucas",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-03",
+      "source": "B_EP03",
+      "original_card_id": "3-03",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 11,
+      "candidate_characters": [
+        "Lucas",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-04",
+      "source": "B_EP03",
+      "original_card_id": "3-04",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "candidate_characters": [
+        "Claire",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-05",
+      "source": "B_EP03",
+      "original_card_id": "3-05",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 12,
+      "candidate_characters": [
+        "Lucas"
+      ],
+      "scene_req_id": "SC-B-02",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-06",
+      "source": "B_EP03",
+      "original_card_id": "3-06",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 9,
+      "candidate_characters": [
+        "Claire",
+        "Lucas",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-02",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-07",
+      "source": "B_EP03",
+      "original_card_id": "3-07",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 11,
+      "candidate_characters": [
+        "Lucas",
+        "Marcel"
+      ],
+      "scene_req_id": "SC-B-02",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-08",
+      "source": "B_EP03",
+      "original_card_id": "3-08",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "candidate_characters": [
+        "Lucas",
+        "Marcel",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-01",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-09",
+      "source": "B_EP03",
+      "original_card_id": "3-09",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 11,
+      "candidate_characters": [
+        "Claire",
+        "Lucas",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-02",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-10",
+      "source": "B_EP03",
+      "original_card_id": "3-10",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "candidate_characters": [
+        "Claire",
+        "Lucas",
+        "Marcel",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-02",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-11",
+      "source": "B_EP03",
+      "original_card_id": "3-11",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 10,
+      "candidate_characters": [
+        "Claire",
+        "Lucas",
+        "祖母"
+      ],
+      "scene_req_id": "SC-B-02",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-12",
+      "source": "B_EP03",
+      "original_card_id": "3-12",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 12,
+      "candidate_characters": [
+        "Claire",
+        "Lucas",
+        "Marcel"
+      ],
+      "scene_req_id": "SC-B-02",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-13",
+      "source": "B_EP03",
+      "original_card_id": "3-13",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 12,
+      "candidate_characters": [
+        "Claire",
+        "Lucas"
+      ],
+      "scene_req_id": "SC-B-04",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    },
+    {
+      "shot_id": "TSE-B-EP3-14",
+      "source": "B_EP03",
+      "original_card_id": "3-14",
+      "card_type": "FINE_SHOT",
+      "duration_sec": 13,
+      "candidate_characters": [
+        "Claire"
+      ],
+      "scene_req_id": "SC-B-03",
+      "prompt_doc": "02_B方向_三集42卡_H3候选描述词.md",
+      "asset_status": "UNVERIFIED",
+      "character_gate": "WAIT_USER_REVIEW",
+      "story_gate": "WAIT_USER_STORY_SELECTION",
+      "first_frame_status": "MISSING_VERIFIED_REFERENCE",
+      "preflight_status": "BLOCKED",
+      "dispatch_status": "NOT_QUEUED",
+      "executor_receipt": null
+    }
+  ]
+}

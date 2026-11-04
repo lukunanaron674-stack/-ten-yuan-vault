@@ -1,0 +1,272 @@
+{
+  "prompt": [
+    12,
+    "8708617c-f67b-468a-85cd-838ed1c9073b",
+    {
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "device": "default",
+          "type": "minimax",
+          "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+        }
+      },
+      "12": {
+        "class_type": "MiniMaxH3AVDecodeT8",
+        "inputs": {
+          "av_latent": [
+            "11",
+            0
+          ],
+          "video_vae": [
+            "3",
+            0
+          ],
+          "audio_vae": [
+            "4",
+            0
+          ]
+        }
+      },
+      "15": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card1_firstframe.png"
+        }
+      },
+      "14": {
+        "class_type": "SaveVideo",
+        "inputs": {
+          "codec": "h264",
+          "format": "mp4",
+          "video": [
+            "13",
+            0
+          ],
+          "filename_prefix": "ten_yuan_envelope_h3_20261031/LIN313_EP1_SAGE20_HybridRefs/Card1_345f"
+        }
+      },
+      "10": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "conditioning": [
+            "7",
+            0
+          ],
+          "model": [
+            "8",
+            0
+          ]
+        }
+      },
+      "9": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 202610301701
+        }
+      },
+      "16": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card1_Claire.png"
+        }
+      },
+      "8": {
+        "class_type": "MiniMaxH3DualClockSamplerT8",
+        "inputs": {
+          "scheduler": "native_flow",
+          "shift_video": 12.0,
+          "av_latent": [
+            "7",
+            1
+          ],
+          "shift_audio": 3.0,
+          "steps": 20,
+          "model": [
+            "1",
+            0
+          ],
+          "sampler_name": "dual_clock_euler"
+        }
+      },
+      "18": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card1_ClaireCloseupStyle.png"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+        }
+      },
+      "17": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card1_WorkshopStoryboard.png"
+        }
+      },
+      "4": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+        }
+      },
+      "7": {
+        "class_type": "MiniMaxH3AudioConditioningT8",
+        "inputs": {
+          "audio_vae": [
+            "4",
+            0
+          ],
+          "audio_mode": "native",
+          "task_type": "Hybrid",
+          "audio_denoise_strength": 0.35,
+          "height": 416,
+          "clip": [
+            "2",
+            0
+          ],
+          "ref_images.ref_image_1": [
+            "17",
+            0
+          ],
+          "strict_prompt_tags": true,
+          "ref_images.ref_image_2": [
+            "18",
+            0
+          ],
+          "width": 736,
+          "add_source_as_reference": false,
+          "ref_image_size": "match",
+          "video_vae": [
+            "3",
+            0
+          ],
+          "prompt": "Use <Picture 1> as the exact opening image and composition. <Picture 2> is Claires approved identity and clothing reference. <Picture 3> is the workshop scene and action-storyboard reference. Preserve Claire and her classmate as the same two people throughout, the existing dark fabric, scissors, table geometry and workshop. Hand-drawn 2D animation with clean dark ink lines, matte flat colors, restrained gentle shading and warm everyday Paris atmosphere; keep the supplied character proportions. Each timed beat is one full-screen shot in the listed order. Keep screen direction and action continuity. No split-screen or storyboard grid, no extra people, no costume or face redesign, no duplicate scissors or fabric, no legible text, no photorealism or 3D. No intelligible speech; dialogue and the final black are post-production. <Picture 4> is the close-up illustration style reference: borrow its soft warm skin shading, expressive facial rendering, fine dark ink lines, natural hair detail and gentle matte texture. Keep each shot a single full-screen composition; never reproduce its contact sheet or panel grid. Keep character identity and costume from the separate identity references.\n\nTIME-CODED STORYBOARD (follow in order; each range is one full-screen shot):\n00-02.2s | 01-01: Wide establishing view inside the same fashion-design workshop. Claire and the classmate work at one shared table on the same dark fabric; Claire places one fabric piece in the shared work area. No cutting yet.\n02.2-04.2s | 01-02: Close insert on the classmates existing hand, scissors and Claires fabric. The scissors close exactly once and sever the crucial detail; the fabric edge falls visibly onto the table.\n04.2-07.0s | 01-03: Medium-close on Claire as she sees the cut, pulls back the same damaged fabric and faces the classmate with a controlled angry reaction. Complete torso and arm action; dialogue is added in post.\n07.0-09.7s | 01-04: Locked medium-wide on the same table and screen axis. Claire remains planted and continues the confrontation. The classmate stays visible at the edge of frame, frozen, looking down or lifting one defensive hand; nobody leaves. Keep the damaged fabric and both people in the same workshop.\n09.7-13.8s | 01-05: Locked close-to-medium close-up on Claire, still standing and visibly angry. She emphasizes the unresolved accusation with one controlled hand gesture; the classmate remains silent and partially visible at the edge. Hold the unresolved tension; no one exits and Claire does not soften into an apology.\n13.8-14.375s | 01-06 edit lead-in: Hold on the settled empty workshop image; the exact 0.7-second black is a post-production insert, do not generate text or a new shot.",
+          "reference_video_policy": "official_2_to_15s",
+          "prompt_primary_audio_ordinal": 0,
+          "ref_images.ref_image_0": [
+            "16",
+            0
+          ],
+          "first_frame": [
+            "15",
+            0
+          ],
+          "length": 345
+        }
+      },
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "11": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "sigmas": [
+            "8",
+            2
+          ],
+          "guider": [
+            "10",
+            0
+          ],
+          "sampler": [
+            "8",
+            1
+          ],
+          "noise": [
+            "9",
+            0
+          ],
+          "latent_image": [
+            "7",
+            1
+          ]
+        }
+      },
+      "13": {
+        "class_type": "CreateVideo",
+        "inputs": {
+          "images": [
+            "12",
+            0
+          ],
+          "audio": [
+            "12",
+            1
+          ],
+          "bit_depth": 8,
+          "fps": 24.0
+        }
+      }
+    },
+    {
+      "client_id": "codex-lin313-ep1-sage20-Card1",
+      "create_time": 1793405625695
+    },
+    [
+      "14"
+    ]
+  ],
+  "outputs": {
+    "14": {
+      "images": [
+        {
+          "filename": "Card1_345f_00001_.mp4",
+          "subfolder": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs",
+          "type": "output"
+        }
+      ],
+      "animated": [
+        true
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "8708617c-f67b-468a-85cd-838ed1c9073b",
+          "timestamp": 1793405625696
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "2",
+            "3",
+            "4",
+            "1"
+          ],
+          "prompt_id": "8708617c-f67b-468a-85cd-838ed1c9073b",
+          "timestamp": 1793405625739
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "8708617c-f67b-468a-85cd-838ed1c9073b",
+          "timestamp": 1793405949055
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "14": {
+      "node_id": "14",
+      "display_node": "14",
+      "parent_node": null,
+      "real_node_id": "14"
+    }
+  }
+}

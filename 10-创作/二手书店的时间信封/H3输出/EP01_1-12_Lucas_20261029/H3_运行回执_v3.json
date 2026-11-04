@@ -1,7 +1,7 @@
 {
   "render_task_id": "EP01-1-12-LUCAS-I2V-V3-20261029",
   "prompt_id": "2d83afc1-c63e-468f-94c5-a9d315f1fae2",
-  "status": "RENDERING",
+  "status": "SUCCESS",
   "started_at": "2026-10-29T14:26:53.9618814+08:00",
   "workflow": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\EP01_1-12_Lucas_20261029\\H3_I2V_API_workflow_v3.json",
   "output_prefix": "ten_yuan_envelope_h3_20261029/EP01_1-12_Lucas_I2V_firstframe_v3_345f",
@@ -10,5 +10,19 @@
   "fps": 24,
   "width": 1024,
   "height": 576,
-  "scope": "LOCAL_TEST_CANDIDATE_NOT_FORMAL_PASS"
+  "scope": "LOCAL_TEST_CANDIDATE_NOT_FORMAL_PASS",
+  "executor_finished_at": "2026-10-29T14:32:42.6314348+08:00",
+  "output_video": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\EP01_1-12_Lucas_20261029\\EP01_1-12_Lucas_H3_I2V_14.375s_v3.mp4",
+  "output_sha256": "147341a4d0dc9ee8dcc9564881a220575f56cdf1e173bd2bb1c71e4f1deae567",
+  "output_bytes": 3111656,
+  "actual_media": {
+    "height": 576,
+    "duration_sec": 14.375,
+    "frames": 345,
+    "audio": "aac 32kHz",
+    "fps": 24,
+    "width": 1024,
+    "codec": "h264"
+  },
+  "visual_review": "USER_REVIEW_PENDING; head/mid/tail extracted; identity and bookstore continuity visible; framing zooms closer by tail"
 }

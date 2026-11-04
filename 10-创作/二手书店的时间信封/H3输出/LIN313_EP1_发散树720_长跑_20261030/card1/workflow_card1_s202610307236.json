@@ -1,0 +1,204 @@
+{
+ "3": {
+  "inputs": {
+   "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+  },
+  "class_type": "VAELoader"
+ },
+ "17": {
+  "inputs": {
+   "image": "ten_yuan_tree_720_20261030\\card1_ref1.png"
+  },
+  "class_type": "LoadImage"
+ },
+ "7": {
+  "inputs": {
+   "audio_denoise_strength": 0.35,
+   "width": 1280,
+   "audio_vae": [
+    "4",
+    0
+   ],
+   "first_frame": [
+    "15",
+    0
+   ],
+   "length": 362,
+   "prompt": "Render ONE continuous 15.0-second video with five distinct full-screen shots in the exact time-coded order below. Use hard editorial cuts. Never create a storyboard grid, split screen, montage sheet or dissolve.\n\nVisual references and strict roles: <Picture 1> is the exact opening frame: a Paris fashion-design workshop where Claire (long dark wavy hair, hair clips, gray striped sweater, headphones around her neck, backpack) works on dark fabric with scissors on the left, and her classmate (dark hair, black top, beige apron) rests her chin on her hand on the right at the same shared table. Begin on that exact composition and animate only natural small motion before the first cut. <Picture 2> is Claire's identity, face, hair, body proportions and outfit. <Picture 3> is the workshop environment and classmate staging. Maintain one consistent hand-drawn 2D illustration style with fine dark linework, matte muted colors and quiet Paris daylight. No wardrobe swaps, face/hair redesign, red hair, photorealism, 3D, magic effects, readable text, subtitles, logos, new people, duplicate bodies, extra limbs or extra fingers.\n\n01 | 00.0-2.6s | Medium shot, both students work around the shared table on the same dark fabric design, a briefly cooperative atmosphere. Keep the opening composition stable.\nCUT.\n02 | 2.6-5.0s | Close insert on the hands, scissors and the dark fabric on the table; one cutting motion severs a crucial portion and the detached edge falls onto the table.\nCUT.\n03 | 5.0-8.3s | Medium-close shot: Claire pulls back the damaged fabric, faces the classmate and delivers one short angry line - she is clearly scolding, torso fully committed, staying planted in place, not leaving.\nCUT.\n04 | 8.3-11.5s | Locked medium-wide shot on the same table and the same screen axis: Claire stays and keeps confronting, jaw set and hot with anger; the classmate stays IN FRAME, stunned and silent, lowering her gaze or raising a hand defensively, but she does NOT leave - the standoff holds.\nCUT.\n05 | 11.5-15.0s | Locked close-medium shot of Claire still standing her ground by the table, expression still fiery, one sharp gesture reiterating her point; the classmate remains visible at the edge of frame, present but silenced, no one exits; the conflict stays unresolved.\n\nKeep each shot's main action clear and singular; preserve chronological order, identity and screen direction. Candidate audio only: quiet workshop room tone, fabric and scissor sounds, a light breath before the angry line. No intelligible speech.",
+   "clip": [
+    "2",
+    0
+   ],
+   "strict_prompt_tags": true,
+   "prompt_primary_audio_ordinal": 0,
+   "height": 704,
+   "task_type": "Hybrid",
+   "video_vae": [
+    "3",
+    0
+   ],
+   "reference_video_policy": "official_2_to_15s",
+   "add_source_as_reference": false,
+   "ref_image_size": "match",
+   "audio_mode": "native",
+   "ref_images": {
+    "ref_image_0": [
+     "16",
+     0
+    ],
+    "ref_image_1": [
+     "17",
+     0
+    ]
+   },
+   "ref_images.ref_image_0": [
+    "16",
+    0
+   ],
+   "ref_images.ref_image_1": [
+    "17",
+    0
+   ]
+  },
+  "class_type": "MiniMaxH3AudioConditioningT8"
+ },
+ "14": {
+  "inputs": {
+   "format": "mp4",
+   "video": [
+    "13",
+    0
+   ],
+   "filename_prefix": "ten_yuan_tree_720_20261030/Card1_720_362f_s202610307236",
+   "codec": "h264"
+  },
+  "class_type": "SaveVideo"
+ },
+ "12": {
+  "inputs": {
+   "audio_vae": [
+    "4",
+    0
+   ],
+   "video_vae": [
+    "3",
+    0
+   ],
+   "av_latent": [
+    "11",
+    0
+   ]
+  },
+  "class_type": "MiniMaxH3AVDecodeT8"
+ },
+ "10": {
+  "inputs": {
+   "model": [
+    "8",
+    0
+   ],
+   "conditioning": [
+    "7",
+    0
+   ]
+  },
+  "class_type": "BasicGuider"
+ },
+ "2": {
+  "inputs": {
+   "device": "default",
+   "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+   "type": "minimax"
+  },
+  "class_type": "CLIPLoader"
+ },
+ "15": {
+  "inputs": {
+   "image": "ten_yuan_tree_720_20261030\\card1_first.png"
+  },
+  "class_type": "LoadImage"
+ },
+ "1": {
+  "inputs": {
+   "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+   "weight_dtype": "default"
+  },
+  "class_type": "UNETLoader"
+ },
+ "9": {
+  "inputs": {
+   "noise_seed": 202610307236
+  },
+  "class_type": "RandomNoise"
+ },
+ "4": {
+  "inputs": {
+   "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+  },
+  "class_type": "VAELoader"
+ },
+ "8": {
+  "inputs": {
+   "steps": 8,
+   "shift_audio": 3.0,
+   "shift_video": 12.0,
+   "av_latent": [
+    "7",
+    1
+   ],
+   "model": [
+    "1",
+    0
+   ],
+   "scheduler": "native_flow",
+   "sampler_name": "dual_clock_euler"
+  },
+  "class_type": "MiniMaxH3DualClockSamplerT8"
+ },
+ "11": {
+  "inputs": {
+   "sampler": [
+    "8",
+    1
+   ],
+   "guider": [
+    "10",
+    0
+   ],
+   "noise": [
+    "9",
+    0
+   ],
+   "sigmas": [
+    "8",
+    2
+   ],
+   "latent_image": [
+    "7",
+    1
+   ]
+  },
+  "class_type": "SamplerCustomAdvanced"
+ },
+ "13": {
+  "inputs": {
+   "fps": 24.0,
+   "audio": [
+    "12",
+    1
+   ],
+   "images": [
+    "12",
+    0
+   ],
+   "bit_depth": 8
+  },
+  "class_type": "CreateVideo"
+ },
+ "16": {
+  "inputs": {
+   "image": "ten_yuan_tree_720_20261030\\card1_ref0.png"
+  },
+  "class_type": "LoadImage"
+ }
+}

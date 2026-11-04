@@ -1,0 +1,41 @@
+{
+  "prompt_id": "b62f1ccf-431e-46bb-8cba-bb51cf995ad5",
+  "client_id": "codex-card1-shot04-short-20261031",
+  "status": "success",
+  "workflow": "workflow_card1_shot04.json",
+  "prompt_file": "PROMPT_USED.txt",
+  "prompt_length_chars": 462,
+  "submitted_from_existing_comfy": "http://127.0.0.1:8188",
+  "queue_front": true,
+  "queue_at_submit": "empty",
+  "render_started": "2026-10-31T08:10:22+08:00",
+  "render_completed": "2026-10-31T08:11:09+08:00",
+  "render_seconds": 47.616,
+  "settings": {
+    "workflow_node": "MiniMaxH3ReferenceToVideo",
+    "input_length_frames": 65,
+    "actual_decoded_frames": 73,
+    "actual_duration_seconds": 3.041667,
+    "fps": 24,
+    "resolution": "1024x576",
+    "steps": 8,
+    "sampler": "res_multistep",
+    "scheduler": "simple",
+    "seed": 202610310404,
+    "turbo_lora_strength": 0.0,
+    "ref_image_0": "ten_yuan_envelope_h3_20261030/B1_EP1_user_first_frames/01_studio_first.png",
+    "ref_image_1": "ten_yuan_envelope_h3_20261030/B1_EP1_user_first_frames/02_claire.png"
+  },
+  "output": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\LIN313_EP1_卡1单镜04短提示候选_20261031\\shot04_standoff_65f_s202610310404_00001_.mp4",
+  "output_sha256": "51470850A590F4BD13D712634DC91A66484DED92B3C1EFFE85ECAE0D601A427B",
+  "contact_sheet": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\LIN313_EP1_卡1单镜04短提示候选_20261031\\review\\contact_sheet.png",
+  "media_metadata": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\LIN313_EP1_卡1单镜04短提示候选_20261031\\review\\media.json",
+  "review": "FAIL_VISUAL_ALIGNMENT",
+  "findings": [
+    "The model did not preserve Claire: output shows a blonde woman, unlike dark-haired Claire reference.",
+    "The classmate also differs from the dark-haired workshop classmate reference.",
+    "Image style drifts from muted hand-drawn story art to bold flat comic/cartoon.",
+    "Composition keeps both figures at the worktable, and the main figure gestures angrily, but identity/style mismatch makes the candidate unusable without revision.",
+    "This is a visual spot check from six sampled frames; no audio quality judgment."
+  ]
+}

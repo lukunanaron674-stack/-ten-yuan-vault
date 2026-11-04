@@ -1,0 +1,18 @@
+{
+ "task": "B1-EP1-card2-1-rerun",
+ "prompt_id": "4a1e1a07-019a-486a-9ece-c3c870d1f15d",
+ "status": "SUCCESS_CANDIDATE",
+ "native_frames": 294,
+ "fps": 24,
+ "raw_duration_seconds": 12.25,
+ "seed": 202610301511,
+ "steps": 8,
+ "scheduler": "simple",
+ "sampler": "res_multistep",
+ "lora": "turbo_4step DISABLED(strength=0) -> base 8-step direct",
+ "sage_attention": "launch-flag --use-sage-attention (instance-wide, enabled)",
+ "output": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\LIN313_EP1_卡2-1重跑_20261030\\EP1_card2_1_rerun_H3原始输出_294帧.mp4",
+ "evidence_workflow": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\LIN313_EP1_卡2-1重跑_20261030\\workflow_card2_1_rerun_20261030.json",
+ "sha256": "1f5a47f95a527b09bd64b28ec5ef7dcdd45ff7de3e2f26ba18365c884abb541b",
+ "review": "PENDING"
+}

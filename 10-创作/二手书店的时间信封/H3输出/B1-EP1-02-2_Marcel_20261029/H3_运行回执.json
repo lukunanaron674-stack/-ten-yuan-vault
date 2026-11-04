@@ -1,0 +1,29 @@
+{
+  "render_task_id": "B1-EP1-02-2-MARCEL-H3-I2V-20261029",
+  "prompt_id": "1db22b19-f86c-401e-bd37-cf375a1752b8",
+  "status": "SUCCESS",
+  "started_at": "2026-10-29T21:37:26.8124663+08:00",
+  "workflow": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\B1-EP1-02-2_Marcel_20261029\\H3_I2V_API_workflow.json",
+  "first_frame": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\场景候选\\B1-EP1-02-2_H3首帧候选_20261029.png",
+  "comfyui_input": "C:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\input\\ten_yuan_envelope_h3_20261029\\B1_EP1_02_2_Marcel_firstframe_candidate.png",
+  "first_frame_sha256": "C836CA7116388A2A9EA9E27BEB390D963FF4F01ED3CFEC78B1BC3A92DF4221BB",
+  "length_frames": 311,
+  "fps": 24,
+  "width": 1024,
+  "height": 576,
+  "scope": "LOCAL_TEST_CANDIDATE_NOT_FORMAL_PASS",
+  "completed_at": "2026-10-29T21:42:16+08:00",
+  "output_video": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\B1-EP1-02-2_Marcel_20261029\\B1-EP1-02-2_Marcel_H3_13s_candidate.mp4",
+  "output_sha256": "4D9A950A1834CA7342F395B7DFD12C460826AE59D39B33D2492D9CF29517D56E",
+  "output_bytes": 3038118,
+  "actual_media": {
+    "codec": "h264",
+    "width": 1024,
+    "height": 576,
+    "fps": 24,
+    "frames": 311,
+    "duration_sec": 12.958333333333334,
+    "audio": "aac 32kHz stereo"
+  },
+  "visual_review": "H3 head/mid/tail extracted. Story sequence legible and same bookstore; Claire identity and outfit generally consistent. H3 changes shot scale to a close-up in the middle and returns wide at the end, following storyboard cuts; tail owner details are small and glasses cannot be verified. Audio stream exists but was not listened to. USER_REVIEW_PENDING."
+}

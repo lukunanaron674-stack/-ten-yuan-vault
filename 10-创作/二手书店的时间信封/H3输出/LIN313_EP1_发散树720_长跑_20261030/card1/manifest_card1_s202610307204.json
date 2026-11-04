@@ -1,0 +1,27 @@
+{
+ "card": "card1",
+ "seed": 202610307204,
+ "node_stack": "MiniMaxH3AudioConditioningT8 + DualClockSamplerT8 + AVDecodeT8",
+ "task_type": "Hybrid",
+ "first_frame": {
+  "file": "card1_first.png",
+  "src": "C:\\work\\ten-yuan-vault\\Pasted image 20261030115223.png",
+  "sha256": "199c482c5960f4479b2e0f4c02aad5b85bec33ad1a85571f41e48bfa638bb034"
+ },
+ "refs": [
+  {
+   "file": "card1_ref0.png",
+   "sha256": "bce059714fb6ad6a6e506ae0695da9f01265775eee001a79cd3b003eb24a551b"
+  },
+  {
+   "file": "card1_ref1.png",
+   "sha256": "96252d6be510ac076cb4449d0edf5544707ff8b519240d56a60cea4ce4f6095f"
+  }
+ ],
+ "width": 1280,
+ "height": 704,
+ "length": 362,
+ "fps": 24,
+ "duration_s": 15.083,
+ "steps": 8
+}

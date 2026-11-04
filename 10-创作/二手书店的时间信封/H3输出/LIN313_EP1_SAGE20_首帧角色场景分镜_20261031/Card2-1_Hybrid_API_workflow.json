@@ -1,0 +1,204 @@
+{
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "device": "default",
+      "type": "minimax",
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+    }
+  },
+  "12": {
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "inputs": {
+      "av_latent": [
+        "11",
+        0
+      ],
+      "video_vae": [
+        "3",
+        0
+      ],
+      "audio_vae": [
+        "4",
+        0
+      ]
+    }
+  },
+  "15": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card2-1_firstframe.png"
+    }
+  },
+  "14": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "codec": "h264",
+      "format": "mp4",
+      "video": [
+        "13",
+        0
+      ],
+      "filename_prefix": "ten_yuan_envelope_h3_20261031/LIN313_EP1_SAGE20_HybridRefs/Card2-1_294f"
+    }
+  },
+  "10": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "conditioning": [
+        "7",
+        0
+      ],
+      "model": [
+        "8",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 202610301702
+    }
+  },
+  "16": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card2-1_Claire.png"
+    }
+  },
+  "8": {
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "inputs": {
+      "scheduler": "native_flow",
+      "shift_video": 12.0,
+      "av_latent": [
+        "7",
+        1
+      ],
+      "shift_audio": 3.0,
+      "steps": 20,
+      "model": [
+        "1",
+        0
+      ],
+      "sampler_name": "dual_clock_euler"
+    }
+  },
+  "18": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card2-1_ClaireCloseupStyle.png"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+    }
+  },
+  "17": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card2-1_BookshopStreet.png"
+    }
+  },
+  "4": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "7": {
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "inputs": {
+      "audio_vae": [
+        "4",
+        0
+      ],
+      "audio_mode": "native",
+      "task_type": "Hybrid",
+      "audio_denoise_strength": 0.35,
+      "height": 416,
+      "clip": [
+        "2",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "17",
+        0
+      ],
+      "strict_prompt_tags": true,
+      "ref_images.ref_image_2": [
+        "18",
+        0
+      ],
+      "width": 736,
+      "add_source_as_reference": false,
+      "ref_image_size": "match",
+      "video_vae": [
+        "3",
+        0
+      ],
+      "prompt": "Use <Picture 1> as the exact opening image and composition. <Picture 2> is Claires approved identity and clothing reference. <Picture 3> is the approved Paris street and bookstore exterior reference. Preserve the green storefront, river-side Paris street geometry, Claires gray patterned sweater, dark hair, headphones and backpack. Hand-drawn 2D animation with clean ink lines, matte flat colors and restrained warm/cool shading; keep the supplied adult proportions and exact character identity. Follow every timed beat in order on the same travel axis. Do not show Lucas or invent a visible piano source. No readable phone text, no send action, no cuts outside the timed storyboard, no extra central characters, no costume or face redesign, no 3D or photorealism. Dialogue/UI are post-production. <Picture 4> is the close-up illustration style reference: borrow its soft warm skin shading, expressive facial rendering, fine dark ink lines, natural hair detail and gentle matte texture. Keep each shot a single full-screen composition; never reproduce its contact sheet or panel grid. Keep character identity and costume from the separate identity references.\n\nTIME-CODED STORYBOARD (follow in order; each range is one full-screen shot):\n00-02.0s | 02-1-01: Full-body side profile. Claire walks alone in one established screen direction, shoulders slightly folded, holding her phone close.\n02.0-04.2s | 02-1-02 post insert: Close-up hand and phone. Claire types but does not send; the screen stays blank and stable for exact Chinese UI text to be composited later. Thumb hovers and withdraws; no send cue.\n04.2-06.7s | 02-1-03: Close three-quarter face. Her gaze moves from downcast to the side; a small breath and hesitation show disappointment without tears.\n06.7-09.5s | 02-1-04: Waist-up, same street axis. While walking, Claire first hears the piano phrase; one foot stops, upper body turns toward the bookshop, head lifts and eyes focus.\n09.5-12.25s | 02-1-05: Medium-wide. Claire approaches the same green second-hand bookshop, pushes the existing entrance door open once and steps inside; end on the doorway and bookshelves.",
+      "reference_video_policy": "official_2_to_15s",
+      "prompt_primary_audio_ordinal": 0,
+      "ref_images.ref_image_0": [
+        "16",
+        0
+      ],
+      "first_frame": [
+        "15",
+        0
+      ],
+      "length": 294
+    }
+  },
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "11": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "sigmas": [
+        "8",
+        2
+      ],
+      "guider": [
+        "10",
+        0
+      ],
+      "sampler": [
+        "8",
+        1
+      ],
+      "noise": [
+        "9",
+        0
+      ],
+      "latent_image": [
+        "7",
+        1
+      ]
+    }
+  },
+  "13": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "audio": [
+        "12",
+        1
+      ],
+      "bit_depth": 8,
+      "fps": 24.0
+    }
+  }
+}

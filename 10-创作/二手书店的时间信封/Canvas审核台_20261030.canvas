@@ -1,0 +1,31 @@
+{
+	"edges":[
+		{"id":"edge-0","fromNode":"audit-summary","fromSide":"right","toNode":"canvas-0","toSide":"left"},
+		{"id":"edge-1","fromNode":"audit-summary","fromSide":"right","toNode":"canvas-1","toSide":"left"},
+		{"id":"edge-2","fromNode":"audit-summary","fromSide":"right","toNode":"canvas-2","toSide":"left"},
+		{"id":"edge-3","fromNode":"audit-summary","fromSide":"right","toNode":"canvas-3","toSide":"left"},
+		{"id":"edge-4","fromNode":"audit-summary","fromSide":"right","toNode":"canvas-4","toSide":"left"},
+		{"id":"edge-5","fromNode":"audit-summary","fromSide":"right","toNode":"canvas-5","toSide":"left"}
+	],
+	"nodes":[
+		{"id":"audit-title","type":"text","text":"# 《二手书店的时间信封》Canvas 审核台\n\n结构巡检｜2026-10-30\n\n本轮核验：JSON 可解析、节点/边计数、文件引用存在性。未做剧情、图像内容或用户审片审核。","x":0,"y":0,"width":760,"height":250,"color":"6"},
+		{"id":"audit-summary","type":"text","text":"# 本轮结论\n\n6 张活动 Canvas 均能解析。\n\n需要处理：00_项目总览 有 2 个失效文件引用；信封发散树 有 19 个失效文件引用；场景候选 Canvas 为空（0 节点）。\n\n四角色参考、头像照片墙、B方向互补 Canvas 的文件引用在当前本地 vault 均存在。\n\n这些结果只说明结构状态，不代表视觉或剧情审核通过。","x":0,"y":300,"width":760,"height":400,"color":"1"},
+		{"id":"audit-production","type":"text","text":"# 生图执行状态｜674-313\n\nRTX 4080 / ComfyUI 在线，队列空。Claire 静帧链路已跑通到模型，但本轮输出为纯灰图或严重纹理伪影；全部判定为 FAILED，未登记候选、未入 vault、未上传工单。\n\n诊断：Checkpoint 内置 VAE 编解码回环输出纯灰；替换 sdxl_vae 后回环正常，但采样图仍严重损坏。下一步先修复并验证模型/采样参数，再生成候选。\n\n状态边界：视频与静帧均为候选/待审；不标记 PASS、USER_REVIEW 或 DELIVERED。","x":0,"y":750,"width":760,"height":480,"color":"4"},
+		{"id":"canvas-0","type":"text","text":"## 00_项目总览.canvas\n\n节点：175｜边：165｜文件引用：3｜本地缺失：2\n\n结构核验：JSON 可解析。详见下方全局摘要与原 Canvas。","x":900,"y":80,"width":820,"height":210,"color":"1"},
+		{"id":"file-0","type":"file","file":"10-创作/二手书店的时间信封/00_项目总览.canvas","x":900,"y":310,"width":820,"height":300},
+		{"id":"canvas-1","type":"text","text":"## 场景Canvas_无人环境候选_20261027.canvas\n\n节点：0｜边：0｜文件引用：0｜本地缺失：0\n\n结构核验：JSON 可解析。详见下方全局摘要与原 Canvas。","x":1880,"y":80,"width":820,"height":210,"color":"2"},
+		{"id":"file-1","type":"file","file":"10-创作/二手书店的时间信封/场景Canvas_无人环境候选_20261027.canvas","x":1880,"y":310,"width":820,"height":300},
+		{"id":"canvas-2","type":"text","text":"## 四角色_十元与体态参考.canvas\n\n节点：32｜边：8｜文件引用：17｜本地缺失：0\n\n结构核验：JSON 可解析。详见下方全局摘要与原 Canvas。","x":900,"y":640,"width":820,"height":210,"color":"3"},
+		{"id":"file-2","type":"file","file":"10-创作/二手书店的时间信封/四角色_十元与体态参考.canvas","x":900,"y":870,"width":820,"height":300},
+		{"id":"canvas-3","type":"text","text":"## 头像方向发散_照片墙.canvas\n\n节点：67｜边：0｜文件引用：48｜本地缺失：0\n\n结构核验：JSON 可解析。详见下方全局摘要与原 Canvas。","x":1880,"y":640,"width":820,"height":210,"color":"3"},
+		{"id":"file-3","type":"file","file":"10-创作/二手书店的时间信封/头像方向发散_照片墙.canvas","x":1880,"y":870,"width":820,"height":300},
+		{"id":"canvas-4","type":"text","text":"## 信封发散树.canvas\n\n节点：134｜边：45｜文件引用：38｜本地缺失：19\n\n结构核验：JSON 可解析。详见下方全局摘要与原 Canvas。","x":900,"y":1200,"width":820,"height":210,"color":"1"},
+		{"id":"file-4","type":"file","file":"10-创作/二手书店的时间信封/信封发散树.canvas","x":900,"y":1430,"width":820,"height":300},
+		{"id":"canvas-5","type":"text","text":"## B方向_音乐双层互补_Linear313.canvas\n\n节点：38｜边：18｜文件引用：5｜本地缺失：0\n\n结构核验：JSON 可解析。详见下方全局摘要与原 Canvas。","x":1880,"y":1200,"width":820,"height":210,"color":"3"},
+		{"id":"file-5","type":"file","file":"10-创作/二手书店的时间信封/B方向_音乐双层互补_Linear313.canvas","x":1880,"y":1430,"width":820,"height":300}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

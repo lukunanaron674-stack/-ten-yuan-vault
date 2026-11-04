@@ -1,0 +1,84 @@
+{
+  "prompt_id": "706db247-9d17-4a9e-9049-21138edc1b5d",
+  "client_id": "codex-card1-shot04-pdd8-20261031",
+  "status": "success_candidate",
+  "card": "B1-EP1-01 / 卡1 镜头04 7.0–9.7s",
+  "submitted": "2026-10-31",
+  "workflow": "workflow_card1_shot04_PDD8.json",
+  "workflow_sha256": "11675dca2a1c83d0868c40db263395e32e193d72335169e7563fa15707869e77",
+  "prompt_parts": {
+    "counted_description_action_reference": "PROMPT_COUNTED.txt",
+    "style_words_separate": "STYLE_WORDS_SEPARATE.txt",
+    "sent_combined_prompt": "PROMPT_SENT.txt",
+    "counted_chars": 430,
+    "combined_chars": 824
+  },
+  "comfyui": {
+    "url": "http://192.168.77.10:8188",
+    "version": "0.33.4",
+    "only_existing_instance": true
+  },
+  "settings": {
+    "base_model": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "acceleration": "MiniMax H3 Ref2VA PDD Acc 8Step",
+    "pdd_file": "MiniMax-H3-Ref2VA-Acc-8Step.safetensors",
+    "nfe": 8,
+    "lora_strength": 1.0,
+    "head_strength": 1.0,
+    "on_off_grid": "error",
+    "sigma_shift_video": 12.0,
+    "sigma_shift_audio": 3.0,
+    "sampler": "euler",
+    "guider": "BasicGuider CFG 1.0",
+    "width": 736,
+    "height": 416,
+    "latent_length_frames": 65,
+    "fps": 24,
+    "seed": 202610310405,
+    "task_type": "Hybrid",
+    "audio_mode": "native",
+    "refs": {
+      "Card1_firstframe.png": {
+        "path": "C:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\input\\ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card1_firstframe.png",
+        "sha256": "78d3113fa6fec9f535a89734e82ff8277ec186f6f102ca5402421a9e88fdfb59"
+      },
+      "Card1_Claire.png": {
+        "path": "C:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\input\\ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card1_Claire.png",
+        "sha256": "bce059714fb6ad6a6e506ae0695da9f01265775eee001a79cd3b003eb24a551b"
+      },
+      "Card1_WorkshopStoryboard.png": {
+        "path": "C:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\input\\ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card1_WorkshopStoryboard.png",
+        "sha256": "199c482c5960f4479b2e0f4c02aad5b85bec33ad1a85571f41e48bfa638bb034"
+      },
+      "Card1_ClaireCloseupStyle.png": {
+        "path": "C:\\ComfyUI_portable\\ComfyUI_windows_portable\\ComfyUI\\input\\ten_yuan_envelope_h3_20261031\\LIN313_EP1_SAGE20_HybridRefs\\Card1_ClaireCloseupStyle.png",
+        "sha256": "8dd0545e340c98d7b7b1a2f92938b408c3a70a65c64b66a7c61afa08bd8098c6"
+      }
+    }
+  },
+  "result": {
+    "path": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\LIN313_EP1_卡1单镜04_PDD8_候选_20261031\\shot04_65f_s202610310405_00001_.mp4",
+    "sha256": "29d33170d1631855204bf46b44a146340b50841047b8b54f07c70ee43cb806b1",
+    "bytes": 415617,
+    "duration_seconds": 3.042,
+    "fps": 24.0,
+    "width": 736,
+    "height": 416,
+    "sampled_frames": [
+      0.0,
+      0.45,
+      0.9,
+      1.35,
+      1.8,
+      2.25,
+      2.7,
+      2.9419999999999997
+    ],
+    "video_sha256": "29d33170d1631855204bf46b44a146340b50841047b8b54f07c70ee43cb806b1",
+    "video_bytes": 415617,
+    "contact_sheet": "C:\\work\\ten-yuan-vault\\10-创作\\二手书店的时间信封\\H3输出\\LIN313_EP1_卡1单镜04_PDD8_候选_20261031\\review\\contact_sheet.png",
+    "status": "REVIEW_PENDING",
+    "visual_review": "Dark-haired Claire and gray striped sweater remain recognizable; workshop/table composition remains stable. Later frames read as angry scolding and the classmate reacting. Minor arm/table deformation persists; candidate for user review, not pass.",
+    "audio_review": "Not yet listened subjectively."
+  }
+}
