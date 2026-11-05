@@ -1,0 +1,296 @@
+{
+  "nodes": [
+    {
+      "id": "FATE_GROUP",
+      "type": "group",
+      "label": "命运｜主题聚合·生克图·电影MD原卡",
+      "x": 0,
+      "y": 0,
+      "width": 4090,
+      "height": 2500,
+      "color": "3"
+    },
+    {
+      "id": "FATE_HUB",
+      "type": "text",
+      "text": "# 命运｜XZ＋NZ\n去向、失去与不可逆结算\n主主题归档、主题作用边、人物十元必须分账",
+      "x": 1510,
+      "y": 100,
+      "width": 1040,
+      "height": 300,
+      "color": "3"
+    },
+    {
+      "id": "FATE_REL_HEAD",
+      "type": "text",
+      "text": "# 主题关系｜左\nUSER电影读法与AI-H竞争分开",
+      "x": 130,
+      "y": 470,
+      "width": 1180,
+      "height": 140,
+      "color": "3"
+    },
+    {
+      "id": "FATE_FILM_HEAD",
+      "type": "text",
+      "text": "# 主电影卡｜右\n点击原MD打开完整证据",
+      "x": 2740,
+      "y": 470,
+      "width": 1170,
+      "height": 140,
+      "color": "3"
+    },
+    {
+      "id": "FATE_RESEARCH",
+      "type": "file",
+      "file": "05-银矿库/五大主题仓库/01-命运 xz+nz/命运主题结构与事件零件.md",
+      "x": 1530,
+      "y": 700,
+      "width": 1010,
+      "height": 300,
+      "color": "3"
+    },
+    {
+      "id": "FATE_INDEX",
+      "type": "file",
+      "file": "05-银矿库/五大主题仓库/01-命运 xz+nz/命运主题索引.md",
+      "x": 1530,
+      "y": 1120,
+      "width": 1010,
+      "height": 260,
+      "color": "3"
+    },
+    {
+      "id": "FATE_FOOT",
+      "type": "text",
+      "text": "**阅读路径**：左关系→中专题研究MD→右原电影卡\n[[02_给我用的知识凝结库/01_动态链条/00_十元链电影卡片|返回五维总图]]\nF2、F3与本地Obsidian视觉验收均待核",
+      "x": 1530,
+      "y": 1520,
+      "width": 1010,
+      "height": 310,
+      "color": "3"
+    },
+    {
+      "id": "FATE_REL_0",
+      "type": "text",
+      "text": "### 1 空间克命运｜钢琴家：禁令与藏匿缩小生存和返家道路【USER】",
+      "x": 130,
+      "y": 700,
+      "width": 1180,
+      "height": 250,
+      "color": "3"
+    },
+    {
+      "id": "FATE_REL_1",
+      "type": "text",
+      "text": "### 2 空间生时间｜钢琴家：封闭催生长期等待、无声保留与延迟兑现【USER最新提议／H机制】",
+      "x": 130,
+      "y": 1000,
+      "width": 1180,
+      "height": 250,
+      "color": "3"
+    },
+    {
+      "id": "FATE_REL_2",
+      "type": "text",
+      "text": "### 3 命运生时间｜你的名字：死亡与联结驱动跨时间救援【USER】",
+      "x": 130,
+      "y": 1300,
+      "width": 1180,
+      "height": 250,
+      "color": "3"
+    },
+    {
+      "id": "FATE_REL_3",
+      "type": "text",
+      "text": "### 4 命运克本体｜边缘行者：牺牲；花束般的恋爱：共同关系本体终止【USER】",
+      "x": 130,
+      "y": 1600,
+      "width": 1180,
+      "height": 250,
+      "color": "3"
+    },
+    {
+      "id": "FATE_REL_4",
+      "type": "text",
+      "text": "### 5 三角克｜花束般的恋爱：本体生空间→空间克命运（败）→命运克本体【USER】",
+      "x": 130,
+      "y": 1900,
+      "width": 1180,
+      "height": 250,
+      "color": "3"
+    },
+    {
+      "id": "FATE_FILM_C3",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C03_钢琴家.md",
+      "x": 2740,
+      "y": 700,
+      "width": 1170,
+      "height": 210,
+      "color": "3"
+    },
+    {
+      "id": "FATE_FILM_C6",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C06_你的名字.md",
+      "x": 2740,
+      "y": 960,
+      "width": 1170,
+      "height": 210,
+      "color": "3"
+    },
+    {
+      "id": "FATE_FILM_C8",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C08_东京教父.md",
+      "x": 2740,
+      "y": 1220,
+      "width": 1170,
+      "height": 210,
+      "color": "3"
+    },
+    {
+      "id": "FATE_FILM_C19",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C19_赛博朋克边缘行者_S1.md",
+      "x": 2740,
+      "y": 1480,
+      "width": 1170,
+      "height": 210,
+      "color": "3"
+    },
+    {
+      "id": "FATE_FILM_C21",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C21_花束般的恋爱.md",
+      "x": 2740,
+      "y": 1740,
+      "width": 1170,
+      "height": 210,
+      "color": "3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "FATE_FATE_HUB_FATE_REL_HEAD",
+      "fromNode": "FATE_HUB",
+      "fromSide": "left",
+      "toNode": "FATE_REL_HEAD",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_HUB_FATE_FILM_HEAD",
+      "fromNode": "FATE_HUB",
+      "fromSide": "right",
+      "toNode": "FATE_FILM_HEAD",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_HUB_FATE_RESEARCH",
+      "fromNode": "FATE_HUB",
+      "fromSide": "bottom",
+      "toNode": "FATE_RESEARCH",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_RESEARCH_FATE_INDEX",
+      "fromNode": "FATE_RESEARCH",
+      "fromSide": "bottom",
+      "toNode": "FATE_INDEX",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_INDEX_FATE_FOOT",
+      "fromNode": "FATE_INDEX",
+      "fromSide": "bottom",
+      "toNode": "FATE_FOOT",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_REL_HEAD_FATE_REL_0",
+      "fromNode": "FATE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "FATE_REL_0",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_REL_HEAD_FATE_REL_1",
+      "fromNode": "FATE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "FATE_REL_1",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_REL_HEAD_FATE_REL_2",
+      "fromNode": "FATE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "FATE_REL_2",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_REL_HEAD_FATE_REL_3",
+      "fromNode": "FATE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "FATE_REL_3",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_REL_HEAD_FATE_REL_4",
+      "fromNode": "FATE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "FATE_REL_4",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_FILM_HEAD_FATE_FILM_C3",
+      "fromNode": "FATE_FILM_HEAD",
+      "fromSide": "bottom",
+      "toNode": "FATE_FILM_C3",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_FILM_HEAD_FATE_FILM_C6",
+      "fromNode": "FATE_FILM_HEAD",
+      "fromSide": "bottom",
+      "toNode": "FATE_FILM_C6",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_FILM_HEAD_FATE_FILM_C8",
+      "fromNode": "FATE_FILM_HEAD",
+      "fromSide": "bottom",
+      "toNode": "FATE_FILM_C8",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_FILM_HEAD_FATE_FILM_C19",
+      "fromNode": "FATE_FILM_HEAD",
+      "fromSide": "bottom",
+      "toNode": "FATE_FILM_C19",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "FATE_FATE_FILM_HEAD_FATE_FILM_C21",
+      "fromNode": "FATE_FILM_HEAD",
+      "fromSide": "bottom",
+      "toNode": "FATE_FILM_C21",
+      "toSide": "top",
+      "color": "3"
+    }
+  ]
+}

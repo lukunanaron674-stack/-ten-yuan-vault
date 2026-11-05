@@ -229,6 +229,15 @@
       "width": 570,
       "height": 330,
       "color": "5"
+    },
+    {
+      "id": "APP_FILM_GOAL_Z_ROUTE",
+      "type": "text",
+      "x": 2600,
+      "y": -360,
+      "width": 700,
+      "height": 700,
+      "text": "# Q-DYN-002｜电影十元链执行路由\n\n**问题系统**：Q-DYN-002 / APP-FILM-CHAIN-001\n\n**主代理**：[[07-Codex大脑库/Agent系统/01_Agent库/AG-14_动态链Agent|AG-14 动态链]]\n\n**目标 Z**：[[07-Codex大脑库/Agent系统/02_目标/GOAL-Z_电影十元链分析|电影分析目标Z]]\n\n**子代理**：[[07-Codex大脑库/Agent系统/01_Agent库/AG-13_十元链Agent|AG-13 十元链]]\n\n**人物主次判定**：[[07-Codex大脑库/Agent系统/01_Agent库/AG-11_角色Agent|AG-11 角色]]（A 十项相似度＋B 材料论证；C关系反推研究）\n\n**验收**：AG-02关系审计 → Lina00证据门禁；电影C-film和真人感受E级分账。\n\n*目标Z是任务代号，不是十元Z；GitHub路由建立≠本地代理已运行*"
     }
   ],
   "edges": [
@@ -423,6 +432,14 @@
       "toNode": "Q-SYS-002",
       "toSide": "right",
       "label": "统一证据等级"
+    },
+    {
+      "id": "eQDynGoalZ",
+      "fromNode": "Q-DYN-002",
+      "fromSide": "right",
+      "toNode": "APP_FILM_GOAL_Z_ROUTE",
+      "toSide": "left",
+      "label": "APP 目标Z"
     }
   ],
   "metadata": {
@@ -434,6 +451,8 @@
       "active_q_count": 8,
       "legacy_q_count": 27,
       "core_goal": "AI能理解、预测、生成并编排人的目标感受"
-    }
+    },
+    "application_route": "Q-DYN-002 > AG-14 > GOAL-Z > AG-13",
+    "local_ui": "WAIT_LOCAL_UI"
   }
 }

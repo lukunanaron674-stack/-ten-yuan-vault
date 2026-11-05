@@ -1,0 +1,206 @@
+{
+  "nodes": [
+    {
+      "id": "CAUSE_GROUP",
+      "type": "group",
+      "label": "因果｜主题聚合·生克图·电影MD原卡",
+      "x": 0,
+      "y": 0,
+      "width": 4090,
+      "height": 2500,
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_HUB",
+      "type": "text",
+      "text": "# 因果｜ZX＋NX\n事实、原因、归责及反馈的成立条件\n主主题归档、主题作用边、人物十元必须分账",
+      "x": 1510,
+      "y": 100,
+      "width": 1040,
+      "height": 300,
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_REL_HEAD",
+      "type": "text",
+      "text": "# 主题关系｜左\nUSER电影读法与AI-H竞争分开",
+      "x": 130,
+      "y": 470,
+      "width": 1180,
+      "height": 140,
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_FILM_HEAD",
+      "type": "text",
+      "text": "# 主电影卡｜右\n点击原MD打开完整证据",
+      "x": 2740,
+      "y": 470,
+      "width": 1170,
+      "height": 140,
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_RESEARCH",
+      "type": "file",
+      "file": "05-银矿库/五大主题仓库/03-因果 zx+nx/因果主题结构与事件零件.md",
+      "x": 1530,
+      "y": 700,
+      "width": 1010,
+      "height": 300,
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_INDEX",
+      "type": "file",
+      "file": "05-银矿库/五大主题仓库/03-因果 zx+nx/因果主题索引.md",
+      "x": 1530,
+      "y": 1120,
+      "width": 1010,
+      "height": 260,
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_FOOT",
+      "type": "text",
+      "text": "**阅读路径**：左关系→中专题研究MD→右原电影卡\n[[02_给我用的知识凝结库/01_动态链条/00_十元链电影卡片|返回五维总图]]\nF2、F3与本地Obsidian视觉验收均待核",
+      "x": 1530,
+      "y": 1520,
+      "width": 1010,
+      "height": 310,
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_REL_0",
+      "type": "text",
+      "text": "### 1 主维候选｜罗生门：多证词冲突，归责不能闭合；结尾行动修复部分信任【AI-H】",
+      "x": 130,
+      "y": 700,
+      "width": 1180,
+      "height": 250,
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_REL_1",
+      "type": "text",
+      "text": "### 2 三者｜楚门的世界：因果生本体、因果克空间，本体生空间【USER，空间主】",
+      "x": 130,
+      "y": 1000,
+      "width": 1180,
+      "height": 250,
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_REL_2",
+      "type": "text",
+      "text": "### 3 架桥｜日瓦戈医生：下一代寻根→上代历史→琴艺线索【USER】",
+      "x": 130,
+      "y": 1300,
+      "width": 1180,
+      "height": 250,
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_REL_3",
+      "type": "text",
+      "text": "### 4 反向受克｜情书、土拨鼠之日、千年女优：时间克因果【USER】",
+      "x": 130,
+      "y": 1600,
+      "width": 1180,
+      "height": 250,
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_FILM_C23",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C23_罗生门.md",
+      "x": 2740,
+      "y": 700,
+      "width": 1170,
+      "height": 210,
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "CAUSE_CAUSE_HUB_CAUSE_REL_HEAD",
+      "fromNode": "CAUSE_HUB",
+      "fromSide": "left",
+      "toNode": "CAUSE_REL_HEAD",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_CAUSE_HUB_CAUSE_FILM_HEAD",
+      "fromNode": "CAUSE_HUB",
+      "fromSide": "right",
+      "toNode": "CAUSE_FILM_HEAD",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_CAUSE_HUB_CAUSE_RESEARCH",
+      "fromNode": "CAUSE_HUB",
+      "fromSide": "bottom",
+      "toNode": "CAUSE_RESEARCH",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_CAUSE_RESEARCH_CAUSE_INDEX",
+      "fromNode": "CAUSE_RESEARCH",
+      "fromSide": "bottom",
+      "toNode": "CAUSE_INDEX",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_CAUSE_INDEX_CAUSE_FOOT",
+      "fromNode": "CAUSE_INDEX",
+      "fromSide": "bottom",
+      "toNode": "CAUSE_FOOT",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_CAUSE_REL_HEAD_CAUSE_REL_0",
+      "fromNode": "CAUSE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "CAUSE_REL_0",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_CAUSE_REL_HEAD_CAUSE_REL_1",
+      "fromNode": "CAUSE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "CAUSE_REL_1",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_CAUSE_REL_HEAD_CAUSE_REL_2",
+      "fromNode": "CAUSE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "CAUSE_REL_2",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_CAUSE_REL_HEAD_CAUSE_REL_3",
+      "fromNode": "CAUSE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "CAUSE_REL_3",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "CAUSE_CAUSE_FILM_HEAD_CAUSE_FILM_C23",
+      "fromNode": "CAUSE_FILM_HEAD",
+      "fromSide": "bottom",
+      "toNode": "CAUSE_FILM_C23",
+      "toSide": "top",
+      "color": "2"
+    }
+  ]
+}

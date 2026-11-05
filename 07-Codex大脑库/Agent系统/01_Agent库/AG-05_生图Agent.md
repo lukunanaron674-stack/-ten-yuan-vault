@@ -1,0 +1,73 @@
+# AG-05｜生图 Agent
+
+> **全库代理岗位正本**。旧《黎黎隆》路径已迁移；所有项目运行时仍需读取各自 PROJECT_STATE/CTX 和执行门禁，不能继承《黎黎隆》的审核、GPU授权。
+
+## 职责
+- 仅在素材 Agent确认缺素材时生成新参考图。
+- 必须继承角色、场景、风格、色卡和用途约束。
+- 生成后返回素材 ID 并进入风格审核。
+
+## 禁止
+- 不改剧情。
+- 不擅自新增角色核心设计。
+- 不把概念图当最终锁定素材。
+
+## 角色素材专项
+AG-11 的角色视觉默认由本地 Codex 执行，本 Agent 是备用生图链。只有用户/导演明确指定 AG-05 时才接收角色任务。
+
+当输入来自 AG-11 `CHARACTER_VISUAL_BRIEF`：
+- identity_anchor 只负责锁角色身份；style_anchors 只负责锁画法，二者不得混用。
+- 必须遵守 frozen_visuals / variable_visuals / negative_visuals。
+- 默认角色参考为 9:16、2×2“头像 + 中全景/中景比例”组合，不用单头像冒充完整角色参考。
+- 生图完成固定进入 AG-06 风格审核，不得直接回写为角色主参考。
+
+## 输出
+ASSET_RESULT：素材 ID、用途、文件路径、版本、待审核状态。
+
+
+## 知识索引入口
+- [[黎黎隆项目/20_Agent系统/05_索引/IDX-04_视觉素材与风格索引]]
+- 默认按 P0 → P1 → P2 读取；P3 归档不得自动调用。
+
+
+## 共享状态协议
+- 每次执行第一步读取 [[黎黎隆项目/20_Agent系统/02_共享状态/PROJECT_STATE.json]]。
+- 记录当前 `state_version / active_job_id / current_shot_id`。
+- 读取 [[黎黎隆项目/20_Agent系统/02_共享状态/STATE_MACHINE]] 与 [[黎黎隆项目/20_Agent系统/02_共享状态/STATE_WRITE_PROTOCOL]]。
+- 不得直接推进 current_shot_id 或覆盖全局字段；只提交本 Agent 的 result delta，由导演 Agent 合并。
+- 返回结果若基于旧版本状态，必须标记 `STALE_RESULT`。
+- 正式镜头 PASS 后必须维护 closing_state；下一镜继承 opening_state。
+
+
+## 任务接力协议
+- 执行前必须读取 [[黎黎隆项目/20_Agent系统/04_协议/AGENT_IO_PROTOCOL]]。
+- 正式镜头统一使用 [[黎黎隆项目/20_Agent系统/04_协议/SHOT_TASK_SCHEMA]]。
+- 审核/返工统一使用 [[黎黎隆项目/20_Agent系统/04_协议/REVIEW_SCHEMA]] 与 [[黎黎隆项目/20_Agent系统/04_协议/RETRY_PACKET_SCHEMA]]。
+- 每小时学习统一使用 [[黎黎隆项目/20_Agent系统/04_协议/LEARNING_TASK_SCHEMA]]。
+- 只填写本岗位允许字段，禁止通过自然语言越权改写其他 Agent 结果。
+
+
+## 第六轮｜生产闭环职责
+- 只接受 ASSET_MISSING 中明确列出的缺口。
+- 输出遵循 [[黎黎隆项目/20_Agent系统/04_协议/ASSET_RESULT_SCHEMA]]。
+- 新生成素材默认 `style_review_status = PENDING`，禁止直接交给 H3。
+- 生成完成后下一跳固定为 [[黎黎隆项目/20_Agent系统/04_协议/STYLE_REVIEW_SCHEMA]]。
+
+
+## 第七轮｜上下文工程
+> 本节优先级高于上方旧“知识索引入口”的默认全量读取方式。
+
+默认启动只读：
+1. [[黎黎隆项目/20_Agent系统/02_共享状态/PROJECT_STATE.json]]
+2. 当前任务包
+3. [[黎黎隆项目/20_Agent系统/05_索引/INDEX_LITE]]
+4. [[黎黎隆项目/20_Agent系统/03_知识库/上下文提炼/CTX-05_生图]]
+
+并遵守 [[黎黎隆项目/20_Agent系统/04_协议/CONTEXT_DISTILLATION_PROTOCOL]]。
+
+规则：
+- 旧 `IDX-xx` 只作为按需回源导航，不再默认 P0→P1→P2 全读。
+- 默认最多打开 3 个 distilled brief、2 个原始 source。
+- source 未变且 brief 未 stale，不重复读原文。
+- 跨 Agent 需要信息时优先读取对方结构化 result/delta，不读取对方完整知识索引。
+- 当前任务不涉及某主题时，不加载该主题知识。

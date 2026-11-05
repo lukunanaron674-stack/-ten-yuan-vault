@@ -1,0 +1,278 @@
+{
+  "nodes": [
+    {
+      "id": "SPACE_GROUP",
+      "type": "group",
+      "label": "空间｜主题聚合·生克图·电影MD原卡",
+      "x": 0,
+      "y": 0,
+      "width": 4090,
+      "height": 2500,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_HUB",
+      "type": "text",
+      "text": "# 空间｜X并Z＋N\n边界、准入、容纳与退出资格\n主主题归档、主题作用边、人物十元必须分账",
+      "x": 1510,
+      "y": 100,
+      "width": 1040,
+      "height": 300,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_REL_HEAD",
+      "type": "text",
+      "text": "# 主题关系｜左\nUSER电影读法与AI-H竞争分开",
+      "x": 130,
+      "y": 470,
+      "width": 1180,
+      "height": 140,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_FILM_HEAD",
+      "type": "text",
+      "text": "# 主电影卡｜右\n点击原MD打开完整证据",
+      "x": 2740,
+      "y": 470,
+      "width": 1170,
+      "height": 140,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_RESEARCH",
+      "type": "file",
+      "file": "05-银矿库/五大主题仓库/05-空间 x并z+n/空间主题结构与事件零件.md",
+      "x": 1530,
+      "y": 700,
+      "width": 1010,
+      "height": 300,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_INDEX",
+      "type": "file",
+      "file": "05-银矿库/五大主题仓库/05-空间 x并z+n/空间主题索引.md",
+      "x": 1530,
+      "y": 1120,
+      "width": 1010,
+      "height": 260,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_FOOT",
+      "type": "text",
+      "text": "**阅读路径**：左关系→中专题研究MD→右原电影卡\n[[02_给我用的知识凝结库/01_动态链条/00_十元链电影卡片|返回五维总图]]\nF2、F3与本地Obsidian视觉验收均待核",
+      "x": 1530,
+      "y": 1520,
+      "width": 1010,
+      "height": 310,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_REL_0",
+      "type": "text",
+      "text": "### 1 三者｜楚门的世界：因果生本体＋因果克空间＋本体生空间【USER】",
+      "x": 130,
+      "y": 700,
+      "width": 1180,
+      "height": 250,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_REL_1",
+      "type": "text",
+      "text": "### 2 空间克命运｜飞越疯人院：病房门槛与NZ人物接力【USER】",
+      "x": 130,
+      "y": 1000,
+      "width": 1180,
+      "height": 250,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_REL_2",
+      "type": "text",
+      "text": "### 3 门槛反用｜釜山行：同一扇门保护与排除两个方向【AI-H】",
+      "x": 130,
+      "y": 1300,
+      "width": 1180,
+      "height": 250,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_REL_3",
+      "type": "text",
+      "text": "### 4 离场资格｜肖申克的救赎：制度内外不等于心理自主【AI-H】",
+      "x": 130,
+      "y": 1600,
+      "width": 1180,
+      "height": 250,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_REL_4",
+      "type": "text",
+      "text": "### 5 跨主题｜钢琴家：空间克命运＋空间生时间；主维命运，不重复计数【USER新提议】",
+      "x": 130,
+      "y": 1900,
+      "width": 1180,
+      "height": 250,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_FILM_C7",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C07_楚门的世界.md",
+      "x": 2740,
+      "y": 700,
+      "width": 1170,
+      "height": 210,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_FILM_C11",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C11_飞越疯人院.md",
+      "x": 2740,
+      "y": 960,
+      "width": 1170,
+      "height": 210,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_FILM_C12",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C12_釜山行.md",
+      "x": 2740,
+      "y": 1220,
+      "width": 1170,
+      "height": 210,
+      "color": "4"
+    },
+    {
+      "id": "SPACE_FILM_C16",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C16_肖申克的救赎.md",
+      "x": 2740,
+      "y": 1480,
+      "width": 1170,
+      "height": 210,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "SPACE_SPACE_HUB_SPACE_REL_HEAD",
+      "fromNode": "SPACE_HUB",
+      "fromSide": "left",
+      "toNode": "SPACE_REL_HEAD",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_HUB_SPACE_FILM_HEAD",
+      "fromNode": "SPACE_HUB",
+      "fromSide": "right",
+      "toNode": "SPACE_FILM_HEAD",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_HUB_SPACE_RESEARCH",
+      "fromNode": "SPACE_HUB",
+      "fromSide": "bottom",
+      "toNode": "SPACE_RESEARCH",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_RESEARCH_SPACE_INDEX",
+      "fromNode": "SPACE_RESEARCH",
+      "fromSide": "bottom",
+      "toNode": "SPACE_INDEX",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_INDEX_SPACE_FOOT",
+      "fromNode": "SPACE_INDEX",
+      "fromSide": "bottom",
+      "toNode": "SPACE_FOOT",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_REL_HEAD_SPACE_REL_0",
+      "fromNode": "SPACE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "SPACE_REL_0",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_REL_HEAD_SPACE_REL_1",
+      "fromNode": "SPACE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "SPACE_REL_1",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_REL_HEAD_SPACE_REL_2",
+      "fromNode": "SPACE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "SPACE_REL_2",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_REL_HEAD_SPACE_REL_3",
+      "fromNode": "SPACE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "SPACE_REL_3",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_REL_HEAD_SPACE_REL_4",
+      "fromNode": "SPACE_REL_HEAD",
+      "fromSide": "bottom",
+      "toNode": "SPACE_REL_4",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_FILM_HEAD_SPACE_FILM_C7",
+      "fromNode": "SPACE_FILM_HEAD",
+      "fromSide": "bottom",
+      "toNode": "SPACE_FILM_C7",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_FILM_HEAD_SPACE_FILM_C11",
+      "fromNode": "SPACE_FILM_HEAD",
+      "fromSide": "bottom",
+      "toNode": "SPACE_FILM_C11",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_FILM_HEAD_SPACE_FILM_C12",
+      "fromNode": "SPACE_FILM_HEAD",
+      "fromSide": "bottom",
+      "toNode": "SPACE_FILM_C12",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "SPACE_SPACE_FILM_HEAD_SPACE_FILM_C16",
+      "fromNode": "SPACE_FILM_HEAD",
+      "fromSide": "bottom",
+      "toNode": "SPACE_FILM_C16",
+      "toSide": "top",
+      "color": "4"
+    }
+  ]
+}
