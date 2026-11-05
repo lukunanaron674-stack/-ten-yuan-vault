@@ -1763,11 +1763,11 @@
     {
       "id": "TIME_CAUSE_100_GROUP",
       "type": "group",
-      "label": "10｜时间克因果100部研究｜女XN+ZX／男NX+Z",
+      "label": "10｜时间克因果100部研究｜双片优先复核：棕榈泉／微小完美事物地图",
       "x": 15500,
       "y": 0,
       "width": 3220,
-      "height": 8050,
+      "height": 11160,
       "color": "5"
     },
     {
@@ -2049,6 +2049,46 @@
       "width": 2300,
       "height": 250,
       "color": "6"
+    },
+    {
+      "id": "PRIORITY_DUALLOOP_20261105_TOP",
+      "type": "text",
+      "text": "# 优先复核｜双片对照 × 两盒\n【研究目标】检验：时间克因果是否为主？本体或命运是否接管？\n【注意】双字克 / 时间克因果：目前都属于【未证实 H】，不得写成十元 L2 通过。\n读法：左《棕榈泉》／右《微小完美事物地图》→下方共用反证门。",
+      "x": 16590,
+      "y": 8220,
+      "width": 960,
+      "height": 330,
+      "color": "6"
+    },
+    {
+      "id": "PRIORITY_DUALLOOP_20261105_PALM",
+      "type": "text",
+      "text": "## 盒①《棕榈泉》｜本体竞争强【H】\n**优先级：P1；台账编号005；F1=公开剧情梗概级；F2/F3=空**\n**两人为何在循环？**\n- Nyles已经被困很久，不是因为后来爱上Sarah才开始循环。\n- Sarah在追随受伤的Nyles进入洞穴之后被卷入；起始入口≠主动选择永远被困。\n**横向人物站位**：Nyles（以消极重复逃避承担） ⇄ Sarah（愧疚、追问出口、主动研究）。\n**纵向事件 / 变量**\nE1 婚礼→Sarah跟随Nyles入洞→翌日重置；改变：Sarah也被困。\nE2 两人不断相处／冲突→Sarah探究时间机制→掌握逃离方案；改变：主动权移向Sarah。\nE3 Sarah决定离开→Nyles从希望永远留下转为同赴风险→共同尝试出循环；改变：承担未来不确定性。\n【反馈】E2研究成果→E3新行动，不是单纯重置E1。\n**主题候选**：①时间限制外部行动（克因果H）；②本体竞争强：愿不愿负责、选择真实未来；③命运仅弱候选：相遇不自动等于命运架桥。\n**删边反证**：没有循环，Nyles逃避责任、Sarah的羞愧和关系选择还在吗？若仍成立，本体可能优于时间。若只有洞穴规则强制选择，时间较强。\n**状态**：严格时间克因果、严格双字克与第三维正式生克均【未证实】。片中结局保留一定解释空间。\n**来源**：Hulu作品简介；LA Times 2020-07-11导演与结局采访。",
+      "x": 15630,
+      "y": 8730,
+      "width": 1440,
+      "height": 1320,
+      "color": "4"
+    },
+    {
+      "id": "PRIORITY_DUALLOOP_20261105_MAP",
+      "type": "text",
+      "text": "## 盒②《微小完美事物地图》｜本体主候选【H】\n**优先级：P1；台账编号009；F1=公开剧情梗概级；F2/F3=空**\n**两人为何在循环？**\n- Margaret母亲处于生命最后一天；Margaret不愿迈向失去母亲的明天。\n- Mark也在循环，但不是他主动造成；影片把他呈现为帮助Margaret继续前行的同伴。循环的物理成因仍属于叙事设定，不能从“心理意愿”推出真实物理因果。\n**横向人物站位**：Mark（把自己当故事中心、发现小确幸） ⇄ Margaret（隐瞒母亲将逝、抗拒明天）。\n**纵向事件 / 变量**\nE1 重复日里相遇→共同记录小小完美时刻→试图解释循环；改变：共享记忆。\nE2 Mark建议借跨越日期变更线逃离→Margaret临时退缩→Mark发现母亲病情；改变：认识到真正焦点。\nE3 Margaret告别母亲→与Mark形成新承诺→时间终于向下一天流动；改变：从留住过去到接受将来。\n【反馈】E2发现母亲→重释E1的“她为何不走”；E3不是把母亲救活。\n**主题候选**：①本体主候选：接受失去、改变自我；②时间是把自我困局显影的载体；③命运（相遇支持彼此）弱候选，需验证桥的不可替代性。\n**删边反证**：去掉循环，Margaret面对母亲死亡的矛盾仍在，故不能仅靠循环判时间主；需查结局真正回答谁的问题。\n**状态**：严格时间克因果、严格双字克与三角克均【未证实】。\n**来源**：RogerEbert 2021影评；IMDb剧情概要；Amazon Adviser 2021结局解析。",
+      "x": 17210,
+      "y": 8730,
+      "width": 1440,
+      "height": 1320,
+      "color": "5"
+    },
+    {
+      "id": "PRIORITY_DUALLOOP_20261105_CHECK",
+      "type": "text",
+      "text": "## 共用反证与双片结论（暂定）\n**《棕榈泉》**：时间困住两人 → 本体选择改变脱困意愿；【时间/本体竞争，未判主】。\n**《微小完美事物地图》**：Margaret不愿告别母亲 → 反复的一天承载该拒绝 → 本体接受失去才进入明天；【本体主候选强于时间】。\n**不是**「两人均因自己的选择导致循环」，而是「循环下两人做出不同选择」。\n下一门禁：三事件逐片核对、主主题删边测试、第三维主导测试、十元人物主次判定。没有原片/真人感受时F2/F3保持 null。",
+      "x": 16590,
+      "y": 10310,
+      "width": 960,
+      "height": 700,
+      "color": "3"
     }
   ],
   "edges": [
@@ -2624,6 +2664,46 @@
       "fromSide": "bottom",
       "toSide": "top",
       "color": "5"
+    },
+    {
+      "id": "PRIORITY_DUALLOOP_20261105_E1",
+      "fromNode": "PRIORITY_DUALLOOP_20261105_TOP",
+      "fromSide": "bottom",
+      "toNode": "PRIORITY_DUALLOOP_20261105_PALM",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "优先样本①",
+      "color": "4"
+    },
+    {
+      "id": "PRIORITY_DUALLOOP_20261105_E2",
+      "fromNode": "PRIORITY_DUALLOOP_20261105_TOP",
+      "fromSide": "bottom",
+      "toNode": "PRIORITY_DUALLOOP_20261105_MAP",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "优先样本②",
+      "color": "5"
+    },
+    {
+      "id": "PRIORITY_DUALLOOP_20261105_E3",
+      "fromNode": "PRIORITY_DUALLOOP_20261105_PALM",
+      "fromSide": "bottom",
+      "toNode": "PRIORITY_DUALLOOP_20261105_CHECK",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "对照反证",
+      "color": "3"
+    },
+    {
+      "id": "PRIORITY_DUALLOOP_20261105_E4",
+      "fromNode": "PRIORITY_DUALLOOP_20261105_MAP",
+      "fromSide": "bottom",
+      "toNode": "PRIORITY_DUALLOOP_20261105_CHECK",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "对照反证",
+      "color": "3"
     }
   ],
   "metadata": {
@@ -2659,6 +2739,19 @@
       "F3": 0,
       "layout": "existing_group10_three_columns",
       "visual_status": "WAIT_LOCAL_UI"
+    },
+    "priority_dualloop_review": {
+      "tag": "PRIORITY_DUALLOOP_20261105",
+      "film_ids": [
+        5,
+        9
+      ],
+      "date": "2026-11-05",
+      "relation_status": "H_UNVERIFIED",
+      "double_ke": "UNVERIFIED",
+      "F2": null,
+      "F3": null,
+      "ui": "WAIT_LOCAL_UI"
     }
   }
 }
