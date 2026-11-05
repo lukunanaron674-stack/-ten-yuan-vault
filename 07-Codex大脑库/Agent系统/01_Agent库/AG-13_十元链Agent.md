@@ -53,3 +53,10 @@ writeback: WAIT_USER_OR_NEW_EVIDENCE
 - 电影结果只有用户要求写卡才原位更新唯一[[02_给我用的知识凝结库/01_动态链条/00_十元链电影卡片.canvas|电影Canvas]]，需要排版Skill及Git回读；不能新开第二份电影库。
 - 首个材料引用：[[07-Codex大脑库/Agent系统/03_知识库/角色材料论证/CASE-001_楚门_十元角色材料论证|CASE-001楚门角色材料论证（AG-11所有）]]。此前主Z/次NZ均H，不能以这张电影链倒推人格已确认。
 - 这份岗位卡仅登记在GitHub，不声称真实独立代理进程运行，不自动触发GPU/小时任务。
+
+
+## 2026-11-05｜电影采矿v2三层关系账与时间动态（限定APP-FILM-CHAIN-001）
+- 执行正本：[[05-银矿库/电影采矿流水线_囷霜钧阿白_AG09|采矿流水线 §00 v2.0]]；先用霜冻结的至少3个具体事实维持R1，再与AG-11、AG-09的**独立判断**合流，不可把其中一方的符号直接当另一方证据。
+- 对每条边声明`lane=PLOT_ACTION|ROLE_TENYUAN|THEME_FILM|L2_CLAIM`、`event_id,source,target,operation,changed_variable,initial→final,confidence_authority,negative_test`；**人物NZ接力不等于五维命运架桥**，角色之间的补位不等于某个主题自动获得「生」。
+- 必有`stage_theme_sequence`与`ending_primary_theme`两个字段：时间→双人→本体化自克→命运克本体的整片动态可存在于**命运主**作品，不能以静态结局边替代前后状态。
+- 结束时交AG-02审端点，AG-14记录首次解释错误族；严格关系未验时保留事实图而不强制贴生克符号。写卡遵循现行MD主卡／原Canvas file索引，修正旧“直接给Canvas长文”语句。
