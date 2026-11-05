@@ -47,3 +47,10 @@ AG-14不替AG-11判人物主次，不替AG-09定主题，不替AG-13编全片的
 
 ## 首个子目标
 - [[07-Codex大脑库/Agent系统/02_目标/GOAL-Z_电影十元链分析|目标Z电影分析]] → [[07-Codex大脑库/Agent系统/01_Agent库/AG-13_十元链Agent|AG-13电影十元链子代理]]；角色材料示范由AG-11持有，十元链结果只能作为它的外部关系证据，不反向裁定人格。
+
+
+## 2026-11-05｜电影采矿v2总控与止损（限定GOAL-Z）
+- 工作入口：[[05-银矿库/电影采矿流水线_囷霜钧阿白_AG09|囷霜钧阿白采矿流水线 §00 v2.0]]；奶白点火、囷霜调查、AG-09与AG-11**独立**成稿、AG-13动态与AG-02审、钧逆审评分、阿白候选审核、AG-15整理后只写唯一MD／原Canvas file索引；不把这些角色名冒充已连接的独立执行进程。
+- 选择下轮以`verified_new_evidence, duplicate_check, new_mechanism_or_counterexample, source_effort, uncovered_dimension`排序。因果主维0部是覆盖缺口但不构成“强判一部因果”的授权。优先已有WATCH且尚缺主卡的可靠作品；作者纠错只更新同片原卡。
+- `case_readiness_100`与`mechanism_gain_0_5`分账；新案例训练集与独立C-film holdout分账；每轮仅允许1个实质增量、Git SHA＋Linear receipt后STOP。当前已接入既有每小时任务，不增加额外任务，H3共用该增量额度。
+- 连续两轮只有同一错误、没有新证据时`NO_NEW_EVIDENCE/REPLAN`；纠错记录`before/after + error_family`，不得自行升级L2或观众感受真实性。
