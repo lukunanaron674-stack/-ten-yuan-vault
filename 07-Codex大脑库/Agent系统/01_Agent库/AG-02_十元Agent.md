@@ -118,3 +118,9 @@
 - R3 的 DONE：方法来源可查、符合既有对象、只提炼机制不复制版权角色／具体镜头内容，明确一个单变量与负控。
 - R4 的 DONE：有 286 可读 MATCH_PACKET；H3 是否 READY 由 296/293/AG-04/AG-11、286 导演和 216 runtime 逐门核对，没过就是 WAIT_ASSET/WAIT_USER/NO_MATCH，不擅自跑。
 - 没有真人盲评时 `human_feeling_profile=null`、`can_update_canonical=false`。十元覆盖数量不是艺术分。单次消费完成便 STOP，不为每小时 Tick 重开研究总框。
+
+
+## 2026-11-05｜电影采矿v2四轨关系审计（限定APP-FILM-CHAIN-001）
+- 执行正本：[[05-银矿库/电影采矿流水线_囷霜钧阿白_AG09|采矿流水线 §00 v2.0]]。审核AG-13各边时先分`PLOT_ACTION`剧情事实、`ROLE_TENYUAN`人物间感受、`THEME_FILM`单片五维解释、`L2_CLAIM`全局规则候选；**只有L2_CLAIM需要严格机制合法性审计并禁止越权解冻**。
+- 每边独立给`SUPPORTED_FILM_READING / RULE_CONFLICT / NOT_ESTABLISHED / INSUFFICIENT_EVIDENCE`以及合法端点、来源事件、去第三因素/删边反证。USER的电影级「命运生时间」可作为作品经验保留，若与全局正本冲突标`RESEARCH_CONFLICT`，不删除、不自动晋升L2。
+- 对旧三元文件与历史“完成入库”评语标`LEGACY_ONLY`，F1/F2/F3与C-film等级分离；即使钧100分也不能解除Z/ZN冻结或授予观众人评。
