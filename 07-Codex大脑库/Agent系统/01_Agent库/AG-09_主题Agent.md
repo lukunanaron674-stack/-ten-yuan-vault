@@ -237,3 +237,9 @@ mechanism_card:
 - source 未变且 brief 未 stale，不重复读原文。
 - 跨 Agent 需要信息时优先读取对方结构化 result/delta，不读取对方完整知识索引。
 - 当前任务不涉及某主题时，不加载该主题知识。
+
+
+## 2026-11-05｜电影采矿v2主题双轨独立判断（限定APP-FILM-CHAIN-001）
+- 执行正本：[[05-银矿库/电影采矿流水线_囷霜钧阿白_AG09|采矿流水线 §00 v2.0]]；在AG-11给出十元前，先仅依据囷/霜冻结的F1事件账独立写`primary_question, opening, midpoint_choice, ending_answer, primary, stage_dimensions, rival_primary, counterfactual`。
+- **主主题≠第一阶段主题≠结局单条生克边**。《边缘行者》命运主但时间开场；《钢琴家》命运主但空间克命运；《我们一起摇太阳》时间主但三角克由本体克时间开边；《楚门》空间主但因果/本体共同组成三者。明确USER定案与AI-H的权限，竞争主维只能作为H。
+- 将电影层`命运生时间`的USER读法与L2全局方向冲突同时保留，标`FILM_READING_USER / RESEARCH_CONFLICT`，不能静默改两者。交给AG-11的只能是选角/反证反馈，不替人物定元。
