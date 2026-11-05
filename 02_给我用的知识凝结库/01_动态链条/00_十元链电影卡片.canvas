@@ -3,28 +3,28 @@
     {
       "id": "GROUP_TENYUAN_MOVIE_CASES",
       "type": "group",
-      "label": "南｜19部电影主卡＋1张机制卡（单一案例库）",
+      "label": "南｜按主主题：时间／本体／空间／因果／命运＋待判｜19部电影＋1机制卡",
       "x": -2050,
       "y": 4200,
       "width": 4100,
-      "height": 6100,
+      "height": 10299,
       "color": "4"
     },
     {
       "id": "TENYUAN_MOVIE_CASES_INDEX",
       "type": "text",
-      "text": "# 🎬 十元链电影卡片库｜左边电影、右边分类思考\n**左：19部电影＋《钢琴家》机制子卡｜右：按排版Skill整理的主导分类与判题卡。**\n**三轴：主导（主题／人物／双层） × 构型（三者／三角克／架桥等） × 主题×人物（等于／共振／对冲／转化）。**\n**作者修正：⑤《情书》主题主；②《超时空辉耀姬！》主题＋双人物核；⑥《你的名字。》主题＝人物。**\n[[00_十元链电影卡片_研究详档#CURRENT-CLASSIFICATION-20261103|📊 19部电影三轴分类完整表（含作者确认与AI候选）]]\n新增⑳《前目的地》：本体主；双自我闭环，时间克因果／因果生本体／命运克本体【AG-09 H】。\\n下方电影短卡看人物→事件→关系→回收；全部证据在 [[00_十元链电影卡片_研究详档|研究详档]]。",
+      "text": "# 🎬 电影主库｜先按五大主主题找，再看人物关系\n**①时间 7｜②本体 4｜③空间 4｜④因果 1｜⑤命运 1｜⑥待判 2** ＝19部主卡；另有《钢琴家》④号附属机制卡。\n**每片只放一个主主题入口**；人物十元、双补／自克、五维生克、桥／三角只是电影卡内部的次级分析，绝不再开重复卡。\n**【USER】为已确认影片主题关系；【H】只表示主主题暂归，不等于作者锁定整片主维。**\n《边缘行者》暂归时间：**时间→双人→本体化自克→环境命运克本体→解脱**，主维待最终复核。\n[[00_十元链电影卡片_研究详档#CURRENT-PRIMARY-THEME-INDEX-20261105|📖 19部电影主主题完整索引及暂归原因]]",
       "x": -1890,
       "y": 4400,
       "width": 3780,
-      "height": 320,
+      "height": 350,
       "color": "4"
     },
     {
       "id": "REL_MOTHER_CARD_01_DOUBLE_COMPLEMENT",
       "type": "text",
-      "x": -1880,
-      "y": 5100,
+      "x": 0,
+      "y": 7283,
       "width": 870,
       "height": 823,
       "color": "5",
@@ -34,7 +34,7 @@
       "id": "REL_MOTHER_CARD_02_RECURSIVE_COMPLEMENT",
       "type": "text",
       "x": -940,
-      "y": 5100,
+      "y": 5944,
       "width": 870,
       "height": 630,
       "color": "6",
@@ -43,8 +43,8 @@
     {
       "id": "REL_MOTHER_CARD_03_KE_BU_SHENG",
       "type": "text",
-      "x": 0,
-      "y": 5100,
+      "x": -940,
+      "y": 8918,
       "width": 870,
       "height": 630,
       "color": "3",
@@ -53,8 +53,8 @@
     {
       "id": "REL_MOTHER_CARD_04_LATENT_COMPLEMENT_RELEASE",
       "type": "text",
-      "x": 940,
-      "y": 5100,
+      "x": -940,
+      "y": 9624,
       "width": 870,
       "height": 630,
       "color": "3",
@@ -64,7 +64,7 @@
       "id": "REL_MOTHER_CARD_05_DUAL_BRIDGE_LOVELETTER",
       "type": "text",
       "x": -1880,
-      "y": 6063,
+      "y": 5075,
       "width": 870,
       "height": 630,
       "color": "5",
@@ -73,8 +73,8 @@
     {
       "id": "REL_MOTHER_CARD_06_YOUR_NAME_RETRO_RESCUE",
       "type": "text",
-      "x": -940,
-      "y": 6063,
+      "x": -1880,
+      "y": 11834,
       "width": 870,
       "height": 630,
       "color": "5",
@@ -83,8 +83,8 @@
     {
       "id": "REL_MOTHER_CARD_07_TRUMAN_WORLD_SHELL_EXIT",
       "type": "text",
-      "x": 0,
-      "y": 6063,
+      "x": -1880,
+      "y": 10729,
       "width": 870,
       "height": 630,
       "color": "2",
@@ -93,8 +93,8 @@
     {
       "id": "TENYUAN_FILM_WATCH007_TOKYO_GODFATHERS_2003",
       "type": "text",
-      "x": 940,
-      "y": 6063,
+      "x": -1880,
+      "y": 12939,
       "width": 870,
       "height": 630,
       "color": "5",
@@ -104,16 +104,16 @@
       "id": "TENYUAN_FILM_WATCH005_GROUNDHOG_DAY_1993",
       "type": "text",
       "text": "## ⑨《土拨鼠之日》｜主题双克【USER】\n**叙事主导【USER】**：围绕菲尔这个单一主角讲五维主题。主角是讲述视角与事件载体，主题双克才是整部故事的组织关系。\n**五维主题：两条克制边，不是三角克**\n```text\n时间〔XN＋Z〕──克→ 因果〔ZX＋NX〕\n  2月2日反复重置：行动后果难以跨日保留\n                    ↓（故事推进）\n本体〔ZN＋X〕──克→ 时间〔XN＋Z〕\n  主体转变：不再把重复日只用于控制他人\n```\n**主题事件说明【H】**：菲尔无法以重复试错取得真正关系；救助流浪老人仍无法阻止死亡，使他看见时间的边界。晚期生活方式发生变化，但不声称善举已被证实为循环解除机制。\n\n**人物关系（另层）【USER】**\n菲尔 XN＋ZX；丽塔 Z。\n```text\nXN克ZX〔自克〕 → ZX生ZN → ZN补入\n                     ↓\n         菲尔XN ↔ 丽塔Z 双向回收\n```\n**区分**：主题双克 ≠ 人物自克／双补；单主角承载主题 ≠ 人物性格主导叙事。XN没有转为人格Z，仅改变作用方向。\n**证据**：两条主题关系【USER】，具体逐镜F2及真人感受F3待核。\n\n[[00_十元链电影卡片_研究详档#CARD-TENYUAN_FILM_WATCH005_GROUNDHOG_DAY_1993|📖 展开完整论证与历史修正]]",
-      "x": -1880,
-      "y": 6833,
+      "x": -940,
+      "y": 5075,
       "width": 870,
       "height": 797
     },
     {
       "id": "TENYUAN_FILM_WATCH011_MILLENNIUM_ACTRESS_SOUL_2001",
       "type": "text",
-      "x": -940,
-      "y": 6833,
+      "x": 0,
+      "y": 5075,
       "width": 870,
       "height": 630,
       "color": "5",
@@ -122,8 +122,8 @@
     {
       "id": "TENYUAN_FILM_WATCH027_CUCKOOS_NEST_SOUL_1975",
       "type": "text",
-      "x": 0,
-      "y": 6833,
+      "x": -1880,
+      "y": 8918,
       "width": 870,
       "height": 630,
       "color": "5",
@@ -132,8 +132,8 @@
     {
       "id": "TENYUAN_FILM_WATCH026_TRAIN_TO_BUSAN_2016",
       "type": "text",
-      "x": 940,
-      "y": 6833,
+      "x": 0,
+      "y": 8918,
       "width": 870,
       "height": 630,
       "text": "## ⑫《釜山行》｜一扇车厢门\n**空间主候选／本体次候选【H】**\n石宇 X?→N?/ZN?｜秀安 ZN?｜尚华 N?\n\n```text\n石宇先保自己女儿 → 感染逼近\n            ↓\n尚华护送救援 ↔ 安全车厢拒开门\n            ↓\n尚华挡人群／石宇承担代价\n            ↓\n秀安的歌声使士兵确认幸存者\n```\n**未审**：父亲没有在结尾亲耳听见歌声。\n\n[[00_十元链电影卡片_研究详档#CARD-TENYUAN_FILM_WATCH026_TRAIN_TO_BUSAN_2016|📖 展开完整论证与历史修正]]"
@@ -142,7 +142,7 @@
       "id": "TENYUAN_FILM_WATCH029_AMERICAN_PSYCHO_2000",
       "type": "text",
       "x": -1880,
-      "y": 7770,
+      "y": 7283,
       "width": 870,
       "height": 630,
       "text": "## ⑬《美国精神病人》｜自白失效\n**本体主、因果次【USER】**\n贝特曼 ZN?＋X?；XZ压ZN【USER/H】\n\n```text\n名片、职位竞争 → 身份同质\n          ↓\n暴力试图证明自身独特\n          ↓\n向律师自白 → 被当玩笑、认错人\n          ↓\n社会外壳继续，因果未结算\n```\n**边界**：家属／法律双克并非原片已实现。\n\n[[00_十元链电影卡片_研究详档#CARD-TENYUAN_FILM_WATCH029_AMERICAN_PSYCHO_2000|📖 展开完整论证与历史修正]]"
@@ -151,8 +151,8 @@
       "id": "TENYUAN_FILM_WATCH014_BEFORE_SUNRISE_1995",
       "type": "text",
       "text": "## ⑭《爱在黎明破晓前》｜有限一夜\n**时间主／命运次【H】**\n杰西 Z?｜席琳 NZ?/Z?（未锁）\n\n```text\n火车邀请 → 席琳自己选择下车\n          ↓\n维也纳长夜：谈话、试探、接近\n          ↓\n清晨分别、约定半年后再见\n```\n**未证**：谈话不等于双补；约定不等于兑现。\n**训练组**：旧答案污染，不计独立成绩。\n\n[[00_十元链电影卡片_研究详档#CARD-TENYUAN_FILM_WATCH014_BEFORE_SUNRISE_1995|📖 展开完整论证与历史修正]]",
-      "x": -940,
-      "y": 7770,
+      "x": -1880,
+      "y": 5777,
       "width": 870,
       "height": 630,
       "color": "4"
@@ -160,8 +160,8 @@
     {
       "id": "TENYUAN_FILM_WATCH020_DOCTOR_ZHIVAGO_1965",
       "type": "text",
-      "x": 0,
-      "y": 7770,
+      "x": 940,
+      "y": 7283,
       "width": 870,
       "height": 630,
       "color": "5",
@@ -231,7 +231,7 @@
       "id": "TENYUAN_FILM_WATCH013_SHAWSHANK_REDEMPTION_1994",
       "type": "text",
       "x": 940,
-      "y": 7770,
+      "y": 8918,
       "width": 870,
       "height": 901,
       "color": "3",
@@ -250,7 +250,7 @@
     {
       "id": "FILM_CLASSIFICATION_HUB_HEADER",
       "type": "text",
-      "text": "# 🎬 故事分类判断器｜先问「谁主导？」\n**A整片叙事主导 → B主题关系构型＋D人物配置 → C主题×人物作用 → 事件/反证。**\n左侧是原电影卡，右侧是分类标准、区别和典型影片。**双人物核≠主题与人物双层共主。**\n[[00_十元链电影卡片_研究详档#分类决策树｜先总、再构型、再对应、最后反证|📖 完整判定规则]]　[[00_十元链电影卡片_研究详档#CURRENT-CLASSIFICATION-20261103|📊 16部分类表]]",
+      "text": "# 🧭 次级分类工具｜主入口在南区，按五大主主题查找\n**第一层只认：时间／本体／空间／因果／命运；不明者待判。**\n本区A叙事主导、B主题关系构型、C跨层映射、D人物配置，只在进入单片之后使用，**不参与电影主卡一级排序**。\n[[00_十元链电影卡片_研究详档#CURRENT-PRIMARY-THEME-INDEX-20261105|📖 主主题电影导航]]",
       "x": -8260,
       "y": -1570,
       "width": 5140,
@@ -450,8 +450,8 @@
     {
       "id": "TENYUAN_FILM_WATCH004_INTERSTELLAR_2014",
       "type": "text",
-      "x": -1880,
-      "y": 8811,
+      "x": 0,
+      "y": 5777,
       "width": 870,
       "height": 1031,
       "color": "5",
@@ -490,7 +490,7 @@
     {
       "id": "TENCHAIN_UNIFIED_HUB",
       "type": "text",
-      "text": "# ✦ 十元链｜唯一日常 Canvas\n**中心 → 四周分类**\n\n↑ 北｜研究状态 / 三步法 / 代理职责\n← 西｜五维主题关系与故事分类\n→ 东｜动态链 / 关系机制 / 12种图形\n↓ 南｜19部电影＋1机制卡\n\n**阅读原则**：整片主题 ≠ 人物十元 ≠ 严格生克补；具体事件才是可复用零件。\n**本图是阅读入口，不替代L2理论正本。**",
+      "text": "# ✦ 十元链｜唯一日常 Canvas\n**中心 → 四周分类**\n\n↑ 北｜研究状态 / 三步法 / 代理职责\n← 西｜五维主题关系与故事分类\n→ 东｜动态链 / 关系机制 / 12种图形\n↓ 南｜按五大主主题排列19部电影＋1机制卡\n\n**阅读原则**：整片主题 ≠ 人物十元 ≠ 严格生克补；具体事件才是可复用零件。\n**本图是阅读入口，不替代L2理论正本。**",
       "x": -1020,
       "y": -435,
       "width": 2040,
@@ -761,7 +761,7 @@
       "id": "TENYUAN_FILM_WATCH024_DEAD_POETS_SOCIETY_1989",
       "type": "text",
       "x": -940,
-      "y": 8811,
+      "y": 12939,
       "width": 870,
       "height": 1220,
       "color": "4",
@@ -771,8 +771,8 @@
       "id": "TENYUAN_FILM_EDGERUNNERS_S1_AG09_2022",
       "type": "text",
       "text": "## ⑲《赛博朋克：边缘行者》S1｜时间→双人→本体化自克→命运克本体【USER】\n**整片动态链【USER最新判读，优先于旧版静态主题结构】**\n```text\n① 时间〔XN＋Z〕主题／双人关系\n       大卫 Z ───── 露西 XN\n               ↓\n② 双人各自「本体化」并发生自克／互克\n       Z 追求 ZN   ｜   XN 追求 X\n     追求的本体方向对彼此原有存在形成克制\n               ↓  两人皆抵达各自本体化选择\n③ 大环境：命运〔XZ＋NZ〕 ─克→ 本体〔ZN＋X〕\n               ├── NZ 克 X ＝ 死亡【USER·本片】\n               └── XZ 克 ZN＝ 牺牲【USER·本片】\n               ↓\n④ 解脱与不可逆回收：大卫牺牲/死亡；\n   露西独自登月，但共同未来无法保留\n```\n**核心区别**：命运克本体是终局的**外部环境克制**，不是整片从头到尾唯一主题；前段从时间关系打开双人物，高潮是**本体化—自克/互克**，终段受克后以**解脱**结算。\n**角色关系【USER】**：男Z、女XN；Z→ZN、XN→X是各自追求方向，**并不自动改写稳定人格主元**。两人追求彼此相克【USER电影读法】，严格L2方向/端点仍需AG-02逐边审。\n**事件解释【H】**：大卫承接曼恩的道路、强化义体并救露西；露西从登月愿望走向保护大卫。大卫的死亡可同时体现牺牲；露西并未死亡，解脱不是两人一起获救。\n**证据**：【USER】动态顺序与十元主题解释；F1剧情辅助，F2逐镜/F3真人反应未验；不从这里创造「X克Z」等全局定律。\n[[00_十元链电影卡片_研究详档#CASE-AG09-EDGERUNNERS-S1-2022|📖 作者最新链＋历史判读与逐段反证]]",
-      "x": 0,
-      "y": 8811,
+      "x": 940,
+      "y": 5075,
       "width": 870,
       "height": 1090,
       "color": "5"
@@ -781,11 +781,71 @@
       "id": "TENYUAN_FILM_WATCH006_PREDESTINATION_2014",
       "type": "text",
       "text": "## ⑳《前目的地》（2014）｜AG-09 本体主【H】\n**A叙事主导【H】**：主题主导／单人多时相承载。不同身份是同一人的不同时段；不能把每个身份误算独立人物核。\n**L1五维主次【H】**：**本体〔ZN＋X〕主**；因果〔ZX＋NX〕、命运〔XZ＋NZ〕次；时间〔XN＋Z〕是关键压力机制，空间暂为背景。\n**导演一手**：Peter Spierig称本片核心是“发现自己的身份、目的与自我”，非单纯追凶或穿越奇观。\n\n```text\n时间 ─克→ 因果【H】：穿越封闭起源，首因无法线性追溯\n             │ 但具体行为及后果仍可追踪\n             └─生→ 本体【H】：同一人是自己的父母与孩子\n命运 ─克→ 本体【H】：酒保追杀未来的炸弹客自己\n                  ↓ 试图摆脱预定身份，却未获证实\n```\n**L2横纵事件网络（T11双回环＋T12自我镜像候选）**\n```text\nA01 1945｜酒保携婴儿 ──送至孤儿院──→ Jane\n ↑                                    │\n └──1964医院←──Jane生孩子←──1963 John爱上Jane\n                  ↑                   │\n                  └──同一个人的不同时相──┘\nA02 1970｜John向酒保讲身世→酒保带他回1963\n                  ↓ 身份信息翻转\nA03 1975｜酒保追炸弹客→发现是未来自己→开枪\n                  ↓ 反证：未来是否真的改变？【待核】\n结算：自我出生闭环成立；炸弹客未来仍有悬念\n```\n**L3具体零件**：E01弃婴→E02恋爱怀孕→E03孩子被劫／成为John→E04复遇Jane→E05招募特工／劫婴回送→E06重伤换脸→E07面对未来炸弹客／开枪。\n**B主题构型【H】**：两套自指回环＋三条主题压力边汇聚，不属于已确认“三角克／架桥”。**C跨层【H】**：主题与人物身份高度同构。**D【事实】**：一个人占据多个时相角色。\n**证据门禁**：F1官方剧情与导演访谈；F2原片逐镜/F3真人感受待核。角色十元主次由AG-11另判；没有已锁定的人物克补关系。\n\n[[00_十元链电影卡片_研究详档#CASE-AG09-PREDESTINATION-2014|📖 ⑳号卡：完整事实链、A/B/C/D分类、事件论证与反事实]]",
-      "x": 940,
-      "y": 8811,
+      "x": -940,
+      "y": 7283,
       "width": 870,
       "height": 1160,
       "color": "2"
+    },
+    {
+      "id": "TENCHAIN_MAIN_THEME_GROUP_TIME",
+      "type": "text",
+      "text": "# ① 时间｜XN＋Z｜7部\n前段时间关系与阶段选择；《边缘行者》《辉耀姬》暂归本区，整片主维待作者复核",
+      "x": -1880,
+      "y": 4840,
+      "width": 3690,
+      "height": 170,
+      "color": "5"
+    },
+    {
+      "id": "TENCHAIN_MAIN_THEME_GROUP_ONTOLOGY",
+      "type": "text",
+      "text": "# ② 本体｜ZN＋X｜4部\n身份、自我与存续；《摇太阳》《日瓦戈》暂定本体主，仍需主次裁决",
+      "x": -1880,
+      "y": 7048,
+      "width": 3690,
+      "height": 170,
+      "color": "6"
+    },
+    {
+      "id": "TENCHAIN_MAIN_THEME_GROUP_SPACE",
+      "type": "text",
+      "text": "# ③ 空间｜X并Z＋N｜4部\n空间限制归属及自由；《钢琴家》子机制④附于原③卡下，不算第二部",
+      "x": -1880,
+      "y": 8683,
+      "width": 3690,
+      "height": 170,
+      "color": "4"
+    },
+    {
+      "id": "TENCHAIN_MAIN_THEME_GROUP_CAUSALITY",
+      "type": "text",
+      "text": "# ④ 因果｜ZX＋NX｜1部\n《楚门》因果贯穿并发出两条主题边；主维暂归，作者尚未单独锁",
+      "x": -1880,
+      "y": 10494,
+      "width": 3690,
+      "height": 170,
+      "color": "2"
+    },
+    {
+      "id": "TENCHAIN_MAIN_THEME_GROUP_FATE",
+      "type": "text",
+      "text": "# ⑤ 命运｜XZ＋NZ｜1部\n《你的名字。》命运生时间【USER作品读法】；命运主维是暂归候选",
+      "x": -1880,
+      "y": 11599,
+      "width": 3690,
+      "height": 170,
+      "color": "3"
+    },
+    {
+      "id": "TENCHAIN_MAIN_THEME_GROUP_PENDING",
+      "type": "text",
+      "text": "# ⑥ 主主题待判｜2部\n《东京教父》《死亡诗社》有多种竞争主维，不用场景/悲剧硬猜",
+      "x": -1880,
+      "y": 12704,
+      "width": 3690,
+      "height": 170,
+      "color": "1"
     }
   ],
   "edges": [
@@ -1065,6 +1125,61 @@
       "F2": null,
       "F3": null,
       "local_ui": "WAIT_LOCAL_UI"
+    },
+    "main_theme_film_layout_20261105": {
+      "authority": "CASE_INDEX_L5_AI_TEMPORARY_NOT_MAIN_THEME_L2",
+      "order": [
+        "TIME",
+        "ONTOLOGY",
+        "SPACE",
+        "CAUSALITY",
+        "FATE",
+        "PENDING"
+      ],
+      "main_film_count": 19,
+      "mechanism_subcard_count": 1,
+      "film_ids_by_class": {
+        "time": [
+          "REL_MOTHER_CARD_05_DUAL_BRIDGE_LOVELETTER",
+          "TENYUAN_FILM_WATCH005_GROUNDHOG_DAY_1993",
+          "TENYUAN_FILM_WATCH011_MILLENNIUM_ACTRESS_SOUL_2001",
+          "TENYUAN_FILM_EDGERUNNERS_S1_AG09_2022",
+          "TENYUAN_FILM_WATCH014_BEFORE_SUNRISE_1995",
+          "TENYUAN_FILM_WATCH004_INTERSTELLAR_2014",
+          "REL_MOTHER_CARD_02_RECURSIVE_COMPLEMENT"
+        ],
+        "ontology": [
+          "TENYUAN_FILM_WATCH029_AMERICAN_PSYCHO_2000",
+          "TENYUAN_FILM_WATCH006_PREDESTINATION_2014",
+          "REL_MOTHER_CARD_01_DOUBLE_COMPLEMENT",
+          "TENYUAN_FILM_WATCH020_DOCTOR_ZHIVAGO_1965"
+        ],
+        "space": [
+          "TENYUAN_FILM_WATCH027_CUCKOOS_NEST_SOUL_1975",
+          "REL_MOTHER_CARD_03_KE_BU_SHENG",
+          "TENYUAN_FILM_WATCH026_TRAIN_TO_BUSAN_2016",
+          "TENYUAN_FILM_WATCH013_SHAWSHANK_REDEMPTION_1994"
+        ],
+        "causality": [
+          "REL_MOTHER_CARD_07_TRUMAN_WORLD_SHELL_EXIT"
+        ],
+        "fate": [
+          "REL_MOTHER_CARD_06_YOUR_NAME_RETRO_RESCUE"
+        ],
+        "pending": [
+          "TENYUAN_FILM_WATCH007_TOKYO_GODFATHERS_2003",
+          "TENYUAN_FILM_WATCH024_DEAD_POETS_SOCIETY_1989"
+        ]
+      },
+      "user_locked_theme_edge_not_equal_primary": true,
+      "notable_pending_note": "Edgerunners and Kaguya enter TIME as first-entry candidates only; not whole-film USER locked; Your Name FATE source is author film relation but FATE primary pending check",
+      "group_count": 6,
+      "child_attachment": {
+        "child": "REL_MOTHER_CARD_04_LATENT_COMPLEMENT_RELEASE",
+        "parent": "REL_MOTHER_CARD_03_KE_BU_SHENG"
+      },
+      "status": "STRUCTURAL_PASS_LOCAL_UI_PENDING",
+      "updated": "2026-11-05"
     }
   }
 }
