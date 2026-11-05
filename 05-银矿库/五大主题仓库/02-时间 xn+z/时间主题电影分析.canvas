@@ -1767,7 +1767,7 @@
       "x": 15500,
       "y": 0,
       "width": 3220,
-      "height": 2200,
+      "height": 8050,
       "color": "5"
     },
     {
@@ -1839,6 +1839,166 @@
       "width": 850,
       "height": 350,
       "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_HUB",
+      "type": "text",
+      "text": "# 第11区｜时间克因果：五片×第三主题×人物\n**母题**：时间〔XN＋Z〕—克→因果〔ZX＋NX〕【USER研究目标】\n**阅读**：左→右看「纯克／克中生／第三维介入」；上→下看事件、人物和结局回收。\n**证据**：F1公开剧情梗概核对；F2逐镜=0／F3人评=0；五维额外关系多为【H】，不升L2。",
+      "x": 16630,
+      "y": 2380,
+      "width": 940,
+      "height": 350,
+      "color": "6"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_TYPE_A",
+      "type": "text",
+      "text": "## ① 单边克制／循环清零｜T01＋T11\n**判据**：行动已产生外部结果B；时间重置使B不能持续。\n- 第三维：可有本体动机，不必硬凑第三条主题边。\n- 对照片：《惩罚循环》。\n- 不能推出：每次循环都自动克本体。",
+      "x": 15590,
+      "y": 2900,
+      "width": 920,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_TYPE_B",
+      "type": "text",
+      "text": "## ② 克中生／反馈改道｜T11＋T05/T09\n**判据**：单轮窗口克行动，但记忆、线索、协作跨轮保留，形成新结果。\n- 第三维【H】：空间（位置制约）或本体（身份抉择）。\n- 对照：《河流》《源代码》。\n- 「时间限制局部因果」≠「整片时间单向克因果」。",
+      "x": 16630,
+      "y": 2900,
+      "width": 940,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_TYPE_C",
+      "type": "text",
+      "text": "## ③ 第三主题介入／关系再组织｜T07＋T12/T03\n**判据**：旧结果已失；第三主题让认知或新选择得以发生，**不逆转旧结果**。\n- 《情书》：命运架桥【USER】。\n- 《爱在日落黄昏时》：本体/人生选择【H】，不是已证的架桥。\n- 桥接需做「移除桥后是否断连」反证。",
+      "x": 17690,
+      "y": 2900,
+      "width": 920,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_PENALTY",
+      "type": "text",
+      "text": "## 01《惩罚循环》｜单克强候选\n**结构**：时间—克→因果；第三主题「本体：复仇执念」【H/尚非三角】\n**人物**：岩森淳（复仇行动者）／溝口（被复仇对象）／唯（逝者与动机），**不是预设男女双主关系**。\n```text\nE1 唯遇害 → 淳计划复仇 → 杀死溝口\n                                │ 次日重置\nE2 淳醒来 → 溝口再次活着 → 永久结果归零\n                                │ 行动重复\nE3 淳再复仇 → 时间再归零 → 行为与执念继续\n【回流】E3 ──→ E2（目标复活，复仇须重做）\n```\n**变量**：外部「敌人已死」不能保留；内心变化尚待逐片核。\n**反证**：若不发生重置，首次复仇结果能否持续？\n**出处**：JFDB《PENALTY LOOP》／Japan Foundation。",
+      "x": 15590,
+      "y": 3530,
+      "width": 920,
+      "height": 800,
+      "color": "1"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_RIVER",
+      "type": "text",
+      "text": "## 02《河流》｜克时间窗，但合作生因果\n**结构**：时间—克→短时行动；记忆／多人协作—生→新求解【事件层H】。\n**第三维**：空间（每轮回到原位置、往返距离），是可见承载机制；不自动升「空间主」。\n**人物**：旅馆员工美琴（Mikoto）＋员工/客人群像；不能硬套一男一女双主。\n```text\nE1 美琴回旅馆 → 两分钟届满 → 回到河边\n                                  │记忆保留\nE2 员工/客人察觉 → 分头沟通 → 各种计划受距离限制\n                                  │知识累计\nE3 员工与客人协作 → 跨循环排查 → 形成脱困方案\n【回流】E3的线索 ──→ 下一轮E2（人数/信息状态变了）\n```\n**变量**：位置和物件重置，记忆不归零。\n**反证**：去掉距离/回到原位，是否仍需合作？\n**出处**：BFI《10 great Japanese time-travel films》及《River》影评。",
+      "x": 16630,
+      "y": 3530,
+      "width": 940,
+      "height": 850,
+      "color": "4"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_LOVE",
+      "type": "text",
+      "text": "## 04《情书》｜第三主题命运架桥【USER】\n**主题**：时间—克→过去的爱的兑现；命运—架桥→迟到的真相被认出。\n**人物【USER】**：博子 Z／男藤井树 XN／女藤井树 NX。三人关系，不可压成男女双人线。\n```text\nE1 男树借书/留肖像 → 当年未表白 → 爱未被认出\n                                      │多年之后离世\nE2 博子寄信 → 同名女树收到并回信 → 记忆被重新提取\n                                      │旧书卡保留\nE3 女树发现画像 → 认识旧情 → 过去关系不能重做\n【回流】旧书卡 ──→ E1隐藏的心意被重新解释\n```\n**T07桥**：同名/信件/旧卡片是中介，移除后如何获得迟来的认识？\n**注意**：「命运」是USER主题读法；实际桥的行为由通信和物件承担。\n**原卡**：[[02_给我用的知识凝结库/01_动态链条/电影卡/C05_情书]]\n**出处**：Film Movement / Fuji TV 梗概＋原USER电影卡。",
+      "x": 17690,
+      "y": 3530,
+      "width": 920,
+      "height": 850,
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_GATE",
+      "type": "text",
+      "text": "## 第三主题判定门｜禁止凑三角\n**1 纯克**：可只画「时间—克→因果」，动机不算第三条主题边。\n**2 加强／中介**：空间、记忆、信件实际改变行动条件，但尚未证明独立五维生克。\n**3 架桥**：第三主题让原本不能连通的两端发生新结果；删掉中介必须断连。\n**4 三角克**：须有三条可见作用边并闭环，五片暂无足够材料锁定。\n**不能混**：T11循环是事件拓扑；T07桥是中介拓扑；五维主题生克需要另外证明。",
+      "x": 15590,
+      "y": 4630,
+      "width": 920,
+      "height": 670,
+      "color": "3"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_SOURCE",
+      "type": "text",
+      "text": "## 03《源代码》｜克制与生成竞争【H】\n**结构**：八分钟窗口限制一次调查；线索跨轮积累，最终救下另一现实中的乘客。\n**第三维【H】**：本体（Colter的身份/身体处境）参与最后选择；不是既证三角克。\n**人物**：Colter Stevens（行动者）／Christina（列车乘客）／Goodwin（外部协助者）。不推定其十元。\n```text\nE1 Colter进入列车 → 8分钟调查 → 爆炸/任务中断\n                                        │信息保留\nE2 他多轮追查 → 确定袭击者 → 将线索送给外部\n                                        │提出新请求\nE3 获准再进入 → 排除炸弹威胁 → 另一现实中乘客幸存\n【回流】E1的失败信息 ──→ E2；E2的线索 ──→ E3\n```\n**变量**：局部时间窗克完成度，却生出跨轮知识。\n**竞争解释**：结局更接近因果重建，不能当整片单向「时间克因果」正例。\n**出处**：2011年影片剧情梗概/IMDb情节概述；结局细节待逐片。",
+      "x": 16630,
+      "y": 4630,
+      "width": 940,
+      "height": 850,
+      "color": "4"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_BEFORE",
+      "type": "text",
+      "text": "## 05《爱在日落黄昏时》｜错过后重新选择\n**主题【H】**：时间克过去的相会机会；新的主动表达产生新关系可能。\n**第三维【H】**：本体（两人对现有生活的选择）介入；不预判命运严格架桥。\n**人物**：Céline（当下主动重逢/表达）↔ Jesse（作家、已有家庭与航班期限）。十元未验证。\n```text\nE1 九年前约定再见 → 葬礼与错过 → 关系未继续\n                                      │九年生活已发生\nE2 Céline赴书店 → Jesse仅剩数小时 → 重新对谈\n                                      │告知彼此近况\nE3 两人坦陈遗憾 → 航班迫近 → 是否离开成为当下选择\n【回流】E2坦诚 ──→ 重写E1的「为何未赴约」认知\n```\n**变量**：过去无法重选，未来尚有行动权；本片内的结尾刻意开放。\n**反证**：若两人今天仍主动疏远，真是时间致因果失效，还是人物选择？\n**出处**：Criterion《Before Sunset》与《Time Regained》。",
+      "x": 17690,
+      "y": 4630,
+      "width": 920,
+      "height": 850,
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_ROLES",
+      "type": "text",
+      "text": "## 影片人物层：不能从主题倒推十元\n**《惩罚循环》**：淳追求复仇结果；溝口为对抗对象；唯为已失去的动机。\n**《河流》**：美琴牵引视角，员工与客人协作；属于群像与机制推动。\n**《源代码》**：Colter调查；Goodwin提供跨轮通道；Christina是他试图保护的人。\n**《情书》**：【USER】博子Z／男树XN／女树NX；三人物不同信息链。\n**《爱在日落黄昏时》**：Céline与Jesse双人双选择；十元主次尚未判定。\n**总规则**：主主题 ≠ 主角十元；同一个主题可以经不同人物构型表达。",
+      "x": 15590,
+      "y": 5810,
+      "width": 920,
+      "height": 720,
+      "color": "2"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_ORIGINAL",
+      "type": "text",
+      "text": "## 你的原创双主｜双轴交叉（不是自动双补）\n**女 XN主＋ZX次**：时间感受主导，因果行动为次。\n**男 NX主＋Z次**：因果感受主导，时间方向为次。\n**两条对照轴**：XN ↔ Z；ZX ↔ NX【USER定义】。\n```text\n同一窗口        女 XN＋ZX      证据/截止时限      男 NX＋Z\n第一段·未送     女掌握证据 ──→ 未及时送达 ──→ 男据旧信息决定\n                                  │ 旧窗口关闭\n第二段·揭晓     女送出证据 ──→ 事实被承认 ───→ 男不能重选旧决定\n                                  │ 本体选择H\n第三段·回收     女决定公开 ──→ 双方重订承诺 ──→ 男采取新行动\n【反馈】新约定 ──→ 第一段「沉默/不询问」的行为规则被改变\n```\n**第三主题选项【H】**：命运架桥（信物/偶遇可替代性测试）；\n本体改道（承担代价后自我决定）；空间设障（可见阻隔/路径）。\n不直接照搬电影剧情；这是原创事件机制实验。",
+      "x": 16630,
+      "y": 5810,
+      "width": 940,
+      "height": 1040,
+      "color": "6"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_VERDICT",
+      "type": "text",
+      "text": "## 五片三种母型｜横向对照、纵向回收\n**A 单克重置**：《惩罚循环》｜T01＋T11｜第三维本体仅候选。\n**B 局部克→反馈生新因果**：《河流》《源代码》｜T11＋T05/T09；第三维空间/本体待审。\n**C 第三主题改造结果**：《情书》命运桥【USER】；《爱在日落黄昏时》本体新选择【H】。\n**共同点**：过去结果与未来行动权必须拆开。\n**待核**：每片≥3原片事实事件、删边反证、十元主次、F2镜头、F3观众感受。\n**STOP**：不因五片相似而称“发现第三维普遍定律”。",
+      "x": 17690,
+      "y": 5810,
+      "width": 920,
+      "height": 730,
+      "color": "3"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_REFS",
+      "type": "text",
+      "text": "## 阅读入口与证据级别\n- [[05-银矿库/五大主题仓库/02-时间 xn+z/人在环外_100步自主审查_20261105|100步审查]]\n- [[05-银矿库/五大主题仓库/02-时间 xn+z/时间克因果_100片结构预分析台账|100部F0台账]]\n- [[05-银矿库/五大主题仓库/02-时间 xn+z/时间主题结构与事件零件|时间主题MD]]\n- [[02_给我用的知识凝结库/01_动态链条/电影卡/C05_情书|《情书》唯一原卡]]\n**外部事实**：jfdb.jp/en/title/9926；bfi.org.uk/lists/10-great-japanese-time-travel-films；bfi.org.uk/sight-and-sound/reviews/river-two-minute-time-loop-traps-group-hospitality-workers-this-breezy-japanese-sci-fi；criterion.com/films/28693-before-sunset；filmmovement.com/press/film/love-letter；imdb.com/title/tt0945513/plotsummary/\n**结论状态**：F1外部片介支持有限剧情事实；五维构型为H/USER；F2/F3均未完成。",
+      "x": 15590,
+      "y": 7000,
+      "width": 920,
+      "height": 740,
+      "color": "2"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_TEST",
+      "type": "text",
+      "text": "## 最值得做的「删边反证」\n①《惩罚循环》：删掉重置，复仇能保留？→试验单克。\n②《河流》：删掉空间回位，信息传达阻断仍成立？→试验空间承载。\n③《源代码》：删掉跨轮知识，最后救援能成立？→试验克中生。\n④《情书》：删掉同名回信/书卡，迟来的爱如何被认出？→试验命运桥【USER】。\n⑤《爱在日落黄昏时》：删掉九年错过，冲突还能由现有生活选择独立成立？→时间与本体竞争。\n**关系上升门**：需要事件、变量、反事实；仅有主题词和三角图形不算三角克。",
+      "x": 16630,
+      "y": 7000,
+      "width": 940,
+      "height": 740,
+      "color": "3"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_STOP",
+      "type": "text",
+      "text": "## 这张图怎么读\n**第一层缩小**：上方3个彩色母型 + 5片卡片位置，快速看差异。\n**第二层放大**：每片卡按E1→E2→E3读横向同窗动作和纵向结果继承。\n**第三层回收**：左下人物对照，中下原创男女主，右下五片结论。\n**分层标注**：【事实】可查剧情；【USER】作者既有读法；【H】AI主题/角色假说。\n**下一证据**：先核《惩罚循环》《情书》的3事件与第三主题删边测试。\n**Windows Obsidian 实际缩放阅读**：WAIT_LOCAL_UI；不宣称实屏验收。",
+      "x": 17690,
+      "y": 7000,
+      "width": 920,
+      "height": 740,
+      "color": "6"
     }
   ],
   "edges": [
@@ -2262,6 +2422,126 @@
       "toSide": "top",
       "label": "导航",
       "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_E_H_A",
+      "fromNode": "TIME_CAUSE_FIVE_CLASS_20261105_HUB",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_FIVE_CLASS_20261105_TYPE_A",
+      "toSide": "top",
+      "label": "Ⅰ 克",
+      "color": "6",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_E_H_B",
+      "fromNode": "TIME_CAUSE_FIVE_CLASS_20261105_HUB",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_FIVE_CLASS_20261105_TYPE_B",
+      "toSide": "top",
+      "label": "Ⅱ 克中生",
+      "color": "6",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_E_H_C",
+      "fromNode": "TIME_CAUSE_FIVE_CLASS_20261105_HUB",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_FIVE_CLASS_20261105_TYPE_C",
+      "toSide": "top",
+      "label": "Ⅲ 第三维",
+      "color": "6",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_E_A_P",
+      "fromNode": "TIME_CAUSE_FIVE_CLASS_20261105_TYPE_A",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_FIVE_CLASS_20261105_PENALTY",
+      "toSide": "top",
+      "label": "单克",
+      "color": "6",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_E_B_R",
+      "fromNode": "TIME_CAUSE_FIVE_CLASS_20261105_TYPE_B",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_FIVE_CLASS_20261105_RIVER",
+      "toSide": "top",
+      "label": "重置+记忆",
+      "color": "6",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_E_B_S",
+      "fromNode": "TIME_CAUSE_FIVE_CLASS_20261105_RIVER",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_FIVE_CLASS_20261105_SOURCE",
+      "toSide": "top",
+      "label": "同型竞争",
+      "color": "6",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_E_C_L",
+      "fromNode": "TIME_CAUSE_FIVE_CLASS_20261105_TYPE_C",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_FIVE_CLASS_20261105_LOVE",
+      "toSide": "top",
+      "label": "命运架桥",
+      "color": "6",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_E_C_B",
+      "fromNode": "TIME_CAUSE_FIVE_CLASS_20261105_LOVE",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_FIVE_CLASS_20261105_BEFORE",
+      "toSide": "top",
+      "label": "第三主题对照",
+      "color": "6",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_E_P_G",
+      "fromNode": "TIME_CAUSE_FIVE_CLASS_20261105_PENALTY",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_FIVE_CLASS_20261105_GATE",
+      "toSide": "top",
+      "label": "判据",
+      "color": "6",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_E_S_O",
+      "fromNode": "TIME_CAUSE_FIVE_CLASS_20261105_SOURCE",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_FIVE_CLASS_20261105_ORIGINAL",
+      "toSide": "top",
+      "label": "结构转用",
+      "color": "6",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_E_L_V",
+      "fromNode": "TIME_CAUSE_FIVE_CLASS_20261105_BEFORE",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_FIVE_CLASS_20261105_VERDICT",
+      "toSide": "top",
+      "label": "对照",
+      "color": "6",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "TIME_CAUSE_FIVE_CLASS_20261105_E_O_T",
+      "fromNode": "TIME_CAUSE_FIVE_CLASS_20261105_ORIGINAL",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_FIVE_CLASS_20261105_TEST",
+      "toSide": "top",
+      "label": "验证",
+      "color": "6",
+      "toEnd": "arrow"
     }
   ],
   "metadata": {
@@ -2285,6 +2565,18 @@
       "original_research_preserved": true,
       "theme_research_status": "F1_H",
       "local_ui": "WAIT_LOCAL_UI"
+    },
+    "time_cause_five_structure_reading": {
+      "date": "2026-11-05",
+      "module": "TIME_CAUSE_FIVE_CLASS_20261105",
+      "source": "100step_F0_audit_plus_external_F1_plot",
+      "theme": "时间克因果",
+      "types": 3,
+      "films": 5,
+      "F2": 0,
+      "F3": 0,
+      "layout": "existing_group10_three_columns",
+      "visual_status": "WAIT_LOCAL_UI"
     }
   }
 }
