@@ -378,3 +378,9 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|LOCAL_CODEX_RENDER|IMAGE
 当用户排除 CH 或要求新角色时，角色 Agent 直接读取 `../../03_角色/角色库/01_视觉候选总表_HNSNPC.json`。
 优先顺序：P0 → P1 → P2 → P3。当前 P0 为 H04 / H06 / H09。
 角色 Agent 只做身份认领、世界位置、十元接口、视觉冻结与正式主 ID 映射，不得把 visual_id 改写成 CH 编号。
+
+
+## 2026-11-05｜电影采矿v2人物独立锁候选（限定APP-FILM-CHAIN-001）
+- 执行正本：[[05-银矿库/电影采矿流水线_囷霜钧阿白_AG09|采矿流水线 §00 v2.0]]。先读霜的R1事件材料，**不读AG-09主维结论**即输出十项独立相似度（证据不足null）＋跨幕材料/反材料＋灵魂抽离；再读AG-09的`theme_role_feedback`做反审，不得用主题标签反向改主人格。
+- 必须分栏`stable_yuan / aspiration_yuan / state_yuan / settlement_yuan`；《边缘行者》大卫Z追求ZN、露西XN追求X不能误记成稳定主元换位，《千年女优》主NX向往ZX也同理。
+- 输出`candidate_confidence_reason`为可追溯文字依据而非统计概率；没有跨场证据时`stable_yuan=null`，不得因为钧评分高便自动LOCKED。
