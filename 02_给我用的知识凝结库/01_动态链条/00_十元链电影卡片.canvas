@@ -1096,7 +1096,7 @@
     "relocated_edge_ids": [
       "edge_REL_MOTHER_03_to_04_LATENT_RELEASE"
     ],
-    "case_count": 19,
+    "case_count": 20,
     "mechanism_card_count": 1,
     "facts": "F1_CASE_NOT_STRICT_L2",
     "f2_source": null,
@@ -1104,7 +1104,7 @@
     "local_ui": "WAIT_LOCAL_UI",
     "single_source_of_truth": true,
     "skill_path": "07-Codex大脑库/skills/ten-yuan-chain/SKILL.md",
-    "newest_case": "TENYUAN_FILM_WATCH006_PREDESTINATION_2014",
+    "newest_case": "TENYUAN_FILM_WATCH012_BOUQUET_2021",
     "latest_theme_agent_case": {
       "case_id": "TENYUAN_FILM_WATCH006_PREDESTINATION_2014",
       "film": "Predestination (2014)",
@@ -1327,7 +1327,7 @@
         "FATE",
         "PENDING"
       ],
-      "main_film_count": 19,
+      "main_film_count": 20,
       "subcard_count": 1,
       "film_ids_by_class": {
         "TIME": [
@@ -1356,7 +1356,8 @@
           "REL_MOTHER_CARD_06_YOUR_NAME_RETRO_RESCUE",
           "TENYUAN_FILM_EDGERUNNERS_S1_AG09_2022",
           "REL_MOTHER_CARD_03_KE_BU_SHENG",
-          "TENYUAN_FILM_WATCH007_TOKYO_GODFATHERS_2003"
+          "TENYUAN_FILM_WATCH007_TOKYO_GODFATHERS_2003",
+          "TENYUAN_FILM_WATCH012_BOUQUET_2021"
         ],
         "PENDING": []
       },
@@ -1380,14 +1381,16 @@
         "TENYUAN_FILM_WATCH004_INTERSTELLAR_2014": "02_给我用的知识凝结库/01_动态链条/电影卡/C17_星际穿越.md",
         "TENYUAN_FILM_WATCH024_DEAD_POETS_SOCIETY_1989": "02_给我用的知识凝结库/01_动态链条/电影卡/C18_死亡诗社.md",
         "TENYUAN_FILM_EDGERUNNERS_S1_AG09_2022": "02_给我用的知识凝结库/01_动态链条/电影卡/C19_赛博朋克边缘行者_S1.md",
-        "TENYUAN_FILM_WATCH006_PREDESTINATION_2014": "02_给我用的知识凝结库/01_动态链条/电影卡/C20_前目的地.md"
+        "TENYUAN_FILM_WATCH006_PREDESTINATION_2014": "02_给我用的知识凝结库/01_动态链条/电影卡/C20_前目的地.md",
+        "TENYUAN_FILM_WATCH012_BOUQUET_2021": "02_给我用的知识凝结库/01_动态链条/电影卡/C21_花束般的恋爱.md"
       },
       "user_primary": {
         "TRUMAN": "SPACE",
         "EDGERUNNERS": "FATE",
         "YOUR_NAME": "FATE",
         "VIVA_LA_VIDA": "TIME",
-        "PIANIST": "FATE"
+        "PIANIST": "FATE",
+        "BOUQUET": "FATE"
       },
       "time_research_canvas": "05-银矿库/五大主题仓库/02-时间 xn+z/时间主题电影分析.canvas",
       "title_index_nodes": [
@@ -1408,7 +1411,26 @@
         "TOKYO_GODFATHERS": "FATE_H",
         "DEAD_POETS_SOCIETY": "ONTOLOGY_H"
       },
-      "provisional_source": "05-银矿库/电影采矿流水线_囷霜钧阿白_AG09.md"
+      "provisional_source": "05-银矿库/电影采矿流水线_囷霜钧阿白_AG09.md",
+      "reclassification_note_bouquet_20261105": "WATCH-012 USER: Fate primary, ontology generates space -> space restrains fate but loses -> fate restrains ontology; triangle, character staging only"
+    },
+    "last_author_theme_case": {
+      "film": "We Made a Beautiful Bouquet (2021)",
+      "watch_id": "WATCH-012",
+      "card_id": "TENYUAN_FILM_WATCH012_BOUQUET_2021",
+      "theme_primary": "FATE",
+      "topology": "TRIANGULAR_CONSTRAINT",
+      "relations": [
+        "ONTOLOGY_GENERATES_SPACE",
+        "SPACE_RESTRAINS_FATE_BUT_LOSES",
+        "FATE_RESTRAINS_ONTOLOGY"
+      ],
+      "status": "AUTHOR_INPUT_FILM_LEVEL_NOT_STRICT_TENYUAN_L2",
+      "characters": "MUGI_N_H_KINU_ZN_H_USER_ACCEPTED_STAGING",
+      "F2": null,
+      "F3": null,
+      "local_ui": "WAIT_LOCAL_UI",
+      "date": "2026-11-05"
     }
   }
 }
