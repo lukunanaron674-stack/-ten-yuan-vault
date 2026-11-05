@@ -13,7 +13,7 @@
     {
       "id": "TENYUAN_MOVIE_CASES_INDEX",
       "type": "text",
-      "text": "# 🎬 五大主主题｜电影MD发散树（点击卡片打开全文）\n**时间 6｜本体 4｜空间 5｜因果 0｜命运 2｜待判 2**＝19部电影＋《钢琴家》1张子机制卡。\n**主主题 → 电影文件卡 → 具体事件／十元／动态链／反证**；Canvas只管发散索引，电影正文全部迁至同目录`电影卡/C01—C20_*.md`。\n**【USER纠偏】《楚门》空间主；《边缘行者》《你的名字。》均命运主。** 边缘行者仍保留时间开场→双人本体化自克→命运克本体→解脱。\n**专题延伸**：[[05-银矿库/五大主题仓库/02-时间 xn+z/时间主题电影分析.canvas|现有时间主题研究Canvas（原45条研究保留）]]。\n**研究详档**：[[00_十元链电影卡片_研究详档#CURRENT-MD-FILM-TREE-20261105|MD卡树/主主题索引]]",
+      "text": "# 🎬 五大主主题｜电影MD发散树（点击卡片打开全文）\n**时间 7｜本体 3｜空间 5｜因果 0｜命运 2｜待判 2**＝19部电影＋《钢琴家》1张子机制卡。\n**主主题 → 电影文件卡 → 具体事件／十元／动态链／反证**；Canvas只管发散索引，电影正文全部迁至同目录`电影卡/C01—C20_*.md`。\n**【USER新增】《我们一起摇太阳》＝时间主；原三角克本体克时间→时间生命运→命运克本体照旧。**\n**【USER纠偏】《楚门》空间主；《边缘行者》《你的名字。》均命运主。** 边缘行者仍保留时间开场→双人本体化自克→命运克本体→解脱。\n**专题延伸**：[[05-银矿库/五大主题仓库/02-时间 xn+z/时间主题电影分析.canvas|现有时间主题研究Canvas（原45条研究保留）]]。\n**研究详档**：[[00_十元链电影卡片_研究详档#CURRENT-MD-FILM-TREE-20261105|MD卡树/主主题索引]]",
       "x": -1890,
       "y": 4400,
       "width": 3780,
@@ -24,7 +24,7 @@
       "id": "REL_MOTHER_CARD_01_DOUBLE_COMPLEMENT",
       "type": "file",
       "x": 920,
-      "y": 6180,
+      "y": 5970,
       "width": 660,
       "height": 250,
       "color": "5",
@@ -790,7 +790,7 @@
     {
       "id": "TENCHAIN_MAIN_THEME_GROUP_TIME",
       "type": "text",
-      "text": "# ① 时间｜XN＋Z｜6部\n时间如何改变人物与关系？本区6部；电影卡可直接打开MD\n[[05-银矿库/五大主题仓库/02-时间 xn+z/时间主题电影分析.canvas|时间专题Canvas（旧研究索引）]]",
+      "text": "# ① 时间｜XN＋Z｜7部\n时间如何改变人物与关系？本区7部；电影卡可直接打开MD\n[[05-银矿库/五大主题仓库/02-时间 xn+z/时间主题电影分析.canvas|时间专题Canvas（旧研究索引）]]",
       "x": -390,
       "y": 5350,
       "width": 780,
@@ -800,7 +800,7 @@
     {
       "id": "TENCHAIN_MAIN_THEME_GROUP_ONTOLOGY",
       "type": "text",
-      "text": "# ② 本体｜ZN＋X｜4部\n谁是自己？身份、选择和自我持续，共4部【部分H】\n主主题不等于人物稳定ZN",
+      "text": "# ② 本体｜ZN＋X｜3部\n谁是自己？身份、选择和自我持续，共3部【部分H】\n主主题不等于人物稳定ZN",
       "x": -390,
       "y": 6335,
       "width": 780,
@@ -962,13 +962,13 @@
       "color": "6"
     },
     {
-      "id": "theme_index_20261105_ONTOLOGY_REL_MOTHER_CARD_01_DOUBLE_COMPLEMENT",
-      "fromNode": "TENCHAIN_MAIN_THEME_GROUP_ONTOLOGY",
+      "id": "theme_index_20261105_TIME_REL_MOTHER_CARD_01_DOUBLE_COMPLEMENT",
+      "fromNode": "TENCHAIN_MAIN_THEME_GROUP_TIME",
       "fromSide": "right",
       "toNode": "REL_MOTHER_CARD_01_DOUBLE_COMPLEMENT",
       "toSide": "left",
       "label": "MD卡",
-      "color": "6"
+      "color": "5"
     },
     {
       "id": "theme_index_20261105_ONTOLOGY_TENYUAN_FILM_WATCH020_DOCTOR_ZHIVAGO_1965",
@@ -1317,12 +1317,12 @@
           "TENYUAN_FILM_WATCH011_MILLENNIUM_ACTRESS_SOUL_2001",
           "TENYUAN_FILM_WATCH014_BEFORE_SUNRISE_1995",
           "TENYUAN_FILM_WATCH004_INTERSTELLAR_2014",
-          "REL_MOTHER_CARD_02_RECURSIVE_COMPLEMENT"
+          "REL_MOTHER_CARD_02_RECURSIVE_COMPLEMENT",
+          "REL_MOTHER_CARD_01_DOUBLE_COMPLEMENT"
         ],
         "ONTOLOGY": [
           "TENYUAN_FILM_WATCH029_AMERICAN_PSYCHO_2000",
           "TENYUAN_FILM_WATCH006_PREDESTINATION_2014",
-          "REL_MOTHER_CARD_01_DOUBLE_COMPLEMENT",
           "TENYUAN_FILM_WATCH020_DOCTOR_ZHIVAGO_1965"
         ],
         "SPACE": [
@@ -1367,7 +1367,8 @@
       "user_primary": {
         "TRUMAN": "SPACE",
         "EDGERUNNERS": "FATE",
-        "YOUR_NAME": "FATE"
+        "YOUR_NAME": "FATE",
+        "VIVA_LA_VIDA": "TIME"
       },
       "time_research_canvas": "05-银矿库/五大主题仓库/02-时间 xn+z/时间主题电影分析.canvas",
       "title_index_nodes": [
@@ -1380,7 +1381,9 @@
       ],
       "F2": null,
       "F3": null,
-      "local_ui": "WAIT_LOCAL_UI"
+      "local_ui": "WAIT_LOCAL_UI",
+      "updated": "2026-11-05",
+      "reclassification_note_20261105": "VIVA_LA_VIDA from ONTOLOGY H to TIME USER; confirmed theme triangle preserved unchanged"
     }
   }
 }
