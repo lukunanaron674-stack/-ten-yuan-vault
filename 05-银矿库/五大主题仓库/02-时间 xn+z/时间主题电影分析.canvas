@@ -1759,6 +1759,86 @@
       "width": 660,
       "height": 280,
       "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_GROUP",
+      "type": "group",
+      "label": "10｜时间克因果100部研究｜女XN+ZX／男NX+Z",
+      "x": 15500,
+      "y": 0,
+      "width": 3220,
+      "height": 2200,
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_HUB",
+      "type": "text",
+      "text": "# 时间〔XN＋Z〕克因果〔ZX＋NX〕\n**100部初筛研究｜仅F0/H**\n10组：A50优先／B30竞争／C20负控",
+      "x": 16710,
+      "y": 165,
+      "width": 800,
+      "height": 300,
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_LEFT",
+      "type": "text",
+      "text": "### 结构判准｜时间真的克了什么？\n**行动A本可导致结果B**\n→时间迟到／重置／顺序锁定\n→同一行动A不再导出B\n→移除时间条件可恢复B？\n\n不把倒叙或时间穿越直接当克。",
+      "x": 15670,
+      "y": 655,
+      "width": 820,
+      "height": 420,
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_RIGHT",
+      "type": "text",
+      "text": "### 女XN＋ZX × 男NX＋Z\n女：XN主／ZX次\n男：NX主／Z次\nXN↔Z、ZX↔NX：双轴交叉对立\n人物稳定主核靠跨幕材料，不靠表情偷判。\n**候选问题**：迟来的真相还要不要说？",
+      "x": 17700,
+      "y": 655,
+      "width": 850,
+      "height": 420,
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_DATA",
+      "type": "file",
+      "file": "05-银矿库/五大主题仓库/02-时间 xn+z/时间克因果_100片结构预分析台账.md",
+      "x": 16710,
+      "y": 680,
+      "width": 800,
+      "height": 290,
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_MECHANISM",
+      "type": "text",
+      "text": "### 100部如何分析\nA：50部优先候选（循环／闭环／迟到／错过）\nB：30部边界（身份年限／事后证词／期限）\nC：20部负控（时间可生因果／另维主导）\n每轮仅升级1片：真实3事件→作用变量→竞争主维→删边反证→唯一电影MD或负控记录。",
+      "x": 16710,
+      "y": 1100,
+      "width": 800,
+      "height": 480,
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_EVIDENCE",
+      "type": "text",
+      "text": "### 真实已分析基线\n《情书》《千年女优》《土拨鼠之日》：USER协作读法\n尚非本轮独立验证样本。\nBFI／Criterion参考出处与12部优先研究问题在百部MD。\nF2原片、F3真人感受本轮没有新增。",
+      "x": 15670,
+      "y": 1290,
+      "width": 820,
+      "height": 350,
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_BACK",
+      "type": "text",
+      "text": "### 导航与停止点\n[[05-银矿库/五大主题仓库/02-时间 xn+z/时间主题结构与事件零件|时间主题结构与事件零件MD]]\n[[02_给我用的知识凝结库/01_动态链条/00_十元链电影卡片|返回五维总电影图]]\n研究到100部F1或清楚标WAIT后停止，不无限扩。",
+      "x": 17700,
+      "y": 1290,
+      "width": 850,
+      "height": 350,
+      "color": "5"
     }
   ],
   "edges": [
@@ -2128,6 +2208,60 @@
       "toSide": "right",
       "color": "5",
       "label": "打开MD"
+    },
+    {
+      "id": "TIME_CAUSE_100_E_TIME_CAUSE_100_HUB_TIME_CAUSE_100_LEFT",
+      "fromNode": "TIME_CAUSE_100_HUB",
+      "fromSide": "left",
+      "toNode": "TIME_CAUSE_100_LEFT",
+      "toSide": "top",
+      "label": "克的判据",
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_E_TIME_CAUSE_100_HUB_TIME_CAUSE_100_RIGHT",
+      "fromNode": "TIME_CAUSE_100_HUB",
+      "fromSide": "right",
+      "toNode": "TIME_CAUSE_100_RIGHT",
+      "toSide": "top",
+      "label": "原创角色",
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_E_TIME_CAUSE_100_HUB_TIME_CAUSE_100_DATA",
+      "fromNode": "TIME_CAUSE_100_HUB",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_100_DATA",
+      "toSide": "top",
+      "label": "100片MD",
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_E_TIME_CAUSE_100_DATA_TIME_CAUSE_100_MECHANISM",
+      "fromNode": "TIME_CAUSE_100_DATA",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_100_MECHANISM",
+      "toSide": "top",
+      "label": "分组",
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_E_TIME_CAUSE_100_LEFT_TIME_CAUSE_100_EVIDENCE",
+      "fromNode": "TIME_CAUSE_100_LEFT",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_100_EVIDENCE",
+      "toSide": "top",
+      "label": "证据",
+      "color": "5"
+    },
+    {
+      "id": "TIME_CAUSE_100_E_TIME_CAUSE_100_RIGHT_TIME_CAUSE_100_BACK",
+      "fromNode": "TIME_CAUSE_100_RIGHT",
+      "fromSide": "bottom",
+      "toNode": "TIME_CAUSE_100_BACK",
+      "toSide": "top",
+      "label": "导航",
+      "color": "5"
     }
   ],
   "metadata": {
