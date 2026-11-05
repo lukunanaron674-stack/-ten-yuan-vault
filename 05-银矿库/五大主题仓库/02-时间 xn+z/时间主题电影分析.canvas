@@ -1669,6 +1669,86 @@
       "height": 190,
       "color": "4",
       "text": "# 覆盖核对｜41条图形候选＋4条身份待核＝45个索引对象\n待核不套图：17／20／41／43；同一影片可组合多个图形，图形数量不等于影片数量。F2逐场实证：0；图形到十元生/克/补的正式升级：0。"
+    },
+    {
+      "id": "TIME_MAIN_MD_FAN_GROUP_20261105",
+      "type": "group",
+      "label": "09｜时间主主题：电影MD卡发散树（6张）｜旧45条时间机制研究保留",
+      "x": 11580,
+      "y": 0,
+      "width": 3630,
+      "height": 2270,
+      "color": "5"
+    },
+    {
+      "id": "TIME_MAIN_MD_FAN_HUB_20261105",
+      "type": "text",
+      "text": "# 时间主主题｜XN＋Z\n**专题新索引：MD电影卡×6**；点文件卡阅读完整剧情与十元结构。\n旧02–08研究区仍保留45个研究对象和25个扩展，不等于全部时间主。\n[[02_给我用的知识凝结库/01_动态链条/00_十元链电影卡片.canvas|↗ 五大主题总索引]]",
+      "x": 12995,
+      "y": 750,
+      "width": 800,
+      "height": 300,
+      "color": "5"
+    },
+    {
+      "id": "TIME_MAIN_FILE_C05_20261105",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C05_情书.md",
+      "x": 11730,
+      "y": 240,
+      "width": 660,
+      "height": 280,
+      "color": "5"
+    },
+    {
+      "id": "TIME_MAIN_FILE_C09_20261105",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C09_土拨鼠之日.md",
+      "x": 11730,
+      "y": 660,
+      "width": 660,
+      "height": 280,
+      "color": "5"
+    },
+    {
+      "id": "TIME_MAIN_FILE_C10_20261105",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C10_千年女优.md",
+      "x": 11730,
+      "y": 1080,
+      "width": 660,
+      "height": 280,
+      "color": "5"
+    },
+    {
+      "id": "TIME_MAIN_FILE_C14_20261105",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C14_爱在黎明破晓前.md",
+      "x": 13965,
+      "y": 240,
+      "width": 660,
+      "height": 280,
+      "color": "5"
+    },
+    {
+      "id": "TIME_MAIN_FILE_C17_20261105",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C17_星际穿越.md",
+      "x": 13965,
+      "y": 660,
+      "width": 660,
+      "height": 280,
+      "color": "5"
+    },
+    {
+      "id": "TIME_MAIN_FILE_C02_20261105",
+      "type": "file",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C02_超时空辉耀姬.md",
+      "x": 13965,
+      "y": 1080,
+      "width": 660,
+      "height": 280,
+      "color": "5"
     }
   ],
   "edges": [
@@ -1975,6 +2055,60 @@
       "toNode": "Pianist_R4_chain",
       "toSide": "left",
       "color": "4"
+    },
+    {
+      "id": "TIME_MAIN_EDGE_C05_20261105",
+      "fromNode": "TIME_MAIN_MD_FAN_HUB_20261105",
+      "fromSide": "left",
+      "toNode": "TIME_MAIN_FILE_C05_20261105",
+      "toSide": "right",
+      "color": "5",
+      "label": "打开MD"
+    },
+    {
+      "id": "TIME_MAIN_EDGE_C09_20261105",
+      "fromNode": "TIME_MAIN_MD_FAN_HUB_20261105",
+      "fromSide": "left",
+      "toNode": "TIME_MAIN_FILE_C09_20261105",
+      "toSide": "right",
+      "color": "5",
+      "label": "打开MD"
+    },
+    {
+      "id": "TIME_MAIN_EDGE_C10_20261105",
+      "fromNode": "TIME_MAIN_MD_FAN_HUB_20261105",
+      "fromSide": "left",
+      "toNode": "TIME_MAIN_FILE_C10_20261105",
+      "toSide": "right",
+      "color": "5",
+      "label": "打开MD"
+    },
+    {
+      "id": "TIME_MAIN_EDGE_C14_20261105",
+      "fromNode": "TIME_MAIN_MD_FAN_HUB_20261105",
+      "fromSide": "right",
+      "toNode": "TIME_MAIN_FILE_C14_20261105",
+      "toSide": "left",
+      "color": "5",
+      "label": "打开MD"
+    },
+    {
+      "id": "TIME_MAIN_EDGE_C17_20261105",
+      "fromNode": "TIME_MAIN_MD_FAN_HUB_20261105",
+      "fromSide": "right",
+      "toNode": "TIME_MAIN_FILE_C17_20261105",
+      "toSide": "left",
+      "color": "5",
+      "label": "打开MD"
+    },
+    {
+      "id": "TIME_MAIN_EDGE_C02_20261105",
+      "fromNode": "TIME_MAIN_MD_FAN_HUB_20261105",
+      "fromSide": "right",
+      "toNode": "TIME_MAIN_FILE_C02_20261105",
+      "toSide": "left",
+      "color": "5",
+      "label": "打开MD"
     }
   ],
   "metadata": {
@@ -1989,6 +2123,15 @@
         43
       ],
       "f2_scene_verified": 0
+    },
+    "time_main_film_md_index_20261105": {
+      "status": "ACTIVE_LINK_TREE_LOCAL_UI_PENDING",
+      "hub": "TIME_MAIN_MD_FAN_HUB_20261105",
+      "source_card_dir": "02_给我用的知识凝结库/01_动态链条/电影卡",
+      "film_count": 6,
+      "original_research_preserved": true,
+      "theme_research_status": "F1_H",
+      "local_ui": "WAIT_LOCAL_UI"
     }
   }
 }
