@@ -770,11 +770,11 @@
     {
       "id": "TENYUAN_FILM_EDGERUNNERS_S1_AG09_2022",
       "type": "text",
-      "text": "## ⑲《赛博朋克：边缘行者》S1｜命运主·空间克命运【AG-09 H】\n**A 主导【H】**：主题主导候选·大卫单人物中心，露西承担结局对照；人物主导仍为竞争解释。\n**B 主主题【H】**：命运〔XZ＋NZ〕。不是「谁死了」，而是「还有哪些人生可以抵达并保留」。\n**次主题【H】**：空间〔X并Z＋N〕与本体〔ZN＋X〕；时间〔XN＋Z〕、因果〔ZX＋NX〕提供进程与行动机制。\n\n```text\n【空间 克 命运｜R2/R3 候选】\n夜之城的阶层／债务／企业资源／追捕制度\n      ↓ 压缩「大卫＋露西共同未来」的可达路径\n大卫：失去母亲→入行→不断义体化\n      ↓ 追求母亲／曼恩／露西的愿望\n【命运 克 本体｜R2候选】\n生存路径收窄→被荒坂定位为试验资源\n      ↓ 身体与自我持续性濒临瓦解\n法拉第诱骗、露西被囚→大卫救露西\n      ↓ 自愿留下阻挡亚当·重锤\n【结局：不对称命运回收】\n露西：独自到达月球〔个人愿望实现〕\n大卫：死亡〔共同未来无法实现〕\n```\n**C 主题×人物【H】**：世界压住两人共同未来；大卫的高代价选择改变露西的去向，却不能保存共同生活。\n**审稿**：「义体损伤身体」属于具体因果／本体风险，不能凭它判「空间克本体」；「本体生他人命运」「时间生命运」暂作竞争边，不升已验证。\n**证据**：Netflix官方分集简介F1；原片连续镜头F2／真人感受F3待核；人物稳定十元归AG-11，未锁。\n[[00_十元链电影卡片_研究详档#CASE-AG09-EDGERUNNERS-S1-2022|📖 AG-09完整主题论证、删边测试与历史纠偏]]",
+      "text": "## ⑲《赛博朋克：边缘行者》S1｜命运克本体【USER】\n**AG-09主题主边【USER·最新】**\n命运〔XZ＋NZ〕 ──克制──→ 本体〔ZN＋X〕\n**核心不是空间克命运；而是命运如何夺走存在，或迫使存在以牺牲的形式结算。**\n\n```text\n          命运〔XZ＋NZ〕\n         ╱               ╲\n    NZ ─克→ X        XZ ─克→ ZN\n       【死亡】          【牺牲】\n         ↓                  ↓\n  存在的延续被终止    自我／共同生活的保留受迫舍弃\n         │                  │\n   母亲、曼恩、大卫      大卫留下阻挡重锤\n         └──────┬───────────┘\n                ↓\n     本体〔ZN＋X〕的两种受克结算\n```\n**剧情检验【H】**：母亲与曼恩之死可用于辨认“死亡”线；大卫主动送露西离开并留下赴死，使“牺牲”线成立。**死亡≠自动等于牺牲**。\n**结局残留**：露西独自登月，但无法与大卫共同生活；救出她不等于大卫保有自己的存在。\n**A／C分类【H】**：主题主导、围绕大卫讲主题；人物高代价选择承担主题结算，尚未USER锁主导类别。\n**区分**：上方是**一条五维主题克边＋两条十元作用解释【USER·情境】**，不是“空间→命运→本体”双克，也不将NZ克X、XZ克ZN升级为全局L2定律。\n**证据**：F1剧情研究；F2逐镜、F3真人感受待核。\n\n[[00_十元链电影卡片_研究详档#CASE-AG09-EDGERUNNERS-S1-2022|📖 主题双通道与历史候选的区分]]",
       "x": 0,
       "y": 8811,
       "width": 870,
-      "height": 1200,
+      "height": 1160,
       "color": "5"
     }
   ],
@@ -848,21 +848,33 @@
     "latest_theme_agent_case": {
       "case_id": "TENYUAN_FILM_EDGERUNNERS_S1_AG09_2022",
       "topic": "Cyberpunk Edgerunners season 1 (2022)",
-      "status": "AG09_F1_RESEARCH_CANDIDATE",
+      "status": "USER_THEME_AND_CONTEXTUAL_TENYUAN_READ_CONFIRMED_F2_F3_PENDING",
       "primary": "FATE",
-      "secondary": [
-        "SPACE",
-        "ONTOLOGY"
-      ],
+      "target": "ONTOLOGY",
       "relations": [
-        "SPACE_RESTRAINS_FATE_H",
-        "FATE_RESTRAINS_ONTOLOGY_H"
+        "FATE_RESTRAINS_ONTOLOGY_USER"
       ],
-      "topology": "OTHER_CHAINED_DOUBLE_CONSTRAINT_H",
-      "person_theme": "theme_led_protagonist_carried_H",
-      "human_review": "WAIT_USER",
+      "tenyuan_axes": [
+        {
+          "source": "NZ",
+          "operation": "RESTRAINS",
+          "target": "X",
+          "semantic": "DEATH",
+          "status": "USER_CONTEXT_ONLY"
+        },
+        {
+          "source": "XZ",
+          "operation": "RESTRAINS",
+          "target": "ZN",
+          "semantic": "SACRIFICE",
+          "status": "USER_CONTEXT_ONLY"
+        }
+      ],
+      "older_space_restrains_fate": "SUPERSEDED_AS_PRIMARY",
+      "narrative_driver": "H",
       "F2": null,
-      "F3": null
+      "F3": null,
+      "local_ui": "WAIT_LOCAL_UI"
     },
     "latest_theme_tenyuan_review": "TRUMAN_AG09_AG02_R4",
     "latest_user_film_case": {
