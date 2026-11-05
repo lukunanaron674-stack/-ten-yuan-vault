@@ -1,0 +1,333 @@
+{
+  "nodes": [
+    {
+      "id": "G_CASE_KIMINONA",
+      "type": "group",
+      "label": "01｜《你的名字。》：人物单边 × 主题双生 × 跨层生",
+      "x": 0,
+      "y": 0,
+      "width": 4000,
+      "height": 3130,
+      "color": "4"
+    },
+    {
+      "id": "G_METHOD_COMPARE",
+      "type": "group",
+      "label": "02｜主题×人物关系：分类坐标与跨片对照",
+      "x": 4300,
+      "y": 0,
+      "width": 3400,
+      "height": 3130,
+      "color": "5"
+    },
+    {
+      "id": "K_H",
+      "type": "text",
+      "text": "# 《你的名字。》｜人物×主题关系研究\n**最新USER判读（2026-11-05）**：**人物与主题：生｜人物：单边｜主题：双生**\n本画布研究跨层关系，不另造《你的名字。》电影主卡；完整影片分析仍在C06。",
+      "x": 145,
+      "y": 130,
+      "width": 3690,
+      "height": 260,
+      "color": "4"
+    },
+    {
+      "id": "K_AXES",
+      "type": "text",
+      "text": "**先分清3层：** R人物网的作用边数 ≠ B五维主题网的生边数 ≠ C主题与人物之间的作用性质。\n旧「主题＝人物」仅描述构成相似；最新「人物与主题生」强调**行为产生主题成立/推进条件**。两种是不同描述层，不自动互相否定。",
+      "x": 145,
+      "y": 445,
+      "width": 3690,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "K_ROLE",
+      "type": "text",
+      "text": "# R｜人物网：单边【USER】\n**泷：XN＋XZ　｜　三叶：NZ＋Z**【USER旧确认】\n**本轮关系标签＝单边**。\n只抽取一条对主题推进最关键的人物作用边；不等于电影里绝无另一方行动，更不能用角色两组十元对照自动宣称严格双补。",
+      "x": 170,
+      "y": 810,
+      "width": 930,
+      "height": 495,
+      "color": "5"
+    },
+    {
+      "id": "K_CROSS",
+      "type": "text",
+      "text": "# C｜人物与主题：生【USER】\n**人物的具体行动，使主题变量发生新的展开**，而非「字母吻合，所以人物=主题」。\n待独立验收：谁在某场戏中做了什么？使哪个主题的可行动范围、去向或联结条件真正上升？\n**本轮明确归类：生，不写克或补。**",
+      "x": 1535,
+      "y": 810,
+      "width": 930,
+      "height": 495,
+      "color": "3"
+    },
+    {
+      "id": "K_THEME",
+      "type": "text",
+      "text": "# B｜五维主题网：双生【USER】\n**主题关系形态＝双生**，必须拆成两条各自可检验的生边。\n① 命运→时间：旧案例USER判读（与现行主题生环反向）。\n② 第二条生边：**具体端点待独立判定**；现行L2有「时间→命运」，但不能自动当成此片USER所指的第二条。",
+      "x": 2765,
+      "y": 810,
+      "width": 930,
+      "height": 495,
+      "color": "4"
+    },
+    {
+      "id": "K_ROLE_EVENTS",
+      "type": "text",
+      "text": "## 人物主导边｜事件示意【H】\n**泷 XN＋XZ → 三叶 NZ＋Z**：2016年查到2013年糸守灾难，用未来知识与口嚼酒返回、启动撤离预警；三叶回到自己的身体，说服父亲落实撤离。\n这是可复核的一条**信息/行动主导边**；并非否定三叶2013年先去东京赠结绳的作用。单边的精确定义尚待USER细化。",
+      "x": 170,
+      "y": 1490,
+      "width": 930,
+      "height": 590,
+      "color": "5"
+    },
+    {
+      "id": "K_CROSS_EVENTS",
+      "type": "text",
+      "text": "## 人物如何生出主题变化\n**前提**：原有命运=三叶可能遇难；时间差=行动信息不能直接共享。\n**行动**：泷发现过去死亡事实、设法回到灾难日，三叶与朋友落实撤离。\n**变量改变**：居民生存去向改变；彗星仍坠落。\n**跨层“生”候选**：人物的选择使「可改变结局」的时间与命运作用得以展开，而非人物直接制造时间本身。",
+      "x": 1535,
+      "y": 1490,
+      "width": 930,
+      "height": 590,
+      "color": "3"
+    },
+    {
+      "id": "K_THEME_EVENTS",
+      "type": "text",
+      "text": "## 双生拆边｜来源分离\n**候选① 命运 生 时间【USER旧作品解释】**：先发现无法相见／死亡结局，才逼出跨时间救援行动。\n**形式对照 时间 生 命运【现行五维L2生环】**：利用不同年份的信息和行动条件，改变既有死亡去向；在本片是否足以形成第二条**实际启动**的生边，仍需作者确认并审F1/F2。\n**不要**把双向箭头直接写成已证理论。",
+      "x": 2765,
+      "y": 1490,
+      "width": 930,
+      "height": 590,
+      "color": "4"
+    },
+    {
+      "id": "K_END",
+      "type": "text",
+      "text": "## 结算｜人物的行动改变共同未来\n从“寻找失联的人”升级成“改变本来会死的结局”。\n**结局**：居民撤离，灾难没有被物理阻止；二人失去姓名记忆，却仍主动寻找并重逢。\n**这支撑跨层「生」的研究价值**：同一组人物十元不直接等于某个主题；人物行为真正改变了主题作用的可执行条件。",
+      "x": 170,
+      "y": 2260,
+      "width": 930,
+      "height": 590,
+      "color": "2"
+    },
+    {
+      "id": "K_CONFLICT",
+      "type": "text",
+      "text": "## 三个审错门禁\n1. **单边≠只有一位主角**。两人都是核，人物主导作用可在某阶段抽一条边。\n2. **双生≠两组十元互补**。主题生边需两个独立前后变量；XN↔Z与XZ↔NZ只是五轴相反对照，不自动严格补。\n3. **旧「命运生时间」与现行主题生环冲突**。作品级读法保留【USER】，正式L2理论不改；第二条端点待核。",
+      "x": 1535,
+      "y": 2260,
+      "width": 930,
+      "height": 590,
+      "color": "1"
+    },
+    {
+      "id": "K_LINKS",
+      "type": "text",
+      "text": "## 正本链接｜不复制电影卡\n- [[02_给我用的知识凝结库/01_动态链条/电影卡/C06_你的名字|⑥《你的名字。》完整电影MD]]\n- [[05-银矿库/五大主题仓库/01-命运 xz+nz/奶白素材/你的名字-结构分析|旧版双轴与事件证据]]\n- [[05-银矿库/角色库的/详细卡/立花瀧|立花泷]]、[[05-银矿库/角色库的/详细卡/宫水三叶|宫水三叶]]\n**证据**：USER新分类；F1已有剧情；F2逐镜未验；F3真人感受null。",
+      "x": 2765,
+      "y": 2260,
+      "width": 930,
+      "height": 590,
+      "color": "2"
+    },
+    {
+      "id": "M_HEAD",
+      "type": "text",
+      "text": "# 主题关系 × 人物关系｜研究框架\n**三网分离**：主题网 B｜人物网 R｜跨层网 C。\n分类的目标是找到「一个人的哪种真实行动，让什么主题关系开始生、克或补」，而不是从主题字面反推角色主十元。",
+      "x": 4475,
+      "y": 150,
+      "width": 3030,
+      "height": 255,
+      "color": "5"
+    },
+    {
+      "id": "M_A",
+      "type": "text",
+      "text": "# A｜叙事主导权\n主题主／人物主／两层共同主导：问整片结局主要回答谁提出的问题。\n《你的名字。》：**A仍待锁**；「人物与主题生」属于C，不能替代A。\n人数另记：双人物核心。",
+      "x": 4450,
+      "y": 580,
+      "width": 900,
+      "height": 625,
+      "color": "6"
+    },
+    {
+      "id": "M_B",
+      "type": "text",
+      "text": "# B｜五维主题网\n时间、本体、空间、因果、命运是主题层。\n**三者／三角克／架桥／其他**与生克方向分别记；“双生”可作为新作品研究标签，但**不得因此改写正式五维盘**。",
+      "x": 5550,
+      "y": 580,
+      "width": 900,
+      "height": 625,
+      "color": "4"
+    },
+    {
+      "id": "M_R",
+      "type": "text",
+      "text": "# R｜人物十元网\n人物稳定主/副元由AG-11材料论证；人物之间的**单边、双边、接力、错位**等是研究中的关系形态，不等于严格十元生克补已被实证。\n**单边**至少需一条源→目标的事件证据。",
+      "x": 6650,
+      "y": 580,
+      "width": 900,
+      "height": 625,
+      "color": "5"
+    },
+    {
+      "id": "M_C",
+      "type": "text",
+      "text": "# C｜人物与主题关系\n本次新增：**生【USER，《你的名字。》】**。\n对照候选：克／支持／相等／转化／错位。\n这里的「生」要求：人物的某个行动使原本不足的主题过程或去向具备成立条件；不因两者配色一致就算生。",
+      "x": 4450,
+      "y": 1395,
+      "width": 900,
+      "height": 625,
+      "color": "3"
+    },
+    {
+      "id": "M_FLOWER",
+      "type": "text",
+      "text": "# 对照｜《花束般的恋爱》\n**命运主【USER】**；本体生空间→空间克命运（抵抗败）→命运克本体。人物麦N候选／绢ZN候选。\n**跨层研究【H】**：人物曾创造共同空间，结局又选择放下；暂不定「跨层生/克」一词。",
+      "x": 5550,
+      "y": 1395,
+      "width": 900,
+      "height": 625,
+      "color": "3"
+    },
+    {
+      "id": "M_TRUMAN",
+      "type": "text",
+      "text": "# 对照｜《楚门的世界》\n**空间主／三者【USER】**：因果生本体、因果克空间、本体生空间。\n人物如何与主题对应？发现布景真相和选择离开，为主题结算提供行动条件；**跨层类型仍H**，非USER新确认。",
+      "x": 6650,
+      "y": 1395,
+      "width": 900,
+      "height": 625,
+      "color": "4"
+    },
+    {
+      "id": "M_COMPARE",
+      "type": "text",
+      "text": "# 对照｜《我们一起摇太阳》\n主题三角克【USER】：本体克时间→时间生命运→命运克本体。\n人物配置凌敏XN／吕途Z【USER】；跨层关系不能直接拿人物的十元互补推导为主题三角克。\n**与《花束》比较**：同是三角克，抵抗路径不同。",
+      "x": 4450,
+      "y": 2240,
+      "width": 900,
+      "height": 625,
+      "color": "6"
+    },
+    {
+      "id": "M_TEST",
+      "type": "text",
+      "text": "# 可复用｜每片最低四问\n① 人物主核是什么？【USER/H】\n② 人物作用有几条边，方向/缺口/事件是什么？\n③ 主题有几条生克边，结局改变了哪个变量？\n④ 人物与主题究竟相等、生、克还是转化？拿掉一个行动哪条边失效？\n**各层独立记证据等级。**",
+      "x": 5550,
+      "y": 2240,
+      "width": 900,
+      "height": 625,
+      "color": "2"
+    },
+    {
+      "id": "M_OPEN",
+      "type": "text",
+      "text": "# 当前待核，不急于扩类\n- 《你的名字。》“单边”代表哪一条**主导**人物作用，待作者精确选边；已呈现泷→三叶的可证案例【H】。\n- “双生”两条主题边的具体端点，尚不能因现行盘自动补全。\n- AG-09主题、AG-11人物、AG-13关系、AG-02严格机制各审自己的层级。\n**结论只入案例，不解冻Z/ZN的L2机制。**",
+      "x": 6650,
+      "y": 2240,
+      "width": 900,
+      "height": 625,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "K_E_R2C",
+      "fromNode": "K_ROLE",
+      "fromSide": "right",
+      "toNode": "K_CROSS",
+      "toSide": "left",
+      "label": "人物选择→主题"
+    },
+    {
+      "id": "K_E_C2B",
+      "fromNode": "K_CROSS",
+      "fromSide": "right",
+      "toNode": "K_THEME",
+      "toSide": "left",
+      "label": "生｜结构关系"
+    },
+    {
+      "id": "K_E_R_DOWN",
+      "fromNode": "K_ROLE",
+      "fromSide": "bottom",
+      "toNode": "K_ROLE_EVENTS",
+      "toSide": "top",
+      "label": "单边示例"
+    },
+    {
+      "id": "K_E_C_DOWN",
+      "fromNode": "K_CROSS",
+      "fromSide": "bottom",
+      "toNode": "K_CROSS_EVENTS",
+      "toSide": "top",
+      "label": "具体变量"
+    },
+    {
+      "id": "K_E_T_DOWN",
+      "fromNode": "K_THEME",
+      "fromSide": "bottom",
+      "toNode": "K_THEME_EVENTS",
+      "toSide": "top",
+      "label": "双生拆边"
+    },
+    {
+      "id": "K_E_ROLE_TO_CROSS",
+      "fromNode": "K_ROLE_EVENTS",
+      "fromSide": "right",
+      "toNode": "K_CROSS_EVENTS",
+      "toSide": "left",
+      "label": "行动→结局"
+    },
+    {
+      "id": "K_E_CROSS_TO_THEME",
+      "fromNode": "K_CROSS_EVENTS",
+      "fromSide": "right",
+      "toNode": "K_THEME_EVENTS",
+      "toSide": "left",
+      "label": "主题重算"
+    },
+    {
+      "id": "K_E_ROLE_END",
+      "fromNode": "K_ROLE_EVENTS",
+      "fromSide": "bottom",
+      "toNode": "K_END",
+      "toSide": "top",
+      "label": "故事结算"
+    },
+    {
+      "id": "K_E_CROSS_AUDIT",
+      "fromNode": "K_CROSS_EVENTS",
+      "fromSide": "bottom",
+      "toNode": "K_CONFLICT",
+      "toSide": "top",
+      "label": "审错"
+    },
+    {
+      "id": "K_E_THEME_LINK",
+      "fromNode": "K_THEME_EVENTS",
+      "fromSide": "bottom",
+      "toNode": "K_LINKS",
+      "toSide": "top",
+      "label": "材料入口"
+    }
+  ],
+  "metadata": {
+    "type": "theme-character-cross-layer-research",
+    "status": "L5_USER_CASE_PLUS_H",
+    "created": "2026-11-05",
+    "canvas_role": "DEDICATED_CROSS_LAYER_ANALYSIS_NOT_FILM_CARD_DUPLICATE",
+    "primary_case": "Your Name (2016)",
+    "author_latest": "人物与主题生；人物单边；主题双生",
+    "movie_canonical_md": "02_给我用的知识凝结库/01_动态链条/电影卡/C06_你的名字.md",
+    "formal_l2_theme_cycle": "02-五大主题/五大主题生克盘_v1.0_2026-07-16.md",
+    "double_generation_endpoints": "UNDER_REVIEW",
+    "character_single_edge_endpoint": "EXAMPLE_ONLY_PENDING_USER",
+    "F2": null,
+    "F3": null,
+    "independent_grade": "NOT_SCORED",
+    "ui": "WAIT_LOCAL_UI",
+    "layout_skill": "obsidian-canvas-layout v1.5.1"
+  }
+}
