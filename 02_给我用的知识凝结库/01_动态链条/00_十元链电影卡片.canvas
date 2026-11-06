@@ -1116,6 +1116,16 @@
       "height": 250,
       "color": "2",
       "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C45_尤马县的最后一站.md"
+    },
+    {
+      "id": "TENYUAN_NEW_R03_C46_THE_GUILTY_2018",
+      "type": "file",
+      "x": -1580,
+      "y": 15530,
+      "width": 660,
+      "height": 250,
+      "color": "2",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C46_罪人_2018.md"
     }
   ],
   "edges": [
@@ -1532,6 +1542,14 @@
       "toNode": "TENYUAN_NEW_R03_C45_YUMA_COUNTY_2023",
       "toSide": "left",
       "label": "新片F1因果主候选【AI-H】"
+    },
+    {
+      "id": "theme_index_NEW100_R03_C46",
+      "fromNode": "TENCHAIN_MAIN_THEME_GROUP_CAUSALITY",
+      "fromSide": "right",
+      "toNode": "TENYUAN_NEW_R03_C46_THE_GUILTY_2018",
+      "toSide": "left",
+      "label": "新片F1因果主候选【AI-H】"
     }
   ],
   "metadata": {
@@ -1558,7 +1576,7 @@
     "local_ui": "WAIT_LOCAL_UI",
     "single_source_of_truth": true,
     "skill_path": "07-Codex大脑库/skills/ten-yuan-chain/SKILL.md",
-    "newest_case": "TENYUAN_NEW_R02_C43_SACRED_FIG_2024",
+    "newest_case": "C46",
     "latest_theme_agent_case": {
       "case_id": "TENYUAN_FILM_WATCH022_SPIRITED_AWAY_2001",
       "film": "Spirited Away (2001)",
@@ -1598,7 +1616,7 @@
       "F3": null,
       "local_ui": "WAIT_LOCAL_UI"
     },
-    "updated": "2026-11-05",
+    "updated": "2026-11-06",
     "r1_sealed_case_id": "FILM-CHAIN-WATCH026-20261103",
     "holdout_eligible": false,
     "legacy_case_isolated": true,
