@@ -1146,6 +1146,16 @@
       "height": 250,
       "color": "3",
       "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C48_浩瀚的夜晚_2019.md"
+    },
+    {
+      "id": "TENYUAN_NEW_R03_C49_DROSTE_2020",
+      "type": "file",
+      "x": 920,
+      "y": 15840,
+      "width": 660,
+      "height": 250,
+      "color": "5",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C49_超越无限两分钟_2020.md"
     }
   ],
   "edges": [
@@ -1585,6 +1595,14 @@
       "toNode": "TENYUAN_NEW_R03_C48_THE_VAST_OF_NIGHT_2019",
       "toSide": "left",
       "label": "新片F1空间主候选【AI-H】"
+    },
+    {
+      "id": "EDGE_THEME_TIME_C49_DROSTE_2020",
+      "fromNode": "TENCHAIN_MAIN_THEME_GROUP_TIME",
+      "fromSide": "right",
+      "toNode": "TENYUAN_NEW_R03_C49_DROSTE_2020",
+      "toSide": "left",
+      "label": "新片F1时间主候选【AI-H】"
     }
   ],
   "metadata": {
