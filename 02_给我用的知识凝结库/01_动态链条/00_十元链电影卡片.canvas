@@ -1096,6 +1096,16 @@
       "height": 250,
       "color": "6",
       "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C42_好东西.md"
+    },
+    {
+      "id": "TENYUAN_NEW_R03_C44_QUIET_GIRL_2022",
+      "type": "file",
+      "x": 920,
+      "y": 15220,
+      "width": 660,
+      "height": 250,
+      "color": "3",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C44_安静的女孩.md"
     }
   ],
   "edges": [
@@ -1496,6 +1506,14 @@
       "toNode": "TENYUAN_NEW_R02_C42_HER_STORY_2024",
       "toSide": "left",
       "label": "新片F1研究卡【H】"
+    },
+    {
+      "id": "theme_index_NEW100_R03_C44",
+      "fromNode": "TENCHAIN_MAIN_THEME_GROUP_FATE",
+      "fromSide": "right",
+      "toNode": "TENYUAN_NEW_R03_C44_QUIET_GIRL_2022",
+      "toSide": "left",
+      "label": "新片F1候选【H】"
     }
   ],
   "metadata": {
