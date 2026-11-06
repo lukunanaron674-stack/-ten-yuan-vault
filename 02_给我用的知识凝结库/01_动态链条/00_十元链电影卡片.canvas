@@ -1126,6 +1126,16 @@
       "height": 250,
       "color": "2",
       "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C46_罪人_2018.md"
+    },
+    {
+      "id": "TENYUAN_NEW_R03_C47_THE_FAREWELL_2019",
+      "type": "file",
+      "x": -280,
+      "y": 15530,
+      "width": 660,
+      "height": 250,
+      "color": "6",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C47_别告诉她_2019.md"
     }
   ],
   "edges": [
@@ -1550,6 +1560,13 @@
       "toNode": "TENYUAN_NEW_R03_C46_THE_GUILTY_2018",
       "toSide": "left",
       "label": "新片F1因果主候选【AI-H】"
+    },
+    {
+      "id": "EDGE_THEME_ONTOLOGY_C47_THE_FAREWELL_2019",
+      "fromNode": "THEME_ZONE_ONTOLOGY",
+      "fromSide": "bottom",
+      "toNode": "TENYUAN_NEW_R03_C47_THE_FAREWELL_2019",
+      "toSide": "top"
     }
   ],
   "metadata": {
