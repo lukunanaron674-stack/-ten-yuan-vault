@@ -1156,6 +1156,16 @@
       "height": 250,
       "color": "5",
       "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C49_超越无限两分钟_2020.md"
+    },
+    {
+      "id": "TENYUAN_NEW_R03_C50_MAN_FROM_EARTH_2007",
+      "type": "file",
+      "x": 1650,
+      "y": 15840,
+      "width": 660,
+      "height": 250,
+      "color": "6",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C50_这个男人来自地球_2007.md"
     }
   ],
   "edges": [
@@ -1603,6 +1613,14 @@
       "toNode": "TENYUAN_NEW_R03_C49_DROSTE_2020",
       "toSide": "left",
       "label": "新片F1时间主候选【AI-H】"
+    },
+    {
+      "id": "EDGE_THEME_ONTOLOGY_C50_MAN_FROM_EARTH",
+      "fromNode": "THEME_ZONE_ONTOLOGY",
+      "fromSide": "bottom",
+      "toNode": "TENYUAN_NEW_R03_C50_MAN_FROM_EARTH_2007",
+      "toSide": "top",
+      "label": "新片F1本体主候选【AI-H】"
     }
   ],
   "metadata": {
