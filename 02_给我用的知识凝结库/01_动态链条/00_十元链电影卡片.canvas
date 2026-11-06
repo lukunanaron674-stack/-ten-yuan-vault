@@ -1106,6 +1106,16 @@
       "height": 250,
       "color": "3",
       "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C44_安静的女孩.md"
+    },
+    {
+      "id": "TENYUAN_NEW_R03_C45_YUMA_COUNTY_2023",
+      "type": "file",
+      "x": -1580,
+      "y": 15220,
+      "width": 660,
+      "height": 250,
+      "color": "2",
+      "file": "02_给我用的知识凝结库/01_动态链条/电影卡/C45_尤马县的最后一站.md"
     }
   ],
   "edges": [
@@ -1514,6 +1524,14 @@
       "toNode": "TENYUAN_NEW_R03_C44_QUIET_GIRL_2022",
       "toSide": "left",
       "label": "新片F1候选【H】"
+    },
+    {
+      "id": "theme_index_NEW100_R03_C45",
+      "fromNode": "TENCHAIN_MAIN_THEME_GROUP_CAUSALITY",
+      "fromSide": "right",
+      "toNode": "TENYUAN_NEW_R03_C45_YUMA_COUNTY_2023",
+      "toSide": "left",
+      "label": "新片F1因果主候选【AI-H】"
     }
   ],
   "metadata": {
