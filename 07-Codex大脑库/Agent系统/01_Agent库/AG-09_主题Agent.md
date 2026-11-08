@@ -86,6 +86,75 @@
 - https://www.sina.cn/news/detail/5114367102160295.html （《诡秘之主》官方微博结局企划转发）
 
 **验证目标**：三案例各选一关键选择+改变变量+删卡反例，形成`A×B×C`对照；电影F2原片/小说F2逐章、真实观众F3均未取得，不锁定分类。
+## THEME-CORE L4｜主题×人物跨层映射验证（2026-11-08 方法候选）
+
+> **主题代理L4的唯一职责**：让已经独立判定的五维主题，能够被**人物主动选择、可观察的具体事件与结局残留**检验；也能把现成主题机制转译为彼此不同的原创角色/事件方案。**不是AG-11的“角色认知L4”，不是头像AVATAR-L4的问题状态，也不是代理自主等级L4。**
+>
+> 方法状态：`METHOD_REGISTERED / EVIDENCE_OPEN`；没有独立F2原片/真人F3评价，不将主题耦合研究报告为已验证定律。对应既有研究入口：Linear **674-93**（五轴总控）、**674-330**（AG-11人物侧配对）；不新建平行主题代理或主题Canvas。
+
+### 建议的四层阅读入口（不改既有五维正式理论）
+
+| 认知研究层 | Z | 交付 | 最关键的未决问题 |
+| --- | --- | --- | --- |
+| `THEME-CORE-L1` | 五维主题本体 | 主维/次维、真正的主题问题、题材排除 | 设定与主题是否混淆 |
+| `THEME-CORE-L2` | 五维关系网 | 有方向的作用边与变量、三者/三角克/桥等开放构型 | 共现误判为生克 |
+| `THEME-CORE-L3` | 主题事件机制 | 事件、压力、前后变化、结算与删卡 | 主题只有概念而没有后果 |
+| **`THEME-CORE-L4`** | **主题→人物→事件→主题回流** | **跨层耦合证据包、竞争方案、缺口与失败边界** | **人物选择是否真实改变主题变量** |
+
+此L1–L4仅为**AG-09能力研究层的阅读编排**；L1–L3对应AG-09已有工作，不宣称已另行验收，更不覆盖问题管理系统既有L1–L4。
+
+### L4｜五个需要独立解决的NX
+
+- `TH-L4-01 因果启动`：何种**人物选择**使某个五维主题边真正发生作用？同场出现、说出主题台词、角色感到痛苦不能自动计入。
+- `TH-L4-02 主导权`：主题主导、人物主导、共同主导、结构等价、相互制约、部分错位，是否各自有可观察的事件证据？**叙事主导权**与**跨层映射方式**是正交变量。
+- `TH-L4-03 竞争选角`：同一主题配置下，至少两套不同角色欲望/障碍/关系方案能否成立？AG-09仅给困境与必要行为约束，AG-11自行提出稳定元候选；不能使用五维公式倒推人物十元。
+- `TH-L4-04 删除反证`：逐一删除关键选择、另一角色、信物/制度/跨时媒介、主题压力边，主题问题是否仍被回答？若均可删则关系只是装饰。
+- `TH-L4-05 结算迁移`：人物成功/失败与主题是否完成回答是两张独立账？将电影机制移植到原创短篇时，是否移植的是**改变目标变量的机制**而非表面桥、颜色、身份、职业或道具？
+
+### L4最小可检验包
+
+```yaml
+theme_case_id: ""
+layer_namespace: THEME-CORE
+z_id: TH-L4
+source_level: H|F1|F2|F3|USER
+primary_dimension: null
+secondary_dimensions: []
+theme_question: ""
+theme_topology: THREE_RELATIONS|TRIANGULAR_CONSTRAINT|BRIDGE|OTHER|UNKNOWN
+theme_relation_edges: [] # 每边含source,target,n/x候选,condition,changed_variable
+theme_variable_before: null
+theme_variable_after: null
+narrative_dominance: THEME_LED|CHARACTER_LED|CO_LED|UNKNOWN
+cross_layer_mode: EQUIVALENT|SUPPORTIVE|CONSTRAINING|TRANSFORMING|MISALIGNED|UNKNOWN
+character_packet_ref: "" # AG-11 独立提供，AG-09 无写入人物主元权限
+decisive_role_choice: ""
+choice_cost: ""
+event_carrier: ""
+change_mechanism: ""
+rival_explanation: ""
+counterfactual_delete: ""
+ending_residue: ""
+status: H|PARTIAL|PASS|FAIL|BLOCKED
+next_route: AG-11|AG-13|AG-02|AG-09|USER_REVIEW|STOP
+```
+
+**判定规则**：`AG-09 L1主题成立`与`AG-09 L2边有方向且目标变量确实改变`分别先过；AG-11人物卡须独立存在；AG-13提供`角色→行为→事件→变量`有向链；AG-02复核十元关系与五维边没有混层；L4才能给`PASS`。缺原片/原稿或真人感受、证据链断点时只能`H/PARTIAL/BLOCKED`，不得凭故事解释流畅假造PASS。
+
+### 首个反例｜Claire《不许让给我》与《二手书店的时间信封》
+
+- 《不许让给我》是一部**独立人物竞争短篇【H】**。Claire因退赛压力而决定公平竞赛，最终落选并在作品上署名；人物选择、关系与代价成立候选，但**没有可核的跨时间限制使“因果”变量失效，更没有具体中介改变它**。因此将它直接登记为原项目“时间克因果／命运架桥”，L4应返回`FAIL_THEMATIC_COUPLING`，不能因为有比赛与反转就写成时间主题。
+- 原《二手书店的时间信封》要检验的是**祖母五封音乐谱信、不可逆失去、Lucas自己的音乐决定、Claire不代他决定**怎样通过跨代信息与当下选择改变真实变量；目前此处只提供研究问题，不修改现行三集13主卡、世界规则或USER锁定剧情。
+- **主题侧的可执行反馈**：`theme_question`（跨时间的遗留之物能否为当下创造行动条件？）→`role_pressure`（Claire可帮Lucas核验，却无法替他选择演奏）→`required_choice`（Lucas自己续写并实际试听）→`changed_variable`（从无法完成音乐段落到可以自主完成）→`counterfactual`（删去Lucas自主续写，谱信是否仅提供情绪而无结算？）。这里是**需要被核证的事件机制示例**，并非对“时间克因果”严格边的独立确认。
+
+### 验收有限轮次
+
+- **R1 METHOD_REGISTERED**：AG-09本节与Linear路由、回读SHA；只证明方法登记。
+- **R2 TEST_PENDING**：Claire竞赛短篇作为`FAIL_THEMATIC_COUPLING`反例，作者逐项审核（不将H评为客观证实）。
+- **R3 TEST_PENDING**：将《你的名字。》和《楚门的世界》各抽一条角色选择与主题变量边，比较跨层同构与主题主导；须有F2场景证据或降级H。
+- **R4 TEST_PENDING**：同一主题问题提出两套原创角色配置，先写预期行为再写剧情，比对删卡与主题完成度；不足则STOP。
+- 每轮最多一个增量；不额外设置常驻定时任务，不增加USER每天两项主任务，不由方法登记升级H3任务。
+
 ## 定位
 主题 Agent 位于导演 Agent 与剧本 Agent 之间，负责把“五维”变成可执行的主题问题与主题实验。
 
