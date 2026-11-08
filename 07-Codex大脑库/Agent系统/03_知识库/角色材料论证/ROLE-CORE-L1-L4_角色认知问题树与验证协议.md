@@ -6,7 +6,7 @@ reviewers: [AG-02, AG-09, AG-13, AG-14]
 status: DESIGN_REGISTERED_VALIDATION_OPEN
 authority: research-method-not-canon
 updated: 2026-11-08
-linear_issue: PENDING_REGISTRATION
+linear_issue: 674-330
 source_methods:
   - 07-Codex大脑库/Agent系统/03_知识库/角色材料论证/README_角色十元判定_双主路与关系反推实验.md
   - 07-Codex大脑库/Agent系统/01_Agent库/AG-11_角色Agent.md
