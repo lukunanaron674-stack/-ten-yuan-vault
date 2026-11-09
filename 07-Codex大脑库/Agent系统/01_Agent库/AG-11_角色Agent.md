@@ -392,3 +392,10 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|LOCAL_CODEX_RENDER|IMAGE
 - 执行正本：[[05-银矿库/电影采矿流水线_囷霜钧阿白_AG09|采矿流水线 §00 v2.0]]。先读霜的R1事件材料，**不读AG-09主维结论**即输出十项独立相似度（证据不足null）＋跨幕材料/反材料＋灵魂抽离；再读AG-09的`theme_role_feedback`做反审，不得用主题标签反向改主人格。
 - 必须分栏`stable_yuan / aspiration_yuan / state_yuan / settlement_yuan`；《边缘行者》大卫Z追求ZN、露西XN追求X不能误记成稳定主元换位，《千年女优》主NX向往ZX也同理。
 - 输出`candidate_confidence_reason`为可追溯文字依据而非统计概率；没有跨场证据时`stable_yuan=null`，不得因为钧评分高便自动LOCKED。
+
+
+## FG｜颜构问题发散树（2026-11-09）
+- **字母代号**：FG（Face Geometry / 颜构）；工作别名 `AG-11-FACE-01`；Linear 母工单 [674-331](https://linear.app/674/issue/674-331)。
+- **唯一发散索引**：[[07-Codex大脑库/Agent系统/03_知识库/角色材料论证/FG_颜构问题发散树_v1|FG问题发散树]]；结构为 `FG-G0 → FG-M01..M04 → FG-S01..S14 → FG-C / FG-CAP`。
+- **参数与实验协议**：[[07-Codex大脑库/Agent系统/03_知识库/角色材料论证/FACE-RATIO-LAB_十元五官比例映射实验_v1|FACE-RATIO-LAB方法正本]]。仅供造型研究，不能用五官推定人物主元；无实测与盲判不升级正式Q或视觉Canon。
+- **Canvas**：[[黎黎隆项目/00_总览/角色代理.canvas|角色代理Canvas]]中的FG分支。正式Q只有真实失败证据、父目标影响及可判DONE全部具备才建立，问题深度D1/D2/D3与认知/视觉L层严格分离。
