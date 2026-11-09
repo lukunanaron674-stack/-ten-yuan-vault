@@ -221,6 +221,65 @@
       "y": 5670,
       "width": 280,
       "height": 190
+    },
+    {
+      "id": "face_ratio_root_20261109",
+      "type": "text",
+      "x": 2500,
+      "y": 2200,
+      "width": 920,
+      "height": 220,
+      "text": "# FACE-RATIO-LAB｜十元五官比例映射【新分支】\nAG-11 角色代理｜Linear 674-331（674-330子工单）\n目标：十元→可测量五官结构→权重混合→16岁少女盲辨与反例\n状态：SPEC_REGISTERED / TEST_PENDING；非Canon，不进入正式生产",
+      "color": "6"
+    },
+    {
+      "id": "face_ratio_ten_20261109",
+      "type": "text",
+      "x": 2500,
+      "y": 2530,
+      "width": 440,
+      "height": 310,
+      "text": "## F1｜单元十宫格\n十元：ZX/NX/ZN/X/N/X并Z/XN/Z/XZ/NZ\n参数：脸长H/W、眼宽/W、眼距/EW、鼻长/H、嘴宽/W、下颌/W\n眉、眼、鼻、嘴、耳形态单独标注\n【H】十元结构可视化假设 ≠ 经验定律",
+      "color": "4"
+    },
+    {
+      "id": "face_ratio_mix_20261109",
+      "type": "text",
+      "x": 2990,
+      "y": 2530,
+      "width": 440,
+      "height": 310,
+      "text": "## F2｜主次权重混合\n16岁少女：NX70/X30、NX50/X50、NX30/X70\nH/W：1.12 → 1.14 → 1.16\n眼距/EW：1.09 → 1.07 → 1.05\n对照端点：X100（1.19）与NZ100（1.04）\n数值是目标值，生成图尚无像素实测",
+      "color": "4"
+    },
+    {
+      "id": "face_ratio_test_20261109",
+      "type": "text",
+      "x": 2500,
+      "y": 2920,
+      "width": 440,
+      "height": 280,
+      "text": "## F3｜视觉盲辨与反证\n固定年龄、表情、发型、光线、服装、画风、镜位\n每图：target_ratios vs measured_ratios 分账\n盲判至少3位，记录错判/不可判/混淆矩阵\n禁止黑红、武器、神态等作弊",
+      "color": "3"
+    },
+    {
+      "id": "face_ratio_review_20261109",
+      "type": "text",
+      "x": 2990,
+      "y": 2920,
+      "width": 440,
+      "height": 280,
+      "text": "## F4｜审核/生产边界\n674-173：USER_NX作者审美与反例\n674-282：验收后才能提出视觉L1候选XN\n674-124：未LOCKED不得批量生产\nR1=方法登记；R2=测量与盲测；R3=反例与作者审查\n不改已有角色身份Canon",
+      "color": "1"
+    },
+    {
+      "id": "face_ratio_spec_file_20261109",
+      "type": "file",
+      "file": "07-Codex大脑库/Agent系统/03_知识库/角色材料论证/FACE-RATIO-LAB_十元五官比例映射实验_v1.md",
+      "x": 2660,
+      "y": 3290,
+      "width": 620,
+      "height": 180
     }
   ],
   "edges": [
@@ -424,6 +483,54 @@
       "toNode": "role_warehouse_base_20261008",
       "toSide": "top",
       "label": "Base 链接"
+    },
+    {
+      "id": "e_role_face_ratio_20261109",
+      "fromNode": "az_root",
+      "fromSide": "right",
+      "toNode": "face_ratio_root_20261109",
+      "toSide": "left",
+      "label": "AG-11｜五官视觉研究分支"
+    },
+    {
+      "id": "e_face_ratio_root_ten_20261109",
+      "fromNode": "face_ratio_root_20261109",
+      "fromSide": "bottom",
+      "toNode": "face_ratio_ten_20261109",
+      "toSide": "top",
+      "label": "F1 单元"
+    },
+    {
+      "id": "e_face_ratio_root_mix_20261109",
+      "fromNode": "face_ratio_root_20261109",
+      "fromSide": "bottom",
+      "toNode": "face_ratio_mix_20261109",
+      "toSide": "top",
+      "label": "F2 组合"
+    },
+    {
+      "id": "e_face_ratio_ten_test_20261109",
+      "fromNode": "face_ratio_ten_20261109",
+      "fromSide": "bottom",
+      "toNode": "face_ratio_test_20261109",
+      "toSide": "top",
+      "label": "待测"
+    },
+    {
+      "id": "e_face_ratio_mix_review_20261109",
+      "fromNode": "face_ratio_mix_20261109",
+      "fromSide": "bottom",
+      "toNode": "face_ratio_review_20261109",
+      "toSide": "top",
+      "label": "作者审查"
+    },
+    {
+      "id": "e_face_ratio_test_file_20261109",
+      "fromNode": "face_ratio_test_20261109",
+      "fromSide": "bottom",
+      "toNode": "face_ratio_spec_file_20261109",
+      "toSide": "top",
+      "label": "研究正本"
     }
   ]
 }
