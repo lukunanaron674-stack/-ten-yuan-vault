@@ -225,61 +225,210 @@
     {
       "id": "face_ratio_root_20261109",
       "type": "text",
-      "x": 2500,
-      "y": 2200,
-      "width": 920,
-      "height": 220,
-      "text": "# FACE-RATIO-LAB｜十元五官比例映射【新分支】\nAG-11 角色代理｜Linear 674-331（674-330子工单）\n目标：十元→可测量五官结构→权重混合→16岁少女盲辨与反例\n状态：SPEC_REGISTERED / TEST_PENDING；非Canon，不进入正式生产",
+      "x": 3100,
+      "y": 2160,
+      "width": 940,
+      "height": 225,
+      "text": "# FG-G0｜颜构 Face Geometry【AG-11】\nLinear 674-331｜研究目标：十元候选 → 五官参数假设 → 权重混合 → 盲测 → 可复核能力\n发散树：FG-M01～04 / FG-S01～14；正式Q须满足真实问题证据门槛\n状态：TREE_REGISTERED / VALIDATION_PENDING；非 Canon",
       "color": "6"
     },
     {
       "id": "face_ratio_ten_20261109",
       "type": "text",
       "x": 2500,
-      "y": 2530,
-      "width": 440,
-      "height": 310,
-      "text": "## F1｜单元十宫格\n十元：ZX/NX/ZN/X/N/X并Z/XN/Z/XZ/NZ\n参数：脸长H/W、眼宽/W、眼距/EW、鼻长/H、嘴宽/W、下颌/W\n眉、眼、鼻、嘴、耳形态单独标注\n【H】十元结构可视化假设 ≠ 经验定律",
+      "y": 2560,
+      "width": 450,
+      "height": 280,
+      "text": "# FG-M01｜十元五官结构\nFG-S01 脸型/颌骨测量\nFG-S02 眉眼与表情分离\nFG-S03 鼻口耳独立贡献\nFG-S04 十元边界/近邻错误\n4子问题；H假设，未证明",
       "color": "4"
     },
     {
       "id": "face_ratio_mix_20261109",
       "type": "text",
-      "x": 2990,
-      "y": 2530,
-      "width": 440,
-      "height": 310,
-      "text": "## F2｜主次权重混合\n16岁少女：NX70/X30、NX50/X50、NX30/X70\nH/W：1.12 → 1.14 → 1.16\n眼距/EW：1.09 → 1.07 → 1.05\n对照端点：X100（1.19）与NZ100（1.04）\n数值是目标值，生成图尚无像素实测",
+      "x": 3010,
+      "y": 2560,
+      "width": 450,
+      "height": 280,
+      "text": "# FG-M02｜主副混合机制\nFG-S05 线性插值有效性\nFG-S06 强识别特征优先级\nFG-S07 主副作用关系\nFG-S08 年龄/性别/个体迁移\n4子问题；H假设，未证明",
       "color": "4"
     },
     {
       "id": "face_ratio_test_20261109",
       "type": "text",
-      "x": 2500,
-      "y": 2920,
-      "width": 440,
+      "x": 3520,
+      "y": 2560,
+      "width": 450,
       "height": 280,
-      "text": "## F3｜视觉盲辨与反证\n固定年龄、表情、发型、光线、服装、画风、镜位\n每图：target_ratios vs measured_ratios 分账\n盲判至少3位，记录错判/不可判/混淆矩阵\n禁止黑红、武器、神态等作弊",
+      "text": "# FG-M03｜十元感受与辨识\nFG-S09 无标签盲辨\nFG-S10 发型/表情等混杂\nFG-S11 反例与错判矩阵\nFG-S12 感受与稳定人格解耦\n4子问题；H假设，未证明",
       "color": "3"
     },
     {
       "id": "face_ratio_review_20261109",
       "type": "text",
-      "x": 2990,
-      "y": 2920,
-      "width": 440,
+      "x": 4030,
+      "y": 2560,
+      "width": 450,
       "height": 280,
-      "text": "## F4｜审核/生产边界\n674-173：USER_NX作者审美与反例\n674-282：验收后才能提出视觉L1候选XN\n674-124：未LOCKED不得批量生产\nR1=方法登记；R2=测量与盲测；R3=反例与作者审查\n不改已有角色身份Canon",
+      "text": "# FG-M04｜生产与能力验证\nFG-S13 正面/侧面/四宫格保持\nFG-S14 生产成本/Canon门禁\nFG-C 因果/反例；FG-CAP 待验能力\n2子问题；经674-173审美、674-282试验后才提议规则",
       "color": "1"
     },
     {
       "id": "face_ratio_spec_file_20261109",
       "type": "file",
       "file": "07-Codex大脑库/Agent系统/03_知识库/角色材料论证/FACE-RATIO-LAB_十元五官比例映射实验_v1.md",
-      "x": 2660,
-      "y": 3290,
-      "width": 620,
-      "height": 180
+      "x": 2850,
+      "y": 4070,
+      "width": 500,
+      "height": 165
+    },
+    {
+      "id": "fg_fg_s01_20261109",
+      "type": "text",
+      "x": 2500,
+      "y": 2970,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S01｜脸长、脸宽、下颌结构\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "4"
+    },
+    {
+      "id": "fg_fg_s02_20261109",
+      "type": "text",
+      "x": 2500,
+      "y": 3180,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S02｜眉眼结构 vs 表情混杂\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "4"
+    },
+    {
+      "id": "fg_fg_s03_20261109",
+      "type": "text",
+      "x": 2500,
+      "y": 3390,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S03｜鼻/口/耳独立贡献\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "4"
+    },
+    {
+      "id": "fg_fg_s04_20261109",
+      "type": "text",
+      "x": 2500,
+      "y": 3600,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S04｜近邻十元能否区分\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "4"
+    },
+    {
+      "id": "fg_fg_s05_20261109",
+      "type": "text",
+      "x": 3010,
+      "y": 2970,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S05｜NX+X三档线性可感知？\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "3"
+    },
+    {
+      "id": "fg_fg_s06_20261109",
+      "type": "text",
+      "x": 3010,
+      "y": 3180,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S06｜关键五官是否非线性主导？\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "3"
+    },
+    {
+      "id": "fg_fg_s07_20261109",
+      "type": "text",
+      "x": 3010,
+      "y": 3390,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S07｜主次作用是否区别并置？\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "3"
+    },
+    {
+      "id": "fg_fg_s08_20261109",
+      "type": "text",
+      "x": 3010,
+      "y": 3600,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S08｜年龄与个体差异能否迁移？\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "3"
+    },
+    {
+      "id": "fg_fg_s09_20261109",
+      "type": "text",
+      "x": 3520,
+      "y": 2970,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S09｜十元能否匿名盲辨？\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "2"
+    },
+    {
+      "id": "fg_fg_s10_20261109",
+      "type": "text",
+      "x": 3520,
+      "y": 3180,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S10｜造型作弊变量被消除了吗？\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "2"
+    },
+    {
+      "id": "fg_fg_s11_20261109",
+      "type": "text",
+      "x": 3520,
+      "y": 3390,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S11｜反例与混淆类型是什么？\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "2"
+    },
+    {
+      "id": "fg_fg_s12_20261109",
+      "type": "text",
+      "x": 3520,
+      "y": 3600,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S12｜气质观感是否误判为人格？\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "2"
+    },
+    {
+      "id": "fg_fg_s13_20261109",
+      "type": "text",
+      "x": 4030,
+      "y": 2970,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S13｜跨视角是否保留比例与身份？\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "5"
+    },
+    {
+      "id": "fg_fg_s14_20261109",
+      "type": "text",
+      "x": 4030,
+      "y": 3180,
+      "width": 450,
+      "height": 165,
+      "text": "### FG-S14｜能否可追溯地交付生产？\n状态：H / TEST_PENDING\n实验与反例详见 FG 问题树正本",
+      "color": "5"
+    },
+    {
+      "id": "fg_tree_file_20261109",
+      "type": "file",
+      "file": "07-Codex大脑库/Agent系统/03_知识库/角色材料论证/FG_颜构问题发散树_v1.md",
+      "x": 3460,
+      "y": 4070,
+      "width": 520,
+      "height": 165
     }
   ],
   "edges": [
@@ -509,28 +658,148 @@
       "label": "F2 组合"
     },
     {
-      "id": "e_face_ratio_ten_test_20261109",
-      "fromNode": "face_ratio_ten_20261109",
-      "fromSide": "bottom",
-      "toNode": "face_ratio_test_20261109",
-      "toSide": "top",
-      "label": "待测"
-    },
-    {
-      "id": "e_face_ratio_mix_review_20261109",
-      "fromNode": "face_ratio_mix_20261109",
-      "fromSide": "bottom",
-      "toNode": "face_ratio_review_20261109",
-      "toSide": "top",
-      "label": "作者审查"
-    },
-    {
       "id": "e_face_ratio_test_file_20261109",
       "fromNode": "face_ratio_test_20261109",
       "fromSide": "bottom",
       "toNode": "face_ratio_spec_file_20261109",
       "toSide": "top",
       "label": "研究正本"
+    },
+    {
+      "id": "e_fg_fg_s01_20261109",
+      "fromNode": "face_ratio_ten_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s01_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s02_20261109",
+      "fromNode": "face_ratio_ten_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s02_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s03_20261109",
+      "fromNode": "face_ratio_ten_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s03_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s04_20261109",
+      "fromNode": "face_ratio_ten_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s04_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s05_20261109",
+      "fromNode": "face_ratio_mix_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s05_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s06_20261109",
+      "fromNode": "face_ratio_mix_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s06_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s07_20261109",
+      "fromNode": "face_ratio_mix_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s07_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s08_20261109",
+      "fromNode": "face_ratio_mix_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s08_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s09_20261109",
+      "fromNode": "face_ratio_test_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s09_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s10_20261109",
+      "fromNode": "face_ratio_test_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s10_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s11_20261109",
+      "fromNode": "face_ratio_test_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s11_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s12_20261109",
+      "fromNode": "face_ratio_test_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s12_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s13_20261109",
+      "fromNode": "face_ratio_review_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s13_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_fg_s14_20261109",
+      "fromNode": "face_ratio_review_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_fg_s14_20261109",
+      "toSide": "top",
+      "label": "SUB"
+    },
+    {
+      "id": "e_fg_m03_20261109",
+      "fromNode": "face_ratio_root_20261109",
+      "fromSide": "bottom",
+      "toNode": "face_ratio_test_20261109",
+      "toSide": "top",
+      "label": "FG-M"
+    },
+    {
+      "id": "e_fg_m04_20261109",
+      "fromNode": "face_ratio_root_20261109",
+      "fromSide": "bottom",
+      "toNode": "face_ratio_review_20261109",
+      "toSide": "top",
+      "label": "FG-M"
+    },
+    {
+      "id": "e_fg_root_tree_20261109",
+      "fromNode": "face_ratio_root_20261109",
+      "fromSide": "right",
+      "toNode": "fg_tree_file_20261109",
+      "toSide": "top",
+      "label": "FG 问题树正本"
     }
   ]
 }
