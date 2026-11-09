@@ -396,6 +396,6 @@ next_route: NONE|TENYUAN_REVIEW|WORLD_CHECK|ASSET_CHECK|LOCAL_CODEX_RENDER|IMAGE
 
 ## FG｜颜构问题发散树（2026-11-09）
 - **字母代号**：FG（Face Geometry / 颜构）；工作别名 `AG-11-FACE-01`；Linear 母工单 [674-331](https://linear.app/674/issue/674-331)。
-- **唯一发散索引**：[[07-Codex大脑库/Agent系统/03_知识库/角色材料论证/FG_颜构问题发散树_v1|FG问题发散树]]；现行展示编号为 **`QWE → Qq → Qqw1…Qqw14`**，QWE=主问题、Qq=二级、QqwN=三级；旧 `FG-M/FG-S` 与 `Q1/W1/E1` 仅为兼容历史别名。四个主题分区不是独立问题层。
+- **唯一发散索引**：[[07-Codex大脑库/Agent系统/03_知识库/角色材料论证/FG_颜构问题发散树_v1|FG问题发散树]]；**现行键盘三排编号**：主问题 `Q W E R T Y U I O P`；每个主问题下的子问题按 `a s d f g h j k l`；每个子问题下的子子问题按 `z x c v b n m`。已登记的四个主问题 `Q/W/E/R`，14个子问题 `Qa..Rs`，首轮14个子子问题 `Qaz..Rsz`。例如 `Q → Qa → Qaz`、`W → Wa → Waz`；旧 `QWE→Qq→QqwN`、`FG-M/FG-S`、`Q1/W1/E1` 仅为历史别名。
 - **参数与实验协议**：[[07-Codex大脑库/Agent系统/03_知识库/角色材料论证/FACE-RATIO-LAB_十元五官比例映射实验_v1|FACE-RATIO-LAB方法正本]]。仅供造型研究，不能用五官推定人物主元；无实测与盲判不升级正式Q或视觉Canon。
 - **Canvas**：[[黎黎隆项目/00_总览/角色代理.canvas|角色代理Canvas]]中的FG分支。正式Q只有真实失败证据、父目标影响及可判DONE全部具备才建立，问题深度D1/D2/D3与认知/视觉L层严格分离。
