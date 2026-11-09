@@ -225,220 +225,350 @@
     {
       "id": "face_ratio_root_20261109",
       "type": "text",
-      "x": 2850,
-      "y": 2160,
-      "width": 920,
-      "height": 230,
-      "text": "# QWE｜颜构主问题【AG-11】\n十元如何通过五官比例构成可测量、可盲辨的造型规律？\n工单 674-331｜研究H / TEST_PENDING，不等于人格外貌定律或角色Canon\n唯一编号结构：QWE → Qq → Qqw1…Qqw14",
+      "x": 3675,
+      "y": 2250,
+      "width": 1050,
+      "height": 225,
+      "text": "# 颜构｜AG-11 造型研究（旧 FG / QWE 为历史别名）\n真实编号按键盘三排：主问题 QWERTYUIOP；子问题 asdfghjkl；子子问题 zxcvbnm\n目前 Q / W / E / R 四个主问题、14个子问题、14个子子问题。\n工单 674-331｜H / TEST_PENDING；原角色 Canon 和 H3 生产门禁不变",
       "color": "6"
     },
     {
       "id": "face_ratio_ten_20261109",
       "type": "text",
-      "x": 4290,
-      "y": 2670,
-      "width": 570,
-      "height": 168,
-      "text": "# 五官结构｜排版分组（非问题编号）\nQqw1～Qqw4：脸型、眉眼、鼻口耳、十元边界",
+      "x": 2570,
+      "y": 2690,
+      "width": 685,
+      "height": 195,
+      "text": "# Q｜五官结构（主问题）\n十元各自的脸型/眉眼/鼻口耳/相邻识别边界可否量化？",
       "color": "4"
     },
     {
       "id": "face_ratio_mix_20261109",
       "type": "text",
-      "x": 4290,
-      "y": 2880,
-      "width": 570,
-      "height": 168,
-      "text": "# 主副混合｜排版分组（非问题编号）\nQqw5～Qqw8：比例插值、关键特征、主副作用、个体迁移",
+      "x": 3360,
+      "y": 2690,
+      "width": 685,
+      "height": 195,
+      "text": "# W｜主副混合（主问题）\n十元混合权重与关键五官、年龄迁移的关系是什么？",
       "color": "4"
     },
     {
       "id": "face_ratio_test_20261109",
       "type": "text",
-      "x": 4290,
-      "y": 3090,
-      "width": 570,
-      "height": 168,
-      "text": "# 感受辨识｜排版分组（非问题编号）\nQqw9～Qqw12：盲辨、作弊变量、混淆反例、人格解耦",
+      "x": 4150,
+      "y": 2690,
+      "width": 685,
+      "height": 195,
+      "text": "# E｜感受辨识（主问题）\n如何盲辨、排除视觉作弊、收集反例与人格混淆？",
       "color": "3"
     },
     {
       "id": "face_ratio_review_20261109",
       "type": "text",
-      "x": 4290,
-      "y": 3300,
-      "width": 570,
-      "height": 168,
-      "text": "# 生产验证｜排版分组（非问题编号）\nQqw13～Qqw14：跨视角身份、生产可追溯与审美闸门",
+      "x": 4940,
+      "y": 2690,
+      "width": 685,
+      "height": 195,
+      "text": "# R｜生产验证（主问题）\n如何保证跨镜头一致性与生产资产的可追溯审核？",
       "color": "1"
     },
     {
       "id": "face_ratio_spec_file_20261109",
       "type": "file",
       "file": "07-Codex大脑库/Agent系统/03_知识库/角色材料论证/FACE-RATIO-LAB_十元五官比例映射实验_v1.md",
-      "x": 2600,
-      "y": 4160,
-      "width": 550,
-      "height": 175
+      "x": 3350,
+      "y": 4660,
+      "width": 600,
+      "height": 180
     },
     {
       "id": "fg_fg_s01_20261109",
       "type": "text",
-      "x": 2420,
-      "y": 2990,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw1｜脸长、脸宽、下颌结构\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 2570,
+      "y": 3030,
+      "width": 685,
+      "height": 150,
+      "text": "# Qa｜脸长、脸宽、下颌结构\n子问题；parent=Q\n状态：H / TEST_PENDING",
       "color": "4"
     },
     {
       "id": "fg_fg_s02_20261109",
       "type": "text",
-      "x": 3000,
-      "y": 2990,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw2｜眉眼结构 vs 表情混杂\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 2570,
+      "y": 3395,
+      "width": 685,
+      "height": 150,
+      "text": "# Qs｜眉眼结构 vs 表情混杂\n子问题；parent=Q\n状态：H / TEST_PENDING",
       "color": "4"
     },
     {
       "id": "fg_fg_s03_20261109",
       "type": "text",
-      "x": 3580,
-      "y": 2990,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw3｜鼻/口/耳独立贡献\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 2570,
+      "y": 3760,
+      "width": 685,
+      "height": 150,
+      "text": "# Qd｜鼻/口/耳独立贡献\n子问题；parent=Q\n状态：H / TEST_PENDING",
       "color": "4"
     },
     {
       "id": "fg_fg_s04_20261109",
       "type": "text",
-      "x": 2420,
-      "y": 3195,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw4｜近邻十元能否区分\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 2570,
+      "y": 4125,
+      "width": 685,
+      "height": 150,
+      "text": "# Qf｜近邻十元能否区分\n子问题；parent=Q\n状态：H / TEST_PENDING",
       "color": "4"
     },
     {
       "id": "fg_fg_s05_20261109",
       "type": "text",
-      "x": 3000,
-      "y": 3195,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw5｜NX+X三档线性可感知？\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 3360,
+      "y": 3030,
+      "width": 685,
+      "height": 150,
+      "text": "# Wa｜NX+X三档线性可感知？\n子问题；parent=W\n状态：H / TEST_PENDING",
       "color": "3"
     },
     {
       "id": "fg_fg_s06_20261109",
       "type": "text",
-      "x": 3580,
-      "y": 3195,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw6｜关键五官是否非线性主导？\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 3360,
+      "y": 3395,
+      "width": 685,
+      "height": 150,
+      "text": "# Ws｜关键五官是否非线性主导？\n子问题；parent=W\n状态：H / TEST_PENDING",
       "color": "3"
     },
     {
       "id": "fg_fg_s07_20261109",
       "type": "text",
-      "x": 2420,
-      "y": 3400,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw7｜主次作用是否区别并置？\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 3360,
+      "y": 3760,
+      "width": 685,
+      "height": 150,
+      "text": "# Wd｜主次作用是否区别并置？\n子问题；parent=W\n状态：H / TEST_PENDING",
       "color": "3"
     },
     {
       "id": "fg_fg_s08_20261109",
       "type": "text",
-      "x": 3000,
-      "y": 3400,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw8｜年龄与个体差异能否迁移？\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 3360,
+      "y": 4125,
+      "width": 685,
+      "height": 150,
+      "text": "# Wf｜年龄与个体差异能否迁移？\n子问题；parent=W\n状态：H / TEST_PENDING",
       "color": "3"
     },
     {
       "id": "fg_fg_s09_20261109",
       "type": "text",
-      "x": 3580,
-      "y": 3400,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw9｜十元能否匿名盲辨？\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 4150,
+      "y": 3030,
+      "width": 685,
+      "height": 150,
+      "text": "# Ea｜十元能否匿名盲辨？\n子问题；parent=E\n状态：H / TEST_PENDING",
       "color": "2"
     },
     {
       "id": "fg_fg_s10_20261109",
       "type": "text",
-      "x": 2420,
-      "y": 3605,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw10｜造型作弊变量被消除了吗？\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 4150,
+      "y": 3395,
+      "width": 685,
+      "height": 150,
+      "text": "# Es｜造型作弊变量被消除了吗？\n子问题；parent=E\n状态：H / TEST_PENDING",
       "color": "2"
     },
     {
       "id": "fg_fg_s11_20261109",
       "type": "text",
-      "x": 3000,
-      "y": 3605,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw11｜反例与混淆类型是什么？\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 4150,
+      "y": 3760,
+      "width": 685,
+      "height": 150,
+      "text": "# Ed｜反例与混淆类型是什么？\n子问题；parent=E\n状态：H / TEST_PENDING",
       "color": "2"
     },
     {
       "id": "fg_fg_s12_20261109",
       "type": "text",
-      "x": 3580,
-      "y": 3605,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw12｜气质观感是否误判为人格？\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 4150,
+      "y": 4125,
+      "width": 685,
+      "height": 150,
+      "text": "# Ef｜气质观感是否误判为人格？\n子问题；parent=E\n状态：H / TEST_PENDING",
       "color": "2"
     },
     {
       "id": "fg_fg_s13_20261109",
       "type": "text",
-      "x": 2420,
-      "y": 3810,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw13｜跨视角是否保留比例与身份？\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 4940,
+      "y": 3030,
+      "width": 685,
+      "height": 150,
+      "text": "# Ra｜跨视角是否保留比例与身份？\n子问题；parent=R\n状态：H / TEST_PENDING",
       "color": "5"
     },
     {
       "id": "fg_fg_s14_20261109",
       "type": "text",
-      "x": 3000,
-      "y": 3810,
-      "width": 515,
-      "height": 160,
-      "text": "### Qqw14｜能否可追溯地交付生产？\n状态：H / TEST_PENDING\n实验与反例详见 QWE 颜构问题树正本\nparent：Qq",
+      "x": 4940,
+      "y": 3395,
+      "width": 685,
+      "height": 150,
+      "text": "# Rs｜能否可追溯地交付生产？\n子问题；parent=R\n状态：H / TEST_PENDING",
       "color": "5"
     },
     {
       "id": "fg_tree_file_20261109",
       "type": "file",
       "file": "07-Codex大脑库/Agent系统/03_知识库/角色材料论证/FG_颜构问题发散树_v1.md",
-      "x": 3290,
-      "y": 4160,
-      "width": 550,
-      "height": 175
+      "x": 4120,
+      "y": 4660,
+      "width": 600,
+      "height": 180
     },
     {
-      "id": "qwe_qq_20261109",
+      "id": "fg_keyboard_leaf_01_20261109",
       "type": "text",
-      "x": 2920,
-      "y": 2510,
-      "width": 780,
-      "height": 165,
-      "text": "# Qq｜子问题汇总\n哪些脸型/眉眼/鼻口、主副混合、辨识与生产变量需要验证？\n下设 Qqw1～Qqw14；四个内容分区仅供排版，不算树层",
-      "color": "4"
+      "x": 2570,
+      "y": 3195,
+      "width": 685,
+      "height": 148,
+      "text": "## Qaz｜最小验证问题\nparent=Qa；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_02_20261109",
+      "type": "text",
+      "x": 2570,
+      "y": 3560,
+      "width": 685,
+      "height": 148,
+      "text": "## Qsz｜最小验证问题\nparent=Qs；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_03_20261109",
+      "type": "text",
+      "x": 2570,
+      "y": 3925,
+      "width": 685,
+      "height": 148,
+      "text": "## Qdz｜最小验证问题\nparent=Qd；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_04_20261109",
+      "type": "text",
+      "x": 2570,
+      "y": 4290,
+      "width": 685,
+      "height": 148,
+      "text": "## Qfz｜最小验证问题\nparent=Qf；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_05_20261109",
+      "type": "text",
+      "x": 3360,
+      "y": 3195,
+      "width": 685,
+      "height": 148,
+      "text": "## Waz｜最小验证问题\nparent=Wa；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_06_20261109",
+      "type": "text",
+      "x": 3360,
+      "y": 3560,
+      "width": 685,
+      "height": 148,
+      "text": "## Wsz｜最小验证问题\nparent=Ws；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_07_20261109",
+      "type": "text",
+      "x": 3360,
+      "y": 3925,
+      "width": 685,
+      "height": 148,
+      "text": "## Wdz｜最小验证问题\nparent=Wd；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_08_20261109",
+      "type": "text",
+      "x": 3360,
+      "y": 4290,
+      "width": 685,
+      "height": 148,
+      "text": "## Wfz｜最小验证问题\nparent=Wf；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_09_20261109",
+      "type": "text",
+      "x": 4150,
+      "y": 3195,
+      "width": 685,
+      "height": 148,
+      "text": "## Eaz｜最小验证问题\nparent=Ea；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_10_20261109",
+      "type": "text",
+      "x": 4150,
+      "y": 3560,
+      "width": 685,
+      "height": 148,
+      "text": "## Esz｜最小验证问题\nparent=Es；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_11_20261109",
+      "type": "text",
+      "x": 4150,
+      "y": 3925,
+      "width": 685,
+      "height": 148,
+      "text": "## Edz｜最小验证问题\nparent=Ed；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_12_20261109",
+      "type": "text",
+      "x": 4150,
+      "y": 4290,
+      "width": 685,
+      "height": 148,
+      "text": "## Efz｜最小验证问题\nparent=Ef；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_13_20261109",
+      "type": "text",
+      "x": 4940,
+      "y": 3195,
+      "width": 685,
+      "height": 148,
+      "text": "## Raz｜最小验证问题\nparent=Ra；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
+    },
+    {
+      "id": "fg_keyboard_leaf_14_20261109",
+      "type": "text",
+      "x": 4940,
+      "y": 3560,
+      "width": 685,
+      "height": 148,
+      "text": "## Rsz｜最小验证问题\nparent=Rs；H / TEST_PENDING\n实验与反例详见「FG_颜构问题发散树_v1.md」",
+      "color": "3"
     }
   ],
   "edges": [
@@ -652,140 +782,276 @@
       "label": "AG-11｜五官视觉研究分支"
     },
     {
-      "id": "e_face_ratio_test_file_20261109",
-      "fromNode": "face_ratio_test_20261109",
+      "id": "e_fg_keyboard_root_q_20261109",
+      "fromNode": "face_ratio_root_20261109",
       "fromSide": "bottom",
-      "toNode": "face_ratio_spec_file_20261109",
+      "toNode": "face_ratio_ten_20261109",
       "toSide": "top",
-      "label": "研究正本"
+      "label": "主问题 Q"
     },
     {
-      "id": "e_fg_fg_s01_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_root_w_20261109",
+      "fromNode": "face_ratio_root_20261109",
+      "fromSide": "bottom",
+      "toNode": "face_ratio_mix_20261109",
+      "toSide": "top",
+      "label": "主问题 W"
+    },
+    {
+      "id": "e_fg_keyboard_root_e_20261109",
+      "fromNode": "face_ratio_root_20261109",
+      "fromSide": "bottom",
+      "toNode": "face_ratio_test_20261109",
+      "toSide": "top",
+      "label": "主问题 E"
+    },
+    {
+      "id": "e_fg_keyboard_root_r_20261109",
+      "fromNode": "face_ratio_root_20261109",
+      "fromSide": "bottom",
+      "toNode": "face_ratio_review_20261109",
+      "toSide": "top",
+      "label": "主问题 R"
+    },
+    {
+      "id": "e_fg_keyboard_level2_1_20261109",
+      "fromNode": "face_ratio_ten_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s01_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Qa"
     },
     {
-      "id": "e_fg_fg_s02_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_1_20261109",
+      "fromNode": "fg_fg_s01_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_01_20261109",
+      "toSide": "top",
+      "label": "Qaz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_2_20261109",
+      "fromNode": "face_ratio_ten_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s02_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Qs"
     },
     {
-      "id": "e_fg_fg_s03_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_2_20261109",
+      "fromNode": "fg_fg_s02_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_02_20261109",
+      "toSide": "top",
+      "label": "Qsz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_3_20261109",
+      "fromNode": "face_ratio_ten_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s03_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Qd"
     },
     {
-      "id": "e_fg_fg_s04_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_3_20261109",
+      "fromNode": "fg_fg_s03_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_03_20261109",
+      "toSide": "top",
+      "label": "Qdz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_4_20261109",
+      "fromNode": "face_ratio_ten_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s04_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Qf"
     },
     {
-      "id": "e_fg_fg_s05_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_4_20261109",
+      "fromNode": "fg_fg_s04_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_04_20261109",
+      "toSide": "top",
+      "label": "Qfz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_5_20261109",
+      "fromNode": "face_ratio_mix_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s05_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Wa"
     },
     {
-      "id": "e_fg_fg_s06_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_5_20261109",
+      "fromNode": "fg_fg_s05_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_05_20261109",
+      "toSide": "top",
+      "label": "Waz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_6_20261109",
+      "fromNode": "face_ratio_mix_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s06_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Ws"
     },
     {
-      "id": "e_fg_fg_s07_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_6_20261109",
+      "fromNode": "fg_fg_s06_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_06_20261109",
+      "toSide": "top",
+      "label": "Wsz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_7_20261109",
+      "fromNode": "face_ratio_mix_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s07_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Wd"
     },
     {
-      "id": "e_fg_fg_s08_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_7_20261109",
+      "fromNode": "fg_fg_s07_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_07_20261109",
+      "toSide": "top",
+      "label": "Wdz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_8_20261109",
+      "fromNode": "face_ratio_mix_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s08_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Wf"
     },
     {
-      "id": "e_fg_fg_s09_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_8_20261109",
+      "fromNode": "fg_fg_s08_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_08_20261109",
+      "toSide": "top",
+      "label": "Wfz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_9_20261109",
+      "fromNode": "face_ratio_test_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s09_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Ea"
     },
     {
-      "id": "e_fg_fg_s10_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_9_20261109",
+      "fromNode": "fg_fg_s09_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_09_20261109",
+      "toSide": "top",
+      "label": "Eaz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_10_20261109",
+      "fromNode": "face_ratio_test_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s10_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Es"
     },
     {
-      "id": "e_fg_fg_s11_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_10_20261109",
+      "fromNode": "fg_fg_s10_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_10_20261109",
+      "toSide": "top",
+      "label": "Esz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_11_20261109",
+      "fromNode": "face_ratio_test_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s11_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Ed"
     },
     {
-      "id": "e_fg_fg_s12_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_11_20261109",
+      "fromNode": "fg_fg_s11_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_11_20261109",
+      "toSide": "top",
+      "label": "Edz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_12_20261109",
+      "fromNode": "face_ratio_test_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s12_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Ef"
     },
     {
-      "id": "e_fg_fg_s13_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_12_20261109",
+      "fromNode": "fg_fg_s12_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_12_20261109",
+      "toSide": "top",
+      "label": "Efz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_13_20261109",
+      "fromNode": "face_ratio_review_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s13_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Ra"
     },
     {
-      "id": "e_fg_fg_s14_20261109",
-      "fromNode": "qwe_qq_20261109",
+      "id": "e_fg_keyboard_level3_13_20261109",
+      "fromNode": "fg_fg_s13_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_13_20261109",
+      "toSide": "top",
+      "label": "Raz"
+    },
+    {
+      "id": "e_fg_keyboard_level2_14_20261109",
+      "fromNode": "face_ratio_review_20261109",
       "fromSide": "bottom",
       "toNode": "fg_fg_s14_20261109",
       "toSide": "top",
-      "label": "Qqw"
+      "label": "Rs"
     },
     {
-      "id": "e_fg_root_tree_20261109",
+      "id": "e_fg_keyboard_level3_14_20261109",
+      "fromNode": "fg_fg_s14_20261109",
+      "fromSide": "bottom",
+      "toNode": "fg_keyboard_leaf_14_20261109",
+      "toSide": "top",
+      "label": "Rsz"
+    },
+    {
+      "id": "e_fg_keyboard_root_doc_20261109",
       "fromNode": "face_ratio_root_20261109",
       "fromSide": "right",
       "toNode": "fg_tree_file_20261109",
       "toSide": "top",
-      "label": "FG 问题树正本"
+      "label": "问题树正本"
     },
     {
-      "id": "e_qwe_qq_20261109",
+      "id": "e_fg_keyboard_root_spec_20261109",
       "fromNode": "face_ratio_root_20261109",
-      "fromSide": "bottom",
-      "toNode": "qwe_qq_20261109",
+      "fromSide": "left",
+      "toNode": "face_ratio_spec_file_20261109",
       "toSide": "top",
-      "label": "QWE→Qq"
+      "label": "比例方法正本"
     }
   ]
 }
