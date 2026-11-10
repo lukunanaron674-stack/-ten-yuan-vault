@@ -1,0 +1,80 @@
+---
+type: character_visual_reference
+id: CHARREF-001
+name: 雾梨
+name_status: candidate_nickname
+source_type: user_supplied_screenshot
+source_file: assets/CHARREF-001_雾梨_原始参考_用户截图.png
+illustration_file: assets/CHARREF-001_雾梨_AI造型设定图.png
+visual_tenyuan_candidate: {NZ: 55, NX: 30, X: 15}
+visual_tenyuan_status: VISUAL_HYPOTHESIS
+character_tenyuan: UNKNOWN
+measurement_status: NOT_MEASURED
+review_status: PENDING_USER
+canonical_character_id: null
+tags: [角色参考, 十元五官, NZ, NX, X, 待实测]
+created: 2026-11-10
+---
+
+# CHARREF-001｜雾梨｜十元五官参考卡
+
+> **角色视觉素材，非正式人物Canon。**「雾梨」为便于检索的候选名称。NZ55/NX30/X15为未验证的视觉感受构成假说，并非人物真实人格比例。年龄未确认。
+
+## 参考素材
+
+- 用户提交原始图：`assets/CHARREF-001_雾梨_原始参考_用户截图.png`
+- AI扩展造型图：`assets/CHARREF-001_雾梨_AI造型设定图.png`
+
+**上述图像实际保存在本地MD素材包，未上传至GitHub；本页在GitHub中不代表图片已经在线可用。** 原图来源及权利信息未知，需核查。
+
+## 可见造型锚点
+
+| 部位 | 可观察要点 |
+|---|---|
+| 脸部 | 柔和椭圆轮廓、两颊饱满、下巴细小 |
+| 眉眼 | 舒展圆眼、目光侧向、眉弧平缓 |
+| 鼻口 | 鼻尖小巧、柔和唇线 |
+| 发型 | 黑色碎刘海、两侧蓬松发束 |
+| 头部饰品 | 银灰色包耳耳机、粉橙与黄绿色发夹 |
+| 服装 | 米白高褶边领、外侧深色衣装；下半身未知 |
+
+## 十元视觉候选
+
+| 元 | 权重 | 视觉结构假说 |
+|---|---:|---|
+| NZ | 55% | 圆润留白、温和眼部 |
+| NX | 30% | 眼口内敛、安静比例 |
+| X | 15% | 下颌轻收、局部边界 |
+
+**不以五官判定人物稳定十元。** AI扩展图中的全身衣装、三视图、饰物细节是创意补全，不是截图直接证据。
+
+## 五官比例（初步目测，未实测）
+
+| 指标 | 估计范围 |
+|---|---|
+| 脸长/脸宽 | 1.07–1.13 |
+| 单眼宽/脸宽 | 0.22–0.24 |
+| 眼距/眼宽 | 1.05–1.15 |
+| 鼻长/脸长 | 0.11–0.14 |
+| 嘴宽/脸宽 | 0.26–0.30 |
+| 下颌宽/脸宽 | 0.54–0.60 |
+
+*目测受到非正面视角、发丝与耳机遮挡影响，不能写入实测字段。*
+
+## 本地素材校验
+
+| 文件名 | SHA256 |
+|---|---|
+| `CHARREF-001_雾梨_原始参考_用户截图.png` | `e04d6192f2cf372a65864e739be49ff4dc47b811b37687066508cf5d225b7102` |
+| `CHARREF-001_雾梨_AI造型设定图.png` | `73036dd3e498ca0b9e0e010160b061daded2d1af3f287f60343af24c76fe5eb5` |
+
+## 状态
+
+- [x] 原始参考截图已保存于本地素材包
+- [x] AI拓展角色设定图已保存于本地素材包
+- [ ] 作者确认昵称与十元视觉候选
+- [ ] 对正面标准样本做五官几何实测
+- [ ] 遮蔽装饰与标签做独立盲判
+- [ ] 来源/图像传播权核查
+
+研究链：AG-11 → Y外形构成 → Ya颜构 → [674-331](https://linear.app/674/issue/674-331)。
