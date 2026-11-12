@@ -509,6 +509,36 @@
       "width": 320,
       "height": 165,
       "color": "3"
+    },
+    {
+      "id": "a6_social_r01_governance",
+      "type": "text",
+      "text": "# 官署与军伍｜R01\n宁朝：内廷二十四衙门（12监/4司/8局）→司礼监\n司礼监→密谍司→解烦卫\n主刑司→鱼龙卫；主刑司监察密谍司≠隶属\n匠作监／柴碳局（直属待核）\n宁帝万岁军 ≠ 靖王府千岁军",
+      "x": 1845,
+      "y": 310,
+      "width": 425,
+      "height": 240,
+      "color": "4"
+    },
+    {
+      "id": "a6_social_r01_society",
+      "type": "text",
+      "text": "# 教育／修行／世家｜R01\n三大书院：东林、青崖、岳麓\n佛门：陀罗寺；云州葛宁派\n中原六姓：刘、徐、胡、陈、齐、羊\n梁家刀道传承／洛城同知陈府\n以上是社会成员关系，不是单一行政父子链",
+      "x": 1845,
+      "y": 590,
+      "width": 425,
+      "height": 210,
+      "color": "6"
+    },
+    {
+      "id": "a6_social_r01_progress",
+      "type": "text",
+      "text": "# R01 采集状态｜PARTIAL\n章段窗口：1–43章；页面入口43/43可访问\n已登记：30张候选对象/集合卡（非30个独立机构）\nW评分：旧候选保留，新对象证据不足写 W?\n完整逐章组织穷尽未验；R02 尚未开始\n[[06_社会结构/青山_武侠社会_包含树与世界影响体量.md]]",
+      "x": 1845,
+      "y": 840,
+      "width": 425,
+      "height": 195,
+      "color": "3"
     }
   ],
   "edges": [
@@ -860,6 +890,27 @@
       "fromNode": "a6_social_qingshan",
       "fromSide": "bottom",
       "toNode": "a6_social_wumiao",
+      "toSide": "top"
+    },
+    {
+      "id": "a6e1",
+      "fromNode": "a6_social_qingshan",
+      "fromSide": "right",
+      "toNode": "a6_social_r01_governance",
+      "toSide": "left"
+    },
+    {
+      "id": "a6e2",
+      "fromNode": "a6_social_qingshan",
+      "fromSide": "right",
+      "toNode": "a6_social_r01_society",
+      "toSide": "left"
+    },
+    {
+      "id": "a6e3",
+      "fromNode": "a6_social_r01_society",
+      "fromSide": "bottom",
+      "toNode": "a6_social_r01_progress",
       "toSide": "top"
     }
   ]
