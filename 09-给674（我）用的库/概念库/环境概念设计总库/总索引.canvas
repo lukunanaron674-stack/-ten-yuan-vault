@@ -479,6 +479,36 @@
       "width": 300,
       "height": 100,
       "color": "2"
+    },
+    {
+      "id": "a6_social_title",
+      "type": "text",
+      "text": "# 📚 06｜社会结构扩展\n**W1–1000 世界影响体量**\n独立于原五轴分类",
+      "x": 1460,
+      "y": 160,
+      "width": 320,
+      "height": 110,
+      "color": "4"
+    },
+    {
+      "id": "a6_social_qingshan",
+      "type": "text",
+      "text": "## 《青山》武侠社会树\n[[06_社会结构/青山_武侠社会_包含树与世界影响体量.md]]\n世界 → 王朝/武庙/宗教/江湖 → 组织 → 人员",
+      "x": 1460,
+      "y": 310,
+      "width": 320,
+      "height": 145,
+      "color": "6"
+    },
+    {
+      "id": "a6_social_wumiao",
+      "type": "text",
+      "text": "## 武庙 W820【研究候选】\n位于景朝、组织独立、跨朝影响\n山长职位 W770｜陆阳 W740\n黄山道庭 W790：**并列、互不隶属**\n注：W不是战斗力、物理面积或读者感受",
+      "x": 1460,
+      "y": 495,
+      "width": 320,
+      "height": 165,
+      "color": "3"
     }
   ],
   "edges": [
@@ -810,6 +840,27 @@
       "fromSide": "right",
       "toNode": "source_note",
       "toSide": "left"
+    },
+    {
+      "id": "e48",
+      "fromNode": "title",
+      "fromSide": "right",
+      "toNode": "a6_social_title",
+      "toSide": "top"
+    },
+    {
+      "id": "e49",
+      "fromNode": "a6_social_title",
+      "fromSide": "bottom",
+      "toNode": "a6_social_qingshan",
+      "toSide": "top"
+    },
+    {
+      "id": "e50",
+      "fromNode": "a6_social_qingshan",
+      "fromSide": "bottom",
+      "toNode": "a6_social_wumiao",
+      "toSide": "top"
     }
   ]
 }
