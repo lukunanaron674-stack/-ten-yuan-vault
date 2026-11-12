@@ -15,6 +15,11 @@ F2: null
 F3: null
 assessment_mode: ASSISTED_SEQUENTIAL
 independent_grade: false
+jun_rubric_audit: JUN_V2_20261112
+jun_score_validity: INVALID_RUBRIC_MISMATCH
+jun_readiness_100: null
+jun_historical_readiness_100: 80
+jun_mechanism_gain_0_5: 3
 type_gap_id: C_CONTROL_TO_RELATIONAL_RELEASE__B_LOOP_REPAIR_FAILURE
 novelty_delta: OLD_TYPE_NEW_MECHANISM
 ---
@@ -59,7 +64,7 @@ Dean：稳定十元 **null**，追求十元 **null**；可证行为是规划周�
 - **AG-11人物独立草判**：仅从E01–E04提出“高控制需求”行为假说，稳定／追求／结算十元全部null；缺跨场景十项相似和负例。
 - **AG-13四轨**：PLOT_ACTION=E01–E04；ROLE_TENYUAN=INSUFFICIENT_EVIDENCE；THEME_FILM=本体/时间竞争但严格生克NOT_ESTABLISHED；L2_CLAIM=NONE。
 - **AG-02反证**：删除时间装置则无法复制多个Dean，但仍可能存在控制欲造成关系破裂；删耳机指令后“操控反噬”是否仍为全片核心待F2。结尾不同二手解读冲突，不能把“摧毁机器”作为冻结事实。
-- **钧先反证后双轴【AI_SCORE】**：资料与版本23/25、事件22/25、主题竞争16/20、人物与关系11/20、可追溯8/10，合计**80/100**；机制增益**3/5【AI-H】**，不得合并成艺术评分。
+- **钧评分纠错｜2026-11-12【AI_SCORE审计】**：当前有效研究准备度为 **null**，score_validity=INVALID_RUBRIC_MISMATCH。原80/100的五项为「来源23/25、事件22/25、主题16/20、人物11/20、可追溯8/10」，分数加总正确但与方法§04「来源25＋主题25＋人物20＋事件20＋可复用10」的栏目上限及语义不同，**不具可比性**。历史80分仅留档；待按JUN_V2_20261112的五个固定字段重新取证评分，不静默改写成新分。历史机制增益**3/5【AI-H】**仍仅为候选。
 - **阿白模拟审门**：RETURN_SPECIFIC_GAP，缺F2原片时间码、结尾一致性复核、人物稳定元证据。**ASSISTED_SEQUENTIAL / independent_grade=false**，非真人审稿或独立盲测。
 - **错误族**：ERR-GENRE-AS-THEME；ERR-ROLE-FROM-PLOT；ERR-FILM-TO-L2；ERR-END-SOURCE-CONFLICT。
 
