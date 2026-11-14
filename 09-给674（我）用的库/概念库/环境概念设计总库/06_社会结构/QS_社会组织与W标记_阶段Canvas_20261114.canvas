@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# 《青山》社会组织与世界影响体量树\n阶段 Canvas｜作者273–276\n主工单674-334｜PARTIAL",
+      "x": 600,
+      "y": 0,
+      "width": 430,
+      "height": 110,
+      "color": "4"
+    },
+    {
+      "id": "scope",
+      "type": "text",
+      "text": "## 进度 / W口径\n严格PASS：0/859\n旧覆盖：220/859 PROVISIONAL\n全局 W?｜冻结标准未改\n数字仅为旧主树候选，非定稿",
+      "x": 600,
+      "y": 140,
+      "width": 430,
+      "height": 135,
+      "color": "3"
+    },
+    {
+      "id": "court",
+      "type": "text",
+      "text": "## 政权线索\n景朝 W870（旧候选）\n未证明天策军的正式直属关系",
+      "x": 40,
+      "y": 330,
+      "width": 260,
+      "height": 105,
+      "color": "4"
+    },
+    {
+      "id": "tian",
+      "type": "text",
+      "text": "## 天策军\nW?｜本段未定量\n进攻固原城与龙门客栈",
+      "x": 390,
+      "y": 330,
+      "width": 260,
+      "height": 115,
+      "color": "2"
+    },
+    {
+      "id": "yulin",
+      "type": "text",
+      "text": "## 羽林军\nW?｜本段未定量\n须尾巷防线，与边军协同",
+      "x": 700,
+      "y": 330,
+      "width": 260,
+      "height": 115,
+      "color": "6"
+    },
+    {
+      "id": "border",
+      "type": "text",
+      "text": "## 边军\nW?｜本段未定量\n须尾巷筑障；与羽林军并肩行动",
+      "x": 1010,
+      "y": 330,
+      "width": 280,
+      "height": 115,
+      "color": "6"
+    },
+    {
+      "id": "monks",
+      "type": "text",
+      "text": "## 苦觉寺僧兵\nW?｜群体体量待核\n现场协作不等于寺院隶属天策军",
+      "x": 390,
+      "y": 540,
+      "width": 280,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "wumiao",
+      "type": "text",
+      "text": "## 武庙线索\n本段 W?｜仅军官识别“武庙剑种”\n旧主树 W820 为候选，未在本轮复核",
+      "x": 40,
+      "y": 540,
+      "width": 300,
+      "height": 125,
+      "color": "3"
+    },
+    {
+      "id": "scene",
+      "type": "text",
+      "text": "## 战事场景\n固原城 → 须尾巷 → 龙门客栈\n客栈：楼梯、墙体、屋顶、马厩、三楼环廊、梁柱、客房\n城民受战事影响｜W?（不按面积估分）",
+      "x": 720,
+      "y": 540,
+      "width": 460,
+      "height": 150,
+      "color": "1"
+    },
+    {
+      "id": "gap",
+      "type": "text",
+      "text": "## 缺口与下一步\n作者271《屠城》、272《转机》正文缺页，未PASS\n274《围攻》目前单一完整转载来源\n下一章：277《天尊的认可》\n[[06_社会结构/QS_全组织采集与世界体量树_阶段总图_20261114.md]]",
+      "x": 600,
+      "y": 750,
+      "width": 480,
+      "height": 150,
+      "color": "3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "title",
+      "fromSide": "bottom",
+      "toNode": "scope",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "court",
+      "fromSide": "right",
+      "toNode": "tian",
+      "toSide": "left",
+      "label": "直属关系未证"
+    },
+    {
+      "id": "e3",
+      "fromNode": "tian",
+      "fromSide": "right",
+      "toNode": "yulin",
+      "toSide": "left",
+      "label": "战场敌对"
+    },
+    {
+      "id": "e4",
+      "fromNode": "yulin",
+      "fromSide": "right",
+      "toNode": "border",
+      "toSide": "left",
+      "label": "共同筑障"
+    },
+    {
+      "id": "e5",
+      "fromNode": "monks",
+      "fromSide": "top",
+      "toNode": "tian",
+      "toSide": "bottom",
+      "label": "现场协作，非隶属"
+    },
+    {
+      "id": "e6",
+      "fromNode": "tian",
+      "fromSide": "bottom",
+      "toNode": "scene",
+      "toSide": "top",
+      "label": "围攻"
+    },
+    {
+      "id": "e7",
+      "fromNode": "wumiao",
+      "fromSide": "right",
+      "toNode": "tian",
+      "toSide": "left",
+      "label": "线索未证"
+    },
+    {
+      "id": "e8",
+      "fromNode": "scene",
+      "fromSide": "bottom",
+      "toNode": "gap",
+      "toSide": "top"
+    }
+  ]
+}
