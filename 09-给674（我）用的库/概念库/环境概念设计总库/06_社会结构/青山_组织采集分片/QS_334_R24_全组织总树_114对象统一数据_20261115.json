@@ -1808,14 +1808,31 @@
       "score_confidence": "H",
       "old_W": 390,
       "W_delta": 200,
-      "chapters": "185,541,554,848",
-      "contribution": "漕帮跨地区漕运资源、帮众动员及官府改制压力",
+      "chapters": "185,541,554,848,861",
+      "contribution": "漕帮跨地区漕运资源、帮众动员及官府改制压力；作者861《过渡》出现其烧船后金陵周边摆渡能力骤降、运价陡升的短期社会资源冲击",
       "alias": "漕帮",
-      "source_boundary": "四梁八柱为内部职位结构；朝廷拟授军职不等于已改编",
+      "source_boundary": "四梁八柱为内部职位结构；朝廷拟授军职不等于已改编。作者861仅有WebNovel公开预览至第50行，烧船事实由陈迹对话报告；现场渡船短缺与涨价有呈现，但不外推为长期治理或法定隶属。",
       "relation_primary_type": "independent-private-network",
       "relation_primary_target": null,
       "relation_evidence_status": "CLASSIFIED",
-      "parent_relation_caution": "民间组织或联合体；不因合作推正式父关系"
+      "parent_relation_caution": "民间组织或联合体；不因合作推正式父关系",
+      "incremental_evidence": [
+        {
+          "author_chapter": 861,
+          "title": "过渡",
+          "platform_display": "WebNovel Chapter 862",
+          "coverage": "public preview lines 9–50; remainder locked",
+          "url": "https://www.webnovel.com/book/22444590709113204/100563138235122774",
+          "findings": [
+            "陈迹称前夜漕帮烧船，金陵周边船只几近尽毁；金川门可渡车马船仅二十余艘。",
+            "章内对话给出摆渡价从10文/人、50文/马、200文/车升至1两/人、5两/马、20两/车；队伍与亲眷滞留造成即时交通瓶颈。"
+          ],
+          "limits": [
+            "烧船归因在角色陈述中；价格与船只数量是章内场景信息，不证明全城长期供给/制度控制。",
+            "不改变QS21-075候选W590或R22关系。"
+          ]
+        }
+      ]
     },
     {
       "id": "QS21-076",
