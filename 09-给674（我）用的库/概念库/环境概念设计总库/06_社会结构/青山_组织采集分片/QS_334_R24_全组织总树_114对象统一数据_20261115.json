@@ -3287,12 +3287,30 @@
         "https://czbooks.net/n/s6ojkc/z5198kg?chapterNumber=820",
         "https://xszj.org/b/389816/c/21356239"
       ]
+    },
+    {
+      "id": "R22-E038",
+      "from": "QS21-075",
+      "to": "QS21-041",
+      "type": "negotiated-coordination; conditional-fleet-mobilization",
+      "chapter_anchors": [
+        "作者851《造反》",
+        "作者854《杀姚安》"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "evidence": "作者851《造反》页内题名851（虽URL尾号p855）：景朝军情司谛听董遮代表其主人向漕帮提出联手，称可提供争取时间、领兵者、兵刃、马匹及情报；白鲤同意先行使龙江关外六十艘漕船下行，以船抵定海港作为主人会面的条件。作者854《杀姚安》页内题名854（虽URL尾号p858）：陈迹称漕帮已与姚安达成交易，约定船到定海港时姚安会面；该章实际出现的“姚安”是冒名者，不能据此认定本人已赴会。证据支持漕帮与军情司代表间已有交易/协作谈判及条件性船队调动，不证明正式同盟、法定隶属或交易最终履行。",
+      "legal_part_of_confirmed": false,
+      "graph_visualize_as": "negotiated-operational-coordination_not_subordination",
+      "source_urls": [
+        "https://ixdzs8.com/read/549077/p855.html",
+        "https://ixdzs8.com/read/549077/p858.html"
+      ]
     }
   ],
   "audit": {
     "stage": "R24",
     "status": "INTEGRATED_PROVISIONAL_WITH_SOURCE_GAPS",
-    "baseline": "114 IDs (108 QS21 +6 QS22); 35 typed edges; 87 candidate W; 10 W?; 17 non-independent",
+    "baseline": "114 IDs (108 QS21 +6 QS22); 37 positive typed edges +1 negative-equivalence record; 87 candidate W; 10 W?; 17 non-independent",
     "identity": {
       "r21": 108,
       "r22_extension": 6,
@@ -3302,10 +3320,10 @@
       "unmatched_R22_to_R23": 0
     },
     "relationships": {
-      "total": 36,
+      "total": 38,
       "statuses": {
         "TEXT_REPORTED": 19,
-        "OPERATING_RELATION": 10,
+        "OPERATING_RELATION": 12,
         "CANDIDATE_OPEN": 6,
         "NEGATIVE_EQUIVALENCE": 1
       },
@@ -3408,11 +3426,11 @@
       "R05–R09存在非统一全文来源窗口",
       "R17 706,710,718,726无正文",
       "R18 733,742无正文",
-      "R20 851–855仅首分页; 856正文源污染、仅开篇可信; 857–860目录级",
+      "作者851《造反》、853《季氏》、854《杀姚安》已取得可读镜像；R20其它章须按具体作者章题逐页判断，856正文源污染、857–860目录级",
       "旧859章历史快照与新R20至作者860章并存，不推小说已完结"
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
-    "r22_graph_sha": "49fb7f0742daeb4cb6b177681bec0a074e018d02",
-    "r22_update_note": "新增E036：作者853《季氏》报告金陵晚报由漕帮经营及七堂口网络；E019仍为季家筹办刊印关系与产权OPEN。"
+    "r22_graph_sha": "b8fabeeca3fb13f810fe6cc574d9e3a02c523bf7",
+    "r22_update_note": "新增E038：作者851《造反》记录军情司代表提出资源协作方案、白鲤同意六十艘漕船条件性下行；作者854《杀姚安》称双方达成交易。仅证谈判/条件性运营协作，不证正式隶属或会面已履行。"
   }
 }
