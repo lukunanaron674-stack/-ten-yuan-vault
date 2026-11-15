@@ -1013,7 +1013,7 @@
         "821",
         "832"
       ],
-      "caveat": "金陵晚报策划人姚安与季家掌柜关系待分投资/制作/合法所有权"
+      "caveat": "821/826 show Yao An commissioned Ji family shopkeeper to prepare, print and issue Jinling Evening News; operating production relation supported, but legal ownership/shareholding remains OPEN."
     },
     {
       "id": "QS22-N004",
@@ -1259,13 +1259,18 @@
       "id": "R22-E019",
       "source": "QS22-N003",
       "target": "QS21-091",
-      "relation_type": "publishing-commission",
+      "relation_type": "publishing-commission; ownership-open",
       "chapters": [
-        "821",
-        "832"
+        "821《憑照》",
+        "826《鹽引》",
+        "832《貪與癡》"
       ],
       "evidence_status": "CANDIDATE_OPEN",
-      "explanation": "季家掌柜受姚安指示筹办金陵晚报；**不推**：不能断言商行持有报社股份或受景朝朝廷统辖"
+      "explanation": "821: Yao An commissions the Ji family shopkeeper to arrange Jinling Evening News; contributors and block printers are prepared, and the paper is being sold. 826: the shopkeeper says the page was printed on Yao An's instruction and traces inquiries to merchant peers. Confirm commission and production/distribution participation; legal ownership/shareholding of Ji Merchant House remains unproven, so only the ownership parent edge stays OPEN.",
+      "evidence_urls": [
+        "https://ixdzs.tw/read/549077/p825.html",
+        "https://ixdzs.tw/read/549077/p830.html"
+      ]
     },
     {
       "id": "R22-E020",
