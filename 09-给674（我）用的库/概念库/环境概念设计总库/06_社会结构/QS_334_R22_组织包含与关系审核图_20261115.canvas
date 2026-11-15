@@ -1,0 +1,782 @@
+{
+  "nodes": [
+    {
+      "id": "header",
+      "type": "text",
+      "text": "# 《青山》R22｜组织包含、经营与协作图\n674-334｜108对象分类 · 补6个承接对象\n**类型化关系≠全部法定直属**",
+      "x": 980,
+      "y": 0,
+      "width": 1180,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "guide",
+      "type": "text",
+      "text": "## 读图规则\nA→B 的连线可能为管理、经营资产、据点、印刷或临时协作。人物自述的产权仍为候选。\n武庙不隶属景朝；万岁军守京仓不等于京仓为军伍。未知父项保持 UNKNOWN。",
+      "x": 980,
+      "y": 190,
+      "width": 1180,
+      "height": 190,
+      "color": "3"
+    },
+    {
+      "id": "r21",
+      "type": "file",
+      "file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R21_跨20轮组织去重主表_20261115.md",
+      "x": 370,
+      "y": 430,
+      "width": 670,
+      "height": 190,
+      "color": "2"
+    },
+    {
+      "id": "r22",
+      "type": "file",
+      "file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R22_108对象包含隶属关系审核总表_20261115.md",
+      "x": 1140,
+      "y": 430,
+      "width": 670,
+      "height": 190,
+      "color": "4"
+    },
+    {
+      "id": "r22json",
+      "type": "file",
+      "file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R22_组织关系图数据_20261115.json",
+      "x": 1910,
+      "y": 430,
+      "width": 670,
+      "height": 190,
+      "color": "4"
+    },
+    {
+      "id": "cat-0",
+      "type": "text",
+      "text": "## 内廷与刑狱\n链接表达不同关系类型，不是统一父子树",
+      "x": 0,
+      "y": 770,
+      "width": 425,
+      "height": 122,
+      "color": "3"
+    },
+    {
+      "id": "QS21-006",
+      "type": "text",
+      "text": "## 宁朝司礼监\n`QS21-006`\n政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边",
+      "x": 0,
+      "y": 945,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-007",
+      "type": "text",
+      "text": "## 密谍司\n`QS21-007`\n第16章记录称密谍司属司礼监麾下，正式公文未取得；不把解烦卫顺带挂进去",
+      "x": 0,
+      "y": 1133,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-009",
+      "type": "text",
+      "text": "## 主刑司\n`QS21-009`\n政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边",
+      "x": 0,
+      "y": 1321,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-010",
+      "type": "text",
+      "text": "## 鱼龙卫\n`QS21-010`\n17/21主刑司鱼龙卫参与行动；机构与组员分开",
+      "x": 0,
+      "y": 1509,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-095",
+      "type": "text",
+      "text": "## 清吟小班（百顺胡同）\n`QS21-095`\n550金猪明确称百顺胡同清吟小班属司礼监产业，正式产权资料未核",
+      "x": 0,
+      "y": 1697,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "cat-1",
+      "type": "text",
+      "text": "## 宁朝军务、财税\n链接表达不同关系类型，不是统一父子树",
+      "x": 460,
+      "y": 770,
+      "width": 425,
+      "height": 122,
+      "color": "3"
+    },
+    {
+      "id": "QS21-011",
+      "type": "text",
+      "text": "## 兵部\n`QS21-011`\n政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边",
+      "x": 460,
+      "y": 945,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS22-N004",
+      "type": "text",
+      "text": "## 京卫武学\n`QS22-N004`\n历史R15/R16分片有隶属兵部的直接说明；不能把所有武学都等同该校",
+      "x": 460,
+      "y": 1133,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-015",
+      "type": "text",
+      "text": "## 留都户部\n`QS21-015`\n留都户部与户部功能同系但具体制度隶属、地方权限边界尚未闭合",
+      "x": 460,
+      "y": 1321,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS22-N005",
+      "type": "text",
+      "text": "## 龙江关钞关\n`QS22-N005`\n留都户部监管；具体钞关作为场所或独立收税官署待后续定名",
+      "x": 460,
+      "y": 1509,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-031",
+      "type": "text",
+      "text": "## 万岁军\n`QS21-031`\n政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边",
+      "x": 460,
+      "y": 1697,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-100",
+      "type": "text",
+      "text": "## 京仓\n`QS21-100`\n410/411万岁军驻守京仓，仅护卫不为组织包含",
+      "x": 460,
+      "y": 1885,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS22-N001",
+      "type": "text",
+      "text": "## 靖王府\n`QS22-N001`\nR21缺失千岁军上位组织；属于王府政治/侍卫体系，不是全部宁朝军队的军部",
+      "x": 460,
+      "y": 2073,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-032",
+      "type": "text",
+      "text": "## 千岁军\n`QS21-032`\n40章千岁军是靖王府护卫；与万岁军不等同",
+      "x": 460,
+      "y": 2261,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-037",
+      "type": "text",
+      "text": "## 备倭军\n`QS21-037`\n政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边",
+      "x": 460,
+      "y": 2449,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS22-N006",
+      "type": "text",
+      "text": "## 备倭军甲乙丙丁四营\n`QS22-N006`\n原材料提及四营组成；不能当作四支独立全国常备军",
+      "x": 460,
+      "y": 2637,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "cat-2",
+      "type": "text",
+      "text": "## 景朝军政\n链接表达不同关系类型，不是统一父子树",
+      "x": 920,
+      "y": 770,
+      "width": 425,
+      "height": 122,
+      "color": "3"
+    },
+    {
+      "id": "QS21-040",
+      "type": "text",
+      "text": "## 景朝枢密院\n`QS21-040`\n景朝政军社会范畴，并非法定直接下级；具体母机构须另证",
+      "x": 920,
+      "y": 945,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-041",
+      "type": "text",
+      "text": "## 景朝军情司\n`QS21-041`\n738章枢密院监管军情司，旧章提其早期未获批不推翻现阶段监管",
+      "x": 920,
+      "y": 1133,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-042",
+      "type": "text",
+      "text": "## 景朝军略司\n`QS21-042`\n738章枢密院监管军略司；监管≠已证完全法定包含",
+      "x": 920,
+      "y": 1321,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-045",
+      "type": "text",
+      "text": "## 景朝天策军\n`QS21-045`\n景朝政军社会范畴，并非法定直接下级；具体母机构须另证",
+      "x": 920,
+      "y": 1509,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-052",
+      "type": "text",
+      "text": "## 苦觉寺\n`QS21-052`\n修行/宗教/教育机构存在，尚无证据的行政直属不得硬画",
+      "x": 920,
+      "y": 1697,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "cat-3",
+      "type": "text",
+      "text": "## 独立修行与山门\n链接表达不同关系类型，不是统一父子树",
+      "x": 1380,
+      "y": 770,
+      "width": 425,
+      "height": 122,
+      "color": "3"
+    },
+    {
+      "id": "QS21-048",
+      "type": "text",
+      "text": "## 武庙\n`QS21-048`\n修行/宗教/教育机构存在，尚无证据的行政直属不得硬画",
+      "x": 1380,
+      "y": 945,
+      "width": 425,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "QS21-107",
+      "type": "text",
+      "text": "## 武庙长白山天池山门\n`QS21-107`\n293/530/839武庙山门及长白山天池地理与门人据点关系",
+      "x": 1380,
+      "y": 1133,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-049",
+      "type": "text",
+      "text": "## 黄山道庭\n`QS21-049`\n修行/宗教/教育机构存在，尚无证据的行政直属不得硬画",
+      "x": 1380,
+      "y": 1321,
+      "width": 425,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "QS21-102",
+      "type": "text",
+      "text": "## 黄山四城隍庙\n`QS21-102`\n433黄山道庭在京畿四城隍庙经营信众，非四家独立道庭",
+      "x": 1380,
+      "y": 1509,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-050",
+      "type": "text",
+      "text": "## 老君山道庭\n`QS21-050`\n修行/宗教/教育机构存在，尚无证据的行政直属不得硬画",
+      "x": 1380,
+      "y": 1697,
+      "width": 425,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "QS21-103",
+      "type": "text",
+      "text": "## 陆浑山庄\n`QS21-103`\n130老君山道庭山下别院陆浑山庄",
+      "x": 1380,
+      "y": 1885,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "cat-4",
+      "type": "text",
+      "text": "## 陈氏家族/产业\n链接表达不同关系类型，不是统一父子树",
+      "x": 1840,
+      "y": 770,
+      "width": 425,
+      "height": 122,
+      "color": "3"
+    },
+    {
+      "id": "QS21-063",
+      "type": "text",
+      "text": "## 京城陈家\n`QS21-063`\n宗族身份/家系；不因其成员做官推官署为家产",
+      "x": 1840,
+      "y": 945,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-064",
+      "type": "text",
+      "text": "## 陈家二房\n`QS21-064`\n陈家二房为陈氏内部派系，非第二家同姓政权",
+      "x": 1840,
+      "y": 1133,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-092",
+      "type": "text",
+      "text": "## 陈家盐商总号\n`QS21-092`\n350、558陈家盐号掌柜与宗族公账，家财联系直接但账面具体所有权仍应细分",
+      "x": 1840,
+      "y": 1321,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-093",
+      "type": "text",
+      "text": "## 陈家粮号\n`QS21-093`\n350陈家盐号另提陈家粮号；同姓宗族经营，不合并两商号",
+      "x": 1840,
+      "y": 1509,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "cat-5",
+      "type": "text",
+      "text": "## 灯火与商运\n链接表达不同关系类型，不是统一父子树",
+      "x": 2300,
+      "y": 770,
+      "width": 425,
+      "height": 122,
+      "color": "3"
+    },
+    {
+      "id": "QS21-073",
+      "type": "text",
+      "text": "## 灯火\n`QS21-073`\n民间组织或联合体；不因合作推正式父关系",
+      "x": 2300,
+      "y": 945,
+      "width": 425,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "QS21-084",
+      "type": "text",
+      "text": "## 昌平福来客栈\n`QS21-084`\n407–408灯火暗语和昌平福来客栈接叶子/跨城转单，经营节点关系",
+      "x": 2300,
+      "y": 1133,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-086",
+      "type": "text",
+      "text": "## 文昌书局\n`QS21-086`\n520章陆氏明确称文昌书局属灯火产业；合同产权未见",
+      "x": 2300,
+      "y": 1321,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-098",
+      "type": "text",
+      "text": "## 金陵渡船灯火节点\n`QS21-098`\n762灯火金陵渡船、地区正将、竹票与船工调度链",
+      "x": 2300,
+      "y": 1509,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-074",
+      "type": "text",
+      "text": "## 三山会\n`QS21-074`\n民间组织或联合体；不因合作推正式父关系",
+      "x": 2300,
+      "y": 1697,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-075",
+      "type": "text",
+      "text": "## 漕帮\n`QS21-075`\n民间组织或联合体；不因合作推正式父关系",
+      "x": 2300,
+      "y": 1885,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "cat-6",
+      "type": "text",
+      "text": "## 印刷与媒体\n链接表达不同关系类型，不是统一父子树",
+      "x": 2760,
+      "y": 770,
+      "width": 425,
+      "height": 122,
+      "color": "3"
+    },
+    {
+      "id": "QS21-088",
+      "type": "text",
+      "text": "## 琉璃书局\n`QS21-088`\n琉璃书局与《武襄晨报》排印有关，未取得直接产权关系",
+      "x": 2760,
+      "y": 945,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-090",
+      "type": "text",
+      "text": "## 武襄晨报\n`QS21-090`\n764章琉璃书局参与《武襄晨报》排印；报纸与书局不是一个对象",
+      "x": 2760,
+      "y": 1133,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-077",
+      "type": "text",
+      "text": "## 梅花渡\n`QS21-077`\n民间组织或联合体；不因合作推正式父关系",
+      "x": 2760,
+      "y": 1321,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-089",
+      "type": "text",
+      "text": "## 京城晨报\n`QS21-089`\n512–513文昌书局与报纸制作可见；报纸为出版产品而非书局同义ID",
+      "x": 2760,
+      "y": 1509,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS22-N003",
+      "type": "text",
+      "text": "## 季氏商行\n`QS22-N003`\n金陵晚报策划人姚安与季家掌柜关系待分投资/制作/合法所有权",
+      "x": 2760,
+      "y": 1697,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "QS21-091",
+      "type": "text",
+      "text": "## 金陵晚报\n`QS21-091`\n821季家掌柜受姚安指示筹办金陵晚报；商行法律持有仍未证",
+      "x": 2760,
+      "y": 1885,
+      "width": 425,
+      "height": 155,
+      "color": "1"
+    },
+    {
+      "id": "neg",
+      "type": "text",
+      "text": "## 禁止误画直接直属\n景朝朝廷⇏武庙；密谍司⇏解烦卫；万岁军⇏五军营；天策军⇏苦觉寺；三山会⇏漕帮；万岁军⇏京仓。\n以上均可能仅为地域、合作、指挥、调停、守卫。",
+      "x": 610,
+      "y": 3052,
+      "width": 1040,
+      "height": 205,
+      "color": "2"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "text": "## NEXT R23｜世界影响体量 W1–1000\n按组织实际覆盖、制度约束、持续资源调度与跨社群影响比较；W?保留。职位、场所、术法战力与一时胜负不参与组织评分。",
+      "x": 1750,
+      "y": 3052,
+      "width": 900,
+      "height": 205,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "in",
+      "fromNode": "r21",
+      "fromSide": "right",
+      "toNode": "r22",
+      "toSide": "left",
+      "label": "R21→R22"
+    },
+    {
+      "id": "export",
+      "fromNode": "r22",
+      "fromSide": "right",
+      "toNode": "r22json",
+      "toSide": "left",
+      "label": "结构化关系"
+    },
+    {
+      "id": "R22-E001",
+      "fromNode": "QS21-006",
+      "fromSide": "bottom",
+      "toNode": "QS21-007",
+      "toSide": "top",
+      "label": "麾下（文本）"
+    },
+    {
+      "id": "R22-E002",
+      "fromNode": "QS21-009",
+      "fromSide": "bottom",
+      "toNode": "QS21-010",
+      "toSide": "top",
+      "label": "行动编组"
+    },
+    {
+      "id": "R22-E003",
+      "fromNode": "QS22-N001",
+      "fromSide": "bottom",
+      "toNode": "QS21-032",
+      "toSide": "top",
+      "label": "王府护卫"
+    },
+    {
+      "id": "R22-E004",
+      "fromNode": "QS21-040",
+      "fromSide": "bottom",
+      "toNode": "QS21-041",
+      "toSide": "top",
+      "label": "监管（文本）"
+    },
+    {
+      "id": "R22-E005",
+      "fromNode": "QS21-040",
+      "fromSide": "bottom",
+      "toNode": "QS21-042",
+      "toSide": "top",
+      "label": "监管（文本）"
+    },
+    {
+      "id": "R22-E006",
+      "fromNode": "QS21-063",
+      "fromSide": "bottom",
+      "toNode": "QS21-064",
+      "toSide": "top",
+      "label": "族内派系"
+    },
+    {
+      "id": "R22-E007",
+      "fromNode": "QS21-063",
+      "fromSide": "bottom",
+      "toNode": "QS21-092",
+      "toSide": "top",
+      "label": "宗族经营"
+    },
+    {
+      "id": "R22-E008",
+      "fromNode": "QS21-063",
+      "fromSide": "bottom",
+      "toNode": "QS21-093",
+      "toSide": "top",
+      "label": "族产"
+    },
+    {
+      "id": "R22-E009",
+      "fromNode": "QS21-049",
+      "fromSide": "bottom",
+      "toNode": "QS21-102",
+      "toSide": "top",
+      "label": "宗教据点"
+    },
+    {
+      "id": "R22-E010",
+      "fromNode": "QS21-050",
+      "fromSide": "bottom",
+      "toNode": "QS21-103",
+      "toSide": "top",
+      "label": "宗教据点"
+    },
+    {
+      "id": "R22-E011",
+      "fromNode": "QS21-048",
+      "fromSide": "bottom",
+      "toNode": "QS21-107",
+      "toSide": "top",
+      "label": "has-site"
+    },
+    {
+      "id": "R22-E012",
+      "fromNode": "QS21-073",
+      "fromSide": "bottom",
+      "toNode": "QS21-084",
+      "toSide": "top",
+      "label": "经营节点"
+    },
+    {
+      "id": "R22-E013",
+      "fromNode": "QS21-073",
+      "fromSide": "bottom",
+      "toNode": "QS21-086",
+      "toSide": "top",
+      "label": "口述产权"
+    },
+    {
+      "id": "R22-E014",
+      "fromNode": "QS21-073",
+      "fromSide": "bottom",
+      "toNode": "QS21-098",
+      "toSide": "top",
+      "label": "业务网点"
+    },
+    {
+      "id": "R22-E015",
+      "fromNode": "QS21-006",
+      "fromSide": "bottom",
+      "toNode": "QS21-095",
+      "toSide": "top",
+      "label": "口述产权"
+    },
+    {
+      "id": "R22-E016",
+      "fromNode": "QS21-037",
+      "fromSide": "bottom",
+      "toNode": "QS22-N006",
+      "toSide": "top",
+      "label": "内部编营"
+    },
+    {
+      "id": "R22-E017",
+      "fromNode": "QS21-011",
+      "fromSide": "bottom",
+      "toNode": "QS22-N004",
+      "toSide": "top",
+      "label": "administers-military-school"
+    },
+    {
+      "id": "R22-E018",
+      "fromNode": "QS21-015",
+      "fromSide": "bottom",
+      "toNode": "QS22-N005",
+      "toSide": "top",
+      "label": "regulates-fiscal-site"
+    },
+    {
+      "id": "R22-E019",
+      "fromNode": "QS22-N003",
+      "fromSide": "bottom",
+      "toNode": "QS21-091",
+      "toSide": "top",
+      "label": "筹办"
+    },
+    {
+      "id": "R22-E020",
+      "fromNode": "QS21-086",
+      "fromSide": "bottom",
+      "toNode": "QS21-089",
+      "toSide": "top",
+      "label": "生产"
+    },
+    {
+      "id": "R22-E021",
+      "fromNode": "QS21-077",
+      "fromSide": "bottom",
+      "toNode": "QS21-089",
+      "toSide": "top",
+      "label": "分销"
+    },
+    {
+      "id": "R22-E022",
+      "fromNode": "QS21-088",
+      "fromSide": "bottom",
+      "toNode": "QS21-090",
+      "toSide": "top",
+      "label": "印刷"
+    },
+    {
+      "id": "R22-E024",
+      "fromNode": "QS21-031",
+      "fromSide": "bottom",
+      "toNode": "QS21-100",
+      "toSide": "top",
+      "label": "守卫"
+    },
+    {
+      "id": "R22-E025",
+      "fromNode": "QS21-045",
+      "fromSide": "bottom",
+      "toNode": "QS21-052",
+      "toSide": "top",
+      "label": "战时协作"
+    },
+    {
+      "id": "R22-E026",
+      "fromNode": "QS21-074",
+      "fromSide": "bottom",
+      "toNode": "QS21-075",
+      "toSide": "top",
+      "label": "调停"
+    }
+  ]
+}
