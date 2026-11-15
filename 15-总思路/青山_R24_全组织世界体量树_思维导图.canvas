@@ -1,0 +1,903 @@
+{
+  "nodes": [
+    {
+      "id": "W-ZONE",
+      "type": "group",
+      "label": "01｜世界影响体量 W",
+      "color": "4",
+      "x": 0,
+      "y": 0,
+      "width": 2180,
+      "height": 1222
+    },
+    {
+      "id": "W-HUB",
+      "type": "text",
+      "text": "# 《青山》世界社会体量\nW1000＝整个人间社会参照\n以持续制度、资源与跨社群作用评价；不以战力、戏份或面积排名。",
+      "color": "4",
+      "x": 825,
+      "y": 410,
+      "width": 530,
+      "height": 238
+    },
+    {
+      "id": "W-SOURCE",
+      "type": "file",
+      "file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/QS_334_R24_全组织世界社会体量总树_20261115.canvas",
+      "color": "4",
+      "x": 825,
+      "y": 735,
+      "width": 530,
+      "height": 150
+    },
+    {
+      "id": "W-B1",
+      "type": "group",
+      "label": "国家｜大范围治理",
+      "color": "2",
+      "x": 65,
+      "y": 105,
+      "width": 610,
+      "height": 475
+    },
+    {
+      "id": "W-B1-H",
+      "type": "text",
+      "text": "## 国家｜大范围治理",
+      "color": "2",
+      "x": 90,
+      "y": 130,
+      "width": 560,
+      "height": 86
+    },
+    {
+      "id": "W-B1-A",
+      "type": "text",
+      "text": "**宁朝 W880**\n税赋、兵权和行政网络持续覆盖不同身份群体。整个王朝的候选体量。",
+      "color": "2",
+      "x": 90,
+      "y": 238,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "W-B1-B",
+      "type": "text",
+      "text": "**景朝 W870**\n枢密院、军情系统与边军跨域作用；不是单场战役的战力数值。",
+      "color": "2",
+      "x": 90,
+      "y": 407,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "W-B2",
+      "type": "group",
+      "label": "修行｜跨朝规则",
+      "color": "6",
+      "x": 1490,
+      "y": 105,
+      "width": 610,
+      "height": 475
+    },
+    {
+      "id": "W-B2-H",
+      "type": "text",
+      "text": "## 修行｜跨朝规则",
+      "color": "6",
+      "x": 1515,
+      "y": 130,
+      "width": 560,
+      "height": 86
+    },
+    {
+      "id": "W-B2-A",
+      "type": "text",
+      "text": "**武庙 W820**\n独立修行共同体，跨朝武道传承与规范；不按山长个人战力加分。",
+      "color": "6",
+      "x": 1515,
+      "y": 238,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "W-B2-B",
+      "type": "text",
+      "text": "**黄山道庭 W790**\n掌教、门徒、城隍庙网点；四个城隍庙是据点，不是四家新道庭。",
+      "color": "6",
+      "x": 1515,
+      "y": 407,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "W-B3",
+      "type": "group",
+      "label": "朝廷｜组织与制度",
+      "color": "5",
+      "x": 65,
+      "y": 652,
+      "width": 610,
+      "height": 475
+    },
+    {
+      "id": "W-B3-H",
+      "type": "text",
+      "text": "## 朝廷｜组织与制度",
+      "color": "5",
+      "x": 90,
+      "y": 677,
+      "width": 560,
+      "height": 86
+    },
+    {
+      "id": "W-B3-A",
+      "type": "text",
+      "text": "**司礼监 W680**\n内廷情报、缉捕与经营暗线；密谍司有机构联系，解烦卫不能直接等同。",
+      "color": "5",
+      "x": 90,
+      "y": 785,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "W-B3-B",
+      "type": "text",
+      "text": "**景朝枢密院 W660**\n监管军情司、军略司。另：户部630／吏部625／兵部620，因各自制度职掌分开。",
+      "color": "5",
+      "x": 90,
+      "y": 954,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "W-B4",
+      "type": "group",
+      "label": "民间｜社会资源",
+      "color": "3",
+      "x": 1490,
+      "y": 652,
+      "width": 610,
+      "height": 475
+    },
+    {
+      "id": "W-B4-H",
+      "type": "text",
+      "text": "## 民间｜社会资源",
+      "color": "3",
+      "x": 1515,
+      "y": 677,
+      "width": 560,
+      "height": 86
+    },
+    {
+      "id": "W-B4-A",
+      "type": "text",
+      "text": "**漕帮 W590**\n跨地漕运与帮众运输；授漕运军职仍为政治方案，不等于已经执行。",
+      "color": "3",
+      "x": 1515,
+      "y": 785,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "W-B4-B",
+      "type": "text",
+      "text": "**灯火 W570｜陈家 W530**\n跨城接应、军粮商路 vs 宗族官场与盐引经营；不与王朝W求和。",
+      "color": "3",
+      "x": 1515,
+      "y": 954,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "R-ZONE",
+      "type": "group",
+      "label": "02｜组织包含与关系",
+      "color": "5",
+      "x": 2395,
+      "y": 0,
+      "width": 2180,
+      "height": 1222
+    },
+    {
+      "id": "R-HUB",
+      "type": "text",
+      "text": "# R22｜包含关系 ≠ 同场关系\n114个研究对象 · 35条类型化记录\n将机构隶属、守卫、据点、产业、合作与未知区别。",
+      "color": "5",
+      "x": 3220,
+      "y": 410,
+      "width": 530,
+      "height": 238
+    },
+    {
+      "id": "R-SOURCE",
+      "type": "file",
+      "file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R22_108对象包含隶属关系审核总表_20261115.md",
+      "color": "5",
+      "x": 3220,
+      "y": 735,
+      "width": 530,
+      "height": 150
+    },
+    {
+      "id": "R-B1",
+      "type": "group",
+      "label": "官署｜已见机构链",
+      "color": "5",
+      "x": 2460,
+      "y": 105,
+      "width": 610,
+      "height": 475
+    },
+    {
+      "id": "R-B1-H",
+      "type": "text",
+      "text": "## 官署｜已见机构链",
+      "color": "5",
+      "x": 2485,
+      "y": 130,
+      "width": 560,
+      "height": 86
+    },
+    {
+      "id": "R-B1-A",
+      "type": "text",
+      "text": "**司礼监 → 密谍司**\n作者16/49章的麾下关系属文本报告；鱼龙卫另归主刑司行动编组。",
+      "color": "5",
+      "x": 2485,
+      "y": 238,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "R-B1-B",
+      "type": "text",
+      "text": "**枢密院 → 军情司／军略司**\n作者738章监管关系；早期未批准团队不等于现今完整法定编制。",
+      "color": "5",
+      "x": 2485,
+      "y": 407,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "R-B2",
+      "type": "group",
+      "label": "宗室宗族｜内部关系",
+      "color": "3",
+      "x": 3885,
+      "y": 105,
+      "width": 610,
+      "height": 475
+    },
+    {
+      "id": "R-B2-H",
+      "type": "text",
+      "text": "## 宗室宗族｜内部关系",
+      "color": "3",
+      "x": 3910,
+      "y": 130,
+      "width": 560,
+      "height": 86
+    },
+    {
+      "id": "R-B2-A",
+      "type": "text",
+      "text": "**靖王府 → 千岁军**\n王府护卫；与宁帝万岁军分开，不把临战指挥画成正式直属。",
+      "color": "3",
+      "x": 3910,
+      "y": 238,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "R-B2-B",
+      "type": "text",
+      "text": "**京城陈家 → 二房、盐号**\n家族派系／宗族经营候选；成员任职吏部不等于陈家拥有吏部。",
+      "color": "3",
+      "x": 3910,
+      "y": 407,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "R-B3",
+      "type": "group",
+      "label": "产业与地点｜类型边",
+      "color": "4",
+      "x": 2460,
+      "y": 652,
+      "width": 610,
+      "height": 475
+    },
+    {
+      "id": "R-B3-H",
+      "type": "text",
+      "text": "## 产业与地点｜类型边",
+      "color": "4",
+      "x": 2485,
+      "y": 677,
+      "width": 560,
+      "height": 86
+    },
+    {
+      "id": "R-B3-A",
+      "type": "text",
+      "text": "**灯火 → 文昌书局／昌平福来客栈**\n前者为陆氏口述产业，后者是接叶子和转单网点；产权、业务不同。",
+      "color": "4",
+      "x": 2485,
+      "y": 785,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "R-B3-B",
+      "type": "text",
+      "text": "**黄山道庭 → 四城隍庙**属据点经营；\n**万岁军守京仓**属 guards，仓库不是军伍内设机构。",
+      "color": "4",
+      "x": 2485,
+      "y": 954,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "R-B4",
+      "type": "group",
+      "label": "未决与排除｜防误连",
+      "color": "2",
+      "x": 3885,
+      "y": 652,
+      "width": 610,
+      "height": 475
+    },
+    {
+      "id": "R-B4-H",
+      "type": "text",
+      "text": "## 未决与排除｜防误连",
+      "color": "2",
+      "x": 3910,
+      "y": 677,
+      "width": 560,
+      "height": 86
+    },
+    {
+      "id": "R-B4-A",
+      "type": "text",
+      "text": "**35条＝18文本＋10实际运行＋6 OPEN＋1反同体。**\n报业产权、红袖招、朝天宫与地方户部法定父项仍有疑问。",
+      "color": "2",
+      "x": 3910,
+      "y": 785,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "R-B4-B",
+      "type": "text",
+      "text": "**不误合并**：解烦卫≠密谍司；武庙在景朝境内≠朝廷直属；三山会调停漕帮≠上下级。",
+      "color": "2",
+      "x": 3910,
+      "y": 954,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "P-ZONE",
+      "type": "group",
+      "label": "03｜研究链与成果入口",
+      "color": "6",
+      "x": 4790,
+      "y": 0,
+      "width": 2180,
+      "height": 1222
+    },
+    {
+      "id": "P-HUB",
+      "type": "text",
+      "text": "# R01–R24｜社会世界建模\n材料采集 → 组织去重 → 关系审核 → 世界W估值 → 总树\n不把缺证章节写成已核实事实。",
+      "color": "6",
+      "x": 5615,
+      "y": 410,
+      "width": 530,
+      "height": 238
+    },
+    {
+      "id": "P-SOURCE",
+      "type": "file",
+      "file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_全组织世界体量树_终局整合阅读版_20261115.md",
+      "color": "6",
+      "x": 5615,
+      "y": 735,
+      "width": 530,
+      "height": 150
+    },
+    {
+      "id": "P-B1",
+      "type": "group",
+      "label": "R01–R20｜材料入口",
+      "color": "5",
+      "x": 4855,
+      "y": 105,
+      "width": 610,
+      "height": 475
+    },
+    {
+      "id": "P-B1-H",
+      "type": "text",
+      "text": "## R01–R20｜材料入口",
+      "color": "5",
+      "x": 4880,
+      "y": 130,
+      "width": 560,
+      "height": 86
+    },
+    {
+      "id": "P-B1-A",
+      "type": "text",
+      "text": "**20轮已有统一索引，当前覆盖槽位到作者860章。**\n旧859为历史快照；不意味着已逐章完整阅读全部正文。",
+      "color": "5",
+      "x": 4880,
+      "y": 238,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "P-B1-B",
+      "type": "text",
+      "text": "**缺源明确保留**\nR17：706/710/718/726；R18：733/742；R20后段有首分页、污染或纯目录。",
+      "color": "5",
+      "x": 4880,
+      "y": 407,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "P-B2",
+      "type": "group",
+      "label": "R21｜108项去重",
+      "color": "3",
+      "x": 6280,
+      "y": 105,
+      "width": 610,
+      "height": 475
+    },
+    {
+      "id": "P-B2-H",
+      "type": "text",
+      "text": "## R21｜108项去重",
+      "color": "3",
+      "x": 6305,
+      "y": 130,
+      "width": 560,
+      "height": 86
+    },
+    {
+      "id": "P-B2-A",
+      "type": "text",
+      "text": "**108个稳定QS21对象、28类冲突处理。**\n含机构、宗族、商号、场所与排除项，并非108家独立势力。",
+      "color": "3",
+      "x": 6305,
+      "y": 238,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "P-B2-B",
+      "type": "text",
+      "text": "**同名异体**：洛城福来≠昌平福来。\n**同节点候选**：昌平灯火客栈≈昌平福来；固原龙门另存。",
+      "color": "3",
+      "x": 6305,
+      "y": 407,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "P-B3",
+      "type": "group",
+      "label": "R22｜114对象与关系",
+      "color": "4",
+      "x": 4855,
+      "y": 652,
+      "width": 610,
+      "height": 475
+    },
+    {
+      "id": "P-B3-H",
+      "type": "text",
+      "text": "## R22｜114对象与关系",
+      "color": "4",
+      "x": 4880,
+      "y": 677,
+      "width": 560,
+      "height": 86
+    },
+    {
+      "id": "P-B3-A",
+      "type": "text",
+      "text": "**补6个QS22承接对象，合计114个研究ID。**\n35条类型化边合法端点齐备，不把守卫和交易当直属。",
+      "color": "4",
+      "x": 4880,
+      "y": 785,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "P-B3-B",
+      "type": "text",
+      "text": "**6条开放关系继续挂账**：留都户部具体上级、季氏商行报纸产权等不能强填已证父项。",
+      "color": "4",
+      "x": 4880,
+      "y": 954,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "P-B4",
+      "type": "group",
+      "label": "R23–R24｜体量与交付",
+      "color": "2",
+      "x": 6280,
+      "y": 652,
+      "width": 610,
+      "height": 475
+    },
+    {
+      "id": "P-B4-H",
+      "type": "text",
+      "text": "## R23–R24｜体量与交付",
+      "color": "2",
+      "x": 6305,
+      "y": 677,
+      "width": 560,
+      "height": 86
+    },
+    {
+      "id": "P-B4-A",
+      "type": "text",
+      "text": "**R23：87个候选W、10个W?、17个不独立计分。**\n整个人间社会W1000为尺度锚点，各组织W不可简单求和。",
+      "color": "2",
+      "x": 6305,
+      "y": 785,
+      "width": 560,
+      "height": 145
+    },
+    {
+      "id": "P-B4-B",
+      "type": "text",
+      "text": "**R24：114对象＋35关系统一数据**；阅读版、JSON与128节点详细Canvas已入库，阶段完成但非原著全量穷尽。",
+      "color": "2",
+      "x": 6305,
+      "y": 954,
+      "width": 560,
+      "height": 145
+    }
+  ],
+  "edges": [
+    {
+      "id": "W-E-SOURCE",
+      "fromNode": "W-HUB",
+      "toNode": "W-SOURCE",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "来源正本"
+    },
+    {
+      "id": "W-B1-E0",
+      "fromNode": "W-HUB",
+      "toNode": "W-B1-H",
+      "fromSide": "left",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "国家｜大范围治理"
+    },
+    {
+      "id": "W-B1-E1",
+      "fromNode": "W-B1-H",
+      "toNode": "W-B1-A",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "W-B1-E2",
+      "fromNode": "W-B1-A",
+      "toNode": "W-B1-B",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "W-B2-E0",
+      "fromNode": "W-HUB",
+      "toNode": "W-B2-H",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "修行｜跨朝规则"
+    },
+    {
+      "id": "W-B2-E1",
+      "fromNode": "W-B2-H",
+      "toNode": "W-B2-A",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "W-B2-E2",
+      "fromNode": "W-B2-A",
+      "toNode": "W-B2-B",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "W-B3-E0",
+      "fromNode": "W-HUB",
+      "toNode": "W-B3-H",
+      "fromSide": "left",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "朝廷｜组织与制度"
+    },
+    {
+      "id": "W-B3-E1",
+      "fromNode": "W-B3-H",
+      "toNode": "W-B3-A",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "W-B3-E2",
+      "fromNode": "W-B3-A",
+      "toNode": "W-B3-B",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "W-B4-E0",
+      "fromNode": "W-HUB",
+      "toNode": "W-B4-H",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "民间｜社会资源"
+    },
+    {
+      "id": "W-B4-E1",
+      "fromNode": "W-B4-H",
+      "toNode": "W-B4-A",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "W-B4-E2",
+      "fromNode": "W-B4-A",
+      "toNode": "W-B4-B",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "R-E-SOURCE",
+      "fromNode": "R-HUB",
+      "toNode": "R-SOURCE",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "来源正本"
+    },
+    {
+      "id": "R-B1-E0",
+      "fromNode": "R-HUB",
+      "toNode": "R-B1-H",
+      "fromSide": "left",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "官署｜已见机构链"
+    },
+    {
+      "id": "R-B1-E1",
+      "fromNode": "R-B1-H",
+      "toNode": "R-B1-A",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "R-B1-E2",
+      "fromNode": "R-B1-A",
+      "toNode": "R-B1-B",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "R-B2-E0",
+      "fromNode": "R-HUB",
+      "toNode": "R-B2-H",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "宗室宗族｜内部关系"
+    },
+    {
+      "id": "R-B2-E1",
+      "fromNode": "R-B2-H",
+      "toNode": "R-B2-A",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "R-B2-E2",
+      "fromNode": "R-B2-A",
+      "toNode": "R-B2-B",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "R-B3-E0",
+      "fromNode": "R-HUB",
+      "toNode": "R-B3-H",
+      "fromSide": "left",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "产业与地点｜类型边"
+    },
+    {
+      "id": "R-B3-E1",
+      "fromNode": "R-B3-H",
+      "toNode": "R-B3-A",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "R-B3-E2",
+      "fromNode": "R-B3-A",
+      "toNode": "R-B3-B",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "R-B4-E0",
+      "fromNode": "R-HUB",
+      "toNode": "R-B4-H",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "未决与排除｜防误连"
+    },
+    {
+      "id": "R-B4-E1",
+      "fromNode": "R-B4-H",
+      "toNode": "R-B4-A",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "R-B4-E2",
+      "fromNode": "R-B4-A",
+      "toNode": "R-B4-B",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "P-E-SOURCE",
+      "fromNode": "P-HUB",
+      "toNode": "P-SOURCE",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "来源正本"
+    },
+    {
+      "id": "P-B1-E0",
+      "fromNode": "P-HUB",
+      "toNode": "P-B1-H",
+      "fromSide": "left",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "R01–R20｜材料入口"
+    },
+    {
+      "id": "P-B1-E1",
+      "fromNode": "P-B1-H",
+      "toNode": "P-B1-A",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "P-B1-E2",
+      "fromNode": "P-B1-A",
+      "toNode": "P-B1-B",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "P-B2-E0",
+      "fromNode": "P-HUB",
+      "toNode": "P-B2-H",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "R21｜108项去重"
+    },
+    {
+      "id": "P-B2-E1",
+      "fromNode": "P-B2-H",
+      "toNode": "P-B2-A",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "P-B2-E2",
+      "fromNode": "P-B2-A",
+      "toNode": "P-B2-B",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "P-B3-E0",
+      "fromNode": "P-HUB",
+      "toNode": "P-B3-H",
+      "fromSide": "left",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "R22｜114对象与关系"
+    },
+    {
+      "id": "P-B3-E1",
+      "fromNode": "P-B3-H",
+      "toNode": "P-B3-A",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "P-B3-E2",
+      "fromNode": "P-B3-A",
+      "toNode": "P-B3-B",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "P-B4-E0",
+      "fromNode": "P-HUB",
+      "toNode": "P-B4-H",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "R23–R24｜体量与交付"
+    },
+    {
+      "id": "P-B4-E1",
+      "fromNode": "P-B4-H",
+      "toNode": "P-B4-A",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "P-B4-E2",
+      "fromNode": "P-B4-A",
+      "toNode": "P-B4-B",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    }
+  ]
+}
