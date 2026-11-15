@@ -1997,11 +1997,11 @@
       "chapters": "229,230,247,407",
       "contribution": "固原龙门客栈跨境消息经纪与旅行生意、偷渡候选",
       "alias": "龙门客栈（固原）",
-      "source_boundary": "与其他城市福来客栈是不同门店，不把同业判同体",
+      "source_boundary": "作者407《灯火客栈》证明灯火门店有暗号筛选及掌柜向东家报告，并提及固原龙门掌柜之死；这支持联络通道候选，不证明固原门店产权/隶属。当前候选W230未因该联络线索调整。",
       "relation_primary_type": "business-or-service-entity",
       "relation_primary_target": null,
       "relation_evidence_status": "UNKNOWN_PARENT",
-      "parent_relation_caution": "商号/商业服务节点/出版产品；产权经营关系需逐条看明示证据"
+      "parent_relation_caution": "灯火—固原龙门E029仍为联络通道候选；作者407内收尸为人物陈述，不能升级为产权、常设管理或法定part-of。"
     },
     {
       "id": "QS21-084",
@@ -3119,9 +3119,14 @@
         "407"
       ],
       "evidence_status": "CANDIDATE_OPEN",
-      "evidence": "固原龙门客栈与灯火暗语/掌柜同僚线索；**不推**：不认定整客栈正式产权归灯火",
+      "evidence": "作者章题交叉：WebNovel目录平台条目408明标作者407《灯火客栈》（https://www.webnovel.com/book/22444590709113204/catalog）；TTkan和顶点转载将页面编号作408，依作者题名而非URL/平台尾号归407。正文中陈迹称其替固原龙门客栈掌柜收尸；灯火客栈用菜名暗号筛选托办事项，掌柜称帷帽女子为“东家”并向其报告（https://ttks.tw/novel/chapters/qingshan/579.html；https://www.dingdian888.com/zhangjie/733514/709781299.html）。此为灯火与固原龙门掌柜存在联络/信息通道的线索；收尸仍是陈迹陈述，未证明固原龙门产权或正式归属灯火。维持CANDIDATE_OPEN。",
       "legal_part_of_confirmed": false,
-      "graph_visualize_as": "typed_relation_not_legal_direct_inclusion"
+      "graph_visualize_as": "typed_relation_not_legal_direct_inclusion",
+      "source_urls": [
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://ttks.tw/novel/chapters/qingshan/579.html",
+        "https://www.dingdian888.com/zhangjie/733514/709781299.html"
+      ]
     },
     {
       "id": "R22-E030",
