@@ -6,7 +6,7 @@
   "description": "Whole fictional-world social influence and organization research atlas. Topical category group edges do not signify legal parent-of.",
   "input_refs": {
     "r21_sha": "6cf558bce4d508fa2ee6beb6cfa398fb6ca4f255",
-    "r22_graph_sha": "c35a688bcb3abf977aebf348ab8c1165fc6f5f4c",
+    "r22_graph_sha": "49fb7f0742daeb4cb6b177681bec0a074e018d02",
     "r23_W_sha": "fc435ffef5a1f4de1a4b932c423435be5741175a",
     "index_sha": "a46ccfb15c2b536e4f4077855ca5aca8affdf7d1"
   },
@@ -2187,9 +2187,9 @@
       "old_W": null,
       "W_delta": null,
       "chapters": "821,832,846",
-      "contribution": "金陵晚报已有季氏人员刊印与报童发行并用于诱引",
+      "contribution": "季家掌柜受姚安指示筹办刊印；853报告其七个堂口由张夏与密谍司先后查抄，呈现报纸运营网络线索",
       "alias": "《金陵晚报》",
-      "source_boundary": "与武襄晨报不同、季氏商行策划关系待确认",
+      "source_boundary": "821/826证季家掌柜筹办印刷；853陈迹称金陵晚报由漕帮经营、张夏称有七堂口并有两方先后查抄。制作发行、运营网络与法律产权分层；产权/股权未证",
       "relation_primary_type": "commissioned-publication-candidate",
       "relation_primary_target": "QS22-N003",
       "relation_evidence_status": "OPEN",
@@ -2648,8 +2648,8 @@
       "score_confidence": "M",
       "old_W": null,
       "W_delta": null,
-      "chapters": "821,832",
-      "contribution": "季氏商行承担金陵晚报编辑刊印任务，报社产权未证",
+      "chapters": "821,826,832,853",
+      "contribution": "季氏掌柜受姚安指示安排文章、人员与雕版刊印；金陵晚报运营网络另有漕帮报告线索",
       "alias": "",
       "source_boundary": "",
       "relation_primary_type": null,
@@ -2979,12 +2979,19 @@
       "chapter_anchors": [
         "821《憑照》",
         "826《鹽引》",
-        "832《貪與癡》"
+        "832《貪與癡》",
+        "853《季氏》"
       ],
       "evidence_status": "CANDIDATE_OPEN",
-      "evidence": "821: Yao An commissions the Ji family shopkeeper to arrange Jinling Evening News; contributors and block printers are prepared, and the paper is being sold. 826: the shopkeeper says the page was printed on Yao An's instruction and traces inquiries to merchant peers. Confirm commission and production/distribution participation; legal ownership/shareholding of Ji Merchant House remains unproven, so only the ownership parent edge stays OPEN.",
+      "evidence": "821《憑照》：季家掌柜受姚安指示筹备并刊印《金陵晚报》；826《鹽引》掌柜向姚安回报依命刊印（https://ixdzs.tw/read/549077/p825.html；https://ixdzs.tw/read/549077/p830.html，另有https://www.piaotia.com/html/15/15702/13122518.html交叉）。作者853《季氏》另称陈迹潜入《金陵晚报》追查姚安，发现该报“是漕帮办的”；张夏称其原有七个堂口，五个由她查抄、另两个随后由密谍司查抄（https://ixdzs.tw/read/549077/p857.html）。区分筹办/刊印与运营网络；季氏商行或漕帮的产权、股权、法定持有仍未明示，E019继续 CANDIDATE_OPEN。",
       "legal_part_of_confirmed": false,
-      "graph_visualize_as": "typed_relation_not_legal_direct_inclusion"
+      "graph_visualize_as": "typed_relation_not_legal_direct_inclusion",
+      "source_urls": [
+        "https://ixdzs.tw/read/549077/p825.html",
+        "https://ixdzs.tw/read/549077/p830.html",
+        "https://www.piaotia.com/html/15/15702/13122518.html",
+        "https://ixdzs.tw/read/549077/p857.html"
+      ]
     },
     {
       "id": "R22-E020",
@@ -3219,6 +3226,22 @@
       "evidence": "京城晨报与金陵晚报属于不同报业项目；**不推**：不能以'晨报'/'晚报'共有字眼合并",
       "legal_part_of_confirmed": false,
       "graph_visualize_as": "typed_relation_not_legal_direct_inclusion"
+    },
+    {
+      "id": "R22-E036",
+      "from": "QS21-075",
+      "to": "QS21-091",
+      "type": "reported-operational-network",
+      "chapter_anchors": [
+        "853《季氏》"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "evidence": "作者853《季氏》中陈迹称金陵晚报是漕帮经营；张夏说该报有七个堂口、她查抄五个，之后密谍司查抄两个。属正文人物报告与行动叙述，支持报纸运营网络与漕帮的报告性关联；不证明法定产权、商行股权或金陵晚报整体归漕帮所有。",
+      "legal_part_of_confirmed": false,
+      "graph_visualize_as": "typed_relation_not_legal_direct_inclusion",
+      "source_urls": [
+        "https://ixdzs.tw/read/549077/p857.html"
+      ]
     }
   ],
   "audit": {
@@ -3234,9 +3257,9 @@
       "unmatched_R22_to_R23": 0
     },
     "relationships": {
-      "total": 35,
+      "total": 36,
       "statuses": {
-        "TEXT_REPORTED": 18,
+        "TEXT_REPORTED": 19,
         "OPERATING_RELATION": 10,
         "CANDIDATE_OPEN": 6,
         "NEGATIVE_EQUIVALENCE": 1
@@ -3343,6 +3366,8 @@
       "R20 851–855仅首分页; 856正文源污染、仅开篇可信; 857–860目录级",
       "旧859章历史快照与新R20至作者860章并存，不推小说已完结"
     ],
-    "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值"
+    "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
+    "r22_graph_sha": "49fb7f0742daeb4cb6b177681bec0a074e018d02",
+    "r22_update_note": "新增E036：作者853《季氏》报告金陵晚报由漕帮经营及七堂口网络；E019仍为季家筹办刊印关系与产权OPEN。"
   }
 }
