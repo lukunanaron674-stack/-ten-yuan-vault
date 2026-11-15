@@ -1,0 +1,1460 @@
+{
+  "schema_version": "R22-1",
+  "project": "青山",
+  "issue": "674-334",
+  "phase": "R22",
+  "date": "2026-11-15",
+  "user_requested_proof_level": "organization-materials-first; no strict dual-source chapter gate",
+  "warning": "Typed relations do not all represent formal organization containment. Not a full-book organization census.",
+  "original_R21_objects": 108,
+  "additional_connecting_objects": 6,
+  "relation_rows": 35,
+  "entity_nodes": [
+    {
+      "id": "QS21-001",
+      "name": "宁朝",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "polity-root",
+      "evidence_status": "ACCEPTED_CLASS",
+      "caveat": "政权上位分类，单独计社会系统"
+    },
+    {
+      "id": "QS21-002",
+      "name": "景朝",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "polity-root",
+      "evidence_status": "ACCEPTED_CLASS",
+      "caveat": "政权上位分类，单独计社会系统"
+    },
+    {
+      "id": "QS21-003",
+      "name": "高丽",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-polity",
+      "evidence_status": "ACCEPTED_CLASS",
+      "caveat": "其他政权，不是宁朝/景朝子机构"
+    },
+    {
+      "id": "QS21-004",
+      "name": "安南",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-polity",
+      "evidence_status": "ACCEPTED_CLASS",
+      "caveat": "其他政权，不是宁朝/景朝子机构"
+    },
+    {
+      "id": "QS21-005",
+      "name": "倭国",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-polity",
+      "evidence_status": "ACCEPTED_CLASS",
+      "caveat": "其他政权，不是宁朝/景朝子机构"
+    },
+    {
+      "id": "QS21-006",
+      "name": "宁朝司礼监",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-007",
+      "name": "密谍司",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-006",
+      "primary_relation_type": "part-of-provisional",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "第16章记录称密谍司属司礼监麾下，正式公文未取得；不把解烦卫顺带挂进去"
+    },
+    {
+      "id": "QS21-008",
+      "name": "解烦卫",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-009",
+      "name": "主刑司",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-010",
+      "name": "鱼龙卫",
+      "R21_classification": "SUBUNIT",
+      "primary_relation_target": "QS21-009",
+      "primary_relation_type": "operational-subunit-of",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "17/21主刑司鱼龙卫参与行动；机构与组员分开"
+    },
+    {
+      "id": "QS21-011",
+      "name": "兵部",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-012",
+      "name": "吏部",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-013",
+      "name": "礼部",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-014",
+      "name": "户部",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-015",
+      "name": "留都户部",
+      "R21_classification": "SUBUNIT",
+      "primary_relation_target": "QS21-014",
+      "primary_relation_type": "regional-fiscal-branch-candidate",
+      "evidence_status": "OPEN",
+      "caveat": "留都户部与户部功能同系但具体制度隶属、地方权限边界尚未闭合"
+    },
+    {
+      "id": "QS21-016",
+      "name": "都察院",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-017",
+      "name": "五城兵马司",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-018",
+      "name": "洛城兵马司",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-019",
+      "name": "鸿胪寺",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-020",
+      "name": "钦天监",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-021",
+      "name": "太医院",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-022",
+      "name": "尚衣监",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-023",
+      "name": "宝钞司",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-024",
+      "name": "鹰房司",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-025",
+      "name": "御用司",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-026",
+      "name": "国子监",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-027",
+      "name": "匠作监",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-028",
+      "name": "柴碳局",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-029",
+      "name": "都司府",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-030",
+      "name": "羽林军",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-031",
+      "name": "万岁军",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-032",
+      "name": "千岁军",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS22-N001",
+      "primary_relation_type": "armed-guard-of",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "40章千岁军是靖王府护卫；与万岁军不等同"
+    },
+    {
+      "id": "QS21-033",
+      "name": "五军营",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-034",
+      "name": "神机营",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-035",
+      "name": "边军",
+      "R21_classification": "COLLECTIVE",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-036",
+      "name": "夜不收",
+      "R21_classification": "COLLECTIVE",
+      "primary_relation_target": "QS21-035",
+      "primary_relation_type": "role-within-various-armies",
+      "evidence_status": "COLLECTIVE_ONLY",
+      "caveat": "夜不收是不同边镇军队的斥候角色集合，不是全国单一官署"
+    },
+    {
+      "id": "QS21-037",
+      "name": "备倭军",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-038",
+      "name": "象甲卫",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-071",
+      "primary_relation_type": "political-influence-candidate",
+      "evidence_status": "OPEN",
+      "caveat": "刘氏与象甲卫调兵联系，无法证明独占所有权或合法编制"
+    },
+    {
+      "id": "QS21-039",
+      "name": "虎甲铁骑",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-001",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+    },
+    {
+      "id": "QS21-040",
+      "name": "景朝枢密院",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-002",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "景朝政军社会范畴，并非法定直接下级；具体母机构须另证"
+    },
+    {
+      "id": "QS21-041",
+      "name": "景朝军情司",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-040",
+      "primary_relation_type": "supervised-by",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "738章枢密院监管军情司，旧章提其早期未获批不推翻现阶段监管"
+    },
+    {
+      "id": "QS21-042",
+      "name": "景朝军略司",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-040",
+      "primary_relation_type": "supervised-by",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "738章枢密院监管军略司；监管≠已证完全法定包含"
+    },
+    {
+      "id": "QS21-043",
+      "name": "景朝虎贲军",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-002",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "景朝政军社会范畴，并非法定直接下级；具体母机构须另证"
+    },
+    {
+      "id": "QS21-044",
+      "name": "景朝虎豹骑",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-002",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "景朝政军社会范畴，并非法定直接下级；具体母机构须另证"
+    },
+    {
+      "id": "QS21-045",
+      "name": "景朝天策军",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-002",
+      "primary_relation_type": "within-polity",
+      "evidence_status": "DOMAIN_ONLY",
+      "caveat": "景朝政军社会范畴，并非法定直接下级；具体母机构须另证"
+    },
+    {
+      "id": "QS21-046",
+      "name": "捉生将",
+      "R21_classification": "COLLECTIVE",
+      "primary_relation_target": "QS21-002",
+      "primary_relation_type": "field-role-within-polity",
+      "evidence_status": "COLLECTIVE_ONLY",
+      "caveat": "捉生将是景朝边镇作战人员群体，不等于军情司的新部门"
+    },
+    {
+      "id": "QS21-047",
+      "name": "松浦氏海上武装",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-or-irregular-force",
+      "evidence_status": "UNKNOWN_PARENT",
+      "caveat": "松浦氏海上武装未证倭国政府法定指挥，保持独立海上势力候选"
+    },
+    {
+      "id": "QS21-048",
+      "name": "武庙",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-049",
+      "name": "黄山道庭",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-050",
+      "name": "老君山道庭",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-051",
+      "name": "缘觉寺",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-052",
+      "name": "苦觉寺",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-053",
+      "name": "陀罗寺",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-054",
+      "name": "广济寺",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-055",
+      "name": "大昭寺",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-056",
+      "name": "罗天宗",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-057",
+      "name": "青衣宗",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-058",
+      "name": "葛宁派",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-059",
+      "name": "知行书院",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-060",
+      "name": "东林书院",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-061",
+      "name": "青崖书院",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-062",
+      "name": "岳麓书院",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-organization",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "修行/宗教/教育机构存在，尚无证据的行政直属不得硬画"
+    },
+    {
+      "id": "QS21-063",
+      "name": "京城陈家",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-kinship-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "宗族身份/家系；不因其成员做官推官署为家产"
+    },
+    {
+      "id": "QS21-064",
+      "name": "陈家二房",
+      "R21_classification": "SUBUNIT",
+      "primary_relation_target": "QS21-063",
+      "primary_relation_type": "faction-of",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "陈家二房为陈氏内部派系，非第二家同姓政权"
+    },
+    {
+      "id": "QS21-065",
+      "name": "洛城同知陈府",
+      "R21_classification": "HOMONYM_SPLIT",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-kinship-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "宗族身份/家系；不因其成员做官推官署为家产"
+    },
+    {
+      "id": "QS21-066",
+      "name": "齐家",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-kinship-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "宗族身份/家系；不因其成员做官推官署为家产"
+    },
+    {
+      "id": "QS21-067",
+      "name": "徐家",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-kinship-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "宗族身份/家系；不因其成员做官推官署为家产"
+    },
+    {
+      "id": "QS21-068",
+      "name": "张家",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-kinship-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "宗族身份/家系；不因其成员做官推官署为家产"
+    },
+    {
+      "id": "QS21-069",
+      "name": "胡家",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-kinship-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "宗族身份/家系；不因其成员做官推官署为家产"
+    },
+    {
+      "id": "QS21-070",
+      "name": "羊家",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-kinship-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "宗族身份/家系；不因其成员做官推官署为家产"
+    },
+    {
+      "id": "QS21-071",
+      "name": "刘家",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-kinship-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "宗族身份/家系；不因其成员做官推官署为家产"
+    },
+    {
+      "id": "QS21-072",
+      "name": "景朝陆氏家族",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-kinship-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "宗族身份/家系；不因其成员做官推官署为家产"
+    },
+    {
+      "id": "QS21-073",
+      "name": "灯火",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-private-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "民间组织或联合体；不因合作推正式父关系"
+    },
+    {
+      "id": "QS21-074",
+      "name": "三山会",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-private-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "民间组织或联合体；不因合作推正式父关系"
+    },
+    {
+      "id": "QS21-075",
+      "name": "漕帮",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-private-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "民间组织或联合体；不因合作推正式父关系"
+    },
+    {
+      "id": "QS21-076",
+      "name": "盐帮",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-private-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "民间组织或联合体；不因合作推正式父关系"
+    },
+    {
+      "id": "QS21-077",
+      "name": "梅花渡",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-private-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "民间组织或联合体；不因合作推正式父关系"
+    },
+    {
+      "id": "QS21-078",
+      "name": "武盟",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-private-network",
+      "evidence_status": "CLASSIFIED",
+      "caveat": "民间组织或联合体；不因合作推正式父关系"
+    },
+    {
+      "id": "QS21-079",
+      "name": "八大总商",
+      "R21_classification": "COLLECTIVE",
+      "primary_relation_target": null,
+      "primary_relation_type": "coalition-not-single-office",
+      "evidence_status": "COLLECTIVE_ONLY",
+      "caveat": "八大总商是盐商联合利益群体，未证国家官署"
+    },
+    {
+      "id": "QS21-080",
+      "name": "百鹿阁",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-041",
+      "primary_relation_type": "funding-front-candidate",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "31–33章百鹿阁司曹自述为军情司供给经费，经济/掩护关系非正式分司"
+    },
+    {
+      "id": "QS21-081",
+      "name": "朝仓赌坊",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "business-or-service-entity",
+      "evidence_status": "UNKNOWN_PARENT",
+      "caveat": "商号/商业服务节点/出版产品；产权经营关系需逐条看明示证据"
+    },
+    {
+      "id": "QS21-082",
+      "name": "太平医馆",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "business-or-service-entity",
+      "evidence_status": "UNKNOWN_PARENT",
+      "caveat": "商号/商业服务节点/出版产品；产权经营关系需逐条看明示证据"
+    },
+    {
+      "id": "QS21-083",
+      "name": "固原龙门客栈",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "business-or-service-entity",
+      "evidence_status": "UNKNOWN_PARENT",
+      "caveat": "商号/商业服务节点/出版产品；产权经营关系需逐条看明示证据"
+    },
+    {
+      "id": "QS21-084",
+      "name": "昌平福来客栈",
+      "R21_classification": "ALIAS_MERGED",
+      "primary_relation_target": "QS21-073",
+      "primary_relation_type": "operated-service-node-candidate",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "407–408灯火暗语和昌平福来客栈接叶子/跨城转单，经营节点关系"
+    },
+    {
+      "id": "QS21-085",
+      "name": "洛城福来客栈",
+      "R21_classification": "HOMONYM_SPLIT",
+      "primary_relation_target": null,
+      "primary_relation_type": "business-or-service-entity",
+      "evidence_status": "UNKNOWN_PARENT",
+      "caveat": "商号/商业服务节点/出版产品；产权经营关系需逐条看明示证据"
+    },
+    {
+      "id": "QS21-086",
+      "name": "文昌书局",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-073",
+      "primary_relation_type": "reported-owned-enterprise",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "520章陆氏明确称文昌书局属灯火产业；合同产权未见"
+    },
+    {
+      "id": "QS21-087",
+      "name": "文远书局",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "business-or-service-entity",
+      "evidence_status": "UNKNOWN_PARENT",
+      "caveat": "商号/商业服务节点/出版产品；产权经营关系需逐条看明示证据"
+    },
+    {
+      "id": "QS21-088",
+      "name": "琉璃书局",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "independent-publishing-business",
+      "evidence_status": "UNKNOWN_PARENT",
+      "caveat": "琉璃书局与《武襄晨报》排印有关，未取得直接产权关系"
+    },
+    {
+      "id": "QS21-089",
+      "name": "京城晨报",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-086",
+      "primary_relation_type": "printed-by",
+      "evidence_status": "OPERATING_RELATION",
+      "caveat": "512–513文昌书局与报纸制作可见；报纸为出版产品而非书局同义ID"
+    },
+    {
+      "id": "QS21-090",
+      "name": "武襄晨报",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-088",
+      "primary_relation_type": "printed-by",
+      "evidence_status": "OPERATING_RELATION",
+      "caveat": "764章琉璃书局参与《武襄晨报》排印；报纸与书局不是一个对象"
+    },
+    {
+      "id": "QS21-091",
+      "name": "金陵晚报",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS22-N003",
+      "primary_relation_type": "commissioned-publication-candidate",
+      "evidence_status": "OPEN",
+      "caveat": "821季家掌柜受姚安指示筹办金陵晚报；商行法律持有仍未证"
+    },
+    {
+      "id": "QS21-092",
+      "name": "陈家盐商总号",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-063",
+      "primary_relation_type": "family-owned-enterprise",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "350、558陈家盐号掌柜与宗族公账，家财联系直接但账面具体所有权仍应细分"
+    },
+    {
+      "id": "QS21-093",
+      "name": "陈家粮号",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-063",
+      "primary_relation_type": "family-business-candidate",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "350陈家盐号另提陈家粮号；同姓宗族经营，不合并两商号"
+    },
+    {
+      "id": "QS21-094",
+      "name": "陈迹个人粮油铺",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "business-or-service-entity",
+      "evidence_status": "UNKNOWN_PARENT",
+      "caveat": "商号/商业服务节点/出版产品；产权经营关系需逐条看明示证据"
+    },
+    {
+      "id": "QS21-095",
+      "name": "清吟小班（百顺胡同）",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": "QS21-006",
+      "primary_relation_type": "reported-owned-enterprise",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "550金猪明确称百顺胡同清吟小班属司礼监产业，正式产权资料未核"
+    },
+    {
+      "id": "QS21-096",
+      "name": "洛城白衣巷清吟小班",
+      "R21_classification": "HOMONYM_SPLIT",
+      "primary_relation_target": null,
+      "primary_relation_type": "business-or-service-entity",
+      "evidence_status": "UNKNOWN_PARENT",
+      "caveat": "商号/商业服务节点/出版产品；产权经营关系需逐条看明示证据"
+    },
+    {
+      "id": "QS21-097",
+      "name": "红袖招",
+      "R21_classification": "ENTITY",
+      "primary_relation_target": null,
+      "primary_relation_type": "business-or-service-entity",
+      "evidence_status": "UNKNOWN_PARENT",
+      "caveat": "商号/商业服务节点/出版产品；产权经营关系需逐条看明示证据"
+    },
+    {
+      "id": "QS21-098",
+      "name": "金陵渡船灯火节点",
+      "R21_classification": "SUBUNIT",
+      "primary_relation_target": "QS21-073",
+      "primary_relation_type": "operated-transport-node",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "762灯火金陵渡船、地区正将、竹票与船工调度链"
+    },
+    {
+      "id": "QS21-099",
+      "name": "盐引交易所",
+      "R21_classification": "SITE",
+      "primary_relation_target": null,
+      "primary_relation_type": "business-or-service-entity",
+      "evidence_status": "UNKNOWN_PARENT",
+      "caveat": "商号/商业服务节点/出版产品；产权经营关系需逐条看明示证据"
+    },
+    {
+      "id": "QS21-100",
+      "name": "京仓",
+      "R21_classification": "SITE",
+      "primary_relation_target": "QS21-031",
+      "primary_relation_type": "guarded-by",
+      "evidence_status": "OPERATING_RELATION",
+      "caveat": "410/411万岁军驻守京仓，仅护卫不为组织包含"
+    },
+    {
+      "id": "QS21-101",
+      "name": "文胆堂",
+      "R21_classification": "SITE",
+      "primary_relation_target": "QS21-063",
+      "primary_relation_type": "used-by-family",
+      "evidence_status": "OPERATING_RELATION",
+      "caveat": "430陈家文胆堂是宗族议事场所"
+    },
+    {
+      "id": "QS21-102",
+      "name": "黄山四城隍庙",
+      "R21_classification": "SITE",
+      "primary_relation_target": "QS21-049",
+      "primary_relation_type": "operated-religious-sites",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "433黄山道庭在京畿四城隍庙经营信众，非四家独立道庭"
+    },
+    {
+      "id": "QS21-103",
+      "name": "陆浑山庄",
+      "R21_classification": "SITE",
+      "primary_relation_target": "QS21-050",
+      "primary_relation_type": "religious-outpost-of",
+      "evidence_status": "TEXT_REPORTED",
+      "caveat": "130老君山道庭山下别院陆浑山庄"
+    },
+    {
+      "id": "QS21-104",
+      "name": "朝天宫",
+      "R21_classification": "SITE",
+      "primary_relation_target": "QS21-049",
+      "primary_relation_type": "site-governance-candidate",
+      "evidence_status": "OPEN",
+      "caveat": "R19/R20黄山道庭对朝天宫有治理指令线索，但产权和长期管辖不宜硬判"
+    },
+    {
+      "id": "QS21-105",
+      "name": "会同馆",
+      "R21_classification": "SITE",
+      "primary_relation_target": null,
+      "primary_relation_type": "site-not-independent-org",
+      "evidence_status": "SITE_ONLY",
+      "caveat": "作为场所记录；不会作为独立组织计数"
+    },
+    {
+      "id": "QS21-106",
+      "name": "贡院",
+      "R21_classification": "SITE",
+      "primary_relation_target": null,
+      "primary_relation_type": "site-not-independent-org",
+      "evidence_status": "SITE_ONLY",
+      "caveat": "作为场所记录；不会作为独立组织计数"
+    },
+    {
+      "id": "QS21-107",
+      "name": "武庙长白山天池山门",
+      "R21_classification": "SITE",
+      "primary_relation_target": "QS21-048",
+      "primary_relation_type": "mountain-base-of",
+      "evidence_status": "OPERATING_RELATION",
+      "caveat": "293/530/839武庙山门及长白山天池地理与门人据点关系"
+    },
+    {
+      "id": "QS21-108",
+      "name": "五猖兵马",
+      "R21_classification": "EXCLUDE",
+      "primary_relation_target": null,
+      "primary_relation_type": "excluded-supernatural",
+      "evidence_status": "EXCLUDE",
+      "caveat": "术法召唤战力，非人间常驻社会组织"
+    }
+  ],
+  "additional_nodes": [
+    {
+      "id": "QS22-N001",
+      "name": "靖王府",
+      "classification": "宗室府邸/权力组织",
+      "chapters": [
+        "40",
+        "180",
+        "181"
+      ],
+      "caveat": "R21缺失千岁军上位组织；属于王府政治/侍卫体系，不是全部宁朝军队的军部"
+    },
+    {
+      "id": "QS22-N002",
+      "name": "中军都督府",
+      "classification": "军事高层机关",
+      "chapters": [
+        "820",
+        "826"
+      ],
+      "caveat": "R20出现该机关与商人请托、解烦卫押解人员；是否直接管理各军营需另证"
+    },
+    {
+      "id": "QS22-N003",
+      "name": "季氏商行",
+      "classification": "商号/报业经营候选",
+      "chapters": [
+        "821",
+        "832"
+      ],
+      "caveat": "金陵晚报策划人姚安与季家掌柜关系待分投资/制作/合法所有权"
+    },
+    {
+      "id": "QS22-N004",
+      "name": "京卫武学",
+      "classification": "军事教育机构",
+      "chapters": [
+        "637"
+      ],
+      "caveat": "历史R15/R16分片有隶属兵部的直接说明；不能把所有武学都等同该校"
+    },
+    {
+      "id": "QS22-N005",
+      "name": "龙江关钞关",
+      "classification": "税务关卡/机构场所候选",
+      "chapters": [
+        "752"
+      ],
+      "caveat": "留都户部监管；具体钞关作为场所或独立收税官署待后续定名"
+    },
+    {
+      "id": "QS22-N006",
+      "name": "备倭军甲乙丙丁四营",
+      "classification": "部队内部营级集合",
+      "chapters": [
+        "774",
+        "775"
+      ],
+      "caveat": "原材料提及四营组成；不能当作四支独立全国常备军"
+    }
+  ],
+  "typed_edges": [
+    {
+      "id": "R22-E001",
+      "source": "QS21-006",
+      "target": "QS21-007",
+      "relation_type": "administers-or-internal-of",
+      "chapters": [
+        "16",
+        "49"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "已记录密谍司属司礼监，生肖职能分组存在；**不推**：不推解烦卫必然法定直属密谍司"
+    },
+    {
+      "id": "R22-E002",
+      "source": "QS21-009",
+      "target": "QS21-010",
+      "relation_type": "operational-subunit-of",
+      "chapters": [
+        "17",
+        "21"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "主刑司鱼龙卫在现场执行行动；**不推**：小队调度不自动代表所有法定编制完备"
+    },
+    {
+      "id": "R22-E003",
+      "source": "QS22-N001",
+      "target": "QS21-032",
+      "relation_type": "armed-guard-of",
+      "chapters": [
+        "40",
+        "180"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "千岁军作为靖王府护卫出现；**不推**：不是皇帝万岁军"
+    },
+    {
+      "id": "R22-E004",
+      "source": "QS21-040",
+      "target": "QS21-041",
+      "relation_type": "supervises",
+      "chapters": [
+        "738"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "景朝枢密院管理军情司的章段记述；**不推**：不能将早期秘密团队完全等于现行法定机关"
+    },
+    {
+      "id": "R22-E005",
+      "source": "QS21-040",
+      "target": "QS21-042",
+      "relation_type": "supervises",
+      "chapters": [
+        "738"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "景朝枢密院与军略司管理关联；**不推**：不能以'管理'冒充全体人员直属细目"
+    },
+    {
+      "id": "R22-E006",
+      "source": "QS21-063",
+      "target": "QS21-064",
+      "relation_type": "faction-of",
+      "chapters": [
+        "397",
+        "437"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "陈家二房属于陈氏宗族内部政治与经济派系；**不推**：不是独立陈氏政权"
+    },
+    {
+      "id": "R22-E007",
+      "source": "QS21-063",
+      "target": "QS21-092",
+      "relation_type": "owns-family-enterprise-candidate",
+      "chapters": [
+        "350",
+        "351",
+        "558"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "陈家盐商总号有掌柜/族中交利和盐号公账；**不推**：陈迹私人粮油铺不归入盐商总号"
+    },
+    {
+      "id": "R22-E008",
+      "source": "QS21-063",
+      "target": "QS21-093",
+      "relation_type": "runs-family-business-candidate",
+      "chapters": [
+        "350"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "陈家粮号是陈氏经营分支，名称区别于盐号；**不推**：粮号不是盐号同一个商业主体"
+    },
+    {
+      "id": "R22-E009",
+      "source": "QS21-049",
+      "target": "QS21-102",
+      "relation_type": "operates-site",
+      "chapters": [
+        "433"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "黄山道庭有北西南东四城隍庙经营据点；**不推**：四庙非四个独立宗门"
+    },
+    {
+      "id": "R22-E010",
+      "source": "QS21-050",
+      "target": "QS21-103",
+      "relation_type": "operates-site",
+      "chapters": [
+        "130",
+        "131"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "陆浑山庄为老君山道庭山下别院；**不推**：别院不是与道庭并列的新宗门"
+    },
+    {
+      "id": "R22-E011",
+      "source": "QS21-048",
+      "target": "QS21-107",
+      "relation_type": "has-site",
+      "chapters": [
+        "293",
+        "530",
+        "839"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "武庙以长白山天池山门为修行活动据点；**不推**：位置处景朝不等于武庙受景朝枢密院管辖"
+    },
+    {
+      "id": "R22-E012",
+      "source": "QS21-073",
+      "target": "QS21-084",
+      "relation_type": "operates-service-node-candidate",
+      "chapters": [
+        "407",
+        "408",
+        "409"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "灯火暗号与福来客栈接叶子、跨城转单；**不推**：不同城的同名福来客栈绝不自动合并"
+    },
+    {
+      "id": "R22-E013",
+      "source": "QS21-073",
+      "target": "QS21-086",
+      "relation_type": "reported-owns",
+      "chapters": [
+        "520"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "陆氏明确称文昌书局是灯火产业；**不推**：不涵盖全城书局，不作官营财产"
+    },
+    {
+      "id": "R22-E014",
+      "source": "QS21-073",
+      "target": "QS21-098",
+      "relation_type": "operates-ferry-node",
+      "chapters": [
+        "762"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "灯火金陵渡船地区正将、票据与船工业务链；**不推**：与外部河道军职不构成同一机构"
+    },
+    {
+      "id": "R22-E015",
+      "source": "QS21-006",
+      "target": "QS21-095",
+      "relation_type": "reported-owns",
+      "chapters": [
+        "550"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "金猪称百顺胡同清吟小班为司礼监产业；**不推**：不推广所有清吟小班归司礼监"
+    },
+    {
+      "id": "R22-E016",
+      "source": "QS21-037",
+      "target": "QS22-N006",
+      "relation_type": "unit-formation-of",
+      "chapters": [
+        "774",
+        "775"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "备倭军甲乙丙丁四营为内部营级编组的叙述；**不推**：不虚构四营的独立全国军政层级"
+    },
+    {
+      "id": "R22-E017",
+      "source": "QS21-011",
+      "target": "QS22-N004",
+      "relation_type": "administers-military-school",
+      "chapters": [
+        "637"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "京卫武学归兵部管理的R16旧章节资料；**不推**：不推所有书院受兵部管辖"
+    },
+    {
+      "id": "R22-E018",
+      "source": "QS21-015",
+      "target": "QS22-N005",
+      "relation_type": "regulates-fiscal-site",
+      "chapters": [
+        "752"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "留都户部监管龙江关钞关和江南赋税；**不推**：关卡是否独立衙门需再核"
+    },
+    {
+      "id": "R22-E019",
+      "source": "QS22-N003",
+      "target": "QS21-091",
+      "relation_type": "publishing-commission",
+      "chapters": [
+        "821",
+        "832"
+      ],
+      "evidence_status": "CANDIDATE_OPEN",
+      "explanation": "季家掌柜受姚安指示筹办金陵晚报；**不推**：不能断言商行持有报社股份或受景朝朝廷统辖"
+    },
+    {
+      "id": "R22-E020",
+      "source": "QS21-086",
+      "target": "QS21-089",
+      "relation_type": "prints-and-produces",
+      "chapters": [
+        "512",
+        "513"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "文昌书局参与京城晨报印刷发行筹办；**不推**：报纸不是同一书局的别名"
+    },
+    {
+      "id": "R22-E021",
+      "source": "QS21-077",
+      "target": "QS21-089",
+      "relation_type": "distributes",
+      "chapters": [
+        "513",
+        "515"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "梅花渡把棍街巷售《京城晨报》；**不推**：分销不证明梅花渡拥有报纸产权"
+    },
+    {
+      "id": "R22-E022",
+      "source": "QS21-088",
+      "target": "QS21-090",
+      "relation_type": "prints",
+      "chapters": [
+        "764"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "琉璃书局参与武襄晨报的印刷；**不推**：发行牌照/法人产权待证"
+    },
+    {
+      "id": "R22-E023",
+      "source": "QS21-041",
+      "target": "QS21-080",
+      "relation_type": "funded-by-business-front",
+      "chapters": [
+        "31",
+        "33",
+        "66"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "景朝军情司司曹述百鹿阁筹资与掩护；**不推**：不标百鹿阁为军情司正式官署"
+    },
+    {
+      "id": "R22-E024",
+      "source": "QS21-031",
+      "target": "QS21-100",
+      "relation_type": "guards",
+      "chapters": [
+        "410",
+        "411"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "万岁军守京仓；**不推**：场所不是军队下级机构"
+    },
+    {
+      "id": "R22-E025",
+      "source": "QS21-045",
+      "target": "QS21-052",
+      "relation_type": "battlefield-cooperation",
+      "chapters": [
+        "275"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "天策军与苦觉寺僧兵在战事协同；**不推**：双方行政/宗教所属不变"
+    },
+    {
+      "id": "R22-E026",
+      "source": "QS21-074",
+      "target": "QS21-075",
+      "relation_type": "mediates-with",
+      "chapters": [
+        "548"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "三山会祁公居中传话及与韩童斡旋；**不推**：调停并非三山会吞并漕帮"
+    },
+    {
+      "id": "R22-E027",
+      "source": "QS21-016",
+      "target": "QS21-017",
+      "relation_type": "joint-enforcement",
+      "chapters": [
+        "559"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "都察院巡按御史凭驾帖调五城兵马司查封梅花渡；**不推**：一次协同执法非永久监察直属关系"
+    },
+    {
+      "id": "R22-E028",
+      "source": "QS21-007",
+      "target": "QS21-008",
+      "relation_type": "parallel-warrants",
+      "chapters": [
+        "406",
+        "407"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "白龙密谍司与林朝青解烦卫各发不同海捕文书；**不推**：两者不同机构，不合并也不互判法定上级"
+    },
+    {
+      "id": "R22-E029",
+      "source": "QS21-073",
+      "target": "QS21-083",
+      "relation_type": "shared-secret-contact-network",
+      "chapters": [
+        "247",
+        "407"
+      ],
+      "evidence_status": "CANDIDATE_OPEN",
+      "explanation": "固原龙门客栈与灯火暗语/掌柜同僚线索；**不推**：不认定整客栈正式产权归灯火"
+    },
+    {
+      "id": "R22-E030",
+      "source": "QS21-041",
+      "target": "QS21-097",
+      "relation_type": "suspected-intelligence-contact",
+      "chapters": [
+        "248",
+        "249"
+      ],
+      "evidence_status": "CANDIDATE_OPEN",
+      "explanation": "红袖招有景朝密谍接头/贼窝线索；**不推**：不能认定产权和指令直属军情司"
+    },
+    {
+      "id": "R22-E031",
+      "source": "QS21-075",
+      "target": "QS21-076",
+      "relation_type": "temporary-military-cooperation",
+      "chapters": [
+        "786",
+        "792"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "漕帮与盐帮战时协防线索；**不推**：漕帮不属于盐帮，反之亦然"
+    },
+    {
+      "id": "R22-E032",
+      "source": "QS21-049",
+      "target": "QS21-104",
+      "relation_type": "site-governance-candidate",
+      "chapters": [
+        "818",
+        "840"
+      ],
+      "evidence_status": "CANDIDATE_OPEN",
+      "explanation": "黄山道庭朝天宫治理和法旨叙述；**不推**：无产权与寺宫法定直接管理记录"
+    },
+    {
+      "id": "R22-E033",
+      "source": "QS21-014",
+      "target": "QS21-015",
+      "relation_type": "regional-fiscal-counterpart",
+      "chapters": [
+        "752"
+      ],
+      "evidence_status": "CANDIDATE_OPEN",
+      "explanation": "留都户部与宁朝户部同属财政体系；**不推**：不能以同名推主司对地方完整法定指挥"
+    },
+    {
+      "id": "R22-E034",
+      "source": "QS21-071",
+      "target": "QS21-038",
+      "relation_type": "influences-private-guard-candidate",
+      "chapters": [
+        "112",
+        "113"
+      ],
+      "evidence_status": "CANDIDATE_OPEN",
+      "explanation": "刘氏能调动象甲卫、具兵员行动；**不推**：合法武装产权与实际隶属待证"
+    },
+    {
+      "id": "R22-E035",
+      "source": "QS21-089",
+      "target": "QS21-091",
+      "relation_type": "different-publication",
+      "chapters": [
+        "513",
+        "821"
+      ],
+      "evidence_status": "NEGATIVE_EQUIVALENCE",
+      "explanation": "京城晨报与金陵晚报属于不同报业项目；**不推**：不能以'晨报'/'晚报'共有字眼合并"
+    }
+  ],
+  "formal_W_scoring": "R23_only"
+}
