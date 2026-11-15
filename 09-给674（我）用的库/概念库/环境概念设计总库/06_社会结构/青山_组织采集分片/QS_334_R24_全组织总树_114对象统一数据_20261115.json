@@ -2603,20 +2603,20 @@
       "score_status": "HAS_CANDIDATE_W",
       "candidate_W": 610,
       "sensitivity_range": [
-        480,
-        740
+        530,
+        690
       ],
-      "score_confidence": "L",
+      "score_confidence": "M",
       "old_W": null,
       "W_delta": null,
-      "chapters": "820,826",
-      "contribution": "中军都督府军政高层角色与商业请托线索，直辖兵力未核",
+      "chapters": "作者771《石头里蹦出来的》、作者814《解烦卫》、作者820《谛听》、作者826《鹽引》、作者827《对策》",
+      "contribution": "中军都督府有官员报告的1.2万兵额，见人员任命及定海港接管/备倭军看管行动；辖域与长期覆盖不全",
       "alias": "",
       "source_boundary": "",
       "relation_primary_type": null,
       "relation_primary_target": null,
       "relation_evidence_status": "",
-      "parent_relation_caution": "R20出现该机关与商人请托、解烦卫押解人员；是否直接管理各军营需另证",
+      "parent_relation_caution": "作者814支持一次按军令的接管/看管，不证明备倭军永久隶属或直辖各营",
       "evidence_update_2026_11_15": {
         "chapters": [
           "820《谛听》",
@@ -2631,6 +2631,24 @@
         "findings": "作者820显示中军都督府总兵与兵部尚书同在押解囚车中遭杀，现场有上百解烦卫押送；该文未说明中军都督府的常设兵力或上级关系。作者826八大总商向胡钧业请求由中军都督府围剿盐帮，并提出捐输，但只是游说提案。作者827称都督府调兵速度不足以捉拿黄阙，并指出南直隶适合执行该任务的是解烦卫；仍未给出都督府控制兵额或实际执行该围剿的证据。",
         "boundary": "补充来源确认高层官员、商业游说和对军务反应速度的叙述；未证明中军都督府直辖各营、全国军权覆盖或任何已执行的围剿令。",
         "scoring_effect": "无数值变更；W610、区间480–740、置信L保持候选，因新增材料未量化长期制度覆盖或可调资源。"
+      },
+      "evidence_update_2026_11_16": {
+        "chapters": [
+          "作者771《石头里蹦出来的》",
+          "作者814《解烦卫》",
+          "作者827《对策》"
+        ],
+        "source_urls": [
+          "https://www.piaotia.com/html/15/15702/11632581.html",
+          "https://www.ttkan.co/novel/pagea/qingshan-huishuohuadezhouzi_783.html",
+          "https://czbooks.net/n/s6ojkc/z5198kg?chapterNumber=820",
+          "https://xszj.org/b/389816/c/21356239",
+          "https://www.piaotia.com/html/15/15702/13123568.html",
+          "https://ixdzs.tw/read/549077/p831.html"
+        ],
+        "findings": "作者771《石头里蹦出来的》：王长真称中军都督府约一万二千兵马，海岸线过长导致无法分派足够兵力驻海防；并称曾上书请求赣州狼兵、湖广土兵增援但未获答复。作者814《解烦卫》（小说狂人页内标814，另站编号为815）：王长真签发兵部文书将备倭军千户郑继业升任中军都督府指挥使；中军都督府兵马按军令接管定海港、驱逐徐家人马并围控备倭军，准备押其返府休整。作者827《对策》里“中军都督府慢吞吞”是钱氏大掌柜的判断，作为人物意见记录，不当作叙述者事实。上述证明该府拥有一定成规模兵力、人员任命及一次具体沿海接管/看管行动；尚不证明全国辖域、全部卫所的常设直属或长期行动效果。",
+        "boundary": "作者827中“慢吞吞”是钱氏大掌柜评价；作者771同时明示海防覆盖受限、增援未获批。一次港口接管/看管不是永久军籍或全国指挥权。",
+        "scoring_effect": "W610不变；confidence L→M，range 480–740→530–690，按既定M档±80。跨省辖域与长期效果仍未核。"
       }
     },
     {
@@ -3251,6 +3269,23 @@
       "graph_visualize_as": "typed_relation_not_legal_direct_inclusion",
       "source_urls": [
         "https://ixdzs.tw/read/549077/p857.html"
+      ]
+    },
+    {
+      "id": "R22-E037",
+      "from": "QS22-N002",
+      "to": "QS21-037",
+      "type": "temporary-command-and-custody",
+      "chapter_anchors": [
+        "作者814《解烦卫》"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "evidence": "作者814记中军都督府兵马按军令接管定海港、驱逐徐家人马、围控备倭军并准备押返府休整；是一次具体行动，不证明备倭军永久隶属或完整法定上下级。",
+      "legal_part_of_confirmed": false,
+      "graph_visualize_as": "temporary_operational_relation_not_permanent_subordination",
+      "source_urls": [
+        "https://czbooks.net/n/s6ojkc/z5198kg?chapterNumber=820",
+        "https://xszj.org/b/389816/c/21356239"
       ]
     }
   ],
