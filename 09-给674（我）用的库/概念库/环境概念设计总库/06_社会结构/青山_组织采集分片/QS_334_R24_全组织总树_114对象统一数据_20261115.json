@@ -2480,11 +2480,11 @@
       "chapters": "818,840",
       "contribution": "SITE：非独立社会组织（场所、集合、子网点或召唤战力）；不得单独作为世界势力计W",
       "alias": "朝天宫",
-      "source_boundary": "管理关系与现场控制分开，不凭地理画从属",
+      "source_boundary": "818只支持朝天宫现场的道庭法旨/任务执行；840道庭仪式未定位在朝天宫。场所控制、产权和长期管理分开，不凭现场命令画法定从属。",
       "relation_primary_type": "site-governance-candidate",
       "relation_primary_target": "QS21-049",
       "relation_evidence_status": "OPEN",
-      "parent_relation_caution": "R19/R20黄山道庭对朝天宫有治理指令线索，但产权和长期管辖不宜硬判"
+      "parent_relation_caution": "818证实现场法旨与任务执行；840仅证实黄山道庭举行仪式、未证明地点为朝天宫；产权与长期治理仍OPEN。"
     },
     {
       "id": "QS21-105",
@@ -3161,9 +3161,13 @@
         "840"
       ],
       "evidence_status": "CANDIDATE_OPEN",
-      "evidence": "黄山道庭朝天宫治理和法旨叙述；**不推**：无产权与寺宫法定直接管理记录",
+      "evidence": "818《落脚》：黄山道庭上尊法旨到达朝天宫现场，张宁传达追杀命令并命弟子封山门、召八大总商、在普天大醮前回收散落的万神临舍，证明现场指令及具体任务执行（https://ixdzs.tw/read/549077/p822.html）。840《无人试剑》证实黄山道庭主办普天大醮、门人执行法坛仪式（https://ixdzs.tw/read/549077/p844.html），但未证明该仪式地点就是朝天宫，不作为E032场所管辖证据。产权、长期治理与法定直属仍未证，维持CANDIDATE_OPEN。",
       "legal_part_of_confirmed": false,
-      "graph_visualize_as": "typed_relation_not_legal_direct_inclusion"
+      "graph_visualize_as": "typed_relation_not_legal_direct_inclusion",
+      "source_urls": [
+        "https://ixdzs.tw/read/549077/p822.html",
+        "https://ixdzs.tw/read/549077/p844.html"
+      ]
     },
     {
       "id": "R22-E033",
