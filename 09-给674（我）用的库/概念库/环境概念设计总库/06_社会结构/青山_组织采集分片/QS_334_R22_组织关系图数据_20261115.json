@@ -8,7 +8,7 @@
   "warning": "Typed relations do not all represent formal organization containment. Not a full-book organization census.",
   "original_R21_objects": 108,
   "additional_connecting_objects": 6,
-  "relation_rows": 36,
+  "relation_rows": 37,
   "entity_nodes": [
     {
       "id": "QS21-001",
@@ -1520,6 +1520,24 @@
         "https://czbooks.net/n/s6ojkc/z5198kg?chapterNumber=820",
         "https://xszj.org/b/389816/c/21356239"
       ]
+    },
+    {
+      "id": "R22-E038",
+      "source": "QS21-075",
+      "target": "QS21-041",
+      "relation_type": "negotiated-coordination; conditional-fleet-mobilization",
+      "chapters": [
+        "作者851《造反》",
+        "作者854《杀姚安》"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "作者851《造反》页内题名851（虽URL尾号p855）：景朝军情司谛听董遮代表其主人向漕帮提出联手，称可提供争取时间、领兵者、兵刃、马匹及情报；白鲤同意先行使龙江关外六十艘漕船下行，以船抵定海港作为主人会面的条件。作者854《杀姚安》页内题名854（虽URL尾号p858）：陈迹称漕帮已与姚安达成交易，约定船到定海港时姚安会面；该章实际出现的“姚安”是冒名者，不能据此认定本人已赴会。证据支持漕帮与军情司代表间已有交易/协作谈判及条件性船队调动，不证明正式同盟、法定隶属或交易最终履行。",
+      "source_urls": [
+        "https://ixdzs8.com/read/549077/p855.html",
+        "https://ixdzs8.com/read/549077/p858.html"
+      ],
+      "legal_part_of_confirmed": false,
+      "graph_visualize_as": "negotiated-operational-coordination_not_subordination"
     }
   ],
   "formal_W_scoring": "R23_only"
