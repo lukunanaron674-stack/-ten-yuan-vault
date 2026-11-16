@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "endpoint": "http://127.0.0.1:18216",
+  "server_args": [
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18216",
+    "--threads",
+    "8",
+    "--threads-batch",
+    "8",
+    "--gpu-layers",
+    "0",
+    "--ctx-size",
+    "4096",
+    "--parallel",
+    "1",
+    "--no-webui"
+  ],
+  "tool_calls": 0,
+  "cases": [
+    {
+      "case": "current_h06_gate",
+      "expected_action": "ESCALATE_NX",
+      "actual_action": "ESCALATE_NX",
+      "schema_and_invariants": "PASS",
+      "action_match": true,
+      "errors": [],
+      "submitted_to_comfyui": false,
+      "tokens_predicted": 374,
+      "tokens_per_second": 7.213581460422637
+    },
+    {
+      "case": "historical_feedback_unbound",
+      "expected_action": "PROPOSE_NEXT_TEST",
+      "actual_action": "PROPOSE_NEXT_TEST",
+      "schema_and_invariants": "PASS",
+      "action_match": true,
+      "errors": [],
+      "submitted_to_comfyui": false,
+      "tokens_predicted": 227,
+      "tokens_per_second": 7.263360050928366
+    },
+    {
+      "case": "queued_job_immutable",
+      "expected_action": "NO_OP",
+      "actual_action": "NO_OP",
+      "schema_and_invariants": "PASS",
+      "action_match": true,
+      "errors": [],
+      "submitted_to_comfyui": false,
+      "tokens_predicted": 198,
+      "tokens_per_second": 7.251384443888383
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "v1",
+  "mode": "SHADOW",
+  "authority": "NONE",
+  "active_executor": "CODEX",
+  "project_id": "674",
+  "job_id": "H06-HISTORY-REPLAY-DEMO",
+  "base_state_version": "DEMO_ONLY",
+  "source_refs": [
+    "674-216 historical reference",
+    "674-286 H06 R5 historical comment"
+  ],
+  "action": "READ_ONLY_PREFLIGHT",
+  "reason": "Read-only example of protocol checking, not a Qwen-generated decision.",
+  "blocker": null,
+  "xn_candidate": null,
+  "nx_gap": "Q-DSL-001.2 cross-model semantic stability not yet verified.",
+  "next_action": "Compare actual real Qwen shadow JSON with frozen Codex read-only baseline.",
+  "submitted_to_comfyui": false
+}
