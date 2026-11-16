@@ -144,3 +144,21 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - 分级与边界：`F1=PARTIAL_SOURCE_NOT_FROZEN`；`F2=null`；`F3=null`；`ROLE_TENYUAN=null`；`main_theme=null`；`strict_relation_edges=NOT_ESTABLISHED`；`C-film=UNCHANGED`；`independent_pass=NOT_SCORED`；`human_feeling_profile/MAE/Top1/Top3=null`。此为电影剧情来源证据，不是观众感受数据、动态感受曲线或Q-FEEL证据。
 - 本轮裁决：`EVIDENCE_INTAKE_ONLY / NOT_READY / RETURN_SPECIFIC_GAP`。不升级Q-REL-002，不启动RESEARCH子Campaign，不创建新Q/电影卡/Canvas节点，不执行五轴A/B或H3。
 - NEXT：仅在取得完整可核剧情终幕与独立来源、完成全库身份排重，并能预锁R1/R2独立答案后，才评估是否纳入APP-FILM-CHAIN-001 holdout；若无新增来源或可复核事件，保持WAIT。
+
+
+
+## 8｜2026-11-17｜A_REAL_PAIN_2024_F1_SOURCE_CANDIDATE｜跨系统去重接收（非READY）
+
+- **receipt_id**：`Q-DYN-002-APP-FILM-CHAIN-001-A-REAL-PAIN-F1-INTAKE-20261117`。
+- **唯一来源增量**：Linear 674-105 comment `9dd07bfd-9b26-4d5b-9125-4144f7a80983`（2026-11-16 21:18:49 UTC）；同一F1来源包已进入 `05-银矿库/电影进度台账.md`，GitHub commit `d1561b56fcdcda4d3a07613f177d509e2ea49d87`，blob `4efecfdfe1be2d09570e653c981223e69690af0c`。Linear与GitHub是同一来源包，跨系统只计一条增量。
+- **身份/版本候选**：`A Real Pain (2024) / theatrical`，Jesse Eisenberg编剧、导演；USER已看=`NOT_CONFIRMED`。全库历史别名排重尚未穷尽，`NEW100_ELIGIBILITY=ARCHIVE_PENDING`；不创建C52、不增加正式NEW100数量。
+- **F1三事件包（公开来源，不是F2逐镜核验）**：
+  - E01：表兄弟David与Benji为纪念祖母重聚并参加波兰祖源/历史旅行；David主动组织旅程并承担照看责任，旧关系张力重新出现。
+  - E02：Benji对程式化历史导览提出强烈质疑；墓园与Majdanek参访使公共历史记忆与两人的私人危机并置。
+  - E03：祖母旧居纪念石受阻；纽约机场发生情感接近与有限和解，但Benji拒绝进入David提出的家庭日常安排，David独自返回。来源账与结局解释以电影进度台账记录为准。
+- **动态过程候选**：`shared_history → joint_trip → contrasting_responses → private_crisis_disclosure → memorial_act_blocked → affective_reconnection_without_life_reintegration`。这是F1剧情时间链候选，不是观众感受曲线，不证明“生/克/补”关系。
+- **机制边界**：候选为“情感桥成立，但生活整合未完成”（`PROPOSED_H`）；不能简化成架桥失败，也不能升格为正式新类型。最强反证是两人结尾确实发生和解、笑与亲情表达；若原片后续显示Benji重新进入David家庭生活，当前候选需降级。
+- **分层状态**：`F1=SOURCE_PACKET_RECORDED_PENDING_ARCHIVE_DEDUPE`；`F2=null`；`F3=null`；`ROLE_TENYUAN=null`；`main_theme=null`；`strict_relation_edges=NOT_ESTABLISHED`；`dynamic_feeling_curve=NOT_MEASURED`；`independent_pass=NOT_SCORED`。674-105登记的研究准备度65/100、机制增益2/5仅为辅助研究估值，不是C-film成绩或感受实验数据。
+- **计数与裁决**：`new_f1_cards=0`；`NEW100=28/100`不变；`type_gap_closed_H=0`；`type_gap_verified=0`。不新增电影MD/Canvas节点/主题索引，不启动RESEARCH子Campaign，不执行五轴A/B或H3。
+- **外部方法对照**：本轮沿用既有“先记录可观察事件、再拆时间链、再做删边反证”的电影分析路线；不借用影片类型或题材词直接贴十元。现有电影研究工作流已把F1剧情来源、F2原片逐镜、F3真人感受分账，本例只补F1。
+- **NEXT**：等待全库别名去重与原片F2事件/终幕核验；在出现可预锁的独立holdout、完整事件事实及可检验替代顺序前，保持`EVIDENCE_INTAKE_ONLY / NOT_READY`。本记录不构成Q-DYN-002 READY。
