@@ -175,3 +175,16 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - **分级不变**：`F1=PARTIAL_SOURCE_NOT_FROZEN`；`F2=null`；`F3=null`；`strict_relation_edges=NOT_ESTABLISHED`；`dynamic_feeling_curve=NOT_MEASURED`；`independent_pass=NOT_SCORED`。不因两篇采访提升C-film或人类感受E级。
 - **去重与计数**：这是§7同一部电影的补充来源，不增加新影片、独立holdout或机制类型计数；不建MD/Canvas节点，不启动RESEARCH子Campaign，不执行五轴A/B或H3。
 - **NEXT**：继续等待原片F2事件/终幕核验、完整别名排重及预锁独立holdout；若无可复核新材料，保持WAIT。此补充不使Q-DYN-002 READY。
+
+
+## 10｜2026-11-17｜A_REAL_PAIN_2024_CREATOR_COUNTERFACTUAL_CORROBORATION｜同片E03边界补证（非新事件/非READY）
+
+- **receipt_id**：`Q-DYN-002-APP-FILM-CHAIN-001-A-REAL-PAIN-CREATOR-COUNTERFACTUAL-20261117`。
+- **唯一增量来源**：Linear 674-105 comment `43eab260-6b35-413f-91e7-7a5ad8b2e84b`（2026-11-16 22:19:51 UTC）；同一增量已进入 `05-银矿库/电影进度台账.md`，GitHub commit `e1b29b950f415cced6077b32d44082fae6252e2d`，当前台账 blob `2e93cb0cd5de58704eeb3b80dc4b85b5f1918767`。Linear 评论与 GitHub 台账是同一来源增量，跨系统只计一次。
+- **外部来源复核**：ABC News 对 Jesse Eisenberg 的直接访谈，发表于2025-01-10。Eisenberg说明，他拒绝了“Benji敲开David公寓门、拥抱后直接结束”的替代结尾，并解释David试图改变表弟、希望Benji成为自己所看到的理想人物，但最终无法改变他。来源：[ABC News｜Why Jesse Eisenberg's new film hit so close to home](https://www.abc.net.au/news/2025-01-10/a-real-pain-interview-jesse-eisenberg/104799282)。此为创作者反事实/创作意图证据，不是原片逐镜核验。
+- **新增的可证含义**：这不是新增剧情事件，也不改变E01–E03事实账；它为既有E03的结算边界提供创作者解释：情感接近与亲情和解可以成立，但导演拒绝把结尾简化为完整的家庭空间回归式收束。故强化“情感桥成立≠生活整合完成”，不能写成“桥失败”。
+- **跨来源去重**：此前Esquire转述Total Film中Eisenberg关于两人仍相爱、但不再像从前亲近的表述；ABC为另一篇直接访谈，新增的是被拒绝的具体替代结尾及“David无法改变Benji”的解释。它们只构成同一作者意图的来源交叉，不重复计为两个新机制。
+- **类型与竞争解释**：沿用 `type_gap_id=R_DUAL_CORE_CONTRAST__C_AFFECTIVE_RECONNECTION_WITHOUT_REINTEGRATION`，`novelty_delta=CREATOR_COUNTERFACTUAL_SOURCE_CORROBORATION_ONLY`，仍为旧架桥家族的新作用范围机制候选 `PROPOSED_H`，不是正式新类型。竞争结构仍为 `FULL_BRIDGE`／`PARTIAL_BRIDGE`／`PARALLEL_OR_MISALIGNED`；最强反证仍是两人确有亲情回连。若F2核验发现Benji随后实际进入David家庭并恢复稳定共同生活，则“未整合”候选需FAIL或降级。
+- **分层与等级不变**：`F1=SOURCE_PACKET_RECORDED_PENDING_ARCHIVE_DEDUPE`；`F2=null`；`F3=null`；`ROLE_TENYUAN=null`；`main_theme=null`；`strict_relation_edges=NOT_ESTABLISHED`；`dynamic_feeling_curve=NOT_MEASURED`；`independent_pass=NOT_SCORED`。674-105登记的 `research_readiness_100=65/100`、`mechanism_gain_0_5=2/5`维持原值；`tenyuan_film_quality_100=null`。该来源不是观众感受数据，不计Q-FEEL、五轴A/B或跨媒体验证。
+- **去重与计数**：本轮只新增1条创作者反事实来源交叉记录；不增加电影卡、F1正式卡数、独立holdout或正式类型数；NEW100仍28/100。无新MD/Canvas节点、无GPU；不启动RESEARCH子Campaign，不执行五轴A/B或H3。
+- **NEXT**：等待原片F2终幕/事件核验、全库历史别名穷尽去重及预锁独立R1/R2答案；完成前保持 `EVIDENCE_INTAKE_ONLY / NOT_READY`。无新增可复核材料则WAIT。
