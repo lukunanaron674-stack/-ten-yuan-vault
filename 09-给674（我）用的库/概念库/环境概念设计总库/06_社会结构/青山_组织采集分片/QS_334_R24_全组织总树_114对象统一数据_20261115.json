@@ -3476,7 +3476,8 @@
       "R18 733,742无正文",
       "作者851《造反》、853《季氏》、854《杀姚安》已取得可读镜像；R20其它章须按具体作者章题逐页判断，856正文源污染、857–860目录级",
       "旧859章历史快照与新R20至作者860章并存，不推小说已完结",
-      "R24作者862《娘》：WebNovel官方目录对应平台Chapter 863；正文仅第9–41行可读，后续锁章，状态BODY_EXCERPT_ONLY。片段出现邮驿/琅琊驿社会制度线索，但未独立核证，暂不增对象/关系/W。"
+      "R24作者862《娘》：WebNovel官方目录对应平台Chapter 863；正文仅第9–41行可读，后续锁章，状态BODY_EXCERPT_ONLY。片段出现邮驿/琅琊驿社会制度线索，但未独立核证，暂不增对象/关系/W。",
+      "R24作者863《他心通》：最新目录显示平台Chapter 864/作者题名863；当前只有目录题名交叉（INDEX_ONLY），正文未取得，不据标题建组织、关系或W。"
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
     "r22_graph_sha": "ea91fec1ad74958e972b15c518966a9c1618f955",
@@ -3499,6 +3500,23 @@
       ],
       "finding": "片段提到琅琊驿及江南驿站勘合、住宿与口粮运作；滥用及支出比例为人物陈述/估算，未独立验证。",
       "classification_candidate": "邮驿/驿站基础设施（边界与行政父级待核）",
+      "promoted_to_object": false,
+      "W_assigned": false,
+      "relations_added": false
+    },
+    {
+      "author_chapter": 863,
+      "title": "他心通",
+      "platform_chapter": 864,
+      "status": "INDEX_ONLY",
+      "readable_range": null,
+      "source_urls": [
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://www.dingdian666.com/xiaoshuo/733514/",
+        "https://m.dingdian888.com/ebooks/733514_1/",
+        "https://www.hongxiu.com/bookquery/qbfotucl"
+      ],
+      "finding": "最新发布目录摘要将平台Chapter 864映射为作者题名863、他心通；Dingdian及红袖目录列表交叉出现同一作者题名。本轮未取得可读正文。",
       "promoted_to_object": false,
       "W_assigned": false,
       "relations_added": false
