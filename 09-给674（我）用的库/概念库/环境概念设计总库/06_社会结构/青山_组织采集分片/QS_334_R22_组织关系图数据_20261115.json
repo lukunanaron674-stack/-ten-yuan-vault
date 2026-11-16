@@ -8,7 +8,7 @@
   "warning": "Typed relations do not all represent formal organization containment. Not a full-book organization census.",
   "original_R21_objects": 108,
   "additional_connecting_objects": 6,
-  "relation_rows": 37,
+  "relation_rows": 38,
   "entity_nodes": [
     {
       "id": "QS21-001",
@@ -755,7 +755,7 @@
       "primary_relation_target": null,
       "primary_relation_type": "business-or-service-entity",
       "evidence_status": "UNKNOWN_PARENT",
-      "caveat": "作者407《灯火客栈》有跨地点暗号/掌柜向东家报告线索，支持与固原龙门掌柜的联络通道候选；收尸为陈迹陈述，固原龙门客栈产权及正式归属仍未证。"
+      "caveat": "作者242《密道》直接报告固原龙门掌柜为灯火同僚并称“我灯火客栈”，支持灯火关联服务节点；登记产权/股权/正式行政上级仍未证（R22-E039 OPEN）。"
     },
     {
       "id": "QS21-084",
@@ -1388,17 +1388,19 @@
       "id": "R22-E029",
       "source": "QS21-073",
       "target": "QS21-083",
-      "relation_type": "shared-secret-contact-network",
+      "relation_type": "reported-Lamp-affiliated-service-node",
       "chapters": [
-        "247",
-        "407"
+        "作者242《密道》",
+        "作者246《真正的密道》",
+        "作者407《灯火客栈》"
       ],
-      "evidence_status": "CANDIDATE_OPEN",
-      "explanation": "作者章号校准：WebNovel目录平台条目408自标作者407《灯火客栈》（https://www.webnovel.com/book/22444590709113204/catalog）。正文中陈迹称自己替固原龙门客栈掌柜收尸；灯火客栈以暗号筛选托办事项，掌柜称帷帽女子为“东家”并向其报告（TTkan https://ttks.tw/novel/chapters/qingshan/579.html；顶点 https://www.dingdian888.com/zhangjie/733514/709781299.html）。支持灯火与固原龙门掌柜之间存在联络/信息通道线索；收尸为陈迹陈述，未证明固原龙门客栈产权或正式归属灯火，E029继续CANDIDATE_OPEN。",
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "作者章题交叉：WebNovel目录平台槽243标作者242《密道》，平台槽247标作者246《真正的密道》；作者407《灯火客栈》按目录题名。作者242正文中掌柜称小满为灯火“同僚”、自称“我灯火客栈”，并以灯火铜钱说明龙门客栈密道服务的通行规则。直接报告灯火关联经营/服务节点；不证明登记产权、股权、常设行政上级或法定part-of。",
       "source_urls": [
         "https://www.webnovel.com/book/22444590709113204/catalog",
-        "https://ttks.tw/novel/chapters/qingshan/579.html",
-        "https://www.dingdian888.com/zhangjie/733514/709781299.html"
+        "https://czbooks.net/n/s6ojkc/s6onf31e?chapterNumber=246",
+        "https://www.piaotia.com/html/15/15702/11485597.html",
+        "https://www.ttkan.co/novel/pagea/qingshan-huishuohuadezhouzi_246.html"
       ]
     },
     {
@@ -1543,7 +1545,26 @@
       "legal_part_of_confirmed": false,
       "graph_visualize_as": "negotiated-operational-coordination_not_subordination",
       "source_coverage": "作者851、854可读正文；作者855仅搜索预览可读，页面打开403，未作全文审阅。"
+    },
+    {
+      "id": "R22-E039",
+      "source": "QS21-073",
+      "target": "QS21-083",
+      "relation_type": "formal-ownership-or-administrative-parentage-open",
+      "chapters": [
+        "作者242《密道》",
+        "作者246《真正的密道》",
+        "作者407《灯火客栈》"
+      ],
+      "evidence_status": "CANDIDATE_OPEN",
+      "explanation": "作者242《密道》文本已报告灯火掌柜同僚身份及灯火客栈服务运营，但不等同产权登记或正式行政隶属；现无股权、登记所有人、法定编制/直属文书，仅将法律所有权/正式父级保留OPEN。E029另记已证的文本报告经营关联。",
+      "source_urls": [
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://czbooks.net/n/s6ojkc/s6onf31e?chapterNumber=246",
+        "https://www.piaotia.com/html/15/15702/11485597.html"
+      ]
     }
   ],
-  "formal_W_scoring": "R23_only"
+  "formal_W_scoring": "R23_only",
+  "total_relation_records": 39
 }
