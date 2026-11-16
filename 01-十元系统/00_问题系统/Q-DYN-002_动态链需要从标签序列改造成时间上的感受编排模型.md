@@ -162,3 +162,16 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - **计数与裁决**：`new_f1_cards=0`；`NEW100=28/100`不变；`type_gap_closed_H=0`；`type_gap_verified=0`。不新增电影MD/Canvas节点/主题索引，不启动RESEARCH子Campaign，不执行五轴A/B或H3。
 - **外部方法对照**：本轮沿用既有“先记录可观察事件、再拆时间链、再做删边反证”的电影分析路线；不借用影片类型或题材词直接贴十元。现有电影研究工作流已把F1剧情来源、F2原片逐镜、F3真人感受分账，本例只补F1。
 - **NEXT**：等待全库别名去重与原片F2事件/终幕核验；在出现可预锁的独立holdout、完整事件事实及可检验替代顺序前，保持`EVIDENCE_INTAKE_ONLY / NOT_READY`。本记录不构成Q-DYN-002 READY。
+
+
+
+## 9｜2026-11-17｜THE_PAST_2013_CREATOR_INTERVIEW_INCREMENT｜同片结构证据补充（不新增影片计数）
+
+- **receipt_id**：`Q-DYN-002-APP-FILM-CHAIN-001-THE-PAST-CREATOR-STRUCTURE-20261117`。
+- **唯一来源增量**：Linear 674-105 comment `7fa8bdee-66fd-43b8-b203-559a1ca392b8`（2026-11-16 20:18 UTC）；同一证据已写入 `05-银矿库/电影进度台账.md`，GitHub commit `2cfaaadae39a8a7d33231f52688b59b32bf59b85`，blob `814511f8737142d5a191646f48295507166864df`。Linear与GitHub是同一证据包，只计一次。
+- **新增内容**：Asghar Farhadi导演访谈将《The Past / Le Passé (2013)》描述为从Marie/Ahmad向Samir及其妻子逐步分支的“多米诺”故事；信息通过分散线索逐步交代。Boston Globe另一篇独立采访补强“人物各自只掌握部分真相”的结构。来源：Awards Daily导演访谈（2013-12-21）；Boston Globe采访（2014-01-04）。
+- **证据层级**：这是导演创作意图与独立采访层的F1结构证据，不是原片逐镜/声画事实，不是观众感受数据。它补强“分支因果＋分散信息”这一结构候选，但不补足E03具体触发动作、不可逆代价与终幕结算。
+- **对§7既有候选的更新**：`novelty_delta`从初始`UNVERIFIED`细化为`CREATOR_PRIMARY_BRANCHING_DOMINO_CHAIN_AND_DISTRIBUTED_INFORMATION`（已知结构中的新机制候选，非新类型）；`type_gap_id=B_PAST_CAUSE_PRESENT_CONSEQUENCE__C_RELATION_MEDIATION_BACKFIRE`仍为开放候选。因果/时间/本体竞争仍为AI-H，`main_theme=null`，`theme_edges=NOT_ESTABLISHED`，人物十元null，L2无主张。
+- **分级不变**：`F1=PARTIAL_SOURCE_NOT_FROZEN`；`F2=null`；`F3=null`；`strict_relation_edges=NOT_ESTABLISHED`；`dynamic_feeling_curve=NOT_MEASURED`；`independent_pass=NOT_SCORED`。不因两篇采访提升C-film或人类感受E级。
+- **去重与计数**：这是§7同一部电影的补充来源，不增加新影片、独立holdout或机制类型计数；不建MD/Canvas节点，不启动RESEARCH子Campaign，不执行五轴A/B或H3。
+- **NEXT**：继续等待原片F2事件/终幕核验、完整别名排重及预锁独立holdout；若无可复核新材料，保持WAIT。此补充不使Q-DYN-002 READY。
