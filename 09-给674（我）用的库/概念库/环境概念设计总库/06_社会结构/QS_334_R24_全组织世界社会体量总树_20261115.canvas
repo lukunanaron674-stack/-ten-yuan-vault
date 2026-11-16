@@ -1620,8 +1620,8 @@
       "fromSide": "bottom",
       "toNode": "QS21-083",
       "toSide": "top",
-      "label": "作者407题名校准；联络线索OPEN",
-      "color": "2"
+      "label": "作者242：灯火关联服务点（TEXT_REPORTED）",
+      "color": "4"
     },
     {
       "id": "R22-E030",
@@ -1694,6 +1694,15 @@
       "toSide": "top",
       "label": "合作提议/条件调船；855履行未证",
       "color": "3"
+    },
+    {
+      "id": "R22-E039",
+      "fromNode": "QS21-073",
+      "fromSide": "bottom",
+      "toNode": "QS21-083",
+      "toSide": "top",
+      "label": "产权/法定直属仍OPEN",
+      "color": "2"
     }
   ]
 }
