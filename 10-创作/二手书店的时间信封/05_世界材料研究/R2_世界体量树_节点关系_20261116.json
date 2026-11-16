@@ -1,0 +1,926 @@
+{
+  "schema": "WORLD_SCOPE_GRAPH_R2_PROVISIONAL_V1",
+  "project": "二手书店的时间信封",
+  "as_of": "2026-11-16",
+  "authority": "CREATIVE_RESEARCH_NOT_CANON",
+  "base_raw_cards": 30,
+  "metrics": {
+    "G_CANDIDATE_CURRENT_PLAN": {
+      "regional_societal": 65,
+      "organization_network": 65,
+      "hierarchy_depth": 45,
+      "horizontal_social_systems": 65,
+      "total": 240,
+      "status": "PREPRODUCTION_G_ESTIMATE"
+    },
+    "G_CANDIDATE_WITH_UNCOMMITTED_EXPANSION": {
+      "regional_societal": 75,
+      "organization_network": 90,
+      "hierarchy_depth": 55,
+      "horizontal_social_systems": 70,
+      "total": 290,
+      "status": "SCENARIO_ONLY"
+    },
+    "G_REALIZED_SCREEN": null,
+    "W_scope": "story internal relative influence 1..1000; 1000 synthetic reference only",
+    "W_scored_count": 4,
+    "W_scored_entities": [
+      {
+        "id": "W02",
+        "name": "Claire所在大学",
+        "W": 460
+      },
+      {
+        "id": "W03",
+        "name": "大学学生与音乐社群",
+        "W": 175
+      },
+      {
+        "id": "W04",
+        "name": "公开设计作品竞赛机制",
+        "W": 230
+      },
+      {
+        "id": "W07",
+        "name": "Marcel经营的书店",
+        "W": 110
+      }
+    ],
+    "W_unknown": [
+      {
+        "id": "W05",
+        "why": "organizer unspecified"
+      },
+      {
+        "id": "W06",
+        "why": "employer unspecified"
+      }
+    ],
+    "W_not_applicable": "characters, items, locations, singular events, and external-only references",
+    "G_quality_notice": "No statistical calibration; indicative point estimates only; external-only references excluded from G",
+    "node_count": 32,
+    "edge_count": 38,
+    "edge_status_count": {
+      "OFFICIAL_STORY": 10,
+      "CURRENT_USER_DIRECTION": 13,
+      "EXTERNAL_CONTEXT_ONLY": 7,
+      "CREATIVE_H": 8
+    },
+    "node_layer_count": {
+      "REFERENCE_ROOT": 1,
+      "STORY_OFFICIAL": 10,
+      "STORY_USER": 9,
+      "CREATIVE_H": 2,
+      "EXTERNAL_REFERENCE_ONLY": 10
+    }
+  },
+  "nodes": [
+    {
+      "id": "W00",
+      "name": "作品社会整体",
+      "type": "REFERENCE",
+      "world_layer": "REFERENCE_ROOT",
+      "source_material_ids": [],
+      "world_influence_candidate": 1000,
+      "confidence": "L_LOW_CANDIDATE",
+      "reason": "世界社会整体参照，不是可累加的组织"
+    },
+    {
+      "id": "W01",
+      "name": "巴黎左岸局部区域",
+      "type": "REGION",
+      "world_layer": "STORY_OFFICIAL",
+      "source_material_ids": [
+        "MAT-20261116-011"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "故事明确建构巴黎左岸局部，不能把整个巴黎行政系统全部算入G"
+    },
+    {
+      "id": "W02",
+      "name": "Claire所在大学",
+      "type": "ORG_CANDIDATE",
+      "world_layer": "STORY_USER",
+      "source_material_ids": [
+        "MAT-20261116-014",
+        "MAT-20261116-023"
+      ],
+      "world_influence_candidate": 460,
+      "confidence": "L_LOW_CANDIDATE",
+      "reason": "未命名大学在该故事中的教育、校园组织与场所准入影响，非真实校方已确定事实"
+    },
+    {
+      "id": "W03",
+      "name": "大学学生与音乐社群",
+      "type": "COLLECTIVE",
+      "world_layer": "STORY_USER",
+      "source_material_ids": [
+        "MAT-20261116-014",
+        "MAT-20261116-023"
+      ],
+      "world_influence_candidate": 175,
+      "confidence": "L_LOW_CANDIDATE",
+      "reason": "桥接人脉、活动与音乐机会的候选持续作用；未确认为一个独立社团"
+    },
+    {
+      "id": "W04",
+      "name": "公开设计作品竞赛机制",
+      "type": "INSTITUTIONAL_RULESET",
+      "world_layer": "STORY_USER",
+      "source_material_ids": [
+        "MAT-20261116-009",
+        "MAT-20261116-022",
+        "MAT-20261116-026"
+      ],
+      "world_influence_candidate": 230,
+      "confidence": "L_LOW_CANDIDATE",
+      "reason": "组织评审与有限参赛资格影响Claire，具体主办方/赛制待定"
+    },
+    {
+      "id": "W05",
+      "name": "作品比赛主办机构（未命名）",
+      "type": "ORG_OPEN",
+      "world_layer": "CREATIVE_H",
+      "source_material_ids": [
+        "MAT-20261116-009"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "虚构比赛必然需要主办主体但组织身份、规模未知，故W?"
+    },
+    {
+      "id": "W06",
+      "name": "大学音乐工作岗位提供方（未命名）",
+      "type": "ORG_OPEN",
+      "world_layer": "CREATIVE_H",
+      "source_material_ids": [
+        "MAT-20261116-007",
+        "MAT-20261116-028"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "用户只确认求职/试奏方向，不知雇主规模、资格或人事权，W?"
+    },
+    {
+      "id": "W07",
+      "name": "Marcel经营的书店",
+      "type": "BUSINESS",
+      "world_layer": "STORY_OFFICIAL",
+      "source_material_ids": [
+        "MAT-20261116-008",
+        "MAT-20261116-011"
+      ],
+      "world_influence_candidate": 110,
+      "confidence": "L_LOW_CANDIDATE",
+      "reason": "地方旧书交易和物证线索窗口；不因信件重要而扩大到城市级权力"
+    },
+    {
+      "id": "W08",
+      "name": "书店内部空间",
+      "type": "SITE",
+      "world_layer": "STORY_OFFICIAL",
+      "source_material_ids": [
+        "MAT-20261116-011"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "场所不作为独立书店组织重复评价W"
+    },
+    {
+      "id": "W09",
+      "name": "巴黎地铁演奏空间",
+      "type": "SITE",
+      "world_layer": "STORY_OFFICIAL",
+      "source_material_ids": [
+        "MAT-20261116-013"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "Lucas职业活动场所，地点不是独立运营机构"
+    },
+    {
+      "id": "W10",
+      "name": "RATP交通运营机构",
+      "type": "ORG_REFERENCE",
+      "world_layer": "EXTERNAL_REFERENCE_ONLY",
+      "source_material_ids": [
+        "MAT-20261116-004",
+        "MAT-20261116-006"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "现实机构，仅作为世界材料；影视梗概未指名RATP，不给其故事内W"
+    },
+    {
+      "id": "W11",
+      "name": "Musiciens du Métro计划",
+      "type": "PROGRAM_REFERENCE",
+      "world_layer": "EXTERNAL_REFERENCE_ONLY",
+      "source_material_ids": [
+        "MAT-20261116-004",
+        "MAT-20261116-006",
+        "MAT-20261116-025"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "现实组织项目，不直接认定Lucas为获准艺人"
+    },
+    {
+      "id": "W12",
+      "name": "塞纳河旧书摊经营者群体",
+      "type": "COLLECTIVE_REFERENCE",
+      "world_layer": "EXTERNAL_REFERENCE_ONLY",
+      "source_material_ids": [
+        "MAT-20261116-010"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "现实文化与交易网络，故事未正式引入"
+    },
+    {
+      "id": "W13",
+      "name": "塞纳河沿岸旧书摊场所",
+      "type": "SITE_REFERENCE",
+      "world_layer": "EXTERNAL_REFERENCE_ONLY",
+      "source_material_ids": [
+        "MAT-20261116-012"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "参考环境，不算已实际登场的故事地点"
+    },
+    {
+      "id": "W14",
+      "name": "巴黎市政书摊经营许可机制",
+      "type": "REGULATORY_CONTEXT",
+      "world_layer": "EXTERNAL_REFERENCE_ONLY",
+      "source_material_ids": [
+        "MAT-20261116-003"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "只适用于现实旧书摊，不套给Marcel店铺"
+    },
+    {
+      "id": "W15",
+      "name": "巴黎档案馆",
+      "type": "ORG_REFERENCE",
+      "world_layer": "EXTERNAL_REFERENCE_ONLY",
+      "source_material_ids": [
+        "MAT-20261116-015",
+        "MAT-20261116-020"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "现实档案系统未进入现行故事"
+    },
+    {
+      "id": "W16",
+      "name": "法国国家图书馆／Gallica",
+      "type": "ORG_REFERENCE",
+      "world_layer": "EXTERNAL_REFERENCE_ONLY",
+      "source_material_ids": [
+        "MAT-20261116-018",
+        "MAT-20261116-019"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "现实馆藏与数字副本资料，不推为故事机构"
+    },
+    {
+      "id": "W17",
+      "name": "Claire",
+      "type": "CHARACTER",
+      "world_layer": "STORY_OFFICIAL",
+      "source_material_ids": [
+        "MAT-20261116-021",
+        "MAT-20261116-022",
+        "MAT-20261116-023",
+        "MAT-20261116-026"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "人物不与社会机构W混排"
+    },
+    {
+      "id": "W18",
+      "name": "Lucas",
+      "type": "CHARACTER",
+      "world_layer": "STORY_OFFICIAL",
+      "source_material_ids": [
+        "MAT-20261116-021",
+        "MAT-20261116-022",
+        "MAT-20261116-023",
+        "MAT-20261116-027",
+        "MAT-20261116-028"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "人物与社会制度影响相区分"
+    },
+    {
+      "id": "W19",
+      "name": "Marcel",
+      "type": "CHARACTER",
+      "world_layer": "STORY_OFFICIAL",
+      "source_material_ids": [
+        "MAT-20261116-008",
+        "MAT-20261116-024"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "书店经营者的影响归书店业务，人物行动另记"
+    },
+    {
+      "id": "W20",
+      "name": "写信的祖母",
+      "type": "CHARACTER",
+      "world_layer": "STORY_OFFICIAL",
+      "source_material_ids": [
+        "MAT-20261116-002",
+        "MAT-20261116-021"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "逝者记忆与社会影响力非同一分数"
+    },
+    {
+      "id": "W21",
+      "name": "具有微变能力的时间信件",
+      "type": "NARRATIVE_OBJECT",
+      "world_layer": "STORY_OFFICIAL",
+      "source_material_ids": [
+        "MAT-20261116-001",
+        "MAT-20261116-021"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "叙事关键物件，W不适用，另记故事作用"
+    },
+    {
+      "id": "W22",
+      "name": "五封音乐谱信",
+      "type": "NARRATIVE_OBJECT_SET",
+      "world_layer": "STORY_USER",
+      "source_material_ids": [
+        "MAT-20261116-016"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "V4R2创作方案的分批信息物件，不按5个组织计数"
+    },
+    {
+      "id": "W23",
+      "name": "A-B-C旋律谱系",
+      "type": "NARRATIVE_RESOURCE",
+      "world_layer": "STORY_USER",
+      "source_material_ids": [
+        "MAT-20261116-017"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "跨代可续写作品，非社会组织"
+    },
+    {
+      "id": "W24",
+      "name": "信件只能轻微改变现在",
+      "type": "WORLD_RULE",
+      "world_layer": "STORY_OFFICIAL",
+      "source_material_ids": [
+        "MAT-20261116-001"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "奇幻边界，是剧情规则而非组织权力"
+    },
+    {
+      "id": "W25",
+      "name": "祖母已故、时间不可逆",
+      "type": "WORLD_RULE",
+      "world_layer": "STORY_USER",
+      "source_material_ids": [
+        "MAT-20261116-002"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "不可逆因果边界，不与社会W混算"
+    },
+    {
+      "id": "W26",
+      "name": "Claire亲自参赛",
+      "type": "STORY_EVENT",
+      "world_layer": "STORY_USER",
+      "source_material_ids": [
+        "MAT-20261116-026"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "一次剧情事件，不独立评价持续社会影响"
+    },
+    {
+      "id": "W27",
+      "name": "Lucas主动取消旧音乐比赛",
+      "type": "STORY_EVENT",
+      "world_layer": "STORY_USER",
+      "source_material_ids": [
+        "MAT-20261116-027"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "个人行动不等于比赛制度废止"
+    },
+    {
+      "id": "W28",
+      "name": "Lucas大学音乐工作试奏",
+      "type": "STORY_EVENT",
+      "world_layer": "STORY_USER",
+      "source_material_ids": [
+        "MAT-20261116-028"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "岗位录用未知，不当作既有大学人事关系"
+    },
+    {
+      "id": "W29",
+      "name": "外国学生劳动身份规则",
+      "type": "EXTERNAL_RULE_REFERENCE",
+      "world_layer": "EXTERNAL_REFERENCE_ONLY",
+      "source_material_ids": [
+        "MAT-20261116-005"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "外部资料；Lucas具体身份未知，不能让该规则成为已证人物阻碍"
+    },
+    {
+      "id": "W30",
+      "name": "乐谱草稿与修订证据机制",
+      "type": "EXTERNAL_OBJECT_REFERENCE",
+      "world_layer": "EXTERNAL_REFERENCE_ONLY",
+      "source_material_ids": [
+        "MAT-20261116-018",
+        "MAT-20261116-030"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "现实档案知识可启发剧作，不代表祖母旧谱已入法国国家图书馆"
+    },
+    {
+      "id": "W31",
+      "name": "可回查的档案目录索引",
+      "type": "EXTERNAL_RESOURCE_REFERENCE",
+      "world_layer": "EXTERNAL_REFERENCE_ONLY",
+      "source_material_ids": [
+        "MAT-20261116-020",
+        "MAT-20261116-029"
+      ],
+      "world_influence_candidate": null,
+      "confidence": "NOT_SCORED",
+      "reason": "真实档案检索原型，具体虚构旧谱没有档案号"
+    }
+  ],
+  "edges": [
+    {
+      "id": "E01",
+      "from": "W19",
+      "to": "W07",
+      "relation_type": "owns-and-operates",
+      "evidence_scope": "OFFICIAL_STORY",
+      "material_refs": [
+        "MAT-20261116-008"
+      ],
+      "notes": "Marcel为书店老板，不推断书店还有其他分店"
+    },
+    {
+      "id": "E02",
+      "from": "W07",
+      "to": "W08",
+      "relation_type": "operates-site",
+      "evidence_scope": "OFFICIAL_STORY",
+      "material_refs": [
+        "MAT-20261116-008",
+        "MAT-20261116-011"
+      ],
+      "notes": "经营实体与物理场所不同体"
+    },
+    {
+      "id": "E03",
+      "from": "W08",
+      "to": "W01",
+      "relation_type": "located-within",
+      "evidence_scope": "OFFICIAL_STORY",
+      "material_refs": [
+        "MAT-20261116-011"
+      ],
+      "notes": "左岸局部；不编具体门牌"
+    },
+    {
+      "id": "E04",
+      "from": "W17",
+      "to": "W08",
+      "relation_type": "visits",
+      "evidence_scope": "OFFICIAL_STORY",
+      "material_refs": [
+        "MAT-20261116-011"
+      ],
+      "notes": "Claire在店中发现信"
+    },
+    {
+      "id": "E05",
+      "from": "W17",
+      "to": "W21",
+      "relation_type": "discovers",
+      "evidence_scope": "OFFICIAL_STORY",
+      "material_refs": [
+        "MAT-20261116-001",
+        "MAT-20261116-021"
+      ],
+      "notes": "只有初始神秘信件为赛事梗概事实"
+    },
+    {
+      "id": "E06",
+      "from": "W20",
+      "to": "W21",
+      "relation_type": "writes",
+      "evidence_scope": "OFFICIAL_STORY",
+      "material_refs": [
+        "MAT-20261116-021"
+      ],
+      "notes": "祖母为写信人"
+    },
+    {
+      "id": "E07",
+      "from": "W18",
+      "to": "W20",
+      "relation_type": "grandchild-of",
+      "evidence_scope": "OFFICIAL_STORY",
+      "material_refs": [
+        "MAT-20261116-021"
+      ],
+      "notes": "孙子关系"
+    },
+    {
+      "id": "E08",
+      "from": "W18",
+      "to": "W09",
+      "relation_type": "performs-in",
+      "evidence_scope": "OFFICIAL_STORY",
+      "material_refs": [
+        "MAT-20261116-013",
+        "MAT-20261116-021"
+      ],
+      "notes": "地铁钢琴家，但站点与许可身份未知"
+    },
+    {
+      "id": "E09",
+      "from": "W17",
+      "to": "W18",
+      "relation_type": "encounters",
+      "evidence_scope": "OFFICIAL_STORY",
+      "material_refs": [
+        "MAT-20261116-021"
+      ],
+      "notes": "实际相遇原因可编剧补足"
+    },
+    {
+      "id": "E10",
+      "from": "W21",
+      "to": "W24",
+      "relation_type": "operates-under-rule",
+      "evidence_scope": "OFFICIAL_STORY",
+      "material_refs": [
+        "MAT-20261116-001"
+      ],
+      "notes": "信可轻微影响现在；触发条件未定义"
+    },
+    {
+      "id": "E11",
+      "from": "W20",
+      "to": "W25",
+      "relation_type": "death-is-irreversible",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-002"
+      ],
+      "notes": "祖母已故，不能复活"
+    },
+    {
+      "id": "E12",
+      "from": "W20",
+      "to": "W22",
+      "relation_type": "authored-in-story-plan",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-016"
+      ],
+      "notes": "五封音乐谱信为B方向创作设定，非赛事原梗概逐字事实"
+    },
+    {
+      "id": "E13",
+      "from": "W22",
+      "to": "W23",
+      "relation_type": "contains-musical-motif",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-016",
+        "MAT-20261116-017"
+      ],
+      "notes": "A/B/C为现行B方向骨架，具体音型未审"
+    },
+    {
+      "id": "E14",
+      "from": "W22",
+      "to": "W08",
+      "relation_type": "planned-to-circulate-through",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-016"
+      ],
+      "notes": "不宣称每封具体流转已拍板"
+    },
+    {
+      "id": "E15",
+      "from": "W18",
+      "to": "W17",
+      "relation_type": "introduces-to-competition",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-022"
+      ],
+      "notes": "只介绍入口，不能替报名"
+    },
+    {
+      "id": "E16",
+      "from": "W17",
+      "to": "W26",
+      "relation_type": "chooses-to-enter",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-026"
+      ],
+      "notes": "独立报名，成绩未知"
+    },
+    {
+      "id": "E17",
+      "from": "W26",
+      "to": "W04",
+      "relation_type": "subject-to-competition-rules",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-009",
+        "MAT-20261116-026"
+      ],
+      "notes": "作品公开赛存在，但细则未知"
+    },
+    {
+      "id": "E18",
+      "from": "W05",
+      "to": "W04",
+      "relation_type": "would-operate",
+      "evidence_scope": "CREATIVE_H",
+      "material_refs": [
+        "MAT-20261116-009"
+      ],
+      "notes": "赛事主办方身份尚未定，开放关系"
+    },
+    {
+      "id": "E19",
+      "from": "W05",
+      "to": "W26",
+      "relation_type": "would-review-entry",
+      "evidence_scope": "CREATIVE_H",
+      "material_refs": [
+        "MAT-20261116-009",
+        "MAT-20261116-026"
+      ],
+      "notes": "评审人/机构仍未设定"
+    },
+    {
+      "id": "E20",
+      "from": "W17",
+      "to": "W18",
+      "relation_type": "introduces-to-campus",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-023"
+      ],
+      "notes": "反向社交桥"
+    },
+    {
+      "id": "E21",
+      "from": "W03",
+      "to": "W02",
+      "relation_type": "community-at",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-014",
+        "MAT-20261116-023"
+      ],
+      "notes": "社会群体不是大学直属组织"
+    },
+    {
+      "id": "E22",
+      "from": "W17",
+      "to": "W02",
+      "relation_type": "attends-university",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-014",
+        "MAT-20261116-023"
+      ],
+      "notes": "美国交换生，大学名称未指定"
+    },
+    {
+      "id": "E23",
+      "from": "W18",
+      "to": "W27",
+      "relation_type": "chooses-to-withdraw",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-027"
+      ],
+      "notes": "当事人独立退出旧音乐比赛"
+    },
+    {
+      "id": "E24",
+      "from": "W18",
+      "to": "W28",
+      "relation_type": "participates-in-proposed-job-tryout",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-028"
+      ],
+      "notes": "走向求职，录用未知"
+    },
+    {
+      "id": "E25",
+      "from": "W06",
+      "to": "W28",
+      "relation_type": "would-interview",
+      "evidence_scope": "CREATIVE_H",
+      "material_refs": [
+        "MAT-20261116-007",
+        "MAT-20261116-028"
+      ],
+      "notes": "只有工作试奏方向，无确定雇主"
+    },
+    {
+      "id": "E26",
+      "from": "W17",
+      "to": "W06",
+      "relation_type": "may-introduce-employer",
+      "evidence_scope": "CREATIVE_H",
+      "material_refs": [
+        "MAT-20261116-007",
+        "MAT-20261116-023"
+      ],
+      "notes": "可以提供线索但不保证雇佣"
+    },
+    {
+      "id": "E27",
+      "from": "W19",
+      "to": "W17",
+      "relation_type": "provides-partial-clues",
+      "evidence_scope": "CURRENT_USER_DIRECTION",
+      "material_refs": [
+        "MAT-20261116-024"
+      ],
+      "notes": "Marcel知情边界，不能无依据全知"
+    },
+    {
+      "id": "E28",
+      "from": "W22",
+      "to": "W18",
+      "relation_type": "may-inform-new-decision",
+      "evidence_scope": "CREATIVE_H",
+      "material_refs": [
+        "MAT-20261116-016",
+        "MAT-20261116-027"
+      ],
+      "notes": "信促成退出旧比赛是待审因果，不自动事实"
+    },
+    {
+      "id": "E29",
+      "from": "W23",
+      "to": "W28",
+      "relation_type": "may-be-played-in-job-tryout",
+      "evidence_scope": "CREATIVE_H",
+      "material_refs": [
+        "MAT-20261116-017",
+        "MAT-20261116-028"
+      ],
+      "notes": "具体音型、面试内容未知"
+    },
+    {
+      "id": "E30",
+      "from": "W14",
+      "to": "W12",
+      "relation_type": "licenses-in-real-life",
+      "evidence_scope": "EXTERNAL_CONTEXT_ONLY",
+      "material_refs": [
+        "MAT-20261116-003",
+        "MAT-20261116-010"
+      ],
+      "notes": "现实旧书摊规制，不适用于W07"
+    },
+    {
+      "id": "E31",
+      "from": "W12",
+      "to": "W13",
+      "relation_type": "operates-at-in-real-life",
+      "evidence_scope": "EXTERNAL_CONTEXT_ONLY",
+      "material_refs": [
+        "MAT-20261116-010",
+        "MAT-20261116-012"
+      ],
+      "notes": "外部环境参考"
+    },
+    {
+      "id": "E32",
+      "from": "W10",
+      "to": "W11",
+      "relation_type": "runs-program-in-real-life",
+      "evidence_scope": "EXTERNAL_CONTEXT_ONLY",
+      "material_refs": [
+        "MAT-20261116-004",
+        "MAT-20261116-006",
+        "MAT-20261116-025"
+      ],
+      "notes": "官方可核的真实项目"
+    },
+    {
+      "id": "E33",
+      "from": "W11",
+      "to": "W09",
+      "relation_type": "licenses-performance-in-real-life",
+      "evidence_scope": "EXTERNAL_CONTEXT_ONLY",
+      "material_refs": [
+        "MAT-20261116-004",
+        "MAT-20261116-006"
+      ],
+      "notes": "只说明公共地铁场域的现实许可，不说明Lucas归属"
+    },
+    {
+      "id": "E34",
+      "from": "W15",
+      "to": "W31",
+      "relation_type": "provides-archive-discovery",
+      "evidence_scope": "EXTERNAL_CONTEXT_ONLY",
+      "material_refs": [
+        "MAT-20261116-015",
+        "MAT-20261116-020"
+      ],
+      "notes": "真实档案访问和索引能力"
+    },
+    {
+      "id": "E35",
+      "from": "W16",
+      "to": "W30",
+      "relation_type": "preserves-scores-as-reference",
+      "evidence_scope": "EXTERNAL_CONTEXT_ONLY",
+      "material_refs": [
+        "MAT-20261116-018",
+        "MAT-20261116-019"
+      ],
+      "notes": "现实乐谱档案，不代表小说人物素材入馆"
+    },
+    {
+      "id": "E36",
+      "from": "W29",
+      "to": "W02",
+      "relation_type": "research-context-not-story-causality",
+      "evidence_scope": "EXTERNAL_CONTEXT_ONLY",
+      "material_refs": [
+        "MAT-20261116-005",
+        "MAT-20261116-014"
+      ],
+      "notes": "留学生身份材料的法律背景，不是学校确立的雇佣限制"
+    },
+    {
+      "id": "E37",
+      "from": "W30",
+      "to": "W22",
+      "relation_type": "could-inspire-version-proof",
+      "evidence_scope": "CREATIVE_H",
+      "material_refs": [
+        "MAT-20261116-018",
+        "MAT-20261116-030"
+      ],
+      "notes": "不能说缺页真的已查清原因"
+    },
+    {
+      "id": "E38",
+      "from": "W31",
+      "to": "W22",
+      "relation_type": "could-inspire-source-tracing",
+      "evidence_scope": "CREATIVE_H",
+      "material_refs": [
+        "MAT-20261116-020",
+        "MAT-20261116-029"
+      ],
+      "notes": "虚构谱没有真实档号"
+    }
+  ]
+}
