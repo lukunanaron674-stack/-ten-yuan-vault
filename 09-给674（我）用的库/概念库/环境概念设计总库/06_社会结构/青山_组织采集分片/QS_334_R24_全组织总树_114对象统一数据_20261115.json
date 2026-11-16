@@ -3382,12 +3382,6 @@
           "to": "QS21-091"
         },
         {
-          "id": "R22-E029",
-          "type": "shared-secret-contact-network",
-          "from": "QS21-073",
-          "to": "QS21-083"
-        },
-        {
           "id": "R22-E030",
           "type": "suspected-intelligence-contact",
           "from": "QS21-041",
@@ -3407,15 +3401,22 @@
         },
         {
           "id": "R22-E034",
-          "type": "influences-private-guard-candidate",
+          "type": "funded-and-mobilized-force; affiliation-open",
           "from": "QS21-071",
           "to": "QS21-038"
+        },
+        {
+          "id": "R22-E039",
+          "type": "formal-ownership-or-administrative-parentage-open",
+          "from": "QS21-073",
+          "to": "QS21-083"
         }
       ],
       "negative_equivalence": [
         "R22-E035"
       ],
-      "not_all_formal_admin_part_of": true
+      "not_all_formal_admin_part_of": true,
+      "open_cases_sync_note": "2026-11-17: synchronized to typed_relations CANDIDATE_OPEN statuses; E029 is TEXT_REPORTED after author 242 evidence, while E039 retains formal ownership/administrative parentage OPEN."
     },
     "world_W": {
       "world_reference": 1000,
