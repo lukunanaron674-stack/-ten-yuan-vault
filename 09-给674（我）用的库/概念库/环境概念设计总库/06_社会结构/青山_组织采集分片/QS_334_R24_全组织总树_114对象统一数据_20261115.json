@@ -6,7 +6,7 @@
   "description": "Whole fictional-world social influence and organization research atlas. Topical category group edges do not signify legal parent-of.",
   "input_refs": {
     "r21_sha": "6cf558bce4d508fa2ee6beb6cfa398fb6ca4f255",
-    "r22_graph_sha": "a8ce915dc03fcf3a04b2ae11e7c85cef908e93c6",
+    "r22_graph_sha": "7b4d3d8677fa033bd6b9a4e2dfed9ea8ef904722",
     "r23_W_sha": "fc435ffef5a1f4de1a4b932c423435be5741175a",
     "index_sha": "38631a8f4c6bdf18de3922c494cdc0c4e5135fdb"
   },
@@ -2011,14 +2011,14 @@
       "score_confidence": "M",
       "old_W": null,
       "W_delta": null,
-      "chapters": "229,230,247,407",
+      "chapters": "229,230,242,246,407",
       "contribution": "固原龙门客栈跨境消息经纪与旅行生意、偷渡候选",
       "alias": "龙门客栈（固原）",
-      "source_boundary": "作者407《灯火客栈》证明灯火门店有暗号筛选及掌柜向东家报告，并提及固原龙门掌柜之死；这支持联络通道候选，不证明固原门店产权/隶属。当前候选W230未因该联络线索调整。",
+      "source_boundary": "作者242《密道》直接报告固原龙门掌柜为灯火同僚并称“我灯火客栈”，支持灯火关联服务节点；作者407《灯火客栈》为跨地点暗号/掌柜向东家报告补证。法定产权/隶属仍未证，W230及区间150–310不变。",
       "relation_primary_type": "business-or-service-entity",
       "relation_primary_target": null,
       "relation_evidence_status": "UNKNOWN_PARENT",
-      "parent_relation_caution": "灯火—固原龙门E029仍为联络通道候选；作者407内收尸为人物陈述，不能升级为产权、常设管理或法定part-of。"
+      "parent_relation_caution": "作者242《密道》证文本报告服务节点关联；登记产权、股权、常设行政上级或法定part-of仍未证，见R22-E039。"
     },
     {
       "id": "QS21-084",
@@ -3155,19 +3155,21 @@
       "id": "R22-E029",
       "from": "QS21-073",
       "to": "QS21-083",
-      "type": "shared-secret-contact-network",
+      "type": "reported-Lamp-affiliated-service-node",
       "chapter_anchors": [
-        "247",
-        "407"
+        "作者242《密道》",
+        "作者246《真正的密道》",
+        "作者407《灯火客栈》"
       ],
-      "evidence_status": "CANDIDATE_OPEN",
-      "evidence": "作者章题交叉：WebNovel目录平台条目408明标作者407《灯火客栈》（https://www.webnovel.com/book/22444590709113204/catalog）；TTkan和顶点转载将页面编号作408，依作者题名而非URL/平台尾号归407。正文中陈迹称其替固原龙门客栈掌柜收尸；灯火客栈用菜名暗号筛选托办事项，掌柜称帷帽女子为“东家”并向其报告（https://ttks.tw/novel/chapters/qingshan/579.html；https://www.dingdian888.com/zhangjie/733514/709781299.html）。此为灯火与固原龙门掌柜存在联络/信息通道的线索；收尸仍是陈迹陈述，未证明固原龙门产权或正式归属灯火。维持CANDIDATE_OPEN。",
+      "evidence_status": "TEXT_REPORTED",
+      "evidence": "WebNovel目录平台槽243标作者242《密道》，槽247标作者246《真正的密道》；平台槽408标作者407《灯火客栈》。作者242正文中掌柜称小满为灯火“同僚”、自称“我灯火客栈”，并按灯火铜钱提供固原龙门客栈密道通行服务。支持文本报告的灯火关联服务/经营节点；不证明登记产权、股权、正式行政直属或法定part-of。正文：https://czbooks.net/n/s6ojkc/s6onf31e?chapterNumber=246；https://www.piaotia.com/html/15/15702/11485597.html。题名：https://www.webnovel.com/book/22444590709113204/catalog。",
       "legal_part_of_confirmed": false,
       "graph_visualize_as": "typed_relation_not_legal_direct_inclusion",
       "source_urls": [
         "https://www.webnovel.com/book/22444590709113204/catalog",
-        "https://ttks.tw/novel/chapters/qingshan/579.html",
-        "https://www.dingdian888.com/zhangjie/733514/709781299.html"
+        "https://czbooks.net/n/s6ojkc/s6onf31e?chapterNumber=246",
+        "https://www.piaotia.com/html/15/15702/11485597.html",
+        "https://www.ttkan.co/novel/pagea/qingshan-huishuohuadezhouzi_246.html"
       ]
     },
     {
@@ -3325,6 +3327,26 @@
         "https://ixdzs8.com/read/549077/p859.html"
       ],
       "source_coverage": "作者851、854可读正文；作者855仅搜索预览可读，页面打开403，未作全文审阅。"
+    },
+    {
+      "id": "R22-E039",
+      "from": "QS21-073",
+      "to": "QS21-083",
+      "type": "formal-ownership-or-administrative-parentage-open",
+      "chapter_anchors": [
+        "作者242《密道》",
+        "作者246《真正的密道》",
+        "作者407《灯火客栈》"
+      ],
+      "evidence_status": "CANDIDATE_OPEN",
+      "evidence": "作者242正文已文本报告灯火掌柜同僚身份及灯火客栈服务运营，但不能推出客栈登记产权、股权或正式行政隶属；未找到产权/编制/直属文书，仅保留法律所有权及正式父级OPEN。E029另记文本报告经营关联。",
+      "legal_part_of_confirmed": false,
+      "graph_visualize_as": "formal_ownership_or_legal_parentage_open_not_confirmed",
+      "source_urls": [
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://czbooks.net/n/s6ojkc/s6onf31e?chapterNumber=246",
+        "https://www.piaotia.com/html/15/15702/11485597.html"
+      ]
     }
   ],
   "audit": {
@@ -3451,6 +3473,10 @@
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
     "r22_graph_sha": "a8ce915dc03fcf3a04b2ae11e7c85cef908e93c6",
-    "r22_update_note": "R22-E019新增作者826《盐引》九霄交叉镜像：转载页标863，官方目录平台827对应作者826；仅补来源，不变边状态/对象/W/Canvas。"
+    "r22_update_note": "R22-E019新增作者826《盐引》九霄交叉镜像：转载页标863，官方目录平台827对应作者826；仅补来源，不变边状态/对象/W/Canvas。",
+    "typed_relations": 39,
+    "relation_records": 39,
+    "candidate_open_relations": 6,
+    "text_reported_relations": 20
   }
 }
