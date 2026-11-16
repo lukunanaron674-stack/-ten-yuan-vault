@@ -131,3 +131,16 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - **提交与回写**：AG-13交`case_id, R0_frozen, R2_chain, candidate_vs_user_confirmed, failed_edges, F1/F2/F3, independent_pass, assisted_pass, error_family` → AG-14汇总`problem_delta/evidence_receipt` → 本Q应用段和Linear 674-105登记；真实观众感受必须转Lina00/HUMAN_GATE。
 - **状态强制四分**：`theory_status`, `mechanism_lifecycle`, `evidence_level`, `execution_status`，APP状态`METHOD_REGISTERED/Baseline estimated/HOLDOUT_NOT_STARTED`不因新Agent文件改变。
 - **当前边界**：AG-14与AG-13均为GitHub岗位定义，本地Codex/Hermes加载、后台自动执行、独立C-film得分均未验证。旧Z/ZN关系仍冻结。单轮最多一个有效新事件；未新证据则`NO_NEW_EVIDENCE`。
+
+
+## 7｜2026-11-17｜THE_PAST_2013 F1 来源候选跨系统去重登记（非READY）
+
+- receipt_id: `Q-DYN-002-APP-FILM-CHAIN-001-THE-PAST-F1-INTAKE-20261117`
+- 唯一来源增量：Linear 674-105 comment `56eace59-f5b4-447b-ab7b-e30ff245cd45`（2026-11-16 17:21 UTC）；同一记录已写入 GitHub `05-银矿库/电影进度台账.md`，commit `7c4d4fd7a28e32634dd81c3ffe5c160f099f91cd`，blob `4ba4714393f64d25df9b6ae491695f85fc152d21`。两处是**同一来源包**，跨系统只计一条增量，不按 Linear 与 GitHub 重复计数。
+- 作品身份候选：`The Past / Le Passé (2013)`，导演 Asghar Farhadi；USER已看状态未确认，全库别名排重未穷尽，`NEW100_ELIGIBILITY=ARCHIVE_PENDING`，不增加正式新片数量。
+- 来源类型：发行方 Sony Pictures Classics 官方梗概 `https://www.sonyclassics.com/thepast/`。目前仅支持三段剧情摘要：E01 Ahmad返巴黎办理离婚；E02介入Marie与Lucie的关系冲突；E03介入后发现过去秘密。E03具体动作、终幕代价与完整结算不足，故 `F1=SOURCE_PACKET_PENDING_FREEZE`，不是完整F1冻结。
+- 候选问题：`B_PAST_CAUSE_PRESENT_CONSEQUENCE__C_RELATION_MEDIATION_BACKFIRE`；因果/时间/本体竞争仅为 `AI-H`，`main_theme=null`，`theme_edge=NOT_ESTABLISHED`，`novelty_delta=UNVERIFIED`。删除Ahmad调停行为后秘密是否仍暴露，是待核反事实，不得预判关系边成立。
+- 与《推销员》(2016)同导演且存在过去事件影响当下的相邻题材，只作为比较样本；不把导演相同、主题相邻或同一来源包拆成独立类型/独立机制证据。
+- 分级与边界：`F1=PARTIAL_SOURCE_NOT_FROZEN`；`F2=null`；`F3=null`；`ROLE_TENYUAN=null`；`main_theme=null`；`strict_relation_edges=NOT_ESTABLISHED`；`C-film=UNCHANGED`；`independent_pass=NOT_SCORED`；`human_feeling_profile/MAE/Top1/Top3=null`。此为电影剧情来源证据，不是观众感受数据、动态感受曲线或Q-FEEL证据。
+- 本轮裁决：`EVIDENCE_INTAKE_ONLY / NOT_READY / RETURN_SPECIFIC_GAP`。不升级Q-REL-002，不启动RESEARCH子Campaign，不创建新Q/电影卡/Canvas节点，不执行五轴A/B或H3。
+- NEXT：仅在取得完整可核剧情终幕与独立来源、完成全库身份排重，并能预锁R1/R2独立答案后，才评估是否纳入APP-FILM-CHAIN-001 holdout；若无新增来源或可复核事件，保持WAIT。
