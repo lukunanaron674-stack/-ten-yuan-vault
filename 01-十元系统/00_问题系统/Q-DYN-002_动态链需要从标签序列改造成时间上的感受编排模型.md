@@ -214,3 +214,24 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - **分级与计数**：`F1=SOURCE_PACKET_COMPLETE__ARCHIVE_PENDING`；`F2=null`；`F3=null`；`dynamic_feeling_curve=NOT_MEASURED`；`independent_grade=false`；`assessment_mode=ASSISTED_SEQUENTIAL`；`research_readiness_100=67/100 (AI_SCORE)`；`mechanism_gain_0_5=2/5 (AI-H)`；`tenyuan_film_quality_100=null`。NEW100仍28/100，`new_f1_cards=0`、`type_gap_verified=0`。不计Q-FEEL、人类感受、五轴A/B或跨媒体实验。
 - **裁决**：`EVIDENCE_INTAKE_ONLY / NOT_READY / RETURN_SPECIFIC_GAP`。不创建新Q、电影MD、Canvas节点或主题索引；不启动RESEARCH子Campaign，不执行五轴A/B/H3，不修改十元Canon。
 - **NEXT**：先完成历史别名穷尽排重，再以原片F2核验E02–E04的动作顺序、Arthur离开共同体的主动性及地下终局边界；只有完成冻结的独立R1/R2答案后才评估holdout。未完成前保持WAIT；本节不使Q-DYN-002 READY。
+
+
+## 12｜2026-11-17｜THE_FABELMANS_2022_F1_MEDIA_FUNCTION_CHAIN｜自制影像从私人证据到公共观感（F1接收／非READY）
+
+- **receipt_id**：Q-DYN-002-APP-FILM-CHAIN-001-THE-FABELMANS-F1-INTAKE-20261117。
+- **唯一增量来源**：Linear 674-105 comment ab229482-be4c-439a-9c7f-a9c0694d01d7（2026-11-17 00:30 UTC，F1公开来源包）；同工单 comment de99c4ca-50dc-4632-ad2b-f128e87064ad（2026-11-17 00:32 UTC）只补横纵主图排版与边界验收，不是第二个素材样本。GitHub 电影进度台账先由 commit deb14cb5c8d7e8d46515d68fe852623ee47ce08a 写入来源包，再由 commit c14757e6a3eeec87cffb4b40e5cc26a005d8f01b 补入横纵主图；当前台账 blob 为 fdedb8f8c367511289b3d8d28a9e857a2c3a5c1c。Linear 两条评论与 GitHub 台账是同一影片、同一F1来源包的分阶段记录，跨系统只计一条增量。
+- **身份与去重边界**：The Fabelmans / Die Fabelmans /《造梦之家》（亦见《法贝尔曼一家》）/ 2022 / Steven Spielberg。用户已看状态 NOT_CONFIRMED。现有电影卡与Canvas检索未命中，但旧银矿散点和历史别名尚未穷尽，故 ARCHIVE_PENDING；不创建C52、不增加正式NEW100数量。
+- **前人研究一句话**：既有C30《偶然与想象》已研究误认/信息碰撞触发关系变化，C37《教师休息室》已研究追索真相反噬信任，《The Past》已研究分散线索与分支多米诺；本片新增候选不是“信息差”本身，而是主角亲自拍摄、剪辑的视觉材料先成为私人秘密证据，随后又被剪辑成塑造同伴公共形象的媒介。
+- **F1事件账（公开资料，不是原片逐镜或观众感受数据）**：
+  - E01｜影像作为情绪调节与创作入口：Sammy受火车碰撞场面震动，重演模型火车碰撞，并在母亲鼓励下用父亲的8mm摄影机拍摄；电影制作成为持续行为。来源：Berlinale官方节目档案、CBS News / 60 Minutes访谈。
+  - E02｜自制影像成为家庭秘密证据：Sammy拍摄家庭露营素材，之后回看/剪辑时从画面中辨认出Mitzi与Bennie的亲密迹象；他私下向母亲展示并承诺保密，承担不向父亲公开的知识负担。来源：Berlinale、TIME对Spielberg的访谈、CBS News、TheWrap。
+  - E03｜剪辑开始塑造公共观感：Sammy为学校海滩活动制作影片，通过选择与组织镜头，让Logan呈现为受欢迎的“黄金男孩”，让Chad显得狼狈；放映引发同学反应。来源：TIME访谈及台账已登记的剧情交叉来源。
+  - E04｜创作路径获得外部入口：Sammy通过行业联系人见到John Ford，得到关于画面地平线位置的构图建议；职业追求获得外部入口。来源：TheWrap及台账登记来源。
+- **横纵关系边界**：E01→E02只确认既有拍摄素材成为后续剪辑的事实输入/媒介连续，不推出“拍摄导致父母离婚”；E02→E03仅标媒介能力延续H；E03→E04仅标创作目标延续H。不得把两条H画成严格因果边，也不得把Sammy的保密行为直接编码为十元生克补。
+- **动态候选**：影像自我调节 → 自制影像成为私人证据 → 影像剪辑塑造公共观感 → 创作能力获得职业入口。这是媒介功能随事件阶段变化的F1行动链，不是观众感受曲线，也未证明某种影像形式稳定诱发某种十元感受。
+- **机制候选**：type_gap_id=C_CREATIVE_MEDIUM_REVEALS_TRUTH__R_PRIVATE_KNOWLEDGE_BURDEN；novelty_delta=OLD_INFORMATION_ASYMMETRY_NEW_SELF_AUTHORED_VISUAL_EVIDENCE_MECHANISM；type_status=PROPOSED_H，属于既有信息不对称/媒介中介家族的新作用范围候选，不是正式新类型。其可检验差异是：同一媒介既记录事实、改变角色知识状态，又可通过剪辑改变第三方对人物的公共观感。
+- **反事实与竞争解释**：①删除E02露营影像后，Sammy是否仍会通过其他线索获得同等秘密认知？若是，影像作为必要证据的作用下降。②删除E03学校影片后，同伴观感与Sammy的后续职业入口是否仍以相同方式发生？若是，E03不应承担主题结算。③父母关系变化不得归因于影片本身；家庭冲突、既有亲密关系及其他事实均是竞争解释。
+- **分轨审查**：PLOT_ACTION=E01–E04；MEDIA_FUNCTION=SELF_REGULATION→PRIVATE_EVIDENCE→PUBLIC_IMAGE_SHAPING→CAREER_ENTRY；ROLE_TENYUAN=null；THEME_FILM=ONTOLOGY_H/CAUSALITY_H竞争；strict_relation_edges=NOT_ESTABLISHED；L2_CLAIM=NONE。前人研究方法继承“先事件事实、再横纵关系、再删边反证”；本轮新增的是自制视觉媒介在私人知识与公共观感之间的双重功能假设。
+- **分级与计数**：F1=SOURCE_PACKET_COMPLETE__ARCHIVE_PENDING；F2=null；F3=null；dynamic_feeling_curve=NOT_MEASURED；human_feeling_profile=null；MAE=null；Top1=null；Top3=null；C-film=UNCHANGED；C-feeling=UNCHANGED；independent_grade=false；assessment_mode=ASSISTED_SEQUENTIAL。674-105中的research_readiness_100=70/100仅为AI_SCORE，mechanism_gain_0_5=2/5仅为AI-H，不是实证等级。NEW100仍28/100；new_f1_cards=0；type_gap_verified=0。
+- **裁决**：EVIDENCE_INTAKE_ONLY / NOT_READY / RETURN_SPECIFIC_GAP。不创建新Q、电影MD或Canvas节点；不启动RESEARCH子Campaign，不执行五轴A/B或H3，不修改十元Canon。
+- **NEXT**：先完成旧银矿散点/历史别名穷尽排重；再以原片F2核验E02知识变化、E03放映后的真实反应及E04职业入口是否独立；若要主张形式→感受，必须另建盲化真人F3方案并与电影剧情分析分账。本节不使Q-DYN-002 READY。
