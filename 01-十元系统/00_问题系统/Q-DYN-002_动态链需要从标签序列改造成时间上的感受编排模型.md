@@ -357,3 +357,32 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - **Receipt**：`Q-DYN-002-APP-FILM-CHAIN-001-ANATOMY-OF-A-FALL-F1-INTAKE-20261117`。本节仅将既有 F1 来源包接收到 Q-DYN-002，不创建第二份电影卡或新 Q；不触发 GPU，不改唯一电影 Canvas、WATCH 或十元 Canon。
 - **来源**：Festival de Cannes（作品身份/版本/梗概）；Esquire、Radio Times（剧情与结尾）；CNN Newsource（导演/演员访谈）；Entertainment Weekly（导演访谈）。来源 URL 及各自证据范围以电影进度台账本轮 F1 包为准。
 
+
+
+## 20｜2026-11-17｜PETITE_MAMAN_2021_F1_SOURCE_PACKET｜同龄相遇作为代际角色平等化媒介（F1接收／非READY）
+
+- **receipt_id**：`Q-DYN-002-APP-FILM-CHAIN-001-PETITE-MAMAN-F1-INTAKE-20261117`。
+- **唯一增量来源**：Linear 674-105 comment `8e0e8de1-b055-41e6-9067-059ce23a9feb`（2026-11-17 08:26:01 UTC）；电影进度台账 GitHub commit `3baa2de4f16f610f6d015372f0db316ed8155634`，远端台账 Blob SHA `cf90745d74e755bef43f0de287344b106d2c2211`。本轮独立读取台账并核对 Blob SHA；Linear 评论与 GitHub 台账是同一部影片、同一 F1 来源包，只计一条跨系统增量。
+- **作品身份与去重边界**：Petite Maman /《小妈妈》/ 2021 / France / Céline Sciamma 编导 / Berlinale Competition 长片。Berlinale列72分钟、Criterion列73分钟；现有来源不足以证明存在不同剪辑版，暂记为来源计时口径差异。C01–C51、唯一 Canvas 51个file节点、WATCH-001–030及仓库中英文别名检索未命中；旧银矿散点与全库历史别名尚未逐文件穷尽，故 `DUPLICATE_CHECK=CARDS_CANVAS_WATCH_AND_REPO_SEARCH_PASS__ARCHIVE_PENDING`、`NEW100_ELIGIBILITY=ARCHIVE_PENDING`。不创建C52、电影MD、Canvas节点或WATCH；NEW100正式F1仍28/100。
+- **F1事件账（公开来源，不是原片逐镜/F2）**：
+  - E01｜外祖母去世后，Nelly随父母到母亲Marion的童年旧宅整理遗物；成年Marion被悲伤压住并暂时离开，Nelly留在父亲身边。
+  - E02｜Nelly在树林遇到正在搭树屋、与自己同龄的女孩Marion，并逐渐认出她是母亲八岁时的自己。
+  - E03｜两人搭树屋、做煎饼、玩桌游与排演小剧；Nelly向年轻Marion揭示自己是她未来的女儿，年轻Marion接受这一解释。
+  - E04｜两人短暂告别；年轻Marion准备去医院手术，Nelly安慰她。Nelly返回现在后与成年Marion相见，双方以名字互认并拥抱。
+- **来源范围**：Berlinale官方竞赛档案（身份、剧情与72分钟）；Criterion发行页（身份与73分钟）；Cinéart发行页（发行/剧情）；The Guardian 2021-11-14与AnOther 2021-11-22导演采访（同龄会面、树屋与共同游戏）；BFI专题（母亲/女儿与时间媒介）；Criterion专题（身份揭示与结尾）；Montages评论（结尾与告别）。Guardian、AnOther均为导演本人访谈，不把同一创作者陈述误算成两个独立剧情目击者。以上均为F1公开资料/创作者访谈/评论，不是F2原片时码。
+- **前人研究一句话**：R32《晒后假日》研究事件不可逆而后来的证据会改写过去意义；R33《父亲》研究时间/空间锚点失稳造成身份漂移。本片候选差异是母女以同龄状态直接相遇，通过共同游戏和视角平等完成理解，而不是单向回忆、失忆或已证实的时间线修复。
+- **候选机制**：`type_gap_id=B_TEMPORAL_MEDIATION_WITHOUT_TIMELINE_REPAIR__C_GENERATIONAL_ROLE_EQUALIZATION`；`novelty_delta=OLD_CROSS_LAYER_RELATION_NEW_MECHANISM_CANDIDATE`；`type_status=PROPOSED_H`。暂按旧类型关系家族中的新机制候选处理，不是正式新类型。A故事主导=`CO_LED_H`（人物选择/主题问题共同驱动，CHARACTER_LED_H为竞争）；B五维拓扑=`UNKNOWN`；R人物配置=`DUAL_CORE_GENERATIONAL_PAIR_H`；C人物×主题=`ALIGNED_SUPPORTIVE_H`候选。以上均为AI工作假设，不是用户锁定或人类实证。
+- **关键反证与边界**：影片没有证明成年Marion明确记得年轻时相遇；结尾互认不能写成Nelly改变了母亲过去或未来。若移除同龄相遇后，结尾仍有充分依据，则时间中介的重要性下降；若F2显示成年Marion的回应不依赖年轻时期相遇，跨层转化机制需降级。不得把同一Marion的不同年龄状态误算成两个独立人物灵魂。
+- **分轨与等级**：`PLOT_ACTION=E01–E04`；人物稳定/追求/结算十元全部null；严格主题边为空，`THEME_FILM=ONTOLOGY_H`与`TIME_H`竞争，`NOT_ESTABLISHED`；`L2_CLAIM=NO_CLAIM`；`F1=PASS_PUBLIC`；`F2=null`；`F3=null`；`dynamic_feeling_curve=NOT_MEASURED`；`tenyuan_film_quality_100=null`；`research_readiness_100=71/100 (AI_SCORE)`；`mechanism_gain_0_5=2/5 (AI-H)`；`independent_grade=false`；`assessment_mode=ASSISTED_SEQUENTIAL`。AI评分不构成E级、C-film或真人感受证据；不计Q-FEEL、Q-DSL、Q-GEN、五轴A/B或跨媒体实验。
+- **裁决**：`EVIDENCE_INTAKE_ONLY / RETURN_SPECIFIC_GAP / ARCHIVE_PENDING`。本节仅把已有F1来源包接收到Q-DYN-002，不创建第二份电影卡或新Q；不启动RESEARCH子Campaign，不触发GPU/H3，不修改十元Canon。
+- **NEXT**：先完成旧银矿散点池与历史别名逐文件穷尽排重，再以原片F2核对E02–E04动作、同龄相遇与成年母女互认的实际呈现；未完成前继续WAIT，本节不使Q-DYN-002 READY。
+
+**F1来源链接**：
+- [Berlinale 2021官方竞赛档案](https://www.berlinale.de/en/2021/programme/202111238.html)
+- [Criterion Collection发行页](https://www.criterion.com/films/33467-petite-maman)
+- [Cinéart发行页](https://www.cineart.be/fr/films/petite-maman)
+- [The Guardian导演采访](https://www.theguardian.com/film/2021/nov/14/celine-sciamma-petite-maman-interview-girlhood-portrait-lady-fire)
+- [AnOther导演采访](https://www.anothermag.com/design-living/13723/its-about-sisterhood-celine-sciamma-on-her-new-film-petite-maman)
+- [BFI专题](https://www.bfi.org.uk/sight-and-sound/features/celine-sciamma-petite-maman-mother-invention)
+- [Criterion专题](https://www.criterion.com/current/posts/8153-petite-maman-au-revoir-lenfance)
+- [Montages评论](https://montagesmagazine.com/2021/11/celine-sciammas-petite-maman-portals-to-the-past/)
