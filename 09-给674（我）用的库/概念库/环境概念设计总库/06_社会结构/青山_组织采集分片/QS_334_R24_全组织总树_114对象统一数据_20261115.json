@@ -3374,14 +3374,14 @@
     },
     {
       "id": "R22-E040",
-      "source": "QS22-N002",
-      "target": "QS21-037",
-      "relation_type": "reported-military-merit-adjudication-and-oversight",
-      "chapters": [
+      "from": "QS22-N002",
+      "to": "QS21-037",
+      "type": "reported-military-merit-adjudication-and-oversight",
+      "chapter_anchors": [
         "作者758《卖首级》（WebNovel平台槽759）"
       ],
       "evidence_status": "TEXT_REPORTED",
-      "explanation": "作者758《卖首级》中郑继业称，备倭军军功核验需纪功官随军；他报告中军都督府未派纪功官及监军，未随军核验的战功因而不获承认，并陈述小旗/百户门槛与千户任用关系。此为当事人报告/抱怨，不是正式军制条文；只记录文本报告的军功核验、战功承认与监督职责，不证明备倭军法定直属、永久军籍、常设编制或都督府持续有效指挥。",
+      "evidence": "作者758《卖首级》中郑继业称，备倭军军功核验需纪功官随军；他报告中军都督府未派纪功官及监军，未随军核验的战功因而不获承认，并陈述小旗/百户门槛与千户任用关系。此为当事人报告/抱怨，不是正式军制条文；只记录文本报告的军功核验、战功承认与监督职责，不证明备倭军法定直属、永久军籍、常设编制或都督府持续有效指挥。",
       "source_urls": [
         "https://czbooks.net/n/s6ojkc/z51ch8m?chapterNumber=764",
         "https://www.webnovel.com/book/22444590709113204/catalog"
@@ -3545,7 +3545,8 @@
     "relation_records": 41,
     "candidate_open_relations": 6,
     "text_reported_relations": 20,
-    "operating_relations": 14
+    "operating_relations": 14,
+    "schema_normalization_note": "2026-11-17: R22-E040 imported legacy keys (source/target/relation_type/chapters/explanation) normalized to the R24 typed_relations schema (from/to/type/chapter_anchors/evidence). Stable ID, endpoints, relation meaning, status, source URLs and non-subordination boundary are unchanged; no object, relation, W score or Canvas topology was added or removed."
   },
   "source_coverage_updates": [
     {
