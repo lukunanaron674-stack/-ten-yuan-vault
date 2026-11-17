@@ -6,7 +6,7 @@
   "description": "Whole fictional-world social influence and organization research atlas. Topical category group edges do not signify legal parent-of.",
   "input_refs": {
     "r21_sha": "6cf558bce4d508fa2ee6beb6cfa398fb6ca4f255",
-    "r22_graph_sha": "0e6ccee930feccda7a4c54e067d220e424f67c03",
+    "r22_graph_sha": "931b7ec6238f1e44fd7bbd39c280d27a4e86daae",
     "r23_W_sha": "0a7d3673a6b30b52c1bfe233ed65c41ed174a3dd",
     "index_sha": "a46ccfb15c2b536e4f4077855ca5aca8affdf7d1"
   },
@@ -3193,14 +3193,16 @@
         "作者407《灯火客栈》"
       ],
       "evidence_status": "TEXT_REPORTED",
-      "evidence": "WebNovel目录平台槽243标作者242《密道》，槽247标作者246《真正的密道》；平台槽408标作者407《灯火客栈》。作者242正文中掌柜称小满为灯火“同僚”、自称“我灯火客栈”，并按灯火铜钱提供固原龙门客栈密道通行服务。支持文本报告的灯火关联服务/经营节点；不证明登记产权、股权、正式行政直属或法定part-of。正文：https://czbooks.net/n/s6ojkc/s6onf31e?chapterNumber=246；https://www.piaotia.com/html/15/15702/11485597.html。题名：https://www.webnovel.com/book/22444590709113204/catalog。",
+      "evidence": "作者242中固原掌柜称小满为灯火同僚、自称“我灯火客栈”，并以灯火铜钱提供密道服务。作者407《灯火客栈》正文进一步显示：昌平灯火客栈与固原龙门客栈共享对联、近似陈设和暗号服务；昌平掌柜向盘账“东家”请示，并称已故固原掌柜为“二哥”。这些材料共同支持跨城灯火关联经营/服务网络；不证明登记产权、股权、正式行政直属或法定part-of。",
       "legal_part_of_confirmed": false,
       "graph_visualize_as": "typed_relation_not_legal_direct_inclusion",
       "source_urls": [
         "https://www.webnovel.com/book/22444590709113204/catalog",
         "https://czbooks.net/n/s6ojkc/s6onf31e?chapterNumber=246",
         "https://www.piaotia.com/html/15/15702/11485597.html",
-        "https://www.ttkan.co/novel/pagea/qingshan-huishuohuadezhouzi_246.html"
+        "https://www.ttkan.co/novel/pagea/qingshan-huishuohuadezhouzi_246.html",
+        "https://czbooks.net/n/s6ojkc/hj6828p8?chapterNumber=412",
+        "https://tw.hjwzw.com/Book/Read/49819,24994094"
       ]
     },
     {
@@ -3382,7 +3384,7 @@
         "作者290《后会有期》（WebNovel平台Chapter 291）"
       ],
       "evidence_status": "CANDIDATE_OPEN",
-      "evidence": "作者242正文已文本报告灯火掌柜同僚身份及灯火客栈服务运营，但不能推出客栈登记产权、股权或正式行政隶属；未找到产权/编制/直属文书，仅保留法律所有权及正式父级OPEN。E029另记文本报告经营关联。 作者290《后会有期》（WebNovel平台Chapter 291）显示小五称将接任掌柜，叙述者判断掌柜更替并非小五或胡三爷可独自决定；小五提到东家后警惕闭口，陈迹据此判断其刚经密道出城面见客栈背后的神秘东家，且对方也在固原。支持隐名高层决策者及掌柜任命权限线索；但东家身份、产权、股权、与灯火关系及正式行政父级未揭示，E039继续CANDIDATE_OPEN。作者题名按WebNovel官方目录校准，镜像编号差异见R24作者290证据卡。",
+      "evidence": "作者242与407共同支持固原龙门客栈处于跨城灯火经营/服务网络：407只明确昌平节点有盘账“东家”，不能自动外推该女子拥有固原客栈。作者290《后会有期》另显示固原掌柜更替受更高决策者影响，并出现隐名东家线索。固原东家身份、是否与昌平东家同一、产权、股权、与灯火法律关系及正式行政父级均未揭示；E039继续CANDIDATE_OPEN。",
       "legal_part_of_confirmed": false,
       "graph_visualize_as": "formal_ownership_or_legal_parentage_open_not_confirmed",
       "source_urls": [
@@ -3391,7 +3393,9 @@
         "https://www.piaotia.com/html/15/15702/11485597.html",
         "https://www.webnovel.com/book/22444590709113204/86694686940517921",
         "https://m.rongshuxia.com/bookquery/fobpjdvxkgiq",
-        "https://www.dingdian888.com/xiaoshuo/733514/"
+        "https://www.dingdian888.com/xiaoshuo/733514/",
+        "https://czbooks.net/n/s6ojkc/hj6828p8?chapterNumber=412",
+        "https://tw.hjwzw.com/Book/Read/49819,24994094"
       ]
     },
     {
@@ -3561,8 +3565,8 @@
       "作者848《阉党细作》本轮仅取得ixdzs搜索摘要，正文页403；只用于补充上级交办/资金线索，不计全文核查。"
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
-    "r22_graph_sha": "0e6ccee930feccda7a4c54e067d220e424f67c03",
-    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。；2026-11-17：作者832《贪与痴》正文补充季氏掌柜被点明为司曹壬、并报告各家向胡家寻求襄助的背景；该章未直接提及《金陵晚报》，仅作人物联络角色背景，不作产权证据；E019保持CANDIDATE_OPEN，W不变。；2026-11-17：作者290《后会有期》（WebNovel平台Chapter 291）补充固原龙门客栈隐名东家与掌柜任命权限线索；东家身份、产权、与灯火关系及正式行政父级仍未证，R22-E039继续CANDIDATE_OPEN，QS21-083 W230不变。",
+    "r22_graph_sha": "931b7ec6238f1e44fd7bbd39c280d27a4e86daae",
+    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。；2026-11-17：作者832《贪与痴》正文补充季氏掌柜被点明为司曹壬、并报告各家向胡家寻求襄助的背景；该章未直接提及《金陵晚报》，仅作人物联络角色背景，不作产权证据；E019保持CANDIDATE_OPEN，W不变。；2026-11-17：作者290《后会有期》（WebNovel平台Chapter 291）补充固原龙门客栈隐名东家与掌柜任命权限线索；东家身份、产权、与灯火关系及正式行政父级仍未证，R22-E039继续CANDIDATE_OPEN，QS21-083 W230不变。；2026-11-17：作者407《灯火客栈》可读正文补齐E029/E039原有题名锚，确认昌平与固原节点共享标识、陈设、暗号服务及人员身份识别；仅昌平节点明确出现盘账“东家”，固原产权与法定父级仍OPEN。",
     "typed_relations": 41,
     "relation_records": 41,
     "candidate_open_relations": 6,
@@ -3778,6 +3782,29 @@
         "作者题名按官方目录校准为290《后会有期》（平台Chapter 291）；1024txt/TTKS镜像存在+1编号差异。",
         "东家身份、产权、股权、与灯火关系、正式行政父级均未揭示。",
         "不新增组织对象、关系边或W分值。"
+      ]
+    },
+    {
+      "author_chapter": 407,
+      "title": "灯火客栈",
+      "status": "TARGETED_MIRROR_BODY_READ_NOT_STRICT_PASS",
+      "readable_range": "CZBooks正文第68–183行可读；关系证据集中第142–183行；黄金屋为同题名重写摘要交叉页",
+      "source_urls": [
+        "https://czbooks.net/n/s6ojkc/hj6828p8?chapterNumber=412",
+        "https://tw.hjwzw.com/Book/Read/49819,24994094"
+      ],
+      "finding": "昌平灯火客栈与固原龙门客栈共享对联、近似陈设和暗号服务；昌平掌柜向盘账“东家”请示，并称已故固原掌柜为“二哥”。支持跨城灯火经营/服务网络，但不证明昌平东家拥有固原节点。",
+      "classification_candidate": "R22-E029正文补强；R22-E039产权/法定父级继续OPEN",
+      "promoted_to_object": false,
+      "W_assigned": false,
+      "relations_added": false,
+      "relation_updated": true,
+      "relation_id": "R22-E029",
+      "limits": [
+        "不把昌平东家外推为固原产权人",
+        "不把经营网络等同法定行政隶属",
+        "不新增对象、关系边或W",
+        "不计逐章全文PASS"
       ]
     }
   ]
