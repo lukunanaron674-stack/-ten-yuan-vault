@@ -339,3 +339,21 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - **裁决**：`EVIDENCE_INTAKE_ONLY / RETURN_SPECIFIC_GAP / ARCHIVE_PENDING`。不创建电影MD/Canvas节点/主题索引，不启动RESEARCH Campaign，不执行H3，不修改十元Canon。
 - **NEXT**：先完成旧银矿散点池逐文件排重，再用2022原片F2核验五个事件及E03因果边界；未达到前继续WAIT。
 
+
+
+## 19｜2026-11-17｜ANATOMY_OF_A_FALL_2023_F1_SOURCE_PACKET｜儿童解释模型进入公共裁决，但客观死因仍未闭合（F1接收／非READY）
+
+- **唯一增量来源**：Linear 674-105 comment `25002125-30af-4f38-8aad-239c6ad71f38`（2026-11-17 07:31:04 UTC）；电影进度台账 GitHub commit `04574cf61c477bdcf1b3c275c28440a9b058f1e7`，Linear 收据声明远端回读台账 Blob SHA `fe66306079f62280e22c812911c4a1e6230aa3b1`。本轮已独立读取 main 台账并核对 Blob SHA 一致；Linear 与 GitHub 是同一影片、同一 F1 来源包，只计一条跨系统增量。
+- **作品身份与去重边界**：Anatomie d'une chute / Anatomy of a Fall /《坠落的审判》（2023），Justine Triet 编导；研究版本限定为 2023 戛纳竞赛长片版。C01–C51、既有 Canvas、WATCH 与仓库别名检索未命中；旧时间克因果100片池第079项仅 F0 候选，不能视作已完成 F1；旧银矿散点池尚未逐文件穷尽，因此 `ARCHIVE_PENDING`，禁止创建 C52、正式电影 MD、Canvas 节点或 WATCH。
+- **F1事件账（公开来源复述，非原片逐镜/F2）**：
+  - E01｜Daniel 外出后回家发现父亲 Samuel 死于木屋外雪地；无直接目击，死因未闭合，Sandra 被起诉。
+  - E02｜夫妻争吵录音、婚姻冲突、伤痕与坠落痕迹被控辩双方组织成竞争性因果叙事；私人关系被转为公共裁决材料。
+  - E03｜Daniel 回忆父亲既往疑似阿司匹林过量及 Snoop 曾生病，给 Snoop 喂阿司匹林并观察到相似症状，再重新解释父亲当年的话。
+  - E04｜Daniel 将自己的解释提交法庭，Sandra 获判无罪；母子重新接触，但 Samuel 的客观死因仍未获观众确认。
+- **候选机制**：`B_OPEN_CAUSAL_MODEL__R_CHILD_WITNESS_INTERPRETIVE_MEDIATION__C_PRIVATE_MEMORY_TO_PUBLIC_VERDICT_WITHOUT_EPISTEMIC_CLOSURE`，状态 `PROPOSED_H`。候选差异：孩子以私人记忆与非决定性实验构造一个可承受的解释，并使该解释进入公共判决；法律程序闭合不等于客观因果闭合。
+- **前人研究一句话**：C46《罪人》研究信息逆转后行动者承认责任；C37《教师休息室》研究调查归责如何反噬共同体信任；C45《尤马县的最后一站》研究观众/人物信息不对称；《The Past》研究多米诺式因果链。本片候选新增的是“孩子的解释模型获得法律效力，但仍不等于事实证明”。
+- **关键反证与边界**：阿司匹林实验只证明 Snoop 对该剂量出现相似症状，不证明 Samuel 当时服药，也不证明 Snoop 曾摄入呕吐物；Daniel 选择陈述一个可承受的解释，不等于他明知相反事实而撒谎；无罪判决是法律结论，不是客观死因证明。ONTOLOGY_H 为主题主候选、CAUSALITY_H 为强竞争，但严格五维作用边、人物十元、L2 生克补均未建立。
+- **证据等级与状态**：`SOURCE_PACKET_PASS_PUBLIC / F1_ONLY`；F2=null、F3=null、C-film独立盲测=null；`tenyuan_film_quality_100=null`；AI研究准备度评分不作为证据等级。旧银矿逐文件排重未完成，`ARCHIVE_PENDING`；NEW100正式完成数维持28/100，`new_f1_cards=0`，`type_gap_verified=0`。
+- **Receipt**：`Q-DYN-002-APP-FILM-CHAIN-001-ANATOMY-OF-A-FALL-F1-INTAKE-20261117`。本节仅将既有 F1 来源包接收到 Q-DYN-002，不创建第二份电影卡或新 Q；不触发 GPU，不改唯一电影 Canvas、WATCH 或十元 Canon。
+- **来源**：Festival de Cannes（作品身份/版本/梗概）；Esquire、Radio Times（剧情与结尾）；CNN Newsource（导演/演员访谈）；Entertainment Weekly（导演访谈）。来源 URL 及各自证据范围以电影进度台账本轮 F1 包为准。
+
