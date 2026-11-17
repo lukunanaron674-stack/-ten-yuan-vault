@@ -312,3 +312,30 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - **分级与计数**：`F1=PASS_PUBLIC`；`F2=null`；`F3=null`；`dynamic_feeling_curve=NOT_MEASURED`；`independent_pass=NOT_SCORED`；`tenyuan_film_quality_100=null`。Linear中的`research_readiness_100=72/100`仅为`AI_SCORE`，`mechanism_gain_0_5=3/5`仅为`AI-H`，不等于E级/C-film/真人感受成绩。该来源包不计Q-FEEL、Q-DSL、Q-GEN、五轴A/B或跨媒体实验；`C-feeling/E`不变。
 - **裁决**：`EVIDENCE_INTAKE_ONLY / NOT_READY / RETURN_SPECIFIC_GAP`；`ARCHIVE_PENDING`；`new_f1_cards=0`；`NEW100=28/100`不变；`type_gap_verified=0`。不新建电影MD/Canvas节点/主题索引，不启动RESEARCH子Campaign，不执行五轴A/B或H3，不修改十元Canon。本节不使Q-DYN-002 READY。
 - **NEXT**：先完成旧银矿散点池逐文件与历史别名穷尽排重；再用2021原片F2核验E01–E04动作、城堡交换契约/腰带隐瞒、非字面未来段落与终局摘除腰带的连续性；在任何独立能力评估前冻结R1/R2答案及反例。未达到前述门槛继续WAIT。
+
+## 17｜2026-11-17｜THE_FLORIDA_PROJECT_2017_F1_SOURCE_PACKET｜临时空间作为照护基础设施与想象性出口（跨系统接收／非READY）
+
+- **receipt_id**：`Q-DYN-002-APP-FILM-CHAIN-001-THE-FLORIDA-PROJECT-F1-INTAKE-20261117`。
+- **唯一增量来源**：Linear 674-105 comment `5a47c600-3152-4bd1-ad05-ffb37fe1cf31`（2026-11-17 05:33:07 UTC）；电影进度台账 GitHub commit `6e81edab8c565cfcd8c0f1f58e81bb095b9d8346`，台账 Blob SHA `6fa86ad1af08c14ab19d3d5edbb0025b7d201eb7`。Linear评论与GitHub台账是同一F1来源包，跨系统只计一条增量。
+- **身份/去重边界**：《佛罗里达计划》/The Florida Project（2017），Sean Baker编导，A24院线版；USER已看未确认。C01–C51、Canvas、WATCH与当前代码搜索未命中；旧银矿散点池未逐文件穷尽，故 `ARCHIVE_PENDING`，不建C52、不增加NEW100正式数量。
+- **F1事件账（公开来源，不是F2逐镜）**：E01 Magic Castle旅馆形成儿童游乐与非正式照护网络；E02废弃公寓火灾后Ashley切断Scooty与Moonee往来，成人互助随之收缩；E03 Halley的生存策略进入旅馆房间并加剧成人关系冲突；E04儿童福利介入，Moonee告别Jancey，最终奔向Disney的影像转场由导演解释为想象领域，不冻结为现实逃离。
+- **前人研究一句话**：C32《无依之地》研究流动生活如何重组空间；C44《安静的女孩》研究短暂照护关系与被迫分离；C37《教师休息室》研究追索如何使信任扩散。本片候选差异是固定但临时的旅馆微生态承载非正式照护，儿童玩闹与成人生存行为击穿支持边，最后以想象性空间对照制度性分离。
+- **候选机制**：`B_TEMPORARY_SPACE_AS_CARE_INFRASTRUCTURE__R_CHILD_MOTHER_CARE_NETWORK_COLLAPSE__C_IMAGINED_EXIT_VS_INSTITUTIONAL_SEPARATION`，`PROPOSED_H`。SPACE_H主候选、CAUSALITY_H强竞争、ONTOLOGY_H次级；theme_edges为空，严格L2关系未建立。最强反证：若F2显示旅馆临时属性可由普通稳定住宅替换而不改变核心冲突，则SPACE主维降级；DCF具体触发者未知，不指定单一报案者。
+- **分级与计数**：`F1=SOURCE_PACKET_PASS_PUBLIC`；`F2=null`；`F3=null`；人物十元全null；`dynamic_feeling_curve=NOT_MEASURED`；`independent_grade=false`；研究准备度74/100仅AI_SCORE，机制增益3/5仅AI-H；NEW100仍28/100，`new_f1_cards=0`，`type_gap_verified=0`。不计Q-FEEL、Q-DSL、Q-GEN、五轴A/B或跨媒体实验。
+- **裁决**：`EVIDENCE_INTAKE_ONLY / RETURN_SPECIFIC_GAP / ARCHIVE_PENDING`。不创建电影MD/Canvas节点/主题索引，不启动RESEARCH Campaign，不执行H3，不修改十元Canon。
+- **NEXT**：先完成旧银矿散点池逐文件排重，再用2017原片F2核对火灾、照护网络断裂、DCF到访及想象性结尾；未达到前继续WAIT。
+
+
+
+## 18｜2026-11-17｜BANSHEES_OF_INISHERIN_2022_F1_SOURCE_PACKET｜自我惩罚威胁、第三方代价外溢与报复升级（跨系统接收／非READY）
+
+- **receipt_id**：`Q-DYN-002-APP-FILM-CHAIN-001-BANSHEES-OF-INISHERIN-F1-INTAKE-20261117`。
+- **唯一增量来源**：Linear 674-105 comment `f7741872-13b6-4275-bba8-e465ae5f2d48`（2026-11-17 06:22:51 UTC）；电影进度台账 GitHub commit `8cf787d6492145664e03ba24e94977556c7503d2`，台账 Blob SHA `bbe94ea0ac1d6ff43a22c7be49303fc70ee4f232`。Linear评论与GitHub台账是同一F1来源包，跨系统只计一条增量。
+- **身份/去重边界**：The Banshees of Inisherin／《伊尼舍林的报丧女妖》（2022），Martin McDonagh编导，Searchlight院线版；USER已看未确认。C01–C51、Canvas、WATCH与当前代码搜索未命中；旧银矿散点池尚未逐文件穷尽，故 `ARCHIVE_PENDING`，不建C52、不增加NEW100正式数量。
+- **F1事件账（公开来源，不是F2逐镜）**：E01 Colm单方面终止日常友谊，Pádraic持续尝试修复；E02 Colm以切断自己手指作为迫使对方停止接触的威胁并付诸行动；E03 Pádraic欺骗音乐学徒Declan离开后，Colm继续自残，但公开来源对两事是否存在直接因果有冲突；E04驴Jenny误吞断指死亡，Pádraic由修复转向报复；E05 Pádraic烧毁Colm住宅但救出狗，双方最终未和解。
+- **前人研究一句话**：C37《教师休息室》研究追索事实如何反噬信任；C45《尤马县的最后一站》研究观众与人物的信息不对称；《前目的地》研究实际时间闭环。本片候选差异是自我惩罚威胁把身体成本转嫁到第三方，再使原先受伤者转向报复，令争端脱离最初理由。
+- **候选机制**：`B_SELF_PUNISHMENT_THREAT__C_THIRD_PARTY_COST_SPILLOVER__R_REVENGE_ESCALATION`，`PROPOSED_H`。CAUSALITY_H主候选、ONTOLOGY_H强竞争、FATE_H次级；theme_edges为空，严格L2关系未建立。最强反证：E03“Declan谎言直接触发剩余手指被切”存在来源冲突，不冻结严格因果；导演称内战仅为宽泛隐喻，不作逐事件历史映射。
+- **分级与计数**：`F1=SOURCE_PACKET_PASS_PUBLIC`；`F2=null`；`F3=null`；人物稳定/追求/结算十元均null；`dynamic_feeling_curve=NOT_MEASURED`；`independent_grade=false`；研究准备度69/100仅AI_SCORE，机制增益3/5仅AI-H；NEW100仍28/100，`new_f1_cards=0`，`type_gap_verified=0`。不计Q-FEEL、Q-DSL、Q-GEN、五轴A/B或跨媒体实验。
+- **裁决**：`EVIDENCE_INTAKE_ONLY / RETURN_SPECIFIC_GAP / ARCHIVE_PENDING`。不创建电影MD/Canvas节点/主题索引，不启动RESEARCH Campaign，不执行H3，不修改十元Canon。
+- **NEXT**：先完成旧银矿散点池逐文件排重，再用2022原片F2核验五个事件及E03因果边界；未达到前继续WAIT。
+
