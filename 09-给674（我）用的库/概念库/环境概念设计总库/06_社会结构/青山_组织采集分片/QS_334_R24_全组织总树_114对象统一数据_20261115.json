@@ -6,8 +6,8 @@
   "description": "Whole fictional-world social influence and organization research atlas. Topical category group edges do not signify legal parent-of.",
   "input_refs": {
     "r21_sha": "6cf558bce4d508fa2ee6beb6cfa398fb6ca4f255",
-    "r22_graph_sha": "9d3fb42cbe40cde0f81d159c1d43bd89a134959f",
-    "r23_W_sha": "246ae534b921dfeb2bf356bc58f0a5586fb43854",
+    "r22_graph_sha": "d1a546a60a2f8ae06d56e0a166ef3e673c91f55d",
+    "r23_W_sha": "0a24f544644d0334697a97479dbd6e409e06ba29",
     "index_sha": "a46ccfb15c2b536e4f4077855ca5aca8affdf7d1"
   },
   "groups": [
@@ -1010,7 +1010,7 @@
       "score_confidence": "H",
       "old_W": 580,
       "W_delta": 0,
-      "chapters": "66,77,501,525,738",
+      "chapters": "66,77,501,517,525,738",
       "contribution": "军情司司曹分工、跨境渗透和长年经费网",
       "alias": "景朝军情司、军情司",
       "source_boundary": "司曹甲癸等为岗位代号；早期团队与现今同一持续机构候选",
@@ -2155,10 +2155,10 @@
       "score_confidence": "M",
       "old_W": null,
       "W_delta": null,
-      "chapters": "513,534,542",
-      "contribution": "京城晨报实际发行并扩散民生技术，读者进入内廷",
+      "chapters": "513,517,534,542",
+      "contribution": "京城晨报实际发行并扩散民生技术，读者进入内廷；作者517记录一次军情司藏头消息经报纸刊载的操作",
       "alias": "《京城晨报》",
-      "source_boundary": "与文昌出版地点及梅花渡分销行动是关系，不是同一机构",
+      "source_boundary": "与文昌出版地点及梅花渡分销行动是关系，不是同一机构；作者517只支持一次隐蔽消息载体使用，不证明军情司拥有、管理报社或存在长期渠道",
       "relation_primary_type": "printed-by",
       "relation_primary_target": "QS21-086",
       "relation_evidence_status": "OPERATING_RELATION",
@@ -3381,12 +3381,30 @@
       ],
       "legal_part_of_confirmed": false,
       "graph_visualize_as": "reported_merit_review_and_supervision_not_legal_subordination"
+    },
+    {
+      "id": "R22-E041",
+      "from": "QS21-041",
+      "to": "QS21-089",
+      "type": "covert-message-carrier",
+      "chapter_anchors": [
+        "作者517《棋手》（WebNovel平台Chapter 518）"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "evidence": "作者517《棋手》中，第七版时政策论的民间投稿以藏头法写出“今夜子时，劫周传”；陈迹明确判断这是军情司用藏头法传出的消息。同章镜像后段将该报编辑部定位为《京城晨报》，并提及袍哥会登记文章来源。结合R13既有初勘，支持一次通过京城晨报刊载文章传递军情司消息的操作关系；投稿者身份、编辑者是否知情及长期渠道均未证。",
+      "legal_part_of_confirmed": false,
+      "graph_visualize_as": "single_observed_covert_message_carrier_not_ownership_or_subordination",
+      "source_urls": [
+        "https://www.webnovel.com/book/青山_22444590709113204/517%E3%80%81%E6%A3%8B%E6%89%8B_92513916134941518",
+        "https://m.xsw.tw/1721636/254455394.html",
+        "https://czbooks.net/n/s6ojkc/ucpna8gf?chapterNumber=524"
+      ]
     }
   ],
   "audit": {
     "stage": "R24",
     "status": "INTEGRATED_PROVISIONAL_WITH_SOURCE_GAPS",
-    "baseline": "114 IDs (108 QS21 +6 QS22); 39 positive typed edges +1 negative-equivalence record; 87 candidate W; 10 W?; 17 non-independent",
+    "baseline": "114 IDs (108 QS21 +6 QS22); 40 positive typed edges +1 negative-equivalence record; 87 candidate W; 10 W?; 17 non-independent",
     "identity": {
       "r21": 108,
       "r22_extension": 6,
@@ -3396,10 +3414,10 @@
       "unmatched_R22_to_R23": 0
     },
     "relationships": {
-      "total": 40,
+      "total": 41,
       "statuses": {
         "TEXT_REPORTED": 21,
-        "OPERATING_RELATION": 12,
+        "OPERATING_RELATION": 13,
         "CANDIDATE_OPEN": 6,
         "NEGATIVE_EQUIVALENCE": 1
       },
@@ -3509,12 +3527,13 @@
       "R24作者863《他心通》：最新目录显示平台Chapter 864/作者题名863；当前只有目录题名交叉（INDEX_ONLY），正文未取得，不据标题建组织、关系或W。"
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
-    "r22_graph_sha": "9d3fb42cbe40cde0f81d159c1d43bd89a134959f",
-    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。",
-    "typed_relations": 40,
-    "relation_records": 40,
+    "r22_graph_sha": "d1a546a60a2f8ae06d56e0a166ef3e673c91f55d",
+    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。",
+    "typed_relations": 41,
+    "relation_records": 41,
     "candidate_open_relations": 6,
-    "text_reported_relations": 21
+    "text_reported_relations": 21,
+    "operating_relations": 13
   },
   "source_coverage_updates": [
     {
@@ -3568,6 +3587,30 @@
       "W_assigned": false,
       "relations_added": true,
       "relation_id": "R22-E040"
+    },
+    {
+      "author_chapter": 517,
+      "title": "棋手",
+      "platform_chapter": 518,
+      "status": "TARGETED_BODY_PARTIAL_WITH_MIRROR_CONTEXT",
+      "readable_range": "WebNovel公开正文第9–27行；镜像搜索摘要补充编辑部后段，页面本轮直接打开超时",
+      "source_urls": [
+        "https://www.webnovel.com/book/青山_22444590709113204/517%E3%80%81%E6%A3%8B%E6%89%8B_92513916134941518",
+        "https://m.xsw.tw/1721636/254455394.html",
+        "https://czbooks.net/n/s6ojkc/ucpna8gf?chapterNumber=524"
+      ],
+      "finding": "第七版民间投稿中的藏头信息被陈迹明确判断为军情司传出的消息；同章镜像后段将编辑部定位为京城晨报并提到袍哥会登记稿源。",
+      "classification_candidate": "景朝军情司→京城晨报：一次隐蔽消息载体/通信操作",
+      "promoted_to_object": false,
+      "W_assigned": false,
+      "relations_added": true,
+      "relation_id": "R22-E041",
+      "limits": [
+        "非严格全文PASS",
+        "投稿者身份及编辑者是否知情未证",
+        "不证明军情司拥有/管理报社或长期控制通信渠道",
+        "不新增袍哥会独立对象"
+      ]
     }
   ]
 }
