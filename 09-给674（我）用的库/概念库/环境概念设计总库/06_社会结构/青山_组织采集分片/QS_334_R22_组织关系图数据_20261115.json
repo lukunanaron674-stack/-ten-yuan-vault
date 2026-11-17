@@ -8,7 +8,7 @@
   "warning": "Typed relations do not all represent formal organization containment. Not a full-book organization census.",
   "original_R21_objects": 108,
   "additional_connecting_objects": 6,
-  "relation_rows": 39,
+  "relation_rows": 40,
   "entity_nodes": [
     {
       "id": "QS21-001",
@@ -1586,8 +1586,27 @@
       ],
       "legal_part_of_confirmed": false,
       "graph_visualize_as": "reported_merit_review_and_supervision_not_legal_subordination"
+    },
+    {
+      "id": "R22-E041",
+      "source": "QS21-041",
+      "target": "QS21-089",
+      "relation_type": "covert-message-carrier",
+      "chapters": [
+        "作者517《棋手》（WebNovel平台Chapter 518）"
+      ],
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "作者517《棋手》中，第七版时政策论的民间投稿以藏头法写出“今夜子时，劫周传”；陈迹明确判断这是军情司用藏头法传出的消息。同章镜像后段将该报编辑部定位为袍哥经营的《京城晨报》，并提及袍哥会登记文章来源。结合R13既有初勘，支持一次通过京城晨报刊载文章传递军情司消息的操作关系；投稿者身份、编辑者是否知情及长期渠道均未证。",
+      "source_urls": [
+        "https://www.webnovel.com/book/青山_22444590709113204/517%E3%80%81%E6%A3%8B%E6%89%8B_92513916134941518",
+        "https://m.xsw.tw/1721636/254455394.html",
+        "https://czbooks.net/n/s6ojkc/ucpna8gf?chapterNumber=524"
+      ],
+      "legal_part_of_confirmed": false,
+      "graph_visualize_as": "single_observed_covert_message_carrier_not_ownership_or_subordination",
+      "source_coverage": "WebNovel公开部分可读第9–27行；镜像后段仅搜索摘要可见且本轮直接打开超时；非严格全文PASS。"
     }
   ],
   "formal_W_scoring": "R23_only",
-  "total_relation_records": 40
+  "total_relation_records": 41
 }
