@@ -270,3 +270,24 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - **反证/停止条件**：若F2显示共同烹饪并非两人关系主要行动媒介，或Pauline学习与Eugénie离世无结构性联系，机制降级为职业背景；若新厨师被叙事明确设定为Eugénie可替代复制，需撤回“个人不可替代”判断；若移除Pauline/Adèle后主关系仍完整，技艺传承只作为后段回收而非全片主导机制。
 - **计数与裁决**：`ARCHIVE_PENDING`；`new_f1_cards=0`；`NEW100=28/100`不变；`type_gap_verified=0`。仅作为Q-DYN-002的F1来源输入，不计Q-FEEL、Q-DSL、Q-GEN、五轴A/B或跨媒体实验。无新电影MD/Canvas节点/主题索引，不启动RESEARCH子Campaign，不执行H3。
 - **NEXT**：等待历史别名穷尽去重、原片F2核验与独立预锁R1/R2；本节不使Q-DYN-002 READY。
+
+
+## 15｜2026-11-17｜THE_BOY_AND_THE_HERON_2023_F1_SOURCE_PACKET｜继承邀请、拒绝与第三方接管（F1接收／非READY）
+
+- **receipt_id**：`Q-DYN-002-APP-FILM-CHAIN-001-THE-BOY-AND-THE-HERON-F1-INTAKE-20261117`。
+- **唯一来源增量**：Linear 674-105 comment `ad32928f-657f-4b01-bb2a-305c3a92d160`（2026-11-17 03:29:57Z，FILM-MINE v2.0最小收据）；电影进度台账 GitHub commit `5d883d439a21af2224578ed22d06fd4712428f85`，远端 blob 回读 `2a427fb7ede1a9848864e54907ae90acc438f55e`。Linear 评论与 GitHub 台账是同一影片、同一F1来源包，跨系统只计一条增量；本次仅将既有来源包接收到Q-DYN-002，不创建第二张电影卡或新Q。
+- **身份/版本边界**：The Boy and the Heron / 君たちはどう生きるか /《你想活出怎样的人生》/ 2023 / Hayao Miyazaki / 日本院线动画长片。按2023日本院线电影版研究；GKIDS将其列为宫崎骏编导的原创故事，Nippon.com说明日文片名借自1937年小说但电影并非该小说改编，不把小说情节混入电影。USER已看=NOT_CONFIRMED。GKIDS官方发行页用于作品身份与主线；Nippon.com用于上映日期/片名及改编边界；Associated Press用于战争背景、人物与继承提议；Digital Spy、Looper用于结尾具体动作。后两者为二手剧情复述，不替代原片F2。
+- **唯一性排查边界**：C01–C51电影MD目录、统一Canvas 118 nodes / 55 edges / 51 file nodes、WATCH-001–030及GitHub多语关键词检索均未命中；但旧银矿散点池尚未逐文件穷尽，故 `DUPLICATE_CHECK=WATCH_C01-C51_CANVAS_AND_REPO_SEARCH_PASS__ARCHIVE_PENDING`，`NEW100_ELIGIBILITY=ARCHIVE_PENDING`。当前电影目录为51个MD（50张电影主卡＋1张同片机制子卡）；不创建C52，不增加正式NEW100数量，NEW100仍28/100、new_f1_cards=0。
+- **F1事件账（公开剧情来源；不是原片逐镜/F2）**：
+  - **E01｜母亲死亡与新家庭建立**：战时Mahito的母亲Hisako在医院火灾中死亡；父亲Shoichi与Hisako的妹妹Natsuko再婚，带Mahito搬到乡间宅邸。Mahito无法接受Natsuko及新的家庭关系。结果=新家庭已成立，但Mahito尚未进入其中。来源：GKIDS、Nippon.com、Looper。
+  - **E02｜Natsuko失踪触发入塔**：Natsuko消失后，Mahito跟随灰鹭进入宅邸古塔，进入塔内异世界寻找她；他曾看见返回现实的门，仍继续寻找Natsuko。结果=搜索目标从寻找已故母亲逐渐转为救回仍活着的Natsuko。来源：GKIDS、Nippon.com、Digital Spy。
+  - **E03｜对Natsuko的称呼与关系选择**：Mahito在鹦鹉王国的产房找到Natsuko；她一度拒绝他，Mahito仍称她为母亲并要求一起回家。结果=Mahito对Natsuko的家庭关系位置发生可观察变化。来源：Looper、Digital Spy。
+  - **E04｜继承提议被拒、竞争者接管与世界崩塌**：塔世界创造者Great-Uncle邀请Mahito继承维护世界的职责；Mahito拒绝，选择回到有缺陷的现实。Parakeet King随后试图重新排列维持世界的石块，未能保持平衡并加速已在发生的崩塌。Himi选择返回自己的时代，明知未来会成为Mahito的母亲并死于火灾；Mahito与Natsuko回到现实，片尾两年后全家搬回东京。来源：Digital Spy、Looper、AP。
+- **关键因果边界**：公开剧情资料支持“Mahito拒绝继承”与“Parakeet King操作石块并加速崩塌”先后发生；不支持把“Mahito拒绝”直接写成“世界崩塌”的单一充分原因。塔世界在竞争者操作前已处于崩塌过程中；Parakeet King的接管/操作是加速因素候选。F2原片时码、连续动作核对、F3真人感受均为null。
+- **横纵事件与分轨**：Mahito↔Natsuko（排斥→称母亲→共同返家）；Mahito↔Himi（与母亲年轻状态相遇、获知她将返回自己的时代）；Mahito↔Great-Uncle（继承邀请/拒绝）；Great-Uncle↔Parakeet King（世界维护权与竞争性接管）。纵向链：失母→拒绝新家庭→Natsuko失踪→入塔寻找→承认Natsuko的家庭位置→继承邀请→Mahito拒绝→Parakeet King接管石块→世界崩塌→Mahito与Natsuko返家。以上只记录剧情动作，不填十元端点。
+- **前人研究一句话**：C24《机器人之梦》研究分离后的记忆/音乐关系桥；C36《荒野机器人》研究照料行为如何改变工具主体的角色；C37《教师休息室》研究追索事实导致共同体信任反噬。本片候选差异是“创造者提出继承→主角拒绝→竞争者接管→系统失衡”，并把主角的伦理选择与第三方造成的系统后果分开。
+- **AG-09/11/13/02分轨**：主题主维候选=`ONTOLOGY_H`；竞争维=`FATE_H / SPACE_H / CAUSALITY_H`，不裁决主维。Mahito、Great-Uncle、Parakeet King、Himi人物稳定元/追求元/结算元全部null。严格主题边、角色十元、L2生克补边均`NOT_ESTABLISHED`；`PLOT_ACTION=E01–E04`；`ROLE_TENYUAN=null`；`THEME_FILM=ONTOLOGY_H`与竞争维分开登记；`L2_CLAIM=NONE`。
+- **机制候选与反证**：`type_gap_id=R_SUCCESSION_HANDOFF_FAILURE__C_RIVAL_TAKEOVER_COLLAPSE`；`novelty_delta=OLD_HANDOFF_FAMILY_NEW_VACANCY_TO_RIVAL_TAKEOVER_AND_SYSTEM_COLLAPSE_MECHANISM`；`type_status=PROPOSED_H`，属于旧“角色接力/权力交接”家族的新机制候选，不是正式新类型。最强反证：塔世界已在崩塌过程中，Parakeet King的动作仅加速崩塌；不能把Mahito拒绝继承当作直接、充分原因。若F2显示没有Parakeet King操作石块，塔世界仍以同样速度/方式崩塌，则“竞争接管加速崩塌”机制失败；若Mahito拒绝没有形成继承空位或竞争者行动不受其影响，则“拒绝→空位→第三方接管”链降级为并行事件。
+- **分级与计数**：`F1=PASS_PUBLIC`；`F2=null`；`F3=null`；`dynamic_feeling_curve=NOT_MEASURED`；`tenyuan_film_quality_100=null`；`research_readiness_100=74/100 (AI_SCORE)`；`mechanism_gain_0_5=3/5 (AI-H)`；`independent_grade=false`；`assessment_mode=ASSISTED_SEQUENTIAL`。上述AI分数不等于E级/C-film/真人感受成绩；不计Q-FEEL、Q-DSL、Q-GEN、五轴A/B或跨媒体实验。
+- **裁决**：`EVIDENCE_INTAKE_ONLY / NOT_READY / RETURN_SPECIFIC_GAP`。不创建新Q、电影MD、Canvas节点或主题索引；不启动RESEARCH子Campaign，不执行五轴A/B/H3，不修改十元Canon。
+- **NEXT**：先完成旧银矿散点/历史别名逐文件穷尽排重；再以原片F2核验E02–E04动作顺序、Mahito拒绝继承与塔世界既有崩塌的时间关系、Parakeet King接管对崩塌的实际影响；随后才可冻结独立R1/R2答案并评估holdout。本节不使Q-DYN-002 READY。
