@@ -386,3 +386,17 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - [BFI专题](https://www.bfi.org.uk/sight-and-sound/features/celine-sciamma-petite-maman-mother-invention)
 - [Criterion专题](https://www.criterion.com/current/posts/8153-petite-maman-au-revoir-lenfance)
 - [Montages评论](https://montagesmagazine.com/2021/11/celine-sciammas-petite-maman-portals-to-the-past/)
+
+
+## 21｜2026-11-17｜LOCKE_2013_F1_SOURCE_PACKET｜单一可见行动者与远程并行代价网络（F1接收／非READY）
+
+- **receipt_id**：`Q-DYN-002-APP-FILM-CHAIN-001-LOCKE-F1-INTAKE-20261117`。
+- **唯一来源及去重**：Linear 674-105 comment `f6dfac8d-6844-457a-b19e-3cac603a3a06`（2026-11-17 09:12:38 UTC），GitHub 电影台账 commit `1e3f26e8875ea7b861cead4a29db458c16ae7efd`，当前台账 Blob `5c575f74e64f7f670753991c9d9d663d06456bb7`。两处为同一影片同一F1来源包，仅计一次。旧银矿全库历史别名未穷尽，`ARCHIVE_PENDING`；不建C52/Canvas/WATCH，NEW100仍28/100。
+- **身份/版本**：Locke（2013首映；A24于2014美国发行），Steven Knight执导。年份差异不是两个电影版本。
+- **F1四事件**：E01 Ivan在关键混凝土浇筑前离开工地，赴伦敦陪伴临产的Bethan；E02车载电话向妻子Katrina坦白婚外关系，同时远程指挥Donal交接浇筑；E03失去工作、婚姻关系遭拒绝，仍维持远程责任协调；E04孩子出生、Ivan听到哭声，工作与婚姻未获证明修复。以上来自发行/评论公开资料，不是原片F2逐镜。
+- **前人研究一句话**：C46《罪人》研究电话远程信息误判；本片的候选差异是主角以电话主动分配责任，使家庭、职业与产房三个既有系统并行承受代价，不能因媒介相同就认定机制相同。
+- **机制候选**：`A_SINGLE_VISIBLE_AGENT__B_PARALLEL_COST_CASCADE__R_REMOTE_NETWORK`，`PROPOSED_H`；`CAUSALITY_H`主候选、`ONTOLOGY_H`强竞争，严格五维边与生克补`NOT_ESTABLISHED`，所有人物十元`null`，`dynamic_feeling_curve=NOT_MEASURED`。
+- **最强反证**：婚姻崩解可能主要由既有婚外行为造成，而非当夜赴产房的决定；删除既有婚外行为后多系统代价链可能不成立。不能把单车场景直接归为空间主维，也不能把新生儿出生等同于关系修复。
+- **等级/门禁**：`F1=PASS_PUBLIC`、`F2=null`、`F3=null`、`independent_grade=false`、`tenyuan_film_quality_100=null`；研究准备度68/100与机制增益2/5仅AI候选分，不是E/C或真人验证。Q-DYN-002仍`EVIDENCE_INTAKE_ONLY / NOT_READY / RETURN_SPECIFIC_GAP`；`new_f1_cards=0`、`type_gap_verified=0`。不计Q-FEEL/五轴A-B/跨媒体真人实验，不改Canon，不启动Campaign或H3。
+- **NEXT**：先旧银矿逐文件/别名排重，再以原片F2核验E01–E04及“既有婚外行为”与“当夜选择”的因果归属；独立评估前预锁反例与判断阈值。
+- **F1来源**：[A24](https://a24films.com/films/locke/)；[Screen Daily](https://www.screendaily.com/locke/5059867.article)；[The Arts Desk](https://www.theartsdesk.com/film/locke)。来源原始说明见电影进度台账。
