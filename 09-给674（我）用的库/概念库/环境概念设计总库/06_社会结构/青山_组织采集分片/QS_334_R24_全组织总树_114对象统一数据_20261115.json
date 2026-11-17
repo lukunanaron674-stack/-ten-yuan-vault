@@ -6,7 +6,7 @@
   "description": "Whole fictional-world social influence and organization research atlas. Topical category group edges do not signify legal parent-of.",
   "input_refs": {
     "r21_sha": "6cf558bce4d508fa2ee6beb6cfa398fb6ca4f255",
-    "r22_graph_sha": "9d059c5e55fd83f54ab391478385a16548963c4b",
+    "r22_graph_sha": "3dcd13e973dd85d0b9ca45db866c497bff0afe52",
     "r23_W_sha": "0a7d3673a6b30b52c1bfe233ed65c41ed174a3dd",
     "index_sha": "a46ccfb15c2b536e4f4077855ca5aca8affdf7d1"
   },
@@ -2231,10 +2231,10 @@
       "contribution": "季家掌柜受姚安指示筹办刊印；作者846–847补出东家定价、印刷作坊、三千份印量及刘成团队雕版/报童发行；作者848仅搜索摘要补充上级交办与持续刊印要求，产权人未明",
       "alias": "《金陵晚报》",
       "source_boundary": "821/826证季家掌柜受姚安指示筹办刊印；846–847显示后续印刷、定价与分销团队，847明确刘成属漕帮吕爷手下；848仅搜索摘要可读；853报告漕帮经营及七堂口。制作发行、运营网络与法律产权分层；东家/出资者/产权未证",
-      "relation_primary_type": "commissioned-publication-candidate",
+      "relation_primary_type": "commissioned-publication-and-distribution",
       "relation_primary_target": "QS22-N003",
-      "relation_evidence_status": "OPEN",
-      "parent_relation_caution": "821季家掌柜受姚安指示筹办金陵晚报；商行法律持有仍未证"
+      "relation_evidence_status": "OPERATING_RELATION",
+      "parent_relation_caution": "821/826确认季氏一方受姚安指示承担筹办、刊印与发行；季氏或漕帮的法定产权、股权、永久编辑控制及行政part-of仍未证。"
     },
     {
       "id": "QS21-092",
@@ -2726,7 +2726,7 @@
       "relation_primary_type": null,
       "relation_primary_target": null,
       "relation_evidence_status": "",
-      "parent_relation_caution": "821/826 show Yao An commissioned Ji family shopkeeper to prepare, print and issue Jinling Evening News; operating production relation supported, but legal ownership/shareholding remains OPEN."
+      "parent_relation_caution": "821/826确认季氏一方受姚安指示筹办、刊印并发行《金陵晚报》；实际运营关系已证，法定产权、股权与永久控制仍未证。"
     },
     {
       "id": "QS22-N004",
@@ -3046,15 +3046,15 @@
       "id": "R22-E019",
       "from": "QS22-N003",
       "to": "QS21-091",
-      "type": "publishing-commission; ownership-open",
+      "type": "commissioned-publication-and-distribution; ownership-open",
       "chapter_anchors": [
         "821《憑照》",
         "826《鹽引》",
         "832《貪與癡》",
         "853《季氏》"
       ],
-      "evidence_status": "CANDIDATE_OPEN",
-      "evidence": "821《憑照》：季家掌柜受姚安指示筹备并刊印《金陵晚报》；826《鹽引》掌柜向姚安回报依命刊印（https://ixdzs.tw/read/549077/p825.html；https://ixdzs.tw/read/549077/p830.html，另有https://www.piaotia.com/html/15/15702/13122518.html交叉）。作者853《季氏》另称陈迹潜入《金陵晚报》追查姚安，发现该报“是漕帮办的”；张夏称其原有七个堂口，五个由她查抄、另两个随后由密谍司查抄（https://ixdzs.tw/read/549077/p857.html）。区分筹办/刊印与运营网络；季氏商行或漕帮的产权、股权、法定持有仍未明示，E019继续 CANDIDATE_OPEN。 作者832《贪与痴》补充背景：季氏掌柜在旧院与姚安会面，被姚安点明为司曹壬，并报告“各家”曾赴官署请求胡家襄助；该章未直接提及《金陵晚报》，仅支持掌柜的联络/回报角色，不作为报纸产权或股权证据。",
+      "evidence_status": "OPERATING_RELATION",
+      "evidence": "821《凭照》与826《盐引》确认季氏一方受姚安指示实际筹办、刊印并向商贾流通网络发行《金陵晚报》，掌柜并追查询问报纸者。WebNovel目录平台Chapter 827对应作者826《盐引》，转载页显示号不作作者章号。832仅补充掌柜的司曹壬身份与联络背景；853另报漕帮经营网络。故确认委托出版/发行的实际运营关系；仍不推季氏或漕帮的法定产权、股权、永久编辑控制、后续“东家”身份或行政part-of。",
       "legal_part_of_confirmed": false,
       "graph_visualize_as": "typed_relation_not_legal_direct_inclusion",
       "source_urls": [
@@ -3062,7 +3062,9 @@
         "https://ixdzs.tw/read/549077/p830.html",
         "https://www.piaotia.com/html/15/15702/13122518.html",
         "https://ixdzs.tw/read/549077/p857.html",
-        "https://ixdzs.tw/read/549077/p836.html"
+        "https://ixdzs.tw/read/549077/p836.html",
+        "https://jiuxiaozw.com/book/6aa82390b70a7d0874b36af0/6acc00a8afe281cc0035482a",
+        "https://www.webnovel.com/book/22444590709113204/catalog"
       ]
     },
     {
@@ -3472,23 +3474,16 @@
       "total": 41,
       "statuses": {
         "TEXT_REPORTED": 23,
-        "OPERATING_RELATION": 16,
-        "CANDIDATE_OPEN": 1,
+        "OPERATING_RELATION": 17,
+        "CANDIDATE_OPEN": 0,
         "NEGATIVE_EQUIVALENCE": 1
       },
-      "open_cases": [
-        {
-          "id": "R22-E019",
-          "type": "publishing-commission; ownership-open",
-          "from": "QS22-N003",
-          "to": "QS21-091"
-        }
-      ],
+      "open_cases": [],
       "negative_equivalence": [
         "R22-E035"
       ],
       "not_all_formal_admin_part_of": true,
-      "open_cases_sync_note": "2026-11-17: E039 upgraded to OPERATING_RELATION because author286 directly shows the owner appointing the Longmen Inn manager, directing proceeds and exempting Lamp caravans. Modern legal title/equity remains unproven. Remaining OPEN: E019."
+      "open_cases_sync_note": "2026-11-18: E019 corrected to OPERATING_RELATION because authors821/826 already prove commissioned preparation, printing and distribution by the Ji side. Legal ownership, equity, permanent editorial control and administrative part-of remain explicitly unproven. No current CANDIDATE_OPEN typed relation."
     },
     "world_W": {
       "world_reference": 1000,
@@ -3553,13 +3548,13 @@
       "作者848《阉党细作》本轮仅取得ixdzs搜索摘要，正文页403；只用于补充上级交办/资金线索，不计全文核查。"
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
-    "r22_graph_sha": "9d059c5e55fd83f54ab391478385a16548963c4b",
-    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。；2026-11-17：作者832《贪与痴》正文补充季氏掌柜被点明为司曹壬、并报告各家向胡家寻求襄助的背景；该章未直接提及《金陵晚报》，仅作人物联络角色背景，不作产权证据；E019保持CANDIDATE_OPEN，W不变。；2026-11-17：作者290《后会有期》（WebNovel平台Chapter 291）补充固原龙门客栈隐名东家与掌柜任命权限线索；东家身份、产权、与灯火关系及正式行政父级仍未证，R22-E039继续CANDIDATE_OPEN，QS21-083 W230不变。；2026-11-17：作者407《灯火客栈》可读正文补齐E029/E039原有题名锚，确认昌平与固原节点共享标识、陈设、暗号服务及人员身份识别；仅昌平节点明确出现盘账“东家”，固原产权与法定父级仍OPEN。；2026-11-17：作者128《连根拔起》公开摘要及连续内账语境补强红袖招与景朝军情司的经营/财务掩护关系，E030由CANDIDATE_OPEN升级TEXT_REPORTED；不推法定产权、官制part-of或完整常设指挥链，W170/L不变。；2026-11-17：E034旧平台号113/116/284校正为作者112/115/283，并新增作者285；作者283/285直接确认象甲卫为刘家巨资筹建的刘家精锐，E034升级TEXT_REPORTED。洛城事变后兵权转移，不推法定军籍或永久指挥，W不变。；2026-11-17：作者752《隐入市井》直接确认留都户部与京城户部同品秩、区域职掌分化及实际征税，E033由CANDIDATE_OPEN升级TEXT_REPORTED；法定part-of与完整指挥仍未证，W不变。；2026-11-17：作者818《落脚》直接显示黄山道庭人员在朝天宫实施香火、封山门、任务执行与召集八大总商等现场治理，E032由CANDIDATE_OPEN升级OPERATING_RELATION；产权、土地所有权、法定part-of与永久独占治理仍未证，W不变。；2026-11-17：作者286《东家》（平台Chapter 287）直接显示东家任命小五为固原龙门客栈掌柜、规定收益处置并要求不得拦灯火驼队；结合作者242的灯火身份报告，E039由CANDIDATE_OPEN升级OPERATING_RELATION。现代登记产权、土地/房产所有权、股权及行政part-of仍未证，W不变。",
+    "r22_graph_sha": "3dcd13e973dd85d0b9ca45db866c497bff0afe52",
+    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。；2026-11-17：作者832《贪与痴》正文补充季氏掌柜被点明为司曹壬、并报告各家向胡家寻求襄助的背景；该章未直接提及《金陵晚报》，仅作人物联络角色背景，不作产权证据；E019保持CANDIDATE_OPEN，W不变。；2026-11-17：作者290《后会有期》（WebNovel平台Chapter 291）补充固原龙门客栈隐名东家与掌柜任命权限线索；东家身份、产权、与灯火关系及正式行政父级仍未证，R22-E039继续CANDIDATE_OPEN，QS21-083 W230不变。；2026-11-17：作者407《灯火客栈》可读正文补齐E029/E039原有题名锚，确认昌平与固原节点共享标识、陈设、暗号服务及人员身份识别；仅昌平节点明确出现盘账“东家”，固原产权与法定父级仍OPEN。；2026-11-17：作者128《连根拔起》公开摘要及连续内账语境补强红袖招与景朝军情司的经营/财务掩护关系，E030由CANDIDATE_OPEN升级TEXT_REPORTED；不推法定产权、官制part-of或完整常设指挥链，W170/L不变。；2026-11-17：E034旧平台号113/116/284校正为作者112/115/283，并新增作者285；作者283/285直接确认象甲卫为刘家巨资筹建的刘家精锐，E034升级TEXT_REPORTED。洛城事变后兵权转移，不推法定军籍或永久指挥，W不变。；2026-11-17：作者752《隐入市井》直接确认留都户部与京城户部同品秩、区域职掌分化及实际征税，E033由CANDIDATE_OPEN升级TEXT_REPORTED；法定part-of与完整指挥仍未证，W不变。；2026-11-17：作者818《落脚》直接显示黄山道庭人员在朝天宫实施香火、封山门、任务执行与召集八大总商等现场治理，E032由CANDIDATE_OPEN升级OPERATING_RELATION；产权、土地所有权、法定part-of与永久独占治理仍未证，W不变。；2026-11-17：作者286《东家》（平台Chapter 287）直接显示东家任命小五为固原龙门客栈掌柜、规定收益处置并要求不得拦灯火驼队；结合作者242的灯火身份报告，E039由CANDIDATE_OPEN升级OPERATING_RELATION。现代登记产权、土地/房产所有权、股权及行政part-of仍未证，W不变。；2026-11-18：E019依据作者821《凭照》与826《盐引》既有证据，由CANDIDATE_OPEN纠正为OPERATING_RELATION；确认季氏一方受姚安指示承担筹办、刊印与发行，不推产权、股权、永久编辑控制或行政part-of。对象、W、端点与Canvas拓扑不变。",
     "typed_relations": 41,
     "relation_records": 41,
-    "candidate_open_relations": 1,
+    "candidate_open_relations": 0,
     "text_reported_relations": 23,
-    "operating_relations": 16,
+    "operating_relations": 17,
     "schema_normalization_note": "2026-11-17: R22-E040 imported legacy keys (source/target/relation_type/chapters/explanation) normalized to the R24 typed_relations schema (from/to/type/chapter_anchors/evidence). Stable ID, endpoints, relation meaning, status, source URLs and non-subordination boundary are unchanged; no object, relation, W score or Canvas topology was added or removed."
   },
   "source_coverage_updates": [
@@ -3900,6 +3895,27 @@
         "https://www.webnovel.com/book/22444590709113204/catalog",
         "https://ttks.tw/novel/chapters/qingshan/453.html"
       ]
+    },
+    {
+      "date": "2026-11-18",
+      "kind": "RELATION_CLASSIFICATION_CORRECTION",
+      "relation_id": "R22-E019",
+      "chapter_anchors": [
+        "821《凭照》",
+        "826《盐引》",
+        "832《贪与痴》",
+        "853《季氏》"
+      ],
+      "change": "CANDIDATE_OPEN -> OPERATING_RELATION",
+      "confirmed": "季氏一方受姚安指示实际筹办、刊印并发行《金陵晚报》",
+      "not_inferred": [
+        "法定产权",
+        "股权",
+        "永久编辑控制",
+        "后续东家身份",
+        "行政part-of"
+      ],
+      "evidence_card": "QS_334_R24_E019_作者826盐引_季氏刊印运营关系分级纠错_20261118.md"
     }
   ]
 }
