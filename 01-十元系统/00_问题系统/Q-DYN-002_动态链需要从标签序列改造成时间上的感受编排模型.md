@@ -7,7 +7,7 @@ volume: 9
 impact_weight: 9
 status: OPEN
 problem_state_version: v2
-updated: 2026-10-07
+updated: 2026-11-17
 ---
 
 # Q-DYN-002｜动态链需要从标签序列改造成时间上的感受编排模型
@@ -235,3 +235,38 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - **分级与计数**：F1=SOURCE_PACKET_COMPLETE__ARCHIVE_PENDING；F2=null；F3=null；dynamic_feeling_curve=NOT_MEASURED；human_feeling_profile=null；MAE=null；Top1=null；Top3=null；C-film=UNCHANGED；C-feeling=UNCHANGED；independent_grade=false；assessment_mode=ASSISTED_SEQUENTIAL。674-105中的research_readiness_100=70/100仅为AI_SCORE，mechanism_gain_0_5=2/5仅为AI-H，不是实证等级。NEW100仍28/100；new_f1_cards=0；type_gap_verified=0。
 - **裁决**：EVIDENCE_INTAKE_ONLY / NOT_READY / RETURN_SPECIFIC_GAP。不创建新Q、电影MD或Canvas节点；不启动RESEARCH子Campaign，不执行五轴A/B或H3，不修改十元Canon。
 - **NEXT**：先完成旧银矿散点/历史别名穷尽排重；再以原片F2核验E02知识变化、E03放映后的真实反应及E04职业入口是否独立；若要主张形式→感受，必须另建盲化真人F3方案并与电影剧情分析分账。本节不使Q-DYN-002 READY。
+
+
+## 13｜2026-11-17｜THE_LOST_DAUGHTER_2021_F1_SOURCE_PACKET｜双时间状态与物件镜像（F1接收／非READY）
+
+- **唯一来源增量**：Linear 674-105 comment `b7438c86-0e68-45f4-8991-d6664eb8012f`（2026-11-17 01:25:33 UTC）；电影进度台账对应 GitHub commit `7dc417b7ebd9385392ffc6c27899786113c01f52`、blob `3fdd442512b1d85ec5d4965ba3b06bdb0fe38fab`。已按该 commit 与后续台账版本回读；Linear 与 GitHub 是同一F1来源包，只计一条，不重复计数。
+- **身份/版本边界**：The Lost Daughter /《暗处的女儿》（亦见《失落的女儿》）/ 2021 / Maggie Gyllenhaal；研究对象只限2021电影版，不把Elena Ferrante原著小说的结尾混入电影事实。电影版登记片长121分钟；USER已看状态NOT_CONFIRMED。旧银矿散点仍未逐文件穷尽，`DUPLICATE_CHECK=WATCH_C01-C51_REPO_CODESEARCH_PASS__ARCHIVE_PENDING`；不创建C52、不增加NEW100正式数量。
+- **F1事件账（公开来源，不是原片逐镜/F2）**：
+  - **E01｜当下娃娃事件**：Leda在海滩找到走失的Elena并将她交还Nina，随后私自拿走Elena的娃娃；孩子继续寻找娃娃，Leda主动制造隐瞒。
+  - **E02｜过去的高代价选择**：年轻Leda在育儿压力、学术事业与私人欲望之间挣扎，曾离开丈夫和女儿一段时间；电影以年轻/年长演员呈现同一人物的不同时间状态。电影版来源将离开时长记为三年，不以原著版本替代。
+  - **E03｜非计划的自我揭露**：Leda与Nina谈话时意外说出自己曾离开女儿多年；导演访谈称该告白不是预先设计的计划性揭露。
+  - **E04｜归还、暴力后果与开放结尾**：Leda归还娃娃并承认拿走它，Nina以帽针刺伤Leda；Leda驾车离开并发生事故，随后在海滩醒来，接听成年女儿电话并剥橙子。电话与橙子是可观察结尾元素，不足以证明母女关系已完成修复，也不锁定为客观超自然事件。
+- **来源与前人研究一句话**：身份/版本以Venice Biennale与Netflix Media Center为准，剧情和形式交叉参考The Guardian、BFI/Sight and Sound、Digital Spy，创作者意图参考Maggie Gyllenhaal在Washington Post与Vanity Fair的访谈；前人C30《偶然与想象》研究信息碰撞、C37《教师休息室》研究追索真相反噬信任，本片候选增量是“同一人物的两种时间状态通过物件发生镜像，告白后仍不等于关系修复”。
+- **动态候选**：`当下观察与娃娃失窃 → 过去母职选择回返 → 物件镜像H → 非计划告白 → 娃娃归还/关系冲突 → 身体代价 → 电话与橙子开放结尾`。E01与E02之间的镜像/触发只标H，不写成已证实严格因果边；该链是F1叙事行动顺序，不是观众感受曲线。
+- **机制候选**：`type_gap_id=R_SAME_PERSON_DUAL_STATE__OBJECT_TRIGGERED_PAST_PRESENT_REENACTMENT`；`novelty_delta=OLD_R_CANDIDATE_NEW_OBJECT_MEDIATION_MECHANISM`；`type_status=PROPOSED_H`，不是正式新类型。竞争解释包括娃娃只是高辨识度视觉母题、告白并未构成修复、结尾电话/橙子可能具有主观或开放含义。
+- **分轨/门禁**：`PLOT_ACTION=E01–E04`；`ROLE_TENYUAN=null`；`THEME_FILM=ONTOLOGY_H/CAUSALITY_H`；`theme_edges=NOT_ESTABLISHED`；`L2_CLAIM=NONE`；`F1=PASS_PUBLIC`；`F2=null`；`F3=null`；`dynamic_feeling_curve=NOT_MEASURED`；`independent_pass=NOT_SCORED`。研究准备度76/100仅为AI_SCORE，机制增益2/5仅为AI-H，不能当C-film或感受实验成绩。
+- **反证/停止条件**：若F2显示娃娃的拿走/归还没有改变Leda与Nina的行为链，物件中介降级为视觉母题；若移除过去离家事件后当前告白仍有同等结构必要性，跨时间镜像机制降级；若将电话结尾直接解释为完整修复，须有额外原片证据。
+- **计数与裁决**：`ARCHIVE_PENDING`；`new_f1_cards=0`；`NEW100=28/100`不变；`type_gap_verified=0`。仅作为Q-DYN-002的F1来源输入，不计Q-FEEL、Q-DSL、Q-GEN、五轴A/B或跨媒体实验。无新电影MD/Canvas节点/主题索引，不启动RESEARCH子Campaign，不执行H3。
+- **NEXT**：等待历史别名穷尽去重、原片F2核验及独立预锁R1/R2；本节不使Q-DYN-002 READY。
+
+## 14｜2026-11-17｜THE_TASTE_OF_THINGS_2023_F1_SOURCE_PACKET｜共同实践与失去后的技艺传递（F1接收／非READY）
+
+- **唯一来源增量**：Linear 674-105 comment `e72621c0-89cb-4b8d-93f8-b737193a25c9`（2026-11-17 02:17:14 UTC）；电影进度台账 GitHub commit `03072fb684fff1c3882276d8b3ccad7b9b1537a9`，当前对应台账 blob `bf9acecbae70185f24a57705ce64dd28dc68f353`。已按两个 commit ref 回读确认：Lost Daughter先进入台账，Taste of Things后进入同一台账；两条Linear评论与GitHub台账是各自对应的来源包，不跨系统重复计数。
+- **身份/版本边界**：La Passion de Dodin Bouffant / The Taste of Things / Le Pot-au-Feu /《火上锅》（中文发行名仍待统一核对）/ 2023 / Trần Anh Hùng。Cannes档案记134分钟，Gaumont与部分评论记135分钟，登记为元数据1分钟差异，不推断存在不同剪辑版；只研究2023电影版，不混入原著小说。USER已看状态NOT_CONFIRMED。旧银矿散点池与历史别名尚未逐文件穷尽，`DUPLICATE_CHECK=WATCH_C01-C51_REPO_CODESEARCH_PASS__ARCHIVE_PENDING`；不创建C52、不增加NEW100正式数量。
+- **F1事件账（公开资料，不是原片逐镜/F2）**：
+  - **E01｜二十年共同实践**：Eugénie与Dodin长期共同准备宴席；Dodin构思菜单、Eugénie执行，反复协作与品尝构成非语言亲密媒介。开场以近乎无对白的备餐呈现实践，Eugénie出现昏厥。
+  - **E02｜照料角色反转**：Eugénie长期拒绝求婚并珍视自由；病情持续后，Dodin首次为她准备晚餐，随后她接受求婚。该变化不证明病情改善或共同未来已经实现。
+  - **E03｜死亡中断搭档，实践经他人延续**：Eugénie在婚期宣布后去世；Dodin悲伤并拒绝替代厨师，后来与Pauline寻找新厨师，并继续传授/延续厨房实践。技艺可传递，但原共同创作搭档不可被新厨师替代。
+  - **E04｜身份问答保持开放**：结尾空厨房之后出现Dodin与Eugénie关于妻子/厨师身份的对话；它究竟是回忆、想象还是重逢不锁定为客观事实。
+- **来源与前人研究一句话**：Cannes、Gaumont、Garance法国电影遗产目录提供身份/发行和剧情基线，Eater、The Guardian、Old Yorker交叉补充事件；C24《机器人之梦》研究共同记忆/音乐桥，C30《偶然与想象》研究偶遇改变关系，C37《教师休息室》研究追索真相反噬信任，本片候选增量是“重复共同创作实践成为非语言亲密语言，死亡后技艺可传承但不能替代原搭档”。
+- **动态候选**：`长期共同实践 → 身体异常进入日常 → 照料角色反转/接受求婚 → 不可逆失去搭档 → 拒绝替代 → 教学与新协作恢复实践`。E04的身份问答只作为开放结尾，不据此添加超自然或关系复原边。该链是F1叙事行动顺序，不是观众感受曲线。
+- **机制候选**：`type_gap_id=R_SHARED_PRACTICE_AS_INTIMACY__C_SKILL_TRANSMISSION_AFTER_IRREPLACEABLE_LOSS`；`novelty_delta=REPEATED_CO_CREATED_CRAFT_AS_NONVERBAL_RELATIONSHIP_LANGUAGE_THEN_POST_LOSS_TRANSMISSION_WITHOUT_PERSON_REPLACEMENT`；`type_status=PROPOSED_H`，属于旧关系/传承家族的新机制候选，不是正式新类型。与《A Real Pain》“情感回连成立但生活整合未完成”不同：本片是共同实践延续而个人搭档不可替代。
+- **分轨/门禁**：`PLOT_ACTION=E01–E04`；`ROLE_TENYUAN=null`；`THEME_FILM=ONTOLOGY_H/FATE_H`竞争；`theme_edges=NOT_ESTABLISHED`；`L2_CLAIM=NONE`；`F1=PASS_PUBLIC`；`F2=null`；`F3=null`；`dynamic_feeling_curve=NOT_MEASURED`；`independent_pass=NOT_SCORED`。研究准备度74/100仅为AI_SCORE，机制增益3/5仅为AI-H，不能当C-film或感受实验成绩。
+- **反证/停止条件**：若F2显示共同烹饪并非两人关系主要行动媒介，或Pauline学习与Eugénie离世无结构性联系，机制降级为职业背景；若新厨师被叙事明确设定为Eugénie可替代复制，需撤回“个人不可替代”判断；若移除Pauline/Adèle后主关系仍完整，技艺传承只作为后段回收而非全片主导机制。
+- **计数与裁决**：`ARCHIVE_PENDING`；`new_f1_cards=0`；`NEW100=28/100`不变；`type_gap_verified=0`。仅作为Q-DYN-002的F1来源输入，不计Q-FEEL、Q-DSL、Q-GEN、五轴A/B或跨媒体实验。无新电影MD/Canvas节点/主题索引，不启动RESEARCH子Campaign，不执行H3。
+- **NEXT**：等待历史别名穷尽去重、原片F2核验与独立预锁R1/R2；本节不使Q-DYN-002 READY。
