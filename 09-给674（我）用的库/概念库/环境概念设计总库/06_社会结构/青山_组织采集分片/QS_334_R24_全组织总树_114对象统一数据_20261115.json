@@ -6,8 +6,8 @@
   "description": "Whole fictional-world social influence and organization research atlas. Topical category group edges do not signify legal parent-of.",
   "input_refs": {
     "r21_sha": "6cf558bce4d508fa2ee6beb6cfa398fb6ca4f255",
-    "r22_graph_sha": "d1a546a60a2f8ae06d56e0a166ef3e673c91f55d",
-    "r23_W_sha": "0a24f544644d0334697a97479dbd6e409e06ba29",
+    "r22_graph_sha": "b7fc94ebb6ae041aae97fd41c605599629fc2110",
+    "r23_W_sha": "0a7d3673a6b30b52c1bfe233ed65c41ed174a3dd",
     "index_sha": "a46ccfb15c2b536e4f4077855ca5aca8affdf7d1"
   },
   "groups": [
@@ -1808,10 +1808,10 @@
       "score_confidence": "H",
       "old_W": 390,
       "W_delta": 200,
-      "chapters": "185,541,554,848,861",
-      "contribution": "漕帮跨地区漕运资源、帮众动员及官府改制压力；作者861《过渡》出现其烧船后金陵周边摆渡能力骤降、运价陡升的短期社会资源冲击",
+      "chapters": "185,541,554,846,847,848,861",
+      "contribution": "漕帮跨地区漕运资源、帮众动员及官府改制压力；作者846–848补出成员刘成团队承担金陵晚报印刷/发行执行，体现跨行业任务承接，不证明全帮产权",
       "alias": "漕帮",
-      "source_boundary": "四梁八柱为内部职位结构；朝廷拟授军职不等于已改编。作者861仅有WebNovel公开预览至第50行，烧船事实由陈迹对话报告；现场渡船短缺与涨价有呈现，但不外推为长期治理或法定隶属。",
+      "source_boundary": "四梁八柱为内部职位结构；朝廷拟授军职不等于已改编。作者846–847呈现刘成团队印刷、雕版与报童发行，847明确刘成为漕帮吕爷手下成员；848仅搜索摘要，称上级交办与有人付钱；不据此推全帮拥有报纸、法定直属或长期控制。作者861仍仅WebNovel公开预览，不外推长期运输治理。",
       "relation_primary_type": "independent-private-network",
       "relation_primary_target": null,
       "relation_evidence_status": "CLASSIFIED",
@@ -2203,10 +2203,10 @@
       "score_confidence": "M",
       "old_W": null,
       "W_delta": null,
-      "chapters": "821,832,846",
-      "contribution": "季家掌柜受姚安指示筹办刊印；853报告其七个堂口由张夏与密谍司先后查抄，呈现报纸运营网络线索",
+      "chapters": "821,832,846,847,848,853",
+      "contribution": "季家掌柜受姚安指示筹办刊印；作者846–847补出东家定价、印刷作坊、三千份印量及刘成团队雕版/报童发行；作者848仅搜索摘要补充上级交办与持续刊印要求，产权人未明",
       "alias": "《金陵晚报》",
-      "source_boundary": "821/826证季家掌柜筹办印刷；853陈迹称金陵晚报由漕帮经营、张夏称有七堂口并有两方先后查抄。制作发行、运营网络与法律产权分层；产权/股权未证",
+      "source_boundary": "821/826证季家掌柜受姚安指示筹办刊印；846–847显示后续印刷、定价与分销团队，847明确刘成属漕帮吕爷手下；848仅搜索摘要可读；853报告漕帮经营及七堂口。制作发行、运营网络与法律产权分层；东家/出资者/产权未证",
       "relation_primary_type": "commissioned-publication-candidate",
       "relation_primary_target": "QS22-N003",
       "relation_evidence_status": "OPEN",
@@ -3295,15 +3295,21 @@
       "id": "R22-E036",
       "from": "QS21-075",
       "to": "QS21-091",
-      "type": "reported-operational-network",
+      "type": "member-level-printing-and-distribution-operation",
       "chapter_anchors": [
+        "846《乾乾淨淨》",
+        "847《漕幫》",
+        "848《閹黨細作》（SEARCH_EXCERPT_ONLY）",
         "853《季氏》"
       ],
-      "evidence_status": "TEXT_REPORTED",
-      "evidence": "作者853《季氏》中陈迹称金陵晚报是漕帮经营；张夏说该报有七个堂口、她查抄五个，之后密谍司查抄两个。属正文人物报告与行动叙述，支持报纸运营网络与漕帮的报告性关联；不证明法定产权、商行股权或金陵晚报整体归漕帮所有。",
+      "evidence_status": "OPERATING_RELATION",
+      "evidence": "作者846《乾乾淨淨》显示《金陵晚报》由报童街头销售、售价由“东家”决定；豆腐巷连通四处宅子内有数十人和压印设备，夜间雕版、制墨、压印并按三千份计数。作者847《漕帮》显示刘成主事雕版、组织报纸制作与销售；他称原头目被抓后接手，并明确自称漕帮吕爷手下成员。作者848《阉党细作》搜索摘要补充刘成称“上面”交办、有人付钱，并要求金陵晚报不能停刊；直接页面403，仅作SEARCH_EXCERPT_ONLY。作者853《季氏》既有证据称金陵晚报由漕帮经营且有七个堂口。合并支持漕帮成员团队实际承担该报印刷/发行执行，故状态升级为OPERATING_RELATION；但“东家”、出资者、上级身份与法律产权均未明，不证明漕帮全体拥有报纸或法定隶属。",
       "legal_part_of_confirmed": false,
-      "graph_visualize_as": "typed_relation_not_legal_direct_inclusion",
+      "graph_visualize_as": "member_level_press_operation_not_ownership_or_administrative_subordination",
       "source_urls": [
+        "https://ixdzs.tw/read/549077/p850.html",
+        "https://ixdzs.tw/read/549077/p851.html",
+        "https://ixdzs.tw/read/549077/p852.html",
         "https://ixdzs.tw/read/549077/p857.html"
       ]
     },
@@ -3416,8 +3422,8 @@
     "relationships": {
       "total": 41,
       "statuses": {
-        "TEXT_REPORTED": 21,
-        "OPERATING_RELATION": 13,
+        "TEXT_REPORTED": 20,
+        "OPERATING_RELATION": 14,
         "CANDIDATE_OPEN": 6,
         "NEGATIVE_EQUIVALENCE": 1
       },
@@ -3524,16 +3530,17 @@
       "作者851《造反》、853《季氏》、854《杀姚安》已取得可读镜像；R20其它章须按具体作者章题逐页判断，856正文源污染、857–860目录级",
       "旧859章历史快照与新R20至作者860章并存，不推小说已完结",
       "R24作者862《娘》：WebNovel官方目录对应平台Chapter 863；正文仅第9–41行可读，后续锁章，状态BODY_EXCERPT_ONLY。片段出现邮驿/琅琊驿社会制度线索，但未独立核证，暂不增对象/关系/W。",
-      "R24作者863《他心通》：最新目录显示平台Chapter 864/作者题名863；当前只有目录题名交叉（INDEX_ONLY），正文未取得，不据标题建组织、关系或W。"
+      "R24作者863《他心通》：最新目录显示平台Chapter 864/作者题名863；当前只有目录题名交叉（INDEX_ONLY），正文未取得，不据标题建组织、关系或W。",
+      "作者848《阉党细作》本轮仅取得ixdzs搜索摘要，正文页403；只用于补充上级交办/资金线索，不计全文核查。"
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
-    "r22_graph_sha": "d1a546a60a2f8ae06d56e0a166ef3e673c91f55d",
-    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。",
+    "r22_graph_sha": "b7fc94ebb6ae041aae97fd41c605599629fc2110",
+    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。",
     "typed_relations": 41,
     "relation_records": 41,
     "candidate_open_relations": 6,
-    "text_reported_relations": 21,
-    "operating_relations": 13
+    "text_reported_relations": 20,
+    "operating_relations": 14
   },
   "source_coverage_updates": [
     {
@@ -3611,6 +3618,58 @@
         "不证明军情司拥有/管理报社或长期控制通信渠道",
         "不新增袍哥会独立对象"
       ]
+    },
+    {
+      "author_chapter": 846,
+      "title": "乾乾淨淨",
+      "platform_chapter": null,
+      "status": "TARGETED_BODY_PAGE_READ_NOT_STRICT_PASS",
+      "readable_range": "ixdzs正文页可读第0–151行；页末有下一章链接，不计严格全文PASS",
+      "source_urls": [
+        "https://ixdzs.tw/read/549077/p850.html"
+      ],
+      "finding": "金陵晚报报童售价由东家决定；豆腐巷连通四宅的院落有数十名人员与压印设备，夜间雕版、制墨、压印并按三千份计数。",
+      "classification_candidate": "金陵晚报生产/分销执行链",
+      "promoted_to_object": false,
+      "W_assigned": false,
+      "relations_added": false,
+      "relations_updated": true,
+      "relation_id": "R22-E036"
+    },
+    {
+      "author_chapter": 847,
+      "title": "漕幫",
+      "platform_chapter": null,
+      "status": "TARGETED_BODY_PAGE_READ_NOT_STRICT_PASS",
+      "readable_range": "ixdzs正文页可读第0–175行；页末有下一章链接，不计严格全文PASS",
+      "source_urls": [
+        "https://ixdzs.tw/read/549077/p851.html"
+      ],
+      "finding": "刘成主事雕版、组织金陵晚报印刷与销售；称原头目被抓后接手，并明确自称漕帮吕爷手下成员。",
+      "classification_candidate": "漕帮成员团队参与金陵晚报印刷/发行",
+      "promoted_to_object": false,
+      "W_assigned": false,
+      "relations_added": false,
+      "relations_updated": true,
+      "relation_id": "R22-E036"
+    },
+    {
+      "author_chapter": 848,
+      "title": "閹黨細作",
+      "platform_chapter": null,
+      "status": "SEARCH_EXCERPT_ONLY",
+      "readable_range": "ixdzs搜索摘要可读；正文页直接打开返回403",
+      "source_urls": [
+        "https://ixdzs.tw/read/549077/p852.html",
+        "https://www.xiuzhenxs.com/book_31923/"
+      ],
+      "finding": "搜索摘要中刘成称印报由上面交办、有人付钱便执行，并称上面要求金陵晚报至少持续到月底；只作补充线索。",
+      "classification_candidate": "印报任务的上级交办/资金线索（身份未明）",
+      "promoted_to_object": false,
+      "W_assigned": false,
+      "relations_added": false,
+      "relations_updated": true,
+      "relation_id": "R22-E036"
     }
   ]
 }
