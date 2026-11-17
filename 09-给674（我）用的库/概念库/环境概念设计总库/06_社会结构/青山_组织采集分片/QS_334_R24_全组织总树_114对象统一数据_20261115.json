@@ -6,7 +6,7 @@
   "description": "Whole fictional-world social influence and organization research atlas. Topical category group edges do not signify legal parent-of.",
   "input_refs": {
     "r21_sha": "6cf558bce4d508fa2ee6beb6cfa398fb6ca4f255",
-    "r22_graph_sha": "6b34fdcdfc27c3a9f009e14d1875e328e2fcf8b4",
+    "r22_graph_sha": "692abfb57b6e8ed887b44260aac176d145a697ca",
     "r23_W_sha": "0a7d3673a6b30b52c1bfe233ed65c41ed174a3dd",
     "index_sha": "a46ccfb15c2b536e4f4077855ca5aca8affdf7d1"
   },
@@ -3253,14 +3253,14 @@
       "id": "R22-E032",
       "from": "QS21-049",
       "to": "QS21-104",
-      "type": "site-governance-candidate",
+      "type": "on-site-religious-governance; ownership-open",
       "chapter_anchors": [
         "818《落脚》",
         "826《盐引》",
         "840《无人试剑》"
       ],
-      "evidence_status": "CANDIDATE_OPEN",
-      "evidence": "818《落脚》已有现场法旨/任务执行线索。作者826《盐引》新增：季氏掌柜转述朝天宫来了黄山道庭二弟子张宁，奉法旨请当地协助寻人，并称张黎已不在朝天宫；这是人物转述，不能证明产权或长期治理。PT文学与九霄同章转载可读，WebNovel目录平台槽827标作者826《盐引》。840《无人试剑》仅证黄山道庭举办普天大醮，未证地点就是朝天宫。新增材料只支持人员与任务活动关联，不证明朝天宫常设归属、产权或法定直属；仍CANDIDATE_OPEN。",
+      "evidence_status": "OPERATING_RELATION",
+      "evidence": "作者818《落脚》正文明确朝天宫大通明宝殿、山门与香火现场；张黎称“我道庭香火千千万万”，张宁与多名黄山道士共同执行上尊法旨，并命“封山门，召八大总商来见”，弟子应命。这直接确认黄山道庭在朝天宫实施香火、山门、任务与人员召集层面的现场宗教治理。作者826《盐引》补充张宁在朝天宫奉法旨行动。确认OPERATING_RELATION；不证明法定产权、土地所有权、行政part-of、永久独占治理或完整财务/人事隶属。",
       "legal_part_of_confirmed": false,
       "graph_visualize_as": "typed_relation_not_legal_direct_inclusion",
       "source_urls": [
@@ -3470,8 +3470,8 @@
       "total": 41,
       "statuses": {
         "TEXT_REPORTED": 23,
-        "OPERATING_RELATION": 14,
-        "CANDIDATE_OPEN": 3,
+        "OPERATING_RELATION": 15,
+        "CANDIDATE_OPEN": 2,
         "NEGATIVE_EQUIVALENCE": 1
       },
       "open_cases": [
@@ -3480,12 +3480,6 @@
           "type": "publishing-commission; ownership-open",
           "from": "QS22-N003",
           "to": "QS21-091"
-        },
-        {
-          "id": "R22-E032",
-          "type": "site-governance-candidate",
-          "from": "QS21-049",
-          "to": "QS21-104"
         },
         {
           "id": "R22-E039",
@@ -3498,7 +3492,7 @@
         "R22-E035"
       ],
       "not_all_formal_admin_part_of": true,
-      "open_cases_sync_note": "2026-11-17: E033 upgraded to TEXT_REPORTED because author752 directly reports equal rank, differentiated remit and actual tax enforcement. Legal part-of or personnel command remains unproven. Remaining OPEN: E019, E032, E039."
+      "open_cases_sync_note": "2026-11-17: E032 upgraded to OPERATING_RELATION because author818 directly shows Huangshan Daoting personnel controlling Chaotian Temple incense, gate closure, task execution and merchant summons on site. Ownership/legal part-of remains unproven. Remaining OPEN: E019, E039."
     },
     "world_W": {
       "world_reference": 1000,
@@ -3563,13 +3557,13 @@
       "作者848《阉党细作》本轮仅取得ixdzs搜索摘要，正文页403；只用于补充上级交办/资金线索，不计全文核查。"
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
-    "r22_graph_sha": "6b34fdcdfc27c3a9f009e14d1875e328e2fcf8b4",
-    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。；2026-11-17：作者832《贪与痴》正文补充季氏掌柜被点明为司曹壬、并报告各家向胡家寻求襄助的背景；该章未直接提及《金陵晚报》，仅作人物联络角色背景，不作产权证据；E019保持CANDIDATE_OPEN，W不变。；2026-11-17：作者290《后会有期》（WebNovel平台Chapter 291）补充固原龙门客栈隐名东家与掌柜任命权限线索；东家身份、产权、与灯火关系及正式行政父级仍未证，R22-E039继续CANDIDATE_OPEN，QS21-083 W230不变。；2026-11-17：作者407《灯火客栈》可读正文补齐E029/E039原有题名锚，确认昌平与固原节点共享标识、陈设、暗号服务及人员身份识别；仅昌平节点明确出现盘账“东家”，固原产权与法定父级仍OPEN。；2026-11-17：作者128《连根拔起》公开摘要及连续内账语境补强红袖招与景朝军情司的经营/财务掩护关系，E030由CANDIDATE_OPEN升级TEXT_REPORTED；不推法定产权、官制part-of或完整常设指挥链，W170/L不变。；2026-11-17：E034旧平台号113/116/284校正为作者112/115/283，并新增作者285；作者283/285直接确认象甲卫为刘家巨资筹建的刘家精锐，E034升级TEXT_REPORTED。洛城事变后兵权转移，不推法定军籍或永久指挥，W不变。；2026-11-17：作者752《隐入市井》直接确认留都户部与京城户部同品秩、区域职掌分化及实际征税，E033由CANDIDATE_OPEN升级TEXT_REPORTED；法定part-of与完整指挥仍未证，W不变。",
+    "r22_graph_sha": "692abfb57b6e8ed887b44260aac176d145a697ca",
+    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。；2026-11-17：作者832《贪与痴》正文补充季氏掌柜被点明为司曹壬、并报告各家向胡家寻求襄助的背景；该章未直接提及《金陵晚报》，仅作人物联络角色背景，不作产权证据；E019保持CANDIDATE_OPEN，W不变。；2026-11-17：作者290《后会有期》（WebNovel平台Chapter 291）补充固原龙门客栈隐名东家与掌柜任命权限线索；东家身份、产权、与灯火关系及正式行政父级仍未证，R22-E039继续CANDIDATE_OPEN，QS21-083 W230不变。；2026-11-17：作者407《灯火客栈》可读正文补齐E029/E039原有题名锚，确认昌平与固原节点共享标识、陈设、暗号服务及人员身份识别；仅昌平节点明确出现盘账“东家”，固原产权与法定父级仍OPEN。；2026-11-17：作者128《连根拔起》公开摘要及连续内账语境补强红袖招与景朝军情司的经营/财务掩护关系，E030由CANDIDATE_OPEN升级TEXT_REPORTED；不推法定产权、官制part-of或完整常设指挥链，W170/L不变。；2026-11-17：E034旧平台号113/116/284校正为作者112/115/283，并新增作者285；作者283/285直接确认象甲卫为刘家巨资筹建的刘家精锐，E034升级TEXT_REPORTED。洛城事变后兵权转移，不推法定军籍或永久指挥，W不变。；2026-11-17：作者752《隐入市井》直接确认留都户部与京城户部同品秩、区域职掌分化及实际征税，E033由CANDIDATE_OPEN升级TEXT_REPORTED；法定part-of与完整指挥仍未证，W不变。；2026-11-17：作者818《落脚》直接显示黄山道庭人员在朝天宫实施香火、封山门、任务执行与召集八大总商等现场治理，E032由CANDIDATE_OPEN升级OPERATING_RELATION；产权、土地所有权、法定part-of与永久独占治理仍未证，W不变。",
     "typed_relations": 41,
     "relation_records": 41,
-    "candidate_open_relations": 3,
+    "candidate_open_relations": 2,
     "text_reported_relations": 23,
-    "operating_relations": 14,
+    "operating_relations": 15,
     "schema_normalization_note": "2026-11-17: R22-E040 imported legacy keys (source/target/relation_type/chapters/explanation) normalized to the R24 typed_relations schema (from/to/type/chapter_anchors/evidence). Stable ID, endpoints, relation meaning, status, source URLs and non-subordination boundary are unchanged; no object, relation, W score or Canvas topology was added or removed."
   },
   "source_coverage_updates": [
@@ -3882,6 +3876,19 @@
       "source_urls": [
         "https://www.webnovel.com/book/22444590709113204/catalog",
         "https://czbooks.net/n/s6ojkc/z515ph8?chapterNumber=758"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "chapters": [
+        "作者818《落脚》"
+      ],
+      "level": "READABLE_MIRROR_BODY_WITH_EXISTING_TITLE_MAPPING",
+      "change": "R22-E032 evidence classification corrected from CANDIDATE_OPEN to OPERATING_RELATION",
+      "evidence": "朝天宫现场出现黄山道庭香火归属表述、黄山道士共同执行、封山门与召集八大总商，支持实际现场宗教治理；不证明产权或法定直属。",
+      "source_urls": [
+        "https://ixdzs.tw/read/549077/p822.html",
+        "https://ixdzs.tw/read/549077/p830.html"
       ]
     }
   ]
