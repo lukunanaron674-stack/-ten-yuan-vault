@@ -1601,18 +1601,22 @@
       "target": "QS21-089",
       "relation_type": "covert-message-carrier",
       "chapters": [
-        "作者517《棋手》（WebNovel平台Chapter 518）"
+        "作者517《棋手》（WebNovel平台Chapter 518）",
+        "作者519《凭姨》（WebNovel平台Chapter 520）"
       ],
       "evidence_status": "OPERATING_RELATION",
-      "explanation": "作者517《棋手》中，第七版时政策论的民间投稿以藏头法写出“今夜子时，劫周传”；陈迹明确判断这是军情司用藏头法传出的消息。同章镜像后段将该报编辑部定位为袍哥经营的《京城晨报》，并提及袍哥会登记文章来源。结合R13既有初勘，支持一次通过京城晨报刊载文章传递军情司消息的操作关系；投稿者身份、编辑者是否知情及长期渠道均未证。",
+      "explanation": "作者517《棋手》中，第七版时政策论的民间投稿以藏头法写出“今夜子时，劫周传”；陈迹明确判断这是军情司用藏头法传出的消息。同章镜像后段将该报编辑部定位为袍哥经营的《京城晨报》，并提及袍哥会登记文章来源。作者519《凭姨》后续搜索摘要称军情司已试探《京城晨报》是否可靠，随后重新静默，等待下次启用该情报渠道。结合R13既有初勘，支持一次已观察到的藏头消息传递及一个被试探、暂时静默、待再次启用的情报渠道；但作者519仅SEARCH_EXCERPT_ONLY，正文直开403，不计全文核验。投稿者身份、编辑者是否知情、重复传递是否发生及长期稳定性均未证。",
       "source_urls": [
         "https://www.webnovel.com/book/青山_22444590709113204/517%E3%80%81%E6%A3%8B%E6%89%8B_92513916134941518",
         "https://m.xsw.tw/1721636/254455394.html",
-        "https://czbooks.net/n/s6ojkc/ucpna8gf?chapterNumber=524"
+        "https://czbooks.net/n/s6ojkc/ucpna8gf?chapterNumber=524",
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://cn.ttkan.co/novel/pagea/qingshan-huishuohuadezhouzi_526.html",
+        "https://www.dingdian666.com/zhangjie/733514/545411150.html"
       ],
       "legal_part_of_confirmed": false,
-      "graph_visualize_as": "single_observed_covert_message_carrier_not_ownership_or_subordination",
-      "source_coverage": "WebNovel公开部分可读第9–27行；镜像后段仅搜索摘要可见且本轮直接打开超时；非严格全文PASS。"
+      "graph_visualize_as": "tested_dormant_covert_message_channel_pending_reactivation_not_ownership_or_subordination",
+      "source_coverage": "作者517：WebNovel公开正文第9–27行＋同章镜像后段搜索摘要；作者519：WebNovel目录章号映射＋搜索摘要，正文直开403；非严格全文PASS。"
     }
   ],
   "formal_W_scoring": "R23_only",
