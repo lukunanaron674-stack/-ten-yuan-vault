@@ -6,7 +6,7 @@
   "description": "Whole fictional-world social influence and organization research atlas. Topical category group edges do not signify legal parent-of.",
   "input_refs": {
     "r21_sha": "6cf558bce4d508fa2ee6beb6cfa398fb6ca4f255",
-    "r22_graph_sha": "cfd3a9f0c7eee95833ad342aec19f75ae1757ee1",
+    "r22_graph_sha": "6b34fdcdfc27c3a9f009e14d1875e328e2fcf8b4",
     "r23_W_sha": "0a7d3673a6b30b52c1bfe233ed65c41ed174a3dd",
     "index_sha": "a46ccfb15c2b536e4f4077855ca5aca8affdf7d1"
   },
@@ -380,11 +380,14 @@
       "chapters": "350,410,752",
       "contribution": "户部财政税赋、仓储与商贸票据约束",
       "alias": "宁朝户部",
-      "source_boundary": "留都户部可能是地区机构，不与全国财政总部同一ID",
+      "source_boundary": "留都户部可能是地区机构，不与全国财政总部同一ID；作者752直接确认留都户部与京城户部同品秩、区域职掌分化及实际征税；不证明法定上下级。",
       "relation_primary_type": "within-polity",
       "relation_primary_target": "QS21-001",
       "relation_evidence_status": "DOMAIN_ONLY",
-      "parent_relation_caution": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边"
+      "parent_relation_caution": "政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边",
+      "chapter_anchors": [
+        "752《隐入市井》"
+      ]
     },
     {
       "id": "QS21-015",
@@ -404,11 +407,14 @@
       "chapters": "752",
       "contribution": "留都户部江南财税与龙江关钞关职能",
       "alias": "南直隶留都户部",
-      "source_boundary": "财赋钞关职责，不在R21直接并入京师户部",
+      "source_boundary": "财赋钞关职责，不在R21直接并入京师户部；作者752直接确认留都户部与京城户部同品秩、区域职掌分化及实际征税；不证明法定上下级。",
       "relation_primary_type": "regional-fiscal-branch-candidate",
       "relation_primary_target": "QS21-014",
       "relation_evidence_status": "OPEN",
-      "parent_relation_caution": "留都户部与户部功能同系但具体制度隶属、地方权限边界尚未闭合"
+      "parent_relation_caution": "留都户部与户部功能同系但具体制度隶属、地方权限边界尚未闭合",
+      "chapter_anchors": [
+        "752《隐入市井》"
+      ]
     },
     {
       "id": "QS21-016",
@@ -3271,12 +3277,16 @@
       "to": "QS21-015",
       "type": "regional-fiscal-counterpart; remit-differentiated",
       "chapter_anchors": [
-        "752《隐入市井》"
+        "作者752《隐入市井》（WebNovel平台Chapter 753）"
       ],
-      "evidence_status": "CANDIDATE_OPEN",
-      "evidence": "作者752正文明确：龙江关为户部钞关/宁朝水路征税大关；留都户部尚书庄桉命税吏查船征税；留都户部只管南直隶漕粮、龙江关关税及江南财赋，且权力较小。支持区域财政职掌分工；**不推**留都户部法定隶属于中央户部、中央完整指挥或两者产权层级。该边继续CANDIDATE_OPEN。",
+      "evidence_status": "TEXT_REPORTED",
+      "evidence": "官方目录校准作者章题；正文直接说明金陵保留六部衙署、留都户部尚书与京城户部尚书同为正二品，留都户部明确职掌南直隶漕粮、龙江关关税、江南财赋；庄桉命税吏实际登船查税。确认同类财政官署的区域职掌对应与范围分化；不推留都户部法定part-of中央户部、完整指挥、人事统属或两官署同体。",
       "legal_part_of_confirmed": false,
-      "graph_visualize_as": "typed_relation_not_legal_direct_inclusion"
+      "graph_visualize_as": "typed_relation_not_legal_direct_inclusion",
+      "source_urls": [
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://czbooks.net/n/s6ojkc/z515ph8?chapterNumber=758"
+      ]
     },
     {
       "id": "R22-E034",
@@ -3459,9 +3469,9 @@
     "relationships": {
       "total": 41,
       "statuses": {
-        "TEXT_REPORTED": 22,
+        "TEXT_REPORTED": 23,
         "OPERATING_RELATION": 14,
-        "CANDIDATE_OPEN": 4,
+        "CANDIDATE_OPEN": 3,
         "NEGATIVE_EQUIVALENCE": 1
       },
       "open_cases": [
@@ -3478,12 +3488,6 @@
           "to": "QS21-104"
         },
         {
-          "id": "R22-E033",
-          "type": "regional-fiscal-counterpart; remit-differentiated",
-          "from": "QS21-014",
-          "to": "QS21-015"
-        },
-        {
           "id": "R22-E039",
           "type": "formal-ownership-or-administrative-parentage-open",
           "from": "QS21-073",
@@ -3494,7 +3498,7 @@
         "R22-E035"
       ],
       "not_all_formal_admin_part_of": true,
-      "open_cases_sync_note": "2026-11-17: E034 upgraded to TEXT_REPORTED after official chapter-number correction and author283/285 direct Liu-family force evidence. Remaining OPEN: E019, E032, E033, E039."
+      "open_cases_sync_note": "2026-11-17: E033 upgraded to TEXT_REPORTED because author752 directly reports equal rank, differentiated remit and actual tax enforcement. Legal part-of or personnel command remains unproven. Remaining OPEN: E019, E032, E039."
     },
     "world_W": {
       "world_reference": 1000,
@@ -3559,12 +3563,12 @@
       "作者848《阉党细作》本轮仅取得ixdzs搜索摘要，正文页403；只用于补充上级交办/资金线索，不计全文核查。"
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
-    "r22_graph_sha": "cfd3a9f0c7eee95833ad342aec19f75ae1757ee1",
-    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。；2026-11-17：作者832《贪与痴》正文补充季氏掌柜被点明为司曹壬、并报告各家向胡家寻求襄助的背景；该章未直接提及《金陵晚报》，仅作人物联络角色背景，不作产权证据；E019保持CANDIDATE_OPEN，W不变。；2026-11-17：作者290《后会有期》（WebNovel平台Chapter 291）补充固原龙门客栈隐名东家与掌柜任命权限线索；东家身份、产权、与灯火关系及正式行政父级仍未证，R22-E039继续CANDIDATE_OPEN，QS21-083 W230不变。；2026-11-17：作者407《灯火客栈》可读正文补齐E029/E039原有题名锚，确认昌平与固原节点共享标识、陈设、暗号服务及人员身份识别；仅昌平节点明确出现盘账“东家”，固原产权与法定父级仍OPEN。；2026-11-17：作者128《连根拔起》公开摘要及连续内账语境补强红袖招与景朝军情司的经营/财务掩护关系，E030由CANDIDATE_OPEN升级TEXT_REPORTED；不推法定产权、官制part-of或完整常设指挥链，W170/L不变。；2026-11-17：E034旧平台号113/116/284校正为作者112/115/283，并新增作者285；作者283/285直接确认象甲卫为刘家巨资筹建的刘家精锐，E034升级TEXT_REPORTED。洛城事变后兵权转移，不推法定军籍或永久指挥，W不变。",
+    "r22_graph_sha": "6b34fdcdfc27c3a9f009e14d1875e328e2fcf8b4",
+    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。；2026-11-17：作者832《贪与痴》正文补充季氏掌柜被点明为司曹壬、并报告各家向胡家寻求襄助的背景；该章未直接提及《金陵晚报》，仅作人物联络角色背景，不作产权证据；E019保持CANDIDATE_OPEN，W不变。；2026-11-17：作者290《后会有期》（WebNovel平台Chapter 291）补充固原龙门客栈隐名东家与掌柜任命权限线索；东家身份、产权、与灯火关系及正式行政父级仍未证，R22-E039继续CANDIDATE_OPEN，QS21-083 W230不变。；2026-11-17：作者407《灯火客栈》可读正文补齐E029/E039原有题名锚，确认昌平与固原节点共享标识、陈设、暗号服务及人员身份识别；仅昌平节点明确出现盘账“东家”，固原产权与法定父级仍OPEN。；2026-11-17：作者128《连根拔起》公开摘要及连续内账语境补强红袖招与景朝军情司的经营/财务掩护关系，E030由CANDIDATE_OPEN升级TEXT_REPORTED；不推法定产权、官制part-of或完整常设指挥链，W170/L不变。；2026-11-17：E034旧平台号113/116/284校正为作者112/115/283，并新增作者285；作者283/285直接确认象甲卫为刘家巨资筹建的刘家精锐，E034升级TEXT_REPORTED。洛城事变后兵权转移，不推法定军籍或永久指挥，W不变。；2026-11-17：作者752《隐入市井》直接确认留都户部与京城户部同品秩、区域职掌分化及实际征税，E033由CANDIDATE_OPEN升级TEXT_REPORTED；法定part-of与完整指挥仍未证，W不变。",
     "typed_relations": 41,
     "relation_records": 41,
-    "candidate_open_relations": 4,
-    "text_reported_relations": 22,
+    "candidate_open_relations": 3,
+    "text_reported_relations": 23,
     "operating_relations": 14,
     "schema_normalization_note": "2026-11-17: R22-E040 imported legacy keys (source/target/relation_type/chapters/explanation) normalized to the R24 typed_relations schema (from/to/type/chapter_anchors/evidence). Stable ID, endpoints, relation meaning, status, source URLs and non-subordination boundary are unchanged; no object, relation, W score or Canvas topology was added or removed."
   },
@@ -3865,6 +3869,19 @@
         "不计逐章全文PASS",
         "不证明法定军籍或国家正式编制",
         "不证明全时期产权或永久稳定指挥"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "chapters": [
+        "作者752《隐入市井》（WebNovel平台Chapter 753）"
+      ],
+      "level": "MIRROR_BODY_WITH_OFFICIAL_TITLE_MAPPING",
+      "change": "R22-E033 evidence classification corrected from CANDIDATE_OPEN to TEXT_REPORTED",
+      "evidence": "留都户部与京城户部同为正二品、职掌区域分化，且留都户部税吏实际执行查税；不证明法定上下级。",
+      "source_urls": [
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://czbooks.net/n/s6ojkc/z515ph8?chapterNumber=758"
       ]
     }
   ]
