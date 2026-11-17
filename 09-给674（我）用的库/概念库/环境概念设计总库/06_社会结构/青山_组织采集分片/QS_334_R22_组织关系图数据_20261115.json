@@ -8,7 +8,7 @@
   "warning": "Typed relations do not all represent formal organization containment. Not a full-book organization census.",
   "original_R21_objects": 108,
   "additional_connecting_objects": 6,
-  "relation_rows": 38,
+  "relation_rows": 39,
   "entity_nodes": [
     {
       "id": "QS21-001",
@@ -1569,8 +1569,25 @@
         "https://czbooks.net/n/s6ojkc/s6onf31e?chapterNumber=246",
         "https://www.piaotia.com/html/15/15702/11485597.html"
       ]
+    },
+    {
+      "id": "R22-E040",
+      "source": "QS22-N002",
+      "target": "QS21-037",
+      "relation_type": "reported-military-merit-adjudication-and-oversight",
+      "chapters": [
+        "作者758《卖首级》（WebNovel平台槽759）"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "作者758《卖首级》中郑继业称，备倭军军功核验需纪功官随军；他报告中军都督府未派纪功官及监军，未随军核验的战功因而不获承认，并陈述小旗/百户门槛与千户任用关系。此为当事人报告/抱怨，不是正式军制条文；只记录文本报告的军功核验、战功承认与监督职责，不证明备倭军法定直属、永久军籍、常设编制或都督府持续有效指挥。",
+      "source_urls": [
+        "https://czbooks.net/n/s6ojkc/z51ch8m?chapterNumber=764",
+        "https://www.webnovel.com/book/22444590709113204/catalog"
+      ],
+      "legal_part_of_confirmed": false,
+      "graph_visualize_as": "reported_merit_review_and_supervision_not_legal_subordination"
     }
   ],
   "formal_W_scoring": "R23_only",
-  "total_relation_records": 39
+  "total_relation_records": 40
 }
