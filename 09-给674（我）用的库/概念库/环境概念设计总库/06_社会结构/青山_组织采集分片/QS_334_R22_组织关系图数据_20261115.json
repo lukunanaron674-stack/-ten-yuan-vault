@@ -1506,15 +1506,23 @@
       "id": "R22-E036",
       "source": "QS21-075",
       "target": "QS21-091",
-      "relation_type": "reported-operational-network",
+      "relation_type": "member-level-printing-and-distribution-operation",
       "chapters": [
+        "846《乾乾淨淨》",
+        "847《漕幫》",
+        "848《閹黨細作》（SEARCH_EXCERPT_ONLY）",
         "853《季氏》"
       ],
-      "evidence_status": "TEXT_REPORTED",
-      "explanation": "作者853《季氏》中陈迹称金陵晚报是漕帮经营；张夏说该报有七个堂口、她查抄五个，之后密谍司查抄两个。属正文人物报告与行动叙述，支持报纸运营网络与漕帮的报告性关联；不证明法定产权、商行股权或金陵晚报整体归漕帮所有。",
+      "evidence_status": "OPERATING_RELATION",
+      "explanation": "作者846《乾乾淨淨》显示《金陵晚报》由报童街头销售、售价由“东家”决定；豆腐巷连通四处宅子内有数十人和压印设备，夜间雕版、制墨、压印并按三千份计数。作者847《漕帮》显示刘成主事雕版、组织报纸制作与销售；他称原头目被抓后接手，并明确自称漕帮吕爷手下成员。作者848《阉党细作》搜索摘要补充刘成称“上面”交办、有人付钱，并要求金陵晚报不能停刊；直接页面403，仅作SEARCH_EXCERPT_ONLY。作者853《季氏》既有证据称金陵晚报由漕帮经营且有七个堂口。合并支持漕帮成员团队实际承担该报印刷/发行执行，故状态升级为OPERATING_RELATION；但“东家”、出资者、上级身份与法律产权均未明，不证明漕帮全体拥有报纸或法定隶属。",
       "source_urls": [
+        "https://ixdzs.tw/read/549077/p850.html",
+        "https://ixdzs.tw/read/549077/p851.html",
+        "https://ixdzs.tw/read/549077/p852.html",
         "https://ixdzs.tw/read/549077/p857.html"
-      ]
+      ],
+      "legal_part_of_confirmed": false,
+      "graph_visualize_as": "member_level_press_operation_not_ownership_or_administrative_subordination"
     },
     {
       "id": "R22-E037",
