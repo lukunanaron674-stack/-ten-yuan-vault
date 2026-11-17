@@ -291,3 +291,24 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - **分级与计数**：`F1=PASS_PUBLIC`；`F2=null`；`F3=null`；`dynamic_feeling_curve=NOT_MEASURED`；`tenyuan_film_quality_100=null`；`research_readiness_100=74/100 (AI_SCORE)`；`mechanism_gain_0_5=3/5 (AI-H)`；`independent_grade=false`；`assessment_mode=ASSISTED_SEQUENTIAL`。上述AI分数不等于E级/C-film/真人感受成绩；不计Q-FEEL、Q-DSL、Q-GEN、五轴A/B或跨媒体实验。
 - **裁决**：`EVIDENCE_INTAKE_ONLY / NOT_READY / RETURN_SPECIFIC_GAP`。不创建新Q、电影MD、Canvas节点或主题索引；不启动RESEARCH子Campaign，不执行五轴A/B/H3，不修改十元Canon。
 - **NEXT**：先完成旧银矿散点/历史别名逐文件穷尽排重；再以原片F2核验E02–E04动作顺序、Mahito拒绝继承与塔世界既有崩塌的时间关系、Parakeet King接管对崩塌的实际影响；随后才可冻结独立R1/R2答案并评估holdout。本节不使Q-DYN-002 READY。
+
+
+## 16｜2026-11-17｜THE_GREEN_KNIGHT_2021_F1_SOURCE_PACKET｜非字面未来分支与身份重新承诺（F1接收／非READY）
+
+- **receipt_id**：`Q-DYN-002-APP-FILM-CHAIN-001-THE-GREEN-KNIGHT-F1-INTAKE-20261117`。
+- **唯一来源增量**：Linear 674-105 comment `8648f03f-28c2-4ac7-b91d-23e398056276`（2026-11-17 04:27:13Z）；电影进度台账 GitHub commit `f118dc00124f97a08b79af4415d4e9412c8a0336`，远端台账 Blob 回读 `c835bc3ce9efea75d53e7aceb069df9927396e34`。Linear 评论与GitHub台账是同一部影片、同一F1来源包，跨系统只计一条增量；本节仅接收至既有Q-DYN-002，不创建第二份电影卡或新Q。
+- **身份/版本边界**：The Green Knight / 工作中文译名《绿衣骑士》/ 2021 / David Lowery编导 / A24院线发行版。研究对象为2021电影，不把14世纪诗歌《Sir Gawain and the Green Knight》混作电影版本。USER已看=NOT_CONFIRMED。A24官方作品页用于身份/发行；BFI、GQ、Vanity Fair为不同出版来源；A24 Podcast与A24官方作品页归同一发行方生态，不重复算作独立二手见证。
+- **唯一性排查边界**：C01–C51电影卡文件名、统一Canvas 51个file节点、WATCH-001–030及GitHub中英文关键词搜索未命中；《重复污染删除清单.md》《二审队列.md》未命中。但旧银矿散点池尚未逐文件人工穷尽，故 `DUPLICATE_CHECK=CARDS_CANVAS_WATCH_REPO_SEARCH_PASS__ARCHIVE_PENDING`、`NEW100_ELIGIBILITY=ARCHIVE_PENDING`；不宣称全库唯一，不创建C52、不增加正式NEW100数量，NEW100仍28/100、`new_f1_cards=0`。
+- **F1事件账（公开来源，不是原片逐镜/F2）**：
+  - **E01｜接受一年后回击契约**：圣诞宴会上，绿衣骑士提出先受一击、隔一年再回击的挑战；Gawain主动接受并砍下对方头颅，绿衣骑士拾起头颅并要求他按约赴绿教堂。结果=未来生命风险被写入承诺，履约成为行动轴。来源：BFI、GQ。
+  - **E02｜接受保护性例外并隐瞒**：城堡交换契约中，Gawain接受领主夫人给出的绿色腰带，认为它可保护自己免受伤害，却没有向领主交代腰带来源。结果=以自保换取隐瞒，诚实/交换条件受到破坏。来源：GQ；腰带保护功能及终局摘除选择由A24导演访谈补证。
+  - **E03｜非字面未来展示逃避成本**：绿教堂中Gawain面对回击时退缩，影片呈现他若保留腰带、逃离履约后可能经历的人生：成为国王，却在关系、家庭与王国崩坏中长期承受失约代价。David Lowery在Vanity Fair访谈及A24 Podcast中明确说明该段不是字面发生的未来，而是错误选择可能带来的生活；不得写成时间旅行、预言或真实分支时间线。
+  - **E04｜返回选择点并接受后果**：假设人生段落结束后，Gawain回到绿教堂，摘下腰带并准备接受回击；绿衣骑士最后的话语与切黑保留其是否实际死亡的开放性。来源：GQ、Vanity Fair；导演访谈支持结尾歧义。
+- **动态候选**：`外部荣耀追求→接受一年后回击契约→旅途试炼与腰带隐瞒→面对回击时退缩→非字面未来显影逃避成本→返回同一选择点→摘除保护性例外并接受承诺后果`。这是F1剧情行动顺序，不是观众感受曲线；`dynamic_feeling_curve=NOT_MEASURED`。
+- **前人研究一句话**：C20《前目的地》研究的是实际自我起源闭环与身份自指，既有时间循环案例研究真实时间结构；本片的候选差异是导演明确将未来段落定义为非字面反事实，用它模拟错误选择的身份成本，再让角色回到同一选择点重新承诺，而非建立真实时间分支。
+- **机制候选**：`type_gap_id=B_NONLITERAL_COUNTERFACTUAL_FUTURE_BRANCH__C_IDENTITY_RECOMMITMENT`；`novelty_delta=OLD_COUNTERFACTUAL_FORK_FAMILY_NEW_NONLITERAL_FUTURE_AS_IDENTITY_COST_SIMULATOR`；`type_status=PROPOSED_H`，仅为旧分叉/反事实家族的新机制候选，不是正式新类型。非字面未来分支是选择机制的强化器，不替代E01契约，也不自动构成严格五维拓扑。
+- **分轨审查**：`PLOT_ACTION=E01–E04`；`THEME_FILM=ONTOLOGY_H`主候选、`FATE_H`强竞争，`CAUSALITY_H/TIME_H`次级竞争；`theme_edges=NOT_ESTABLISHED`；Gawain可观察追求为骑士身份、荣耀与王室认可，但稳定元/追求元/结算元均`null`；`ROLE_TENYUAN=null`；`L2_CLAIM=NONE`。不把“骑士”“荣耀”“自我觉察”直接映射为十元端点。
+- **最强反证与停止条件**：①未来段落可能被观众读作预言；若F2或更强创作者材料推翻“非字面”解释，撤回反事实成本模拟器。②摘除腰带可能是骑士规范或外部压力下的服从，不足以证明稳定身份转化；影片未展示此后的长期生活。③最后切黑不证明Gawain实际死亡，不冻结开放结尾。④若F2显示终局没有摘除腰带/接受回击，重写E04；若选择主要由外部强制驱动，`ONTOLOGY_H`降级、`FATE_H`竞争上升。
+- **分级与计数**：`F1=PASS_PUBLIC`；`F2=null`；`F3=null`；`dynamic_feeling_curve=NOT_MEASURED`；`independent_pass=NOT_SCORED`；`tenyuan_film_quality_100=null`。Linear中的`research_readiness_100=72/100`仅为`AI_SCORE`，`mechanism_gain_0_5=3/5`仅为`AI-H`，不等于E级/C-film/真人感受成绩。该来源包不计Q-FEEL、Q-DSL、Q-GEN、五轴A/B或跨媒体实验；`C-feeling/E`不变。
+- **裁决**：`EVIDENCE_INTAKE_ONLY / NOT_READY / RETURN_SPECIFIC_GAP`；`ARCHIVE_PENDING`；`new_f1_cards=0`；`NEW100=28/100`不变；`type_gap_verified=0`。不新建电影MD/Canvas节点/主题索引，不启动RESEARCH子Campaign，不执行五轴A/B或H3，不修改十元Canon。本节不使Q-DYN-002 READY。
+- **NEXT**：先完成旧银矿散点池逐文件与历史别名穷尽排重；再用2021原片F2核验E01–E04动作、城堡交换契约/腰带隐瞒、非字面未来段落与终局摘除腰带的连续性；在任何独立能力评估前冻结R1/R2答案及反例。未达到前述门槛继续WAIT。
