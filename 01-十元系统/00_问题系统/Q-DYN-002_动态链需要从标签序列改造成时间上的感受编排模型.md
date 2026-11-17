@@ -188,3 +188,29 @@ C-film是**电影十元链任务能力评估量表（建议新增应用子维度
 - **分层与等级不变**：`F1=SOURCE_PACKET_RECORDED_PENDING_ARCHIVE_DEDUPE`；`F2=null`；`F3=null`；`ROLE_TENYUAN=null`；`main_theme=null`；`strict_relation_edges=NOT_ESTABLISHED`；`dynamic_feeling_curve=NOT_MEASURED`；`independent_pass=NOT_SCORED`。674-105登记的 `research_readiness_100=65/100`、`mechanism_gain_0_5=2/5`维持原值；`tenyuan_film_quality_100=null`。该来源不是观众感受数据，不计Q-FEEL、五轴A/B或跨媒体验证。
 - **去重与计数**：本轮只新增1条创作者反事实来源交叉记录；不增加电影卡、F1正式卡数、独立holdout或正式类型数；NEW100仍28/100。无新MD/Canvas节点、无GPU；不启动RESEARCH子Campaign，不执行五轴A/B或H3。
 - **NEXT**：等待原片F2终幕/事件核验、全库历史别名穷尽去重及预锁独立R1/R2答案；完成前保持 `EVIDENCE_INTAKE_ONLY / NOT_READY`。无新增可复核材料则WAIT。
+
+
+## 11｜2026-11-17｜LA_CHIMERA_2023_F1_SOURCE_PACKET｜替代共同体桥短暂进入后主动退出（F1接收／非READY）
+
+- **receipt_id**：`Q-DYN-002-APP-FILM-CHAIN-001-LA-CHIMERA-F1-INTAKE-20261117`。
+- **唯一增量来源**：Linear 674-105 comment `dc95203e-e2cb-4386-bc1a-1bb55d8f8ea7`（2026-11-16 23:15:13 UTC）；同一F1来源包已写入 `05-银矿库/电影进度台账.md`，GitHub commit `b9caec06aa4ffc2e3fbcc11e79192d65af3de832`，回读 blob `187cb1e598c6a2da8fd1675b0f88cc208eef23c5`。Linear评论与GitHub台账是同一来源包，**跨系统只计一条增量**；本节是其进入Q-DYN-002的治理回写，不再新增电影研究计数。
+- **身份候选**：`La Chimera / La chimera`（2023），Alice Rohrwacher，Cannes 2023竞赛版，约130分钟；与用户《黎黎隆》世界观中的原创“奇美拉”角色不是同一对象。台账/统一Canvas/GitHub索引关键词检索未见电影主卡；旧银矿散点与历史别名尚未穷尽，故 `DUPLICATE_CHECK=CANVAS_LEDGER_CODESEARCH_PASS__ARCHIVE_PENDING`，不创建C52、不增加NEW100正式数量。
+- **F1事件账（公开来源，非F2逐镜）**：
+  - **E01｜返乡并重入盗墓团伙**：Arthur刑满后回到托斯卡纳小镇，重新与tombaroli团伙合作，凭探测地下空洞的能力定位并盗掘伊特鲁里亚墓葬，将遗物卖给古物中间商。
+  - **E02｜遗物伦理冲突使新关系中断**：Arthur把来自墓葬的小铃铛送给Italia；她意识到遗物来自死者/墓葬后质问他。Arthur承认Beniamina已死，两人的关系中断。
+  - **E03｜拒绝继续商品化神像头部**：团伙发现地下神龛并争夺搬运遗物；在船上古物交易冲突中，Arthur把神像头部投入海中，拒绝将其作为交易筹码，继而与团伙决裂。
+  - **E04｜替代共同体接纳后，Arthur主动离开**：住所被拆后，Italia与其他母亲及孩子在废弃车站共同生活并邀请Arthur留下；他短暂接受但仍受失去Beniamina的执念牵引，随后离开并返回地下墓葬。终局出现追索对象的幻象/超现实结算；是否客观死亡不锁定。
+- **外部来源与各自能证明的范围**：
+  1. Festival de Cannes导演访谈（2023-05-26）：导演说明主角是无根者、追寻归属与爱，并讨论过去遗物、死亡及不同胶片/速度处理；支持创作意图与形式背景，不证明观众感受。https://www.festival-cannes.com/en/2023/la-chimera-memories-of-former-lives-by-alice-rohrwacher/
+  2. Le Monde影评（2023-05-26）：支持Arthur返乡、重返盗墓活动、Italia代表替代生活，以及“与活人生活或与神像头部记忆生活”的选择框架；属于影评文本，不替代逐镜核验。https://www.lemonde.fr/culture/article/2023/05/26/cannes-2023-la-chimere-la-belle-odyssee-des-pilleurs-de-tombes-sacrees-d-alice-rohrwacher_6175047_3246.html
+  3. Vatican News剧情评论（2024-12-05）：提供E01–E04较完整剧情复述，支持铃铛冲突、神龛、车站共同体邀请及Arthur再次离开；属于二手剧情评论，不是原片字节/时码核验。https://www.vaticannews.va/en/vatican-city/news/2024-12/films-pilgrims-of-hope-jubilee-greg-apparcel-la-chimera-review.html
+  4. The Baffler影展评论（2023-06-06）：明确描述船上争夺神像头部及Arthur将其投入水中，独立补强E03动作；仍为影评文本。https://thebaffler.com/latest/cote-dillusion-wham
+  Cannes导演访谈与Cannes官方作品材料归同一机构，不按两个独立媒体重复计数；Le Monde、Vatican News、The Baffler作为不同出版来源。
+- **动态链候选**：`lost-love_pursuit → return_to_tombaroli → relic_ethics_conflict → gang_rupture → alternative_community_bridge_offered_and_temporarily_entered → self_exit → recursive_return_to_lost_object → underground_ambiguous_closure`。这是F1剧情/关系行动顺序，不是观众感受曲线。
+- **机制候选**：`type_gap_id=C_BRIDGE_OFFERED_TEMPORARILY_ENTERED_BUT_SELF_EXITED__B_RECURSIVE_RETURN_TO_LOST_OBJECT`；`novelty_delta=OLD_TYPE_NEW_MECHANISM_CANDIDATE`；`type_status=PROPOSED_H`。与《A Real Pain》“情感回连成立但生活整合未完成”不同：本片的替代共同体确实短暂接纳Arthur，随后是Arthur主动退出并回到失去对象的追索。最强反证：若F2显示其离开主要由外部驱逐而非主动选择，或删去共同体邀请后后续路径完全不变，则“主动退出替代生活桥”机制应FAIL/降级。
+- **AG-09主题候选**：命运FATE暂列主候选，本体ONTOLOGY强竞争；时间是重要阶段媒介，空间暂不列主竞争。导演“寻找归属”的访谈只支持候选，不裁决主维；严格主题生克边仍 `NOT_ESTABLISHED`。
+- **AG-11人物候选**：Arthur的“寻找/重逢Beniamina、获得归属”仅为叙事目标描述；Arthur与Italia稳定元、追求元、结算元均 `null`，不由行为反推十元。
+- **AG-13/AG-02四轨审查**：`PLOT_ACTION=E01–E04`；`ROLE_TENYUAN=NOT_ESTABLISHED`；`THEME_FILM=FATE/ONTOLOGY_COMPETING_H`；`L2_CLAIM=NONE`；严格十元关系端点、方向、作用对象及变化量均 `NOT_ESTABLISHED`。现有方法继承AG-13/AG-14“事件事实→人物/主题/动作分轨→AG-02严格边审计”；本轮只做F1来源包跨系统去重与Q级接收，不声称代理已独立运行或通过。
+- **分级与计数**：`F1=SOURCE_PACKET_COMPLETE__ARCHIVE_PENDING`；`F2=null`；`F3=null`；`dynamic_feeling_curve=NOT_MEASURED`；`independent_grade=false`；`assessment_mode=ASSISTED_SEQUENTIAL`；`research_readiness_100=67/100 (AI_SCORE)`；`mechanism_gain_0_5=2/5 (AI-H)`；`tenyuan_film_quality_100=null`。NEW100仍28/100，`new_f1_cards=0`、`type_gap_verified=0`。不计Q-FEEL、人类感受、五轴A/B或跨媒体实验。
+- **裁决**：`EVIDENCE_INTAKE_ONLY / NOT_READY / RETURN_SPECIFIC_GAP`。不创建新Q、电影MD、Canvas节点或主题索引；不启动RESEARCH子Campaign，不执行五轴A/B/H3，不修改十元Canon。
+- **NEXT**：先完成历史别名穷尽排重，再以原片F2核验E02–E04的动作顺序、Arthur离开共同体的主动性及地下终局边界；只有完成冻结的独立R1/R2答案后才评估holdout。未完成前保持WAIT；本节不使Q-DYN-002 READY。
