@@ -6,7 +6,7 @@
   "description": "Whole fictional-world social influence and organization research atlas. Topical category group edges do not signify legal parent-of.",
   "input_refs": {
     "r21_sha": "6cf558bce4d508fa2ee6beb6cfa398fb6ca4f255",
-    "r22_graph_sha": "b7fc94ebb6ae041aae97fd41c605599629fc2110",
+    "r22_graph_sha": "c418030a2b52817dbbbb513ba4c1985f16483d57",
     "r23_W_sha": "0a7d3673a6b30b52c1bfe233ed65c41ed174a3dd",
     "index_sha": "a46ccfb15c2b536e4f4077855ca5aca8affdf7d1"
   },
@@ -3394,16 +3394,20 @@
       "to": "QS21-089",
       "type": "covert-message-carrier",
       "chapter_anchors": [
-        "作者517《棋手》（WebNovel平台Chapter 518）"
+        "作者517《棋手》（WebNovel平台Chapter 518）",
+        "作者519《凭姨》（WebNovel平台Chapter 520）"
       ],
       "evidence_status": "OPERATING_RELATION",
-      "evidence": "作者517《棋手》中，第七版时政策论的民间投稿以藏头法写出“今夜子时，劫周传”；陈迹明确判断这是军情司用藏头法传出的消息。同章镜像后段将该报编辑部定位为《京城晨报》，并提及袍哥会登记文章来源。结合R13既有初勘，支持一次通过京城晨报刊载文章传递军情司消息的操作关系；投稿者身份、编辑者是否知情及长期渠道均未证。",
+      "evidence": "作者517《棋手》中，第七版时政策论的民间投稿以藏头法写出“今夜子时，劫周传”；陈迹明确判断这是军情司用藏头法传出的消息。同章镜像后段将该报编辑部定位为《京城晨报》，并提及袍哥会登记文章来源。作者519《凭姨》后续搜索摘要称军情司已试探《京城晨报》是否可靠，随后重新静默，等待下次启用该情报渠道。由此支持一次已观察到的藏头消息传递及一个被试探、暂时静默、待再次启用的情报渠道；但519仅SEARCH_EXCERPT_ONLY，正文直开403，不计全文核验。投稿者身份、编辑者是否知情、重复传递是否发生及长期稳定性均未证。",
       "legal_part_of_confirmed": false,
-      "graph_visualize_as": "single_observed_covert_message_carrier_not_ownership_or_subordination",
+      "graph_visualize_as": "tested_dormant_covert_message_channel_pending_reactivation_not_ownership_or_subordination",
       "source_urls": [
         "https://www.webnovel.com/book/青山_22444590709113204/517%E3%80%81%E6%A3%8B%E6%89%8B_92513916134941518",
         "https://m.xsw.tw/1721636/254455394.html",
-        "https://czbooks.net/n/s6ojkc/ucpna8gf?chapterNumber=524"
+        "https://czbooks.net/n/s6ojkc/ucpna8gf?chapterNumber=524",
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://cn.ttkan.co/novel/pagea/qingshan-huishuohuadezhouzi_526.html",
+        "https://www.dingdian666.com/zhangjie/733514/545411150.html"
       ]
     }
   ],
@@ -3535,7 +3539,7 @@
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
     "r22_graph_sha": "b7fc94ebb6ae041aae97fd41c605599629fc2110",
-    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。",
+    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。",
     "typed_relations": 41,
     "relation_records": 41,
     "candidate_open_relations": 6,
@@ -3670,6 +3674,32 @@
       "relations_added": false,
       "relations_updated": true,
       "relation_id": "R22-E036"
+    },
+    {
+      "author_chapter": 519,
+      "title": "凭姨",
+      "platform_chapter": 520,
+      "status": "SEARCH_EXCERPT_ONLY",
+      "readable_range": "搜索摘要可见相关叙述；WebNovel官方目录用于题名映射；天天看正文直开403，顶点聚合镜像有污染风险；无全文/章末核验",
+      "source_urls": [
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://cn.ttkan.co/novel/pagea/qingshan-huishuohuadezhouzi_526.html",
+        "https://www.dingdian666.com/zhangjie/733514/545411150.html"
+      ],
+      "finding": "作者519《凭姨》搜索摘要称军情司已试探《京城晨报》是否可靠，随后重新静默，等待下次启用该情报渠道。",
+      "classification_candidate": "R22-E041：已观察到一次藏头消息传递；渠道曾被试探并暂时静默，待再次启用",
+      "promoted_to_object": false,
+      "W_assigned": false,
+      "relations_added": false,
+      "relation_updated": true,
+      "relation_id": "R22-E041",
+      "limits": [
+        "仅搜索摘要，不是可读全文",
+        "不证明重复传递已发生",
+        "不证明长期稳定通信或渠道可靠性已获确认",
+        "不证明报社产权、军情司管理/控制或编辑者知情",
+        "不计逐章全文PASS"
+      ]
     }
   ]
 }
