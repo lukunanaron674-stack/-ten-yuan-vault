@@ -6,8 +6,8 @@
   "description": "Whole fictional-world social influence and organization research atlas. Topical category group edges do not signify legal parent-of.",
   "input_refs": {
     "r21_sha": "6cf558bce4d508fa2ee6beb6cfa398fb6ca4f255",
-    "r22_graph_sha": "ea91fec1ad74958e972b15c518966a9c1618f955",
-    "r23_W_sha": "e0e08370a8bc721cd66674d928babe6021a17510",
+    "r22_graph_sha": "9d3fb42cbe40cde0f81d159c1d43bd89a134959f",
+    "r23_W_sha": "246ae534b921dfeb2bf356bc58f0a5586fb43854",
     "index_sha": "a46ccfb15c2b536e4f4077855ca5aca8affdf7d1"
   },
   "groups": [
@@ -2626,14 +2626,14 @@
       "score_confidence": "M",
       "old_W": null,
       "W_delta": null,
-      "chapters": "作者771《石头里蹦出来的》、作者814《解烦卫》、作者820《谛听》、作者826《鹽引》、作者827《对策》",
-      "contribution": "中军都督府有官员报告的1.2万兵额，见人员任命及定海港接管/备倭军看管行动；辖域与长期覆盖不全",
+      "chapters": "作者758《卖首级》（WebNovel平台槽759）、作者771《石头里蹦出来的》、作者814《解烦卫》、作者820《谛听》、作者826《鹽引》、作者827《对策》",
+      "contribution": "中军都督府有官员报告的1.2万兵额，见军功核验/监军职责的文本报告、人员任命及定海港接管/备倭军看管行动；辖域与长期覆盖不全",
       "alias": "",
-      "source_boundary": "",
+      "source_boundary": "作者758的军功核验与监军内容为郑继业当事人报告/抱怨，不是正式军制条文；一次接管/看管不等于备倭军永久直属。",
       "relation_primary_type": null,
       "relation_primary_target": null,
       "relation_evidence_status": "",
-      "parent_relation_caution": "作者814支持一次按军令的接管/看管，不证明备倭军永久隶属或直辖各营",
+      "parent_relation_caution": "作者814支持一次按军令的接管/看管；作者758只报告军功核验与监督职责，不证明备倭军永久隶属或直辖各营。",
       "evidence_update_2026_11_15": {
         "chapters": [
           "820《谛听》",
@@ -2666,6 +2666,18 @@
         "findings": "作者771《石头里蹦出来的》：王长真称中军都督府约一万二千兵马，海岸线过长导致无法分派足够兵力驻海防；并称曾上书请求赣州狼兵、湖广土兵增援但未获答复。作者814《解烦卫》（小说狂人页内标814，另站编号为815）：王长真签发兵部文书将备倭军千户郑继业升任中军都督府指挥使；中军都督府兵马按军令接管定海港、驱逐徐家人马并围控备倭军，准备押其返府休整。作者827《对策》里“中军都督府慢吞吞”是钱氏大掌柜的判断，作为人物意见记录，不当作叙述者事实。上述证明该府拥有一定成规模兵力、人员任命及一次具体沿海接管/看管行动；尚不证明全国辖域、全部卫所的常设直属或长期行动效果。",
         "boundary": "作者827中“慢吞吞”是钱氏大掌柜评价；作者771同时明示海防覆盖受限、增援未获批。一次港口接管/看管不是永久军籍或全国指挥权。",
         "scoring_effect": "W610不变；confidence L→M，range 480–740→530–690，按既定M档±80。跨省辖域与长期效果仍未核。"
+      },
+      "evidence_update_2026_11_17": {
+        "chapter": "作者758《卖首级》",
+        "official_catalog_mapping": "WebNovel平台槽759对应作者758《卖首级》；小说狂人正文页标题标758，PT文学镜像页标题显示第759章，以作者题名为章锚。",
+        "source_urls": [
+          "https://czbooks.net/n/s6ojkc/z51ch8m?chapterNumber=764",
+          "https://www.webnovel.com/book/22444590709113204/catalog",
+          "https://www.piaotia.com/html/15/15702/11629427.html"
+        ],
+        "findings": "郑继业报告军功核验需纪功官随军；他称中军都督府未派纪功官及监军，未随军核验的战功不获承认，并陈述小旗/百户门槛及千户任用关系。上述内容属于当事人报告/抱怨。",
+        "boundary": "只支持文本报告的军功核验、战功承认与监督职责；不证明备倭军法定直属、永久军籍、常设编制或都督府持续有效指挥。",
+        "scoring_effect": "W610、M、530–690均不变；新证据补出行政控制杠杆，但来源局限于单一当事人陈述，且显示监督缺位，未量化全国覆盖或长期资源调度。"
       }
     },
     {
@@ -3352,12 +3364,29 @@
         "https://czbooks.net/n/s6ojkc/s6onf31e?chapterNumber=246",
         "https://www.piaotia.com/html/15/15702/11485597.html"
       ]
+    },
+    {
+      "id": "R22-E040",
+      "source": "QS22-N002",
+      "target": "QS21-037",
+      "relation_type": "reported-military-merit-adjudication-and-oversight",
+      "chapters": [
+        "作者758《卖首级》（WebNovel平台槽759）"
+      ],
+      "evidence_status": "TEXT_REPORTED",
+      "explanation": "作者758《卖首级》中郑继业称，备倭军军功核验需纪功官随军；他报告中军都督府未派纪功官及监军，未随军核验的战功因而不获承认，并陈述小旗/百户门槛与千户任用关系。此为当事人报告/抱怨，不是正式军制条文；只记录文本报告的军功核验、战功承认与监督职责，不证明备倭军法定直属、永久军籍、常设编制或都督府持续有效指挥。",
+      "source_urls": [
+        "https://czbooks.net/n/s6ojkc/z51ch8m?chapterNumber=764",
+        "https://www.webnovel.com/book/22444590709113204/catalog"
+      ],
+      "legal_part_of_confirmed": false,
+      "graph_visualize_as": "reported_merit_review_and_supervision_not_legal_subordination"
     }
   ],
   "audit": {
     "stage": "R24",
     "status": "INTEGRATED_PROVISIONAL_WITH_SOURCE_GAPS",
-    "baseline": "114 IDs (108 QS21 +6 QS22); 38 positive typed edges +1 negative-equivalence record; 87 candidate W; 10 W?; 17 non-independent",
+    "baseline": "114 IDs (108 QS21 +6 QS22); 39 positive typed edges +1 negative-equivalence record; 87 candidate W; 10 W?; 17 non-independent",
     "identity": {
       "r21": 108,
       "r22_extension": 6,
@@ -3367,9 +3396,9 @@
       "unmatched_R22_to_R23": 0
     },
     "relationships": {
-      "total": 39,
+      "total": 40,
       "statuses": {
-        "TEXT_REPORTED": 20,
+        "TEXT_REPORTED": 21,
         "OPERATING_RELATION": 12,
         "CANDIDATE_OPEN": 6,
         "NEGATIVE_EQUIVALENCE": 1
@@ -3480,12 +3509,12 @@
       "R24作者863《他心通》：最新目录显示平台Chapter 864/作者题名863；当前只有目录题名交叉（INDEX_ONLY），正文未取得，不据标题建组织、关系或W。"
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
-    "r22_graph_sha": "ea91fec1ad74958e972b15c518966a9c1618f955",
-    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。",
-    "typed_relations": 39,
-    "relation_records": 39,
+    "r22_graph_sha": "9d3fb42cbe40cde0f81d159c1d43bd89a134959f",
+    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。",
+    "typed_relations": 40,
+    "relation_records": 40,
     "candidate_open_relations": 6,
-    "text_reported_relations": 20
+    "text_reported_relations": 21
   },
   "source_coverage_updates": [
     {
@@ -3521,6 +3550,24 @@
       "promoted_to_object": false,
       "W_assigned": false,
       "relations_added": false
+    },
+    {
+      "author_chapter": 758,
+      "title": "卖首级",
+      "platform_chapter": 759,
+      "status": "TARGETED_BODY_PAGE_READ_NOT_STRICT_PASS",
+      "readable_range": "小说狂人正文页第86–166行；页面无明确本章完标记；PT镜像页标题作第759章",
+      "source_urls": [
+        "https://czbooks.net/n/s6ojkc/z51ch8m?chapterNumber=764",
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://www.piaotia.com/html/15/15702/11629427.html"
+      ],
+      "finding": "郑继业报告军功核验需纪功官随军；称中军都督府未派纪功官及监军，未随军核验的战功不获承认；升迁门槛和千户任用关系属当事人陈述。",
+      "classification_candidate": "中军都督府—备倭军军功核验与监督职责（文本报告）",
+      "promoted_to_object": false,
+      "W_assigned": false,
+      "relations_added": true,
+      "relation_id": "R22-E040"
     }
   ]
 }
