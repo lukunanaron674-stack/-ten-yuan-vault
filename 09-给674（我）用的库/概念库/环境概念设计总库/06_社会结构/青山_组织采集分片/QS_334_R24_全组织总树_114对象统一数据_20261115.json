@@ -6,7 +6,7 @@
   "description": "Whole fictional-world social influence and organization research atlas. Topical category group edges do not signify legal parent-of.",
   "input_refs": {
     "r21_sha": "6cf558bce4d508fa2ee6beb6cfa398fb6ca4f255",
-    "r22_graph_sha": "e941f145f554574a2154b2687a4473ae84e0522c",
+    "r22_graph_sha": "cfd3a9f0c7eee95833ad342aec19f75ae1757ee1",
     "r23_W_sha": "0a7d3673a6b30b52c1bfe233ed65c41ed174a3dd",
     "index_sha": "a46ccfb15c2b536e4f4077855ca5aca8affdf7d1"
   },
@@ -938,14 +938,14 @@
       "score_confidence": "L",
       "old_W": null,
       "W_delta": null,
-      "chapters": "112,113",
-      "contribution": "作者284记刘家出资打造，且象甲卫实际投入固原战场；产权/正式编制与指挥链仍开放",
+      "chapters": "作者112《天马流星》、115《舍小就大》、283《固原的石头》、285《受命于天，既寿永昌》",
+      "contribution": "作者283旁白直接确认象甲卫与虎甲铁骑同为刘家巨资打造的精锐，作者285称其为刘家精锐；洛城事变后兵权转移，故筹建关系已证、永久指挥未证",
       "alias": "象甲卫",
-      "source_boundary": "作者113只排除救陈迹这一具体命令；作者116调兵未执行；作者284证出资与战场部署，不证法定隶属",
-      "relation_primary_type": "political-influence-candidate",
+      "source_boundary": "官方目录校准旧113/116/284为作者112/115/283；作者112证秘密动员，115召集未执行，283/285证刘家筹建身份及兵权后续转移；不证法定军籍、国家正式编制或永久指挥",
+      "relation_primary_type": "reported-family-funded-and-raised-force",
       "relation_primary_target": "QS21-071",
-      "relation_evidence_status": "OPEN",
-      "parent_relation_caution": "刘氏与象甲卫调兵联系，无法证明独占所有权或合法编制"
+      "relation_evidence_status": "TEXT_REPORTED",
+      "parent_relation_caution": "文本确认刘家出资筹建及曾动员；洛城事变后兵权转移，不把早期筹建等同全时期法定所有或永久指挥"
     },
     {
       "id": "QS21-039",
@@ -1712,10 +1712,10 @@
       "score_confidence": "M",
       "old_W": 270,
       "W_delta": 95,
-      "chapters": "29,78,112",
-      "contribution": "刘家地方土地与出资打造象甲卫、动员/投入记录；法定军籍及稳定指挥隶属未证",
+      "chapters": "29,78；作者112、115、283、285",
+      "contribution": "刘家地方土地及出资筹建象甲卫/虎甲铁骑；作者283/285直接报告刘家精锐身份，同时显示洛城事变后兵权转移",
       "alias": "洛城刘氏",
-      "source_boundary": "刘氏私兵与公署合法军事单位分离",
+      "source_boundary": "刘氏私兵与国家正式军籍分离；筹建身份已文本确认，后续控制权随兵权转移而变化",
       "relation_primary_type": "independent-kinship-network",
       "relation_primary_target": null,
       "relation_evidence_status": "CLASSIFIED",
@@ -3282,24 +3282,26 @@
       "id": "R22-E034",
       "from": "QS21-071",
       "to": "QS21-038",
-      "type": "funded-and-mobilized-force; affiliation-open",
+      "type": "reported-family-funded-and-raised-force",
       "chapter_anchors": [
-        "作者113《天马流星》",
-        "作者116《舍小就大》",
-        "作者284《固原的石头》"
+        "作者112《天马流星》（转载平台Chapter 113）",
+        "作者115《舍小就大》（转载平台Chapter 116）",
+        "作者283《固原的石头》（WebNovel平台Chapter 284）",
+        "作者285《受命于天，既寿永昌》（WebNovel平台Chapter 286）"
       ],
-      "evidence_status": "CANDIDATE_OPEN",
-      "evidence": "刘家出资打造并有动员/投入记录；正式产权、法定军籍及稳定指挥隶属仍未证。 作者284《固原的石头》正文明确象甲卫为刘家出资打造的精锐，战场上象甲卫随刘家虎甲铁骑及宁朝一方投入固原之战；同段又提出其为何会为宁朝所用，故出资/建立与法律所有权、常设编制、当时指挥链须分开。作者116《舍小就大》中刘明显要求将偃师大营象甲卫调来护刘家大宅，但马车按刘衮此前安排转往祖陵，不能据此声称这次调兵已完成。作者113《天马流星》中刘家秘密调来精锐，象甲卫拒绝刘明显来救陈迹的请求，并称刘大人未交代此事；这只排除该次救援命令，不排除其它指挥关系。",
+      "evidence_status": "TEXT_REPORTED",
+      "evidence": "章号按WebNovel官方目录由旧113/116/284校正为作者112/115/283，并新增作者285。作者283旁白将虎甲铁骑和象甲卫并列为刘家巨资打造的精锐；作者285称两者为“刘家精锐”。作者112显示刘家秘密拉来象甲卫，作者115显示刘明显试图召集但该次未执行。确认刘家出资筹建及曾经动员部署；作者283/285同时显示洛城事变后兵权被夺、转由宁朝一方使用，不推法定军籍、国家正式编制、全时期产权或永久稳定指挥。",
       "legal_part_of_confirmed": false,
       "graph_visualize_as": "typed_relation_not_legal_direct_inclusion",
       "source_urls": [
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://en.webnovel.com/book/22444590709113204/86509009128978859",
+        "https://www.hualiandao.com/read/evbefzlp7t/po88kthnlq.html",
+        "https://www.fantinovels.com/190842/214506013.html",
+        "https://en.webnovel.com/book/22444590709113204/86553167784898803",
         "https://czbooks.net/n/s6ojkc/s66ekhem?chapterNumber=116",
-        "https://tw.ttkan.co/novel/pagea/qingshan-huishuohuadezhouzi_114.html",
         "https://czbooks.net/n/s6ojkc/s66e7e6c?chapterNumber=119",
-        "https://www.69shuba.com/txt/58851/38940268",
-        "https://czbooks.net/n/s6ojkc/s6o2n46n?chapterNumber=294",
-        "https://tw.ttkan.co/novel/pagea/qingshan-huishuohuadezhouzi_287.html",
-        "https://www.fantinovels.com/190842/214506013.html"
+        "https://www.69shuba.com/txt/58851/38940268"
       ]
     },
     {
@@ -3457,9 +3459,9 @@
     "relationships": {
       "total": 41,
       "statuses": {
-        "TEXT_REPORTED": 21,
+        "TEXT_REPORTED": 22,
         "OPERATING_RELATION": 14,
-        "CANDIDATE_OPEN": 5,
+        "CANDIDATE_OPEN": 4,
         "NEGATIVE_EQUIVALENCE": 1
       },
       "open_cases": [
@@ -3482,12 +3484,6 @@
           "to": "QS21-015"
         },
         {
-          "id": "R22-E034",
-          "type": "funded-and-mobilized-force; affiliation-open",
-          "from": "QS21-071",
-          "to": "QS21-038"
-        },
-        {
           "id": "R22-E039",
           "type": "formal-ownership-or-administrative-parentage-open",
           "from": "QS21-073",
@@ -3498,7 +3494,7 @@
         "R22-E035"
       ],
       "not_all_formal_admin_part_of": true,
-      "open_cases_sync_note": "2026-11-17: synchronized to typed_relations CANDIDATE_OPEN statuses; E030 is now TEXT_REPORTED after author128《连根拔起》direct insider statement and military-intelligence internal-account evidence. Remaining OPEN: E019, E032, E033, E034, E039."
+      "open_cases_sync_note": "2026-11-17: E034 upgraded to TEXT_REPORTED after official chapter-number correction and author283/285 direct Liu-family force evidence. Remaining OPEN: E019, E032, E033, E039."
     },
     "world_W": {
       "world_reference": 1000,
@@ -3563,12 +3559,12 @@
       "作者848《阉党细作》本轮仅取得ixdzs搜索摘要，正文页403；只用于补充上级交办/资金线索，不计全文核查。"
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
-    "r22_graph_sha": "e941f145f554574a2154b2687a4473ae84e0522c",
-    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。；2026-11-17：作者832《贪与痴》正文补充季氏掌柜被点明为司曹壬、并报告各家向胡家寻求襄助的背景；该章未直接提及《金陵晚报》，仅作人物联络角色背景，不作产权证据；E019保持CANDIDATE_OPEN，W不变。；2026-11-17：作者290《后会有期》（WebNovel平台Chapter 291）补充固原龙门客栈隐名东家与掌柜任命权限线索；东家身份、产权、与灯火关系及正式行政父级仍未证，R22-E039继续CANDIDATE_OPEN，QS21-083 W230不变。；2026-11-17：作者407《灯火客栈》可读正文补齐E029/E039原有题名锚，确认昌平与固原节点共享标识、陈设、暗号服务及人员身份识别；仅昌平节点明确出现盘账“东家”，固原产权与法定父级仍OPEN。；2026-11-17：作者128《连根拔起》公开摘要及连续内账语境补强红袖招与景朝军情司的经营/财务掩护关系，E030由CANDIDATE_OPEN升级TEXT_REPORTED；不推法定产权、官制part-of或完整常设指挥链，W170/L不变。",
+    "r22_graph_sha": "cfd3a9f0c7eee95833ad342aec19f75ae1757ee1",
+    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。；2026-11-17：作者832《贪与痴》正文补充季氏掌柜被点明为司曹壬、并报告各家向胡家寻求襄助的背景；该章未直接提及《金陵晚报》，仅作人物联络角色背景，不作产权证据；E019保持CANDIDATE_OPEN，W不变。；2026-11-17：作者290《后会有期》（WebNovel平台Chapter 291）补充固原龙门客栈隐名东家与掌柜任命权限线索；东家身份、产权、与灯火关系及正式行政父级仍未证，R22-E039继续CANDIDATE_OPEN，QS21-083 W230不变。；2026-11-17：作者407《灯火客栈》可读正文补齐E029/E039原有题名锚，确认昌平与固原节点共享标识、陈设、暗号服务及人员身份识别；仅昌平节点明确出现盘账“东家”，固原产权与法定父级仍OPEN。；2026-11-17：作者128《连根拔起》公开摘要及连续内账语境补强红袖招与景朝军情司的经营/财务掩护关系，E030由CANDIDATE_OPEN升级TEXT_REPORTED；不推法定产权、官制part-of或完整常设指挥链，W170/L不变。；2026-11-17：E034旧平台号113/116/284校正为作者112/115/283，并新增作者285；作者283/285直接确认象甲卫为刘家巨资筹建的刘家精锐，E034升级TEXT_REPORTED。洛城事变后兵权转移，不推法定军籍或永久指挥，W不变。",
     "typed_relations": 41,
     "relation_records": 41,
-    "candidate_open_relations": 5,
-    "text_reported_relations": 21,
+    "candidate_open_relations": 4,
+    "text_reported_relations": 22,
     "operating_relations": 14,
     "schema_normalization_note": "2026-11-17: R22-E040 imported legacy keys (source/target/relation_type/chapters/explanation) normalized to the R24 typed_relations schema (from/to/type/chapter_anchors/evidence). Stable ID, endpoints, relation meaning, status, source URLs and non-subordination boundary are unchanged; no object, relation, W score or Canvas topology was added or removed."
   },
@@ -3830,6 +3826,45 @@
         "不证明法定产权登记或工商权属",
         "不证明官制part-of或完整常设指挥链",
         "错页聚合页仅作连续内账语境交叉"
+      ]
+    },
+    {
+      "author_chapters": [
+        112,
+        115,
+        283,
+        285
+      ],
+      "titles": [
+        "天马流星",
+        "舍小就大",
+        "固原的石头",
+        "受命于天，既寿永昌"
+      ],
+      "status": "TARGETED_BODY_AND_SEARCH_EXCERPT_NOT_STRICT_PASS",
+      "readable_range": "112/115可读转载正文；283 WebNovel首段＋两站公开检索摘要；285 WebNovel正文第1–59行；官方目录完成作者号校准",
+      "source_urls": [
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://en.webnovel.com/book/22444590709113204/86509009128978859",
+        "https://www.hualiandao.com/read/evbefzlp7t/po88kthnlq.html",
+        "https://www.fantinovels.com/190842/214506013.html",
+        "https://en.webnovel.com/book/22444590709113204/86553167784898803",
+        "https://czbooks.net/n/s6ojkc/s66ekhem?chapterNumber=116",
+        "https://czbooks.net/n/s6ojkc/s66e7e6c?chapterNumber=119",
+        "https://www.69shuba.com/txt/58851/38940268"
+      ],
+      "finding": "作者283旁白将虎甲铁骑和象甲卫并列为刘家巨资打造的精锐；作者285称两者为刘家精锐。作者112证秘密动员，115本次召集未执行；283/285同时显示兵权后续转移。",
+      "classification_candidate": "R22-E034：reported-family-funded-and-raised-force，TEXT_REPORTED",
+      "promoted_to_object": false,
+      "W_assigned": false,
+      "relations_added": false,
+      "relation_updated": true,
+      "relation_id": "R22-E034",
+      "limits": [
+        "作者283中后段来自公开搜索摘要，非完整正文回读",
+        "不计逐章全文PASS",
+        "不证明法定军籍或国家正式编制",
+        "不证明全时期产权或永久稳定指挥"
       ]
     }
   ]
