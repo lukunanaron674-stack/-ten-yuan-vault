@@ -6,7 +6,7 @@
   "description": "Whole fictional-world social influence and organization research atlas. Topical category group edges do not signify legal parent-of.",
   "input_refs": {
     "r21_sha": "6cf558bce4d508fa2ee6beb6cfa398fb6ca4f255",
-    "r22_graph_sha": "f5975728eac30588dec43aa5ee1e13103df44b7e",
+    "r22_graph_sha": "0e6ccee930feccda7a4c54e067d220e424f67c03",
     "r23_W_sha": "0a7d3673a6b30b52c1bfe233ed65c41ed174a3dd",
     "index_sha": "a46ccfb15c2b536e4f4077855ca5aca8affdf7d1"
   },
@@ -2029,10 +2029,10 @@
       "score_confidence": "M",
       "old_W": null,
       "W_delta": null,
-      "chapters": "229,230,242,246,407",
+      "chapters": "229,230,242,246,290,407",
       "contribution": "固原龙门客栈跨境消息经纪与旅行生意、偷渡候选",
       "alias": "龙门客栈（固原）",
-      "source_boundary": "作者242《密道》直接报告固原龙门掌柜为灯火同僚并称“我灯火客栈”，支持灯火关联服务节点；作者407《灯火客栈》为跨地点暗号/掌柜向东家报告补证。法定产权/隶属仍未证，W230及区间150–310不变。",
+      "source_boundary": "作者242《密道》直接报告灯火同僚与灯火关联服务节点；作者290《后会有期》（WebNovel平台Chapter 291）补充小五拟接任掌柜、但掌柜更替并非小五或胡三爷可独自决定，且存在未露面的隐名东家。东家身份、其与灯火关系、登记产权/股权及正式行政父级仍未证，见R22-E039；W230与区间150–310不变。",
       "relation_primary_type": "business-or-service-entity",
       "relation_primary_target": null,
       "relation_evidence_status": "UNKNOWN_PARENT",
@@ -3378,16 +3378,20 @@
       "chapter_anchors": [
         "作者242《密道》",
         "作者246《真正的密道》",
-        "作者407《灯火客栈》"
+        "作者407《灯火客栈》",
+        "作者290《后会有期》（WebNovel平台Chapter 291）"
       ],
       "evidence_status": "CANDIDATE_OPEN",
-      "evidence": "作者242正文已文本报告灯火掌柜同僚身份及灯火客栈服务运营，但不能推出客栈登记产权、股权或正式行政隶属；未找到产权/编制/直属文书，仅保留法律所有权及正式父级OPEN。E029另记文本报告经营关联。",
+      "evidence": "作者242正文已文本报告灯火掌柜同僚身份及灯火客栈服务运营，但不能推出客栈登记产权、股权或正式行政隶属；未找到产权/编制/直属文书，仅保留法律所有权及正式父级OPEN。E029另记文本报告经营关联。 作者290《后会有期》（WebNovel平台Chapter 291）显示小五称将接任掌柜，叙述者判断掌柜更替并非小五或胡三爷可独自决定；小五提到东家后警惕闭口，陈迹据此判断其刚经密道出城面见客栈背后的神秘东家，且对方也在固原。支持隐名高层决策者及掌柜任命权限线索；但东家身份、产权、股权、与灯火关系及正式行政父级未揭示，E039继续CANDIDATE_OPEN。作者题名按WebNovel官方目录校准，镜像编号差异见R24作者290证据卡。",
       "legal_part_of_confirmed": false,
       "graph_visualize_as": "formal_ownership_or_legal_parentage_open_not_confirmed",
       "source_urls": [
         "https://www.webnovel.com/book/22444590709113204/catalog",
         "https://czbooks.net/n/s6ojkc/s6onf31e?chapterNumber=246",
-        "https://www.piaotia.com/html/15/15702/11485597.html"
+        "https://www.piaotia.com/html/15/15702/11485597.html",
+        "https://www.webnovel.com/book/22444590709113204/86694686940517921",
+        "https://m.rongshuxia.com/bookquery/fobpjdvxkgiq",
+        "https://www.dingdian888.com/xiaoshuo/733514/"
       ]
     },
     {
@@ -3557,8 +3561,8 @@
       "作者848《阉党细作》本轮仅取得ixdzs搜索摘要，正文页403；只用于补充上级交办/资金线索，不计全文核查。"
     ],
     "r24_boundary": "全记录与图的首轮交叉反查完成；并非穷尽全书全部组织、法定隶属、产权或世界影响精确数值",
-    "r22_graph_sha": "f5975728eac30588dec43aa5ee1e13103df44b7e",
-    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。；2026-11-17：作者832《贪与痴》正文补充季氏掌柜被点明为司曹壬、并报告各家向胡家寻求襄助的背景；该章未直接提及《金陵晚报》，仅作人物联络角色背景，不作产权证据；E019保持CANDIDATE_OPEN，W不变。",
+    "r22_graph_sha": "0e6ccee930feccda7a4c54e067d220e424f67c03",
+    "r22_update_note": "R22-E032新增作者826《盐引》题名映射与道庭人员/任务活动转述证据；场所产权/长期治理/法定直属仍OPEN，边状态、W、对象与Canvas不变。；2026-11-17：作者758《卖首级》补充中军都督府对备倭军军功核验/监军职责的文本报告，新增E040 TEXT_REPORTED；与E037一次接管/看管分开，不证明法定直属。；2026-11-17：作者517《棋手》补充景朝军情司通过《京城晨报》刊载文章传递一次藏头消息，新增E041 OPERATING_RELATION；不证明产权、管理或长期渠道。；2026-11-17：作者846–847正文及作者848搜索摘要补强漕帮成员刘成团队实际印刷/发行《金陵晚报》，R22-E036由TEXT_REPORTED升级OPERATING_RELATION；E019产权仍OPEN，W不变。；2026-11-17：作者519《凭姨》（WebNovel平台Chapter 520）搜索摘要补充军情司曾试探《京城晨报》可靠性，随后静默等待再次启用；仅SEARCH_EXCERPT_ONLY，E041仍OPERATING_RELATION，不证明重复传递或长期稳定渠道。；2026-11-17：作者832《贪与痴》正文补充季氏掌柜被点明为司曹壬、并报告各家向胡家寻求襄助的背景；该章未直接提及《金陵晚报》，仅作人物联络角色背景，不作产权证据；E019保持CANDIDATE_OPEN，W不变。；2026-11-17：作者290《后会有期》（WebNovel平台Chapter 291）补充固原龙门客栈隐名东家与掌柜任命权限线索；东家身份、产权、与灯火关系及正式行政父级仍未证，R22-E039继续CANDIDATE_OPEN，QS21-083 W230不变。",
     "typed_relations": 41,
     "relation_records": 41,
     "candidate_open_relations": 6,
@@ -3747,6 +3751,33 @@
         "该章未直接提及《金陵晚报》",
         "不证明季氏商行或漕帮拥有报纸、出资或控制编辑",
         "E019继续CANDIDATE_OPEN；不计逐章全文PASS"
+      ]
+    },
+    {
+      "author_chapter": 290,
+      "title": "后会有期",
+      "platform_chapter": 291,
+      "status": "TARGETED_BODY_PAGE_READ_NOT_STRICT_PASS",
+      "readable_range": "WebNovel正文第9–33行；第66行起显示Locked Chapter，未见章末",
+      "source_urls": [
+        "https://www.webnovel.com/book/22444590709113204/catalog",
+        "https://www.webnovel.com/book/22444590709113204/86694686940517921",
+        "https://www.1024txt.com/book/498147/",
+        "https://m.rongshuxia.com/bookquery/fobpjdvxkgiq",
+        "https://www.dingdian888.com/xiaoshuo/733514/"
+      ],
+      "finding": "小五称将接任龙门客栈掌柜；叙述者判断掌柜更替并非小五或胡三爷可独自决定；小五提及东家后警惕闭口，陈迹据此判断其刚经密道出城面见客栈背后的神秘东家，且对方也在固原。支持存在高于店内掌柜/胡三爷的隐名决策者及掌柜任命权限线索，但东家身份、产权、股权、与灯火关系和法定行政父级未明。",
+      "classification_candidate": "QS21-083固原龙门客栈：隐名东家/掌柜任命权限线索，保留R22-E039 OPEN",
+      "promoted_to_object": false,
+      "W_assigned": false,
+      "relations_added": false,
+      "relation_updated": true,
+      "relation_id": "R22-E039",
+      "limits": [
+        "WebNovel正文仅公开第9–33行，第66行起锁章，未见章末，不计全文PASS。",
+        "作者题名按官方目录校准为290《后会有期》（平台Chapter 291）；1024txt/TTKS镜像存在+1编号差异。",
+        "东家身份、产权、股权、与灯火关系、正式行政父级均未揭示。",
+        "不新增组织对象、关系边或W分值。"
       ]
     }
   ]
