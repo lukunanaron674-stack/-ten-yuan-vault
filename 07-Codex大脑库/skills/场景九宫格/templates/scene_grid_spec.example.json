@@ -1,0 +1,29 @@
+{
+ "card": "SCENE-GRID-<场景代号>",
+ "desc": "<场景名> 九宫格：同一空间九个机位，兼作分镜选址表",
+ "template": "templates/h3img_2k.json",
+ "out_prefix": "h3img_scenegrid",
+ "ref_dir": "<场景定帧所在目录>",
+ "char_ref": null,
+ "width": 2560,
+ "height": 1408,
+ "seed": 20261191,
+ "cast": {},
+ "style_block": "<全局风格常量：与正片一致的画风句，七镜/九格共用同一段文字>",
+ "notes": [
+  "全格禁人：角色不进九宫格。",
+  "材质与色温清单必须置顶，否则地板/天花会被替换。",
+  "九宫格是选址表，单格 853×469 不足以做 I2VA 首帧，选定机位后须单独重出 2560×1408。"
+ ],
+ "shots": [
+  {
+   "key": "G9",
+   "name": "<场景名>·九机位",
+   "scene_ref": "<定帧文件名>",
+   "char_ref": null,
+   "cast": [],
+   "seeds": [20261191],
+   "prompt": "Additions that must hold in EVERY panel: the floor is <具体材质>, never stone or tile; the ceiling is <具体材质>, never pale plaster; the <关键家具> is <颜色材质>; and a <副光> shadow sits in <位置>, contrasting the <主光>. Keep exactly these materials and this palette in all nine panels.\n\nCreate one single image that is a contact sheet: exactly 3 columns by 3 rows, nine equal landscape panels separated by slim pale grey gutters, thin and even. Every panel shows THE SAME <空间名> - the same <材质1>, the same <材质2>, the same <光源>. Lighting and palette are identical in all nine panels; only the camera position changes.\n\nPanel 1: <入口全景，正对主区>\nPanel 2: <高机位俯视主区>\nPanel 3: <过道纵深，同向消失点>\nPanel 4: <次要出口，暖光外溢>\nPanel 5: <低机位仰视顶面与灯>\nPanel 6: <角落家具与台灯，软焦背景>\nPanel 7: <物件微距>\nPanel 8: <贴地机位，地面材质>\nPanel 9: <反打，从主区回望入口>\n\nRule for all panels: absolutely no people, no figures, no hands, no faces. Empty room in every panel. No text, no labels, no numbers, no panel captions, no watermark. Nothing is cropped out of a panel and no panel repeats another.\n\n<style_block 原文粘贴于此>"
+  }
+ ]
+}
