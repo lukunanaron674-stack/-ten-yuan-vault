@@ -1,0 +1,149 @@
+{
+  "nodes": [
+    {
+      "id": "goal",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 190,
+      "color": "2",
+      "text": "# 72小时现金流总树 | 2026-11-20—11-22\n硬目标：实际到账¥1000\n状态：找到了公开需求，尚未代为报名/签约/收款\n成功判据：真实到账；截止11月22日"
+    },
+    {
+      "id": "prior",
+      "type": "text",
+      "x": 0,
+      "y": 280,
+      "width": 600,
+      "height": 140,
+      "color": "6",
+      "text": "## 继承已有BOSS求职研究\n《方志敏》4分17秒成片是最强证明；《黎黎隆》尚在开发，不当商用成片。\n不重新做长期作品集，只摘取展示镜头。"
+    },
+    {
+      "id": "leads",
+      "type": "text",
+      "x": -650,
+      "y": 520,
+      "width": 530,
+      "height": 275,
+      "color": "4",
+      "text": "## A｜真实公开需求 [DONE：已检索]\nP0 ¥500 动态字幕四组入画（11/19）\nhttps://www.vjshi.com/service/demands/950928057704572\nP0 ¥3000预算历史传奇AI视频（11/18）\nhttps://www.vjshi.com/service/demands/949928821016306\nP1 ¥300 口播包装\nhttps://www.vjshi.com/service/demands/949120332335550"
+    },
+    {
+      "id": "product",
+      "type": "text",
+      "x": 80,
+      "y": 520,
+      "width": 530,
+      "height": 250,
+      "color": "4",
+      "text": "## B｜试售服务 [READY]\n¥399：图片→5–8秒动效，1次小改\n¥699：15–20秒AI宣传短片，2–3镜头、1次小改\n¥500：AE动态字幕，明确范围\n注意模型成本/平台费和保证可实现的交期"
+    },
+    {
+      "id": "proof",
+      "type": "text",
+      "x": 760,
+      "y": 520,
+      "width": 530,
+      "height": 230,
+      "color": "1",
+      "text": "## C｜成交证明 [BLOCKED]\n用户需要提供成片可播放地址/已有展示片。\n《以青春赴可爱的中国》成片4分17秒。\n不要将开发中项目标记为已交付。"
+    },
+    {
+      "id": "apply",
+      "type": "text",
+      "x": -650,
+      "y": 900,
+      "width": 530,
+      "height": 235,
+      "color": "1",
+      "text": "## D｜有效触达 [NOT DONE]\n[ ] 字幕急单报名\n[ ] 历史传奇AI视频报名\n[ ] 给熟人/商家发送15次针对性邀约\n[ ] 核对甲方是否真的还在招募\n不将打开页面算作报名"
+    },
+    {
+      "id": "contract",
+      "type": "text",
+      "x": 80,
+      "y": 900,
+      "width": 530,
+      "height": 245,
+      "color": "1",
+      "text": "## E｜报价成交 [NO CONFIRMED DEAL]\n问：素材/参考/时长/源工程/修改次数\n问：预付与尾款、验收日、何时真正到账\n平台担保优先；不缴保证金；不免费长试稿"
+    },
+    {
+      "id": "paid",
+      "type": "text",
+      "x": 760,
+      "y": 900,
+      "width": 530,
+      "height": 240,
+      "color": "1",
+      "text": "## F｜到账判据 [NO RECEIPT VERIFIED]\n实际到账≥¥1000才完成\n24h无客户进展：同步找合法日结兼职\n48h无付款节点：停止高成本试做\n72h结案，未达标记差额，不虚报"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge0",
+      "fromNode": "goal",
+      "fromSide": "bottom",
+      "toNode": "prior",
+      "toSide": "top"
+    },
+    {
+      "id": "edge1",
+      "fromNode": "prior",
+      "fromSide": "bottom",
+      "toNode": "leads",
+      "toSide": "top"
+    },
+    {
+      "id": "edge2",
+      "fromNode": "prior",
+      "fromSide": "bottom",
+      "toNode": "product",
+      "toSide": "top"
+    },
+    {
+      "id": "edge3",
+      "fromNode": "prior",
+      "fromSide": "bottom",
+      "toNode": "proof",
+      "toSide": "top"
+    },
+    {
+      "id": "edge4",
+      "fromNode": "leads",
+      "fromSide": "bottom",
+      "toNode": "apply",
+      "toSide": "top"
+    },
+    {
+      "id": "edge5",
+      "fromNode": "product",
+      "fromSide": "bottom",
+      "toNode": "contract",
+      "toSide": "top"
+    },
+    {
+      "id": "edge6",
+      "fromNode": "proof",
+      "fromSide": "bottom",
+      "toNode": "paid",
+      "toSide": "top"
+    },
+    {
+      "id": "edge7",
+      "fromNode": "apply",
+      "fromSide": "bottom",
+      "toNode": "contract",
+      "toSide": "top"
+    },
+    {
+      "id": "edge8",
+      "fromNode": "contract",
+      "fromSide": "bottom",
+      "toNode": "paid",
+      "toSide": "top"
+    }
+  ]
+}
