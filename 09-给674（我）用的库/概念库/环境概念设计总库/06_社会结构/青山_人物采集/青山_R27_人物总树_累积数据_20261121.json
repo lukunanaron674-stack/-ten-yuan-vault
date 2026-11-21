@@ -1,0 +1,2041 @@
+{
+  "schema": "qingshan-character-graph-v0.3",
+  "date": "2026-11-21",
+  "issue": "674-353",
+  "stage": "R27_INCREMENT_DELIVERED_PARTIAL",
+  "parent_issue": "674-334",
+  "source_r25_path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R25_人物证据与关系_种子数据_20261121.json",
+  "source_r25_sha": "c8bd72a29831d86c4d6c9d0d18b14ad02c4627f9",
+  "source_org_r24_path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_全组织总树_114对象统一数据_20261115.json",
+  "source_org_r24_sha": "b1708f6c9cce2694e4d0110ec521355b8296adb0",
+  "covered_chapters_this_round": [
+    394,
+    395,
+    396,
+    397,
+    398
+  ],
+  "source_quality": "基于已归档逐章采矿记录，不虚称本轮重读出版方全文",
+  "chapter_status_conflict": "作者395既有不同分片对strict PASS判定冲突：一份PASS，一份PARTIAL；本轮人物采集不代裁决，完整全书PASS进度不修改。",
+  "identity_open_questions": [
+    "‘姚满’与‘小满’可能同人但未在本轮获得充分直接同一性锚，暂不新增独立角色，保留为待核称谓",
+    "‘廖忠’与既有‘廖先生’身份待检，不自动新增或合并",
+    "‘张铮’与‘太子（姓名未核）’没有本轮可采纳的同一性证据，原R25两卡保留",
+    "陈府持山鬼花钱小厮与追踪/持斧小厮不合并",
+    "五猖什长、百夫长为可单独行动的超自然角色，非R24人间组织"
+  ],
+  "people": [
+    {
+      "id": "QSP-0001",
+      "name": "陈迹",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "东宫右司卫的既有任职被章节提及；卷入寻粮、调查、冲突及后期报纸印发",
+      "source_chapters": [
+        259,
+        260,
+        262,
+        263,
+        393,
+        847
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 259,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 260,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者260寻粮_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 262,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 263,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 393,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 847,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_E036_作者846-848_金陵晚报印刷发行运营链补证_20261117.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0002",
+      "name": "张夏",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "被白龙提出招揽，未接受；曾公开维护陈迹",
+      "source_chapters": [
+        259,
+        262,
+        263,
+        393
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 259,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 262,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 263,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 393,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0003",
+      "name": "白龙",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "自述统筹假降引敌计划并现场命令三名潜伏观察者；密谍司职衔待补证",
+      "source_chapters": [
+        259
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 259,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0004",
+      "name": "周遊",
+      "aliases": [
+        "周游"
+      ],
+      "type": "PERSON",
+      "summary": "边军指挥层人物；被白龙描述为假降计划参与者（按其陈述）",
+      "source_chapters": [
+        259
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 259,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0005",
+      "name": "李玄",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "带领羽林军寻粮、向太子奏请处分齐斟酌并获批准",
+      "source_chapters": [
+        260,
+        262,
+        263
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 260,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者260寻粮_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 262,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 263,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0006",
+      "name": "齐斟酌",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "羽林军副指挥使后被贬伍长；与陈迹发生争执冲突",
+      "source_chapters": [
+        260,
+        262,
+        263,
+        393
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 260,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者260寻粮_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 262,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 263,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 393,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0007",
+      "name": "陈礼钦",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "参与寻粮纪律劝告，并向王贵作家内差遣",
+      "source_chapters": [
+        260,
+        262,
+        263
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 260,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者260寻粮_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 262,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 263,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0008",
+      "name": "陈问宗",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "参加寻粮；拒绝替李玄迫使陈迹原谅",
+      "source_chapters": [
+        260,
+        262,
+        263
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 260,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者260寻粮_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 262,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 263,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0009",
+      "name": "王贵",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "陈家随行家仆，受陈礼钦差遣调粮；代表陈家询问军粮",
+      "source_chapters": [
+        260,
+        263
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 260,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者260寻粮_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 263,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0010",
+      "name": "小满",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "就张夏维护陈迹的言语作出回应；与陈迹同行关系待详核",
+      "source_chapters": [
+        263
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 263,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0011",
+      "name": "徐术",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "钦天监副监正；曾拒绝张夏求授行官门径（回忆）",
+      "source_chapters": [
+        259
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 259,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0012",
+      "name": "张铮",
+      "aliases": [
+        "张錚"
+      ],
+      "type": "PERSON",
+      "summary": "263章参与粮食对话；393章列为人物；具体身份须回原文校勘",
+      "source_chapters": [
+        263,
+        393
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 263,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 393,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0013",
+      "name": "太子（姓名未核）",
+      "aliases": [],
+      "type": "UNRESOLVED_IDENTITY",
+      "summary": "监督寻粮并批准军纪处分；不得自动合并到张铮",
+      "source_chapters": [
+        260,
+        262,
+        263,
+        393
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 260,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者260寻粮_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 262,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 263,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        },
+        {
+          "chapter": 393,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0014",
+      "name": "周旷",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "曾任五军营，失官后在福王身边护卫；万岁军招揽未成",
+      "source_chapters": [
+        393
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 393,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0015",
+      "name": "周怀瑾",
+      "aliases": [],
+      "type": "HISTORICAL_PERSON",
+      "summary": "历史人物；护驾事迹有茶馆民间版本，周家门径名称恢复有章内叙述",
+      "source_chapters": [
+        393
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 393,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0016",
+      "name": "福王",
+      "aliases": [],
+      "type": "TITLED_PERSON",
+      "summary": "与周旷有现场护卫、社交接触；王爵是身份而非独立组织",
+      "source_chapters": [
+        393
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 393,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0017",
+      "name": "羊羊",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "提议周旷、陈迹加入万岁军；仅证明招揽意向",
+      "source_chapters": [
+        393
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 393,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0018",
+      "name": "廖先生",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "毒箭出现时发出保护太子的现场指令",
+      "source_chapters": [
+        393
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 393,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0019",
+      "name": "宁朝太祖（未核姓名）",
+      "aliases": [],
+      "type": "HISTORICAL_PERSON",
+      "summary": "章内开国战事叙述与门径更名批复关联人物",
+      "source_chapters": [
+        393
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 393,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0020",
+      "name": "北魏皇帝（未核姓名）",
+      "aliases": [],
+      "type": "HISTORICAL_PERSON",
+      "summary": "茶馆版本涉及的历史皇帝；不得当作当前在位者",
+      "source_chapters": [
+        393
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 393,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0021",
+      "name": "小五",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "龙门客栈伙计，告知陈迹一早离开并评论粮食争议",
+      "source_chapters": [
+        262
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 262,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0022",
+      "name": "刘成",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "自称漕帮吕爷手下，实际负责雕版印报、组织发行与收款",
+      "source_chapters": [
+        847
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 847,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_E036_作者846-848_金陵晚报印刷发行运营链补证_20261117.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0023",
+      "name": "吕爷",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "刘成称其为所从属的漕帮人物，尚未独立直接核验其职衔",
+      "source_chapters": [
+        847
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 847,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_E036_作者846-848_金陵晚报印刷发行运营链补证_20261117.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0024",
+      "name": "姚安",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "既有R24证据指其委托季氏一方筹办、刊印报纸；法定产权未证",
+      "source_chapters": [
+        847
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 847,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_E036_作者846-848_金陵晚报印刷发行运营链补证_20261117.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0025",
+      "name": "胡将军（姓名未核）",
+      "aliases": [],
+      "type": "UNRESOLVED_IDENTITY",
+      "summary": "边军甲士代其向陈迹转达邀约，身份和邀约目的待核",
+      "source_chapters": [
+        263
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 263,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0026",
+      "name": "郑继业",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "R24证据指其在作者814章被任为中军都督府指挥使",
+      "source_chapters": [
+        814
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 814,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_全组织世界体量树_终局整合阅读版_20261115.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0027",
+      "name": "宝丰斋老板（未具名）",
+      "aliases": [],
+      "type": "ANONYMOUS_PERSON",
+      "summary": "向白龙请罪并接受返回无念山指令，店铺产权归属未证",
+      "source_chapters": [
+        259
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 259,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0028",
+      "name": "裁缝铺老板娘（未具名）",
+      "aliases": [],
+      "type": "ANONYMOUS_PERSON",
+      "summary": "向白龙请罪并接受返回无念山指令，店铺产权归属未证",
+      "source_chapters": [
+        259
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 259,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0029",
+      "name": "街口打更人（未具名）",
+      "aliases": [],
+      "type": "ANONYMOUS_PERSON",
+      "summary": "向白龙请罪并接受返回无念山指令，雇佣及组织隶属待核",
+      "source_chapters": [
+        259
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 259,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md",
+          "basis": "已有逐章采矿记录，不等于本轮重读出版原文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0030",
+      "name": "羊放",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "战时为保护羊羊挡下骨箭，当场死亡；不推断其家属、职位或生前完整履历",
+      "source_chapters": [
+        394
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 394,
+          "title": "百夫长",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者394_百夫长_正文核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj67poja?chapterNumber=399",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0031",
+      "name": "羊贤",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "战时为保护羊羊挡下骨箭，当场死亡；不推断其家属、职位或生前完整履历",
+      "source_chapters": [
+        394
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 394,
+          "title": "百夫长",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者394_百夫长_正文核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj67poja?chapterNumber=399",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0032",
+      "name": "封刀接骨五猖百夫长（未具名）",
+      "aliases": [],
+      "type": "SUPERNATURAL_CHARACTER",
+      "summary": "自述五路大军中小百夫长；带队追击陈迹并派游山捕猎小队追踪",
+      "source_chapters": [
+        394,
+        395
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 394,
+          "title": "百夫长",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者394_百夫长_正文核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj67poja?chapterNumber=399",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        },
+        {
+          "chapter": 395,
+          "title": "幕后主使",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者395_幕后主使_正文双源穷尽核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj6807of?chapterNumber=400",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0033",
+      "name": "游山捕猎五猖什长（未具名）",
+      "aliases": [],
+      "type": "SUPERNATURAL_CHARACTER",
+      "summary": "受指挥参与十名游山捕猎的追踪，判读断草及行迹；日常军籍未知",
+      "source_chapters": [
+        395
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 395,
+          "title": "幕后主使",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者395_幕后主使_正文双源穷尽核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj6807of?chapterNumber=400",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0034",
+      "name": "梁氏",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "与陈家旧案相关，被陈迹怀疑；397章与陈礼治的保密/威胁直接对话有章证",
+      "source_chapters": [
+        395,
+        397
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 395,
+          "title": "幕后主使",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者395_幕后主使_正文双源穷尽核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj6807of?chapterNumber=400",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        },
+        {
+          "chapter": 397,
+          "title": "灭口",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj680h7i?chapterNumber=402",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0035",
+      "name": "陈礼治",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "陈家二房相关人物；397章向府中主事下令追捕，并与梁氏谈及报仇与知情压力",
+      "source_chapters": [
+        395,
+        397
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 395,
+          "title": "幕后主使",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者395_幕后主使_正文双源穷尽核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj6807of?chapterNumber=400",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        },
+        {
+          "chapter": 397,
+          "title": "灭口",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj680h7i?chapterNumber=402",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0036",
+      "name": "小和尚",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "396章与小满在陈府共同生活/劳动，遭追击并获张黎协助脱身；对行官门径自述不作组织证明",
+      "source_chapters": [
+        395,
+        396
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 395,
+          "title": "幕后主使",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者395_幕后主使_正文双源穷尽核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj6807of?chapterNumber=400",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        },
+        {
+          "chapter": 396,
+          "title": "六壬",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者396_六壬_正文核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj6807oi?chapterNumber=401",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0037",
+      "name": "张黎",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "自称黄山道庭首徒；驾车使用术法救小满和小和尚，救援已执行而后续安全未证",
+      "source_chapters": [
+        396
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 396,
+          "title": "六壬",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者396_六壬_正文核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj6807oi?chapterNumber=401",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0038",
+      "name": "张拙",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "小满拟求助的吏部衙门相关人物；398章接见陈问德并听取政治游说，未证结盟",
+      "source_chapters": [
+        396,
+        398
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 396,
+          "title": "六壬",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者396_六壬_正文核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj6807oi?chapterNumber=401",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        },
+        {
+          "chapter": 398,
+          "title": "猎物与猎人",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj68105j?chapterNumber=403",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0039",
+      "name": "陈问德",
+      "aliases": [],
+      "type": "PERSON",
+      "summary": "拜访张拙并以齐陈联姻等政治条件游说其对付陈家大房；政治交易结果未证",
+      "source_chapters": [
+        398
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 398,
+          "title": "猎物与猎人",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj68105j?chapterNumber=403",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0040",
+      "name": "陈家二房主事（未具名）",
+      "aliases": [],
+      "type": "ANONYMOUS_PERSON",
+      "summary": "397章向陈礼治报告并承接追捕安排；实际调动漕帮是否成功未证",
+      "source_chapters": [
+        397
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 397,
+          "title": "灭口",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj680h7i?chapterNumber=402",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0041",
+      "name": "陈府持山鬼花钱小厮（未具名）",
+      "aliases": [],
+      "type": "ANONYMOUS_PERSON",
+      "summary": "与追捕小满和小和尚的陈府袭击者有关，持山鬼花钱召唤攻击；正式归属待核",
+      "source_chapters": [
+        396
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 396,
+          "title": "六壬",
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者396_六壬_正文核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj6807oi?chapterNumber=401",
+          "basis": "GitHub既有组织采矿章证记录；本轮未重新取得出版原章全文"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0042",
+      "name": "廖忠（与廖先生待核同体）",
+      "aliases": [],
+      "type": "UNRESOLVED_IDENTITY",
+      "summary": "太子随行秘密行动负责人；402章实际实施死士灭口；本轮不能证明与395章‘廖先生’同一人",
+      "source_chapters": [
+        401
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 401,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj68198m?chapterNumber=406",
+          "basis": "R10组织实查片段；不等于此轮独立双源复核"
+        }
+      ]
+    },
+    {
+      "id": "QSP-0043",
+      "name": "太子私人死士证人（未具名）",
+      "aliases": [],
+      "type": "ANONYMOUS_PERSON",
+      "summary": "402章向廖忠陈述过去曾为太子行刺杀事，随后出现灭口行动；不把其口述旧案当司法证成",
+      "source_chapters": [
+        402
+      ],
+      "first_appearance_verified": false,
+      "affiliation_status": "NOT_ASSUMED",
+      "world_impact_P": null,
+      "world_impact_status": "P?",
+      "ten_yuan": null,
+      "ten_yuan_status": "NOT_EVALUATED",
+      "evidence_level": "EXISTING_CHAPTER_NOTES_PARTIAL",
+      "evidence_sources": [
+        {
+          "chapter": 402,
+          "path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+          "primary_mirror_url": "https://czbooks.net/n/s6ojkc/hj681iie?chapterNumber=407",
+          "basis": "R10组织实查片段；不等于此轮独立双源复核"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "QSPR-0001",
+      "source": "QSP-0003",
+      "target": "QSP-0001",
+      "type": "issued-instruction",
+      "chapter": 259,
+      "description": "白龙要求陈迹接近太子，并转招揽张夏",
+      "evidence_status": "ACTION_REPORTED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md"
+    },
+    {
+      "id": "QSPR-0002",
+      "source": "QSP-0003",
+      "target": "QSP-0004",
+      "type": "reported-cooperation",
+      "chapter": 259,
+      "description": "白龙自述以假降诱景朝天策军的做局合作",
+      "evidence_status": "PARTICIPANT_TESTIMONY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md"
+    },
+    {
+      "id": "QSPR-0003",
+      "source": "QSP-0003",
+      "target": "QSP-0027",
+      "type": "gave-order",
+      "chapter": 259,
+      "description": "命其返无念山",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md"
+    },
+    {
+      "id": "QSPR-0004",
+      "source": "QSP-0003",
+      "target": "QSP-0028",
+      "type": "gave-order",
+      "chapter": 259,
+      "description": "命其返无念山",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md"
+    },
+    {
+      "id": "QSPR-0005",
+      "source": "QSP-0003",
+      "target": "QSP-0029",
+      "type": "gave-order",
+      "chapter": 259,
+      "description": "命其返无念山",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md"
+    },
+    {
+      "id": "QSPR-0006",
+      "source": "QSP-0003",
+      "target": "QSP-0002",
+      "type": "recruitment-proposal-via-intermediary",
+      "chapter": 259,
+      "description": "仅通过陈迹提出招揽，张夏未接受",
+      "evidence_status": "PROPOSAL_NOT_ACCEPTED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md"
+    },
+    {
+      "id": "QSPR-0007",
+      "source": "QSP-0011",
+      "target": "QSP-0002",
+      "type": "refused-training-request",
+      "chapter": 259,
+      "description": "此前求授门径遭拒，为对话中的回忆",
+      "evidence_status": "REPORTED_HISTORY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md"
+    },
+    {
+      "id": "QSPR-0008",
+      "source": "QSP-0005",
+      "target": "QSP-0001",
+      "type": "funds-for-procurement",
+      "chapter": 260,
+      "description": "交500两佛门通宝供采购；交易尚未完成",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者260寻粮_20261114.md"
+    },
+    {
+      "id": "QSPR-0009",
+      "source": "QSP-0007",
+      "target": "QSP-0009",
+      "type": "household-instruction",
+      "chapter": 260,
+      "description": "命王贵取出其藏粮",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者260寻粮_20261114.md"
+    },
+    {
+      "id": "QSPR-0010",
+      "source": "QSP-0006",
+      "target": "QSP-0001",
+      "type": "physical-conflict",
+      "chapter": 262,
+      "description": "发生肢体冲突；不等于家族或组织冲突",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md"
+    },
+    {
+      "id": "QSPR-0011",
+      "source": "QSP-0005",
+      "target": "QSP-0006",
+      "type": "disciplinary-petition",
+      "chapter": 262,
+      "description": "奏请革副指挥使、贬伍长",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md"
+    },
+    {
+      "id": "QSPR-0012",
+      "source": "QSP-0013",
+      "target": "QSP-0006",
+      "type": "sanction-approved",
+      "chapter": 262,
+      "description": "太子批准军纪处分",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md"
+    },
+    {
+      "id": "QSPR-0013",
+      "source": "QSP-0002",
+      "target": "QSP-0001",
+      "type": "public-defense",
+      "chapter": 262,
+      "description": "公开反驳他人对陈迹的指责",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md"
+    },
+    {
+      "id": "QSPR-0014",
+      "source": "QSP-0005",
+      "target": "QSP-0008",
+      "type": "mediation-request-refused",
+      "chapter": 263,
+      "description": "请其代为说情，遭拒",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md"
+    },
+    {
+      "id": "QSPR-0015",
+      "source": "QSP-0008",
+      "target": "QSP-0001",
+      "type": "respects-autonomy",
+      "chapter": 263,
+      "description": "拒绝替他决定是否原谅",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md"
+    },
+    {
+      "id": "QSPR-0016",
+      "source": "QSP-0025",
+      "target": "QSP-0001",
+      "type": "invitation-via-messenger",
+      "chapter": 263,
+      "description": "由边军甲士传话邀请，未证会面",
+      "evidence_status": "MESSAGE_REPORTED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者263胡将军有请_20261114.md"
+    },
+    {
+      "id": "QSPR-0017",
+      "source": "QSP-0017",
+      "target": "QSP-0014",
+      "type": "recruitment-proposal",
+      "chapter": 393,
+      "description": "招揽进入万岁军，未成",
+      "evidence_status": "PROPOSAL_NOT_ACCEPTED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md"
+    },
+    {
+      "id": "QSPR-0018",
+      "source": "QSP-0017",
+      "target": "QSP-0001",
+      "type": "recruitment-proposal",
+      "chapter": 393,
+      "description": "招揽进入万岁军，未成",
+      "evidence_status": "PROPOSAL_NOT_ACCEPTED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md"
+    },
+    {
+      "id": "QSPR-0019",
+      "source": "QSP-0014",
+      "target": "QSP-0016",
+      "type": "on-scene-guard",
+      "chapter": 393,
+      "description": "当时身边承担护卫，雇佣/正式编制未核",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md"
+    },
+    {
+      "id": "QSPR-0020",
+      "source": "QSP-0015",
+      "target": "QSP-0019",
+      "type": "historical-legend",
+      "chapter": 393,
+      "description": "茶馆民间版本的护驾叙事，非已核官史",
+      "evidence_status": "FOLK_HISTORY_REPORTED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md"
+    },
+    {
+      "id": "QSPR-0021",
+      "source": "QSP-0018",
+      "target": "QSP-0013",
+      "type": "protective-command",
+      "chapter": 393,
+      "description": "毒箭时命令人员保护太子",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md"
+    },
+    {
+      "id": "QSPR-0022",
+      "source": "QSP-0022",
+      "target": "QSP-0023",
+      "type": "self-reported-subordinate",
+      "chapter": 847,
+      "description": "自称吕爷手下，不扩展为股权关系",
+      "evidence_status": "PARTICIPANT_TESTIMONY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_E036_作者846-848_金陵晚报印刷发行运营链补证_20261117.md"
+    },
+    {
+      "id": "QSPR-0023",
+      "source": "QSP-0022",
+      "target": "QSP-0001",
+      "type": "joint-print-distribution-work",
+      "chapter": 847,
+      "description": "共同参与《金陵晚报》印发销售",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_E036_作者846-848_金陵晚报印刷发行运营链补证_20261117.md"
+    },
+    {
+      "id": "QSPR-0024",
+      "source": "QSP-0030",
+      "target": "QSP-0017",
+      "type": "protected-at-cost-of-life",
+      "chapter": 394,
+      "description": "挡下骨箭，现场死亡",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者394_百夫长_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj67poja?chapterNumber=399",
+      "temporal_status": "CHAPTER_OBSERVATION"
+    },
+    {
+      "id": "QSPR-0025",
+      "source": "QSP-0031",
+      "target": "QSP-0017",
+      "type": "protected-at-cost-of-life",
+      "chapter": 394,
+      "description": "挡下骨箭，现场死亡",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者394_百夫长_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj67poja?chapterNumber=399",
+      "temporal_status": "CHAPTER_OBSERVATION"
+    },
+    {
+      "id": "QSPR-0026",
+      "source": "QSP-0016",
+      "target": "QSP-0013",
+      "type": "accused-unproven",
+      "chapter": 394,
+      "description": "福王指控太子与刺杀有关；只登记指控，不确认为事实",
+      "evidence_status": "CHARACTER_ACCUSATION_UNVERIFIED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者394_百夫长_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj67poja?chapterNumber=399",
+      "temporal_status": "OPEN_OR_UNCONFIRMED"
+    },
+    {
+      "id": "QSPR-0027",
+      "source": "QSP-0018",
+      "target": "QSP-0013",
+      "type": "evacuated-with",
+      "chapter": 394,
+      "description": "廖先生带太子撤离战场",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者394_百夫长_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj67poja?chapterNumber=399",
+      "temporal_status": "CHAPTER_OBSERVATION"
+    },
+    {
+      "id": "QSPR-0028",
+      "source": "QSP-0032",
+      "target": "QSP-0001",
+      "type": "pursued-as-target",
+      "chapter": 394,
+      "description": "五猖追击陈迹；动机、幕后主使尚未确证",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者394_百夫长_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj67poja?chapterNumber=399",
+      "temporal_status": "CHAPTER_OBSERVATION"
+    },
+    {
+      "id": "QSPR-0029",
+      "source": "QSP-0032",
+      "target": "QSP-0033",
+      "type": "issued-hunt-order",
+      "chapter": 395,
+      "description": "派十名游山捕猎人员日落前取陈迹首级，什长带队追踪",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者395_幕后主使_正文双源穷尽核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj6807of?chapterNumber=400",
+      "temporal_status": "CHAPTER_OBSERVATION"
+    },
+    {
+      "id": "QSPR-0030",
+      "source": "QSP-0013",
+      "target": "QSP-0018",
+      "type": "ordered-harm-to-witnesses",
+      "chapter": 395,
+      "description": "太子命令不能让相关幸存者回京，廖答应；执行结果本章未证",
+      "evidence_status": "ORDER_GIVEN_EXECUTION_UNVERIFIED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者395_幕后主使_正文双源穷尽核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj6807of?chapterNumber=400",
+      "temporal_status": "OPEN_OR_UNCONFIRMED"
+    },
+    {
+      "id": "QSPR-0031",
+      "source": "QSP-0018",
+      "target": "QSP-0013",
+      "type": "recounted-prior-ambush-plan",
+      "chapter": 395,
+      "description": "谈及此前计划春狩第三日等目标与张小姐分开再制造意外",
+      "evidence_status": "PARTICIPANT_TESTIMONY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者395_幕后主使_正文双源穷尽核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj6807of?chapterNumber=400",
+      "temporal_status": "CHAPTER_OBSERVATION"
+    },
+    {
+      "id": "QSPR-0032",
+      "source": "QSP-0001",
+      "target": "QSP-0035",
+      "type": "investigative-hypothesis",
+      "chapter": 395,
+      "description": "陈迹猜测陈家二房涉刺杀；不能升为主使事实",
+      "evidence_status": "UNVERIFIED_INFERENCE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者395_幕后主使_正文双源穷尽核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj6807of?chapterNumber=400",
+      "temporal_status": "OPEN_OR_UNCONFIRMED"
+    },
+    {
+      "id": "QSPR-0033",
+      "source": "QSP-0010",
+      "target": "QSP-0036",
+      "type": "protected-and-escaped-with",
+      "chapter": 396,
+      "description": "识破有毒食物后带小和尚设法离开陈府",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者396_六壬_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj6807oi?chapterNumber=401",
+      "temporal_status": "CHAPTER_OBSERVATION"
+    },
+    {
+      "id": "QSPR-0034",
+      "source": "QSP-0037",
+      "target": "QSP-0010",
+      "type": "rescued-during-pursuit",
+      "chapter": 396,
+      "description": "驾车、以榆叶隐身救援，双方后续是否安全仍未知",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者396_六壬_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj6807oi?chapterNumber=401",
+      "temporal_status": "CHAPTER_OBSERVATION"
+    },
+    {
+      "id": "QSPR-0035",
+      "source": "QSP-0037",
+      "target": "QSP-0036",
+      "type": "rescued-during-pursuit",
+      "chapter": 396,
+      "description": "驾车、以榆叶隐身救援，双方后续是否安全仍未知",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者396_六壬_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj6807oi?chapterNumber=401",
+      "temporal_status": "CHAPTER_OBSERVATION"
+    },
+    {
+      "id": "QSPR-0036",
+      "source": "QSP-0041",
+      "target": "QSP-0010",
+      "type": "attacked-in-pursuit",
+      "chapter": 396,
+      "description": "使用山鬼花钱召出女鬼攻击小满",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者396_六壬_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj6807oi?chapterNumber=401",
+      "temporal_status": "CHAPTER_OBSERVATION"
+    },
+    {
+      "id": "QSPR-0037",
+      "source": "QSP-0010",
+      "target": "QSP-0038",
+      "type": "planned-seeking-help",
+      "chapter": 396,
+      "description": "小满计划前往吏部衙门找张拙，尚未证明接见",
+      "evidence_status": "UNEXECUTED_PLAN",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者396_六壬_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj6807oi?chapterNumber=401",
+      "temporal_status": "OPEN_OR_UNCONFIRMED"
+    },
+    {
+      "id": "QSPR-0038",
+      "source": "QSP-0037",
+      "target": "QSP-0041",
+      "type": "issued-repentance-demand",
+      "chapter": 396,
+      "description": "责其前往城隍庙悔过；未见执行",
+      "evidence_status": "ORDER_GIVEN_EXECUTION_UNVERIFIED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者396_六壬_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj6807oi?chapterNumber=401",
+      "temporal_status": "OPEN_OR_UNCONFIRMED"
+    },
+    {
+      "id": "QSPR-0039",
+      "source": "QSP-0035",
+      "target": "QSP-0034",
+      "type": "threatened-silencing",
+      "chapter": 397,
+      "description": "当面涉及报仇承诺与知情压力，并要求其提前离世；不记为已死",
+      "evidence_status": "DIRECT_SPEECH_NO_KILL_RESULT",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj680h7i?chapterNumber=402",
+      "temporal_status": "OPEN_OR_UNCONFIRMED"
+    },
+    {
+      "id": "QSPR-0040",
+      "source": "QSP-0035",
+      "target": "QSP-0040",
+      "type": "ordered-search",
+      "chapter": 397,
+      "description": "要求调查追捕王贵并接触漕帮人手；漕帮回应未证",
+      "evidence_status": "ORDER_GIVEN_EXECUTION_UNVERIFIED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj680h7i?chapterNumber=402",
+      "temporal_status": "OPEN_OR_UNCONFIRMED"
+    },
+    {
+      "id": "QSPR-0041",
+      "source": "QSP-0040",
+      "target": "QSP-0009",
+      "type": "pursuit-task-target",
+      "chapter": 397,
+      "description": "王贵是被追索对象；主事是否实际找到/接触王贵未证",
+      "evidence_status": "ORDER_GIVEN_EXECUTION_UNVERIFIED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj680h7i?chapterNumber=402",
+      "temporal_status": "OPEN_OR_UNCONFIRMED"
+    },
+    {
+      "id": "QSPR-0042",
+      "source": "QSP-0039",
+      "target": "QSP-0038",
+      "type": "political-lobbying",
+      "chapter": 398,
+      "description": "以齐陈联姻及政治影响游说；张拙同盟承诺未证",
+      "evidence_status": "OBSERVED_LOBBYING_NO_AGREEMENT",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj68105j?chapterNumber=403",
+      "temporal_status": "OPEN_OR_UNCONFIRMED"
+    },
+    {
+      "id": "QSPR-0043",
+      "source": "QSP-0042",
+      "target": "QSP-0013",
+      "type": "led-private-guards",
+      "chapter": 401,
+      "description": "廖忠率数十名私人死士护卫太子",
+      "evidence_status": "BODY_OBSERVED_PRIOR_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj68198m?chapterNumber=406"
+    },
+    {
+      "id": "QSPR-0044",
+      "source": "QSP-0013",
+      "target": "QSP-0042",
+      "type": "arranged-border-concealment",
+      "chapter": 401,
+      "description": "商议将人经固原送往景朝奉圣州暂避；未证实际到达",
+      "evidence_status": "PLAN_NOT_COMPLETED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj68198m?chapterNumber=406"
+    },
+    {
+      "id": "QSPR-0045",
+      "source": "QSP-0042",
+      "target": "QSP-0043",
+      "type": "silencing-killing",
+      "chapter": 402,
+      "description": "廖忠实施对同行知情死士的清除灭口；个体是否被杀须回看原段",
+      "evidence_status": "OBSERVED_VIOLENCE_PERSON_OUTCOME_PARTIAL",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj681iie?chapterNumber=407"
+    },
+    {
+      "id": "QSPR-0046",
+      "source": "QSP-0043",
+      "target": "QSP-0013",
+      "type": "reported-past-clandestine-killings",
+      "chapter": 402,
+      "description": "死士陈述过往奉命执行刺杀，仍属其本人口述",
+      "evidence_status": "PARTICIPANT_TESTIMONY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj681iie?chapterNumber=407"
+    },
+    {
+      "id": "QSPR-0047",
+      "source": "QSP-0032",
+      "target": "QSP-0001",
+      "type": "permitted-technique-exchange",
+      "chapter": 403,
+      "description": "临时允许技法交流，短时由追杀转为互动；不视为入军",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj681iih?chapterNumber=408"
+    },
+    {
+      "id": "QSPR-0048",
+      "source": "QSP-0033",
+      "target": "QSP-0001",
+      "type": "tracked-with-unit",
+      "chapter": 399,
+      "description": "以侦查与鸣镝追踪陈迹，术法作战非社会军籍",
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj68105m?chapterNumber=404"
+    }
+  ],
+  "person_organization_edges": [
+    {
+      "id": "QSPA-0001",
+      "person_id": "QSP-0003",
+      "organization_id": "QS21-007",
+      "organization_name": "密谍司",
+      "relation": "claim-of-internal-authority",
+      "evidence_chapter": 259,
+      "evidence_status": "PARTICIPANT_TESTIMONY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md",
+      "warning": "人物-组织关系不构成组织间隶属；任职/招揽/自述不可混用"
+    },
+    {
+      "id": "QSPA-0002",
+      "person_id": "QSP-0004",
+      "organization_id": "QS21-035",
+      "organization_name": "边军（集合）",
+      "relation": "military-position",
+      "evidence_chapter": 259,
+      "evidence_status": "PARTICIPANT_TESTIMONY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md",
+      "warning": "人物-组织关系不构成组织间隶属；任职/招揽/自述不可混用"
+    },
+    {
+      "id": "QSPA-0003",
+      "person_id": "QSP-0005",
+      "organization_id": "QS21-030",
+      "organization_name": "羽林军",
+      "relation": "field-commander",
+      "evidence_chapter": 260,
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者260寻粮_20261114.md",
+      "warning": "人物-组织关系不构成组织间隶属；任职/招揽/自述不可混用"
+    },
+    {
+      "id": "QSPA-0004",
+      "person_id": "QSP-0006",
+      "organization_id": "QS21-030",
+      "organization_name": "羽林军",
+      "relation": "deputy-commander-to-squad-leader",
+      "evidence_chapter": 262,
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者262道歉_20261114.md",
+      "warning": "人物-组织关系不构成组织间隶属；任职/招揽/自述不可混用"
+    },
+    {
+      "id": "QSPA-0005",
+      "person_id": "QSP-0011",
+      "organization_id": "QS21-020",
+      "organization_name": "钦天监",
+      "relation": "deputy-director",
+      "evidence_chapter": 259,
+      "evidence_status": "REPORTED_HISTORY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者259假戏真做_20261114.md",
+      "warning": "人物-组织关系不构成组织间隶属；任职/招揽/自述不可混用"
+    },
+    {
+      "id": "QSPA-0006",
+      "person_id": "QSP-0014",
+      "organization_id": "QS21-033",
+      "organization_name": "五军营",
+      "relation": "FORMER_POST",
+      "evidence_chapter": 393,
+      "evidence_status": "REPORTED_HISTORY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+      "warning": "人物-组织关系不构成组织间隶属；任职/招揽/自述不可混用"
+    },
+    {
+      "id": "QSPA-0007",
+      "person_id": "QSP-0017",
+      "organization_id": "QS21-031",
+      "organization_name": "万岁军",
+      "relation": "recruiting-for-force-not-roster-proof",
+      "evidence_chapter": 393,
+      "evidence_status": "ACTION_REPORTED",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者393_五猖兵马_正文核证_20261115.md",
+      "warning": "人物-组织关系不构成组织间隶属；任职/招揽/自述不可混用"
+    },
+    {
+      "id": "QSPA-0008",
+      "person_id": "QSP-0009",
+      "organization_id": "QS21-063",
+      "organization_name": "京城陈家",
+      "relation": "household-servant-context",
+      "evidence_chapter": 260,
+      "evidence_status": "CONTEXTUAL_ONLY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_R05_作者260寻粮_20261114.md",
+      "warning": "人物-组织关系不构成组织间隶属；任职/招揽/自述不可混用"
+    },
+    {
+      "id": "QSPA-0009",
+      "person_id": "QSP-0022",
+      "organization_id": "QS21-075",
+      "organization_name": "漕帮",
+      "relation": "self-reported-member",
+      "evidence_chapter": 847,
+      "evidence_status": "PARTICIPANT_TESTIMONY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_E036_作者846-848_金陵晚报印刷发行运营链补证_20261117.md",
+      "warning": "人物-组织关系不构成组织间隶属；任职/招揽/自述不可混用"
+    },
+    {
+      "id": "QSPA-0010",
+      "person_id": "QSP-0023",
+      "organization_id": "QS21-075",
+      "organization_name": "漕帮",
+      "relation": "reported-senior-person",
+      "evidence_chapter": 847,
+      "evidence_status": "SECONDHAND_TESTIMONY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_E036_作者846-848_金陵晚报印刷发行运营链补证_20261117.md",
+      "warning": "人物-组织关系不构成组织间隶属；任职/招揽/自述不可混用"
+    },
+    {
+      "id": "QSPA-0011",
+      "person_id": "QSP-0022",
+      "organization_id": "QS21-091",
+      "organization_name": "金陵晚报",
+      "relation": "printing-and-sales-operator",
+      "evidence_chapter": 847,
+      "evidence_status": "OBSERVED_ACTION_IN_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_E036_作者846-848_金陵晚报印刷发行运营链补证_20261117.md",
+      "warning": "人物-组织关系不构成组织间隶属；任职/招揽/自述不可混用"
+    },
+    {
+      "id": "QSPA-0012",
+      "person_id": "QSP-0026",
+      "organization_id": "QS22-N002",
+      "organization_name": "中军都督府",
+      "relation": "commander-appointed",
+      "evidence_chapter": 814,
+      "evidence_status": "EXISTING_R24_NOTE",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_全组织世界体量树_终局整合阅读版_20261115.md",
+      "warning": "人物-组织关系不构成组织间隶属；任职/招揽/自述不可混用"
+    },
+    {
+      "id": "QSPA-0013",
+      "person_id": "QSP-0017",
+      "organization_id": "QS21-031",
+      "organization_name": "万岁军",
+      "relation": "千户-现场自称/章证",
+      "evidence_chapter": 394,
+      "evidence_status": "REPORTED_POST",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者394_百夫长_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj67poja?chapterNumber=399",
+      "warning": "人物与组织角色挂接不等于正式任职或组织直属；尤其拟联系漕帮、求助吏部不作成员关系"
+    },
+    {
+      "id": "QSPA-0014",
+      "person_id": "QSP-0037",
+      "organization_id": "QS21-049",
+      "organization_name": "黄山道庭",
+      "relation": "首徒-本人自报/小厮识别",
+      "evidence_chapter": 396,
+      "evidence_status": "SELF_REPORTED_WITH_SCENE_REACTION",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者396_六壬_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj6807oi?chapterNumber=401",
+      "warning": "人物与组织角色挂接不等于正式任职或组织直属；尤其拟联系漕帮、求助吏部不作成员关系"
+    },
+    {
+      "id": "QSPA-0015",
+      "person_id": "QSP-0035",
+      "organization_id": "QS21-063",
+      "organization_name": "京城陈家",
+      "relation": "二房-家族关系",
+      "evidence_chapter": 397,
+      "evidence_status": "CHAPTER_FAMILY_CONTEXT",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj680h7i?chapterNumber=402",
+      "warning": "人物与组织角色挂接不等于正式任职或组织直属；尤其拟联系漕帮、求助吏部不作成员关系"
+    },
+    {
+      "id": "QSPA-0016",
+      "person_id": "QSP-0034",
+      "organization_id": "QS21-063",
+      "organization_name": "京城陈家",
+      "relation": "二房关联-不能推出掌权",
+      "evidence_chapter": 397,
+      "evidence_status": "CHAPTER_FAMILY_CONTEXT",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj680h7i?chapterNumber=402",
+      "warning": "人物与组织角色挂接不等于正式任职或组织直属；尤其拟联系漕帮、求助吏部不作成员关系"
+    },
+    {
+      "id": "QSPA-0017",
+      "person_id": "QSP-0040",
+      "organization_id": "QS21-063",
+      "organization_name": "京城陈家",
+      "relation": "府内受命主事-不证明法定员额",
+      "evidence_chapter": 397,
+      "evidence_status": "CHAPTER_ACTION",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj680h7i?chapterNumber=402",
+      "warning": "人物与组织角色挂接不等于正式任职或组织直属；尤其拟联系漕帮、求助吏部不作成员关系"
+    },
+    {
+      "id": "QSPA-0018",
+      "person_id": "QSP-0039",
+      "organization_id": "QS21-063",
+      "organization_name": "京城陈家",
+      "relation": "陈府政治往来角色-具体谱系待证",
+      "evidence_chapter": 398,
+      "evidence_status": "CONTEXTUAL_ONLY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj68105j?chapterNumber=403",
+      "warning": "人物与组织角色挂接不等于正式任职或组织直属；尤其拟联系漕帮、求助吏部不作成员关系"
+    },
+    {
+      "id": "QSPA-0019",
+      "person_id": "QSP-0038",
+      "organization_id": "QS21-012",
+      "organization_name": "吏部",
+      "relation": "吏部衙门求助对象-正式官职待核",
+      "evidence_chapter": 396,
+      "evidence_status": "MENTIONED_IN_MINISTRY_CONTEXT",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_作者396_六壬_正文核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj6807oi?chapterNumber=401",
+      "warning": "人物与组织角色挂接不等于正式任职或组织直属；尤其拟联系漕帮、求助吏部不作成员关系"
+    },
+    {
+      "id": "QSPA-0020",
+      "person_id": "QSP-0035",
+      "organization_id": "QS21-075",
+      "organization_name": "漕帮",
+      "relation": "要求派人接触/追索-未证合作",
+      "evidence_chapter": 397,
+      "evidence_status": "PROPOSED_CONTACT_ONLY",
+      "source_file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R10_394-403_正文证据二次核证_20261115.md",
+      "source_url": "https://czbooks.net/n/s6ojkc/hj680h7i?chapterNumber=402",
+      "warning": "人物与组织角色挂接不等于正式任职或组织直属；尤其拟联系漕帮、求助吏部不作成员关系"
+    }
+  ],
+  "acceptance": {
+    "new_people": 2,
+    "new_relationships": 6,
+    "new_org_links": 0,
+    "total_people": 43,
+    "total_relationships": 48,
+    "total_org_links": 20,
+    "original_R24_nodes": 114,
+    "original_R24_unchanged": true,
+    "full_book_character_census": false,
+    "claims_from_chapter_notes_only": true,
+    "local_canvas_ui_unverified": true
+  },
+  "source_r26_sha": "083fa80713f398f3bd15882b4f87527a0d6cd23c",
+  "source_r24_sha": "b1708f6c9cce2694e4d0110ec521355b8296adb0",
+  "source_chapters_this_round": [
+    399,
+    400,
+    401,
+    402,
+    403
+  ]
+}
