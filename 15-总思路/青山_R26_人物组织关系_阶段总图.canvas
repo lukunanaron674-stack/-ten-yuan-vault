@@ -7,13 +7,13 @@
       "color": "4",
       "x": 0,
       "y": 0,
-      "width": 11000,
-      "height": 8900
+      "width": 14000,
+      "height": 12500
     },
     {
       "id": "R26-ROOT",
       "type": "text",
-      "text": "# 《青山》世界人物关系｜R33\n139人物候选／140人物关系／71组织链接\n仅阶段章证，非全书穷尽；R24组织W未改",
+      "text": "# 《青山》世界人物关系｜R36\n145人物候选／161人物关系／75组织接口\n既有章节卡阶段回收，非全文穷尽；R24组织W未改",
       "x": 145,
       "y": 145,
       "width": 1980,
@@ -1949,6 +1949,26 @@
       "width": 1300,
       "height": 170,
       "color": "5"
+    },
+    {
+      "id": "QSP-0144",
+      "type": "text",
+      "text": "**李嬷嬷（陈迹乳母）**\n作者203《乳母》｜陈迹乳母，章卡记其被送至陈家城郊田庄；关于生母墓与空棺的说法仅是未经核实传言\nP?｜十元待审",
+      "x": 8400,
+      "y": 11400,
+      "width": 1300,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0145",
+      "type": "text",
+      "text": "**立秋**\n作者205《心诚则灵》｜陈府佣人，向小满提出按月付酬以获取陈迹行踪与交往信息；幕后委托者不明\nP?｜十元待审",
+      "x": 8400,
+      "y": 11700,
+      "width": 1300,
+      "height": 220,
+      "color": "3"
     }
   ],
   "edges": [
@@ -3951,6 +3971,46 @@
       "fromNode": "QSP-0038",
       "toNode": "QS21-012",
       "label": "appointment-document-only｜200",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0157",
+      "fromNode": "QSP-0007",
+      "toNode": "QSP-0001",
+      "label": "transferred-deed-to｜201",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0158",
+      "fromNode": "QSP-0001",
+      "toNode": "QSP-0142",
+      "label": "anonymously-delivered-deed-to｜201",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0159",
+      "fromNode": "QSP-0144",
+      "toNode": "QSP-0001",
+      "label": "former-nurse-of｜203",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0160",
+      "fromNode": "QSP-0001",
+      "toNode": "QSP-0010",
+      "label": "service-reassignment-requested｜204",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0161",
+      "fromNode": "QSP-0145",
+      "toNode": "QSP-0010",
+      "label": "offered-payment-for-information｜205",
       "fromSide": "right",
       "toSide": "left"
     }
