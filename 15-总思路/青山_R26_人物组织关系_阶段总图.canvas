@@ -1929,6 +1929,26 @@
       "width": 1300,
       "height": 170,
       "color": "5"
+    },
+    {
+      "id": "QSP-0143",
+      "type": "text",
+      "text": "**王道圣**\n200《王将军》：丁忧期满，起复文书未到\nP?｜十元待审",
+      "x": 8400,
+      "y": 11100,
+      "width": 1300,
+      "height": 180,
+      "color": "3"
+    },
+    {
+      "id": "QS21-012",
+      "type": "text",
+      "text": "**吏部**\nR24组织引用（W不变）",
+      "x": 12100,
+      "y": 11040,
+      "width": 1300,
+      "height": 170,
+      "color": "5"
     }
   ],
   "edges": [
@@ -3867,6 +3887,70 @@
       "fromNode": "QSP-0141",
       "toNode": "QS21-021",
       "label": "title-affiliation-reported｜195",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0150",
+      "fromNode": "QSP-0007",
+      "toNode": "QSP-0001",
+      "label": "transferred-deed｜201",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0151",
+      "fromNode": "QSP-0001",
+      "toNode": "QSP-0142",
+      "label": "anonymous-deed-delivery｜201",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0152",
+      "fromNode": "QSP-0038",
+      "toNode": "QSP-0001",
+      "label": "private-support-visit｜197",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0153",
+      "fromNode": "QSP-0034",
+      "toNode": "QSP-0009",
+      "label": "intervened-in-punishment｜198",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0154",
+      "fromNode": "QSP-0007",
+      "toNode": "QSP-0009",
+      "label": "retained-after-demotion｜203",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0155",
+      "fromNode": "QSP-0010",
+      "toNode": "QSP-0001",
+      "label": "requested-return-to-service｜204",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0156",
+      "fromNode": "QSP-0007",
+      "toNode": "QSP-0001",
+      "label": "compensated-family-debt｜202",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0075",
+      "fromNode": "QSP-0038",
+      "toNode": "QS21-012",
+      "label": "appointment-document-only｜200",
       "fromSide": "right",
       "toSide": "left"
     }
