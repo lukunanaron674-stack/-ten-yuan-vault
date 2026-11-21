@@ -13,7 +13,7 @@
     {
       "id": "R26-ROOT",
       "type": "text",
-      "text": "# 《青山》世界人物关系｜R36\n145人物候选／161人物关系／75组织接口\n既有章节卡阶段回收，非全文穷尽；R24组织W未改",
+      "text": "# 《青山》世界人物关系｜R37\n149人物候选／169人物关系／79组织接口\n章卡回收，非全文穷尽；R24组织W未改",
       "x": 145,
       "y": 145,
       "width": 1980,
@@ -23,7 +23,7 @@
     {
       "id": "R26-STATE",
       "type": "text",
-      "text": "**状态主控**\nR33作者186–190已回收组织章卡\n全书人物未穷尽｜P?｜十元未核\n188白龙揭面身份同体待迁移；189章号冲突",
+      "text": "**状态主控**\nR37作者206–210；NEXT R38作者211–215\n全书人物未穷尽｜P?｜十元未核\n徐阁老同体、信息交易款、求官任命待核",
       "x": 2320,
       "y": 145,
       "width": 1560,
@@ -1968,6 +1968,66 @@
       "y": 11700,
       "width": 1300,
       "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "QS21-026",
+      "type": "text",
+      "text": "**国子监**\nR24组织引用，W未改",
+      "x": 12000,
+      "y": 12591,
+      "width": 1300,
+      "height": 170,
+      "color": "5"
+    },
+    {
+      "id": "QS21-068",
+      "type": "text",
+      "text": "**张家**\nR24组织引用，W未改",
+      "x": 12000,
+      "y": 12594,
+      "width": 1300,
+      "height": 170,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0146",
+      "type": "text",
+      "text": "**冬至**\n作者206｜梁氏身边一等丫鬟\nP?｜十元待审",
+      "x": 10000,
+      "y": 12000,
+      "width": 1400,
+      "height": 210,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0147",
+      "type": "text",
+      "text": "**羊展**\n作者206｜章卡称国子监祭酒，陈迹入学未成\nP?｜十元待审",
+      "x": 10000,
+      "y": 12270,
+      "width": 1400,
+      "height": 210,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0148",
+      "type": "text",
+      "text": "**徐阁老（未核实名）**\n作者210｜章卡称暂兼吏部尚书；不与其他徐姓人物合并\nP?｜十元待审",
+      "x": 10000,
+      "y": 12540,
+      "width": 1400,
+      "height": 210,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0149",
+      "type": "text",
+      "text": "**求豫州尉氏县县丞缺官员（未具名）**\n作者210｜礼单待补，未获正式任命\nP?｜十元待审",
+      "x": 10000,
+      "y": 12810,
+      "width": 1400,
+      "height": 210,
       "color": "3"
     }
   ],
@@ -4011,6 +4071,102 @@
       "fromNode": "QSP-0145",
       "toNode": "QSP-0010",
       "label": "offered-payment-for-information｜205",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0162",
+      "fromNode": "QSP-0010",
+      "toNode": "QSP-0145",
+      "label": "reported-prior-payment｜206",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0163",
+      "fromNode": "QSP-0010",
+      "toNode": "QSP-0001",
+      "label": "reported-money-transfer｜206",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0164",
+      "fromNode": "QSP-0007",
+      "toNode": "QSP-0001",
+      "label": "proposed-school-enrollment｜206",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0165",
+      "fromNode": "QSP-0010",
+      "toNode": "QSP-0001",
+      "label": "reported-maternal-estate｜207",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0166",
+      "fromNode": "QSP-0034",
+      "toNode": "QSP-0001",
+      "label": "alleged-estate-control｜207",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0167",
+      "fromNode": "QSP-0145",
+      "toNode": "QSP-0010",
+      "label": "requested-information｜208",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0168",
+      "fromNode": "QSP-0002",
+      "toNode": "QSP-0038",
+      "label": "reviewed-promotion-gifts｜210",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0169",
+      "fromNode": "QSP-0149",
+      "toNode": "QSP-0002",
+      "label": "requested-county-office｜210",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0076",
+      "fromNode": "QSP-0147",
+      "toNode": "QS21-026",
+      "label": "reported-guozijian-jijiu｜206",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0077",
+      "fromNode": "QSP-0148",
+      "toNode": "QS21-012",
+      "label": "reported-temporary-minister｜210",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0078",
+      "fromNode": "QSP-0149",
+      "toNode": "QS21-012",
+      "label": "office-request-not-appointed｜210",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0079",
+      "fromNode": "QSP-0002",
+      "toNode": "QS21-068",
+      "label": "promotion-banquet-family-network｜210",
       "fromSide": "right",
       "toSide": "left"
     }
