@@ -1,0 +1,515 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 3300,
+      "height": 300,
+      "text": "## Q-VIDEO-MANAGE｜R2 总状态树（2026-11-22）\n目标：复用现有 libtv-studio，将 ComfyUI 视频生成、Spool 镜头/Take 管理和 Codex 有界 Agent 自动执行接通。这里是 GitHub 轻量总览；97节点的详细子树见本轮交付的独立 .canvas。",
+      "color": "1"
+    },
+    {
+      "id": "status",
+      "type": "text",
+      "x": 3390,
+      "y": 0,
+      "width": 1030,
+      "height": 300,
+      "text": "**已验证：** LibTV 官方 Skill、4仓库 README、Spool Agent 文档、用户本库 H3 门禁。\n**未验证：** Windows 实机兼容、安装、任何新视频。",
+      "color": "2"
+    },
+    {
+      "id": "g-libtv",
+      "type": "group",
+      "x": 0,
+      "y": 380,
+      "width": 860,
+      "height": 1430,
+      "label": "01｜LibTV 官方玩法",
+      "color": "4"
+    },
+    {
+      "id": "libtv-0",
+      "type": "text",
+      "x": 28,
+      "y": 450,
+      "width": 802,
+      "height": 240,
+      "text": "**无限画布**\n脚本/图片/视频/音频/生成节点；模型一站式切换；资产沉淀。"
+    },
+    {
+      "id": "libtv-1",
+      "type": "text",
+      "x": 28,
+      "y": 716,
+      "width": 802,
+      "height": 240,
+      "text": "**脚本与分镜**\n剧本拆镜头、4/9/25宫格、多构图探索，先确定镜头再生成。"
+    },
+    {
+      "id": "libtv-2",
+      "type": "text",
+      "x": 28,
+      "y": 982,
+      "width": 802,
+      "height": 240,
+      "text": "**批量与版本**\n脚本批量出图/视频；重要的是复用资产和保留最终选择。"
+    },
+    {
+      "id": "libtv-3",
+      "type": "text",
+      "x": 28,
+      "y": 1248,
+      "width": 802,
+      "height": 240,
+      "text": "**官方 Agent Skill**\nupload→create_session→query_session→download，需 ACCESS_KEY；后端 Agent 负责复杂编排。"
+    },
+    {
+      "id": "libtv-4",
+      "type": "text",
+      "x": 28,
+      "y": 1514,
+      "width": 802,
+      "height": 240,
+      "text": "**参考**\nhttps://www.bilibili.com/video/BV1jEQzBNE3K/ ；https://github.com/libtv-labs/libtv-skills"
+    },
+    {
+      "id": "g-spool",
+      "type": "group",
+      "x": 910,
+      "y": 380,
+      "width": 860,
+      "height": 1430,
+      "label": "02｜Spool 镜头管理",
+      "color": "6"
+    },
+    {
+      "id": "spool-0",
+      "type": "text",
+      "x": 938,
+      "y": 450,
+      "width": 802,
+      "height": 240,
+      "text": "**是什么**\nComfyUI 内的时间线 studio；clip=镜头，take=一个镜头的多个生成版本。"
+    },
+    {
+      "id": "spool-1",
+      "type": "text",
+      "x": 938,
+      "y": 716,
+      "width": 802,
+      "height": 240,
+      "text": "**怎么用**\nOpen Spool→新建项目→导入 workflow/MP4→设置 Takes→Generate→Compare→Use Take→Export。"
+    },
+    {
+      "id": "spool-2",
+      "type": "text",
+      "x": 938,
+      "y": 982,
+      "width": 802,
+      "height": 240,
+      "text": "**自动化**\n有 spool-control Skill、CLI、HTTP；prepare_experiment 可只读，queue_experiment 须授权与限额。"
+    },
+    {
+      "id": "spool-3",
+      "type": "text",
+      "x": 938,
+      "y": 1248,
+      "width": 802,
+      "height": 240,
+      "text": "**条件**\nComfyUI>=0.39；Python>=3.11；ffmpeg/ffprobe>=5.1；旧 H3 自定义节点需验证映射。"
+    },
+    {
+      "id": "spool-4",
+      "type": "text",
+      "x": 938,
+      "y": 1514,
+      "width": 802,
+      "height": 240,
+      "text": "**参考**\nhttps://github.com/doubletwisted/ComfyUI-Spool ；https://doubletwisted.github.io/ComfyUI-Spool/demo/"
+    },
+    {
+      "id": "g-studio",
+      "type": "group",
+      "x": 1820,
+      "y": 380,
+      "width": 860,
+      "height": 1430,
+      "label": "03｜Workflow Studio 批量实验",
+      "color": "3"
+    },
+    {
+      "id": "studio-0",
+      "type": "text",
+      "x": 1848,
+      "y": 450,
+      "width": 802,
+      "height": 240,
+      "text": "**是什么**\n工作流图库 + GenerateUI 参数批量 + Video Tab 镜头 Block Plan。"
+    },
+    {
+      "id": "studio-1",
+      "type": "text",
+      "x": 1848,
+      "y": 716,
+      "width": 802,
+      "height": 240,
+      "text": "**怎么用**\nWorkflow Tab 导入 H3 JSON→Load in Video→Plan Blocks→首尾帧参考→Save/Run。"
+    },
+    {
+      "id": "studio-2",
+      "type": "text",
+      "x": 1848,
+      "y": 982,
+      "width": 802,
+      "height": 240,
+      "text": "**主要作用**\n多参数矩阵和连续短镜头生成；不替代 Spool 的成片时间线。"
+    },
+    {
+      "id": "studio-3",
+      "type": "text",
+      "x": 1848,
+      "y": 1248,
+      "width": 802,
+      "height": 240,
+      "text": "**风险**\n只有可识别的 H3/LTX/Wan 等节点获 Video Tab 支持，现场核对。"
+    },
+    {
+      "id": "studio-4",
+      "type": "text",
+      "x": 1848,
+      "y": 1514,
+      "width": 802,
+      "height": 240,
+      "text": "**参考**\nhttps://github.com/ketle-man/ComfyUI-Workflow-Studio"
+    },
+    {
+      "id": "g-other",
+      "type": "group",
+      "x": 2730,
+      "y": 380,
+      "width": 860,
+      "height": 1430,
+      "label": "04｜另外两套只学习架构",
+      "color": "2"
+    },
+    {
+      "id": "other-0",
+      "type": "text",
+      "x": 2758,
+      "y": 450,
+      "width": 802,
+      "height": 240,
+      "text": "**Director's Console**\n摄影参数规则、分镜面板、多 ComfyUI 后端调度；上游 README 专有 All rights reserved，不得直接复制代码。"
+    },
+    {
+      "id": "other-1",
+      "type": "text",
+      "x": 2758,
+      "y": 716,
+      "width": 802,
+      "height": 240,
+      "text": "**如何用**\n上游 NickPittas/DirectorsConsole，python start.py --setup 后启动；现阶段不安装到生产环境。"
+    },
+    {
+      "id": "other-2",
+      "type": "text",
+      "x": 2758,
+      "y": 982,
+      "width": 802,
+      "height": 240,
+      "text": "**ai-drama-studio**\nLibTV 式节点、脚本拆镜头、@引用、任务队列、版本定稿；node >=20，npm run dev。"
+    },
+    {
+      "id": "other-3",
+      "type": "text",
+      "x": 2758,
+      "y": 1248,
+      "width": 802,
+      "height": 240,
+      "text": "**不足**\nYanmul README 明确真实 key 未验、镜头表和合成导出未做；含旧文件自动清理风险。"
+    },
+    {
+      "id": "other-4",
+      "type": "text",
+      "x": 2758,
+      "y": 1514,
+      "width": 802,
+      "height": 240,
+      "text": "**参考**\nhttps://github.com/NickPittas/DirectorsConsole ；https://github.com/Yanmul/ai-drama-studio"
+    },
+    {
+      "id": "g-local",
+      "type": "group",
+      "x": 3640,
+      "y": 380,
+      "width": 860,
+      "height": 1430,
+      "label": "05｜本机实施（要守门）",
+      "color": "5"
+    },
+    {
+      "id": "local-0",
+      "type": "text",
+      "x": 3668,
+      "y": 450,
+      "width": 802,
+      "height": 240,
+      "text": "**P0 只读预检**\n检查 C:/work/libtv-studio、3100/8188、ComfyUI 根路径、Python、Git dirty、已装 H3 节点、ffmpeg。"
+    },
+    {
+      "id": "local-1",
+      "type": "text",
+      "x": 3668,
+      "y": 716,
+      "width": 802,
+      "height": 240,
+      "text": "**P1 Spool**\n在隔离测试环境安装；用旧 MP4 无 GPU 验证 Takes、选择、时间线、Export。"
+    },
+    {
+      "id": "local-2",
+      "type": "text",
+      "x": 3668,
+      "y": 982,
+      "width": 802,
+      "height": 240,
+      "text": "**P2 Workflow Studio**\n只在 P1 通过后按需安装；保存一个 H3 两 Block 计划但不执行。"
+    },
+    {
+      "id": "local-3",
+      "type": "text",
+      "x": 3668,
+      "y": 1248,
+      "width": 802,
+      "height": 240,
+      "text": "**P3 H3 真实联调**\n仅 READY 素材/已授权/预算内：1镜头 2 Takes，锁变量，只变 seed；/history、MP4、SHA验收。"
+    },
+    {
+      "id": "local-4",
+      "type": "text",
+      "x": 3668,
+      "y": 1514,
+      "width": 802,
+      "height": 240,
+      "text": "**归属**\nLinear 674-341（LibTV/Obsidian）与674-286/216（H3）；不新开平行工单。"
+    },
+    {
+      "id": "g-learning",
+      "type": "group",
+      "x": 0,
+      "y": 1910,
+      "width": 4450,
+      "height": 700,
+      "label": "06｜16 格批量学习 / 有限停止条件",
+      "color": "3"
+    },
+    {
+      "id": "learn-0",
+      "type": "text",
+      "x": 28,
+      "y": 1980,
+      "width": 1390,
+      "height": 255,
+      "text": "### L01–L04\nLibTV 官方节点、4/9/25 分镜、Agent Skill、现有 libtv-studio 去重；只读。"
+    },
+    {
+      "id": "learn-1",
+      "type": "text",
+      "x": 1488,
+      "y": 1980,
+      "width": 1390,
+      "height": 255,
+      "text": "### S01–S04\nSpool 在线 Demo/快速入门/本地旧 MP4 导入/CLI 状态；不做新渲染。"
+    },
+    {
+      "id": "learn-2",
+      "type": "text",
+      "x": 2948,
+      "y": 1980,
+      "width": 1390,
+      "height": 255,
+      "text": "### W01–W03\nWorkflow Studio 导入 H3、两 Block Plan、3 prompt × 2 seed 计划；只保存。"
+    },
+    {
+      "id": "learn-3",
+      "type": "text",
+      "x": 28,
+      "y": 2270,
+      "width": 1390,
+      "height": 255,
+      "text": "### D01–D02\nDirector's Console 摄影规则、分镜/多机调度研究；不复用专有源码。"
+    },
+    {
+      "id": "learn-4",
+      "type": "text",
+      "x": 1488,
+      "y": 2270,
+      "width": 1390,
+      "height": 255,
+      "text": "### A01–A02\nai-drama-studio 隔离原型与已知限制；不要使用生产素材目录。"
+    },
+    {
+      "id": "learn-5",
+      "type": "text",
+      "x": 2948,
+      "y": 2270,
+      "width": 1390,
+      "height": 255,
+      "text": "### E01\n经过门禁 READY 的单镜 2 seed 实测；无需为完成研究强制执行。"
+    },
+    {
+      "id": "stop",
+      "type": "text",
+      "x": 0,
+      "y": 2690,
+      "width": 4440,
+      "height": 285,
+      "text": "### 收口\nRESEARCH_VERIFIED 不等于 LOCAL_UI_PASS，更不等于 TECH_PASS/CREATIVE_PASS。每实验一个真实回执；失败保留证据与阻塞，禁止无限重跑、自动收费、每小时 GPU。",
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "fromNode": "libtv-0",
+      "fromSide": "bottom",
+      "toNode": "libtv-1",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-2",
+      "fromNode": "libtv-1",
+      "fromSide": "bottom",
+      "toNode": "libtv-2",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-3",
+      "fromNode": "libtv-2",
+      "fromSide": "bottom",
+      "toNode": "libtv-3",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-4",
+      "fromNode": "libtv-3",
+      "fromSide": "bottom",
+      "toNode": "libtv-4",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-5",
+      "fromNode": "spool-0",
+      "fromSide": "bottom",
+      "toNode": "spool-1",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-6",
+      "fromNode": "spool-1",
+      "fromSide": "bottom",
+      "toNode": "spool-2",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-7",
+      "fromNode": "spool-2",
+      "fromSide": "bottom",
+      "toNode": "spool-3",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-8",
+      "fromNode": "spool-3",
+      "fromSide": "bottom",
+      "toNode": "spool-4",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-9",
+      "fromNode": "studio-0",
+      "fromSide": "bottom",
+      "toNode": "studio-1",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-10",
+      "fromNode": "studio-1",
+      "fromSide": "bottom",
+      "toNode": "studio-2",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-11",
+      "fromNode": "studio-2",
+      "fromSide": "bottom",
+      "toNode": "studio-3",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-12",
+      "fromNode": "studio-3",
+      "fromSide": "bottom",
+      "toNode": "studio-4",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-13",
+      "fromNode": "other-0",
+      "fromSide": "bottom",
+      "toNode": "other-1",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-14",
+      "fromNode": "other-1",
+      "fromSide": "bottom",
+      "toNode": "other-2",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-15",
+      "fromNode": "other-2",
+      "fromSide": "bottom",
+      "toNode": "other-3",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-16",
+      "fromNode": "other-3",
+      "fromSide": "bottom",
+      "toNode": "other-4",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-17",
+      "fromNode": "local-0",
+      "fromSide": "bottom",
+      "toNode": "local-1",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-18",
+      "fromNode": "local-1",
+      "fromSide": "bottom",
+      "toNode": "local-2",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-19",
+      "fromNode": "local-2",
+      "fromSide": "bottom",
+      "toNode": "local-3",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-20",
+      "fromNode": "local-3",
+      "fromSide": "bottom",
+      "toNode": "local-4",
+      "toSide": "top"
+    }
+  ]
+}
