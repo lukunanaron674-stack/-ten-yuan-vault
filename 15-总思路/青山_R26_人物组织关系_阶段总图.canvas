@@ -8,12 +8,12 @@
       "x": 0,
       "y": 0,
       "width": 7650,
-      "height": 7600
+      "height": 8350
     },
     {
       "id": "R26-ROOT",
       "type": "text",
-      "text": "# 《青山》世界人物关系｜R31\n132人物候选／123人物关系／62组织链接\n仅阶段章证，不是全书穷尽；R24组织W未改",
+      "text": "# 《青山》世界人物关系｜R32\n137人物候选／128人物关系／65组织链接\n仅阶段章证，不是全书穷尽；R24组织W未改",
       "x": 145,
       "y": 145,
       "width": 1980,
@@ -1729,6 +1729,86 @@
       "y": 6853,
       "width": 1160,
       "height": 153
+    },
+    {
+      "id": "QSP-0133",
+      "type": "text",
+      "text": "**王将军（千岁军，姓名未核）**\nQSP-0133｜作者180\n千岁军将领；181章将靖王血书转交冯大伴，未照靖王救援意志行事\nP?｜十元待证",
+      "color": "4",
+      "x": 120,
+      "y": 7140,
+      "width": 2250,
+      "height": 215
+    },
+    {
+      "id": "QSP-0134",
+      "type": "text",
+      "text": "**冯大伴**\nQSP-0134｜作者181\n181章接获血书并参与将其用于靖王谋逆指控；与冯先生/冯文正不凭同姓合并\nP?｜十元待证",
+      "color": "4",
+      "x": 2580,
+      "y": 7140,
+      "width": 2250,
+      "height": 215
+    },
+    {
+      "id": "QSP-0135",
+      "type": "text",
+      "text": "**梁狗儿**\nQSP-0135｜作者183\n183章在琉璃宫出场；三不帮是其个人原则而非组织\nP?｜十元待证",
+      "color": "4",
+      "x": 5040,
+      "y": 7140,
+      "width": 2250,
+      "height": 215
+    },
+    {
+      "id": "QSP-0136",
+      "type": "text",
+      "text": "**佘登科**\nQSP-0136｜作者182\n182章在堂会力棒的劳动者环境出现，具体任职不明\nP?｜十元待证",
+      "color": "4",
+      "x": 120,
+      "y": 7400,
+      "width": 2250,
+      "height": 215
+    },
+    {
+      "id": "QSP-0137",
+      "type": "text",
+      "text": "**夜羊（前任生肖）**\nQSP-0137｜作者184\n金猪提及前任夜羊遇伏及生肖位更替，属于转述历史\nP?｜十元待证",
+      "color": "4",
+      "x": 2580,
+      "y": 7400,
+      "width": 2250,
+      "height": 215
+    },
+    {
+      "id": "R26-ORG-QS21-032",
+      "type": "text",
+      "text": "**千岁军**\nQS21-032\nR24原组织稳定ID",
+      "color": "4",
+      "x": 120,
+      "y": 7670,
+      "width": 2250,
+      "height": 160
+    },
+    {
+      "id": "R26-ORG-QS21-006",
+      "type": "text",
+      "text": "**宁朝司礼监**\nQS21-006\nR24原组织稳定ID",
+      "color": "4",
+      "x": 2580,
+      "y": 7670,
+      "width": 2250,
+      "height": 160
+    },
+    {
+      "id": "R26-ORG-QS21-056",
+      "type": "text",
+      "text": "**罗天宗**\nQS21-056\nR24原组织稳定ID",
+      "color": "4",
+      "x": 5040,
+      "y": 7670,
+      "width": 2250,
+      "height": 160
     }
   ],
   "edges": [
@@ -3372,6 +3452,62 @@
       "toNode": "R26-ORG-QS21-041",
       "toSide": "top",
       "label": "训练线涉及，正式任职身份待核",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPR-0124",
+      "fromNode": "QSP-0133",
+      "toNode": "QSP-0134",
+      "label": "handed-over-letter",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPR-0125",
+      "fromNode": "QSP-0134",
+      "toNode": "QSP-0001",
+      "label": "attributed-letter-to",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPR-0126",
+      "fromNode": "QSP-0039",
+      "toNode": "QSP-0001",
+      "label": "promised-private-assistance",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPR-0127",
+      "fromNode": "QSP-0079",
+      "toNode": "QSP-0137",
+      "label": "reported-predecessor",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPR-0128",
+      "fromNode": "QSP-0001",
+      "toNode": "QSP-0091",
+      "label": "requested-transport-assistance",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0063",
+      "fromNode": "QSP-0133",
+      "toNode": "R26-ORG-QS21-032",
+      "label": "reported-military-command",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0064",
+      "fromNode": "QSP-0134",
+      "toNode": "R26-ORG-QS21-006",
+      "label": "political-service-context-not-verified-office",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0065",
+      "fromNode": "QSP-0091",
+      "toNode": "R26-ORG-QS21-056",
+      "label": "sect-leader",
       "color": "4"
     }
   ]
