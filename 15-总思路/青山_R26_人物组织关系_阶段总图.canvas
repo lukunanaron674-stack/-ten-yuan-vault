@@ -8,12 +8,12 @@
       "x": 0,
       "y": 0,
       "width": 14000,
-      "height": 12500
+      "height": 13900
     },
     {
       "id": "R26-ROOT",
       "type": "text",
-      "text": "# 《青山》世界人物关系｜R37\n149人物候选／169人物关系／79组织接口\n章卡回收，非全文穷尽；R24组织W未改",
+      "text": "# 《青山》世界人物关系｜R38\n149人物候选／176人物关系／81组织接口\n章卡回收，非全文穷尽；R24组织W未改",
       "x": 145,
       "y": 145,
       "width": 1980,
@@ -23,7 +23,7 @@
     {
       "id": "R26-STATE",
       "type": "text",
-      "text": "**状态主控**\nR37作者206–210；NEXT R38作者211–215\n全书人物未穷尽｜P?｜十元未核\n徐阁老同体、信息交易款、求官任命待核",
+      "text": "**状态主控**\nR38作者211–215；NEXT R39作者216–220\n王崇理CH213死亡，继任未知；苏舟自述复仇\n全书未穷尽｜P?｜十元未核",
       "x": 2320,
       "y": 145,
       "width": 1560,
@@ -1053,7 +1053,7 @@
     {
       "id": "QSP-0048",
       "type": "text",
-      "text": "**苏舟**  QSP-0048\n章节证据：409\n自述在灯火工作多年，所在据点有井下密室\nP?｜十元待核｜阶段材料",
+      "text": "**苏舟** `QSP-0048`\n作者212–215｜刺杀王崇理，自述为靖王复仇；214挟持小满\nP?｜十元待审",
       "color": "2",
       "x": 696,
       "y": 3605,
@@ -1733,7 +1733,7 @@
     {
       "id": "QSP-0133",
       "type": "text",
-      "text": "**王将军（千岁军，姓名未核）**\nQSP-0133｜作者180\n千岁军将领；181章将靖王血书转交冯大伴，未照靖王救援意志行事\nP?｜十元待证",
+      "text": "**王崇理（王将军）** `QSP-0133`\n作者211–213｜千岁军指挥；213被陈迹刺杀死亡，继任UNKNOWN\nP?｜十元待审",
       "color": "4",
       "x": 120,
       "y": 7140,
@@ -2029,6 +2029,26 @@
       "width": 1400,
       "height": 210,
       "color": "3"
+    },
+    {
+      "id": "QS21-032",
+      "type": "text",
+      "text": "**千岁军**  `QS21-032`\nR24组织引用（W冻结）",
+      "x": 11500,
+      "y": 13050,
+      "width": 1300,
+      "height": 215,
+      "color": "4"
+    },
+    {
+      "id": "QS22-N001",
+      "type": "text",
+      "text": "**靖王府**  `QS22-N001`\nR24组织引用（W冻结）",
+      "x": 11500,
+      "y": 13320,
+      "width": 1300,
+      "height": 215,
+      "color": "4"
     }
   ],
   "edges": [
@@ -4167,6 +4187,78 @@
       "fromNode": "QSP-0002",
       "toNode": "QS21-068",
       "label": "promotion-banquet-family-network｜210",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0170",
+      "fromNode": "QSP-0133",
+      "toNode": "QSP-0001",
+      "label": "publicly-accused-of-blood-letter-betrayal｜211",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0171",
+      "fromNode": "QSP-0048",
+      "toNode": "QSP-0133",
+      "label": "attempted-assassination｜212",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0172",
+      "fromNode": "QSP-0048",
+      "toNode": "QSP-0122",
+      "label": "claimed-loyalty-and-revenge｜213",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0173",
+      "fromNode": "QSP-0133",
+      "toNode": "QSP-0060",
+      "label": "alleged-coercion｜213",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0174",
+      "fromNode": "QSP-0133",
+      "toNode": "QSP-0061",
+      "label": "alleged-coercion｜213",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0175",
+      "fromNode": "QSP-0001",
+      "toNode": "QSP-0133",
+      "label": "killed-in-conflict｜213",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0176",
+      "fromNode": "QSP-0048",
+      "toNode": "QSP-0010",
+      "label": "hostage-threat｜214",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0080",
+      "fromNode": "QSP-0133",
+      "toNode": "QS21-032",
+      "label": "commanded-until-death-ch213｜213",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0081",
+      "fromNode": "QSP-0048",
+      "toNode": "QS22-N001",
+      "label": "self-declared-historical-loyalty-not-current-office｜213",
       "fromSide": "right",
       "toSide": "left"
     }
