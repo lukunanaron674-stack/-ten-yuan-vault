@@ -1869,6 +1869,66 @@
       "width": 1300,
       "height": 170,
       "color": "5"
+    },
+    {
+      "id": "QSP-0140",
+      "type": "text",
+      "text": "**陈礼尊**\nR34作者191｜候选\nP?｜十元待核",
+      "x": 10500,
+      "y": 9500,
+      "width": 1250,
+      "height": 170,
+      "color": "4"
+    },
+    {
+      "id": "QSP-0141",
+      "type": "text",
+      "text": "**太医院乔老（姓名未核）**\nR34作者195｜候选\nP?｜十元待核",
+      "x": 10500,
+      "y": 9740,
+      "width": 1250,
+      "height": 170,
+      "color": "4"
+    },
+    {
+      "id": "QSP-0142",
+      "type": "text",
+      "text": "**刘曲星**\nR34作者195｜候选\nP?｜十元待核",
+      "x": 10500,
+      "y": 9980,
+      "width": 1250,
+      "height": 170,
+      "color": "4"
+    },
+    {
+      "id": "QS21-014",
+      "type": "text",
+      "text": "**户部**\nR24组织引用（W不变）",
+      "x": 12100,
+      "y": 10380,
+      "width": 1300,
+      "height": 170,
+      "color": "5"
+    },
+    {
+      "id": "QS21-008",
+      "type": "text",
+      "text": "**解烦卫**\nR24组织引用（W不变）",
+      "x": 12100,
+      "y": 10600,
+      "width": 1300,
+      "height": 170,
+      "color": "5"
+    },
+    {
+      "id": "QS21-021",
+      "type": "text",
+      "text": "**太医院**\nR24组织引用（W不变）",
+      "x": 12100,
+      "y": 10820,
+      "width": 1300,
+      "height": 170,
+      "color": "5"
     }
   ],
   "edges": [
@@ -3711,6 +3771,102 @@
       "fromNode": "QSP-0001",
       "toNode": "QS21-007",
       "label": "assigned-supervision-of-demoted-agents｜190",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0141",
+      "fromNode": "QSP-0007",
+      "toNode": "QSP-0001",
+      "label": "family-career-context｜191",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0142",
+      "fromNode": "QSP-0135",
+      "toNode": "QSP-0121",
+      "label": "mentor-disciple｜192",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0143",
+      "fromNode": "QSP-0060",
+      "toNode": "QSP-0061",
+      "label": "explains-rank-system-to-colleague｜193",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0144",
+      "fromNode": "QSP-0003",
+      "toNode": "QSP-0083",
+      "label": "escorts-to-capital｜194",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0145",
+      "fromNode": "QSP-0061",
+      "toNode": "QSP-0001",
+      "label": "private-cooperation｜194",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0146",
+      "fromNode": "QSP-0060",
+      "toNode": "QSP-0001",
+      "label": "private-cooperation｜194",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0147",
+      "fromNode": "QSP-0034",
+      "toNode": "QSP-0141",
+      "label": "proposes-apprenticeship｜195",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0148",
+      "fromNode": "QSP-0007",
+      "toNode": "QSP-0001",
+      "label": "proposes-school-entry｜195",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0149",
+      "fromNode": "QSP-0001",
+      "toNode": "QSP-0142",
+      "label": "shared-dividend-context｜195",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0072",
+      "fromNode": "QSP-0140",
+      "toNode": "QS21-014",
+      "label": "current-official-role-reported｜191",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0073",
+      "fromNode": "QSP-0003",
+      "toNode": "QS21-008",
+      "label": "escort-coordination-not-command｜194",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0074",
+      "fromNode": "QSP-0141",
+      "toNode": "QS21-021",
+      "label": "title-affiliation-reported｜195",
       "fromSide": "right",
       "toSide": "left"
     }
