@@ -359,64 +359,420 @@
       "y": 270,
       "width": 281,
       "height": 143
+    },
+    {
+      "id": "ORG-HEADER",
+      "type": "text",
+      "text": "# 《青山》R24 组织接口（12条人物跨层联系）\n下列是原114对象中的节点引用，不新增组织，也不更改组织W；任职、历史任职、招揽、口述与执行不同类型。",
+      "x": 680,
+      "y": 1130,
+      "width": 1270,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "id": "ORG-GROUP",
+      "type": "group",
+      "label": "B2｜已核组织ID映射（非直属组织包含）",
+      "color": "4",
+      "x": -20,
+      "y": 1300,
+      "width": 2630,
+      "height": 549
+    },
+    {
+      "id": "ORG-QS21-007",
+      "type": "text",
+      "text": "**密谍司**\nQS21-007\n来源：原R24组织稳定ID",
+      "color": "4",
+      "x": 50,
+      "y": 1340,
+      "width": 600,
+      "height": 125
+    },
+    {
+      "id": "ORG-QS21-035",
+      "type": "text",
+      "text": "**边军（集合）**\nQS21-035\n来源：原R24组织稳定ID",
+      "color": "4",
+      "x": 695,
+      "y": 1340,
+      "width": 600,
+      "height": 125
+    },
+    {
+      "id": "ORG-QS21-030",
+      "type": "text",
+      "text": "**羽林军**\nQS21-030\n来源：原R24组织稳定ID",
+      "color": "4",
+      "x": 1340,
+      "y": 1340,
+      "width": 600,
+      "height": 125
+    },
+    {
+      "id": "ORG-QS21-020",
+      "type": "text",
+      "text": "**钦天监**\nQS21-020\n来源：原R24组织稳定ID",
+      "color": "4",
+      "x": 1985,
+      "y": 1340,
+      "width": 600,
+      "height": 125
+    },
+    {
+      "id": "ORG-QS21-033",
+      "type": "text",
+      "text": "**五军营**\nQS21-033\n来源：原R24组织稳定ID",
+      "color": "4",
+      "x": 50,
+      "y": 1498,
+      "width": 600,
+      "height": 125
+    },
+    {
+      "id": "ORG-QS21-031",
+      "type": "text",
+      "text": "**万岁军**\nQS21-031\n来源：原R24组织稳定ID",
+      "color": "4",
+      "x": 695,
+      "y": 1498,
+      "width": 600,
+      "height": 125
+    },
+    {
+      "id": "ORG-QS21-063",
+      "type": "text",
+      "text": "**京城陈家**\nQS21-063\n来源：原R24组织稳定ID",
+      "color": "4",
+      "x": 1340,
+      "y": 1498,
+      "width": 600,
+      "height": 125
+    },
+    {
+      "id": "ORG-QS21-075",
+      "type": "text",
+      "text": "**漕帮**\nQS21-075\n来源：原R24组织稳定ID",
+      "color": "4",
+      "x": 1985,
+      "y": 1498,
+      "width": 600,
+      "height": 125
+    },
+    {
+      "id": "ORG-QS21-091",
+      "type": "text",
+      "text": "**金陵晚报**\nQS21-091\n来源：原R24组织稳定ID",
+      "color": "4",
+      "x": 50,
+      "y": 1656,
+      "width": 600,
+      "height": 125
+    },
+    {
+      "id": "ORG-QS22-N002",
+      "type": "text",
+      "text": "**中军都督府**\nQS22-N002\n来源：原R24组织稳定ID",
+      "color": "4",
+      "x": 695,
+      "y": 1656,
+      "width": 600,
+      "height": 125
     }
   ],
   "edges": [
     {
-      "id": "edge0",
+      "id": "QSPR-VIS-001",
       "fromNode": "QSP-0003",
       "fromSide": "right",
       "toNode": "QSP-0001",
       "toSide": "left",
-      "label": "issued-instruction"
+      "label": "259｜issued-instruction"
     },
     {
-      "id": "edge1",
+      "id": "QSPR-VIS-002",
       "fromNode": "QSP-0003",
       "fromSide": "right",
       "toNode": "QSP-0004",
       "toSide": "left",
-      "label": "reported-cooperation"
+      "label": "259｜reported-cooperation"
     },
     {
-      "id": "edge2",
+      "id": "QSPR-VIS-003",
+      "fromNode": "QSP-0003",
+      "fromSide": "right",
+      "toNode": "QSP-0027",
+      "toSide": "left",
+      "label": "259｜gave-order"
+    },
+    {
+      "id": "QSPR-VIS-004",
+      "fromNode": "QSP-0003",
+      "fromSide": "right",
+      "toNode": "QSP-0028",
+      "toSide": "left",
+      "label": "259｜gave-order"
+    },
+    {
+      "id": "QSPR-VIS-005",
+      "fromNode": "QSP-0003",
+      "fromSide": "right",
+      "toNode": "QSP-0029",
+      "toSide": "left",
+      "label": "259｜gave-order"
+    },
+    {
+      "id": "QSPR-VIS-006",
+      "fromNode": "QSP-0003",
+      "fromSide": "right",
+      "toNode": "QSP-0002",
+      "toSide": "left",
+      "label": "259｜recruitment-proposal-via-intermediary"
+    },
+    {
+      "id": "QSPR-VIS-007",
+      "fromNode": "QSP-0011",
+      "fromSide": "right",
+      "toNode": "QSP-0002",
+      "toSide": "left",
+      "label": "259｜refused-training-request"
+    },
+    {
+      "id": "QSPR-VIS-008",
+      "fromNode": "QSP-0005",
+      "fromSide": "right",
+      "toNode": "QSP-0001",
+      "toSide": "left",
+      "label": "260｜funds-for-procurement"
+    },
+    {
+      "id": "QSPR-VIS-009",
+      "fromNode": "QSP-0007",
+      "fromSide": "right",
+      "toNode": "QSP-0009",
+      "toSide": "left",
+      "label": "260｜household-instruction"
+    },
+    {
+      "id": "QSPR-VIS-010",
+      "fromNode": "QSP-0006",
+      "fromSide": "right",
+      "toNode": "QSP-0001",
+      "toSide": "left",
+      "label": "262｜physical-conflict"
+    },
+    {
+      "id": "QSPR-VIS-011",
       "fromNode": "QSP-0005",
       "fromSide": "right",
       "toNode": "QSP-0006",
       "toSide": "left",
-      "label": "disciplinary-petition"
+      "label": "262｜disciplinary-petition"
     },
     {
-      "id": "edge3",
+      "id": "QSPR-VIS-012",
       "fromNode": "QSP-0013",
       "fromSide": "right",
       "toNode": "QSP-0006",
       "toSide": "left",
-      "label": "sanction-approved"
+      "label": "262｜sanction-approved"
     },
     {
-      "id": "edge4",
+      "id": "QSPR-VIS-013",
+      "fromNode": "QSP-0002",
+      "fromSide": "right",
+      "toNode": "QSP-0001",
+      "toSide": "left",
+      "label": "262｜public-defense"
+    },
+    {
+      "id": "QSPR-VIS-014",
+      "fromNode": "QSP-0005",
+      "fromSide": "right",
+      "toNode": "QSP-0008",
+      "toSide": "left",
+      "label": "263｜mediation-request-refused"
+    },
+    {
+      "id": "QSPR-VIS-015",
+      "fromNode": "QSP-0008",
+      "fromSide": "right",
+      "toNode": "QSP-0001",
+      "toSide": "left",
+      "label": "263｜respects-autonomy"
+    },
+    {
+      "id": "QSPR-VIS-016",
+      "fromNode": "QSP-0025",
+      "fromSide": "right",
+      "toNode": "QSP-0001",
+      "toSide": "left",
+      "label": "263｜invitation-via-messenger"
+    },
+    {
+      "id": "QSPR-VIS-017",
       "fromNode": "QSP-0017",
       "fromSide": "right",
       "toNode": "QSP-0014",
       "toSide": "left",
-      "label": "recruitment-proposal"
+      "label": "393｜recruitment-proposal"
     },
     {
-      "id": "edge5",
+      "id": "QSPR-VIS-018",
+      "fromNode": "QSP-0017",
+      "fromSide": "right",
+      "toNode": "QSP-0001",
+      "toSide": "left",
+      "label": "393｜recruitment-proposal"
+    },
+    {
+      "id": "QSPR-VIS-019",
       "fromNode": "QSP-0014",
       "fromSide": "right",
       "toNode": "QSP-0016",
       "toSide": "left",
-      "label": "on-scene-guard"
+      "label": "393｜on-scene-guard"
     },
     {
-      "id": "edge6",
+      "id": "QSPR-VIS-020",
+      "fromNode": "QSP-0015",
+      "fromSide": "right",
+      "toNode": "QSP-0019",
+      "toSide": "left",
+      "label": "393｜historical-legend"
+    },
+    {
+      "id": "QSPR-VIS-021",
+      "fromNode": "QSP-0018",
+      "fromSide": "right",
+      "toNode": "QSP-0013",
+      "toSide": "left",
+      "label": "393｜protective-command"
+    },
+    {
+      "id": "QSPR-VIS-022",
       "fromNode": "QSP-0022",
       "fromSide": "right",
       "toNode": "QSP-0023",
       "toSide": "left",
-      "label": "self-reported-subordinate"
+      "label": "847｜self-reported-subordinate"
+    },
+    {
+      "id": "QSPR-VIS-023",
+      "fromNode": "QSP-0022",
+      "fromSide": "right",
+      "toNode": "QSP-0001",
+      "toSide": "left",
+      "label": "847｜joint-print-distribution-work"
+    },
+    {
+      "id": "QSPA-VIS-001",
+      "fromNode": "QSP-0003",
+      "fromSide": "bottom",
+      "toNode": "ORG-QS21-007",
+      "toSide": "top",
+      "label": "259｜claim-of-internal-authority",
+      "color": "4"
+    },
+    {
+      "id": "QSPA-VIS-002",
+      "fromNode": "QSP-0004",
+      "fromSide": "bottom",
+      "toNode": "ORG-QS21-035",
+      "toSide": "top",
+      "label": "259｜military-position",
+      "color": "4"
+    },
+    {
+      "id": "QSPA-VIS-003",
+      "fromNode": "QSP-0005",
+      "fromSide": "bottom",
+      "toNode": "ORG-QS21-030",
+      "toSide": "top",
+      "label": "260｜field-commander",
+      "color": "4"
+    },
+    {
+      "id": "QSPA-VIS-004",
+      "fromNode": "QSP-0006",
+      "fromSide": "bottom",
+      "toNode": "ORG-QS21-030",
+      "toSide": "top",
+      "label": "262｜deputy-commander-to-squad-leader",
+      "color": "4"
+    },
+    {
+      "id": "QSPA-VIS-005",
+      "fromNode": "QSP-0011",
+      "fromSide": "bottom",
+      "toNode": "ORG-QS21-020",
+      "toSide": "top",
+      "label": "259｜deputy-director",
+      "color": "4"
+    },
+    {
+      "id": "QSPA-VIS-006",
+      "fromNode": "QSP-0014",
+      "fromSide": "bottom",
+      "toNode": "ORG-QS21-033",
+      "toSide": "top",
+      "label": "393｜FORMER_POST",
+      "color": "4"
+    },
+    {
+      "id": "QSPA-VIS-007",
+      "fromNode": "QSP-0017",
+      "fromSide": "bottom",
+      "toNode": "ORG-QS21-031",
+      "toSide": "top",
+      "label": "393｜recruiting-for-force-not-roster-proof",
+      "color": "4"
+    },
+    {
+      "id": "QSPA-VIS-008",
+      "fromNode": "QSP-0009",
+      "fromSide": "bottom",
+      "toNode": "ORG-QS21-063",
+      "toSide": "top",
+      "label": "260｜household-servant-context",
+      "color": "4"
+    },
+    {
+      "id": "QSPA-VIS-009",
+      "fromNode": "QSP-0022",
+      "fromSide": "bottom",
+      "toNode": "ORG-QS21-075",
+      "toSide": "top",
+      "label": "847｜self-reported-member",
+      "color": "4"
+    },
+    {
+      "id": "QSPA-VIS-010",
+      "fromNode": "QSP-0023",
+      "fromSide": "bottom",
+      "toNode": "ORG-QS21-075",
+      "toSide": "top",
+      "label": "847｜reported-senior-person",
+      "color": "4"
+    },
+    {
+      "id": "QSPA-VIS-011",
+      "fromNode": "QSP-0022",
+      "fromSide": "bottom",
+      "toNode": "ORG-QS21-091",
+      "toSide": "top",
+      "label": "847｜printing-and-sales-operator",
+      "color": "4"
+    },
+    {
+      "id": "QSPA-VIS-012",
+      "fromNode": "QSP-0026",
+      "fromSide": "bottom",
+      "toNode": "ORG-QS22-N002",
+      "toSide": "top",
+      "label": "814｜commander-appointed",
+      "color": "4"
     }
   ]
 }
