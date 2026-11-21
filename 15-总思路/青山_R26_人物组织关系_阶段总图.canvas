@@ -2059,6 +2059,16 @@
       "width": 1700,
       "height": 350,
       "color": "2"
+    },
+    {
+      "id": "R44-AUDIT-223-227",
+      "type": "text",
+      "text": "R44｜作者223–227章卡回收\n新增3条人物关系（FACT 2 / TESTIMONY 1）；227独立转载正文至章末，仍非严格原著全文PASS\nNEXT R45：228–232章；R24 W冻结",
+      "x": 2320,
+      "y": 14580,
+      "width": 1550,
+      "height": 230,
+      "color": "2"
     }
   ],
   "edges": [
@@ -4269,6 +4279,30 @@
       "fromNode": "QSP-0048",
       "toNode": "QS22-N001",
       "label": "self-declared-historical-loyalty-not-current-office｜213",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0177",
+      "fromNode": "QSP-0013",
+      "toNode": "QSP-0007",
+      "label": "issued-courier-order-to-reroute｜223",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0178",
+      "fromNode": "QSP-0012",
+      "toNode": "QSP-0001",
+      "label": "covertly-followed-travel-route｜224",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0179",
+      "fromNode": "QSP-0001",
+      "toNode": "QSP-0143",
+      "label": "claimed-master-disciple-relationship｜225",
       "fromSide": "right",
       "toSide": "left"
     }
