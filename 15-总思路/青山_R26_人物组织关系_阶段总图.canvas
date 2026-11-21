@@ -1,0 +1,1161 @@
+{
+  "nodes": [
+    {
+      "id": "R26-ROOT",
+      "type": "text",
+      "text": "# 《青山》世界人物关系总树｜R26\n41个人物候选／44条人物关系／20条人物-组织边\n上游R25→本轮394–398章｜证据优先，P?与十元未判定",
+      "x": 780,
+      "y": -255,
+      "width": 1850,
+      "height": 190,
+      "color": "3"
+    },
+    {
+      "id": "R26-STATE",
+      "type": "text",
+      "text": "**状态与停止条件**\nR25人物29 → R26新增12；关系23 → 42；组织边12 → 20。\n本轮基于GitHub章证分片，不能当作全书穷尽；R24原114组织及W保持不变。",
+      "x": 2680,
+      "y": -255,
+      "width": 790,
+      "height": 190,
+      "color": "2"
+    },
+    {
+      "id": "R26-LINK-R25",
+      "type": "file",
+      "file": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R25_人物系统_阶段总表_20261121.md",
+      "x": 0,
+      "y": -255,
+      "width": 700,
+      "height": 140,
+      "color": "4"
+    },
+    {
+      "id": "R26-GRP-0",
+      "type": "group",
+      "label": "① 密谍、皇室、历史",
+      "x": 0,
+      "y": 60,
+      "width": 670,
+      "height": 1192,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0001",
+      "type": "text",
+      "text": "**陈迹**  `QSP-0001`\n章证：259、260、262、263、393、847\n东宫右司卫的既有任职被章节提及；卷入寻粮、调查、冲突及后期报纸印发\nP? ｜ 十元未核",
+      "x": 16,
+      "y": 108,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0002",
+      "type": "text",
+      "text": "**张夏**  `QSP-0002`\n章证：259、262、263、393\n被白龙提出招揽，未接受；曾公开维护陈迹\nP? ｜ 十元未核",
+      "x": 339,
+      "y": 108,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0003",
+      "type": "text",
+      "text": "**白龙**  `QSP-0003`\n章证：259\n自述统筹假降引敌计划并现场命令三名潜伏观察者；密谍司职衔待补证\nP? ｜ 十元未核",
+      "x": 16,
+      "y": 264,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0004",
+      "type": "text",
+      "text": "**周遊**  `QSP-0004`\n章证：259\n边军指挥层人物；被白龙描述为假降计划参与者（按其陈述）\nP? ｜ 十元未核",
+      "x": 339,
+      "y": 264,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0011",
+      "type": "text",
+      "text": "**徐术**  `QSP-0011`\n章证：259\n钦天监副监正；曾拒绝张夏求授行官门径（回忆）\nP? ｜ 十元未核",
+      "x": 16,
+      "y": 420,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0012",
+      "type": "text",
+      "text": "**张铮**  `QSP-0012`\n章证：263、393\n263章参与粮食对话；393章列为人物；具体身份须回原文校勘\nP? ｜ 十元未核",
+      "x": 339,
+      "y": 420,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0013",
+      "type": "text",
+      "text": "**太子（姓名未核）**  `QSP-0013`\n章证：260、262、263、393\n监督寻粮并批准军纪处分；不得自动合并到张铮\nP? ｜ 十元未核",
+      "x": 16,
+      "y": 576,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0019",
+      "type": "text",
+      "text": "**宁朝太祖（未核姓名）**  `QSP-0019`\n章证：393\n章内开国战事叙述与门径更名批复关联人物\nP? ｜ 十元未核",
+      "x": 339,
+      "y": 576,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0020",
+      "type": "text",
+      "text": "**北魏皇帝（未核姓名）**  `QSP-0020`\n章证：393\n茶馆版本涉及的历史皇帝；不得当作当前在位者\nP? ｜ 十元未核",
+      "x": 16,
+      "y": 732,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0025",
+      "type": "text",
+      "text": "**胡将军（姓名未核）**  `QSP-0025`\n章证：263\n边军甲士代其向陈迹转达邀约，身份和邀约目的待核\nP? ｜ 十元未核",
+      "x": 339,
+      "y": 732,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0026",
+      "type": "text",
+      "text": "**郑继业**  `QSP-0026`\n章证：814\nR24证据指其在作者814章被任为中军都督府指挥使\nP? ｜ 十元未核",
+      "x": 16,
+      "y": 888,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0027",
+      "type": "text",
+      "text": "**宝丰斋老板（未具名）**  `QSP-0027`\n章证：259\n向白龙请罪并接受返回无念山指令，店铺产权归属未证\nP? ｜ 十元未核",
+      "x": 339,
+      "y": 888,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0028",
+      "type": "text",
+      "text": "**裁缝铺老板娘（未具名）**  `QSP-0028`\n章证：259\n向白龙请罪并接受返回无念山指令，店铺产权归属未证\nP? ｜ 十元未核",
+      "x": 16,
+      "y": 1044,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0029",
+      "type": "text",
+      "text": "**街口打更人（未具名）**  `QSP-0029`\n章证：259\n向白龙请罪并接受返回无念山指令，雇佣及组织隶属待核\nP? ｜ 十元未核",
+      "x": 339,
+      "y": 1044,
+      "width": 300,
+      "height": 138,
+      "color": "5"
+    },
+    {
+      "id": "R26-GRP-720",
+      "type": "group",
+      "label": "② 军事、春狩与超自然追击",
+      "x": 720,
+      "y": 60,
+      "width": 670,
+      "height": 1036,
+      "color": "4"
+    },
+    {
+      "id": "QSP-0005",
+      "type": "text",
+      "text": "**李玄**  `QSP-0005`\n章证：260、262、263\n带领羽林军寻粮、向太子奏请处分齐斟酌并获批准\nP? ｜ 十元未核",
+      "x": 736,
+      "y": 108,
+      "width": 300,
+      "height": 138,
+      "color": "4"
+    },
+    {
+      "id": "QSP-0006",
+      "type": "text",
+      "text": "**齐斟酌**  `QSP-0006`\n章证：260、262、263、393\n羽林军副指挥使后被贬伍长；与陈迹发生争执冲突\nP? ｜ 十元未核",
+      "x": 1059,
+      "y": 108,
+      "width": 300,
+      "height": 138,
+      "color": "4"
+    },
+    {
+      "id": "QSP-0007",
+      "type": "text",
+      "text": "**陈礼钦**  `QSP-0007`\n章证：260、262、263\n参与寻粮纪律劝告，并向王贵作家内差遣\nP? ｜ 十元未核",
+      "x": 736,
+      "y": 264,
+      "width": 300,
+      "height": 138,
+      "color": "4"
+    },
+    {
+      "id": "QSP-0014",
+      "type": "text",
+      "text": "**周旷**  `QSP-0014`\n章证：393\n曾任五军营，失官后在福王身边护卫；万岁军招揽未成\nP? ｜ 十元未核",
+      "x": 1059,
+      "y": 264,
+      "width": 300,
+      "height": 138,
+      "color": "4"
+    },
+    {
+      "id": "QSP-0015",
+      "type": "text",
+      "text": "**周怀瑾**  `QSP-0015`\n章证：393\n历史人物；护驾事迹有茶馆民间版本，周家门径名称恢复有章内叙述\nP? ｜ 十元未核",
+      "x": 736,
+      "y": 420,
+      "width": 300,
+      "height": 138,
+      "color": "4"
+    },
+    {
+      "id": "QSP-0016",
+      "type": "text",
+      "text": "**福王**  `QSP-0016`\n章证：393\n与周旷有现场护卫、社交接触；王爵是身份而非独立组织\nP? ｜ 十元未核",
+      "x": 1059,
+      "y": 420,
+      "width": 300,
+      "height": 138,
+      "color": "4"
+    },
+    {
+      "id": "QSP-0017",
+      "type": "text",
+      "text": "**羊羊**  `QSP-0017`\n章证：393\n提议周旷、陈迹加入万岁军；仅证明招揽意向\nP? ｜ 十元未核",
+      "x": 736,
+      "y": 576,
+      "width": 300,
+      "height": 138,
+      "color": "4"
+    },
+    {
+      "id": "QSP-0018",
+      "type": "text",
+      "text": "**廖先生**  `QSP-0018`\n章证：393\n毒箭出现时发出保护太子的现场指令\nP? ｜ 十元未核",
+      "x": 1059,
+      "y": 576,
+      "width": 300,
+      "height": 138,
+      "color": "4"
+    },
+    {
+      "id": "QSP-0030",
+      "type": "text",
+      "text": "**羊放**  `QSP-0030`\n章证：394\n战时为保护羊羊挡下骨箭，当场死亡；不推断其家属、职位或生前完整履历\nP? ｜ 十元未核",
+      "x": 736,
+      "y": 732,
+      "width": 300,
+      "height": 138,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0031",
+      "type": "text",
+      "text": "**羊贤**  `QSP-0031`\n章证：394\n战时为保护羊羊挡下骨箭，当场死亡；不推断其家属、职位或生前完整履历\nP? ｜ 十元未核",
+      "x": 1059,
+      "y": 732,
+      "width": 300,
+      "height": 138,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0032",
+      "type": "text",
+      "text": "**封刀接骨五猖百夫长（未具名）**  `QSP-0032`\n章证：394、395\n自述五路大军中小百夫长；带队追击陈迹并派游山捕猎小队追踪\nP? ｜ 十元未核",
+      "x": 736,
+      "y": 888,
+      "width": 300,
+      "height": 138,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0033",
+      "type": "text",
+      "text": "**游山捕猎五猖什长（未具名）**  `QSP-0033`\n章证：395\n受指挥参与十名游山捕猎的追踪，判读断草及行迹；日常军籍未知\nP? ｜ 十元未核",
+      "x": 1059,
+      "y": 888,
+      "width": 300,
+      "height": 138,
+      "color": "3"
+    },
+    {
+      "id": "R26-GRP-1440",
+      "type": "group",
+      "label": "③ 陈府、家族与生存关系",
+      "x": 1440,
+      "y": 60,
+      "width": 670,
+      "height": 880,
+      "color": "6"
+    },
+    {
+      "id": "QSP-0008",
+      "type": "text",
+      "text": "**陈问宗**  `QSP-0008`\n章证：260、262、263\n参加寻粮；拒绝替李玄迫使陈迹原谅\nP? ｜ 十元未核",
+      "x": 1456,
+      "y": 108,
+      "width": 300,
+      "height": 138,
+      "color": "6"
+    },
+    {
+      "id": "QSP-0009",
+      "type": "text",
+      "text": "**王贵**  `QSP-0009`\n章证：260、263\n陈家随行家仆，受陈礼钦差遣调粮；代表陈家询问军粮\nP? ｜ 十元未核",
+      "x": 1779,
+      "y": 108,
+      "width": 300,
+      "height": 138,
+      "color": "6"
+    },
+    {
+      "id": "QSP-0010",
+      "type": "text",
+      "text": "**小满**  `QSP-0010`\n章证：263\n就张夏维护陈迹的言语作出回应；与陈迹同行关系待详核\nP? ｜ 十元未核",
+      "x": 1456,
+      "y": 264,
+      "width": 300,
+      "height": 138,
+      "color": "6"
+    },
+    {
+      "id": "QSP-0021",
+      "type": "text",
+      "text": "**小五**  `QSP-0021`\n章证：262\n龙门客栈伙计，告知陈迹一早离开并评论粮食争议\nP? ｜ 十元未核",
+      "x": 1779,
+      "y": 264,
+      "width": 300,
+      "height": 138,
+      "color": "6"
+    },
+    {
+      "id": "QSP-0034",
+      "type": "text",
+      "text": "**梁氏**  `QSP-0034`\n章证：395、397\n与陈家旧案相关，被陈迹怀疑；397章与陈礼治的保密/威胁直接对话有章证\nP? ｜ 十元未核",
+      "x": 1456,
+      "y": 420,
+      "width": 300,
+      "height": 138,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0035",
+      "type": "text",
+      "text": "**陈礼治**  `QSP-0035`\n章证：395、397\n陈家二房相关人物；397章向府中主事下令追捕，并与梁氏谈及报仇与知情压力\nP? ｜ 十元未核",
+      "x": 1779,
+      "y": 420,
+      "width": 300,
+      "height": 138,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0036",
+      "type": "text",
+      "text": "**小和尚**  `QSP-0036`\n章证：395、396\n396章与小满在陈府共同生活/劳动，遭追击并获张黎协助脱身；对行官门径自述不作组织证明\nP? ｜ 十元未核",
+      "x": 1456,
+      "y": 576,
+      "width": 300,
+      "height": 138,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0040",
+      "type": "text",
+      "text": "**陈家二房主事（未具名）**  `QSP-0040`\n章证：397\n397章向陈礼治报告并承接追捕安排；实际调动漕帮是否成功未证\nP? ｜ 十元未核",
+      "x": 1779,
+      "y": 576,
+      "width": 300,
+      "height": 138,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0041",
+      "type": "text",
+      "text": "**陈府持山鬼花钱小厮（未具名）**  `QSP-0041`\n章证：396\n与追捕小满和小和尚的陈府袭击者有关，持山鬼花钱召唤攻击；正式归属待核\nP? ｜ 十元未核",
+      "x": 1456,
+      "y": 732,
+      "width": 300,
+      "height": 138,
+      "color": "3"
+    },
+    {
+      "id": "R26-GRP-2160",
+      "type": "group",
+      "label": "④ 修行、朝政与游说",
+      "x": 2160,
+      "y": 60,
+      "width": 670,
+      "height": 412,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0037",
+      "type": "text",
+      "text": "**张黎**  `QSP-0037`\n章证：396\n自称黄山道庭首徒；驾车使用术法救小满和小和尚，救援已执行而后续安全未证\nP? ｜ 十元未核",
+      "x": 2176,
+      "y": 108,
+      "width": 300,
+      "height": 138,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0038",
+      "type": "text",
+      "text": "**张拙**  `QSP-0038`\n章证：396、398\n小满拟求助的吏部衙门相关人物；398章接见陈问德并听取政治游说，未证结盟\nP? ｜ 十元未核",
+      "x": 2499,
+      "y": 108,
+      "width": 300,
+      "height": 138,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0039",
+      "type": "text",
+      "text": "**陈问德**  `QSP-0039`\n章证：398\n拜访张拙并以齐陈联姻等政治条件游说其对付陈家大房；政治交易结果未证\nP? ｜ 十元未核",
+      "x": 2176,
+      "y": 264,
+      "width": 300,
+      "height": 138,
+      "color": "3"
+    },
+    {
+      "id": "R26-GRP-2880",
+      "type": "group",
+      "label": "⑤ 商帮、报业及世界链接",
+      "x": 2880,
+      "y": 60,
+      "width": 670,
+      "height": 412,
+      "color": "2"
+    },
+    {
+      "id": "QSP-0022",
+      "type": "text",
+      "text": "**刘成**  `QSP-0022`\n章证：847\n自称漕帮吕爷手下，实际负责雕版印报、组织发行与收款\nP? ｜ 十元未核",
+      "x": 2896,
+      "y": 108,
+      "width": 300,
+      "height": 138,
+      "color": "2"
+    },
+    {
+      "id": "QSP-0023",
+      "type": "text",
+      "text": "**吕爷**  `QSP-0023`\n章证：847\n刘成称其为所从属的漕帮人物，尚未独立直接核验其职衔\nP? ｜ 十元未核",
+      "x": 3219,
+      "y": 108,
+      "width": 300,
+      "height": 138,
+      "color": "2"
+    },
+    {
+      "id": "QSP-0024",
+      "type": "text",
+      "text": "**姚安**  `QSP-0024`\n章证：847\n既有R24证据指其委托季氏一方筹办、刊印报纸；法定产权未证\nP? ｜ 十元未核",
+      "x": 2896,
+      "y": 264,
+      "width": 300,
+      "height": 138,
+      "color": "2"
+    },
+    {
+      "id": "R26-ORG-GROUP",
+      "type": "group",
+      "label": "⑥ 接R24原组织 114 节点｜仅人物接口（非组织间包含）",
+      "x": 0,
+      "y": 1440,
+      "width": 3550,
+      "height": 500,
+      "color": "4"
+    },
+    {
+      "id": "R26-ORG-QS21-007",
+      "type": "text",
+      "text": "**密谍司**\nQS21-007\n原R24稳定组织ID",
+      "x": 30,
+      "y": 1495,
+      "width": 550,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "R26-ORG-QS21-035",
+      "type": "text",
+      "text": "**边军（集合）**\nQS21-035\n原R24稳定组织ID",
+      "x": 615,
+      "y": 1495,
+      "width": 550,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "R26-ORG-QS21-030",
+      "type": "text",
+      "text": "**羽林军**\nQS21-030\n原R24稳定组织ID",
+      "x": 1200,
+      "y": 1495,
+      "width": 550,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "R26-ORG-QS21-020",
+      "type": "text",
+      "text": "**钦天监**\nQS21-020\n原R24稳定组织ID",
+      "x": 1785,
+      "y": 1495,
+      "width": 550,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "R26-ORG-QS21-033",
+      "type": "text",
+      "text": "**五军营**\nQS21-033\n原R24稳定组织ID",
+      "x": 2370,
+      "y": 1495,
+      "width": 550,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "R26-ORG-QS21-031",
+      "type": "text",
+      "text": "**万岁军**\nQS21-031\n原R24稳定组织ID",
+      "x": 2955,
+      "y": 1495,
+      "width": 550,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "R26-ORG-QS21-063",
+      "type": "text",
+      "text": "**京城陈家**\nQS21-063\n原R24稳定组织ID",
+      "x": 30,
+      "y": 1680,
+      "width": 550,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "R26-ORG-QS21-075",
+      "type": "text",
+      "text": "**漕帮**\nQS21-075\n原R24稳定组织ID",
+      "x": 615,
+      "y": 1680,
+      "width": 550,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "R26-ORG-QS21-091",
+      "type": "text",
+      "text": "**金陵晚报**\nQS21-091\n原R24稳定组织ID",
+      "x": 1200,
+      "y": 1680,
+      "width": 550,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "R26-ORG-QS22-N002",
+      "type": "text",
+      "text": "**中军都督府**\nQS22-N002\n原R24稳定组织ID",
+      "x": 1785,
+      "y": 1680,
+      "width": 550,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "R26-ORG-QS21-049",
+      "type": "text",
+      "text": "**黄山道庭**\nQS21-049\n原R24稳定组织ID",
+      "x": 2370,
+      "y": 1680,
+      "width": 550,
+      "height": 155,
+      "color": "4"
+    },
+    {
+      "id": "R26-ORG-QS21-012",
+      "type": "text",
+      "text": "**吏部**\nQS21-012\n原R24稳定组织ID",
+      "x": 2955,
+      "y": 1680,
+      "width": 550,
+      "height": 155,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "VIS-QSPR-0001",
+      "fromNode": "QSP-0003",
+      "fromSide": "bottom",
+      "toNode": "QSP-0001",
+      "toSide": "top",
+      "label": "259章｜issued-instruction"
+    },
+    {
+      "id": "VIS-QSPR-0002",
+      "fromNode": "QSP-0003",
+      "fromSide": "bottom",
+      "toNode": "QSP-0004",
+      "toSide": "top",
+      "label": "259章｜reported-cooperation"
+    },
+    {
+      "id": "VIS-QSPR-0003",
+      "fromNode": "QSP-0003",
+      "fromSide": "bottom",
+      "toNode": "QSP-0027",
+      "toSide": "top",
+      "label": "259章｜gave-order"
+    },
+    {
+      "id": "VIS-QSPR-0004",
+      "fromNode": "QSP-0003",
+      "fromSide": "bottom",
+      "toNode": "QSP-0028",
+      "toSide": "top",
+      "label": "259章｜gave-order"
+    },
+    {
+      "id": "VIS-QSPR-0005",
+      "fromNode": "QSP-0003",
+      "fromSide": "bottom",
+      "toNode": "QSP-0029",
+      "toSide": "top",
+      "label": "259章｜gave-order"
+    },
+    {
+      "id": "VIS-QSPR-0006",
+      "fromNode": "QSP-0003",
+      "fromSide": "bottom",
+      "toNode": "QSP-0002",
+      "toSide": "top",
+      "label": "259章｜recruitment-proposal-via-intermediary"
+    },
+    {
+      "id": "VIS-QSPR-0007",
+      "fromNode": "QSP-0011",
+      "fromSide": "bottom",
+      "toNode": "QSP-0002",
+      "toSide": "top",
+      "label": "259章｜refused-training-request"
+    },
+    {
+      "id": "VIS-QSPR-0008",
+      "fromNode": "QSP-0005",
+      "fromSide": "bottom",
+      "toNode": "QSP-0001",
+      "toSide": "top",
+      "label": "260章｜funds-for-procurement"
+    },
+    {
+      "id": "VIS-QSPR-0009",
+      "fromNode": "QSP-0007",
+      "fromSide": "bottom",
+      "toNode": "QSP-0009",
+      "toSide": "top",
+      "label": "260章｜household-instruction"
+    },
+    {
+      "id": "VIS-QSPR-0010",
+      "fromNode": "QSP-0006",
+      "fromSide": "bottom",
+      "toNode": "QSP-0001",
+      "toSide": "top",
+      "label": "262章｜physical-conflict"
+    },
+    {
+      "id": "VIS-QSPR-0011",
+      "fromNode": "QSP-0005",
+      "fromSide": "bottom",
+      "toNode": "QSP-0006",
+      "toSide": "top",
+      "label": "262章｜disciplinary-petition"
+    },
+    {
+      "id": "VIS-QSPR-0012",
+      "fromNode": "QSP-0013",
+      "fromSide": "bottom",
+      "toNode": "QSP-0006",
+      "toSide": "top",
+      "label": "262章｜sanction-approved"
+    },
+    {
+      "id": "VIS-QSPR-0013",
+      "fromNode": "QSP-0002",
+      "fromSide": "bottom",
+      "toNode": "QSP-0001",
+      "toSide": "top",
+      "label": "262章｜public-defense"
+    },
+    {
+      "id": "VIS-QSPR-0014",
+      "fromNode": "QSP-0005",
+      "fromSide": "bottom",
+      "toNode": "QSP-0008",
+      "toSide": "top",
+      "label": "263章｜mediation-request-refused"
+    },
+    {
+      "id": "VIS-QSPR-0015",
+      "fromNode": "QSP-0008",
+      "fromSide": "bottom",
+      "toNode": "QSP-0001",
+      "toSide": "top",
+      "label": "263章｜respects-autonomy"
+    },
+    {
+      "id": "VIS-QSPR-0016",
+      "fromNode": "QSP-0025",
+      "fromSide": "bottom",
+      "toNode": "QSP-0001",
+      "toSide": "top",
+      "label": "263章｜invitation-via-messenger"
+    },
+    {
+      "id": "VIS-QSPR-0017",
+      "fromNode": "QSP-0017",
+      "fromSide": "bottom",
+      "toNode": "QSP-0014",
+      "toSide": "top",
+      "label": "393章｜recruitment-proposal"
+    },
+    {
+      "id": "VIS-QSPR-0018",
+      "fromNode": "QSP-0017",
+      "fromSide": "bottom",
+      "toNode": "QSP-0001",
+      "toSide": "top",
+      "label": "393章｜recruitment-proposal"
+    },
+    {
+      "id": "VIS-QSPR-0019",
+      "fromNode": "QSP-0014",
+      "fromSide": "bottom",
+      "toNode": "QSP-0016",
+      "toSide": "top",
+      "label": "393章｜on-scene-guard"
+    },
+    {
+      "id": "VIS-QSPR-0020",
+      "fromNode": "QSP-0015",
+      "fromSide": "bottom",
+      "toNode": "QSP-0019",
+      "toSide": "top",
+      "label": "393章｜historical-legend"
+    },
+    {
+      "id": "VIS-QSPR-0021",
+      "fromNode": "QSP-0018",
+      "fromSide": "bottom",
+      "toNode": "QSP-0013",
+      "toSide": "top",
+      "label": "393章｜protective-command"
+    },
+    {
+      "id": "VIS-QSPR-0022",
+      "fromNode": "QSP-0022",
+      "fromSide": "bottom",
+      "toNode": "QSP-0023",
+      "toSide": "top",
+      "label": "847章｜self-reported-subordinate"
+    },
+    {
+      "id": "VIS-QSPR-0023",
+      "fromNode": "QSP-0022",
+      "fromSide": "bottom",
+      "toNode": "QSP-0001",
+      "toSide": "top",
+      "label": "847章｜joint-print-distribution-work"
+    },
+    {
+      "id": "VIS-QSPR-0024",
+      "fromNode": "QSP-0030",
+      "fromSide": "bottom",
+      "toNode": "QSP-0017",
+      "toSide": "top",
+      "label": "394章｜protected-at-cost-of-life",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0025",
+      "fromNode": "QSP-0031",
+      "fromSide": "bottom",
+      "toNode": "QSP-0017",
+      "toSide": "top",
+      "label": "394章｜protected-at-cost-of-life",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0026",
+      "fromNode": "QSP-0016",
+      "fromSide": "bottom",
+      "toNode": "QSP-0013",
+      "toSide": "top",
+      "label": "394章｜accused-unproven",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0027",
+      "fromNode": "QSP-0018",
+      "fromSide": "bottom",
+      "toNode": "QSP-0013",
+      "toSide": "top",
+      "label": "394章｜evacuated-with",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0028",
+      "fromNode": "QSP-0032",
+      "fromSide": "bottom",
+      "toNode": "QSP-0001",
+      "toSide": "top",
+      "label": "394章｜pursued-as-target",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0029",
+      "fromNode": "QSP-0032",
+      "fromSide": "bottom",
+      "toNode": "QSP-0033",
+      "toSide": "top",
+      "label": "395章｜issued-hunt-order",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0030",
+      "fromNode": "QSP-0013",
+      "fromSide": "bottom",
+      "toNode": "QSP-0018",
+      "toSide": "top",
+      "label": "395章｜ordered-harm-to-witnesses",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0031",
+      "fromNode": "QSP-0018",
+      "fromSide": "bottom",
+      "toNode": "QSP-0013",
+      "toSide": "top",
+      "label": "395章｜recounted-prior-ambush-plan",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0032",
+      "fromNode": "QSP-0001",
+      "fromSide": "bottom",
+      "toNode": "QSP-0035",
+      "toSide": "top",
+      "label": "395章｜investigative-hypothesis",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0033",
+      "fromNode": "QSP-0010",
+      "fromSide": "bottom",
+      "toNode": "QSP-0036",
+      "toSide": "top",
+      "label": "396章｜protected-and-escaped-with",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0034",
+      "fromNode": "QSP-0037",
+      "fromSide": "bottom",
+      "toNode": "QSP-0010",
+      "toSide": "top",
+      "label": "396章｜rescued-during-pursuit",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0035",
+      "fromNode": "QSP-0037",
+      "fromSide": "bottom",
+      "toNode": "QSP-0036",
+      "toSide": "top",
+      "label": "396章｜rescued-during-pursuit",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0036",
+      "fromNode": "QSP-0041",
+      "fromSide": "bottom",
+      "toNode": "QSP-0010",
+      "toSide": "top",
+      "label": "396章｜attacked-in-pursuit",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0037",
+      "fromNode": "QSP-0010",
+      "fromSide": "bottom",
+      "toNode": "QSP-0038",
+      "toSide": "top",
+      "label": "396章｜planned-seeking-help",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0038",
+      "fromNode": "QSP-0037",
+      "fromSide": "bottom",
+      "toNode": "QSP-0041",
+      "toSide": "top",
+      "label": "396章｜issued-repentance-demand",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0039",
+      "fromNode": "QSP-0035",
+      "fromSide": "bottom",
+      "toNode": "QSP-0034",
+      "toSide": "top",
+      "label": "397章｜threatened-silencing",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0040",
+      "fromNode": "QSP-0035",
+      "fromSide": "bottom",
+      "toNode": "QSP-0040",
+      "toSide": "top",
+      "label": "397章｜ordered-search",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0041",
+      "fromNode": "QSP-0040",
+      "fromSide": "bottom",
+      "toNode": "QSP-0009",
+      "toSide": "top",
+      "label": "397章｜pursuit-task-target",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPR-0042",
+      "fromNode": "QSP-0039",
+      "fromSide": "bottom",
+      "toNode": "QSP-0038",
+      "toSide": "top",
+      "label": "398章｜political-lobbying",
+      "color": "3"
+    },
+    {
+      "id": "VIS-QSPA-0001",
+      "fromNode": "QSP-0003",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-007",
+      "toSide": "top",
+      "label": "claim-of-internal-authority",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0002",
+      "fromNode": "QSP-0004",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-035",
+      "toSide": "top",
+      "label": "military-position",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0003",
+      "fromNode": "QSP-0005",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-030",
+      "toSide": "top",
+      "label": "field-commander",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0004",
+      "fromNode": "QSP-0006",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-030",
+      "toSide": "top",
+      "label": "deputy-commander-to-squad-leader",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0005",
+      "fromNode": "QSP-0011",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-020",
+      "toSide": "top",
+      "label": "deputy-director",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0006",
+      "fromNode": "QSP-0014",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-033",
+      "toSide": "top",
+      "label": "FORMER_POST",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0007",
+      "fromNode": "QSP-0017",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-031",
+      "toSide": "top",
+      "label": "recruiting-for-force-not-roster-proof",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0008",
+      "fromNode": "QSP-0009",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-063",
+      "toSide": "top",
+      "label": "household-servant-context",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0009",
+      "fromNode": "QSP-0022",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-075",
+      "toSide": "top",
+      "label": "self-reported-member",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0010",
+      "fromNode": "QSP-0023",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-075",
+      "toSide": "top",
+      "label": "reported-senior-person",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0011",
+      "fromNode": "QSP-0022",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-091",
+      "toSide": "top",
+      "label": "printing-and-sales-operator",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0012",
+      "fromNode": "QSP-0026",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS22-N002",
+      "toSide": "top",
+      "label": "commander-appointed",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0013",
+      "fromNode": "QSP-0017",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-031",
+      "toSide": "top",
+      "label": "千户-现场自称/章证",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0014",
+      "fromNode": "QSP-0037",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-049",
+      "toSide": "top",
+      "label": "首徒-本人自报/小厮识别",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0015",
+      "fromNode": "QSP-0035",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-063",
+      "toSide": "top",
+      "label": "二房-家族关系",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0016",
+      "fromNode": "QSP-0034",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-063",
+      "toSide": "top",
+      "label": "二房关联-不能推出掌权",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0017",
+      "fromNode": "QSP-0040",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-063",
+      "toSide": "top",
+      "label": "府内受命主事-不证明法定员额",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0018",
+      "fromNode": "QSP-0039",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-063",
+      "toSide": "top",
+      "label": "陈府政治往来角色-具体谱系待证",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0019",
+      "fromNode": "QSP-0038",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-012",
+      "toSide": "top",
+      "label": "吏部衙门求助对象-正式官职待核",
+      "color": "4"
+    },
+    {
+      "id": "VIS-QSPA-0020",
+      "fromNode": "QSP-0035",
+      "fromSide": "bottom",
+      "toNode": "R26-ORG-QS21-075",
+      "toSide": "top",
+      "label": "要求派人接触/追索-未证合作",
+      "color": "4"
+    }
+  ]
+}
