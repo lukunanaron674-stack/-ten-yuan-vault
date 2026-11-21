@@ -7,13 +7,13 @@
       "color": "4",
       "x": 0,
       "y": 0,
-      "width": 7650,
-      "height": 8350
+      "width": 11000,
+      "height": 8900
     },
     {
       "id": "R26-ROOT",
       "type": "text",
-      "text": "# 《青山》世界人物关系｜R32\n137人物候选／128人物关系／65组织链接\n仅阶段章证，不是全书穷尽；R24组织W未改",
+      "text": "# 《青山》世界人物关系｜R33\n139人物候选／140人物关系／71组织链接\n仅阶段章证，非全书穷尽；R24组织W未改",
       "x": 145,
       "y": 145,
       "width": 1980,
@@ -23,7 +23,7 @@
     {
       "id": "R26-STATE",
       "type": "text",
-      "text": "**状态主控**\nR25–R31 已归档\n全书人物未穷尽｜P?｜十元未核\n身份冲突与缺章保留，WAIT_LOCAL_UI",
+      "text": "**状态主控**\nR33作者186–190已回收组织章卡\n全书人物未穷尽｜P?｜十元未核\n188白龙揭面身份同体待迁移；189章号冲突",
       "x": 2320,
       "y": 145,
       "width": 1560,
@@ -1809,6 +1809,66 @@
       "y": 7670,
       "width": 2250,
       "height": 160
+    },
+    {
+      "id": "QSP-0138",
+      "type": "text",
+      "text": "**毒相（本名未核）**\n梁狗儿追述其曾建立武盟并招安武人；历史事实和身份未独立证实\nR33｜作者187｜P?｜十元待审",
+      "x": 6000,
+      "y": 8050,
+      "width": 1550,
+      "height": 190,
+      "color": "3"
+    },
+    {
+      "id": "QSP-0139",
+      "type": "text",
+      "text": "**陀罗寺住持（姓名未核）**\n作者189章组织采矿记录其主持僧人协助藏匿、转移世子一行，并自述偿还徐术因果\nR33｜作者189｜P?｜十元待审",
+      "x": 6000,
+      "y": 8280,
+      "width": 1550,
+      "height": 190,
+      "color": "3"
+    },
+    {
+      "id": "QS21-078",
+      "type": "text",
+      "text": "**武盟**\nR24组织引用（W不变）",
+      "x": 7850,
+      "y": 8510,
+      "width": 1300,
+      "height": 170,
+      "color": "5"
+    },
+    {
+      "id": "QS21-053",
+      "type": "text",
+      "text": "**陀罗寺**\nR24组织引用（W不变）",
+      "x": 7850,
+      "y": 8740,
+      "width": 1300,
+      "height": 170,
+      "color": "5"
+    },
+    {
+      "id": "QS21-075",
+      "type": "text",
+      "text": "**漕帮**\nR24组织引用（W不变）",
+      "x": 7850,
+      "y": 8970,
+      "width": 1300,
+      "height": 170,
+      "color": "5"
+    },
+    {
+      "id": "QS21-007",
+      "type": "text",
+      "text": "**密谍司**\nR24组织引用（W不变）",
+      "x": 7850,
+      "y": 9200,
+      "width": 1300,
+      "height": 170,
+      "color": "5"
     }
   ],
   "edges": [
@@ -3509,6 +3569,150 @@
       "toNode": "R26-ORG-QS21-056",
       "label": "sect-leader",
       "color": "4"
+    },
+    {
+      "id": "QSPR-0129",
+      "fromNode": "QSP-0135",
+      "toNode": "QSP-0138",
+      "label": "reported-creation-of-wumeng｜187",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0130",
+      "fromNode": "QSP-0005",
+      "toNode": "QSP-0135",
+      "label": "reported-assault-on-family｜187",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0131",
+      "fromNode": "QSP-0084",
+      "toNode": "QSP-0001",
+      "label": "commanded-boat-assistance｜188",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0132",
+      "fromNode": "QSP-0061",
+      "toNode": "QSP-0084",
+      "label": "threatened-via-hostage｜188",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0133",
+      "fromNode": "QSP-0060",
+      "toNode": "QSP-0084",
+      "label": "threatened-via-hostage｜188",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0134",
+      "fromNode": "QSP-0038",
+      "toNode": "QSP-0121",
+      "label": "arranged-concealed-escape｜189",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0135",
+      "fromNode": "QSP-0139",
+      "toNode": "QSP-0121",
+      "label": "assisted-escape｜189",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0136",
+      "fromNode": "QSP-0139",
+      "toNode": "QSP-0011",
+      "label": "reported-repayment-of-favor｜189",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0137",
+      "fromNode": "QSP-0003",
+      "toNode": "QSP-0061",
+      "label": "demoted-from-zodiac-to-pigeon｜190",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0138",
+      "fromNode": "QSP-0003",
+      "toNode": "QSP-0060",
+      "label": "demoted-from-zodiac-to-pigeon｜190",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0139",
+      "fromNode": "QSP-0001",
+      "toNode": "QSP-0061",
+      "label": "assigned-supervision｜190",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPR-0140",
+      "fromNode": "QSP-0001",
+      "toNode": "QSP-0060",
+      "label": "assigned-supervision｜190",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0066",
+      "fromNode": "QSP-0138",
+      "toNode": "QS21-078",
+      "label": "reported-founder｜187",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0067",
+      "fromNode": "QSP-0139",
+      "toNode": "QS21-053",
+      "label": "abbot｜189",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0068",
+      "fromNode": "QSP-0084",
+      "toNode": "QS21-075",
+      "label": "commands-specific-boat-cell-not-entire-guild｜188",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0069",
+      "fromNode": "QSP-0061",
+      "toNode": "QS21-007",
+      "label": "zodiac-demoted-to-pigeon｜190",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0070",
+      "fromNode": "QSP-0060",
+      "toNode": "QS21-007",
+      "label": "zodiac-demoted-to-pigeon｜190",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "QSPA-0071",
+      "fromNode": "QSP-0001",
+      "toNode": "QS21-007",
+      "label": "assigned-supervision-of-demoted-agents｜190",
+      "fromSide": "right",
+      "toSide": "left"
     }
   ]
 }
