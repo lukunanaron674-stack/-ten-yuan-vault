@@ -1,0 +1,89 @@
+{
+  "schema": "QSFE_FOUR_ROUND_RECEIPT_V1",
+  "issue": "674-354",
+  "date": "2026-11-22",
+  "rounds": [
+    {
+      "id": "R05",
+      "status": "DONE",
+      "new_source_cards": [
+        "QSFE-0004",
+        "QSFE-0005"
+      ],
+      "total_examples": 5,
+      "original_fulltext_verified_new": 0
+    },
+    {
+      "id": "R06",
+      "status": "DONE",
+      "artifact": "青山_QSFE_证据门禁_20261122.mjs",
+      "type": "DETERMINISTIC_EVIDENCE_GUARD"
+    },
+    {
+      "id": "R07",
+      "status": "DONE",
+      "first_run": {
+        "pass": 17,
+        "total": 18,
+        "failed": [
+          "M07_FALSE_PRECISION"
+        ]
+      },
+      "first_fix": {
+        "pass": 18,
+        "total": 18
+      },
+      "current": {
+        "pass": 21,
+        "total": 21,
+        "positives": 5,
+        "negatives": 16
+      },
+      "final_code_commit": "e69812329f541731822331e5257201ffb1083be9",
+      "suite_commit": "e45b25bdc1776b965e8a05e265396c4ec66c2441",
+      "executed_in": "V8_CURRENT_REMOTE_FUNCTION",
+      "local_node_run": false
+    },
+    {
+      "id": "R08",
+      "status": "DONE_ASSISTED_ONLY",
+      "assisted_review_ready": true,
+      "independent_tenyuan_model_ready": false,
+      "autonomous_model_test_count": 0,
+      "human_F3_count": 0
+    }
+  ],
+  "case_outcomes": [
+    {
+      "case_id": "QSFE-0001",
+      "chapter": "238",
+      "ten_yuan_candidates": "XZ?；ZX?、XN?竞争",
+      "decision": "ASSISTED_H_ONLY"
+    },
+    {
+      "case_id": "QSFE-0002",
+      "chapter": "239–240",
+      "ten_yuan_candidates": "XZ? / Z? / ZX?均待判",
+      "decision": "TOP1_ABSTAIN"
+    },
+    {
+      "case_id": "QSFE-0003",
+      "chapter": "241",
+      "ten_yuan_candidates": "NZ?仅保护读法有条件；XZ?/X并Z?亦待判",
+      "decision": "TOP1_ABSTAIN"
+    },
+    {
+      "case_id": "QSFE-0004",
+      "chapter": "242",
+      "ten_yuan_candidates": "XZ? / X并Z? / NZ?，不锁Top",
+      "decision": "TOP1_ABSTAIN_NEW"
+    },
+    {
+      "case_id": "QSFE-0005",
+      "chapter": "240",
+      "ten_yuan_candidates": "Z? / XN? / X?；均需真实读者体验",
+      "decision": "TOP1_ABSTAIN_NEW"
+    }
+  ],
+  "overall": "ASSISTED_REVIEW_READY_NOT_INDEPENDENT_MODEL"
+}
