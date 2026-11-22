@@ -2069,6 +2069,46 @@
       "width": 1550,
       "height": 230,
       "color": "2"
+    },
+    {
+      "id": "QSP-0150",
+      "type": "text",
+      "text": "**龙门客栈掌柜（未具名）**  `QSP-0150`\nR47正文：经营龙门客栈并主持江湖规矩；自述曾为边军，不认定现役\nP?｜十元未核",
+      "x": 5200,
+      "y": 14200,
+      "width": 580,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0151",
+      "type": "text",
+      "text": "**小六（龙门客栈伙计）**  `QSP-0151`\nR47正文：引导住客并说明东家保留桌位；不认定东家身份\nP?｜十元未核",
+      "x": 5830,
+      "y": 14200,
+      "width": 580,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "QSP-0152",
+      "type": "text",
+      "text": "**桃槐坊线索倾脚头（未具名）**  `QSP-0152`\nR47正文：在客栈向陈迹出售莎车街大量收粪的现场观察；用途未证\nP?｜十元未核",
+      "x": 6460,
+      "y": 14200,
+      "width": 580,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "R47-STATE-NOTE",
+      "type": "text",
+      "text": "# R47｜233–237作者章\n单站转载五章均有章末；新增3人物/4关系；非原著严格PASS\n龙门客栈东家未知、胡三爷同体待核；R24 W不动\nNEXT R48 238–242",
+      "x": 145,
+      "y": 14200,
+      "width": 1650,
+      "height": 230,
+      "color": "3"
     }
   ],
   "edges": [
@@ -4305,6 +4345,38 @@
       "label": "claimed-master-disciple-relationship｜225",
       "fromSide": "right",
       "toSide": "left"
+    },
+    {
+      "id": "QSPR-0180",
+      "fromNode": "QSP-0001",
+      "toNode": "QSP-0010",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "236 PROPOSAL promised-to-return-servitude-contract"
+    },
+    {
+      "id": "QSPR-0181",
+      "fromNode": "QSP-0150",
+      "toNode": "QSP-0021",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "236 FACT instructed-to-monitor-guest"
+    },
+    {
+      "id": "QSPR-0182",
+      "fromNode": "QSP-0151",
+      "toNode": "QSP-0001",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "236 FACT explained-inn-owner-reserved-table"
+    },
+    {
+      "id": "QSPR-0183",
+      "fromNode": "QSP-0152",
+      "toNode": "QSP-0001",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "237 TESTIMONY sold-observation-of-unusual-waste-purchase"
     }
   ]
 }
