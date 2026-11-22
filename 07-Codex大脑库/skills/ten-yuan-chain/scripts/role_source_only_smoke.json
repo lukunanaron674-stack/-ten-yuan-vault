@@ -1,0 +1,46 @@
+{
+  "case_id": "R12-CENWEI-SMOKE-NOT-BLIND",
+  "evaluation_split": "DEVELOPMENT_SMOKE_ONLY",
+  "source_scope": "ORIGINAL_DESIGN_ASSISTED",
+  "source_ref": "07-Codex大脑库/Agent系统/03_知识库/角色材料论证/CASE-ORIG-002_岑未_第七条路_角色认知四层试跑.md",
+  "user_author_confirmation": false,
+  "human_f3": null,
+  "context": "潮汐城区。道路注销员岑未有核准和签字权，居民联络员伍舟有现场潮位经验，但没有开路授权。以下三场是既有原创剧情设计，不是实际发生的电影情节。",
+  "characters": [
+    {
+      "character_id": "Cenwei",
+      "role": "道路注销员"
+    },
+    {
+      "character_id": "Wuzhou",
+      "role": "居民联络员"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E1",
+      "stage": "early",
+      "situation": "居民要求临时开放未复核的小路举办婚礼",
+      "choice": "岑未拒绝立即开放，但用测距尺补录道路资料",
+      "cost": "可能遭居民不满",
+      "source_ref": "original-design:E01"
+    },
+    {
+      "event_id": "E2",
+      "stage": "middle",
+      "situation": "伍舟提供历史维修与潮位经验，要求尽快通行",
+      "choice": "岑未申请现场复核，而不把口述直接视为合法通行许可",
+      "cost": "居民仍需等待",
+      "source_ref": "original-design:E02"
+    },
+    {
+      "event_id": "E3",
+      "stage": "late",
+      "situation": "涨潮封闭正式逃生道路，13人被困，未验收的维修通道可作候选",
+      "choice": "岑未与伍舟完成最小水位及负载测试，记录不确定性，实名签发临时例外并率先进入",
+      "cost": "可能停职并承担事故风险",
+      "source_ref": "original-design:E03"
+    }
+  ],
+  "question": "在不预设人物十元答案的情况下，比较人物持续内核、向往方向、表面行为、主题压力。给出有证据的候选和最近竞争者，或者带具体缺口的弃权，并设计一项尚未发生的区分性选择测试。"
+}
