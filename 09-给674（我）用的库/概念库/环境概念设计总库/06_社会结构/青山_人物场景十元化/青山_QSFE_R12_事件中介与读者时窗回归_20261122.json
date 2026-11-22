@@ -1,5 +1,5 @@
 {
-  "schema": "QSFE_R12_EVENT_WINDOW_SUITE_V1",
+  "schema": "QSFE_R12_EVENT_WINDOW_SUITE_V1_1",
   "date": "2026-11-22",
   "issue": "674-354",
   "parent_issue": "674-105",
@@ -860,7 +860,40 @@
         "value": []
       },
       "expect": "READER_ANCHOR_MISSING"
+    },
+    {
+      "id": "R12-N12-ORDER_REVERSED",
+      "from": "QSFE-R12-WAR",
+      "change": {
+        "path": [
+          "events",
+          0,
+          "unit"
+        ],
+        "value": 7
+      },
+      "expect": "EVENT_SEQUENCE_NONMONOTONIC"
+    },
+    {
+      "id": "R12-N13-FORGE_INDEPENDENCE",
+      "from": "QSFE-R12-WAR",
+      "change": {
+        "path": [
+          "events",
+          0,
+          "event_role"
+        ],
+        "value": "TRIGGER"
+      },
+      "manifest_change": {
+        "path": [
+          "review_mode"
+        ],
+        "value": "INDEPENDENT"
+      },
+      "expect": "INDEPENDENCE_NOT_EXTERNALLY_VERIFIED"
     }
   ],
-  "interpretation": "Three source-scoped structures and 11 negative mutants test validity gates only; XZ and NZ are unmeasured AI hypotheses, F3 null, prior labels visible in history."
+  "interpretation": "Three source-scoped structures and 11 negative mutants test validity gates only; XZ and NZ are unmeasured AI hypotheses, F3 null, prior labels visible in history.",
+  "test_method_note": "R12-N12 rejects event sequence regression. R12-N13 checks manifest review_mode INDEPENDENT self-certification is never valid; case mutation is a no-op. Simultaneous falsification of source manifest and packet remains fundamentally untestable without external original text and adjudication."
 }
