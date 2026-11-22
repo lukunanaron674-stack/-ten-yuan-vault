@@ -50,7 +50,8 @@ def main():
     issues=audit_source_coverage(case,manifest)
     out={'status':'PASS_SOURCE_SCOPE' if not issues else 'FAIL_SOURCE_SCOPE',
          'review_level':manifest.get('review_status','UNKNOWN'),
-         'holdout_eligible':not issues and manifest.get('review_status')=='REVIEWED_INDEPENDENT',
+         'holdout_eligible':False,  # External label and source receipt must be independently verified.
+         'holdout_candidate':not issues and manifest.get('review_status')=='REVIEWED_INDEPENDENT',
          'manifest_sha256':hashlib.sha256(manifest_bytes).hexdigest(),
          'errors':issues}
     print(json.dumps(out,ensure_ascii=False,indent=2))
