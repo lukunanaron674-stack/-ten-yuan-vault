@@ -1,0 +1,492 @@
+{
+  "schema": "AG11_ROLE_CANDIDATE_PACKET",
+  "authority": "L5_HYPOTHESIS",
+  "owner_issue": "674-354",
+  "source_scopes": [
+    "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+    "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+  ],
+  "events": [
+    {
+      "event_id": "E237_INFO",
+      "stage": "S237",
+      "chapter": 237,
+      "person_id": "QSP-0001",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "通过倾脚头取得线索，命张夏付费并骑马赶往都司府",
+      "observed_cost_or_risk": "消息交易产生付款（由张夏支付）；陈迹本人实际支出未证"
+    },
+    {
+      "event_id": "E238_ENTRY",
+      "stage": "S238",
+      "chapter": 238,
+      "person_id": "QSP-0001",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "在羽林军阻止下闯入都司府",
+      "observed_cost_or_risk": "实际遭遇武装门禁与齐斟酌结阵的现场阻力；未见受伤"
+    },
+    {
+      "event_id": "E240_CAPTURE",
+      "stage": "S240",
+      "chapter": 240,
+      "person_id": "QSP-0001",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "追上并擒获引错路的甲士",
+      "observed_cost_or_risk": "与逃跑甲士对抗、随后甲士试图自刎；自身身体代价未证"
+    },
+    {
+      "event_id": "E241_ALTAR",
+      "stage": "S241",
+      "chapter": 241,
+      "person_id": "QSP-0001",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "kind": "SOURCE_REPORTED",
+      "observed_choice": "提出开坛",
+      "observed_cost_or_risk": "未见执行或实际代价"
+    },
+    {
+      "event_id": "E242_ESCAPE_PLAN",
+      "stage": "S242",
+      "chapter": 242,
+      "person_id": "QSP-0001",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "kind": "SOURCE_REPORTED",
+      "observed_choice": "计划带张铮、张夏、小满逃离",
+      "observed_cost_or_risk": "仅计划，尚未实际支付代价"
+    },
+    {
+      "event_id": "E233_LI_EXIT",
+      "stage": "S233",
+      "chapter": 233,
+      "person_id": "QSP-0005",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+      "kind": "SOURCE_REPORTED",
+      "observed_choice": "建议太子出城",
+      "observed_cost_or_risk": "方案被太子拒绝，不能证明李玄人格核心"
+    },
+    {
+      "event_id": "E239_LI_GUIDE",
+      "stage": "S239",
+      "chapter": 239,
+      "person_id": "QSP-0005",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "命边军甲士带路",
+      "observed_cost_or_risk": "带路出现错街后果，但本人是否预见未证"
+    },
+    {
+      "event_id": "E241_LI_TUNNEL",
+      "stage": "S241",
+      "chapter": 241,
+      "person_id": "QSP-0005",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "kind": "SOURCE_REPORTED",
+      "observed_choice": "建议太子从密道撤离",
+      "observed_cost_or_risk": "太子拒绝；出发与否不依李玄实际决定"
+    },
+    {
+      "event_id": "E233_PRINCE_STAY",
+      "stage": "S233",
+      "chapter": 233,
+      "person_id": "QSP-0013",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "拒绝李玄出城提议",
+      "observed_cost_or_risk": "保留现场不确定性，实际损失未知"
+    },
+    {
+      "event_id": "E240_PRINCE_PROPOSE",
+      "stage": "S240",
+      "chapter": 240,
+      "person_id": "QSP-0013",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "kind": "SOURCE_REPORTED",
+      "observed_choice": "提议回京奏请陈迹右司卫",
+      "observed_cost_or_risk": "陈礼钦反对，任命未发生"
+    },
+    {
+      "event_id": "E241_PRINCE_STAY",
+      "stage": "S241",
+      "chapter": 241,
+      "person_id": "QSP-0013",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "拒绝李玄密道撤离方案",
+      "observed_cost_or_risk": "继续留在当前风险中，但后果待查"
+    },
+    {
+      "event_id": "E241_PRINCE_TRANSFER",
+      "stage": "S241",
+      "chapter": 241,
+      "person_id": "QSP-0013",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "同意将被俘甲士交边军",
+      "observed_cost_or_risk": "实际移交完成未证；控制权结果未知"
+    },
+    {
+      "event_id": "E235_SHOP_DISCOUNT",
+      "stage": "S235",
+      "chapter": 235,
+      "person_id": "QSP-0150",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "向客人提供房费优惠并安排引路",
+      "observed_cost_or_risk": "优惠意味着名义收入减少；实收差额未证"
+    },
+    {
+      "event_id": "E237_SHOP_TRADE",
+      "stage": "S237",
+      "chapter": 237,
+      "person_id": "QSP-0150",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "主持以酒坛区分的信息交易规矩",
+      "observed_cost_or_risk": "未有个人付出或困境代价记录"
+    },
+    {
+      "event_id": "E241_SHOP_SEND",
+      "stage": "S241",
+      "chapter": 241,
+      "person_id": "QSP-0150",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "kind": "SOURCE_REPORTED",
+      "observed_choice": "命小六分别送走地字丙庚客人",
+      "observed_cost_or_risk": "客人离开与是否保护未知；掌柜后果未知"
+    },
+    {
+      "event_id": "E242_SHOP_PERMIT",
+      "stage": "S242",
+      "chapter": 242,
+      "person_id": "QSP-0150",
+      "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "kind": "SOURCE_REPORTED",
+      "observed_choice": "命小六询问陈迹路引",
+      "observed_cost_or_risk": "查证结果未知；客栈风险未证"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "QSP-0001",
+      "context_id": "QINGSHAN_233_242_SOURCE_REPRINT",
+      "status": "CANDIDATE_H",
+      "role_is_objective_tenyuan_class": false,
+      "f3_human_rating": null,
+      "evidence": [
+        {
+          "event_id": "E237_INFO",
+          "choice": "通过倾脚头取得线索，命张夏付费并骑马赶往都司府",
+          "cost": "消息交易产生付款（由张夏支付）；陈迹本人实际支出未证",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+          "evidence_kind": "OBSERVED_CHOICE"
+        },
+        {
+          "event_id": "E238_ENTRY",
+          "choice": "在羽林军阻止下闯入都司府",
+          "cost": "实际遭遇武装门禁与齐斟酌结阵的现场阻力；未见受伤",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "evidence_kind": "OBSERVED_CHOICE"
+        },
+        {
+          "event_id": "E240_CAPTURE",
+          "choice": "追上并擒获引错路的甲士",
+          "cost": "与逃跑甲士对抗、随后甲士试图自刎；自身身体代价未证",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "evidence_kind": "OBSERVED_CHOICE"
+        }
+      ],
+      "missing_evidence": "需作者完整独立正文验证人格核心",
+      "A_similarity": {
+        "X": null,
+        "Z": null,
+        "N": null,
+        "ZN": null,
+        "NZ": null,
+        "XN": null,
+        "NX": null,
+        "ZX": null,
+        "XZ": null,
+        "X并Z": null
+      },
+      "author_confirmed": false,
+      "core_candidate": "ZX",
+      "rival_candidate": "XN",
+      "core_reason": "跨地点主动冒险闯入/追擒，可能激活持续反压制方向",
+      "rival_reason": "调查线索与操作步骤能解释相同行动，未见强制环境外的稳定本核",
+      "negative_case": "若不与权威冲突，陈迹仍是否继续查案/会不会采用妥协方案尚未知",
+      "soul_ablation": "移去ZX后仍可能以XN调查路线维持情节；待更昂贵选择证实本核的不可替代性",
+      "core_evidence_ids": [
+        "E237_INFO",
+        "E238_ENTRY",
+        "E240_CAPTURE"
+      ],
+      "layer_origin": "CROSS_STAGE_CHOICES"
+    },
+    {
+      "character_id": "QSP-0005",
+      "context_id": "QINGSHAN_233_242_SOURCE_REPRINT",
+      "status": "WAIT_EVIDENCE",
+      "role_is_objective_tenyuan_class": false,
+      "f3_human_rating": null,
+      "evidence": [
+        {
+          "event_id": "E233_LI_EXIT",
+          "choice": "建议太子出城",
+          "cost": "方案被太子拒绝，不能证明李玄人格核心",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+          "evidence_kind": "SOURCE_REPORTED"
+        },
+        {
+          "event_id": "E239_LI_GUIDE",
+          "choice": "命边军甲士带路",
+          "cost": "带路出现错街后果，但本人是否预见未证",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "evidence_kind": "OBSERVED_CHOICE"
+        },
+        {
+          "event_id": "E241_LI_TUNNEL",
+          "choice": "建议太子从密道撤离",
+          "cost": "太子拒绝；出发与否不依李玄实际决定",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "evidence_kind": "SOURCE_REPORTED"
+        }
+      ],
+      "missing_evidence": "三种行动跨章但多为未被采纳的命令/提议；角色是否承担明确代价与长期内心选择未知。XN与XZ皆能解释撤离提案，缺区分内心需求的证据",
+      "A_similarity": {
+        "X": null,
+        "Z": null,
+        "N": null,
+        "ZN": null,
+        "NZ": null,
+        "XN": null,
+        "NX": null,
+        "ZX": null,
+        "XZ": null,
+        "X并Z": null
+      },
+      "author_confirmed": false,
+      "why_candidates_indistinguishable": "三种行动跨章但多为未被采纳的命令/提议；角色是否承担明确代价与长期内心选择未知。XN与XZ皆能解释撤离提案，缺区分内心需求的证据"
+    },
+    {
+      "character_id": "QSP-0006",
+      "context_id": "QINGSHAN_233_242_SOURCE_REPRINT",
+      "status": "WAIT_EVIDENCE",
+      "role_is_objective_tenyuan_class": false,
+      "f3_human_rating": null,
+      "evidence": [],
+      "missing_evidence": "本样本仅一段率人结阵，缺个人自主抉择和跨章代价",
+      "A_similarity": {
+        "X": null,
+        "Z": null,
+        "N": null,
+        "ZN": null,
+        "NZ": null,
+        "XN": null,
+        "NX": null,
+        "ZX": null,
+        "XZ": null,
+        "X并Z": null
+      },
+      "author_confirmed": false
+    },
+    {
+      "character_id": "QSP-0007",
+      "context_id": "QINGSHAN_233_242_SOURCE_REPRINT",
+      "status": "WAIT_EVIDENCE",
+      "role_is_objective_tenyuan_class": false,
+      "f3_human_rating": null,
+      "evidence": [],
+      "missing_evidence": "多项反对或警告可以来自职责、利益或惧怕；缺少他本人作出有代价选择时的内心目标，XN与XZ无法判别",
+      "A_similarity": {
+        "X": null,
+        "Z": null,
+        "N": null,
+        "ZN": null,
+        "NZ": null,
+        "XN": null,
+        "NX": null,
+        "ZX": null,
+        "XZ": null,
+        "X并Z": null
+      },
+      "author_confirmed": false
+    },
+    {
+      "character_id": "QSP-0013",
+      "context_id": "QINGSHAN_233_242_SOURCE_REPRINT",
+      "status": "WAIT_EVIDENCE",
+      "role_is_objective_tenyuan_class": false,
+      "f3_human_rating": null,
+      "evidence": [
+        {
+          "event_id": "E233_PRINCE_STAY",
+          "choice": "拒绝李玄出城提议",
+          "cost": "保留现场不确定性，实际损失未知",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+          "evidence_kind": "OBSERVED_CHOICE"
+        },
+        {
+          "event_id": "E240_PRINCE_PROPOSE",
+          "choice": "提议回京奏请陈迹右司卫",
+          "cost": "陈礼钦反对，任命未发生",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "evidence_kind": "SOURCE_REPORTED"
+        },
+        {
+          "event_id": "E241_PRINCE_STAY",
+          "choice": "拒绝李玄密道撤离方案",
+          "cost": "继续留在当前风险中，但后果待查",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "evidence_kind": "OBSERVED_CHOICE"
+        },
+        {
+          "event_id": "E241_PRINCE_TRANSFER",
+          "choice": "同意将被俘甲士交边军",
+          "cost": "实际移交完成未证；控制权结果未知",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "evidence_kind": "OBSERVED_CHOICE"
+        }
+      ],
+      "missing_evidence": "跨章有数次决定，但提议任命、拒绝逃离与移交俘虏不能证明Z或ZN内在感受；留在危险处的已付个人代价未知，Z/ZN语义冻结关系不能反推主元",
+      "A_similarity": {
+        "X": null,
+        "Z": null,
+        "N": null,
+        "ZN": null,
+        "NZ": null,
+        "XN": null,
+        "NX": null,
+        "ZX": null,
+        "XZ": null,
+        "X并Z": null
+      },
+      "author_confirmed": false,
+      "why_candidates_indistinguishable": "跨章有数次决定，但提议任命、拒绝逃离与移交俘虏不能证明Z或ZN内在感受；留在危险处的已付个人代价未知，Z/ZN语义冻结关系不能反推主元"
+    },
+    {
+      "character_id": "QSP-0021",
+      "context_id": "QINGSHAN_233_242_SOURCE_REPRINT",
+      "status": "WAIT_EVIDENCE",
+      "role_is_objective_tenyuan_class": false,
+      "f3_human_rating": null,
+      "evidence": [],
+      "missing_evidence": "主要是履行监视/带路行动；动机、服从成本、个人立场不足",
+      "A_similarity": {
+        "X": null,
+        "Z": null,
+        "N": null,
+        "ZN": null,
+        "NZ": null,
+        "XN": null,
+        "NX": null,
+        "ZX": null,
+        "XZ": null,
+        "X并Z": null
+      },
+      "author_confirmed": false
+    },
+    {
+      "character_id": "QSP-0064",
+      "context_id": "QINGSHAN_233_242_SOURCE_REPRINT",
+      "status": "WAIT_EVIDENCE",
+      "role_is_objective_tenyuan_class": false,
+      "f3_human_rating": null,
+      "evidence": [],
+      "missing_evidence": "仅当次称闻声与血腥；传闻不等于真实伤亡，更不证明人物稳定主元",
+      "A_similarity": {
+        "X": null,
+        "Z": null,
+        "N": null,
+        "ZN": null,
+        "NZ": null,
+        "XN": null,
+        "NX": null,
+        "ZX": null,
+        "XZ": null,
+        "X并Z": null
+      },
+      "author_confirmed": false
+    },
+    {
+      "character_id": "QSP-0150",
+      "context_id": "QINGSHAN_233_242_SOURCE_REPRINT",
+      "status": "WAIT_EVIDENCE",
+      "role_is_objective_tenyuan_class": false,
+      "f3_human_rating": null,
+      "evidence": [
+        {
+          "event_id": "E235_SHOP_DISCOUNT",
+          "choice": "向客人提供房费优惠并安排引路",
+          "cost": "优惠意味着名义收入减少；实收差额未证",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+          "evidence_kind": "OBSERVED_CHOICE"
+        },
+        {
+          "event_id": "E237_SHOP_TRADE",
+          "choice": "主持以酒坛区分的信息交易规矩",
+          "cost": "未有个人付出或困境代价记录",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+          "evidence_kind": "OBSERVED_CHOICE"
+        },
+        {
+          "event_id": "E241_SHOP_SEND",
+          "choice": "命小六分别送走地字丙庚客人",
+          "cost": "客人离开与是否保护未知；掌柜后果未知",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "evidence_kind": "SOURCE_REPORTED"
+        },
+        {
+          "event_id": "E242_SHOP_PERMIT",
+          "choice": "命小六询问陈迹路引",
+          "cost": "查证结果未知；客栈风险未证",
+          "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "evidence_kind": "SOURCE_REPORTED"
+        }
+      ],
+      "missing_evidence": "行动跨章但真实目的、个人牺牲与客人去向未知；提供折扣/管理交易不能直接判XN，分送住客未证保护NZ",
+      "A_similarity": {
+        "X": null,
+        "Z": null,
+        "N": null,
+        "ZN": null,
+        "NZ": null,
+        "XN": null,
+        "NX": null,
+        "ZX": null,
+        "XZ": null,
+        "X并Z": null
+      },
+      "author_confirmed": false,
+      "why_candidates_indistinguishable": "行动跨章但真实目的、个人牺牲与客人去向未知；提供折扣/管理交易不能直接判XN，分送住客未证保护NZ"
+    },
+    {
+      "character_id": "QSP-0151",
+      "context_id": "QINGSHAN_233_242_SOURCE_REPRINT",
+      "status": "WAIT_EVIDENCE",
+      "role_is_objective_tenyuan_class": false,
+      "f3_human_rating": null,
+      "evidence": [],
+      "missing_evidence": "分送客人执行结果未知；职务服从与人格核心不能等同",
+      "A_similarity": {
+        "X": null,
+        "Z": null,
+        "N": null,
+        "ZN": null,
+        "NZ": null,
+        "XN": null,
+        "NX": null,
+        "ZX": null,
+        "XZ": null,
+        "X并Z": null
+      },
+      "author_confirmed": false
+    }
+  ],
+  "source_reference_sha": "3cf7985e2406ee3261abc81830ada4dcc7a9dcf5",
+  "independent_agent_executed": false,
+  "author_verified": false,
+  "human_F3": null
+}
