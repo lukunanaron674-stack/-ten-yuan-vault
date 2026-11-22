@@ -14,6 +14,7 @@ date: 2026-11-22
 - **结构质量**：三卡QSP/QS引用和10维数据完整度 3/3；不等于主次元准确。新发现R24 `QS21-035 边军` 为 `COLLECTIVE/NOT_INDEPENDENT`，不可冒充独立可评分组织；不改原R24。
 - **归档**：`青山_QSFE_AG02_AG13_代理复审_20261122.md`（阅读报告）、`青山_QSFE_AG02_AG13_复审结果_20261122.json`（机器审稿）、`青山_QSFE_AGENT_R1_SOURCE_ONLY_20261122.json`（不含旧判元的复现输入）。前轮原三张卡不覆盖，保留版本比较。
 - **人物上游最新**：R50同体/端点审计已归档，但人物累计仍R47 152/183/81；人物工单 NEXT R51，未入库老吴/匿名甲士不得擅自合并。
+- **Canvas R04原位复审标注**：既有 `15-总思路/青山_R26_人物组织关系_阶段总图.canvas` 的QSFE中心补R04链接与3项审核结论；216节点/267边原样、其它节点/全部连线原样，Hub高度增至460，新卡0几何交叠/0悬空；commit `39f34c2bd1ef21a709f75ef1cead219f49f0657e`，Git远端回读PASS，`STRUCTURE_PASS/WAIT_LOCAL_UI`。
 - **状态**：`RULE_AUDIT_DONE_NOT_INDEPENDENT`／`HUMAN_F3_NULL`／`ALL_3_TOP_UNVERIFIED`。**唯一NEXT**：从SOURCE_ONLY封存新Codex独立预判（禁止看旧结果）＋获完整原章和人类盲化F3后对比；无可靠资料则`SOURCE_GAP`，不得评为本体模型PASS。
 
 ---
