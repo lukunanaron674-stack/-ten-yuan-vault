@@ -233,3 +233,30 @@ python 07-Codex大脑库/skills/ten-yuan-chain/scripts/validate_case_packet.py p
 字段转换：AG-13的`causal_event_edges`→`causal_edges`(from_event/to_event/mechanism/evidence_ref)，`a_to_b_actions + b_to_a_actions + mixed_effect_edges`→`relation_edges`(source/target/event_id/effect/changed_variable/evidence_ref)，知识/披露账原样顶层输出。`events`每项需要`event_id/stage/actor/action/evidence_ref`；`knowledge_ledger`的`KNOWN|NOT_KNOWN`必须有`basis=DIRECT_SOURCE`及来源；`disclosure_ledger`必须有独立`speaker/recipient/disclosure/stage/evidence_ref`。`claims.dual_support={a,b,status:DUAL_SUPPORT_H}`仅在两条独立方向都已核时允许；`claims.mixed_effects=true`要求相同人物对至少一条支持与一条权力/伤害/交易代价。`source_required_event_ids`应来自R1已核来源事件清单，禁止为过检而删已知中间事件。
 
 脚本退出0=`PASS_STRUCTURAL`，退出2=`REPLAN_STRUCTURAL`；缺脚本、未运行或仅跑`--self-test`而未验证真实case包均是`VALIDATOR_NOT_RUN`。脚本只管结构完整性与错误主张，不懂影片真伪，不会发现未读的剧情、无法断定十元、不能代替F2/F3和AG-02门禁。已知例片回归成绩和正式C-film测试严格分离。
+
+## 2026-11-22｜R4/R5 生产门禁：因果候选与来源覆盖分账
+
+> 关联GOAL-Z的《A Hero》负控：旧`PASS_STRUCTURAL`错误放行「E04早于E05所以E04导致E05」。本段是分析工作流修复，遵守L2十元=感受基元、角色/主题/观众分账，不改理论、冻结关系或旧评分。
+
+### R4 因果关系（继承EventFull/MAVEN-ERE：区分时间与因果）
+- `causal_edges[].relation_type`必须为`TEMPORAL_BEFORE | TEMPORAL_OVERLAP | CAUSE_CANDIDATE | ENABLE_CANDIDATE | PRECONDITION_CANDIDATE | PREVENT_CANDIDATE`等之一；仅先后时使用`TEMPORAL_BEFORE`，**不得**为了出图自动提升为因果。
+- `*_CANDIDATE`需要独立记录`from_event/to_event, mechanism, causal_explanation, changed_variable, evidence_id, source_linked_observation, counterfactual, rival_explanation`；`source_evidence[]`逐条提供`evidence_id/source_ref/evidence_span`。不要自己编造原片镜头、宣称来源包含不存在的句子。`evidence_ref`是出处，`evidence_id`是单条因果断言所据的可核来源片段。
+- 已知中介A→B→C时，直接A→C若没有独立的`direct_effect_justification`，退回`CAUSAL_MEDIATOR_BYPASS_UNREVIEWED`；时序倒置和环路（循环需按时间拆成不同事件）亦退回。
+- 即使脚本`PASS_STRUCTURAL`，因果仍为候选H，不得写严格L2生克补。脚本**不能审来源片段真实性**；`*_VERIFIED`必须另有人工/独立审稿`external_review`和可核回执，但仅填写回执ID本身也不等于真的通过外部审核。
+
+### R5 独立来源覆盖（不能自填必查事件再自证完整）
+- AG-13提交`validation_packet_v1.json`；**另一个来源审核角色**从已核F1/F2材料冻结单独`source_manifest.json`，至少包含`case_id, manifest_id, source_scope, source_references, reviewer_id, review_status, required_event_ids, source_event_evidence`。不得由同一模型以匿名身份伪造独立审核。锁定`manifest_sha256`到运行回执，明确它仅覆盖相应源、时间窗及结局边界。
+- 先运行：
+```bash
+python 07-Codex大脑库/skills/ten-yuan-chain/scripts/validate_case_packet.py --self-test
+python 07-Codex大脑库/skills/ten-yuan-chain/scripts/validate_case_packet.py path/to/validation_packet_v1.json
+python 07-Codex大脑库/skills/ten-yuan-chain/scripts/source_gate.py path/to/validation_packet_v1.json --manifest path/to/source_manifest.json
+```
+- 第一脚本合格仅表示`PASS_STRUCTURAL`；第二脚本合格仅表示`PASS_SOURCE_SCOPE`（列举的F1事件没有漏，**不是作品全量**）。`source_gate`强制`holdout_eligible=false`；独立未泄题资格须经AG-14/HUMAN_GATE的外部审稿，不能由自填`reviewer_id`或`REVIEWED_INDEPENDENT`宣称。
+- 未有独立清单则`SOURCE_REVIEW_PENDING`，不能把自己的`source_required_event_ids`当全量事件标准；缺资料先报告`SOURCE_SCOPE_UNDEFINED`，不是硬补事件。以上两个脚本都不能检验人类感受F3。
+
+### R6–R8剩余验收与停止条件
+- **R6十元本体映射**：在已核事实图上把`stimulus/context → audience_feeling_prediction(十项或null) → candidate role state / five-theme / relation`分层；要有真实F3才能计算人的感受准确率。缺F3可以辅助创作，但不能证明模型的十元感受有效性。
+- **R7未泄题**：独立选择被测故事，训练资料、历史USER答案和后验剧情不得暴露；预锁R1/R2、保留生成日志，后由不同审核人拿F1/F2及作者/人评做匹配，使用现行Q-DYN-002/C-film量表，不自创等第。
+- **R8运行落地**：本机Codex同步同一commit后执行`--self-test`与两个真实文件验证、保留stdout/exit/main SHA、证据审查和Linear回执；GitHub已登记≠本机Skill已激活。
+- 停止条件：每轮只解一个具体阻塞；方法回归PASS不得折算为C-film独立PASS；R4脚本＋本地回归通过与R5人工清单合格是**工作流可用候选**，并非完整十元本体模型完成。
