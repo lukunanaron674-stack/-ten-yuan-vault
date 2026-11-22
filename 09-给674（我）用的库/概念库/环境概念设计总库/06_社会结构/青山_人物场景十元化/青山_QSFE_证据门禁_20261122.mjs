@@ -10,7 +10,7 @@ import path from 'node:path';
 
 import {fileURLToPath} from 'node:url';
 
-export function validateCase(c) {
+export function validateCase(c,registry={}) {
   const err=[];
   const add=(code)=>{if(!err.includes(code))err.push(code)};
   const src=c?.source||{};
@@ -32,6 +32,9 @@ export function validateCase(c) {
   }
   for(const ref of (c.entity_refs||[])){
     if(!ref.id||!ref.kind)add("ENTITY_REF_MISSING");
+    if(ref.id?.startsWith("QSP-")&&Array.isArray(registry.person_ids)&&!registry.person_ids.includes(ref.id))add("UNKNOWN_PERSON_ID");
+    if(ref.id?.startsWith("QS21-")&&Array.isArray(registry.world_object_ids)&&!registry.world_object_ids.includes(ref.id))add("UNKNOWN_WORLD_OBJECT_ID");
+    if(ref.id&&registry.world_object_kinds?.[ref.id]&&ref.kind!==registry.world_object_kinds[ref.id])add("WORLD_KIND_MISMATCH");
     if(ref.kind==="COLLECTIVE"&&ref.independent_scoreable===true)add("COLLECTIVE_AS_ORG");
   }
   for(const state of (c.knowledge_ledger||[])){
@@ -53,7 +56,7 @@ export function validateCase(c) {
 export function runSuite(suite) {
   const tests=[];
   for(const c of (suite.accept_cases||[])){
-    const errors=validateCase(c);
+    const errors=validateCase(c,suite.reference_registry||{});
     tests.push({id:c.case_id,kind:"positive",pass:errors.length===0,errors});
   }
   for(const m of (suite.mutant_cases||[])){
@@ -65,7 +68,7 @@ export function runSuite(suite) {
     let node=copy;
     for(const key of path.slice(0,-1))node=node[key];
     node[path[path.length-1]]=target.value;
-    const errors=validateCase(copy);
+    const errors=validateCase(copy,suite.reference_registry||{});
     tests.push({id:m.id,kind:"negative",pass:errors.includes(m.expect),expected:m.expect,errors});
   }
   return {test_count:tests.length,pass:tests.filter(x=>x.pass).length,failed:tests.filter(x=>!x.pass).map(x=>x.id),tests,
