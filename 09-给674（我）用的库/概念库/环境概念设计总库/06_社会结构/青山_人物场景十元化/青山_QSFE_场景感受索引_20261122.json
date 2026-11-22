@@ -1,0 +1,184 @@
+{
+  "schema": "QSFE_SCENE_INDEPENDENT_V1",
+  "date": "2026-11-22",
+  "owner_issue": "674-354",
+  "authority": "AG02_FEELING_AI_H_ONLY",
+  "location_ids_are_candidates": true,
+  "scenes_have_stable_tenyuan_essence": false,
+  "organizations_W_frozen": true,
+  "reader_F3_count": 0,
+  "windows": [
+    {
+      "id": "QSPLACE-CAND-0001",
+      "scene_window": "GS-01",
+      "name": "都司府门禁/偏房入口",
+      "chapters": [
+        238
+      ],
+      "event_ids": [
+        "QSFE-0001"
+      ],
+      "entity_class": "PHYSICAL_SCENE_CANDIDATE",
+      "institution_refs": [
+        "QS21-029",
+        "QS21-030"
+      ],
+      "scope": "门禁冲突窗口",
+      "reader_predicted_main": "XZ?",
+      "reader_predicted_secondary": "ZX?",
+      "ranking_status": "RESEARCH_PRIORITY_ONLY_UNCALIBRATED",
+      "felt_experience": "被特殊放行但追兵遭阻，可能出现警戒和行动受迫感",
+      "factual_mechanism": "老吴准陈迹进入但阻羽林军，齐斟酌现场结阵",
+      "rival": "也可能把行动看成反压制的ZX或警戒执行的XN，而非恐惧",
+      "counterfactual": "将老吴口头阻拦改为可核公开授权，观察XZ是否下降",
+      "reader_human_F3": null,
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "relation_l2_lock": false
+    },
+    {
+      "id": "QSPLACE-CAND-0002",
+      "scene_window": "GS-02",
+      "name": "库勒街错路→追缉（擒获具体地点未核）",
+      "chapters": [
+        239,
+        240
+      ],
+      "event_ids": [
+        "QSFE-0002"
+      ],
+      "entity_class": "PHYSICAL_SCENE_CANDIDATE",
+      "institution_refs": [],
+      "collective_refs": [
+        "QS21-035"
+      ],
+      "scope": "导路误导至当事人企图自刎的事件窗口",
+      "reader_predicted_main": null,
+      "reader_predicted_secondary": null,
+      "ranking_status": "XZ_Z_ZX_UNRESOLVED",
+      "felt_experience": "线索将断带来的恐惧、追缉激动、受骗后的愤慨都可能出现",
+      "factual_mechanism": "引错路并失踪→陈迹追擒→企图自刎；不得写死亡",
+      "competitors": [
+        "XZ?",
+        "Z?",
+        "ZX?"
+      ],
+      "rival": "读者注意证据风险时XZ可能突出；关注追缉才偏Z",
+      "counterfactual": "让甲士主动交代并保持路线证据，比较XZ/Z变化",
+      "reader_human_F3": null,
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "relation_l2_lock": false
+    },
+    {
+      "id": "QSPLACE-CAND-0003",
+      "scene_window": "GS-03A",
+      "name": "固原龙门客栈消息交易区",
+      "chapters": [
+        235,
+        236,
+        237
+      ],
+      "event_ids": [
+        "R47-235",
+        "R47-236",
+        "R47-237"
+      ],
+      "entity_class": "PHYSICAL_SCENE_CANDIDATE",
+      "institution_refs": [
+        "QS21-083"
+      ],
+      "scope": "房费、座次、酒坛买卖消息规矩",
+      "reader_predicted_main": null,
+      "reader_predicted_secondary": null,
+      "ranking_status": "NO_RANK_WITHOUT_READERS",
+      "felt_experience": "信息需交易/规矩不透明，可能是秩序感或被防备感；不按客栈名称直接赋元",
+      "factual_mechanism": "店中优惠、东家专桌约束、酒坛消息交易确有规则",
+      "competitors": [
+        "XN?",
+        "XZ?"
+      ],
+      "rival": "规则让人觉得可靠，或让人觉得危险；同地点可有相反观感",
+      "counterfactual": "同规则分别给透明价目与暗中区别对待，比较自然语言观感",
+      "reader_human_F3": null,
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+      "relation_l2_lock": false
+    },
+    {
+      "id": "QSPLACE-CAND-0003",
+      "scene_window": "GS-03B",
+      "name": "龙门客栈分送地字丙庚住客",
+      "chapters": [
+        241
+      ],
+      "event_ids": [
+        "QSFE-0003"
+      ],
+      "entity_class": "PHYSICAL_SCENE_CANDIDATE",
+      "institution_refs": [
+        "QS21-083"
+      ],
+      "scope": "掌柜下令、小六未证执行",
+      "reader_predicted_main": null,
+      "reader_predicted_secondary": null,
+      "ranking_status": "NZ_TOP_REJECTED",
+      "felt_experience": "若理解为护送可能依赖NZ，若隔离陷阱可能惧怕XZ或厌恶X并Z",
+      "factual_mechanism": "仅命分别送客的指令，送达与受害均未知",
+      "competitors": [
+        "NZ?仅保护条件",
+        "XZ?风险假说",
+        "X并Z?控制假说"
+      ],
+      "rival": "反向读法会使原NZ7的方向翻转",
+      "counterfactual": "取得安全到达及失踪两种独立可核结果后再分层比较",
+      "reader_human_F3": null,
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "relation_l2_lock": false
+    },
+    {
+      "id": "QSPLACE-CAND-0003",
+      "scene_window": "GS-03C",
+      "name": "龙门客栈马厩下方",
+      "chapters": [
+        242
+      ],
+      "event_ids": [
+        "QSFE-0004"
+      ],
+      "entity_class": "PHYSICAL_SUBSCENE_CANDIDATE",
+      "institution_refs": [
+        "QS21-083"
+      ],
+      "scope": "小五引人至下方/乌云所述异味与哀嚎",
+      "reader_predicted_main": "XZ?",
+      "reader_predicted_secondary": "X并Z?",
+      "ranking_status": "WEAK_AI_H_ONLY",
+      "felt_experience": "可能产生恐惧XZ与对潜在伤害的厌恶X并Z；证词不是现场被杀证明",
+      "factual_mechanism": "小五带人、乌云陈述、陈迹推断三层分开",
+      "rival": "若乌云判断错误，读者在后续章的情绪很可能被改写",
+      "counterfactual": "若取得客人未受伤的可靠证据，测XZ/X并Z是否下降",
+      "reader_human_F3": null,
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+      "relation_l2_lock": false
+    }
+  ],
+  "unbound_events": [
+    {
+      "event_id": "QSFE-0005",
+      "scene_window": null,
+      "physical_place_id": null,
+      "status": "LOCATION_NOT_GROUNDED",
+      "reason": "太子任命提议发生的具体地点未由本轮R49摘录证明，不能为填表另造一个场景",
+      "scene_feeling_main": null
+    }
+  ],
+  "unique_place_ids": 3,
+  "distinct_event_windows": 5,
+  "cases_with_physical_place_ref": [
+    "QSFE-0001",
+    "QSFE-0002",
+    "QSFE-0003",
+    "QSFE-0004"
+  ],
+  "never_ascribe_scene_from_character": true,
+  "source_scope": "历史R47/R49章节摘要，非原著独立全文核查",
+  "relation_L2_confirmed": 0
+}
