@@ -100,3 +100,10 @@ case_delta_extension_v1:
 - AG-13不得自己写一份`source_required_event_ids`就宣称故事齐全；由不同来源审核责任方另存`source_manifest.json`：时间窗、必查事件、出处、审核者、审核状态。自填清单只算覆盖声明，不算全片完整性。
 - 在仓库根依次执行`validate_case_packet.py --self-test`、`validate_case_packet.py <packet>`、`source_gate.py <packet> --manifest <manifest>`，按顺序保存退出码和输出。无manifest或未真正运行则明确`SOURCE_GATE_NOT_RUN`/`VALIDATOR_NOT_RUN`。
 - `PASS_STRUCTURAL`及`PASS_SOURCE_SCOPE`只允许继续AG-02/09/11审查，**不授权**将电影主卡、十元L2机制、C-film或F3感受改为已证实。本机Codex独立实例仍需另测。下一项R6：角色感受候选与剧情事件事实分账验证，详见Skill R6–R8。
+
+### 2026-11-22｜R6 人类感受与人物/主题分账交接
+
+- R4/R5通过后，AG-13向AG-11和AG-09分别发送**事实事件图**，不能用五维映射式给人物主元灌票；角色元`candidate`需AG-11独立A/B材料，主题主维需AG-09独立事件/结算验证。
+- 面向受众的十元候选另存`feeling_contract.json`：`case_id,stimulus_id,context_id, audience_feeling_predictions`（阶段×刺激事件×十项1–10或null；AI假设），`human_feeling_observations`（无人评=null），`role_candidates`, `theme_candidates`, `strict_l2_relations`（未验证则空/冻结）。禁止把人物的外显行为或主题公式直接充当真人情感测量。
+- 运行 `python 07-Codex大脑库/skills/ten-yuan-chain/scripts/tenyuan_profile_gate.py feeling_contract.json`；得到`PASS_FEELING_CONTRACT`仅允许进入读者展示/作者辅助创作，不是`EMPIRICAL_VALIDATED`。未经作者回执角色LOCKED非法；含Z/ZN旧严格关系保持FROZEN_H。
+- AG-13向AG-14回传`R4_structural_status, R5_source_scope_status, R6_feeling_contract_status, F3_human_evidence_status, R7_independent_grade, R8_local_codex_status`六栏，缺证据不升格。
