@@ -260,3 +260,15 @@ python 07-Codex大脑库/skills/ten-yuan-chain/scripts/source_gate.py path/to/va
 - **R7未泄题**：独立选择被测故事，训练资料、历史USER答案和后验剧情不得暴露；预锁R1/R2、保留生成日志，后由不同审核人拿F1/F2及作者/人评做匹配，使用现行Q-DYN-002/C-film量表，不自创等第。
 - **R8运行落地**：本机Codex同步同一commit后执行`--self-test`与两个真实文件验证、保留stdout/exit/main SHA、证据审查和Linear回执；GitHub已登记≠本机Skill已激活。
 - 停止条件：每轮只解一个具体阻塞；方法回归PASS不得折算为C-film独立PASS；R4脚本＋本地回归通过与R5人工清单合格是**工作流可用候选**，并非完整十元本体模型完成。
+
+### R6 十元感受候选独立结构校验｜2026-11-22
+
+R6独立层不是「让人物客观属于某十元」：依L2核心正本，十元表示人在指定刺激/语境/阶段被触发的感受方向。应用上先给`case_id, stimulus_id, context_id, generator_id`，并分开四仓：`audience_feeling_predictions`(AI假说十项1–10或null；stage与event IDs必填)、`human_feeling_observations`(缺真人量表时null)、`role_candidates`(AG-11 A/B证据+作者锁定来源)、`theme_candidates`(AG-09独立论证)；严格L2只由AG-02独立审计。
+
+从仓库根目录执行：
+```bash
+python 07-Codex大脑库/skills/ten-yuan-chain/scripts/tenyuan_profile_gate.py path/to/feeling_contract.json
+```
+`PASS_FEELING_CONTRACT`仅证明类型和权力分层，没有证明AI预测符合人类感觉。任何`OBJECT_ESSENCE/PERSON_IMMUTABLE_CLASS`、十槽缺项、AI冒充真人F3、仅凭主题式子定人物、无作者回执锁角色、从影片推出L2严格关系，均返回FAIL。含Z/ZN关系仍须`FROZEN_H`。角色长期主元可以是带证据的工作候选，但无作者/真人验证不锁定。
+
+**R6验收两级**：`SCHEMA_PASS`可以供作者进行创作辅助；`EMPIRICAL_VALIDATED`必须有与当前刺激/场景/时段对应的真人F3来源、十项标度一致性与未泄题跨影片评估；只通过本脚本不得宣称后者。R7/R8其余条件沿本Skill前述门禁。
