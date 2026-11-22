@@ -1,0 +1,248 @@
+{
+  "schema": "QSFE_R09_R11_SOURCE_GROUNDED_ADJUDICATION_V1",
+  "date": "2026-11-22",
+  "issue": "674-354",
+  "range": "236-242 targeted primary text on two mirrors; some chapters fully paged",
+  "sources": {
+    "mirrorA": "sudugu520.com",
+    "mirrorB": "czbooks.net",
+    "official_author_first_party_verified": false,
+    "source_grade": "TWO_REPRINT_MIRRORS_CONCORDANCE_NOT_AUTHOR_ORIGINAL",
+    "historical_github_r47_r49": "retained"
+  },
+  "character": {
+    "id": "QSP-0001",
+    "status": "CANDIDATE_H_TOP1_REOPENED",
+    "historical_anchor": "ZX?",
+    "historical_rival": "XN?",
+    "new_competitors": [
+      "ZN?",
+      "NZ?"
+    ],
+    "main_lock": null,
+    "secondary_lock": null,
+    "reason": "Past ZX arguments largely action-driven; new prosocial/strategic/boundary evidence does not uniquely support any durable core; 236 promise is not completion; 242 escape plan applies to intimates, not all.",
+    "event_count": 6,
+    "evidence": [
+      {
+        "id": "R09-E236-AUTONOMY",
+        "author_chapter": 236,
+        "url": "https://www.sudugu520.com/23/13539.html",
+        "mirror_other": "https://czbooks.net/n/s6ojkc",
+        "epistemic": "PROPOSAL",
+        "person": "QSP-0001",
+        "fact": "陈迹主动向小满承诺回京后索回身契，让她决定走/留，另提出嫁妆/加月银",
+        "observed_cost": "归还身契/嫁妆仍未执行；不能当作已支付成本",
+        "diagnosis": "他人选择权线索，ZN?/NZ?局部竞争；不直接证成人物本核"
+      },
+      {
+        "id": "R09-E237-MONEY",
+        "author_chapter": 237,
+        "url": "https://www.sudugu520.com/23/13541-2.html",
+        "mirror_other": "https://czbooks.net/n/s6ojkc/s6o9020b?chapterNumber=240",
+        "epistemic": "CHOICE_WITH_NARRATED_RATIONALE",
+        "person": "QSP-0001",
+        "fact": "在已有卖消息获银的经历和缺银需求下，考虑出售城防秘密，但决定不散播可能破坏边军布防的情报，换回买消息的酒坛",
+        "observed_cost": "放弃再次出售特定情报的机会；并无可核对应现银数额，不能写‘损失220两’",
+        "diagnosis": "不是单纯挑战权威；权衡私利与公共防务，动机/方法需与XN?、ZN?、ZX?竞争"
+      },
+      {
+        "id": "R09-E237-DIRECT",
+        "author_chapter": 237,
+        "url": "https://www.sudugu520.com/23/13541-4.html",
+        "mirror_other": "https://czbooks.net/n/s6ojkc/s6o9020b?chapterNumber=240",
+        "epistemic": "FACT",
+        "person": "QSP-0001",
+        "fact": "陈迹购买倾脚头线索后立即骑马赴都司府报危情，付款指令交张夏执行",
+        "observed_cost": "急赴敌对门禁构成风险；付款实际经张夏，不能记成陈迹本人支出",
+        "diagnosis": "既有目标行动，可支持ZX?、XN?、也可能是避免灾害的保护性动机"
+      },
+      {
+        "id": "R09-E238-DANGER",
+        "author_chapter": 238,
+        "url": "https://www.sudugu520.com/23/13546-3.html",
+        "mirror_other": "https://www.sudugu520.com/23/13546-4.html",
+        "epistemic": "FACT",
+        "person": "QSP-0001",
+        "fact": "在守卫拔剑、羽林军持剑围拦和军阵包围的实际风险下坚持递交危急消息，改采取屋顶穿行和当众陈报",
+        "observed_cost": "风险已发生，包括近身剑袭和追击；并无受伤事实",
+        "diagnosis": "ZX?突破阻力与XN?目标安排均可解释；主动冒险不等于固定灵魂"
+      },
+      {
+        "id": "R09-E241-DIFFERENTIATE",
+        "author_chapter": 241,
+        "url": "https://www.sudugu520.com/23/13558-3.html",
+        "mirror_other": "https://czbooks.net/n/s6ojkc/s6onjlmb?chapterNumber=244",
+        "epistemic": "REASONED_JUDGEMENT",
+        "person": "QSP-0001",
+        "fact": "在太子等讨论逃离时，陈迹反对一概认定边军全部反叛，认为胡钧羡至少不想反，推断少数人可能谋反",
+        "observed_cost": "发表不同意见可能承担舆论/安全风险，但本章没有为该言论付出明确代价",
+        "diagnosis": "对群体与个人区分、进行因果推理，削弱‘只冲撞权威’的简单ZX叙述；见解是否真实不确定"
+      },
+      {
+        "id": "R09-E242-BOUNDARY",
+        "author_chapter": 242,
+        "url": "https://www.sudugu520.com/23/13562-4.html",
+        "mirror_other": "https://www.sudugu520.com/23/13562-3.html",
+        "epistemic": "NARRATOR_EXPLICIT_PLAN",
+        "person": "QSP-0001",
+        "fact": "陈迹在考虑城破风险时计划借密道带张铮、张夏、小满离开；太子/陈家/羽林军不在其撤离计划；欲先验证密道",
+        "observed_cost": "准备工作和忧虑已见，实际撤离未发生；不把计划当结果",
+        "diagnosis": "体现亲疏有别的保护和审慎自保，不能简单认定普遍保护他人或ZX绝不退让"
+      }
+    ],
+    "corrected_statement": "ZX remains an exploratory anchor but is NOT a confirmed or clearly ranked main; AG11 needs an actual costly comparison across social situations.",
+    "ablation": {
+      "ZX": "Removing resistance-to-power still leaves investigation and protecting intimates",
+      "XN": "Removing procedural planning still leaves urgent care and refusal to compromise",
+      "ZN": "Respecting Xiao Man choice was promised, not yet paid in action",
+      "NZ": "Favors three intimates during an escape, not general care for all",
+      "status": "INDETERMINATE"
+    }
+  },
+  "scene": {
+    "place_id": "QSPLACE-CAND-0003",
+    "status": "REVIEWED_DIFFERENTIAL_ONLY_F3_NULL",
+    "same_place_multi_window": true,
+    "windows": [
+      {
+        "id": "GS-03A",
+        "chapter_scope": [
+          235,
+          237
+        ],
+        "source": [
+          "https://www.sudugu520.com/23/13535.html",
+          "https://www.sudugu520.com/23/13541.html",
+          "https://czbooks.net/n/s6ojkc/s6o9020b?chapterNumber=240"
+        ],
+        "known_at_cutoff": [
+          "客栈黑话、专桌、酒坛规则、客栈手续费",
+          "违规私下打听者当众被掰断手指，掌柜下令"
+        ],
+        "mechanism": "交易秩序+有形惩戒，建立安全与强迫并存的经营规则",
+        "readers_feeling_competitors": [
+          "XZ?警惕/威慑",
+          "X并Z?惩戒厌恶",
+          "XN?规则可操作的局部感"
+        ],
+        "prior_summary_error": "旧分账将消息交易表述为中性不排序，漏掉237已见身体惩戒",
+        "adjudication": "REOPEN_SCENE_RANKING_NO_HUMAN_F3"
+      },
+      {
+        "id": "GS-03B",
+        "chapter_scope": [
+          241
+        ],
+        "source": [
+          "https://www.sudugu520.com/23/13558-4.html",
+          "https://czbooks.net/n/s6ojkc/s6onjlmb?chapterNumber=244"
+        ],
+        "known_at_cutoff": [
+          "掌柜将分送住客称为肥羊",
+          "明确命小六分开送",
+          "威胁小六并指责曾在马厩留下帽子",
+          "实际送达/受害尚未知"
+        ],
+        "mechanism": "选择性分送+掠夺语义+规训暴力的组合",
+        "readers_feeling_competitors": [
+          "XZ?受害风险",
+          "X并Z?利用/惩戒的厌恶",
+          "NZ?保护说法缺正面证据"
+        ],
+        "prior_summary_error": "先前R04把保护/隔离看作对称读法；正文显示241时已有强负面线索",
+        "adjudication": "WITHDRAW_NZ_PROTECTIVE_LEAD_CONDITIONALLY_PRIORITIZE_XZ_X并Z_H"
+      },
+      {
+        "id": "GS-03C",
+        "chapter_scope": [
+          242
+        ],
+        "source": [
+          "https://www.sudugu520.com/23/13562-4.html",
+          "https://www.sudugu520.com/23/13562-3.html"
+        ],
+        "known_at_cutoff": [
+          "小五确实带两人进入马厩下方",
+          "乌云报告持续哀嚎和血腥气",
+          "陈迹认为黑店屠宰场",
+          "没有独立核证客人死亡/安全出口真伪"
+        ],
+        "mechanism": "已有掠夺线索+密道不透明+证词，令伤害风险变得更具体",
+        "readers_feeling_competitors": [
+          "XZ?恐惧",
+          "X并Z?厌恶",
+          "NZ?仅在后续真实救助信息改变后才研究"
+        ],
+        "prior_summary_error": "旧版本没有把241的肥羊线索作为读者已知前提",
+        "adjudication": "ESCALATE_RISK_CUE_NOT_CONFIRM_DEATH"
+      }
+    ],
+    "reader_human_F3": null,
+    "relation_L2_confirmed": 0,
+    "strict_time_information": "ch241 risk cues known before ch242 testimony; reader ch241 does not know ch242 blood testimony"
+  },
+  "counterfactual_tests": [
+    {
+      "id": "C01",
+      "branch": "CHARACTER",
+      "variable": "删除236归还身契承诺",
+      "hold": "保留237不泄城防、238冒险报信、242撤离边界",
+      "question": "仅剩公开冲突时ZX是否更易成为唯一候选？",
+      "human_result": null
+    },
+    {
+      "id": "C02",
+      "branch": "CHARACTER",
+      "variable": "将237克制泄密改成出售军情换银",
+      "hold": "调查目标与当时已有钱需求保持",
+      "question": "保护公共安全这一竞争解释是否显著变化？",
+      "human_result": null
+    },
+    {
+      "id": "C03",
+      "branch": "CHARACTER",
+      "variable": "将242撤离计划扩展到太子与羽林军",
+      "hold": "相同围城风险和密道真伪未证",
+      "question": "ZN/NZ/ZX/XN近邻在自愿承担他人代价上能否分离？",
+      "human_result": null
+    },
+    {
+      "id": "S01",
+      "branch": "SCENE",
+      "variable": "移除237违规者断指",
+      "hold": "保留交易规则与价目、座次",
+      "question": "GS-03A危险/厌恶感是否下降而规则可理解感保留？",
+      "human_result": null
+    },
+    {
+      "id": "S02",
+      "branch": "SCENE",
+      "variable": "移除241肥羊和恐吓语言",
+      "hold": "仍下达分送指令，帽子线索不变",
+      "question": "在同样送客动作下XZ/X并Z是否减少？",
+      "human_result": null
+    },
+    {
+      "id": "S03",
+      "branch": "SCENE",
+      "variable": "242乌云从哀嚎/血腥改为无异常报告",
+      "hold": "241肥羊危险线索保持",
+      "question": "XZ会不会只降低、不归零？验证避免把242单独当全部起因",
+      "human_result": null
+    },
+    {
+      "id": "S04",
+      "branch": "SCENE",
+      "variable": "二因子：241肥羊线索(有/无)×242血腥证词(有/无)",
+      "hold": "角色与地点固定，不同时改人物动机",
+      "question": "分离先验怀疑与新增证词的边际效果",
+      "human_result": null
+    }
+  ],
+  "tests_executed": "SOURCE_GROUNDING_AND_LOGICAL_CONTRADICTION_AUDIT_ONLY",
+  "human_test_runs": 0,
+  "independent_model_runs": 0,
+  "upstream_person_P_modified": false,
+  "upstream_world_W_modified": false
+}
