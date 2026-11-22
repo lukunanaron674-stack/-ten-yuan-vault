@@ -418,7 +418,7 @@
     {
       "case_id": "QSFE-EV04",
       "title": "错街引路→追擒→企图自刎",
-      "scene_ref": "QSPLACE-CAND-0002",
+      "scene_ref": "MULTI_LOCATION_KULE_STREET_TO_CAPTURE_LOCATION_UNVERIFIED",
       "reader_scope": "MULTI_SCENE_STAGED",
       "events": [
         {
@@ -473,7 +473,7 @@
           "changed_variable": "甲士行动自由与可询问性",
           "before": "失踪",
           "after": "被陈迹擒获",
-          "scene_id": "QSPLACE-CAND-0002"
+          "scene_id": "LOCATION_UNVERIFIED_CAPTURE_SITE"
         },
         {
           "event_id": "EV04-D",
@@ -491,7 +491,7 @@
           "changed_variable": "人证存留风险",
           "before": "甲士被擒",
           "after": "出现证人可能丧失的危险，死亡未证",
-          "scene_id": "QSPLACE-CAND-0002"
+          "scene_id": "LOCATION_UNVERIFIED_CAPTURE_SITE"
         }
       ],
       "relation_effects": [
@@ -524,16 +524,6 @@
           "mechanism_description": "追缉与擒获有效，未证后续口供",
           "source_status": "ASSISTED_SOURCE_SCOPED",
           "strict_l2_relation": null
-        },
-        {
-          "event_id": "EV04-D",
-          "source": "甲士",
-          "target": "自己",
-          "effect": "NEUTRAL",
-          "changed_variable": "evidence_survival_risk",
-          "mechanism_description": "企图自刎，不将企图上升为死亡",
-          "source_status": "ATTEMPT_ONLY",
-          "strict_l2_relation": null
         }
       ],
       "reader_feeling_hypotheses": [
@@ -565,7 +555,7 @@
     {
       "case_id": "QSFE-EV05",
       "title": "蒙面者袭太子→护驾→弓手制止",
-      "scene_ref": "QSPLACE-CAND-0001",
+      "scene_ref": "LOCATION_UNVERIFIED_WAR_SCENE",
       "reader_scope": "LOCAL_BEAT",
       "events": [
         {
@@ -584,7 +574,7 @@
           "changed_variable": "交战状态",
           "before": "局部安全相对稳定",
           "after": "武装冲突发生",
-          "scene_id": "QSPLACE-CAND-0001"
+          "scene_id": "LOCATION_UNVERIFIED_WAR_SCENE"
         },
         {
           "event_id": "EV05-B",
@@ -602,7 +592,7 @@
           "changed_variable": "太子近身安全",
           "before": "太子受羽林军阵线保护",
           "after": "出现迫近袭击",
-          "scene_id": "QSPLACE-CAND-0001"
+          "scene_id": "LOCATION_UNVERIFIED_WAR_SCENE"
         },
         {
           "event_id": "EV05-C",
@@ -620,7 +610,7 @@
           "changed_variable": "太子临时防护",
           "before": "攻击迫近",
           "after": "增加主动防御",
-          "scene_id": "QSPLACE-CAND-0001"
+          "scene_id": "LOCATION_UNVERIFIED_WAR_SCENE"
         },
         {
           "event_id": "EV05-D",
@@ -638,7 +628,7 @@
           "changed_variable": "现场即时袭击风险",
           "before": "来袭者仍在行动",
           "after": "两名来袭者死亡并失去攻击能力",
-          "scene_id": "QSPLACE-CAND-0001"
+          "scene_id": "LOCATION_UNVERIFIED_WAR_SCENE"
         },
         {
           "event_id": "EV05-E",
@@ -656,7 +646,7 @@
           "changed_variable": "六名来袭者存活状态",
           "before": "四人仍存活",
           "after": "其余四人被射杀",
-          "scene_id": "QSPLACE-CAND-0001"
+          "scene_id": "LOCATION_UNVERIFIED_WAR_SCENE"
         },
         {
           "event_id": "EV05-F",
@@ -674,7 +664,7 @@
           "changed_variable": "幕后指挥身份",
           "before": "未证",
           "after": "仍未证，不能用出场顺序代替责任证据",
-          "scene_id": "QSPLACE-CAND-0001"
+          "scene_id": "LOCATION_UNVERIFIED_WAR_SCENE"
         }
       ],
       "relation_effects": [
@@ -752,7 +742,7 @@
         }
       ],
       "counterfactual": "删掉陈迹护驾这一中介，边军射手仍会射杀袭击者吗？不能由结果推定陈迹不存在就没危险。",
-      "conclusion": "动作链含六名袭击者→两名突破→陈迹护驾→弓手先射两名再射四名；胡钧羡/周游出现不证明幕后灭口。",
+      "conclusion": "动作链含六名袭击者→两名突破→陈迹护驾→弓手先射两名再射四名；胡钧羡/周游出现不证明幕后灭口。 交战地点未获可靠独立定位，不绑定都司府入口。",
       "status": "AG13_AG02_AI_H_NOT_STRICT_L2"
     },
     {
@@ -1621,7 +1611,7 @@
         "changed_variable": "甲士行动自由与可询问性",
         "before": "失踪",
         "after": "被陈迹擒获",
-        "scene_id": "QSPLACE-CAND-0002",
+        "scene_id": "LOCATION_UNVERIFIED_CAPTURE_SITE",
         "case_id": "QSFE-EV04"
       },
       {
@@ -1640,7 +1630,7 @@
         "changed_variable": "人证存留风险",
         "before": "甲士被擒",
         "after": "出现证人可能丧失的危险，死亡未证",
-        "scene_id": "QSPLACE-CAND-0002",
+        "scene_id": "LOCATION_UNVERIFIED_CAPTURE_SITE",
         "case_id": "QSFE-EV04"
       },
       {
@@ -1659,7 +1649,7 @@
         "changed_variable": "交战状态",
         "before": "局部安全相对稳定",
         "after": "武装冲突发生",
-        "scene_id": "QSPLACE-CAND-0001",
+        "scene_id": "LOCATION_UNVERIFIED_WAR_SCENE",
         "case_id": "QSFE-EV05"
       },
       {
@@ -1678,7 +1668,7 @@
         "changed_variable": "太子近身安全",
         "before": "太子受羽林军阵线保护",
         "after": "出现迫近袭击",
-        "scene_id": "QSPLACE-CAND-0001",
+        "scene_id": "LOCATION_UNVERIFIED_WAR_SCENE",
         "case_id": "QSFE-EV05"
       },
       {
@@ -1697,7 +1687,7 @@
         "changed_variable": "太子临时防护",
         "before": "攻击迫近",
         "after": "增加主动防御",
-        "scene_id": "QSPLACE-CAND-0001",
+        "scene_id": "LOCATION_UNVERIFIED_WAR_SCENE",
         "case_id": "QSFE-EV05"
       },
       {
@@ -1716,7 +1706,7 @@
         "changed_variable": "现场即时袭击风险",
         "before": "来袭者仍在行动",
         "after": "两名来袭者死亡并失去攻击能力",
-        "scene_id": "QSPLACE-CAND-0001",
+        "scene_id": "LOCATION_UNVERIFIED_WAR_SCENE",
         "case_id": "QSFE-EV05"
       },
       {
@@ -1735,7 +1725,7 @@
         "changed_variable": "六名来袭者存活状态",
         "before": "四人仍存活",
         "after": "其余四人被射杀",
-        "scene_id": "QSPLACE-CAND-0001",
+        "scene_id": "LOCATION_UNVERIFIED_WAR_SCENE",
         "case_id": "QSFE-EV05"
       },
       {
@@ -1754,7 +1744,7 @@
         "changed_variable": "幕后指挥身份",
         "before": "未证",
         "after": "仍未证，不能用出场顺序代替责任证据",
-        "scene_id": "QSPLACE-CAND-0001",
+        "scene_id": "LOCATION_UNVERIFIED_WAR_SCENE",
         "case_id": "QSFE-EV05"
       },
       {
@@ -2459,24 +2449,8 @@
         "causal_strength": "UNVERIFIED"
       },
       {
-        "from_event": "EV03-D",
-        "to_event": "EV03-E",
-        "relation_type": "TEMPORAL_BEFORE",
-        "mechanism": "仅记观察顺序，不验证因果",
-        "evidence_ref": "https://github.com/lukunanaron674-stack/-ten-yuan-vault/blob/main/09-%E7%BB%99674%EF%BC%88%E6%88%91%EF%BC%89%E7%94%A8%E7%9A%84%E5%BA%93/%E6%A6%82%E5%BF%B5%E5%BA%93/%E7%8E%AF%E5%A2%83%E6%A6%82%E5%BF%B5%E8%AE%BE%E8%AE%A1%E6%80%BB%E5%BA%93/06_%E7%A4%BE%E4%BC%9A%E7%BB%93%E6%9E%84/%E9%9D%92%E5%B1%B1_%E4%BA%BA%E7%89%A9%E9%87%87%E9%9B%86/%E9%9D%92%E5%B1%B1_R49_%E4%BD%9C%E8%80%85238-242%E6%AD%A3%E6%96%87%E4%B8%8E%E4%BA%BA%E7%89%A9%E8%A1%8C%E5%8A%A8%E5%88%86%E7%BA%A7_20261122.md",
-        "causal_strength": "UNVERIFIED"
-      },
-      {
         "from_event": "EV03-E",
         "to_event": "EV03-F",
-        "relation_type": "TEMPORAL_BEFORE",
-        "mechanism": "仅记观察顺序，不验证因果",
-        "evidence_ref": "https://github.com/lukunanaron674-stack/-ten-yuan-vault/blob/main/09-%E7%BB%99674%EF%BC%88%E6%88%91%EF%BC%89%E7%94%A8%E7%9A%84%E5%BA%93/%E6%A6%82%E5%BF%B5%E5%BA%93/%E7%8E%AF%E5%A2%83%E6%A6%82%E5%BF%B5%E8%AE%BE%E8%AE%A1%E6%80%BB%E5%BA%93/06_%E7%A4%BE%E4%BC%9A%E7%BB%93%E6%9E%84/%E9%9D%92%E5%B1%B1_%E4%BA%BA%E7%89%A9%E9%87%87%E9%9B%86/%E9%9D%92%E5%B1%B1_R49_%E4%BD%9C%E8%80%85238-242%E6%AD%A3%E6%96%87%E4%B8%8E%E4%BA%BA%E7%89%A9%E8%A1%8C%E5%8A%A8%E5%88%86%E7%BA%A7_20261122.md",
-        "causal_strength": "UNVERIFIED"
-      },
-      {
-        "from_event": "EV03-F",
-        "to_event": "EV03-G",
         "relation_type": "TEMPORAL_BEFORE",
         "mechanism": "仅记观察顺序，不验证因果",
         "evidence_ref": "https://github.com/lukunanaron674-stack/-ten-yuan-vault/blob/main/09-%E7%BB%99674%EF%BC%88%E6%88%91%EF%BC%89%E7%94%A8%E7%9A%84%E5%BA%93/%E6%A6%82%E5%BF%B5%E5%BA%93/%E7%8E%AF%E5%A2%83%E6%A6%82%E5%BF%B5%E8%AE%BE%E8%AE%A1%E6%80%BB%E5%BA%93/06_%E7%A4%BE%E4%BC%9A%E7%BB%93%E6%9E%84/%E9%9D%92%E5%B1%B1_%E4%BA%BA%E7%89%A9%E9%87%87%E9%9B%86/%E9%9D%92%E5%B1%B1_R49_%E4%BD%9C%E8%80%85238-242%E6%AD%A3%E6%96%87%E4%B8%8E%E4%BA%BA%E7%89%A9%E8%A1%8C%E5%8A%A8%E5%88%86%E7%BA%A7_20261122.md",
@@ -2689,15 +2663,6 @@
         "strict_l2_relation": null
       },
       {
-        "source": "甲士",
-        "target": "自己",
-        "event_id": "EV04-D",
-        "effect": "NEUTRAL",
-        "changed_variable": "evidence_survival_risk",
-        "evidence_ref": "https://www.piaotia.com/html/15/15702/11483672.html",
-        "strict_l2_relation": null
-      },
-      {
         "source": "两名蒙面者",
         "target": "太子",
         "event_id": "EV05-B",
@@ -2868,5 +2833,6 @@
       "summary": "No strict L2 relation inferred from story cause or matching names"
     }
   },
-  "status": "ASSISTED_EVENT_CHAIN_COMPLETE_IN_SCOPE_RELATION_L2_PENDING"
+  "status": "ASSISTED_EVENT_CHAIN_COMPLETE_IN_SCOPE_RELATION_L2_PENDING",
+  "revision_note": "War location UNKNOWN; pursuit capture site UNKNOWN; removed two unsupported ordering edges and self-directed ten-yuan relation, preserving narrative events and factual status."
 }
