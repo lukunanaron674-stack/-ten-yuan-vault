@@ -1,0 +1,93 @@
+{
+  "schema": "QSFE_AGENT_R1_SOURCE_ONLY_V1",
+  "issue": "674-354",
+  "date": "2026-11-22",
+  "mode": "SOURCE_ONLY_PRELOCK_FOR_FUTURE_REAL_INDEPENDENT_AGENT",
+  "warnings": [
+    "No baseline scores or new adjudication included in this input; older results exist elsewhere in the same repo; true blind test requires separate context/process.",
+    "F1 evidence is derived from prior GitHub R49 records, not freshly read original novel.",
+    "R50 identity-audit says unresolved old-Wu and guide soldier IDs not safe to merge."
+  ],
+  "input_sources": {
+    "chapter_evidence": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+    "latest_character_status": "青山_人物分树_状态主索引_20261121.md -> R50",
+    "primary_text_scope": "OLD_R49_SINGLE_REPRINT_BODY_PARTIAL",
+    "protagonist_character_id": "QSP-0001",
+    "strictly_original_fulltext_new_pass": 0
+  },
+  "tasks": [
+    {
+      "case_id": "QSFE-0001",
+      "chapter": "238《闯白虎节堂》",
+      "facts": [
+        "老吴允许陈迹入都司府并阻止追赶的羽林军",
+        "羽林军试图阻陈迹进入；齐斟酌率二十余人结阵"
+      ],
+      "unknown": [
+        "老吴真实命令来源",
+        "张夏旧案指控是否真",
+        "读者当场感受"
+      ],
+      "identity": [
+        "QSP-0001",
+        "QSP-0006",
+        "老吴 unresolved"
+      ],
+      "event_units": [
+        "ALLOW_ACCESS",
+        "BLOCK_PURSUERS",
+        "GUARDS_FORMATION"
+      ],
+      "required": "独立判剧情事实、场景感受Top候选(允许null)、反例、生克补是否仅H"
+    },
+    {
+      "case_id": "QSFE-0002",
+      "chapter": "239《景朝细作》及240《杀人灭口》",
+      "facts": [
+        "李玄命甲士带路",
+        "甲士将队伍引到库勒街并消失",
+        "陈迹追擒该甲士，甲士企图自刎"
+      ],
+      "unknown": [
+        "甲士是否景朝细作",
+        "是否靖王复仇",
+        "自刎结果",
+        "读者感受"
+      ],
+      "identity": [
+        "QSP-0001",
+        "QSP-0005",
+        "guide unresolved"
+      ],
+      "event_units": [
+        "GUIDE_WRONG_STREET",
+        "DISAPPEAR",
+        "PURSUIT_CAPTURE",
+        "ATTEMPT_SELF_HARM"
+      ],
+      "required": "区别人物举动带来的激烈与观众感受，允许无法判主"
+    },
+    {
+      "case_id": "QSFE-0003",
+      "chapter": "241《开坛》",
+      "facts": [
+        "龙门客栈掌柜命小六分别送走地字丙与庚号客人"
+      ],
+      "unknown": [
+        "客人实际有否离开",
+        "是否保护或陷阱",
+        "读者在241章节掌握的后续情况",
+        "读者感受"
+      ],
+      "identity": [
+        "QSP-0150",
+        "QSP-0151"
+      ],
+      "event_units": [
+        "ORDER_SEPARATE_GUESTS"
+      ],
+      "required": "只判已发生指令，不把送达/安全目的写为事实；两种解释分开"
+    }
+  ],
+  "scoring_protocol": "AG-02 L2 gate + AG-13 R1 facts, information ledger and causal graph. Score independent reader feelings only with evidence; null allowed. Never infer character stable ten from a single act."
+}
