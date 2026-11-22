@@ -406,3 +406,35 @@ A剧情事实与时间4，B人物动机与反例4，C角色/主题/感受分层4
 ### STOP与唯一下一门
 - R7正式盲审仍 NOT_SCORED：必须由不同主体事先保管未泄题片源与真实评价；F2/F3皆null。R8用户PC Codex本机真实进程 NOT_EXECUTED。当前状态ASSISTED_RESEARCH_ONLY，不新建Q/Canvas，不改L2或C-film。
 - 最小进一步修复不是再堆静态规则，而是**独立来源审核与人物本体候选的可信判别**，从合法案例中验出正确主次/终局而非仅填null。
+
+## 2026-11-22｜R9人物主元候选非空修复与剩余R10–R12验收
+
+> USER：「怎么说，继续解决，几轮次解决完」。从现有R4–R8流程门禁已完成但‘人物稳定十元长期null’的根阻塞继续。目标是**可用的十元感受/人物候选研究代理**，不是把人物客观分类的旧本体分类器。预计剩3个核心研究轮次R10–R12，可能因独立验收失败返修；不是承诺三次必然通过。
+
+### 本轮R9的可核事实
+- **前人方法继承**：现有AG-11 A（十项独立相似度）＋B（跨幕选择/代价/反例）＋灵魂抽离已写在`07-Codex大脑库/Agent系统/03_知识库/角色材料论证/README_角色十元判定_双主路与关系反推实验.md`。主要失败不是缺十元定义，而是AG-13只收到人物`null`、没得到‘有证据的主候选＋最近邻竞争’。
+- 新建最小执行脚本`07-Codex大脑库/skills/ten-yuan-chain/scripts/role_candidate_gate.py`（Git blob e4bd1c8186089bac8ac956abea5da6e1d1af5526，commit c9e35152ae7e43ee5082eb12a40ef7e928d17c59）与回归`test_role_candidate_gate.py`（blob 2710722265c2c7b2b3ffa22e260f6ec5db06b683，commit b8a48b2d51660cad14ff3d3c6e72f1c05a4f5fcc）。两文件均GitHub写后回读相等。
+- 两类合格输出：`CANDIDATE_H`有Top1＋最近邻、3个不同事件至少跨2阶段、逐事件选择/代价/来源、反例、删去主核的灵魂抽离；`WAIT_EVIDENCE`有具体缺口，如果材料充足却仍不选候选，须说明什么竞争者在何种选择上无法区分。门禁只验**论证材料是否齐全**，不从剧情文字自动推断正确十元。
+- 工作容器实测：旧R4–R8测试38/38、新R9正反测试12/12，合计50/50；`role_candidate_gate.py lnt_role_candidate.json`退出0、`PASS_ROLE_CANDIDATE_CONTRACT / errors=[]`。本地样例Tom：`ZN_H` vs `NZ_H`，基于E04形成新社会联系、E07照顾受伤父亲、E09自主留下、E10分离仍维持纽带；两方向仍竞争，**不是**作者认可、独立盲测或F3真人感受证明。此后验例已经见过结局，不能算新R7成绩。对Will仍可WAIT，只需具体说明为何无法区分候选。
+- A/B方法正本追加R9：commit 77f189a814a4ad0003068963874b53b4510f723c；十元链Skill补接线：commit caaf348bad3e24bb51609791b83cfc28d03cf4ae；AG-13消费候选而不锁人物：commit 32fc0a412830c0606bc62a3bdd39fe4a13330863。上述各文件写后回读PASS，L2正本与Canvas未改。
+- 本轮容器交付ZIP：`/mnt/data/十元代理_R9人物主元候选修复_20261122.zip`，6条记录含正式同功能Python源、12测回归、后验角色样例、通过回执、旧38测日志；SHA256 3a79902f159aa5a7361ca74aca06db1edebd90810dc651b2b29c3bd505a17f7d，ZIP CRC检查PASS。
+
+### 现有状态总树
+```text
+G4/Q-DYN-002
+└─ GOAL-Z / AG-14
+   ├─ AG-13 事件/关系：R4时序因果门已开发并测PASS；原片真值仍需审
+   ├─ R5来源：程序能检独立清单中的漏项；外部独立清单尚无
+   ├─ R6感受：层级程序测PASS；真实F3未取得
+   ├─ AG-11角色主核：R9候选交接与反空判技术PASS（新），语义正确率未知
+   ├─ R10对比区分力：NOT_STARTED
+   ├─ R11外部未泄题评价：BLOCKED_BY_INDEPENDENT_LABELS_F2_F3
+   └─ R12真实Codex启动：LOCAL_RUNTIME_NOT_EXECUTED
+```
+
+### 接下来三个停止点（非无限循环）
+- **R10｜跨角色对比**：选择两类结构相似但角色动力不同的USER已确认案例做开发集负控；预测只认预先锁定、此前未泄题的独立答案；至少产出`core_candidate, rival, false_positive, ablation, error_family`，不能用已知千代子NX答案冒充命中。标准：对比解释能按L2证据区别‘主核/向往/角色行为/主题’；如不能则FAIL并只修一次。
+- **R11｜外部有效性**：至少5个未泄题的人物/场景样本、来源与答案由不同于生成器的主体预锁，独立审核并统计主候选命中、反例与弃权率。真人F3单独用于感受谱有效性，不能拿角色作者标签代替。缺可信独立标签时`NOT_SCORED`，不强报准确率。以现行Q-DYN-002官方C-film/FZ门禁为正式标准。
+- **R12｜真实本地运行**：同步GitHub主库的Skill/脚本至Codex，运行四门测试与同一R11独立包，记录stdout/stderr/exit/commit/blob及作者评价；当前ChatGPT会话不能直接接管用户本机进程。未执行时`LOCAL_NOT_TESTED`。
+
+**总体结论**：R9已给出研究用途的十元人物主候选，`ASSISTED_CANDIDATE_AVAILABLE`。‘本体模型完成’仍需R10可区分、R11独立复核与F3有效性、R12本机运行。5轮原计划不保底，预计再3轮核心验收，失败则按阻塞定点返修。C-film、L2及F3实证状态不升级。
