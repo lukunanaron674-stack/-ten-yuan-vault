@@ -283,3 +283,26 @@ python 07-Codex大脑库/skills/ten-yuan-chain/scripts/tenyuan_profile_gate.py p
 
 ### 角色接口相容性
 AG-13接收AG-11`CANDIDATE_H`仅用于解释哪条感受作用可被研究；若`WAIT_EVIDENCE`则关系端点保留null，事件事实图照常输出。AG-09本体主题结论不得覆盖角色主元；AG-02对严格关系仍遵循冻结门禁。
+
+## 2026-11-22｜R10–R12 判元区分力、外部评分与本机预锁接口
+
+> 适用G4/Q-DYN-002 → GOAL-Z / AG-14 → AG-13；AG-11仍独立主责人物A/B，AG-09/AG-02分权。承接R9：已能提出非空候选，不等于能正确区分人物。前人ROLE-CORE-L1–L4规定主核/向往/行为、未揭后续选择和原始人类感受分别验证，本节直接复用，不造新理论。
+
+### R10｜同一外显行为、不同主核的前瞻区分测试
+- 对任一AG-11角色候选的Top1和最近邻必须设计**同一高代价新处境**，分别预测`choice / changed_variable / cost / counterevidence`，并提交`failure_condition`。若两个候选预测同样选择则标`NO_DIAGNOSTIC_DIVERGENCE`，重新选择能区分的处境，不将表达词不同强算两种机制。
+- 导出`contrast_probe.json`运行：`python 07-Codex大脑库/skills/ten-yuan-chain/scripts/contrast_probe.py contrast_probe.json`。脚本拒绝已揭标准答案混入预锁输入、缺来源、无判别力、虚报独立通过；成功仅`PASS_DIAGNOSTIC_DESIGN_ONLY`，**不证明预测真值**。
+- 已知回归：原创岑未`XN_H vs ZX_H`（正式测试尚无作者裁决）；《不留痕迹》Tom`ZN_H vs NZ_H`（同会话后验）；《千年女优》千代子USER已确认NX、向往ZX，但匿名行为证据不完整时允许`WAIT_EVIDENCE`，不能把USER答案重算成新命中。`2个区分性设计＋1个有证据的弃权`是开发集结果，非十元准确率。
+
+### R11｜分离独立预锁答案与后验评分
+- `evaluate_holdout.py`接收`--predictions`（预锁Top1/Top3/abstention）＋`--labels`（不同主体的有来源作者标签）＋`--manifest`（污染/隔离登记）。脚本对`CALIBRATION`仅报告已知题指标；`HOLDOUT`若缺预锁、外部作者回执、隔离证明、或已在训练/会话暴露，输出`BLOCKED_VALIDATION`，不能勉强判通过。
+- 输出Top1全量、Top3全量、有效预测覆盖率、弃权率及样本/电影数，但无论结构结果如何均`C_film_grade=null`、`F3_validated=false`、`independent_accepted=false`，必须由AG-14/HUMAN_GATE独立核时序、标签真实性、原片F1/F2与五维/关系FZ全维后才能按现行Q-DYN-002§5.2提升C-film。
+- 已知《千年女优》纠错只作开发集例：旧AI主Z vs USER主NX = 1样本旧判0命中；新系统缺独立证据时弃权（不是‘预测NX成功’），样本不足不计准确率改善。`test_evaluate_holdout.py`为评分程序校验，不是真实多片评分。
+
+### R12｜Windows本机Codex预锁，不触发生产执行
+- 入口：`07-Codex大脑库/skills/ten-yuan-chain/scripts/run_local_codex_holdout.ps1`，必传标签隐藏的`-CaseInput`，默认库`C:\work\ten-yuan-vault`；脚本只复制source-only case、L2十元感受核心和十元信息总表到临时目录，运行`codex exec -C <temp> --sandbox read-only --output-schema role_output_schema.json --output-last-message prediction_prelock.json`，保存Git SHA、Python测试、Codex版本、模型输出SHA256和stdout/stderr。
+- 仓库提供`role_source_only_smoke.json`作为**已知原创开发题仅用于检查命令能运行**；它的设计答案已在仓库其它文件中，绝不可计独立盲测。真正R11题必须另由不同主体保管未泄题来源与答案，Codex进程不接触任何标准答案。
+- 没有本机`codex`/PowerShell或未运行时标`LOCAL_CODEX_NOT_EXECUTED`；脚本有运行回执也只是`LOCAL_CODEX_EXECUTED_PRELOCK_ONLY`，不是模型通过、不是沙盒完全阻断历史知识、不是F3人类有效性。
+
+### 验收分账与停止条件
+- 本轮技术自测：R4–R8 38条、R9 12条、R10 contrast 9条、R11评分防泄题8条，总计**67/67结构单测PASS**（工作容器；并非67人物十元预测成功）。R10两份设计probe已实际返回PASS，R11评分器能拦泄露和自审。
+- `R10=ASSISTED_DIAGNOSTIC_DESIGN_PASS`，`R11=SCORER_READY_EXTERNAL_HOLDOUT_BLOCKED`，`R12=LAUNCHER_READY_LOCAL_NOT_EXECUTED`，`F3=null`；未通过的条件须原样上报，不以增加代码次数当作正确率。独立模型验收仍走至少5部未见、2题材≥80%等既有C7规定。
