@@ -54,3 +54,11 @@ AG-14不替AG-11判人物主次，不替AG-09定主题，不替AG-13编全片的
 - 选择下轮以`verified_new_evidence, duplicate_check, new_mechanism_or_counterexample, source_effort, uncovered_dimension`排序。因果主维0部是覆盖缺口但不构成“强判一部因果”的授权。优先已有WATCH且尚缺主卡的可靠作品；作者纠错只更新同片原卡。
 - `case_readiness_100`与`mechanism_gain_0_5`分账；新案例训练集与独立C-film holdout分账；每轮仅允许1个实质增量、Git SHA＋Linear receipt后STOP。当前已接入既有每小时任务，不增加额外任务，H3共用该增量额度。
 - 连续两轮只有同一错误、没有新证据时`NO_NEW_EVIDENCE/REPLAN`；纠错记录`before/after + error_family`，不得自行升级L2或观众感受真实性。
+
+## 2026-11-22｜GOAL-Z GJ-001失败族接收门禁（R2修复）
+
+- AG-13在R1电影事件锁定后、R2十元贴标前，必须额外交付**可引用**`knowledge_ledger`、`disclosure_ledger`、`causal_event_edges`、`a_to_b_actions`、`b_to_a_actions`、`mixed_effect_edges`。每个主角关键秘密按阶段追踪：**Mona隐瞒≠Julia不知**；不能把早期状态延伸成终幕事实。
+- AG-14为本应用增加质量验收顺序：`F1_Source_Scope → Temporal_Knowledge_Gate → Multi_Actor_Causality_Gate → Bilateral_Mixed_Effect_Gate → AG-02 L2_Review → AG-09/11 independent checks → R2 Symbol Overlay`。纯材料缺失可以`UNKNOWN/INSUFFICIENT_EVIDENCE`，不因为没有原片硬补事实；来源存在却漏重要反转、因果中介、反向支持或压迫代价时`R1_REPAIR_REQUIRED`。
+- **机器门禁（不代替人工核源）**：AG-13根据Skill填写`validation_packet_v1`，从仓库根目录执行 `python 07-Codex大脑库/skills/ten-yuan-chain/scripts/validate_case_packet.py path/to/case_packet.json`，返回0才算`PASS_STRUCTURAL`；exit 2或字段缺失则REPLAN；先跑`--self-test`。验证器检查证据字段和不合法的因果/双向声明，但**无法发现未阅读的镜头、确认角色真实性、推断严格L2**。未运行脚本时必须写`VALIDATOR_NOT_RUN`，不得报成功。
+- 本轮GJ-001历史15/20预锁成绩不可覆盖；修补后在同片通过自检只算`KNOWN_ANSWER_REGRESSION`。新片独立盲测必须先锁来源与输出、不得泄题，交作者及独立审核。`independent_pass`、C-film与F3状态保持原样，当前本地Codex未验。
+- 此补丁只更正执行与审计路由，不修改十元L2、G4证据等级或旧Z/ZN冻结；可追溯记录回GOAL-Z与Linear 674-105，限一次定点修复后STOP。
