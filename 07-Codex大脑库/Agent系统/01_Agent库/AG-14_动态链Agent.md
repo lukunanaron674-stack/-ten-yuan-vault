@@ -62,3 +62,11 @@ AG-14不替AG-11判人物主次，不替AG-09定主题，不替AG-13编全片的
 - **机器门禁（不代替人工核源）**：AG-13根据Skill填写`validation_packet_v1`，从仓库根目录执行 `python 07-Codex大脑库/skills/ten-yuan-chain/scripts/validate_case_packet.py path/to/case_packet.json`，返回0才算`PASS_STRUCTURAL`；exit 2或字段缺失则REPLAN；先跑`--self-test`。验证器检查证据字段和不合法的因果/双向声明，但**无法发现未阅读的镜头、确认角色真实性、推断严格L2**。未运行脚本时必须写`VALIDATOR_NOT_RUN`，不得报成功。
 - 本轮GJ-001历史15/20预锁成绩不可覆盖；修补后在同片通过自检只算`KNOWN_ANSWER_REGRESSION`。新片独立盲测必须先锁来源与输出、不得泄题，交作者及独立审核。`independent_pass`、C-film与F3状态保持原样，当前本地Codex未验。
 - 此补丁只更正执行与审计路由，不修改十元L2、G4证据等级或旧Z/ZN冻结；可追溯记录回GOAL-Z与Linear 674-105，限一次定点修复后STOP。
+
+## 2026-11-22｜R4/R5二层校验及R6–R8资格门
+
+- **R4**：`validate_case_packet.py`调用`causal_gate.py`，将`TEMPORAL_BEFORE/OVERLAP`与有机制、有证据的`*_CANDIDATE`区分；「仅先后/中介缺失/伪独立已审核/逆时窗」退回。机器结构PASS不证明因果真实性，保留`AG02_REVIEW_PENDING`。
+- **R5**：`source_gate.py`必须从独立的`source_manifest.json`核来源覆盖；自填`source_required_event_ids`不得宣称全片已核。结构报告`holdout_eligible=false`，必须由真正的外部审核确认未泄题、标签及来源才可计独立基线。
+- AG-14收据必须保存`R4_causal_validator_stdout_exit, R5_source_gate_stdout_exit, source_manifest_sha256, source_scope, reviewer_receipt_ref, R6_tenyuan_candidate_evidence, independent_or_assisted, F1/F2/F3`。任何字段无证据留null，不允许用程序PASS覆盖作者/人评/原片门禁。
+- **本次边界**：R4新增模块源代码在容器内16/16单测通过，发布字节SHA与GitHub Blob一致；R5对《A Hero》后验14事件清单的源覆盖测试已成功区分6事件缺8项，并拒绝自审。`R4_MODULE_REGRESSION_PASS`/`R5_SCOPE_CHECK_PASS_ASSISTED`不是`C-film`升级，也不是本机Codex集成实测。
+- **下一项**：R6实现角色/主题/十元感受预测互不偷换，R7未泄题多片测试，R8真实Codex工作流；只有全门槛验收可宣布「独立可用」，未通过前为`ASSISTED_RESEARCH_ONLY`。
