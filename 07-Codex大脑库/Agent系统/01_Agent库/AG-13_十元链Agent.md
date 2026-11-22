@@ -60,3 +60,29 @@ writeback: WAIT_USER_OR_NEW_EVIDENCE
 - 对每条边声明`lane=PLOT_ACTION|ROLE_TENYUAN|THEME_FILM|L2_CLAIM`、`event_id,source,target,operation,changed_variable,initial→final,confidence_authority,negative_test`；**人物NZ接力不等于五维命运架桥**，角色之间的补位不等于某个主题自动获得「生」。
 - 必有`stage_theme_sequence`与`ending_primary_theme`两个字段：时间→双人→本体化自克→命运克本体的整片动态可存在于**命运主**作品，不能以静态结局边替代前后状态。
 - 结束时交AG-02审端点，AG-14记录首次解释错误族；严格关系未验时保留事实图而不强制贴生克符号。写卡遵循现行MD主卡／原Canvas file索引，修正旧“直接给Canvas长文”语句。
+
+## 2026-11-22｜AGENT-EVAL-GJ-001 四缺口修复执行协议
+
+> 受GOAL-Z中15/20失败案例驱动。调用同仓`07-Codex大脑库/skills/ten-yuan-chain/SKILL.md`的「2026-11-22修复门禁」。不设第二代理，不覆盖既有R0–R3步骤。本协议用于补全F1事件分析，不改L2定义或关系冻结。
+
+**R0/R1新增硬交付**：先列不可逆事件及其完整有证据的触发路径；再列每个关键事实的`knowledge_ledger`(每个角色×阶段)与独立`disclosure_ledger`。只凭Mona不坦白不能推断Julia一直不知情：`UNKNOWN/UNVERIFIED`必须保留，并说明来源覆盖的是哪一段。资料中的晚期新知、隐瞒、误认、第三方转述若未进入R1，视为`R1_REPAIR_REQUIRED`。
+
+**R1/R2有向边检查**：每个事件标`event_id, stage, actor, direct_target, action, changed_variable, before, after, evidence_ref, intermediate_event_ids`；复杂杀伤/失误/救助不得把真正行动者或中间传讯省略。除A→B还必须检查B→A；支持、控制、损害、交易和权力不平等可共存，不因为关系正负相抵而删除事件。支持帮助并不自动达到L2严格补，双向支持也不自动成为双补。
+
+**AG-13返回数据包扩展（沿用原字段，不重写旧数据）**：
+```yaml
+case_delta_extension_v1:
+  knowledge_ledger: []        # 谁×何秘密×何时知道/UNKNOWN×出处
+  disclosure_ledger: []       # 谁向谁说/隐瞒×何时；独立于knowledge
+  actor_belief_ledger: []     # 谁以为别人知道什么，未知则null
+  causal_event_edges: []     # 多主体逐事件触发链
+  missing_trigger_ids: []
+  a_to_b_actions: []
+  b_to_a_actions: []
+  dual_support_status: UNKNOWN
+  mixed_effect_edges: []     # SUPPORT + CONTROL/COERCION + TRADEOFF可同时存在
+  temporal_audit: INSUFFICIENT_EVIDENCE
+  failure_family: []
+```
+
+**交接门禁**：资料中存在知情反转但没记账、明显中间触发者被省略、双向作用/强制代价被误抹掉→退回一次R1定点补漏，不接受R2关系直接PASS；没有证据则标`UNKNOWN`并停，不造事实。AG-02只审十元端点/生克补合法性；AG-11/AG-09独立判断人物/主题；AG-14审核遗漏族与证据；AG-15只整理可读图。回归题《再见朱莉娅》属于已经暴露的测试，不计独立成绩。
