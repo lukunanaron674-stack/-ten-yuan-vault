@@ -387,3 +387,22 @@ R1剧情纵链：森林共同生活→社会服务介入→适应冲突→离开
 - 反证路径：若Tom在非虐待的社区自主选择留下，而Will选择离开，则‘社会只是压迫者’被推翻，转为两人不同需求的本体/命运竞争；若两人始终共同返林，则该反例不成立。搜索初期已有结局片段泄露，不能称无提示预测成功。
 ## 评分预注册
 A剧情事实与时间4，B人物动机与反例4，C角色/主题/感受分层4，D有向关系与伪补负控4，E证据与不确定性4；总分0–20仅内部协议合规，不是模型准确率或C-film官方分；后验追加评价不改本预锁。
+
+## 2026-11-22｜AGENT-EVAL-LNT-001 后验实测与阻塞回执
+> 用户指令「测测看」。**预锁**：commit a4b613e3fbcb346fbb53a8071298dad6a442555c；之后依据导演、剪辑师与结局资料进行后验核查。该片在首次搜索摘要中已暴露结局方向，故 NOT_CLEAN_BLIND，不可计正式R7独立holdout。
+### 真实分析层的预测与反证
+- 初稿只用发行方Bleecker Street：https://bleeckerstreetmedia.com/leave-no-trace ，4阶段事实（父女森林生活→社会服务介入→新环境冲突→再离开），稳定人物十元=null，主题主维空间/本体竞争UNKNOWN；明确不判严格补，也不赋对象固定十元。
+- 后验来源：MoMA https://www.moma.org/calendar/events/4985；Viennale https://www.viennale.at/en/films/leave-no-trace；剪辑师访谈 https://seventh-row.com/2018/08/13/editor-jane-rizzo-leave-no-trace/；导演访谈 https://www.moviemaker.com/debra-granik-leave-no-trace-interview/；结局叙述 https://thecinemaholic.com/leave-no-trace-ending-explained-why-does-will-leave/。
+- 证据增量：女儿Tom发现社区联系、父Will不适应、Will在野外受伤后Tom求援、社区提供支持、Tom选择留下Will独自离开，仍保留父女联系。主五维本体优先H（承认不同生活方式并存）、空间压力次H；不能由文字主题推严格十元边。
+- R6感受层AI-H：E03社会接管时XZ7/NZ5/XN4；E09/E10分别生活时ZN7/NZ6/XZ4（均为猜测；其他格null），**不是**真人F3，也不等于人物主元。Will/Tom的稳定十元原核仍null。没有经AG-02验证的严格生克补。
+- 初稿只有4个大阶段，后验扩为10事件；新增内容不是首次答对，结局方向亦部分受初次检索污染。
+### 实际执行（当前工作容器，非用户本地Codex）
+- 脚本blob与GitHub此前正式版本一致：causal_gate 59b0da8ca993baad238010c479731d6aa9dd75f8；source_gate 3cf20497417d4f1382e3593284254225e038347f；tenyuan_profile_gate f467cf6458fd6f0f228f72941b37d9b4c5f33422；runner 95527269a23b6ecc0b2ee8a6766bb199ba71243e。
+- 38/38已有unittest PASS；10个新片事件，5条时间/因果关系（4 CAUSE_CANDIDATE、1 TEMPORAL_BEFORE），5条剧情作用；R4因果门PASS(空错误)，R6感受层PASS(空错误)。
+- **关键负结果**：R5来源审核返回 SOURCE_SELF_REVIEW，因为生成与审核均是 ChatGPT_same_session。整链run_agent_gates.py输出 REPLAN_STRUCTURAL，exit 2；这是防止伪独立的预期拦截，不是独立PASS。
+- 负控注入5/5成功检出：sequence only→假因果、删Tom最后自主选择→来源漏项、把人物写成固定本体、AI冒充F3、五维主题直接锁人格。
+- 内部协议分：A事实3/4、B人物动机2/4、C分层4/4、D人物作用2/4、E证据3/4；合计14/20，低于预锁的16/20；**人工自评分不是官方C-film或十元理论正确率**。此前GJ案例15/20不变。
+- 文件包已校验：/mnt/data/十元代理_不留痕迹复测_20261122.zip，11个文件，SHA256 958e2f3accde1a99f42f69ff4143ffef84506030158ebe04635c53ba9c770219。含三个case JSON、receipt、回归代码、中文解释；这只是本次会话附件，不是GitHub正式数据卡。
+### STOP与唯一下一门
+- R7正式盲审仍 NOT_SCORED：必须由不同主体事先保管未泄题片源与真实评价；F2/F3皆null。R8用户PC Codex本机真实进程 NOT_EXECUTED。当前状态ASSISTED_RESEARCH_ONLY，不新建Q/Canvas，不改L2或C-film。
+- 最小进一步修复不是再堆静态规则，而是**独立来源审核与人物本体候选的可信判别**，从合法案例中验出正确主次/终局而非仅填null。
