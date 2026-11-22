@@ -40,7 +40,7 @@ export function validateCase(c) {
   }
   if(ten.subject!=="READER"||!["AI_H","UNTESTED","HUMAN_F3"].includes(ten.status))add("TENUYAN_SUBJECT_INVALID");
   if(ten.locked===true&&(ten.status!=="HUMAN_F3"||!c.human_feeling||!c.human_feeling.source))add("UNVERIFIED_TOP_LOCK");
-  if(ten.scores!==null&&ten.scores!==undefined&&ten.calibration!=="UNVALIDATED"&&ten.calibration!=="HUMAN_F3")add("FALSE_PRECISION");
+  if(ten.scores!==null&&ten.scores!==undefined&&(!["UNVALIDATED","HUMAN_F3"].includes(ten.calibration)||(ten.calibration==="UNVALIDATED"&&!ten.scoring_rationale)))add("FALSE_PRECISION");
   if((c.character_stable_locks||[]).length>0&&c.AG11_authorized!==true)add("AG11_OVERREACH");
   for(const edge of (c.relation_claims||[])){
     if(edge.strict_l2===true&&edge.approved_l2_record!==true)add("L2_UNAUTHORIZED");
