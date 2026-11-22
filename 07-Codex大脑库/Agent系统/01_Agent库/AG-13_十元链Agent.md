@@ -86,3 +86,9 @@ case_delta_extension_v1:
 ```
 
 **交接门禁**：资料中存在知情反转但没记账、明显中间触发者被省略、双向作用/强制代价被误抹掉→退回一次R1定点补漏，不接受R2关系直接PASS；没有证据则标`UNKNOWN`并停，不造事实。AG-02只审十元端点/生克补合法性；AG-11/AG-09独立判断人物/主题；AG-14审核遗漏族与证据；AG-15只整理可读图。回归题《再见朱莉娅》属于已经暴露的测试，不计独立成绩。
+
+### R1→R2自动校验交接｜2026-11-22
+
+- **写入可运行包而非只交自然语言**：在当前任务目录暂存`validation_packet_v1.json`，顶层按Skill最新接口提供`case_id/source_scope/evidence_level/stages/events/source_required_event_ids/knowledge_ledger/disclosure_ledger/causal_edges/relation_edges/claims`。此文件只是本轮输入，可留任务目录不写新电影卡。
+- **执行**：`python 07-Codex大脑库/skills/ten-yuan-chain/scripts/validate_case_packet.py --self-test`，然后对真实`validation_packet_v1.json`执行相同脚本（不带--self-test）。输出`validator_status, validator_error_codes, validator_run_command, input_sha_or_ref`。只有第二步退出0才能报告`PASS_STRUCTURAL`。脚本无法运行时明确`VALIDATOR_NOT_RUN`，返回AG-14处理，不虚报通过。
+- **失效隔离**：脚本通过不表示影片事实、十元映射和人类观感已证实；对信息披露无法推知知情的情形坚持UNKNOWN，跨人因果缺事件坚持CAUSAL_GAP。任何缺口只能修事实，禁止改人物L2正本或强锁生克补。
