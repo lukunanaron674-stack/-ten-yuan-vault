@@ -163,3 +163,22 @@ updated: 2026-11-03
 - **Canvas可视化回执**：原唯一 02_给我用的知识凝结库/01_动态链条/00_十元链电影卡片.canvas 右侧增分类思考中心（A四卡、B四卡、C四卡、D三卡及标题/四组底盘），左侧原电影卡与五维底盘原样保留。现45节点、旧边原封不动；21个新节点，文本卡重叠0，越界0，旧其他文本不变，右侧四类独立中心，所有新卡按宽度估算能容纳文本。Git 0370ebf5b53e5129f67ade4666e7c036ce4d129f，remote readback STRUCTURE_PASS，Windows Obsidian实屏 WAIT_LOCAL_UI。分类器只做「可以思考和对照」，不把写了标签算严格证据。
 - **案例入口**：⑤情书主题主×架桥【USER】、⑦楚门主题主×三者【USER】、②超时空主题＋双人物核【USER】、⑥你的名字主题＝人物【USER】、①一起摇太阳三角克【USER】、⑪飞越疯人院NZ架桥【USER】；其余主导/耦合解释属AI/H未锁。
 - **评估**：FZ4/5/7=ASSISTED_CLASSIFICATION_METHOD_AND_VISUAL_ORGANIZATION；C_FILM_GRADE_UNCHANGED、INDEPENDENT_PASS=NOT_SCORED、F2=null、F3=null，本地Agent和实际Canvas缩放未验证。
+
+
+## 2026-11-22｜三轮接管审计 R1–R3（远端代跑；本地Codex未执行）
+
+> 执行身份：由ChatGPT通过已连接的GitHub/Linear及公开影片来源完成三轮远端分析；未启动用户本地Codex新窗口。LOCAL_CODEX_RUNTIME=NOT_EXECUTED；INDEPENDENT_HOLDOUT=NOT_SCORED；C_film=UNCHANGED。本轮不新增电影卡、Canvas节点或冻结定律。
+
+### R1｜规则恢复：PASS_REMOTE_METHOD_AUDIT
+已核查AGENTS.md、权力总览、总入口、十元关系L1清单、动态链L1中枢、现行L2感受正本、生克补关系门禁、ten-yuan-chain Skill、AG-02/09/11/13/14及GOAL-Z。确认十元是语境中由人感受到的十类基元，不是人物或场景客观十分类；人物原核、向往、行动、五维主题与真人观众感受必须分账。五轴相反不自动推出生克补；Z/ZN旧关系依然冻结。历史USER答案已经暴露，不能当盲测。
+
+### R2｜三个案例：已知回归2、新F1候选1
+1. C10《千年女优》：复现既有USER判读「千代子原核NX，向往自己的ZX，画家ZN；整片时间克因果、命运架桥」；正确拒绝「追逐行为=人格Z」及「时间主题=人物XN」。回归检查PASS但属已知答案复现，非自主正确率。F2/F3=null。
+2. C09《土拨鼠之日》：复现既有USER的主题「时间克因果→本体克时间」与人物「菲尔XN+ZX、丽塔Z、内部XN克ZX、后段作用另账」。拒绝把人物自克混同五维主题边、把XN人格直接改写Z，亦不声称善行已被证实是解除循环原因。回归检查PASS但属已知答案复现。F2/F3=null，Z/ZN机制仍冻结。
+3. 《The Ballad of Wallis Island》(2025)新F1候选：本轮GitHub精确搜索英文标题、Wallis Island和「瓦利斯岛之歌」未命中既有卡（不等于全银矿去重PASS）。发行方可核E01 Charles用奖金聘请Herb赴孤岛进行私人演出；E02 Charles在Herb不知情下也邀请前搭档/前女友Nell；E03重逢造成尴尬与新的交往机会。结局未从原片核验。纵链=重聚愿望→金钱安排→隐瞒邀请→重逢压力→结局UNKNOWN。横向作用=Charles改变Herb/Nell的接触机会，但此举可能是强制安排，不能叫严格补；若删除Nell邀请，单人演唱会仍可发生，前搭档重逢支线不成立。第三因素有金钱合同、Herb职业压力、Nell自主选择。人物十元主次=null；主题主维UNKNOWN（时间/本体竞争H）；严格生克补NOT_ESTABLISHED；F1=PARTIAL_SOURCE_PACKET；F2=null；F3=null；USER真值=null；HOLDOUT_ELIGIBILITY=ARCHIVE_DEDUPE_PENDING；independent_pass=NOT_SCORED。
+F1：Focus Features 2025-03-28创作者访谈 https://www.focusfeatures.com/article/the-ballad-of-wallis-island_key_basden ；发行方介绍 https://www.focusfeatures.com/the-ballad-of-wallis-island ；英国文化协会身份信息 https://filmsandfestivals.britishcouncil.org/projects/the-ballad-of-wallis-island 。
+
+### R3｜审计：PASS_WITH_BLOCKERS
+理论分层与已知错误回归PASS（仅文档复现）；新片剧情证据PARTIAL；人物元/严格关系/结局UNKNOWN；独立Codex本机运行NOT_EXECUTED；正式未泄题盲测NOT_STARTED；真人F3及逐镜F2未核。重点防错族：ASPIRATIONAL_TENYUAN_MIXUP、THEME_ROLE_LAYER_CONTAMINATION、SEQUENCE_AS_RELATION、INFORMATION_BRIDGE_AS_SUPPLEMENT。没有可报告的独立准确率，C-film未升。仅在本GOAL-Z及Linear 674-105保存运行收据，不改L2、原影片主卡与Canvas，不替用户判影片已看。
+
+STOP：3轮本次桌面审计收口，不无限迭代。NEXT唯一门：本地Codex新窗口实读L0/L1/L2、输出带SHA的BOOT_AUDIT；随后选择真正未泄题片源锁R1/R2并待USER/原片独立判读。
