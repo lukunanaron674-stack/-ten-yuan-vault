@@ -264,3 +264,20 @@ STOP：3轮本次桌面审计收口，不无限迭代。NEXT唯一门：本地Co
 ### 下一唯一门 / STOP
 - 本次补丁和结构门禁已完成，STOP；唯一下一任务为**用真正新的未泄题案例运行本地Codex并产生`validation_packet_v1.json`、脚本stdout/exit、R1与R2预锁、原片/用户后验评分**。不在本片用补丁后的规则重新自测并声称升到16/20。
 - 原问题树保持`G4/Q-DYN-002 → APP-FILM-CHAIN-001 → AG-14 → AG-13`，反馈Linear 674-105；不新建Q、不新增电影Canvas节点、不启GPU。
+
+## 2026-11-22｜AGENT-RERUN-AHERO-001 首次执行预锁
+
+> 用户指令「你再跑这个十元代理」。使用修复后的AG-13/14流程，由ChatGPT在隔离工作容器运行**既存本地结构校验器原型**，不是本地Codex独立模型进程。样本《A Hero / Ghahreman》(2021)，本轮Github关键词检索未见独立十元卡；全量别名排重未完。已在发现剧透的搜索结果上下文中进行，**不具备完全未泄题的盲测条件**。不能以本轮证明C-film泛化。
+
+### F1预锁输入与实跑凭据
+- 官方范围：戛纳电影节 https://www.festival-cannes.com/en/f/ghahreman/ 、多哈电影学院 https://my.dohafilminstitute.com/ajyal/detail/?id=41647 、MoMA https://www.moma.org/calendar/events/7473 。
+- 本地输入包 `hero_f1_prelock.json`，`sha256=7058dd222694584ec89c60e420184119608aae9a47276883f7c21d6361a094c2`，5953字节，含6个剧情事件、3条候选因果边、3条行为关系、5条人物/公众知识状态、3条独立披露记录，`source_required_event_ids=E01..E06`；阶段`S1_DEBT→S2_FOUND_COINS→S3_RETURN_ATTEMPT→S4_PUBLIC_PRAISE→S5_PUBLIC_PRESSURE`。
+- R1事实：E01 Rahim因债坐牢获2天外出；E02 Farkhondeh发现金币为解决债务提供可能；E03 Rahim尝试说服债权人以部分支付撤诉；E04 Rahim贴启事找失主；E05获得公众赞誉；E06随赞誉承担新增外界期待。完整终幕、单个falsehood内容、公众知情真相均`UNKNOWN/UNVERIFIED`。
+- R2暂存：`Farkhondeh→Rahim`提供可能财务选择(支持叙事动作)，`Media→Rahim`声望上升+期待控制并存（不同变量、不同事件）；`dual_support=UNKNOWN`，人物稳定十元=null、五维主次=null（因果/本体/命运仅竞争候选）、严格十元生克补NOT_ESTABLISHED、F2/F3=null。
+- 在工作容器执行已存在本地结构验证器 `python /mnt/data/tenyuan_agent_fix/validate_case_packet.py --self-test` 得`SELF_TEST 7/7`；`python /mnt/data/tenyuan_agent_fix/validate_case_packet.py /mnt/data/tenyuan_agent_fix/hero_f1_prelock.json` 退出0、`PASS_STRUCTURAL/errors=[]`。注意：**这是与GitHub发布版本功能相近的本地开发实现**，不是从GitHub同步执行的那个精确字节文件；GitHub生产版脚本仍待实机独立运行。结构PASS不构成影片事实及端点验证。
+- **检验门禁**：预锁后检查完整剧情资料，不得回写篡改本节；仅追加事实差异、反证、漏项、协议失误分数。故事事实分与L2十元理解分开报，不以新片成绩自行升级C-film。
+
+### 后验核查待办
+1. 具体误说、失主真实性/找回金币的中介是谁、谁知道发现者与归还者身份、各自何时得知、证人为何无法回访。
+2. 债权人/公益组织/子女/媒体如何作用于声望与就业；正负效果是否同时存在，信息反转是否捕捉。
+3. 原片结局若没有F2则UNKNOWN；AG-11/AG-09及严格L2关系仍不得锁定。
