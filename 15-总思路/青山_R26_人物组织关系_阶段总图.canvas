@@ -8,7 +8,7 @@
       "x": 0,
       "y": 0,
       "width": 14000,
-      "height": 13900
+      "height": 16350
     },
     {
       "id": "R26-ROOT",
@@ -2109,6 +2109,56 @@
       "width": 1650,
       "height": 230,
       "color": "3"
+    },
+    {
+      "id": "QSFE-R03-POC-GROUP",
+      "type": "group",
+      "label": "J｜674-354 人物×场景×事件十元化｜AI-H候选（不是原著人物定元）",
+      "color": "5",
+      "x": 130,
+      "y": 15350,
+      "width": 4340,
+      "height": 810
+    },
+    {
+      "id": "QSFE-POC-HUB",
+      "type": "text",
+      "x": 230,
+      "y": 15510,
+      "width": 920,
+      "height": 490,
+      "color": "5",
+      "text": "# QSFE｜十元候选POC\n**3张事件卡｜不是人物永久十元**\nR49章证复用；本轮原站403，F3=null。\n现行L2：感受而非客观物象分类。\n主索引：[[09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/青山_QSFE_状态主索引]]\n证据与反例：[[09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/青山_QSFE_R01-R03_论证与反例_20261122]]"
+    },
+    {
+      "id": "QSFE-0001-CANVAS",
+      "type": "text",
+      "x": 1270,
+      "y": 15510,
+      "width": 920,
+      "height": 490,
+      "color": "4",
+      "text": "## QSFE-0001｜都司府门禁\n作者238《闯白虎节堂》【旧章证】\n陈迹QSP-0001进入；老吴放行，却阻羽林军跟进。\n**AI-H：XZ8 / ZX7**；两套门禁冲突令人不安。\n反例：改成公开合法通行，预测XZ应下降。\n证据/未决见：[[09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/青山_QSFE_R01-R03_论证与反例_20261122]]\n**FACT≠老吴毒案事实｜F3=null**"
+    },
+    {
+      "id": "QSFE-0002-CANVAS",
+      "type": "text",
+      "x": 2310,
+      "y": 15510,
+      "width": 920,
+      "height": 490,
+      "color": "2",
+      "text": "## QSFE-0002｜错街追缉\n作者239→240《景朝细作》《杀人灭口》【旧章证】\n陈迹QSP-0001追擒甲士；甲士企图自刎。\n**AI-H：Z8 / XZ7**；追缉亢奋与证据流失恐惧并存。\n反例：甲士若主动供述，XZ预测可能下降。\n证据/未决见：[[09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/青山_QSFE_R01-R03_论证与反例_20261122]]\n**“景朝细作”仍是指控｜F3=null**"
+    },
+    {
+      "id": "QSFE-0003-CANVAS",
+      "type": "text",
+      "x": 3350,
+      "y": 15510,
+      "width": 920,
+      "height": 490,
+      "color": "6",
+      "text": "## QSFE-0003｜龙门客栈分送客人\n作者241《开坛》【旧章证】\n掌柜QSP-0150命小六QSP-0151分别送走两房住客。\n**AI-H：NZ7 / XZ6**（保护解释才使NZ暂居Top1）。\n反例：若为隔离控制，XZ可能反超。\n证据/未决见：[[09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/青山_QSFE_R01-R03_论证与反例_20261122]]\n**命令≠已经送达｜F3=null**"
     }
   ],
   "edges": [
@@ -4377,6 +4427,30 @@
       "fromSide": "bottom",
       "toSide": "top",
       "label": "237 TESTIMONY sold-observation-of-unusual-waste-purchase"
+    },
+    {
+      "id": "QSFE-POC-LINK-01",
+      "fromNode": "QSFE-POC-HUB",
+      "fromSide": "right",
+      "toNode": "QSFE-0001-CANVAS",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "QSFE-POC-LINK-02",
+      "fromNode": "QSFE-POC-HUB",
+      "fromSide": "right",
+      "toNode": "QSFE-0002-CANVAS",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "QSFE-POC-LINK-03",
+      "fromNode": "QSFE-POC-HUB",
+      "fromSide": "right",
+      "toNode": "QSFE-0003-CANVAS",
+      "toSide": "left",
+      "toEnd": "arrow"
     }
   ]
 }
