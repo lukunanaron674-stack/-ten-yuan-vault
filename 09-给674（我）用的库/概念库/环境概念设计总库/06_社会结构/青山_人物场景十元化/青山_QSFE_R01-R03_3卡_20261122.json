@@ -1,0 +1,307 @@
+{
+  "schema": "QSFE-PROVISIONAL-V0.1",
+  "date": "2026-11-22",
+  "issue": "674-354",
+  "phase": "R01-R03_POC",
+  "status": "AI_HYPOTHESIS_3_CARDS_NO_HUMAN_TEST",
+  "canon": "01-十元系统/三元十元感受模型_核心正本_v1.0_20261007.md",
+  "input_character_json": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_人物总树_累积数据_20261122.json",
+  "input_character_sha": "9369a63aa93bfefa069424b525f33a65475eeaa3",
+  "input_org_json": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_组织采集分片/QS_334_R24_全组织总树_114对象统一数据_20261115.json",
+  "input_org_sha": "b1708f6c9cce2694e4d0110ec521355b8296adb0",
+  "input_evidence": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+  "original_site_this_run": "HTTP_403_ACCESS_DENIED",
+  "evidence_basis": "PREVIOUS_GITHUB_RESEARCHER_R49_WITH_ORIGINAL_URLS_NOT_NEW_DIRECT_TEXT_READ",
+  "tenyuan_rule": "feelings_predicted_for_hypothetical_reader_not_object_attributes",
+  "f1_text": "GitHub R49 existing extract: partial/single-mirror; no full original-book verification this run",
+  "f2_audio_visual": null,
+  "f3_human_observed": null,
+  "scoring_note": "1–10 are uncalibrated AI hypothetical intensity scores; not psychometric results or human perception",
+  "labels_unfrozen": "individual ten emotional lexical endpoints not fully frozen under L2",
+  "relation_theory_status": "NO_L2_RELATIONS_LOCKED; Z/ZN endpoints frozen",
+  "r01_candidate_count": 5,
+  "r02_cards": 3,
+  "r03_cross_checks": 3,
+  "cards": [
+    {
+      "id": "QSFE-0001",
+      "name": "都司府门禁｜陈迹闯入与老吴阻追",
+      "chapters": [
+        238
+      ],
+      "chapter_titles": [
+        "闯白虎节堂"
+      ],
+      "url": "https://www.piaotia.com/html/15/15702/11482555.html",
+      "evidence": "R49《作者238–242正文与人物行动分级》§可证人物行动与关系候选第1–2条",
+      "grade": "BODY_PARTIAL (转载来源；本轮HTTP 403无法复核正文)",
+      "person_ids": [
+        "QSP-0001",
+        "QSP-0006"
+      ],
+      "unresolved": [
+        "老吴/疤脸偏将 QSP?；未核同体"
+      ],
+      "place_id": "QSPLACE-CAND-0001",
+      "place_label": "都司府门禁／偏房入口",
+      "org_ids": [
+        "QS21-029",
+        "QS21-030"
+      ],
+      "facts": [
+        "老吴允许陈迹进入都司府，随后拦阻追赶的羽林军（R49 FACT）",
+        "羽林军以太子行辕为由阻止陈迹；陈迹闯入，齐斟酌率二十余人结阵（R49 FACT）"
+      ],
+      "claims": [
+        "老吴自述疤痕来历与周总兵恩情（TESTIMONY）",
+        "张夏指认老吴涉嫌旧案（ACCUSATION）"
+      ],
+      "start": "两套现场控制力量均对入口施加约束",
+      "trigger": "陈迹要求进入并实际闯入",
+      "choice": "老吴放行陈迹但阻止羽林军跟进；羽林军结阵",
+      "change": "陈迹进入被允许，追兵跟进受阻，双方即时控制权冲突可见",
+      "end": "形成被阻隔与不知内部真相的悬置；毒案责任未证",
+      "feeling_free": "进入者被特许、追兵却被拦住，读者可能感觉危机未解除且权力关系反常；也可读成对冲门禁的行动勇气。",
+      "spectrum": {
+        "X": 4,
+        "Z": 6,
+        "N": 2,
+        "ZN": 1,
+        "NZ": 2,
+        "XN": 5,
+        "NX": 3,
+        "ZX": 7,
+        "XZ": 8,
+        "X并Z": 6
+      },
+      "tops": [
+        [
+          "XZ",
+          8
+        ],
+        [
+          "ZX",
+          7
+        ]
+      ],
+      "rival": "若读者把重点看作临时授权与执行秩序，XN或Z可能超过XZ；没有独立真人感受数据，排名不确定。",
+      "counter": "保留相同人物动作，把老吴阻追改成公开书面奉命引导追兵，若恐惧感显著降低，则原先XZ预测依赖不透明门禁，而非“都司府这个地名”。",
+      "five_lens": {
+        "时间": "短时同时发生的门禁行动",
+        "本体": "角色身份/权力依据仍有自述和指控缺口",
+        "空间": "都司府入口的通行限制",
+        "因果": "放行／阻拦使两方现场行动范围不同",
+        "命运": "未见后果回收，待核"
+      },
+      "relations": "老吴阻追→羽林军继续跟进的机会被现场限制；仅叙事行动效果，禁止直接赋十元克。",
+      "creative": "两股名义都合法的卫兵对同一通道作出相反处置，让主角通行却隔断支援。",
+      "gap": "无出版正本逐行复核；老吴QSP同体未核；门禁的正式命令链未知。",
+      "validation": {
+        "person_ids_valid_against_R47": true,
+        "organization_ids_valid_against_R24": true,
+        "place_id_status": "INDEPENDENT_PLACE_CANDIDATE_NOT_A_R24_ORGANIZATION",
+        "source_status": "R49_PREVIOUS_RESEARCHER_EVIDENCE",
+        "original_site_this_run": "403",
+        "story_fact": "F1_INDIRECT_FROM_PRIOR_GITHUB",
+        "ai_feeling": "H_UNCALIBRATED",
+        "human_feeling": null,
+        "tenyuan_character_soul_lock": false,
+        "tenyuan_relation_lock": false
+      }
+    },
+    {
+      "id": "QSFE-0002",
+      "name": "错街追缉｜陈迹擒甲士与甲士自刎企图",
+      "chapters": [
+        239,
+        240
+      ],
+      "chapter_titles": [
+        "景朝细作",
+        "杀人灭口"
+      ],
+      "url": "https://www.piaotia.com/html/15/15702/11483672.html",
+      "secondary_url": "https://www.piaotia.com/html/15/15702/11482904.html",
+      "evidence": "R49 §可证人物行动与关系候选第3–4条",
+      "grade": "239 BODY_PARTIAL + 240 SINGLE_REPRINT_BODY_TO_END (历史核读；本轮HTTP 403)",
+      "person_ids": [
+        "QSP-0001",
+        "QSP-0005"
+      ],
+      "unresolved": [
+        "匿名带路边军甲士，未与既有人物合并"
+      ],
+      "place_id": "QSPLACE-CAND-0002",
+      "place_label": "库勒街错误路线→追捕路段（具体擒获点待核）",
+      "org_ids": [
+        "QS21-035"
+      ],
+      "facts": [
+        "李玄命边军甲士带路；甲士引至库勒街后失踪（239 FACT）",
+        "陈迹追上并擒住该甲士；甲士企图自刎（240 FACT）"
+      ],
+      "claims": [
+        "陈迹断言此人是景朝细作（ACCUSATION）",
+        "陈迹将线索联想到靖王复仇（INFERENCE），均未核实"
+      ],
+      "start": "队伍需要可靠的路线导航",
+      "trigger": "带路甲士选择错误路线并消失",
+      "choice": "陈迹追缉；甲士被擒后企图自刎",
+      "change": "从路线疑点转为可调查的人证，但人证可能消失，真凶/主使仍未知",
+      "end": "阻止不了因果疑点继续扩大；身份与动机未锁",
+      "feeling_free": "短时追缉与自刎企图可能激活紧张和亢奋，读者也可能更强烈地感到对信息即将消失的恐惧。",
+      "spectrum": {
+        "X": 3,
+        "Z": 8,
+        "N": 1,
+        "ZN": 1,
+        "NZ": 1,
+        "XN": 3,
+        "NX": 1,
+        "ZX": 6,
+        "XZ": 7,
+        "X并Z": 5
+      },
+      "tops": [
+        [
+          "Z",
+          8
+        ],
+        [
+          "XZ",
+          7
+        ]
+      ],
+      "rival": "若读者侧重身份不明与自刎带来的不可逆损失，XZ可能反超Z；若读者侧重诱骗后的愤慨，ZX可能反超。",
+      "counter": "保持路线失踪事实，但把甲士改为顺从交代来龙去脉、没有自刎企图；若Z仍高但XZ显著降低，可分开追缉兴奋与证据消失恐惧。",
+      "five_lens": {
+        "时间": "239到240的章间承接，不等于一镜到底",
+        "本体": "带路甲士身份未定，仅匿名角色",
+        "空间": "错误路线造成地点与方向感偏差",
+        "因果": "误导和失踪→追缉→擒获→自刎企图",
+        "命运": "幕后归属/最终惩罚未核"
+      },
+      "relations": "引错路降低队伍确定性；陈迹追缉恢复对甲士的现场控制；均为F1行动效应，不据此宣布Z补XZ等机制。",
+      "creative": "唯一掌握路径的向导突然消失，被擒后试图毁掉自己的口供，让空间错误升级成证据危机。",
+      "gap": "两章跨章承接需正式正文复查；R49未给出精确擒获地名；“景朝细作”只是指控。",
+      "validation": {
+        "person_ids_valid_against_R47": true,
+        "organization_ids_valid_against_R24": true,
+        "place_id_status": "INDEPENDENT_PLACE_CANDIDATE_NOT_A_R24_ORGANIZATION",
+        "source_status": "R49_PREVIOUS_RESEARCHER_EVIDENCE",
+        "original_site_this_run": "403",
+        "story_fact": "F1_INDIRECT_FROM_PRIOR_GITHUB",
+        "ai_feeling": "H_UNCALIBRATED",
+        "human_feeling": null,
+        "tenyuan_character_soul_lock": false,
+        "tenyuan_relation_lock": false
+      }
+    },
+    {
+      "id": "QSFE-0003",
+      "name": "龙门客栈｜掌柜命小六分送客人",
+      "chapters": [
+        241
+      ],
+      "chapter_titles": [
+        "开坛"
+      ],
+      "url": "https://www.piaotia.com/html/15/15702/11484086.html",
+      "evidence": "R49 §可证人物行动与关系候选第7条；R47人物QSP-0150/0151身份源",
+      "grade": "SINGLE_REPRINT_BODY_TO_END (单站转载历史核读；本轮HTTP 403)",
+      "person_ids": [
+        "QSP-0150",
+        "QSP-0151"
+      ],
+      "unresolved": [
+        "东家真实身份不可与掌柜合并"
+      ],
+      "place_id": "QSPLACE-CAND-0003",
+      "place_label": "固原龙门客栈（房客分送场面）",
+      "org_ids": [
+        "QS21-083"
+      ],
+      "facts": [
+        "龙门客栈掌柜命小六把地字丙号和庚号客人分别送走（INSTRUCTION）",
+        "R49未确认实际送达、安全离开或掌柜目的"
+      ],
+      "claims": [
+        "掌柜所谓安全出口的详细说法出现在242章，属于TESTIMONY；不能倒灌到241的已执行事实"
+      ],
+      "start": "住客去向受客栈管理者安排影响",
+      "trigger": "掌柜决定让两批客人分开离开",
+      "choice": "掌柜下达指令；小六作为执行对象，执行结果未见",
+      "change": "出现潜在的保护/隔离两种解释，尚未证实安全性",
+      "end": "送客结果与动机悬而未决",
+      "feeling_free": "如果读者把分别送客理解为维护住客安全，可能浮现依赖与短暂被照料感；如果理解为隔离或陷阱，恐惧与不适可能反超。",
+      "spectrum": {
+        "X": 2,
+        "Z": 3,
+        "N": 3,
+        "ZN": 3,
+        "NZ": 7,
+        "XN": 5,
+        "NX": 4,
+        "ZX": 2,
+        "XZ": 6,
+        "X并Z": 5
+      },
+      "tops": [
+        [
+          "NZ",
+          7
+        ],
+        [
+          "XZ",
+          6
+        ]
+      ],
+      "rival": "“保护”并非F1事实，NZ只在一种读法中暂列第一；把掌柜理解为布局控制者时，XZ/X并Z可能成为Top1。",
+      "counter": "与前卡保持同一客栈和小六，但将客人证实平安送达与出现失踪证词分别作为两个改写条件，比较NZ与XZ是否换位；不能冒充原著已发生两版。",
+      "five_lens": {
+        "时间": "指令发出时刻，后果留白",
+        "本体": "掌柜及东家身份分离，动机未证",
+        "空间": "客栈内房号分开与潜在外出路径",
+        "因果": "下令已证→实际离开未证",
+        "命运": "客人命运悬置，不能提前认定获救或被害"
+      },
+      "relations": "掌柜下令→小六行动义务被提出；至于客人安全变量升降，暂无F1结果，生/补/克全部UNTESTED。",
+      "creative": "同一间可能提供庇护的客栈，管理者分开送走两名客人；不回答他们是被保护还是被筛选。",
+      "gap": "指令不等于完成；身份不等于动机；单站正文未在本轮直接复核。",
+      "validation": {
+        "person_ids_valid_against_R47": true,
+        "organization_ids_valid_against_R24": true,
+        "place_id_status": "INDEPENDENT_PLACE_CANDIDATE_NOT_A_R24_ORGANIZATION",
+        "source_status": "R49_PREVIOUS_RESEARCHER_EVIDENCE",
+        "original_site_this_run": "403",
+        "story_fact": "F1_INDIRECT_FROM_PRIOR_GITHUB",
+        "ai_feeling": "H_UNCALIBRATED",
+        "human_feeling": null,
+        "tenyuan_character_soul_lock": false,
+        "tenyuan_relation_lock": false
+      }
+    }
+  ],
+  "r01_other_candidates": [
+    {
+      "id": "QSFE-CAND-0004",
+      "chapter": 239,
+      "incident": "李玄安排边军甲士带路，带错街后失踪",
+      "status": "ONLY_INDEXED"
+    },
+    {
+      "id": "QSFE-CAND-0005",
+      "chapter": 242,
+      "incident": "小五领人入马厩下方，乌云说闻到血腥气；死亡推断未核",
+      "status": "ONLY_INDEXED"
+    }
+  ],
+  "checks": {
+    "unique_ids": true,
+    "ten_all_1_to_10": true,
+    "referenced_existing_person_ids": true,
+    "referenced_existing_org_ids": true,
+    "old_w_and_p_unchanged": true,
+    "original_fulltext_pass_new": 0
+  }
+}
