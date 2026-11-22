@@ -1,0 +1,90 @@
+{
+  "id": "QSFE-R13-REDTEAM-001",
+  "date": "2026-11-22",
+  "issue": "674-354",
+  "related_issue": "674-105",
+  "goal": "Stress-test QSFE R12 new event/source and reader-window gate beyond canned mutants, then patch demonstrably fixable leaks.",
+  "execution": "READ_EXACT_GITHUB_SOURCE_EVALUATE_FUNCTION_BODY_IN_V8_NOT_NODE_CLI",
+  "prepatch_blob": "3bb4755f4ebc825c75d8f0248530775b3b0dba82",
+  "postpatch_blob": "9e567a8253f9e69f1fededb672f0176d531f641c",
+  "old_suite_blob": "95b6c654ae784e9b5c646303702e25c3a4155f08",
+  "new_suite_blob": "84a1ce1d662ba0f7e3e5787f6d76dc0a3bae3f34",
+  "tests": {
+    "existing_old": {
+      "total": 21,
+      "passed": 21
+    },
+    "current_r12": {
+      "total": 16,
+      "passed": 16,
+      "positive": 3,
+      "negative": 13
+    },
+    "total": 37,
+    "passed": 37
+  },
+  "novel_adversarial": [
+    {
+      "id": "A_SOURCE_AND_MANIFEST_OMISSION",
+      "attack": "Delete W02 attack on prince simultaneously from source manifest, case events and visible reader cues.",
+      "blocked": false,
+      "reason": "Same generator may manipulate both source and claim; missing original source cannot be inferred from internally consistent JSON.",
+      "next": "EXTERNALLY_FIXED_SOURCE_COVERAGE"
+    },
+    {
+      "id": "B_EVENT_SEQUENCE_REVERSE",
+      "attack": "Reverse event order without changing position fields.",
+      "blocked": true,
+      "code": "EVENT_SEQUENCE_NONMONOTONIC",
+      "fix_commit": "b5992b48970a80e490ae76b3bc3386a72e501a49"
+    },
+    {
+      "id": "C_FALSE_SOURCE_SPAN",
+      "attack": "Invent a source_span string not traceable to actual novel.",
+      "blocked": false,
+      "reason": "The gate checks nonempty span, not the actual mirror URL or original source bytes.",
+      "next": "SOURCE_TEXT_AND_SPAN_VERIFICATION"
+    },
+    {
+      "id": "D_FAKE_EXTERNAL_REVIEW",
+      "attack": "Claim INDEPENDENT with an arbitrary reviewer id and fake receipt.",
+      "blocked": true,
+      "code": "INDEPENDENCE_NOT_EXTERNALLY_VERIFIED",
+      "fix_commit": "b5992b48970a80e490ae76b3bc3386a72e501a49"
+    },
+    {
+      "id": "E_CASE_AND_MANIFEST_TARGET_FALSIFICATION",
+      "attack": "Modify event target and its matching manifest target to the same fabricated target.",
+      "blocked": false,
+      "reason": "Two mutually consistent but forged records cannot prove an external fact.",
+      "next": "INDEPENDENT_ORIGINAL_TEXT_CHECK"
+    }
+  ],
+  "external_source_opened_this_turn": [
+    {
+      "url": "https://dingdianzww.org/19578/6943734.html",
+      "mirror_title": "239、杀人灭口",
+      "relevant_evidence": "Lines 103–113 directly show two masked attackers advance on the crown prince, Chen Ji draws sword to protect him, border archers shoot two then four."
+    },
+    {
+      "url": "https://dingdianzww.org/19578/6943740.html",
+      "mirror_title": "241、黑吃黑",
+      "relevant_evidence": "Lines 80–85 show meal; 108–127 show suspected stable escape-path failure and blood testimony; information time-window matters."
+    }
+  ],
+  "caveats": [
+    "The two URLs are a reprint mirror, not official author-verified source.",
+    "Mirror chapter numbers differ from prior normalized R49 author chapter numbers; no canon chapter id override.",
+    "The same assistant provided case packet, manifest and tests; not independent oversight.",
+    "No human reader F3 collected; Ten-Yuan AI-H labels are hypotheses only.",
+    "No local Windows Codex agent or Node CLI execution proven; V8 actual function body run."
+  ],
+  "status": {
+    "structural_regression": "37/37 PASS",
+    "adversarial_patched": "2/5 BLOCKED",
+    "adversarial_remaining": "3/5 UNBLOCKED_MISSING_EXTERNAL_TRUTH",
+    "independent_model": "NOT_SCORED",
+    "F3_count": 0
+  },
+  "stop": "R13 red-team concluded: stop augmenting same-source JSON cases. Next step must ingest an externally frozen text/source-coverage manifest with independent line evidence, then test Ten-Yuan experience with human readers."
+}
