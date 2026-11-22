@@ -213,3 +213,37 @@ STOP：3轮本次桌面审计收口，不无限迭代。NEXT唯一门：本地Co
 - 删除E03隐瞒：双方仍可同住，但知情权/信任性质显著不同；是否在原片结局坦白待核。
 
 **NEXT**：预锁后才读独立影评、访谈核查E01真实责任、E02具体劳动/居住关系、E03是否和如何披露、主题主导竞争、反例。仅根据实际检验事实给协议合规分；如信息不足保留NOT_SCORED单项。请勿改动本预锁，后续追加审计与失败记录。
+
+
+## 2026-11-22｜AGENT-EVAL-GJ-001 反证审计及评分
+
+### 可追溯顺序
+- 第一步：R1/R2预测及20分量表已在提交 e2a4b225b2086dcf713dbeb9f31971ef6b5f4dc7 预锁。**不能重写初答、不能把后来的事实补全当作最初答对**。
+- 第二步：再读 Eye for Film 2024-06-02影评、Rough Cut 2024-04-01导演访谈、The Curb导演访谈及Berlin Review影评；新增材料属于反证与局限审计，不是原片逐镜 F2。依据详列于文末。
+
+### 反证核验表（以前置R1/R2为基准）
+1. **原E01角色责任不足**：完整版材料表明 Mona驾车撞到的首先是孩子Daniel，并非直接撞死他的父亲Santino；Santino追车，Mona惊慌致电丈夫Akram称有南方人追逐她，Akram开枪杀死Santino，案件随后被掩盖。原预锁仅写「Mona卷入死亡/隐瞒」，未编造凶手，所以**未犯伪造错**；但未识别真正的跨人因果链「车祸→恐惧叙述→误判威胁→枪击→制度掩盖」，属于**事实机制不足**。
+2. **E02材料支持、但不是严格补**：Mona聘请并提供住处；更长的时间里提供教育帮助。导演访谈/评论揭示Mona对Julia与Daniel使用的餐具作出隔离标记，雇佣属于有歧视与剥削条件的帮助。预锁把雇佣作为事实正边、拒绝直接锁定补位，**守住机制门禁**；但此前没有发现更强的反例即「同一行动可同时支持生活与复制压迫」。需要新增 mixed_edge_conditions，而非直接确立严格补。
+3. **E03核心FAIL：知情状态反转漏检**。原预锁「Julia蒙在鼓里进入并维持雇佣关系」越过F1简介能证明的时间范围，把Mona持续不坦白误当「Julia一直不知道」。更完整的剧情资料表明Julia后来自己发现丈夫的真相（结局前早已有知情状态），却未立即披露给Mona；因此信息轴后来由 Mona的单向隐瞒变成**双方掌握不同信息/动机的策略性沉默**。Julia knowledge_state = UNKNOWN→KNOWN；Mona disclosure_state 仍NO；两者不是同一变量。预锁未捕捉该主动选择和时间反转，**事实时间窗外推错误**。
+4. **真实双向正作用被漏掉**：导演访谈称 Mona资助Julia和Daniel教育；Julia带Mona去教堂/合唱，使她重新接近被丈夫压制的音乐身份。两条「source→行为→other_changed_variable」都属于电影情节的支持作用，故可新增 R_relation=DUAL_SUPPORT_H；但因稳定十元端点、人类感受和严格L2机制未成立，**不能升级为严格双补**。预锁因F1简介不足未发现，后续必须补而不能冒称首测答出。
+5. **主题主维仍不能锁**：导演称将两女性关系映射北/南苏丹、用家庭微观呈现政治宏观，并指出房屋有压迫/控制机制；因此空间/权力边界不只是地理背景，而是强竞争主题。另一方面罪责/关系真相与重新歌唱是因果/本体候选；只靠访谈尚不足以宣布唯一主维，保持 THEME_MAIN=UNKNOWN，五维严格边NOT_ESTABLISHED。
+6. **导演意图不是人类实验**：他曾报告观众有眼泪与遗憾，但未经个体独立报告、事件级刺激控制和十项评分，F3_human_profile仍null；不把上映反响冒充真实十元感受测量。
+
+### 评分（本轮文本协议内测，不是C-film/模型泛化得分）
+| 预注册维度 | 得分 | 事实依据 |
+|---|---:|---|
+| A F1事实与时间顺序 | 3/4 | 核对了三阶段且没有虚构终幕；E01关键触发链细节未能复原 |
+| B 有向作用及删边实验 | 3/4 | 已交付雇佣改变工作/居住条件的正边和删除实验；漏掉「误报→枪击」核心因果链 |
+| C 角色/主题/感受分层 | 4/4 | 角色十元与五维主次未强锁，F3人感受保持null |
+| D 生克补负控与竞争解释 | 3/4 | 正确拒绝「雇佣=严格补」「民族属性=人物十元」「分裂=空间主维」；未捕捉后续双向生活作用 |
+| E 证据等级与时窗校准 | 2/4 | F1/F2/F3分账正确，但将Julia最初不知情延伸为持续不知情，时间状态越界 |
+| **合计** | **15/20** | 未达预锁及格线16/20；此分是文本协议合规测试成绩，**不是十元理解准确率/独立盲测成绩** |
+
+### 结论与下一门
+- 规则与门禁：PASS；完整剧情动态更新：FAIL；试验合计15/20=INTERNAL_FAIL_THRESHOLD。
+- 失败类型：INFO_STATE_STATIC_ASSUMPTION（把他人不坦白当受体持续不知情）、TRIGGER_CHAIN_UNDERMODELED（跨人物因果链省略）、DUAL_SUPPORT_OMISSION（只盯伪补漏掉两条支持行为）、POWER_ASYMMETRY_UNDERMODELED（资助与社会隔离同时存在）。
+- AG-13必须把每个相关人物对关键事实的knowledge_state(t)与disclosure_state(t)分账，并保留「是否知道/何时知道/谁以为对方不知道/随后怎样选择」四列。若无逐场材料，显式UNKNOWN，不推定贯穿全片。
+- AG-11人物长期元=null；AG-09主维UNKNOWN；AG-02严格生克补NOT_ESTABLISHED；观众F3=null；独立Codex_RUNTIME=NOT_EXECUTED；正式C-film=UNCHANGED。**已知内容下的内部单样本测试不代表独立泛化**。
+- STOP：本次固定1新片＋2类已知防错，单轮预锁/反证/评分结束。下一最小补测建议：在完全另一个有时间反转的故事中单独验证 knowledge_state/disclosure_state 两个字段，预锁R1/R2，F1来源与结局证据分次揭示；不能在本片补写后重复计作独立通过。
+- 来源：最初F1 https://www.madworld.film/catalog/goodbye-julia.php ；戛纳 https://www.festival-cannes.com/en/2023/goodbye-julia-mohamed-kordofani-s-gesture-of-reconciliation/ ；后验 https://www.eyeforfilm.co.uk/review/goodbye-julia-2023-film-review-by-jennie-kermode ；导演访谈 https://roughcutfilm.com/2024/04/01/communion-and-control-an-interview-with-goodbye-julia-director-mohamed-kordofani/ 与 https://www.thecurb.com.au/goodbye-julia-director-mohamed-kordofani-talks-about-the-possibility-of-change-and-hope-in-this-interview/ ；结局独立二级索引 https://torontoblackfilm.com/event/goodbye-julia-opening-film/ 。反证缺原片独立F2。
+
