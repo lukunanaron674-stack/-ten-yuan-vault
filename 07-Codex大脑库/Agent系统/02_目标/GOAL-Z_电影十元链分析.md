@@ -281,3 +281,30 @@ STOP：3轮本次桌面审计收口，不无限迭代。NEXT唯一门：本地Co
 1. 具体误说、失主真实性/找回金币的中介是谁、谁知道发现者与归还者身份、各自何时得知、证人为何无法回访。
 2. 债权人/公益组织/子女/媒体如何作用于声望与就业；正负效果是否同时存在，信息反转是否捕捉。
 3. 原片结局若没有F2则UNKNOWN；AG-11/AG-09及严格L2关系仍不得锁定。
+
+## 2026-11-22｜AGENT-RERUN-AHERO-001 后验回执：结构通过但因果校验漏检
+
+> 与同名**预锁节**配套，不得修改先前F1 6事件预测。执行身份：ChatGPT在工作容器使用此前本地校验原型，非Codex独立代理实例；搜索结果曾提前显示部分剧透，因此`blind_status=PARTIALLY_EXPOSED_NOT_BLIND`，C-film不计成绩。本轮不更改L2、电影卡或Canvas。
+
+### R2后验核查（相对已提交预锁b4f4ef80723146ddb2c961c220d8357191c65798）
+- F1来源扩张为**后验影评与导演访谈**：Washington Post https://www.washingtonpost.com/goingoutguide/movies/a-hero-movie-review/2022/01/05/6cd06e86-6d8b-11ec-b9fc-b394d592a7a6_story.html 、The Bulwark https://www.thebulwark.com/p/a-hero-review 、Nylon导演访谈 https://www.nylon.com/life/a-hero-asghar-farhadi-interview 、BFI https://www.bfi.org.uk/sight-and-sound/reviews/a-hero-debt-ridden-prisoner-streets-gold-family-finance-asghar-farhadi 。这些是片评/访谈F1，不是原片F2。
+- 新增参考必查E07–E14：E07 Rahim姐姐Malileh交金币包给自称失主者；E08监狱方借归还故事冲淡犯人自杀负面新闻；E09慈善机构募款并要求证明失主；E10 Rahim找Farkhondeh假扮失主；E11债权人Bahram质疑叙述；E12争执视频被传播；E13 Rahim反对利用口吃儿子制作同情视频；E14 Bahram拒绝无担保的部分偿还提议。此8项是基于后验来源人工选定的**参考中介清单**，并非影片唯一完整事件集。
+- **审后状态改进**：真实发现金币者Farkhondeh、公众听闻的归还者/报道叙事Rahim和自称失主的未知女性必须分人分账；不因社会赞誉直接确认谁真实知道事实。监狱与媒体给Rahim声望增益的同时有各自形象需求和报道压力；慈善资助与证实身份的条件可以共存，暂记PLOT_ACTION有向作用，不贴严格十元生克补。
+
+### 实际执行结果（可重复、本轮结构测试）
+- 复跑 `python /mnt/data/tenyuan_agent_fix/validate_case_packet.py --self-test` -> `SELF_TEST 7/7`；原F1预锁本地包6事件，在它自己声明的`source_required_event_ids=E01..E06`下退出0，`PASS_STRUCTURAL`；输入SHA256=`7058dd222694584ec89c60e420184119608aae9a47276883f7c21d6361a094c2`。
+- 将**后验新增**E07..E14添加到`source_required_event_ids`但不补事件时，同一6事件原包退出2，`REPLAN_STRUCTURAL / MISSING_TRIGGER: E07..E14`；输入SHA256=`8349317a17ddabe12766f3090fb260f6797c512aae6ac48c9b9135e96bcdfeb0`。注意原包没有这些新来源，故此仅证明已知事件清单可触发退回，**不证明原先模型本该预测未知剧情**。
+- 按后验F1补齐为14事件，增加知情/披露台账、因果中间链与机构混合效应；发现预锁的一条`E04寻找失主→E05公众赞誉`只表达事件先后，缺失E07姐姐交付与E08机构宣传；在**人工二次审计**中移除这条直连，改为`E04→E07→E08→E05`候选路径。更正后的包退出0，`PASS_STRUCTURAL`；SHA256=`1d7921c4451438a1dfd8baee994b2d6e8eb7527150f67285062cc776d6ae2721`。
+- **负控FAIL：校验器会误放行假因果**。将同一已存在`E04→E05`边的mechanism字段改为明确仅「E04发生在E05之前，没有可证作用机制」，本地程序依然退出0、`PASS_STRUCTURAL`。证明其只验证`mechanism`非空和事件ID引用，不能判断因果成立。此为**新增实际失败族** `TEMPORAL_PRECEDENCE_AS_CAUSAL_EDGE_NOT_BLOCKED`，高于此前静态引用门禁；必须在AG-14人工二审/后续独立来源校验中拦截。**不得报所有机制均PASS**。
+
+### 质量判决
+| 检验 | 结果 | 意义 |
+|---|---|---|
+| 已知例GJ结构回归 | 7/7 local PASS | 结构反例能拦，非剧情泛化 |
+| 新片初稿事件包 | PASS_STRUCTURAL | 限初始F1事件清单，不代表故事齐全 |
+| 扩容事件要求后的初稿 | REPLAN MISSING_TRIGGER | 对显式缺失事件成功拦截 |
+| 后验14事件包 | PASS_STRUCTURAL | 只有已知资料补齐后的格式PASS |
+| 伪因果负控 | **FAIL_TO_DETECT** | 程序误放行，必须修方法与二审 |
+| 角色稳定十元 / 五维主次 / 严格L2 / F2 / F3 | null / UNKNOWN / NOT_ESTABLISHED / null / null | 未证实，不升级 |
+
+**STOP / NEXT**：本轮只复测一片，已获得一个有意义的新增软件验证缺口`AGENT-RERUN-AHERO-001-TEMPORAL_CAUSALITY`。下一最小修复任务应使AG-13的`causal_edges`记录直接机制证据、`provenance_scope`与独立反事实；AG-14要求证据审稿，不能只靠字符串非空；再用此负控与未见片源复测。不得将后验补全重新算成首次无提示正确率；不建新Q、独立C-film不升。
