@@ -1,0 +1,72 @@
+{
+  "schema": "QSFE_AG02_AG13_SAME_SESSION_AUDIT_V1",
+  "date": "2026-11-22",
+  "issue": "674-354",
+  "test_mode": "POSTHOC_RULE_BASED_REVIEW",
+  "process": "AG-02 tenyuan evidence/L2 gate and AG-13 causal chronology role simulation by same ChatGPT, NOT separate agent invocation",
+  "independent_model_run": false,
+  "no_leakage": false,
+  "previous_predictions_visible_to_reviewer": true,
+  "source_grade": "R49 GitHub extracted text; original single-reprint partial; no independent full chapter read this run",
+  "human_F3": null,
+  "score_accuracy": null,
+  "overall_status": "RULE_GATES_USEFUL_BUT_TENYUAN_TOP1_UNVALIDATED",
+  "structural_checks": {
+    "three_case_ids_present": 3,
+    "person_id_ref_valid": 3,
+    "existing_r24_ref_id_valid": 3,
+    "ten_slot_format_valid": 3,
+    "clear_F1_vs_claims": 3,
+    "negative_counterfactual_present": 3,
+    "strict_L2_rejected": 3
+  },
+  "new_quality_finding": "QS21-035 边军 is COLLECTIVE/NOT_INDEPENDENT and should not be described as a separately scoreable organization despite valid ID",
+  "valid_as_evidence_main_tenyuan": 0,
+  "preserved_weak_H": 1,
+  "must_reopen_or_reject_top1": 2,
+  "not_full_raw_text_case_count": 3,
+  "reviewer_note": "No ground truth available, therefore 0 validated is not 0/3 predictive accuracy. No quantitative model performance score can be computed.",
+  "cases": [
+    {
+      "id": "QSFE-0001",
+      "old": [
+        "XZ8",
+        "ZX7"
+      ],
+      "agent_verdict": "H_RETAIN_WITH_LOWER_CONFIDENCE",
+      "AG02": "XZ可作为危险临近、行动风险的条件性观感；ZX次元需要读者实际怒火/方向性反击的观感证据，角色主动闯入不等于读者ZX。十项精确强度无校准支撑。",
+      "AG13": "F1行动链可用：老吴允许陈迹通行、阻其他人跟进；齐斟酌结阵。老吴动机、正式权力来源不明，不得宣布某元克另某元。",
+      "new_primary": "XZ? H / other rivals ZX?, XN?, Z?; EXACT_RANK_UNDETERMINED",
+      "critical_gap": "读者实际感受和原章全文；老吴身份/动机",
+      "action": "保留原XZH作为历史假说；不升级主次为正式。"
+    },
+    {
+      "id": "QSFE-0002",
+      "old": [
+        "Z8",
+        "XZ7"
+      ],
+      "agent_verdict": "REOPEN_TOP1",
+      "AG02": "追逐激烈≠必然激发Z激动；甲士自刎企图也可能显著激活XZ惧怕、悬置或其他感受。先把人物动作强度与观众体验分账，Z8作为当前第一名证据不足。",
+      "AG13": "239错街与失踪→240陈迹追擒→甲士自刎企图为可追因果材料；景朝细作与靖王复仇仅ACCUSATION/INFERENCE；甲士是否死亡不可凭企图推出。",
+      "new_primary": "XZ? / Z? / ZX? 三者竞争，暂不判Top1；exact ten slots null pending human",
+      "critical_gap": "自刎后果、章节连线直接文本与读者实测",
+      "action": "把原Z8/XZ7降为竞争性旧预测，不宣布Z主通过。"
+    },
+    {
+      "id": "QSFE-0003",
+      "old": [
+        "NZ7",
+        "XZ6"
+      ],
+      "agent_verdict": "REJECT_NZ_AS_EVIDENCED_TOP1",
+      "AG02": "NZ依赖/被照料是保护性读法，不是F1剧情事实；客人安全抵达未证、掌柜是否可信未证，不能仅凭“送客”命令给NZ7作为领先结论。XZ不安或X并Z控制也仅是竞争H。",
+      "AG13": "只有发出指令被证实，执行/到达/保护结果UNKNOWN；禁止把命令→获救写成已完成因果链。故事里的下一章信息不应自动倒灌241窗口。",
+      "new_primary": "TOP1=null，conditional branches: SAFE_DELIVERY -> NZ?; ISOLATION_TRAP -> XZ?/X并Z?",
+      "critical_gap": "执行和后果、读者当时知道什么、作者章实际连续性",
+      "action": "退回NZ7主元的确定叙述；保留作条件性分支。"
+    }
+  ],
+  "STOP": "3 source-anchored cases reviewed once; no official theory or character JSON changed; no human tests; no separate Codex runtime",
+  "NEXT": "independent fresh-session local Codex run from SOURCE_ONLY packet, without loading prior QSFE predictions, plus original novel passage and blinded F3 reader ratings; compare sealed predictions to baselines after lock"
+}
