@@ -338,3 +338,34 @@ STOP：3轮本次桌面审计收口，不无限迭代。NEXT唯一门：本地Co
 
 ### 本轮唯一后续门
 先为R7冻结真正未见的影片来源和题卡、补F2/作者/人类F3，再在R8本机Codex独立跑；若无法取得不泄题的来源或人评，保持`ASSISTED_RESEARCH_ONLY`而不是无限补标签或伪造达标。复测成果只原位写本GOAL-Z及Linear 674-105，不动原问题Canvas与L2。
+
+## 2026-11-22｜TENYUAN-R7R8-EXECUTION-001 云端整链与新电影限定样本
+
+> 请求「跑」。实测使用工作容器中与GitHub blob一致的R4/R5/R6三个模块，以及新增同哈希runner`run_agent_gates.py`。这不是用户PC的Codex、不是另一独立大模型、不是人评F3。原问题树/G4/Q-DYN-002/AG14/GOAL-Z/AG13不变；L2与电影Canvas不改。
+
+### 实际调用与结果
+- 原仓库三个模块`causal_gate.py` blob`59b0da8ca993baad238010c479731d6aa9dd75f8`、`source_gate.py` blob`3cf20497417d4f1382e3593284254225e038347f`、`tenyuan_profile_gate.py` blob`f467cf6458fd6f0f228f72941b37d9b4c5f33422`、`test_agent_gates.py` blob`1cd27142ca98fb692849cc9d6549c6b51aedf281`，与容器`git hash-object`一致。`python -m unittest discover -q`确实38/38 PASS。
+- 新增三门流水运行器`07-Codex大脑库/skills/ten-yuan-chain/scripts/run_agent_gates.py`，Git blob`95527269a23b6ecc0b2ee8a6766bb199ba71243e`，GitHub commit`281f3dd1d5cca9584d3bcbe9e66e18fd9074bf54`，写后回读PASS，容器同字节哈希。一次读取`packet+source_manifest+feeling_contract`后分别执行因果、来源、感受三模块，输出`PASS_ASSISTED_STRUCTURE_ONLY`和输入SHA256，强制`independent_holdout=false`/`local_codex_executed=false`/`empirical_validity=false`。本runner不是LLM推理进程，亦没有替代原`validate_case_packet.py`，正式流程仍先跑该原验证器。
+- **已知后验《A Hero》(2021)**三门RUN exit0，`PASS_ASSISTED_STRUCTURE_ONLY`；来源清单为`ASSISTED_SOURCE_AUDIT`；F3=false；manifest SHA256`310a7b4002153b38d62fc12b8a613daa51e97aa5866ae6a97c22c482788d5bb7`；此样本不计独立。
+- **新增不同题材《The Blue Caftan / 蓝色长袍》(2022)**，GitHub先前精确搜索`The Blue Caftan / Le Bleu du caftan`未发现同名卡（有限结果，非全库排重）。通过戛纳官方、Strand Releasing、Essaouira Film Festival及RogerEbert文本限定范围，整理`E01..E06`六件事件：经营店铺→雇用学徒→Mina注意亲密关系/嫉妒→病情影响工作→Halim做饭照护→Youssef接手店铺工作；只建立两条有出处的`CAUSE_CANDIDATE`与支持作用边。人物稳定十元null、五维主维UNKNOWN、严格生克补NOT_ESTABLISHED、F2=null、F3=null。Ten-Yuan感受谱仅为**舞台S3有限AI-H示例**`XZ=6,NZ=4,X=3,其余null`，未有人类感受验证，不能称该片事实或作者判定。
+- Blue样本三门RUN exit0，`PASS_ASSISTED_STRUCTURE_ONLY`：packet SHA256`2cfac4975b37a60078240e248e639547747b75a05538f7b5bd5d0cb407b5ee88`、manifest SHA256`b40c9fa64ca96013a5cf2a2be8fa78f583505e247937c1da37dc5bc458aa7932`、feeling SHA256`b11a706a362b1c4f49e37f12845352c6e8acdf6dc7e901c96e6fd10ebcb137f0`。来源清单仍由同一会话整理，`review_status=ASSISTED_SOURCE_AUDIT`，因此**没有独立基线资格**。
+- 同片四项故意错误注入：`sequence only`假因果→TEMPORAL_ONLY_AS_CAUSAL、删E05照护事件→SOURCE_EVENT_COVERAGE_MISSING、AI自冒F3人评→AI_CANNOT_BE_HUMAN_RATER、生成者充当审核者→SOURCE_SELF_REVIEW；均返回REPLAN_STRUCTURAL，4/4成功拦截。上述断言是软件防错，不等于四次影片真值预测。
+
+### 轮次裁决
+| 轮次 | 实际进度 | 完成与否 |
+|---|---|---|
+| R4 因果区分 | 源码同哈希、测试与跨片调用通过 | 技术PASS；因果真值仍需审稿 |
+| R5 资料覆盖 | ASSISTED_SOURCE_AUDIT并可检漏 | **独立审稿未通过** |
+| R6 十元感受分层 | AI候选H可出，F3真人null | **实证未通过** |
+| R7 未泄题独立多题材 | 新题材有辅助样本，但同会话暴露了后验来源、无独立审核 | **NOT_SCORED** |
+| R8 实际运行 | 当前云端三个脚本门串联与run receipt成功；`codex`命令在本工作环境缺失，无法连接用户PC | **CLOUD_GATES_PASS / LOCAL_CODEX_NOT_EXECUTED** |
+
+**结论**：已实现可运行的十元**辅助研究工作流**；未达成独立十元感受本体模型验收。下一唯一外部门槛是R7对未泄题影片取得可信F1/F2完整段落及独立作者/真人F3评价，然后用户本地Codex同步真实运行并附带stdout/exit/SHA。不得把字段校验或同会话同人审核标成模型本体理解能力。
+
+### 来源与可复现材料
+- 戛纳：https://www.festival-cannes.com/en/f/le-bleu-du-caftan/
+- 发行方：https://strandreleasing.com/films/the-blue-caftan/
+- 电影节：https://essaouirafilmfestival.org/en/film-le-bleu-du-caftan
+- 影评：https://www.rogerebert.com/reviews/the-blue-caftan-movie-review-2023
+- 容器运行包：`/mnt/data/十元代理_R7-R8整链复跑_20261122.zip`（仅当前对话工作目录，非用户本机路径），含17项文件；ZIP检验PASS，SHA256`563754e3c6fc5b40eea937d88f356b099b5c1cd0b6843cf5e8c6186df85b49e2`。
+- R8下轮仅需真实Codex本机运行/外部审核；本轮停止，不新增第二份总Canvas，不改官方C-film、十元L2、USER已看记录。
