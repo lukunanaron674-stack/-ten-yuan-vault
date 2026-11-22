@@ -272,3 +272,14 @@ python 07-Codex大脑库/skills/ten-yuan-chain/scripts/tenyuan_profile_gate.py p
 `PASS_FEELING_CONTRACT`仅证明类型和权力分层，没有证明AI预测符合人类感觉。任何`OBJECT_ESSENCE/PERSON_IMMUTABLE_CLASS`、十槽缺项、AI冒充真人F3、仅凭主题式子定人物、无作者回执锁角色、从影片推出L2严格关系，均返回FAIL。含Z/ZN关系仍须`FROZEN_H`。角色长期主元可以是带证据的工作候选，但无作者/真人验证不锁定。
 
 **R6验收两级**：`SCHEMA_PASS`可以供作者进行创作辅助；`EMPIRICAL_VALIDATED`必须有与当前刺激/场景/时段对应的真人F3来源、十项标度一致性与未泄题跨影片评估；只通过本脚本不得宣称后者。R7/R8其余条件沿本Skill前述门禁。
+
+## 2026-11-22｜R9：AG-11可用候选补强门
+
+- 在完成R1具体事件事实与R4/R5来源核查后，AG-11必须单独运行A（十项对照，缺证据为null）＋B（至少3个跨2阶段主动选择、具体代价与反例）并输出`role_candidate_packet.json`；不能只丢一个长期角色元`null`而缺解释。
+- 候选材料足够，提出`CANDIDATE_H`的Top1＋最近邻竞争十元，分别说明支持的事件ID、反例、如果拿掉核心方向人物动机何处崩塌；充分材料却仍无法区分时用`WAIT_EVIDENCE`+`why_candidates_indistinguishable`+`missing_evidence`，不强迫造定义或数值。
+- 仓库根命令：`python 07-Codex大脑库/skills/ten-yuan-chain/scripts/role_candidate_gate.py path/to/role_candidate_packet.json`；`PASS_ROLE_CANDIDATE_CONTRACT`只表示**候选可审核**，不表示AI猜对人物主元。12条回归样本在`test_role_candidate_gate.py`。C-film/人类F3和AUTHOR锁定另行验收。
+- 《不留痕迹》Tom后验示例：ZN_H vs NZ_H；四条已核行动支持进行比较，尊重双人生活合法性与守住父女关系可能并存。保留反例及`AG11_ROLE_LOCK=false`，不把它写入正式电影Canvas，也不得算新片无提示命中。
+- 用户要求“本体模型可用”的最低分层：R9候选质量合规→R10新材料区分力→R11真人/作者独立评估→R12本地Codex端到端运行。当前R9仅开发与已知案例回归，未解决R10–R12。
+
+### 角色接口相容性
+AG-13接收AG-11`CANDIDATE_H`仅用于解释哪条感受作用可被研究；若`WAIT_EVIDENCE`则关系端点保留null，事件事实图照常输出。AG-09本体主题结论不得覆盖角色主元；AG-02对严格关系仍遵循冻结门禁。
