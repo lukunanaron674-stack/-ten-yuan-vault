@@ -166,13 +166,73 @@
       "kind": "SOURCE_REPORTED",
       "observed_choice": "命小六询问陈迹路引",
       "observed_cost_or_risk": "查证结果未知；客栈风险未证"
+    },
+    {
+      "event_id": "R09-E236-AUTONOMY",
+      "stage": "S236",
+      "chapter": 236,
+      "person_id": "QSP-0001",
+      "source_ref": "https://www.sudugu520.com/23/13539.html",
+      "kind": "SOURCE_REPORTED",
+      "observed_choice": "陈迹主动向小满承诺回京后索回身契，让她决定走/留，另提出嫁妆/加月银",
+      "observed_cost_or_risk": "归还身契/嫁妆仍未执行；不能当作已支付成本"
+    },
+    {
+      "event_id": "R09-E237-MONEY",
+      "stage": "S237",
+      "chapter": 237,
+      "person_id": "QSP-0001",
+      "source_ref": "https://www.sudugu520.com/23/13541-2.html",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "在已有卖消息获银的经历和缺银需求下，考虑出售城防秘密，但决定不散播可能破坏边军布防的情报，换回买消息的酒坛",
+      "observed_cost_or_risk": "放弃再次出售特定情报的机会；并无可核对应现银数额，不能写‘损失220两’"
+    },
+    {
+      "event_id": "R09-E237-DIRECT",
+      "stage": "S237",
+      "chapter": 237,
+      "person_id": "QSP-0001",
+      "source_ref": "https://www.sudugu520.com/23/13541-4.html",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "陈迹购买倾脚头线索后立即骑马赴都司府报危情，付款指令交张夏执行",
+      "observed_cost_or_risk": "急赴敌对门禁构成风险；付款实际经张夏，不能记成陈迹本人支出"
+    },
+    {
+      "event_id": "R09-E238-DANGER",
+      "stage": "S238",
+      "chapter": 238,
+      "person_id": "QSP-0001",
+      "source_ref": "https://www.sudugu520.com/23/13546-3.html",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "在守卫拔剑、羽林军持剑围拦和军阵包围的实际风险下坚持递交危急消息，改采取屋顶穿行和当众陈报",
+      "observed_cost_or_risk": "风险已发生，包括近身剑袭和追击；并无受伤事实"
+    },
+    {
+      "event_id": "R09-E241-DIFFERENTIATE",
+      "stage": "S241",
+      "chapter": 241,
+      "person_id": "QSP-0001",
+      "source_ref": "https://www.sudugu520.com/23/13558-3.html",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "在太子等讨论逃离时，陈迹反对一概认定边军全部反叛，认为胡钧羡至少不想反，推断少数人可能谋反",
+      "observed_cost_or_risk": "发表不同意见可能承担舆论/安全风险，但本章没有为该言论付出明确代价"
+    },
+    {
+      "event_id": "R09-E242-BOUNDARY",
+      "stage": "S242",
+      "chapter": 242,
+      "person_id": "QSP-0001",
+      "source_ref": "https://www.sudugu520.com/23/13562-4.html",
+      "kind": "OBSERVED_CHOICE",
+      "observed_choice": "陈迹在考虑城破风险时计划借密道带张铮、张夏、小满离开；太子/陈家/羽林军不在其撤离计划；欲先验证密道",
+      "observed_cost_or_risk": "准备工作和忧虑已见，实际撤离未发生；不把计划当结果"
     }
   ],
   "characters": [
     {
       "character_id": "QSP-0001",
       "context_id": "QINGSHAN_233_242_SOURCE_REPRINT",
-      "status": "CANDIDATE_H",
+      "status": "WAIT_EVIDENCE",
       "role_is_objective_tenyuan_class": false,
       "f3_human_rating": null,
       "evidence": [
@@ -196,9 +256,51 @@
           "cost": "与逃跑甲士对抗、随后甲士试图自刎；自身身体代价未证",
           "source_ref": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
           "evidence_kind": "OBSERVED_CHOICE"
+        },
+        {
+          "event_id": "R09-E236-AUTONOMY",
+          "choice": "陈迹主动向小满承诺回京后索回身契，让她决定走/留，另提出嫁妆/加月银",
+          "cost": "归还身契/嫁妆仍未执行；不能当作已支付成本",
+          "source_ref": "https://www.sudugu520.com/23/13539.html",
+          "evidence_kind": "SOURCE_REPORTED"
+        },
+        {
+          "event_id": "R09-E237-MONEY",
+          "choice": "在已有卖消息获银的经历和缺银需求下，考虑出售城防秘密，但决定不散播可能破坏边军布防的情报，换回买消息的酒坛",
+          "cost": "放弃再次出售特定情报的机会；并无可核对应现银数额，不能写‘损失220两’",
+          "source_ref": "https://www.sudugu520.com/23/13541-2.html",
+          "evidence_kind": "OBSERVED_CHOICE"
+        },
+        {
+          "event_id": "R09-E237-DIRECT",
+          "choice": "陈迹购买倾脚头线索后立即骑马赴都司府报危情，付款指令交张夏执行",
+          "cost": "急赴敌对门禁构成风险；付款实际经张夏，不能记成陈迹本人支出",
+          "source_ref": "https://www.sudugu520.com/23/13541-4.html",
+          "evidence_kind": "OBSERVED_CHOICE"
+        },
+        {
+          "event_id": "R09-E238-DANGER",
+          "choice": "在守卫拔剑、羽林军持剑围拦和军阵包围的实际风险下坚持递交危急消息，改采取屋顶穿行和当众陈报",
+          "cost": "风险已发生，包括近身剑袭和追击；并无受伤事实",
+          "source_ref": "https://www.sudugu520.com/23/13546-3.html",
+          "evidence_kind": "OBSERVED_CHOICE"
+        },
+        {
+          "event_id": "R09-E241-DIFFERENTIATE",
+          "choice": "在太子等讨论逃离时，陈迹反对一概认定边军全部反叛，认为胡钧羡至少不想反，推断少数人可能谋反",
+          "cost": "发表不同意见可能承担舆论/安全风险，但本章没有为该言论付出明确代价",
+          "source_ref": "https://www.sudugu520.com/23/13558-3.html",
+          "evidence_kind": "OBSERVED_CHOICE"
+        },
+        {
+          "event_id": "R09-E242-BOUNDARY",
+          "choice": "陈迹在考虑城破风险时计划借密道带张铮、张夏、小满离开；太子/陈家/羽林军不在其撤离计划；欲先验证密道",
+          "cost": "准备工作和忧虑已见，实际撤离未发生；不把计划当结果",
+          "source_ref": "https://www.sudugu520.com/23/13562-4.html",
+          "evidence_kind": "OBSERVED_CHOICE"
         }
       ],
-      "missing_evidence": "需作者完整独立正文验证人格核心",
+      "missing_evidence": "Paid costly voluntary long-run choice separating challenging authority, procedural cause tracing, honoring other autonomy, and selectively protecting intimates. 236 promise unfulfilled, 242 escape planned.",
       "A_similarity": {
         "X": null,
         "Z": null,
@@ -212,18 +314,20 @@
         "X并Z": null
       },
       "author_confirmed": false,
-      "core_candidate": "ZX",
-      "rival_candidate": "XN",
-      "core_reason": "跨地点主动冒险闯入/追擒，可能激活持续反压制方向",
-      "rival_reason": "调查线索与操作步骤能解释相同行动，未见强制环境外的稳定本核",
-      "negative_case": "若不与权威冲突，陈迹仍是否继续查案/会不会采用妥协方案尚未知",
-      "soul_ablation": "移去ZX后仍可能以XN调查路线维持情节；待更昂贵选择证实本核的不可替代性",
-      "core_evidence_ids": [
-        "E237_INFO",
-        "E238_ENTRY",
-        "E240_CAPTURE"
+      "why_candidates_indistinguishable": "The additional 236 promise/237 constrained sale/238 armed risk/241 differentiated judgment/242 intimate-only escape support different nearby ten-yuan readings. No stable costly cross-context choice distinguishes ZX vs XN from situational ZN/NZ yet.",
+      "archived_reopened_hypothesis": {
+        "core": "ZX",
+        "rival": "XN",
+        "former_status": "CANDIDATE_H",
+        "superseded_for_top1": "R09_NEW_EVIDENCE"
+      },
+      "candidate_set": [
+        "ZX",
+        "XN",
+        "ZN",
+        "NZ"
       ],
-      "layer_origin": "CROSS_STAGE_CHOICES"
+      "current_role_lock": null
     },
     {
       "character_id": "QSP-0005",
@@ -488,5 +592,8 @@
   "source_reference_sha": "3cf7985e2406ee3261abc81830ada4dcc7a9dcf5",
   "independent_agent_executed": false,
   "author_verified": false,
-  "human_F3": null
+  "human_F3": null,
+  "status": "ALL_ROLES_WAIT_EXPLICIT_CAUSE_AFTER_R09",
+  "last_review": "2026-11-22_R09_R11",
+  "revision_note": "Prior CANDIDATE_H for CJ reopened on newly obtained fuller chapter text; official validator accepts WAIT_EVIDENCE with independent why_candidates_indistinguishable; no permanent role lock"
 }
