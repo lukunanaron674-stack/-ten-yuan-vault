@@ -89,18 +89,31 @@
       "scope": "房费、座次、酒坛买卖消息规矩",
       "reader_predicted_main": null,
       "reader_predicted_secondary": null,
-      "ranking_status": "NO_RANK_WITHOUT_READERS",
+      "ranking_status": "REOPEN_RANKING_NEW_FINGER_BREAKING_237",
       "felt_experience": "信息需交易/规矩不透明，可能是秩序感或被防备感；不按客栈名称直接赋元",
-      "factual_mechanism": "店中优惠、东家专桌约束、酒坛消息交易确有规则",
+      "factual_mechanism": "交易秩序+有形惩戒，建立安全与强迫并存的经营规则",
       "competitors": [
-        "XN?",
-        "XZ?"
+        "XZ?警惕/威慑",
+        "X并Z?惩戒厌恶",
+        "XN?规则可操作的局部感"
       ],
       "rival": "规则让人觉得可靠，或让人觉得危险；同地点可有相反观感",
       "counterfactual": "同规则分别给透明价目与暗中区别对待，比较自然语言观感",
       "reader_human_F3": null,
       "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
-      "relation_l2_lock": false
+      "relation_l2_lock": false,
+      "current_reader_risk_cues": [
+        "客栈黑话、专桌、酒坛规则、客栈手续费",
+        "违规私下打听者当众被掰断手指，掌柜下令"
+      ],
+      "source_secondary_mirrors": [
+        "https://www.sudugu520.com/23/13535.html",
+        "https://www.sudugu520.com/23/13541.html",
+        "https://czbooks.net/n/s6ojkc/s6o9020b?chapterNumber=240"
+      ],
+      "reader_window_cutoff": 237,
+      "known_after_cutoff_cannot_backfill": true,
+      "negative_counterfactual": "R09-R11 2x2: remove ch241 fat-sheep cue vs remove ch242 blood/cries testimony; isolate pre-known and new information."
     },
     {
       "id": "QSPLACE-CAND-0003",
@@ -117,21 +130,34 @@
         "QS21-083"
       ],
       "scope": "掌柜下令、小六未证执行",
-      "reader_predicted_main": null,
-      "reader_predicted_secondary": null,
-      "ranking_status": "NZ_TOP_REJECTED",
+      "reader_predicted_main": "XZ?",
+      "reader_predicted_secondary": "X并Z?",
+      "ranking_status": "R241_KNOWN_PREDATORY_CUE_XZ_X并Z_H_PRIORITY_NOT_HUMAN_VERIFIED",
       "felt_experience": "若理解为护送可能依赖NZ，若隔离陷阱可能惧怕XZ或厌恶X并Z",
-      "factual_mechanism": "仅命分别送客的指令，送达与受害均未知",
+      "factual_mechanism": "选择性分送+掠夺语义+规训暴力的组合",
       "competitors": [
-        "NZ?仅保护条件",
-        "XZ?风险假说",
-        "X并Z?控制假说"
+        "XZ?受害风险",
+        "X并Z?利用/惩戒的厌恶",
+        "NZ?保护说法缺正面证据"
       ],
       "rival": "反向读法会使原NZ7的方向翻转",
       "counterfactual": "取得安全到达及失踪两种独立可核结果后再分层比较",
       "reader_human_F3": null,
       "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
-      "relation_l2_lock": false
+      "relation_l2_lock": false,
+      "current_reader_risk_cues": [
+        "掌柜将分送住客称为肥羊",
+        "明确命小六分开送",
+        "威胁小六并指责曾在马厩留下帽子",
+        "实际送达/受害尚未知"
+      ],
+      "source_secondary_mirrors": [
+        "https://www.sudugu520.com/23/13558-4.html",
+        "https://czbooks.net/n/s6ojkc/s6onjlmb?chapterNumber=244"
+      ],
+      "reader_window_cutoff": 241,
+      "known_after_cutoff_cannot_backfill": true,
+      "negative_counterfactual": "R09-R11 2x2: remove ch241 fat-sheep cue vs remove ch242 blood/cries testimony; isolate pre-known and new information."
     },
     {
       "id": "QSPLACE-CAND-0003",
@@ -150,14 +176,32 @@
       "scope": "小五引人至下方/乌云所述异味与哀嚎",
       "reader_predicted_main": "XZ?",
       "reader_predicted_secondary": "X并Z?",
-      "ranking_status": "WEAK_AI_H_ONLY",
+      "ranking_status": "R242_CUE_OVER_R241_PRIOR_NOT_DEATH",
       "felt_experience": "可能产生恐惧XZ与对潜在伤害的厌恶X并Z；证词不是现场被杀证明",
-      "factual_mechanism": "小五带人、乌云陈述、陈迹推断三层分开",
+      "factual_mechanism": "已有掠夺线索+密道不透明+证词，令伤害风险变得更具体",
       "rival": "若乌云判断错误，读者在后续章的情绪很可能被改写",
       "counterfactual": "若取得客人未受伤的可靠证据，测XZ/X并Z是否下降",
       "reader_human_F3": null,
       "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
-      "relation_l2_lock": false
+      "relation_l2_lock": false,
+      "current_reader_risk_cues": [
+        "小五确实带两人进入马厩下方",
+        "乌云报告持续哀嚎和血腥气",
+        "陈迹认为黑店屠宰场",
+        "没有独立核证客人死亡/安全出口真伪"
+      ],
+      "source_secondary_mirrors": [
+        "https://www.sudugu520.com/23/13562-4.html",
+        "https://www.sudugu520.com/23/13562-3.html"
+      ],
+      "competitors": [
+        "XZ?恐惧",
+        "X并Z?厌恶",
+        "NZ?仅在后续真实救助信息改变后才研究"
+      ],
+      "reader_window_cutoff": 242,
+      "known_after_cutoff_cannot_backfill": true,
+      "negative_counterfactual": "R09-R11 2x2: remove ch241 fat-sheep cue vs remove ch242 blood/cries testimony; isolate pre-known and new information."
     }
   ],
   "unbound_events": [
@@ -180,5 +224,7 @@
   ],
   "never_ascribe_scene_from_character": true,
   "source_scope": "历史R47/R49章节摘要，非原著独立全文核查",
-  "relation_L2_confirmed": 0
+  "relation_L2_confirmed": 0,
+  "last_review": "R09-R11_TWO_MIRRORS_CRITICAL_F1_RECHECK",
+  "scene_hypothesis_priority_not_verified": true
 }
