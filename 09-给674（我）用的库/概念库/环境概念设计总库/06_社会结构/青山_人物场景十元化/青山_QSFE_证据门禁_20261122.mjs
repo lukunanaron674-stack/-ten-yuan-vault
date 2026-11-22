@@ -10,7 +10,77 @@ import path from 'node:path';
 
 import {fileURLToPath} from 'node:url';
 
-export function validateCase(c,registry={}) {
+
+// R12 optional stricter contract for prelocked source episodes. The source manifest
+// must be produced from a separately scoped text extraction; schema checks cannot
+// certify the truth of any quote or the independence of its author.
+export function validateWindowedEvidence(c, manifest, add) {
+  if (c?.validation_contract !== "QSFE_R12_EVENT_WINDOW_V1") return;
+  if (!manifest || !Array.isArray(manifest.required_event_units) || !Array.isArray(manifest.reader_cues)) {
+    add("SOURCE_MANIFEST_REQUIRED");
+    return;
+  }
+  if (!manifest.source_scope || !manifest.reviewer_id || !["ASSISTED","INDEPENDENT"].includes(manifest.review_mode)) add("SOURCE_MANIFEST_SCOPE_MISSING");
+  if (manifest.review_mode === "INDEPENDENT" &&
+      (!manifest.review_receipt_ref || manifest.reviewer_id === c.generator_id)) add("SOURCE_SELF_REVIEW");
+  const events = Array.isArray(c.events) ? c.events : [];
+  const expected = new Map();
+  const allowedRoles = new Set(["TRIGGER","MEDIATOR","RESPONSE","OUTCOME","CONTEXT"]);
+  for (const req of manifest.required_event_units) {
+    if (!req?.id || expected.has(req.id) || !req.source_ref || !req.source_span ||
+        !req.actor || !req.target || !allowedRoles.has(req.event_role)) {
+      add("SOURCE_MANIFEST_UNGROUNDED");
+      continue;
+    }
+    expected.set(req.id,req);
+    const actual=events.find(e=>e.id===req.id);
+    if (!actual) {
+      add(req.event_role==="MEDIATOR" ? "INTERMEDIATE_EVENT_MISSING" : "REQUIRED_EVENT_MISSING");
+      continue;
+    }
+    if (actual.actor!==req.actor || actual.target!==req.target) add("EVENT_ACTOR_TARGET_MISMATCH");
+    if (actual.event_role!==req.event_role) add("EVENT_ROLE_MISMATCH");
+    if (actual.chapter!==req.chapter || actual.unit!==req.unit) add("EVENT_ORDER_MISMATCH");
+    if (actual.epistemic!==req.epistemic) add("EVENT_EPISTEMIC_MISMATCH");
+  }
+  for (const e of events) if (!expected.has(e.id)) add("EVENT_OUTSIDE_SOURCE_MANIFEST");
+  const win=c.reader_window||{};
+  const ten=c.tenyuan||{};
+  const allowedScopes=new Set(["LOCAL_BEAT","CHAPTER_TO_DATE"]);
+  if (!allowedScopes.has(win.analysis_scope) || !["FULL_READER_HISTORY","ISOLATED_EXCERPT"].includes(win.context_mode) ||
+      !Number.isInteger(win.cutoff_chapter) || !Number.isInteger(win.cutoff_unit) || win.cutoff_unit<0) add("READER_WINDOW_UNSPECIFIED");
+  if (ten.scope!==win.analysis_scope) add("READER_SCOPE_COLLAPSE");
+  if (ten.scope==="CHAPTER_TO_DATE" && win.context_mode!=="FULL_READER_HISTORY") add("READER_CONTEXT_NOT_FULL");
+  const cutoff=(ch,unit)=>ch<win.cutoff_chapter||(ch===win.cutoff_chapter&&unit<=win.cutoff_unit);
+  for (const e of events) if (Number.isInteger(e.chapter)&&Number.isInteger(e.unit)&&!cutoff(e.chapter,e.unit)) add("READER_FUTURE_LEAK");
+  const cues = new Map();
+  for (const r of manifest.reader_cues) {
+    if (!r?.id || cues.has(r.id) || !r.source_ref || !r.source_span ||
+        !Number.isInteger(r.chapter) || !Number.isInteger(r.unit)) add("SOURCE_CUE_UNGROUNDED");
+    else cues.set(r.id,r);
+  }
+  if (!Array.isArray(win.visible_cue_ids) || !win.visible_cue_ids.length) {
+    add("READER_VISIBLE_CUES_MISSING");
+    return;
+  }
+  const visible=new Set(win.visible_cue_ids);
+  for (const cid of visible) {
+    const cue=cues.get(cid);
+    if (!cue) {add("READER_CUE_UNGROUNDED");continue;}
+    if (!cutoff(cue.chapter,cue.unit)) add("READER_FUTURE_LEAK");
+  }
+  // A real reader of the ongoing novel has all earlier cues; a deliberately
+  // isolated extract may hide them, but must not claim whole-chapter perception.
+  if (win.context_mode==="FULL_READER_HISTORY") {
+    for (const cue of cues.values()) {
+      if (cutoff(cue.chapter,cue.unit) && !visible.has(cue.id)) add("READER_PRIOR_CUE_MISSING");
+    }
+  }
+  if (!Array.isArray(win.anchor_cue_ids) || !win.anchor_cue_ids.length ||
+      win.anchor_cue_ids.some(cid=>!visible.has(cid))) add("READER_ANCHOR_MISSING");
+}
+
+export function validateCase(c,registry={},sourceManifests={}) {
   const err=[];
   const add=(code)=>{if(!err.includes(code))err.push(code)};
   const src=c?.source||{};
@@ -50,13 +120,14 @@ export function validateCase(c,registry={}) {
     if(edge.event_id&&!ids.has(edge.event_id))add("RELATION_EVENT_MISSING");
   }
   if(!c.counterfactual||!c.counterfactual.change||!c.counterfactual.expected_difference)add("NO_COUNTERFACTUAL");
+  validateWindowedEvidence(c,sourceManifests[c?.case_id],add);
   return err.sort();
 }
 
 export function runSuite(suite) {
   const tests=[];
   for(const c of (suite.accept_cases||[])){
-    const errors=validateCase(c,suite.reference_registry||{});
+    const errors=validateCase(c,suite.reference_registry||{},suite.source_manifests||{});
     tests.push({id:c.case_id,kind:"positive",pass:errors.length===0,errors});
   }
   for(const m of (suite.mutant_cases||[])){
@@ -68,7 +139,7 @@ export function runSuite(suite) {
     let node=copy;
     for(const key of path.slice(0,-1))node=node[key];
     node[path[path.length-1]]=target.value;
-    const errors=validateCase(copy,suite.reference_registry||{});
+    const errors=validateCase(copy,suite.reference_registry||{},suite.source_manifests||{});
     tests.push({id:m.id,kind:"negative",pass:errors.includes(m.expect),expected:m.expect,errors});
   }
   return {test_count:tests.length,pass:tests.filter(x=>x.pass).length,failed:tests.filter(x=>!x.pass).map(x=>x.id),tests,
