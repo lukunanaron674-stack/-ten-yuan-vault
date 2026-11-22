@@ -1,0 +1,582 @@
+{
+  "schema": "QSFE_REVIEW_GATE_SUITE_V1",
+  "date": "2026-11-22",
+  "issue": "674-354",
+  "authority": "L5_UNCALIBRATED_AI_H",
+  "source_quality": "R49_PRIOR_RESEARCHER_TEXT_NOT_FULL_ORIGINAL",
+  "assertion": "These positive examples were prepared by the same assistant after seeing prior R04 results; not a blind model test.",
+  "accept_cases": [
+    {
+      "case_id": "QSFE-0001",
+      "source": {
+        "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+        "quality": "SECONDHAND_R49_SINGLE_REPRINT_PARTIAL",
+        "original_fulltext_pass": false,
+        "author_chapters": [
+          238
+        ]
+      },
+      "reader_window": {
+        "cutoff_chapter": 238
+      },
+      "events": [
+        {
+          "id": "G1",
+          "chapter": 238,
+          "actor": "老吴",
+          "action": "允许陈迹进入都司府",
+          "epistemic": "FACT",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "G2",
+          "chapter": 238,
+          "actor": "老吴",
+          "action": "拦阻追来的羽林军",
+          "epistemic": "FACT",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "G3",
+          "chapter": 238,
+          "actor": "齐斟酌",
+          "action": "率羽林军结阵",
+          "epistemic": "FACT",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN"
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "QSP-0001",
+          "kind": "PERSON"
+        },
+        {
+          "id": "QSP-0006",
+          "kind": "PERSON"
+        },
+        {
+          "id": "QS21-029",
+          "kind": "ENTITY"
+        },
+        {
+          "id": "QS21-030",
+          "kind": "ENTITY"
+        }
+      ],
+      "knowledge_ledger": [],
+      "tenyuan": {
+        "subject": "READER",
+        "status": "AI_H",
+        "top": null,
+        "scores": null,
+        "calibration": "UNVALIDATED",
+        "locked": false,
+        "competitors": [
+          "XZ?",
+          "ZX?",
+          "XN?"
+        ]
+      },
+      "human_feeling": null,
+      "character_stable_locks": [],
+      "AG11_authorized": false,
+      "relation_claims": [],
+      "counterfactual": {
+        "change": "门禁依据变为公开可验证的通行命令",
+        "expected_difference": "读者不透明危机感是否降低"
+      }
+    },
+    {
+      "case_id": "QSFE-0002",
+      "source": {
+        "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+        "quality": "SECONDHAND_R49_SINGLE_REPRINT_PARTIAL",
+        "original_fulltext_pass": false,
+        "author_chapters": [
+          239,
+          240
+        ]
+      },
+      "reader_window": {
+        "cutoff_chapter": 240
+      },
+      "events": [
+        {
+          "id": "P1",
+          "chapter": 239,
+          "actor": "李玄",
+          "action": "命边军甲士带路",
+          "epistemic": "INSTRUCTION",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "P2",
+          "chapter": 239,
+          "actor": "带路甲士-ID待核",
+          "action": "将队伍带至库勒街后失踪",
+          "epistemic": "FACT",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "P3",
+          "chapter": 240,
+          "actor": "陈迹",
+          "action": "追上擒获该甲士",
+          "epistemic": "FACT",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "P4",
+          "chapter": 240,
+          "actor": "带路甲士-ID待核",
+          "action": "试图自刎，结果未独立记为死亡",
+          "epistemic": "FACT",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN",
+          "attempt_only": true,
+          "death_confirmed": false
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "QSP-0001",
+          "kind": "PERSON"
+        },
+        {
+          "id": "QSP-0005",
+          "kind": "PERSON"
+        },
+        {
+          "id": "QS21-035",
+          "kind": "COLLECTIVE",
+          "independent_scoreable": false
+        }
+      ],
+      "knowledge_ledger": [],
+      "tenyuan": {
+        "subject": "READER",
+        "status": "AI_H",
+        "top": null,
+        "scores": null,
+        "calibration": "UNVALIDATED",
+        "locked": false,
+        "competitors": [
+          "XZ?",
+          "Z?",
+          "ZX?"
+        ]
+      },
+      "human_feeling": null,
+      "character_stable_locks": [],
+      "AG11_authorized": false,
+      "relation_claims": [],
+      "counterfactual": {
+        "change": "甲士被擒后主动交代而非企图自刎",
+        "expected_difference": "激动与怕证据消失的候选感受能否区分"
+      }
+    },
+    {
+      "case_id": "QSFE-0003",
+      "source": {
+        "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+        "quality": "SECONDHAND_R49_SINGLE_REPRINT_PARTIAL",
+        "original_fulltext_pass": false,
+        "author_chapters": [
+          241
+        ]
+      },
+      "reader_window": {
+        "cutoff_chapter": 241
+      },
+      "events": [
+        {
+          "id": "I1",
+          "chapter": 241,
+          "actor": "龙门客栈掌柜 QSP-0150",
+          "action": "命小六分别送走地字丙/庚号客人",
+          "epistemic": "INSTRUCTION",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN"
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "QSP-0150",
+          "kind": "PERSON"
+        },
+        {
+          "id": "QSP-0151",
+          "kind": "PERSON"
+        },
+        {
+          "id": "QS21-083",
+          "kind": "ENTITY"
+        }
+      ],
+      "knowledge_ledger": [],
+      "tenyuan": {
+        "subject": "READER",
+        "status": "AI_H",
+        "top": null,
+        "scores": null,
+        "calibration": "UNVALIDATED",
+        "locked": false,
+        "competitors": [
+          "NZ?条件性保护读法",
+          "XZ?风险读法",
+          "X并Z?控制读法"
+        ]
+      },
+      "human_feeling": null,
+      "character_stable_locks": [],
+      "AG11_authorized": false,
+      "relation_claims": [],
+      "counterfactual": {
+        "change": "下一章有可靠证据证明客人安全送达或陷入圈套",
+        "expected_difference": "两种结果下NZ/XZ观感可能互换"
+      }
+    },
+    {
+      "case_id": "QSFE-0004",
+      "source": {
+        "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+        "quality": "SECONDHAND_R49_SINGLE_REPRINT_PARTIAL",
+        "original_fulltext_pass": false,
+        "author_chapters": [
+          242
+        ]
+      },
+      "reader_window": {
+        "cutoff_chapter": 242
+      },
+      "events": [
+        {
+          "id": "S1",
+          "chapter": 242,
+          "actor": "小五 QSP-0021",
+          "action": "带两个人到马厩下方",
+          "epistemic": "FACT",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "S2",
+          "chapter": 242,
+          "actor": "乌云 QSP-0064",
+          "action": "称听见哀嚎并闻到血腥气",
+          "epistemic": "TESTIMONY",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN",
+          "asserted_as_fact": false
+        },
+        {
+          "id": "S3",
+          "chapter": 242,
+          "actor": "陈迹",
+          "action": "推测此处发生伤害",
+          "epistemic": "INFERENCE",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN",
+          "asserted_as_fact": false
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "QSP-0021",
+          "kind": "PERSON"
+        },
+        {
+          "id": "QSP-0064",
+          "kind": "PERSON"
+        },
+        {
+          "id": "QS21-083",
+          "kind": "ENTITY"
+        }
+      ],
+      "knowledge_ledger": [],
+      "tenyuan": {
+        "subject": "READER",
+        "status": "AI_H",
+        "top": null,
+        "scores": null,
+        "calibration": "UNVALIDATED",
+        "locked": false,
+        "competitors": [
+          "XZ?",
+          "X并Z?",
+          "NZ?"
+        ]
+      },
+      "human_feeling": null,
+      "character_stable_locks": [],
+      "AG11_authorized": false,
+      "relation_claims": [],
+      "counterfactual": {
+        "change": "将乌云的证词改为第三方明确证实的安然离去",
+        "expected_difference": "读者的受害猜疑或警戒候选是否变化"
+      }
+    },
+    {
+      "case_id": "QSFE-0005",
+      "source": {
+        "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+        "quality": "SECONDHAND_R49_SINGLE_REPRINT_PARTIAL",
+        "original_fulltext_pass": false,
+        "author_chapters": [
+          240
+        ]
+      },
+      "reader_window": {
+        "cutoff_chapter": 240
+      },
+      "events": [
+        {
+          "id": "A1",
+          "chapter": 240,
+          "actor": "太子 QSP-0013",
+          "action": "提议回京奏请让陈迹担任右司卫",
+          "epistemic": "PROPOSAL",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "A2",
+          "chapter": 240,
+          "actor": "陈礼钦 QSP-0007",
+          "action": "反对该项提议",
+          "epistemic": "FACT",
+          "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+          "downstream_result": "UNKNOWN"
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "QSP-0013",
+          "kind": "PERSON"
+        },
+        {
+          "id": "QSP-0001",
+          "kind": "PERSON"
+        },
+        {
+          "id": "QSP-0007",
+          "kind": "PERSON"
+        }
+      ],
+      "knowledge_ledger": [],
+      "tenyuan": {
+        "subject": "READER",
+        "status": "AI_H",
+        "top": null,
+        "scores": null,
+        "calibration": "UNVALIDATED",
+        "locked": false,
+        "competitors": [
+          "Z?",
+          "XN?",
+          "X?"
+        ]
+      },
+      "human_feeling": null,
+      "character_stable_locks": [],
+      "AG11_authorized": false,
+      "relation_claims": [],
+      "counterfactual": {
+        "change": "有独立正式任命文书且已生效",
+        "expected_difference": "角色权力变更与读者期待是否发生可核差别"
+      }
+    }
+  ],
+  "mutant_cases": [
+    {
+      "id": "M01_COMMAND",
+      "from": "QSFE-0003",
+      "change": {
+        "path": [
+          "events",
+          0,
+          "downstream_result"
+        ],
+        "value": "DONE"
+      },
+      "expect": "COMMAND_AS_RESULT"
+    },
+    {
+      "id": "M02_RUMOR",
+      "from": "QSFE-0004",
+      "change": {
+        "path": [
+          "events",
+          1,
+          "asserted_as_fact"
+        ],
+        "value": true
+      },
+      "expect": "CLAIM_AS_FACT"
+    },
+    {
+      "id": "M03_ATTEMPT",
+      "from": "QSFE-0002",
+      "change": {
+        "path": [
+          "events",
+          3,
+          "death_confirmed"
+        ],
+        "value": true
+      },
+      "expect": "ATTEMPT_AS_DEATH"
+    },
+    {
+      "id": "M04_FUTURE",
+      "from": "QSFE-0003",
+      "change": {
+        "path": [
+          "events",
+          0,
+          "chapter"
+        ],
+        "value": 242
+      },
+      "expect": "FUTURE_KNOWLEDGE_LEAK"
+    },
+    {
+      "id": "M05_COLLECTIVE",
+      "from": "QSFE-0002",
+      "change": {
+        "path": [
+          "entity_refs",
+          2,
+          "independent_scoreable"
+        ],
+        "value": true
+      },
+      "expect": "COLLECTIVE_AS_ORG"
+    },
+    {
+      "id": "M06_TOP_LOCK",
+      "from": "QSFE-0001",
+      "change": {
+        "path": [
+          "tenyuan",
+          "locked"
+        ],
+        "value": true
+      },
+      "expect": "UNVERIFIED_TOP_LOCK"
+    },
+    {
+      "id": "M07_FALSE_PRECISION",
+      "from": "QSFE-0001",
+      "change": {
+        "path": [
+          "tenyuan",
+          "scores"
+        ],
+        "value": {
+          "XZ": 8
+        }
+      },
+      "expect": "FALSE_PRECISION"
+    },
+    {
+      "id": "M08_AG11",
+      "from": "QSFE-0001",
+      "change": {
+        "path": [
+          "character_stable_locks"
+        ],
+        "value": [
+          {
+            "id": "QSP-0001",
+            "top": "ZX"
+          }
+        ]
+      },
+      "expect": "AG11_OVERREACH"
+    },
+    {
+      "id": "M09_L2",
+      "from": "QSFE-0002",
+      "change": {
+        "path": [
+          "relation_claims"
+        ],
+        "value": [
+          {
+            "event_id": "P3",
+            "strict_l2": true,
+            "approved_l2_record": false
+          }
+        ]
+      },
+      "expect": "L2_UNAUTHORIZED"
+    },
+    {
+      "id": "M10_KNOWLEDGE",
+      "from": "QSFE-0004",
+      "change": {
+        "path": [
+          "knowledge_ledger"
+        ],
+        "value": [
+          {
+            "fact_id": "DEATH",
+            "character_id": "QSP-0001",
+            "knowledge": "KNOWN",
+            "basis": "INFERRED_FROM_DISCLOSURE"
+          }
+        ]
+      },
+      "expect": "KNOWLEDGE_CONFLATED"
+    },
+    {
+      "id": "M11_NO_NEGATIVE",
+      "from": "QSFE-0003",
+      "change": {
+        "path": [
+          "counterfactual",
+          "change"
+        ],
+        "value": ""
+      },
+      "expect": "NO_COUNTERFACTUAL"
+    },
+    {
+      "id": "M12_MISSING_EVENT_SOURCE",
+      "from": "QSFE-0004",
+      "change": {
+        "path": [
+          "events",
+          0,
+          "evidence_ref"
+        ],
+        "value": ""
+      },
+      "expect": "EVENT_EVIDENCE_MISSING"
+    },
+    {
+      "id": "M13_UNSUPPORTED_EDGE",
+      "from": "QSFE-0005",
+      "change": {
+        "path": [
+          "relation_claims"
+        ],
+        "value": [
+          {
+            "event_id": "E999",
+            "strict_l2": false
+          }
+        ]
+      },
+      "expect": "RELATION_EVENT_MISSING"
+    }
+  ]
+}
