@@ -438,3 +438,38 @@ G4/Q-DYN-002
 - **R12｜真实本地运行**：同步GitHub主库的Skill/脚本至Codex，运行四门测试与同一R11独立包，记录stdout/stderr/exit/commit/blob及作者评价；当前ChatGPT会话不能直接接管用户本机进程。未执行时`LOCAL_NOT_TESTED`。
 
 **总体结论**：R9已给出研究用途的十元人物主候选，`ASSISTED_CANDIDATE_AVAILABLE`。‘本体模型完成’仍需R10可区分、R11独立复核与F3有效性、R12本机运行。5轮原计划不保底，预计再3轮核心验收，失败则按阻塞定点返修。C-film、L2及F3实证状态不升级。
+
+## 2026-11-22｜R10–R12 最终技术验收与真实独立性状态
+
+> USER「做」，接续R9已完成但角色十元准度未证实。本轮只完成有界的AG-11 R10区分性对照与R11/R12可执行验收接口；十元仍是具体情境下人的感受基元，非角色客观本体分类。未触碰L2、冻结关系、唯一电影Canvas或C-film官方成绩。
+
+### 继承的前人方法
+- 已有AG-11 A十项相似度＋B跨幕选择/代价/反证＋灵魂抽离、ROLE-CORE-L1–L4人物主核/向往/行为预测分账；本轮新增相同高代价情境下两候选的可证伪不同选择、外部评分与Codex预锁程序，不新造理论。
+
+### R10 执行结果｜ASSISTED_DIAGNOSTIC_DESIGN_PASS
+- 工作容器实测三个人物证据包，role_candidate_gate实际输出`PASS_ROLE_CANDIDATE_CONTRACT`：千代子USER已确认NX但原片完整跨段选择不足，保留`WAIT_EVIDENCE`，不能用已泄题USER答案当独立命中；原创岑未XN_H对ZX_H、已知后验Tom ZN_H对NZ_H，分别给定一个未发生的高代价选择情境。
+- 两个R10对照包经新增`contrast_probe.py`返回2/2 `PASS_DIAGNOSTIC_DESIGN_ONLY`；它只证明在同一情境下两个候选提出了可不同的选择预测，**真实未来行为尚未发生、人物主元正确率未知**。三角色包SHA256=0699a9840bc069fe37fa72e816cb6074fcaa1dd5d0b2cc98a6e1cb287368dbde。新脚本GitHub commit 68226f474bef61cc217cdfb97c48eb123b954e8d。
+
+### R11 执行结果｜SCORER_READY_EXTERNAL_GOLD_BLOCKED
+- 新增`evaluate_holdout.py`统计Top1、Top3、预测覆盖率与弃权率；拒绝自审、已见案例冒充盲测、无预锁、无外部作者标签或隔离回执。当前测试将《千年女优》已知标签伪装HOLDOUT，实际程序退出2、`BLOCKED_VALIDATION`，错误为`KNOWN_ANSWER_CONTAMINATION/NO_EXTERNAL_AUTHOR_LABELS/NO_ISOLATION_RECEIPT`。
+- 已知1角色校准显示旧AI对千代子Z主与USER NX不符=0/1；新候选流程缺独立行为证据选择弃权=0/1，不能称新模型主元预测提升。外部未见至少5影片2题材、≥80%关键分与各FZ独立审核依Q-DYN-002§5.2；人类F3感受谱仍null。
+
+### R12 执行准备｜LAUNCHER_READY_LOCAL_CODEX_NOT_EXECUTED
+- 新增Windows`run_local_codex_holdout.ps1`、`role_output_schema.json`、不含十元答案的`role_source_only_smoke.json`；该smoke仍是已知原创样本，仅供测试Codex命令能跑，绝不算未泄题盲测。脚本调用codex exec在临时source-only目录中作预测，写Git SHA、版本、文件SHA256和退出码。
+- 当前ChatGPT工作容器没有`codex`或`pwsh`可执行文件，也不能操作用户Windows本机；**PowerShell脚本尚未在Windows真运行**。脚本存在与远端回读不等于R12过关。
+
+### 数字、归档、边界
+- 当前容器实际执行旧R4–R8 38测试、R9 12、R10 9、R11 8，**67/67结构单测PASS**，绝不是67项判元正确。R11真正独立标注样本=0，F3实测=0，R12本机Codex运行=0。
+- GitHub新增：contrast_probe.py 68226f474bef61cc217cdfb97c48eb123b954e8d、evaluate_holdout.py 8941110e9ee82177f742bf034505255a76713adb、测试文件5563cb4a4ee62d76f3f86f7b14fc16f2631fee0e与8331c75d6d6e161cb6c91cbfa50006cabd4e1b62、PowerShell启动21fbba1ce770ac883f69e3948fee19169e7e66f0、source-only样例167386c72f50944a156e9ff1e7e1f618fa68bc31。十元链Skill和AG-11方法文件均已原位更新、GitHub回读PASS。
+- 当前回合ZIP`/mnt/data/十元代理_R10-R12区分与验收包_20261122.zip`，20文件/CRC PASS/SHA256 b43e57d3167a31bda5ee20eed842b798c5bed031d4c71603616c473379047d96，内含JSON输入、负控、输出、源码、测试、启动脚本。
+
+### 状态树与终点
+```text
+G4 / Q-DYN-002 → APP-FILM-CHAIN-001 → AG-14 → AG-13 ↔ AG-11
+R4–R6 技术门  PASS_ASSISTED / EMPIRICAL_F3_PENDING
+R9 人物可解释候选 PASS_ASSISTED / LABEL_ACCURACY_UNKNOWN
+R10 区分性预测设计 PASS_ASSISTED / ACTUAL_OUTCOME_UNKNOWN
+R11 正式盲审 BLOCKED_EXTERNAL_LABELS_AND_F3
+R12 本机Codex LAUNCHER_READY / NOT_EXECUTED
+```
+- 本轮STOP：同会话已知角色无法再作为新盲题，下一最小外部依赖为本机Codex跑一次source-only预测并记录SHA；真正独立考核由不同于生成者的评审方提前封存未泄题题源/作者标签/观众F3。不能预估固定轮次必然达标。
