@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {"type":"string"},
+    "characters": {
+      "type":"array",
+      "items": {
+        "type":"object",
+        "additionalProperties":false,
+        "properties": {
+          "character_id":{"type":"string"},
+          "status":{"type":"string","enum":["CANDIDATE_H","WAIT_EVIDENCE"]},
+          "core_candidate":{"type":["string","null"]},
+          "rival_candidate":{"type":["string","null"]},
+          "aspirational_tenyuan":{"type":["string","null"]},
+          "core_reason":{"type":"string"},
+          "rival_reason":{"type":"string"},
+          "negative_case":{"type":"string"},
+          "soul_ablation":{"type":"string"},
+          "evidence_event_ids":{"type":"array","items":{"type":"string"}},
+          "missing_evidence":{"type":"array","items":{"type":"string"}},
+          "diagnostic_question":{"type":"string"}
+        },
+        "required":["character_id","status","core_candidate","rival_candidate","aspirational_tenyuan","core_reason","rival_reason","negative_case","soul_ablation","evidence_event_ids","missing_evidence","diagnostic_question"]
+      }
+    }
+  },
+  "required": ["case_id", "characters"]
+}
