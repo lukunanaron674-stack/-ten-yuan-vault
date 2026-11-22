@@ -9,6 +9,7 @@ import copy
 import json
 import sys
 from pathlib import Path
+from causal_gate import validate_causal_edges
 
 def validate(p):
     e = []
@@ -69,6 +70,7 @@ def validate(p):
             fail("CAUSAL_DANGLING")
         if not x.get("mechanism") or not x.get("evidence_ref"):
             fail("CAUSAL_EVIDENCE")
+    e.extend(validate_causal_edges(p))
     supports = []
     effects = {}
     for x in p.get("relation_edges", []):
@@ -124,9 +126,12 @@ def fixture():
         {"fact_id":"DEATH","character_id":"Julia","stage":"S4","knowledge":"KNOWN","basis":"DIRECT_SOURCE","evidence_ref":"F1-POST"}],
       "disclosure_ledger":[
         {"fact_id":"DEATH","speaker":"Mona","recipient":"Julia","stage":"S2","disclosure":"WITHHELD","evidence_ref":"F1-POST"}],
+      "source_evidence":[
+        {"evidence_id":"W-GJ-01","source_ref":"F1-POST","evidence_span":"Mona reports a feared pursuit to Akram"},
+        {"evidence_id":"W-GJ-02","source_ref":"F1-POST","evidence_span":"Akram reacts to the perceived threat"}],
       "causal_edges":[
-        {"from_event":"E1","to_event":"E2","mechanism":"fear","evidence_ref":"F1-POST"},
-        {"from_event":"E2","to_event":"E3","mechanism":"misreported threat","evidence_ref":"F1-POST"}],
+        {"from_event":"E1","to_event":"E2","relation_type":"CAUSE_CANDIDATE","mechanism":"fear prompts phone report","evidence_ref":"F1-POST","evidence_id":"W-GJ-01","changed_variable":"Akram_information","causal_explanation":"Mona reacts to incident by calling","source_linked_observation":"The report follows the incident in the F1 account","counterfactual":"Without the incident the fear report may not arise","rival_explanation":"Other perceived threats could prompt the call"},
+        {"from_event":"E2","to_event":"E3","relation_type":"CAUSE_CANDIDATE","mechanism":"reported threat prompts reaction","evidence_ref":"F1-POST","evidence_id":"W-GJ-02","changed_variable":"Akram_intervention","causal_explanation":"Akram acts after receiving the report","source_linked_observation":"F1 accounts explicitly connect the call to reaction","counterfactual":"Without the report other intervention might still occur","rival_explanation":"Akram might intervene independently"}],
       "relation_edges":[
         {"source":"Mona","target":"Julia","event_id":"E5","effect":"SUPPORT","changed_variable":"education_access","evidence_ref":"F1-POST"},
         {"source":"Julia","target":"Mona","event_id":"E6","effect":"SUPPORT","changed_variable":"singing","evidence_ref":"F1-POST"},
@@ -155,6 +160,15 @@ def self_test():
     bad = copy.deepcopy(good)
     bad["knowledge_ledger"][1].pop("evidence_ref")
     cases.append(("ungrounded_final_knowledge",bad,"KNOWLEDGE_UNGROUNDED"))
+    bad = copy.deepcopy(good)
+    bad["causal_edges"][0]["mechanism"] = "sequence only; no proven mechanism"
+    cases.append(("sequence_only_false_cause",bad,"TEMPORAL_ONLY_AS_CAUSAL"))
+    bad = copy.deepcopy(good)
+    bad["causal_edges"][0].pop("relation_type")
+    cases.append(("causal_type_missing",bad,"CAUSAL_RELATION_TYPE_MISSING"))
+    bad = copy.deepcopy(good)
+    bad["causal_edges"][0]["evidence_id"] = "UNKNOWN-WITNESS"
+    cases.append(("causal_witness_missing",bad,"CAUSAL_EVIDENCE_NOT_IN_CATALOG"))
     passed = 0
     for name,case,expected in cases:
         observed = validate(case)
