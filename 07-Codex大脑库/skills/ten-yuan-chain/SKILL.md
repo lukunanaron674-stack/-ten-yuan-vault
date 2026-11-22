@@ -220,3 +220,16 @@ temporal_state_audit:
 - GJ-05 未核新片结局时任何角色终幕知识状态都保留`UNVERIFIED`；不从某人一直隐瞒推定另一人始终不知。AG-14按这些失败族记账，F1/F2/F3、L2与C-film仍各自分账。
 
 **执行停止点**：单部影片最多一轮R1状态补齐＋一次R2贴标；若不能找到新来源，输出具体证据缺口后STOP。已知回归通过只记`METHOD_REGRESSION_PASS`；本地Codex和独立holdout另验。
+
+### Python结构校验器｜2026-11-22运行接口
+
+在R1补充并核对后、R2贴十元前，AG-13必须把上面的日志导出为`validation_packet_v1.json`（**顶层字段**，不能只把YAML放在`case_delta`中并跳过校验）。从库根运行：
+```bash
+python 07-Codex大脑库/skills/ten-yuan-chain/scripts/validate_case_packet.py --self-test
+python 07-Codex大脑库/skills/ten-yuan-chain/scripts/validate_case_packet.py path/to/validation_packet_v1.json
+```
+最小顶层键：`case_id, source_scope, evidence_level, stages, events, source_required_event_ids, knowledge_ledger, disclosure_ledger, causal_edges, relation_edges, claims`；`information_sensitive=true`时`knowledge_ledger`非空，`multi_actor_causality=true`时`causal_edges`非空。缺来源则使用`UNKNOWN/UNVERIFIED`，**不得为了通过脚本伪填**。
+
+字段转换：AG-13的`causal_event_edges`→`causal_edges`(from_event/to_event/mechanism/evidence_ref)，`a_to_b_actions + b_to_a_actions + mixed_effect_edges`→`relation_edges`(source/target/event_id/effect/changed_variable/evidence_ref)，知识/披露账原样顶层输出。`events`每项需要`event_id/stage/actor/action/evidence_ref`；`knowledge_ledger`的`KNOWN|NOT_KNOWN`必须有`basis=DIRECT_SOURCE`及来源；`disclosure_ledger`必须有独立`speaker/recipient/disclosure/stage/evidence_ref`。`claims.dual_support={a,b,status:DUAL_SUPPORT_H}`仅在两条独立方向都已核时允许；`claims.mixed_effects=true`要求相同人物对至少一条支持与一条权力/伤害/交易代价。`source_required_event_ids`应来自R1已核来源事件清单，禁止为过检而删已知中间事件。
+
+脚本退出0=`PASS_STRUCTURAL`，退出2=`REPLAN_STRUCTURAL`；缺脚本、未运行或仅跑`--self-test`而未验证真实case包均是`VALIDATOR_NOT_RUN`。脚本只管结构完整性与错误主张，不懂影片真伪，不会发现未读的剧情、无法断定十元、不能代替F2/F3和AG-02门禁。已知例片回归成绩和正式C-film测试严格分离。
