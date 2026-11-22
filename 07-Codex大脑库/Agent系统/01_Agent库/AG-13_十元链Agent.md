@@ -92,3 +92,11 @@ case_delta_extension_v1:
 - **写入可运行包而非只交自然语言**：在当前任务目录暂存`validation_packet_v1.json`，顶层按Skill最新接口提供`case_id/source_scope/evidence_level/stages/events/source_required_event_ids/knowledge_ledger/disclosure_ledger/causal_edges/relation_edges/claims`。此文件只是本轮输入，可留任务目录不写新电影卡。
 - **执行**：`python 07-Codex大脑库/skills/ten-yuan-chain/scripts/validate_case_packet.py --self-test`，然后对真实`validation_packet_v1.json`执行相同脚本（不带--self-test）。输出`validator_status, validator_error_codes, validator_run_command, input_sha_or_ref`。只有第二步退出0才能报告`PASS_STRUCTURAL`。脚本无法运行时明确`VALIDATOR_NOT_RUN`，返回AG-14处理，不虚报通过。
 - **失效隔离**：脚本通过不表示影片事实、十元映射和人类观感已证实；对信息披露无法推知知情的情形坚持UNKNOWN，跨人因果缺事件坚持CAUSAL_GAP。任何缺口只能修事实，禁止改人物L2正本或强锁生克补。
+
+## 2026-11-22｜R4/R5 因果与来源覆盖接口
+
+- 事件边一律先分`TEMPORAL_BEFORE/OVERLAP`与`CAUSE/ENABLE/PRECONDITION/PREVENT_CANDIDATE`；不能把before/after顺序当因果，`causal_gate.py`拦截明确的「sequence only」假因果、关系型别缺失、逆向时窗、无直接证据的中介捷径和未证的`*_VERIFIED`。
+- `validation_packet_v1.json`顶层新增`source_evidence`（每个`evidence_id`对应`source_ref`与`evidence_span`），因果边要给`relation_type, mechanism, causal_explanation, changed_variable, evidence_id, source_linked_observation, counterfactual, rival_explanation`。无证据仅记`TEMPORAL_*`或`UNKNOWN`，不能虚构。
+- AG-13不得自己写一份`source_required_event_ids`就宣称故事齐全；由不同来源审核责任方另存`source_manifest.json`：时间窗、必查事件、出处、审核者、审核状态。自填清单只算覆盖声明，不算全片完整性。
+- 在仓库根依次执行`validate_case_packet.py --self-test`、`validate_case_packet.py <packet>`、`source_gate.py <packet> --manifest <manifest>`，按顺序保存退出码和输出。无manifest或未真正运行则明确`SOURCE_GATE_NOT_RUN`/`VALIDATOR_NOT_RUN`。
+- `PASS_STRUCTURAL`及`PASS_SOURCE_SCOPE`只允许继续AG-02/09/11审查，**不授权**将电影主卡、十元L2机制、C-film或F3感受改为已证实。本机Codex独立实例仍需另测。下一项R6：角色感受候选与剧情事件事实分账验证，详见Skill R6–R8。
