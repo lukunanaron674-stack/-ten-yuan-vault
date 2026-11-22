@@ -308,3 +308,33 @@ STOP：3轮本次桌面审计收口，不无限迭代。NEXT唯一门：本地Co
 | 角色稳定十元 / 五维主次 / 严格L2 / F2 / F3 | null / UNKNOWN / NOT_ESTABLISHED / null / null | 未证实，不升级 |
 
 **STOP / NEXT**：本轮只复测一片，已获得一个有意义的新增软件验证缺口`AGENT-RERUN-AHERO-001-TEMPORAL_CAUSALITY`。下一最小修复任务应使AG-13的`causal_edges`记录直接机制证据、`provenance_scope`与独立反事实；AG-14要求证据审稿，不能只靠字符串非空；再用此负控与未见片源复测。不得将后验补全重新算成首次无提示正确率；不建新Q、独立C-film不升。
+
+## 2026-11-22｜TENYUAN-CORE-READY-R4-R8 轮次规划与R4–R6技术验收收据
+
+> 来源：USER「继续解决直到十元代理能本体模型用，看看几轮次」。本项目现行L2是**感受模型**，并非给人物/物件下客观固定十类的本体分类器。目标拆为五关：R4因果、R5来源覆盖、R6十元感受分层、R7未泄题多片、R8 Codex本地运行。5关是**门槛**而非保证5次模型运行一定成功。
+
+### GitHub前人方法
+- EventFull https://github.com/AlonEirew/EventFull 同时标注事件时序、因果、指代；本项目只继承区分时序和因果的标注方法，不引入其标签作十元正本。
+- MAVEN-ERE https://github.com/THU-KEG/MAVEN-ERE 提供事件共指、时序、因果与子事件的统一标注；本项目以此解释「多主体中介/事件完整性」的校验方向，不宣称接入其已训练模型。
+
+### R4｜因果假阳性修复：DEVELOPMENT_PASS
+- 新增 `07-Codex大脑库/skills/ten-yuan-chain/scripts/causal_gate.py`，源码Git blob `59b0da8ca993baad238010c479731d6aa9dd75f8`（Git commit `fe30cec20bd5de932abce70a996678859a8831c1`），在本地工作容器执行**该同哈希源码**单测16/16通过；题型涵盖显式仅先后伪因果、无关系类型、缺见证、反事实缺失、时窗倒置、环路、绕开中介、伪独立审核。所有校验只是类型/引用/结构验证，不能判断来源事实和因果真值。
+- 已接入`validate_case_packet.py`（commit `b7101b42c88b2a483363772f827cd10f3bda865f`）并扩充原self-test负控；**GitHub新主脚本的完整CLI未在本机Codex或本容器以精确远端字节执行**，所以集成状态`REPO_WIRED_STATIC_READBACK_PASS/LOCAL_CODEX_NOT_TESTED`。
+- 使用候选类型：TEMPORAL_BEFORE|TEMPORAL_OVERLAP（非因果）；CAUSE/ENABLE/PRECONDITION/PREVENT_CANDIDATE（要求独立证据ID、明确变量、反事实/竞争解释）；*_VERIFIED需要另行审核回执，机器人自填不等于确证。
+
+### R5｜来源覆盖外部门：DEVELOPMENT_PASS / INDEPENDENT_REVIEW_PENDING
+- 新增 `scripts/source_gate.py`，最终blob `3cf20497417d4f1382e3593284254225e038347f`，commit `38d518b6ee5e235361c01d65c09b69b0da413e97`。源清单与生成事件包分开，核必查事件、来源覆盖、不能自己审核；即使声明独立，脚本也始终`holdout_eligible=false`，需真正外部审稿。
+- 《A Hero》预锁6事件对照后验14事件manifest：提示`SOURCE_EVENT_COVERAGE_MISSING`与`SOURCE_EVENT_SCOPE_MISMATCH`；补齐后结构PASS。容器来源门回归4/4通过。此manifest的审核级为`ASSISTED_SOURCE_AUDIT`，**不是独立全片结论**。
+
+### R6｜十元感受分层校验：DEVELOPMENT_PASS / F3_PENDING
+- 新增 `scripts/tenyuan_profile_gate.py`，最终blob `f467cf6458fd6f0f228f72941b37d9b4c5f33422`，CLI commit `11acc0b11d2431543df10a09ff9053e7e23b6d3d`；容器10/10反例测试通过：拒绝十元对象本体固定类、十槽缺失/非法分数、AI自称F3真人、五维主题直接推人物元、无作者回执锁人物、电影案例越权宣称L2定律、Z/ZN冻结误用。
+- 同一容器运行的综合测试38/38通过（R4 16、R6 10、三门集成样例12），并用《A Hero》**已知后验F1**的14事件包跑R4/R5/R6模块（均PASS_SCHEMA）。该综合包只具示范/协作性质，不是独立测试；F2原片=null、F3真人=null、人物十元=null、十元感受谱10项全null，不可宣传模型理解准确。
+- 新增可复现远端三门测试文件`scripts/test_agent_gates.py`，blob `1cd27142ca98fb692849cc9d6549c6b51aedf281`（commit `e55673d2c08bf8443f1ec071eced23f0b4d5f84c`），本地同哈希源码12/12；其余26条额外回归目前保存在本次工作容器，未全部推送远端。
+
+### R7/R8剩余未通过
+- R7真正未泄题多题材独立C-film：**NOT_STARTED**；必须按现有Q-DYN-002 FZ1–FZ8和C0–C9官方门槛，提前固定输入/训练集/答案保密，再由不同主体审核。不能把已看旧片《再见朱莉娅》《一个英雄》回归当holdout。
+- R8本地Codex新框加载Skill、`python ... --self-test`、实际case packet + source manifest + feeling contract 三道CLI、stdout/exit/SHA与Linear回执：**LOCAL_NOT_TESTED**。远端已写GitHub但不等于用户PC运行。
+- 结论分层：`DEVELOPMENT_R4_R6=3/3`（校验模块完成开发与容器验证）；`CORE_MODEL_EMPIRICAL_VALIDATION=NOT_ESTABLISHED`（缺真实人评与R7）；`AUTONOMOUS_EXECUTION=NOT_TESTED`（缺R8）。不能宣称5轮已完成，也不能锁十元理论。
+
+### 本轮唯一后续门
+先为R7冻结真正未见的影片来源和题卡、补F2/作者/人类F3，再在R8本机Codex独立跑；若无法取得不泄题的来源或人评，保持`ASSISTED_RESEARCH_ONLY`而不是无限补标签或伪造达标。复测成果只原位写本GOAL-Z及Linear 674-105，不动原问题Canvas与L2。
