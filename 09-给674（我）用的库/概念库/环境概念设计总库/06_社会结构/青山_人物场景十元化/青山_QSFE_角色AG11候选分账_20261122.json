@@ -1,0 +1,460 @@
+{
+  "schema": "QSFE_ROLE_INDEPENDENT_AG11_V1",
+  "date": "2026-11-22",
+  "owner_issue": "674-354",
+  "role_review_authority": "AG11_STAGING",
+  "source_233_237": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md",
+  "source_238_242": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md",
+  "person_registry_sha": "9369a63aa93bfefa069424b525f33a65475eeaa3",
+  "scope": "作者233–242章可定位材料；不是全书角色归元",
+  "all_152_assigned": false,
+  "ten_codes": [
+    "X",
+    "Z",
+    "N",
+    "ZN",
+    "NZ",
+    "XN",
+    "NX",
+    "ZX",
+    "XZ",
+    "X并Z"
+  ],
+  "stable_role_count": 0,
+  "candidate_count": 1,
+  "wait_existing_count": 8,
+  "source_events": [
+    {
+      "id": "E237_INFO",
+      "person": "QSP-0001",
+      "chapter": 237,
+      "stage": "S237",
+      "choice": "通过倾脚头取得线索，命张夏付费并骑马赶往都司府",
+      "cost": "消息交易产生付款（由张夏支付）；陈迹本人实际支出未证",
+      "kind": "OBSERVED_CHOICE",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md"
+    },
+    {
+      "id": "E238_ENTRY",
+      "person": "QSP-0001",
+      "chapter": 238,
+      "stage": "S238",
+      "choice": "在羽林军阻止下闯入都司府",
+      "cost": "实际遭遇武装门禁与齐斟酌结阵的现场阻力；未见受伤",
+      "kind": "OBSERVED_CHOICE",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "E240_CAPTURE",
+      "person": "QSP-0001",
+      "chapter": 240,
+      "stage": "S240",
+      "choice": "追上并擒获引错路的甲士",
+      "cost": "与逃跑甲士对抗、随后甲士试图自刎；自身身体代价未证",
+      "kind": "OBSERVED_CHOICE",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "E241_ALTAR",
+      "person": "QSP-0001",
+      "chapter": 241,
+      "stage": "S241",
+      "choice": "提出开坛",
+      "cost": "未见执行或实际代价",
+      "kind": "SOURCE_REPORTED",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "E242_ESCAPE_PLAN",
+      "person": "QSP-0001",
+      "chapter": 242,
+      "stage": "S242",
+      "choice": "计划带张铮、张夏、小满逃离",
+      "cost": "仅计划，尚未实际支付代价",
+      "kind": "SOURCE_REPORTED",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "E233_LI_EXIT",
+      "person": "QSP-0005",
+      "chapter": 233,
+      "stage": "S233",
+      "choice": "建议太子出城",
+      "cost": "方案被太子拒绝，不能证明李玄人格核心",
+      "kind": "SOURCE_REPORTED",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md"
+    },
+    {
+      "id": "E239_LI_GUIDE",
+      "person": "QSP-0005",
+      "chapter": 239,
+      "stage": "S239",
+      "choice": "命边军甲士带路",
+      "cost": "带路出现错街后果，但本人是否预见未证",
+      "kind": "OBSERVED_CHOICE",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "E241_LI_TUNNEL",
+      "person": "QSP-0005",
+      "chapter": 241,
+      "stage": "S241",
+      "choice": "建议太子从密道撤离",
+      "cost": "太子拒绝；出发与否不依李玄实际决定",
+      "kind": "SOURCE_REPORTED",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "E233_PRINCE_STAY",
+      "person": "QSP-0013",
+      "chapter": 233,
+      "stage": "S233",
+      "choice": "拒绝李玄出城提议",
+      "cost": "保留现场不确定性，实际损失未知",
+      "kind": "OBSERVED_CHOICE",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md"
+    },
+    {
+      "id": "E240_PRINCE_PROPOSE",
+      "person": "QSP-0013",
+      "chapter": 240,
+      "stage": "S240",
+      "choice": "提议回京奏请陈迹右司卫",
+      "cost": "陈礼钦反对，任命未发生",
+      "kind": "SOURCE_REPORTED",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "E241_PRINCE_STAY",
+      "person": "QSP-0013",
+      "chapter": 241,
+      "stage": "S241",
+      "choice": "拒绝李玄密道撤离方案",
+      "cost": "继续留在当前风险中，但后果待查",
+      "kind": "OBSERVED_CHOICE",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "E241_PRINCE_TRANSFER",
+      "person": "QSP-0013",
+      "chapter": 241,
+      "stage": "S241",
+      "choice": "同意将被俘甲士交边军",
+      "cost": "实际移交完成未证；控制权结果未知",
+      "kind": "OBSERVED_CHOICE",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "E235_SHOP_DISCOUNT",
+      "person": "QSP-0150",
+      "chapter": 235,
+      "stage": "S235",
+      "choice": "向客人提供房费优惠并安排引路",
+      "cost": "优惠意味着名义收入减少；实收差额未证",
+      "kind": "OBSERVED_CHOICE",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md"
+    },
+    {
+      "id": "E237_SHOP_TRADE",
+      "person": "QSP-0150",
+      "chapter": 237,
+      "stage": "S237",
+      "choice": "主持以酒坛区分的信息交易规矩",
+      "cost": "未有个人付出或困境代价记录",
+      "kind": "OBSERVED_CHOICE",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md"
+    },
+    {
+      "id": "E241_SHOP_SEND",
+      "person": "QSP-0150",
+      "chapter": 241,
+      "stage": "S241",
+      "choice": "命小六分别送走地字丙庚客人",
+      "cost": "客人离开与是否保护未知；掌柜后果未知",
+      "kind": "SOURCE_REPORTED",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "E242_SHOP_PERMIT",
+      "person": "QSP-0150",
+      "chapter": 242,
+      "stage": "S242",
+      "choice": "命小六询问陈迹路引",
+      "cost": "查证结果未知；客栈风险未证",
+      "kind": "SOURCE_REPORTED",
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    }
+  ],
+  "roles": [
+    {
+      "person_id": "QSP-0001",
+      "name": "陈迹",
+      "context": "《青山》作者233–242章抽样",
+      "AG11_status": "CANDIDATE_H",
+      "main_candidate": "ZX?",
+      "secondary_candidate": "XN?",
+      "local_behavior_hypotheses": [
+        "ZX?独立面对限制",
+        "XN?调查安排"
+      ],
+      "reason_for_abstention": null,
+      "negative_test": "若有可靠跨段证据显示陈迹在无权威冲突时也坚持同一核心欲望，才能区分ZX和XN；删掉ZX后调查动机是否仍成立？",
+      "evidence_ids": [
+        "E237_INFO",
+        "E238_ENTRY",
+        "E240_CAPTURE"
+      ],
+      "source_quality": "R47/R49历史转载摘录；原著完整正文未本轮核证",
+      "A_similarity": null,
+      "B_counterexamples": [
+        "E237_INFO的付款/信息处理可能主要由任务压力与调查流程驱动，不等于一贯反抗权威",
+        "E242_ESCAPE_PLAN尚未实际执行，不能据此说明角色的长期本核"
+      ],
+      "stable_role_lock": false,
+      "author_confirmed": false,
+      "human_F3": null,
+      "scene_tenyuan_not_inherited": true,
+      "cost_status": "武装结阵确实发生，付款由张夏承担，其他代价风险未核；仅达到结构候选门槛，不构成长期定核证据"
+    },
+    {
+      "person_id": "QSP-0005",
+      "name": "李玄",
+      "context": "《青山》作者233–242章抽样",
+      "AG11_status": "WAIT_EVIDENCE",
+      "main_candidate": null,
+      "secondary_candidate": null,
+      "local_behavior_hypotheses": [
+        "XN?组织撤离方案",
+        "XZ?对风险的担心"
+      ],
+      "reason_for_abstention": "三种行动跨章但多为未被采纳的命令/提议；角色是否承担明确代价与长期内心选择未知。XN与XZ皆能解释撤离提案，缺区分内心需求的证据",
+      "negative_test": "若风险消除仍坚持精细组织方案，XN研究候选更有区分力；若仅随危机显现，XZ候选更可疑",
+      "evidence_ids": [
+        "E233_LI_EXIT",
+        "E239_LI_GUIDE",
+        "E241_LI_TUNNEL"
+      ],
+      "source_quality": "R47/R49历史转载摘录；原著完整正文未本轮核证",
+      "A_similarity": null,
+      "B_counterexamples": [],
+      "stable_role_lock": false,
+      "author_confirmed": false,
+      "human_F3": null,
+      "scene_tenyuan_not_inherited": true
+    },
+    {
+      "person_id": "QSP-0006",
+      "name": "齐斟酌",
+      "context": "《青山》作者233–242章抽样",
+      "AG11_status": "WAIT_EVIDENCE",
+      "main_candidate": null,
+      "secondary_candidate": null,
+      "local_behavior_hypotheses": [
+        "XN?现场队形控制的功能层，不是本核"
+      ],
+      "reason_for_abstention": "本样本仅一段率人结阵，缺个人自主抉择和跨章代价",
+      "negative_test": "单独观察离开部队命令后是否作相同选择",
+      "evidence_ids": [
+        "R49-238-羽林军结阵"
+      ],
+      "source_quality": "R47/R49历史转载摘录；原著完整正文未本轮核证",
+      "A_similarity": null,
+      "B_counterexamples": [],
+      "stable_role_lock": false,
+      "author_confirmed": false,
+      "human_F3": null,
+      "scene_tenyuan_not_inherited": true
+    },
+    {
+      "person_id": "QSP-0007",
+      "name": "陈礼钦",
+      "context": "《青山》作者233–242章抽样",
+      "AG11_status": "WAIT_EVIDENCE",
+      "main_candidate": null,
+      "secondary_candidate": null,
+      "local_behavior_hypotheses": [
+        "XN?阻止风险行动的功能",
+        "XZ?警惕"
+      ],
+      "reason_for_abstention": "多项反对或警告可以来自职责、利益或惧怕；缺少他本人作出有代价选择时的内心目标，XN与XZ无法判别",
+      "negative_test": "对同样风险但不同个人利益的提议，是否仍坚持反对",
+      "evidence_ids": [
+        "R47-233-尝试交涉",
+        "R49-239-警告",
+        "R49-240-反对任职"
+      ],
+      "source_quality": "R47/R49历史转载摘录；原著完整正文未本轮核证",
+      "A_similarity": null,
+      "B_counterexamples": [],
+      "stable_role_lock": false,
+      "author_confirmed": false,
+      "human_F3": null,
+      "scene_tenyuan_not_inherited": true
+    },
+    {
+      "person_id": "QSP-0013",
+      "name": "太子（姓名未核）",
+      "context": "《青山》作者233–242章抽样",
+      "AG11_status": "WAIT_EVIDENCE",
+      "main_candidate": null,
+      "secondary_candidate": null,
+      "local_behavior_hypotheses": [
+        "Z?坚持方案的阶段功能",
+        "ZN?顾及他人独立性的竞争假设"
+      ],
+      "reason_for_abstention": "跨章有数次决定，但提议任命、拒绝逃离与移交俘虏不能证明Z或ZN内在感受；留在危险处的已付个人代价未知，Z/ZN语义冻结关系不能反推主元",
+      "negative_test": "在权威被撤销或下属立场相反时是否仍认可他人的独立选择",
+      "evidence_ids": [
+        "E233_PRINCE_STAY",
+        "E240_PRINCE_PROPOSE",
+        "E241_PRINCE_STAY",
+        "E241_PRINCE_TRANSFER"
+      ],
+      "source_quality": "R47/R49历史转载摘录；原著完整正文未本轮核证",
+      "A_similarity": null,
+      "B_counterexamples": [],
+      "stable_role_lock": false,
+      "author_confirmed": false,
+      "human_F3": null,
+      "scene_tenyuan_not_inherited": true
+    },
+    {
+      "person_id": "QSP-0021",
+      "name": "小五",
+      "context": "《青山》作者233–242章抽样",
+      "AG11_status": "WAIT_EVIDENCE",
+      "main_candidate": null,
+      "secondary_candidate": null,
+      "local_behavior_hypotheses": [
+        "监视/带路的行为角色，不由职务定元"
+      ],
+      "reason_for_abstention": "主要是履行监视/带路行动；动机、服从成本、个人立场不足",
+      "negative_test": "脱离掌柜指令后是否主动延续同一行为",
+      "evidence_ids": [
+        "R47-236-小五监视陈迹",
+        "R49-242-小五带人到马厩"
+      ],
+      "source_quality": "R47/R49历史转载摘录；原著完整正文未本轮核证",
+      "A_similarity": null,
+      "B_counterexamples": [],
+      "stable_role_lock": false,
+      "author_confirmed": false,
+      "human_F3": null,
+      "scene_tenyuan_not_inherited": true
+    },
+    {
+      "person_id": "QSP-0064",
+      "name": "乌云",
+      "context": "《青山》作者233–242章抽样",
+      "AG11_status": "WAIT_EVIDENCE",
+      "main_candidate": null,
+      "secondary_candidate": null,
+      "local_behavior_hypotheses": [
+        "XZ?阶段危险警报（基于乌云的证词），不代表灵魂"
+      ],
+      "reason_for_abstention": "仅当次称闻声与血腥；传闻不等于真实伤亡，更不证明人物稳定主元",
+      "negative_test": "换无危险情境看其是否持续呈同种感受和选择",
+      "evidence_ids": [
+        "R49-242-乌云证词"
+      ],
+      "source_quality": "R47/R49历史转载摘录；原著完整正文未本轮核证",
+      "A_similarity": null,
+      "B_counterexamples": [],
+      "stable_role_lock": false,
+      "author_confirmed": false,
+      "human_F3": null,
+      "scene_tenyuan_not_inherited": true
+    },
+    {
+      "person_id": "QSP-0150",
+      "name": "龙门客栈掌柜",
+      "context": "《青山》作者233–242章抽样",
+      "AG11_status": "WAIT_EVIDENCE",
+      "main_candidate": null,
+      "secondary_candidate": null,
+      "local_behavior_hypotheses": [
+        "XN?信息交易/管理流程",
+        "X并Z?控制或排斥的可能",
+        "NZ?保护目的需另证"
+      ],
+      "reason_for_abstention": "行动跨章但真实目的、个人牺牲与客人去向未知；提供折扣/管理交易不能直接判XN，分送住客未证保护NZ",
+      "negative_test": "如果客人发生危险且掌柜不知情，保护假说应显著下降；若有证据证明真实送达且付出风险，再重新评NZ",
+      "evidence_ids": [
+        "E235_SHOP_DISCOUNT",
+        "E237_SHOP_TRADE",
+        "E241_SHOP_SEND",
+        "E242_SHOP_PERMIT"
+      ],
+      "source_quality": "R47/R49历史转载摘录；原著完整正文未本轮核证",
+      "A_similarity": null,
+      "B_counterexamples": [],
+      "stable_role_lock": false,
+      "author_confirmed": false,
+      "human_F3": null,
+      "scene_tenyuan_not_inherited": true
+    },
+    {
+      "person_id": "QSP-0151",
+      "name": "小六",
+      "context": "《青山》作者233–242章抽样",
+      "AG11_status": "WAIT_EVIDENCE",
+      "main_candidate": null,
+      "secondary_candidate": null,
+      "local_behavior_hypotheses": [
+        "按客栈规矩行动，功能层非十元主核"
+      ],
+      "reason_for_abstention": "分送客人执行结果未知；职务服从与人格核心不能等同",
+      "negative_test": "小六是否会违背东家/掌柜要求保护客人",
+      "evidence_ids": [
+        "R47-235-小六引客",
+        "R47-236-阻坐东家专桌",
+        "R49-241-被命分送客人"
+      ],
+      "source_quality": "R47/R49历史转载摘录；原著完整正文未本轮核证",
+      "A_similarity": null,
+      "B_counterexamples": [],
+      "stable_role_lock": false,
+      "author_confirmed": false,
+      "human_F3": null,
+      "scene_tenyuan_not_inherited": true
+    }
+  ],
+  "unresolved": [
+    {
+      "temporary_reference": "UNRESOLVED_R49_OLD_WU",
+      "name": "老吴（边军偏将）",
+      "chapter": 238,
+      "facts": [
+        "允许陈迹入内",
+        "阻拦追来的羽林军"
+      ],
+      "main_candidate": null,
+      "secondary_candidate": null,
+      "status": "WAIT_ID_AND_MOTIVE",
+      "why": "旧名同体未查实，不新建QSP，行为看似对立但原因不明"
+    },
+    {
+      "temporary_reference": "UNRESOLVED_R49_GUIDE_SOLDIER",
+      "name": "带路甲士",
+      "chapters": [
+        239,
+        240
+      ],
+      "facts": [
+        "引错路后失踪",
+        "被擒后企图自刎"
+      ],
+      "main_candidate": null,
+      "secondary_candidate": null,
+      "status": "WAIT_ID_AND_MOTIVE",
+      "why": "景朝细作身份只属指控，自刎企图不等于人物本核；不能误合旧ID"
+    }
+  ],
+  "limitations": [
+    "F3=null",
+    "角色十元是研究中的跨情境感受/选择方向而非客观类别",
+    "百分比全部null，未校准不凑十项",
+    "Z/ZN历史生克补关系冻结，未用于反推人物",
+    "R49原文网页受限，本文使用既有GitHub事件证据"
+  ]
+}
