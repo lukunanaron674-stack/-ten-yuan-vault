@@ -1,0 +1,162 @@
+{
+  "schema": "QSFE_EV01_10_STRUCTURAL_TEST_RECEIPT_V1",
+  "date": "2026-11-22",
+  "issue": "674-354",
+  "artifact_git_blobs": {
+    "portfolio": "bdb3203d51f24464798e99b259af5c60fe7c9425",
+    "AG13_packet": "37a030144ce2d33aac30d30a65c7bc61e6c8e3ea"
+  },
+  "scope": {
+    "case_count": 10,
+    "event_units": 34,
+    "story_relation_effects": 30,
+    "causal_candidate_edges": 5,
+    "temporal_only_edges": 16,
+    "reader_state_hypotheses": 16
+  },
+  "test_method": "V8 custom deterministic input and negative mutation audit from current conversation; not official AG13 Python script",
+  "structural_baseline_pass": true,
+  "negative_tests": 16,
+  "negative_pass": 16,
+  "negative_detail": [
+    {
+      "name": "MISSING_MEDIATOR",
+      "expected": "DANGLING_CAUSAL",
+      "got": [
+        "DANGLING_CAUSAL",
+        "REQUIRED_MISSING",
+        "CAUSAL_REVERSED"
+      ],
+      "passed": true
+    },
+    {
+      "name": "WAR_WRONG_PLACE",
+      "expected": "WAR_FAKE_PLACE",
+      "got": [
+        "WAR_FAKE_PLACE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "CAPTURE_WRONG_PLACE",
+      "expected": "CAPTURE_FAKE_PLACE",
+      "got": [
+        "CAPTURE_FAKE_PLACE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "FALSE_L2",
+      "expected": "ILLEGAL_L2_RELATION",
+      "got": [
+        "ILLEGAL_L2_RELATION"
+      ],
+      "passed": true
+    },
+    {
+      "name": "FAKE_F3",
+      "expected": "FAKE_F3",
+      "got": [
+        "FAKE_F3"
+      ],
+      "passed": true
+    },
+    {
+      "name": "FUTURE_KNOWLEDGE",
+      "expected": "FUTURE_INFO_LEAK",
+      "got": [
+        "FUTURE_INFO_LEAK"
+      ],
+      "passed": true
+    },
+    {
+      "name": "ERASE_DANGER_PRIOR",
+      "expected": "PRIOR_RISK_ERASURE",
+      "got": [
+        "PRIOR_RISK_ERASURE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "OMIT_ASSASSIN_MEDIATOR",
+      "expected": "MASKED_MEDIATOR_OMISSION",
+      "got": [
+        "MASKED_MEDIATOR_OMISSION"
+      ],
+      "passed": true
+    },
+    {
+      "name": "OMIT_MEAL_ACTOR",
+      "expected": "MEAL_ACTOR_OMISSION",
+      "got": [
+        "MEAL_ACTOR_OMISSION"
+      ],
+      "passed": true
+    },
+    {
+      "name": "PROPOSAL_AS_FACT",
+      "expected": "PROPOSAL_PROMOTED",
+      "got": [
+        "PROPOSAL_PROMOTED"
+      ],
+      "passed": true
+    },
+    {
+      "name": "INFERENCE_AS_FACT",
+      "expected": "INFERENCE_PROMOTED",
+      "got": [
+        "INFERENCE_PROMOTED"
+      ],
+      "passed": true
+    },
+    {
+      "name": "ATTEMPT_AS_FACT",
+      "expected": "ATTEMPT_PROMOTED",
+      "got": [
+        "ATTEMPT_PROMOTED"
+      ],
+      "passed": true
+    },
+    {
+      "name": "REVERSE_CAUSAL",
+      "expected": "CAUSAL_REVERSED",
+      "got": [
+        "CAUSAL_REVERSED"
+      ],
+      "passed": true
+    },
+    {
+      "name": "NO_SOURCE",
+      "expected": "EVENT_SOURCE",
+      "got": [
+        "EVENT_SOURCE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "DUPLICATE_EVENT",
+      "expected": "DUP_EVENT",
+      "got": [
+        "DUP_EVENT"
+      ],
+      "passed": true
+    },
+    {
+      "name": "FAKE_REQUIRED",
+      "expected": "REQUIRED_MISSING",
+      "got": [
+        "REQUIRED_MISSING"
+      ],
+      "passed": true
+    }
+  ],
+  "official_AG13_validator": "VALIDATOR_NOT_RUN",
+  "official_source_gate": "VALIDATOR_NOT_RUN",
+  "independent_source_audit": false,
+  "independent_model_executions": 0,
+  "original_author_fulltext_pass_new": 0,
+  "human_F3": 0,
+  "strict_L2_approved": 0,
+  "person_P_changed": false,
+  "world_W_changed": false
+}
