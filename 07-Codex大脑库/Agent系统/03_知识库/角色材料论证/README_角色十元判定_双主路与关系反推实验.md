@@ -90,3 +90,24 @@ layer_packet: {surface: [], self_state: [], audience_prediction: [], audience_hu
 soul_ablation: {candidate_removed: null, what_collapses: [], what_still_works: []}
 character_lock: STAGING
 ~~~
+
+## 2026-11-22｜R9：反空判的主候选＋最近邻竞争协议
+
+> 来自《不留痕迹》AG-11返回人物主次长期null、缺可用候选的问题。适用现行L2感受模型，人物元是**持续情境下的感觉与行为方向的研究候选**，不把角色客观归为固定物类，不自动修正L2或作者USER判读。
+
+### A/B角色审稿必须交付（即使暂时WAIT）
+- 在至少3条可核选择、覆盖至少2个阶段、每条有具体代价、对象、来源的前提下，AG-11优先提交`CANDIDATE_H`（Top1候选、最近竞争者、每人不少于1个反证、删掉候选的灵魂抽离预测）；允许十项独立相似度为null或少量H，不得靠伪造0–100数字增加确定性。这个门槛只是**提交候选的材料门槛**，不代表稳定主元的证明。
+- 如果满足以上材料但仍给`WAIT_EVIDENCE`/主元null，必须写`why_candidates_indistinguishable`：明确是哪对候选的判别证据不足、哪一个关键主动选择能够区分它们；否则记录`UNEXPLAINED_NULL_WITH_SUFFICIENT_ACTIONS`。材料不足3件或跨阶段不足2段时，可以保留WAIT，但`missing_evidence`必须具体。
+- 强制分仓：`intrinsic_core_candidate`、`aspiration`、`loved_other`、`on_screen_behavior`、`theme_pressure`、`audience_predicted_feeling`、`ending_self_recognition`。尤其别把角色向往某种方向（《千年女优》向往ZX）混成稳定本核NX，也不能由'本体=ZN+X'直接反推谁是ZN。
+- AG-13给行为/剧情关系证据，不拥有AG-11的稳定人物元锁定权。AG-09可提示竞争证据，不能改AG-11主候选。AUTHOR_INPUT才可锁人物结论，人类F3评的是观众感受，不是人物本体真值。
+
+### 可执行交接
+- 从本目录A/B论证导出`role_candidate_packet.json`，顶层`events`/`characters`；每个角色条目：`character_id/context_id/status/evidence[]`，每条证据`event_id/choice/cost/source_ref/evidence_kind`。`CANDIDATE_H`另含`core_candidate/rival_candidate/core_reason/rival_reason/negative_case/soul_ablation/core_evidence_ids/layer_origin`。
+- 从仓库根运行：`python 07-Codex大脑库/skills/ten-yuan-chain/scripts/role_candidate_gate.py role_candidate_packet.json`。`PASS_ROLE_CANDIDATE_CONTRACT`只表示结构证据齐全且有竞争解释，**不会替模型自动判断哪个十元正确**。该校验器附有`test_role_candidate_gate.py`的12条可复现结构测试。
+
+### 已知案例回归（不得冒充未见答案）
+- 《千年女优》USER已给：千代子NX稳定主核、ZX向往、画家ZN、电影时间克因果＋命运架桥。该例必须在“主核/向往/他者/主题”四栏均不偷换；**不能照抄USER答案计R7盲测**。
+- 《不留痕迹》Tom已有E04社交、E07救父、E09自主留下、E10分居仍保联系：示范`ZN_H`（承认自己与父亲不同生活均可成立）**对比**`NZ_H`（守住父女回返路径）；主动留下不是自动ZX，维系纽带也不足单凭一次行为定NZ。`candidate_primary=ZN_H`只是本轮AI-H后验解释，不是作者认可或L2验证。Will仍可WAIT并说明需要区分XZ/XN等的更多主动选择。
+- 若作者认为Tom是NZ而非ZN，优先验证‘即使联系断开也允许两者自立’和‘极力守住特定关系的可修复路径’哪种更不可替代，记录反例后再判断，不用投票平均或重定义十元。
+
+**停止点**：同一案例仅一次A/B候选＋一次反审；R9通过条件是能输出非空可解释候选而不越权锁人物。R10必须在**不同已确证但尚未揭标签的案例**反测区分力；R11需独立审稿，R12验证真实本地Codex运行。
