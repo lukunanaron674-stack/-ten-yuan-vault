@@ -12,7 +12,7 @@
   },
   "character": {
     "id": "QSP-0001",
-    "status": "CANDIDATE_H_TOP1_REOPENED",
+    "status": "WAIT_EVIDENCE_TOP1_REOPENED",
     "historical_anchor": "ZX?",
     "historical_rival": "XN?",
     "new_competitors": [
@@ -91,14 +91,15 @@
         "diagnosis": "体现亲疏有别的保护和审慎自保，不能简单认定普遍保护他人或ZX绝不退让"
       }
     ],
-    "corrected_statement": "ZX remains an exploratory anchor but is NOT a confirmed or clearly ranked main; AG11 needs an actual costly comparison across social situations.",
+    "corrected_statement": "The previous ZX-first argument was an exposed, historically preserved hypothesis. New 236/237/241/242 evidence makes ZX vs XN vs local ZN/NZ meaningfully indistinguishable. AG11 status now WAIT_EVIDENCE with explicit discriminating missing evidence; no core or top1 may be treated as locked.",
     "ablation": {
       "ZX": "Removing resistance-to-power still leaves investigation and protecting intimates",
       "XN": "Removing procedural planning still leaves urgent care and refusal to compromise",
       "ZN": "Respecting Xiao Man choice was promised, not yet paid in action",
       "NZ": "Favors three intimates during an escape, not general care for all",
       "status": "INDETERMINATE"
-    }
+    },
+    "source_question": "Distinguish repeated voluntary cost toward distant others from task strategy, affinity boundaries and choosing own route; source currently lacks decisive paid consequences."
   },
   "scene": {
     "place_id": "QSPLACE-CAND-0003",
@@ -127,7 +128,7 @@
           "XN?规则可操作的局部感"
         ],
         "prior_summary_error": "旧分账将消息交易表述为中性不排序，漏掉237已见身体惩戒",
-        "adjudication": "REOPEN_SCENE_RANKING_NO_HUMAN_F3"
+        "adjudication": "REOPEN_RANKING_NEW_FINGER_BREAKING_237"
       },
       {
         "id": "GS-03B",
@@ -151,7 +152,7 @@
           "NZ?保护说法缺正面证据"
         ],
         "prior_summary_error": "先前R04把保护/隔离看作对称读法；正文显示241时已有强负面线索",
-        "adjudication": "WITHDRAW_NZ_PROTECTIVE_LEAD_CONDITIONALLY_PRIORITIZE_XZ_X并Z_H"
+        "adjudication": "R241_KNOWN_PREDATORY_CUE_XZ_X并Z_H_PRIORITY_NOT_HUMAN_VERIFIED"
       },
       {
         "id": "GS-03C",
@@ -175,7 +176,7 @@
           "NZ?仅在后续真实救助信息改变后才研究"
         ],
         "prior_summary_error": "旧版本没有把241的肥羊线索作为读者已知前提",
-        "adjudication": "ESCALATE_RISK_CUE_NOT_CONFIRM_DEATH"
+        "adjudication": "R242_CUE_OVER_R241_PRIOR_NOT_DEATH"
       }
     ],
     "reader_human_F3": null,
