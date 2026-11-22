@@ -111,3 +111,15 @@ character_lock: STAGING
 - 若作者认为Tom是NZ而非ZN，优先验证‘即使联系断开也允许两者自立’和‘极力守住特定关系的可修复路径’哪种更不可替代，记录反例后再判断，不用投票平均或重定义十元。
 
 **停止点**：同一案例仅一次A/B候选＋一次反审；R9通过条件是能输出非空可解释候选而不越权锁人物。R10必须在**不同已确证但尚未揭标签的案例**反测区分力；R11需独立审稿，R12验证真实本地Codex运行。
+
+## 2026-11-22｜R10区分性预测实测与R11独立评分交接
+
+> 继R9“空值必须有理由”之后，当前真正剩下的是人物候选**区分力**与作者独立判断，不再用正确格式冒充正确人物十元。遵从L2感受模型，不按客观本体归类人物。
+
+- R10对所有争议性Top1/最近邻，要求A/B证据外额外给`shared_visible_action`、`diagnostic_situation`、候选一/二分别预期选择、被改变变量、代价与反例，后续真实结果尚未知时严格保留`UNVERIFIED`。以`contrast_probe.py`结构验收；同一情境预测结果相同则判`NO_DIAGNOSTIC_DIVERGENCE`，不能因为解释词各异就判断有区别力。
+- 2026-11-22容器比较三角色：①千代子【USER已知NX/向往ZX】但独立跨幕来源不足，研究模式`WAIT_EVIDENCE`不冒充盲命中；②原创岑未`XN_H` vs `ZX_H`，设计失败安全检验情境的分歧，`ORIGINAL_DESIGN`；③《不留痕迹》Tom`ZN_H` vs `NZ_H`，用独立生活/特定关系连接的代价设计分歧，`ASSISTED_FILM_ANALYSIS`。三角色AG-11材料包结构0错，两份区分性probe结构0错。**2/2有判别设计非真实行为预测准确率**。
+- R11使用`evaluate_holdout.py`将预锁JSON与外部USER/作者标准JSON分开；`CALIBRATION`与`HOLDOUT`强制分账。任何label泄露、自审、无外部回执、无隔离、旧样本重复训练必须阻断。已知《千年女优》旧Z主对USER NX的历史错判，只用来展示负控；新方法由于缺足够原始场景而弃权不能算预测命中。
+- R12 Windows Codex本机运行入口、输出schema及source-only smoke案例均在`07-Codex大脑库/skills/ten-yuan-chain/scripts/`；独立预测必须把真正未见数据与答案分离，不能从仓库旧电影卡查答案，也不能称脚本执行成功就证明能判元。
+- 最低科研状态`R10=ASSISTED_DIAGNOSTIC_DESIGN_PASS`，`R11=EXTERNAL_GOLD_MISSING`，`R12=LOCAL_CODEX_NOT_EXECUTED`；外部未见≥5片、≥2题材及F3仍要按Q-DYN-002/C-film正本验收。
+
+**停止条件**：本轮两份候选对照已生成并预注册理论上的分歧，现没有真实未来选择可对照，继续同一案例只能重复训练、没有新信息增量；立即停止并等待独立材料或独立Codex运行，不制造假命中。
