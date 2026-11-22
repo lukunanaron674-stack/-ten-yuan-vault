@@ -24,6 +24,23 @@ export function validateWindowedEvidence(c, manifest, add) {
   if (manifest.review_mode === "INDEPENDENT" &&
       (!manifest.review_receipt_ref || manifest.reviewer_id === c.generator_id)) add("SOURCE_SELF_REVIEW");
   const events = Array.isArray(c.events) ? c.events : [];
+  // A complete source coverage ledger cannot be inferred from a possibly
+  // self-edited manifest. This extra gate only protects record chronology.
+  let previousPosition = null;
+  for (const e of events) {
+    if (!Number.isInteger(e.chapter) || !Number.isInteger(e.unit) || e.unit < 0) {
+      add("EVENT_POSITION_MISSING");
+      continue;
+    }
+    const position=e.chapter*1000000 + e.unit;
+    if (previousPosition!==null && position<=previousPosition) add("EVENT_SEQUENCE_NONMONOTONIC");
+    previousPosition=position;
+  }
+  if (manifest.review_mode==="INDEPENDENT") {
+    // There is no external attestation tool here. A string receipt supplied
+    // in JSON must NEVER be accepted as proof of an independent reviewer.
+    add("INDEPENDENCE_NOT_EXTERNALLY_VERIFIED");
+  }
   const expected = new Map();
   const allowedRoles = new Set(["TRIGGER","MEDIATOR","RESPONSE","OUTCOME","CONTEXT"]);
   for (const req of manifest.required_event_units) {
@@ -139,7 +156,17 @@ export function runSuite(suite) {
     let node=copy;
     for(const key of path.slice(0,-1))node=node[key];
     node[path[path.length-1]]=target.value;
-    const errors=validateCase(copy,suite.reference_registry||{},suite.source_manifests||{});
+    const manifests=JSON.parse(JSON.stringify(suite.source_manifests||{}));
+    if(m.manifest_change){
+      const mdata=manifests[m.from];
+      if(!mdata){tests.push({id:m.id,kind:"negative",pass:false,errors:["MISSING_BASE_MANIFEST"]});continue;}
+      const keys=m.manifest_change.path||[];
+      let entry=mdata;
+      for(const key of keys.slice(0,-1)) entry=entry?.[key];
+      if(!entry){tests.push({id:m.id,kind:"negative",pass:false,errors:["INVALID_MANIFEST_MUTATION"]});continue;}
+      entry[keys[keys.length-1]]=m.manifest_change.value;
+    }
+    const errors=validateCase(copy,suite.reference_registry||{},manifests);
     tests.push({id:m.id,kind:"negative",pass:errors.includes(m.expect),expected:m.expect,errors});
   }
   return {test_count:tests.length,pass:tests.filter(x=>x.pass).length,failed:tests.filter(x=>!x.pass).map(x=>x.id),tests,
