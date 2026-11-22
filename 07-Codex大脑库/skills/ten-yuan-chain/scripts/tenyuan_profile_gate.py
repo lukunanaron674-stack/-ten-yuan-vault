@@ -52,3 +52,21 @@ def validate_feeling_contract(packet):
         if (x.get('source_tenyuan') in {'Z','ZN'} or x.get('target_tenyuan') in {'Z','ZN'}) and x.get('status')!='FROZEN_H':
             err('Z_ZN_RELATION_FREEZE')
     return sorted(set(issues))
+
+
+def main():
+    import argparse
+    import json
+    from pathlib import Path
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('packet',type=Path)
+    args=parser.parse_args()
+    case=json.loads(args.packet.read_text(encoding='utf-8'))
+    issues=validate_feeling_contract(case)
+    print(json.dumps({'status':'PASS_FEELING_CONTRACT' if not issues else 'FAIL_FEELING_CONTRACT',
+                      'validation_scope':'SCHEMA_ONLY_NOT_F3', 'errors':issues},ensure_ascii=False,indent=2))
+    return 0 if not issues else 2
+
+
+if __name__=='__main__':
+    raise SystemExit(main())
