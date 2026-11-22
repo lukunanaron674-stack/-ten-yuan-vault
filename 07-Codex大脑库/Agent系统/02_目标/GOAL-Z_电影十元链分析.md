@@ -182,3 +182,34 @@ F1：Focus Features 2025-03-28创作者访谈 https://www.focusfeatures.com/arti
 理论分层与已知错误回归PASS（仅文档复现）；新片剧情证据PARTIAL；人物元/严格关系/结局UNKNOWN；独立Codex本机运行NOT_EXECUTED；正式未泄题盲测NOT_STARTED；真人F3及逐镜F2未核。重点防错族：ASPIRATIONAL_TENYUAN_MIXUP、THEME_ROLE_LAYER_CONTAMINATION、SEQUENCE_AS_RELATION、INFORMATION_BRIDGE_AS_SUPPLEMENT。没有可报告的独立准确率，C-film未升。仅在本GOAL-Z及Linear 674-105保存运行收据，不改L2、原影片主卡与Canvas，不替用户判影片已看。
 
 STOP：3轮本次桌面审计收口，不无限迭代。NEXT唯一门：本地Codex新窗口实读L0/L1/L2、输出带SHA的BOOT_AUDIT；随后选择真正未泄题片源锁R1/R2并待USER/原片独立判读。
+
+
+## 2026-11-22｜AGENT-EVAL-GJ-001 预测预锁
+
+**试验定位**：这是ChatGPT直接模拟AG-11/AG-09/AG-13/AG-02的受控手工工作流，不是本地Codex、不同模型或独立代理进程运行。电影2023《Goodbye Julia》；仓库搜索Goodbye Julia/وداعا جوليا/再见朱莉娅无同名案例（只算有限排重）。本轮先阅读发行方MAD World官方Synopsis、戛纳电影节2023新闻（F1简介），**未读其他完整影评、导演专访和原片**。来源：https://www.madworld.film/catalog/goodbye-julia.php 和 https://www.festival-cannes.com/en/2023/goodbye-julia-mohamed-kordofani-s-gesture-of-reconciliation/ 。
+
+**评分准则预注册（20分，五项各0–4）**
+- A 事实与顺序：F1可证≥3行动/状态保持，不能造结局；
+- B 事件因果：source→action→target→changed_variable，且有一条正面可支持的剧情作用与至少一个删边实验；
+- C 十元分层：角色稳定、追求、剧情功能、五维主次、预测人感受、真人F3分离，不能由主题/身份反推角色元；
+- D 生克补/反例：至少两条候选或错误边的否证与第三因素，合法端点和动态变量清晰；
+- E 证据与校准：F1/F2/F3标记、信息不足保留null、与验证阶段明确区分。
+按五项合计分数仅表示**本轮协议与文本分析合规度**，不等于C-film 0–9准确率或真实十元模型有效性。及格设16/20且无违反理论正本的硬错误；但此为内部人工复核，外部独立测评仍NOT_SCORED。
+
+**R1_DRAFT预锁（仅F1公开资料）**
+- E01 死亡事件已经发生，Mona卷入并掩盖；具体行凶人/时机/全链未由官方简介确定，不预断。
+- E02 Mona受愧疚驱动，将死者遗孀Julia及儿子Daniel带入家中，安排家务工作。Julia获得进入雇主家庭和一定经济支持的条件，但是否为双向自主平等帮助未证实。
+- E03 Mona在持续共处后仍未坦白；Julia在蒙在鼓里的条件下进入并维持雇佣关系。政治动荡将迫使面对罪责是发行文案的前景，不当作已核实的具体终幕。
+- 垂直剧情：隐藏责任 → 以雇佣尝试赔偿 → 隐瞒在亲近关系中持续 → 真实结局/披露/代价UNKNOWN。
+
+**R2_SYMBOL_OVERLAY / 关系判读预锁**
+- E02 正面剧情作用（非L2补）：Mona以雇佣行为使Julia可能取得工作/住所与接近她的机会；被改变变量=进入Mona家与工作关系由无到有，代价=雇佣权力不对等与所知信息不对称。
+- E03 不作严格克：Mona的持续隐瞒维持Julia对丈夫死亡真相的未知，不能证明Julia「先拥有真相，后被剥夺」；changed_variable=information_disclosure仍为否，**持平**，不是必然下降。
+- 拒绝边1：「聘用Julia ⇒ Mona的十元严格补Julia」：缺少两个十元独立证据、已存在缺口的有效填补与安全的互惠机制；经济援助不能消除隐瞒。
+- 拒绝边2：「Mona是北苏丹人/Julia是南苏丹人 ⇒ 某固定十元人格/五轴对立」：民族、地域属于剧情条件，不是人的感受类别。
+- 拒绝边3：「国家南北分裂 ⇒ 五维空间主元，空间克人物」：没有证明具体主题结算的必要性，政治空间背景不能直接锁主维。
+- AG-11人物稳定主次=null；AG-09 主维 UNKNOWN（本体/因果/空间等候选竞争，不从题材词决定）；AG-13横纵链R1如上；AG-02严格关系均NOT_ESTABLISHED；观众目标感受候选 guilt/tension 但十项真实感受强度=null，F3=null。
+- 删除E02雇佣：死亡与愧疚仍存在，但两女性长期共同居住所引入的信息不对称与冲突承载场景被移除，说明雇佣是该支线必要结构；不能据此证明补关系。
+- 删除E03隐瞒：双方仍可同住，但知情权/信任性质显著不同；是否在原片结局坦白待核。
+
+**NEXT**：预锁后才读独立影评、访谈核查E01真实责任、E02具体劳动/居住关系、E03是否和如何披露、主题主导竞争、反例。仅根据实际检验事实给协议合规分；如信息不足保留NOT_SCORED单项。请勿改动本预锁，后续追加审计与失败记录。
