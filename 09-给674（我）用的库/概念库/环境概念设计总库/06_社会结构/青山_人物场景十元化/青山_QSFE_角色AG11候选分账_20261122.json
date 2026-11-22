@@ -21,8 +21,8 @@
     "X并Z"
   ],
   "stable_role_count": 0,
-  "candidate_count": 1,
-  "wait_existing_count": 8,
+  "candidate_count": 0,
+  "wait_existing_count": 9,
   "source_events": [
     {
       "id": "E237_INFO",
@@ -190,31 +190,47 @@
       "person_id": "QSP-0001",
       "name": "陈迹",
       "context": "《青山》作者233–242章抽样",
-      "AG11_status": "CANDIDATE_H",
-      "main_candidate": "ZX?",
-      "secondary_candidate": "XN?",
+      "AG11_status": "WAIT_EVIDENCE",
+      "main_candidate": null,
+      "secondary_candidate": null,
       "local_behavior_hypotheses": [
-        "ZX?独立面对限制",
-        "XN?调查安排"
+        "ZX?破门/报讯中的对抗动作",
+        "XN?分级证据与步调安排",
+        "ZN?尊重小满选择权但仅承诺",
+        "NZ?亲近三人的选择性保护"
       ],
-      "reason_for_abstention": null,
-      "negative_test": "若有可靠跨段证据显示陈迹在无权威冲突时也坚持同一核心欲望，才能区分ZX和XN；删掉ZX后调查动机是否仍成立？",
+      "reason_for_abstention": "236给小满身契承诺未兑现；237克制军情泄漏与需要钱矛盾；238冒险属于具体调查；241区分边军内部；242明确只筹划带亲近三人逃离。ZX/XN/ZN/NZ的本核区分需跨关系实际付出代价与抽离检验；此窗口Top1重开。",
+      "negative_test": "至少一件跨职业/权力立场且为非亲近对象付出实际不可逆代价的选择，并保留‘只是调查职责’及‘保护亲近对象’竞争模型；反向核对承诺是否兑现。",
       "evidence_ids": [
         "E237_INFO",
         "E238_ENTRY",
-        "E240_CAPTURE"
+        "E240_CAPTURE",
+        "R09-E236-AUTONOMY",
+        "R09-E237-MONEY",
+        "R09-E241-DIFFERENTIATE",
+        "R09-E242-BOUNDARY"
       ],
       "source_quality": "R47/R49历史转载摘录；原著完整正文未本轮核证",
       "A_similarity": null,
       "B_counterexamples": [
         "E237_INFO的付款/信息处理可能主要由任务压力与调查流程驱动，不等于一贯反抗权威",
-        "E242_ESCAPE_PLAN尚未实际执行，不能据此说明角色的长期本核"
+        "E242_ESCAPE_PLAN尚未实际执行，不能据此说明角色的长期本核",
+        "新原文证据：237在可卖钱时选择不泄可能扰乱部署的军情，简单的ZX强冲突解释不足",
+        "新原文证据：242优先确保张铮、张夏、小满撤离，明确排除太子等人，说明保护对象有边界",
+        "236身契归还为未来承诺未付成本，不得直接确定ZN/NZ主核"
       ],
       "stable_role_lock": false,
       "author_confirmed": false,
       "human_F3": null,
       "scene_tenyuan_not_inherited": true,
-      "cost_status": "武装结阵确实发生，付款由张夏承担，其他代价风险未核；仅达到结构候选门槛，不构成长期定核证据"
+      "cost_status": "武装结阵确实发生，付款由张夏承担，其他代价风险未核；仅达到结构候选门槛，不构成长期定核证据",
+      "historical_CANDIDATE_H": {
+        "core": "ZX",
+        "rival": "XN",
+        "status": "R09_SOURCE_REVISION_SUPERSEDED"
+      },
+      "source_grade_new": "TWO_REPRINT_MIRRORS_CONCORDANCE_NOT_OFFICIAL_AUTHOR_PASS",
+      "current_top1_priority": null
     },
     {
       "person_id": "QSP-0005",
@@ -456,5 +472,7 @@
     "百分比全部null，未校准不凑十项",
     "Z/ZN历史生克补关系冻结，未用于反推人物",
     "R49原文网页受限，本文使用既有GitHub事件证据"
-  ]
+  ],
+  "last_review": "R09-11_TWO_MIRROR_REOPEN_CJ_TOP1",
+  "current_main_locks": 0
 }
