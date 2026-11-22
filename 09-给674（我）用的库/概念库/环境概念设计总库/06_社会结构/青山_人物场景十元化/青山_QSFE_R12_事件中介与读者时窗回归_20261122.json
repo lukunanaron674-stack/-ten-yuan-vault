@@ -1,0 +1,866 @@
+{
+  "schema": "QSFE_R12_EVENT_WINDOW_SUITE_V1",
+  "date": "2026-11-22",
+  "issue": "674-354",
+  "parent_issue": "674-105",
+  "test_mode": "ASSISTED_SOURCE_REVIEW_NOT_HOLDOUT",
+  "source_scoping_note": "Requires prior cues as known to an ongoing novel reader; source excerpts are paraphrases in an L5 report, not independently verified exact original quotes.",
+  "source_manifests": {
+    "QSFE-R12-WAR": {
+      "source_scope": "MIRROR_240_SCENE",
+      "reviewer_id": "CHATGPT_SAME_CONTEXT",
+      "review_mode": "ASSISTED",
+      "required_event_units": [
+        {
+          "id": "W01",
+          "chapter": 240,
+          "unit": 1,
+          "actor": "六名蒙面者",
+          "target": "羽林军",
+          "action": "六名蒙面者与羽林军交战",
+          "event_role": "TRIGGER",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943734.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943734.html",
+          "source_span": "六名蒙面者与羽林军交战",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "W02",
+          "chapter": 240,
+          "unit": 2,
+          "actor": "两名蒙面者",
+          "target": "太子",
+          "action": "两人突破羽林军结阵直扑太子",
+          "event_role": "MEDIATOR",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943734.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943734.html",
+          "source_span": "两人突破羽林军结阵直扑太子",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "W03",
+          "chapter": 240,
+          "unit": 3,
+          "actor": "陈迹",
+          "target": "太子",
+          "action": "陈迹拔剑护驾阻挡来袭",
+          "event_role": "MEDIATOR",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943734.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943734.html",
+          "source_span": "陈迹拔剑护驾阻挡来袭",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "W04",
+          "chapter": 240,
+          "unit": 4,
+          "actor": "边军弓手",
+          "target": "两名蒙面者",
+          "action": "弓手先射杀突破阵线的两人",
+          "event_role": "OUTCOME",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943734.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943734.html",
+          "source_span": "弓手先射杀突破阵线的两人",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "W05",
+          "chapter": 240,
+          "unit": 5,
+          "actor": "边军弓手",
+          "target": "其余四名蒙面者",
+          "action": "弓手继续射杀其余四人",
+          "event_role": "OUTCOME",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943734.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943734.html",
+          "source_span": "弓手继续射杀其余四人",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "W06",
+          "chapter": 240,
+          "unit": 6,
+          "actor": "胡钧羡、周游",
+          "target": "现场",
+          "action": "两人随后出现，不能据此确认灭口主谋",
+          "event_role": "CONTEXT",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943734.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943734.html",
+          "source_span": "两人随后出现，不能据此确认灭口主谋",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        }
+      ],
+      "reader_cues": [
+        {
+          "id": "W_ATTACK",
+          "chapter": 240,
+          "unit": 1,
+          "source_ref": "https://dingdianzww.org/19578/6943734.html",
+          "source_span": "袭击羽林军",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "W_TARGET",
+          "chapter": 240,
+          "unit": 2,
+          "source_ref": "https://dingdianzww.org/19578/6943734.html",
+          "source_span": "两人直扑太子",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "W_PROTECT",
+          "chapter": 240,
+          "unit": 3,
+          "source_ref": "https://dingdianzww.org/19578/6943734.html",
+          "source_span": "陈迹拔剑护驾",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "W_ARCHERY",
+          "chapter": 240,
+          "unit": 4,
+          "source_ref": "https://dingdianzww.org/19578/6943734.html",
+          "source_span": "弓手射杀突袭者",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "W_REST",
+          "chapter": 240,
+          "unit": 5,
+          "source_ref": "https://dingdianzww.org/19578/6943734.html",
+          "source_span": "其余四人被射杀",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "W_ARRIVE",
+          "chapter": 240,
+          "unit": 6,
+          "source_ref": "https://dingdianzww.org/19578/6943734.html",
+          "source_span": "胡钧羡、周游在后段出现",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        }
+      ]
+    },
+    "QSFE-R12-MEAL": {
+      "source_scope": "MIRROR_241_PRIORS_PLUS_242_MEAL",
+      "reviewer_id": "CHATGPT_SAME_CONTEXT",
+      "review_mode": "ASSISTED",
+      "required_event_units": [
+        {
+          "id": "M01",
+          "chapter": 242,
+          "unit": 1,
+          "actor": "张铮",
+          "target": "陈迹",
+          "action": "张铮为陈迹留饭",
+          "event_role": "TRIGGER",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "张铮为陈迹留饭",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "M02",
+          "chapter": 242,
+          "unit": 2,
+          "actor": "小满",
+          "target": "陈迹",
+          "action": "小满端饭并参与照料",
+          "event_role": "RESPONSE",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "小满端饭并参与照料",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "M03",
+          "chapter": 242,
+          "unit": 3,
+          "actor": "陈迹",
+          "target": "张铮、张夏、小满",
+          "action": "陈迹筹划只带亲近三人逃离，非已执行",
+          "event_role": "OUTCOME",
+          "epistemic": "PLAN",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "陈迹筹划只带亲近三人逃离，非已执行",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        }
+      ],
+      "reader_cues": [
+        {
+          "id": "PRIOR_FAT_SHEEP",
+          "chapter": 241,
+          "unit": 8,
+          "source_ref": "https://www.sudugu520.com/23/13558-4.html",
+          "source_span": "掌柜以肥羊称呼住客",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "PRIOR_THREAT",
+          "chapter": 241,
+          "unit": 9,
+          "source_ref": "https://www.sudugu520.com/23/13558-4.html",
+          "source_span": "掌柜威胁小六并有帽子线索",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "MEAL_SAVE",
+          "chapter": 242,
+          "unit": 1,
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "张铮留饭",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "MEAL_SERVE",
+          "chapter": 242,
+          "unit": 2,
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "小满端饭",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "MEAL_PLAN",
+          "chapter": 242,
+          "unit": 3,
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "陈迹提出撤离计划仍未执行",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        }
+      ]
+    },
+    "QSFE-R12-AFTER": {
+      "source_scope": "MIRROR_241_242_WHOLE_WINDOW",
+      "reviewer_id": "CHATGPT_SAME_CONTEXT",
+      "review_mode": "ASSISTED",
+      "required_event_units": [
+        {
+          "id": "M01",
+          "chapter": 242,
+          "unit": 1,
+          "actor": "张铮",
+          "target": "陈迹",
+          "action": "张铮为陈迹留饭",
+          "event_role": "TRIGGER",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "张铮为陈迹留饭",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "M02",
+          "chapter": 242,
+          "unit": 2,
+          "actor": "小满",
+          "target": "陈迹",
+          "action": "小满端饭并参与照料",
+          "event_role": "RESPONSE",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "小满端饭并参与照料",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "M03",
+          "chapter": 242,
+          "unit": 3,
+          "actor": "陈迹",
+          "target": "张铮、张夏、小满",
+          "action": "陈迹筹划只带亲近三人逃离，非已执行",
+          "event_role": "OUTCOME",
+          "epistemic": "PLAN",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "陈迹筹划只带亲近三人逃离，非已执行",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "M04",
+          "chapter": 242,
+          "unit": 4,
+          "actor": "乌云",
+          "target": "陈迹",
+          "action": "乌云称听闻哀嚎并闻血腥气；只是证词",
+          "event_role": "MEDIATOR",
+          "epistemic": "TESTIMONY",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "乌云称听闻哀嚎并闻血腥气；只是证词",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "M05",
+          "chapter": 242,
+          "unit": 5,
+          "actor": "陈迹",
+          "target": "龙门客栈",
+          "action": "陈迹据线索推断可能有陷阱；并非确认受害",
+          "event_role": "RESPONSE",
+          "epistemic": "INFERENCE",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN",
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "陈迹据线索推断可能有陷阱；并非确认受害",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        }
+      ],
+      "reader_cues": [
+        {
+          "id": "PRIOR_FAT_SHEEP",
+          "chapter": 241,
+          "unit": 8,
+          "source_ref": "https://www.sudugu520.com/23/13558-4.html",
+          "source_span": "掌柜以肥羊称呼住客",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "PRIOR_THREAT",
+          "chapter": 241,
+          "unit": 9,
+          "source_ref": "https://www.sudugu520.com/23/13558-4.html",
+          "source_span": "掌柜威胁小六并有帽子线索",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "MEAL_SAVE",
+          "chapter": 242,
+          "unit": 1,
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "张铮留饭",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "MEAL_SERVE",
+          "chapter": 242,
+          "unit": 2,
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "小满端饭",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "MEAL_PLAN",
+          "chapter": 242,
+          "unit": 3,
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "陈迹提出撤离计划仍未执行",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "BLOOD_REPORT",
+          "chapter": 242,
+          "unit": 4,
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "乌云报告哀嚎及血腥",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        },
+        {
+          "id": "RISK_INFERENCE",
+          "chapter": 242,
+          "unit": 5,
+          "source_ref": "https://dingdianzww.org/19578/6943740.html",
+          "source_span": "陈迹推测黑店可能有危险",
+          "span_type": "RESEARCHER_PARAPHRASE"
+        }
+      ]
+    }
+  },
+  "accept_cases": [
+    {
+      "case_id": "QSFE-R12-WAR",
+      "validation_contract": "QSFE_R12_EVENT_WINDOW_V1",
+      "generator_id": "CHATGPT_SAME_CONTEXT",
+      "source": {
+        "evidence_ref": "青山_QSFE_R09-R11_角色场景复核_20261122.md",
+        "quality": "MIRROR_TEXT_ASSISTED_PARAPHRASE_NOT_OFFICIAL"
+      },
+      "knowledge_ledger": [],
+      "entity_refs": [],
+      "character_stable_locks": [],
+      "AG11_authorized": false,
+      "relation_claims": [],
+      "human_feeling": null,
+      "counterfactual": {
+        "change": "仅改变被核读者线索，保留人物和时间",
+        "expected_difference": "只比较相同时窗下的感受候选差异"
+      },
+      "events": [
+        {
+          "id": "W01",
+          "chapter": 240,
+          "unit": 1,
+          "actor": "六名蒙面者",
+          "target": "羽林军",
+          "action": "六名蒙面者与羽林军交战",
+          "event_role": "TRIGGER",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943734.html",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "W02",
+          "chapter": 240,
+          "unit": 2,
+          "actor": "两名蒙面者",
+          "target": "太子",
+          "action": "两人突破羽林军结阵直扑太子",
+          "event_role": "MEDIATOR",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943734.html",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "W03",
+          "chapter": 240,
+          "unit": 3,
+          "actor": "陈迹",
+          "target": "太子",
+          "action": "陈迹拔剑护驾阻挡来袭",
+          "event_role": "MEDIATOR",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943734.html",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "W04",
+          "chapter": 240,
+          "unit": 4,
+          "actor": "边军弓手",
+          "target": "两名蒙面者",
+          "action": "弓手先射杀突破阵线的两人",
+          "event_role": "OUTCOME",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943734.html",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "W05",
+          "chapter": 240,
+          "unit": 5,
+          "actor": "边军弓手",
+          "target": "其余四名蒙面者",
+          "action": "弓手继续射杀其余四人",
+          "event_role": "OUTCOME",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943734.html",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "W06",
+          "chapter": 240,
+          "unit": 6,
+          "actor": "胡钧羡、周游",
+          "target": "现场",
+          "action": "两人随后出现，不能据此确认灭口主谋",
+          "event_role": "CONTEXT",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943734.html",
+          "downstream_result": "UNKNOWN"
+        }
+      ],
+      "reader_window": {
+        "cutoff_chapter": 240,
+        "cutoff_unit": 6,
+        "analysis_scope": "LOCAL_BEAT",
+        "context_mode": "FULL_READER_HISTORY",
+        "visible_cue_ids": [
+          "W_ATTACK",
+          "W_TARGET",
+          "W_PROTECT",
+          "W_ARCHERY",
+          "W_REST",
+          "W_ARRIVE"
+        ],
+        "anchor_cue_ids": [
+          "W_ARCHERY"
+        ]
+      },
+      "tenyuan": {
+        "subject": "READER",
+        "status": "AI_H",
+        "top": "XZ",
+        "scores": null,
+        "calibration": "UNVALIDATED",
+        "locked": false,
+        "competitors": [
+          "ZX",
+          "Z"
+        ],
+        "scope": "LOCAL_BEAT"
+      }
+    },
+    {
+      "case_id": "QSFE-R12-MEAL",
+      "validation_contract": "QSFE_R12_EVENT_WINDOW_V1",
+      "generator_id": "CHATGPT_SAME_CONTEXT",
+      "source": {
+        "evidence_ref": "青山_QSFE_R09-R11_角色场景复核_20261122.md",
+        "quality": "MIRROR_TEXT_ASSISTED_PARAPHRASE_NOT_OFFICIAL"
+      },
+      "knowledge_ledger": [],
+      "entity_refs": [],
+      "character_stable_locks": [],
+      "AG11_authorized": false,
+      "relation_claims": [],
+      "human_feeling": null,
+      "counterfactual": {
+        "change": "仅改变被核读者线索，保留人物和时间",
+        "expected_difference": "只比较相同时窗下的感受候选差异"
+      },
+      "events": [
+        {
+          "id": "M01",
+          "chapter": 242,
+          "unit": 1,
+          "actor": "张铮",
+          "target": "陈迹",
+          "action": "张铮为陈迹留饭",
+          "event_role": "TRIGGER",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "M02",
+          "chapter": 242,
+          "unit": 2,
+          "actor": "小满",
+          "target": "陈迹",
+          "action": "小满端饭并参与照料",
+          "event_role": "RESPONSE",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "M03",
+          "chapter": 242,
+          "unit": 3,
+          "actor": "陈迹",
+          "target": "张铮、张夏、小满",
+          "action": "陈迹筹划只带亲近三人逃离，非已执行",
+          "event_role": "OUTCOME",
+          "epistemic": "PLAN",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN"
+        }
+      ],
+      "reader_window": {
+        "cutoff_chapter": 242,
+        "cutoff_unit": 3,
+        "analysis_scope": "LOCAL_BEAT",
+        "context_mode": "FULL_READER_HISTORY",
+        "visible_cue_ids": [
+          "PRIOR_FAT_SHEEP",
+          "PRIOR_THREAT",
+          "MEAL_SAVE",
+          "MEAL_SERVE",
+          "MEAL_PLAN"
+        ],
+        "anchor_cue_ids": [
+          "MEAL_SAVE"
+        ]
+      },
+      "tenyuan": {
+        "subject": "READER",
+        "status": "AI_H",
+        "top": "NZ",
+        "scores": null,
+        "calibration": "UNVALIDATED",
+        "locked": false,
+        "competitors": [
+          "XZ",
+          "N"
+        ],
+        "scope": "LOCAL_BEAT"
+      }
+    },
+    {
+      "case_id": "QSFE-R12-AFTER",
+      "validation_contract": "QSFE_R12_EVENT_WINDOW_V1",
+      "generator_id": "CHATGPT_SAME_CONTEXT",
+      "source": {
+        "evidence_ref": "青山_QSFE_R09-R11_角色场景复核_20261122.md",
+        "quality": "MIRROR_TEXT_ASSISTED_PARAPHRASE_NOT_OFFICIAL"
+      },
+      "knowledge_ledger": [],
+      "entity_refs": [],
+      "character_stable_locks": [],
+      "AG11_authorized": false,
+      "relation_claims": [],
+      "human_feeling": null,
+      "counterfactual": {
+        "change": "仅改变被核读者线索，保留人物和时间",
+        "expected_difference": "只比较相同时窗下的感受候选差异"
+      },
+      "events": [
+        {
+          "id": "M01",
+          "chapter": 242,
+          "unit": 1,
+          "actor": "张铮",
+          "target": "陈迹",
+          "action": "张铮为陈迹留饭",
+          "event_role": "TRIGGER",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "M02",
+          "chapter": 242,
+          "unit": 2,
+          "actor": "小满",
+          "target": "陈迹",
+          "action": "小满端饭并参与照料",
+          "event_role": "RESPONSE",
+          "epistemic": "FACT",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "M03",
+          "chapter": 242,
+          "unit": 3,
+          "actor": "陈迹",
+          "target": "张铮、张夏、小满",
+          "action": "陈迹筹划只带亲近三人逃离，非已执行",
+          "event_role": "OUTCOME",
+          "epistemic": "PLAN",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "M04",
+          "chapter": 242,
+          "unit": 4,
+          "actor": "乌云",
+          "target": "陈迹",
+          "action": "乌云称听闻哀嚎并闻血腥气；只是证词",
+          "event_role": "MEDIATOR",
+          "epistemic": "TESTIMONY",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN"
+        },
+        {
+          "id": "M05",
+          "chapter": 242,
+          "unit": 5,
+          "actor": "陈迹",
+          "target": "龙门客栈",
+          "action": "陈迹据线索推断可能有陷阱；并非确认受害",
+          "event_role": "RESPONSE",
+          "epistemic": "INFERENCE",
+          "evidence_ref": "https://dingdianzww.org/19578/6943740.html",
+          "downstream_result": "UNKNOWN"
+        }
+      ],
+      "reader_window": {
+        "cutoff_chapter": 242,
+        "cutoff_unit": 5,
+        "analysis_scope": "CHAPTER_TO_DATE",
+        "context_mode": "FULL_READER_HISTORY",
+        "visible_cue_ids": [
+          "PRIOR_FAT_SHEEP",
+          "PRIOR_THREAT",
+          "MEAL_SAVE",
+          "MEAL_SERVE",
+          "MEAL_PLAN",
+          "BLOOD_REPORT",
+          "RISK_INFERENCE"
+        ],
+        "anchor_cue_ids": [
+          "BLOOD_REPORT"
+        ]
+      },
+      "tenyuan": {
+        "subject": "READER",
+        "status": "AI_H",
+        "top": "XZ",
+        "scores": null,
+        "calibration": "UNVALIDATED",
+        "locked": false,
+        "competitors": [
+          "X并Z",
+          "NZ"
+        ],
+        "scope": "CHAPTER_TO_DATE"
+      }
+    }
+  ],
+  "mutant_cases": [
+    {
+      "id": "R12-N01-MISSING_MEDIATOR",
+      "from": "QSFE-R12-WAR",
+      "change": {
+        "path": [
+          "events",
+          1,
+          "id"
+        ],
+        "value": "ALTERED_UNIT"
+      },
+      "expect": "INTERMEDIATE_EVENT_MISSING"
+    },
+    {
+      "id": "R12-N02-WRONG_ACTOR",
+      "from": "QSFE-R12-WAR",
+      "change": {
+        "path": [
+          "events",
+          2,
+          "actor"
+        ],
+        "value": "羽林军"
+      },
+      "expect": "EVENT_ACTOR_TARGET_MISMATCH"
+    },
+    {
+      "id": "R12-N03-WRONG_TARGET",
+      "from": "QSFE-R12-WAR",
+      "change": {
+        "path": [
+          "events",
+          1,
+          "target"
+        ],
+        "value": "羽林军"
+      },
+      "expect": "EVENT_ACTOR_TARGET_MISMATCH"
+    },
+    {
+      "id": "R12-N04-WRONG_ROLE",
+      "from": "QSFE-R12-WAR",
+      "change": {
+        "path": [
+          "events",
+          1,
+          "event_role"
+        ],
+        "value": "OUTCOME"
+      },
+      "expect": "EVENT_ROLE_MISMATCH"
+    },
+    {
+      "id": "R12-N05-DROP_PRIOR_FAT_SHEEP",
+      "from": "QSFE-R12-MEAL",
+      "change": {
+        "path": [
+          "reader_window",
+          "visible_cue_ids"
+        ],
+        "value": [
+          "PRIOR_THREAT",
+          "MEAL_SAVE",
+          "MEAL_SERVE",
+          "MEAL_PLAN"
+        ]
+      },
+      "expect": "READER_PRIOR_CUE_MISSING"
+    },
+    {
+      "id": "R12-N06-FUTURE_PLAN",
+      "from": "QSFE-R12-MEAL",
+      "change": {
+        "path": [
+          "reader_window",
+          "cutoff_unit"
+        ],
+        "value": 2
+      },
+      "expect": "READER_FUTURE_LEAK"
+    },
+    {
+      "id": "R12-N07-LOCAL_AS_CHAPTER",
+      "from": "QSFE-R12-MEAL",
+      "change": {
+        "path": [
+          "tenyuan",
+          "scope"
+        ],
+        "value": "CHAPTER_TO_DATE"
+      },
+      "expect": "READER_SCOPE_COLLAPSE"
+    },
+    {
+      "id": "R12-N08-EXCERPT_AS_WHOLE",
+      "from": "QSFE-R12-AFTER",
+      "change": {
+        "path": [
+          "reader_window",
+          "context_mode"
+        ],
+        "value": "ISOLATED_EXCERPT"
+      },
+      "expect": "READER_CONTEXT_NOT_FULL"
+    },
+    {
+      "id": "R12-N09-UNKNOWN_CUE",
+      "from": "QSFE-R12-MEAL",
+      "change": {
+        "path": [
+          "reader_window",
+          "visible_cue_ids"
+        ],
+        "value": [
+          "PRIOR_FAT_SHEEP",
+          "PRIOR_THREAT",
+          "MEAL_SAVE",
+          "MEAL_SERVE",
+          "MEAL_PLAN",
+          "UNSOURCED_HINT"
+        ]
+      },
+      "expect": "READER_CUE_UNGROUNDED"
+    },
+    {
+      "id": "R12-N10-TESTIMONY_AS_FACT",
+      "from": "QSFE-R12-AFTER",
+      "change": {
+        "path": [
+          "events",
+          3,
+          "epistemic"
+        ],
+        "value": "FACT"
+      },
+      "expect": "EVENT_EPISTEMIC_MISMATCH"
+    },
+    {
+      "id": "R12-N11-ANCHOR_LOST",
+      "from": "QSFE-R12-AFTER",
+      "change": {
+        "path": [
+          "reader_window",
+          "anchor_cue_ids"
+        ],
+        "value": []
+      },
+      "expect": "READER_ANCHOR_MISSING"
+    }
+  ],
+  "interpretation": "Three source-scoped structures and 11 negative mutants test validity gates only; XZ and NZ are unmeasured AI hypotheses, F3 null, prior labels visible in history."
+}
