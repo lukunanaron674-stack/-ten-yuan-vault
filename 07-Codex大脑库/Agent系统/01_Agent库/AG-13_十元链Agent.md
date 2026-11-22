@@ -113,3 +113,12 @@ case_delta_extension_v1:
 - 接收AG-11独立A/B研究`role_candidate_packet.json`：至少3件自主选择且跨2阶段时，优先要求一个`CANDIDATE_H`主核＋最近竞争者、代价、反例与灵魂抽离；仍无法区分时`WAIT_EVIDENCE`必须说明缺哪一条能区分两者的选择材料。不因缺作者验证就一概丢null，也不强迫没有证据的拟合。
 - 运行`python 07-Codex大脑库/skills/ten-yuan-chain/scripts/role_candidate_gate.py role_candidate_packet.json`；结构PASS后，AG-13只引用这些候选到`ROLE_TENYUAN_H`横纵故事图。AG-09的五维本体主题不会直接赋给人物，AG-13的作用边不反向锁人物，AG-02仍独立严格审核。
 - 具体已知回归《不留痕迹》Tom的`ZN_H vs NZ_H`仅是AG-11后验可审核候选，不能成为锁定人物主元或未泄题独立通过；如USER确认或推翻，需在AG-11 A/B正本保留`before/after`误判族。工作终点：四层区分（行为/人物H/主题H/观众F3），不强加公式。
+
+### 2026-11-22｜青山 QSFE-R12 多主体中介事件完整性
+
+- **来源与责任**：674-354《青山》实测AG13-EXAM-001曾漏「两蒙面者突袭太子→陈迹拔剑护驾」两条不可压缩中介。继承原QSFE证据门禁和AG-13事件图，不升级L2/人物稳定元。
+- 对新QSFE-R12包在`events[]`逐项写`id, actor, target, event_role(TRIGGER/MEDIATOR/RESPONSE/OUTCOME/CONTEXT), chapter, unit, epistemic, evidence_ref`；与**单独来源事件清单**`source_manifests[case_id].required_event_units`逐项核对。删中介、错行动者或目标、错事实等级必须返回相应错误码；没有可靠单独清单则`SOURCE_MANIFEST_REQUIRED`，**不称全章已穷尽**。
+- 现行共享门禁：`09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/青山_QSFE_证据门禁_20261122.mjs`；R12回归`青山_QSFE_R12_事件中介与读者时窗回归_20261122.json`。
+- 运行：`node "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/青山_QSFE_证据门禁_20261122.mjs" "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/青山_QSFE_R12_事件中介与读者时窗回归_20261122.json"`。
+- 强制AG-02审`reader_window`：章节号和段内顺序截止、先前已知线索、LOCAL_BEAT vs CHAPTER_TO_DATE两种范围及AI-H读者感受。剧情发生先后不自动生/克/补，陈迹的推测不等于事实，人物主元继续AG-11审核。
+- 完成标准仅`SOURCE_SCOPED_STRUCTURE_PASS`；本轮参考清单是同一助手整理的转载摘要`review_mode=ASSISTED`，**不是新模型独立盲测、不是完整原著、不是人类F3**。
