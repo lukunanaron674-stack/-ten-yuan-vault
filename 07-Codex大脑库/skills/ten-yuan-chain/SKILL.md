@@ -183,3 +183,40 @@ X并Z ──生──→ Z ：他真正坐下演奏，琴声响起
 - Codex 入口：`07-Codex大脑库/Codex大脑总入口.md`。
 - 工单：`674-105` 登记关系/方法层，`674-324` 为已完成的三级故事编译历史，不重新开R9。
 - 本机 Codex 要实际识别 Skill，还需用户在本机同步 Git 仓库并按所用 Agent Skill 加载目录安装/重启；远端存在 `SKILL.md` 不等于已安装/触发。
+
+## 2026-11-22｜AGENT-EVAL-GJ-001 修复门禁：信息状态 × 多主体因果 × 混合关系
+
+> 来源：GOAL-Z中的AGENT-EVAL-GJ-001预锁与反证审计（15/20、未达16/20）。此处只修**AG-13/AG-14的故事分析方法与输出校验**，不改L2端点、旧Z/ZN冻结，不把协作回归样例算独立C-film通过。
+
+### 启动顺序（插入现有R1事实分析之后、R2十元贴标之前；不另开无限研究轮）
+1. **F1原片资料先固定时间窗口**：R1逐事件写 `event_id, stage, actor, action, direct_target, changed_variable, before, after, evidence_ref, source_scope, certainty`。信息不足将前/后状态记`UNKNOWN`，不从前一阶段擅自延长到终幕。先后顺序≠机制因果。
+2. **每个关键秘密独立建信息账**：`fact_id, character_id, stage, knowledge_state(UNKNOWN|KNOWN|NOT_KNOWN|UNVERIFIED), learned_by_event, evidence_ref, belief_about_other, subsequent_choice`。另建 `disclosure_ledger`：`fact_id, speaker, recipient, stage, disclosure_state(SAID|WITHHELD|UNKNOWN), evidence_ref`。**一人没说≠另一人不知道**；只有直接支持该人在此窗口的证据才能把`UNVERIFIED`升级为`KNOWN/NOT_KNOWN`。每次再出现角色时回看状态，尤其核被害者/隐瞒方/知情者的反转。
+3. **反查跨主体触发链**：从不可逆结果逆推 `result←enabler←trigger←action`，逐边写 `source_actor→observable_action→target_actor / changed_variable`、中间信息传递与第三方决策。若已知中间事件未纳入，不能把全链折成「A害了C」单边；不知哪个节点则填`CAUSAL_GAP`，不造因果。
+4. **对所有主要人物对跑两向扫描**：`A→B`、`B→A`分别找独立的真实行动、目标缺口、前后可观察结果与随后选择。即使正向是「伪补/交易」，仍需扫描反向可能真实有效的支持行为。没有两条独立证据的`DUAL_SUPPORT`退回`ONE_WAY_OR_UNKNOWN`；`DUAL_SUPPORT`仍**不等于严格双补**，由AG-02按L2门禁复审。
+5. **同一关系允许正负共存**：分别登记`SUPPORT`、`CONTROL/COERCION`、`HARM`、`TRADEOFF`及`POWER_ASYMMETRY`，带独立事件与变量；经济支持/庇护不能自动抵消隐瞒、隔离与权力不对等，也不能因为发现压迫就抹去可核支持。
+6. **R2贴十元前的失败门**：对于材料中已明确存在的知情反转、主要触发中间人、反向支持、负向代价，任一缺失就返回`R1_REPAIR_REQUIRED`并附`error_family`；仅允许**一次定点补齐R1事实**再做R2。材料不足且无可核来源时`INSUFFICIENT_EVIDENCE/UNKNOWN`，禁止强判，不因`UNKNOWN`本身判失败。
+
+### 最小机器可读增量（附加在原case_delta，原字段保留）
+```yaml
+temporal_state_audit:
+  knowledge_ledger: []       # 按角色×秘密×阶段分别记；没有证据留UNVERIFIED
+  disclosure_ledger: []      # 与knowledge独立，不能互相填补
+  causal_event_edges: []     # 每个中介事件/行为有独立ID与来源
+  missing_triggers: []       # 来源已知而抽取漏掉 => R1_REPAIR_REQUIRED
+  relation_scan:
+    a_to_b: []               # 独立支持/代价/变量
+    b_to_a: []
+    dual_support_status: UNKNOWN
+    mixed_effect_edges: []   # SUPPORT与CONTROL可同存
+  audit_status: PASS|R1_REPAIR_REQUIRED|INSUFFICIENT_EVIDENCE
+  failure_families: []       # 信息假持平/跨人触发遗漏/双向漏检/权力代价遗漏
+```
+
+### 回归断言（KNOWN_ANSWER，仅检查方法，不计独立盲测）
+- GJ-01 `Mona.disclosure=WITHHELD` **不得推导** `Julia.knowledge=NOT_KNOWN`；若Julia后段有证据自行发现真相，必须记`Julia: UNVERIFIED/NOT_KNOWN@早期 → KNOWN@后期`，且保留Mona的独立披露状态。
+- GJ-02 《再见朱莉娅》已核剧情机制分段包含`Mona撞到Daniel→Santino追赶→Mona致电Akram→Akram枪击Santino→掩盖`；漏任一有证据的关键中介标`TRIGGER_CHAIN_UNDERMODELED`，不得压成Mona单人直接杀害。
+- GJ-03 `Mona→Julia`教育/安置支持，与`Julia→Mona`重回音乐的支持，须当两条独立剧情作用边；可标`DUAL_SUPPORT_H`，不可直接称已验证L2双补。
+- GJ-04 支持与雇佣权力/餐具隔离同时存在；必须分别登记，不得净额相消。以上具体事实均属于**后验回归题**，原测试预锁15/20不变。
+- GJ-05 未核新片结局时任何角色终幕知识状态都保留`UNVERIFIED`；不从某人一直隐瞒推定另一人始终不知。AG-14按这些失败族记账，F1/F2/F3、L2与C-film仍各自分账。
+
+**执行停止点**：单部影片最多一轮R1状态补齐＋一次R2贴标；若不能找到新来源，输出具体证据缺口后STOP。已知回归通过只记`METHOD_REGRESSION_PASS`；本地Codex和独立holdout另验。
