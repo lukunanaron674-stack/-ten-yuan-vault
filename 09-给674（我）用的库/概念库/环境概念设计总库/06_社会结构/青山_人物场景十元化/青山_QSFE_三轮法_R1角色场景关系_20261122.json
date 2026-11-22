@@ -1,0 +1,158 @@
+{
+  "schema": "QINGSHAN_THREE_ROUND_METHOD_R1_ACTOR_SCENE_RELATIONS_V1",
+  "date": "2026-11-22",
+  "issue": "674-354",
+  "problem_tree": "G4/Q-DYN-002 → AG11角色分支 + AG02场景分支 → R1角色×场景关系",
+  "scope": "ONLY_ROUND_1_CURRENT_TURN",
+  "plan": [
+    {
+      "round": 1,
+      "question": "同一具体时窗内：角色感受候选×场景感受候选，通过什么事实约束和表现相互关联？",
+      "status": "EXECUTED_ASSISTED_TWO_PAIRS"
+    },
+    {
+      "round": 2,
+      "question": "事件自身激活何种读者感受主次（固定起止和阅读时窗）？",
+      "status": "NOT_EXECUTED_THIS_TURN_EXISTING_EV01_10_RESEARCH_AVAILABLE"
+    },
+    {
+      "round": 3,
+      "question": "事件之间感受主导权如何改变，哪些改变具有真实因果、回收与失败边？",
+      "status": "NOT_EXECUTED_THIS_TURN_EXISTING_EV01_10_RESEARCH_AVAILABLE"
+    }
+  ],
+  "canonical": "2026-10-07 ten-yuan is human stimulated feeling not inherent object classification",
+  "role_core_main_lock_total_for_sample": 0,
+  "reader_human_F3": 0,
+  "strict_L2_relations_verified": 0,
+  "prior_work": "AG11 9 WAIT and GS01/GS03B scene AI-H were split; EV01–EV10 has narrative actions; R1 joins existing sources at specific reader cutoff without event-level or dynamic chain labels",
+  "pairs": [
+    {
+      "id": "QSFE-3R-R1-01",
+      "person": {
+        "id": "QSP-0001",
+        "name": "陈迹",
+        "stable_core_status": "WAIT_EVIDENCE",
+        "local_role_direction_competitors": [
+          "ZX?突破门禁",
+          "XN?为传达危情组织行动"
+        ],
+        "not_fixed_personality": true
+      },
+      "scene": {
+        "id": "QSPLACE-CAND-0001",
+        "window": "GS-01",
+        "name": "都司府门禁",
+        "chapter": 238,
+        "reader_feeling_hypotheses": [
+          "XZ?门禁冲突警戒",
+          "ZX?突破阻碍的反压制感"
+        ],
+        "main_rank": "UNVERIFIED_RESEARCH_PRIORITY"
+      },
+      "evidence": {
+        "character_action": "陈迹为报讯冒险突破阻拦，改用绕行/公开陈报",
+        "scene_rule": "羽林军阻陈迹进入；老吴准陈迹进入而阻羽林军跟入；齐斟酌结阵",
+        "source_refs": [
+          "https://www.sudugu520.com/23/13546-3.html",
+          "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+        ],
+        "epistemic": "ASSISTED_F1_MIRROR_NARRATIVE"
+      },
+      "relationship": [
+        {
+          "direction": "SCENE_TO_CHARACTER",
+          "kind": "OBSERVED_CONSTRAINT",
+          "source": "门禁规则/武装阻拦",
+          "target": "陈迹的正常通行能力",
+          "changed_variable": "normal_access",
+          "effect": "受阻，需改变进入方式",
+          "relation_tenyuan": "NOT_DETERMINED"
+        },
+        {
+          "direction": "CHARACTER_TO_SCENE_READER",
+          "kind": "READER_RESPONSE_HYPOTHESIS",
+          "source": "陈迹的主动绕阻和报讯",
+          "target": "读者对门禁场景的理解",
+          "changed_variable": "scene_as_threat_vs_resistance",
+          "effect": "可能同时强化XZ?警戒与ZX?反压制感；变化强度未知",
+          "relation_tenyuan": "NOT_DETERMINED"
+        }
+      ],
+      "proposed_interaction": "现场限制 ↔ 角色绕阻；一个改变行动路径，一个可能改变读者观看同一空间的感受",
+      "discriminating_counterfactual": "把武装门禁改成清楚、合法的公开通行权限；陈迹是否仍会冒险绕入？读者XZ?是否下降？若不下降，危险感可能主要来自军事危情而非门禁。",
+      "condition": "角色对场景的改变是读者解读的AI-H，不代表陈迹物理改变整个都司府。",
+      "result": "RELATION_MAPPED_NOT_TENYUAN_MECHANISM_PROVEN"
+    },
+    {
+      "id": "QSFE-3R-R1-02",
+      "person": {
+        "id": "QSP-0150",
+        "name": "龙门客栈掌柜",
+        "stable_core_status": "WAIT_EVIDENCE",
+        "local_role_direction_competitors": [
+          "XN?组织分送规矩",
+          "X并Z?控制/利用他人"
+        ],
+        "not_fixed_personality": true
+      },
+      "scene": {
+        "id": "QSPLACE-CAND-0003",
+        "window": "GS-03B",
+        "name": "龙门客栈分送住客窗口",
+        "chapter": 241,
+        "reader_feeling_hypotheses": [
+          "XZ?受害警戒",
+          "X并Z?对操控和掠夺的厌恶"
+        ],
+        "main_rank": "AI_H_NOT_F3"
+      },
+      "evidence": {
+        "character_action": "掌柜将住客称肥羊，命小六分别分送并威胁小六",
+        "scene_rule": "客栈分送流程、掌柜对伙计的命令权，具体护送/伤亡结果未知",
+        "source_refs": [
+          "https://www.sudugu520.com/23/13558-4.html",
+          "https://czbooks.net/n/s6ojkc/s6onjlmb?chapterNumber=244"
+        ],
+        "epistemic": "ASSISTED_F1_MIRROR_NARRATIVE"
+      },
+      "relationship": [
+        {
+          "direction": "SCENE_TO_CHARACTER",
+          "kind": "OBSERVED_AFFORDANCE_WITH_UNVERIFIED_NECESSITY",
+          "source": "客栈房号/分送规矩/伙计执行渠道",
+          "target": "掌柜对客人去向的安排能力",
+          "changed_variable": "routing_instruction_control",
+          "effect": "在该经营结构内发出分送命令；规矩是否为唯一必要手段未证",
+          "relation_tenyuan": "NOT_DETERMINED"
+        },
+        {
+          "direction": "CHARACTER_TO_SCENE_READER",
+          "kind": "READER_RESPONSE_HYPOTHESIS",
+          "source": "掌柜的肥羊话语与威胁",
+          "target": "读者对客栈的危险程度认知",
+          "changed_variable": "risk_interpretation_of_inn",
+          "effect": "可能强化XZ?和X并Z?；没有证据支持NZ保护领先",
+          "relation_tenyuan": "NOT_DETERMINED"
+        }
+      ],
+      "proposed_interaction": "场所规矩提供可利用的控制渠道 ↔ 掌柜的行动又使读者理解为危险场所",
+      "discriminating_counterfactual": "保留同样分送流程，但去掉肥羊话语与威胁；若XZ?/X并Z?显著降低，危险感主要来自掌柜的行为而非客栈建筑或流程。",
+      "condition": "241读者未得到242乌云血腥证词，禁止未来信息倒灌；被分送的客人未证死亡。",
+      "result": "RELATION_MAPPED_NOT_TENYUAN_MECHANISM_PROVEN"
+    }
+  ],
+  "verification": {
+    "role_id_count": 2,
+    "unique_pairs": 2,
+    "scene_windows": 2,
+    "evidence_stubs_present": 2,
+    "actual_action_constraint_edges": 2,
+    "reader_response_h_edges": 2,
+    "strict_l2_approved": 0,
+    "human_F3": 0,
+    "model_independent_test": 0,
+    "official_source_fulltext_verified": 0
+  },
+  "stop": "R1 ends after two traceable actor-scene pairs and their counterfactuals; do not assign event ten-yuan (R2) or cross-event feeling chain (R3) in this turn."
+}
