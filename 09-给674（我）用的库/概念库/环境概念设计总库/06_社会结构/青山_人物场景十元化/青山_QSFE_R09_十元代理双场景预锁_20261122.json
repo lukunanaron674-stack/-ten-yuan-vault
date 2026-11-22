@@ -1,0 +1,123 @@
+{
+  "schema": "QSFE_R09_PRELOCK_V1",
+  "issue": "674-354",
+  "parent_issue": "674-105",
+  "created_at": "2026-11-22",
+  "model_execution": "CHATGPT_SAME_CONTEXT_ASSISTED",
+  "blind_status": "PARTIALLY_EXPOSED_PREVIOUS_QSFE_LABELS",
+  "independent_grade": false,
+  "source_scope": {
+    "evidence_ref": "青山_R49_作者238-242正文与人物行动分级_20261122.md",
+    "source_type": "SECONDARY_RESEARCH_NOT_ORIGINAL",
+    "chapter_240": "SINGLE_REPRINT_BODY_TO_END",
+    "chapter_242": "BODY_PARTIAL",
+    "F2": null,
+    "F3": null
+  },
+  "tests": [
+    {
+      "case_id": "QSFE-R09-006",
+      "reader_window": {
+        "cutoff_chapter": 240
+      },
+      "situated_stimulus": "六名蒙面者与羽林军交战，边军弓手射杀六人，胡钧羡与周游随后出现。",
+      "facts": [
+        {
+          "unit": "A01",
+          "epistemic": "FACT",
+          "action": "羽林军与六名蒙面者交战"
+        },
+        {
+          "unit": "A02",
+          "epistemic": "FACT",
+          "action": "边军弓手射杀六名蒙面者"
+        },
+        {
+          "unit": "A03",
+          "epistemic": "FACT",
+          "action": "胡钧羡、周游随后出现"
+        },
+        {
+          "unit": "A04",
+          "epistemic": "INFERENCE",
+          "action": "陈迹怀疑边军灭口或反叛；归责/策划者未获证实"
+        }
+      ],
+      "hypothesis": {
+        "reader_top1": "XZ",
+        "competitors": [
+          "ZX",
+          "Z"
+        ],
+        "tenyuan_subject": "READER",
+        "epistemic": "AI_H",
+        "ten_scores": null,
+        "confidence": "LOW",
+        "why": "交战后的第三方射杀及权力来历未清，读者可能感到退路变窄、信息不充分与不安",
+        "rival_why": "若读者把事件读作主动干预与正义愤怒，则ZX或Z可能压过XZ",
+        "counterfactual": "若可靠新证显示边军奉公开合法命令制止威胁且未存在未查幕后者，XZ不安假说会减弱",
+        "falsifier": "盲评读者若多数Top1报愤怒/激动而非惧怕和不安，则本Top1失败"
+      },
+      "role_candidate": {
+        "character": "陈迹",
+        "stable_primary": null,
+        "status": "WAIT_EVIDENCE",
+        "reason": "此处只有局部推断，缺其多阶段自主选择与代价；角色十元不能从其推断反推"
+      },
+      "theory": {
+        "strict_l2_relation": "NOT_ESTABLISHED",
+        "five_theme_main": "UNKNOWN"
+      }
+    },
+    {
+      "case_id": "QSFE-R09-007",
+      "reader_window": {
+        "cutoff_chapter": 242
+      },
+      "situated_stimulus": "张铮为陈迹留饭；陈迹计划带张铮、张夏和小满逃离。",
+      "facts": [
+        {
+          "unit": "B01",
+          "epistemic": "FACT",
+          "action": "张铮为陈迹留饭"
+        },
+        {
+          "unit": "B02",
+          "epistemic": "PLAN",
+          "action": "陈迹计划带张铮、张夏、小满逃离；未证已逃离"
+        }
+      ],
+      "hypothesis": {
+        "reader_top1": "NZ",
+        "competitors": [
+          "XZ",
+          "N"
+        ],
+        "tenyuan_subject": "READER",
+        "epistemic": "AI_H",
+        "ten_scores": null,
+        "confidence": "LOW",
+        "why": "在未决危险中，有人以具体行动维持与陈迹的关系和照料，可能触发特殊连接/回返的感受",
+        "rival_why": "若读者更聚焦逃亡不确定与危险，XZ可能主导；对照料负担持续承担可能触发N",
+        "counterfactual": "若留饭被证实是一场陷阱或出于纯交易胁迫，NZ连接假说会削弱",
+        "falsifier": "盲评读者若最强感受为不安/负担而非关系接续，则NZ Top1失败"
+      },
+      "role_candidate": {
+        "character": "张铮",
+        "stable_primary": null,
+        "status": "WAIT_EVIDENCE",
+        "reason": "单次留饭无法证明稳定NZ；需至少另两处跨场自主选择/具体代价"
+      },
+      "theory": {
+        "strict_l2_relation": "NOT_ESTABLISHED",
+        "five_theme_main": "UNKNOWN"
+      }
+    }
+  ],
+  "pre_registered_comparisons": {
+    "A_vs_B": "同一小说的局部危机情境与具体照料情境是否能激发不同的十元观感方向",
+    "primary_target": "READER_FEELING_NOT_OBJECT_CATEGORY",
+    "test_standard": "facts and epistemics; role locks; reader Top1 under F3; counterfactual; source-gap"
+  },
+  "stop": "After one independent source check and structural gate, append R09 result; no second self-adjusted prediction or relabel as blind."
+}
