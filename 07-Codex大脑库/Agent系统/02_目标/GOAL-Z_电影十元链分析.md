@@ -247,3 +247,20 @@ STOP：3轮本次桌面审计收口，不无限迭代。NEXT唯一门：本地Co
 - STOP：本次固定1新片＋2类已知防错，单轮预锁/反证/评分结束。下一最小补测建议：在完全另一个有时间反转的故事中单独验证 knowledge_state/disclosure_state 两个字段，预锁R1/R2，F1来源与结局证据分次揭示；不能在本片补写后重复计作独立通过。
 - 来源：最初F1 https://www.madworld.film/catalog/goodbye-julia.php ；戛纳 https://www.festival-cannes.com/en/2023/goodbye-julia-mohamed-kordofani-s-gesture-of-reconciliation/ ；后验 https://www.eyeforfilm.co.uk/review/goodbye-julia-2023-film-review-by-jennie-kermode ；导演访谈 https://roughcutfilm.com/2024/04/01/communion-and-control-an-interview-with-goodbye-julia-director-mohamed-kordofani/ 与 https://www.thecurb.com.au/goodbye-julia-director-mohamed-kordofani-talks-about-the-possibility-of-change-and-hope-in-this-interview/ ；结局独立二级索引 https://torontoblackfilm.com/event/goodbye-julia-opening-film/ 。反证缺原片独立F2。
 
+## 2026-11-22｜AGENT-EVAL-GJ-001 修复回执：时态信息门禁与执行校验器
+
+> 仅修复AG-13/14执行方法和测试工具，不改L2理论，不覆盖此前预锁15/20，不声明Codex本地实例已跑。本轮状态`METHOD_PATCHED_REMOTE_READBACK_PASS / INDEPENDENT_HOLDOUT_NOT_SCORED`。
+
+### Before → After
+- **Before / 失败来源**：GJ-001中`Mona披露持续NO`被误投射为`Julia始终不知情`；触发事件链漏`Akram枪击`之前的跨主体传讯；只讨论聘用伪补忽略反向的音乐支持；帮助与雇佣隔离/权力代价未同时入链。15/20、低于16/20的旧评分原样保留。
+- **After / 方法修复**：R1新增每个秘密各角色按阶段`knowledge_ledger`与分开的`disclosure_ledger`；事件链必须拆中介人物与转述/行动；双向扫描A→B/B→A；允许SUPPORT与CONTROL同时为真。R2十元贴标前不满足来源已知事项则`R1_REPAIR_REQUIRED`，信息缺失保留UNKNOWN。
+- **机器辅助**：新增`07-Codex大脑库/skills/ten-yuan-chain/scripts/validate_case_packet.py`，标准库，无外部依赖。`--self-test`包含7个正反断言：合法双向混合、披露≠知情、缺中介、伪双向、抹掉权力代价、擅自严格L2补、未证知情。由AG-13输出`validation_packet_v1.json`，AG-14接收脚本退出0的`PASS_STRUCTURAL`，未执行标`VALIDATOR_NOT_RUN`。结构校验器无法证明影片事实及模型有效性。
+
+### 本次执行与可核结果
+- 本地容器开发版本运行`python validate_case_packet.py --self-test`显示**7/7通过**（仅规则校验，不是七部电影/七次独立盲测）。
+- GitHub四文件逐个提交且远端回读、关键字段交叉静态检查4/4 PASS：Skill 1ebcc0a48c76759ec36a6906c591301a8d128a6a；AG-13 bc24488ea9f84d8b708bc83f38b64cde7a5b0463；AG-14 97a71e9419900fe97e345bc4012895b4478d5fc5；新validator更新98b816725e4d2d960b6a5ca08bddcd48e16d9bc4。
+- GitHub远端**校验器的Python自测尚未在本地Codex/CI实际执行**，只能确认文件存在、内容回读与接线静态匹配；旧GOAL-Z评分、F1/F2/F3、十元L2、C-film均不升级。
+
+### 下一唯一门 / STOP
+- 本次补丁和结构门禁已完成，STOP；唯一下一任务为**用真正新的未泄题案例运行本地Codex并产生`validation_packet_v1.json`、脚本stdout/exit、R1与R2预锁、原片/用户后验评分**。不在本片用补丁后的规则重新自测并声称升到16/20。
+- 原问题树保持`G4/Q-DYN-002 → APP-FILM-CHAIN-001 → AG-14 → AG-13`，反馈Linear 674-105；不新建Q、不新增电影Canvas节点、不启GPU。
