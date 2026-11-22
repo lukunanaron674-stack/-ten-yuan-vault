@@ -107,3 +107,9 @@ case_delta_extension_v1:
 - 面向受众的十元候选另存`feeling_contract.json`：`case_id,stimulus_id,context_id, audience_feeling_predictions`（阶段×刺激事件×十项1–10或null；AI假设），`human_feeling_observations`（无人评=null），`role_candidates`, `theme_candidates`, `strict_l2_relations`（未验证则空/冻结）。禁止把人物的外显行为或主题公式直接充当真人情感测量。
 - 运行 `python 07-Codex大脑库/skills/ten-yuan-chain/scripts/tenyuan_profile_gate.py feeling_contract.json`；得到`PASS_FEELING_CONTRACT`仅允许进入读者展示/作者辅助创作，不是`EMPIRICAL_VALIDATED`。未经作者回执角色LOCKED非法；含Z/ZN旧严格关系保持FROZEN_H。
 - AG-13向AG-14回传`R4_structural_status, R5_source_scope_status, R6_feeling_contract_status, F3_human_evidence_status, R7_independent_grade, R8_local_codex_status`六栏，缺证据不升格。
+
+### 2026-11-22｜R9 AG-11主候选接口
+
+- 接收AG-11独立A/B研究`role_candidate_packet.json`：至少3件自主选择且跨2阶段时，优先要求一个`CANDIDATE_H`主核＋最近竞争者、代价、反例与灵魂抽离；仍无法区分时`WAIT_EVIDENCE`必须说明缺哪一条能区分两者的选择材料。不因缺作者验证就一概丢null，也不强迫没有证据的拟合。
+- 运行`python 07-Codex大脑库/skills/ten-yuan-chain/scripts/role_candidate_gate.py role_candidate_packet.json`；结构PASS后，AG-13只引用这些候选到`ROLE_TENYUAN_H`横纵故事图。AG-09的五维本体主题不会直接赋给人物，AG-13的作用边不反向锁人物，AG-02仍独立严格审核。
+- 具体已知回归《不留痕迹》Tom的`ZN_H vs NZ_H`仅是AG-11后验可审核候选，不能成为锁定人物主元或未泄题独立通过；如USER确认或推翻，需在AG-11 A/B正本保留`before/after`误判族。工作终点：四层区分（行为/人物H/主题H/观众F3），不强加公式。
