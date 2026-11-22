@@ -19,6 +19,14 @@ def validate(p):
     for k in ("case_id", "source_scope", "evidence_level"):
         if not p.get(k):
             fail("META_MISSING")
+    for field in ("stages", "events", "source_required_event_ids", "knowledge_ledger",
+                  "disclosure_ledger", "causal_edges", "relation_edges", "claims"):
+        if field not in p:
+            fail("REQUIRED_FIELD_MISSING")
+    if p.get("information_sensitive") is True and not p.get("knowledge_ledger"):
+        fail("KNOWLEDGE_TIMELINE_MISSING")
+    if p.get("multi_actor_causality") is True and not p.get("causal_edges"):
+        fail("CAUSAL_CHAIN_MISSING")
     stages = p.get("stages", [])
     if not isinstance(stages, list) or not stages or len(stages) != len(set(stages)):
         fail("STAGES")
