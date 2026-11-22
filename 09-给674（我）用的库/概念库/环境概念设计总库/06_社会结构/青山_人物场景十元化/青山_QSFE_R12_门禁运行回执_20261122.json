@@ -1,0 +1,90 @@
+{
+  "receipt_id": "QSFE-R12-EVENT-WINDOW-20261122",
+  "created_at": "2026-11-22",
+  "task": "674-354",
+  "related_issue": "674-105",
+  "problem_branch": "G4/Q-DYN-002 / AG-13 / AG-02 / QSFE",
+  "runtime": "V8_FUNCTIONS_EVALUATED_FROM_EXACT_GITHUB_SOURCE",
+  "test_method": "Fetched remote .mjs; removed only shebang/Node imports/CLI bootstrapping, evaluated exported validator and runSuite function bodies unchanged in JavaScript V8, with two full remote JSON suites. NOT Node CLI and NOT user's Codex process.",
+  "script_path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/青山_QSFE_证据门禁_20261122.mjs",
+  "script_git_blob": "3bb4755f4ebc825c75d8f0248530775b3b0dba82",
+  "legacy_suite_path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/青山_QSFE_R05-R08_门禁测试集_20261122.json",
+  "legacy_git_blob": "95b6c654ae784e9b5c646303702e25c3a4155f08",
+  "r12_suite_path": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/青山_QSFE_R12_事件中介与读者时窗回归_20261122.json",
+  "r12_suite_git_blob": "845d34348c628eeacf3be671b9cecc73a6331280",
+  "test_results": {
+    "legacy": {
+      "test_count": 21,
+      "pass": 21,
+      "failed": []
+    },
+    "r12": {
+      "test_count": 14,
+      "pass": 14,
+      "failed": [],
+      "positive_count": 3,
+      "negative_count": 11
+    },
+    "additional_adversarial": {
+      "test_count": 3,
+      "pass": 3,
+      "checks": [
+        {
+          "id": "MISSING_MANIFEST",
+          "expected": "SOURCE_MANIFEST_REQUIRED",
+          "observed": "SOURCE_MANIFEST_REQUIRED"
+        },
+        {
+          "id": "SELF_CERTIFIED_INDEPENDENCE",
+          "expected": "SOURCE_SELF_REVIEW",
+          "observed": "SOURCE_SELF_REVIEW"
+        },
+        {
+          "id": "MISSING_SOURCE_SPAN",
+          "expected": "SOURCE_MANIFEST_UNGROUNDED",
+          "observed": "SOURCE_MANIFEST_UNGROUNDED"
+        }
+      ]
+    },
+    "all_test_count": 38,
+    "passed": 38,
+    "failed": 0
+  },
+  "scenario_hypotheses": [
+    {
+      "case_id": "QSFE-R12-WAR",
+      "subject": "READER",
+      "scope": "LOCAL_BEAT",
+      "hypothesis": "XZ? / ZX? / Z?",
+      "f3": null
+    },
+    {
+      "case_id": "QSFE-R12-MEAL",
+      "subject": "READER",
+      "scope": "LOCAL_BEAT",
+      "hypothesis": "NZ? / XZ? / N?",
+      "f3": null
+    },
+    {
+      "case_id": "QSFE-R12-AFTER",
+      "subject": "READER",
+      "scope": "CHAPTER_TO_DATE",
+      "hypothesis": "XZ? / X并Z? / NZ?",
+      "f3": null
+    }
+  ],
+  "source_status": "ASSISTED_PARAPHRASE_FROM_MIRRORS_AND_PRIOR_RESEARCH_NOT_OFFICIAL_ORIGINAL",
+  "manifest_review_mode": "ASSISTED",
+  "independent_agent": false,
+  "independent_source_audit": false,
+  "human_F3_count": 0,
+  "correctness_claims": {
+    "event_completeness_of_scoped_manifest": true,
+    "whole_novel_or_full_chapter_exhaustiveness": false,
+    "tenyuan_accuracy_measured": false,
+    "original_author_fulltext_verified": false,
+    "L2_strict_relation_verified": false
+  },
+  "next": "Independent original/reader-scoped source event manifest; reader response F3 with prior 241 cue x 242 testimony 2x2; then Codex independent prelock. No blind grade without these.",
+  "stop": "R12 source-scoped structure regressions completed and archived; do not count program PASS as ten-yuan empirical success."
+}
