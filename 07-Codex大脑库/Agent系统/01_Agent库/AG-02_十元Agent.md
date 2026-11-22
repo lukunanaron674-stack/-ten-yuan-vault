@@ -124,3 +124,11 @@
 - 执行正本：[[05-银矿库/电影采矿流水线_囷霜钧阿白_AG09|采矿流水线 §00 v2.0]]。审核AG-13各边时先分`PLOT_ACTION`剧情事实、`ROLE_TENYUAN`人物间感受、`THEME_FILM`单片五维解释、`L2_CLAIM`全局规则候选；**只有L2_CLAIM需要严格机制合法性审计并禁止越权解冻**。
 - 每边独立给`SUPPORTED_FILM_READING / RULE_CONFLICT / NOT_ESTABLISHED / INSUFFICIENT_EVIDENCE`以及合法端点、来源事件、去第三因素/删边反证。USER的电影级「命运生时间」可作为作品经验保留，若与全局正本冲突标`RESEARCH_CONFLICT`，不删除、不自动晋升L2。
 - 对旧三元文件与历史“完成入库”评语标`LEGACY_ONLY`，F1/F2/F3与C-film等级分离；即使钧100分也不能解除Z/ZN冻结或授予观众人评。
+
+## 2026-11-22｜QSFE-R12 读者信息时窗独立审核接口
+
+- 继承现行L2：感受主语是具体语境下的**读者**，不是固定地点或人物本体十元。AG-02独立复核来源中`chapter/unit`窗口、读者已经知道的情节信息与本段新增刺激，再比较十元候选、竞争者和反证。
+- QSFE-R12新门禁对每个case要求：`reader_window.cutoff_chapter/cutoff_unit/analysis_scope/context_mode/visible_cue_ids/anchor_cue_ids`；以及`source_manifests[case_id].reader_cues`中具名出处与次序。`LOCAL_BEAT`只检验局部刺激（可NZ?），`CHAPTER_TO_DATE`才允许声明迄今整章体验（危机下XZ?/X并Z?竞争）。
+- 241章已出现**肥羊/恐吓小六**时，242章饭桌场面即使局部温情，也不能清空已知先验；242新增哀嚎与血腥是乌云**证词**，不能倒写已确认住客遇害。漏保留241既知危险线索→`READER_PRIOR_CUE_MISSING`；提前引用未来段内证词→`READER_FUTURE_LEAK`；局部与整章十元结论偷换→`READER_SCOPE_COLLAPSE`。
+- 分量测试建议先做2×2：241先验线索(有/无) × 242新增证词(有/无)，固定场景及其余人物、指定同一个刺激窗口；本轮**只构造可复现门禁，不曾实施人类感受实验**。`review_mode=ASSISTED`时自动验证只算结构合同，不充当AG-02独立人员或C-feeling等级。
+- 执行目录与命令见`AG-13_十元链Agent.md`同日QSFE-R12节；所有结果交674-354/674-105原工单，独立真人F3=null、L2严格关系不解冻。
