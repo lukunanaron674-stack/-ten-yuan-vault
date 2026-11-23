@@ -4771,6 +4771,30 @@
       "toNode": "QSFE-0003-CANVAS",
       "toSide": "top",
       "toEnd": "arrow"
+    },
+    {
+      "id": "QSPR-0184",
+      "fromNode": "QSP-0140",
+      "toNode": "QSP-0001",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "312 PROPOSAL invited-to-reside"
+    },
+    {
+      "id": "QSPR-0185",
+      "fromNode": "QSP-0007",
+      "toNode": "QSP-0001",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "312 FACT intervened-in-residence-invitation"
+    },
+    {
+      "id": "QSPR-0186",
+      "fromNode": "QSP-0035",
+      "toNode": "QSP-0001",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "312 INFERENCE inferred-adoption-plan"
     }
   ]
 }
