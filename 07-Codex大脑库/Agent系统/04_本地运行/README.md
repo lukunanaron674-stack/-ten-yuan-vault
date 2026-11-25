@@ -76,3 +76,23 @@ node --input-type=module -e "import fs from 'node:fs'; import {selfTest} from '.
 
 ## 5 回执格式与交接
 每轮：run_id、agent_id、source_hash、project_id、job_id、model_tag/digest、profile_version、prompt/实际证据引用、可见结构结果、tool_calls/真实artifact或日志引用、耗时/显存、版本前后、verdict、failure_family、next_action、needs_user。数据用用户授权普通创作材料，非敏感回执写GitHub或Linear。R0-R7统一回写77本子键及原业务工单，复用旧Canvas（先按布局skill审计唯一分支，不复制）。Chat负责知识校准、分析证据、方案与复验标准；Codex负责本机代码、加载、运行与回执，网页端不能启动本机。当前状态WEB_SCAFFOLD_READY，20个真实本地席位运行验证0/20。
+
+
+## 6 用户新增目标｜LibTV文本框 × 每岗位独立Hermes（2026-11-25）
+**入口唯一**：LibTV 3100现有画布文本节点，增加普通文字 / Hermes代理两种模式；不另外做第二个聊天软件。每个代理席位（18个原AG＋LOCAL-GM/LOCAL-CODE）对应一个独立Hermes profile候选；独立角色定义、Skill、可访问知识、会话/工作记忆、工具许可，底层共享现有Ollama和GPU调度，非20份模型权重、非20个常驻GPU进程。
+**现有事实**：674-217（Duplicate→674-77）历史记录WSL Ubuntu-24.04 Hermes 0.14.0，Linear MCP list/test曾连接并发现59工具；QQ真实消息尚未验收。本机当前版本/运行状态/HTTP端口未核实。674-357明确LibTV唯一记录台，3100、CanvasWorkspace.tsx、现有MCP stdio→HTTP后端，跑团投喂与项目素材验证已有实测；历史记录不等于Hermes已接通。356最新回执为跑团v1.3.0，概念树回灌与在场板由WorkBuddy独占。355实际是跑团文字→构图skill，不是LibTV总母单；其视频识别前置实验保留为子任务。
+**官方前人**：[Hermes Agent API Server](https://hermes-agent.nousresearch.com/docs/user-guide/features/api-server) 已实现OpenAI兼容API及profile路由；[Profiles](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/profiles.md) 支持不同配置/Skill/记忆；[MCP](https://hermes-agent.nousresearch.com/docs/user-guide/features/mcp) 提供工具连接与筛选；[配置](https://hermes-agent.nousresearch.com/docs/user-guide/configuration) 支持本地Ollama提供者；[Open WebUI](https://hermes-agent.nousresearch.com/docs/user-guide/messaging/open-webui) 是外部聊天界面接Hermes的现成参考。以上为现行文档，不保证历史0.14.0支持同样API。先在WSL用实际帮助、源码和健康检查核对版本/feature；若不支持profile API则在独立测试profile用已验证CLI或官方programmatic接口适配，不强升生产、不暴露任意shell。
+**网页端交付**：同目录HERMES_LIBTV_PROFILES.json（commit 9ddd1797d4b64735f6b1be29ba43460d2f4cdee2，blob 1b1e8b19e7280c3651ab728fbe418b3ea3fd0fe0），20个稳定profile名、各岗正本/知识来源、Q4/Q6/Q8教学引用与最小工具许可候选。工具别名为拟定适配器契约，实际MCP名称和输入schema由本机枚举、查现有源码后绑定；不存在就BLOCKED，不假装已注册。Hermes profile隔离是配置与记忆隔离，不能当作OS安全沙箱；跨项目/跨代理访问须由宿主工具白名单、路径约束、凭据权限强制隔离。
+**架构**：LibTV文本节点→LibTV服务端Hermes bridge（Node/现有后端实现，私有端口/鉴权）→目标Hermes profile（会话键project_id/node_id/profile_id/session_id）→本地Ollama（明确tag，真实route回执）→授权工具调用（LibTV原MCP/知识只读/独立代码沙盒）→AG-00汇总状态→LibTV事件流显示可见输出/工具/文件/节点/任务回执。优先用Hermes作为运行内核，dispatch_gate.mjs仅作外层确定性约束/测试，不重复造第二个agent loop。浏览器不得直接持有Hermes/Linear密钥；仅本地/鉴权监听，不开放公网/默认远程命令。模型命令不得原样执行为任意shell；终端功能只走明确白名单、隔离工作区与用户已授权任务，不自动删除/改生产/上传/付费。禁静默云端fallback。
+**拟定UI**：普通文本节点保留原有编辑和描述词功能；Agent模式可选择Hermes岗位、模型Q4/Q6/Q8、对话/执行模式、当前选中节点作为上下文，显示会话、任务状态、工具调用名称与返回摘要、实际产生的节点/文件、停止与恢复按钮。@AG-xx或明确菜单选择同一路由；@AG-00请求多岗协作时由总控按实际依赖调用，不能并行占GPU；各岗只提交独立delta。聊天记录和任务记录分账；对话不是命令已执行，排队不是视频已生成。
+**拟定后端契约**（新增端点名称由本机先查现有路由防冲突）：GET /api/agents列20席位及实际ready状态；POST /api/agent-runs接收project_id、node_id、agent_id、model_profile、message、mode、input_refs、session_id、expected_state_version、idempotency_key；返回run_id和状态。事件流提供MESSAGE_DELTA、TOOL_PROPOSED、TOOL_STARTED、TOOL_RESULT、ARTIFACT_READY、WAIT_GPU、BLOCKED、DONE，均带真实run_id及序号。POST cancel仅取消对应run，不杀其它H3/GM进程。断点恢复按真实task id查询外部状态，重复提交不得重复出片。前端schema新增字段需持久化回读、防旧节点静默strip、npm build后本地验证。
+**优先R1–R7（本支线 H-L01～07）**：
+1. H-L01：核Hermes实际版本、现有profile/QQ/Linear连接、WSL与Windows Ollama/3100网络路径、真实MCP工具列表；备份并避免更改现有QQ/生产配置。
+2. H-L02：先建一个隔离测试profile（AG-00），通过实际本地Ollama成功对话，证明无云端fallback；接LibTV服务端桥与文本框，回传真实可见消息与session id。
+3. H-L03：AG-02与AG-08各一独立profile，确认三岗记忆/角色/工具相隔离；Q4/Q6/Q8选择与教学profile匹配，视觉组件不支持则显式BLOCKED。AG-02只能知识研究，AG-08只读取普通创作视频并审核，不能直接渲染。
+4. H-L04：AG-00调度AG-03/04/07/08，按现有LibTV项目/素材门，执行1个普通6秒动画闭环：计划→提交→实际MP4→时序抽帧→证据定位→修正→最多2次重试→归档。真实video/job/node id，拒绝仅文字结果冒充出片。
+5. H-L05：注册剩余Hermes profile达到20个席位；逐岗按原LA-R2～R6最小验收，确认身份、独立会话、知识来源、实际工具和权限；不能只批量创建空profile就记为已验收。共享模型与显存调度。
+6. H-L06：读真实Linear 77测试查询；经批准的隔离代码目录读取→小修复→测试→diff；不直接修改生产、不开任意shell、不自动写工单；验证拒绝越权、取消、重复回执、重启恢复、模型排队。
+7. H-L07：LibTV前端构建、隔离端到端验收，原文本节点/画布存档兼容；逐岗回执20/20才算全席位最小可运行。原有AG验收标准不改。接入已有问题树，按Canvas skill先预检；不强行新增图。
+
+**工单**：674-77主控AI-LOCAL-32G/AGENT-RUNTIME/HERMES-LIBTV；674-357唯一LibTV侧记录台（由该端占用者协调前端/后端变更），356跑团与资源调度、359独立十元教学、355视觉识别前置，217保留历史不复活。Codex本机先做H-L01/02，复用已交付注册表与门禁，原LA-R0/R1与本支线前置合并，避免重复测试。所有新开发只覆盖普通动画/研究/代码场景；不读取或复制无关专项生产提示词。当前20个profile映射已写入且回读，实际创建0/20，LibTV-Hermes对话0次，实际视频闭环0次，尚未启动本机，状态WAIT_LOCAL_CODEX。
