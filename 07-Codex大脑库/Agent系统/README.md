@@ -78,3 +78,9 @@
 - AG-17不抢角色/五维/十元L2结论；所有十元/感受预测须假设分账、可回源、有反例。
 - 共用既有十元血肉方法论与银矿材料体系，检查唯一卡后增量；不创建第二套电影库/角色库/Canvas。
 - **状态仅为GitHub岗位注册；`WAIT_EXECUTION`**。未运行本地Hermes/Codex，未设定时任务，未产出真实材料采集样本。
+
+
+## 本地执行接入｜AI-LOCAL-32G/AGENT-RUNTIME（2026-11-25）
+- 本地运行入口：[[07-Codex大脑库/Agent系统/04_本地运行/README|本地总代理接入合同]]，总工单 [674-77](https://linear.app/674/issue/674-77) 的既有AI-LOCAL-32G分支。机器注册表 `04_本地运行/LOCAL_AGENT_REGISTRY.json`、纯函数沙盒门禁 `04_本地运行/dispatch_gate.mjs`。
+- **18个现有正式岗位全量登记＋2个建议执行适配位（LOCAL-GM/LOCAL-CODE）=20个本地运行席位目标。** 适配位不是新增正式AG-18/19；不修改18岗正本、项目DISPATCH_TABLE或L2。Q4/Q6/Q8均加载独立十元教学版本并按岗位验证。优先复用现有Ollama、GM、LibTV与工具桥，单GPU串行。
+- 网页端注册表回读及19个沙盒模拟断言通过；本机加载/工具/真实任务回执仍0/20。Codex执行LA-R0～R7；状态 WEB_SCAFFOLD_READY_WAIT_LOCAL_CODEX。详见接入合同，未实际完成不标PASS，不创建平行总工单。
