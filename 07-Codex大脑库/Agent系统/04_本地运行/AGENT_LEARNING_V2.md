@@ -40,3 +40,6 @@ L-R01 资产和知识索引，列可访问范围/新增/无法访问；L-R02 AG0
 每岗最小升级包字段：agent_id, source_refs/hash, observed_success, observed_failure, author_acceptance, rule_candidate, counterexample, skill_or_recipe, applicable_scope, baseline/holdout, before_after, model_tag/context, evidence_level, status, stop_condition, rollback_version；保存至现有04_本地运行下隔离候选学习目录（不重复建理论库）；先写候选，再测试、独立复核、批准后按现有协议进入各岗位知识索引。没有新增证据则NO_NEW_EVIDENCE；失败最多2次修复。用同一题/同一模型/同样上下文对照旧版和新版本；不能将样本内记忆冒充泛化。20/20经验包与20/20实测分别统计。真实视觉质量/生成新样本需另授权；仅使用历史已有产物与留出验证，不能宣称新图效果已改善。既有自动化、Q冻结门禁不改。每阶段只做实际有限增量并回执；暂定先一次执行L-R01～04、再05～08，GPU与77/359/355错峰。CPU盘点/日志/ffprobe先做，无GPU也可开始；实际图像视觉推理需锁，若GPU忙等待。
 ## 执行权
 建议Luna 6独立Codex框做只读学习和候选经验包，Terra独占77 LibTV/Hermes集成；风格职责变更与候选Skill合入需Terra/作者后续确认。不能写当前占用源码或启动生产。先检查294额度/去重，不重复建单。当前Chat已核注册表与AG05/06/07/08等职责、检索开源参考；本机学习0/20，未读取实际LibTV图片、视频、跑团内容，未修改原代理正本。
+
+## 工单归属更新（2026-11-25）
+USER授权复用无用编号：674-2原Linear入门示例Connect your tools（Canceled、无阻塞/父子依赖、无评论/附件/文档）已改造为AGENT-LEARN-V2唯一执行工单，Backlog，原描述保留在历史区。此前77的同键临时分支仅作为迁移历史及链接，不再派发该学习任务；77仍独占Terra集成。Luna只从674-2读取执行轮次，回执归674-2。既有359/355实验与生产占用保持不变；不因复用而宣称额度释放或本机已执行。
