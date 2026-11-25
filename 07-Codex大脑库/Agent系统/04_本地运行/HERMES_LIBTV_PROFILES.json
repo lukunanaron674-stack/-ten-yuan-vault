@@ -1,0 +1,437 @@
+{
+  "schema_version": "0.1",
+  "task_key": "AI-LOCAL-32G/AGENT-RUNTIME/HERMES-LIBTV",
+  "status": "DESIGN_READY_WAIT_LOCAL",
+  "source_registry_sha": "ec49c873bd526a5649dca775e89bc9b3b2a62a65",
+  "tool_aliases_note": "Proposed host adapter names, NOT verified actual MCP tools. Map to discovered tools and fail closed if absent. Do not expose unrelated existing tools.",
+  "local_endpoint": "Discover installed Hermes API/CLI in WSL; do not assume latest API exists in 0.14.0",
+  "model_policy": "Use existing Ollama Q4/Q6/Q8 tags and corresponding TY profiles; one GPU job at a time, no cloud fallback",
+  "session_key_fields": [
+    "project_id",
+    "node_id",
+    "profile_id",
+    "session_id"
+  ],
+  "profiles": [
+    {
+      "agent_id": "AG-00",
+      "hermes_profile": "libtv-ag-00",
+      "display_name": "导演",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-00_导演Agent.md",
+      "role_source_sha": "86d674bd06471dff85335f017a1d246cbe2b29ec",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "agent_dispatch",
+        "project_read",
+        "receipt_read"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-01",
+      "hermes_profile": "libtv-ag-01",
+      "display_name": "剧本",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-01_剧本Agent.md",
+      "role_source_sha": "8298c546edce30a6e3e84e6bd09809e225721a67",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "knowledge_read",
+        "project_read",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-02",
+      "hermes_profile": "libtv-ag-02",
+      "display_name": "十元",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-02_十元Agent.md",
+      "role_source_sha": "3907a9ac9906159a272ebcfb00d20dfabe4dc7c7",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "knowledge_read",
+        "project_read",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-03",
+      "hermes_profile": "libtv-ag-03",
+      "display_name": "分镜",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-03_分镜Agent.md",
+      "role_source_sha": "0a15fb52511a80111c4590027cd01add17c347fa",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "knowledge_read",
+        "project_read",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-04",
+      "hermes_profile": "libtv-ag-04",
+      "display_name": "素材",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-04_素材Agent.md",
+      "role_source_sha": "5692abdab13fb1adc9098f86449fb8bb1f812068",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "asset_list",
+        "asset_verify"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-05",
+      "hermes_profile": "libtv-ag-05",
+      "display_name": "生图",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-05_生图Agent.md",
+      "role_source_sha": "ebc701b4d74d0a0f341afc7fefabdf1c8ad484af",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "image_plan",
+        "image_submit",
+        "job_status"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-06",
+      "hermes_profile": "libtv-ag-06",
+      "display_name": "风格审核",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-06_风格审核Agent.md",
+      "role_source_sha": "00ecb8e320cc25ab894a73de0aee122f6eb6c7fa",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "asset_read",
+        "image_inspect",
+        "submit_review"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-07",
+      "hermes_profile": "libtv-ag-07",
+      "display_name": "H3渲染",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-07_H3渲染Agent.md",
+      "role_source_sha": "a1f7cbc30601cdb99832ab2e573c71e2a5de169b",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "render_plan",
+        "render_submit",
+        "job_status"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-08",
+      "hermes_profile": "libtv-ag-08",
+      "display_name": "视频审核",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-08_视频审核Agent.md",
+      "role_source_sha": "d1b58ba757885cc847842d1e289aca1a6771cc95",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "video_metadata",
+        "frame_sample",
+        "submit_review"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-09",
+      "hermes_profile": "libtv-ag-09",
+      "display_name": "主题",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-09_主题Agent.md",
+      "role_source_sha": "eb46d6620b92b3cc567803f25e2707de6f41340f",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "knowledge_read",
+        "project_read",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-10",
+      "hermes_profile": "libtv-ag-10",
+      "display_name": "世界观",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-10_世界观Agent.md",
+      "role_source_sha": "aa482847db74eb04b489cd6a7b8faf62635fbe35",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "knowledge_read",
+        "project_read",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-11",
+      "hermes_profile": "libtv-ag-11",
+      "display_name": "角色",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-11_角色Agent.md",
+      "role_source_sha": "4ebdee94dfc221c08495ec2351a39205d8df5f94",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "knowledge_read",
+        "project_read",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-12",
+      "hermes_profile": "libtv-ag-12",
+      "display_name": "短剧剧本",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-12_短剧剧本Agent.md",
+      "role_source_sha": "b3a36167ed56b0672c5eeb90abe4dc4435ca9589",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "knowledge_read",
+        "project_read",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-13",
+      "hermes_profile": "libtv-ag-13",
+      "display_name": "十元链",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-13_十元链Agent.md",
+      "role_source_sha": "3ba1928f29596488172ca3766ef7fbe103b208aa",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "knowledge_read",
+        "project_read",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-14",
+      "hermes_profile": "libtv-ag-14",
+      "display_name": "动态链",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-14_动态链Agent.md",
+      "role_source_sha": "ec2140235f7c63b71417c8562de1b4d265e99fd2",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "knowledge_read",
+        "project_read",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-15",
+      "hermes_profile": "libtv-ag-15",
+      "display_name": "十元整理师",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-15_十元整理师Agent.md",
+      "role_source_sha": "35843faf5c5172f4bd746cfc35f52b58ce706699",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "knowledge_read",
+        "project_read",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-16",
+      "hermes_profile": "libtv-ag-16",
+      "display_name": "材料采集",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-16_材料采集Agent.md",
+      "role_source_sha": "03965c2cf447e795b3374dff7c568f50d4a66c31",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "source_search",
+        "source_read",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "AG-17",
+      "hermes_profile": "libtv-ag-17",
+      "display_name": "材料解构",
+      "role_source": "07-Codex大脑库/Agent系统/01_Agent库/AG-17_材料解构Agent.md",
+      "role_source_sha": "81fdb91398d2998690c91df25f54b4dded9daeea",
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "knowledge_read",
+        "project_read",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "LOCAL-GM",
+      "hermes_profile": "libtv-local-gm",
+      "display_name": "本地跑团执行",
+      "role_source": "674-356",
+      "role_source_sha": null,
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "gm_state_read",
+        "gm_sandbox_turn",
+        "submit_draft"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    },
+    {
+      "agent_id": "LOCAL-CODE",
+      "hermes_profile": "libtv-local-code",
+      "display_name": "本地编程执行",
+      "role_source": "674-77",
+      "role_source_sha": null,
+      "skills_source": "Existing role/CTX and applicable current knowledge, do not copy credentials or unrelated memories",
+      "model_profile_refs": {
+        "Q4": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q4-v0.1.md",
+        "Q6": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q6-v0.1.md",
+        "Q8": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物场景十元化/模型十元理解版本/TY-Q8-v0.1.md"
+      },
+      "allowed_tool_aliases": [
+        "sandbox_read",
+        "sandbox_patch",
+        "sandbox_test",
+        "diff_read"
+      ],
+      "memory_scope": "profile_and_project",
+      "status": "PLANNED_NOT_CREATED",
+      "default_mode": "SANDBOX"
+    }
+  ]
+}
