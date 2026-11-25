@@ -1,0 +1,441 @@
+{
+  "schema": "QSFE_P01_P06_ACTOR_SCENE_MATRIX_V1",
+  "date": "2026-11-25",
+  "issue": "674-354",
+  "source_grade": "EXISTING_RESEARCH_EVIDENCE_NOT_NEW_ORIGINAL_FULLTEXT",
+  "source_shas": {
+    "role": "d0fa1f4ca134eb63fa82e9da39da2ae88fbb7050",
+    "scene": "29f74c529171dc6e65d99c1a8401f05aa6da39bf",
+    "people": "7416ca1b4f860cc81e9cc0b634511205193bbdbb",
+    "organization": "b1708f6c9cce2694e4d0110ec521355b8296adb0",
+    "prior_index": "70de92d4daf31dddac50a041750f38da453a62d7"
+  },
+  "roles": [
+    {
+      "person_id": "QSP-0001",
+      "name": "陈迹",
+      "status": "WAIT_EVIDENCE",
+      "hypotheses": [
+        "ZX?破门/报讯中的对抗动作",
+        "XN?分级证据与步调安排",
+        "ZN?尊重小满选择权但仅承诺",
+        "NZ?亲近三人的选择性保护"
+      ],
+      "abstention": "236给小满身契承诺未兑现；237克制军情泄漏与需要钱矛盾；238冒险属于具体调查；241区分边军内部；242明确只筹划带亲近三人逃离。ZX/XN/ZN/NZ的本核区分需跨关系实际付出代价与抽离检验；此窗口Top1重开。",
+      "evidence_ids": [
+        "E237_INFO",
+        "E238_ENTRY",
+        "E240_CAPTURE",
+        "R09-E236-AUTONOMY",
+        "R09-E237-MONEY",
+        "R09-E241-DIFFERENTIATE",
+        "R09-E242-BOUNDARY"
+      ],
+      "stable_main": null,
+      "stable_secondary": null,
+      "F3": null
+    },
+    {
+      "person_id": "QSP-0005",
+      "name": "李玄",
+      "status": "WAIT_EVIDENCE",
+      "hypotheses": [
+        "XN?组织撤离方案",
+        "XZ?对风险的担心"
+      ],
+      "abstention": "三种行动跨章但多为未被采纳的命令/提议；角色是否承担明确代价与长期内心选择未知。XN与XZ皆能解释撤离提案，缺区分内心需求的证据",
+      "evidence_ids": [
+        "E233_LI_EXIT",
+        "E239_LI_GUIDE",
+        "E241_LI_TUNNEL"
+      ],
+      "stable_main": null,
+      "stable_secondary": null,
+      "F3": null
+    },
+    {
+      "person_id": "QSP-0006",
+      "name": "齐斟酌",
+      "status": "WAIT_EVIDENCE",
+      "hypotheses": [
+        "XN?现场队形控制的功能层，不是本核"
+      ],
+      "abstention": "本样本仅一段率人结阵，缺个人自主抉择和跨章代价",
+      "evidence_ids": [
+        "R49-238-羽林军结阵"
+      ],
+      "stable_main": null,
+      "stable_secondary": null,
+      "F3": null
+    },
+    {
+      "person_id": "QSP-0007",
+      "name": "陈礼钦",
+      "status": "WAIT_EVIDENCE",
+      "hypotheses": [
+        "XN?阻止风险行动的功能",
+        "XZ?警惕"
+      ],
+      "abstention": "多项反对或警告可以来自职责、利益或惧怕；缺少他本人作出有代价选择时的内心目标，XN与XZ无法判别",
+      "evidence_ids": [
+        "R47-233-尝试交涉",
+        "R49-239-警告",
+        "R49-240-反对任职"
+      ],
+      "stable_main": null,
+      "stable_secondary": null,
+      "F3": null
+    },
+    {
+      "person_id": "QSP-0013",
+      "name": "太子（姓名未核）",
+      "status": "WAIT_EVIDENCE",
+      "hypotheses": [
+        "Z?坚持方案的阶段功能",
+        "ZN?顾及他人独立性的竞争假设"
+      ],
+      "abstention": "跨章有数次决定，但提议任命、拒绝逃离与移交俘虏不能证明Z或ZN内在感受；留在危险处的已付个人代价未知，Z/ZN语义冻结关系不能反推主元",
+      "evidence_ids": [
+        "E233_PRINCE_STAY",
+        "E240_PRINCE_PROPOSE",
+        "E241_PRINCE_STAY",
+        "E241_PRINCE_TRANSFER"
+      ],
+      "stable_main": null,
+      "stable_secondary": null,
+      "F3": null
+    },
+    {
+      "person_id": "QSP-0021",
+      "name": "小五",
+      "status": "WAIT_EVIDENCE",
+      "hypotheses": [
+        "监视/带路的行为角色，不由职务定元"
+      ],
+      "abstention": "主要是履行监视/带路行动；动机、服从成本、个人立场不足",
+      "evidence_ids": [
+        "R47-236-小五监视陈迹",
+        "R49-242-小五带人到马厩"
+      ],
+      "stable_main": null,
+      "stable_secondary": null,
+      "F3": null
+    },
+    {
+      "person_id": "QSP-0064",
+      "name": "乌云",
+      "status": "WAIT_EVIDENCE",
+      "hypotheses": [
+        "XZ?阶段危险警报（基于乌云的证词），不代表灵魂"
+      ],
+      "abstention": "仅当次称闻声与血腥；传闻不等于真实伤亡，更不证明人物稳定主元",
+      "evidence_ids": [
+        "R49-242-乌云证词"
+      ],
+      "stable_main": null,
+      "stable_secondary": null,
+      "F3": null
+    },
+    {
+      "person_id": "QSP-0150",
+      "name": "龙门客栈掌柜",
+      "status": "WAIT_EVIDENCE",
+      "hypotheses": [
+        "XN?信息交易/管理流程",
+        "X并Z?控制或排斥的可能",
+        "NZ?保护目的需另证"
+      ],
+      "abstention": "行动跨章但真实目的、个人牺牲与客人去向未知；提供折扣/管理交易不能直接判XN，分送住客未证保护NZ",
+      "evidence_ids": [
+        "E235_SHOP_DISCOUNT",
+        "E237_SHOP_TRADE",
+        "E241_SHOP_SEND",
+        "E242_SHOP_PERMIT"
+      ],
+      "stable_main": null,
+      "stable_secondary": null,
+      "F3": null
+    },
+    {
+      "person_id": "QSP-0151",
+      "name": "小六",
+      "status": "WAIT_EVIDENCE",
+      "hypotheses": [
+        "按客栈规矩行动，功能层非十元主核"
+      ],
+      "abstention": "分送客人执行结果未知；职务服从与人格核心不能等同",
+      "evidence_ids": [
+        "R47-235-小六引客",
+        "R47-236-阻坐东家专桌",
+        "R49-241-被命分送客人"
+      ],
+      "stable_main": null,
+      "stable_secondary": null,
+      "F3": null
+    }
+  ],
+  "windows": [
+    {
+      "id": "GS-01",
+      "place": "QSPLACE-CAND-0001",
+      "name": "都司府门禁/偏房入口",
+      "chapters": [
+        238
+      ],
+      "organizations": [
+        "QS21-029",
+        "QS21-030"
+      ],
+      "rank": "RESEARCH_PRIORITY_ONLY_UNCALIBRATED",
+      "main_H": "XZ?",
+      "secondary_H": "ZX?",
+      "competitors": [],
+      "F3": null,
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "GS-02",
+      "place": "QSPLACE-CAND-0002",
+      "name": "库勒街错路→追缉（擒获具体地点未核）",
+      "chapters": [
+        239,
+        240
+      ],
+      "organizations": [],
+      "rank": "XZ_Z_ZX_UNRESOLVED",
+      "main_H": null,
+      "secondary_H": null,
+      "competitors": [
+        "XZ?",
+        "Z?",
+        "ZX?"
+      ],
+      "F3": null,
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "GS-03A",
+      "place": "QSPLACE-CAND-0003",
+      "name": "固原龙门客栈消息交易区",
+      "chapters": [
+        235,
+        236,
+        237
+      ],
+      "organizations": [
+        "QS21-083"
+      ],
+      "rank": "REOPEN_RANKING_NEW_FINGER_BREAKING_237",
+      "main_H": null,
+      "secondary_H": null,
+      "competitors": [
+        "XZ?警惕/威慑",
+        "X并Z?惩戒厌恶",
+        "XN?规则可操作的局部感"
+      ],
+      "F3": null,
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R47_作者233-237五章正文人物增量_20261122.md"
+    },
+    {
+      "id": "GS-03B",
+      "place": "QSPLACE-CAND-0003",
+      "name": "龙门客栈分送地字丙庚住客",
+      "chapters": [
+        241
+      ],
+      "organizations": [
+        "QS21-083"
+      ],
+      "rank": "R241_KNOWN_PREDATORY_CUE_XZ_X并Z_H_PRIORITY_NOT_HUMAN_VERIFIED",
+      "main_H": "XZ?",
+      "secondary_H": "X并Z?",
+      "competitors": [
+        "XZ?受害风险",
+        "X并Z?利用/惩戒的厌恶",
+        "NZ?保护说法缺正面证据"
+      ],
+      "F3": null,
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    },
+    {
+      "id": "GS-03C",
+      "place": "QSPLACE-CAND-0003",
+      "name": "龙门客栈马厩下方",
+      "chapters": [
+        242
+      ],
+      "organizations": [
+        "QS21-083"
+      ],
+      "rank": "R242_CUE_OVER_R241_PRIOR_NOT_DEATH",
+      "main_H": "XZ?",
+      "secondary_H": "X并Z?",
+      "competitors": [
+        "XZ?恐惧",
+        "X并Z?厌恶",
+        "NZ?仅在后续真实救助信息改变后才研究"
+      ],
+      "F3": null,
+      "source": "09-给674（我）用的库/概念库/环境概念设计总库/06_社会结构/青山_人物采集/青山_R49_作者238-242正文与人物行动分级_20261122.md"
+    }
+  ],
+  "pairs": [
+    {
+      "id": "P-AS-01",
+      "person_id": "QSP-0001",
+      "window": "GS-01",
+      "cutoff": 238,
+      "novelty": "REUSED_R1_01",
+      "scene_to_person": "武装门禁限制常规通行；陈迹改变进入方式。",
+      "person_to_scene_actual": "陈迹闯入；老吴允许进入且阻追兵。不能把老吴的放行归为陈迹改变制度。",
+      "actual_outcome": "普通通行受阻；特殊放行实际发生；永久规则未变。",
+      "person_to_scene_reader_H": "XZ?/ZX?；反抗或危情皆可解释",
+      "intervention": "保持危情，改为公开可核通行授权",
+      "predicted_discriminator": "若绕行消失，支持门禁是行为约束；若危险感不降，危情是竞争解释",
+      "evidence_ref": "R49-238 / EV03",
+      "evidence_status": "FACT",
+      "source_url": "https://www.piaotia.com/html/15/15702/11482555.html",
+      "span_offset": null,
+      "span_status": "EXISTING_SUMMARY_NOT_VERBATIM",
+      "strict_relation": null,
+      "F3": null,
+      "counterfactual_status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "P-AS-02",
+      "person_id": "QSP-0001",
+      "window": "GS-02",
+      "cutoff": 240,
+      "novelty": "NEW_JOIN_EXISTING_EVIDENCE",
+      "scene_to_person": "239甲士引队伍至库勒街后失踪，路线信息受损，陈迹追擒。",
+      "person_to_scene_actual": "陈迹擒获甲士，改变其自由行动状态；擒获地点未知，不能说改造库勒街。",
+      "actual_outcome": "被擒；企图自刎，证言能否取得未证。",
+      "person_to_scene_reader_H": "XZ?/Z?/ZX? 未排序",
+      "intervention": "保持错街和追擒，只将被擒后企图自刎改为主动供述",
+      "predicted_discriminator": "若线索风险下降但追缉刺激仍在，则区分失证压力与动作刺激；仅预注册",
+      "evidence_ref": "R49-239/240 / EV04",
+      "evidence_status": "FACT_AND_ATTEMPT",
+      "source_url": "https://www.piaotia.com/html/15/15702/11483672.html",
+      "span_offset": null,
+      "span_status": "EXISTING_SUMMARY_NOT_VERBATIM",
+      "strict_relation": null,
+      "F3": null,
+      "counterfactual_status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "P-AS-03",
+      "person_id": "QSP-0150",
+      "window": "GS-03A",
+      "cutoff": 237,
+      "novelty": "NEW_JOIN_EXISTING_EVIDENCE",
+      "scene_to_person": "酒坛区分买卖消息并收费，提供管理和交易渠道。",
+      "person_to_scene_actual": "掌柜主持规则，并在既有GS-03A记录中下令惩戒；断指为历史复查证据，非本轮全文复核。",
+      "actual_outcome": "交易规则实际使用；惩戒实际发生（既有复查）；无制度长期变化证据。",
+      "person_to_scene_reader_H": "XN?/XZ?/X并Z? 未排序",
+      "intervention": "保留酒坛与收费机制，只移除身体惩戒",
+      "predicted_discriminator": "若威慑/厌恶预测降低而规则可操作感保留，分离秩序与强迫；仅设计",
+      "evidence_ref": "R47-237 + R09-R11 GS-03A / EV02",
+      "evidence_status": "ASSISTED_FACT",
+      "source_url": "https://czbooks.net/n/s6ojkc/s6o9020b?chapterNumber=240",
+      "span_offset": null,
+      "span_status": "EXISTING_SUMMARY_NOT_VERBATIM",
+      "strict_relation": null,
+      "F3": null,
+      "counterfactual_status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "P-AS-04",
+      "person_id": "QSP-0150",
+      "window": "GS-03B",
+      "cutoff": 241,
+      "novelty": "REUSED_R1_02",
+      "scene_to_person": "房号与伙计渠道允许掌柜发出分送命令；必要性未知。",
+      "person_to_scene_actual": "掌柜称住客肥羊、命小六分送并威胁；客人实际去向未证。",
+      "actual_outcome": "命令已发，不代表执行、保护或伤亡。",
+      "person_to_scene_reader_H": "XZ?/X并Z?；NZ?竞争解释证据不足",
+      "intervention": "保留分送命令，去掉掠夺措辞与威胁",
+      "predicted_discriminator": "若危险/厌恶预测降低，支持人物话语而非分送本身是诱因；仅设计",
+      "evidence_ref": "R49-241 + GS-03B / EV08",
+      "evidence_status": "INSTRUCTION",
+      "source_url": "https://www.piaotia.com/html/15/15702/11484086.html",
+      "span_offset": null,
+      "span_status": "EXISTING_SUMMARY_NOT_VERBATIM",
+      "strict_relation": null,
+      "F3": null,
+      "counterfactual_status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "P-AS-05",
+      "person_id": "QSP-0021",
+      "window": "GS-03C",
+      "cutoff": 242,
+      "novelty": "NEW_JOIN_EXISTING_EVIDENCE",
+      "scene_to_person": "马厩下方提供引人进入的空间路径；路径必要性、授权、真实出口均未证。",
+      "person_to_scene_actual": "小五带两人进入下方，乌云报告危险线索，陈迹推断；三主体不能合并。",
+      "actual_outcome": "进入已发生；哀嚎血腥为证词；死亡与去向未知。",
+      "person_to_scene_reader_H": "XZ?/X并Z?；人物小五不锁元",
+      "intervention": "固定241已知线索，只移除242乌云证词；另设241线索有无的2×2",
+      "predicted_discriminator": "若单删242仍有危险预期，则不能把全部恐惧归于新增证词；仅设计",
+      "evidence_ref": "R49-242 + GS-03C / EV10",
+      "evidence_status": "FACT_TESTIMONY_INFERENCE_SEPARATE",
+      "source_url": "https://www.piaotia.com/html/15/15702/11484428.html",
+      "span_offset": null,
+      "span_status": "EXISTING_SUMMARY_NOT_VERBATIM",
+      "strict_relation": null,
+      "F3": null,
+      "counterfactual_status": "DESIGNED_NOT_RUN"
+    }
+  ],
+  "checks": {
+    "role_count": true,
+    "window_count": true,
+    "role_id_unique": true,
+    "role_registry": true,
+    "organization_refs": true,
+    "pair_unique": true,
+    "pair_endpoints": true,
+    "cutoff": true,
+    "all_directions": true,
+    "no_lock": true,
+    "negative_controls_designed": true
+  },
+  "rounds": [
+    {
+      "id": "P01",
+      "status": "DONE_ASSISTED",
+      "result": "current registries and 9+5 IDs joined"
+    },
+    {
+      "id": "P02",
+      "status": "DONE_REVIEW_WAIT",
+      "result": "9 reviewed, 0 long-term locks"
+    },
+    {
+      "id": "P03",
+      "status": "DONE_REVIEW_H",
+      "result": "5 windows, 3 places, 0 F3"
+    },
+    {
+      "id": "P04",
+      "status": "DONE_ASSISTED",
+      "result": "5 actual action / reader-H separated"
+    },
+    {
+      "id": "P05",
+      "status": "DONE_ASSISTED",
+      "result": "5 constraints/affordance mapped"
+    },
+    {
+      "id": "P06",
+      "status": "STRUCTURE_PASS_COUNTERFACTUAL_DESIGN_ONLY",
+      "result": "5 paired tests designed; independent F3/causal validation WAIT"
+    }
+  ],
+  "new_pairs": 3,
+  "reused_pairs": 2,
+  "strict_L2": 0,
+  "F3": 0,
+  "independent_model": 0,
+  "stop": "5 windows with stable registry references; no strict relation, no batch expansion",
+  "next": "P07 only: derive trigger conditions from existing EV01–10; preserve independent source/F3 gate; no claim R2/R3 pass"
+}
