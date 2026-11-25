@@ -1,0 +1,1278 @@
+{
+  "schema": "QSFE_P07_P12_EVENT_GENESIS_V1",
+  "date": "2026-11-25",
+  "issue": "674-354",
+  "status": "ASSISTED_PHASE2_DONE / COUNTERFACTUAL_DESIGN_ONLY / F3_WAIT",
+  "sources": {
+    "P01_P06": "2a9bc2ee4198d7a50ef9b4d97b4e3783d401be3f",
+    "EV01_10": "bdb3203d51f24464798e99b259af5c60fe7c9425",
+    "prior_index": "e64e44adc392a63afe4424f88a9b4a3bca2e287c"
+  },
+  "scope": "10 existing events, not full novel; no new source facts",
+  "cards": [
+    {
+      "id": "P-EV-01",
+      "source_case": "QSFE-EV01",
+      "title": "归还身契的自主选择承诺",
+      "type": "承诺型",
+      "precondition": "身契由他人掌握",
+      "trigger": "陈迹提出未来归还",
+      "goal_as_behavior": "恢复小满自主去留（承诺内容，非内心确证）",
+      "actions": [
+        {
+          "id": "EV01-A",
+          "chapter": 236,
+          "actor": "陈迹",
+          "target": "小满",
+          "action": "陈迹承诺回京后向夫人索回小满身契，让她自由决定去留；尚未实施",
+          "epistemic": "PROPOSAL",
+          "variable": "小满未来处置选择权",
+          "before": "身契由他人掌握",
+          "after": "承诺提出、权利实际改变未证",
+          "source": "https://www.sudugu520.com/23/13539.html",
+          "span_offset": null
+        }
+      ],
+      "place": "QSPLACE-CAND-0003",
+      "cost": "实际付出未证",
+      "outcome": "选择权承诺≠权利转移",
+      "reader": {
+        "scope": "LOCAL_BEAT",
+        "windows": [
+          {
+            "stage": "S236",
+            "stimulus": "承诺自主去留",
+            "primary_hypothesis": "ZN? / NZ?（并列）",
+            "competitors": [
+              "XN?解决约束的程序感",
+              "X?不可信的承诺"
+            ],
+            "scope": "LOCAL_BEAT",
+            "f3": null
+          }
+        ],
+        "priority_unranked_H": "ZN? / NZ?",
+        "rival_H": "X? 不信承诺；XN?程序性解决",
+        "ten_scores": {
+          "X": null,
+          "Z": null,
+          "N": null,
+          "ZN": null,
+          "NZ": null,
+          "XN": null,
+          "NX": null,
+          "ZX": null,
+          "XZ": null,
+          "X并Z": null
+        },
+        "top1": null,
+        "top2": null,
+        "F3": null
+      },
+      "five_dimensional_view": {
+        "primary": "本体",
+        "secondary": "命运",
+        "reason": "主体资格与未来选择",
+        "status": "ANALYTIC_VIEW_H_NOT_ONTOLOGY"
+      },
+      "counterfactual": {
+        "change_one": "只改变承诺履行与否",
+        "expected_discriminator": "权利实际转移才可闭合",
+        "status": "DESIGNED_NOT_RUN"
+      },
+      "template": "自主权承诺",
+      "strict_relation": null,
+      "source_grade": "EXISTING_PARAPHRASE_ASSISTED_NOT_AUTHOR_FULLTEXT"
+    },
+    {
+      "id": "P-EV-02",
+      "source_case": "QSFE-EV02",
+      "title": "龙门客栈消息交易与断指惩戒",
+      "type": "惩戒型",
+      "precondition": "客栈经营规则与信息交易存在",
+      "trigger": "出现违反交易规矩的行为",
+      "goal_as_behavior": "掌柜维持规则（行动功能，动机未证）",
+      "actions": [
+        {
+          "id": "EV02-A",
+          "chapter": 237,
+          "actor": "龙门客栈掌柜",
+          "target": "消息买卖者",
+          "action": "客栈通过酒坛和规矩安排收费的消息交易",
+          "epistemic": "FACT",
+          "variable": "信息交易可达性",
+          "before": "交易规则需服从客栈",
+          "after": "客人依特定交易规则买卖信息",
+          "source": "https://www.sudugu520.com/23/13541-2.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV02-B",
+          "chapter": 237,
+          "actor": "龙门客栈掌柜",
+          "target": "违规打听消息者",
+          "action": "掌柜下令对违规者施行断指惩戒",
+          "epistemic": "INSTRUCTION",
+          "variable": "违规惩罚的实施命令",
+          "before": "规则存在",
+          "after": "惩戒命令发出",
+          "source": "https://www.sudugu520.com/23/13541-2.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV02-C",
+          "chapter": 237,
+          "actor": "执行者未具名",
+          "target": "违规打听消息者",
+          "action": "有人在现场掰断违规者手指，实际执行者身份未核",
+          "epistemic": "FACT",
+          "variable": "受罚者身体完整性",
+          "before": "手指未受此惩戒",
+          "after": "现场手指遭受伤害",
+          "source": "https://www.sudugu520.com/23/13541-2.html",
+          "span_offset": null
+        }
+      ],
+      "place": "QSPLACE-CAND-0003",
+      "cost": "违规者手指受伤；执行者未具名",
+      "outcome": "命令与身体伤害分开",
+      "reader": {
+        "scope": "CHAPTER_TO_DATE",
+        "windows": [
+          {
+            "stage": "S237",
+            "stimulus": "买卖规矩",
+            "primary_hypothesis": "XN? / XZ?（未排序）",
+            "competitors": [
+              "交易安全/操作感",
+              "约束威慑"
+            ],
+            "scope": "LOCAL_BEAT",
+            "f3": null
+          },
+          {
+            "stage": "S237",
+            "stimulus": "断指被执行",
+            "primary_hypothesis": "XZ? / X并Z?（未排序）",
+            "competitors": [
+              "Z?暴力冲击"
+            ],
+            "scope": "CHAPTER_TO_DATE",
+            "f3": null
+          }
+        ],
+        "priority_unranked_H": "XZ? / X并Z?",
+        "rival_H": "XN?规则可操作感；Z?冲击",
+        "ten_scores": {
+          "X": null,
+          "Z": null,
+          "N": null,
+          "ZN": null,
+          "NZ": null,
+          "XN": null,
+          "NX": null,
+          "ZX": null,
+          "XZ": null,
+          "X并Z": null
+        },
+        "top1": null,
+        "top2": null,
+        "F3": null
+      },
+      "five_dimensional_view": {
+        "primary": "因果",
+        "secondary": "本体",
+        "reason": "规则如何造成现实损害",
+        "status": "ANALYTIC_VIEW_H_NOT_ONTOLOGY"
+      },
+      "counterfactual": {
+        "change_one": "保留交易规则、去掉身体惩戒",
+        "expected_discriminator": "有实际执行及目标受损证据",
+        "status": "DESIGNED_NOT_RUN"
+      },
+      "template": "规则违犯→惩戒",
+      "strict_relation": null,
+      "source_grade": "EXISTING_PARAPHRASE_ASSISTED_NOT_AUTHOR_FULLTEXT"
+    },
+    {
+      "id": "P-EV-03",
+      "source_case": "QSFE-EV03",
+      "title": "买情报→都司府门禁冲突",
+      "type": "约束突破型",
+      "precondition": "危险线索需报告；都司府有门禁",
+      "trigger": "武装阻拦",
+      "goal_as_behavior": "陈迹报讯",
+      "actions": [
+        {
+          "id": "EV03-A",
+          "chapter": 237,
+          "actor": "陈迹",
+          "target": "倾脚头",
+          "action": "陈迹得知可疑消息并向倾脚头取得详细线索",
+          "epistemic": "FACT",
+          "variable": "风险线索可得性",
+          "before": "未有该线索",
+          "after": "取得可供报告的情报",
+          "source": "https://www.sudugu520.com/23/13541-2.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV03-B",
+          "chapter": 237,
+          "actor": "陈迹",
+          "target": "张夏",
+          "action": "陈迹让张夏付消息费，自己骑马赶赴都司府通报",
+          "epistemic": "FACT",
+          "variable": "急报行动状态",
+          "before": "线索停留在客栈",
+          "after": "陈迹前往都司府，是否已及时传达须继续读事件",
+          "source": "https://www.sudugu520.com/23/13541-2.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV03-C",
+          "chapter": 238,
+          "actor": "羽林军",
+          "target": "陈迹",
+          "action": "羽林军以太子行辕为由阻止陈迹进入",
+          "epistemic": "FACT",
+          "variable": "陈迹通行权",
+          "before": "欲赴府报讯",
+          "after": "被武装门禁拦截",
+          "source": "https://www.sudugu520.com/23/13546-3.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV03-D",
+          "chapter": 238,
+          "actor": "陈迹",
+          "target": "守军/太子",
+          "action": "陈迹冒险闯入并改采取屋顶穿行、当众报讯",
+          "epistemic": "FACT",
+          "variable": "紧急报告接近受众程度",
+          "before": "被阻",
+          "after": "已突破现场限制并陈报",
+          "source": "https://www.sudugu520.com/23/13546-3.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV03-E",
+          "chapter": 238,
+          "actor": "老吴（同体未核）",
+          "target": "陈迹",
+          "action": "老吴放陈迹进入",
+          "epistemic": "FACT",
+          "variable": "陈迹通行权",
+          "before": "军队门禁不允许",
+          "after": "老吴许可",
+          "source": "https://github.com/lukunanaron674-stack/-ten-yuan-vault/blob/main/09-%E7%BB%99674%EF%BC%88%E6%88%91%EF%BC%89%E7%94%A8%E7%9A%84%E5%BA%93/%E6%A6%82%E5%BF%B5%E5%BA%93/%E7%8E%AF%E5%A2%83%E6%A6%82%E5%BF%B5%E8%AE%BE%E8%AE%A1%E6%80%BB%E5%BA%93/06_%E7%A4%BE%E4%BC%9A%E7%BB%93%E6%9E%84/%E9%9D%92%E5%B1%B1_%E4%BA%BA%E7%89%A9%E9%87%87%E9%9B%86/%E9%9D%92%E5%B1%B1_R49_%E4%BD%9C%E8%80%85238-242%E6%AD%A3%E6%96%87%E4%B8%8E%E4%BA%BA%E7%89%A9%E8%A1%8C%E5%8A%A8%E5%88%86%E7%BA%A7_20261122.md",
+          "span_offset": null
+        },
+        {
+          "id": "EV03-F",
+          "chapter": 238,
+          "actor": "老吴（同体未核）",
+          "target": "羽林军",
+          "action": "老吴阻止追来的羽林军跟进",
+          "epistemic": "FACT",
+          "variable": "羽林军追击通行权",
+          "before": "企图追入",
+          "after": "追入受阻",
+          "source": "https://github.com/lukunanaron674-stack/-ten-yuan-vault/blob/main/09-%E7%BB%99674%EF%BC%88%E6%88%91%EF%BC%89%E7%94%A8%E7%9A%84%E5%BA%93/%E6%A6%82%E5%BF%B5%E5%BA%93/%E7%8E%AF%E5%A2%83%E6%A6%82%E5%BF%B5%E8%AE%BE%E8%AE%A1%E6%80%BB%E5%BA%93/06_%E7%A4%BE%E4%BC%9A%E7%BB%93%E6%9E%84/%E9%9D%92%E5%B1%B1_%E4%BA%BA%E7%89%A9%E9%87%87%E9%9B%86/%E9%9D%92%E5%B1%B1_R49_%E4%BD%9C%E8%80%85238-242%E6%AD%A3%E6%96%87%E4%B8%8E%E4%BA%BA%E7%89%A9%E8%A1%8C%E5%8A%A8%E5%88%86%E7%BA%A7_20261122.md",
+          "span_offset": null
+        },
+        {
+          "id": "EV03-G",
+          "chapter": 238,
+          "actor": "齐斟酌",
+          "target": "现场守军",
+          "action": "齐斟酌率羽林军结阵形成对峙",
+          "epistemic": "FACT",
+          "variable": "现场武力对峙程度",
+          "before": "冲突已升温",
+          "after": "结阵对峙",
+          "source": "https://github.com/lukunanaron674-stack/-ten-yuan-vault/blob/main/09-%E7%BB%99674%EF%BC%88%E6%88%91%EF%BC%89%E7%94%A8%E7%9A%84%E5%BA%93/%E6%A6%82%E5%BF%B5%E5%BA%93/%E7%8E%AF%E5%A2%83%E6%A6%82%E5%BF%B5%E8%AE%BE%E8%AE%A1%E6%80%BB%E5%BA%93/06_%E7%A4%BE%E4%BC%9A%E7%BB%93%E6%9E%84/%E9%9D%92%E5%B1%B1_%E4%BA%BA%E7%89%A9%E9%87%87%E9%9B%86/%E9%9D%92%E5%B1%B1_R49_%E4%BD%9C%E8%80%85238-242%E6%AD%A3%E6%96%87%E4%B8%8E%E4%BA%BA%E7%89%A9%E8%A1%8C%E5%8A%A8%E5%88%86%E7%BA%A7_20261122.md",
+          "span_offset": null
+        }
+      ],
+      "place": "QSPLACE-CAND-0001",
+      "cost": "消息费由张夏付；陈迹遭遇阻力，未证受伤",
+      "outcome": "突破及陈报、老吴许可与拦追分别发生；危机是否解除未证",
+      "reader": {
+        "scope": "MULTI_SCENE_STAGED",
+        "windows": [
+          {
+            "stage": "S237",
+            "stimulus": "发现风险线索需要报告",
+            "primary_hypothesis": "XN? / XZ?（并列）",
+            "competitors": [
+              "ZX?主动突破"
+            ],
+            "scope": "LOCAL_BEAT",
+            "f3": null
+          },
+          {
+            "stage": "S238",
+            "stimulus": "通行受阻与闯入对峙",
+            "primary_hypothesis": "XZ? / ZX?（并列）",
+            "competitors": [
+              "XN?规则执行/临场方案"
+            ],
+            "scope": "CHAPTER_TO_DATE",
+            "f3": null
+          }
+        ],
+        "priority_unranked_H": "XZ? / ZX?",
+        "rival_H": "XN?报告程序；危情本身也可引发XZ",
+        "ten_scores": {
+          "X": null,
+          "Z": null,
+          "N": null,
+          "ZN": null,
+          "NZ": null,
+          "XN": null,
+          "NX": null,
+          "ZX": null,
+          "XZ": null,
+          "X并Z": null
+        },
+        "top1": null,
+        "top2": null,
+        "F3": null
+      },
+      "five_dimensional_view": {
+        "primary": "空间",
+        "secondary": "因果",
+        "reason": "通行权限、报告接近程度",
+        "status": "ANALYTIC_VIEW_H_NOT_ONTOLOGY"
+      },
+      "counterfactual": {
+        "change_one": "保持危情，仅改公开合法通行",
+        "expected_discriminator": "权限变化和报告行动可区分",
+        "status": "DESIGNED_NOT_RUN"
+      },
+      "template": "目标×限制→变招",
+      "strict_relation": null,
+      "source_grade": "EXISTING_PARAPHRASE_ASSISTED_NOT_AUTHOR_FULLTEXT"
+    },
+    {
+      "id": "P-EV-04",
+      "source_case": "QSFE-EV04",
+      "title": "错街引路→追擒→企图自刎",
+      "type": "信息失效型",
+      "precondition": "队伍需要正确路线",
+      "trigger": "向导错路后失踪",
+      "goal_as_behavior": "陈迹追擒",
+      "actions": [
+        {
+          "id": "EV04-A",
+          "chapter": 239,
+          "actor": "李玄",
+          "target": "带路边军甲士（身份未核）",
+          "action": "李玄命甲士带路",
+          "epistemic": "INSTRUCTION",
+          "variable": "路径导航任务",
+          "before": "需要找到正确路线",
+          "after": "甲士接到带路指令",
+          "source": "https://www.piaotia.com/html/15/15702/11482904.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV04-B",
+          "chapter": 239,
+          "actor": "带路甲士（身份未核）",
+          "target": "队伍",
+          "action": "甲士将队伍引到库勒街错路后失踪",
+          "epistemic": "FACT",
+          "variable": "队伍路径可靠性",
+          "before": "信任引路",
+          "after": "错街、领路人消失",
+          "source": "https://www.piaotia.com/html/15/15702/11482904.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV04-C",
+          "chapter": 240,
+          "actor": "陈迹",
+          "target": "带路甲士（身份未核）",
+          "action": "陈迹追上并擒获甲士",
+          "epistemic": "FACT",
+          "variable": "甲士行动自由与可询问性",
+          "before": "失踪",
+          "after": "被陈迹擒获",
+          "source": "https://www.piaotia.com/html/15/15702/11483672.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV04-D",
+          "chapter": 240,
+          "actor": "带路甲士（身份未核）",
+          "target": "自己",
+          "action": "被擒后企图自刎，但未确认实际死亡",
+          "epistemic": "ATTEMPT",
+          "variable": "人证存留风险",
+          "before": "甲士被擒",
+          "after": "出现证人可能丧失的危险，死亡未证",
+          "source": "https://www.piaotia.com/html/15/15702/11483672.html",
+          "span_offset": null
+        }
+      ],
+      "place": "MULTI_LOCATION_KULE_STREET_TO_CAPTURE_LOCATION_UNVERIFIED",
+      "cost": "对抗发生；陈迹自身损伤未证",
+      "outcome": "向导被擒；自刎仅企图；证言未证",
+      "reader": {
+        "scope": "MULTI_SCENE_STAGED",
+        "windows": [
+          {
+            "stage": "S239",
+            "stimulus": "错街、向导失踪",
+            "primary_hypothesis": "XZ? / ZX?（并列）",
+            "competitors": [
+              "XN?计划受阻"
+            ],
+            "scope": "LOCAL_BEAT",
+            "f3": null
+          },
+          {
+            "stage": "S240",
+            "stimulus": "追擒与自刎企图",
+            "primary_hypothesis": "Z? / XZ?（并列）",
+            "competitors": [
+              "ZX?受骗愤慨"
+            ],
+            "scope": "CHAPTER_TO_DATE",
+            "f3": null
+          }
+        ],
+        "priority_unranked_H": "XZ? / Z?",
+        "rival_H": "ZX?受骗愤慨；XN?计划被打断",
+        "ten_scores": {
+          "X": null,
+          "Z": null,
+          "N": null,
+          "ZN": null,
+          "NZ": null,
+          "XN": null,
+          "NX": null,
+          "ZX": null,
+          "XZ": null,
+          "X并Z": null
+        },
+        "top1": null,
+        "top2": null,
+        "F3": null
+      },
+      "five_dimensional_view": {
+        "primary": "因果",
+        "secondary": "空间",
+        "reason": "路径可靠性、证据可得性",
+        "status": "ANALYTIC_VIEW_H_NOT_ONTOLOGY"
+      },
+      "counterfactual": {
+        "change_one": "保留追擒，仅改被擒后是否主动供述",
+        "expected_discriminator": "不能将自刎企图判为死亡",
+        "status": "DESIGNED_NOT_RUN"
+      },
+      "template": "信息失效→追索",
+      "strict_relation": null,
+      "source_grade": "EXISTING_PARAPHRASE_ASSISTED_NOT_AUTHOR_FULLTEXT"
+    },
+    {
+      "id": "P-EV-05",
+      "source_case": "QSFE-EV05",
+      "title": "蒙面者袭太子→护驾→弓手制止",
+      "type": "防御介入型",
+      "precondition": "太子受护卫保护；发生交战",
+      "trigger": "袭击迫近太子",
+      "goal_as_behavior": "陈迹保护太子",
+      "actions": [
+        {
+          "id": "EV05-A",
+          "chapter": 240,
+          "actor": "六名蒙面者",
+          "target": "羽林军",
+          "action": "六名蒙面者与羽林军交战",
+          "epistemic": "FACT",
+          "variable": "交战状态",
+          "before": "局部安全相对稳定",
+          "after": "武装冲突发生",
+          "source": "https://dingdianzww.org/19578/6943734.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV05-B",
+          "chapter": 240,
+          "actor": "其中两名蒙面者",
+          "target": "太子",
+          "action": "两人突围直扑太子",
+          "epistemic": "FACT",
+          "variable": "太子近身安全",
+          "before": "太子受羽林军阵线保护",
+          "after": "出现迫近袭击",
+          "source": "https://dingdianzww.org/19578/6943734.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV05-C",
+          "chapter": 240,
+          "actor": "陈迹",
+          "target": "太子",
+          "action": "陈迹拔太子佩剑保护太子，拦阻两名来袭者",
+          "epistemic": "FACT",
+          "variable": "太子临时防护",
+          "before": "攻击迫近",
+          "after": "增加主动防御",
+          "source": "https://dingdianzww.org/19578/6943734.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV05-D",
+          "chapter": 240,
+          "actor": "边军弓手",
+          "target": "先突围的两名蒙面者",
+          "action": "边军弓手先射杀两名突围者",
+          "epistemic": "FACT",
+          "variable": "现场即时袭击风险",
+          "before": "来袭者仍在行动",
+          "after": "两名来袭者死亡并失去攻击能力",
+          "source": "https://dingdianzww.org/19578/6943734.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV05-E",
+          "chapter": 240,
+          "actor": "边军弓手",
+          "target": "其余四名蒙面者",
+          "action": "边军弓手继续射杀其余四人",
+          "epistemic": "FACT",
+          "variable": "六名来袭者存活状态",
+          "before": "四人仍存活",
+          "after": "其余四人被射杀",
+          "source": "https://dingdianzww.org/19578/6943734.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV05-F",
+          "chapter": 240,
+          "actor": "胡钧羡与周游",
+          "target": "现场",
+          "action": "胡钧羡、周游随后出现，指挥/灭口主使未知",
+          "epistemic": "FACT",
+          "variable": "幕后指挥身份",
+          "before": "未证",
+          "after": "仍未证，不能用出场顺序代替责任证据",
+          "source": "https://dingdianzww.org/19578/6943734.html",
+          "span_offset": null
+        }
+      ],
+      "place": "LOCATION_UNVERIFIED_WAR_SCENE",
+      "cost": "主动防御发生；个人身体损伤未证",
+      "outcome": "陈迹护驾中介与边军制止独立；主使未证",
+      "reader": {
+        "scope": "LOCAL_BEAT",
+        "windows": [
+          {
+            "stage": "S240",
+            "stimulus": "羽林军遭袭",
+            "primary_hypothesis": "XZ? / Z?（并列）",
+            "competitors": [
+              "ZX?对抗"
+            ],
+            "scope": "LOCAL_BEAT",
+            "f3": null
+          },
+          {
+            "stage": "S240",
+            "stimulus": "袭击近太子与陈迹护驾",
+            "primary_hypothesis": "XZ? / ZX?（并列）",
+            "competitors": [
+              "ZN?保护他人但缺真人验证"
+            ],
+            "scope": "LOCAL_BEAT",
+            "f3": null
+          },
+          {
+            "stage": "S240",
+            "stimulus": "边军弓手射杀袭击者",
+            "primary_hypothesis": "Z? / XZ?（并列）",
+            "competitors": [
+              "NZ?松弛仅是假说；被杀者或仍引发不安"
+            ],
+            "scope": "CHAPTER_TO_DATE",
+            "f3": null
+          }
+        ],
+        "priority_unranked_H": "XZ? / ZX?",
+        "rival_H": "Z?紧张动作；ZN?保护读法未验",
+        "ten_scores": {
+          "X": null,
+          "Z": null,
+          "N": null,
+          "ZN": null,
+          "NZ": null,
+          "XN": null,
+          "NX": null,
+          "ZX": null,
+          "XZ": null,
+          "X并Z": null
+        },
+        "top1": null,
+        "top2": null,
+        "F3": null
+      },
+      "five_dimensional_view": {
+        "primary": "本体",
+        "secondary": "因果",
+        "reason": "安全状态、第三方作用",
+        "status": "ANALYTIC_VIEW_H_NOT_ONTOLOGY"
+      },
+      "counterfactual": {
+        "change_one": "去掉护驾中介，其他角色响应保持开放",
+        "expected_discriminator": "不把最终制止全部归因于陈迹",
+        "status": "DESIGNED_NOT_RUN"
+      },
+      "template": "威胁→介入",
+      "strict_relation": null,
+      "source_grade": "EXISTING_PARAPHRASE_ASSISTED_NOT_AUTHOR_FULLTEXT"
+    },
+    {
+      "id": "P-EV-06",
+      "source_case": "QSFE-EV06",
+      "title": "太子拟任陈迹为右司卫与反对",
+      "type": "资格提议型",
+      "precondition": "陈迹尚未获得该职位",
+      "trigger": "太子提出返京奏请",
+      "goal_as_behavior": "提出授职；陈礼钦反对",
+      "actions": [
+        {
+          "id": "EV06-A",
+          "chapter": 240,
+          "actor": "太子",
+          "target": "陈迹",
+          "action": "太子提出返京奏请授陈迹右司卫一职",
+          "epistemic": "PROPOSAL",
+          "variable": "陈迹官职状态",
+          "before": "未任右司卫",
+          "after": "只有未来任命建议、实际官职未变",
+          "source": "https://www.piaotia.com/html/15/15702/11483672.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV06-B",
+          "chapter": 240,
+          "actor": "陈礼钦",
+          "target": "太子",
+          "action": "陈礼钦反对该提议",
+          "epistemic": "REFUSAL",
+          "variable": "提案受到的政治阻力",
+          "before": "提出建议",
+          "after": "发生反对，任命结果未证",
+          "source": "https://www.piaotia.com/html/15/15702/11483672.html",
+          "span_offset": null
+        }
+      ],
+      "place": "LOCATION_UNVERIFIED",
+      "cost": "实际职位、代价均未证",
+      "outcome": "提议与反对发生；任命未证",
+      "reader": {
+        "scope": "LOCAL_BEAT",
+        "windows": [
+          {
+            "stage": "S240",
+            "stimulus": "被提议授官与反对",
+            "primary_hypothesis": "Z? / XN?（不排序）",
+            "competitors": [
+              "XZ?竞争压力"
+            ],
+            "scope": "LOCAL_BEAT",
+            "f3": null
+          }
+        ],
+        "priority_unranked_H": "Z? / XN?",
+        "rival_H": "XZ?资格竞争；Z冻结边",
+        "ten_scores": {
+          "X": null,
+          "Z": null,
+          "N": null,
+          "ZN": null,
+          "NZ": null,
+          "XN": null,
+          "NX": null,
+          "ZX": null,
+          "XZ": null,
+          "X并Z": null
+        },
+        "top1": null,
+        "top2": null,
+        "F3": null
+      },
+      "five_dimensional_view": {
+        "primary": "本体",
+        "secondary": "命运",
+        "reason": "拟议资格与未来路径",
+        "status": "ANALYTIC_VIEW_H_NOT_ONTOLOGY"
+      },
+      "counterfactual": {
+        "change_one": "保持提议，改变最终批准与否",
+        "expected_discriminator": "有正式批准及履职才称任职",
+        "status": "DESIGNED_NOT_RUN"
+      },
+      "template": "资格开放→争议",
+      "strict_relation": null,
+      "source_grade": "EXISTING_PARAPHRASE_ASSISTED_NOT_AUTHOR_FULLTEXT"
+    },
+    {
+      "id": "P-EV-07",
+      "source_case": "QSFE-EV07",
+      "title": "太子与李玄密道撤离讨论",
+      "type": "方案竞争型",
+      "precondition": "存在风险，撤离路径被提出",
+      "trigger": "李玄建议密道撤离",
+      "goal_as_behavior": "太子拒绝；陈迹提供竞争判断",
+      "actions": [
+        {
+          "id": "EV07-A",
+          "chapter": 241,
+          "actor": "李玄",
+          "target": "太子",
+          "action": "李玄建议太子循密道撤离",
+          "epistemic": "PROPOSAL",
+          "variable": "太子撤离方案集合",
+          "before": "未提出该方案",
+          "after": "出现一项可选方案，密道真实可行性未知",
+          "source": "https://github.com/lukunanaron674-stack/-ten-yuan-vault/blob/main/09-%E7%BB%99674%EF%BC%88%E6%88%91%EF%BC%89%E7%94%A8%E7%9A%84%E5%BA%93/%E6%A6%82%E5%BF%B5%E5%BA%93/%E7%8E%AF%E5%A2%83%E6%A6%82%E5%BF%B5%E8%AE%BE%E8%AE%A1%E6%80%BB%E5%BA%93/06_%E7%A4%BE%E4%BC%9A%E7%BB%93%E6%9E%84/%E9%9D%92%E5%B1%B1_%E4%BA%BA%E7%89%A9%E9%87%87%E9%9B%86/%E9%9D%92%E5%B1%B1_R49_%E4%BD%9C%E8%80%85238-242%E6%AD%A3%E6%96%87%E4%B8%8E%E4%BA%BA%E7%89%A9%E8%A1%8C%E5%8A%A8%E5%88%86%E7%BA%A7_20261122.md",
+          "span_offset": null
+        },
+        {
+          "id": "EV07-B",
+          "chapter": 241,
+          "actor": "太子",
+          "target": "李玄",
+          "action": "太子拒绝密道撤离建议",
+          "epistemic": "REFUSAL",
+          "variable": "撤离方案决策",
+          "before": "有撤离提议",
+          "after": "该次提议被拒绝，后续撤离情况未证",
+          "source": "https://github.com/lukunanaron674-stack/-ten-yuan-vault/blob/main/09-%E7%BB%99674%EF%BC%88%E6%88%91%EF%BC%89%E7%94%A8%E7%9A%84%E5%BA%93/%E6%A6%82%E5%BF%B5%E5%BA%93/%E7%8E%AF%E5%A2%83%E6%A6%82%E5%BF%B5%E8%AE%BE%E8%AE%A1%E6%80%BB%E5%BA%93/06_%E7%A4%BE%E4%BC%9A%E7%BB%93%E6%9E%84/%E9%9D%92%E5%B1%B1_%E4%BA%BA%E7%89%A9%E9%87%87%E9%9B%86/%E9%9D%92%E5%B1%B1_R49_%E4%BD%9C%E8%80%85238-242%E6%AD%A3%E6%96%87%E4%B8%8E%E4%BA%BA%E7%89%A9%E8%A1%8C%E5%8A%A8%E5%88%86%E7%BA%A7_20261122.md",
+          "span_offset": null
+        },
+        {
+          "id": "EV07-C",
+          "chapter": 241,
+          "actor": "陈迹",
+          "target": "太子等人",
+          "action": "陈迹不同意认定边军全部已反叛，提出胡钧羡未必反叛的解释",
+          "epistemic": "INFERENCE",
+          "variable": "各方对边军的判断",
+          "before": "威胁归属含混",
+          "after": "出现竞争性判断，是否正确未知",
+          "source": "https://www.sudugu520.com/23/13558-4.html",
+          "span_offset": null
+        }
+      ],
+      "place": "LOCATION_UNVERIFIED",
+      "cost": "继续风险暴露是可能性，实际损失未证",
+      "outcome": "方案被拒；密道可行性及逃离未证",
+      "reader": {
+        "scope": "LOCAL_BEAT",
+        "windows": [
+          {
+            "stage": "S241",
+            "stimulus": "撤离提议/拒绝",
+            "primary_hypothesis": "XZ? / XN?（并列）",
+            "competitors": [
+              "Z?坚持既有决策"
+            ],
+            "scope": "LOCAL_BEAT",
+            "f3": null
+          }
+        ],
+        "priority_unranked_H": "XZ? / XN?",
+        "rival_H": "Z?坚持既有方案",
+        "ten_scores": {
+          "X": null,
+          "Z": null,
+          "N": null,
+          "ZN": null,
+          "NZ": null,
+          "XN": null,
+          "NX": null,
+          "ZX": null,
+          "XZ": null,
+          "X并Z": null
+        },
+        "top1": null,
+        "top2": null,
+        "F3": null
+      },
+      "five_dimensional_view": {
+        "primary": "命运",
+        "secondary": "空间",
+        "reason": "可选路径与决策权",
+        "status": "ANALYTIC_VIEW_H_NOT_ONTOLOGY"
+      },
+      "counterfactual": {
+        "change_one": "保持风险和建议，仅改接受/拒绝",
+        "expected_discriminator": "接受也不等于安全离开",
+        "status": "DESIGNED_NOT_RUN"
+      },
+      "template": "多方案→选择",
+      "strict_relation": null,
+      "source_grade": "EXISTING_PARAPHRASE_ASSISTED_NOT_AUTHOR_FULLTEXT"
+    },
+    {
+      "id": "P-EV-08",
+      "source_case": "QSFE-EV08",
+      "title": "掌柜称肥羊并分送住客",
+      "type": "权力调度型",
+      "precondition": "掌柜拥有发令与伙计渠道",
+      "trigger": "提出分送两批住客",
+      "goal_as_behavior": "掌柜命小六分送并威胁",
+      "actions": [
+        {
+          "id": "EV08-A",
+          "chapter": 241,
+          "actor": "龙门客栈掌柜",
+          "target": "小六",
+          "action": "掌柜称两批住客为肥羊，命小六分别带走地字丙庚客人",
+          "epistemic": "INSTRUCTION",
+          "variable": "两批住客可能的离开路线",
+          "before": "住客仍在客栈体系",
+          "after": "分送指令已提出，实际结果未证",
+          "source": "https://www.sudugu520.com/23/13558-4.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV08-B",
+          "chapter": 241,
+          "actor": "龙门客栈掌柜",
+          "target": "小六",
+          "action": "掌柜威胁小六，提到马厩遗落帽子",
+          "epistemic": "THREAT",
+          "variable": "小六受控风险及读者所知危险线索",
+          "before": "客栈真实意图未明确",
+          "after": "读者已有掠夺/威胁先验，小六承担压力",
+          "source": "https://www.sudugu520.com/23/13558-4.html",
+          "span_offset": null
+        }
+      ],
+      "place": "QSPLACE-CAND-0003",
+      "cost": "小六受威胁；住客损害未证",
+      "outcome": "命令已发；去向未知",
+      "reader": {
+        "scope": "CHAPTER_TO_DATE",
+        "windows": [
+          {
+            "stage": "S241",
+            "stimulus": "肥羊话语与威胁",
+            "primary_hypothesis": "XZ? / X并Z?（并列）",
+            "competitors": [
+              "NZ?保护缺正面证据"
+            ],
+            "scope": "CHAPTER_TO_DATE",
+            "f3": null
+          }
+        ],
+        "priority_unranked_H": "XZ? / X并Z?",
+        "rival_H": "NZ?保护解释缺证",
+        "ten_scores": {
+          "X": null,
+          "Z": null,
+          "N": null,
+          "ZN": null,
+          "NZ": null,
+          "XN": null,
+          "NX": null,
+          "ZX": null,
+          "XZ": null,
+          "X并Z": null
+        },
+        "top1": null,
+        "top2": null,
+        "F3": null
+      },
+      "five_dimensional_view": {
+        "primary": "空间",
+        "secondary": "本体",
+        "reason": "路线控制与人员受控",
+        "status": "ANALYTIC_VIEW_H_NOT_ONTOLOGY"
+      },
+      "counterfactual": {
+        "change_one": "保留分送，仅去掉掠夺措辞/威胁",
+        "expected_discriminator": "实际分送及后果必须另证",
+        "status": "DESIGNED_NOT_RUN"
+      },
+      "template": "规则赋权→调度",
+      "strict_relation": null,
+      "source_grade": "EXISTING_PARAPHRASE_ASSISTED_NOT_AUTHOR_FULLTEXT"
+    },
+    {
+      "id": "P-EV-09",
+      "source_case": "QSFE-EV09",
+      "title": "张铮小满留饭→陈迹亲疏撤离计划",
+      "type": "照料型",
+      "precondition": "陈迹尚未用饭，亲近者在场",
+      "trigger": "张铮留饭、小满摆饭",
+      "goal_as_behavior": "提供实际照料；陈迹另有撤离计划",
+      "actions": [
+        {
+          "id": "EV09-A",
+          "chapter": 242,
+          "actor": "张铮",
+          "target": "陈迹",
+          "action": "张铮为陈迹留饭并保温",
+          "epistemic": "FACT",
+          "variable": "陈迹获得饮食照料",
+          "before": "陈迹尚未用饭",
+          "after": "饭菜被留下保温",
+          "source": "https://dingdianzww.org/19578/6943740.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV09-B",
+          "chapter": 242,
+          "actor": "小满",
+          "target": "陈迹",
+          "action": "小满摆饭并参与照料",
+          "epistemic": "FACT",
+          "variable": "陈迹当下被照料程度",
+          "before": "已有人留饭",
+          "after": "增加具体照料动作",
+          "source": "https://dingdianzww.org/19578/6943740.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV09-C",
+          "chapter": 242,
+          "actor": "陈迹",
+          "target": "张铮、张夏、小满",
+          "action": "陈迹考虑只带这三人借密道撤离，太子等不在私人撤离计划，尚未实施",
+          "epistemic": "PLAN",
+          "variable": "三人撤离实际结果",
+          "before": "风险仍在",
+          "after": "仅提出私人意图，撤离完成未证",
+          "source": "https://dingdianzww.org/19578/6943740.html",
+          "span_offset": null
+        }
+      ],
+      "place": "QSPLACE-CAND-0003",
+      "cost": "饭菜与照料投入；额外损失未知",
+      "outcome": "照料已发生；私人撤离计划未实施",
+      "reader": {
+        "scope": "LOCAL_BEAT",
+        "windows": [
+          {
+            "stage": "S242",
+            "stimulus": "局部饭桌被照料",
+            "primary_hypothesis": "NZ? / N?（并列）",
+            "competitors": [
+              "XZ?背景风险未消失"
+            ],
+            "scope": "LOCAL_BEAT",
+            "f3": null
+          },
+          {
+            "stage": "S242",
+            "stimulus": "已见241肥羊后再看饭桌与撤离计划",
+            "primary_hypothesis": "XZ? / NZ?（分层、不合并）",
+            "competitors": [
+              "X并Z?对客栈的厌恶仍在"
+            ],
+            "scope": "CHAPTER_TO_DATE",
+            "f3": null
+          }
+        ],
+        "priority_unranked_H": "NZ? / N?（局部）",
+        "rival_H": "XZ?累积危险背景；不能等同全章",
+        "ten_scores": {
+          "X": null,
+          "Z": null,
+          "N": null,
+          "ZN": null,
+          "NZ": null,
+          "XN": null,
+          "NX": null,
+          "ZX": null,
+          "XZ": null,
+          "X并Z": null
+        },
+        "top1": null,
+        "top2": null,
+        "F3": null
+      },
+      "five_dimensional_view": {
+        "primary": "本体",
+        "secondary": "时间",
+        "reason": "照料需求与当前感受窗口",
+        "status": "ANALYTIC_VIEW_H_NOT_ONTOLOGY"
+      },
+      "counterfactual": {
+        "change_one": "固定背景，比较留饭与无留饭；另分局部和累计读法",
+        "expected_discriminator": "照料行为≠所有危险解除",
+        "status": "DESIGNED_NOT_RUN"
+      },
+      "template": "需求→照料",
+      "strict_relation": null,
+      "source_grade": "EXISTING_PARAPHRASE_ASSISTED_NOT_AUTHOR_FULLTEXT"
+    },
+    {
+      "id": "P-EV-10",
+      "source_case": "QSFE-EV10",
+      "title": "小五带人至马厩下→乌云证词→陈迹推断",
+      "type": "信息揭露型",
+      "precondition": "隐蔽空间，241已有危险线索",
+      "trigger": "小五带人进入；乌云报告危险",
+      "goal_as_behavior": "陈迹据证词推断",
+      "actions": [
+        {
+          "id": "EV10-A",
+          "chapter": 242,
+          "actor": "小五",
+          "target": "两名未具名者",
+          "action": "小五带两人到马厩下方，确有引人行为",
+          "epistemic": "FACT",
+          "variable": "两名客人位置信息",
+          "before": "去向尚不清",
+          "after": "已到马厩下方，人物是否与241住客同体未证",
+          "source": "https://www.sudugu520.com/23/13562-4.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV10-B",
+          "chapter": 242,
+          "actor": "乌云",
+          "target": "陈迹",
+          "action": "乌云称听到哀嚎和闻到血腥气，仍属其叙述",
+          "epistemic": "TESTIMONY",
+          "variable": "陈迹收到危险证词",
+          "before": "尚未知这一证词",
+          "after": "危险报告进入陈迹的信息范围",
+          "source": "https://dingdianzww.org/19578/6943740.html",
+          "span_offset": null
+        },
+        {
+          "id": "EV10-C",
+          "chapter": 242,
+          "actor": "陈迹",
+          "target": "客栈风险判断",
+          "action": "陈迹怀疑存在伤害/黑店屠宰场，但没有尸体等独立确证",
+          "epistemic": "INFERENCE",
+          "variable": "对潜在伤害的信念",
+          "before": "未以该证词判断",
+          "after": "推断高度怀疑，客观死亡结果未证",
+          "source": "https://dingdianzww.org/19578/6943740.html",
+          "span_offset": null
+        }
+      ],
+      "place": "QSPLACE-CAND-0003",
+      "cost": "实际伤害与证词真实性未独立确认",
+      "outcome": "进入事实、危险证词、陈迹推断分层",
+      "reader": {
+        "scope": "CHAPTER_TO_DATE",
+        "windows": [
+          {
+            "stage": "S242",
+            "stimulus": "马厩线索与报告",
+            "primary_hypothesis": "XZ? / X并Z?（并列）",
+            "competitors": [
+              "NZ?仅饭桌局部"
+            ],
+            "scope": "CHAPTER_TO_DATE",
+            "f3": null
+          }
+        ],
+        "priority_unranked_H": "XZ? / X并Z?",
+        "rival_H": "既有241先验仍可造成危险感；死亡未证",
+        "ten_scores": {
+          "X": null,
+          "Z": null,
+          "N": null,
+          "ZN": null,
+          "NZ": null,
+          "XN": null,
+          "NX": null,
+          "ZX": null,
+          "XZ": null,
+          "X并Z": null
+        },
+        "top1": null,
+        "top2": null,
+        "F3": null
+      },
+      "five_dimensional_view": {
+        "primary": "因果",
+        "secondary": "空间",
+        "reason": "信息进入认知、客观事件未定",
+        "status": "ANALYTIC_VIEW_H_NOT_ONTOLOGY"
+      },
+      "counterfactual": {
+        "change_one": "固定241先验，只去掉242证词；另用2×2区分先验",
+        "expected_discriminator": "需要独立证据才能确认伤亡",
+        "status": "DESIGNED_NOT_RUN"
+      },
+      "template": "隐蔽→新信息",
+      "strict_relation": null,
+      "source_grade": "EXISTING_PARAPHRASE_ASSISTED_NOT_AUTHOR_FULLTEXT"
+    }
+  ],
+  "rounds": [
+    [
+      "P07",
+      "10 trigger conditions"
+    ],
+    [
+      "P08",
+      "10 actor goals/actions"
+    ],
+    [
+      "P09",
+      "10 variable/cost/outcome cards"
+    ],
+    [
+      "P10",
+      "10 reader-window H candidates; all unverified scores null"
+    ],
+    [
+      "P11",
+      "10 five-dimensional analytical views"
+    ],
+    [
+      "P12",
+      "10 event templates and counterfactual designs; 6 structural negative tests"
+    ]
+  ],
+  "tests": {
+    "positive": [
+      {
+        "id": "P-EV-01",
+        "checks": {
+          "traceable": true,
+          "mechanism": true,
+          "feelingSeparated": true,
+          "view": true,
+          "cf": true
+        }
+      },
+      {
+        "id": "P-EV-02",
+        "checks": {
+          "traceable": true,
+          "mechanism": true,
+          "feelingSeparated": true,
+          "view": true,
+          "cf": true
+        }
+      },
+      {
+        "id": "P-EV-03",
+        "checks": {
+          "traceable": true,
+          "mechanism": true,
+          "feelingSeparated": true,
+          "view": true,
+          "cf": true
+        }
+      },
+      {
+        "id": "P-EV-04",
+        "checks": {
+          "traceable": true,
+          "mechanism": true,
+          "feelingSeparated": true,
+          "view": true,
+          "cf": true
+        }
+      },
+      {
+        "id": "P-EV-05",
+        "checks": {
+          "traceable": true,
+          "mechanism": true,
+          "feelingSeparated": true,
+          "view": true,
+          "cf": true
+        }
+      },
+      {
+        "id": "P-EV-06",
+        "checks": {
+          "traceable": true,
+          "mechanism": true,
+          "feelingSeparated": true,
+          "view": true,
+          "cf": true
+        }
+      },
+      {
+        "id": "P-EV-07",
+        "checks": {
+          "traceable": true,
+          "mechanism": true,
+          "feelingSeparated": true,
+          "view": true,
+          "cf": true
+        }
+      },
+      {
+        "id": "P-EV-08",
+        "checks": {
+          "traceable": true,
+          "mechanism": true,
+          "feelingSeparated": true,
+          "view": true,
+          "cf": true
+        }
+      },
+      {
+        "id": "P-EV-09",
+        "checks": {
+          "traceable": true,
+          "mechanism": true,
+          "feelingSeparated": true,
+          "view": true,
+          "cf": true
+        }
+      },
+      {
+        "id": "P-EV-10",
+        "checks": {
+          "traceable": true,
+          "mechanism": true,
+          "feelingSeparated": true,
+          "view": true,
+          "cf": true
+        }
+      }
+    ],
+    "negative": [
+      {
+        "id": "missing_source",
+        "blocked": true
+      },
+      {
+        "id": "missing_trigger",
+        "blocked": true
+      },
+      {
+        "id": "fake_F3",
+        "blocked": true
+      },
+      {
+        "id": "forced_top1",
+        "blocked": true
+      },
+      {
+        "id": "strict_relation",
+        "blocked": true
+      },
+      {
+        "id": "no_counterfactual",
+        "blocked": true
+      }
+    ]
+  },
+  "next": "P13: generation relationship candidate audit, only with frozen L2 gates; no strict relation confirmed",
+  "F3": 0,
+  "strict_L2": 0,
+  "stop": "10 events transformed into reusable templates, structure checks complete; no real counterfactual experiment or independent model test"
+}
