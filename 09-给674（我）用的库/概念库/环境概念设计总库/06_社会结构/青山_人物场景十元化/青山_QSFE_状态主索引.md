@@ -8,6 +8,14 @@ date: 2026-11-22
 
 # 《青山》人物场景十元化｜唯一状态主索引
 
+## HOT｜2026-11-25｜P07–P12 事件诞生机制矩阵（24轮计划第二阶段）
+
+- ASSISTED_PHASE2_DONE / COUNTERFACTUAL_DESIGN_ONLY / F3_WAIT。继承P01–P06和EV01–EV10，不重采正文；10事件触发、目标/行动、变量/代价/结果、十元H、五维视角及反事实模板全部整理。10/10卡5类字段检查通过，6/6本轮结构负例拦截；反事实均设计未执行。十项强度、Top1/Top2均null，F3=0、严格L2=0，不以结构验收冒充语义准确率。
+- 归档 [[青山_QSFE_P07-P12_事件诞生机制矩阵_20261125]]，MD blob `6f2fda3cdc19e9bbd6028f3291576f8b8ab44903`，JSON blob `cb8ee02f5173dfebe1ae208a125c05332fcac984`，回读通过。原Canvas STRUCTURE_PASS/WAIT_LOCAL_UI；263→275节点、273边保持；commit `dd576436fb27f7061e48f05b957b5a26d604acdc`。
+- STOP=10张事件模板及结构审计完成。P07–P11辅助完成，P12实证WAIT。NEXT=P13仅审计生候选，遵守L2端点冻结；独立源/模型预锁/真人F3仍WAIT。不改原人物P、组织W、理论冻结定义。
+
+---
+
 ## HOT｜2026-11-25｜P01–P06 人物×场景双向矩阵（24轮计划第一阶段）
 
 - `ASSISTED_PHASE1_DONE / COUNTERFACTUAL_DESIGN_ONLY / F3_WAIT`。P号与旧技术R号、用户原三轮法区分。9角色WAIT、5场景窗口/3地点，5对矩阵（复用2对，新增既有证据连接3对），11项结构检查通过。五项反事实仅设计、未独立运行；不宣称十元主次准确率。
