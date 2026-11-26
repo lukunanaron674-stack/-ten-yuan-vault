@@ -1,0 +1,176 @@
+{
+  "charFile": "人物索引.md",
+  "charFolder": "01_青山",
+  "timelineFile": "时间线.md",
+  "timelineFolder": "01_青山",
+  "customFields": "编号,实体类型,W评分,章节锚点,归属类型,体量贡献,来源边界,归属警语",
+  "customRelationTypes": "同盟,敌对,隶属,师徒,主仆,战友,宿敌,administers-or-internal-of,reported-owns,within-polity,administers-or-internal-of(反向),parallel-warrants,parallel-warrants(反向),operational-subunit-of,operational-subunit-of(反向),administers-military-school,regional-fiscal-counterpart; remit-differentiated,regulates-fiscal-site,regional-fiscal-counterpart; remit-differentiated(反向),joint-enforcement,joint-enforcement(反向),guards,armed-guard-of(反向),role-within-various-armies,unit-formation-of,temporary-command-and-custody(反向),funded-and-mobilized-force; affiliation-open(反向),supervises,supervises(反向),funded-by-business-front,suspected-intelligence-contact,negotiated-coordination; conditional-fleet-mobilization(反向),battlefield-cooperation,field-role-within-polity,has-site,operates-site,site-governance-candidate,battlefield-cooperation(反向),faction-of,owns-family-enterprise-candidate,runs-family-business-candidate,faction-of(反向),funded-and-mobilized-force; affiliation-open,operates-service-node-candidate,operates-ferry-node,reported-Lamp-affiliated-service-node,mediates-with,mediates-with(反向),temporary-military-cooperation,reported-operational-network,negotiated-coordination; conditional-fleet-mobilization,temporary-military-cooperation(反向),distributes,funded-by-business-front(反向),reported-Lamp-affiliated-service-node(反向),operates-service-node-candidate(反向),reported-owns(反向),prints-and-produces,prints,prints-and-produces(反向),distributes(反向),different-publication,prints(反向),publishing-commission; ownership-open(反向),different-publication(反向),reported-operational-network(反向),owns-family-enterprise-candidate(反向),runs-family-business-candidate(反向),suspected-intelligence-contact(反向),operates-ferry-node(反向),guards(反向),used-by-family,operates-site(反向),site-governance-candidate(反向),has-site(反向),armed-guard-of,temporary-command-and-custody,publishing-commission; ownership-open,administers-military-school(反向),regulates-fiscal-site(反向),unit-formation-of(反向)",
+  "factionFieldName": "阵营",
+  "deathFieldNames": "死亡,死亡时间",
+  "birthFieldNames": "出生,出生时间",
+  "firstAppearFieldName": "首次出场",
+  "intimateFieldName": "亲密人物",
+  "preset": "default",
+  "customEventTags": [
+    {
+      "value": "出场",
+      "label": "出场",
+      "color": "#4a90e2"
+    },
+    {
+      "value": "博弈",
+      "label": "博弈",
+      "color": "#e74c3c"
+    },
+    {
+      "value": "战斗",
+      "label": "战斗",
+      "color": "#2ecc71"
+    },
+    {
+      "value": "首次锚定",
+      "label": "首次锚定",
+      "color": "#9b59b6"
+    }
+  ],
+  "customIntimacyLevels": "",
+  "currentTimePoint": "",
+  "timeFilterEnabled": true,
+  "settingCollectionFile": "设定集.md",
+  "useCaseMode": "novel",
+  "hiddenTabs": [],
+  "viewTitle": "",
+  "termLabels": {},
+  "tabLabels": {},
+  "graphNotesFolder": "01_青山/关系图谱节点",
+  "worldbuildingFilePath": "",
+  "drawPoolFilePath": "",
+  "outlineFilePath": "",
+  "outlineTemplates": [
+    {
+      "id": "general",
+      "name": "通用小说",
+      "fields": [
+        "本章目标",
+        "核心冲突",
+        "关键转折",
+        "出场人物",
+        "状态"
+      ]
+    }
+  ],
+  "activeOutlineTemplate": "general",
+  "syncGraphOnSave": false,
+  "graphAutoSyncExplicitlyEnabled": false,
+  "graphSyncMode": "all",
+  "graphSyncTypes": [],
+  "worldRecords": [],
+  "worldCategories": [],
+  "worldDataSchemaVersion": 2,
+  "worldDataMigrated": false,
+  "novelCompactUI": true,
+  "topChromeCollapsed": false,
+  "timelineMode": "auto",
+  "timelineEra": "auto",
+  "syncRelationsToMd": true,
+  "syncFirstAppearOnEvent": true,
+  "relationMetaFile": "关系与阵营.md",
+  "novelTagPreset": "gudai",
+  "autoDiscoverFromMd": true,
+  "syncRelationsToCharMd": true,
+  "timelineFloatChars": true,
+  "floatPanelPos": {
+    "x": 24,
+    "y": 120
+  },
+  "timelineEventRegistry": {
+    "跑团战役/冒险日志.md": [
+      {
+        "id": "evt-mwpyilu5-jk6d5b",
+        "fingerprint": "rwf-1oywo5x",
+        "key": "rwf-1oywo5x:0",
+        "lineIndex": 2,
+        "storyDesigns": {}
+      },
+      {
+        "id": "evt-mwpyilu5-9vn3dm",
+        "fingerprint": "rwf-ru4uzn",
+        "key": "rwf-ru4uzn:0",
+        "lineIndex": 3,
+        "storyDesigns": {}
+      },
+      {
+        "id": "evt-mwpyilu5-2licvh",
+        "fingerprint": "rwf-2qbbam",
+        "key": "rwf-2qbbam:0",
+        "lineIndex": 7,
+        "storyDesigns": {}
+      }
+    ],
+    "01_青山/时间线.md": [
+      {
+        "id": "evt-mwpyn1su-isyjvk",
+        "fingerprint": "rwf-4tw3vi",
+        "key": "rwf-4tw3vi:0",
+        "lineIndex": 8,
+        "storyDesigns": {}
+      },
+      {
+        "id": "evt-mwpyn1su-b5qc1t",
+        "fingerprint": "rwf-180meno",
+        "key": "rwf-180meno:0",
+        "lineIndex": 14,
+        "storyDesigns": {}
+      },
+      {
+        "id": "evt-mwpyn1su-28ao3p",
+        "fingerprint": "rwf-mq9qu5",
+        "key": "rwf-mq9qu5:0",
+        "lineIndex": 20,
+        "storyDesigns": {}
+      },
+      {
+        "id": "evt-mwpyn1su-ux3ztd",
+        "fingerprint": "rwf-dvnwqx",
+        "key": "rwf-dvnwqx:0",
+        "lineIndex": 26,
+        "storyDesigns": {}
+      },
+      {
+        "id": "evt-mwpyn1su-y92c0t",
+        "fingerprint": "rwf-1xwhojp",
+        "key": "rwf-1xwhojp:0",
+        "lineIndex": 32,
+        "storyDesigns": {}
+      },
+      {
+        "id": "evt-mwpyn1su-ca1kwo",
+        "fingerprint": "rwf-1ho26kl",
+        "key": "rwf-1ho26kl:0",
+        "lineIndex": 38,
+        "storyDesigns": {}
+      },
+      {
+        "id": "evt-mwpyn1su-8lsxsj",
+        "fingerprint": "rwf-8t7rcq",
+        "key": "rwf-8t7rcq:0",
+        "lineIndex": 44,
+        "storyDesigns": {}
+      },
+      {
+        "id": "evt-mwpyn1su-m0oqb6",
+        "fingerprint": "rwf-12o8v3p",
+        "key": "rwf-12o8v3p:0",
+        "lineIndex": 50,
+        "storyDesigns": {}
+      },
+      {
+        "id": "evt-mwpyn1su-7prpxa",
+        "fingerprint": "rwf-1nujjfe",
+        "key": "rwf-1nujjfe:0",
+        "lineIndex": 56,
+        "storyDesigns": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,1055 @@
+{
+  "factions": [
+    {
+      "name": "CLASS-A 国家与政权共同体",
+      "color": "#4a90e2",
+      "desc": ""
+    },
+    {
+      "name": "CLASS-B 宁朝中央",
+      "color": "#e74c3c",
+      "desc": ""
+    },
+    {
+      "name": "地方官署",
+      "color": "#2ecc71",
+      "desc": ""
+    },
+    {
+      "name": "CLASS-C 宁朝军队与军事教育",
+      "color": "#9b59b6",
+      "desc": ""
+    },
+    {
+      "name": "CLASS-D 景朝军政与海上武装",
+      "color": "#f39c12",
+      "desc": ""
+    },
+    {
+      "name": "CLASS-E 独立宗教修行与教育",
+      "color": "#1abc9c",
+      "desc": ""
+    },
+    {
+      "name": "CLASS-F 宗室与世家宗族",
+      "color": "#e67e22",
+      "desc": ""
+    },
+    {
+      "name": "CLASS-G 民间商帮与经济传媒",
+      "color": "#34495e",
+      "desc": ""
+    },
+    {
+      "name": "CLASS-H 社会空间",
+      "color": "#4a90e2",
+      "desc": ""
+    },
+    {
+      "name": "聚合项及排除",
+      "color": "#e74c3c",
+      "desc": ""
+    }
+  ],
+  "relations": [
+    {
+      "charA": "宁朝司礼监",
+      "charB": "密谍司",
+      "type": "administers-or-internal-of",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 已记录密谍司属司礼监，生肖职能分组存在；**不推**：不推解烦卫必然法定直属密谍司 〔章 16,49〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "宁朝司礼监",
+      "charB": "清吟小班（百顺胡同）",
+      "type": "reported-owns",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 金猪称百顺胡同清吟小班为司礼监产业；**不推**：不推广所有清吟小班归司礼监 〔章 550〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "宁朝司礼监",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 16,35,406,550〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "密谍司",
+      "charB": "宁朝司礼监",
+      "type": "administers-or-internal-of(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 已记录密谍司属司礼监，生肖职能分组存在；**不推**：不推解烦卫必然法定直属密谍司 〔章 16,49〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "密谍司",
+      "charB": "解烦卫",
+      "type": "parallel-warrants",
+      "intimacy": 40,
+      "desc": "[OPERATING_RELATION] 白龙密谍司与林朝青解烦卫各发不同海捕文书；**不推**：两者不同机构，不合并也不互判法定上级 〔章 406,407〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "解烦卫",
+      "charB": "密谍司",
+      "type": "parallel-warrants(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[OPERATING_RELATION] 白龙密谍司与林朝青解烦卫各发不同海捕文书；**不推**：两者不同机构，不合并也不互判法定上级 〔章 406,407〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "解烦卫",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 17,75,406,559〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "主刑司",
+      "charB": "鱼龙卫",
+      "type": "operational-subunit-of",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 主刑司鱼龙卫在现场执行行动；**不推**：小队调度不自动代表所有法定编制完备 〔章 17,21〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "主刑司",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 17,19,78〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "鱼龙卫",
+      "charB": "主刑司",
+      "type": "operational-subunit-of(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 主刑司鱼龙卫在现场执行行动；**不推**：小队调度不自动代表所有法定编制完备 〔章 17,21〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "兵部",
+      "charB": "京卫武学",
+      "type": "administers-military-school",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 京卫武学归兵部管理的R16旧章节资料；**不推**：不推所有书院受兵部管辖 〔章 637〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "兵部",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 442,499,518〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "吏部",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 396,397,398,844〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "礼部",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 398,547,557〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "户部",
+      "charB": "留都户部",
+      "type": "regional-fiscal-counterpart; remit-differentiated",
+      "intimacy": 30,
+      "desc": "[CANDIDATE_OPEN] 作者752正文明确：龙江关为户部钞关/宁朝水路征税大关；留都户部尚书庄桉命税吏查船征税；留都户部只管南直隶漕粮、龙江关关税及江南财赋，且权力较小。支持区域财政职掌分工；**不推**留都户部法定隶属于中央户部、中央完整指挥或两者产权层级。该边继续CANDIDATE_OPEN。 〔章 752《隐入市井》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "户部",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 350,410,752〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "留都户部",
+      "charB": "龙江关钞关",
+      "type": "regulates-fiscal-site",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 留都户部监管龙江关钞关和江南赋税；**不推**：关卡是否独立衙门需再核 〔章 752〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "留都户部",
+      "charB": "户部",
+      "type": "regional-fiscal-counterpart; remit-differentiated(反向)",
+      "intimacy": 30,
+      "desc": "反向登记：[CANDIDATE_OPEN] 作者752正文明确：龙江关为户部钞关/宁朝水路征税大关；留都户部尚书庄桉命税吏查船征税；留都户部只管南直隶漕粮、龙江关关税及江南财赋，且权力较小。支持区域财政职掌分工；**不推**留都户部法定隶属于中央户部、中央完整指挥或两者产权层级。该边继续CANDIDATE_OPEN。 〔章 752《隐入市井》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "都察院",
+      "charB": "五城兵马司",
+      "type": "joint-enforcement",
+      "intimacy": 40,
+      "desc": "[OPERATING_RELATION] 都察院巡按御史凭驾帖调五城兵马司查封梅花渡；**不推**：一次协同执法非永久监察直属关系 〔章 559〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "都察院",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 559〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "五城兵马司",
+      "charB": "都察院",
+      "type": "joint-enforcement(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[OPERATING_RELATION] 都察院巡按御史凭驾帖调五城兵马司查封梅花渡；**不推**：一次协同执法非永久监察直属关系 〔章 559〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "五城兵马司",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 391,423,559〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "洛城兵马司",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 78,79〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "鸿胪寺",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 485,487,496〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "钦天监",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 35,549〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "太医院",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 51〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "尚衣监",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 543〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "宝钞司",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 830〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "鹰房司",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 537,554〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "御用司",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 537〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "国子监",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 442〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "匠作监",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 4,45〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "柴碳局",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 35〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "都司府",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 221,249,259〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "羽林军",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 250,260,388,476〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "万岁军",
+      "charB": "京仓",
+      "type": "guards",
+      "intimacy": 40,
+      "desc": "[OPERATING_RELATION] 万岁军守京仓；**不推**：场所不是军队下级机构 〔章 410,411〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "万岁军",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 30,390,410〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "千岁军",
+      "charB": "靖王府",
+      "type": "armed-guard-of(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 千岁军作为靖王府护卫出现；**不推**：不是皇帝万岁军 〔章 40,180〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "五军营",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 391,392,476〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "神机营",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 476,477〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "边军",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 227,252,275,445〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "夜不收",
+      "charB": "边军",
+      "type": "role-within-various-armies",
+      "intimacy": 40,
+      "desc": "[分类归属/COLLECTIVE_ONLY] 夜不收是不同边镇军队的斥候角色集合，不是全国单一官署 〔章 442,445,452,477〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "备倭军",
+      "charB": "备倭军甲乙丙丁四营",
+      "type": "unit-formation-of",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 备倭军甲乙丙丁四营为内部营级编组的叙述；**不推**：不虚构四营的独立全国军政层级 〔章 774,775〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "备倭军",
+      "charB": "中军都督府",
+      "type": "temporary-command-and-custody(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[OPERATING_RELATION] 作者814记中军都督府兵马按军令接管定海港、驱逐徐家人马、围控备倭军并准备押返府休整；是一次具体行动，不证明备倭军永久隶属或完整法定上下级。 〔章 作者814《解烦卫》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "备倭军",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 774,775,792〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "象甲卫",
+      "charB": "刘家",
+      "type": "funded-and-mobilized-force; affiliation-open(反向)",
+      "intimacy": 30,
+      "desc": "反向登记：[CANDIDATE_OPEN] 刘家出资打造并有动员/投入记录；正式产权、法定军籍及稳定指挥隶属仍未证。 作者284《固原的石头》正文明确象甲卫为刘家出资打造的精锐，战场上象甲卫随刘家虎甲铁骑及宁朝一方投入固原之战；同段又提出其为何会为宁朝所用，故出资/建立与法律所有权、常设编制、当时指挥链须分开。作者116《舍小就大》中刘明显要求将偃师大营象甲卫调来护刘家大宅，但马车按刘衮此前安排转往祖陵，不能据此声称这次调兵已完成。作者113《天马流星》中刘家秘密调来精锐，象甲卫拒绝刘明显来救陈迹的请求，并称刘大人未交代此事；这只排除该次救援命令，不排除其它指挥关系。 〔章 作者113《天马流星》,作者116《舍小就大》,作者284《固原的石头》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "虎甲铁骑",
+      "charB": "宁朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 政权范围/社会组成关系，不表示宁帝或朝廷正式直属，仍需具体官制边 〔章 167,172〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "景朝枢密院",
+      "charB": "景朝军情司",
+      "type": "supervises",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 景朝枢密院管理军情司的章段记述；**不推**：不能将早期秘密团队完全等于现行法定机关 〔章 738〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "景朝枢密院",
+      "charB": "景朝军略司",
+      "type": "supervises",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 景朝枢密院与军略司管理关联；**不推**：不能以'管理'冒充全体人员直属细目 〔章 738〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "景朝枢密院",
+      "charB": "景朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 景朝政军社会范畴，并非法定直接下级；具体母机构须另证 〔章 501,530,738〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "景朝军情司",
+      "charB": "景朝枢密院",
+      "type": "supervises(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 景朝枢密院管理军情司的章段记述；**不推**：不能将早期秘密团队完全等于现行法定机关 〔章 738〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "景朝军情司",
+      "charB": "百鹿阁",
+      "type": "funded-by-business-front",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 景朝军情司司曹述百鹿阁筹资与掩护；**不推**：不标百鹿阁为军情司正式官署 〔章 31,33,66〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "景朝军情司",
+      "charB": "红袖招",
+      "type": "suspected-intelligence-contact",
+      "intimacy": 30,
+      "desc": "[CANDIDATE_OPEN] 248《截胡》仅有客栈伙计关于景朝商队在红袖招交换情报的说法；249《砍他》里的“线人密报”被正文揭出为齐斟酌虚报（李玄知其未安插线人，齐后承认消息来自陈迹）。羽林军到场见红袖招无人，并发现血迹、刀痕、断指；死者、凶手及行动归属未明。仅保留传闻/伪报与现场调查线索，不证实实际谍报活动、军情司产权管理或指挥隶属。 〔章 《截胡》,《砍他》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "景朝军情司",
+      "charB": "漕帮",
+      "type": "negotiated-coordination; conditional-fleet-mobilization(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[OPERATING_RELATION] 作者851《造反》（页内作者题名851，URL尾号p855）：董遮以军情司代表身份提出联手，并称可提供争取时间、领兵者、兵刃、马匹和情报；白鲤同意先让六十艘漕船下行为会面条件。作者854《杀姚安》（页内作者题名854，URL尾号p858）：陈迹称双方达成交易，约定六十艘船到定海港时姚安会面；实际出现的“姚安”被识破为冒名者。作者855《内讧》：页内标题可由目录/搜索结果确认，但正文页本轮打开返回403；只使用搜索预览可读段落（SEARCH_EXCERPT_ONLY）。预览中董遮对白鲤称漕帮欲反、军情司欲助其反，并提到兵刃、铠甲及可提供虎豹军/虎贲军百夫长、千夫长。预览还显示漕帮内部郑舟、陈淮北率帮众质疑帮主、要求更换帮主。它补强“谈判/资源承诺存在”，同时显示本轮谈判与内部权力冲突交织；不证明承诺履行、正式同盟或法定隶属。 因而E038仅表示有记录的交易/协作谈判和条件性船队调动，不代表正式同盟、法定隶属或承诺已履行。 〔章 作者851《造反》,作者854《杀姚安》,作者855《内讧》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "景朝军略司",
+      "charB": "景朝枢密院",
+      "type": "supervises(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 景朝枢密院与军略司管理关联；**不推**：不能以'管理'冒充全体人员直属细目 〔章 738〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "景朝虎贲军",
+      "charB": "景朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 景朝政军社会范畴，并非法定直接下级；具体母机构须另证 〔章 476,466〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "景朝虎豹骑",
+      "charB": "景朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 景朝政军社会范畴，并非法定直接下级；具体母机构须另证 〔章 476,478〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "景朝天策军",
+      "charB": "苦觉寺",
+      "type": "battlefield-cooperation",
+      "intimacy": 40,
+      "desc": "[OPERATING_RELATION] 天策军与苦觉寺僧兵在战事协同；**不推**：双方行政/宗教所属不变 〔章 275〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "景朝天策军",
+      "charB": "景朝",
+      "type": "within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/DOMAIN_ONLY] 景朝政军社会范畴，并非法定直接下级；具体母机构须另证 〔章 273,274,275〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "捉生将",
+      "charB": "景朝",
+      "type": "field-role-within-polity",
+      "intimacy": 40,
+      "desc": "[分类归属/COLLECTIVE_ONLY] 捉生将是景朝边镇作战人员群体，不等于军情司的新部门 〔章 447,470,475〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "武庙",
+      "charB": "武庙长白山天池山门",
+      "type": "has-site",
+      "intimacy": 40,
+      "desc": "[OPERATING_RELATION] 武庙以长白山天池山门为修行活动据点；**不推**：位置处景朝不等于武庙受景朝枢密院管辖 〔章 293,530,839〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "黄山道庭",
+      "charB": "黄山四城隍庙",
+      "type": "operates-site",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 黄山道庭有北西南东四城隍庙经营据点；**不推**：四庙非四个独立宗门 〔章 433〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "黄山道庭",
+      "charB": "朝天宫",
+      "type": "site-governance-candidate",
+      "intimacy": 30,
+      "desc": "[CANDIDATE_OPEN] 818《落脚》：黄山道庭上尊法旨到达朝天宫现场，张宁传达追杀命令并命弟子封山门、召八大总商、在普天大醮前回收散落的万神临舍，证明现场指令及具体任务执行（https://ixdzs.tw/read/549077/p822.html）。840《无人试剑》证实黄山道庭主办普天大醮、门人执行法坛仪式（https://ixdzs.tw/read/549077/p844.html），但未证明该仪式地点就是朝天宫，不作为E032场所管辖证据。产权、长期治理与法定直属仍未证，维持CANDIDATE_OPEN。 〔章 818,840〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "老君山道庭",
+      "charB": "陆浑山庄",
+      "type": "operates-site",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 陆浑山庄为老君山道庭山下别院；**不推**：别院不是与道庭并列的新宗门 〔章 130,131〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "苦觉寺",
+      "charB": "景朝天策军",
+      "type": "battlefield-cooperation(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[OPERATING_RELATION] 天策军与苦觉寺僧兵在战事协同；**不推**：双方行政/宗教所属不变 〔章 275〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "京城陈家",
+      "charB": "陈家二房",
+      "type": "faction-of",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 陈家二房属于陈氏宗族内部政治与经济派系；**不推**：不是独立陈氏政权 〔章 397,437〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "京城陈家",
+      "charB": "陈家盐商总号",
+      "type": "owns-family-enterprise-candidate",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 陈家盐商总号有掌柜/族中交利和盐号公账；**不推**：陈迹私人粮油铺不归入盐商总号 〔章 350,351,558〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "京城陈家",
+      "charB": "陈家粮号",
+      "type": "runs-family-business-candidate",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 陈家粮号是陈氏经营分支，名称区别于盐号；**不推**：粮号不是盐号同一个商业主体 〔章 350〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "陈家二房",
+      "charB": "京城陈家",
+      "type": "faction-of(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 陈家二房属于陈氏宗族内部政治与经济派系；**不推**：不是独立陈氏政权 〔章 397,437〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "刘家",
+      "charB": "象甲卫",
+      "type": "funded-and-mobilized-force; affiliation-open",
+      "intimacy": 30,
+      "desc": "[CANDIDATE_OPEN] 刘家出资打造并有动员/投入记录；正式产权、法定军籍及稳定指挥隶属仍未证。 作者284《固原的石头》正文明确象甲卫为刘家出资打造的精锐，战场上象甲卫随刘家虎甲铁骑及宁朝一方投入固原之战；同段又提出其为何会为宁朝所用，故出资/建立与法律所有权、常设编制、当时指挥链须分开。作者116《舍小就大》中刘明显要求将偃师大营象甲卫调来护刘家大宅，但马车按刘衮此前安排转往祖陵，不能据此声称这次调兵已完成。作者113《天马流星》中刘家秘密调来精锐，象甲卫拒绝刘明显来救陈迹的请求，并称刘大人未交代此事；这只排除该次救援命令，不排除其它指挥关系。 〔章 作者113《天马流星》,作者116《舍小就大》,作者284《固原的石头》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "灯火",
+      "charB": "昌平福来客栈",
+      "type": "operates-service-node-candidate",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 灯火暗号与福来客栈接叶子、跨城转单；**不推**：不同城的同名福来客栈绝不自动合并 〔章 407,408,409〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "灯火",
+      "charB": "文昌书局",
+      "type": "reported-owns",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 陆氏明确称文昌书局是灯火产业；**不推**：不涵盖全城书局，不作官营财产 〔章 520〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "灯火",
+      "charB": "金陵渡船灯火节点",
+      "type": "operates-ferry-node",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 灯火金陵渡船地区正将、票据与船工业务链；**不推**：与外部河道军职不构成同一机构 〔章 762〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "灯火",
+      "charB": "固原龙门客栈",
+      "type": "reported-Lamp-affiliated-service-node",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] WebNovel目录平台槽243标作者242《密道》，槽247标作者246《真正的密道》；平台槽408标作者407《灯火客栈》。作者242正文中掌柜称小满为灯火“同僚”、自称“我灯火客栈”，并按灯火铜钱提供固原龙门客栈密道通行服务。支持文本报告的灯火关联服务/经营节点；不证明登记产权、股权、正式行政直属或法定part-of。正文：https://czbooks.net/n/s6ojkc/s6onf31e?chapterNumber=246；https://www.piaotia.com/html/15/15702/11485597.html。题名：https://www.webnovel.com/book/22444590709113204/catalog。 〔章 作者242《密道》,作者246《真正的密道》,作者407《灯火客栈》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "三山会",
+      "charB": "漕帮",
+      "type": "mediates-with",
+      "intimacy": 40,
+      "desc": "[OPERATING_RELATION] 三山会祁公居中传话及与韩童斡旋；**不推**：调停并非三山会吞并漕帮 〔章 548〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "漕帮",
+      "charB": "三山会",
+      "type": "mediates-with(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[OPERATING_RELATION] 三山会祁公居中传话及与韩童斡旋；**不推**：调停并非三山会吞并漕帮 〔章 548〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "漕帮",
+      "charB": "盐帮",
+      "type": "temporary-military-cooperation",
+      "intimacy": 40,
+      "desc": "[OPERATING_RELATION] 漕帮与盐帮战时协防线索；**不推**：漕帮不属于盐帮，反之亦然 〔章 786,792〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "漕帮",
+      "charB": "金陵晚报",
+      "type": "reported-operational-network",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 作者853《季氏》中陈迹称金陵晚报是漕帮经营；张夏说该报有七个堂口、她查抄五个，之后密谍司查抄两个。属正文人物报告与行动叙述，支持报纸运营网络与漕帮的报告性关联；不证明法定产权、商行股权或金陵晚报整体归漕帮所有。 〔章 853《季氏》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "漕帮",
+      "charB": "景朝军情司",
+      "type": "negotiated-coordination; conditional-fleet-mobilization",
+      "intimacy": 40,
+      "desc": "[OPERATING_RELATION] 作者851《造反》（页内作者题名851，URL尾号p855）：董遮以军情司代表身份提出联手，并称可提供争取时间、领兵者、兵刃、马匹和情报；白鲤同意先让六十艘漕船下行为会面条件。作者854《杀姚安》（页内作者题名854，URL尾号p858）：陈迹称双方达成交易，约定六十艘船到定海港时姚安会面；实际出现的“姚安”被识破为冒名者。作者855《内讧》：页内标题可由目录/搜索结果确认，但正文页本轮打开返回403；只使用搜索预览可读段落（SEARCH_EXCERPT_ONLY）。预览中董遮对白鲤称漕帮欲反、军情司欲助其反，并提到兵刃、铠甲及可提供虎豹军/虎贲军百夫长、千夫长。预览还显示漕帮内部郑舟、陈淮北率帮众质疑帮主、要求更换帮主。它补强“谈判/资源承诺存在”，同时显示本轮谈判与内部权力冲突交织；不证明承诺履行、正式同盟或法定隶属。 因而E038仅表示有记录的交易/协作谈判和条件性船队调动，不代表正式同盟、法定隶属或承诺已履行。 〔章 作者851《造反》,作者854《杀姚安》,作者855《内讧》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "盐帮",
+      "charB": "漕帮",
+      "type": "temporary-military-cooperation(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[OPERATING_RELATION] 漕帮与盐帮战时协防线索；**不推**：漕帮不属于盐帮，反之亦然 〔章 786,792〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "梅花渡",
+      "charB": "京城晨报",
+      "type": "distributes",
+      "intimacy": 40,
+      "desc": "[OPERATING_RELATION] 梅花渡把棍街巷售《京城晨报》；**不推**：分销不证明梅花渡拥有报纸产权 〔章 513,515〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "百鹿阁",
+      "charB": "景朝军情司",
+      "type": "funded-by-business-front(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 景朝军情司司曹述百鹿阁筹资与掩护；**不推**：不标百鹿阁为军情司正式官署 〔章 31,33,66〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "固原龙门客栈",
+      "charB": "灯火",
+      "type": "reported-Lamp-affiliated-service-node(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] WebNovel目录平台槽243标作者242《密道》，槽247标作者246《真正的密道》；平台槽408标作者407《灯火客栈》。作者242正文中掌柜称小满为灯火“同僚”、自称“我灯火客栈”，并按灯火铜钱提供固原龙门客栈密道通行服务。支持文本报告的灯火关联服务/经营节点；不证明登记产权、股权、正式行政直属或法定part-of。正文：https://czbooks.net/n/s6ojkc/s6onf31e?chapterNumber=246；https://www.piaotia.com/html/15/15702/11485597.html。题名：https://www.webnovel.com/book/22444590709113204/catalog。 〔章 作者242《密道》,作者246《真正的密道》,作者407《灯火客栈》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "昌平福来客栈",
+      "charB": "灯火",
+      "type": "operates-service-node-candidate(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 灯火暗号与福来客栈接叶子、跨城转单；**不推**：不同城的同名福来客栈绝不自动合并 〔章 407,408,409〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "文昌书局",
+      "charB": "灯火",
+      "type": "reported-owns(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 陆氏明确称文昌书局是灯火产业；**不推**：不涵盖全城书局，不作官营财产 〔章 520〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "文昌书局",
+      "charB": "京城晨报",
+      "type": "prints-and-produces",
+      "intimacy": 40,
+      "desc": "[OPERATING_RELATION] 文昌书局参与京城晨报印刷发行筹办；**不推**：报纸不是同一书局的别名 〔章 512,513〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "琉璃书局",
+      "charB": "武襄晨报",
+      "type": "prints",
+      "intimacy": 40,
+      "desc": "[OPERATING_RELATION] 琉璃书局参与武襄晨报的印刷；**不推**：发行牌照/法人产权待证 〔章 764〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "京城晨报",
+      "charB": "文昌书局",
+      "type": "prints-and-produces(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[OPERATING_RELATION] 文昌书局参与京城晨报印刷发行筹办；**不推**：报纸不是同一书局的别名 〔章 512,513〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "京城晨报",
+      "charB": "梅花渡",
+      "type": "distributes(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[OPERATING_RELATION] 梅花渡把棍街巷售《京城晨报》；**不推**：分销不证明梅花渡拥有报纸产权 〔章 513,515〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "京城晨报",
+      "charB": "金陵晚报",
+      "type": "different-publication",
+      "intimacy": 40,
+      "desc": "[NEGATIVE_EQUIVALENCE] 京城晨报与金陵晚报属于不同报业项目；**不推**：不能以'晨报'/'晚报'共有字眼合并 〔章 513,821〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "武襄晨报",
+      "charB": "琉璃书局",
+      "type": "prints(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[OPERATING_RELATION] 琉璃书局参与武襄晨报的印刷；**不推**：发行牌照/法人产权待证 〔章 764〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "金陵晚报",
+      "charB": "季氏商行",
+      "type": "publishing-commission; ownership-open(反向)",
+      "intimacy": 30,
+      "desc": "反向登记：[CANDIDATE_OPEN] 821《憑照》：季家掌柜受姚安指示筹备并刊印《金陵晚报》；826《鹽引》掌柜向姚安回报依命刊印（https://ixdzs.tw/read/549077/p825.html；https://ixdzs.tw/read/549077/p830.html，另有https://www.piaotia.com/html/15/15702/13122518.html交叉）。作者853《季氏》另称陈迹潜入《金陵晚报》追查姚安，发现该报“是漕帮办的”；张夏称其原有七个堂口，五个由她查抄、另两个随后由密谍司查抄（https://ixdzs.tw/read/549077/p857.html）。区分筹办/刊印与运营网络；季氏商行或漕帮的产权、股权、法定持有仍未明示，E019继续 CANDIDATE_OPEN。 〔章 821《憑照》,826《鹽引》,832《貪與癡》,853《季氏》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "金陵晚报",
+      "charB": "京城晨报",
+      "type": "different-publication(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[NEGATIVE_EQUIVALENCE] 京城晨报与金陵晚报属于不同报业项目；**不推**：不能以'晨报'/'晚报'共有字眼合并 〔章 513,821〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "金陵晚报",
+      "charB": "漕帮",
+      "type": "reported-operational-network(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 作者853《季氏》中陈迹称金陵晚报是漕帮经营；张夏说该报有七个堂口、她查抄五个，之后密谍司查抄两个。属正文人物报告与行动叙述，支持报纸运营网络与漕帮的报告性关联；不证明法定产权、商行股权或金陵晚报整体归漕帮所有。 〔章 853《季氏》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "陈家盐商总号",
+      "charB": "京城陈家",
+      "type": "owns-family-enterprise-candidate(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 陈家盐商总号有掌柜/族中交利和盐号公账；**不推**：陈迹私人粮油铺不归入盐商总号 〔章 350,351,558〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "陈家粮号",
+      "charB": "京城陈家",
+      "type": "runs-family-business-candidate(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 陈家粮号是陈氏经营分支，名称区别于盐号；**不推**：粮号不是盐号同一个商业主体 〔章 350〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "清吟小班（百顺胡同）",
+      "charB": "宁朝司礼监",
+      "type": "reported-owns(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 金猪称百顺胡同清吟小班为司礼监产业；**不推**：不推广所有清吟小班归司礼监 〔章 550〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "红袖招",
+      "charB": "景朝军情司",
+      "type": "suspected-intelligence-contact(反向)",
+      "intimacy": 30,
+      "desc": "反向登记：[CANDIDATE_OPEN] 248《截胡》仅有客栈伙计关于景朝商队在红袖招交换情报的说法；249《砍他》里的“线人密报”被正文揭出为齐斟酌虚报（李玄知其未安插线人，齐后承认消息来自陈迹）。羽林军到场见红袖招无人，并发现血迹、刀痕、断指；死者、凶手及行动归属未明。仅保留传闻/伪报与现场调查线索，不证实实际谍报活动、军情司产权管理或指挥隶属。 〔章 《截胡》,《砍他》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "金陵渡船灯火节点",
+      "charB": "灯火",
+      "type": "operates-ferry-node(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 灯火金陵渡船地区正将、票据与船工业务链；**不推**：与外部河道军职不构成同一机构 〔章 762〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "京仓",
+      "charB": "万岁军",
+      "type": "guards(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[OPERATING_RELATION] 万岁军守京仓；**不推**：场所不是军队下级机构 〔章 410,411〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "文胆堂",
+      "charB": "京城陈家",
+      "type": "used-by-family",
+      "intimacy": 40,
+      "desc": "[分类归属/OPERATING_RELATION] 430陈家文胆堂是宗族议事场所 〔章 430〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "黄山四城隍庙",
+      "charB": "黄山道庭",
+      "type": "operates-site(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 黄山道庭有北西南东四城隍庙经营据点；**不推**：四庙非四个独立宗门 〔章 433〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "陆浑山庄",
+      "charB": "老君山道庭",
+      "type": "operates-site(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 陆浑山庄为老君山道庭山下别院；**不推**：别院不是与道庭并列的新宗门 〔章 130,131〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "朝天宫",
+      "charB": "黄山道庭",
+      "type": "site-governance-candidate(反向)",
+      "intimacy": 30,
+      "desc": "反向登记：[CANDIDATE_OPEN] 818《落脚》：黄山道庭上尊法旨到达朝天宫现场，张宁传达追杀命令并命弟子封山门、召八大总商、在普天大醮前回收散落的万神临舍，证明现场指令及具体任务执行（https://ixdzs.tw/read/549077/p822.html）。840《无人试剑》证实黄山道庭主办普天大醮、门人执行法坛仪式（https://ixdzs.tw/read/549077/p844.html），但未证明该仪式地点就是朝天宫，不作为E032场所管辖证据。产权、长期治理与法定直属仍未证，维持CANDIDATE_OPEN。 〔章 818,840〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "武庙长白山天池山门",
+      "charB": "武庙",
+      "type": "has-site(反向)",
+      "intimacy": 40,
+      "desc": "反向登记：[OPERATING_RELATION] 武庙以长白山天池山门为修行活动据点；**不推**：位置处景朝不等于武庙受景朝枢密院管辖 〔章 293,530,839〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "靖王府",
+      "charB": "千岁军",
+      "type": "armed-guard-of",
+      "intimacy": 60,
+      "desc": "[TEXT_REPORTED] 千岁军作为靖王府护卫出现；**不推**：不是皇帝万岁军 〔章 40,180〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "中军都督府",
+      "charB": "备倭军",
+      "type": "temporary-command-and-custody",
+      "intimacy": 40,
+      "desc": "[OPERATING_RELATION] 作者814记中军都督府兵马按军令接管定海港、驱逐徐家人马、围控备倭军并准备押返府休整；是一次具体行动，不证明备倭军永久隶属或完整法定上下级。 〔章 作者814《解烦卫》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "季氏商行",
+      "charB": "金陵晚报",
+      "type": "publishing-commission; ownership-open",
+      "intimacy": 30,
+      "desc": "[CANDIDATE_OPEN] 821《憑照》：季家掌柜受姚安指示筹备并刊印《金陵晚报》；826《鹽引》掌柜向姚安回报依命刊印（https://ixdzs.tw/read/549077/p825.html；https://ixdzs.tw/read/549077/p830.html，另有https://www.piaotia.com/html/15/15702/13122518.html交叉）。作者853《季氏》另称陈迹潜入《金陵晚报》追查姚安，发现该报“是漕帮办的”；张夏称其原有七个堂口，五个由她查抄、另两个随后由密谍司查抄（https://ixdzs.tw/read/549077/p857.html）。区分筹办/刊印与运营网络；季氏商行或漕帮的产权、股权、法定持有仍未明示，E019继续 CANDIDATE_OPEN。 〔章 821《憑照》,826《鹽引》,832《貪與癡》,853《季氏》〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "京卫武学",
+      "charB": "兵部",
+      "type": "administers-military-school(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 京卫武学归兵部管理的R16旧章节资料；**不推**：不推所有书院受兵部管辖 〔章 637〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "龙江关钞关",
+      "charB": "留都户部",
+      "type": "regulates-fiscal-site(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 留都户部监管龙江关钞关和江南赋税；**不推**：关卡是否独立衙门需再核 〔章 752〕",
+      "startTime": "",
+      "endTime": ""
+    },
+    {
+      "charA": "备倭军甲乙丙丁四营",
+      "charB": "备倭军",
+      "type": "unit-formation-of(反向)",
+      "intimacy": 60,
+      "desc": "反向登记：[TEXT_REPORTED] 备倭军甲乙丙丁四营为内部营级编组的叙述；**不推**：不虚构四营的独立全国军政层级 〔章 774,775〕",
+      "startTime": "",
+      "endTime": ""
+    }
+  ]
+}
