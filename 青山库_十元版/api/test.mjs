@@ -1,0 +1,12 @@
+import assert from "node:assert/strict";
+import {runTask} from "./core.mjs";
+const req={"task":"event.generate","request_id":"T01","branch_id":"sandbox-1","context":{"source_ids":["QSP-0001","QS21-029"],"relation_rules":[{"from":"XN","to":"ZX","type":"克","status":"HYPOTHESIS"}]}};
+const mock=async()=>JSON.stringify({status:"CANDIDATE",source_ids:["QSP-0001"],result:{candidate:"demo"},warnings:[]});
+assert.equal((await runTask(req,mock)).commit_allowed,false);
+await assert.rejects(()=>runTask({...req,task:"commit"},mock),/INVALID_TASK/);
+await assert.rejects(()=>runTask({...req,context:{source_ids:[]}},mock),/SOURCE_IDS_REQUIRED/);
+await assert.rejects(()=>runTask({...req,context:{source_ids:["QSP-0001"]}},mock),/RELATION_RULES_REQUIRED/);
+await assert.rejects(()=>runTask(req,async()=>JSON.stringify({status:"CANDIDATE",source_ids:["FAKE"],result:{},warnings:[]})),/MODEL_INVALID_ENVELOPE/);
+await assert.rejects(()=>runTask(req,async()=>"not json"),/MODEL_INVALID_JSON/);
+await assert.rejects(()=>runTask(req,async()=>JSON.stringify({status:"COMMITTED",source_ids:["QSP-0001"],result:{},warnings:[]})),/MODEL_INVALID_ENVELOPE/);
+console.log("7/7 mock core tests passed");
