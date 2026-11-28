@@ -1,0 +1,276 @@
+{
+  "schema": "QS-TY-RULES-V1",
+  "scope": "index-derived allowed directions; Z/ZN frozen for execution; not independent mechanism proof",
+  "rules": [
+    {
+      "id": "ZX生ZN",
+      "from": "ZX",
+      "to": "ZN",
+      "kind": "生",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/生/zx生zn_生卡.md",
+      "index_sha": "b4b528390257da09614f4434d66f0c2d3b325e49"
+    },
+    {
+      "id": "X并Z生Z",
+      "from": "X并Z",
+      "to": "Z",
+      "kind": "生",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/生/x并z生z_生卡.md",
+      "index_sha": "b4b528390257da09614f4434d66f0c2d3b325e49"
+    },
+    {
+      "id": "ZN生N",
+      "from": "ZN",
+      "to": "N",
+      "kind": "生",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/生/zn生n_生卡.md",
+      "index_sha": "b4b528390257da09614f4434d66f0c2d3b325e49"
+    },
+    {
+      "id": "Z生NZ",
+      "from": "Z",
+      "to": "NZ",
+      "kind": "生",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/生/z生nz_生卡.md",
+      "index_sha": "b4b528390257da09614f4434d66f0c2d3b325e49"
+    },
+    {
+      "id": "N生XN",
+      "from": "N",
+      "to": "XN",
+      "kind": "生",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/生/n生xn_生卡.md",
+      "index_sha": "b4b528390257da09614f4434d66f0c2d3b325e49"
+    },
+    {
+      "id": "NZ生NX",
+      "from": "NZ",
+      "to": "NX",
+      "kind": "生",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/生/nz生nx_生卡.md",
+      "index_sha": "b4b528390257da09614f4434d66f0c2d3b325e49"
+    },
+    {
+      "id": "XN生XZ",
+      "from": "XN",
+      "to": "XZ",
+      "kind": "生",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/生/xn生xz_生卡.md",
+      "index_sha": "b4b528390257da09614f4434d66f0c2d3b325e49"
+    },
+    {
+      "id": "NX生X",
+      "from": "NX",
+      "to": "X",
+      "kind": "生",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/生/nx生x_生卡.md",
+      "index_sha": "b4b528390257da09614f4434d66f0c2d3b325e49"
+    },
+    {
+      "id": "XZ生ZX",
+      "from": "XZ",
+      "to": "ZX",
+      "kind": "生",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/生/xz生zx_生卡.md",
+      "index_sha": "b4b528390257da09614f4434d66f0c2d3b325e49"
+    },
+    {
+      "id": "X生X并Z",
+      "from": "X",
+      "to": "X并Z",
+      "kind": "生",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/生/x生x并z_生卡.md",
+      "index_sha": "b4b528390257da09614f4434d66f0c2d3b325e49"
+    },
+    {
+      "id": "ZX克N",
+      "from": "ZX",
+      "to": "N",
+      "kind": "克",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/克/zx克n_克卡.md",
+      "index_sha": "47859e04bd6ac699e3bd34a192a6680c04540d63"
+    },
+    {
+      "id": "X并Z克NZ",
+      "from": "X并Z",
+      "to": "NZ",
+      "kind": "克",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/克/x并z克nz_克卡.md",
+      "index_sha": "47859e04bd6ac699e3bd34a192a6680c04540d63"
+    },
+    {
+      "id": "ZN克XN",
+      "from": "ZN",
+      "to": "XN",
+      "kind": "克",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/克/zn克xn_克卡.md",
+      "index_sha": "47859e04bd6ac699e3bd34a192a6680c04540d63"
+    },
+    {
+      "id": "Z克NX",
+      "from": "Z",
+      "to": "NX",
+      "kind": "克",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/克/z克nx_克卡.md",
+      "index_sha": "47859e04bd6ac699e3bd34a192a6680c04540d63"
+    },
+    {
+      "id": "N克XZ",
+      "from": "N",
+      "to": "XZ",
+      "kind": "克",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/克/n克xz_克卡.md",
+      "index_sha": "47859e04bd6ac699e3bd34a192a6680c04540d63"
+    },
+    {
+      "id": "NZ克X",
+      "from": "NZ",
+      "to": "X",
+      "kind": "克",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/克/nz克x_克卡.md",
+      "index_sha": "47859e04bd6ac699e3bd34a192a6680c04540d63"
+    },
+    {
+      "id": "XN克ZX",
+      "from": "XN",
+      "to": "ZX",
+      "kind": "克",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/克/xn克zx_克卡.md",
+      "index_sha": "47859e04bd6ac699e3bd34a192a6680c04540d63"
+    },
+    {
+      "id": "NX克X并Z",
+      "from": "NX",
+      "to": "X并Z",
+      "kind": "克",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/克/nx克x并z_克卡.md",
+      "index_sha": "47859e04bd6ac699e3bd34a192a6680c04540d63"
+    },
+    {
+      "id": "XZ克ZN",
+      "from": "XZ",
+      "to": "ZN",
+      "kind": "克",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/克/xz克zn_克卡.md",
+      "index_sha": "47859e04bd6ac699e3bd34a192a6680c04540d63"
+    },
+    {
+      "id": "X克Z",
+      "from": "X",
+      "to": "Z",
+      "kind": "克",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/克/x克z_克卡.md",
+      "index_sha": "47859e04bd6ac699e3bd34a192a6680c04540d63"
+    },
+    {
+      "id": "ZX补NX",
+      "from": "ZX",
+      "to": "NX",
+      "kind": "补",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/补/zx补nx_补卡.md",
+      "index_sha": "38947ed4a1cc26e2afc628baff9349b0643d48d6"
+    },
+    {
+      "id": "NX补ZX",
+      "from": "NX",
+      "to": "ZX",
+      "kind": "补",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/补/zx补nx_补卡.md",
+      "index_sha": "38947ed4a1cc26e2afc628baff9349b0643d48d6"
+    },
+    {
+      "id": "ZN补X",
+      "from": "ZN",
+      "to": "X",
+      "kind": "补",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/补/zn补x_补卡.md",
+      "index_sha": "38947ed4a1cc26e2afc628baff9349b0643d48d6"
+    },
+    {
+      "id": "X补ZN",
+      "from": "X",
+      "to": "ZN",
+      "kind": "补",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/补/zn补x_补卡.md",
+      "index_sha": "38947ed4a1cc26e2afc628baff9349b0643d48d6"
+    },
+    {
+      "id": "N补X并Z",
+      "from": "N",
+      "to": "X并Z",
+      "kind": "补",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/补/n补x并z_补卡.md",
+      "index_sha": "38947ed4a1cc26e2afc628baff9349b0643d48d6"
+    },
+    {
+      "id": "X并Z补N",
+      "from": "X并Z",
+      "to": "N",
+      "kind": "补",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/补/n补x并z_补卡.md",
+      "index_sha": "38947ed4a1cc26e2afc628baff9349b0643d48d6"
+    },
+    {
+      "id": "XN补Z",
+      "from": "XN",
+      "to": "Z",
+      "kind": "补",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/补/xn补z_补卡.md",
+      "index_sha": "38947ed4a1cc26e2afc628baff9349b0643d48d6"
+    },
+    {
+      "id": "Z补XN",
+      "from": "Z",
+      "to": "XN",
+      "kind": "补",
+      "status": "DESIGN_ONLY",
+      "source": "01-十元系统/04-十元生克补卡/补/xn补z_补卡.md",
+      "index_sha": "38947ed4a1cc26e2afc628baff9349b0643d48d6"
+    },
+    {
+      "id": "XZ补NZ",
+      "from": "XZ",
+      "to": "NZ",
+      "kind": "补",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/补/xz补nz_补卡.md",
+      "index_sha": "38947ed4a1cc26e2afc628baff9349b0643d48d6"
+    },
+    {
+      "id": "NZ补XZ",
+      "from": "NZ",
+      "to": "XZ",
+      "kind": "补",
+      "status": "LOCKED_INDEX_CANDIDATE",
+      "source": "01-十元系统/04-十元生克补卡/补/xz补nz_补卡.md",
+      "index_sha": "38947ed4a1cc26e2afc628baff9349b0643d48d6"
+    }
+  ]
+}
