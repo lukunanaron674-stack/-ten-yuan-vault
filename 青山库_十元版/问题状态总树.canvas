@@ -1,0 +1,190 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "x": 650,
+      "y": 0,
+      "width": 500,
+      "height": 160,
+      "text": "# 青山库·十元版\n世界观→十元关系→事件→故事\n状态：数据准备完成；本地插件/模型未验",
+      "color": "5",
+      "type": "text"
+    },
+    {
+      "id": "p",
+      "x": 0,
+      "y": 240,
+      "width": 360,
+      "height": 220,
+      "text": "## 人物\n152 人物候选／9 已专项审查\n稳定主元锁定0\nAG11：目标、选择、代价、主次候选",
+      "color": "3",
+      "type": "text"
+    },
+    {
+      "id": "s",
+      "x": 400,
+      "y": 240,
+      "width": 360,
+      "height": 220,
+      "text": "## 社会场景\n114 社会对象\nW只读；组织不等于物理地点\nAG02：场景规则、资源、限制",
+      "color": "3",
+      "type": "text"
+    },
+    {
+      "id": "l",
+      "x": 800,
+      "y": 240,
+      "width": 360,
+      "height": 220,
+      "text": "## 物理场景\n3 地点候选、5 情境窗口\n按时间和情境判断，不永久锁元",
+      "color": "3",
+      "type": "text"
+    },
+    {
+      "id": "r",
+      "x": 1200,
+      "y": 240,
+      "width": 360,
+      "height": 220,
+      "text": "## 原始关系\n187 人际／81 人物-社会／41 社会关系记录\n事实与十元边分账",
+      "color": "3",
+      "type": "text"
+    },
+    {
+      "id": "match",
+      "x": 650,
+      "y": 550,
+      "width": 500,
+      "height": 180,
+      "text": "## 十元关系匹配（AG02）\n源对象/元→生克补→目标对象/元\n冻结关系与缺证门禁；不得事后贴元",
+      "color": "2",
+      "type": "text"
+    },
+    {
+      "id": "evt",
+      "x": 650,
+      "y": 810,
+      "width": 500,
+      "height": 180,
+      "text": "## 事件生成（AG01）\n前提→触发→选择→行动→代价→目标变量变化\n反例审核后仅写沙盒",
+      "color": "2",
+      "type": "text"
+    },
+    {
+      "id": "history",
+      "x": 50,
+      "y": 810,
+      "width": 500,
+      "height": 180,
+      "text": "## 既有历史证据\n10 事件组；提议≠事实\n历史仅作只读来源，不覆盖",
+      "color": "3",
+      "type": "text"
+    },
+    {
+      "id": "chain",
+      "x": 650,
+      "y": 1070,
+      "width": 500,
+      "height": 180,
+      "text": "## 动态链（AG13）\n不同体量事件影响→时间线→新关系→后续事件\n选择视角、时间段和主题提取故事",
+      "color": "2",
+      "type": "text"
+    },
+    {
+      "id": "local",
+      "x": 650,
+      "y": 1330,
+      "width": 500,
+      "height": 180,
+      "text": "## 本地执行门 WAIT\nRelation Weaver 独立Vault导入；Hermes/本地模型调用；LibTV文本节点导出\n真实UI、生成及持久化未测试",
+      "color": "1",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "p",
+      "toSide": "top"
+    },
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "l",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "r",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "p",
+      "fromSide": "bottom",
+      "toNode": "match",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "s",
+      "fromSide": "bottom",
+      "toNode": "match",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "l",
+      "fromSide": "bottom",
+      "toNode": "match",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "r",
+      "fromSide": "bottom",
+      "toNode": "match",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "match",
+      "fromSide": "bottom",
+      "toNode": "evt",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "history",
+      "fromSide": "bottom",
+      "toNode": "chain",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "evt",
+      "fromSide": "bottom",
+      "toNode": "chain",
+      "toSide": "top"
+    },
+    {
+      "id": "e11",
+      "fromNode": "chain",
+      "fromSide": "bottom",
+      "toNode": "local",
+      "toSide": "top"
+    }
+  ]
+}
